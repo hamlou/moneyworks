@@ -1,0 +1,116 @@
+name: render
+
+on:
+  workflow_dispatch:
+    inputs:
+      ep:
+        description: Episode id (e.g. ep01)
+        required: true
+      chunks:
+        description: Parallel render machines
+        default: '12'
+
+jobs:
+  prep:
+    runs-on: ubuntu-latest
+    outputs:
+      matrix: ${{ steps.m.outputs.matrix }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg
+      - run: pip install -q edge-tts numpy
+      - run: python pipeline/tts.py pipeline/episodes/${{ inputs.ep }}.json public/${{ inputs.ep }}
+      - id: m
+        run: echo "matrix=$(python pipeline/chunks.py ${{ inputs.ep }} ${{ inputs.chunks }})" >> "$GITHUB_OUTPUT"
+      - uses: actions/upload-artifact@v4
+        with:
+          name: voice
+          path: public/${{ inputs.ep }}
+          retention-days: 1
+
+  render:
+    needs: prep
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        chunk: ${{ fromJson(needs.prep.outputs.matrix) }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci --no-audit --no-fund
+      - uses: actions/download-artifact@v4
+        with:
+          name: voice
+          path: public/${{ inputs.ep }}
+      - run: >
+          npx remotion render src/index.ts Episode out/part.mp4
+          --frames=${{ matrix.chunk.a }}-${{ matrix.chunk.b }} --muted
+          --props='{"ep":"${{ inputs.ep }}","timings":null}'
+          --concurrency=100% --log=warn
+      - uses: actions/upload-artifact@v4
+        with:
+          name: part-${{ matrix.chunk.i }}
+          path: out/part.mp4
+          retention-days: 1
+
+  audio:
+    needs: prep
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci --no-audit --no-fund
+      - uses: actions/download-artifact@v4
+        with:
+          name: voice
+          path: public/${{ inputs.ep }}
+      - run: >
+          npx remotion render src/index.ts Episode out/audio.wav --codec=wav
+          --props='{"ep":"${{ inputs.ep }}","timings":null}' --log=warn
+      - run: >
+          for v in A B C; do npx remotion still src/index.ts Thumb out/thumb_$v.png
+          --props="{\"ep\":\"${{ inputs.ep }}\",\"v\":\"$v\"}" --log=error || true; done
+      - uses: actions/upload-artifact@v4
+        with:
+          name: audio
+          path: out/
+          retention-days: 1
+
+  assemble:
+    needs: [render, audio]
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg
+      - uses: actions/download-artifact@v4
+        with:
+          pattern: part-*
+          path: parts
+      - uses: actions/download-artifact@v4
+        with:
+          name: audio
+          path: aud
+      - uses: actions/download-artifact@v4
+        with:
+          name: voice
+          path: public/${{ inputs.ep }}
+      - run: bash pipeline/assemble.sh ${{ inputs.ep }}
+      - uses: actions/upload-artifact@v4
+        with:
+          name: ${{ inputs.ep }}-final
+          path: final/
+          retention-days: 5
+          compression-level: 0
