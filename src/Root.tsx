@@ -2,7 +2,10 @@ import React from 'react';
 import {Composition, staticFile} from 'remotion';
 import {Episode, EpisodeProps} from './Episode';
 import {TAIL_SEC} from './timing';
-import {Thumb, ThumbProps} from './Thumb';
+import {Thumb, ThumbProps, EP_THUMBS} from './Thumb';
+import {Ep02Thumb} from './thumbs/ep02';
+
+EP_THUMBS.ep02 = Ep02Thumb;
 
 export const Root: React.FC = () => (
   <>

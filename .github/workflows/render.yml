@@ -51,7 +51,7 @@ jobs:
           path: public/${{ inputs.ep }}
       - run: >
           npx remotion render src/index.ts Episode out/part.mp4
-          --frames=${{ matrix.chunk.a }}-${{ matrix.chunk.b }} --muted
+          --frames=${{ matrix.chunk.a }}-${{ matrix.chunk.b }} --muted --codec=h264 --crf=18 --pixel-format=yuv420p
           --props='{"ep":"${{ inputs.ep }}","timings":null}'
           --concurrency=100% --log=warn
       - uses: actions/upload-artifact@v4

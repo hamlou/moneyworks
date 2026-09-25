@@ -1,0 +1,54 @@
+name: finish
+
+on:
+  workflow_dispatch:
+    inputs:
+      ep:
+        description: Episode id
+        required: true
+      run_id:
+        description: Render run id whose parts/voice to reuse
+        required: true
+
+jobs:
+  finish:
+    runs-on: ubuntu-latest
+    permissions:
+      actions: read
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg
+      - run: npm ci --no-audit --no-fund
+      - uses: actions/download-artifact@v4
+        with:
+          name: voice
+          path: public/${{ inputs.ep }}
+          run-id: ${{ inputs.run_id }}
+          github-token: ${{ github.token }}
+      - uses: actions/download-artifact@v4
+        with:
+          pattern: part-*
+          path: parts
+          run-id: ${{ inputs.run_id }}
+          github-token: ${{ github.token }}
+      - run: >
+          npx remotion render src/index.ts Episode aud/audio.wav --codec=wav
+          --props='{"ep":"${{ inputs.ep }}","timings":null}' --log=warn
+      - run: >
+          for v in A B C; do npx remotion still src/index.ts Thumb aud/thumb_$v.png
+          --props="{\"ep\":\"${{ inputs.ep }}\",\"v\":\"$v\"}" --log=error || true; done
+      - run: bash pipeline/assemble.sh ${{ inputs.ep }}
+      - uses: actions/upload-artifact@v4
+        with:
+          name: ${{ inputs.ep }}-final
+          path: final/
+          retention-days: 5
+          compression-level: 0
