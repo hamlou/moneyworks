@@ -1,0 +1,79 @@
+{
+  "id": "ep10",
+  "title": "\"Pay in 4, 0% Interest\" — So How Does Klarna Make Billions?",
+  "youtube": {
+    "title": "\"Pay in 4, 0% Interest\"... So How Does Klarna Make Billions?",
+    "hook": "Split any purchase into 4 payments. No interest. No fees if you pay on time. It sounds like free money. Yet Klarna went public valued at about $15 billion. So who's paying? Here's how Buy Now, Pay Later really makes money, why stores happily pay more, and the traps nearly half of users fall into.",
+    "tags": ["buy now pay later", "how klarna makes money", "bnpl explained", "afterpay explained", "affirm explained", "pay in 4", "0 percent interest", "merchant fees", "bnpl late fees", "phantom debt", "how fintech makes money", "personal finance", "finance for beginners", "money explained", "shopping psychology"]
+  },
+  "sources": [
+    "Congressional Research Service R48858 / CFPB (2022) BNPL market report: merchant fees typically about 3%–6% vs roughly 2%–3% for card payments",
+    "Klarna IPO on the NYSE, September 10, 2025, priced at $40/share, ≈ $15 billion valuation; ≈ 111 million active consumers; 790,000+ merchants",
+    "LendingTree BNPL tracker (2026): nearly half of BNPL users paid late in the past year",
+    "Affirm and other BNPL lenders offer longer financing plans with APRs that can reach about 36%",
+    "FICO (2025): new credit score versions incorporating BNPL loan data",
+    "Prelec & Simester (2001): people are willing to pay more when paying with cards"
+  ],
+  "beats": [
+    {"id": "o1", "text": "Dave wants new sneakers. Two hundred dollars.", "pause": 0.3},
+    {"id": "o2", "text": "At checkout, a little button appears. Pay in four. Just fifty dollars today. Zero percent interest. No fees if you pay on time.", "pause": 0.35},
+    {"id": "o3", "text": "Sounds like free money, right?", "pause": 0.3},
+    {"id": "o4", "text": "But here's the thing. Klarna, one of the biggest pay in four companies, went public last year valued at about fifteen billion dollars.", "pause": 0.35},
+    {"id": "o5", "text": "You can't build a fifteen billion dollar company by giving away free money. So who is paying?", "pause": 0.35},
+    {"id": "o6", "text": "Today: how buy now, pay later really makes money, why stores happily pay extra, and the traps that catch nearly half of all users.", "pause": 0.6},
+
+    {"id": "c1a", "chapter": "How Pay in 4 Works", "text": "First, how does it work?", "pause": 0.4},
+    {"id": "c1b", "text": "Dave clicks the button. In a few seconds, an app checks him out. Usually a quick check, not a full loan application.", "pause": 0.5},
+    {"id": "c1c", "text": "Approved. Dave pays fifty dollars today. Then fifty dollars every two weeks. Four payments. Six weeks. Done.", "pause": 0.5},
+    {"id": "c1d", "text": "And the store? The store gets the full two hundred dollars right away. Well, almost the full two hundred.", "pause": 0.5},
+    {"id": "c1e", "text": "Because somebody just lent Dave one hundred and fifty dollars for six weeks. For free. And lenders don't do free.", "pause": 0.9},
+
+    {"id": "c2a", "chapter": "Follow the Money", "text": "Let's follow the money.", "pause": 0.4},
+    {"id": "c2b", "text": "Remember the raccoon from our credit card video? The swipe fee? Stores pay about two percent when you use a credit card.", "pause": 0.5},
+    {"id": "c2c", "text": "Buy now, pay later companies charge stores more. Often around three to six percent of the purchase. Sometimes even more.", "pause": 0.5},
+    {"id": "c2d", "text": "So on Dave's two hundred dollar sneakers, the store might pay about six to twelve dollars to the pay in four company.", "pause": 0.5},
+    {"id": "c2e", "text": "That's the main engine. Dave pays zero interest. The store pays the fee.", "pause": 0.5},
+    {"id": "c2f", "text": "It's like a raccoon with a fancier toll booth. And a bigger bite.", "pause": 0.9},
+
+    {"id": "c3a", "chapter": "Why Stores Happily Pay", "text": "But wait. Why would a store pay a bigger fee? Aren't stores trying to save money?", "pause": 0.5},
+    {"id": "c3b", "text": "Because it makes people buy more. A lot more.", "pause": 0.4},
+    {"id": "c3c", "text": "Two hundred dollars feels expensive. But fifty dollars? Fifty dollars feels easy.", "pause": 0.5},
+    {"id": "c3d", "text": "Our brains focus on the small number. So people buy things they might have skipped. And they add extra things to the cart.", "pause": 0.5},
+    {"id": "c3e", "text": "Remember the basketball ticket experiment? People offered much more when paying with a card. Splitting a payment makes spending hurt even less.", "pause": 0.5},
+    {"id": "c3f", "text": "Fewer people abandon their carts. Bigger orders. More sales. So even after paying a big fee, many stores come out ahead.", "pause": 0.5},
+    {"id": "c3g", "text": "That's why that little button shows up everywhere. On clothes, electronics, concert tickets, even groceries.", "pause": 0.9},
+
+    {"id": "c4a", "chapter": "The Other Money Makers", "text": "Store fees are the main engine. But there are other ways these companies earn.", "pause": 0.4},
+    {"id": "c4b", "text": "Way one: late fees. Miss a payment, and you can be charged a fee. A few dollars each time. Small. Until it isn't.", "pause": 0.5},
+    {"id": "c4c", "text": "Way two: longer plans. For bigger purchases, like a sofa or a laptop, they offer monthly plans over many months. And many of those do charge interest. Sometimes up to around thirty six percent a year.", "pause": 0.6},
+    {"id": "c4d", "text": "Way three: their own cards and shopping apps. Every time you open the app to shop, stores can pay to be seen there. Like ads inside a mall.", "pause": 0.5},
+    {"id": "c4e", "text": "So the free part pulls you in. The other parts help pay the bills.", "pause": 0.9},
+
+    {"id": "c5a", "chapter": "The Traps", "text": "So is buy now, pay later bad? Not by itself. But it has some sneaky traps.", "pause": 0.4},
+    {"id": "c5b", "text": "Trap one: stacking. Sneakers on one app. Headphones on another. A jacket on a third. Each one feels small. Together, they're a pile.", "pause": 0.5},
+    {"id": "c5c", "text": "Dave now owes six payments this week. From four different apps. On four different dates.", "pause": 0.5},
+    {"id": "c5d", "text": "Trap two: late payments. In a recent survey, nearly half of buy now, pay later users said they paid late at least once in the past year.", "pause": 0.5},
+    {"id": "c5e", "text": "Trap three: using it for daily needs. Some people now split groceries and bills. That's a sign the money is already tight.", "pause": 0.5},
+    {"id": "c5f", "text": "And trap four: hidden debt. For years, many of these loans didn't show up on credit reports. So lenders, and even you, might not see the full picture. That's starting to change.", "pause": 0.9},
+
+    {"id": "c6a", "chapter": "The Babysitter Paid Twice", "text": "Here's a simple way to picture the whole business.", "pause": 0.4},
+    {"id": "c6b", "text": "Imagine a babysitter. The parents pay her to watch the kid. That's the store paying the fee.", "pause": 0.5},
+    {"id": "c6c", "text": "But the babysitter also charges the kid, every time the kid breaks a rule. That's the late fees and interest.", "pause": 0.5},
+    {"id": "c6d", "text": "And the babysitter's favorite kid? The one who breaks rules just a little bit. Often enough to pay. Not so often that he disappears.", "pause": 0.6},
+    {"id": "c6e", "text": "If you always follow the rules, you're using the babysitter for free. The parents are paying. Just make sure you stay that kid.", "pause": 0.9},
+
+    {"id": "c7a", "chapter": "Using It Wisely", "text": "So how do people use it without getting caught? A few simple habits. Education, not advice.", "pause": 0.4},
+    {"id": "c7b", "text": "One. Only use it if you could afford to pay the full price today. If you need it to afford something, that's a warning sign.", "pause": 0.5},
+    {"id": "c7c", "text": "Two. Turn on automatic payments, so nothing slips.", "pause": 0.4},
+    {"id": "c7d", "text": "Three. One plan at a time. Stacking is where the trouble starts.", "pause": 0.4},
+    {"id": "c7e", "text": "And four. Always look at the total, not the tiny payment. Fifty dollars four times is still two hundred dollars.", "pause": 0.9},
+
+    {"id": "c8a", "chapter": "Now You Know", "text": "So let's recap.", "pause": 0.4},
+    {"id": "c8b", "text": "One. Pay in four is often free for you, because the store pays a bigger fee than a credit card.", "pause": 0.5},
+    {"id": "c8c", "text": "Two. Stores pay happily, because splitting the price makes people buy more.", "pause": 0.5},
+    {"id": "c8d", "text": "Three. Late fees, longer interest plans, and stacking are where it can get expensive.", "pause": 0.6},
+    {"id": "c8e", "text": "And that's the end of our first series. Banks, credit cards, mortgages, McDonald's, taxes, national debt, inflation, gold, stocks, and now buy now, pay later.", "pause": 0.5},
+    {"id": "c8f", "text": "If Dave taught you even one thing about money, tell us in the comments what we should explain next.", "pause": 0.4},
+    {"id": "c8g", "text": "And subscribe. Because the next series is already cooking. See you soon.", "pause": 1.4}
+  ]
+}
