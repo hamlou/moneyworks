@@ -55,6 +55,16 @@ Callbacks to earlier episodes are GOOD ("Remember the raccoon from our credit ca
 - **Thumbnails:** 3 variants (A/B/C) for YouTube Test & Compare, in `src/thumbs/epXX.tsx`. Rules: 2–4 huge words (`<Big>`), one expressive giant character face or one bold object, high contrast background (yellow burst / navy / cream), readable on a phone. Avoid frame-0 blinks (use `f={20}`, `seed={50}`).
 - **Description** (auto by `pipeline/describe.py`): hook paragraph (`youtube.hook`), "In this video you'll learn" from chapters, subscribe line, chapters with timestamps, sources, music credit (Kevin MacLeod CC-BY — REQUIRED), not-financial-advice line, 3 hashtags.
 
+### 5b. SEO & CTR rules (researched Sept 2026) — used by `pipeline/seo.py`
+- **Title:** hook in the first ~50 chars (mobile cut-off), 40–65 chars total, contains the searchable phrase ("How banks create money", "inflation explained", "how McDonald's makes money"), a specific number or contradiction, optional parenthetical kicker "(It's Not China)". Max one CAPS word, 1–2 power words. No year in evergreen titles.
+- **Title ≠ thumbnail words.** Title and thumbnail must say different things (1+1=3). Pick the thumbnail variant that doesn't repeat the title.
+- **2 alternate titles** per video for YouTube Test & Compare.
+- **Description:** line 1 (≤150 chars) = keyword question + payoff (it's all people see before "Show more"); then a 2–3 sentence story summary with long-tail keywords; "In this video you'll learn" ✅ list; chapters with timestamps (starting 0:00); subscribe CTA + "Watch next"; sources; music credit; not-financial-advice line; exactly 3 hashtags.
+- **Tags:** ~11 total: 2–3 exact-match + long-tail phrases + "money explained simply" brand tag. Under 500 chars. No stuffing.
+- **Pinned comment:** a question that's easy to answer (YES/NO, a number, a city) to trigger comments.
+- **Settings:** Not made for kids · Education · Altered content: No (animated) · End screen: next episode + subscribe.
+- For each new episode add an entry to `SEO` in `pipeline/seo.py`, then run `py pipeline/seo.py epNN` → writes `videos/epNN/epNN_UPLOAD.txt`.
+
 ## 6. Visual style
 
 - Flat, cream background (`Board`), `Street`, `Interior`, `Beach`, `DreamBg`+`DreamFrame` ("WHAT MOST PEOPLE THINK"), `OldFilm` for history.

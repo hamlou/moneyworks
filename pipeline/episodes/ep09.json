@@ -2,9 +2,31 @@
   "id": "ep09",
   "title": "How the Stock Market Actually Works (Explained With a Lemonade Stand)",
   "youtube": {
-    "title": "How the Stock Market Actually Works (Explained With a Lemonade Stand)",
-    "hook": "A company can lose money for years and still be worth billions. Stock prices jump on news that hasn't even happened yet. And a simple, boring fund beat professional hedge funds in a famous million-dollar bet. Here's how the stock market really works, explained with Dave's lemonade stand.",
-    "tags": ["how the stock market works", "stock market explained", "what is a stock", "stocks for beginners", "how stock prices move", "index funds explained", "warren buffett bet", "dividends explained", "ipo explained", "market crash", "long term investing", "personal finance", "finance for beginners", "money explained", "investing basics"]
+    "title": "How the Stock Market Actually Works (Explained With Lemonade)",
+    "alt_titles": [
+      "Why Companies Losing Money Are Worth Billions",
+      "The $1 Million Bet That Beat Wall Street Pros"
+    ],
+    "hook": "How does the stock market work? What a stock really is, why prices move on news that hasn't happened yet, and the $1M bet that beat hedge funds. Dave turns his lemonade stand into a company and sells shares. Through that one stand, we explain stocks, IPOs, why prices follow expectations, how a money-losing company can be worth billions, dividends, crashes, bulls and bears, dollar-cost averaging, and Warren Buffett's famous million-dollar bet.",
+    "tags": [
+      "how the stock market works",
+      "stock market for beginners",
+      "what is a stock",
+      "how stock prices move",
+      "index funds explained",
+      "warren buffett bet",
+      "dollar cost averaging",
+      "bull vs bear market",
+      "dividends explained",
+      "investing for beginners",
+      "money explained simply"
+    ],
+    "hashtags": [
+      "#stockmarket",
+      "#investing",
+      "#personalfinance"
+    ],
+    "pinned": "Do you own any stocks yet (including a 401k or index fund)? YES / NOT YET 👇"
   },
   "sources": [
     "Gallup (2025): 62% of U.S. adults report owning stock, including through funds and retirement accounts",
@@ -14,79 +36,339 @@
     "Warren Buffett, 2017 Berkshire Hathaway shareholder letter: S&P 500 index fund compounded 7.1% per year (2008–2017) vs 2.2% for the chosen funds of hedge funds"
   ],
   "beats": [
-    {"id": "o1", "text": "Here's something that makes no sense.", "pause": 0.3},
-    {"id": "o2", "text": "A company can lose money, year after year, and still be worth billions of dollars.", "pause": 0.3},
-    {"id": "o3", "text": "A stock can jump twenty percent, because of news about something that hasn't even happened yet.", "pause": 0.3},
-    {"id": "o4", "text": "And in a famous million dollar bet, a boring fund that anyone can buy beat a team of professional money managers.", "pause": 0.35},
-    {"id": "o5", "text": "The stock market looks like chaos. But it follows a few simple rules. And we can learn them all with one lemonade stand.", "pause": 0.6},
-
-    {"id": "c1a", "chapter": "Dave's Lemonade Stand", "text": "Meet Dave's new business. A lemonade stand.", "pause": 0.4},
-    {"id": "c1b", "text": "It's going great. Dave sells one hundred cups a day. After lemons and sugar, he makes fifty dollars profit every day.", "pause": 0.5},
-    {"id": "c1c", "text": "But Dave has a dream. A bigger stand. A second stand at the beach. Maybe a lemonade empire.", "pause": 0.4},
-    {"id": "c1d", "text": "For that, he needs ten thousand dollars. And Dave has... well, you know Dave.", "pause": 0.7},
-    {"id": "c1e", "text": "He could borrow from a bank. But then he'd owe interest, no matter what. Remember? We've seen how that goes.", "pause": 0.5},
-    {"id": "c1f", "text": "So Dave has another idea. Instead of borrowing money, he sells pieces of his business.", "pause": 0.9},
-
-    {"id": "c2a", "chapter": "What Is a Stock?", "text": "Dave cuts his company into one hundred equal pieces. Each piece is called a share. Or a stock.", "pause": 0.5},
-    {"id": "c2b", "text": "He keeps fifty shares for himself. And sells the other fifty, for two hundred dollars each.", "pause": 0.4},
-    {"id": "c2c", "text": "Fifty times two hundred. Ten thousand dollars. Dave gets his money, and he doesn't owe anyone a cent.", "pause": 0.5},
-    {"id": "c2d", "text": "But now, other people own part of his business. Grandma buys ten shares. So Grandma now owns ten percent of Dave's lemonade stand.", "pause": 0.5},
-    {"id": "c2e", "text": "If the business makes money, Grandma's piece becomes more valuable. If it fails, her piece could become worthless.", "pause": 0.5},
-    {"id": "c2f", "text": "That's all a stock is. A small piece of ownership in a real business.", "pause": 0.5},
-    {"id": "c2g", "text": "When a company sells its shares to the public for the first time, it's called an I P O. And the place where people trade shares is called a stock exchange.", "pause": 0.5},
-    {"id": "c2h", "text": "It's just a giant marketplace. Instead of lemons, people buy and sell pieces of companies.", "pause": 0.9},
-
-    {"id": "c3a", "chapter": "Why Prices Move", "text": "Now, one month later, Bob wants to buy one of Grandma's shares. How much should he pay?", "pause": 0.5},
-    {"id": "c3b", "text": "Here's the key idea. A share isn't worth what the company earns today. It's worth what people think it will earn in the future.", "pause": 0.6},
-    {"id": "c3c", "text": "Then the weather news says: record heat wave coming all summer.", "pause": 0.4},
-    {"id": "c3d", "text": "Nobody has sold one extra cup yet. But everyone imagines the lines at Dave's stand. Suddenly, everyone wants shares.", "pause": 0.5},
-    {"id": "c3e", "text": "More buyers than sellers. The price jumps. Grandma's two hundred dollar share now sells for three hundred.", "pause": 0.5},
-    {"id": "c3f", "text": "Then another report says: a huge juice company is opening next door. Suddenly, everyone wants to sell. The price drops to one hundred fifty.", "pause": 0.6},
-    {"id": "c3g", "text": "Same stand. Same lemons. Same Dave. But the price moved because expectations moved.", "pause": 0.5},
-    {"id": "c3h", "text": "That's why stocks can jump on news about things that haven't happened yet. The market is always trying to guess the future.", "pause": 0.9},
-
-    {"id": "c4a", "chapter": "Losing Money, Worth Billions", "text": "So how can a company lose money and still be worth billions?", "pause": 0.4},
-    {"id": "c4b", "text": "Same reason. Investors aren't buying today. They're buying tomorrow.", "pause": 0.4},
-    {"id": "c4c", "text": "Take Amazon. It went public in nineteen ninety seven. And for years, it didn't make a full year profit. Its first came in two thousand three.", "pause": 0.5},
-    {"id": "c4d", "text": "Amazon kept spending every dollar on warehouses, trucks, and technology. Investors believed that one day, it would pay off. And it did.", "pause": 0.5},
-    {"id": "c4e", "text": "But for every Amazon, there were many companies that burned money and then disappeared. Believing in the future is risky. Sometimes the future never comes.", "pause": 0.9},
-
-    {"id": "c5a", "chapter": "How Shareholders Get Paid", "text": "So how do shareholders actually make money? Two main ways.", "pause": 0.4},
-    {"id": "c5b", "text": "Way one: the price goes up. Grandma bought at two hundred, sells at three hundred. One hundred dollars profit.", "pause": 0.5},
-    {"id": "c5c", "text": "Way two: dividends. When Dave's stand makes profit, he can share part of it with his owners. Every share gets a small payment. Like rent, but for owning a business.", "pause": 0.6},
-    {"id": "c5d", "text": "Some companies pay dividends every few months. Others keep all the money to grow faster, like Amazon did.", "pause": 0.5},
-    {"id": "c5e", "text": "And here's the difference with gold from our last video. Gold just sits there. A business keeps working, selling, and earning.", "pause": 0.9},
-
-    {"id": "c6a", "chapter": "Crashes and Patience", "text": "But let's be honest. The stock market can be scary.", "pause": 0.4},
-    {"id": "c6b", "text": "In the financial crisis, from late two thousand seven to early two thousand nine, the biggest American companies lost about fifty seven percent of their value.", "pause": 0.5},
-    {"id": "c6c", "text": "In twenty twenty, when the pandemic hit, the market fell about thirty four percent in just over a month.", "pause": 0.6},
-    {"id": "c6d", "text": "Imagine watching your money shrink by a third in a few weeks. Many people panicked and sold at the bottom.", "pause": 0.5},
-    {"id": "c6e", "text": "And yet, over the very long run, the S and P five hundred, a group of about five hundred big American companies, has averaged about ten percent a year since the nineteen twenties.", "pause": 0.5},
-    {"id": "c6f", "text": "Not every year. Some years are terrible. But over decades, it has recovered from every crash so far. Past results don't guarantee the future, but that history is why many people invest for the long term.", "pause": 0.9},
-
-    {"id": "b1", "chapter": "Bulls, Bears and Your Brain", "text": "On the news, you'll hear about two animals. Bulls and bears.", "pause": 0.4},
-    {"id": "b2", "text": "A bull attacks by throwing its horns up. So when the market is rising, it's called a bull market.", "pause": 0.4},
-    {"id": "b3", "text": "A bear swipes its paws down. So when the market is falling, it's a bear market.", "pause": 0.5},
-    {"id": "b4", "text": "But the biggest danger usually isn't the bull or the bear. It's your own brain.", "pause": 0.5},
-    {"id": "b5", "text": "When prices shoot up, people get excited and greedy, and they buy near the top. When prices crash, they get scared, and they sell near the bottom.", "pause": 0.5},
-    {"id": "b6", "text": "Buy high. Sell low. The exact opposite of what you want.", "pause": 0.6},
-    {"id": "b7", "text": "That's why many long term investors use a simple, boring trick. They invest the same amount every month, no matter what the news says. It's called dollar cost averaging.", "pause": 0.5},
-    {"id": "b8", "text": "When prices are high, their money buys fewer shares. When prices are low, the same money buys more. No guessing. No panic.", "pause": 0.9},
-
-    {"id": "c7a", "chapter": "The Million Dollar Bet", "text": "Now, remember that famous bet?", "pause": 0.4},
-    {"id": "c7b", "text": "In two thousand eight, Warren Buffett bet one million dollars that a simple index fund would beat a group of hedge funds, chosen by professionals, over ten years.", "pause": 0.5},
-    {"id": "c7c", "text": "An index fund doesn't try to pick winners. It just buys a little bit of every company in the group. Like buying a tiny piece of every lemonade stand in town.", "pause": 0.5},
-    {"id": "c7d", "text": "Hedge funds have smart managers, fancy offices, and big fees.", "pause": 0.4},
-    {"id": "c7e", "text": "Ten years later? The index fund grew about seven point one percent a year. The hedge fund picks? About two point two percent.", "pause": 0.6},
-    {"id": "c7f", "text": "Buffett won. And the money went to charity.", "pause": 0.4},
-    {"id": "c7g", "text": "The lesson: fees matter a lot. And beating the market is much harder than it looks. Even for professionals.", "pause": 0.9},
-
-    {"id": "c8a", "chapter": "Now You Know", "text": "So let's recap.", "pause": 0.4},
-    {"id": "c8b", "text": "One. A stock is a small piece of a real business. About six in ten Americans own some, often through retirement accounts.", "pause": 0.5},
-    {"id": "c8c", "text": "Two. Prices move with expectations about the future. That's why they react to news before anything actually happens.", "pause": 0.5},
-    {"id": "c8d", "text": "Three. Markets crash sometimes. Long term, diversified, low cost investing has historically done well. This is education, not advice.", "pause": 0.6},
-    {"id": "c8e", "text": "Now, one last mystery. You've seen it at every online checkout. Pay in four. Zero percent interest.", "pause": 0.4},
-    {"id": "c8f", "text": "If you pay no interest, how do these companies make billions?", "pause": 0.5},
-    {"id": "c8g", "text": "That's next, in our final video of this series. Subscribe, and let's squeeze some more lemons.", "pause": 1.4}
+    {
+      "id": "o1",
+      "text": "Here's something that makes no sense.",
+      "pause": 0.3
+    },
+    {
+      "id": "o2",
+      "text": "A company can lose money, year after year, and still be worth billions of dollars.",
+      "pause": 0.3
+    },
+    {
+      "id": "o3",
+      "text": "A stock can jump twenty percent, because of news about something that hasn't even happened yet.",
+      "pause": 0.3
+    },
+    {
+      "id": "o4",
+      "text": "And in a famous million dollar bet, a boring fund that anyone can buy beat a team of professional money managers.",
+      "pause": 0.35
+    },
+    {
+      "id": "o5",
+      "text": "The stock market looks like chaos. But it follows a few simple rules. And we can learn them all with one lemonade stand.",
+      "pause": 0.6
+    },
+    {
+      "id": "c1a",
+      "chapter": "Dave's Lemonade Stand",
+      "text": "Meet Dave's new business. A lemonade stand.",
+      "pause": 0.4
+    },
+    {
+      "id": "c1b",
+      "text": "It's going great. Dave sells one hundred cups a day. After lemons and sugar, he makes fifty dollars profit every day.",
+      "pause": 0.5
+    },
+    {
+      "id": "c1c",
+      "text": "But Dave has a dream. A bigger stand. A second stand at the beach. Maybe a lemonade empire.",
+      "pause": 0.4
+    },
+    {
+      "id": "c1d",
+      "text": "For that, he needs ten thousand dollars. And Dave has... well, you know Dave.",
+      "pause": 0.7
+    },
+    {
+      "id": "c1e",
+      "text": "He could borrow from a bank. But then he'd owe interest, no matter what. Remember? We've seen how that goes.",
+      "pause": 0.5
+    },
+    {
+      "id": "c1f",
+      "text": "So Dave has another idea. Instead of borrowing money, he sells pieces of his business.",
+      "pause": 0.9
+    },
+    {
+      "id": "c2a",
+      "chapter": "What Is a Stock?",
+      "text": "Dave cuts his company into one hundred equal pieces. Each piece is called a share. Or a stock.",
+      "pause": 0.5
+    },
+    {
+      "id": "c2b",
+      "text": "He keeps fifty shares for himself. And sells the other fifty, for two hundred dollars each.",
+      "pause": 0.4
+    },
+    {
+      "id": "c2c",
+      "text": "Fifty times two hundred. Ten thousand dollars. Dave gets his money, and he doesn't owe anyone a cent.",
+      "pause": 0.5
+    },
+    {
+      "id": "c2d",
+      "text": "But now, other people own part of his business. Grandma buys ten shares. So Grandma now owns ten percent of Dave's lemonade stand.",
+      "pause": 0.5
+    },
+    {
+      "id": "c2e",
+      "text": "If the business makes money, Grandma's piece becomes more valuable. If it fails, her piece could become worthless.",
+      "pause": 0.5
+    },
+    {
+      "id": "c2f",
+      "text": "That's all a stock is. A small piece of ownership in a real business.",
+      "pause": 0.5
+    },
+    {
+      "id": "c2g",
+      "text": "When a company sells its shares to the public for the first time, it's called an I P O. And the place where people trade shares is called a stock exchange.",
+      "pause": 0.5
+    },
+    {
+      "id": "c2h",
+      "text": "It's just a giant marketplace. Instead of lemons, people buy and sell pieces of companies.",
+      "pause": 0.9
+    },
+    {
+      "id": "c3a",
+      "chapter": "Why Prices Move",
+      "text": "Now, one month later, Bob wants to buy one of Grandma's shares. How much should he pay?",
+      "pause": 0.5
+    },
+    {
+      "id": "c3b",
+      "text": "Here's the key idea. A share isn't worth what the company earns today. It's worth what people think it will earn in the future.",
+      "pause": 0.6
+    },
+    {
+      "id": "c3c",
+      "text": "Then the weather news says: record heat wave coming all summer.",
+      "pause": 0.4
+    },
+    {
+      "id": "c3d",
+      "text": "Nobody has sold one extra cup yet. But everyone imagines the lines at Dave's stand. Suddenly, everyone wants shares.",
+      "pause": 0.5
+    },
+    {
+      "id": "c3e",
+      "text": "More buyers than sellers. The price jumps. Grandma's two hundred dollar share now sells for three hundred.",
+      "pause": 0.5
+    },
+    {
+      "id": "c3f",
+      "text": "Then another report says: a huge juice company is opening next door. Suddenly, everyone wants to sell. The price drops to one hundred fifty.",
+      "pause": 0.6
+    },
+    {
+      "id": "c3g",
+      "text": "Same stand. Same lemons. Same Dave. But the price moved because expectations moved.",
+      "pause": 0.5
+    },
+    {
+      "id": "c3h",
+      "text": "That's why stocks can jump on news about things that haven't happened yet. The market is always trying to guess the future.",
+      "pause": 0.9
+    },
+    {
+      "id": "c4a",
+      "chapter": "Losing Money, Worth Billions",
+      "text": "So how can a company lose money and still be worth billions?",
+      "pause": 0.4
+    },
+    {
+      "id": "c4b",
+      "text": "Same reason. Investors aren't buying today. They're buying tomorrow.",
+      "pause": 0.4
+    },
+    {
+      "id": "c4c",
+      "text": "Take Amazon. It went public in nineteen ninety seven. And for years, it didn't make a full year profit. Its first came in two thousand three.",
+      "pause": 0.5
+    },
+    {
+      "id": "c4d",
+      "text": "Amazon kept spending every dollar on warehouses, trucks, and technology. Investors believed that one day, it would pay off. And it did.",
+      "pause": 0.5
+    },
+    {
+      "id": "c4e",
+      "text": "But for every Amazon, there were many companies that burned money and then disappeared. Believing in the future is risky. Sometimes the future never comes.",
+      "pause": 0.9
+    },
+    {
+      "id": "c5a",
+      "chapter": "How Shareholders Get Paid",
+      "text": "So how do shareholders actually make money? Two main ways.",
+      "pause": 0.4
+    },
+    {
+      "id": "c5b",
+      "text": "Way one: the price goes up. Grandma bought at two hundred, sells at three hundred. One hundred dollars profit.",
+      "pause": 0.5
+    },
+    {
+      "id": "c5c",
+      "text": "Way two: dividends. When Dave's stand makes profit, he can share part of it with his owners. Every share gets a small payment. Like rent, but for owning a business.",
+      "pause": 0.6
+    },
+    {
+      "id": "c5d",
+      "text": "Some companies pay dividends every few months. Others keep all the money to grow faster, like Amazon did.",
+      "pause": 0.5
+    },
+    {
+      "id": "c5e",
+      "text": "And here's the difference with gold from our last video. Gold just sits there. A business keeps working, selling, and earning.",
+      "pause": 0.9
+    },
+    {
+      "id": "c6a",
+      "chapter": "Crashes and Patience",
+      "text": "But let's be honest. The stock market can be scary.",
+      "pause": 0.4
+    },
+    {
+      "id": "c6b",
+      "text": "In the financial crisis, from late two thousand seven to early two thousand nine, the biggest American companies lost about fifty seven percent of their value.",
+      "pause": 0.5
+    },
+    {
+      "id": "c6c",
+      "text": "In twenty twenty, when the pandemic hit, the market fell about thirty four percent in just over a month.",
+      "pause": 0.6
+    },
+    {
+      "id": "c6d",
+      "text": "Imagine watching your money shrink by a third in a few weeks. Many people panicked and sold at the bottom.",
+      "pause": 0.5
+    },
+    {
+      "id": "c6e",
+      "text": "And yet, over the very long run, the S and P five hundred, a group of about five hundred big American companies, has averaged about ten percent a year since the nineteen twenties.",
+      "pause": 0.5
+    },
+    {
+      "id": "c6f",
+      "text": "Not every year. Some years are terrible. But over decades, it has recovered from every crash so far. Past results don't guarantee the future, but that history is why many people invest for the long term.",
+      "pause": 0.9
+    },
+    {
+      "id": "b1",
+      "chapter": "Bulls, Bears and Your Brain",
+      "text": "On the news, you'll hear about two animals. Bulls and bears.",
+      "pause": 0.4
+    },
+    {
+      "id": "b2",
+      "text": "A bull attacks by throwing its horns up. So when the market is rising, it's called a bull market.",
+      "pause": 0.4
+    },
+    {
+      "id": "b3",
+      "text": "A bear swipes its paws down. So when the market is falling, it's a bear market.",
+      "pause": 0.5
+    },
+    {
+      "id": "b4",
+      "text": "But the biggest danger usually isn't the bull or the bear. It's your own brain.",
+      "pause": 0.5
+    },
+    {
+      "id": "b5",
+      "text": "When prices shoot up, people get excited and greedy, and they buy near the top. When prices crash, they get scared, and they sell near the bottom.",
+      "pause": 0.5
+    },
+    {
+      "id": "b6",
+      "text": "Buy high. Sell low. The exact opposite of what you want.",
+      "pause": 0.6
+    },
+    {
+      "id": "b7",
+      "text": "That's why many long term investors use a simple, boring trick. They invest the same amount every month, no matter what the news says. It's called dollar cost averaging.",
+      "pause": 0.5
+    },
+    {
+      "id": "b8",
+      "text": "When prices are high, their money buys fewer shares. When prices are low, the same money buys more. No guessing. No panic.",
+      "pause": 0.9
+    },
+    {
+      "id": "c7a",
+      "chapter": "The Million Dollar Bet",
+      "text": "Now, remember that famous bet?",
+      "pause": 0.4
+    },
+    {
+      "id": "c7b",
+      "text": "In two thousand eight, Warren Buffett bet one million dollars that a simple index fund would beat a group of hedge funds, chosen by professionals, over ten years.",
+      "pause": 0.5
+    },
+    {
+      "id": "c7c",
+      "text": "An index fund doesn't try to pick winners. It just buys a little bit of every company in the group. Like buying a tiny piece of every lemonade stand in town.",
+      "pause": 0.5
+    },
+    {
+      "id": "c7d",
+      "text": "Hedge funds have smart managers, fancy offices, and big fees.",
+      "pause": 0.4
+    },
+    {
+      "id": "c7e",
+      "text": "Ten years later? The index fund grew about seven point one percent a year. The hedge fund picks? About two point two percent.",
+      "pause": 0.6
+    },
+    {
+      "id": "c7f",
+      "text": "Buffett won. And the money went to charity.",
+      "pause": 0.4
+    },
+    {
+      "id": "c7g",
+      "text": "The lesson: fees matter a lot. And beating the market is much harder than it looks. Even for professionals.",
+      "pause": 0.9
+    },
+    {
+      "id": "c8a",
+      "chapter": "Now You Know",
+      "text": "So let's recap.",
+      "pause": 0.4
+    },
+    {
+      "id": "c8b",
+      "text": "One. A stock is a small piece of a real business. About six in ten Americans own some, often through retirement accounts.",
+      "pause": 0.5
+    },
+    {
+      "id": "c8c",
+      "text": "Two. Prices move with expectations about the future. That's why they react to news before anything actually happens.",
+      "pause": 0.5
+    },
+    {
+      "id": "c8d",
+      "text": "Three. Markets crash sometimes. Long term, diversified, low cost investing has historically done well. This is education, not advice.",
+      "pause": 0.6
+    },
+    {
+      "id": "c8e",
+      "text": "Now, one last mystery. You've seen it at every online checkout. Pay in four. Zero percent interest.",
+      "pause": 0.4
+    },
+    {
+      "id": "c8f",
+      "text": "If you pay no interest, how do these companies make billions?",
+      "pause": 0.5
+    },
+    {
+      "id": "c8g",
+      "text": "That's next, in our final video of this series. Subscribe, and let's squeeze some more lemons.",
+      "pause": 1.4
+    }
   ]
 }
