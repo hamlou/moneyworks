@@ -12,7 +12,10 @@
     "BLS: 12-month CPI inflation peaked at 9.1% in June 2022, the largest increase since November 1981",
     "Federal Reserve: longer-run inflation goal of 2%; federal funds target raised from near zero (March 2022) to 5.25–5.50% (July 2023)",
     "Federal Reserve H.6: M2 money stock grew roughly 40% from early 2020 to its 2022 peak",
-    "BLS: CPI adjusts for package size changes ('shrinkflation') through quantity adjustments"
+    "BLS: CPI adjusts for package size changes ('shrinkflation') through quantity adjustments",
+    "Weimar Germany hyperinflation, November 1923: a loaf of bread cost ≈ 200 billion marks (widely documented)",
+    "Reserve Bank of Zimbabwe issued a Z$100 trillion banknote (January 2009)",
+    "BLS CPI-U: 1913 annual average ≈ 9.9 vs ≈ 333 in 2026 → ≈ 33×"
   ],
   "beats": [
     {"id": "o1", "text": "Dave is cleaning his closet. And in an old jacket, he finds something amazing.", "pause": 0.4},
@@ -64,6 +67,20 @@
     {"id": "c6b", "text": "Instead, the bag of chips gets a little smaller. The chocolate bar gets a little thinner. Same price. Less stuff.", "pause": 0.5},
     {"id": "c6c", "text": "This is called shrinkflation. And the official numbers actually try to track it, by counting the price per ounce, not per bag.", "pause": 0.5},
     {"id": "c6d", "text": "So next time your cereal box looks a little lonely inside, now you know why.", "pause": 0.9},
+
+    {"id": "y1", "chapter": "Your Personal Inflation", "text": "Here's something the headlines don't tell you. Your inflation might be different from the official number.", "pause": 0.5},
+    {"id": "y2", "text": "The official number is an average basket. But if you rent, and your rent went up fast, your inflation felt much higher.", "pause": 0.5},
+    {"id": "y3", "text": "If you drive a lot, gas prices hit you harder. If you work from home, maybe less.", "pause": 0.5},
+    {"id": "y4", "text": "That's why the news can say three percent, while your wallet feels like it's screaming.", "pause": 0.5},
+    {"id": "y5", "text": "So look at your own basket. Where does your money actually go every month? That's your real inflation.", "pause": 0.9},
+
+    {"id": "x1", "chapter": "The Craziest Inflation Ever", "text": "Now, three percent a year sounds small. But some countries have seen inflation so extreme, it sounds made up.", "pause": 0.5},
+    {"id": "x2", "text": "In Germany, in nineteen twenty three, prices rose so fast that by November, a single loaf of bread cost about two hundred billion marks.", "pause": 0.6},
+    {"id": "x3", "text": "Workers were paid twice a day, and ran to the shops before their money lost value by the afternoon.", "pause": 0.5},
+    {"id": "x4", "text": "Children played with stacks of banknotes like building blocks. The paper was worth more as a toy than as money.", "pause": 0.6},
+    {"id": "x5", "text": "And in Zimbabwe, the government printed a one hundred trillion dollar bill. It still wasn't enough for a bus ride.", "pause": 0.6},
+    {"id": "x6", "text": "And America? Much calmer. But over a long time, small inflation adds up. What cost one dollar in nineteen thirteen costs about thirty three dollars today.", "pause": 0.5},
+    {"id": "x7", "text": "Slow. Quiet. But relentless. That's why understanding it matters.", "pause": 0.9},
 
     {"id": "c7a", "chapter": "How People Fight Back", "text": "So how do people protect themselves from the invisible thief? A few common ideas. This is education, not advice.", "pause": 0.4},
     {"id": "c7b", "text": "One. Don't let too much cash just sit. Money in a regular account earning almost nothing loses value every year.", "pause": 0.5},
