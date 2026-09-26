@@ -2,7 +2,8 @@ import React from 'react';
 import {C} from '../theme';
 import {Sparkle} from '../props';
 import {CreditCard} from '../props2';
-import {Jet, MilesCard} from '../props8';
+import {HotDog, Jet, MemberCard, MilesCard, Receipt} from '../props8';
+import {PriceTag} from '../props3';
 import {Face, Glow, Headline, Hero, Ring, Stage} from './kit';
 
 type V = {v: 'A' | 'B' | 'C'};
@@ -43,6 +44,43 @@ export const V2Ep11: React.FC<V> = ({v}) => {
       <Ring x={860} y={430} rx={440} ry={200} r={-4} />
       <Face cx={250} cy={450} s={5} expr="suspicious" look={0.8} />
       <Headline x={860} y={90} size={120} anchor="middle" r={-2} lines={[[{t: 'SECRETLY'}, {t: 'A'}, {t: 'BANK', c: Y}]]} />
+    </Stage>
+  );
+};
+
+export const V2Ep12: React.FC<V> = ({v}) => {
+  if (v === 'A')
+    return (
+      <Stage a="#3A86FF" b="#081436" cx={420} cy={430}>
+        <Glow x={420} y={430} r={260} color="#fff" o={0.35} />
+        <Hero x={430} y={450} s={1.6} r={-8}>
+          <MemberCard />
+        </Hero>
+        <Face cx={1000} cy={430} s={5.2} expr="money" look={-0.8} flip />
+        <Headline x={430} y={92} size={112} anchor="middle" r={-2} lines={[[{t: 'REAL'}, {t: 'PRODUCT', c: C.ink, box: Y}]]} />
+      </Stage>
+    );
+  if (v === 'B')
+    return (
+      <Stage a="#FF4D5E" b="#3A0612" cx={430} cy={430}>
+        <Glow x={430} y={440} r={240} color={Y} o={0.45} />
+        <Hero x={430} y={460} s={2.6} r={-8}>
+          <HotDog />
+        </Hero>
+        <Hero x={430} y={640} s={1.3} r={-4}>
+          <PriceTag text="$1.50" color={Y} />
+        </Hero>
+        <Face cx={1010} cy={430} s={5.2} expr="shock" pose="shock" look={-0.8} flip lines />
+        <Headline x={430} y={92} size={116} anchor="middle" r={-2} lines={[[{t: 'SINCE'}, {t: '1985?!', c: Y}]]} />
+      </Stage>
+    );
+  return (
+    <Stage a="#2BD67B" b="#062E1C" cx={880} cy={430}>
+      <Hero x={880} y={470} s={1.15} r={5}>
+        <Receipt lines={[['Hot dog', '$1.50'], ['TV', '$199.99'], ['Pickles', '$9.49'], ['Misc', '$76.02']]} total="$287.00" />
+      </Hero>
+      <Face cx={270} cy={440} s={5.2} expr="scream" pose="shock" look={0.8} lines sweat />
+      <Headline x={880} y={90} size={120} anchor="middle" r={-2} lines={[[{t: 'I'}, {t: 'SAVED?!', c: Y}]]} />
     </Stage>
   );
 };

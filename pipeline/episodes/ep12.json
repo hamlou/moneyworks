@@ -1,0 +1,326 @@
+{
+ "id": "ep12",
+ "title": "How Costco Makes Billions Selling Cheap Stuff",
+ "sources": [
+  "Costco 10-K FY2025 (year ended Aug 31, 2025): total revenue ≈ $275.2B, membership fees $5.323B, operating income ≈ $10.4B, net income ≈ $8.1B",
+  "Costco FY2025: ≈ 81 million paid members; renewal rate ≈ 92.3% (U.S. & Canada), ≈ 89.8% worldwide",
+  "Costco membership fees since Sept 1, 2024: Gold Star $65/yr, Executive $130/yr (2% reward)",
+  "Costco gross margin ≈ 11% of net sales (FY2025)",
+  "Costco hot dog & soda combo: $1.50 since 1985 (NPR, 2024); Jim Sinegal anecdote (Costco co-founder)",
+  "Costco sold ≈ 157.4 million rotisserie chickens in FY2025 ($4.99)",
+  "Kirkland Signature ≈ $90B in sales (FY2025)",
+  "A Costco warehouse carries ≈ 4,000 items (SKUs) vs. ≈ 150,000 at a Walmart Supercenter",
+  "Price Club founded by Sol Price in San Diego, 1976; Costco founded by Jim Sinegal and Jeff Brotman in Seattle, 1983; merged 1993"
+ ],
+ "beats": [
+  {
+   "id": "o1",
+   "text": "Dave just bought a hot dog and a soda at Costco. One dollar and fifty cents.",
+   "pause": 0.3
+  },
+  {
+   "id": "o2",
+   "text": "The exact same price as in nineteen eighty five. Forty years. Not one cent more.",
+   "pause": 0.3
+  },
+  {
+   "id": "o3",
+   "text": "Everything here feels cheap. And yet, Costco made more than eight billion dollars in profit last year.",
+   "pause": 0.35
+  },
+  {
+   "id": "o4",
+   "text": "But look at this. About half of Costco's operating profit doesn't come from anything on the shelves.",
+   "pause": 0.35
+  },
+  {
+   "id": "o5",
+   "text": "It comes from a little plastic card Dave paid for before he even walked in.",
+   "pause": 0.35
+  },
+  {
+   "id": "o6",
+   "text": "Today: how Costco really makes money, why it's happy to sell things at almost no profit, and the clever tricks that make you spend more.",
+   "pause": 0.6
+  },
+  {
+   "id": "c1a",
+   "chapter": "The Card at the Door",
+   "text": "At the door of every Costco, someone checks your card. No card, no shopping.",
+   "pause": 0.4
+  },
+  {
+   "id": "c1b",
+   "text": "The basic card costs sixty five dollars a year. The fancy one, called Executive, costs one hundred and thirty.",
+   "pause": 0.5
+  },
+  {
+   "id": "c1c",
+   "text": "Now multiply. Costco has about eighty one million paid members. Last year, those cards brought in about five point three billion dollars.",
+   "pause": 0.5
+  },
+  {
+   "id": "c1d",
+   "text": "And here's the magic. That money is almost pure profit. No hot dogs to cook. No trucks to drive. Just a plastic card and a yearly payment.",
+   "pause": 0.5
+  },
+  {
+   "id": "c1e",
+   "text": "It's like a club with a cover charge. The drinks inside are cheap. But the club already made its money at the door.",
+   "pause": 0.5
+  },
+  {
+   "id": "c1f",
+   "text": "And people keep coming back. In America and Canada, about nine out of ten members renew every year.",
+   "pause": 0.9
+  },
+  {
+   "id": "h1",
+   "chapter": "How It Started",
+   "text": "Where did this weird idea come from?",
+   "pause": 0.4
+  },
+  {
+   "id": "h2",
+   "text": "In nineteen seventy six, a man named Sol Price opened a giant warehouse store in San Diego, called Price Club. At first, only small businesses could shop there.",
+   "pause": 0.5
+  },
+  {
+   "id": "h3",
+   "text": "His plan was simple. Sell things in bulk. Keep prices super low. Charge a fee to get in.",
+   "pause": 0.5
+  },
+  {
+   "id": "h4",
+   "text": "One of his young managers, Jim Sinegal, loved the idea so much that in nineteen eighty three, he started his own version in Seattle. He called it Costco.",
+   "pause": 0.5
+  },
+  {
+   "id": "h5",
+   "text": "Ten years later, the two companies joined together. The student had become the boss.",
+   "pause": 0.5
+  },
+  {
+   "id": "h6",
+   "text": "Today there are more than nine hundred Costco warehouses around the world. From America and Canada to Japan, Korea, Australia, and Spain.",
+   "pause": 0.9
+  },
+  {
+   "id": "c2a",
+   "chapter": "Selling at Almost No Profit",
+   "text": "Now, the shelves. How much does Costco make on the things it sells?",
+   "pause": 0.4
+  },
+  {
+   "id": "c2b",
+   "text": "Almost nothing. For every hundred dollars Dave spends, Costco keeps about eleven dollars after paying for the products.",
+   "pause": 0.5
+  },
+  {
+   "id": "c2c",
+   "text": "And from those eleven dollars, it still has to pay workers, rent, electricity, and trucks. What's left is tiny.",
+   "pause": 0.5
+  },
+  {
+   "id": "c2d",
+   "text": "Many stores add much bigger markups. Costco has famously tried to keep its markups low, even when it could charge more.",
+   "pause": 0.5
+  },
+  {
+   "id": "c2e",
+   "text": "The best example is the hot dog. The story goes that when a boss suggested raising the price, co-founder Jim Sinegal joked he would kill him if he did.",
+   "pause": 0.5
+  },
+  {
+   "id": "c2f",
+   "text": "Figure it out, he said. And they did. Costco even built its own hot dog factory to keep the price at one fifty.",
+   "pause": 0.9
+  },
+  {
+   "id": "c3a",
+   "chapter": "Why Cheap Is the Plan",
+   "text": "So why would a company choose to earn so little on its products? Here's the genius part.",
+   "pause": 0.4
+  },
+  {
+   "id": "c3b",
+   "text": "Because the real product isn't the hot dog. The real product is the membership.",
+   "pause": 0.5
+  },
+  {
+   "id": "c3c",
+   "text": "Costco needs Dave to feel one thing every time he shops: this card is totally worth it.",
+   "pause": 0.5
+  },
+  {
+   "id": "c3d",
+   "text": "If Costco raised prices, Dave might think: why am I paying sixty five dollars? And he wouldn't renew.",
+   "pause": 0.5
+  },
+  {
+   "id": "c3e",
+   "text": "So low prices protect the membership money. The cheap hot dog isn't a mistake. It's advertising you can eat.",
+   "pause": 0.5
+  },
+  {
+   "id": "c3f",
+   "text": "It's like a buffet that charges at the door. Once you've paid, you want to feel like you're winning. So you keep coming back.",
+   "pause": 0.5
+  },
+  {
+   "id": "c3g",
+   "text": "Now think about it from Costco's side. Five billion dollars in fees, arriving every single year, almost guaranteed. Even if it sold everything else at cost, it would still make billions. That's a very comfortable business.",
+   "pause": 0.9
+  },
+  {
+   "id": "c4a",
+   "chapter": "Fewer Choices, Bigger Boxes",
+   "text": "But how can prices be that low? A few clever tricks on Costco's side.",
+   "pause": 0.4
+  },
+  {
+   "id": "c4b",
+   "text": "Trick one: fewer choices. A typical Costco sells about four thousand different items. A giant supermarket can have tens of thousands, or even over one hundred thousand.",
+   "pause": 0.5
+  },
+  {
+   "id": "c4c",
+   "text": "So instead of twenty brands of ketchup, Costco sells maybe two. And it buys them by the mountain.",
+   "pause": 0.5
+  },
+  {
+   "id": "c4d",
+   "text": "When you buy that much of one thing, suppliers give you a much better price.",
+   "pause": 0.5
+  },
+  {
+   "id": "c4e",
+   "text": "Trick two: no fancy decorations. Concrete floors. Metal shelves. Products still sitting on the wooden pallets they arrived on. Cheap to run.",
+   "pause": 0.5
+  },
+  {
+   "id": "c4f",
+   "text": "Trick three: its own brand, Kirkland Signature. It brought in about ninety billion dollars in sales last year. No famous brand to pay for, so Costco keeps more and still charges less.",
+   "pause": 0.9
+  },
+  {
+   "id": "c5a",
+   "chapter": "The Tricks That Make You Spend",
+   "text": "Now the tricks on your side of the cart. Costco is cheap per item. But people often leave spending more than they planned.",
+   "pause": 0.4
+  },
+  {
+   "id": "c5b",
+   "text": "Trick one: the chicken. A whole rotisserie chicken for four ninety nine. Costco sold more than one hundred and fifty seven million of them in one year.",
+   "pause": 0.5
+  },
+  {
+   "id": "c5c",
+   "text": "And where is it? Usually way in the back. So Dave walks past TVs, cookies, and a kayak to get there.",
+   "pause": 0.5
+  },
+  {
+   "id": "c5d",
+   "text": "Trick two: the treasure hunt. Some items appear for a few weeks and then disappear. So Dave thinks: buy it now, or it's gone forever.",
+   "pause": 0.5
+  },
+  {
+   "id": "c5e",
+   "text": "Trick three: big boxes. Dave came for toilet paper. He leaves with forty eight rolls, a giant jar of pickles, and a three pound bag of gummy bears.",
+   "pause": 0.5
+  },
+  {
+   "id": "c5f",
+   "text": "Cheap per piece. But a lot of pieces.",
+   "pause": 0.5
+  },
+  {
+   "id": "c5g",
+   "text": "Dave came in for a one dollar and fifty cent hot dog. His receipt says two hundred and eighty seven dollars. And he still feels like he saved money. That's the Costco magic.",
+   "pause": 0.9
+  },
+  {
+   "id": "c6a",
+   "chapter": "The Executive Upgrade",
+   "text": "Then there's the fancy card.",
+   "pause": 0.4
+  },
+  {
+   "id": "c6b",
+   "text": "The Executive card costs one hundred and thirty dollars. It gives you two percent back on what you spend, up to a limit.",
+   "pause": 0.5
+  },
+  {
+   "id": "c6c",
+   "text": "Do the math. You need to spend about three thousand two hundred and fifty dollars a year at Costco just to earn back the extra sixty five.",
+   "pause": 0.5
+  },
+  {
+   "id": "c6d",
+   "text": "For big families, that's easy. For Dave, living alone with a cat? Maybe not.",
+   "pause": 0.5
+  },
+  {
+   "id": "c6e",
+   "text": "And here's the clever part. Once Dave has paid more for his card, he wants to shop at Costco even more. To make it worth it.",
+   "pause": 0.9
+  },
+  {
+   "id": "c7a",
+   "chapter": "Is It Worth It for Dave?",
+   "text": "So, is Costco a good deal? Often, yes. But here are a few habits smart shoppers use. Education, not advice.",
+   "pause": 0.4
+  },
+  {
+   "id": "c7b",
+   "text": "One. Do the membership math. If you don't save more than the fee in a year, it's not a deal.",
+   "pause": 0.5
+  },
+  {
+   "id": "c7c",
+   "text": "Two. Look at the price per unit, not the price per box. Bigger isn't always cheaper.",
+   "pause": 0.5
+  },
+  {
+   "id": "c7d",
+   "text": "Three. Only buy in bulk what you'll actually use. Forty eight rolls of toilet paper, great. A giant bag of spinach that goes bad in a week, not so great.",
+   "pause": 0.5
+  },
+  {
+   "id": "c7e",
+   "text": "And four. Bring a list. The treasure hunt is fun. Your wallet might not think so.",
+   "pause": 0.9
+  },
+  {
+   "id": "c8a",
+   "chapter": "Now You Know",
+   "text": "So let's recap.",
+   "pause": 0.4
+  },
+  {
+   "id": "c8b",
+   "text": "One. Costco makes about half its operating profit from membership fees, not from the stuff on the shelves.",
+   "pause": 0.5
+  },
+  {
+   "id": "c8c",
+   "text": "Two. Low prices are the plan. They keep members happy, so they pay again next year.",
+   "pause": 0.5
+  },
+  {
+   "id": "c8d",
+   "text": "Three. Fewer items, bulk buying, and its own brand keep costs low, while the chicken, the treasure hunt, and big boxes keep you spending.",
+   "pause": 0.6
+  },
+  {
+   "id": "c8e",
+   "text": "Next time, Dave learns how some billionaires pay a lower tax rate than he does. Legally.",
+   "pause": 0.4
+  },
+  {
+   "id": "c8f",
+   "text": "Subscribe, so Dave can keep explaining money. It's cheaper than a hot dog. It's free.",
+   "pause": 1.4
+  }
+ ]
+}

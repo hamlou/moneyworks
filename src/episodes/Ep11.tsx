@@ -230,8 +230,10 @@ export const Ep11: React.FC = () => {
           <AbsoluteFill>
             <Interior />
             <Svg>
-              <Buffett f={f} x={560} y={860} s={1.2 * pop(f, wb - 4)} keys={[{at: 0, pose: 'talk', expr: 'smug', look: 0.6}]} />
-              <G2 x={560} y={420} s={pop(f, wb)}><Text size={44}>Warren Buffett</Text></G2>
+              <Dave f={f} x={260} y={860} s={1} keys={[{at: 0, pose: 'shrug', expr: 'worried', look: 0.6}]} />
+              <G2 x={330} y={470} s={pop(f, A('c2a') + 4)}><Bubble text={'$8 profit...\ngood business?'} size={40} tail="down" /></G2>
+              <Buffett f={f} x={760} y={860} s={1.2 * pop(f, wb - 4)} keys={[{at: 0, pose: 'talk', expr: 'smug', look: 0.6}]} />
+              <G2 x={760} y={420} s={pop(f, wb)}><Text size={44}>Warren Buffett</Text></G2>
               <Stamp x={1300} y={450} s={pop(f, ws, 9, 260)} r={-6} text="WORST BUSINESS" size={64} color={C.red} />
               <Jet x={1300} y={720} s={0.5 * pop(f, ws + 6)} />
               <SourceTag f={f} at={ws} text="Berkshire Hathaway shareholder letter, 2007" />
@@ -256,10 +258,10 @@ export const Ep11: React.FC = () => {
           <Svg>
             <G2 x={960} y={130}><Text size={60}>Airline bankruptcies</Text></G2>
             {[[un, 'UNITED', '2002', C.blue], [dl, 'DELTA', '2005', C.red], [am, 'AMERICAN', '2011', '#9AA5B1']].map(([at, n, y, c], i) => (
-              <G2 key={n as string} x={420 + i * 540} y={520} s={pop(f, at as number)} r={(i - 1) * 3}>
+              <G2 key={n as string} x={420 + i * 540} y={520} s={pop(f, A('c2d') + i * 5)} r={(i - 1) * 3}>
                 <Jet s={0.42} livery={c as string} name={n as string} />
-                <Stamp y={150} text="BANKRUPT" size={46} color={C.red} />
-                <Text y={260} size={60}>{y as string}</Text>
+                <G2 y={150} s={pop(f, at as number, 9, 260)}><Stamp text="BANKRUPT" size={46} color={C.red} /></G2>
+                <G2 y={260} s={pop(f, at as number)}><Text size={60}>{y as string}</Text></G2>
               </G2>
             ))}
           </Svg>
@@ -394,8 +396,10 @@ export const Ep11: React.FC = () => {
             <line x1={400} y1={860} x2={1520} y2={860} stroke={C.ink} strokeWidth={6} strokeLinecap="round" />
             <Bar x={760} y={860} h={ease(f, ep - 4, ep + 14, 0, 8.2 * 55)} color={C.blue} label="Amex → Delta, 2025" value="$8.2B" w={260} />
             <Bar x={1160} y={860} h={ease(f, tb - 4, tb + 14, 0, 10 * 55)} color={C.green} label="Delta's goal" value="$10B" w={260} />
-            <Jet x={500} y={250} s={0.5 * pop(f, ae - 6)} livery={C.red} name="DELTA" />
-            <CreditCard x={1500} y={250} s={0.6 * pop(f, ae)} r={8} />
+            <Jet x={500} y={250} s={0.5 * pop(f, A('c4a'))} livery={C.red} name="DELTA" />
+            <G2 x={960} y={250} s={pop(f, A('c4a') + 6)}><Text size={80}>+</Text></G2>
+            <CreditCard x={1450} y={250} s={0.6 * pop(f, A('c4a') + 10)} r={8} />
+            <G2 x={960} y={120} s={pop(f, ae)}><Text size={48}>American Express pays Delta</Text></G2>
             <SourceTag f={f} at={ep} text="Delta Air Lines FY2025 results" />
           </Svg>
         </AbsoluteFill>
@@ -404,7 +408,7 @@ export const Ep11: React.FC = () => {
           <Svg>
             <rect x={0} y={700} width={1920} height={380} fill="#E7C98F" />
             <circle cx={1650} cy={200} r={90} fill={C.yellow} stroke={C.ink} strokeWidth={6} />
-            {[0, 1, 2, 3].map((i) => <Jet key={i} x={300 + i * 420} y={660 + (i % 2) * 60} s={0.35 * pop(f, ds + i * 5)} livery={[C.blue, C.red, '#9AA5B1', C.blue][i]} />)}
+            {[0, 1, 2, 3].map((i) => <Jet key={i} x={300 + i * 420} y={660 + (i % 2) * 60} s={0.35 * pop(f, A('c4d') + i * 5)} livery={[C.blue, C.red, '#9AA5B1', C.blue][i]} />)}
             <Cactus x={120} y={900} s={pop(f, ds)} />
             <G2 x={960} y={180} s={pop(f, pd)}><Text size={64}>2020: planes parked in the desert</Text></G2>
             {f >= un && (
@@ -483,10 +487,10 @@ export const Ep11: React.FC = () => {
         </AbsoluteFill>
       ) : (
         <AbsoluteFill>
-          <Interior />
+          <Board />
           <Svg>
-            <G2 x={560} y={420} s={pop(f, cb)}>
-              <Bank s={0.8} label="AIRLINE BANK" />
+            <G2 x={560} y={560} s={pop(f, cb)}>
+              <Bank s={0.65} label="AIRLINE BANK" />
             </G2>
             <G2 x={560} y={760} s={pop(f, pr)}><Text size={44}>prints · sets prices · changes rules</Text></G2>
             {f >= ex && (
@@ -627,7 +631,7 @@ export const Ep11: React.FC = () => {
           <Street f={f} />
           <Svg>
             {Array.from({length: 5}).map((_, i) => (
-              <G2 key={i} x={400 + i * 170} y={600} s={f < bk + i * 12 + 30 ? 1 : 0}>
+              <G2 key={i} x={400 + i * 170} y={600} s={pop(f, bk - 10 + i * 3) * (f < bk + 10 + ((ft - bk) * (5 - i)) / 5 ? 1 : 0)}>
                 <Bread s={0.9} />
               </G2>
             ))}
