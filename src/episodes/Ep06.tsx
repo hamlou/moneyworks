@@ -339,7 +339,7 @@ export const Ep06: React.FC = () => {
             <G2 x={120} y={120}><Row n={3} text="American investors: ≈ $18.7T" lit={1} color={C.green} w={1100} s={pop(f, bg)} /></G2>
             {labels.map((l, i) => (
               <Frame key={l} x={380 + (i % 3) * 580} y={400 + Math.floor(i / 3) * 330} s={pop(f, items[i])} w={520} h={260}>
-                {i === 0 ? <Bank s={0.3} y={100} /> : i === 5 ? <Dave f={f} y={110} s={0.5} keys={[{at: 0, pose: 'celebrate', expr: 'grin'}]} /> : <MoneyStack n={4} s={0.8} y={70} />}
+                {i === 0 ? <Bank s={0.3} y={100} /> : i === 5 ? <Dave f={f} x={0} y={110} s={0.5} keys={[{at: 0, pose: 'celebrate', expr: 'grin'}]} /> : <MoneyStack n={4} s={0.8} y={70} />}
                 <Text y={-80} size={40}>{l}</Text>
               </Frame>
             ))}
