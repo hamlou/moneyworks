@@ -1,6 +1,7 @@
 import React from 'react';
 import {AbsoluteFill} from 'remotion';
 import {V2Ep01} from './ep01';
+import {V2Ep15} from './t15';
 import {V2Ep18} from './t18';
 import {V2Ep16} from './t16';
 import {V2Ep20} from './t20';
@@ -24,6 +25,7 @@ export const V2_THUMBS: Record<string, React.FC<{v: 'A' | 'B' | 'C'}>> = {
   ep12: V2Ep12,
   ep13: V2Ep13,
   ep14: V2Ep14,
+  ep15: V2Ep15,
   ep18: V2Ep18,
   ep16: V2Ep16,
   ep20: V2Ep20,
