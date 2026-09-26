@@ -7,11 +7,13 @@ import {Ep02Thumb} from './thumbs/ep02';
 import {Ep03Thumb} from './thumbs/ep03';
 import {Ep04Thumb} from './thumbs/ep04';
 import {Ep05Thumb} from './thumbs/ep05';
+import {Ep06Thumb} from './thumbs/ep06';
 
 EP_THUMBS.ep02 = Ep02Thumb;
 EP_THUMBS.ep03 = Ep03Thumb;
 EP_THUMBS.ep04 = Ep04Thumb;
 EP_THUMBS.ep05 = Ep05Thumb;
+EP_THUMBS.ep06 = Ep06Thumb;
 
 export const Root: React.FC = () => (
   <>
