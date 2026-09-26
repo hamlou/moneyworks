@@ -12,11 +12,12 @@ import {Ep07} from './episodes/Ep07';
 import {Ep08} from './episodes/Ep08';
 import {Ep09} from './episodes/Ep09';
 import {Ep10} from './episodes/Ep10';
+import {Ep11} from './episodes/Ep11';
 import {C} from './theme';
 
 export type EpisodeProps = {ep: string; timings: Timings | null};
 
-const EPISODES: Record<string, React.FC> = {ep001: Ep001, ep01: Ep01, ep02: Ep02, ep03: Ep03, ep04: Ep04, ep05: Ep05, ep06: Ep06, ep07: Ep07, ep08: Ep08, ep09: Ep09, ep10: Ep10};
+const EPISODES: Record<string, React.FC> = {ep001: Ep001, ep01: Ep01, ep02: Ep02, ep03: Ep03, ep04: Ep04, ep05: Ep05, ep06: Ep06, ep07: Ep07, ep08: Ep08, ep09: Ep09, ep10: Ep10, ep11: Ep11};
 
 export const Episode: React.FC<EpisodeProps> = ({ep, timings}) => {
   const f = useCurrentFrame();

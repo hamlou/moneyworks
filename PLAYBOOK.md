@@ -6,6 +6,7 @@ This is the bible for the channel. Series 1 (ep01–ep10) was approved by the ow
 
 ## 1. The channel
 
+- **Channel name: "Dave Explains Money"** (@DaveExplainsMoney). **Dave is the main character of EVERY video** — the story follows Dave (his problem, his question, his discovery); other characters are supporting.
 - **Niche:** Money, Business & Economics Explained (banks, credit, mortgages, companies, taxes, debt, inflation, gold, stocks, fintech).
 - **Audience:** English-speaking beginners (US/UK/CA/AU). Assume the viewer knows NOTHING. Explain like to a smart 10-year-old.
 - **Format:** 2D stickman explainer, 1920×1080, 30 fps, **8–15 minutes** (target 9–10). Never under 8:00.

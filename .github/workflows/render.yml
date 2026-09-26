@@ -86,7 +86,7 @@ jobs:
           name: voice
           path: public/${{ inputs.ep }}
       - run: >
-          mkdir -p aud && for v in A B C; do npx remotion still src/index.ts Thumb aud/thumb_$v.png
+          mkdir -p aud && for v in A B C; do npx remotion still src/index.ts ThumbV2 aud/thumb_$v.png
           --props="{\"ep\":\"${{ inputs.ep }}\",\"v\":\"$v\"}" --log=error || true; done
       - run: bash pipeline/assemble.sh ${{ inputs.ep }}
       - uses: actions/upload-artifact@v4

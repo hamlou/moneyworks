@@ -32,8 +32,8 @@ export const Root: React.FC = () => (
   <Composition id="AvatarV2" component={AvatarV2} width={800} height={800} fps={30} durationInFrames={1} defaultProps={{v: 'A'} as AvatarV2Props} />
   <Composition id="Banner" component={Banner} width={2560} height={1440} fps={30} durationInFrames={1} />
   <Composition id="BannerGuide" component={BannerGuide} width={2560} height={1440} fps={30} durationInFrames={1} />
-  <Composition id="ThumbV2"component={ThumbV2} width={1280} height={720} fps={30} durationInFrames={1} defaultProps={{ep: 'ep01', v: 'A'} as ThumbV2Props} />
-  <Composition id="Thumb"component={Thumb} width={1280} height={720} fps={30} durationInFrames={1} defaultProps={{v: 'A'} as ThumbProps} />
+  <Composition id="ThumbV2" component={ThumbV2} width={1280} height={720} fps={30} durationInFrames={1} defaultProps={{ep: 'ep01', v: 'A'} as ThumbV2Props} />
+  <Composition id="Thumb" component={Thumb} width={1280} height={720} fps={30} durationInFrames={1} defaultProps={{v: 'A'} as ThumbProps} />
   <Composition
     id="Episode"
     component={Episode}
