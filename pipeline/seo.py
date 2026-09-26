@@ -139,6 +139,32 @@ SEO = {
         "thumb": "A ($8 PROFIT?!) pairs best; test B (SECRET PRINTER) against it.",
         "next": None,
     },
+    "ep12": {
+        "title": "How Costco Makes Billions Selling Cheap Stuff",
+        "alts": ["Costco's $1.50 Hot Dog Is a Trap (A Genius One)", "Why Costco Barely Profits From Anything It Sells"],
+        "line1": "How does Costco make money? About half its operating profit comes from $65 membership cards, not the products. Here's the genius plan behind the $1.50 hot dog.",
+        "summary": "Dave buys a $1.50 hot dog, the same price since 1985. So how does Costco earn $8 billion a year? We explain the membership machine, the Price Club story, why Costco keeps markups tiny, how 4,000 items and Kirkland keep prices low, and the chicken-at-the-back tricks that make Dave spend $287.",
+        "learn": ["How Costco really makes money (membership fees)", "The story of Price Club and Costco", "Why Costco keeps prices low on purpose", "How fewer items and Kirkland cut costs", "The store tricks that make you spend more", "Is the Executive membership worth it?"],
+        "tags": ["how costco makes money", "costco business model", "costco membership", "costco hot dog", "kirkland signature", "costco rotisserie chicken", "costco executive membership worth it", "warehouse club", "how companies make money", "business explained", "dave explains money"],
+        "hashtags": ["#costco", "#business", "#money"],
+        "pinned": "Costco members: what's the ONE thing you always end up buying that wasn't on your list? 👇",
+        "thumb": "B (SINCE 1985?!) pairs best; test A (REAL PRODUCT).",
+        "next": None,
+    },
+
+    "ep13": {
+        "title": "How Billionaires Pay Less Tax Than You (Legally)",
+        "alts": ["Buy, Borrow, Die: The Billionaire Tax Trick Explained", "Why a Billionaire's Tax Rate Can Be 3.4%"],
+        "line1": "How do billionaires pay so little tax? The 25 richest Americans had a 'true tax rate' of 3.4%. Here's the legal 3-step trick: buy, borrow, die.",
+        "summary": "Dave pays about 1 dollar in 6 before his paycheck even arrives. Richie owns $10 billion of shares and pays $0 on a billion-dollar gain. We explain income vs wealth with an apple tree, the buy-borrow-die strategy, the step-up in basis, Warren Buffett's famous tax confession, and the real arguments on both sides.",
+        "learn": ["Why salaries are taxed right away but wealth isn't", "Buy, borrow, die: the 3-step strategy", "What the step-up in basis is", "Why Warren Buffett paid a lower rate than his staff", "The arguments for and against changing the rules", "What regular people can legally copy"],
+        "tags": ["how billionaires avoid taxes", "buy borrow die", "step up in basis", "unrealized gains tax", "why the rich pay less tax", "propublica irs files", "warren buffett tax rate", "capital gains tax explained", "taxes explained", "personal finance for beginners", "dave explains money"],
+        "hashtags": ["#taxes", "#billionaires", "#money"],
+        "pinned": "Should unrealized gains (paper profits) be taxed? YES or NO 👇 Keep it respectful, both sides have real points.",
+        "thumb": "B (BUY. BORROW. DIE.) — test against A (TAX: $0).",
+        "next": None,
+    },
+
 }
 
 

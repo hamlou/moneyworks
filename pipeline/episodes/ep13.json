@@ -1,0 +1,336 @@
+{
+ "id": "ep13",
+ "title": "How Billionaires Pay Less Tax Than You (Legally)",
+ "sources": [
+  "ProPublica, 'The Secret IRS Files' (June 2021): 25 richest Americans' wealth grew $401B (2014–2018) while paying $13.6B in federal income tax — a 'true tax rate' of 3.4%",
+  "U.S. Census Bureau: median household income $83,730 (2024)",
+  "IRS 2026 brackets: 10%–37%; long-term capital gains rates 0% / 15% / 20% (+3.8% net investment income tax for high earners)",
+  "Employee payroll tax (Social Security + Medicare): 7.65%",
+  "Step-up in basis at death: Congressional Research Service IF11812; CBO budget options; Tax Policy Center",
+  "Estate tax: 40% top rate above ≈ $15 million per person exemption (2026)",
+  "Warren Buffett, 'Stop Coddling the Super-Rich', New York Times (Aug 14, 2011): 17.4% of taxable income vs 33%–41% for his office staff",
+  "Tax Foundation / IRS data (2022): top 1% of earners paid ≈ 40% of all federal income taxes",
+  "U.S. federal corporate income tax rate: 21% (since 2018)"
+ ],
+ "beats": [
+  {
+   "id": "o1",
+   "text": "Dave earns sixty thousand dollars a year. Before his paycheck even reaches him, taxes are taken out. About one dollar out of every six.",
+   "pause": 0.3
+  },
+  {
+   "id": "o2",
+   "text": "Now look at this. A few years ago, a news investigation looked at the tax records of the twenty five richest Americans.",
+   "pause": 0.3
+  },
+  {
+   "id": "o3",
+   "text": "In five years, their wealth grew by four hundred and one billion dollars. The income tax they paid? Just thirteen point six billion.",
+   "pause": 0.35
+  },
+  {
+   "id": "o4",
+   "text": "That's a true tax rate of about three point four percent. Dave pays way more than that.",
+   "pause": 0.35
+  },
+  {
+   "id": "o5",
+   "text": "And here's the crazy part. It's mostly legal.",
+   "pause": 0.3
+  },
+  {
+   "id": "o6",
+   "text": "Today: the simple three step trick called buy, borrow, die. Why it works. And the arguments on both sides.",
+   "pause": 0.6
+  },
+  {
+   "id": "c1a",
+   "chapter": "How Dave Pays Tax",
+   "text": "First, let's see how Dave pays.",
+   "pause": 0.4
+  },
+  {
+   "id": "c1b",
+   "text": "Dave works at an office. Every two weeks, his boss pays him. And before the money lands in his account, the government takes its slice.",
+   "pause": 0.5
+  },
+  {
+   "id": "c1c",
+   "text": "Some goes to income tax. Some goes to Social Security and Medicare. Dave doesn't choose. He doesn't wait. It just happens.",
+   "pause": 0.5
+  },
+  {
+   "id": "c1d",
+   "text": "Why? Because Dave's money comes as a salary. And a salary is income. And income gets taxed right away.",
+   "pause": 0.5
+  },
+  {
+   "id": "c1e",
+   "text": "Remember that word. Income. Because the whole trick is about avoiding it.",
+   "pause": 0.5
+  },
+  {
+   "id": "c1f",
+   "text": "Over a whole year, that's roughly ten thousand dollars that Dave never even touches. It leaves before it arrives.",
+   "pause": 0.9
+  },
+  {
+   "id": "c2a",
+   "chapter": "Income vs Wealth",
+   "text": "Meet Richie. Richie started a company. He owns ten billion dollars of its shares.",
+   "pause": 0.4
+  },
+  {
+   "id": "c2b",
+   "text": "Richie's salary? One dollar a year. Some famous billionaires really do this.",
+   "pause": 0.5
+  },
+  {
+   "id": "c2c",
+   "text": "This year, the company does great. Richie's shares go up by one billion dollars. He is one billion dollars richer.",
+   "pause": 0.5
+  },
+  {
+   "id": "c2d",
+   "text": "How much tax does he pay on that billion? Zero.",
+   "pause": 0.5
+  },
+  {
+   "id": "c2e",
+   "text": "Because in the tax rules, that billion isn't income yet. It's a gain on paper. It only counts when he sells the shares.",
+   "pause": 0.5
+  },
+  {
+   "id": "c2f",
+   "text": "Think of an apple tree. You only pay tax on the apples you pick. But the tree itself can grow bigger and bigger, and nobody taxes the tree.",
+   "pause": 0.5
+  },
+  {
+   "id": "c2g",
+   "text": "Dave gets paid in apples. Richie owns the tree.",
+   "pause": 0.9
+  },
+  {
+   "id": "c3a",
+   "chapter": "Step One: Buy",
+   "text": "So here's the three step trick. Step one: buy.",
+   "pause": 0.4
+  },
+  {
+   "id": "c3b",
+   "text": "Buy things that grow in value. Shares of companies. Buildings. Land. Whole businesses.",
+   "pause": 0.5
+  },
+  {
+   "id": "c3c",
+   "text": "And then, the most important rule: never sell them. Because selling is what creates income. And income creates tax.",
+   "pause": 0.5
+  },
+  {
+   "id": "c3d",
+   "text": "If Richie sold one billion dollars of shares, he could owe around twenty four percent in federal tax on the gain. So he doesn't sell.",
+   "pause": 0.5
+  },
+  {
+   "id": "c3e",
+   "text": "But wait. If Richie never sells anything, how does he pay for his yacht?",
+   "pause": 0.9
+  },
+  {
+   "id": "c4a",
+   "chapter": "Step Two: Borrow",
+   "text": "Step two: borrow.",
+   "pause": 0.4
+  },
+  {
+   "id": "c4b",
+   "text": "Richie walks into a bank and says: I need fifty million dollars. And I'll use my shares as a guarantee.",
+   "pause": 0.5
+  },
+  {
+   "id": "c4c",
+   "text": "The bank loves this. The shares are worth billions. The risk is tiny. So they give Richie a loan, often at a low interest rate.",
+   "pause": 0.5
+  },
+  {
+   "id": "c4d",
+   "text": "And here's the key. A loan is not income. You have to pay it back. So there's no income tax on borrowed money.",
+   "pause": 0.5
+  },
+  {
+   "id": "c4e",
+   "text": "Richie pays some interest to the bank. But that interest is usually far less than the tax he'd pay if he sold.",
+   "pause": 0.5
+  },
+  {
+   "id": "c4f",
+   "text": "And while he spends the loan, his shares keep growing. Often faster than the interest. So he can keep borrowing, year after year.",
+   "pause": 0.5
+  },
+  {
+   "id": "c4g",
+   "text": "It's like living off an apple tree without ever picking an apple. You just borrow apples from the neighbor, and promise him the tree.",
+   "pause": 0.5
+  },
+  {
+   "id": "c4h",
+   "text": "And remember our very first video? When a bank makes a loan, it creates new money. So the bank is happy, Richie is happy, and the tax office gets nothing.",
+   "pause": 0.9
+  },
+  {
+   "id": "c5a",
+   "chapter": "Step Three: Die",
+   "text": "And step three. Well. Die.",
+   "pause": 0.4
+  },
+  {
+   "id": "c5b",
+   "text": "Sorry, Richie. But this is where the magic happens.",
+   "pause": 0.5
+  },
+  {
+   "id": "c5c",
+   "text": "When Richie passes away, his kids inherit the shares. Normally, if you sell shares, you pay tax on the growth since you bought them.",
+   "pause": 0.5
+  },
+  {
+   "id": "c5d",
+   "text": "But there's a rule called the step up in basis. When you inherit something, the tax clock resets. It's treated as if your kids bought the shares on the day Richie died.",
+   "pause": 0.5
+  },
+  {
+   "id": "c5e",
+   "text": "So all the growth during Richie's whole life? For income tax, it simply vanishes. Poof.",
+   "pause": 0.5
+  },
+  {
+   "id": "c5f",
+   "text": "The kids can sell some shares, pay back Richie's loans, and owe little or no income tax on decades of growth.",
+   "pause": 0.5
+  },
+  {
+   "id": "c5g",
+   "text": "Now, there is an estate tax. Up to forty percent on very large estates. But the richest families hire experts, and use special trusts to shrink that bill a lot.",
+   "pause": 0.9
+  },
+  {
+   "id": "c6a",
+   "chapter": "Buffett and His Secretary",
+   "text": "Even some billionaires think this is strange.",
+   "pause": 0.4
+  },
+  {
+   "id": "c6b",
+   "text": "In twenty eleven, Warren Buffett, one of the richest people alive, wrote an article in The New York Times.",
+   "pause": 0.5
+  },
+  {
+   "id": "c6c",
+   "text": "He said that the year before, he paid about seventeen percent of his taxable income in federal taxes.",
+   "pause": 0.5
+  },
+  {
+   "id": "c6d",
+   "text": "And the people working in his office? They paid between thirty three and forty one percent.",
+   "pause": 0.5
+  },
+  {
+   "id": "c6g",
+   "text": "Why? Because most of Buffett's money came from investments, and gains on investments are taxed at lower rates than salaries. His staff earned salaries.",
+   "pause": 0.5
+  },
+  {
+   "id": "c6e",
+   "text": "One of the richest men in the world, paying a lower rate than his own staff. And he was asking to pay more.",
+   "pause": 0.9
+  },
+  {
+   "id": "c7a",
+   "chapter": "The Other Side",
+   "text": "Now, to be fair, there's another side to this story. And smart people disagree.",
+   "pause": 0.4
+  },
+  {
+   "id": "c7b",
+   "text": "Argument one: taxing paper gains is tricky. Shares can crash. Imagine paying tax on a billion dollar gain, and then the next year, the gain is gone.",
+   "pause": 0.5
+  },
+  {
+   "id": "c7c",
+   "text": "Argument two: the company already pays tax on its profits. In America, corporations pay twenty one percent. So some say, taxing the owner again is taxing twice.",
+   "pause": 0.5
+  },
+  {
+   "id": "c7d",
+   "text": "Argument three: high earners already pay a huge share. The top one percent of earners pay around forty percent of all federal income taxes.",
+   "pause": 0.5
+  },
+  {
+   "id": "c7e",
+   "text": "And the other side answers: a percentage of a huge fortune is still small, and ordinary workers can't borrow against billions to avoid paying.",
+   "pause": 0.5
+  },
+  {
+   "id": "c7f",
+   "text": "Should the rules change? That's a political question. But now you know how the rules actually work.",
+   "pause": 0.9
+  },
+  {
+   "id": "c8a",
+   "chapter": "What Dave Can Copy",
+   "text": "So can Dave use any of this? A little. The same ideas work in small ways. Education, not advice.",
+   "pause": 0.4
+  },
+  {
+   "id": "c8b",
+   "text": "One. Own things that grow, not just a salary. Even small investments can grow without being taxed every year.",
+   "pause": 0.5
+  },
+  {
+   "id": "c8c",
+   "text": "Two. Be patient. In America, if you hold an investment for more than one year before selling, the tax rate on the gain is usually lower. For many people, it can even be zero.",
+   "pause": 0.5
+  },
+  {
+   "id": "c8d",
+   "text": "Three. Use tax friendly accounts, like a four oh one k or an I R A, where investments can grow with less tax.",
+   "pause": 0.5
+  },
+  {
+   "id": "c8e",
+   "text": "And four. The step up rule isn't only for billionaires. If Dave ever inherits Grandma's house, it applies to him too.",
+   "pause": 0.9
+  },
+  {
+   "id": "c9a",
+   "chapter": "Now You Know",
+   "text": "So let's recap.",
+   "pause": 0.4
+  },
+  {
+   "id": "c9b",
+   "text": "One. Salaries are taxed right away. Growing wealth is not taxed until you sell.",
+   "pause": 0.5
+  },
+  {
+   "id": "c9c",
+   "text": "Two. The very rich buy things that grow, borrow against them instead of selling, and pass them on when they die.",
+   "pause": 0.5
+  },
+  {
+   "id": "c9d",
+   "text": "Three. It's legal, it's debated, and both sides have real arguments.",
+   "pause": 0.6
+  },
+  {
+   "id": "c9e",
+   "text": "Next time, Dave finds out about the secret number that follows you everywhere. Your credit score. And how it's really calculated.",
+   "pause": 0.4
+  },
+  {
+   "id": "c9f",
+   "text": "Subscribe, so Dave can keep explaining money. And unlike Richie's taxes, it's completely free.",
+   "pause": 1.4
+  }
+ ]
+}

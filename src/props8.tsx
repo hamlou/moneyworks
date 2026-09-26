@@ -223,3 +223,71 @@ export const Bottle: React.FC<P & {color?: string; label?: string}> = ({color = 
     {label && <Text y={10} size={22} color="#fff">{label}</Text>}
   </G>
 );
+
+export const AppleTree: React.FC<P & {grow?: number; apples?: number; label?: string}> = ({grow = 1, apples = 6, label, ...p}) => {
+  const g = 0.6 + grow * 0.4;
+  const pts = [[-90, -300], [60, -330], [110, -250], [-40, -230], [-130, -200], [20, -380], [140, -340], [-100, -360], [70, -200], [-10, -300]];
+  return (
+    <G {...p}>
+      <rect x={-30} y={-160 * g} width={60} height={160 * g} fill="#8C5A33" {...O} />
+      <g transform={`translate(0,${-160 * g + 160}) scale(${g})`}>
+        <circle cx={0} cy={-290} r={170} fill="#6BBF59" {...O} />
+        <circle cx={-110} cy={-230} r={100} fill="#6BBF59" {...O} />
+        <circle cx={110} cy={-230} r={100} fill="#6BBF59" {...O} />
+        <circle cx={0} cy={-290} r={165} fill="#6BBF59" />
+        {pts.slice(0, apples).map(([x, y], i) => <circle key={i} cx={x} cy={y} r={20} fill={C.red} stroke={C.ink} strokeWidth={4} />)}
+      </g>
+      {label && <Text y={50} size={40}>{label}</Text>}
+    </G>
+  );
+};
+
+export const Yacht: React.FC<P & {f?: number}> = ({f = 0, ...p}) => (
+  <G {...p}>
+    <g transform={`translate(0,${Math.sin(f / 12) * 6})`}>
+      <path d="M -300 0 L 300 0 L 240 90 L -260 90 Z" fill="#fff" {...O} />
+      <rect x={-200} y={-80} width={300} height={80} rx={12} fill="#fff" {...O} />
+      <rect x={-120} y={-140} width={170} height={60} rx={10} fill="#fff" {...O} />
+      {[-170, -110, -50, 10].map((x) => <rect key={x} x={x} y={-60} width={40} height={30} rx={6} fill="#8FD3F5" stroke={C.ink} strokeWidth={3} />)}
+      <path d="M -300 40 L 280 40" stroke={C.blue} strokeWidth={10} />
+    </g>
+    <path d="M -420 110 q 40 -20 80 0 t 80 0 t 80 0 t 80 0 t 80 0 t 80 0 t 80 0 t 80 0 t 80 0 t 80 0" fill="none" stroke="#5AB6E0" strokeWidth={10} strokeLinecap="round" />
+  </G>
+);
+
+export const Tombstone: React.FC<P & {name?: string}> = ({name = 'R.I.P.', ...p}) => (
+  <G {...p}>
+    <path d="M -110 0 L -110 -180 Q -110 -260 0 -260 Q 110 -260 110 -180 L 110 0 Z" fill="#C9CED6" {...O} />
+    <Text y={-170} size={40} color="#5B6470">{name}</Text>
+    <rect x={-150} y={0} width={300} height={24} rx={8} fill="#6BBF59" stroke={C.ink} strokeWidth={5} />
+  </G>
+);
+
+export const Paycheck: React.FC<P & {amount: string; cut?: number}> = ({amount, cut = 0, ...p}) => (
+  <G {...p}>
+    <rect x={-300} y={-130} width={600} height={260} rx={16} fill="#E8F7EC" {...O} />
+    <Text x={-270} y={-80} size={32} anchor="start" color="#5B6470">PAY TO: DAVE</Text>
+    <Text x={0} y={10} size={90} color={C.green}>{amount}</Text>
+    <line x1={-270} y1={80} x2={270} y2={80} stroke={C.ink} strokeWidth={3} strokeDasharray="10 8" />
+    {cut > 0 && <rect x={300 - 600 * cut} y={-130} width={600 * cut} height={260} rx={16} fill="rgba(239,71,111,0.8)" stroke={C.ink} strokeWidth={5} />}
+    {cut > 0 && <Text x={300 - 300 * cut} y={0} size={40} color="#fff">TAX</Text>}
+  </G>
+);
+
+export const Scale: React.FC<P & {tilt?: number; left?: string; right?: string}> = ({tilt = 0, left = '', right = '', ...p}) => (
+  <G {...p}>
+    <rect x={-20} y={-300} width={40} height={300} fill="#8C5A33" {...O} strokeWidth={5} />
+    <path d="M -120 0 L 120 0 L 80 -40 L -80 -40 Z" fill="#8C5A33" {...O} strokeWidth={5} />
+    <g transform={`translate(0,-300) rotate(${tilt})`}>
+      <rect x={-320} y={-10} width={640} height={20} rx={10} fill={C.gold} {...O} strokeWidth={5} />
+      {[-300, 300].map((x, i) => (
+        <g key={x} transform={`translate(${x},0) rotate(${-tilt})`}>
+          <line x1={0} y1={0} x2={-80} y2={140} stroke={C.ink} strokeWidth={4} />
+          <line x1={0} y1={0} x2={80} y2={140} stroke={C.ink} strokeWidth={4} />
+          <path d="M -110 140 L 110 140 Q 90 200 0 200 Q -90 200 -110 140 Z" fill={C.gold} {...O} strokeWidth={5} />
+          <Text y={250} size={34}>{i ? right : left}</Text>
+        </g>
+      ))}
+    </g>
+  </G>
+);
