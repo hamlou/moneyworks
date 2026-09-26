@@ -4,8 +4,12 @@ import {Episode, EpisodeProps} from './Episode';
 import {TAIL_SEC} from './timing';
 import {Thumb, ThumbProps, EP_THUMBS} from './Thumb';
 import {Ep02Thumb} from './thumbs/ep02';
+import {Ep03Thumb} from './thumbs/ep03';
+import {Ep04Thumb} from './thumbs/ep04';
 
 EP_THUMBS.ep02 = Ep02Thumb;
+EP_THUMBS.ep03 = Ep03Thumb;
+EP_THUMBS.ep04 = Ep04Thumb;
 
 export const Root: React.FC = () => (
   <>

@@ -193,6 +193,21 @@ const Ponytail = () => (
   </g>
 );
 
+const PaperHat = () => (
+  <g stroke={C.ink} strokeWidth={4} strokeLinejoin="round">
+    <path d="M -38 -22 L -30 -58 L 30 -58 L 38 -22 Z" fill="#fff" />
+    <rect x={-40} y={-30} width={80} height={10} fill={C.red} />
+  </g>
+);
+const Fedora = () => (
+  <g stroke={C.ink} strokeWidth={4} strokeLinejoin="round">
+    <ellipse cx={0} cy={-30} rx={56} ry={10} fill="#5B4636" />
+    <path d="M -32 -30 Q -34 -74 0 -72 Q 34 -74 32 -30 Z" fill="#6E5642" />
+    <path d="M -14 -70 Q 0 -62 14 -70" fill="none" />
+    <rect x={-32} y={-42} width={64} height={10} fill={C.ink} />
+  </g>
+);
+
 const Shades = () => (
   <g>
     <rect x={-26} y={-12} width={22} height={16} rx={6} fill={C.ink} />
@@ -222,7 +237,7 @@ export type StickProps = {
   y: number;
   s?: number;
   keys: Key[];
-  acc?: ('hair' | 'tophat' | 'monocle' | 'tie' | 'bun' | 'glasses' | 'cap' | 'shades' | 'ponytail')[];
+  acc?: ('hair' | 'tophat' | 'monocle' | 'tie' | 'bun' | 'glasses' | 'cap' | 'shades' | 'ponytail' | 'paperhat' | 'fedora')[];
   walk?: boolean;
   flip?: boolean;
   sweat?: boolean;
@@ -308,6 +323,8 @@ export const Stick: React.FC<StickProps> = ({f, x, y, s = 1, keys, acc = [], wal
         {acc.includes('cap') && <Cap />}
         {acc.includes('shades') && <Shades />}
         {acc.includes('ponytail') && <Ponytail />}
+        {acc.includes('paperhat') && <PaperHat />}
+        {acc.includes('fedora') && <Fedora />}
         {sweat && <Sweat f={f} />}
         {tinfoil && tinfoil.o > 0 && (
           <g opacity={tinfoil.o}>

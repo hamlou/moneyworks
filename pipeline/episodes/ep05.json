@@ -1,0 +1,83 @@
+{
+  "id": "ep05",
+  "title": "Where Does Your Tax Money Actually Go?",
+  "youtube": {
+    "title": "Where Does Your Tax Money Actually Go? (It's Not What You Think)",
+    "hook": "Every paycheck, a big slice disappears to taxes. But where does it actually go? Most people guess wrong. America now spends more on interest than on its entire military, and foreign aid is about 1% of the budget, not 25%. Here's the whole federal budget, explained with one pizza.",
+    "tags": ["where do taxes go", "federal budget explained", "how taxes work", "tax money", "national debt interest", "social security explained", "medicare explained", "defense spending", "foreign aid myth", "payroll taxes", "government spending", "economics explained", "personal finance", "finance for beginners", "money explained"]
+  },
+  "sources": [
+    "Congressional Budget Office, Monthly Budget Review: Summary for Fiscal Year 2025: outlays $7.0 trillion, revenues $5.2 trillion, deficit $1.8 trillion",
+    "CBO fiscal year 2025 figures: Social Security ≈ $1.6 trillion; Medicare ≈ $987 billion; net interest ≈ $970 billion",
+    "Peter G. Peterson Foundation, Budget Basics: National Defense — FY2025 national defense outlays ≈ $916 billion ($868B DoD military + $48B other)",
+    "CBO / USAFacts: FY2025 revenue shares — individual income taxes ≈ 51%, payroll taxes ≈ 34%",
+    "IRS/SSA: employee payroll tax rates — Social Security 6.2%, Medicare 1.45%",
+    "KFF Health Tracking Poll (2025): Americans guess ~26% of the budget goes to foreign aid; actual ≈ 1%"
+  ],
+  "beats": [
+    {"id": "o1", "text": "Dave just got his paycheck. He worked hard for four thousand dollars.", "pause": 0.4},
+    {"id": "o2", "text": "But when the money lands in his account, a big chunk is missing.", "pause": 0.5},
+    {"id": "o3", "text": "Taxes. Dave asks the question millions of people ask. Where does all that money actually go?", "pause": 0.6},
+    {"id": "o4", "text": "Most people guess wrong. Very wrong.", "pause": 0.4},
+    {"id": "o5", "text": "For example: America now spends more money on interest, just interest on its debt, than on its entire military.", "pause": 0.6},
+    {"id": "o6", "text": "Today, we'll follow Dave's tax dollars. Where they come from, where they go, and why the government still has to borrow almost two trillion dollars a year.", "pause": 0.9},
+
+    {"id": "c1a", "chapter": "The Missing Money", "text": "Let's look at Dave's paycheck.", "pause": 0.4},
+    {"id": "c1b", "text": "First, federal income tax. That's money for the national government. The more you earn, the higher the rate on the top part of your income.", "pause": 0.5},
+    {"id": "c1c", "text": "Then there's a sneaky one many people forget. Payroll tax.", "pause": 0.4},
+    {"id": "c1d", "text": "Six point two percent goes to Social Security. And one point four five percent goes to Medicare. Every paycheck. Automatically.", "pause": 0.5},
+    {"id": "c1e", "text": "And depending on where Dave lives, there may be state and local taxes too.", "pause": 0.4},
+    {"id": "c1f", "text": "Dave never even touched that money. It was gone before it arrived.", "pause": 0.5},
+    {"id": "c1g", "text": "Fun fact: when Dave gets a tax refund in spring, that's not a gift. It's his own money, that he lent to the government for free, all year.", "pause": 0.9},
+
+    {"id": "c2a", "chapter": "The Giant Pot", "text": "Now imagine one giant pot. Everyone's taxes go in.", "pause": 0.4},
+    {"id": "c2b", "text": "In twenty twenty five, the pot collected about five point two trillion dollars.", "pause": 0.5},
+    {"id": "c2c", "text": "Where does it come from? About half comes from income taxes, like Dave's.", "pause": 0.4},
+    {"id": "c2d", "text": "About one third comes from payroll taxes, for Social Security and Medicare.", "pause": 0.4},
+    {"id": "c2e", "text": "And the rest comes from corporate taxes, tariffs, and other fees.", "pause": 0.5},
+    {"id": "c2f", "text": "So most of the money in the pot comes from regular people. Workers like Dave.", "pause": 0.9},
+
+    {"id": "c3a", "chapter": "The Pizza", "text": "Now, where does it go? The government spent about seven trillion dollars in twenty twenty five.", "pause": 0.4},
+    {"id": "c3b", "text": "That number is too big for any brain. So let's turn it into a pizza. Imagine every hundred dollars the government spends.", "pause": 0.6},
+    {"id": "c3c", "text": "The biggest slice, about twenty three dollars, goes to Social Security. Monthly checks for retirees and people with disabilities.", "pause": 0.5},
+    {"id": "c3d", "text": "About fourteen dollars goes to Medicare. Health care for people over sixty five.", "pause": 0.5},
+    {"id": "c3e", "text": "About thirteen dollars goes to national defense. The military.", "pause": 0.5},
+    {"id": "c3f", "text": "And about fourteen dollars goes to... interest. Just paying interest on money the government borrowed before.", "pause": 0.7},
+    {"id": "c3g", "text": "That leaves about thirty six dollars for everything else. Medicaid, veterans, highways, food assistance, schools, science, parks, the FBI, NASA, all of it.", "pause": 0.9},
+
+    {"id": "c4a", "chapter": "The Interest Monster", "text": "Wait. Let's go back to that interest slice.", "pause": 0.4},
+    {"id": "c4b", "text": "In twenty twenty five, the government paid about nine hundred seventy billion dollars in interest.", "pause": 0.4},
+    {"id": "c4c", "text": "National defense cost about nine hundred sixteen billion.", "pause": 0.5},
+    {"id": "c4d", "text": "So America now spends more on interest than on its military. That only started happening in the last couple of years.", "pause": 0.6},
+    {"id": "c4e", "text": "And that interest buys nothing. No roads. No schools. No soldiers. It's the price of borrowing.", "pause": 0.5},
+    {"id": "c4f", "text": "It's like Dave paying his credit card interest every month. Remember the raccoon? This is the government's raccoon. And it's huge.", "pause": 0.9},
+
+    {"id": "c5a", "chapter": "The Big Myth", "text": "Now, here's a fun experiment. Researchers asked Americans: how much of the federal budget goes to foreign aid? Helping other countries.", "pause": 0.5},
+    {"id": "c5b", "text": "On average, people guessed about twenty six percent. A quarter of everything.", "pause": 0.5},
+    {"id": "c5c", "text": "The real answer?", "pause": 0.5},
+    {"id": "c5d", "text": "About one percent.", "pause": 0.7},
+    {"id": "c5e", "text": "You can think that's too much or too little. That's a political question. But the number itself? It's tiny compared to what most people imagine.", "pause": 0.5},
+    {"id": "c5f", "text": "The big money is in Social Security, health care, defense, and interest. That's where the budget really lives.", "pause": 0.9},
+
+    {"id": "c6a", "chapter": "The Gap", "text": "Now, remember the two numbers? The pot collected five point two trillion. The government spent seven trillion.", "pause": 0.5},
+    {"id": "c6b", "text": "That's a gap of about one point eight trillion dollars. In one year.", "pause": 0.5},
+    {"id": "c6c", "text": "This gap is called the deficit. And the government fills it the same way Dave would. It borrows.", "pause": 0.5},
+    {"id": "c6d", "text": "It sells promises called Treasury bonds. Basically IOU notes: lend us money now, we'll pay you back later, with interest.", "pause": 0.5},
+    {"id": "c6e", "text": "Every year there's a deficit, the total debt grows. And the bigger the debt, the bigger the interest bill.", "pause": 0.5},
+    {"id": "c6f", "text": "More debt, more interest. More interest, bigger deficit. Bigger deficit, more debt. It's a loop.", "pause": 0.9},
+
+    {"id": "c7a", "chapter": "Why It Matters to Dave", "text": "So why should Dave care?", "pause": 0.4},
+    {"id": "c7b", "text": "Because every dollar spent on interest is a dollar that can't go to roads, schools, or lower taxes.", "pause": 0.5},
+    {"id": "c7c", "text": "Because big government borrowing can push interest rates up for everyone. Including Dave's car loan and mortgage.", "pause": 0.5},
+    {"id": "c7d", "text": "And because one day, someone will have to decide: raise taxes, cut spending, or keep borrowing. Every choice has winners and losers.", "pause": 0.5},
+    {"id": "c7e", "text": "We're not here to tell you which choice is right. We're here to make sure you understand the numbers, so nobody can fool you.", "pause": 0.9},
+
+    {"id": "c8a", "chapter": "Now You Know", "text": "So let's recap.", "pause": 0.4},
+    {"id": "c8b", "text": "One. Most federal tax money comes from regular workers, through income and payroll taxes.", "pause": 0.5},
+    {"id": "c8c", "text": "Two. The biggest slices go to Social Security, Medicare, defense, and interest. Foreign aid is about one percent.", "pause": 0.5},
+    {"id": "c8d", "text": "Three. America spends more than it collects, so it borrows. And the interest bill is now bigger than the military.", "pause": 0.6},
+    {"id": "c8e", "text": "But this raises the biggest question of all. America owes trillions of dollars.", "pause": 0.4},
+    {"id": "c8f", "text": "So who exactly is it borrowing from? The answer is stranger than you think.", "pause": 0.5},
+    {"id": "c8g", "text": "That's next. Subscribe, because you're paying for it anyway.", "pause": 1.4}
+  ]
+}

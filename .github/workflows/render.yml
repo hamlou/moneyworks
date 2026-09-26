@@ -50,18 +50,20 @@ jobs:
           name: voice
           path: public/${{ inputs.ep }}
       - run: >
-          npx remotion render src/index.ts Episode out/part.mp4
-          --frames=${{ matrix.chunk.a }}-${{ matrix.chunk.b }} --muted --codec=h264 --crf=18 --pixel-format=yuv420p
+          npx remotion render src/index.ts Episode out/part.mkv
+          --frames=${{ matrix.chunk.a }}-${{ matrix.chunk.b }}
+          --codec=h264 --crf=18 --pixel-format=yuv420p --audio-codec=pcm-16
           --props='{"ep":"${{ inputs.ep }}","timings":null}'
           --concurrency=100% --log=warn
       - uses: actions/upload-artifact@v4
         with:
           name: part-${{ matrix.chunk.i }}
-          path: out/part.mp4
+          path: out/part.mkv
           retention-days: 1
+          compression-level: 0
 
-  audio:
-    needs: prep
+  assemble:
+    needs: render
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -69,44 +71,22 @@ jobs:
         with:
           node-version: 22
           cache: npm
-      - run: npm ci --no-audit --no-fund
-      - uses: actions/download-artifact@v4
-        with:
-          name: voice
-          path: public/${{ inputs.ep }}
-      - run: >
-          npx remotion render src/index.ts Episode out/audio.wav --codec=wav
-          --props='{"ep":"${{ inputs.ep }}","timings":null}' --log=warn
-      - run: >
-          for v in A B C; do npx remotion still src/index.ts Thumb out/thumb_$v.png
-          --props="{\"ep\":\"${{ inputs.ep }}\",\"v\":\"$v\"}" --log=error || true; done
-      - uses: actions/upload-artifact@v4
-        with:
-          name: audio
-          path: out/
-          retention-days: 1
-
-  assemble:
-    needs: [render, audio]
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
       - run: sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg
+      - run: npm ci --no-audit --no-fund
       - uses: actions/download-artifact@v4
         with:
           pattern: part-*
           path: parts
       - uses: actions/download-artifact@v4
         with:
-          name: audio
-          path: aud
-      - uses: actions/download-artifact@v4
-        with:
           name: voice
           path: public/${{ inputs.ep }}
+      - run: >
+          mkdir -p aud && for v in A B C; do npx remotion still src/index.ts Thumb aud/thumb_$v.png
+          --props="{\"ep\":\"${{ inputs.ep }}\",\"v\":\"$v\"}" --log=error || true; done
       - run: bash pipeline/assemble.sh ${{ inputs.ep }}
       - uses: actions/upload-artifact@v4
         with:

@@ -1,0 +1,91 @@
+{
+  "id": "ep04",
+  "title": "McDonald's Isn't a Burger Company",
+  "youtube": {
+    "title": "McDonald's Isn't Really a Burger Company",
+    "hook": "McDonald's sells billions of burgers. But the restaurants it runs itself made about $1.4 billion in margin last year, while restaurants owned by OTHER people made it about $13.9 billion. How? The answer is one of the smartest business ideas ever: McDonald's is secretly a landlord. Here's the story, explained simply.",
+    "tags": ["mcdonalds business model", "how mcdonalds makes money", "mcdonalds real estate", "ray kroc", "harry sonneborn", "franchise explained", "how franchises work", "business explained", "how companies make money", "real estate business", "the founder", "economics explained", "finance for beginners", "money explained", "business model explained"]
+  },
+  "sources": [
+    "McDonald's Corporation Form 10-K FY2025 (SEC): total revenues $26.885B; company-operated sales $9.690B; franchised revenues $16.548B; franchised margins $13.930B; company-operated margins $1.422B; 45,356 restaurants; ~95% franchised; owns ~56% of land and ~80% of buildings in consolidated markets; 20-year franchise terms",
+    "McDonald's Form 10-Q Q1 2024: franchised rents $2.381B vs royalties $1.326B",
+    "McDonald's USA Franchise Disclosure Document (May 2025): initial franchise fee $45,000; royalty and advertising fees as a percent of sales; rent as a percent of sales",
+    "Harry J. Sonneborn, attributed quote on McDonald's being in the real estate business; Franchise Realty Corporation (1956)",
+    "Ray Kroc bought out the McDonald brothers in 1961 for $2.7 million"
+  ],
+  "beats": [
+    {"id": "o1", "text": "McDonald's sells burgers. Billions of them. Everyone knows that.", "pause": 0.5},
+    {"id": "o2", "text": "But look at this.", "pause": 0.4},
+    {"id": "o3", "text": "Last year, the restaurants McDonald's runs itself made it about one point four billion dollars.", "pause": 0.4},
+    {"id": "o4", "text": "And the restaurants run by other people? The ones McDonald's doesn't even operate? They made McDonald's almost fourteen billion.", "pause": 0.6},
+    {"id": "o5", "text": "Ten times more money, from restaurants it doesn't run. How is that even possible?", "pause": 0.6},
+    {"id": "o6", "text": "Because the real secret of McDonald's isn't in the kitchen. It's under your feet.", "pause": 0.9},
+
+    {"id": "c1a", "chapter": "Two Brothers and a Salesman", "text": "Let's go back to the nineteen fifties.", "pause": 0.4},
+    {"id": "c1b", "text": "Two brothers, Richard and Maurice McDonald, run a small burger stand in California.", "pause": 0.4},
+    {"id": "c1c", "text": "Their big idea? Speed. A tiny menu. No waiters. Burgers ready in seconds. Like a factory, but for food.", "pause": 0.5},
+    {"id": "c1d", "text": "One day, a milkshake machine salesman named Ray Kroc visits. He sees the lines. He sees the speed. And he sees a gold mine.", "pause": 0.5},
+    {"id": "c1e", "text": "Kroc makes a deal with the brothers. He will sell franchises. That means other people can open McDonald's restaurants, and pay a fee for using the name and the system.", "pause": 0.5},
+    {"id": "c1f", "text": "There's just one problem.", "pause": 0.4},
+    {"id": "c1g", "text": "The deal gives Kroc a tiny slice. Around one point nine percent of each restaurant's sales. And part of that goes to the brothers.", "pause": 0.5},
+    {"id": "c1h", "text": "The restaurants are growing. But Kroc is almost broke.", "pause": 0.9},
+
+    {"id": "c2a", "chapter": "The Genius Idea", "text": "Then Kroc meets a finance guy named Harry Sonneborn.", "pause": 0.4},
+    {"id": "c2b", "text": "And Harry says something that changes everything.", "pause": 0.4},
+    {"id": "c2c", "text": "Stop focusing on the burgers. Focus on the land.", "pause": 0.6},
+    {"id": "c2d", "text": "Here's the plan. McDonald's buys the land, or leases it long term. It builds the restaurant. And then it rents it to the franchise owner.", "pause": 0.5},
+    {"id": "c2e", "text": "So now, the franchise owner doesn't just pay a small fee for the name. He pays rent. Every month. To McDonald's.", "pause": 0.5},
+    {"id": "c2f", "text": "Harry is famously quoted saying: we are not technically in the food business. We are in the real estate business.", "pause": 0.5},
+    {"id": "c2g", "text": "The burgers are just what makes the tenants rich enough to pay the rent.", "pause": 0.6},
+    {"id": "c2h", "text": "It worked so well that in nineteen sixty one, Kroc bought out the McDonald brothers completely. For two point seven million dollars.", "pause": 0.9},
+
+    {"id": "c3a", "chapter": "How It Works Today", "text": "So how does it work today? Let's meet Bob. Bob wants to own a McDonald's.", "pause": 0.4},
+    {"id": "c3b", "text": "First, Bob pays an initial fee. In America, it's forty five thousand dollars. Just to get started.", "pause": 0.4},
+    {"id": "c3c", "text": "Then, Bob pays for the kitchen, the tables, the signs, the fryers. That can cost well over a million dollars.", "pause": 0.5},
+    {"id": "c3d", "text": "But the building and the land? Often, those belong to McDonald's.", "pause": 0.5},
+    {"id": "c3e", "text": "So every month, Bob sends McDonald's three things.", "pause": 0.4},
+    {"id": "c3f", "text": "One. A royalty, a few percent of everything he sells, for using the name.", "pause": 0.4},
+    {"id": "c3g", "text": "Two. Money for advertising, also a percent of sales.", "pause": 0.4},
+    {"id": "c3h", "text": "And three. Rent. And rent is the big one. For newer restaurants, it can be more than ten percent of everything Bob sells.", "pause": 0.6},
+    {"id": "c3i", "text": "Add it all up, and a big chunk of every dollar Bob makes goes straight to McDonald's. Before Bob pays for workers, meat, or bread.", "pause": 0.5},
+    {"id": "c3j", "text": "And this happens at tens of thousands of restaurants. McDonald's has more than forty five thousand locations. And about ninety five percent of them are run by franchise owners like Bob.", "pause": 0.9},
+
+    {"id": "c4a", "chapter": "Follow the Money", "text": "Now, let's open McDonald's actual report for twenty twenty five.", "pause": 0.4},
+    {"id": "c4b", "text": "Total revenue: about twenty seven billion dollars.", "pause": 0.4},
+    {"id": "c4c", "text": "About nine point seven billion comes from the restaurants McDonald's runs itself. Real burgers, sold by McDonald's.", "pause": 0.4},
+    {"id": "c4d", "text": "But after paying for food, workers, and everything else, those restaurants leave about one point four billion in margin.", "pause": 0.5},
+    {"id": "c4e", "text": "Now the franchises. McDonald's collects about sixteen and a half billion dollars from franchise owners.", "pause": 0.4},
+    {"id": "c4f", "text": "And since McDonald's doesn't pay the workers or buy the food there, almost fourteen billion of that is margin.", "pause": 0.6},
+    {"id": "c4g", "text": "So about nine out of every ten dollars of restaurant profit comes from other people's restaurants.", "pause": 0.5},
+    {"id": "c4h", "text": "And the biggest piece of those franchise payments? Rent. Roughly two thirds of what the franchises pay in rent and royalties is rent.", "pause": 0.6},
+    {"id": "c4i", "text": "McDonald's owns about fifty six percent of the land, and about eighty percent of the buildings, in its main markets. That's one of the biggest real estate empires on Earth.", "pause": 0.9},
+
+    {"id": "c5a", "chapter": "Why It's So Smart", "text": "So why is this so smart? Think of it like the board game Monopoly.", "pause": 0.4},
+    {"id": "c5b", "text": "Bob is the player walking around the board, working hard, buying ingredients, hiring staff, dealing with broken ice cream machines.", "pause": 0.5},
+    {"id": "c5c", "text": "McDonald's owns the hotels on the board. And every time Bob lands there, he pays.", "pause": 0.6},
+    {"id": "c5d", "text": "Reason one: rent is steady. Burger prices go up and down. Food costs go up and down. But the contracts include minimum rent.", "pause": 0.4},
+    {"id": "c5e", "text": "Reason two: the risk belongs to Bob. If the beef gets expensive, or workers cost more, Bob feels it first.", "pause": 0.4},
+    {"id": "c5f", "text": "Reason three: land usually gets more valuable over time. McDonald's picked great corners decades ago. Those corners are worth a lot more today.", "pause": 0.4},
+    {"id": "c5g", "text": "And reason four: contracts are long. Franchise agreements usually last twenty years.", "pause": 0.9},
+
+    {"id": "c6a", "chapter": "The Other Side", "text": "Now, is this a bad deal for Bob? Not necessarily.", "pause": 0.4},
+    {"id": "c6b", "text": "Bob gets one of the most famous brands in the world, a proven system, and customers who already know the menu.", "pause": 0.4},
+    {"id": "c6c", "text": "Many franchise owners make a very good living. Some own dozens of restaurants.", "pause": 0.4},
+    {"id": "c6d", "text": "But it's not easy money. Bob works hard. He takes the risk. And when the rules change, like expensive renovations, Bob usually pays for them.", "pause": 0.5},
+    {"id": "c6e", "text": "Meanwhile, McDonald's collects its rent. Rain or shine.", "pause": 0.9},
+
+    {"id": "c7a", "chapter": "The Big Lesson", "text": "And here's the big lesson. It's not just about McDonald's.", "pause": 0.4},
+    {"id": "c7b", "text": "The thing a company sells is not always the thing that makes it rich.", "pause": 0.5},
+    {"id": "c7c", "text": "A burger company can really be a landlord. A bank can really be a fee collector. We saw that in our credit card video.", "pause": 0.5},
+    {"id": "c7d", "text": "So whenever you look at a business, don't just ask: what do they sell? Ask: who is paying whom? And for what?", "pause": 0.5},
+    {"id": "c7e", "text": "That one question will make you see money everywhere.", "pause": 0.9},
+
+    {"id": "c8a", "chapter": "Now You Know", "text": "So let's recap.", "pause": 0.4},
+    {"id": "c8b", "text": "One. About ninety five percent of McDonald's restaurants are run by franchise owners, not by McDonald's.", "pause": 0.5},
+    {"id": "c8c", "text": "Two. Those owners pay fees, and especially rent. That's where most of McDonald's restaurant profit comes from.", "pause": 0.5},
+    {"id": "c8d", "text": "Three. McDonald's is one of the biggest landlords in the world, hiding inside a burger company.", "pause": 0.6},
+    {"id": "c8e", "text": "Now, speaking of who pays whom. Every paycheck you get, a piece goes to the government.", "pause": 0.4},
+    {"id": "c8f", "text": "But where does it actually go? The answer might surprise you. America now spends more on interest than on its entire military.", "pause": 0.5},
+    {"id": "c8g", "text": "That's next. Subscribe, and grab some fries.", "pause": 1.4}
+  ]
+}
