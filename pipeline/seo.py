@@ -165,6 +165,19 @@ SEO = {
         "next": None,
     },
 
+    "ep14": {
+        "title": "How Your Credit Score Actually Works (5 Secret Ingredients)",
+        "alts": ["The 3-Digit Number That Costs You $56,000", "Credit Score Myths That Are Costing You Money"],
+        "line1": "How does a credit score work? It's built from 5 ingredients, and a weak score can cost you ~$56,000 on a mortgage. Here's the recipe, the myths, and the fixes.",
+        "summary": "Dave and Bob want the same car loan, but Dave pays thousands more because of a 3-digit number. We explain who invented the FICO score, the three 'nosy neighbor' credit bureaus, the 5 ingredients (35/30/15/10/10), the myths that hurt people, what a score really costs, and how people raise it.",
+        "learn": ["What a credit score is (300 to 850)", "Who invented FICO and who collects your data", "The 5 ingredients and how much each counts", "Credit score myths that cost real money", "How much a good score saves on a mortgage", "5 habits people use to raise their score"],
+        "tags": ["how credit scores work", "credit score explained", "fico score explained", "how to improve credit score", "credit utilization", "credit score myths", "credit bureaus explained", "credit report errors", "credit score for beginners", "personal finance for beginners", "dave explains money"],
+        "hashtags": ["#creditscore", "#personalfinance", "#money"],
+        "pinned": "What was the biggest credit score myth YOU believed? 👇 (Mine was that checking my score hurts it.)",
+        "thumb": "A (COST: $56,000) pairs best; test B (THE RECIPE).",
+        "next": None,
+    },
+
 }
 
 

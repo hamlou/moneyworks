@@ -1,0 +1,330 @@
+{
+ "id": "ep14",
+ "title": "How Your Credit Score Actually Works",
+ "sources": [
+  "FICO: score range 300–850; five factors — payment history 35%, amounts owed 30%, length of credit history 15%, new credit 10%, credit mix 10% (myFICO)",
+  "FICO Score Credit Insights (2025): average U.S. FICO Score ≈ 715",
+  "Fair, Isaac and Company founded 1956 by Bill Fair and Earl Isaac; FICO Score introduced 1989",
+  "Credit bureaus: Equifax, Experian, TransUnion",
+  "FTC (2012) study on credit report accuracy: 1 in 5 consumers had an error on at least one report",
+  "myFICO loan savings (Nov 2025): $300,000 30-year mortgage, 620 vs 760+ score ≈ $156/month and ≈ $56,000 more interest",
+  "Late payments can stay on credit reports for up to 7 years; hard inquiries up to 2 years (CFPB / bureaus)",
+  "Free credit reports: AnnualCreditReport.com (weekly)"
+ ],
+ "beats": [
+  {
+   "id": "o1",
+   "text": "Dave and his neighbor Bob want the same car loan. Same car. Same price. Same bank.",
+   "pause": 0.3
+  },
+  {
+   "id": "o2",
+   "text": "Bob gets a low interest rate. Dave gets a much higher one. Over the whole loan, Dave will pay thousands of dollars more.",
+   "pause": 0.3
+  },
+  {
+   "id": "o3",
+   "text": "Why? Not because of his job. Not because of his salary. Because of a three digit number.",
+   "pause": 0.35
+  },
+  {
+   "id": "o4",
+   "text": "A number most people have never really understood. But it follows you everywhere. Loans. Apartments. Sometimes even your phone plan.",
+   "pause": 0.35
+  },
+  {
+   "id": "o5",
+   "text": "Your credit score.",
+   "pause": 0.3
+  },
+  {
+   "id": "o6",
+   "text": "Today: who creates this number, the five secret ingredients inside it, the myths that hurt people, and how people raise it.",
+   "pause": 0.6
+  },
+  {
+   "id": "c1a",
+   "chapter": "The Secret Number",
+   "text": "So what is a credit score?",
+   "pause": 0.4
+  },
+  {
+   "id": "c1b",
+   "text": "It's a number between three hundred and eight hundred and fifty. It tries to answer one question: if we lend this person money, will they pay it back?",
+   "pause": 0.5
+  },
+  {
+   "id": "c1c",
+   "text": "Higher is better. The average score in America is around seven hundred and fifteen.",
+   "pause": 0.5
+  },
+  {
+   "id": "c1d",
+   "text": "Banks use it to decide if you get a loan, and how much interest you pay. Landlords check it before renting you an apartment.",
+   "pause": 0.5
+  },
+  {
+   "id": "c1e",
+   "text": "It's like a school report card. But for money. And everyone can ask to see it, except the teacher never tells you how the grades work.",
+   "pause": 0.5
+  },
+  {
+   "id": "c1f",
+   "text": "So let's open the report card.",
+   "pause": 0.9
+  },
+  {
+   "id": "h1",
+   "chapter": "Who Invented It?",
+   "text": "Where did this number come from?",
+   "pause": 0.4
+  },
+  {
+   "id": "h2",
+   "text": "Long ago, getting a loan depended on the banker. Did he like you? Did he know your family? Did you wear a nice suit?",
+   "pause": 0.5
+  },
+  {
+   "id": "h3",
+   "text": "In nineteen fifty six, an engineer named Bill Fair and a mathematician named Earl Isaac started a company. Their idea: use math instead of gut feelings.",
+   "pause": 0.5
+  },
+  {
+   "id": "h4",
+   "text": "In nineteen eighty nine, their company launched the score most lenders still use today. It's named after the company. The FICO score.",
+   "pause": 0.5
+  },
+  {
+   "id": "h5",
+   "text": "But FICO doesn't watch you. Three giant companies do. Equifax, Experian, and TransUnion. They're called credit bureaus.",
+   "pause": 0.5
+  },
+  {
+   "id": "h6",
+   "text": "Think of them as three nosy neighbors. Every time you pay a bill late, open a card, or take a loan, the lenders tell the neighbors. The neighbors write it all down.",
+   "pause": 0.5
+  },
+  {
+   "id": "h7",
+   "text": "And here's the strange part. You're not their customer. The banks are. You're the product they're describing.",
+   "pause": 0.9
+  },
+  {
+   "id": "c2a",
+   "chapter": "Ingredient 1: Paying on Time",
+   "text": "Now, the recipe. Your score is made from five ingredients. And they're not equal.",
+   "pause": 0.4
+  },
+  {
+   "id": "c2b",
+   "text": "The biggest ingredient, about thirty five percent of your score, is simple. Do you pay on time?",
+   "pause": 0.5
+  },
+  {
+   "id": "c2c",
+   "text": "Every on time payment is like a gold star. Month after month, the stars pile up.",
+   "pause": 0.5
+  },
+  {
+   "id": "c2d",
+   "text": "But one payment that's more than thirty days late? That's a big black mark. And it can stay on your report for up to seven years.",
+   "pause": 0.5
+  },
+  {
+   "id": "c2e",
+   "text": "Dave once forgot a forty dollar phone bill for two months. That tiny mistake cost him far more than forty dollars in higher interest later.",
+   "pause": 0.5
+  },
+  {
+   "id": "c2f",
+   "text": "Bob, on the other hand, has paid every single bill on time for twelve years. Twelve years of gold stars. That's why the bank smiled at him.",
+   "pause": 0.9
+  },
+  {
+   "id": "c3a",
+   "chapter": "Ingredient 2: How Much You Use",
+   "text": "Ingredient two is about thirty percent. How much of your available credit are you using?",
+   "pause": 0.4
+  },
+  {
+   "id": "c3b",
+   "text": "Say Dave has a credit card with a one thousand dollar limit.",
+   "pause": 0.4
+  },
+  {
+   "id": "c3c",
+   "text": "If he's using one hundred dollars of it, that's ten percent. Relaxed. Under control.",
+   "pause": 0.5
+  },
+  {
+   "id": "c3d",
+   "text": "If he's using nine hundred dollars, that's ninety percent. To a lender, that looks like someone running out of money. Even if Dave pays it all off later.",
+   "pause": 0.5
+  },
+  {
+   "id": "c3e",
+   "text": "Imagine a fridge. A fridge that's full to the top every day makes people worry. A fridge with some space looks calm.",
+   "pause": 0.5
+  },
+  {
+   "id": "c3f",
+   "text": "Many experts say keep it under thirty percent. People with the highest scores often use less than ten.",
+   "pause": 0.9
+  },
+  {
+   "id": "c4a",
+   "chapter": "Ingredients 3, 4 and 5",
+   "text": "The last three ingredients are smaller. But they still matter.",
+   "pause": 0.4
+  },
+  {
+   "id": "c4b",
+   "text": "Ingredient three, about fifteen percent: how long you've had credit. A ten year old card is like an old friend who's never let anyone down. Trust takes time.",
+   "pause": 0.5
+  },
+  {
+   "id": "c4c",
+   "text": "Ingredient four, about ten percent: new credit. Every time you apply for a loan or card, the lender does a hard check. Too many at once looks desperate.",
+   "pause": 0.5
+  },
+  {
+   "id": "c4d",
+   "text": "Ingredient five, about ten percent: your mix. Having different types, like a card and a car loan, shows you can handle different kinds of debt.",
+   "pause": 0.5
+  },
+  {
+   "id": "c4e",
+   "text": "And notice what's not in the recipe. Your salary. Your savings. Your job. A millionaire who never borrowed can have a worse score than Dave.",
+   "pause": 0.5
+  },
+  {
+   "id": "c4f",
+   "text": "So a credit score isn't about how rich you are. It's about how you handle borrowing.",
+   "pause": 0.9
+  },
+  {
+   "id": "c5a",
+   "chapter": "Myths That Hurt You",
+   "text": "Now, some myths. And they cost people real money.",
+   "pause": 0.4
+  },
+  {
+   "id": "c5b",
+   "text": "Myth one: checking your own score hurts it. Nope. When you check your own score, it's a soft check. It doesn't matter at all.",
+   "pause": 0.5
+  },
+  {
+   "id": "c5c",
+   "text": "Myth two: you need to carry a balance and pay interest to build credit. Nope. Paying your card in full every month builds it just as well. Remember the raccoon? Don't feed him interest.",
+   "pause": 0.5
+  },
+  {
+   "id": "c5d",
+   "text": "Myth three: closing old cards helps. Often it's the opposite. You lose available credit, and your history gets shorter.",
+   "pause": 0.5
+  },
+  {
+   "id": "c5e",
+   "text": "Myth four: a high salary means a high score. As we saw, your salary isn't even in the recipe.",
+   "pause": 0.5
+  },
+  {
+   "id": "c5f",
+   "text": "Myth five: paying off an old late bill erases it. Not exactly. The late payment stays on the report even after you pay. But the older it gets, the less it hurts.",
+   "pause": 0.9
+  },
+  {
+   "id": "c6a",
+   "chapter": "What It Really Costs",
+   "text": "So how much is a good score worth? Let's do Dave's house math.",
+   "pause": 0.4
+  },
+  {
+   "id": "c6b",
+   "text": "Take a three hundred thousand dollar mortgage for thirty years.",
+   "pause": 0.4
+  },
+  {
+   "id": "c6c",
+   "text": "With a score around six hundred and twenty, recent data showed Dave would pay about one hundred and fifty six dollars more every month than someone with seven hundred and sixty or above.",
+   "pause": 0.5
+  },
+  {
+   "id": "c6d",
+   "text": "Over thirty years, that's about fifty six thousand dollars. Just for having a lower number.",
+   "pause": 0.5
+  },
+  {
+   "id": "c6e",
+   "text": "That's a new car. Paid to the bank. For a number.",
+   "pause": 0.5
+  },
+  {
+   "id": "c6f",
+   "text": "And remember the car loan from the start? On a thirty thousand dollar car, the gap between a strong score and a weak one can easily mean several thousand dollars in extra interest.",
+   "pause": 0.9
+  },
+  {
+   "id": "c7a",
+   "chapter": "How People Raise It",
+   "text": "The good news? The score can change. Here's what people usually do. Education, not advice.",
+   "pause": 0.4
+  },
+  {
+   "id": "c7b",
+   "text": "One. Turn on automatic payments, at least for the minimum. Never be late again by accident.",
+   "pause": 0.5
+  },
+  {
+   "id": "c7c",
+   "text": "Two. Pay down card balances, especially the ones close to the limit.",
+   "pause": 0.5
+  },
+  {
+   "id": "c7d",
+   "text": "Three. Keep your oldest card open, and use it for something small now and then.",
+   "pause": 0.5
+  },
+  {
+   "id": "c7e",
+   "text": "Four. Check your credit reports for free. A government study found that about one in five people had an error on at least one report. You can dispute mistakes.",
+   "pause": 0.5
+  },
+  {
+   "id": "c7f",
+   "text": "And five. Be patient. Scores are built slowly, like a tree. Not overnight.",
+   "pause": 0.9
+  },
+  {
+   "id": "c8a",
+   "chapter": "Now You Know",
+   "text": "So let's recap.",
+   "pause": 0.4
+  },
+  {
+   "id": "c8b",
+   "text": "One. Your credit score guesses how likely you are to pay back money, and three bureaus collect the data.",
+   "pause": 0.5
+  },
+  {
+   "id": "c8c",
+   "text": "Two. Paying on time and using little of your credit are more than half of the score.",
+   "pause": 0.5
+  },
+  {
+   "id": "c8d",
+   "text": "Three. A better score can save tens of thousands of dollars on big loans.",
+   "pause": 0.6
+  },
+  {
+   "id": "c8e",
+   "text": "Next time, Dave discovers what Einstein supposedly called the eighth wonder of the world. How one hundred dollars a month can turn into a small fortune.",
+   "pause": 0.4
+  },
+  {
+   "id": "c8f",
+   "text": "Subscribe, so Dave can keep explaining money. It won't show up on your credit report. Promise.",
+   "pause": 1.4
+  }
+ ]
+}

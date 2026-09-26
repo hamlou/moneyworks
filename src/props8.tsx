@@ -291,3 +291,42 @@ export const Scale: React.FC<P & {tilt?: number; left?: string; right?: string}>
     </g>
   </G>
 );
+
+export const ScoreGauge: React.FC<P & {score: number; label?: string}> = ({score, label = 'CREDIT SCORE', ...p}) => {
+  const t = Math.max(0, Math.min(1, (score - 300) / 550));
+  const arc = (a0: number, a1: number, c: string) => {
+    const r = 220;
+    const p0 = [Math.cos(Math.PI + a0 * Math.PI) * r, Math.sin(Math.PI + a0 * Math.PI) * r];
+    const p1 = [Math.cos(Math.PI + a1 * Math.PI) * r, Math.sin(Math.PI + a1 * Math.PI) * r];
+    return <path d={`M ${p0[0]} ${p0[1]} A ${r} ${r} 0 0 1 ${p1[0]} ${p1[1]}`} fill="none" stroke={c} strokeWidth={46} />;
+  };
+  const na = Math.PI + t * Math.PI;
+  return (
+    <G {...p}>
+      <rect x={-300} y={-300} width={600} height={420} rx={40} fill="#fff" {...O} />
+      {arc(0, 0.35, C.red)}
+      {arc(0.35, 0.6, C.yellow)}
+      {arc(0.6, 0.8, '#9EDDB0')}
+      {arc(0.8, 1, C.green)}
+      <path d={`M 0 0 L ${Math.cos(na) * 190} ${Math.sin(na) * 190}`} stroke={C.ink} strokeWidth={12} strokeLinecap="round" />
+      <circle r={22} fill={C.ink} />
+      <Text y={70} size={80}>{Math.round(score)}</Text>
+      <Text x={-230} y={40} size={26} color="#5B6470">300</Text>
+      <Text x={230} y={40} size={26} color="#5B6470">850</Text>
+      <Text y={-270} size={30} color="#5B6470" ls={3}>{label}</Text>
+    </G>
+  );
+};
+
+export const Star: React.FC<P & {color?: string}> = ({color = C.gold, ...p}) => (
+  <G {...p}>
+    <path d="M 0 -50 L 14 -16 L 50 -14 L 22 10 L 32 46 L 0 26 L -32 46 L -22 10 L -50 -14 L -14 -16 Z" fill={color} {...O} strokeWidth={5} />
+  </G>
+);
+
+export const Notepad: React.FC<P> = (p) => (
+  <G {...p}>
+    <rect x={-50} y={-65} width={100} height={130} rx={8} fill="#FFF7D6" {...O} strokeWidth={4} />
+    {[-30, -5, 20, 45].map((y) => <line key={y} x1={-32} x2={32} y1={y} y2={y} stroke="#8C7A5B" strokeWidth={4} strokeLinecap="round" />)}
+  </G>
+);
