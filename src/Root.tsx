@@ -3,6 +3,7 @@ import {Composition, staticFile} from 'remotion';
 import {Episode, EpisodeProps} from './Episode';
 import {TAIL_SEC} from './timing';
 import {Thumb, ThumbProps, EP_THUMBS} from './Thumb';
+import {Avatar, AvatarProps} from './Avatar';
 import {Ep02Thumb} from './thumbs/ep02';
 import {Ep03Thumb} from './thumbs/ep03';
 import {Ep04Thumb} from './thumbs/ep04';
@@ -25,6 +26,7 @@ EP_THUMBS.ep10 = Ep10Thumb;
 
 export const Root: React.FC = () => (
   <>
+  <Composition id="Avatar" component={Avatar} width={800} height={800} fps={30} durationInFrames={1} defaultProps={{v: 'A'} as AvatarProps} />
   <Composition id="Thumb" component={Thumb} width={1280} height={720} fps={30} durationInFrames={1} defaultProps={{v: 'A'} as ThumbProps} />
   <Composition
     id="Episode"
