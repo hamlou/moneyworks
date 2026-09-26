@@ -52,7 +52,7 @@ Callbacks to earlier episodes are GOOD ("Remember the raccoon from our credit ca
 ## 5. Titles, thumbnails, descriptions
 
 - **Title:** curiosity gap + specific number/contradiction. Examples: "Banks Don't Lend You Money. They Create It Out of Nothing." / "Why a $300,000 House Costs You $720,000" / "Who Does America Owe $40 Trillion To? (It's Not China)".
-- **Thumbnails:** 3 variants (A/B/C) for YouTube Test & Compare, in `src/thumbs/epXX.tsx`. Rules: 2–4 huge words (`<Big>`), one expressive giant character face or one bold object, high contrast background (yellow burst / navy / cream), readable on a phone. Avoid frame-0 blinks (use `f={20}`, `seed={50}`).
+- **Thumbnails (v2 — owner rejected the old flat style; ONLY use v2):** 3 variants (A/B/C) in `src/v2/`, built with `src/v2/kit.tsx`, composition `ThumbV2`, register in `src/v2/index.tsx`. Formula = max 3 elements: (1) giant close-up `<Face>` (s≈5.2, one side third, strong emotion: shock/scream/angry/money/suspicious/smug, `lines`/`sweat` extras), (2) ONE big `<Hero>` object with white sticker outline, (3) `<Headline>` 1–3 words (Anton), one word yellow or boxed. `<Stage>` = saturated radial gradient + rays + vignette, a different colour per variant. Optional `ArrowCue`/`Ring`/`XBig`. Text top area, nothing important bottom-right (timestamp). Must read at 168 px wide. Text complements the title, never repeats it. Render: `node pipeline/stills.mjs <out> '[{"id":"ThumbV2","ep":"epNN","v":"A"},…]'` → `videos/epNN/v2/thumb_v2_X.png`. Channel assets: `src/v2/channel.tsx` (AvatarV2 A = coin face chosen, Banner 2560×1440 safe zone 1546×423).
 - **Description** (auto by `pipeline/describe.py`): hook paragraph (`youtube.hook`), "In this video you'll learn" from chapters, subscribe line, chapters with timestamps, sources, music credit (Kevin MacLeod CC-BY — REQUIRED), not-financial-advice line, 3 hashtags.
 
 ### 5b. SEO & CTR rules (researched Sept 2026) — used by `pipeline/seo.py`
@@ -88,7 +88,7 @@ Callbacks to earlier episodes are GOOD ("Remember the raccoon from our credit ca
    - Mid-video `const SUB = w('cXx','word') + 20; subCues(SUB)…; <SubReminder …/>`.
    - Only use words that are actually in the beat text for `w()` (lowercased, punctuation stripped: "McDonald's" → `mcdonalds`, "I P O" → `i`).
 3. **Props:** reuse from `src/props*.tsx` (see §9). Add new props in a new `src/propsN.tsx` if needed, same flat style (`stroke C.ink`, width 5–6, round joins).
-4. **Thumbnails:** `src/thumbs/epNN.tsx` exporting `EpNNThumb`; register in `src/Root.tsx` (`EP_THUMBS.epNN = …`).
+4. **Thumbnails:** v2 only — add `V2EpNN` (see section 5) and register in `src/v2/index.tsx`. Old `src/thumbs/` is legacy.
 5. **Register** the episode in `src/Episode.tsx` (`EPISODES`).
 6. `git push` → `check.yml` typechecks (fix any TS error first).
 7. **Render:** `gh workflow run render.yml -R hamlou/moneyworks -f ep=epNN -f chunks=10` (~8–10 min). Download: `gh run download <runId> -R hamlou/moneyworks -n epNN-final -D Desktop/100/videos/epNN`.
