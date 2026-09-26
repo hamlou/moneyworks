@@ -532,7 +532,7 @@ export const Ep05: React.FC = () => {
           <Svg>
             <G2 x={960} y={120}><Text size={52} color="#5B6470">NEXT VIDEO</Text></G2>
             <Bank x={760} y={800} s={0.7} label="USA" />
-            <G2 x={760} y={260} s={pop(f, tr)}><Text size={110} color={C.red} stroke={C.ink} sw={8}>$38T+ DEBT</Text></G2>
+            <G2 x={760} y={260} s={pop(f, tr)}><Text size={110} color={C.red} stroke={C.ink} sw={8}>$40T DEBT</Text></G2>
             <G2 x={1450} y={450} s={pop(f, wh)}><Text size={80}>owed to... WHO?</Text></G2>
             <Icon kind="question" x={1450} y={700} s={0.9 * pop(f, wh + 4)} />
           </Svg>

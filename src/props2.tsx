@@ -228,7 +228,7 @@ export const Magnifier: React.FC<P> = (p) => (
   </G>
 );
 
-export const Bar: React.FC<P & {h: number; w?: number; color: string; label: string; value: string}> = ({h, w = 220, color, label, value, ...p}) => (
+export const Bar: React.FC<P & {h: number; w?: number; color: string; label: string; value: string}> = ({h, w = 220, color, label, value, ...p}) => h <= 1 ? null : (
   <G {...p}>
     <rect x={-w / 2} y={-h} width={w} height={h} rx={12} fill={color} {...O} />
     <Text y={-h - 44} size={52}>{value}</Text>
