@@ -4,7 +4,7 @@ import {C, FONT} from '../theme';
 import {useT} from '../timing';
 import {ease, lin, out, pop} from '../anim';
 import {Stick, StickProps} from '../Stick';
-import {Board, ChapterCard, Captions, CHAPTER_FRAMES, Cue, Interior, Progress, SceneItem, Scenes, Sfx, Street, Svg, Vignette} from '../fx';
+import {Board, ChapterCard, Captions, CHAPTER_FRAMES, Cue, Interior, Progress, SceneItem, Scenes, Sfx, Street, Svg, Vignette, SubReminder, subCues} from '../fx';
 import {Bank, Bill, Bubble, Calendar, Card, Coin, MoneyStack, Paper, Puff, Sparkle, SourceTag, Stamp, Text, XMark} from '../props';
 import {Bar, Frame, Icon, Phone, Row, SubButton, Bell} from '../props2';
 import {Raccoon, SourceCard, SplitBar, Person} from '../props3';
@@ -500,6 +500,125 @@ export const Ep05: React.FC = () => {
     );
   }
 
+  // ============ Who pays the most ============
+  {
+    const pg = w('w2', 'progressive');
+    const st = w('w2', 'stairs');
+    const ti = w('w3', 'thirty');
+    const bh = w('w4', 'bottom');
+    const th = w('w4', 'three');
+    const cr = w('w5', 'credits');
+    const pr = w('w6', 'payroll');
+    const nz = w('w6', 'free');
+    const pol = w('w7', 'political');
+    q(pg, 'pop', 0.5);
+    for (let i = 0; i < 7; i++) q(st + i * 4, 'pop2', 0.3);
+    q(ti, 'stamp', 0.7);
+    q(th, 'stamp', 0.6);
+    q(cr, 'ding', 0.4);
+    q(pr, 'pop', 0.5);
+    q(nz, 'buzz', 0.4);
+    q(pol, 'boing', 0.4);
+    const rates = [10, 12, 22, 24, 32, 35, 37];
+    scene(A('w1'), () =>
+      f < A('w3') ? (
+        <AbsoluteFill>
+          <Board />
+          <Svg>
+            <G2 x={960} y={130} s={pop(f, bs('w1'))}><Text size={64}>Who pays the most income tax?</Text></G2>
+            {rates.map((r, i) => (
+              <G2 key={r} x={320 + i * 190} y={880 - i * 70} s={pop(f, st + i * 4)}>
+                <rect x={-90} y={0} width={180} height={70 * (i + 1)} fill={i < 3 ? C.green : i < 5 ? C.yellow : C.red} stroke={C.ink} strokeWidth={5} />
+                <Text y={-30} size={44}>{r + '%'}</Text>
+              </G2>
+            ))}
+            <Dave f={f} x={ease(f, st, A('w3'), 250, 1500)} y={880 - ease(f, st, A('w3'), 0, 420)} s={0.7} walk keys={[{at: 0, pose: 'idle', expr: 'happy'}]} />
+            <G2 x={500} y={300} s={pop(f, pg)}><Text size={44} color="#5B6470">more income → higher rate on the top part</Text></G2>
+            <SourceTag f={f} at={st} text="IRS federal income tax brackets (single filers)" />
+          </Svg>
+        </AbsoluteFill>
+      ) : f < A('w5') ? (
+        <AbsoluteFill>
+          <Board />
+          <Svg>
+            <G2 x={960} y={130}><Text size={56}>Share of all federal INCOME tax paid (2023)</Text></G2>
+            <SplitBar x={960} y={360} a={0.384} la="Top 1%: 38%" lb="everyone else" ca={C.red} cb="#C9C3B6" w={1400} t={ease(f, ti - 6, ti + 12) < 1 ? ease(f, ti - 6, ti + 12) * 0.999 : 1} />
+            {f >= bh - 4 && <SplitBar x={960} y={640} a={0.03} la="" lb="Bottom 50% of earners: ~3%" ca={C.green} cb="#E8E1D2" w={1400} t={1} />}
+            <G2 x={400} y={760} s={pop(f, th)}><Text size={70} color={C.green} stroke={C.ink} sw={6}>~3%</Text></G2>
+            <SourceTag f={f} at={ti} text="Tax Foundation / NTU, IRS data for tax year 2023" />
+          </Svg>
+        </AbsoluteFill>
+      ) : (
+        <AbsoluteFill>
+          <Board />
+          <Svg>
+            <Frame x={560} y={440} s={pop(f, cr)} w={700} h={460} label="Income tax: many owe little">
+              <Stick f={f} x={-120} y={150} s={0.8} acc={['cap']} seed={21} keys={[{at: 0, pose: 'hold', expr: 'happy'}]} />
+              <Stick f={f} x={40} y={170} s={0.5} acc={[]} seed={90} keys={[{at: 0, pose: 'wave', expr: 'grin'}]} />
+              <Text x={180} y={-60} size={40} color={C.green}>credits</Text>
+            </Frame>
+            <Frame x={1360} y={440} s={pop(f, pr)} w={700} h={460} label="Payroll tax: EVERY paycheck">
+              <Text y={-40} size={120} color={C.red} stroke={C.ink} sw={8}>7.65%</Text>
+              <G2 y={80} s={pop(f, nz)}><Text size={40} color={C.red}>no free zone</Text></G2>
+            </Frame>
+            <G2 x={960} y={850} s={pop(f, pol)}><Text size={52} color={C.blue}>Fair? You decide. Now you know the numbers.</Text></G2>
+          </Svg>
+        </AbsoluteFill>
+      ),
+    );
+  }
+  // ============ Tax history ============
+  {
+    const y13 = w('h2', 'thirteen');
+    const sv = w('h2', 'seven');
+    const y44 = w('h3', 'forty');
+    const nf = w('h3', 'ninety');
+    const sx = w('h3', 'six');
+    const tt = w('h4', 'thirty');
+    const y37 = w('h5', 'thirty');
+    const pz = w('h6', 'pizza');
+    q(y13, 'flip', 0.5);
+    q(sv, 'pop', 0.5);
+    q(y44, 'flip', 0.5);
+    q(nf, 'stamp', 0.8);
+    q(sx, 'coin', 0.5);
+    q(tt, 'pop', 0.5);
+    q(y37, 'flip', 0.5);
+    q(pz, 'ding', 0.5);
+    const pts = [
+      {x: 360, yr: '1913', v: '7%', at: y13, h: 7},
+      {x: 900, yr: '1944', v: '94%', at: y44, h: 94},
+      {x: 1440, yr: 'TODAY', v: '37%', at: tt, h: 37},
+    ];
+    scene(A('h1'), () =>
+      f < A('h5') ? (
+        <AbsoluteFill>
+          <Board />
+          <Svg>
+            <G2 x={960} y={120} s={pop(f, bs('h1'))}><Text size={60}>Top income tax rate over time</Text></G2>
+            <line x1={200} y1={860} x2={1720} y2={860} stroke={C.ink} strokeWidth={6} strokeLinecap="round" />
+            {pts.map((p) => (
+              <g key={p.yr}>
+                {f >= p.at - 4 && <Bar x={p.x} y={860} h={ease(f, p.at - 4, p.at + 12, 0, p.h * 6)} color={p.h > 50 ? C.red : C.blue} label={p.yr} value={p.v} w={260} />}
+              </g>
+            ))}
+            <G2 x={1300} y={400} s={pop(f, sx)}><Coin s={0.8} /><Text x={150} y={0} size={40}>keep 6¢</Text></G2>
+          </Svg>
+        </AbsoluteFill>
+      ) : (
+        <AbsoluteFill>
+          <Board />
+          <Svg>
+            <Calendar x={500} y={430} s={1.1 * pop(f, y37)} top="SOCIAL SECURITY" year={1937} flip={0} />
+            <G2 x={500} y={700} s={pop(f, y37 + 6)}><Text size={60}>1% → 6.2%</Text></G2>
+            <G2 x={500} y={790} s={pop(f, y37 + 14)}><Text size={36} color="#5B6470">+ 6.2% from your employer</Text></G2>
+            <Pie x={1350} y={500} s={0.8 * pop(f, pz - 4)} shown={5} />
+          </Svg>
+        </AbsoluteFill>
+      ),
+    );
+  }
+
   // ============ CH8 ============
   const recap = ['Most tax money = regular workers', 'Big 4: SS, Medicare, defense, interest', 'We borrow → interest > military'];
   {
@@ -550,12 +669,15 @@ export const Ep05: React.FC = () => {
     );
   }
 
+  const SUB = bs('c4d') + 6;
+  subCues(SUB).forEach((c) => cues.push(c));
   return (
     <AbsoluteFill>
       <Scenes f={f} items={S} />
       <Vignette />
       <Progress f={f} t={t} />
       <ChapterCard f={f} t={t} />
+      <SubReminder f={f} at={SUB} Dave={<Stick f={f} x={0} y={200} s={1} keys={[{at: 0, pose: 'point_r', expr: 'grin', look: 0.8}]} acc={['hair']} seed={7} />} />
       <Captions f={f} t={t} />
       <Sfx cues={cues} />
     </AbsoluteFill>

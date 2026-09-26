@@ -296,6 +296,50 @@ export const Progress: React.FC<{f: number; t: Timings}> = ({f, t}) => {
   );
 };
 
+export const SUB_FRAMES = 130;
+export const subCues = (at: number): Cue[] => [
+  {at, src: 'pop', v: 0.6},
+  {at: at + 50, src: 'click', v: 0.8},
+  {at: at + 56, src: 'ding', v: 0.6},
+  {at: at + SUB_FRAMES - 14, src: 'whoosh_s', v: 0.3},
+];
+export const SubReminder: React.FC<{f: number; at: number; Dave: React.ReactNode}> = ({f, at, Dave}) => {
+  if (f < at || f > at + SUB_FRAMES) return null;
+  const k = f - at;
+  const inn = ease(k, 0, 12);
+  const outp = ease(k, SUB_FRAMES - 14, SUB_FRAMES);
+  const x = 1920 - 700 * inn + 760 * outp;
+  const done = k >= 50;
+  const press = k >= 46 && k < 54 ? 1 : 0;
+  const cx = ease(k, 20, 46, 620, 330);
+  const cy = ease(k, 20, 46, 330, 160);
+  const ring = done && k < 100 ? Math.sin(k * 1.3) * 18 : 0;
+  return (
+    <Svg>
+      <g transform={`translate(${x},150)`}>
+        <rect x={-10} y={-10} width={660} height={260} rx={40} fill="rgba(35,35,43,0.15)" transform="translate(10,12)" />
+        <rect x={-10} y={-10} width={660} height={260} rx={40} fill="#fff" stroke={C.ink} strokeWidth={6} />
+        <g transform="translate(110,120) scale(0.75)">{Dave}</g>
+        <text x={210} y={50} fontFamily={FONT} fontWeight={700} fontSize={34} fill={C.ink}>Learning something?</text>
+        <g transform={`translate(${330},${150}) scale(${1 - press * 0.08})`}>
+          <rect x={-120} y={-38} width={300} height={76} rx={38} fill={done ? '#9AA5B1' : '#E62117'} stroke={C.ink} strokeWidth={5} />
+          <text x={30} y={3} fontFamily={FONT} fontWeight={700} fontSize={32} fill="#fff" textAnchor="middle" dominantBaseline="middle" letterSpacing={2}>{done ? 'SUBSCRIBED ✓' : 'SUBSCRIBE'}</text>
+        </g>
+        <g transform={`translate(560,150) rotate(${ring})`}>
+          <path d="M -26 16 Q -26 -32 0 -34 Q 26 -32 26 16 L 34 26 L -34 26 Z" fill={C.yellow} stroke={C.ink} strokeWidth={5} strokeLinejoin="round" />
+          <circle cx={0} cy={34} r={8} fill={C.yellow} stroke={C.ink} strokeWidth={4} />
+        </g>
+        {done && k < 90 && [0, 1, 2].map((i) => (
+          <path key={i} d={`M ${560 + Math.cos(i * 2.1) * (40 + (k - 50) * 1.2)} ${150 + Math.sin(i * 2.1) * (40 + (k - 50) * 1.2)} l 8 -8`} stroke={C.ink} strokeWidth={5} strokeLinecap="round" opacity={1 - (k - 50) / 40} />
+        ))}
+        <g transform={`translate(${cx},${cy}) scale(${1 - press * 0.15})`} opacity={k > 16 && k < 80 ? 1 : 0}>
+          <path d="M 0 0 L 0 56 L 14 44 L 26 70 L 38 64 L 26 38 L 44 38 Z" fill="#fff" stroke={C.ink} strokeWidth={5} strokeLinejoin="round" />
+        </g>
+      </g>
+    </Svg>
+  );
+};
+
 export type Cue = {at: number; src: string; v?: number};
 export const Sfx: React.FC<{cues: Cue[]}> = ({cues}) => (
   <>

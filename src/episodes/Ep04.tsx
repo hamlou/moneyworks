@@ -4,7 +4,7 @@ import {C} from '../theme';
 import {useT} from '../timing';
 import {ease, lin, out, pop} from '../anim';
 import {Stick, StickProps} from '../Stick';
-import {Board as Bg, ChapterCard, Captions, CHAPTER_FRAMES, Cue, Interior, OldFilm, Progress, SceneItem, Scenes, Sfx, Street, Svg, Vignette} from '../fx';
+import {Board as Bg, ChapterCard, Captions, CHAPTER_FRAMES, Cue, Interior, OldFilm, Progress, SceneItem, Scenes, Sfx, Street, Svg, Vignette, SubReminder, subCues} from '../fx';
 import {Bank, Bill, Bubble, Calendar, Card, Coin, DocCard, MoneyStack, Paper, Puff, Sparkle, SourceTag, Stamp, Text, XMark} from '../props';
 import {Bar, CreditCard, Frame, Icon, Magnifier, Row, Sign, SubButton, Bell} from '../props2';
 import {Raccoon, Shop, SourceCard, SplitBar} from '../props3';
@@ -643,12 +643,15 @@ export const Ep04: React.FC = () => {
     );
   }
 
+  const SUB = bs('c4g') + 6;
+  subCues(SUB).forEach((c) => cues.push(c));
   return (
     <AbsoluteFill>
       <Scenes f={f} items={S} />
       <Vignette />
       <Progress f={f} t={t} />
       <ChapterCard f={f} t={t} />
+      <SubReminder f={f} at={SUB} Dave={<Stick f={f} x={0} y={200} s={1} keys={[{at: 0, pose: 'point_r', expr: 'grin', look: 0.8}]} acc={['hair']} seed={7} />} />
       <Captions f={f} t={t} />
       <Sfx cues={cues} />
     </AbsoluteFill>

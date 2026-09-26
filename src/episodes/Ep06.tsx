@@ -4,8 +4,8 @@ import {C} from '../theme';
 import {useT} from '../timing';
 import {ease, lin, out, pop} from '../anim';
 import {Stick, StickProps} from '../Stick';
-import {Board, ChapterCard, Captions, CHAPTER_FRAMES, Cue, Interior, Progress, SceneItem, Scenes, Sfx, Street, Svg, Vignette} from '../fx';
-import {Bank, Bill, Bubble, Calendar, Coin, Duck, Monitor, MoneyStack, Paper, Puff, Sparkle, SourceTag, Stamp, Text, XMark} from '../props';
+import {Board, ChapterCard, Captions, CHAPTER_FRAMES, Cue, Interior, Progress, SceneItem, Scenes, Sfx, Street, Svg, Vignette, SubReminder, subCues} from '../fx';
+import {Bank, Bill, Bubble, Calendar, Clock, Coin, Duck, Monitor, MoneyStack, Paper, Puff, Sparkle, SourceTag, Stamp, Text, XMark} from '../props';
 import {Bar, Frame, Icon, Phone, Row, Shield, SubButton, Bell} from '../props2';
 import {Person, PriceTag, Raccoon, SplitBar} from '../props3';
 import {Globe} from '../props4';
@@ -552,6 +552,132 @@ export const Ep06: React.FC = () => {
     ));
   }
 
+  // ============ How fast ============
+  {
+    const on = w('g2', 'one');
+    const fv = w('g2', 'five');
+    const fs = w('g3', 'fifty');
+    const cars = w('g3', 'cars');
+    const tw = w('g4', 'twenty');
+    const al = w('g4', 'almost');
+    const mt = w('g5', 'meter');
+    q(on, 'pop', 0.5);
+    q(fv, 'stamp', 0.6);
+    q(fs, 'pop', 0.6);
+    for (let k = fs; k < cars + 20; k += 30) q(k, 'coin', 0.35);
+    q(tw, 'flip', 0.5);
+    q(al, 'boing', 0.5);
+    q(mt, 'tick', 0.6);
+    const live = 40112118151112 + Math.max(0, f - fs) / 30 * 57000;
+    scene(A('g1'), () =>
+      f < A('g4') ? (
+        <AbsoluteFill>
+          <Board />
+          <Svg>
+            <G2 x={960} y={130} s={pop(f, bs('g1'))}><Text size={64}>How fast is it growing?</Text></G2>
+            <Frame x={400} y={450} s={pop(f, on)} w={560} h={300}><Text y={-40} size={40} color="#5B6470">per year</Text><Text y={40} size={90} color={C.red}>$1.8T</Text></Frame>
+            <Frame x={960} y={450} s={pop(f, fv)} w={500} h={300}><Text y={-40} size={40} color="#5B6470">per day</Text><Text y={40} size={90} color={C.red}>$5B</Text></Frame>
+            <Frame x={1520} y={450} s={pop(f, fs)} w={500} h={300}><Text y={-40} size={40} color="#5B6470">per second</Text><Text y={40} size={80} color={C.red}>$57,000</Text></Frame>
+            <G2 x={960} y={780} s={pop(f, fs + 6)}>
+              <rect x={-640} y={-70} width={1280} height={140} rx={20} fill={C.ink} />
+              <text x={0} y={4} fontFamily="monospace" fontWeight={700} fontSize={80} fill="#FF6B6B" textAnchor="middle" dominantBaseline="middle">{'$' + Math.round(live).toLocaleString('en-US')}</text>
+            </G2>
+            <SourceTag f={f} at={on} text="CBO FY2025 deficit $1.8T ÷ 365 days ÷ 86,400 seconds" />
+          </Svg>
+        </AbsoluteFill>
+      ) : (
+        <AbsoluteFill>
+          <Board />
+          <Svg>
+            <line x1={400} y1={850} x2={1520} y2={850} stroke={C.ink} strokeWidth={6} strokeLinecap="round" />
+            <Bar x={700} y={850} h={ease(f, tw - 4, tw + 10, 0, 8.5 * 15)} color={C.blue} label="2006" value="$8.5T" w={280} />
+            <Bar x={1220} y={850} h={ease(f, al - 4, al + 14, 0, 40.1 * 15)} color={C.red} label="2026" value="$40.1T" w={280} />
+            <G2 x={1600} y={300} s={pop(f, al)}><Text size={80} color={C.red}>~5×</Text></G2>
+            <Raccoon f={f} x={380} y={500} s={0.8 * pop(f, mt)} mood="greedy" holdCoin grab={0.5} />
+            <Clock f={f * 4} x={380} y={220} s={0.6 * pop(f, mt)} />
+            <SourceTag f={f} at={tw} text="Treasury historical debt outstanding (FY2006 ≈ $8.5T)" />
+          </Svg>
+        </AbsoluteFill>
+      ),
+    );
+  }
+  // ============ Debt ceiling ============
+  {
+    const lm = w('d1', 'limit');
+    const vt = w('d2', 'vote');
+    const fg = w('d2', 'fight');
+    const nw = w('d3', 'doesnt');
+    const pz = w('d4', 'pizza');
+    const ar = w('d4', 'arguing');
+    const el = w('d5', 'eleven');
+    const lost = w('d5', 'lost');
+    const fvt = w('d6', 'five');
+    const fo = w('d6', 'forty');
+    const gs = w('d7', 'guess');
+    q(lm, 'thud', 0.6);
+    q(vt, 'pop', 0.5);
+    q(fg, 'crowd', 0.5);
+    q(nw, 'buzz', 0.4);
+    q(pz, 'pop', 0.5);
+    q(ar, 'boing', 0.5);
+    q(lost, 'stamp', 0.7);
+    q(fvt, 'whoosh', 0.6);
+    q(gs, 'heart', 0.6);
+    const ceilY = f < fvt ? 300 : ease(f, fvt, fvt + 20, 300, 180);
+    const pile = f < fvt ? ease(f, lm, vt, 0.3, 0.98) : ease(f, fo, fo + 30, 0.6, 0.95);
+    scene(A('d1'), () =>
+      f < A('d4') ? (
+        <AbsoluteFill>
+          <Interior />
+          <Svg>
+            <rect x={600} y={ceilY - 20} width={720} height={30} fill={C.red} stroke={C.ink} strokeWidth={5} />
+            <G2 x={960} y={ceilY - 60} s={pop(f, lm)}><Text size={44} color={C.red}>DEBT CEILING</Text></G2>
+            {Array.from({length: 12}).map((_, i) => {
+              const top = 820 - i * 44;
+              return top > 820 - (820 - ceilY) * pile ? <rect key={i} x={700 + (i % 2) * 10} y={top - 40} width={520} height={40} rx={6} fill={i % 2 ? '#F28C9E' : C.red} stroke={C.ink} strokeWidth={4} /> : null;
+            })}
+            <Stick f={f} x={320} y={820} s={1.1 * pop(f, vt)} acc={['tie']} seed={95} keys={[{at: 0, pose: 'point_r', expr: 'suspicious'}, {at: fg, pose: 'panic', expr: 'worried'}]} />
+            <Stick f={f} x={1600} y={820} s={1.1 * pop(f, vt + 4)} acc={['tie', 'glasses']} seed={96} keys={[{at: 0, pose: 'point_l', expr: 'suspicious'}, {at: fg, pose: 'shrug', expr: 'smug'}]} />
+            <G2 x={960} y={930} s={pop(f, nw)}><Text size={44}>raising it = paying bills already agreed to</Text></G2>
+          </Svg>
+        </AbsoluteFill>
+      ) : f < A('d5') ? (
+        <AbsoluteFill>
+          <Interior />
+          <Svg>
+            <Dave f={f} x={620} y={820} s={1.2} keys={[{at: 0, pose: 'celebrate', expr: 'grin'}, {at: ar, pose: 'shrug', expr: 'smug'}]} />
+            <G2 x={1200} y={620} s={pop(f, pz)}><Pizza2 /></G2>
+            <G2 x={1200} y={300} s={pop(f, ar)}><Bubble text={'Am I ALLOWED\nto pay for this?'} size={48} /></G2>
+          </Svg>
+        </AbsoluteFill>
+      ) : f < A('d6') ? (
+        <AbsoluteFill>
+          <Board />
+          <Svg>
+            <Calendar x={400} y={400} s={pop(f, el)} top="YEAR" year={2011} flip={0} />
+            <ReportCard x={1150} y={500} s={pop(f, el + 6)} old="AAA" grade="AA+" cross={ease(f, lost, lost + 14)} />
+            <SourceTag f={f} at={lost} text="S&P downgrade of US credit rating, August 2011" />
+          </Svg>
+        </AbsoluteFill>
+      ) : (
+        <AbsoluteFill>
+          <Interior />
+          <Svg>
+            <rect x={600} y={ceilY - 20} width={720} height={30} fill={C.red} stroke={C.ink} strokeWidth={5} />
+            <G2 x={1500} y={ceilY} s={pop(f, fvt)}><Text size={50} color={C.red}>$41.1T (+$5T)</Text></G2>
+            {Array.from({length: 14}).map((_, i) => {
+              const top = 820 - i * 46;
+              return top > 820 - (820 - ceilY) * pile ? <rect key={i} x={700 + (i % 2) * 10} y={top - 42} width={520} height={42} rx={6} fill={i % 2 ? '#F28C9E' : C.red} stroke={C.ink} strokeWidth={4} /> : null;
+            })}
+            <G2 x={400} y={600} s={pop(f, fo)}><Text size={60} color={C.red}>$40.1T</Text></G2>
+            <G2 x={960} y={120} s={pop(f, gs)}><Stamp text="HERE WE GO AGAIN?" size={56} /></G2>
+            <SourceTag f={f} at={fvt + 6} text="One Big Beautiful Bill Act (July 2025): limit raised to $41.1T" />
+          </Svg>
+        </AbsoluteFill>
+      ),
+    );
+  }
+
   // ============ CH7 ============
   const recap = ['$40T owed · China < 2%', '~3/4 owed to Americans', "Can't print our way out"];
   {
@@ -601,17 +727,29 @@ export const Ep06: React.FC = () => {
     );
   }
 
+  const SUB = w('c3a', 'america', 1) + 12;
+  subCues(SUB).forEach((c) => cues.push(c));
   return (
     <AbsoluteFill>
       <Scenes f={f} items={S} />
       <Vignette />
       <Progress f={f} t={t} />
       <ChapterCard f={f} t={t} />
+      <SubReminder f={f} at={SUB} Dave={<Stick f={f} x={0} y={200} s={1} keys={[{at: 0, pose: 'point_r', expr: 'grin', look: 0.8}]} acc={['hair']} seed={7} />} />
       <Captions f={f} t={t} />
       <Sfx cues={cues} />
     </AbsoluteFill>
   );
 };
+
+const Pizza2: React.FC = () => (
+  <g>
+    <circle r={160} fill="#E9B872" stroke={C.ink} strokeWidth={6} />
+    <circle r={140} fill="#F4C95D" />
+    {[[-60, -40], [50, -60], [20, 40], [-40, 70], [80, 30]].map(([x, y], i) => <circle key={i} cx={x} cy={y} r={18} fill="#D1495B" stroke={C.ink} strokeWidth={3} />)}
+    <path d="M 0 0 L 140 0 A 140 140 0 0 1 99 99 Z" fill="#F6E2C0" stroke={C.ink} strokeWidth={4} />
+  </g>
+);
 
 const Magnifier2: React.FC<{f: number; at: number}> = ({f, at}) => {
   const p = ease(f, at, at + 30);

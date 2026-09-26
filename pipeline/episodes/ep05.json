@@ -2,7 +2,7 @@
   "id": "ep05",
   "title": "Where Does Your Tax Money Actually Go?",
   "youtube": {
-    "title": "Where Does Your Tax Money Actually Go? (It's Not What You Think)",
+    "title": "Where Your Taxes Actually Go (Most People Guess Wrong)",
     "hook": "Every paycheck, a big slice disappears to taxes. But where does it actually go? Most people guess wrong. America now spends more on interest than on its entire military, and foreign aid is about 1% of the budget, not 25%. Here's the whole federal budget, explained with one pizza.",
     "tags": ["where do taxes go", "federal budget explained", "how taxes work", "tax money", "national debt interest", "social security explained", "medicare explained", "defense spending", "foreign aid myth", "payroll taxes", "government spending", "economics explained", "personal finance", "finance for beginners", "money explained"]
   },
@@ -71,6 +71,21 @@
     {"id": "c7c", "text": "Because big government borrowing can push interest rates up for everyone. Including Dave's car loan and mortgage.", "pause": 0.5},
     {"id": "c7d", "text": "And because one day, someone will have to decide: raise taxes, cut spending, or keep borrowing. Every choice has winners and losers.", "pause": 0.5},
     {"id": "c7e", "text": "We're not here to tell you which choice is right. We're here to make sure you understand the numbers, so nobody can fool you.", "pause": 0.9},
+
+    {"id": "w1", "chapter": "Who Pays the Most?", "text": "Here's a question people love to argue about. Who actually pays the most income tax?", "pause": 0.5},
+    {"id": "w2", "text": "America's income tax is progressive. That means the more you earn, the higher the rate on the top part of your income. Like climbing stairs.", "pause": 0.5},
+    {"id": "w3", "text": "And that creates a surprising result. In twenty twenty three, the top one percent of earners paid about thirty eight percent of all federal income taxes.", "pause": 0.6},
+    {"id": "w4", "text": "Meanwhile, the bottom half of earners, half the entire country, paid only about three percent.", "pause": 0.6},
+    {"id": "w5", "text": "Why so little? Because many people earn below the point where income tax kicks in, and credits, for things like children, reduce what they owe.", "pause": 0.5},
+    {"id": "w6", "text": "But careful. That's only income tax. Almost every worker still pays payroll tax on every single paycheck. Remember the seven point six five percent? That one has no free zone.", "pause": 0.5},
+    {"id": "w7", "text": "So is it fair? That's a political question. But now you know the actual numbers.", "pause": 0.9},
+
+    {"id": "h1", "chapter": "A Short History of Taxes", "text": "Now, here's something wild. For most of American history, there was no permanent federal income tax at all.", "pause": 0.5},
+    {"id": "h2", "text": "The modern income tax started in nineteen thirteen. And the top rate was just seven percent. Only the very rich paid anything.", "pause": 0.5},
+    {"id": "h3", "text": "Then came the world wars. By nineteen forty four, the top rate hit ninety four percent. Ninety four! Earn one more dollar at the very top, and you keep six cents.", "pause": 0.6},
+    {"id": "h4", "text": "Over the decades, rates went up and down with every new government. Today, the top federal rate is thirty seven percent.", "pause": 0.5},
+    {"id": "h5", "text": "And that little Social Security tax? It started in nineteen thirty seven at just one percent. Today it's six point two percent. Plus the same amount again, paid by your employer.", "pause": 0.5},
+    {"id": "h6", "text": "Taxes change all the time. What never changes is that someone has to pay for the pizza.", "pause": 0.9},
 
     {"id": "c8a", "chapter": "Now You Know", "text": "So let's recap.", "pause": 0.4},
     {"id": "c8b", "text": "One. Most federal tax money comes from regular workers, through income and payroll taxes.", "pause": 0.5},

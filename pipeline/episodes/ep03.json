@@ -2,7 +2,7 @@
   "id": "ep03",
   "title": "Why a $300,000 Mortgage Costs You $720,000",
   "youtube": {
-    "title": "Why a $300,000 Mortgage Costs You $720,000",
+    "title": "Why a $300,000 House Costs You $720,000",
     "hook": "Dave borrowed $300,000 to buy a house. By the time he's done, he'll pay the bank about $720,000. And for the first five years, almost none of his money goes toward the house. Here's how mortgages really work, the costs nobody mentions, and one simple habit that can save over $100,000.",
     "tags": ["how mortgages work", "mortgage explained", "mortgage interest", "amortization explained", "first time home buyer", "30 year vs 15 year mortgage", "extra mortgage payments", "closing costs", "PMI explained", "rent vs buy", "fannie mae freddie mac", "personal finance", "finance for beginners", "real estate explained", "money explained"]
   },
@@ -38,7 +38,8 @@
     {"id": "c2f", "text": "Two thousand dollars, every month, for thirty years. That's three hundred and sixty payments.", "pause": 0.5},
     {"id": "c2g", "text": "Add them all up, and you get about seven hundred and twenty thousand dollars.", "pause": 0.5},
     {"id": "c2h", "text": "Three hundred thousand for the house. And about four hundred and twenty thousand, just for borrowing the money.", "pause": 0.6},
-    {"id": "c2i", "text": "Dave is basically buying the house... and then buying it again for the bank. With a little extra on top.", "pause": 0.9},
+    {"id": "c2i", "text": "Dave is basically buying the house... and then buying it again for the bank. With a little extra on top.", "pause": 0.6},
+    {"id": "c2j", "text": "And remember, that is just the loan itself. We haven't even talked about the extra costs yet. Stay with me.", "pause": 0.8},
 
     {"id": "c3a", "chapter": "Where Your Payment Goes", "text": "Now here's the part most people never notice.", "pause": 0.4},
     {"id": "c3b", "text": "Let's look at Dave's very first payment. Two thousand dollars.", "pause": 0.4},
@@ -59,7 +60,8 @@
     {"id": "c4d", "text": "Then home insurance. Because houses can burn, flood, or get hit by a very confused truck.", "pause": 0.5},
     {"id": "c4e", "text": "If Dave put down less than twenty percent, he'll usually pay mortgage insurance too. That's insurance that protects the bank. Not Dave. The bank.", "pause": 0.5},
     {"id": "c4f", "text": "And then, the house itself starts asking for money. A new roof. A broken water heater. A mysterious noise in the wall.", "pause": 0.5},
-    {"id": "c4g", "text": "When you rent, that's the landlord's problem. When you own, it's yours.", "pause": 0.9},
+    {"id": "c4g", "text": "When you rent, that's the landlord's problem. When you own, it's yours.", "pause": 0.5},
+    {"id": "c4h", "text": "Put it all together, and owning a home usually costs a lot more than the monthly payment on the loan.", "pause": 0.9},
 
     {"id": "c5a", "chapter": "Who Really Owns Your Loan?", "text": "Here's a plot twist.", "pause": 0.4},
     {"id": "c5b", "text": "A few months after Dave signs, he gets a letter. It says: your loan has been transferred.", "pause": 0.5},
@@ -74,12 +76,15 @@
     {"id": "c6c", "text": "When Dave pays rent, none of it comes back. When Dave pays his mortgage, at least part of it builds something he owns. That part is called equity.", "pause": 0.5},
     {"id": "c6d", "text": "And houses often go up in value over time. The typical American home now sells for about four hundred and twenty nine thousand dollars.", "pause": 0.5},
     {"id": "c6e", "text": "But renting has advantages too. You can move easily. No surprise roof bills. And the money you don't spend on a house can be saved or invested elsewhere.", "pause": 0.5},
-    {"id": "c6f", "text": "The real answer depends on how long you'll stay, the prices where you live, and your interest rate. There's no one size fits all.", "pause": 0.9},
+    {"id": "c6f", "text": "The real answer depends on how long you'll stay, the prices where you live, and your interest rate. There's no one size fits all.", "pause": 0.5},
+    {"id": "c6g", "text": "A common rule of thumb: if you might move within a few years, renting often makes more sense. Because buying and selling a house is expensive.", "pause": 0.5},
+    {"id": "c6h", "text": "Agents, closing costs, moving trucks. Selling a home can easily cost several percent of its price. You need time for your equity to grow enough to cover that.", "pause": 0.9},
 
     {"id": "c7a", "chapter": "The $100,000 Habit", "text": "Now, the good news. Because interest is calculated on what you owe, every extra dollar you pay early saves you interest for years.", "pause": 0.5},
     {"id": "c7b", "text": "Let's say Dave pays just two hundred dollars extra every month.", "pause": 0.4},
     {"id": "c7c", "text": "He finishes his loan about seven years early. And saves about one hundred and seventeen thousand dollars in interest.", "pause": 0.7},
     {"id": "c7d", "text": "Two hundred dollars a month. One hundred and seventeen thousand dollars saved. That's the power of shrinking the loan early.", "pause": 0.5},
+    {"id": "c7d2", "text": "Some people do something similar by paying half their payment every two weeks. Twenty six half payments a year adds up to one extra full payment. Every year.", "pause": 0.6},
     {"id": "c7e", "text": "Another option is a fifteen year mortgage. The monthly payment is higher. But even at the same rate, Dave would pay about two hundred and thirty thousand dollars less in interest.", "pause": 0.5},
     {"id": "c7f", "text": "And one more thing. Rates can be different from one lender to another. Comparing offers before you sign can make a big difference.", "pause": 0.5},
     {"id": "c7g", "text": "Just check that your loan doesn't have a penalty for paying early. Most don't, but always ask.", "pause": 0.9},

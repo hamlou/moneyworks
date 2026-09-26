@@ -4,7 +4,7 @@ import {C} from '../theme';
 import {useT} from '../timing';
 import {ease, lin, out, pop} from '../anim';
 import {Stick, StickProps} from '../Stick';
-import {Board, ChapterCard, Captions, CHAPTER_FRAMES, Cue, Interior, Progress, SceneItem, Scenes, Sfx, Street, Svg, Vignette} from '../fx';
+import {Board, ChapterCard, Captions, CHAPTER_FRAMES, Cue, Interior, Progress, SceneItem, Scenes, Sfx, Street, Svg, Vignette, SubReminder, subCues} from '../fx';
 import {Bank, Bill, Bubble, Calendar, Card, Coin, Desk, Duck, Monitor, MoneyStack, Paper, Puff, Sparkle, SourceTag, Stamp, Text, XMark} from '../props';
 import {Bar, Envelope, Frame, Icon, Magnifier, Phone, Row, Shield, Sign, SubButton, Bell} from '../props2';
 import {PriceTag, SplitBar} from '../props3';
@@ -803,6 +803,30 @@ export const Ep03: React.FC = () => {
     ));
   }
   {
+    const tw = w('c7d2', 'two');
+    const ts = w('c7d2', 'twenty');
+    const ex = w('c7d2', 'extra');
+    q(tw, 'pop', 0.5);
+    for (let i = 0; i < 13; i++) q(ts + i * 3, 'pop2', 0.2);
+    q(ex, 'ding', 0.6);
+    scene(A('c7d2'), () => (
+      <AbsoluteFill>
+        <Board />
+        <Svg>
+          <G2 x={960} y={130} s={pop(f, tw)}><Text size={60}>Half a payment every 2 weeks</Text></G2>
+          {Array.from({length: 26}).map((_, i) => (
+            <G2 key={i} x={260 + (i % 13) * 110} y={380 + Math.floor(i / 13) * 130} s={pop(f, ts + i * 1.5)}>
+              <rect x={-45} y={-45} width={90} height={90} rx={12} fill={C.blue} stroke={C.ink} strokeWidth={4} opacity={0.85} />
+              <Text size={28} color="#fff">½</Text>
+            </G2>
+          ))}
+          <G2 x={960} y={740} s={pop(f, ex - 6)}><Text size={60}>26 halves = 13 full payments</Text></G2>
+          <G2 x={960} y={850} s={pop(f, ex)}><Text size={52} color={C.green}>= 1 EXTRA payment per year</Text></G2>
+        </Svg>
+      </AbsoluteFill>
+    ));
+  }
+  {
     const fy = w('c7e', 'fifteen');
     const hg = w('c7e', 'higher');
     const tt = w('c7e', 'two');
@@ -916,12 +940,15 @@ export const Ep03: React.FC = () => {
     );
   }
 
+  const SUB = A('c3f') + 12;
+  subCues(SUB).forEach((c) => cues.push(c));
   return (
     <AbsoluteFill>
       <Scenes f={f} items={S} />
       <Vignette />
       <Progress f={f} t={t} />
       <ChapterCard f={f} t={t} />
+      <SubReminder f={f} at={SUB} Dave={<Stick f={f} x={0} y={200} s={1} keys={[{at: 0, pose: 'point_r', expr: 'grin', look: 0.8}]} acc={['hair']} seed={7} />} />
       <Captions f={f} t={t} />
       <Sfx cues={cues} />
     </AbsoluteFill>
