@@ -89,9 +89,9 @@ export const Banner: React.FC = () => {
           </text>
         </g>
         <g filter="url(#shadow)">
-          <rect x={1250 - 470} y={800} width={940} height={66} rx={33} fill={C.ink} />
-          <text x={1250} y={835} fontFamily={HEAD} fontSize={38} fill="#fff" textAnchor="middle" dominantBaseline="middle" letterSpacing={2}>
-            MONEY, BUSINESS &amp; ECONOMICS · SO SIMPLE A DUCK GETS IT
+          <rect x={1250 - 330} y={800} width={660} height={66} rx={33} fill={C.ink} />
+          <text x={1250} y={835} fontFamily={HEAD} fontSize={44} fill="#fff" textAnchor="middle" dominantBaseline="middle" letterSpacing={3}>
+            SO SIMPLE A DUCK GETS IT
           </text>
         </g>
         <text x={1250} y={902} fontFamily={HEAD} fontSize={34} fill="#fff" opacity={0.9} textAnchor="middle" dominantBaseline="middle" letterSpacing={4}>

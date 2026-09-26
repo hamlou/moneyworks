@@ -12,111 +12,411 @@
     "Village example ($1,000 × 100 houses) and Dave's $125/month quote are illustrative, not statistics"
   ],
   "beats": [
-    {"id": "o1", "text": "Dave just bought car insurance. He'll pay about fifteen hundred dollars this year. And he hopes he never uses it.", "pause": 0.3},
-    {"id": "o2", "text": "Now look at this. One company, Berkshire Hathaway, is holding one hundred seventy six billion dollars of insurance money.", "pause": 0.3},
-    {"id": "o3", "text": "Money that customers like Dave paid in. It's not really theirs to keep. But they get to invest it.", "pause": 0.35},
-    {"id": "o4", "text": "And here's the crazy part. Last year, holding all that money cost them nothing. They even made a profit on the insurance itself.", "pause": 0.35},
-    {"id": "o5", "text": "It's called the float. And it's one of the best money machines ever invented.", "pause": 0.3},
-    {"id": "o6", "text": "Today: how insurance really works, how insurers make money twice, and how Dave can pay less.", "pause": 0.6},
-
-    {"id": "c1a", "chapter": "Dave's First Quote", "text": "Let's start with Dave's problem.", "pause": 0.4},
-    {"id": "c1b", "text": "Dave just bought a used car. Nothing fancy. It's blue, it's old, and it makes a funny noise when he turns left.", "pause": 0.5},
-    {"id": "c1c", "text": "Before he can drive it, the law says he needs car insurance. So he asks for a quote. One hundred twenty five dollars a month.", "pause": 0.5},
-    {"id": "c1d", "text": "Dave is confused. He's a careful driver. He's never crashed. Why should he pay fifteen hundred dollars a year for something that might never happen?", "pause": 0.5},
-    {"id": "c1e", "text": "And if he never crashes, where does all that money go?", "pause": 0.5},
-    {"id": "c1f", "text": "To answer that, we need to visit a tiny village.", "pause": 0.9},
-
-    {"id": "c2a", "chapter": "The Village Pot", "text": "Imagine a village with one hundred houses.", "pause": 0.4},
-    {"id": "c2b", "text": "Every year, on average, one house burns down. Nobody knows which one. It could be yours.", "pause": 0.5},
-    {"id": "c2c", "text": "A new house costs one hundred thousand dollars. If yours burns, you're ruined.", "pause": 0.5},
-    {"id": "c2d", "text": "So the villagers make a deal. Everybody puts one thousand dollars into a big pot, every year.", "pause": 0.5},
-    {"id": "c2e", "text": "One hundred houses, times one thousand dollars. That's one hundred thousand dollars in the pot. Enough to rebuild one house.", "pause": 0.5},
-    {"id": "c2f", "text": "Whoever's house burns gets the pot. Everybody else loses a thousand dollars, but sleeps well at night.", "pause": 0.5},
-    {"id": "c2g", "text": "That's insurance. You swap a small, certain cost for protection against a big, uncertain disaster.", "pause": 0.5},
-    {"id": "c2h", "text": "And here's the secret. Nobody can predict one house. But with lots of houses, the total becomes very predictable. That's called the law of large numbers.", "pause": 0.5},
-    {"id": "c2i", "text": "So Dave isn't paying for his own crash. He's chipping into the pot for whoever crashes this year.", "pause": 0.9},
-
-    {"id": "c3a", "chapter": "The Coffee House", "text": "People have been doing this for a very long time.", "pause": 0.4},
-    {"id": "c3b", "text": "In sixteen eighty eight, in London, a man named Edward Lloyd ran a coffee house on Tower Street, near the river.", "pause": 0.5},
-    {"id": "c3c", "text": "Ship captains and merchants loved it. Lloyd shared news about ships, storms, and pirates. Very useful, if your ship full of cargo is out at sea.", "pause": 0.5},
-    {"id": "c3d", "text": "A ship owner would write his voyage on a piece of paper. Then rich people in the room would sign their names below it, each taking a slice of the risk.", "pause": 0.5},
-    {"id": "c3e", "text": "They wrote their names under the risk. That's why, even today, they're called underwriters.", "pause": 0.5},
-    {"id": "c3f", "text": "That coffee house grew into Lloyd's of London, one of the most famous insurance markets in the world. All thanks to coffee and gossip.", "pause": 0.9},
-
-    {"id": "c4a", "chapter": "Premiums vs Claims", "text": "Now, a real insurance company is like the village pot. But run as a business.", "pause": 0.4},
-    {"id": "c4b", "text": "The money customers pay in is called premiums. The money paid out for accidents is called claims.", "pause": 0.5},
-    {"id": "c4c", "text": "On top of claims, the company has costs. Offices, staff, and ads with funny animals.", "pause": 0.5},
-    {"id": "c4d", "text": "So insurers watch one magic number. The combined ratio. Claims plus costs, divided by premiums.", "pause": 0.5},
-    {"id": "c4e", "text": "Below one hundred percent, they made a profit on insurance. Above one hundred, they lost money on it.", "pause": 0.5},
-    {"id": "c4f", "text": "In twenty twenty four, American home and car insurers were at about ninety seven. In twenty twenty five, about ninety three. So out of every hundred dollars of premiums, about seven dollars was left over as profit.", "pause": 0.5},
-    {"id": "c4g", "text": "Seven percent. That doesn't sound like much. But that's only the first way they make money.", "pause": 0.9},
-
-    {"id": "c5a", "chapter": "The Float", "text": "Here's the second way. And it's the big one.", "pause": 0.4},
-    {"id": "c5b", "text": "Dave pays his premium today. But if he crashes, the claim comes months later. Or years later. Or never.", "pause": 0.5},
-    {"id": "c5c", "text": "In between, the money just sits there. And the insurer gets to invest it. In bonds, in stocks, even in whole companies.", "pause": 0.5},
-    {"id": "c5d", "text": "That pile of waiting money is called the float.", "pause": 0.5},
-    {"id": "c5e", "text": "Imagine a friend gives you a hundred dollars and says: hold this, I might need it back someday. Meanwhile, you invest it, and you keep the profits.", "pause": 0.5},
-    {"id": "c5f", "text": "Most people think insurers get rich by refusing to pay. Mostly? Nope. The biggest insurers get rich from the float.", "pause": 0.5},
-    {"id": "c5g", "text": "Warren Buffett understood this better than anyone. In nineteen sixty seven, his company, Berkshire Hathaway, bought a small insurer called National Indemnity.", "pause": 0.5},
-    {"id": "c5h", "text": "He took the float and invested it. Then he bought more insurers, including the car insurer GEICO.", "pause": 0.5},
-    {"id": "c5i", "text": "At the end of twenty twenty five, Berkshire's float was one hundred seventy six billion dollars. Ten years earlier, it was eighty eight billion. It doubled.", "pause": 0.5},
-    {"id": "c5j", "text": "And their combined ratio in twenty twenty five was about eighty seven percent. So they made a profit on the insurance, and got to invest one hundred seventy six billion dollars for free.", "pause": 0.5},
-    {"id": "c5k", "text": "That's like getting paid to borrow money. Even our duck from the very first video is jealous.", "pause": 0.9},
-
-    {"id": "c6a", "chapter": "Why Premiums Rise", "text": "Okay. So why does Dave's bill keep going up?", "pause": 0.4},
-    {"id": "c6b", "text": "Reason one. Cars got expensive to fix. A small bump used to mean a new bumper. Now the bumper is full of sensors and cameras.", "pause": 0.5},
-    {"id": "c6c", "text": "Reason two. Hospital bills and lawsuits after accidents keep getting bigger.", "pause": 0.5},
-    {"id": "c6d", "text": "Reason three. More storms, floods, and wildfires, hitting more expensive houses.", "pause": 0.5},
-    {"id": "c6e", "text": "Reason four. Fraud. Fake crashes and fake injuries. Across all kinds of insurance, fraud costs Americans about three hundred billion dollars a year. And honest customers pay for it.", "pause": 0.5},
-    {"id": "c6f", "text": "When claims rise, the pot has to grow. In twenty twenty three, car insurance prices in America jumped about twenty percent in one year. The biggest jump since nineteen seventy six.", "pause": 0.5},
-    {"id": "c6g", "text": "The good news? Lately, prices have cooled. By August twenty twenty six, car insurance prices were about five percent lower than a year before.", "pause": 0.5},
-    {"id": "c6h", "text": "Insurance prices follow claims. If the pot keeps getting emptied, everybody pays more to refill it.", "pause": 0.9},
-
-    {"id": "c7a", "chapter": "The Fine Print", "text": "Now, two things that confuse everyone. First: the deductible.", "pause": 0.4},
-    {"id": "c7b", "text": "The deductible is the part of the damage you pay yourself, before insurance kicks in.", "pause": 0.5},
-    {"id": "c7c", "text": "Say Dave has a five hundred dollar deductible. He scratches his car. The repair costs eight hundred dollars. Dave pays five hundred. Insurance pays three hundred.", "pause": 0.5},
-    {"id": "c7d", "text": "Why? Because it stops people from claiming every tiny scratch. Tiny claims are expensive to handle. So a higher deductible usually means a lower premium.", "pause": 0.5},
-    {"id": "c7e", "text": "Second: denied claims. Why can an insurer say no?", "pause": 0.5},
-    {"id": "c7f", "text": "Sometimes the damage just isn't covered. For example, a standard home policy in America usually doesn't cover floods. That's a separate policy.", "pause": 0.5},
-    {"id": "c7g", "text": "Sometimes the information was wrong. If Dave says he parks in a garage, but his car actually lives on the street, that's a problem.", "pause": 0.5},
-    {"id": "c7h", "text": "And sometimes the claim is reported too late, or it looks like fraud.", "pause": 0.5},
-    {"id": "c7i", "text": "The rules are all in the contract. The fine print. And remember, the raccoon loves fine print. So read yours before you need it.", "pause": 0.9},
-
-    {"id": "c8a", "chapter": "How Dave Pays Less", "text": "So what can Dave do? Education, not advice.", "pause": 0.4},
-    {"id": "c8b", "text": "One. Shop around. Get quotes from at least three insurers, every year or two. The same driver can get very different prices.", "pause": 0.5},
-    {"id": "c8c", "text": "Two. Think about your deductible. The Insurance Information Institute says going from a two hundred to a five hundred dollar deductible can cut collision and comprehensive costs by fifteen to thirty percent. Going to one thousand can save forty percent or more.", "pause": 0.5},
-    {"id": "c8d", "text": "Three. But only raise your deductible if you can actually pay it. That's why you need an emergency fund. Money set aside for surprises.", "pause": 0.5},
-    {"id": "c8e", "text": "Four. Insurance is for disasters you can't afford. Small losses are often cheaper to pay yourself.", "pause": 0.5},
-    {"id": "c8f", "text": "So Dave shops around, picks a higher deductible, and builds an emergency fund. His bill drops. And his funny blue car is still covered.", "pause": 0.9},
-
-    {"id": "c9a", "chapter": "Now You Know", "text": "So let's recap.", "pause": 0.4},
-    {"id": "c9b", "text": "One. Insurance is a pot. Many people pay a little, so the unlucky few don't lose everything.", "pause": 0.5},
-    {"id": "c9c", "text": "Two. Insurers make money twice. A small profit on premiums, and a big profit from investing the float.", "pause": 0.5},
-    {"id": "c9d", "text": "Three. Your price follows claims. Shop around, and pick a deductible your emergency fund can handle.", "pause": 0.6},
-    {"id": "c9e", "text": "Next time, Dave hears a scary word on the news. Recession. What actually happens in a recession? And who feels it first?", "pause": 0.4},
-    {"id": "c9f", "text": "Subscribe, so Dave can keep explaining money. It's the only policy with a zero dollar premium.", "pause": 1.4}
+    {
+      "id": "o1",
+      "text": "Dave just bought car insurance. He'll pay about fifteen hundred dollars this year. And he hopes he never uses it.",
+      "pause": 0.3
+    },
+    {
+      "id": "o2",
+      "text": "Now look at this. One company, Berkshire Hathaway, is holding one hundred seventy six billion dollars of insurance money.",
+      "pause": 0.3
+    },
+    {
+      "id": "o3",
+      "text": "Money that customers like Dave paid in. It's not really theirs to keep. But they get to invest it.",
+      "pause": 0.35
+    },
+    {
+      "id": "o4",
+      "text": "And here's the crazy part. Last year, holding all that money cost them nothing. They even made a profit on the insurance itself.",
+      "pause": 0.35
+    },
+    {
+      "id": "o5",
+      "text": "It's called the float. And it's one of the best money machines ever invented.",
+      "pause": 0.3
+    },
+    {
+      "id": "o6",
+      "text": "Today: how insurance really works, how insurers make money twice, and how Dave can pay less.",
+      "pause": 0.6
+    },
+    {
+      "id": "c1a",
+      "chapter": "Dave's First Quote",
+      "text": "Let's start with Dave's problem.",
+      "pause": 0.4
+    },
+    {
+      "id": "c1b",
+      "text": "Dave just bought a used car. Nothing fancy. It's blue, it's old, and it makes a funny noise when he turns left.",
+      "pause": 0.5
+    },
+    {
+      "id": "c1c",
+      "text": "Before he can drive it, the law says he needs car insurance. So he asks for a quote. One hundred twenty five dollars a month.",
+      "pause": 0.5
+    },
+    {
+      "id": "c1d",
+      "text": "Dave is confused. He's a careful driver. He's never crashed. Why should he pay fifteen hundred dollars a year for something that might never happen?",
+      "pause": 0.5
+    },
+    {
+      "id": "c1e",
+      "text": "And if he never crashes, where does all that money go?",
+      "pause": 0.5
+    },
+    {
+      "id": "c1f",
+      "text": "To answer that, we need to visit a tiny village.",
+      "pause": 0.9
+    },
+    {
+      "id": "c2a",
+      "chapter": "The Village Pot",
+      "text": "Imagine a village with one hundred houses.",
+      "pause": 0.4
+    },
+    {
+      "id": "c2b",
+      "text": "Every year, on average, one house burns down. Nobody knows which one. It could be yours.",
+      "pause": 0.5
+    },
+    {
+      "id": "c2c",
+      "text": "A new house costs one hundred thousand dollars. If yours burns, you're ruined.",
+      "pause": 0.5
+    },
+    {
+      "id": "c2d",
+      "text": "So the villagers make a deal. Everybody puts one thousand dollars into a big pot, every year.",
+      "pause": 0.5
+    },
+    {
+      "id": "c2e",
+      "text": "One hundred houses, times one thousand dollars. That's one hundred thousand dollars in the pot. Enough to rebuild one house.",
+      "pause": 0.5
+    },
+    {
+      "id": "c2f",
+      "text": "Whoever's house burns gets the pot. Everybody else loses a thousand dollars, but sleeps well at night.",
+      "pause": 0.5
+    },
+    {
+      "id": "c2g",
+      "text": "That's insurance. You swap a small, certain cost for protection against a big, uncertain disaster.",
+      "pause": 0.5
+    },
+    {
+      "id": "c2h",
+      "text": "And here's the secret. Nobody can predict one house. But with lots of houses, the total becomes very predictable. That's called the law of large numbers.",
+      "pause": 0.5
+    },
+    {
+      "id": "c2i",
+      "text": "So Dave isn't paying for his own crash. He's chipping into the pot for whoever crashes this year.",
+      "pause": 0.9
+    },
+    {
+      "id": "c3a",
+      "chapter": "The Coffee House",
+      "text": "People have been doing this for a very long time.",
+      "pause": 0.4
+    },
+    {
+      "id": "c3b",
+      "text": "In sixteen eighty eight, in London, a man named Edward Lloyd ran a coffee house on Tower Street, near the river.",
+      "pause": 0.5
+    },
+    {
+      "id": "c3c",
+      "text": "Ship captains and merchants loved it. Lloyd shared news about ships, storms, and pirates. Very useful, if your ship full of cargo is out at sea.",
+      "pause": 0.5
+    },
+    {
+      "id": "c3d",
+      "text": "A ship owner would write his voyage on a piece of paper. Then rich people in the room would sign their names below it, each taking a slice of the risk.",
+      "pause": 0.5
+    },
+    {
+      "id": "c3e",
+      "text": "They wrote their names under the risk. That's why, even today, they're called underwriters.",
+      "pause": 0.5
+    },
+    {
+      "id": "c3f",
+      "text": "That coffee house grew into Lloyd's of London, one of the most famous insurance markets in the world. All thanks to coffee and gossip.",
+      "pause": 0.9
+    },
+    {
+      "id": "c4a",
+      "chapter": "Premiums vs Claims",
+      "text": "Now, a real insurance company is like the village pot. But run as a business.",
+      "pause": 0.4
+    },
+    {
+      "id": "c4b",
+      "text": "The money customers pay in is called premiums. The money paid out for accidents is called claims.",
+      "pause": 0.5
+    },
+    {
+      "id": "c4c",
+      "text": "On top of claims, the company has costs. Offices, staff, and ads with funny animals.",
+      "pause": 0.5
+    },
+    {
+      "id": "c4d",
+      "text": "So insurers watch one magic number. The combined ratio. Claims plus costs, divided by premiums.",
+      "pause": 0.5
+    },
+    {
+      "id": "c4e",
+      "text": "Below one hundred percent, they made a profit on insurance. Above one hundred, they lost money on it.",
+      "pause": 0.5
+    },
+    {
+      "id": "c4f",
+      "text": "In twenty twenty four, American home and car insurers were at about ninety seven. In twenty twenty five, about ninety three. So out of every hundred dollars of premiums, about seven dollars was left over as profit.",
+      "pause": 0.5
+    },
+    {
+      "id": "c4g",
+      "text": "Seven percent. That doesn't sound like much. But that's only the first way they make money.",
+      "pause": 0.9
+    },
+    {
+      "id": "c5a",
+      "chapter": "The Float",
+      "text": "Here's the second way. And it's the big one.",
+      "pause": 0.4
+    },
+    {
+      "id": "c5b",
+      "text": "Dave pays his premium today. But if he crashes, the claim comes months later. Or years later. Or never.",
+      "pause": 0.5
+    },
+    {
+      "id": "c5c",
+      "text": "In between, the money just sits there. And the insurer gets to invest it. In bonds, in stocks, even in whole companies.",
+      "pause": 0.5
+    },
+    {
+      "id": "c5d",
+      "text": "That pile of waiting money is called the float.",
+      "pause": 0.5
+    },
+    {
+      "id": "c5e",
+      "text": "Imagine a friend gives you a hundred dollars and says: hold this, I might need it back someday. Meanwhile, you invest it, and you keep the profits.",
+      "pause": 0.5
+    },
+    {
+      "id": "c5f",
+      "text": "Most people think insurers get rich by refusing to pay. Mostly? Nope. The biggest insurers get rich from the float.",
+      "pause": 0.5
+    },
+    {
+      "id": "c5g",
+      "text": "Warren Buffett understood this better than anyone. In nineteen sixty seven, his company, Berkshire Hathaway, bought a small insurer called National Indemnity.",
+      "pause": 0.5
+    },
+    {
+      "id": "c5h",
+      "text": "He took the float and invested it. Then he bought more insurers, including the car insurer GEICO.",
+      "pause": 0.5
+    },
+    {
+      "id": "c5i",
+      "text": "At the end of twenty twenty five, Berkshire's float was one hundred seventy six billion dollars. Ten years earlier, it was eighty eight billion. It doubled.",
+      "pause": 0.5
+    },
+    {
+      "id": "c5j",
+      "text": "And their combined ratio in twenty twenty five was about eighty seven percent. So they made a profit on the insurance, and got to invest one hundred seventy six billion dollars for free.",
+      "pause": 0.5
+    },
+    {
+      "id": "c5k",
+      "text": "That's like getting paid to borrow money. Even our duck from the very first video is jealous.",
+      "pause": 0.9
+    },
+    {
+      "id": "c6a",
+      "chapter": "Why Premiums Rise",
+      "text": "Okay. So why does Dave's bill keep going up?",
+      "pause": 0.4
+    },
+    {
+      "id": "c6b",
+      "text": "Reason one. Cars got expensive to fix. A small bump used to mean a new bumper. Now the bumper is full of sensors and cameras.",
+      "pause": 0.5
+    },
+    {
+      "id": "c6c",
+      "text": "Reason two. Hospital bills and lawsuits after accidents keep getting bigger.",
+      "pause": 0.5
+    },
+    {
+      "id": "c6d",
+      "text": "Reason three. More storms, floods, and wildfires, hitting more expensive houses.",
+      "pause": 0.5
+    },
+    {
+      "id": "c6e",
+      "text": "Reason four. Fraud. Fake crashes and fake injuries. Across all kinds of insurance, fraud costs Americans about three hundred billion dollars a year. And honest customers pay for it.",
+      "pause": 0.5
+    },
+    {
+      "id": "c6f",
+      "text": "When claims rise, the pot has to grow. In twenty twenty three, car insurance prices in America jumped about twenty percent in one year. The biggest jump since nineteen seventy six.",
+      "pause": 0.5
+    },
+    {
+      "id": "c6g",
+      "text": "The good news? Lately, prices have cooled. By August twenty twenty six, car insurance prices were about five percent lower than a year before.",
+      "pause": 0.5
+    },
+    {
+      "id": "c6h",
+      "text": "Insurance prices follow claims. If the pot keeps getting emptied, everybody pays more to refill it.",
+      "pause": 0.9
+    },
+    {
+      "id": "c7a",
+      "chapter": "The Fine Print",
+      "text": "Now, two things that confuse everyone. First: the deductible.",
+      "pause": 0.4
+    },
+    {
+      "id": "c7b",
+      "text": "The deductible is the part of the damage you pay yourself, before insurance kicks in.",
+      "pause": 0.5
+    },
+    {
+      "id": "c7c",
+      "text": "Say Dave has a five hundred dollar deductible. He scratches his car. The repair costs eight hundred dollars. Dave pays five hundred. Insurance pays three hundred.",
+      "pause": 0.5
+    },
+    {
+      "id": "c7d",
+      "text": "Why? Because it stops people from claiming every tiny scratch. Tiny claims are expensive to handle. So a higher deductible usually means a lower premium.",
+      "pause": 0.5
+    },
+    {
+      "id": "c7e",
+      "text": "Second: denied claims. Why can an insurer say no?",
+      "pause": 0.5
+    },
+    {
+      "id": "c7f",
+      "text": "Sometimes the damage just isn't covered. For example, a standard home policy in America usually doesn't cover floods. That's a separate policy.",
+      "pause": 0.5
+    },
+    {
+      "id": "c7g",
+      "text": "Sometimes the information was wrong. If Dave says he parks in a garage, but his car actually lives on the street, that's a problem.",
+      "pause": 0.5
+    },
+    {
+      "id": "c7h",
+      "text": "And sometimes the claim is reported too late, or it looks like fraud.",
+      "pause": 0.5
+    },
+    {
+      "id": "c7i",
+      "text": "The rules are all in the contract. The fine print. And remember, the raccoon loves fine print. So read yours before you need it.",
+      "pause": 0.9
+    },
+    {
+      "id": "c8a",
+      "chapter": "How Dave Pays Less",
+      "text": "So what can Dave do? Education, not advice.",
+      "pause": 0.4
+    },
+    {
+      "id": "c8b",
+      "text": "One. Shop around. Get quotes from at least three insurers, every year or two. The same driver can get very different prices.",
+      "pause": 0.5
+    },
+    {
+      "id": "c8c",
+      "text": "Two. Think about your deductible. The Insurance Information Institute says going from a two hundred to a five hundred dollar deductible can cut collision and comprehensive costs by fifteen to thirty percent. Going to one thousand can save forty percent or more.",
+      "pause": 0.5
+    },
+    {
+      "id": "c8d",
+      "text": "Three. But only raise your deductible if you can actually pay it. That's why you need an emergency fund. Money set aside for surprises.",
+      "pause": 0.5
+    },
+    {
+      "id": "c8e",
+      "text": "Four. Insurance is for disasters you can't afford. Small losses are often cheaper to pay yourself.",
+      "pause": 0.5
+    },
+    {
+      "id": "c8f",
+      "text": "So Dave shops around, picks a higher deductible, and builds an emergency fund. His bill drops. And his funny blue car is still covered.",
+      "pause": 0.9
+    },
+    {
+      "id": "c9a",
+      "chapter": "Now You Know",
+      "text": "So let's recap.",
+      "pause": 0.4
+    },
+    {
+      "id": "c9b",
+      "text": "One. Insurance is a pot. Many people pay a little, so the unlucky few don't lose everything.",
+      "pause": 0.5
+    },
+    {
+      "id": "c9c",
+      "text": "Two. Insurers make money twice. A small profit on premiums, and a big profit from investing the float.",
+      "pause": 0.5
+    },
+    {
+      "id": "c9d",
+      "text": "Three. Your price follows claims. Shop around, and pick a deductible your emergency fund can handle.",
+      "pause": 0.6
+    },
+    {
+      "id": "c9e",
+      "text": "Next time, Dave hears a scary word on the news. Recession. What actually happens in a recession? And who feels it first?",
+      "pause": 0.4
+    },
+    {
+      "id": "c9f",
+      "text": "Subscribe, so Dave can keep explaining money. It's the only policy with a zero dollar premium.",
+      "pause": 1.4
+    }
   ],
   "youtube": {
     "title": "How Insurance Companies Make Money (The Float Explained)",
     "alt_titles": [
       "Why Insurance Companies Make Money Even When They Pay Claims",
-      "Buffett's $176 Billion Secret: How Insurance Really Works"
+      "How Insurance Works: Buffett's $176 Billion Secret"
     ],
-    "hook": "How do insurance companies make money? Twice: a small profit on premiums, and a huge one from investing the float. Berkshire Hathaway holds $176 billion of float and still made an underwriting profit in 2025. Dave buys car insurance for his funny blue car, and we explain risk pooling with a village pot, premiums vs claims, the combined ratio, the float and Warren Buffett, why premiums rise, deductibles, why claims get denied, and how Lloyd's began in a 1688 coffee house.",
+    "hook": "How do insurance companies make money? Twice: a small profit on premiums, and a giant one from investing your money first. Dave buys car insurance for his funny blue car and wonders where his $1,500 a year goes. We explain risk pooling with a simple village pot, premiums vs claims and the combined ratio, and the float: the money insurers invest before claims are paid. Berkshire Hathaway's float hit $176 billion in 2025 while it still made an underwriting profit. Plus why car insurance premiums rise, how deductibles work, why insurers can deny claims, and how Lloyd's of London began in a 1688 coffee house.",
     "tags": [
       "how insurance companies make money",
       "insurance float explained",
+      "how insurance works",
       "combined ratio",
       "warren buffett insurance float",
       "why is car insurance so expensive",
-      "how insurance works",
       "insurance deductible explained",
       "why insurance claims get denied",
       "lloyds of london history",
-      "personal finance for beginners",
+      "money explained simply",
       "dave explains money"
     ],
-    "hashtags": ["#insurance", "#warrenbuffett", "#money"],
-    "pinned": "How much is your deductible? Under $500, $500, or $1,000+? Tell us below."
+    "hashtags": [
+      "#insurance",
+      "#warrenbuffett",
+      "#money"
+    ],
+    "pinned": "How much is your car insurance deductible? Under $500, $500, or $1,000+? Tell us below."
   }
 }

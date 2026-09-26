@@ -18,85 +18,396 @@
     "BLS Employment Situation, August 2026: unemployment rate 4.1% (released Sept 4, 2026) — context only"
   ],
   "beats": [
-    {"id": "o1", "text": "Dave sells couches at a big furniture store. Business is good. But this morning, his boss said one scary word. Recession.", "pause": 0.3},
-    {"id": "o2", "text": "Dave has heard that word before. Now look at this. In twenty twenty, America lost about twenty two million jobs. In just two months.", "pause": 0.3},
-    {"id": "o3", "text": "The unemployment rate jumped to fourteen point eight percent. The highest since records began in nineteen forty eight.", "pause": 0.35},
-    {"id": "o4", "text": "And wait, it gets weirder. Most people don't even know what a recession actually is.", "pause": 0.3},
-    {"id": "o5", "text": "Spoiler: it's not just two bad quarters.", "pause": 0.3},
-    {"id": "o6", "text": "Today: what a recession really is, the chain reaction that spreads it, and how Dave can get ready before it hits.", "pause": 0.6},
-
-    {"id": "c1a", "chapter": "What Is a Recession?", "text": "So what is a recession? Let's start simple.", "pause": 0.4},
-    {"id": "c1b", "text": "The economy is everything we all make and buy. Couches, haircuts, pizzas, apps. Add it all up for a whole country, and you get a number called G D P.", "pause": 0.5},
-    {"id": "c1c", "text": "When G D P grows, the economy is healthy. When it shrinks, something is wrong.", "pause": 0.5},
-    {"id": "c1d", "text": "Most people think a recession means G D P shrinks for two quarters in a row. That's six months. Nope. That's just a rule of thumb.", "pause": 0.5},
-    {"id": "c1e", "text": "In America, the official call is made by a group of economists at a research center called the N B E R. They say a recession is a big drop in economic activity, spread across the economy, lasting more than a few months.", "pause": 0.5},
-    {"id": "c1f", "text": "They look at many things. Jobs. Income. Spending. Factory output. Not just G D P.", "pause": 0.5},
-    {"id": "c1g", "text": "Here's proof. In twenty twenty two, G D P shrank two quarters in a row. But unemployment stayed at just three point six percent. People kept working. So the N B E R said: not a recession.", "pause": 0.5},
-    {"id": "c1h", "text": "Think of it like a doctor. One high temperature doesn't mean you're sick. The doctor checks everything.", "pause": 0.9},
-
-    {"id": "c2a", "chapter": "The Chain Reaction", "text": "So how does a recession actually spread? It's a chain reaction.", "pause": 0.4},
-    {"id": "c2b", "text": "Here's the secret. One person's spending is another person's paycheck.", "pause": 0.5},
-    {"id": "c2c", "text": "When Dave's neighbor Bob buys a couch, that money pays Dave's salary. Dave spends it on pizza. And that pays the pizza guy.", "pause": 0.5},
-    {"id": "c2d", "text": "Now imagine something scares people. Prices jump, or a bank fails, or a virus appears. Bob gets nervous. He keeps his old couch.", "pause": 0.5},
-    {"id": "c2e", "text": "The store sells fewer couches. So the boss cuts hours. Or lets someone go.", "pause": 0.5},
-    {"id": "c2f", "text": "Now that worker has less money. So they buy less pizza. So the pizza shop lets someone go too.", "pause": 0.5},
-    {"id": "c2g", "text": "It's like a line of dominoes. Less spending leads to layoffs. Layoffs lead to less spending. And round and round it goes.", "pause": 0.5},
-    {"id": "c2h", "text": "And big stuff falls first. Cars, houses, and yes, couches. When people get scared, a new couch is the first thing they skip. Gulp.", "pause": 0.9},
-
-    {"id": "c3a", "chapter": "2008: The Housing Crash", "text": "Let's look at two real recessions. First, two thousand eight.", "pause": 0.4},
-    {"id": "c3b", "text": "In the early two thousands, banks gave home loans to almost anyone. Even people who couldn't really afford them.", "pause": 0.5},
-    {"id": "c3c", "text": "Everyone believed house prices only go up. So people borrowed more and more.", "pause": 0.5},
-    {"id": "c3d", "text": "Then prices started falling. Across America, home prices dropped by about twenty seven percent. Many people owed more than their house was worth. They stopped paying.", "pause": 0.5},
-    {"id": "c3e", "text": "And those bad loans were packed inside investments owned by banks all over the world. It was like a Jenga tower. Pull out one block, and the whole thing wobbles.", "pause": 0.5},
-    {"id": "c3f", "text": "Big banks got into deep trouble. One giant, Lehman Brothers, collapsed in September two thousand eight.", "pause": 0.5},
-    {"id": "c3g", "text": "The recession lasted eighteen months. America lost about eight point seven million jobs. And unemployment peaked at ten percent, in October two thousand nine.", "pause": 0.9},
-
-    {"id": "c4a", "chapter": "2020: The Pause Button", "text": "Now twenty twenty. This one was totally different.", "pause": 0.4},
-    {"id": "c4b", "text": "No bad loans. No bubble. Just a virus. To slow it down, shops, restaurants, and offices closed almost overnight.", "pause": 0.5},
-    {"id": "c4c", "text": "It was like someone hit the pause button on the whole economy.", "pause": 0.5},
-    {"id": "c4d", "text": "In March and April alone, about twenty two million jobs disappeared. Restaurants and hotels were hit hardest.", "pause": 0.5},
-    {"id": "c4e", "text": "Unemployment shot to fourteen point eight percent in April. Way higher than in two thousand nine.", "pause": 0.5},
-    {"id": "c4f", "text": "But here's the surprise. It was also the shortest recession in American history. Just two months. From February to April.", "pause": 0.5},
-    {"id": "c4g", "text": "Deep, but quick. Like a car that slams the brakes, then speeds off again.", "pause": 0.9},
-
-    {"id": "c5a", "chapter": "Who Comes to the Rescue?", "text": "So when the dominoes start falling, who tries to stop them? Two teams.", "pause": 0.4},
-    {"id": "c5b", "text": "Team one: the Federal Reserve. America's central bank.", "pause": 0.5},
-    {"id": "c5c", "text": "The Fed cuts interest rates, so borrowing gets cheaper. In both two thousand eight and twenty twenty, it cut rates almost to zero.", "pause": 0.5},
-    {"id": "c5d", "text": "Cheaper loans mean people and companies borrow and spend again. The dominoes start standing back up.", "pause": 0.5},
-    {"id": "c5e", "text": "The Fed can also create new money to buy bonds. Remember the duck? Yes. Money from nothing. Quack.", "pause": 0.5},
-    {"id": "c5f", "text": "Team two: the government. It pays unemployment benefits, so people who lose their job can still buy food. And pizza.", "pause": 0.5},
-    {"id": "c5g", "text": "It can also spend big. In two thousand nine, Congress passed a stimulus plan of about eight hundred billion dollars. In twenty twenty, the CARES Act was about two point two trillion. Many families got checks in the mail.", "pause": 0.5},
-    {"id": "c5h", "text": "Critics say this adds to the national debt, and can push prices up later. Supporters say doing nothing would hurt far more. That's a political question. Now you know the tools.", "pause": 0.9},
-
-    {"id": "c6a", "chapter": "How Long Do They Last?", "text": "Here's the good news Dave needs to hear. Recessions end.", "pause": 0.4},
-    {"id": "c6b", "text": "Since the end of World War Two, America has had twelve recessions. On average, each one lasted about ten months.", "pause": 0.5},
-    {"id": "c6c", "text": "And the good times in between? On average, more than five years.", "pause": 0.5},
-    {"id": "c6d", "text": "Think of it like weather. Storms are real, and they hurt. But most of the time, it's not storming.", "pause": 0.5},
-    {"id": "c6e", "text": "The big exception was the Great Depression. It started in nineteen twenty nine, and the economy shrank for forty three months straight.", "pause": 0.5},
-    {"id": "c6f", "text": "By nineteen thirty three, about one in four American workers had no job.", "pause": 0.5},
-    {"id": "c6g", "text": "Back then, there was no unemployment insurance, and no deposit insurance for bank accounts. Thousands of banks failed. Many of today's safety nets were built because of that disaster.", "pause": 0.9},
-
-    {"id": "c7a", "chapter": "Warning Signs", "text": "So can we see a recession coming? Sometimes. Economists watch for warning signs.", "pause": 0.4},
-    {"id": "c7b", "text": "The most famous one has a scary name. The inverted yield curve. Don't worry, it's simple.", "pause": 0.5},
-    {"id": "c7c", "text": "Normally, if you lend money for a long time, you get paid more interest. Lending to the government for ten years should pay more than lending for three months. Makes sense. You're waiting longer.", "pause": 0.5},
-    {"id": "c7d", "text": "But sometimes, it flips. Short loans pay more than long ones. That's an inverted yield curve.", "pause": 0.5},
-    {"id": "c7e", "text": "It's like investors saying: we expect trouble ahead, and we expect interest rates to be cut. So let's lock in today's rate for ten years.", "pause": 0.5},
-    {"id": "c7f", "text": "Since the late nineteen sixties, this curve flipped before every American recession.", "pause": 0.5},
-    {"id": "c7g", "text": "But it's not perfect. It flipped in twenty twenty two and stayed upside down for about two years. And no recession came. It's a smoke alarm, not a crystal ball.", "pause": 0.5},
-    {"id": "c7h", "text": "Other signs: more people asking for unemployment benefits, companies cutting hours, and big purchases like couches slowing down. Dave, take notes.", "pause": 0.9},
-
-    {"id": "c8a", "chapter": "How Dave Gets Ready", "text": "So what can Dave do? Here are some ideas. Education, not advice.", "pause": 0.4},
-    {"id": "c8b", "text": "One. Build an emergency fund. Many experts suggest three to six months of living costs, saved in a safe account. It's a cushion for a hard landing.", "pause": 0.5},
-    {"id": "c8c", "text": "Two. Keep learning skills. In a recession, people with skills that many companies need usually find work faster. Dave is learning online sales, just in case.", "pause": 0.5},
-    {"id": "c8d", "text": "Three. Don't panic sell. In the two thousand eight crash, the S and P five hundred fell about fifty seven percent. People who sold at the bottom locked in the loss. People who waited got back to even by twenty thirteen.", "pause": 0.5},
-    {"id": "c8e", "text": "And four. Don't pile up debt when times feel shaky. A job loss plus big credit card bills is a scary mix. Remember the raccoon?", "pause": 0.5},
-    {"id": "c8f", "text": "As for Dave? The store cut his hours for a while. But thanks to his emergency fund, he paid his rent, stayed calm, and kept his job.", "pause": 0.9},
-
-    {"id": "c9a", "chapter": "Now You Know", "text": "So let's recap.", "pause": 0.4},
-    {"id": "c9b", "text": "One. A recession is a big, broad drop in the economy that lasts months. Not just two bad quarters.", "pause": 0.5},
-    {"id": "c9c", "text": "Two. It spreads like dominoes. Less spending means layoffs, and layoffs mean less spending.", "pause": 0.5},
-    {"id": "c9d", "text": "Three. Recessions end, usually in about ten months. So build a cushion, keep learning, and don't panic.", "pause": 0.6},
-    {"id": "c9e", "text": "Next time, Dave discovers a kind of money with no bank, no boss, and no printer. How Bitcoin actually works.", "pause": 0.4},
-    {"id": "c9f", "text": "Subscribe, so Dave can keep explaining money. It's free, and it's recession proof.", "pause": 1.4}
-  ]
+    {
+      "id": "o1",
+      "text": "Dave sells couches at a big furniture store. Business is good. But this morning, his boss said one scary word. Recession.",
+      "pause": 0.3
+    },
+    {
+      "id": "o2",
+      "text": "Dave has heard that word before. Now look at this. In twenty twenty, America lost about twenty two million jobs. In just two months.",
+      "pause": 0.3
+    },
+    {
+      "id": "o3",
+      "text": "The unemployment rate jumped to fourteen point eight percent. The highest since records began in nineteen forty eight.",
+      "pause": 0.35
+    },
+    {
+      "id": "o4",
+      "text": "And wait, it gets weirder. Most people don't even know what a recession actually is.",
+      "pause": 0.3
+    },
+    {
+      "id": "o5",
+      "text": "Spoiler: it's not just two bad quarters.",
+      "pause": 0.3
+    },
+    {
+      "id": "o6",
+      "text": "Today: what a recession really is, the chain reaction that spreads it, and how Dave can get ready before it hits.",
+      "pause": 0.6
+    },
+    {
+      "id": "c1a",
+      "chapter": "What Is a Recession?",
+      "text": "So what is a recession? Let's start simple.",
+      "pause": 0.4
+    },
+    {
+      "id": "c1b",
+      "text": "The economy is everything we all make and buy. Couches, haircuts, pizzas, apps. Add it all up for a whole country, and you get a number called G D P.",
+      "pause": 0.5
+    },
+    {
+      "id": "c1c",
+      "text": "When G D P grows, the economy is healthy. When it shrinks, something is wrong.",
+      "pause": 0.5
+    },
+    {
+      "id": "c1d",
+      "text": "Most people think a recession means G D P shrinks for two quarters in a row. That's six months. Nope. That's just a rule of thumb.",
+      "pause": 0.5
+    },
+    {
+      "id": "c1e",
+      "text": "In America, the official call is made by a group of economists at a research center called the N B E R. They say a recession is a big drop in economic activity, spread across the economy, lasting more than a few months.",
+      "pause": 0.5
+    },
+    {
+      "id": "c1f",
+      "text": "They look at many things. Jobs. Income. Spending. Factory output. Not just G D P.",
+      "pause": 0.5
+    },
+    {
+      "id": "c1g",
+      "text": "Here's proof. In twenty twenty two, G D P shrank two quarters in a row. But unemployment stayed at just three point six percent. People kept working. So the N B E R said: not a recession.",
+      "pause": 0.5
+    },
+    {
+      "id": "c1h",
+      "text": "Think of it like a doctor. One high temperature doesn't mean you're sick. The doctor checks everything.",
+      "pause": 0.9
+    },
+    {
+      "id": "c2a",
+      "chapter": "The Chain Reaction",
+      "text": "So how does a recession actually spread? It's a chain reaction.",
+      "pause": 0.4
+    },
+    {
+      "id": "c2b",
+      "text": "Here's the secret. One person's spending is another person's paycheck.",
+      "pause": 0.5
+    },
+    {
+      "id": "c2c",
+      "text": "When Dave's neighbor Bob buys a couch, that money pays Dave's salary. Dave spends it on pizza. And that pays the pizza guy.",
+      "pause": 0.5
+    },
+    {
+      "id": "c2d",
+      "text": "Now imagine something scares people. Prices jump, or a bank fails, or a virus appears. Bob gets nervous. He keeps his old couch.",
+      "pause": 0.5
+    },
+    {
+      "id": "c2e",
+      "text": "The store sells fewer couches. So the boss cuts hours. Or lets someone go.",
+      "pause": 0.5
+    },
+    {
+      "id": "c2f",
+      "text": "Now that worker has less money. So they buy less pizza. So the pizza shop lets someone go too.",
+      "pause": 0.5
+    },
+    {
+      "id": "c2g",
+      "text": "It's like a line of dominoes. Less spending leads to layoffs. Layoffs lead to less spending. And round and round it goes.",
+      "pause": 0.5
+    },
+    {
+      "id": "c2h",
+      "text": "And big stuff falls first. Cars, houses, and yes, couches. When people get scared, a new couch is the first thing they skip. Gulp.",
+      "pause": 0.9
+    },
+    {
+      "id": "c3a",
+      "chapter": "2008: The Housing Crash",
+      "text": "Let's look at two real recessions. First, two thousand eight.",
+      "pause": 0.4
+    },
+    {
+      "id": "c3b",
+      "text": "In the early two thousands, banks gave home loans to almost anyone. Even people who couldn't really afford them.",
+      "pause": 0.5
+    },
+    {
+      "id": "c3c",
+      "text": "Everyone believed house prices only go up. So people borrowed more and more.",
+      "pause": 0.5
+    },
+    {
+      "id": "c3d",
+      "text": "Then prices started falling. Across America, home prices dropped by about twenty seven percent. Many people owed more than their house was worth. They stopped paying.",
+      "pause": 0.5
+    },
+    {
+      "id": "c3e",
+      "text": "And those bad loans were packed inside investments owned by banks all over the world. It was like a Jenga tower. Pull out one block, and the whole thing wobbles.",
+      "pause": 0.5
+    },
+    {
+      "id": "c3f",
+      "text": "Big banks got into deep trouble. One giant, Lehman Brothers, collapsed in September two thousand eight.",
+      "pause": 0.5
+    },
+    {
+      "id": "c3g",
+      "text": "The recession lasted eighteen months. America lost about eight point seven million jobs. And unemployment peaked at ten percent, in October two thousand nine.",
+      "pause": 0.9
+    },
+    {
+      "id": "c4a",
+      "chapter": "2020: The Pause Button",
+      "text": "Now twenty twenty. This one was totally different.",
+      "pause": 0.4
+    },
+    {
+      "id": "c4b",
+      "text": "No bad loans. No bubble. Just a virus. To slow it down, shops, restaurants, and offices closed almost overnight.",
+      "pause": 0.5
+    },
+    {
+      "id": "c4c",
+      "text": "It was like someone hit the pause button on the whole economy.",
+      "pause": 0.5
+    },
+    {
+      "id": "c4d",
+      "text": "In March and April alone, about twenty two million jobs disappeared. Restaurants and hotels were hit hardest.",
+      "pause": 0.5
+    },
+    {
+      "id": "c4e",
+      "text": "Unemployment shot to fourteen point eight percent in April. Way higher than in two thousand nine.",
+      "pause": 0.5
+    },
+    {
+      "id": "c4f",
+      "text": "But here's the surprise. It was also the shortest recession in American history. Just two months. From February to April.",
+      "pause": 0.5
+    },
+    {
+      "id": "c4g",
+      "text": "Deep, but quick. Like a car that slams the brakes, then speeds off again.",
+      "pause": 0.9
+    },
+    {
+      "id": "c5a",
+      "chapter": "Who Comes to the Rescue?",
+      "text": "So when the dominoes start falling, who tries to stop them? Two teams.",
+      "pause": 0.4
+    },
+    {
+      "id": "c5b",
+      "text": "Team one: the Federal Reserve. America's central bank.",
+      "pause": 0.5
+    },
+    {
+      "id": "c5c",
+      "text": "The Fed cuts interest rates, so borrowing gets cheaper. In both two thousand eight and twenty twenty, it cut rates almost to zero.",
+      "pause": 0.5
+    },
+    {
+      "id": "c5d",
+      "text": "Cheaper loans mean people and companies borrow and spend again. The dominoes start standing back up.",
+      "pause": 0.5
+    },
+    {
+      "id": "c5e",
+      "text": "The Fed can also create new money to buy bonds. Remember the duck? Yes. Money from nothing. Quack.",
+      "pause": 0.5
+    },
+    {
+      "id": "c5f",
+      "text": "Team two: the government. It pays unemployment benefits, so people who lose their job can still buy food. And pizza.",
+      "pause": 0.5
+    },
+    {
+      "id": "c5g",
+      "text": "It can also spend big. In two thousand nine, Congress passed a stimulus plan of about eight hundred billion dollars. In twenty twenty, the CARES Act was about two point two trillion. Many families got checks in the mail.",
+      "pause": 0.5
+    },
+    {
+      "id": "c5h",
+      "text": "Critics say this adds to the national debt, and can push prices up later. Supporters say doing nothing would hurt far more. That's a political question. Now you know the tools.",
+      "pause": 0.9
+    },
+    {
+      "id": "c6a",
+      "chapter": "How Long Do They Last?",
+      "text": "Here's the good news Dave needs to hear. Recessions end.",
+      "pause": 0.4
+    },
+    {
+      "id": "c6b",
+      "text": "Since the end of World War Two, America has had twelve recessions. On average, each one lasted about ten months.",
+      "pause": 0.5
+    },
+    {
+      "id": "c6c",
+      "text": "And the good times in between? On average, more than five years.",
+      "pause": 0.5
+    },
+    {
+      "id": "c6d",
+      "text": "Think of it like weather. Storms are real, and they hurt. But most of the time, it's not storming.",
+      "pause": 0.5
+    },
+    {
+      "id": "c6e",
+      "text": "The big exception was the Great Depression. It started in nineteen twenty nine, and the economy shrank for forty three months straight.",
+      "pause": 0.5
+    },
+    {
+      "id": "c6f",
+      "text": "By nineteen thirty three, about one in four American workers had no job.",
+      "pause": 0.5
+    },
+    {
+      "id": "c6g",
+      "text": "Back then, there was no unemployment insurance, and no deposit insurance for bank accounts. Thousands of banks failed. Many of today's safety nets were built because of that disaster.",
+      "pause": 0.9
+    },
+    {
+      "id": "c7a",
+      "chapter": "Warning Signs",
+      "text": "So can we see a recession coming? Sometimes. Economists watch for warning signs.",
+      "pause": 0.4
+    },
+    {
+      "id": "c7b",
+      "text": "The most famous one has a scary name. The inverted yield curve. Don't worry, it's simple.",
+      "pause": 0.5
+    },
+    {
+      "id": "c7c",
+      "text": "Normally, if you lend money for a long time, you get paid more interest. Lending to the government for ten years should pay more than lending for three months. Makes sense. You're waiting longer.",
+      "pause": 0.5
+    },
+    {
+      "id": "c7d",
+      "text": "But sometimes, it flips. Short loans pay more than long ones. That's an inverted yield curve.",
+      "pause": 0.5
+    },
+    {
+      "id": "c7e",
+      "text": "It's like investors saying: we expect trouble ahead, and we expect interest rates to be cut. So let's lock in today's rate for ten years.",
+      "pause": 0.5
+    },
+    {
+      "id": "c7f",
+      "text": "Since the late nineteen sixties, this curve flipped before every American recession.",
+      "pause": 0.5
+    },
+    {
+      "id": "c7g",
+      "text": "But it's not perfect. It flipped in twenty twenty two and stayed upside down for about two years. And no recession came. It's a smoke alarm, not a crystal ball.",
+      "pause": 0.5
+    },
+    {
+      "id": "c7h",
+      "text": "Other signs: more people asking for unemployment benefits, companies cutting hours, and big purchases like couches slowing down. Dave, take notes.",
+      "pause": 0.9
+    },
+    {
+      "id": "c8a",
+      "chapter": "How Dave Gets Ready",
+      "text": "So what can Dave do? Here are some ideas. Education, not advice.",
+      "pause": 0.4
+    },
+    {
+      "id": "c8b",
+      "text": "One. Build an emergency fund. Many experts suggest three to six months of living costs, saved in a safe account. It's a cushion for a hard landing.",
+      "pause": 0.5
+    },
+    {
+      "id": "c8c",
+      "text": "Two. Keep learning skills. In a recession, people with skills that many companies need usually find work faster. Dave is learning online sales, just in case.",
+      "pause": 0.5
+    },
+    {
+      "id": "c8d",
+      "text": "Three. Don't panic sell. In the two thousand eight crash, the S and P five hundred fell about fifty seven percent. People who sold at the bottom locked in the loss. People who waited got back to even by twenty thirteen.",
+      "pause": 0.5
+    },
+    {
+      "id": "c8e",
+      "text": "And four. Don't pile up debt when times feel shaky. A job loss plus big credit card bills is a scary mix. Remember the raccoon?",
+      "pause": 0.5
+    },
+    {
+      "id": "c8f",
+      "text": "As for Dave? The store cut his hours for a while. But thanks to his emergency fund, he paid his rent, stayed calm, and kept his job.",
+      "pause": 0.9
+    },
+    {
+      "id": "c9a",
+      "chapter": "Now You Know",
+      "text": "So let's recap.",
+      "pause": 0.4
+    },
+    {
+      "id": "c9b",
+      "text": "One. A recession is a big, broad drop in the economy that lasts months. Not just two bad quarters.",
+      "pause": 0.5
+    },
+    {
+      "id": "c9c",
+      "text": "Two. It spreads like dominoes. Less spending means layoffs, and layoffs mean less spending.",
+      "pause": 0.5
+    },
+    {
+      "id": "c9d",
+      "text": "Three. Recessions end, usually in about ten months. So build a cushion, keep learning, and don't panic.",
+      "pause": 0.6
+    },
+    {
+      "id": "c9e",
+      "text": "Next time, Dave discovers a kind of money with no bank, no boss, and no printer. How Bitcoin actually works.",
+      "pause": 0.4
+    },
+    {
+      "id": "c9f",
+      "text": "Subscribe, so Dave can keep explaining money. It's free, and it's recession proof.",
+      "pause": 1.4
+    }
+  ],
+  "youtube": {
+    "title": "Recession Explained: What Actually Happens (and How Long)",
+    "alt_titles": [
+      "Why One Couch Can Start a Recession (The Domino Effect)",
+      "The 2020 Recession Lasted 2 Months. The Great Depression? 43."
+    ],
+    "hook": "What is a recession, really? It's not just two bad quarters. Here's how one drop in spending turns into layoffs, and how long it usually lasts. Dave sells couches, and his boss just said the scary word: recession. We explain the official NBER definition vs the two-quarter myth, the domino chain of spending and layoffs, the 2008 housing crash and the 2020 COVID recession with official BLS numbers, the Great Depression, what the Fed and government do, the inverted yield curve warning sign, and how to get ready.",
+    "tags": [
+      "recession explained",
+      "what is a recession",
+      "what happens in a recession",
+      "how long do recessions last",
+      "inverted yield curve explained",
+      "2008 financial crisis explained",
+      "covid recession 2020",
+      "great depression explained",
+      "how to prepare for a recession",
+      "economics for beginners",
+      "dave explains money"
+    ],
+    "hashtags": [
+      "#recession",
+      "#economy",
+      "#money"
+    ],
+    "pinned": "Do you have an emergency fund right now? Reply YES, NO, or WORKING ON IT 👇"
+  }
 }
