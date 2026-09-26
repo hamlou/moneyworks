@@ -1,0 +1,115 @@
+{
+  "id": "ep17",
+  "title": "How Casinos Always Win (The Math They Don't Show You)",
+  "sources": [
+    "Nevada Gaming Control Board, Gaming Revenue Report (Dec 2025): Las Vegas Strip gaming win ≈ $8.8B in calendar 2025 (+0.03%); Nevada statewide record ≈ $15.8B (+1.2%)",
+    "Derived: $8.8B ÷ 365 days ≈ $24.1M per day; $8.8B ÷ 8,760 hours ≈ $1.0M per hour",
+    "Nevada Gaming Control Board monthly reports 2025: Strip slot win percentage (hold) ≈ 7.2%–7.9%",
+    "American roulette: 38 pockets, single-number payout 35 to 1 (fair = 37 to 1), house edge 2/38 = 5.26% (UNLV Center for Gaming Research, Casino Math Guide)",
+    "Blackjack: ≈ 0.5% house edge with basic strategy (six decks, 3:2); a 6:5 blackjack payout adds ≈ 1.4 percentage points (UNLV Center for Gaming Research)",
+    "Clark L. et al., 'Gambling near-misses enhance motivation to gamble and recruit win-related brain circuitry', Neuron 61 (2009), University of Cambridge",
+    "Natasha Dow Schüll, 'Addiction by Design: Machine Gambling in Las Vegas' (Princeton University Press, 2012): casino design, no clocks, player tracking and comps",
+    "American Gaming Association, Commercial Gaming Revenue 2025 (Feb 2026): sports betting handle $166.94B (+11.0%), revenue $16.96B (+22.8%); online casino $10.74B (+27.6%); total $78.7B",
+    "American Gaming Association (2026): legal sports betting live in 39 states + Washington, D.C.; Murphy v. NCAA, U.S. Supreme Court (2018)",
+    "Standard sportsbook pricing (-110): risk $110 to win $100",
+    "National Council on Problem Gambling helpline: 1-800-GAMBLER"
+  ],
+  "beats": [
+    {"id": "o1", "text": "Last year, casinos on the Las Vegas Strip kept eight point eight billion dollars from gamblers.", "pause": 0.3},
+    {"id": "o2", "text": "That's about twenty four million dollars. Every single day.", "pause": 0.3},
+    {"id": "o3", "text": "Now look at Dave. He just landed in Vegas with five hundred dollars and a plan. Win.", "pause": 0.35},
+    {"id": "o4", "text": "But here's the crazy part. The casino doesn't need luck. It doesn't even need Dave to lose tonight.", "pause": 0.3},
+    {"id": "o5", "text": "It just needs Dave to keep playing.", "pause": 0.3},
+    {"id": "o6", "text": "Today: the tiny math edge hidden in every game, the law that turns it into billions, and the sneaky tricks that keep you playing.", "pause": 0.6},
+
+    {"id": "c1a", "chapter": "Dave's Big Night", "text": "Friday night. Dave walks into a giant casino. Bright lights. Ringing bells. A carpet with a very confusing pattern.", "pause": 0.4},
+    {"id": "c1b", "text": "He changes two hundred dollars into colorful plastic chips. And he sits down at the roulette table.", "pause": 0.5},
+    {"id": "c1c", "text": "First spin. He bets on red. Red! He wins. Second spin. Red again! Dave is clearly a genius.", "pause": 0.5},
+    {"id": "c1d", "text": "One hour later, Dave is up one hundred and fifty dollars. He is seriously thinking about quitting his job.", "pause": 0.5},
+    {"id": "c1e", "text": "And the casino? The casino is completely calm. Because the casino knows something Dave doesn't.", "pause": 0.5},
+    {"id": "c1f", "text": "Every game in this building has a tiny secret, built right into the math. Let's find it.", "pause": 0.9},
+
+    {"id": "c2a", "chapter": "The Roulette Secret", "text": "Let's start with roulette. An American roulette wheel has thirty eight pockets.", "pause": 0.4},
+    {"id": "c2b", "text": "Eighteen red. Eighteen black. And two green ones. Zero, and double zero.", "pause": 0.5},
+    {"id": "c2c", "text": "If Dave bets on one single number and it hits, the casino pays him thirty five to one.", "pause": 0.5},
+    {"id": "c2d", "text": "But with thirty eight pockets, a fair payout would be thirty seven to one. So the casino quietly pays a little less than fair.", "pause": 0.5},
+    {"id": "c2e", "text": "That little gap has a name. The house edge. On American roulette, it's five point two six percent.", "pause": 0.5},
+    {"id": "c2f", "text": "So for every one hundred dollars Dave bets, the casino expects to keep about five dollars and twenty six cents.", "pause": 0.5},
+    {"id": "c2g", "text": "Remember the raccoon at the toll booth, from our credit card video? Same idea. A small toll, hidden inside every single bet.", "pause": 0.9},
+
+    {"id": "c3a", "chapter": "Blackjack and Slots", "text": "Now, blackjack. This is the game with some of the best odds in the building.", "pause": 0.4},
+    {"id": "c3b", "text": "If Dave plays perfectly, following a strategy chart that math experts worked out, the house edge is only about half a percent.", "pause": 0.5},
+    {"id": "c3c", "text": "But most people don't play perfectly. They guess. They follow hunches. And every mistake makes the edge bigger.", "pause": 0.5},
+    {"id": "c3d", "text": "Some tables even pay six to five instead of three to two when you hit blackjack. That tiny change makes the house edge about four times bigger.", "pause": 0.5},
+    {"id": "c3e", "text": "Then there are the slot machines. On the Strip, slots keep around seven to eight cents of every dollar played.", "pause": 0.5},
+    {"id": "c3f", "text": "Seven cents doesn't sound like much. But a slot machine can take a new bet every few seconds. Hundreds of spins, every hour.", "pause": 0.9},
+
+    {"id": "c4a", "chapter": "The Law of Large Numbers", "text": "So how does a tiny edge become billions? Meet the law of large numbers.", "pause": 0.4},
+    {"id": "c4b", "text": "Flip a coin ten times. You might get seven heads. That's just luck.", "pause": 0.5},
+    {"id": "c4c", "text": "Now flip it a million times. You'll land extremely close to half heads, half tails. The luck averages out.", "pause": 0.5},
+    {"id": "c4d", "text": "For Dave, one night is like ten coin flips. Anything can happen. He really can win.", "pause": 0.5},
+    {"id": "c4e", "text": "But the casino isn't playing one night. It's playing millions of bets, every day, against thousands of Daves.", "pause": 0.5},
+    {"id": "c4f", "text": "Most people think the casino is hoping you lose big tonight. Nope. It doesn't care about you at all. It only cares about the average.", "pause": 0.5},
+    {"id": "c4g", "text": "And over millions of bets, that average lands right on the house edge. Dave is gambling. The casino is doing math.", "pause": 0.9},
+
+    {"id": "c5a", "chapter": "A Million Dollars an Hour", "text": "So how well does this math work? Let's check the official numbers.", "pause": 0.4},
+    {"id": "c5b", "text": "The Nevada Gaming Control Board counts every dollar. In twenty twenty five, Strip casinos kept eight point eight billion dollars from gamblers.", "pause": 0.5},
+    {"id": "c5c", "text": "Divide that by every hour in a year. That's about one million dollars. Every hour. Day and night.", "pause": 0.5},
+    {"id": "c5d", "text": "And the whole state of Nevada? A record fifteen point eight billion dollars.", "pause": 0.5},
+    {"id": "c5e", "text": "And remember, that's after paying out all the jackpots. All the lucky winners. Even Dave's wins on red.", "pause": 0.5},
+    {"id": "c5f", "text": "The winners are real. But they're paid with the losers' money. And the casino keeps its slice in the middle.", "pause": 0.9},
+
+    {"id": "c6a", "chapter": "Tricks in the Building", "text": "But math isn't the only trick. The building itself is designed to keep you playing.", "pause": 0.4},
+    {"id": "c6b", "text": "Trick one. No clocks, and often no windows. Without the sun, you lose track of time. Is it nine at night? Three in the morning? Who knows.", "pause": 0.5},
+    {"id": "c6c", "text": "Trick two. Chips instead of cash. Handing over a real hundred dollar bill hurts. Tossing a plastic chip feels like a game.", "pause": 0.5},
+    {"id": "c6d", "text": "Trick three. Free drinks. Very generous. And a little alcohol makes risky bets feel like great ideas.", "pause": 0.5},
+    {"id": "c6e", "text": "Trick four. Near misses. Two jackpot symbols line up, and the third one stops just above the line. So close!", "pause": 0.5},
+    {"id": "c6f", "text": "Scientists at Cambridge found that near misses light up the same reward areas of the brain as real wins. Your brain says: try again.", "pause": 0.5},
+    {"id": "c6g", "text": "And trick five. Loyalty cards and free comps. Free rooms. Free dinners. Nice! But comps are based on how much the casino expects you to lose. It's giving you back a small piece of your own money.", "pause": 0.9},
+
+    {"id": "c7a", "chapter": "Casino in Your Pocket", "text": "And today, you don't even need to fly to Vegas. The casino fits in your pocket.", "pause": 0.4},
+    {"id": "c7b", "text": "In twenty eighteen, the Supreme Court opened the door for states to legalize sports betting. Now it's legal in thirty nine states and Washington D C.", "pause": 0.5},
+    {"id": "c7c", "text": "In twenty twenty five, Americans bet almost one hundred and sixty seven billion dollars on sports, through legal sportsbooks.", "pause": 0.5},
+    {"id": "c7d", "text": "The sportsbooks kept almost seventeen billion dollars of it. That's up twenty three percent in just one year.", "pause": 0.5},
+    {"id": "c7e", "text": "How? A little fee called the vig. To win one hundred dollars on a typical bet, you have to risk one hundred and ten. Same raccoon. New outfit.", "pause": 0.5},
+    {"id": "c7f", "text": "And the app never closes. No drive. No dress code. Just a phone, at two in the morning, in your bed.", "pause": 0.9},
+
+    {"id": "c8a", "chapter": "How Dave Plays Smart", "text": "Back to Dave. It's three in the morning. His lucky streak is gone. He's down three hundred dollars, and he wants to win it back.", "pause": 0.4},
+    {"id": "c8b", "text": "Stop right there, Dave. Here's how people keep gambling fun, instead of expensive. Education, not advice.", "pause": 0.5},
+    {"id": "c8c", "text": "One. Treat it like paying for entertainment, like a concert ticket. Decide the price before you walk in. And leave the cards in the hotel room.", "pause": 0.5},
+    {"id": "c8d", "text": "Two. Never chase losses. The next spin doesn't know you lost the last one. The edge stays exactly the same.", "pause": 0.5},
+    {"id": "c8e", "text": "Three. Set an alarm on your phone. The casino won't show you a clock, so bring your own.", "pause": 0.5},
+    {"id": "c8f", "text": "Four. If it stops being fun, talk to someone. In the U S, you can call one eight hundred gambler, any time.", "pause": 0.5},
+    {"id": "c8g", "text": "So Dave walked away with the two hundred dollars he had left. He called it the price of a very loud show.", "pause": 0.9},
+
+    {"id": "c9a", "chapter": "Now You Know", "text": "So let's recap.", "pause": 0.4},
+    {"id": "c9b", "text": "One. Every casino game has a house edge. A small toll, built right into the math.", "pause": 0.5},
+    {"id": "c9c", "text": "Two. The law of large numbers turns that small edge into billions. You might win tonight. The casino wins over millions of bets.", "pause": 0.5},
+    {"id": "c9d", "text": "Three. No clocks, chips, free drinks, near misses and betting apps are all designed to keep you playing longer.", "pause": 0.6},
+    {"id": "c9e", "text": "Next time, Dave discovers something strange. Insurance companies pay out billions in claims every year. And they still make a fortune. How?", "pause": 0.4},
+    {"id": "c9f", "text": "Subscribe, so Dave can keep explaining money. Unlike roulette, the odds here are in your favor.", "pause": 1.4}
+  ],
+  "youtube": {
+    "title": "How Casinos Always Win (The Math They Don't Show You)",
+    "alt_titles": [
+      "Why the House Always Wins: Casino Math Explained",
+      "Las Vegas Makes $1 Million an Hour. Here's How."
+    ],
+    "hook": "How do casinos always win? Las Vegas Strip casinos kept $8.8 billion from gamblers in 2025, about $1 million every hour. Dave flies to Vegas with $500 and a plan: win. We explain the house edge on roulette, blackjack and slots, the law of large numbers, the psychology tricks (no clocks, chips, free drinks, near misses, comps), and the boom in sports betting apps.",
+    "tags": [
+      "how casinos make money",
+      "house edge explained",
+      "why the house always wins",
+      "law of large numbers",
+      "roulette odds explained",
+      "blackjack house edge",
+      "slot machine near miss",
+      "las vegas casino revenue",
+      "sports betting explained",
+      "money explained simply",
+      "dave explains money"
+    ],
+    "hashtags": ["#casino", "#lasvegas", "#money"],
+    "pinned": "Have you ever walked out of a casino with MORE money than you walked in with? YES or NO 👇"
+  }
+}

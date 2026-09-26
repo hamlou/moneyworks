@@ -1,0 +1,132 @@
+{
+  "id": "ep20",
+  "title": "How Bitcoin Actually Works (Explained Simply)",
+  "sources": [
+    "Satoshi Nakamoto, 'Bitcoin: A Peer-to-Peer Electronic Cash System' (whitepaper, published Oct 31, 2008, 9 pages); genesis block mined Jan 3, 2009",
+    "Bitcoin Pizza Day: Laszlo Hanyecz paid 10,000 BTC for two pizzas on May 22, 2010 (≈ $41 at the time); 10,000 × $84,413 ≈ $844M",
+    "Fortune, 'Current price of Bitcoin for September 25, 2026': $84,413.49 at 9 a.m. ET; market cap ≈ $1.33 trillion",
+    "All-time high $126,198 on Oct 6, 2025 (CoinDesk / US News / Forbes, Oct 2025). $10,000 bought at $126,198 → ≈ $6,690 at $84,413 (−33%)",
+    "Historical prices: ≈ $1,100 (Dec 2013), ≈ $19,700 (Dec 2017), ≈ $69,000 (Nov 2021), ≈ $15,500 low (Nov 2022, −77%) — CoinMarketCap historical data",
+    "Fourth halving: block 840,000, April 20, 2024; block reward 6.25 → 3.125 BTC (CoinGecko / The Block halving tracker)",
+    "20 millionth bitcoin mined March 9, 2026 (block 939,999); final fractions around 2140 (The Block, CoinDesk)",
+    "U.S. SEC, Chair Gensler, 'Statement on the Approval of Spot Bitcoin Exchange-Traded Products', Jan 10, 2024 (11 spot bitcoin ETPs; 'not approve or endorse bitcoin')",
+    "Chainalysis: an estimated 2.3–3.7 million BTC likely lost forever (11–18% of 21M)",
+    "James Howells (Newport, Wales): hard drive with ≈ 8,000 BTC discarded in 2013, landfill search refused by courts (BBC)",
+    "FBI IC3 2025 Internet Crime Report: $11.37 billion in cryptocurrency-related fraud losses (record); age 60+ lost $4.4 billion",
+    "Cambridge Centre for Alternative Finance, Cambridge Digital Mining Industry Report (2025): ≈ 138 TWh/yr (≈ 0.5% of global electricity), 52.4% sustainable energy (42.6% renewables + 9.8% nuclear)"
+  ],
+  "beats": [
+    {"id": "o1", "text": "In twenty ten, a man paid ten thousand bitcoin for two pizzas. Today, those coins would be worth about eight hundred and forty million dollars.", "pause": 0.3},
+    {"id": "o2", "text": "Now look at Dave's cousin, Kevin. Last October, Kevin bought bitcoin at the very top. One hundred and twenty six thousand dollars per coin.", "pause": 0.3},
+    {"id": "o3", "text": "Today, one bitcoin is worth about eighty four thousand. Kevin has lost about a third of his money. And he calls Dave every single night.", "pause": 0.35},
+    {"id": "o4", "text": "So Dave has questions. What even is bitcoin? Who controls it? And why does the price go completely crazy?", "pause": 0.3},
+    {"id": "o5", "text": "And it gets stranger. Nobody knows who invented it.", "pause": 0.3},
+    {"id": "o6", "text": "Today: the shared notebook, the puzzle lottery, the twenty one million limit, and how not to end up like Kevin.", "pause": 0.6},
+
+    {"id": "c1a", "chapter": "Satoshi's Big Idea", "text": "Let's start with a mystery.", "pause": 0.4},
+    {"id": "c1b", "text": "On October thirty first, two thousand eight, someone calling himself Satoshi Nakamoto posted a short paper online. Just nine pages.", "pause": 0.5},
+    {"id": "c1c", "text": "The title: Bitcoin, a peer to peer electronic cash system. In plain words: money you can send to anyone, with no bank in the middle.", "pause": 0.5},
+    {"id": "c1d", "text": "Why would anyone want that? Well, right then, the world was in a huge financial crisis. Banks were collapsing, and trust in them was at rock bottom.", "pause": 0.5},
+    {"id": "c1e", "text": "In January two thousand nine, the bitcoin network switched on. A couple of years later, Satoshi simply disappeared. Nobody knows who it was, even today.", "pause": 0.5},
+    {"id": "c1f", "text": "Imagine inventing a whole new kind of money, and then just walking away.", "pause": 0.9},
+
+    {"id": "c2a", "chapter": "The Shared Notebook", "text": "So how can money work with no bank? Let's use a notebook.", "pause": 0.4},
+    {"id": "c2b", "text": "Normally, the bank keeps one notebook. It says: Dave has one hundred dollars. Grandma has fifty. And only the bank can write in it.", "pause": 0.5},
+    {"id": "c2c", "text": "Bitcoin's idea: give a copy of the notebook to everyone. Thousands of computers all over the world, each with the exact same copy.", "pause": 0.5},
+    {"id": "c2d", "text": "When Dave sends one coin to Grandma, he shouts it to everyone. Dave pays Grandma one bitcoin. And every copy of the notebook adds the new line.", "pause": 0.5},
+    {"id": "c2e", "text": "Can Dave cheat, and write: I have a million coins? No. Everyone else checks their copy and says: nope, that's not what our notebook says.", "pause": 0.5},
+    {"id": "c2f", "text": "That shared notebook has a fancy name. The blockchain. The pages are called blocks, and they're chained together, in order.", "pause": 0.5},
+    {"id": "c2g", "text": "And Dave doesn't sign with a pen. He signs with a secret code called a private key. Remember that. It matters later.", "pause": 0.9},
+
+    {"id": "c3a", "chapter": "Mining: A Puzzle Lottery", "text": "But wait. If everyone has a notebook, who gets to write the next page?", "pause": 0.4},
+    {"id": "c3b", "text": "That's what mining is. And no, there are no shovels.", "pause": 0.5},
+    {"id": "c3c", "text": "About every ten minutes, special computers race to solve a puzzle. It's really a guessing game. Guess a number. Wrong. Guess again. Trillions of times per second.", "pause": 0.5},
+    {"id": "c3d", "text": "Think of a giant lottery. Every guess is a ticket. The more computers you own, the more tickets you get.", "pause": 0.5},
+    {"id": "c3e", "text": "The winner writes the next page of the notebook. And as a prize, they get brand new bitcoin. That's how new coins are born.", "pause": 0.5},
+    {"id": "c3f", "text": "Why the puzzle? Because it makes cheating super expensive. To rewrite the notebook, you'd have to win the lottery again and again, against the whole world.", "pause": 0.9},
+
+    {"id": "c4a", "chapter": "Only 21 Million", "text": "Now here's the part fans love. There will only ever be twenty one million bitcoin. Ever.", "pause": 0.4},
+    {"id": "c4b", "text": "Remember the duck from our very first video? Banks can create new money out of nothing. Bitcoin can't. The limit is written into the code.", "pause": 0.5},
+    {"id": "c4c", "text": "And the miners' prize keeps shrinking. About every four years, it gets cut in half. This is called the halving.", "pause": 0.5},
+    {"id": "c4d", "text": "In two thousand nine, the prize was fifty bitcoin per page. Then twenty five. Then twelve and a half. Then six point two five.", "pause": 0.5},
+    {"id": "c4e", "text": "The latest halving was in April twenty twenty four. Now the prize is just three point one two five bitcoin.", "pause": 0.5},
+    {"id": "c4f", "text": "In March this year, the twenty millionth bitcoin was mined. The last million will trickle out slower and slower, until around the year twenty one forty.", "pause": 0.5},
+    {"id": "c4g", "text": "It's a bit like gold, from our gold video. Hard to get, and the supply grows slower every year.", "pause": 0.9},
+
+    {"id": "c5a", "chapter": "The Pizza and the Price", "text": "So what is one bitcoin actually worth? At first, almost nothing.", "pause": 0.4},
+    {"id": "c5b", "text": "On May twenty second, twenty ten, a programmer named Laszlo Hanyecz wanted pizza. He offered ten thousand bitcoin to anyone who'd bring him two. Someone did.", "pause": 0.5},
+    {"id": "c5c", "text": "Those two pizzas cost about forty dollars. It was the first famous time bitcoin bought something real. Fans still celebrate it every year. Bitcoin Pizza Day.", "pause": 0.5},
+    {"id": "c5d", "text": "Then the price started climbing. About one thousand dollars in twenty thirteen. Nearly twenty thousand in twenty seventeen. Sixty nine thousand in twenty twenty one.", "pause": 0.5},
+    {"id": "c5e", "text": "And in October twenty twenty five, a new record. About one hundred and twenty six thousand dollars for a single coin.", "pause": 0.5},
+    {"id": "c5f", "text": "As we make this video, in late September twenty twenty six, one bitcoin is around eighty four thousand dollars.", "pause": 0.5},
+    {"id": "c5g", "text": "Which makes those two pizzas worth about eight hundred and forty million dollars. The most expensive dinner in history.", "pause": 0.9},
+
+    {"id": "c6a", "chapter": "The Wild Ride", "text": "But the price doesn't go up in a straight line. It goes up like a roller coaster. And down like one too.", "pause": 0.4},
+    {"id": "c6b", "text": "In twenty twenty one, bitcoin hit sixty nine thousand. One year later, it was around sixteen thousand. A drop of more than seventy five percent.", "pause": 0.5},
+    {"id": "c6c", "text": "Why so wild? Because nothing sets the price except people buying and selling. No company profits. No interest. Just what the next person will pay.", "pause": 0.5},
+    {"id": "c6d", "text": "Then, in January twenty twenty four, something big happened. The American regulator, the S E C, approved eleven bitcoin E T Fs.", "pause": 0.5},
+    {"id": "c6e", "text": "An E T F lets you buy bitcoin through a normal investment account, just like buying a share. Big investors poured in, and the price climbed.", "pause": 0.5},
+    {"id": "c6f", "text": "But the regulator was careful to say: we approved the funds, not bitcoin itself. It's still very risky.", "pause": 0.5},
+    {"id": "c6g", "text": "And that brings us back to Kevin. Last October, everyone was talking about bitcoin. His friends. The news. Kevin felt he was missing out.", "pause": 0.5},
+    {"id": "c6h", "text": "So he put in ten thousand dollars, right at the top. Today, it's worth about six thousand seven hundred. Kevin bought the hype, not the coin.", "pause": 0.9},
+
+    {"id": "c7a", "chapter": "Lost Keys and Scams", "text": "Now, the dark side. Remember the secret code, the private key?", "pause": 0.4},
+    {"id": "c7b", "text": "If you lose it, your bitcoin is gone. Forever. No bank to call. No forgot password button.", "pause": 0.5},
+    {"id": "c7c", "text": "Researchers at Chainalysis estimate that between two point three and three point seven million bitcoin are probably lost for good. That's up to one in every six coins.", "pause": 0.5},
+    {"id": "c7d", "text": "One man in Wales says he threw away an old hard drive with eight thousand bitcoin on it. It's somewhere in a landfill. He spent years trying to dig it up.", "pause": 0.5},
+    {"id": "c7e", "text": "And then there are scammers. In twenty twenty five, Americans reported losing eleven point four billion dollars to crypto fraud, according to the F B I. A record.", "pause": 0.5},
+    {"id": "c7f", "text": "Fake investment apps. Online romances that turn into: let me help you invest. And fake helpers who promise to get your lost money back.", "pause": 0.5},
+    {"id": "c7g", "text": "Remember the raccoon? He found a brand new costume.", "pause": 0.9},
+
+    {"id": "c8a", "chapter": "The Energy Debate", "text": "One more big debate. That puzzle lottery uses a lot of electricity.", "pause": 0.4},
+    {"id": "c8b", "text": "A Cambridge University report estimated that bitcoin mining uses about one hundred and thirty eight terawatt hours a year. That's around half a percent of all the world's electricity.", "pause": 0.5},
+    {"id": "c8c", "text": "Critics say: that's a lot of power for a guessing game. It adds pollution, and it can strain local power grids.", "pause": 0.5},
+    {"id": "c8d", "text": "Supporters answer: more than half of mining now uses sustainable energy, like hydro, wind and nuclear. And miners often use cheap power that would otherwise go to waste.", "pause": 0.5},
+    {"id": "c8e", "text": "Is it worth it? That depends on whether you think bitcoin is useful. Smart people disagree. But now you know the numbers.", "pause": 0.9},
+
+    {"id": "c9a", "chapter": "What Dave Tells Kevin", "text": "So what does Dave tell Kevin? Education, not advice.", "pause": 0.4},
+    {"id": "c9b", "text": "One. Never invest money you can't afford to lose. Bitcoin has dropped by more than half several times. It can happen again.", "pause": 0.5},
+    {"id": "c9c", "text": "Two. When you hear that everyone is getting rich, be careful. That's often close to the top. Just ask Kevin.", "pause": 0.5},
+    {"id": "c9d", "text": "Three. Beware of scams. Nobody honest will ever ask for your private key. And guaranteed returns in crypto don't exist.", "pause": 0.5},
+    {"id": "c9e", "text": "Four. Understand what you buy. If you can't explain it to a friend, like we just did with the notebook, slow down.", "pause": 0.5},
+    {"id": "c9f", "text": "And Kevin? He decided to stop checking the price every hour. His blood pressure says thank you.", "pause": 0.9},
+
+    {"id": "d1a", "chapter": "Now You Know", "text": "So let's recap.", "pause": 0.4},
+    {"id": "d1b", "text": "One. Bitcoin is a shared notebook that thousands of computers keep together, with no bank in the middle.", "pause": 0.5},
+    {"id": "d1c", "text": "Two. Miners win a puzzle lottery to write each page. The prize halves about every four years, and there will never be more than twenty one million coins.", "pause": 0.5},
+    {"id": "d1d", "text": "Three. The price is wild, scams are everywhere, and a lost key means lost money.", "pause": 0.9},
+
+    {"id": "d2a", "chapter": "Series 2 Complete", "text": "And that's a wrap. This was the last episode of Series Two.", "pause": 0.4},
+    {"id": "d2b", "text": "Together, we found out how airlines really make money, why Costco can sell a hot dog so cheap, how billionaires pay less tax, and how credit scores work.", "pause": 0.5},
+    {"id": "d2c", "text": "Then compound interest, the Fed, why the casino always wins, how insurance works, what a recession really is, and today, bitcoin.", "pause": 0.5},
+    {"id": "d2d", "text": "Ten videos. One much smarter Dave. So now, you decide. What should Dave explain next? Tell us in the comments. The best ideas go into Series Three.", "pause": 0.4},
+    {"id": "d2e", "text": "And subscribe, so you don't miss it. It's free, and unlike bitcoin, the price never changes.", "pause": 1.4}
+  ],
+  "youtube": {
+    "title": "How Bitcoin Actually Works (Explained Simply)",
+    "alt_titles": [
+      "10,000 Bitcoin for 2 Pizzas: How Bitcoin Actually Works",
+      "Bitcoin Explained: Why There Will Only Ever Be 21 Million"
+    ],
+    "hook": "How does bitcoin actually work? In 2010 a man paid 10,000 bitcoin for two pizzas, now worth about $840 million. Dave's cousin Kevin bought at the $126,000 top and lost a third. We explain Satoshi's 2008 whitepaper, the blockchain as a shared notebook, mining as a puzzle lottery, the 21 million cap and the 2024 halving, the price history and crashes, the 2024 bitcoin ETFs, lost keys, scams, and the energy debate from both sides.",
+    "tags": [
+      "how bitcoin works",
+      "bitcoin explained",
+      "what is bitcoin",
+      "blockchain explained simply",
+      "bitcoin mining explained",
+      "bitcoin halving",
+      "21 million bitcoin",
+      "bitcoin pizza day",
+      "bitcoin etf explained",
+      "crypto scams",
+      "dave explains money"
+    ],
+    "hashtags": [
+      "#bitcoin",
+      "#crypto",
+      "#money"
+    ],
+    "pinned": "Series 2 is done! What should Dave explain next? Drop ONE topic below 👇"
+  }
+}

@@ -52,7 +52,15 @@ async def main(spec_path: str, out_dir: str):
             chapters.append({"n": len(chapters) + 1, "title": b["chapter"], "start": round(len(pcm) / 2 / SR, 3), "beat": b["id"]})
             pcm += b"\x00\x00" * int(CHAPTER_GAP * SR)
         mp3 = tmp / f"{b['id']}.mp3"
-        words = await synth(b["text"], mp3)
+        words = []
+        for attempt in range(6):
+            try:
+                words = await synth(b["text"], mp3)
+                if words:
+                    break
+            except Exception as e:
+                print(f"  retry {b['id']} ({e.__class__.__name__})")
+            await asyncio.sleep(3 + attempt * 4)
         if not words:
             raise SystemExit(f"no word boundaries for {b['id']} - edge-tts too old?")
         data = to_pcm(mp3)

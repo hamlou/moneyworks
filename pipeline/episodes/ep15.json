@@ -1,0 +1,325 @@
+{
+ "id": "ep15",
+ "title": "Compound Interest: How $100 a Month Becomes $239,000",
+ "sources": [
+  "Quote Investigator (2019): no evidence Einstein called compound interest 'the eighth wonder of the world'; earliest known print version in a 1983 ad",
+  "S&P 500 long-run average ≈ 10% per year nominal, ≈ 7% after inflation (1957–2025; Fidelity, officialdata.org). Past returns do not guarantee future returns.",
+  "Calculations (annual compounding at 7%): $100/month for 40 years ≈ $239,562; 10 years then stop, grown 30 more years ≈ $126,209; 30 years ≈ $113,353",
+  "Penny doubled daily: $0.01 × 2^29 ≈ $5.37 million on day 30",
+  "Rule of 72: years to double ≈ 72 ÷ annual rate",
+  "Fees: 7% vs 6% over 40 years → 14.97× vs 10.29× growth (≈31% less)",
+  "Federal Reserve G.19: credit card accounts assessed interest ≈ 22% (2026)",
+  "Morgan Housel, The Psychology of Money (2020): of Warren Buffett's ≈$84.5B net worth, ≈$81.5B came after his 65th birthday; he began investing around age 11"
+ ],
+ "beats": [
+  {
+   "id": "o1",
+   "text": "Would you rather have one million dollars today, or a single penny that doubles every day for thirty days?",
+   "pause": 0.3
+  },
+  {
+   "id": "o2",
+   "text": "Dave takes the million, obviously. Who picks a penny?",
+   "pause": 0.3
+  },
+  {
+   "id": "o3",
+   "text": "But look at this. On day thirty, the penny is worth more than five million dollars.",
+   "pause": 0.35
+  },
+  {
+   "id": "o4",
+   "text": "That's compounding. And it's the reason one hundred dollars a month can quietly grow into almost a quarter of a million dollars.",
+   "pause": 0.35
+  },
+  {
+   "id": "o5",
+   "text": "It's also the reason credit card debt can explode.",
+   "pause": 0.3
+  },
+  {
+   "id": "o6",
+   "text": "Today: how compound interest works, why starting early beats investing more, the simple rule of seventy two, and the dark side nobody warns you about.",
+   "pause": 0.6
+  },
+  {
+   "id": "c1a",
+   "chapter": "Interest on Interest",
+   "text": "Let's start simple. Dave puts one hundred dollars in an account that pays ten percent a year.",
+   "pause": 0.4
+  },
+  {
+   "id": "c1b",
+   "text": "After one year, he earns ten dollars. Now he has one hundred and ten.",
+   "pause": 0.5
+  },
+  {
+   "id": "c1c",
+   "text": "Year two, he earns ten percent again. But this time on one hundred and ten dollars. That's eleven dollars, not ten.",
+   "pause": 0.5
+  },
+  {
+   "id": "c1d",
+   "text": "That extra dollar is the magic. It's interest earned on interest. His money is making babies. And then the babies make babies.",
+   "pause": 0.5
+  },
+  {
+   "id": "c1e",
+   "text": "Think of a snowball rolling down a hill. At the top, it's tiny. But every roll, it picks up more snow. And the bigger it gets, the more snow it grabs.",
+   "pause": 0.5
+  },
+  {
+   "id": "c1f",
+   "text": "At first, it feels like nothing is happening. That's the part where most people give up.",
+   "pause": 0.9
+  },
+  {
+   "id": "c2a",
+   "chapter": "The Penny Puzzle",
+   "text": "Back to the penny. Why does it win?",
+   "pause": 0.4
+  },
+  {
+   "id": "c2b",
+   "text": "Day one, one cent. Day two, two cents. Day three, four cents. After a whole week? Sixty four cents. Dave is laughing.",
+   "pause": 0.5
+  },
+  {
+   "id": "c2c",
+   "text": "After two weeks, it's about eighty dollars. Still laughing.",
+   "pause": 0.5
+  },
+  {
+   "id": "c2d",
+   "text": "After twenty days, about five thousand dollars. Dave stops laughing.",
+   "pause": 0.5
+  },
+  {
+   "id": "c2e",
+   "text": "And in the last few days, it explodes. Day twenty eight, one point three million. Day twenty nine, two point seven million. Day thirty, more than five million.",
+   "pause": 0.5
+  },
+  {
+   "id": "c2f",
+   "text": "Half of all the money arrives on the very last day. That's the secret of compounding. The biggest growth comes at the end. So the most important ingredient is time.",
+   "pause": 0.9
+  },
+  {
+   "id": "c3a",
+   "chapter": "Dave vs Bob",
+   "text": "Now, real life. Nobody gives you money that doubles every day. But the stock market has grown about seven percent a year on average, after inflation, over the long run. Not guaranteed. But let's use it.",
+   "pause": 0.4
+  },
+  {
+   "id": "c3b",
+   "text": "Dave is twenty five. He invests one hundred dollars a month. Just ten years. Then, at thirty five, he stops completely and never adds another cent.",
+   "pause": 0.5
+  },
+  {
+   "id": "c3c",
+   "text": "His neighbor Bob waits. At thirty five, Bob starts investing the same one hundred dollars a month. And he keeps going for thirty years, all the way to sixty five.",
+   "pause": 0.5
+  },
+  {
+   "id": "c3d",
+   "text": "So Dave put in twelve thousand dollars. Bob put in thirty six thousand. Three times more.",
+   "pause": 0.5
+  },
+  {
+   "id": "c3e",
+   "text": "At sixty five, who has more?",
+   "pause": 0.5
+  },
+  {
+   "id": "c3f",
+   "text": "Dave. About one hundred and twenty six thousand dollars. Bob has about one hundred and thirteen thousand.",
+   "pause": 0.5
+  },
+  {
+   "id": "c3g",
+   "text": "Dave invested a third of the money, stopped early, and still won. Because his snowball had ten extra years to roll.",
+   "pause": 0.5
+  },
+  {
+   "id": "c3h",
+   "text": "And if Dave had simply kept going for all forty years? About two hundred and thirty nine thousand dollars. From one hundred dollars a month.",
+   "pause": 0.9
+  },
+  {
+   "id": "c4a",
+   "chapter": "The Rule of 72",
+   "text": "Here's a trick to do compound interest in your head. It's called the rule of seventy two.",
+   "pause": 0.4
+  },
+  {
+   "id": "c4b",
+   "text": "Take seventy two, and divide it by the interest rate. The answer is roughly how many years it takes to double your money.",
+   "pause": 0.5
+  },
+  {
+   "id": "c4c",
+   "text": "At seven percent, seventy two divided by seven is about ten. Your money doubles about every ten years.",
+   "pause": 0.5
+  },
+  {
+   "id": "c4d",
+   "text": "So ten thousand dollars becomes twenty thousand. Then forty. Then eighty. Then almost one hundred and sixty thousand. In forty years.",
+   "pause": 0.5
+  },
+  {
+   "id": "c4e",
+   "text": "At a savings account paying one percent? Seventy two years to double. Your grandkids might see it.",
+   "pause": 0.5
+  },
+  {
+   "id": "c4f",
+   "text": "And the rule works for prices too. If inflation is three percent a year, prices double in about twenty four years. So cash under the mattress slowly shrinks, while invested money has a chance to grow.",
+   "pause": 0.9
+  },
+  {
+   "id": "w1",
+   "chapter": "Buffett's Secret Weapon",
+   "text": "Want proof that time is the secret ingredient? Look at Warren Buffett, one of the richest investors ever.",
+   "pause": 0.4
+  },
+  {
+   "id": "w2",
+   "text": "Buffett bought his first stock when he was eleven years old. Eleven. Dave was eating crayons at eleven.",
+   "pause": 0.5
+  },
+  {
+   "id": "w3",
+   "text": "And here's the wild part. Of Buffett's roughly eighty four billion dollars a few years ago, around eighty one billion came after his sixty fifth birthday.",
+   "pause": 0.5
+  },
+  {
+   "id": "w4",
+   "text": "Was he a genius? Yes. But his real superpower was time. He started as a kid, and he never stopped. His snowball has been rolling for more than eighty years.",
+   "pause": 0.5
+  },
+  {
+   "id": "w5",
+   "text": "If Buffett had started at thirty and retired at sixty, like most people, almost nobody would know his name.",
+   "pause": 0.9
+  },
+  {
+   "id": "c5a",
+   "chapter": "The Dark Side",
+   "text": "Now the scary part. Compounding doesn't care whose side it's on.",
+   "pause": 0.4
+  },
+  {
+   "id": "c5b",
+   "text": "Remember the raccoon from our credit card video? Credit cards charge around twenty two percent a year. And they compound too.",
+   "pause": 0.5
+  },
+  {
+   "id": "c5c",
+   "text": "Use the rule of seventy two. Seventy two divided by twenty two. About three years.",
+   "pause": 0.5
+  },
+  {
+   "id": "c5d",
+   "text": "If Dave ignores a credit card balance, it can double in about three years. The snowball is rolling. But this time, it's rolling straight at Dave.",
+   "pause": 0.5
+  },
+  {
+   "id": "c5e",
+   "text": "That's why paying off high interest debt is often the best return you'll ever get. Every dollar you pay stops a snowball that's rolling against you.",
+   "pause": 0.9
+  },
+  {
+   "id": "c6a",
+   "chapter": "The Snowball Thieves",
+   "text": "Even when compounding is on your side, some sneaky things can steal your snow.",
+   "pause": 0.4
+  },
+  {
+   "id": "c6b",
+   "text": "Thief one: fees. A one percent yearly fee sounds tiny. But over forty years, earning six percent instead of seven can leave you with about a third less money.",
+   "pause": 0.5
+  },
+  {
+   "id": "c6c",
+   "text": "Thief two: stopping and starting. Every time you pull money out, you're taking snow off the ball. And it has to start rolling again.",
+   "pause": 0.5
+  },
+  {
+   "id": "c6d",
+   "text": "Thief three: panic. When markets crash, some people sell everything. Remember our stock market video? Crashes happen. People who stayed calm have historically recovered.",
+   "pause": 0.5
+  },
+  {
+   "id": "c6e",
+   "text": "And thief four: waiting. Every year you wait is a year of rolling you never get back.",
+   "pause": 0.9
+  },
+  {
+   "id": "c7a",
+   "chapter": "Making It Work",
+   "text": "So how do people actually use this? A few simple habits. Education, not advice.",
+   "pause": 0.4
+  },
+  {
+   "id": "c7b",
+   "text": "One. Start early, even if it's small. Twenty dollars a month at twenty beats nothing until forty.",
+   "pause": 0.5
+  },
+  {
+   "id": "c7c",
+   "text": "Two. Make it automatic. Money that moves by itself on payday doesn't depend on willpower.",
+   "pause": 0.5
+  },
+  {
+   "id": "c7d",
+   "text": "Three. Watch the fees. Low cost index funds are popular for exactly this reason.",
+   "pause": 0.5
+  },
+  {
+   "id": "c7e",
+   "text": "Four. Kill high interest debt first. It's compounding against you.",
+   "pause": 0.5
+  },
+  {
+   "id": "c7f",
+   "text": "And five. Be boring. Let the snowball roll, and try not to touch it.",
+   "pause": 0.9
+  },
+  {
+   "id": "c8a",
+   "chapter": "Now You Know",
+   "text": "So let's recap.",
+   "pause": 0.4
+  },
+  {
+   "id": "c8b",
+   "text": "One. Compound interest means earning interest on your interest. It starts slow and ends huge.",
+   "pause": 0.5
+  },
+  {
+   "id": "c8c",
+   "text": "Two. Time matters more than money. Dave invested less, started earlier, and won.",
+   "pause": 0.5
+  },
+  {
+   "id": "c8d",
+   "text": "Three. It works against you too. High interest debt and fees are compounding in the wrong direction.",
+   "pause": 0.6
+  },
+  {
+   "id": "c8e",
+   "text": "Oh, and that famous quote where Einstein called compound interest the eighth wonder of the world? There's no real evidence he ever said it. But it's still true.",
+   "pause": 0.5
+  },
+  {
+   "id": "c8f",
+   "text": "Next time, Dave visits the most powerful bank in the world. The Federal Reserve. And finds out who really controls interest rates.",
+   "pause": 0.4
+  },
+  {
+   "id": "c8g",
+   "text": "Subscribe, and let Dave's channel compound. One video at a time.",
+   "pause": 1.4
+  }
+ ]
+}

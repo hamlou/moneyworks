@@ -181,6 +181,10 @@ SEO = {
 }
 
 
+for _p in sorted((ROOT / 'pipeline').glob('seo_ep*.json')):
+    SEO[_p.stem[4:]] = json.loads(_p.read_text(encoding='utf-8'))
+
+
 def chapters_from(ep):
     txt = (VIDEOS / ep / f"{ep}_youtube.txt").read_text(encoding="utf-8")
     m = re.search(r"⏱ Chapters\n(.*?)\n\n", txt, re.S)
