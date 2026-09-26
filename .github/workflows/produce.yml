@@ -1,0 +1,96 @@
+name: produce
+run-name: produce ${{ inputs.req }}
+
+on:
+  workflow_dispatch:
+    inputs:
+      topic:
+        description: Video concept
+        required: true
+      title:
+        description: Approved title
+        required: true
+      plan:
+        description: Approved plan JSON (optional)
+        default: ''
+      req:
+        description: Request id (from the bot)
+        required: true
+
+permissions:
+  contents: write
+  actions: write
+
+concurrency:
+  group: produce
+  cancel-in-progress: false
+
+jobs:
+  produce:
+    runs-on: ubuntu-latest
+    timeout-minutes: 240
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg
+      - run: npm ci --no-audit --no-fund && pip install -q edge-tts numpy && npm i -g @anthropic-ai/claude-code
+      - id: ep
+        run: |
+          n=$(ls pipeline/episodes | grep -E '^ep[0-9]{2}\.json$' | sed -E 's/ep([0-9]+)\.json/\1/' | sort -n | tail -1)
+          next=$(printf "%02d" $((10#$n + 1)))
+          echo "ep=ep$next" >> "$GITHUB_OUTPUT"
+          echo "num=$next" >> "$GITHUB_OUTPUT"
+      - name: Build the episode with Claude
+        env:
+          CLAUDE_CODE_OAUTH_TOKEN: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
+          TOPIC: ${{ inputs.topic }}
+          TITLE: ${{ inputs.title }}
+          PLAN: ${{ inputs.plan }}
+          EP: ${{ steps.ep.outputs.ep }}
+          NUM: ${{ steps.ep.outputs.num }}
+        run: |
+          echo "$PLAN" > /tmp/plan.json
+          claude -p "You are the Moneyworks production studio. Build episode $EP completely, in EXACTLY the approved Series-1 style.
+
+          1. Read CLAUDE.md and PLAYBOOK.md fully. Study pipeline/episodes/ep09.json, ep10.json and src/episodes/Ep09.tsx, Ep10.tsx as the gold standard. Study the prop files you will use.
+          2. Concept: \"$TOPIC\". Approved YouTube title: \"$TITLE\". Approved plan (may be empty): see /tmp/plan.json.
+          3. Research the latest official numbers with web search (today is $(date +%F)). Every stat needs a source.
+          4. Write pipeline/episodes/$EP.json (1,600-1,800 spoken words, hook beats o1.., 6-8 chapters, myth-bust, practical tips chapter, 3-point recap, teaser, subscribe joke; youtube.title = the approved title; youtube.hook; 15 tags; sources).
+          5. Run: python pipeline/tts.py pipeline/episodes/$EP.json public/$EP   (voice + word timings).
+          6. Write src/episodes/Ep$NUM.tsx (full choreography, SFX on words, SourceTags, mid-video SubReminder right after the biggest reveal, end subscribe scene) and src/thumbs/$EP.tsx (3 strong thumbnails). Register both in src/Episode.tsx and src/Root.tsx. Add new props in a new src/props file if needed.
+          7. Loop until clean: npx tsc --noEmit -p .   and   python pipeline/validate.py $EP   (fix every problem; if too short, add a chapter and re-run tts).
+          8. Render 3 test stills to catch runtime errors: npx remotion still src/index.ts Episode /tmp/s.png --frame=<a frame in the hook / middle / end> --props='{\"ep\":\"$EP\",\"timings\":null}' and fix any crash. Look at the stills and fix anything ugly (empty screens, overlaps).
+          9. Do NOT git commit; the workflow commits for you. Do not touch other episodes." --dangerously-skip-permissions --max-turns 400
+      - name: Final quality gate
+        env:
+          EP: ${{ steps.ep.outputs.ep }}
+        run: |
+          npx tsc --noEmit -p .
+          python pipeline/validate.py $EP
+      - name: Commit
+        env:
+          EP: ${{ steps.ep.outputs.ep }}
+          TITLE: ${{ inputs.title }}
+        run: |
+          git config user.name "Moneyworks Bot"
+          git config user.email "bot@users.noreply.github.com"
+          git add -A src pipeline
+          git commit -m "Produce $EP: $TITLE"
+          git push
+      - name: Start render
+        env:
+          GH_TOKEN: ${{ github.token }}
+          EP: ${{ steps.ep.outputs.ep }}
+        run: gh workflow run render.yml -f ep=$EP -f chunks=10
+      - run: echo "${{ steps.ep.outputs.ep }}" > produced.txt
+      - uses: actions/upload-artifact@v4
+        with:
+          name: produce-${{ inputs.req }}
+          path: produced.txt
+          retention-days: 5

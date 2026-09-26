@@ -1,0 +1,44 @@
+name: plan
+run-name: plan ${{ inputs.req }}
+
+on:
+  workflow_dispatch:
+    inputs:
+      topic:
+        description: Video concept
+        required: true
+      req:
+        description: Request id (from the bot)
+        required: true
+
+jobs:
+  plan:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - run: npm i -g @anthropic-ai/claude-code
+      - name: Plan with Claude
+        env:
+          CLAUDE_CODE_OAUTH_TOKEN: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
+          TOPIC: ${{ inputs.topic }}
+        run: |
+          claude -p "You are planning the next episode of the Moneyworks channel. Read PLAYBOOK.md fully and look at pipeline/episodes/ep10.json as the gold-standard example.
+          Video concept from the owner: \"$TOPIC\".
+          Use web search to find the latest, official numbers for this topic (it is $(date +%B\ %Y)).
+          Then write ONLY the file plan.json with this exact shape:
+          {\"titles\": [3 highly clickable YouTube titles in the Series-1 style],
+           \"hook\": \"the 30-45 second cold open as it would be spoken\",
+           \"chapters\": [6 to 8 objects {\"title\": \"...\", \"idea\": \"one line incl. the silly analogy\"}],
+           \"key_facts\": [5 to 10 strings, each with number + official source],
+           \"thumbnail_ideas\": [3 short strings, 2-4 big words each + visual]}
+          Do not create or modify any other file." --dangerously-skip-permissions --max-turns 40
+          test -s plan.json && cat plan.json
+      - uses: actions/upload-artifact@v4
+        with:
+          name: plan-${{ inputs.req }}
+          path: plan.json
+          retention-days: 3

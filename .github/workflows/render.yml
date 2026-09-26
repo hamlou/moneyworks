@@ -1,4 +1,5 @@
 name: render
+run-name: render ${{ inputs.ep }}
 
 on:
   workflow_dispatch:
