@@ -12,7 +12,11 @@
     "LendingTree BNPL tracker (2026): nearly half of BNPL users paid late in the past year",
     "Affirm and other BNPL lenders offer longer financing plans with APRs that can reach about 36%",
     "FICO (2025): new credit score versions incorporating BNPL loan data",
-    "Prelec & Simester (2001): people are willing to pay more when paying with cards"
+    "Prelec & Simester (2001): people are willing to pay more when paying with cards",
+    "Layaway programs emerged during the Great Depression (1930s)",
+    "Klarna founded 2005 (Sweden); Affirm founded 2012 (USA, co-founder Max Levchin of PayPal); Afterpay founded 2014 (Australia)",
+    "CFPB (2022): U.S. BNPL loans grew from 16.8 million (2019) to 180 million (2021)",
+    "Federal Reserve G.19: credit card accounts assessed interest ≈ 22% (2026)"
   ],
   "beats": [
     {"id": "o1", "text": "Dave wants new sneakers. Two hundred dollars.", "pause": 0.3},
@@ -27,6 +31,15 @@
     {"id": "c1c", "text": "Approved. Dave pays fifty dollars today. Then fifty dollars every two weeks. Four payments. Six weeks. Done.", "pause": 0.5},
     {"id": "c1d", "text": "And the store? The store gets the full two hundred dollars right away. Well, almost the full two hundred.", "pause": 0.5},
     {"id": "c1e", "text": "Because somebody just lent Dave one hundred and fifty dollars for six weeks. For free. And lenders don't do free.", "pause": 0.9},
+
+    {"id": "h1", "chapter": "From Layaway to Pay Later", "text": "Believe it or not, paying in pieces is not new. Your great grandparents did it too. It was called layaway.", "pause": 0.5},
+    {"id": "h2", "text": "It started in the nineteen thirties, during the Great Depression. You picked a coat, paid a small deposit, and the store kept the coat in the back.", "pause": 0.5},
+    {"id": "h3", "text": "Every week, you paid a little more. And only when you finished paying, you finally took the coat home.", "pause": 0.5},
+    {"id": "h4", "text": "Pay first. Get it later. Safe, slow, and a little boring.", "pause": 0.5},
+    {"id": "h5", "text": "Then credit cards arrived, and people could get things right away. Layaway slowly faded.", "pause": 0.5},
+    {"id": "h6", "text": "And then a few tech companies flipped layaway upside down. Get it now. Pay later.", "pause": 0.5},
+    {"id": "h7", "text": "Klarna started in Sweden in two thousand five. Affirm, in America in twenty twelve, co-founded by one of the people who started PayPal. And Afterpay, in Australia in twenty fourteen.", "pause": 0.5},
+    {"id": "h8", "text": "Then the pandemic hit. Everyone was shopping online. And in America, the number of these loans grew more than ten times in just two years.", "pause": 0.9},
 
     {"id": "c2a", "chapter": "Follow the Money", "text": "Let's follow the money.", "pause": 0.4},
     {"id": "c2b", "text": "Remember the raccoon from our credit card video? The swipe fee? Stores pay about two percent when you use a credit card.", "pause": 0.5},
@@ -61,6 +74,13 @@
     {"id": "c6c", "text": "But the babysitter also charges the kid, every time the kid breaks a rule. That's the late fees and interest.", "pause": 0.5},
     {"id": "c6d", "text": "And the babysitter's favorite kid? The one who breaks rules just a little bit. Often enough to pay. Not so often that he disappears.", "pause": 0.6},
     {"id": "c6e", "text": "If you always follow the rules, you're using the babysitter for free. The parents are paying. Just make sure you stay that kid.", "pause": 0.9},
+
+    {"id": "v1", "chapter": "Pay in 4 vs Credit Card", "text": "So which is better? Pay in four, or a credit card? Let's put them in the ring.", "pause": 0.5},
+    {"id": "v2", "text": "Round one: if you always pay on time, both can cost you zero. Tie.", "pause": 0.5},
+    {"id": "v3", "text": "Round two: if you're late. A credit card starts charging around twenty two percent interest on your balance. Pay in four usually charges a late fee instead. Which hurts more depends on the amount and how late you are.", "pause": 0.6},
+    {"id": "v4", "text": "Round three: returns and problems. With a credit card, you often get strong protection if a store doesn't deliver. With pay later plans, sorting out a refund can be slower and messier.", "pause": 0.5},
+    {"id": "v5", "text": "Round four: your credit history. Paying a credit card well has long helped build your credit score. Pay later plans are only starting to show up.", "pause": 0.5},
+    {"id": "v6", "text": "And the final round: temptation. Both make spending feel easy. The winner is whichever one you can control.", "pause": 0.9},
 
     {"id": "c7a", "chapter": "Using It Wisely", "text": "So how do people use it without getting caught? A few simple habits. Education, not advice.", "pause": 0.4},
     {"id": "c7b", "text": "One. Only use it if you could afford to pay the full price today. If you need it to afford something, that's a warning sign.", "pause": 0.5},

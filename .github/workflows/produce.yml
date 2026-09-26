@@ -61,7 +61,7 @@ jobs:
           1. Read CLAUDE.md and PLAYBOOK.md fully. Study pipeline/episodes/ep09.json, ep10.json and src/episodes/Ep09.tsx, Ep10.tsx as the gold standard. Study the prop files you will use.
           2. Concept: \"$TOPIC\". Approved YouTube title: \"$TITLE\". Approved plan (may be empty): see /tmp/plan.json.
           3. Research the latest official numbers with web search (today is $(date +%F)). Every stat needs a source.
-          4. Write pipeline/episodes/$EP.json (1,600-1,800 spoken words, hook beats o1.., 6-8 chapters, myth-bust, practical tips chapter, 3-point recap, teaser, subscribe joke; youtube.title = the approved title; youtube.hook; 15 tags; sources).
+          4. Write pipeline/episodes/$EP.json (1,900-2,100 spoken words, hook beats o1.., 6-8 chapters, myth-bust, practical tips chapter, 3-point recap, teaser, subscribe joke; youtube.title = the approved title; youtube.hook; 15 tags; sources).
           5. Run: python pipeline/tts.py pipeline/episodes/$EP.json public/$EP   (voice + word timings).
           6. Write src/episodes/Ep$NUM.tsx (full choreography, SFX on words, SourceTags, mid-video SubReminder right after the biggest reveal, end subscribe scene) and src/thumbs/$EP.tsx (3 strong thumbnails). Register both in src/Episode.tsx and src/Root.tsx. Add new props in a new src/props file if needed.
           7. Loop until clean: npx tsc --noEmit -p .   and   python pipeline/validate.py $EP   (fix every problem; if too short, add a chapter and re-run tts).

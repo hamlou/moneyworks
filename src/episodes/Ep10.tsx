@@ -4,7 +4,7 @@ import {C, FONT} from '../theme';
 import {useT} from '../timing';
 import {ease, lin, out, pop} from '../anim';
 import {Stick, StickProps} from '../Stick';
-import {Board, ChapterCard, Captions, CHAPTER_FRAMES, Cue, Interior, Progress, SceneItem, Scenes, Sfx, Street, Svg, Vignette, SubReminder, subCues} from '../fx';
+import {Board, ChapterCard, Captions, CHAPTER_FRAMES, Cue, Interior, Progress, SceneItem, Scenes, Sfx, Street, Svg, Vignette, SubReminder, subCues, OldFilm} from '../fx';
 import {Bank, Bill, Bubble, Calendar, Coin, MoneyStack, Paper, Puff, Sparkle, SourceTag, Stamp, Text, XMark} from '../props';
 import {Bar, Frame, Icon, Phone, Row, SubButton, Bell, CreditCard} from '../props2';
 import {PriceTag, Raccoon, Shop, TollBooth, Ticket, SplitBar} from '../props3';
@@ -13,6 +13,7 @@ import {Bread} from '../props6';
 type SP = Omit<StickProps, 'acc' | 'seed'>;
 const Dave: React.FC<SP> = (p) => <Stick acc={['hair']} seed={7} {...p} />;
 const Owner: React.FC<SP> = (p) => <Stick acc={['ponytail']} seed={44} {...p} />;
+const Grandma: React.FC<SP> = (p) => <Stick acc={['bun', 'glasses']} seed={13} {...p} />;
 const Sitter: React.FC<SP> = (p) => <Stick acc={['ponytail', 'glasses']} seed={150} {...p} />;
 
 const G2: React.FC<{x?: number; y?: number; s?: number; r?: number; o?: number; children?: React.ReactNode}> = ({x = 0, y = 0, s = 1, r = 0, o = 1, children}) =>
@@ -184,6 +185,94 @@ export const Ep10: React.FC = () => {
             <G2 x={500} y={400} s={pop(f, ft)}><Bubble text={'$150 lent\nfor FREE?'} size={52} /></G2>
             <Stick f={f} x={500} y={860} s={1.1} acc={['tie', 'glasses']} seed={160} keys={[{at: 0, pose: 'shrug', expr: 'smug'}]} />
             <G2 x={500} y={640} s={pop(f, lf)}><Text size={40} color={C.red}>lenders don't do free</Text></G2>
+          </Svg>
+        </AbsoluteFill>
+      ),
+    );
+  }
+
+  // ============ Layaway history ============
+  {
+    const lw = w('h1', 'layaway');
+    const th = w('h2', 'thirties');
+    const ct = w('h2', 'coat');
+    const wk = w('h3', 'week');
+    const hm = w('h3', 'home');
+    const cc = w('h5', 'credit');
+    const fl = w('h6', 'flipped');
+    const nw = w('h6', 'now');
+    const kl = w('h7', 'klarna');
+    const af = w('h7', 'affirm');
+    const ap = w('h7', 'afterpay');
+    const pd = w('h8', 'pandemic');
+    const tn = w('h8', 'ten');
+    q(lw, 'stamp', 0.6);
+    q(th, 'dream', 0.4);
+    q(ct, 'pop', 0.5);
+    for (let i = 0; i < 4; i++) q(wk + i * 8, 'coin', 0.35);
+    q(hm, 'ding', 0.5);
+    q(cc, 'pop', 0.5);
+    q(fl, 'whoosh', 0.6);
+    [kl, af, ap].forEach((x) => q(x, 'pop', 0.55));
+    q(pd, 'pop', 0.5);
+    q(tn, 'cash', 0.6);
+    const paid = Math.min(4, Math.floor(lin(f, wk, hm, 0, 4.99)));
+    scene(A('h1'), () =>
+      f < A('h5') ? (
+        <AbsoluteFill>
+          <AbsoluteFill style={{filter: 'sepia(0.45)'}}>
+            <Interior />
+            <Svg>
+              <Calendar x={240} y={240} s={0.75 * pop(f, th)} top="YEAR" year="1930s" flip={0} />
+              <Stamp x={960} y={140} s={pop(f, lw, 9, 260)} r={-4} text="LAYAWAY" size={70} color={C.navy} />
+              <G2 x={1320} y={520} s={pop(f, ct)}>
+                <rect x={-200} y={-240} width={400} height={440} fill="#E9DDC4" stroke={C.ink} strokeWidth={6} />
+                <Text y={-200} size={30}>ON HOLD</Text>
+                <path d="M -80 -140 L -30 -170 L 0 -130 L 30 -170 L 80 -140 L 100 60 L 50 60 L 40 -40 L 40 160 L -40 160 L -40 -40 L -50 60 L -100 60 Z" fill="#8C6A4A" stroke={C.ink} strokeWidth={5} strokeLinejoin="round" />
+              </G2>
+              <Grandma f={f} x={560} y={820} s={1.1} keys={[{at: 0, pose: 'present', expr: 'happy', look: 0.8}, {at: hm, pose: 'celebrate', expr: 'grin'}]} />
+              <G2 x={800} y={420} s={pop(f, wk)}>
+                {[0, 1, 2, 3].map((i) => <circle key={i} cx={i * 70} cy={0} r={28} fill={i < paid ? C.green : '#fff'} stroke={C.ink} strokeWidth={5} />)}
+                <Text x={105} y={60} size={30}>weekly payments</Text>
+              </G2>
+            </Svg>
+          </AbsoluteFill>
+          <OldFilm f={f} o={0.5} />
+        </AbsoluteFill>
+      ) : f < A('h7') ? (
+        <AbsoluteFill>
+          <Board />
+          <Svg>
+            <G2 x={960} y={400} s={pop(f, cc)}>
+              <g transform={`rotate(${ease(f, fl, fl + 20, 0, 180)})`}>
+                <rect x={-420} y={-80} width={840} height={160} rx={30} fill={f >= fl + 10 ? '#FFB3C7' : '#E9DDC4'} stroke={C.ink} strokeWidth={6} />
+              </g>
+              <Text size={70}>{f >= fl + 10 ? 'GET NOW → PAY LATER' : 'PAY FIRST → GET LATER'}</Text>
+            </G2>
+            <CreditCard x={960} y={720} s={0.8 * pop(f, cc)} />
+            <G2 x={960} y={900} s={pop(f, nw)}><Text size={48}>tech companies flipped it</Text></G2>
+          </Svg>
+        </AbsoluteFill>
+      ) : (
+        <AbsoluteFill>
+          <Board />
+          <Svg>
+            {[[kl, 'SWEDEN', '2005', 'Klarna'], [af, 'USA', '2012', 'Affirm'], [ap, 'AUSTRALIA', '2014', 'Afterpay']].map(([at, c, y, n], i) => (
+              <G2 key={n as string} x={400 + i * 560} y={380} s={pop(f, at as number)}>
+                <rect x={-220} y={-160} width={440} height={320} rx={24} fill="#fff" stroke={C.ink} strokeWidth={6} />
+                <Text y={-90} size={56}>{n as string}</Text>
+                <Text y={0} size={40} color="#5B6470">{c as string}</Text>
+                <Text y={80} size={64} color={C.blue}>{y as string}</Text>
+              </G2>
+            ))}
+            {f >= pd && (
+              <g>
+                <line x1={500} y1={900} x2={1420} y2={900} stroke={C.ink} strokeWidth={6} strokeLinecap="round" />
+                <Bar x={720} y={900} h={ease(f, pd, pd + 10, 0, 17 * 1.1)} color="#C9C3B6" label="2019" value="16.8M" w={220} />
+                <Bar x={1200} y={900} h={ease(f, tn - 4, tn + 14, 0, 180 * 1.1)} color={C.red} label="2021" value="180M loans" w={220} />
+              </g>
+            )}
+            <SourceTag f={f} at={tn} text="CFPB BNPL report (2022)" />
           </Svg>
         </AbsoluteFill>
       ),
@@ -397,6 +486,38 @@ export const Ep10: React.FC = () => {
           {f >= rl && <Coin x={1450 - ease(f, rl, rl + 20) * 450} y={560} s={0.9} o={1 - ease(f, rl + 18, rl + 24)} />}
           <G2 x={1450} y={250} s={pop(f, rl)}><Text size={36} color={C.red}>breaks a rule → pays</Text></G2>
           <G2 x={960} y={130} s={pop(f, fr)}><Text size={52} color={C.green}>follow the rules = free babysitter</Text></G2>
+        </Svg>
+      </AbsoluteFill>
+    ));
+  }
+
+  // ============ vs credit card ============
+  {
+    const rounds = [bs('v2'), bs('v3'), bs('v4'), bs('v5'), bs('v6')];
+    const ring = w('v1', 'ring');
+    q(ring, 'stamp', 0.6);
+    rounds.forEach((x) => {
+      q(x, 'ding', 0.6);
+      q(x + 6, 'thud', 0.3);
+    });
+    const labels = ['On time', 'Late', 'Refunds', 'Credit history', 'Temptation'];
+    const verdict = ['TIE: both $0', 'card: ~22% interest · BNPL: late fees', 'card: usually stronger protection', 'card: builds history (BNPL catching up)', 'the one YOU can control'];
+    const cur = rounds.filter((x) => f >= x).length;
+    scene(A('v1'), () => (
+      <AbsoluteFill>
+        <Interior />
+        <Svg>
+          <rect x={360} y={560} width={1200} height={30} fill="#D7263D" stroke={C.ink} strokeWidth={5} />
+          <rect x={360} y={640} width={1200} height={30} fill="#fff" stroke={C.ink} strokeWidth={5} />
+          <rect x={360} y={720} width={1200} height={30} fill="#1D3F8F" stroke={C.ink} strokeWidth={5} />
+          <G2 x={560} y={430} s={pop(f, ring) * (1 + 0.05 * Math.sin(f / 4))}>
+            <rect x={-150} y={-230} width={300} height={460} rx={34} fill="#FFB3C7" stroke={C.ink} strokeWidth={6} />
+            <Text size={50}>PAY IN 4</Text>
+          </G2>
+          <CreditCard x={1360} y={430} s={pop(f, ring + 6) * (1 + 0.05 * Math.sin(f / 4 + 2))} />
+          <Stamp x={960} y={200} s={pop(f, ring, 9, 260)} text={cur ? 'ROUND ' + cur + ': ' + labels[cur - 1].toUpperCase() : 'FIGHT!'} size={56} color={C.red} />
+          {cur > 0 && <G2 x={960} y={900} s={pop(f, rounds[cur - 1] + 4)}><Text size={48}>{verdict[cur - 1]}</Text></G2>}
+          <SourceTag f={f} at={rounds[1]} text="Federal Reserve G.19 (card interest) · CFPB BNPL findings" until={rounds[2]} />
         </Svg>
       </AbsoluteFill>
     ));
