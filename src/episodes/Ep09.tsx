@@ -420,6 +420,92 @@ export const Ep09: React.FC = () => {
     );
   }
 
+  // ============ Bulls, bears, brain ============
+  {
+    const bl = w('b2', 'bull');
+    const hu = w('b2', 'up');
+    const br = w('b3', 'bear');
+    const dn = w('b3', 'down');
+    const brain = w('b4', 'brain');
+    const gr = w('b5', 'greedy');
+    const sc = w('b5', 'scared');
+    const hi = w('b6', 'high');
+    const lo = w('b6', 'low');
+    const dca = w('b7', 'dollar');
+    const fw = w('b8', 'fewer');
+    const mo = w('b8', 'more');
+    q(bl, 'pop', 0.6);
+    q(br, 'pop', 0.6);
+    q(brain, 'heart', 0.5);
+    q(gr, 'cash', 0.5);
+    q(sc, 'buzz', 0.5);
+    q(hi, 'stamp', 0.5);
+    q(lo, 'trombone', 0.4);
+    q(dca, 'ding', 0.6);
+    for (let i = 0; i < 6; i++) q(fw + i * 10, 'coin', 0.3);
+    const Bull = () => (
+      <g>
+        <ellipse cx={0} cy={0} rx={130} ry={80} fill="#8C5A33" stroke={C.ink} strokeWidth={6} />
+        <circle cx={120} cy={-40} r={55} fill="#8C5A33" stroke={C.ink} strokeWidth={6} />
+        <path d="M 90 -80 Q 70 -150 110 -170 M 150 -80 Q 170 -150 130 -170" fill="none" stroke="#F4E1B5" strokeWidth={14} strokeLinecap="round" />
+        <circle cx={140} cy={-45} r={7} fill={C.ink} />
+        {[-80, -30, 30, 80].map((x) => <rect key={x} x={x - 10} y={60} width={20} height={60} fill="#6E4527" stroke={C.ink} strokeWidth={4} />)}
+      </g>
+    );
+    const Bear = () => (
+      <g>
+        <ellipse cx={0} cy={0} rx={130} ry={90} fill="#6B4F3A" stroke={C.ink} strokeWidth={6} />
+        <circle cx={-110} cy={-50} r={60} fill="#6B4F3A" stroke={C.ink} strokeWidth={6} />
+        <circle cx={-150} cy={-100} r={18} fill="#6B4F3A" stroke={C.ink} strokeWidth={5} />
+        <circle cx={-80} cy={-105} r={18} fill="#6B4F3A" stroke={C.ink} strokeWidth={5} />
+        <circle cx={-125} cy={-55} r={7} fill={C.ink} />
+        <path d="M 60 -40 Q 150 0 140 120" fill="none" stroke="#6B4F3A" strokeWidth={36} strokeLinecap="round" />
+        <path d="M 60 -40 Q 150 0 140 120" fill="none" stroke={C.ink} strokeWidth={4} strokeLinecap="round" strokeDasharray="1 400" />
+      </g>
+    );
+    scene(A('b1'), () =>
+      f < A('b4') ? (
+        <AbsoluteFill>
+          <Board />
+          <Svg>
+            <G2 x={520} y={560} s={pop(f, bl)}><Bull /></G2>
+            <G2 x={520} y={200} s={pop(f, hu)}><Text size={90} color={C.green}>↑ BULL market</Text></G2>
+            <G2 x={1400} y={560} s={pop(f, br)}><Bear /></G2>
+            <G2 x={1400} y={200} s={pop(f, dn)}><Text size={90} color={C.red}>↓ BEAR market</Text></G2>
+          </Svg>
+        </AbsoluteFill>
+      ) : f < A('b7') ? (
+        <AbsoluteFill>
+          <Board />
+          <Svg>
+            <LineChart x={960} y={520} w={1300} h={420} t={1} pts={[2, 3, 4.5, 6, 7.5, 7, 5, 3, 2, 2.5, 4, 5.5]} lo={0} hi={8.5} color={C.blue} />
+            <G2 x={960} y={130} s={pop(f, brain)}><Text size={60}>the real danger: your brain</Text></G2>
+            {f >= gr && <G2 x={1000} y={260}><Dave f={f} x={0} y={120} s={0.6} keys={[{at: 0, pose: 'celebrate', expr: 'grin'}]} /><Text y={-80} size={40} color={C.green}>BUY! (greedy)</Text></G2>}
+            {f >= sc && <G2 x={1330} y={620}><Dave f={f} x={0} y={120} s={0.6} keys={[{at: 0, pose: 'panic', expr: 'worried'}]} /><Text y={-80} size={40} color={C.red}>SELL! (scared)</Text></G2>}
+            <G2 x={960} y={900} s={pop(f, hi)}><Text size={56}>buy HIGH · sell LOW</Text></G2>
+          </Svg>
+        </AbsoluteFill>
+      ) : (
+        <AbsoluteFill>
+          <Board />
+          <Svg>
+            <G2 x={960} y={120} s={pop(f, dca)}><Text size={60}>Dollar-cost averaging: same $ every month</Text></G2>
+            {[['JAN', 50, 5], ['FEB', 25, 10], ['MAR', 40, 6], ['APR', 20, 12], ['MAY', 50, 5], ['JUN', 30, 8]].map(([m, p, n], i) => (
+              <G2 key={m as string} x={250 + i * 290} y={560} s={pop(f, fw + i * 10)}>
+                <rect x={-120} y={-220} width={240} height={440} rx={20} fill="#fff" stroke={C.ink} strokeWidth={5} />
+                <Text y={-180} size={36}>{m as string}</Text>
+                <Text y={-120} size={32} color="#5B6470">$250 in</Text>
+                <Text y={-60} size={40} color={(p as number) < 35 ? C.green : C.red}>{'price $' + p}</Text>
+                <Text y={20} size={50}>{n + ' shares'}</Text>
+              </G2>
+            ))}
+            <G2 x={960} y={900} s={pop(f, mo)}><Text size={48} color={C.green}>low prices → more shares · no guessing</Text></G2>
+          </Svg>
+        </AbsoluteFill>
+      ),
+    );
+  }
+
   // ============ CH7 ============
   {
     const bf = w('c7b', 'buffett');
