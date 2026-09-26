@@ -4,6 +4,8 @@ import {Episode, EpisodeProps} from './Episode';
 import {TAIL_SEC} from './timing';
 import {Thumb, ThumbProps, EP_THUMBS} from './Thumb';
 import {Avatar, AvatarProps} from './Avatar';
+import {ThumbV2, ThumbV2Props} from './v2';
+import {AvatarV2, AvatarV2Props, Banner, BannerGuide} from './v2/channel';
 import {Ep02Thumb} from './thumbs/ep02';
 import {Ep03Thumb} from './thumbs/ep03';
 import {Ep04Thumb} from './thumbs/ep04';
@@ -27,7 +29,11 @@ EP_THUMBS.ep10 = Ep10Thumb;
 export const Root: React.FC = () => (
   <>
   <Composition id="Avatar" component={Avatar} width={800} height={800} fps={30} durationInFrames={1} defaultProps={{v: 'A'} as AvatarProps} />
-  <Composition id="Thumb" component={Thumb} width={1280} height={720} fps={30} durationInFrames={1} defaultProps={{v: 'A'} as ThumbProps} />
+  <Composition id="AvatarV2" component={AvatarV2} width={800} height={800} fps={30} durationInFrames={1} defaultProps={{v: 'A'} as AvatarV2Props} />
+  <Composition id="Banner" component={Banner} width={2560} height={1440} fps={30} durationInFrames={1} />
+  <Composition id="BannerGuide" component={BannerGuide} width={2560} height={1440} fps={30} durationInFrames={1} />
+  <Composition id="ThumbV2"component={ThumbV2} width={1280} height={720} fps={30} durationInFrames={1} defaultProps={{ep: 'ep01', v: 'A'} as ThumbV2Props} />
+  <Composition id="Thumb"component={Thumb} width={1280} height={720} fps={30} durationInFrames={1} defaultProps={{v: 'A'} as ThumbProps} />
   <Composition
     id="Episode"
     component={Episode}

@@ -1,9 +1,9 @@
 import React from 'react';
-import {C, SW} from './theme';
+import {C, FONT, SW} from './theme';
 import {ease, lerp} from './anim';
 
 export type Pose = {torso: number; head: number; lu: number; ll: number; ru: number; rl: number; lt: number; ls: number; rt: number; rs: number};
-export type Expr = 'neutral' | 'happy' | 'grin' | 'sad' | 'shock' | 'worried' | 'smug' | 'think' | 'tired' | 'suspicious';
+export type Expr = 'neutral' | 'happy' | 'grin' | 'sad' | 'shock' | 'worried' | 'smug' | 'think' | 'tired' | 'suspicious' | 'angry' | 'money' | 'scream';
 export type Key = {at: number; pose?: string; expr?: Expr; look?: number; talk?: boolean};
 
 const L = {torso: 115, neck: 4, head: 36, ua: 62, la: 58, th: 70, sh: 66, sho: 14};
@@ -87,6 +87,22 @@ const Mouth: React.FC<{e: Expr; talk: boolean; f: number}> = ({e, talk, f}) => {
       return <path d="M -9 15 Q 0 11 9 15" {...s} />;
     case 'suspicious':
       return <path d="M -8 14 L 8 14" {...s} />;
+    case 'angry':
+      return <path d="M -12 18 Q 0 6 12 18 Z" fill={C.ink} stroke={C.ink} strokeWidth={3} strokeLinejoin="round" />;
+    case 'money':
+      return (
+        <g>
+          <path d="M -16 5 Q 0 32 16 5 Z" fill={C.ink} />
+          <path d="M -13 7 L 13 7 L 12 11 L -12 11 Z" fill="#fff" />
+        </g>
+      );
+    case 'scream':
+      return (
+        <g>
+          <ellipse cx={0} cy={17} rx={11} ry={14} fill={C.ink} />
+          <ellipse cx={0} cy={25} rx={6} ry={4} fill={C.red} />
+        </g>
+      );
     default:
       return <path d="M -8 11 Q 0 16 8 11" {...s} />;
   }
@@ -106,7 +122,12 @@ const Brows: React.FC<{e: Expr}> = ({e}) => {
     case 'tired':
       return pair('M -19 -13 L -7 -18', 'M 7 -18 L 19 -13');
     case 'shock':
+    case 'scream':
       return pair('M -18 -22 Q -12 -26 -6 -22', 'M 6 -22 Q 12 -26 18 -22');
+    case 'angry':
+      return pair('M -20 -21 L -5 -12', 'M 5 -12 L 20 -21');
+    case 'money':
+      return pair('M -18 -19 Q -12 -24 -6 -19', 'M 6 -19 Q 12 -24 18 -19');
     case 'smug':
       return pair('M -18 -14 L -6 -14', 'M 6 -21 Q 12 -25 18 -20');
     case 'think':
@@ -126,11 +147,20 @@ const Face: React.FC<{e: Expr; f: number; look: number; talk: boolean; seed: num
   const lid = e === 'tired' || e === 'suspicious' ? 0.45 : 1;
   const ry = blink ? 0.8 : 5.6 * lid;
   const lx = look * 5;
-  const big = e === 'shock' ? 1.25 : 1;
+  const big = e === 'shock' || e === 'scream' ? 1.25 : 1;
   return (
     <g>
-      <ellipse cx={-12 + lx} cy={-3} rx={4.3 * big} ry={ry * big} fill={C.ink} />
-      <ellipse cx={12 + lx} cy={-3} rx={4.3 * big} ry={ry * big} fill={C.ink} />
+      {e === 'money' ? (
+        [-12, 12].map((ex) => (
+          <text key={ex} x={ex + lx} y={-2} fontFamily={FONT} fontWeight={700} fontSize={19} fill={C.green} stroke={C.ink} strokeWidth={2} paintOrder="stroke" textAnchor="middle" dominantBaseline="middle">$</text>
+        ))
+      ) : (
+        <g>
+          <ellipse cx={-12 + lx} cy={-3} rx={4.3 * big} ry={ry * big} fill={C.ink} />
+          <ellipse cx={12 + lx} cy={-3} rx={4.3 * big} ry={ry * big} fill={C.ink} />
+          {(e === 'shock' || e === 'scream') && [-12, 12].map((ex) => <circle key={ex} cx={ex + lx + 1.5} cy={-6} r={1.6} fill="#fff" />)}
+        </g>
+      )}
       <Brows e={e} />
       <Mouth e={e} talk={talk} f={f} />
     </g>
