@@ -1,0 +1,320 @@
+{
+  "id": "ep08",
+  "title": "Why Is Gold So Expensive? It's Just a Yellow Rock",
+  "youtube": {
+    "title": "Why Is Gold So Expensive? (It's Just a Yellow Rock)",
+    "hook": "You can't eat it. You can't live in it. It just sits there. Yet all the gold ever mined, which fits in one cube about 22 meters wide, is worth around $30 trillion. And central banks are buying it like crazy. Here's why a shiny rock became the world's oldest money, what moves its price, and whether it's actually a good investment.",
+    "tags": [
+      "why is gold expensive",
+      "gold price explained",
+      "why gold is valuable",
+      "gold investment",
+      "central banks buying gold",
+      "gold standard explained",
+      "nixon shock 1971",
+      "gold vs inflation",
+      "how much gold exists",
+      "gold cube",
+      "warren buffett gold",
+      "economics explained",
+      "personal finance",
+      "finance for beginners",
+      "money explained"
+    ]
+  },
+  "sources": [
+    "World Gold Council: above-ground gold stocks ≈ 219,891 tonnes (end-2025)",
+    "Cube math: 219,891 t ÷ 19,320 kg/m³ (gold density) ≈ 11,400 m³ → ≈ 22.5 m per side",
+    "Gold price ≈ $4,300/oz (Sept 25, 2026); record above $5,000/oz in January 2026 (market data)",
+    "Value math: 219,891 t × 32,151 troy oz/t × ≈ $4,300 ≈ $30 trillion",
+    "World Gold Council, Gold Demand Trends: central banks bought 863 tonnes in 2025; more than 1,000 tonnes per year in 2022–2024; Poland added 102 tonnes",
+    "August 15, 1971: President Nixon suspended dollar convertibility into gold (official price $35/oz)",
+    "Gold fell from ≈ $1,900/oz (Sept 2011) to ≈ $1,050/oz (Dec 2015), about −45%",
+    "Warren Buffett, 2011 Berkshire Hathaway shareholder letter, on gold being unproductive",
+    "Lydia (modern-day Turkey) minted some of the first coins, around 600 BC"
+  ],
+  "beats": [
+    {
+      "id": "o1",
+      "text": "This is a rock.",
+      "pause": 0.35
+    },
+    {
+      "id": "o2",
+      "text": "You can't eat it. You can't drive it. You can't live in it. It doesn't do anything. It just... sits there.",
+      "pause": 0.35
+    },
+    {
+      "id": "o3",
+      "text": "And yet, one kilogram bar, smaller than your phone, costs more than a brand new car.",
+      "pause": 0.35
+    },
+    {
+      "id": "o4",
+      "text": "All the gold ever mined in human history would fit inside one cube, about twenty two meters wide. And that cube is worth around thirty trillion dollars.",
+      "pause": 0.35
+    },
+    {
+      "id": "o5",
+      "text": "Right now, the most powerful banks on Earth are buying it like crazy. Why?",
+      "pause": 0.35
+    },
+    {
+      "id": "o6",
+      "text": "Today: why a yellow rock became the world's oldest money, what makes its price go up and down, who's buying it, and whether it's actually a good investment.",
+      "pause": 0.6
+    },
+    {
+      "id": "c1a",
+      "chapter": "A Very Weird Rock",
+      "text": "Let's start with a simple question. Why gold? Why not rocks, or sand, or potatoes?",
+      "pause": 0.5
+    },
+    {
+      "id": "c1b",
+      "text": "Because gold has a strange set of superpowers.",
+      "pause": 0.4
+    },
+    {
+      "id": "c1c",
+      "text": "Superpower one: it's rare. Rare enough to be special, but not so rare that nobody has any.",
+      "pause": 0.4
+    },
+    {
+      "id": "c1d",
+      "text": "Superpower two: it never rusts. Gold buried for thousands of years comes out of the ground still shining. Ancient Egyptian treasures still glow today.",
+      "pause": 0.5
+    },
+    {
+      "id": "c1e",
+      "text": "Superpower three: you can melt it, cut it, and split it into tiny pieces, and every piece keeps its value.",
+      "pause": 0.4
+    },
+    {
+      "id": "c1f",
+      "text": "Superpower four: it's very hard to fake. Gold is extremely heavy for its size.",
+      "pause": 0.4
+    },
+    {
+      "id": "c1g",
+      "text": "And superpower five: nobody can print it. The only way to get more is to dig it out of the ground. Slowly. Expensively.",
+      "pause": 0.6
+    },
+    {
+      "id": "c1h",
+      "text": "Compare that to potatoes. They rot. Anyone can grow more. And a potato coin would not age well.",
+      "pause": 0.9
+    },
+    {
+      "id": "c2a",
+      "chapter": "5,000 Years of Money",
+      "text": "Humans have loved gold for about five thousand years.",
+      "pause": 0.4
+    },
+    {
+      "id": "c2b",
+      "text": "Around six hundred BC, in a kingdom called Lydia, in what is now Turkey, people started stamping metal into coins. Some of the first coins ever made.",
+      "pause": 0.5
+    },
+    {
+      "id": "c2c",
+      "text": "For centuries after that, gold and silver were money.",
+      "pause": 0.4
+    },
+    {
+      "id": "c2d",
+      "text": "Later, carrying heavy gold around got annoying. So people started using paper instead. But that paper was a promise. A ticket you could trade in for real gold.",
+      "pause": 0.5
+    },
+    {
+      "id": "c2e",
+      "text": "America did this for a long time. The dollar was linked to gold. Foreign governments could trade thirty five dollars for one ounce.",
+      "pause": 0.5
+    },
+    {
+      "id": "c2f",
+      "text": "Then, on August fifteenth, nineteen seventy one, President Nixon went on TV and ended that deal.",
+      "pause": 0.5
+    },
+    {
+      "id": "c2g",
+      "text": "From that day on, the dollar wasn't backed by gold anymore. It was backed by... trust. And that's how money works today.",
+      "pause": 0.5
+    },
+    {
+      "id": "c2h",
+      "text": "Gold used to be worth thirty five dollars an ounce. Today it's more than four thousand.",
+      "pause": 0.9
+    },
+    {
+      "id": "c3a",
+      "chapter": "The Gold Cube",
+      "text": "Now let's go back to that cube. Because it's hard to believe.",
+      "pause": 0.4
+    },
+    {
+      "id": "c3b",
+      "text": "Every ring, every coin, every bar, every gold tooth ever made. About two hundred twenty thousand tonnes.",
+      "pause": 0.5
+    },
+    {
+      "id": "c3c",
+      "text": "Melt it all together, and you get a cube about twenty two meters on each side. Roughly the height of a seven story building.",
+      "pause": 0.5
+    },
+    {
+      "id": "c3d",
+      "text": "That's it. That's all the gold humanity has ever pulled out of the ground.",
+      "pause": 0.5
+    },
+    {
+      "id": "c3e",
+      "text": "And that cube is worth around thirty trillion dollars.",
+      "pause": 0.5
+    },
+    {
+      "id": "c3f",
+      "text": "Fun fact: that's still less than America's national debt. Remember? Forty trillion.",
+      "pause": 0.9
+    },
+    {
+      "id": "c4a",
+      "chapter": "Why the Price Moves",
+      "text": "So why does the price of gold go up and down? Four big reasons.",
+      "pause": 0.4
+    },
+    {
+      "id": "c4b",
+      "text": "Reason one: fear. When there's a war, a crisis, or a crash, people run to gold. It's the money you can hold in your hand when everything else feels shaky.",
+      "pause": 0.5
+    },
+    {
+      "id": "c4c",
+      "text": "Reason two: inflation. Remember the shrinking dollar? Governments can print more dollars. They can't print more gold. So when people fear inflation, gold often looks attractive.",
+      "pause": 0.5
+    },
+    {
+      "id": "c4d",
+      "text": "Reason three: interest rates. Gold doesn't pay you anything. A savings account does. So when interest rates are high, holding gold means missing out on that interest.",
+      "pause": 0.5
+    },
+    {
+      "id": "c4e",
+      "text": "And reason four: who's buying. Jewelry lovers, investors, and one very special group of buyers.",
+      "pause": 0.9
+    },
+    {
+      "id": "c5a",
+      "chapter": "The Central Bank Rush",
+      "text": "Central banks. The banks that run entire countries' money.",
+      "pause": 0.4
+    },
+    {
+      "id": "c5b",
+      "text": "From twenty twenty two to twenty twenty four, central banks bought more than one thousand tonnes of gold every single year. In twenty twenty five, another eight hundred and sixty three tonnes.",
+      "pause": 0.5
+    },
+    {
+      "id": "c5c",
+      "text": "Poland alone added more than one hundred tonnes last year.",
+      "pause": 0.4
+    },
+    {
+      "id": "c5d",
+      "text": "Why? Here's one big reason. In twenty twenty two, after Russia invaded Ukraine, Western countries froze a huge part of Russia's savings held abroad.",
+      "pause": 0.5
+    },
+    {
+      "id": "c5e",
+      "text": "Countries around the world noticed. Money in someone else's bank can be frozen. But gold sitting in your own vault? Nobody can switch that off.",
+      "pause": 0.6
+    },
+    {
+      "id": "c5f",
+      "text": "So many countries decided to keep more of their savings in the one thing nobody controls. Gold.",
+      "pause": 0.5
+    },
+    {
+      "id": "c5g",
+      "text": "And when the biggest banks on Earth keep buying, prices tend to go up. Gold hit record highs above five thousand dollars an ounce earlier this year.",
+      "pause": 0.9
+    },
+    {
+      "id": "c6a",
+      "chapter": "Is Gold a Good Investment?",
+      "text": "So should everyone buy gold? Let's look at both sides. This is education, not advice.",
+      "pause": 0.4
+    },
+    {
+      "id": "c6b",
+      "text": "The good side: over very long periods, gold has kept its value while paper money lost value. And in panics, it often holds up.",
+      "pause": 0.5
+    },
+    {
+      "id": "c6c",
+      "text": "The other side: gold produces nothing. It pays no interest. No rent. No profits.",
+      "pause": 0.5
+    },
+    {
+      "id": "c6d",
+      "text": "Remember McDonald's? Its land earns rent every month. A gold bar just sits there, looking pretty.",
+      "pause": 0.5
+    },
+    {
+      "id": "c6e",
+      "text": "The famous investor Warren Buffett once made exactly this point. A giant cube of gold will never make anything. It will just be a cube.",
+      "pause": 0.5
+    },
+    {
+      "id": "c6f",
+      "text": "And gold can crash too. From twenty eleven to twenty fifteen, its price fell by about forty five percent.",
+      "pause": 0.5
+    },
+    {
+      "id": "c6g",
+      "text": "Then there's the practical stuff. Where do you keep it? Who guards it? How do you sell it quickly?",
+      "pause": 0.5
+    },
+    {
+      "id": "c6h",
+      "text": "So gold is a tool. Great for some situations, not magic. Like a fire extinguisher: you're glad to have one, but it won't pay your rent.",
+      "pause": 0.9
+    },
+    {
+      "id": "c7a",
+      "chapter": "Now You Know",
+      "text": "So let's recap.",
+      "pause": 0.4
+    },
+    {
+      "id": "c7b",
+      "text": "One. Gold is valuable because it's rare, it lasts forever, it's hard to fake, and nobody can print it.",
+      "pause": 0.5
+    },
+    {
+      "id": "c7c",
+      "text": "Two. Its price moves with fear, inflation, interest rates, and big buyers. Especially central banks.",
+      "pause": 0.5
+    },
+    {
+      "id": "c7d",
+      "text": "Three. It protects value, but it produces nothing. It's a safety tool, not a money machine.",
+      "pause": 0.6
+    },
+    {
+      "id": "c7e",
+      "text": "Now, Warren Buffett's point raises a big question. If gold just sits there, what does make money over time?",
+      "pause": 0.4
+    },
+    {
+      "id": "c7f",
+      "text": "His answer: owning pieces of real businesses. Stocks. But what is a stock, really? And why do stock prices move?",
+      "pause": 0.5
+    },
+    {
+      "id": "c7g",
+      "text": "That's next. Explained with a lemonade stand. Subscribe, it's worth more than gold.",
+      "pause": 1.4
+    }
+  ]
+}

@@ -4,7 +4,23 @@
   "youtube": {
     "title": "Why a $300,000 House Costs You $720,000",
     "hook": "Dave borrowed $300,000 to buy a house. By the time he's done, he'll pay the bank about $720,000. And for the first five years, almost none of his money goes toward the house. Here's how mortgages really work, the costs nobody mentions, and one simple habit that can save over $100,000.",
-    "tags": ["how mortgages work", "mortgage explained", "mortgage interest", "amortization explained", "first time home buyer", "30 year vs 15 year mortgage", "extra mortgage payments", "closing costs", "PMI explained", "rent vs buy", "fannie mae freddie mac", "personal finance", "finance for beginners", "real estate explained", "money explained"]
+    "tags": [
+      "how mortgages work",
+      "mortgage explained",
+      "mortgage interest",
+      "amortization explained",
+      "first time home buyer",
+      "30 year vs 15 year mortgage",
+      "extra mortgage payments",
+      "closing costs",
+      "PMI explained",
+      "rent vs buy",
+      "fannie mae freddie mac",
+      "personal finance",
+      "finance for beginners",
+      "real estate explained",
+      "money explained"
+    ]
   },
   "sources": [
     "Freddie Mac Primary Mortgage Market Survey: 30-year fixed averaged 7.03% (Sept 24, 2026)",
@@ -15,86 +31,378 @@
     "CFPB: closing costs typically 2%–5% of the loan amount; PMI usually required with less than 20% down on conventional loans"
   ],
   "beats": [
-    {"id": "o1", "text": "Dave just bought a house. He borrowed three hundred thousand dollars to do it.", "pause": 0.5},
-    {"id": "o2", "text": "By the time Dave pays it off, he will have paid the bank about seven hundred and twenty thousand dollars.", "pause": 0.7},
-    {"id": "o3", "text": "That's more than double.", "pause": 0.6},
-    {"id": "o4", "text": "And here's the part that hurts. For the first five years, almost none of Dave's money goes toward the house.", "pause": 0.7},
-    {"id": "o5", "text": "Today: how a mortgage really works, why your first payments barely touch the loan, the costs nobody tells you about, and one simple habit that can save you more than one hundred thousand dollars.", "pause": 0.9},
-
-    {"id": "c1a", "chapter": "Dave Wants a House", "text": "Dave is tired of renting.", "pause": 0.4},
-    {"id": "c1b", "text": "Every month, he pays his landlord. And every month, that money is gone.", "pause": 0.5},
-    {"id": "c1c", "text": "So Dave finds a little house. The price is three hundred thousand dollars.", "pause": 0.4},
-    {"id": "c1d", "text": "Dave does not have three hundred thousand dollars. Dave has a cat.", "pause": 0.7},
-    {"id": "c1e", "text": "So he goes to the bank, and asks for a mortgage.", "pause": 0.4},
-    {"id": "c1f", "text": "A mortgage is just a loan for a house. But with one big rule: the house is the promise.", "pause": 0.4},
-    {"id": "c1g", "text": "If Dave stops paying, the bank can take the house. That's called foreclosure.", "pause": 0.6},
-    {"id": "c1h", "text": "And yes. Just like in our first video, the bank creates that money with a click.", "pause": 0.9},
-
-    {"id": "c2a", "chapter": "The Price of Borrowing", "text": "Now, the bank doesn't lend for free. It charges interest.", "pause": 0.4},
-    {"id": "c2b", "text": "Right now, a typical thirty year mortgage in America costs about seven percent a year.", "pause": 0.5},
-    {"id": "c2c", "text": "Think of borrowing money like renting a bouncy castle. You pay for how big it is. And how long you keep it.", "pause": 0.5},
-    {"id": "c2d", "text": "Dave's castle is huge. Three hundred thousand dollars. And he's keeping it for thirty years.", "pause": 0.6},
-    {"id": "c2e", "text": "So Dave's monthly payment is about two thousand dollars.", "pause": 0.4},
-    {"id": "c2f", "text": "Two thousand dollars, every month, for thirty years. That's three hundred and sixty payments.", "pause": 0.5},
-    {"id": "c2g", "text": "Add them all up, and you get about seven hundred and twenty thousand dollars.", "pause": 0.5},
-    {"id": "c2h", "text": "Three hundred thousand for the house. And about four hundred and twenty thousand, just for borrowing the money.", "pause": 0.6},
-    {"id": "c2i", "text": "Dave is basically buying the house... and then buying it again for the bank. With a little extra on top.", "pause": 0.6},
-    {"id": "c2j", "text": "And remember, that is just the loan itself. We haven't even talked about the extra costs yet. Stay with me.", "pause": 0.8},
-
-    {"id": "c3a", "chapter": "Where Your Payment Goes", "text": "Now here's the part most people never notice.", "pause": 0.4},
-    {"id": "c3b", "text": "Let's look at Dave's very first payment. Two thousand dollars.", "pause": 0.4},
-    {"id": "c3c", "text": "How much of it goes toward the house?", "pause": 0.7},
-    {"id": "c3d", "text": "Two hundred and forty four dollars.", "pause": 0.5},
-    {"id": "c3e", "text": "The other one thousand seven hundred and fifty eight dollars? Interest. Straight to the bank.", "pause": 0.6},
-    {"id": "c3f", "text": "Imagine ordering a pizza with eight slices. The bank eats seven. Dave gets one.", "pause": 0.7},
-    {"id": "c3g", "text": "Why? Because interest is calculated on what you still owe. And at the start, Dave owes almost everything.", "pause": 0.5},
-    {"id": "c3h", "text": "As the years go by, the loan slowly shrinks. So the interest shrinks. And more of each payment goes to the house.", "pause": 0.5},
-    {"id": "c3i", "text": "But it's slow. Painfully slow.", "pause": 0.4},
-    {"id": "c3j", "text": "After five full years, Dave has paid about one hundred and twenty thousand dollars. And his loan went down by only seventeen thousand.", "pause": 0.7},
-    {"id": "c3k", "text": "It takes about twenty years before more of Dave's payment goes to the house than to the bank.", "pause": 0.5},
-    {"id": "c3l", "text": "Twenty years. Dave's cat will be very, very old.", "pause": 0.9},
-
-    {"id": "c4a", "chapter": "The Costs Nobody Mentions", "text": "And that two thousand dollars a month? That's not even the full cost of owning a home.", "pause": 0.4},
-    {"id": "c4b", "text": "First, closing costs. Fees for lawyers, appraisals, paperwork. Usually two to five percent of the loan. On Dave's loan, that could be six to fifteen thousand dollars, on day one.", "pause": 0.5},
-    {"id": "c4c", "text": "Then property taxes. Every year. Forever. Even after the loan is paid off.", "pause": 0.4},
-    {"id": "c4d", "text": "Then home insurance. Because houses can burn, flood, or get hit by a very confused truck.", "pause": 0.5},
-    {"id": "c4e", "text": "If Dave put down less than twenty percent, he'll usually pay mortgage insurance too. That's insurance that protects the bank. Not Dave. The bank.", "pause": 0.5},
-    {"id": "c4f", "text": "And then, the house itself starts asking for money. A new roof. A broken water heater. A mysterious noise in the wall.", "pause": 0.5},
-    {"id": "c4g", "text": "When you rent, that's the landlord's problem. When you own, it's yours.", "pause": 0.5},
-    {"id": "c4h", "text": "Put it all together, and owning a home usually costs a lot more than the monthly payment on the loan.", "pause": 0.9},
-
-    {"id": "c5a", "chapter": "Who Really Owns Your Loan?", "text": "Here's a plot twist.", "pause": 0.4},
-    {"id": "c5b", "text": "A few months after Dave signs, he gets a letter. It says: your loan has been transferred.", "pause": 0.5},
-    {"id": "c5c", "text": "The bank that gave Dave the money often doesn't keep the loan. It sells it.", "pause": 0.4},
-    {"id": "c5d", "text": "Many mortgages get bundled together, like a big sandwich of loans, and sold to investors all over the world.", "pause": 0.5},
-    {"id": "c5e", "text": "About half of all mortgage debt in America is packaged by two giant government-backed companies, called Fannie Mae and Freddie Mac.", "pause": 0.5},
-    {"id": "c5f", "text": "The original bank gets its money back quickly. So it can make another loan. And another. And another.", "pause": 0.5},
-    {"id": "c5g", "text": "In total, Americans owe about thirteen trillion dollars on their mortgages.", "pause": 0.9},
-
-    {"id": "c6a", "chapter": "So Is Renting Better?", "text": "So wait. Is buying a house a bad idea?", "pause": 0.4},
-    {"id": "c6b", "text": "Not necessarily. It depends.", "pause": 0.4},
-    {"id": "c6c", "text": "When Dave pays rent, none of it comes back. When Dave pays his mortgage, at least part of it builds something he owns. That part is called equity.", "pause": 0.5},
-    {"id": "c6d", "text": "And houses often go up in value over time. The typical American home now sells for about four hundred and twenty nine thousand dollars.", "pause": 0.5},
-    {"id": "c6e", "text": "But renting has advantages too. You can move easily. No surprise roof bills. And the money you don't spend on a house can be saved or invested elsewhere.", "pause": 0.5},
-    {"id": "c6f", "text": "The real answer depends on how long you'll stay, the prices where you live, and your interest rate. There's no one size fits all.", "pause": 0.5},
-    {"id": "c6g", "text": "A common rule of thumb: if you might move within a few years, renting often makes more sense. Because buying and selling a house is expensive.", "pause": 0.5},
-    {"id": "c6h", "text": "Agents, closing costs, moving trucks. Selling a home can easily cost several percent of its price. You need time for your equity to grow enough to cover that.", "pause": 0.9},
-
-    {"id": "c7a", "chapter": "The $100,000 Habit", "text": "Now, the good news. Because interest is calculated on what you owe, every extra dollar you pay early saves you interest for years.", "pause": 0.5},
-    {"id": "c7b", "text": "Let's say Dave pays just two hundred dollars extra every month.", "pause": 0.4},
-    {"id": "c7c", "text": "He finishes his loan about seven years early. And saves about one hundred and seventeen thousand dollars in interest.", "pause": 0.7},
-    {"id": "c7d", "text": "Two hundred dollars a month. One hundred and seventeen thousand dollars saved. That's the power of shrinking the loan early.", "pause": 0.5},
-    {"id": "c7d2", "text": "Some people do something similar by paying half their payment every two weeks. Twenty six half payments a year adds up to one extra full payment. Every year.", "pause": 0.6},
-    {"id": "c7e", "text": "Another option is a fifteen year mortgage. The monthly payment is higher. But even at the same rate, Dave would pay about two hundred and thirty thousand dollars less in interest.", "pause": 0.5},
-    {"id": "c7f", "text": "And one more thing. Rates can be different from one lender to another. Comparing offers before you sign can make a big difference.", "pause": 0.5},
-    {"id": "c7g", "text": "Just check that your loan doesn't have a penalty for paying early. Most don't, but always ask.", "pause": 0.9},
-
-    {"id": "c8a", "chapter": "Now You Know", "text": "So let's recap.", "pause": 0.4},
-    {"id": "c8b", "text": "One. On a thirty year loan at seven percent, you can pay more than double what you borrowed.", "pause": 0.5},
-    {"id": "c8c", "text": "Two. Early payments are mostly interest. The house part grows painfully slowly.", "pause": 0.5},
-    {"id": "c8d", "text": "Three. Extra payments early on, shorter loans, and shopping around for a lower rate can save a fortune.", "pause": 0.6},
-    {"id": "c8e", "text": "Now, speaking of houses and land. There's a very famous company that sells billions of burgers.", "pause": 0.4},
-    {"id": "c8f", "text": "But many experts say McDonald's isn't really a burger company at all.", "pause": 0.5},
-    {"id": "c8g", "text": "So what is it? That's next. Subscribe, so Dave's cat can watch it too.", "pause": 1.4}
+    {
+      "id": "o1",
+      "text": "Dave just bought a house. He borrowed three hundred thousand dollars to do it.",
+      "pause": 0.35
+    },
+    {
+      "id": "o2",
+      "text": "By the time Dave pays it off, he will have paid the bank about seven hundred and twenty thousand dollars.",
+      "pause": 0.35
+    },
+    {
+      "id": "o3",
+      "text": "That's more than double.",
+      "pause": 0.35
+    },
+    {
+      "id": "o4",
+      "text": "And here's the part that hurts. For the first five years, almost none of Dave's money goes toward the house.",
+      "pause": 0.35
+    },
+    {
+      "id": "o5",
+      "text": "Today: how a mortgage really works, why your first payments barely touch the loan, the costs nobody tells you about, and one simple habit that can save you more than one hundred thousand dollars.",
+      "pause": 0.6
+    },
+    {
+      "id": "c1a",
+      "chapter": "Dave Wants a House",
+      "text": "Dave is tired of renting.",
+      "pause": 0.4
+    },
+    {
+      "id": "c1b",
+      "text": "Every month, he pays his landlord. And every month, that money is gone.",
+      "pause": 0.5
+    },
+    {
+      "id": "c1c",
+      "text": "So Dave finds a little house. The price is three hundred thousand dollars.",
+      "pause": 0.4
+    },
+    {
+      "id": "c1d",
+      "text": "Dave does not have three hundred thousand dollars. Dave has a cat.",
+      "pause": 0.7
+    },
+    {
+      "id": "c1e",
+      "text": "So he goes to the bank, and asks for a mortgage.",
+      "pause": 0.4
+    },
+    {
+      "id": "c1f",
+      "text": "A mortgage is just a loan for a house. But with one big rule: the house is the promise.",
+      "pause": 0.4
+    },
+    {
+      "id": "c1g",
+      "text": "If Dave stops paying, the bank can take the house. That's called foreclosure.",
+      "pause": 0.6
+    },
+    {
+      "id": "c1h",
+      "text": "And yes. Just like in our first video, the bank creates that money with a click.",
+      "pause": 0.9
+    },
+    {
+      "id": "c2a",
+      "chapter": "The Price of Borrowing",
+      "text": "Now, the bank doesn't lend for free. It charges interest.",
+      "pause": 0.4
+    },
+    {
+      "id": "c2b",
+      "text": "Right now, a typical thirty year mortgage in America costs about seven percent a year.",
+      "pause": 0.5
+    },
+    {
+      "id": "c2c",
+      "text": "Think of borrowing money like renting a bouncy castle. You pay for how big it is. And how long you keep it.",
+      "pause": 0.5
+    },
+    {
+      "id": "c2d",
+      "text": "Dave's castle is huge. Three hundred thousand dollars. And he's keeping it for thirty years.",
+      "pause": 0.6
+    },
+    {
+      "id": "c2e",
+      "text": "So Dave's monthly payment is about two thousand dollars.",
+      "pause": 0.4
+    },
+    {
+      "id": "c2f",
+      "text": "Two thousand dollars, every month, for thirty years. That's three hundred and sixty payments.",
+      "pause": 0.5
+    },
+    {
+      "id": "c2g",
+      "text": "Add them all up, and you get about seven hundred and twenty thousand dollars.",
+      "pause": 0.5
+    },
+    {
+      "id": "c2h",
+      "text": "Three hundred thousand for the house. And about four hundred and twenty thousand, just for borrowing the money.",
+      "pause": 0.6
+    },
+    {
+      "id": "c2i",
+      "text": "Dave is basically buying the house... and then buying it again for the bank. With a little extra on top.",
+      "pause": 0.6
+    },
+    {
+      "id": "c2j",
+      "text": "And remember, that is just the loan itself. We haven't even talked about the extra costs yet. Stay with me.",
+      "pause": 0.8
+    },
+    {
+      "id": "c3a",
+      "chapter": "Where Your Payment Goes",
+      "text": "Now here's the part most people never notice.",
+      "pause": 0.4
+    },
+    {
+      "id": "c3b",
+      "text": "Let's look at Dave's very first payment. Two thousand dollars.",
+      "pause": 0.4
+    },
+    {
+      "id": "c3c",
+      "text": "How much of it goes toward the house?",
+      "pause": 0.7
+    },
+    {
+      "id": "c3d",
+      "text": "Two hundred and forty four dollars.",
+      "pause": 0.5
+    },
+    {
+      "id": "c3e",
+      "text": "The other one thousand seven hundred and fifty eight dollars? Interest. Straight to the bank.",
+      "pause": 0.6
+    },
+    {
+      "id": "c3f",
+      "text": "Imagine ordering a pizza with eight slices. The bank eats seven. Dave gets one.",
+      "pause": 0.7
+    },
+    {
+      "id": "c3g",
+      "text": "Why? Because interest is calculated on what you still owe. And at the start, Dave owes almost everything.",
+      "pause": 0.5
+    },
+    {
+      "id": "c3h",
+      "text": "As the years go by, the loan slowly shrinks. So the interest shrinks. And more of each payment goes to the house.",
+      "pause": 0.5
+    },
+    {
+      "id": "c3i",
+      "text": "But it's slow. Painfully slow.",
+      "pause": 0.4
+    },
+    {
+      "id": "c3j",
+      "text": "After five full years, Dave has paid about one hundred and twenty thousand dollars. And his loan went down by only seventeen thousand.",
+      "pause": 0.7
+    },
+    {
+      "id": "c3k",
+      "text": "It takes about twenty years before more of Dave's payment goes to the house than to the bank.",
+      "pause": 0.5
+    },
+    {
+      "id": "c3l",
+      "text": "Twenty years. Dave's cat will be very, very old.",
+      "pause": 0.9
+    },
+    {
+      "id": "c4a",
+      "chapter": "The Costs Nobody Mentions",
+      "text": "And that two thousand dollars a month? That's not even the full cost of owning a home.",
+      "pause": 0.4
+    },
+    {
+      "id": "c4b",
+      "text": "First, closing costs. Fees for lawyers, appraisals, paperwork. Usually two to five percent of the loan. On Dave's loan, that could be six to fifteen thousand dollars, on day one.",
+      "pause": 0.5
+    },
+    {
+      "id": "c4c",
+      "text": "Then property taxes. Every year. Forever. Even after the loan is paid off.",
+      "pause": 0.4
+    },
+    {
+      "id": "c4d",
+      "text": "Then home insurance. Because houses can burn, flood, or get hit by a very confused truck.",
+      "pause": 0.5
+    },
+    {
+      "id": "c4e",
+      "text": "If Dave put down less than twenty percent, he'll usually pay mortgage insurance too. That's insurance that protects the bank. Not Dave. The bank.",
+      "pause": 0.5
+    },
+    {
+      "id": "c4f",
+      "text": "And then, the house itself starts asking for money. A new roof. A broken water heater. A mysterious noise in the wall.",
+      "pause": 0.5
+    },
+    {
+      "id": "c4g",
+      "text": "When you rent, that's the landlord's problem. When you own, it's yours.",
+      "pause": 0.5
+    },
+    {
+      "id": "c4h",
+      "text": "Put it all together, and owning a home usually costs a lot more than the monthly payment on the loan.",
+      "pause": 0.9
+    },
+    {
+      "id": "c5a",
+      "chapter": "Who Really Owns Your Loan?",
+      "text": "Here's a plot twist.",
+      "pause": 0.4
+    },
+    {
+      "id": "c5b",
+      "text": "A few months after Dave signs, he gets a letter. It says: your loan has been transferred.",
+      "pause": 0.5
+    },
+    {
+      "id": "c5c",
+      "text": "The bank that gave Dave the money often doesn't keep the loan. It sells it.",
+      "pause": 0.4
+    },
+    {
+      "id": "c5d",
+      "text": "Many mortgages get bundled together, like a big sandwich of loans, and sold to investors all over the world.",
+      "pause": 0.5
+    },
+    {
+      "id": "c5e",
+      "text": "About half of all mortgage debt in America is packaged by two giant government-backed companies, called Fannie Mae and Freddie Mac.",
+      "pause": 0.5
+    },
+    {
+      "id": "c5f",
+      "text": "The original bank gets its money back quickly. So it can make another loan. And another. And another.",
+      "pause": 0.5
+    },
+    {
+      "id": "c5g",
+      "text": "In total, Americans owe about thirteen trillion dollars on their mortgages.",
+      "pause": 0.9
+    },
+    {
+      "id": "c6a",
+      "chapter": "So Is Renting Better?",
+      "text": "So wait. Is buying a house a bad idea?",
+      "pause": 0.4
+    },
+    {
+      "id": "c6b",
+      "text": "Not necessarily. It depends.",
+      "pause": 0.4
+    },
+    {
+      "id": "c6c",
+      "text": "When Dave pays rent, none of it comes back. When Dave pays his mortgage, at least part of it builds something he owns. That part is called equity.",
+      "pause": 0.5
+    },
+    {
+      "id": "c6d",
+      "text": "And houses often go up in value over time. The typical American home now sells for about four hundred and twenty nine thousand dollars.",
+      "pause": 0.5
+    },
+    {
+      "id": "c6e",
+      "text": "But renting has advantages too. You can move easily. No surprise roof bills. And the money you don't spend on a house can be saved or invested elsewhere.",
+      "pause": 0.5
+    },
+    {
+      "id": "c6f",
+      "text": "The real answer depends on how long you'll stay, the prices where you live, and your interest rate. There's no one size fits all.",
+      "pause": 0.5
+    },
+    {
+      "id": "c6g",
+      "text": "A common rule of thumb: if you might move within a few years, renting often makes more sense. Because buying and selling a house is expensive.",
+      "pause": 0.5
+    },
+    {
+      "id": "c6h",
+      "text": "Agents, closing costs, moving trucks. Selling a home can easily cost several percent of its price. You need time for your equity to grow enough to cover that.",
+      "pause": 0.9
+    },
+    {
+      "id": "c7a",
+      "chapter": "The $100,000 Habit",
+      "text": "Now, the good news. Because interest is calculated on what you owe, every extra dollar you pay early saves you interest for years.",
+      "pause": 0.5
+    },
+    {
+      "id": "c7b",
+      "text": "Let's say Dave pays just two hundred dollars extra every month.",
+      "pause": 0.4
+    },
+    {
+      "id": "c7c",
+      "text": "He finishes his loan about seven years early. And saves about one hundred and seventeen thousand dollars in interest.",
+      "pause": 0.7
+    },
+    {
+      "id": "c7d",
+      "text": "Two hundred dollars a month. One hundred and seventeen thousand dollars saved. That's the power of shrinking the loan early.",
+      "pause": 0.5
+    },
+    {
+      "id": "c7d2",
+      "text": "Some people do something similar by paying half their payment every two weeks. Twenty six half payments a year adds up to one extra full payment. Every year.",
+      "pause": 0.6
+    },
+    {
+      "id": "c7e",
+      "text": "Another option is a fifteen year mortgage. The monthly payment is higher. But even at the same rate, Dave would pay about two hundred and thirty thousand dollars less in interest.",
+      "pause": 0.5
+    },
+    {
+      "id": "c7f",
+      "text": "And one more thing. Rates can be different from one lender to another. Comparing offers before you sign can make a big difference.",
+      "pause": 0.5
+    },
+    {
+      "id": "c7g",
+      "text": "Just check that your loan doesn't have a penalty for paying early. Most don't, but always ask.",
+      "pause": 0.9
+    },
+    {
+      "id": "c8a",
+      "chapter": "Now You Know",
+      "text": "So let's recap.",
+      "pause": 0.4
+    },
+    {
+      "id": "c8b",
+      "text": "One. On a thirty year loan at seven percent, you can pay more than double what you borrowed.",
+      "pause": 0.5
+    },
+    {
+      "id": "c8c",
+      "text": "Two. Early payments are mostly interest. The house part grows painfully slowly.",
+      "pause": 0.5
+    },
+    {
+      "id": "c8d",
+      "text": "Three. Extra payments early on, shorter loans, and shopping around for a lower rate can save a fortune.",
+      "pause": 0.6
+    },
+    {
+      "id": "c8e",
+      "text": "Now, speaking of houses and land. There's a very famous company that sells billions of burgers.",
+      "pause": 0.4
+    },
+    {
+      "id": "c8f",
+      "text": "But many experts say McDonald's isn't really a burger company at all.",
+      "pause": 0.5
+    },
+    {
+      "id": "c8g",
+      "text": "So what is it? That's next. Subscribe, so Dave's cat can watch it too.",
+      "pause": 1.4
+    }
   ]
 }

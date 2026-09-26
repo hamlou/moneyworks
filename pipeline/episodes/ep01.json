@@ -4,7 +4,23 @@
   "youtube": {
     "title": "Banks Don't Lend You Money. They Create It Out of Nothing.",
     "hook": "You borrow $10,000 from a bank. Where does that money actually come from? Not from anyone's savings. The bank types a number, and new money appears. And when you pay it back, it disappears forever. Here's how the money in your account was really born, explained simply (with a duck).",
-    "tags": ["how banks create money", "money creation", "how banks work", "where does money come from", "fractional reserve banking", "bank loans explained", "how loans work", "bank run", "silicon valley bank", "federal reserve explained", "interest rates explained", "economics explained", "personal finance", "finance for beginners", "money explained"]
+    "tags": [
+      "how banks create money",
+      "money creation",
+      "how banks work",
+      "where does money come from",
+      "fractional reserve banking",
+      "bank loans explained",
+      "how loans work",
+      "bank run",
+      "silicon valley bank",
+      "federal reserve explained",
+      "interest rates explained",
+      "economics explained",
+      "personal finance",
+      "finance for beginners",
+      "money explained"
+    ]
   },
   "sources": [
     "McLeay, Radia & Thomas (2014), 'Money creation in the modern economy', Bank of England Quarterly Bulletin 2014 Q1",
@@ -14,111 +30,503 @@
     "FDIC: standard deposit insurance amount $250,000 per depositor, per insured bank, per ownership category"
   ],
   "beats": [
-    {"id": "o1", "text": "Ten thousand dollars just appeared. Out of nothing.", "pause": 0.6},
-    {"id": "o2", "text": "No printer. No gold. No vault. Just a guy... pressing a button.", "pause": 0.5},
-    {"id": "o3", "text": "And here's the crazy part.", "pause": 0.4},
-    {"id": "o4", "text": "When Dave pays it back... that money will disappear. Forever.", "pause": 0.7},
-    {"id": "o5", "text": "This is not a conspiracy. It's not a movie. It's how almost every dollar in your bank account was born.", "pause": 0.6},
-    {"id": "o6", "text": "In the next few minutes, you'll learn where money really comes from, why banks love it when you borrow, and the one thing that can break the whole system.", "pause": 0.5},
-    {"id": "o7", "text": "And we'll explain it so simply... even a duck could understand it.", "pause": 0.9},
-
-    {"id": "c1a", "chapter": "Dave Needs a Car", "text": "Meet Dave.", "pause": 0.5},
-    {"id": "c1b", "text": "Dave is a normal guy. He has a normal job, a normal apartment, and a very, very old car.", "pause": 0.5},
-    {"id": "c1c", "text": "One morning, the car makes a sound like this.", "pause": 1.4},
-    {"id": "c1d", "text": "And then it makes no sound at all.", "pause": 0.8},
-    {"id": "c1e", "text": "Dave needs a car. A decent used one costs ten thousand dollars.", "pause": 0.5},
-    {"id": "c1f", "text": "Dave checks his savings.", "pause": 0.6},
-    {"id": "c1g", "text": "Dave has... twelve dollars. And a coupon for free fries.", "pause": 0.8},
-    {"id": "c1h", "text": "So Dave does what millions of people do every single day. He goes to the bank.", "pause": 0.4},
-    {"id": "c1i", "text": "He walks in and asks: can I borrow ten thousand dollars?", "pause": 0.5},
-    {"id": "c1j", "text": "The banker looks at Dave's job. Looks at his salary. And says: sure!", "pause": 0.6},
-    {"id": "c1k", "text": "Now. Stop right here. And think about this question.", "pause": 0.4},
-    {"id": "c1l", "text": "Where does that ten thousand dollars come from?", "pause": 0.9},
-
-    {"id": "c2a", "chapter": "The Big Myth", "text": "Most people imagine something like this.", "pause": 0.4},
-    {"id": "c2b", "text": "Deep inside the bank, there's a giant safe. Full of money.", "pause": 0.4},
-    {"id": "c2c", "text": "Money that other people saved. Grandma's savings. Bob's paycheck. Maybe your money too.", "pause": 0.4},
-    {"id": "c2d", "text": "And the bank takes a little bit of it... and lends it to Dave.", "pause": 0.5},
-    {"id": "c2e", "text": "It sounds logical. It's what most of us learned in school.", "pause": 0.4},
-    {"id": "c2f", "text": "But that's not how it works.", "pause": 0.3},
-    {"id": "c2g", "text": "Nope.", "pause": 0.9},
-
-    {"id": "c3a", "chapter": "Click. Done.", "text": "Here is what really happens.", "pause": 0.4},
-    {"id": "c3b", "text": "The banker opens Dave's account on his computer.", "pause": 0.3},
-    {"id": "c3c", "text": "He types: ten thousand. And presses enter.", "pause": 0.3},
-    {"id": "c3d", "text": "Click. Done.", "pause": 0.6},
-    {"id": "c3e", "text": "Dave's balance goes from twelve dollars... to ten thousand and twelve dollars.", "pause": 0.5},
-    {"id": "c3f", "text": "The bank didn't take that money from anybody. Grandma still has her savings. Bob still has his paycheck.", "pause": 0.5},
-    {"id": "c3g", "text": "That money did not exist five seconds ago. The bank just created it.", "pause": 0.9},
-    {"id": "c3h", "text": "Let's make it even simpler. With a duck.", "pause": 0.4},
-    {"id": "c3i", "text": "Imagine you write the words: one duck, on a piece of paper.", "pause": 0.3},
-    {"id": "c3j", "text": "And poof! A real duck appears.", "pause": 0.7},
-    {"id": "c3k", "text": "That's basically what the bank did. It wrote a number, and new money appeared.", "pause": 0.5},
-    {"id": "c3l", "text": "But wait. There's a second piece of paper.", "pause": 0.3},
-    {"id": "c3m", "text": "At the same moment, the bank writes another note. It says: Dave owes us ten thousand dollars.", "pause": 0.5},
-    {"id": "c3n", "text": "So two things are born at the same time. New money for Dave. And new debt for Dave.", "pause": 0.6},
-    {"id": "c3o", "text": "The money goes to Dave. The debt note stays with the bank. And the bank treats that note like treasure.", "pause": 0.4},
-    {"id": "c3p", "text": "Because it's a promise. Dave promised to pay back ten thousand dollars, plus a little extra. That extra is called interest.", "pause": 0.6},
-    {"id": "c3q", "text": "And this isn't some wild internet theory. The Bank of England, the central bank of the United Kingdom, explained this exact process in twenty fourteen.", "pause": 0.3},
-    {"id": "c3r", "text": "In their words: whenever a bank makes a loan, it simultaneously creates a matching deposit.", "pause": 0.9},
-
-    {"id": "c4a", "chapter": "Is Money Just Numbers?", "text": "Now you might be thinking: okay, that's one loan. But real money is cash, right?", "pause": 0.4},
-    {"id": "c4b", "text": "Let's check.", "pause": 0.4},
-    {"id": "c4c", "text": "In America, there's about twenty three trillion dollars in checking accounts, savings accounts, and cash.", "pause": 0.4},
-    {"id": "c4d", "text": "How much of that is actual paper cash? Only about two and a half trillion.", "pause": 0.5},
-    {"id": "c4e", "text": "That means roughly nine out of every ten dollars are not paper at all. They're just numbers. On a screen.", "pause": 0.7},
-    {"id": "c4f", "text": "Your salary? Numbers. Your rent? Numbers. The money in your banking app? Numbers.", "pause": 0.5},
-    {"id": "c4g", "text": "And most of those numbers started the same way Dave's did. Someone, somewhere, took out a loan.", "pause": 0.9},
-
-    {"id": "c5a", "chapter": "Why Not Infinite Money?", "text": "Okay. If banks can create money with a click, why don't they just give themselves a trillion dollars and go to the beach?", "pause": 0.6},
-    {"id": "c5b", "text": "Great question. There are three brakes on this money machine.", "pause": 0.5},
-    {"id": "c5c", "text": "Brake number one: somebody has to borrow it.", "pause": 0.3},
-    {"id": "c5d", "text": "A bank can only create money when someone takes a loan. And the bank needs that person to pay it back.", "pause": 0.4},
-    {"id": "c5e", "text": "If the bank lends to people who can't pay, it doesn't get treasure. It gets a piece of paper that's worth nothing.", "pause": 0.4},
-    {"id": "c5f", "text": "So the bank has to be careful. Mostly.", "pause": 0.7},
-    {"id": "c5g", "text": "Brake number two: the rules.", "pause": 0.3},
-    {"id": "c5h", "text": "Banks must keep a cushion of their own money. It's called capital. If loans go bad, the cushion takes the hit first.", "pause": 0.4},
-    {"id": "c5i", "text": "The more a bank lends, the bigger its cushion has to be. So it can't just lend forever.", "pause": 0.6},
-    {"id": "c5j", "text": "Brake number three: the boss of the banks.", "pause": 0.3},
-    {"id": "c5k", "text": "Every country has a central bank. In America, it's the Federal Reserve.", "pause": 0.3},
-    {"id": "c5l", "text": "It doesn't tell banks exactly how much to lend. But it controls the price of borrowing: interest rates.", "pause": 0.4},
-    {"id": "c5m", "text": "When interest rates go up, loans get expensive. Fewer people like Dave borrow. So less new money is created.", "pause": 0.4},
-    {"id": "c5n", "text": "When rates go down, loans get cheap. More people borrow. And more money appears.", "pause": 0.5},
-    {"id": "c5o", "text": "Borrowers, rules, and interest rates. Those are the three brakes.", "pause": 0.9},
-
-    {"id": "c6a", "chapter": "The Magic Trick in Reverse", "text": "Now, remember the crazy part from the beginning?", "pause": 0.4},
-    {"id": "c6b", "text": "Dave gets his car. And every month, he pays the bank back.", "pause": 0.4},
-    {"id": "c6c", "text": "Here's the twist. When Dave pays back the loan, that money disappears.", "pause": 0.4},
-    {"id": "c6d", "text": "Just like it was created with a click, it gets deleted with a click.", "pause": 0.4},
-    {"id": "c6e", "text": "Dave's debt note gets torn up. And the money vanishes with it.", "pause": 0.4},
-    {"id": "c6f", "text": "Poof. Goodbye, duck.", "pause": 0.8},
-    {"id": "c6g", "text": "But not everything vanishes. Remember the interest?", "pause": 0.4},
-    {"id": "c6h", "text": "On a typical five year car loan, Dave pays back the ten thousand, plus about two thousand dollars extra.", "pause": 0.4},
-    {"id": "c6i", "text": "That extra part doesn't vanish. That's the bank's profit.", "pause": 0.5},
-    {"id": "c6j", "text": "So the bank created ten thousand dollars with a click, and earned two thousand real dollars from it.", "pause": 0.7},
-    {"id": "c6k", "text": "And that's why banks love it when you borrow. Every loan is a little money machine for them.", "pause": 0.4},
-    {"id": "c6l", "text": "That's why your mailbox is full of credit card offers, car loan ads, and letters that say: you're pre-approved!", "pause": 0.9},
-
-    {"id": "c7a", "chapter": "When Everyone Wants Their Money", "text": "But there's one thing that can break this whole system.", "pause": 0.4},
-    {"id": "c7b", "text": "What happens if everybody goes to the bank at the same time, and asks for their money?", "pause": 0.5},
-    {"id": "c7c", "text": "Remember, most money is just numbers. No bank keeps enough cash for everyone at once.", "pause": 0.4},
-    {"id": "c7d", "text": "This is called a bank run. And it's not just something from old movies.", "pause": 0.4},
-    {"id": "c7e", "text": "In March twenty twenty three, a bank in California called Silicon Valley Bank had a very bad day.", "pause": 0.4},
-    {"id": "c7f", "text": "People got scared. And in one single day, customers pulled out forty two billion dollars.", "pause": 0.5},
-    {"id": "c7g", "text": "The next morning, the bank was shut down.", "pause": 0.8},
-    {"id": "c7h", "text": "So what protects people like Dave?", "pause": 0.4},
-    {"id": "c7i", "text": "In America, bank deposits are insured by a government agency called the F D I C. Up to two hundred fifty thousand dollars per person, per bank.", "pause": 0.4},
-    {"id": "c7j", "text": "So if Dave's bank fails, his money is protected. Dave can breathe.", "pause": 0.9},
-
-    {"id": "c8a", "chapter": "Now You Know", "text": "So let's recap.", "pause": 0.4},
-    {"id": "c8b", "text": "One. Banks don't lend out other people's savings. They create new money when they make a loan.", "pause": 0.5},
-    {"id": "c8c", "text": "Two. That new money comes with new debt. When the debt is paid back, the money disappears. The interest is the bank's profit.", "pause": 0.5},
-    {"id": "c8d", "text": "Three. What stops banks from going crazy? Borrowers, rules, and interest rates.", "pause": 0.6},
-    {"id": "c8e", "text": "So next time a bank smiles and says, we'd love to lend you money...", "pause": 0.3},
-    {"id": "c8f", "text": "Now you know why.", "pause": 0.9},
-    {"id": "c8g", "text": "But here's a question for the next video.", "pause": 0.3},
-    {"id": "c8h", "text": "Some people pay their credit card on time, every single month. They never pay a cent of interest.", "pause": 0.4},
-    {"id": "c8i", "text": "And the bank still makes money from them. How?", "pause": 0.6},
-    {"id": "c8j", "text": "That's next. Subscribe, so Dave doesn't have to figure it out alone.", "pause": 1.4}
+    {
+      "id": "o1",
+      "text": "Ten thousand dollars just appeared. Out of nothing.",
+      "pause": 0.35
+    },
+    {
+      "id": "o2",
+      "text": "No printer. No gold. No vault. Just a guy... pressing a button.",
+      "pause": 0.35
+    },
+    {
+      "id": "o3",
+      "text": "And here's the crazy part.",
+      "pause": 0.35
+    },
+    {
+      "id": "o4",
+      "text": "When Dave pays it back... that money will disappear. Forever.",
+      "pause": 0.35
+    },
+    {
+      "id": "o5",
+      "text": "This is not a conspiracy. It's not a movie. It's how almost every dollar in your bank account was born.",
+      "pause": 0.35
+    },
+    {
+      "id": "o6",
+      "text": "In the next few minutes, you'll learn where money really comes from, why banks love it when you borrow, and the one thing that can break the whole system.",
+      "pause": 0.35
+    },
+    {
+      "id": "o7",
+      "text": "And we'll explain it so simply... even a duck could understand it.",
+      "pause": 0.6
+    },
+    {
+      "id": "c1a",
+      "chapter": "Dave Needs a Car",
+      "text": "Meet Dave.",
+      "pause": 0.5
+    },
+    {
+      "id": "c1b",
+      "text": "Dave is a normal guy. He has a normal job, a normal apartment, and a very, very old car.",
+      "pause": 0.5
+    },
+    {
+      "id": "c1c",
+      "text": "One morning, the car makes a sound like this.",
+      "pause": 1.4
+    },
+    {
+      "id": "c1d",
+      "text": "And then it makes no sound at all.",
+      "pause": 0.8
+    },
+    {
+      "id": "c1e",
+      "text": "Dave needs a car. A decent used one costs ten thousand dollars.",
+      "pause": 0.5
+    },
+    {
+      "id": "c1f",
+      "text": "Dave checks his savings.",
+      "pause": 0.6
+    },
+    {
+      "id": "c1g",
+      "text": "Dave has... twelve dollars. And a coupon for free fries.",
+      "pause": 0.8
+    },
+    {
+      "id": "c1h",
+      "text": "So Dave does what millions of people do every single day. He goes to the bank.",
+      "pause": 0.4
+    },
+    {
+      "id": "c1i",
+      "text": "He walks in and asks: can I borrow ten thousand dollars?",
+      "pause": 0.5
+    },
+    {
+      "id": "c1j",
+      "text": "The banker looks at Dave's job. Looks at his salary. And says: sure!",
+      "pause": 0.6
+    },
+    {
+      "id": "c1k",
+      "text": "Now. Stop right here. And think about this question.",
+      "pause": 0.4
+    },
+    {
+      "id": "c1l",
+      "text": "Where does that ten thousand dollars come from?",
+      "pause": 0.9
+    },
+    {
+      "id": "c2a",
+      "chapter": "The Big Myth",
+      "text": "Most people imagine something like this.",
+      "pause": 0.4
+    },
+    {
+      "id": "c2b",
+      "text": "Deep inside the bank, there's a giant safe. Full of money.",
+      "pause": 0.4
+    },
+    {
+      "id": "c2c",
+      "text": "Money that other people saved. Grandma's savings. Bob's paycheck. Maybe your money too.",
+      "pause": 0.4
+    },
+    {
+      "id": "c2d",
+      "text": "And the bank takes a little bit of it... and lends it to Dave.",
+      "pause": 0.5
+    },
+    {
+      "id": "c2e",
+      "text": "It sounds logical. It's what most of us learned in school.",
+      "pause": 0.4
+    },
+    {
+      "id": "c2f",
+      "text": "But that's not how it works.",
+      "pause": 0.3
+    },
+    {
+      "id": "c2g",
+      "text": "Nope.",
+      "pause": 0.9
+    },
+    {
+      "id": "c3a",
+      "chapter": "Click. Done.",
+      "text": "Here is what really happens.",
+      "pause": 0.4
+    },
+    {
+      "id": "c3b",
+      "text": "The banker opens Dave's account on his computer.",
+      "pause": 0.3
+    },
+    {
+      "id": "c3c",
+      "text": "He types: ten thousand. And presses enter.",
+      "pause": 0.3
+    },
+    {
+      "id": "c3d",
+      "text": "Click. Done.",
+      "pause": 0.6
+    },
+    {
+      "id": "c3e",
+      "text": "Dave's balance goes from twelve dollars... to ten thousand and twelve dollars.",
+      "pause": 0.5
+    },
+    {
+      "id": "c3f",
+      "text": "The bank didn't take that money from anybody. Grandma still has her savings. Bob still has his paycheck.",
+      "pause": 0.5
+    },
+    {
+      "id": "c3g",
+      "text": "That money did not exist five seconds ago. The bank just created it.",
+      "pause": 0.9
+    },
+    {
+      "id": "c3h",
+      "text": "Let's make it even simpler. With a duck.",
+      "pause": 0.4
+    },
+    {
+      "id": "c3i",
+      "text": "Imagine you write the words: one duck, on a piece of paper.",
+      "pause": 0.3
+    },
+    {
+      "id": "c3j",
+      "text": "And poof! A real duck appears.",
+      "pause": 0.7
+    },
+    {
+      "id": "c3k",
+      "text": "That's basically what the bank did. It wrote a number, and new money appeared.",
+      "pause": 0.5
+    },
+    {
+      "id": "c3l",
+      "text": "But wait. There's a second piece of paper.",
+      "pause": 0.3
+    },
+    {
+      "id": "c3m",
+      "text": "At the same moment, the bank writes another note. It says: Dave owes us ten thousand dollars.",
+      "pause": 0.5
+    },
+    {
+      "id": "c3n",
+      "text": "So two things are born at the same time. New money for Dave. And new debt for Dave.",
+      "pause": 0.6
+    },
+    {
+      "id": "c3o",
+      "text": "The money goes to Dave. The debt note stays with the bank. And the bank treats that note like treasure.",
+      "pause": 0.4
+    },
+    {
+      "id": "c3p",
+      "text": "Because it's a promise. Dave promised to pay back ten thousand dollars, plus a little extra. That extra is called interest.",
+      "pause": 0.6
+    },
+    {
+      "id": "c3q",
+      "text": "And this isn't some wild internet theory. The Bank of England, the central bank of the United Kingdom, explained this exact process in twenty fourteen.",
+      "pause": 0.3
+    },
+    {
+      "id": "c3r",
+      "text": "In their words: whenever a bank makes a loan, it simultaneously creates a matching deposit.",
+      "pause": 0.9
+    },
+    {
+      "id": "c4a",
+      "chapter": "Is Money Just Numbers?",
+      "text": "Now you might be thinking: okay, that's one loan. But real money is cash, right?",
+      "pause": 0.4
+    },
+    {
+      "id": "c4b",
+      "text": "Let's check.",
+      "pause": 0.4
+    },
+    {
+      "id": "c4c",
+      "text": "In America, there's about twenty three trillion dollars in checking accounts, savings accounts, and cash.",
+      "pause": 0.4
+    },
+    {
+      "id": "c4d",
+      "text": "How much of that is actual paper cash? Only about two and a half trillion.",
+      "pause": 0.5
+    },
+    {
+      "id": "c4e",
+      "text": "That means roughly nine out of every ten dollars are not paper at all. They're just numbers. On a screen.",
+      "pause": 0.7
+    },
+    {
+      "id": "c4f",
+      "text": "Your salary? Numbers. Your rent? Numbers. The money in your banking app? Numbers.",
+      "pause": 0.5
+    },
+    {
+      "id": "c4g",
+      "text": "And most of those numbers started the same way Dave's did. Someone, somewhere, took out a loan.",
+      "pause": 0.9
+    },
+    {
+      "id": "c5a",
+      "chapter": "Why Not Infinite Money?",
+      "text": "Okay. If banks can create money with a click, why don't they just give themselves a trillion dollars and go to the beach?",
+      "pause": 0.6
+    },
+    {
+      "id": "c5b",
+      "text": "Great question. There are three brakes on this money machine.",
+      "pause": 0.5
+    },
+    {
+      "id": "c5c",
+      "text": "Brake number one: somebody has to borrow it.",
+      "pause": 0.3
+    },
+    {
+      "id": "c5d",
+      "text": "A bank can only create money when someone takes a loan. And the bank needs that person to pay it back.",
+      "pause": 0.4
+    },
+    {
+      "id": "c5e",
+      "text": "If the bank lends to people who can't pay, it doesn't get treasure. It gets a piece of paper that's worth nothing.",
+      "pause": 0.4
+    },
+    {
+      "id": "c5f",
+      "text": "So the bank has to be careful. Mostly.",
+      "pause": 0.7
+    },
+    {
+      "id": "c5g",
+      "text": "Brake number two: the rules.",
+      "pause": 0.3
+    },
+    {
+      "id": "c5h",
+      "text": "Banks must keep a cushion of their own money. It's called capital. If loans go bad, the cushion takes the hit first.",
+      "pause": 0.4
+    },
+    {
+      "id": "c5i",
+      "text": "The more a bank lends, the bigger its cushion has to be. So it can't just lend forever.",
+      "pause": 0.6
+    },
+    {
+      "id": "c5j",
+      "text": "Brake number three: the boss of the banks.",
+      "pause": 0.3
+    },
+    {
+      "id": "c5k",
+      "text": "Every country has a central bank. In America, it's the Federal Reserve.",
+      "pause": 0.3
+    },
+    {
+      "id": "c5l",
+      "text": "It doesn't tell banks exactly how much to lend. But it controls the price of borrowing: interest rates.",
+      "pause": 0.4
+    },
+    {
+      "id": "c5m",
+      "text": "When interest rates go up, loans get expensive. Fewer people like Dave borrow. So less new money is created.",
+      "pause": 0.4
+    },
+    {
+      "id": "c5n",
+      "text": "When rates go down, loans get cheap. More people borrow. And more money appears.",
+      "pause": 0.5
+    },
+    {
+      "id": "c5o",
+      "text": "Borrowers, rules, and interest rates. Those are the three brakes.",
+      "pause": 0.9
+    },
+    {
+      "id": "c6a",
+      "chapter": "The Magic Trick in Reverse",
+      "text": "Now, remember the crazy part from the beginning?",
+      "pause": 0.4
+    },
+    {
+      "id": "c6b",
+      "text": "Dave gets his car. And every month, he pays the bank back.",
+      "pause": 0.4
+    },
+    {
+      "id": "c6c",
+      "text": "Here's the twist. When Dave pays back the loan, that money disappears.",
+      "pause": 0.4
+    },
+    {
+      "id": "c6d",
+      "text": "Just like it was created with a click, it gets deleted with a click.",
+      "pause": 0.4
+    },
+    {
+      "id": "c6e",
+      "text": "Dave's debt note gets torn up. And the money vanishes with it.",
+      "pause": 0.4
+    },
+    {
+      "id": "c6f",
+      "text": "Poof. Goodbye, duck.",
+      "pause": 0.8
+    },
+    {
+      "id": "c6g",
+      "text": "But not everything vanishes. Remember the interest?",
+      "pause": 0.4
+    },
+    {
+      "id": "c6h",
+      "text": "On a typical five year car loan, Dave pays back the ten thousand, plus about two thousand dollars extra.",
+      "pause": 0.4
+    },
+    {
+      "id": "c6i",
+      "text": "That extra part doesn't vanish. That's the bank's profit.",
+      "pause": 0.5
+    },
+    {
+      "id": "c6j",
+      "text": "So the bank created ten thousand dollars with a click, and earned two thousand real dollars from it.",
+      "pause": 0.7
+    },
+    {
+      "id": "c6k",
+      "text": "And that's why banks love it when you borrow. Every loan is a little money machine for them.",
+      "pause": 0.4
+    },
+    {
+      "id": "c6l",
+      "text": "That's why your mailbox is full of credit card offers, car loan ads, and letters that say: you're pre-approved!",
+      "pause": 0.9
+    },
+    {
+      "id": "c7a",
+      "chapter": "When Everyone Wants Their Money",
+      "text": "But there's one thing that can break this whole system.",
+      "pause": 0.4
+    },
+    {
+      "id": "c7b",
+      "text": "What happens if everybody goes to the bank at the same time, and asks for their money?",
+      "pause": 0.5
+    },
+    {
+      "id": "c7c",
+      "text": "Remember, most money is just numbers. No bank keeps enough cash for everyone at once.",
+      "pause": 0.4
+    },
+    {
+      "id": "c7d",
+      "text": "This is called a bank run. And it's not just something from old movies.",
+      "pause": 0.4
+    },
+    {
+      "id": "c7e",
+      "text": "In March twenty twenty three, a bank in California called Silicon Valley Bank had a very bad day.",
+      "pause": 0.4
+    },
+    {
+      "id": "c7f",
+      "text": "People got scared. And in one single day, customers pulled out forty two billion dollars.",
+      "pause": 0.5
+    },
+    {
+      "id": "c7g",
+      "text": "The next morning, the bank was shut down.",
+      "pause": 0.8
+    },
+    {
+      "id": "c7h",
+      "text": "So what protects people like Dave?",
+      "pause": 0.4
+    },
+    {
+      "id": "c7i",
+      "text": "In America, bank deposits are insured by a government agency called the F D I C. Up to two hundred fifty thousand dollars per person, per bank.",
+      "pause": 0.4
+    },
+    {
+      "id": "c7j",
+      "text": "So if Dave's bank fails, his money is protected. Dave can breathe.",
+      "pause": 0.9
+    },
+    {
+      "id": "c8a",
+      "chapter": "Now You Know",
+      "text": "So let's recap.",
+      "pause": 0.4
+    },
+    {
+      "id": "c8b",
+      "text": "One. Banks don't lend out other people's savings. They create new money when they make a loan.",
+      "pause": 0.5
+    },
+    {
+      "id": "c8c",
+      "text": "Two. That new money comes with new debt. When the debt is paid back, the money disappears. The interest is the bank's profit.",
+      "pause": 0.5
+    },
+    {
+      "id": "c8d",
+      "text": "Three. What stops banks from going crazy? Borrowers, rules, and interest rates.",
+      "pause": 0.6
+    },
+    {
+      "id": "c8e",
+      "text": "So next time a bank smiles and says, we'd love to lend you money...",
+      "pause": 0.3
+    },
+    {
+      "id": "c8f",
+      "text": "Now you know why.",
+      "pause": 0.9
+    },
+    {
+      "id": "c8g",
+      "text": "But here's a question for the next video.",
+      "pause": 0.3
+    },
+    {
+      "id": "c8h",
+      "text": "Some people pay their credit card on time, every single month. They never pay a cent of interest.",
+      "pause": 0.4
+    },
+    {
+      "id": "c8i",
+      "text": "And the bank still makes money from them. How?",
+      "pause": 0.6
+    },
+    {
+      "id": "c8j",
+      "text": "That's next. Subscribe, so Dave doesn't have to figure it out alone.",
+      "pause": 1.4
+    }
   ]
 }

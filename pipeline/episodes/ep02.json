@@ -4,7 +4,23 @@
   "youtube": {
     "title": "Your Credit Card Makes Money Off You, Even If You Pay On Time",
     "hook": "Dave pays his credit card in full every month. He's never paid a cent of interest. He even gets cashback. So how does the bank still make money from him? And why are you paying for his rewards, even if you pay cash? Here's the hidden machine behind every swipe, explained simply.",
-    "tags": ["how credit cards make money", "credit card interest explained", "swipe fees", "interchange fees", "credit card rewards", "cashback explained", "credit card debt", "minimum payment trap", "how banks make money", "personal finance", "finance for beginners", "money explained", "credit score", "late fees", "economics explained"]
+    "tags": [
+      "how credit cards make money",
+      "credit card interest explained",
+      "swipe fees",
+      "interchange fees",
+      "credit card rewards",
+      "cashback explained",
+      "credit card debt",
+      "minimum payment trap",
+      "how banks make money",
+      "personal finance",
+      "finance for beginners",
+      "money explained",
+      "credit score",
+      "late fees",
+      "economics explained"
+    ]
   },
   "sources": [
     "Nilson Report via Merchants Payments Coalition: US merchants paid $198.25 billion in card processing fees in 2025; Visa/Mastercard average credit interchange 2.36%",
@@ -16,89 +32,393 @@
     "Prelec & Simester (2001), 'Always Leave Home Without It', Marketing Letters: willingness to pay up to 100% higher with a credit card"
   ],
   "beats": [
-    {"id": "o1", "text": "Dave has a credit card. And Dave is perfect.", "pause": 0.4},
-    {"id": "o2", "text": "He pays the full bill. Every month. On time. He has never paid one single cent of interest.", "pause": 0.4},
-    {"id": "o3", "text": "He even gets two percent cashback. Dave thinks he's beating the bank.", "pause": 0.7},
-    {"id": "o4", "text": "He's not.", "pause": 0.6},
-    {"id": "o5", "text": "The bank still makes money from Dave. Every single time he swipes.", "pause": 0.4},
-    {"id": "o6", "text": "And here's the wild part. You might be paying for Dave's cashback. Even if you've never owned a credit card in your life.", "pause": 0.6},
-    {"id": "o7", "text": "Today: the invisible fee inside every price, who really pays for your rewards, and the twenty two percent trap that catches almost half of all cardholders.", "pause": 0.9},
-
-    {"id": "c1a", "chapter": "The Magic Plastic", "text": "First, what is a credit card, really?", "pause": 0.4},
-    {"id": "c1b", "text": "It looks like money. It feels like money. But it's not your money.", "pause": 0.4},
-    {"id": "c1c", "text": "Every time Dave swipes, the bank gives him a tiny loan. Remember from our last video? The bank creates that money with a click.", "pause": 0.5},
-    {"id": "c1d", "text": "At the end of the month, Dave gets a bill. And by law, he gets at least twenty one days to pay it.", "pause": 0.4},
-    {"id": "c1e", "text": "If he pays everything in that window, he pays zero interest. It's like a free loan for a month.", "pause": 0.5},
-    {"id": "c1f", "text": "So, if the loan is free... where does the bank's money come from?", "pause": 0.9},
-
-    {"id": "c2a", "chapter": "The Invisible Toll", "text": "Let's follow one coffee.", "pause": 0.4},
-    {"id": "c2b", "text": "Dave buys a coffee for five dollars. He taps his card. Beep. Done.", "pause": 0.5},
-    {"id": "c2c", "text": "Dave pays five dollars. But the coffee shop doesn't get five dollars.", "pause": 0.5},
-    {"id": "c2d", "text": "Somewhere between Dave and the coffee shop, there's a toll booth. And sitting in that toll booth... is a raccoon.", "pause": 0.7},
-    {"id": "c2e", "text": "Every time money drives through, the raccoon takes a little bite. This bite is called a swipe fee.", "pause": 0.4},
-    {"id": "c2f", "text": "On a credit card, it's usually around two percent. On big name cards, the average is about two point four percent.", "pause": 0.4},
-    {"id": "c2g", "text": "So from Dave's five dollars, the shop only keeps about four dollars and eighty eight cents.", "pause": 0.5},
-    {"id": "c2h", "text": "Twelve cents. That's nothing, right?", "pause": 0.6},
-    {"id": "c2i", "text": "Now multiply that by every card swipe in America.", "pause": 0.5},
-    {"id": "c2j", "text": "In twenty twenty five, American businesses paid almost two hundred billion dollars in card fees.", "pause": 0.5},
-    {"id": "c2k", "text": "That's roughly fifteen hundred dollars for every household in the country. Every year.", "pause": 0.5},
-    {"id": "c2l", "text": "And most of that bite goes to the bank that gave Dave his card.", "pause": 0.9},
-
-    {"id": "c3a", "chapter": "Who Pays for the Cashback?", "text": "Now, the coffee shop owner is not stupid.", "pause": 0.4},
-    {"id": "c3b", "text": "If she loses twelve cents on every coffee, what does she do?", "pause": 0.4},
-    {"id": "c3c", "text": "She raises the price. For everyone.", "pause": 0.6},
-    {"id": "c3d", "text": "The person paying with cash? Pays the higher price. The person using a debit card? Higher price too.", "pause": 0.4},
-    {"id": "c3e", "text": "So the swipe fee gets hidden inside the price of almost everything you buy.", "pause": 0.6},
-    {"id": "c3f", "text": "And Dave's shiny two percent cashback? It comes from that same pile of fees.", "pause": 0.4},
-    {"id": "c3g", "text": "It's like the raccoon takes coins from everyone in the street, and then hands one coin back to Dave, and says: you're my favorite customer.", "pause": 0.7},
-    {"id": "c3h", "text": "Economists have a name for this. Reverse Robin Hood.", "pause": 0.4},
-    {"id": "c3i", "text": "Instead of taking from the rich and giving to the poor, it quietly moves money the other way.", "pause": 0.4},
-    {"id": "c3j", "text": "A study by researchers at the Federal Reserve estimated that credit card rewards move about fifteen billion dollars a year from poorer, less informed customers to richer ones.", "pause": 0.9},
-
-    {"id": "c4a", "chapter": "The 22% Trap", "text": "But swipe fees are just the appetizer. Here's the main course.", "pause": 0.4},
-    {"id": "c4b", "text": "Meet Dave's neighbor, Bob.", "pause": 0.4},
-    {"id": "c4c", "text": "Bob also has a credit card. But one month, his fridge breaks. He can't pay the full bill. So he pays a little.", "pause": 0.5},
-    {"id": "c4d", "text": "The moment Bob doesn't pay in full, the free loan is over. Now the interest meter starts running.", "pause": 0.4},
-    {"id": "c4e", "text": "And for people who carry a balance, the average credit card interest rate is about twenty two percent a year.", "pause": 0.6},
-    {"id": "c4f", "text": "To compare: a car loan might be seven or eight percent. A mortgage, around six. Credit cards? Twenty two.", "pause": 0.6},
-    {"id": "c4g", "text": "Let's say Bob owes five thousand dollars. And he pays one hundred dollars a month.", "pause": 0.4},
-    {"id": "c4h", "text": "Guess how long it takes him to pay it off.", "pause": 0.9},
-    {"id": "c4i", "text": "More than eleven years. And he pays about eight thousand seven hundred dollars in interest. On a five thousand dollar debt.", "pause": 0.7},
-    {"id": "c4j", "text": "Why? Because at the start, almost all of his hundred dollars goes to interest. Only about eight dollars actually reduces what he owes.", "pause": 0.6},
-    {"id": "c4k", "text": "It's like trying to empty a bathtub with a spoon, while the tap is still running.", "pause": 0.7},
-    {"id": "c4l", "text": "And Bob is not rare. About half of American cardholders carried a balance at some point last year. Together, Americans owe about one point two six trillion dollars on credit cards.", "pause": 0.9},
-
-    {"id": "c5a", "chapter": "The Sneaky Extras", "text": "And then, there are the extras.", "pause": 0.4},
-    {"id": "c5b", "text": "Pay one day late? Late fee. Card companies collect more than fourteen billion dollars a year in late fees.", "pause": 0.5},
-    {"id": "c5c", "text": "Fancy card with airport lounges? That's an annual fee. Some cost hundreds of dollars a year.", "pause": 0.4},
-    {"id": "c5d", "text": "Use it abroad? Foreign transaction fee. Take out cash with it? Cash advance fee, plus interest from day one.", "pause": 0.6},
-    {"id": "c5e", "text": "Each one is small. But the raccoon has a lot of little pockets.", "pause": 0.9},
-
-    {"id": "c6a", "chapter": "Why They Still Love Dave", "text": "So back to perfect Dave. Why does the bank still want him?", "pause": 0.4},
-    {"id": "c6b", "text": "Reason one: every swipe pays the raccoon. The more Dave spends, the more the bank earns.", "pause": 0.4},
-    {"id": "c6c", "text": "Reason two: cards make people spend more.", "pause": 0.4},
-    {"id": "c6d", "text": "In a famous experiment, people bidding for basketball tickets offered up to twice as much when they were told to pay by credit card instead of cash.", "pause": 0.5},
-    {"id": "c6e", "text": "Paying with plastic just doesn't hurt the same way.", "pause": 0.5},
-    {"id": "c6f", "text": "And reason three: life happens.", "pause": 0.4},
-    {"id": "c6g", "text": "A lost job. A hospital bill. A broken fridge. One bad month, and perfect Dave becomes Bob.", "pause": 0.4},
-    {"id": "c6h", "text": "The bank doesn't need Dave to fail. It just needs to be there, waiting, when he does.", "pause": 0.9},
-
-    {"id": "t1", "chapter": "How Not to Get Bitten", "text": "So how do people use credit cards without getting bitten? It comes down to a few simple habits.", "pause": 0.5},
-    {"id": "t2", "text": "Habit one. Pay the full statement balance. Every month. Not the minimum. The full amount.", "pause": 0.5},
-    {"id": "t3", "text": "The minimum payment is not a friendly suggestion. It's the raccoon's favorite button.", "pause": 0.6},
-    {"id": "t4", "text": "Habit two. Turn on autopay, so you are never late. Not even by one day.", "pause": 0.5},
-    {"id": "t5", "text": "Habit three. Spend like it's cash. If you wouldn't buy it with the money in your pocket, don't buy it with the card.", "pause": 0.6},
-    {"id": "t6", "text": "Habit four. If you already carry a balance, attack the card with the highest interest rate first. That's where the tap is running fastest.", "pause": 0.6},
-    {"id": "t7", "text": "And habit five. Read the fees before you sign up. An annual fee only makes sense if you really use what you're paying for.", "pause": 0.6},
-    {"id": "t8", "text": "Do that, and the raccoon only gets its tiny toll. Never the main course.", "pause": 0.9},
-
-    {"id": "c7a", "chapter": "Now You Know", "text": "So let's recap.", "pause": 0.4},
-    {"id": "c7b", "text": "One. Every swipe has a hidden toll of around two percent. Shops pass it on to everyone through higher prices.", "pause": 0.5},
-    {"id": "c7c", "text": "Two. Rewards are paid for by those fees. So people who don't use reward cards help pay for the people who do.", "pause": 0.5},
-    {"id": "c7d", "text": "Three. The real money is in the twenty two percent interest, and the fees, from people who can't pay in full.", "pause": 0.6},
-    {"id": "c7e", "text": "A credit card is a tool. Used carefully, it's convenient. Used carelessly, it's a very expensive raccoon.", "pause": 0.8},
-    {"id": "c7f", "text": "But credit cards are small. The biggest loan most people ever take is for a house.", "pause": 0.4},
-    {"id": "c7g", "text": "And here's a scary fact. Borrow three hundred thousand dollars for a home, and you can end up paying the bank more than double.", "pause": 0.5},
-    {"id": "c7h", "text": "That's next. Subscribe, so the raccoon doesn't get you.", "pause": 1.4}
+    {
+      "id": "o1",
+      "text": "Dave has a credit card. And Dave is perfect.",
+      "pause": 0.35
+    },
+    {
+      "id": "o2",
+      "text": "He pays the full bill. Every month. On time. He has never paid one single cent of interest.",
+      "pause": 0.35
+    },
+    {
+      "id": "o3",
+      "text": "He even gets two percent cashback. Dave thinks he's beating the bank.",
+      "pause": 0.35
+    },
+    {
+      "id": "o4",
+      "text": "He's not.",
+      "pause": 0.35
+    },
+    {
+      "id": "o5",
+      "text": "The bank still makes money from Dave. Every single time he swipes.",
+      "pause": 0.35
+    },
+    {
+      "id": "o6",
+      "text": "And here's the wild part. You might be paying for Dave's cashback. Even if you've never owned a credit card in your life.",
+      "pause": 0.35
+    },
+    {
+      "id": "o7",
+      "text": "Today: the invisible fee inside every price, who really pays for your rewards, and the twenty two percent trap that catches almost half of all cardholders.",
+      "pause": 0.6
+    },
+    {
+      "id": "c1a",
+      "chapter": "The Magic Plastic",
+      "text": "First, what is a credit card, really?",
+      "pause": 0.4
+    },
+    {
+      "id": "c1b",
+      "text": "It looks like money. It feels like money. But it's not your money.",
+      "pause": 0.4
+    },
+    {
+      "id": "c1c",
+      "text": "Every time Dave swipes, the bank gives him a tiny loan. Remember from our last video? The bank creates that money with a click.",
+      "pause": 0.5
+    },
+    {
+      "id": "c1d",
+      "text": "At the end of the month, Dave gets a bill. And by law, he gets at least twenty one days to pay it.",
+      "pause": 0.4
+    },
+    {
+      "id": "c1e",
+      "text": "If he pays everything in that window, he pays zero interest. It's like a free loan for a month.",
+      "pause": 0.5
+    },
+    {
+      "id": "c1f",
+      "text": "So, if the loan is free... where does the bank's money come from?",
+      "pause": 0.9
+    },
+    {
+      "id": "c2a",
+      "chapter": "The Invisible Toll",
+      "text": "Let's follow one coffee.",
+      "pause": 0.4
+    },
+    {
+      "id": "c2b",
+      "text": "Dave buys a coffee for five dollars. He taps his card. Beep. Done.",
+      "pause": 0.5
+    },
+    {
+      "id": "c2c",
+      "text": "Dave pays five dollars. But the coffee shop doesn't get five dollars.",
+      "pause": 0.5
+    },
+    {
+      "id": "c2d",
+      "text": "Somewhere between Dave and the coffee shop, there's a toll booth. And sitting in that toll booth... is a raccoon.",
+      "pause": 0.7
+    },
+    {
+      "id": "c2e",
+      "text": "Every time money drives through, the raccoon takes a little bite. This bite is called a swipe fee.",
+      "pause": 0.4
+    },
+    {
+      "id": "c2f",
+      "text": "On a credit card, it's usually around two percent. On big name cards, the average is about two point four percent.",
+      "pause": 0.4
+    },
+    {
+      "id": "c2g",
+      "text": "So from Dave's five dollars, the shop only keeps about four dollars and eighty eight cents.",
+      "pause": 0.5
+    },
+    {
+      "id": "c2h",
+      "text": "Twelve cents. That's nothing, right?",
+      "pause": 0.6
+    },
+    {
+      "id": "c2i",
+      "text": "Now multiply that by every card swipe in America.",
+      "pause": 0.5
+    },
+    {
+      "id": "c2j",
+      "text": "In twenty twenty five, American businesses paid almost two hundred billion dollars in card fees.",
+      "pause": 0.5
+    },
+    {
+      "id": "c2k",
+      "text": "That's roughly fifteen hundred dollars for every household in the country. Every year.",
+      "pause": 0.5
+    },
+    {
+      "id": "c2l",
+      "text": "And most of that bite goes to the bank that gave Dave his card.",
+      "pause": 0.9
+    },
+    {
+      "id": "c3a",
+      "chapter": "Who Pays for the Cashback?",
+      "text": "Now, the coffee shop owner is not stupid.",
+      "pause": 0.4
+    },
+    {
+      "id": "c3b",
+      "text": "If she loses twelve cents on every coffee, what does she do?",
+      "pause": 0.4
+    },
+    {
+      "id": "c3c",
+      "text": "She raises the price. For everyone.",
+      "pause": 0.6
+    },
+    {
+      "id": "c3d",
+      "text": "The person paying with cash? Pays the higher price. The person using a debit card? Higher price too.",
+      "pause": 0.4
+    },
+    {
+      "id": "c3e",
+      "text": "So the swipe fee gets hidden inside the price of almost everything you buy.",
+      "pause": 0.6
+    },
+    {
+      "id": "c3f",
+      "text": "And Dave's shiny two percent cashback? It comes from that same pile of fees.",
+      "pause": 0.4
+    },
+    {
+      "id": "c3g",
+      "text": "It's like the raccoon takes coins from everyone in the street, and then hands one coin back to Dave, and says: you're my favorite customer.",
+      "pause": 0.7
+    },
+    {
+      "id": "c3h",
+      "text": "Economists have a name for this. Reverse Robin Hood.",
+      "pause": 0.4
+    },
+    {
+      "id": "c3i",
+      "text": "Instead of taking from the rich and giving to the poor, it quietly moves money the other way.",
+      "pause": 0.4
+    },
+    {
+      "id": "c3j",
+      "text": "A study by researchers at the Federal Reserve estimated that credit card rewards move about fifteen billion dollars a year from poorer, less informed customers to richer ones.",
+      "pause": 0.9
+    },
+    {
+      "id": "c4a",
+      "chapter": "The 22% Trap",
+      "text": "But swipe fees are just the appetizer. Here's the main course.",
+      "pause": 0.4
+    },
+    {
+      "id": "c4b",
+      "text": "Meet Dave's neighbor, Bob.",
+      "pause": 0.4
+    },
+    {
+      "id": "c4c",
+      "text": "Bob also has a credit card. But one month, his fridge breaks. He can't pay the full bill. So he pays a little.",
+      "pause": 0.5
+    },
+    {
+      "id": "c4d",
+      "text": "The moment Bob doesn't pay in full, the free loan is over. Now the interest meter starts running.",
+      "pause": 0.4
+    },
+    {
+      "id": "c4e",
+      "text": "And for people who carry a balance, the average credit card interest rate is about twenty two percent a year.",
+      "pause": 0.6
+    },
+    {
+      "id": "c4f",
+      "text": "To compare: a car loan might be seven or eight percent. A mortgage, around six. Credit cards? Twenty two.",
+      "pause": 0.6
+    },
+    {
+      "id": "c4g",
+      "text": "Let's say Bob owes five thousand dollars. And he pays one hundred dollars a month.",
+      "pause": 0.4
+    },
+    {
+      "id": "c4h",
+      "text": "Guess how long it takes him to pay it off.",
+      "pause": 0.9
+    },
+    {
+      "id": "c4i",
+      "text": "More than eleven years. And he pays about eight thousand seven hundred dollars in interest. On a five thousand dollar debt.",
+      "pause": 0.7
+    },
+    {
+      "id": "c4j",
+      "text": "Why? Because at the start, almost all of his hundred dollars goes to interest. Only about eight dollars actually reduces what he owes.",
+      "pause": 0.6
+    },
+    {
+      "id": "c4k",
+      "text": "It's like trying to empty a bathtub with a spoon, while the tap is still running.",
+      "pause": 0.7
+    },
+    {
+      "id": "c4l",
+      "text": "And Bob is not rare. About half of American cardholders carried a balance at some point last year. Together, Americans owe about one point two six trillion dollars on credit cards.",
+      "pause": 0.9
+    },
+    {
+      "id": "c5a",
+      "chapter": "The Sneaky Extras",
+      "text": "And then, there are the extras.",
+      "pause": 0.4
+    },
+    {
+      "id": "c5b",
+      "text": "Pay one day late? Late fee. Card companies collect more than fourteen billion dollars a year in late fees.",
+      "pause": 0.5
+    },
+    {
+      "id": "c5c",
+      "text": "Fancy card with airport lounges? That's an annual fee. Some cost hundreds of dollars a year.",
+      "pause": 0.4
+    },
+    {
+      "id": "c5d",
+      "text": "Use it abroad? Foreign transaction fee. Take out cash with it? Cash advance fee, plus interest from day one.",
+      "pause": 0.6
+    },
+    {
+      "id": "c5e",
+      "text": "Each one is small. But the raccoon has a lot of little pockets.",
+      "pause": 0.9
+    },
+    {
+      "id": "c6a",
+      "chapter": "Why They Still Love Dave",
+      "text": "So back to perfect Dave. Why does the bank still want him?",
+      "pause": 0.4
+    },
+    {
+      "id": "c6b",
+      "text": "Reason one: every swipe pays the raccoon. The more Dave spends, the more the bank earns.",
+      "pause": 0.4
+    },
+    {
+      "id": "c6c",
+      "text": "Reason two: cards make people spend more.",
+      "pause": 0.4
+    },
+    {
+      "id": "c6d",
+      "text": "In a famous experiment, people bidding for basketball tickets offered up to twice as much when they were told to pay by credit card instead of cash.",
+      "pause": 0.5
+    },
+    {
+      "id": "c6e",
+      "text": "Paying with plastic just doesn't hurt the same way.",
+      "pause": 0.5
+    },
+    {
+      "id": "c6f",
+      "text": "And reason three: life happens.",
+      "pause": 0.4
+    },
+    {
+      "id": "c6g",
+      "text": "A lost job. A hospital bill. A broken fridge. One bad month, and perfect Dave becomes Bob.",
+      "pause": 0.4
+    },
+    {
+      "id": "c6h",
+      "text": "The bank doesn't need Dave to fail. It just needs to be there, waiting, when he does.",
+      "pause": 0.9
+    },
+    {
+      "id": "t1",
+      "chapter": "How Not to Get Bitten",
+      "text": "So how do people use credit cards without getting bitten? It comes down to a few simple habits.",
+      "pause": 0.5
+    },
+    {
+      "id": "t2",
+      "text": "Habit one. Pay the full statement balance. Every month. Not the minimum. The full amount.",
+      "pause": 0.5
+    },
+    {
+      "id": "t3",
+      "text": "The minimum payment is not a friendly suggestion. It's the raccoon's favorite button.",
+      "pause": 0.6
+    },
+    {
+      "id": "t4",
+      "text": "Habit two. Turn on autopay, so you are never late. Not even by one day.",
+      "pause": 0.5
+    },
+    {
+      "id": "t5",
+      "text": "Habit three. Spend like it's cash. If you wouldn't buy it with the money in your pocket, don't buy it with the card.",
+      "pause": 0.6
+    },
+    {
+      "id": "t6",
+      "text": "Habit four. If you already carry a balance, attack the card with the highest interest rate first. That's where the tap is running fastest.",
+      "pause": 0.6
+    },
+    {
+      "id": "t7",
+      "text": "And habit five. Read the fees before you sign up. An annual fee only makes sense if you really use what you're paying for.",
+      "pause": 0.6
+    },
+    {
+      "id": "t8",
+      "text": "Do that, and the raccoon only gets its tiny toll. Never the main course.",
+      "pause": 0.9
+    },
+    {
+      "id": "c7a",
+      "chapter": "Now You Know",
+      "text": "So let's recap.",
+      "pause": 0.4
+    },
+    {
+      "id": "c7b",
+      "text": "One. Every swipe has a hidden toll of around two percent. Shops pass it on to everyone through higher prices.",
+      "pause": 0.5
+    },
+    {
+      "id": "c7c",
+      "text": "Two. Rewards are paid for by those fees. So people who don't use reward cards help pay for the people who do.",
+      "pause": 0.5
+    },
+    {
+      "id": "c7d",
+      "text": "Three. The real money is in the twenty two percent interest, and the fees, from people who can't pay in full.",
+      "pause": 0.6
+    },
+    {
+      "id": "c7e",
+      "text": "A credit card is a tool. Used carefully, it's convenient. Used carelessly, it's a very expensive raccoon.",
+      "pause": 0.8
+    },
+    {
+      "id": "c7f",
+      "text": "But credit cards are small. The biggest loan most people ever take is for a house.",
+      "pause": 0.4
+    },
+    {
+      "id": "c7g",
+      "text": "And here's a scary fact. Borrow three hundred thousand dollars for a home, and you can end up paying the bank more than double.",
+      "pause": 0.5
+    },
+    {
+      "id": "c7h",
+      "text": "That's next. Subscribe, so the raccoon doesn't get you.",
+      "pause": 1.4
+    }
   ]
 }

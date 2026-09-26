@@ -56,6 +56,13 @@ async def main(spec_path: str, out_dir: str):
         if not words:
             raise SystemExit(f"no word boundaries for {b['id']} - edge-tts too old?")
         data = to_pcm(mp3)
+        if b["id"].startswith("o"):
+            cut0 = max(0.0, words[0]["start"] - 0.04)
+            cut1 = words[-1]["end"] + 0.12
+            a = int(cut0 * SR) * 2
+            e = min(len(data), int(cut1 * SR) * 2)
+            data = data[a:e]
+            words = [{"text": x["text"], "start": x["start"] - cut0, "end": x["end"] - cut0} for x in words]
         t0 = len(pcm) / 2 / SR
         dur = len(data) / 2 / SR
         pcm += data

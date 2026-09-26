@@ -67,6 +67,8 @@ export const Ep04: React.FC = () => {
     const on = w('o3', 'one');
     const ft = w('o4', 'fourteen');
     const tn = w('o5', 'ten');
+    q(bs('o2'), 'pop2', 0.5);
+    q(bs('o2') + 8, 'pop2', 0.4);
     q(on, 'pop', 0.6);
     q(ft, 'cash', 0.7);
     q(tn, 'stamp', 0.8);
@@ -74,7 +76,16 @@ export const Ep04: React.FC = () => {
       <AbsoluteFill>
         <Bg />
         <Svg>
-          <line x1={400} y1={820} x2={1520} y2={820} stroke={C.ink} strokeWidth={6} strokeLinecap="round" />
+          <G2 x={960} y={120} s={pop(f, bs('o2'))}><Text size={60}>Where McDonald's restaurant PROFIT comes from</Text></G2>
+          <line x1={400} y1={820} x2={1520} y2={820} stroke={C.ink} strokeWidth={6} strokeLinecap="round" opacity={pop(f, bs('o2'))} />
+          {[720, 1200].map((bx, i) => (
+            <g key={bx} opacity={pop(f, bs('o2') + 4 + i * 4)}>
+              <rect x={bx - 130} y={560} width={260} height={260} rx={12} fill="none" stroke="#B8B0A0" strokeWidth={5} strokeDasharray="18 12" />
+              <Text x={bx} y={690} size={120} color="#B8B0A0">?</Text>
+              <Text x={bx} y={866} size={34} color="#5B6470">{i === 0 ? 'Restaurants it runs' : 'Restaurants OTHERS run'}</Text>
+            </g>
+          ))}
+          <Magnifier x={ease(f, bs('o2'), bs('o2') + 30, 300, 1500)} y={430} s={0.6 * pop(f, bs('o2')) * out(f, on, 8)} />
           <Bar x={720} y={820} h={ease(f, on - 4, on + 12, 0, 1.4 * 36)} color={C.blue} label="Restaurants it runs" value={f >= on ? '$1.4B' : ''} w={260} />
           <Bar x={1200} y={820} h={ease(f, ft - 8, ft + 14, 0, 13.9 * 36)} color={C.green} label="Restaurants OTHERS run" value={f >= ft ? '$13.9B' : ''} w={260} />
           <Stamp x={960} y={160} s={pop(f, tn, 9, 260)} r={-4} text="10× MORE" size={80} />

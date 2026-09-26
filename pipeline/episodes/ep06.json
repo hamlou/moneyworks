@@ -4,7 +4,23 @@
   "youtube": {
     "title": "Who Does America Owe $40 Trillion To? (It's Not China)",
     "hook": "America owes $40 trillion. Most people think China owns America. China holds less than 2%. So who are the real lenders? The biggest one might surprise you: it's America itself. Here's the national debt, explained simply.",
-    "tags": ["national debt explained", "who owns us debt", "us debt 40 trillion", "who does america owe", "china us debt", "japan us treasuries", "treasury bonds explained", "federal reserve", "social security trust fund", "can the us print money", "debt ceiling", "economics explained", "finance for beginners", "money explained", "government debt"]
+    "tags": [
+      "national debt explained",
+      "who owns us debt",
+      "us debt 40 trillion",
+      "who does america owe",
+      "china us debt",
+      "japan us treasuries",
+      "treasury bonds explained",
+      "federal reserve",
+      "social security trust fund",
+      "can the us print money",
+      "debt ceiling",
+      "economics explained",
+      "finance for beginners",
+      "money explained",
+      "government debt"
+    ]
   },
   "sources": [
     "U.S. Treasury, Debt to the Penny (Sept 21, 2026): total public debt $40.11T; debt held by the public $32.40T; intragovernmental holdings $7.71T",
@@ -16,82 +32,354 @@
     "Stack math: $100 bill thickness ≈ 0.11 mm; $40.1T in $100 bills ≈ 44,000 km, more than Earth's circumference (≈ 40,075 km)"
   ],
   "beats": [
-    {"id": "o1", "text": "America owes forty trillion dollars.", "pause": 0.5},
-    {"id": "o2", "text": "That's about one hundred and seventeen thousand dollars for every single person in the country. Including babies.", "pause": 0.6},
-    {"id": "o3", "text": "So who did America borrow all that money from?", "pause": 0.4},
-    {"id": "o4", "text": "Most people say: China. China owns America.", "pause": 0.5},
-    {"id": "o5", "text": "Nope. China holds less than two percent of it.", "pause": 0.6},
-    {"id": "o6", "text": "The biggest lender to America is a lot closer than you think. In fact, you might be one of them. Let's find out.", "pause": 0.9},
-
-    {"id": "c1a", "chapter": "What Is the Debt?", "text": "First, where does the debt come from?", "pause": 0.4},
-    {"id": "c1b", "text": "Remember our last video? Almost every year, the government spends more than it collects in taxes. That gap is the deficit.", "pause": 0.5},
-    {"id": "c1c", "text": "To fill the gap, it borrows. And every year's borrowing gets added to the pile. That pile is the national debt.", "pause": 0.5},
-    {"id": "c1d", "text": "How does the government borrow? It sells IOUs called Treasury bonds. You give the government money today, it promises to pay you back later, with interest.", "pause": 0.5},
-    {"id": "c1e", "text": "Now, forty trillion dollars is hard to imagine. So let's try.", "pause": 0.4},
-    {"id": "c1f", "text": "If you stacked forty trillion dollars in one hundred dollar bills, the stack would be so long, it could wrap all the way around the Earth. And then some.", "pause": 0.9},
-
-    {"id": "c2a", "chapter": "The China Myth", "text": "Now, let's meet the lenders. Starting with the famous one. China.", "pause": 0.4},
-    {"id": "c2b", "text": "China holds about seven hundred thirty billion dollars of American debt.", "pause": 0.4},
-    {"id": "c2c", "text": "That sounds huge. But out of forty trillion, it's less than two percent. And it's the lowest amount China has held since two thousand nine.", "pause": 0.6},
-    {"id": "c2d", "text": "In fact, China isn't even the biggest foreign lender. Japan is, with about one point one five trillion.", "pause": 0.4},
-    {"id": "c2e", "text": "Then the United Kingdom, with about nine hundred billion.", "pause": 0.4},
-    {"id": "c2f", "text": "Add up every foreign country in the world, and they hold about nine point two trillion. Roughly one quarter.", "pause": 0.6},
-    {"id": "c2g", "text": "So if foreigners own one quarter... who owns the other three quarters?", "pause": 0.9},
-
-    {"id": "c3a", "chapter": "America Owes America", "text": "Here's the plot twist. America mostly owes... America.", "pause": 0.6},
-    {"id": "c3b", "text": "Lender number one: the government itself. About seven point seven trillion dollars.", "pause": 0.4},
-    {"id": "c3c", "text": "Wait. How can you owe yourself money?", "pause": 0.4},
-    {"id": "c3d", "text": "Remember the Social Security tax on Dave's paycheck? For many years, workers paid in more than retirees took out. The extra was saved in a trust fund.", "pause": 0.5},
-    {"id": "c3e", "text": "And that fund was lent to the Treasury. So one part of the government holds IOUs from another part. It's like Dave's left pocket lending money to his right pocket.", "pause": 0.7},
-    {"id": "c3f", "text": "Lender number two: the Federal Reserve. America's central bank holds about four and a half trillion dollars of government bonds.", "pause": 0.4},
-    {"id": "c3g", "text": "Remember our first video? Banks create money with a click. Well, the Federal Reserve can do that too. That's how it bought many of these bonds.", "pause": 0.6},
-    {"id": "c3h", "text": "And lender number three, the biggest group of all: American investors.", "pause": 0.4},
-    {"id": "c3i", "text": "Banks. Pension funds. Insurance companies. Money market funds. State governments. And regular people.", "pause": 0.5},
-    {"id": "c3j", "text": "If you have a retirement account, a money market fund, or even an old savings bond from grandma, you might own a tiny piece of America's debt.", "pause": 0.6},
-    {"id": "c3k", "text": "So, in a strange way, many Americans are both the borrower and the lender.", "pause": 0.9},
-
-    {"id": "c4a", "chapter": "Why Everyone Wants In", "text": "But why would anyone lend to a government that's already forty trillion dollars in debt?", "pause": 0.5},
-    {"id": "c4b", "text": "Because Treasury bonds are considered one of the safest investments on the planet.", "pause": 0.4},
-    {"id": "c4c", "text": "The US government has the power to tax the biggest economy in the world. And it borrows in its own currency, the dollar.", "pause": 0.5},
-    {"id": "c4d", "text": "And the dollar is the world's favorite money. Countries use it to trade oil, to hold savings, to feel safe.", "pause": 0.5},
-    {"id": "c4e", "text": "So when the world gets scared, money often runs toward American bonds, not away from them.", "pause": 0.9},
-
-    {"id": "c5a", "chapter": "So Is It a Problem?", "text": "So is forty trillion dollars a problem? Here's the honest answer. It depends on how you look at it.", "pause": 0.5},
-    {"id": "c5b", "text": "The good news: a country is not a household. It doesn't retire. It doesn't die. It can keep rolling its debt forward, paying old bonds with new bonds.", "pause": 0.5},
-    {"id": "c5c", "text": "The worrying news: the interest bill is exploding. Remember? About nine hundred seventy billion dollars last year. More than the military.", "pause": 0.5},
-    {"id": "c5d", "text": "The debt held by investors is now about the same size as the entire American economy.", "pause": 0.5},
-    {"id": "c5e", "text": "And in twenty twenty five, Moody's, one of the big credit rating agencies, lowered America's rating from its perfect top score.", "pause": 0.5},
-    {"id": "c5f", "text": "It's like a report card. Still a very good grade. But no longer perfect.", "pause": 0.9},
-
-    {"id": "c6a", "chapter": "Can't We Just Print It?", "text": "So here's the question everyone asks. Why doesn't America just print forty trillion dollars and pay it all off?", "pause": 0.5},
-    {"id": "c6b", "text": "Let's go back to the duck.", "pause": 0.4},
-    {"id": "c6c", "text": "Imagine a town with a hundred loaves of bread, and a hundred dollars. Each loaf costs about one dollar.", "pause": 0.5},
-    {"id": "c6d", "text": "Now the town prints another hundred dollars. But there's still only one hundred loaves.", "pause": 0.4},
-    {"id": "c6e", "text": "More money chasing the same bread. So what happens to the price? It goes up.", "pause": 0.5},
-    {"id": "c6f", "text": "That's called inflation. Print too much money, and everyone's money buys less.", "pause": 0.5},
-    {"id": "c6g", "text": "Countries have tried it. In two thousand eight, Zimbabwe printed so much money that prices were doubling in about a day. People carried cash in wheelbarrows.", "pause": 0.6},
-    {"id": "c6h", "text": "Printing money doesn't make the debt disappear. It just moves the pain to everyone's wallet.", "pause": 0.9},
-
-    {"id": "g1", "chapter": "How Fast Is It Growing?", "text": "Now, how fast is this debt actually growing?", "pause": 0.4},
-    {"id": "g2", "text": "Last year, the government borrowed about one point eight trillion dollars. That's about five billion dollars. Every. Single. Day.", "pause": 0.6},
-    {"id": "g3", "text": "Or about fifty seven thousand dollars every second. By the time you finish hearing this sentence, the debt grew by the price of a few nice cars.", "pause": 0.6},
-    {"id": "g4", "text": "Twenty years ago, the debt was about eight and a half trillion dollars. Today, it's almost five times bigger.", "pause": 0.5},
-    {"id": "g5", "text": "And the interest meter runs on top of all of it. Day and night. Weekends too.", "pause": 0.9},
-
-    {"id": "d1", "chapter": "The Debt Ceiling", "text": "Now here's a strange rule. America has a legal limit on how much it can borrow. It's called the debt ceiling.", "pause": 0.5},
-    {"id": "d2", "text": "When the debt gets close to the ceiling, Congress has to vote to raise it. And that often turns into a big political fight.", "pause": 0.5},
-    {"id": "d3", "text": "Here's the important part. Raising the ceiling doesn't approve new spending. It lets the government pay bills it already agreed to.", "pause": 0.5},
-    {"id": "d4", "text": "It's like Dave ordering a pizza, eating it, and then arguing about whether he's allowed to pay for it.", "pause": 0.7},
-    {"id": "d5", "text": "In twenty eleven, one of these fights got so close to the edge that America lost its perfect credit rating from S and P, for the first time ever.", "pause": 0.5},
-    {"id": "d6", "text": "In July twenty twenty five, the ceiling was raised by five trillion dollars, to forty one point one trillion.", "pause": 0.5},
-    {"id": "d7", "text": "And the debt is already above forty trillion. So guess what's coming back soon?", "pause": 0.9},
-
-    {"id": "c7a", "chapter": "Now You Know", "text": "So let's recap.", "pause": 0.4},
-    {"id": "c7b", "text": "One. America owes about forty trillion dollars. China holds less than two percent.", "pause": 0.5},
-    {"id": "c7c", "text": "Two. Most of the debt is owed to Americans. The government's own trust funds, the Federal Reserve, banks, pension funds, and regular people.", "pause": 0.5},
-    {"id": "c7d", "text": "Three. You can't just print your way out. That leads to inflation.", "pause": 0.6},
-    {"id": "c7e", "text": "And inflation is happening right now, in your wallet. Slowly. Quietly.", "pause": 0.4},
-    {"id": "c7f", "text": "Nobody touched your hundred dollar bill. But it buys less every year. Why?", "pause": 0.5},
-    {"id": "c7g", "text": "That's next. Subscribe, before your money shrinks any further.", "pause": 1.4}
+    {
+      "id": "o1",
+      "text": "America owes forty trillion dollars.",
+      "pause": 0.35
+    },
+    {
+      "id": "o2",
+      "text": "That's about one hundred and seventeen thousand dollars for every single person in the country. Including babies.",
+      "pause": 0.35
+    },
+    {
+      "id": "o3",
+      "text": "So who did America borrow all that money from?",
+      "pause": 0.35
+    },
+    {
+      "id": "o4",
+      "text": "Most people say: China. China owns America.",
+      "pause": 0.35
+    },
+    {
+      "id": "o5",
+      "text": "Nope. China holds less than two percent of it.",
+      "pause": 0.35
+    },
+    {
+      "id": "o6",
+      "text": "The biggest lender to America is a lot closer than you think. In fact, you might be one of them. Let's find out.",
+      "pause": 0.6
+    },
+    {
+      "id": "c1a",
+      "chapter": "What Is the Debt?",
+      "text": "First, where does the debt come from?",
+      "pause": 0.4
+    },
+    {
+      "id": "c1b",
+      "text": "Remember our last video? Almost every year, the government spends more than it collects in taxes. That gap is the deficit.",
+      "pause": 0.5
+    },
+    {
+      "id": "c1c",
+      "text": "To fill the gap, it borrows. And every year's borrowing gets added to the pile. That pile is the national debt.",
+      "pause": 0.5
+    },
+    {
+      "id": "c1d",
+      "text": "How does the government borrow? It sells IOUs called Treasury bonds. You give the government money today, it promises to pay you back later, with interest.",
+      "pause": 0.5
+    },
+    {
+      "id": "c1e",
+      "text": "Now, forty trillion dollars is hard to imagine. So let's try.",
+      "pause": 0.4
+    },
+    {
+      "id": "c1f",
+      "text": "If you stacked forty trillion dollars in one hundred dollar bills, the stack would be so long, it could wrap all the way around the Earth. And then some.",
+      "pause": 0.9
+    },
+    {
+      "id": "c2a",
+      "chapter": "The China Myth",
+      "text": "Now, let's meet the lenders. Starting with the famous one. China.",
+      "pause": 0.4
+    },
+    {
+      "id": "c2b",
+      "text": "China holds about seven hundred thirty billion dollars of American debt.",
+      "pause": 0.4
+    },
+    {
+      "id": "c2c",
+      "text": "That sounds huge. But out of forty trillion, it's less than two percent. And it's the lowest amount China has held since two thousand nine.",
+      "pause": 0.6
+    },
+    {
+      "id": "c2d",
+      "text": "In fact, China isn't even the biggest foreign lender. Japan is, with about one point one five trillion.",
+      "pause": 0.4
+    },
+    {
+      "id": "c2e",
+      "text": "Then the United Kingdom, with about nine hundred billion.",
+      "pause": 0.4
+    },
+    {
+      "id": "c2f",
+      "text": "Add up every foreign country in the world, and they hold about nine point two trillion. Roughly one quarter.",
+      "pause": 0.6
+    },
+    {
+      "id": "c2g",
+      "text": "So if foreigners own one quarter... who owns the other three quarters?",
+      "pause": 0.9
+    },
+    {
+      "id": "c3a",
+      "chapter": "America Owes America",
+      "text": "Here's the plot twist. America mostly owes... America.",
+      "pause": 0.6
+    },
+    {
+      "id": "c3b",
+      "text": "Lender number one: the government itself. About seven point seven trillion dollars.",
+      "pause": 0.4
+    },
+    {
+      "id": "c3c",
+      "text": "Wait. How can you owe yourself money?",
+      "pause": 0.4
+    },
+    {
+      "id": "c3d",
+      "text": "Remember the Social Security tax on Dave's paycheck? For many years, workers paid in more than retirees took out. The extra was saved in a trust fund.",
+      "pause": 0.5
+    },
+    {
+      "id": "c3e",
+      "text": "And that fund was lent to the Treasury. So one part of the government holds IOUs from another part. It's like Dave's left pocket lending money to his right pocket.",
+      "pause": 0.7
+    },
+    {
+      "id": "c3f",
+      "text": "Lender number two: the Federal Reserve. America's central bank holds about four and a half trillion dollars of government bonds.",
+      "pause": 0.4
+    },
+    {
+      "id": "c3g",
+      "text": "Remember our first video? Banks create money with a click. Well, the Federal Reserve can do that too. That's how it bought many of these bonds.",
+      "pause": 0.6
+    },
+    {
+      "id": "c3h",
+      "text": "And lender number three, the biggest group of all: American investors.",
+      "pause": 0.4
+    },
+    {
+      "id": "c3i",
+      "text": "Banks. Pension funds. Insurance companies. Money market funds. State governments. And regular people.",
+      "pause": 0.5
+    },
+    {
+      "id": "c3j",
+      "text": "If you have a retirement account, a money market fund, or even an old savings bond from grandma, you might own a tiny piece of America's debt.",
+      "pause": 0.6
+    },
+    {
+      "id": "c3k",
+      "text": "So, in a strange way, many Americans are both the borrower and the lender.",
+      "pause": 0.9
+    },
+    {
+      "id": "c4a",
+      "chapter": "Why Everyone Wants In",
+      "text": "But why would anyone lend to a government that's already forty trillion dollars in debt?",
+      "pause": 0.5
+    },
+    {
+      "id": "c4b",
+      "text": "Because Treasury bonds are considered one of the safest investments on the planet.",
+      "pause": 0.4
+    },
+    {
+      "id": "c4c",
+      "text": "The US government has the power to tax the biggest economy in the world. And it borrows in its own currency, the dollar.",
+      "pause": 0.5
+    },
+    {
+      "id": "c4d",
+      "text": "And the dollar is the world's favorite money. Countries use it to trade oil, to hold savings, to feel safe.",
+      "pause": 0.5
+    },
+    {
+      "id": "c4e",
+      "text": "So when the world gets scared, money often runs toward American bonds, not away from them.",
+      "pause": 0.9
+    },
+    {
+      "id": "c5a",
+      "chapter": "So Is It a Problem?",
+      "text": "So is forty trillion dollars a problem? Here's the honest answer. It depends on how you look at it.",
+      "pause": 0.5
+    },
+    {
+      "id": "c5b",
+      "text": "The good news: a country is not a household. It doesn't retire. It doesn't die. It can keep rolling its debt forward, paying old bonds with new bonds.",
+      "pause": 0.5
+    },
+    {
+      "id": "c5c",
+      "text": "The worrying news: the interest bill is exploding. Remember? About nine hundred seventy billion dollars last year. More than the military.",
+      "pause": 0.5
+    },
+    {
+      "id": "c5d",
+      "text": "The debt held by investors is now about the same size as the entire American economy.",
+      "pause": 0.5
+    },
+    {
+      "id": "c5e",
+      "text": "And in twenty twenty five, Moody's, one of the big credit rating agencies, lowered America's rating from its perfect top score.",
+      "pause": 0.5
+    },
+    {
+      "id": "c5f",
+      "text": "It's like a report card. Still a very good grade. But no longer perfect.",
+      "pause": 0.9
+    },
+    {
+      "id": "c6a",
+      "chapter": "Can't We Just Print It?",
+      "text": "So here's the question everyone asks. Why doesn't America just print forty trillion dollars and pay it all off?",
+      "pause": 0.5
+    },
+    {
+      "id": "c6b",
+      "text": "Let's go back to the duck.",
+      "pause": 0.4
+    },
+    {
+      "id": "c6c",
+      "text": "Imagine a town with a hundred loaves of bread, and a hundred dollars. Each loaf costs about one dollar.",
+      "pause": 0.5
+    },
+    {
+      "id": "c6d",
+      "text": "Now the town prints another hundred dollars. But there's still only one hundred loaves.",
+      "pause": 0.4
+    },
+    {
+      "id": "c6e",
+      "text": "More money chasing the same bread. So what happens to the price? It goes up.",
+      "pause": 0.5
+    },
+    {
+      "id": "c6f",
+      "text": "That's called inflation. Print too much money, and everyone's money buys less.",
+      "pause": 0.5
+    },
+    {
+      "id": "c6g",
+      "text": "Countries have tried it. In two thousand eight, Zimbabwe printed so much money that prices were doubling in about a day. People carried cash in wheelbarrows.",
+      "pause": 0.6
+    },
+    {
+      "id": "c6h",
+      "text": "Printing money doesn't make the debt disappear. It just moves the pain to everyone's wallet.",
+      "pause": 0.9
+    },
+    {
+      "id": "g1",
+      "chapter": "How Fast Is It Growing?",
+      "text": "Now, how fast is this debt actually growing?",
+      "pause": 0.4
+    },
+    {
+      "id": "g2",
+      "text": "Last year, the government borrowed about one point eight trillion dollars. That's about five billion dollars. Every. Single. Day.",
+      "pause": 0.6
+    },
+    {
+      "id": "g3",
+      "text": "Or about fifty seven thousand dollars every second. By the time you finish hearing this sentence, the debt grew by the price of a few nice cars.",
+      "pause": 0.6
+    },
+    {
+      "id": "g4",
+      "text": "Twenty years ago, the debt was about eight and a half trillion dollars. Today, it's almost five times bigger.",
+      "pause": 0.5
+    },
+    {
+      "id": "g5",
+      "text": "And the interest meter runs on top of all of it. Day and night. Weekends too.",
+      "pause": 0.9
+    },
+    {
+      "id": "d1",
+      "chapter": "The Debt Ceiling",
+      "text": "Now here's a strange rule. America has a legal limit on how much it can borrow. It's called the debt ceiling.",
+      "pause": 0.5
+    },
+    {
+      "id": "d2",
+      "text": "When the debt gets close to the ceiling, Congress has to vote to raise it. And that often turns into a big political fight.",
+      "pause": 0.5
+    },
+    {
+      "id": "d3",
+      "text": "Here's the important part. Raising the ceiling doesn't approve new spending. It lets the government pay bills it already agreed to.",
+      "pause": 0.5
+    },
+    {
+      "id": "d4",
+      "text": "It's like Dave ordering a pizza, eating it, and then arguing about whether he's allowed to pay for it.",
+      "pause": 0.7
+    },
+    {
+      "id": "d5",
+      "text": "In twenty eleven, one of these fights got so close to the edge that America lost its perfect credit rating from S and P, for the first time ever.",
+      "pause": 0.5
+    },
+    {
+      "id": "d6",
+      "text": "In July twenty twenty five, the ceiling was raised by five trillion dollars, to forty one point one trillion.",
+      "pause": 0.5
+    },
+    {
+      "id": "d7",
+      "text": "And the debt is already above forty trillion. So guess what's coming back soon?",
+      "pause": 0.9
+    },
+    {
+      "id": "c7a",
+      "chapter": "Now You Know",
+      "text": "So let's recap.",
+      "pause": 0.4
+    },
+    {
+      "id": "c7b",
+      "text": "One. America owes about forty trillion dollars. China holds less than two percent.",
+      "pause": 0.5
+    },
+    {
+      "id": "c7c",
+      "text": "Two. Most of the debt is owed to Americans. The government's own trust funds, the Federal Reserve, banks, pension funds, and regular people.",
+      "pause": 0.5
+    },
+    {
+      "id": "c7d",
+      "text": "Three. You can't just print your way out. That leads to inflation.",
+      "pause": 0.6
+    },
+    {
+      "id": "c7e",
+      "text": "And inflation is happening right now, in your wallet. Slowly. Quietly.",
+      "pause": 0.4
+    },
+    {
+      "id": "c7f",
+      "text": "Nobody touched your hundred dollar bill. But it buys less every year. Why?",
+      "pause": 0.5
+    },
+    {
+      "id": "c7g",
+      "text": "That's next. Subscribe, before your money shrinks any further.",
+      "pause": 1.4
+    }
   ]
 }
