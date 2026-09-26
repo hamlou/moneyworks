@@ -404,6 +404,116 @@ export const Ep08: React.FC = () => {
     );
   }
 
+  // ============ Where gold comes from ============
+  {
+    const sp = w('m1', 'space');
+    const st = w('m2', 'stars');
+    const sd = w('m2', 'dust');
+    const th = w('m3', 'three');
+    const tn = w('m4', 'tonne');
+    const gr = w('m4', 'grams');
+    const ft = w('m5', 'fort');
+    const ph = w('m6', 'phone');
+    q(sp, 'dream', 0.5);
+    q(st, 'poof', 0.7);
+    q(sd, 'ding', 0.5);
+    q(th, 'pop', 0.5);
+    q(tn, 'thud', 0.6);
+    q(gr, 'ding', 0.5);
+    q(ft, 'clank', 0.6);
+    q(ph, 'pop', 0.5);
+    scene(A('m1'), () =>
+      f < A('m3') ? (
+        <AbsoluteFill style={{background: '#141828'}}>
+          <Svg>
+            {Array.from({length: 60}).map((_, i) => <circle key={i} cx={(i * 337) % 1920} cy={(i * 191) % 1080} r={2 + (i % 3)} fill="#fff" opacity={0.3 + 0.5 * Math.abs(Math.sin(f / 20 + i))} />)}
+            <circle cx={ease(f, st - 20, st, 300, 900)} cy={500} r={70} fill="#FFD166" />
+            <circle cx={ease(f, st - 20, st, 1620, 1020)} cy={560} r={60} fill="#8FD3F5" />
+            <Puff x={960} y={530} t={lin(f, st, st + 30)} s={2} />
+            {f >= st + 10 && Array.from({length: 24}).map((_, i) => {
+              const a = (i / 24) * Math.PI * 2;
+              const d = ease(f, st + 10, st + 60, 0, 600);
+              return <circle key={`g${i}`} cx={960 + Math.cos(a) * d} cy={530 + Math.sin(a) * d * 0.7} r={8} fill={C.gold} />;
+            })}
+            <G2 x={960} y={900} s={pop(f, sd)}><Text size={60} color={C.gold}>gold = star dust</Text></G2>
+            <G2 x={960} y={140} s={pop(f, sp)}><Text size={64} color="#fff">it came from SPACE</Text></G2>
+          </Svg>
+        </AbsoluteFill>
+      ) : f < A('m5') ? (
+        <AbsoluteFill>
+          <Street f={f} />
+          <Svg>
+            <G2 x={960} y={180} s={pop(f, th)}><Text size={60}>~3,600 tonnes mined per year</Text></G2>
+            <path d="M 300 822 L 700 380 L 1100 822 Z" fill="#9C8F7A" stroke={C.ink} strokeWidth={6} strokeLinejoin="round" opacity={pop(f, tn)} />
+            <G2 x={700} y={880} s={pop(f, tn)}><Text size={44}>1 tonne of rock</Text></G2>
+            <Text x={1150} y={600} size={100}>→</Text>
+            <G2 x={1450} y={600} s={pop(f, gr)}>
+              <rect x={-26} y={-26} width={52} height={52} rx={6} fill={C.gold} stroke={C.ink} strokeWidth={5} />
+              <Sparkle x={50} y={-50} t={((f % 40) / 40)} s={0.4} />
+              <Text y={100} size={40}>a few grams</Text>
+            </G2>
+            <SourceTag f={f} at={th} text="World Gold Council mine production data" />
+          </Svg>
+        </AbsoluteFill>
+      ) : (
+        <AbsoluteFill>
+          <Board />
+          <Svg>
+            <G2 x={560} y={460} s={pop(f, ft)}>
+              <rect x={-260} y={-200} width={520} height={300} fill="#C9D1DA" stroke={C.ink} strokeWidth={6} />
+              <rect x={-80} y={-60} width={160} height={160} fill="#56606B" stroke={C.ink} strokeWidth={6} />
+              <Text y={-150} size={40}>FORT KNOX</Text>
+              {[0, 1, 2].map((i) => <GoldBar key={i} x={-170 + i * 170} y={170} s={0.5} />)}
+            </G2>
+            <G2 x={560} y={800} s={pop(f, ft + 6)}><Text size={48}>USA: ~8,100 tonnes</Text></G2>
+            <G2 x={1400} y={500} s={pop(f, ph)}>
+              <rect x={-130} y={-230} width={260} height={460} rx={34} fill="#2E3440" stroke={C.ink} strokeWidth={6} />
+              <rect x={-80} y={-60} width={160} height={120} rx={8} fill="#1F7A4D" stroke={C.ink} strokeWidth={4} />
+              {[-60, -20, 20, 60].map((x) => <line key={x} x1={x} y1={-60} x2={x} y2={60} stroke={C.gold} strokeWidth={6} />)}
+            </G2>
+            <G2 x={1400} y={800} s={pop(f, ph + 6)}><Text size={44}>a little gold in every phone</Text></G2>
+            <SourceTag f={f} at={ft} text="U.S. Treasury: official gold reserves ≈ 8,133 tonnes" />
+          </Svg>
+        </AbsoluteFill>
+      ),
+    );
+  }
+  // ============ Gold rush ============
+  {
+    const ey = w('r2', 'eighteen');
+    const th = w('r2', 'three');
+    const mt = w('r3', 'most');
+    const sh = w('r3', 'shovels');
+    const sf = w('r4', 'safest');
+    q(ey, 'flip', 0.5);
+    q(th, 'crowd', 0.5);
+    q(mt, 'trombone', 0.4);
+    q(sh, 'cash', 0.6);
+    q(sf, 'ding', 0.6);
+    scene(A('r1'), () => (
+      <AbsoluteFill>
+        <AbsoluteFill style={{filter: 'sepia(0.4)'}}>
+          <Street f={f} />
+          <Svg>
+            <Calendar x={260} y={260} s={0.8 * pop(f, ey)} top="CALIFORNIA" year={1848} flip={0} />
+            {Array.from({length: 9}).map((_, i) => (
+              <Stick key={i} f={f} x={ease(f, th - 10 + i * 3, th + 60 + i * 3, -200, 400 + i * 110)} y={820} s={0.7} walk={f < th + 60 + i * 3} acc={i % 2 ? ['cap'] : ['fedora']} seed={200 + i} keys={[{at: 0, pose: 'carry', expr: f >= mt ? 'sad' : 'grin'}]} handItem={<path d="M -8 -60 L 8 -60 L 4 0 L -4 0 Z" fill="#9AA5B1" stroke={C.ink} strokeWidth={3} />} />
+            ))}
+            <G2 x={960} y={160} s={pop(f, th)}><Text size={56}>~300,000 people rushed in</Text></G2>
+            <G2 x={1600} y={822} s={pop(f, sh)}>
+              <rect x={-170} y={-260} width={340} height={260} fill="#E9B872" stroke={C.ink} strokeWidth={6} />
+              <rect x={-190} y={-300} width={380} height={50} rx={8} fill={C.red} stroke={C.ink} strokeWidth={5} />
+              <Text y={-274} size={30} color="#fff">SHOVELS · JEANS · FOOD</Text>
+              <Stick f={f} x={0} y={0} s={0.8} acc={['tophat']} seed={210} keys={[{at: 0, pose: 'celebrate', expr: 'grin'}]} />
+            </G2>
+            <G2 x={1600} y={420} s={pop(f, sf)}><Stamp text="SELL THE SHOVELS" size={44} color={C.green} /></G2>
+          </Svg>
+        </AbsoluteFill>
+        <OldFilm f={f} o={0.4} />
+      </AbsoluteFill>
+    ));
+  }
+
   // ============ CH6 ============
   {
     const gd = w('c6b', 'good');

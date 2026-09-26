@@ -31,7 +31,11 @@
     "August 15, 1971: President Nixon suspended dollar convertibility into gold (official price $35/oz)",
     "Gold fell from ≈ $1,900/oz (Sept 2011) to ≈ $1,050/oz (Dec 2015), about −45%",
     "Warren Buffett, 2011 Berkshire Hathaway shareholder letter, on gold being unproductive",
-    "Lydia (modern-day Turkey) minted some of the first coins, around 600 BC"
+    "Lydia (modern-day Turkey) minted some of the first coins, around 600 BC",
+    "World Gold Council: record gold mine production ≈ 3,600+ tonnes per year (2024–2025)",
+    "U.S. Treasury: U.S. official gold reserves ≈ 8,133 tonnes (≈ 261.5 million troy oz), largest in the world",
+    "California Gold Rush (1848–1855): roughly 300,000 people arrived",
+    "Astrophysics: heavy elements like gold are formed mainly in neutron-star mergers and supernovae"
   ],
   "beats": [
     {
@@ -237,6 +241,58 @@
     {
       "id": "c5g",
       "text": "And when the biggest banks on Earth keep buying, prices tend to go up. Gold hit record highs above five thousand dollars an ounce earlier this year.",
+      "pause": 0.9
+    },
+    {
+      "id": "m1",
+      "chapter": "Where Gold Comes From",
+      "text": "So where does all this gold come from? Brace yourself. It came from space.",
+      "pause": 0.5
+    },
+    {
+      "id": "m2",
+      "text": "Scientists believe most gold was made when giant stars exploded, or smashed into each other, billions of years ago. Every gold ring is basically star dust.",
+      "pause": 0.6
+    },
+    {
+      "id": "m3",
+      "text": "Today, miners dig about three thousand six hundred tonnes of new gold out of the ground every year.",
+      "pause": 0.5
+    },
+    {
+      "id": "m4",
+      "text": "And it's hard work. A whole tonne of rock often holds just a few grams of gold. Smaller than a sugar cube.",
+      "pause": 0.5
+    },
+    {
+      "id": "m5",
+      "text": "Where does the world keep it? America has the biggest pile. About eight thousand tonnes, much of it in places like Fort Knox.",
+      "pause": 0.5
+    },
+    {
+      "id": "m6",
+      "text": "And a tiny bit is probably in your pocket right now. Your phone has a little gold inside, because gold carries electricity well and never rusts.",
+      "pause": 0.9
+    },
+    {
+      "id": "r1",
+      "chapter": "Gold Rush",
+      "text": "Gold has also made people do some very crazy things.",
+      "pause": 0.4
+    },
+    {
+      "id": "r2",
+      "text": "In eighteen forty eight, someone found gold in California. Within a few years, about three hundred thousand people rushed there, dreaming of getting rich.",
+      "pause": 0.5
+    },
+    {
+      "id": "r3",
+      "text": "Most of them didn't. Many of the people who really got rich were the ones selling shovels, clothes, food, and supplies to the miners.",
+      "pause": 0.5
+    },
+    {
+      "id": "r4",
+      "text": "That lesson still works today. In a gold rush, the safest business is often selling the shovels.",
       "pause": 0.9
     },
     {
