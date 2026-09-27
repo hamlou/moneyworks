@@ -1,0 +1,114 @@
+{
+  "id": "ep32",
+  "title": "You Got a Raise. So Why Aren't You Richer?",
+  "sources": [
+    "WTW Salary Budget Planning Report (July 2026): U.S. salary increase budgets averaged 3.5% in 2026; 3.4% projected for 2027. Mercer: 3.5% total increase budgets for 2026",
+    "U.S. Bureau of Labor Statistics, CPI release Sept 11, 2026: all-items CPI +3.4% over the 12 months ending August 2026",
+    "U.S. Bureau of Labor Statistics, Real Earnings, August 2026 (USDL-26-1497, Sept 11, 2026): real average hourly earnings decreased 0.3% from August 2025 to August 2026",
+    "IRS Rev. Proc. 2025-32 / IRS newsroom (tax year 2026): standard deduction $16,100 single; brackets 10% to $12,400, 12% to $50,400, 22% to $105,700, 24% to $201,775, 32% to $256,225, 35% to $640,600, 37% above",
+    "Social Security Administration / IRS: employee payroll tax 6.2% Social Security + 1.45% Medicare = 7.65%",
+    "Edmunds, Q2 2026: average monthly payment on a financed new vehicle a record $777; average term 70.4 months; 1 in 5 buyers pay $1,000+/month; record 23.9% of loans 84 months or longer",
+    "Brickman & Campbell (1971), 'Hedonic relativism and planning the good society'; Brickman, Coates & Janoff-Bulman (1978), 'Lottery winners and accident victims: Is happiness relative?', Journal of Personality and Social Psychology",
+    "Thaler & Benartzi (2004), 'Save More Tomorrow', Journal of Political Economy 112(S1): participants' saving rates rose from 3.5% to 13.6% over 40 months by committing future raises to savings",
+    "Math (single filer, federal only, 2026): $65,000 - $16,100 = $48,900 taxable -> tax $1,240 + 12% x $36,500 = $5,620. $70,000 -> $53,900 taxable -> $1,240 + 12% x $38,000 + 22% x $3,500 = $6,570. Extra federal tax $950; payroll 7.65% x $5,000 = $383; raise after tax ~ $3,667 (~$305/month). Inflation: 3.4% x ~$50,000 of spending ~ $1,700. 3.5% raise vs 3.4% inflation ~ 0.1% real. Half of $305 ~ $150/month = $1,800/yr"
+  ],
+  "beats": [
+    {"id": "o1", "text": "Dave just got a raise. Five thousand dollars a year. He celebrates the only way he knows. A brand new car.", "pause": 0.3},
+    {"id": "o2", "text": "Six months later, Dave has less money at the end of each month than before the raise.", "pause": 0.3},
+    {"id": "o3", "text": "Taxes took a bite. Prices took another bite. And Dave's new lifestyle ate the rest.", "pause": 0.3},
+    {"id": "o4", "text": "And it's not just Dave. In twenty twenty six, the typical raise budget was about three and a half percent. Prices rose three point four. That's almost nothing left over.", "pause": 0.3},
+    {"id": "o5", "text": "Wait, it gets worse. Some people are scared of raises, because they think a higher tax bracket means taking home less. Spoiler: it doesn't work like that.", "pause": 0.35},
+    {"id": "o6", "text": "Today: where your raise really goes, the tax bracket myth, who profits when you upgrade, and how to keep more of every raise.", "pause": 0.6},
+
+    {"id": "c1a", "chapter": "Dave's Big Raise", "text": "Let's start with the good news.", "pause": 0.4},
+    {"id": "c1b", "text": "Dave's boss calls him in. His salary goes from sixty five thousand dollars, to seventy thousand. That's five thousand more, every year.", "pause": 0.5},
+    {"id": "c1c", "text": "Divide by twelve, and it's about four hundred seventeen dollars a month. Dave does that math in his head. Very quickly.", "pause": 0.5},
+    {"id": "c1d", "text": "And he starts making plans. A new car. A bigger apartment. Nicer dinners. He earned it, right?", "pause": 0.5},
+    {"id": "c1e", "text": "But four hundred seventeen dollars is the number on paper. Let's see how much of it actually reaches Dave's pocket.", "pause": 0.9},
+
+    {"id": "c2a", "chapter": "The Tax Bracket Myth", "text": "First, a myth that scares a lot of people.", "pause": 0.4},
+    {"id": "c2b", "text": "Most people think if a raise pushes you into a higher tax bracket, all your money gets taxed at the higher rate. So you could end up taking home less. Nope.", "pause": 0.5},
+    {"id": "c2c", "text": "Here's how it really works. Picture a row of buckets. Your income pours into the first bucket. When it's full, the extra spills into the next one.", "pause": 0.5},
+    {"id": "c2d", "text": "For a single person in twenty twenty six, the first sixteen thousand one hundred dollars is the standard deduction. Taxed at zero.", "pause": 0.5},
+    {"id": "c2e", "text": "The next bucket is taxed at ten percent. Then twelve percent. And only money above fifty thousand four hundred dollars of taxable income spills into the twenty two percent bucket.", "pause": 0.5},
+    {"id": "c2f", "text": "Dave's raise pushes three thousand five hundred dollars into the twenty two percent bucket. Only that part pays the higher rate. Everything below stays exactly the same.", "pause": 0.5},
+    {"id": "c2g", "text": "So a normal raise can never lower your take home pay from federal income tax. You always keep most of every extra dollar.", "pause": 0.9},
+
+    {"id": "c3a", "chapter": "The First Bites", "text": "Okay. But the taxman still takes a bite.", "pause": 0.4},
+    {"id": "c3b", "text": "On Dave's five thousand dollar raise, the extra federal income tax is about nine hundred fifty dollars.", "pause": 0.5},
+    {"id": "c3c", "text": "Then Social Security and Medicare. Together, seven point six five percent. That's another three hundred eighty three.", "pause": 0.5},
+    {"id": "c3d", "text": "And if Dave's state has an income tax, it takes a slice too.", "pause": 0.5},
+    {"id": "c3e", "text": "So before his state even looks at it, the raise is down to about three thousand six hundred sixty seven dollars. Around three hundred five a month. Not four hundred seventeen.", "pause": 0.5},
+    {"id": "c3f", "text": "Still good money. But Dave's new car was already picked out, using the bigger number.", "pause": 0.9},
+
+    {"id": "c4a", "chapter": "Inflation Eats Raises", "text": "Next bite: prices.", "pause": 0.4},
+    {"id": "c4b", "text": "Economists talk about two kinds of pay. Nominal pay is the number on your paycheck. Real pay is what that paycheck can actually buy.", "pause": 0.5},
+    {"id": "c4c", "text": "Remember our inflation video? Prices rose three point four percent in the twelve months to August twenty twenty six.", "pause": 0.5},
+    {"id": "c4d", "text": "The Bureau of Labor Statistics does this math for the whole country. Over that same year, real average hourly earnings actually fell, by zero point three percent.", "pause": 0.5},
+    {"id": "c4e", "text": "It's like walking up an escalator that's going down. You're moving your legs. You're sweating. But you're not getting much higher.", "pause": 0.5},
+    {"id": "c4f", "text": "For Dave, if he spends about fifty thousand dollars a year, three point four percent inflation means about one thousand seven hundred dollars more, just to live the same life.", "pause": 0.5},
+    {"id": "c4g", "text": "So his real raise is about two thousand dollars a year. Nice. But not new car nice.", "pause": 0.9},
+
+    {"id": "c5a", "chapter": "Lifestyle Creep", "text": "And now, the biggest bite of all. Dave.", "pause": 0.4},
+    {"id": "c5b", "text": "Dave's old car was paid off. It was ugly, but it was free. So he trades it in, for a shiny new one.", "pause": 0.5},
+    {"id": "c5c", "text": "According to Edmunds, the average monthly payment on a new car loan hit a record seven hundred seventy seven dollars in the second quarter of twenty twenty six. One in five buyers pays over a thousand.", "pause": 0.5},
+    {"id": "c5d", "text": "Dave's payment is six hundred dollars. That's seven thousand two hundred a year. More than his whole raise, before tax.", "pause": 0.5},
+    {"id": "c5e", "text": "Then the bigger apartment. Then the nicer dinners. Nothing crazy. Just a little upgrade here, a little upgrade there.", "pause": 0.5},
+    {"id": "c5f", "text": "This is called lifestyle creep. It's like a closet. Get a bigger closet, and somehow, it fills up too.", "pause": 0.9},
+
+    {"id": "c6a", "chapter": "The Happiness Treadmill", "text": "Here's the part that surprised even Dave.", "pause": 0.4},
+    {"id": "c6b", "text": "The new car felt amazing. For about three weeks. Then it was just, Dave's car.", "pause": 0.5},
+    {"id": "c6c", "text": "Psychologists call this the hedonic treadmill. Back in nineteen seventy one, researchers Philip Brickman and Donald Campbell described it. We get used to good things, fast.", "pause": 0.5},
+    {"id": "c6d", "text": "In a famous nineteen seventy eight study, lottery winners were not much happier than regular people, once the excitement wore off.", "pause": 0.5},
+    {"id": "c6e", "text": "So you run faster, earn more, buy more. And you stay in the same place. Like a hamster on a wheel, with a car payment.", "pause": 0.9},
+
+    {"id": "c7a", "chapter": "Who Profits From Your Raise", "text": "So who wins when Dave upgrades?", "pause": 0.4},
+    {"id": "c7b", "text": "Lenders, first. A bigger salary means you can borrow more. And to make big prices look small, loans keep getting longer.", "pause": 0.5},
+    {"id": "c7c", "text": "Edmunds says a record twenty three point nine percent of new car loans in the second quarter of twenty twenty six ran eighty four months or more. That's seven years.", "pause": 0.5},
+    {"id": "c7d", "text": "Longer loan, smaller monthly payment, more interest in total. Remember the raccoon? He loves a long loan.", "pause": 0.5},
+    {"id": "c7e", "text": "Credit card companies ask about your income too. Earn more, and a higher limit often shows up. And ads everywhere whisper the same thing. You deserve it.", "pause": 0.5},
+    {"id": "c7f", "text": "To be fair, nobody forces Dave to sign. But almost every sign he sees is pointing at the upgrade.", "pause": 0.9},
+
+    {"id": "c8a", "chapter": "Save Half of Every Raise", "text": "So how do people keep more of a raise? Remember, this is education, not advice.", "pause": 0.4},
+    {"id": "c8b", "text": "One. Save half. Before the first bigger paycheck even arrives, set up an automatic transfer for half the raise. Savings, retirement, or paying off debt.", "pause": 0.5},
+    {"id": "c8c", "text": "Two. Enjoy the other half. Guilt free. A raise should feel like a raise. That's the whole point.", "pause": 0.5},
+    {"id": "c8d", "text": "Three. Bump your retirement savings when your pay goes up. In the famous Save More Tomorrow study, workers who did this went from saving three point five percent, to thirteen point six percent, in about three and a half years.", "pause": 0.5},
+    {"id": "c8e", "text": "Four. For big upgrades, look at the total cost, not the monthly payment. And wait thirty days before signing.", "pause": 0.5},
+    {"id": "c8f", "text": "Five. Check your real raise. If your raise is smaller than inflation, you didn't really get a raise. That's useful to know at your next review.", "pause": 0.9},
+
+    {"id": "c9a", "chapter": "Dave's Do-Over", "text": "So Dave hit rewind.", "pause": 0.4},
+    {"id": "c9b", "text": "He kept his ugly old car for now. He set up an automatic transfer of about one hundred fifty dollars a month. Half his raise, after tax.", "pause": 0.5},
+    {"id": "c9c", "text": "That's about one thousand eight hundred dollars a year, quietly piling up. And the other half? Nicer dinners, no guilt.", "pause": 0.5},
+    {"id": "c9d", "text": "And with every future raise, he does it again. His life still gets better every year. His savings just get better faster.", "pause": 0.9},
+
+    {"id": "r1", "chapter": "Now You Know", "text": "So let's recap.", "pause": 0.4},
+    {"id": "r2", "text": "One. A higher tax bracket only taxes the extra dollars. A raise can't make you take home less from federal income tax.", "pause": 0.5},
+    {"id": "r3", "text": "Two. Taxes, inflation and lifestyle creep can eat a raise completely. Watch your real pay, not just the number.", "pause": 0.5},
+    {"id": "r4", "text": "Three. Save half of every raise automatically, and enjoy the other half.", "pause": 0.6},
+    {"id": "r5", "text": "Next time: why a twelve dollar burger costs twenty eight on DoorDash.", "pause": 0.4},
+    {"id": "r6", "text": "Subscribe, so Dave can keep explaining money. It's free. No raise required.", "pause": 1.4}
+  ],
+  "youtube": {
+    "title": "You Got a Raise. So Why Aren't You Richer? (Tax Brackets, Inflation)",
+    "alt_titles": [
+      "Tax Brackets Explained: Why a Raise Can't Make You Take Home Less",
+      "Your $5,000 Raise Is Really $2,000. Here's Where It Went."
+    ],
+    "hook": "You got a raise, so why aren't you richer? Dave's $5,000 raise shrinks to about $3,667 after federal and payroll taxes, then inflation eats another $1,700, and a new $600 car payment eats the rest. We bust the tax bracket myth with buckets (2026 IRS brackets: only the dollars above $50,400 of taxable income pay 22%), explain real vs nominal wages (BLS: real average hourly earnings fell 0.3% in the year to August 2026 while typical raises were about 3.5%), lifestyle creep, the hedonic treadmill and who profits when you upgrade: lenders stretching car loans to 84 months (a record 23.9% in Q2 2026, Edmunds) and card limits that grow with your income. Then the practical fix: save half of every raise automatically, inspired by the Save More Tomorrow study.",
+    "tags": [
+      "why am i not richer after a raise",
+      "tax brackets explained",
+      "marginal tax rate explained",
+      "does a raise put me in a higher tax bracket",
+      "lifestyle creep",
+      "real vs nominal wages",
+      "hedonic treadmill",
+      "save half your raise",
+      "inflation vs raise",
+      "money explained simply",
+      "dave explains money"
+    ],
+    "hashtags": ["#taxes", "#salary", "#money"],
+    "pinned": "Quick poll: did your last raise beat inflation? Answer YES or NO below"
+  }
+}
