@@ -25,6 +25,26 @@ export const Defs: React.FC = () => (
     <filter id="blur40" x="-50%" y="-50%" width="200%" height="200%">
       <feGaussianBlur stdDeviation="40" />
     </filter>
+    <filter id="gloss" x="-30%" y="-30%" width="160%" height="160%">
+      <feMorphology in="SourceAlpha" operator="dilate" radius="9" result="d" />
+      <feFlood floodColor="#fff" />
+      <feComposite in2="d" operator="in" result="o" />
+      <feDropShadow in="o" dx="0" dy="16" stdDeviation="16" floodColor="#000" floodOpacity="0.6" result="os" />
+      <feGaussianBlur in="SourceAlpha" stdDeviation="7" result="b" />
+      <feSpecularLighting in="b" surfaceScale="6" specularConstant="0.9" specularExponent="22" lightingColor="#ffffff" result="spec">
+        <feDistantLight azimuth="235" elevation="48" />
+      </feSpecularLighting>
+      <feComposite in="spec" in2="SourceAlpha" operator="in" result="specIn" />
+      <feComposite in="SourceGraphic" in2="specIn" operator="arithmetic" k1="0" k2="1" k3="0.35" k4="0" result="lit" />
+      <feMerge>
+        <feMergeNode in="os" />
+        <feMergeNode in="lit" />
+      </feMerge>
+    </filter>
+    <linearGradient id="gGold" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stopColor="#FFF2A8" /><stop offset="0.45" stopColor="#FFD23F" /><stop offset="1" stopColor="#F29A1E" /></linearGradient>
+    <linearGradient id="gGreen" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stopColor="#B9FFB0" /><stop offset="0.5" stopColor="#3BE36B" /><stop offset="1" stopColor="#12A044" /></linearGradient>
+    <linearGradient id="gRed" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stopColor="#FFB3B3" /><stop offset="0.5" stopColor="#FF4040" /><stop offset="1" stopColor="#C4001A" /></linearGradient>
+    <linearGradient id="gWhite" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stopColor="#FFFFFF" /><stop offset="1" stopColor="#DCE3EA" /></linearGradient>
   </defs>
 );
 
@@ -59,8 +79,9 @@ export const Glow: React.FC<{x: number; y: number; r: number; color: string; o?:
 
 type Acc = React.ComponentProps<typeof Stick>['acc'];
 
-export const Face: React.FC<{cx: number; cy: number; s?: number; expr: Expr; pose?: string; acc?: Acc; seed?: number; look?: number; flip?: boolean; lines?: boolean; sweat?: boolean}> = ({cx, cy, s = 6, expr, pose = 'idle', acc = ['hair'], seed = 50, look = 0, flip, lines, sweat}) => (
+export const Face: React.FC<{cx: number; cy: number; s?: number; expr: Expr; pose?: string; acc?: Acc; seed?: number; look?: number; flip?: boolean; lines?: boolean; sweat?: boolean; rim?: string}> = ({cx, cy, s = 6, expr, pose = 'idle', acc = ['hair'], seed = 50, look = 0, flip, lines, sweat, rim = '#FFE680'}) => (
   <g>
+    <circle cx={cx} cy={cy} r={46 * s} fill={rim} opacity={0.5} filter="url(#blur40)" />
     {lines &&
       Array.from({length: 7}).map((_, i) => {
         const a = (-150 + i * 20) * (Math.PI / 180);
@@ -77,13 +98,47 @@ export const Face: React.FC<{cx: number; cy: number; s?: number; expr: Expr; pos
   </g>
 );
 
-export const Hero: React.FC<{x?: number; y?: number; s?: number; r?: number; pop?: boolean; children: React.ReactNode}> = ({x = 0, y = 0, s = 1, r = 0, pop = true, children}) => (
-  <g filter={pop ? 'url(#pop)' : 'url(#shadow)'}>
+export const Hero: React.FC<{x?: number; y?: number; s?: number; r?: number; pop?: boolean; flat?: boolean; children: React.ReactNode}> = ({x = 0, y = 0, s = 1, r = 0, pop = true, flat = false, children}) => (
+  <g filter={pop ? (flat ? 'url(#pop)' : 'url(#gloss)') : 'url(#shadow)'}>
     <g transform={`translate(${x},${y}) rotate(${r}) scale(${s})`}>{children}</g>
   </g>
 );
 
 export type Word = {t: string; c?: string; box?: string};
+
+// Gradient fills: 'gold' | 'green' | 'red' | white default; C.yellow maps to gold. Other colors pass through.
+const fillOf = (c?: string) => (!c || c === '#fff' ? 'url(#gWhite)' : c === 'gold' || c === C.yellow ? 'url(#gGold)' : c === 'green' ? 'url(#gGreen)' : c === 'red' ? 'url(#gRed)' : c);
+
+// Huge 3D number / short word: the "big number" layout finance thumbnails use.
+export const BigNum: React.FC<{x: number; y: number; size: number; text: string; c?: string; r?: number; anchor?: 'start' | 'middle' | 'end'}> = ({x, y, size, text, c = 'green', r = 0, anchor = 'middle'}) => (
+  <g transform={`rotate(${r},${x},${y})`}>
+    {Array.from({length: 10}).map((_, k) => (
+      <text key={k} x={x + (10 - k) * size * 0.011} y={y + (10 - k) * size * 0.015} fontFamily={HEAD} fontSize={size} fill="#101014" textAnchor={anchor} dominantBaseline="middle" stroke="#101014" strokeWidth={size * 0.16} strokeLinejoin="round">
+        {text}
+      </text>
+    ))}
+    <text x={x} y={y} fontFamily={HEAD} fontSize={size} fill={fillOf(c)} textAnchor={anchor} dominantBaseline="middle" stroke="#fff" strokeWidth={size * 0.05} paintOrder="stroke" strokeLinejoin="round">
+      {text}
+    </text>
+  </g>
+);
+
+// Two-colour diagonal split background (before/after, good/bad).
+export const SplitStage: React.FC<{left: [string, string]; right: [string, string]; children: React.ReactNode}> = ({left, right, children}) => (
+  <AbsoluteFill style={{background: left[1]}}>
+    <svg width={W} height={H} viewBox={`0 0 ${W} ${H}`} style={{position: 'absolute', inset: 0}}>
+      <Defs />
+      <radialGradient id="sl" cx={320} cy={360} r={700} gradientUnits="userSpaceOnUse"><stop offset="0" stopColor={left[0]} /><stop offset="1" stopColor={left[1]} /></radialGradient>
+      <radialGradient id="sr" cx={960} cy={360} r={700} gradientUnits="userSpaceOnUse"><stop offset="0" stopColor={right[0]} /><stop offset="1" stopColor={right[1]} /></radialGradient>
+      <rect width={W} height={H} fill="url(#sl)" />
+      <path d="M 700 0 L 1280 0 L 1280 720 L 580 720 Z" fill="url(#sr)" />
+      <path d="M 700 0 L 580 720" stroke="#fff" strokeWidth={14} />
+      <radialGradient id="vig2" cx={640} cy={360} r={820} gradientUnits="userSpaceOnUse"><stop offset="0.55" stopColor="#000" stopOpacity={0} /><stop offset="1" stopColor="#000" stopOpacity={0.5} /></radialGradient>
+      {children}
+      <rect width={W} height={H} fill="url(#vig2)" pointerEvents="none" />
+    </svg>
+  </AbsoluteFill>
+);
 
 const tw = (t: string) =>
   [...t].reduce((a, ch) => a + ("I1'.,!:|".includes(ch) ? 0.25 : '?'.includes(ch) ? 0.42 : 'MW'.includes(ch) ? 0.66 : ch === ' ' ? 0.22 : ch === '×' ? 0.5 : 0.47), 0);
@@ -133,12 +188,13 @@ export const Headline: React.FC<{x: number; y: number; size: number; lines: Word
           return (
             <g key={`${li}-${i}`}>
               {w.box && <rect x={wx} y={ly - size * 0.58} width={widths[i]} height={size * 1.12} rx={size * 0.14} fill={w.box} stroke={C.ink} strokeWidth={size * 0.07} filter="url(#shadow)" />}
-              {!w.box && (
-                <text x={tx + size * 0.05} y={ly + size * 0.07} fontFamily={HEAD} fontSize={size} fill={C.ink} textAnchor="middle" dominantBaseline="middle" stroke={C.ink} strokeWidth={size * 0.2} strokeLinejoin="round">
-                  {w.t}
-                </text>
-              )}
-              <text x={tx} y={ly} fontFamily={HEAD} fontSize={size} fill={w.c ?? '#fff'} textAnchor="middle" dominantBaseline="middle" stroke={w.box ? 'none' : C.ink} strokeWidth={size * 0.13} paintOrder="stroke" strokeLinejoin="round">
+              {!w.box &&
+                Array.from({length: 7}).map((_, k) => (
+                  <text key={k} x={tx + (7 - k) * size * 0.012} y={ly + (7 - k) * size * 0.016} fontFamily={HEAD} fontSize={size} fill="#141419" textAnchor="middle" dominantBaseline="middle" stroke="#141419" strokeWidth={size * 0.2} strokeLinejoin="round">
+                    {w.t}
+                  </text>
+                ))}
+              <text x={tx} y={ly} fontFamily={HEAD} fontSize={size} fill={w.box ? (w.c ?? C.ink) : fillOf(w.c)} textAnchor="middle" dominantBaseline="middle" stroke={w.box ? 'none' : C.ink} strokeWidth={size * 0.13} paintOrder="stroke" strokeLinejoin="round">
                 {w.t}
               </text>
             </g>
