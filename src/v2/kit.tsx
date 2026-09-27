@@ -1,10 +1,9 @@
 import React from 'react';
 import {AbsoluteFill} from 'remotion';
-import {loadFont as loadAnton} from '@remotion/google-fonts/Anton';
-import {C} from '../theme';
+import {C, localFont} from '../theme';
 import {Stick, Expr} from '../Stick';
 
-export const HEAD = loadAnton('normal', {weights: ['400'], subsets: ['latin']}).fontFamily;
+export const HEAD = localFont('Anton', 'anton.woff2', '400');
 export const W = 1280;
 export const H = 720;
 

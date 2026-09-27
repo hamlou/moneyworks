@@ -30,7 +30,8 @@ Callbacks to earlier episodes are GOOD ("Remember the raccoon from our credit ca
 
 ## 3. Script rules (the most important part)
 
-1. **Length:** aim for **1,900–2,100 spoken words** (Andrew at -10% is faster than expected: ~1,500 words gave only 6:40–7:30 in Series 1). ALWAYS run python pipeline/validate.py epNN after tts — it fails under 8:00. If short, add a history chapter or a 'X vs Y' comparison chapter.
+0. **Speed:** build several episodes in parallel with builder agents using `AGENT_BRIEF.md`; the lead integrates, QAs and renders.
+1. **Length:** aim for **~1,250–1,400 spoken words, 9 chapters** (1,230 words ≈ 8:50; older note below overestimated) (Andrew at -10% is faster than expected: ~1,500 words gave only 6:40–7:30 in Series 1). ALWAYS run python pipeline/validate.py epNN after tts — it fails under 8:00. If short, add a history chapter or a 'X vs Y' comparison chapter.
 2. **Structure (always):**
    - **Cold open / hook (beats `o1…o6`, ~35–50 s):** a shocking concrete claim in the first sentence, proof on screen within 5 s, a short "wait, it gets worse" beat, then a promise: "Today: X, Y, and Z."
    - **6–8 chapters** (`"chapter": "Title"` on the first beat). Each chapter = one idea, with its own silly analogy.

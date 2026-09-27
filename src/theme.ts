@@ -1,8 +1,23 @@
-import {loadFont as loadFredoka} from '@remotion/google-fonts/Fredoka';
-import {loadFont as loadCaveat} from '@remotion/google-fonts/Caveat';
+import {continueRender, delayRender, staticFile} from 'remotion';
 
-export const FONT = loadFredoka('normal', {weights: ['500', '600', '700'], subsets: ['latin']}).fontFamily;
-export const HAND = loadCaveat('normal', {weights: ['700'], subsets: ['latin']}).fontFamily;
+// Fonts are self-hosted in public/fonts so rendering never depends on the network.
+const loaded: Record<string, boolean> = {};
+export const localFont = (family: string, file: string, weight = '100 900') => {
+  if (typeof window === 'undefined' || typeof FontFace === 'undefined' || loaded[family]) return family;
+  loaded[family] = true;
+  const h = delayRender(`font ${family}`);
+  const ff = new FontFace(family, `url(${staticFile(`fonts/${file}`)}) format('woff2')`, {weight});
+  ff.load()
+    .then(() => {
+      document.fonts.add(ff);
+      continueRender(h);
+    })
+    .catch(() => continueRender(h));
+  return family;
+};
+
+export const FONT = localFont('Fredoka', 'fredoka.woff2', '300 700');
+export const HAND = localFont('Caveat', 'caveat.woff2', '400 700');
 
 export const C = {
   bg: '#FBF6EC',

@@ -33,6 +33,14 @@ export const V2_THUMBS: Record<string, React.FC<{v: 'A' | 'B' | 'C'}>> = {
   ep17: V2Ep17,
 };
 
+declare const require: {context: (dir: string, sub: boolean, re: RegExp) => {keys: () => string[]; (k: string): Record<string, React.FC<{v: 'A' | 'B' | 'C'}>>}};
+const tctx = require.context('./', false, /^\.\/t\d+\.tsx$/);
+for (const k of tctx.keys()) {
+  const n = k.replace('./t', '').replace('.tsx', '');
+  const comp = tctx(k)['V2Ep' + n];
+  if (comp && !V2_THUMBS['ep' + n]) V2_THUMBS['ep' + n] = comp;
+}
+
 export type ThumbV2Props = {ep: string; v: 'A' | 'B' | 'C'};
 
 export const ThumbV2: React.FC<ThumbV2Props> = ({ep, v}) => {

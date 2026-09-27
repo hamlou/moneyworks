@@ -28,6 +28,15 @@ export type EpisodeProps = {ep: string; timings: Timings | null};
 
 const EPISODES: Record<string, React.FC> = {ep001: Ep001, ep01: Ep01, ep02: Ep02, ep03: Ep03, ep04: Ep04, ep05: Ep05, ep06: Ep06, ep07: Ep07, ep08: Ep08, ep09: Ep09, ep10: Ep10, ep11: Ep11, ep12: Ep12, ep13: Ep13, ep14: Ep14, ep15: Ep15, ep18: Ep18, ep16: Ep16, ep20: Ep20, ep19: Ep19, ep17: Ep17};
 
+// Episodes from ep21 on are picked up automatically: any src/episodes/EpNN.tsx exporting `EpNN`.
+declare const require: {context: (dir: string, sub: boolean, re: RegExp) => {keys: () => string[]; (k: string): Record<string, React.FC>}};
+const ctx = require.context('./episodes', false, /Ep\d+\.tsx$/);
+for (const k of ctx.keys()) {
+  const name = k.replace('./', '').replace('.tsx', '');
+  const id = 'ep' + name.slice(2);
+  if (!EPISODES[id] && ctx(k)[name]) EPISODES[id] = ctx(k)[name];
+}
+
 export const Episode: React.FC<EpisodeProps> = ({ep, timings}) => {
   const f = useCurrentFrame();
   const {durationInFrames: d} = useVideoConfig();
