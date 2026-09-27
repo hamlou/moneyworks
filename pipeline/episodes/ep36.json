@@ -1,0 +1,118 @@
+{
+  "id": "ep36",
+  "title": "The Store Tricks That Make You Spend More",
+  "sources": [
+    "Martin Lindstrom (retail consultant), as reported by TODAY and others: in an experiment, doubling the size of shopping carts led shoppers to buy about 40% more",
+    "U.S. Federal Trade Commission, The Use of Slotting Allowances in the Retail Grocery Industry (Nov 2003): manufacturers pay retailers fees to get products onto shelves; fees vary widely and can be a large share of a new product's first-year revenue",
+    "Journal of Retailing and Consumer Services (2018), 'Assessing the sales effectiveness of differently located endcaps in a supermarket': rear endcaps +416%, front endcaps +346% sales uplift vs normal shelf",
+    "Thomas & Morwitz, 'Penny Wise and Pound Foolish: The Left-Digit Effect in Price Cognition', Journal of Consumer Research (2005)",
+    "Anderson & Simester, 'Effects of $9 Price Endings on Retail Sales', Quantitative Marketing and Economics (2003): the same dress sold more at $39 than at $34",
+    "FTC Guides Against Deceptive Pricing, 16 CFR 233.1 (former price comparisons): a 'was' price must be a bona fide price the item was actually offered at for a reasonably substantial period",
+    "Spann v. J.C. Penney Corp. (C.D. Cal.): $50 million class action settlement (2016) over allegedly inflated 'original' reference prices",
+    "Wansink, Kent & Hoch, 'An Anchoring and Adjustment Model of Purchase Quantity Decisions', Journal of Marketing Research (1998): 'limit 12 per person' signs raised average purchases from 3.3 to 7 cans; multiple-unit prices raised sales 32%",
+    "Deloitte consumer research, as widely cited: 58% of online shoppers add items to reach a free-shipping threshold",
+    "FTC, Surveillance Pricing 6(b) study, initial staff findings (Jan 17, 2025): personal data such as location, browsing and purchase history can be used to set individualized prices",
+    "CNBC (Mar 21, 2026): Walmart digital shelf labels in every U.S. store by end of 2026; Kellogg Insight / study (May 2026): virtually no surge pricing found after electronic shelf labels were adopted",
+    "UK Food (Promotion and Placement) (England) Regulations 2021, in force Oct 1, 2022: bans placing foods high in fat, sugar or salt at checkouts, aisle ends and store entrances in stores over 2,000 sq ft (businesses with 50+ employees)",
+    "Costco callback: $1.50 hot dog and soda (ep12)",
+    "Illustrative math: milk $3.49; $35 order + $6.99 shipping vs $50 threshold; 10 for $10 = $1 each"
+  ],
+  "beats": [
+    {"id": "o1", "text": "Dave goes to the store for one thing. Milk. Three dollars and forty nine cents.", "pause": 0.3},
+    {"id": "o2", "text": "Twenty five minutes later, he walks out with cookies, a candle, a phone charger, two frozen pizzas, and a giant bag of chips. Total: eighty seven dollars.", "pause": 0.3},
+    {"id": "o3", "text": "And here's the twist. Dave did not make a mistake. The store was designed to make that happen.", "pause": 0.3},
+    {"id": "o4", "text": "The walk. The shelves. The prices. Even the size of the cart.", "pause": 0.3},
+    {"id": "o5", "text": "Every part of that trip was planned by people who study shoppers for a living.", "pause": 0.35},
+    {"id": "o6", "text": "Today: the tricks, who profits from them, and how to walk out with just the milk.", "pause": 0.6},
+
+    {"id": "c1a", "chapter": "Why the Milk Is at the Back", "text": "Let's start with a simple question. Where's the milk?", "pause": 0.4},
+    {"id": "c1b", "text": "Almost always at the back of the store. Far from the door. Usually in the corner.", "pause": 0.5},
+    {"id": "c1c", "text": "To be fair, part of the reason is boring. The big fridges are near the loading dock, where the trucks arrive.", "pause": 0.5},
+    {"id": "c1d", "text": "But it has a very nice side effect for the store. To get milk, you have to walk past everything else. The snacks. The flowers. The seasonal stuff.", "pause": 0.5},
+    {"id": "c1e", "text": "Every step is a chance for something to jump into your cart. It's like walking through a gift shop to leave a museum.", "pause": 0.5},
+    {"id": "c1f", "text": "Remember our Costco video? The one dollar fifty hot dog? Cheap stars like milk and hot dogs get you in the door. The store makes its money on everything else you grab on the way.", "pause": 0.9},
+
+    {"id": "c2a", "chapter": "Bigger Carts, Bigger Bills", "text": "Now look at your cart. It's huge. That's not an accident either.", "pause": 0.4},
+    {"id": "c2b", "text": "Retail consultant Martin Lindstrom reported an experiment where stores doubled the size of their carts. Shoppers bought about forty percent more.", "pause": 0.5},
+    {"id": "c2c", "text": "Why? A big empty cart looks sad. Your brain wants to fill it. Three items in a giant cart feels like you forgot something.", "pause": 0.5},
+    {"id": "c2d", "text": "It's like eating from a huge plate. The portion looks tiny, so you add more.", "pause": 0.5},
+    {"id": "c2e", "text": "A small basket does the opposite. It gets heavy. Your arm complains. And you stop.", "pause": 0.9},
+
+    {"id": "c3a", "chapter": "Eye Level Is Buy Level", "text": "Next, the shelves. Stores have a saying: eye level is buy level.", "pause": 0.4},
+    {"id": "c3b", "text": "The spot right in front of your face is the most valuable real estate in the store. And brands often pay for it.", "pause": 0.5},
+    {"id": "c3c", "text": "These payments are called slotting fees. The Federal Trade Commission studied them. Food companies pay stores just to get a product onto the shelf.", "pause": 0.5},
+    {"id": "c3d", "text": "So the cheaper store brand? Often on the bottom shelf, down by your ankles. The sugary cereal? At a kid's eye level.", "pause": 0.5},
+    {"id": "c3e", "text": "Then there are end caps. Those big displays at the end of each aisle. They look like a deal. Sometimes they are. Sometimes it's just normal price, with a bigger sign.", "pause": 0.5},
+    {"id": "c3f", "text": "And they work. One supermarket study found products sold more than four times as much on an end cap as on a normal shelf.", "pause": 0.9},
+
+    {"id": "c4a", "chapter": "The Magic of Nine Ninety Nine", "text": "Now, the prices. Why does everything end in ninety nine?", "pause": 0.4},
+    {"id": "c4b", "text": "Because your brain reads from the left. Nine dollars ninety nine starts with a nine. Ten dollars starts with a ten. It feels like a whole dollar cheaper. It's one cent.", "pause": 0.5},
+    {"id": "c4c", "text": "Researchers call this the left digit effect. We look at the first number, and our brain sort of rounds down.", "pause": 0.5},
+    {"id": "c4d", "text": "And here's a crazy one. Researchers from M I T and the University of Chicago tested one dress, in a mail order catalog, at three prices.", "pause": 0.5},
+    {"id": "c4e", "text": "At thirty four dollars, it sold less than at thirty nine dollars. A higher price sold more, just because it ended in a nine.", "pause": 0.9},
+
+    {"id": "c5a", "chapter": "The Fake Sale", "text": "Then there's everyone's favorite sign. Was eighty dollars. Now forty!", "pause": 0.4},
+    {"id": "c5b", "text": "That first number is called an anchor. Once your brain sees eighty, forty feels like a steal. Even if you never wanted it.", "pause": 0.5},
+    {"id": "c5c", "text": "But here's the question nobody asks. Did anyone ever actually pay eighty?", "pause": 0.5},
+    {"id": "c5d", "text": "The F T C's rules say a was price should be a real price, that the item was actually sold at for a good amount of time. Not a made up number.", "pause": 0.5},
+    {"id": "c5e", "text": "But it happens. The department store J C Penney agreed to pay fifty million dollars to settle a lawsuit claiming its original prices were inflated. The company didn't admit wrongdoing.", "pause": 0.5},
+    {"id": "c5f", "text": "So the only question that matters is: would I buy this at forty, if there was no was price at all?", "pause": 0.9},
+
+    {"id": "c6a", "chapter": "BOGO and Ten for Ten", "text": "Next up, the quantity tricks. Buy one, get one free. Or, ten for ten dollars.", "pause": 0.4},
+    {"id": "c6b", "text": "Buy one get one sounds amazing. But if you only needed one, you just spent double, and now there's a second jar of pickles in your fridge until twenty thirty.", "pause": 0.5},
+    {"id": "c6c", "text": "And ten for ten dollars? At many stores, that just means one dollar each. You don't have to buy ten. But the sign makes ten feel normal.", "pause": 0.5},
+    {"id": "c6d", "text": "In a famous study, a supermarket put up a sign on cans of soup: limit twelve per person. Shoppers bought seven cans on average. With no limit, just over three.", "pause": 0.5},
+    {"id": "c6e", "text": "The number twelve didn't make the soup better. It just planted a big number in their heads. Same anchor trick. Different aisle.", "pause": 0.9},
+
+    {"id": "c7a", "chapter": "Online: Free Shipping and Your Data", "text": "Online stores have their own tricks. Starting with free shipping.", "pause": 0.4},
+    {"id": "c7b", "text": "Dave's cart is thirty five dollars. Shipping is seven dollars. But wait: free shipping over fifty! So he adds a fifteen dollar thing he didn't need, to save seven.", "pause": 0.5},
+    {"id": "c7c", "text": "He's not alone. A Deloitte survey found that fifty eight percent of online shoppers add items just to get free shipping.", "pause": 0.5},
+    {"id": "c7d", "text": "Then there are loyalty apps. You get coupons. The store gets something too: everything you buy, when, and where.", "pause": 0.5},
+    {"id": "c7e", "text": "In twenty twenty five, the F T C found that companies can use data like your location and browsing history to set different prices for different people.", "pause": 0.5},
+    {"id": "c7f", "text": "And Walmart plans to have digital price tags in all its U S stores by the end of twenty twenty six. Some lawmakers worry about surge pricing. So far, one study found no sign of it. Worth keeping an eye on.", "pause": 0.9},
+
+    {"id": "c8a", "chapter": "The Checkout Gauntlet", "text": "Most people think these tricks only work on other people. Nope. They work on everyone. That's why stores use them.", "pause": 0.4},
+    {"id": "c8b", "text": "And the last trick is waiting for you at the very end. The checkout.", "pause": 0.5},
+    {"id": "c8c", "text": "You've been making choices for twenty minutes. You're tired. You're standing still. And right at kid height: candy, gum, and soda.", "pause": 0.5},
+    {"id": "c8d", "text": "It's the store's final boss. And it knows your willpower is at one percent.", "pause": 0.5},
+    {"id": "c8e", "text": "It works so well that England banned junk food at checkouts, aisle ends and store entrances in bigger stores, starting in twenty twenty two.", "pause": 0.5},
+    {"id": "c8f", "text": "Is that a good idea? That's a political question. Now you know the numbers.", "pause": 0.9},
+
+    {"id": "c9a", "chapter": "How to Walk Out With Just the Milk", "text": "So how do you fight back? Remember, this is education, not advice.", "pause": 0.4},
+    {"id": "c9b", "text": "One. Make a list, and eat before you go. A hungry shopper is the store's best friend.", "pause": 0.5},
+    {"id": "c9c", "text": "Two. Grab a basket, not a cart, when you only need a few things. Let your arm be the budget.", "pause": 0.5},
+    {"id": "c9d", "text": "Three. Look up and down, and read the unit price. That little number on the shelf tag shows the price per ounce, or per roll. It beats every sign in the store.", "pause": 0.5},
+    {"id": "c9e", "text": "Four. Ignore the was price. Ask: would I pay this, if there was no sale at all?", "pause": 0.5},
+    {"id": "c9f", "text": "Five. Online, use a twenty four hour rule. Leave it in the cart until tomorrow. And if paying for shipping is cheaper than the extra item, just pay the shipping.", "pause": 0.9},
+
+    {"id": "r1", "chapter": "Now You Know", "text": "So let's recap.", "pause": 0.4},
+    {"id": "r2", "text": "One. Stores are designed to make you walk, look and grab. The milk at the back, the big cart, and the shelf at eye level.", "pause": 0.5},
+    {"id": "r3", "text": "Two. Prices play with your brain. Nine ninety nine, fake was prices, and limit twelve signs are all anchors.", "pause": 0.5},
+    {"id": "r4", "text": "Three. A list, a basket, the unit price and a twenty four hour rule beat most of the tricks.", "pause": 0.6},
+    {"id": "r5", "text": "Next time, Dave opens his car insurance bill. No accidents. No tickets. So why did it go up again?", "pause": 0.4},
+    {"id": "r6", "text": "Subscribe, so Dave can keep explaining money. It's free. Not ten for ten dollars. Just free.", "pause": 1.4}
+  ],
+  "youtube": {
+    "title": "Store Tricks That Make You Spend More (You Only Went for Milk)",
+    "alt_titles": [
+      "Why You Always Spend More Than You Planned at the Store",
+      "You Went in for Milk and Spent $87. Here's Why."
+    ],
+    "hook": "Why do you always spend more at the store? Dave went in for $3.49 of milk and walked out with $87 of stuff.",
+    "tags": [
+      "store tricks to make you spend more",
+      "grocery store psychology",
+      "why milk is at the back of the store",
+      "charm pricing explained",
+      "fake sale prices",
+      "slotting fees",
+      "free shipping threshold",
+      "how to spend less at the grocery store",
+      "unit price",
+      "money explained simply",
+      "dave explains money"
+    ],
+    "hashtags": ["#grocery", "#personalfinance", "#money"],
+    "pinned": "What's the one thing you ALWAYS end up buying that wasn't on your list? 👇"
+  }
+}
