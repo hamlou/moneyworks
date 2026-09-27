@@ -1,0 +1,119 @@
+{
+  "id": "ep34",
+  "title": "Why Everyone Asks You for a Tip Now",
+  "sources": [
+    "Pew Research Center, 'Tipping Culture in America: Public Sees a Changed Landscape' (Nov 9, 2023; ~12,000 U.S. adults): 72% say tipping is expected in more places than five years ago; 40% oppose vs 24% favor suggested tip screens; only about a third find it easy to know whether (34%) or how much (33%) to tip; 25% always/often tip for a coffee, 12% at a fast casual restaurant",
+    "Bankrate tipping culture survey (published June 2025, 2,445 adults): 63% hold at least one negative view of tipping; 41% say tipping culture is out of control; 41% say businesses should pay employees better; 38% annoyed by pre-entered tip screens; 27% tip less when shown pre-entered screens; 70% always tip at sit-down restaurants; 18% always tip baristas",
+    "Toast, Restaurant Tipping Trends (Q1 2026, card tips on ~171,000 locations): average tip 19.3% full-service, 15.8% quick-service",
+    "U.S. Department of Labor, Wage and Hour Division: federal cash wage for tipped employees $2.13/hour; maximum tip credit $5.12; federal minimum wage $7.25; employer must make up any shortfall; many states require more (dol.gov/agencies/whd/state/minimum-wage/tipped); $2.13 unchanged since 1991",
+    "U.S. DOL Fact Sheet #15 (Tipped Employees under the FLSA): employer may reduce credit-card tips by the percentage the card company charges",
+    "Square: in-person card rate 2.6% + 15 cents per transaction (since Feb 25, 2025), charged on the full payment amount",
+    "History: tipping imported from Europe in the late 1800s; spread after the Civil War (e.g. Pullman Company porters paid low wages and relied on tips); Washington state banned tipping in 1909, several states followed, all repealed by 1926 (NPR Throughline 2021; TIME 2018; W. R. Scott, The Itching Palm, 1916)",
+    "IRS / One Big Beautiful Bill Act (2025): 'no tax on tips' deduction up to $25,000 of qualified tips, tax years 2025-2028, phases out above $150,000 MAGI ($300,000 joint); Social Security and Medicare taxes still apply",
+    "Yale Budget Lab, 'No Tax on Tips' report (Sept 2024): more than 37% of tipped workers had no federal income tax liability in 2022",
+    "Math: $2.50 water x 25% = $0.63; $7.25 - $2.13 = $5.12; $100 of card tips x 2.6% = $2.60"
+  ],
+  "beats": [
+    {"id": "o1", "text": "Dave grabs a bottle of water. Two dollars fifty. He scans it himself, at a self checkout.", "pause": 0.3},
+    {"id": "o2", "text": "Then the screen spins around and asks: would you like to add a tip? Twenty, twenty five, or thirty percent.", "pause": 0.3},
+    {"id": "o3", "text": "A tip. For a machine. That Dave just did all the work on.", "pause": 0.3},
+    {"id": "o4", "text": "And Dave is not alone. Seven in ten Americans say tipping is now expected in more places than before.", "pause": 0.3},
+    {"id": "o5", "text": "So who actually gets that tip?", "pause": 0.35},
+    {"id": "o6", "text": "Today: where tipping came from, why tip screens are everywhere, who really profits, and when it's totally fine to tap no tip.", "pause": 0.6},
+
+    {"id": "c1a", "chapter": "Dave's Tip Screen", "text": "Let's look at Dave's screen again.", "pause": 0.4},
+    {"id": "c1b", "text": "Twenty five percent of two fifty is about sixty three cents. Small money. But it's the feeling that stings.", "pause": 0.5},
+    {"id": "c1c", "text": "Nobody cooked anything. Nobody carried anything. Nobody even said hello.", "pause": 0.5},
+    {"id": "c1d", "text": "And yet the screen stares at Dave. And somewhere, a person in line behind him is watching.", "pause": 0.5},
+    {"id": "c1e", "text": "Pew Research asked about twelve thousand Americans. Seventy two percent said tipping is expected in more places than five years earlier. Only about a third said it's easy to know when to tip.", "pause": 0.5},
+    {"id": "c1f", "text": "So if tipping feels confusing, that's not you. It's the system. Let's see how it got this way.", "pause": 0.9},
+
+    {"id": "c2a", "chapter": "How Tipping Started", "text": "Tipping didn't start in America. Rich Americans brought it back from Europe in the eighteen hundreds, to look fancy.", "pause": 0.4},
+    {"id": "c2b", "text": "Then, after the Civil War, it spread fast. Some businesses hired newly freed Black workers, and paid them little or nothing. Customers' tips had to cover the rest.", "pause": 0.5},
+    {"id": "c2c", "text": "The famous example is railroad sleeping cars. The Pullman Company paid its porters very low wages. Tips made up much of their income.", "pause": 0.5},
+    {"id": "c2d", "text": "Lots of people hated it. In nineteen oh nine, Washington state banned tipping. Several other states followed.", "pause": 0.5},
+    {"id": "c2e", "text": "But the bans were almost impossible to enforce. By nineteen twenty six, every one of them was gone.", "pause": 0.5},
+    {"id": "c2f", "text": "So tipping stayed. And it left a strange idea behind: that part of a worker's pay comes from you, not the boss.", "pause": 0.9},
+
+    {"id": "c3a", "chapter": "The Two Dollar Wage", "text": "That idea is still in the law today.", "pause": 0.4},
+    {"id": "c3b", "text": "The federal minimum wage is seven dollars twenty five an hour. But for tipped workers, the Department of Labor says an employer can pay just two dollars thirteen.", "pause": 0.5},
+    {"id": "c3c", "text": "The other five twelve can come from tips. It's called the tip credit.", "pause": 0.5},
+    {"id": "c3d", "text": "That two thirteen hasn't changed since nineteen ninety one. Same number, for over thirty years.", "pause": 0.5},
+    {"id": "c3e", "text": "Most people think a waiter with a bad night only earns two thirteen. Nope. If tips fall short, the employer must make up the difference, up to the full minimum wage.", "pause": 0.5},
+    {"id": "c3f", "text": "And many states go further. Some require a much higher base wage for tipped workers, or no tip credit at all. So the rules depend a lot on where you live.", "pause": 0.5},
+    {"id": "c3g", "text": "Think of the wage like a sandwich. The boss brings the bread. You, the customer, bring the filling. And the filling is most of the sandwich.", "pause": 0.9},
+
+    {"id": "c4a", "chapter": "Why Tip Screens Exploded", "text": "But that's restaurants. Why is a self checkout asking for a tip?", "pause": 0.4},
+    {"id": "c4b", "text": "Blame the tablet. Old cash registers didn't ask anything. New payment tablets make adding a tip screen as easy as flipping a switch.", "pause": 0.5},
+    {"id": "c4c", "text": "During the pandemic, lots of people tipped extra to help workers. Businesses noticed. And the screens stayed.", "pause": 0.5},
+    {"id": "c4d", "text": "Then there's the design. The buttons usually start at twenty percent or more. The no tip button is small, and at the bottom.", "pause": 0.5},
+    {"id": "c4e", "text": "Scientists call this the default effect. Whatever looks normal on the screen, feels like the right answer. So people pick the middle button.", "pause": 0.5},
+    {"id": "c4f", "text": "Add a cashier watching you, and a line behind you, and it's social pressure in a box. Like a donation jar that stares back.", "pause": 0.9},
+
+    {"id": "c5a", "chapter": "Who Really Profits", "text": "So who wins when you tap twenty five percent?", "pause": 0.4},
+    {"id": "c5b", "text": "Often, the worker does. That's real money for them. But look closer.", "pause": 0.5},
+    {"id": "c5c", "text": "Winner number two: the business. Every dollar you tip is a dollar of pay the business doesn't have to put in the price. The menu looks cheaper. The real cost just moves to the end.", "pause": 0.5},
+    {"id": "c5d", "text": "Winner number three: the payment company. Card fees are charged on the whole payment, tip included. Square's standard rate is two point six percent, plus fifteen cents.", "pause": 0.5},
+    {"id": "c5e", "text": "So on one hundred dollars of card tips, about two dollars sixty goes to fees. And the law even lets employers take that card fee out of the worker's tips.", "pause": 0.5},
+    {"id": "c5f", "text": "Remember the raccoon at the toll booth? He takes a bite of your tip too.", "pause": 0.5},
+    {"id": "c5g", "text": "And at a self checkout? There may be no tipped worker at all. It's hard to know where that money goes. So it's fair to ask.", "pause": 0.9},
+
+    {"id": "c6a", "chapter": "What People Actually Do", "text": "So are people just tipping everything now? Not exactly.", "pause": 0.4},
+    {"id": "c6b", "text": "At sit down restaurants, tipping is still strong. Toast, which runs payments for over one hundred seventy thousand restaurants, says the average card tip was nineteen point three percent in early twenty twenty six.", "pause": 0.5},
+    {"id": "c6c", "text": "At counter service places, it was fifteen point eight percent.", "pause": 0.5},
+    {"id": "c6d", "text": "But people are getting tired. In a Bankrate survey, forty one percent said tipping culture is out of control. Thirty eight percent said pre entered tip screens annoy them.", "pause": 0.5},
+    {"id": "c6e", "text": "And twenty seven percent said they actually tip less when a screen pushes them.", "pause": 0.5},
+    {"id": "c6f", "text": "Meanwhile, seventy percent always tip at a sit down restaurant. But only eighteen percent always tip a barista. People are drawing their own lines.", "pause": 0.9},
+
+    {"id": "c7a", "chapter": "No Tax on Tips", "text": "And then politics joined the party.", "pause": 0.4},
+    {"id": "c7b", "text": "In twenty twenty five, Congress passed a law people call no tax on tips. From twenty twenty five to twenty twenty eight, workers in tipped jobs can deduct up to twenty five thousand dollars of tips from their federal income tax.", "pause": 0.5},
+    {"id": "c7c", "text": "The deduction shrinks for people earning over one hundred fifty thousand dollars. And Social Security and Medicare taxes still apply.", "pause": 0.5},
+    {"id": "c7d", "text": "Supporters say it puts more money in workers' pockets. Critics point out that the Yale Budget Lab found over thirty seven percent of tipped workers already paid no federal income tax. So for them, it changes nothing.", "pause": 0.5},
+    {"id": "c7e", "text": "Some also worry it gives businesses one more reason to pay in tips, instead of wages.", "pause": 0.5},
+    {"id": "c7f", "text": "Is it a good law? That's a political question. Now you know the numbers.", "pause": 0.9},
+
+    {"id": "c8a", "chapter": "A Simple Tipping Guide", "text": "So when should you tip? Remember, this is education, not advice.", "pause": 0.4},
+    {"id": "c8b", "text": "Sit down restaurant, where someone serves you: tipping is expected. Around eighteen to twenty percent is normal. Those workers may earn a low base wage.", "pause": 0.5},
+    {"id": "c8c", "text": "Delivery drivers: yes. Remember our last video? They drove to your door.", "pause": 0.5},
+    {"id": "c8d", "text": "Hair cuts, bartenders, taxis: tipping is the custom in the U S.", "pause": 0.5},
+    {"id": "c8e", "text": "Coffee counters and takeout: optional. A small tip is kind, if you want. But skipping it is normal too.", "pause": 0.5},
+    {"id": "c8f", "text": "Self checkout, or a screen where nobody served you: tapping no tip is completely fine. You're not being rude. You did the work.", "pause": 0.5},
+    {"id": "c8g", "text": "And one trick: if you really want a worker to get your tip, cash goes straight into their hand. No card fee, no raccoon.", "pause": 0.9},
+
+    {"id": "c9a", "chapter": "What Dave Did", "text": "So what did Dave do with his water?", "pause": 0.4},
+    {"id": "c9b", "text": "He took a breath. He ignored the line behind him. And he tapped no tip.", "pause": 0.5},
+    {"id": "c9c", "text": "The machine didn't cry. Nobody gasped. The world kept spinning.", "pause": 0.5},
+    {"id": "c9d", "text": "Then, that night, he ordered dinner, and gave the delivery driver a good tip. Because that person actually did something for him.", "pause": 0.5},
+    {"id": "c9e", "text": "That's the whole idea. Tip for service, not for screens.", "pause": 0.9},
+
+    {"id": "r1", "chapter": "Now You Know", "text": "So let's recap.", "pause": 0.4},
+    {"id": "r2", "text": "One. Tipping spread after the Civil War, and today tipped workers can be paid just two thirteen an hour, before tips.", "pause": 0.5},
+    {"id": "r3", "text": "Two. Tip screens exploded because tablets made them easy, and preset buttons push you to tip more. Businesses and payment companies profit too.", "pause": 0.5},
+    {"id": "r4", "text": "Three. Tip for real service. For a screen where nobody served you, no tip is fine.", "pause": 0.6},
+    {"id": "r5", "text": "Next time, Dave buys a four dollar coffee with only one dollar in his account. And finds out why being poor is so expensive.", "pause": 0.4},
+    {"id": "r6", "text": "Subscribe, so Dave can keep explaining money. It's free. And we will never ask you for a tip.", "pause": 1.4}
+  ],
+  "youtube": {
+    "title": "Why Everyone Asks You for a Tip Now (Even Self-Checkout)",
+    "alt_titles": [
+      "Tipping Culture Explained: Why Every Screen Wants 25%",
+      "A Machine Asked Me for a 25% Tip. Here's Who Gets It."
+    ],
+    "hook": "Why does every checkout screen ask you for a tip now? Dave buys a $2.50 bottle of water at a self-checkout and the screen asks for 20, 25 or 30%. We explain the history of tipping in America after the Civil War, the $2.13 federal tipped minimum wage and the tip credit, why tip screens exploded with payment tablets and the default effect, who really profits (businesses, card processors taking 2.6% of tips), what Americans actually tip in 2026 (Toast: 19.3% at sit-down restaurants), the 'no tax on tips' law in plain numbers, and a simple guide to when it's fine to tap 'no tip'.",
+    "tags": [
+      "why is everyone asking for tips",
+      "tipping culture explained",
+      "tip screens",
+      "tip fatigue",
+      "tipped minimum wage 2.13",
+      "history of tipping in america",
+      "no tax on tips explained",
+      "how much to tip",
+      "is it rude to not tip at self checkout",
+      "money explained simply",
+      "dave explains money"
+    ],
+    "hashtags": ["#tipping", "#tipculture", "#money"],
+    "pinned": "Be honest: do you tap 'No tip' on counter-service screens? YES or NO below 👇"
+  }
+}
