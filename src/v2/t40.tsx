@@ -1,6 +1,6 @@
 import React from 'react';
 import {Pill, PillBottle} from '../props40';
-import {HospitalBill, Raccoon} from '../props3';
+import {HospitalBill, PriceTag, Raccoon} from '../props3';
 import {Magnifier} from '../props2';
 import {C} from '../theme';
 import {BigNum, Face, Glow, Headline, Hero, Stage} from './kit';
@@ -12,7 +12,8 @@ export const V2Ep40: React.FC<V> = ({v}) => {
     return (
       <Stage a="#FF5A36" b="#3A0612" cx={860} cy={440}>
         <Glow x={880} y={460} r={250} color="#FFD23F" o={0.45} />
-        <Hero x={880} y={470} s={4} r={-10}><Pill label="$40" /></Hero>
+        <Hero x={860} y={480} s={2} r={-10}><Pill /></Hero>
+        <Hero x={1090} y={360} s={1.6} r={12}><PriceTag text="$40" color={C.red} /></Hero>
         <BigNum x={880} y={110} size={150} text="ONE PILL?!" c="gold" r={-3} />
         <Face cx={240} cy={460} s={5} expr="scream" pose="shock" look={0.8} lines sweat rim="#FFB347" />
       </Stage>

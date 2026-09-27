@@ -11,7 +11,7 @@ export const V2Ep32: React.FC<V> = ({v}) => {
     return (
       <Stage a="#2BD67B" b="#062E1C" cx={860} cy={440}>
         <Glow x={880} y={460} r={250} color="#FFD23F" o={0.4} />
-        <Hero x={880} y={470} s={1.8} r={-6}>
+        <Hero x={900} y={480} s={1.35} r={-6}>
           <Paycheck amount="+$5,000" cut={0.6} />
         </Hero>
         <BigNum x={880} y={110} size={130} text="WHERE'D IT GO?" c="gold" r={-3} />

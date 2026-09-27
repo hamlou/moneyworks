@@ -22,7 +22,7 @@ export const V2Ep31: React.FC<V> = ({v}) => {
   if (v === 'B')
     return (
       <Stage a="#3A86FF" b="#081436" cx={860} cy={440}>
-        <Hero x={880} y={420} s={1.5}>
+        <Hero x={880} y={440} s={3.6}>
           <MoneyStack n={5} />
         </Hero>
         <Hero x={880} y={560} s={1.6} flat>
