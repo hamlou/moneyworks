@@ -20,91 +20,387 @@
     "Teaser ep23: Kelley Blue Book (Cox Automotive) average new-vehicle transaction price above $50,000 (first time Sept 2025: $50,080)"
   ],
   "beats": [
-    {"id": "o1", "text": "Dave's best friend Tyler just quit his job. Not for a new job. To buy AI stocks. With all of his savings.", "pause": 0.3},
-    {"id": "o2", "text": "Tyler says: AI is the future, these stocks can only go up. Dave has heard that sentence before.", "pause": 0.3},
-    {"id": "o3", "text": "Because right now, four tech giants plan to spend about seven hundred billion dollars on AI in one single year. And one company, OpenAI, has promised to spend one point four trillion.", "pause": 0.35},
-    {"id": "o4", "text": "And it gets stranger. Some of that money goes around in a circle.", "pause": 0.3},
-    {"id": "o5", "text": "So is AI a bubble? Or the next internet?", "pause": 0.3},
-    {"id": "o6", "text": "Today: what a bubble really is, the tulips and the sock puppet, the circle of money, and what happens to regular people if it pops.", "pause": 0.6},
-
-    {"id": "c1a", "chapter": "What Is a Bubble?", "text": "First, what even is a bubble?", "pause": 0.4},
-    {"id": "c1b", "text": "Picture a soap bubble. It's real. You can see it. But inside, it's mostly air. And it keeps growing, until one day. Pop.", "pause": 0.5},
-    {"id": "c1c", "text": "A money bubble works the same way. The price floats way above what the thing is really worth. Not because it earns more. Because people expect the price to keep going up.", "pause": 0.5},
-    {"id": "c1d", "text": "Everyone buys because everyone else is buying. That feeling has a name. FOMO. The fear of missing out.", "pause": 0.5},
-    {"id": "c1e", "text": "Then something small happens. Buyers get nervous. Nobody wants to be the last one holding it. And the price falls much faster than it rose.", "pause": 0.5},
-    {"id": "c1f", "text": "Here's the tricky part. Inside a bubble, it never feels like a bubble. It feels like being smart.", "pause": 0.9},
-
-    {"id": "c2a", "chapter": "Tulip Mania, 1637", "text": "Let's go back almost four hundred years. To the Netherlands.", "pause": 0.4},
-    {"id": "c2b", "text": "In the sixteen thirties, tulips were the hottest thing in the country. Rare flowers with striped petals were the ultimate status symbol.", "pause": 0.5},
-    {"id": "c2c", "text": "People started trading tulip bulbs like stocks. Prices kept climbing. By early sixteen thirty seven, one rare bulb could reportedly cost as much as a house in Amsterdam.", "pause": 0.5},
-    {"id": "c2d", "text": "A house. For a thing that looks like an onion.", "pause": 0.6},
-    {"id": "c2e", "text": "Then, in February sixteen thirty seven, buyers simply stopped showing up. Prices collapsed within days.", "pause": 0.5},
-    {"id": "c2f", "text": "Historians today say the damage was smaller than the legend. But the lesson stuck. A price can lose touch with reality.", "pause": 0.9},
-
-    {"id": "c3a", "chapter": "The Dot-Com Crash", "text": "Now a bubble that's much closer to AI. The internet, in the late nineteen nineties.", "pause": 0.4},
-    {"id": "c3b", "text": "The internet was new, exciting, and truly world changing. Investors threw money at almost any company with dot com in its name.", "pause": 0.5},
-    {"id": "c3c", "text": "Meet Pets dot com. It sold pet food online, and had a famous sock puppet mascot. It went public in February two thousand. By November, it was shutting down. About nine months.", "pause": 0.5},
-    {"id": "c3d", "text": "The Nasdaq, the stock index full of tech companies, peaked in March two thousand. By October two thousand two, it had fallen seventy eight percent.", "pause": 0.5},
-    {"id": "c3e", "text": "Imagine saving ten thousand dollars, and watching it shrink to about two thousand two hundred.", "pause": 0.5},
-    {"id": "c3f", "text": "But here's the twist. The internet was real. Amazon survived the crash, and became one of the biggest companies on Earth. The technology was right. The prices were wrong.", "pause": 0.5},
-    {"id": "c3g", "text": "Remember that sentence. It's the key to this whole video.", "pause": 0.9},
-
-    {"id": "c4a", "chapter": "The $725 Billion Build-Out", "text": "So, what's happening with AI right now?", "pause": 0.4},
-    {"id": "c4b", "text": "AI needs huge buildings full of computer chips, called data centers. They cost a fortune, and they eat electricity like a teenager eats pizza.", "pause": 0.5},
-    {"id": "c4c", "text": "In twenty twenty five, Amazon, Alphabet, Microsoft and Meta spent about four hundred and ten billion dollars on buildings and equipment like this.", "pause": 0.5},
-    {"id": "c4d", "text": "For twenty twenty six, their plans add up to about seven hundred and twenty five billion. That's up seventy seven percent in one year.", "pause": 0.5},
-    {"id": "c4e", "text": "Split across every household in America, that's about five thousand five hundred dollars each. In one year.", "pause": 0.5},
-    {"id": "c4f", "text": "Why so much? Because each company is terrified that a rival builds the best AI first. Nobody wants to be the one who stopped digging.", "pause": 0.9},
-
-    {"id": "c5a", "chapter": "OpenAI's $1.4 Trillion Bet", "text": "Now the biggest bet of all. OpenAI, the company behind ChatGPT.", "pause": 0.4},
-    {"id": "c5b", "text": "In November twenty twenty five, its boss, Sam Altman, said OpenAI had about one point four trillion dollars in data center commitments. Over roughly eight years.", "pause": 0.5},
-    {"id": "c5c", "text": "And how much money does OpenAI bring in? By August twenty twenty six, about forty billion dollars a year. That's fast growth. It doubled in about eight months.", "pause": 0.5},
-    {"id": "c5d", "text": "But let's shrink it to Dave size. One point four trillion over eight years is about one hundred and seventy five billion a year.", "pause": 0.5},
-    {"id": "c5e", "text": "So it's like Dave earning forty thousand dollars a year, and signing contracts to spend one hundred and seventy five thousand dollars a year. For eight years.", "pause": 0.5},
-    {"id": "c5f", "text": "Dave's plan: my salary will grow super fast. Maybe it will. OpenAI itself expects big losses for years, and profits later, around twenty thirty.", "pause": 0.5},
-    {"id": "c5g", "text": "If it works, it's genius. If it doesn't, a lot of partners get hurt.", "pause": 0.9},
-
-    {"id": "c6a", "chapter": "Circular Money", "text": "And here's the part that makes people nervous. Circular money.", "pause": 0.4},
-    {"id": "c6b", "text": "Nvidia makes the chips that power AI. In September twenty twenty five, Nvidia said it would invest up to one hundred billion dollars in OpenAI. In the end, it put in about thirty billion.", "pause": 0.5},
-    {"id": "c6c", "text": "OpenAI uses money like that to rent computers from cloud companies. And those cloud companies buy their chips from. Nvidia.", "pause": 0.5},
-    {"id": "c6d", "text": "Let's make it Dave size. Dave owns a lemonade stand. He gives Bob one hundred dollars. Bob walks over and buys one hundred dollars of Dave's lemonade.", "pause": 0.5},
-    {"id": "c6e", "text": "Dave's sales look amazing! But that money was his own, coming back in a circle.", "pause": 0.5},
-    {"id": "c6f", "text": "Remember the duck from our very first video? Banks can create money from nothing. This isn't quite that. But it can make demand look bigger than it really is.", "pause": 0.5},
-    {"id": "c6g", "text": "And when borrowed money joins the circle, guess who shows up. The raccoon. Interest has to be paid, whether AI pays off or not.", "pause": 0.5},
-    {"id": "c6h", "text": "To be fair, this isn't a scam. Nvidia really does get shares in return. The real question is whether the customers at the end of the circle are big enough.", "pause": 0.9},
-
-    {"id": "c7a", "chapter": "Bull vs Bear", "text": "So, bubble or not? Let's hear both sides.", "pause": 0.4},
-    {"id": "c7b", "text": "Most people think a bubble means the technology is fake. Nope. Remember the internet. The tech can be real, and prices can still be too high.", "pause": 0.5},
-    {"id": "c7c", "text": "The bull case. Unlike Pets dot com, today's giants already make huge profits. Even the chair of the Federal Reserve, Jerome Powell, said these companies actually have earnings.", "pause": 0.5},
-    {"id": "c7d", "text": "Bulls also say AI can make workers faster. And that could grow the whole economy for years.", "pause": 0.5},
-    {"id": "c7e", "text": "The bear case. A study published in February twenty twenty six asked thousands of companies. About ninety percent said AI had no impact on their jobs or productivity so far.", "pause": 0.5},
-    {"id": "c7f", "text": "Bears also point to the losses, the circle of money, and the debt. Morgan Stanley estimated that data center debt could top one trillion dollars by twenty twenty eight.", "pause": 0.5},
-    {"id": "c7g", "text": "And the boss of JP Morgan, Jamie Dimon, said AI is real, but some of the money will be lost. Like cars and TVs. They changed the world, but most early companies didn't do well.", "pause": 0.5},
-    {"id": "c7h", "text": "Who's right? Smart people disagree. But now you know the numbers.", "pause": 0.9},
-
-    {"id": "c8a", "chapter": "If It Pops", "text": "So what happens to regular people if the AI bubble pops?", "pause": 0.4},
-    {"id": "c8b", "text": "First, your retirement. At the end of twenty twenty five, just five giant tech companies made up about thirty percent of the whole S and P five hundred.", "pause": 0.5},
-    {"id": "c8c", "text": "So even if you never bought a single AI stock, your retirement fund probably owns a lot of them.", "pause": 0.5},
-    {"id": "c8d", "text": "Second, jobs. Building data centers employs construction workers, electricians and engineers. If the spending stops, those jobs slow down too.", "pause": 0.5},
-    {"id": "c8e", "text": "And pops can be fast. This summer, in South Korea, chip stocks crashed. The main stock index fell more than forty percent in about six weeks.", "pause": 0.5},
-    {"id": "c8f", "text": "Remember the dot-com crash? The Nasdaq took about fifteen years to get back to its old high.", "pause": 0.5},
-    {"id": "c8g", "text": "And Tyler? No job, and all his eggs in one very shiny basket.", "pause": 0.9},
-
-    {"id": "c9a", "chapter": "What Dave Tells Tyler", "text": "So what does Dave tell Tyler? Education, not advice.", "pause": 0.4},
-    {"id": "c9b", "text": "One. Don't quit your paycheck for a bet. Your job is your biggest money machine. Keep it running.", "pause": 0.5},
-    {"id": "c9c", "text": "Two. Don't put all your eggs in one basket. Spreading money across many companies and many types of investments is called diversification.", "pause": 0.5},
-    {"id": "c9d", "text": "Three. Keep an emergency fund. A few months of expenses in plain savings, so a crash never forces you to sell at the bottom.", "pause": 0.5},
-    {"id": "c9e", "text": "Four. Only invest money you won't need for years. Bubbles can last longer than you expect, and pop faster than you expect.", "pause": 0.5},
-    {"id": "c9f", "text": "Five. If you're buying only because everyone else is, remember cousin Kevin from our bitcoin video.", "pause": 0.5},
-    {"id": "c9g", "text": "And Tyler? He asked his old boss for his job back. He starts Monday.", "pause": 0.9},
-
-    {"id": "d1a", "chapter": "Now You Know", "text": "So let's recap.", "pause": 0.4},
-    {"id": "d1b", "text": "One. A bubble is when prices float far above real value. The technology can be real, and the prices can still be wrong.", "pause": 0.5},
-    {"id": "d1c", "text": "Two. Big Tech plans about seven hundred and twenty five billion dollars of AI spending this year, and some of the money goes around in a circle.", "pause": 0.5},
-    {"id": "d1d", "text": "Three. If it pops, regular people feel it through retirement funds and jobs. Diversify, and never bet your paycheck.", "pause": 0.9},
-
-    {"id": "d2a", "chapter": "Next Time", "text": "Next time: the average new car in America now costs about fifty thousand dollars. So why is a fifty thousand dollar car breaking Americans?", "pause": 0.5},
-    {"id": "d2b", "text": "Subscribe, so the raccoon doesn't get you. Bubble or no bubble, it's free.", "pause": 1.4}
+    {
+      "id": "o1",
+      "text": "Dave's best friend Tyler just quit his job. Not for a new job. To buy AI stocks. With all of his savings.",
+      "pause": 0.3
+    },
+    {
+      "id": "o2",
+      "text": "Tyler says: AI is the future, these stocks can only go up. Dave has heard that sentence before.",
+      "pause": 0.3
+    },
+    {
+      "id": "o3",
+      "text": "Because right now, four tech giants plan to spend about seven hundred billion dollars on AI in one single year. And one company, OpenAI, has promised to spend one point four trillion.",
+      "pause": 0.35
+    },
+    {
+      "id": "o4",
+      "text": "And it gets stranger. Some of that money goes around in a circle.",
+      "pause": 0.3
+    },
+    {
+      "id": "o5",
+      "text": "So is AI a bubble? Or the next internet?",
+      "pause": 0.3
+    },
+    {
+      "id": "o6",
+      "text": "Today: what a bubble really is, the tulips and the sock puppet, the circle of money, and what happens to regular people if it pops.",
+      "pause": 0.6
+    },
+    {
+      "id": "c1a",
+      "chapter": "What Is a Bubble?",
+      "text": "First, what even is a bubble?",
+      "pause": 0.4
+    },
+    {
+      "id": "c1b",
+      "text": "Picture a soap bubble. It's real. You can see it. But inside, it's mostly air. And it keeps growing, until one day. Pop.",
+      "pause": 0.5
+    },
+    {
+      "id": "c1c",
+      "text": "A money bubble works the same way. The price floats way above what the thing is really worth. Not because it earns more. Because people expect the price to keep going up.",
+      "pause": 0.5
+    },
+    {
+      "id": "c1d",
+      "text": "Everyone buys because everyone else is buying. That feeling has a name. FOMO. The fear of missing out.",
+      "pause": 0.5
+    },
+    {
+      "id": "c1e",
+      "text": "Then something small happens. Buyers get nervous. Nobody wants to be the last one holding it. And the price falls much faster than it rose.",
+      "pause": 0.5
+    },
+    {
+      "id": "c1f",
+      "text": "Here's the tricky part. Inside a bubble, it never feels like a bubble. It feels like being smart.",
+      "pause": 0.9
+    },
+    {
+      "id": "c2a",
+      "chapter": "Tulip Mania, 1637",
+      "text": "Let's go back almost four hundred years. To the Netherlands.",
+      "pause": 0.4
+    },
+    {
+      "id": "c2b",
+      "text": "In the sixteen thirties, tulips were the hottest thing in the country. Rare flowers with striped petals were the ultimate status symbol.",
+      "pause": 0.5
+    },
+    {
+      "id": "c2c",
+      "text": "People started trading tulip bulbs like stocks. Prices kept climbing. By early sixteen thirty seven, one rare bulb could reportedly cost as much as a house in Amsterdam.",
+      "pause": 0.5
+    },
+    {
+      "id": "c2d",
+      "text": "A house. For a thing that looks like an onion.",
+      "pause": 0.6
+    },
+    {
+      "id": "c2e",
+      "text": "Then, in February sixteen thirty seven, buyers simply stopped showing up. Prices collapsed within days.",
+      "pause": 0.5
+    },
+    {
+      "id": "c2f",
+      "text": "Historians today say the damage was smaller than the legend. But the lesson stuck. A price can lose touch with reality.",
+      "pause": 0.9
+    },
+    {
+      "id": "c3a",
+      "chapter": "The Dot-Com Crash",
+      "text": "Now a bubble that's much closer to AI. The internet, in the late nineteen nineties.",
+      "pause": 0.4
+    },
+    {
+      "id": "c3b",
+      "text": "The internet was new, exciting, and truly world changing. Investors threw money at almost any company with dot com in its name.",
+      "pause": 0.5
+    },
+    {
+      "id": "c3c",
+      "text": "Meet Pets dot com. It sold pet food online, and had a famous sock puppet mascot. It went public in February two thousand. By November, it was shutting down. About nine months.",
+      "pause": 0.5
+    },
+    {
+      "id": "c3d",
+      "text": "The Nasdaq, the stock index full of tech companies, peaked in March two thousand. By October two thousand two, it had fallen seventy eight percent.",
+      "pause": 0.5
+    },
+    {
+      "id": "c3e",
+      "text": "Imagine saving ten thousand dollars, and watching it shrink to about two thousand two hundred.",
+      "pause": 0.5
+    },
+    {
+      "id": "c3f",
+      "text": "But here's the twist. The internet was real. Amazon survived the crash, and became one of the biggest companies on Earth. The technology was right. The prices were wrong.",
+      "pause": 0.5
+    },
+    {
+      "id": "c3g",
+      "text": "Remember that sentence. It's the key to this whole video.",
+      "pause": 0.9
+    },
+    {
+      "id": "c4a",
+      "chapter": "The $725 Billion Build-Out",
+      "text": "So, what's happening with AI right now?",
+      "pause": 0.4
+    },
+    {
+      "id": "c4b",
+      "text": "AI needs huge buildings full of computer chips, called data centers. They cost a fortune, and they eat electricity like a teenager eats pizza.",
+      "pause": 0.5
+    },
+    {
+      "id": "c4c",
+      "text": "In twenty twenty five, Amazon, Alphabet, Microsoft and Meta spent about four hundred and ten billion dollars on buildings and equipment like this.",
+      "pause": 0.5
+    },
+    {
+      "id": "c4d",
+      "text": "For twenty twenty six, their plans add up to about seven hundred and twenty five billion. That's up seventy seven percent in one year.",
+      "pause": 0.5
+    },
+    {
+      "id": "c4e",
+      "text": "Split across every household in America, that's about five thousand five hundred dollars each. In one year.",
+      "pause": 0.5
+    },
+    {
+      "id": "c4f",
+      "text": "Why so much? Because each company is terrified that a rival builds the best AI first. Nobody wants to be the one who stopped digging.",
+      "pause": 0.9
+    },
+    {
+      "id": "c5a",
+      "chapter": "OpenAI's $1.4 Trillion Bet",
+      "text": "Now the biggest bet of all. OpenAI, the company behind ChatGPT.",
+      "pause": 0.4
+    },
+    {
+      "id": "c5b",
+      "text": "In November twenty twenty five, its boss, Sam Altman, said OpenAI had about one point four trillion dollars in data center commitments. Over roughly eight years.",
+      "pause": 0.5
+    },
+    {
+      "id": "c5c",
+      "text": "And how much money does OpenAI bring in? By August twenty twenty six, about forty billion dollars a year. That's fast growth. It doubled in about eight months.",
+      "pause": 0.5
+    },
+    {
+      "id": "c5d",
+      "text": "But let's shrink it to Dave size. One point four trillion over eight years is about one hundred and seventy five billion a year.",
+      "pause": 0.5
+    },
+    {
+      "id": "c5e",
+      "text": "So it's like Dave earning forty thousand dollars a year, and signing contracts to spend one hundred and seventy five thousand dollars a year. For eight years.",
+      "pause": 0.5
+    },
+    {
+      "id": "c5f",
+      "text": "Dave's plan: my salary will grow super fast. Maybe it will. OpenAI itself expects big losses for years, and profits later, around twenty thirty.",
+      "pause": 0.5
+    },
+    {
+      "id": "c5g",
+      "text": "If it works, it's genius. If it doesn't, a lot of partners get hurt.",
+      "pause": 0.9
+    },
+    {
+      "id": "c6a",
+      "chapter": "Circular Money",
+      "text": "And here's the part that makes people nervous. Circular money.",
+      "pause": 0.4
+    },
+    {
+      "id": "c6b",
+      "text": "Nvidia makes the chips that power AI. In September twenty twenty five, Nvidia said it would invest up to one hundred billion dollars in OpenAI. In the end, it put in about thirty billion.",
+      "pause": 0.5
+    },
+    {
+      "id": "c6c",
+      "text": "OpenAI uses money like that to rent computers from cloud companies. And those cloud companies buy their chips from. Nvidia.",
+      "pause": 0.5
+    },
+    {
+      "id": "c6d",
+      "text": "Let's make it Dave size. Dave owns a lemonade stand. He gives Bob one hundred dollars. Bob walks over and buys one hundred dollars of Dave's lemonade.",
+      "pause": 0.5
+    },
+    {
+      "id": "c6e",
+      "text": "Dave's sales look amazing! But that money was his own, coming back in a circle.",
+      "pause": 0.5
+    },
+    {
+      "id": "c6f",
+      "text": "Remember the duck from our very first video? Banks can create money from nothing. This isn't quite that. But it can make demand look bigger than it really is.",
+      "pause": 0.5
+    },
+    {
+      "id": "c6g",
+      "text": "And when borrowed money joins the circle, guess who shows up. The raccoon. Interest has to be paid, whether AI pays off or not.",
+      "pause": 0.5
+    },
+    {
+      "id": "c6h",
+      "text": "To be fair, this isn't a scam. Nvidia really does get shares in return. The real question is whether the customers at the end of the circle are big enough.",
+      "pause": 0.9
+    },
+    {
+      "id": "c7a",
+      "chapter": "Bull vs Bear",
+      "text": "So, bubble or not? Let's hear both sides.",
+      "pause": 0.4
+    },
+    {
+      "id": "c7b",
+      "text": "Most people think a bubble means the technology is fake. Nope. Remember the internet. The tech can be real, and prices can still be too high.",
+      "pause": 0.5
+    },
+    {
+      "id": "c7c",
+      "text": "The bull case. Unlike Pets dot com, today's giants already make huge profits. Even the chair of the Federal Reserve, Jerome Powell, said these companies actually have earnings.",
+      "pause": 0.5
+    },
+    {
+      "id": "c7d",
+      "text": "Bulls also say AI can make workers faster. And that could grow the whole economy for years.",
+      "pause": 0.5
+    },
+    {
+      "id": "c7e",
+      "text": "The bear case. A study published in February twenty twenty six asked thousands of companies. About ninety percent said AI had no impact on their jobs or productivity so far.",
+      "pause": 0.5
+    },
+    {
+      "id": "c7f",
+      "text": "Bears also point to the losses, the circle of money, and the debt. Morgan Stanley estimated that data center debt could top one trillion dollars by twenty twenty eight.",
+      "pause": 0.5
+    },
+    {
+      "id": "c7g",
+      "text": "And the boss of JP Morgan, Jamie Dimon, said AI is real, but some of the money will be lost. Like cars and TVs. They changed the world, but most early companies didn't do well.",
+      "pause": 0.5
+    },
+    {
+      "id": "c7h",
+      "text": "Who's right? Smart people disagree. But now you know the numbers.",
+      "pause": 0.9
+    },
+    {
+      "id": "c8a",
+      "chapter": "If It Pops",
+      "text": "So what happens to regular people if the AI bubble pops?",
+      "pause": 0.4
+    },
+    {
+      "id": "c8b",
+      "text": "First, your retirement. At the end of twenty twenty five, just five giant tech companies made up about thirty percent of the whole S and P five hundred.",
+      "pause": 0.5
+    },
+    {
+      "id": "c8c",
+      "text": "So even if you never bought a single AI stock, your retirement fund probably owns a lot of them.",
+      "pause": 0.5
+    },
+    {
+      "id": "c8d",
+      "text": "Second, jobs. Building data centers employs construction workers, electricians and engineers. If the spending stops, those jobs slow down too.",
+      "pause": 0.5
+    },
+    {
+      "id": "c8e",
+      "text": "And pops can be fast. This summer, in South Korea, chip stocks crashed. The main stock index fell more than forty percent in about six weeks.",
+      "pause": 0.5
+    },
+    {
+      "id": "c8f",
+      "text": "Remember the dot-com crash? The Nasdaq took about fifteen years to get back to its old high.",
+      "pause": 0.5
+    },
+    {
+      "id": "c8g",
+      "text": "And Tyler? No job, and all his eggs in one very shiny basket.",
+      "pause": 0.9
+    },
+    {
+      "id": "c9a",
+      "chapter": "What Dave Tells Tyler",
+      "text": "So what does Dave tell Tyler? Education, not advice.",
+      "pause": 0.4
+    },
+    {
+      "id": "c9b",
+      "text": "One. Don't quit your paycheck for a bet. Your job is your biggest money machine. Keep it running.",
+      "pause": 0.5
+    },
+    {
+      "id": "c9c",
+      "text": "Two. Don't put all your eggs in one basket. Spreading money across many companies and many types of investments is called diversification.",
+      "pause": 0.5
+    },
+    {
+      "id": "c9d",
+      "text": "Three. Keep an emergency fund. A few months of expenses in plain savings, so a crash never forces you to sell at the bottom.",
+      "pause": 0.5
+    },
+    {
+      "id": "c9e",
+      "text": "Four. Only invest money you won't need for years. Bubbles can last longer than you expect, and pop faster than you expect.",
+      "pause": 0.5
+    },
+    {
+      "id": "c9f",
+      "text": "Five. If you're buying only because everyone else is, remember cousin Kevin from our bitcoin video.",
+      "pause": 0.5
+    },
+    {
+      "id": "c9g",
+      "text": "And Tyler? He asked his old boss for his job back. He starts Monday.",
+      "pause": 0.9
+    },
+    {
+      "id": "d1a",
+      "chapter": "Now You Know",
+      "text": "So let's recap.",
+      "pause": 0.4
+    },
+    {
+      "id": "d1b",
+      "text": "One. A bubble is when prices float far above real value. The technology can be real, and the prices can still be wrong.",
+      "pause": 0.5
+    },
+    {
+      "id": "d1c",
+      "text": "Two. Big Tech plans about seven hundred and twenty five billion dollars of AI spending this year, and some of the money goes around in a circle.",
+      "pause": 0.5
+    },
+    {
+      "id": "d1d",
+      "text": "Three. If it pops, regular people feel it through retirement funds and jobs. Diversify, and never bet your paycheck.",
+      "pause": 0.9
+    },
+    {
+      "id": "d2a",
+      "chapter": "Next Time",
+      "text": "Next time: the average new car in America now costs about fifty thousand dollars. So why is a fifty thousand dollar car breaking Americans?",
+      "pause": 0.5
+    },
+    {
+      "id": "d2b",
+      "text": "Subscribe, so the raccoon doesn't get you. Bubble or no bubble, it's free.",
+      "pause": 1.4
+    }
   ],
   "youtube": {
     "title": "Is AI a Bubble? The $1.4 Trillion Bet",
@@ -112,7 +408,7 @@
       "AI Bubble Explained: Big Tech's $725 Billion Bet",
       "Is AI the Next Dot-Com Crash? (Circular Money Explained)"
     ],
-    "hook": "Is AI a bubble? Big Tech plans about $725 billion of spending in 2026 and OpenAI has $1.4 trillion in commitments against roughly $40 billion a year in revenue. Dave's friend Tyler quits his job to buy AI stocks, so Dave digs into what a bubble really is: tulip mania in 1637, the dot-com crash (Nasdaq -78%, Pets.com), the AI data center boom, Nvidia and OpenAI's circular money, the bull case vs the bear case, and what happens to regular people's retirement and jobs if it pops.",
+    "hook": "Is AI a bubble? Big Tech plans ~$725B of AI spending this year and OpenAI promised $1.4 trillion. Here's what happens if it pops. Dave's friend Tyler quits his job to put all his savings into AI stocks, so Dave digs into whether AI is a bubble. We cover what a bubble really is, tulip mania in 1637, the dot-com crash (Nasdaq -78%, Pets.com), Big Tech's 2026 data center spending, OpenAI's $1.4 trillion in commitments vs about $40 billion a year in revenue, Nvidia and OpenAI's circular money, the bull case vs the bear case, and what an AI crash would mean for regular people's retirement and jobs.",
     "tags": [
       "is ai a bubble",
       "ai bubble explained",
@@ -126,7 +422,11 @@
       "what happens if ai bubble pops",
       "dave explains money"
     ],
-    "hashtags": ["#aibubble", "#stocks", "#money"],
+    "hashtags": [
+      "#aibubble",
+      "#stocks",
+      "#money"
+    ],
     "pinned": "Would YOU quit your job to go all-in on AI stocks? YES or NO 👇"
   }
 }

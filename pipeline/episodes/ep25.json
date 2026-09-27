@@ -14,83 +14,351 @@
     "Credit CARD Act of 2009 / CFPB Regulation E gift card rules: most gift cards cannot expire within 5 years of purchase or last load; state unclaimed-property laws vary"
   ],
   "beats": [
-    {"id": "o1", "text": "Starbucks is holding about one point seven five billion dollars of its customers' money. Right now. Money for coffee nobody has bought yet.", "pause": 0.3},
-    {"id": "o2", "text": "Dave just added fifty dollars to his Starbucks app. He thinks he bought coffee. Actually, he gave Starbucks a loan.", "pause": 0.3},
-    {"id": "o3", "text": "A loan with zero interest. Starbucks doesn't pay Dave a single cent for holding his money.", "pause": 0.3},
-    {"id": "o4", "text": "And it gets better, for Starbucks. Last year, about two hundred and twenty million dollars on those cards was never spent at all. Starbucks just kept it.", "pause": 0.35},
-    {"id": "o5", "text": "So is Starbucks a coffee shop? Or secretly a bank?", "pause": 0.3},
-    {"id": "o6", "text": "Today: the coffee bank, the money nobody spends, the Stars game, what's really inside a five dollar latte, and how to keep your money yours.", "pause": 0.6},
-
-    {"id": "c1a", "chapter": "Dave Loads Fifty Dollars", "text": "Let's follow Dave's fifty dollars.", "pause": 0.4},
-    {"id": "c1b", "text": "Dave opens the app, taps reload, and fifty dollars leaves his bank account. He hasn't had a single sip yet.", "pause": 0.5},
-    {"id": "c1c", "text": "But Starbucks already has the cash. Today. Real money, in its bank account.", "pause": 0.5},
-    {"id": "c1d", "text": "Here's the catch. Starbucks now owes Dave coffee. Fifty dollars of it. So in its books, that money isn't profit yet. It's a debt.", "pause": 0.5},
-    {"id": "c1e", "text": "Accountants call it deferred revenue. Deferred means later. It only counts as a sale once Dave gets his latte.", "pause": 0.5},
-    {"id": "c1f", "text": "Think of a coat check. You hand over your coat, you get a ticket. The coat isn't theirs. But while it hangs there, they're holding it.", "pause": 0.5},
-    {"id": "c1g", "text": "Except they can't wear your coat. Your money, Starbucks can use right away.", "pause": 0.9},
-
-    {"id": "c2a", "chapter": "The Coffee Bank", "text": "Now multiply Dave by millions of people.", "pause": 0.4},
-    {"id": "c2b", "text": "In its latest annual report, Starbucks said customers had one point seven five billion dollars sitting on cards and in the app, plus unused Stars. That was in September twenty twenty five.", "pause": 0.5},
-    {"id": "c2c", "text": "And the pile keeps refilling. In one year, customers loaded about fifteen billion dollars onto their cards. And spent about fifteen billion.", "pause": 0.5},
-    {"id": "c2d", "text": "Sounds a lot like a bank, right? People hand over money. It sits there. They take it out later.", "pause": 0.5},
-    {"id": "c2e", "text": "But a bank pays you interest. Even a tiny bit. The average American savings account pays about zero point three seven percent a year, according to the F D I C.", "pause": 0.5},
-    {"id": "c2f", "text": "At that rate, a bank would pay about six and a half million dollars a year on one point seven five billion. Starbucks pays zero.", "pause": 0.5},
-    {"id": "c2g", "text": "And there's more. In twenty eighteen, Nestlé paid Starbucks about seven billion dollars up front, for the right to sell Starbucks coffee in supermarkets. Most of it still sits in the books as deferred revenue.", "pause": 0.5},
-    {"id": "c2h", "text": "Money first, coffee later. That's the whole trick.", "pause": 0.9},
-
-    {"id": "c3a", "chapter": "The Money Nobody Spends", "text": "Now look at Dave's old gift card. The one from his birthday. It has three dollars and seventeen cents left.", "pause": 0.4},
-    {"id": "c3b", "text": "Too little for a drink. So it goes into a drawer. Forever.", "pause": 0.5},
-    {"id": "c3c", "text": "Millions of people have a card like that. Starbucks studies years of data, so it can predict how much will never be spent.", "pause": 0.5},
-    {"id": "c3d", "text": "That money has a name. Breakage. Like coins that broke off and rolled behind the couch.", "pause": 0.5},
-    {"id": "c3e", "text": "And Starbucks gets to count it as revenue. In fiscal twenty twenty five, breakage added about two hundred and twenty two million dollars.", "pause": 0.5},
-    {"id": "c3f", "text": "Remember the duck from our very first video? Money from nothing? This is the coffee version. Money for coffee that was never made.", "pause": 0.5},
-    {"id": "c3g", "text": "No beans. No milk. No barista. Just money.", "pause": 0.9},
-
-    {"id": "c4a", "chapter": "The Stars Game", "text": "So why do people prepay at all? Say hello to Starbucks Rewards.", "pause": 0.4},
-    {"id": "c4b", "text": "More than thirty five million Americans used it in a recent three month period. You earn Stars when you pay, and Stars turn into free drinks.", "pause": 0.5},
-    {"id": "c4c", "text": "Most people think: rewards are just free stuff for me. Well, partly. They are also a very clever machine.", "pause": 0.5},
-    {"id": "c4d", "text": "First, loaded money doesn't feel like real money. Remember the casino chips from our casino video? Same trick. Tapping an app hurts less than handing over cash.", "pause": 0.5},
-    {"id": "c4e", "text": "Second, the goal. You're only a few Stars away from a free drink. So you come back. And maybe you add a muffin.", "pause": 0.5},
-    {"id": "c4f", "text": "Third, the balance itself. You have twelve dollars left in the app. So where do you get coffee? Not the little shop next door.", "pause": 0.5},
-    {"id": "c4g", "text": "The free drink is real. But your prepaid money, and your habits, are worth a lot more to Starbucks.", "pause": 0.9},
-
-    {"id": "c5a", "chapter": "How Starbucks Really Makes Money", "text": "Now let's be fair. Starbucks doesn't live on breakage. It's a tiny slice.", "pause": 0.4},
-    {"id": "c5b", "text": "In fiscal twenty twenty five, Starbucks brought in thirty seven point two billion dollars. Breakage was well under one percent of that.", "pause": 0.5},
-    {"id": "c5c", "text": "About eighty three percent came from its own coffee shops. Starbucks runs the store, pays the baristas, and keeps the sales.", "pause": 0.5},
-    {"id": "c5d", "text": "Another twelve percent came from licensed stores. Think airports, or coffee counters inside supermarkets. Another company runs them, and pays Starbucks for coffee, cups, and a fee for using the name.", "pause": 0.5},
-    {"id": "c5e", "text": "Starbucks has almost forty one thousand stores worldwide. About half are its own, and about half are licensed.", "pause": 0.5},
-    {"id": "c5f", "text": "And the rest? Mostly coffee and drinks sold in grocery stores, through deals like the one with Nestlé.", "pause": 0.9},
-
-    {"id": "c6a", "chapter": "Inside a Five Dollar Latte", "text": "So where does your five dollars go? Starbucks doesn't publish the cost of one drink. But we can split an average five dollars of its sales, using the annual report.", "pause": 0.4},
-    {"id": "c6b", "text": "About one dollar and fifty seven cents pays for coffee, milk, cups, and getting it all to the store.", "pause": 0.5},
-    {"id": "c6c", "text": "The biggest piece, about two dollars and twenty nine cents, runs the store. Baristas, rent, electricity.", "pause": 0.5},
-    {"id": "c6d", "text": "About seventy four cents goes to everything else. Offices, worn out machines, and last year, the cost of closing stores.", "pause": 0.5},
-    {"id": "c6e", "text": "And the profit? About thirty nine cents, before interest and taxes. After those, about twenty five cents.", "pause": 0.5},
-    {"id": "c6f", "text": "That's thin. The year before, Starbucks kept fifteen cents of every dollar as operating profit. Last year, just under eight.", "pause": 0.5},
-    {"id": "c6g", "text": "So the latte is a tough business. The prepaid cash? That part is sweet.", "pause": 0.9},
-
-    {"id": "c7a", "chapter": "Gift Cards Everywhere", "text": "And Starbucks isn't alone. Gift cards are everywhere.", "pause": 0.4},
-    {"id": "c7b", "text": "A Bankrate survey found that forty three percent of American adults have at least one unused gift card, voucher, or store credit. About two hundred and forty four dollars each, on average.", "pause": 0.5},
-    {"id": "c7c", "text": "That adds up to roughly twenty seven billion dollars. Sitting in drawers, wallets, and forgotten apps.", "pause": 0.5},
-    {"id": "c7d", "text": "Remember airline miles, from our airline video? Same idea. Miles that expire or get forgotten are money the airline keeps, for a seat it never has to give.", "pause": 0.5},
-    {"id": "c7e", "text": "There are some rules. In the U S, a federal law says most gift cards can't expire for at least five years. And some states collect unclaimed balances.", "pause": 0.5},
-    {"id": "c7f", "text": "But a card that never expires is still useless if it's lost in a drawer.", "pause": 0.9},
-
-    {"id": "c8a", "chapter": "What Dave Does Now", "text": "So what does Dave do with his fifty dollars? Education, not advice.", "pause": 0.4},
-    {"id": "c8b", "text": "One. Don't overload the card. Load what you'll spend soon. Your money earns nothing sitting there.", "pause": 0.5},
-    {"id": "c8c", "text": "Two. Remember, it's not a bank. Money in a coffee app isn't a bank deposit, so there's no F D I C insurance on it.", "pause": 0.5},
-    {"id": "c8d", "text": "Three. Use up your balances. Check the drawer. Check old apps. Leftover money is still your money.", "pause": 0.5},
-    {"id": "c8e", "text": "Four. Set a coffee budget. If tapping feels free, decide the number before you tap.", "pause": 0.5},
-    {"id": "c8f", "text": "And Dave? He dug through his drawer and found three old gift cards. Twenty eight dollars. Lunch is on the drawer.", "pause": 0.9},
-
-    {"id": "d1a", "chapter": "Now You Know", "text": "So let's recap.", "pause": 0.4},
-    {"id": "d1b", "text": "One. When you load a card, the company gets your cash now and owes you later. That's deferred revenue, and it's an interest free loan.", "pause": 0.5},
-    {"id": "d1c", "text": "Two. Money that's never spent is called breakage, and the company gets to keep it as revenue.", "pause": 0.5},
-    {"id": "d1d", "text": "Three. Starbucks still makes most of its money selling coffee. But prepaid cash and rewards keep you coming back.", "pause": 0.9},
-
-    {"id": "d2a", "chapter": "Next Time", "text": "Next time: Apple. Everyone thinks Apple just sells iPhones. But there's a quieter money machine hiding inside your phone.", "pause": 0.4},
-    {"id": "d2b", "text": "How Apple really makes money. That's our next video.", "pause": 0.4},
-    {"id": "d2c", "text": "Subscribe, so you don't miss it. It costs nothing, and unlike a gift card, it will never get lost in a drawer.", "pause": 1.4}
+    {
+      "id": "o1",
+      "text": "Starbucks is holding about one point seven five billion dollars of its customers' money. Right now. Money for coffee nobody has bought yet.",
+      "pause": 0.3
+    },
+    {
+      "id": "o2",
+      "text": "Dave just added fifty dollars to his Starbucks app. He thinks he bought coffee. Actually, he gave Starbucks a loan.",
+      "pause": 0.3
+    },
+    {
+      "id": "o3",
+      "text": "A loan with zero interest. Starbucks doesn't pay Dave a single cent for holding his money.",
+      "pause": 0.3
+    },
+    {
+      "id": "o4",
+      "text": "And it gets better, for Starbucks. Last year, about two hundred and twenty million dollars on those cards was never spent at all. Starbucks just kept it.",
+      "pause": 0.35
+    },
+    {
+      "id": "o5",
+      "text": "So is Starbucks a coffee shop? Or secretly a bank?",
+      "pause": 0.3
+    },
+    {
+      "id": "o6",
+      "text": "Today: the coffee bank, the money nobody spends, the Stars game, what's really inside a five dollar latte, and how to keep your money yours.",
+      "pause": 0.6
+    },
+    {
+      "id": "c1a",
+      "chapter": "Dave Loads Fifty Dollars",
+      "text": "Let's follow Dave's fifty dollars.",
+      "pause": 0.4
+    },
+    {
+      "id": "c1b",
+      "text": "Dave opens the app, taps reload, and fifty dollars leaves his bank account. He hasn't had a single sip yet.",
+      "pause": 0.5
+    },
+    {
+      "id": "c1c",
+      "text": "But Starbucks already has the cash. Today. Real money, in its bank account.",
+      "pause": 0.5
+    },
+    {
+      "id": "c1d",
+      "text": "Here's the catch. Starbucks now owes Dave coffee. Fifty dollars of it. So in its books, that money isn't profit yet. It's a debt.",
+      "pause": 0.5
+    },
+    {
+      "id": "c1e",
+      "text": "Accountants call it deferred revenue. Deferred means later. It only counts as a sale once Dave gets his latte.",
+      "pause": 0.5
+    },
+    {
+      "id": "c1f",
+      "text": "Think of a coat check. You hand over your coat, you get a ticket. The coat isn't theirs. But while it hangs there, they're holding it.",
+      "pause": 0.5
+    },
+    {
+      "id": "c1g",
+      "text": "Except they can't wear your coat. Your money, Starbucks can use right away.",
+      "pause": 0.9
+    },
+    {
+      "id": "c2a",
+      "chapter": "The Coffee Bank",
+      "text": "Now multiply Dave by millions of people.",
+      "pause": 0.4
+    },
+    {
+      "id": "c2b",
+      "text": "In its latest annual report, Starbucks said customers had one point seven five billion dollars sitting on cards and in the app, plus unused Stars. That was in September twenty twenty five.",
+      "pause": 0.5
+    },
+    {
+      "id": "c2c",
+      "text": "And the pile keeps refilling. In one year, customers loaded about fifteen billion dollars onto their cards. And spent about fifteen billion.",
+      "pause": 0.5
+    },
+    {
+      "id": "c2d",
+      "text": "Sounds a lot like a bank, right? People hand over money. It sits there. They take it out later.",
+      "pause": 0.5
+    },
+    {
+      "id": "c2e",
+      "text": "But a bank pays you interest. Even a tiny bit. The average American savings account pays about zero point three seven percent a year, according to the F D I C.",
+      "pause": 0.5
+    },
+    {
+      "id": "c2f",
+      "text": "At that rate, a bank would pay about six and a half million dollars a year on one point seven five billion. Starbucks pays zero.",
+      "pause": 0.5
+    },
+    {
+      "id": "c2g",
+      "text": "And there's more. In twenty eighteen, Nestlé paid Starbucks about seven billion dollars up front, for the right to sell Starbucks coffee in supermarkets. Most of it still sits in the books as deferred revenue.",
+      "pause": 0.5
+    },
+    {
+      "id": "c2h",
+      "text": "Money first, coffee later. That's the whole trick.",
+      "pause": 0.9
+    },
+    {
+      "id": "c3a",
+      "chapter": "The Money Nobody Spends",
+      "text": "Now look at Dave's old gift card. The one from his birthday. It has three dollars and seventeen cents left.",
+      "pause": 0.4
+    },
+    {
+      "id": "c3b",
+      "text": "Too little for a drink. So it goes into a drawer. Forever.",
+      "pause": 0.5
+    },
+    {
+      "id": "c3c",
+      "text": "Millions of people have a card like that. Starbucks studies years of data, so it can predict how much will never be spent.",
+      "pause": 0.5
+    },
+    {
+      "id": "c3d",
+      "text": "That money has a name. Breakage. Like coins that broke off and rolled behind the couch.",
+      "pause": 0.5
+    },
+    {
+      "id": "c3e",
+      "text": "And Starbucks gets to count it as revenue. In fiscal twenty twenty five, breakage added about two hundred and twenty two million dollars.",
+      "pause": 0.5
+    },
+    {
+      "id": "c3f",
+      "text": "Remember the duck from our very first video? Money from nothing? This is the coffee version. Money for coffee that was never made.",
+      "pause": 0.5
+    },
+    {
+      "id": "c3g",
+      "text": "No beans. No milk. No barista. Just money.",
+      "pause": 0.9
+    },
+    {
+      "id": "c4a",
+      "chapter": "The Stars Game",
+      "text": "So why do people prepay at all? Say hello to Starbucks Rewards.",
+      "pause": 0.4
+    },
+    {
+      "id": "c4b",
+      "text": "More than thirty five million Americans used it in a recent three month period. You earn Stars when you pay, and Stars turn into free drinks.",
+      "pause": 0.5
+    },
+    {
+      "id": "c4c",
+      "text": "Most people think: rewards are just free stuff for me. Well, partly. They are also a very clever machine.",
+      "pause": 0.5
+    },
+    {
+      "id": "c4d",
+      "text": "First, loaded money doesn't feel like real money. Remember the casino chips from our casino video? Same trick. Tapping an app hurts less than handing over cash.",
+      "pause": 0.5
+    },
+    {
+      "id": "c4e",
+      "text": "Second, the goal. You're only a few Stars away from a free drink. So you come back. And maybe you add a muffin.",
+      "pause": 0.5
+    },
+    {
+      "id": "c4f",
+      "text": "Third, the balance itself. You have twelve dollars left in the app. So where do you get coffee? Not the little shop next door.",
+      "pause": 0.5
+    },
+    {
+      "id": "c4g",
+      "text": "The free drink is real. But your prepaid money, and your habits, are worth a lot more to Starbucks.",
+      "pause": 0.9
+    },
+    {
+      "id": "c5a",
+      "chapter": "How Starbucks Really Makes Money",
+      "text": "Now let's be fair. Starbucks doesn't live on breakage. It's a tiny slice.",
+      "pause": 0.4
+    },
+    {
+      "id": "c5b",
+      "text": "In fiscal twenty twenty five, Starbucks brought in thirty seven point two billion dollars. Breakage was well under one percent of that.",
+      "pause": 0.5
+    },
+    {
+      "id": "c5c",
+      "text": "About eighty three percent came from its own coffee shops. Starbucks runs the store, pays the baristas, and keeps the sales.",
+      "pause": 0.5
+    },
+    {
+      "id": "c5d",
+      "text": "Another twelve percent came from licensed stores. Think airports, or coffee counters inside supermarkets. Another company runs them, and pays Starbucks for coffee, cups, and a fee for using the name.",
+      "pause": 0.5
+    },
+    {
+      "id": "c5e",
+      "text": "Starbucks has almost forty one thousand stores worldwide. About half are its own, and about half are licensed.",
+      "pause": 0.5
+    },
+    {
+      "id": "c5f",
+      "text": "And the rest? Mostly coffee and drinks sold in grocery stores, through deals like the one with Nestlé.",
+      "pause": 0.9
+    },
+    {
+      "id": "c6a",
+      "chapter": "Inside a Five Dollar Latte",
+      "text": "So where does your five dollars go? Starbucks doesn't publish the cost of one drink. But we can split an average five dollars of its sales, using the annual report.",
+      "pause": 0.4
+    },
+    {
+      "id": "c6b",
+      "text": "About one dollar and fifty seven cents pays for coffee, milk, cups, and getting it all to the store.",
+      "pause": 0.5
+    },
+    {
+      "id": "c6c",
+      "text": "The biggest piece, about two dollars and twenty nine cents, runs the store. Baristas, rent, electricity.",
+      "pause": 0.5
+    },
+    {
+      "id": "c6d",
+      "text": "About seventy four cents goes to everything else. Offices, worn out machines, and last year, the cost of closing stores.",
+      "pause": 0.5
+    },
+    {
+      "id": "c6e",
+      "text": "And the profit? About thirty nine cents, before interest and taxes. After those, about twenty five cents.",
+      "pause": 0.5
+    },
+    {
+      "id": "c6f",
+      "text": "That's thin. The year before, Starbucks kept fifteen cents of every dollar as operating profit. Last year, just under eight.",
+      "pause": 0.5
+    },
+    {
+      "id": "c6g",
+      "text": "So the latte is a tough business. The prepaid cash? That part is sweet.",
+      "pause": 0.9
+    },
+    {
+      "id": "c7a",
+      "chapter": "Gift Cards Everywhere",
+      "text": "And Starbucks isn't alone. Gift cards are everywhere.",
+      "pause": 0.4
+    },
+    {
+      "id": "c7b",
+      "text": "A Bankrate survey found that forty three percent of American adults have at least one unused gift card, voucher, or store credit. About two hundred and forty four dollars each, on average.",
+      "pause": 0.5
+    },
+    {
+      "id": "c7c",
+      "text": "That adds up to roughly twenty seven billion dollars. Sitting in drawers, wallets, and forgotten apps.",
+      "pause": 0.5
+    },
+    {
+      "id": "c7d",
+      "text": "Remember airline miles, from our airline video? Same idea. Miles that expire or get forgotten are money the airline keeps, for a seat it never has to give.",
+      "pause": 0.5
+    },
+    {
+      "id": "c7e",
+      "text": "There are some rules. In the U S, a federal law says most gift cards can't expire for at least five years. And some states collect unclaimed balances.",
+      "pause": 0.5
+    },
+    {
+      "id": "c7f",
+      "text": "But a card that never expires is still useless if it's lost in a drawer.",
+      "pause": 0.9
+    },
+    {
+      "id": "c8a",
+      "chapter": "What Dave Does Now",
+      "text": "So what does Dave do with his fifty dollars? Education, not advice.",
+      "pause": 0.4
+    },
+    {
+      "id": "c8b",
+      "text": "One. Don't overload the card. Load what you'll spend soon. Your money earns nothing sitting there.",
+      "pause": 0.5
+    },
+    {
+      "id": "c8c",
+      "text": "Two. Remember, it's not a bank. Money in a coffee app isn't a bank deposit, so there's no F D I C insurance on it.",
+      "pause": 0.5
+    },
+    {
+      "id": "c8d",
+      "text": "Three. Use up your balances. Check the drawer. Check old apps. Leftover money is still your money.",
+      "pause": 0.5
+    },
+    {
+      "id": "c8e",
+      "text": "Four. Set a coffee budget. If tapping feels free, decide the number before you tap.",
+      "pause": 0.5
+    },
+    {
+      "id": "c8f",
+      "text": "And Dave? He dug through his drawer and found three old gift cards. Twenty eight dollars. Lunch is on the drawer.",
+      "pause": 0.9
+    },
+    {
+      "id": "d1a",
+      "chapter": "Now You Know",
+      "text": "So let's recap.",
+      "pause": 0.4
+    },
+    {
+      "id": "d1b",
+      "text": "One. When you load a card, the company gets your cash now and owes you later. That's deferred revenue, and it's an interest free loan.",
+      "pause": 0.5
+    },
+    {
+      "id": "d1c",
+      "text": "Two. Money that's never spent is called breakage, and the company gets to keep it as revenue.",
+      "pause": 0.5
+    },
+    {
+      "id": "d1d",
+      "text": "Three. Starbucks still makes most of its money selling coffee. But prepaid cash and rewards keep you coming back.",
+      "pause": 0.9
+    },
+    {
+      "id": "d2a",
+      "chapter": "Next Time",
+      "text": "Next time: Apple. Everyone thinks Apple just sells iPhones. But there's a quieter money machine hiding inside your phone.",
+      "pause": 0.4
+    },
+    {
+      "id": "d2b",
+      "text": "How Apple really makes money. That's our next video.",
+      "pause": 0.4
+    },
+    {
+      "id": "d2c",
+      "text": "Subscribe, so you don't miss it. It costs nothing, and unlike a gift card, it will never get lost in a drawer.",
+      "pause": 1.4
+    }
   ],
   "youtube": {
     "title": "How Starbucks Is Secretly a Bank ($1.75 Billion of Your Money)",
@@ -98,7 +366,7 @@
       "Starbucks Holds $1.75 Billion of Your Money (Interest-Free)",
       "Why Starbucks Wants You to Preload Your Card"
     ],
-    "hook": "Is Starbucks secretly a bank? Customers have $1.75 billion sitting on Starbucks cards and in the app, and Starbucks pays zero interest on it. Dave loads $50 onto his Starbucks app and discovers he just gave a coffee company an interest-free loan. Using Starbucks' latest 10-K, we explain stored value and deferred revenue, gift card breakage ($222 million in fiscal 2025), the psychology of Starbucks Rewards, how Starbucks really makes money from company-operated and licensed stores, what's inside an average $5 of Starbucks sales, the $27 billion in unused gift cards across America, and simple habits to keep your money yours.",
+    "hook": "Is Starbucks secretly a bank? Customers keep $1.75 billion on Starbucks cards and the app, and Starbucks pays zero interest on it. Dave loads $50 onto his Starbucks app and discovers he just gave a coffee company an interest-free loan. Using Starbucks' latest 10-K, we explain stored value and deferred revenue, gift card breakage ($222 million in fiscal 2025), the psychology of Starbucks Rewards, how Starbucks really makes money from company-operated and licensed stores, what's inside an average $5 of Starbucks sales, the $27 billion in unused gift cards across America, and simple habits to keep your money yours.",
     "tags": [
       "how starbucks makes money",
       "starbucks is a bank",
@@ -112,7 +380,11 @@
       "money explained simply",
       "dave explains money"
     ],
-    "hashtags": ["#starbucks", "#money", "#business"],
-    "pinned": "Be honest: how much money is sitting in YOUR coffee app right now? Drop the number below."
+    "hashtags": [
+      "#starbucks",
+      "#money",
+      "#business"
+    ],
+    "pinned": "Be honest: how much money is sitting in YOUR coffee app right now? Drop the number below 👇"
   }
 }

@@ -14,78 +14,330 @@
     "U.S. Department of Justice v. Apple Inc. (D.N.J., filed Mar 21, 2024): smartphone monopolization lawsuit; Apple denies the claims; case ongoing"
   ],
   "beats": [
-    {"id": "o1", "text": "Dave just bought a new iPhone. He paid about a thousand dollars. And he thinks that's how Apple makes its money.", "pause": 0.3},
-    {"id": "o2", "text": "But look at this. Last year, Apple made four hundred and sixteen billion dollars in sales.", "pause": 0.3},
-    {"id": "o3", "text": "And one part of the business keeps about seventy five cents of profit from every dollar it sells. It's not the iPhone.", "pause": 0.35},
-    {"id": "o4", "text": "It's the stuff that happens after you buy the phone. Apps. Storage. Music. And a secret twenty billion dollar check from Google.", "pause": 0.35},
-    {"id": "o5", "text": "Dave didn't just buy a phone. He walked into a garden. With walls.", "pause": 0.3},
-    {"id": "o6", "text": "Today: where Apple's money really comes from, why the walls are there, and how Dave can enjoy the garden without paying for everything.", "pause": 0.6},
-
-    {"id": "c1a", "chapter": "Dave's Upgrade", "text": "So let's start at the Apple Store.", "pause": 0.4},
-    {"id": "c1b", "text": "Dave's old phone works fine. But the new one has a better camera, and a shiny new color.", "pause": 0.5},
-    {"id": "c1c", "text": "The salesperson smiles. Trade in your old phone, and we'll take some money off. Dave says yes.", "pause": 0.5},
-    {"id": "c1d", "text": "This is the trade in upgrade cycle. Apple makes upgrading feel cheap, so people come back every few years.", "pause": 0.5},
-    {"id": "c1e", "text": "And the old phones? Many get cleaned up and sold again, or recycled. Nothing is wasted.", "pause": 0.5},
-    {"id": "c1f", "text": "Dave walks out happy. He thinks the deal is done. For Apple, it's just the beginning.", "pause": 0.9},
-
-    {"id": "c2a", "chapter": "The Money Pie", "text": "Let's open Apple's yearly report. It's called a ten K, and every big American company has to publish one.", "pause": 0.4},
-    {"id": "c2b", "text": "In its fiscal year twenty twenty five, Apple sold four hundred and sixteen billion dollars of stuff.", "pause": 0.5},
-    {"id": "c2c", "text": "Let's slice that like a pie. The iPhone: two hundred and ten billion. About half the whole pie.", "pause": 0.5},
-    {"id": "c2d", "text": "Mac computers: thirty four billion. iPads: twenty eight billion. Watches, AirPods and other gadgets: thirty six billion.", "pause": 0.5},
-    {"id": "c2e", "text": "And then a slice called services. One hundred and nine billion dollars. That's App Store fees, iCloud, Music, TV, AppleCare, and more.", "pause": 0.5},
-    {"id": "c2f", "text": "Most people think Apple is just a phone company. Well, half of it is. But the other half is where it gets interesting.", "pause": 0.9},
-
-    {"id": "c3a", "chapter": "The Popcorn Secret", "text": "Here's the thing about selling phones. They're expensive to make.", "pause": 0.4},
-    {"id": "c3b", "text": "Metal, glass, chips, factories, shipping. For every dollar Apple earns selling products, it keeps about thirty seven cents after paying to make them.", "pause": 0.5},
-    {"id": "c3c", "text": "Now services. Once the App Store is built, selling one more app costs almost nothing. Storing Dave's photos costs very little.", "pause": 0.5},
-    {"id": "c3d", "text": "So for every dollar of services, Apple keeps about seventy five cents. That's double the product margin.", "pause": 0.5},
-    {"id": "c3e", "text": "Think of a movie theater. The ticket barely pays for the movie. The popcorn is where the money is. The iPhone is the ticket. Services are the popcorn.", "pause": 0.5},
-    {"id": "c3f", "text": "Services are only about a quarter of Apple's sales. But they bring in about forty two percent of its gross profit.", "pause": 0.9},
-
-    {"id": "c4a", "chapter": "The Thirty Percent Toll", "text": "Now, the biggest popcorn stand of all. The App Store.", "pause": 0.4},
-    {"id": "c4b", "text": "In most countries, the App Store is the only way to get apps on an iPhone. And when you buy an app, or coins inside a game, Apple usually takes a cut.", "pause": 0.5},
-    {"id": "c4c", "text": "The standard cut is thirty percent. Small developers, earning under one million dollars a year, pay fifteen percent. So do long running subscriptions after the first year.", "pause": 0.5},
-    {"id": "c4d", "text": "Remember the raccoon from our credit card video? This is his fancy cousin, sitting at the only gate in town.", "pause": 0.5},
-    {"id": "c4e", "text": "App makers have fought back. After a lawsuit from the maker of Fortnite, a U.S. court ordered Apple in twenty twenty five to let apps send you to cheaper payment pages on the web. In Europe, new laws forced changes too.", "pause": 0.5},
-    {"id": "c4f", "text": "Apple says the fee pays for security, reviewing apps, and reaching over a billion customers. Developers say it's too much. Both sides keep going to court.", "pause": 0.9},
-
-    {"id": "c5a", "chapter": "Google's Giant Check", "text": "Now the strangest money of all. Money for doing almost nothing.", "pause": 0.4},
-    {"id": "c5b", "text": "When Dave opens Safari and types a question, the answer comes from Google. That's not an accident. Google pays for that spot.", "pause": 0.5},
-    {"id": "c5c", "text": "How much? In a big antitrust trial, the court revealed that Google paid Apple about twenty billion dollars in twenty twenty two alone.", "pause": 0.5},
-    {"id": "c5d", "text": "That's like getting paid twenty billion dollars to leave a door open, and put a welcome mat in front of it.", "pause": 0.5},
-    {"id": "c5e", "text": "In twenty twenty four, a judge ruled that Google had illegally kept a monopoly in search. Many people thought the payments would be banned.", "pause": 0.5},
-    {"id": "c5f", "text": "But in twenty twenty five, the judge decided Google can keep paying to be the default. It just can't make those deals exclusive. So, for now, the checks keep coming.", "pause": 0.9},
-
-    {"id": "c6a", "chapter": "Subscriptions Everywhere", "text": "Back to Dave. A few weeks later, his phone shows a message. Storage almost full.", "pause": 0.4},
-    {"id": "c6b", "text": "He has thousands of photos. So he taps upgrade. iCloud plus. Only ninety nine cents a month. Tiny.", "pause": 0.5},
-    {"id": "c6c", "text": "Then a free trial of Apple Music. Then Apple TV, for one show. Then Arcade, for his nephew.", "pause": 0.5},
-    {"id": "c6d", "text": "Music, eleven ninety nine. TV, fourteen ninety nine. Arcade, six ninety nine. Plus storage. That's about thirty five dollars a month.", "pause": 0.5},
-    {"id": "c6e", "text": "Thirty five dollars a month is four hundred and twenty dollars a year. Almost half the price of a new iPhone, every single year.", "pause": 0.5},
-    {"id": "c6f", "text": "Apple also sells a bundle called Apple One, which can save money if you really use everything. That's the popcorn combo.", "pause": 0.5},
-    {"id": "c6g", "text": "Each subscription is small. That's the trick. Small drips fill a big bucket. Apple's bucket.", "pause": 0.9},
-
-    {"id": "c7a", "chapter": "The Walled Garden", "text": "So why doesn't Dave just switch to another phone? Because now, he's inside the garden.", "pause": 0.4},
-    {"id": "c7b", "text": "Dave's friends all have iPhones. Their messages are blue bubbles. When his cousin with an Android joins the group chat, the bubbles turn green, and everybody notices.", "pause": 0.5},
-    {"id": "c7c", "text": "His AirPods jump between his phone and his laptop like magic. His Watch only works with an iPhone. His photos, passwords and apps all live in iCloud.", "pause": 0.5},
-    {"id": "c7d", "text": "Leaving means losing a little of all that. Each piece is a brick in the wall.", "pause": 0.5},
-    {"id": "c7e", "text": "And the garden is huge. Apple says more than two and a half billion active devices are in use around the world.", "pause": 0.5},
-    {"id": "c7f", "text": "Now, to be fair, lots of people love the garden. Things just work together. Apple focuses on privacy, and gives old phones software updates for years. And iPhones keep their resale value well.", "pause": 0.5},
-    {"id": "c7g", "text": "But critics say the walls are too high. In twenty twenty four, the U.S. government sued Apple, saying it makes switching too hard. Apple disagrees. The case is still going.", "pause": 0.5},
-    {"id": "c7h", "text": "Nice garden, or golden cage? That's up to you. Now you know how it works.", "pause": 0.9},
-
-    {"id": "c8a", "chapter": "Dave's Garden Plan", "text": "So how can Dave enjoy the garden without paying for every flower? Education, not advice.", "pause": 0.4},
-    {"id": "c8b", "text": "One. Do a subscription audit. On an iPhone, open Settings, tap your name, then Subscriptions. Cancel anything you forgot you had.", "pause": 0.5},
-    {"id": "c8c", "text": "Two. Don't upgrade every year. A new iPhone is great, but keeping a phone for four or five years can save hundreds of dollars.", "pause": 0.5},
-    {"id": "c8d", "text": "Three. Before paying for more storage, clean up. Delete old videos and duplicate photos. Many people pay just to store clutter.", "pause": 0.5},
-    {"id": "c8e", "text": "Four. If you use three or more services, compare the bundle. If you only use one, skip it.", "pause": 0.5},
-    {"id": "c8f", "text": "And five. Free trials turn into bills. Set a reminder the same day you start one.", "pause": 0.9},
-
-    {"id": "c9a", "chapter": "Now You Know", "text": "So let's recap.", "pause": 0.4},
-    {"id": "c9b", "text": "One. The iPhone brings in about half of Apple's sales. But services are the profit machine, keeping about seventy five cents of every dollar.", "pause": 0.5},
-    {"id": "c9c", "text": "Two. Services include the App Store's cut, your subscriptions, and a giant check from Google for being the default search.", "pause": 0.5},
-    {"id": "c9d", "text": "Three. The walled garden keeps you in. It's comfy. Just check what you're paying for.", "pause": 0.6},
-    {"id": "c9e", "text": "Next time, Dave orders a phone case online, and wonders how Amazon really makes money. Hint: it's not the boxes.", "pause": 0.4},
-    {"id": "c9f", "text": "Subscribe, so Dave can keep explaining money. It's the one subscription that's completely free.", "pause": 1.4}
+    {
+      "id": "o1",
+      "text": "Dave just bought a new iPhone. He paid about a thousand dollars. And he thinks that's how Apple makes its money.",
+      "pause": 0.3
+    },
+    {
+      "id": "o2",
+      "text": "But look at this. Last year, Apple made four hundred and sixteen billion dollars in sales.",
+      "pause": 0.3
+    },
+    {
+      "id": "o3",
+      "text": "And one part of the business keeps about seventy five cents of profit from every dollar it sells. It's not the iPhone.",
+      "pause": 0.35
+    },
+    {
+      "id": "o4",
+      "text": "It's the stuff that happens after you buy the phone. Apps. Storage. Music. And a secret twenty billion dollar check from Google.",
+      "pause": 0.35
+    },
+    {
+      "id": "o5",
+      "text": "Dave didn't just buy a phone. He walked into a garden. With walls.",
+      "pause": 0.3
+    },
+    {
+      "id": "o6",
+      "text": "Today: where Apple's money really comes from, why the walls are there, and how Dave can enjoy the garden without paying for everything.",
+      "pause": 0.6
+    },
+    {
+      "id": "c1a",
+      "chapter": "Dave's Upgrade",
+      "text": "So let's start at the Apple Store.",
+      "pause": 0.4
+    },
+    {
+      "id": "c1b",
+      "text": "Dave's old phone works fine. But the new one has a better camera, and a shiny new color.",
+      "pause": 0.5
+    },
+    {
+      "id": "c1c",
+      "text": "The salesperson smiles. Trade in your old phone, and we'll take some money off. Dave says yes.",
+      "pause": 0.5
+    },
+    {
+      "id": "c1d",
+      "text": "This is the trade in upgrade cycle. Apple makes upgrading feel cheap, so people come back every few years.",
+      "pause": 0.5
+    },
+    {
+      "id": "c1e",
+      "text": "And the old phones? Many get cleaned up and sold again, or recycled. Nothing is wasted.",
+      "pause": 0.5
+    },
+    {
+      "id": "c1f",
+      "text": "Dave walks out happy. He thinks the deal is done. For Apple, it's just the beginning.",
+      "pause": 0.9
+    },
+    {
+      "id": "c2a",
+      "chapter": "The Money Pie",
+      "text": "Let's open Apple's yearly report. It's called a ten K, and every big American company has to publish one.",
+      "pause": 0.4
+    },
+    {
+      "id": "c2b",
+      "text": "In its fiscal year twenty twenty five, Apple sold four hundred and sixteen billion dollars of stuff.",
+      "pause": 0.5
+    },
+    {
+      "id": "c2c",
+      "text": "Let's slice that like a pie. The iPhone: two hundred and ten billion. About half the whole pie.",
+      "pause": 0.5
+    },
+    {
+      "id": "c2d",
+      "text": "Mac computers: thirty four billion. iPads: twenty eight billion. Watches, AirPods and other gadgets: thirty six billion.",
+      "pause": 0.5
+    },
+    {
+      "id": "c2e",
+      "text": "And then a slice called services. One hundred and nine billion dollars. That's App Store fees, iCloud, Music, TV, AppleCare, and more.",
+      "pause": 0.5
+    },
+    {
+      "id": "c2f",
+      "text": "Most people think Apple is just a phone company. Well, half of it is. But the other half is where it gets interesting.",
+      "pause": 0.9
+    },
+    {
+      "id": "c3a",
+      "chapter": "The Popcorn Secret",
+      "text": "Here's the thing about selling phones. They're expensive to make.",
+      "pause": 0.4
+    },
+    {
+      "id": "c3b",
+      "text": "Metal, glass, chips, factories, shipping. For every dollar Apple earns selling products, it keeps about thirty seven cents after paying to make them.",
+      "pause": 0.5
+    },
+    {
+      "id": "c3c",
+      "text": "Now services. Once the App Store is built, selling one more app costs almost nothing. Storing Dave's photos costs very little.",
+      "pause": 0.5
+    },
+    {
+      "id": "c3d",
+      "text": "So for every dollar of services, Apple keeps about seventy five cents. That's double the product margin.",
+      "pause": 0.5
+    },
+    {
+      "id": "c3e",
+      "text": "Think of a movie theater. The ticket barely pays for the movie. The popcorn is where the money is. The iPhone is the ticket. Services are the popcorn.",
+      "pause": 0.5
+    },
+    {
+      "id": "c3f",
+      "text": "Services are only about a quarter of Apple's sales. But they bring in about forty two percent of its gross profit.",
+      "pause": 0.9
+    },
+    {
+      "id": "c4a",
+      "chapter": "The Thirty Percent Toll",
+      "text": "Now, the biggest popcorn stand of all. The App Store.",
+      "pause": 0.4
+    },
+    {
+      "id": "c4b",
+      "text": "In most countries, the App Store is the only way to get apps on an iPhone. And when you buy an app, or coins inside a game, Apple usually takes a cut.",
+      "pause": 0.5
+    },
+    {
+      "id": "c4c",
+      "text": "The standard cut is thirty percent. Small developers, earning under one million dollars a year, pay fifteen percent. So do long running subscriptions after the first year.",
+      "pause": 0.5
+    },
+    {
+      "id": "c4d",
+      "text": "Remember the raccoon from our credit card video? This is his fancy cousin, sitting at the only gate in town.",
+      "pause": 0.5
+    },
+    {
+      "id": "c4e",
+      "text": "App makers have fought back. After a lawsuit from the maker of Fortnite, a U.S. court ordered Apple in twenty twenty five to let apps send you to cheaper payment pages on the web. In Europe, new laws forced changes too.",
+      "pause": 0.5
+    },
+    {
+      "id": "c4f",
+      "text": "Apple says the fee pays for security, reviewing apps, and reaching over a billion customers. Developers say it's too much. Both sides keep going to court.",
+      "pause": 0.9
+    },
+    {
+      "id": "c5a",
+      "chapter": "Google's Giant Check",
+      "text": "Now the strangest money of all. Money for doing almost nothing.",
+      "pause": 0.4
+    },
+    {
+      "id": "c5b",
+      "text": "When Dave opens Safari and types a question, the answer comes from Google. That's not an accident. Google pays for that spot.",
+      "pause": 0.5
+    },
+    {
+      "id": "c5c",
+      "text": "How much? In a big antitrust trial, the court revealed that Google paid Apple about twenty billion dollars in twenty twenty two alone.",
+      "pause": 0.5
+    },
+    {
+      "id": "c5d",
+      "text": "That's like getting paid twenty billion dollars to leave a door open, and put a welcome mat in front of it.",
+      "pause": 0.5
+    },
+    {
+      "id": "c5e",
+      "text": "In twenty twenty four, a judge ruled that Google had illegally kept a monopoly in search. Many people thought the payments would be banned.",
+      "pause": 0.5
+    },
+    {
+      "id": "c5f",
+      "text": "But in twenty twenty five, the judge decided Google can keep paying to be the default. It just can't make those deals exclusive. So, for now, the checks keep coming.",
+      "pause": 0.9
+    },
+    {
+      "id": "c6a",
+      "chapter": "Subscriptions Everywhere",
+      "text": "Back to Dave. A few weeks later, his phone shows a message. Storage almost full.",
+      "pause": 0.4
+    },
+    {
+      "id": "c6b",
+      "text": "He has thousands of photos. So he taps upgrade. iCloud plus. Only ninety nine cents a month. Tiny.",
+      "pause": 0.5
+    },
+    {
+      "id": "c6c",
+      "text": "Then a free trial of Apple Music. Then Apple TV, for one show. Then Arcade, for his nephew.",
+      "pause": 0.5
+    },
+    {
+      "id": "c6d",
+      "text": "Music, eleven ninety nine. TV, fourteen ninety nine. Arcade, six ninety nine. Plus storage. That's about thirty five dollars a month.",
+      "pause": 0.5
+    },
+    {
+      "id": "c6e",
+      "text": "Thirty five dollars a month is four hundred and twenty dollars a year. Almost half the price of a new iPhone, every single year.",
+      "pause": 0.5
+    },
+    {
+      "id": "c6f",
+      "text": "Apple also sells a bundle called Apple One, which can save money if you really use everything. That's the popcorn combo.",
+      "pause": 0.5
+    },
+    {
+      "id": "c6g",
+      "text": "Each subscription is small. That's the trick. Small drips fill a big bucket. Apple's bucket.",
+      "pause": 0.9
+    },
+    {
+      "id": "c7a",
+      "chapter": "The Walled Garden",
+      "text": "So why doesn't Dave just switch to another phone? Because now, he's inside the garden.",
+      "pause": 0.4
+    },
+    {
+      "id": "c7b",
+      "text": "Dave's friends all have iPhones. Their messages are blue bubbles. When his cousin with an Android joins the group chat, the bubbles turn green, and everybody notices.",
+      "pause": 0.5
+    },
+    {
+      "id": "c7c",
+      "text": "His AirPods jump between his phone and his laptop like magic. His Watch only works with an iPhone. His photos, passwords and apps all live in iCloud.",
+      "pause": 0.5
+    },
+    {
+      "id": "c7d",
+      "text": "Leaving means losing a little of all that. Each piece is a brick in the wall.",
+      "pause": 0.5
+    },
+    {
+      "id": "c7e",
+      "text": "And the garden is huge. Apple says more than two and a half billion active devices are in use around the world.",
+      "pause": 0.5
+    },
+    {
+      "id": "c7f",
+      "text": "Now, to be fair, lots of people love the garden. Things just work together. Apple focuses on privacy, and gives old phones software updates for years. And iPhones keep their resale value well.",
+      "pause": 0.5
+    },
+    {
+      "id": "c7g",
+      "text": "But critics say the walls are too high. In twenty twenty four, the U.S. government sued Apple, saying it makes switching too hard. Apple disagrees. The case is still going.",
+      "pause": 0.5
+    },
+    {
+      "id": "c7h",
+      "text": "Nice garden, or golden cage? That's up to you. Now you know how it works.",
+      "pause": 0.9
+    },
+    {
+      "id": "c8a",
+      "chapter": "Dave's Garden Plan",
+      "text": "So how can Dave enjoy the garden without paying for every flower? Education, not advice.",
+      "pause": 0.4
+    },
+    {
+      "id": "c8b",
+      "text": "One. Do a subscription audit. On an iPhone, open Settings, tap your name, then Subscriptions. Cancel anything you forgot you had.",
+      "pause": 0.5
+    },
+    {
+      "id": "c8c",
+      "text": "Two. Don't upgrade every year. A new iPhone is great, but keeping a phone for four or five years can save hundreds of dollars.",
+      "pause": 0.5
+    },
+    {
+      "id": "c8d",
+      "text": "Three. Before paying for more storage, clean up. Delete old videos and duplicate photos. Many people pay just to store clutter.",
+      "pause": 0.5
+    },
+    {
+      "id": "c8e",
+      "text": "Four. If you use three or more services, compare the bundle. If you only use one, skip it.",
+      "pause": 0.5
+    },
+    {
+      "id": "c8f",
+      "text": "And five. Free trials turn into bills. Set a reminder the same day you start one.",
+      "pause": 0.9
+    },
+    {
+      "id": "c9a",
+      "chapter": "Now You Know",
+      "text": "So let's recap.",
+      "pause": 0.4
+    },
+    {
+      "id": "c9b",
+      "text": "One. The iPhone brings in about half of Apple's sales. But services are the profit machine, keeping about seventy five cents of every dollar.",
+      "pause": 0.5
+    },
+    {
+      "id": "c9c",
+      "text": "Two. Services include the App Store's cut, your subscriptions, and a giant check from Google for being the default search.",
+      "pause": 0.5
+    },
+    {
+      "id": "c9d",
+      "text": "Three. The walled garden keeps you in. It's comfy. Just check what you're paying for.",
+      "pause": 0.6
+    },
+    {
+      "id": "c9e",
+      "text": "Next time, Dave orders a phone case online, and wonders how Amazon really makes money. Hint: it's not the boxes.",
+      "pause": 0.4
+    },
+    {
+      "id": "c9f",
+      "text": "Subscribe, so Dave can keep explaining money. It's the one subscription that's completely free.",
+      "pause": 1.4
+    }
   ],
   "youtube": {
     "title": "How Apple Really Makes Money (It's Not Just the iPhone)",
@@ -93,21 +345,25 @@
       "Apple's Secret Profit Machine Isn't the iPhone",
       "Why Google Pays Apple $20 Billion a Year"
     ],
-    "hook": "How does Apple really make money? Apple sold $416 billion in fiscal 2025, and the iPhone is about half. But Services keep about 75 cents of every dollar, versus 37 cents for products. Dave upgrades his phone and gets pulled into the walled garden: the App Store's 30%/15% cut, Google's ~$20 billion default-search payments, iCloud, Music and TV subscriptions, blue bubbles, AirPods and 2.5 billion active devices. Balanced, sourced, and with a practical subscription audit.",
+    "hook": "How does Apple really make money? The iPhone is half of $416B in sales, but services keep 75 cents of every dollar. Here's the walled garden. Dave upgrades his phone and gets pulled into Apple's walled garden. Using Apple's latest 10-K we break down revenue by product, why services have double the margin of hardware, the App Store's 30%/15% commission, Google's roughly $20 billion default-search payments and the antitrust ruling, iCloud, Music and TV subscriptions, blue bubbles and 2.5 billion active devices, with both sides of the lock-in debate.",
     "tags": [
       "how apple makes money",
       "apple business model",
       "apple services revenue",
-      "app store 30 percent",
+      "app store 30 percent commission",
       "google pays apple 20 billion",
-      "apple walled garden",
+      "apple walled garden explained",
       "apple 10-k explained",
+      "iphone share of apple revenue",
       "subscription audit",
-      "apple ecosystem explained",
       "money explained simply",
       "dave explains money"
     ],
-    "hashtags": ["#apple", "#business", "#money"],
+    "hashtags": [
+      "#apple",
+      "#business",
+      "#money"
+    ],
     "pinned": "How many Apple subscriptions are you paying for right now? Drop the NUMBER 👇 (Settings → your name → Subscriptions)"
   }
 }
