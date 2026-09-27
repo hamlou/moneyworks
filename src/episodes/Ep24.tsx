@@ -867,8 +867,8 @@ export const Ep24: React.FC = () => {
           ))}
           <Escalator x={1520} y={620} f={f} dir="up" label="UP ARM" len={560} s={pop(f, A('c8a') + 2)} />
           <Dave f={f} x={1520 - 210 * Math.cos(0.49) + 420 * dp * Math.cos(0.49)} y={600 + 210 * Math.sin(0.49) - 420 * dp * Math.sin(0.49)} s={0.7} keys={[{at: 0, pose: 'think', expr: 'think'}, {at: hs[0], pose: 'celebrate', expr: 'happy'}]} />
-          {cur === 3 && <Raccoon f={f} x={1760} y={880} s={0.6} mood="sneaky" />}
-          {cur === 3 && f >= fr && <XMark x={1760} y={860} s={0.6 * pop(f, fr)} />}
+          {cur === 3 && <Raccoon f={f} x={1180} y={900} s={0.55} mood="sneaky" />}
+          {cur === 3 && f >= fr && <XMark x={1180} y={900} s={0.22 * pop(f, fr)} />}
         </Svg>
       </AbsoluteFill>
     ));

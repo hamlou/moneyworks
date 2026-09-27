@@ -30,7 +30,7 @@ const Box: React.FC<{w: number; h: number; fill?: string; stroke?: string}> = ({
 );
 
 const Pill: React.FC<{text: string; val?: string; w?: number; lit?: number; color?: string; size?: number}> = ({text, val, w = 600, lit = 1, color = C.green, size = 40}) => (
-  <g opacity={0.35 + 0.65 * lit}>
+  <g opacity={0.75 + 0.25 * lit}>
     <rect x={-w / 2} y={-44} width={w} height={88} rx={44} fill={lit > 0.6 ? '#fff' : '#F1EADC'} stroke={lit > 0.6 ? color : C.ink} strokeWidth={lit > 0.6 ? 8 : 5} />
     <Text x={val ? -w / 2 + 36 : 0} y={2} size={size} anchor={val ? 'start' : 'middle'}>{text}</Text>
     {val && <Text x={w / 2 - 36} y={2} size={size + 4} anchor="end" color={color}>{val}</Text>}
@@ -156,7 +156,7 @@ export const Ep26: React.FC = () => {
             <Handset body="#3A5A8C"><Text y={0} size={110} color="#9AA5B1">?</Text></Handset>
             {f >= nt && <XMark s={0.45 * pop(f, nt)} />}
           </G2>
-          <G2 x={1600} y={340} s={In(A('o2'), 5)} o={0.4 + 0.6 * lit(nt)}><Text size={40} color={C.red}>not the iPhone</Text></G2>
+          <G2 x={1600} y={450} s={In(A('o2'), 5)} o={0.6 + 0.4 * lit(nt)}><Text size={40} color={C.red}>not the iPhone</Text></G2>
           <SourceTag f={f} at={fr} text="Apple 10-K, fiscal 2025: net sales $416.2B" />
         </Svg>
       </AbsoluteFill>
@@ -172,7 +172,7 @@ export const Ep26: React.FC = () => {
         <Svg>
           <G2 x={960} y={130} s={In(A('o4'))}><Text size={60} color="#5B6470">AFTER you buy the phone...</Text></G2>
           {['APPS', 'STORAGE', 'MUSIC', '$20B CHECK'].map((l, i) => (
-            <G2 key={l} x={270 + i * 460} y={540} s={In(A('o4'), i * 2) * bump(ks[i], 0.1)} o={0.35 + 0.65 * lit(ks[i])}>
+            <G2 key={l} x={270 + i * 460} y={540} s={In(A('o4'), i * 2) * bump(ks[i], 0.1)} o={0.55 + 0.45 * lit(ks[i])}>
               <Frame w={420} h={440} label={l}>
                 {i === 0 && [0, 1, 2, 3].map((k) => <AppTile key={k} x={-70 + (k % 2) * 140} y={-120 + Math.floor(k / 2) * 140} s={0.9} color={[C.blue, C.red, C.green, C.gold][k]} label={['A', 'G', 'M', '$'][k]} />)}
                 {i === 1 && <CloudBox y={-60} s={0.8} label="iCloud" />}
@@ -216,7 +216,7 @@ export const Ep26: React.FC = () => {
         <Svg>
           <Text x={960} y={130} size={60} color="#5B6470">TODAY</Text>
           {['WHERE THE MONEY COMES FROM', 'WHY THE WALLS', 'ENJOY IT, PAY LESS'].map((l, i) => (
-            <G2 key={l} x={380 + i * 580} y={530} s={In(A('o6'), i * 2) * bump(pv[i], 0.08)} o={0.4 + 0.6 * lit(pv[i])}>
+            <G2 key={l} x={380 + i * 580} y={530} s={In(A('o6'), i * 2) * bump(pv[i], 0.08)} o={0.6 + 0.4 * lit(pv[i])}>
               <Frame w={520} h={460} label={l}>
                 {i === 0 && <SlicePie y={-50} rad={140} slices={[{v: 0.5, c: C.blue}, {v: 0.24, c: C.gray}, {v: 0.26, c: C.gold}]} />}
                 {i === 1 && <Garden y={60} s={0.3} f={f} />}
@@ -299,15 +299,15 @@ export const Ep26: React.FC = () => {
               {['BUY NEW', 'USE IT', 'TRADE IN', 'UPGRADE'].map((l, i) => {
                 const a = -Math.PI / 2 + (i * Math.PI) / 2;
                 return (
-                  <g key={l} transform={`translate(${Math.cos(a) * 280},${Math.sin(a) * 280})`} opacity={0.45 + 0.55 * lit(cy)}>
+                  <g key={l} transform={`translate(${Math.cos(a) * 280},${Math.sin(a) * 280})`} opacity={0.7 + 0.3 * lit(cy)}>
                     <Pill text={l} w={250} lit={lit(cy)} color={C.blue} size={34} />
                   </g>
                 );
               })}
               <Handset s={0.38} body="#E07A9A"><Text size={40} color={C.navy}>NEW</Text></Handset>
             </G2>
-            <G2 x={1640} y={170} s={In(A('c1d'), 3) * bump(ch)} o={0.4 + 0.6 * lit(ch)}><Pill text="feels cheap" w={380} lit={lit(ch)} /></G2>
-            <G2 x={1640} y={820} s={In(A('c1d'), 4) * bump(rc)} o={0.4 + 0.6 * lit(rc)}><Pill text="old: resold / recycled" w={480} lit={lit(rc)} size={34} /></G2>
+            <G2 x={1640} y={170} s={In(A('c1d'), 3) * bump(ch)} o={0.6 + 0.4 * lit(ch)}><Pill text="feels cheap" w={380} lit={lit(ch)} /></G2>
+            <G2 x={1640} y={820} s={In(A('c1d'), 4) * bump(rc)} o={0.6 + 0.4 * lit(rc)}><Pill text="old: resold / recycled" w={480} lit={lit(rc)} size={34} /></G2>
             <G2 x={480} y={180} s={In(A('c1d'), 2)}><Text size={48}>{f >= dn ? 'deal done?' : 'every few years...'}</Text></G2>
             {f >= bg && <Stamp x={1100} y={520} s={pop(f, bg, 9, 260)} text="JUST THE BEGINNING" size={54} color={C.red} r={-6} />}
           </Svg>
@@ -355,8 +355,8 @@ export const Ep26: React.FC = () => {
             <G2 x={1560} y={360} s={In(A('c2a'), 3) * bump(fr, 0.1)}>
               <NumCard top="FISCAL 2025 SALES" val={f >= fr ? '$416.2B' : '$ ???'} w={560} color={f >= fr ? C.green : C.ink} />
             </G2>
-            <G2 x={1560} y={640} s={In(A('c2a'), 5)} o={0.4 + 0.6 * lit(pb)}><Pill text="every big US company" w={560} lit={lit(pb)} size={36} /></G2>
-            <G2 x={1560} y={740} s={In(A('c2a'), 6)} o={0.4 + 0.6 * lit(pb)}><Text size={36} color="#5B6470">must publish one</Text></G2>
+            <G2 x={1560} y={640} s={In(A('c2a'), 5)} o={0.6 + 0.4 * lit(pb)}><Pill text="every big US company" w={560} lit={lit(pb)} size={36} /></G2>
+            <G2 x={1560} y={740} s={In(A('c2a'), 6)} o={0.6 + 0.4 * lit(pb)}><Text size={36} color="#5B6470">must publish one</Text></G2>
             <SourceTag f={f} at={fr} text="Apple Form 10-K, FY ended Sept 27, 2025" />
           </Svg>
         </AbsoluteFill>
@@ -380,7 +380,7 @@ export const Ep26: React.FC = () => {
             <G2 x={1400} y={500} s={In(A('c2c'), 2)}>
               <SlicePie rad={300} pop={cur === 5 ? 4 : cur} slices={rows.map(([, , c, v], i) => ({v, c: f >= hs[i] ? c : '#E0D6C3', l: f >= hs[i] ? `${Math.round(v * 100)}%` : undefined}))} />
             </G2>
-            <G2 x={1400} y={120} s={In(A('c2c'), 3) * bump(hf)} o={0.4 + 0.6 * lit(hf)}><Text size={44} color={C.blue}>iPhone ≈ half the pie</Text></G2>
+            <G2 x={1400} y={120} s={In(A('c2c'), 3) * bump(hf)} o={0.6 + 0.4 * lit(hf)}><Text size={44} color={C.blue}>iPhone ≈ half the pie</Text></G2>
             <G2 x={500} y={830} s={In(A('c2c'), 4)}><Text size={40} color={f >= ot ? C.green : '#5B6470'}>{f >= ot ? 'the other half: where it gets interesting' : f >= A('c2f') ? 'myth: "just a phone company"' : 'services: App Store, iCloud, Music, TV...'}</Text></G2>
             {f >= hf2 && f < ot && <Stamp x={1400} y={500} s={pop(f, hf2, 9, 260)} text="HALF TRUE" size={56} color={C.red} r={-6} />}
             <SourceTag f={f} at={hs[0]} text="Apple 10-K FY2025: net sales by category" />
@@ -429,7 +429,7 @@ export const Ep26: React.FC = () => {
           <Svg>
             <G2 x={960} y={110} s={In(A('c3a')) * bump(ex, 0.1)}><Text size={56} color={f >= ex ? C.red : C.ink}>phones are EXPENSIVE to make</Text></G2>
             {['metal', 'glass', 'chips', 'factories', 'shipping'].map((l, i) => (
-              <G2 key={l} x={420} y={250 + i * 120} s={In(A('c3a'), i) * bump(cs[i], 0.1)} o={0.35 + 0.65 * lit(cs[i])}>
+              <G2 key={l} x={420} y={250 + i * 120} s={In(A('c3a'), i) * bump(cs[i], 0.1)} o={0.55 + 0.45 * lit(cs[i])}>
                 <Pill text={l} w={420} lit={lit(cs[i])} color={C.red} />
               </G2>
             ))}
@@ -449,7 +449,7 @@ export const Ep26: React.FC = () => {
               })()}
             </G2>
             <Dave f={f} x={1620} y={880} s={1.15} keys={[{at: 0, pose: 'think', expr: 'think', look: -0.8}, {at: tt, pose: 'point_l', expr: 'happy', look: -0.8}]} />
-            <G2 x={1620} y={330} s={In(A('c3a'), 4)} o={0.4 + 0.6 * lit(tt)}><Text size={40} color={C.green}>kept: ~37¢</Text></G2>
+            <G2 x={1620} y={330} s={In(A('c3a'), 4)} o={0.6 + 0.4 * lit(tt)}><Text size={40} color={C.green}>kept: ~37¢</Text></G2>
             <SourceTag f={f} at={tt} text="10-K FY2025: products margin $112.9B ÷ $307.0B = 36.8%" />
           </Svg>
         </AbsoluteFill>
@@ -463,14 +463,14 @@ export const Ep26: React.FC = () => {
               <AppTile x={-80} color={C.blue} label="A" />
               <AppTile x={80} color={C.green} label="+1" />
             </G2>
-            <G2 x={640} y={720} s={In(A('c3c'), 3)} o={0.4 + 0.6 * lit(nt)}><Text size={40} color={C.green}>one more app ≈ $0 to make</Text></G2>
+            <G2 x={640} y={720} s={In(A('c3c'), 3)} o={0.6 + 0.4 * lit(nt)}><Text size={40} color={C.green}>one more app ≈ $0 to make</Text></G2>
             <G2 x={1350} y={0} s={In(A('c3c'), 2)}>
               <line x1={-380} y1={860} x2={380} y2={860} stroke={C.ink} strokeWidth={6} strokeLinecap="round" />
               <Bar x={-190} y={860} h={37 * 8} color={C.blue} label="products" value="37¢" w={240} />
               <Bar x={190} y={860} h={ease(f, sf - 4, sf + 14, 30, 75 * 8)} color={C.gold} label="services" value={f >= sf ? '75¢' : '?'} w={240} />
               <Text y={150} size={40}>kept from every $1 of sales</Text>
             </G2>
-            <G2 x={1350} y={240} s={In(A('c3c'), 4) * bump(db)} o={0.35 + 0.65 * lit(db)}><Box w={300} h={90} fill={C.yellow} /><Text size={46}>2× !</Text></G2>
+            <G2 x={1350} y={240} s={In(A('c3c'), 4) * bump(db)} o={0.55 + 0.45 * lit(db)}><Box w={300} h={90} fill={C.yellow} /><Text size={46}>2× !</Text></G2>
             <SourceTag f={f} at={sf} text="10-K FY2025: services margin $82.3B ÷ $109.2B = 75.4%" />
           </Svg>
         </AbsoluteFill>
@@ -480,9 +480,9 @@ export const Ep26: React.FC = () => {
           <Svg>
             <G2 x={960} y={110} s={In(A('c3e')) * bump(tm, 0.08)}><Text size={56}>the movie theater trick</Text></G2>
             <G2 x={560} y={430} s={1.5 * In(A('c3e'), 2) * bump(tkt, 0.1)}><Ticket text="ADMIT ONE" /></G2>
-            <G2 x={560} y={640} s={In(A('c3e'), 3)} o={0.4 + 0.6 * lit(ip)}><Text size={48} color={C.blue}>{f >= ip ? 'ticket = the iPhone' : 'ticket: barely pays'}</Text></G2>
+            <G2 x={560} y={640} s={In(A('c3e'), 3)} o={0.6 + 0.4 * lit(ip)}><Text size={48} color={C.blue}>{f >= ip ? 'ticket = the iPhone' : 'ticket: barely pays'}</Text></G2>
             <G2 x={1360} y={440} s={1.3 * In(A('c3e'), 3) * bump(pc) * bump(pc3)}><Popcorn /></G2>
-            <G2 x={1360} y={690} s={In(A('c3e'), 4)} o={0.4 + 0.6 * lit(pc)}><Text size={48} color={C.gold} >{f >= pc3 ? 'popcorn = services' : 'popcorn: the real money'}</Text></G2>
+            <G2 x={1360} y={690} s={In(A('c3e'), 4)} o={0.6 + 0.4 * lit(pc)}><Text size={48} color={C.gold} >{f >= pc3 ? 'popcorn = services' : 'popcorn: the real money'}</Text></G2>
             <Dave f={f} x={960} y={900} s={0.85} keys={[{at: 0, pose: 'hold', expr: 'happy'}, {at: pc3, pose: 'thumbs', expr: 'grin'}]} />
           </Svg>
         </AbsoluteFill>
@@ -575,19 +575,19 @@ export const Ep26: React.FC = () => {
             </G2>
             <Dave f={f} x={420} y={822} s={1} keys={[{at: 0, pose: 'hold', expr: 'suspicious', look: 0.8}]} handItem={<MoneyStack n={3} s={0.3} />} />
             <G2 x={960} y={130} s={In(A('c4d'), 2)}><Text size={56}>the raccoon's fancy cousin</Text></G2>
-            <G2 x={1150} y={280} s={In(A('c4d'), 3) * bump(gt)} o={0.4 + 0.6 * lit(gt)}><Text size={42} color={C.red}>the only gate in town</Text></G2>
+            <G2 x={1150} y={280} s={In(A('c4d'), 3) * bump(gt)} o={0.6 + 0.4 * lit(gt)}><Text size={42} color={C.red}>the only gate in town</Text></G2>
           </Svg>
         </AbsoluteFill>
       ) : (
         <AbsoluteFill>
           <Board />
           <Svg>
-            <G2 x={520} y={200} s={In(A('c4e')) * bump(cr, 0.08)} o={0.4 + 0.6 * lit(fn)}>
+            <G2 x={520} y={200} s={In(A('c4e')) * bump(cr, 0.08)} o={0.6 + 0.4 * lit(fn)}>
               <Box w={760} h={170} />
               <Text y={-36} size={36}>US court, 2025 (Epic v. Apple)</Text>
               <Text y={28} size={32} color={C.green}>apps may link to cheaper web payments</Text>
             </G2>
-            <G2 x={1400} y={200} s={In(A('c4e'), 2) * bump(eu, 0.08)} o={0.4 + 0.6 * lit(eu)}>
+            <G2 x={1400} y={200} s={In(A('c4e'), 2) * bump(eu, 0.08)} o={0.6 + 0.4 * lit(eu)}>
               <Box w={760} h={170} />
               <Text y={-36} size={36}>Europe: new laws</Text>
               <Text y={28} size={32} color={C.green}>Digital Markets Act → more changes</Text>
@@ -600,7 +600,7 @@ export const Ep26: React.FC = () => {
               <G2 key={l as string} x={1620} y={440 + i * 110} s={In(A('c4e'), 4 + i) * bump(at as number, 0.1)}><Pill text={l as string} w={400} lit={lit(at as number)} color={C.red} size={36} /></G2>
             ))}
             <G2 x={1620} y={660} s={In(A('c4e'), 6)}><Gavel s={0.6} hit={ease(f, cr2, cr2 + 4) - ease(f, cr2 + 6, cr2 + 14)} /></G2>
-            <SourceTag f={f} at={cr} text="Epic v. Apple, N.D. Cal., order of Apr 30, 2025" until={A('c4f')} />
+            <SourceTag f={f} at={cr} text="Epic v. Apple, N.D. Cal., order of Apr 30, 2025" until={cr + 90} />
           </Svg>
         </AbsoluteFill>
       ),
@@ -667,9 +667,9 @@ export const Ep26: React.FC = () => {
               </Handset>
             </G2>
             <G2 x={1520} y={150} s={In(A('c5a'), 2) * bump(nt, 0.1)}><Text size={48}>money for (almost) nothing</Text></G2>
-            <G2 x={1520} y={470} s={0.5 * In(A('c5a'), 4) * bump(pys, 0.12)} o={0.4 + 0.6 * lit(pys)}><Cheque amount={f >= pys ? '$$$$$$' : '$ ?'} memo="default search spot" /></G2>
-            <G2 x={1520} y={680} s={In(A('c5a'), 5)} o={0.4 + 0.6 * lit(ac)}><Text size={40} color={C.red}>not an accident</Text></G2>
-            <G2 x={1190} y={470} s={In(A('c5a'), 5)} o={0.4 + 0.6 * lit(pys)}><path d="M 60 0 L -60 0 M -30 -26 L -60 0 L -30 26" fill="none" stroke={C.green} strokeWidth={12} strokeLinecap="round" strokeLinejoin="round" /></G2>
+            <G2 x={1520} y={470} s={0.5 * In(A('c5a'), 4) * bump(pys, 0.12)} o={0.6 + 0.4 * lit(pys)}><Cheque amount={f >= pys ? '$$$$$$' : '$ ?'} memo="default search spot" /></G2>
+            <G2 x={1520} y={680} s={In(A('c5a'), 5)} o={0.6 + 0.4 * lit(ac)}><Text size={40} color={C.red}>not an accident</Text></G2>
+            <G2 x={1190} y={470} s={In(A('c5a'), 5)} o={0.6 + 0.4 * lit(pys)}><path d="M 60 0 L -60 0 M -30 -26 L -60 0 L -30 26" fill="none" stroke={C.green} strokeWidth={12} strokeLinecap="round" strokeLinejoin="round" /></G2>
           </Svg>
         </AbsoluteFill>
       ) : f < A('c5d') ? (
@@ -699,19 +699,19 @@ export const Ep26: React.FC = () => {
         <AbsoluteFill>
           <Board />
           <Svg>
-            <G2 x={520} y={380} s={In(A('c5e')) * bump(rl, 0.08)} o={0.4 + 0.6 * lit(rl)}>
+            <G2 x={520} y={380} s={In(A('c5e')) * bump(rl, 0.08)} o={0.6 + 0.4 * lit(rl)}>
               <Box w={780} h={300} />
               <Text y={-100} size={36} color="#5B6470">AUG 2024</Text>
               <Text y={-30} size={40}>judge: Google illegally</Text>
               <Text y={24} size={40}>kept a search monopoly</Text>
               {f >= mn && <Stamp y={100} s={pop(f, mn, 9, 260) * 0.8} text="MONOPOLY" size={50} color={C.red} r={-4} />}
             </G2>
-            <G2 x={520} y={700} s={In(A('c5e'), 2)} o={0.4 + 0.6 * lit(bn)}><Bubble text={f >= dc ? 'payments banned? no!' : 'payments banned?'} size={40} tail="down" /></G2>
-            <G2 x={1400} y={380} s={In(A('c5e'), 3) * bump(dc, 0.08)} o={0.4 + 0.6 * lit(dc)}>
+            <G2 x={520} y={700} s={In(A('c5e'), 2)} o={0.6 + 0.4 * lit(bn)}><Bubble text={f >= dc ? 'payments banned? no!' : 'payments banned?'} size={40} tail="down" /></G2>
+            <G2 x={1400} y={380} s={In(A('c5e'), 3) * bump(dc, 0.08)} o={0.6 + 0.4 * lit(dc)}>
               <Box w={780} h={300} />
               <Text y={-100} size={36} color="#5B6470">SEPT 2025 · THE FIX</Text>
-              <G2 y={-20} o={0.4 + 0.6 * lit(df)}><Text size={38} color={C.green}>✓ can keep paying for default</Text></G2>
-              <G2 y={60} o={0.4 + 0.6 * lit(exl)}><Text size={38} color={C.red}>✗ no exclusive deals</Text></G2>
+              <G2 y={-20} o={0.6 + 0.4 * lit(df)}><Text size={38} color={C.green}>✓ can keep paying for default</Text></G2>
+              <G2 y={60} o={0.6 + 0.4 * lit(exl)}><Text size={38} color={C.red}>✗ no exclusive deals</Text></G2>
             </G2>
             <G2 x={960} y={180} s={In(A('c5e'), 1)}><Gavel s={0.6} hit={Math.max(ease(f, rl, rl + 4) - ease(f, rl + 6, rl + 14), ease(f, dc, dc + 4) - ease(f, dc + 6, dc + 14))} /></G2>
             {[0, 1, 2].map((i) => (
@@ -719,7 +719,7 @@ export const Ep26: React.FC = () => {
                 <Cheque amount="$$$" memo="2026" />
               </G2>
             ))}
-            <G2 x={1400} y={620} s={In(A('c5e'), 4)} o={0.4 + 0.6 * lit(cmg)}><Text size={36} color={C.green}>the checks keep coming</Text></G2>
+            <G2 x={1400} y={620} s={In(A('c5e'), 4)} o={0.6 + 0.4 * lit(cmg)}><Text size={36} color={C.green}>the checks keep coming</Text></G2>
             <SourceTag f={f} at={dc} text="U.S. v. Google remedies decision, Sept 2, 2025" />
           </Svg>
         </AbsoluteFill>
@@ -771,7 +771,7 @@ export const Ep26: React.FC = () => {
             <G2 x={920} y={520} s={1.1 * In(A('c6a')) * bump(ms, 0.06)}>
               <Handset body="#E07A9A">
                 {Array.from({length: 12}).map((_, i) => <rect key={i} x={-96 + (i % 3) * 66} y={-200 + Math.floor(i / 3) * 66} width={58} height={58} rx={8} fill={[C.sky, '#F4D6B8', C.greenLight, C.yellow][i % 4]} stroke={C.ink} strokeWidth={2} />)}
-                <G2 y={130} o={0.4 + 0.6 * lit(ms)}>
+                <G2 y={130} o={0.6 + 0.4 * lit(ms)}>
                   <rect x={-104} y={-60} width={208} height={120} rx={16} fill="#fff" stroke={f >= fl ? C.red : C.ink} strokeWidth={5} />
                   <Text y={-22} size={24} color={C.red}>STORAGE</Text>
                   <Text y={14} size={24} color={C.red}>ALMOST FULL</Text>
@@ -782,7 +782,7 @@ export const Ep26: React.FC = () => {
             <G2 x={1540} y={360} s={In(A('c6a'), 3) * bump(nn, 0.1)}>
               <NumCard top="iCLOUD+ · 50GB" val={f >= nn ? '$0.99/mo' : '$ ?'} w={520} size={80} color={f >= nn ? C.green : C.ink} />
             </G2>
-            <G2 x={1540} y={620} s={In(A('c6a'), 4) * bump(tn)} o={0.4 + 0.6 * lit(tn)}><Bubble text="tiny!" size={56} tail="left" /></G2>
+            <G2 x={1540} y={620} s={In(A('c6a'), 4) * bump(tn)} o={0.6 + 0.4 * lit(tn)}><Bubble text="tiny!" size={56} tail="left" /></G2>
             <SourceTag f={f} at={nn} text="apple.com US prices, Sept 2026" />
           </Svg>
         </AbsoluteFill>
@@ -804,10 +804,10 @@ export const Ep26: React.FC = () => {
             <G2 x={1580} y={300} s={In(A('c6c'), 3) * bump(tf, 0.1)}>
               <NumCard top="PER MONTH" val={f >= tf ? '≈ $35' : '$ ?'} w={440} color={f >= tf ? C.red : C.ink} />
             </G2>
-            <G2 x={1580} y={560} s={In(A('c6c'), 4) * bump(fy, 0.1)} o={0.4 + 0.6 * lit(fy)}>
+            <G2 x={1580} y={560} s={In(A('c6c'), 4) * bump(fy, 0.1)} o={0.6 + 0.4 * lit(fy)}>
               <NumCard top="PER YEAR" val={f >= fy ? '≈ $420' : '$ ?'} w={440} color={C.red} />
             </G2>
-            <G2 x={1580} y={780} s={In(A('c6c'), 5) * bump(hf)} o={0.4 + 0.6 * lit(hf)}><Text size={38}>≈ half a new iPhone, yearly</Text></G2>
+            <G2 x={1580} y={780} s={In(A('c6c'), 5) * bump(hf)} o={0.6 + 0.4 * lit(hf)}><Text size={38}>≈ half a new iPhone, yearly</Text></G2>
             <Dave f={f} x={180} y={900} s={0.8} keys={[{at: 0, pose: 'typing', expr: 'happy', look: 0.8}, {at: tf, pose: 'shock', expr: 'shock', look: 0.8}]} />
             <SourceTag f={f} at={tf} text="$0.99 + $11.99 + $14.99 + $6.99 = $34.96/mo × 12 ≈ $420" />
           </Svg>
@@ -818,9 +818,9 @@ export const Ep26: React.FC = () => {
           <Svg>
             <G2 x={500} y={420} s={In(A('c6f')) * bump(bd, 0.08)}><Bundle title="APPLE ONE" price="from $21.95/mo" /></G2>
             <G2 x={500} y={730} s={0.55 * In(A('c6f'), 2) * bump(cb)}><Popcorn /></G2>
-            <G2 x={500} y={130} s={In(A('c6f'), 1)} o={0.4 + 0.6 * lit(cb)}><Text size={44}>the popcorn combo</Text></G2>
+            <G2 x={500} y={130} s={In(A('c6f'), 1)} o={0.6 + 0.4 * lit(cb)}><Text size={44}>the popcorn combo</Text></G2>
             <G2 x={1400} y={620} s={1.2 * In(A('c6f'), 3) * bump(bk2, 0.08)}><Bucket f={f} level={ease(f, dp, bk + 20, 0.15, 0.85)} drip label="Apple's bucket" /></G2>
-            <G2 x={1400} y={130} s={In(A('c6f'), 4)} o={0.4 + 0.6 * lit(dp)}><Text size={48}>small drips → big bucket</Text></G2>
+            <G2 x={1400} y={130} s={In(A('c6f'), 4)} o={0.6 + 0.4 * lit(dp)}><Text size={48}>small drips → big bucket</Text></G2>
             <Dave f={f} x={950} y={900} s={0.85} keys={[{at: 0, pose: 'think', expr: 'think', look: 0.8}, {at: dp, pose: 'facepalm', expr: 'sad', look: 0.8}]} />
             <SourceTag f={f} at={bd} text="apple.com/apple-one: Individual $21.95/mo (US)" until={A('c6g')} />
           </Svg>
@@ -883,7 +883,7 @@ export const Ep26: React.FC = () => {
             <G2 x={900} y={930} s={1.05 * In(A('c7a'))}><Garden f={f} wall={1.5} gate={1 - ease(f, gd, gd + 14)} /></G2>
             <Dave f={f} x={900} y={760} s={0.8} keys={[{at: 0, pose: 'think', expr: 'think', look: 0.8}, {at: gd, pose: 'shrug', expr: 'worried'}]} />
             <G2 x={1680} y={430} s={0.5 * In(A('c7a'), 3) * bump(sw, 0.1)}><Handset body="#2F8F5B"><Text size={40} color="#5B6470">other</Text></Handset>{f >= gd && <XMark s={0.4 * pop(f, gd)} />}</G2>
-            <G2 x={1680} y={140} s={In(A('c7a'), 3)} o={0.4 + 0.6 * lit(sw)}><Text size={44}>just switch?</Text></G2>
+            <G2 x={1680} y={140} s={In(A('c7a'), 3)} o={0.6 + 0.4 * lit(sw)}><Text size={44}>just switch?</Text></G2>
             <G2 x={700} y={130} s={In(A('c7a'), 2) * bump(gd, 0.08)}><Text size={52}>Dave is INSIDE the garden</Text></G2>
           </Svg>
         </AbsoluteFill>
@@ -904,9 +904,9 @@ export const Ep26: React.FC = () => {
             <Dave f={f} x={260} y={880} s={1} keys={[{at: 0, pose: 'hold', expr: 'happy', look: 0.8}, {at: nt, pose: 'shock', expr: 'suspicious', look: 0.8}]} />
             <Bob f={f} x={500} y={880} s={0.95} keys={[{at: 0, pose: 'hold', expr: 'happy', look: 0.8}, {at: nt, pose: 'shock', expr: 'shock', look: 0.8}]} />
             <Kevin f={f} x={1600} y={880} s={1.05 * bump(an, 0.08)} keys={[{at: 0, pose: 'hold', expr: 'happy', look: -0.8}, {at: nt, pose: 'shrug', expr: 'sad', look: -0.8}]} />
-            <G2 x={1600} y={380} s={In(A('c7b'), 3)} o={0.4 + 0.6 * lit(an)}><Text size={40}>cousin Kevin: Android</Text></G2>
+            <G2 x={1600} y={380} s={In(A('c7b'), 3)} o={0.6 + 0.4 * lit(an)}><Text size={40}>cousin Kevin: Android</Text></G2>
             <G2 x={380} y={380} s={In(A('c7b'), 2) * bump(bl, 0.1)}><Text size={40} color={BLUE_B}>blue bubbles</Text></G2>
-            <G2 x={1600} y={200} s={In(A('c7b'), 4) * bump(gr)} o={0.4 + 0.6 * lit(gr)}><Text size={44} color={GREEN_B}>→ green!</Text></G2>
+            <G2 x={1600} y={200} s={In(A('c7b'), 4) * bump(gr)} o={0.6 + 0.4 * lit(gr)}><Text size={44} color={GREEN_B}>→ green!</Text></G2>
           </Svg>
         </AbsoluteFill>
       ) : f < A('c7d') ? (
@@ -914,10 +914,10 @@ export const Ep26: React.FC = () => {
           <Board />
           <Svg>
             <Dave f={f} x={960} y={880} s={1.15} keys={[{at: 0, pose: 'present', expr: 'happy'}]} />
-            <G2 x={420} y={300} s={In(A('c7c')) * bump(ap, 0.12)} o={0.35 + 0.65 * lit(ap)}><Earbuds /><Text y={150} size={38}>AirPods</Text></G2>
-            <G2 x={440} y={700} s={0.9 * In(A('c7c'), 2) * bump(lp, 0.1)} o={0.35 + 0.65 * lit(lp)}><Laptop /><Text y={100} size={38}>laptop</Text></G2>
-            <G2 x={1500} y={320} s={0.9 * In(A('c7c'), 3) * bump(wt, 0.12)} o={0.35 + 0.65 * lit(wt)}><Watch face="9:41" /><Text y={230} size={36}>Watch: iPhone only</Text></G2>
-            <G2 x={1500} y={700} s={In(A('c7c'), 4) * bump(ic, 0.1)} o={0.35 + 0.65 * lit(ic)}><CloudBox label="iCloud" /><Text y={120} size={32}>photos · passwords · apps</Text></G2>
+            <G2 x={420} y={300} s={In(A('c7c')) * bump(ap, 0.12)} o={0.55 + 0.45 * lit(ap)}><Earbuds /><Text y={150} size={38}>AirPods</Text></G2>
+            <G2 x={440} y={700} s={0.9 * In(A('c7c'), 2) * bump(lp, 0.1)} o={0.55 + 0.45 * lit(lp)}><Laptop /><Text y={100} size={38}>laptop</Text></G2>
+            <G2 x={1500} y={320} s={0.9 * In(A('c7c'), 3) * bump(wt, 0.12)} o={0.55 + 0.45 * lit(wt)}><Watch face="9:41" /><Text y={230} size={36}>Watch: iPhone only</Text></G2>
+            <G2 x={1500} y={700} s={In(A('c7c'), 4) * bump(ic, 0.1)} o={0.55 + 0.45 * lit(ic)}><CloudBox label="iCloud" /><Text y={120} size={32}>photos · passwords · apps</Text></G2>
             <G2 x={960} y={120} s={In(A('c7c'), 1)}><Text size={50}>everything works together</Text></G2>
             {f >= ap && <path d={`M 560 330 Q 760 ${250 + Math.sin(f / 6) * 20} 880 430`} fill="none" stroke={C.blue} strokeWidth={8} strokeDasharray="16 14" strokeLinecap="round" />}
           </Svg>
@@ -947,7 +947,7 @@ export const Ep26: React.FC = () => {
         <AbsoluteFill>
           <Board />
           <Svg>
-            <G2 x={560} y={480} s={1.6 * In(A('c7e')) * bump(wd, 0.06)}><Globe f={f} /></G2>
+            <G2 x={620} y={500} s={1.2 * In(A('c7e')) * bump(wd, 0.06)}><Globe f={f} /></G2>
             <G2 x={1360} y={360} s={In(A('c7e'), 2) * bump(tw, 0.1)}>
               <NumCard top="ACTIVE APPLE DEVICES" val={f >= tw ? '2.5 BILLION+' : '?'} w={800} color={f >= tw ? C.green : C.ink} />
             </G2>
@@ -967,7 +967,7 @@ export const Ep26: React.FC = () => {
             {['switching is hard', 'DOJ lawsuit (2024)', 'Apple disagrees', 'case still going'].map((l, i) => (
               <G2 key={l} x={1580} y={260 + i * 110} s={In(A('c7f'), 2 + i) * bump(con[i], 0.08)}><Pill text={l} w={500} lit={lit(con[i])} color={C.red} size={36} /></G2>
             ))}
-            <SourceTag f={f} at={con[1]} text="U.S. v. Apple, D.N.J., filed Mar 21, 2024" />
+            <SourceTag f={f} at={con[1]} text="U.S. v. Apple, D.N.J., filed Mar 21, 2024" until={con[1] + 90} />
           </Svg>
         </AbsoluteFill>
       ) : (
@@ -1063,8 +1063,8 @@ export const Ep26: React.FC = () => {
           <Svg>
             <G2 x={960} y={140} s={In(A('c9e')) * bump(am, 0.08)}><Text size={58}>Next: how Amazon really makes money</Text></G2>
             <G2 x={1200} y={560} s={In(A('c9e'), 2)} r={f >= bx ? Math.sin((f - bx) / 2) * 6 * (1 - ease(f, bx, bx + 20)) : 0}><CardBox /></G2>
-            <G2 x={1200} y={820} s={In(A('c9e'), 3) * bump(bx)} o={0.4 + 0.6 * lit(hn)}><Text size={48} color={C.red}>hint: it's NOT the boxes</Text></G2>
-            <Dave f={f} x={450} y={880} s={1.15} keys={[{at: 0, pose: 'hold', expr: 'suspicious', look: 0.8}]} handItem={<Handset s={0.25} />} />
+            <G2 x={1200} y={820} s={In(A('c9e'), 3) * bump(bx)} o={0.6 + 0.4 * lit(hn)}><Text size={48} color={C.red}>hint: it's NOT the boxes</Text></G2>
+            <Dave f={f} x={450} y={880} s={1.15} keys={[{at: 0, pose: 'hold', expr: 'suspicious', look: 0.8}]} />
           </Svg>
         </AbsoluteFill>
       ) : (
