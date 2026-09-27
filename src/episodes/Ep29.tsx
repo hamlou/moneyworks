@@ -5,7 +5,7 @@ import {useT} from '../timing';
 import {ease, lin, pop, shake} from '../anim';
 import {Stick, StickProps} from '../Stick';
 import {Board, ChapterCard, Captions, CHAPTER_FRAMES, Cue, Progress, SceneItem, Scenes, Sfx, Street, Svg, Vignette, SubReminder, subCues, Beach} from '../fx';
-import {Arrow, Bank, Bubble, Car, Calendar, Coin, Duck, MoneyStack, SourceTag, Stamp, Text, XMark} from '../props';
+import {Arrow, Bank, Bubble, Car, Calendar, Coin, Duck, MoneyStack, SourceTag, Stamp, Text} from '../props';
 import {Bar, Envelope, Frame, Icon, Magnifier, Phone, Row, Shield, SubButton, Bell, Sun} from '../props2';
 import {House, LineChart} from '../props4';
 import {Contract} from '../props5';
@@ -572,13 +572,12 @@ export const Ep29: React.FC = () => {
         <AbsoluteFill>
           <Board />
           <Svg>
-            <G2 x={960} y={110} s={P(A('c5f'))}><Text size={54} color={f >= np ? C.green : GRAY}>{f >= np ? 'both FDIC insured = same protection' : 'myth: big bank = safer?'}</Text></G2>
+            <G2 x={960} y={110} s={P(A('c5f')) * bump(np, 0.15)}><Text size={54} color={f >= np ? C.green : GRAY}>{f >= np ? 'both FDIC insured = same protection' : 'myth: big bank = safer?'}</Text></G2>
             <Bank x={520} y={880} s={0.55 * P(A('c5f'))} label="BIG BANK" />
             <G2 x={1400} y={600} s={1.1 * P(A('c5f'))}><Phone title="ONLINE BANK" value="$5,000" /></G2>
             <Shield x={520} y={330} s={0.75 * P(A('c5f')) * bump(ins, 0.15)} o={lt(ins, 0.4)} />
             <Shield x={1720} y={380} s={0.75 * P(A('c5f')) * bump(ins, 0.15)} o={lt(ins, 0.4)} />
             <G2 x={960} y={560} s={P(A('c5f')) * bump(sm, 0.3)}><Text size={160} color={f >= sm ? C.green : GRAY}>=</Text></G2>
-            {f >= np && <XMark x={960} y={560} s={0.35 * pop(f, np)} o={1 - lin(f, np + 20, np + 30)} />}
             <SourceTag f={f} at={ins} text="FDIC: $250,000 per depositor, per insured bank, per ownership category" />
           </Svg>
         </AbsoluteFill>

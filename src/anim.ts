@@ -2,11 +2,12 @@ import {Easing, interpolate, spring} from 'remotion';
 
 const CL = {extrapolateLeft: 'clamp', extrapolateRight: 'clamp'} as const;
 
+// Guard: if a timing range is empty or reversed (words spoken faster than planned), jump instead of crashing the render.
 export const ease = (f: number, a: number, b: number, from = 0, to = 1) =>
-  interpolate(f, [a, b], [from, to], {...CL, easing: Easing.inOut(Easing.cubic)});
+  b <= a ? (f < a ? from : to) : interpolate(f, [a, b], [from, to], {...CL, easing: Easing.inOut(Easing.cubic)});
 
 export const lin = (f: number, a: number, b: number, from = 0, to = 1) =>
-  interpolate(f, [a, b], [from, to], CL);
+  b <= a ? (f < a ? from : to) : interpolate(f, [a, b], [from, to], CL);
 
 export const pop = (f: number, at: number, damping = 11, stiffness = 190) =>
   f < at ? 0 : spring({frame: f - at, fps: 30, config: {damping, stiffness, mass: 0.6}});
