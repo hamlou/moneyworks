@@ -1,0 +1,118 @@
+{
+  "id": "ep27",
+  "title": "How Amazon Really Makes Money (It's Not the Store)",
+  "sources": [
+    "Amazon.com, Inc. Q4 & full-year 2025 earnings release (Feb 5, 2026, SEC Exhibit 99.1) and Form 10-K FY2025: net sales $716.9B; operating income $80.0B; net income $77.7B",
+    "Amazon FY2025 segments: North America sales $426.3B / operating income $29.6B; International $161.9B / $4.7B; AWS $128.7B / $45.6B. Stores (NA+Intl) = $34.3B on $588.2B ≈ 5.8%; AWS = 45.6 ÷ 80.0 ≈ 57% of operating income; 128.7 ÷ 716.9 ≈ 18% of sales",
+    "Amazon FY2025 net sales by product/service (sum of quarterly figures, Q4 2025 release): online stores $269.3B; third-party seller services $172.2B; advertising services $68.6B (2024: $56.2B, +22%); subscription services $49.6B",
+    "Amazon balance sheet Dec 31, 2025: accounts payable $121.9B; inventories $38.3B",
+    "Amazon Q4 2025 release: ~$200B capital expenditures expected in 2026 (AI, chips, robotics, satellites)",
+    "Amazon quarterly disclosures 2024: third-party sellers ≈ 60–62% of paid units sold in Amazon's stores",
+    "Marketplace Pulse, 'Amazon Takes a 50% Cut of Sellers' Revenue' (estimate: referral ~15% + FBA 20–35% + ads; average take crossed 50% in 2022). Estimate, varies by seller",
+    "Amazon US seller fees: referral fee 15% for most categories (electronics accessories); FBA fulfillment fee ~ $3 for a small standard item. $10 charger split = illustrative example",
+    "Amazon Prime US price: $139/year or $14.99/month (since Feb 2022)",
+    "CIRP (Consumer Intelligence Research Partners), 2024: Prime members spend ≈ $1,170/yr on Amazon vs ≈ $570 for non-members (estimate)",
+    "Amazon history: founded July 1994 by Jeff Bezos in Bellevue, WA as an online bookstore; AWS launched 2006 (S3, EC2); 'flywheel' virtuous-cycle sketch (Amazon, about.amazon)"
+  ],
+  "beats": [
+    {"id": "o1", "text": "Dave just ordered a ten dollar phone charger. Free shipping. It arrives tomorrow.", "pause": 0.3},
+    {"id": "o2", "text": "A warehouse. A truck. A driver. A box. All for ten dollars? Dave is sure Amazon is losing money.", "pause": 0.3},
+    {"id": "o3", "text": "But last year, Amazon made about eighty billion dollars in operating profit. Eighty billion.", "pause": 0.3},
+    {"id": "o4", "text": "And here's the twist. Most of that profit didn't come from the store.", "pause": 0.3},
+    {"id": "o5", "text": "Today: the hidden fees, the ad machine, the secret cloud, and the trick that lets Amazon shop with other people's money.", "pause": 0.6},
+
+    {"id": "c1a", "chapter": "Dave's Ten Dollar Charger", "text": "Let's follow Dave's charger.", "pause": 0.4},
+    {"id": "c1b", "text": "First surprise. Amazon didn't make it. Amazon doesn't even own it. It belongs to a small seller, who pays Amazon to sell it.", "pause": 0.5},
+    {"id": "c1c", "text": "In fact, about six in every ten items sold on Amazon come from outside sellers like this one, not from Amazon itself.", "pause": 0.5},
+    {"id": "c1d", "text": "So where do Dave's ten dollars go? Let's split them.", "pause": 0.5},
+    {"id": "c1e", "text": "About a dollar fifty is Amazon's sales fee. Around three dollars pays Amazon to store, pack and ship it. And the seller paid Amazon for an ad, so Dave would find it.", "pause": 0.5},
+    {"id": "c1f", "text": "In an example like this, about half of Dave's money goes to Amazon. And the risk of a flop? The seller keeps that.", "pause": 0.5},
+    {"id": "c1g", "text": "So Amazon isn't just a store. It's the landlord of the biggest mall on Earth.", "pause": 0.9},
+
+    {"id": "c2a", "chapter": "The Store Barely Makes Money", "text": "Now, the part most people get wrong.", "pause": 0.4},
+    {"id": "c2b", "text": "Most people think Amazon gets rich by selling stuff. Nope. Selling stuff is the part with the thinnest margins.", "pause": 0.5},
+    {"id": "c2c", "text": "In twenty twenty five, Amazon sold about two hundred and sixty nine billion dollars of its own products online. Huge. But trucks, warehouses and returns eat most of it.", "pause": 0.5},
+    {"id": "c2d", "text": "Amazon's two store divisions together made about thirty four billion dollars of profit, on five hundred and eighty eight billion in sales. That's less than six cents per dollar.", "pause": 0.5},
+    {"id": "c2e", "text": "And those six cents already include the seller fees and the ads. Selling stuff alone makes even less.", "pause": 0.5},
+    {"id": "c2f", "text": "It's like a lemonade stand that sells lemonade at cost, and makes its money renting out the table.", "pause": 0.9},
+
+    {"id": "c3a", "chapter": "The Mall Landlord", "text": "So who pays Amazon? The sellers.", "pause": 0.4},
+    {"id": "c3b", "text": "In twenty twenty five, third party seller services brought in about one hundred and seventy two billion dollars. Fees for selling, storing, packing and shipping.", "pause": 0.5},
+    {"id": "c3c", "text": "The research firm Marketplace Pulse estimates that fees and ads can add up to more than half of a typical seller's revenue. It's an estimate, and it varies a lot.", "pause": 0.5},
+    {"id": "c3d", "text": "Remember the raccoon from our credit card video? He found a new toll booth. Right at the mall entrance.", "pause": 0.5},
+    {"id": "c3e", "text": "Why do sellers pay? Because that's where the shoppers are. Hundreds of millions of them. Leaving Amazon can mean losing most of your sales.", "pause": 0.5},
+    {"id": "c3f", "text": "Critics say those fees push prices up for everyone. Amazon says its services help small sellers reach the whole world. Both sides have a point.", "pause": 0.9},
+
+    {"id": "c4a", "chapter": "The Ad Machine", "text": "Next, search for a phone charger on Amazon. See the first results? Look closely. There's a tiny word: sponsored.", "pause": 0.4},
+    {"id": "c4b", "text": "Those are ads. Sellers pay Amazon when you click.", "pause": 0.5},
+    {"id": "c4c", "text": "In twenty twenty five, Amazon's advertising business brought in about sixty nine billion dollars. That's up more than twenty percent in a single year.", "pause": 0.5},
+    {"id": "c4d", "text": "And ads are a dream for Amazon. No truck. No box. No warehouse. Just a line of code that says: put this one first.", "pause": 0.5},
+    {"id": "c4e", "text": "Amazon also knows what people actually buy, not just what they search for. Advertisers love that.", "pause": 0.5},
+    {"id": "c4f", "text": "So when Dave shops, he's the customer. But he's also the audience.", "pause": 0.9},
+
+    {"id": "c5a", "chapter": "The Prime Club", "text": "Now, Dave's free shipping. It's not really free. Dave pays for Prime.", "pause": 0.4},
+    {"id": "c5b", "text": "In the US, Prime costs one hundred and thirty nine dollars a year, or fourteen ninety nine a month.", "pause": 0.5},
+    {"id": "c5c", "text": "In twenty twenty five, Amazon's subscriptions, mostly Prime, brought in about fifty billion dollars.", "pause": 0.5},
+    {"id": "c5d", "text": "But the real trick is psychology. Once Dave has paid, he wants his money's worth. So he orders more. And he stops checking other stores.", "pause": 0.5},
+    {"id": "c5e", "text": "The research firm CIRP estimates Prime members spend about eleven hundred and seventy dollars a year on Amazon. Non members, about five hundred and seventy. Roughly double.", "pause": 0.5},
+    {"id": "c5f", "text": "Remember the Costco card from our hot dog video? Same idea. The fee gets you in the door. Then the habit does the rest.", "pause": 0.9},
+
+    {"id": "c6a", "chapter": "The Secret Cloud", "text": "And now, the biggest secret. Most of Amazon's profit comes from something you have probably never seen.", "pause": 0.4},
+    {"id": "c6b", "text": "It's called A W S. Amazon Web Services. Amazon rents out giant computers, over the internet, to other companies.", "pause": 0.5},
+    {"id": "c6c", "text": "Streaming apps, banks, games, A I companies. Instead of building their own computer rooms, they rent Amazon's. Like plugging into a socket instead of building a power plant.", "pause": 0.5},
+    {"id": "c6d", "text": "In twenty twenty five, A W S made about one hundred and twenty nine billion dollars in sales. Only about eighteen percent of Amazon's total.", "pause": 0.5},
+    {"id": "c6e", "text": "But it made forty five point six billion dollars of operating profit. That's about fifty seven percent of all of Amazon's profit.", "pause": 0.5},
+    {"id": "c6f", "text": "So the store keeps the lights on. But the cloud pays for the party.", "pause": 0.5},
+    {"id": "c6g", "text": "And this year, Amazon plans to spend about two hundred billion dollars, mostly on A I data centers. A giant bet. Nobody knows yet if it pays off.", "pause": 0.9},
+
+    {"id": "c7a", "chapter": "Bookstore to Flywheel", "text": "So how did a website end up like this? Let's go back.", "pause": 0.4},
+    {"id": "c7b", "text": "In nineteen ninety four, Jeff Bezos quit his job and started an online bookstore, from a garage near Seattle. Books were easy to ship, and there were millions of them.", "pause": 0.5},
+    {"id": "c7c", "text": "Early on, Bezos sketched his plan, famously on a napkin. It was just a circle.", "pause": 0.5},
+    {"id": "c7d", "text": "Lower prices bring more customers. More customers attract more sellers. More sellers mean more choice. And more choice brings even more customers.", "pause": 0.5},
+    {"id": "c7e", "text": "It's called the flywheel. Heavy to push at first. Then it spins almost by itself.", "pause": 0.5},
+    {"id": "c7f", "text": "And A W S? Amazon built huge computer systems for its own store. In two thousand six, it started renting them to everyone else. The side project became the profit machine.", "pause": 0.9},
+
+    {"id": "c8a", "chapter": "Other People's Money", "text": "One more trick. Remember the float from our insurance video? Money you get to hold before you pay it out?", "pause": 0.4},
+    {"id": "c8b", "text": "Amazon has one too. When Dave pays for his charger, Amazon gets the cash right away.", "pause": 0.5},
+    {"id": "c8c", "text": "But it often pays its suppliers and sellers weeks later. In between, Amazon gets to use that money.", "pause": 0.5},
+    {"id": "c8d", "text": "At the end of twenty twenty five, Amazon owed about one hundred and twenty two billion dollars in unpaid bills. All its inventory was worth only about thirty eight billion.", "pause": 0.5},
+    {"id": "c8e", "text": "It's like a lemonade stand that gets paid today, and pays for the lemons next month. Customers help fund the growth, for free.", "pause": 0.9},
+
+    {"id": "c9a", "chapter": "What Dave Does Now", "text": "So what does Dave do with all this? Education, not advice.", "pause": 0.4},
+    {"id": "c9b", "text": "One. Look past the sponsored results. The first result is often the one that paid the most, not the best one.", "pause": 0.5},
+    {"id": "c9c", "text": "Two. Compare prices. Check other stores, or the seller's own website. Price history tools can help too.", "pause": 0.5},
+    {"id": "c9d", "text": "Three. Do the Prime math. Add up what shipping would cost you without it. If you only order a few times a year, it may not be worth it.", "pause": 0.5},
+    {"id": "c9e", "text": "Four. Watch the habit. One day shipping makes small orders feel free. They're not.", "pause": 0.5},
+    {"id": "c9f", "text": "Dave's charger? Still a good deal. But now he knows who really paid for the truck.", "pause": 0.9},
+
+    {"id": "d1a", "chapter": "Now You Know", "text": "So let's recap.", "pause": 0.4},
+    {"id": "d1b", "text": "One. Amazon's store runs on thin margins. Seller fees and ads are what make it profitable.", "pause": 0.5},
+    {"id": "d1c", "text": "Two. Prime makes people shop more, and Amazon collects cash before it pays its bills.", "pause": 0.5},
+    {"id": "d1d", "text": "Three. More than half of Amazon's profit comes from the cloud. A W S.", "pause": 0.9},
+    {"id": "d2a", "text": "Next time: streaming, software, your phone, even the heated seats in your car. Why is everything a subscription now?", "pause": 0.4},
+    {"id": "d2b", "text": "Subscribe so you don't miss it. It's free. No membership fee. We checked.", "pause": 1.4}
+  ],
+  "youtube": {
+    "title": "How Amazon Really Makes Money (It's Not the Store)",
+    "alt_titles": [
+      "Amazon Makes 57% of Its Profit From Something You Never See",
+      "How Amazon Makes Money on a $10 Charger With Free Shipping"
+    ],
+    "hook": "How does Amazon make money when a $10 charger ships free overnight? Dave follows his order and finds out the store barely makes money. We break down Amazon's 2025 numbers: thin online store margins, $172 billion in third-party seller fees, a $69 billion advertising business built on sponsored results, Prime membership psychology, and AWS, the cloud business that made about 57% of Amazon's operating profit. Plus the Bezos flywheel, the 1994 garage bookstore, the 2006 launch of AWS, and how Amazon uses suppliers' money like an insurance float.",
+    "tags": [
+      "how amazon makes money",
+      "amazon business model",
+      "amazon business model explained",
+      "aws explained",
+      "amazon advertising sponsored products",
+      "amazon third party sellers fees",
+      "amazon prime economics",
+      "amazon flywheel",
+      "negative working capital amazon",
+      "money explained simply",
+      "dave explains money"
+    ],
+    "hashtags": ["#amazon", "#business", "#money"],
+    "pinned": "Honest question: do you click the SPONSORED results on Amazon? YES or NO 👇"
+  }
+}

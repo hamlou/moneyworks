@@ -1,0 +1,125 @@
+{
+  "id": "ep21",
+  "title": "Why Gas Just Hit a Record Price (The 21-Mile Choke Point)",
+  "sources": [
+    "AAA Gas Prices / AAA Newsroom, Sept 2026: national average ≈ $4.48/gal, highest ever for this time of year; September 2026 average ≈ $4.30 vs prior September record (2023). All-time record remains $5.02 (June 14, 2022)",
+    "AAA via Fox Business / CBS8, Sept 2026: diesel national average hit a record $5.85 (Sept 4, 2026), beating June 2022, then topped $6 for the first time; EIA weekly on-highway diesel $5.967 (Sept 7, 2026)",
+    "Dave's tank: 15 gallons × $4.48 ≈ $67",
+    "Trading Economics: Brent $104.37/bbl on Sept 25, 2026; Forbes Advisor: WTI opened $101.99 on Sept 17, 2026",
+    "CNN Business, July 31, 2026: Brent rose from ≈ $70 before the war to over $100 for much of the spring, briefly $126",
+    "U.S. EIA (Today in Energy) & IEA: ≈ 20 million barrels/day through the Strait of Hormuz, ≈ one fifth of global petroleum liquids consumption; strait ≈ 21 miles wide at narrowest, two shipping lanes ≈ 2 miles each with a 2-mile buffer",
+    "Congressional Research Service R45281: U.S. and Israeli military operations against Iran began late February 2026; Iranian attacks and threats against commercial shipping",
+    "Al Jazeera, Aug 27, 2026: Hormuz traffic fell from 100+ vessels/day to about five (≈ 95% drop); Gulf crude exports down 47%, ≈ 17M b/d (2025) → ≈ 9M b/d (Aug 2026), citing Kpler. Al Jazeera, Sept 6, 2026: US–Iran 'tanker war' ongoing",
+    "U.S. EIA, Gasoline pump components (May 2026): crude oil 52%, refining 22%, distribution & marketing 15%, taxes 12%; federal tax 18.4¢/gal, average state taxes & fees 33.55¢/gal (Jan 2026) → ≈ 52¢. $104 ÷ 42 gal ≈ $2.48 of crude per gallon",
+    "'Rockets and feathers': Bacon (1991), Energy Economics; NACS, 'Factors that affect gas prices' (retail fuel margins thin, in-store sales key to profits)",
+    "U.S. State Dept, Office of the Historian, 'Oil Embargo, 1973–1974': OAPEC embargo Oct 1973, price per barrel ≈ $2.90 → ≈ $11.65 by Jan 1974; odd-even rationing; 55 mph national speed limit (1974)",
+    "U.S. DOE: Strategic Petroleum Reserve created by the Energy Policy and Conservation Act (1975), stored in salt caverns in Texas and Louisiana, authorized capacity ≈ 714M barrels",
+    "CNBC, Mar 11, 2026: 172 million barrel SPR release; IEA coordinated 400 million barrels (largest in its history). CNBC Aug 10, 2026 / DOE: ≈ 415M barrels before the war; 285.4M barrels on Sept 4, 2026, lowest since 1983",
+    "ExxonMobil Q2 2026 results / CNN: $14.5B profit (≈ $160M per day); Chevron Q2 2026: $12.1B, largest quarterly profit ever (Fortune, July 31, 2026)",
+    "fueleconomy.gov (DOE/EPA): aggressive driving can lower gas mileage roughly 15%–30% at highway speeds; FTC, 'Gas-saving products: fact or fuelishness' and premium gasoline guidance"
+  ],
+  "beats": [
+    {"id": "o1", "text": "Dave just filled up his car. Sixty seven dollars. For one tank.", "pause": 0.3},
+    {"id": "o2", "text": "The national average for gas is now about four dollars and forty eight cents a gallon. The highest September ever recorded.", "pause": 0.3},
+    {"id": "o3", "text": "And diesel? It just smashed its all time record. Over six dollars a gallon.", "pause": 0.35},
+    {"id": "o4", "text": "Dave asks the gas station guy why. He points at a map. At a strip of water twenty one miles wide, on the other side of the planet.", "pause": 0.3},
+    {"id": "o5", "text": "And it gets weirder. Right now, that strip of water is almost empty.", "pause": 0.3},
+    {"id": "o6", "text": "Today: we follow one barrel of oil from a war zone to Dave's tank. What's inside a gallon, why prices fall like a feather, and who's making a fortune.", "pause": 0.6},
+
+    {"id": "c1a", "chapter": "Follow the Barrel", "text": "Let's start with the thing everything is priced in. A barrel of oil.", "pause": 0.4},
+    {"id": "c1b", "text": "One barrel holds forty two gallons of crude oil. Thick, black, smelly stuff, straight out of the ground. You can't put that in your car yet.", "pause": 0.5},
+    {"id": "c1c", "text": "There are two famous prices for it. Brent, for oil from the North Sea. And W T I, for oil from Texas. They're the price tags the whole world watches.", "pause": 0.5},
+    {"id": "c1d", "text": "Before the war, a barrel of Brent cost about seventy dollars. In the spring, it briefly touched one hundred and twenty six.", "pause": 0.5},
+    {"id": "c1e", "text": "In late September twenty twenty six, Brent is around one hundred and four dollars. W T I is close to one hundred.", "pause": 0.5},
+    {"id": "c1f", "text": "So what happened? To find out, we need to fly to the Middle East.", "pause": 0.9},
+
+    {"id": "c2a", "chapter": "The 21-Mile Choke Point", "text": "Meet the Strait of Hormuz. It's the narrow sea door between the Persian Gulf and the rest of the world.", "pause": 0.4},
+    {"id": "c2b", "text": "At its narrowest, it's about twenty one miles wide. And the lanes that giant tankers actually use are only two miles wide each. One going in, one going out.", "pause": 0.5},
+    {"id": "c2c", "text": "Normally, about twenty million barrels of oil pass through it every single day. That's roughly one fifth of all the oil the world uses.", "pause": 0.5},
+    {"id": "c2d", "text": "Saudi Arabia, Iraq, Kuwait, the Emirates, Qatar, Iran. For most of their oil, there's only one way out. Through that door.", "pause": 0.5},
+    {"id": "c2e", "text": "Imagine a city where one in every five cars has to cross the same tiny bridge. Now imagine someone blocks the bridge.", "pause": 0.5},
+    {"id": "c2f", "text": "That's pretty much what happened this year.", "pause": 0.9},
+
+    {"id": "c3a", "chapter": "The War at Sea", "text": "In late February twenty twenty six, the United States and Israel launched strikes on Iran.", "pause": 0.4},
+    {"id": "c3b", "text": "Iran hit back, partly by going after ships near the strait. Threats. Attacks on tankers. Insurance for ships became crazy expensive.", "pause": 0.5},
+    {"id": "c3c", "text": "Before the war, more than one hundred ships crossed the strait every day. By late August, it was about five. A drop of about ninety five percent.", "pause": 0.5},
+    {"id": "c3d", "text": "Crude exports from the Gulf fell by almost half. From about seventeen million barrels a day, to roughly nine million.", "pause": 0.5},
+    {"id": "c3e", "text": "There have been talks and pauses. But in September, both sides were still attacking tankers at sea.", "pause": 0.5},
+    {"id": "c3f", "text": "Who's to blame? That's a political question, and people strongly disagree. But the math is simple. Less oil, same number of drivers. Prices go up.", "pause": 0.5},
+    {"id": "c3g", "text": "It's like an auction for the last slice of pizza. The less pizza there is, the crazier the bids get.", "pause": 0.9},
+
+    {"id": "c4a", "chapter": "What's Inside a Gallon", "text": "Okay. Crude got pricier. But how does that end up on Dave's receipt?", "pause": 0.4},
+    {"id": "c4b", "text": "Let's slice one gallon, like a pizza, using government data from the E I A.", "pause": 0.5},
+    {"id": "c4c", "text": "The biggest slice, about half, is the crude oil itself. A barrel is forty two gallons. So a one hundred and four dollar barrel means about two dollars and fifty cents of crude in every gallon.", "pause": 0.5},
+    {"id": "c4d", "text": "Next slice, about a fifth: refining. Turning black goo into gasoline, in giant factories that look like spaghetti made of pipes.", "pause": 0.5},
+    {"id": "c4e", "text": "Then distribution and the gas station. Pipelines, trucks, the station's rent, its lights, and its profit. About fifteen cents of every dollar.", "pause": 0.5},
+    {"id": "c4f", "text": "And the last slice: taxes. Eighteen point four cents federal, plus about thirty four cents in state taxes on average. Around fifty two cents a gallon.", "pause": 0.5},
+    {"id": "c4g", "text": "Notice something? Taxes are a fixed number of cents. So when gas jumps, almost all of the jump comes from the crude slice.", "pause": 0.9},
+
+    {"id": "c5a", "chapter": "Rockets and Feathers", "text": "Now, Dave noticed something. When oil jumps, the pump price jumps almost overnight. When oil falls, the pump price takes forever.", "pause": 0.4},
+    {"id": "c5b", "text": "Economists actually have a name for this. Rockets and feathers. Prices go up like a rocket, and come down like a feather.", "pause": 0.5},
+    {"id": "c5c", "text": "Most people think the gas station is the villain. Nope. Many stations make surprisingly little on each gallon. They often earn more selling you snacks and coffee.", "pause": 0.5},
+    {"id": "c5d", "text": "So why the rocket? When crude jumps, the next truckload of fuel will cost the station more. So it raises the price right away, to be safe.", "pause": 0.5},
+    {"id": "c5e", "text": "And the feather? When crude falls, nobody wants to cut first. Each station waits to see what the others do. And many drivers don't shop around, so there's no rush.", "pause": 0.5},
+    {"id": "c5f", "text": "Remember the raccoon from our credit card video? He loves a feather. Every slow day is a few extra cents in his pocket.", "pause": 0.9},
+
+    {"id": "c6a", "chapter": "1973: We've Been Here Before", "text": "Does all this sound familiar? It should. Let's go back to nineteen seventy three.", "pause": 0.4},
+    {"id": "c6b", "text": "In October that year, Arab oil producers stopped selling oil to the United States, to punish it for supporting Israel in a war.", "pause": 0.5},
+    {"id": "c6c", "text": "Within a few months, the price of a barrel roughly quadrupled. From about three dollars, to nearly twelve.", "pause": 0.5},
+    {"id": "c6d", "text": "Americans waited in gas lines for hours. Some states only let you buy gas on odd or even days, depending on your license plate. The speed limit dropped to fifty five.", "pause": 0.5},
+    {"id": "c6e", "text": "It was a huge shock. And it gave Washington an idea. What if America kept a giant emergency stash of oil?", "pause": 0.9},
+
+    {"id": "c7a", "chapter": "The Emergency Oil Stash", "text": "That stash is called the Strategic Petroleum Reserve. It was created in nineteen seventy five.", "pause": 0.4},
+    {"id": "c7b", "text": "And it's not in tanks. It's stored in huge underground salt caves in Texas and Louisiana. Like a giant piggy bank, buried in salt.", "pause": 0.5},
+    {"id": "c7c", "text": "It can hold about seven hundred and fourteen million barrels. Before the war, it had about four hundred and fifteen million.", "pause": 0.5},
+    {"id": "c7d", "text": "In March, the president ordered one hundred and seventy two million barrels released. And through the International Energy Agency, countries agreed to release four hundred million barrels together. The biggest release in its history.", "pause": 0.5},
+    {"id": "c7e", "text": "By early September, the reserve was down to about two hundred and eighty five million barrels. The lowest since nineteen eighty three.", "pause": 0.5},
+    {"id": "c7f", "text": "Supporters say: that's exactly what a rainy day fund is for. Critics say: it's still raining, and the umbrella keeps shrinking. Both have a point.", "pause": 0.9},
+
+    {"id": "c8a", "chapter": "Who Wins, Who Loses", "text": "So when gas goes up, where does Dave's extra money go?", "pause": 0.4},
+    {"id": "c8b", "text": "Big winners: oil producers. From April to June, Exxon made fourteen and a half billion dollars in profit. That's about one hundred and sixty million dollars per day.", "pause": 0.5},
+    {"id": "c8c", "text": "Chevron made twelve point one billion. Its biggest quarter ever. And oil producers far from the war zone, including American drillers, sell every barrel at a higher price.", "pause": 0.5},
+    {"id": "c8d", "text": "The losers? Drivers like Dave. Truckers, who run on diesel. Airlines, who burn jet fuel. And farmers, whose tractors drink it too.", "pause": 0.5},
+    {"id": "c8e", "text": "And since almost everything you buy rides in a diesel truck, food and packages get pricier too. Remember our inflation video? This is how it spreads.", "pause": 0.5},
+    {"id": "c8f", "text": "Some lawmakers want a special tax on oil company windfall profits. Others say that means less drilling, and less supply. That's a political fight. Now you know the numbers.", "pause": 0.9},
+
+    {"id": "c9a", "chapter": "What Dave Can Do", "text": "So what can Dave actually do? Education, not advice.", "pause": 0.4},
+    {"id": "c9b", "text": "One. Compare prices. Stations on the same road can charge very different prices. A price app takes ten seconds.", "pause": 0.5},
+    {"id": "c9c", "text": "Two. Drive gently. The government's fuel economy website says speeding and hard braking can cut your gas mileage by fifteen to thirty percent on the highway.", "pause": 0.5},
+    {"id": "c9d", "text": "Three. Check your tire pressure, and take the junk out of the trunk. Small stuff, but it adds up.", "pause": 0.5},
+    {"id": "c9e", "text": "Four. Only buy premium if your car's manual says you need it. Otherwise, you're paying extra for nothing.", "pause": 0.5},
+    {"id": "c9f", "text": "Five. Beware of magic gas saving gadgets. The Federal Trade Commission warns that most of them don't work.", "pause": 0.5},
+    {"id": "c9g", "text": "Dave now drives like Grandma. Slow. Calm. And somehow, still first in line at the cheap station.", "pause": 0.9},
+
+    {"id": "d1a", "chapter": "Now You Know", "text": "So let's recap.", "pause": 0.4},
+    {"id": "d1b", "text": "One. About a fifth of the world's oil normally flows through the twenty one mile Strait of Hormuz. Block it, and prices everywhere jump.", "pause": 0.5},
+    {"id": "d1c", "text": "Two. About half of every gallon is crude oil. The rest is refining, distribution, and taxes.", "pause": 0.5},
+    {"id": "d1d", "text": "Three. Prices rise like a rocket and fall like a feather. So shop around, and drive gently.", "pause": 0.9},
+
+    {"id": "d2a", "chapter": "Next Time", "text": "Next time: artificial intelligence. Companies are spending hundreds of billions of dollars on it. Is A I the future? Or the biggest bubble since the dot com crash?", "pause": 0.4},
+    {"id": "d2b", "text": "Subscribe, so you don't miss it. It's free, and it costs zero dollars a gallon.", "pause": 1.4}
+  ],
+  "youtube": {
+    "title": "Why Gas Just Hit a Record Price (The 21-Mile Choke Point)",
+    "alt_titles": [
+      "Gas Prices Explained: Why One 21-Mile Strait Controls Your Tank",
+      "Why Gas Prices Go Up Like a Rocket and Down Like a Feather"
+    ],
+    "hook": "Why are gas prices so high right now? The US average hit about $4.48, the highest September ever, and diesel broke its all-time record above $6. Dave fills his tank for $67 and follows one barrel of oil to find out why: the 2026 Iran war, the 21-mile Strait of Hormuz where about a fifth of the world's oil normally passes, the 95% collapse in tanker traffic, Brent above $100, what's inside a gallon (crude, refining, distribution, taxes), why prices go up like a rocket and down like a feather, the 1973 oil embargo, the Strategic Petroleum Reserve at its lowest since 1983, who wins and who loses, and simple ways to spend less at the pump.",
+    "tags": [
+      "why are gas prices so high",
+      "gas prices explained",
+      "strait of hormuz explained",
+      "oil prices explained",
+      "rockets and feathers gas prices",
+      "what's in the price of a gallon of gas",
+      "strategic petroleum reserve explained",
+      "1973 oil embargo",
+      "diesel record price",
+      "iran war oil prices",
+      "dave explains money"
+    ],
+    "hashtags": ["#gasprices", "#oil", "#money"],
+    "pinned": "What did YOU pay per gallon this week? Drop your price and your state below."
+  }
+}

@@ -13,3 +13,7 @@ for (const {id, frame, ...props} of items) {
   await renderStill({serveUrl, composition, inputProps: composition.props, frame: frame ?? 0, output: path.join(out, name)});
   console.log('ok', name);
 }
+// the bundle is ~37 MB in %TEMP%; remove it so repeated QA runs don't fill the disk
+try {
+  fs.rmSync(serveUrl, {recursive: true, force: true});
+} catch {}

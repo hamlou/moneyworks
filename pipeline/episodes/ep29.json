@@ -1,0 +1,119 @@
+{
+  "id": "ep29",
+  "title": "Why Your Bank Pays You 0.01% (And Where the Rest Goes)",
+  "sources": [
+    "FDIC, National Rates and Rate Caps, published Sept 21, 2026: national average savings 0.37%, interest checking 0.07%, money market 0.63%, 12-month CD 1.73%",
+    "FDIC Quarterly Banking Profile, Q2 2026: net interest margin 3.32%, yield on earning assets 5.35%, cost of funding earning assets 2.03%, net interest income $197.4B for the quarter, net income $90.1B, total deposits $20.7T, 4,238 institutions",
+    "Federal Reserve Implementation Note, Sept 16, 2026: interest rate on reserve balances raised to 3.90% (effective Sept 17, 2026); federal funds target range 3.75%-4.00%",
+    "Big-bank standard savings accounts commonly pay 0.01% APY (e.g. Chase Savings standard rate; rates vary by ZIP code, chase.com)",
+    "Bankrate, Best High-Yield Savings Accounts, September 2026: top rates up to 4.20% APY",
+    "JPMorgan Chase trailing-twelve-month net income ~$63.6B through Q2 2026 (company filings via stockanalysis.com)",
+    "FDIC: deposit insurance $250,000 per depositor, per insured bank, for each account ownership category (fdic.gov/resources/deposit-insurance); FDIC BankFind Suite",
+    "U.S. Bureau of Labor Statistics, CPI release Sept 11, 2026: all-items CPI +3.4% over the 12 months ending August 2026",
+    "TreasuryDirect: Treasury bills are exempt from state and local income tax",
+    "Math: $5,000 x 0.01% = $0.50/yr; $5,000 x 3.90% = $195/yr; $5,000 x 4.2% = $210/yr; $5,000 x 3.4% = $170 of purchasing power; $90.1B / 91 days = ~$1B per day"
+  ],
+  "beats": [
+    {"id": "o1", "text": "Dave has five thousand dollars in his savings account. Last year, his bank paid him fifty cents. Not fifty dollars. Fifty cents.", "pause": 0.3},
+    {"id": "o2", "text": "His big bank pays zero point zero one percent. That's one penny, for every hundred dollars, per year.", "pause": 0.3},
+    {"id": "o3", "text": "Now look at this. That same bank can park Dave's money at the Federal Reserve, and earn three point nine percent. Totally safe.", "pause": 0.3},
+    {"id": "o4", "text": "That's about one hundred ninety five dollars a year. On Dave's money.", "pause": 0.3},
+    {"id": "o5", "text": "Dave gets fifty cents. The bank keeps the rest.", "pause": 0.35},
+    {"id": "o6", "text": "Today: where the rest goes, why banks get away with it, and where savers can earn way more.", "pause": 0.6},
+
+    {"id": "c1a", "chapter": "Dave's Fifty Cents", "text": "Let's start with Dave's account.", "pause": 0.4},
+    {"id": "c1b", "text": "Dave put five thousand dollars into savings. The app says zero point zero one percent interest. Sounds tiny. It is tiny.", "pause": 0.5},
+    {"id": "c1c", "text": "Five thousand dollars times zero point zero one percent, is fifty cents. For a whole year. That's not even a candy bar.", "pause": 0.5},
+    {"id": "c1d", "text": "And Dave is not alone. The FDIC says the national average savings rate is zero point three seven percent. Better, but still less than two dollars a month on Dave's money.", "pause": 0.5},
+    {"id": "c1e", "text": "So where does the rest go? To find out, we need to follow Dave's cash into the bank.", "pause": 0.9},
+
+    {"id": "c2a", "chapter": "The Bank's Secret Markup", "text": "Here's the simple version. A bank is a shop that buys money cheap, and sells it expensive.", "pause": 0.4},
+    {"id": "c2b", "text": "It buys money from savers like Dave, by paying them interest. That's the bank's cost.", "pause": 0.5},
+    {"id": "c2c", "text": "Then it puts that money to work, and earns interest. Car loans. Mortgages. Credit cards. Government bonds.", "pause": 0.5},
+    {"id": "c2d", "text": "The gap between what the bank earns and what it pays is called the net interest margin. Think of it as the bank's markup.", "pause": 0.5},
+    {"id": "c2e", "text": "It's like a lemonade stand that buys lemons for one cent, and sells lemonade for five dollars.", "pause": 0.5},
+    {"id": "c2f", "text": "The FDIC tracks this every quarter. In the second quarter of twenty twenty six, banks earned five point three five percent on their loans and investments. Their money cost them just two point zero three percent.", "pause": 0.5},
+    {"id": "c2g", "text": "That gap, three point three two percent, is the net interest margin. And with over twenty trillion dollars in deposits, that's a lot of lemonade.", "pause": 0.9},
+
+    {"id": "c3a", "chapter": "Three Jobs for Dave's Money", "text": "So what does the bank actually do with Dave's five thousand dollars? Three main things.", "pause": 0.4},
+    {"id": "c3b", "text": "One: loans. Bob's car loan. Someone's mortgage. And credit cards, which charge some of the highest rates of all. Remember the raccoon?", "pause": 0.5},
+    {"id": "c3c", "text": "Two: Treasury bills. That's lending to the U S government for a few months. Super safe, and it pays close to the Fed's rate.", "pause": 0.5},
+    {"id": "c3d", "text": "Three, and this is the sneaky one: interest on reserves. Remember our Federal Reserve video? Banks keep money in an account at the Fed. And the Fed pays them interest on it.", "pause": 0.5},
+    {"id": "c3e", "text": "In September twenty twenty six, the Fed raised that rate to three point nine percent. Zero risk. Zero effort.", "pause": 0.5},
+    {"id": "c3f", "text": "So the bank can take Dave's cash, leave it at the Fed, and earn about one hundred ninety five dollars a year. Dave gets fifty cents.", "pause": 0.5},
+    {"id": "c3g", "text": "It's like Dave lends his lawnmower to his neighbor for free, and the neighbor rents it out for two hundred dollars.", "pause": 0.9},
+
+    {"id": "c4a", "chapter": "The Big Banks' Big Profits", "text": "Add it all up, and the numbers get enormous.", "pause": 0.4},
+    {"id": "c4b", "text": "In just the second quarter of twenty twenty six, American banks made one hundred ninety seven billion dollars in net interest income. In three months.", "pause": 0.5},
+    {"id": "c4c", "text": "Their total profit that quarter was ninety point one billion dollars. That's about one billion dollars, every single day.", "pause": 0.5},
+    {"id": "c4d", "text": "The biggest bank in America, JPMorgan Chase, made around sixty three billion dollars of profit over the last twelve months.", "pause": 0.5},
+    {"id": "c4e", "text": "Now, to be fair, banks have real costs. Branches, staff, apps, fraud, and loans that never get paid back. The margin is not all pure profit.", "pause": 0.5},
+    {"id": "c4f", "text": "But cheap deposits are the fuel. Every saver earning zero point zero one percent is a very, very cheap lemon.", "pause": 0.9},
+
+    {"id": "c5a", "chapter": "Why Banks Get Away With It", "text": "So why doesn't everyone just leave? Three reasons.", "pause": 0.4},
+    {"id": "c5b", "text": "Reason one: laziness. Well, economists call it inertia. Dave opened his account at eighteen, and never looked at the rate again.", "pause": 0.5},
+    {"id": "c5c", "text": "Reason two: convenience. His paycheck lands there. His bills come out of there. Switching banks feels like moving house.", "pause": 0.5},
+    {"id": "c5d", "text": "Reason three: branches and trust. A big building with columns feels safe. A bank that only lives in an app feels a little weird.", "pause": 0.5},
+    {"id": "c5e", "text": "Banks know this. They call it sticky money. Like gum on a shoe. They don't need to pay you more, because you're not going anywhere.", "pause": 0.5},
+    {"id": "c5f", "text": "Most people think a big bank must be safer than a small online bank. Nope. If both are FDIC insured, your money gets the exact same government protection, up to the limit.", "pause": 0.9},
+
+    {"id": "c6a", "chapter": "Where Savers Earn More", "text": "So where can Dave's money earn more? First stop: high yield savings accounts.", "pause": 0.4},
+    {"id": "c6b", "text": "These are usually at online banks. No marble lobbies. No branch on every corner. They save that money, and pass some of it to you.", "pause": 0.5},
+    {"id": "c6c", "text": "In September twenty twenty six, the top high yield savings accounts paid up to about four point two percent.", "pause": 0.5},
+    {"id": "c6d", "text": "On Dave's five thousand dollars, that's around two hundred dollars a year, instead of fifty cents. Same money.", "pause": 0.5},
+    {"id": "c6e", "text": "But check one word first. Insured. The FDIC protects deposits up to two hundred fifty thousand dollars, per person, per bank, for each type of account.", "pause": 0.5},
+    {"id": "c6f", "text": "Remember our very first video? Banks create money, and bank runs can happen. This insurance is why a bank failure doesn't wipe out regular savers.", "pause": 0.5},
+    {"id": "c6g", "text": "One warning. Some money apps look like banks, but aren't. Check that the actual bank holding your money is FDIC insured.", "pause": 0.9},
+
+    {"id": "c7a", "chapter": "CDs, Money Funds and T-Bills", "text": "Savings accounts aren't the only option. Here are three more, quickly.", "pause": 0.4},
+    {"id": "c7b", "text": "A C D, or certificate of deposit. You promise to leave your money for a set time, like one year. In return, the rate is locked. Take it out early, and you pay a penalty.", "pause": 0.5},
+    {"id": "c7c", "text": "It's like a gym contract. Better price, but you're stuck.", "pause": 0.5},
+    {"id": "c7d", "text": "The national average one year C D pays one point seven three percent. The best ones pay a lot more. Shopping around really matters.", "pause": 0.5},
+    {"id": "c7e", "text": "Next, money market funds. These are investment funds that buy very short, very safe debt, like Treasury bills. Their yields usually follow the Fed. But they are not FDIC insured.", "pause": 0.5},
+    {"id": "c7f", "text": "And Treasury bills themselves. You can buy them straight from the government. And the interest is free from state income tax.", "pause": 0.9},
+
+    {"id": "c8a", "chapter": "Inflation Eats Savings", "text": "Now here's the part nobody likes.", "pause": 0.4},
+    {"id": "c8b", "text": "Remember our inflation video? Prices rose three point four percent in the twelve months to August twenty twenty six.", "pause": 0.5},
+    {"id": "c8c", "text": "So Dave's five thousand dollars earned fifty cents. But inflation ate about one hundred seventy dollars of what that money can buy.", "pause": 0.5},
+    {"id": "c8d", "text": "It's like keeping ice cream in your pocket. It's still there. It's just melting.", "pause": 0.5},
+    {"id": "c8e", "text": "And remember compound interest? It works both ways. A good rate grows on top of itself every year. A near zero rate barely moves, while prices keep climbing.", "pause": 0.5},
+    {"id": "c8f", "text": "Right now, even a four percent account only just beats inflation. But that beats losing over three percent a year.", "pause": 0.9},
+
+    {"id": "c9a", "chapter": "What Dave Did Next", "text": "So what did Dave do? Remember, this is education, not advice.", "pause": 0.4},
+    {"id": "c9b", "text": "One. He kept enough in checking for his bills, and moved his emergency fund into a high yield savings account.", "pause": 0.5},
+    {"id": "c9c", "text": "Two. He used the FDIC's free BankFind tool, to make sure the new bank is really insured.", "pause": 0.5},
+    {"id": "c9d", "text": "Three. He read the small print. Some banks offer a teaser rate that drops after a few months, or only applies to small balances.", "pause": 0.5},
+    {"id": "c9e", "text": "Four. He set a reminder to check his rate once a year. Because rates change. The Fed just moved them again.", "pause": 0.5},
+    {"id": "c9f", "text": "Total effort: about twenty minutes. Extra interest: around two hundred dollars a year.", "pause": 0.9},
+
+    {"id": "r1", "chapter": "Now You Know", "text": "So let's recap.", "pause": 0.4},
+    {"id": "r2", "text": "One. Banks pay savers very little, and earn much more with the same money. That gap is the net interest margin.", "pause": 0.5},
+    {"id": "r3", "text": "Two. They get away with it because most people never move their money.", "pause": 0.5},
+    {"id": "r4", "text": "Three. High yield savings, C Ds, money market funds and T bills can pay far more. Just check the insurance and the small print.", "pause": 0.6},
+    {"id": "r5", "text": "Next time, Dave tries to buy his first home. And finds out why houses became so unaffordable.", "pause": 0.4},
+    {"id": "r6", "text": "Subscribe, so Dave can keep explaining money. It's free. And unlike Dave's bank, we don't keep the rest.", "pause": 1.4}
+  ],
+  "youtube": {
+    "title": "Why Your Bank Pays You 0.01% (And Where the Rest Goes)",
+    "alt_titles": [
+      "Savings Account Interest Explained: Why Banks Pay You Almost Nothing",
+      "Your Bank Earns 3.9% On Your Money. You Get 0.01%."
+    ],
+    "hook": "Why do banks pay almost nothing on savings? Dave's $5,000 earned 50 cents last year at 0.01%, while his bank could earn 3.9% just parking that money at the Federal Reserve. We explain the net interest margin (3.32% per the FDIC), where your deposits really go (loans, Treasury bills, interest on reserves), why banks get away with it, and how high-yield savings accounts, CDs, money market funds and T-bills compare, plus FDIC insurance and inflation.",
+    "tags": [
+      "why banks pay low interest",
+      "savings account interest explained",
+      "net interest margin explained",
+      "high yield savings account",
+      "interest on reserves",
+      "fdic insurance 250000",
+      "cd vs high yield savings",
+      "money market fund explained",
+      "treasury bills for beginners",
+      "personal finance for beginners",
+      "dave explains money"
+    ],
+    "hashtags": ["#savings", "#banking", "#money"],
+    "pinned": "What interest rate does YOUR savings account pay right now? Drop the number 👇 (no bank names needed)"
+  }
+}

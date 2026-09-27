@@ -1,0 +1,117 @@
+{
+  "id": "ep28",
+  "title": "Why Everything Is a Subscription Now",
+  "sources": [
+    "C+R Research, 'Subscription Service Statistics and Costs' (survey of 1,000 U.S. consumers, Apr 22 – May 2, 2022): average guess $86/month vs itemized $219/month (+$133); 74% say it's easy to forget recurring charges",
+    "Value Add VC, 'SaaS Comps 2026': median public SaaS company ≈ 6.8x NTM revenue (May 2026); other indexes lower (Aventis ≈ 4.6x, Aug 2026)",
+    "BMW heated-seat subscription ≈ $18/month in markets incl. UK, Germany, South Korea (2022); dropped in Sept 2023 (CNBC, Edmunds, TechCrunch)",
+    "HP Instant Ink: over 10 million subscribers in 38 countries (HP, July 2025); 'free ink for life' plan ended (Consumer Reports)",
+    "Netflix U.S. Standard plan: $7.99 (2011) → $19.99 (March 2026) (CNBC, Mar 26 2026; Variety)",
+    "FTC, 'FTC Secures Historic $2.5 Billion Settlement Against Amazon' (Sept 25, 2025): $1B civil penalty + $1.5B refunds; ~35 million consumers; alleged dark patterns in Prime sign-up and cancellation. Internal cancellation flow name 'Iliad' per FTC complaint (June 2023)",
+    "FTC Negative Option ('click-to-cancel') Rule adopted Oct 2024; vacated in full by U.S. Court of Appeals for the Eighth Circuit, July 8, 2025 (procedural: no preliminary regulatory analysis); FTC published a new ANPRM March 13, 2026 (comments due April 13, 2026) — Gibson Dunn, Crowell & Moring, Latham & Watkins",
+    "DellaVigna & Malmendier, 'Paying Not to Go to the Gym', American Economic Review 96(3), 2006: 7,752 members of 3 U.S. clubs; flat fee >$70/month, 4.3 visits/month → >$17 per visit vs $10 per-visit pass; average forgone savings ≈ $600"
+  ],
+  "beats": [
+    {"id": "o1", "text": "Dave opened his bank statement and counted. Eleven subscriptions. He remembered paying for three.", "pause": 0.3},
+    {"id": "o2", "text": "Two music apps. A fitness app he opened once. A cloud storage plan for photos of his cat. And a meal kit he cancelled. Or thought he did.", "pause": 0.3},
+    {"id": "o3", "text": "And Dave isn't weird. In one survey, Americans guessed they spend eighty six dollars a month on subscriptions. The real number was two hundred and nineteen.", "pause": 0.35},
+    {"id": "o4", "text": "Wait, it gets stranger. Some car makers tried to charge a monthly fee for the heated seats already inside your car.", "pause": 0.3},
+    {"id": "o5", "text": "So why is everything a subscription now?", "pause": 0.3},
+    {"id": "o6", "text": "Today: why companies love it, the free trial trick, the fight over the cancel button, and how Dave took his money back.", "pause": 0.6},
+
+    {"id": "c1a", "chapter": "Dave's Eleven Subscriptions", "text": "Let's look at Dave's list.", "pause": 0.4},
+    {"id": "c1b", "text": "Streaming. Streaming again. Another streaming. Music. More music. Cloud storage. A news site. A fitness app. A gym. A meal kit. And a phone game with a monthly pass.", "pause": 0.5},
+    {"id": "c1c", "text": "None of them looked big. Nine dollars here. Thirteen dollars there. Like drops from a leaky tap.", "pause": 0.5},
+    {"id": "c1d", "text": "But drops fill a bucket. Dave added it all up. About two hundred dollars a month. Twenty four hundred dollars a year.", "pause": 0.5},
+    {"id": "c1e", "text": "And here's the thing. Dave never decided to spend that. It just kept happening, month after month, all by itself.", "pause": 0.9},
+
+    {"id": "c2a", "chapter": "Why Companies Love It", "text": "So why does every company want you on a subscription? Let's go back to Dave's lemonade stand.", "pause": 0.4},
+    {"id": "c2b", "text": "Old way: Dave sells a cup, and hopes you come back tomorrow. Maybe you do. Maybe it rains. He never knows.", "pause": 0.5},
+    {"id": "c2c", "text": "New way: you pay five dollars a month, and get lemonade whenever you want. Now Dave knows exactly how much money arrives next month. And the month after.", "pause": 0.5},
+    {"id": "c2d", "text": "Business people call this recurring revenue. It's predictable. It's like a paycheck for the company.", "pause": 0.5},
+    {"id": "c2e", "text": "And investors love predictable. Remember the stock market video? Investors pay for future money. If the future looks certain, they pay more.", "pause": 0.5},
+    {"id": "c2f", "text": "One recent count found the typical public software subscription company was valued at almost seven times its yearly sales. Other counts are lower. But the market rewards steady money.", "pause": 0.5},
+    {"id": "c2g", "text": "So a company can make its stock worth more just by changing how you pay. Same lemonade. Better story.", "pause": 0.9},
+
+    {"id": "c3a", "chapter": "Everything Is a Subscription", "text": "And it spread to almost everything.", "pause": 0.4},
+    {"id": "c3b", "text": "Software used to come in a box. You paid once, and it was yours. Now many programs cost a fee every month, forever.", "pause": 0.5},
+    {"id": "c3c", "text": "Cars. In twenty twenty two, BMW charged about eighteen dollars a month in some countries to switch on heated seats. The heaters were already built in.", "pause": 0.5},
+    {"id": "c3d", "text": "Drivers were furious. In twenty twenty three, BMW dropped the idea. But car makers still sell other features through apps.", "pause": 0.5},
+    {"id": "c3e", "text": "Printers. The printer is cheap. The ink is the money. Now you can even subscribe to ink. HP says its ink plan has over ten million subscribers.", "pause": 0.5},
+    {"id": "c3f", "text": "And streaming. Movies, music, games. Things we used to buy once now show up on our statement every month.", "pause": 0.9},
+
+    {"id": "c4a", "chapter": "The $133 Blind Spot", "text": "Now, the surprising part. We are really bad at counting subscriptions.", "pause": 0.4},
+    {"id": "c4b", "text": "In twenty twenty two, C plus R Research asked a thousand Americans a simple question. How much do you spend on subscriptions each month?", "pause": 0.5},
+    {"id": "c4c", "text": "The average guess: eighty six dollars. Then they listed every subscription, one by one. The real average: two hundred and nineteen dollars.", "pause": 0.5},
+    {"id": "c4d", "text": "That's one hundred and thirty three dollars a month people didn't even notice. About sixteen hundred dollars a year.", "pause": 0.5},
+    {"id": "c4e", "text": "And seventy four percent said it's easy to forget about charges that repeat every month.", "pause": 0.5},
+    {"id": "c4f", "text": "Why? Because a subscription is invisible. No cash leaves your hand. No button to press. The best payment, for a company, is the one you never see.", "pause": 0.9},
+
+    {"id": "c5a", "chapter": "The Free Trial Trick", "text": "And how do they get you in the door? With the magic word. Free.", "pause": 0.4},
+    {"id": "c5b", "text": "Free for seven days. Free for a month. Just enter your card. Don't worry, we won't charge you yet.", "pause": 0.5},
+    {"id": "c5c", "text": "Most people think: easy, I'll just cancel before it ends. Nope. Life happens. You forget. And the trial quietly turns into a bill.", "pause": 0.5},
+    {"id": "c5d", "text": "It's like a free puppy for the weekend. Monday comes, and somehow, it's your puppy now. And it eats every month.", "pause": 0.5},
+    {"id": "c5e", "text": "Companies know that doing nothing is the easiest choice. So they make staying automatic, and leaving your job.", "pause": 0.9},
+
+    {"id": "c6a", "chapter": "Dark Patterns and the Cancel Button", "text": "Which brings us to the cancel button. Or, where did they hide it?", "pause": 0.4},
+    {"id": "c6b", "text": "Designers have a name for tricks that push you to do what the company wants. Dark patterns. Five pages to cancel. Guilt messages. A tiny grey link.", "pause": 0.5},
+    {"id": "c6c", "text": "In twenty twenty five, the F T C settled a case with Amazon over Prime sign ups and cancellations. Amazon agreed to pay up to two point five billion dollars, without admitting wrongdoing.", "pause": 0.5},
+    {"id": "c6d", "text": "The government said its cancel process had a nickname inside the company. Iliad. Like the very long Greek poem about a war.", "pause": 0.5},
+    {"id": "c6e", "text": "In twenty twenty four, the F T C made a rule called click to cancel. If signing up takes one click, cancelling should be just as easy.", "pause": 0.5},
+    {"id": "c6f", "text": "But business groups sued. In July twenty twenty five, a federal appeals court threw the rule out, days before it started. The reason: the agency skipped a required step.", "pause": 0.5},
+    {"id": "c6g", "text": "So in March twenty twenty six, the F T C started the process again. Supporters say it protects shoppers. Critics say it adds costs and red tape. Now you know both sides.", "pause": 0.9},
+
+    {"id": "c7a", "chapter": "Price Creep", "text": "And once you're in, there's one more trick. The price climbs, one small step at a time.", "pause": 0.4},
+    {"id": "c7b", "text": "In twenty eleven, the standard Netflix plan in America cost seven dollars ninety nine. In twenty twenty six, it's nineteen dollars ninety nine.", "pause": 0.5},
+    {"id": "c7c", "text": "That's two and a half times more. And every single jump was just one or two dollars.", "pause": 0.5},
+    {"id": "c7d", "text": "It's like a staircase. Each step feels tiny. You only notice when you look down and see how high you've climbed.", "pause": 0.5},
+    {"id": "c7e", "text": "To be fair, costs went up too. Shows got more expensive, and there's more to watch. But companies also know: most people won't leave over two dollars.", "pause": 0.5},
+    {"id": "c7f", "text": "Remember the raccoon? He doesn't grab your whole wallet. Just a little more each year.", "pause": 0.9},
+
+    {"id": "c8a", "chapter": "The Gym Model", "text": "Now, the oldest subscription trick of all. The gym.", "pause": 0.4},
+    {"id": "c8b", "text": "Economists studied almost eight thousand members of three American gyms. People paying over seventy dollars a month went only about four times a month.", "pause": 0.5},
+    {"id": "c8c", "text": "That's more than seventeen dollars per visit. A ten visit pass would have cost them ten dollars a visit.", "pause": 0.5},
+    {"id": "c8d", "text": "On average, they paid about six hundred dollars more than they needed to. Paying not to go to the gym.", "pause": 0.5},
+    {"id": "c8e", "text": "Why? When we sign up, we picture the future us. Fit, busy, going every morning. The gym gets paid by that dream.", "pause": 0.5},
+    {"id": "c8f", "text": "But fair is fair. Subscriptions aren't evil. If you use something a lot, a subscription can be the cheapest way. The problem is paying for things you don't use.", "pause": 0.9},
+
+    {"id": "c9a", "chapter": "Dave's Subscription Audit", "text": "So Dave did a subscription audit. Here's what he did. Education, not advice.", "pause": 0.4},
+    {"id": "c9b", "text": "One. List everything. Dave went through three months of bank and card statements, because some things only charge once a year.", "pause": 0.5},
+    {"id": "c9c", "text": "Two. For each one, ask: did I use this last month? Would I sign up again today? If not, cancel.", "pause": 0.5},
+    {"id": "c9d", "text": "Three. Every free trial gets a calendar reminder, two days before it ends. The day you sign up. Not later.", "pause": 0.5},
+    {"id": "c9e", "text": "Four. Some banks and card companies offer virtual card numbers. You can set a limit, or switch one off. Then a forgotten trial just gets declined.", "pause": 0.5},
+    {"id": "c9f", "text": "Five. Rotate. Watch one streaming service for a few months, then switch. The shows will still be there.", "pause": 0.5},
+    {"id": "c9g", "text": "Dave's result: eleven subscriptions became four. About one hundred and twenty dollars a month back in his pocket. His cat approves.", "pause": 0.9},
+
+    {"id": "d1a", "chapter": "Now You Know", "text": "So let's recap.", "pause": 0.4},
+    {"id": "d1b", "text": "One. Companies love subscriptions because steady money is predictable, and investors pay more for it.", "pause": 0.5},
+    {"id": "d1c", "text": "Two. We badly underestimate what we pay, thanks to free trials, dark patterns, and small price steps.", "pause": 0.5},
+    {"id": "d1d", "text": "Three. A regular subscription audit, reminders, and virtual cards put you back in control.", "pause": 0.9},
+
+    {"id": "d2a", "text": "Next time: Dave checks his savings account. His bank pays him zero point zero one percent. So where does his money actually go? Why your bank pays you almost nothing.", "pause": 0.4},
+    {"id": "d2b", "text": "Subscribe, so you don't miss it. It's the only subscription that's free, and easy to cancel.", "pause": 1.4}
+  ],
+  "youtube": {
+    "title": "Why Everything Is a Subscription Now",
+    "alt_titles": [
+      "You Pay $133 a Month for Subscriptions You Forgot",
+      "Subscription Economy Explained: Why Companies Want You Paying Monthly"
+    ],
+    "hook": "Why is everything a subscription now? Americans guess they spend $86 a month on subscriptions, but the real number is $219. Dave finds 11 subscriptions on his bank statement and sets out to understand why companies love recurring revenue, how free trials and dark patterns work, what happened to the FTC click-to-cancel rule, why prices keep creeping up, and why gyms get paid by people who never go.",
+    "tags": [
+      "why everything is a subscription",
+      "subscription economy explained",
+      "subscription fatigue",
+      "recurring revenue explained",
+      "click to cancel rule",
+      "dark patterns",
+      "free trial trap",
+      "subscription audit",
+      "cancel subscriptions",
+      "money explained simply",
+      "dave explains money"
+    ],
+    "hashtags": ["#subscriptions", "#personalfinance", "#money"],
+    "pinned": "Be honest: how many subscriptions do you pay for right now? Drop the number below."
+  }
+}

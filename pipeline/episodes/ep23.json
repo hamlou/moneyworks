@@ -1,0 +1,116 @@
+{
+  "id": "ep23",
+  "title": "Why a $50,000 Car Is Breaking Americans",
+  "sources": [
+    "Kelley Blue Book / Cox Automotive, August 2026 ATP report (Sept 10, 2026): average new-vehicle transaction price $50,089, first time above $50,000 since Dec 2025; full-size pickup ATP $67,446; incentives 6.5% of ATP",
+    "Kelley Blue Book, December 2019 ATP report (Jan 3, 2020): average transaction price $38,948. $50,089 - $38,948 = $11,141 (+29%)",
+    "Edmunds, Q2 2026 new-vehicle finance report (July 1, 2026): average amount financed $44,156 (record), average monthly payment $777 (record), 23.9% of financed buyers at 84+ months (record), 36.5% at 73+ months, average APR ~7.0%, average down payment $5,815",
+    "Edmunds, Q2 2026 trade-in report (July 2026): 29.6% of trade-ins toward new vehicles had negative equity, average $6,884; average payment with negative equity $944/month (record)",
+    "Loan math (standard amortization): $44,000 at 7.0% APR -> 60 months ≈ $874/mo, ≈ $8,300 interest; 84 months ≈ $666/mo, ≈ $11,800 interest. Dealer markup 6% -> 8% on $44,000 over 84 months ≈ $645 -> $688/mo ≈ +$3,600 total",
+    "Cox Automotive (via NewsNation, 2025): 36 new models priced at $25,000 or less in Dec 2017 vs 5 in 2025; households earning $150K+ buy 43% of new cars (30% in 2019)",
+    "U.S. tariffs on imported autos and parts (Section 232, 2025): 25% on many imports; 15% for Japan, South Korea and the EU after trade deals (Autotrader / Cars.com tariff trackers)",
+    "CFPB, Auto Finance fact sheet (2013) and CRS IF11192: dealer 'discretionary markup' = difference between lender buy rate and contract rate; lenders commonly cap it around 2–2.5 percentage points",
+    "Haig Partners, Q3 2025 Haig Report: publicly traded dealer groups earned an average $2,534 F&I gross profit per vehicle retailed",
+    "Kelley Blue Book, 'How to Beat Car Depreciation': many new cars lose around 20% of their value in the first year",
+    "Federal Reserve Bank of New York, Household Debt and Credit Report Q2 2026 (Aug 11, 2026): auto loan balances $1.713 trillion",
+    "Fitch Ratings, Auto ABS indices: subprime 60+ day delinquency 6.90% in January 2026 (December 2025 collection period), highest since the index began in 1994; 6.13% in July 2026"
+  ],
+  "beats": [
+    {"id": "o1", "text": "The average new car in America now costs more than fifty thousand dollars. And nearly one in four buyers is paying for it over seven years.", "pause": 0.3},
+    {"id": "o2", "text": "Meet Dave. Dave's old car just died. So he walks into a dealership, and the salesman smiles.", "pause": 0.3},
+    {"id": "o3", "text": "Don't worry about the price, Dave. What monthly payment are you comfortable with?", "pause": 0.3},
+    {"id": "o4", "text": "Dave says: maybe six hundred? The salesman says: no problem. Eighty four months. Sign here.", "pause": 0.3},
+    {"id": "o5", "text": "Sounds great. But that deal could cost Dave thousands more than he thinks. And millions of Americans are already falling behind.", "pause": 0.3},
+    {"id": "o6", "text": "Today: why cars got so expensive, the eighty four month trick, the finance office, and how not to end up underwater.", "pause": 0.6},
+
+    {"id": "c1a", "chapter": "The Monthly Payment Trick", "text": "Let's start with that one question. What monthly payment are you comfortable with?", "pause": 0.4},
+    {"id": "c1b", "text": "It sounds friendly. But it's a magic trick. Because once you only look at the monthly payment, the dealer can change everything else.", "pause": 0.5},
+    {"id": "c1c", "text": "A higher price. A longer loan. A higher interest rate. Extra add-ons. As long as the monthly number fits, you might not notice.", "pause": 0.5},
+    {"id": "c1d", "text": "It's like a pizza shop that asks: how much do you want to pay per slice? Then they cut the pizza into thirty tiny slices.", "pause": 0.5},
+    {"id": "c1e", "text": "Each slice is cheap. The pizza is not.", "pause": 0.9},
+
+    {"id": "c2a", "chapter": "The $50,000 Car", "text": "So how much does a new car really cost today?", "pause": 0.4},
+    {"id": "c2b", "text": "In August twenty twenty six, Kelley Blue Book says the average new vehicle sold for fifty thousand and eighty nine dollars.", "pause": 0.5},
+    {"id": "c2c", "text": "Back in December twenty nineteen, just before the pandemic, it was about thirty nine thousand. That's eleven thousand dollars more, in less than seven years.", "pause": 0.5},
+    {"id": "c2d", "text": "And the most popular vehicles cost even more. The average full size pickup truck now sells for over sixty seven thousand dollars.", "pause": 0.5},
+    {"id": "c2e", "text": "Most people can't pay that in cash. So they borrow. In the spring of twenty twenty six, the average new car loan was forty four thousand dollars. A record, according to Edmunds.", "pause": 0.5},
+    {"id": "c2f", "text": "That's not a car loan anymore. That's a small mortgage with wheels.", "pause": 0.9},
+
+    {"id": "c3a", "chapter": "Why Cars Got So Expensive", "text": "So why did prices jump so much? Four reasons.", "pause": 0.4},
+    {"id": "c3b", "text": "One. The chip shortage. In twenty twenty one, factories couldn't get enough computer chips. Fewer cars were built, and buyers fought over the few that were left.", "pause": 0.5},
+    {"id": "c3c", "text": "Prices shot up. And here's the thing about prices. They love going up, and they hate coming back down.", "pause": 0.5},
+    {"id": "c3d", "text": "Two. Americans switched to trucks and SUVs. They're bigger, and they cost more. Carmakers earn more on them too, so they build more of them.", "pause": 0.5},
+    {"id": "c3e", "text": "Three. Cheap cars are disappearing. In twenty seventeen, there were thirty six new models under twenty five thousand dollars. By twenty twenty five, Cox Automotive counted just five.", "pause": 0.5},
+    {"id": "c3f", "text": "Four. Tariffs. Since twenty twenty five, many imported cars and parts pay a new tax at the border. Twenty five percent on many imports, and fifteen percent from places like Japan and Europe.", "pause": 0.5},
+    {"id": "c3g", "text": "Supporters say tariffs bring factories back home. Critics say buyers end up paying. That's a political question. Now you know the numbers.", "pause": 0.9},
+
+    {"id": "c4a", "chapter": "The 84-Month Trick", "text": "Now back to Dave. How can a seven year loan make a car feel cheaper?", "pause": 0.4},
+    {"id": "c4b", "text": "Let's say Dave borrows forty four thousand dollars at seven percent. That's close to the average rate today.", "pause": 0.5},
+    {"id": "c4c", "text": "Over five years, his payment would be about eight hundred and seventy four dollars a month. Ouch. Too much.", "pause": 0.5},
+    {"id": "c4d", "text": "So the salesman stretches it to eighty four months. Seven years. Now the payment is about six hundred and sixty six dollars. Dave smiles.", "pause": 0.5},
+    {"id": "c4e", "text": "But look at the interest. On the five year loan, Dave pays about eight thousand three hundred dollars in interest. On the seven year loan, about eleven thousand eight hundred.", "pause": 0.5},
+    {"id": "c4f", "text": "Lower payment. Bigger bill. Remember the raccoon from our credit card video? He loves a long loan.", "pause": 0.5},
+    {"id": "c4g", "text": "And Dave isn't alone. In the spring of twenty twenty six, a record twenty four percent of new car buyers took loans of eighty four months or longer. And the average payment hit a record seven hundred and seventy seven dollars.", "pause": 0.9},
+
+    {"id": "c5a", "chapter": "The Finance Office", "text": "But the trick isn't over. After you pick the car, they walk you to a small room. The finance office.", "pause": 0.4},
+    {"id": "c5b", "text": "Here's a secret. The dealer often isn't lending you the money. A bank is. And the bank tells the dealer: we'll lend to Dave at six percent.", "pause": 0.5},
+    {"id": "c5c", "text": "But the dealer can write eight percent on Dave's contract, and keep part of the difference. This is called a dealer markup. And it's usually legal.", "pause": 0.5},
+    {"id": "c5d", "text": "Two extra points on Dave's loan? That's about three thousand six hundred dollars more, over seven years.", "pause": 0.5},
+    {"id": "c5e", "text": "Then come the add-ons. Extended warranty. Paint protection. Tire and wheel plans. Each one is added to the loan, so it only costs a few dollars more a month.", "pause": 0.5},
+    {"id": "c5f", "text": "It adds up. Big dealer groups earn around two thousand five hundred dollars of profit in the finance office, for every car they sell.", "pause": 0.5},
+    {"id": "c5g", "text": "The car is the bait. The loan is the fishing rod.", "pause": 0.9},
+
+    {"id": "c6a", "chapter": "Underwater", "text": "Now let's drive Dave's new car off the lot. And watch what happens to its value.", "pause": 0.4},
+    {"id": "c6b", "text": "A new car loses value fast. Kelley Blue Book says many new cars lose around twenty percent in the first year alone.", "pause": 0.5},
+    {"id": "c6c", "text": "But Dave's loan shrinks slowly, especially a long one. So soon, Dave owes more than the car is worth. That's called being underwater, or negative equity.", "pause": 0.5},
+    {"id": "c6d", "text": "Here's the trap. A few years later, Dave wants a new car. The dealer says: no problem, we'll roll your old debt into the new loan.", "pause": 0.5},
+    {"id": "c6e", "text": "So Dave drives off in a new car, still paying for the old one. It's like carrying a backpack of old debt into every new deal.", "pause": 0.5},
+    {"id": "c6f", "text": "In the spring, nearly three in ten trade-ins were underwater, by six thousand eight hundred and eighty four dollars on average, says Edmunds. Their average payment: nine hundred and forty four dollars a month.", "pause": 0.9},
+
+    {"id": "c7a", "chapter": "The Cracks Are Showing", "text": "So what happens when payments get this big? Some people can't keep up.", "pause": 0.4},
+    {"id": "c7b", "text": "Americans now owe about one point seven trillion dollars in car loans, according to the New York Fed.", "pause": 0.5},
+    {"id": "c7c", "text": "And subprime borrowers, people with weaker credit, are struggling most. In January, the share of subprime car loans sixty or more days late hit six point nine percent, says Fitch Ratings.", "pause": 0.5},
+    {"id": "c7d", "text": "That's the highest in their records, going back thirty two years, to nineteen ninety four. Higher than during the two thousand eight financial crisis.", "pause": 0.5},
+    {"id": "c7e", "text": "It has eased a little since, but it's still very high. And when people stop paying, the car can be taken away. Repossessed. Right out of the driveway.", "pause": 0.5},
+    {"id": "c7f", "text": "For many families, a car isn't a luxury. It's how they get to work. That's why this hurts so much.", "pause": 0.9},
+
+    {"id": "c8a", "chapter": "How Dave Buys Smart", "text": "So what does Dave do now? Education, not advice.", "pause": 0.4},
+    {"id": "c8b", "text": "One. Get pre-approved. Ask your bank or credit union for a loan before you visit the dealer. Now you know the real rate, and the dealer has to beat it.", "pause": 0.5},
+    {"id": "c8c", "text": "Two. Negotiate the total price, not the monthly payment. When they ask what payment you want, say: let's talk about the out the door price.", "pause": 0.5},
+    {"id": "c8d", "text": "Three. Some people use the twenty four ten rule. Twenty percent down. A loan of four years or less. And total car costs under ten percent of your income.", "pause": 0.5},
+    {"id": "c8e", "text": "Four. Say no to add-ons you don't need. You can often buy a warranty later, or somewhere else.", "pause": 0.5},
+    {"id": "c8f", "text": "Five. Consider a good used car. Someone else already paid for the biggest drop in value.", "pause": 0.5},
+    {"id": "c8g", "text": "So Dave walks out, and comes back with a pre-approval. Same car. Five year loan. Suddenly, the salesman stops smiling.", "pause": 0.9},
+
+    {"id": "d1a", "chapter": "Now You Know", "text": "So let's recap.", "pause": 0.4},
+    {"id": "d1b", "text": "One. The average new car now costs over fifty thousand dollars, thanks to chips, bigger vehicles, fewer cheap models, and tariffs.", "pause": 0.5},
+    {"id": "d1c", "text": "Two. Long loans shrink the monthly payment, but grow the total bill. And the finance office is where dealers make a lot of their money.", "pause": 0.5},
+    {"id": "d1d", "text": "Three. Cars lose value fast. Owing more than your car is worth is a trap, and more borrowers are falling behind.", "pause": 0.6},
+    {"id": "d1e", "text": "But here's something strange. While some families fall behind on car loans, others keep buying record numbers of pricey pickups. Households earning over one hundred fifty thousand dollars now buy forty three percent of new cars.", "pause": 0.4},
+    {"id": "d1f", "text": "One America is doing great. Another is struggling. Economists call it the K shaped economy. That's our next video.", "pause": 0.4},
+    {"id": "d1g", "text": "Subscribe, so the raccoon can't sell you paint protection. It's free, with no monthly payment.", "pause": 1.4}
+  ],
+  "youtube": {
+    "title": "Why a $50,000 Car Is Breaking Americans",
+    "alt_titles": [
+      "The 84-Month Car Loan Trick (Why New Cars Cost $50,000)",
+      "Car Loans Explained: Why Americans Owe $1.7 Trillion on Cars"
+    ],
+    "hook": "Why do new cars cost over $50,000, and why are Americans falling behind on car loans? Dave's old car dies, and the dealer offers him an 84-month loan. We follow the whole deal: the monthly payment trick, why car prices jumped (chip shortage, trucks and SUVs, vanishing cheap models, tariffs), the real cost of a 7-year loan, dealer rate markups and add-ons in the finance office, depreciation and negative equity rollover, record subprime auto delinquencies, and how people buy smarter with pre-approval and the 20/4/10 rule.",
+    "tags": [
+      "why are cars so expensive",
+      "84 month car loan",
+      "car loans explained",
+      "average new car price",
+      "negative equity car loan",
+      "dealer finance office tricks",
+      "subprime auto loans",
+      "20 4 10 rule car buying",
+      "how to buy a car smart",
+      "money explained simply",
+      "dave explains money"
+    ],
+    "hashtags": ["#carloans", "#personalfinance", "#money"],
+    "pinned": "How long is your car loan? Reply with the number of months (or CASH if you paid in full) 👇"
+  }
+}

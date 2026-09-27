@@ -1,0 +1,116 @@
+{
+  "id": "ep24",
+  "title": "The K-Shaped Economy: Why the Rich Feel Great and You Feel Broke",
+  "sources": [
+    "Federal Reserve Distributional Financial Accounts, Q2 2026 (via FRED release tables): corporate equities & mutual fund shares held by top 1% = 50.9%, 90th-99th = 37.2% (top 10% = 88.1%), 50th-90th = 11.4%, bottom 50% = 0.6%",
+    "S&P 500 (FRED SP500): 3,257.85 on Jan 2, 2020 -> 7,743.41 on Sep 25, 2026 (+138%, price only)",
+    "S&P CoreLogic Case-Shiller U.S. National Home Price Index (FRED CSUSHPINSA): 212.36 (Jan 2020) -> 336.66 (Jun 2026) = +59%",
+    "BLS CPI Rent of primary residence (FRED CUSR0000SEHA): 337.59 (Jan 2020) -> 449.32 (Aug 2026) = +33%",
+    "BLS CPI Food at home (FRED CUSR0000SAF11): 243.51 (Jan 2020) -> 321.34 (Aug 2026) = +32%",
+    "BLS Average hourly earnings, private (FRED CES0500000003): $28.43 (Jan 2020) -> $37.75 (Aug 2026) = +33%",
+    "Moody's Analytics (Mark Zandi): top 10% of earners = 49.2% of consumer spending in Q2 2025 (record since 1989, ~36% three decades earlier); ~45.5% in Q1 2026. Some economists dispute the method (TheStreet).",
+    "Federal Reserve Bank of New York, Household Debt and Credit Report Q2 2026 (Aug 11, 2026): total debt $18.77T, credit card balances $1.263T; 6.97% of card balances transitioned into serious delinquency (annualized); 3.0% for auto loans, highest since 2010",
+    "Walmart Q4 FY2026 earnings (Feb 2026): majority of share gains from households earning over $100,000 (CEO John Furner; NBC News, Retail Dive)",
+    "Dollar Tree (late 2025): about 60% of new shoppers from households earning over $100,000 (NBC News)",
+    "Origin of 'K-shaped recovery': first used by Twitter user 'IvanTheK' in April 2020, popularized by Peter Atwater (William & Mary); went viral August 2020 (W&M News, 2025)",
+    "Wealth effect: Chodorow-Reich, Nguyen & Sraer, AER: Insights (2021): about 3 cents of extra spending per $1 of stock wealth per year"
+  ],
+  "beats": [
+    {"id": "o1", "text": "Dave and his neighbor Richie live on the same street. Same economy. Same news. Same grocery store.", "pause": 0.3},
+    {"id": "o2", "text": "But since twenty twenty, Richie's stocks more than doubled. His house is worth almost sixty percent more.", "pause": 0.3},
+    {"id": "o3", "text": "Dave doesn't own stocks. He rents. And his rent and groceries both went up about a third.", "pause": 0.3},
+    {"id": "o4", "text": "Richie says: the economy is great! Dave says: what economy?", "pause": 0.3},
+    {"id": "o5", "text": "And here's the weird part. They're both right.", "pause": 0.3},
+    {"id": "o6", "text": "Today: the K shaped economy. Who owns what. Why averages lie. And how Dave can climb onto the upper arm.", "pause": 0.6},
+
+    {"id": "c1a", "chapter": "The Letter K", "text": "First, why a letter K?", "pause": 0.4},
+    {"id": "c1b", "text": "When economists talk about a recovery, they love letters. A V means a quick crash and a quick bounce back. A U means a slow one.", "pause": 0.5},
+    {"id": "c1c", "text": "In April twenty twenty, during the pandemic, someone online suggested a new letter. K. And a professor named Peter Atwater made it famous.", "pause": 0.5},
+    {"id": "c1d", "text": "The idea: after the crash, the economy didn't move together. It split in two.", "pause": 0.5},
+    {"id": "c1e", "text": "One arm of the K goes up. People who own things. Stocks, houses, businesses.", "pause": 0.5},
+    {"id": "c1f", "text": "The other arm goes down, or sideways. People who mostly live on a paycheck, and rent.", "pause": 0.5},
+    {"id": "c1g", "text": "Think of an escalator. Richie is standing on the up escalator. Dave is running up the down escalator. Both are moving. Only one is getting anywhere.", "pause": 0.9},
+
+    {"id": "c2a", "chapter": "Same Street, Two Economies", "text": "Let's look at the real numbers since January twenty twenty.", "pause": 0.4},
+    {"id": "c2b", "text": "Richie's side. The stock market, the S and P five hundred, is up about one hundred and thirty eight percent. More than doubled.", "pause": 0.5},
+    {"id": "c2c", "text": "Home prices across America? Up about fifty nine percent. Richie did nothing. His house just got more valuable while he slept.", "pause": 0.5},
+    {"id": "c2d", "text": "Now Dave's side. Rent is up about thirty three percent. Groceries, about thirty two percent.", "pause": 0.5},
+    {"id": "c2e", "text": "And Dave's pay? Average hourly wages are up about thirty three percent too.", "pause": 0.5},
+    {"id": "c2f", "text": "So Dave isn't really poorer. He's running in place. His raise got eaten by rent and eggs.", "pause": 0.5},
+    {"id": "c2g", "text": "But Richie's things grew two, three, four times faster. The gap between them isn't about working harder. It's about owning.", "pause": 0.9},
+
+    {"id": "c3a", "chapter": "Who Owns the Stocks?", "text": "So who actually owns all those stocks?", "pause": 0.4},
+    {"id": "c3b", "text": "The Federal Reserve tracks this every quarter. Imagine all the stocks in America as one big pizza.", "pause": 0.5},
+    {"id": "c3c", "text": "The richest one percent of households own about fifty one percent of the pizza. More than half.", "pause": 0.5},
+    {"id": "c3d", "text": "Add the next nine percent, and the top ten percent own about eighty eight percent.", "pause": 0.5},
+    {"id": "c3e", "text": "And the bottom half of America? Half of all households? Zero point six percent. Basically, the crumbs.", "pause": 0.5},
+    {"id": "c3f", "text": "So when the news says stocks hit a record, that's mostly great news for the top slice.", "pause": 0.5},
+    {"id": "c3g", "text": "Most people think the stock market is the economy. Nope. It's a scoreboard for people who own stocks.", "pause": 0.9},
+
+    {"id": "c4a", "chapter": "The Wealth Effect", "text": "Now, here's where it gets interesting. Richie feels rich. So he spends like it.", "pause": 0.4},
+    {"id": "c4b", "text": "Economists call this the wealth effect. When your stocks and your house go up, you feel safer, and you spend more.", "pause": 0.5},
+    {"id": "c4c", "text": "One study found about three cents of extra spending for every dollar of new stock wealth, every year. Sounds tiny. But multiply it by trillions.", "pause": 0.5},
+    {"id": "c4d", "text": "Moody's Analytics estimates the top ten percent of earners did about half of all consumer spending in twenty twenty five. A record.", "pause": 0.5},
+    {"id": "c4e", "text": "Three decades ago, it was about thirty six percent. Some economists argue about the exact number. But the direction is clear.", "pause": 0.5},
+    {"id": "c4f", "text": "And look at the stores. Walmart said most of its new customers came from households earning over one hundred thousand dollars. Dollar Tree said about sixty percent of its new shoppers did too.", "pause": 0.5},
+    {"id": "c4g", "text": "So Richie books the fancy vacation, and then bargain hunts for paper towels. Dave was already at the dollar store. Now he's counting every coin.", "pause": 0.9},
+
+    {"id": "c5a", "chapter": "The Bottom Arm", "text": "So what's happening on Dave's arm of the K?", "pause": 0.4},
+    {"id": "c5b", "text": "When the paycheck doesn't stretch, people borrow. Americans now owe about one point two six trillion dollars on credit cards.", "pause": 0.5},
+    {"id": "c5c", "text": "And more people are falling behind. The New York Fed says almost seven percent of credit card balances slid into serious delinquency. That means ninety days or more late.", "pause": 0.5},
+    {"id": "c5d", "text": "Car loans too. The share going seriously late hit about three percent. The highest since twenty ten.", "pause": 0.5},
+    {"id": "c5e", "text": "Remember the raccoon from our credit card video? When Dave falls behind, the raccoon charges interest on interest. The down arm pulls itself further down.", "pause": 0.5},
+    {"id": "c5f", "text": "Meanwhile Richie's money earns money while he sleeps. Same economy. Opposite directions.", "pause": 0.9},
+
+    {"id": "c6a", "chapter": "The Average Trap", "text": "Now, you might hear on TV: the average American is doing great. How can that be?", "pause": 0.4},
+    {"id": "c6b", "text": "Here's an old joke. Ten regular people sit in a bar. Each has about one hundred thousand dollars. The average is one hundred thousand.", "pause": 0.5},
+    {"id": "c6c", "text": "Then Bill Gates walks in. Suddenly, the average person in the bar is worth billions.", "pause": 0.5},
+    {"id": "c6d", "text": "Did anyone else get richer? No. Not one cent. The average just lied to you.", "pause": 0.5},
+    {"id": "c6e", "text": "That's why economists prefer the median. The person right in the middle. Bill Gates can't move the middle.", "pause": 0.5},
+    {"id": "c6f", "text": "So when spending, wealth, or stocks look great on average, ask: great for who? A K shaped economy hides inside averages.", "pause": 0.9},
+
+    {"id": "c7a", "chapter": "Both Sides", "text": "So is this a problem? People disagree. Let's be fair.", "pause": 0.4},
+    {"id": "c7b", "text": "One side says: it's a problem. When half of spending depends on the top ten percent, the whole economy leans on one arm. If stocks fall, that arm stops spending.", "pause": 0.5},
+    {"id": "c7c", "text": "They want things like more homes built, higher pay at the bottom, or different taxes.", "pause": 0.5},
+    {"id": "c7d", "text": "The other side says: rising markets also help regular people with retirement accounts and homes. And forcing things down doesn't make anyone richer.", "pause": 0.5},
+    {"id": "c7e", "text": "They'd rather make it easier to get on the up arm, with lower costs and more growth.", "pause": 0.5},
+    {"id": "c7f", "text": "Which fix is right? That's a political question. But now you know the numbers.", "pause": 0.9},
+
+    {"id": "c8a", "chapter": "How Dave Climbs the K", "text": "So how does Dave move toward the upper arm? This is education, not advice.", "pause": 0.4},
+    {"id": "c8b", "text": "One. Own a small piece of the up escalator. Even a few dollars a month in a simple index fund, or a retirement account with an employer match, means Dave owns stocks too.", "pause": 0.5},
+    {"id": "c8c", "text": "Two. Grow the paycheck. New skills, a certificate, a better job. Wages are the engine for the bottom arm.", "pause": 0.5},
+    {"id": "c8d", "text": "Three. Fire the raccoon. High interest credit card debt is the down escalator. Paying it off first is often the best return Dave can get.", "pause": 0.5},
+    {"id": "c8e", "text": "Four. Build a small emergency fund, so one flat tire doesn't push Dave onto a credit card.", "pause": 0.5},
+    {"id": "c8f", "text": "Dave won't catch Richie overnight. But the goal isn't to beat Richie. It's to stand on the same escalator.", "pause": 0.9},
+
+    {"id": "c9a", "chapter": "Now You Know", "text": "So let's recap.", "pause": 0.4},
+    {"id": "c9b", "text": "One. Since twenty twenty, owners rode the up arm. Stocks and homes jumped, while paychecks just kept up with rent and groceries.", "pause": 0.5},
+    {"id": "c9c", "text": "Two. The top ten percent own about eighty eight percent of stocks, and do around half the spending. Averages hide it.", "pause": 0.5},
+    {"id": "c9d", "text": "Three. Dave climbs by owning a little, growing his pay, and firing the raccoon.", "pause": 0.6},
+    {"id": "c9e", "text": "Next time: Dave buys a coffee and discovers Starbucks is secretly a bank. Holding billions of dollars of your money.", "pause": 0.4},
+    {"id": "c9f", "text": "Subscribe, so Dave can keep explaining money. It's one thing that costs Richie and Dave exactly the same.", "pause": 1.4}
+  ],
+  "youtube": {
+    "title": "The K-Shaped Economy: Why the Rich Feel Great and You Feel Broke",
+    "alt_titles": [
+      "K-Shaped Economy Explained: Top 10% Own 88% of Stocks",
+      "Same Economy, Two Lives: Why the Rich Feel Great and You Don't"
+    ],
+    "hook": "What is the K-shaped economy? Since 2020 the S&P 500 is up ~138% and home prices ~59%, while rent and groceries rose about a third and wages just kept pace. Dave and his rich neighbor live through the same economy completely differently.",
+    "tags": [
+      "k shaped economy",
+      "k shaped recovery explained",
+      "why the rich feel great",
+      "wealth inequality explained",
+      "who owns the stock market",
+      "wealth effect",
+      "top 10 percent consumer spending",
+      "credit card delinquency 2026",
+      "mean vs median",
+      "money explained simply",
+      "dave explains money"
+    ],
+    "hashtags": ["#economy", "#inequality", "#money"],
+    "pinned": "Honest question: which arm of the K are you on right now? UP, DOWN or SIDEWAYS? 👇"
+  }
+}
