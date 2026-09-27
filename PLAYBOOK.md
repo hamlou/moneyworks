@@ -13,6 +13,16 @@ This is the bible for the channel. Series 1 (ep01–ep10) was approved by the ow
 - **Voice:** edge-tts `en-US-AndrewNeural`, rate `-10%`, pitch `+0Hz`. Never change it.
 - **Tone:** calm, friendly, a little funny. Education, never financial advice (say "This is education, not advice" whenever giving tips).
 
+## 1b. TOPIC RULE — "Ahh, that's MY problem!" (owner, Sept 2026 — most important rule for picking topics)
+
+- The owner REJECTED a list of pure news/macro topics (bond yields, Social Security, tariffs, stagflation) as "trending but not interesting".
+- Every topic must hit a **personal pain the viewer already feels in their own wallet**. The viewer must think *"that's literally me"* from the title alone.
+- Title is about **YOU / your money**, in everyday words: "Why You're Broke 3 Days After Payday", "You Got a Raise. So Why Aren't You Richer?", "Why a $12 Burger Costs $28 on DoorDash", "Why Everyone Asks You for a Tip Now", "Why Being Poor Is So Expensive".
+- Formula: **everyday situation + frustration + hidden reason (who profits)**. Company stories only when framed from the viewer's pain (their bill, their fee, their price).
+- Macro/news topics are allowed only when told through the viewer's pain (not "The bond market explained" but "Why your mortgage payment just jumped").
+- Cold open: Dave LIVES the problem first (checks his account, sees the bill), viewer recognises themself, THEN we reveal who profits, THEN a practical fix chapter.
+- Before building, always propose topics to the owner and wait for approval.
+
 ## 2. Recurring cast (keep them consistent)
 
 | Character | Look (Stick `acc`) | Role |
