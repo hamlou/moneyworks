@@ -1,0 +1,114 @@
+{
+  "id": "ep33",
+  "title": "Why Your $12 Burger Costs $28 on DoorDash",
+  "sources": [
+    "DoorDash Q2 2026 results (8-K press release, Aug 5, 2026): Total Orders 970M (+27% Y/Y), Marketplace GOV $33.1B (+36%), revenue $4.5B (+36%), net revenue margin 13.5%, GAAP net income $200M, Adjusted EBITDA $914M",
+    "DoorDash Q4 2025 results: over 35 million DashPass, Wolt+ and Deliveroo Plus members as of Dec 31, 2025",
+    "DoorDash merchant pricing (merchants.doordash.com/en-us/pricing): Basic 15%, Plus 25%, Premier 30% commission on Dasher-delivered app orders; pickup 6%",
+    "DoorDash Help Center, 'What fees do I pay?': service fee usually 15% of subtotal (5% for most eligible DashPass orders); delivery fee varies by merchant; small order fee on subtotals under a minimum",
+    "DoorDash Help Center, 'What is DashPass?': $0 delivery fee and reduced service fees on eligible orders over the minimum subtotal; $9.99/month or $96/year",
+    "DoorDash: Regulatory Response Fee in some cities, e.g. $1.99 in New York City, $4.99 in Seattle (DoorDash newsroom / press coverage, 2024)",
+    "DoorDash Dasher pay (dasher.doordash.com/en-us/about/pay): base pay $2-$10+ per offer, Dashers keep 100% of tips",
+    "Restaurant markups on delivery apps: 2026 Tampa menu analysis (100+ items): flat markups of 30% (Chick-fil-A, Chipotle), 20% (Firehouse Subs), 6% (local independent) - reported by Restaurant Business / FinanceBuzz 2026 comparisons",
+    "Example order math (illustrative): $12 burger, app price $15 (+25%); fees $2.99 delivery + $2.25 service (15%) + $1.99 regulatory + $4 tip + $1.77 tax = $28.00. Split: restaurant $15 - 25% ($3.75) = $11.25; Dasher ~$3 base + $4 tip = $7; DoorDash $3.75 + $2.99 + $2.25 + $1.99 - $3 = $7.98 before its costs; taxes $1.77",
+    "Per-order math: $33.1B / 970M = ~$34 per order; $4.5B / 970M = ~$4.64 revenue per order; $200M / 970M = ~21 cents net profit per order; 970M / 91 days = ~10.7M orders per day",
+    "DashPass math: $9.99/month; saving ~$2.99 delivery + ~10% of service fee per order -> about 2 to 3 orders a month to break even (education, not advice)"
+  ],
+  "beats": [
+    {"id": "o1", "text": "Dave wants a burger. At the restaurant, it costs twelve dollars.", "pause": 0.3},
+    {"id": "o2", "text": "But Dave is tired. So he opens a delivery app, taps order, and looks at the total. Twenty eight dollars.", "pause": 0.3},
+    {"id": "o3", "text": "Same burger. More than double the price.", "pause": 0.3},
+    {"id": "o4", "text": "And here's the weird part. The restaurant gets less than twelve dollars. The driver gets about seven.", "pause": 0.3},
+    {"id": "o5", "text": "So where did the rest go?", "pause": 0.35},
+    {"id": "o6", "text": "Today: every line on that receipt, who really gets each slice, and how to pay a lot less.", "pause": 0.6},
+
+    {"id": "c1a", "chapter": "Dave's Twenty Eight Dollar Burger", "text": "Let's read Dave's receipt, one line at a time.", "pause": 0.4},
+    {"id": "c1b", "text": "First line: the burger. Fifteen dollars. Wait. Wasn't it twelve?", "pause": 0.5},
+    {"id": "c1c", "text": "Then a delivery fee. Two ninety nine. Then a service fee. Two twenty five.", "pause": 0.5},
+    {"id": "c1d", "text": "Then something called a regulatory response fee. One ninety nine. Dave has no idea what that is.", "pause": 0.5},
+    {"id": "c1e", "text": "Then taxes, one seventy seven. And a tip for the driver, four dollars.", "pause": 0.5},
+    {"id": "c1f", "text": "Total: twenty eight dollars. Dave's twelve dollar burger just grew a second burger's worth of fees. Except he doesn't get the second burger.", "pause": 0.9},
+
+    {"id": "c2a", "chapter": "The Secret Menu Markup", "text": "Let's start with the sneakiest line. The burger itself.", "pause": 0.4},
+    {"id": "c2b", "text": "On the app, many restaurants charge more than in the store. Same burger, higher price. And most people never notice.", "pause": 0.5},
+    {"id": "c2c", "text": "Why? Because the app charges the restaurant a commission on every order. DoorDash's own price list says fifteen, twenty five, or thirty percent.", "pause": 0.5},
+    {"id": "c2d", "text": "Imagine selling lemonade for one dollar, and a guy at the gate takes thirty cents from every cup. What do you do? You raise the price.", "pause": 0.5},
+    {"id": "c2e", "text": "That's exactly what restaurants do. One twenty twenty six study compared over one hundred menu items. Some big chains charged thirty percent more on the app. One small local place charged just six percent more.", "pause": 0.5},
+    {"id": "c2f", "text": "In Dave's case, twelve dollars became fifteen. That's a twenty five percent markup, hiding inside the price. It's not even called a fee.", "pause": 0.9},
+
+    {"id": "c3a", "chapter": "The Fee Zoo", "text": "Most people think the delivery fee is the only extra. Nope. It's a whole zoo.", "pause": 0.4},
+    {"id": "c3b", "text": "The delivery fee pays for the trip. It changes by restaurant and distance. Sometimes it says zero, to pull you in.", "pause": 0.5},
+    {"id": "c3c", "text": "The service fee is different. DoorDash says it's usually fifteen percent of your food. So the bigger the order, the bigger the fee.", "pause": 0.5},
+    {"id": "c3d", "text": "Order something tiny, and there's a small order fee too. About two dollars, for daring to be hungry for only one thing.", "pause": 0.5},
+    {"id": "c3e", "text": "And the regulatory response fee? Some cities passed laws that make apps pay drivers more. In New York City, DoorDash passes part of that to you. One ninety nine per order.", "pause": 0.5},
+    {"id": "c3f", "text": "Remember the raccoon at the toll booth, from our credit card video? This is a raccoon with a whole row of toll booths. Each one only takes a little. So it never feels like a lot.", "pause": 0.5},
+    {"id": "c3g", "text": "That's the trick. Small fees, split into many lines, hurt less than one big number. Economists call it drip pricing.", "pause": 0.9},
+
+    {"id": "c4a", "chapter": "Who Gets Each Slice", "text": "So who actually gets Dave's twenty eight dollars? Let's cut it like a pizza.", "pause": 0.4},
+    {"id": "c4b", "text": "Slice one: the restaurant. It charged fifteen dollars. But the app takes a twenty five percent commission. So the restaurant keeps about eleven twenty five.", "pause": 0.5},
+    {"id": "c4c", "text": "Less than the twelve dollars it gets from you in the store. The markup didn't make them rich. It just helped them stay close to even.", "pause": 0.5},
+    {"id": "c4d", "text": "Slice two: the driver. DoorDash says base pay starts around two dollars per order, plus one hundred percent of the tip. Here, that's roughly seven dollars.", "pause": 0.5},
+    {"id": "c4e", "text": "Slice three: the government. One seventy seven in taxes.", "pause": 0.5},
+    {"id": "c4f", "text": "And slice four: the app. The commission, the delivery fee, the service fee, and the regulatory fee, minus the driver's base pay. About eight dollars.", "pause": 0.5},
+    {"id": "c4g", "text": "So in our example, the app keeps more than the driver who actually drove to Dave's door.", "pause": 0.9},
+
+    {"id": "c5a", "chapter": "How DoorDash Makes Money", "text": "Now let's zoom out, from Dave's order to the whole company.", "pause": 0.4},
+    {"id": "c5b", "text": "In the second quarter of twenty twenty six, DoorDash handled nine hundred seventy million orders. That's over ten million orders every single day.", "pause": 0.5},
+    {"id": "c5c", "text": "Those orders added up to thirty three point one billion dollars of food and stuff.", "pause": 0.5},
+    {"id": "c5d", "text": "DoorDash kept four point five billion of it as revenue, after paying drivers. That's thirteen point five percent. They call it the take rate.", "pause": 0.5},
+    {"id": "c5e", "text": "On average, that's about four dollars and sixty cents per order.", "pause": 0.5},
+    {"id": "c5f", "text": "But here's the surprise. After paying for support, insurance, refunds, engineers and lots of ads, the actual profit was two hundred million dollars. About twenty one cents per order.", "pause": 0.5},
+    {"id": "c5g", "text": "So the app isn't secretly swimming in your fees like a cartoon rich duck. It's a giant machine with thin slices, and billions of orders.", "pause": 0.9},
+
+    {"id": "c6a", "chapter": "The DashPass Trick", "text": "So how do you make a thin slice bigger? You get people to order more often.", "pause": 0.4},
+    {"id": "c6b", "text": "Enter the subscription. DashPass costs nine ninety nine a month. In return, delivery fees drop to zero on bigger orders, and service fees go down.", "pause": 0.5},
+    {"id": "c6c", "text": "By the end of twenty twenty five, DoorDash had over thirty five million members across its subscription programs.", "pause": 0.5},
+    {"id": "c6d", "text": "It works like a gym membership. Once you've paid, you want to get your money's worth. So you order again. And again.", "pause": 0.5},
+    {"id": "c6e", "text": "And notice what it doesn't remove. The menu markup is still there. The tip is still there. The small order fee is still there.", "pause": 0.5},
+    {"id": "c6f", "text": "The math: if you save around four dollars an order, you need two or three orders a month just to break even. Order once a month? You're paying for a gym you never visit.", "pause": 0.9},
+
+    {"id": "c7a", "chapter": "Is Delivery Ever Worth It?", "text": "Now, to be fair, delivery is not a scam. Somebody really drove across town with Dave's burger.", "pause": 0.4},
+    {"id": "c7b", "text": "If Dave is sick, stuck at work, or has no car, sixteen extra dollars might be totally worth it. That's paying someone for their time and gas.", "pause": 0.5},
+    {"id": "c7c", "text": "The problem is when it becomes a habit. Sixteen dollars of extra costs, twice a week, is over one thousand six hundred dollars a year.", "pause": 0.5},
+    {"id": "c7d", "text": "That's like buying a second burger every time, and throwing it straight in the trash.", "pause": 0.5},
+    {"id": "c7e", "text": "So the question isn't, is delivery bad. The question is, do you know what you're paying for?", "pause": 0.9},
+
+    {"id": "c8a", "chapter": "How to Pay Less", "text": "So how can you pay less? Remember, this is education, not advice.", "pause": 0.4},
+    {"id": "c8b", "text": "One. Use pickup. You skip the delivery fee, the service fee, and the driver. And many restaurants pay a much smaller commission on pickup orders.", "pause": 0.5},
+    {"id": "c8c", "text": "Two. Compare with the real menu. Check the restaurant's own website or a paper menu. If the app price is higher, now you know.", "pause": 0.5},
+    {"id": "c8d", "text": "Three. Order straight from the restaurant's own site. Some use their own delivery, with lower markups. And the restaurant keeps more of your money.", "pause": 0.5},
+    {"id": "c8e", "text": "Four. Do the subscription math before you subscribe. Count how often you really order.", "pause": 0.5},
+    {"id": "c8f", "text": "Five. If you do order, order together. One bigger group order spreads the fees across more people. Just remember the service fee grows with the food.", "pause": 0.5},
+    {"id": "c8g", "text": "And six. Tip the driver fairly. They're the one slice that actually brought you dinner.", "pause": 0.9},
+
+    {"id": "r1", "chapter": "Now You Know", "text": "So let's recap.", "pause": 0.4},
+    {"id": "r2", "text": "One. Apps charge restaurants up to thirty percent, so many restaurants raise their menu prices on the app.", "pause": 0.5},
+    {"id": "r3", "text": "Two. The delivery fee is just one of many fees. Small fees on many lines add up to a lot.", "pause": 0.5},
+    {"id": "r4", "text": "Three. Pickup, comparing menus, and ordering direct can cut the cost a lot.", "pause": 0.6},
+    {"id": "r5", "text": "Next time, Dave buys a bottle of water at a self checkout. And the screen asks him for a twenty five percent tip. Why does everyone want a tip now?", "pause": 0.4},
+    {"id": "r6", "text": "Subscribe, so Dave can keep explaining money. It's free. No delivery fee. No service fee. No regulatory response fee.", "pause": 1.4}
+  ],
+  "youtube": {
+    "title": "Why Your $12 Burger Costs $28 on DoorDash",
+    "alt_titles": [
+      "DoorDash Fees Explained: Where Your $28 Actually Goes",
+      "The Restaurant Gets $11. The App Gets $8. You Pay $28."
+    ],
+    "hook": "Why does a $12 burger cost $28 on a delivery app? Dave orders dinner and reads every line of the receipt: the hidden menu markup, delivery fee, service fee, regulatory response fee, taxes and tip. We explain restaurant commissions of 15-30%, drip pricing, who really gets each slice of the $28, how DoorDash makes money (970 million orders and a 13.5% take rate in Q2 2026, about 21 cents of profit per order), the DashPass subscription math, and simple ways to pay less, like pickup and ordering direct.",
+    "tags": [
+      "why is doordash so expensive",
+      "doordash fees explained",
+      "delivery app fees",
+      "how doordash makes money",
+      "restaurant menu markup delivery apps",
+      "is dashpass worth it",
+      "drip pricing explained",
+      "uber eats vs pickup",
+      "food delivery cost breakdown",
+      "money explained simply",
+      "dave explains money"
+    ],
+    "hashtags": ["#doordash", "#fooddelivery", "#money"],
+    "pinned": "What's the MOST you've ever paid in fees on one delivery order? Drop the number below 👇"
+  }
+}
