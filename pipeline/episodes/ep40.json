@@ -1,0 +1,372 @@
+{
+  "id": "ep40",
+  "title": "Why Your Hospital Bill Is So Expensive (The $40 Aspirin)",
+  "sources": [
+    "Dave's bill ($40 aspirin, $3,200 total, reduced to under $2,000) is an illustrative example, not a specific real bill",
+    "CMS National Health Expenditures 2024 (released Dec 2025): $5.3 trillion, $15,474 per person, 18.0% of GDP; hospital care 31% ($1.6T), physician & clinical 21% ($1.1T), retail Rx 9% ($467B)",
+    "Peterson-KFF Health System Tracker, 'How does health spending in the U.S. compare to other countries?' (2024, OECD basis): U.S. $14,885 per person vs $7,371 average for comparable wealthy countries; prices appear to be the main driver, utilization often lower",
+    "Bai & Anderson, Health Affairs 2016 (Johns Hopkins): average U.S. hospital charge-to-cost ratio 4.32 (2013 data); Bai & Anderson, Health Affairs 2015: 50 hospitals with charge-to-cost ratios above 10",
+    "RAND Hospital Price Transparency Study Round 5 (May 13, 2024): private plans paid on average 254% of Medicare prices for hospital services in 2022",
+    "ACA medical loss ratio rule (CMS/CCIIO): insurers must spend at least 80% (individual & small group) or 85% (large group) of premiums on care and quality improvement",
+    "FTC Interim Staff Report on PBMs (July 2024): top 3 PBMs processed nearly 80% of ~6.6 billion U.S. prescriptions in 2023",
+    "FTC Second Interim Staff Report on PBMs (Jan 2025): Big 3 PBMs marked up many specialty generic drugs (incl. cancer, HIV) by hundreds and thousands of percent; about $7.3 billion in revenue above acquisition cost, 2017–2022",
+    "CMS No Surprises Act key protections (effective Jan 1, 2022; bipartisan Consolidated Appropriations Act 2021): in-network cost sharing for most emergency care; no balance billing by out-of-network providers at in-network facilities without written consent; good faith estimates for uninsured/self-pay with patient-provider dispute if bill ≥ $400 above estimate; ground ambulances not covered; No Surprises Help Desk 1-800-985-3059",
+    "KFF Employer Health Benefits Survey 2025 (Oct 2025): average family premium $26,993 (worker contribution $6,850), single $9,325; average single deductible $1,886, up 43% over 10 years; 34% of covered workers have a deductible of $2,000+; 33% enrolled in HDHP/SO",
+    "Peterson-KFF, 'The burden of medical debt in the United States': about 20 million adults owe medical debt; at least $220 billion total; ~3 million owe more than $10,000",
+    "Equifax, Experian, TransUnion (2022–2023): paid medical collections and medical collections under $500 removed from credit reports; CFPB medical-debt rule (finalized Jan 7, 2025) vacated by U.S. District Court, E.D. Texas, July 11, 2025",
+    "IRS section 501(r): nonprofit hospitals must have a written financial assistance policy; KFF: value of nonprofit hospital tax exemption ≈ $28 billion in 2020",
+    "CMS Hospital Price Transparency rule (since Jan 1, 2021): hospitals must post standard charges incl. negotiated rates; Transparency in Coverage rule: most plans must offer online cost-estimator tools"
+  ],
+  "beats": [
+    {
+      "id": "o1",
+      "text": "Dave cut his hand in the kitchen. Nothing serious. A few stitches at the hospital, and he was home by dinner.",
+      "pause": 0.3
+    },
+    {
+      "id": "o2",
+      "text": "A month later, the bill arrives. And one line makes him spit out his coffee.",
+      "pause": 0.3
+    },
+    {
+      "id": "o3",
+      "text": "Aspirin. One tablet. Forty dollars. A whole bottle at the store costs less than that.",
+      "pause": 0.3
+    },
+    {
+      "id": "o4",
+      "text": "And it gets worse. The total bill? Three thousand two hundred dollars. For a few stitches.",
+      "pause": 0.35
+    },
+    {
+      "id": "o5",
+      "text": "Americans spend more on health care than anyone on Earth. About fifteen thousand dollars per person, every year.",
+      "pause": 0.3
+    },
+    {
+      "id": "o6",
+      "text": "Today: the fake price list, the secret deals, the middlemen, surprise bills, and how Dave fought back.",
+      "pause": 0.6
+    },
+    {
+      "id": "c1a",
+      "chapter": "The Fake Price List",
+      "text": "First, where did that forty dollar aspirin come from? Every hospital has a giant price list. It's called the chargemaster.",
+      "pause": 0.4
+    },
+    {
+      "id": "c1b",
+      "text": "It lists a price for everything. Every pill. Every bandage. Every hour in a bed. Tens of thousands of items.",
+      "pause": 0.5
+    },
+    {
+      "id": "c1c",
+      "text": "But here's the weird part. Almost nobody pays those prices. It's like the price on the back of a hotel room door. The number is there, but hardly anyone pays it.",
+      "pause": 0.5
+    },
+    {
+      "id": "c1d",
+      "text": "Researchers at Johns Hopkins found that, on average, hospitals charged about four dollars and thirty cents for every dollar their care actually cost. Some charged over ten dollars.",
+      "pause": 0.5
+    },
+    {
+      "id": "c1e",
+      "text": "So why have a fake price at all? Because it's the starting point for a giant negotiation.",
+      "pause": 0.5
+    },
+    {
+      "id": "c1f",
+      "text": "It's like a street market where the seller asks one hundred dollars for a T shirt. Everyone knows it's not the real price. Except the tourist.",
+      "pause": 0.5
+    },
+    {
+      "id": "c1g",
+      "text": "And in health care, the tourist is often the person with no insurance. They can get billed the full list price.",
+      "pause": 0.9
+    },
+    {
+      "id": "c2a",
+      "chapter": "The Secret Deals",
+      "text": "So what do insurance companies pay? They negotiate secret discounts, with each hospital, one by one.",
+      "pause": 0.4
+    },
+    {
+      "id": "c2b",
+      "text": "That's why the same scan can have wildly different prices at two hospitals in the same city. Even with the same insurance.",
+      "pause": 0.5
+    },
+    {
+      "id": "c2c",
+      "text": "The research group RAND studied what private health plans paid hospitals. On average, two hundred fifty four percent of what Medicare would pay. For the same care, at the same hospitals.",
+      "pause": 0.5
+    },
+    {
+      "id": "c2d",
+      "text": "Medicare is the government plan for older Americans. It sets its own prices. Private plans have to bargain. And big hospital systems have a lot of bargaining power.",
+      "pause": 0.5
+    },
+    {
+      "id": "c2e",
+      "text": "Hospitals say Medicare often pays less than their costs, so private patients make up the difference. Critics say it's mostly market power. That's a debate. Now you know the numbers.",
+      "pause": 0.9
+    },
+    {
+      "id": "c3a",
+      "chapter": "The Middlemen",
+      "text": "Now, meet the middlemen. Remember the raccoon from our credit card video? The one who takes a cut of every swipe? Health care has a few raccoons.",
+      "pause": 0.4
+    },
+    {
+      "id": "c3b",
+      "text": "The first is your insurance company. It collects your premiums, negotiates prices, and pays the bills.",
+      "pause": 0.5
+    },
+    {
+      "id": "c3c",
+      "text": "By law, most insurers must spend at least eighty to eighty five percent of premiums on actual care. The rest can go to paperwork, salaries, and profit.",
+      "pause": 0.5
+    },
+    {
+      "id": "c3d",
+      "text": "The second raccoon is less famous. Pharmacy benefit managers. P B Ms. They sit between drug makers, insurers and pharmacies, and decide which drugs are covered, and at what price.",
+      "pause": 0.5
+    },
+    {
+      "id": "c3e",
+      "text": "The Federal Trade Commission found that just three of them handled nearly eighty percent of all prescriptions in America.",
+      "pause": 0.5
+    },
+    {
+      "id": "c3f",
+      "text": "The F T C also said the big three marked up some generic drugs for cancer and H I V by hundreds, even thousands of percent. Over seven billion dollars in markups, in six years.",
+      "pause": 0.5
+    },
+    {
+      "id": "c3g",
+      "text": "The P B Ms say they save money, by squeezing discounts out of drug makers. But when a maze gets this complicated, it's a great place for a raccoon to hide.",
+      "pause": 0.9
+    },
+    {
+      "id": "c4a",
+      "chapter": "Why America Pays Double",
+      "text": "So how does America compare? In twenty twenty four, the U S spent five point three trillion dollars on health care. That's eighteen percent of the whole economy.",
+      "pause": 0.4
+    },
+    {
+      "id": "c4b",
+      "text": "Per person, that's about fifteen thousand five hundred dollars a year, says the government's own count.",
+      "pause": 0.5
+    },
+    {
+      "id": "c4c",
+      "text": "Other rich countries spend way less. Using the same yardstick, Peterson and K F F found America at about fifteen thousand, and similar rich countries at about seven thousand four hundred. Roughly half.",
+      "pause": 0.5
+    },
+    {
+      "id": "c4d",
+      "text": "Most people think Americans just go to the doctor way more. Nope. For a lot of care, Americans use about the same, or even less. The big difference is the prices.",
+      "pause": 0.5
+    },
+    {
+      "id": "c4e",
+      "text": "Hospital care is the biggest slice, about one third of all spending. Doctors and clinics are next. Then prescription drugs.",
+      "pause": 0.5
+    },
+    {
+      "id": "c4f",
+      "text": "Other countries hold prices down in different ways. Some with government plans, some with strict rules. Each system has trade-offs, like waiting lists or higher taxes. That's a political question. Now you know the numbers.",
+      "pause": 0.9
+    },
+    {
+      "id": "c5a",
+      "chapter": "Surprise!",
+      "text": "Now, the scariest bill of all. The surprise bill.",
+      "pause": 0.4
+    },
+    {
+      "id": "c5b",
+      "text": "Imagine Dave picks an in-network hospital. He does everything right. But the doctor who treats him is out of network. Weeks later, a separate bill arrives.",
+      "pause": 0.5
+    },
+    {
+      "id": "c5c",
+      "text": "For years, this happened to millions of people. So in twenty twenty two, a new law took effect. The No Surprises Act. And it passed with support from both parties.",
+      "pause": 0.5
+    },
+    {
+      "id": "c5d",
+      "text": "Now, for most emergency care, you only pay your normal in-network share. Even if the hospital or doctor is out of network.",
+      "pause": 0.5
+    },
+    {
+      "id": "c5e",
+      "text": "And at an in-network hospital, out-of-network doctors usually can't bill you extra, unless you agree in writing ahead of time.",
+      "pause": 0.5
+    },
+    {
+      "id": "c5f",
+      "text": "If you have no insurance, you can ask for a good faith estimate before planned care. If the bill comes in at least four hundred dollars higher, you can dispute it.",
+      "pause": 0.5
+    },
+    {
+      "id": "c5g",
+      "text": "One catch. Ground ambulances are mostly not covered yet. So that surprise can still show up.",
+      "pause": 0.9
+    },
+    {
+      "id": "c6a",
+      "chapter": "The Deductible Gate",
+      "text": "But even with insurance, many people still pay a lot. Because of the deductible.",
+      "pause": 0.4
+    },
+    {
+      "id": "c6b",
+      "text": "A deductible is the amount you pay yourself, before your insurance starts paying most bills. Think of it as a gate. You pay everything, until you've paid enough to open it.",
+      "pause": 0.5
+    },
+    {
+      "id": "c6c",
+      "text": "According to K F F, the average deductible for a worker with single coverage is one thousand eight hundred eighty six dollars. That's up forty three percent in ten years.",
+      "pause": 0.5
+    },
+    {
+      "id": "c6d",
+      "text": "And about one in three workers now has a deductible of two thousand dollars or more.",
+      "pause": 0.5
+    },
+    {
+      "id": "c6e",
+      "text": "Meanwhile, the average family plan through work costs almost twenty seven thousand dollars a year. Workers pay about six thousand eight hundred of that, straight from their paychecks.",
+      "pause": 0.5
+    },
+    {
+      "id": "c6f",
+      "text": "Your employer pays the rest. And that's money that could have been part of your raise. So even if you never see a bill, you're paying.",
+      "pause": 0.5
+    },
+    {
+      "id": "c6g",
+      "text": "That's why Dave's bill hurts so much. With a two thousand dollar deductible, most of it comes out of his own pocket.",
+      "pause": 0.9
+    },
+    {
+      "id": "c7a",
+      "chapter": "When Bills Become Debt",
+      "text": "For millions of people, these bills don't get paid. They become debt.",
+      "pause": 0.4
+    },
+    {
+      "id": "c7b",
+      "text": "K F F estimates about twenty million adults in America owe medical debt. Together, at least two hundred twenty billion dollars.",
+      "pause": 0.5
+    },
+    {
+      "id": "c7c",
+      "text": "About three million people owe more than ten thousand dollars. And it's not just the uninsured. Deductibles push plenty of insured people into debt too.",
+      "pause": 0.5
+    },
+    {
+      "id": "c7d",
+      "text": "Medical debt used to sit on credit reports for years. Since twenty twenty three, the big credit bureaus stopped reporting paid medical debt, and debts under five hundred dollars.",
+      "pause": 0.5
+    },
+    {
+      "id": "c7e",
+      "text": "A federal rule to remove all medical debt from credit reports was struck down by a court in twenty twenty five. Some states now have their own rules.",
+      "pause": 0.9
+    },
+    {
+      "id": "c8a",
+      "chapter": "How Dave Fought Back",
+      "text": "So what did Dave do about his forty dollar aspirin? Remember, this is education, not advice.",
+      "pause": 0.4
+    },
+    {
+      "id": "c8b",
+      "text": "One. He asked for an itemized bill. Every line. Every code. Mistakes happen, like charges for things you never got.",
+      "pause": 0.5
+    },
+    {
+      "id": "c8c",
+      "text": "Two. He called and negotiated. What's the cash price? Can you lower it? Can I get a payment plan with no interest? Many hospitals say yes.",
+      "pause": 0.5
+    },
+    {
+      "id": "c8d",
+      "text": "Three. He asked about financial assistance. Nonprofit hospitals must have a financial assistance policy by law. And their tax breaks are worth about twenty eight billion dollars a year, says K F F. Many people qualify, and never ask.",
+      "pause": 0.5
+    },
+    {
+      "id": "c8e",
+      "text": "Four. Before planned care, check prices. Hospitals must post their prices online, and most insurers have a cost estimator tool.",
+      "pause": 0.5
+    },
+    {
+      "id": "c8f",
+      "text": "Five. Know your No Surprises rights. If a bill looks wrong, you can call the federal No Surprises help desk, or file a complaint.",
+      "pause": 0.5
+    },
+    {
+      "id": "c8g",
+      "text": "Dave's bill dropped from three thousand two hundred dollars to under two thousand. And the aspirin? Removed. Turns out, he never even took it.",
+      "pause": 0.9
+    },
+    {
+      "id": "d1a",
+      "chapter": "Now You Know",
+      "text": "So let's recap.",
+      "pause": 0.4
+    },
+    {
+      "id": "d1b",
+      "text": "One. Hospital list prices are mostly a starting point. What gets paid depends on secret deals, and private plans pay about two and a half times what Medicare pays.",
+      "pause": 0.5
+    },
+    {
+      "id": "d1c",
+      "text": "Two. Middlemen take their cut, and America spends about twice as much per person as other rich countries, mostly because of higher prices.",
+      "pause": 0.5
+    },
+    {
+      "id": "d1d",
+      "text": "Three. You have rights. Ask for an itemized bill, negotiate, ask about financial assistance, and know the No Surprises Act.",
+      "pause": 0.7
+    },
+    {
+      "id": "d1e",
+      "text": "What's the weirdest charge you've ever seen on a medical bill? Tell us in the comments. Dave wants to see it.",
+      "pause": 0.5
+    },
+    {
+      "id": "d1f",
+      "text": "And subscribe. It's free. No deductible. No surprise bill. Not even a forty dollar aspirin.",
+      "pause": 1.4
+    }
+  ],
+  "youtube": {
+    "title": "Why Your Hospital Bill Is So High (The $40 Aspirin)",
+    "alt_titles": [
+      "Why Healthcare Costs So Much in America (Explained Simply)",
+      "Your Hospital Charged $40 for Aspirin. Here's Why."
+    ],
+    "hook": "Why is your hospital bill so high? A $40 aspirin, secret negotiated prices, middlemen and deductibles. Here's where your healthcare money goes, and how to fight back.",
+    "tags": [
+      "why is healthcare so expensive",
+      "hospital bill explained",
+      "chargemaster explained",
+      "no surprises act",
+      "how to negotiate medical bills",
+      "medical debt",
+      "pbm explained",
+      "health insurance deductible explained",
+      "us healthcare vs other countries",
+      "itemized hospital bill",
+      "dave explains money"
+    ],
+    "hashtags": [
+      "#healthcare",
+      "#personalfinance",
+      "#money"
+    ]
+  }
+}
