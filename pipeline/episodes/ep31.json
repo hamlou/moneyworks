@@ -1,0 +1,114 @@
+{
+  "id": "ep31",
+  "title": "Why You're Broke 3 Days After Payday",
+  "sources": [
+    "CNBC|SurveyMonkey Your Money Survey, July 2026: 63% of Americans say they live paycheck to paycheck (other 2026 surveys range from ~48% (Debt.com) to ~62% (PYMNTS/LendingClub))",
+    "Federal Reserve, Economic Well-Being of U.S. Households in 2025 (SHED), May 2026: 63% of adults would cover a $400 emergency expense exclusively with cash or its equivalent (so ~37% would not)",
+    "U.S. Bureau of Labor Statistics, Consumer Expenditures 2024 (released Dec 19, 2025): average annual expenditures $78,535; housing $26,266 (~33%); transportation $13,318; food at home $6,224; food away from home $3,945",
+    "U.S. Bureau of Labor Statistics, Current Employment Statistics, length of pay period (Feb 2023): biweekly is most common, 43.0% of private establishments; weekly 27.0%",
+    "Social Security Administration / IRS: employee payroll tax 6.2% Social Security + 1.45% Medicare = 7.65%",
+    "IRS Rev. Proc. 2025-32: 2026 standard deduction $16,100 (single); 10% bracket up to $12,400, 12% up to $50,400",
+    "KFF 2025 Employer Health Benefits Survey: average worker contribution for single coverage $1,440/yr (~$55 per biweekly paycheck)",
+    "C+R Research subscription survey: people guessed they spend ~$86/month on subscriptions; itemized total ~$219/month",
+    "Gelman, Kariv, Shapiro, Silverman, Tadelis (2014), 'Harnessing naturally occurring data to measure the response of spending to income', Science 345(6193): spending jumps on payday, even for people with savings",
+    "Financial Health Network (2025): overdraft and NSF fee revenue ~$12.1 billion in 2024 ($6.7B banks, $5.4B credit unions); CFPB overdraft rule repealed by Congress under the Congressional Review Act in 2025 (CRS IN12513)",
+    "Thaler & Benartzi (2004), Save More Tomorrow, Journal of Political Economy: automatic saving raises saving rates",
+    "Math (example paycheck, $52,000/yr, single, biweekly): gross $2,000; Social Security $124; Medicare $29; federal withholding ~$156 (($52,000 - $16,100) taxed 10%/12% = ~$4,060/yr / 26); state ~$60 (example, varies); health insurance ~$55 -> take-home ~$1,576. Weekend: $85 + $48 + $120 + $45 + $60 + $1,100 + $80 = $1,538 -> $38 left. Latte: $6 x 5 x 52 = $1,560/yr. $3,945 / 52 = ~$76/week eating out. $26,266 / $78,535 = 33%."
+  ],
+  "beats": [
+    {"id": "o1", "text": "Friday. Dave gets paid. His bank app says one thousand five hundred seventy six dollars. He feels rich.", "pause": 0.3},
+    {"id": "o2", "text": "Monday morning, he checks again. Thirty eight dollars.", "pause": 0.3},
+    {"id": "o3", "text": "He didn't buy a car. He didn't go to Vegas. He just had a normal weekend.", "pause": 0.3},
+    {"id": "o4", "text": "And Dave is not alone. In a July twenty twenty six CNBC survey, sixty three percent of Americans said they live paycheck to paycheck.", "pause": 0.3},
+    {"id": "o5", "text": "Wait, it gets worse. Some of Dave's money was gone before it even reached his account.", "pause": 0.35},
+    {"id": "o6", "text": "Today: the five leaks that drain your paycheck, who profits from them, and a simple plan to plug them.", "pause": 0.6},
+
+    {"id": "c1a", "chapter": "The Check That Shrinks", "text": "Leak number one happens before you see a single dollar.", "pause": 0.4},
+    {"id": "c1b", "text": "Dave's job pays fifty two thousand dollars a year. He's paid every two weeks, like most American workers. So each paycheck should be two thousand dollars.", "pause": 0.5},
+    {"id": "c1c", "text": "But first, Social Security takes six point two percent. That's one hundred twenty four dollars. Medicare takes another twenty nine.", "pause": 0.5},
+    {"id": "c1d", "text": "Then federal income tax, about one hundred fifty six. State tax, if your state has one. And his share of health insurance, about fifty five dollars.", "pause": 0.5},
+    {"id": "c1e", "text": "Two thousand dollars becomes about one thousand five hundred seventy six. Over four hundred dollars gone, before Dave even wakes up.", "pause": 0.5},
+    {"id": "c1f", "text": "It's like ordering a large pizza, and it arrives with two slices already missing. Nobody stole them. They were just never yours.", "pause": 0.9},
+
+    {"id": "c2a", "chapter": "All the Bills Wake Up at Once", "text": "Leak number two is timing.", "pause": 0.4},
+    {"id": "c2b", "text": "Dave gets paid every two weeks. But his bills come once a month. And most of them love the first of the month.", "pause": 0.5},
+    {"id": "c2c", "text": "This month, payday landed on Friday the twenty ninth. So on Monday the first, rent came out. One thousand one hundred dollars. Then his phone bill.", "pause": 0.5},
+    {"id": "c2d", "text": "It's like Dave's cat. You put food in the bowl, and suddenly every cat in the neighborhood shows up at the same time.", "pause": 0.5},
+    {"id": "c2e", "text": "So one paycheck pays rent, and almost nothing else. The other paycheck has to cover everything, for a whole month.", "pause": 0.5},
+    {"id": "c2f", "text": "Dave isn't bad with money. His calendar is just working against him.", "pause": 0.9},
+
+    {"id": "c3a", "chapter": "The Quiet Subscriptions", "text": "Leak number three is quiet. Very quiet.", "pause": 0.4},
+    {"id": "c3b", "text": "Remember our subscriptions video? Streaming. Music. Cloud storage. That fitness app Dave opened once in January.", "pause": 0.5},
+    {"id": "c3c", "text": "In one survey by C plus R Research, people guessed they spend about eighty six dollars a month on subscriptions. When they listed every single one, the real number was about two hundred nineteen.", "pause": 0.5},
+    {"id": "c3d", "text": "That's like a dripping tap. One drop is nothing. But leave it running all year, and your water bill has a surprise.", "pause": 0.5},
+    {"id": "c3e", "text": "And guess which day many subscriptions like to charge? Right around payday. When there's money in the account.", "pause": 0.9},
+
+    {"id": "c4a", "chapter": "Rich for a Day", "text": "Leak number four lives inside Dave's head.", "pause": 0.4},
+    {"id": "c4b", "text": "On Friday, Dave's account looked huge. So Friday night, he took friends out for dinner. Eighty five dollars. Plus a ride home, forty eight.", "pause": 0.5},
+    {"id": "c4c", "text": "Economists have actually measured this. A study in the journal Science tracked real bank data. Spending jumps on payday, then slowly falls until the next one. Even for people who have savings.", "pause": 0.5},
+    {"id": "c4d", "text": "It's the full fridge effect. When the fridge is full, you eat like a king. By Wednesday, it's crackers and ketchup.", "pause": 0.5},
+    {"id": "c4e", "text": "Then Sunday. Groceries, one hundred twenty. Gas, forty five. And sixty dollars of subscriptions, quietly renewing.", "pause": 0.5},
+    {"id": "c4f", "text": "Add it all up. One thousand five hundred thirty eight dollars, gone in three days. Thirty eight left. And not one crazy purchase.", "pause": 0.9},
+
+    {"id": "c5a", "chapter": "The Honest Latte Math", "text": "Now, leak number five. The famous one. The coffee.", "pause": 0.4},
+    {"id": "c5b", "text": "Dave buys a six dollar latte every work day. That's about one thousand five hundred sixty dollars a year. Real money.", "pause": 0.5},
+    {"id": "c5c", "text": "Most people think skipping lattes will make you rich. Nope. Not on its own.", "pause": 0.5},
+    {"id": "c5d", "text": "The Bureau of Labor Statistics says the average household spends about seventy eight thousand dollars a year. And one third of that is housing.", "pause": 0.5},
+    {"id": "c5e", "text": "Eating out is bigger than coffee too. About three thousand nine hundred dollars a year. Roughly seventy six dollars, every single week.", "pause": 0.5},
+    {"id": "c5f", "text": "So here's the honest version. Small things add up, but the big things add up faster. Keep the latte you love. Cut the one you don't even notice.", "pause": 0.9},
+
+    {"id": "c6a", "chapter": "Who Profits When You're Broke", "text": "So who wins when Dave's account hits zero?", "pause": 0.4},
+    {"id": "c6b", "text": "Remember the raccoon? If a payment hits an empty account, many banks charge an overdraft fee. Often around thirty five dollars. For a five dollar coffee.", "pause": 0.5},
+    {"id": "c6c", "text": "The Financial Health Network estimates Americans paid about twelve billion dollars in overdraft and bounced payment fees in twenty twenty four.", "pause": 0.5},
+    {"id": "c6d", "text": "A federal rule to cap those fees was repealed by Congress in twenty twenty five. Supporters said it protected families. Critics said it would push banks to cut services. That's a political question. Now you know the numbers.", "pause": 0.5},
+    {"id": "c6e", "text": "And the others? Subscription companies count on you forgetting. Pay later buttons at checkout count on you feeling rich. Every one of them loves the day after payday.", "pause": 0.9},
+
+    {"id": "c7a", "chapter": "The Missing Cushion", "text": "Here's why these leaks hurt so much.", "pause": 0.4},
+    {"id": "c7b", "text": "The Federal Reserve asks Americans every year: could you cover a surprise four hundred dollar bill with cash? In its latest report, only sixty three percent said yes.", "pause": 0.5},
+    {"id": "c7c", "text": "So more than one in three would need to borrow, sell something, or just couldn't pay.", "pause": 0.5},
+    {"id": "c7d", "text": "Without a cushion, a flat tire goes on a credit card. The card charges interest. And the next paycheck is smaller before it even arrives.", "pause": 0.5},
+    {"id": "c7e", "text": "It's like driving with no spare tire. Everything is fine, right up until it really isn't.", "pause": 0.9},
+
+    {"id": "c8a", "chapter": "How Dave Plugged the Leaks", "text": "So what did Dave do? Remember, this is education, not advice.", "pause": 0.4},
+    {"id": "c8b", "text": "One. Pay yourself first. On payday, an automatic transfer moves money into savings, before Dave can see it. Even fifty dollars. It's like hiding snacks from yourself.", "pause": 0.5},
+    {"id": "c8c", "text": "Two. A bill calendar. Dave wrote every bill next to its date, then asked a few companies to move his due date. Many will. Now half his bills hit each paycheck.", "pause": 0.5},
+    {"id": "c8d", "text": "Three. A subscription check. Dave went through his statement line by line, and cancelled three he forgot he had.", "pause": 0.5},
+    {"id": "c8e", "text": "Four. The forty eight hour rule. Anything fun over fifty dollars waits two days. If Dave still wants it on Sunday, he buys it. Guilt free.", "pause": 0.5},
+    {"id": "c8f", "text": "Five. A weekly fun number. Dave picks one amount for eating out and treats, and when it's gone, it's gone. Until next week.", "pause": 0.9},
+
+    {"id": "c9a", "chapter": "Dave's Next Payday", "text": "Two weeks later, payday again.", "pause": 0.4},
+    {"id": "c9b", "text": "Fifty dollars went to savings first. Rent was already split across two paychecks. Three subscriptions were gone.", "pause": 0.5},
+    {"id": "c9c", "text": "Dave still went out on Friday. He still had a latte. But on Monday morning, his account didn't say thirty eight dollars. It said four hundred twelve.", "pause": 0.5},
+    {"id": "c9d", "text": "Same salary. Same Dave. He just plugged the leaks, and put his money on a schedule.", "pause": 0.9},
+
+    {"id": "r1", "chapter": "Now You Know", "text": "So let's recap.", "pause": 0.4},
+    {"id": "r2", "text": "One. Your paycheck shrinks before you see it. Taxes and deductions can take hundreds of dollars.", "pause": 0.5},
+    {"id": "r3", "text": "Two. Timing, subscriptions and the payday feeling drain more than one big purchase ever could.", "pause": 0.5},
+    {"id": "r4", "text": "Three. Pay yourself first, line up your bills with your paydays, and give fun money a limit.", "pause": 0.6},
+    {"id": "r5", "text": "Next time, Dave gets a raise. So why isn't he any richer?", "pause": 0.4},
+    {"id": "r6", "text": "Subscribe, so Dave can keep explaining money. It's free. It will never leak out of your paycheck.", "pause": 1.4}
+  ],
+  "youtube": {
+    "title": "Why You're Broke 3 Days After Payday (5 Hidden Leaks)",
+    "alt_titles": [
+      "Living Paycheck to Paycheck? Here's Where Your Money Actually Goes",
+      "You Got Paid Friday. Why Is Your Account Empty by Monday?"
+    ],
+    "hook": "Why are you broke three days after payday? Dave gets paid $1,576 on Friday and has $38 left on Monday, without one crazy purchase. We follow his paycheck through five leaks: taxes and deductions that shrink a $2,000 check before it arrives, bills that all hit on the first of the month, quiet subscriptions (people guess $86 a month, the real number is about $219), the payday spending spike measured in real bank data, and the honest math on lattes versus housing (BLS Consumer Expenditure Survey). Then we look at who profits when you're broke (about $12 billion in overdraft and NSF fees in 2024), why the Fed's $400 emergency question matters, and the simple system Dave used: pay yourself first, a bill calendar, a subscription check, the 48-hour rule and a weekly fun number.",
+    "tags": [
+      "why am i always broke",
+      "living paycheck to paycheck",
+      "broke after payday",
+      "where does my money go",
+      "pay yourself first",
+      "bill calendar budgeting",
+      "48 hour rule spending",
+      "subscription creep",
+      "latte factor",
+      "money explained simply",
+      "dave explains money"
+    ],
+    "hashtags": ["#budgeting", "#paycheck", "#money"],
+    "pinned": "Be honest: how many days after payday does YOUR account start looking scary? Drop a number below"
+  }
+}
