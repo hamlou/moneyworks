@@ -1,0 +1,111 @@
+{
+  "id": "ep38",
+  "title": "Why You Can't Save Money (It's Not Your Fault... Mostly)",
+  "sources": [
+    "Federal Reserve Board, Economic Well-Being of U.S. Households in 2025 (SHED, May 13, 2026): 63% would cover a $400 emergency expense with cash or its equivalent; 55% have emergency savings covering three months of expenses (59% in 2021)",
+    "Federal Reserve SHED 2025, Credit section: 16% of adults used buy now, pay later in the prior 12 months (10% in 2021); slightly more than one in four BNPL users paid late; one in five BNPL users used it for groceries or food delivery",
+    "BEA, Personal Income and Outlays, July 2026 (Aug 26, 2026): personal saving rate 3.0% (June 2026: 2.7%)",
+    "BEA / FRED PSAVERT: personal saving rate averaged roughly 10%+ in the 1970s (peak 17.3% in May 1975)",
+    "IAB/PwC Internet Advertising Revenue Report, Full Year 2025 (Apr 16, 2026): U.S. internet ad revenue $294.6B; social media $117.7B. Per person: $294.6B ÷ ~342M U.S. residents ≈ $860",
+    "FTC Staff Report, Bringing Dark Patterns to Light (Sept 2022): fake countdown timers, false scarcity, pre-checked boxes, confirmshaming, hard-to-cancel flows",
+    "FTC / ICPEN / GPEN review (July 2024): 76% of 642 subscription websites and apps used at least one dark pattern; nearly 67% used more than one",
+    "Amazon 1-Click patent US 5,960,411 (granted Sept 1999, expired Sept 2017)",
+    "Madrian & Shea (2001), The Power of Suggestion: Inertia in 401(k) Participation, Quarterly Journal of Economics: automatic enrollment raised participation from 37% to 86% among new hires",
+    "Present bias / hyperbolic discounting: Laibson (1997), Thaler & Benartzi 'Save More Tomorrow' (2004)",
+    "Callback: ep10 'Pay in 4, 0% Interest? How Klarna Still Makes Billions' (merchants pay the fee because shoppers spend more)"
+  ],
+  "beats": [
+    {"id": "o1", "text": "Monday morning. Dave makes a promise. This month, he's saving two hundred dollars. For real this time.", "pause": 0.3},
+    {"id": "o2", "text": "Monday night, his phone buzzes. Flash sale. Forty percent off. Ends in two hours.", "pause": 0.3},
+    {"id": "o3", "text": "One tap. Saved card. Bought. By Friday, Dave has three new packages. And zero dollars saved.", "pause": 0.3},
+    {"id": "o4", "text": "Sound familiar? Here's the thing. That wasn't an accident. That phone was designed to make Dave spend.", "pause": 0.35},
+    {"id": "o5", "text": "Teams of very smart people get paid to remove every tiny moment where you might stop and think.", "pause": 0.3},
+    {"id": "o6", "text": "Today: the one tap store, the pay later button, the ads that follow you, the tricks, your brain, and how Dave finally saves.", "pause": 0.6},
+
+    {"id": "c1a", "chapter": "Dave Is Not Alone", "text": "First, let's be clear. If saving feels hard, you're in very big company.", "pause": 0.4},
+    {"id": "c1b", "text": "The Federal Reserve asks Americans every year: if a surprise four hundred dollar bill showed up, could you pay it with cash?", "pause": 0.5},
+    {"id": "c1c", "text": "Only sixty three percent said yes. So more than one in three adults would have to borrow, sell something, or just couldn't pay.", "pause": 0.5},
+    {"id": "c1d", "text": "And only fifty five percent have enough emergency savings to cover three months of expenses.", "pause": 0.5},
+    {"id": "c1e", "text": "Now look at the whole country. In July, Americans saved just three percent of their income after taxes. Back in the nineteen seventies, it was often above ten percent.", "pause": 0.5},
+    {"id": "c1f", "text": "So did everyone suddenly lose their willpower? Or did something change around us? Let's find out.", "pause": 0.9},
+
+    {"id": "c2a", "chapter": "The One Tap Store", "text": "Imagine a normal store. You walk in. You find the thing. You carry it to the checkout. You wait in line.", "pause": 0.4},
+    {"id": "c2b", "text": "You pull out your wallet. You look at the cash. And for one second, your brain asks: do I really need this?", "pause": 0.5},
+    {"id": "c2c", "text": "That one second is called friction. And friction is your savings account's best friend.", "pause": 0.5},
+    {"id": "c2d", "text": "Online stores figured this out a long time ago. In nineteen ninety nine, Amazon got a patent on buying with just one click.", "pause": 0.5},
+    {"id": "c2e", "text": "Today, almost every app does it. Your card is saved. Your address is saved. Your face unlocks the payment. No wallet. No line. No second to think.", "pause": 0.5},
+    {"id": "c2f", "text": "It's like a store with a slide that goes straight from the front door to the cash register. Wheee! That will be sixty dollars.", "pause": 0.9},
+
+    {"id": "c3a", "chapter": "The Pay Later Button", "text": "And if the price still makes you pause, there's one more button.", "pause": 0.4},
+    {"id": "c3b", "text": "Pay in four. Just fifteen dollars today. Remember our Klarna video?", "pause": 0.5},
+    {"id": "c3c", "text": "The store happily pays the pay later company a fee. Why? Because when a price looks smaller, people buy more. And they buy bigger.", "pause": 0.5},
+    {"id": "c3d", "text": "According to the Federal Reserve, sixteen percent of American adults used buy now, pay later in the past year. Up from ten percent in twenty twenty one.", "pause": 0.5},
+    {"id": "c3e", "text": "More than one in four of those users paid late. And one in five used it for groceries or food delivery.", "pause": 0.5},
+    {"id": "c3f", "text": "Four small payments feel like no payment at all. Until they all show up in the same week. Our raccoon loves that week.", "pause": 0.9},
+
+    {"id": "c4a", "chapter": "Your Phone Knows You're Bored", "text": "Now, how does the store find Dave in the first place? Easy. It lives in his pocket.", "pause": 0.4},
+    {"id": "c4b", "text": "Shopping apps send notifications. Price drop! Back in stock! You left something in your cart!", "pause": 0.5},
+    {"id": "c4c", "text": "And they often arrive at the perfect moment. At night. On payday. When you're bored on the couch.", "pause": 0.5},
+    {"id": "c4d", "text": "Then there's social media. Every scroll, every like, every pause on a video teaches the app what you want.", "pause": 0.5},
+    {"id": "c4e", "text": "In twenty twenty five, companies spent about two hundred ninety five billion dollars on internet ads in America. That's roughly eight hundred sixty dollars for every person in the country.", "pause": 0.5},
+    {"id": "c4f", "text": "Nobody spends that kind of money unless it works. You are not the customer of those free apps. Your attention is the product.", "pause": 0.9},
+
+    {"id": "c5a", "chapter": "Dark Patterns", "text": "And some designs go further. They don't just make buying easy. They trick you.", "pause": 0.4},
+    {"id": "c5b", "text": "The Federal Trade Commission has a name for them. Dark patterns.", "pause": 0.5},
+    {"id": "c5c", "text": "A countdown timer that resets when you refresh the page. Only two left in stock, when there are plenty. A box that's already checked for you.", "pause": 0.5},
+    {"id": "c5d", "text": "Or a button that says: no thanks, I don't like saving money. That one is called confirm shaming. Yes, really.", "pause": 0.5},
+    {"id": "c5e", "text": "In twenty twenty four, the F T C and regulators from around the world checked six hundred forty two subscription websites and apps. About three out of four used at least one dark pattern.", "pause": 0.5},
+    {"id": "c5f", "text": "So when you feel rushed while shopping online, that feeling was often designed. On purpose.", "pause": 0.9},
+
+    {"id": "c6a", "chapter": "Your Brain vs Future You", "text": "But the tricks only work because of how our brains are built.", "pause": 0.4},
+    {"id": "c6b", "text": "Quick test. Would you rather have one hundred dollars today, or one hundred ten dollars next week? Most people grab the hundred today.", "pause": 0.5},
+    {"id": "c6c", "text": "Now, one hundred dollars in a year, or one hundred ten in a year and a week? Suddenly, most people say: sure, I'll wait.", "pause": 0.5},
+    {"id": "c6d", "text": "Same one week wait. Different answer. Economists call this present bias. Our brains give a huge bonus to anything we can have right now.", "pause": 0.5},
+    {"id": "c6e", "text": "It's like there are two Daves. Today Dave wants the sneakers. Future Dave needs the emergency fund. And Today Dave always holds the phone.", "pause": 0.5},
+    {"id": "c6f", "text": "Shopping apps are built to talk to Today Dave. Future Dave doesn't even get a vote.", "pause": 0.9},
+
+    {"id": "c7a", "chapter": "Just Use More Willpower?", "text": "So who profits? Stores sell more. Pay later companies collect fees. And the ad platforms get paid for every click.", "pause": 0.4},
+    {"id": "c7b", "text": "And the advice you hear most? Just have more willpower. Stop buying stuff. Most people think that's the whole answer. Nope.", "pause": 0.5},
+    {"id": "c7c", "text": "One person's willpower against thousands of engineers and billions of dollars in ads is not a fair fight.", "pause": 0.5},
+    {"id": "c7d", "text": "Here's proof that design beats willpower. In a famous study, one company changed its retirement plan so new workers were signed up automatically, unless they chose to leave.", "pause": 0.5},
+    {"id": "c7e", "text": "Before the change, about thirty seven percent of new workers joined. After the change? Eighty six percent. Same people. Same paychecks. Just a different default.", "pause": 0.5},
+    {"id": "c7f", "text": "So here's the good news. If design can make you spend, design can also make you save. You just have to design it for yourself.", "pause": 0.9},
+
+    {"id": "c8a", "chapter": "How Dave Finally Saves", "text": "So what can Dave do? Education, not advice.", "pause": 0.4},
+    {"id": "c8b", "text": "One. Save first, automatically. Set up a transfer that moves money to savings on payday. Before Dave even sees it, it's gone.", "pause": 0.5},
+    {"id": "c8c", "text": "Two. Put savings somewhere a little annoying to reach. A separate account, maybe at a different bank, with no card and no app on the home screen.", "pause": 0.5},
+    {"id": "c8d", "text": "Three. Add friction back. Delete saved cards from shopping sites. Log out. Make yourself type the card number every single time.", "pause": 0.5},
+    {"id": "c8e", "text": "Four. Delete the shopping apps, or at least turn off their notifications. No buzz, no flash sale.", "pause": 0.5},
+    {"id": "c8f", "text": "And five. Use a waiting list. See something you want? Put it on a list and wait two days. Often, the want just melts away.", "pause": 0.5},
+    {"id": "c8g", "text": "A few weeks later, Dave checks his savings account. Two hundred dollars. The first time ever. He didn't get more willpower. He just changed the design.", "pause": 0.9},
+
+    {"id": "d1a", "chapter": "Now You Know", "text": "So let's recap.", "pause": 0.4},
+    {"id": "d1b", "text": "One. One tap buying, saved cards and pay later buttons remove the second where you'd stop and think.", "pause": 0.5},
+    {"id": "d1c", "text": "Two. Notifications, targeted ads, dark patterns and present bias all push you to spend now.", "pause": 0.5},
+    {"id": "d1d", "text": "Three. Willpower alone rarely wins. Automate your saving and add friction to your spending.", "pause": 0.9},
+    {"id": "d1e", "text": "Next time, Dave's savings finally grow. So he wants to spend them on a shiny new car. Why does buying a new car make you poorer?", "pause": 0.5},
+    {"id": "d1f", "text": "Subscribe, so Dave can keep explaining money. It takes one tap. And this is the only one tap button that won't cost you a dime.", "pause": 1.4}
+  ],
+  "youtube": {
+    "title": "Why You Can't Save Money (It's Not Your Fault... Mostly)",
+    "alt_titles": [
+      "Your Phone Is Designed to Make You Spend. Here's How to Save Anyway",
+      "Why Saving Money Feels Impossible (One-Click, Pay Later & Dark Patterns)"
+    ],
+    "hook": "Why can't you save money? One-tap buying, pay later buttons, targeted ads and dark patterns are designed to make you spend. Here's how to fight back.",
+    "tags": [
+      "why can't i save money",
+      "how to save money",
+      "why is saving money so hard",
+      "dark patterns explained",
+      "present bias explained",
+      "buy now pay later trap",
+      "impulse spending",
+      "automate your savings",
+      "emergency fund",
+      "money explained simply",
+      "dave explains money"
+    ],
+    "hashtags": ["#savingmoney", "#personalfinance", "#money"]
+  }
+}
