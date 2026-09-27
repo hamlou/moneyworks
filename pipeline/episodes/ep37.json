@@ -1,0 +1,371 @@
+{
+  "id": "ep37",
+  "title": "Why Your Car Insurance Keeps Going Up (Even With No Accidents)",
+  "sources": [
+    "Insurify, Average Car Insurance Rates (Sept 2026): national average full coverage ≈ $187/month ≈ $2,244/year; Insurify projects $2,242 full-coverage average for full-year 2026 (+1% YoY)",
+    "BLS CPI-U, Aug 2026 (released Sept 2026), series CUUR0000SETE Motor vehicle insurance: 566.183 (Aug 2021) → 848.231 (Aug 2026) = +49.8% in five years; 12-month change Aug 2026 = −5.1%",
+    "BLS CPI-U, series CUUR0000SA0 All items: 273.567 (Aug 2021) → 334.980 (Aug 2026) = +22.4% in five years",
+    "BLS CPI-U, series CUUR0000SETD Motor vehicle maintenance and repair: 320.504 (Aug 2021) → 465.136 (Aug 2026) = +45.1% in five years; +5.2% in the 12 months to Aug 2026",
+    "AAA, Cost of Advanced Driver Assistance Systems (ADAS) Repairs (Dec 2023): ADAS can account for up to ~38% of repair costs after a crash; front radar sensor $500–$1,300; windshield camera $900–$1,200",
+    "NHTSA, Distracted Driving in 2024 (DOT HS 813 790): 3,208 people killed in distraction-affected crashes in 2024",
+    "CCC Intelligent Solutions, Crash Course 2026: average third-party bodily injury paid outcome ≈ $29,100 per injured person (Q2 2025), +36% since Q4 2020",
+    "Triple-I (Insurance Information Institute), April 2026: U.S. severe convective storms (hail, tornadoes, wind) generated more than $50B in insured losses for the third consecutive year",
+    "State bans on credit-based insurance scores for auto: California (Prop 103, 1988), Hawaii, Massachusetts, Michigan (2020 reform) — Experian / NAIC summaries; industry rate studies (Bankrate, ValuePenguin 2026) find poor-credit drivers often pay roughly double for full coverage",
+    "Price optimization: prohibited or restricted by regulators in about 20 states + D.C. (Consumer Federation of America; Texas Department of Insurance 2026 bulletin); CFA letter to state commissioners, Sept 2026",
+    "J.D. Power 2026 U.S. Insurance Shopping Study: 53% of auto customers shopped, switching rate 4.5%",
+    "Telematics / usage-based insurance: insurers advertise typical savings of 10%–30% for safe drivers; in some programs risky driving can raise the price (Progressive Snapshot FAQ)",
+    "Callback: ep18 'How Insurance Companies Make Money' (the village pot)"
+  ],
+  "beats": [
+    {
+      "id": "o1",
+      "text": "Dave opens his car insurance renewal. No accidents. No tickets. Not even a scratch.",
+      "pause": 0.3
+    },
+    {
+      "id": "o2",
+      "text": "Last year, he paid eighteen hundred dollars. This year? Twenty two hundred.",
+      "pause": 0.3
+    },
+    {
+      "id": "o3",
+      "text": "And he's not alone. In five years, the price of car insurance in America jumped about fifty percent. More than double regular inflation.",
+      "pause": 0.3
+    },
+    {
+      "id": "o4",
+      "text": "And here's the weird part. Some of what you pay has nothing to do with how you drive.",
+      "pause": 0.35
+    },
+    {
+      "id": "o5",
+      "text": "Your credit. Your ZIP code. Even how likely you are to shop around.",
+      "pause": 0.3
+    },
+    {
+      "id": "o6",
+      "text": "Today: the pot, the bumper, the crashes, the storms, the secret scores, the loyalty penalty, and how Dave fights back.",
+      "pause": 0.6
+    },
+    {
+      "id": "c1a",
+      "chapter": "Dave's Renewal Letter",
+      "text": "Let's look at Dave's letter. Same car. Same driver. Same boring commute.",
+      "pause": 0.4
+    },
+    {
+      "id": "c1b",
+      "text": "Four hundred dollars more. That's a twenty two percent jump. For doing absolutely nothing wrong.",
+      "pause": 0.5
+    },
+    {
+      "id": "c1c",
+      "text": "So what does a normal driver pay? According to Insurify, full coverage in America now averages about two thousand two hundred forty dollars a year.",
+      "pause": 0.5
+    },
+    {
+      "id": "c1d",
+      "text": "That's about one hundred eighty seven dollars a month. Almost like a second car payment. For a car you already own.",
+      "pause": 0.5
+    },
+    {
+      "id": "c1e",
+      "text": "Dave calls his insurer. The nice lady says: rates went up in your area. Dave says: but I didn't do anything! She says: I know.",
+      "pause": 0.5
+    },
+    {
+      "id": "c1f",
+      "text": "The letter doesn't explain anything. Just a bigger number, and a due date.",
+      "pause": 0.9
+    },
+    {
+      "id": "c2a",
+      "chapter": "You Pay for Everyone's Crashes",
+      "text": "To understand this, remember the village pot from our insurance video.",
+      "pause": 0.4
+    },
+    {
+      "id": "c2b",
+      "text": "Everybody puts money in a big pot. Whoever crashes this year gets paid from the pot.",
+      "pause": 0.5
+    },
+    {
+      "id": "c2c",
+      "text": "So Dave isn't really paying for his own crashes. He's paying for everybody's crashes. Everybody in his group.",
+      "pause": 0.5
+    },
+    {
+      "id": "c2d",
+      "text": "When the pot gets emptied faster, everyone has to refill it. Even the careful drivers. Even Dave.",
+      "pause": 0.5
+    },
+    {
+      "id": "c2g",
+      "text": "It's like splitting a restaurant bill with ten friends. You ordered a salad. But somebody ordered the lobster. Now everybody's share goes up.",
+      "pause": 0.5
+    },
+    {
+      "id": "c2e",
+      "text": "And the pot got emptied fast. Government price data shows car insurance up about fifty percent in five years. Everything else? About twenty two percent.",
+      "pause": 0.5
+    },
+    {
+      "id": "c2f",
+      "text": "Now, to be fair, the average dipped a little this past year. But after a fifty percent climb, a small dip doesn't feel like much.",
+      "pause": 0.9
+    },
+    {
+      "id": "c3a",
+      "chapter": "The Two Thousand Dollar Bumper",
+      "text": "Reason number one. Cars became computers on wheels.",
+      "pause": 0.4
+    },
+    {
+      "id": "c3b",
+      "text": "An old bumper was a piece of plastic. You bump it, you replace it. A few hundred dollars.",
+      "pause": 0.5
+    },
+    {
+      "id": "c3c",
+      "text": "A new bumper is full of sensors, radar, and cameras. They help the car brake by itself and park by itself. Great for safety.",
+      "pause": 0.5
+    },
+    {
+      "id": "c3d",
+      "text": "But after a small crash, all of that has to be replaced and carefully aimed again. AAA found these systems can make up more than a third of the repair bill.",
+      "pause": 0.5
+    },
+    {
+      "id": "c3e",
+      "text": "One front radar sensor can cost up to thirteen hundred dollars. For a part the size of a cookie.",
+      "pause": 0.5
+    },
+    {
+      "id": "c3g",
+      "text": "Even the windshield. Many now have a camera behind the glass. So replacing it means new glass, plus a technician to aim the camera again.",
+      "pause": 0.5
+    },
+    {
+      "id": "c3f",
+      "text": "And repair shops charge more too. Prices for car repairs are up about forty five percent in five years. So a parking lot tap can become a two thousand dollar claim.",
+      "pause": 0.9
+    },
+    {
+      "id": "c4a",
+      "chapter": "Bigger Crashes, Bigger Bills",
+      "text": "Reason number two. When crashes happen, they cost more.",
+      "pause": 0.4
+    },
+    {
+      "id": "c4b",
+      "text": "Cars got bigger and heavier. And drivers got more distracted. By what? You know what. The phone.",
+      "pause": 0.5
+    },
+    {
+      "id": "c4c",
+      "text": "In twenty twenty four, the government's traffic safety agency counted more than three thousand two hundred people killed in crashes involving distracted drivers.",
+      "pause": 0.5
+    },
+    {
+      "id": "c4d",
+      "text": "Then come the medical bills. And the lawyers. After a crash, more people hire lawyers, and settlements keep getting bigger.",
+      "pause": 0.5
+    },
+    {
+      "id": "c4e",
+      "text": "The average payout for one injured person is now around twenty nine thousand dollars. That's up about thirty six percent since twenty twenty.",
+      "pause": 0.5
+    },
+    {
+      "id": "c4f",
+      "text": "Remember the pot? Every one of those checks comes out of it. And Dave helps refill it.",
+      "pause": 0.9
+    },
+    {
+      "id": "c5a",
+      "chapter": "Hail, Storms, and Your ZIP Code",
+      "text": "Reason number three. The sky.",
+      "pause": 0.4
+    },
+    {
+      "id": "c5b",
+      "text": "Hail the size of golf balls can dent every car in a parking lot in ten minutes. Floods can total a car in one night.",
+      "pause": 0.5
+    },
+    {
+      "id": "c5c",
+      "text": "For three years in a row, severe storms in America caused more than fifty billion dollars of insured damage every year.",
+      "pause": 0.5
+    },
+    {
+      "id": "c5d",
+      "text": "And that's why your ZIP code matters. Insurers look at where your car sleeps. More storms, more theft, more crashes, more lawsuits nearby? Higher price.",
+      "pause": 0.5
+    },
+    {
+      "id": "c5e",
+      "text": "Two drivers. Same car. Same perfect record. But they live ten miles apart. One can pay hundreds more a year.",
+      "pause": 0.5
+    },
+    {
+      "id": "c5f",
+      "text": "Dave didn't move. But his neighborhood's pot got emptied. So his price went up with it.",
+      "pause": 0.9
+    },
+    {
+      "id": "c6a",
+      "chapter": "The Secret Scores",
+      "text": "Now here's one most people don't know about.",
+      "pause": 0.4
+    },
+    {
+      "id": "c6b",
+      "text": "In most states, insurers can use something called a credit based insurance score. It's built from your credit report.",
+      "pause": 0.5
+    },
+    {
+      "id": "c6c",
+      "text": "Their data says people with lower credit scores file more claims. So they charge them more. Even with a perfect driving record.",
+      "pause": 0.5
+    },
+    {
+      "id": "c6d",
+      "text": "How much more? Several rate studies find drivers with poor credit often pay around double for full coverage.",
+      "pause": 0.5
+    },
+    {
+      "id": "c6e",
+      "text": "Some people call that unfair. It punishes being broke. Four states, California, Hawaii, Massachusetts and Michigan, ban it for car insurance.",
+      "pause": 0.5
+    },
+    {
+      "id": "c6f",
+      "text": "Insurers say it predicts risk and keeps prices lower for most people. That's a political question. Now you know the numbers.",
+      "pause": 0.9
+    },
+    {
+      "id": "c7a",
+      "chapter": "The Loyalty Penalty",
+      "text": "And now, the sneakiest one.",
+      "pause": 0.4
+    },
+    {
+      "id": "c7b",
+      "text": "Most people think staying with the same insurer for years gets you the best deal. Loyalty should be rewarded, right? Often, nope.",
+      "pause": 0.5
+    },
+    {
+      "id": "c7c",
+      "text": "Some insurers have used computer models to guess who won't shop around. It's called price optimization.",
+      "pause": 0.5
+    },
+    {
+      "id": "c7d",
+      "text": "If the model thinks Dave is too busy or too loyal to leave, it can nudge his price up a little more each year. Not because he's riskier. Because he's comfy.",
+      "pause": 0.5
+    },
+    {
+      "id": "c7e",
+      "text": "It's like a coffee shop that charges regulars more, because they know you'll come back anyway. And our old friend the raccoon approves.",
+      "pause": 0.5
+    },
+    {
+      "id": "c7f",
+      "text": "About twenty states and Washington D C have banned or restricted it. And in states where regulators must approve price hikes, costs can pile up for years, then hit you all at once.",
+      "pause": 0.9
+    },
+    {
+      "id": "c8a",
+      "chapter": "How Dave Fights Back",
+      "text": "So what can Dave do? Education, not advice.",
+      "pause": 0.4
+    },
+    {
+      "id": "c8b",
+      "text": "One. Shop at every renewal. Get at least three quotes. It takes about an hour, and it's the fastest way to escape the loyalty penalty.",
+      "pause": 0.5
+    },
+    {
+      "id": "c8c",
+      "text": "Two. Raise your deductible, but only to an amount your emergency fund can actually pay.",
+      "pause": 0.5
+    },
+    {
+      "id": "c8d",
+      "text": "Three. Bundle, and ask for every discount. Home and car together, good student, low mileage, paying yearly instead of monthly.",
+      "pause": 0.5
+    },
+    {
+      "id": "c8e",
+      "text": "Four. Think about tracking apps. They can cut the price for calm drivers. But they watch how you brake, how fast you go, and when you drive. And in some programs, a bad score can cost you more.",
+      "pause": 0.5
+    },
+    {
+      "id": "c8f",
+      "text": "And five. Check your credit report and fix any mistakes. In most states, it can quietly lower your price.",
+      "pause": 0.5
+    },
+    {
+      "id": "c8g",
+      "text": "Dave gets four quotes. The best one is three hundred fifty dollars cheaper. Same coverage. Same funny blue car.",
+      "pause": 0.9
+    },
+    {
+      "id": "d1a",
+      "chapter": "Now You Know",
+      "text": "So let's recap.",
+      "pause": 0.4
+    },
+    {
+      "id": "d1b",
+      "text": "One. You pay for everyone's crashes. When repairs, injuries and storms cost more, the whole pot gets pricier.",
+      "pause": 0.5
+    },
+    {
+      "id": "d1c",
+      "text": "Two. Your price also depends on things that aren't driving. Your ZIP code, your credit, and whether you shop around.",
+      "pause": 0.5
+    },
+    {
+      "id": "d1d",
+      "text": "Three. Loyalty often isn't rewarded. Compare quotes at every renewal.",
+      "pause": 0.9
+    },
+    {
+      "id": "d1e",
+      "text": "Next time, Dave swears he'll finally save money. But his phone has other plans. Why can't you save money? It's not your fault. Mostly.",
+      "pause": 0.5
+    },
+    {
+      "id": "d1f",
+      "text": "Subscribe, so Dave can keep explaining money. It's free. And we'll never raise your price at renewal.",
+      "pause": 1.4
+    }
+  ],
+  "youtube": {
+    "title": "Why Your Car Insurance Keeps Going Up (Even With No Accidents)",
+    "alt_titles": [
+      "Car Insurance Up 50% in 5 Years? Here's Who Decides Your Price",
+      "No Accidents, Higher Bill: Why Car Insurance Keeps Rising"
+    ],
+    "hook": "Why does your car insurance keep going up when you never crash? Car insurance prices rose about 50% in five years. Here's where your money goes.",
+    "tags": [
+      "why is car insurance going up",
+      "car insurance going up no accidents",
+      "car insurance explained",
+      "why is my car insurance so expensive",
+      "car insurance renewal increase",
+      "credit based insurance score",
+      "price optimization insurance",
+      "how to lower car insurance",
+      "car insurance loyalty penalty",
+      "money explained simply",
+      "dave explains money"
+    ],
+    "hashtags": [
+      "#carinsurance",
+      "#insurance",
+      "#money"
+    ]
+  }
+}
