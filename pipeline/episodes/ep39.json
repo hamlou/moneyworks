@@ -1,0 +1,354 @@
+{
+  "id": "ep39",
+  "title": "Why Buying a New Car Makes You Poorer",
+  "sources": [
+    "Kelley Blue Book / Cox Automotive, August 2026 ATP report (Sept 10, 2026): average new-vehicle transaction price $50,089",
+    "Kelley Blue Book, 'How to Beat Car Depreciation': many new cars lose around 20% of their value in the first year. 20% x $50,089 ≈ $10,000 ≈ $27/day",
+    "iSeeCars 5-year depreciation study (2026; 950,000+ 5-year-old cars sold Mar 2025–Feb 2026): average 5-year depreciation 41.8%; trucks 34.2%, hybrids 35.4%, EVs 57.2%. $50,089 x (1-0.418) ≈ $29,150; loss ≈ $20,940",
+    "AAA Your Driving Costs 2026 (Sept 2026): $12,863/yr ($1,071.92/mo), 5 yrs / 75,000 miles, weighted MSRP $39,376; depreciation $4,422/yr; finance $1,184/yr; insurance $2,098/yr; license/registration/taxes $802/yr; fuel 17.3c/mi (≈$2,595 at 15k mi); maintenance/repair/tires 11.7c/mi (≈$1,755); small sedan 61.73c/mi; half-ton pickup $1.10/mi",
+    "Edmunds Q2 2026 new-vehicle finance data (July 2026): average monthly payment $777 (record); 36.5% of financed new-vehicle loans 73+ months; 23.9% at 84+ months",
+    "Edmunds Q1 2026 Insights report: 30.9% of new-vehicle trade-ins had negative equity (highest since early 2021), average negative equity $7,183",
+    "Presidio-NCM Average Dealership Performance Benchmark Q2 2026 (via Digital Dealer, Aug 4, 2026): new-vehicle gross profit $1,840/unit; F&I $1,769 per vehicle retailed (tracking record); fixed operations (service & parts) 52.8% of total dealership gross profit. $1,840 / $50,089 ≈ 3.7%",
+    "Experian (Q2 2026, via Bankrate): average used-car monthly payment $542. $777 - $542 = $235/mo",
+    "Opportunity-cost math (example, 7%/yr compounded monthly, not guaranteed): $235/mo x 10 yrs ≈ $40,700; x 30 yrs ≈ $286,700",
+    "Edmunds Q2 2026 used-vehicle report: average transaction price of 3-year-old used vehicles $32,461 (Q2 record). $50,089 - $32,461 ≈ $17,600",
+    "S&P Global Mobility (May 21, 2025): average age of light vehicles in U.S. operation 12.8 years (record)"
+  ],
+  "beats": [
+    {
+      "id": "o1",
+      "text": "Dave just bought his first brand new car. Shiny paint. That new car smell. He drives it off the lot, grinning.",
+      "pause": 0.3
+    },
+    {
+      "id": "o2",
+      "text": "And before he even reaches the first traffic light, his car is worth thousands of dollars less.",
+      "pause": 0.3
+    },
+    {
+      "id": "o3",
+      "text": "Nothing broke. Nothing got scratched. It just stopped being new.",
+      "pause": 0.3
+    },
+    {
+      "id": "o4",
+      "text": "And it gets worse. AAA says owning a new car now costs almost thirteen thousand dollars a year. That's over one thousand dollars a month.",
+      "pause": 0.35
+    },
+    {
+      "id": "o5",
+      "text": "So why does a new car make so many people poorer? And who is making money on Dave's shiny ride?",
+      "pause": 0.3
+    },
+    {
+      "id": "o6",
+      "text": "Today: the invisible leak, the true cost, the loan race, the dealer's secret, and how to drive without going broke.",
+      "pause": 0.6
+    },
+    {
+      "id": "c1a",
+      "chapter": "The Invisible Leak",
+      "text": "Let's start with the biggest cost of a new car. It's not gas. It's not insurance. It's something you never see on a bill.",
+      "pause": 0.4
+    },
+    {
+      "id": "c1b",
+      "text": "It's called depreciation. That's a fancy word for: your car loses value, every single day.",
+      "pause": 0.5
+    },
+    {
+      "id": "c1c",
+      "text": "In August twenty twenty six, the average new car sold for about fifty thousand dollars, says Kelley Blue Book.",
+      "pause": 0.5
+    },
+    {
+      "id": "c1d",
+      "text": "Kelley Blue Book also says many new cars lose around twenty percent of their value in the first year. On a fifty thousand dollar car, that's about ten thousand dollars. Gone.",
+      "pause": 0.5
+    },
+    {
+      "id": "c1e",
+      "text": "That's like Dave setting twenty seven dollars on fire, every morning, for a whole year. Even on days he doesn't drive.",
+      "pause": 0.5
+    },
+    {
+      "id": "c1f",
+      "text": "And nobody sends him a bill for it. He only finds out when he tries to sell.",
+      "pause": 0.9
+    },
+    {
+      "id": "c2a",
+      "chapter": "The Depreciation Slide",
+      "text": "Here's the weird part. The drop is not even. It's biggest at the very start.",
+      "pause": 0.4
+    },
+    {
+      "id": "c2b",
+      "text": "Picture a water slide. The first part is almost straight down. Then it gets flatter and flatter.",
+      "pause": 0.5
+    },
+    {
+      "id": "c2c",
+      "text": "Why? Because the moment a car becomes used, buyers won't pay extra for new. That new car smell is the most expensive smell in the world.",
+      "pause": 0.5
+    },
+    {
+      "id": "c2d",
+      "text": "After five years, the average car has lost about forty two percent of its value, according to a twenty twenty six study of nearly one million used cars by iSeeCars.",
+      "pause": 0.5
+    },
+    {
+      "id": "c2e",
+      "text": "Not all cars slide the same. Trucks and hybrids hold their value best. Electric cars lost the most, about fifty seven percent in five years.",
+      "pause": 0.5
+    },
+    {
+      "id": "c2f",
+      "text": "So Dave's fifty thousand dollar car? After five years, it's worth roughly twenty nine thousand. About twenty one thousand dollars just melted away.",
+      "pause": 0.9
+    },
+    {
+      "id": "c3a",
+      "chapter": "The Real Price Tag",
+      "text": "But depreciation is only one piece. What does it really cost to own a new car?",
+      "pause": 0.4
+    },
+    {
+      "id": "c3b",
+      "text": "Every year, AAA adds it all up. In twenty twenty six, the total is twelve thousand eight hundred sixty three dollars a year. About one thousand seventy two dollars a month.",
+      "pause": 0.5
+    },
+    {
+      "id": "c3c",
+      "text": "Here's the pizza. The biggest slice is depreciation: about four thousand four hundred dollars a year. Then fuel, about two thousand six hundred. Insurance, about two thousand one hundred.",
+      "pause": 0.5
+    },
+    {
+      "id": "c3d",
+      "text": "Then maintenance and tires, about one thousand seven hundred fifty. Loan interest, about twelve hundred. And taxes and fees, about eight hundred.",
+      "pause": 0.5
+    },
+    {
+      "id": "c3e",
+      "text": "Most people only think about the monthly payment. But the payment is just the ticket. The ride costs way more.",
+      "pause": 0.5
+    },
+    {
+      "id": "c3f",
+      "text": "And bigger vehicles cost more. A small sedan costs about sixty two cents a mile. A big pickup truck? One dollar ten. Every mile.",
+      "pause": 0.9
+    },
+    {
+      "id": "c4a",
+      "chapter": "The Loan Race",
+      "text": "Now, most people don't pay cash. They borrow. And that creates a race.",
+      "pause": 0.4
+    },
+    {
+      "id": "c4b",
+      "text": "On one side, the car's value, running downhill fast. On the other side, Dave's loan, shrinking slowly. Like a turtle.",
+      "pause": 0.5
+    },
+    {
+      "id": "c4c",
+      "text": "To make payments smaller, loans keep getting longer. Edmunds says more than one in three new car loans now last longer than six years. Nearly one in four last seven years or more.",
+      "pause": 0.5
+    },
+    {
+      "id": "c4d",
+      "text": "With a long loan, the car wins the race downhill. Soon, Dave owes more than the car is worth. That's called being underwater.",
+      "pause": 0.5
+    },
+    {
+      "id": "c4e",
+      "text": "In early twenty twenty six, about three in ten trade-ins were underwater. On average, by more than seven thousand dollars, says Edmunds.",
+      "pause": 0.5
+    },
+    {
+      "id": "c4f",
+      "text": "Remember our fifty thousand dollar car video? That old debt gets rolled into the next loan. The old car is gone, but its debt rides along. Like a ghost in the back seat.",
+      "pause": 0.9
+    },
+    {
+      "id": "c5a",
+      "chapter": "The Dealer's Secret",
+      "text": "So who makes money on Dave's shiny car? Most people think the dealer makes a fortune on the car itself. Nope.",
+      "pause": 0.4
+    },
+    {
+      "id": "c5b",
+      "text": "In the second quarter of twenty twenty six, dealers made about one thousand eight hundred forty dollars of gross profit per new car. On a fifty thousand dollar car, that's under four percent.",
+      "pause": 0.5
+    },
+    {
+      "id": "c5c",
+      "text": "But in the finance office, they made another one thousand seven hundred sixty nine dollars per car. A record. From loans, warranties, and add-ons.",
+      "pause": 0.5
+    },
+    {
+      "id": "c5d",
+      "text": "And the biggest money maker? The service department. Repairs and parts bring in more than half of a typical dealer's gross profit.",
+      "pause": 0.5
+    },
+    {
+      "id": "c5e",
+      "text": "It's like a movie theater. The ticket barely pays the bills. The popcorn is where the money is.",
+      "pause": 0.5
+    },
+    {
+      "id": "c5f",
+      "text": "So the dealer is happy to sell Dave the car cheaply, if he buys the popcorn. The loan, the warranty, the paint protection, and years of service visits.",
+      "pause": 0.9
+    },
+    {
+      "id": "c6a",
+      "chapter": "The Money That Could Have Grown",
+      "text": "But the biggest cost is one you never see at all. Economists call it opportunity cost. It's what else your money could have done.",
+      "pause": 0.4
+    },
+    {
+      "id": "c6b",
+      "text": "In the spring of twenty twenty six, the average new car payment was a record seven hundred seventy seven dollars, says Edmunds. The average used car payment was about five hundred forty two, says Experian.",
+      "pause": 0.5
+    },
+    {
+      "id": "c6c",
+      "text": "That's a difference of about two hundred thirty five dollars. Every month.",
+      "pause": 0.5
+    },
+    {
+      "id": "c6d",
+      "text": "Remember our compound interest video? Let's say Dave invested that difference instead, and it grew seven percent a year. Not guaranteed. Just an example.",
+      "pause": 0.5
+    },
+    {
+      "id": "c6e",
+      "text": "After ten years, that's about forty one thousand dollars. After thirty years? Close to two hundred ninety thousand dollars.",
+      "pause": 0.5
+    },
+    {
+      "id": "c6f",
+      "text": "Same Dave. Same job. The only difference is the smell of the car.",
+      "pause": 0.9
+    },
+    {
+      "id": "c7a",
+      "chapter": "The Sweet Spot",
+      "text": "So is a new car always a bad idea? Not always. But there's a sweet spot.",
+      "pause": 0.4
+    },
+    {
+      "id": "c7b",
+      "text": "A car that's two or three years old has already gone down the steepest part of the slide. Someone else paid for it.",
+      "pause": 0.5
+    },
+    {
+      "id": "c7c",
+      "text": "Edmunds says the average three year old used car sold for about thirty two thousand five hundred dollars this spring. Compared to about fifty thousand for new.",
+      "pause": 0.5
+    },
+    {
+      "id": "c7d",
+      "text": "That's around seventeen thousand dollars less, for a car that often still has warranty left, and lots of life.",
+      "pause": 0.5
+    },
+    {
+      "id": "c7e",
+      "text": "To be fair, used cars got pricey too, and used car loans often have higher interest rates. So a new car with a special low rate can sometimes win. Do the math both ways.",
+      "pause": 0.5
+    },
+    {
+      "id": "c7f",
+      "text": "And here's a secret. The cheapest car is usually the one you already own. The average car on American roads is now almost thirteen years old.",
+      "pause": 0.9
+    },
+    {
+      "id": "c8a",
+      "chapter": "How Dave Drives Smarter",
+      "text": "So what did Dave learn? Remember, this is education, not advice.",
+      "pause": 0.4
+    },
+    {
+      "id": "c8b",
+      "text": "One. Look at the total cost, not the monthly payment. Depreciation, fuel, insurance, repairs. All of it.",
+      "pause": 0.5
+    },
+    {
+      "id": "c8c",
+      "text": "Two. Consider a car that's two or three years old. And have an independent mechanic check it before you buy.",
+      "pause": 0.5
+    },
+    {
+      "id": "c8d",
+      "text": "Three. Get pre-approved for a loan at your bank or credit union first. Then the dealer has to beat your rate.",
+      "pause": 0.5
+    },
+    {
+      "id": "c8e",
+      "text": "Four. Some people follow the twenty four ten rule. Twenty percent down. Four years or less. And all car costs under ten percent of your income.",
+      "pause": 0.5
+    },
+    {
+      "id": "c8f",
+      "text": "Five. Skip the popcorn. Say no to add-ons you don't understand. And six. Keep your car for a long time. The longer you keep it, the flatter the slide.",
+      "pause": 0.9
+    },
+    {
+      "id": "d1a",
+      "chapter": "Now You Know",
+      "text": "So let's recap.",
+      "pause": 0.4
+    },
+    {
+      "id": "d1b",
+      "text": "One. A new car's biggest cost is depreciation. It can lose around twenty percent in year one, and about forty percent in five years.",
+      "pause": 0.5
+    },
+    {
+      "id": "d1c",
+      "text": "Two. Owning a new car costs almost thirteen thousand dollars a year. And long loans can leave you underwater.",
+      "pause": 0.5
+    },
+    {
+      "id": "d1d",
+      "text": "Three. Dealers earn a lot from loans, add-ons and service. And the money you save by buying smarter can grow for decades.",
+      "pause": 0.7
+    },
+    {
+      "id": "d1e",
+      "text": "Next time, Dave gets a hospital bill. And on it, there's a single aspirin. Price: forty dollars. We'll find out why.",
+      "pause": 0.5
+    },
+    {
+      "id": "d1f",
+      "text": "Subscribe, so your money doesn't depreciate. It's free. And it never loses twenty percent when you drive off.",
+      "pause": 1.4
+    }
+  ],
+  "youtube": {
+    "title": "Why Buying a New Car Makes You Poorer (The $10,000 Leak)",
+    "alt_titles": [
+      "Your New Car Loses $27 a Day. Here's Where It Goes.",
+      "New Car vs Used Car: The Real Cost Nobody Tells You"
+    ],
+    "hook": "Why does buying a new car make you poorer? A new car can lose about $10,000 in its first year and costs almost $13,000 a year to own (AAA). Here's where the money goes.",
+    "tags": [
+      "new car depreciation",
+      "new vs used car",
+      "true cost of owning a car",
+      "car depreciation explained",
+      "negative equity car loan",
+      "dealer profit explained",
+      "opportunity cost",
+      "20/4/10 rule",
+      "should i buy a new car",
+      "total cost of car ownership",
+      "dave explains money"
+    ],
+    "hashtags": [
+      "#cars",
+      "#personalfinance",
+      "#money"
+    ]
+  }
+}
