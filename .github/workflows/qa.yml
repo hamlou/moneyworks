@@ -1,0 +1,38 @@
+name: qa
+run-name: qa ${{ inputs.ep }}
+
+# Empty-scene check in the cloud: renders the start and end of every beat, flags scenes that start (nearly) empty,
+# and uploads a small report + contact sheet of flagged frames. Nothing heavy runs on the owner's PC.
+on:
+  workflow_dispatch:
+    inputs:
+      ep:
+        description: Episode id (e.g. ep27)
+        required: true
+
+jobs:
+  qa:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg
+      - run: pip install -q edge-tts numpy pillow
+      - run: npm ci --no-audit --no-fund
+      - run: python pipeline/tts.py pipeline/episodes/${{ inputs.ep }}.json public/${{ inputs.ep }}
+      - run: python pipeline/validate.py ${{ inputs.ep }} | tee report.txt
+      - run: python pipeline/qa_empty.py ${{ inputs.ep }} --keep | tee -a report.txt || true
+      - run: python pipeline/qa_sheet.py ${{ inputs.ep }} report.txt sheet.jpg || true
+      - uses: actions/upload-artifact@v4
+        with:
+          name: ${{ inputs.ep }}-qa
+          path: |
+            report.txt
+            sheet.jpg
+          retention-days: 7

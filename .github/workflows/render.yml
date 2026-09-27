@@ -91,7 +91,14 @@ jobs:
       - run: bash pipeline/assemble.sh ${{ inputs.ep }}
       - uses: actions/upload-artifact@v4
         with:
-          name: ${{ inputs.ep }}-final
-          path: final/
-          retention-days: 5
+          name: ${{ inputs.ep }}-video
+          path: final/*.mp4
+          retention-days: 90
           compression-level: 0
+      - uses: actions/upload-artifact@v4
+        with:
+          name: ${{ inputs.ep }}-kit
+          path: |
+            final/*.png
+            final/*.txt
+          retention-days: 90
