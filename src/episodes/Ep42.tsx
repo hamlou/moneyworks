@@ -532,9 +532,14 @@ export const Ep42: React.FC = () => {
         <AbsoluteFill>
           <Board />
           <Svg>
-            <G2 x={960} y={400} s={P(A('c9e'))}><Icon kind="heart" s={1.3} /></G2>
-            <G2 x={960} y={680} o={lt(ev, 0.4)}><Text size={40} color={C.green}>plenty of people DO find real love here</Text></G2>
-            <G2 x={960} y={760} o={lt(ev, 0.4)}><Text size={34} color={GRAY}>the business just quietly profits either way</Text></G2>
+            <G2 x={560} y={420} s={1.15 * P(A('c9e'))}><Icon kind="heart" /></G2>
+            <Dave f={f} x={560} y={780} s={1.1} keys={[{at: 0, pose: 'celebrate', expr: 'happy'}]} />
+            <Box x={1420} y={520} w={780} h={420} s={P(A('c9e')) * bump(ev, 0.06)}>
+              <Text y={-110} size={38} color={C.green}>plenty of people DO</Text>
+              <Text y={-50} size={38} color={C.green}>find real love here</Text>
+              <Text y={40} size={32} color={f >= ev ? C.red : GRAY}>{f >= ev ? "it's not evil — it just" : 'but either way...'}</Text>
+              <Text y={100} size={34} color={f >= ev ? C.red : GRAY}>{f >= ev ? 'quietly profits either way' : ''}</Text>
+            </Box>
           </Svg>
         </AbsoluteFill>
       ),

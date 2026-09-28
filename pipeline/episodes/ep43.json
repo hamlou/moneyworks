@@ -1,0 +1,102 @@
+{
+  "id": "ep43",
+  "title": "Why Raising a Kid Costs $300,000",
+  "sources": [
+    "LendingTree, 'The Cost of Raising a Child in 2025' (2025): raising a child from birth to age 18 now costs an estimated $303,418, up 1.9% from the prior year, not counting college",
+    "Brookings Institution, 'The Cost of Raising a Child' (based on USDA's discontinued Expenditures on Children by Families series, inflation-adjusted to current dollars): a middle-income, two-parent family can expect to spend roughly $300,000+ raising a child born today to age 17",
+    "Child Care Aware of America, 'Child Care in America: 2025 Price and Supply' (2025): national average annual price of center-based child care is $13,184; child care for two children costs more than median rent in 47 states and more than median mortgage payments in 39 states",
+    "Institute for Women's Policy Research (IWPR) / Census Bureau data (2024-2025): full-time working mothers with children under 18 earn a median of about $56,680/year vs $76,388 for fathers, roughly a 35% gap; mothers' pay is estimated to fall 5-10% per child",
+    "American Bar Association / multiple labor economists (2025): the 'motherhood penalty' -- lost promotions, slower raises, career interruptions -- is estimated to cost a college-educated mother roughly $600,000+ in lifetime earnings compared to a childless peer over a working life; delaying motherhood by several years is associated with several hundred thousand dollars more in lifetime earnings in recent research (Dec 2025)",
+    "Consumer finance estimates (BabyCenter/American Heritage Credit Union/industry surveys, 2025): disposable diapers and wipes run about $850-$1,200 a year; formula runs roughly $1,200-$2,400 a year for a fully formula-fed baby; store-brand ('generic') formula meets the same FDA nutrient standards as name brands but costs about 20-40% less",
+    "Industry averages (parenting/finance sites, 2025-2026): a new stroller typically runs $200-$400 (up to $1,000+ for premium brands), a new car seat runs $150 and up, and many families spend $2,000-$5,000 on gear alone in the first year if buying everything new",
+    "IRS, '529 Plans: Questions and Answers': 529 education savings plans grow tax-free and qualified withdrawals are tax-free when used for education costs; families can also use employer-sponsored Dependent Care FSAs (up to $5,000/year pre-tax, 2025 limit) to pay child care costs",
+    "Note: the U.S. government's own official 'Expenditures on Children by Families' report (USDA) was discontinued after its 2017 edition; the $300k-ish figures cited by Brookings, LendingTree and others are inflation-adjusted extrapolations of that USDA baseline, not a brand-new government survey -- flagged as a soft/derived source",
+    "Callback: episode 15, compound interest / opportunity cost framing"
+  ],
+  "beats": [
+    {"id": "o1", "text": "Dave is standing in a baby store, staring at a crib.", "pause": 0.25},
+    {"id": "o2", "text": "Four hundred ninety nine dollars. For a box a baby sleeps in.", "pause": 0.3},
+    {"id": "o3", "text": "His partner squeezes his hand. They're having a baby.", "pause": 0.3},
+    {"id": "o4", "text": "Dave is thrilled. Dave is also doing math in his head, and the math is terrifying.", "pause": 0.3},
+    {"id": "o5", "text": "Because that crib is not the scary number. Researchers say the real number, birth to age eighteen, is around three hundred thousand dollars.", "pause": 0.35},
+    {"id": "o6", "text": "Today: where that money actually goes, who profits from your baby, and how to lower the bill. Kid still included.", "pause": 0.6},
+
+    {"id": "c1a", "chapter": "The $300,000 Number", "text": "Let's start with that big scary number. Where does it come from?", "pause": 0.4},
+    {"id": "c1b", "text": "One well known research group, Brookings, took government spending data on food, housing, clothes, and child care, and adjusted it for today's prices.", "pause": 0.5},
+    {"id": "c1c", "text": "A middle income, two parent family raising one child, birth to age eighteen, lands right around three hundred thousand dollars.", "pause": 0.5},
+    {"id": "c1d", "text": "A separate twenty twenty five study, from LendingTree, landed almost exactly there too. Three hundred three thousand, four hundred eighteen dollars.", "pause": 0.5},
+    {"id": "c1e", "text": "Quick honesty break. The government used to publish this number every year. It stopped after twenty seventeen. So today's figures are smart estimates built on old data, not a fresh official count. Still, several separate estimates land in the same neighborhood.", "pause": 0.5},
+    {"id": "c1f", "text": "And that number doesn't even include college. This is just growing a human to eighteen. Food, a bedroom, clothes that fit for about eleven minutes, and everything else.", "pause": 0.9},
+
+    {"id": "c2a", "chapter": "The Baby Markup", "text": "But let's go back to that crib. Because baby gear has its own special kind of expensive.", "pause": 0.4},
+    {"id": "c2b", "text": "A stroller. Two hundred to four hundred dollars for a normal one. Over a thousand for a fancy one. It has four wheels and a cup holder.", "pause": 0.5},
+    {"id": "c2c", "text": "A car seat. One hundred fifty dollars and up, and this one you actually can't skip. It's the law, and it's the one baby item worth buying new.", "pause": 0.5},
+    {"id": "c2d", "text": "Add a crib, a mattress, a monitor, a diaper bag, tiny outfits your baby will outgrow in six weeks, and new parents can spend two thousand to five thousand dollars before the baby even arrives.", "pause": 0.5},
+    {"id": "c2e", "text": "Why so much for stuff a baby won't remember? Because fear sells. Nobody wants to be the parent who cheaped out on their baby's crib. Companies know that, and they price the safety gear like a luxury good.", "pause": 0.5},
+    {"id": "c2f", "text": "The fix isn't to skip safety. It's the word secondhand. Cribs, strollers, and baby clothes get used for months, then sit in a garage forever. Consignment sales and hand me downs exist for exactly this reason.", "pause": 0.9},
+
+    {"id": "c3a", "chapter": "Diapers and Formula: The Drip", "text": "Now, the boring bill nobody warns you about. The stuff that repeats. Every. Single. Day.", "pause": 0.4},
+    {"id": "c3b", "text": "A baby goes through roughly two thousand five hundred diapers in the first year alone. That's about eight hundred fifty to twelve hundred dollars, just in diapers and wipes.", "pause": 0.5},
+    {"id": "c3c", "text": "Formula, if you use it full time, runs about twelve hundred to twenty four hundred dollars a year. That's a second car payment, made of powder.", "pause": 0.5},
+    {"id": "c3d", "text": "Here's the twist though. Store brand formula has to meet the exact same FDA nutrition rules as the name brand. Same rules, same nutrients, twenty to forty percent less money.", "pause": 0.5},
+    {"id": "c3e", "text": "It's the cereal aisle all over again. The box with the mascot costs more. The plain box has the same ingredients list.", "pause": 0.9},
+
+    {"id": "c4a", "chapter": "Daycare Costs More Than Your Rent", "text": "Now for the chapter that actually breaks people's budgets. Daycare.", "pause": 0.4},
+    {"id": "c4b", "text": "Child Care Aware of America tracks this every year. The national average price for center based care is now over thirteen thousand dollars a year, for one kid.", "pause": 0.5},
+    {"id": "c4c", "text": "Here's the number that stops parents cold. In forty seven states, putting two kids in daycare costs more than the median rent. In thirty nine states, it costs more than the median mortgage payment.", "pause": 0.5},
+    {"id": "c4d", "text": "Think about that. The bill for someone to watch your kids can be bigger than the bill for the roof over their heads.", "pause": 0.5},
+    {"id": "c4e", "text": "Why so expensive? A daycare needs one adult for every few babies, by law, for safety. That's not greed, that's just math. Paying enough staff to watch small children, safely, all day, costs real money. There's no shortcut.", "pause": 0.9},
+
+    {"id": "c5a", "chapter": "The Bill You Don't See: Lost Wages", "text": "Most people think the baby budget is diapers and daycare. Nope. The biggest cost is often invisible.", "pause": 0.4},
+    {"id": "c5b", "text": "Remember our compound interest video? Money that doesn't get invested doesn't get to grow. A career works the same way.", "pause": 0.5},
+    {"id": "c5c", "text": "When a parent, usually the mother, steps back from work, or takes a slower job for flexibility, it's not just that one paycheck. It's the raise she didn't get. The promotion that went to someone else. The experience she didn't build that year.", "pause": 0.5},
+    {"id": "c5d", "text": "Research on this 'motherhood penalty' estimates it can cost a mother's lifetime earnings six hundred thousand dollars or more, compared to a similar coworker without kids.", "pause": 0.5},
+    {"id": "c5e", "text": "That number isn't in any receipt. There's no line item that says 'career, minus.' But economists call it a real cost, because it's money that simply never shows up.", "pause": 0.9},
+
+    {"id": "c6a", "chapter": "Who Actually Profits From Your Baby", "text": "So who's cashing in on all of this?", "pause": 0.4},
+    {"id": "c6b", "text": "The baby gear companies, selling fear alongside cribs. The formula brands, charging extra for a mascot. The daycare center, whose costs are mostly just paying enough humans to watch your kid.", "pause": 0.5},
+    {"id": "c6c", "text": "To be fair to that last one: daycare workers themselves are usually paid modestly. The money isn't piling up in some secret daycare vault. It's mostly just the real cost of careful adult supervision, times a whole classroom of toddlers.", "pause": 0.5},
+    {"id": "c6d", "text": "The gear companies are a different story. A five hundred dollar crib and a one hundred fifty dollar crib both have to pass the exact same government safety rules. One of them just also pays for a nicer catalog photo.", "pause": 0.9},
+
+    {"id": "c7a", "chapter": "How Parents Actually Lower the Bill", "text": "Okay. Deep breath. This is the part where it gets less scary. Education, not advice.", "pause": 0.4},
+    {"id": "c7b", "text": "One. Buy secondhand for anything that isn't a car seat. Cribs, clothes, swings, strollers. Consignment sales exist because most baby gear is barely used before it's outgrown.", "pause": 0.5},
+    {"id": "c7c", "text": "Two. Look into daycare co ops, or swapping babysitting with other parents. A group of families trading days can cut the bill dramatically, for the cost of your own time.", "pause": 0.5},
+    {"id": "c7d", "text": "Three. Check your job's benefits before you check your wallet. Some employers offer a dependent care account, letting you pay for child care with money that skips taxes first.", "pause": 0.5},
+    {"id": "c7e", "text": "Four. A five twenty nine plan. It's a special account for education costs, where your money can grow, and qualified withdrawals come out tax free. Even small monthly deposits, started early, add up the same way compound interest always does.", "pause": 0.5},
+    {"id": "c7f", "text": "Five. Store brand formula and diapers. Same safety rules, smaller receipt.", "pause": 0.9},
+
+    {"id": "c8a", "chapter": "So... Is It Worth It?", "text": "Three hundred thousand dollars is a big, scary number to put next to a tiny human.", "pause": 0.4},
+    {"id": "c8b", "text": "But notice something about that number. It's spread across eighteen years. Broken down, it's more like a used car payment every single month, not a lump sum due on day one.", "pause": 0.5},
+    {"id": "c8c", "text": "And this video is about the money, because that's what we do here. It is not a review of parenthood. Dave's not scared off. Dave's just going in with his eyes open, and a plan for the crib.", "pause": 0.9},
+
+    {"id": "r1", "chapter": "Now You Know", "text": "Let's recap.", "pause": 0.4},
+    {"id": "r2", "text": "One. Raising a kid to eighteen runs around three hundred thousand dollars, and that's before college. Daycare alone can beat your rent.", "pause": 0.5},
+    {"id": "r3", "text": "Two. Some of that is baby gear markup and brand name formula. Some of it is real, unavoidable cost, like paying enough adults to safely watch small children.", "pause": 0.5},
+    {"id": "r4", "text": "Three. The biggest cost is often invisible: a parent's career and lifetime earnings. Secondhand gear, co ops, employer benefits and a five twenty nine plan all chip away at what's left.", "pause": 0.6},
+    {"id": "r5", "text": "Next time: Dave goes ring shopping, and a salesman tells him a ring should cost three months of his salary. Spoiler: a diamond company invented that rule.", "pause": 0.4},
+    {"id": "r6", "text": "Subscribe, so Dave can keep explaining money. It's free. Unlike literally everything else in this video.", "pause": 1.4}
+  ],
+  "youtube": {
+    "title": "Why Raising a Kid Really Costs $300,000",
+    "alt_titles": [
+      "The Hidden $300,000 Price Tag of Having a Baby",
+      "Why Daycare Costs More Than Your Rent"
+    ],
+    "hook": "Having a baby? Researchers say raising one kid to age eighteen costs about $300,000. Here's where every dollar actually goes.",
+    "tags": [
+      "cost of raising a child",
+      "why raising a kid is so expensive",
+      "cost of daycare vs rent",
+      "baby cost breakdown",
+      "motherhood penalty explained",
+      "529 plan explained",
+      "diaper and formula cost",
+      "how much does a baby cost",
+      "child care costs 2025",
+      "money explained simply",
+      "dave explains money"
+    ],
+    "hashtags": ["#parenting", "#personalfinance", "#money"],
+    "pinned": "If you have kids: what was the one baby expense that shocked you the most? 👇"
+  }
+}

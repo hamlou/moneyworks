@@ -417,19 +417,21 @@ export const Ep45: React.FC = () => {
           <Svg>
             <G2 x={620} y={120} s={P(A('c3a')) * bump(date)}><Text size={48}>{f >= strava ? 'Strava crunched 30M+ workouts' : "there's even a date for it"}</Text></G2>
             <Calendar x={620} y={620} s={1.35 * P(A('c3a')) * bump(quitters, 0.1)} top={f >= friday ? '2nd FRIDAY' : 'JANUARY'} year={f >= ninth ? 'JAN 9' : '?'} flip={0} />
-            <Stamp x={1500} y={560} s={pop(f, quitters)} text="QUITTER'S DAY" size={54} color={C.red} r={-5} />
-            <G2 x={1500} y={780} s={bump(strava)} o={lt(strava, 0.4)}><Text size={34} color={GRAY}>Strava, 30M+ Jan activities</Text></G2>
+            <Stamp x={1500} y={560} s={P(A('c3a')) * bump(quitters, 0.15)} text="QUITTER'S DAY" size={54} color={C.red} r={-5} />
+            <G2 x={1500} y={780} s={P(A('c3a')) * bump(strava)}><Text size={34} color={GRAY}>Strava, 30M+ Jan activities</Text></G2>
+            <Dave f={f} x={1600} y={950} s={0.95 * P(A('c3a'))} keys={[{at: 0, pose: 'shrug', expr: 'worried', look: -0.8}, {at: quitters, pose: 'facepalm', expr: 'sad'}]} />
           </Svg>
         </AbsoluteFill>
       ) : (
         <AbsoluteFill>
           <Board />
           <Svg>
-            <G2 x={960} y={140} s={P(A('c3d'))}><Text size={50}>resolutions abandoned by then</Text></G2>
-            <line x1={560} y1={880} x2={1360} y2={880} stroke={C.ink} strokeWidth={6} strokeLinecap="round" />
-            <Bar x={720} y={880} h={200} color={C.green} label="still going" value="20%" w={260} />
-            <Bar x={1160} y={880} h={ease(f, eighty - 4, eighty + 16, 60, 640)} color={C.red} label="quit already" value={f >= eighty ? '80%' : '?'} w={260} />
-            <Dave f={f} x={1650} y={900} s={1} keys={[{at: 0, pose: 'facepalm', expr: 'sad'}]} />
+            <G2 x={960} y={130} s={P(A('c3d'))}><Text size={52}>resolutions abandoned by then</Text></G2>
+            <Stamp x={960} y={230} s={P(A('c3d')) * bump(eighty, 0.12)} text="QUITTER'S DAY" size={38} color={C.navy} r={-3} />
+            <line x1={480} y1={880} x2={1440} y2={880} stroke={C.ink} strokeWidth={6} strokeLinecap="round" />
+            <Bar x={680} y={880} h={220} color={C.green} label="still going" value="20%" w={300} />
+            <Bar x={1240} y={880} h={ease(f, eighty - 4, eighty + 16, 70, 660)} color={C.red} label="quit already" value={f >= eighty ? '80%' : '?'} w={300} />
+            <Dave f={f} x={1680} y={880} s={1.15 * P(A('c3d'))} keys={[{at: 0, pose: 'facepalm', expr: 'sad'}]} />
           </Svg>
         </AbsoluteFill>
       ),
@@ -500,10 +502,11 @@ export const Ep45: React.FC = () => {
           <Board />
           <Svg>
             <G2 x={960} y={120} s={P(A('c4d')) * bump(four)}><Text size={46}>real cost, per visit</Text></G2>
-            <line x1={560} y1={880} x2={1360} y2={880} stroke={C.ink} strokeWidth={6} strokeLinecap="round" />
-            <Bar x={720} y={880} h={ease(f, ten - 4, ten + 12, 60, 220)} color={C.green} label="10-visit pass" value={f >= ten ? '$10/visit' : '?'} w={260} />
-            <Bar x={1160} y={880} h={ease(f, seventeen - 4, seventeen + 16, 60, 420)} color={C.red} label="monthly plan" value={f >= seventeen ? '$17+/visit' : '?'} w={260} />
-            <G2 x={620} y={280} s={bump(way)} o={lt(way, 0.4)}><Text size={40} color={GRAY}>~4 visits/month, but paid for way more</Text></G2>
+            <G2 x={960} y={220} s={P(A('c4d')) * bump(way)}><Text size={38} color={GRAY}>{f >= way ? 'paid for way more' : '~4 visits/month...'}</Text></G2>
+            <line x1={480} y1={880} x2={1240} y2={880} stroke={C.ink} strokeWidth={6} strokeLinecap="round" />
+            <Bar x={680} y={880} h={ease(f, ten - 4, ten + 12, 70, 260)} color={C.green} label="10-visit pass" value={f >= ten ? '$10/visit' : '?'} w={300} />
+            <Bar x={1120} y={880} h={ease(f, seventeen - 4, seventeen + 16, 70, 480)} color={C.red} label="monthly plan" value={f >= seventeen ? '$17+/visit' : '?'} w={300} />
+            <Dave f={f} x={1620} y={900} s={1.2 * P(A('c4d'))} keys={[{at: 0, pose: 'shrug', expr: 'worried', look: -0.8}, {at: seventeen, pose: 'facepalm', expr: 'sad'}]} />
             <SourceTag f={f} at={ten} text="DellaVigna & Malmendier, AER 96(3), 2006: monthly members paid $17+/visit vs $10 drop-in" />
           </Svg>
         </AbsoluteFill>
@@ -794,10 +797,13 @@ export const Ep45: React.FC = () => {
       <AbsoluteFill>
         <Board />
         <Svg>
-          <G2 x={960} y={300} s={P(A('c8d')) * bump(weird)}><Text size={46}>{f >= cheap ? 'keeps it cheap for everyone who goes' : 'in a weird way...'}</Text></G2>
-          <Dave f={f} x={640} y={880} s={1.1} keys={[{at: 0, pose: 'shrug', expr: 'neutral'}]} />
-          <Bob f={f} x={1280} y={880} s={1.05} keys={[{at: 0, pose: 'idle', expr: 'happy'}]} handItem={<Dumbbell s={0.35} />} />
-          <G2 x={960} y={700} s={bump(okay)} o={lt(okay, 0.4)}><Text size={40} color={GRAY}>doesn't make the exit maze okay, though</Text></G2>
+          <G2 x={960} y={220} s={P(A('c8d')) * bump(weird)}><Text size={46}>{f >= cheap ? 'keeps it cheap for everyone who goes' : 'in a weird way...'}</Text></G2>
+          <Treadmill x={480} y={780} s={1 * P(A('c8d'))} f={f} running={false} />
+          <Dave f={f} x={640} y={920} s={1.15 * P(A('c8d'))} keys={[{at: 0, pose: 'shrug', expr: 'neutral'}]} />
+          <Bob f={f} x={1280} y={920} s={1.1 * P(A('c8d'))} keys={[{at: 0, pose: 'idle', expr: 'happy'}]} handItem={<Dumbbell s={0.35} />} />
+          <Box x={960} y={620} w={880} h={160} s={P(A('c8d')) * bump(okay, 0.08)}>
+            <Text size={38} color={f >= okay ? C.navy : GRAY}>doesn't make the exit maze okay, though</Text>
+          </Box>
         </Svg>
       </AbsoluteFill>
     ));
@@ -880,10 +886,13 @@ export const Ep45: React.FC = () => {
         <AbsoluteFill>
           <Board />
           <Svg>
-            <SubButton x={960} y={440} s={1.3 * pop(f, sb - 8)} done={f > sb + 14 ? 1 : 0} />
-            <Bell x={1400} y={440} s={pop(f, sb - 4)} f={f} ring={f > sb + 16 && f < sb + 50 ? 1 : 0} />
-            <Dave f={f} x={420} y={860} s={1.2} keys={[{at: 0, pose: 'wave', expr: 'grin'}]} />
-            <G2 x={1550} y={880} s={bump(easier)} o={lt(easier, 0.4)}><Text size={36} color={C.green}>{f >= easier ? 'easier than cancelling a gym' : ''}</Text></G2>
+            <G2 x={200} y={240} s={0.7 * pop(f, sb - 8)} o={0.5}><Dumbbell /></G2>
+            <G2 x={1720} y={260} s={0.55 * pop(f, sb - 8)} o={0.5}><Treadmill f={f} running /></G2>
+            <SubButton x={960} y={420} s={1.4 * pop(f, sb - 8)} done={f > sb + 14 ? 1 : 0} />
+            <Bell x={1440} y={420} s={1.1 * pop(f, sb - 4)} f={f} ring={f > sb + 16 && f < sb + 50 ? 1 : 0} />
+            <Dave f={f} x={420} y={900} s={1.3 * pop(f, sb - 8)} keys={[{at: 0, pose: 'wave', expr: 'grin'}]} />
+            <Bob f={f} x={1620} y={900} s={1.1 * pop(f, sb - 6)} keys={[{at: 0, pose: 'thumbs', expr: 'happy'}]} />
+            <G2 x={1000} y={820} s={pop(f, sb - 4) * bump(easier)} o={lt(easier, 0.45)}><Text size={40} color={C.green}>{f >= easier ? 'easier than cancelling a gym' : 'no thirty day wait'}</Text></G2>
           </Svg>
         </AbsoluteFill>
       ),
