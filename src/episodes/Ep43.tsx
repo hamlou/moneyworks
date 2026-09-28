@@ -457,14 +457,14 @@ export const Ep43: React.FC = () => {
         <AbsoluteFill>
           <Board />
           <Svg>
-            <G2 x={960} y={140} s={P(A('c4e'))}><Text size={46}>why? one adult per few babies. by law.</Text></G2>
+            <Box x={960} y={140} w={1050} h={120}><Text size={44}>why? one adult per few babies. by law.</Text></Box>
             {Array.from({length: 4}).map((_, i) => (
-              <G2 key={i} x={620 + i * 240} y={600} s={P(A('c4e')) * bump(ad2, 0.08)}>
+              <G2 key={i} x={520 + i * 300} y={620} s={1.5 * P(A('c4e')) * bump(ad2, 0.08)}>
                 <circle cy={-40} r={30} fill="#F4D6B8" stroke={C.ink} strokeWidth={4} />
                 <rect x={-34} y={-6} width={68} height={90} rx={16} fill={i === 0 ? C.blue : C.yellow} stroke={C.ink} strokeWidth={4} />
               </G2>
             ))}
-            <G2 x={960} y={800} o={lt(ad2, 0.4)}><Text size={34} color={GRAY}>1 adult : a few babies (safety law)</Text></G2>
+            <Box x={960} y={880} w={700} h={110} o={lt(ad2, 0.5)}><Text size={34} color={GRAY}>1 adult : a few babies (safety law)</Text></Box>
             <Stamp x={960} y={960} s={pop(f, shc)} text="NO SHORTCUT" size={40} color={C.red} r={-3} />
           </Svg>
         </AbsoluteFill>
@@ -525,9 +525,9 @@ export const Ep43: React.FC = () => {
       <AbsoluteFill>
         <Board />
         <Svg>
-          <G2 x={620} y={480} s={P(A('c5d')) * bump(dt, 0.15)}>
+          <G2 x={620} y={480} s={1.1 * P(A('c5d')) * bump(dt, 0.15)}>
             <rect x={-320} y={-100} width={640} height={200} rx={28} fill={f >= dt ? C.red : '#fff'} stroke={C.ink} strokeWidth={6} />
-            <Text y={4} size={70} color={f >= dt ? '#fff' : GRAY}>{f >= dt ? '$600,000+' : '?'}</Text>
+            <Text y={4} size={70} color={f >= dt ? '#fff' : GRAY}>$600,000+</Text>
           </G2>
           <G2 x={620} y={680}><Text size={32} color={GRAY}>the "motherhood penalty" (lifetime)</Text></G2>
           <SourceTag f={f} at={dt} text="IWPR / Census Bureau data (2024-2025); ABA Law Practice, 'Yes, There Is Still a Motherhood Penalty in 2025'" />
@@ -685,9 +685,9 @@ export const Ep43: React.FC = () => {
         <AbsoluteFill>
           <Board />
           <Svg>
-            <G2 x={960} y={140} s={P(A('r5'))}><Text size={54}>Next: Dave goes ring shopping</Text></G2>
-            <Dave f={f} x={620} y={900} s={1.15} keys={[{at: 0, pose: 'point_r', expr: 'happy', look: 0.8}, {at: rg, pose: 'shrug', expr: 'worried'}]} />
-            <G2 x={1300} y={600} s={P(A('r5')) * bump(inv2, 0.1)} o={lt(inv2, 0.4)}><Bubble text={'"three months\nof salary..."'} size={40} tail="left" /></G2>
+            <Box x={960} y={140} w={950} h={130}><Text size={54}>Next: Dave goes ring shopping</Text></Box>
+            <Dave f={f} x={620} y={920} s={1.4} keys={[{at: 0, pose: 'point_r', expr: 'happy', look: 0.8}, {at: rg, pose: 'shrug', expr: 'worried'}]} />
+            <G2 x={1300} y={620} s={1.1 * P(A('r5')) * bump(inv2, 0.1)} o={lt(inv2, 0.5)}><Bubble text={'"three months\nof salary..."'} size={40} tail="left" /></G2>
           </Svg>
         </AbsoluteFill>
       ) : (
