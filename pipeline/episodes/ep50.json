@@ -1,0 +1,102 @@
+{
+  "id": "ep50",
+  "title": "Why Weddings Cost $35,000 (Say \"Wedding,\" Price Doubles)",
+  "sources": [
+    "Illustrative cold-open anecdote (dramatized, matching the documented pattern below): a couple calling the same vendor twice, once as a 'party' and once as a 'wedding', is not a literal transcript of a specific real call -- it's a dramatization of the Consumer Reports test described next",
+    "Consumer Reports, 'Brides and Grooms, Beware of Higher Wedding Pricing' (2016 secret-shopper investigation): paired shoppers called the same photographers, florists, caterers and other vendors in 12 states, asking for quotes on an identical wedding vs. a 50th-anniversary party; wedding quotes came back higher in 28% of cases, in some cases by thousands of dollars for identical services; the study also found built-in wedding gratuities up to 26% and hidden per-person cake-cutting fees",
+    "The Knot Worldwide, '2026 Real Weddings Study' (surveyed ~10,000-11,000 US couples married in 2025, published 2026): average US wedding cost was $34,200; couples budgeting under $15K spent $8,900 on average, couples budgeting $15,001-$40K spent $26,400 on average, couples budgeting over $40K spent $70,300 on average",
+    "The Knot, wedding budget breakdown reporting (2025-2026): venue + catering together commonly run 40%-50% of total budget; average catering cost about $80 per guest; photography/video roughly 10%-12% of budget; attire/beauty roughly 5%-8%",
+    "The Knot generational guest-count reporting (2025-2026): Gen Z couples invite an average of 129 guests vs. 112 for Millennials and 90 for Gen X",
+    "The Wedding Report / industry market-size estimates (2025): US wedding market valued at roughly $66.16 billion in 2025 across approximately 2,011,044 weddings (~2 million couples)",
+    "LendingTree newlywed survey (QuestionPro online survey of 1,050 US newlyweds ages 18-79, fielded March 12-19, 2025, published April 28, 2025): 67% of newlyweds took on wedding-related debt; 1 in 3 felt pressured to overspend to impress guests; more than half regret how much they spent; 16% said they've considered divorce over wedding-related money stress",
+    "Off-season/weekday venue pricing (multiple 2025-2026 wedding-industry pricing guides): Friday/Sunday weddings commonly run about 15%-25% below Saturday venue rates; a full weekday (Mon-Thu) or deep off-season booking can save 20%-40% or more",
+    "Illustrative math: $80/guest x 10 additional guests = $800; ~2,011,044 weddings x $34,200 average ≈ $66-68 billion",
+    "Callback: episode 44, 'Why an Engagement Ring Should Cost 3 Months' Salary' (De Beers/marketing-invented spending 'rules'; average US engagement ring spend was about $4,600 in 2025 per The Knot)"
+  ],
+  "beats": [
+    {"id": "o1", "text": "Dave and his partner call a bakery. A simple cake, for a party. Price: four hundred dollars.", "pause": 0.3},
+    {"id": "o2", "text": "A week later, Dave calls that exact same bakery again. Same cake. This time, he says one different word. Wedding.", "pause": 0.3},
+    {"id": "o3", "text": "New quote: eight hundred dollars. Same cake. Same baker. Same afternoon of work.", "pause": 0.3},
+    {"id": "o4", "text": "This isn't just cake, and it isn't a coincidence. Dave already survived the ring. Now comes the wedding itself.", "pause": 0.35},
+    {"id": "o5", "text": "The average wedding in America now costs about thirty four thousand dollars. For one single day.", "pause": 0.35},
+    {"id": "o6", "text": "Today: the wedding markup, where that money actually goes, and how to get the wedding you actually want, for way less.", "pause": 0.6},
+
+    {"id": "c1a", "chapter": "The Wedding Tax", "text": "Let's start with that phone call. Is a wedding markup actually real, or just a rumor brides tell each other?", "pause": 0.4},
+    {"id": "c1b", "text": "Consumer Reports actually tested this. Secret shoppers called the same photographers, florists and caterers, twice each.", "pause": 0.5},
+    {"id": "c1c", "text": "Once asking about a wedding. Once asking about an identical fiftieth anniversary party. Same guest count, same date, same everything else.", "pause": 0.5},
+    {"id": "c1d", "text": "In more than one out of every four calls, the wedding quote came back higher. Sometimes by thousands of dollars, for the exact same afternoon of work.", "pause": 0.5},
+    {"id": "c1e", "text": "It's like calling a mechanic about my car, versus my wedding car. Same engine. Very different invoice.", "pause": 0.9},
+
+    {"id": "c2a", "chapter": "The Thirty Four Thousand Dollar Number", "text": "So what does an actual wedding cost, on average, in America right now?", "pause": 0.4},
+    {"id": "c2b", "text": "According to The Knot's latest study of real married couples, the average is about thirty four thousand two hundred dollars.", "pause": 0.5},
+    {"id": "c2c", "text": "That's not the price of a used car. That's the price of one single day.", "pause": 0.5},
+    {"id": "c2d", "text": "And it scales with budget. Couples who plan to spend under fifteen thousand end up around nine thousand. Couples planning over forty thousand end up around seventy thousand three hundred.", "pause": 0.5},
+    {"id": "c2e", "text": "The bigger the starting budget, the more the wedding grows to fill it. Like water, finding every crack in a sidewalk.", "pause": 0.9},
+
+    {"id": "c3a", "chapter": "Where the Money Actually Goes", "text": "Okay, so where does thirty four thousand dollars actually go?", "pause": 0.4},
+    {"id": "c3b", "text": "The two biggest slices are the venue, and the food. Together, they eat up close to half of the entire budget.", "pause": 0.5},
+    {"id": "c3c", "text": "Catering alone runs about eighty dollars a plate, on average. Invite one hundred guests, and dinner alone costs eight thousand dollars, before anyone even orders a drink.", "pause": 0.5},
+    {"id": "c3d", "text": "Photography and video take another slice, around a tenth of the whole budget. The dress is a smaller slice, on top of that.", "pause": 0.5},
+    {"id": "c3e", "text": "Add flowers, music, invitations, and a buffer for the thing nobody planned for, and the entire pie is already gone.", "pause": 0.9},
+
+    {"id": "c4a", "chapter": "The Guest List Is the Real Lever", "text": "Here's the one number that actually controls almost everything else. The guest list.", "pause": 0.4},
+    {"id": "c4b", "text": "Remember that eighty dollar plate? Every single name on that list multiplies the venue, the food, the chairs, and the cake.", "pause": 0.5},
+    {"id": "c4c", "text": "Younger couples are inviting more people than ever. Add just ten more names, and you've added about eight hundred dollars, before dessert.", "pause": 0.5},
+    {"id": "c4d", "text": "It's like a group order at a restaurant. Nobody notices one more seat, until the bill arrives, split thirty ways.", "pause": 0.5},
+    {"id": "c4e", "text": "Cut the guest list by twenty people, and almost every other number on the budget gets smaller, automatically.", "pause": 0.9},
+
+    {"id": "c5a", "chapter": "A Sixty Six Billion Dollar Industry", "text": "Zoom out, and you can see why so many businesses show up the moment you say the words I do.", "pause": 0.4},
+    {"id": "c5b", "text": "Roughly two million couples marry in the United States, every single year.", "pause": 0.5},
+    {"id": "c5c", "text": "Multiply that by the average cost, and American weddings add up to a sixty six billion dollar industry, in a single year.", "pause": 0.5},
+    {"id": "c5d", "text": "That's venues, caterers, photographers, dress shops, bands, and yes, bakeries, all competing for a piece of your one day.", "pause": 0.5},
+    {"id": "c5e", "text": "None of that makes them evil. It just means every vendor in that industry has a reason to make your wedding sound like it needs one more upgrade.", "pause": 0.9},
+
+    {"id": "c6a", "chapter": "The Hangover After the Honeymoon", "text": "So how are couples actually paying for all of this?", "pause": 0.4},
+    {"id": "c6b", "text": "A survey of newlyweds found that about two out of three took on debt, just to pay for their wedding.", "pause": 0.5},
+    {"id": "c6c", "text": "One in three said they felt pressured to overspend, just to impress the guests.", "pause": 0.5},
+    {"id": "c6d", "text": "More than half say they now regret how much they spent. And some newlyweds even said wedding money stress made them think about divorce, before the marriage even really started.", "pause": 0.5},
+    {"id": "c6e", "text": "It's like buying the most expensive ticket of your life, to a show that lasts one night, and then quietly paying for it for years.", "pause": 0.9},
+
+    {"id": "c7a", "chapter": "Myth: Bigger Wedding, Better Marriage", "text": "Most people think a bigger, pricier wedding means a stronger start to a marriage. Nope.", "pause": 0.4},
+    {"id": "c7b", "text": "There's no official study proving a forty thousand dollar wedding buys a happier marriage than a four thousand dollar one.", "pause": 0.5},
+    {"id": "c7c", "text": "What actually seems to matter, according to couples themselves, is starting the marriage without a mountain of new debt, and without a fight over who overspent.", "pause": 0.5},
+    {"id": "c7d", "text": "The wedding is one day. The marriage, hopefully, is not.", "pause": 0.9},
+
+    {"id": "c8a", "chapter": "How to Get the Wedding You Actually Want", "text": "So how do you throw a great wedding, without the sixty six billion dollar price tag? Remember, this is education, not advice.", "pause": 0.4},
+    {"id": "c8b", "text": "One. Shrink the guest list before anything else. It's the single biggest lever in the entire budget.", "pause": 0.5},
+    {"id": "c8c", "text": "Two. Get quotes for your date and headcount, before you ever say the word wedding. Then compare that to the number you're quoted after.", "pause": 0.5},
+    {"id": "c8d", "text": "Three. Consider a Friday, a Sunday, or the off season. Venues can run fifteen to forty percent cheaper, just for picking a different day on the calendar.", "pause": 0.5},
+    {"id": "c8e", "text": "Four. Set your total budget first, then rank your top two or three priorities. Spend there. Cut hardest on whatever you both care about least.", "pause": 0.5},
+    {"id": "c8f", "text": "Five. A big wedding can be wonderful. Just make sure you're the one choosing it, and not just following the invoice everyone else got.", "pause": 0.9},
+
+    {"id": "r1", "chapter": "Now You Know", "text": "So let's recap.", "pause": 0.4},
+    {"id": "r2", "text": "One. The wedding markup is real. Consumer Reports found identical services quoted higher, for the exact same afternoon, just for saying the word wedding.", "pause": 0.5},
+    {"id": "r3", "text": "Two. The average wedding costs about thirty four thousand dollars, and the guest list drives almost every other number in that budget.", "pause": 0.5},
+    {"id": "r4", "text": "Three. A shorter guest list, quotes without the w word, an off season date, and one clear priority beat almost any amount of extra spending.", "pause": 0.6},
+    {"id": "r5", "text": "That's fifty episodes of Dave living the exact money problem you live too, finding out who actually profits from it, and figuring out what to actually do about it.", "pause": 0.5},
+    {"id": "r6", "text": "Subscribe, if even one of these fifty videos saved you a dollar, or just made you feel a little less alone with your bank account. Thanks for watching Dave Explains Money.", "pause": 1.4}
+  ],
+  "youtube": {
+    "title": "Why Weddings Cost $34,000 (Say \"Wedding,\" Price Jumps)",
+    "alt_titles": [
+      "The Wedding Markup Is Real. Here's the Proof.",
+      "Why the Same Cake Costs More the Moment You Say 'Wedding'"
+    ],
+    "hook": "Dave called the same bakery twice for the same cake. Once as a 'party,' once as a 'wedding.' The price doubled. Here's the real math behind $34,000 weddings.",
+    "tags": [
+      "why weddings are so expensive",
+      "wedding markup explained",
+      "average cost of a wedding 2026",
+      "wedding tax real or myth",
+      "how much does a wedding cost",
+      "wedding budget breakdown",
+      "wedding debt statistics",
+      "cheap wedding tips",
+      "guest list wedding budget",
+      "money explained simply",
+      "dave explains money"
+    ],
+    "hashtags": ["#wedding", "#personalfinance", "#money"],
+    "pinned": "If you got married: did you go over budget? By how much? 👇"
+  }
+}
