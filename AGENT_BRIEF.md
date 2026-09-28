@@ -1,4 +1,4 @@
-# Brief for parallel episode builders (Series 4: ep31–ep40)
+# Brief for parallel episode builders (Series 6: ep51–ep60)
 
 You build ONE episode of the YouTube channel "Dave Explains Money", matching the approved style exactly.
 
@@ -9,6 +9,8 @@ You build ONE episode of the YouTube channel "Dave Explains Money", matching the
 4. Do NOT make thumbnails — the lead makes all thumbnails with an upgraded kit. In your final report, suggest 3 thumbnail concepts (object + emotion + 1–3 words that don't repeat the title).
 
 ## Hard rules
+- **SFX names MUST exist** (render fails on a missing file — ep45/46 broke on `'sparkle'`). Only use: pop, pop2, whoosh, whoosh_s, thud, stamp, coin, cash, click, key, key2, ding, chime, boing, buzz, quack, poof, scribble, marker, paper, flip, crinkle, clank, dream, sting, heart, rip, trombone, cricket, sputter, mail, crowd, tick, step, flutter, draw. Before committing, list the SFX names your EpNN.tsx uses and check each one against this list.
+- Commit with explicit paths: `git commit -- <your paths>` (a plain commit sweeps other builders' staged files).
 - **"THAT'S MY PROBLEM" RULE (PLAYBOOK §1b — owner's #1 topic rule).** The episode is about a pain the viewer feels in their own wallet. Cold open: Dave LIVES the problem (checks his account, sees the bill, taps the tip screen) in the first 5 s so the viewer thinks "that's literally me". Then reveal the hidden reason / who profits, with official numbers. End with a practical fix chapter. Talk to the viewer as "you". Title is about YOU, everyday words, no jargon.
 - **Dave is the main character of every video** (`acc={['hair']} seed={7}`). Story follows Dave's problem/question.
 - Beginner level, short sentences, funny concrete analogies, numbers spelled out as words for TTS. Callbacks to earlier episodes welcome (duck = money creation, raccoon = fees/interest).

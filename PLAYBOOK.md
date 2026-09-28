@@ -127,6 +127,9 @@ Callbacks to earlier episodes are GOOD ("Remember the raccoon from our credit ca
 - Don't draw real logos (McDonald's arches, Klarna logo). Text names are fine.
 - Avoid emoji in SVG text (renderer may lack the font). ✓ works.
 - Captions come from edge-tts word boundaries; write numbers as words.
+- SFX names must be in the §7 list — an unknown name (e.g. 'sparkle') makes the cloud render fail (ep45/46).
+- `seo.py` rewrites `pipeline/episodes/epNN.json` (youtube field) on purpose — commit that change, it is not stray.
+- Owner's topic taste (ep41–60 rounds): YES = life moments & money traps (weddings, divorce, co-signing, lending to family, MLMs, gurus, trading/betting apps, free games, gym, free trials, working until 70). NO = product-fee topics (printer ink, popcorn, warranties, resort fees, timeshares), 'feel poor on $100K', kids' sports/parties, nursing homes, dentists, lottery, pig-butchering scams.
 
 ## 11. Series 1 episode list (for callbacks)
 
