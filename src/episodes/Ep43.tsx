@@ -136,7 +136,7 @@ export const Ep43: React.FC = () => {
     const sc = w('o5', 'scary');
     const th = w('o5', 'three');
     const tt = w('o5', 'thousand');
-    const cr = w('o6', 'crib');
+    const cr = w('o6', 'today');
     const dc = w('o6', 'goes');
     const pr = w('o6', 'profits');
     const bl = w('o6', 'bill');
@@ -357,7 +357,7 @@ export const Ep43: React.FC = () => {
     const rgh = w('c3b', 'roughly');
     const eig = w('c3b', 'eight');
     const fmt = w('c3c', 'formula');
-    const twf = w('c3c', 'twenty', 1);
+    const twf = w('c3c', 'twenty');
     q(rgh, 'ding', 0.4);
     q(eig, 'cash', 0.6);
     q(fmt, 'pop', 0.5);
