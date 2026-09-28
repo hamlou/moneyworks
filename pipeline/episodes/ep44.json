@@ -12,65 +12,265 @@
     "Callback: episode 36, 'was'/anchor pricing psychology"
   ],
   "beats": [
-    {"id": "o1", "text": "Dave is at a jewelry counter, looking at a ring in a glass box.", "pause": 0.25},
-    {"id": "o2", "text": "The salesman leans in and says the magic words. Most people spend about three months of their salary.", "pause": 0.3},
-    {"id": "o3", "text": "Dave's brain does the math, and Dave's stomach drops.", "pause": 0.3},
-    {"id": "o4", "text": "Three months of salary. For a rock. On a ring. That he will see every single day, and never sell.", "pause": 0.3},
-    {"id": "o5", "text": "Here's the twist. That rule isn't tradition. It isn't science. A diamond company invented it, on purpose, to sell more diamonds.", "pause": 0.35},
-    {"id": "o6", "text": "Today: where the rule came from, what a diamond is actually worth the second you buy it, and how to buy a ring you're not afraid to check the price of.", "pause": 0.6},
-
-    {"id": "c1a", "chapter": "The Rule That Isn't a Rule", "text": "Let's start with the question nobody asks the sales guy. Says who?", "pause": 0.4},
-    {"id": "c1b", "text": "Who decided a ring should cost three months of a paycheck? Not a religion. Not a government. A company. De Beers.", "pause": 0.5},
-    {"id": "c1c", "text": "In the nineteen thirties, De Beers ran ads suggesting about one month's salary. By the nineteen eighties, American ads had quietly bumped that to two months.", "pause": 0.5},
-    {"id": "c1d", "text": "And in Japan, where De Beers ran a separate campaign, they pushed the number all the way to three months, in a country where diamond rings barely existed before.", "pause": 0.5},
-    {"id": "c1e", "text": "Same company. Different countries. Different made up numbers. If the rule were really about tradition, it wouldn't change depending on which continent you're standing on.", "pause": 0.9},
-
-    {"id": "c2a", "chapter": "How a Company Invented a Tradition", "text": "So how does a company invent a hundred year old tradition in a few decades?", "pause": 0.4},
-    {"id": "c2b", "text": "Rewind to the nineteen forties. Diamond sales had crashed during the Great Depression. Nobody was buying rocks when they could barely buy bread.", "pause": 0.5},
-    {"id": "c2c", "text": "De Beers hired an ad agency, and a young copywriter named Frances Gerety wrote four words that would end up worth billions. A diamond is forever.", "pause": 0.5},
-    {"id": "c2d", "text": "The idea was simple, and brilliant. If a diamond is forever, you never resell it. It just sits in a drawer, generation after generation. That single sentence created a promise, and a problem, at the same time.", "pause": 0.5},
-    {"id": "c2e", "text": "Before this campaign, roughly one in ten American brides got a diamond ring. Within about fifty years, it was eight in ten. A slogan did that. Four words.", "pause": 0.9},
-
-    {"id": "c3a", "chapter": "What a Diamond Is Actually Worth", "text": "Okay, so here's the part that actually matters to your wallet. What is that diamond worth, the moment you buy it?", "pause": 0.4},
-    {"id": "c3b", "text": "Jewelry stores typically mark diamonds up fifty to two hundred percent over the wholesale price, depending on the size of the stone. Smaller accent diamonds get marked up the most.", "pause": 0.5},
-    {"id": "c3c", "text": "Translation: a big chunk of that price tag isn't the diamond. It's the store's rent, the velvet box, the ad campaign, and the salesman's smile.", "pause": 0.5},
-    {"id": "c3d", "text": "Which is why, if you tried to sell that same ring back the next day, most appraisers say you'd get somewhere around twenty to fifty percent of what you paid. For a lot of rings, that's an instant loss of about half its price, the moment you leave the store.", "pause": 0.5},
-    {"id": "c3e", "text": "It's a lot like driving a new car off the lot. Except the car, at least, gets you to work.", "pause": 0.5},
-    {"id": "c3f", "text": "To be clear, this isn't a scam, exactly. Nobody said a diamond was a stock. But 'forever' was always a much better slogan than 'good luck reselling this.'", "pause": 0.9},
-
-    {"id": "c4a", "chapter": "The Lab-Grown Price Crash", "text": "Now here's where the story gets interesting, and recent. Lab grown diamonds.", "pause": 0.4},
-    {"id": "c4b", "text": "Same carbon. Same crystal structure. Grown in a lab instead of squeezed out of the earth for a billion years. Even trained gemologists need special equipment to tell them apart.", "pause": 0.5},
-    {"id": "c4c", "text": "And the price gap is enormous. A one carat, high quality mined diamond retails for around four thousand six hundred dollars. A lab grown diamond that looks identical can start under a thousand.", "pause": 0.5},
-    {"id": "c4d", "text": "That's roughly seventy five to ninety percent less, for a stone a jeweler needs a machine to tell apart from the 'real' one.", "pause": 0.5},
-    {"id": "c4e", "text": "And shoppers have noticed. As of twenty twenty five, about six in ten American couples chose a lab grown center stone. Average spend on those rings: about four thousand three hundred dollars, versus about seven thousand for a natural stone.", "pause": 0.5},
-    {"id": "c4f", "text": "Prices have fallen roughly seventy four percent since twenty twenty, and they're only just starting to level off. That's not a sale sign. That's an entire market resetting.", "pause": 0.9},
-
-    {"id": "c5a", "chapter": "The Average Ring Today", "text": "Most people think everyone's still spending three months' salary. Nope.", "pause": 0.4},
-    {"id": "c5b", "text": "According to The Knot's latest survey of real couples, the average U S engagement ring cost about four thousand six hundred dollars in twenty twenty five. Down from the year before.", "pause": 0.5},
-    {"id": "c5c", "text": "For most full time workers, that's closer to three to five weeks of pay, not three months. The 'rule' and reality have been drifting apart for a while.", "pause": 0.5},
-    {"id": "c5d", "text": "And rings are getting bigger anyway, because lab grown stones let couples buy more carat for the same money. Bigger ring, smaller bill. That's not how De Beers drew it up.", "pause": 0.9},
-
-    {"id": "c6a", "chapter": "Who Actually Profits", "text": "So follow the money. Who wins when you believe the three month rule?", "pause": 0.4},
-    {"id": "c6b", "text": "The jewelry store, whose markup is often a percentage of your ring's price, so a bigger 'should spend' number means a bigger sale.", "pause": 0.5},
-    {"id": "c6c", "text": "The mined diamond industry, which benefits every time a shopper assumes lab grown means 'fake' or 'less romantic,' instead of just 'chemically identical, and newer.'", "pause": 0.5},
-    {"id": "c6d", "text": "To be fair, plenty of small, honest jewelers exist, and someone does have to cut, set, and guarantee that stone. This isn't 'jewelry bad.' It's 'know which number is marketing, and which is cost.'", "pause": 0.9},
-
-    {"id": "c7a", "chapter": "How to Actually Buy a Ring", "text": "So how do you shop for a ring without a marketing department deciding your budget? Education, not advice.", "pause": 0.4},
-    {"id": "c7b", "text": "One. Set your own number first, based on your actual savings and your actual relationship, before you walk into a store. Not a percentage of your paycheck a diamond company chose in the nineteen eighties.", "pause": 0.5},
-    {"id": "c7c", "text": "Two. Seriously consider lab grown. Same sparkle, same hardness, a fraction of the price. That leftover money can go toward the wedding, the honeymoon, or, wild idea, a house.", "pause": 0.5},
-    {"id": "c7d", "text": "Three. Consider an heirloom stone, a vintage ring, or even no diamond at all. A sapphire, a moissanite, or grandma's actual ring carries more story than a bigger price tag ever will.", "pause": 0.5},
-    {"id": "c7e", "text": "Four. If resale value matters to you, remember: rings are for wearing, not investing. Buy it because you love it on her hand, not because you expect to sell it later.", "pause": 0.9},
-
-    {"id": "c8a", "chapter": "This Isn't Anti-Romance", "text": "Quick note before we wrap up, because we don't want to be the video that ruins your proposal.", "pause": 0.4},
-    {"id": "c8b", "text": "None of this means diamonds are bad, or that love needs a receipt. If a big traditional diamond makes your partner's whole year, that is a completely valid reason to buy one.", "pause": 0.5},
-    {"id": "c8c", "text": "The only enemy here is a made up rule that quietly decides your budget for you, using someone else's math from nineteen eighty seven.", "pause": 0.9},
-
-    {"id": "r1", "chapter": "Now You Know", "text": "Let's recap.", "pause": 0.4},
-    {"id": "r2", "text": "One. The 'months of salary' rule was invented by De Beers, not tradition, and the number changed by country because it was always marketing.", "pause": 0.5},
-    {"id": "r3", "text": "Two. Diamonds carry a big retail markup and lose much of their value the moment you buy them, while lab grown diamonds now cost seventy five to ninety percent less for a nearly identical stone.", "pause": 0.5},
-    {"id": "r4", "text": "Three. The real average ring today is about four thousand six hundred dollars, not three months of pay. Set your own number.", "pause": 0.6},
-    {"id": "r5", "text": "Next time on Dave Explains Money: another everyday bill, another hidden reason, another chance to see exactly where your money goes.", "pause": 0.4},
-    {"id": "r6", "text": "Subscribe, so Dave can keep explaining money. It's free. No three month minimum required.", "pause": 1.4}
+    {
+      "id": "o1",
+      "text": "Dave is at a jewelry counter, looking at a ring in a glass box.",
+      "pause": 0.25
+    },
+    {
+      "id": "o2",
+      "text": "The salesman leans in and says the magic words. Most people spend about three months of their salary.",
+      "pause": 0.3
+    },
+    {
+      "id": "o3",
+      "text": "Dave's brain does the math, and Dave's stomach drops.",
+      "pause": 0.3
+    },
+    {
+      "id": "o4",
+      "text": "Three months of salary. For a rock. On a ring. That he will see every single day, and never sell.",
+      "pause": 0.3
+    },
+    {
+      "id": "o5",
+      "text": "Here's the twist. That rule isn't tradition. It isn't science. A diamond company invented it, on purpose, to sell more diamonds.",
+      "pause": 0.35
+    },
+    {
+      "id": "o6",
+      "text": "Today: where the rule came from, what a diamond is actually worth the second you buy it, and how to buy a ring you're not afraid to check the price of.",
+      "pause": 0.6
+    },
+    {
+      "id": "c1a",
+      "chapter": "The Rule That Isn't a Rule",
+      "text": "Let's start with the question nobody asks the sales guy. Says who?",
+      "pause": 0.4
+    },
+    {
+      "id": "c1b",
+      "text": "Who decided a ring should cost three months of a paycheck? Not a religion. Not a government. A company. De Beers.",
+      "pause": 0.5
+    },
+    {
+      "id": "c1c",
+      "text": "In the nineteen thirties, De Beers ran ads suggesting about one month's salary. By the nineteen eighties, American ads had quietly bumped that to two months.",
+      "pause": 0.5
+    },
+    {
+      "id": "c1d",
+      "text": "And in Japan, where De Beers ran a separate campaign, they pushed the number all the way to three months, in a country where diamond rings barely existed before.",
+      "pause": 0.5
+    },
+    {
+      "id": "c1e",
+      "text": "Same company. Different countries. Different made up numbers. If the rule were really about tradition, it wouldn't change depending on which continent you're standing on.",
+      "pause": 0.9
+    },
+    {
+      "id": "c2a",
+      "chapter": "How a Company Invented a Tradition",
+      "text": "So how does a company invent a hundred year old tradition in a few decades?",
+      "pause": 0.4
+    },
+    {
+      "id": "c2b",
+      "text": "Rewind to the nineteen forties. Diamond sales had crashed during the Great Depression. Nobody was buying rocks when they could barely buy bread.",
+      "pause": 0.5
+    },
+    {
+      "id": "c2c",
+      "text": "De Beers hired an ad agency, and a young copywriter named Frances Gerety wrote four words that would end up worth billions. A diamond is forever.",
+      "pause": 0.5
+    },
+    {
+      "id": "c2d",
+      "text": "The idea was simple, and brilliant. If a diamond is forever, you never resell it. It just sits in a drawer, generation after generation. That single sentence created a promise, and a problem, at the same time.",
+      "pause": 0.5
+    },
+    {
+      "id": "c2e",
+      "text": "Before this campaign, roughly one in ten American brides got a diamond ring. Within about fifty years, it was eight in ten. A slogan did that. Four words.",
+      "pause": 0.9
+    },
+    {
+      "id": "c3a",
+      "chapter": "What a Diamond Is Actually Worth",
+      "text": "Okay, so here's the part that actually matters to your wallet. What is that diamond worth, the moment you buy it?",
+      "pause": 0.4
+    },
+    {
+      "id": "c3b",
+      "text": "Jewelry stores typically mark diamonds up fifty to two hundred percent over the wholesale price, depending on the size of the stone. Smaller accent diamonds get marked up the most.",
+      "pause": 0.5
+    },
+    {
+      "id": "c3c",
+      "text": "Translation: a big chunk of that price tag isn't the diamond. It's the store's rent, the velvet box, the ad campaign, and the salesman's smile.",
+      "pause": 0.5
+    },
+    {
+      "id": "c3d",
+      "text": "Which is why, if you tried to sell that same ring back the next day, most appraisers say you'd get somewhere around twenty to fifty percent of what you paid. For a lot of rings, that's an instant loss of about half its price, the moment you leave the store.",
+      "pause": 0.5
+    },
+    {
+      "id": "c3e",
+      "text": "It's a lot like driving a new car off the lot. Except the car, at least, gets you to work.",
+      "pause": 0.5
+    },
+    {
+      "id": "c3f",
+      "text": "To be clear, this isn't a scam, exactly. Nobody said a diamond was a stock. But 'forever' was always a much better slogan than 'good luck reselling this.'",
+      "pause": 0.9
+    },
+    {
+      "id": "c4a",
+      "chapter": "The Lab-Grown Price Crash",
+      "text": "Now here's where the story gets interesting, and recent. Lab grown diamonds.",
+      "pause": 0.4
+    },
+    {
+      "id": "c4b",
+      "text": "Same carbon. Same crystal structure. Grown in a lab instead of squeezed out of the earth for a billion years. Even trained gemologists need special equipment to tell them apart.",
+      "pause": 0.5
+    },
+    {
+      "id": "c4c",
+      "text": "And the price gap is enormous. A one carat, high quality mined diamond retails for around four thousand six hundred dollars. A lab grown diamond that looks identical can start under a thousand.",
+      "pause": 0.5
+    },
+    {
+      "id": "c4d",
+      "text": "That's roughly seventy five to ninety percent less, for a stone a jeweler needs a machine to tell apart from the 'real' one.",
+      "pause": 0.5
+    },
+    {
+      "id": "c4e",
+      "text": "And shoppers have noticed. As of twenty twenty five, about six in ten American couples chose a lab grown center stone. Average spend on those rings: about four thousand three hundred dollars, versus about seven thousand for a natural stone.",
+      "pause": 0.5
+    },
+    {
+      "id": "c4f",
+      "text": "Prices have fallen roughly seventy four percent since twenty twenty, and they're only just starting to level off. That's not a sale sign. That's an entire market resetting.",
+      "pause": 0.9
+    },
+    {
+      "id": "c5a",
+      "chapter": "The Average Ring Today",
+      "text": "Most people think everyone's still spending three months' salary. Nope.",
+      "pause": 0.4
+    },
+    {
+      "id": "c5b",
+      "text": "According to The Knot's latest survey of real couples, the average U S engagement ring cost about four thousand six hundred dollars in twenty twenty five. Down from the year before.",
+      "pause": 0.5
+    },
+    {
+      "id": "c5c",
+      "text": "For most full time workers, that's closer to three to five weeks of pay, not three months. The 'rule' and reality have been drifting apart for a while.",
+      "pause": 0.5
+    },
+    {
+      "id": "c5d",
+      "text": "And rings are getting bigger anyway, because lab grown stones let couples buy more carat for the same money. Bigger ring, smaller bill. That's not how De Beers drew it up.",
+      "pause": 0.9
+    },
+    {
+      "id": "c6a",
+      "chapter": "Who Actually Profits",
+      "text": "So follow the money. Who wins when you believe the three month rule?",
+      "pause": 0.4
+    },
+    {
+      "id": "c6b",
+      "text": "The jewelry store, whose markup is often a percentage of your ring's price, so a bigger 'should spend' number means a bigger sale.",
+      "pause": 0.5
+    },
+    {
+      "id": "c6c",
+      "text": "The mined diamond industry, which benefits every time a shopper assumes lab grown means 'fake' or 'less romantic,' instead of just 'chemically identical, and newer.'",
+      "pause": 0.5
+    },
+    {
+      "id": "c6d",
+      "text": "To be fair, plenty of small, honest jewelers exist, and someone does have to cut, set, and guarantee that stone. This isn't 'jewelry bad.' It's 'know which number is marketing, and which is cost.'",
+      "pause": 0.9
+    },
+    {
+      "id": "c7a",
+      "chapter": "How to Actually Buy a Ring",
+      "text": "So how do you shop for a ring without a marketing department deciding your budget? Education, not advice.",
+      "pause": 0.4
+    },
+    {
+      "id": "c7b",
+      "text": "One. Set your own number first, based on your actual savings and your actual relationship, before you walk into a store. Not a percentage of your paycheck a diamond company chose in the nineteen eighties.",
+      "pause": 0.5
+    },
+    {
+      "id": "c7c",
+      "text": "Two. Seriously consider lab grown. Same sparkle, same hardness, a fraction of the price. That leftover money can go toward the wedding, the honeymoon, or, wild idea, a house.",
+      "pause": 0.5
+    },
+    {
+      "id": "c7d",
+      "text": "Three. Consider an heirloom stone, a vintage ring, or even no diamond at all. A sapphire, a moissanite, or grandma's actual ring carries more story than a bigger price tag ever will.",
+      "pause": 0.5
+    },
+    {
+      "id": "c7e",
+      "text": "Four. If resale value matters to you, remember: rings are for wearing, not investing. Buy it because you love it on her hand, not because you expect to sell it later.",
+      "pause": 0.9
+    },
+    {
+      "id": "c8a",
+      "chapter": "This Isn't Anti-Romance",
+      "text": "Quick note before we wrap up, because we don't want to be the video that ruins your proposal.",
+      "pause": 0.4
+    },
+    {
+      "id": "c8b",
+      "text": "None of this means diamonds are bad, or that love needs a receipt. If a big traditional diamond makes your partner's whole year, that is a completely valid reason to buy one.",
+      "pause": 0.5
+    },
+    {
+      "id": "c8c",
+      "text": "The only enemy here is a made up rule that quietly decides your budget for you, using someone else's math from nineteen eighty seven.",
+      "pause": 0.9
+    },
+    {
+      "id": "r1",
+      "chapter": "Now You Know",
+      "text": "Let's recap.",
+      "pause": 0.4
+    },
+    {
+      "id": "r2",
+      "text": "One. The 'months of salary' rule was invented by De Beers, not tradition, and the number changed by country because it was always marketing.",
+      "pause": 0.5
+    },
+    {
+      "id": "r3",
+      "text": "Two. Diamonds carry a big retail markup and lose much of their value the moment you buy them, while lab grown diamonds now cost seventy five to ninety percent less for a nearly identical stone.",
+      "pause": 0.5
+    },
+    {
+      "id": "r4",
+      "text": "Three. The real average ring today is about four thousand six hundred dollars, not three months of pay. Set your own number.",
+      "pause": 0.6
+    },
+    {
+      "id": "r5",
+      "text": "Next time on Dave Explains Money: another everyday bill, another hidden reason, another chance to see exactly where your money goes.",
+      "pause": 0.4
+    },
+    {
+      "id": "r6",
+      "text": "Subscribe, so Dave can keep explaining money. It's free. No three month minimum required.",
+      "pause": 1.4
+    }
   ],
   "youtube": {
     "title": "Why an Engagement Ring 'Should' Cost 3 Months' Pay",
@@ -78,7 +278,7 @@
       "The Diamond Company That Invented Your Ring Budget",
       "Why Your Diamond Loses Half Its Value the Second You Buy It"
     ],
-    "hook": "A jeweler told Dave a ring should cost three months' salary. That rule isn't tradition -- a diamond company invented it to sell more diamonds.",
+    "hook": "A jeweler told Dave a ring should cost three months' salary. That rule isn't tradition -- a diamond company invented it to sell more diamonds. Dave is ring shopping, and the salesman says the ring should cost three months' salary. We trace that 'rule' back to De Beers' famous 1947 'A Diamond Is Forever' campaign, and how the suggested number quietly climbed from one month to two, then three in Japan. Then the money: the 50-200% retail markup on diamonds, why a ring can lose half its value the moment you leave the store, and the lab-grown diamond price crash that's cut prices 75-90% versus mined stones. Plus what couples are really spending in 2025 (The Knot's Real Weddings Study), who actually profits from the old rule, and practical, romance-friendly ways to buy a ring on your own terms. Education, not advice.",
     "tags": [
       "engagement ring 3 months salary",
       "de beers diamond marketing history",
@@ -92,7 +292,11 @@
       "money explained simply",
       "dave explains money"
     ],
-    "hashtags": ["#engagementring", "#personalfinance", "#money"],
+    "hashtags": [
+      "#engagementring",
+      "#personalfinance",
+      "#money"
+    ],
     "pinned": "Lab-grown or mined diamond -- which would you actually pick, and why? 👇"
   }
 }

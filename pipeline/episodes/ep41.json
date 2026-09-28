@@ -16,79 +16,331 @@
     "Callback: credit card raccoon toll-booth analogy (ep02); Costco 'cheap stars get you in the door' analogy (ep36)"
   ],
   "beats": [
-    {"id": "o1", "text": "It's March. Dave opens his banking app, and there it is. A leftover balance from Christmas.", "pause": 0.3},
-    {"id": "o2", "text": "Three hundred and twelve dollars. For a candle. A sweater nobody wears. And a roll of wrapping paper.", "pause": 0.3},
-    {"id": "o3", "text": "And here's the twist. Dave is not bad with money. The whole holiday season is built to end up right here, in his wallet, months later.", "pause": 0.3},
-    {"id": "o4", "text": "The ads. The fake discounts. The four little payments at checkout. Even his own kid's wish list.", "pause": 0.3},
-    {"id": "o5", "text": "Every part of the season quietly pulls a bit more out of his pocket, long after the tree hits the curb.", "pause": 0.35},
-    {"id": "o6", "text": "Today: how much people really spend, who profits from every dollar of it, and how to close out the year without opening a bill in March.", "pause": 0.6},
-
-    {"id": "c1a", "chapter": "The Number Nobody Adds Up", "text": "Let's start with the number Dave never actually adds up in his head.", "pause": 0.4},
-    {"id": "c1b", "text": "Every year, the National Retail Federation asks shoppers what they plan to spend on the holidays.", "pause": 0.5},
-    {"id": "c1c", "text": "For twenty twenty five, the average answer was eight hundred ninety dollars and forty nine cents. Per person.", "pause": 0.5},
-    {"id": "c1d", "text": "That's gifts, food, decorations, cards, all of it. And it's the second highest number in the survey's twenty three year history.", "pause": 0.5},
-    {"id": "c1e", "text": "Only about one percent below the record, set just one year before.", "pause": 0.5},
-    {"id": "c1f", "text": "Multiply that by roughly a hundred thirty million U S households, and the whole country plans to spend over a trillion dollars, in about eight weeks.", "pause": 0.9},
-
-    {"id": "c2a", "chapter": "The Fake Sale", "text": "Now, about those Black Friday signs screaming fifty percent off.", "pause": 0.4},
-    {"id": "c2b", "text": "A twenty twenty five study tracked over fifteen hundred products, from October through Cyber Monday.", "pause": 0.5},
-    {"id": "c2c", "text": "It found that about one in three of those Black Friday deals were not real discounts at all.", "pause": 0.5},
-    {"id": "c2d", "text": "The price was the same, or even higher, than it had been just weeks earlier, in October.", "pause": 0.5},
-    {"id": "c2e", "text": "Luggage was the worst offender. Sixty one percent of luggage deals were fake.", "pause": 0.5},
-    {"id": "c2f", "text": "And even the fake ones tried to hide it. On average, that inflated 'sale' price was still thirty seven percent above the item's true recent low.", "pause": 0.9},
-
-    {"id": "c3a", "chapter": "Pay in Four, Regret in December", "text": "So Dave sees a game console he can't quite afford. Then he sees four small payments instead of one big one.", "pause": 0.4},
-    {"id": "c3b", "text": "That's buy now, pay later. Split the bill into four, often with no interest. Feels like nothing.", "pause": 0.5},
-    {"id": "c3c", "text": "During the twenty twenty five holidays, shoppers used it for twenty billion dollars in purchases. An all time high.", "pause": 0.5},
-    {"id": "c3d", "text": "That's almost ten percent more than the year before. Most of it tapped in on a phone, half asleep, at midnight.", "pause": 0.5},
-    {"id": "c3e", "text": "And here's something worth knowing. Regulators walked back a rule that would have treated these plans exactly like credit cards. For now, buy now pay later plays by lighter rules.", "pause": 0.5},
-    {"id": "c3f", "text": "The trick isn't the math. Four payments of twenty five dollars is still a hundred dollars. The trick is that it never feels like spending a hundred dollars all at once.", "pause": 0.9},
-
-    {"id": "c4a", "chapter": "Grandma's Layaway vs Dave's Four Payments", "text": "Grandma used to do this completely differently. She'd put a toy on layaway.", "pause": 0.4},
-    {"id": "c4b", "text": "Layaway means the store holds the item, and you pay it off first, a little at a time. You only take it home once it's fully paid.", "pause": 0.5},
-    {"id": "c4c", "text": "Buy now pay later flips that around. You take the item home today, and pay it off after, in four pieces.", "pause": 0.5},
-    {"id": "c4d", "text": "One method makes sure you can actually afford it, before you own it. The other one just bets you'll figure out the last payment somehow.", "pause": 0.5},
-    {"id": "c4e", "text": "Grandma's version is slower, and way less exciting at checkout. It's also a lot harder to end up owing money you don't have.", "pause": 0.9},
-
-    {"id": "c5a", "chapter": "Your Balance Doesn't Know the Party's Over", "text": "Meanwhile, Dave's credit card is quietly filling up.", "pause": 0.4},
-    {"id": "c5b", "text": "The Federal Reserve Bank of New York tracks this every quarter. In the last three months of twenty twenty five, credit card balances jumped by forty four billion dollars.", "pause": 0.5},
-    {"id": "c5c", "text": "That's one point two eight trillion dollars owed nationally, just on credit cards. Up five and a half percent from a year before.", "pause": 0.5},
-    {"id": "c5d", "text": "By spring, the total balance had barely moved. It even dipped slightly. But it was still almost six percent higher than the spring before that.", "pause": 0.5},
-    {"id": "c5e", "text": "In other words, the holiday spike doesn't just disappear in January. It quietly becomes the new normal balance.", "pause": 0.9},
-
-    {"id": "c6a", "chapter": "Marketed to Your Kids, Not to You", "text": "Now here's the part that isn't really aimed at Dave at all. It's aimed at his kid.", "pause": 0.4},
-    {"id": "c6b", "text": "Toy companies spend well over a billion and a half dollars a year on advertising, and that's before counting the holiday push itself.", "pause": 0.5},
-    {"id": "c6c", "text": "More than half of all toys are now bought online, where a kid's video feed is basically one long wish list.", "pause": 0.5},
-    {"id": "c6d", "text": "Characters from movies and games, the licensed stuff, now make up about thirty percent of all toy sales.", "pause": 0.5},
-    {"id": "c6e", "text": "The Federal Trade Commission has flagged this exact problem: kids can't always tell where the show ends and the ad begins.", "pause": 0.5},
-    {"id": "c6f", "text": "So the list taped to the fridge isn't just a kid being a kid. Some of it was built by a marketing team.", "pause": 0.9},
-
-    {"id": "c7a", "chapter": "The January Gut Punch", "text": "Most people think the holiday bill is a January problem, and then it's over. Nope.", "pause": 0.4},
-    {"id": "c7b", "text": "A survey by LendingTree found thirty seven percent of shoppers took on actual debt to pay for the holidays.", "pause": 0.5},
-    {"id": "c7c", "text": "Those people owed, on average, one thousand two hundred twenty three dollars. Up from the year before.", "pause": 0.5},
-    {"id": "c7d", "text": "Most of that sits on credit cards, but about a third also carries buy now pay later debt on top of it.", "pause": 0.5},
-    {"id": "c7e", "text": "And forty percent of these people are paying interest of twenty percent or more. That's not a small fee. That's a raccoon sized bite.", "pause": 0.5},
-    {"id": "c7f", "text": "Almost two thirds said it would take three months or longer to pay it off. March isn't a coincidence. It's just the math.", "pause": 0.9},
-
-    {"id": "c8a", "chapter": "Who Actually Profits", "text": "So who wins, while Dave is still paying off Christmas in the spring?", "pause": 0.4},
-    {"id": "c8b", "text": "Retailers win first. The industry expected holiday sales to cross one trillion dollars for the first time ever, in twenty twenty five.", "pause": 0.5},
-    {"id": "c8c", "text": "Buy now pay later companies win next. They collect fees from stores on every split payment, plus late fees from shoppers who miss one.", "pause": 0.5},
-    {"id": "c8d", "text": "And credit card companies win last, and longest. Every month Dave carries a balance, interest keeps compounding, quietly, in the background.", "pause": 0.5},
-    {"id": "c8e", "text": "Nobody forced Dave to buy any of it. But almost every part of the system is built to make 'buy now' feel easier than 'wait and save'.", "pause": 0.9},
-
-    {"id": "c9a", "chapter": "How to Close the Year for Real", "text": "So how does Dave avoid a March surprise next year? Remember, this is education, not advice.", "pause": 0.4},
-    {"id": "c9b", "text": "One. Set the total gift budget in November, before a single ad shows up. Write the actual number down.", "pause": 0.5},
-    {"id": "c9c", "text": "Two. Use cash, or a debit card, for gifts if you can. When the envelope is empty, the shopping stops.", "pause": 0.5},
-    {"id": "c9d", "text": "Three. Suggest a Secret Santa, or a 'three gifts each' rule with family. Fewer presents, same amount of love.", "pause": 0.5},
-    {"id": "c9e", "text": "Four. Treat buy now pay later like real debt, because it is. If you wouldn't split it across four credit cards, don't split it into four payments either.", "pause": 0.5},
-    {"id": "c9f", "text": "Five. If you do carry a balance into January, pay that off before adding anything new. Don't let last Christmas share a bill with this year's birthday.", "pause": 0.9},
-
-    {"id": "r1", "chapter": "Now You Know", "text": "So let's recap.", "pause": 0.4},
-    {"id": "r2", "text": "One. Americans plan to spend about eight hundred ninety dollars each this holiday season, and roughly one in three Black Friday deals aren't even real discounts.", "pause": 0.5},
-    {"id": "r3", "text": "Two. Buy now pay later and credit card balances both spike in December, and for a lot of people, they don't fully come back down by spring.", "pause": 0.5},
-    {"id": "r4", "text": "Three. A November budget, cash envelopes, and fewer gifts beat almost every trick in the store.", "pause": 0.6},
-    {"id": "r5", "text": "Next time, Dave opens a dating app, pays forty dollars a month, and still has zero matches. Where does that money actually go?", "pause": 0.4},
-    {"id": "r6", "text": "Subscribe, so Dave can keep explaining money. It's free. Unlike literally everything else in this episode.", "pause": 1.4}
+    {
+      "id": "o1",
+      "text": "It's March. Dave opens his banking app, and there it is. A leftover balance from Christmas.",
+      "pause": 0.3
+    },
+    {
+      "id": "o2",
+      "text": "Three hundred and twelve dollars. For a candle. A sweater nobody wears. And a roll of wrapping paper.",
+      "pause": 0.3
+    },
+    {
+      "id": "o3",
+      "text": "And here's the twist. Dave is not bad with money. The whole holiday season is built to end up right here, in his wallet, months later.",
+      "pause": 0.3
+    },
+    {
+      "id": "o4",
+      "text": "The ads. The fake discounts. The four little payments at checkout. Even his own kid's wish list.",
+      "pause": 0.3
+    },
+    {
+      "id": "o5",
+      "text": "Every part of the season quietly pulls a bit more out of his pocket, long after the tree hits the curb.",
+      "pause": 0.35
+    },
+    {
+      "id": "o6",
+      "text": "Today: how much people really spend, who profits from every dollar of it, and how to close out the year without opening a bill in March.",
+      "pause": 0.6
+    },
+    {
+      "id": "c1a",
+      "chapter": "The Number Nobody Adds Up",
+      "text": "Let's start with the number Dave never actually adds up in his head.",
+      "pause": 0.4
+    },
+    {
+      "id": "c1b",
+      "text": "Every year, the National Retail Federation asks shoppers what they plan to spend on the holidays.",
+      "pause": 0.5
+    },
+    {
+      "id": "c1c",
+      "text": "For twenty twenty five, the average answer was eight hundred ninety dollars and forty nine cents. Per person.",
+      "pause": 0.5
+    },
+    {
+      "id": "c1d",
+      "text": "That's gifts, food, decorations, cards, all of it. And it's the second highest number in the survey's twenty three year history.",
+      "pause": 0.5
+    },
+    {
+      "id": "c1e",
+      "text": "Only about one percent below the record, set just one year before.",
+      "pause": 0.5
+    },
+    {
+      "id": "c1f",
+      "text": "Multiply that by roughly a hundred thirty million U S households, and the whole country plans to spend over a trillion dollars, in about eight weeks.",
+      "pause": 0.9
+    },
+    {
+      "id": "c2a",
+      "chapter": "The Fake Sale",
+      "text": "Now, about those Black Friday signs screaming fifty percent off.",
+      "pause": 0.4
+    },
+    {
+      "id": "c2b",
+      "text": "A twenty twenty five study tracked over fifteen hundred products, from October through Cyber Monday.",
+      "pause": 0.5
+    },
+    {
+      "id": "c2c",
+      "text": "It found that about one in three of those Black Friday deals were not real discounts at all.",
+      "pause": 0.5
+    },
+    {
+      "id": "c2d",
+      "text": "The price was the same, or even higher, than it had been just weeks earlier, in October.",
+      "pause": 0.5
+    },
+    {
+      "id": "c2e",
+      "text": "Luggage was the worst offender. Sixty one percent of luggage deals were fake.",
+      "pause": 0.5
+    },
+    {
+      "id": "c2f",
+      "text": "And even the fake ones tried to hide it. On average, that inflated 'sale' price was still thirty seven percent above the item's true recent low.",
+      "pause": 0.9
+    },
+    {
+      "id": "c3a",
+      "chapter": "Pay in Four, Regret in December",
+      "text": "So Dave sees a game console he can't quite afford. Then he sees four small payments instead of one big one.",
+      "pause": 0.4
+    },
+    {
+      "id": "c3b",
+      "text": "That's buy now, pay later. Split the bill into four, often with no interest. Feels like nothing.",
+      "pause": 0.5
+    },
+    {
+      "id": "c3c",
+      "text": "During the twenty twenty five holidays, shoppers used it for twenty billion dollars in purchases. An all time high.",
+      "pause": 0.5
+    },
+    {
+      "id": "c3d",
+      "text": "That's almost ten percent more than the year before. Most of it tapped in on a phone, half asleep, at midnight.",
+      "pause": 0.5
+    },
+    {
+      "id": "c3e",
+      "text": "And here's something worth knowing. Regulators walked back a rule that would have treated these plans exactly like credit cards. For now, buy now pay later plays by lighter rules.",
+      "pause": 0.5
+    },
+    {
+      "id": "c3f",
+      "text": "The trick isn't the math. Four payments of twenty five dollars is still a hundred dollars. The trick is that it never feels like spending a hundred dollars all at once.",
+      "pause": 0.9
+    },
+    {
+      "id": "c4a",
+      "chapter": "Grandma's Layaway vs Dave's Four Payments",
+      "text": "Grandma used to do this completely differently. She'd put a toy on layaway.",
+      "pause": 0.4
+    },
+    {
+      "id": "c4b",
+      "text": "Layaway means the store holds the item, and you pay it off first, a little at a time. You only take it home once it's fully paid.",
+      "pause": 0.5
+    },
+    {
+      "id": "c4c",
+      "text": "Buy now pay later flips that around. You take the item home today, and pay it off after, in four pieces.",
+      "pause": 0.5
+    },
+    {
+      "id": "c4d",
+      "text": "One method makes sure you can actually afford it, before you own it. The other one just bets you'll figure out the last payment somehow.",
+      "pause": 0.5
+    },
+    {
+      "id": "c4e",
+      "text": "Grandma's version is slower, and way less exciting at checkout. It's also a lot harder to end up owing money you don't have.",
+      "pause": 0.9
+    },
+    {
+      "id": "c5a",
+      "chapter": "Your Balance Doesn't Know the Party's Over",
+      "text": "Meanwhile, Dave's credit card is quietly filling up.",
+      "pause": 0.4
+    },
+    {
+      "id": "c5b",
+      "text": "The Federal Reserve Bank of New York tracks this every quarter. In the last three months of twenty twenty five, credit card balances jumped by forty four billion dollars.",
+      "pause": 0.5
+    },
+    {
+      "id": "c5c",
+      "text": "That's one point two eight trillion dollars owed nationally, just on credit cards. Up five and a half percent from a year before.",
+      "pause": 0.5
+    },
+    {
+      "id": "c5d",
+      "text": "By spring, the total balance had barely moved. It even dipped slightly. But it was still almost six percent higher than the spring before that.",
+      "pause": 0.5
+    },
+    {
+      "id": "c5e",
+      "text": "In other words, the holiday spike doesn't just disappear in January. It quietly becomes the new normal balance.",
+      "pause": 0.9
+    },
+    {
+      "id": "c6a",
+      "chapter": "Marketed to Your Kids, Not to You",
+      "text": "Now here's the part that isn't really aimed at Dave at all. It's aimed at his kid.",
+      "pause": 0.4
+    },
+    {
+      "id": "c6b",
+      "text": "Toy companies spend well over a billion and a half dollars a year on advertising, and that's before counting the holiday push itself.",
+      "pause": 0.5
+    },
+    {
+      "id": "c6c",
+      "text": "More than half of all toys are now bought online, where a kid's video feed is basically one long wish list.",
+      "pause": 0.5
+    },
+    {
+      "id": "c6d",
+      "text": "Characters from movies and games, the licensed stuff, now make up about thirty percent of all toy sales.",
+      "pause": 0.5
+    },
+    {
+      "id": "c6e",
+      "text": "The Federal Trade Commission has flagged this exact problem: kids can't always tell where the show ends and the ad begins.",
+      "pause": 0.5
+    },
+    {
+      "id": "c6f",
+      "text": "So the list taped to the fridge isn't just a kid being a kid. Some of it was built by a marketing team.",
+      "pause": 0.9
+    },
+    {
+      "id": "c7a",
+      "chapter": "The January Gut Punch",
+      "text": "Most people think the holiday bill is a January problem, and then it's over. Nope.",
+      "pause": 0.4
+    },
+    {
+      "id": "c7b",
+      "text": "A survey by LendingTree found thirty seven percent of shoppers took on actual debt to pay for the holidays.",
+      "pause": 0.5
+    },
+    {
+      "id": "c7c",
+      "text": "Those people owed, on average, one thousand two hundred twenty three dollars. Up from the year before.",
+      "pause": 0.5
+    },
+    {
+      "id": "c7d",
+      "text": "Most of that sits on credit cards, but about a third also carries buy now pay later debt on top of it.",
+      "pause": 0.5
+    },
+    {
+      "id": "c7e",
+      "text": "And forty percent of these people are paying interest of twenty percent or more. That's not a small fee. That's a raccoon sized bite.",
+      "pause": 0.5
+    },
+    {
+      "id": "c7f",
+      "text": "Almost two thirds said it would take three months or longer to pay it off. March isn't a coincidence. It's just the math.",
+      "pause": 0.9
+    },
+    {
+      "id": "c8a",
+      "chapter": "Who Actually Profits",
+      "text": "So who wins, while Dave is still paying off Christmas in the spring?",
+      "pause": 0.4
+    },
+    {
+      "id": "c8b",
+      "text": "Retailers win first. The industry expected holiday sales to cross one trillion dollars for the first time ever, in twenty twenty five.",
+      "pause": 0.5
+    },
+    {
+      "id": "c8c",
+      "text": "Buy now pay later companies win next. They collect fees from stores on every split payment, plus late fees from shoppers who miss one.",
+      "pause": 0.5
+    },
+    {
+      "id": "c8d",
+      "text": "And credit card companies win last, and longest. Every month Dave carries a balance, interest keeps compounding, quietly, in the background.",
+      "pause": 0.5
+    },
+    {
+      "id": "c8e",
+      "text": "Nobody forced Dave to buy any of it. But almost every part of the system is built to make 'buy now' feel easier than 'wait and save'.",
+      "pause": 0.9
+    },
+    {
+      "id": "c9a",
+      "chapter": "How to Close the Year for Real",
+      "text": "So how does Dave avoid a March surprise next year? Remember, this is education, not advice.",
+      "pause": 0.4
+    },
+    {
+      "id": "c9b",
+      "text": "One. Set the total gift budget in November, before a single ad shows up. Write the actual number down.",
+      "pause": 0.5
+    },
+    {
+      "id": "c9c",
+      "text": "Two. Use cash, or a debit card, for gifts if you can. When the envelope is empty, the shopping stops.",
+      "pause": 0.5
+    },
+    {
+      "id": "c9d",
+      "text": "Three. Suggest a Secret Santa, or a 'three gifts each' rule with family. Fewer presents, same amount of love.",
+      "pause": 0.5
+    },
+    {
+      "id": "c9e",
+      "text": "Four. Treat buy now pay later like real debt, because it is. If you wouldn't split it across four credit cards, don't split it into four payments either.",
+      "pause": 0.5
+    },
+    {
+      "id": "c9f",
+      "text": "Five. If you do carry a balance into January, pay that off before adding anything new. Don't let last Christmas share a bill with this year's birthday.",
+      "pause": 0.9
+    },
+    {
+      "id": "r1",
+      "chapter": "Now You Know",
+      "text": "So let's recap.",
+      "pause": 0.4
+    },
+    {
+      "id": "r2",
+      "text": "One. Americans plan to spend about eight hundred ninety dollars each this holiday season, and roughly one in three Black Friday deals aren't even real discounts.",
+      "pause": 0.5
+    },
+    {
+      "id": "r3",
+      "text": "Two. Buy now pay later and credit card balances both spike in December, and for a lot of people, they don't fully come back down by spring.",
+      "pause": 0.5
+    },
+    {
+      "id": "r4",
+      "text": "Three. A November budget, cash envelopes, and fewer gifts beat almost every trick in the store.",
+      "pause": 0.6
+    },
+    {
+      "id": "r5",
+      "text": "Next time, Dave opens a dating app, pays forty dollars a month, and still has zero matches. Where does that money actually go?",
+      "pause": 0.4
+    },
+    {
+      "id": "r6",
+      "text": "Subscribe, so Dave can keep explaining money. It's free. Unlike literally everything else in this episode.",
+      "pause": 1.4
+    }
   ],
   "youtube": {
     "title": "Why Christmas Makes You Broke Until March",
@@ -96,7 +348,7 @@
       "The Hidden Reason You're Still Paying Off Last Christmas",
       "Why Your Credit Card Never Recovers From December"
     ],
-    "hook": "Why are you still paying off Christmas in March? Dave checks his banking app and finds $312 of leftover holiday debt, months after the tree came down.",
+    "hook": "Why are you still paying off Christmas in March? Dave finds $312 of leftover holiday debt — and it's not bad luck, it's the business model. Dave checks his banking app in March and finds he's still paying off last Christmas: a candle, a sweater nobody wears, and wrapping paper. We break down why that happens: the real average holiday spend (NRF), how about one in three Black Friday 'deals' aren't real discounts, why buy-now-pay-later hit an all-time high last holiday season, how credit card balances spike in Q4 and don't fully come back down, how toy marketing targets kids directly, and why 37% of shoppers carry real debt into January. Then a practical, November-first way to close out the year without a March surprise.",
     "tags": [
       "why christmas makes you broke",
       "holiday debt explained",
@@ -110,7 +362,11 @@
       "money explained simply",
       "dave explains money"
     ],
-    "hashtags": ["#christmas", "#personalfinance", "#money"],
+    "hashtags": [
+      "#christmas",
+      "#personalfinance",
+      "#money"
+    ],
     "pinned": "Did you carry any debt into January this year? Be honest 👇"
   }
 }

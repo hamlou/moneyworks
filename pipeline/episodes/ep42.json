@@ -15,77 +15,317 @@
     "Callback: credit card raccoon toll-booth / hidden-fee analogy (ep02)"
   ],
   "beats": [
-    {"id": "o1", "text": "Dave checks his banking app. Forty dollars, gone again, to a dating app subscription.", "pause": 0.3},
-    {"id": "o2", "text": "He opens the app. Zero new matches. Same as last month. Same as the month before that.", "pause": 0.3},
-    {"id": "o3", "text": "And here's the twist. The app is not broken. It's working exactly as designed.", "pause": 0.3},
-    {"id": "o4", "text": "Because a match isn't really the goal. Dave, still paying, still swiping, that's the goal.", "pause": 0.3},
-    {"id": "o5", "text": "The longer he stays single and subscribed, the more the app makes.", "pause": 0.35},
-    {"id": "o6", "text": "Today: how dating apps actually make money, the myth about the algorithm, and how to date without going broke.", "pause": 0.6},
-
-    {"id": "c1a", "chapter": "The Dating Economy Is Bigger Than You Think", "text": "Let's start with the size of this thing. Dave thinks he's using a free app.", "pause": 0.4},
-    {"id": "c1b", "text": "Match Group alone, the company behind Tinder, Hinge, and Match dot com, made about three and a half billion dollars in twenty twenty five.", "pause": 0.5},
-    {"id": "c1c", "text": "Bumble made about seven hundred eighty two million. And that was actually a drop from the year before.", "pause": 0.5},
-    {"id": "c1d", "text": "Across the whole industry, dating apps pulled in just over six billion dollars last year. From people looking for love, or at least a Friday night plan.", "pause": 0.5},
-    {"id": "c1e", "text": "Tinder alone made about one point nine billion of that, even after paying subscribers fell for eight quarters straight. Fewer people paying, but more money out of each one who does.", "pause": 0.9},
-
-    {"id": "c2a", "chapter": "One Company, Almost No Choice", "text": "Dave got frustrated with Tinder, so he deleted it and tried Hinge instead. Same result.", "pause": 0.4},
-    {"id": "c2b", "text": "Here's the twist. Tinder, Hinge, Match dot com, Ok Cupid, Plenty of Fish, and several more, are all owned by the very same company.", "pause": 0.5},
-    {"id": "c2c", "text": "So when Dave 'switches apps' to escape one subscription, he's very often still paying the exact same parent company.", "pause": 0.5},
-    {"id": "c2d", "text": "It's less like choosing between competing stores, and more like walking to a different aisle inside the same supermarket.", "pause": 0.9},
-
-    {"id": "c3a", "chapter": "Matches Are Not the Goal", "text": "Here's the part that stings a little. A happy couple who deletes the app is a lost customer.", "pause": 0.4},
-    {"id": "c3b", "text": "If Dave meets someone on day two and cancels his subscription, the app makes almost nothing off him.", "pause": 0.5},
-    {"id": "c3c", "text": "If Dave stays single, keeps swiping, and keeps paying every month, the app makes far more, month after month.", "pause": 0.5},
-    {"id": "c3d", "text": "That doesn't mean the apps want everyone miserable forever. It means the business math rewards you staying a customer, not you finding 'the one' on day one.", "pause": 0.9},
-
-    {"id": "c4a", "chapter": "Myth-Bust: The Algorithm Wants You to Match", "text": "Most people think the app's algorithm is working hard to find their soulmate. Nope.", "pause": 0.4},
-    {"id": "c4b", "text": "The algorithm is trained to keep you using the app. Matching you instantly, every time, would actually work against that.", "pause": 0.5},
-    {"id": "c4c", "text": "In twenty nineteen, the F T C sued Match Group. The claim: the company used flagged, likely fraudulent accounts to send 'someone likes you' emails, to push people into paying.", "pause": 0.5},
-    {"id": "c4d", "text": "In twenty twenty five, Match Group agreed to pay fourteen million dollars, and to change its ads, guarantees, and cancellation process, to settle those claims.", "pause": 0.5},
-    {"id": "c4e", "text": "The company didn't admit wrongdoing. But the lesson stands. The notification that pulls you back into the app is a business tool, not a promise.", "pause": 0.9},
-
-    {"id": "c5a", "chapter": "The Paywall Buffet", "text": "So what does Dave's forty dollars a month actually buy?", "pause": 0.4},
-    {"id": "c5b", "text": "Seeing who already liked him. Unlimited swipes, instead of a daily limit. Undoing an accidental left swipe. Being shown higher up in other people's stacks.", "pause": 0.5},
-    {"id": "c5c", "text": "None of these features find him a better person. They remove a small annoyance the app put there in the first place.", "pause": 0.5},
-    {"id": "c5d", "text": "It's a lot like our credit card video's raccoon. First it builds a tiny toll booth in your way. Then it charges you to skip the line.", "pause": 0.5},
-    {"id": "c5e", "text": "Only about seven percent of dating app users worldwide actually pay for any of it. The other ninety three percent are the free product, shown ads and constant upgrade offers.", "pause": 0.9},
-
-    {"id": "c6a", "chapter": "Why You Keep Swiping", "text": "Ever wonder why swiping feels a little like a slot machine?", "pause": 0.4},
-    {"id": "c6b", "text": "Because the reward is random. Most swipes get nothing. Every so often, one gets a match. Your brain loves that pattern.", "pause": 0.5},
-    {"id": "c6c", "text": "Psychologists call it a variable reward. It's the same trick that makes slot machines, and social media feeds, so hard to put down.", "pause": 0.5},
-    {"id": "c6d", "text": "The app isn't lying to you about your matches. It's just built on a shape that keeps you opening it, once, twice, twenty times a day.", "pause": 0.9},
-
-    {"id": "c7a", "chapter": "Dates Got Expensive Too", "text": "And it's not just the app. Actually going on the date costs more now too.", "pause": 0.4},
-    {"id": "c7b", "text": "A twenty twenty six survey put the average American date night, including getting ready and gas money, at about one hundred eighty nine dollars.", "pause": 0.5},
-    {"id": "c7c", "text": "That's up about twelve and a half percent in a single year. Regular inflation didn't move anywhere near that fast.", "pause": 0.5},
-    {"id": "c7d", "text": "Add it up over a year, and the average adult spends around two thousand three hundred twenty three dollars, just on date nights.", "pause": 0.5},
-    {"id": "c7e", "text": "No wonder almost half of single adults in that survey said dating just doesn't feel financially worth it anymore. Many said they now go on fewer dates, or pick cheaper ones on purpose.", "pause": 0.9},
-
-    {"id": "c8a", "chapter": "How Much This Generation Actually Spends", "text": "So how much does dating itself cost, app plus dates, every month?", "pause": 0.4},
-    {"id": "c8b", "text": "People who date actively, not just casually, spend over three hundred dollars a month on the whole thing, apps and dates combined.", "pause": 0.5},
-    {"id": "c8c", "text": "But a lot of Gen Z has opted out of the spending, not the dating. In one survey, fifty three percent of Gen Z adults said they spend zero dollars a month on dating.", "pause": 0.5},
-    {"id": "c8d", "text": "About a third spend under a hundred dollars. So this generation isn't cheap, or lazy. Plenty of them have just noticed the math, and would rather save the money.", "pause": 0.9},
-
-    {"id": "c9a", "chapter": "Who Actually Profits", "text": "So who wins here, while Dave keeps swiping alone?", "pause": 0.4},
-    {"id": "c9b", "text": "The dating apps win, every single month Dave stays subscribed and single. That's recurring revenue, built from a habit, not a purchase.", "pause": 0.5},
-    {"id": "c9c", "text": "Restaurants and bars win too, from date-flation, higher prices on the exact things people do on a first date.", "pause": 0.5},
-    {"id": "c9d", "text": "Dave only wins if he treats the app like a tool to meet someone, not a slot machine to check between meetings.", "pause": 0.5},
-    {"id": "c9e", "text": "None of this means dating apps are evil, or that nobody finds real love on them. Plenty of people do. It just means the business quietly profits either way.", "pause": 0.9},
-
-    {"id": "c10a", "chapter": "How to Date Without Going Broke", "text": "So how do you play this smarter? Remember, this is education, not relationship advice.", "pause": 0.4},
-    {"id": "c10b", "text": "One. Try the free tier first, seriously. Most matches happen without paying a single cent.", "pause": 0.5},
-    {"id": "c10c", "text": "Two. Set a real budget for dates, the same way you'd budget for groceries. It stops 'date-flation' from becoming a surprise.", "pause": 0.5},
-    {"id": "c10d", "text": "Three. Move to an actual phone call or a meetup faster. The app's job is done the moment you swap numbers. Don't let it linger.", "pause": 0.5},
-    {"id": "c10e", "text": "Four. If a month goes by with a paid subscription and zero real conversations, that's a signal to cancel, not to upgrade.", "pause": 0.5},
-    {"id": "c10f", "text": "Five. Cheap dates work fine. A coffee, or a walk, tells you more about a person than a fancy dinner ever will.", "pause": 0.5},
-    {"id": "c10g", "text": "None of that costs forty dollars a month. Most of it costs nothing at all.", "pause": 0.9},
-
-    {"id": "r1", "chapter": "Now You Know", "text": "So let's recap.", "pause": 0.4},
-    {"id": "r2", "text": "One. Dating apps made over six billion dollars last year, and a match that ends your subscription is actually bad for their business.", "pause": 0.5},
-    {"id": "r3", "text": "Two. The algorithm isn't rooting for you. It's built to keep you swiping, and actual dates got a lot more expensive too.", "pause": 0.5},
-    {"id": "r4", "text": "Three. The free tier, a real budget, and moving off the app fast beat almost every paid feature.", "pause": 0.6},
-    {"id": "r5", "text": "Next time, Dave finally gets the raise he's been asking for. So why does his paycheck look exactly the same?", "pause": 0.4},
-    {"id": "r6", "text": "Subscribe, so Dave can keep explaining money. It's free. Which, this episode taught us, is rarer than it sounds.", "pause": 1.4}
+    {
+      "id": "o1",
+      "text": "Dave checks his banking app. Forty dollars, gone again, to a dating app subscription.",
+      "pause": 0.3
+    },
+    {
+      "id": "o2",
+      "text": "He opens the app. Zero new matches. Same as last month. Same as the month before that.",
+      "pause": 0.3
+    },
+    {
+      "id": "o3",
+      "text": "And here's the twist. The app is not broken. It's working exactly as designed.",
+      "pause": 0.3
+    },
+    {
+      "id": "o4",
+      "text": "Because a match isn't really the goal. Dave, still paying, still swiping, that's the goal.",
+      "pause": 0.3
+    },
+    {
+      "id": "o5",
+      "text": "The longer he stays single and subscribed, the more the app makes.",
+      "pause": 0.35
+    },
+    {
+      "id": "o6",
+      "text": "Today: how dating apps actually make money, the myth about the algorithm, and how to date without going broke.",
+      "pause": 0.6
+    },
+    {
+      "id": "c1a",
+      "chapter": "The Dating Economy Is Bigger Than You Think",
+      "text": "Let's start with the size of this thing. Dave thinks he's using a free app.",
+      "pause": 0.4
+    },
+    {
+      "id": "c1b",
+      "text": "Match Group alone, the company behind Tinder, Hinge, and Match dot com, made about three and a half billion dollars in twenty twenty five.",
+      "pause": 0.5
+    },
+    {
+      "id": "c1c",
+      "text": "Bumble made about seven hundred eighty two million. And that was actually a drop from the year before.",
+      "pause": 0.5
+    },
+    {
+      "id": "c1d",
+      "text": "Across the whole industry, dating apps pulled in just over six billion dollars last year. From people looking for love, or at least a Friday night plan.",
+      "pause": 0.5
+    },
+    {
+      "id": "c1e",
+      "text": "Tinder alone made about one point nine billion of that, even after paying subscribers fell for eight quarters straight. Fewer people paying, but more money out of each one who does.",
+      "pause": 0.9
+    },
+    {
+      "id": "c2a",
+      "chapter": "One Company, Almost No Choice",
+      "text": "Dave got frustrated with Tinder, so he deleted it and tried Hinge instead. Same result.",
+      "pause": 0.4
+    },
+    {
+      "id": "c2b",
+      "text": "Here's the twist. Tinder, Hinge, Match dot com, Ok Cupid, Plenty of Fish, and several more, are all owned by the very same company.",
+      "pause": 0.5
+    },
+    {
+      "id": "c2c",
+      "text": "So when Dave 'switches apps' to escape one subscription, he's very often still paying the exact same parent company.",
+      "pause": 0.5
+    },
+    {
+      "id": "c2d",
+      "text": "It's less like choosing between competing stores, and more like walking to a different aisle inside the same supermarket.",
+      "pause": 0.9
+    },
+    {
+      "id": "c3a",
+      "chapter": "Matches Are Not the Goal",
+      "text": "Here's the part that stings a little. A happy couple who deletes the app is a lost customer.",
+      "pause": 0.4
+    },
+    {
+      "id": "c3b",
+      "text": "If Dave meets someone on day two and cancels his subscription, the app makes almost nothing off him.",
+      "pause": 0.5
+    },
+    {
+      "id": "c3c",
+      "text": "If Dave stays single, keeps swiping, and keeps paying every month, the app makes far more, month after month.",
+      "pause": 0.5
+    },
+    {
+      "id": "c3d",
+      "text": "That doesn't mean the apps want everyone miserable forever. It means the business math rewards you staying a customer, not you finding 'the one' on day one.",
+      "pause": 0.9
+    },
+    {
+      "id": "c4a",
+      "chapter": "Myth-Bust: The Algorithm Wants You to Match",
+      "text": "Most people think the app's algorithm is working hard to find their soulmate. Nope.",
+      "pause": 0.4
+    },
+    {
+      "id": "c4b",
+      "text": "The algorithm is trained to keep you using the app. Matching you instantly, every time, would actually work against that.",
+      "pause": 0.5
+    },
+    {
+      "id": "c4c",
+      "text": "In twenty nineteen, the F T C sued Match Group. The claim: the company used flagged, likely fraudulent accounts to send 'someone likes you' emails, to push people into paying.",
+      "pause": 0.5
+    },
+    {
+      "id": "c4d",
+      "text": "In twenty twenty five, Match Group agreed to pay fourteen million dollars, and to change its ads, guarantees, and cancellation process, to settle those claims.",
+      "pause": 0.5
+    },
+    {
+      "id": "c4e",
+      "text": "The company didn't admit wrongdoing. But the lesson stands. The notification that pulls you back into the app is a business tool, not a promise.",
+      "pause": 0.9
+    },
+    {
+      "id": "c5a",
+      "chapter": "The Paywall Buffet",
+      "text": "So what does Dave's forty dollars a month actually buy?",
+      "pause": 0.4
+    },
+    {
+      "id": "c5b",
+      "text": "Seeing who already liked him. Unlimited swipes, instead of a daily limit. Undoing an accidental left swipe. Being shown higher up in other people's stacks.",
+      "pause": 0.5
+    },
+    {
+      "id": "c5c",
+      "text": "None of these features find him a better person. They remove a small annoyance the app put there in the first place.",
+      "pause": 0.5
+    },
+    {
+      "id": "c5d",
+      "text": "It's a lot like our credit card video's raccoon. First it builds a tiny toll booth in your way. Then it charges you to skip the line.",
+      "pause": 0.5
+    },
+    {
+      "id": "c5e",
+      "text": "Only about seven percent of dating app users worldwide actually pay for any of it. The other ninety three percent are the free product, shown ads and constant upgrade offers.",
+      "pause": 0.9
+    },
+    {
+      "id": "c6a",
+      "chapter": "Why You Keep Swiping",
+      "text": "Ever wonder why swiping feels a little like a slot machine?",
+      "pause": 0.4
+    },
+    {
+      "id": "c6b",
+      "text": "Because the reward is random. Most swipes get nothing. Every so often, one gets a match. Your brain loves that pattern.",
+      "pause": 0.5
+    },
+    {
+      "id": "c6c",
+      "text": "Psychologists call it a variable reward. It's the same trick that makes slot machines, and social media feeds, so hard to put down.",
+      "pause": 0.5
+    },
+    {
+      "id": "c6d",
+      "text": "The app isn't lying to you about your matches. It's just built on a shape that keeps you opening it, once, twice, twenty times a day.",
+      "pause": 0.9
+    },
+    {
+      "id": "c7a",
+      "chapter": "Dates Got Expensive Too",
+      "text": "And it's not just the app. Actually going on the date costs more now too.",
+      "pause": 0.4
+    },
+    {
+      "id": "c7b",
+      "text": "A twenty twenty six survey put the average American date night, including getting ready and gas money, at about one hundred eighty nine dollars.",
+      "pause": 0.5
+    },
+    {
+      "id": "c7c",
+      "text": "That's up about twelve and a half percent in a single year. Regular inflation didn't move anywhere near that fast.",
+      "pause": 0.5
+    },
+    {
+      "id": "c7d",
+      "text": "Add it up over a year, and the average adult spends around two thousand three hundred twenty three dollars, just on date nights.",
+      "pause": 0.5
+    },
+    {
+      "id": "c7e",
+      "text": "No wonder almost half of single adults in that survey said dating just doesn't feel financially worth it anymore. Many said they now go on fewer dates, or pick cheaper ones on purpose.",
+      "pause": 0.9
+    },
+    {
+      "id": "c8a",
+      "chapter": "How Much This Generation Actually Spends",
+      "text": "So how much does dating itself cost, app plus dates, every month?",
+      "pause": 0.4
+    },
+    {
+      "id": "c8b",
+      "text": "People who date actively, not just casually, spend over three hundred dollars a month on the whole thing, apps and dates combined.",
+      "pause": 0.5
+    },
+    {
+      "id": "c8c",
+      "text": "But a lot of Gen Z has opted out of the spending, not the dating. In one survey, fifty three percent of Gen Z adults said they spend zero dollars a month on dating.",
+      "pause": 0.5
+    },
+    {
+      "id": "c8d",
+      "text": "About a third spend under a hundred dollars. So this generation isn't cheap, or lazy. Plenty of them have just noticed the math, and would rather save the money.",
+      "pause": 0.9
+    },
+    {
+      "id": "c9a",
+      "chapter": "Who Actually Profits",
+      "text": "So who wins here, while Dave keeps swiping alone?",
+      "pause": 0.4
+    },
+    {
+      "id": "c9b",
+      "text": "The dating apps win, every single month Dave stays subscribed and single. That's recurring revenue, built from a habit, not a purchase.",
+      "pause": 0.5
+    },
+    {
+      "id": "c9c",
+      "text": "Restaurants and bars win too, from date-flation, higher prices on the exact things people do on a first date.",
+      "pause": 0.5
+    },
+    {
+      "id": "c9d",
+      "text": "Dave only wins if he treats the app like a tool to meet someone, not a slot machine to check between meetings.",
+      "pause": 0.5
+    },
+    {
+      "id": "c9e",
+      "text": "None of this means dating apps are evil, or that nobody finds real love on them. Plenty of people do. It just means the business quietly profits either way.",
+      "pause": 0.9
+    },
+    {
+      "id": "c10a",
+      "chapter": "How to Date Without Going Broke",
+      "text": "So how do you play this smarter? Remember, this is education, not relationship advice.",
+      "pause": 0.4
+    },
+    {
+      "id": "c10b",
+      "text": "One. Try the free tier first, seriously. Most matches happen without paying a single cent.",
+      "pause": 0.5
+    },
+    {
+      "id": "c10c",
+      "text": "Two. Set a real budget for dates, the same way you'd budget for groceries. It stops 'date-flation' from becoming a surprise.",
+      "pause": 0.5
+    },
+    {
+      "id": "c10d",
+      "text": "Three. Move to an actual phone call or a meetup faster. The app's job is done the moment you swap numbers. Don't let it linger.",
+      "pause": 0.5
+    },
+    {
+      "id": "c10e",
+      "text": "Four. If a month goes by with a paid subscription and zero real conversations, that's a signal to cancel, not to upgrade.",
+      "pause": 0.5
+    },
+    {
+      "id": "c10f",
+      "text": "Five. Cheap dates work fine. A coffee, or a walk, tells you more about a person than a fancy dinner ever will.",
+      "pause": 0.5
+    },
+    {
+      "id": "c10g",
+      "text": "None of that costs forty dollars a month. Most of it costs nothing at all.",
+      "pause": 0.9
+    },
+    {
+      "id": "r1",
+      "chapter": "Now You Know",
+      "text": "So let's recap.",
+      "pause": 0.4
+    },
+    {
+      "id": "r2",
+      "text": "One. Dating apps made over six billion dollars last year, and a match that ends your subscription is actually bad for their business.",
+      "pause": 0.5
+    },
+    {
+      "id": "r3",
+      "text": "Two. The algorithm isn't rooting for you. It's built to keep you swiping, and actual dates got a lot more expensive too.",
+      "pause": 0.5
+    },
+    {
+      "id": "r4",
+      "text": "Three. The free tier, a real budget, and moving off the app fast beat almost every paid feature.",
+      "pause": 0.6
+    },
+    {
+      "id": "r5",
+      "text": "Next time, Dave finally gets the raise he's been asking for. So why does his paycheck look exactly the same?",
+      "pause": 0.4
+    },
+    {
+      "id": "r6",
+      "text": "Subscribe, so Dave can keep explaining money. It's free. Which, this episode taught us, is rarer than it sounds.",
+      "pause": 1.4
+    }
   ],
   "youtube": {
     "title": "Why Dating Costs So Much Now (Apps Charge You to Stay Single)",
@@ -93,7 +333,7 @@
       "Dating Apps Don't Want You to Find Someone. Here's Why.",
       "Why Your $40/Month Dating App Has Zero Matches"
     ],
-    "hook": "Why does your dating app cost $40 a month and still give you zero matches? Because a match that ends your subscription is bad for its business.",
+    "hook": "Why does your dating app cost $40 a month with zero matches? Because a match that ends your subscription is bad for its business. Dave pays $40 a month for a dating app and still has zero matches. We break down how dating apps actually make money (Match Group and Bumble's real 2025 revenue, and how one company quietly owns Tinder, Hinge, Match, OkCupid and more), why a happy couple who deletes the app is a lost customer, the FTC's case against Match Group over fake 'someone likes you' emails, what your subscription actually buys (a 'paywall buffet' of removed annoyances), why swiping feels like a slot machine, and how much dates themselves now cost ('date-flation'). Then a light, practical way to date without going broke.",
     "tags": [
       "why dating apps cost so much",
       "how dating apps make money",
@@ -107,7 +347,11 @@
       "money explained simply",
       "dave explains money"
     ],
-    "hashtags": ["#dating", "#personalfinance", "#money"],
+    "hashtags": [
+      "#dating",
+      "#personalfinance",
+      "#money"
+    ],
     "pinned": "How many months did you pay for a dating app before it actually worked? 👇"
   }
 }

@@ -13,82 +13,346 @@
     "American Pet Products Association (APPA), 2025 pet owner survey: dog ownership at 53% of U.S. households (71 million households, +4% YoY); veterinary care is the largest share of dog-owner spending (29% of wallet share)"
   ],
   "beats": [
-    {"id": "o1", "text": "Dave's dog Biscuit yelps, and won't put weight on his back leg.", "pause": 0.3},
-    {"id": "o2", "text": "At the vet, the doctor says: surgery, today. Dave asks the price.", "pause": 0.3},
-    {"id": "o3", "text": "Two thousand dollars. For a dog.", "pause": 0.3},
-    {"id": "o4", "text": "Dave loves Biscuit. But two thousand dollars is also Dave's rent.", "pause": 0.35},
-    {"id": "o5", "text": "So why is a vet bill suddenly a house payment?", "pause": 0.35},
-    {"id": "o6", "text": "Today: who bought your vet, why the price never shows up on a sign, and how to protect yourself.", "pause": 0.6},
-
-    {"id": "c1a", "chapter": "The Two Thousand Dollar Bill", "text": "So what's actually in a two thousand dollar dog surgery?", "pause": 0.4},
-    {"id": "c1b", "text": "A torn knee ligament, the kind Biscuit has, typically costs between two thousand and six thousand dollars to fix, according to veterinary cost guides.", "pause": 0.5},
-    {"id": "c1c", "text": "Now compare that to the same surgery in a human knee. The sticker price, without insurance, can hit twenty thousand dollars, or more.", "pause": 0.5},
-    {"id": "c1d", "text": "So the dog surgery actually looks cheap, until you remember Dave has pet insurance for exactly zero of his pets, while health insurance covers most of his own knee.", "pause": 0.5},
-    {"id": "c1e", "text": "Without insurance, Dave's out of pocket cost for Biscuit is about the same as a human's out of pocket cost, insurance and all.", "pause": 0.5},
-    {"id": "c1f", "text": "That's the real story. It's not that pet surgery got crazy expensive. It's that pet owners pay the sticker price, in full, out of pocket.", "pause": 0.5},
-    {"id": "c1g", "text": "And Biscuit didn't even go to a fancy hospital. This is just what a torn ligament costs now, at a completely ordinary clinic.", "pause": 0.9},
-
-    {"id": "c2a", "chapter": "Two Companies Own a Lot of Your Vet", "text": "So who's setting that sticker price? Probably not who you think.", "pause": 0.4},
-    {"id": "c2b", "text": "That friendly local vet clinic sign? There's a good chance it's not independent anymore.", "pause": 0.5},
-    {"id": "c2c", "text": "In twenty seventeen, the candy company Mars, yes, the M and M's company, bought the vet chain V C A, for nine point one billion dollars.", "pause": 0.5},
-    {"id": "c2d", "text": "Mars also owns Banfield, and dozens of other hospital brands. One candy company, thousands of vet clinics.", "pause": 0.5},
-    {"id": "c2e", "text": "Then there's J A B Holding, the investment firm behind Keurig and Panera. The F T C made them sell off clinics twice, in twenty twenty two, for buying up too many in the same cities.", "pause": 0.5},
-    {"id": "c2f", "text": "By one industry estimate, about a quarter of general vet clinics, and about three quarters of emergency and specialty clinics, are now owned by big corporate groups.", "pause": 0.5},
-    {"id": "c2g", "text": "None of this is hidden. It's public information, if you know to look for it. Most pet owners never do.", "pause": 0.9},
-
-    {"id": "c3a", "chapter": "How a Roll-Up Works", "text": "This playbook has a name. A roll-up.", "pause": 0.4},
-    {"id": "c3b", "text": "Step one: buy dozens of small, independent vet clinics, usually keeping the friendly local name on the door.", "pause": 0.5},
-    {"id": "c3c", "text": "Step two: combine them, so they all buy medicine and equipment together, in bulk, for a cheaper price.", "pause": 0.5},
-    {"id": "c3d", "text": "Step three: set pricing centrally, across every clinic in the group, instead of clinic by clinic.", "pause": 0.5},
-    {"id": "c3e", "text": "In theory, bulk buying should make things cheaper for you too. In practice, corporate owners now collect the majority of all vet industry revenue.", "pause": 0.9},
-
-    {"id": "c4a", "chapter": "Why the Price Never Shows Up on a Sign", "text": "Here's the part that makes it worse. You can't shop around easily.", "pause": 0.4},
-    {"id": "c4b", "text": "Walk into a restaurant, the prices are on the wall. Walk into a mechanic, you get a written estimate first.", "pause": 0.5},
-    {"id": "c4c", "text": "Walk into most vet clinics, and there's no price list anywhere. You find out the cost after the exam, sometimes after the surgery already started.", "pause": 0.5},
-    {"id": "c4d", "text": "Unlike human hospitals, which are now required to post some prices online, vet clinics have no such rule.", "pause": 0.5},
-    {"id": "c4e", "text": "So the same surgery can cost very different amounts at two clinics ten minutes apart, and you'd have no way to know.", "pause": 0.5},
-    {"id": "c4f", "text": "Try calling ahead for a rough estimate. Some clinics will give you one over the phone. Most won't commit to a number until they see your pet.", "pause": 0.9},
-
-    {"id": "c5a", "chapter": "The Emergency Room Markup", "text": "It gets worse at night, and on weekends.", "pause": 0.4},
-    {"id": "c5b", "text": "Biscuit got hurt on a Saturday. Dave's regular vet was closed. So he got sent to an emergency and specialty hospital instead.", "pause": 0.5},
-    {"id": "c5c", "text": "Those specialty hospitals need expensive equipment and overnight staff, twenty four hours a day, so their prices run higher, often two to three times a regular clinic visit.", "pause": 0.5},
-    {"id": "c5d", "text": "And remember, those are exactly the clinics most likely to be owned by the big consolidators. About three out of every four.", "pause": 0.5},
-    {"id": "c5e", "text": "Dave didn't choose the emergency vet because it was cheap. He chose it because it was open.", "pause": 0.9},
-
-    {"id": "c6a", "chapter": "Why Vet Bills Rise Faster Than Everything Else", "text": "And the prices keep climbing, faster than almost anything else you buy.", "pause": 0.4},
-    {"id": "c6b", "text": "Government data shows vet service prices rose about four point seven percent over the last year. Regular prices, overall, rose about three point three percent.", "pause": 0.5},
-    {"id": "c6c", "text": "Since twenty nineteen, vet prices are up about fifty five percent. That's a faster climb than gas prices over the same years.", "pause": 0.5},
-    {"id": "c6d", "text": "New equipment, new drugs, and higher staff pay all cost more too. That part is real.", "pause": 0.5},
-    {"id": "c6e", "text": "But when an industry consolidates, and its prices climb faster than everything else, it's worth asking which cause is doing more of the work.", "pause": 0.5},
-    {"id": "c6f", "text": "To put fifty five percent in perspective, if your grocery bill had risen that much since twenty nineteen, a hundred dollar cart would now cost about a hundred fifty five dollars.", "pause": 0.9},
-
-    {"id": "c7a", "chapter": "Myth: Vets Are Getting Rich", "text": "Most people picture the vet driving home with all that money. Nope.", "pause": 0.4},
-    {"id": "c7b", "text": "Most working vets are employees now, not owners. Many are paying off veterinary school loans that can run past two hundred thousand dollars.", "pause": 0.5},
-    {"id": "c7c", "text": "The company that owns the building, and sets the prices, is usually a separate corporate parent, far from the exam room.", "pause": 0.5},
-    {"id": "c7d", "text": "So the vet who treated Biscuit likely doesn't set his own prices, and didn't get rich off Dave's bill either.", "pause": 0.5},
-    {"id": "c7e", "text": "That's not an excuse for a two thousand dollar bill. It's just a reminder that following the money sometimes leads to a spreadsheet in another city, not the person in the room.", "pause": 0.9},
-
-    {"id": "c8a", "chapter": "The Insurance Question", "text": "So could insurance have saved Dave two thousand dollars?", "pause": 0.4},
-    {"id": "c8b", "text": "Pet insurance works like car insurance. A monthly premium, then the company pays back a percentage of vet bills, usually after a deductible.", "pause": 0.5},
-    {"id": "c8c", "text": "It's growing fast. About seven million pets were insured in North America by the end of twenty twenty four, up twelve percent in a single year.", "pause": 0.5},
-    {"id": "c8d", "text": "Premiums paid into the industry crossed five point two billion dollars that year, up almost twenty one percent.", "pause": 0.5},
-    {"id": "c8e", "text": "But it only works if you buy it BEFORE the emergency. Biscuit's torn ligament happened the month before Dave was finally going to sign up.", "pause": 0.9},
-
-    {"id": "c9a", "chapter": "How to Not Get Blindsided", "text": "So what can pet owners actually do? Remember, education, not advice.", "pause": 0.4},
-    {"id": "c9b", "text": "One. Get quotes from more than one clinic for anything that isn't an emergency. Prices really do vary that much.", "pause": 0.5},
-    {"id": "c9c", "text": "Two. Look into pet insurance while your pet is young and healthy. Pre-existing conditions usually aren't covered later.", "pause": 0.5},
-    {"id": "c9d", "text": "Three. Build a small pet emergency fund. Even one hundred dollars a month adds up before you need it.", "pause": 0.5},
-    {"id": "c9e", "text": "Four. Ask about payment plans. Cards like CareCredit offer zero interest for a set number of months, but only if you pay it off in time, or the interest gets charged from day one.", "pause": 0.5},
-    {"id": "c9f", "text": "Five. Ask your vet directly which company owns the clinic. You're allowed to ask, and it's useful to know.", "pause": 0.5},
-    {"id": "c9g", "text": "Six. For non-emergencies, ask if a general clinic can refer you somewhere cheaper than the specialty hospital, instead of assuming it's your only option.", "pause": 0.5},
-    {"id": "c9h", "text": "Seven. Keep your pet's vaccine and vet records in one folder. A new clinic without your pet's history often reruns expensive tests from scratch.", "pause": 0.9},
-
-    {"id": "r1", "chapter": "Now You Know", "text": "So let's recap.", "pause": 0.4},
-    {"id": "r2", "text": "One. A lot of vet clinics, especially emergency ones, are now owned by a few big corporate groups.", "pause": 0.5},
-    {"id": "r3", "text": "Two. Unlike human hospitals, vet prices almost never get posted, so shopping around is hard.", "pause": 0.5},
-    {"id": "r4", "text": "Three. You can fight back: get quotes, get pet insurance early, and build a small emergency fund.", "pause": 0.6},
-    {"id": "r5", "text": "Next time, Dave's stuck at an airport gate, and pays eighteen dollars for a sandwich. We'll find out why.", "pause": 0.4},
-    {"id": "r6", "text": "Subscribe, so Dave, and Biscuit, can keep explaining money. It's free. No copay required.", "pause": 1.4}
+    {
+      "id": "o1",
+      "text": "Dave's dog Biscuit yelps, and won't put weight on his back leg.",
+      "pause": 0.3
+    },
+    {
+      "id": "o2",
+      "text": "At the vet, the doctor says: surgery, today. Dave asks the price.",
+      "pause": 0.3
+    },
+    {
+      "id": "o3",
+      "text": "Two thousand dollars. For a dog.",
+      "pause": 0.3
+    },
+    {
+      "id": "o4",
+      "text": "Dave loves Biscuit. But two thousand dollars is also Dave's rent.",
+      "pause": 0.35
+    },
+    {
+      "id": "o5",
+      "text": "So why is a vet bill suddenly a house payment?",
+      "pause": 0.35
+    },
+    {
+      "id": "o6",
+      "text": "Today: who bought your vet, why the price never shows up on a sign, and how to protect yourself.",
+      "pause": 0.6
+    },
+    {
+      "id": "c1a",
+      "chapter": "The Two Thousand Dollar Bill",
+      "text": "So what's actually in a two thousand dollar dog surgery?",
+      "pause": 0.4
+    },
+    {
+      "id": "c1b",
+      "text": "A torn knee ligament, the kind Biscuit has, typically costs between two thousand and six thousand dollars to fix, according to veterinary cost guides.",
+      "pause": 0.5
+    },
+    {
+      "id": "c1c",
+      "text": "Now compare that to the same surgery in a human knee. The sticker price, without insurance, can hit twenty thousand dollars, or more.",
+      "pause": 0.5
+    },
+    {
+      "id": "c1d",
+      "text": "So the dog surgery actually looks cheap, until you remember Dave has pet insurance for exactly zero of his pets, while health insurance covers most of his own knee.",
+      "pause": 0.5
+    },
+    {
+      "id": "c1e",
+      "text": "Without insurance, Dave's out of pocket cost for Biscuit is about the same as a human's out of pocket cost, insurance and all.",
+      "pause": 0.5
+    },
+    {
+      "id": "c1f",
+      "text": "That's the real story. It's not that pet surgery got crazy expensive. It's that pet owners pay the sticker price, in full, out of pocket.",
+      "pause": 0.5
+    },
+    {
+      "id": "c1g",
+      "text": "And Biscuit didn't even go to a fancy hospital. This is just what a torn ligament costs now, at a completely ordinary clinic.",
+      "pause": 0.9
+    },
+    {
+      "id": "c2a",
+      "chapter": "Two Companies Own a Lot of Your Vet",
+      "text": "So who's setting that sticker price? Probably not who you think.",
+      "pause": 0.4
+    },
+    {
+      "id": "c2b",
+      "text": "That friendly local vet clinic sign? There's a good chance it's not independent anymore.",
+      "pause": 0.5
+    },
+    {
+      "id": "c2c",
+      "text": "In twenty seventeen, the candy company Mars, yes, the M and M's company, bought the vet chain V C A, for nine point one billion dollars.",
+      "pause": 0.5
+    },
+    {
+      "id": "c2d",
+      "text": "Mars also owns Banfield, and dozens of other hospital brands. One candy company, thousands of vet clinics.",
+      "pause": 0.5
+    },
+    {
+      "id": "c2e",
+      "text": "Then there's J A B Holding, the investment firm behind Keurig and Panera. The F T C made them sell off clinics twice, in twenty twenty two, for buying up too many in the same cities.",
+      "pause": 0.5
+    },
+    {
+      "id": "c2f",
+      "text": "By one industry estimate, about a quarter of general vet clinics, and about three quarters of emergency and specialty clinics, are now owned by big corporate groups.",
+      "pause": 0.5
+    },
+    {
+      "id": "c2g",
+      "text": "None of this is hidden. It's public information, if you know to look for it. Most pet owners never do.",
+      "pause": 0.9
+    },
+    {
+      "id": "c3a",
+      "chapter": "How a Roll-Up Works",
+      "text": "This playbook has a name. A roll-up.",
+      "pause": 0.4
+    },
+    {
+      "id": "c3b",
+      "text": "Step one: buy dozens of small, independent vet clinics, usually keeping the friendly local name on the door.",
+      "pause": 0.5
+    },
+    {
+      "id": "c3c",
+      "text": "Step two: combine them, so they all buy medicine and equipment together, in bulk, for a cheaper price.",
+      "pause": 0.5
+    },
+    {
+      "id": "c3d",
+      "text": "Step three: set pricing centrally, across every clinic in the group, instead of clinic by clinic.",
+      "pause": 0.5
+    },
+    {
+      "id": "c3e",
+      "text": "In theory, bulk buying should make things cheaper for you too. In practice, corporate owners now collect the majority of all vet industry revenue.",
+      "pause": 0.9
+    },
+    {
+      "id": "c4a",
+      "chapter": "Why the Price Never Shows Up on a Sign",
+      "text": "Here's the part that makes it worse. You can't shop around easily.",
+      "pause": 0.4
+    },
+    {
+      "id": "c4b",
+      "text": "Walk into a restaurant, the prices are on the wall. Walk into a mechanic, you get a written estimate first.",
+      "pause": 0.5
+    },
+    {
+      "id": "c4c",
+      "text": "Walk into most vet clinics, and there's no price list anywhere. You find out the cost after the exam, sometimes after the surgery already started.",
+      "pause": 0.5
+    },
+    {
+      "id": "c4d",
+      "text": "Unlike human hospitals, which are now required to post some prices online, vet clinics have no such rule.",
+      "pause": 0.5
+    },
+    {
+      "id": "c4e",
+      "text": "So the same surgery can cost very different amounts at two clinics ten minutes apart, and you'd have no way to know.",
+      "pause": 0.5
+    },
+    {
+      "id": "c4f",
+      "text": "Try calling ahead for a rough estimate. Some clinics will give you one over the phone. Most won't commit to a number until they see your pet.",
+      "pause": 0.9
+    },
+    {
+      "id": "c5a",
+      "chapter": "The Emergency Room Markup",
+      "text": "It gets worse at night, and on weekends.",
+      "pause": 0.4
+    },
+    {
+      "id": "c5b",
+      "text": "Biscuit got hurt on a Saturday. Dave's regular vet was closed. So he got sent to an emergency and specialty hospital instead.",
+      "pause": 0.5
+    },
+    {
+      "id": "c5c",
+      "text": "Those specialty hospitals need expensive equipment and overnight staff, twenty four hours a day, so their prices run higher, often two to three times a regular clinic visit.",
+      "pause": 0.5
+    },
+    {
+      "id": "c5d",
+      "text": "And remember, those are exactly the clinics most likely to be owned by the big consolidators. About three out of every four.",
+      "pause": 0.5
+    },
+    {
+      "id": "c5e",
+      "text": "Dave didn't choose the emergency vet because it was cheap. He chose it because it was open.",
+      "pause": 0.9
+    },
+    {
+      "id": "c6a",
+      "chapter": "Why Vet Bills Rise Faster Than Everything Else",
+      "text": "And the prices keep climbing, faster than almost anything else you buy.",
+      "pause": 0.4
+    },
+    {
+      "id": "c6b",
+      "text": "Government data shows vet service prices rose about four point seven percent over the last year. Regular prices, overall, rose about three point three percent.",
+      "pause": 0.5
+    },
+    {
+      "id": "c6c",
+      "text": "Since twenty nineteen, vet prices are up about fifty five percent. That's a faster climb than gas prices over the same years.",
+      "pause": 0.5
+    },
+    {
+      "id": "c6d",
+      "text": "New equipment, new drugs, and higher staff pay all cost more too. That part is real.",
+      "pause": 0.5
+    },
+    {
+      "id": "c6e",
+      "text": "But when an industry consolidates, and its prices climb faster than everything else, it's worth asking which cause is doing more of the work.",
+      "pause": 0.5
+    },
+    {
+      "id": "c6f",
+      "text": "To put fifty five percent in perspective, if your grocery bill had risen that much since twenty nineteen, a hundred dollar cart would now cost about a hundred fifty five dollars.",
+      "pause": 0.9
+    },
+    {
+      "id": "c7a",
+      "chapter": "Myth: Vets Are Getting Rich",
+      "text": "Most people picture the vet driving home with all that money. Nope.",
+      "pause": 0.4
+    },
+    {
+      "id": "c7b",
+      "text": "Most working vets are employees now, not owners. Many are paying off veterinary school loans that can run past two hundred thousand dollars.",
+      "pause": 0.5
+    },
+    {
+      "id": "c7c",
+      "text": "The company that owns the building, and sets the prices, is usually a separate corporate parent, far from the exam room.",
+      "pause": 0.5
+    },
+    {
+      "id": "c7d",
+      "text": "So the vet who treated Biscuit likely doesn't set his own prices, and didn't get rich off Dave's bill either.",
+      "pause": 0.5
+    },
+    {
+      "id": "c7e",
+      "text": "That's not an excuse for a two thousand dollar bill. It's just a reminder that following the money sometimes leads to a spreadsheet in another city, not the person in the room.",
+      "pause": 0.9
+    },
+    {
+      "id": "c8a",
+      "chapter": "The Insurance Question",
+      "text": "So could insurance have saved Dave two thousand dollars?",
+      "pause": 0.4
+    },
+    {
+      "id": "c8b",
+      "text": "Pet insurance works like car insurance. A monthly premium, then the company pays back a percentage of vet bills, usually after a deductible.",
+      "pause": 0.5
+    },
+    {
+      "id": "c8c",
+      "text": "It's growing fast. About seven million pets were insured in North America by the end of twenty twenty four, up twelve percent in a single year.",
+      "pause": 0.5
+    },
+    {
+      "id": "c8d",
+      "text": "Premiums paid into the industry crossed five point two billion dollars that year, up almost twenty one percent.",
+      "pause": 0.5
+    },
+    {
+      "id": "c8e",
+      "text": "But it only works if you buy it BEFORE the emergency. Biscuit's torn ligament happened the month before Dave was finally going to sign up.",
+      "pause": 0.9
+    },
+    {
+      "id": "c9a",
+      "chapter": "How to Not Get Blindsided",
+      "text": "So what can pet owners actually do? Remember, education, not advice.",
+      "pause": 0.4
+    },
+    {
+      "id": "c9b",
+      "text": "One. Get quotes from more than one clinic for anything that isn't an emergency. Prices really do vary that much.",
+      "pause": 0.5
+    },
+    {
+      "id": "c9c",
+      "text": "Two. Look into pet insurance while your pet is young and healthy. Pre-existing conditions usually aren't covered later.",
+      "pause": 0.5
+    },
+    {
+      "id": "c9d",
+      "text": "Three. Build a small pet emergency fund. Even one hundred dollars a month adds up before you need it.",
+      "pause": 0.5
+    },
+    {
+      "id": "c9e",
+      "text": "Four. Ask about payment plans. Cards like CareCredit offer zero interest for a set number of months, but only if you pay it off in time, or the interest gets charged from day one.",
+      "pause": 0.5
+    },
+    {
+      "id": "c9f",
+      "text": "Five. Ask your vet directly which company owns the clinic. You're allowed to ask, and it's useful to know.",
+      "pause": 0.5
+    },
+    {
+      "id": "c9g",
+      "text": "Six. For non-emergencies, ask if a general clinic can refer you somewhere cheaper than the specialty hospital, instead of assuming it's your only option.",
+      "pause": 0.5
+    },
+    {
+      "id": "c9h",
+      "text": "Seven. Keep your pet's vaccine and vet records in one folder. A new clinic without your pet's history often reruns expensive tests from scratch.",
+      "pause": 0.9
+    },
+    {
+      "id": "r1",
+      "chapter": "Now You Know",
+      "text": "So let's recap.",
+      "pause": 0.4
+    },
+    {
+      "id": "r2",
+      "text": "One. A lot of vet clinics, especially emergency ones, are now owned by a few big corporate groups.",
+      "pause": 0.5
+    },
+    {
+      "id": "r3",
+      "text": "Two. Unlike human hospitals, vet prices almost never get posted, so shopping around is hard.",
+      "pause": 0.5
+    },
+    {
+      "id": "r4",
+      "text": "Three. You can fight back: get quotes, get pet insurance early, and build a small emergency fund.",
+      "pause": 0.6
+    },
+    {
+      "id": "r5",
+      "text": "Next time, Dave's stuck at an airport gate, and pays eighteen dollars for a sandwich. We'll find out why.",
+      "pause": 0.4
+    },
+    {
+      "id": "r6",
+      "text": "Subscribe, so Dave, and Biscuit, can keep explaining money. It's free. No copay required.",
+      "pause": 1.4
+    }
   ],
   "youtube": {
     "title": "Why Your Vet Bill Is $2,000 Now (Who Bought Your Vet)",
@@ -96,7 +360,7 @@
       "Why Vet Bills Got So Expensive (It's Not Just Inflation)",
       "Who Really Owns Your Vet Clinic Now?"
     ],
-    "hook": "Dave's dog needed knee surgery. The bill: $2,000. Here's who bought up the vet industry, and why the price never shows up on a sign.",
+    "hook": "Dave's dog needed knee surgery. The bill: $2,000. Here's who bought up the vet industry, and why the price never shows up on a sign. Dave's dog Biscuit tears a knee ligament and needs surgery today. The bill shocks him: $2,000. We break down why: private equity and corporate roll-ups (Mars/VCA, JAB Holding) now own a big share of vet clinics, especially emergency ones, how a 'roll-up' actually works, why vet prices almost never get posted anywhere (unlike human hospitals), the emergency-hours markup, why vet prices have risen faster than almost anything else in the CPI basket since 2019, the fast-growing pet insurance industry (NAPHIA data), and how CareCredit payment plans work. Then, practical, pet-loving advice: get quotes, insure early, build a small emergency fund, and ask who owns your clinic.",
     "tags": [
       "why your vet bill is $2000 now",
       "vet bill expensive explained",
@@ -110,7 +374,11 @@
       "money explained simply",
       "dave explains money"
     ],
-    "hashtags": ["#vetbills", "#personalfinance", "#money"],
+    "hashtags": [
+      "#vetbills",
+      "#personalfinance",
+      "#money"
+    ],
     "pinned": "Have you ever gotten a surprise vet bill over $1,000? YES or NO below 👇"
   }
 }

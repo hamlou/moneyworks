@@ -14,76 +14,320 @@
     "Illustrative math: $8,300 median burial + a mid-range vault + a $3,500 marked-up casket vs. the same casket bought online for about $1,200 = roughly how a bill grows past $10,000"
   ],
   "beats": [
-    {"id": "o1", "text": "Dave's family just lost his grandfather. They are sitting in a small office, still in shock.", "pause": 0.35},
-    {"id": "o2", "text": "A kind man in a suit slides a folder across the table. It's time to choose a casket.", "pause": 0.35},
-    {"id": "o3", "text": "Nobody in that room wants to think about money right now. But somehow, by the end of the hour, the number on the page is over ten thousand dollars.", "pause": 0.4},
-    {"id": "o4", "text": "How does a few hours of paperwork turn into ten thousand dollars? And why does it always seem to happen at the worst possible moment?", "pause": 0.4},
-    {"id": "o5", "text": "This one is going to be gentle. It's a hard topic. But knowing this, before you ever sit in that chair, can save your family thousands of dollars.", "pause": 0.4},
-    {"id": "o6", "text": "Today: the real average cost, the casket markup, your actual legal rights, and the pricing pressure nobody warns you about.", "pause": 0.6},
-
-    {"id": "c1a", "chapter": "The Bill Nobody Budgets For", "text": "Let's start with the honest number. What does a funeral actually cost, on average, in America?", "pause": 0.4},
-    {"id": "c1b", "text": "The National Funeral Directors Association tracks this every year. A funeral with a viewing and burial: a median of eight thousand three hundred dollars.", "pause": 0.5},
-    {"id": "c1c", "text": "Add a burial vault, which many cemeteries require, and it's closer to ten thousand.", "pause": 0.5},
-    {"id": "c1d", "text": "And that number usually doesn't even include the cemetery plot itself, the headstone, or flowers. Those can add another two to five thousand dollars, on top.", "pause": 0.5},
-    {"id": "c1e", "text": "It's like being handed a restaurant menu with only the appetizer prices printed. The real total shows up later.", "pause": 0.5},
-    {"id": "c1f", "text": "This isn't a tiny industry either. Funeral homes across the country bring in about twenty billion dollars a year, from around eleven thousand businesses.", "pause": 0.5},
-    {"id": "c1g", "text": "And here's the hardest part. Most families are doing this math for the very first time, within forty eight hours of a death.", "pause": 0.9},
-
-    {"id": "c2a", "chapter": "The Casket Markup", "text": "Now let's talk about the single biggest line item. The casket.", "pause": 0.4},
-    {"id": "c2b", "text": "A funeral home usually buys a casket wholesale for somewhere between eight hundred and fifteen hundred dollars.", "pause": 0.5},
-    {"id": "c2c", "text": "Then it goes on the showroom floor, and the price can jump to three thousand, five thousand, even ten thousand dollars.", "pause": 0.5},
-    {"id": "c2d", "text": "That's a markup of one hundred to three hundred percent, sometimes more. Industry reporting puts some caskets even higher.", "pause": 0.5},
-    {"id": "c2e", "text": "Picture buying a sofa, and the store marks it up like a museum painting. Same sofa. Different universe of a price tag.", "pause": 0.5},
-    {"id": "c2f", "text": "And here's the twist almost nobody knows. That exact same casket, or one just like it, is often sold online or at a big warehouse store, for fifty to seventy percent less.", "pause": 0.9},
-
-    {"id": "c3a", "chapter": "Rights You Didn't Know You Had", "text": "This is the chapter to remember. Because you have real legal rights here, whether you know it or not.", "pause": 0.4},
-    {"id": "c3b", "text": "It's called the FTC Funeral Rule, from the Federal Trade Commission.", "pause": 0.5},
-    {"id": "c3c", "text": "Right one: you can ask for a printed, itemized price list, for everything the funeral home sells. They have to give it to you, and they have to give casket prices in writing too.", "pause": 0.5},
-    {"id": "c3d", "text": "Right two: you're allowed to buy a casket somewhere else. Online, a warehouse store, anywhere. The funeral home has to accept it, and can't charge you an extra fee for that.", "pause": 0.5},
-    {"id": "c3e", "text": "Right three: you can call on the phone, before you ever walk in, and ask for prices. They're required to tell you.", "pause": 0.5},
-    {"id": "c3f", "text": "It's like finding out, after years of overpaying at a hotel, that you were always allowed to ask for the discount rate. It was just never offered out loud.", "pause": 0.9},
-
-    {"id": "c4a", "chapter": "The Grief Upsell", "text": "Most people think funeral directors are simply being helpful when they suggest the nicer options. Often, that's true.", "pause": 0.4},
-    {"id": "c4b", "text": "But the industry itself studies something uncomfortable: grief changes how your brain makes decisions.", "pause": 0.5},
-    {"id": "c4c", "text": "Right after a loss, your ability to compare, negotiate, and say no, drops sharply, for weeks.", "pause": 0.5},
-    {"id": "c4d", "text": "That's exactly the window when the biggest purchase of the whole process gets made.", "pause": 0.5},
-    {"id": "c4e", "text": "There's even a real continuing education class for funeral directors, approved in many states, literally called 'Upselling Without Upsetting the Client.'", "pause": 0.5},
-    {"id": "c4f", "text": "Phrases like 'wouldn't you want the best for them' or 'most families choose this one' aren't accidents. They're sales language, aimed at a moment when you're least able to push back.", "pause": 0.5},
-    {"id": "c4g", "text": "It's like a salesperson finding you at your most tired, right after bad news, and calling that good timing. Because for the business, it kind of is.", "pause": 0.9},
-
-    {"id": "c5a", "chapter": "Two Myths: Embalming and the Vault", "text": "Here's a myth-bust, actually two. Many families are told embalming is required by law. Almost always, it isn't.", "pause": 0.4},
-    {"id": "c5b", "text": "No U.S. state requires embalming for every death. A few states require it, or refrigeration, only in specific situations, like a long delay before burial.", "pause": 0.5},
-    {"id": "c5c", "text": "The Funeral Rule specifically bans funeral homes from claiming it's legally required when it isn't. Refrigeration is usually a perfectly legal, and cheaper, alternative.", "pause": 0.5},
-    {"id": "c5d", "text": "Myth two: the burial vault, that outer container around the casket. Families are often told it's the law. It's usually not.", "pause": 0.5},
-    {"id": "c5e", "text": "In most states, a vault is required by the cemetery's own rules, so the ground doesn't sink over time. Not by any state law.", "pause": 0.5},
-    {"id": "c5f", "text": "It's a real reason. Just not the reason most families are given.", "pause": 0.9},
-
-    {"id": "c6a", "chapter": "Why Cremation Keeps Growing", "text": "Now, one honest, lower cost option families increasingly choose: cremation.", "pause": 0.4},
-    {"id": "c6b", "text": "A funeral with cremation, viewing, and a memorial has a national median around six thousand two hundred eighty dollars. Lower than the burial number, though still real money.", "pause": 0.5},
-    {"id": "c6c", "text": "In twenty twenty five, cremation made up about sixty three percent of all funerals in America. Burial: under thirty two percent.", "pause": 0.5},
-    {"id": "c6d", "text": "That's a complete flip from a few decades ago. And the association that tracks this projects cremation could reach over eighty percent by twenty forty five.", "pause": 0.5},
-    {"id": "c6e", "text": "It's simply a personal, sometimes religious, and often financial choice. Not a political one. Now you know the numbers.", "pause": 0.9},
-
-    {"id": "c7a", "chapter": "Paying Early: The Fine Print", "text": "Some families try to solve all of this ahead of time, by prepaying. That can genuinely help. But read closely first.", "pause": 0.4},
-    {"id": "c7b", "text": "These are called preneed contracts. You pay a funeral home now, for a funeral later.", "pause": 0.5},
-    {"id": "c7c", "text": "The risk: what happens if that funeral home closes, or gets sold, years before it's needed?", "pause": 0.5},
-    {"id": "c7d", "text": "Some states require your money to sit in a protected trust, or an insurance policy, kept separate from the business. Other states barely require anything at all.", "pause": 0.5},
-    {"id": "c7e", "text": "So prepaying isn't a trap. It's just a contract, and like any contract, the protections depend entirely on the fine print, and your state.", "pause": 0.9},
-
-    {"id": "c8a", "chapter": "How to Protect Your Family", "text": "So how do you fight back, gently, without a fight at all? Remember, this is education, not advice.", "pause": 0.4},
-    {"id": "c8b", "text": "One. If you can, plan ahead, even just a little, before a crisis. Even a short note of preferences saves the family from deciding everything in one afternoon.", "pause": 0.5},
-    {"id": "c8c", "text": "Two. Ask for the itemized price list, out loud, and take it home to read, away from the office.", "pause": 0.5},
-    {"id": "c8d", "text": "Three. Call two or three funeral homes on the phone first. Comparing prices is completely legal, and completely normal.", "pause": 0.5},
-    {"id": "c8e", "text": "Four. Consider buying a casket online, or a simpler option, if the showroom price feels heavy. It is genuinely allowed.", "pause": 0.5},
-    {"id": "c8f", "text": "Five. Ask directly: is this required by law, or is it a preference, or a cemetery rule? You're always allowed to ask that question.", "pause": 0.5},
-    {"id": "c8g", "text": "Six. If you're prepaying, ask exactly where the money goes, and what happens if the business changes hands.", "pause": 0.9},
-
-    {"id": "r1", "chapter": "Now You Know", "text": "So let's gently recap.", "pause": 0.4},
-    {"id": "r2", "text": "One. The typical funeral runs eight to ten thousand dollars, and the real total often arrives in pieces.", "pause": 0.5},
-    {"id": "r3", "text": "Two. Caskets are frequently marked up one hundred to three hundred percent, but you have a legal right to buy one elsewhere, and embalming or a vault is rarely required by actual law.", "pause": 0.5},
-    {"id": "r4", "text": "Three. The FTC Funeral Rule gives you real rights: a price list, phone pricing, and no fee for outside purchases. Use them.", "pause": 0.6},
-    {"id": "r5", "text": "Next time, we go back to something lighter. Why do so many stores make everything end in ninety nine cents?", "pause": 0.4},
-    {"id": "r6", "text": "Subscribe, so Dave can keep explaining money. It's free. And unlike some of these folders, there's no upsell.", "pause": 1.4}
+    {
+      "id": "o1",
+      "text": "Dave's family just lost his grandfather. They are sitting in a small office, still in shock.",
+      "pause": 0.35
+    },
+    {
+      "id": "o2",
+      "text": "A kind man in a suit slides a folder across the table. It's time to choose a casket.",
+      "pause": 0.35
+    },
+    {
+      "id": "o3",
+      "text": "Nobody in that room wants to think about money right now. But somehow, by the end of the hour, the number on the page is over ten thousand dollars.",
+      "pause": 0.4
+    },
+    {
+      "id": "o4",
+      "text": "How does a few hours of paperwork turn into ten thousand dollars? And why does it always seem to happen at the worst possible moment?",
+      "pause": 0.4
+    },
+    {
+      "id": "o5",
+      "text": "This one is going to be gentle. It's a hard topic. But knowing this, before you ever sit in that chair, can save your family thousands of dollars.",
+      "pause": 0.4
+    },
+    {
+      "id": "o6",
+      "text": "Today: the real average cost, the casket markup, your actual legal rights, and the pricing pressure nobody warns you about.",
+      "pause": 0.6
+    },
+    {
+      "id": "c1a",
+      "chapter": "The Bill Nobody Budgets For",
+      "text": "Let's start with the honest number. What does a funeral actually cost, on average, in America?",
+      "pause": 0.4
+    },
+    {
+      "id": "c1b",
+      "text": "The National Funeral Directors Association tracks this every year. A funeral with a viewing and burial: a median of eight thousand three hundred dollars.",
+      "pause": 0.5
+    },
+    {
+      "id": "c1c",
+      "text": "Add a burial vault, which many cemeteries require, and it's closer to ten thousand.",
+      "pause": 0.5
+    },
+    {
+      "id": "c1d",
+      "text": "And that number usually doesn't even include the cemetery plot itself, the headstone, or flowers. Those can add another two to five thousand dollars, on top.",
+      "pause": 0.5
+    },
+    {
+      "id": "c1e",
+      "text": "It's like being handed a restaurant menu with only the appetizer prices printed. The real total shows up later.",
+      "pause": 0.5
+    },
+    {
+      "id": "c1f",
+      "text": "This isn't a tiny industry either. Funeral homes across the country bring in about twenty billion dollars a year, from around eleven thousand businesses.",
+      "pause": 0.5
+    },
+    {
+      "id": "c1g",
+      "text": "And here's the hardest part. Most families are doing this math for the very first time, within forty eight hours of a death.",
+      "pause": 0.9
+    },
+    {
+      "id": "c2a",
+      "chapter": "The Casket Markup",
+      "text": "Now let's talk about the single biggest line item. The casket.",
+      "pause": 0.4
+    },
+    {
+      "id": "c2b",
+      "text": "A funeral home usually buys a casket wholesale for somewhere between eight hundred and fifteen hundred dollars.",
+      "pause": 0.5
+    },
+    {
+      "id": "c2c",
+      "text": "Then it goes on the showroom floor, and the price can jump to three thousand, five thousand, even ten thousand dollars.",
+      "pause": 0.5
+    },
+    {
+      "id": "c2d",
+      "text": "That's a markup of one hundred to three hundred percent, sometimes more. Industry reporting puts some caskets even higher.",
+      "pause": 0.5
+    },
+    {
+      "id": "c2e",
+      "text": "Picture buying a sofa, and the store marks it up like a museum painting. Same sofa. Different universe of a price tag.",
+      "pause": 0.5
+    },
+    {
+      "id": "c2f",
+      "text": "And here's the twist almost nobody knows. That exact same casket, or one just like it, is often sold online or at a big warehouse store, for fifty to seventy percent less.",
+      "pause": 0.9
+    },
+    {
+      "id": "c3a",
+      "chapter": "Rights You Didn't Know You Had",
+      "text": "This is the chapter to remember. Because you have real legal rights here, whether you know it or not.",
+      "pause": 0.4
+    },
+    {
+      "id": "c3b",
+      "text": "It's called the FTC Funeral Rule, from the Federal Trade Commission.",
+      "pause": 0.5
+    },
+    {
+      "id": "c3c",
+      "text": "Right one: you can ask for a printed, itemized price list, for everything the funeral home sells. They have to give it to you, and they have to give casket prices in writing too.",
+      "pause": 0.5
+    },
+    {
+      "id": "c3d",
+      "text": "Right two: you're allowed to buy a casket somewhere else. Online, a warehouse store, anywhere. The funeral home has to accept it, and can't charge you an extra fee for that.",
+      "pause": 0.5
+    },
+    {
+      "id": "c3e",
+      "text": "Right three: you can call on the phone, before you ever walk in, and ask for prices. They're required to tell you.",
+      "pause": 0.5
+    },
+    {
+      "id": "c3f",
+      "text": "It's like finding out, after years of overpaying at a hotel, that you were always allowed to ask for the discount rate. It was just never offered out loud.",
+      "pause": 0.9
+    },
+    {
+      "id": "c4a",
+      "chapter": "The Grief Upsell",
+      "text": "Most people think funeral directors are simply being helpful when they suggest the nicer options. Often, that's true.",
+      "pause": 0.4
+    },
+    {
+      "id": "c4b",
+      "text": "But the industry itself studies something uncomfortable: grief changes how your brain makes decisions.",
+      "pause": 0.5
+    },
+    {
+      "id": "c4c",
+      "text": "Right after a loss, your ability to compare, negotiate, and say no, drops sharply, for weeks.",
+      "pause": 0.5
+    },
+    {
+      "id": "c4d",
+      "text": "That's exactly the window when the biggest purchase of the whole process gets made.",
+      "pause": 0.5
+    },
+    {
+      "id": "c4e",
+      "text": "There's even a real continuing education class for funeral directors, approved in many states, literally called 'Upselling Without Upsetting the Client.'",
+      "pause": 0.5
+    },
+    {
+      "id": "c4f",
+      "text": "Phrases like 'wouldn't you want the best for them' or 'most families choose this one' aren't accidents. They're sales language, aimed at a moment when you're least able to push back.",
+      "pause": 0.5
+    },
+    {
+      "id": "c4g",
+      "text": "It's like a salesperson finding you at your most tired, right after bad news, and calling that good timing. Because for the business, it kind of is.",
+      "pause": 0.9
+    },
+    {
+      "id": "c5a",
+      "chapter": "Two Myths: Embalming and the Vault",
+      "text": "Here's a myth-bust, actually two. Many families are told embalming is required by law. Almost always, it isn't.",
+      "pause": 0.4
+    },
+    {
+      "id": "c5b",
+      "text": "No U.S. state requires embalming for every death. A few states require it, or refrigeration, only in specific situations, like a long delay before burial.",
+      "pause": 0.5
+    },
+    {
+      "id": "c5c",
+      "text": "The Funeral Rule specifically bans funeral homes from claiming it's legally required when it isn't. Refrigeration is usually a perfectly legal, and cheaper, alternative.",
+      "pause": 0.5
+    },
+    {
+      "id": "c5d",
+      "text": "Myth two: the burial vault, that outer container around the casket. Families are often told it's the law. It's usually not.",
+      "pause": 0.5
+    },
+    {
+      "id": "c5e",
+      "text": "In most states, a vault is required by the cemetery's own rules, so the ground doesn't sink over time. Not by any state law.",
+      "pause": 0.5
+    },
+    {
+      "id": "c5f",
+      "text": "It's a real reason. Just not the reason most families are given.",
+      "pause": 0.9
+    },
+    {
+      "id": "c6a",
+      "chapter": "Why Cremation Keeps Growing",
+      "text": "Now, one honest, lower cost option families increasingly choose: cremation.",
+      "pause": 0.4
+    },
+    {
+      "id": "c6b",
+      "text": "A funeral with cremation, viewing, and a memorial has a national median around six thousand two hundred eighty dollars. Lower than the burial number, though still real money.",
+      "pause": 0.5
+    },
+    {
+      "id": "c6c",
+      "text": "In twenty twenty five, cremation made up about sixty three percent of all funerals in America. Burial: under thirty two percent.",
+      "pause": 0.5
+    },
+    {
+      "id": "c6d",
+      "text": "That's a complete flip from a few decades ago. And the association that tracks this projects cremation could reach over eighty percent by twenty forty five.",
+      "pause": 0.5
+    },
+    {
+      "id": "c6e",
+      "text": "It's simply a personal, sometimes religious, and often financial choice. Not a political one. Now you know the numbers.",
+      "pause": 0.9
+    },
+    {
+      "id": "c7a",
+      "chapter": "Paying Early: The Fine Print",
+      "text": "Some families try to solve all of this ahead of time, by prepaying. That can genuinely help. But read closely first.",
+      "pause": 0.4
+    },
+    {
+      "id": "c7b",
+      "text": "These are called preneed contracts. You pay a funeral home now, for a funeral later.",
+      "pause": 0.5
+    },
+    {
+      "id": "c7c",
+      "text": "The risk: what happens if that funeral home closes, or gets sold, years before it's needed?",
+      "pause": 0.5
+    },
+    {
+      "id": "c7d",
+      "text": "Some states require your money to sit in a protected trust, or an insurance policy, kept separate from the business. Other states barely require anything at all.",
+      "pause": 0.5
+    },
+    {
+      "id": "c7e",
+      "text": "So prepaying isn't a trap. It's just a contract, and like any contract, the protections depend entirely on the fine print, and your state.",
+      "pause": 0.9
+    },
+    {
+      "id": "c8a",
+      "chapter": "How to Protect Your Family",
+      "text": "So how do you fight back, gently, without a fight at all? Remember, this is education, not advice.",
+      "pause": 0.4
+    },
+    {
+      "id": "c8b",
+      "text": "One. If you can, plan ahead, even just a little, before a crisis. Even a short note of preferences saves the family from deciding everything in one afternoon.",
+      "pause": 0.5
+    },
+    {
+      "id": "c8c",
+      "text": "Two. Ask for the itemized price list, out loud, and take it home to read, away from the office.",
+      "pause": 0.5
+    },
+    {
+      "id": "c8d",
+      "text": "Three. Call two or three funeral homes on the phone first. Comparing prices is completely legal, and completely normal.",
+      "pause": 0.5
+    },
+    {
+      "id": "c8e",
+      "text": "Four. Consider buying a casket online, or a simpler option, if the showroom price feels heavy. It is genuinely allowed.",
+      "pause": 0.5
+    },
+    {
+      "id": "c8f",
+      "text": "Five. Ask directly: is this required by law, or is it a preference, or a cemetery rule? You're always allowed to ask that question.",
+      "pause": 0.5
+    },
+    {
+      "id": "c8g",
+      "text": "Six. If you're prepaying, ask exactly where the money goes, and what happens if the business changes hands.",
+      "pause": 0.9
+    },
+    {
+      "id": "r1",
+      "chapter": "Now You Know",
+      "text": "So let's gently recap.",
+      "pause": 0.4
+    },
+    {
+      "id": "r2",
+      "text": "One. The typical funeral runs eight to ten thousand dollars, and the real total often arrives in pieces.",
+      "pause": 0.5
+    },
+    {
+      "id": "r3",
+      "text": "Two. Caskets are frequently marked up one hundred to three hundred percent, but you have a legal right to buy one elsewhere, and embalming or a vault is rarely required by actual law.",
+      "pause": 0.5
+    },
+    {
+      "id": "r4",
+      "text": "Three. The FTC Funeral Rule gives you real rights: a price list, phone pricing, and no fee for outside purchases. Use them.",
+      "pause": 0.6
+    },
+    {
+      "id": "r5",
+      "text": "Next time, we go back to something lighter. Why do so many stores make everything end in ninety nine cents?",
+      "pause": 0.4
+    },
+    {
+      "id": "r6",
+      "text": "Subscribe, so Dave can keep explaining money. It's free. And unlike some of these folders, there's no upsell.",
+      "pause": 1.4
+    }
   ],
   "youtube": {
     "title": "Why Funerals Cost $10,000 (The Grief Upsell, Explained)",
@@ -91,7 +335,7 @@
       "The Hidden Casket Markup Funeral Homes Don't Mention",
       "Your Legal Rights When a Funeral Costs $10,000"
     ],
-    "hook": "Why does a funeral cost $10,000? Dave's family faced the bill while still grieving, and it revealed a legal right almost nobody uses.",
+    "hook": "Why does a funeral cost $10,000? Dave's family faced the bill while still grieving, and it revealed a legal right almost nobody uses. Dave's family sits down to plan a funeral, still in shock, and the bill quietly climbs past ten thousand dollars. We gently explain the real median cost of a funeral in America (NFDA data), why caskets are so often marked up 100%-300% or more over wholesale, and the FTC Funeral Rule rights almost nobody uses: an itemized price list, the right to buy a casket anywhere else with no extra fee, and phone pricing on request. We cover the psychology of the 'grief upsell' (decision-making changes right after a loss), two common myths (embalming and burial vaults are usually not required by law), why cremation keeps growing, and the fine print behind prepaid 'preneed' funeral plans. This one is handled gently and respectfully - education, not advice.",
     "tags": [
       "why funerals cost so much",
       "average funeral cost explained",
@@ -105,7 +349,11 @@
       "money explained simply",
       "dave explains money"
     ],
-    "hashtags": ["#funeralplanning", "#personalfinance", "#money"],
+    "hashtags": [
+      "#funeralplanning",
+      "#personalfinance",
+      "#money"
+    ],
     "pinned": "Did you know you're legally allowed to buy a casket online? 👇 Yes or no - be honest."
   }
 }
