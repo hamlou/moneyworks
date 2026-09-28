@@ -535,10 +535,12 @@ export const Ep46: React.FC = () => {
           <Board />
           <Svg>
             <G2 x={960} y={120} s={P(A('c5c')) * bump(overnight)}><Text size={48}>overnight staff, 24/7 equipment</Text></G2>
-            <VetClinic x={1560} y={340} s={0.42 * P(A('c5c'))} name="EMERGENCY" emergency />
-            <line x1={460} y1={900} x2={1260} y2={900} stroke={C.ink} strokeWidth={6} strokeLinecap="round" />
-            <Bar x={640} y={900} h={260} color={C.blue} label="regular clinic" value="1x" w={320} />
-            <Bar x={1080} y={900} h={ease(f, two3 - 4, three3 + 16, 130, 620)} color={C.red} label="emergency hospital" value={f >= three3 ? '2-3x' : '?'} w={320} />
+            <VetClinic x={1620} y={380} s={0.46 * P(A('c5c'))} name="EMERGENCY" emergency />
+            <Dave f={f} x={280} y={900} s={1.25 * P(A('c5c'))} keys={[{at: 0, pose: 'think', expr: 'think', look: 0.8}, {at: three3, pose: 'shock', expr: 'shock'}]} />
+            <line x1={520} y1={900} x2={1320} y2={900} stroke={C.ink} strokeWidth={6} strokeLinecap="round" />
+            <Bar x={700} y={900} h={260} color={C.blue} label="regular clinic" value="1x" w={320} />
+            <Bar x={1140} y={900} h={ease(f, two3 - 4, three3 + 16, 130, 620)} color={C.red} label="emergency hospital" value={f >= three3 ? '2-3x' : '?'} w={320} />
+            <G2 x={280} y={520} s={P(A('c5c')) * bump(three3)} o={lt(three3, 0.45)}><Bubble text="whoa, really?" size={36} tail="down" /></G2>
           </Svg>
         </AbsoluteFill>
       ),
@@ -678,11 +680,12 @@ export const Ep46: React.FC = () => {
       <AbsoluteFill>
         <Board />
         <Svg>
-          <G2 x={960} y={180} s={P(A('c7e')) * bump(excuse)}><Text size={44} color={GRAY}>not an excuse for a $2,000 bill...</Text></G2>
-          <Vet f={f} x={560} y={880} s={1.15 * P(A('c7e'))} keys={[{at: 0, pose: 'shrug', expr: 'tired'}]} />
-          <Bank x={1350} y={800} s={0.32 * P(A('c7e')) * bump(spreadsheet, 0.08)} label="HQ" />
-          <Arrow d="M 800 780 Q 1050 700 1220 780" t={f >= spreadsheet ? 1 : 0.4} />
-          <G2 x={960} y={950} s={P(A('c7e')) * bump(spreadsheet)}><Text size={40} color={C.blue}>the money leads to a spreadsheet, not the vet</Text></G2>
+          <G2 x={960} y={150} s={P(A('c7e')) * bump(excuse)}><Text size={46} color={GRAY}>not an excuse for a $2,000 bill...</Text></G2>
+          <Vet f={f} x={480} y={700} s={1.5 * P(A('c7e'))} keys={[{at: 0, pose: 'shrug', expr: 'tired'}]} />
+          <MoneyStack x={860} y={620} s={1.1 * P(A('c7e')) * bump(spreadsheet, 0.1)} n={5} />
+          <Arrow d="M 1000 640 Q 1250 560 1480 620" t={f >= spreadsheet ? 1 : 0.4} w={12} />
+          <Bank x={1560} y={700} s={0.44 * P(A('c7e')) * bump(spreadsheet, 0.08)} label="HQ" />
+          <G2 x={960} y={1000} s={P(A('c7e')) * bump(spreadsheet)}><Text size={42} color={C.blue}>the money leads to a spreadsheet, not the vet</Text></G2>
         </Svg>
       </AbsoluteFill>
     ));
