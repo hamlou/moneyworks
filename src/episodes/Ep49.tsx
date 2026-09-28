@@ -287,7 +287,9 @@ export const Ep49: React.FC = () => {
           <Board />
           <Svg>
             <G2 x={960} y={130} s={P(A('c3a'))}><Text size={48}>one tiny setting, buried in the signup</Text></G2>
-            <Toggle x={960} y={560} s={1.3 * P(A('c3a')) * bump(rn, 0.12)} on={f >= on ? 1 : 0} label="AUTO RENEW" />
+            <Dave f={f} x={480} y={920} s={1.15} keys={[{at: 0, pose: 'point_r', expr: 'suspicious', look: 0.7}]} />
+            <Toggle x={1250} y={620} s={1.3 * P(A('c3a')) * bump(rn, 0.12)} on={f >= on ? 1 : 0} label="AUTO RENEW" />
+            <G2 x={1250} y={340} o={lt(rn, 0.4)}><Bubble text="wait... it's already switched on?" size={34} tail="down" /></G2>
           </Svg>
         </AbsoluteFill>
       ) : f < A('c3d') ? (
@@ -340,9 +342,10 @@ export const Ep49: React.FC = () => {
           <Board />
           <Svg>
             <G2 x={960} y={120} s={P(A('c4a')) * bump(tk)}><Text size={48}>the trial price ≠ the real price</Text></G2>
-            <Bar x={640} y={780} s={1.1 * P(A('c4a'))} h={40} color={C.greenLight} label="TRIAL" value="$0" />
-            <Bar x={1240} y={780} s={1.1 * P(A('c4a')) * bump(ft, 0.1)} h={40 + big * 300} color={C.red} label="AFTER" value={f >= ft ? '$14.99/mo' : '?'} />
-            <G2 x={1240} y={340} o={lt(fv, 0.4)}><Text size={38} color={C.red}>{f >= fv ? 'forever, unless you stop it' : ''}</Text></G2>
+            <Dave f={f} x={330} y={920} s={1.1} keys={[{at: 0, pose: 'think', expr: 'think', look: 0.7}]} />
+            <Bar x={800} y={820} s={1.3 * P(A('c4a'))} h={60} color={C.greenLight} label="TRIAL" value="$0" />
+            <Bar x={1300} y={820} s={1.3 * P(A('c4a')) * bump(ft, 0.1)} h={60 + big * 340} color={C.red} label="AFTER" value={f >= ft ? '$14.99/mo' : '?'} />
+            <G2 x={1300} y={300} o={lt(fv, 0.4)}><Text size={38} color={C.red}>{f >= fv ? 'forever, unless you stop it' : ''}</Text></G2>
             <SourceTag f={f} at={nb} text="illustrative: $14.99/mo x 5 months = $74.95" />
           </Svg>
         </AbsoluteFill>
@@ -389,8 +392,16 @@ export const Ep49: React.FC = () => {
           <Board />
           <Svg>
             <G2 x={960} y={130} s={P(A('c5a')) * bump(hd)}><Text size={50}>okay, dave wants out. how hard can it be?</Text></G2>
-            <Stamp x={960} y={560} s={1.1 * P(A('c5a')) * bump(dk, 0.12)} text={f >= dk ? 'DARK PATTERNS' : '?'} color={C.red} size={58} r={-3} />
-            <Dave f={f} x={620} y={950} s={1.05} keys={[{at: 0, pose: 'point_r', expr: 'worried'}]} />
+            <Dave f={f} x={560} y={920} s={1.25} keys={[{at: 0, pose: 'point_r', expr: 'worried', look: 0.7}, {at: hd, pose: 'facepalm', expr: 'tired', look: 0.7}]} />
+            <G2 x={1250} y={680} s={P(A('c5a'))}>
+              <rect x={-180} y={-260} width={360} height={520} rx={20} fill="#fff" stroke={C.ink} strokeWidth={6} />
+              <rect x={-180} y={-260} width={360} height={90} rx={20} fill={C.navy} />
+              <Text y={-215} size={30} color="#fff">MY ACCOUNT</Text>
+              <rect x={-130} y={-90} width={260} height={80} rx={14} fill={C.soft} stroke={C.ink} strokeWidth={4} />
+              <Text y={-38} size={28} color={GRAY}>End membership</Text>
+              <path d="M -60 60 L 60 60 L 40 220 L -40 220 Z" fill="none" stroke={C.gray} strokeWidth={4} strokeDasharray="8 8" />
+            </G2>
+            <Stamp x={1250} y={330} s={1.1 * P(A('c5a')) * bump(dk, 0.12)} text={f >= dk ? 'DARK PATTERNS' : '?'} color={C.red} size={54} r={-3} />
           </Svg>
         </AbsoluteFill>
       ) : f < A('c5e') ? (
@@ -500,12 +511,15 @@ export const Ep49: React.FC = () => {
         <AbsoluteFill>
           <Board />
           <Svg>
-            <Calendar x={620} y={580} s={1.1 * P(A('c7c')) * bump(fteen, 0.1)} year={f >= fteen ? '15-45 DAYS' : '?'} flip={f >= wn ? 1 : 0} top="NOTICE" />
-            <G2 x={620} y={960} o={lt(wn, 0.4)}><Text size={34} color={GRAY}>warning before renewal (plans 1yr+)</Text></G2>
-            <Box x={1450} y={620} w={560} h={280} s={P(A('c7d')) * bump(il, 0.08)} o={lt(il, 0.4)}>
-              <Text y={-60} size={32} color={GRAY}>other states, own rules:</Text>
-              <Text y={0} size={38}>New York</Text>
-              <Text y={60} size={38} color={f >= il ? C.navy : GRAY}>{f >= il ? 'Illinois...' : ''}</Text>
+            <G2 x={960} y={110} s={P(A('c7c'))}><Text size={44}>a year-plus plan? more rules apply</Text></G2>
+            <Dave f={f} x={340} y={920} s={1.05} keys={[{at: 0, pose: 'think', expr: 'think', look: 0.7}]} />
+            <Calendar x={720} y={620} s={1.1 * P(A('c7c')) * bump(fteen, 0.1)} year={f >= fteen ? '15-45 DAYS' : '?'} flip={f >= wn ? 1 : 0} top="NOTICE" />
+            <G2 x={720} y={990} o={lt(wn, 0.4)}><Text size={32} color={GRAY}>warning before renewal (plans 1yr+)</Text></G2>
+            <Box x={1470} y={640} w={560} h={320} s={P(A('c7d')) * bump(il, 0.08)} o={lt(il, 0.4)}>
+              <Text y={-90} size={32} color={GRAY}>other states, own rules:</Text>
+              <Text y={-20} size={38}>New York</Text>
+              <Text y={40} size={38} color={f >= il ? C.navy : GRAY}>{f >= il ? 'Illinois' : ''}</Text>
+              <Text y={100} size={30} color={C.gray}>{f >= il ? '...and more every year' : ''}</Text>
             </Box>
           </Svg>
         </AbsoluteFill>
@@ -514,8 +528,9 @@ export const Ep49: React.FC = () => {
           <Board />
           <Svg>
             <G2 x={960} y={130} s={P(A('c7e')) * bump(fifty)}><Text size={50} color={C.red}>{f >= fifty ? '50 different rulebooks' : 'not one national rulebook...'}</Text></G2>
-            {Array.from({length: 8}).map((_, i) => (
-              <G2 key={i} x={360 + (i % 4) * 400} y={520 + Math.floor(i / 4) * 340} s={0.55 * P(A('c7e')) * bump(fifty + i * 2, 0.1)}><Notepad /></G2>
+            <Dave f={f} x={230} y={780} s={1.1} keys={[{at: 0, pose: 'shrug', expr: 'worried', look: 0.7}]} />
+            {Array.from({length: 10}).map((_, i) => (
+              <G2 key={i} x={560 + (i % 5) * 260} y={420 + Math.floor(i / 5) * 420} s={1.1 * P(A('c7e')) * bump(fifty + i * 2, 0.12)}><Notepad /></G2>
             ))}
             <G2 x={960} y={1010} o={lt(fifty, 0.4)}><Text size={32} color={GRAY}>slowly getting stricter, one lawsuit at a time</Text></G2>
           </Svg>
@@ -568,8 +583,9 @@ export const Ep49: React.FC = () => {
           <Board />
           <Svg>
             <G2 x={960} y={130} s={P(A('c8e')) * bump(eight)}><Text size={40}>by Sept 2026, Amazon had refunded</Text></G2>
-            <Stamp x={960} y={600} s={1.3 * P(A('c8e')) * bump(eight, 0.16)} text={f >= eight ? '$845M+' : '?'} color={C.green} size={90} />
-            <G2 x={960} y={950} o={lt(ex, 0.4)}><Text size={36} color={C.red}>that's how expensive a confusing cancel button gets</Text></G2>
+            <People x={550} y={640} s={0.9 * P(A('c8e'))} n={40} hot={40} lit={f >= eight ? 1 : 0} />
+            <Stamp x={1420} y={620} s={1.3 * P(A('c8e')) * bump(eight, 0.16)} text={f >= eight ? '$845M+' : '?'} color={C.green} size={80} />
+            <G2 x={960} y={990} o={lt(ex, 0.4)}><Text size={34} color={C.red}>that's how expensive a confusing cancel button gets</Text></G2>
           </Svg>
         </AbsoluteFill>
       ),
