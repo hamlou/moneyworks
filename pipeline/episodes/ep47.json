@@ -1,0 +1,113 @@
+{
+  "id": "ep47",
+  "title": "Why an Airport Sandwich Costs $18",
+  "sources": [
+    "Airports Council International - North America (ACI-NA), 2025 Concessions Benchmarking Survey for CY2024: median percentage rent for food & beverage concessions is 12.8% of gross sales; median for retail/duty-free/news/gift is 16.5% of gross sales; a minimum annual guarantee (MAG) plus percentage rent is used in more than 75% of North American airport concession agreements",
+    "Port Authority of New York and New Jersey, Street Pricing Regulation (2025) / Concessionaire Street Pricing Manual v4.0 (2025): JFK, LaGuardia and Newark cap food & beverage prices at the local 'street price' plus a markup, raised in 2025 from 10% to 15%, plus an additional 3% surcharge to help fund an employee benefits program",
+    "Reporting on airport 'street pricing' policies (2025), e.g. Business Insider / Points Guy / aviation press: most large U.S. airports have some form of 'street' or 'street-plus' pricing rule capping markups around 10-18% above street price, but enforcement is inconsistent; one cited example, a $14 chocolate bar at LaGuardia priced higher than at nearby stores, drew no correction from the Port Authority",
+    "Portland International Airport (PDX): official policy requires concessionaires to sell at the same price as their off-airport locations (no markup); PDX is reported to have concession spending per passenger above the national average",
+    "Letter from members of the U.S. Congress to the Federal Trade Commission (May 2025) asking the FTC to investigate concession pricing practices at airports and stadiums",
+    "History of airport security: before the TSA and the September 11, 2001 attacks, non-ticketed friends and family could walk past the checkpoint to the gate, so gate-area shops competed directly with stores outside; after 9/11, only ticketed passengers were allowed past security, turning gate-area retail into 'captive audience' retail (widely reported aviation history, e.g. HISTORY.com, NPR); large master-concession operators such as HMSHost (Avolta/Dufry group) and SSP America now hold long-term, multi-location contracts at many U.S. airport terminals",
+    "Transportation Security Administration (TSA), 3-1-1 liquids rule (current 2026): containers over 3.4 ounces (100 ml) of liquid, gel or aerosol are not allowed past the checkpoint and are discarded; empty bottles are allowed through and can be filled at a water fountain or bottle-filling station past security",
+    "San Diego County Regional Airport Authority, Concessions Operating Standards (Aug 2025), and industry white papers on airport concession costs: concessionaires must use an airport-mandated centralized receiving and distribution center for deliveries, pay for background checks and TSA badging for every employee and delivery driver, carry extra insurance and performance bonds, and lease terminal space at a higher cost per square foot than a typical street storefront",
+    "ep11 callback (Dave Explains Money): IATA, global airline net profit per passenger of roughly $7.90-$8 (2025-2026) - less than the cost of one airport sandwich",
+    "Illustrative math: $18 sandwich + $7 bottled water = $25 receipt; at a 12.8% median food & beverage rent, about $2.30 of the sandwich price alone goes to the airport as rent, before the shop's own costs"
+  ],
+  "beats": [
+    {"id": "o1", "text": "Dave is at the gate. He's hungry. He buys one sandwich.", "pause": 0.3},
+    {"id": "o2", "text": "Eighteen dollars. For a sandwich.", "pause": 0.3},
+    {"id": "o3", "text": "Then he grabs a bottle of water. Seven dollars. For water.", "pause": 0.3},
+    {"id": "o4", "text": "Twenty five dollars. And he still has to eat it standing up.", "pause": 0.3},
+    {"id": "o5", "text": "Dave could drive to that same sandwich shop back home and pay six dollars. Same bread. Same cheese. Same guy behind the counter, probably.", "pause": 0.3},
+    {"id": "o5b", "text": "So what happened in the last hundred feet?", "pause": 0.35},
+    {"id": "o6", "text": "Today: why you're a captive customer, how that even happened, who gets a cut of your sandwich, the pricing rule almost nobody enforces, and how to walk in with your own snacks.", "pause": 0.6},
+
+    {"id": "c1a", "chapter": "The Store You Can't Leave", "text": "Let's start with the real reason airport food costs more. It's not really about sandwiches.", "pause": 0.4},
+    {"id": "c1b", "text": "It's about the door behind you. Once you're through security, you can't just walk back out to find a cheaper place.", "pause": 0.5},
+    {"id": "c1c", "text": "Economists have a name for you in that moment. A captive customer.", "pause": 0.5},
+    {"id": "c1d", "text": "It's like being the only kid at a birthday party with a bouncy castle. You're not leaving to check if the neighbor's castle is cheaper.", "pause": 0.5},
+    {"id": "c1e", "text": "In May of twenty twenty five, members of Congress actually asked the Federal Trade Commission to look into prices at places just like this: airports, and stadiums. Captive customers, with nowhere else to go.", "pause": 0.5},
+    {"id": "c1f", "text": "Notice something else. Dave didn't even compare prices before buying. There was nothing to compare them to. One sandwich counter, one price.", "pause": 0.9},
+
+    {"id": "c2a", "chapter": "How This Became Normal", "text": "Here's the part almost nobody remembers. It didn't always work this way.", "pause": 0.4},
+    {"id": "c2b", "text": "Before September eleventh, two thousand one, even people without a ticket could walk you all the way to your gate.", "pause": 0.5},
+    {"id": "c2c", "text": "So the shops near the gate actually competed with stores outside. Same customers, same choices.", "pause": 0.5},
+    {"id": "c2d", "text": "After that day, security rules changed everywhere. Only ticketed passengers could pass the checkpoint.", "pause": 0.5},
+    {"id": "c2e", "text": "Overnight, every gate area became its own sealed little shopping mall, with one type of customer: someone who already can't leave.", "pause": 0.5},
+    {"id": "c2f", "text": "And today, a handful of giant companies run most of those shops under long contracts, sometimes ten years at a time, across dozens of airports at once.", "pause": 0.9},
+
+    {"id": "c3a", "chapter": "The Airport Takes a Cut of Your Sandwich", "text": "Here's the part most people never think about. The sandwich shop doesn't just pay rent like a normal store.", "pause": 0.4},
+    {"id": "c3b", "text": "It pays the airport a cut of every single sale. Industry surveys call this percentage rent.", "pause": 0.5},
+    {"id": "c3c", "text": "For food and drinks, the typical cut is about twelve point eight percent of every dollar rung up.", "pause": 0.5},
+    {"id": "c3d", "text": "For gift shops and duty free, it's even higher. About sixteen point five percent.", "pause": 0.5},
+    {"id": "c3e", "text": "So on Dave's eighteen dollar sandwich, something like two dollars and thirty cents goes straight to the airport. Before the shop even covers its own bread and cheese.", "pause": 0.5},
+    {"id": "c3f", "text": "It's like a landlord who doesn't just want the rent check. He wants a slice of every pizza you order too.", "pause": 0.9},
+
+    {"id": "c4a", "chapter": "The Rule Almost Nobody Enforces", "text": "Now, you'd think there's a law against this. There sort of is. It's called street pricing.", "pause": 0.4},
+    {"id": "c4b", "text": "The idea: airport prices should match the 'street', meaning a normal store outside, plus a small markup.", "pause": 0.5},
+    {"id": "c4c", "text": "At New York's three big airports, that cap used to be ten percent over street price. In twenty twenty five, it was raised to fifteen percent, plus another three percent surcharge for staff benefits.", "pause": 0.5},
+    {"id": "c4d", "text": "Sounds reasonable. But here's the catch: reporters have found the cap barely gets checked.", "pause": 0.5},
+    {"id": "c4e", "text": "One investigation found a chocolate bar selling for fourteen dollars at LaGuardia, more than at nearby stores outside. Nobody fixed the listing.", "pause": 0.5},
+    {"id": "c4f", "text": "Not every airport is like that. Portland's airport actually requires the exact same price as the shop's other locations. Zero markup. And it still brings in more concession spending per traveler than the national average.", "pause": 0.5},
+    {"id": "c4g", "text": "So the honest answer is: the rule exists. It's just often more of a suggestion.", "pause": 0.9},
+
+    {"id": "c5a", "chapter": "It's Not Only Greed", "text": "Most people think it's simply greed. A captive customer, so charge whatever. Not the whole story.", "pause": 0.4},
+    {"id": "c5b", "text": "Running a shop past security actually costs more too.", "pause": 0.5},
+    {"id": "c5c", "text": "Every worker needs a background check and a special badge, just to show up. So does every delivery driver.", "pause": 0.5},
+    {"id": "c5d", "text": "Deliveries can't just roll up to the back door. Many airports force trucks through one central, security-screened receiving center first.", "pause": 0.5},
+    {"id": "c5e", "text": "And the shop itself is tiny, in one of the most fought-over pieces of real estate on earth. Rent per square foot runs far above a normal strip mall.", "pause": 0.5},
+    {"id": "c5f", "text": "There's also a fourth pressure. Many contracts require a minimum guarantee to the airport, a fixed payment due every month no matter how slow business gets.", "pause": 0.5},
+    {"id": "c5g", "text": "Miss that number in a quiet month, and the shop can lose its lease entirely. So prices rarely go down. Only up.", "pause": 0.5},
+    {"id": "c5h", "text": "So the eighteen dollars is really four things stacked up: the airport's cut, these extra costs, that guaranteed minimum, and yes, some plain old captive-customer pricing on top.", "pause": 0.9},
+
+    {"id": "c6a", "chapter": "Your Water Bottle's Secret Trip", "text": "Now let's talk about the water. This one has a twist.", "pause": 0.4},
+    {"id": "c6b", "text": "T S A's rule is simple. Any liquid container over three point four ounces gets tossed at the checkpoint.", "pause": 0.5},
+    {"id": "c6c", "text": "So Dave's full water bottle from home? Straight into the trash bin, right in front of him.", "pause": 0.5},
+    {"id": "c6d", "text": "Then he walks twenty feet, and there's a shop selling him a new bottle of water. For seven dollars.", "pause": 0.5},
+    {"id": "c6e", "text": "It's not a conspiracy, it's just gravity. Take away everyone's water, and thirsty people are standing right next to a fridge full of it.", "pause": 0.5},
+    {"id": "c6f", "text": "The good news: an empty bottle sails right through the scanner. You just can't bring the water part.", "pause": 0.9},
+
+    {"id": "c7a", "chapter": "Less Than the Airline Makes", "text": "Remember our airlines video? We found out the airline itself made about eight dollars of profit from Dave's whole ticket.", "pause": 0.4},
+    {"id": "c7b", "text": "Eight dollars, for flying a person across the country.", "pause": 0.5},
+    {"id": "c7c", "text": "Dave's sandwich alone, just the sandwich, cost more than that.", "pause": 0.5},
+    {"id": "c7d", "text": "So don't blame the pilots. This chapter isn't even about the airline. It's about everything selling to you in the building around the gate.", "pause": 0.9},
+
+    {"id": "c8a", "chapter": "How to Beat the Price Tag", "text": "So how do you fight back? Remember, this is education, not advice.", "pause": 0.4},
+    {"id": "c8b", "text": "One. Bring an empty bottle through security, and fill it up at a water fountain on the other side. Zero dollars.", "pause": 0.5},
+    {"id": "c8c", "text": "Two. Pack food before you leave the house. A sandwich from your own kitchen doesn't pay anybody's percentage rent.", "pause": 0.5},
+    {"id": "c8d", "text": "Three. If you do have to buy something, check if your airport actually has a street pricing policy, and look for the sign, some post it right on the menu.", "pause": 0.5},
+    {"id": "c8e", "text": "Four. Eat a real meal before you get to the airport. A hungry traveler is the easiest sale in the building.", "pause": 0.5},
+    {"id": "c8f", "text": "Five. If a price feels wrong, take a photo, and ask the airport's customer service desk about it. That's exactly how reporters caught that chocolate bar in the first place.", "pause": 0.5},
+    {"id": "c8g", "text": "Six. Loyalty apps for airport lounges and credit cards sometimes include free snacks or drinks. If you already have one, actually use it.", "pause": 0.9},
+
+    {"id": "r1", "chapter": "Now You Know", "text": "So let's recap.", "pause": 0.4},
+    {"id": "r2", "text": "One. Past security, you're a captive customer, a setup that only really began after September eleventh, two thousand one.", "pause": 0.5},
+    {"id": "r3", "text": "Two. The airport takes a real cut of every sale, often twelve to sixteen percent, and a 'street pricing' rule that's supposed to cap markups is often poorly enforced.", "pause": 0.5},
+    {"id": "r4", "text": "Three. An empty bottle and some food from home can turn a twenty five dollar stop into a free one.", "pause": 0.6},
+    {"id": "r5", "text": "Next time, Dave's family is planning a funeral, and the bill somehow reaches ten thousand dollars. While they're still grieving.", "pause": 0.4},
+    {"id": "r6", "text": "Subscribe, so Dave can keep explaining money. It's free. Unlike literally everything at that gate.", "pause": 1.4}
+  ],
+  "youtube": {
+    "title": "Why an Airport Sandwich Costs $18 (You're a Captive Customer)",
+    "alt_titles": [
+      "Why Airport Food Is So Expensive (It's Not Just Greed)",
+      "Dave Paid $25 for a Sandwich and Water. Here's Why."
+    ],
+    "hook": "Why does a sandwich cost $18 at the airport? Dave paid $25 for lunch at the gate, and we found out exactly where that money goes.",
+    "tags": [
+      "why airport food is so expensive",
+      "airport sandwich price",
+      "airport concession fees explained",
+      "street pricing airports",
+      "why is airport food overpriced",
+      "TSA liquid rule explained",
+      "captive customer pricing",
+      "how to save money at the airport",
+      "airport travel tips",
+      "money explained simply",
+      "dave explains money"
+    ],
+    "hashtags": ["#travel", "#airport", "#money"],
+    "pinned": "Worst airport price YOU'VE ever paid? Drop the number below 👇"
+  }
+}
