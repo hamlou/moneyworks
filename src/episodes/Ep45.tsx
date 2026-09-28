@@ -74,7 +74,7 @@ export const Ep45: React.FC = () => {
     q(jan, 'ding', 0.5);
     q(signs, 'paper', 0.6);
     q(promises, 'stamp', 0.6);
-    q(every, 'sparkle', 0.4);
+    q(every, 'chime', 0.4);
     scene(0, () => (
       <AbsoluteFill>
         <Interior />
@@ -319,7 +319,7 @@ export const Ep45: React.FC = () => {
     q(january, 'flip', 0.5);
     q(twelve, 'cash', 0.6);
     q(signups, 'ding', 0.5);
-    q(newyou, 'sparkle', 0.5);
+    q(newyou, 'chime', 0.5);
     const checkins = w('c2c', 'checkins');
     const fifty = w('c2c', 'fifty');
     const dec = w('c2c', 'december');
@@ -330,7 +330,7 @@ export const Ep45: React.FC = () => {
     const excited = w('c2d', 'excited');
     const bob = w('c2d', 'bob');
     q(first, 'ding', 0.5);
-    q(excited, 'sparkle', 0.6);
+    q(excited, 'chime', 0.6);
     q(bob, 'pop2', 0.5);
     scene(A('c2a'), () =>
       f < A('c2c') ? (
@@ -554,7 +554,7 @@ export const Ep45: React.FC = () => {
     const future = w('c5c', 'futuredave');
     q(today, 'ding', 0.5);
     q(pizza, 'pop2', 0.5);
-    q(future, 'sparkle', 0.5);
+    q(future, 'chime', 0.5);
     scene(A('c5a'), () =>
       f < A('c5c') ? (
         <AbsoluteFill>

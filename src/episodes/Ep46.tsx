@@ -127,7 +127,7 @@ export const Ep46: React.FC = () => {
     const rent = w('o4', 'rent');
     const why = w('o5', 'why');
     const payment = w('o5', 'payment');
-    q(loves, 'sparkle', 0.4);
+    q(loves, 'chime', 0.4);
     q(rent, 'buzz', 0.7);
     q(why, 'ding', 0.5);
     q(payment, 'boing', 0.6);
