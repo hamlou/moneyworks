@@ -5,7 +5,7 @@ import {useT} from '../timing';
 import {ease, pop, shake} from '../anim';
 import {Stick, StickProps} from '../Stick';
 import {Board, ChapterCard, Captions, CHAPTER_FRAMES, Cue, Interior, Progress, SceneItem, Scenes, Sfx, Svg, Vignette, SubReminder, subCues} from '../fx';
-import {Bubble, SourceTag, Stamp, Text, XMark} from '../props';
+import {Bubble, Clock, SourceTag, Stamp, Text, XMark} from '../props';
 import {Frame, Icon, Row, SubButton, Bell} from '../props2';
 import {Receipt, Scale, PriceBoard} from '../props8';
 import {OfficeDesk, PriceFolder, Casket, Urn, BurialVault, PriceCompare, RuleCard, Flowers, TrustBox} from '../props48';
@@ -97,12 +97,13 @@ export const Ep48: React.FC = () => {
       <AbsoluteFill>
         <Board />
         <Svg>
-          <G2 x={960} y={140} s={P(A('o4')) * bump(pw)}><Text size={50}>{f >= pw ? 'a few hours of paperwork...' : 'how does this happen?'}</Text></G2>
-          <G2 x={960} y={250} o={lt(mm, 0.35)}><Text size={42} color={C.red}>...at the worst possible moment</Text></G2>
-          <Dave f={f} x={620} y={880} s={1.3} keys={[{at: 0, pose: 'relax', expr: 'sad', look: 0.6}]} />
-          <Flowers x={1000} y={840} s={1.6 * P(A('o4'))} />
-          <G2 x={1420} y={780} s={1.4 * P(A('o4')) * bump(gt, 0.08)}><Icon kind="heart" s={1.5} /></G2>
-          <G2 x={1420} y={960} o={lt(hd, 0.4)}><Text y={-24} size={34} color={GRAY}>this one is gentle.</Text><Text y={24} size={34} color={GRAY}>it's a hard topic.</Text></G2>
+          <G2 x={960} y={100} s={P(A('o4')) * bump(pw)}><Text size={50}>{f >= pw ? 'a few hours of paperwork...' : 'how does this happen?'}</Text></G2>
+          <G2 x={960} y={190} o={lt(mm, 0.35)}><Text size={40} color={C.red}>...at the worst possible moment</Text></G2>
+          <Clock x={960} y={430} s={1.05 * P(A('o4')) * bump(mm, 0.08)} f={f} />
+          <Dave f={f} x={480} y={880} s={1.6} keys={[{at: 0, pose: 'relax', expr: 'sad', look: 0.7}]} />
+          <Flowers x={960} y={870} s={2.1 * P(A('o4'))} />
+          <G2 x={1440} y={840} s={1.8 * P(A('o4')) * bump(gt, 0.08)}><Icon kind="heart" s={1.7} /></G2>
+          <G2 x={1440} y={1010} o={lt(hd, 0.4)}><Text y={-24} size={32} color={GRAY}>this one is gentle.</Text><Text y={22} size={32} color={GRAY}>it's a hard topic.</Text></G2>
         </Svg>
       </AbsoluteFill>
     ));
@@ -435,9 +436,11 @@ export const Ep48: React.FC = () => {
         <AbsoluteFill>
           <Board />
           <Svg>
-            <G2 x={960} y={110} s={P(A('c6d')) * bump(fl)}><Text size={46}>a complete flip from decades ago</Text></G2>
-            <PriceBoard x={960} y={620} s={0.95 * P(A('c6d')) * bump(sx3, 0.05)} title="2025" rows={[['Cremation', f >= sx3 ? '63.4%' : '?'], ['Burial', f >= bl2 ? '31.6%' : '?']]} hl={0} />
-            <G2 x={960} y={940} s={bump(e8, 0.1)} o={lt(e8, 0.4)}><Text size={38} color={C.green}>projected: 82% by 2045</Text></G2>
+            <G2 x={960} y={100} s={P(A('c6d')) * bump(fl)}><Text size={46}>a complete flip from decades ago</Text></G2>
+            <Urn x={280} y={640} s={1.3 * P(A('c6d')) * bump(sx3, 0.06)} />
+            <PriceBoard x={960} y={640} s={1.35 * P(A('c6d')) * bump(sx3, 0.05)} title="2025" rows={[['Cremation', f >= sx3 ? '63.4%' : '?'], ['Burial', f >= bl2 ? '31.6%' : '?']]} hl={0} />
+            <Casket x={1660} y={660} s={0.75 * P(A('c6d')) * bump(bl2, 0.06)} color="#5C3A22" />
+            <G2 x={960} y={990} s={1.1 * bump(e8, 0.1)} o={lt(e8, 0.4)}><Text size={44} color={C.green}>projected: 82% by 2045</Text></G2>
           </Svg>
         </AbsoluteFill>
       ),
