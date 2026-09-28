@@ -308,7 +308,7 @@ export const Ep47: React.FC = () => {
           <Svg>
             <G2 x={960} y={110} s={P(A('c3e')) * bump(e18)}><Text size={48}>Dave's $18 sandwich, split up</Text></G2>
             <Receipt x={620} y={560} s={1.05 * P(A('c3e'))} lines={[['sandwich', '$18.00'], ['airport rent', f >= tc ? '$2.30' : '?'], ['shop keeps', f >= tc ? '$15.70' : '?']]} total="" shown={f >= tc ? 3 : 1} />
-            <Owner f={f} x={1420} y={900} s={1} keys={[{at: 0, pose: 'hips', expr: 'smug', look: -0.8}, {at: pz, pose: 'present', expr: 'grin', look: -0.8}]} handItem={f >= pz ? <Text size={40}>🍕</Text> : undefined} />
+            <Owner f={f} x={1420} y={900} s={1} keys={[{at: 0, pose: 'hips', expr: 'smug', look: -0.8}, {at: pz, pose: 'present', expr: 'grin', look: -0.8}]} />
             <G2 x={1420} y={560} o={lt(pz, 0.4)}><Bubble text={'wants a slice of\nevery pizza too'} size={38} tail="down" /></G2>
           </Svg>
         </AbsoluteFill>
@@ -574,7 +574,7 @@ export const Ep47: React.FC = () => {
           {cur === 1 && <G2 x={1620} y={520} s={bump(em, 0.1)}><Bottle color={C.green} label="$0" /></G2>}
           {cur === 2 && <G2 x={1620} y={560} s={bump(pk, 0.1)}><DeliSandwich s={0.45} /></G2>}
           {cur === 3 && <G2 x={1620} y={520}><Icon kind="check" s={1.1} /><Text y={220} size={36} color={f >= sg ? C.green : GRAY}>street pricing sign</Text></G2>}
-          {cur === 4 && <G2 x={1620} y={560} s={bump(hg, 0.1)}><Text size={80}>🍽️</Text></G2>}
+          {cur === 4 && <G2 x={1620} y={560} s={bump(hg, 0.1)}><DeliSandwich s={0.5} /><Text y={220} size={34} color={C.green}>eat a real meal first</Text></G2>}
           {cur === 5 && <G2 x={1620} y={560} s={bump(ph, 0.1)}><Magnifier s={1} /></G2>}
           {cur >= 6 && <G2 x={1620} y={560} s={bump(lo, 0.1)}><Phone title="LOUNGE APP" value="FREE SNACK" color={C.green} /></G2>}
         </Svg>
