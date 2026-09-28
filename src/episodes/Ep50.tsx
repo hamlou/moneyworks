@@ -219,7 +219,7 @@ export const Ep50: React.FC = () => {
 
   // ============ CH2: the $34,200 number ============
   {
-    const kn = w('c2b', 'knot');
+    const kn = w('c2b', 'knots');
     q(kn, 'paper', 0.5);
     const cr2 = w('c2c', 'car');
     q(cr2, 'pop', 0.4);
@@ -353,6 +353,50 @@ export const Ep50: React.FC = () => {
             <Partner f={f} x={620} y={900} s={1.05} keys={[{at: 0, pose: 'shrug', expr: 'worried', look: 0.6}]} />
             <Dave f={f} x={1300} y={900} s={1.05} keys={[{at: 0, pose: 'idle', expr: 'neutral', look: -0.6}, {at: tw2, pose: 'thumbs', expr: 'happy', look: -0.6}]} />
             <G2 x={960} y={480} s={bump(tw2, 0.1)} o={lt(tw2, 0.4)}><Text size={40} color={C.green}>cut 20 guests → everything shrinks</Text></G2>
+          </Svg>
+        </AbsoluteFill>
+      ),
+    );
+  }
+
+  // ============ CHg: location, location, location ============
+  {
+    const na = w('cga', 'average');
+    q(na, 'pop', 0.5);
+    const mh = w('cgb', 'manhattan');
+    const sv = w('cgb', 'seventy');
+    q(mh, 'ding', 0.5);
+    q(sv, 'cash', 0.7);
+    const wy = w('cgc', 'wyoming');
+    const sn = w('cgc', 'seventeen');
+    q(wy, 'ding', 0.5);
+    q(sn, 'cash', 0.6);
+    const zp = w('cgd', 'zip');
+    q(zp, 'stamp', 0.6);
+    const pz = w('cge', 'pizza');
+    q(pz, 'boing', 0.4);
+    scene(A('cga'), () =>
+      f < A('cgd') ? (
+        <AbsoluteFill>
+          <Board />
+          <Svg>
+            <G2 x={960} y={110} s={P(A('cga')) * bump(na)}><Text size={44}>$34,200 is just the NATIONAL average</Text></G2>
+            <Dave f={f} x={960} y={900} s={1.1} keys={[{at: 0, pose: 'shrug', expr: 'think', look: 0}]} />
+            <Bar x={560} y={780} s={1.2 * P(A('cga')) * bump(mh, 0.1)} h={f >= sv ? 420 : 60} color={C.red} label="MANHATTAN" value={f >= sv ? '~$77,000' : '?'} />
+            <Bar x={1360} y={780} s={1.2 * P(A('cga')) * bump(wy, 0.1)} h={f >= sn ? 90 : 60} color={C.green} label="WYOMING" value={f >= sn ? '~$17,000' : '?'} />
+          </Svg>
+        </AbsoluteFill>
+      ) : (
+        <AbsoluteFill>
+          <Board />
+          <Svg>
+            <G2 x={960} y={120} s={P(A('cgd')) * bump(zp)}><Text size={44}>same rings. same vows. same cake.</Text></G2>
+            <RingPair x={640} y={560} s={1.2 * P(A('cgd'))} />
+            <PriceCake x={1280} y={620} s={0.9 * P(A('cgd')) * bump(pz, 0.08)} price="" />
+            <Box x={960} y={940} w={1200} h={190} s={P(A('cgd')) * bump(zp, 0.1)} o={lt(zp, 0.4)} fill={f >= zp ? C.yellow : '#fff'}>
+              <Text y={-30} size={32} color={GRAY}>the zip code alone can swing the bill</Text>
+              <Text y={30} size={40} color={C.red}>{f >= zp ? 'by $60,000 or more' : ''}</Text>
+            </Box>
           </Svg>
         </AbsoluteFill>
       ),
@@ -554,7 +598,7 @@ export const Ep50: React.FC = () => {
     );
   }
 
-  const SUB = we('c2b', 'knot') + 30;
+  const SUB = we('c2b', 'knots') + 30;
   subCues(SUB).forEach((c) => cues.push(c));
   return (
     <AbsoluteFill>
