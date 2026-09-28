@@ -1,0 +1,118 @@
+{
+  "id": "ep45",
+  "title": "Why Gym Memberships Are Designed for You to Quit",
+  "sources": [
+    "Planet Fitness, Inc., Form 10-K for fiscal year 2025 (SEC EDGAR, filed 2026): approximately 20.8 million members and 2,896 clubs at year-end 2025 (~7,200 members/club, derived: 20.8M ÷ 2,896); Classic Card $15/month, PF Black Card $24.99/month (rising to $29.99 after 2026 peak join season), $49 standard annual fee",
+    "DellaVigna & Malmendier, 'Paying Not to Go to the Gym', American Economic Review 96(3), 2006: 7,752 members across 3 U.S. health clubs over 3 years; monthly-contract members averaged ~4.3 visits/month, a real cost of $17+ per visit vs. a $10 per-visit pass; ~80% of monthly members would have saved money on a pay-per-visit contract, forgoing average savings of $600-700/year",
+    "Industry survey compilations (Health & Fitness Association-sourced data via Gymdesk/Glofox/smarthealthclubs.com, 2025-2026, soft/secondary source): ~67% of gym members rarely or never use their membership; Americans waste an estimated $1.3 billion/year on unused memberships; ~66% annual retention (roughly 1 in 3 members cancel yearly); about half of new members quit within 6 months",
+    "Strava year-end data / 'Quitter's Day': analysis of 30M+ global January activities identifies the second Friday of January (Jan 9, 2026) as the day resolution activity drops sharply; ~80% of resolutions abandoned by that point",
+    "Gym industry survey compilations (GymMaster/Glofox, 2025-2026): ~12% of a year's gym sign-ups happen in January; check-ins rise ~30-50% in the first two weeks of January vs. December",
+    "LA Fitness membership agreement / cancellation policy (company FAQ, lafitnessmembership.com): written cancellation required, 30 days' notice, mailed (certified mail recommended) to a PO box, or in person",
+    "Planet Fitness cancellation policy (company FAQ): cancel in person at home club or by mail; request must arrive several business days before the billing date or another month is billed",
+    "FTC, 'Negative Option Rule' ('click-to-cancel'): finalized Oct 2024, was to take effect July 14, 2025; the Eighth Circuit vacated it July 8, 2025 for a procedural (Reg Flex Act) violation; FTC submitted a draft ANPRM to OIRA Jan 30, 2026 to restart rulemaking (not yet law as of this video); state auto-renewal laws (e.g. CA, NY, MN) separately require easy cancellation",
+    "ClassPass pricing pages (2026): pay-per-class/credit membership model, plans roughly $19-$249/month by city and credit count, no long-term contract required"
+  ],
+  "beats": [
+    {"id": "o1", "text": "It's January first. Dave signs a gym contract. He promises himself: every single day.", "pause": 0.3},
+    {"id": "o2", "text": "March. Dave has been three times. The gym doesn't call. The gym doesn't care.", "pause": 0.3},
+    {"id": "o3", "text": "Now look at this. Dave is still paying, every single month, for a gym he never visits.", "pause": 0.3},
+    {"id": "o4", "text": "Turns out, that's not an accident. It's the plan.", "pause": 0.35},
+    {"id": "o5", "text": "Gyms sell more memberships than they have room for, and they're betting you'll quit showing up.", "pause": 0.35},
+    {"id": "o6", "text": "Today: the business model, the study that proved it, and how to beat it.", "pause": 0.6},
+
+    {"id": "c1a", "chapter": "The Oversell Machine", "text": "Here's the business Dave actually signed up for.", "pause": 0.4},
+    {"id": "c1b", "text": "Planet Fitness, the biggest chain in America, had about twenty point eight million members at the end of twenty twenty five. Spread across two thousand, eight hundred ninety six clubs.", "pause": 0.5},
+    {"id": "c1c", "text": "Do the math. That's about seven thousand, two hundred members for every single club.", "pause": 0.5},
+    {"id": "c1d", "text": "A normal gym floor fits maybe two or three hundred people at once. Not seven thousand.", "pause": 0.5},
+    {"id": "c1e", "text": "So how does that work? Simple. The gym is betting that almost nobody shows up at the same time. Most months, most members show up zero times.", "pause": 0.5},
+    {"id": "c1f", "text": "It's the same trick as an airline overbooking a flight. Sell more seats than you have, and bet that some people won't show.", "pause": 0.5},
+    {"id": "c1g", "text": "The low monthly price is the whole point. It gets you in the door for less than a coffee habit, and keeps you enrolled longer than a pricier gym would.", "pause": 0.9},
+
+    {"id": "c2a", "chapter": "January: The Big Bet", "text": "So when does the gym place that bet? January.", "pause": 0.4},
+    {"id": "c2b", "text": "About twelve percent of the whole year's new sign ups happen in January alone. New Year, new you.", "pause": 0.5},
+    {"id": "c2c", "text": "Check-ins jump thirty to fifty percent in the first two weeks of January, compared to December.", "pause": 0.5},
+    {"id": "c2d", "text": "Dave signs up on January first. He's excited. He tells his neighbor Bob he's a changed man.", "pause": 0.5},
+    {"id": "c2e", "text": "The gym prints his member card. And they already know, statistically, most of these new members won't last.", "pause": 0.5},
+    {"id": "c2f", "text": "They're not guessing. They've seen this exact movie every January for years.", "pause": 0.9},
+
+    {"id": "c3a", "chapter": "Quitter's Day", "text": "There's even a date for when it all falls apart.", "pause": 0.4},
+    {"id": "c3b", "text": "The fitness app Strava studied over thirty million January workouts, and found the exact day motivation collapses.", "pause": 0.5},
+    {"id": "c3c", "text": "They call it Quitter's Day. The second Friday of January. This year, that's January ninth.", "pause": 0.5},
+    {"id": "c3d", "text": "By Quitter's Day, Strava found about eighty percent of resolutions are already abandoned.", "pause": 0.5},
+    {"id": "c3e", "text": "And it doesn't stop at January. Industry surveys say about sixty seven percent of gym members rarely, or never, use their membership at all.", "pause": 0.5},
+    {"id": "c3f", "text": "Add it up, and Americans waste an estimated one point three billion dollars a year, on memberships they don't use.", "pause": 0.5},
+    {"id": "c3g", "text": "That's not pocket change. That's one point three billion dollars a year, just evaporating on unused memberships.", "pause": 0.9},
+
+    {"id": "c4a", "chapter": "The Gym Study", "text": "This isn't just a vibe. Two economists actually proved it.", "pause": 0.4},
+    {"id": "c4b", "text": "In two thousand six, Stefano DellaVigna and Ulrike Malmendier studied seven thousand, seven hundred fifty two real gym members, over three years.", "pause": 0.5},
+    {"id": "c4c", "text": "People on the monthly plan went to the gym about four times a month. But they paid like they were going way more.", "pause": 0.5},
+    {"id": "c4d", "text": "Their real cost per visit worked out to over seventeen dollars. The same gym sold a ten visit pass for ten dollars a visit.", "pause": 0.5},
+    {"id": "c4e", "text": "About eighty percent of monthly members would have saved money on the pay per visit option. On average, about six hundred to seven hundred dollars a year.", "pause": 0.5},
+    {"id": "c4f", "text": "They paid extra, for the right to feel guilty about not going.", "pause": 0.9},
+
+    {"id": "c5a", "chapter": "Why Smart People Do This", "text": "Most people think this only happens to lazy people. Nope.", "pause": 0.4},
+    {"id": "c5b", "text": "It happens to smart, disciplined people too. Economists have a name for it: present bias.", "pause": 0.5},
+    {"id": "c5c", "text": "Today-Dave is tired and just wants pizza. But contract-signing-Dave, planning for the future, is sure future-Dave will go every day.", "pause": 0.5},
+    {"id": "c5d", "text": "So Dave bets on his best possible self. And the gym is happy to take that bet, because they've seen the odds.", "pause": 0.5},
+    {"id": "c5e", "text": "It's the same reason people buy treadmills that become laundry racks. We're bad at predicting our own future effort.", "pause": 0.5},
+    {"id": "c5f", "text": "There's a second reason too. The monthly fee is small, often under twenty dollars. Small enough that most people don't bother fighting to cancel something that barely dents their budget.", "pause": 0.9},
+
+    {"id": "c6a", "chapter": "The Exit Maze", "text": "Fine, Dave thinks in April. Time to cancel.", "pause": 0.4},
+    {"id": "c6b", "text": "That's when he learns something interesting. Signing up took two minutes on an app. Cancelling does not.", "pause": 0.5},
+    {"id": "c6c", "text": "Big chains like L A Fitness often require a written cancellation letter, thirty days notice, sent by mail. Certified mail, so there's proof.", "pause": 0.5},
+    {"id": "c6d", "text": "Planet Fitness lets you cancel in person at your home club, or by mail. Show up on the wrong day, and you get billed again.", "pause": 0.5},
+    {"id": "c6e", "text": "Compare that to signing up. No letter, no post office, no thirty day wait. Just a click.", "pause": 0.5},
+    {"id": "c6f", "text": "Compare that to Netflix. Two taps, and you're out. No stamps, no thirty day countdown.", "pause": 0.9},
+
+    {"id": "c7a", "chapter": "Click to Cancel... Or Not", "text": "The government actually tried to fix this.", "pause": 0.4},
+    {"id": "c7b", "text": "In twenty twenty four, the F T C finalized a rule nicknamed click to cancel. If you can sign up online, you must be able to cancel online, just as easily.", "pause": 0.5},
+    {"id": "c7c", "text": "It was supposed to start July twenty twenty five. Days before it did, a federal appeals court threw it out, on a technicality about how the rule was written.", "pause": 0.5},
+    {"id": "c7d", "text": "In January twenty twenty six, the F T C started over, drafting a new version. It's not law yet.", "pause": 0.5},
+    {"id": "c7e", "text": "The good news: states like California, New York, and Minnesota already have their own laws requiring easy cancellation. Should there be a national one? That's a political question. Now you know where it stands.", "pause": 0.9},
+
+    {"id": "c8a", "chapter": "Who Profits?", "text": "So who wins when Dave pays and doesn't show up?", "pause": 0.4},
+    {"id": "c8b", "text": "The gym does, obviously. An empty treadmill costs nothing extra to keep running. A missed workout is pure profit.", "pause": 0.5},
+    {"id": "c8c", "text": "To be fair, gyms also need the no-shows. If every single member showed up at once, the whole business would collapse, and even the people who DO go couldn't fit.", "pause": 0.5},
+    {"id": "c8d", "text": "So in a weird way, Dave not going is what keeps the gym cheap enough for everyone, including the people who go every day.", "pause": 0.5},
+    {"id": "c8e", "text": "That doesn't make the cancellation maze okay. It just explains why the business is built this way.", "pause": 0.9},
+
+    {"id": "c9a", "chapter": "How to Not Get Trapped", "text": "So how do you win this game? Remember, this is education, not advice.", "pause": 0.4},
+    {"id": "c9b", "text": "One. Before you sign anything, ask honestly: will I actually go three times a week? Not hopeful-you. Actual you, based on last year.", "pause": 0.5},
+    {"id": "c9c", "text": "Two. If you're not sure, try pay per visit apps first, like ClassPass style credit systems. No long contract, no certified mail required to leave.", "pause": 0.5},
+    {"id": "c9d", "text": "Three. Pick month to month over an annual contract, even if it costs a few dollars more. You're paying for the exit door.", "pause": 0.5},
+    {"id": "c9e", "text": "Four. Put your gym days on your calendar like a meeting with your boss. People skip workouts. People don't skip meetings.", "pause": 0.5},
+    {"id": "c9f", "text": "Five. If you do cancel, use certified mail or go in person, and keep the receipt. Assume they might bill you again by mistake.", "pause": 0.5},
+    {"id": "c9g", "text": "Six. Check your bank statement once a year for every subscription still charging you, gym included. It's an easy fifteen minutes that can save real money.", "pause": 0.5},
+    {"id": "c9h", "text": "Seven. If a gym asks for certified mail, send it registered too, and screenshot the tracking page. Paper trails win arguments.", "pause": 0.9},
+
+    {"id": "r1", "chapter": "Now You Know", "text": "So let's recap.", "pause": 0.4},
+    {"id": "r2", "text": "One. Gyms sell more memberships than they have room for, betting that most people quit showing up.", "pause": 0.5},
+    {"id": "r3", "text": "Two. A famous study found most monthly members would save money paying per visit instead.", "pause": 0.5},
+    {"id": "r4", "text": "Three. Cancelling is built to be harder than signing up, so pick month to month, and test yourself honestly first.", "pause": 0.6},
+    {"id": "r5", "text": "Next time, Dave's dog needs surgery, and the bill nearly knocks him over. We'll find out why.", "pause": 0.4},
+    {"id": "r6", "text": "Subscribe, so Dave can keep explaining money. It's free. Way easier to cancel than a gym membership. We checked.", "pause": 1.4}
+  ],
+  "youtube": {
+    "title": "Why Gym Memberships Are Designed for You to Quit",
+    "alt_titles": [
+      "The Gym Business Model: Why They Want You to Quit",
+      "Why Cancelling a Gym Is Harder Than Joining One"
+    ],
+    "hook": "A famous study found most gym members would save money paying per visit. So why do gyms want you to sign a contract and never show up?",
+    "tags": [
+      "why gym memberships are designed for you to quit",
+      "gym membership scam",
+      "paying not to go to the gym",
+      "how to cancel gym membership",
+      "planet fitness business model",
+      "gym cancellation policy",
+      "click to cancel rule",
+      "classpass vs gym membership",
+      "new year resolution gym statistics",
+      "money explained simply",
+      "dave explains money"
+    ],
+    "hashtags": ["#gym", "#personalfinance", "#money"],
+    "pinned": "Do you still pay for a gym you don't go to? YES or NO below 👇"
+  }
+}
