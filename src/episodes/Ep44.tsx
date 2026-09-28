@@ -102,14 +102,14 @@ export const Ep44: React.FC = () => {
       <AbsoluteFill>
         <Board />
         <Svg>
-          <Dave f={f} x={620} y={880} s={1.15} keys={[{at: 0, pose: 'think', expr: 'worried', look: 0.8}, {at: st, pose: 'shock', expr: 'shock'}]} sweat={f >= st} />
-          <G2 x={620} y={480} s={P(A('o3')) * bump(brn, 0.12)} o={lt(brn, 0.4)}>
-            <rect x={-160} y={-100} width={320} height={200} rx={18} fill="#fff" stroke={C.ink} strokeWidth={5} />
-            <Text y={-40} size={28} color={GRAY}>DAVE'S BRAIN</Text>
-            <Text y={30} size={54} color={f >= st ? C.red : GRAY}>{f >= st ? '3 mo. pay = $$$' : '?'}</Text>
+          <Dave f={f} x={620} y={880} s={1.3} keys={[{at: 0, pose: 'think', expr: 'worried', look: 0.8}, {at: st, pose: 'shock', expr: 'shock'}]} sweat={f >= st} />
+          <G2 x={620} y={480} s={1.2 * P(A('o3')) * bump(brn, 0.12)} o={lt(brn, 0.6)}>
+            <rect x={-180} y={-110} width={360} height={220} rx={18} fill="#fff" stroke={C.ink} strokeWidth={6} />
+            <Text y={-46} size={28} color={GRAY}>DAVE'S BRAIN</Text>
+            <Text y={34} size={54} color={f >= st ? C.red : GRAY}>{f >= st ? '3 mo. pay = $$$' : '?'}</Text>
           </G2>
-          <G2 x={1360} y={620} s={1.1 * P(A('o3')) * bump(rk, 0.1)}><Diamond glow={f >= rk ? 0.3 : 0} /></G2>
-          <G2 x={1360} y={860} o={lt(sl, 0.4)}><Text size={34} color={f >= sl ? C.red : GRAY}>{f >= sl ? 'never sold. just worn.' : 'a rock. on a ring.'}</Text></G2>
+          <G2 x={1360} y={640} s={1.6 * P(A('o3')) * bump(rk, 0.1)}><Diamond glow={f >= rk ? 0.3 : 0} /></G2>
+          <Box x={1360} y={900} w={520} h={110} o={lt(sl, 0.5)}><Text size={34} color={f >= sl ? C.red : GRAY}>{f >= sl ? 'never sold. just worn.' : 'a rock. on a ring.'}</Text></Box>
           {f >= sl && <XMark x={1520} y={760} s={0.5 * pop(f, sl)} />}
         </Svg>
       </AbsoluteFill>
@@ -181,10 +181,10 @@ export const Ep44: React.FC = () => {
       <AbsoluteFill>
         <Board />
         <Svg>
-          <G2 x={960} y={110} s={P(A('c1c'))}><Text size={44}>the salary number kept climbing</Text></G2>
-          <SalaryStack x={620} y={880} s={P(A('c1c')) * bump(on, 0.1)} months={f >= on ? 1 : 0} label="1930s: 1 month" />
+          <Box x={960} y={110} w={900} h={130}><Text size={44}>the salary number kept climbing</Text></Box>
+          <SalaryStack x={620} y={880} s={1.1 * P(A('c1c')) * bump(on, 0.1)} months={1} label="1930s: 1 month" />
           <Arrow d="M 850 780 L 1150 780" t={f >= tw ? 1 : 0.2} />
-          <SalaryStack x={1360} y={880} s={P(A('c1c')) * bump(tw, 0.1)} months={f >= tw ? 2 : 0} label="1980s: 2 months" color={C.red} />
+          <SalaryStack x={1360} y={880} s={1.1 * P(A('c1c')) * bump(tw, 0.12)} months={f >= tw ? 2 : 1} label="1980s: 2 months" color={f >= tw ? C.red : C.gray} />
         </Svg>
       </AbsoluteFill>
     ));
@@ -200,8 +200,9 @@ export const Ep44: React.FC = () => {
       <AbsoluteFill>
         <Board />
         <Svg>
-          <Flag kind="jp" x={620} y={620} s={1 * P(A('c1d')) * bump(jp, 0.1)} />
-          <SalaryStack x={1300} y={880} s={P(A('c1d')) * bump(th, 0.1)} months={f >= th ? 3 : 0} label="Japan: 3 months" color={C.navy} />
+          <Box x={960} y={110} w={1000} h={120}><Text size={40}>and in Japan? De Beers went further</Text></Box>
+          <Flag kind="jp" x={620} y={640} s={1.1 * P(A('c1d')) * bump(jp, 0.1)} />
+          <SalaryStack x={1300} y={880} s={1.1 * P(A('c1d')) * bump(th, 0.12)} months={f >= th ? 3 : 1} label="Japan: 3 months" color={f >= th ? C.navy : C.gray} />
           <G2 x={620} y={900} o={lt(bar, 0.4)}><Text size={32} color={GRAY}>where rings barely existed before</Text></G2>
         </Svg>
       </AbsoluteFill>
@@ -237,9 +238,9 @@ export const Ep44: React.FC = () => {
         <Board />
         <OldFilm f={f} o={f >= A('c2b') ? 0.5 : 0} />
         <Svg>
-          <G2 x={960} y={130} s={P(A('c2a'))}><Text size={46}>how do you invent a "tradition"?</Text></G2>
-          <Dave f={f} x={960} y={640} s={1.2 * P(A('c2a')) * bump(dec, 0.06)} keys={[{at: 0, pose: 'pockets', expr: 'sad'}]} />
-          <G2 x={960} y={940} o={lt(brd, 0.4)}><Text size={36} color={GRAY}>{f >= dec ? 'the Great Depression: diamond sales crash' : 'rewind to the 1940s...'}</Text></G2>
+          <Box x={960} y={130} w={1000} h={130}><Text size={46}>how do you invent a "tradition"?</Text></Box>
+          <Dave f={f} x={960} y={660} s={1.5 * P(A('c2a')) * bump(dec, 0.06)} keys={[{at: 0, pose: 'pockets', expr: 'sad'}]} />
+          <Box x={960} y={940} w={1100} h={110}><Text size={36} color={GRAY}>{f >= dec ? 'the Great Depression: diamond sales crash' : 'rewind to the 1940s...'}</Text></Box>
         </Svg>
       </AbsoluteFill>
     ));
@@ -273,11 +274,11 @@ export const Ep44: React.FC = () => {
         <AbsoluteFill>
           <Board />
           <Svg>
-            <G2 x={960} y={140} s={P(A('c2d')) * bump(res, 0.1)}><Text size={42} color={f >= res ? C.red : GRAY}>{f >= res ? 'so you never resell it' : 'the idea was brilliant...'}</Text></G2>
+            <Box x={960} y={140} w={950} h={120}><Text size={42} color={f >= res ? C.red : GRAY}>{f >= res ? 'so you never resell it' : 'the idea was brilliant...'}</Text></Box>
             {[0, 1, 2].map((i) => (
-              <G2 key={i} x={480 + i * 500} y={640} s={P(A('c2d')) * bump(gen, 0.08)} o={f >= gen ? 1 : 0.4}>
+              <G2 key={i} x={370 + i * 590} y={660} s={1.5 * P(A('c2d')) * bump(gen, 0.08)} o={f >= gen ? 1 : 0.6}>
                 <Ring glow={0} />
-                <Text y={140} size={30}>generation {i + 1}</Text>
+                <Text y={160} size={30}>generation {i + 1}</Text>
               </G2>
             ))}
           </Svg>
@@ -286,9 +287,9 @@ export const Ep44: React.FC = () => {
         <AbsoluteFill>
           <Board />
           <Svg>
-            <G2 x={960} y={130} s={P(A('c2e'))}><Text size={44}>a slogan changed a whole country</Text></G2>
-            <Bar x={620} y={880} s={1.1 * P(A('c2e')) * bump(brd, 0.1)} h={f >= brd ? 110 : 20} color={C.gray} label="1939" value="10%" />
-            <Bar x={1300} y={880} s={1.1 * P(A('c2e')) * bump(eightTen, 0.1)} h={f >= eightTen ? 460 : 20} color={C.green} label="1990" value="80%" />
+            <Box x={960} y={130} w={950} h={120}><Text size={44}>a slogan changed a whole country</Text></Box>
+            <Bar x={620} y={880} s={1.1 * P(A('c2e')) * bump(brd, 0.1)} h={f >= brd ? 110 : 90} color={C.gray} label="1939" value="10%" />
+            <Bar x={1300} y={880} s={1.1 * P(A('c2e')) * bump(eightTen, 0.1)} h={f >= eightTen ? 460 : 90} color={C.green} label="1990" value="80%" />
           </Svg>
         </AbsoluteFill>
       ),
@@ -303,8 +304,8 @@ export const Ep44: React.FC = () => {
       <AbsoluteFill>
         <Board />
         <Svg>
-          <G2 x={960} y={140} s={P(A('c3a')) * bump(wth, 0.1)}><Text size={50}>what's a diamond actually worth?</Text></G2>
-          <G2 x={960} y={620} s={1.2 * P(A('c3a'))}><Diamond /></G2>
+          <Box x={960} y={140} w={1000} h={130}><Text size={50}>what's a diamond actually worth?</Text></Box>
+          <G2 x={960} y={640} s={1.8 * P(A('c3a')) * bump(wth, 0.06)}><Diamond /></G2>
         </Svg>
       </AbsoluteFill>
     ));
@@ -323,8 +324,9 @@ export const Ep44: React.FC = () => {
         <AbsoluteFill>
           <Board />
           <Svg>
+            <Box x={960} y={130} w={950} h={120}><Text size={42}>jewelry stores mark diamonds way up</Text></Box>
             <Bar x={620} y={880} s={1.2 * P(A('c3b'))} h={200} color={C.blue} label="wholesale" value="$" />
-            <Arrow d="M 800 700 L 1100 700" t={f >= fifty ? 1 : 0.2} />
+            <Arrow d="M 800 750 L 1100 750" t={f >= fifty ? 1 : 0.2} />
             <Bar x={1360} y={880} s={1.2 * P(A('c3b')) * bump(two, 0.1)} h={f >= two ? 560 : 200} color={C.red} label="retail markup" value={f >= two ? '+50–200%' : '?'} />
           </Svg>
         </AbsoluteFill>
@@ -357,8 +359,8 @@ export const Ep44: React.FC = () => {
         <AbsoluteFill>
           <Board />
           <Svg>
-            <G2 x={960} y={130} s={P(A('c3d')) * bump(loss, 0.1)}><Text size={44} color={f >= loss ? C.red : GRAY}>{f >= loss ? 'an instant loss' : 'try to resell it tomorrow...'}</Text></G2>
-            <ResaleTag x={960} y={620} s={1.15 * P(A('c3d')) * bump(half, 0.08)} paid="$4,600" get={f >= half ? '~$2,000' : '?'} />
+            <Box x={960} y={130} w={950} h={120}><Text size={44} color={f >= loss ? C.red : GRAY}>{f >= loss ? 'an instant loss' : 'try to resell it tomorrow...'}</Text></Box>
+            <ResaleTag x={960} y={640} s={1.4 * P(A('c3d')) * bump(half, 0.08)} paid="$4,600" get={f >= half ? '~$2,000' : '?'} />
           </Svg>
         </AbsoluteFill>
       ) : (
@@ -416,18 +418,19 @@ export const Ep44: React.FC = () => {
         <AbsoluteFill>
           <Board />
           <Svg>
-            <G2 x={960} y={140} s={P(A('c4b'))}><Text size={40}>same carbon. same crystal structure.</Text></G2>
-            <Diamond x={700} y={620} s={1.1} />
-            <Diamond x={1220} y={620} s={1.1} color="#D7F5E3" />
-            <Magnifier x={960} y={640} s={0.9 * P(A('c4b')) * bump(eq, 0.1)} />
-            <G2 x={960} y={920} o={lt(eq, 0.4)}><Text size={32} color={GRAY}>gemologists need special equipment to tell them apart</Text></G2>
+            <Box x={960} y={140} w={950} h={120}><Text size={40}>same carbon. same crystal structure.</Text></Box>
+            <Diamond x={680} y={640} s={1.5} />
+            <Diamond x={1240} y={640} s={1.5} color="#D7F5E3" />
+            <Magnifier x={960} y={660} s={1.2 * P(A('c4b')) * bump(eq, 0.1)} />
+            <Box x={960} y={940} w={1200} h={110}><Text size={32} color={GRAY}>gemologists need special equipment to tell them apart</Text></Box>
           </Svg>
         </AbsoluteFill>
       ) : (
         <AbsoluteFill>
           <Board />
           <Svg>
-            <PriceSlash x={960} y={620} s={1.2 * P(A('c4c')) * bump(th, 0.08)} from="$4,600" to="< $1,000" label="1 carat, high quality" hit={f >= th ? 1 : 0} />
+            <Box x={960} y={130} w={900} h={120}><Text size={40} color={C.red}>the price gap is enormous</Text></Box>
+            <PriceSlash x={960} y={650} s={1.5 * P(A('c4c')) * bump(th, 0.08)} from="$4,600" to="< $1,000" label="1 carat, high quality" hit={f >= th ? 1 : 0} />
             <SourceTag f={f} at={th} text="Industry price trackers, 2025-2026 (e.g. Washington Diamond, idyl, MadisonDia)" />
           </Svg>
         </AbsoluteFill>
@@ -446,8 +449,10 @@ export const Ep44: React.FC = () => {
         <AbsoluteFill>
           <Board />
           <Svg>
+            <G2 x={700} y={620} s={1.3 * P(A('c4d'))}><Diamond color="#D7F5E3" /></G2>
+            <G2 x={1240} y={620} s={1.1 * P(A('c4d'))}><Diamond color="#CFEFFF" /></G2>
             <Stamp x={960} y={560} s={pop(f, pct)} text="75–90% LESS" size={70} color={C.green} r={-4} />
-            <G2 x={960} y={780} o={lt(pct, 0.4)}><Text size={36} color={GRAY}>for a stone a machine has to tell apart</Text></G2>
+            <Box x={960} y={860} w={1050} h={110}><Text size={36} color={GRAY}>for a stone a machine has to tell apart</Text></Box>
           </Svg>
         </AbsoluteFill>
       ) : (
@@ -471,10 +476,10 @@ export const Ep44: React.FC = () => {
       <AbsoluteFill>
         <Board />
         <Svg>
-          <G2 x={620} y={130} s={P(A('c4f'))}><Text size={40}>fallen ~74% since 2020</Text></G2>
-          <Bar x={620} y={900} s={1.1 * P(A('c4f')) * bump(svt, 0.1)} h={f >= svt ? 500 : 130} color={C.red} label="2020" value="then" />
-          <Bar x={1000} y={900} s={1.1 * P(A('c4f')) * bump(svt, 0.1)} h={f >= svt ? 130 : 130} color={C.green} label="2025" value="now" />
-          <G2 x={1400} y={700} s={P(A('c4f')) * bump(rst, 0.1)} o={lt(rst, 0.4)}><Text size={36} color={GRAY}>{f >= rst ? 'a market resetting,\nnot a sale' : ''}</Text></G2>
+          <Box x={620} y={130} w={800} h={120}><Text size={40}>fallen ~74% since 2020</Text></Box>
+          <Bar x={620} y={900} s={1.2 * P(A('c4f')) * bump(svt, 0.1)} h={500} color={f >= svt ? C.red : C.gray} label="2020" value="then" />
+          <Bar x={1000} y={900} s={1.2 * P(A('c4f')) * bump(svt, 0.14)} h={130} color={f >= svt ? C.green : C.gray} label="2025" value="now" />
+          <Box x={1420} y={700} w={560} h={200} o={lt(rst, 0.4)}><Text size={36} color={GRAY}>{f >= rst ? 'a market resetting,\nnot a sale' : 'still falling...'}</Text></Box>
         </Svg>
       </AbsoluteFill>
     ));
@@ -504,7 +509,8 @@ export const Ep44: React.FC = () => {
       <AbsoluteFill>
         <Board />
         <Svg>
-          <Card x={960} y={560} top="THE KNOT · 2025 REAL WEDDINGS" big={f >= fd ? '$4,600' : '?'} color={C.navy} s={1.15 * P(A('c5b')) * bump(fd, 0.1)} w={900} />
+          <Dave f={f} x={420} y={920} s={1.1 * P(A('c5b'))} keys={[{at: 0, pose: 'point_r', expr: 'happy', look: 0.8}]} />
+          <Card x={1240} y={560} top="THE KNOT · 2025 REAL WEDDINGS" big={f >= fd ? '$4,600' : '?'} color={C.navy} s={1.3 * P(A('c5b')) * bump(fd, 0.1)} w={900} />
           <SourceTag f={f} at={fd} text="The Knot, '2025 Real Weddings Study'" />
         </Svg>
       </AbsoluteFill>
@@ -519,9 +525,9 @@ export const Ep44: React.FC = () => {
       <AbsoluteFill>
         <Board />
         <Svg>
-          <G2 x={960} y={130} s={P(A('c5c'))}><Text size={40}>reality vs. the "rule"</Text></G2>
-          <SalaryStack x={620} y={880} s={P(A('c5c')) * bump(wk, 0.1)} months={f >= wk ? 1 : 0} label="reality: ~1 month's pay" color={C.green} />
-          <SalaryStack x={1360} y={880} s={P(A('c5c'))} months={3} label={'the old "rule": 3 months'} color={C.red} />
+          <Box x={960} y={130} w={800} h={120}><Text size={40}>reality vs. the "rule"</Text></Box>
+          <SalaryStack x={620} y={880} s={1.1 * P(A('c5c')) * bump(wk, 0.12)} months={1} label="reality: ~1 month's pay" color={C.green} />
+          <SalaryStack x={1360} y={880} s={1.1 * P(A('c5c'))} months={3} label={'the old "rule": 3 months'} color={C.red} />
           <G2 x={960} y={300} s={P(A('c5c')) * bump(dr, 0.1)} o={lt(dr, 0.4)}><Text size={34} color={GRAY}>{f >= dr ? 'bigger ring, smaller bill' : ''}</Text></G2>
         </Svg>
       </AbsoluteFill>
@@ -553,19 +559,20 @@ export const Ep44: React.FC = () => {
         <AbsoluteFill>
           <Board />
           <Svg>
-            <G2 x={960} y={140} s={P(A('c6b'))}><Text size={40}>bigger "should spend" = bigger sale</Text></G2>
-            <Salesman f={f} x={960} y={840} s={1.2 * P(A('c6b')) * bump(sale, 0.08)} keys={[{at: 0, pose: 'celebrate', expr: 'grin'}]} />
+            <Box x={960} y={140} w={950} h={120}><Text size={40}>bigger "should spend" = bigger sale</Text></Box>
+            <Salesman f={f} x={960} y={860} s={1.7 * P(A('c6b')) * bump(sale, 0.08)} keys={[{at: 0, pose: 'celebrate', expr: 'grin'}]} />
+            <JewelerCounter x={960} y={1020} s={1.3 * P(A('c6b'))} />
           </Svg>
         </AbsoluteFill>
       ) : (
         <AbsoluteFill>
           <Board />
           <Svg>
-            <G2 x={960} y={140} s={P(A('c6c'))}><Text size={40}>mined-diamond industry benefits too</Text></G2>
-            <Diamond x={620} y={640} s={1.1} color="#D7F5E3" />
-            <G2 x={620} y={840} o={lt(fake, 0.4)}><Text size={30} color={GRAY}>lab-grown</Text></G2>
-            <G2 x={1300} y={560} s={P(A('c6c')) * bump(fake, 0.1)} o={lt(fake, 0.4)}><Bubble text={'"that\'s not a REAL\ndiamond..."'} size={34} tail="down" /></G2>
-            {f >= fake && <XMark x={1300} y={780} s={0.5 * pop(f, fake)} />}
+            <Box x={960} y={140} w={950} h={120}><Text size={40}>mined-diamond industry benefits too</Text></Box>
+            <G2 x={620} y={660} s={1.5 * P(A('c6c'))}><Diamond color="#D7F5E3" /></G2>
+            <Box x={620} y={880} w={360} h={100}><Text size={30} color={GRAY}>lab-grown</Text></Box>
+            <G2 x={1300} y={620} s={P(A('c6c')) * bump(fake, 0.1)} o={lt(fake, 0.5)}><Bubble text={'"that\'s not a REAL\ndiamond..."'} size={34} tail="down" /></G2>
+            {f >= fake && <XMark x={1300} y={840} s={0.5 * pop(f, fake)} />}
           </Svg>
         </AbsoluteFill>
       ),
@@ -626,11 +633,11 @@ export const Ep44: React.FC = () => {
       <AbsoluteFill>
         <Board />
         <Svg>
-          <G2 x={960} y={130} s={P(A('c8a')) * bump(ruin, 0.08)}><Text size={44}>this isn't anti-romance</Text></G2>
-          <G2 x={620} y={640} s={1.1 * P(A('c8a')) * bump(val, 0.1)}><RingBox open={1} glow={f >= val ? 0.3 : 0} /></G2>
-          <Dave f={f} x={1180} y={900} s={1.05} keys={[{at: 0, pose: 'present', expr: 'happy'}]} />
-          <Partner f={f} x={1440} y={900} s={1} keys={[{at: 0, pose: 'celebrate', expr: 'grin'}]} />
-          <G2 x={1300} y={560} s={P(A('c8a')) * bump(marketing, 0.1)} o={lt(marketing, 0.4)}><Text size={32} color={C.green}>{f >= marketing ? 'the enemy is the fake rule,\nnot the diamond' : ''}</Text></G2>
+          <Box x={960} y={130} w={800} h={120}><Text size={44}>this isn't anti-romance</Text></Box>
+          <G2 x={560} y={660} s={1.4 * P(A('c8a')) * bump(val, 0.1)}><RingBox open={1} glow={f >= val ? 0.3 : 0} /></G2>
+          <Dave f={f} x={1180} y={920} s={1.2} keys={[{at: 0, pose: 'present', expr: 'happy'}]} />
+          <Partner f={f} x={1460} y={920} s={1.15} keys={[{at: 0, pose: 'celebrate', expr: 'grin'}]} />
+          <Box x={1330} y={560} w={520} h={200} o={lt(marketing, 0.5)}><Text size={32} color={C.green}>{f >= marketing ? 'the enemy is the fake rule,\nnot the diamond' : 'just love, done right'}</Text></Box>
         </Svg>
       </AbsoluteFill>
     ));
