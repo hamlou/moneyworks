@@ -501,12 +501,13 @@ export const Ep45: React.FC = () => {
         <AbsoluteFill>
           <Board />
           <Svg>
-            <G2 x={960} y={120} s={P(A('c4d')) * bump(four)}><Text size={46}>real cost, per visit</Text></G2>
-            <G2 x={960} y={220} s={P(A('c4d')) * bump(way)}><Text size={38} color={GRAY}>{f >= way ? 'paid for way more' : '~4 visits/month...'}</Text></G2>
-            <line x1={480} y1={880} x2={1240} y2={880} stroke={C.ink} strokeWidth={6} strokeLinecap="round" />
-            <Bar x={680} y={880} h={ease(f, ten - 4, ten + 12, 70, 260)} color={C.green} label="10-visit pass" value={f >= ten ? '$10/visit' : '?'} w={300} />
-            <Bar x={1120} y={880} h={ease(f, seventeen - 4, seventeen + 16, 70, 480)} color={C.red} label="monthly plan" value={f >= seventeen ? '$17+/visit' : '?'} w={300} />
-            <Dave f={f} x={1620} y={900} s={1.2 * P(A('c4d'))} keys={[{at: 0, pose: 'shrug', expr: 'worried', look: -0.8}, {at: seventeen, pose: 'facepalm', expr: 'sad'}]} />
+            <G2 x={780} y={140} s={P(A('c4d')) * bump(four)}><Text size={50}>real cost, per visit</Text></G2>
+            <G2 x={780} y={230} s={P(A('c4d')) * bump(way)}><Text size={36} color={GRAY}>{f >= way ? 'paid for way more' : '~4 visits/month...'}</Text></G2>
+            <Dumbbell x={1620} y={260} s={1.1 * P(A('c4d'))} o={0.85} />
+            <line x1={380} y1={880} x2={1180} y2={880} stroke={C.ink} strokeWidth={6} strokeLinecap="round" />
+            <Bar x={600} y={880} h={ease(f, ten - 4, ten + 12, 130, 340)} color={C.green} label="10-visit pass" value={f >= ten ? '$10/visit' : '?'} w={320} />
+            <Bar x={1000} y={880} h={ease(f, seventeen - 4, seventeen + 16, 130, 560)} color={C.red} label="monthly plan" value={f >= seventeen ? '$17+/visit' : '?'} w={320} />
+            <Dave f={f} x={1600} y={920} s={1.35 * P(A('c4d'))} keys={[{at: 0, pose: 'shrug', expr: 'worried', look: -0.8}, {at: seventeen, pose: 'facepalm', expr: 'sad'}]} />
             <SourceTag f={f} at={ten} text="DellaVigna & Malmendier, AER 96(3), 2006: monthly members paid $17+/visit vs $10 drop-in" />
           </Svg>
         </AbsoluteFill>

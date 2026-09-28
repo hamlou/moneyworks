@@ -11,6 +11,7 @@ import {Shop, HospitalBill} from '../props3';
 import {Cat, House} from '../props4';
 import {MemberCard, Scale, PriceBoard, Receipt} from '../props8';
 import {Dog, Cone, VetClinic, Xray} from '../props46';
+import {CapacityDots} from '../props45';
 
 type SP = Omit<StickProps, 'acc' | 'seed'>;
 const Dave: React.FC<SP> = (p) => <Stick acc={['hair']} seed={7} {...p} />;
@@ -190,13 +191,15 @@ export const Ep46: React.FC = () => {
     scene(A('c1a'), () =>
       f < A('c1c') ? (
         <AbsoluteFill>
-          <VetClinic x={480} y={780} s={0.55} name="VET CLINIC" />
+          <Board />
           <Svg>
-            <G2 x={960} y={120} s={P(A('c1a')) * bump(actually)}><Text size={46}>what's in a $2,000 dog surgery?</Text></G2>
-            <Xray x={1200} y={620} s={0.9 * P(A('c1a')) * bump(torn, 0.1)} crack={f >= torn ? 1 : 0} />
-            <Box x={1200} y={980} w={640} h={170} s={P(A('c1a')) * bump(two, 0.08)}>
-              <Text y={-30} size={30} color={GRAY}>torn knee ligament, typical cost</Text>
-              <Text y={35} size={54} color={f >= six ? C.red : GRAY}>{f >= six ? '$2,000 - $6,000' : '?'}</Text>
+            <G2 x={960} y={110} s={P(A('c1a')) * bump(actually)}><Text size={48}>what's in a $2,000 dog surgery?</Text></G2>
+            <VetClinic x={470} y={880} s={0.62 * P(A('c1a'))} name="VET CLINIC" />
+            <Dog f={f} x={760} y={980} s={0.85 * P(A('c1a')) * bump(torn, 0.06)} mood="hurt" limp={f >= torn ? 1 : 0} />
+            <Xray x={1420} y={560} s={1.25 * P(A('c1a')) * bump(torn, 0.1)} crack={f >= torn ? 1 : 0} />
+            <Box x={1420} y={960} w={700} h={190} s={P(A('c1a')) * bump(two, 0.08)}>
+              <Text y={-34} size={30} color={GRAY}>torn knee ligament, typical cost</Text>
+              <Text y={38} size={56} color={f >= six ? C.red : GRAY}>{f >= six ? '$2,000 - $6,000' : '?'}</Text>
             </Box>
             <SourceTag f={f} at={two} text="Veterinary cost guides, 2026: dog CCL/ACL surgery ~$1,200-$6,000+" />
           </Svg>
@@ -205,9 +208,12 @@ export const Ep46: React.FC = () => {
         <AbsoluteFill>
           <Board />
           <Svg>
-            <G2 x={960} y={120} s={P(A('c1c')) * bump(human)}><Text size={46}>now, a HUMAN knee, same surgery</Text></G2>
-            <HospitalBill x={960} y={620} s={1.2 * P(A('c1c')) * bump(twenty, 0.1)} />
-            <G2 x={960} y={950} s={bump(twenty)} o={lt(twenty, 0.4)}><Text size={48} color={C.red}>sticker price: $20,000+</Text></G2>
+            <G2 x={960} y={110} s={P(A('c1c')) * bump(human)}><Text size={48}>now, a HUMAN knee, same surgery</Text></G2>
+            <HospitalBill x={620} y={620} s={1.3 * P(A('c1c')) * bump(twenty, 0.1)} />
+            <Box x={1420} y={620} w={680} h={280} s={P(A('c1c')) * bump(twenty, 0.08)} fill={f >= twenty ? '#FFE3EA' : '#fff'}>
+              <Text y={-60} size={30} color={GRAY}>sticker price, no insurance</Text>
+              <Text y={30} size={62} color={C.red}>{f >= twenty ? '$20,000+' : '?'}</Text>
+            </Box>
             <SourceTag f={f} at={human} text="Human ACL reconstruction cost guides, 2026: uninsured sticker price ~$20,000-$22,500" />
           </Svg>
         </AbsoluteFill>
@@ -321,11 +327,11 @@ export const Ep46: React.FC = () => {
           <G2 x={620} y={120} s={P(A('c2e')) * bump(jab)}><Text size={44}>{f >= keurig ? 'J A B Holding (Keurig, Panera)' : 'meet J A B Holding'}</Text></G2>
           <PE f={f} x={620} y={780} s={1} keys={[{at: 0, pose: 'present', expr: 'suspicious'}, {at: twice, pose: 'facepalm', expr: 'worried'}]} />
           <G2 x={620} y={950} s={bump(twice)} o={lt(twice, 0.4)}><Text size={36} color={C.red}>FTC made them divest, twice</Text></G2>
-          <Box x={1500} y={480} w={680} h={230} s={P(A('c2f')) * bump(quarter, 0.1)}>
+          <Box x={1500} y={480} w={680} h={230} s={P(A('c2e')) * bump(quarter, 0.1)}>
             <Text y={-50} size={30} color={GRAY}>general vet clinics, corporate-owned</Text>
             <Text y={40} size={64} color={C.blue}>{f >= quarter ? '~25%' : '?'}</Text>
           </Box>
-          <Box x={1500} y={800} w={680} h={230} s={P(A('c2f')) * bump(three, 0.1)} fill={f >= three ? C.yellow : '#fff'}>
+          <Box x={1500} y={800} w={680} h={230} s={P(A('c2e')) * bump(three, 0.1)} fill={f >= three ? C.yellow : '#fff'}>
             <Text y={-50} size={30} color={GRAY}>emergency/specialty clinics</Text>
             <Text y={40} size={64} color={C.red}>{f >= three ? '~75%' : '?'}</Text>
           </Box>
@@ -343,9 +349,14 @@ export const Ep46: React.FC = () => {
       <AbsoluteFill>
         <Board />
         <Svg>
-          <G2 x={960} y={400} s={P(A('c2g')) * bump(hidden)}><Text size={48}>{f >= hidden ? "not hidden. it's public." : ''}</Text></G2>
-          <Dave f={f} x={960} y={880} s={1.15} keys={[{at: 0, pose: 'shrug', expr: 'neutral'}, {at: never, pose: 'think', expr: 'think'}]} />
-          <G2 x={960} y={620} s={bump(never)} o={lt(never, 0.4)}><Text size={38} color={GRAY}>most owners never look it up</Text></G2>
+          <G2 x={960} y={260} s={P(A('c2g')) * bump(hidden)}><Text size={48}>{f >= hidden ? "not hidden. it's public." : "none of this is hidden"}</Text></G2>
+          <Box x={620} y={620} w={520} h={280} s={P(A('c2g'))}>
+            <Text y={-60} size={28} color={GRAY}>public filings</Text>
+            <Text y={0} size={30}>FTC.gov</Text>
+            <Text y={50} size={30}>SEC.gov 10-K</Text>
+          </Box>
+          <Dave f={f} x={1320} y={900} s={1.25 * P(A('c2g'))} keys={[{at: 0, pose: 'shrug', expr: 'neutral'}, {at: never, pose: 'think', expr: 'think'}]} />
+          <G2 x={1320} y={560} s={P(A('c2g')) * bump(never)} o={lt(never, 0.45)}><Bubble text={f >= never ? 'most owners\nnever look' : 'huh, public...'} size={36} tail="down" /></G2>
         </Svg>
       </AbsoluteFill>
     ));
@@ -384,10 +395,15 @@ export const Ep46: React.FC = () => {
         <AbsoluteFill>
           <Board />
           <Svg>
-            <G2 x={960} y={110} s={P(A('c3c')) * bump(combine)}><Text size={44}>{f >= centrally ? 'set pricing centrally' : 'combine, buy in bulk'}</Text></G2>
-            <MoneyStack x={620} y={700} s={1 * P(A('c3c')) * bump(bulk, 0.08)} n={7} label="bulk buys" />
-            <Arrow d="M 820 700 L 1140 700" t={f >= centrally ? 1 : 0.3} />
-            <Bank x={1420} y={780} s={0.28 * P(A('c3c')) * bump(centrally, 0.08)} label="HQ PRICING" />
+            <G2 x={960} y={110} s={P(A('c3c')) * bump(combine)}><Text size={48}>{f >= centrally ? 'set pricing centrally' : 'combine, buy in bulk'}</Text></G2>
+            {[0, 1, 2].map((i) => (
+              <G2 key={i} x={280} y={480 + i * 220} s={0.4 * P(A('c3c'))}><Shop name="CLINIC" /></G2>
+            ))}
+            <MoneyStack x={760} y={780} s={1.3 * P(A('c3c')) * bump(bulk, 0.08)} n={8} label="bulk buys" />
+            <Arrow d="M 500 500 Q 900 620 1180 780" t={f >= centrally ? 1 : 0.4} />
+            <Arrow d="M 500 700 L 1180 780" t={f >= centrally ? 1 : 0.4} />
+            <Arrow d="M 500 920 Q 900 900 1180 800" t={f >= centrally ? 1 : 0.4} />
+            <Bank x={1560} y={820} s={0.5 * P(A('c3c')) * bump(centrally, 0.08)} label="HQ PRICING" />
           </Svg>
         </AbsoluteFill>
       ),
@@ -518,10 +534,11 @@ export const Ep46: React.FC = () => {
         <AbsoluteFill>
           <Board />
           <Svg>
-            <G2 x={960} y={120} s={P(A('c5c')) * bump(overnight)}><Text size={44}>overnight staff, 24/7 equipment</Text></G2>
-            <line x1={560} y1={880} x2={1360} y2={880} stroke={C.ink} strokeWidth={6} strokeLinecap="round" />
-            <Bar x={720} y={880} h={220} color={C.blue} label="regular clinic" value="1x" w={260} />
-            <Bar x={1160} y={880} h={ease(f, two3 - 4, three3 + 16, 60, 520)} color={C.red} label="emergency hospital" value={f >= three3 ? '2-3x' : '?'} w={260} />
+            <G2 x={960} y={120} s={P(A('c5c')) * bump(overnight)}><Text size={48}>overnight staff, 24/7 equipment</Text></G2>
+            <VetClinic x={1560} y={340} s={0.42 * P(A('c5c'))} name="EMERGENCY" emergency />
+            <line x1={460} y1={900} x2={1260} y2={900} stroke={C.ink} strokeWidth={6} strokeLinecap="round" />
+            <Bar x={640} y={900} h={260} color={C.blue} label="regular clinic" value="1x" w={320} />
+            <Bar x={1080} y={900} h={ease(f, two3 - 4, three3 + 16, 130, 620)} color={C.red} label="emergency hospital" value={f >= three3 ? '2-3x' : '?'} w={320} />
           </Svg>
         </AbsoluteFill>
       ),
@@ -538,10 +555,11 @@ export const Ep46: React.FC = () => {
       <AbsoluteFill>
         <Board />
         <Svg>
-          <G2 x={620} y={140} s={P(A('c5d')) * bump(four3)}><Text size={44}>and 3 of every 4 are corporate-owned</Text></G2>
-          <VetClinic x={620} y={780} s={0.6 * P(A('c5d'))} name="EMERGENCY" emergency />
-          <Dave f={f} x={1420} y={900} s={1.1} keys={[{at: 0, pose: 'shrug', expr: 'sad'}, {at: open, pose: 'point_r', expr: 'worried'}]} />
-          <G2 x={1420} y={520} s={P(A('c5e')) * bump(cheap2)} o={lt(open, 0.4)}><Bubble text={f >= open ? 'chose it because\nit was OPEN' : 'not because cheap...'} size={38} tail="down" /></G2>
+          <G2 x={620} y={140} s={P(A('c5d')) * bump(four3)}><Text size={42}>and 3 of every 4 are corporate-owned</Text></G2>
+          <CapacityDots x={620} y={560} s={1.3 * P(A('c5d')) * bump(four3, 0.06)} total={16} filled={f >= four3 ? 12 : 4} cols={4} />
+          <VetClinic x={620} y={980} s={0.55 * P(A('c5d'))} name="EMERGENCY" emergency />
+          <Dave f={f} x={1500} y={920} s={1.25 * P(A('c5d'))} keys={[{at: 0, pose: 'shrug', expr: 'sad'}, {at: open, pose: 'point_r', expr: 'worried'}]} />
+          <G2 x={1500} y={520} s={P(A('c5d')) * bump(cheap2)} o={lt(open, 0.45)}><Bubble text={f >= open ? 'chose it because\nit was OPEN' : 'not because cheap...'} size={38} tail="down" /></G2>
         </Svg>
       </AbsoluteFill>
     ));
@@ -564,10 +582,11 @@ export const Ep46: React.FC = () => {
         <AbsoluteFill>
           <Board />
           <Svg>
-            <G2 x={960} y={120} s={P(A('c6a')) * bump(buy2)}><Text size={46}>prices climbing faster than almost anything</Text></G2>
-            <line x1={560} y1={880} x2={1360} y2={880} stroke={C.ink} strokeWidth={6} strokeLinecap="round" />
-            <Bar x={720} y={880} h={ease(f, three4 - 4, three4 + 12, 60, 220)} color={C.blue} label="overall CPI" value={f >= three4 ? '3.3%' : '?'} w={260} />
-            <Bar x={1160} y={880} h={ease(f, seven2 - 4, seven2 + 16, 60, 320)} color={C.red} label="vet services" value={f >= seven2 ? '4.7%' : '?'} w={260} />
+            <G2 x={960} y={120} s={P(A('c6a')) * bump(buy2)}><Text size={48}>prices climbing faster than almost anything</Text></G2>
+            <line x1={460} y1={900} x2={1260} y2={900} stroke={C.ink} strokeWidth={6} strokeLinecap="round" />
+            <Bar x={640} y={900} h={ease(f, three4 - 4, three4 + 12, 130, 260)} color={C.blue} label="overall CPI" value={f >= three4 ? '3.3%' : '?'} w={320} />
+            <Bar x={1080} y={900} h={ease(f, seven2 - 4, seven2 + 16, 130, 400)} color={C.red} label="vet services" value={f >= seven2 ? '4.7%' : '?'} w={320} />
+            <PE f={f} x={1620} y={880} s={1.1 * P(A('c6a'))} keys={[{at: 0, pose: 'hips', expr: 'smug'}]} />
             <SourceTag f={f} at={seven2} text="BLS CPI-U, release Aug 12, 2026: vet services +4.7% YoY vs +3.3% all-items" />
           </Svg>
         </AbsoluteFill>
@@ -575,9 +594,13 @@ export const Ep46: React.FC = () => {
         <AbsoluteFill>
           <Board />
           <Svg>
-            <G2 x={960} y={130} s={P(A('c6c')) * bump(fiftyfive)}><Text size={44}>since 2019, vet prices are up</Text></G2>
-            <Text x={960} y={420} size={140} color={C.red}>{f >= fiftyfive ? '55%' : '?'}</Text>
-            <G2 x={960} y={680} s={bump(gas)} o={lt(gas, 0.4)}><Text size={40} color={GRAY}>faster than gas prices, same years</Text></G2>
+            <G2 x={960} y={130} s={P(A('c6c')) * bump(fiftyfive)}><Text size={46}>since 2019, vet prices are up</Text></G2>
+            <Box x={960} y={520} w={620} h={320} s={P(A('c6c')) * bump(fiftyfive, 0.1)} fill={f >= fiftyfive ? C.yellow : '#fff'}>
+              <Text size={150} color={C.red}>{f >= fiftyfive ? '55%' : '?'}</Text>
+            </Box>
+            <Dog f={f} x={520} y={950} s={0.7 * P(A('c6c'))} mood="happy" />
+            <VetClinic x={1500} y={340} s={0.4 * P(A('c6c'))} />
+            <G2 x={960} y={880} s={P(A('c6c')) * bump(gas)}><Text size={40} color={GRAY}>faster than gas prices, same years</Text></G2>
             <SourceTag f={f} at={fiftyfive} text="CPI analysis of BLS data (in2013dollars.com): vet services +55.5% cumulative since 2019" />
           </Svg>
         </AbsoluteFill>
@@ -598,12 +621,12 @@ export const Ep46: React.FC = () => {
         <Board />
         <Svg>
           <G2 x={620} y={140} s={P(A('c6d')) * bump(real)}><Text size={40}>new equipment, drugs, staff pay: that's real</Text></G2>
-          <G2 x={620} y={350} s={bump(worth)} o={lt(worth, 0.4)}><Text size={38} color={GRAY}>but consolidation + faster prices... worth asking why</Text></G2>
-          <Box x={620} y={780} w={780} h={300} s={P(A('c6f')) * bump(grocery, 0.08)} fill={f >= hundred ? C.yellow : '#fff'}>
+          <G2 x={620} y={350} s={P(A('c6d')) * bump(worth)}><Text size={36} color={GRAY}>but consolidation + faster prices... worth asking why</Text></G2>
+          <Box x={620} y={800} w={820} h={320} s={P(A('c6d')) * bump(grocery, 0.08)} fill={f >= hundred ? C.yellow : '#fff'}>
             <Text y={-80} size={30} color={GRAY}>if groceries rose 55% since 2019</Text>
-            <Text y={0} size={44}>$100 cart → {f >= hundred ? '$155' : '?'}</Text>
+            <Text y={0} size={46}>$100 cart → {f >= hundred ? '$155' : '?'}</Text>
           </Box>
-          <PE f={f} x={1500} y={900} s={1.1} keys={[{at: 0, pose: 'present', expr: 'neutral'}]} />
+          <PE f={f} x={1560} y={920} s={1.3 * P(A('c6d'))} keys={[{at: 0, pose: 'present', expr: 'neutral'}]} />
         </Svg>
       </AbsoluteFill>
     ));
@@ -628,9 +651,9 @@ export const Ep46: React.FC = () => {
         <AbsoluteFill>
           <DreamBgVet />
           <Svg>
-            <Vet f={f} x={620} y={880} s={1.1} keys={[{at: 0, pose: 'celebrate', expr: 'grin', look: 0.8}]} />
+            <Vet f={f} x={620} y={880} s={1.25 * P(A('c7a'))} keys={[{at: 0, pose: 'celebrate', expr: 'grin', look: 0.8}]} />
             <G2 x={1180} y={440} s={P(A('c7a')) * bump(picture)}><Bubble text={'"vets get rich\noff my bill"'} size={40} tail="left" /></G2>
-            <Stamp x={1180} y={760} s={pop(f, nope)} text="NOPE" size={100} r={-8} />
+            <Stamp x={1180} y={760} s={P(A('c7a')) * bump(nope, 0.2)} text="NOPE" size={100} r={-8} />
           </Svg>
         </AbsoluteFill>
       ) : (
@@ -655,8 +678,11 @@ export const Ep46: React.FC = () => {
       <AbsoluteFill>
         <Board />
         <Svg>
-          <G2 x={960} y={400} s={P(A('c7e')) * bump(excuse)}><Text size={42} color={GRAY}>not an excuse for a $2,000 bill...</Text></G2>
-          <G2 x={960} y={680} s={bump(spreadsheet)} o={lt(spreadsheet, 0.4)}><Text size={40} color={C.blue}>the money leads to a spreadsheet, not the vet</Text></G2>
+          <G2 x={960} y={180} s={P(A('c7e')) * bump(excuse)}><Text size={44} color={GRAY}>not an excuse for a $2,000 bill...</Text></G2>
+          <Vet f={f} x={560} y={880} s={1.15 * P(A('c7e'))} keys={[{at: 0, pose: 'shrug', expr: 'tired'}]} />
+          <Bank x={1350} y={800} s={0.32 * P(A('c7e')) * bump(spreadsheet, 0.08)} label="HQ" />
+          <Arrow d="M 800 780 Q 1050 700 1220 780" t={f >= spreadsheet ? 1 : 0.4} />
+          <G2 x={960} y={950} s={P(A('c7e')) * bump(spreadsheet)}><Text size={40} color={C.blue}>the money leads to a spreadsheet, not the vet</Text></G2>
         </Svg>
       </AbsoluteFill>
     ));
@@ -711,12 +737,13 @@ export const Ep46: React.FC = () => {
       <AbsoluteFill>
         <Board />
         <Svg>
-          <Box x={620} y={480} w={680} h={260} s={P(A('c8d')) * bump(premiums, 0.08)}>
-            <Text y={-60} size={30} color={GRAY}>total written premium, 2024</Text>
-            <Text y={30} size={64} color={C.green}>{f >= premiums ? '$5.2 billion' : '?'}</Text>
+          <G2 x={620} y={170} s={P(A('c8d'))}><Text size={40}>the industry keeps growing</Text></G2>
+          <Box x={620} y={560} w={720} h={300} s={P(A('c8d')) * bump(premiums, 0.08)} fill={f >= premiums ? C.yellow : '#fff'}>
+            <Text y={-70} size={30} color={GRAY}>total written premium, 2024</Text>
+            <Text y={30} size={66} color={C.green}>{f >= premiums ? '$5.2 billion' : '?'}</Text>
           </Box>
-          <Dog f={f} x={1500} y={900} s={1} mood="cone" />
-          <Cone x={1500} y={900} s={1} />
+          <Dog f={f} x={1500} y={900} s={1.3 * P(A('c8d'))} mood="cone" />
+          <Cone x={1500} y={900} s={1.3 * P(A('c8d'))} />
           <G2 x={1500} y={520} s={P(A('c8e')) * bump(before)} o={lt(before, 0.45)}><Bubble text={f >= month ? 'happened the\nmonth before...' : 'only works BEFORE the emergency'} size={36} tail="down" /></G2>
         </Svg>
       </AbsoluteFill>
