@@ -182,9 +182,13 @@ export const Ep44: React.FC = () => {
         <Board />
         <Svg>
           <Box x={960} y={110} w={900} h={130}><Text size={44}>the salary number kept climbing</Text></Box>
-          <SalaryStack x={620} y={880} s={1.1 * P(A('c1c')) * bump(on, 0.1)} months={1} label="1930s: 1 month" />
-          <Arrow d="M 850 780 L 1150 780" t={f >= tw ? 1 : 0.2} />
-          <SalaryStack x={1360} y={880} s={1.1 * P(A('c1c')) * bump(tw, 0.12)} months={f >= tw ? 2 : 1} label="1980s: 2 months" color={f >= tw ? C.red : C.gray} />
+          <Frame x={620} y={860} w={480} h={420}>
+            <G2 y={20} s={1.5 * P(A('c1c')) * bump(on, 0.1)}><SalaryStack months={1} label="1930s: 1 month" /></G2>
+          </Frame>
+          <Arrow d="M 890 800 L 1080 800" t={f >= tw ? 1 : 0.2} />
+          <Frame x={1360} y={860} w={480} h={420}>
+            <G2 y={20} s={1.5 * P(A('c1c')) * bump(tw, 0.12)}><SalaryStack months={f >= tw ? 2 : 1} label="1980s: 2 months" color={f >= tw ? C.red : C.gray} /></G2>
+          </Frame>
         </Svg>
       </AbsoluteFill>
     ));
@@ -449,9 +453,9 @@ export const Ep44: React.FC = () => {
         <AbsoluteFill>
           <Board />
           <Svg>
-            <G2 x={700} y={620} s={1.3 * P(A('c4d'))}><Diamond color="#D7F5E3" /></G2>
-            <G2 x={1240} y={620} s={1.1 * P(A('c4d'))}><Diamond color="#CFEFFF" /></G2>
-            <Stamp x={960} y={560} s={pop(f, pct)} text="75–90% LESS" size={70} color={C.green} r={-4} />
+            <G2 x={700} y={660} s={1.6 * P(A('c4d'))}><Diamond color="#D7F5E3" /></G2>
+            <G2 x={1240} y={660} s={1.4 * P(A('c4d'))}><Diamond color="#CFEFFF" /></G2>
+            <Stamp x={960} y={520} s={1.1 * P(A('c4d')) * bump(pct, 0.15)} text="75–90% LESS" size={70} color={C.green} r={-4} />
             <Box x={960} y={860} w={1050} h={110}><Text size={36} color={GRAY}>for a stone a machine has to tell apart</Text></Box>
           </Svg>
         </AbsoluteFill>
