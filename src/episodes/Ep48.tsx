@@ -97,11 +97,12 @@ export const Ep48: React.FC = () => {
       <AbsoluteFill>
         <Board />
         <Svg>
-          <G2 x={960} y={300} s={P(A('o4')) * bump(pw)}><Text size={48}>{f >= pw ? 'a few hours of paperwork...' : 'how does this happen?'}</Text></G2>
-          <G2 x={960} y={420} o={lt(mm, 0.35)}><Text size={44} color={C.red}>...at the worst possible moment</Text></G2>
-          <Flowers x={620} y={860} s={1.2 * P(A('o4'))} />
-          <G2 x={1320} y={860} s={P(A('o4')) * bump(gt, 0.06)}><Icon kind="heart" s={1.1} /></G2>
-          <G2 x={1320} y={1010} o={lt(hd, 0.4)}><Text size={34} color={GRAY}>this one is gentle. it's a hard topic.</Text></G2>
+          <G2 x={960} y={140} s={P(A('o4')) * bump(pw)}><Text size={50}>{f >= pw ? 'a few hours of paperwork...' : 'how does this happen?'}</Text></G2>
+          <G2 x={960} y={250} o={lt(mm, 0.35)}><Text size={42} color={C.red}>...at the worst possible moment</Text></G2>
+          <Dave f={f} x={620} y={880} s={1.3} keys={[{at: 0, pose: 'relax', expr: 'sad', look: 0.6}]} />
+          <Flowers x={1000} y={840} s={1.6 * P(A('o4'))} />
+          <G2 x={1420} y={780} s={1.4 * P(A('o4')) * bump(gt, 0.08)}><Icon kind="heart" s={1.5} /></G2>
+          <G2 x={1420} y={960} o={lt(hd, 0.4)}><Text y={-24} size={34} color={GRAY}>this one is gentle.</Text><Text y={24} size={34} color={GRAY}>it's a hard topic.</Text></G2>
         </Svg>
       </AbsoluteFill>
     ));
@@ -421,10 +422,13 @@ export const Ep48: React.FC = () => {
         <AbsoluteFill>
           <Board />
           <Svg>
-            <G2 x={960} y={110} s={P(A('c6a')) * bump(cr)}><Text size={46}>a lower-cost, growing option</Text></G2>
-            <Urn x={620} y={700} s={1.2 * P(A('c6a')) * bump(sx, 0.06)} label={f >= sx ? '$6,280' : undefined} />
-            <Casket x={1400} y={700} s={0.6 * P(A('c6a')) * bump(bl, 0.06)} color="#5C3A22" tag={f >= bl ? '$8,300' : undefined} />
-            <G2 x={1400} y={900} o={lt(bl, 0.4)}><Text size={32} color={GRAY}>burial (still real money)</Text></G2>
+            <G2 x={960} y={100} s={P(A('c6a')) * bump(cr)}><Text size={46}>a lower-cost, growing option</Text></G2>
+            <Grandma f={f} x={960} y={950} s={1.1 * P(A('c6a'))} keys={[{at: 0, pose: 'think', expr: 'neutral'}]} />
+            <Urn x={560} y={640} s={1.9 * P(A('c6a')) * bump(sx, 0.06)} label={f >= sx ? '$6,280' : '?'} />
+            <G2 x={560} y={340} o={lt(sx, 0.4)}><Text size={34} color={C.green}>cremation</Text></G2>
+            <Text x={960} y={620} size={54} color={GRAY}>vs</Text>
+            <Casket x={1420} y={660} s={1.05 * P(A('c6a')) * bump(bl, 0.06)} color="#5C3A22" tag={f >= bl ? '$8,300' : '?'} />
+            <G2 x={1420} y={380} o={lt(bl, 0.35)}><Text size={34} color={GRAY}>burial (still real money)</Text></G2>
           </Svg>
         </AbsoluteFill>
       ) : (
@@ -552,10 +556,10 @@ export const Ep48: React.FC = () => {
         <AbsoluteFill>
           <Board />
           <Svg>
-            <G2 x={960} y={130} s={P(A('r5')) * bump(lg)}><Text size={52}>Next: why everything ends in .99</Text></G2>
-            <DeliSandwich x={1250} y={700} s={0.6 * P(A('r5')) * bump(nn, 0.1)} price={f >= nn ? '$9.99' : '$10'} />
-            <Icon kind="question" x={900} y={500} s={0.8 * P(A('r5'))} />
-            <Dave f={f} x={450} y={900} s={1.2} keys={[{at: 0, pose: 'point_r', expr: 'happy', look: 0.8}]} />
+            <G2 x={960} y={120} s={P(A('r5')) * bump(lg)}><Text size={50}>Next: why everything ends in .99</Text></G2>
+            <DeliSandwich x={1330} y={780} s={0.95 * P(A('r5')) * bump(nn, 0.1)} price={f >= nn ? '$9.99' : '$10'} />
+            <Icon kind="question" x={950} y={620} s={1 * P(A('r5'))} />
+            <Dave f={f} x={520} y={880} s={1.4} keys={[{at: 0, pose: 'point_r', expr: 'happy', look: 0.8}]} />
           </Svg>
         </AbsoluteFill>
       ) : (

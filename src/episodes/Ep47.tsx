@@ -257,13 +257,15 @@ export const Ep47: React.FC = () => {
         <AbsoluteFill>
           <Board />
           <Svg>
-            <G2 x={960} y={110} s={P(A('c2f')) * bump(co)}><Text size={48}>a handful of giant companies run most of it</Text></G2>
+            <G2 x={960} y={90} s={P(A('c2f')) * bump(co)}><Text size={44}>a handful of giant companies run most of it</Text></G2>
+            <Owner f={f} x={960} y={420} s={1.15 * P(A('c2f'))} keys={[{at: 0, pose: 'hips', expr: 'smug'}]} />
+            <G2 x={960} y={610} o={lt(co, 0.4)}><Text size={32} color={C.blue}>ONE COMPANY, MANY SHOPS</Text></G2>
             {Array.from({length: 6}).map((_, i) => (
-              <G2 key={i} x={280 + (i % 3) * 700} y={480 + Math.floor(i / 3) * 400} s={0.32 * P(A('c2f')) * bump(dz, 0.06)} o={f >= dz ? 1 : 0.4}>
+              <G2 key={i} x={230 + i * 300} y={880} s={0.42 * P(A('c2f')) * bump(dz + i * 2, 0.1)} o={f >= dz ? 1 : 0.55}>
                 <ShopCounter name="" />
               </G2>
             ))}
-            <G2 x={960} y={1010} o={lt(dz, 0.4)}><Text size={40} color={C.red}>10-year contracts, dozens of airports</Text></G2>
+            <G2 x={960} y={1030} s={bump(dz, 0.06)} o={lt(dz, 0.45)}><Text size={36} color={C.red}>10-year contracts, dozens of airports</Text></G2>
           </Svg>
         </AbsoluteFill>
       ),
@@ -444,11 +446,17 @@ export const Ep47: React.FC = () => {
         <AbsoluteFill>
           <Board />
           <Svg>
-            <G2 x={960} y={110} s={P(A('c5f')) * bump(fp)}><Text size={48}>a 4th pressure: the minimum guarantee</Text></G2>
-            <ContractPaper x={660} y={620} s={0.85 * P(A('c5f')) * bump(mg, 0.1)} stamped={f >= mg} />
-            <G2 x={1400} y={480} o={lt(mg, 0.4)}><Text size={38} color={C.red}>{f >= mg ? 'fixed payment, due every month' : ''}</Text></G2>
-            <G2 x={1400} y={700} s={bump(ls, 0.12)} o={lt(ls, 0.4)}><Text size={40} color={C.red}>{f >= ls ? 'miss it → lose the lease' : ''}</Text></G2>
-            <G2 x={1400} y={780} o={lt(ls, 0.35)}><Text size={32} color={GRAY}>so prices rarely go down</Text></G2>
+            <G2 x={960} y={100} s={P(A('c5f')) * bump(fp)}><Text size={46}>{f >= fp ? 'a 4th pressure: the minimum guarantee' : "there's one more thing"}</Text></G2>
+            <ContractPaper x={580} y={640} s={1.05 * P(A('c5f')) * bump(mg, 0.1)} stamped={f >= mg} />
+            <Owner f={f} x={950} y={880} s={1} keys={[{at: 0, pose: 'shrug', expr: 'worried', look: 0.8}, {at: mg, pose: 'facepalm', expr: 'tired', look: 0.8}]} />
+            <Box x={1500} y={480} w={680} h={260} s={P(A('c5f')) * bump(mg, 0.08)} fill={f >= mg ? C.yellow : '#fff'}>
+              <Text y={-50} size={32} color={GRAY}>a minimum guarantee:</Text>
+              <Text y={30} size={34} color={f >= mg ? C.red : GRAY}>{f >= mg ? 'fixed payment, due every month' : '?'}</Text>
+            </Box>
+            <Box x={1500} y={800} w={680} h={280} s={P(A('c5f')) * bump(ls, 0.08)} o={lt(fp, 0.5)} fill={f >= ls ? '#FFE3EA' : '#fff'}>
+              <Text y={-55} size={34} color={f >= ls ? C.red : GRAY}>{f >= ls ? 'miss it → lose the lease' : 'what if a month is slow?'}</Text>
+              <Text y={40} size={30} color={GRAY}>so prices rarely go down</Text>
+            </Box>
           </Svg>
         </AbsoluteFill>
       ) : (
@@ -616,10 +624,11 @@ export const Ep47: React.FC = () => {
         <AbsoluteFill>
           <Board />
           <Svg>
-            <G2 x={960} y={130} s={P(A('r5'))}><Text size={54}>Next: a funeral bill reaches $10,000</Text></G2>
-            <Casket x={1250} y={720} s={0.65 * P(A('r5')) * bump(tn, 0.08)} tag={f >= tn ? '$10,000' : undefined} />
-            <Icon kind="question" x={900} y={500} s={0.8 * P(A('r5'))} />
-            <Dave f={f} x={450} y={900} s={1.2} keys={[{at: 0, pose: 'point_r', expr: 'neutral', look: 0.8}, {at: gv, pose: 'shrug', expr: 'sad', look: 0.8}]} />
+            <G2 x={960} y={120} s={P(A('r5'))}><Text size={52}>Next: a funeral bill reaches $10,000</Text></G2>
+            <Casket x={1330} y={780} s={0.95 * P(A('r5')) * bump(tn, 0.08)} tag={f >= tn ? '$10,000' : '?'} />
+            <Icon kind="question" x={950} y={620} s={1 * P(A('r5'))} />
+            <Dave f={f} x={520} y={880} s={1.4} keys={[{at: 0, pose: 'point_r', expr: 'neutral', look: 0.8}, {at: gv, pose: 'shrug', expr: 'sad', look: 0.8}]} />
+            <G2 x={520} y={560} s={P(A('r5')) * bump(gv, 0.1)} o={lt(gv, 0.4)}><Bubble text={'while they\'re\nstill grieving'} size={34} tail="down" /></G2>
           </Svg>
         </AbsoluteFill>
       ) : (
