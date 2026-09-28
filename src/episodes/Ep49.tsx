@@ -512,13 +512,13 @@ export const Ep49: React.FC = () => {
           <Board />
           <Svg>
             <G2 x={960} y={110} s={P(A('c7c'))}><Text size={44}>a year-plus plan? more rules apply</Text></G2>
-            <Dave f={f} x={340} y={920} s={1.05} keys={[{at: 0, pose: 'think', expr: 'think', look: 0.7}]} />
-            <Calendar x={720} y={620} s={1.1 * P(A('c7c')) * bump(fteen, 0.1)} year={f >= fteen ? '15-45 DAYS' : '?'} flip={f >= wn ? 1 : 0} top="NOTICE" />
-            <G2 x={720} y={990} o={lt(wn, 0.4)}><Text size={32} color={GRAY}>warning before renewal (plans 1yr+)</Text></G2>
-            <Box x={1470} y={640} w={560} h={320} s={P(A('c7d')) * bump(il, 0.08)} o={lt(il, 0.4)}>
-              <Text y={-90} size={32} color={GRAY}>other states, own rules:</Text>
-              <Text y={-20} size={38}>New York</Text>
-              <Text y={40} size={38} color={f >= il ? C.navy : GRAY}>{f >= il ? 'Illinois' : ''}</Text>
+            <Dave f={f} x={330} y={860} s={1.2} keys={[{at: 0, pose: 'think', expr: 'think', look: 0.7}]} />
+            <Calendar x={760} y={640} s={1.15 * P(A('c7c')) * bump(fteen, 0.1)} year={f >= fteen ? '15-45 DAYS' : '?'} flip={f >= wn ? 1 : 0} top="NOTICE" />
+            <G2 x={760} y={1000} o={lt(wn, 0.4)}><Text size={32} color={GRAY}>warning before renewal (plans 1yr+)</Text></G2>
+            <Box x={1470} y={660} w={560} h={360} s={P(A('c7c')) * bump(il, 0.08)} o={lt(il, 0.4)}>
+              <Text y={-110} size={32} color={GRAY}>other states, own rules:</Text>
+              <Text y={-30} size={38}>New York</Text>
+              <Text y={30} size={38} color={f >= il ? C.navy : GRAY}>{f >= il ? 'Illinois' : ''}</Text>
               <Text y={100} size={30} color={C.gray}>{f >= il ? '...and more every year' : ''}</Text>
             </Box>
           </Svg>
@@ -583,9 +583,10 @@ export const Ep49: React.FC = () => {
           <Board />
           <Svg>
             <G2 x={960} y={130} s={P(A('c8e')) * bump(eight)}><Text size={40}>by Sept 2026, Amazon had refunded</Text></G2>
-            <People x={550} y={640} s={0.9 * P(A('c8e'))} n={40} hot={40} lit={f >= eight ? 1 : 0} />
-            <Stamp x={1420} y={620} s={1.3 * P(A('c8e')) * bump(eight, 0.16)} text={f >= eight ? '$845M+' : '?'} color={C.green} size={80} />
-            <G2 x={960} y={990} o={lt(ex, 0.4)}><Text size={34} color={C.red}>that's how expensive a confusing cancel button gets</Text></G2>
+            <People x={560} y={660} s={1.15 * P(A('c8e'))} n={40} hot={40} lit={f >= eight ? 1 : 0} />
+            <Dave f={f} x={1180} y={900} s={1.2} keys={[{at: 0, pose: 'shock', expr: 'shock', look: -0.6}]} />
+            <Stamp x={1500} y={640} s={1.3 * P(A('c8e')) * bump(eight, 0.16)} text={f >= eight ? '$845M+' : '?'} color={C.green} size={70} />
+            <G2 x={960} y={1000} o={lt(ex, 0.4)}><Text size={34} color={C.red}>that's how expensive a confusing cancel button gets</Text></G2>
           </Svg>
         </AbsoluteFill>
       ),
