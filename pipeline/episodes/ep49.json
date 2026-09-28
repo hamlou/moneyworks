@@ -1,0 +1,112 @@
+{
+  "id": "ep49",
+  "title": "Why You Always Forget to Cancel Free Trials",
+  "sources": [
+    "U.S. Federal Trade Commission, Negative Option Rule ('Click to Cancel'), finalized Oct 2024",
+    "Consumer Reports/CarShield Inc. v. FTC, 8th U.S. Circuit Court of Appeals, vacated the FTC's Click-to-Cancel Rule on July 8, 2025, days before its July 14, 2025 effective date, citing a missed preliminary regulatory analysis",
+    "FTC, Advance Notice of Proposed Rulemaking on the Negative Option Rule, submitted to OIRA Jan 30, 2026, published Mar 13, 2026, comments due Apr 13, 2026",
+    "FTC v. Amazon.com, Inc. (W.D. Wash.): Sept 2025 settlement, $1 billion civil penalty plus up to $1.5 billion in consumer redress over alleged Prime enrollment/cancellation dark patterns (internal process nicknamed 'Iliad Flow'); Amazon did not admit wrongdoing",
+    "Federal court order (2026) expanding the Amazon settlement: raised per-customer refund cap from $51 to $200 and made future refunds automatic; FTC reports over $845 million refunded to ~35 million customers by Sept 2026 (ftc.gov/enforcement/refunds/amazon-refunds)",
+    "New York Attorney General Letitia James, lawsuit against SiriusXM, filed Feb 2024: alleged sign-up took a few clicks online but cancellation required calling and speaking to a retention agent",
+    "California Business and Professions Code §§17600-17606 (Automatic Renewal Law), amendments effective July 1, 2025: online sign-up must allow online cancellation 'at will,' no extra steps; 15-45 day advance notice required before renewal of terms of one year or more",
+    "Industry survey reporting (2026, widely cited, based on C+R Research-style subscription studies): Americans lose an estimated $15.5 billion a year on unused/forgotten app subscriptions; roughly half of consumers say they've been charged after forgetting to cancel a free trial",
+    "Johnson & Goldstein, 'Do Defaults Save Lives?', Science (2003): illustrates the 'default effect' - people overwhelmingly stick with whatever option is pre-selected for them",
+    "Privacy.com and Capital One Eno: consumer virtual-card services that let a user generate a separate card number per merchant and set spending limits or close it at will",
+    "Illustrative math: $14.99/month x 5 months = $74.95",
+    "Callback: ep28 (subscriptions) covered dark patterns, Netflix price creep and the gym breakage study generally; this episode focuses specifically on the free-trial-to-paid conversion mechanism"
+  ],
+  "beats": [
+    {"id": "o1", "text": "Dave wants to watch one show, this weekend. Free seven day trial. He taps sign up.", "pause": 0.3},
+    {"id": "o2", "text": "Five months later, he's scrolling his bank app, and there it is. Fourteen dollars ninety nine cents. Again. And again. And again.", "pause": 0.3},
+    {"id": "o3", "text": "Total damage: seventy four dollars and ninety five cents. For a trial. That was free.", "pause": 0.3},
+    {"id": "o4", "text": "And here's the twist. Dave didn't get scammed. This is exactly how it's supposed to work.", "pause": 0.35},
+    {"id": "o5", "text": "Millions of people are paying this exact kind of bill, right now, without noticing.", "pause": 0.35},
+    {"id": "o6", "text": "Today: why free needs your card, who profits when you forget, and how to trial anything without getting trapped.", "pause": 0.6},
+
+    {"id": "c1a", "chapter": "The Card That Isn't Really Free", "text": "Let's start with the detail everyone skips. To get something free, Dave had to hand over his credit card.", "pause": 0.4},
+    {"id": "c1b", "text": "Stop and think about that. Why would a free gift need your card number at all?", "pause": 0.5},
+    {"id": "c1c", "text": "It's like a store handing you a free sample, but only after you sign a blank check first.", "pause": 0.5},
+    {"id": "c1d", "text": "That card isn't there to give you the free trial. It's there for what happens right after the trial.", "pause": 0.5},
+    {"id": "c1e", "text": "On day eight, that blank check gets cashed. Automatically. No new click required from Dave at all.", "pause": 0.9},
+
+    {"id": "c2a", "chapter": "Breakage: The Business of Forgetting", "text": "There's actually a name for what just happened to Dave's money. Economists call it breakage.", "pause": 0.4},
+    {"id": "c2b", "text": "Breakage is money a company collects for something you technically paid for, but never used.", "pause": 0.5},
+    {"id": "c2c", "text": "Researchers who track this estimate Americans lose about fifteen point five billion dollars a year on forgotten app subscriptions alone.", "pause": 0.5},
+    {"id": "c2d", "text": "Around half of people say they've been charged after forgetting to cancel a free trial, at least once.", "pause": 0.5},
+    {"id": "c2e", "text": "It's like a buffet that quietly charges you for every plate on the table, whether you ever eat off it or not.", "pause": 0.5},
+    {"id": "c2f", "text": "For the company, a forgotten trial isn't a mistake in the system. It's the plan, working exactly as designed.", "pause": 0.9},
+
+    {"id": "c3a", "chapter": "The Switch That's Already Flipped", "text": "So why does a seven day trial turn into a monthly bill, instead of just quietly ending?", "pause": 0.4},
+    {"id": "c3b", "text": "Because of one tiny setting, buried in the signup screen. Auto renew. And it starts switched to ON.", "pause": 0.5},
+    {"id": "c3c", "text": "Behavioral scientists have a name for this too. The default effect. Most people never touch a setting that's already chosen for them.", "pause": 0.5},
+    {"id": "c3d", "text": "Researchers studying organ donation forms found the exact same pattern. Whatever box is pre checked, almost everyone just leaves it that way.", "pause": 0.5},
+    {"id": "c3e", "text": "So the company doesn't need to trick Dave into paying. It just needs him to do nothing. And doing nothing is what almost everybody does.", "pause": 0.9},
+
+    {"id": "c4a", "chapter": "The Price After the Honeymoon", "text": "Here's another trick, hiding in plain sight. The trial price, and the real price, are never the same number.", "pause": 0.4},
+    {"id": "c4b", "text": "Dave's app was free for seven days. After that: fourteen dollars ninety nine, every single month, forever, unless he stops it.", "pause": 0.5},
+    {"id": "c4c", "text": "This shows up everywhere. Streaming apps, meal kits, identity protection software. Cheap or free to start, then the real price kicks in once you're comfortable.", "pause": 0.5},
+    {"id": "c4d", "text": "It's like a parking lot that's free on day one, then quietly starts charging, right after your car is already parked inside.", "pause": 0.5},
+    {"id": "c4e", "text": "The first price gets you in the door. The second price is the one that actually pays the company's bills.", "pause": 0.9},
+
+    {"id": "c5a", "chapter": "The Maze to the Exit", "text": "Okay, Dave finally notices. He wants out. How hard can cancelling really be?", "pause": 0.4},
+    {"id": "c5b", "text": "Sometimes, very hard, on purpose. Designers even have a nickname for these tricks. Dark patterns.", "pause": 0.5},
+    {"id": "c5c", "text": "New York's attorney general sued the radio company SiriusXM in twenty twenty four, saying you could sign up online in a few clicks, but to cancel, you had to call and talk a real person out of it.", "pause": 0.5},
+    {"id": "c5d", "text": "Picture checking into a hotel through a thirty second self checkout kiosk. Then, to check out, you have to track down the manager, and convince him you really want to leave.", "pause": 0.5},
+    {"id": "c5e", "text": "Long hold times. Confusing menus. One more discount offer, right when you try to walk away. Every extra click is one more chance you just give up, and stay.", "pause": 0.9},
+
+    {"id": "c6a", "chapter": "Click to Cancel: The Rule That Got Cancelled", "text": "The government noticed this too. In twenty twenty four, the Federal Trade Commission wrote a simple rule. Click to cancel.", "pause": 0.4},
+    {"id": "c6b", "text": "The idea: if signing up takes one click, cancelling should take about the same effort. No phone maze required.", "pause": 0.5},
+    {"id": "c6c", "text": "Business groups sued to stop it. In July twenty twenty five, a federal appeals court threw the whole rule out, just days before it was supposed to start.", "pause": 0.5},
+    {"id": "c6d", "text": "The court didn't say cancelling should be hard. It said the F T C skipped a required paperwork step, about how much the rule would cost businesses to follow.", "pause": 0.5},
+    {"id": "c6e", "text": "So in twenty twenty six, the F T C reopened the process, and asked the public what a fair rule should actually look like.", "pause": 0.5},
+    {"id": "c6f", "text": "Right now, in twenty twenty six, there is no federal click to cancel rule in force. That could change again. Supporters want it back. Critics call it red tape. Now you know both sides.", "pause": 0.9},
+
+    {"id": "c7a", "chapter": "States Don't Wait for Washington", "text": "While the federal rule sat stuck in court, some states just wrote their own.", "pause": 0.4},
+    {"id": "c7b", "text": "California's law says if you can sign up for a subscription online, you must be able to cancel it online too. Start to finish. No extra hoops.", "pause": 0.5},
+    {"id": "c7c", "text": "If the plan runs a year or longer and renews automatically, the company also has to warn you, fifteen to forty five days before it charges you again.", "pause": 0.5},
+    {"id": "c7d", "text": "Other states, like New York and Illinois, have their own versions of these rules too. Where you happen to live actually changes your rights here.", "pause": 0.5},
+    {"id": "c7e", "text": "It's not one national rulebook yet. It's fifty different rulebooks, slowly getting stricter, one lawsuit at a time.", "pause": 0.9},
+
+    {"id": "c8a", "chapter": "Amazon's Very Expensive Cancel Button", "text": "The biggest example of all involves the button that says end membership.", "pause": 0.4},
+    {"id": "c8b", "text": "The F T C accused Amazon of using confusing screens to sign people up for Prime, and an internal cancellation process nicknamed Iliad. Like the ancient poem. Because leaving allegedly took that long.", "pause": 0.5},
+    {"id": "c8c", "text": "In September twenty twenty five, Amazon agreed to pay a one billion dollar penalty, plus up to one point five billion dollars back to customers, without admitting wrongdoing.", "pause": 0.5},
+    {"id": "c8d", "text": "A court later approved paying even more people back, and raised the refund some customers can get, from fifty one dollars, up to two hundred.", "pause": 0.5},
+    {"id": "c8e", "text": "By September twenty twenty six, Amazon had already sent out more than eight hundred forty five million dollars in refunds. That's how expensive a confusing cancel button can get.", "pause": 0.9},
+
+    {"id": "c9a", "chapter": "How to Trial Anything Without Getting Trapped", "text": "So how does Dave protect himself next time? Remember, this is education, not advice.", "pause": 0.4},
+    {"id": "c9b", "text": "One. Use a virtual card number for trials, not your real one. Tools like Privacy dot com, or your own bank's virtual card feature, let you set a limit, or shut that one number off later, without touching your main card.", "pause": 0.5},
+    {"id": "c9c", "text": "Two. The moment you sign up, open your calendar, and set a reminder for the day before the trial ends. Not the day it ends. The day before.", "pause": 0.5},
+    {"id": "c9d", "text": "Three. Here's the one most people don't know. Cancel immediately, right after you sign up. Cancelling doesn't cut you off. You keep full access until the trial's last day. You've just stopped the auto renew switch from ever firing.", "pause": 0.5},
+    {"id": "c9e", "text": "Four. Once a year, scroll through your bank statement, slowly, and circle anything you don't recognize. Five quiet minutes, against fifteen billion dollars a year in forgotten charges.", "pause": 0.9},
+
+    {"id": "r1", "chapter": "Now You Know", "text": "So let's recap.", "pause": 0.4},
+    {"id": "r2", "text": "One. A free trial asks for your card because the real business starts right after the trial ends, not during it.", "pause": 0.5},
+    {"id": "r3", "text": "Two. Auto renew starts switched on by default, and cancelling is sometimes built to be a maze, on purpose.", "pause": 0.5},
+    {"id": "r4", "text": "Three. A virtual card, a calendar reminder, and cancelling right away, before you even use the free days, close almost every one of these traps.", "pause": 0.6},
+    {"id": "r5", "text": "Next time, Dave and his partner start planning a wedding, and the exact same cake suddenly costs twice as much, the moment they say the word wedding.", "pause": 0.4},
+    {"id": "r6", "text": "Subscribe, so Dave can keep explaining money. It's free. And yes, you can cancel any time. No card required.", "pause": 1.4}
+  ],
+  "youtube": {
+    "title": "Why You Keep Forgetting to Cancel Free Trials (On Purpose)",
+    "alt_titles": [
+      "The Real Reason 'Free Trials' Need Your Credit Card",
+      "You Forgot to Cancel Your Free Trial. That Was the Plan."
+    ],
+    "hook": "Dave signed up for a 'free' 7-day trial and got charged $14.99 a month for 5 months before he noticed. Here's why that's not an accident.",
+    "tags": [
+      "why free trials need your credit card",
+      "how to cancel a subscription you forgot about",
+      "free trial trap explained",
+      "click to cancel rule 2026",
+      "amazon prime ftc settlement",
+      "auto renewal law explained",
+      "dark patterns subscriptions",
+      "virtual credit card for free trials",
+      "breakage revenue subscriptions",
+      "money explained simply",
+      "dave explains money"
+    ],
+    "hashtags": ["#subscriptions", "#personalfinance", "#money"],
+    "pinned": "Be honest: how many active subscriptions do you actually have right now? Guess before you check. 👇"
+  }
+}
