@@ -35,8 +35,8 @@ hook = [b for b in tm["beats"] if b["id"].startswith("o")]
 if not hook:
     problems.append("no hook beats (ids must start with 'o')")
 
-# Retention v3 (PLAYBOOK sec 0) — enforced from ep61 on
-if num.isdigit() and int(num) >= 61:
+# Retention v3 (PLAYBOOK sec 0) — enforced from ep51 on (ep51-60 were rebuilt in v3)
+if num.isdigit() and int(num) >= 51:
     spec = json.loads((ROOT / "pipeline" / "episodes" / f"{ep}.json").read_text(encoding="utf-8"))
     spine = spec.get("spine") or {}
     for k in ("goal", "stakes", "central_question", "loop_big", "loop_mid", "villain", "low_point", "win"):
