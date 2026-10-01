@@ -1,0 +1,31 @@
+name: tts
+run-name: tts ${{ inputs.ep }}
+
+# Voice timings in the cloud (nothing runs on the owner's PC). Artifact <ep>-timings = timings.json + validate report.
+on:
+  workflow_dispatch:
+    inputs:
+      ep:
+        description: Episode id (e.g. ep61)
+        required: true
+
+jobs:
+  tts:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg
+      - run: pip install -q edge-tts numpy
+      - run: python pipeline/tts.py pipeline/episodes/${{ inputs.ep }}.json public/${{ inputs.ep }}
+      - run: python pipeline/validate.py ${{ inputs.ep }} > report.txt 2>&1 || true
+      - run: cp public/${{ inputs.ep }}/timings.json timings.json && python -c "import json;print('total',json.load(open('timings.json'))['total'])" >> report.txt && cat report.txt
+      - uses: actions/upload-artifact@v4
+        with:
+          name: ${{ inputs.ep }}-timings
+          path: |
+            timings.json
+            report.txt
+          retention-days: 7

@@ -35,6 +35,29 @@ hook = [b for b in tm["beats"] if b["id"].startswith("o")]
 if not hook:
     problems.append("no hook beats (ids must start with 'o')")
 
+# Retention v3 (PLAYBOOK sec 0) — enforced from ep61 on
+if num.isdigit() and int(num) >= 61:
+    spec = json.loads((ROOT / "pipeline" / "episodes" / f"{ep}.json").read_text(encoding="utf-8"))
+    spine = spec.get("spine") or {}
+    for k in ("goal", "stakes", "central_question", "loop_big", "loop_mid", "villain", "low_point", "win"):
+        if not spine.get(k):
+            problems.append(f"spine.{k} missing (PLAYBOOK sec 0.2)")
+    if hook and hook[-1]["end"] > 32:
+        problems.append(f"hook too long: {hook[-1]['end']:.1f}s (max 30s, PLAYBOOK sec 0.3)")
+    banned = ["today:", "in this video", "let's start with", "here are three more", "another reason is", "so let's recap", "that's it", "in conclusion", "before we wrap up", "let's talk about"]
+    for b in tm["beats"]:
+        low = b["text"].lower()
+        for p in banned:
+            if p in low:
+                problems.append(f"banned phrase '{p}' in beat '{b['id']}' (PLAYBOOK sec 0.2)")
+        if re.match(r"next,", low):
+            problems.append(f"banned opener 'Next,' in beat '{b['id']}' (PLAYBOOK sec 0.2)")
+    for c in tm.get("chapters", []):
+        if c["title"].strip().lower() == "now you know":
+            problems.append("outro chapter must be 'What Dave Learned', not 'Now You Know' (PLAYBOOK sec 0.4)")
+    if "DAMAGE" not in tsx.upper():
+        problems.append("Damage Meter missing (PLAYBOOK sec 0.5)")
+
 print(f"{ep}: duration {dur:.0f}s ({dur / 60:.1f} min), {len(tm['beats'])} beats, {len(tm.get('chapters', []))} chapters")
 if problems:
     print("PROBLEMS:")

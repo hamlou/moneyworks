@@ -8,6 +8,16 @@ You build ONE episode of the YouTube channel "Dave Explains Money", matching the
 3. Props available: `src/props.tsx` … `src/props8.tsx` (read props8 fully: Jet, MilesCard, Egg, Warehouse, HotDog, Chicken, MemberCard, Pallet, Receipt, Cart, Bottle, AppleTree, Yacht, Tombstone, Paycheck, Scale, ScoreGauge, Star, Notepad, SlicePie, PriceBoard …).
 4. Do NOT make thumbnails — the lead makes all thumbnails with an upgraded kit. In your final report, suggest 3 thumbnail concepts (object + emotion + 1–3 words that don't repeat the title).
 
+## RETENTION & CTR v3 (from ep61 — overrides the templates above where they conflict)
+- Read **PLAYBOOK §0** first. ep01–60 are the template for LOOK, cast, props, SFX and code patterns only — NOT for script structure. Their "Today: X, Y, Z" hooks, topic-bucket chapters, "Let's start with / Next," openers and "So let's recap" outros are exactly what made viewers leave.
+- Title = a people problem (PLAYBOOK §1c): "you/your" + everyday moment + frustration, passes the one-second "that's literally me" test. Topic + title must be approved by the owner before you build anything.
+- Fill `"spine"` in the episode JSON first (goal, stakes, central_question, loop_big, loop_mid, villain, low_point, win). The script is ONE Dave story joined by BUT / SO / THEREFORE; every chapter ends on a cliffhanger line.
+- Hook ≤ 30 s: flash-forward → freeze + rewind → stakes number → central question → withheld payoff. Frame 0 in motion; first 3 s = the thumbnail scene.
+- Damage Meter HUD, pause-and-guess, re-hooks every 60–90 s, villain reveal + SubReminder at ~50 %, payoff in the last minute, "What Dave Learned" outro.
+- `py pipeline/validate.py epNN` enforces spine, hook length, banned phrases, outro title and Damage Meter for ep ≥ 61.
+- Thumbnail concepts: propose 3 DIFFERENT concepts from PLAYBOOK §0.6 (dramatic irony / contrast / your own screen / villain / absurd metaphor), each with its `thumb_question`.
+- Paste the §0.7 pre-flight checklist in your final report.
+
 ## Hard rules
 - **SFX names MUST exist** (render fails on a missing file — ep45/46 broke on `'sparkle'`). Only use: pop, pop2, whoosh, whoosh_s, thud, stamp, coin, cash, click, key, key2, ding, chime, boing, buzz, quack, poof, scribble, marker, paper, flip, crinkle, clank, dream, sting, heart, rip, trombone, cricket, sputter, mail, crowd, tick, step, flutter, draw. Before committing, list the SFX names your EpNN.tsx uses and check each one against this list.
 - Commit with explicit paths: `git commit -- <your paths>` (a plain commit sweeps other builders' staged files).

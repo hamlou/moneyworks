@@ -1,0 +1,50 @@
+name: thumbs
+run-name: thumbs ${{ inputs.ep }}
+
+# Renders ThumbV2 A/B/C for an episode in the cloud + phone-size strip + grid test vs previous episodes' thumbnails.
+on:
+  workflow_dispatch:
+    inputs:
+      ep:
+        description: Episode id (e.g. ep61)
+        required: true
+      prev:
+        description: Space-separated previous episode ids for the grid test (variant A of each)
+        default: ''
+
+jobs:
+  thumbs:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg
+      - run: npm ci --no-audit --no-fund
+      - name: render
+        run: |
+          L='[{"id":"ThumbV2","ep":"${{ inputs.ep }}","v":"A"},{"id":"ThumbV2","ep":"${{ inputs.ep }}","v":"B"},{"id":"ThumbV2","ep":"${{ inputs.ep }}","v":"C"}'
+          for p in ${{ inputs.prev }}; do L="$L,{\"id\":\"ThumbV2\",\"ep\":\"$p\",\"v\":\"A\"}"; done
+          node pipeline/stills.mjs out/t "$L]"
+          mkdir -p thumbs
+          for v in A B C; do cp "out/t/ThumbV2_${{ inputs.ep }}_$v.png" "thumbs/thumb_v2_$v.png"; done
+      - name: phone + grid tests
+        run: |
+          cd out/t
+          E=${{ inputs.ep }}
+          ffmpeg -v error -y -i ThumbV2_${E}_A.png -i ThumbV2_${E}_B.png -i ThumbV2_${E}_C.png -filter_complex "[0]scale=168:-1[a];[1]scale=168:-1[b];[2]scale=168:-1[c];[a][b][c]hstack=3" ../../thumbs/phone168.png
+          for v in A B C; do
+            files="ThumbV2_${E}_$v.png"; for p in ${{ inputs.prev }}; do files="$files ThumbV2_${p}_A.png"; done
+            n=$(echo $files | wc -w); args=""; fl=""; i=0
+            for f in $files; do args="$args -i $f"; fl="$fl[$i]scale=320:180[s$i];"; i=$((i+1)); done
+            cols=5; lay=""; for j in $(seq 0 $((n-1))); do x=$(( (j%cols)*320 )); y=$(( (j/cols)*180 )); lay="$lay|${x}_${y}"; done
+            ins=""; for j in $(seq 0 $((n-1))); do ins="$ins[s$j]"; done
+            if [ $n -gt 1 ]; then ffmpeg -v error -y $args -filter_complex "$fl${ins}xstack=inputs=$n:layout=${lay#|}:fill=black" ../../thumbs/grid_$v.png; fi
+          done
+      - uses: actions/upload-artifact@v4
+        with:
+          name: ${{ inputs.ep }}-thumbs
+          path: thumbs
+          retention-days: 30
