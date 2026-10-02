@@ -1,0 +1,109 @@
+{
+  "id": "ep56",
+  "title": "Why Dropshipping Won't Make You Rich (Even With Sales)",
+  "spine": {
+    "goal": "Dave wants to quit his job with an online store: sell a $30 glowing cat lamp he never touches, and clear $1,800 a month (his napkin math: $18 profit x 100 lamps).",
+    "stakes": "Every dollar comes from his savings and his credit card; one bad month costs him $1,546, and 'scaling up' would multiply it.",
+    "central_question": "Dave made $3,000 in sales. So where did the money go, and why is his bank account $1,546 lighter?",
+    "loop_big": "The one number Dave should have checked before spending a single dollar (his ad ceiling: about $16.80 per customer; he was paying $25). Promised in o6, paid in ch9.",
+    "loop_mid": "Pause-and-guess in ch3 (~30%): out of every 100 people who clicked Dave's ad, how many bought a lamp? Paid in ch4 (~40%): two.",
+    "villain": "Everyone who gets paid whether the store wins or loses: the ad platform (Meta: $59.4B ad revenue in Q2 2026, price per ad +12% y/y) and the store platform/payment processor (Shopify: $39 plan + 2.9% + 30c per sale; $2.78B merchant-solutions revenue in Q2 2026). Shovel sellers in a gold rush. Revealed in ch5 (~50%).",
+    "low_point": "~75%: refunds, chargebacks and slow boats push the damage to $1,546, and Dave's thumb hovers over 'increase budget' to 'scale' a store that loses ~$8 on every sale.",
+    "win": "Dave turns off the ads and does the napkin math (education, not advice): search the product first ($9 elsewhere), test tiny with a stop rule ($50, not $500), read the bank account not the sales screen. He finds the ad ceiling ($16.80 < $25), closes the store and avoids month two: SAVED $1,546."
+  },
+  "sources": [
+    "Illustrative story (dramatized, not a real person's data): Dave's store, the glowing cat lamp, its $12 supplier cost (shipping included), $30 price, 50-cent clicks, 2-in-100 buy rate, 100 sales, 20 refunds and 2 chargebacks are example numbers chosen to show how the store math works; real stores vary widely",
+    "Shopify pricing page (shopify.com/pricing, checked Oct 2026): Basic plan $39 USD/month billed monthly ($29/month billed yearly); online credit card rate on Basic 2.9% + 30 cents (Shopify Payments, US)",
+    "Shopify Help Center, chargeback process (help.shopify.com/en/manual/payments/chargebacks/chargeback-process, 2026): chargeback fee in the United States is $15 USD; if the merchant wins, the disputed amount and fee are returned, otherwise the merchant loses both",
+    "Shopify Help Center, Shopify Payments refunds (help.shopify.com/en/manual/payments/shopify-payments/payouts/refunds, 2026): the original credit card processing fee is not returned to the merchant when an order is refunded",
+    "Meta Platforms, 'Meta Reports Second Quarter 2026 Results' (investor.atmeta.com, July 2026): advertising revenue $59.363 billion in Q2 2026; ad impressions +14% year over year; average price per ad +12% year over year",
+    "Shopify Inc., Q2 2026 results press release (Form 8-K exhibit 99.1, SEC, August 5, 2026): merchant solutions revenue $2,781 million (mostly payments), subscription solutions revenue $802 million, total revenue $3,583 million, GMV $115.57 billion for the quarter ended June 30, 2026",
+    "U.S. Federal Trade Commission, 'Business Guide to the FTC's Mail, Internet, or Telephone Order Merchandise Rule' (ftc.gov): if a seller states no shipping time it must have a reasonable basis to ship within 30 days; if it can't ship on time it must get the buyer's consent to the delay or promptly refund all the money paid for unshipped merchandise",
+    "National Retail Federation and Happy Returns, '2025 Retail Returns Landscape' (NRF press release, Oct 15, 2025): retailers estimated 19.3% of online sales would be returned in 2025 (about 1 in 5); total returns $849.9 billion",
+    "Math (Dave's illustrative month): per lamp $30 - $12 supplier - $1.17 fee ($0.87 + $0.30) = $16.83 before ads (his 'ad ceiling'); 50 clicks x $0.50 = $25 of ads per sale, so -$8.17 per sale. Month: 100 x $30 = $3,000 sales; minus $1,200 lamps, $117 fees, $39 plan, $2,500 ads = -$856; minus 20 refunds x $30 = $600 -> -$1,456; minus 2 chargebacks x ($30 + $15 fee) = $90 -> -$1,546",
+    "Callbacks: episode 2 (raccoon toll booth = card swipe fee) and the classic 'sell shovels in a gold rush' saying (general business idiom, not a statistic)"
+  ],
+  "beats": [
+    {"id": "o1", "text": "Dave's phone buzzes. Three thousand dollars in sales! Then he opens his bank app.", "pause": 0.25},
+    {"id": "o2", "text": "Yep. That's Dave. Rich on paper, broke in real life. Let's rewind one month.", "pause": 0.25},
+    {"id": "o3", "text": "A video promised Dave a store he could run from his couch. No warehouse. Just a laptop.", "pause": 0.25},
+    {"id": "o4", "text": "His real result? Minus one thousand five hundred forty six dollars.", "pause": 0.3},
+    {"id": "o5", "text": "So where did three thousand dollars in sales go? Somebody got paid. Not Dave.", "pause": 0.3},
+    {"id": "o6", "text": "By the end, you'll know who, and the one number Dave should have checked first.", "pause": 0.5},
+
+    {"id": "c1a", "chapter": "A Store From The Couch", "text": "So Dave did exactly what the video said. He opened an online store on Shopify. Thirty nine dollars a month.", "pause": 0.5},
+    {"id": "c1b", "text": "The trick is called dropshipping. Dave never touches a product. A customer buys on his website. Dave forwards the order to a supplier overseas. The supplier mails it straight to the customer.", "pause": 0.5},
+    {"id": "c1c", "text": "Dave is basically a waiter who has never seen the kitchen. He takes your order, smiles, and hopes the food shows up.", "pause": 0.6},
+    {"id": "c1d", "text": "His product? A glowing cat lamp. The supplier charges twelve dollars, shipping included. Dave sells it for thirty.", "pause": 0.5},
+    {"id": "c1e", "text": "Eighteen dollars of profit per lamp! Dave grabbed a napkin. Sell a hundred lamps, make eighteen hundred dollars. Every month.", "pause": 0.5},
+    {"id": "c1f", "text": "But Dave's napkin was missing a few lines. And the first one was hiding inside every single sale.", "pause": 0.8},
+
+    {"id": "c2a", "chapter": "The First Bite", "text": "Then it happened. Dave's first sale. Thirty dollars! He took a screenshot and sent it to his mom.", "pause": 0.5},
+    {"id": "c2b", "text": "But those thirty dollars never fully reached Dave. The payment fee came off first. Two point nine percent, plus thirty cents. About a dollar twenty.", "pause": 0.5},
+    {"id": "c2c", "text": "Remember the raccoon toll booth from our credit card video? Every single sale drives through it. And the raccoon never misses one.", "pause": 0.6},
+    {"id": "c2d", "text": "Then the supplier took its twelve dollars for the lamp. That leaves Dave about sixteen dollars and eighty cents.", "pause": 0.5},
+    {"id": "c2e", "text": "Still not bad! Except for one small problem. Nobody knew Dave's store existed. Eight billion people on Earth, and one visitor a day. His mom.", "pause": 0.6},
+    {"id": "c2f", "text": "So Dave did what every new store owner does. He paid for attention. And attention turned out to be the most expensive thing in the whole store.", "pause": 0.8},
+
+    {"id": "c3a", "chapter": "Paying For Strangers", "text": "Dave filmed a cute video of the lamp, and paid Facebook and Instagram to show it to strangers.", "pause": 0.5},
+    {"id": "c3b", "text": "Every time somebody clicked, Dave paid about fifty cents. And people clicked! For the first time, Dave's store had visitors.", "pause": 0.5},
+    {"id": "c3c", "text": "But a visitor is not a buyer. It's like handing out free cookie samples at the mall. Everybody takes one. Almost nobody buys the cookie jar.", "pause": 0.6},
+    {"id": "c3d", "text": "Quick guess. Out of every hundred people who clicked Dave's ad, how many actually bought a lamp? Write your number in the comments. The answer is in a minute.", "pause": 0.7},
+    {"id": "c3e", "text": "While you think, Dave kept paying. And those ads keep getting pricier. Meta says its average price per ad went up twelve percent in one year.", "pause": 0.5},
+    {"id": "c3f", "text": "Because Dave was not alone. Thousands of other stores were bidding for the same eyeballs. Some of them were selling the exact same lamp.", "pause": 0.5},
+    {"id": "c3g", "text": "At the end of the month, Dave opened his ad bill. And suddenly, the number on his phone made sense.", "pause": 0.8},
+
+    {"id": "c4a", "chapter": "The Ad Bill Arrives", "text": "Here's the answer to the guess. Out of every hundred people who clicked, two bought a lamp. Just two.", "pause": 0.5},
+    {"id": "c4b", "text": "So to sell one lamp, Dave needed fifty clicks. Fifty clicks, at fifty cents each. Twenty five dollars of ads, to sell one thirty dollar lamp.", "pause": 0.5},
+    {"id": "c4c", "text": "Remember his sixteen dollars and eighty cents? Take away twenty five. Dave loses about eight dollars every time he makes a sale.", "pause": 0.6},
+    {"id": "c4d", "text": "It's like a lemonade stand that pays every customer to walk over. The line looks amazing. The cash box is empty.", "pause": 0.6},
+    {"id": "c4e", "text": "Over the whole month, Dave sold one hundred lamps. Three thousand dollars in sales. And two thousand five hundred dollars in ads.", "pause": 0.5},
+    {"id": "c4f", "text": "Add the lamps, the fees and the plan, and Dave was already down eight hundred fifty six dollars.", "pause": 0.6},
+    {"id": "c4g", "text": "Which raised a bigger question. If Dave lost money on every lamp, who exactly made money from his store?", "pause": 0.8},
+
+    {"id": "c5a", "chapter": "Who Got Dave's Money?", "text": "So Dave cut his three thousand dollars into a pie, and followed every slice.", "pause": 0.5},
+    {"id": "c5b", "text": "The biggest slice, two thousand five hundred dollars, went to ads. Meta made fifty nine billion dollars from ads in just three months of twenty twenty six.", "pause": 0.5},
+    {"id": "c5c", "text": "Another slice went to Shopify. The monthly plan, plus a fee on every sale. Shopify's payments side brought in two point seven eight billion dollars in a single quarter.", "pause": 0.5},
+    {"id": "c5d", "text": "And the supplier? Paid for every lamp, up front, before the lamp even left the factory.", "pause": 0.5},
+    {"id": "c5e", "text": "Notice something? Every one of them got paid whether Dave's store won or lost. Dave was the only one taking the risk.", "pause": 0.6},
+    {"id": "c5f", "text": "There's an old saying. In a gold rush, the people who get rich are the ones selling shovels. Dave thought he was the gold miner. He was the shovel customer.", "pause": 0.6},
+    {"id": "c5g", "text": "That's not a crime. That's just how the business works. But Dave's month wasn't over yet. Because a lot of those lamps were still on a boat.", "pause": 0.8},
+
+    {"id": "c6a", "chapter": "The Lamps Come Back", "text": "Dave's inbox filled up. Where is my lamp? The supplier's page said seven to twenty days. Some took much longer.", "pause": 0.5},
+    {"id": "c6b", "text": "And here's a rule Dave had never heard of. In the U S, the FTC says if a seller doesn't promise a shipping time, it has to ship within thirty days. If it can't, the customer can get every cent back.", "pause": 0.5},
+    {"id": "c6c", "text": "Some customers didn't even email. They called their card company and filed a chargeback. Dave lost two of those. Each one cost him the thirty dollars, plus a fifteen dollar fee.", "pause": 0.5},
+    {"id": "c6d", "text": "Then came the returns. Retailers expected about one in five online purchases to be sent back last year. That's from the National Retail Federation.", "pause": 0.5},
+    {"id": "c6e", "text": "Dave got twenty refund requests. But mailing a lamp back overseas cost more than the lamp. So Dave refunded the thirty dollars, and the customers just kept the lamps.", "pause": 0.5},
+    {"id": "c6f", "text": "And when you refund a sale, Shopify keeps its original card fee. It's like returning a pizza and still paying the delivery guy.", "pause": 0.6},
+    {"id": "c6g", "text": "Dave's final damage for the month? One thousand five hundred forty six dollars. On three thousand dollars of sales.", "pause": 0.8},
+
+    {"id": "c7a", "chapter": "Dave Doubles Down", "text": "So Dave had a new plan. If a hundred sales lost money, he would just sell a thousand. More ads. Scale up!", "pause": 0.5},
+    {"id": "c7b", "text": "Dave thought more sales would fix it. Nope. More sales made it worse.", "pause": 0.5},
+    {"id": "c7c", "text": "If every lamp loses eight dollars, a thousand lamps lose eight thousand. Scaling a loss is like fixing a leaky bucket by pouring water in faster.", "pause": 0.6},
+    {"id": "c7d", "text": "This was Dave's lowest moment. Savings gone. Credit card out. His thumb hovering over a big blue button that said, increase budget.", "pause": 0.6},
+    {"id": "c7e", "text": "But before he pressed it, Dave found his old napkin. Because one number on it could have saved him the whole month.", "pause": 0.8},
+
+    {"id": "c8a", "chapter": "Dave Fights Back", "text": "Remember, this is education, not advice. Dave turned off the ads, and did the math the video never showed him.", "pause": 0.5},
+    {"id": "c8b", "text": "Step one. He searched for his own product. Same glowing cat lamp, on a big shopping app. Nine dollars, shipped.", "pause": 0.5},
+    {"id": "c8c", "text": "If customers can buy it cheaper in two taps, Dave isn't adding anything. Except a markup, and a very long wait.", "pause": 0.5},
+    {"id": "c8d", "text": "Step two. Test tiny, with a stop rule. Fifty dollars of ads, not five hundred. If the fifty dollars doesn't come back as profit, stop.", "pause": 0.5},
+    {"id": "c8e", "text": "Step three. Read the bank account, not the sales screen. Sales are the whole pizza. Profit is the slice you actually get to eat.", "pause": 0.8},
+
+    {"id": "c9a", "chapter": "The Napkin Number", "text": "And the one number Dave should have checked first? Sixteen dollars and eighty cents.", "pause": 0.5},
+    {"id": "c9b", "text": "That's thirty dollars, minus the twelve dollar lamp, minus the fee. It's the most Dave could pay to win one customer and still break even. Before a single refund.", "pause": 0.5},
+    {"id": "c9c", "text": "Dave was paying twenty five. He was losing money before he sold his first lamp. One line of math. Thirty seconds. One thousand five hundred forty six dollars.", "pause": 0.6},
+    {"id": "c9d", "text": "So Dave did not press the button. He closed the store. And month two's loss? It never happened.", "pause": 0.6},
+    {"id": "c9e", "text": "Some people do build real businesses online. Usually with something that's hard to copy. Their own product, their own skill. Not the same lamp as ten thousand other stores.", "pause": 0.8},
+
+    {"id": "r1", "chapter": "What Dave Learned", "text": "Sales are not profit. Count every cost.", "pause": 0.4},
+    {"id": "r2", "text": "Know your ad ceiling before you buy a single click.", "pause": 0.4},
+    {"id": "r3", "text": "In a gold rush, the shovel sellers get paid first.", "pause": 0.6},
+    {"id": "r4", "text": "Next time, Dave's brother asks to borrow some money. Just until Friday. Dave says yes. That's the problem.", "pause": 0.5},
+    {"id": "r5", "text": "Subscribe. It's free, it ships instantly, and nobody ever asks for a refund.", "pause": 1.4}
+  ],
+  "youtube": {
+    "title": "Why Dropshipping Won't Make You Rich (Even With Sales)",
+    "hook": "Dave's dropshipping store made $3,000 in sales in its first month. His bank account went down $1,546. We follow every dollar of a $30 lamp: the payment fee, the supplier, the ads, the refunds and the chargebacks, and the one number Dave should have checked first.",
+    "tags": []
+  }
+}
