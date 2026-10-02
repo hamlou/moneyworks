@@ -1,0 +1,102 @@
+{
+  "id": "ep60",
+  "title": "Why Betting Apps Give You $1,000 Free (Then Ban You If You Win)",
+  "spine": {
+    "goal": "Dave wants the 'up to $1,000 free' sign-up bonus from a betting app, starting with his $500 fun budget.",
+    "stakes": "He can lose his $500 (and more) chasing a bonus that has to be bet through 25 times, and he gets cut off the moment he wins.",
+    "central_question": "Why would an app that kept almost $17 billion from Americans last year give Dave $1,000 free, and then kick him out for winning?",
+    "loop_big": "Hook promises the one line in the fine print that shows what the 'free' $1,000 really costs; paid in ch8: $25,000 of required bets x ~4.5% toll = ~$1,136, so the free thousand costs more than a thousand.",
+    "loop_mid": "Pause-and-guess in ch3 (~27%): how much must you bet to unlock the full $1,000? Paid in ch4 (~40%): $25,000 in 90 days.",
+    "villain": "The betting app's business model (revealed ch5-ch6, ~50-65%): a tiny share of losing customers makes most of the revenue (WSJ: 0.5% -> 70%+ at one big sportsbook), winners get limited (Massachusetts data), and losers get VIP perks (NYT Sept 2026 report on a loss-scoring model; DraftKings denies).",
+    "low_point": "~75%: Dave is limited to $2 bets while Bob, down $3,000, gets a VIP host and free tickets. The bonus is a trap, winning gets you cut, losing gets you hugged.",
+    "win": "Dave withdraws his $500 + $640 winnings right away (SAVED $640), reads the playthrough line before any offer, sets a deposit limit, knows his right to ask why he was limited (Massachusetts rule), and knows 1-800-GAMBLER and self-exclusion exist. Education, not advice."
+  },
+  "sources": [
+    "American Gaming Association, State of the States 2026 / Commercial Gaming Revenue Tracker (2025 full year): U.S. commercial sports betting revenue $16.89 billion (+22.6% vs 2024) on about $166.94 billion in handle; implied hold = 16.89 / 166.94 = about 10.1% (about ten cents of every dollar bet). Sports betting revenue (GGR) = what bettors lost net of winnings -> 'Americans lost almost seventeen billion dollars to betting apps'",
+    "DraftKings Sportsbook 20% deposit match promotion terms (as listed Sept-Oct 2026, e.g. SportsBettingDime / ATS.io promo summaries of the operator terms): 20% of first deposit in DK Dollars up to $1,000; $1 released for every $25 played (25x playthrough); 90 days to complete; to get the full $1,000 a customer must deposit $5,000 and play through $25,000. Dave's $500 deposit -> $100 bonus -> $2,500 of play to unlock it. Dave's app in the story is generic (no logo).",
+    "Operator bonus-bet terms (DraftKings / FanDuel bonus bet help pages and promo terms, 2026): bonus bets are site credit with no cash value; a winning bonus bet pays the winnings only, the stake is not returned; DraftKings bonus bets expire 7 days after issue. Example: $50 bonus bet at even odds wins -> $50 paid, not $100. Common 2026 offer: 'Bet $5, get $150-$200 in bonus bets'.",
+    "Standard -110 pricing (math): risk $110 to win $100 on both sides. Break-even win rate = 110 / 210 = 52.38%. At a 50% win rate the expected loss = (0.5 x 110 - 0.5 x 100) / 110 = 4.55% of money bet (about four and a half cents per dollar). $2,500 x 4.55% = about $114; $25,000 x 4.55% = about $1,136.",
+    "Massachusetts Gaming Commission, bettor limitation data and regulation: operators' Dec 2024 data showed about 0.64% of Massachusetts sports wagering accounts had limits, with a direct link between bettors who win more than average and being limited; regulation approved Dec 2025, in force June 1, 2026, requires operators to notify a bettor within 48 hours that their account is limited and give a specific, personalized reason (CBS Sports, Massachusetts becomes first state..., 2026; iGaming Business; State House News).",
+    "Wall Street Journal 2024 review (cited in American Institute for Boys and Men, 'Sensible sports betting: A policy framework', Jan 2026): at one major U.S. sportsbook, 0.5% of the customer base generated more than 70% of the company's revenue.",
+    "The New York Times investigation (Sept 2026; reported by Yahoo/AP-style coverage Sept 25 2026, PlayUSA, Tech Times): reported that DraftKings built a machine-learning model (from 2023) scoring customers by how much they were likely to lose, and that about $400 million in bonus bets and perks went to the highest scorers in 2025; based on 40+ former employees and internal records. DraftKings 'does not use A.I. to target anyone based on losses' and 'vehemently denies' making its offerings addictive. Massachusetts Gaming Commission chair Jordan Maynard directed staff to review how licensed operators use AI.",
+    "Pennsylvania lawsuit (2026) naming online sportsbook VIP hosts as defendants for the first time (gamblingharm.org coverage) -- background only for the VIP host scene, no figures used on screen.",
+    "National Council on Problem Gambling: National Problem Gambling Helpline 1-800-GAMBLER (1-800-426-2537), free, confidential, 24/7. Every U.S. state with legal sports betting runs a voluntary self-exclusion program; most apps offer deposit limits in account settings.",
+    "Dave's story numbers are illustrative: $500 deposit, $140 down after the 25x grind (the expected toll on $2,500 is about $114; Dave was a bit unlucky), a hot streak to +$640, a $2 max-bet limit, Bob down $3,000 with a VIP host. Callbacks: ep02 raccoon toll booth; ep17 (casino house edge) is not repeated -- this episode is about bonus fine print, limiting winners and perks for losers. Teaser: ep61 (why staying loyal to your job keeps you poorer)."
+  ],
+  "beats": [
+    {"id": "o1", "text": "Dave's phone buzzes. Max bet: two dollars. He's winning. And the app just cut him off.", "pause": 0.25},
+    {"id": "o2", "text": "Yep. That's Dave. How did winning get him kicked out? Let's rewind.", "pause": 0.25},
+    {"id": "o3", "text": "Three months earlier. An ad. Up to one thousand dollars. Free.", "pause": 0.25},
+    {"id": "o4", "text": "Last year, Americans lost almost seventeen billion dollars to betting apps.", "pause": 0.25},
+    {"id": "o5", "text": "So why hand Dave a thousand? And why kick him out for winning?", "pause": 0.25},
+    {"id": "o6", "text": "One line in the fine print shows what that thousand really costs.", "pause": 0.6},
+
+    {"id": "c1a", "chapter": "The Thousand Dollar Catch", "text": "So Dave taps the ad. He signs up, and deposits five hundred dollars. His whole fun budget for the football season.", "pause": 0.45},
+    {"id": "c1b", "text": "Then he reads the offer again, slowly. Twenty percent deposit match. Up to one thousand dollars.", "pause": 0.45},
+    {"id": "c1c", "text": "Twenty percent of five hundred is one hundred dollars. To get the full thousand, Dave would have to deposit five thousand.", "pause": 0.45},
+    {"id": "c1d", "text": "It's like a pizza place with a huge sign. Free pizza! And tiny letters underneath. One free slice, for every five pizzas you buy.", "pause": 0.5},
+    {"id": "c1e", "text": "Dave thought the app was just being generous. Nope. That bonus is the price the app is happy to pay, to win a new customer.", "pause": 0.5},
+    {"id": "c1f", "text": "Fine, thinks Dave. A hundred bucks is still free money. Then Bob calls. And Dave learns that free money doesn't pay out like real money.", "pause": 0.8},
+
+    {"id": "c2a", "chapter": "Bonus Bets Aren't Cash", "text": "Bob grabbed a different offer. Bet five dollars, get two hundred dollars in bonus bets.", "pause": 0.45},
+    {"id": "c2b", "text": "He puts a fifty dollar bonus bet on his team, at even odds. They win! Bob expects one hundred dollars back.", "pause": 0.45},
+    {"id": "c2c", "text": "He gets fifty. With a bonus bet, the app keeps the stake. You only get the winnings.", "pause": 0.45},
+    {"id": "c2d", "text": "And bonus bets usually expire in about a week. So Bob has to rush, and bet them on whatever game is on.", "pause": 0.45},
+    {"id": "c2e", "text": "It's like a carnival token. You can play with it all day. But you can never take it home.", "pause": 0.5},
+    {"id": "c2f", "text": "So free bets are worth less than they look. But Dave's own hundred dollars had a much bigger catch. It was locked.", "pause": 0.8},
+
+    {"id": "c3a", "chapter": "The Toll On Every Bet", "text": "Dave opens the rules. His bonus unlocks one dollar at a time. One dollar, for every twenty five dollars he bets.", "pause": 0.45},
+    {"id": "c3b", "text": "Quick guess. To unlock the full thousand dollar bonus, how much would you have to bet? Write your number in the comments. The answer is coming.", "pause": 0.6},
+    {"id": "c3c", "text": "Meanwhile, Dave starts betting. And he notices a little number next to every team. Minus one ten.", "pause": 0.45},
+    {"id": "c3d", "text": "Minus one ten means Dave risks one hundred ten dollars, to win one hundred. On both teams. Same price.", "pause": 0.45},
+    {"id": "c3e", "text": "So if Dave wins exactly half his bets, he still loses money. To break even, he has to win fifty two point four percent.", "pause": 0.45},
+    {"id": "c3f", "text": "Remember the raccoon at the toll booth, from our credit card video? He's back. On average, he keeps about four and a half cents of every dollar Dave bets.", "pause": 0.5},
+    {"id": "c3g", "text": "So Dave keeps crossing the bridge. Twenty five dollars at a time. After a month, his hundred dollar bonus is finally unlocked. Then he checks his balance.", "pause": 0.8},
+
+    {"id": "c4a", "chapter": "Paying More For Free", "text": "Dave is down one hundred forty dollars. To unlock one hundred dollars of free money.", "pause": 0.5},
+    {"id": "c4b", "text": "Here's why. To unlock it, he had to bet two thousand five hundred dollars. And the toll on that much betting is about one hundred fourteen dollars, on average. Dave was a little unlucky on top.", "pause": 0.5},
+    {"id": "c4c", "text": "Now, your guess. To unlock the full thousand, you'd have to bet twenty five thousand dollars. In ninety days.", "pause": 0.5},
+    {"id": "c4d", "text": "Twenty five thousand. That's a whole car's worth of betting, just to unlock a bonus.", "pause": 0.45},
+    {"id": "c4e", "text": "Remember that number. Twenty five thousand. It comes back at the end.", "pause": 0.5},
+    {"id": "c4f", "text": "But then something strange happened. Dave started winning.", "pause": 0.8},
+
+    {"id": "c5a", "chapter": "Why Winners Get Cut", "text": "A football parlay hits. Then a basketball bet. Then another. In two weeks, Dave goes from down one hundred forty, to up six hundred forty dollars.", "pause": 0.45},
+    {"id": "c5b", "text": "He feels like a genius. Then his phone buzzes. Max bet: two dollars. The message from the start.", "pause": 0.5},
+    {"id": "c5c", "text": "This is called limiting. And in most states, it's allowed. The app can cap almost anyone, for almost any reason.", "pause": 0.45},
+    {"id": "c5d", "text": "Massachusetts asked its sportsbooks for the data. Only about zero point six percent of accounts were limited. But regulators saw a direct link. The people getting limited were the ones winning more than average.", "pause": 0.5},
+    {"id": "c5e", "text": "Here's why. A Wall Street Journal review found that at one big American sportsbook, half of one percent of customers made more than seventy percent of the revenue.", "pause": 0.5},
+    {"id": "c5f", "text": "It's an all you can eat buffet. It loves the guy who eats one salad. The guy who eats forty plates of shrimp? Banned. The app doesn't want customers who win. It wants customers who lose.", "pause": 0.5},
+    {"id": "c5g", "text": "Which means the bonus was never a gift. It was bait. And Dave was about to see who it was really aimed at.", "pause": 0.8},
+
+    {"id": "c6a", "chapter": "Bob Gets Presents", "text": "While Dave gets cut off, Bob gets a text. From his new VIP host. Bonus bets, and free tickets to a game.", "pause": 0.45},
+    {"id": "c6b", "text": "Bob is down three thousand dollars this year.", "pause": 0.5},
+    {"id": "c6c", "text": "In September twenty twenty six, the New York Times reported that DraftKings built a computer model that scored customers by how much they were likely to lose.", "pause": 0.45},
+    {"id": "c6d", "text": "The report said about four hundred million dollars in bonuses and perks went to the top scores in twenty twenty five. DraftKings strongly denies targeting anyone based on losses. Massachusetts regulators have opened a review.", "pause": 0.5},
+    {"id": "c6e", "text": "So Dave, the winner, gets a two dollar limit. Bob, the loser, gets a personal host. Same app. Opposite treatment.", "pause": 0.5},
+    {"id": "c6f", "text": "Dave sits on his couch, staring at both phones. The bonus is a trap. Winning gets you cut. Losing gets you hugged. How does anyone come out ahead?", "pause": 0.6},
+    {"id": "c6g", "text": "But there's one move the app really hopes winners never make.", "pause": 0.8},
+
+    {"id": "c7a", "chapter": "Dave Fights Back", "text": "This is education, not advice. Dave opens the app, and taps withdraw. All of it. His five hundred, plus the six hundred forty he won.", "pause": 0.45},
+    {"id": "c7b", "text": "Winnings sitting in an app are easy to bet again. Winnings in the bank are just money.", "pause": 0.5},
+    {"id": "c7c", "text": "Step two. Before taking any free offer, Dave reads one line. The playthrough. How many times do I have to bet this?", "pause": 0.45},
+    {"id": "c7d", "text": "Step three. He sets a deposit limit in the app settings. A number he could lose without hurting, like the price of a concert ticket.", "pause": 0.45},
+    {"id": "c7e", "text": "And if he ever gets limited, he can ask why. Since June twenty twenty six, apps in Massachusetts must tell you within forty eight hours, with a real reason.", "pause": 0.45},
+    {"id": "c7f", "text": "And if betting ever stops being fun, help is free. Call one eight hundred gambler, any time, day or night. Or join your state's self exclusion list, to block yourself from the apps.", "pause": 0.5},
+    {"id": "c7g", "text": "Dave's final score. Six hundred forty dollars, safe in the bank. But he still wanted to know one thing. What would the full free thousand have cost him?", "pause": 0.8},
+
+    {"id": "c8a", "chapter": "The Real Price Of Free", "text": "Dave grabs a napkin. Remember the number? Twenty five thousand dollars of bets, to unlock the full thousand.", "pause": 0.45},
+    {"id": "c8b", "text": "Now add the toll. About four and a half cents on every dollar, on the simplest bets.", "pause": 0.45},
+    {"id": "c8c", "text": "Twenty five thousand, times four and a half percent. About one thousand one hundred thirty six dollars.", "pause": 0.6},
+    {"id": "c8d", "text": "The free thousand costs, on average, more than a thousand. And on parlays it's worse. Across all bets last year, the apps kept about ten cents of every dollar.", "pause": 0.5},
+    {"id": "c8e", "text": "That's why the app smiled when Dave signed up. The thousand was never free. Dave was paying for it, one bet at a time.", "pause": 0.8},
+
+    {"id": "r1", "chapter": "What Dave Learned", "text": "What Dave learned. One. A free bonus is paid for with your own bets.", "pause": 0.4},
+    {"id": "r2", "text": "Two. Winners get limited. Losers get perks.", "pause": 0.4},
+    {"id": "r3", "text": "Three. Read the playthrough, and take your winnings out.", "pause": 0.6},
+    {"id": "r4", "text": "Next time, Dave gets an email from his boss. Congratulations on five loyal years! Here's a two percent raise. So why is staying loyal keeping Dave poorer?", "pause": 0.5},
+    {"id": "r5", "text": "Subscribe, so the raccoon at the toll booth doesn't get you first.", "pause": 1.4}
+  ],
+  "youtube": {
+    "title": "Why Betting Apps Give You $1,000 Free (Then Ban You If You Win)"
+  }
+}
