@@ -1,0 +1,350 @@
+{
+  "id": "ep57",
+  "title": "Why Your Family Pays Everyone Back Except You",
+  "spine": {
+    "goal": "Dave wants his $3,000 emergency fund back from his little brother Danny, without losing his brother.",
+    "stakes": "His entire $3,000 cushion (he ends up putting a $400 tire on his own credit card) and Thanksgiving with his family.",
+    "central_question": "Danny pays his car, phone and credit card on time every month. So why does the $3,000 he owes Dave never get paid?",
+    "loop_big": "The one sentence that would have saved Dave's money and Thanksgiving (paid in 'The One Sentence': 'Is this a gift, or a loan?').",
+    "loop_mid": "Pause-and-guess at ~27%: out of 100 people who lend money expecting it back, how many lose money? Paid ~60 s later: 44 (Bankrate 2025).",
+    "villain": "Everyone with 'teeth' who gets paid first: credit card companies ($14.5B late fees in 2022, ~$160B interest in 2024, CFPB), landlord, car lender. Dave has no late fee, so he is last in the payday line.",
+    "low_point": "Dave asks at Thanksgiving, Danny says 'I thought that was a gift', and the IRS rule (Topic 453) says that without proof of a loan it's a gift. Money gone, brother not texting.",
+    "win": "Dave apologises privately, puts it on one page ($125/month, day after payday, 24 months, both sign) and Danny sets an automatic transfer: Dave becomes a bill. Damage Meter flips to RECOVERING +$125/mo; next ask he uses the sentence and gives a $50 gift instead."
+  },
+  "sources": [
+    "Bankrate 2025 Financial Taboos Survey (YouGov, 2,474 US adults incl. 1,695 who lent money and/or paid a group expense expecting repayment, fieldwork Sept 15-17, 2025), as reported on bankrate.com 'Rules to live by when lending money to friends and family' and bankrate.com/banking/financial-taboos-survey: 70% have lent money or footed a group expense expecting reimbursement; of them 55% had at least one negative consequence, incl. lost money 44%, damaged relationship 26%, about 4% a physical altercation",
+    "Bankrate press release 'Talking About Money Is More Taboo Than Politics And Religion' (Oct 7, 2024, YouGov, 2,502 adults): Senior Industry Analyst Ted Rossman: don't lend more than you can afford to lose; consider treating the money as a gift rather than a loan",
+    "FinanceBuzz family lending survey (1,000 US adults, responses Dec 2024, updated Jan 15, 2025, financebuzz.com/lending-money-to-family-members-survey): siblings are the most common borrowers; 85% of borrowers expected to repay in full vs 2% who never intended to; 8% of lenders expected never to be repaid but 17% now believe they never will be; 26% of lenders had to set up a formal payment plan",
+    "CFPB, 'CFPB Report Finds Credit Card Companies Charged Consumers Record-High $130 Billion in Interest and Fees in 2022' (Oct 25, 2023): consumers were charged $14.5 billion in late fees in 2022",
+    "CFPB 2025 Consumer Credit Card Market Report (Dec 30, 2025), summarized by Orrick (Jan 2026): interest charges rose to $160 billion in 2024 from $105 billion in 2022",
+    "IRS Tax Topic 453, Bad debt deduction (irs.gov/taxtopics/tc453, reviewed Sept 24, 2026): you must show at the time of the transaction you intended to make a loan and not a gift; if you lend to a relative or friend with the understanding they may not repay, you must consider it a gift; nonbusiness bad debts must be totally worthless and are reported as short-term capital losses; evidence of a loan includes a written note, repayment schedule, interest",
+    "IRS Rev. Proc. 2025-32: 2026 annual gift tax exclusion is $19,000 per recipient (gifts within the exclusion generally need no Form 709)",
+    "Illustrative story (dramatized): Dave lends brother Danny $3,000 (his emergency fund) in April; $400 tire on his credit card; repayment plan $125/month x 24 months = $3,000; coworker asks for $500, Dave gives a $50 gift",
+    "Callback: ep02 credit card raccoon"
+  ],
+  "beats": [
+    {
+      "id": "o1",
+      "text": "Thanksgiving. Dave just asked his brother for his three thousand dollars back. In front of Mom.",
+      "pause": 0.3
+    },
+    {
+      "id": "o2",
+      "text": "Freeze. Yep, that's Dave. How did he get here? Let's rewind.",
+      "pause": 0.3
+    },
+    {
+      "id": "o3",
+      "text": "Last spring, Danny's car died. Dave sent his whole emergency fund. No contract. Just a pizza emoji.",
+      "pause": 0.3
+    },
+    {
+      "id": "o4",
+      "text": "Bankrate found fifty five percent of people who lend money expecting it back say something went wrong.",
+      "pause": 0.3
+    },
+    {
+      "id": "o5",
+      "text": "So why does Danny pay everyone on time, except Dave?",
+      "pause": 0.3
+    },
+    {
+      "id": "o6",
+      "text": "Stick around for the one sentence that would have saved his money. And Thanksgiving.",
+      "pause": 0.6
+    },
+    {
+      "id": "c1a",
+      "chapter": "Just Until Payday",
+      "text": "Back in April, Danny calls. His car is dead. No car, no job. He needs three thousand dollars. Just until payday, he says.",
+      "pause": 0.5
+    },
+    {
+      "id": "c1b",
+      "text": "Dave has exactly three thousand dollars saved. His whole emergency fund. Three years of skipped takeout.",
+      "pause": 0.5
+    },
+    {
+      "id": "c1c",
+      "text": "So Dave does what a good big brother does. He opens his banking app, and sends all of it.",
+      "pause": 0.5
+    },
+    {
+      "id": "c1d",
+      "text": "No date. No plan. In the memo line, Danny types one thing. A pizza emoji. That's the whole contract.",
+      "pause": 0.5
+    },
+    {
+      "id": "c1e",
+      "text": "Lending money with no date is like ordering a pizza with no address. Everybody means well. Nobody knows when it's arriving.",
+      "pause": 0.5
+    },
+    {
+      "id": "c1f",
+      "text": "Danny hugs him. I'll pay you back, bro. First thing. And here's the weird part. Danny did start paying. Just not Dave.",
+      "pause": 0.9
+    },
+    {
+      "id": "c2a",
+      "chapter": "Everyone Got Paid But Dave",
+      "text": "May comes. Dave checks in, casually. Hey, how's the car? Danny says, great! Sorry, this month was crazy.",
+      "pause": 0.5
+    },
+    {
+      "id": "c2b",
+      "text": "But the car payment went out. The phone bill went out. The credit card minimum went out. All right on time.",
+      "pause": 0.5
+    },
+    {
+      "id": "c2c",
+      "text": "June. Same thing. July. Same thing. Every bill in Danny's life got paid. Dave got a thumbs up.",
+      "pause": 0.5
+    },
+    {
+      "id": "c2d",
+      "text": "Then Dave's own tire blows out. His emergency fund is sitting inside Danny's car. So Dave puts four hundred dollars on his credit card.",
+      "pause": 0.5
+    },
+    {
+      "id": "c2e",
+      "text": "Now Dave wonders if he's the only person this happens to. Quick guess. Out of every hundred people who lend money expecting it back, how many lose money? Write your number in the comments. The answer is coming in a minute.",
+      "pause": 0.5
+    },
+    {
+      "id": "c2f",
+      "text": "But first, Dave needed to know why he was always last. So he grabbed a napkin, and drew Danny's payday.",
+      "pause": 0.9
+    },
+    {
+      "id": "c3a",
+      "chapter": "The Line At The Deli",
+      "text": "Dave draws a line. Like the line at a deli counter. On payday, every bill takes a number.",
+      "pause": 0.5
+    },
+    {
+      "id": "c3b",
+      "text": "First in line, the landlord. Skip him, and you lose your home. Then the car lender. Skip them, and a tow truck shows up.",
+      "pause": 0.5
+    },
+    {
+      "id": "c3c",
+      "text": "Then the phone company. Skip them, and your phone goes dark. Then the credit card. Skip it, and you get a late fee, plus a hit to your credit score.",
+      "pause": 0.5
+    },
+    {
+      "id": "c3d",
+      "text": "And at the very back of the line, holding a pizza emoji, stands Dave. Skip Dave, and what happens? Nothing. Dave says, no worries.",
+      "pause": 0.5
+    },
+    {
+      "id": "c3e",
+      "text": "Which means Danny isn't choosing to skip Dave. The money just runs out before it reaches the back of the line.",
+      "pause": 0.5
+    },
+    {
+      "id": "c3f",
+      "text": "Every bill in that line had something Dave didn't. And Dave was about to find out what that something is worth. In billions.",
+      "pause": 0.9
+    },
+    {
+      "id": "c4a",
+      "chapter": "Who Has The Teeth?",
+      "text": "First, your guess. In September twenty twenty five, Bankrate surveyed about twenty five hundred American adults.",
+      "pause": 0.5
+    },
+    {
+      "id": "c4b",
+      "text": "Of people who lent money, or covered a bill, expecting to be paid back, forty four percent lost money. Twenty six percent said it damaged the relationship. And four percent got into an actual physical fight.",
+      "pause": 0.5
+    },
+    {
+      "id": "c4c",
+      "text": "So Dave isn't an idiot. He's in very big company. Now, that something. Everyone ahead of Dave in line has teeth.",
+      "pause": 0.5
+    },
+    {
+      "id": "c4d",
+      "text": "Remember our raccoon from the credit card video? In twenty twenty two alone, card companies charged fourteen and a half billion dollars in late fees. That's the C F P B's count.",
+      "pause": 0.5
+    },
+    {
+      "id": "c4e",
+      "text": "By twenty twenty four, they were charging about one hundred sixty billion dollars a year in interest. That's what teeth look like. Bite first, get paid first.",
+      "pause": 0.5
+    },
+    {
+      "id": "c4f",
+      "text": "Dave has no late fee. No interest. No credit report. Dave has a smile. And a smile doesn't bite.",
+      "pause": 0.7
+    },
+    {
+      "id": "c4g",
+      "text": "So Dave figured the problem was Danny. That he just didn't care. Nope. In a FinanceBuzz survey, eighty five percent of family borrowers expected to pay the money back in full. Only two percent never meant to.",
+      "pause": 0.5
+    },
+    {
+      "id": "c4h",
+      "text": "Danny wasn't a villain. He was broke, with a line full of teeth. So Dave decided to grow some teeth. At Thanksgiving. In front of everyone. Bad idea.",
+      "pause": 0.9
+    },
+    {
+      "id": "c5a",
+      "chapter": "Pass The Gravy, Danny",
+      "text": "Thanksgiving. Turkey on the table. Mom is smiling. Dave clears his throat. So, Danny. About my three thousand dollars.",
+      "pause": 0.5
+    },
+    {
+      "id": "c5b",
+      "text": "The room goes silent. Danny drops his fork. Then he says the worst sentence Dave has ever heard. Wait. I thought that was a gift?",
+      "pause": 0.5
+    },
+    {
+      "id": "c5c",
+      "text": "Mom says, Dave, not at the table. Grandma says nothing, and very slowly eats a dinner roll. Nobody throws a punch. Somebody throws a napkin.",
+      "pause": 0.5
+    },
+    {
+      "id": "c5d",
+      "text": "And Dave isn't the only lender who ends up here. In that FinanceBuzz survey, only eight percent of lenders expected to never get paid. Later, seventeen percent believed they never would.",
+      "pause": 0.5
+    },
+    {
+      "id": "c5e",
+      "text": "Money gone. Brother not texting. Dave goes home and searches, how do I prove it was a loan? The answer came from the I R S. And it made everything worse.",
+      "pause": 0.9
+    },
+    {
+      "id": "c6a",
+      "chapter": "The Gift Trap",
+      "text": "Dave opens the I R S page about bad debts. If a personal loan truly can't be repaid, the tax rules may let you count it as a loss.",
+      "pause": 0.5
+    },
+    {
+      "id": "c6b",
+      "text": "But here's the catch. You must show you meant to make a loan, not a gift. Proof looks like a written note, a repayment schedule, or interest.",
+      "pause": 0.5
+    },
+    {
+      "id": "c6c",
+      "text": "And if you lend to a relative knowing they might not pay you back, the I R S says to treat it as a gift. Dave's proof? A pizza emoji.",
+      "pause": 0.5
+    },
+    {
+      "id": "c6d",
+      "text": "The only good news? Dave owes no gift tax. In twenty twenty six, you can give up to nineteen thousand dollars per person, per year, usually with no gift tax paperwork.",
+      "pause": 0.5
+    },
+    {
+      "id": "c6e",
+      "text": "So on paper, Dave didn't make a loan. He gave a present. Without the bow. Money gone, brother gone quiet. This is Dave's lowest point all year.",
+      "pause": 0.5
+    },
+    {
+      "id": "c6f",
+      "text": "But lying on the couch, Dave noticed something. Every bill in Danny's line had teeth. But every one of them also had something boring. Something Dave never asked for. A date.",
+      "pause": 0.9
+    },
+    {
+      "id": "c7a",
+      "chapter": "Dave Becomes A Bill",
+      "text": "This is education, not advice. Dave's comeback has three steps. And none of them happen at the dinner table.",
+      "pause": 0.5
+    },
+    {
+      "id": "c7b",
+      "text": "Step one. Dave calls Danny. Just the two of them. He says, I'm not mad. I made it weird. I just need us to put a date on it.",
+      "pause": 0.5
+    },
+    {
+      "id": "c7c",
+      "text": "Step two. One page. Three thousand dollars. One hundred twenty five dollars a month, the day after payday, for two years. Both sign. Ten minutes. No lawyer.",
+      "pause": 0.5
+    },
+    {
+      "id": "c7d",
+      "text": "And this isn't weird. In that same survey, twenty six percent of lenders ended up setting a formal payment plan to get their money back.",
+      "pause": 0.5
+    },
+    {
+      "id": "c7e",
+      "text": "Step three. Danny sets up an automatic transfer. Now Dave isn't stuck at the back of the deli line. He has a number, like everybody else.",
+      "pause": 0.5
+    },
+    {
+      "id": "c7f",
+      "text": "December. One hundred twenty five dollars lands. January. Another one. Dave didn't grow teeth. He became a bill.",
+      "pause": 0.5
+    },
+    {
+      "id": "c7g",
+      "text": "Then a coworker asked Dave to borrow five hundred dollars. And this time, Dave was ready with one sentence.",
+      "pause": 0.9
+    },
+    {
+      "id": "c8a",
+      "chapter": "The One Sentence",
+      "text": "Before any money moves, Dave asks one question. Is this a gift, or a loan?",
+      "pause": 0.6
+    },
+    {
+      "id": "c8b",
+      "text": "If it's a loan, it gets a date and a page. And if Dave can't afford to lose it, it's not a loan. It's a no, or a smaller gift.",
+      "pause": 0.5
+    },
+    {
+      "id": "c8c",
+      "text": "Even Bankrate's own analyst says it. Don't lend more than you can afford to lose. And think about making it a gift instead.",
+      "pause": 0.5
+    },
+    {
+      "id": "c8d",
+      "text": "So Dave gives his coworker fifty dollars. As a gift. No date. No line. No weird Thanksgiving.",
+      "pause": 0.5
+    },
+    {
+      "id": "c8e",
+      "text": "Gift, or loan? Five words. If Dave had asked them in April, he'd have kept his money. And his Thanksgiving.",
+      "pause": 0.5
+    },
+    {
+      "id": "c8f",
+      "text": "And Danny? He's eight payments in. Still comes to dinner. He even passes Dave the gravy. First.",
+      "pause": 0.9
+    },
+    {
+      "id": "r1",
+      "chapter": "What Dave Learned",
+      "text": "What Dave learned. One. Family pays the bills with teeth first. Without a date, you're last.",
+      "pause": 0.4
+    },
+    {
+      "id": "r2",
+      "text": "Two. With no paper, even the I R S calls it a gift.",
+      "pause": 0.4
+    },
+    {
+      "id": "r3",
+      "text": "Three. Before the money moves, ask. Gift, or loan?",
+      "pause": 0.6
+    },
+    {
+      "id": "r4",
+      "text": "Next time, Dave's cousin calls. He doesn't want money. He just wants Dave's signature. And that's the problem.",
+      "pause": 0.5
+    },
+    {
+      "id": "r5",
+      "text": "Subscribe. It's free. And unlike Danny, you never have to pay it back.",
+      "pause": 1.4
+    }
+  ],
+  "youtube": {
+    "title": "Why Your Family Pays Everyone Back Except You",
+    "alt_titles": [
+      "You Lent Family Money. Why Is Asking for It Back So Awkward?",
+      "Why Lending Money to Family Goes Wrong (It's Not Who You Think)"
+    ],
+    "hook": "",
+    "tags": []
+  }
+}
