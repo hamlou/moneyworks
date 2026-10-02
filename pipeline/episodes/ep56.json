@@ -25,11 +25,11 @@
   ],
   "beats": [
     {"id": "o1", "text": "Dave's phone buzzes. Three thousand dollars in sales! Then he opens his bank app.", "pause": 0.25},
-    {"id": "o2", "text": "Yep. That's Dave. Rich on paper, broke in real life. Let's rewind one month.", "pause": 0.25},
-    {"id": "o3", "text": "A video promised Dave a store he could run from his couch. No warehouse. Just a laptop.", "pause": 0.25},
+    {"id": "o2", "text": "Yep. That's Dave. Rich on paper, broke in real life. Let's rewind.", "pause": 0.25},
+    {"id": "o3", "text": "A video promised Dave an easy store, run from his couch.", "pause": 0.25},
     {"id": "o4", "text": "His real result? Minus one thousand five hundred forty six dollars.", "pause": 0.3},
-    {"id": "o5", "text": "So where did three thousand dollars in sales go? Somebody got paid. Not Dave.", "pause": 0.3},
-    {"id": "o6", "text": "By the end, you'll know who, and the one number Dave should have checked first.", "pause": 0.5},
+    {"id": "o5", "text": "So where did three thousand dollars go? Somebody got paid. Not Dave.", "pause": 0.3},
+    {"id": "o6", "text": "You'll see who. And the one number Dave should have checked first.", "pause": 0.5},
 
     {"id": "c1a", "chapter": "A Store From The Couch", "text": "So Dave did exactly what the video said. He opened an online store on Shopify. Thirty nine dollars a month.", "pause": 0.5},
     {"id": "c1b", "text": "The trick is called dropshipping. Dave never touches a product. A customer buys on his website. Dave forwards the order to a supplier overseas. The supplier mails it straight to the customer.", "pause": 0.5},
