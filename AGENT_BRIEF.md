@@ -12,6 +12,9 @@ You build ONE complete episode of the YouTube channel "Dave Explains Money": scr
 ## WARNING about the old ep51–60 drafts
 The old `pipeline/episodes/ep51–60.json` drafts contain claims that could NOT be verified and look invented (e.g. in ep60: "NY fined DraftKings $75,000 in Dec 2024 for limiting", "$3.2B promo spend", "38% of men 21–34", "helpline calls up 35%"). Treat every number/fact in those drafts as UNVERIFIED: keep it only if you find the primary source yourself; otherwise drop it.
 
+## Thumbnails: the LEAD makes them (Oct 2026)
+Do NOT write src/v2/tNN.tsx and do not run thumbs.yml. In your final report give 3 thumbnail concepts (different §0.6 types) + `thumb_question`. Put `thumb_question` in seo_epNN.json and leave `thumb` as "A".
+
 ## Save progress early
 Sessions can be cut off. Commit + push your JSON as soon as the script is written, and push again after each milestone (tsx compiles, QA pass, thumbs, SEO), so a restarted builder can continue from git.
 
