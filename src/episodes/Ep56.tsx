@@ -774,7 +774,7 @@ export const Ep56: React.FC = () => {
         <Board />
         <Svg>
           <G2 x={960} y={100} s={P(A('c5a'))}><Text size={48}>following every slice of Dave's money</Text></G2>
-          <SlicePie x={520} y={570} s={P(A('c5a')) * bump(pie, 0.06)} rad={300} t={ease(f, pie, pie + 25)} pop={f >= sp ? 1 : f >= sh ? 2 : f >= big ? 0 : -1} slices={slices.map((x) => ({v: x.v / tot, c: f >= x.on ? x.c : '#D8D0BF', l: f >= x.on ? x.l : ''}))} />
+          <SlicePie x={520} y={570} s={P(A('c5a')) * bump(pie, 0.06)} rad={300} t={Math.max(0.15, ease(f, pie, pie + 25))} pop={f >= sp ? 1 : f >= sh ? 2 : f >= big ? 0 : -1} slices={slices.map((x) => ({v: x.v / tot, c: f >= x.on ? x.c : '#D8D0BF', l: f >= x.on ? x.l : ''}))} />
           <G2 x={520} y={960} o={lt(sh, 0.3)}><Text size={34} color={C.blue}>small blue slice: Shopify plan + fees ($156)</Text></G2>
           {f < A('c5c') ? (
             <SourceCard x={1400} y={560} s={0.95 * P(A('c5b')) * bump(fn, 0.08)} o={lt(A('c5b'), 0.3)} org="META" sub="AD REVENUE · Q2 2026" title={['from ads, in 3 months:']} stat={f >= fn ? '$59.4B' : '$??B'} statLabel="Dave's ad slice: $2,500" color={C.red} />
@@ -871,7 +871,7 @@ export const Ep56: React.FC = () => {
           <Svg>
             <G2 x={960} y={110} s={P(A('c6a'))}><Text size={50}>Dave's inbox...</Text></G2>
             {[0, 1, 2, 3].map((i) => (
-              <Notif key={i} x={560} y={300 + i * 150} s={P(wh + i * 8)} w={760} title="Where is my lamp??" body={`order #${1040 + i * 7} · still not here`} hl={i === 3 ? 1 : 0} />
+              <Notif key={i} x={560} y={300 + i * 150} s={P(A('c6a')) * (f >= wh + i * 8 ? bump(wh + i * 8, 0.08) : 0.85)} w={760} title="Where is my lamp??" body={`order #${1040 + i * 7} · still not here`} hl={i === 3 ? 1 : 0} />
             ))}
             <BoatLamps x={1450} y={600} s={0.7 * P(A('c6a'))} f={f} label={f >= lg ? 'DAY 31...' : 'DAY 12'} />
             <G2 x={1450} y={880} o={lt(sv, 0.3)}><Text size={38} color={GRAY}>supplier page: "7-20 days"</Text></G2>
@@ -957,7 +957,7 @@ export const Ep56: React.FC = () => {
           <Board />
           <Svg>
             <G2 x={960} y={110} s={P(A('c6e'))}><Text size={50}>{f >= tr ? '20 refund requests' : 'then came the returns...'}</Text></G2>
-            <RefundStack x={560} y={760} s={1.1 * P(A('c6e'))} n={Math.max(1, Math.min(8, Math.floor((f - tr) / 6) + 1))} />
+            <RefundStack x={560} y={760} s={1.1 * P(A('c6e'))} n={f < tr ? 3 : Math.max(3, Math.min(8, Math.floor((f - tr) / 6) + 1))} />
             <Dave f={f} x={1500} y={930} s={1.1} keys={[{at: 0, pose: 'shrug', expr: 'worried', look: -0.6}, {at: rf, pose: 'facepalm', expr: 'sad'}]} />
             <G2 x={1360} y={420} o={lt(ov, 0.3)}><Text size={38} color={GRAY}>mail it back overseas? costs more than the lamp</Text></G2>
             <G2 x={1360} y={510} o={lt(kp, 0.3)}><Text size={42} color={C.red}>20 × $30 = $600 gone (they kept the lamps)</Text></G2>
