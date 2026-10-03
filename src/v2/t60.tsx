@@ -1,7 +1,7 @@
 import React from 'react';
 import {C} from '../theme';
 import {BaitHook, Banner} from '../props60';
-import {BigNum, Face, Glow, Headline, Hero, Ring, SplitStage, Stage} from './kit';
+import {BigNum, Face, Glow, Headline, Hero, SplitStage, Stage} from './kit';
 
 type V = {v: 'A' | 'B' | 'C'};
 
@@ -24,9 +24,8 @@ export const V2Ep60: React.FC<V> = ({v}) => {
           <Banner title="SPORTSBOOK" body="Max bet: $2.00" w={760} color={C.red} />
         </Hero>
         <Hero x={720} y={450} s={1.25} flat>
-          <Banner title="SPORTSBOOK" body="You're winning too much" w={760} color={C.red} />
+          <Banner title="SPORTSBOOK" body="Your bet limits changed" w={760} color={C.red} />
         </Hero>
-        <Ring x={760} y={250} rx={430} ry={110} />
         <Face cx={170} cy={560} s={2.8} expr="shock" pose="shock" look={0.8} lines sweat rim="#D9C2FF" />
         <Headline x={720} y={80} size={96} anchor="middle" lines={[[{t: 'YOU', c: '#fff'}, {t: 'WON.', c: C.ink, box: C.yellow}]]} />
       </Stage>
