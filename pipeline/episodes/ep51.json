@@ -1,0 +1,366 @@
+{
+  "id": "ep51",
+  "title": "Why Your Trading App Gets Paid When You Lose",
+  "spine": {
+    "goal": "Dave wants to grow his $2,000 car fund on a 'free' zero-commission trading app that feels like a game.",
+    "stakes": "If he keeps tapping, he loses the whole $2,000 car fund (he ends up losing $1,600 of it).",
+    "central_question": "If the trading app is free, who is paying for it?",
+    "loop_big": "Promised in o6: who that somebody is, and the one switch that saved Dave's last $400 (turning options trading off). Paid in ch8.",
+    "loop_mid": "Pause-and-guess at end of ch2 (~30%): how much does the app earn from ONE options contract? Paid in ch4 (~45%): about 48 cents ($314M / 659M contracts, Q4 2025).",
+    "villain": "The zero-commission business model: the app sells Dave's orders (payment for order flow) to a small club of wholesalers who earn the spread; options pay the app ~4x more than stock trades. Revealed in ch4 (~50%).",
+    "low_point": "Ch6 (~75%): at 11 pm Dave chases his losses, puts $600 on options expiring tomorrow, confetti falls, they expire worthless. Damage $1,600, $400 left; the Brazil study says 97% of persistent day traders lose.",
+    "win": "Ch7: Dave turns options trading off, kills notifications, moves the app off his home screen, asks the no-confetti question, automates a boring index fund (education, not advice). Damage Meter flips to SAVED $400."
+  },
+  "sources": [
+    "Robinhood Markets, Inc., Form 10-K for FY2025 (SEC EDGAR, filed Feb 2026), Note 5 Disaggregation of Revenues: options revenue $1,123M in 2025 vs equities $302M (1,123 / 302 = 3.7x); total net revenues $4,473M. 10-K defines PFOF: consideration received for routing users' equity and option orders to market makers/wholesalers.",
+    "Robinhood Q4 & FY2025 results, Exhibit 99.1 to Form 8-K filed Feb 10 2026 (SEC EDGAR): record revenues of $4.5 billion in 2025; Q4 2025 options revenue $314M; Q4 2025 Options Contracts Traded 659 million; each contract generally covers 100 shares. Derived: $314M / 659M contracts = about $0.48 per contract.",
+    "U.S. SEC press release 2020-321 (Dec 17 2020): Robinhood paid $65 million to settle charges of misleading customers about payment for order flow; inferior trade prices deprived customers of $34.1 million even after the commission savings.",
+    "Massachusetts Securities Division administrative complaint vs Robinhood Financial (Docket E-2020-0047, Dec 16 2020), as reported by CNN and Bloomberg Law: confetti after trades, push notifications ('gamification'); one customer with no investment experience made more than 12,700 trades in just over six months. Consent order (Jan 2024): $7.5 million fine; confetti feature discontinued as of March 31 2021.",
+    "Bryzgalova, Pavlova & Sikorskaya, 'Retail Trading in Options and the Rise of the Big Three Wholesalers', Journal of Finance (2023): retail investors favour weekly options with average bid-ask spreads of 12.6% and lose money on average; aggregate retail losses $2.1 billion (Nov 2019 - Jun 2021, 10-day horizon); trading costs $6.4 billion; in 2021 U.S. brokerages received $2.4 billion PFOF for options vs $1.3 billion for equities; top three options wholesalers (Citadel, Susquehanna, Wolverine) ~85% share.",
+    "Chague, De-Losso & Giovannetti, 'Day Trading for a Living?' (SSRN 3423101, 2019): individuals who began day trading Brazilian equity futures 2013-2015; 97% of those who persisted more than 300 days lost money; only 1.1% earned more than the minimum wage; no evidence of learning.",
+    "EU Regulation (EU) 2024/791 (MiFIR review), Art. 39a: ban on payment for order flow; member-state transitional exemption ended 30 June 2026 (fully in force across the EU from that date). In the U.S. PFOF remains legal with disclosure (SEC Rule 606).",
+    "Illustrative story numbers (Dave is fictional): $2,000 car fund; -$90 after first month; -$400 expired weekly options; -$1,000 after chasing; -$600 on one expiring trade = $1,600 lost, $400 left (SAVED). Ep02 raccoon toll booth and ep09 index-fund callbacks."
+  ],
+  "beats": [
+    {
+      "id": "o1",
+      "text": "Dave just lost six hundred dollars in one tap. And his phone is throwing confetti at him.",
+      "pause": 0.3
+    },
+    {
+      "id": "o2",
+      "text": "Yep. That's Dave. How did a free app cost him that much? Let's rewind.",
+      "pause": 0.3
+    },
+    {
+      "id": "o3",
+      "text": "Three months earlier. Zero fees. A free stock. Swipe, tap, buy. Like a game.",
+      "pause": 0.3
+    },
+    {
+      "id": "o4",
+      "text": "Last year, one of these apps made one point one billion dollars from options trades alone.",
+      "pause": 0.3
+    },
+    {
+      "id": "o5",
+      "text": "So if the app is free, who's paying?",
+      "pause": 0.3
+    },
+    {
+      "id": "o6",
+      "text": "By the end, you'll know. And the one switch that saved Dave's last four hundred dollars.",
+      "pause": 0.6
+    },
+    {
+      "id": "c1a",
+      "chapter": "Why Dave Kept Tapping",
+      "text": "So Dave puts in two thousand dollars. His whole car fund. He buys one share of a company he's heard of. And the screen explodes with confetti.",
+      "pause": 0.5
+    },
+    {
+      "id": "c1b",
+      "text": "It feels amazing. Like he just won something. But all he did was press a button.",
+      "pause": 0.5
+    },
+    {
+      "id": "c1c",
+      "text": "Then the notifications start. A stock is moving! Your watchlist is up! Don't miss out! Dave taps. Buys. Sells. Taps again.",
+      "pause": 0.5
+    },
+    {
+      "id": "c1d",
+      "text": "You know how people train a puppy? Click, treat. Click, treat. Pretty soon, the puppy sits before you even ask. Dave was the puppy. The confetti was the treat.",
+      "pause": 0.6
+    },
+    {
+      "id": "c1e",
+      "text": "And this isn't just a joke. In twenty twenty, Massachusetts regulators accused one big trading app of exactly this. Confetti after trades. Constant notifications. They called it gamification.",
+      "pause": 0.5
+    },
+    {
+      "id": "c1f",
+      "text": "In their complaint, one customer with no investing experience made more than twelve thousand seven hundred trades. In about six months.",
+      "pause": 0.5
+    },
+    {
+      "id": "c1g",
+      "text": "That app dropped its confetti in twenty twenty one, and paid seven and a half million dollars to settle in twenty twenty four. But puppy training works on everyone. Including Dave.",
+      "pause": 0.5
+    },
+    {
+      "id": "c1h",
+      "text": "After one month, Dave had made forty trades. And his account was down ninety dollars. Which was weird. Because every trade was free. Right?",
+      "pause": 0.8
+    },
+    {
+      "id": "c2a",
+      "chapter": "The Taxi That Gets Paid",
+      "text": "So Dave digs into the fine print. Why would a company build all this, and charge him nothing?",
+      "pause": 0.5
+    },
+    {
+      "id": "c2b",
+      "text": "Here's what he found. When Dave taps buy, his order doesn't go straight to the stock exchange. The app sells it.",
+      "pause": 0.5
+    },
+    {
+      "id": "c2c",
+      "text": "It sends the order to a giant trading firm, called a wholesaler. And the wholesaler pays the app for it. That's called payment for order flow.",
+      "pause": 0.5
+    },
+    {
+      "id": "c2d",
+      "text": "Picture a taxi driver in a tourist town. A restaurant pays him ten dollars for every tourist he drops at its door. Is the food good? Doesn't matter. He gets paid when you walk in.",
+      "pause": 0.6
+    },
+    {
+      "id": "c2e",
+      "text": "And the wholesaler earns the spread. It buys from you a little cheaper, and sells a little higher. Like an airport money exchange booth. A tiny gap, on every trade.",
+      "pause": 0.5
+    },
+    {
+      "id": "c2f",
+      "text": "Which means the app doesn't really care if Dave wins. It cares that Dave trades. Like the popcorn guy at a football game. He doesn't care who scores.",
+      "pause": 0.5
+    },
+    {
+      "id": "c2g",
+      "text": "And there was one kind of trade that paid the app much more. Options. Quick guess. When Dave buys one options contract, how much does the app get paid? A penny? A dollar? Ten dollars? Write your guess in the comments. The answer is coming.",
+      "pause": 0.8
+    },
+    {
+      "id": "c3a",
+      "chapter": "The Coupon That Expires",
+      "text": "So Dave taps the options button. His buddy at work swears it's how you turn two hundred dollars into two thousand.",
+      "pause": 0.5
+    },
+    {
+      "id": "c3b",
+      "text": "An option is like a coupon. It lets you buy a stock at a set price, but only until a certain date. After that date, the coupon expires.",
+      "pause": 0.5
+    },
+    {
+      "id": "c3c",
+      "text": "Think of a half price pizza coupon. If pizza prices jump, your coupon is gold. But if Friday midnight passes and you didn't use it, it's just paper. And you paid for that paper.",
+      "pause": 0.6
+    },
+    {
+      "id": "c3d",
+      "text": "Dave buys coupons that bet a stock will jump this week. Four hundred dollars of them. The stock moves. Just not enough. Friday comes. Zero.",
+      "pause": 0.6
+    },
+    {
+      "id": "c3e",
+      "text": "Dave's damage is now four hundred ninety dollars. And the app? It got paid the moment he bought those coupons. Win or lose.",
+      "pause": 0.5
+    },
+    {
+      "id": "c3f",
+      "text": "So Dave asked a dangerous question. If the app gets paid every time, who exactly is paying it? And how much?",
+      "pause": 0.8
+    },
+    {
+      "id": "c4a",
+      "chapter": "Who Pays For Free?",
+      "text": "So Dave pulls up the annual report of the most famous zero commission app. It's public. Anyone can read it.",
+      "pause": 0.5
+    },
+    {
+      "id": "c4b",
+      "text": "In twenty twenty five, that app made four point five billion dollars. One point one billion came from options alone. Almost four times what it made from stock trades.",
+      "pause": 0.5
+    },
+    {
+      "id": "c4c",
+      "text": "Remember your guess? In the last three months of twenty twenty five, the app earned three hundred fourteen million dollars from options, on six hundred fifty nine million contracts.",
+      "pause": 0.5
+    },
+    {
+      "id": "c4d",
+      "text": "That's about forty eight cents per contract. Tiny. But tiny, times millions of Daves, every single day.",
+      "pause": 0.6
+    },
+    {
+      "id": "c4e",
+      "text": "And who pays it? A small club of wholesalers. One study found that in twenty twenty one, American brokers got two point four billion dollars for options orders, and only one point three billion for stocks. Three firms paid most of it.",
+      "pause": 0.5
+    },
+    {
+      "id": "c4f",
+      "text": "Remember the raccoon at the toll booth, from our credit card video? He never left. He just got a faster computer.",
+      "pause": 0.6
+    },
+    {
+      "id": "c4g",
+      "text": "Is this illegal? No. In America it's legal, and disclosed. Fans say it keeps trading free. Critics say it pushes apps to make you trade more. Europe banned it in twenty twenty six. That's a political question. Now you know the numbers.",
+      "pause": 0.5
+    },
+    {
+      "id": "c4h",
+      "text": "But Dave still believed one thing. At least his trades were free. He was about to find out what free really costs.",
+      "pause": 0.8
+    },
+    {
+      "id": "c5a",
+      "chapter": "The Price You Never See",
+      "text": "Dave thought zero commission meant he paid nothing. Nope.",
+      "pause": 0.5
+    },
+    {
+      "id": "c5b",
+      "text": "In twenty twenty, the S E C said one big app gave its customers worse prices. They lost thirty four point one million dollars, even after the commissions they saved. The app paid sixty five million dollars to settle.",
+      "pause": 0.5
+    },
+    {
+      "id": "c5c",
+      "text": "And remember that airport money booth? Every time Dave buys and sells, he crosses the gap twice. On the cheap weekly options small traders love, one study found that gap averaged twelve point six percent.",
+      "pause": 0.5
+    },
+    {
+      "id": "c5d",
+      "text": "Imagine buying a phone for one hundred dollars, and the shop instantly offers to buy it back for eighty seven. Before you even open the box.",
+      "pause": 0.6
+    },
+    {
+      "id": "c5e",
+      "text": "Same study. From late twenty nineteen to mid twenty twenty one, small traders lost about two point one billion dollars on options. And paid about six point four billion dollars in hidden trading costs.",
+      "pause": 0.5
+    },
+    {
+      "id": "c5f",
+      "text": "Two weeks later, Dave's damage hit one thousand dollars. And instead of stopping, Dave did what almost everyone does. He tried to win it all back.",
+      "pause": 0.8
+    },
+    {
+      "id": "c6a",
+      "chapter": "The Six Hundred Dollar Tap",
+      "text": "It's eleven at night. Dave has one thousand dollars left. His phone buzzes. A stock is moving. Fast.",
+      "pause": 0.5
+    },
+    {
+      "id": "c6b",
+      "text": "Dave thinks, one big win, and it's all back. He puts six hundred dollars on options that expire tomorrow. Tap. Confetti.",
+      "pause": 0.5
+    },
+    {
+      "id": "c6c",
+      "text": "And here we are. Right back where we started. The next day, the coupons expire. Zero. Damage, sixteen hundred dollars. Four hundred left.",
+      "pause": 0.6
+    },
+    {
+      "id": "c6d",
+      "text": "Dave wondered if he was just bad at this. So he looked for proof that anyone was good at it.",
+      "pause": 0.5
+    },
+    {
+      "id": "c6e",
+      "text": "He found a study from Brazil. Of the people who kept day trading futures for more than three hundred days, ninety seven percent lost money.",
+      "pause": 0.5
+    },
+    {
+      "id": "c6f",
+      "text": "Only about one in a hundred earned more than the minimum wage. And the researchers found no sign that people got better with practice.",
+      "pause": 0.6
+    },
+    {
+      "id": "c6g",
+      "text": "Dave felt like a puppy who just found out the treats were made of his own money. But there was one thing the app really didn't want him to find. A switch.",
+      "pause": 0.8
+    },
+    {
+      "id": "c7a",
+      "chapter": "Dave Flips The Switch",
+      "text": "So Dave opens the settings. This is education, not advice.",
+      "pause": 0.5
+    },
+    {
+      "id": "c7b",
+      "text": "Step one. In many apps, you can turn off options trading, or ask support to remove it. Dave flips it off. No more coupons that melt on Friday.",
+      "pause": 0.5
+    },
+    {
+      "id": "c7c",
+      "text": "Step two. Notifications off. No more clicker. The puppy gets to just be a dog again.",
+      "pause": 0.5
+    },
+    {
+      "id": "c7d",
+      "text": "Step three. Dave moves the app off his home screen. One extra swipe. That tiny wall stops a lot of midnight taps.",
+      "pause": 0.5
+    },
+    {
+      "id": "c7e",
+      "text": "Step four. Before any trade, Dave asks one question. Would I still buy this with no confetti and no buzz? If the answer is no, he closes the app.",
+      "pause": 0.5
+    },
+    {
+      "id": "c7f",
+      "text": "Step five. For his long term money, Dave sets up a boring automatic investment every month, into a low cost index fund. Remember our stock market video? Boring is the point.",
+      "pause": 0.5
+    },
+    {
+      "id": "c7g",
+      "text": "Dave's last four hundred dollars? Still there. Saved. But the best part wasn't the money. It was finally answering the question he started with.",
+      "pause": 0.8
+    },
+    {
+      "id": "c8a",
+      "chapter": "Who Was Paying All Along",
+      "text": "So if the app is free, who's paying?",
+      "pause": 0.5
+    },
+    {
+      "id": "c8b",
+      "text": "Dave was. Not with a fee he could see. With a worse price on every trade. With coupons that melted on Friday. And with his attention, sold one tap at a time.",
+      "pause": 0.6
+    },
+    {
+      "id": "c8c",
+      "text": "The app made about forty eight cents on each contract. Dave lost sixteen hundred dollars. Both happened in the very same tap.",
+      "pause": 0.6
+    },
+    {
+      "id": "c8d",
+      "text": "And the one switch that saved his last four hundred dollars? It wasn't a secret trading trick. It was the off button for options. The one setting the confetti never mentioned.",
+      "pause": 0.9
+    },
+    {
+      "id": "r1",
+      "chapter": "What Dave Learned",
+      "text": "One. Free apps get paid when you trade, not when you win.",
+      "pause": 0.4
+    },
+    {
+      "id": "r2",
+      "text": "Two. Options are coupons that expire. Most small traders lose on them.",
+      "pause": 0.4
+    },
+    {
+      "id": "r3",
+      "text": "Three. Confetti is a clicker. You're allowed to turn it off.",
+      "pause": 0.6
+    },
+    {
+      "id": "r4",
+      "text": "But Dave's problems aren't over. Tonight, a guy in a rented Lamborghini wants to teach him how to trade. Dave has four hundred dollars left. The course costs three hundred ninety nine.",
+      "pause": 0.5
+    },
+    {
+      "id": "r5",
+      "text": "Subscribe, and you'll see what happens. No confetti, we promise. But the raccoon might be back.",
+      "pause": 1.4
+    }
+  ],
+  "youtube": {
+    "title": "Why Your Trading App Gets Paid When You Lose",
+    "alt_titles": [
+      "Your Trading App Is Free. So Who's Paying? (It's You)",
+      "Why Trading Apps Throw Confetti When You Lose Money"
+    ],
+    "hook": "Dave's free trading app felt like a game: confetti, notifications, swipe and tap. Three months later his $2,000 car fund was down to $400, and the app got paid on every single tap. We follow the money: payment for order flow, why options pay the app almost 4x more than stocks, the hidden spread, and the one setting that saved Dave's last $400.",
+    "tags": [],
+    "hashtags": [],
+    "pinned": ""
+  }
+}
