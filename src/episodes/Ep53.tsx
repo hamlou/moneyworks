@@ -88,7 +88,7 @@ export const Ep53: React.FC = () => {
     const fo = w('o1', 'forty');
     const sl = w('o1', 'sell');
     const sk = shake(ff, sl, 12, 14);
-    const n = Math.round(lerp(8, 40, ease(ff, 0, fo + 10)));
+    const n = Math.round(lerp(32, 40, ease(ff, 0, fo + 10)));
     return (
       <AbsoluteFill>
         <Cam f={ff} keys={[[0, 1.15, 960, 560], [50, 1, 960, 540]]}>
@@ -529,8 +529,8 @@ export const Ep53: React.FC = () => {
           <Board />
           <Svg>
             <G2 x={960} y={120} s={P(A('c3d')) * bump(tt)}><Text size={52}>keep going... level 13 needs:</Text></G2>
-            <Bar x={620} y={880} s={1.1 * P(A('c3d')) * bump(bi, 0.12)} h={f >= bi ? 560 : 60} w={300} color={C.red} label="LEVEL 13" value={f >= bi ? '1.2 BILLION' : '?'} />
-            <Bar x={1300} y={880} s={1.1 * P(A('c3d')) * bump(am, 0.12)} h={f >= am ? 160 : 60} w={300} color={C.blue} label="ALL OF AMERICA" value={f >= am ? '342 MILLION' : '?'} />
+            <Bar x={620} y={880} s={1.1 * P(A('c3d')) * bump(bi, 0.12)} h={f >= bi ? 560 : 400} w={300} color={C.red} label="LEVEL 13" value={f >= bi ? '1.2 BILLION' : '?'} />
+            <Bar x={1300} y={880} s={1.1 * P(A('c3d')) * bump(am, 0.12)} h={f >= am ? 160 : 120} w={300} color={C.blue} label="ALL OF AMERICA" value={f >= am ? '342 MILLION' : '?'} />
             <SourceTag f={f} at={am} text="5^13 = 1.22 billion · US Census Vintage 2025: 341.8M" />
           </Svg>
         </AbsoluteFill>
