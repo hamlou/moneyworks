@@ -14,7 +14,7 @@ export const V2Ep58: React.FC<V> = ({v}) => {
   // A — "your own screen": the debt collector calling Dave (same as the first 3 s of the video).
   if (v === 'A')
     return (
-      <Stage a="#E0263F" b="#1A0006" cx={470} cy={390}>
+      <Stage a="#8A3FFC" b="#12002B" cx={470} cy={390}>
         <Glow x={470} y={400} r={300} color="#FFD23F" o={0.3} />
         {[0, 1, 2].map((i) => (
           <circle key={i} cx={470} cy={400} r={330 + i * 40} fill="none" stroke="#FFD23F" strokeWidth={10} opacity={0.55 - i * 0.15} />
@@ -47,7 +47,7 @@ export const V2Ep58: React.FC<V> = ({v}) => {
           <circle cx={30} cy={-175} r={10} fill="#FFD23F" />
           <path d="M -170 -60 Q 0 -110 170 -60 L 200 330 L -200 330 Z" fill="#0B0B10" />
         </g>
-        <Hero x={1060} y={470} r={10}>
+        <Hero x={1120} y={480} r={10}>
           <rect x={-150} y={-70} width={300} height={140} rx={12} fill="#FF3B3B" stroke={C.ink} strokeWidth={8} />
           <T x={0} y={4} size={86} c="#fff">$18,000</T>
         </Hero>
@@ -77,7 +77,7 @@ export const V2Ep58: React.FC<V> = ({v}) => {
         <Stick f={20} x={900} y={560} s={1.1} keys={[{at: 0, pose: 'wave', expr: 'grin', look: 0.8}]} acc={['cap']} seed={21} />
       </g>
       {Array.from({length: 5}).map((_, i) => (
-        <ellipse key={i} cx={300 + i * 32} cy={430 + i * 14} rx={22} ry={12} fill="none" stroke="#D9DEE5" strokeWidth={9} transform={`rotate(${25 + (i % 2) * 50},${300 + i * 32},${430 + i * 14})`} />
+        <ellipse key={i} cx={300 + i * 32} cy={430 + i * 14} rx={30} ry={16} fill="none" stroke="#FFD23F" strokeWidth={12} transform={`rotate(${25 + (i % 2) * 50},${300 + i * 32},${430 + i * 14})`} />
       ))}
       <g filter="url(#pop)">
         <g transform="rotate(18,220,700)">
