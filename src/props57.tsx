@@ -110,14 +110,14 @@ export const Jaw: React.FC<P & {open?: number; color?: string}> = ({open = 0.5, 
   );
 };
 
-export const BillTicket: React.FC<P & {n: number | string; label: string; color?: string; teeth?: boolean; open?: number; hl?: number; w?: number}> = ({n, label, color = C.blue, teeth = true, open = 0.4, hl = 0, w = 300, ...p}) => (
+export const BillTicket: React.FC<P & {n: number | string; label: string; color?: string; teeth?: boolean; open?: number; hl?: number; w?: number; ls?: number; ns?: number}> = ({n, label, color = C.blue, teeth = true, open = 0.4, hl = 0, w = 300, ls, ns = 36, ...p}) => (
   <G {...p}>
     <rect x={-w / 2 + 8} y={-170 + 10} width={w} height={340} rx={24} fill="rgba(35,35,43,0.14)" />
     <rect x={-w / 2} y={-170} width={w} height={340} rx={24} fill={hl ? '#FFF4D6' : '#fff'} {...O} />
     <rect x={-w / 2} y={-170} width={w} height={70} rx={24} fill={color} {...O} />
-    <Text y={-134} size={36} color="#fff">{`#${n}`}</Text>
+    <Text y={-134} size={ns} color="#fff">{`#${n}`}</Text>
     {teeth ? <Jaw y={10} s={0.75} open={open} color={color} /> : <Text y={20} size={60} color="#5B6470">: )</Text>}
-    <Text y={130} size={label.length > 10 ? 30 : 36}>{label}</Text>
+    <Text y={130} size={ls ?? (label.length > 10 ? 30 : 36)}>{label}</Text>
   </G>
 );
 

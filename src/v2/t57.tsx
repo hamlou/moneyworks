@@ -48,7 +48,7 @@ export const V2Ep57: React.FC<V> = ({v}) => {
         {l: 'CARD', c: C.red},
       ].map((b, i) => (
         <Hero key={b.l} x={190 + i * 300} y={440} s={1.15} r={i % 2 ? 3 : -3}>
-          <BillTicket n={i + 1} label={b.l} color={b.c} open={0.75} w={240} />
+          <BillTicket n={i + 1} label={b.l} color={b.c} open={0.75} w={240} ls={62} ns={58} />
         </Hero>
       ))}
       <Hero x={1060} y={690} s={1}>
