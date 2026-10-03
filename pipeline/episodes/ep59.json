@@ -1,0 +1,388 @@
+{
+  "id": "ep59",
+  "title": "Why You'll Probably Work Until 70",
+  "spine": {
+    "goal": "Dave, 35, wants to stop working at 65 like his dad (who stopped at 62 on a pension).",
+    "stakes": "His retirement calculator says 70: five extra years, about 10,400 extra hours of work (5 x 52 x 40).",
+    "central_question": "Who moved Dave's finish line from 65 to 70?",
+    "loop_big": "The one boring line in Dave's account that was quietly stealing years (the 401(k) expense ratio) -> paid at c9: $64,000 difference (DOL example).",
+    "loop_mid": "Pause-and-guess at c3c: typical (median) 401(k) balance for ages 55-64 -> paid at c4d: about $107,000 (Vanguard HAS 2026).",
+    "villain": "Not one bad guy: the RISK moved from employers (pensions) onto workers (401k) + the fee raccoon taking a yearly cut (revealed c5, ~50%).",
+    "low_point": "c7 (~75%): Dave's backup plan 'just work until 70' breaks: 46% of retirees stop earlier than planned (health, company changes); median actual retirement age 62.",
+    "win": "c8-c9: Dave grabs the full employer match, learns the Social Security 62/67/70 dial, and switches from a 1.5% fund to a 0.5% fund -> Damage Meter flips to SAVED $64,000.",
+    "damage_meter": "DAVE'S DAMAGE in years of extra work: +0 (o4 shows target 70) -> +2 YRS at c2e (FRA 67) -> +5 YRS by c4f/c6 -> flips to green SAVED $64,000 at c9e."
+  },
+  "sources": [
+    "Dramatized story: Dave, his dad, the retirement-calculator result (retire at 70), Dave's $25,000 balance, his company's 4% match and his 1.5% vs 0.5% fund choice are illustrative. 'Ten thousand extra hours' = 5 years x 52 weeks x 40 hours = 10,400.",
+    "U.S. Department of Labor, EBSA, Private Pension Plan Bulletin Historical Tables and Graphs 1975-2023: active participants in private-sector defined benefit plans 27.2 million (1975) vs about 11.1 million (2023)",
+    "U.S. Bureau of Labor Statistics, Employee Benefits in the United States, March 2025 (released Sept 25, 2025): 14% of private industry workers had access to defined benefit (pension) plans; 70% had access to defined contribution plans",
+    "Social Security Administration / Social Security Amendments of 1983: full retirement age rises gradually from 65 to 67; it is 67 for anyone born in 1960 or later (first cohort reaches 67 in 2027)",
+    "SSA, Program Explainer: Benefit Claiming Age / CRS R47151 adjustment factors: with FRA 67, claiming at 62 = 70% of the full benefit, at 65 = about 86.7% (about 13% less), at 70 = 124% (delayed retirement credits stop at 70)",
+    "SSA, 'Life Expectancy for Social Security' (ssa.gov/history/lifeexpect.html): men reaching 65 in 1940 could expect to live about 12.7 more years",
+    "CDC/NCHS Data Brief No. 548, Mortality in the United States, 2024 (Jan 2026): life expectancy at age 65 = 19.7 more years (about 20)",
+    "Vanguard, How America Saves 2026 (year-end 2025 data, ~5 million participants in Vanguard-administered plans): median 401(k) balance for ages 55-64 = $107,269 (average $305,006); median for all ages $44,115",
+    "4% rule of thumb (Bengen, 1994) -- a rule of thumb, not a guarantee. Math: $107,269 x 4% = $4,291/yr = about $358/month",
+    "2026 Social Security Trustees Report (June 9, 2026): OASI (retirement) trust fund reserves projected to be depleted in Q4 2032, after which 78% of scheduled benefits are payable (about a 22% cut); combined OASDI funds depleted 2034 with 83% payable",
+    "2026 Trustees Report, covered workers per beneficiary: 5.1 in 1960; about 2.6-2.7 in 2025",
+    "SSA 2026 COLA fact sheet: 2.8% COLA; average retired-worker benefit about $2,071/month (Jan 2026). Math: $2,071 x 22% = about $455/month",
+    "EBRI & Greenwald Research, 2026 Retirement Confidence Survey (online, Jan 2-28, 2026, 2,544 Americans 25+), Fact Sheet #2: workers' median expected retirement age 65 vs retirees' median actual retirement age 62; 39% of workers expect to retire at 70+ or never vs 10% of retirees who did; 46% of retirees retired earlier than planned; of those, 41% cited a health problem or disability and 35% changes at their company",
+    "U.S. Department of Labor, EBSA, 'A Look at 401(k) Plan Fees': $25,000 balance, 35 years, 7% average return: with 0.5% fees grows to $227,000; with 1.5% fees only $163,000 -- a 28% smaller balance. Difference = $64,000",
+    "Callback: episode 02 (credit card raccoon toll booth)"
+  ],
+  "beats": [
+    {
+      "id": "o1",
+      "text": "Dave just turned seventy. He's spending his birthday at work. With a name tag.",
+      "pause": 0.3
+    },
+    {
+      "id": "o2",
+      "text": "Freeze. That's Dave. How did he end up here? Let's rewind.",
+      "pause": 0.3
+    },
+    {
+      "id": "o3",
+      "text": "Dave, age thirty five, types his savings into a retirement calculator. Enter.",
+      "pause": 0.3
+    },
+    {
+      "id": "o4",
+      "text": "Retire at: seventy. Five years later than his dad. Ten thousand extra hours of work.",
+      "pause": 0.3
+    },
+    {
+      "id": "o5",
+      "text": "So who moved Dave's finish line? Because it didn't move by itself.",
+      "pause": 0.3
+    },
+    {
+      "id": "o6",
+      "text": "By the end, you'll know who did it. And the one boring line in Dave's account that was quietly stealing years.",
+      "pause": 0.6
+    },
+    {
+      "id": "c1a",
+      "chapter": "What Did Dad Have?",
+      "text": "So Dave calls his dad. Dad stopped working at sixty two. Dave asks him: how?",
+      "pause": 0.4
+    },
+    {
+      "id": "c1b",
+      "text": "Dad laughs. I had a pension. Every month, my old company sends me a check. For the rest of my life.",
+      "pause": 0.5
+    },
+    {
+      "id": "c1c",
+      "text": "Think of a pension like a vending machine. You work thirty years, and then it drops you a sandwich every month. Forever. You never pack lunch again.",
+      "pause": 0.5
+    },
+    {
+      "id": "c1d",
+      "text": "Dave checks his own job. No vending machine. In nineteen seventy five, about twenty seven million private sector workers were earning a pension like Dad's.",
+      "pause": 0.5
+    },
+    {
+      "id": "c1e",
+      "text": "Today? About eleven million. Even though America has way more workers now. Only about one in seven private workers even has access to one.",
+      "pause": 0.5
+    },
+    {
+      "id": "c1f",
+      "text": "Instead, Dave got a four oh one k. A lunchbox he has to fill himself. And make last.",
+      "pause": 0.5
+    },
+    {
+      "id": "c1g",
+      "text": "But Dad had one more advantage. And this one came from the government.",
+      "pause": 0.9
+    },
+    {
+      "id": "c2a",
+      "chapter": "The Finish Line Moved",
+      "text": "So Dave opens his Social Security statement online. And he spots a weird number. Full retirement age: sixty seven.",
+      "pause": 0.4
+    },
+    {
+      "id": "c2b",
+      "text": "Wait. Isn't it sixty five? It was, for Dad's generation. Then in nineteen eighty three, Congress passed a law that slowly pushed it back.",
+      "pause": 0.5
+    },
+    {
+      "id": "c2c",
+      "text": "If you were born in nineteen sixty or later, full retirement age is sixty seven. Next year, the very first people ever reach it.",
+      "pause": 0.5
+    },
+    {
+      "id": "c2d",
+      "text": "It's like running a marathon, and someone quietly moves the finish line two miles back. While you're still running.",
+      "pause": 0.5
+    },
+    {
+      "id": "c2e",
+      "text": "If Dave stops at sixty five anyway, his check is about thirteen percent smaller. For life. That's two years of Dave's life, gone.",
+      "pause": 0.5
+    },
+    {
+      "id": "c2f",
+      "text": "So Dave checks his lunchbox, to see if it can cover the gap. That's where it got scary.",
+      "pause": 0.9
+    },
+    {
+      "id": "c3a",
+      "chapter": "The Lunchbox Test",
+      "text": "Dave logs into his four oh one k. Twenty five thousand dollars. He feels pretty good about that.",
+      "pause": 0.4
+    },
+    {
+      "id": "c3b",
+      "text": "Then he wonders. What do people who are almost done have? People aged fifty five to sixty four. The finish line is right there.",
+      "pause": 0.5
+    },
+    {
+      "id": "c3c",
+      "text": "Quick guess. What's the typical four oh one k balance for that age group? Write your number in the comments. The answer is coming in a minute.",
+      "pause": 0.7
+    },
+    {
+      "id": "c3d",
+      "text": "While you think, here's the problem. Dad's vending machine never runs out. Dave's lunchbox does.",
+      "pause": 0.5
+    },
+    {
+      "id": "c3e",
+      "text": "And to know how big the box must be, Dave needs one number that nobody knows. How long he'll live.",
+      "pause": 0.9
+    },
+    {
+      "id": "c4a",
+      "chapter": "Living Too Long?",
+      "text": "So Dave looks it up. Back in nineteen forty, when Social Security checks started, a man who reached sixty five lived about twelve more years, on average.",
+      "pause": 0.4
+    },
+    {
+      "id": "c4b",
+      "text": "Today, a sixty five year old can expect about twenty more years. That's great news for Dave. And terrible news for his lunchbox.",
+      "pause": 0.5
+    },
+    {
+      "id": "c4c",
+      "text": "Twenty years of lunches from one box. It's like packing snacks for a weekend trip, and finding out the trip lasts three weeks.",
+      "pause": 0.5
+    },
+    {
+      "id": "c4d",
+      "text": "Now, your guess. For people aged fifty five to sixty four, the typical balance, the median, is about one hundred seven thousand dollars.",
+      "pause": 0.5
+    },
+    {
+      "id": "c4e",
+      "text": "A common rule of thumb says you can take out about four percent a year. That's around four thousand three hundred dollars a year. About three hundred sixty a month.",
+      "pause": 0.5
+    },
+    {
+      "id": "c4f",
+      "text": "Three hundred sixty dollars. Dad gets more than that from his vending machine. So who decided Dave should carry all this? Dave followed the money.",
+      "pause": 0.9
+    },
+    {
+      "id": "c5a",
+      "chapter": "Who Moved The Risk?",
+      "text": "Dave draws two boxes on a napkin. Dad's pension, and his own four oh one k. Then he asks one question. Who carries the risk?",
+      "pause": 0.4
+    },
+    {
+      "id": "c5b",
+      "text": "With a pension, if the stock market crashes, the company still has to pay. If Dad lives to a hundred, the company still pays. The risk sits with the company.",
+      "pause": 0.5
+    },
+    {
+      "id": "c5c",
+      "text": "With a four oh one k, a market crash hits Dave. Living to a hundred? Dave's problem. The risk quietly moved. Off the company's shoulders, and onto Dave's.",
+      "pause": 0.5
+    },
+    {
+      "id": "c5d",
+      "text": "And the numbers show the switch. Seventy percent of private workers can get a four oh one k style plan. Only fourteen percent can get a pension.",
+      "pause": 0.5
+    },
+    {
+      "id": "c5e",
+      "text": "To be fair, four oh one ks have real upsides. Dave owns the money. He keeps it when he switches jobs. And many companies add free money on top.",
+      "pause": 0.5
+    },
+    {
+      "id": "c5f",
+      "text": "So nobody stole Dave's retirement. The whole job of building it was just handed to him.",
+      "pause": 0.5
+    },
+    {
+      "id": "c5g",
+      "text": "And somebody else sat down next to Dave's lunchbox. The raccoon. Remember him from our credit card video? He charges a tiny fee, every single year. Dave never even looked at it.",
+      "pause": 0.9
+    },
+    {
+      "id": "c6a",
+      "chapter": "The Backup Plan Cracks",
+      "text": "So Dave builds a backup plan. Social Security. Dave thought it would run out completely before he gets old. Nope.",
+      "pause": 0.4
+    },
+    {
+      "id": "c6b",
+      "text": "Here's what the official trustees report actually says. Social Security is mostly paid by the taxes of people working today. That money keeps coming in.",
+      "pause": 0.5
+    },
+    {
+      "id": "c6c",
+      "text": "But there's also a savings jar for retirement checks, called a trust fund. And that jar is projected to run empty near the end of twenty thirty two.",
+      "pause": 0.5
+    },
+    {
+      "id": "c6d",
+      "text": "If Congress does nothing, the checks don't stop. They shrink. To about seventy eight percent. A cut of about twenty two percent, for everyone.",
+      "pause": 0.5
+    },
+    {
+      "id": "c6e",
+      "text": "The average retired worker gets about two thousand seventy dollars a month. A twenty two percent cut is about four hundred fifty five dollars. Every month.",
+      "pause": 0.5
+    },
+    {
+      "id": "c6f",
+      "text": "Why? In nineteen sixty, about five workers paid in for every person collecting. Today, fewer than three. Fewer people carrying the same picnic basket.",
+      "pause": 0.5
+    },
+    {
+      "id": "c6g",
+      "text": "Raise taxes? Trim benefits? Raise the age again? A mix? That's a political question. Now you know the numbers.",
+      "pause": 0.5
+    },
+    {
+      "id": "c6h",
+      "text": "So Dave settles on his final plan. Fine. I'll just work until seventy. What could go wrong?",
+      "pause": 0.9
+    },
+    {
+      "id": "c7a",
+      "chapter": "Plan B Breaks",
+      "text": "Dave tells his neighbor Bob about the plan. Bob is sixty. Bob goes very quiet.",
+      "pause": 0.4
+    },
+    {
+      "id": "c7b",
+      "text": "Because here's what the big Retirement Confidence Survey found. Workers expect to retire at sixty five. Retirees say they actually stopped at sixty two.",
+      "pause": 0.5
+    },
+    {
+      "id": "c7c",
+      "text": "Almost four in ten workers plan to work until seventy, or never stop. Only one in ten retirees actually did.",
+      "pause": 0.5
+    },
+    {
+      "id": "c7d",
+      "text": "Forty six percent of retirees left work earlier than they planned. Many because of a health problem. Others because their company changed things.",
+      "pause": 0.5
+    },
+    {
+      "id": "c7e",
+      "text": "Dave's plan was to outrun the problem. But your body and your boss get a vote too. Working until seventy isn't a plan. It's a hope.",
+      "pause": 0.5
+    },
+    {
+      "id": "c7f",
+      "text": "Dave sits down, defeated. And then he remembers the raccoon. And that tiny fee he never checked.",
+      "pause": 0.9
+    },
+    {
+      "id": "c8a",
+      "chapter": "Dave Fights Back",
+      "text": "This part is education, not advice. Dave makes three moves. Move one. He asks his boss if the company adds money when he saves.",
+      "pause": 0.4
+    },
+    {
+      "id": "c8b",
+      "text": "It does. They match up to four percent of his pay. Dave was only putting in two. So every paycheck, he was leaving free money on the table. He bumps it to four.",
+      "pause": 0.5
+    },
+    {
+      "id": "c8c",
+      "text": "Move two. The Social Security dial. Claim at sixty two, and Dave gets about seventy percent of his full check. At sixty seven, one hundred percent. At seventy, about one hundred twenty four percent.",
+      "pause": 0.5
+    },
+    {
+      "id": "c8d",
+      "text": "That's why seventy keeps coming up. It's the age where the check stops growing. And Dave can check his own numbers for free, on his Social Security statement.",
+      "pause": 0.5
+    },
+    {
+      "id": "c8e",
+      "text": "Move three. The boring line.",
+      "pause": 0.7
+    },
+    {
+      "id": "c9a",
+      "chapter": "The Boring Line",
+      "text": "Dave opens his four oh one k again. He scrolls past the colorful charts. Down to one tiny line. Expense ratio.",
+      "pause": 0.4
+    },
+    {
+      "id": "c9b",
+      "text": "His fund charges one and a half percent a year. A plain index fund in the same plan charges half a percent.",
+      "pause": 0.5
+    },
+    {
+      "id": "c9c",
+      "text": "The U.S. Department of Labor did this exact math. Twenty five thousand dollars. Thirty five years. Seven percent returns.",
+      "pause": 0.5
+    },
+    {
+      "id": "c9d",
+      "text": "With one and a half percent in fees, it grows to about one hundred sixty three thousand. With half a percent, about two hundred twenty seven thousand.",
+      "pause": 0.5
+    },
+    {
+      "id": "c9e",
+      "text": "Same Dave. Same savings. Sixty four thousand dollars more. From one boring line. That's years of retirement the raccoon was quietly eating.",
+      "pause": 0.5
+    },
+    {
+      "id": "c9f",
+      "text": "Dave's finish line didn't jump back to sixty two. But for the first time, Dave is the one moving it.",
+      "pause": 0.9
+    },
+    {
+      "id": "r1",
+      "chapter": "What Dave Learned",
+      "text": "One. The finish line moved, and the risk moved onto you.",
+      "pause": 0.4
+    },
+    {
+      "id": "r2",
+      "text": "Two. Working until seventy is a hope, not a plan.",
+      "pause": 0.4
+    },
+    {
+      "id": "r3",
+      "text": "Three. Grab the match, and check the boring line.",
+      "pause": 0.7
+    },
+    {
+      "id": "r4",
+      "text": "Next time, a betting app hands Dave a thousand dollars. Free. He wins. And the app bans him. Wait, what?",
+      "pause": 0.5
+    },
+    {
+      "id": "r5",
+      "text": "Subscribe, so you can retire before Dave does. It's free. Even the raccoon can't charge a fee on it.",
+      "pause": 1.4
+    }
+  ],
+  "youtube": {
+    "title": "Why You'll Probably Work Until 70",
+    "alt_titles": [
+      "Your Dad Retired at 62. Why Can't You?",
+      "Who Moved Your Retirement Finish Line?"
+    ],
+    "hook": "Dave's retirement calculator says he'll work until 70 -- five years longer than his dad. Who moved the finish line?",
+    "tags": []
+  }
+}
