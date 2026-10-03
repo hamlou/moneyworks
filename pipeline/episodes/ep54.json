@@ -27,86 +27,370 @@
     "Callback: ep49 (free trials) and the raccoon from ep02"
   ],
   "beats": [
-    {"id": "o1", "text": "Two A M. Dave is about to tap a ninety nine dollar button. In a free game.", "pause": 0.25},
-    {"id": "o2", "text": "Yep. That's Dave. The guy who swore he'd never pay. Let's rewind.", "pause": 0.25},
-    {"id": "o3", "text": "Three weeks ago. A free dragon game, for the bus. Dave's rule: never pay a cent.", "pause": 0.25},
-    {"id": "o4", "text": "Problem is, people spent eighty two billion dollars inside mobile games last year.", "pause": 0.25},
-    {"id": "o5", "text": "So who's taking it? And how, without Dave ever noticing?", "pause": 0.25},
-    {"id": "o6", "text": "By the end, you'll see the dragon's real price. The game hid it on purpose.", "pause": 0.5},
-
-    {"id": "c1a", "chapter": "Ten Gems Short", "text": "Day one. Dave taps install. No card, no charge. Just a cute dragon game and twenty minutes on the bus.", "pause": 0.4},
-    {"id": "c1b", "text": "And honestly? It's great. Level one. Level five. Level ten. Free, free, free.", "pause": 0.5},
-    {"id": "c1c", "text": "Then level twelve. A boss. Dave loses. Again. And again. On try number nine, his energy bar hits empty.", "pause": 0.5},
-    {"id": "c1d", "text": "The screen gives him two choices. Wait four hours. Or refill now, for two hundred gems.", "pause": 0.5},
-    {"id": "c1e", "text": "Dave checks his gems. One hundred ninety. Ten short. Ten! And the smallest pack of gems costs four ninety nine.", "pause": 0.5},
-    {"id": "c1f", "text": "It's like a theme park with free entry, where the roller coaster stops halfway up the hill and asks for a dollar.", "pause": 0.6},
-    {"id": "c1g", "text": "So Dave taps buy. Five bucks, whatever. But that one tap just told the game the most valuable thing it will ever know about him. He pays.", "pause": 0.9},
-
-    {"id": "c2a", "chapter": "Funny Money", "text": "So the next day, Dave opens the shop to buy gems properly. And he notices something weird.", "pause": 0.4},
-    {"id": "c2b", "text": "Nothing in the shop costs dollars. A dragon egg? Three hundred twenty gems. A speed boost? Fifty gems.", "pause": 0.5},
-    {"id": "c2c", "text": "And gems only come in packs. Five hundred. One thousand. Two thousand five hundred, with a big yellow sticker that says best value.", "pause": 0.5},
-    {"id": "c2d", "text": "It's like landing in a foreign country with funny colorful money. Day one, you do the math. By day three, you just hand over the paper.", "pause": 0.6},
-    {"id": "c2e", "text": "And this isn't Dave being silly. In twenty twenty five, the F T C, America's consumer watchdog, fined the maker of Genshin Impact twenty million dollars.", "pause": 0.5},
-    {"id": "c2f", "text": "The F T C said the game's layers of virtual money, with exchange rates in unusual numbers, hid how much real money players were spending.", "pause": 0.5},
-    {"id": "c2g", "text": "Dave buys the best value pack anyway. Nineteen ninety nine. And because nothing costs exactly that many gems, he ends up with leftovers. Just sitting there.", "pause": 0.5},
-    {"id": "c2h", "text": "Quick guess, while Dave stares at his leftover gems. On a normal day, out of every hundred people playing games like this, how many pay anything at all? Write your number in the comments. The answer is coming.", "pause": 0.6},
-    {"id": "c2i", "text": "Because that night, a new message popped up on Dave's screen. Season three starts now.", "pause": 0.9},
-
-    {"id": "c3a", "chapter": "The Chore Chart You Bought", "text": "The message offers Dave a season pass. Nine ninety nine. One hundred rewards, over thirty days.", "pause": 0.4},
-    {"id": "c3b", "text": "But here's the catch. You don't get the rewards when you pay. You earn them by playing. Every single day. One tier at a time.", "pause": 0.5},
-    {"id": "c3c", "text": "Miss a few days, and the season ends before you reach the good stuff. Then everything resets. And a brand new pass goes on sale.", "pause": 0.5},
-    {"id": "c3d", "text": "It's like paying ten dollars for a chore chart. The chores are fun. Until you're doing them at midnight so you don't lose your stickers.", "pause": 0.6},
-    {"id": "c3e", "text": "So Dave buys it. And now he's opening the game at eleven fifty eight P M, just to tap claim before the day ends.", "pause": 0.6},
-    {"id": "c3f", "text": "But the pass was just the warm up. That Friday, Dave met the thing that makes these games truly rich. A glowing egg.", "pause": 0.9},
-
-    {"id": "c4a", "chapter": "The Glowing Egg", "text": "A banner explodes across Dave's screen. Legendary fire dragon. Forty eight hours only.", "pause": 0.4},
-    {"id": "c4b", "text": "But you can't buy the dragon. You buy pulls. Each pull cracks open a magic egg, and the egg picks a random prize.", "pause": 0.5},
-    {"id": "c4c", "text": "Dave reads the small print. Chance of a legendary on each pull: zero point six percent. That's about one in a hundred sixty seven.", "pause": 0.5},
-    {"id": "c4d", "text": "Imagine a cereal where one box in a hundred sixty seven has a gold toy. Every box costs two dollars. And the cereal is just air.", "pause": 0.6},
-    {"id": "c4e", "text": "There is a safety net. The game promises a legendary by pull ninety. Ninety sounds far away. But the timer is ticking.", "pause": 0.5},
-    {"id": "c4f", "text": "So Dave buys the big pack. Ninety nine ninety nine. Fifty pulls. Rainbow lights. Drum rolls. Common sword. Common shield. Common potato.", "pause": 0.6},
-    {"id": "c4g", "text": "Sixty pulls in, still no dragon. Dave feels like the unluckiest player alive. But he isn't unlucky. He's exactly who this game was built for.", "pause": 0.9},
-
-    {"id": "c5a", "chapter": "Who Pays The Bills?", "text": "So Dave did something new. He went looking for who actually pays for these free games.", "pause": 0.4},
-    {"id": "c5b", "text": "He found the yearly report of Playtika, a big mobile game company that has to share its numbers with U S regulators.", "pause": 0.5},
-    {"id": "c5c", "text": "Remember your guess? On an average day in twenty twenty five, about eight and a half million people played its games. How many paid? Three hundred seventy thousand.", "pause": 0.5},
-    {"id": "c5d", "text": "That's about four people out of every hundred. Ninety six play for free. Four pay the bills. And that year, the bills came to two point seven billion dollars.", "pause": 0.6},
-    {"id": "c5e", "text": "Picture a restaurant where ninety six people eat for free, and four people pay for everything. The waiter isn't watching the free eaters. He's watching who orders dessert.", "pause": 0.6},
-    {"id": "c5f", "text": "The biggest spenders even have a name inside the industry. Whales. And a study in the journal Addictive Behaviors looked at almost eight thousand loot box buyers.", "pause": 0.5},
-    {"id": "c5g", "text": "The top five percent of spenders, paying over a hundred dollars a month, brought in half of all the loot box money.", "pause": 0.6},
-    {"id": "c5h", "text": "That's the villain. Not one bad guy. A money machine built to find the few people who will pay a lot, and keep them paying. And on iPhones in the U S, Apple's standard cut of every purchase is thirty percent.", "pause": 0.6},
-    {"id": "c5i", "text": "Dave figured whales must be rich guys with yachts. He was about to find out how wrong that was.", "pause": 0.9},
-
-    {"id": "c6a", "chapter": "Whales Aren't Rich", "text": "Dave thought whales were millionaires, buying dragons with pocket change. Nope.", "pause": 0.4},
-    {"id": "c6b", "text": "That same study checked if the big spenders earned more money. They didn't. No link at all between spending and income.", "pause": 0.5},
-    {"id": "c6c", "text": "What did go up with spending? Signs of problem gambling. The researchers said these games profit most from people at risk, not from the rich.", "pause": 0.5},
-    {"id": "c6d", "text": "And sometimes the whale is a kid. The F T C said some children spent hundreds, even thousands of dollars chasing Genshin's five star prizes.", "pause": 0.5},
-    {"id": "c6e", "text": "Fortnite's maker, Epic Games, had to pay two hundred forty five million dollars after the F T C said its buttons tricked players into purchases. By mid twenty twenty five, about two hundred million had gone back to players.", "pause": 0.6},
-    {"id": "c6f", "text": "But Dave didn't feel tricked. He felt close. Which is how he ended up right here. Two A M. Thumb over the ninety nine dollar button.", "pause": 0.5},
-    {"id": "c6g", "text": "Tap. Fifty more pulls. Pull eighty five. Gold light! A legendary! A legendary knight. Not the dragon.", "pause": 0.5},
-    {"id": "c6h", "text": "The fine print: a coin flip decides if your legendary is the one on the banner. Dave lost the flip. The dragon is now guaranteed. Within ninety more pulls.", "pause": 0.6},
-    {"id": "c6i", "text": "Two hundred thirty five dollars. Three weeks. Zero dragons. And for the first time, Dave put the phone down.", "pause": 0.9},
-
-    {"id": "c7a", "chapter": "Dave Fights Back", "text": "The next morning, Dave did three things. Quick reminder, this is education, not advice.", "pause": 0.4},
-    {"id": "c7b", "text": "One. He opened his purchase history in the app store and added it all up. Five charges. Two hundred thirty four dollars and ninety five cents. Seeing it as one number hurt more than the knight.", "pause": 0.6},
-    {"id": "c7c", "text": "Two. He built a speed bump. On iPhone, Screen Time can switch off in app purchases. On Android, Google Play can ask for verification on every purchase. And he deleted his saved card.", "pause": 0.6},
-    {"id": "c7d", "text": "Three. The dollar rule. Before buying anything, he turns the gems back into dollars. And his game budget is now one twenty dollar gift card a month. When it's gone, it's gone.", "pause": 0.6},
-    {"id": "c7e", "text": "At his old pace, two hundred thirty five dollars every three weeks, that's about four thousand dollars a year. With the gift card, it's two hundred forty. Dave keeps about three thousand eight hundred.", "pause": 0.6},
-    {"id": "c7f", "text": "But one question still bugged him. What did that dragon actually cost?", "pause": 0.9},
-
-    {"id": "c8a", "chapter": "The Dragon's Real Price", "text": "So Dave used the dollar rule on the dragon itself.", "pause": 0.4},
-    {"id": "c8b", "text": "His game uses the same rules that Genshin Impact publishes. Zero point six percent. A legendary by pull ninety. And the coin flip.", "pause": 0.5},
-    {"id": "c8c", "text": "Each pull costs one hundred sixty gems. A ninety nine dollar pack gives about eight thousand gems. So every pull is about two dollars.", "pause": 0.5},
-    {"id": "c8d", "text": "Worst case, you reach pull ninety, lose the coin flip, and need ninety more. One hundred eighty pulls.", "pause": 0.5},
-    {"id": "c8e", "text": "One hundred eighty pulls, at about two dollars each. The dragon's real price? Up to three hundred fifty six dollars, before a few free gems.", "pause": 0.6},
-    {"id": "c8f", "text": "The banner said one hundred sixty gems. It never once said three hundred fifty six dollars. That's not an accident. That's the business.", "pause": 0.6},
-    {"id": "c8g", "text": "Dave wasn't playing the game. The game was playing Dave. And it kept score in his bank account.", "pause": 0.9},
-
-    {"id": "r1", "chapter": "What Dave Learned", "text": "One. Gems are dollars in a costume. Take the costume off.", "pause": 0.4},
-    {"id": "r2", "text": "Two. About four in a hundred players pay for everyone, and the game is hunting for them.", "pause": 0.4},
-    {"id": "r3", "text": "Three. Build the speed bump before two A M, not during.", "pause": 0.6},
-    {"id": "r4", "text": "Next time, Dave's friend Bob is getting divorced. The lawyer says it'll be quick and simple. Then the first bill arrives.", "pause": 0.5},
-    {"id": "r5", "text": "Subscribe. It's free. Actually free. No gems, no eggs, no coin flips. We checked.", "pause": 1.4}
+    {
+      "id": "o1",
+      "text": "Two A M. Dave is about to tap a ninety nine dollar button. In a free game.",
+      "pause": 0.2
+    },
+    {
+      "id": "o2",
+      "text": "Yep. That's Dave. Let's rewind.",
+      "pause": 0.2
+    },
+    {
+      "id": "o3",
+      "text": "Three weeks ago. A free dragon game, for the bus. Dave's rule: never pay a cent.",
+      "pause": 0.2
+    },
+    {
+      "id": "o4",
+      "text": "But people spent eighty two billion dollars inside mobile games last year.",
+      "pause": 0.2
+    },
+    {
+      "id": "o5",
+      "text": "So who's taking it? And how, without Dave noticing?",
+      "pause": 0.2
+    },
+    {
+      "id": "o6",
+      "text": "By the end, you'll see the dragon's real price. The game hid it.",
+      "pause": 0.45
+    },
+    {
+      "id": "c1a",
+      "chapter": "Ten Gems Short",
+      "text": "Day one. Dave taps install. No card, no charge. Just a cute dragon game and twenty minutes on the bus.",
+      "pause": 0.4
+    },
+    {
+      "id": "c1b",
+      "text": "It's great. Level one. Level five. Level ten. Free, free, free.",
+      "pause": 0.5
+    },
+    {
+      "id": "c1c",
+      "text": "Then level twelve. A boss. Dave loses. Again. And again. His energy bar hits empty.",
+      "pause": 0.5
+    },
+    {
+      "id": "c1d",
+      "text": "The screen gives him two choices. Wait four hours. Or refill now, for two hundred gems.",
+      "pause": 0.5
+    },
+    {
+      "id": "c1e",
+      "text": "Dave checks his gems. One hundred ninety. Ten short. Ten! And the smallest pack of gems costs four ninety nine.",
+      "pause": 0.5
+    },
+    {
+      "id": "c1f",
+      "text": "It's like a theme park with free entry, where the roller coaster stops halfway up the hill and asks for a dollar.",
+      "pause": 0.6
+    },
+    {
+      "id": "c1g",
+      "text": "So Dave taps buy. Five bucks, whatever. But that tap just told the game the most valuable thing about him. He pays.",
+      "pause": 0.9
+    },
+    {
+      "id": "c2a",
+      "chapter": "Funny Money",
+      "text": "The next day, Dave opens the shop. And he notices something weird.",
+      "pause": 0.4
+    },
+    {
+      "id": "c2b",
+      "text": "Nothing in the shop costs dollars. A dragon egg? Three hundred twenty gems. A speed boost? Fifty gems.",
+      "pause": 0.5
+    },
+    {
+      "id": "c2c",
+      "text": "And gems only come in packs, with a big yellow sticker that says best value.",
+      "pause": 0.5
+    },
+    {
+      "id": "c2d",
+      "text": "It's like landing in a foreign country with funny colorful money. Day one, you do the math. By day three, you just hand over the paper.",
+      "pause": 0.6
+    },
+    {
+      "id": "c2e",
+      "text": "And it's not just Dave. In twenty twenty five, the F T C, America's consumer watchdog, fined the maker of Genshin Impact twenty million dollars.",
+      "pause": 0.5
+    },
+    {
+      "id": "c2f",
+      "text": "It said the game's layers of virtual money, with exchange rates in unusual numbers, hid how much real money players spent.",
+      "pause": 0.5
+    },
+    {
+      "id": "c2g",
+      "text": "Dave buys the best value pack. Nineteen ninety nine. Nothing costs exactly that many gems, so he ends up with leftovers.",
+      "pause": 0.5
+    },
+    {
+      "id": "c2h",
+      "text": "Quick guess. On a normal day, out of every hundred people playing games like this, how many pay anything at all? Write your number in the comments.",
+      "pause": 0.6
+    },
+    {
+      "id": "c2i",
+      "text": "Because that night, a new message popped up. Season three starts now.",
+      "pause": 0.9
+    },
+    {
+      "id": "c3a",
+      "chapter": "The Chore Chart You Bought",
+      "text": "It's a season pass. Nine ninety nine. One hundred rewards, over thirty days.",
+      "pause": 0.4
+    },
+    {
+      "id": "c3b",
+      "text": "But you don't get the rewards when you pay. You earn them by playing. Every single day.",
+      "pause": 0.5
+    },
+    {
+      "id": "c3c",
+      "text": "Miss a few days, and the season ends before the good stuff. Then a brand new pass goes on sale.",
+      "pause": 0.5
+    },
+    {
+      "id": "c3d",
+      "text": "It's like paying ten dollars for a chore chart. Fun, until you're doing chores at midnight so you don't lose your stickers.",
+      "pause": 0.6
+    },
+    {
+      "id": "c3e",
+      "text": "So Dave buys it. Now he opens the game at eleven fifty eight P M, just to tap claim.",
+      "pause": 0.6
+    },
+    {
+      "id": "c3f",
+      "text": "But the pass was just the warm up. That Friday, Dave met a glowing egg.",
+      "pause": 0.9
+    },
+    {
+      "id": "c4a",
+      "chapter": "The Glowing Egg",
+      "text": "A banner explodes across Dave's screen. Legendary fire dragon. Forty eight hours only.",
+      "pause": 0.4
+    },
+    {
+      "id": "c4b",
+      "text": "You can't buy the dragon. You buy pulls. Each pull cracks open an egg with a random prize.",
+      "pause": 0.5
+    },
+    {
+      "id": "c4c",
+      "text": "The small print: chance of a legendary on each pull, zero point six percent. About one in a hundred sixty seven.",
+      "pause": 0.5
+    },
+    {
+      "id": "c4d",
+      "text": "Like a cereal where one box in a hundred sixty seven has a gold toy. Every box costs two dollars. And the cereal is air.",
+      "pause": 0.6
+    },
+    {
+      "id": "c4e",
+      "text": "The game promises a legendary by pull ninety. Ninety sounds far. But the timer is ticking.",
+      "pause": 0.5
+    },
+    {
+      "id": "c4f",
+      "text": "So Dave buys the big pack. Ninety nine ninety nine. Fifty pulls. Rainbow lights. Drum rolls. Common sword. Common shield. Common potato.",
+      "pause": 0.6
+    },
+    {
+      "id": "c4g",
+      "text": "Sixty pulls in, no dragon. Dave feels like the unluckiest player alive. But he isn't unlucky. He's exactly who this game was built for.",
+      "pause": 0.9
+    },
+    {
+      "id": "c5a",
+      "chapter": "Who Pays The Bills?",
+      "text": "So Dave went looking for who actually pays for these free games.",
+      "pause": 0.4
+    },
+    {
+      "id": "c5b",
+      "text": "He found the yearly report of Playtika, a big mobile game company that shares its numbers with U S regulators.",
+      "pause": 0.5
+    },
+    {
+      "id": "c5c",
+      "text": "Remember your guess? On an average day in twenty twenty five, about eight and a half million people played its games. Three hundred seventy thousand paid.",
+      "pause": 0.5
+    },
+    {
+      "id": "c5d",
+      "text": "That's about four out of every hundred. Ninety six play free. Four pay the bills. And the bills came to two point seven billion dollars.",
+      "pause": 0.6
+    },
+    {
+      "id": "c5e",
+      "text": "Like a restaurant where ninety six people eat free, and four pay for everything. The waiter isn't watching the free eaters. He's watching who orders dessert.",
+      "pause": 0.6
+    },
+    {
+      "id": "c5f",
+      "text": "The biggest spenders have a name in the industry. Whales. A study in the journal Addictive Behaviors looked at almost eight thousand loot box buyers.",
+      "pause": 0.5
+    },
+    {
+      "id": "c5g",
+      "text": "The top five percent of spenders, paying over a hundred dollars a month, brought in half of all the loot box money.",
+      "pause": 0.6
+    },
+    {
+      "id": "c5h",
+      "text": "That's the villain. A money machine built to find the few people who will pay a lot, and keep them paying. And on iPhones in the U S, Apple's standard cut is thirty percent.",
+      "pause": 0.6
+    },
+    {
+      "id": "c5i",
+      "text": "Dave figured whales were rich guys with yachts. He was about to find out how wrong that was.",
+      "pause": 0.9
+    },
+    {
+      "id": "c6a",
+      "chapter": "Whales Aren't Rich",
+      "text": "Dave thought whales were millionaires. Nope.",
+      "pause": 0.4
+    },
+    {
+      "id": "c6b",
+      "text": "The same study checked if big spenders earned more money. They didn't. No link between spending and income.",
+      "pause": 0.5
+    },
+    {
+      "id": "c6c",
+      "text": "What did go up with spending? Signs of problem gambling. These games profit most from people at risk, not from the rich.",
+      "pause": 0.5
+    },
+    {
+      "id": "c6d",
+      "text": "And sometimes the whale is a kid. The F T C said some children spent hundreds, even thousands of dollars chasing Genshin's five star prizes.",
+      "pause": 0.5
+    },
+    {
+      "id": "c6e",
+      "text": "And Fortnite's maker, Epic Games, had to pay two hundred forty five million dollars after the F T C said its buttons tricked players into purchases.",
+      "pause": 0.6
+    },
+    {
+      "id": "c6f",
+      "text": "But Dave didn't feel tricked. He felt close. Which is how he ended up here. Two A M. Thumb over the ninety nine dollar button.",
+      "pause": 0.5
+    },
+    {
+      "id": "c6g",
+      "text": "Tap. Fifty more pulls. Pull eighty five. Gold light! A legendary! A legendary knight. Not the dragon.",
+      "pause": 0.5
+    },
+    {
+      "id": "c6h",
+      "text": "The fine print: a coin flip decides if your legendary is the one on the banner. Dave lost. The dragon is now guaranteed. Within ninety more pulls.",
+      "pause": 0.6
+    },
+    {
+      "id": "c6i",
+      "text": "Two hundred thirty five dollars. Three weeks. Zero dragons. And for the first time, Dave put the phone down.",
+      "pause": 0.9
+    },
+    {
+      "id": "c7a",
+      "chapter": "Dave Fights Back",
+      "text": "The next morning, Dave did three things. This is education, not advice.",
+      "pause": 0.4
+    },
+    {
+      "id": "c7b",
+      "text": "One. He added up his purchase history. Five charges. Two hundred thirty four dollars and ninety five cents. As one number, it hurt more than the knight.",
+      "pause": 0.6
+    },
+    {
+      "id": "c7c",
+      "text": "Two. A speed bump. On iPhone, Screen Time can switch off in app purchases. On Android, Google Play can ask for verification on every purchase. And he deleted his saved card.",
+      "pause": 0.6
+    },
+    {
+      "id": "c7d",
+      "text": "Three. The dollar rule. Before buying, he turns gems back into dollars. And his game budget is one twenty dollar gift card a month.",
+      "pause": 0.6
+    },
+    {
+      "id": "c7e",
+      "text": "At his old pace, that's about four thousand dollars a year. With the gift card, two hundred forty. Dave keeps about three thousand eight hundred.",
+      "pause": 0.6
+    },
+    {
+      "id": "c7f",
+      "text": "But one question still bugged him. What did that dragon actually cost?",
+      "pause": 0.9
+    },
+    {
+      "id": "c8a",
+      "chapter": "The Dragon's Real Price",
+      "text": "So Dave used the dollar rule on the dragon itself.",
+      "pause": 0.4
+    },
+    {
+      "id": "c8b",
+      "text": "His game uses the same rules Genshin Impact publishes. Zero point six percent. A legendary by pull ninety. And the coin flip.",
+      "pause": 0.5
+    },
+    {
+      "id": "c8c",
+      "text": "Each pull costs one hundred sixty gems. A ninety nine dollar pack gives about eight thousand gems. So every pull is about two dollars.",
+      "pause": 0.5
+    },
+    {
+      "id": "c8d",
+      "text": "Worst case, you reach pull ninety, lose the coin flip, and need ninety more. One hundred eighty pulls.",
+      "pause": 0.5
+    },
+    {
+      "id": "c8e",
+      "text": "One hundred eighty pulls, at about two dollars each. The dragon's real price? Up to three hundred fifty six dollars, before a few free gems.",
+      "pause": 0.6
+    },
+    {
+      "id": "c8f",
+      "text": "The banner said one hundred sixty gems. It never said three hundred fifty six dollars. That's not an accident. That's the business.",
+      "pause": 0.6
+    },
+    {
+      "id": "c8g",
+      "text": "Dave wasn't playing the game. The game was playing Dave. And it kept score in his bank account.",
+      "pause": 0.9
+    },
+    {
+      "id": "r1",
+      "chapter": "What Dave Learned",
+      "text": "One. Gems are dollars in a costume. Take the costume off.",
+      "pause": 0.4
+    },
+    {
+      "id": "r2",
+      "text": "Two. About four in a hundred players pay for everyone. The game is hunting them.",
+      "pause": 0.4
+    },
+    {
+      "id": "r3",
+      "text": "Three. Build the speed bump before two A M, not during.",
+      "pause": 0.6
+    },
+    {
+      "id": "r4",
+      "text": "Next time, Dave's friend Bob is getting divorced. The lawyer says it'll be quick and simple. Then the first bill arrives.",
+      "pause": 0.5
+    },
+    {
+      "id": "r5",
+      "text": "Subscribe. It's free. Actually free. No gems, no eggs, no coin flips. We checked.",
+      "pause": 1.4
+    }
   ],
   "youtube": {
     "title": "Why You Keep Paying for a 'Free' Game (It's Not Bad Luck)"
