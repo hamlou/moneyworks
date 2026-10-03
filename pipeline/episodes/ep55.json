@@ -1,0 +1,117 @@
+{
+  "id": "ep55",
+  "title": "Why Divorce Costs You $20,000 (The Paperwork Is $300)",
+  "spine": {
+    "goal": "Dave wants his neighbor Bob's divorce finished for far less than the ~$20,400 average trial cost, so Bob can afford his own apartment and Dave gets his couch back.",
+    "stakes": "If Bob goes to trial he lands on the ~$20,400 step (Martindale-Nolo average, per person), plus a 10% IRS penalty if he cashes out his 401(k) early, and he stays on Dave's couch for months.",
+    "central_question": "Why does a divorce whose paperwork costs about $300 end up costing over $20,000?",
+    "loop_big": "The one question Dave taught Bob that cut his bill roughly in half ('Is this worth an hour of two lawyers?') — paid in ch8.",
+    "loop_mid": "Pause-and-guess at ~27%: what does the average divorce with lawyers cost when the couple agrees on everything? Paid ~60 s later in ch4: about $4,100.",
+    "villain": "The hourly clock: two family lawyers at ~$344/hour each (Clio) = ~$688 for every hour the couple argues; the clock gets paid whether you win or lose. Revealed at ~50% (ch5), balanced (many lawyers push to settle).",
+    "low_point": "~70%: Bob wants a trial over the house AND plans to cash out his 401(k) early (income tax + 10% penalty), plus a second rent — projection over $20,000.",
+    "win": "Dave's '$688 question' sticky notes (drop the couch/TV fights), mediation, limited-scope advice, a QDRO instead of cashing out (no 10% early penalty). Bob settles near the ~$10,600 'fought then settled' average vs ~$20,400 trial: SAVED ~$9,800, about half."
+  },
+  "sources": [
+    "Illustrative story (dramatized): Bob, Dave's couch, the $400 gray couch, the 12-item fight list, 1.5 hours billed on the couch, 10 hours billed by chapter 3, six weeks of mediation and Bob's final bill landing near the survey average are a dramatization built on the averages below, not a real case",
+    "Martindale-Nolo Research 2019 divorce survey, reported by Nolo, 'How Much Will My Divorce Cost?' (updated 6/05/2024, nolo.com/legal-encyclopedia/ctp/cost-of-divorce.html): people who divorced without a lawyer paid an average of $925 and a median of $300; filing fees range from about $100 to over $400 by state; full-scope lawyer fees averaged $11,300 (median $7,000); uncontested divorces with lawyers averaged $4,100 total; disputes settled without trial averaged $10,600; trial on at least one issue averaged $20,400 ($20,379), trial on two or more issues $23,300; consulting (limited-scope) attorneys averaged $4,600 (median $3,000); 'the exact nature of the disagreements made very little difference in average costs' - the driver was the number of contested issues and whether they went to trial",
+    "Nolo (same page), citing ADR Times 2023: typical private divorce mediation costs $3,000 to $10,000, usually split between the spouses; most court-sponsored mediation is free, low cost or sliding-scale, typically for child-custody disputes",
+    "Clio, 'How Much Should I Charge as a Lawyer?' (Legal Trends data, updated March 2026): average family-law lawyer hourly rate $344 (2025 data)",
+    "Math: 1.5 h x $344 = $516; 2 lawyers x $344 = $688 per hour of arguing; 10 h x $344 = $3,440; $20,400 - $10,600 = $9,800 (about 48% less, roughly half)",
+    "IRS, 'Retirement topics - Exceptions to tax on early distributions': most early distributions are subject to income tax and may be subject to an additional 10% tax; the 10% additional tax does not apply to distributions to an alternate payee under a Qualified Domestic Relations Order from a qualified plan such as a 401(k) (IRC 72(t)(2)(C)); the QDRO exception does not apply to IRAs",
+    "CDC / NCHS FastStats, Marriage and Divorce: 672,502 divorces in 2023 (provisional), 45 reporting states and D.C., rate 2.4 per 1,000 population",
+    "Callback: episode 50, 'Why Weddings Cost $34,000' (Dave's wedding-cost video)"
+  ],
+  "beats": [
+    {"id": "o1", "text": "Dave's couch has a new tenant. Bob. Holding a lawyer bill. For fighting over a different couch.", "pause": 0.3},
+    {"id": "o2", "text": "Yep. That's Bob. How did a normal guy end up here? Let's rewind.", "pause": 0.3},
+    {"id": "o3", "text": "Three months ago, Bob said: simple divorce. Some forms. Three hundred dollars, tops.", "pause": 0.3},
+    {"id": "o4", "text": "But the average divorce that goes to trial costs over twenty thousand dollars. Per person.", "pause": 0.3},
+    {"id": "o5", "text": "So who gets twenty thousand dollars, when the forms cost three hundred?", "pause": 0.3},
+    {"id": "o6", "text": "Stay to the end. Dave found one question that cut Bob's bill in half.", "pause": 0.5},
+
+    {"id": "c1a", "chapter": "Just Some Forms?", "text": "So Dave did what a good neighbor does. He brought snacks, and helped Bob print the divorce forms.", "pause": 0.45},
+    {"id": "c1b", "text": "And Bob was right about one thing. The paperwork really is cheap. Filing fees run from about one hundred to four hundred dollars, depending on the state.", "pause": 0.45},
+    {"id": "c1c", "text": "In a big survey by Martindale Nolo, people who divorced without lawyers paid a median of just three hundred dollars. Total.", "pause": 0.45},
+    {"id": "c1d", "text": "It's like flat pack furniture. Annoying, a little scary, but cheap. As long as both people follow the same instructions.", "pause": 0.45},
+    {"id": "c1e", "text": "But Bob's wife didn't want the instructions. She hired a lawyer. So Bob panicked, and hired one too.", "pause": 0.45},
+    {"id": "c1f", "text": "Two weeks later, Bob's first real bill arrived. And it was all about a couch.", "pause": 0.8},
+
+    {"id": "c2a", "chapter": "The $516 Couch", "text": "Dave read the bill out loud. One and a half hours. Topic: the gray couch.", "pause": 0.45},
+    {"id": "c2b", "text": "Bob's lawyer charges about three hundred forty four dollars an hour. That's the average for family lawyers, according to Clio's legal trends data.", "pause": 0.45},
+    {"id": "c2c", "text": "One and a half hours, times three hundred forty four. Five hundred sixteen dollars.", "pause": 0.45},
+    {"id": "c2d", "text": "And the couch? Bob bought it on sale. For four hundred dollars.", "pause": 0.5},
+    {"id": "c2e", "text": "It's like taking a taxi just to argue in the back seat. You never leave the parking lot, but the meter keeps running.", "pause": 0.45},
+    {"id": "c2f", "text": "Quick guess, before Dave reads on. If Bob and his wife had agreed on everything, how much does the average divorce with lawyers cost? Write your number in the comments. The answer is coming.", "pause": 0.5},
+    {"id": "c2g", "text": "Because the couch was only item one. On a list of twelve.", "pause": 0.8},
+
+    {"id": "c3a", "chapter": "The Meter Ticks Twice", "text": "So Dave grabbed a calculator, and sat down with Bob's next three bills.", "pause": 0.45},
+    {"id": "c3b", "text": "Every email Bob's lawyer sends, the other lawyer reads. And answers. And both of them bill for it.", "pause": 0.45},
+    {"id": "c3c", "text": "Bob pays his lawyer. His wife pays hers. Which means every hour of arguing costs the couple about six hundred eighty eight dollars.", "pause": 0.45},
+    {"id": "c3d", "text": "Item two, the TV. Item three, the dog. Item four, the house. Every item, a few more hours on two meters.", "pause": 0.45},
+    {"id": "c3e", "text": "Dave's damage meter jumped to three thousand four hundred forty dollars, for Bob alone. Ten hours. And nothing was decided yet.", "pause": 0.45},
+    {"id": "c3f", "text": "Dave had a theory. The big fights, like the house, must be the expensive ones. So skip the small stuff, fight the big stuff. Simple.", "pause": 0.5},
+    {"id": "c3g", "text": "Dave was wrong. And the real answer was hiding in that same survey.", "pause": 0.8},
+
+    {"id": "c4a", "chapter": "Not What. How Many.", "text": "Dave opened the Martindale Nolo survey again, and found the line that changed everything.", "pause": 0.45},
+    {"id": "c4b", "text": "The type of fight barely changed the bill. Kids, money, the house. It didn't matter much. What mattered was how many fights there were, and whether they went to trial.", "pause": 0.5},
+    {"id": "c4c", "text": "Remember your guess? Couples with lawyers who agreed on everything paid about four thousand one hundred dollars, on average.", "pause": 0.45},
+    {"id": "c4d", "text": "Couples who fought, but settled outside of court, paid about ten thousand six hundred.", "pause": 0.45},
+    {"id": "c4e", "text": "Go to trial on one issue? Twenty thousand four hundred. Two or more issues? Twenty three thousand three hundred. Per person.", "pause": 0.45},
+    {"id": "c4f", "text": "It's like a staircase going down into a basement. Every new fight is one more step. And every step costs thousands.", "pause": 0.45},
+    {"id": "c4g", "text": "So if Bob and his wife are both losing money on every step, who is actually getting paid?", "pause": 0.8},
+
+    {"id": "c5a", "chapter": "Who Owns The Clock?", "text": "Dave drew every dollar on a whiteboard, with arrows. And every arrow pointed the same way.", "pause": 0.45},
+    {"id": "c5b", "text": "Here's the villain. It isn't Bob's wife. It isn't even the lawyers. Lots of lawyers tell their clients to settle. The villain is the hourly clock.", "pause": 0.5},
+    {"id": "c5c", "text": "The clock gets paid when you win. It gets paid when you lose. It gets paid when you argue about a couch.", "pause": 0.45},
+    {"id": "c5d", "text": "And there are a lot of clocks. The C D C counted about six hundred seventy thousand divorces in twenty twenty three, and that's not even every state.", "pause": 0.45},
+    {"id": "c5e", "text": "Every one of them is two people standing in front of a meter. And the meter doesn't care who's right.", "pause": 0.5},
+    {"id": "c5f", "text": "Dave showed Bob the whiteboard. Bob nodded slowly. Then he said: let's go to trial.", "pause": 0.8},
+
+    {"id": "c6a", "chapter": "Bob's Terrible Plan", "text": "Bob had a plan. Win the house in court. Then cash out his four oh one k, to pay his wife her half.", "pause": 0.45},
+    {"id": "c6b", "text": "Dave did the math, and felt sick. A trial puts Bob on the twenty thousand dollar step.", "pause": 0.45},
+    {"id": "c6c", "text": "And cashing out a four oh one k early usually means income tax, plus a ten percent penalty from the I R S.", "pause": 0.45},
+    {"id": "c6d", "text": "It's like carrying a bucket of water across the street, after poking a hole in the bottom.", "pause": 0.45},
+    {"id": "c6e", "text": "And after the divorce, Bob still needs a second home. A second rent. A second internet bill. One pizza, now split into two boxes.", "pause": 0.45},
+    {"id": "c6f", "text": "The damage meter showed the projection. Over twenty thousand dollars. Plus the penalty. Bob would be on Dave's couch until next summer.", "pause": 0.5},
+    {"id": "c6g", "text": "It looked hopeless. But Dave had noticed one tiny thing on every single bill. And the clock really doesn't want you to notice it.", "pause": 0.8},
+
+    {"id": "c7a", "chapter": "The $688 Question", "text": "Dave stuck a sticky note on every item on Bob's list. Each note had the same question. Is this worth an hour of two lawyers?", "pause": 0.45},
+    {"id": "c7b", "text": "Quick reminder, this is education, not advice. Every situation is different, and some fights, like safety or kids, really do matter.", "pause": 0.45},
+    {"id": "c7c", "text": "But the couch? Four hundred dollars, versus six hundred eighty eight dollars an hour. Bob let it go. The TV went next.", "pause": 0.45},
+    {"id": "c7d", "text": "For the big stuff, Dave found a cheaper room. Mediation. One neutral person helps both sides agree. Private mediation often costs three to ten thousand dollars, usually split between the two of you.", "pause": 0.45},
+    {"id": "c7e", "text": "And many courts offer free or low cost mediation for parenting disputes. Some people also hire a lawyer just for advice, not the whole case. In the survey, that averaged about four thousand six hundred dollars.", "pause": 0.45},
+    {"id": "c7f", "text": "And the four oh one k? A court order called a Q D R O can move his wife's share straight to her. For that, the ten percent early penalty doesn't apply.", "pause": 0.5},
+    {"id": "c7g", "text": "Bob signed up for mediation. The damage meter stopped climbing. But would it actually work?", "pause": 0.8},
+
+    {"id": "c8a", "chapter": "Bob's Final Bill", "text": "Six weeks later, Bob walked out of mediation holding one piece of paper. A signed agreement.", "pause": 0.45},
+    {"id": "c8b", "text": "No trial. His bill landed close to the survey average for couples who fought, then settled. About ten thousand six hundred dollars.", "pause": 0.45},
+    {"id": "c8c", "text": "Compare that to the trial step. Twenty thousand four hundred. Bob saved about nine thousand eight hundred dollars.", "pause": 0.5},
+    {"id": "c8d", "text": "That's the question that cut his bill in half. Before every fight, ask: is this worth an hour of two lawyers?", "pause": 0.5},
+    {"id": "c8e", "text": "Because the forms really do cost about three hundred dollars. Everything after that is the price of the fight.", "pause": 0.5},
+    {"id": "c8f", "text": "Bob moved into his own little apartment. His wife kept the gray couch. And Dave finally got his couch back.", "pause": 0.8},
+
+    {"id": "r1", "chapter": "What Dave Learned", "text": "One. The paperwork is cheap. The fight is expensive.", "pause": 0.4},
+    {"id": "r2", "text": "Two. Two lawyers means the meter ticks twice.", "pause": 0.4},
+    {"id": "r3", "text": "Three. Before every fight, ask if it's worth the hour.", "pause": 0.6},
+    {"id": "r4", "text": "Next time, a guy online swears dropshipping made him rich in thirty days. And Dave just opened his own store. What could go wrong?", "pause": 0.5},
+    {"id": "r5", "text": "Subscribe. Unlike a divorce, it's free, and nobody fights over the couch.", "pause": 1.4}
+  ],
+  "youtube": {
+    "title": "Why Divorce Costs You $20,000 (The Paperwork Is $300)",
+    "hook": "Why does divorce cost $20,000 when the paperwork costs about $300? Dave's neighbor Bob moves onto Dave's couch with a lawyer bill for fighting over a $400 couch.",
+    "tags": [
+      "why divorce costs so much",
+      "how much does a divorce cost",
+      "divorce cost",
+      "divorce lawyer cost per hour",
+      "contested vs uncontested divorce cost",
+      "divorce mediation cost",
+      "how to save money on divorce",
+      "qdro 401k divorce penalty",
+      "divorce explained simply",
+      "money explained simply",
+      "dave explains money"
+    ],
+    "hashtags": ["#divorce", "#personalfinance", "#money"]
+  }
+}
