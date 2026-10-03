@@ -628,10 +628,10 @@ export const Ep57: React.FC = () => {
         <Svg>
           <G2 x={640} y={120} s={P(A('c4c'))}><Text size={46}>{f >= cp ? 'Dave is in BIG company' : 'is Dave an idiot?'}</Text></G2>
           {Array.from({length: 18}).map((_, i) => (
-            <Person key={i} x={180 + (i % 6) * 180} y={420 + Math.floor(i / 6) * 190} s={0.9 * pop(f, cp + i)} c={i % 3 === 0 ? C.red : '#9AA5B1'} />
+            <Person key={i} x={180 + (i % 6) * 180} y={420 + Math.floor(i / 6) * 190} s={0.9 * P(A('c4c')) * bump(cp + i, 0.2)} c={f >= cp + i && i % 3 === 0 ? C.red : '#9AA5B1'} />
           ))}
           <Dave f={f} x={640} y={1000} s={0.8} keys={[{at: 0, pose: 'shrug', expr: 'sad'}, {at: cp, pose: 'idle', expr: 'happy'}]} />
-          <G2 x={1500} y={560} s={P(A('c4c')) * bump(te, 0.14)} o={lt(te, 0.4)}><Jaw s={1.5} open={f >= te ? 0.5 + 0.5 * Math.sin((f - te) * 0.4) : 0.3} /></G2>
+          <G2 x={1500} y={560} s={P(A('c4c')) * bump(te, 0.14)}><Jaw s={1.5} open={f >= te ? 0.5 + 0.5 * Math.sin((f - te) * 0.4) : 0.3} /></G2>
           <G2 x={1500} y={860} o={lt(te, 0.4)}><Text size={44} color={C.red}>everyone ahead has TEETH</Text></G2>
         </Svg>
       </AbsoluteFill>
