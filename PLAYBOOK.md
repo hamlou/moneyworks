@@ -296,6 +296,7 @@ Callbacks to earlier episodes are GOOD ("Remember the raccoon from our credit ca
 
 - Flat, cream background (`Board`), `Street`, `Interior`, `Beach`, `DreamBg`+`DreamFrame` ("WHAT MOST PEOPLE THINK"), `OldFilm` for history.
 - Palette in `src/theme.ts` (`C.*`). Fonts: Fredoka (UI), Caveat (handwriting).
+- **Holding things (ep51+, owner bug report Oct 2026):** NEVER use `handItem` (it draws the item at the midpoint of both hands = on Dave's chest/neck, and mirrors text when flipped). Use `hold={{item: <CreditCard s={0.35} />, side: 'r'}}` with pose `present`, `talk` or `point_r` (`point_l` + `side: 'l'`). Stick auto-swaps chest poses (hold, thumbs, think…) for an outstretched arm. Item scale ~0.3–0.4. `validate.py` blocks `handItem` in new episodes.
 - Something must change on screen at least every 3–6 s. Pop-ins (`pop()`), camera push (`Cam`), shakes on impacts.
 - Word-highlight captions, progress bar with chapter segments, chapter title cards — automatic.
 - **Subscribe:** mid-video `<SubReminder>` right after the biggest reveal (+ `subCues`) AND the end `SubButton`/`Bell` scene.

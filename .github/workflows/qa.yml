@@ -29,10 +29,12 @@ jobs:
       - run: python pipeline/validate.py ${{ inputs.ep }} | tee report.txt
       - run: python pipeline/qa_empty.py ${{ inputs.ep }} --keep | tee -a report.txt || true
       - run: python pipeline/qa_sheet.py ${{ inputs.ep }} report.txt sheet.jpg || true
+      - run: python pipeline/qa_full.py ${{ inputs.ep }} full.jpg || true
       - uses: actions/upload-artifact@v4
         with:
           name: ${{ inputs.ep }}-qa
           path: |
             report.txt
             sheet.jpg
+            full.jpg
           retention-days: 7

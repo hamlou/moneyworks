@@ -55,6 +55,8 @@ if num.isdigit() and int(num) >= 51:
     for c in tm.get("chapters", []):
         if c["title"].strip().lower() == "now you know":
             problems.append("outro chapter must be 'What Dave Learned', not 'Now You Know' (PLAYBOOK sec 0.4)")
+    if (int(num) >= 61 or int(num) in (51, 52, 54, 55, 59)) and "handItem=" in tsx:
+        problems.append("handItem draws items on Dave's chest/neck: use hold={{item: <X/>, side: 'r'}} with pose present/talk/point_r (PLAYBOOK sec 6)")
     if "DAMAGE" not in tsx.upper():
         problems.append("Damage Meter missing (PLAYBOOK sec 0.5)")
 

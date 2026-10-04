@@ -287,8 +287,10 @@ export const Stick: React.FC<StickProps> = ({f, x, y, s = 1, keys, acc = [], wal
   const cur = ks[i];
   const prev = i > 0 ? ks[i - 1] : cur;
   const t = i > 0 ? ease(f, cur.at, cur.at + 8) : 1;
-  const P = POSES[cur.pose] ?? POSES.idle;
-  const Q = POSES[prev.pose] ?? POSES.idle;
+  // with `hold`, poses whose hand lands on the chest/face are swapped for an arm reaching out
+  const pm = (n: string) => (hold && ['hold', 'thumbs', 'facepalm', 'think', 'typing', 'carry', 'relax'].includes(n) ? (hold.side === 'l' ? 'point_l' : 'present') : n);
+  const P = POSES[pm(cur.pose)] ?? POSES.idle;
+  const Q = POSES[pm(prev.pose)] ?? POSES.idle;
   const p = blend(Q(f), P(f), t);
   const phase = f * 0.3;
   if (walk) {

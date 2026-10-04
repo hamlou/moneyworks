@@ -15,6 +15,12 @@ The old `pipeline/episodes/ep51–60.json` drafts contain claims that could NOT 
 ## Thumbnails: the LEAD makes them (Oct 2026)
 Do NOT write src/v2/tNN.tsx and do not run thumbs.yml. In your final report give 3 thumbnail concepts (different §0.6 types) + `thumb_question`. Put `thumb_question` in seo_epNN.json and leave `thumb` as "A".
 
+## Holding objects (owner bug, Oct 2026)
+NEVER use `handItem`. Use `hold={{item: <Prop s={0.35} />, side: 'r'}}` with pose `present`, `talk` or `point_r` (or `point_l` + `side: 'l'`). validate.py blocks `handItem`.
+
+## Lead review
+The cloud QA now also uploads `full.jpg` (one frame of every beat). Look at it yourself before reporting: overlapping props, text cut off at the frame edge, characters covering numbers, mirrored text, tiny unreadable text, two scenes that look identical — fix them. The lead reviews full.jpg before any render.
+
 ## Save progress early
 Sessions can be cut off. Commit + push your JSON as soon as the script is written, and push again after each milestone (tsx compiles, QA pass, thumbs, SEO), so a restarted builder can continue from git.
 
