@@ -820,9 +820,9 @@ export const Ep55: React.FC = () => {
       <AbsoluteFill>
         <Board />
         <Svg>
-          <Dave f={f} x={560} y={930} s={1.1 * pop(f, A('c4g'))} keys={[{at: 0, pose: 'think', expr: 'suspicious', look: 0.6}]} />
-          <G2 x={1300} y={400} s={pop(f, A('c4g')) * bump(st, 0.1)}><Text size={54} color={C.red}>BOTH LOSING $$$</Text></G2>
-          <G2 x={1300} y={620} s={pop(f, A('c4g')) * bump(gt, 0.12)} o={lt(gt, 0.35)}><Text size={52} color={C.ink}>who's getting paid?</Text></G2>
+          <Dave f={f} x={560} y={930} s={1.1 * P(A('c4g'))} keys={[{at: 0, pose: 'think', expr: 'suspicious', look: 0.6}]} />
+          <G2 x={1300} y={400} s={P(A('c4g')) * bump(st, 0.1)}><Text size={54} color={C.red}>BOTH LOSING $$$</Text></G2>
+          <G2 x={1300} y={620} s={P(A('c4g')) * bump(gt, 0.12)} o={lt(gt, 0.35)}><Text size={52} color={C.ink}>who's getting paid?</Text></G2>
         </Svg>
       </AbsoluteFill>
     ));
@@ -1066,8 +1066,8 @@ export const Ep55: React.FC = () => {
       <AbsoluteFill>
         <Board />
         <Svg>
-          <G2 x={960} y={200} s={pop(f, A('c6d'))}><Text size={48}>like carrying water in a leaky bucket</Text></G2>
-          <G2 x={960} y={640} s={2.2 * pop(f, A('c6d'))}>
+          <G2 x={960} y={200} s={P(A('c6d'))}><Text size={48}>like carrying water in a leaky bucket</Text></G2>
+          <G2 x={960} y={640} s={2.2 * P(A('c6d'))}>
             <rect x={-80} y={-120} width={160} height={140} rx={8} fill={C.blue} stroke={C.ink} strokeWidth={5} opacity={0.7} />
             <circle cx={60} cy={20} r={12} fill={C.red} />
             {[0, 1, 2, 3].map((i) => <circle key={i} cx={60} cy={40 + i * 30} r={6} fill={C.blue} opacity={0.6} />)}
@@ -1442,9 +1442,9 @@ export const Ep55: React.FC = () => {
       <AbsoluteFill>
         <Board />
         <Svg>
-          <DivorceForms x={560} y={540} s={0.7 * pop(f, A('c8e'))} cost={f >= th ? '$300' : '$?'} />
-          <G2 x={1360} y={400} s={pop(f, A('c8e'))}><Text size={50}>forms cost $300</Text></G2>
-          <G2 x={1360} y={600} s={pop(f, A('c8e')) * bump(af, 0.12)} o={lt(af, 0.35)}><Text size={52} color={C.red}>after that = the fight</Text></G2>
+          <DivorceForms x={560} y={540} s={0.7 * P(A('c8e'))} cost={f >= th ? '$300' : '$?'} />
+          <G2 x={1360} y={400} s={P(A('c8e'))}><Text size={50}>forms cost $300</Text></G2>
+          <G2 x={1360} y={600} s={P(A('c8e')) * bump(af, 0.12)} o={lt(af, 0.35)}><Text size={52} color={C.red}>after that = the fight</Text></G2>
         </Svg>
       </AbsoluteFill>
     ));
@@ -1481,8 +1481,8 @@ export const Ep55: React.FC = () => {
       <AbsoluteFill>
         <Board />
         <Svg>
-          <G2 x={960} y={360} s={pop(f, A('r1'))}><Text size={56}>1. Paperwork is cheap</Text></G2>
-          <G2 x={960} y={560} s={pop(f, A('r1'))}><Text size={56} color={C.red}>The fight is expensive</Text></G2>
+          <G2 x={960} y={360} s={P(A('r1'))}><Text size={56}>1. Paperwork is cheap</Text></G2>
+          <G2 x={960} y={560} s={P(A('r1'))}><Text size={56} color={C.red}>The fight is expensive</Text></G2>
         </Svg>
       </AbsoluteFill>
     ));
@@ -1492,8 +1492,8 @@ export const Ep55: React.FC = () => {
       <AbsoluteFill>
         <Board />
         <Svg>
-          <G2 x={960} y={400} s={pop(f, A('r2'))}><Text size={56}>2. Two lawyers =</Text></G2>
-          <G2 x={960} y={600} s={pop(f, A('r2'))}><Text size={56} color={C.red}>meter ticks twice</Text></G2>
+          <G2 x={960} y={400} s={P(A('r2'))}><Text size={56}>2. Two lawyers =</Text></G2>
+          <G2 x={960} y={600} s={P(A('r2'))}><Text size={56} color={C.red}>meter ticks twice</Text></G2>
         </Svg>
       </AbsoluteFill>
     ));
@@ -1503,8 +1503,8 @@ export const Ep55: React.FC = () => {
       <AbsoluteFill>
         <Board />
         <Svg>
-          <G2 x={960} y={360} s={pop(f, A('r3'))}><Text size={50}>3. Before every fight,</Text></G2>
-          <G2 x={960} y={560} s={pop(f, A('r3'))}><Text size={52} color={C.red}>ask if it's worth the hour</Text></G2>
+          <G2 x={960} y={360} s={P(A('r3'))}><Text size={50}>3. Before every fight,</Text></G2>
+          <G2 x={960} y={560} s={P(A('r3'))}><Text size={52} color={C.red}>ask if it's worth the hour</Text></G2>
         </Svg>
       </AbsoluteFill>
     ));
@@ -1523,11 +1523,11 @@ export const Ep55: React.FC = () => {
       <AbsoluteFill>
         <Board />
         <Svg>
-          <G2 x={960} y={280} s={pop(f, A('r4'))}><Text size={46}>NEXT TIME</Text></G2>
-          <G2 x={960} y={480} s={pop(f, A('r4'))}><Text size={42}>A guy online swears</Text></G2>
-          <G2 x={960} y={580} s={pop(f, A('r4')) * bump(dr, 0.1)}><Text size={50} color={C.red}>dropshipping</Text></G2>
-          <G2 x={960} y={680} s={pop(f, A('r4'))}><Text size={42}>made him rich in 30 days</Text></G2>
-          <G2 x={960} y={860} s={pop(f, A('r4')) * bump(op, 0.12)} o={lt(op, 0.35)}><Text size={44} color={C.navy}>Dave just opened his own store</Text></G2>
+          <G2 x={960} y={280} s={P(A('r4'))}><Text size={46}>NEXT TIME</Text></G2>
+          <G2 x={960} y={480} s={P(A('r4'))}><Text size={42}>A guy online swears</Text></G2>
+          <G2 x={960} y={580} s={P(A('r4')) * bump(dr, 0.1)}><Text size={50} color={C.red}>dropshipping</Text></G2>
+          <G2 x={960} y={680} s={P(A('r4'))}><Text size={42}>made him rich in 30 days</Text></G2>
+          <G2 x={960} y={860} s={P(A('r4')) * bump(op, 0.12)} o={lt(op, 0.35)}><Text size={44} color={C.navy}>Dave just opened his own store</Text></G2>
         </Svg>
       </AbsoluteFill>
     ));
@@ -1544,11 +1544,11 @@ export const Ep55: React.FC = () => {
       <AbsoluteFill>
         <Board />
         <Svg>
-          <SubButton x={760} y={480} s={1.4 * pop(f, A('r5'))} done={f > w('r5', 'subscribe') + 14 ? 1 : 0} />
-          <Bell x={1160} y={480} s={1.4 * pop(f, A('r5'))} f={f} ring={f > w('r5', 'subscribe') + 16 && f < w('r5', 'subscribe') + 50 ? 1 : 0} />
-          <G2 x={960} y={820} s={pop(f, A('r5'))}><Text size={48}>unlike a divorce:</Text></G2>
-          <G2 x={960} y={920} s={pop(f, A('r5')) * bump(fr, 0.1)}><Text size={50} color={C.green}>it's FREE</Text></G2>
-          <G2 x={960} y={1010 - 60} s={pop(f, A('r5')) * bump(nb, 0.12)} o={lt(nb, 0.35)}><Text size={44}>and nobody fights over the couch</Text></G2>
+          <SubButton x={760} y={480} s={1.4 * P(A('r5'))} done={f > w('r5', 'subscribe') + 14 ? 1 : 0} />
+          <Bell x={1160} y={480} s={1.4 * P(A('r5'))} f={f} ring={f > w('r5', 'subscribe') + 16 && f < w('r5', 'subscribe') + 50 ? 1 : 0} />
+          <G2 x={960} y={820} s={P(A('r5'))}><Text size={48}>unlike a divorce:</Text></G2>
+          <G2 x={960} y={920} s={P(A('r5')) * bump(fr, 0.1)}><Text size={50} color={C.green}>it's FREE</Text></G2>
+          <G2 x={960} y={1010 - 60} s={P(A('r5')) * bump(nb, 0.12)} o={lt(nb, 0.35)}><Text size={44}>and nobody fights over the couch</Text></G2>
         </Svg>
       </AbsoluteFill>
     ));
