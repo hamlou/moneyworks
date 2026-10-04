@@ -57,7 +57,7 @@ export const Ep54: React.FC = () => {
         <Board />
         <Cam f={ff} keys={[[0, 1.15, 960, 540], [tap, 1.0, 960, 540]]}>
           <Svg>
-            <Clock x={280} y={240} s={0.85 * bump(am, 0.1)} h={2} m={0} />
+            <Clock f={ff} x={280} y={240} s={0.85 * bump(am, 0.1)} h={2} m={0} />
             <GamePhone f={ff} x={960} y={560} s={1.3} screen={
               <>
                 <rect x={-160} y={-294} width={320} height={588} rx={30} fill="#1D3557" />
@@ -344,7 +344,7 @@ export const Ep54: React.FC = () => {
           } />
           <Dave f={f} x={1300} y={920} s={1.1} keys={[{at: 0, pose: 'typing', expr: 'neutral', look: -0.6}, {at: told, pose: 'shock', expr: 'worried', look: 0.6}]} />
           <G2 x={1300} y={380} s={bump(pays, 0.18)} o={lt(pays, 0.4)}><Stamp text="HE PAYS" color={C.red} size={66} r={-6} /></G2>
-          <DamageMeter x={1700} y={90} s={0.8} value={f >= w('c1g', 'five') ? '$4.99' : '$0'} hot={f >= w('c1g', 'five') ? 1 : 0} />
+          <DamageMeter x={1700} y={90} s={0.8} value={f >= w('c1g', 'five') ? '$4.99' : '$0'} flash={f >= w('c1g', 'five') ? 1 : 0} />
         </Svg>
       </AbsoluteFill>
     ));
@@ -431,7 +431,7 @@ export const Ep54: React.FC = () => {
             <Text y={10} size={40}>= players don't know the</Text>
             <Text y={70} size={f >= gen ? 56 : 44} color={f >= gen ? C.red : C.ink}>REAL DOLLAR COST</Text>
           </G2>
-          <SourceTag x={960} y={860} s={0.9 * lt(w('c2f', 'real'), 0.4)} source="FTC Jan 2025" />
+          <SourceCard x={960} y={860} s={0.9 * lt(w('c2f', 'real'), 0.4)} source="FTC Jan 2025" />
           <DamageMeter x={1700} y={90} s={0.8} value="$4.99" />
         </Svg>
       </AbsoluteFill>
@@ -473,7 +473,7 @@ export const Ep54: React.FC = () => {
             </>
           } />
           <Dave f={f} x={1300} y={920} s={1.1} keys={[{at: 0, pose: 'typing', expr: 'neutral', look: -0.6}]} />
-          <DamageMeter x={1700} y={90} s={0.8} value={f >= nin ? '$24.98' : '$4.99'} hot={f >= nin ? 1 : 0} />
+          <DamageMeter x={1700} y={90} s={0.8} value={f >= nin ? '$24.98' : '$4.99'} flash={f >= nin ? 1 : 0} />
         </Svg>
       </AbsoluteFill>
     ));
@@ -538,7 +538,7 @@ export const Ep54: React.FC = () => {
         <Svg>
           <SeasonPass x={960} y={560} s={1.1 * P(A('c3a'))} tier={f >= hundred ? 15 : 0} />
           <G2 x={960} y={160} s={bump(pass, 0.12)}><Text size={50}>SEASON PASS</Text></G2>
-          <DamageMeter x={1700} y={90} s={0.8} value={f >= w('c3a', 'nine') ? '$34.97' : '$24.98'} hot={f >= w('c3a', 'nine') ? 1 : 0} />
+          <DamageMeter x={1700} y={90} s={0.8} value={f >= w('c3a', 'nine') ? '$34.97' : '$24.98'} flash={f >= w('c3a', 'nine') ? 1 : 0} />
         </Svg>
       </AbsoluteFill>
     ));
@@ -578,7 +578,7 @@ export const Ep54: React.FC = () => {
       <AbsoluteFill>
         <Board />
         <Svg>
-          <Calendar x={600} y={480} s={1.2 * P(A('c3c'))} top="SEASON 3" />
+          <Calendar x={600} y={480} s={1.2 * P(A('c3c'))} year="SEASON 3" flip={1} />
           {[0, 1, 2, 3].map((i) => (
             <XMark key={i} x={600 + (i - 1.5) * 80} y={680} s={0.7 * (f >= miss + i * 3 ? 1 : 0)} />
           ))}
@@ -624,7 +624,7 @@ export const Ep54: React.FC = () => {
       <AbsoluteFill>
         <Board />
         <Svg>
-          <Clock x={600} y={480} s={1.4 * P(A('c3e'))} h={23} m={58} />
+          <Clock f={f} x={600} y={480} s={1.4 * P(A('c3e'))} h={23} m={58} />
           <GamePhone f={f} x={1260} y={560} s={1.1} screen={
             <>
               <Text y={-200} size={32} color={C.yellow}>DAILY QUEST</Text>
@@ -648,7 +648,7 @@ export const Ep54: React.FC = () => {
       <AbsoluteFill>
         <Board />
         <Svg>
-          <Calendar x={600} y={460} s={1.2 * P(A('c3f'))} top="FRIDAY" />
+          <Calendar x={600} y={460} s={1.2 * P(A('c3f'))} year="FRIDAY" flip={1} />
           <DragonEgg x={1260} y={500} s={1.3 * P(fri) * bump(gold, 0.1)} glow={f >= gold ? 1 : 0} />
           <Dave f={f} x={420} y={920} s={1.05} keys={[{at: 0, pose: 'idle', expr: 'suspicious', look: 0.6}]} />
           <DamageMeter x={1700} y={90} s={0.8} value="$34.97" />
@@ -710,7 +710,7 @@ export const Ep54: React.FC = () => {
             <Text y={60} size={38} color={GRAY}>about 1 in 167</Text>
             <Text y={120} size={36} color={GRAY}>guaranteed by pull 90</Text>
           </G2>
-          <SourceTag x={960} y={820} s={0.9 * lt(w('c4c', 'hundred'), 0.4)} source="Genshin Impact rules" />
+          <SourceCard x={960} y={820} s={0.9 * lt(w('c4c', 'hundred'), 0.4)} source="Genshin Impact rules" />
           <DamageMeter x={1700} y={90} s={0.8} value="$34.97" />
         </Svg>
       </AbsoluteFill>
@@ -770,7 +770,7 @@ export const Ep54: React.FC = () => {
             <Text size={48}>50 pulls</Text>
           </G2>
           <Dave f={f} x={1260} y={920} s={1.05} keys={[{at: 0, pose: 'typing', expr: 'neutral', look: -0.6}]} />
-          <DamageMeter x={1700} y={90} s={0.8} value={f >= w('c4f', 'ninety') ? '$134.96' : '$34.97'} hot={f >= w('c4f', 'ninety') ? 1 : 0} />
+          <DamageMeter x={1700} y={90} s={0.8} value={f >= w('c4f', 'ninety') ? '$134.96' : '$34.97'} flash={f >= w('c4f', 'ninety') ? 1 : 0} />
         </Svg>
       </AbsoluteFill>
     ));
@@ -819,7 +819,7 @@ export const Ep54: React.FC = () => {
               <Text y={-40} size={100} color={f >= land ? C.red : C.ink}>{n}</Text>
               <Text y={40} size={48} color={C.navy}>pay anything</Text>
             </G2>
-            <SourceTag x={960} y={860} s={0.9 * lt(w('c5b', 'regulators'), 0.4)} source="Playtika 10-K 2025" />
+            <SourceCard x={960} y={860} s={0.9 * lt(w('c5b', 'regulators'), 0.4)} source="Playtika 10-K 2025" />
             <DamageMeter x={1700} y={90} s={0.8} value="$134.96" />
           </Svg>
         </AbsoluteFill>
@@ -883,7 +883,7 @@ export const Ep54: React.FC = () => {
             <Text y={50} size={60} color={f >= half ? C.red : C.ink}>HALF</Text>
             <Text y={110} size={44}>of loot box revenue</Text>
           </G2>
-          <SourceTag x={960} y={820} s={0.9 * lt(w('c5e', 'dessert'), 0.4)} source="Close et al. 2021" />
+          <SourceCard x={960} y={820} s={0.9 * lt(w('c5e', 'dessert'), 0.4)} source="Close et al. 2021" />
           <DamageMeter x={1700} y={90} s={0.8} value="$134.96" />
         </Svg>
       </AbsoluteFill>
@@ -963,7 +963,7 @@ export const Ep54: React.FC = () => {
             <Text y={20} size={60} color={f >= refund ? C.red : C.ink}>$200M</Text>
             <Text y={80} size={40} color={GRAY}>refunds to 1.6M players</Text>
           </G2>
-          <SourceTag x={960} y={860} s={0.9 * lt(w('c5i', 'wrong'), 0.4)} source="FTC 2023" />
+          <SourceCard x={960} y={860} s={0.9 * lt(w('c5i', 'wrong'), 0.4)} source="FTC 2023" />
           <DamageMeter x={1700} y={90} s={0.8} value="$134.96" />
         </Svg>
       </AbsoluteFill>
@@ -1004,7 +1004,7 @@ export const Ep54: React.FC = () => {
             <Text y={10} size={44}>vs earnings</Text>
             <Text y={80} size={60} color={C.red}>NO LINK</Text>
           </G2>
-          <SourceTag x={960} y={820} s={0.9 * lt(w('c6b', 'link'), 0.4)} source="Close et al. 2021" />
+          <SourceCard x={960} y={820} s={0.9 * lt(w('c6b', 'link'), 0.4)} source="Close et al. 2021" />
           <DamageMeter x={1700} y={90} s={0.8} value="$134.96" />
         </Svg>
       </AbsoluteFill>
@@ -1066,7 +1066,7 @@ export const Ep54: React.FC = () => {
             <Text y={20} size={70} color={C.red}>$235</Text>
             <Text y={90} size={40} color={C.ink}>in 3 weeks</Text>
           </G2>
-          <DamageMeter x={1700} y={90} s={0.8} value={f >= hun ? '$234.95' : '$134.96'} hot={f >= hun ? 1 : 0} />
+          <DamageMeter x={1700} y={90} s={0.8} value={f >= hun ? '$234.95' : '$134.96'} flash={f >= hun ? 1 : 0} />
         </Svg>
       </AbsoluteFill>
     ));
@@ -1158,7 +1158,7 @@ export const Ep54: React.FC = () => {
             <Text y={30} size={48} color="#fff">BLOCKED</Text>
           </G2>
           <G2 x={960} y={160} s={bump(screen, 0.12)}><Text size={50}>SPEED BUMP</Text></G2>
-          <SourceTag x={960} y={820} s={0.9 * lt(w('c7c', 'in'), 0.4)} source="Apple Support" />
+          <SourceCard x={960} y={820} s={0.9 * lt(w('c7c', 'in'), 0.4)} source="Apple Support" />
           <DamageMeter x={1700} y={90} s={0.8} value="$234.95" />
         </Svg>
       </AbsoluteFill>
@@ -1254,7 +1254,7 @@ export const Ep54: React.FC = () => {
             <Text y={0} size={50} color={f >= zero ? C.red : C.ink}>0.6%</Text>
             <Text y={60} size={40} color={GRAY}>about 1 in 167</Text>
           </G2>
-          <SourceTag x={960} y={640} s={0.9 * lt(about, 0.4)} source="Genshin Impact" />
+          <SourceCard x={960} y={640} s={0.9 * lt(about, 0.4)} source="Genshin Impact" />
           <DamageMeter x={1700} y={90} s={0.8} value="SAVED ~$3,800/yr" saved={1} />
         </Svg>
       </AbsoluteFill>
