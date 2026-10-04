@@ -27,7 +27,8 @@ jobs:
       - run: npm ci --no-audit --no-fund
       - run: python pipeline/tts.py pipeline/episodes/${{ inputs.ep }}.json public/${{ inputs.ep }}
       - run: python pipeline/validate.py ${{ inputs.ep }} | tee report.txt
-      - run: python pipeline/qa_empty.py ${{ inputs.ep }} --keep | tee -a report.txt || true
+      - run: python pipeline/qa_empty.py ${{ inputs.ep }} --keep 2>&1 | tee -a report.txt; [ "${PIPESTATUS[0]}" = 0 ] || echo "QA CRASHED: frames failed to render (runtime error in the episode code). NOT OK." | tee -a report.txt
+        shell: bash
       - run: python pipeline/qa_sheet.py ${{ inputs.ep }} report.txt sheet.jpg || true
       - run: python pipeline/qa_full.py ${{ inputs.ep }} full.jpg || true
       - uses: actions/upload-artifact@v4

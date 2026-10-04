@@ -21,6 +21,9 @@ NEVER use `handItem`. Use `hold={{item: <Prop s={0.35} />, side: 'r'}}` with pos
 ## Background keep-out zones
 `<Interior />` has a $ picture at x 220–440, y 190–360 and a window at x 1390–1690, y 170–430. Never put labels/props there (ep60 had labels on the $ picture in 8 scenes). The Damage Meter sits top-right; keep that corner free too.
 
+## QA honesty
+A QA report is only OK if it contains the line `epNN: 0 flagged beats out of N` AND full.jpg shows real frames. `QA CRASHED`, a missing flagged-beats line, or a tiny/blank full.jpg = runtime error in your code: fix it. If you cannot view full.jpg, SAY SO in your report — never claim a check passed that you didn't see.
+
 ## Lead review
 The cloud QA now also uploads `full.jpg` (one frame of every beat). Look at it yourself before reporting: overlapping props, text cut off at the frame edge, characters covering numbers, mirrored text, tiny unreadable text, two scenes that look identical — fix them. The lead reviews full.jpg before any render.
 

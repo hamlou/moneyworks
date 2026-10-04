@@ -581,7 +581,6 @@ export const Ep51: React.FC = () => {
     const dv = w('c3e', 'damage');
     const gt = w('c3e', 'got');
     q(dv, 'thud', 0.6);
-    q(nm, 'cash', 0.5);
     q(gt, 'ding', 0.5);
     scene(A('c3e'), () => (
       <AbsoluteFill>
