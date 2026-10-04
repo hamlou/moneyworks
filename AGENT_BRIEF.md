@@ -18,6 +18,9 @@ Do NOT write src/v2/tNN.tsx and do not run thumbs.yml. In your final report give
 ## Holding objects (owner bug, Oct 2026)
 NEVER use `handItem`. Use `hold={{item: <Prop s={0.35} />, side: 'r'}}` with pose `present`, `talk` or `point_r` (or `point_l` + `side: 'l'`). validate.py blocks `handItem`.
 
+## Background keep-out zones
+`<Interior />` has a $ picture at x 220–440, y 190–360 and a window at x 1390–1690, y 170–430. Never put labels/props there (ep60 had labels on the $ picture in 8 scenes). The Damage Meter sits top-right; keep that corner free too.
+
 ## Lead review
 The cloud QA now also uploads `full.jpg` (one frame of every beat). Look at it yourself before reporting: overlapping props, text cut off at the frame edge, characters covering numbers, mirrored text, tiny unreadable text, two scenes that look identical — fix them. The lead reviews full.jpg before any render.
 

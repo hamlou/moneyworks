@@ -272,7 +272,7 @@ export const Ep60: React.FC = () => {
                 <Text y={62} size={36} color={f >= tp ? '#fff' : GRAY}>CONFIRM</Text>
               </AppPhone>
             </G2>
-            <G2 x={500} y={260} o={lt(fn, 0.4)}><Text size={44} color={C.navy}>his whole fun budget</Text></G2>
+            <G2 x={760} y={260} o={lt(fn, 0.4)}><Text size={44} color={C.navy}>his whole fun budget</Text></G2>
           </Svg>
         </AbsoluteFill>
       ) : (
@@ -398,7 +398,7 @@ export const Ep60: React.FC = () => {
                 <Text y={140} size={36}>in BONUS BETS</Text>
               </AppPhone>
             </G2>
-            <G2 x={500} y={280} s={P(A('c2a'))}><Text size={48}>Bob's offer</Text></G2>
+            <G2 x={760} y={280} s={P(A('c2a'))}><Text size={48}>Bob's offer</Text></G2>
           </Svg>
         </AbsoluteFill>
       ) : (
@@ -654,7 +654,7 @@ export const Ep60: React.FC = () => {
                 <Text y={160} size={28} color={GRAY}>"free" bonus</Text>
               </AppPhone>
             </G2>
-            <G2 x={480} y={280} o={lt(ul, 0.4)}><Text size={44} color={C.red}>paid $140 for $100?!</Text></G2>
+            <G2 x={760} y={280} o={lt(ul, 0.4)}><Text size={44} color={C.red}>paid $140 for $100?!</Text></G2>
           </Svg>
         </AbsoluteFill>
       ) : (
@@ -810,7 +810,7 @@ export const Ep60: React.FC = () => {
               </AppPhone>
             </G2>
             <G2 x={1240} y={260} s={pop(f, bzz) * bump(mx2, 0.12)}><Banner title="BET APP · now" body="MAX BET: $2.00" w={600} /></G2>
-            <G2 x={520} y={300} s={P(A('c5b'))}><Text size={52} color={f >= bzz ? C.red : C.green}>{f >= bzz ? 'the message from the start' : 'GENIUS!'}</Text></G2>
+            <G2 x={760} y={300} s={P(A('c5b'))}><Text size={52} color={f >= bzz ? C.red : C.green}>{f >= bzz ? 'the message from the start' : 'GENIUS!'}</Text></G2>
           </Svg>
         </AbsoluteFill>
       ),
@@ -909,7 +909,7 @@ export const Ep60: React.FC = () => {
           <G2 x={960} y={120} s={P(A('c5f')) * bump(bf)}><Text size={52}>ALL YOU CAN EAT</Text></G2>
           <Bob f={f} x={420} y={930} s={1.1} keys={[{at: 0, pose: 'thumbs', expr: 'happy', look: 0.6}]} />
           <Salad x={420} y={520} s={1.3 * P(A('c5f')) * bump(sl, 0.15)} />
-          <G2 x={420} y={330} o={lt(sl, 0.4)}><Text size={40} color={C.green}>WELCOME!</Text></G2>
+          <G2 x={760} y={330} o={lt(sl, 0.4)}><Text size={40} color={C.green}>WELCOME!</Text></G2>
           <Dave f={f} x={1420} y={930} s={1.1} keys={[{at: 0, pose: 'carry', expr: 'grin', look: -0.6}, {at: bn, pose: 'shock', expr: 'shock', look: -0.6}]} />
           <PlateStack x={1420} y={560} s={1.1 * P(A('c5f')) * bump(sh, 0.1)} n={10} />
           <Stamp x={1420} y={330} s={pop(f, bn) * bump(bn, 0.2)} text="BANNED" color={C.red} size={80} r={-6} />
@@ -1265,7 +1265,7 @@ export const Ep60: React.FC = () => {
               <Text y={100} size={40}>safe in the bank</Text>
             </Frame>
           </G2>
-          <G2 x={480} y={280} o={lt(cs, 0.4)}><Text size={46} color={C.navy}>{f >= cs ? 'what would the $1,000 have cost?' : ' '}</Text></G2>
+          <G2 x={760} y={280} o={lt(cs, 0.4)}><Text size={46} color={C.navy}>{f >= cs ? 'what would the $1,000 have cost?' : ' '}</Text></G2>
         </Svg>
       </AbsoluteFill>
     ));
@@ -1345,7 +1345,7 @@ export const Ep60: React.FC = () => {
               </AppPhone>
             </G2>
             <Dave f={f} x={500} y={930} s={1.2} keys={[{at: 0, pose: 'hips', expr: 'suspicious', look: 0.6}]} />
-            <G2 x={500} y={300} o={lt(tm, 0.4)}><Text size={44}>paid for... one bet at a time</Text></G2>
+            <G2 x={760} y={300} o={lt(tm, 0.4)}><Text size={44}>paid for... one bet at a time</Text></G2>
           </Svg>
         </AbsoluteFill>
       ),
@@ -1394,7 +1394,7 @@ export const Ep60: React.FC = () => {
               <Text y={20} size={44}>here's your raise:</Text>
               <Text y={120} size={110} color={f >= tw ? C.red : C.ink}>{f >= tw ? '+2%' : '+?%'}</Text>
             </Box>
-            <G2 x={480} y={280} o={lt(ly, 0.4)}><Text size={44} color={C.red}>loyal = poorer?</Text></G2>
+            <G2 x={760} y={280} o={lt(ly, 0.4)}><Text size={44} color={C.red}>loyal = poorer?</Text></G2>
           </Svg>
         </AbsoluteFill>
       ) : (
