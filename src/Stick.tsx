@@ -276,9 +276,11 @@ export type StickProps = {
   seed?: number;
   opacity?: number;
   handItem?: React.ReactNode;
+  // v3 (ep51+): item held IN one hand, pushed out along the forearm so it never sits on the chest/neck; text never mirrored.
+  hold?: {item: React.ReactNode; side?: 'r' | 'l'; reach?: number; dx?: number; dy?: number};
 };
 
-export const Stick: React.FC<StickProps> = ({f, x, y, s = 1, keys, acc = [], walk, flip, sweat, pockets = 0, tinfoil, seed = 0, opacity = 1, handItem}) => {
+export const Stick: React.FC<StickProps> = ({f, x, y, s = 1, keys, acc = [], walk, flip, sweat, pockets = 0, tinfoil, seed = 0, opacity = 1, handItem, hold}) => {
   const ks = resolve(keys);
   let i = ks.length - 1;
   while (i > 0 && ks[i].at > f) i--;
@@ -342,6 +344,13 @@ export const Stick: React.FC<StickProps> = ({f, x, y, s = 1, keys, acc = [], wal
       <path d={seg(sho, le, lh)} {...line} />
       <path d={seg(sho, re, rh)} {...line} />
       {handItem && <g transform={`translate(${(lh[0] + rh[0]) / 2},${Math.min(lh[1], rh[1])})`}>{handItem}</g>}
+      {hold &&
+        (() => {
+          const [h, e] = hold.side === 'l' ? [lh, le] : [rh, re];
+          const a = Math.atan2(h[1] - e[1], h[0] - e[0]);
+          const r = hold.reach ?? 40;
+          return <g transform={`translate(${h[0] + Math.cos(a) * r + (hold.dx ?? 0)},${h[1] + Math.sin(a) * r + (hold.dy ?? 0)}) scale(${flip ? -1 : 1},1)`}>{hold.item}</g>;
+        })()}
       <g transform={`translate(${headC[0]},${headC[1]}) rotate(${p.torso + p.head}) scale(${flip ? -1 : 1},1)`}>
         <circle cx={0} cy={0} r={L.head} fill={C.paper} stroke={C.ink} strokeWidth={SW} />
         <Face e={expr} f={f} look={flip ? -look : look} talk={cur.talk} seed={seed} />
