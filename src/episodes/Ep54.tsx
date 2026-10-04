@@ -160,8 +160,7 @@ export const Ep54: React.FC = () => {
     });
   }
   {
-    const who = w('o5', 'who');
-    const how = w('o5', 'how');
+    const who = w('o5', 'whos');
     q(who, 'pop', 0.5);
     scene(A('o5'), () => (
       <AbsoluteFill>
@@ -183,7 +182,7 @@ export const Ep54: React.FC = () => {
     ));
   }
   {
-    const dr = w('o6', 'dragon');
+    const dr = w('o6', 'dragons');
     const hid = w('o6', 'hid');
     q(dr, 'pop', 0.6);
     q(hid, 'sting', 0.5);
@@ -417,7 +416,7 @@ export const Ep54: React.FC = () => {
   }
   {
     const ftc = w('c2e', 'f');
-    const gen = w('c2e', 'genshin');
+    const gen = w('c2e', 'million');
     q(ftc, 'paper', 0.6);
     q(gen, 'stamp', 0.6);
     scene(A('c2e'), () => (
@@ -642,7 +641,7 @@ export const Ep54: React.FC = () => {
   }
   {
     const fri = w('c3f', 'friday');
-    const gold = w('c3f', 'golden');
+    const gold = w('c3f', 'glowing');
     q(fri, 'pop', 0.5);
     q(gold, 'chime', 0.6);
     scene(A('c3f'), () => (
@@ -711,7 +710,7 @@ export const Ep54: React.FC = () => {
             <Text y={60} size={38} color={GRAY}>about 1 in 167</Text>
             <Text y={120} size={36} color={GRAY}>guaranteed by pull 90</Text>
           </G2>
-          <SourceTag x={960} y={820} s={0.9 * lt(w('c4c', 'guaranteed'), 0.4)} source="Genshin Impact rules" />
+          <SourceTag x={960} y={820} s={0.9 * lt(w('c4c', 'hundred'), 0.4)} source="Genshin Impact rules" />
           <DamageMeter x={1700} y={90} s={0.8} value="$34.97" />
         </Svg>
       </AbsoluteFill>
@@ -803,8 +802,7 @@ export const Ep54: React.FC = () => {
 
   // ============ CH5: Who Pays The Bills? ============
   {
-    const every = w('c5a', 'every');
-    const four = w('c5b', 'four');
+    const four = w('c5b', 'paid');
     const land = four + 20;
     q(four, 'tick', 0.5);
     q(land, 'stamp', 0.8);
@@ -821,7 +819,7 @@ export const Ep54: React.FC = () => {
               <Text y={-40} size={100} color={f >= land ? C.red : C.ink}>{n}</Text>
               <Text y={40} size={48} color={C.navy}>pay anything</Text>
             </G2>
-            <SourceTag x={960} y={860} s={0.9 * lt(w('c5b', 'pay'), 0.4)} source="Playtika 10-K 2025" />
+            <SourceTag x={960} y={860} s={0.9 * lt(w('c5b', 'paid'), 0.4)} source="Playtika 10-K 2025" />
             <DamageMeter x={1700} y={90} s={0.8} value="$134.96" />
           </Svg>
         </AbsoluteFill>
@@ -829,8 +827,8 @@ export const Ep54: React.FC = () => {
     });
   }
   {
-    const ninety = w('c5c', 'ninety');
-    const free = w('c5c', 'free');
+    const ninety = w('c5c', 'seventy');
+    const free = w('c5c', 'paid');
     q(ninety, 'pop', 0.5);
     q(free, 'pop', 0.5);
     scene(A('c5c'), () => (
@@ -853,7 +851,7 @@ export const Ep54: React.FC = () => {
     ));
   }
   {
-    const hunt = w('c5d', 'hunting');
+    const hunt = w('c5d', 'bills');
     q(hunt, 'sting', 0.6);
     scene(A('c5d'), () => (
       <AbsoluteFill>
@@ -870,8 +868,8 @@ export const Ep54: React.FC = () => {
     ));
   }
   {
-    const top = w('c5e', 'top');
-    const half = w('c5e', 'half');
+    const top = w('c5e', 'eaters');
+    const half = w('c5e', 'dessert');
     q(top, 'pop', 0.5);
     q(half, 'stamp', 0.7);
     scene(A('c5e'), () => (
@@ -885,15 +883,15 @@ export const Ep54: React.FC = () => {
             <Text y={50} size={60} color={f >= half ? C.red : C.ink}>HALF</Text>
             <Text y={110} size={44}>of loot box revenue</Text>
           </G2>
-          <SourceTag x={960} y={820} s={0.9 * lt(w('c5e', 'loot'), 0.4)} source="Close et al. 2021" />
+          <SourceTag x={960} y={820} s={0.9 * lt(w('c5e', 'dessert'), 0.4)} source="Close et al. 2021" />
           <DamageMeter x={1700} y={90} s={0.8} value="$134.96" />
         </Svg>
       </AbsoluteFill>
     ));
   }
   {
-    const app = w('c5f', 'apple');
-    const thirty = w('c5f', 'thirty');
+    const app = w('c5f', 'whales');
+    const thirty = w('c5f', 'thousand');
     q(app, 'pop', 0.5);
     q(thirty, 'cash', 0.6);
     scene(A('c5f'), () => (
@@ -912,9 +910,9 @@ export const Ep54: React.FC = () => {
     ));
   }
   {
-    const game = w('c5g', 'game');
-    const hunts = w('c5g', 'hunts');
-    const apple = w('c5g', 'apple');
+    const game = w('c5g', 'loot');
+    const hunts = w('c5g', 'money');
+    const apple = w('c5g', 'percent');
     q(game, 'pop', 0.5);
     q(apple, 'pop', 0.5);
     scene(A('c5g'), () => (
@@ -935,7 +933,7 @@ export const Ep54: React.FC = () => {
       </AbsoluteFill>
     ));
   }
-  const SUB = w('c5h', 'subscribe') + 20;
+  const SUB = w('c5h', 'paying') + 20;
   {
     q(SUB, 'whoosh', 0.5);
     subCues(SUB, cues);
@@ -949,8 +947,8 @@ export const Ep54: React.FC = () => {
     ));
   }
   {
-    const epic = w('c5i', 'epic');
-    const refund = w('c5i', 'refunds');
+    const epic = w('c5i', 'whales');
+    const refund = w('c5i', 'wrong');
     q(epic, 'paper', 0.6);
     q(refund, 'cash', 0.6);
     scene(A('c5i'), () => (
@@ -965,7 +963,7 @@ export const Ep54: React.FC = () => {
             <Text y={20} size={60} color={f >= refund ? C.red : C.ink}>$200M</Text>
             <Text y={80} size={40} color={GRAY}>refunds to 1.6M players</Text>
           </G2>
-          <SourceTag x={960} y={860} s={0.9 * lt(w('c5i', 'players'), 0.4)} source="FTC 2023" />
+          <SourceTag x={960} y={860} s={0.9 * lt(w('c5i', 'wrong'), 0.4)} source="FTC 2023" />
           <DamageMeter x={1700} y={90} s={0.8} value="$134.96" />
         </Svg>
       </AbsoluteFill>
@@ -974,8 +972,8 @@ export const Ep54: React.FC = () => {
 
   // ============ CH6: Whales Aren't Rich ============
   {
-    const think = w('c6a', 'think');
-    const rich = w('c6a', 'rich');
+    const think = w('c6a', 'thought');
+    const rich = w('c6a', 'nope');
     q(think, 'pop', 0.5);
     q(rich, 'pop', 0.5);
     scene(A('c6a'), () => (
@@ -1013,7 +1011,7 @@ export const Ep54: React.FC = () => {
     ));
   }
   {
-    const but = w('c6c', 'but');
+    const but = w('c6c', 'spending');
     const problem = w('c6c', 'problem');
     q(but, 'pop', 0.5);
     q(problem, 'stamp', 0.7);
@@ -1034,7 +1032,7 @@ export const Ep54: React.FC = () => {
     ));
   }
   {
-    const profit = w('c6d', 'profit');
+    const profit = w('c6d', 'risk');
     q(profit, 'stamp', 0.7);
     scene(A('c6d'), () => (
       <AbsoluteFill>
@@ -1053,7 +1051,7 @@ export const Ep54: React.FC = () => {
     ));
   }
   {
-    const dave = w('c6e', 'dave');
+    const dave = w('c6e', 'epic');
     const hun = w('c6e', 'hundred');
     q(dave, 'pop', 0.5);
     q(hun, 'cash', 0.6);
@@ -1074,8 +1072,8 @@ export const Ep54: React.FC = () => {
     ));
   }
   {
-    const pace = w('c6f', 'pace');
-    const four = w('c6f', 'four');
+    const pace = w('c6f', 'close');
+    const four = w('c6f', 'a');
     q(pace, 'tick', 0.5);
     q(four, 'stamp', 0.8);
     scene(A('c6f'), () => (
@@ -1095,7 +1093,7 @@ export const Ep54: React.FC = () => {
     ));
   }
   {
-    const never = w('c6g', 'never');
+    const never = w('c6g', 'knight');
     q(never, 'sting', 0.6);
     scene(A('c6g'), () => (
       <AbsoluteFill>
@@ -1115,8 +1113,8 @@ export const Ep54: React.FC = () => {
 
   // ============ CH7: Dave Fights Back ============
   {
-    const added = w('c7a', 'added');
-    const two35 = w('c7a', 'two');
+    const added = w('c7a', 'three');
+    const two35 = w('c7a', 'education');
     q(added, 'paper', 0.5);
     q(two35, 'stamp', 0.7);
     scene(A('c7a'), () => (
@@ -1185,7 +1183,7 @@ export const Ep54: React.FC = () => {
   {
     const old = w('c7e', 'old');
     const gift = w('c7e', 'gift');
-    const saved = w('c7e', 'saved');
+    const saved = w('c7e', 'keeps');
     const flip = saved + 10;
     q(old, 'pop', 0.5);
     q(gift, 'pop', 0.5);
@@ -1243,7 +1241,7 @@ export const Ep54: React.FC = () => {
   }
   {
     const zero = w('c8b', 'zero');
-    const about = w('c8b', 'about');
+    const about = w('c8b', 'ninety');
     q(zero, 'pop', 0.5);
     q(about, 'pop', 0.5);
     scene(A('c8b'), () => (
@@ -1264,7 +1262,7 @@ export const Ep54: React.FC = () => {
   }
   {
     const each = w('c8c', 'each');
-    const eighty = w('c8c', 'eighty');
+    const eighty = w('c8c', 'eight');
     q(each, 'pop', 0.5);
     q(eighty, 'pop', 0.5);
     scene(A('c8c'), () => (
@@ -1457,7 +1455,7 @@ export const Ep54: React.FC = () => {
   {
     const next = w('r4', 'next');
     const bob = w('r4', 'bob');
-    const divorce = w('r4', 'divorce');
+    const divorce = w('r4', 'divorced');
     q(next, 'pop', 0.5);
     q(bob, 'pop', 0.5);
     q(divorce, 'pop', 0.5);
