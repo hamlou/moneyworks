@@ -319,7 +319,7 @@ export const Ep54: React.FC = () => {
             <rect x={-120} y={-60} width={240} height={120} rx={20} fill={C.red} stroke={C.ink} strokeWidth={6} />
             <Text y={0} size={48} color="#fff">PAY $1</Text>
           </G2>
-          <DreamFrame f={f} />
+          <DreamFrame label="" />
         </Svg>
       </AbsoluteFill>
     ));
@@ -409,7 +409,7 @@ export const Ep54: React.FC = () => {
           <rect x={920} y={420} width={200} height={200} rx={20} fill={C.green} stroke={C.ink} strokeWidth={8} />
           <Text x={1020} y={528} size={80} color="#fff">$</Text>
           <Dave f={f} x={1500} y={920} s={1.1} keys={[{at: 0, pose: 'think', expr: 'worried', look: -0.6}]} />
-          <DreamFrame f={f} />
+          <DreamFrame label="" />
         </Svg>
       </AbsoluteFill>
     ));
@@ -612,7 +612,7 @@ export const Ep54: React.FC = () => {
           ))}
           <rect x={720} y={320} width={180} height={60} rx={12} fill={C.yellow} stroke={C.ink} strokeWidth={6} />
           <Text x={810} y={354} size={36} color={C.red}>$10</Text>
-          <DreamFrame f={f} />
+          <DreamFrame label="" />
         </Svg>
       </AbsoluteFill>
     ));
@@ -728,7 +728,7 @@ export const Ep54: React.FC = () => {
             <rect key={i} x={200 + i * 260} y={480} width={200} height={280} rx={16} fill={i === 3 ? C.gold : '#9B59B6'} stroke={C.ink} strokeWidth={6} />
           ))}
           <Text x={960} y={640} size={140} color="#fff">?</Text>
-          <DreamFrame f={f} />
+          <DreamFrame label="" />
         </Svg>
       </AbsoluteFill>
     ));
@@ -927,7 +927,7 @@ export const Ep54: React.FC = () => {
           <G2 x={340} y={580} s={P(hunts)} o={lt(hunts, 0.4)}><Text size={38} color={C.red}>hunts whales</Text></G2>
           <Apple x={960} y={440} s={1.1 * P(apple)} o={lt(apple, 0.4)} />
           <G2 x={960} y={700} s={P(apple)} o={lt(apple, 0.4)}><Text size={38} color={C.navy}>takes 30%</Text></G2>
-          <Raccoon f={f} x={1560} y={860} s={1.4 * P(apple)} mood="grin" grab={f >= apple ? 1 : 0} o={lt(apple, 0.4)} />
+          <Raccoon f={f} x={1560} y={860} s={1.4 * P(apple)} mood="happy" grab={f >= apple ? 1 : 0} o={lt(apple, 0.4)} />
           <DamageMeter x={1700} y={90} s={0.8} value="$134.96" />
         </Svg>
       </AbsoluteFill>
@@ -983,7 +983,7 @@ export const Ep54: React.FC = () => {
           <G2 x={200} y={200} s={P(A('c6a'))}><Text size={48} color="#fff" stroke={C.ink} sw={8}>MOST PEOPLE THINK</Text></G2>
           <MoneyStack x={960} y={600} s={2.2 * P(think)} n={8} />
           <G2 x={960} y={900} s={P(rich)} o={lt(rich, 0.4)}><Text size={56} color="#fff" stroke={C.ink} sw={8}>WHALES = RICH</Text></G2>
-          <DreamFrame f={f} />
+          <DreamFrame label="" />
         </Svg>
       </AbsoluteFill>
     ));
