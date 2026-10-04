@@ -71,8 +71,8 @@ export const Ep51: React.FC = () => {
   };
   {
     q(2, 'tick', 0.4);
-    q(w('o1', 'lost'), 'thud', 0.7);
-    q(w('o1', 'confetti'), 'poof', 0.5);
+    q(w('o1', 'six'), 'thud', 0.7);
+    q(w('o1', 'confetti'), 'flutter', 0.5);
     scene(0, () => o1Scene(f), false);
   }
   const FR = A('o2');
@@ -196,7 +196,7 @@ export const Ep51: React.FC = () => {
     const pu = w('c1a', 'puts');
     const cf = w('c1a', 'confetti');
     q(pu, 'cash', 0.5);
-    q(cf, 'poof', 0.7);
+    q(cf, 'flutter', 0.7);
     dmg('c1a', 0);
     scene(A('c1a'), () => (
       <AbsoluteFill>
@@ -961,7 +961,7 @@ export const Ep51: React.FC = () => {
     const hm = w('c6a', 'has');
     const ts = w('c6a', 'thousand');
     q(el, 'tick', 0.5);
-    q(nt, 'moon', 0.4);
+    q(nt, 'dream', 0.4);
     q(hm, 'cash', 0.6);
     q(ts, 'thud', 0.6);
     scene(A('c6a'), () => (
@@ -1409,7 +1409,7 @@ export const Ep51: React.FC = () => {
     const cf = w('r3', 'confetti');
     const ck = w('r3', 'clicker');
     q(th, 'pop', 0.5);
-    q(cf, 'poof', 0.5);
+    q(cf, 'flutter', 0.5);
     q(ck, 'boing', 0.5);
     scene(A('r3'), () => (
       <AbsoluteFill>
