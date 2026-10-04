@@ -55,7 +55,7 @@ GH=/c/Users/hp/AppData/Local/ghcli/bin/gh.exe ; R=hamlou/moneyworks
 ```
 - **Commit/push your own paths only** (other builders push in parallel):
   `git add <your paths> && git -c user.name=Hamza -c user.email=noreply@users.noreply.github.com commit -m "epNN: <what>" -- <your paths>`
-  then `for i in 1 2 3 4 5 6; do git pull --rebase -q && git push -q && break; sleep $((RANDOM%10+5)); done`.
+  then `for i in 1 2 3 4 5 6; do git pull --rebase --autostash -q && git push -q && break; sleep $((RANDOM%10+5)); done`.
   If `.git/index.lock` exists, wait a few seconds and retry. Never `git add -A`, never commit other files, never force-push.
 - **Voice timings (cloud):** push the JSON, then `$GH workflow run tts.yml -R $R -f ep=epNN`; find the run id with `$GH run list -R $R -w tts.yml -L 10` (match the title "tts epNN"); `$GH run watch <id> -R $R --exit-status` (or poll `$GH run view <id> -R $R`); then `$GH run download <id> -R $R -n epNN-timings -D public/epNN` → `public/epNN/timings.json` + `report.txt` (has `total` seconds). public/ is git-ignored (fine: render/QA regenerate it in the cloud).
 - **Validate:** `py pipeline/validate.py epNN` (reads local timings + tsx, tiny) must print OK — includes the v3 checks for ep ≥ 51.
