@@ -431,7 +431,7 @@ export const Ep54: React.FC = () => {
             <Text y={10} size={40}>= players don't know the</Text>
             <Text y={70} size={f >= gen ? 56 : 44} color={f >= gen ? C.red : C.ink}>REAL DOLLAR COST</Text>
           </G2>
-          <SourceTag x={960} y={860} s={0.9 * lt(w('c2e', 'real'), 0.4)} source="FTC Jan 2025" />
+          <SourceTag x={960} y={860} s={0.9 * lt(w('c2f', 'real'), 0.4)} source="FTC Jan 2025" />
           <DamageMeter x={1700} y={90} s={0.8} value="$4.99" />
         </Svg>
       </AbsoluteFill>
@@ -990,7 +990,7 @@ export const Ep54: React.FC = () => {
   }
   {
     const study = w('c6b', 'study');
-    const seven = w('c6b', 'seven');
+    const seven = w('c6b', 'link');
     q(study, 'paper', 0.6);
     q(seven, 'pop', 0.5);
     scene(A('c6b'), () => (
@@ -1004,7 +1004,7 @@ export const Ep54: React.FC = () => {
             <Text y={10} size={44}>vs earnings</Text>
             <Text y={80} size={60} color={C.red}>NO LINK</Text>
           </G2>
-          <SourceTag x={960} y={820} s={0.9 * lt(w('c6b', 'earnings'), 0.4)} source="Close et al. 2021" />
+          <SourceTag x={960} y={820} s={0.9 * lt(w('c6b', 'link'), 0.4)} source="Close et al. 2021" />
           <DamageMeter x={1700} y={90} s={0.8} value="$134.96" />
         </Svg>
       </AbsoluteFill>
