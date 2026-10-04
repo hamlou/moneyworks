@@ -819,7 +819,7 @@ export const Ep54: React.FC = () => {
               <Text y={-40} size={100} color={f >= land ? C.red : C.ink}>{n}</Text>
               <Text y={40} size={48} color={C.navy}>pay anything</Text>
             </G2>
-            <SourceTag x={960} y={860} s={0.9 * lt(w('c5b', 'paid'), 0.4)} source="Playtika 10-K 2025" />
+            <SourceTag x={960} y={860} s={0.9 * lt(w('c5b', 'regulators'), 0.4)} source="Playtika 10-K 2025" />
             <DamageMeter x={1700} y={90} s={0.8} value="$134.96" />
           </Svg>
         </AbsoluteFill>
@@ -1032,7 +1032,7 @@ export const Ep54: React.FC = () => {
     ));
   }
   {
-    const profit = w('c6d', 'risk');
+    const profit = w('c6d', 'children');
     q(profit, 'stamp', 0.7);
     scene(A('c6d'), () => (
       <AbsoluteFill>
