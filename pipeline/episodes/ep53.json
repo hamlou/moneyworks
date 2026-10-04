@@ -26,104 +26,381 @@
     "Buyback math (computed, illustrative): 90% x $1,050 = $945; Dave's damage $499 + $900 + $250 = $1,649; $1,649 - $945 - $240 = $464."
   ],
   "beats": [
-    {"id": "o1", "text": "Dave's garage is full of boxes. Forty boxes of protein shakes he can't sell.", "pause": 0.3},
-    {"id": "o2", "text": "Yep. That's Dave. How did he get here? Let's rewind.", "pause": 0.25},
-    {"id": "o3", "text": "Six months ago, his neighbor Bob said: it's not a party. It's a business opportunity.", "pause": 0.3},
-    {"id": "o4", "text": "Bob skipped one thing. In a big survey, nearly half the people who joined lost money.", "pause": 0.3},
-    {"id": "o5", "text": "So where does all that money go? Somebody gets it.", "pause": 0.3},
-    {"id": "o6", "text": "By the end, you'll know who. And the one sentence that got Dave his money back.", "pause": 0.6},
-
-    {"id": "c1a", "chapter": "Not A Party. A Pitch.", "text": "So Dave went to Bob's living room. Chips, folding chairs, and a slide with one big triangle.", "pause": 0.4},
-    {"id": "c1b", "text": "Is that a pyramid, Dave asked? No, Bob said. It's a triangle of success.", "pause": 0.5},
-    {"id": "c1c", "text": "Here's the deal. Dave can earn two ways. One, sell miracle shakes. Two, recruit friends to sell them, and get a cut of everything they buy.", "pause": 0.5},
-    {"id": "c1d", "text": "Picture a lemonade stand where you earn more for signing up other kids than for selling lemonade.", "pause": 0.5},
-    {"id": "c1e", "text": "To join, Dave needed a starter kit. Four hundred ninety nine dollars. Bob said it pays for itself in a month.", "pause": 0.5},
-    {"id": "c1f", "text": "Dave signed up that night. But the kit was only the ticket in. The real cost had a cute name. Autoship.", "pause": 0.9},
-
-    {"id": "c2a", "chapter": "The Shake Subscription", "text": "So the first box arrived. A month later, another box arrived. Dave hadn't ordered it.", "pause": 0.4},
-    {"id": "c2b", "text": "Bob explained. To stay active and earn commissions, Dave had to buy a minimum amount of product every month. One hundred fifty dollars. Automatically.", "pause": 0.5},
-    {"id": "c2c", "text": "It's like paying your boss rent for your own desk, every month, just to keep your job.", "pause": 0.5},
-    {"id": "c2d", "text": "Dave tried selling. His mom bought two boxes. A coworker bought one, to be nice. In six months, he sold two hundred forty dollars of shakes.", "pause": 0.5},
-    {"id": "c2e", "text": "In the same six months, autoship took nine hundred dollars.", "pause": 0.5},
-    {"id": "c2f", "text": "Dave was drinking shakes for breakfast, lunch and dinner. And Bob had a solution. Stop selling. Start recruiting.", "pause": 0.9},
-
-    {"id": "c3a", "chapter": "Recruit Five Friends", "text": "So Dave bought a ticket to the big spring rally. Two hundred fifty dollars. Bright lights, loud music, and a man on stage holding a giant check.", "pause": 0.4},
-    {"id": "c3b", "text": "The secret, the man said, is simple. Recruit five friends. Each of them recruits five. And so on.", "pause": 0.5},
-    {"id": "c3c", "text": "Dave did the math on a napkin. Five people. Then twenty five. Then one hundred twenty five.", "pause": 0.5},
-    {"id": "c3d", "text": "By level thirteen, you'd need more than one billion people. America has about three hundred forty two million.", "pause": 0.5},
-    {"id": "c3e", "text": "It's a pizza that gets cut into more and more slices. The people who joined first got real slices. Everyone arriving now gets crumbs.", "pause": 0.5},
-    {"id": "c3f", "text": "And that made Dave wonder. If the math runs out this fast, what do normal people actually earn?", "pause": 0.5},
-    {"id": "c3g", "text": "Quick guess. One of the biggest companies in this industry has about one hundred eight thousand people reselling its products in America. In a typical month, how many earn anything at all? Write your guess in the comments. The answer is in a minute.", "pause": 0.9},
-
-    {"id": "c4a", "chapter": "The Label Bob Skipped", "text": "So Dave flipped a shake box over. On the back, a nutrition label. Calories, sugar, protein. The boring truth, in tiny print.", "pause": 0.4},
-    {"id": "c4b", "text": "Turns out the business has a label too. It's called an income disclosure statement. Many big companies publish one. Bob had never shown it to him.", "pause": 0.5},
-    {"id": "c4c", "text": "Dave found the twenty twenty five statement from Herbalife, one of the biggest names in the industry.", "pause": 0.5},
-    {"id": "c4d", "text": "About one hundred eight thousand American distributors bought products to resell. In a typical month, about forty seven thousand earned any money at all.", "pause": 0.5},
-    {"id": "c4e", "text": "Remember your guess? Fewer than half. And for first year sellers who did earn something, half made less than one hundred sixty six dollars that month. Before expenses.", "pause": 0.5},
-    {"id": "c4f", "text": "Before shakes, gas and rally tickets. Dave's autoship alone was one hundred fifty.", "pause": 0.5},
-    {"id": "c4g", "text": "So where was all that money going? Dave grabbed a marker, and followed it.", "pause": 0.9},
-
-    {"id": "c5a", "chapter": "Who Gets Dave's Money?", "text": "Dave drew the arrows. His one hundred fifty dollars a month went to the company. Then the company paid a slice of it up the line.", "pause": 0.4},
-    {"id": "c5b", "text": "A slice to Bob. A slice to the woman who recruited Bob. A slice to the person above her. All the way to the top.", "pause": 0.5},
-    {"id": "c5c", "text": "Wait. Bob earned money on Dave's autoship? Dave wasn't Bob's business partner. Dave was Bob's customer.", "pause": 0.5},
-    {"id": "c5d", "text": "It's a staircase with a tiny toll booth on every step. And our old friend the raccoon is collecting at each one.", "pause": 0.5},
-    {"id": "c5e", "text": "And at the very top? In that same statement, the top one percent of experienced sellers earned more than twenty one thousand dollars a month. Most had been in it five to twelve years.", "pause": 0.5},
-    {"id": "c5f", "text": "So that's the villain. Not Bob. A pay plan where the money flows up, from the many at the bottom to the few at the top.", "pause": 0.6},
-    {"id": "c5g", "text": "But if the money flows up like that, how is this even legal?", "pause": 0.9},
-
-    {"id": "c6a", "chapter": "Legal, But For Whom?", "text": "Dave thought: if this were a scam, it would be illegal. Nope. It's more complicated.", "pause": 0.4},
-    {"id": "c6b", "text": "The F T C says a multi level marketing company can be legal, if people earn mainly by selling to real customers outside the business.", "pause": 0.5},
-    {"id": "c6c", "text": "If they earn mainly from recruiting, or by buying stuff just to stay active, that starts to look like an illegal pyramid scheme.", "pause": 0.5},
-    {"id": "c6d", "text": "Think of a bakery. A real bakery makes money when strangers buy bread. If its main customers are its own bakers, the bread isn't the business. The bakers are.", "pause": 0.5},
-    {"id": "c6e", "text": "In twenty sixteen, the F T C charged Herbalife with misleading people about how much they could earn. Herbalife settled. It paid two hundred million dollars, and checks went to nearly three hundred fifty thousand people.", "pause": 0.5},
-    {"id": "c6f", "text": "The deal also said at least two thirds of its rewards had to be based on real retail sales. So legal can be a line the government draws later.", "pause": 0.5},
-    {"id": "c6g", "text": "And even when it's legal, the F T C's own advice page says most people who join make little or no money. Some lose money.", "pause": 0.5},
-    {"id": "c6h", "text": "Dave read that twice. Then he looked at his phone, and realized he'd almost done something terrible.", "pause": 0.9},
-
-    {"id": "c7a", "chapter": "Dave Becomes Bob", "text": "On his screen was a message. To Grandma. Hey hun! I have an exciting opportunity for you.", "pause": 0.4},
-    {"id": "c7b", "text": "Dave had become Bob. It's like a zombie movie. One bite, and suddenly you're chasing your own family.", "pause": 0.5},
-    {"id": "c7c", "text": "And it's not rare. In that A A R P survey, about a third of people were recruited by a friend. About one in eight, by family.", "pause": 0.5},
-    {"id": "c7d", "text": "Four in ten said the company misled them about their chances. And thirty nine percent quit because pitching friends and family felt so uncomfortable.", "pause": 0.5},
-    {"id": "c7e", "text": "Dave called Bob. Bob went quiet. Then he admitted it. After the rallies and his own autoship, Bob was losing money too.", "pause": 0.5},
-    {"id": "c7f", "text": "So Dave was down one thousand six hundred forty nine dollars, with forty boxes in the garage, and a text to Grandma he almost sent.", "pause": 0.6},
-    {"id": "c7g", "text": "Dave deleted the message. Then he found one rule in the fine print that the upline never mentions.", "pause": 0.9},
-
-    {"id": "c8a", "chapter": "Dave Fights Back", "text": "This is education, not advice. Step one. Dave cancelled autoship, in writing, and saved the confirmation. Next month's charge: zero.", "pause": 0.5},
-    {"id": "c8b", "text": "Step two. The rule. Companies in the Direct Selling Association promise to buy back sellable inventory you bought in the last twelve months, for at least ninety percent of what you paid.", "pause": 0.5},
-    {"id": "c8c", "text": "It's like finding the receipt for a sweater you never wore.", "pause": 0.5},
-    {"id": "c8d", "text": "Dave checked. Bob's company was a member. He counted his unopened boxes. One thousand fifty dollars of shakes, all bought this year.", "pause": 0.5},
-    {"id": "c8e", "text": "Step three, for next time. Before joining anything, Dave asks for the income disclosure statement, and two questions from the F T C. What do people earn after expenses? And how much comes from customers outside the business?", "pause": 0.5},
-    {"id": "c8f", "text": "If nobody can answer, that is the answer.", "pause": 0.7},
-    {"id": "c8g", "text": "Then Dave called the company, and said one sentence. I'm cancelling, and I'd like the inventory buyback on my unopened products.", "pause": 0.5},
-    {"id": "c8h", "text": "Three weeks later, nine hundred forty five dollars landed back in his account. Add the two hundred forty he sold, and his damage shrank from one thousand six hundred forty nine dollars to four hundred sixty four.", "pause": 0.5},
-    {"id": "c8i", "text": "And the answer to the big question? The money went up the triangle. To the company, and the few at the top. Dave just stopped climbing.", "pause": 0.9},
-
-    {"id": "r1", "chapter": "What Dave Learned", "text": "One. Read the label first: the income disclosure.", "pause": 0.4},
-    {"id": "r2", "text": "Two. If you must buy every month to stay in, you're the customer.", "pause": 0.4},
-    {"id": "r3", "text": "Three. Leaving? Ask for the buyback. Ninety percent beats zero.", "pause": 0.6},
-    {"id": "r4", "text": "Next time, Dave downloads a game that's totally free. Three months later, his bank statement disagrees.", "pause": 0.5},
-    {"id": "r5", "text": "Subscribe. It's free, and unlike Bob's shakes, there's no autoship.", "pause": 1.4}
+    {
+      "id": "o1",
+      "text": "Dave's garage is full of boxes. Forty boxes of protein shakes he can't sell.",
+      "pause": 0.3
+    },
+    {
+      "id": "o2",
+      "text": "Yep. That's Dave. How did he get here? Let's rewind.",
+      "pause": 0.25
+    },
+    {
+      "id": "o3",
+      "text": "Six months ago, his neighbor Bob said: it's not a party. It's a business opportunity.",
+      "pause": 0.3
+    },
+    {
+      "id": "o4",
+      "text": "Bob skipped one thing. In a big survey, nearly half the people who joined lost money.",
+      "pause": 0.3
+    },
+    {
+      "id": "o5",
+      "text": "So where does all that money go? Somebody gets it.",
+      "pause": 0.3
+    },
+    {
+      "id": "o6",
+      "text": "By the end, you'll know who. And the one sentence that got Dave his money back.",
+      "pause": 0.6
+    },
+    {
+      "id": "c1a",
+      "chapter": "Not A Party. A Pitch.",
+      "text": "So Dave went to Bob's living room. Chips, folding chairs, and a slide with one big triangle.",
+      "pause": 0.4
+    },
+    {
+      "id": "c1b",
+      "text": "Is that a pyramid, Dave asked? No, Bob said. It's a triangle of success.",
+      "pause": 0.5
+    },
+    {
+      "id": "c1c",
+      "text": "Here's the deal. Dave can earn two ways. One, sell miracle shakes. Two, recruit friends to sell them, and get a cut of everything they buy.",
+      "pause": 0.5
+    },
+    {
+      "id": "c1d",
+      "text": "Picture a lemonade stand where you earn more for signing up other kids than for selling lemonade.",
+      "pause": 0.5
+    },
+    {
+      "id": "c1e",
+      "text": "To join, Dave needed a starter kit. Four hundred ninety nine dollars. Bob said it pays for itself in a month.",
+      "pause": 0.5
+    },
+    {
+      "id": "c1f",
+      "text": "Dave signed up that night. But the kit was only the ticket in. The real cost had a cute name. Autoship.",
+      "pause": 0.9
+    },
+    {
+      "id": "c2a",
+      "chapter": "The Shake Subscription",
+      "text": "So the first box arrived. A month later, another box arrived. Dave hadn't ordered it.",
+      "pause": 0.4
+    },
+    {
+      "id": "c2b",
+      "text": "Bob explained. To stay active and earn commissions, Dave had to buy a minimum amount of product every month. One hundred fifty dollars. Automatically.",
+      "pause": 0.5
+    },
+    {
+      "id": "c2c",
+      "text": "It's like paying your boss rent for your own desk, every month, just to keep your job.",
+      "pause": 0.5
+    },
+    {
+      "id": "c2d",
+      "text": "Dave tried selling. His mom bought two boxes. A coworker bought one, to be nice. In six months, he sold two hundred forty dollars of shakes.",
+      "pause": 0.5
+    },
+    {
+      "id": "c2e",
+      "text": "In the same six months, autoship took nine hundred dollars.",
+      "pause": 0.5
+    },
+    {
+      "id": "c2f",
+      "text": "Dave was drinking shakes for breakfast, lunch and dinner. And Bob had a solution. Stop selling. Start recruiting.",
+      "pause": 0.9
+    },
+    {
+      "id": "c3a",
+      "chapter": "Recruit Five Friends",
+      "text": "So Dave bought a ticket to the big spring rally. Two hundred fifty dollars. Bright lights, loud music, and a man on stage holding a giant check.",
+      "pause": 0.4
+    },
+    {
+      "id": "c3b",
+      "text": "The secret, the man said, is simple. Recruit five friends. Each of them recruits five. And so on.",
+      "pause": 0.5
+    },
+    {
+      "id": "c3c",
+      "text": "Dave did the math on a napkin. Five people. Then twenty five. Then one hundred twenty five.",
+      "pause": 0.5
+    },
+    {
+      "id": "c3d",
+      "text": "By level thirteen, you'd need more than one billion people. America has about three hundred forty two million.",
+      "pause": 0.5
+    },
+    {
+      "id": "c3e",
+      "text": "It's a pizza that gets cut into more and more slices. The people who joined first got real slices. Everyone arriving now gets crumbs.",
+      "pause": 0.5
+    },
+    {
+      "id": "c3f",
+      "text": "And that made Dave wonder. If the math runs out this fast, what do normal people actually earn?",
+      "pause": 0.5
+    },
+    {
+      "id": "c3g",
+      "text": "Quick guess. One of the biggest companies in this industry has about one hundred eight thousand people reselling its products in America. In a typical month, how many earn anything at all? Write your guess in the comments. The answer is in a minute.",
+      "pause": 0.9
+    },
+    {
+      "id": "c4a",
+      "chapter": "The Label Bob Skipped",
+      "text": "So Dave flipped a shake box over. On the back, a nutrition label. Calories, sugar, protein. The boring truth, in tiny print.",
+      "pause": 0.4
+    },
+    {
+      "id": "c4b",
+      "text": "Turns out the business has a label too. It's called an income disclosure statement. Many big companies publish one. Bob had never shown it to him.",
+      "pause": 0.5
+    },
+    {
+      "id": "c4c",
+      "text": "Dave found the twenty twenty five statement from Herbalife, one of the biggest names in the industry.",
+      "pause": 0.5
+    },
+    {
+      "id": "c4d",
+      "text": "About one hundred eight thousand American distributors bought products to resell. In a typical month, about forty seven thousand earned any money at all.",
+      "pause": 0.5
+    },
+    {
+      "id": "c4e",
+      "text": "Remember your guess? Fewer than half. And for first year sellers who did earn something, half made less than one hundred sixty six dollars that month. Before expenses.",
+      "pause": 0.5
+    },
+    {
+      "id": "c4f",
+      "text": "Before shakes, gas and rally tickets. Dave's autoship alone was one hundred fifty.",
+      "pause": 0.5
+    },
+    {
+      "id": "c4g",
+      "text": "So where was all that money going? Dave grabbed a marker, and followed it.",
+      "pause": 0.9
+    },
+    {
+      "id": "c5a",
+      "chapter": "Who Gets Dave's Money?",
+      "text": "Dave drew the arrows. His one hundred fifty dollars a month went to the company. Then the company paid a slice of it up the line.",
+      "pause": 0.4
+    },
+    {
+      "id": "c5b",
+      "text": "A slice to Bob. A slice to the woman who recruited Bob. A slice to the person above her. All the way to the top.",
+      "pause": 0.5
+    },
+    {
+      "id": "c5c",
+      "text": "Wait. Bob earned money on Dave's autoship? Dave wasn't Bob's business partner. Dave was Bob's customer.",
+      "pause": 0.5
+    },
+    {
+      "id": "c5d",
+      "text": "It's a staircase with a tiny toll booth on every step. And our old friend the raccoon is collecting at each one.",
+      "pause": 0.5
+    },
+    {
+      "id": "c5e",
+      "text": "And at the very top? In that same statement, the top one percent of experienced sellers earned more than twenty one thousand dollars a month. Most had been in it five to twelve years.",
+      "pause": 0.5
+    },
+    {
+      "id": "c5f",
+      "text": "So that's the villain. Not Bob. A pay plan where the money flows up, from the many at the bottom to the few at the top.",
+      "pause": 0.6
+    },
+    {
+      "id": "c5g",
+      "text": "But if the money flows up like that, how is this even legal?",
+      "pause": 0.9
+    },
+    {
+      "id": "c6a",
+      "chapter": "Legal, But For Whom?",
+      "text": "Dave thought: if this were a scam, it would be illegal. Nope. It's more complicated.",
+      "pause": 0.4
+    },
+    {
+      "id": "c6b",
+      "text": "The F T C says a multi level marketing company can be legal, if people earn mainly by selling to real customers outside the business.",
+      "pause": 0.5
+    },
+    {
+      "id": "c6c",
+      "text": "If they earn mainly from recruiting, or by buying stuff just to stay active, that starts to look like an illegal pyramid scheme.",
+      "pause": 0.5
+    },
+    {
+      "id": "c6d",
+      "text": "Think of a bakery. A real bakery makes money when strangers buy bread. If its main customers are its own bakers, the bread isn't the business. The bakers are.",
+      "pause": 0.5
+    },
+    {
+      "id": "c6e",
+      "text": "In twenty sixteen, the F T C charged Herbalife with misleading people about how much they could earn. Herbalife settled. It paid two hundred million dollars, and checks went to nearly three hundred fifty thousand people.",
+      "pause": 0.5
+    },
+    {
+      "id": "c6f",
+      "text": "The deal also said at least two thirds of its rewards had to be based on real retail sales. So legal can be a line the government draws later.",
+      "pause": 0.5
+    },
+    {
+      "id": "c6g",
+      "text": "And even when it's legal, the F T C's own advice page says most people who join make little or no money. Some lose money.",
+      "pause": 0.5
+    },
+    {
+      "id": "c6h",
+      "text": "Dave read that twice. Then he looked at his phone, and realized he'd almost done something terrible.",
+      "pause": 0.9
+    },
+    {
+      "id": "c7a",
+      "chapter": "Dave Becomes Bob",
+      "text": "On his screen was a message. To Grandma. Hey hun! I have an exciting opportunity for you.",
+      "pause": 0.4
+    },
+    {
+      "id": "c7b",
+      "text": "Dave had become Bob. It's like a zombie movie. One bite, and suddenly you're chasing your own family.",
+      "pause": 0.5
+    },
+    {
+      "id": "c7c",
+      "text": "And it's not rare. In that A A R P survey, about a third of people were recruited by a friend. About one in eight, by family.",
+      "pause": 0.5
+    },
+    {
+      "id": "c7d",
+      "text": "Four in ten said the company misled them about their chances. And thirty nine percent quit because pitching friends and family felt so uncomfortable.",
+      "pause": 0.5
+    },
+    {
+      "id": "c7e",
+      "text": "Dave called Bob. Bob went quiet. Then he admitted it. After the rallies and his own autoship, Bob was losing money too.",
+      "pause": 0.5
+    },
+    {
+      "id": "c7f",
+      "text": "So Dave was down one thousand six hundred forty nine dollars, with forty boxes in the garage, and a text to Grandma he almost sent.",
+      "pause": 0.6
+    },
+    {
+      "id": "c7g",
+      "text": "Dave deleted the message. Then he found one rule in the fine print that the upline never mentions.",
+      "pause": 0.9
+    },
+    {
+      "id": "c8a",
+      "chapter": "Dave Fights Back",
+      "text": "This is education, not advice. Step one. Dave cancelled autoship, in writing, and saved the confirmation. Next month's charge: zero.",
+      "pause": 0.5
+    },
+    {
+      "id": "c8b",
+      "text": "Step two. The rule. Companies in the Direct Selling Association promise to buy back sellable inventory you bought in the last twelve months, for at least ninety percent of what you paid.",
+      "pause": 0.5
+    },
+    {
+      "id": "c8c",
+      "text": "It's like finding the receipt for a sweater you never wore.",
+      "pause": 0.5
+    },
+    {
+      "id": "c8d",
+      "text": "Dave checked. Bob's company was a member. He counted his unopened boxes. One thousand fifty dollars of shakes, all bought this year.",
+      "pause": 0.5
+    },
+    {
+      "id": "c8e",
+      "text": "Step three, for next time. Before joining anything, Dave asks for the income disclosure statement, and two questions from the F T C. What do people earn after expenses? And how much comes from customers outside the business?",
+      "pause": 0.5
+    },
+    {
+      "id": "c8f",
+      "text": "If nobody can answer, that is the answer.",
+      "pause": 0.7
+    },
+    {
+      "id": "c8g",
+      "text": "Then Dave called the company, and said one sentence. I'm cancelling, and I'd like the inventory buyback on my unopened products.",
+      "pause": 0.5
+    },
+    {
+      "id": "c8h",
+      "text": "Three weeks later, nine hundred forty five dollars landed back in his account. Add the two hundred forty he sold, and his damage shrank from one thousand six hundred forty nine dollars to four hundred sixty four.",
+      "pause": 0.5
+    },
+    {
+      "id": "c8i",
+      "text": "And the answer to the big question? The money went up the triangle. To the company, and the few at the top. Dave just stopped climbing.",
+      "pause": 0.9
+    },
+    {
+      "id": "r1",
+      "chapter": "What Dave Learned",
+      "text": "One. Read the label first: the income disclosure.",
+      "pause": 0.4
+    },
+    {
+      "id": "r2",
+      "text": "Two. If you must buy every month to stay in, you're the customer.",
+      "pause": 0.4
+    },
+    {
+      "id": "r3",
+      "text": "Three. Leaving? Ask for the buyback. Ninety percent beats zero.",
+      "pause": 0.6
+    },
+    {
+      "id": "r4",
+      "text": "Next time, Dave downloads a game that's totally free. Three months later, his bank statement disagrees.",
+      "pause": 0.5
+    },
+    {
+      "id": "r5",
+      "text": "Subscribe. It's free, and unlike Bob's shakes, there's no autoship.",
+      "pause": 1.4
+    }
   ],
   "youtube": {
     "title": "Why Your Friend's 'Business Opportunity' Loses Money (MLMs)",
     "alt_titles": [
-      "Your Friend's MLM Invite Has a Hidden Price",
-      "Why Most People in MLMs Lose Money (Where It Goes)"
+      "I Lost $1,649 in My Friend's 'Business' (The MLM Truth)",
+      "40 Boxes Later: How MLMs Actually Make Their Money"
     ],
-    "hook": "Your friend says it's not a party, it's a business opportunity. Here's where the money really goes.",
+    "hook": "Dave joined his neighbor's 'business opportunity.' Six months later: $1,649 spent, $240 earned, 40 boxes in the garage. Where did the money go? Most people who join multi-level marketing businesses lose money, but the industry keeps growing. Dave learns the hard way where his $1,649 actually went, who profits from 'business opportunities,' and the two questions that reveal the truth before you sign up. Plus: the one sentence that got him most of his money back.",
     "tags": [
-      "why mlms lose money",
-      "multi level marketing explained",
-      "mlm income disclosure",
-      "pyramid scheme vs mlm",
-      "mlm autoship",
-      "mlm inventory buyback",
-      "is my friend's business opportunity an mlm",
-      "how mlms make money",
-      "ftc mlm",
-      "money explained simply",
+      "MLM",
+      "multi level marketing",
+      "pyramid scheme",
+      "side hustle",
+      "business opportunity",
+      "network marketing",
+      "direct sales",
+      "financial literacy",
+      "money education",
+      "scam awareness",
       "dave explains money"
     ],
-    "hashtags": ["#mlm", "#personalfinance", "#money"]
+    "hashtags": [
+      "#MLM",
+      "#MoneyEducation",
+      "#FinancialLiteracy"
+    ],
+    "pinned": "Have you ever been approached with a 'business opportunity' by a friend or family member? What made you say yes or no?"
   }
 }

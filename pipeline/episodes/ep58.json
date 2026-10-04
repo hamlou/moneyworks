@@ -24,82 +24,346 @@
     "Callbacks: ep14 (credit score ingredients), ep57 (lending to family - not repeated), gym-membership episode."
   ],
   "beats": [
-    {"id": "o1", "text": "Dave's phone rings. A debt collector. About a car Dave has never driven.", "pause": 0.25},
-    {"id": "o2", "text": "Yep. That's Dave. How did he get here? Rewind six months.", "pause": 0.25},
-    {"id": "o3", "text": "His buddy Bob needs a car for a new job. Bad credit. Just sign here, Bob says.", "pause": 0.25},
-    {"id": "o4", "text": "The loan? Eighteen thousand dollars. And Dave signed for every cent.", "pause": 0.25},
-    {"id": "o5", "text": "So how did one favor become Dave's debt? And who's quietly winning?", "pause": 0.25},
-    {"id": "o6", "text": "The answer was printed on the paper Dave signed. One sentence. Stay for it.", "pause": 0.6},
-
-    {"id": "c1a", "chapter": "Just A Signature?", "text": "So Dave goes with Bob to the car lot. The salesman slides a stack of papers across the desk. Bob signs. Then Dave signs.", "pause": 0.4},
-    {"id": "c1b", "text": "Dave feels like a great friend. In his head, he's just a reference. Like vouching for Bob on a job application.", "pause": 0.5},
-    {"id": "c1c", "text": "Nope. A co-signer isn't a reference. A co-signer is a second borrower. Same loan. Same debt. All eighteen thousand dollars of it.", "pause": 0.5},
-    {"id": "c1d", "text": "Think of it like a pizza order with two names on it. Bob eats the whole pizza. But if Bob doesn't pay, the pizza guy knocks on Dave's door.", "pause": 0.6},
-    {"id": "c1e", "text": "And the car? It goes in Bob's name. Dave owns zero wheels. Not even the cup holder.", "pause": 0.5},
-    {"id": "c1f", "text": "Bob drives off, honking. Dave walks home, proud. He has no idea the loan already followed him home.", "pause": 0.9},
-
-    {"id": "c2a", "chapter": "A Ghost In His Report", "text": "Three months later, Dave has finally saved a down payment. So he visits a mortgage lender about his first small home.", "pause": 0.4},
-    {"id": "c2b", "text": "The loan officer frowns at her screen. Who's this four hundred dollar car payment? Dave laughs. That's not mine. That's Bob's.", "pause": 0.5},
-    {"id": "c2c", "text": "She turns the screen around. Your credit report says it's yours.", "pause": 0.5},
-    {"id": "c2d", "text": "And she's right. Experian, one of the three big credit bureaus, explains that a co-signed loan shows up on the co-signer's report too. As if Dave borrowed the money himself.", "pause": 0.5},
-    {"id": "c2e", "text": "Mortgage rules count it as well. The rulebook from Fannie Mae, a giant mortgage company, treats that payment as Dave's debt, unless he can prove Bob made the last twelve payments himself. All on time.", "pause": 0.5},
-    {"id": "c2f", "text": "It's like having a ghost roommate. Dave never sees him. But the ghost's rent shows up in Dave's budget every single month.", "pause": 0.6},
-    {"id": "c2g", "text": "So Dave makes a plan. Wait one year. Bob just has to pay on time. Easy, right? But Bob had just stopped answering his phone.", "pause": 0.9},
-
-    {"id": "c3a", "chapter": "Bob Goes Quiet", "text": "Dave texts Bob. Nothing. He calls. Voicemail. Turns out, Bob lost that new job. And the car payments? He stopped making them.", "pause": 0.4},
-    {"id": "c3b", "text": "But the bills go to Bob's mailbox. Not Dave's. So Dave has no clue.", "pause": 0.5},
-    {"id": "c3c", "text": "Here's the sneaky part. Once a payment is thirty days late, lenders usually report it to the credit bureaus. And on a co-signed loan, that late mark lands on both reports. Bob's, and Dave's.", "pause": 0.5},
-    {"id": "c3d", "text": "Remember our credit score video? Payment history is the biggest ingredient, about thirty five percent of a FICO score. So Bob's late payments are like muddy footprints, walking straight across Dave's clean report card.", "pause": 0.6},
-    {"id": "c3e", "text": "Quick guess. Out of every hundred people who co-sign a loan, how many end up paying some of it themselves? Write your number in the comments. The answer is coming in a minute.", "pause": 0.7},
-    {"id": "c3f", "text": "Because right now, Dave's phone is ringing.", "pause": 0.9},
-
-    {"id": "c4a", "chapter": "The Call From Nowhere", "text": "It's the debt collector from the beginning. Bob is three payments behind. That's twelve hundred dollars. Plus late fees.", "pause": 0.4},
-    {"id": "c4b", "text": "Dave almost drops the phone. Call Bob! He's the one driving the car!", "pause": 0.4},
-    {"id": "c4c", "text": "And the collector says, calmly, we don't have to.", "pause": 0.6},
-    {"id": "c4d", "text": "Dave thought the lender had to chase Bob first. Nope. The Federal Trade Commission warns that the lender can collect from the co-signer without even trying the borrower first. A few states have extra rules, but that's the basic deal.", "pause": 0.5},
-    {"id": "c4e", "text": "And they can use the same tools on Dave as on Bob. A lawsuit. Even taking money straight from his paycheck. That's called garnishing wages.", "pause": 0.5},
-    {"id": "c4f", "text": "So Dave pays the twelve hundred dollars, just to stop the bleeding. For a car he has never driven.", "pause": 0.5},
-    {"id": "c4g", "text": "And remember your guess? A CreditCards dot com survey found that thirty eight percent of co-signers had to pay some or all of the loan. Thirty eight out of a hundred. Dave just joined the club.", "pause": 0.6},
-    {"id": "c4h", "text": "Then Dave asked himself a dangerous question. Why did the lender want his name so badly in the first place?", "pause": 0.9},
-
-    {"id": "c5a", "chapter": "Why The Lender Smiled", "text": "So Dave looks at the whole deal from the other side of the desk. The lender's side.", "pause": 0.4},
-    {"id": "c5b", "text": "Bob alone? Bad credit. Risky. Maybe no loan at all. But Bob plus Dave? Now the lender has two wallets to collect from. For one car.", "pause": 0.5},
-    {"id": "c5c", "text": "Dave's signature was the lender's seatbelt. The lender buckled in. Dave rode on the roof.", "pause": 0.7},
-    {"id": "c5d", "text": "And the damage spreads. In that same survey, twenty eight percent of co-signers saw their credit score drop. And about one in four said the relationship got hurt. Dave and Bob? Not talking.", "pause": 0.5},
-    {"id": "c5e", "text": "Lenders also really don't like letting go of that second wallet. When the C F P B looked at private student loans, ninety percent of people who asked to remove a co-signer were rejected.", "pause": 0.5},
-    {"id": "c5f", "text": "Ninety percent. Which means, once you're in, you're probably in. So Dave tried anyway. He asked how to get out. The answer was worse.", "pause": 0.9},
-
-    {"id": "c6a", "chapter": "No Exit Door", "text": "Dave calls the lender. Can you just take my name off? Bob will pay from now on, I promise. The lender says no.", "pause": 0.4},
-    {"id": "c6b", "text": "Dave signed a promise to pay. You can't cancel that with a phone call. Honestly, even a gym membership is easier to quit.", "pause": 0.6},
-    {"id": "c6c", "text": "So there are really only two ways out. One. Bob gets a brand new loan in his own name, and pays this one off. But that needs good credit. And Bob's credit is now worse than before.", "pause": 0.5},
-    {"id": "c6d", "text": "Two. The whole loan gets paid off. Every cent. By somebody.", "pause": 0.6},
-    {"id": "c6e", "text": "And that's when Bob finally calls back. His voice is shaking. Dave, they sent me a letter. They want to take the car.", "pause": 0.9},
-
-    {"id": "c7a", "chapter": "The Seven Thousand Trap", "text": "Dave reads the letter. If the payments don't catch up, the lender can repossess the car. Take it back. And sell it at auction.", "pause": 0.4},
-    {"id": "c7b", "text": "Dave thinks, fine. They take the car, the loan disappears, we're done. Nope. Here's the scary math, straight from the F T C.", "pause": 0.5},
-    {"id": "c7c", "text": "Say you still owe fifteen thousand dollars. The car sells at auction for eight thousand. The gap is seven thousand dollars. Plus fees for the repossession. And you still owe all of that.", "pause": 0.6},
-    {"id": "c7d", "text": "Bob still owes about sixteen thousand. So Dave's numbers look almost exactly the same. Which means Dave could owe seven thousand dollars, for a car that isn't even there anymore.", "pause": 0.6},
-    {"id": "c7e", "text": "It's like paying for a pizza that was already eaten. By someone else. Who isn't answering your texts.", "pause": 0.7},
-    {"id": "c7f", "text": "That was Dave's lowest moment. But the letter had one tiny detail in it. A deadline. And a deadline means there's still time.", "pause": 0.9},
-
-    {"id": "c8a", "chapter": "Dave Fights Back", "text": "So Dave fights back. Remember, this is education, not advice.", "pause": 0.4},
-    {"id": "c8b", "text": "Step one. Dave asks the lender to send him the monthly statements too, and to tell him in writing if a payment is ever missed. The F T C suggests exactly that. No more surprises.", "pause": 0.5},
-    {"id": "c8c", "text": "Step two. He checks his credit reports. That's free, every single week, at annual credit report dot com. The only official site.", "pause": 0.5},
-    {"id": "c8d", "text": "Step three, the big one. Dave sits down with Bob. Not to yell. To make a plan. Bob sells the car himself, before the deadline. No rushed auction.", "pause": 0.5},
-    {"id": "c8e", "text": "Bob finds a buyer for fourteen thousand dollars. His new part time job covers the last two thousand. The loan is paid off. Closed. Dave's name is finally free.", "pause": 0.6},
-    {"id": "c8f", "text": "Dave's damage stops at twelve hundred dollars. And that seven thousand dollar gap? It never happens. Dave just saved seven thousand dollars.", "pause": 0.9},
-
-    {"id": "c9a", "chapter": "The Sentence On Page One", "text": "That night, Dave digs out the papers from the car lot. And there it is. A notice, on its own page. F T C rules make lenders like this one hand it to every co-signer.", "pause": 0.5},
-    {"id": "c9b", "text": "You are being asked to guarantee this debt. Think carefully before you do. If the borrower doesn't pay the debt, you will have to.", "pause": 0.7},
-    {"id": "c9c", "text": "One sentence. It predicted everything. The collector. The credit report. The seven thousand dollars. Dave signed right under it, and never read it.", "pause": 0.6},
-    {"id": "c9d", "text": "The notice even tells you the test. Be sure you can afford to pay if you have to. So that's Dave's new rule. Before co-signing anything, ask: could I pay this whole loan myself, and still be okay?", "pause": 0.5},
-    {"id": "c9e", "text": "If the answer is no, then the kindest thing might be helping Bob in another way. Because a signature is never just a signature.", "pause": 0.9},
-
-    {"id": "r1", "chapter": "What Dave Learned", "text": "One. A co-signer isn't a reference. It's a second borrower.", "pause": 0.4},
-    {"id": "r2", "text": "Two. Their late payments land on your credit report.", "pause": 0.4},
-    {"id": "r3", "text": "Three. Read the notice, and only sign what you could pay alone.", "pause": 0.6},
-    {"id": "r4", "text": "But now Dave has a new problem. He opened his retirement account, and did the math. He'll be working until seventy. Maybe longer.", "pause": 0.5},
-    {"id": "r5", "text": "Subscribe. It's the only thing we'll ever ask you to sign.", "pause": 1.4}
+    {
+      "id": "o1",
+      "text": "Dave's phone rings. A debt collector. About a car Dave has never driven.",
+      "pause": 0.25
+    },
+    {
+      "id": "o2",
+      "text": "Yep. That's Dave. How did he get here? Rewind six months.",
+      "pause": 0.25
+    },
+    {
+      "id": "o3",
+      "text": "His buddy Bob needs a car for a new job. Bad credit. Just sign here, Bob says.",
+      "pause": 0.25
+    },
+    {
+      "id": "o4",
+      "text": "The loan? Eighteen thousand dollars. And Dave signed for every cent.",
+      "pause": 0.25
+    },
+    {
+      "id": "o5",
+      "text": "So how did one favor become Dave's debt? And who's quietly winning?",
+      "pause": 0.25
+    },
+    {
+      "id": "o6",
+      "text": "The answer was printed on the paper Dave signed. One sentence. Stay for it.",
+      "pause": 0.6
+    },
+    {
+      "id": "c1a",
+      "chapter": "Just A Signature?",
+      "text": "So Dave goes with Bob to the car lot. The salesman slides a stack of papers across the desk. Bob signs. Then Dave signs.",
+      "pause": 0.4
+    },
+    {
+      "id": "c1b",
+      "text": "Dave feels like a great friend. In his head, he's just a reference. Like vouching for Bob on a job application.",
+      "pause": 0.5
+    },
+    {
+      "id": "c1c",
+      "text": "Nope. A co-signer isn't a reference. A co-signer is a second borrower. Same loan. Same debt. All eighteen thousand dollars of it.",
+      "pause": 0.5
+    },
+    {
+      "id": "c1d",
+      "text": "Think of it like a pizza order with two names on it. Bob eats the whole pizza. But if Bob doesn't pay, the pizza guy knocks on Dave's door.",
+      "pause": 0.6
+    },
+    {
+      "id": "c1e",
+      "text": "And the car? It goes in Bob's name. Dave owns zero wheels. Not even the cup holder.",
+      "pause": 0.5
+    },
+    {
+      "id": "c1f",
+      "text": "Bob drives off, honking. Dave walks home, proud. He has no idea the loan already followed him home.",
+      "pause": 0.9
+    },
+    {
+      "id": "c2a",
+      "chapter": "A Ghost In His Report",
+      "text": "Three months later, Dave has finally saved a down payment. So he visits a mortgage lender about his first small home.",
+      "pause": 0.4
+    },
+    {
+      "id": "c2b",
+      "text": "The loan officer frowns at her screen. Who's this four hundred dollar car payment? Dave laughs. That's not mine. That's Bob's.",
+      "pause": 0.5
+    },
+    {
+      "id": "c2c",
+      "text": "She turns the screen around. Your credit report says it's yours.",
+      "pause": 0.5
+    },
+    {
+      "id": "c2d",
+      "text": "And she's right. Experian, one of the three big credit bureaus, explains that a co-signed loan shows up on the co-signer's report too. As if Dave borrowed the money himself.",
+      "pause": 0.5
+    },
+    {
+      "id": "c2e",
+      "text": "Mortgage rules count it as well. The rulebook from Fannie Mae, a giant mortgage company, treats that payment as Dave's debt, unless he can prove Bob made the last twelve payments himself. All on time.",
+      "pause": 0.5
+    },
+    {
+      "id": "c2f",
+      "text": "It's like having a ghost roommate. Dave never sees him. But the ghost's rent shows up in Dave's budget every single month.",
+      "pause": 0.6
+    },
+    {
+      "id": "c2g",
+      "text": "So Dave makes a plan. Wait one year. Bob just has to pay on time. Easy, right? But Bob had just stopped answering his phone.",
+      "pause": 0.9
+    },
+    {
+      "id": "c3a",
+      "chapter": "Bob Goes Quiet",
+      "text": "Dave texts Bob. Nothing. He calls. Voicemail. Turns out, Bob lost that new job. And the car payments? He stopped making them.",
+      "pause": 0.4
+    },
+    {
+      "id": "c3b",
+      "text": "But the bills go to Bob's mailbox. Not Dave's. So Dave has no clue.",
+      "pause": 0.5
+    },
+    {
+      "id": "c3c",
+      "text": "Here's the sneaky part. Once a payment is thirty days late, lenders usually report it to the credit bureaus. And on a co-signed loan, that late mark lands on both reports. Bob's, and Dave's.",
+      "pause": 0.5
+    },
+    {
+      "id": "c3d",
+      "text": "Remember our credit score video? Payment history is the biggest ingredient, about thirty five percent of a FICO score. So Bob's late payments are like muddy footprints, walking straight across Dave's clean report card.",
+      "pause": 0.6
+    },
+    {
+      "id": "c3e",
+      "text": "Quick guess. Out of every hundred people who co-sign a loan, how many end up paying some of it themselves? Write your number in the comments. The answer is coming in a minute.",
+      "pause": 0.7
+    },
+    {
+      "id": "c3f",
+      "text": "Because right now, Dave's phone is ringing.",
+      "pause": 0.9
+    },
+    {
+      "id": "c4a",
+      "chapter": "The Call From Nowhere",
+      "text": "It's the debt collector from the beginning. Bob is three payments behind. That's twelve hundred dollars. Plus late fees.",
+      "pause": 0.4
+    },
+    {
+      "id": "c4b",
+      "text": "Dave almost drops the phone. Call Bob! He's the one driving the car!",
+      "pause": 0.4
+    },
+    {
+      "id": "c4c",
+      "text": "And the collector says, calmly, we don't have to.",
+      "pause": 0.6
+    },
+    {
+      "id": "c4d",
+      "text": "Dave thought the lender had to chase Bob first. Nope. The Federal Trade Commission warns that the lender can collect from the co-signer without even trying the borrower first. A few states have extra rules, but that's the basic deal.",
+      "pause": 0.5
+    },
+    {
+      "id": "c4e",
+      "text": "And they can use the same tools on Dave as on Bob. A lawsuit. Even taking money straight from his paycheck. That's called garnishing wages.",
+      "pause": 0.5
+    },
+    {
+      "id": "c4f",
+      "text": "So Dave pays the twelve hundred dollars, just to stop the bleeding. For a car he has never driven.",
+      "pause": 0.5
+    },
+    {
+      "id": "c4g",
+      "text": "And remember your guess? A CreditCards dot com survey found that thirty eight percent of co-signers had to pay some or all of the loan. Thirty eight out of a hundred. Dave just joined the club.",
+      "pause": 0.6
+    },
+    {
+      "id": "c4h",
+      "text": "Then Dave asked himself a dangerous question. Why did the lender want his name so badly in the first place?",
+      "pause": 0.9
+    },
+    {
+      "id": "c5a",
+      "chapter": "Why The Lender Smiled",
+      "text": "So Dave looks at the whole deal from the other side of the desk. The lender's side.",
+      "pause": 0.4
+    },
+    {
+      "id": "c5b",
+      "text": "Bob alone? Bad credit. Risky. Maybe no loan at all. But Bob plus Dave? Now the lender has two wallets to collect from. For one car.",
+      "pause": 0.5
+    },
+    {
+      "id": "c5c",
+      "text": "Dave's signature was the lender's seatbelt. The lender buckled in. Dave rode on the roof.",
+      "pause": 0.7
+    },
+    {
+      "id": "c5d",
+      "text": "And the damage spreads. In that same survey, twenty eight percent of co-signers saw their credit score drop. And about one in four said the relationship got hurt. Dave and Bob? Not talking.",
+      "pause": 0.5
+    },
+    {
+      "id": "c5e",
+      "text": "Lenders also really don't like letting go of that second wallet. When the C F P B looked at private student loans, ninety percent of people who asked to remove a co-signer were rejected.",
+      "pause": 0.5
+    },
+    {
+      "id": "c5f",
+      "text": "Ninety percent. Which means, once you're in, you're probably in. So Dave tried anyway. He asked how to get out. The answer was worse.",
+      "pause": 0.9
+    },
+    {
+      "id": "c6a",
+      "chapter": "No Exit Door",
+      "text": "Dave calls the lender. Can you just take my name off? Bob will pay from now on, I promise. The lender says no.",
+      "pause": 0.4
+    },
+    {
+      "id": "c6b",
+      "text": "Dave signed a promise to pay. You can't cancel that with a phone call. Honestly, even a gym membership is easier to quit.",
+      "pause": 0.6
+    },
+    {
+      "id": "c6c",
+      "text": "So there are really only two ways out. One. Bob gets a brand new loan in his own name, and pays this one off. But that needs good credit. And Bob's credit is now worse than before.",
+      "pause": 0.5
+    },
+    {
+      "id": "c6d",
+      "text": "Two. The whole loan gets paid off. Every cent. By somebody.",
+      "pause": 0.6
+    },
+    {
+      "id": "c6e",
+      "text": "And that's when Bob finally calls back. His voice is shaking. Dave, they sent me a letter. They want to take the car.",
+      "pause": 0.9
+    },
+    {
+      "id": "c7a",
+      "chapter": "The Seven Thousand Trap",
+      "text": "Dave reads the letter. If the payments don't catch up, the lender can repossess the car. Take it back. And sell it at auction.",
+      "pause": 0.4
+    },
+    {
+      "id": "c7b",
+      "text": "Dave thinks, fine. They take the car, the loan disappears, we're done. Nope. Here's the scary math, straight from the F T C.",
+      "pause": 0.5
+    },
+    {
+      "id": "c7c",
+      "text": "Say you still owe fifteen thousand dollars. The car sells at auction for eight thousand. The gap is seven thousand dollars. Plus fees for the repossession. And you still owe all of that.",
+      "pause": 0.6
+    },
+    {
+      "id": "c7d",
+      "text": "Bob still owes about sixteen thousand. So Dave's numbers look almost exactly the same. Which means Dave could owe seven thousand dollars, for a car that isn't even there anymore.",
+      "pause": 0.6
+    },
+    {
+      "id": "c7e",
+      "text": "It's like paying for a pizza that was already eaten. By someone else. Who isn't answering your texts.",
+      "pause": 0.7
+    },
+    {
+      "id": "c7f",
+      "text": "That was Dave's lowest moment. But the letter had one tiny detail in it. A deadline. And a deadline means there's still time.",
+      "pause": 0.9
+    },
+    {
+      "id": "c8a",
+      "chapter": "Dave Fights Back",
+      "text": "So Dave fights back. Remember, this is education, not advice.",
+      "pause": 0.4
+    },
+    {
+      "id": "c8b",
+      "text": "Step one. Dave asks the lender to send him the monthly statements too, and to tell him in writing if a payment is ever missed. The F T C suggests exactly that. No more surprises.",
+      "pause": 0.5
+    },
+    {
+      "id": "c8c",
+      "text": "Step two. He checks his credit reports. That's free, every single week, at annual credit report dot com. The only official site.",
+      "pause": 0.5
+    },
+    {
+      "id": "c8d",
+      "text": "Step three, the big one. Dave sits down with Bob. Not to yell. To make a plan. Bob sells the car himself, before the deadline. No rushed auction.",
+      "pause": 0.5
+    },
+    {
+      "id": "c8e",
+      "text": "Bob finds a buyer for fourteen thousand dollars. His new part time job covers the last two thousand. The loan is paid off. Closed. Dave's name is finally free.",
+      "pause": 0.6
+    },
+    {
+      "id": "c8f",
+      "text": "Dave's damage stops at twelve hundred dollars. And that seven thousand dollar gap? It never happens. Dave just saved seven thousand dollars.",
+      "pause": 0.9
+    },
+    {
+      "id": "c9a",
+      "chapter": "The Sentence On Page One",
+      "text": "That night, Dave digs out the papers from the car lot. And there it is. A notice, on its own page. F T C rules make lenders like this one hand it to every co-signer.",
+      "pause": 0.5
+    },
+    {
+      "id": "c9b",
+      "text": "You are being asked to guarantee this debt. Think carefully before you do. If the borrower doesn't pay the debt, you will have to.",
+      "pause": 0.7
+    },
+    {
+      "id": "c9c",
+      "text": "One sentence. It predicted everything. The collector. The credit report. The seven thousand dollars. Dave signed right under it, and never read it.",
+      "pause": 0.6
+    },
+    {
+      "id": "c9d",
+      "text": "The notice even tells you the test. Be sure you can afford to pay if you have to. So that's Dave's new rule. Before co-signing anything, ask: could I pay this whole loan myself, and still be okay?",
+      "pause": 0.5
+    },
+    {
+      "id": "c9e",
+      "text": "If the answer is no, then the kindest thing might be helping Bob in another way. Because a signature is never just a signature.",
+      "pause": 0.9
+    },
+    {
+      "id": "r1",
+      "chapter": "What Dave Learned",
+      "text": "One. A co-signer isn't a reference. It's a second borrower.",
+      "pause": 0.4
+    },
+    {
+      "id": "r2",
+      "text": "Two. Their late payments land on your credit report.",
+      "pause": 0.4
+    },
+    {
+      "id": "r3",
+      "text": "Three. Read the notice, and only sign what you could pay alone.",
+      "pause": 0.6
+    },
+    {
+      "id": "r4",
+      "text": "But now Dave has a new problem. He opened his retirement account, and did the math. He'll be working until seventy. Maybe longer.",
+      "pause": 0.5
+    },
+    {
+      "id": "r5",
+      "text": "Subscribe. It's the only thing we'll ever ask you to sign.",
+      "pause": 1.4
+    }
   ],
   "youtube": {
     "title": "You Co-Signed to Be Nice. Now the Whole Loan Is Yours",
@@ -107,7 +371,7 @@
       "Your Friend's Car Loan Can Wreck YOUR Credit (Co-Signing)",
       "Why Co-Signing for a Friend Makes YOU the Borrower"
     ],
-    "hook": "Dave co-signs his buddy Bob's car loan as a favor. Six months later a debt collector calls Dave about a car he has never driven. We follow the whole story: the co-signed loan on Dave's own credit report, Bob's late payments landing on Dave's record, the lender collecting from Dave without chasing Bob first, why lenders love a second wallet, the repossession gap, and how Dave got his name off. Plus the one sentence printed on the paper he signed.",
+    "hook": "What happens when you co-sign a loan and they stop paying? Dave co-signed his buddy's car loan. Then a debt collector called him. Dave co-signs his buddy Bob's $18,000 car loan as a favor. Six months later a debt collector calls Dave about a car he has never driven. We follow the whole story: why a co-signer is a second borrower, not a reference; how the co-signed loan lands on Dave's own credit report and even counts against his mortgage application; how Bob's late payments hit Dave's record; why the lender can come straight to Dave without chasing Bob first (FTC); what a CreditCards.com survey found about how often co-signers end up paying (38%); why lenders rarely let a co-signer go (CFPB: 90% of release requests rejected); and the repossession math that could have left Dave owing $7,000 for a car that's gone. Then how Dave fought back, and the one sentence printed on the paper he signed.",
     "tags": [
       "co-signing a loan",
       "should i cosign a loan",
@@ -121,7 +385,11 @@
       "money explained simply",
       "dave explains money"
     ],
-    "hashtags": ["#cosigning", "#credit", "#personalfinance"],
+    "hashtags": [
+      "#cosigning",
+      "#credit",
+      "#personalfinance"
+    ],
     "pinned": "Has anyone ever asked you to co-sign a loan? YES or NO?"
   }
 }
