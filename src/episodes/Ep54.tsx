@@ -802,7 +802,7 @@ export const Ep54: React.FC = () => {
 
   // ============ CH5: Who Pays The Bills? ============
   {
-    const four = w('c5b', 'paid');
+    const four = w('c5c', 'paid');
     const land = four + 20;
     q(four, 'tick', 0.5);
     q(land, 'stamp', 0.8);
