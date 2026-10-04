@@ -1500,7 +1500,7 @@ export const Ep54: React.FC = () => {
 
   return (
     <>
-      <Scenes f={f} S={S} />
+      <Scenes f={f} items={S} />
       <Vignette />
       <Progress f={f} t={t} />
       <ChapterCard f={f} t={t} />
