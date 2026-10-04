@@ -5,7 +5,7 @@ import {useT} from '../timing';
 import {ease, lerp, pop, shake} from '../anim';
 import {Stick, StickProps} from '../Stick';
 import {Board, Cam, ChapterCard, Captions, CHAPTER_FRAMES, Cue, DreamBg, DreamFrame, Interior, Progress, SceneItem, Scenes, Sfx, Street, SUB_FRAMES, Svg, Vignette, SubReminder, subCues} from '../fx';
-import {Bubble, Calendar, Clock, MoneyStack, Pencil, SourceTag, Stamp, Text, XMark} from '../props';
+import {Bubble, Calendar, Clock, MoneyStack, Pencil, Stamp, Text, XMark} from '../props';
 import {Bell, Phone, SubButton} from '../props2';
 import {Raccoon, SourceCard} from '../props3';
 import {BannerAd, DollarRule, DragonEgg, EnergyBar, GamePhone, GemDisplay, GemPack, GiftCard, PullCard, ScreenTimeIcon, SeasonPass} from '../props54';
@@ -152,7 +152,7 @@ export const Ep54: React.FC = () => {
                 <Text y={10} size={f >= land ? 150 : 130} color={f >= land ? C.red : C.ink}>{money(n)}</Text>
               </G2>
               <DamageMeter x={1700} y={90} s={0.8} value="$0" />
-              <SourceTag x={960} y={800} s={0.9 * P(A('o4')) * lt(w('o4', 'last'), 0.4)} source="Sensor Tower 2026" />
+              <G2 x={960} y={800} s={0.9 * P(A('o4'))} o={lt(w('o4', 'last'), 0.4)}><Text size={28} color={GRAY}>Source: Sensor Tower 2026</Text></G2>
             </Svg>
           </Cam>
         </AbsoluteFill>
