@@ -36,7 +36,7 @@ export const V2Ep54: React.FC<V> = ({v}) => {
         </Hero>
         <Ring x={470} y={550} rx={230} ry={110} color="#FFD23F" />
         <Dave x={980} y={700} s={1.4} pose="point_l" expr="tired" look={-0.8} sweat />
-        <Headline x={1250} y={85} size={96} anchor="end" r={3} lines={[[{t: '2 AM', c: C.ink, box: C.yellow}]]} />
+        <Headline x={1250} y={85} size={96} anchor="end" r={3} lines={[[{t: 'DAY 21', c: C.ink, box: C.yellow}]]} />
       </Stage>
     );
   // B - shocking contrast: what the banner says vs the real price

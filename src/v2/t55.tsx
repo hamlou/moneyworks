@@ -29,8 +29,8 @@ export const V2Ep55: React.FC<V> = ({v}) => {
           <rect x={-280} y={-60} width={560} height={170} rx={40} fill="#8B93A1" stroke={C.ink} strokeWidth={8} />
           <rect x={-320} y={-140} width={120} height={250} rx={36} fill="#737B89" stroke={C.ink} strokeWidth={8} />
           <rect x={200} y={-140} width={120} height={250} rx={36} fill="#737B89" stroke={C.ink} strokeWidth={8} />
-          <rect x={-150} y={-190} width={300} height={90} rx={16} fill="#FFD23F" stroke={C.ink} strokeWidth={8} />
-          <T x={0} y={-142} size={70}>COUCH: $400</T>
+          <rect x={-200} y={-200} width={400} height={100} rx={16} fill="#FFD23F" stroke={C.ink} strokeWidth={8} />
+          <T x={0} y={-146} size={70}>COUCH: $400</T>
         </Hero>
         <Hero x={930} y={330} r={6} flat>
           <rect x={-230} y={-240} width={460} height={480} rx={14} fill="#FFFDF5" stroke={C.ink} strokeWidth={8} />
