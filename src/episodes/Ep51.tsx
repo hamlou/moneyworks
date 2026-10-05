@@ -24,6 +24,14 @@ const G2: React.FC<{x?: number; y?: number; s?: number; r?: number; o?: number; 
   );
 
 const GRAY = '#5B6470';
+
+const Box: React.FC<{x: number; y: number; w: number; h: number; o?: number; s?: number; fill?: string; children?: React.ReactNode}> = ({x, y, w, h, o = 1, s = 1, fill = '#fff', children}) => (
+  <G2 x={x} y={y} o={o} s={s}>
+    <rect x={-w / 2 + 8} y={-h / 2 + 10} width={w} height={h} rx={24} fill="rgba(35,35,43,0.10)" />
+    <rect x={-w / 2} y={-h / 2} width={w} height={h} rx={24} fill={fill} stroke={C.ink} strokeWidth={6} />
+    {children}
+  </G2>
+);
 const money = (n: number) => '$' + Math.round(n).toLocaleString('en-US');
 
 export const Ep51: React.FC = () => {
@@ -163,10 +171,11 @@ export const Ep51: React.FC = () => {
       <AbsoluteFill>
         <Board />
         <Svg>
-          <Dave f={f} x={560} y={930} s={1.15} keys={[{at: 0, pose: 'think', expr: 'think', look: 0.6}]} />
-          <G2 x={960} y={340} s={P(A('o5')) * bump(fr, 0.1)}><Text size={68}>if the app is free,</Text></G2>
-          <G2 x={960} y={460} s={bump(py, 0.12)}><Text size={68} color={C.red}>who's paying?</Text></G2>
-          <Raccoon f={f} x={1480} y={880} s={1.4 * P(A('o5'))} mood="sneaky" o={lt(py, 0.35)} />
+          <Dave f={f} x={420} y={930} s={1.15} keys={[{at: 0, pose: 'think', expr: 'think', look: 0.6}]} />
+          <TradingPhone x={900} y={600} s={0.75 * P(A('o5'))} balance="$400" change="FREE" color={C.green} />
+          <G2 x={900} y={170} s={P(A('o5')) * bump(fr, 0.1)}><Text size={64}>if the app is free,</Text></G2>
+          <G2 x={1420} y={330} s={P(A('o5')) * bump(py, 0.14)}><Text size={68} color={C.red}>who's paying?</Text></G2>
+          <Raccoon f={f} x={1440} y={760} s={1.5 * P(A('o5'))} mood="sneaky" o={lt(py, 0.45)} />
         </Svg>
       </AbsoluteFill>
     ));
@@ -182,10 +191,14 @@ export const Ep51: React.FC = () => {
       <AbsoluteFill>
         <Board />
         <Svg>
-          <G2 x={760} y={260} s={P(A('o6'))}><Text size={54}>by the end, you'll know.</Text></G2>
-          <G2 x={760} y={420} s={bump(on, 0.1)} o={lt(on, 0.4)}><Text size={50} color={C.navy}>and the one switch</Text></G2>
-          <G2 x={760} y={540} s={bump(fo, 0.12)}><Text size={56} color={C.red}>{f >= fo ? 'that saved $400' : 'that saved...'}</Text></G2>
-          <Dave f={f} x={1480} y={930} s={1.1} keys={[{at: 0, pose: 'point_l', expr: 'happy', look: -0.6}]} />
+          <Box x={720} y={470} w={860} h={460} s={P(A('o6'))} fill={f >= fo ? C.yellow : '#fff'}>
+          <Text y={-140} size={50} color={GRAY}>by the end, you'll know:</Text>
+          <Text y={-40} size={54} color={C.navy}>WHO PAYS</Text>
+          <Text y={60} size={44} color={C.ink}>and the one switch</Text>
+          <Text y={150} size={60} color={C.red}>{f >= fo ? 'that saved $400' : 'that saved $ ? ? ?'}</Text>
+          </Box>
+          <ToggleSwitch x={720} y={840} s={1.3 * P(A('o6')) * bump(on, 0.12)} on={1} label="? ? ?" />
+          <Dave f={f} x={1480} y={930} s={1.2} keys={[{at: 0, pose: 'point_l', expr: 'happy', look: -0.6}]} />
         </Svg>
       </AbsoluteFill>
     ));
@@ -320,12 +333,14 @@ export const Ep51: React.FC = () => {
       <AbsoluteFill>
         <Board />
         <Svg>
-          <G2 x={960} y={180} s={P(A('c1g'))}><Text size={46}>that app dropped confetti</Text></G2>
-          <G2 x={960} y={280} s={bump(dp, 0.1)}><Text size={40} color={GRAY}>in twenty twenty one</Text></G2>
-          <G2 x={960} y={460} s={bump(pd, 0.12)}><Text size={50}>paid $7.5 million</Text></G2>
-          <G2 x={960} y={560} o={lt(pd, 0.4)}><Text size={38} color={GRAY}>to settle, twenty twenty four</Text></G2>
-          <Puppy x={960} y={840} s={1.4 * bump(wk, 0.08)} f={f} sitting={1} />
-          <G2 x={960} y={1000} o={lt(wk, 0.35)}><Text size={44} color={C.red}>puppy training works on everyone</Text></G2>
+          <G2 x={860} y={150} s={P(A('c1g'))}><Text size={50}>the confetti app, 2021 to 2024</Text></G2>
+          <TradingPhone f={f} x={380} y={600} s={0.85 * P(A('c1g')) * bump(dp, 0.06)} balance="$2,012" change="+$12" color={C.green} confetti={1} />
+          <Box x={1000} y={480} w={620} h={320} s={P(A('c1g')) * bump(pd, 0.12)} fill={f >= pd ? C.yellow : '#fff'}>
+          <Text y={-80} size={40} color={GRAY}>paid to settle</Text>
+          <Text y={30} size={96} color={C.red}>{f >= pd ? '$7.5 MILLION' : '$ ? MILLION'}</Text>
+          </Box>
+          <Puppy x={1560} y={720} s={1.5 * P(A('c1g')) * bump(wk, 0.1)} f={f} sitting={1} />
+          <G2 x={1100} y={860} s={bump(wk, 0.1)} o={lt(wk, 0.4)}><Text size={46} color={C.red}>puppy training works on everyone</Text></G2>
         </Svg>
       </AbsoluteFill>
     ));
@@ -364,10 +379,10 @@ export const Ep51: React.FC = () => {
       <AbsoluteFill>
         <Board />
         <Svg>
-          <Dave f={f} x={560} y={930} s={1.15} keys={[{at: 0, pose: 'think', expr: 'think', look: 0.6}]} />
-          <G2 x={1020} y={340} s={P(A('c2a')) * bump(dg, 0.1)}><Text size={54}>Dave digs into</Text></G2>
-          <G2 x={1020} y={440} o={lt(dg, 0.4)}><Text size={48} color={GRAY}>the fine print</Text></G2>
-          <G2 x={1020} y={620} s={bump(ch, 0.12)}><Text size={58} color={C.red}>why charge nothing?</Text></G2>
+          <Dave f={f} x={420} y={930} s={1.15} keys={[{at: 0, pose: 'think', expr: 'think', look: 0.6}]} />
+          <StudyPaper x={960} y={560} s={1.25 * P(A('c2a')) * bump(dg, 0.06)} title="FINE PRINT" stat="$0" label="commission" />
+          <G2 x={960} y={160} s={P(A('c2a')) * bump(dg, 0.1)}><Text size={54}>Dave digs into the fine print</Text></G2>
+          <G2 x={1480} y={520} s={P(A('c2a')) * bump(ch, 0.14)} o={lt(ch, 0.4)}><Bubble text="why charge nothing?" size={42} tail="left" /></G2>
         </Svg>
       </AbsoluteFill>
     ));
@@ -463,11 +478,17 @@ export const Ep51: React.FC = () => {
       <AbsoluteFill>
         <Board />
         <Svg>
-          <G2 x={960} y={200} s={P(A('c2f'))}><Text size={52}>the app doesn't care</Text></G2>
-          <G2 x={960} y={300} s={bump(ws, 0.1)} o={lt(ws, 0.4)}><Text size={48} color={GRAY}>if Dave wins</Text></G2>
-          <G2 x={960} y={480} s={bump(tr, 0.15)}><Text size={62} color={C.red}>it cares that Dave</Text></G2>
-          <G2 x={960} y={590} s={bump(tr, 0.15)}><Text size={62} color={C.red}>TRADES</Text></G2>
-          <Dave f={f} x={960} y={930} s={1.0} keys={[{at: 0, pose: 'typing', expr: 'neutral', look: 0}]} />
+          <G2 x={960} y={150} s={P(A('c2f'))}><Text size={52}>the app doesn't care who scores</Text></G2>
+          <Box x={480} y={500} w={520} h={300} s={P(A('c2f')) * bump(ws, 0.08)}>
+          <Text y={-60} size={44} color={GRAY}>Dave WINS</Text>
+          <Text y={40} size={70} color={C.green}>app gets paid</Text>
+          </Box>
+          <Box x={1440} y={500} w={520} h={300} s={P(A('c2f')) * bump(ws, 0.08)}>
+          <Text y={-60} size={44} color={GRAY}>Dave LOSES</Text>
+          <Text y={40} size={70} color={C.red}>app gets paid</Text>
+          </Box>
+          <Dave f={f} x={960} y={900} s={1.0} keys={[{at: 0, pose: 'typing', expr: 'neutral', look: 0}]} />
+          <G2 x={960} y={480} s={P(A('c2f')) * bump(tr, 0.2)}><Stamp text="JUST TRADE" color={C.red} size={56} r={-6} /></G2>
         </Svg>
       </AbsoluteFill>
     ));
@@ -523,10 +544,14 @@ export const Ep51: React.FC = () => {
       <AbsoluteFill>
         <Board />
         <Svg>
-          <G2 x={960} y={180} s={P(A('c3b'))}><Text size={52}>an option is like</Text></G2>
-          <G2 x={960} y={280} s={bump(cp, 0.12)}><Text size={56} color={C.navy}>a coupon</Text></G2>
-          <OptionCoupon x={960} y={580} s={0.9 * P(A('c3b')) * bump(lets, 0.06)} stock="STOCK" price="$200" expires="FRIDAY" />
-          <G2 x={960} y={880} s={bump(dt, 0.1)} o={lt(dt, 0.4)}><Text size={44} color={C.red}>after that date, it expires</Text></G2>
+          <G2 x={960} y={150} s={P(A('c3b'))}><Text size={54}>an option is like a coupon</Text></G2>
+          <OptionCoupon x={860} y={520} s={1.35 * P(A('c3b')) * bump(cp, 0.08) * bump(lets, 0.06)} stock="STOCK" price="$200" expires="FRIDAY" />
+          <Dave f={f} x={300} y={930} s={1.1} keys={[{at: 0, pose: 'idle', expr: 'happy', look: 0.6}, {at: dt, pose: 'shock', expr: 'worried', look: 0.6}]} />
+          <Box x={1520} y={560} w={420} h={300} s={P(A('c3b')) * bump(dt, 0.14)} fill={f >= dt ? '#FFE3EA' : '#fff'}>
+          <Text y={-70} size={38} color={GRAY}>good until</Text>
+          <Text y={20} size={72} color={C.red}>FRIDAY</Text>
+          <Text y={100} size={34} color={C.red}>{f >= dt ? 'then it expires' : ' '}</Text>
+          </Box>
         </Svg>
       </AbsoluteFill>
     ));
@@ -606,11 +631,17 @@ export const Ep51: React.FC = () => {
       <AbsoluteFill>
         <Board />
         <Svg>
-          <Dave f={f} x={560} y={930} s={1.15} keys={[{at: 0, pose: 'think', expr: 'suspicious', look: 0.6}]} />
-          <G2 x={1100} y={300} s={P(A('c3f')) * bump(dk, 0.12)}><Text size={54} color={C.red}>dangerous question</Text></G2>
-          <G2 x={1100} y={480} s={bump(ex, 0.1)}><Text size={48}>who exactly is</Text></G2>
-          <G2 x={1100} y={580} o={lt(ex, 0.4)}><Text size={46} color={GRAY}>paying it?</Text></G2>
-          <G2 x={1100} y={720} s={bump(mc, 0.12)}><Text size={50} color={C.navy}>and how much?</Text></G2>
+          <Dave f={f} x={420} y={930} s={1.15} keys={[{at: 0, pose: 'think', expr: 'suspicious', look: 0.6}]} />
+          <G2 x={1060} y={160} s={P(A('c3f')) * bump(dk, 0.12)}><Text size={56} color={C.red}>the dangerous question</Text></G2>
+          <Box x={860} y={520} w={480} h={340} s={P(A('c3f')) * bump(ex, 0.1)}>
+          <Text y={-70} size={44} color={GRAY}>WHO</Text>
+          <Text y={30} size={56} color={C.ink}>is paying it?</Text>
+          </Box>
+          <Box x={1420} y={520} w={480} h={340} s={P(A('c3f')) * bump(mc, 0.12)} fill={f >= mc ? C.yellow : '#fff'}>
+          <Text y={-70} size={44} color={GRAY}>HOW MUCH</Text>
+          <Text y={40} size={100} color={C.red}>$ ?</Text>
+          </Box>
+          <Raccoon f={f} x={1140} y={880} s={0.8 * P(A('c3f'))} mood="sneaky" o={0.5} />
         </Svg>
       </AbsoluteFill>
     ));
@@ -618,7 +649,7 @@ export const Ep51: React.FC = () => {
 
   // ============ CH4: Who Pays For Free? (VILLAIN) ============
   const SUB = w('c4g', 'question') + 20;
-  subCues(SUB);
+  subCues(SUB).forEach((c) => cues.push(c));
   {
     const pl = w('c4a', 'pulls');
     const fm = w('c4a', 'famous');
@@ -727,11 +758,14 @@ export const Ep51: React.FC = () => {
       <AbsoluteFill>
         <Board />
         <Svg>
-          <G2 x={960} y={160} s={P(A('c4e'))}><Text size={48}>and who pays it?</Text></G2>
-          <G2 x={960} y={280} s={bump(cl, 0.12)}><Text size={52} color={C.red}>a small club</Text></G2>
-          <G2 x={960} y={400} o={lt(cl, 0.35)}><Text size={42} color={GRAY}>of wholesalers</Text></G2>
-          <WholesalerHQ x={960} y={700} s={0.65 * P(A('c4e')) * bump(tw, 0.08)} label="TOP 3 FIRMS" />
-          <G2 x={960} y={960} s={bump(th, 0.1)} o={lt(th, 0.35)}><Text size={40} color={C.navy}>paid most of it</Text></G2>
+          <G2 x={960} y={150} s={P(A('c4e'))}><Text size={52}>and who pays it?</Text></G2>
+          <WholesalerHQ x={520} y={600} s={1.0 * P(A('c4e')) * bump(tw, 0.08)} label="TOP 3 FIRMS" />
+          <Wholesaler f={f} x={1000} y={940} s={1.05} keys={[{at: 0, pose: 'hips', expr: 'smug', look: 0.6}]} />
+          <Box x={1440} y={520} w={520} h={340} s={P(A('c4e')) * bump(cl, 0.12)} fill={f >= th ? C.yellow : '#fff'}>
+          <Text y={-90} size={40} color={GRAY}>a small club of wholesalers</Text>
+          <Text y={20} size={110} color={C.red}>~85%</Text>
+          <Text y={110} size={36} color={C.navy}>paid by the top 3</Text>
+          </Box>
           <SourceTag f={f} at={tw} text="Bryzgalova et al (2023): top 3 wholesalers ~85% share" />
         </Svg>
       </AbsoluteFill>
@@ -769,13 +803,18 @@ export const Ep51: React.FC = () => {
       <AbsoluteFill>
         <Board />
         <Svg>
-          <G2 x={960} y={200} s={P(A('c4g')) * bump(ll, 0.1)}><Text size={50}>is this illegal?</Text></G2>
-          <G2 x={960} y={340} s={bump(lg, 0.15)}><Text size={54} color={C.green}>no. legal in America</Text></G2>
-          <G2 x={960} y={460} o={lt(lg, 0.4)}><Text size={40} color={GRAY}>and disclosed</Text></G2>
-          <G2 x={960} y={600} s={bump(bn, 0.1)}><Text size={46}>Europe banned it</Text></G2>
-          <G2 x={960} y={700} o={lt(bn, 0.35)}><Text size={40} color={GRAY}>in twenty twenty six</Text></G2>
-          <G2 x={960} y={860} s={bump(qt, 0.12)}><Text size={48} color={C.navy}>that's a political question</Text></G2>
-          <G2 x={960} y={980} o={lt(qt, 0.35)}><Text size={44}>now you know the numbers</Text></G2>
+          <G2 x={960} y={140} s={P(A('c4g')) * bump(ll, 0.1)}><Text size={54}>is this illegal?</Text></G2>
+          <Box x={520} y={480} w={640} h={380} s={P(A('c4g')) * bump(lg, 0.12)} fill="#E3F6EA">
+          <Text y={-110} size={44} color={GRAY}>AMERICA</Text>
+          <Text y={0} size={90} color={C.green}>LEGAL</Text>
+          <Text y={100} size={40} color={C.ink}>and disclosed</Text>
+          </Box>
+          <Box x={1320} y={480} w={640} h={380} s={P(A('c4g')) * bump(bn, 0.12)} fill={f >= bn ? '#FFE3EA' : '#fff'}>
+          <Text y={-110} size={44} color={GRAY}>EUROPE</Text>
+          <Text y={0} size={90} color={C.red}>{f >= bn ? 'BANNED' : '?'}</Text>
+          <Text y={100} size={40} color={C.ink}>from 2026</Text>
+          </Box>
+          <G2 x={920} y={800} s={bump(qt, 0.12)} o={lt(qt, 0.4)}><Text size={46} color={C.navy}>a political question. now you know the numbers.</Text></G2>
           <SourceTag f={f} at={bn} text="EU MiFIR Art. 39a: PFOF ban (effective June 2026)" />
         </Svg>
       </AbsoluteFill>
@@ -804,7 +843,6 @@ export const Ep51: React.FC = () => {
       </AbsoluteFill>
     ));
   }
-  <SubReminder f={f} at={SUB} Dave={<Dave f={f} x={-999} y={-999} s={0} keys={[{at: 0, pose: 'idle', expr: 'neutral', look: 0}]} />} />
 
   // ============ CH5: The Price You Never See ============
   {
@@ -1037,11 +1075,11 @@ export const Ep51: React.FC = () => {
       <AbsoluteFill>
         <Board />
         <Svg>
-          <Dave f={f} x={560} y={930} s={1.15} keys={[{at: 0, pose: 'think', expr: 'worried', look: 0.6}]} />
-          <G2 x={1100} y={300} s={P(A('c6d')) * bump(wd, 0.1)}><Text size={50}>Dave wondered</Text></G2>
-          <G2 x={1100} y={440} s={bump(jt, 0.12)}><Text size={48} color={C.red}>was he just bad at this?</Text></G2>
-          <G2 x={1100} y={640} s={bump(bd, 0.1)} o={lt(bd, 0.35)}><Text size={44}>so he looked for proof</Text></G2>
-          <G2 x={1100} y={760} o={lt(bd, 0.35)}><Text size={42} color={GRAY}>that anyone was good</Text></G2>
+          <Dave f={f} x={420} y={930} s={1.15} keys={[{at: 0, pose: 'think', expr: 'worried', look: 0.6}]} />
+          <G2 x={420} y={360} s={P(A('c6d')) * bump(jt, 0.12)}><Bubble text="am I just bad at this?" size={42} tail="down" /></G2>
+          <TradingPhone x={1000} y={560} s={0.8 * P(A('c6d'))} balance="$400" change="-$1,600" color={C.red} />
+          <StudyPaper x={1480} y={560} s={1.0 * P(A('c6d')) * bump(bd, 0.12)} title="PROOF?" stat="?" label="who is good at this" />
+          <G2 x={1240} y={170} s={P(A('c6d')) * bump(wd, 0.1)}><Text size={48}>so he looked for proof</Text></G2>
         </Svg>
       </AbsoluteFill>
     ));
@@ -1103,14 +1141,14 @@ export const Ep51: React.FC = () => {
       <AbsoluteFill>
         <Board />
         <Svg>
-          <Puppy x={560} y={540} s={1.6 * P(A('c6g')) * bump(pp, 0.08)} f={f} sitting={1} />
-          <G2 x={560} y={860} s={bump(fn, 0.12)}><Text size={44} color={C.red}>just found out</Text></G2>
-          <G2 x={560} y={960} o={lt(fn, 0.35)}><Text size={40} color={GRAY}>the treats were</Text></G2>
-          <G2 x={1380} y={360} s={bump(tr, 0.1)}><Text size={48}>made of</Text></G2>
-          <G2 x={1380} y={480} s={bump(mn, 0.15)}><Text size={56} color={C.red}>his own money</Text></G2>
-          <G2 x={1380} y={680} s={bump(sw, 0.12)}><Text size={50} color={C.navy}>but there was</Text></G2>
-          <G2 x={1380} y={800} o={lt(sw, 0.35)}><Text size={46}>one thing the app</Text></G2>
-          <G2 x={1380} y={920} o={lt(sw, 0.35)}><Text size={44} color={C.red}>really didn't want him to find</Text></G2>
+          <Puppy x={420} y={560} s={1.8 * P(A('c6g')) * bump(pp, 0.08)} f={f} sitting={1} />
+          <G2 x={420} y={860} s={P(A('c6g')) * bump(fn, 0.12)}><Text size={44} color={C.red}>the treats were made of</Text></G2>
+          <MoneyStack x={960} y={560} s={1.4 * P(A('c6g')) * bump(mn, 0.14)} n={5} label="HIS OWN MONEY" />
+          <Box x={1480} y={520} w={500} h={360} s={P(A('c6g')) * bump(sw, 0.12)} fill={f >= sw ? C.yellow : '#fff'}>
+          <Text y={-100} size={36} color={GRAY}>one thing the app</Text>
+          <Text y={-40} size={36} color={GRAY}>didn't want him to find</Text>
+          <Text y={80} size={110} color={C.red}>?</Text>
+          </Box>
         </Svg>
       </AbsoluteFill>
     ));
@@ -1170,12 +1208,14 @@ export const Ep51: React.FC = () => {
       <AbsoluteFill>
         <Board />
         <Svg>
-          <G2 x={960} y={200} s={P(A('c7c'))}><Text size={48}>step two</Text></G2>
-          <G2 x={960} y={340} s={bump(nt, 0.15)}><Text size={56} color={C.red}>notifications off</Text></G2>
-          <Puppy x={560} y={740} s={1.4 * P(A('c7c')) * bump(ck, 0.08)} f={f} sitting={0} />
-          <G2 x={560} y={1000} o={lt(ck, 0.35)}><Text size={40} color={GRAY}>no more clicker</Text></G2>
-          <G2 x={1360} y={580} s={bump(ck, 0.12)}><Text size={46}>the puppy gets to</Text></G2>
-          <G2 x={1360} y={680} o={lt(ck, 0.35)}><Text size={44} color={C.navy}>just be a dog again</Text></G2>
+          <G2 x={760} y={150} s={P(A('c7c'))}><Text size={50} color={GRAY}>STEP TWO</Text></G2>
+          <TradingPhone x={420} y={600} s={0.8 * P(A('c7c'))} balance="$400" change="quiet" color={GRAY} />
+          <Box x={1020} y={440} w={620} h={220} s={P(A('c7c')) * bump(nt, 0.14)} fill={f >= nt ? '#E3F6EA' : '#fff'}>
+          <Text y={-30} size={40} color={GRAY}>notifications</Text>
+          <Text y={50} size={72} color={f >= nt ? C.green : C.ink}>{f >= nt ? 'OFF' : 'ON'}</Text>
+          </Box>
+          <Puppy x={1520} y={700} s={1.6 * P(A('c7c')) * bump(ck, 0.1)} f={f} sitting={0} />
+          <G2 x={1100} y={800} s={bump(ck, 0.1)} o={lt(ck, 0.4)}><Text size={46} color={C.navy}>the puppy gets to be a dog again</Text></G2>
         </Svg>
       </AbsoluteFill>
     ));
@@ -1215,13 +1255,13 @@ export const Ep51: React.FC = () => {
       <AbsoluteFill>
         <Board />
         <Svg>
-          <G2 x={960} y={180} s={P(A('c7e'))}><Text size={48}>step four</Text></G2>
-          <G2 x={960} y={320} s={bump(bf, 0.12)}><Text size={46}>before any trade,</Text></G2>
-          <G2 x={960} y={420} o={lt(bf, 0.4)}><Text size={42} color={GRAY}>Dave asks one question</Text></G2>
-          <G2 x={960} y={600} s={bump(wl, 0.15)}><Text size={52} color={C.navy}>would I still buy this</Text></G2>
-          <G2 x={960} y={720} s={bump(bz, 0.15)}><Text size={52} color={C.red}>with no confetti</Text></G2>
-          <G2 x={960} y={840} o={lt(bz, 0.35)}><Text size={48}>and no buzz?</Text></G2>
-          <Dave f={f} x={960} y={1020} s={0.7} keys={[{at: 0, pose: 'think', expr: 'think', look: 0}]} />
+          <G2 x={760} y={150} s={P(A('c7e'))}><Text size={50} color={GRAY}>STEP FOUR: ONE QUESTION</Text></G2>
+          <Dave f={f} x={380} y={930} s={1.15} keys={[{at: 0, pose: 'think', expr: 'think', look: 0.6}]} />
+          <Box x={1080} y={520} w={980} h={440} s={P(A('c7e')) * bump(wl, 0.08)} fill={f >= bz ? C.yellow : '#fff'}>
+          <Text y={-120} size={56} color={C.navy}>would I still buy this</Text>
+          <Text y={0} size={64} color={C.red}>with no confetti</Text>
+          <Text y={110} size={56} color={C.ink}>and no buzz?</Text>
+          </Box>
         </Svg>
       </AbsoluteFill>
     ));
@@ -1239,13 +1279,18 @@ export const Ep51: React.FC = () => {
       <AbsoluteFill>
         <Board />
         <Svg>
-          <G2 x={960} y={160} s={P(A('c7f'))}><Text size={48}>step five</Text></G2>
-          <G2 x={960} y={300} s={bump(lg, 0.1)}><Text size={44}>for his long term money,</Text></G2>
-          <G2 x={960} y={400} o={lt(lg, 0.4)}><Text size={40} color={GRAY}>Dave sets up</Text></G2>
-          <G2 x={960} y={540} s={bump(br, 0.12)}><Text size={50}>a boring automatic</Text></G2>
-          <G2 x={960} y={640} o={lt(br, 0.35)}><Text size={46} color={GRAY}>investment every month</Text></G2>
-          <G2 x={960} y={800} s={bump(ix, 0.15)}><Text size={56} color={C.green}>low cost index fund</Text></G2>
-          <G2 x={960} y={960} o={lt(ix, 0.35)}><Text size={42} color={C.navy}>boring is the point</Text></G2>
+          <G2 x={760} y={150} s={P(A('c7f'))}><Text size={50} color={GRAY}>STEP FIVE: LONG TERM MONEY</Text></G2>
+          <Dave f={f} x={360} y={930} s={1.1} keys={[{at: 0, pose: 'relax', expr: 'happy', look: 0.6}]} />
+          <Box x={900} y={500} w={560} h={400} s={P(A('c7f')) * bump(br, 0.1)}>
+          <Text y={-120} size={40} color={GRAY}>automatic, every month</Text>
+          <Text y={0} size={100} color={C.green}>$ + $ + $</Text>
+          <Text y={120} size={44} color={C.ink}>boring on purpose</Text>
+          </Box>
+          <Box x={1500} y={500} w={520} h={400} s={P(A('c7f')) * bump(ix, 0.14)} fill={f >= ix ? '#E3F6EA' : '#fff'}>
+          <Text y={-100} size={40} color={GRAY}>into a</Text>
+          <Text y={-10} size={58} color={C.green}>LOW COST</Text>
+          <Text y={70} size={58} color={C.green}>INDEX FUND</Text>
+          </Box>
         </Svg>
       </AbsoluteFill>
     ));
@@ -1377,10 +1422,11 @@ export const Ep51: React.FC = () => {
       <AbsoluteFill>
         <Board />
         <Svg>
-          <G2 x={960} y={360} s={P(A('r1')) * bump(ot, 0.1)}><Text size={50} color={C.navy}>one.</Text></G2>
-          <G2 x={960} y={500} s={bump(gt, 0.12)}><Text size={50}>free apps get paid</Text></G2>
-          <G2 x={960} y={620} o={lt(gt, 0.35)}><Text size={48}>when you trade,</Text></G2>
-          <G2 x={960} y={740} o={lt(gt, 0.35)}><Text size={46} color={C.red}>not when you win</Text></G2>
+          <G2 x={860} y={150}><Text size={56} color={C.navy}>WHAT DAVE LEARNED</Text></G2>
+          <Row x={860} y={340} s={0.9} n={1} text="free apps get paid when you trade" lit={1} w={1200} />
+          <Row x={860} y={500} s={0.9} n={2} text="options are coupons that expire" lit={0.35} w={1200} />
+          <Row x={860} y={660} s={0.9} n={3} text="confetti is a clicker: turn it off" lit={0.35} w={1200} />
+          <Dave f={f} x={1640} y={960} s={0.95} flip keys={[{at: 0, pose: 'thumbs', expr: 'grin', look: -0.6}]} />
         </Svg>
       </AbsoluteFill>
     ));
@@ -1396,10 +1442,11 @@ export const Ep51: React.FC = () => {
       <AbsoluteFill>
         <Board />
         <Svg>
-          <G2 x={960} y={340} s={P(A('r2')) * bump(tw, 0.1)}><Text size={50} color={C.navy}>two.</Text></G2>
-          <G2 x={960} y={500} s={bump(op, 0.12)}><Text size={50}>options are coupons</Text></G2>
-          <G2 x={960} y={620} s={bump(cp, 0.12)}><Text size={48} color={C.red}>that expire</Text></G2>
-          <G2 x={960} y={760} o={lt(cp, 0.35)}><Text size={44} color={GRAY}>most small traders lose</Text></G2>
+          <G2 x={860} y={150}><Text size={56} color={C.navy}>WHAT DAVE LEARNED</Text></G2>
+          <Row x={860} y={340} s={0.9} n={1} text="free apps get paid when you trade" lit={1} w={1200} />
+          <Row x={860} y={500} s={0.9} n={2} text="options are coupons that expire" lit={1} w={1200} />
+          <Row x={860} y={660} s={0.9} n={3} text="confetti is a clicker: turn it off" lit={0.35} w={1200} />
+          <Dave f={f} x={1640} y={960} s={0.95} flip keys={[{at: 0, pose: 'thumbs', expr: 'grin', look: -0.6}]} />
         </Svg>
       </AbsoluteFill>
     ));
@@ -1415,10 +1462,11 @@ export const Ep51: React.FC = () => {
       <AbsoluteFill>
         <Board />
         <Svg>
-          <G2 x={960} y={320} s={P(A('r3')) * bump(th, 0.1)}><Text size={50} color={C.navy}>three.</Text></G2>
-          <G2 x={960} y={500} s={bump(cf, 0.15)}><Text size={54} color={C.red}>confetti is a clicker</Text></G2>
-          <G2 x={960} y={660} s={bump(ck, 0.12)}><Text size={50}>you're allowed</Text></G2>
-          <G2 x={960} y={780} o={lt(ck, 0.35)}><Text size={48}>to turn it off</Text></G2>
+          <G2 x={860} y={150}><Text size={56} color={C.navy}>WHAT DAVE LEARNED</Text></G2>
+          <Row x={860} y={340} s={0.9} n={1} text="free apps get paid when you trade" lit={1} w={1200} />
+          <Row x={860} y={500} s={0.9} n={2} text="options are coupons that expire" lit={1} w={1200} />
+          <Row x={860} y={660} s={0.9} n={3} text="confetti is a clicker: turn it off" lit={1} w={1200} />
+          <Dave f={f} x={1640} y={960} s={0.95} flip keys={[{at: 0, pose: 'thumbs', expr: 'grin', look: -0.6}]} />
         </Svg>
       </AbsoluteFill>
     ));
@@ -1434,14 +1482,15 @@ export const Ep51: React.FC = () => {
       <AbsoluteFill>
         <Board />
         <Svg>
-          <G2 x={960} y={200} s={P(A('r4'))}><Text size={48}>but Dave's problems</Text></G2>
-          <G2 x={960} y={300} o={lt(tn, 0.4)}><Text size={44} color={GRAY}>aren't over</Text></G2>
-          <G2 x={960} y={460} s={bump(tn, 0.12)}><Text size={50}>tonight, a guy in a</Text></G2>
-          <G2 x={960} y={580} s={bump(gb, 0.15)}><Text size={54} color={C.red}>rented Lamborghini</Text></G2>
-          <G2 x={960} y={700} o={lt(gb, 0.35)}><Text size={46}>wants to teach him</Text></G2>
-          <G2 x={960} y={800} o={lt(gb, 0.35)}><Text size={44} color={GRAY}>how to trade</Text></G2>
-          <G2 x={960} y={960} s={bump(cs, 0.12)}><Text size={50}>the course costs</Text></G2>
-          <G2 x={960} y={1050} o={lt(cs, 0.35)}><Text size={48} color={C.red}>three hundred ninety nine</Text></G2>
+          <G2 x={960} y={150} s={P(A('r4'))}><Text size={60} color={C.red}>NEXT TIME</Text></G2>
+          <Car x={520} y={700} s={1.5 * P(A('r4')) * bump(gb, 0.1)} />
+          <G2 x={520} y={470} s={P(A('r4')) * bump(gb, 0.14)}><Pill text="RENTED" color={C.red} size={40} /></G2>
+          <Stick f={f} x={900} y={930} s={1.05} acc={['shades']} seed={66} keys={[{at: 0, pose: 'present', expr: 'smug', look: 0.6, talk: true}]} />
+          <G2 x={900} y={360} s={P(A('r4')) * bump(tn, 0.12)}><Bubble text="I'll teach you to trade" size={40} tail="down" /></G2>
+          <Box x={1460} y={560} w={480} h={320} s={P(A('r4')) * bump(cs, 0.14)} fill={f >= cs ? C.yellow : '#fff'}>
+          <Text y={-80} size={40} color={GRAY}>the course costs</Text>
+          <Text y={40} size={120} color={C.red}>{f >= cs ? '$399' : '$ ?'}</Text>
+          </Box>
         </Svg>
       </AbsoluteFill>
     ));
@@ -1455,25 +1504,26 @@ export const Ep51: React.FC = () => {
       <AbsoluteFill>
         <Board />
         <Svg>
-          <G2 x={480} y={400} s={P(A('r5'))}><Text size={52}>subscribe, and you'll</Text></G2>
-          <G2 x={480} y={520} o={lt(sb, 0.4)}><Text size={48} color={GRAY}>see what happens</Text></G2>
-          <SubButton x={480} y={800} s={1.4 * bump(sb, 0.08)} done={ease(f, sb, sb + 30)} />
-          <Bell f={f} x={1440} y={600} s={1.8 * P(A('r5'))} ring={ease(f, sb, sb + 40)} />
-          <Raccoon f={f} x={1440} y={960} s={1.2 * bump(rc, 0.08)} mood="sneaky" o={lt(rc, 0.35)} />
-          <G2 x={960} y={1050} o={lt(rc, 0.35)}><Text size={40} color={C.red}>but the raccoon might be back</Text></G2>
+          <SubButton x={860} y={400} s={1.4 * P(A('r5')) * bump(sb, 0.08)} done={f > sb + 14 ? 1 : 0} />
+          <Bell f={f} x={1300} y={400} s={1.2 * P(A('r5'))} ring={f > sb + 16 && f < sb + 50 ? 1 : 0} />
+          <Dave f={f} x={380} y={900} s={1.25} keys={[{at: 0, pose: 'wave', expr: 'grin'}]} />
+          <Raccoon f={f} x={1540} y={780} s={1.1 * P(A('r5')) * bump(rc, 0.1)} mood="sneaky" />
+          <G2 x={1000} y={660} s={P(A('r5'))}><Text size={48}>subscribe, and see what happens</Text></G2>
+          <G2 x={1000} y={760} s={bump(rc, 0.1)} o={lt(rc, 0.4)}><Text size={44} color={C.red}>the raccoon might be back</Text></G2>
         </Svg>
       </AbsoluteFill>
     ));
   }
 
   return (
-    <>
+    <AbsoluteFill>
       <Scenes f={f} items={S} />
-      <Captions f={f} t={t} />
-      {t.chapters && <ChapterCard f={f} t={t} />}
-      <Progress f={f} t={t} />
       <Vignette />
+      <Progress f={f} t={t} />
+      <ChapterCard f={f} t={t} />
+      <SubReminder f={f} at={SUB} Dave={<Stick f={f} x={0} y={200} s={1} keys={[{at: 0, pose: 'point_r', expr: 'grin', look: 0.8}]} acc={['hair']} seed={7} />} />
+      <Captions f={f} t={t} />
       <Sfx cues={cues} />
-    </>
+    </AbsoluteFill>
   );
 };

@@ -298,7 +298,7 @@ export const Ep59: React.FC = () => {
         <Svg>
           <Dave f={f} x={300} y={920} s={1.05} keys={[{at: 0, pose: 'shrug', expr: 'sad', look: 0.6}]} />
           <G2 x={300} y={380} s={0.5 * P(A('c1d'))} o={0.9}><VendingMachine /></G2>
-          <G2 x={300} y={380} s={1.4 * bump(no, 0.14)} o={lt(no, 0.25)}><XMark /></G2>
+          <G2 x={300} y={380} s={0.45 * bump(no, 0.2)} o={lt(no, 0.0001)}><XMark /></G2>
           <Calendar x={860} y={420} s={1.1 * P(A('c1d')) * bump(yr, 0.1)} year={1975} flip={0} />
           <Box x={1260} y={640} w={640} h={300} s={P(A('c1d')) * bump(ml, 0.1)} fill={f >= ml ? C.yellow : '#fff'}>
             <Text y={-70} size={36} color={GRAY}>workers earning a pension</Text>

@@ -678,7 +678,7 @@ export const Ep54: React.FC = () => {
     const pulls = w('c4b', 'pulls');
     const cracks = w('c4b', 'cracks');
     q(pulls, 'pop', 0.5);
-    q(cracks, 'crack', 0.5);
+    q(cracks, 'thud', 0.5);
     scene(A('c4b'), () => (
       <AbsoluteFill>
         <Board />
@@ -934,18 +934,7 @@ export const Ep54: React.FC = () => {
     ));
   }
   const SUB = w('c5h', 'paying') + 20;
-  {
-    q(SUB, 'whoosh', 0.5);
-    subCues(SUB);
-    scene(SUB, () => (
-      <AbsoluteFill>
-        <Board />
-        <Svg>
-          <SubReminder f={f} at={SUB} Dave={<Dave f={f} x={480} y={920} s={1.05} keys={[{at: SUB, pose: 'wave', expr: 'happy', look: 0.6}]} />} />
-        </Svg>
-      </AbsoluteFill>
-    ));
-  }
+  subCues(SUB).forEach((c) => cues.push(c));
   {
     const epic = w('c5i', 'whales');
     const refund = w('c5i', 'wrong');
@@ -1498,13 +1487,14 @@ export const Ep54: React.FC = () => {
   }
 
   return (
-    <>
+    <AbsoluteFill>
       <Scenes f={f} items={S} />
       <Vignette />
       <Progress f={f} t={t} />
       <ChapterCard f={f} t={t} />
+      <SubReminder f={f} at={SUB} Dave={<Stick f={f} x={0} y={200} s={1} keys={[{at: 0, pose: 'point_r', expr: 'grin', look: 0.8}]} acc={['hair']} seed={7} />} />
       <Captions f={f} t={t} />
       <Sfx cues={cues} />
-    </>
+    </AbsoluteFill>
   );
 };

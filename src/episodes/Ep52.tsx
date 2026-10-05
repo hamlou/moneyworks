@@ -681,7 +681,7 @@ export const Ep52: React.FC = () => {
         <DreamBg />
         <DreamFrame label="1848 FLASHBACK" />
         <Svg>
-          <Calendar x={960} y={480} s={1.2 * P(A('c3c')) * bump(ei, 0.1)} year="1848" flip={1} top="YEAR" />
+          <Calendar x={960} y={480} s={1.2 * P(A('c3c')) * bump(ei, 0.1)} year="1848" flip={0} top="YEAR" />
           <Dave f={f} x={960} y={960} s={0.9} keys={[{at: 0, pose: 'think', expr: 'think', look: 0}]} />
         </Svg>
       </AbsoluteFill>
@@ -709,6 +709,9 @@ export const Ep52: React.FC = () => {
           <Sam f={f} x={600 + (f - A('c3d')) * 3} y={930} s={1.15} walk keys={[{at: 0, pose: 'hold', expr: 'grin', look: 0.6}]} hold={{item: <GoldBottle s={0.5} />, side: 'r'}} />
           <G2 x={960} y={200} s={P(A('c3d'))}><Text size={48}>SAM BRANNAN · 1848</Text></G2>
           <G2 x={600 + (f - A('c3d')) * 3} y={340} s={bump(gd, 0.15)}><Bubble text="GOLD! GOLD!" size={50} tail="down" /></G2>
+          <GeneralStore x={1440} y={640} s={1.0 * P(A('c3d'))} />
+          <Stick f={f} x={300} y={940} s={0.9} seed={71} keys={[{at: 0, pose: 'shock', expr: 'shock', look: 0.6}]} />
+          <Stick f={f} x={1100} y={950} s={0.85} acc={['fedora']} seed={72} flip keys={[{at: 0, pose: 'point_l', expr: 'shock', look: -0.6}]} />
         </Svg>
       </AbsoluteFill>
     ));
@@ -935,12 +938,21 @@ export const Ep52: React.FC = () => {
     q(rs, 'pop', 0.5);
     q(on, 'pop2', 0.5);
     q(rc, 'stamp', 0.7);
-    scene(A('c4d'), () => (
+    scene(A('c4e'), () => (
       <AbsoluteFill>
         <Board />
         <Svg>
-          <G2 x={960} y={600} s={P(A('c4d')) * bump(rs, 0.1)}><Text size={56}>restaurant where the dish is</Text></G2>
-          <G2 x={960} y={720} s={bump(rc, 0.15)}><Text size={72} color={f >= rc ? C.red : C.ink}>{f >= rc ? 'A RECIPE FOR RESTAURANTS' : '...'}</Text></G2>
+          <G2 x={960} y={160} s={P(A('c4e'))}><Text size={50}>it's like a restaurant...</Text></G2>
+          <Sign x={420} y={420} s={1.2 * P(A('c4e')) * bump(rs, 0.1)} text="RESTAURANT" color={C.red} />
+          <Stick f={f} x={420} y={940} s={1.05} acc={['paperhat']} seed={41} keys={[{at: 0, pose: 'present', expr: 'grin', look: 0.6}]} />
+          <Box x={1100} y={540} w={720} h={520} s={P(A('c4e')) * bump(on, 0.06)} fill={f >= rc ? C.yellow : '#fff'}>
+          <Text y={-190} size={50} color={C.ink}>MENU</Text>
+          <Text y={-90} size={36} color={GRAY}>the only dish:</Text>
+          <Text y={20} size={52} color={C.red}>{f >= rc ? 'A RECIPE FOR' : '. . .'}</Text>
+          <Text y={100} size={52} color={C.red}>{f >= rc ? 'OPENING A' : ' '}</Text>
+          <Text y={180} size={52} color={C.red}>{f >= rc ? 'RESTAURANT' : ' '}</Text>
+          </Box>
+          <Dave f={f} x={1640} y={950} s={0.95} flip keys={[{at: 0, pose: 'idle', expr: 'neutral', look: -0.6}, {at: rc, pose: 'facepalm', expr: 'tired', look: 0}]} />
         </Svg>
       </AbsoluteFill>
     ));
@@ -960,16 +972,16 @@ export const Ep52: React.FC = () => {
     q(tw, 'cash', 0.6);
     q(ls, 'thud', 0.6);
     q(tw2, 'stamp', 0.8);
-    scene(A('c4e'), () => (
+    scene(A('c4f'), () => (
       <AbsoluteFill>
         <Board />
         <Svg>
-          <Box x={520} y={440} w={640} h={340} s={P(A('c4e'))} fill="#FFE3EA">
+          <Box x={520} y={440} w={640} h={340} s={P(A('c4f'))} fill="#FFE3EA">
             <Text y={-120} size={36} color={GRAY}>avg. member made</Text>
             <Text y={-20} size={90} color={C.red}>{f >= tw ? '<$250' : '<?'}</Text>
             <Text y={80} size={36} color={GRAY}>per year</Text>
           </Box>
-          <Box x={1240} y={440} w={640} h={340} s={P(A('c4e')) * bump(ls, 0.08)} fill={f >= tw2 ? C.yellow : '#FFE3EA'}>
+          <Box x={1240} y={440} w={640} h={340} s={P(A('c4f')) * bump(ls, 0.08)} fill={f >= tw2 ? C.yellow : '#FFE3EA'}>
             <Text y={-120} size={36} color={GRAY}>some people lost</Text>
             <Text y={-20} size={90} color={C.red}>{f >= tw2 ? '>$20k' : '>$?'}</Text>
             <Text y={80} size={36} color={C.red}>total</Text>
@@ -988,14 +1000,14 @@ export const Ep52: React.FC = () => {
     q(nt, 'pop', 0.5);
     q(on, 'stamp', 0.7);
     q(mc, 'thud', 0.6);
-    scene(A('c4f'), () => (
+    scene(A('c4g'), () => (
       <AbsoluteFill>
         <Board />
         <Svg>
-          <G2 x={960} y={200} s={P(A('c4f')) * bump(vl, 0.12)}><Text size={60} color={C.red}>THE VILLAIN</Text></G2>
-          <Shadow f={f} x={600} y={640} s={1.4 * P(A('c4f'))} />
+          <G2 x={960} y={200} s={P(A('c4g')) * bump(vl, 0.12)}><Text size={60} color={C.red}>THE VILLAIN</Text></G2>
+          <Shadow f={f} x={600} y={640} s={1.4 * P(A('c4g'))} />
           <path d="M 860 640 L 1120 640" stroke={C.red} strokeWidth={10} markerEnd="url(#arrowhead)" />
-          <Box x={1360} y={640} w={680} h={380} s={P(A('c4f')) * bump(mc, 0.08)} fill={f >= mc ? C.yellow : '#fff'}>
+          <Box x={1360} y={640} w={680} h={380} s={P(A('c4g')) * bump(mc, 0.08)} fill={f >= mc ? C.yellow : '#fff'}>
             <Text y={-140} size={46}>not one guy</Text>
             <Text y={-60} size={52} color={f >= mc ? C.red : C.ink}>THE MACHINE</Text>
             <Text y={40} size={40}>a sales funnel</Text>
@@ -1017,13 +1029,13 @@ export const Ep52: React.FC = () => {
     q(wd, 'ding', 0.5);
     q(sm, 'pop2', 0.5);
     q(mc, 'stamp', 0.7);
-    scene(A('c4g'), () => (
+    scene(A('c4h'), () => (
       <AbsoluteFill>
         <Board />
         <Svg>
           <Dave f={f} x={560} y={930} s={1.15} keys={[{at: 0, pose: 'think', expr: 'think', look: 0.6}]} />
-          <G2 x={760} y={320} s={P(A('c4g'))}><Bubble text="weird question..." size={38} tail="down" /></G2>
-          <Box x={1320} y={560} w={780} h={380} s={P(A('c4g')) * bump(sm, 0.08)} fill={f >= sl ? C.yellow : '#fff'}>
+          <G2 x={760} y={320} s={P(A('c4h'))}><Bubble text="weird question..." size={38} tail="down" /></G2>
+          <Box x={1320} y={560} w={780} h={380} s={P(A('c4h')) * bump(sm, 0.08)} fill={f >= sl ? C.yellow : '#fff'}>
             <Text y={-140} size={48}>if someone had</Text>
             <Text y={-60} size={52} color={C.red}>A MONEY MACHINE</Text>
             <Text y={40} size={48}>why would they</Text>
@@ -1032,13 +1044,6 @@ export const Ep52: React.FC = () => {
         </Svg>
       </AbsoluteFill>
     ));
-  }
-  {
-    const sr = A('c4h');
-    q(sr + SUB_FRAMES, 'whoosh', 0.5);
-    q(sr + SUB_FRAMES + 10, 'ding', 0.6);
-    q(sr + SUB_FRAMES + 60, 'whoosh_s', 0.4);
-    scene(sr, () => <SubReminder f={f} at={sr} Dave={<Dave f={f} x={0} y={200} s={1} keys={[{at: 0, pose: "point_r", expr: "grin", look: 0.8}]} />} />);
   }
 
   // ============ CH5: Why Sell A Secret? ============
@@ -1084,8 +1089,16 @@ export const Ep52: React.FC = () => {
       <AbsoluteFill>
         <Board />
         <Svg>
-          <G2 x={960} y={600} s={P(A('c5b')) * bump(mp, 0.1)}><Text size={56}>if he sold a map to 1,000 people...</Text></G2>
-          <G2 x={960} y={740} s={bump(em, 0.15)}><Text size={72} color={f >= em ? C.red : C.ink}>{f >= em ? 'EMPTY BY TUESDAY' : '...'}</Text></G2>
+          <G2 x={960} y={160} s={P(A('c5b')) * bump(mp, 0.1)}><Text size={52}>if he sold a map to 1,000 people...</Text></G2>
+          <G2 x={420} y={520} s={1.2 * P(A('c5b')) * bump(mp, 0.1)} r={-6}>
+          <rect x={-170} y={-130} width={340} height={260} rx={10} fill="#F6E7C1" stroke={C.ink} strokeWidth={6} />
+          <path d="M -120 60 Q -40 -80 30 10 T 110 -70" fill="none" stroke={C.ink} strokeWidth={5} strokeDasharray="14 10" />
+          <Text x={112} y={-76} size={50} color={C.red}>X</Text>
+          <Text y={110} size={26} color={C.ink}>SECRET SPOT</Text>
+          </G2>
+          {Array.from({length: 14}).map((_, i) => <Stick key={i} f={f} x={800 + (i % 7) * 130} y={640 + Math.floor(i / 7) * 250} s={0.5} seed={80 + i} keys={[{at: 0, pose: i % 2 ? 'celebrate' : 'carry', expr: 'money', look: 0}]} />)}
+          <G2 x={1200} y={900} s={bump(em, 0.16)} o={lt(em, 0.35)}><Stamp text="EMPTY BY TUESDAY" color={C.red} size={64} r={-4} /></G2>
+          <G2 x={1200} y={300} s={P(A('c5b')) * bump(th, 0.1)}><Text size={44} color={GRAY}>1,000 buyers</Text></G2>
         </Svg>
       </AbsoluteFill>
     ));
@@ -1233,6 +1246,8 @@ export const Ep52: React.FC = () => {
           <G2 x={780} y={320} s={P(A('c5g')) * bump(dd, 0.1)}><Bubble text="getting my money back" size={38} tail="down" /></G2>
           <G2 x={1360} y={480} s={P(A('c5g'))}><Text size={60}>then...</Text></G2>
           <G2 x={1360} y={640} s={bump(wr, 0.15)}><Text size={70} color={f >= wr ? C.red : C.ink}>{f >= wr ? 'THINGS GOT WORSE' : '...'}</Text></G2>
+          <Laptop x={300} y={640} s={0.8 * P(A('c5g'))} />
+          <MoneyStack x={1360} y={860} s={1.0 * P(A('c5g')) * bump(gt, 0.12)} n={4} label="$1,997" />
         </Svg>
       </AbsoluteFill>
     ));
@@ -1322,8 +1337,18 @@ export const Ep52: React.FC = () => {
         <Board />
         <Svg>
           <DamageMeter x={1700} y={90} value={dmgValue} hot={1} />
-          <G2 x={960} y={600} s={P(A('c6c')) * bump(rv, 0.1)}><Text size={60}>revolving door</Text></G2>
-          <G2 x={960} y={740} s={bump(en, 0.12)}><Text size={56} color={f >= en ? C.red : C.ink}>{f >= en ? 'always end where you started' : '...'}</Text></G2>
+          <G2 x={760} y={170} s={P(A('c6c')) * bump(rv, 0.1)}><Text size={56}>like pushing a revolving door</Text></G2>
+          <G2 x={960} y={580} s={1.3 * P(A('c6c'))}>
+          <circle r={210} fill="#E8EDF2" stroke={C.ink} strokeWidth={6} />
+          <g transform={`rotate(${f * 4})`}>
+          <path d="M -200 0 H 200 M 0 -200 V 200" stroke={C.ink} strokeWidth={10} />
+          </g>
+          <circle r={16} fill={C.ink} />
+          </G2>
+          <Dave f={f} x={520} y={940} s={1.1} walk keys={[{at: 0, pose: 'carry', expr: 'tired', look: 0.6}]} sweat />
+          <G2 x={1440} y={520} s={P(A('c6c')) * bump(lt, 0.1)}><Text size={44} color={GRAY}>lots of effort</Text></G2>
+          <G2 x={1440} y={640} s={bump(en, 0.14)} o={f >= en ? 1 : 0.35}><Text size={48} color={C.red}>back where</Text></G2>
+          <G2 x={1440} y={710} s={bump(en, 0.14)} o={f >= en ? 1 : 0.35}><Text size={48} color={C.red}>you started</Text></G2>
         </Svg>
       </AbsoluteFill>
     ));
@@ -2013,10 +2038,12 @@ export const Ep52: React.FC = () => {
       <AbsoluteFill>
         <Board />
         <Svg>
-          <G2 x={960} y={460} s={P(A('r5')) * bump(sb, 0.12)}><SubButton done={1} /></G2>
-          <G2 x={960} y={700} s={bump(rc, 0.1)}><Raccoon f={f} mood="happy" grab={1} /></G2>
-          <G2 x={960} y={920} s={bump(cs, 0.12)} o={lt(cs, 0.35)}><Text size={46} color={C.red}>can't sell you a course on spotting raccoons</Text></G2>
-          <Bell f={f} ring={1} />
+          <SubButton x={860} y={380} s={1.4 * P(A('r5'))} done={f > sb + 14 ? 1 : 0} />
+          <Bell x={1300} y={380} s={1.2 * P(A('r5'))} f={f} ring={f > sb + 16 && f < sb + 50 ? 1 : 0} />
+          <Dave f={f} x={380} y={900} s={1.25} keys={[{at: 0, pose: 'wave', expr: 'grin'}]} />
+          <Raccoon f={f} x={1540} y={760} s={1.0 * P(A('r5')) * bump(rc, 0.12)} mood="wink" />
+          <G2 x={1000} y={640} s={P(A('r5'))}><Text size={46}>so the raccoon can't sell you</Text></G2>
+          <G2 x={1000} y={740} s={P(A('r5')) * bump(cs, 0.12)} o={f >= cs ? 1 : 0.4}><Text size={52} color={C.red}>a course on spotting raccoons</Text></G2>
         </Svg>
       </AbsoluteFill>
     ));
@@ -2027,6 +2054,8 @@ export const Ep52: React.FC = () => {
       <Scenes f={f} items={S} />
       <Vignette />
       <Progress f={f} t={t} />
+      <ChapterCard f={f} t={t} />
+      <SubReminder f={f} at={SUB} Dave={<Stick f={f} x={0} y={200} s={1} keys={[{at: 0, pose: 'point_r', expr: 'grin', look: 0.8}]} acc={['hair']} seed={7} />} />
       <Captions f={f} t={t} />
       <Sfx cues={cues} />
     </AbsoluteFill>

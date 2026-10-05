@@ -6,7 +6,7 @@ import {ease, lerp, pop, shake} from '../anim';
 import {Stick, StickProps} from '../Stick';
 import {Board, Cam, ChapterCard, Captions, CHAPTER_FRAMES, Cue, Interior, Progress, SceneItem, Scenes, Sfx, Street, SUB_FRAMES, Svg, Vignette, SubReminder, subCues} from '../fx';
 import {Bubble, Calendar, Desk, MoneyStack, Pencil, SourceTag, Stamp, Text, XMark} from '../props';
-import {Bar, Envelope, Mailbox, Sign, SubButton, Bell} from '../props2';
+import {Bar, Envelope, Mailbox, Row, Sign, SubButton, Bell} from '../props2';
 import {SourceCard} from '../props3';
 import {House} from '../props4';
 import {Couch} from '../props19';
@@ -820,9 +820,13 @@ export const Ep55: React.FC = () => {
       <AbsoluteFill>
         <Board />
         <Svg>
-          <Dave f={f} x={560} y={930} s={1.1 * P(A('c4g'))} keys={[{at: 0, pose: 'think', expr: 'suspicious', look: 0.6}]} />
+          <Dave f={f} x={300} y={930} s={1.1 * P(A('c4g'))} keys={[{at: 0, pose: 'think', expr: 'suspicious', look: 0.6}]} />
           <G2 x={1300} y={400} s={P(A('c4g')) * bump(st, 0.1)}><Text size={54} color={C.red}>BOTH LOSING $$$</Text></G2>
           <G2 x={1300} y={620} s={P(A('c4g')) * bump(gt, 0.12)} o={lt(gt, 0.35)}><Text size={52} color={C.ink}>who's getting paid?</Text></G2>
+          <Bob f={f} x={640} y={930} s={1.05} keys={[{at: 0, pose: 'shrug', expr: 'sad', look: 0.6}]} />
+          <Wife f={f} x={900} y={930} s={1.05} flip keys={[{at: 0, pose: 'shrug', expr: 'sad', look: -0.6}]} />
+          <G2 x={770} y={560} s={P(A('c4g')) * bump(ls, 0.12)}><Text size={44} color={C.red}>-$ -$ -$</Text></G2>
+          <MoneyStack x={1300} y={840} s={1.1 * P(A('c4g')) * bump(gt, 0.14)} n={5} label="WHO GETS THIS?" />
         </Svg>
       </AbsoluteFill>
     ));
@@ -955,7 +959,7 @@ export const Ep55: React.FC = () => {
 
   // SUB REMINDER after villain reveal
   const SUB = w('c5e', 'meter') + 20;
-  subCues(SUB);
+  subCues(SUB).forEach((c) => cues.push(c));
 
   {
     const sh = w('c5f', 'showed');
@@ -978,11 +982,6 @@ export const Ep55: React.FC = () => {
       </AbsoluteFill>
     ));
   }
-  scene(SUB, () => (
-    <AbsoluteFill>
-      <SubReminder f={f} at={SUB} Dave={<Dave f={f} x={620} y={540} s={1.3} keys={[{at: 0, pose: 'wave', expr: 'grin'}]} />} />
-    </AbsoluteFill>
-  ));
 
   // ============ CH6: Bob's Terrible Plan ============
   {
@@ -1061,17 +1060,22 @@ export const Ep55: React.FC = () => {
     const hl = w('c6d', 'hole');
     q(bk, 'pop', 0.5);
     q(pk, 'poof', 0.4);
-    q(hl, 'drip', 0.5);
+    q(hl, 'tick', 0.5);
     scene(A('c6d'), () => (
       <AbsoluteFill>
         <Board />
         <Svg>
-          <G2 x={960} y={200} s={P(A('c6d'))}><Text size={48}>like carrying water in a leaky bucket</Text></G2>
-          <G2 x={960} y={640} s={2.2 * P(A('c6d'))}>
-            <rect x={-80} y={-120} width={160} height={140} rx={8} fill={C.blue} stroke={C.ink} strokeWidth={5} opacity={0.7} />
-            <circle cx={60} cy={20} r={12} fill={C.red} />
-            {[0, 1, 2, 3].map((i) => <circle key={i} cx={60} cy={40 + i * 30} r={6} fill={C.blue} opacity={0.6} />)}
-            <Text y={140} size={38} color={C.red}>HOLE = IRS PENALTY</Text>
+          <G2 x={960} y={170} s={P(A('c6d'))}><Text size={48}>like carrying water in a leaky bucket</Text></G2>
+          <Bob f={f} x={420} y={930} s={1.1} walk keys={[{at: 0, pose: 'carry', expr: 'worried', look: 0.6}]} sweat />
+          <G2 x={960} y={560} s={1.9 * P(A('c6d')) * bump(bk, 0.06)}>
+          <rect x={-80} y={-120} width={160} height={140} rx={8} fill={C.blue} stroke={C.ink} strokeWidth={5} opacity={0.7} />
+          <circle cx={60} cy={20} r={12} fill={C.red} />
+          {[0, 1, 2, 3].map((i) => <circle key={i} cx={60} cy={40 + ((i * 30 + f * 3) % 120)} r={6} fill={C.blue} opacity={0.6} />)}
+          </G2>
+          <G2 x={1480} y={520} s={P(A('c6d')) * bump(hl, 0.14)}>
+          <rect x={-230} y={-130} width={460} height={260} rx={24} fill={C.yellow} stroke={C.ink} strokeWidth={6} />
+          <Text y={-50} size={40} color={C.ink}>THE HOLE =</Text>
+          <Text y={40} size={56} color={C.red}>IRS PENALTY</Text>
           </G2>
         </Svg>
       </AbsoluteFill>
@@ -1442,9 +1446,13 @@ export const Ep55: React.FC = () => {
       <AbsoluteFill>
         <Board />
         <Svg>
-          <DivorceForms x={560} y={540} s={0.7 * P(A('c8e'))} cost={f >= th ? '$300' : '$?'} />
+          <DivorceForms x={420} y={520} s={0.95 * P(A('c8e'))} cost={f >= th ? '$300' : '$?'} />
           <G2 x={1360} y={400} s={P(A('c8e'))}><Text size={50}>forms cost $300</Text></G2>
           <G2 x={1360} y={600} s={P(A('c8e')) * bump(af, 0.12)} o={lt(af, 0.35)}><Text size={52} color={C.red}>after that = the fight</Text></G2>
+          <Bob f={f} x={900} y={940} s={1.05} keys={[{at: 0, pose: 'think', expr: 'think', look: -0.6}]} />
+          <Lawyer f={f} x={1180} y={940} s={0.9} flip keys={[{at: 0, pose: 'hips', expr: 'smug', look: -0.6}]} />
+          <Lawyer f={f} x={1560} y={940} s={0.9} keys={[{at: 0, pose: 'hips', expr: 'smug', look: 0.6}]} />
+          <G2 x={1370} y={800} s={P(A('c8e')) * bump(af, 0.14)}><Text size={60} color={C.red}>$344/hr x 2</Text></G2>
         </Svg>
       </AbsoluteFill>
     ));
@@ -1481,8 +1489,11 @@ export const Ep55: React.FC = () => {
       <AbsoluteFill>
         <Board />
         <Svg>
-          <G2 x={960} y={360} s={P(A('r1'))}><Text size={56}>1. Paperwork is cheap</Text></G2>
-          <G2 x={960} y={560} s={P(A('r1'))}><Text size={56} color={C.red}>The fight is expensive</Text></G2>
+          <G2 x={860} y={150} s={P(A('r1'))}><Text size={56} color={C.navy}>WHAT DAVE LEARNED</Text></G2>
+          <Row x={860} y={340} s={0.9} n={1} text="paperwork is cheap, the fight is expensive" lit={1} w={1200} />
+          <Row x={860} y={500} s={0.9} n={2} text="two lawyers = the meter ticks twice" lit={0.35} w={1200} />
+          <Row x={860} y={660} s={0.9} n={3} text="before every fight: worth the hour?" lit={0.35} w={1200} />
+          <Dave f={f} x={1640} y={960} s={0.95} flip keys={[{at: 0, pose: 'thumbs', expr: 'grin', look: -0.6}]} />
         </Svg>
       </AbsoluteFill>
     ));
@@ -1492,8 +1503,11 @@ export const Ep55: React.FC = () => {
       <AbsoluteFill>
         <Board />
         <Svg>
-          <G2 x={960} y={400} s={P(A('r2'))}><Text size={56}>2. Two lawyers =</Text></G2>
-          <G2 x={960} y={600} s={P(A('r2'))}><Text size={56} color={C.red}>meter ticks twice</Text></G2>
+          <G2 x={860} y={150} s={P(A('r1'))}><Text size={56} color={C.navy}>WHAT DAVE LEARNED</Text></G2>
+          <Row x={860} y={340} s={0.9} n={1} text="paperwork is cheap, the fight is expensive" lit={1} w={1200} />
+          <Row x={860} y={500} s={0.9} n={2} text="two lawyers = the meter ticks twice" lit={1} w={1200} />
+          <Row x={860} y={660} s={0.9} n={3} text="before every fight: worth the hour?" lit={0.35} w={1200} />
+          <Dave f={f} x={1640} y={960} s={0.95} flip keys={[{at: 0, pose: 'thumbs', expr: 'grin', look: -0.6}]} />
         </Svg>
       </AbsoluteFill>
     ));
@@ -1503,8 +1517,11 @@ export const Ep55: React.FC = () => {
       <AbsoluteFill>
         <Board />
         <Svg>
-          <G2 x={960} y={360} s={P(A('r3'))}><Text size={50}>3. Before every fight,</Text></G2>
-          <G2 x={960} y={560} s={P(A('r3'))}><Text size={52} color={C.red}>ask if it's worth the hour</Text></G2>
+          <G2 x={860} y={150} s={P(A('r1'))}><Text size={56} color={C.navy}>WHAT DAVE LEARNED</Text></G2>
+          <Row x={860} y={340} s={0.9} n={1} text="paperwork is cheap, the fight is expensive" lit={1} w={1200} />
+          <Row x={860} y={500} s={0.9} n={2} text="two lawyers = the meter ticks twice" lit={1} w={1200} />
+          <Row x={860} y={660} s={0.9} n={3} text="before every fight: worth the hour?" lit={1} w={1200} />
+          <Dave f={f} x={1640} y={960} s={0.95} flip keys={[{at: 0, pose: 'thumbs', expr: 'grin', look: -0.6}]} />
         </Svg>
       </AbsoluteFill>
     ));
@@ -1523,11 +1540,16 @@ export const Ep55: React.FC = () => {
       <AbsoluteFill>
         <Board />
         <Svg>
-          <G2 x={960} y={280} s={P(A('r4'))}><Text size={46}>NEXT TIME</Text></G2>
-          <G2 x={960} y={480} s={P(A('r4'))}><Text size={42}>A guy online swears</Text></G2>
-          <G2 x={960} y={580} s={P(A('r4')) * bump(dr, 0.1)}><Text size={50} color={C.red}>dropshipping</Text></G2>
-          <G2 x={960} y={680} s={P(A('r4'))}><Text size={42}>made him rich in 30 days</Text></G2>
-          <G2 x={960} y={860} s={P(A('r4')) * bump(op, 0.12)} o={lt(op, 0.35)}><Text size={44} color={C.navy}>Dave just opened his own store</Text></G2>
+          <G2 x={960} y={150} s={P(A('r4'))}><Text size={60} color={C.red}>NEXT TIME</Text></G2>
+          <Stick f={f} x={380} y={930} s={1.1} acc={['shades']} seed={66} keys={[{at: 0, pose: 'present', expr: 'smug', look: 0.6, talk: true}]} />
+          <G2 x={380} y={360} s={P(A('r4')) * bump(dr, 0.12)}><Bubble text="dropshipping!" size={44} tail="down" /></G2>
+          <G2 x={960} y={520} s={P(A('r4')) * bump(sw, 0.1)}>
+          <rect x={-260} y={-150} width={520} height={300} rx={24} fill={C.yellow} stroke={C.ink} strokeWidth={6} />
+          <Text y={-50} size={44} color={C.ink}>RICH IN</Text>
+          <Text y={50} size={90} color={C.red}>30 DAYS</Text>
+          </G2>
+          <Dave f={f} x={1540} y={930} s={1.1} flip keys={[{at: 0, pose: 'idle', expr: 'happy', look: -0.6}, {at: op, pose: 'celebrate', expr: 'money', look: 0}]} />
+          <G2 x={1500} y={380} s={P(A('r4')) * bump(op, 0.14)} o={lt(op, 0.4)}><Sign text="DAVE'S STORE: OPEN" color={C.green} /></G2>
         </Svg>
       </AbsoluteFill>
     ));
@@ -1544,11 +1566,13 @@ export const Ep55: React.FC = () => {
       <AbsoluteFill>
         <Board />
         <Svg>
-          <SubButton x={760} y={480} s={1.4 * P(A('r5'))} done={f > w('r5', 'subscribe') + 14 ? 1 : 0} />
-          <Bell x={1160} y={480} s={1.4 * P(A('r5'))} f={f} ring={f > w('r5', 'subscribe') + 16 && f < w('r5', 'subscribe') + 50 ? 1 : 0} />
-          <G2 x={960} y={820} s={P(A('r5'))}><Text size={48}>unlike a divorce:</Text></G2>
-          <G2 x={960} y={920} s={P(A('r5')) * bump(fr, 0.1)}><Text size={50} color={C.green}>it's FREE</Text></G2>
-          <G2 x={960} y={1010 - 60} s={P(A('r5')) * bump(nb, 0.12)} o={lt(nb, 0.35)}><Text size={44}>and nobody fights over the couch</Text></G2>
+          <SubButton x={860} y={400} s={1.4 * P(A('r5'))} done={f > sb + 14 ? 1 : 0} />
+          <Bell x={1300} y={400} s={1.2 * P(A('r5'))} f={f} ring={f > sb + 16 && f < sb + 50 ? 1 : 0} />
+          <Dave f={f} x={360} y={900} s={1.25} keys={[{at: 0, pose: 'wave', expr: 'grin'}]} />
+          <Bob f={f} x={1600} y={900} s={1.15} flip keys={[{at: 0, pose: 'thumbs', expr: 'grin', look: -0.6}]} />
+          <G2 x={1000} y={640} s={P(A('r5'))}><Text size={48}>unlike a divorce:</Text></G2>
+          <G2 x={1000} y={740} s={P(A('r5')) * bump(fr, 0.1)}><Text size={60} color={C.green}>it's FREE</Text></G2>
+          <G2 x={1000} y={840} s={P(A('r5')) * bump(nb, 0.12)} o={lt(nb, 0.4)}><Text size={44}>and nobody fights over the couch</Text></G2>
         </Svg>
       </AbsoluteFill>
     ));
@@ -1556,10 +1580,12 @@ export const Ep55: React.FC = () => {
 
   return (
     <AbsoluteFill>
-      <Vignette />
       <Scenes f={f} items={S} />
-      <Captions f={f} t={t} />
+      <Vignette />
       <Progress f={f} t={t} />
+      <ChapterCard f={f} t={t} />
+      <SubReminder f={f} at={SUB} Dave={<Stick f={f} x={0} y={200} s={1} keys={[{at: 0, pose: 'point_r', expr: 'grin', look: 0.8}]} acc={['hair']} seed={7} />} />
+      <Captions f={f} t={t} />
       <Sfx cues={cues} />
     </AbsoluteFill>
   );
