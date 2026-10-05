@@ -371,6 +371,11 @@ Callbacks to earlier episodes are GOOD ("Remember the raccoon from our credit ca
 - Avoid emoji in SVG text (renderer may lack the font). ✓ works.
 - Captions come from edge-tts word boundaries; write numbers as words.
 - SFX names must be in the §7 list — an unknown name (e.g. 'sparkle') makes the cloud render fail (ep45/46).
+- **Layout anchors (ep51-59 rebuild, Oct 2026):** `Row` is anchored at its LEFT edge (x = left, default width 980) - a centred list is `x≈300–520`, never `x=860`. `People` draws up and to the left of its origin (single row sits at `y - 290·s`): for one row use `y = wantedY + 290·s`. `XMark` is 520 px wide at `s=1` - use `s≈0.3–0.5`. `Calendar flip={0}` shows the year (`flip={1}` hides it).
+- **Footer is fixed:** `<Scenes/> <Vignette/> meter <Progress/> <ChapterCard/> <SubReminder/> <Captions/> <Sfx/>`. `SubReminder` is an overlay in the footer, NEVER inside `scene()` (that blanks the screen for 4 s), and `subCues(SUB).forEach((c) => cues.push(c))`. `validate.py` now checks this, SFX names, ChapterCard and XMark size.
+- **Scene anchors must match the words:** if a block reads `w('c4e', …)` its scene is `scene(A('c4e'), …)`. ep52 and ep54 shipped with a whole chapter one beat early.
+- **No text walls:** a scene that is only 3–7 lines of narration printed on the board fails the owner's style even if QA passes (ep51). Every scene = character + main object + one number/label.
+- **QA report:** `N flagged beats out of M` must be `0`. `QA CRASHED` now only appears when frames really failed to render.
 - `seo.py` rewrites `pipeline/episodes/epNN.json` (youtube field) on purpose — commit that change, it is not stray.
 - Owner's topic taste (ep41–60 rounds): YES = life moments & money traps (weddings, divorce, co-signing, lending to family, MLMs, gurus, trading/betting apps, free games, gym, free trials, working until 70). NO = product-fee topics (printer ink, popcorn, warranties, resort fees, timeshares), 'feel poor on $100K', kids' sports/parties, nursing homes, dentists, lottery, pig-butchering scams.
 

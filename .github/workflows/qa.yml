@@ -31,7 +31,7 @@ jobs:
         run: |
           set +e +o pipefail
           python pipeline/qa_empty.py ${{ inputs.ep }} --keep 2>&1 | tee -a report.txt
-          [ "${PIPESTATUS[0]}" = 0 ] || echo "QA CRASHED - frames failed to render (runtime error in the episode code). NOT OK." | tee -a report.txt
+          grep -q "flagged beats out of" report.txt || echo "QA CRASHED - frames failed to render (runtime error in the episode code). NOT OK." | tee -a report.txt
       - run: python pipeline/qa_sheet.py ${{ inputs.ep }} report.txt sheet.jpg || true
       - run: python pipeline/qa_full.py ${{ inputs.ep }} full.jpg || true
       - uses: actions/upload-artifact@v4

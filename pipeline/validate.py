@@ -60,6 +60,22 @@ if num.isdigit() and int(num) >= 51:
     if "DAMAGE" not in tsx.upper():
         problems.append("Damage Meter missing (PLAYBOOK sec 0.5)")
 
+# Build-quality checks (lessons from the ep51-59 rebuilds, PLAYBOOK sec 10) - enforced from ep51 on
+if num.isdigit() and int(num) >= 51:
+    sfx = {p.stem for p in (ROOT / "public" / "sfx").glob("*")}
+    for m in re.finditer(r"\bq\([^;\n]*,\s*'([a-z_0-9]+)'\s*(?:,\s*[0-9.]+\s*)?\);", tsx):
+        if sfx and m.group(1) not in sfx:
+            problems.append(f"unknown SFX '{m.group(1)}' (render will fail; valid names are the files in public/sfx)")
+    if "<ChapterCard" not in tsx:
+        problems.append("<ChapterCard f={f} t={t} /> missing from the final return (chapter cards never show)")
+    if re.search(r"scene\([^\n]*\n(?:[^\n]*\n){0,4}?[^\n]*<SubReminder", tsx):
+        problems.append("SubReminder is inside a scene(): it must be an overlay in the final return")
+    if "subCues(" in tsx and not re.search(r"subCues\([^)]*\)\s*\.forEach", tsx):
+        problems.append("subCues(SUB) is not pushed into cues: use subCues(SUB).forEach((c) => cues.push(c))")
+    for m in re.finditer(r"<XMark[^>]*\bs=\{([0-9.]+)", tsx):
+        if float(m.group(1)) > 0.8:
+            problems.append(f"XMark s={m.group(1)}: XMark is 520 px wide at s=1, use s around 0.3-0.5")
+
 print(f"{ep}: duration {dur:.0f}s ({dur / 60:.1f} min), {len(tm['beats'])} beats, {len(tm.get('chapters', []))} chapters")
 if problems:
     print("PROBLEMS:")
