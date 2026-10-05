@@ -185,6 +185,33 @@ Same facts, same sources, same length. The difference: every fact is now a step 
 
 ---
 
+### 0.9 Feedback loop & growth (Oct 2026 — taken from youtube-agent-skill, adapted)
+
+We compared our pipeline with `Jakeschincariol/youtube-agent-skill` (11 prompt-skills + 6 small scripts for talking-head creators). Our playbook already covers script, hook, thumbnails, SEO and chapters in more depth. What it had and we did NOT: **reading real data back**. `ctr_log.md` was empty after 60 episodes — we were writing rules from taste. Three tools were ported:
+
+| Tool | When | Command |
+|---|---|---|
+| `pipeline/retention.py` | 48 h and 7 days after EVERY upload | `py pipeline/retention.py epNN retention.csv` (Studio → video → Analytics → Engagement → retention chart → download) |
+| `pipeline/package_lint.py` | before thumbnails are drawn | `py pipeline/package_lint.py epNN` — needs `"thumb_text"` (the ≤ 3 words on thumbnail A) in `seo_epNN.json` |
+| `pipeline/outliers.py` | before proposing topics to the owner | `py pipeline/outliers.py collected.json` — competitor videos ranked by multiple over their OWN channel median |
+
+**Retention rule — ONE fix per video, not twenty:**
+- `retention.py` names the beat id at every cliff and the worst chapter (% lost per minute). Paste its `ctr_log row` into `pipeline/ctr_log.md`.
+- Hook leak > 25 % in the first 30 s → the next episode's `o1…o6` is the only thing to change.
+- Hook healthy, one chapter bleeding → find what that chapter did (list? no cliffhanger? no pattern interrupt?) and ban it here in the playbook.
+- Hook healthy + flat slide + few views → the video is fine, the **packaging** failed: new title/thumbnail via Test & Compare, don't touch the script.
+- **No new series is scripted until at least 3 uploaded episodes of the current style have a row in `ctr_log.md`.** Building 15 more videos on unmeasured rules is the slowest path to monetization.
+
+**Packaging rule:** title and thumbnail are ONE unit. Thumbnail words never repeat title words; the pair must contain one number; the viewer's pain must be readable in the first ~40 characters of the title (mobile feed cut). `package_lint.py` checks all of it plus §1c ("You/Your").
+
+**Topic research = the `yt-viral` skill** (`.claude/skills/yt-viral`): `py pipeline/collect.py @Chan1 @Chan2 … > collected.json` then `py pipeline/outliers.py collected.json --min 3`. First run (5 Oct 2026, 274 videos / 16 channels) found: (1) the "stickman + Why You're Always Broke" lane is flooded — 25+ clone channels with medians of 5–600 views use our exact title shapes; (2) the stickman outliers are **beginner definitions and A-vs-B math** ("Stock Market Terms Explained" 98k = 168× its channel, "Index Funds, ETFs, Mutual Funds & Hedge Funds Explained" 18k, "Leasing vs Buying a Car", "401(k) vs Roth IRA"); (3) on big explainer channels the winners are concrete "How X is built / what happens to X" curiosity, not advice. Use this when proposing topics. `outliers.py` is evidence for the proposal, it does not replace §1b (owner approves every topic). A topic that is ≥ 3× its channel median on 2+ channels AND passes "that's MY problem" goes to the top of the proposal.
+
+**Comments (first 2 h after publish):** sort into questions / corrections / praise / bait. Answer questions in < 30 words, thank corrections if right, a few specific replies to praise, never reply to bait. Pin the question most people share (not the nicest comment). Repeated questions = next topics.
+
+**Shorts (not in the pipeline yet — needs a 1080×1920 composition, owner decides):** a Short is a 20–55 s span that survives alone: opens on a complete thought, has a turn, ends on a line. Best sources in our scripts: the hook `o1…o4`, the pause-and-guess + its payoff, the villain reveal. Each needs a NEW first line (no context assumed) and a loop point.
+
+**Not taken, on purpose:** `hookscore.py` (its own author says it barely separates hits from misses, and it rewards "you" in the first 6 words, which fights our flash-forward hook §0.3); `deadair.py`/yt-edit (TTS has no retakes, pauses are auto-trimmed); `chapters.py` (ours come exactly from `timings.json`); `voice.md` (this playbook is the voice).
+
 ## 1. The channel
 
 - **Channel name: "Dave Explains Money"** (@DaveExplainsMoney). **Dave is the main character of EVERY video** — the story follows Dave (his problem, his question, his discovery); other characters are supporting.

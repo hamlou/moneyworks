@@ -57,7 +57,7 @@ export const Ep54: React.FC = () => {
         <Board />
         <Cam f={ff} keys={[[0, 1.15, 960, 540], [tap, 1.0, 960, 540]]}>
           <Svg>
-            <Clock f={ff} x={280} y={240} s={0.85 * bump(am, 0.1)} h={2} m={0} />
+            <Clock f={ff} x={280} y={240} s={0.85 * bump(am, 0.1)} />
             <GamePhone f={ff} x={960} y={560} s={1.3} screen={
               <>
                 <rect x={-160} y={-294} width={320} height={588} rx={30} fill="#1D3557" />
@@ -624,7 +624,7 @@ export const Ep54: React.FC = () => {
       <AbsoluteFill>
         <Board />
         <Svg>
-          <Clock f={f} x={600} y={480} s={1.4 * P(A('c3e'))} h={23} m={58} />
+          <Clock f={f} x={600} y={480} s={1.4 * P(A('c3e'))} />
           <GamePhone f={f} x={1260} y={560} s={1.1} screen={
             <>
               <Text y={-200} size={32} color={C.yellow}>DAILY QUEST</Text>
@@ -1198,8 +1198,7 @@ export const Ep54: React.FC = () => {
             <Text y={-40} size={44}>new budget:</Text>
             <Text y={20} size={54} color={C.green}>$240/yr</Text>
           </G2>
-          <DamageMeter x={1700} y={90} s={0.8} value={f >= flip ? '' : '$234.95'} saved={f >= flip ? 1 : 0} />
-          <G2 x={1700} y={90} s={0.8} o={f >= flip ? 1 : 0}><DamageMeter value="~$3,800/yr" saved={1} /></G2>
+          <DamageMeter x={1700} y={90} s={0.8} value="$234.95" saved={f >= flip ? "~$3,800/yr" : undefined} />
         </Svg>
       </AbsoluteFill>
     ));
@@ -1218,7 +1217,7 @@ export const Ep54: React.FC = () => {
             <Text y={80} size={48}>actually cost?</Text>
           </G2>
           <Dave f={f} x={420} y={920} s={1.05} keys={[{at: 0, pose: 'think', expr: 'suspicious', look: 0.6}]} />
-          <DamageMeter x={1700} y={90} s={0.8} value="SAVED ~$3,800/yr" saved={1} />
+          <DamageMeter x={1700} y={90} s={0.8} value="" saved="~$3,800/yr" />
         </Svg>
       </AbsoluteFill>
     ));
@@ -1234,7 +1233,7 @@ export const Ep54: React.FC = () => {
         <Svg>
           <DollarRule x={960} y={400} s={1.1 * P(A('c8a'))} gems={160} dollars="$2" />
           <G2 x={960} y={680} s={bump(used, 0.12)}><Text size={48}>DOLLAR RULE</Text></G2>
-          <DamageMeter x={1700} y={90} s={0.8} value="SAVED ~$3,800/yr" saved={1} />
+          <DamageMeter x={1700} y={90} s={0.8} value="" saved="~$3,800/yr" />
         </Svg>
       </AbsoluteFill>
     ));
@@ -1255,7 +1254,7 @@ export const Ep54: React.FC = () => {
             <Text y={60} size={40} color={GRAY}>about 1 in 167</Text>
           </G2>
           <G2 x={960} y={640} s={0.9} o={lt(about, 0.4)}><Text size={28} color={GRAY}>Source: Genshin Impact</Text></G2>
-          <DamageMeter x={1700} y={90} s={0.8} value="SAVED ~$3,800/yr" saved={1} />
+          <DamageMeter x={1700} y={90} s={0.8} value="" saved="~$3,800/yr" />
         </Svg>
       </AbsoluteFill>
     ));
@@ -1278,7 +1277,7 @@ export const Ep54: React.FC = () => {
             <Text y={0} size={50} color={C.red}>$99.99</Text>
           </G2>
           <G2 x={960} y={680} s={P(eighty)} o={lt(eighty, 0.4)}><Text size={48} color={C.navy}>1 pull ≈ $2</Text></G2>
-          <DamageMeter x={1700} y={90} s={0.8} value="SAVED ~$3,800/yr" saved={1} />
+          <DamageMeter x={1700} y={90} s={0.8} value="" saved="~$3,800/yr" />
         </Svg>
       </AbsoluteFill>
     ));
@@ -1305,7 +1304,7 @@ export const Ep54: React.FC = () => {
             <Text y={-20} size={60} color={C.red}>180</Text>
             <Text y={40} size={44} color={C.ink}>pulls</Text>
           </G2>
-          <DamageMeter x={1700} y={90} s={0.8} value="SAVED ~$3,800/yr" saved={1} />
+          <DamageMeter x={1700} y={90} s={0.8} value="" saved="~$3,800/yr" />
         </Svg>
       </AbsoluteFill>
     ));
@@ -1334,7 +1333,7 @@ export const Ep54: React.FC = () => {
                 <Text y={-60} size={f >= real ? 50 : 44} color={f >= real ? C.red : C.ink}>DRAGON'S REAL PRICE</Text>
                 <Text y={30} size={f >= land ? 130 : 100} color={f >= land ? C.red : C.ink}>{money(n)}</Text>
               </G2>
-              <DamageMeter x={1700} y={90} s={0.8} value="SAVED ~$3,800/yr" saved={1} />
+              <DamageMeter x={1700} y={90} s={0.8} value="" saved="~$3,800/yr" />
             </Svg>
           </Cam>
         </AbsoluteFill>
@@ -1360,7 +1359,7 @@ export const Ep54: React.FC = () => {
             <Text y={-30} size={44} color="#fff">NEVER SAID</Text>
             <Text y={30} size={50} color={C.yellow}>$356</Text>
           </G2>
-          <DamageMeter x={1700} y={90} s={0.8} value="SAVED ~$3,800/yr" saved={1} />
+          <DamageMeter x={1700} y={90} s={0.8} value="" saved="~$3,800/yr" />
         </Svg>
       </AbsoluteFill>
     ));
@@ -1383,7 +1382,7 @@ export const Ep54: React.FC = () => {
             <Text y={40} size={f >= dave ? 60 : 50} color={f >= dave ? C.red : C.ink}>THE GAME WAS</Text>
             <Text y={100} size={f >= dave ? 60 : 50} color={f >= dave ? C.red : C.ink}>PLAYING DAVE</Text>
           </G2>
-          <DamageMeter x={1700} y={90} s={0.8} value="SAVED ~$3,800/yr" saved={1} />
+          <DamageMeter x={1700} y={90} s={0.8} value="" saved="~$3,800/yr" />
         </Svg>
       </AbsoluteFill>
     ));
@@ -1403,7 +1402,7 @@ export const Ep54: React.FC = () => {
             <Text y={-50} size={48}>gems = dollars in costume</Text>
             <Text y={20} size={46} color={C.navy}>take the costume off</Text>
           </G2>
-          <DamageMeter x={1700} y={90} s={0.8} value="SAVED ~$3,800/yr" saved={1} />
+          <DamageMeter x={1700} y={90} s={0.8} value="" saved="~$3,800/yr" />
         </Svg>
       </AbsoluteFill>
     ));
@@ -1423,7 +1422,7 @@ export const Ep54: React.FC = () => {
             <Text y={0} size={46}>the game hunts</Text>
             <Text y={60} size={52} color={C.red}>WHALES</Text>
           </G2>
-          <DamageMeter x={1700} y={90} s={0.8} value="SAVED ~$3,800/yr" saved={1} />
+          <DamageMeter x={1700} y={90} s={0.8} value="" saved="~$3,800/yr" />
         </Svg>
       </AbsoluteFill>
     ));
@@ -1445,7 +1444,7 @@ export const Ep54: React.FC = () => {
             <Text y={0} size={50} color={C.red}>BEFORE 2 AM</Text>
             <Text y={70} size={44} color={GRAY}>not during</Text>
           </G2>
-          <DamageMeter x={1700} y={90} s={0.8} value="SAVED ~$3,800/yr" saved={1} />
+          <DamageMeter x={1700} y={90} s={0.8} value="" saved="~$3,800/yr" />
         </Svg>
       </AbsoluteFill>
     ));
@@ -1469,7 +1468,7 @@ export const Ep54: React.FC = () => {
             <Text y={60} size={44} color={GRAY}>lawyer says it'll be quick</Text>
             <Text y={120} size={48} color={f >= divorce ? C.red : C.ink}>will it?</Text>
           </G2>
-          <DamageMeter x={1700} y={90} s={0.8} value="SAVED ~$3,800/yr" saved={1} />
+          <DamageMeter x={1700} y={90} s={0.8} value="" saved="~$3,800/yr" />
         </Svg>
       </AbsoluteFill>
     ));
@@ -1485,14 +1484,14 @@ export const Ep54: React.FC = () => {
       <AbsoluteFill>
         <Board />
         <Svg>
-          <SubButton x={660} y={560} s={1.2 * P(A('r5'))} />
-          <Bell x={1260} y={560} s={1.2 * P(A('r5'))} />
+          <SubButton x={660} y={560} s={1.2 * P(A('r5'))} done={f > w('r5', 'subscribe') + 14 ? 1 : 0} />
+          <Bell x={1260} y={560} s={1.2 * P(A('r5'))} f={f} ring={f > w('r5', 'subscribe') + 16 && f < w('r5', 'subscribe') + 50 ? 1 : 0} />
           <G2 x={960} y={200} s={P(A('r5'))}>
             <Text y={-40} size={50}>subscribe</Text>
             <Text y={20} size={f >= free ? 56 : 48} color={f >= free ? C.green : C.ink}>FREE. ACTUALLY FREE.</Text>
             <Text y={100} size={44} color={GRAY}>no gems, no eggs, no coin flips</Text>
           </G2>
-          <DamageMeter x={1700} y={90} s={0.8} value="SAVED ~$3,800/yr" saved={1} />
+          <DamageMeter x={1700} y={90} s={0.8} value="" saved="~$3,800/yr" />
         </Svg>
       </AbsoluteFill>
     ));

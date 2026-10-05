@@ -70,7 +70,7 @@ GH=/c/Users/hp/AppData/Local/ghcli/bin/gh.exe ; R=hamlou/moneyworks
 - `src/episodes/EpNN.tsx` exporting `EpNN`
 - `src/propsNN.tsx` (new props; never edit other props files)
 - `src/v2/tNN.tsx` exporting `V2EpNN`
-- `pipeline/seo_epNN.json`: title, alts [2], line1 (≤150 chars), summary, learn [6], tags [11, last = "dave explains money"], hashtags [3], pinned (easy-to-answer question), thumb ("A"/"B"/"C"), thumb_question, next (null)
+- `pipeline/seo_epNN.json`: title, alts [2], thumb_text (the <= 3 words on thumbnail A; run `py pipeline/package_lint.py epNN`, must print OK), line1 (≤150 chars), summary, learn [6], tags [11, last = "dave explains money"], hashtags [3], pinned (easy-to-answer question), thumb ("A"/"B"/"C"), thumb_question, next (null)
 - `../videos/epNN/v2/*` (downloaded thumbnails, small PNGs only — never download videos)
 Do NOT edit: Episode.tsx, Root.tsx, v2/index.tsx, kit.tsx, seo.py, fx.tsx, other props, PLAYBOOK, other episodes, workflows.
 

@@ -514,10 +514,10 @@ export const Ep51: React.FC = () => {
   }
   {
     const cp = w('c3b', 'coupon');
-    const lt = w('c3b', 'lets');
+    const lets = w('c3b', 'lets');
     const dt = w('c3b', 'date');
     q(cp, 'paper', 0.6);
-    q(lt, 'pop', 0.5);
+    q(lets, 'pop', 0.5);
     q(dt, 'stamp', 0.6);
     scene(A('c3b'), () => (
       <AbsoluteFill>
@@ -525,7 +525,7 @@ export const Ep51: React.FC = () => {
         <Svg>
           <G2 x={960} y={180} s={P(A('c3b'))}><Text size={52}>an option is like</Text></G2>
           <G2 x={960} y={280} s={bump(cp, 0.12)}><Text size={56} color={C.navy}>a coupon</Text></G2>
-          <OptionCoupon x={960} y={580} s={0.9 * P(A('c3b')) * bump(lt, 0.06)} stock="STOCK" price="$200" expires="FRIDAY" />
+          <OptionCoupon x={960} y={580} s={0.9 * P(A('c3b')) * bump(lets, 0.06)} stock="STOCK" price="$200" expires="FRIDAY" />
           <G2 x={960} y={880} s={bump(dt, 0.1)} o={lt(dt, 0.4)}><Text size={44} color={C.red}>after that date, it expires</Text></G2>
         </Svg>
       </AbsoluteFill>
@@ -1343,6 +1343,7 @@ export const Ep51: React.FC = () => {
     const sv = w('c8d', 'saved');
     const ls = w('c8d', 'last');
     const sw = w('c8d', 'switch');
+    const fr = w('c8d', 'four');
     const of = w('c8d', 'off');
     q(on, 'pop', 0.6);
     q(sv, 'chime', 0.7);
