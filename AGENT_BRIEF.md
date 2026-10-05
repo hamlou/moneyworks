@@ -2,6 +2,25 @@
 
 You build ONE complete episode of the YouTube channel "Dave Explains Money": script, choreography, props, thumbnails and SEO, matching the approved LOOK exactly and the new v3 STORY rules exactly. The owner said: "I don't want any mistakes."
 
+## OWNER-APPROVED TOPICS ep61–75 (approved 1 Oct 2026 — do NOT ask again, do NOT change)
+| # | Title |
+|---|---|
+| 61 | Why Staying Loyal to Your Job Keeps You Poorer |
+| 62 | Why Prices End in .99 (And Why It Still Works on You) — owner LOVES this one |
+| 63 | Why Your "Free" Phone Costs $1,100 |
+| 64 | Why Your Friends Are Making You Broke |
+| 65 | Why Your Rewards Points Are Making You Poorer |
+| 66 | Why Free Shipping Makes You Spend More |
+| 67 | Why Everyone Online Looks Richer Than You |
+| 68 | Why Your Company Hides What Your Coworker Earns |
+| 69 | Why Your Phone Gets Slow Right When the New One Comes Out |
+| 70 | Why Restaurant Menus Trick You Into Spending More |
+| 71 | Why Loyal Customers Pay the Most |
+| 72 | Why "Limited Time Offer" Is Almost Never Limited |
+| 73 | Why Your Gift Cards End Up Worth Nothing |
+| 74 | Why Name Brands Cost Double for the Same Product |
+| 75 | Why Your "Money-Saving" Memberships Cost More Than They Save |
+
 ## Read first (mandatory, in this order)
 1. `PLAYBOOK.md` — **§0 (Retention & CTR v3) and §1c (title rule) first**, then the whole file. §0 overrides older rules where they conflict.
 2. Code templates (LOOK, cast, props, SFX, code patterns only — NOT script structure): `src/episodes/Ep50.tsx` (most mature), `Ep49.tsx`, `Ep29.tsx`. Copy their patterns: `G2`, `scene()`, `A()`, `w()`, `q()`, `P()`, `bump()`, `lt()`, chapter whoosh loop, SubReminder + subCues, end SubButton/Bell.
