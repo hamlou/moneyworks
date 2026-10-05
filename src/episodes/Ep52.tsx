@@ -1097,7 +1097,7 @@ export const Ep52: React.FC = () => {
           <Text y={110} size={26} color={C.ink}>SECRET SPOT</Text>
           </G2>
           {Array.from({length: 14}).map((_, i) => <Stick key={i} f={f} x={800 + (i % 7) * 130} y={640 + Math.floor(i / 7) * 250} s={0.5} seed={80 + i} keys={[{at: 0, pose: i % 2 ? 'celebrate' : 'carry', expr: 'money', look: 0}]} />)}
-          <G2 x={1200} y={900} s={bump(em, 0.16)} o={lt(em, 0.35)}><Stamp text="EMPTY BY TUESDAY" color={C.red} size={64} r={-4} /></G2>
+          <G2 x={1250} y={480} s={bump(em, 0.16)} o={lt(em, 0.0001)}><Stamp text="EMPTY BY TUESDAY" color={C.red} size={64} r={-4} /></G2>
           <G2 x={1200} y={300} s={P(A('c5b')) * bump(th, 0.1)}><Text size={44} color={GRAY}>1,000 buyers</Text></G2>
         </Svg>
       </AbsoluteFill>

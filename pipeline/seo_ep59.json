@@ -27,9 +27,14 @@
     "money explained simply",
     "dave explains money"
   ],
-  "hashtags": ["#retirement", "#401k", "#personalfinance"],
+  "hashtags": [
+    "#retirement",
+    "#401k",
+    "#personalfinance"
+  ],
   "pinned": "What age do YOU expect to retire? Drop your number below.",
   "thumb": "A",
   "thumb_question": "Why is Dave's retirement calculator showing 70 when his dad stopped at 62?",
-  "next": null
+  "next": null,
+  "thumb_text": "AGE 70"
 }
