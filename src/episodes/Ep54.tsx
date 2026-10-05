@@ -5,8 +5,9 @@ import {useT} from '../timing';
 import {ease, lerp, pop, shake} from '../anim';
 import {Stick, StickProps} from '../Stick';
 import {Board, Cam, ChapterCard, Captions, CHAPTER_FRAMES, Cue, DreamBg, DreamFrame, Interior, Progress, SceneItem, Scenes, Sfx, Street, SUB_FRAMES, Svg, Vignette, SubReminder, subCues} from '../fx';
-import {Bubble, Calendar, Clock, MoneyStack, Pencil, Stamp, Text, XMark} from '../props';
-import {Bell, Phone, SubButton} from '../props2';
+import {Bubble, Calendar, Clock, MoneyStack, Pencil, SourceTag, Stamp, Text, XMark} from '../props';
+import {Bar, Bell, Phone, Row, Sign, SubButton} from '../props2';
+import {People} from '../props35';
 import {Raccoon, SourceCard} from '../props3';
 import {BannerAd, DollarRule, DragonEgg, EnergyBar, GamePhone, GemDisplay, GemPack, GiftCard, PullCard, ScreenTimeIcon, SeasonPass} from '../props54';
 import {DamageMeter} from '../props53';
@@ -24,6 +25,14 @@ const G2: React.FC<{x?: number; y?: number; s?: number; r?: number; o?: number; 
   );
 
 const GRAY = '#5B6470';
+
+const Box: React.FC<{x: number; y: number; w: number; h: number; o?: number; s?: number; fill?: string; children?: React.ReactNode}> = ({x, y, w, h, o = 1, s = 1, fill = '#fff', children}) => (
+  <G2 x={x} y={y} o={o} s={s}>
+    <rect x={-w / 2 + 8} y={-h / 2 + 10} width={w} height={h} rx={24} fill="rgba(35,35,43,0.10)" />
+    <rect x={-w / 2} y={-h / 2} width={w} height={h} rx={24} fill={fill} stroke={C.ink} strokeWidth={6} />
+    {children}
+  </G2>
+);
 const money = (n: number) => '$' + Math.round(n).toLocaleString('en-US');
 
 export const Ep54: React.FC = () => {
@@ -181,22 +190,32 @@ export const Ep54: React.FC = () => {
       </AbsoluteFill>
     ));
   }
+  const T = (x: number, y: number, txt: string, size = 48, color: string = C.ink, s = 1, o = 1) => (
+    <G2 x={x} y={y} s={s} o={o}><Text size={size} color={color}>{txt}</Text></G2>
+  );
+  const Btn = (y: number, txt: string, fill: string, size = 30) => (
+    <g>
+      <rect x={-140} y={y - 40} width={280} height={80} rx={16} fill={fill} stroke={C.ink} strokeWidth={4} />
+      <Text y={y + 4} size={size} color="#fff">{txt}</Text>
+    </g>
+  );
+
   {
     const dr = w('o6', 'dragons');
     const hid = w('o6', 'hid');
-    q(dr, 'pop', 0.6);
-    q(hid, 'sting', 0.5);
+    q(dr, 'pop', 0.5);
+    q(hid, 'sting', 0.6);
     scene(A('o6'), () => (
       <AbsoluteFill>
         <Board />
         <Svg>
-          <DragonEgg x={600} y={500} s={1.4 * P(A('o6')) * bump(dr, 0.08)} glow={f >= dr ? 0.9 : 0} />
-          <G2 x={1200} y={340} s={bump(hid, 0.18)} o={lt(hid, 0.4)}>
-            <rect x={-180} y={-60} width={360} height={120} rx={20} fill={C.red} stroke={C.ink} strokeWidth={6} />
-            <Text y={0} size={50} color="#fff">HIDDEN</Text>
-          </G2>
-          <Dave f={f} x={1300} y={920} s={1.1} keys={[{at: 0, pose: 'point_l', expr: 'suspicious', look: -0.6}]} />
-          <DamageMeter x={1700} y={90} s={0.8} value="$0" />
+          <DragonEgg x={520} y={520} s={1.9 * P(A('o6')) * bump(dr, 0.08)} glow={f >= dr ? 0.9 : 0} />
+          <Box x={1100} y={460} w={560} h={340} s={P(A('o6')) * bump(hid, 0.14)} fill={C.yellow}>
+            <Text y={-90} size={40} color={GRAY}>the dragon's real price</Text>
+            <Text y={30} size={130} color={C.red}>$ ? ? ?</Text>
+          </Box>
+          <G2 x={1100} y={720} s={bump(hid, 0.18)} o={lt(hid, 0.4)}><Stamp text="THE GAME HID IT" color={C.red} size={52} r={-4} /></G2>
+          <Dave f={f} x={1560} y={930} s={1.1} flip keys={[{at: 0, pose: 'point_l', expr: 'suspicious', look: -0.6}]} />
         </Svg>
       </AbsoluteFill>
     ));
@@ -204,52 +223,62 @@ export const Ep54: React.FC = () => {
 
   // ============ CH1: Ten Gems Short ============
   {
-    const lv = w('c1b', 'level');
-    const one = lv;
-    const five = w('c1b', 'five');
-    const ten = w('c1b', 'ten');
-    q(one, 'ding', 0.5);
-    q(five, 'ding', 0.5);
-    q(ten, 'ding', 0.5);
+    const ins = w('c1a', 'install');
+    const ch = w('c1a', 'charge');
+    const bus = w('c1a', 'bus');
+    q(ins, 'click', 0.6);
+    q(ch, 'ding', 0.5);
+    q(bus, 'step', 0.5);
     scene(A('c1a'), () => (
       <AbsoluteFill>
         <Street f={f} />
         <Svg>
-          <GamePhone f={f} x={960} y={560} s={1.2} screen={
-            <>
-              <rect x={-140} y={-240} width={280} height={140} rx={20} fill="#9B2D2D" />
-              <Text y={-188} size={40} color={C.yellow}>LEVEL {f >= ten ? '10' : f >= five ? '5' : '1'}</Text>
-              <rect x={-100} y={-60} width={200} height={200} rx={16} fill="#5C4A8C" />
-              <Text y={40} size={80} color="#fff">🐉</Text>
-            </>
-          } />
-          <Dave f={f} x={440} y={920} s={1.1} keys={[{at: 0, pose: 'typing', expr: 'happy', look: 0.6}]} />
-          <Bubble x={440} y={400} s={P(A('c1a'))} text="free!" size={40} tail="down" />
-          <DamageMeter x={1700} y={90} s={0.8} value="$0" />
+          <GamePhone f={f} x={960} y={520} s={1.2 * P(A('c1a'))} screen={<><Text y={-200} size={34} color={C.yellow}>DRAGON QUEST</Text><DragonEgg y={-40} s={0.8} />{Btn(160, f >= ins ? 'INSTALLED' : 'INSTALL', C.green)}</>} />
+          <Dave f={f} x={420} y={930} s={1.15} keys={[{at: 0, pose: 'idle', expr: 'happy', look: 0.6}, {at: ins, pose: 'thumbs', expr: 'grin', look: 0.6}]} />
+          <G2 x={1480} y={420} s={P(A('c1a')) * bump(ch, 0.14)}><Stamp text="NO CARD. $0" color={C.green} size={56} r={-5} /></G2>
+          {T(1480, 620, 'day one', 48, C.ink, P(A('c1a')))}
         </Svg>
       </AbsoluteFill>
     ));
   }
   {
+    const l1 = w('c1b', 'one');
+    const l5 = w('c1b', 'five');
+    const l10 = w('c1b', 'ten');
+    const fr = w('c1b', 'free');
+    q(l1, 'pop', 0.5);
+    q(l5, 'pop2', 0.5);
+    q(l10, 'pop', 0.5);
+    q(fr, 'chime', 0.5);
+    scene(A('c1b'), () => (
+      <AbsoluteFill>
+        <Street f={f} />
+        <Svg>
+          <GamePhone f={f} x={960} y={520} s={1.2} screen={<><Text y={-190} size={40} color={C.yellow}>{f >= l10 ? 'LEVEL 10' : f >= l5 ? 'LEVEL 5' : 'LEVEL 1'}</Text><DragonEgg y={0} s={0.9} glow={f >= fr ? 0.6 : 0} /><EnergyBar y={200} s={0.9} level={f >= l10 ? 30 : f >= l5 ? 60 : 100} /></>} />
+          <Dave f={f} x={420} y={930} s={1.15} keys={[{at: 0, pose: 'celebrate', expr: 'grin', look: 0.6}]} />
+          {T(1480, 380, 'FREE', 80, C.green, P(A('c1b')) * bump(fr, 0.16))}
+          {T(1480, 500, 'FREE', 80, C.green, P(A('c1b')) * bump(fr + 10, 0.16), lt(fr + 10, 0.4))}
+          {T(1480, 620, 'FREE', 80, C.green, P(A('c1b')) * bump(fr + 20, 0.16), lt(fr + 20, 0.4))}
+        </Svg>
+      </AbsoluteFill>
+    ));
+  }
+  {
+    const tw = w('c1c', 'twelve');
     const boss = w('c1c', 'boss');
-    const empty = w('c1c', 'empty');
-    q(boss, 'thud', 0.6);
-    q(empty, 'buzz', 0.6);
+    const em = w('c1c', 'empty');
+    q(tw, 'pop', 0.5);
+    q(boss, 'sting', 0.6);
+    q(em, 'trombone', 0.5);
     scene(A('c1c'), () => (
       <AbsoluteFill>
         <Board />
         <Svg>
-          <GamePhone f={f} x={960} y={560} s={1.3} screen={
-            <>
-              <rect x={-140} y={-240} width={280} height={140} rx={20} fill="#9B2D2D" />
-              <Text y={-188} size={40} color={C.yellow}>LEVEL 12 BOSS</Text>
-              <Text y={0} size={120} color={C.red}>💀</Text>
-              <EnergyBar x={0} y={200} s={0.9} level={f >= empty ? 0 : 40} />
-            </>
-          } />
-          <Dave f={f} x={420} y={920} s={1.05} keys={[{at: boss, pose: 'shock', expr: 'shock', look: 0.6}]} sweat />
-          <XMark x={800} y={400} s={2.2 * P(boss) * bump(boss, 0.15)} />
-          <DamageMeter x={1700} y={90} s={0.8} value="$0" />
+          <GamePhone f={f} x={960} y={520} s={1.2} screen={<><Text y={-200} size={38} color={C.yellow}>LEVEL 12: BOSS</Text><Text y={-40} size={70} color={C.red}>{f >= boss ? 'YOU LOSE' : '. . .'}</Text><EnergyBar y={160} s={0.95} level={f >= em ? 0 : 20} /></>} />
+          <Dave f={f} x={420} y={930} s={1.15} keys={[{at: 0, pose: 'typing', expr: 'worried', look: 0.6}, {at: em, pose: 'facepalm', expr: 'sad', look: 0}]} sweat />
+          {T(1500, 420, 'again', 56, C.red, P(A('c1c')) * bump(boss + 14, 0.14), lt(boss, 0.4))}
+          {T(1500, 520, 'and again', 56, C.red, P(A('c1c')) * bump(boss + 30, 0.14), lt(boss + 20, 0.4))}
+          <G2 x={1500} y={700} s={bump(em, 0.18)} o={lt(em, 0.35)}><Stamp text="ENERGY: 0" color={C.red} size={56} r={-5} /></G2>
         </Svg>
       </AbsoluteFill>
     ));
@@ -257,46 +286,47 @@ export const Ep54: React.FC = () => {
   {
     const wait = w('c1d', 'wait');
     const ref = w('c1d', 'refill');
-    q(wait, 'pop', 0.5);
-    q(ref, 'pop', 0.5);
+    q(wait, 'tick', 0.5);
+    q(ref, 'ding', 0.6);
     scene(A('c1d'), () => (
       <AbsoluteFill>
         <Board />
         <Svg>
-          <GamePhone f={f} x={960} y={560} s={1.3} screen={
-            <>
-              <EnergyBar x={0} y={-180} s={0.9} level={0} />
-              <rect x={-140} y={-40} width={280} height={80} rx={16} fill={GRAY} stroke={C.ink} strokeWidth={4} />
-              <Text y={-6} size={32} color="#fff">{f >= wait ? 'WAIT 4 HOURS' : ''}</Text>
-              <rect x={-140} y={80} width={280} height={80} rx={16} fill={C.green} stroke={C.ink} strokeWidth={4} />
-              <Text y={114} size={f >= ref ? 32 : 28} color="#fff">{f >= ref ? 'REFILL: 200 GEMS' : ''}</Text>
-            </>
-          } />
-          <DamageMeter x={1700} y={90} s={0.8} value="$0" />
+          {T(960, 140, 'two choices', 54, C.ink, P(A('c1d')))}
+          <Box x={500} y={520} w={600} h={460} s={P(A('c1d')) * bump(wait, 0.1)}>
+            <Text y={-150} size={44} color={GRAY}>CHOICE 1</Text>
+            <Text y={150} size={60} color={C.ink}>WAIT 4 HOURS</Text>
+          </Box>
+          <Clock f={f} x={500} y={500} s={1.3 * P(A('c1d'))} />
+          <Box x={1300} y={520} w={600} h={460} s={P(A('c1d')) * bump(ref, 0.14)} fill={f >= ref ? C.yellow : '#fff'}>
+            <Text y={-150} size={44} color={GRAY}>CHOICE 2</Text>
+            <Text y={150} size={56} color={C.red}>REFILL: 200 GEMS</Text>
+          </Box>
+          <GemDisplay x={1300} y={500} s={2.4 * P(A('c1d'))} gems={200} highlight={f >= ref ? 1 : 0} />
         </Svg>
       </AbsoluteFill>
     ));
   }
   {
-    const one90 = w('c1e', 'one');
-    const short = w('c1e', 'short');
-    const sm = w('c1e', 'smallest');
-    q(one90, 'tick', 0.5);
-    q(short, 'buzz', 0.7);
-    q(sm, 'cash', 0.5);
+    const nn = w('c1e', 'ninety');
+    const ten = w('c1e', 'ten');
+    const four = w('c1e', 'four');
+    q(nn, 'pop', 0.5);
+    q(ten, 'buzz', 0.6);
+    q(four, 'cash', 0.6);
     scene(A('c1e'), () => (
       <AbsoluteFill>
         <Board />
         <Svg>
-          <GemDisplay x={460} y={360} s={1.6 * P(A('c1e'))} gems={190} highlight={f >= one90 ? 1 : 0} />
-          <G2 x={1100} y={360} s={P(A('c1e')) * bump(short, 0.2)}>
-            <Text size={80} color={f >= short ? C.red : C.ink}>need: 200</Text>
-          </G2>
-          <G2 x={460} y={660} s={P(A('c1e'))} o={lt(sm, 0.4)}>
-            <GemPack price="$4.99" gems={300} />
-          </G2>
-          <Dave f={f} x={1300} y={920} s={1.05} keys={[{at: 0, pose: 'think', expr: 'worried', look: -0.6}]} />
-          <DamageMeter x={1700} y={90} s={0.8} value="$0" />
+          <Dave f={f} x={320} y={930} s={1.1} keys={[{at: 0, pose: 'think', expr: 'worried', look: 0.6}, {at: ten, pose: 'shock', expr: 'angry', look: 0.6}]} />
+          <Box x={820} y={420} w={520} h={320} s={P(A('c1e')) * bump(nn, 0.1)}>
+            <Text y={-90} size={40} color={GRAY}>Dave has</Text>
+            <Text y={20} size={110} color={C.navy}>190</Text>
+            <Text y={110} size={36} color={GRAY}>needs 200</Text>
+          </Box>
+          <G2 x={820} y={700} s={bump(ten, 0.2)} o={lt(ten, 0.35)}><Stamp text="10 SHORT!" color={C.red} size={60} r={-5} /></G2>
+          <GemPack x={1420} y={500} s={1.5 * P(A('c1e')) * bump(four, 0.1)} price="$4.99" gems={500} />
+          {T(1420, 860, 'the smallest pack', 42, C.ink, P(A('c1e')), lt(four, 0.4))}
         </Svg>
       </AbsoluteFill>
     ));
@@ -304,47 +334,53 @@ export const Ep54: React.FC = () => {
   {
     const park = w('c1f', 'park');
     const stop = w('c1f', 'stops');
-    q(park, 'pop', 0.5);
-    q(stop, 'thud', 0.6);
-    scene(A('c1f'), () => (
-      <AbsoluteFill>
-        <DreamBg />
-        <Svg>
-          <G2 x={200} y={180} s={P(A('c1f'))}><Text size={48} color="#fff" stroke={C.ink} sw={8}>THEME PARK</Text></G2>
-          <rect x={-100} y={0} width={1200} height={280} fill="#8B4513" stroke={C.ink} strokeWidth={6} />
-          <path d="M 100 50 Q 200 -50 300 50 Q 400 150 500 50 Q 600 -50 700 50" fill="none" stroke={C.red} strokeWidth={12} />
-          {[100, 300, 500, 700].map((x) => <circle key={x} cx={x} cy={50} r={26} fill={C.yellow} stroke={C.ink} strokeWidth={5} />)}
-          <Dave f={f} x={500} y={200} s={0.5} keys={[{at: 0, pose: 'celebrate', expr: 'happy'}]} />
-          <G2 x={900} y={500} s={bump(stop, 0.18)} o={lt(stop, 0.4)}>
-            <rect x={-120} y={-60} width={240} height={120} rx={20} fill={C.red} stroke={C.ink} strokeWidth={6} />
-            <Text y={0} size={48} color="#fff">PAY $1</Text>
-          </G2>
-          <DreamFrame label="" />
-        </Svg>
-      </AbsoluteFill>
-    ));
+    const dl = w('c1f', 'dollar');
+    q(park, 'dream', 0.5);
+    q(stop, 'clank', 0.6);
+    q(dl, 'coin', 0.6);
+    scene(A('c1f'), () => {
+      const k = Math.min(1, ease(f, A('c1f'), stop));
+      return (
+        <AbsoluteFill>
+          <DreamBg />
+          <Svg>
+            {T(960, 200, 'THEME PARK: FREE ENTRY', 54, C.navy, P(A('c1f')) * bump(park, 0.08))}
+            <path d="M 200 860 L 900 380 Q 1000 320 1100 380 L 1720 860" fill="none" stroke={C.ink} strokeWidth={14} strokeLinejoin="round" />
+            {[300, 480, 660, 840, 1160, 1340, 1520].map((x) => <path key={x} d={`M ${x} 860 V ${x < 1000 ? 860 - (x - 200) * 0.686 : 380 + (x - 1100) * 0.774}`} stroke={C.ink} strokeWidth={6} />)}
+            <G2 x={lerp(260, 620, k)} y={lerp(800, 552, k)} r={-34}>
+              <rect x={-90} y={-70} width={180} height={70} rx={14} fill={C.red} stroke={C.ink} strokeWidth={6} />
+              <Dave f={f} x={0} y={-60} s={0.5} keys={[{at: 0, pose: 'celebrate', expr: 'happy'}, {at: stop, pose: 'shock', expr: 'shock'}]} />
+            </G2>
+            <G2 x={1160} y={640} s={bump(stop, 0.18)} o={lt(stop, 0.35)}>
+              <rect x={-200} y={-90} width={400} height={180} rx={24} fill={C.yellow} stroke={C.ink} strokeWidth={6} />
+              <Text y={-20} size={44} color={C.ink}>to keep going:</Text>
+              <Text y={46} size={64} color={C.red}>PAY $1</Text>
+            </G2>
+          </Svg>
+          <DreamFrame label="THE ROLLER COASTER" />
+        </AbsoluteFill>
+      );
+    });
   }
   {
     const buy = w('c1g', 'buy');
-    const tap = w('c1g', 'tap');
-    const told = w('c1g', 'told');
+    const five = w('c1g', 'five');
     const pays = w('c1g', 'pays');
-    q(buy, 'click', 0.6);
-    q(told, 'sting', 0.6);
-    q(pays, 'stamp', 0.7);
+    q(buy, 'click', 0.7);
+    q(five, 'cash', 0.6);
+    q(pays, 'stamp', 0.8);
     scene(A('c1g'), () => (
       <AbsoluteFill>
         <Board />
         <Svg>
-          <GamePhone f={f} x={600} y={560} s={1.2} screen={
-            <>
-              <rect x={-120} y={-200} width={240} height={120} rx={16} fill={f >= buy ? C.green : GRAY} stroke={C.ink} strokeWidth={4} />
-              <Text y={-146} size={f >= buy ? 44 : 38} color="#fff">{f >= buy ? '$4.99' : 'BUY'}</Text>
-            </>
-          } />
-          <Dave f={f} x={1300} y={920} s={1.1} keys={[{at: 0, pose: 'typing', expr: 'neutral', look: -0.6}, {at: told, pose: 'shock', expr: 'worried', look: 0.6}]} />
-          <G2 x={1300} y={380} s={bump(pays, 0.18)} o={lt(pays, 0.4)}><Stamp text="HE PAYS" color={C.red} size={66} r={-6} /></G2>
-          <DamageMeter x={1700} y={90} s={0.8} value={f >= w('c1g', 'five') ? '$4.99' : '$0'} flash={f >= w('c1g', 'five') ? 1 : 0} />
+          <GamePhone f={f} x={520} y={520} s={1.15} screen={<><GemPack y={-60} s={0.8} price="$4.99" gems={500} />{Btn(190, f >= buy ? 'PAID' : 'BUY', C.green, 36)}</>} />
+          <Dave f={f} x={980} y={930} s={1.1} keys={[{at: 0, pose: 'shrug', expr: 'neutral', look: -0.6}]} />
+          <G2 x={980} y={380} s={P(A('c1g')) * bump(five, 0.12)}><Bubble text="five bucks, whatever" size={40} tail="down" /></G2>
+          <Box x={1480} y={520} w={480} h={380} s={P(A('c1g')) * bump(pays, 0.14)} fill={f >= pays ? C.yellow : '#fff'}>
+            <Text y={-120} size={34} color={GRAY}>what the game</Text>
+            <Text y={-70} size={34} color={GRAY}>just learned:</Text>
+            <Text y={50} size={90} color={C.red}>{f >= pays ? 'HE PAYS' : '? ? ?'}</Text>
+          </Box>
         </Svg>
       </AbsoluteFill>
     ));
@@ -352,175 +388,180 @@ export const Ep54: React.FC = () => {
 
   // ============ CH2: Funny Money ============
   {
-    const not = w('c2b', 'nothing');
-    const egg = w('c2b', 'egg');
-    q(not, 'pop', 0.5);
-    q(egg, 'pop', 0.5);
+    const sh = w('c2a', 'shop');
+    const wd = w('c2a', 'weird');
+    q(sh, 'click', 0.6);
+    q(wd, 'pop2', 0.5);
     scene(A('c2a'), () => (
       <AbsoluteFill>
-        <Board />
+        <Interior />
         <Svg>
-          <GamePhone f={f} x={960} y={560} s={1.4} screen={
-            <>
-              <Text y={-240} size={32} color={C.yellow}>SHOP</Text>
-              <rect x={-120} y={-140} width={240} height={100} rx={16} fill="#3A4A8C" stroke={C.ink} strokeWidth={4} />
-              <circle cx={-60} cy={-90} r={24} fill={C.blue} stroke="#fff" strokeWidth={4} />
-              <Text x={0} y={-86} size={32} color="#fff">{f >= egg ? '300' : ''}</Text>
-              <rect x={-120} y={-20} width={240} height={100} rx={16} fill="#3A4A8C" stroke={C.ink} strokeWidth={4} />
-              <circle cx={-60} cy={30} r={24} fill={C.blue} stroke="#fff" strokeWidth={4} />
-              <Text x={0} y={34} size={32} color="#fff">500</Text>
-            </>
-          } />
-          <G2 x={960} y={160} s={P(A('c2a')) * bump(not, 0.15)}><Text size={54} color={f >= not ? C.red : C.ink}>NO DOLLARS</Text></G2>
-          <DamageMeter x={1700} y={90} s={0.8} value="$4.99" />
+          <GamePhone f={f} x={1000} y={540} s={1.25 * P(A('c2a')) * bump(sh, 0.06)} screen={<><Text y={-220} size={40} color={C.yellow}>SHOP</Text><GemDisplay y={-110} s={1.5} gems={320} /><GemDisplay y={10} s={1.5} gems={50} /><GemDisplay y={130} s={1.5} gems={900} /></>} />
+          <Dave f={f} x={540} y={940} s={1.15} keys={[{at: 0, pose: 'idle', expr: 'neutral', look: 0.6}, {at: wd, pose: 'think', expr: 'suspicious', look: 0.6}]} />
+          <G2 x={540} y={480} s={bump(wd, 0.16)} o={lt(wd, 0.35)}><Bubble text="weird..." size={46} tail="down" /></G2>
         </Svg>
       </AbsoluteFill>
     ));
   }
   {
-    const only = w('c2c', 'only');
-    const best = w('c2c', 'best');
-    q(only, 'pop', 0.5);
-    q(best, 'stamp', 0.6);
+    const no = w('c2b', 'nothing');
+    const egg = w('c2b', 'egg');
+    const ff = w('c2b', 'fifty');
+    q(no, 'buzz', 0.5);
+    q(egg, 'pop', 0.5);
+    q(ff, 'pop2', 0.5);
+    scene(A('c2b'), () => (
+      <AbsoluteFill>
+        <Board />
+        <Svg>
+          {T(860, 160, 'nothing costs dollars', 56, C.red, P(A('c2b')) * bump(no, 0.1))}
+          <DragonEgg x={420} y={540} s={1.5 * P(A('c2b')) * bump(egg, 0.1)} />
+          <GemDisplay x={420} y={800} s={2.0 * P(A('c2b')) * bump(egg, 0.12)} gems={320} highlight={f >= egg ? 1 : 0} />
+          <G2 x={1040} y={540} s={1.5 * P(A('c2b')) * bump(ff, 0.1)}>
+            <path d="M -70 0 L 10 -70 L 10 -30 L 80 -30 L 80 30 L 10 30 L 10 70 Z" fill={C.blue} stroke={C.ink} strokeWidth={6} strokeLinejoin="round" />
+          </G2>
+          {T(1040, 380, 'speed boost', 40, GRAY, P(A('c2b')))}
+          <GemDisplay x={1040} y={800} s={2.0 * P(A('c2b')) * bump(ff, 0.12)} gems={50} highlight={f >= ff ? 1 : 0} />
+          <Dave f={f} x={1560} y={930} s={1.1} flip keys={[{at: 0, pose: 'think', expr: 'think', look: -0.6}]} />
+        </Svg>
+      </AbsoluteFill>
+    ));
+  }
+  {
+    const pk = w('c2c', 'packs');
+    const bst = w('c2c', 'best');
+    q(pk, 'pop', 0.5);
+    q(bst, 'ding', 0.6);
     scene(A('c2c'), () => (
       <AbsoluteFill>
         <Board />
         <Svg>
-          <GemPack x={400} y={480} s={0.9 * P(A('c2c'))} price="$4.99" gems={300} />
-          <GemPack x={960} y={480} s={0.9 * P(A('c2c'))} price="$19.99" gems={1400} bonus="200" best={f >= best ? 1 : 0} />
-          <GemPack x={1520} y={480} s={0.9 * P(A('c2c'))} price="$99.99" gems={8080} bonus="1600" />
-          <G2 x={960} y={160} s={bump(only, 0.14)}><Text size={52}>GEMS ONLY</Text></G2>
-          <DamageMeter x={1700} y={90} s={0.8} value="$4.99" />
+          {T(860, 150, 'gems only come in packs', 54, C.ink, P(A('c2c')) * bump(pk, 0.08))}
+          <GemPack x={400} y={560} s={1.25 * P(A('c2c'))} price="$4.99" gems={500} />
+          <GemPack x={860} y={560} s={1.45 * P(A('c2c')) * bump(bst, 0.1)} price="$19.99" gems={2400} best={1} />
+          <GemPack x={1320} y={560} s={1.25 * P(A('c2c'))} price="$99.99" gems={8080} />
         </Svg>
       </AbsoluteFill>
     ));
   }
   {
-    const country = w('c2d', 'country');
-    q(country, 'pop', 0.5);
+    const fo = w('c2d', 'foreign');
+    const th = w('c2d', 'three');
+    const pa = w('c2d', 'paper');
+    q(fo, 'dream', 0.5);
+    q(th, 'flip', 0.5);
+    q(pa, 'paper', 0.6);
     scene(A('c2d'), () => (
       <AbsoluteFill>
         <DreamBg />
         <Svg>
-          <G2 x={960} y={200} s={P(A('c2d'))}><Text size={50} color="#fff" stroke={C.ink} sw={8}>FUNNY MONEY LAND</Text></G2>
-          <circle cx={460} cy={520} r={100} fill="#5C4A8C" stroke={C.ink} strokeWidth={8} />
-          <Text x={460} y={528} size={80} color="#fff">💎</Text>
-          <path d="M 620 520 L 840 520 M 810 490 L 840 520 L 810 550" stroke="#fff" strokeWidth={12} strokeLinecap="round" strokeLinejoin="round" />
-          <rect x={920} y={420} width={200} height={200} rx={20} fill={C.green} stroke={C.ink} strokeWidth={8} />
-          <Text x={1020} y={528} size={80} color="#fff">$</Text>
-          <Dave f={f} x={1500} y={920} s={1.1} keys={[{at: 0, pose: 'think', expr: 'worried', look: -0.6}]} />
-          <DreamFrame label="" />
+          {T(960, 200, 'FUNNY MONEY LAND', 56, C.navy, P(A('c2d')) * bump(fo, 0.08))}
+          {[0, 1, 2, 3].map((i) => (
+            <G2 key={i} x={420 + i * 110} y={520 + (i % 2) * 40} r={-12 + i * 8} s={1.3 * P(A('c2d'))}>
+              <rect x={-90} y={-50} width={180} height={100} rx={10} fill={['#F78FB3', '#63CDDA', '#F5CD79', '#B8E994'][i]} stroke={C.ink} strokeWidth={5} />
+              <Text y={4} size={40}>{['Z 50', 'Q 320', 'Z 9', 'Q 75'][i]}</Text>
+            </G2>
+          ))}
+          <Dave f={f} x={1160} y={930} s={1.15} keys={[{at: 0, pose: 'think', expr: 'think', look: -0.6}, {at: th, pose: 'present', expr: 'happy', look: 0.6}]} />
+          <Stick f={f} x={1560} y={930} s={1.1} acc={['ponytail']} seed={44} flip keys={[{at: 0, pose: 'idle', expr: 'grin', look: -0.6}]} />
+          {T(1360, 400, f >= th ? 'day 3: just hand it over' : 'day 1: do the math', 44, f >= th ? C.red : C.ink, bump(th, 0.12))}
         </Svg>
+        <DreamFrame label="FOREIGN COUNTRY" />
       </AbsoluteFill>
     ));
   }
   {
-    const ftc = w('c2e', 'f');
-    const gen = w('c2e', 'million');
-    q(ftc, 'paper', 0.6);
-    q(gen, 'stamp', 0.6);
+    const fd = w('c2e', 'fined');
+    const ml = w('c2e', 'million');
+    q(fd, 'paper', 0.6);
+    q(ml, 'stamp', 0.8);
     scene(A('c2e'), () => (
       <AbsoluteFill>
         <Board />
         <Svg>
-          <G2 x={960} y={160} s={P(A('c2e')) * bump(ftc, 0.1)}><Text size={48} color={C.red}>FTC 2025</Text></G2>
-          <G2 x={960} y={500} s={P(A('c2e'))}>
-            <rect x={-500} y={-180} width={1000} height={360} rx={24} fill="#fff" stroke={C.ink} strokeWidth={6} />
-            <Text y={-110} size={40}>virtual currency layers</Text>
-            <Text y={-50} size={40}>+ unusual exchange rates</Text>
-            <Text y={10} size={40}>= players don't know the</Text>
-            <Text y={70} size={f >= gen ? 56 : 44} color={f >= gen ? C.red : C.ink}>REAL DOLLAR COST</Text>
-          </G2>
-          <G2 x={960} y={860} s={0.9} o={lt(w('c2f', 'real'), 0.4)}><Text size={28} color={GRAY}>Source: FTC Jan 2025</Text></G2>
-          <DamageMeter x={1700} y={90} s={0.8} value="$4.99" />
+          <SourceCard x={480} y={540} s={0.95 * P(A('c2e')) * bump(fd, 0.06)} org="FTC" sub="Federal Trade Commission" title={['Genshin Impact', 'settlement']} stat="JAN 2025" />
+          <Box x={1280} y={500} w={720} h={380} s={P(A('c2e')) * bump(ml, 0.12)} fill={f >= ml ? C.yellow : '#fff'}>
+            <Text y={-110} size={40} color={GRAY}>fine for the game's maker</Text>
+            <Text y={30} size={120} color={C.red}>{f >= ml ? '$20 MILLION' : '$ ? MILLION'}</Text>
+          </Box>
+          <SourceTag f={f} at={fd} text="FTC, Jan 2025: Genshin Impact developer to pay $20 million" />
         </Svg>
       </AbsoluteFill>
     ));
   }
   {
-    const said = w('c2f', 'said');
-    q(said, 'pop', 0.5);
+    const ly = w('c2f', 'layers');
+    const hd = w('c2f', 'hid');
+    q(ly, 'pop', 0.5);
+    q(hd, 'sting', 0.6);
     scene(A('c2f'), () => (
       <AbsoluteFill>
         <Board />
         <Svg>
-          <G2 x={960} y={400} s={P(A('c2f'))}>
-            <rect x={-460} y={-160} width={920} height={320} rx={24} fill="#FFF3C4" stroke={C.ink} strokeWidth={6} />
-            <Text y={-80} size={44}>odd exchange rates</Text>
-            <Text y={-20} size={44}>so you can't compute</Text>
-            <Text y={40} size={44}>the price in your head</Text>
-            <Text y={100} size={48} color={C.red}>BY DESIGN</Text>
-          </G2>
-          <DamageMeter x={1700} y={90} s={0.8} value="$4.99" />
+          {T(960, 150, 'layers of virtual money', 54, C.ink, P(A('c2f')) * bump(ly, 0.08))}
+          <Box x={360} y={520} w={380} h={240} s={P(A('c2f'))} fill="#E3F6EA"><Text y={-30} size={40} color={GRAY}>real</Text><Text y={50} size={80} color={C.green}>$</Text></Box>
+          {T(640, 520, '>', 90, C.ink, P(A('c2f')))}
+          <Box x={920} y={520} w={380} h={240} s={P(A('c2f'))} fill="#E8E4F6"><Text y={-30} size={40} color={GRAY}>gems</Text><Text y={50} size={70} color="#5C4A8C">8,080</Text></Box>
+          {T(1200, 520, '>', 90, C.ink, P(A('c2f')))}
+          <Box x={1480} y={520} w={380} h={240} s={P(A('c2f'))} fill="#FFE3EA"><Text y={-30} size={40} color={GRAY}>pulls</Text><Text y={50} size={70} color={C.red}>x 160</Text></Box>
+          <G2 x={960} y={820} s={bump(hd, 0.16)} o={lt(hd, 0.35)}><Stamp text="REAL PRICE: HIDDEN" color={C.red} size={56} r={-3} /></G2>
+          <SourceTag f={f} at={ly} text="FTC complaint (2025): multi-tiered virtual currency obscured real costs" />
         </Svg>
       </AbsoluteFill>
     ));
   }
   {
-    const val = w('c2g', 'value');
     const nin = w('c2g', 'nineteen');
-    q(val, 'pop', 0.5);
-    q(nin, 'cash', 0.7);
+    const lf = w('c2g', 'leftovers');
+    q(nin, 'cash', 0.6);
+    q(lf, 'boing', 0.5);
     scene(A('c2g'), () => (
       <AbsoluteFill>
         <Board />
         <Svg>
-          <GamePhone f={f} x={600} y={560} s={1.1} screen={
-            <>
-              <Text y={-240} size={28} color={C.yellow}>BEST VALUE</Text>
-              <rect x={-120} y={-140} width={240} height={80} rx={16} fill={C.green} stroke={C.ink} strokeWidth={4} />
-              <Text y={-106} size={36} color="#fff">{f >= nin ? '$19.99' : ''}</Text>
-            </>
-          } />
-          <Dave f={f} x={1300} y={920} s={1.1} keys={[{at: 0, pose: 'typing', expr: 'neutral', look: -0.6}]} />
-          <DamageMeter x={1700} y={90} s={0.8} value={f >= nin ? '$24.98' : '$4.99'} flash={f >= nin ? 1 : 0} />
+          <GemPack x={460} y={540} s={1.6 * P(A('c2g')) * bump(nin, 0.1)} price="$19.99" gems={2400} best={1} />
+          <Dave f={f} x={980} y={930} s={1.1} keys={[{at: 0, pose: 'typing', expr: 'neutral', look: -0.6}, {at: lf, pose: 'shrug', expr: 'suspicious', look: 0.6}]} />
+          <Box x={1460} y={500} w={520} h={380} s={P(A('c2g')) * bump(lf, 0.14)} fill={f >= lf ? C.yellow : '#fff'}>
+            <Text y={-120} size={38} color={GRAY}>after shopping</Text>
+            <Text y={0} size={110} color="#5C4A8C">{f >= lf ? '80' : '?'}</Text>
+            <Text y={110} size={40} color={C.red}>gems left over</Text>
+          </Box>
         </Svg>
       </AbsoluteFill>
     ));
   }
   {
-    const guess = A('c2h');
-    const ticking = guess + 30;
-    q(guess + 4, 'pop', 0.6);
-    q(ticking, 'tick', 0.4);
-    scene(guess, () => (
+    const qk = w('c2h', 'quick');
+    const hn = w('c2h', 'hundred');
+    const cm = w('c2h', 'comments');
+    q(qk, 'pop', 0.6);
+    for (let i = 0; i < 8; i++) q(qk + 20 + i * 30, 'tick', 0.35);
+    q(cm, 'key', 0.5);
+    scene(A('c2h'), () => (
       <AbsoluteFill>
         <Board />
         <Svg>
-          <G2 x={960} y={540} s={P(guess)}>
-            <rect x={-520} y={-300} width={1040} height={600} rx={30} fill="#fff" stroke={C.ink} strokeWidth={6} />
-            <Text y={-230} size={42} ls={6} color={C.red}>QUICK GUESS</Text>
-            <Text y={-160} size={40}>on a normal day</Text>
-            <Text y={-100} size={40}>out of every 100 people</Text>
-            <Text y={-40} size={40}>playing games like this</Text>
-            <Text y={30} size={46} color={C.navy}>how many pay anything?</Text>
-            <Text x={-200} y={170} size={160} color={C.ink}>?</Text>
-            <g transform="translate(280,170)">
-              <circle r={90} fill="#fff" stroke={C.ink} strokeWidth={6} />
-              <line x1={0} y1={0} x2={Math.sin(((f - ticking) * 6 * Math.PI) / 180) * 70} y2={-Math.cos(((f - ticking) * 6 * Math.PI) / 180) * 70} stroke={C.red} strokeWidth={8} strokeLinecap="round" />
-              <circle r={12} fill={C.ink} />
-            </g>
-          </G2>
-          <DamageMeter x={1700} y={90} s={0.8} value="$24.98" />
+          {T(960, 150, 'QUICK GUESS', 72, C.red, P(A('c2h')) * bump(qk, 0.12))}
+          <Box x={1040} y={480} w={980} h={400} s={P(A('c2h')) * bump(hn, 0.06)} fill={C.yellow}>
+            <Text y={-130} size={40} color={GRAY}>out of every 100 players, on a normal day</Text>
+            <Text y={-70} size={40} color={GRAY}>how many pay anything at all?</Text>
+            <Text y={90} size={170} color={C.ink}>? / 100</Text>
+          </Box>
+          <Clock f={f * 6} x={300} y={480} s={1.5 * P(A('c2h'))} />
+          {T(960, 800, 'write your number in the comments', 46, C.navy, bump(cm, 0.1), lt(cm, 0.4))}
         </Svg>
       </AbsoluteFill>
     ));
   }
   {
     const sea = w('c2i', 'season');
-    q(sea, 'pop', 0.6);
+    q(sea, 'ding', 0.7);
     scene(A('c2i'), () => (
       <AbsoluteFill>
-        <Board />
+        <Interior />
         <Svg>
-          <GamePhone f={f} x={960} y={560} s={1.4} screen={
-            <>
-              <Text y={-240} size={32} color={C.yellow}>{f >= sea ? 'SEASON 3 STARTS!' : ''}</Text>
-              <rect x={-140} y={-140} width={280} height={100} rx={16} fill="#2A2D4A" stroke={C.ink} strokeWidth={4} />
-              <Text y={-86} size={32} color="#fff">PASS: $9.99</Text>
-            </>
-          } glow={f >= sea ? 0.7 : 0} />
-          <DamageMeter x={1700} y={90} s={0.8} value="$24.98" />
+          <GamePhone f={f} x={1000} y={540} s={1.2 * P(A('c2i'))} glow={f >= sea ? 0.8 : 0} screen={<><Text y={-180} size={30} color="#fff">NEW MESSAGE</Text><rect x={-140} y={-110} width={280} height={220} rx={20} fill="#2A2D4A" stroke={C.yellow} strokeWidth={5} /><Text y={-40} size={38} color={C.yellow}>SEASON 3</Text><Text y={30} size={38} color={C.yellow}>STARTS NOW</Text></>} />
+          <Dave f={f} x={540} y={940} s={1.15} keys={[{at: 0, pose: 'relax', expr: 'tired', look: 0.6}, {at: sea, pose: 'shock', expr: 'shock', look: 0.6}]} />
         </Svg>
       </AbsoluteFill>
     ));
@@ -528,130 +569,137 @@ export const Ep54: React.FC = () => {
 
   // ============ CH3: The Chore Chart You Bought ============
   {
-    const pass = w('c3a', 'pass');
-    const hundred = w('c3a', 'hundred');
-    q(pass, 'pop', 0.5);
-    q(hundred, 'pop', 0.5);
+    const ps = w('c3a', 'pass');
+    const nn = w('c3a', 'nine');
+    const hn = w('c3a', 'hundred');
+    q(ps, 'pop', 0.5);
+    q(nn, 'cash', 0.6);
+    q(hn, 'ding', 0.5);
     scene(A('c3a'), () => (
       <AbsoluteFill>
         <Board />
         <Svg>
-          <SeasonPass x={960} y={560} s={1.1 * P(A('c3a'))} tier={f >= hundred ? 15 : 0} />
-          <G2 x={960} y={160} s={bump(pass, 0.12)}><Text size={50}>SEASON PASS</Text></G2>
-          <DamageMeter x={1700} y={90} s={0.8} value={f >= w('c3a', 'nine') ? '$34.97' : '$24.98'} flash={f >= w('c3a', 'nine') ? 1 : 0} />
+          <SeasonPass x={620} y={520} s={1.5 * P(A('c3a')) * bump(ps, 0.06)} tier={0} />
+          <Box x={1420} y={380} w={440} h={240} s={P(A('c3a')) * bump(nn, 0.14)} fill={C.yellow}><Text y={-50} size={38} color={GRAY}>price</Text><Text y={40} size={90} color={C.red}>$9.99</Text></Box>
+          <Box x={1420} y={680} w={440} h={240} s={P(A('c3a')) * bump(hn, 0.12)}><Text y={-50} size={52} color={C.navy}>100 rewards</Text><Text y={40} size={44} color={C.ink}>over 30 days</Text></Box>
         </Svg>
       </AbsoluteFill>
     ));
   }
   {
-    const earn = w('c3b', 'earn');
-    const play = w('c3b', 'playing');
-    q(earn, 'pop', 0.5);
-    q(play, 'key', 0.5);
+    const py = w('c3b', 'pay');
+    const pl = w('c3b', 'playing');
+    const ev = w('c3b', 'every');
+    q(py, 'buzz', 0.5);
+    q(pl, 'pop', 0.5);
+    q(ev, 'stamp', 0.7);
     scene(A('c3b'), () => (
       <AbsoluteFill>
         <Board />
         <Svg>
-          <G2 x={480} y={360} s={P(A('c3b'))}>
-            <rect x={-200} y={-100} width={400} height={200} rx={20} fill={C.yellow} stroke={C.ink} strokeWidth={6} />
-            <Text y={-40} size={44}>YOU PAID</Text>
-            <Text y={20} size={50} color={C.red}>$9.99</Text>
-          </G2>
-          <path d="M 740 360 L 900 360 M 870 330 L 900 360 L 870 390" stroke={C.ink} strokeWidth={10} strokeLinecap="round" strokeLinejoin="round" opacity={lt(earn, 0.4)} />
-          <G2 x={1280} y={360} s={P(A('c3b'))} o={lt(earn, 0.4)}>
-            <rect x={-240} y={-100} width={480} height={200} rx={20} fill="#fff" stroke={C.ink} strokeWidth={6} />
-            <Text y={-10} size={44}>EARN REWARDS</Text>
-            <Text y={40} size={40} color={C.navy}>by playing daily</Text>
-          </G2>
-          <Dave f={f} x={420} y={920} s={1.0} keys={[{at: 0, pose: 'typing', expr: 'neutral', look: 0.6}]} />
-          <DamageMeter x={1700} y={90} s={0.8} value="$34.97" />
+          <Box x={460} y={420} w={560} h={300} s={P(A('c3b')) * bump(py, 0.08)} fill="#FFE3EA">
+            <Text y={-60} size={44} color={GRAY}>you PAID $9.99</Text>
+            <Text y={40} size={56} color={C.red}>rewards: 0</Text>
+          </Box>
+          {T(840, 420, '>', 100, C.ink, P(A('c3b')))}
+          <Box x={1240} y={420} w={600} h={300} s={P(A('c3b')) * bump(pl, 0.1)} fill="#E3F6EA">
+            <Text y={-60} size={44} color={GRAY}>you EARN them</Text>
+            <Text y={40} size={56} color={C.green}>by playing</Text>
+          </Box>
+          <Dave f={f} x={460} y={950} s={0.95} keys={[{at: 0, pose: 'typing', expr: 'tired', look: 0.6}]} />
+          <G2 x={1180} y={800} s={bump(ev, 0.16)} o={lt(ev, 0.35)}><Stamp text="EVERY SINGLE DAY" color={C.red} size={60} r={-3} /></G2>
         </Svg>
       </AbsoluteFill>
     ));
   }
   {
-    const miss = w('c3c', 'miss');
-    const ends = w('c3c', 'ends');
-    q(miss, 'buzz', 0.6);
-    q(ends, 'thud', 0.6);
+    const ms = w('c3c', 'miss');
+    const en = w('c3c', 'ends');
+    const sl = w('c3c', 'sale');
+    q(ms, 'buzz', 0.5);
+    q(en, 'thud', 0.6);
+    q(sl, 'cash', 0.6);
     scene(A('c3c'), () => (
       <AbsoluteFill>
         <Board />
         <Svg>
-          <Calendar x={600} y={480} s={1.2 * P(A('c3c'))} year="SEASON 3" flip={1} />
-          {[0, 1, 2, 3].map((i) => (
-            <XMark key={i} x={600 + (i - 1.5) * 80} y={680} s={0.7 * (f >= miss + i * 3 ? 1 : 0)} />
-          ))}
-          <G2 x={1280} y={400} s={bump(ends, 0.18)} o={lt(ends, 0.4)}>
-            <rect x={-180} y={-80} width={360} height={160} rx={20} fill={C.red} stroke={C.ink} strokeWidth={6} />
-            <Text y={-20} size={42} color="#fff">TOO LATE</Text>
-            <Text y={30} size={38} color="#fff">season ended</Text>
+          <G2 x={560} y={480} s={P(A('c3c'))}>
+            {Array.from({length: 14}).map((_, i) => (
+              <g key={i} transform={`translate(${(i % 7) * 100 - 300},${Math.floor(i / 7) * 110 - 60})`}>
+                <rect x={-42} y={-42} width={84} height={84} rx={12} fill={i < 5 ? C.green : f >= ms && i < 9 ? '#FFE3EA' : '#fff'} stroke={C.ink} strokeWidth={5} />
+                <Text y={4} size={40} color={i < 5 ? '#fff' : C.red}>{i < 5 ? '✓' : f >= ms && i < 9 ? 'x' : ''}</Text>
+              </g>
+            ))}
+            <Text y={-150} size={40} color={GRAY}>SEASON CALENDAR</Text>
           </G2>
-          <Dave f={f} x={1280} y={920} s={1.05} keys={[{at: 0, pose: 'shock', expr: 'sad', look: -0.6}]} />
-          <DamageMeter x={1700} y={90} s={0.8} value="$34.97" />
+          <SeasonPass x={1380} y={420} s={0.95 * P(A('c3c')) * bump(en, 0.08)} tier={30} />
+          <G2 x={1380} y={420} s={bump(en, 0.18)} o={lt(en, 0.0001)}><Stamp text="SEASON OVER" color={C.red} size={56} r={-8} /></G2>
+          <G2 x={1380} y={780} s={bump(sl, 0.16)} o={lt(sl, 0.35)}><Sign text="NEW PASS: $9.99" color={C.green} /></G2>
+          <Dave f={f} x={560} y={950} s={0.9} keys={[{at: 0, pose: 'idle', expr: 'worried', look: 0.6}, {at: en, pose: 'facepalm', expr: 'sad', look: 0}]} />
         </Svg>
       </AbsoluteFill>
     ));
   }
   {
-    const chart = w('c3d', 'chart');
-    q(chart, 'pop', 0.5);
+    const chr = w('c3d', 'chore');
+    const mid = w('c3d', 'midnight');
+    const stk = w('c3d', 'stickers');
+    q(chr, 'dream', 0.5);
+    q(mid, 'tick', 0.5);
+    q(stk, 'pop', 0.5);
     scene(A('c3d'), () => (
       <AbsoluteFill>
         <DreamBg />
         <Svg>
-          <G2 x={960} y={200} s={P(A('c3d'))}><Text size={50} color="#fff" stroke={C.ink} sw={8}>CHORE CHART</Text></G2>
-          <rect x={600} y={400} width={720} height={360} rx={20} fill="#fff" stroke={C.ink} strokeWidth={8} />
-          <Text x={960} y={460} size={40} color={C.ink}>DAILY TASKS</Text>
-          {['Mon', 'Tue', 'Wed', 'Thu'].map((d, i) => (
-            <g key={i}>
-              <Text x={700} y={540 + i * 60} size={32} color={GRAY} anchor="start">{d}</Text>
-              <rect x={900} y={518 + i * 60} width={40} height={40} rx={8} fill={i < 2 ? C.green : '#F2F5F8'} stroke={C.ink} strokeWidth={4} />
-              {i < 2 && <Text x={920} y={542 + i * 60} size={30} color="#fff">✓</Text>}
-            </g>
-          ))}
-          <rect x={720} y={320} width={180} height={60} rx={12} fill={C.yellow} stroke={C.ink} strokeWidth={6} />
-          <Text x={810} y={354} size={36} color={C.red}>$10</Text>
-          <DreamFrame label="" />
+          <Box x={620} y={540} w={640} h={560} s={P(A('c3d')) * bump(chr, 0.06)}>
+            <Text y={-220} size={46} color={C.navy}>CHORE CHART: $10</Text>
+            {['dishes', 'laundry', 'vacuum', 'trash'].map((c, i) => (
+              <g key={c} transform={`translate(0,${-120 + i * 90})`}>
+                <Text x={-240} y={4} size={40} anchor="start">{c}</Text>
+                <circle cx={200} cy={0} r={30} fill={i < 2 || f >= stk ? C.yellow : '#fff'} stroke={C.ink} strokeWidth={5} />
+              </g>
+            ))}
+          </Box>
+          <Clock f={f} x={1200} y={380} s={1.2 * P(A('c3d')) * bump(mid, 0.12)} />
+          {T(1200, 560, 'MIDNIGHT', 44, C.red, P(A('c3d')) * bump(mid, 0.1), lt(mid, 0.4))}
+          <Dave f={f} x={1500} y={930} s={1.1} flip keys={[{at: 0, pose: 'carry', expr: 'tired', look: -0.6}]} sweat />
         </Svg>
+        <DreamFrame label="THE CHORE CHART" />
       </AbsoluteFill>
     ));
   }
   {
-    const eleven = w('c3e', 'eleven');
-    q(eleven, 'tick', 0.5);
+    const by = w('c3e', 'buys');
+    const el = w('c3e', 'eleven');
+    const cl = w('c3e', 'claim');
+    q(by, 'cash', 0.6);
+    q(el, 'tick', 0.5);
+    q(cl, 'click', 0.7);
     scene(A('c3e'), () => (
       <AbsoluteFill>
-        <Board />
+        <Interior />
         <Svg>
-          <Clock f={f} x={600} y={480} s={1.4 * P(A('c3e'))} />
-          <GamePhone f={f} x={1260} y={560} s={1.1} screen={
-            <>
-              <Text y={-200} size={32} color={C.yellow}>DAILY QUEST</Text>
-              <Text y={-140} size={28} color="#C9D6E6">time left: 2 min</Text>
-              <rect x={-120} y={-40} width={240} height={80} rx={16} fill={C.green} stroke={C.ink} strokeWidth={4} />
-              <Text y={-6} size={32} color="#fff">PLAY NOW</Text>
-            </>
-          } />
-          <Dave f={f} x={440} y={920} s={1.0} keys={[{at: 0, pose: 'panic', expr: 'worried', look: 0.6}]} sweat />
-          <DamageMeter x={1700} y={90} s={0.8} value="$34.97" />
+          <GamePhone f={f} x={1000} y={540} s={1.2} screen={<><Text y={-200} size={34} color={C.yellow}>DAILY REWARD</Text><Text y={-110} size={56} color="#fff">11:58 PM</Text><DragonEgg y={30} s={0.6} />{Btn(200, f >= cl ? 'CLAIMED' : 'CLAIM', C.green, 34)}</>} />
+          <Dave f={f} x={540} y={940} s={1.15} keys={[{at: 0, pose: 'typing', expr: 'tired', look: 0.6}]} />
         </Svg>
       </AbsoluteFill>
     ));
   }
   {
+    const wm = w('c3f', 'warm');
     const fri = w('c3f', 'friday');
-    const gold = w('c3f', 'glowing');
-    q(fri, 'pop', 0.5);
-    q(gold, 'chime', 0.6);
+    const gl = w('c3f', 'glowing');
+    q(wm, 'pop', 0.5);
+    q(fri, 'flip', 0.5);
+    q(gl, 'sting', 0.7);
     scene(A('c3f'), () => (
       <AbsoluteFill>
         <Board />
         <Svg>
-          <Calendar x={600} y={460} s={1.2 * P(A('c3f'))} year="FRIDAY" flip={1} />
-          <DragonEgg x={1260} y={500} s={1.3 * P(fri) * bump(gold, 0.1)} glow={f >= gold ? 1 : 0} />
-          <Dave f={f} x={420} y={920} s={1.05} keys={[{at: 0, pose: 'idle', expr: 'suspicious', look: 0.6}]} />
-          <DamageMeter x={1700} y={90} s={0.8} value="$34.97" />
+          {T(700, 160, 'the pass was just the warm up', 50, C.ink, P(A('c3f')) * bump(wm, 0.08))}
+          <Calendar x={520} y={520} s={1.3 * P(A('c3f')) * bump(fri, 0.1)} year="FRI" flip={0} top="THAT" />
+          <DragonEgg x={1200} y={540} s={2.0 * P(A('c3f')) * bump(gl, 0.1)} glow={f >= gl ? 1 : 0.3} />
+          <Dave f={f} x={860} y={950} s={0.95} keys={[{at: 0, pose: 'idle', expr: 'suspicious', look: 0.6}, {at: gl, pose: 'shock', expr: 'money', look: 0.6}]} />
         </Svg>
       </AbsoluteFill>
     ));
@@ -659,17 +707,18 @@ export const Ep54: React.FC = () => {
 
   // ============ CH4: The Glowing Egg ============
   {
-    const banner = w('c4a', 'banner');
-    const leg = w('c4a', 'legendary');
-    q(banner, 'whoosh', 0.7);
-    q(leg, 'chime', 0.6);
+    const bn = w('c4a', 'banner');
+    const lg = w('c4a', 'legendary');
+    const fy = w('c4a', 'forty');
+    q(bn, 'whoosh', 0.6);
+    q(lg, 'chime', 0.7);
+    q(fy, 'tick', 0.5);
     scene(A('c4a'), () => (
       <AbsoluteFill>
         <Board />
         <Svg>
-          <BannerAd f={f} x={960} y={560} s={1.1 * P(A('c4a')) * bump(leg, 0.06)} />
-          <G2 x={960} y={160} s={bump(banner, 0.14)}><Text size={54} color={C.red}>LIMITED TIME!</Text></G2>
-          <DamageMeter x={1700} y={90} s={0.8} value="$34.97" />
+          <BannerAd f={f} x={860} y={500} s={1.6 * P(A('c4a')) * bump(bn, 0.06) * bump(lg, 0.06)} />
+          <Dave f={f} x={1600} y={930} s={1.1} flip keys={[{at: 0, pose: 'shock', expr: 'money', look: -0.6}]} />
         </Svg>
       </AbsoluteFill>
     ));
@@ -677,100 +726,117 @@ export const Ep54: React.FC = () => {
   {
     const pulls = w('c4b', 'pulls');
     const cracks = w('c4b', 'cracks');
+    const rnd = w('c4b', 'random');
     q(pulls, 'pop', 0.5);
-    q(cracks, 'thud', 0.5);
+    q(cracks, 'rip', 0.6);
+    q(rnd, 'boing', 0.5);
     scene(A('c4b'), () => (
       <AbsoluteFill>
         <Board />
         <Svg>
-          <G2 x={600} y={360} s={P(A('c4b'))}>
-            <rect x={-200} y={-100} width={400} height={200} rx={20} fill={C.yellow} stroke={C.ink} strokeWidth={6} />
-            <Text y={-30} size={48}>BUY</Text>
-            <Text y={30} size={44} color={C.red}>PULLS</Text>
-          </G2>
-          <path d="M 860 360 L 1020 360 M 990 330 L 1020 360 L 990 390" stroke={C.ink} strokeWidth={10} strokeLinecap="round" strokeLinejoin="round" opacity={lt(pulls, 0.4)} />
-          <DragonEgg x={1340} y={360} s={1.0 * P(pulls)} crack={f >= cracks ? 1 : 0} o={lt(pulls, 0.4)} />
-          <G2 x={960} y={740} s={P(A('c4b'))} o={lt(cracks, 0.4)}><Text size={42} color={GRAY}>maybe a dragon?</Text></G2>
-          <DamageMeter x={1700} y={90} s={0.8} value="$34.97" />
+          {T(860, 150, "you can't buy the dragon", 54, C.ink, P(A('c4b')))}
+          <Box x={420} y={540} w={480} h={320} s={P(A('c4b')) * bump(pulls, 0.12)} fill={C.yellow}>
+            <Text y={-50} size={50} color={GRAY}>you buy</Text>
+            <Text y={50} size={100} color={C.red}>PULLS</Text>
+          </Box>
+          {T(800, 540, '>', 100, C.ink, P(A('c4b')))}
+          <DragonEgg x={1080} y={540} s={1.6 * P(A('c4b')) * bump(cracks, 0.1)} crack={f >= cracks ? 1 : 0} />
+          <PullCard x={1500} y={540} s={1.1 * P(A('c4b')) * bump(rnd, 0.12)} item={f >= rnd ? '? ? ?' : ' '} rarity="common" />
+          {T(1500, 800, 'a random prize', 42, C.ink, P(A('c4b')), lt(rnd, 0.4))}
         </Svg>
       </AbsoluteFill>
     ));
   }
   {
-    const zero = w('c4c', 'zero');
-    q(zero, 'buzz', 0.6);
+    const zr = w('c4c', 'zero');
+    const on = w('c4c', 'one');
+    q(zr, 'stamp', 0.7);
+    q(on, 'pop', 0.5);
     scene(A('c4c'), () => (
       <AbsoluteFill>
         <Board />
         <Svg>
-          <G2 x={960} y={400} s={P(A('c4c'))}>
-            <rect x={-520} y={-180} width={1040} height={360} rx={24} fill="#fff" stroke={C.ink} strokeWidth={6} />
-            <Text y={-100} size={44}>chance per pull:</Text>
-            <Text y={-30} size={80} color={f >= zero ? C.red : C.ink}>0.6%</Text>
-            <Text y={60} size={38} color={GRAY}>about 1 in 167</Text>
-            <Text y={120} size={36} color={GRAY}>guaranteed by pull 90</Text>
-          </G2>
-          <G2 x={960} y={820} s={0.9} o={lt(w('c4c', 'hundred'), 0.4)}><Text size={28} color={GRAY}>Source: Genshin Impact</Text></G2>
-          <DamageMeter x={1700} y={90} s={0.8} value="$34.97" />
+          {T(860, 150, 'the small print', 50, GRAY, P(A('c4c')))}
+          <Box x={520} y={500} w={680} h={400} s={P(A('c4c')) * bump(zr, 0.12)} fill={f >= zr ? C.yellow : '#fff'}>
+            <Text y={-120} size={40} color={GRAY}>legendary chance per pull</Text>
+            <Text y={40} size={170} color={C.red}>{f >= zr ? '0.6%' : '?%'}</Text>
+          </Box>
+          <Box x={1320} y={500} w={560} h={400} s={P(A('c4c')) * bump(on, 0.12)}>
+            <Text y={-120} size={40} color={GRAY}>about</Text>
+            <Text y={30} size={110} color={C.navy}>{f >= on ? '1 in 167' : '1 in ?'}</Text>
+          </Box>
+          <SourceTag f={f} at={zr} text="Genshin Impact published rates: 0.6% base chance for a 5-star" />
         </Svg>
       </AbsoluteFill>
     ));
   }
   {
-    const cereal = w('c4d', 'cereal');
-    q(cereal, 'pop', 0.5);
+    const ce = w('c4d', 'cereal');
+    const gd = w('c4d', 'gold');
+    const ar = w('c4d', 'air');
+    q(ce, 'dream', 0.5);
+    q(gd, 'ding', 0.6);
+    q(ar, 'poof', 0.6);
     scene(A('c4d'), () => (
       <AbsoluteFill>
         <DreamBg />
         <Svg>
-          <G2 x={960} y={200} s={P(A('c4d'))}><Text size={48} color="#fff" stroke={C.ink} sw={8}>CEREAL LOTTERY</Text></G2>
           {[0, 1, 2, 3, 4, 5].map((i) => (
-            <rect key={i} x={200 + i * 260} y={480} width={200} height={280} rx={16} fill={i === 3 ? C.gold : '#9B59B6'} stroke={C.ink} strokeWidth={6} />
+            <G2 key={i} x={320 + i * 250} y={540} s={1.25 * P(A('c4d')) * (i === 3 ? bump(gd, 0.16) : 1)}>
+              <rect x={-80} y={-130} width={160} height={260} rx={10} fill={i === 3 && f >= gd ? C.yellow : '#9B59B6'} stroke={C.ink} strokeWidth={6} />
+              <Text y={-70} size={30} color="#fff">CEREAL</Text>
+              <Text y={20} size={50} color="#fff">{i === 3 && f >= gd ? '★' : '?'}</Text>
+              <Text y={100} size={30} color="#fff">$2</Text>
+            </G2>
           ))}
-          <Text x={960} y={640} size={140} color="#fff">?</Text>
-          <DreamFrame label="" />
+          {T(960, 240, '1 box in 167 has the gold toy', 50, C.navy, P(A('c4d')) * bump(gd, 0.08))}
+          {T(960, 860, 'and the cereal is air', 52, C.red, bump(ar, 0.14), lt(ar, 0.35))}
         </Svg>
+        <DreamFrame label="THE CEREAL LOTTERY" />
       </AbsoluteFill>
     ));
   }
   {
     const ninety = w('c4e', 'ninety');
-    const sounds = w('c4e', 'sounds');
-    q(ninety, 'pop', 0.5);
-    q(sounds, 'pop', 0.5);
+    const tm = w('c4e', 'timer');
+    q(ninety, 'pop', 0.6);
+    q(tm, 'tick', 0.6);
     scene(A('c4e'), () => (
       <AbsoluteFill>
         <Board />
         <Svg>
-          <G2 x={600} y={400} s={P(A('c4e')) * bump(ninety, 0.12)}>
-            <rect x={-200} y={-100} width={400} height={200} rx={20} fill={C.yellow} stroke={C.ink} strokeWidth={6} />
-            <Text y={-30} size={54}>pull</Text>
-            <Text y={40} size={70} color={C.red}>90</Text>
-          </G2>
-          <G2 x={1260} y={400} s={P(sounds)} o={lt(sounds, 0.4)}>
-            <Bubble text="only 90!" size={42} tail="down" />
-          </G2>
-          <Dave f={f} x={1260} y={920} s={1.05} keys={[{at: 0, pose: 'think', expr: 'neutral', look: -0.6}]} />
-          <DamageMeter x={1700} y={90} s={0.8} value="$34.97" />
+          <Box x={520} y={480} w={620} h={400} s={P(A('c4e')) * bump(ninety, 0.12)} fill={C.yellow}>
+            <Text y={-120} size={40} color={GRAY}>guaranteed legendary by</Text>
+            <Text y={40} size={150} color={C.red}>PULL 90</Text>
+          </Box>
+          <Clock f={f * 8} x={1160} y={420} s={1.5 * P(A('c4e')) * bump(tm, 0.1)} />
+          {T(1160, 660, '48 hours', 48, C.red, P(A('c4e')) * bump(tm, 0.12))}
+          <Dave f={f} x={1560} y={930} s={1.1} flip keys={[{at: 0, pose: 'think', expr: 'think', look: -0.6}, {at: tm, pose: 'panic', expr: 'worried', look: -0.6}]} />
         </Svg>
       </AbsoluteFill>
     ));
   }
   {
-    const big = w('c4f', 'big');
-    const fifty = w('c4f', 'fifty');
-    q(big, 'cash', 0.7);
-    q(fifty, 'pop', 0.5);
+    const bg = w('c4f', 'big');
+    const ff = w('c4f', 'fifty');
+    const sw = w('c4f', 'sword');
+    const sd = w('c4f', 'shield');
+    const pt = w('c4f', 'potato');
+    q(bg, 'cash', 0.7);
+    q(ff, 'chime', 0.5);
+    q(sw, 'thud', 0.5);
+    q(sd, 'thud', 0.5);
+    q(pt, 'trombone', 0.6);
     scene(A('c4f'), () => (
       <AbsoluteFill>
         <Board />
         <Svg>
-          <GemPack x={600} y={560} s={1.2 * P(A('c4f'))} price="$99.99" gems={8080} bonus="1600" best={1} />
-          <G2 x={1260} y={400} s={P(fifty)} o={lt(fifty, 0.4)}>
-            <Text size={48}>50 pulls</Text>
-          </G2>
-          <Dave f={f} x={1260} y={920} s={1.05} keys={[{at: 0, pose: 'typing', expr: 'neutral', look: -0.6}]} />
-          <DamageMeter x={1700} y={90} s={0.8} value={f >= w('c4f', 'ninety') ? '$134.96' : '$34.97'} flash={f >= w('c4f', 'ninety') ? 1 : 0} />
+          <GemPack x={320} y={500} s={1.3 * P(A('c4f')) * bump(bg, 0.1)} price="$99.99" gems={8080} />
+          {T(320, 820, '50 pulls', 50, C.navy, P(A('c4f')) * bump(ff, 0.12))}
+          <PullCard x={800} y={500} s={1.0 * P(A('c4f')) * bump(sw, 0.14)} item={f >= sw ? 'SWORD' : '?'} rarity="common" rainbow={f >= ff && f < sw ? 0.8 : 0} />
+          <PullCard x={1100} y={500} s={1.0 * P(A('c4f')) * bump(sd, 0.14)} item={f >= sd ? 'SHIELD' : '?'} rarity="common" />
+          <PullCard x={1400} y={500} s={1.0 * P(A('c4f')) * bump(pt, 0.18)} item={f >= pt ? 'POTATO' : '?'} rarity="common" />
+          <Dave f={f} x={1100} y={960} s={0.85} keys={[{at: 0, pose: 'celebrate', expr: 'money', look: 0}, {at: pt, pose: 'facepalm', expr: 'sad', look: 0}]} />
         </Svg>
       </AbsoluteFill>
     ));
@@ -778,23 +844,29 @@ export const Ep54: React.FC = () => {
   {
     const sixty = w('c4g', 'sixty');
     const no = w('c4g', 'no');
-    const unlucky = w('c4g', 'unluckiest');
-    q(sixty, 'tick', 0.5);
-    q(no, 'buzz', 0.7);
-    q(unlucky, 'trombone', 0.6);
+    const un = w('c4g', 'unluckiest');
+    const bl = w('c4g', 'built');
+    q(sixty, 'pop', 0.5);
+    q(no, 'buzz', 0.6);
+    q(un, 'trombone', 0.5);
+    q(bl, 'sting', 0.7);
     scene(A('c4g'), () => (
       <AbsoluteFill>
         <Board />
         <Svg>
-          <G2 x={600} y={360} s={P(A('c4g')) * bump(sixty, 0.12)}>
-            <rect x={-180} y={-90} width={360} height={180} rx={20} fill={C.navy} stroke={C.ink} strokeWidth={6} />
-            <Text y={-30} size={44} color="#fff">PULLS:</Text>
-            <Text y={30} size={60} color={C.yellow}>60</Text>
-          </G2>
-          <DragonEgg x={1260} y={360} s={1.1 * P(A('c4g'))} open={f >= no ? 1 : 0} />
-          <XMark x={1260} y={360} s={2.0 * P(no) * bump(no, 0.15)} />
-          <Dave f={f} x={420} y={920} s={1.05} keys={[{at: 0, pose: 'shock', expr: 'sad', look: 0.6}]} sweat />
-          <DamageMeter x={1700} y={90} s={0.8} value="$134.96" />
+          <Box x={420} y={380} w={440} h={260} s={P(A('c4g')) * bump(sixty, 0.12)} fill={C.navy}>
+            <Text y={-50} size={44} color="#fff">PULLS</Text>
+            <Text y={50} size={100} color={C.yellow}>60</Text>
+          </Box>
+          <DragonEgg x={960} y={400} s={1.3 * P(A('c4g'))} />
+          <G2 x={960} y={400} s={0.4 * bump(no, 0.2)} o={lt(no, 0.0001)}><XMark /></G2>
+          <Dave f={f} x={420} y={950} s={1.0} keys={[{at: 0, pose: 'shock', expr: 'sad', look: 0.6}]} sweat />
+          <Box x={1420} y={560} w={560} h={380} s={P(A('c4g')) * bump(bl, 0.14)} fill={f >= bl ? C.yellow : '#fff'}>
+            <Text y={-120} size={38} color={GRAY}>not unlucky.</Text>
+            <Text y={-20} size={48} color={C.red}>{f >= bl ? 'EXACTLY WHO' : '. . .'}</Text>
+            <Text y={50} size={48} color={C.red}>{f >= bl ? 'THIS GAME WAS' : ' '}</Text>
+            <Text y={120} size={48} color={C.red}>{f >= bl ? 'BUILT FOR' : ' '}</Text>
+          </Box>
         </Svg>
       </AbsoluteFill>
     ));
@@ -802,299 +874,392 @@ export const Ep54: React.FC = () => {
 
   // ============ CH5: Who Pays The Bills? ============
   {
-    const four = w('c5c', 'paid');
-    const land = four + 20;
-    q(four, 'tick', 0.5);
-    q(land, 'stamp', 0.8);
-    scene(A('c5a'), () => {
-      const n = Math.round(lerp(0, 4, ease(f, four, land)));
-      const sk = shake(f, land, 16, 14);
-      return (
-        <AbsoluteFill>
-          <Board />
-          <Svg>
-            <G2 x={960} y={160} s={P(A('c5a'))}><Text size={48} color={GRAY}>out of 100 players</Text></G2>
-            <G2 x={960 + sk.x} y={480 + sk.y} s={P(A('c5a'))}>
-              <rect x={-280} y={-160} width={560} height={320} rx={30} fill={f >= land ? C.yellow : '#fff'} stroke={C.ink} strokeWidth={6} />
-              <Text y={-40} size={100} color={f >= land ? C.red : C.ink}>{n}</Text>
-              <Text y={40} size={48} color={C.navy}>pay anything</Text>
-            </G2>
-            <G2 x={960} y={860} s={0.9} o={lt(w('c5b', 'regulators'), 0.4)}><Text size={28} color={GRAY}>Source: Playtika 10-K 2025</Text></G2>
-            <DamageMeter x={1700} y={90} s={0.8} value="$134.96" />
-          </Svg>
-        </AbsoluteFill>
-      );
-    });
+    const wh = w('c5a', 'who');
+    q(wh, 'pop', 0.5);
+    scene(A('c5a'), () => (
+      <AbsoluteFill>
+        <Interior />
+        <Svg>
+          <Dave f={f} x={560} y={940} s={1.2} keys={[{at: 0, pose: 'think', expr: 'suspicious', look: 0.6}]} />
+          <G2 x={1040} y={500} s={P(A('c5a')) * bump(wh, 0.12)}>
+            <rect x={-330} y={-170} width={660} height={340} rx={24} fill="#fff" stroke={C.ink} strokeWidth={6} />
+            <Text y={-60} size={50} color={GRAY}>free games:</Text>
+            <Text y={50} size={66} color={C.red}>WHO PAYS?</Text>
+          </G2>
+        </Svg>
+      </AbsoluteFill>
+    ));
   }
   {
-    const ninety = w('c5c', 'seventy');
-    const free = w('c5c', 'paid');
-    q(ninety, 'pop', 0.5);
-    q(free, 'pop', 0.5);
+    const pl = w('c5b', 'playtika');
+    const rg = w('c5b', 'regulators');
+    q(pl, 'paper', 0.6);
+    q(rg, 'ding', 0.5);
+    scene(A('c5b'), () => (
+      <AbsoluteFill>
+        <Board />
+        <Svg>
+          <SourceCard x={620} y={540} s={1.15 * P(A('c5b')) * bump(pl, 0.06)} org="PLAYTIKA" sub="mobile game company" title={['Annual Report', '(Form 10-K)']} stat="2025" />
+          <Dave f={f} x={1280} y={930} s={1.1} flip keys={[{at: 0, pose: 'point_l', expr: 'think', look: -0.6}]} />
+          {T(1400, 400, 'numbers filed with', 40, GRAY, P(A('c5b')), lt(rg, 0.4))}
+          {T(1400, 480, 'U.S. regulators', 50, C.navy, P(A('c5b')) * bump(rg, 0.12), lt(rg, 0.4))}
+          <SourceTag f={f} at={pl} text="Playtika Holding Corp., Form 10-K for fiscal year 2025" />
+        </Svg>
+      </AbsoluteFill>
+    ));
+  }
+  {
+    const gs = w('c5c', 'guess');
+    const eg = w('c5c', 'eight');
+    const pd = w('c5c', 'paid');
+    q(gs, 'pop', 0.6);
+    q(eg, 'crowd', 0.4);
+    q(pd, 'stamp', 0.8);
     scene(A('c5c'), () => (
       <AbsoluteFill>
         <Board />
         <Svg>
-          <G2 x={500} y={400} s={P(A('c5c')) * bump(ninety, 0.12)}>
-            <rect x={-200} y={-120} width={400} height={240} rx={24} fill={GRAY} stroke={C.ink} strokeWidth={6} />
-            <Text y={-40} size={80} color="#fff">96</Text>
-            <Text y={20} size={42} color="#C9D6E6">play for free</Text>
-          </G2>
-          <G2 x={1300} y={400} s={P(A('c5c')) * bump(free, 0.14)}>
-            <rect x={-240} y={-120} width={480} height={240} rx={24} fill={C.green} stroke={C.ink} strokeWidth={6} />
-            <Text y={-40} size={80} color="#fff">4</Text>
-            <Text y={20} size={42} color="#fff">pay for everyone</Text>
-          </G2>
-          <DamageMeter x={1700} y={90} s={0.8} value="$134.96" />
+          {T(860, 150, 'REMEMBER YOUR GUESS?', 56, C.red, P(A('c5c')) * bump(gs, 0.1))}
+          <Box x={500} y={520} w={680} h={380} s={P(A('c5c')) * bump(eg, 0.08)}>
+            <Text y={-110} size={40} color={GRAY}>played on an average day</Text>
+            <Text y={40} size={110} color={C.navy}>{f >= eg ? '8,500,000' : '? ? ?'}</Text>
+          </Box>
+          <Box x={1320} y={520} w={680} h={380} s={P(A('c5c')) * bump(pd, 0.14)} fill={f >= pd ? C.yellow : '#fff'}>
+            <Text y={-110} size={40} color={GRAY}>paid anything</Text>
+            <Text y={40} size={110} color={C.red}>{f >= pd ? '370,000' : '? ? ?'}</Text>
+          </Box>
+          <SourceTag f={f} at={eg} text="Playtika 10-K (2025): about 8.5M daily active users, about 370K daily paying users" />
         </Svg>
       </AbsoluteFill>
     ));
   }
   {
-    const hunt = w('c5d', 'bills');
-    q(hunt, 'sting', 0.6);
+    const fr = w('c5d', 'four');
+    const nn = w('c5d', 'ninety');
+    const bl = w('c5d', 'billion');
+    q(fr, 'pop', 0.6);
+    q(nn, 'pop2', 0.5);
+    q(bl, 'cash', 0.8);
     scene(A('c5d'), () => (
       <AbsoluteFill>
         <Board />
         <Svg>
-          <G2 x={960} y={400} s={P(A('c5d'))}>
-            <rect x={-480} y={-140} width={960} height={280} rx={24} fill="#FFF3C4" stroke={C.ink} strokeWidth={6} />
-            <Text y={-60} size={50}>the game is</Text>
-            <Text y={20} size={64} color={C.red}>HUNTING WHALES</Text>
-          </G2>
-          <DamageMeter x={1700} y={90} s={0.8} value="$134.96" />
+          <People x={520} y={1150} s={1.3 * P(A('c5d'))} n={100} hot={f >= fr ? 4 : 0} />
+          <Box x={1300} y={340} w={520} h={220} s={P(A('c5d')) * bump(nn, 0.1)}><Text y={-30} size={80} color={GRAY}>96</Text><Text y={50} size={40} color={C.ink}>play free</Text></Box>
+          <Box x={1300} y={580} w={520} h={220} s={P(A('c5d')) * bump(fr, 0.12)} fill="#FFE3EA"><Text y={-30} size={80} color={C.red}>4</Text><Text y={50} size={40} color={C.ink}>pay the bills</Text></Box>
+          <Box x={1300} y={820} w={520} h={200} s={P(A('c5d')) * bump(bl, 0.14)} fill={f >= bl ? C.yellow : '#fff'}><Text y={6} size={60} color={C.red}>{f >= bl ? '$2.7 BILLION' : '$ ? BILLION'}</Text></Box>
         </Svg>
       </AbsoluteFill>
     ));
   }
   {
-    const top = w('c5e', 'eaters');
-    const half = w('c5e', 'dessert');
-    q(top, 'pop', 0.5);
-    q(half, 'stamp', 0.7);
+    const rs = w('c5e', 'restaurant');
+    const fe = w('c5e', 'free');
+    const ds = w('c5e', 'dessert');
+    q(rs, 'dream', 0.5);
+    q(fe, 'pop', 0.5);
+    q(ds, 'ding', 0.6);
     scene(A('c5e'), () => (
       <AbsoluteFill>
-        <Board />
+        <DreamBg />
         <Svg>
-          <G2 x={960} y={400} s={P(A('c5e'))}>
-            <rect x={-520} y={-180} width={1040} height={360} rx={24} fill="#fff" stroke={C.ink} strokeWidth={6} />
-            <Text y={-100} size={46}>top 5% of spenders</Text>
-            <Text y={-40} size={44}>(over $100/month)</Text>
-            <Text y={50} size={60} color={f >= half ? C.red : C.ink}>HALF</Text>
-            <Text y={110} size={44}>of loot box revenue</Text>
-          </G2>
-          <G2 x={960} y={820} s={0.9} o={lt(w('c5e', 'dessert'), 0.4)}><Text size={28} color={GRAY}>Source: Close et al. 2021</Text></G2>
-          <DamageMeter x={1700} y={90} s={0.8} value="$134.96" />
+          <rect x={260} y={600} width={1000} height={30} rx={10} fill="#C98F5A" stroke={C.ink} strokeWidth={6} />
+          {[0, 1, 2, 3, 4, 5].map((i) => <Stick key={i} f={f} x={340 + i * 150} y={590} s={0.6} seed={90 + i} keys={[{at: 0, pose: 'idle', expr: 'happy', look: 0}]} />)}
+          {T(700, 720, '96 eat free', 46, GRAY, P(A('c5e')) * bump(fe, 0.1))}
+          <Stick f={f} x={1260} y={590} s={0.6} seed={97} acc={['glasses']} keys={[{at: 0, pose: 'celebrate', expr: 'money', look: 0}]} />
+          <G2 x={1260} y={300} s={bump(ds, 0.18)} o={lt(ds, 0.35)}><Bubble text="dessert, please!" size={40} tail="down" /></G2>
+          <Stick f={f} x={1560} y={930} s={1.1} acc={['tie']} seed={98} flip keys={[{at: 0, pose: 'idle', expr: 'neutral', look: -0.3}, {at: ds, pose: 'point_l', expr: 'money', look: -0.8}]} />
+          {T(1560, 520, 'the waiter', 40, C.ink, P(A('c5e')))}
         </Svg>
+        <DreamFrame label="THE RESTAURANT" />
       </AbsoluteFill>
     ));
   }
   {
-    const app = w('c5f', 'whales');
-    const thirty = w('c5f', 'thousand');
-    q(app, 'pop', 0.5);
-    q(thirty, 'cash', 0.6);
+    const wl = w('c5f', 'whales');
+    const st = w('c5f', 'study');
+    q(wl, 'sting', 0.6);
+    q(st, 'paper', 0.6);
     scene(A('c5f'), () => (
       <AbsoluteFill>
         <Board />
         <Svg>
-          <Apple x={460} y={400} s={1.4 * P(A('c5f'))} />
-          <G2 x={1260} y={400} s={P(thirty) * bump(thirty, 0.12)} o={lt(thirty, 0.4)}>
-            <rect x={-220} y={-100} width={440} height={200} rx={20} fill={C.yellow} stroke={C.ink} strokeWidth={6} />
-            <Text y={-30} size={60} color={C.red}>30%</Text>
-            <Text y={30} size={40} color={C.ink}>of every sale</Text>
+          <G2 x={540} y={500} s={1.5 * P(A('c5f')) * bump(wl, 0.1)}>
+            <path d="M -220 0 Q -160 -140 40 -120 Q 220 -100 230 20 Q 200 120 20 120 Q -140 120 -220 0 Z" fill="#5C7CFA" stroke={C.ink} strokeWidth={6} />
+            <path d="M -220 0 L -300 -70 L -280 0 L -300 70 Z" fill="#5C7CFA" stroke={C.ink} strokeWidth={6} strokeLinejoin="round" />
+            <circle cx={130} cy={-20} r={12} fill={C.ink} />
+            <path d="M 60 -124 Q 50 -190 20 -200 M 60 -124 Q 80 -190 110 -196" fill="none" stroke="#5C7CFA" strokeWidth={8} strokeLinecap="round" />
+            <Text x={-20} y={40} size={50} color={C.yellow}>$$$</Text>
           </G2>
-          <DamageMeter x={1700} y={90} s={0.8} value="$134.96" />
+          {T(540, 800, 'the biggest spenders: WHALES', 46, C.navy, P(A('c5f')) * bump(wl, 0.08))}
+          <SourceCard x={1380} y={520} s={0.9 * P(A('c5f')) * bump(st, 0.08)} org="ADDICTIVE BEHAVIORS" sub="peer-reviewed journal" title={['7,767 loot box', 'buyers studied']} stat="2021" />
+          <SourceTag f={f} at={st} text="Close et al. (2021), Addictive Behaviors: secondary analysis of loot box purchasers" />
         </Svg>
       </AbsoluteFill>
     ));
   }
   {
-    const game = w('c5g', 'loot');
-    const hunts = w('c5g', 'money');
-    const apple = w('c5g', 'percent');
-    q(game, 'pop', 0.5);
-    q(apple, 'pop', 0.5);
+    const fv = w('c5g', 'five');
+    const hf = w('c5g', 'half');
+    q(fv, 'pop', 0.6);
+    q(hf, 'stamp', 0.8);
     scene(A('c5g'), () => (
       <AbsoluteFill>
         <Board />
         <Svg>
-          <G2 x={340} y={300} s={P(A('c5g')) * bump(game, 0.1)}>
-            <rect x={-140} y={-80} width={280} height={160} rx={20} fill="#9B2D2D" stroke={C.ink} strokeWidth={6} />
-            <Text y={-20} size={40} color={C.yellow}>GAME</Text>
-            <Text y={30} size={36} color="#fff">PUBLISHER</Text>
-          </G2>
-          <G2 x={340} y={580} s={P(hunts)} o={lt(hunts, 0.4)}><Text size={38} color={C.red}>hunts whales</Text></G2>
-          <Apple x={960} y={440} s={1.1 * P(apple)} o={lt(apple, 0.4)} />
-          <G2 x={960} y={700} s={P(apple)} o={lt(apple, 0.4)}><Text size={38} color={C.navy}>takes 30%</Text></G2>
-          <Raccoon f={f} x={1560} y={860} s={1.4 * P(apple)} mood="happy" grab={f >= apple ? 1 : 0} o={lt(apple, 0.4)} />
-          <DamageMeter x={1700} y={90} s={0.8} value="$134.96" />
+          {T(860, 150, 'who brings in the loot box money?', 50, C.ink, P(A('c5g')))}
+          <G2 x={480} y={900}><Bar h={110} w={300} color={C.navy} label="top 5% of spenders" value="5%" /></G2>
+          {T(880, 620, '>', 110, C.ink, P(A('c5g')) * bump(fv, 0.1))}
+          <G2 x={1280} y={900}><Bar h={f >= hf ? lerp(110, 520, ease(f, hf, hf + 18)) : 110} w={300} color={C.red} label="of all the money" value={f >= hf ? '50%' : '?'} /></G2>
+          <SourceTag f={f} at={fv} text="Close et al. (2021): top 5% (over $100/month) generated about half of loot box revenue" />
         </Svg>
       </AbsoluteFill>
     ));
   }
-  const SUB = w('c5h', 'paying') + 20;
-  subCues(SUB).forEach((c) => cues.push(c));
   {
-    const epic = w('c5i', 'whales');
-    const refund = w('c5i', 'wrong');
-    q(epic, 'paper', 0.6);
-    q(refund, 'cash', 0.6);
-    scene(A('c5i'), () => (
+    const vl = w('c5h', 'villain');
+    const mc = w('c5h', 'machine');
+    const ap = w('c5h', 'apples');
+    const th = w('c5h', 'thirty');
+    q(vl, 'sting', 0.8);
+    q(mc, 'clank', 0.6);
+    q(ap, 'pop', 0.5);
+    q(th, 'coin', 0.6);
+    scene(A('c5h'), () => (
       <AbsoluteFill>
         <Board />
         <Svg>
-          <G2 x={960} y={160} s={P(A('c5i')) * bump(epic, 0.1)}><Text size={48} color={C.red}>FTC: EPIC GAMES</Text></G2>
-          <G2 x={960} y={500} s={P(A('c5i'))}>
-            <rect x={-520} y={-200} width={1040} height={400} rx={24} fill="#fff" stroke={C.ink} strokeWidth={6} />
-            <Text y={-130} size={44}>dark patterns</Text>
-            <Text y={-70} size={44}>= unwanted charges</Text>
-            <Text y={20} size={60} color={f >= refund ? C.red : C.ink}>$200M</Text>
-            <Text y={80} size={40} color={GRAY}>refunds to 1.6M players</Text>
-          </G2>
-          <G2 x={960} y={860} s={0.9} o={lt(w('c5i', 'wrong'), 0.4)}><Text size={28} color={GRAY}>Source: FTC 2023</Text></G2>
-          <DamageMeter x={1700} y={90} s={0.8} value="$134.96" />
+          {T(700, 150, 'THE VILLAIN', 64, C.red, P(A('c5h')) * bump(vl, 0.12))}
+          <Box x={560} y={540} w={720} h={480} s={P(A('c5h')) * bump(mc, 0.08)} fill="#2A2D4A">
+            <Text y={-170} size={44} color={C.yellow}>THE MONEY MACHINE</Text>
+            <circle cx={-180} cy={10} r={90} fill="none" stroke={C.yellow} strokeWidth={14} strokeDasharray="40 24" strokeDashoffset={f * 3} />
+            <circle cx={60} cy={60} r={64} fill="none" stroke="#fff" strokeWidth={12} strokeDasharray="30 20" strokeDashoffset={-f * 3} />
+            <Text x={200} y={-20} size={36} color="#fff">find the few</Text>
+            <Text x={200} y={40} size={36} color="#fff">who pay a lot</Text>
+            <Text y={190} size={40} color={C.yellow}>keep them paying</Text>
+          </Box>
+          <Apple x={1280} y={480} s={1.5 * P(A('c5h')) * bump(ap, 0.1)} />
+          <Box x={1280} y={760} w={420} h={180} s={P(A('c5h')) * bump(th, 0.14)} fill={f >= th ? C.yellow : '#fff'}>
+            <Text y={-30} size={36} color={GRAY}>standard cut</Text>
+            <Text y={40} size={70} color={C.red}>{f >= th ? '30%' : '?%'}</Text>
+          </Box>
+          <Raccoon f={f} x={1640} y={860} s={0.8 * P(A('c5h'))} mood="greedy" holdCoin />
         </Svg>
+      </AbsoluteFill>
+    ));
+  }
+  {
+    const yt = w('c5i', 'yachts');
+    const wr = w('c5i', 'wrong');
+    q(yt, 'dream', 0.4);
+    q(wr, 'sting', 0.6);
+    scene(A('c5i'), () => (
+      <AbsoluteFill>
+        <DreamBg />
+        <Svg>
+          <G2 x={1000} y={560} s={1.5 * P(A('c5i'))}>
+            <path d="M -260 40 H 260 L 200 120 H -200 Z" fill="#fff" stroke={C.ink} strokeWidth={6} strokeLinejoin="round" />
+            <rect x={-120} y={-30} width={200} height={70} rx={8} fill="#DDEBF7" stroke={C.ink} strokeWidth={6} />
+            <path d="M 0 -30 V -150 L 110 -60 Z" fill={C.red} stroke={C.ink} strokeWidth={6} strokeLinejoin="round" />
+          </G2>
+          <Banker f={f} x={1000} y={560} s={0.7} keys={[{at: 0, pose: 'hips', expr: 'smug', look: 0}]} />
+          {T(1000, 220, 'whales = rich guys with yachts?', 50, C.navy, P(A('c5i')) * bump(yt, 0.08))}
+          <Dave f={f} x={360} y={930} s={1.1} keys={[{at: 0, pose: 'think', expr: 'think', look: 0.6}]} />
+          <G2 x={1000} y={860} s={bump(wr, 0.16)} o={lt(wr, 0.35)}><Stamp text="SO WRONG" color={C.red} size={60} r={-4} /></G2>
+        </Svg>
+        <DreamFrame label="WHAT DAVE FIGURED" />
       </AbsoluteFill>
     ));
   }
 
   // ============ CH6: Whales Aren't Rich ============
   {
-    const think = w('c6a', 'thought');
-    const rich = w('c6a', 'nope');
-    q(think, 'pop', 0.5);
-    q(rich, 'pop', 0.5);
+    const ml = w('c6a', 'millionaires');
+    const np = w('c6a', 'nope');
+    q(ml, 'pop', 0.5);
+    q(np, 'buzz', 0.7);
     scene(A('c6a'), () => (
       <AbsoluteFill>
-        <DreamBg />
+        <Board />
         <Svg>
-          <G2 x={200} y={200} s={P(A('c6a'))}><Text size={48} color="#fff" stroke={C.ink} sw={8}>MOST PEOPLE THINK</Text></G2>
-          <MoneyStack x={960} y={600} s={2.2 * P(think)} n={8} />
-          <G2 x={960} y={900} s={P(rich)} o={lt(rich, 0.4)}><Text size={56} color="#fff" stroke={C.ink} sw={8}>WHALES = RICH</Text></G2>
-          <DreamFrame label="" />
+          <Banker f={f} x={620} y={900} s={1.3} keys={[{at: 0, pose: 'hips', expr: 'smug', look: 0.6}]} />
+          <MoneyStack x={1000} y={760} s={1.5 * P(A('c6a'))} n={7} label="WHALE = MILLIONAIRE?" />
+          <G2 x={840} y={480} s={1.6 * bump(np, 0.2)} o={lt(np, 0.0001)}><Stamp text="NOPE" color={C.red} size={90} r={-8} /></G2>
+          <Dave f={f} x={1500} y={930} s={1.1} flip keys={[{at: 0, pose: 'point_l', expr: 'think', look: -0.6}, {at: np, pose: 'shock', expr: 'shock', look: -0.6}]} />
         </Svg>
       </AbsoluteFill>
     ));
   }
   {
-    const study = w('c6b', 'study');
-    const seven = w('c6b', 'link');
-    q(study, 'paper', 0.6);
-    q(seven, 'pop', 0.5);
+    const st = w('c6b', 'study');
+    const no = w('c6b', 'no');
+    q(st, 'paper', 0.5);
+    q(no, 'stamp', 0.8);
     scene(A('c6b'), () => (
       <AbsoluteFill>
         <Board />
         <Svg>
-          <G2 x={960} y={160} s={P(A('c6b')) * bump(study, 0.1)}><Text size={46} color={GRAY}>study: 7,767 loot box buyers</Text></G2>
-          <G2 x={960} y={480} s={P(A('c6b'))}>
-            <rect x={-560} y={-160} width={1120} height={320} rx={24} fill="#fff" stroke={C.ink} strokeWidth={6} />
-            <Text y={-70} size={50}>loot box spend</Text>
-            <Text y={10} size={44}>vs earnings</Text>
-            <Text y={80} size={60} color={C.red}>NO LINK</Text>
-          </G2>
-          <G2 x={960} y={820} s={0.9} o={lt(w('c6b', 'link'), 0.4)}><Text size={28} color={GRAY}>Source: Close et al. 2021</Text></G2>
-          <DamageMeter x={1700} y={90} s={0.8} value="$134.96" />
+          {T(860, 150, 'do big spenders earn more?', 52, C.ink, P(A('c6b')))}
+          <Box x={460} y={520} w={480} h={320} s={P(A('c6b'))} fill="#FFE3EA"><Text y={-60} size={44} color={GRAY}>SPENDING</Text><Text y={50} size={90} color={C.red}>$$$</Text></Box>
+          <Box x={1320} y={520} w={480} h={320} s={P(A('c6b'))} fill="#E3F6EA"><Text y={-60} size={44} color={GRAY}>INCOME</Text><Text y={50} size={90} color={C.green}>$ ?</Text></Box>
+          <path d="M 720 520 H 1060" stroke={C.ink} strokeWidth={10} strokeDasharray="22 16" />
+          <G2 x={890} y={520} s={bump(no, 0.2)} o={lt(no, 0.35)}><Stamp text="NO LINK" color={C.red} size={60} r={-6} /></G2>
+          <SourceTag f={f} at={st} text="Close et al. (2021): no link between loot box spending and income" />
         </Svg>
       </AbsoluteFill>
     ));
   }
   {
-    const but = w('c6c', 'spending');
-    const problem = w('c6c', 'problem');
-    q(but, 'pop', 0.5);
-    q(problem, 'stamp', 0.7);
+    const gm = w('c6c', 'gambling');
+    const rk = w('c6c', 'risk');
+    q(gm, 'sting', 0.6);
+    q(rk, 'stamp', 0.7);
     scene(A('c6c'), () => (
       <AbsoluteFill>
         <Board />
         <Svg>
-          <G2 x={960} y={400} s={P(A('c6c'))}>
-            <rect x={-500} y={-180} width={1000} height={360} rx={24} fill="#FFF3C4" stroke={C.ink} strokeWidth={6} />
-            <Text y={-100} size={50}>loot box spend</Text>
-            <Text y={-40} size={44}>vs</Text>
-            <Text y={20} size={56} color={f >= problem ? C.red : C.ink}>PROBLEM GAMBLING</Text>
-            <Text y={100} size={60} color={f >= problem ? C.red : C.ink}>CORRELATED</Text>
-          </G2>
-          <DamageMeter x={1700} y={90} s={0.8} value="$134.96" />
+          {T(860, 150, 'what DID go up with spending?', 52, C.ink, P(A('c6c')))}
+          <G2 x={420} y={880}><Bar h={160} w={220} color={C.navy} label="low spend" value="" /></G2>
+          <G2 x={700} y={880}><Bar h={320} w={220} color={C.navy} label="medium" value="" /></G2>
+          <G2 x={980} y={880}><Bar h={f >= gm ? lerp(320, 560, ease(f, gm, gm + 18)) : 320} w={220} color={C.red} label="high spend" value="" /></G2>
+          <Box x={1460} y={460} w={560} h={340} s={P(A('c6c')) * bump(gm, 0.12)} fill={f >= gm ? C.yellow : '#fff'}>
+            <Text y={-90} size={40} color={GRAY}>signs of</Text>
+            <Text y={-10} size={56} color={C.red}>PROBLEM</Text>
+            <Text y={60} size={56} color={C.red}>GAMBLING</Text>
+          </Box>
+          {T(1460, 740, 'people at risk, not the rich', 40, C.navy, bump(rk, 0.12), lt(rk, 0.4))}
+          <SourceTag f={f} at={gm} text="Close et al. (2021): higher spenders showed more problem-gambling symptoms" />
         </Svg>
       </AbsoluteFill>
     ));
   }
   {
-    const profit = w('c6d', 'children');
-    q(profit, 'stamp', 0.7);
+    const kd = w('c6d', 'kid');
+    const th = w('c6d', 'thousands');
+    q(kd, 'pop', 0.6);
+    q(th, 'cash', 0.7);
     scene(A('c6d'), () => (
       <AbsoluteFill>
-        <Board />
+        <Interior />
         <Svg>
-          <G2 x={960} y={400} s={P(A('c6d'))}>
-            <rect x={-560} y={-160} width={1120} height={320} rx={24} fill="#fff" stroke={C.ink} strokeWidth={6} />
-            <Text y={-80} size={46}>developers profit from</Text>
-            <Text y={-20} size={50} color={C.red}>moderate & high-risk</Text>
-            <Text y={40} size={50} color={C.red}>GAMBLERS</Text>
-            <Text y={100} size={40} color={GRAY}>not high earners</Text>
-          </G2>
-          <DamageMeter x={1700} y={90} s={0.8} value="$134.96" />
+          <Stick f={f} x={620} y={950} s={0.75} seed={12} keys={[{at: 0, pose: 'typing', expr: 'happy', look: 0.6}]} />
+          <GamePhone f={f} x={980} y={600} s={0.9 * P(A('c6d'))} glow={0.5} screen={<><Text y={-180} size={36} color={C.yellow}>5-STAR PRIZE</Text><DragonEgg y={0} s={0.9} glow={1} />{Btn(200, 'PULL AGAIN', C.red, 32)}</>} />
+          {T(620, 620, 'sometimes the whale is a kid', 40, C.ink, P(A('c6d')) * bump(kd, 0.1))}
+          <SourceTag f={f} at={kd} text="FTC (2025): some children spent hundreds or thousands of dollars on Genshin prizes" />
         </Svg>
       </AbsoluteFill>
     ));
   }
   {
-    const dave = w('c6e', 'epic');
-    const hun = w('c6e', 'hundred');
-    q(dave, 'pop', 0.5);
-    q(hun, 'cash', 0.6);
+    const ep = w('c6e', 'epic');
+    const ml = w('c6e', 'million');
+    const tr = w('c6e', 'tricked');
+    q(ep, 'paper', 0.6);
+    q(ml, 'stamp', 0.8);
+    q(tr, 'click', 0.6);
     scene(A('c6e'), () => (
       <AbsoluteFill>
         <Board />
         <Svg>
-          <Dave f={f} x={600} y={920} s={1.15} keys={[{at: 0, pose: 'shock', expr: 'worried', look: 0.6}]} />
-          <G2 x={1260} y={400} s={P(A('c6e'))}>
-            <rect x={-260} y={-140} width={520} height={280} rx={24} fill={C.yellow} stroke={C.ink} strokeWidth={6} />
-            <Text y={-60} size={48}>Dave spent</Text>
-            <Text y={20} size={70} color={C.red}>$235</Text>
-            <Text y={90} size={40} color={C.ink}>in 3 weeks</Text>
-          </G2>
-          <DamageMeter x={1700} y={90} s={0.8} value={f >= hun ? '$234.95' : '$134.96'} flash={f >= hun ? 1 : 0} />
+          <SourceCard x={460} y={540} s={0.95 * P(A('c6e')) * bump(ep, 0.06)} org="FTC" sub="vs. Epic Games (Fortnite)" title={['dark patterns', 'order']} stat="2022" />
+          <Box x={1260} y={440} w={720} h={340} s={P(A('c6e')) * bump(ml, 0.12)} fill={f >= ml ? C.yellow : '#fff'}>
+            <Text y={-90} size={40} color={GRAY}>refunds to players</Text>
+            <Text y={30} size={110} color={C.red}>{f >= ml ? '$245 MILLION' : '$ ? MILLION'}</Text>
+          </Box>
+          {T(1260, 760, 'buttons that tricked players into purchases', 38, C.navy, bump(tr, 0.1), lt(tr, 0.4))}
+          <SourceTag f={f} at={ep} text="FTC (Dec 2022): Epic Games to pay $245 million for dark patterns and unwanted charges" />
         </Svg>
       </AbsoluteFill>
     ));
   }
   {
-    const pace = w('c6f', 'close');
-    const four = w('c6f', 'a');
-    q(pace, 'tick', 0.5);
-    q(four, 'stamp', 0.8);
+    const cl = w('c6f', 'close');
+    const tw = w('c6f', 'two');
+    const bt = w('c6f', 'button');
+    q(cl, 'heart', 0.5);
+    q(tw, 'tick', 0.5);
+    q(bt, 'sting', 0.7);
     scene(A('c6f'), () => (
       <AbsoluteFill>
         <Board />
         <Svg>
-          <G2 x={960} y={360} s={P(A('c6f'))}>
-            <Text y={-80} size={50}>at that pace</Text>
-            <rect x={-280} y={10} width={560} height={180} rx={24} fill={f >= four ? C.yellow : '#fff'} stroke={C.ink} strokeWidth={6} />
-            <Text y={60} size={44}>about</Text>
-            <Text y={120} size={f >= four ? 90 : 70} color={f >= four ? C.red : C.ink}>$4,000</Text>
-          </G2>
-          <G2 x={960} y={680} s={P(A('c6f'))}><Text size={48} color={GRAY}>a year</Text></G2>
-          <DamageMeter x={1700} y={90} s={0.8} value="$234.95" />
+          <Clock f={f} x={300} y={300} s={1.2 * P(A('c6f')) * bump(tw, 0.1)} />
+          {T(300, 480, '2 A.M.', 50, C.navy, P(A('c6f')) * bump(tw, 0.1))}
+          <GamePhone f={f} x={960} y={540} s={1.2} glow={f >= bt ? 0.8 : 0.3} screen={<><Text y={-200} size={32} color={C.yellow}>SO CLOSE!</Text><DragonEgg y={-40} s={0.8} glow={1} /><rect x={-140} y={130} width={280} height={110} rx={20} fill={C.red} stroke={C.ink} strokeWidth={5} /><Text y={190} size={54} color="#fff">$99.99</Text></>} />
+          <Dave f={f} x={1500} y={930} s={1.15} flip keys={[{at: 0, pose: 'point_l', expr: 'tired', look: -0.6}]} sweat />
+          <G2 x={1500} y={380} s={P(A('c6f')) * bump(cl, 0.12)}><Bubble text="I'm so close..." size={42} tail="down" /></G2>
         </Svg>
       </AbsoluteFill>
     ));
   }
   {
-    const never = w('c6g', 'knight');
-    q(never, 'sting', 0.6);
+    const tap = w('c6g', 'tap');
+    const ef = w('c6g', 'eighty');
+    const gd = w('c6g', 'gold');
+    const kn = w('c6g', 'knight');
+    const dg = w('c6g', 'dragon');
+    q(tap, 'click', 0.8);
+    q(tap + 4, 'cash', 0.7);
+    q(ef, 'tick', 0.5);
+    q(gd, 'chime', 0.8);
+    q(kn, 'ding', 0.6);
+    q(dg, 'trombone', 0.6);
     scene(A('c6g'), () => (
       <AbsoluteFill>
         <Board />
         <Svg>
-          <G2 x={960} y={400} s={P(A('c6g'))}>
-            <rect x={-480} y={-140} width={960} height={280} rx={24} fill="#FFF3C4" stroke={C.ink} strokeWidth={6} />
-            <Text y={-60} size={50}>money he</Text>
-            <Text y={10} size={60} color={C.red}>NEVER FELT LEAVE</Text>
+          <Box x={360} y={420} w={440} h={260} s={P(A('c6g')) * bump(ef, 0.12)} fill={C.navy}>
+            <Text y={-50} size={44} color="#fff">PULL</Text>
+            <Text y={50} size={100} color={C.yellow}>{f >= ef ? '85' : '61'}</Text>
+          </Box>
+          <PullCard x={960} y={520} s={1.5 * P(A('c6g')) * bump(gd, 0.14)} item={f >= kn ? 'KNIGHT' : '? ? ?'} rarity={f >= gd ? 'legendary' : 'common'} rainbow={f >= gd ? 1 : 0} />
+          <Dave f={f} x={360} y={960} s={0.9} keys={[{at: 0, pose: 'typing', expr: 'tired', look: 0.6}, {at: gd, pose: 'celebrate', expr: 'money', look: 0.6}, {at: dg, pose: 'facepalm', expr: 'sad', look: 0}]} />
+          <G2 x={1500} y={520} s={bump(dg, 0.18)} o={lt(dg, 0.35)}><Stamp text="NOT THE DRAGON" color={C.red} size={52} r={-6} /></G2>
+        </Svg>
+      </AbsoluteFill>
+    ));
+  }
+  {
+    const cn = w('c6h', 'coin');
+    const ls = w('c6h', 'lost');
+    const gr = w('c6h', 'guaranteed');
+    q(cn, 'coin', 0.7);
+    q(ls, 'buzz', 0.6);
+    q(gr, 'pop', 0.5);
+    scene(A('c6h'), () => (
+      <AbsoluteFill>
+        <Board />
+        <Svg>
+          {T(860, 150, 'the fine print: a coin flip', 52, C.ink, P(A('c6h')))}
+          <G2 x={520} y={520} s={2.2 * P(A('c6h'))}>
+            <ellipse rx={90} ry={90 * Math.abs(Math.cos(f < ls ? f / 3 : 0))} fill={C.yellow} stroke={C.ink} strokeWidth={5} />
+            <Text y={4} size={44} color={C.ink}>{f >= ls ? 'LOST' : '50/50'}</Text>
           </G2>
-          <Dave f={f} x={420} y={920} s={1.05} keys={[{at: 0, pose: 'shock', expr: 'shock', look: 0.6}]} sweat />
-          <DamageMeter x={1700} y={90} s={0.8} value="$234.95" />
+          <Box x={1300} y={500} w={640} h={380} s={P(A('c6h')) * bump(gr, 0.12)} fill={f >= gr ? C.yellow : '#fff'}>
+            <Text y={-120} size={40} color={GRAY}>the dragon is now</Text>
+            <Text y={-30} size={60} color={C.red}>GUARANTEED</Text>
+            <Text y={70} size={44} color={C.ink}>within 90 MORE pulls</Text>
+          </Box>
+          <SourceTag f={f} at={cn} text="Genshin Impact published rules: 50% chance the 5-star is the featured one" />
+        </Svg>
+      </AbsoluteFill>
+    ));
+  }
+  {
+    const tw = w('c6i', 'two');
+    const zr = w('c6i', 'zero');
+    const dn = w('c6i', 'down');
+    q(tw, 'cash', 0.7);
+    q(zr, 'thud', 0.6);
+    q(dn, 'thud', 0.7);
+    scene(A('c6i'), () => (
+      <AbsoluteFill>
+        <Interior />
+        <Svg>
+          <Box x={760} y={600} w={520} h={220} s={P(A('c6i')) * bump(tw, 0.12)} fill={C.yellow}><Text y={6} size={110} color={C.red}>$235</Text></Box>
+          <Box x={1300} y={600} w={420} h={220} s={P(A('c6i'))}><Text y={-30} size={60} color={C.navy}>3 weeks</Text><Text y={50} size={44} color={C.red}>{f >= zr ? '0 dragons' : '? dragons'}</Text></Box>
+          <Dave f={f} x={480} y={940} s={1.15} keys={[{at: 0, pose: 'facepalm', expr: 'sad', look: 0}, {at: dn, pose: 'idle', expr: 'tired', look: 0.6}]} />
+          <GamePhone x={1040} y={900} s={0.3} r={f >= dn ? 90 : 0} />
         </Svg>
       </AbsoluteFill>
     ));
@@ -1102,111 +1267,141 @@ export const Ep54: React.FC = () => {
 
   // ============ CH7: Dave Fights Back ============
   {
-    const added = w('c7a', 'three');
-    const two35 = w('c7a', 'education');
-    q(added, 'paper', 0.5);
-    q(two35, 'stamp', 0.7);
+    const th = w('c7a', 'three');
+    const ed = w('c7a', 'education');
+    q(th, 'pop', 0.6);
+    q(ed, 'ding', 0.6);
     scene(A('c7a'), () => (
       <AbsoluteFill>
         <Board />
         <Svg>
-          <G2 x={600} y={360} s={P(A('c7a'))}>
-            <rect x={-220} y={-180} width={440} height={360} rx={20} fill="#fff" stroke={C.ink} strokeWidth={6} />
-            <Text y={-120} size={36} color={GRAY}>$4.99</Text>
-            <Text y={-70} size={36} color={GRAY}>$19.99</Text>
-            <Text y={-20} size={36} color={GRAY}>$9.99</Text>
-            <Text y={30} size={36} color={GRAY}>$99.99</Text>
-            <Text y={80} size={36} color={GRAY}>$99.99</Text>
-            <line x1={-180} y1={120} x2={180} y2={120} stroke={C.ink} strokeWidth={4} />
-          </G2>
-          <G2 x={1260} y={360} s={P(two35) * bump(two35, 0.14)} o={lt(two35, 0.4)}>
-            <rect x={-260} y={-120} width={520} height={240} rx={24} fill={C.yellow} stroke={C.ink} strokeWidth={6} />
-            <Text y={-40} size={60} color={C.red}>$234.95</Text>
-            <Text y={30} size={40} color={C.ink}>ONE NUMBER</Text>
-          </G2>
-          <Dave f={f} x={420} y={920} s={1.0} keys={[{at: 0, pose: 'typing', expr: 'suspicious', look: 0.6}]} />
-          <DamageMeter x={1700} y={90} s={0.8} value="$234.95" />
+          <G2 x={900} y={150} s={P(A('c7a')) * bump(ed, 0.08)}><Stamp text="EDUCATION, NOT ADVICE" color={C.navy} size={44} r={0} /></G2>
+          <Row x={420} y={340} s={0.85 * P(A('c7a'))} n={1} text="? ? ?" lit={0.5} />
+          <Row x={420} y={480} s={0.85 * P(A('c7a'))} n={2} text="? ? ?" lit={0.5} />
+          <Row x={420} y={620} s={0.85 * P(A('c7a'))} n={3} text="? ? ?" lit={0.5} />
+          <Dave f={f} x={1500} y={930} s={1.15} flip keys={[{at: 0, pose: 'hips', expr: 'neutral', look: -0.6}]} />
         </Svg>
       </AbsoluteFill>
     ));
   }
   {
-    const screen = w('c7c', 'screen');
-    const time = w('c7c', 'time');
-    const off = w('c7c', 'off');
-    q(screen, 'pop', 0.5);
-    q(off, 'click', 0.6);
+    const on = w('c7b', 'one');
+    const fv = w('c7b', 'five');
+    const ht = w('c7b', 'hurt');
+    q(on, 'pop', 0.6);
+    q(fv, 'paper', 0.5);
+    q(ht, 'stamp', 0.8);
+    scene(A('c7b'), () => (
+      <AbsoluteFill>
+        <Board />
+        <Svg>
+          {T(860, 150, 'ONE: ADD IT UP', 54, C.navy, P(A('c7b')) * bump(on, 0.1))}
+          <Box x={520} y={540} w={520} h={560} s={P(A('c7b')) * bump(fv, 0.06)}>
+            <Text y={-220} size={36} color={GRAY}>PURCHASE HISTORY</Text>
+            {['$4.99', '$19.99', '$9.99', '$99.99', '$99.99'].map((p, i) => <Text key={i} y={-140 + i * 70} size={46} color={C.ink}>{p}</Text>)}
+            <path d="M -200 200 H 200" stroke={C.ink} strokeWidth={5} />
+          </Box>
+          <Box x={1320} y={500} w={640} h={340} s={P(A('c7b')) * bump(ht, 0.14)} fill={f >= ht ? C.yellow : '#fff'}>
+            <Text y={-90} size={40} color={GRAY}>as ONE number</Text>
+            <Text y={40} size={120} color={C.red}>$234.95</Text>
+          </Box>
+          <Dave f={f} x={1320} y={980} s={0.75} keys={[{at: 0, pose: 'shock', expr: 'shock', look: -0.6}]} />
+        </Svg>
+      </AbsoluteFill>
+    ));
+  }
+  {
+    const tw = w('c7c', 'two');
+    const bp = w('c7c', 'bump');
+    const sc = w('c7c', 'screen');
+    const dl = w('c7c', 'deleted');
+    q(tw, 'pop', 0.6);
+    q(bp, 'thud', 0.5);
+    q(sc, 'click', 0.6);
+    q(dl, 'rip', 0.6);
     scene(A('c7c'), () => (
       <AbsoluteFill>
         <Board />
         <Svg>
-          <ScreenTimeIcon x={600} y={480} s={1.3 * P(A('c7c'))} />
-          <G2 x={1260} y={400} s={P(off)} o={lt(off, 0.4)}>
-            <rect x={-240} y={-100} width={480} height={200} rx={20} fill={C.red} stroke={C.ink} strokeWidth={6} />
-            <Text y={-30} size={44} color="#fff">IN-APP</Text>
-            <Text y={30} size={48} color="#fff">BLOCKED</Text>
+          {T(860, 150, 'TWO: A SPEED BUMP', 54, C.navy, P(A('c7c')) * bump(tw, 0.1) * bump(bp, 0.08))}
+          <ScreenTimeIcon x={360} y={460} s={1.5 * P(A('c7c')) * bump(sc, 0.12)} />
+          {T(360, 660, 'in-app purchases:', 38, GRAY, P(A('c7c')))}
+          {T(360, 730, 'OFF', 60, C.green, P(A('c7c')) * bump(sc, 0.14))}
+          <Box x={900} y={500} w={420} h={320} s={P(A('c7c'))}>
+            <Text y={-90} size={36} color={GRAY}>every purchase</Text>
+            <Text y={0} size={50} color={C.navy}>ASK FOR</Text>
+            <Text y={70} size={50} color={C.navy}>PASSWORD</Text>
+          </Box>
+          <G2 x={1440} y={500} s={1.4 * P(A('c7c'))} r={f >= dl ? -8 : 0}>
+            <rect x={-150} y={-95} width={300} height={190} rx={18} fill="#5C7CFA" stroke={C.ink} strokeWidth={6} />
+            <rect x={-150} y={-55} width={300} height={36} fill={C.ink} />
+            <Text y={50} size={30} color="#fff">SAVED CARD</Text>
           </G2>
-          <G2 x={960} y={160} s={bump(screen, 0.12)}><Text size={50}>SPEED BUMP</Text></G2>
-          <G2 x={960} y={820} s={0.9} o={lt(w('c7c', 'in'), 0.4)}><Text size={28} color={GRAY}>Source: Apple Support</Text></G2>
-          <DamageMeter x={1700} y={90} s={0.8} value="$234.95" />
+          <G2 x={1440} y={500} s={0.4 * bump(dl, 0.2)} o={lt(dl, 0.0001)}><XMark /></G2>
+          <SourceTag f={f} at={sc} text="Apple Support: Screen Time > In-App Purchases | Google Play: require authentication" />
         </Svg>
       </AbsoluteFill>
     ));
   }
   {
-    const dollar = w('c7d', 'dollar');
-    const before = w('c7d', 'before');
-    q(dollar, 'pop', 0.5);
-    q(before, 'pop', 0.5);
+    const th = w('c7d', 'three');
+    const dr = w('c7d', 'dollar');
+    const gf = w('c7d', 'gift');
+    q(th, 'pop', 0.6);
+    q(dr, 'cash', 0.6);
+    q(gf, 'ding', 0.6);
     scene(A('c7d'), () => (
       <AbsoluteFill>
         <Board />
         <Svg>
-          <DollarRule x={960} y={400} s={1.0 * P(A('c7d'))} gems={160} dollars="$2" />
-          <G2 x={960} y={680} s={P(before)} o={lt(before, 0.4)}><Text size={44} color={C.navy}>turns gems back to dollars</Text></G2>
-          <DamageMeter x={1700} y={90} s={0.8} value="$234.95" />
+          {T(860, 150, 'THREE: THE DOLLAR RULE', 54, C.navy, P(A('c7d')) * bump(th, 0.1))}
+          <DollarRule x={540} y={460} s={1.5 * P(A('c7d')) * bump(dr, 0.1)} gems={160} dollars="$2" />
+          {T(600, 660, 'turn gems back into dollars first', 42, C.ink, P(A('c7d')), lt(dr, 0.4))}
+          <GiftCard x={1440} y={500} s={1.2 * P(A('c7d')) * bump(gf, 0.12)} value="$20" />
+          {T(1440, 720, 'the whole budget, per month', 38, C.ink, P(A('c7d')), lt(gf, 0.4))}
+          <Dave f={f} x={980} y={960} s={0.85} keys={[{at: 0, pose: 'thumbs', expr: 'happy', look: 0.6}]} />
         </Svg>
       </AbsoluteFill>
     ));
   }
   {
-    const old = w('c7e', 'old');
-    const gift = w('c7e', 'gift');
-    const saved = w('c7e', 'keeps');
-    const flip = saved + 10;
-    q(old, 'pop', 0.5);
-    q(gift, 'pop', 0.5);
-    q(flip, 'chime', 0.7);
+    const fr = w('c7e', 'four');
+    const tw = w('c7e', 'two');
+    const kp = w('c7e', 'keeps');
+    q(fr, 'pop', 0.6);
+    q(tw, 'pop2', 0.6);
+    q(kp, 'chime', 0.8);
     scene(A('c7e'), () => (
       <AbsoluteFill>
         <Board />
         <Svg>
-          <G2 x={460} y={320} s={P(A('c7e'))}><Text size={44} color={C.red}>old pace: $4,000/yr</Text></G2>
-          <GiftCard x={460} y={600} s={0.9 * P(gift)} value="$20/mo" o={lt(gift, 0.4)} />
-          <G2 x={1300} y={460} s={P(gift)} o={lt(gift, 0.4)}>
-            <Text y={-40} size={44}>new budget:</Text>
-            <Text y={20} size={54} color={C.green}>$240/yr</Text>
-          </G2>
-          <DamageMeter x={1700} y={90} s={0.8} value="$234.95" saved={f >= flip ? "~$3,800/yr" : undefined} />
+          {T(700, 150, 'per year', 50, GRAY, P(A('c7e')))}
+          <G2 x={420} y={900}><Bar h={560} w={300} color={C.red} label="old pace" value={f >= fr ? '$4,000' : '?'} /></G2>
+          <G2 x={900} y={900}><Bar h={60} w={300} color={C.green} label="gift card" value={f >= tw ? '$240' : '?'} /></G2>
+          <Box x={1460} y={520} w={540} h={360} s={P(A('c7e')) * bump(kp, 0.16)} fill={f >= kp ? '#E3F6EA' : '#fff'}>
+            <Text y={-100} size={40} color={GRAY}>Dave keeps about</Text>
+            <Text y={30} size={110} color={C.green}>{f >= kp ? '$3,800' : '$ ?'}</Text>
+          </Box>
         </Svg>
       </AbsoluteFill>
     ));
   }
   {
-    const still = w('c7f', 'still');
-    q(still, 'pop', 0.5);
+    const qs = w('c7f', 'question');
+    const cs = w('c7f', 'cost');
+    q(qs, 'pop2', 0.5);
+    q(cs, 'sting', 0.7);
     scene(A('c7f'), () => (
       <AbsoluteFill>
         <Board />
         <Svg>
-          <DragonEgg x={600} y={500} s={1.3 * P(A('c7f'))} glow={0.8} />
-          <G2 x={1300} y={400} s={P(still) * bump(still, 0.14)} o={lt(still, 0.4)}>
-            <Text y={-40} size={48}>what did the</Text>
-            <Text y={20} size={54} color={C.red}>DRAGON</Text>
-            <Text y={80} size={48}>actually cost?</Text>
-          </G2>
-          <Dave f={f} x={420} y={920} s={1.05} keys={[{at: 0, pose: 'think', expr: 'suspicious', look: 0.6}]} />
-          <DamageMeter x={1700} y={90} s={0.8} value="" saved="~$3,800/yr" />
+          <Dave f={f} x={420} y={930} s={1.2} keys={[{at: 0, pose: 'think', expr: 'think', look: 0.6}]} />
+          <DragonEgg x={960} y={540} s={1.9 * P(A('c7f'))} glow={0.6} />
+          <Box x={1460} y={520} w={480} h={340} s={P(A('c7f')) * bump(cs, 0.14)} fill={C.yellow}>
+            <Text y={-90} size={36} color={GRAY}>what did the dragon</Text>
+            <Text y={-40} size={36} color={GRAY}>actually cost?</Text>
+            <Text y={70} size={110} color={C.red}>$ ? ? ?</Text>
+          </Box>
         </Svg>
       </AbsoluteFill>
     ));
@@ -1214,115 +1409,109 @@ export const Ep54: React.FC = () => {
 
   // ============ CH8: The Real Price ============
   {
-    const used = w('c8a', 'used');
-    q(used, 'pop', 0.5);
+    const rl = w('c8a', 'rule');
+    q(rl, 'cash', 0.6);
     scene(A('c8a'), () => (
       <AbsoluteFill>
-        <Board />
+        <Interior />
         <Svg>
-          <DollarRule x={960} y={400} s={1.1 * P(A('c8a'))} gems={160} dollars="$2" />
-          <G2 x={960} y={680} s={bump(used, 0.12)}><Text size={48}>DOLLAR RULE</Text></G2>
-          <DamageMeter x={1700} y={90} s={0.8} value="" saved="~$3,800/yr" />
+          <Dave f={f} x={540} y={940} s={1.15} keys={[{at: 0, pose: 'point_r', expr: 'suspicious', look: 0.6}]} />
+          <G2 x={1060} y={520} s={P(A('c8a')) * bump(rl, 0.1)}>
+            <rect x={-360} y={-190} width={720} height={380} rx={24} fill="#fff" stroke={C.ink} strokeWidth={6} />
+            <Text y={-120} size={40} color={GRAY}>THE DOLLAR RULE, ON THE DRAGON</Text>
+            <DragonEgg x={-190} y={40} s={0.9} glow={0.6} />
+            <Text x={10} y={40} size={90} color={C.ink}>=</Text>
+            <Text x={190} y={40} size={100} color={C.red}>$ ?</Text>
+          </G2>
         </Svg>
       </AbsoluteFill>
     ));
   }
   {
-    const zero = w('c8b', 'zero');
-    const about = w('c8b', 'ninety');
-    q(zero, 'pop', 0.5);
-    q(about, 'pop', 0.5);
+    const zr = w('c8b', 'zero');
+    const nn = w('c8b', 'ninety');
+    const cn = w('c8b', 'coin');
+    q(zr, 'pop', 0.5);
+    q(nn, 'pop2', 0.5);
+    q(cn, 'coin', 0.6);
     scene(A('c8b'), () => (
       <AbsoluteFill>
         <Board />
         <Svg>
-          <G2 x={960} y={340} s={P(A('c8b'))}>
-            <rect x={-500} y={-140} width={1000} height={280} rx={24} fill="#fff" stroke={C.ink} strokeWidth={6} />
-            <Text y={-70} size={46}>Genshin Impact rules:</Text>
-            <Text y={0} size={50} color={f >= zero ? C.red : C.ink}>0.6%</Text>
-            <Text y={60} size={40} color={GRAY}>about 1 in 167</Text>
-          </G2>
-          <G2 x={960} y={640} s={0.9} o={lt(about, 0.4)}><Text size={28} color={GRAY}>Source: Genshin Impact</Text></G2>
-          <DamageMeter x={1700} y={90} s={0.8} value="" saved="~$3,800/yr" />
+          {T(860, 150, 'the published rules', 50, GRAY, P(A('c8b')))}
+          <Row x={420} y={340} s={0.9 * P(A('c8b'))} n={1} text="0.6% chance per pull" lit={f >= zr ? 1 : 0.4} />
+          <Row x={420} y={490} s={0.9 * P(A('c8b'))} n={2} text="a legendary by pull 90" lit={f >= nn ? 1 : 0.4} />
+          <Row x={420} y={640} s={0.9 * P(A('c8b'))} n={3} text="then a 50/50 coin flip" lit={f >= cn ? 1 : 0.4} />
+          <Dave f={f} x={1560} y={930} s={1.1} flip keys={[{at: 0, pose: 'point_l', expr: 'think', look: -0.6}]} />
+          <SourceTag f={f} at={zr} text="Genshin Impact published wish rates and rules" />
         </Svg>
       </AbsoluteFill>
     ));
   }
   {
-    const each = w('c8c', 'each');
-    const eighty = w('c8c', 'eight');
-    q(each, 'pop', 0.5);
-    q(eighty, 'pop', 0.5);
+    const sx = w('c8c', 'sixty');
+    const eg = w('c8c', 'eight');
+    const tw = w('c8c', 'two');
+    q(sx, 'pop', 0.5);
+    q(eg, 'pop2', 0.5);
+    q(tw, 'stamp', 0.8);
     scene(A('c8c'), () => (
       <AbsoluteFill>
         <Board />
         <Svg>
-          <G2 x={600} y={360} s={P(A('c8c'))}>
-            <Text y={-60} size={40}>1 pull =</Text>
-            <Text y={0} size={50}>160 gems</Text>
-          </G2>
-          <G2 x={1260} y={360} s={P(eighty)} o={lt(eighty, 0.4)}>
-            <Text y={-60} size={40}>8080 gems =</Text>
-            <Text y={0} size={50} color={C.red}>$99.99</Text>
-          </G2>
-          <G2 x={960} y={680} s={P(eighty)} o={lt(eighty, 0.4)}><Text size={48} color={C.navy}>1 pull ≈ $2</Text></G2>
-          <DamageMeter x={1700} y={90} s={0.8} value="" saved="~$3,800/yr" />
+          <Box x={400} y={420} w={480} h={300} s={P(A('c8c')) * bump(sx, 0.1)}><Text y={-60} size={40} color={GRAY}>1 pull =</Text><Text y={40} size={80} color="#5C4A8C">160 gems</Text></Box>
+          <GemPack x={960} y={440} s={1.15 * P(A('c8c')) * bump(eg, 0.1)} price="$99.99" gems={8080} />
+          <Box x={1480} y={440} w={480} h={340} s={P(A('c8c')) * bump(tw, 0.16)} fill={f >= tw ? C.yellow : '#fff'}>
+            <Text y={-90} size={40} color={GRAY}>so every pull is</Text>
+            <Text y={40} size={120} color={C.red}>{f >= tw ? '~$2' : '$ ?'}</Text>
+          </Box>
+          {T(960, 800, '$99.99 / 8,080 gems x 160', 40, GRAY, P(A('c8c')))}
         </Svg>
       </AbsoluteFill>
     ));
   }
   {
-    const worst = w('c8d', 'worst');
-    const lose = w('c8d', 'lose');
-    const ninety = w('c8d', 'ninety');
-    q(worst, 'pop', 0.5);
-    q(lose, 'buzz', 0.6);
-    q(ninety, 'pop', 0.5);
+    const wc = w('c8d', 'worst');
+    const ls = w('c8d', 'lose');
+    const ef = w('c8d', 'eighty');
+    q(wc, 'pop', 0.5);
+    q(ls, 'buzz', 0.5);
+    q(ef, 'stamp', 0.8);
     scene(A('c8d'), () => (
       <AbsoluteFill>
         <Board />
         <Svg>
-          <G2 x={960} y={300} s={P(A('c8d'))}>
-            <Text y={-80} size={48} color={GRAY}>worst case</Text>
-            <Text y={-20} size={46}>pull 90</Text>
-            <Text y={40} size={f >= lose ? 50 : 44} color={f >= lose ? C.red : C.ink}>lose coin flip</Text>
-            <Text y={100} size={46}>+ 90 more</Text>
-          </G2>
-          <G2 x={960} y={600} s={P(ninety) * bump(ninety, 0.14)} o={lt(ninety, 0.4)}>
-            <rect x={-220} y={-70} width={440} height={140} rx={20} fill={C.yellow} stroke={C.ink} strokeWidth={6} />
-            <Text y={-20} size={60} color={C.red}>180</Text>
-            <Text y={40} size={44} color={C.ink}>pulls</Text>
-          </G2>
-          <DamageMeter x={1700} y={90} s={0.8} value="" saved="~$3,800/yr" />
+          {T(860, 150, 'WORST CASE', 56, C.red, P(A('c8d')) * bump(wc, 0.1))}
+          <Box x={380} y={480} w={420} h={300} s={P(A('c8d'))}><Text y={-50} size={40} color={GRAY}>reach</Text><Text y={50} size={80} color={C.navy}>pull 90</Text></Box>
+          {T(660, 480, '+', 90, C.ink, P(A('c8d')))}
+          <Box x={940} y={480} w={420} h={300} s={P(A('c8d')) * bump(ls, 0.12)} fill={f >= ls ? '#FFE3EA' : '#fff'}><Text y={-50} size={40} color={GRAY}>lose coin flip</Text><Text y={50} size={80} color={C.red}>+90</Text></Box>
+          {T(1220, 480, '=', 90, C.ink, P(A('c8d')))}
+          <Box x={1500} y={480} w={420} h={300} s={P(A('c8d')) * bump(ef, 0.16)} fill={f >= ef ? C.yellow : '#fff'}><Text y={-50} size={40} color={GRAY}>pulls</Text><Text y={50} size={110} color={C.red}>{f >= ef ? '180' : '?'}</Text></Box>
         </Svg>
       </AbsoluteFill>
     ));
   }
+  const WIN = w('c8e', 'fifty') + 16;
   {
-    const eighty = w('c8e', 'eighty');
-    const two = w('c8e', 'two');
-    const real = w('c8e', 'real');
-    const three56 = w('c8e', 'three');
-    const land = three56 + 20;
-    q(eighty, 'tick', 0.5);
-    q(two, 'tick', 0.5);
-    q(three56, 'tick', 0.5);
-    q(land, 'stamp', 0.9);
+    const pl = w('c8e', 'pulls');
+    const pr = w('c8e', 'price');
+    q(pl, 'pop', 0.5);
+    q(pr, 'tick', 0.5);
+    q(WIN, 'stamp', 0.9);
     scene(A('c8e'), () => {
-      const n = Math.round(lerp(0, 356, ease(f, three56, land)));
-      const sk = shake(f, land, 18, 16);
+      const sk = shake(f, WIN, 16, 14);
+      const n = Math.round(lerp(0, 356, ease(f, pr, WIN)));
       return (
         <AbsoluteFill>
           <Board />
-          <Cam f={f} keys={[[land, 1, 960, 540], [land + 10, 1.12, 960, 540]]}>
+          <Cam f={f} keys={[[WIN, 1, 960, 540], [WIN + 10, 1.1, 960, 520]]}>
             <Svg>
-              <G2 x={960} y={160} s={P(A('c8e'))}><Text size={48} color={GRAY}>180 pulls × $2</Text></G2>
-              <G2 x={960 + sk.x} y={440 + sk.y} s={P(A('c8e'))}>
-                <rect x={-420} y={-180} width={840} height={360} rx={30} fill={f >= land ? C.yellow : '#fff'} stroke={C.ink} strokeWidth={6} />
-                <Text y={-60} size={f >= real ? 50 : 44} color={f >= real ? C.red : C.ink}>DRAGON'S REAL PRICE</Text>
-                <Text y={30} size={f >= land ? 130 : 100} color={f >= land ? C.red : C.ink}>{money(n)}</Text>
-              </G2>
-              <DamageMeter x={1700} y={90} s={0.8} value="" saved="~$3,800/yr" />
+              {T(860, 150, '180 pulls x about $2', 54, C.ink, P(A('c8e')) * bump(pl, 0.08))}
+              <DragonEgg x={380} y={540} s={1.7 * P(A('c8e'))} glow={1} open={f >= WIN ? 1 : 0} />
+              <Box x={1100 + sk.x} y={520 + sk.y} w={900} h={420} s={P(A('c8e'))} fill={C.yellow}>
+                <Text y={-130} size={44} color={GRAY}>THE DRAGON'S REAL PRICE: UP TO</Text>
+                <Text y={50} size={220} color={C.red}>{f >= pr ? money(n) : '$ ? ? ?'}</Text>
+              </Box>
             </Svg>
           </Cam>
         </AbsoluteFill>
@@ -1330,110 +1519,42 @@ export const Ep54: React.FC = () => {
     });
   }
   {
-    const banner = w('c8f', 'banner');
-    const said = w('c8f', 'said');
-    const never = w('c8f', 'never');
-    const three = w('c8f', 'three');
-    q(banner, 'pop', 0.5);
-    q(said, 'pop', 0.5);
-    q(never, 'stamp', 0.7);
+    const bn = w('c8f', 'banner');
+    const nv = w('c8f', 'never');
+    const bz = w('c8f', 'business');
+    q(bn, 'pop', 0.5);
+    q(nv, 'buzz', 0.6);
+    q(bz, 'stamp', 0.8);
     scene(A('c8f'), () => (
       <AbsoluteFill>
         <Board />
         <Svg>
-          <BannerAd f={f} x={600} y={460} s={0.85 * P(A('c8f'))} />
-          <G2 x={1300} y={300} s={P(said) * bump(said, 0.1)} o={lt(said, 0.4)}><Text size={46}>said: 160 gems</Text></G2>
-          <G2 x={1300} y={540} s={P(never) * bump(never, 0.16)} o={lt(never, 0.4)}>
-            <rect x={-260} y={-100} width={520} height={200} rx={20} fill={C.red} stroke={C.ink} strokeWidth={6} />
-            <Text y={-30} size={44} color="#fff">NEVER SAID</Text>
-            <Text y={30} size={50} color={C.yellow}>$356</Text>
-          </G2>
-          <DamageMeter x={1700} y={90} s={0.8} value="" saved="~$3,800/yr" />
+          <BannerAd f={f} x={480} y={460} s={1.0 * P(A('c8f')) * bump(bn, 0.06)} />
+          <GemDisplay x={480} y={780} s={2.2 * P(A('c8f'))} gems={160} highlight={1} />
+          <Box x={1320} y={420} w={640} h={320} s={P(A('c8f')) * bump(nv, 0.12)} fill="#FFE3EA">
+            <Text y={-80} size={40} color={GRAY}>it never said</Text>
+            <Text y={40} size={130} color={C.red}>$356</Text>
+          </Box>
+          <G2 x={1320} y={760} s={bump(bz, 0.18)} o={lt(bz, 0.35)}><Stamp text="THAT'S THE BUSINESS" color={C.red} size={52} r={-4} /></G2>
         </Svg>
       </AbsoluteFill>
     ));
   }
   {
-    const playing = w('c8g', 'playing');
-    const dave = w('c8g', 'dave');
-    const kept = w('c8g', 'kept');
-    q(playing, 'sting', 0.6);
-    q(dave, 'stamp', 0.7);
-    q(kept, 'pop', 0.5);
+    const pg = w('c8g', 'playing', 1);
+    const sc = w('c8g', 'score');
+    q(pg, 'sting', 0.7);
+    q(sc, 'cash', 0.6);
     scene(A('c8g'), () => (
       <AbsoluteFill>
         <Board />
         <Svg>
-          <G2 x={960} y={400} s={P(A('c8g'))}>
-            <rect x={-520} y={-180} width={1040} height={360} rx={24} fill="#FFF3C4" stroke={C.ink} strokeWidth={6} />
-            <Text y={-100} size={f >= playing ? 54 : 48} color={f >= playing ? C.red : C.ink}>DAVE WASN'T</Text>
-            <Text y={-40} size={f >= playing ? 54 : 48} color={f >= playing ? C.red : C.ink}>PLAYING THE GAME</Text>
-            <Text y={40} size={f >= dave ? 60 : 50} color={f >= dave ? C.red : C.ink}>THE GAME WAS</Text>
-            <Text y={100} size={f >= dave ? 60 : 50} color={f >= dave ? C.red : C.ink}>PLAYING DAVE</Text>
-          </G2>
-          <DamageMeter x={1700} y={90} s={0.8} value="" saved="~$3,800/yr" />
-        </Svg>
-      </AbsoluteFill>
-    ));
-  }
-
-  // ============ RECAP ============
-  {
-    const one = w('r1', 'one');
-    q(one, 'pop', 0.5);
-    scene(A('r1'), () => (
-      <AbsoluteFill>
-        <Board />
-        <Svg>
-          <G2 x={960} y={160} s={P(A('r1'))}><Text size={48} color={C.red}>WHAT DAVE LEARNED</Text></G2>
-          <G2 x={960} y={440} s={P(A('r1'))}>
-            <rect x={-540} y={-120} width={1080} height={240} rx={24} fill="#fff" stroke={C.ink} strokeWidth={6} />
-            <Text y={-50} size={48}>gems = dollars in costume</Text>
-            <Text y={20} size={46} color={C.navy}>take the costume off</Text>
-          </G2>
-          <DamageMeter x={1700} y={90} s={0.8} value="" saved="~$3,800/yr" />
-        </Svg>
-      </AbsoluteFill>
-    ));
-  }
-  {
-    const two = w('r2', 'two');
-    const four = w('r2', 'four');
-    q(two, 'pop', 0.5);
-    q(four, 'pop', 0.5);
-    scene(A('r2'), () => (
-      <AbsoluteFill>
-        <Board />
-        <Svg>
-          <G2 x={960} y={440} s={P(A('r2'))}>
-            <rect x={-560} y={-140} width={1120} height={280} rx={24} fill="#fff" stroke={C.ink} strokeWidth={6} />
-            <Text y={-70} size={f >= four ? 50 : 46}>about 4 in 100 pay for everyone</Text>
-            <Text y={0} size={46}>the game hunts</Text>
-            <Text y={60} size={52} color={C.red}>WHALES</Text>
-          </G2>
-          <DamageMeter x={1700} y={90} s={0.8} value="" saved="~$3,800/yr" />
-        </Svg>
-      </AbsoluteFill>
-    ));
-  }
-  {
-    const three = w('r3', 'three');
-    const bump = w('r3', 'bump');
-    const two = w('r3', 'two');
-    q(three, 'pop', 0.5);
-    q(bump, 'pop', 0.5);
-    q(two, 'tick', 0.5);
-    scene(A('r3'), () => (
-      <AbsoluteFill>
-        <Board />
-        <Svg>
-          <G2 x={960} y={440} s={P(A('r3'))}>
-            <rect x={-560} y={-140} width={1120} height={280} rx={24} fill="#fff" stroke={C.ink} strokeWidth={6} />
-            <Text y={-70} size={48}>build the speed bump</Text>
-            <Text y={0} size={50} color={C.red}>BEFORE 2 AM</Text>
-            <Text y={70} size={44} color={GRAY}>not during</Text>
-          </G2>
-          <DamageMeter x={1700} y={90} s={0.8} value="" saved="~$3,800/yr" />
+          <Dave f={f} x={420} y={930} s={1.2} keys={[{at: 0, pose: 'idle', expr: 'neutral', look: 0.6}, {at: pg, pose: 'shrug', expr: 'tired', look: 0.6}]} />
+          <GamePhone f={f} x={960} y={540} s={1.15} glow={0.5} screen={<><Text y={-200} size={34} color={C.yellow}>PLAYER: DAVE</Text><Text y={-80} size={40} color="#fff">SCORE</Text><Text y={20} size={70} color={C.red}>$234.95</Text><Text y={160} size={30} color="#C9D6E6">(his bank account)</Text></>} />
+          <Box x={1480} y={480} w={520} h={340} s={P(A('c8g')) * bump(pg, 0.14)} fill={f >= pg ? C.yellow : '#fff'}>
+            <Text y={-70} size={44} color={C.ink}>the game was</Text>
+            <Text y={30} size={60} color={C.red}>PLAYING DAVE</Text>
+          </Box>
         </Svg>
       </AbsoluteFill>
     ));
@@ -1441,55 +1562,94 @@ export const Ep54: React.FC = () => {
 
   // ============ OUTRO ============
   {
-    const next = w('r4', 'next');
-    const bob = w('r4', 'bob');
-    const divorce = w('r4', 'divorced');
-    q(next, 'pop', 0.5);
-    q(bob, 'pop', 0.5);
-    q(divorce, 'pop', 0.5);
-    scene(A('r4'), () => (
+    const a = A('r1');
+    const b = A('r2');
+    const c = A('r3');
+    q(a + 4, 'pop', 0.6);
+    q(b + 4, 'pop', 0.6);
+    q(c + 4, 'pop', 0.6);
+    scene(a, () => (
       <AbsoluteFill>
         <Board />
         <Svg>
-          <G2 x={960} y={400} s={P(A('r4'))}>
-            <Text y={-80} size={48}>next time:</Text>
-            <Text y={-10} size={52} color={f >= bob ? C.navy : C.ink}>BOB IS GETTING DIVORCED</Text>
-            <Text y={60} size={44} color={GRAY}>lawyer says it'll be quick</Text>
-            <Text y={120} size={48} color={f >= divorce ? C.red : C.ink}>will it?</Text>
-          </G2>
-          <DamageMeter x={1700} y={90} s={0.8} value="" saved="~$3,800/yr" />
+          {T(860, 150, 'WHAT DAVE LEARNED', 56, C.navy, pop(f, a))}
+          <Row x={300} y={340} s={0.9 * pop(f, a)} n={1} text="gems are dollars in a costume" lit={1} w={1200} />
+          <Row x={300} y={500} s={0.9 * pop(f, a)} n={2} text="4 in 100 pay for everyone" lit={f >= b ? 1 : 0.35} w={1200} />
+          <Row x={300} y={660} s={0.9 * pop(f, a)} n={3} text="build the speed bump before 2 A.M." lit={f >= c ? 1 : 0.35} w={1200} />
+          <Dave f={f} x={1740} y={960} s={0.85} flip keys={[{at: 0, pose: 'thumbs', expr: 'grin', look: -0.6}]} />
         </Svg>
       </AbsoluteFill>
     ));
   }
   {
-    const free = w('r5', 'free');
-    const act = w('r5', 'actually');
-    const no = w('r5', 'no');
-    q(free, 'pop', 0.5);
-    q(act, 'chime', 0.6);
-    q(no, 'pop', 0.5);
+    const bb = w('r4', 'bob');
+    const qk = w('r4', 'quick');
+    const bl = w('r4', 'bill');
+    q(bb, 'pop', 0.5);
+    q(qk, 'ding', 0.5);
+    q(bl, 'sting', 0.7);
+    scene(A('r4'), () => (
+      <AbsoluteFill>
+        <Board />
+        <Svg>
+          {T(960, 150, 'NEXT TIME', 60, C.red, P(A('r4')))}
+          <Stick f={f} x={420} y={930} s={1.15} acc={['cap']} seed={21} keys={[{at: 0, pose: 'idle', expr: 'sad', look: 0.6}, {at: bl, pose: 'shock', expr: 'shock', look: 0.6}]} />
+          {T(420, 380, 'Bob', 44, GRAY, P(A('r4')) * bump(bb, 0.1))}
+          <Stick f={f} x={920} y={930} s={1.1} acc={['glasses', 'tie']} seed={44} flip keys={[{at: 0, pose: 'present', expr: 'smug', look: -0.6, talk: true}]} />
+          <G2 x={920} y={360} s={P(A('r4')) * bump(qk, 0.12)}><Bubble text="quick and simple!" size={42} tail="down" /></G2>
+          <Box x={1480} y={540} w={460} h={420} s={P(A('r4')) * bump(bl, 0.16)} fill={f >= bl ? C.yellow : '#fff'}>
+            <Text y={-140} size={40} color={GRAY}>THE FIRST BILL</Text>
+            <Text y={20} size={130} color={C.red}>{f >= bl ? '$ ! ! !' : '$ ?'}</Text>
+          </Box>
+        </Svg>
+      </AbsoluteFill>
+    ));
+  }
+  {
+    const sb = w('r5', 'subscribe');
+    const fe = w('r5', 'free');
+    q(sb + 14, 'click', 0.8);
+    q(sb + 18, 'ding', 0.7);
+    q(fe, 'chime', 0.5);
     scene(A('r5'), () => (
       <AbsoluteFill>
         <Board />
         <Svg>
-          <SubButton x={660} y={560} s={1.2 * P(A('r5'))} done={f > w('r5', 'subscribe') + 14 ? 1 : 0} />
-          <Bell x={1260} y={560} s={1.2 * P(A('r5'))} f={f} ring={f > w('r5', 'subscribe') + 16 && f < w('r5', 'subscribe') + 50 ? 1 : 0} />
-          <G2 x={960} y={200} s={P(A('r5'))}>
-            <Text y={-40} size={50}>subscribe</Text>
-            <Text y={20} size={f >= free ? 56 : 48} color={f >= free ? C.green : C.ink}>FREE. ACTUALLY FREE.</Text>
-            <Text y={100} size={44} color={GRAY}>no gems, no eggs, no coin flips</Text>
-          </G2>
-          <DamageMeter x={1700} y={90} s={0.8} value="" saved="~$3,800/yr" />
+          <SubButton x={860} y={400} s={1.4 * pop(f, A('r5'))} done={f > sb + 14 ? 1 : 0} />
+          <Bell x={1300} y={400} s={1.2 * pop(f, A('r5') + 4)} f={f} ring={f > sb + 16 && f < sb + 50 ? 1 : 0} />
+          <Dave f={f} x={380} y={900} s={1.25} keys={[{at: 0, pose: 'wave', expr: 'grin'}]} />
+          <DragonEgg x={1560} y={760} s={1.1 * pop(f, A('r5'))} open={1} />
+          {T(1000, 640, 'FREE. ACTUALLY FREE.', 56, C.green, pop(f, A('r5')) * bump(fe, 0.12))}
+          {T(1000, 740, 'no gems, no eggs, no coin flips', 44, GRAY, pop(f, A('r5')))}
         </Svg>
       </AbsoluteFill>
     ));
   }
 
+  // ============ DAMAGE METER (HUD) ============
+  const D_ON = A('o6');
+  const D1 = w('c1g', 'five');
+  const D2 = w('c2g', 'nineteen');
+  const D3 = w('c3e', 'buys');
+  const D4 = w('c4f', 'big');
+  const D5 = w('c6g', 'tap') + 4;
+  const SV = w('c7e', 'keeps');
+  [D1, D2, D3, D4, D5].forEach((d) => q(d + 4, 'cash', 0.45));
+  const dmg = f < D1 ? '$0' : f < D2 ? '$4.99' : f < D3 ? '$24.98' : f < D4 ? '$34.97' : f < D5 ? '$134.96' : '$234.95';
+  const inChapterCard = (t.chapters ?? []).some((c) => f >= Math.round(c.start * 30) - 4 && f < Math.round(c.start * 30) + CHAPTER_FRAMES + 4);
+  const SUB = we('c5h', 'paying') + 20;
+  const inSub = f >= SUB - 4 && f <= SUB + SUB_FRAMES + 4;
+  const showMeter = f >= D_ON && !inChapterCard && !inSub && f < A('r1');
+  subCues(SUB).forEach((c) => cues.push(c));
   return (
     <AbsoluteFill>
       <Scenes f={f} items={S} />
       <Vignette />
+      {showMeter && (
+        <Svg>
+          <DamageMeter x={1700} y={150} s={0.8 * [D1, D2, D3, D4, D5, SV].reduce((a, d) => a * bump(d, 0.15), 1)} value={dmg} saved={f >= SV ? '~$3,800/yr' : undefined} flash={[D1, D2, D3, D4, D5].some((d) => f >= d && f < d + 20) ? 1 : 0} />
+        </Svg>
+      )}
       <Progress f={f} t={t} />
       <ChapterCard f={f} t={t} />
       <SubReminder f={f} at={SUB} Dave={<Stick f={f} x={0} y={200} s={1} keys={[{at: 0, pose: 'point_r', expr: 'grin', look: 0.8}]} acc={['hair']} seed={7} />} />

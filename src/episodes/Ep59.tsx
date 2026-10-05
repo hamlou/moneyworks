@@ -15,7 +15,7 @@ import {Napkin} from '../props56';
 import {Contract} from '../props5';
 import {Dealership, TowTruck} from '../props23';
 import {Door, Gavel, Handset, Laptop} from '../props26';
-import {GymBuilding} from '../props28';
+import {WholesalerHQ} from '../props51';
 import {Handcuffs} from '../props30';
 import {People} from '../props35';
 import {Notif} from '../props38';
@@ -232,11 +232,11 @@ export const Ep59: React.FC = () => {
           <path d="M 960 240 V 1000" stroke={C.ink} strokeWidth={6} strokeDasharray="18 14" />
           <Dave f={f} x={480} y={900} s={1.15} keys={[{at: 0, pose: 'talk', expr: 'worried', look: 0.6, talk: true}]} />
           <Dad f={f} x={1400} y={900} s={1.15} flip keys={[{at: 0, pose: 'relax', expr: 'happy', look: -0.6}]} />
-          {T(480, 200, 'DAVE, 35', 48, GRAY, P(A('c1a')))}
-          {T(1300, 200, 'DAD', 48, GRAY, P(A('c1a')))}
-          <AgeBadge x={1400} y={400} s={1.2 * P(A('c1a')) * bump(sx, 0.16)} age="62" />
-          {T(1400, 540, 'stopped working', 42, C.green, P(A('c1a')), lt(sx, 0.4))}
-          <G2 x={480} y={400} s={bump(hw, 0.18)} o={lt(hw, 0.35)}><Bubble text="HOW?!" size={60} tail="down" /></G2>
+          {T(480, 160, 'DAVE, 35', 48, GRAY, P(A('c1a')))}
+          {T(1400, 160, 'DAD', 48, GRAY, P(A('c1a')))}
+          <AgeBadge x={1400} y={300} s={1.2 * P(A('c1a')) * bump(sx, 0.16)} age="62" />
+          {T(1400, 430, 'stopped working', 42, C.green, P(A('c1a')), lt(sx, 0.4))}
+          <G2 x={480} y={360} s={bump(hw, 0.18)} o={lt(hw, 0.35)}><Bubble text="HOW?!" size={60} tail="down" /></G2>
         </Svg>
       </AbsoluteFill>
     ));
@@ -323,7 +323,7 @@ export const Ep59: React.FC = () => {
           <G2 x={420} y={860}><Bar h={520} color={C.navy} label="1975" value="27M" /></G2>
           <G2 x={760} y={860}><Bar h={f >= el ? lerp(520, 212, ease(f, el, el + 18)) : 520} color={C.red} label="TODAY" value={f >= el ? '11M' : '?'} /></G2>
           {T(590, 180, 'pension workers', 46, GRAY, P(A('c1e')))}
-          <People x={1300} y={520} s={0.9 * P(A('c1e'))} n={7} hot={f >= on ? 1 : 0} />
+          <People x={1451} y={1002} s={1.8 * P(A('c1e'))} n={7} hot={f >= on ? 1 : 0} />
           {T(1300, 760, '1 in 7', 84, C.red, P(A('c1e')) * bump(sv, 0.14), lt(on, 0.4))}
           {T(1300, 850, 'even has access to one', 40, C.ink, P(A('c1e')), lt(on, 0.4))}
           <SourceTag f={f} at={on} text="DOL (2023): 11.1M | BLS Employee Benefits, March 2025: 14% of private workers" />
@@ -456,8 +456,8 @@ export const Ep59: React.FC = () => {
           <DreamBg />
           <Svg>
             <path d="M 120 900 H 1800" stroke={C.ink} strokeWidth={8} />
-            <Dave f={f} x={300 + 220 * ease(f, A('c2d'), mv)} y={890} s={1.0} walk keys={[{at: 0, pose: 'idle', expr: 'tired', look: 0.8}, {at: mv + 10, pose: 'shock', expr: 'shock', look: 0.8}]} sweat />
-            <G2 x={1000 + m * 520} y={660} s={1.0}><FinishLine label={m > 0.5 ? '67' : '65'} /></G2>
+            <Dave f={f} x={300 + 220 * ease(f, A('c2d'), mv)} y={890} s={1.3} walk keys={[{at: 0, pose: 'idle', expr: 'tired', look: 0.8}, {at: mv + 10, pose: 'shock', expr: 'shock', look: 0.8}]} sweat />
+            <G2 x={1000 + m * 520} y={600} s={1.4}><FinishLine label={m > 0.5 ? '67' : '65'} /></G2>
             <path d={`M 1000 960 H ${1000 + m * 520}`} stroke={C.red} strokeWidth={10} strokeDasharray="20 14" opacity={m} />
             {T(1260, 1000, '+2 MILES', 44, C.red, bump(tw, 0.16), m)}
             {T(960, 240, 'someone quietly moves the finish line', 48, C.ink, P(A('c2d')))}
@@ -540,7 +540,7 @@ export const Ep59: React.FC = () => {
         <Svg>
           <Dave f={f} x={320} y={920} s={1.05} keys={[{at: 0, pose: 'think', expr: 'think', look: 0.6}]} />
           <G2 x={320} y={400} s={P(A('c3b')) * bump(wn, 0.12)}><Bubble text="what do THEY have?" size={40} tail="down" /></G2>
-          <People x={960} y={600} s={0.8 * P(A('c3b'))} n={12} hot={0} />
+          <People x={900} y={1059} s={1.7 * P(A('c3b'))} n={12} hot={0} />
           {T(960, 300, 'AGES 55 to 64', 64, C.navy, P(A('c3b')) * bump(ff, 0.12))}
           <G2 x={1420} y={640} s={0.9 * P(A('c3b')) * bump(fn, 0.1)}><FinishLine label="FINISH" /></G2>
         </Svg>
@@ -783,11 +783,11 @@ export const Ep59: React.FC = () => {
         <Board />
         <Svg>
           {T(960, 150, 'WITH A PENSION', 56, C.navy, P(A('c5b')))}
-          <Row x={860} y={340} s={0.9 * P(A('c5b'))} n={1} text="market crashes? company pays" lit={f >= cr ? 1 : 0.4} />
-          <Row x={860} y={480} s={0.9 * P(A('c5b'))} n={2} text="Dad lives to 100? company pays" lit={f >= hn ? 1 : 0.4} />
-          <GymBuilding x={420} y={780} s={0.7 * P(A('c5b')) * bump(st, 0.08)} />
-          <G2 x={420} y={600} s={bump(st, 0.16)} o={lt(st, 0.3)}><Stamp text="RISK" color={C.red} size={64} r={-6} /></G2>
-          {T(420, 960, 'THE COMPANY', 36, GRAY, P(A('c5b')))}
+          <Row x={520} y={340} s={0.9 * P(A('c5b'))} n={1} text="market crashes? company pays" lit={f >= cr ? 1 : 0.4} />
+          <Row x={520} y={480} s={0.9 * P(A('c5b'))} n={2} text="Dad lives to 100? company pays" lit={f >= hn ? 1 : 0.4} />
+          <WholesalerHQ x={420} y={780} s={0.6 * P(A('c5b')) * bump(st, 0.08)} label="THE COMPANY" />
+          <G2 x={420} y={520} s={bump(st, 0.16)} o={lt(st, 0.3)}><Stamp text="RISK" color={C.red} size={64} r={-6} /></G2>
+          
           <Dad f={f} x={1380} y={940} s={1.05} flip keys={[{at: 0, pose: 'relax', expr: 'happy', look: -0.6}]} />
         </Svg>
       </AbsoluteFill>
@@ -809,9 +809,9 @@ export const Ep59: React.FC = () => {
           <Board />
           <Svg>
             {T(960, 150, 'WITH A 401(k)', 56, C.red, P(A('c5c')))}
-            <Row x={860} y={320} s={0.85 * P(A('c5c'))} n={1} text="market crash? hits Dave" lit={f >= ht ? 1 : 0.4} color={C.red} />
-            <Row x={860} y={450} s={0.85 * P(A('c5c'))} n={2} text="lives to 100? Dave's problem" lit={f >= pb ? 1 : 0.4} color={C.red} />
-            <GymBuilding x={360} y={820} s={0.55 * P(A('c5c'))} />
+            <Row x={520} y={320} s={0.85 * P(A('c5c'))} n={1} text="market crash? hits Dave" lit={f >= ht ? 1 : 0.4} color={C.red} />
+            <Row x={520} y={450} s={0.85 * P(A('c5c'))} n={2} text="lives to 100? Dave's problem" lit={f >= pb ? 1 : 0.4} color={C.red} />
+            <WholesalerHQ x={360} y={800} s={0.55 * P(A('c5c'))} label="THE COMPANY" />
             <Dave f={f} x={1400} y={960} s={1.0} flip keys={[{at: 0, pose: 'idle', expr: 'worried', look: -0.6}, {at: on + 8, pose: 'carry', expr: 'tired', look: -0.6}]} sweat />
             <G2 x={lerp(360, 1400, m)} y={lerp(640, 600, m) - Math.sin(m * Math.PI) * 120} s={P(A('c5c')) * bump(on + 8, 0.2)}><Stamp text="RISK" color={C.red} size={64} r={-6} /></G2>
           </Svg>
@@ -851,9 +851,9 @@ export const Ep59: React.FC = () => {
         <Board />
         <Svg>
           {T(860, 150, 'TO BE FAIR: THE UPSIDES', 54, C.green, P(A('c5e')) * bump(fr, 0.08))}
-          <Row x={860} y={340} s={0.9 * P(A('c5e'))} n={1} text="Dave owns the money" lit={f >= ow ? 1 : 0.4} />
-          <Row x={860} y={480} s={0.9 * P(A('c5e'))} n={2} text="it follows him to a new job" lit={f >= kp ? 1 : 0.4} />
-          <Row x={860} y={620} s={0.9 * P(A('c5e'))} n={3} text="many companies add free money" lit={f >= fe ? 1 : 0.4} />
+          <Row x={520} y={340} s={0.9 * P(A('c5e'))} n={1} text="Dave owns the money" lit={f >= ow ? 1 : 0.4} />
+          <Row x={520} y={480} s={0.9 * P(A('c5e'))} n={2} text="it follows him to a new job" lit={f >= kp ? 1 : 0.4} />
+          <Row x={520} y={620} s={0.9 * P(A('c5e'))} n={3} text="many companies add free money" lit={f >= fe ? 1 : 0.4} />
           <Lunchbox x={420} y={860} s={1.0 * P(A('c5e')) * bump(fe, 0.12)} label="" open={1} />
           <Dave f={f} x={1500} y={960} s={1.0} flip keys={[{at: 0, pose: 'shrug', expr: 'neutral', look: -0.6}, {at: fe, pose: 'thumbs', expr: 'happy', look: -0.6}]} />
         </Svg>
@@ -939,7 +939,7 @@ export const Ep59: React.FC = () => {
         <Board />
         <Svg>
           <SourceCard x={480} y={540} s={0.95 * P(A('c6b')) * bump(rp, 0.06)} org="SOCIAL SECURITY" sub="Board of Trustees" title={['2026 Annual', 'Report']} stat="JUNE 2026" />
-          <People x={1240} y={420} s={0.7 * P(A('c6b'))} n={10} hot={0} />
+          <People x={1240} y={855} s={1.5 * P(A('c6b'))} n={10} hot={0} />
           {T(1240, 240, 'people working today', 42, C.ink, P(A('c6b')))}
           <path d="M 1240 560 V 700" stroke={C.green} strokeWidth={12} strokeDasharray="18 12" strokeDashoffset={-f * 2} />
           {T(1240, 760, 'payroll taxes', 46, C.green, P(A('c6b')) * bump(tx, 0.12))}
@@ -1056,12 +1056,12 @@ export const Ep59: React.FC = () => {
         <Board />
         <Svg>
           {T(860, 150, 'THE FIX? A POLITICAL QUESTION', 50, GRAY, P(A('c6g')))}
-          <Sign x={360} y={480} s={0.95 * P(A('c6g')) * bump(r1, 0.14)} text="RAISE TAXES?" color={C.navy} />
-          <Sign x={760} y={480} s={0.95 * P(A('c6g')) * bump(tm, 0.14)} text="TRIM BENEFITS?" color={C.red} />
-          <Sign x={1160} y={480} s={0.95 * P(A('c6g')) * bump(ag, 0.14)} text="RAISE THE AGE?" color={C.green} />
-          <Sign x={1560} y={480} s={0.95 * P(A('c6g')) * bump(mx, 0.14)} text="A MIX?" color={C.ink} />
-          <Scale x={960} y={760} s={0.9 * P(A('c6g'))} tilt={Math.sin(f / 20) * 0.3} />
-          {T(960, 960, 'now you know the numbers', 46, C.ink, bump(nm, 0.1), lt(nm, 0.4))}
+          <Sign x={520} y={330} s={0.8 * P(A('c6g')) * bump(r1, 0.14)} text="RAISE TAXES?" color={C.navy} />
+          <Sign x={1240} y={330} s={0.8 * P(A('c6g')) * bump(tm, 0.14)} text="TRIM BENEFITS?" color={C.red} />
+          <Sign x={520} y={520} s={0.8 * P(A('c6g')) * bump(ag, 0.14)} text="RAISE THE AGE?" color={C.green} />
+          <Sign x={1240} y={520} s={0.8 * P(A('c6g')) * bump(mx, 0.14)} text="A MIX?" color={C.ink} />
+          <Scale x={880} y={800} s={0.7 * P(A('c6g'))} tilt={Math.sin(f / 20) * 0.3} />
+          {T(1380, 800, 'now you know the numbers', 46, C.ink, bump(nm, 0.1), lt(nm, 0.4))}
         </Svg>
       </AbsoluteFill>
     ));
@@ -1147,10 +1147,10 @@ export const Ep59: React.FC = () => {
         <Board />
         <Svg>
           {T(500, 170, 'PLAN to work until 70+', 44, C.navy, P(A('c7c')))}
-          <People x={500} y={480} s={0.85 * P(A('c7c')) * bump(fr, 0.06)} n={10} hot={f >= fr ? 4 : 0} />
+          <People x={500} y={944} s={1.6 * P(A('c7c')) * bump(fr, 0.06)} n={10} hot={f >= fr ? 4 : 0} />
           {T(500, 800, '4 in 10', 90, C.navy, P(A('c7c')) * bump(fr, 0.12), lt(fr, 0.35))}
           {T(1300, 170, 'ACTUALLY did', 44, C.red, P(A('c7c')))}
-          <People x={1300} y={480} s={0.85 * P(A('c7c')) * bump(dd, 0.06)} n={10} hot={f >= on ? 1 : 0} />
+          <People x={1300} y={944} s={1.6 * P(A('c7c')) * bump(dd, 0.06)} n={10} hot={f >= on ? 1 : 0} />
           {T(1300, 800, '1 in 10', 90, C.red, P(A('c7c')) * bump(dd, 0.14), lt(on, 0.35))}
           <SourceTag f={f} at={fr} text="EBRI 2026 RCS: 39% of workers expect to retire at 70+ or never; 10% of retirees did" />
         </Svg>
@@ -1175,7 +1175,7 @@ export const Ep59: React.FC = () => {
           </Box>
           <Hospital x={1080} y={520} s={0.8 * P(A('c7d')) * bump(hl, 0.12)} name="HEALTH" />
           {T(1080, 800, 'a health problem', 40, C.ink, P(A('c7d')), lt(hl, 0.4))}
-          <GymBuilding x={1500} y={600} s={0.6 * P(A('c7d')) * bump(co, 0.12)} />
+          <WholesalerHQ x={1500} y={560} s={0.5 * P(A('c7d')) * bump(co, 0.12)} label="THE COMPANY" />
           {T(1500, 800, 'company changes', 40, C.ink, P(A('c7d')), lt(co, 0.4))}
           <SourceTag f={f} at={fs} text="EBRI 2026 RCS: 46% retired earlier than planned (41% health, 35% company changes)" />
         </Svg>
@@ -1246,9 +1246,9 @@ export const Ep59: React.FC = () => {
         <Board />
         <Svg>
           <G2 x={760} y={140} s={P(A('c8a')) * bump(ed, 0.08)}><Stamp text="EDUCATION, NOT ADVICE" color={C.navy} size={44} r={0} /></G2>
-          <Row x={760} y={340} s={0.85 * P(A('c8a'))} n={1} text="ask about the match" lit={f >= on ? 1 : 0.4} />
-          <Row x={760} y={470} s={0.85 * P(A('c8a'))} n={2} text="? ? ?" lit={0.4} />
-          <Row x={760} y={600} s={0.85 * P(A('c8a'))} n={3} text="? ? ?" lit={0.4} />
+          <Row x={420} y={340} s={0.85 * P(A('c8a'))} n={1} text="ask about the match" lit={f >= on ? 1 : 0.4} />
+          <Row x={420} y={470} s={0.85 * P(A('c8a'))} n={2} text="? ? ?" lit={0.4} />
+          <Row x={420} y={600} s={0.85 * P(A('c8a'))} n={3} text="? ? ?" lit={0.4} />
           <Dave f={f} x={520} y={960} s={0.95} keys={[{at: 0, pose: 'hips', expr: 'neutral', look: 0.6}, {at: bo, pose: 'talk', expr: 'happy', look: 0.6, talk: true}]} />
           <Boss f={f} x={1380} y={960} s={0.95} flip keys={[{at: 0, pose: 'idle', expr: 'neutral', look: -0.6}]} />
         </Svg>
@@ -1333,9 +1333,9 @@ export const Ep59: React.FC = () => {
       <AbsoluteFill>
         <Board />
         <Svg>
-          <Row x={760} y={300} s={0.85 * P(A('c8e'))} n={1} text="grab the full match" lit={1} />
-          <Row x={760} y={430} s={0.85 * P(A('c8e'))} n={2} text="know the 62 / 67 / 70 dial" lit={1} />
-          <Row x={760} y={560} s={0.85 * P(A('c8e')) * bump(th, 0.06)} n={3} text={f >= br ? 'THE BORING LINE' : '? ? ?'} lit={f >= br ? 1 : 0.5} color={C.red} />
+          <Row x={420} y={300} s={0.85 * P(A('c8e'))} n={1} text="grab the full match" lit={1} />
+          <Row x={420} y={430} s={0.85 * P(A('c8e'))} n={2} text="know the 62 / 67 / 70 dial" lit={1} />
+          <Row x={420} y={560} s={0.85 * P(A('c8e')) * bump(th, 0.06)} n={3} text={f >= br ? 'THE BORING LINE' : '? ? ?'} lit={f >= br ? 1 : 0.5} color={C.red} />
           <Magnifier x={1420} y={600} s={1.3 * P(A('c8e')) * bump(br, 0.14)} />
           <Dave f={f} x={1420} y={960} s={0.9} flip keys={[{at: 0, pose: 'point_l', expr: 'suspicious', look: -0.6}]} />
         </Svg>
@@ -1424,6 +1424,8 @@ export const Ep59: React.FC = () => {
           <G2 x={980} y={900}><Bar h={f >= a2 ? lerp(60, 557, ease(f, a2, a2 + 20)) : 60} w={300} color={C.green} label="0.5% fees" value={f >= a2 ? '$227,000' : '?'} /></G2>
           <Dave f={f} x={1480} y={940} s={1.05} flip keys={[{at: 0, pose: 'think', expr: 'think', look: -0.6}, {at: a2, pose: 'shock', expr: 'shock', look: -0.6}]} />
           <SourceTag f={f} at={a1} text="U.S. Department of Labor, EBSA: A Look at 401(k) Plan Fees" />
+          <Raccoon f={f} x={1220} y={420} s={0.9 * P(A('c9d'))} mood="greedy" holdCoin grab={f >= a1 ? 1 : 0} />
+          {T(1380, 250, 'the gap: $64,000', 46, C.red, bump(a2, 0.14), f >= a2 ? 1 : 0.0001)}
         </Svg>
       </AbsoluteFill>
     ));
@@ -1473,10 +1475,12 @@ export const Ep59: React.FC = () => {
           <Board />
           <Svg>
             <path d="M 120 900 H 1800" stroke={C.ink} strokeWidth={8} />
-            <G2 x={1500 - m * 280} y={660}><FinishLine label={m > 0.5 ? 'CLOSER' : '70'} /></G2>
-            <Dave f={f} x={1500 - m * 280 - 170} y={890} s={1.0} keys={[{at: 0, pose: 'idle', expr: 'happy', look: 0.6}, {at: mv, pose: 'point_r', expr: 'grin', look: 0.6}]} />
+            <G2 x={1500 - m * 280} y={600} s={1.4}><FinishLine label={m > 0.5 ? 'CLOSER' : '70'} /></G2>
+            <Dave f={f} x={1500 - m * 280 - 170} y={890} s={1.3} keys={[{at: 0, pose: 'idle', expr: 'happy', look: 0.6}, {at: mv, pose: 'point_r', expr: 'grin', look: 0.6}]} />
             {T(760, 240, 'not back to 62', 50, GRAY, P(A('c9f')) * bump(jp, 0.08))}
             {T(760, 360, 'but Dave is the one moving it', 54, C.green, bump(fs, 0.12), lt(fs, 0.35))}
+            <MoneyStack x={420} y={760} s={1.2 * P(A('c9f'))} n={6} label="+$64,000" />
+            <Lunchbox x={420} y={500} s={1.1 * P(A('c9f'))} label="" open={1} />
           </Svg>
         </AbsoluteFill>
       );
@@ -1496,10 +1500,10 @@ export const Ep59: React.FC = () => {
         <Board />
         <Svg>
           {T(860, 150, 'WHAT DAVE LEARNED', 56, C.navy, pop(f, a))}
-          <Row x={860} y={340} s={0.9 * pop(f, a)} n={1} text="the finish line and the risk moved onto you" lit={1} w={1200} />
-          <Row x={860} y={500} s={0.9 * pop(f, a)} n={2} text="working until 70 is a hope, not a plan" lit={f >= b ? 1 : 0.35} w={1200} />
-          <Row x={860} y={660} s={0.9 * pop(f, a)} n={3} text="grab the match, check the boring line" lit={f >= c ? 1 : 0.35} w={1200} />
-          <Dave f={f} x={1640} y={960} s={0.95} flip keys={[{at: 0, pose: 'thumbs', expr: 'grin', look: -0.6}]} />
+          <Row x={300} y={340} s={0.9 * pop(f, a)} n={1} text="the finish line and the risk moved to you" lit={1} w={1200} />
+          <Row x={300} y={500} s={0.9 * pop(f, a)} n={2} text="working until 70 is a hope, not a plan" lit={f >= b ? 1 : 0.35} w={1200} />
+          <Row x={300} y={660} s={0.9 * pop(f, a)} n={3} text="grab the match, check the boring line" lit={f >= c ? 1 : 0.35} w={1200} />
+          <Dave f={f} x={1740} y={960} s={0.85} flip keys={[{at: 0, pose: 'thumbs', expr: 'grin', look: -0.6}]} />
         </Svg>
       </AbsoluteFill>
     ));

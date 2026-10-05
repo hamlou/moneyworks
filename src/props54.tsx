@@ -91,7 +91,7 @@ export const SeasonPass: React.FC<P & {tier?: number; total?: number}> = ({tier 
     {[0, 1, 2].map((i) => (
       <g key={i} transform={`translate(${-180 + i * 180},60)`}>
         <rect x={-50} y={-50} width={100} height={100} rx={16} fill={i < tier / 34 ? C.gold : '#3A4A5C'} {...O} strokeWidth={4} />
-        <Text y={6} size={40} color={i < tier / 34 ? C.ink : '#7A8490'}>🎁</Text>
+        <rect x={-24} y={-14} width={48} height={40} rx={6} fill={i < tier / 34 ? C.red : '#7A8490'} stroke={C.ink} strokeWidth={4} /><path d="M 0 -14 V 26 M -24 -2 H 24 M 0 -14 Q -22 -40 -10 -14 M 0 -14 Q 22 -40 10 -14" fill="none" stroke={C.ink} strokeWidth={4} />
       </g>
     ))}
   </G>

@@ -1423,10 +1423,10 @@ export const Ep51: React.FC = () => {
         <Board />
         <Svg>
           <G2 x={860} y={150}><Text size={56} color={C.navy}>WHAT DAVE LEARNED</Text></G2>
-          <Row x={860} y={340} s={0.9} n={1} text="free apps get paid when you trade" lit={1} w={1200} />
-          <Row x={860} y={500} s={0.9} n={2} text="options are coupons that expire" lit={0.35} w={1200} />
-          <Row x={860} y={660} s={0.9} n={3} text="confetti is a clicker: turn it off" lit={0.35} w={1200} />
-          <Dave f={f} x={1640} y={960} s={0.95} flip keys={[{at: 0, pose: 'thumbs', expr: 'grin', look: -0.6}]} />
+          <Row x={300} y={340} s={0.9} n={1} text="free apps get paid when you trade" lit={1} w={1200} />
+          <Row x={300} y={500} s={0.9} n={2} text="options are coupons that expire" lit={0.35} w={1200} />
+          <Row x={300} y={660} s={0.9} n={3} text="confetti is a clicker: turn it off" lit={0.35} w={1200} />
+          <Dave f={f} x={1740} y={960} s={0.85} flip keys={[{at: 0, pose: 'thumbs', expr: 'grin', look: -0.6}]} />
         </Svg>
       </AbsoluteFill>
     ));
@@ -1443,10 +1443,10 @@ export const Ep51: React.FC = () => {
         <Board />
         <Svg>
           <G2 x={860} y={150}><Text size={56} color={C.navy}>WHAT DAVE LEARNED</Text></G2>
-          <Row x={860} y={340} s={0.9} n={1} text="free apps get paid when you trade" lit={1} w={1200} />
-          <Row x={860} y={500} s={0.9} n={2} text="options are coupons that expire" lit={1} w={1200} />
-          <Row x={860} y={660} s={0.9} n={3} text="confetti is a clicker: turn it off" lit={0.35} w={1200} />
-          <Dave f={f} x={1640} y={960} s={0.95} flip keys={[{at: 0, pose: 'thumbs', expr: 'grin', look: -0.6}]} />
+          <Row x={300} y={340} s={0.9} n={1} text="free apps get paid when you trade" lit={1} w={1200} />
+          <Row x={300} y={500} s={0.9} n={2} text="options are coupons that expire" lit={1} w={1200} />
+          <Row x={300} y={660} s={0.9} n={3} text="confetti is a clicker: turn it off" lit={0.35} w={1200} />
+          <Dave f={f} x={1740} y={960} s={0.85} flip keys={[{at: 0, pose: 'thumbs', expr: 'grin', look: -0.6}]} />
         </Svg>
       </AbsoluteFill>
     ));
@@ -1463,10 +1463,10 @@ export const Ep51: React.FC = () => {
         <Board />
         <Svg>
           <G2 x={860} y={150}><Text size={56} color={C.navy}>WHAT DAVE LEARNED</Text></G2>
-          <Row x={860} y={340} s={0.9} n={1} text="free apps get paid when you trade" lit={1} w={1200} />
-          <Row x={860} y={500} s={0.9} n={2} text="options are coupons that expire" lit={1} w={1200} />
-          <Row x={860} y={660} s={0.9} n={3} text="confetti is a clicker: turn it off" lit={1} w={1200} />
-          <Dave f={f} x={1640} y={960} s={0.95} flip keys={[{at: 0, pose: 'thumbs', expr: 'grin', look: -0.6}]} />
+          <Row x={300} y={340} s={0.9} n={1} text="free apps get paid when you trade" lit={1} w={1200} />
+          <Row x={300} y={500} s={0.9} n={2} text="options are coupons that expire" lit={1} w={1200} />
+          <Row x={300} y={660} s={0.9} n={3} text="confetti is a clicker: turn it off" lit={1} w={1200} />
+          <Dave f={f} x={1740} y={960} s={0.85} flip keys={[{at: 0, pose: 'thumbs', expr: 'grin', look: -0.6}]} />
         </Svg>
       </AbsoluteFill>
     ));
