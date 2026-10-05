@@ -217,6 +217,8 @@ def build(ep):
         desc = [(x[:cut].rsplit(" ", 1)[0] + "…") if x.startswith("• ") and len(x) > cut else x for x in desc]
         body = "\n".join(desc)
         cut -= 20
+    # YouTube does not allow angle brackets in descriptions
+    body = body.replace("->", "→").replace(">", "›").replace("<", "‹")
     out = [
         f"===== {ep.upper()} UPLOAD KIT =====", "",
         "TITLE (use this):", s["title"], "",
