@@ -211,6 +211,12 @@ def build(ep):
     desc += ["", "🎵 Music: \"Fluffing a Duck\" Kevin MacLeod (incompetech.com)", "Licensed under Creative Commons: By Attribution 4.0 License", "http://creativecommons.org/licenses/by/4.0/", "",
              "⚠️ This video is for education and entertainment only. It is not financial advice.", "", " ".join(s["hashtags"])]
     body = "\n".join(desc)
+    # YouTube rejects descriptions over 5,000 characters: shorten the source lines until it fits
+    cut = 400
+    while len(body) > 4900 and cut >= 60:
+        desc = [(x[:cut].rsplit(" ", 1)[0] + "…") if x.startswith("• ") and len(x) > cut else x for x in desc]
+        body = "\n".join(desc)
+        cut -= 20
     out = [
         f"===== {ep.upper()} UPLOAD KIT =====", "",
         "TITLE (use this):", s["title"], "",
