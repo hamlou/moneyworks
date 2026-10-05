@@ -16,7 +16,7 @@ VAGUE = {"amazing", "incredible", "insane", "crazy", "huge", "massive", "ultimat
          "revolutionary", "mindblowing", "epic", "perfect", "complete", "everything", "explained", "truth"}
 STOP = {"the", "a", "an", "of", "for", "to", "in", "on", "and", "or", "is", "are", "with", "your", "you", "my", "i",
         "this", "that", "it", "how", "what", "why", "so", "then", "if", "now"}
-words = lambda t: re.findall(r"[a-z0-9$']+", t.lower())
+words = lambda t: re.findall(r"[a-z0-9$']+(?:[.,][0-9]+)*", t.lower())
 
 
 def check(title, thumb=None):

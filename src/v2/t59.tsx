@@ -38,8 +38,8 @@ export const V2Ep59: React.FC<V> = ({v}) => {
           <rect x={-12} y={-110} width={24} height={90} fill="#FFD23F" stroke={C.ink} strokeWidth={6} />
           <path d="M 0 -160 q 26 30 0 50 q -26 -20 0 -50 Z" fill="#FF8C1A" stroke={C.ink} strokeWidth={5} />
         </Hero>
-        <BigNum x={980} y={170} size={230} text="AGE 70" c="gold" r={4} />
-        <Headline x={60} y={85} size={84} lines={[[{t: 'AT', c: '#fff'}, {t: 'WORK', c: C.ink, box: C.yellow}]]} />
+        <BigNum x={980} y={170} size={230} text="70th" c="gold" r={4} />
+        <Headline x={60} y={85} size={84} lines={[[{t: 'BIRTHDAY', c: '#fff'}, {t: 'SHIFT', c: C.ink, box: C.yellow}]]} />
       </Stage>
     );
   // B - dramatic irony: someone is dragging the finish line away behind him

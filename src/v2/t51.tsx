@@ -35,7 +35,7 @@ export const V2Ep51: React.FC<V> = ({v}) => {
           </PhoneBody>
         </Hero>
         <Dave x={980} y={700} s={1.4} pose="shock" expr="shock" look={-0.8} sweat />
-        <Headline x={1250} y={85} size={96} anchor="end" r={3} lines={[[{t: 'FREE', c: '#fff'}, {t: 'APP?', c: C.ink, box: C.yellow}]]} />
+        <Headline x={1250} y={85} size={96} anchor="end" r={3} lines={[[{t: 'YOU', c: '#fff'}, {t: 'LOST', c: C.ink, box: C.yellow}]]} />
       </Stage>
     );
   // B - villain reveal: someone gets paid on every tap

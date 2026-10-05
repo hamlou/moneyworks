@@ -944,7 +944,7 @@ export const Ep54: React.FC = () => {
       <AbsoluteFill>
         <Board />
         <Svg>
-          <People x={520} y={1150} s={1.3 * P(A('c5d'))} n={100} hot={f >= fr ? 4 : 0} />
+          <People x={540} y={560} s={1.15 * P(A('c5d'))} n={100} hot={f >= fr ? 4 : 0} />
           <Box x={1300} y={340} w={520} h={220} s={P(A('c5d')) * bump(nn, 0.1)}><Text y={-30} size={80} color={GRAY}>96</Text><Text y={50} size={40} color={C.ink}>play free</Text></Box>
           <Box x={1300} y={580} w={520} h={220} s={P(A('c5d')) * bump(fr, 0.12)} fill="#FFE3EA"><Text y={-30} size={80} color={C.red}>4</Text><Text y={50} size={40} color={C.ink}>pay the bills</Text></Box>
           <Box x={1300} y={820} w={520} h={200} s={P(A('c5d')) * bump(bl, 0.14)} fill={f >= bl ? C.yellow : '#fff'}><Text y={6} size={60} color={C.red}>{f >= bl ? '$2.7 BILLION' : '$ ? BILLION'}</Text></Box>
@@ -1012,6 +1012,8 @@ export const Ep54: React.FC = () => {
           {T(880, 620, '>', 110, C.ink, P(A('c5g')) * bump(fv, 0.1))}
           <G2 x={1280} y={900}><Bar h={f >= hf ? lerp(110, 520, ease(f, hf, hf + 18)) : 110} w={300} color={C.red} label="of all the money" value={f >= hf ? '50%' : '?'} /></G2>
           <SourceTag f={f} at={fv} text="Close et al. (2021): top 5% (over $100/month) generated about half of loot box revenue" />
+          <Dave f={f} x={1640} y={930} s={1.05} flip keys={[{at: 0, pose: 'think', expr: 'think', look: -0.6}, {at: hf, pose: 'shock', expr: 'shock', look: -0.6}]} />
+          <Box x={880} y={360} w={420} h={170} s={P(A('c5g'))}><Text y={-30} size={34} color={GRAY}>paying over</Text><Text y={36} size={50} color={C.red}>$100 / month</Text></Box>
         </Svg>
       </AbsoluteFill>
     ));
@@ -1038,8 +1040,8 @@ export const Ep54: React.FC = () => {
             <Text x={200} y={40} size={36} color="#fff">who pay a lot</Text>
             <Text y={190} size={40} color={C.yellow}>keep them paying</Text>
           </Box>
-          <Apple x={1280} y={480} s={1.5 * P(A('c5h')) * bump(ap, 0.1)} />
-          <Box x={1280} y={760} w={420} h={180} s={P(A('c5h')) * bump(th, 0.14)} fill={f >= th ? C.yellow : '#fff'}>
+          <Apple x={1240} y={570} s={1.15 * P(A('c5h')) * bump(ap, 0.1)} />
+          <Box x={1240} y={800} w={420} h={170} s={P(A('c5h')) * bump(th, 0.14)} fill={f >= th ? C.yellow : '#fff'}>
             <Text y={-30} size={36} color={GRAY}>standard cut</Text>
             <Text y={40} size={70} color={C.red}>{f >= th ? '30%' : '?%'}</Text>
           </Box>
@@ -1084,7 +1086,7 @@ export const Ep54: React.FC = () => {
         <Svg>
           <Banker f={f} x={620} y={900} s={1.3} keys={[{at: 0, pose: 'hips', expr: 'smug', look: 0.6}]} />
           <MoneyStack x={1000} y={760} s={1.5 * P(A('c6a'))} n={7} label="WHALE = MILLIONAIRE?" />
-          <G2 x={840} y={480} s={1.6 * bump(np, 0.2)} o={lt(np, 0.0001)}><Stamp text="NOPE" color={C.red} size={90} r={-8} /></G2>
+          <G2 x={840} y={480} s={1.0 * bump(np, 0.2)} o={lt(np, 0.0001)}><Stamp text="NOPE" color={C.red} size={90} r={-8} /></G2>
           <Dave f={f} x={1500} y={930} s={1.1} flip keys={[{at: 0, pose: 'point_l', expr: 'think', look: -0.6}, {at: np, pose: 'shock', expr: 'shock', look: -0.6}]} />
         </Svg>
       </AbsoluteFill>
@@ -1507,7 +1509,7 @@ export const Ep54: React.FC = () => {
           <Cam f={f} keys={[[WIN, 1, 960, 540], [WIN + 10, 1.1, 960, 520]]}>
             <Svg>
               {T(860, 150, '180 pulls x about $2', 54, C.ink, P(A('c8e')) * bump(pl, 0.08))}
-              <DragonEgg x={380} y={540} s={1.7 * P(A('c8e'))} glow={1} open={f >= WIN ? 1 : 0} />
+              <DragonEgg x={380} y={540} s={1.7 * P(A('c8e'))} glow={1} />
               <Box x={1100 + sk.x} y={520 + sk.y} w={900} h={420} s={P(A('c8e'))} fill={C.yellow}>
                 <Text y={-130} size={44} color={GRAY}>THE DRAGON'S REAL PRICE: UP TO</Text>
                 <Text y={50} size={220} color={C.red}>{f >= pr ? money(n) : '$ ? ? ?'}</Text>
@@ -1618,7 +1620,7 @@ export const Ep54: React.FC = () => {
           <SubButton x={860} y={400} s={1.4 * pop(f, A('r5'))} done={f > sb + 14 ? 1 : 0} />
           <Bell x={1300} y={400} s={1.2 * pop(f, A('r5') + 4)} f={f} ring={f > sb + 16 && f < sb + 50 ? 1 : 0} />
           <Dave f={f} x={380} y={900} s={1.25} keys={[{at: 0, pose: 'wave', expr: 'grin'}]} />
-          <DragonEgg x={1560} y={760} s={1.1 * pop(f, A('r5'))} open={1} />
+          <DragonEgg x={1560} y={760} s={1.1 * pop(f, A('r5'))} glow={0.8} />
           {T(1000, 640, 'FREE. ACTUALLY FREE.', 56, C.green, pop(f, A('r5')) * bump(fe, 0.12))}
           {T(1000, 740, 'no gems, no eggs, no coin flips', 44, GRAY, pop(f, A('r5')))}
         </Svg>
