@@ -25,8 +25,8 @@ export const V2Ep59: React.FC<V> = ({v}) => {
   if (v === 'A')
     return (
       <Stage a="#14B8A6" b="#02201D" cx={520} cy={400}>
-        <Dave x={420} y={705} s={1.9} pose="typing" expr="tired" look={0.4} />
-        <Hero x={420} y={470} r={-6} flat>
+        <Dave x={420} y={715} s={1.55} pose="typing" expr="tired" look={0.4} />
+        <Hero x={420} y={520} r={-6} flat>
           <rect x={-170} y={-80} width={340} height={160} rx={18} fill="#fff" stroke={C.ink} strokeWidth={8} />
           <rect x={-170} y={-80} width={340} height={60} rx={18} fill="#D61F1F" />
           <T x={0} y={-48} size={40} c="#fff">HELLO I AM</T>

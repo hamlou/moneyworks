@@ -380,8 +380,8 @@ export const Ep51: React.FC = () => {
         <Board />
         <Svg>
           <Dave f={f} x={420} y={930} s={1.15} keys={[{at: 0, pose: 'think', expr: 'think', look: 0.6}]} />
-          <StudyPaper x={960} y={560} s={1.25 * P(A('c2a')) * bump(dg, 0.06)} title="FINE PRINT" stat="$0" label="commission" />
-          <G2 x={960} y={160} s={P(A('c2a')) * bump(dg, 0.1)}><Text size={54}>Dave digs into the fine print</Text></G2>
+          <StudyPaper x={960} y={620} s={1.0 * P(A('c2a')) * bump(dg, 0.06)} title="FINE PRINT" stat="$0" label="commission" />
+          <G2 x={960} y={130} s={P(A('c2a')) * bump(dg, 0.1)}><Text size={54}>Dave digs into the fine print</Text></G2>
           <G2 x={1480} y={520} s={P(A('c2a')) * bump(ch, 0.14)} o={lt(ch, 0.4)}><Bubble text="why charge nothing?" size={42} tail="left" /></G2>
         </Svg>
       </AbsoluteFill>
