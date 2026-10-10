@@ -44,7 +44,10 @@ async def main(spec_path: str, out_dir: str):
     out = Path(out_dir)
     tmp = out / "tmp"
     tmp.mkdir(parents=True, exist_ok=True)
-    pcm = bytearray(b"\x00\x00" * int(LEAD * SR))
+    # v4 (ep61+): spec["tts"] = {"rate": "-5%", "hook_rate": "+3%", "lead": 0.08}; a beat may carry its own "rate"/"pitch"
+    # (excited "+6%", slow reveal "-12%"). Older episodes have no "tts" block and keep the original delivery.
+    cfg = spec.get("tts") or {}
+    pcm = bytearray(b"\x00\x00" * int(float(cfg.get("lead", LEAD)) * SR))
     beats = []
     chapters = []
     for b in spec["beats"]:
