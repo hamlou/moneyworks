@@ -67,7 +67,7 @@ const Body:React.FC=()=>{
 
  // Hook: real photo first, no Dave; the promise is shown before the explanation.
  micro('o1',[
-  ()=> <AbsoluteFill><Room/>{photo('family_meal',0,540,700,840,700,'news','HE PAID EVERYONE ELSE')}<Svg><G x={W/2} y={230} s={P(0)}><Stamp text="$3,000" color={C.red} size={102}/></G><G x={W/2} y={1500} s={P(0)}><Stamp text="YOU GET $0 BACK" color={C.ink} size={52}/></G></Svg></AbsoluteFill>,
+  ()=> <AbsoluteFill><Room/>{photo('family_meal',0,540,700,840,700,'news','HE PAID EVERYONE ELSE')}<Svg><G x={W/2} y={230} s={1.08+0.04*Math.sin(f/2)}><Stamp text="$3,000" color={C.red} size={102}/></G><G x={W/2} y={1500} s={1}><Stamp text="YOU GET $0 BACK" color={C.ink} size={52}/></G></Svg></AbsoluteFill>,
   ()=> <AbsoluteFill><Room/>{photo('bill_paid',Math.max(0,bs('o1')+60),540,640,790,570,'polaroid','EVERY BILL PAID',true)}<Svg><Dave f={f} x={230} y={1470} s={1.0} keys={[{at:0,pose:'facepalm',expr:'sad'}]}/><G x={W/2} y={260} s={P(bs('o1')+60)}><Stamp text="EXCEPT YOURS" color={C.red} size={62}/></G></Svg></AbsoluteFill>
  ]);
  micro('o2',[
@@ -131,9 +131,9 @@ const Body:React.FC=()=>{
    {f>=0&&<G x={W-160} y={190} s={0.52}><DamageMeter57 value={meterValue} saved={saved} sub={saved?'AUTO-PAY':'FAMILY LOAN'} flash={f>=bs('c3')&&f<bs('c3')+18?1:0}/></G>}
   </Svg></AbsoluteFill>
   {(showMid||showEnd)&&<AbsoluteFill style={{pointerEvents:'none'}}><Svg>
-   <G x={W/2-45} y={1120} s={0.82*pop(f,subAt,10,220)}><SubButton done={f>=subAt+62?1:0}/></G>
-   <G x={W/2+300} y={1120} s={0.82*pop(f,subAt+5,10,220)}><Bell f={f} ring={1}/></G>
-   <G x={W/2} y={970} s={pop(f,subAt+3,10,220)}><Stamp text={showEnd?'NEXT MONEY TRAP?':'ENJOY THESE MONEY STORIES?'} color={C.navy} size={31}/></G>
+   <G x={W/2-45} y={1000} s={0.82*pop(f,subAt,10,220)}><SubButton done={f>=subAt+62?1:0}/></G>
+   <G x={W/2+300} y={1000} s={0.82*pop(f,subAt+5,10,220)}><Bell f={f} ring={1}/></G>
+   <G x={W/2} y={870} s={pop(f,subAt+3,10,220)}><Stamp text={showEnd?'NEXT MONEY TRAP?':'ENJOY THESE MONEY STORIES?'} color={C.navy} size={31}/></G>
   </Svg></AbsoluteFill>}
   <Captions f={f}/><Progress f={f} d={d}/>
   <Sfx at={0} file="whoosh" vol={0.7}/>
