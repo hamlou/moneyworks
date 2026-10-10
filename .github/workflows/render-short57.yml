@@ -8,6 +8,9 @@ on:
     paths:
       - '.github/workflows/render-short57.yml'
       - 'pipeline/episodes/ep57-short.json'
+      - 'pipeline/photos/ep57.json'
+      - 'src/photo.tsx'
+      - 'src/props2.tsx'
       - 'pipeline/tts.py'
       - 'src/shorts/Short57.tsx'
       - 'src/Root.tsx'
@@ -40,8 +43,11 @@ jobs:
           sudo apt-get update -qq
           sudo apt-get install -y -qq ffmpeg
           python -m pip install --upgrade pip
-          pip install edge-tts numpy
+          pip install edge-tts numpy pillow
           npm ci --no-audit --no-fund
+
+      - name: Download licensed real photos for mixed-media scenes
+        run: python pipeline/photos.py ep57 --force
 
       - name: Generate real English voiceover and word timings
         run: python pipeline/tts.py pipeline/episodes/ep57-short.json public/short57
