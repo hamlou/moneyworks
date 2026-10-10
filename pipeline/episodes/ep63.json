@@ -1,138 +1,488 @@
 {
-  "id": "ep63",
-  "title": "Why Your \"Free\" Phone Costs $1,100",
-  "hook_form": "the_pitch",
-  "tts": {"rate": "-5%", "hook_rate": "+3%", "lead": 0.08},
-  "spine": {
-    "goal": "Dave wants to replace his cracked phone with the $1,200 flagship that the store says is free today.",
-    "stakes": "If he keeps the deal he is tied to a $90 plan for 36 months: $65 a month more than a $25 plan, $2,340 extra, or $1,140 more than simply buying the same phone at full price.",
-    "central_question": "If the phone is free, who is paying for it, and how does a phone company lose billions on phones and still win?",
-    "loop_big": "Hook promises Dave walking out of that exact store paying $65 less a month, with the salesman's pen. Paid in ch9: on day 13 he uses the return window, pays a $55 restocking fee, keeps his old phone, moves to a $25 plan, and ends $1,140 ahead over three years.",
-    "loop_mid": "Door A or door B, opened in ch3 (~28%): which is cheaper over three years and by how much? Paid in ch5 (~45%) on a napkin: door B wins by $1,140.",
-    "villain": "The phone company's business model (ch5, ~50%): Verizon's own 2025 numbers show phones sold for about $3.5 billion less than they cost, while customers paid over $80 billion in wireless bills and fewer than 1 in 100 leave in a month. The cheap plans often run on the same towers and are sometimes owned by the same companies.",
-    "low_point": "~75%: leaving means the bill credits stop and the remaining $1,200 is due at once, the phone is locked until it is paid off, the old phone is promised as a trade-in, and Dave cannot put $1,200 on the counter. He is the product: a customer who cannot afford to leave.",
-    "win": "The receipt's return line: 14 days at two of the big three, 30 at the third. Dave returns the phone on day 13, keeps his paid-off phone, ports to a $25 plan and saves $65 a month ($780 a year). Three questions to ask in the store: plan price, how many months, what do I owe if I leave. Education, not advice."
+ "id": "ep63",
+ "title": "Why Your \"Free\" Phone Costs $1,100",
+ "hook_form": "the_pitch",
+ "tts": {
+  "rate": "-5%",
+  "hook_rate": "+3%",
+  "lead": 0.08
+ },
+ "spine": {
+  "goal": "Dave wants to replace his cracked phone with the $1,200 flagship that the store says is free today.",
+  "stakes": "If he keeps the deal he is tied to a $90 plan for 36 months: $65 a month more than a $25 plan, $2,340 extra, or $1,140 more than simply buying the same phone at full price.",
+  "central_question": "If the phone is free, who is paying for it, and how does a phone company lose billions on phones and still win?",
+  "loop_big": "Hook promises Dave walking out of that exact store paying $65 less a month, with the salesman's pen. Paid in ch9: on day 13 he uses the return window, pays a $55 restocking fee, keeps his old phone, moves to a $25 plan, and ends $1,140 ahead over three years.",
+  "loop_mid": "Door A or door B, opened in ch3 (~28%): which is cheaper over three years and by how much? Paid in ch5 (~45%) on a napkin: door B wins by $1,140.",
+  "villain": "The phone company's business model (ch5, ~50%): Verizon's own 2025 numbers show phones sold for about $3.5 billion less than they cost, while customers paid over $80 billion in wireless bills and fewer than 1 in 100 leave in a month. The cheap plans often run on the same towers and are sometimes owned by the same companies.",
+  "low_point": "~75%: leaving means the bill credits stop and the remaining $1,200 is due at once, the phone is locked until it is paid off, the old phone is promised as a trade-in, and Dave cannot put $1,200 on the counter. He is the product: a customer who cannot afford to leave.",
+  "win": "The receipt's return line: 14 days at two of the big three, 30 at the third. Dave returns the phone on day 13, keeps his paid-off phone, ports to a $25 plan and saves $65 a month ($780 a year). Three questions to ask in the store: plan price, how many months, what do I owe if I leave. Education, not advice."
+ },
+ "sources": [
+  "AT&T iPhone 18 Pro product page and deals page (att.com, read 10 Oct 2026): iPhone 18 Pro 256GB $1,199.99; $33.34/mo for 36 months at 0% APR; 'up to $1200 in credits over 36 mos'; 'Req. trade-in of $230 or more & eligible plan'; 'Req. 0% APR 36-mo. agmt.'; 'Tax on full price due at sale'. Rounded to $1,200 and $33.33 in the script. Dave's deal is a generic deal modeled on these terms (no carrier named for Dave).",
+  "Apple iPhone page carrier-offer footnotes (apple.com/iphone, read 10 Oct 2026): Verizon iPhone 18 Pro credits over 36 months, 'Customer must remain in the Verizon Device Payment Program for 36 months', 'Sales tax may be assessed on full value of new iPhone', 'Requires eligible unlimited Verizon mobile plan'; T-Mobile bill credits over 24/36 months, '$35 device connection charge', tax on pre-credit price; 'If you cancel eligible wireless service, credits will stop and you will owe the remaining device balance.'",
+  "AT&T Unlimited Your Way plans, launched 13 March 2026 (WhistleOut and Android Authority plan pages, 2026): Unlimited Premium 2.0 = $90/mo for one line with AutoPay and paperless billing; Extra 2.0 $70; Value 2.0 $50. Premium 2.0 is the plan the iPhone 18 Pro full credit requires (iThinkDiff carrier deal comparison, 13 Sept 2026). T-Mobile Experience Beyond 2.0 is $100/mo for one line (PhoneArena, 2026). So 'the top plan is ninety dollars a month for one line'.",
+  "Visible plans page (visible.com/plans, read 10 Oct 2026): base Visible plan $25/mo, taxes and fees included, on Verizon's 5G and 4G LTE networks; Visible is a Verizon subsidiary ('Visible by Verizon'). Base-plan data can be slower when the network is busy.",
+  "Math (ours): $90 - $25 = $65/mo; $65 x 36 = $2,340; $2,340 - $1,200 phone = $1,140 -> 'about eleven hundred dollars' in the title and hook. $65 x 12 = $780/yr. $1,200 / $65 = 18.5 months -> 'about a year and a half'. Sales tax is NOT counted in the $1,140 because it is paid on either path; an activation fee (up to $35-$50 at AT&T, $35 at T-Mobile) and the traded-in phone are also NOT counted, so $1,140 is a floor.",
+  "Tax Foundation, State and Local Sales Tax Rates, Midyear 2026: population-weighted average combined rate 7.53%. 7.53% x $1,199.99 = $90.36 -> 'ninety dollars today'.",
+  "Apple press release, 9 June 2008, 'Apple Introduces the New iPhone 3G': $199 for the 8GB model, 'requires a new two year contract with AT&T'. Original iPhone (announced 9 Jan 2007, sold from 29 June 2007): $499 (4GB) and $599 (8GB) with a two-year AT&T contract -> 'up to six hundred dollars'.",
+  "T-Mobile press release, 26 March 2013, 'T-Mobile Makes Bold Un-carrier Moves': eliminates annual service contracts (Simple Choice); CEO John Legere. Verizon ended two-year contracts for new customers in August 2015; AT&T in January 2016.",
+  "36-month installments: AT&T moved new purchases to 36-month installment plans in June 2021 (Fierce Wireless); Verizon moved to 36-month-only device payment plans on 3 Feb 2022 (Droid Life, Fierce Wireless). Earlier terms were 24 and 30 months.",
+  "Verizon Communications, Financial and Operating Information as of June 30, 2026 (verizon.com investor PDF): full year 2025 wireless equipment revenues $25,470 million, cost of wireless equipment $28,976 million -> equipment sold for about $3.5 billion less than it cost. Wireless retail postpaid phone churn 0.92% in 2Q 2026 (0.95%-1.02% during 2025) -> 'fewer than one customer in a hundred leaves in a typical month'.",
+  "Verizon 4Q 2025 earnings release: total wireless service revenue $83.7 billion for full year 2025 -> 'more than eighty billion dollars in monthly wireless bills'.",
+  "T-Mobile and Mint Mobile: T-Mobile announced on 15 March 2023 it would buy Ka'ena Corporation (Mint Mobile, Ultra Mobile) for up to $1.35 billion; the deal closed on 1 May 2024. Ryan Reynolds was a part owner and appeared in Mint's ads.",
+  "FCC, Notice of Proposed Rulemaking on handset unlocking (adopted 18 July 2024, WT Docket 24-186): proposed requiring all providers to unlock phones 60 days after activation; still pending. FCC Wireless Telecommunications Bureau order of 12 January 2026: waiver letting Verizon stop automatic 60-day unlocking (the 2007 700 MHz C Block rule) and follow the CTIA Consumer Code instead: postpaid phones unlocked after the device plan is paid off, prepaid within one year. Verizon cited device fraud and trafficking; consumer groups argued locks limit switching.",
+  "AT&T device unlock requirements (att.com/deviceunlock): device must be paid in full, installment balance at zero, purchased more than 60 days ago.",
+  "Return policies: AT&T 14 days, restocking fee up to $55 in stores (att.com/returns); T-Mobile 14 days for store purchases, restocking fee by device price; Verizon 30 days, $50 restocking fee (verizon.com/support/return-policy). 'Fourteen days at two of the big three, thirty at the third'; Dave pays $55."
+ ],
+ "beats": [
+  {
+   "id": "o1",
+   "job": "concept",
+   "text": "Great news: your phone company wants to give you a brand new twelve hundred dollar phone, free. Just sign right here.",
+   "pause": 0.2,
+   "rate": "+8%",
+   "pitch": "+3Hz"
   },
-  "sources": [
-    "AT&T iPhone 18 Pro product page and deals page (att.com, read 10 Oct 2026): iPhone 18 Pro 256GB $1,199.99; $33.34/mo for 36 months at 0% APR; 'up to $1200 in credits over 36 mos'; 'Req. trade-in of $230 or more & eligible plan'; 'Req. 0% APR 36-mo. agmt.'; 'Tax on full price due at sale'. Rounded to $1,200 and $33.33 in the script. Dave's deal is a generic deal modeled on these terms (no carrier named for Dave).",
-    "Apple iPhone page carrier-offer footnotes (apple.com/iphone, read 10 Oct 2026): Verizon iPhone 18 Pro credits over 36 months, 'Customer must remain in the Verizon Device Payment Program for 36 months', 'Sales tax may be assessed on full value of new iPhone', 'Requires eligible unlimited Verizon mobile plan'; T-Mobile bill credits over 24/36 months, '$35 device connection charge', tax on pre-credit price; 'If you cancel eligible wireless service, credits will stop and you will owe the remaining device balance.'",
-    "AT&T Unlimited Your Way plans, launched 13 March 2026 (WhistleOut and Android Authority plan pages, 2026): Unlimited Premium 2.0 = $90/mo for one line with AutoPay and paperless billing; Extra 2.0 $70; Value 2.0 $50. Premium 2.0 is the plan the iPhone 18 Pro full credit requires (iThinkDiff carrier deal comparison, 13 Sept 2026). T-Mobile Experience Beyond 2.0 is $100/mo for one line (PhoneArena, 2026). So 'the top plan is ninety dollars a month for one line'.",
-    "Visible plans page (visible.com/plans, read 10 Oct 2026): base Visible plan $25/mo, taxes and fees included, on Verizon's 5G and 4G LTE networks; Visible is a Verizon subsidiary ('Visible by Verizon'). Base-plan data can be slower when the network is busy.",
-    "Math (ours): $90 - $25 = $65/mo; $65 x 36 = $2,340; $2,340 - $1,200 phone = $1,140 -> 'about eleven hundred dollars' in the title and hook. $65 x 12 = $780/yr. $1,200 / $65 = 18.5 months -> 'about a year and a half'. Sales tax is NOT counted in the $1,140 because it is paid on either path; an activation fee (up to $35-$50 at AT&T, $35 at T-Mobile) and the traded-in phone are also NOT counted, so $1,140 is a floor.",
-    "Tax Foundation, State and Local Sales Tax Rates, Midyear 2026: population-weighted average combined rate 7.53%. 7.53% x $1,199.99 = $90.36 -> 'ninety dollars today'.",
-    "Apple press release, 9 June 2008, 'Apple Introduces the New iPhone 3G': $199 for the 8GB model, 'requires a new two year contract with AT&T'. Original iPhone (announced 9 Jan 2007, sold from 29 June 2007): $499 (4GB) and $599 (8GB) with a two-year AT&T contract -> 'up to six hundred dollars'.",
-    "T-Mobile press release, 26 March 2013, 'T-Mobile Makes Bold Un-carrier Moves': eliminates annual service contracts (Simple Choice); CEO John Legere. Verizon ended two-year contracts for new customers in August 2015; AT&T in January 2016.",
-    "36-month installments: AT&T moved new purchases to 36-month installment plans in June 2021 (Fierce Wireless); Verizon moved to 36-month-only device payment plans on 3 Feb 2022 (Droid Life, Fierce Wireless). Earlier terms were 24 and 30 months.",
-    "Verizon Communications, Financial and Operating Information as of June 30, 2026 (verizon.com investor PDF): full year 2025 wireless equipment revenues $25,470 million, cost of wireless equipment $28,976 million -> equipment sold for about $3.5 billion less than it cost. Wireless retail postpaid phone churn 0.92% in 2Q 2026 (0.95%-1.02% during 2025) -> 'fewer than one customer in a hundred leaves in a typical month'.",
-    "Verizon 4Q 2025 earnings release: total wireless service revenue $83.7 billion for full year 2025 -> 'more than eighty billion dollars in monthly wireless bills'.",
-    "T-Mobile and Mint Mobile: T-Mobile announced on 15 March 2023 it would buy Ka'ena Corporation (Mint Mobile, Ultra Mobile) for up to $1.35 billion; the deal closed on 1 May 2024. Ryan Reynolds was a part owner and appeared in Mint's ads.",
-    "FCC, Notice of Proposed Rulemaking on handset unlocking (adopted 18 July 2024, WT Docket 24-186): proposed requiring all providers to unlock phones 60 days after activation; still pending. FCC Wireless Telecommunications Bureau order of 12 January 2026: waiver letting Verizon stop automatic 60-day unlocking (the 2007 700 MHz C Block rule) and follow the CTIA Consumer Code instead: postpaid phones unlocked after the device plan is paid off, prepaid within one year. Verizon cited device fraud and trafficking; consumer groups argued locks limit switching.",
-    "AT&T device unlock requirements (att.com/deviceunlock): device must be paid in full, installment balance at zero, purchased more than 60 days ago.",
-    "Return policies: AT&T 14 days, restocking fee up to $55 in stores (att.com/returns); T-Mobile 14 days for store purchases, restocking fee by device price; Verizon 30 days, $50 restocking fee (verizon.com/support/return-policy). 'Fourteen days at two of the big three, thirty at the third'; Dave pays $55."
-  ],
-  "beats": [
-    {"id": "o1", "job": "concept", "text": "Great news: your phone company wants to give you a brand new twelve hundred dollar phone, free. Just sign right here.", "pause": 0.2, "rate": "+8%", "pitch": "+3Hz"},
-    {"id": "o2", "job": "question", "text": "So when did your phone company last give you anything for free?", "pause": 0.2, "pitch": "-2Hz"},
-    {"id": "o3", "job": "stakes", "text": "Add up the bills, and that free phone can cost about eleven hundred dollars more than buying one.", "pause": 0.2},
-    {"id": "o4", "job": "ending", "text": "Ten minutes from now, Dave walks out of this exact store paying sixty five dollars less a month, and he keeps the pen.", "pause": 0.3},
-
-    {"id": "c1a", "chapter": "Sign Right Here", "text": "Dave walked into the phone store on a Saturday, because his screen had a crack shaped like Florida, and he was tired of getting glass in his thumb.", "pause": 0.4},
-    {"id": "c1b", "text": "A very friendly salesman named Chad already had a pen out. Great news, Dave! This phone is twelve hundred dollars, and today, it's zero.", "pause": 0.4, "rate": "+4%", "pitch": "+3Hz"},
-    {"id": "c1c", "text": "You've heard this pitch, and I've heard this pitch, because it's on every billboard between your house and the airport.", "pause": 0.4},
-    {"id": "c1d", "text": "This fall, all three of the big American phone companies were running some version of it on the newest iPhone.", "pause": 0.4},
-    {"id": "c1e", "text": "So Dave did what most of us would do. He signed his name without reading a single word, and he felt like a genius.", "pause": 0.5},
-    {"id": "c1f", "text": "Then Chad turned the card reader around and said: great news, that'll be ninety dollars today.", "pause": 0.4, "pitch": "+3Hz"},
-    {"id": "c1g", "text": "And Dave goes: ninety dollars? For a free phone?", "pause": 0.5, "rate": "+4%", "pitch": "+4Hz"},
-    {"id": "c1h", "text": "It's sales tax. The small print on these deals says the tax is due on the full price, on day one, even when the price you pay is zero.", "pause": 0.5},
-    {"id": "c1i", "text": "To be fair, you'd pay that tax buying the phone anywhere. But it was Dave's first hint that free means something a little different inside that store, and it was the cheapest surprise he was going to get.", "pause": 0.8},
-
-    {"id": "c2a", "chapter": "The Thirty Six Coupons", "text": "A month later, Dave opened his first bill, mostly so he could admire the word free.", "pause": 0.4},
-    {"id": "c2b", "text": "Instead, he found a charge. Phone payment: thirty three dollars and thirty three cents.", "pause": 0.4},
-    {"id": "c2c", "text": "Right under it, there was a credit for the exact same amount. One cancels the other, so Dave pays nothing, and so far that sounds fine.", "pause": 0.5},
-    {"id": "c2d", "text": "But look at what that really means. Dave didn't get a free phone. He bought a phone on a three year loan, and the company promised to send him a coupon every month that covers the payment.", "pause": 0.5, "rate": "-9%"},
-    {"id": "c2e", "text": "That's thirty six payments, and thirty six coupons.", "pause": 0.5},
-    {"id": "c2f", "text": "It's like a restaurant that gives you a free steak, but serves it one bite a month for three years, and you only get the next bite if you're still sitting at the table.", "pause": 0.6},
-    {"id": "c2g", "text": "So in plain English, your free phone is a loan you never notice, as long as you never stand up.", "pause": 0.6},
-    {"id": "c2h", "text": "Which made Dave wonder what exactly he had to keep ordering, to stay at that table.", "pause": 0.8},
-
-    {"id": "c3a", "chapter": "What You Have To Order", "text": "So Dave read the offer again, slowly this time, like a man defusing a bomb.", "pause": 0.4},
-    {"id": "c3b", "text": "And there it was. The coupons only work on the most expensive plan in the store, and for one line, that plan is ninety dollars a month.", "pause": 0.5},
-    {"id": "c3c", "text": "Be honest, do you know what your own plan costs right now? Most people don't, and the phone companies are very relaxed about that.", "pause": 0.5},
-    {"id": "c3d", "text": "To be fair, the big plan comes with real extras, like faster data in a crowd, and a giant hotspot. If you use them, great. Dave didn't know what a hotspot was.", "pause": 0.6},
-    {"id": "c3e", "text": "So let's play a game, you and me. Door A is Dave's deal: the phone is free, and the plan is ninety dollars a month.", "pause": 0.4, "rate": "+3%"},
-    {"id": "c3f", "text": "Door B: you pay the full twelve hundred for the very same phone, and you put it on a plan that costs twenty five.", "pause": 0.4, "rate": "+3%"},
-    {"id": "c3g", "text": "Three years later, which door is cheaper, and by how much? Pick one, and put your number in the comments. I'll wait.", "pause": 2.6, "pitch": "+3Hz"},
-    {"id": "c3h", "text": "Hold on to your guess. Because to see why the answer is so lopsided, we have to go back to the day phones first became free.", "pause": 0.8},
-
-    {"id": "c4a", "chapter": "How Phones Became Free", "text": "That night, Dave fell down an internet rabbit hole, because he needed to know who came up with this.", "pause": 0.4},
-    {"id": "c4b", "text": "In two thousand seven, Steve Jobs walked on stage with the very first iPhone, and it cost up to six hundred dollars. People complained about that price for a whole year.", "pause": 0.5},
-    {"id": "c4c", "text": "Then the next model showed up at one hundred ninety nine dollars, and the lines went around the block.", "pause": 0.5, "rate": "+3%"},
-    {"id": "c4d", "text": "The phone didn't suddenly get cheap to build. The phone company quietly covered the rest, and in exchange, you signed a two year contract.", "pause": 0.5},
-    {"id": "c4e", "text": "You paid it all back inside your monthly bill, and there was a penalty if you tried to leave early.", "pause": 0.5},
-    {"id": "c4f", "text": "Everybody hated those contracts. So in twenty thirteen, a C E O in a bright pink T-shirt, John Legere of T-Mobile, stood up and killed them.", "pause": 0.5},
-    {"id": "c4g", "text": "Within about three years, the other big companies had dropped their two year contracts too. You were free! Sort of.", "pause": 0.6, "pitch": "+3Hz"},
-    {"id": "c4h", "text": "But here's the weird part. The companies still needed you to stay, so they came up with something that feels much nicer than a contract: the monthly coupon.", "pause": 0.5},
-    {"id": "c4i", "text": "And then they stretched it. Two years quietly became two and a half, and by twenty twenty two, the two biggest carriers had made it three.", "pause": 0.5},
-    {"id": "c4j", "text": "So the contract never died. It just put on a party hat with the word free on it. And now Dave could finally do the math on his two doors.", "pause": 0.8},
-
-    {"id": "c5a", "chapter": "Who Pays For Free", "text": "Dave grabbed a napkin, because all serious math happens on napkins.", "pause": 0.4},
-    {"id": "c5b", "text": "Door A is ninety a month, and door B is twenty five. So the plan that comes with the free phone costs Dave sixty five dollars more, every single month.", "pause": 0.5},
-    {"id": "c5c", "text": "Over thirty six months, that adds up to two thousand three hundred and forty dollars extra.", "pause": 0.5},
-    {"id": "c5d", "text": "Now be generous, and take away the twelve hundred dollar phone he got for free.", "pause": 0.4},
-    {"id": "c5e", "text": "What's left is one thousand one hundred and forty dollars. That's what free cost Dave, and that's the number your guess had to beat.", "pause": 0.8, "rate": "-12%", "pitch": "-2Hz"},
-    {"id": "c5f", "text": "So where does all that money go? Here's the part that sounds like a typo.", "pause": 0.4},
-    {"id": "c5g", "text": "Last year, Verizon alone sold its phones for about three and a half billion dollars less than they cost. That wasn't an accident. It's right there in their own financial reports.", "pause": 0.6, "rate": "-9%"},
-    {"id": "c5h", "text": "Because in that same year, their customers handed over more than eighty billion dollars in monthly wireless bills.", "pause": 0.6},
-    {"id": "c5i", "text": "It's a pet shop that gives away the goldfish for free, and then sells you the water. Every month, for three years.", "pause": 0.6},
-    {"id": "c5j", "text": "And it works beautifully. In a typical month, fewer than one customer in a hundred walks away.", "pause": 0.9},
-    {"id": "c5k", "text": "Dave decided he'd be that one customer. He would just leave, and take his free phone to the cheap plan. How hard could it be?", "pause": 0.8, "pitch": "+3Hz"},
-
-    {"id": "c6a", "chapter": "Try To Leave", "text": "First, Dave checked that a twenty five dollar plan was even real. It is, and this is where it gets a little insulting.", "pause": 0.4},
-    {"id": "c6b", "text": "One of the best known cheap plans is called Visible. It costs twenty five dollars a month, taxes included, and it runs on Verizon's towers.", "pause": 0.4},
-    {"id": "c6c", "text": "Because Verizon owns it.", "pause": 0.7, "rate": "-12%", "pitch": "-2Hz"},
-    {"id": "c6d", "text": "It's the same story across the street. Remember the cheap phone company from those Ryan Reynolds ads? T-Mobile bought it, in a deal worth more than a billion dollars.", "pause": 0.5},
-    {"id": "c6e", "text": "So the cheap plan and the expensive plan often use the exact same towers, and sometimes they have the exact same owner. It's the same water, in a fancier bowl.", "pause": 0.6},
-    {"id": "c6f", "text": "To be fair again, the cheap plans can slow down when the network is busy, and nobody hands you a free phone for joining.", "pause": 0.5},
-    {"id": "c6g", "text": "So Dave called to cancel. And the nice person on the line said: of course! Great news, you can leave any time you like.", "pause": 0.4, "pitch": "+3Hz"},
-    {"id": "c6h", "text": "You'll just owe us the rest of the phone today. All twelve hundred dollars, because the moment you leave, the coupons stop, and the loan doesn't.", "pause": 0.7, "rate": "-9%"},
-    {"id": "c6i", "text": "And there was one more thing. Dave's phone was locked, which means it only works with the company that sold it, until every last dollar is paid off.", "pause": 0.5},
-    {"id": "c6j", "text": "That lock is a real fight in Washington. In twenty twenty four, the F C C proposed making every company unlock your phone after sixty days.", "pause": 0.5},
-    {"id": "c6k", "text": "It's still only a proposal. And this January, the F C C went the other way for Verizon, which used to unlock phones automatically, and now doesn't have to.", "pause": 0.5},
-    {"id": "c6l", "text": "The companies say locks stop thieves and fraud. Consumer groups say locks stop you from shopping around. That's a political question, and now you know the rule.", "pause": 0.6},
-    {"id": "c6m", "text": "For Dave, the rule meant one thing. The only way out of free cost twelve hundred dollars.", "pause": 0.9, "rate": "-9%"},
-
-    {"id": "c7a", "chapter": "Three Years Is Long", "text": "So Dave sat on his couch with his beautiful new phone, and he did something dangerous. He thought about it.", "pause": 0.4},
-    {"id": "c7b", "text": "Dave thought the worst case was simple: stay three years, pay the bills, and you're done. Nope.", "pause": 0.5},
-    {"id": "c7c", "text": "Three years is a long time for a phone. You'll drop it, and you'll want the new one, and then Chad calls with great news about a fresh set of thirty six coupons.", "pause": 0.6},
-    {"id": "c7d", "text": "And do you know what else the deal took? His old phone. The offer needed a trade in, so the Florida phone, which still worked fine, was headed for a mailbox.", "pause": 0.6},
-    {"id": "c7e", "text": "Let's be fair one last time. If you were going to pay for that exact top plan for three years anyway, this deal is a real discount, and plenty of people are happy with it.", "pause": 0.5},
-    {"id": "c7f", "text": "The trick only works on people like Dave, who would've paid a lot less, and who can't put twelve hundred dollars on the counter. Which, be honest, is most of us.", "pause": 0.6},
-    {"id": "c7g", "text": "That's the real product. It isn't the phone. It's a customer who can't afford to leave.", "pause": 0.9, "rate": "-12%", "pitch": "-2Hz"},
-    {"id": "c7h", "text": "And Dave was that customer, except for one thing. He still had the receipt, and at the very bottom, there was a line that Chad had not circled.", "pause": 0.9},
-
-    {"id": "c8a", "chapter": "The Line Chad Skipped", "text": "Dave flattened the receipt on the table. Quick note before we read it with him: this is education, not advice, and your own contract is the boss.", "pause": 0.4},
-    {"id": "c8b", "text": "The line said returns. When you buy a phone from a big carrier, you usually get a short window to bring it back: fourteen days at two of the big three, and thirty at the other one.", "pause": 0.5},
-    {"id": "c8c", "text": "There's usually a restocking fee of around fifty dollars. Dave looked at the calendar, and it was day thirteen.", "pause": 0.6, "rate": "+3%"},
-    {"id": "c8d", "text": "And his old phone was still sitting in a drawer, because he'd been too lazy to mail it. For once in his life, lazy paid off.", "pause": 0.6},
-    {"id": "c8e", "text": "So now Dave had choices, and so do you. Second game: which one would you pick? One: keep the phone you already own, and move it to a cheaper plan.", "pause": 0.5},
-    {"id": "c8f", "text": "Two: buy your next phone unlocked, straight from the maker or a big store, so no phone company is ever holding the leash.", "pause": 0.5},
-    {"id": "c8g", "text": "Or three: take the free phone with your eyes open, because you did the napkin math, and it really is cheaper for you.", "pause": 0.6},
-    {"id": "c8h", "text": "Whatever you pick, there are three questions worth asking in the store. What's the plan price? How many months? And what do I owe if I leave?", "pause": 0.7},
-    {"id": "c8i", "text": "Dave picked number one. So on day thirteen, he walked back into the store, where Chad was already reaching for the pen.", "pause": 0.9},
-
-    {"id": "c9a", "chapter": "Great News, Chad", "text": "Chad goes: Dave! Great news, we've got a watch that's also free!", "pause": 0.4, "rate": "+6%", "pitch": "+4Hz"},
-    {"id": "c9b", "text": "And Dave goes: great news, Chad. I'm returning the phone.", "pause": 0.8, "rate": "-6%"},
-    {"id": "c9c", "text": "It cost him a restocking fee of fifty five dollars, which is the cheapest lesson Dave has ever bought.", "pause": 0.5},
-    {"id": "c9d", "text": "He kept the Florida phone, crack and all, and he moved his number to the twenty five dollar plan. It took one evening, and zero signatures.", "pause": 0.5},
-    {"id": "c9e", "text": "So every month, sixty five dollars now stays in Dave's pocket, instead of quietly leaving it.", "pause": 0.5},
-    {"id": "c9f", "text": "He drops it in a jar. In about a year and a half, that jar can buy the twelve hundred dollar phone outright, unlocked, with no coupons and no Chad.", "pause": 0.6},
-    {"id": "c9g", "text": "And over the same three years, he ends up eleven hundred and forty dollars ahead of the Dave who took the free one.", "pause": 0.7, "rate": "-12%"},
-    {"id": "c9h", "text": "So that's Dave, walking out of the exact store where we started, paying sixty five dollars less a month. And yes, he kept the pen. It was the only thing in there that was actually free.", "pause": 0.9},
-
-    {"id": "r1", "chapter": "What Dave Learned", "text": "Here's what Dave learned. One: your free phone is a loan, with a coupon every month.", "pause": 0.4},
-    {"id": "r2", "text": "Two: the coupons only come with the expensive plan, and they stop the day you leave.", "pause": 0.4},
-    {"id": "r3", "text": "Three: add up the plan and the phone over all three years, before the pen comes out.", "pause": 0.6},
-    {"id": "r4", "text": "Next time, Dave's friends take him out to celebrate, and somebody says the five most expensive words in friendship: let's just split it evenly.", "pause": 0.5},
-    {"id": "r5", "text": "Subscribe. It's free, and I mean actually free: no coupons, and you can leave any time.", "pause": 1.4}
-  ]
+  {
+   "id": "o2",
+   "job": "question",
+   "text": "So when did your phone company last give you anything for free?",
+   "pause": 0.2,
+   "pitch": "-2Hz"
+  },
+  {
+   "id": "o3",
+   "job": "stakes",
+   "text": "Add up the bills, and that free phone can cost about eleven hundred dollars more than buying one.",
+   "pause": 0.2
+  },
+  {
+   "id": "o4",
+   "job": "ending",
+   "text": "Ten minutes from now, Dave walks out of this exact store paying sixty five dollars less a month, and he keeps the pen.",
+   "pause": 0.3
+  },
+  {
+   "id": "c1a",
+   "chapter": "Sign Right Here",
+   "text": "Dave walked into the phone store on a Saturday, because his screen had a crack shaped like Florida.",
+   "pause": 0.4
+  },
+  {
+   "id": "c1b",
+   "text": "A very friendly salesman named Chad already had a pen out. Great news, Dave! This phone is twelve hundred dollars, and today, it's zero.",
+   "pause": 0.4,
+   "rate": "+4%",
+   "pitch": "+3Hz"
+  },
+  {
+   "id": "c1c",
+   "text": "You've heard this pitch, because this fall all three of the big American phone companies ran a version of it on the newest iPhone.",
+   "pause": 0.4
+  },
+  {
+   "id": "c1e",
+   "text": "So Dave did what most of us would do. He signed without reading a single word, and he felt like a genius.",
+   "pause": 0.5
+  },
+  {
+   "id": "c1f",
+   "text": "Then Chad turned the card reader around and said: great news, that'll be ninety dollars today.",
+   "pause": 0.4,
+   "pitch": "+3Hz"
+  },
+  {
+   "id": "c1g",
+   "text": "And Dave goes: ninety dollars? For a free phone?",
+   "pause": 0.5,
+   "rate": "+4%",
+   "pitch": "+4Hz"
+  },
+  {
+   "id": "c1h",
+   "text": "It's sales tax. The small print says the tax is due on the full price, on day one, even when the price you pay is zero.",
+   "pause": 0.5
+  },
+  {
+   "id": "c1i",
+   "text": "To be fair, you'd pay that tax buying the phone anywhere. But it was Dave's first hint that free means something different in that store, and it was the cheapest surprise he was going to get.",
+   "pause": 0.8
+  },
+  {
+   "id": "c2a",
+   "chapter": "The Thirty Six Coupons",
+   "text": "A month later, Dave opened his first bill to admire the word free, and found a charge instead. Phone payment: thirty three dollars.",
+   "pause": 0.4
+  },
+  {
+   "id": "c2c",
+   "text": "Right under it, there was a credit for the exact same amount. One cancels the other, so Dave pays nothing.",
+   "pause": 0.5
+  },
+  {
+   "id": "c2d",
+   "text": "But look at what that really means. Dave didn't get a free phone. He bought a phone on a three year loan, and the company sends him a coupon every month that covers the payment, thirty six times.",
+   "pause": 0.5,
+   "rate": "-9%"
+  },
+  {
+   "id": "c2f",
+   "text": "It's like a restaurant that gives you a free steak, but serves it one bite a month, and you only get the next bite if you're still sitting at the table.",
+   "pause": 0.6
+  },
+  {
+   "id": "c2g",
+   "text": "So in plain English, your free phone is a loan you never notice, as long as you never stand up. Which made Dave wonder what he had to keep ordering.",
+   "pause": 0.6
+  },
+  {
+   "id": "c3b",
+   "chapter": "What You Have To Order",
+   "text": "So Dave read the offer again, slowly this time, and there it was. The coupons only work on the most expensive plan in the store, and for one line, that plan is ninety dollars a month.",
+   "pause": 0.5
+  },
+  {
+   "id": "c3c",
+   "text": "Be honest, do you know what your own plan costs right now? Most people don't, and the phone companies are very relaxed about that.",
+   "pause": 0.5
+  },
+  {
+   "id": "c3d",
+   "text": "It does come with extras, like a giant hotspot. Dave didn't know what a hotspot was.",
+   "pause": 0.6
+  },
+  {
+   "id": "c3e",
+   "text": "So let's play a game. Door A is Dave's deal: the phone is free, and the plan is ninety dollars a month.",
+   "pause": 0.4,
+   "rate": "+3%"
+  },
+  {
+   "id": "c3f",
+   "text": "Door B: you pay the full twelve hundred for the very same phone, and you put it on a plan that costs twenty five.",
+   "pause": 0.4,
+   "rate": "+3%"
+  },
+  {
+   "id": "c3g",
+   "text": "Three years later, which door is cheaper, and by how much? Pick one, and put your number in the comments. I'll wait.",
+   "pause": 2.6,
+   "pitch": "+3Hz"
+  },
+  {
+   "id": "c3h",
+   "text": "Hold on to your guess. Because to see why the answer is so lopsided, we have to go back to the day phones first became free.",
+   "pause": 0.8
+  },
+  {
+   "id": "c4a",
+   "chapter": "How Phones Became Free",
+   "text": "That night, Dave fell down an internet rabbit hole, because he needed to know who came up with this.",
+   "pause": 0.4
+  },
+  {
+   "id": "c4b",
+   "text": "In two thousand seven, Steve Jobs walked on stage with the very first iPhone, and it cost up to six hundred dollars.",
+   "pause": 0.5
+  },
+  {
+   "id": "c4c",
+   "text": "A year later, the next model showed up at one hundred ninety nine dollars, and the lines went around the block.",
+   "pause": 0.5,
+   "rate": "+3%"
+  },
+  {
+   "id": "c4d",
+   "text": "The phone didn't suddenly get cheap to build. The phone company quietly covered the rest, and in exchange, you signed a two year contract and paid it all back in your monthly bill.",
+   "pause": 0.5
+  },
+  {
+   "id": "c4f",
+   "text": "Everybody hated those contracts. So in twenty thirteen, a C E O in a bright pink T-shirt, John Legere of T-Mobile, stood up and killed them.",
+   "pause": 0.5
+  },
+  {
+   "id": "c4g",
+   "text": "Within about three years, the other big companies had dropped their contracts too. You were free! Sort of.",
+   "pause": 0.6,
+   "pitch": "+3Hz"
+  },
+  {
+   "id": "c4h",
+   "text": "But the companies still needed you to stay, so they came up with something that feels much nicer than a contract: the monthly coupon.",
+   "pause": 0.5
+  },
+  {
+   "id": "c4i",
+   "text": "And then they stretched it, until by twenty twenty two, the two biggest carriers had made it three years long.",
+   "pause": 0.5
+  },
+  {
+   "id": "c4j",
+   "text": "So the contract never died. It just put on a party hat with the word free on it. And now Dave could do the math on his two doors.",
+   "pause": 0.8
+  },
+  {
+   "id": "c5a",
+   "chapter": "Who Pays For Free",
+   "text": "Dave grabbed a napkin, because all serious math happens on napkins.",
+   "pause": 0.4
+  },
+  {
+   "id": "c5b",
+   "text": "Door A is ninety a month, and door B is twenty five. So the plan that comes with the free phone costs Dave sixty five dollars more, every single month.",
+   "pause": 0.5
+  },
+  {
+   "id": "c5c",
+   "text": "Over thirty six months, that adds up to two thousand three hundred and forty dollars extra. Now be generous, and take away the phone he got for free.",
+   "pause": 0.5
+  },
+  {
+   "id": "c5e",
+   "text": "What's left is one thousand one hundred and forty dollars. That's what free cost Dave, and that's the number your guess had to beat.",
+   "pause": 0.8,
+   "rate": "-12%",
+   "pitch": "-2Hz"
+  },
+  {
+   "id": "c5g",
+   "text": "So where does that money go? Well, last year, Verizon alone sold its phones for about three and a half billion dollars less than they cost. That's not a typo. It's in their own financial reports.",
+   "pause": 0.6,
+   "rate": "-9%"
+  },
+  {
+   "id": "c5h",
+   "text": "Because in that same year, their customers handed over more than eighty billion dollars in monthly wireless bills.",
+   "pause": 0.6
+  },
+  {
+   "id": "c5i",
+   "text": "It's a pet shop that gives away the goldfish for free, and then sells you the water. Every month, for three years.",
+   "pause": 0.6
+  },
+  {
+   "id": "c5j",
+   "text": "And it works beautifully. In a typical month, fewer than one customer in a hundred walks away.",
+   "pause": 0.9
+  },
+  {
+   "id": "c5k",
+   "text": "Dave decided he'd be that one customer. He would just leave, and take his free phone to the cheap plan. How hard could it be?",
+   "pause": 0.8,
+   "pitch": "+3Hz"
+  },
+  {
+   "id": "c6a",
+   "chapter": "Try To Leave",
+   "text": "First, Dave checked that a twenty five dollar plan was even real. It is, and this part is a little insulting.",
+   "pause": 0.4
+  },
+  {
+   "id": "c6b",
+   "text": "One of the best known cheap plans is called Visible. It costs twenty five dollars a month, taxes included, and it runs on Verizon's towers.",
+   "pause": 0.4
+  },
+  {
+   "id": "c6c",
+   "text": "Because Verizon owns it.",
+   "pause": 0.7,
+   "rate": "-12%",
+   "pitch": "-2Hz"
+  },
+  {
+   "id": "c6d",
+   "text": "It's the same story across the street. Remember the cheap phone company from those Ryan Reynolds ads? T-Mobile bought it, in a deal worth more than a billion dollars.",
+   "pause": 0.5
+  },
+  {
+   "id": "c6e",
+   "text": "So the cheap plan and the expensive plan often use the exact same towers, even if the cheap one can slow down when things get busy. It's the same water, in a fancier bowl.",
+   "pause": 0.6
+  },
+  {
+   "id": "c6g",
+   "text": "So Dave called to cancel. And the nice person on the line said: of course! Great news, you can leave any time you like.",
+   "pause": 0.4,
+   "pitch": "+3Hz"
+  },
+  {
+   "id": "c6h",
+   "text": "You'll just owe us the rest of the phone today. All twelve hundred dollars, because the moment you leave, the coupons stop, and the loan doesn't.",
+   "pause": 0.7,
+   "rate": "-9%"
+  },
+  {
+   "id": "c6i",
+   "text": "And there was one more thing. Dave's phone was locked, which means it only works with the company that sold it, until every last dollar is paid off.",
+   "pause": 0.5
+  },
+  {
+   "id": "c6j",
+   "text": "That lock is a real fight in Washington. In twenty twenty four, the F C C proposed making every company unlock your phone after sixty days, and this January it went the other way for Verizon, which no longer has to.",
+   "pause": 0.5
+  },
+  {
+   "id": "c6l",
+   "text": "The companies say locks stop thieves. Consumer groups say locks stop you from shopping around. That's a political question, and now you know the rule.",
+   "pause": 0.6
+  },
+  {
+   "id": "c6m",
+   "text": "For Dave, the rule meant one thing. The only way out of free cost twelve hundred dollars.",
+   "pause": 0.9,
+   "rate": "-9%"
+  },
+  {
+   "id": "c7a",
+   "chapter": "Three Years Is Long",
+   "text": "So Dave sat on his couch with his beautiful new phone, and he did something dangerous. He thought about it.",
+   "pause": 0.4
+  },
+  {
+   "id": "c7c",
+   "text": "Three years is a long time for a phone. You'll drop it, or you'll want the new one, and then Chad calls with great news about a fresh set of coupons.",
+   "pause": 0.6
+  },
+  {
+   "id": "c7d",
+   "text": "And the deal took one more thing: his old phone. The offer needed a trade in, so the Florida phone, which still worked fine, was headed for a mailbox.",
+   "pause": 0.6
+  },
+  {
+   "id": "c7e",
+   "text": "Let's be fair one last time. If you were going to pay for that exact plan for three years anyway, this deal is a real discount.",
+   "pause": 0.5
+  },
+  {
+   "id": "c7f",
+   "text": "The trick only works on people like Dave, who would've paid a lot less, and who can't put twelve hundred dollars on the counter. Which, be honest, is most of us.",
+   "pause": 0.6
+  },
+  {
+   "id": "c7g",
+   "text": "That's the real product. It isn't the phone. It's a customer who can't afford to leave.",
+   "pause": 0.9,
+   "rate": "-12%",
+   "pitch": "-2Hz"
+  },
+  {
+   "id": "c7h",
+   "text": "And Dave was that customer, except for one thing. He still had the receipt, and at the very bottom, there was a line that Chad had not circled.",
+   "pause": 0.9
+  },
+  {
+   "id": "c8a",
+   "chapter": "The Line Chad Skipped",
+   "text": "Dave flattened the receipt on the table. Quick note before we read it with him: this is education, not advice, and your own contract is the boss.",
+   "pause": 0.4
+  },
+  {
+   "id": "c8b",
+   "text": "The line said returns. When you buy a phone from a big carrier, you usually get a short window to bring it back: fourteen days at two of the big three, and thirty at the other one.",
+   "pause": 0.5
+  },
+  {
+   "id": "c8c",
+   "text": "There's usually a restocking fee of around fifty dollars. Dave looked at the calendar, and it was day thirteen. Even better, he'd been too lazy to mail his old phone.",
+   "pause": 0.6,
+   "rate": "+3%"
+  },
+  {
+   "id": "c8e",
+   "text": "So now Dave had choices, and so do you. Second game: which would you pick? One: keep the phone you already own, and move it to a cheaper plan.",
+   "pause": 0.5
+  },
+  {
+   "id": "c8f",
+   "text": "Two: buy your next phone unlocked, straight from the maker, so no phone company is ever holding the leash.",
+   "pause": 0.5
+  },
+  {
+   "id": "c8g",
+   "text": "Or three: take the free phone with your eyes open, because you did the napkin math, and it really is cheaper for you.",
+   "pause": 0.6
+  },
+  {
+   "id": "c8h",
+   "text": "Whatever you pick, there are three questions worth asking in the store. What's the plan price? How many months? And what do I owe if I leave?",
+   "pause": 0.7
+  },
+  {
+   "id": "c8i",
+   "text": "Dave picked number one. So on day thirteen, he walked back into the store, where Chad was already reaching for the pen.",
+   "pause": 0.9
+  },
+  {
+   "id": "c9a",
+   "chapter": "Great News, Chad",
+   "text": "Chad goes: Dave! Great news, we've got a watch that's also free!",
+   "pause": 0.4,
+   "rate": "+6%",
+   "pitch": "+4Hz"
+  },
+  {
+   "id": "c9b",
+   "text": "And Dave goes: great news, Chad. I'm returning the phone.",
+   "pause": 0.8,
+   "rate": "-6%"
+  },
+  {
+   "id": "c9c",
+   "text": "It cost him a restocking fee of fifty five dollars, which is the cheapest lesson Dave has ever bought.",
+   "pause": 0.5
+  },
+  {
+   "id": "c9d",
+   "text": "He kept the Florida phone, crack and all, and he moved his number to the twenty five dollar plan, with zero signatures.",
+   "pause": 0.5
+  },
+  {
+   "id": "c9e",
+   "text": "So every month, sixty five dollars now stays in Dave's pocket, instead of quietly leaving it.",
+   "pause": 0.5
+  },
+  {
+   "id": "c9f",
+   "text": "He drops it in a jar. In about a year and a half, that jar can buy the twelve hundred dollar phone outright, unlocked, with no coupons and no Chad.",
+   "pause": 0.6
+  },
+  {
+   "id": "c9g",
+   "text": "And over the same three years, he ends up eleven hundred and forty dollars ahead of the Dave who took the free one.",
+   "pause": 0.7,
+   "rate": "-12%"
+  },
+  {
+   "id": "c9h",
+   "text": "So that's Dave, walking out of the exact store where we started, paying sixty five dollars less a month. And yes, he kept the pen. It was the only thing in there that was actually free.",
+   "pause": 0.9
+  },
+  {
+   "id": "r1",
+   "chapter": "What Dave Learned",
+   "text": "Here's what Dave learned. One: your free phone is a loan, with a coupon every month.",
+   "pause": 0.4
+  },
+  {
+   "id": "r2",
+   "text": "Two: the coupons only come with the expensive plan, and they stop the day you leave.",
+   "pause": 0.4
+  },
+  {
+   "id": "r3",
+   "text": "Three: add up the plan and the phone over all three years, before the pen comes out.",
+   "pause": 0.6
+  },
+  {
+   "id": "r4",
+   "text": "Next time, Dave's friends take him out to celebrate, and somebody says the five most expensive words in friendship: let's just split it evenly.",
+   "pause": 0.5
+  },
+  {
+   "id": "r5",
+   "text": "Subscribe. It's free, and I mean actually free: no coupons, and you can leave any time.",
+   "pause": 1.4
+  }
+ ]
 }
