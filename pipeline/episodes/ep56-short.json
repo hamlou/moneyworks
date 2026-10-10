@@ -4,67 +4,67 @@
   "beats": [
     {
       "id": "o1",
-      "text": "Dave made three thousand dollars in sales. Then he checked his bank account. He was down one thousand five hundred forty six dollars.",
+      "text": "Dave's store made three thousand dollars in sales. Sounds great, right? Then he checked his bank balance: he was down one thousand five hundred forty six dollars.",
       "pause": 0.2
     },
     {
       "id": "o2",
-      "text": "His product was a glowing cat lamp. He charged thirty dollars, and the supplier shipped it straight to the customer.",
+      "text": "He was selling a glowing cat lamp for thirty dollars. Dave never touched the product. A supplier shipped each lamp straight to the customer, and charged him twelve dollars.",
       "pause": 0.2
     },
     {
       "id": "o3",
-      "text": "The store looked successful on the screen. But sales were not profit, and Dave was about to find out why.",
+      "text": "At first, the store dashboard looked amazing. Orders were coming in, and Dave thought he'd cracked online business. He hadn't checked what each sale actually cost him.",
       "pause": 0.2
     },
     {
       "id": "c1",
-      "text": "The supplier charged twelve dollars per lamp. From a thirty dollar sale, Dave had eighteen dollars left.",
+      "text": "For every thirty-dollar order, twelve dollars went to the supplier. That left Dave eighteen dollars. So far, so good.",
       "pause": 0.3
     },
     {
       "id": "c2",
-      "text": "Payment processing took one dollar and twenty cents. That left sixteen dollars and eighty cents before ads, refunds, or anything else.",
+      "text": "Then the payment company took one dollar and twenty cents. Dave was down to sixteen dollars and eighty cents, and he still hadn't paid for an ad.",
       "pause": 0.3
     },
     {
       "id": "c3",
-      "text": "Dave paid for ads. Every click cost fifty cents, even when the person clicked away without buying.",
+      "text": "Dave bought ads to get people into the store. Each click cost fifty cents. If someone tapped the ad, looked around, and left, Dave still paid.",
       "pause": 0.3
     },
     {
       "id": "c4",
-      "text": "One hundred clicks cost fifty dollars. Only two people bought, so advertising alone cost twenty five dollars per customer.",
+      "text": "He got one hundred clicks. At fifty cents each, that was fifty dollars. Only two people bought the lamp, so the ads cost him twenty-five dollars for each customer.",
       "pause": 0.3
     },
     {
       "id": "c5",
-      "text": "The ad platform got paid. The store platform got paid. The supplier got paid. Dave was the one covering the shortfall.",
+      "text": "The ad platform took its fifty dollars. The payment company took its fee. The supplier got paid for both lamps. Dave had just sixteen dollars and eighty cents per sale to work with.",
       "pause": 0.3
     },
     {
       "id": "c6",
-      "text": "Then orders arrived late. Customers asked for refunds, and some disputed the charges with their banks. Those losses came on top.",
+      "text": "Then some lamps arrived late. Customers messaged Dave asking where their orders were. A few wanted refunds, and some disputed the charges with their banks.",
       "pause": 0.3
     },
     {
       "id": "c7",
-      "text": "Dave opened his calculator. He had just sixteen dollars and eighty cents available to acquire a customer before he started losing money.",
+      "text": "Dave pulled out his calculator. He could spend at most sixteen dollars and eighty cents to get one customer and break even, before refunds or any other costs.",
       "pause": 0.3
     },
     {
       "id": "c8",
-      "text": "But each customer cost him twenty five dollars in ads. That was a loss of at least eight dollars and twenty cents per sale, before refunds.",
+      "text": "But he was spending twenty-five dollars to get a customer. That's at least eight dollars and twenty cents lost on every sale, even before a single refund.",
       "pause": 0.3
     },
     {
       "id": "c9",
-      "text": "Dave switched off the ads and shut the laptop. Three thousand dollars in sales meant nothing if every sale made him poorer.",
+      "text": "Dave switched off the ads and shut the laptop. Three thousand dollars in sales didn't mean he was making money. He needed to calculate the costs before buying another click.",
       "pause": 0.3
     },
     {
       "id": "cta",
-      "text": "Follow for money stories with the real numbers. Next, Dave tries to borrow his way out of a bad business.",
+      "text": "Follow for money stories with the actual numbers. Next, Dave tries borrowing money to rescue a business that's already losing.",
       "pause": 0.6
     }
   ]
