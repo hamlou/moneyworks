@@ -3,76 +3,76 @@
   "title": "Why Your Family Pays Everyone Back Except You",
   "hook_form": "family_contradiction",
   "tts": {
-    "rate": "-6%",
-    "hook_rate": "+2%",
+    "rate": "-3%",
+    "hook_rate": "+3%",
     "lead": 0.08
   },
   "beats": [
     {
       "id": "o1",
       "job": "concept",
-      "text": "You lend your brother three thousand dollars. Then you watch him pay every bill except yours.",
-      "rate": "+2%",
-      "pause": 0.12
+      "text": "You lend your brother three thousand dollars. Then he pays every bill except yours.",
+      "rate": "+3%",
+      "pause": 0.1
     },
     {
       "id": "o2",
       "job": "stakes",
-      "text": "His car payment clears. His phone bill clears. His credit card clears. You get nothing. Then your tire blows.",
-      "rate": "+2%",
-      "pause": 0.12
+      "text": "Car payment: paid. Phone: paid. Credit card: paid. You get nothing. Then your tire blows.",
+      "rate": "+3%",
+      "pause": 0.1
     },
     {
       "id": "o3",
       "job": "ending",
-      "text": "By the end, Dave has a repayment plan that protects his money without turning his brother into an enemy. The trick starts with one question.",
-      "rate": "+2%",
-      "pause": 0.18
+      "text": "By the end, Dave has a plan that gets paid without wrecking the family. It starts with one question.",
+      "rate": "+3%",
+      "pause": 0.15
     },
     {
       "id": "c1",
-      "text": "Back in April, Danny's car died. Dave sent his entire emergency fund. Their contract was a pizza emoji. No date. No plan.",
-      "pause": 0.15
+      "text": "In April, Danny's car died. Dave sent his emergency fund. The contract? A pizza emoji. No date.",
+      "pause": 0.1
     },
     {
       "id": "c2",
-      "text": "Danny still paid the car lender, phone company, and credit card. They could charge fees or damage his credit. Dave couldn't punish his brother. So Dave kept waiting.",
-      "pause": 0.15
+      "text": "Danny pays lenders first. They can add fees or hurt his credit. Dave can't punish his brother, so he waits.",
+      "pause": 0.1
     },
     {
       "id": "c3",
-      "text": "Then Dave's tire blew, and he put four hundred dollars on his own credit card. That's when the family loan stopped feeling generous.",
-      "pause": 0.15
+      "text": "Then Dave's tire blows. He puts four hundred dollars on his own card. The loan is hurting him now.",
+      "pause": 0.1
     },
     {
       "id": "c4",
-      "text": "Quick guess: among people who lent money expecting repayment, how many lost money? Bankrate's twenty twenty-five survey said forty-four percent. Nearly one in two.",
-      "pause": 0.15
+      "text": "Guess: how many lenders lose money? Bankrate's twenty twenty-five survey: forty-four percent. Nearly one in two.",
+      "pause": 0.1
     },
     {
       "id": "c5",
-      "text": "Danny might not be a villain. He might be broke too. But without a date and a plan, Dave is the easiest bill to postpone.",
-      "pause": 0.15
+      "text": "Danny may be broke, not evil. But with no date or plan, Dave is the easiest bill to postpone.",
+      "pause": 0.1
     },
     {
       "id": "c6",
-      "text": "The IRS says evidence matters when deciding whether money was a loan or a gift. A written note and repayment schedule beat a pizza emoji.",
-      "pause": 0.15
+      "text": "The IRS says evidence helps prove a loan wasn't a gift. A written note beats a pizza emoji.",
+      "pause": 0.1
     },
     {
       "id": "c7",
-      "text": "So Dave calls Danny privately. They write down three thousand dollars, one hundred twenty-five a month, the day after payday, for twenty-four months. Both sign. Danny automates it.",
-      "pause": 0.15
+      "text": "Dave calls privately. They write three thousand dollars, one hundred twenty-five monthly, the day after payday, for two years. Both sign. Danny automates it.",
+      "pause": 0.1
     },
     {
       "id": "c8",
-      "text": "Now Dave has a place in the payday line. Before lending again, he asks: is this a gift or a loan? If losing it would hurt, don't lend it casually. Give only what you can afford to lose as a gift.",
-      "pause": 0.15
+      "text": "Now Dave has a place in the payday line. Before lending, he asks: gift or loan? If losing it would hurt, say no—or give only what you can afford to lose.",
+      "pause": 0.1
     },
     {
       "id": "c9",
-      "text": "One question. One page. No family courtroom at Thanksgiving. Subscribe for more money traps explained through Dave's disasters.",
-      "pause": 0.3
+      "text": "One question. One page. No family courtroom. Subscribe for more money traps, explained through Dave's disasters.",
+      "pause": 0.25
     }
   ]
 }
