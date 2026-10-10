@@ -52,7 +52,15 @@ const Body:React.FC=()=>{
  const f=useCurrentFrame(); const {t,bs}=useT(); const d=Math.round(t.total*30);
  const A=(id:string)=>Math.max(0,bs(id)-4); const P=(at:number)=>pop(f,at+2);
  const scenes:SceneItem[]=[]; const scene=(at:number,el:()=>React.ReactNode)=>scenes.push({at,el});
- const micro=(beat:string,els:Array<()=>React.ReactNode>)=>els.forEach((el,i)=>scene(Math.max(0,bs(beat)-4)+i*60,el));
+ const micro=(beat:string,els:Array<()=>React.ReactNode>)=>{
+  const index=t.beats.findIndex(b=>b.id===beat);
+  const nextAt=Math.round((t.beats[index+1]?.start ?? t.total)*30);
+  const start=Math.max(0,bs(beat)-4);
+  for(let at=start,i=0;at<nextAt;at+=60,i++){
+   const el=els[i%els.length];
+   scene(at,()=> <AbsoluteFill style={{transform:`scale(${1.012+0.008*Math.sin((f-at)/8)})`}}>{el()}</AbsoluteFill>);
+  }
+ };
  const photo=(src:string,at:number,x=540,y=600,ww=760,hh=540,look:'polaroid'|'sticker'|'news'|'tape'|'plain'|'circle'='sticker',label?:string,ring=false)=> <Pic f={f} src={`ep57/${src}.jpg`} x={x} y={y} w={ww} h={hh} at={Math.max(0,at)} look={look} enter="slam" rot={-2} kb={0.08} label={label} ring={ring}/>;
 
  // Hook: real photo first, no Dave; the promise is shown before the explanation.
