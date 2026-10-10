@@ -4,7 +4,7 @@ import {TimingProvider, Timings, useT} from '../timing';
 import {C, FONT} from '../theme';
 import {pop, ease} from '../anim';
 import {Stick} from '../Stick';
-import {G, Stamp, Paper} from '../props';
+import {G, Stamp} from '../props';
 import {Pic} from '../photo';
 import {SubButton, Bell} from '../props2';
 
@@ -27,13 +27,22 @@ const Captions:React.FC<{f:number}>=({f})=>{
   </div>)}
  </div>;
 };
+const MemeCard:React.FC<{f:number;at:number;text:string;x?:number;y?:number;color?:string;id?:string}>=({f,at,text,x=540,y=1020,color=C.red})=>{
+ const lines=text.split('\n');
+ return <G x={x} y={y} s={pop(f,at,8,220)}>
+  <rect x={-360} y={-112} width={720} height={224} rx={20} fill="rgba(0,0,0,.18)" transform="translate(8,10)"/>
+  <rect x={-360} y={-112} width={720} height={224} rx={20} fill="#FFF8E8" stroke={C.ink} strokeWidth={7}/>
+  <rect x={-360} y={-112} width={720} height={20} rx={8} fill={color}/>
+  {lines.map((line,i)=><text key={i} x={0} y={(i-(lines.length-1)/2)*47+18} textAnchor="middle" dominantBaseline="middle" fontFamily={FONT} fontWeight={900} fontSize={lines.length>2?27:33} fill={i===lines.length-1?color:C.ink}>{line}</text>)}
+ </G>;
+};
 const PhotoScene:React.FC<{f:number;id:string;label:string;memetext:string;idx:number;start:number;pose?:string}>=({f,id,label,memetext,idx,start,pose='shock'})=><AbsoluteFill>
  <Svg><rect width={W} height={H} fill={C.bg}/><rect width={W} height={1180} fill={C.wall}/><rect y={1180} width={W} height={740} fill={C.floor}/></Svg>
- <Pic f={f} src={`ep56/${id}.jpg`} x={545} y={590} w={650} h={450} at={start+2} look="news" enter="slam" label={label} rot={-2}/>
+ <Pic f={f} src={`ep56/${id}.jpg`} x={545} y={590} w={650} h={450} at={start+2} look="plain" enter="slam" label={label} rot={-2} kb={0.08}/>
  <Svg>
   <Dave f={f} x={230} y={1575} s={1.18} walk={f<start+28||f>start+118} keys={[{at:start,pose,expr:'shock'},{at:start+35,pose:'talk',expr:'angry',talk:true},{at:start+72,pose:'facepalm',expr:'sad',talk:false},{at:start+108,pose:'point_r',expr:'suspicious',talk:false},{at:start+145,pose:'celebrate',expr:'happy',talk:false}]}/>
   <Bob f={f} x={850} y={1575} s={1.1} keys={[{at:start,pose:'think',expr:'worried'},{at:start+38,pose:'panic',expr:'shock'},{at:start+78,pose:'think',expr:'think'},{at:start+118,pose:'wave',expr:'happy'},{at:start+150,pose:'shrug',expr:'smug'}]}/>
-  <G x={540} y={1020} s={pop(f,start+16,8,220)}><Paper id={`meme-${id}`} text={memetext} reveal={1} w={700} h={210} size={32} color={C.red}/></G>
+  <MemeCard f={f} at={start+16} text={memetext} color={C.red}/>
  </Svg>
 </AbsoluteFill>;
 const Hook:React.FC<{f:number}>=({f})=><AbsoluteFill>
