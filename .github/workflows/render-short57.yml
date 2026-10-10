@@ -1,0 +1,68 @@
+name: Render Episode 57 Short
+run-name: Episode 57 standalone vertical short
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/render-short57.yml'
+      - 'pipeline/episodes/ep57-short.json'
+      - 'pipeline/tts.py'
+      - 'src/shorts/Short57.tsx'
+      - 'src/Root.tsx'
+      - 'src/props57.tsx'
+
+permissions:
+  contents: read
+
+jobs:
+  render-short:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install rendering dependencies
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq ffmpeg
+          python -m pip install --upgrade pip
+          pip install edge-tts numpy
+          npm ci --no-audit --no-fund
+
+      - name: Generate real English voiceover and word timings
+        run: python pipeline/tts.py pipeline/episodes/ep57-short.json public/short57
+
+      - name: Render animated vertical MP4
+        run: |
+          mkdir -p out
+          npx remotion render src/index.ts Short57 out/episode-57-short.mp4 \
+            --props='{"timings":null}' \
+            --codec=h264 --crf=18 --pixel-format=yuv420p --audio-codec=aac \
+            --concurrency=2 --log=warn
+
+      - name: Verify MP4
+        run: |
+          ffprobe -v error -show_entries format=duration:stream=codec_name,width,height -of json out/episode-57-short.mp4
+
+      - name: Upload finished MP4
+        uses: actions/upload-artifact@v4
+        with:
+          name: episode-57-vertical-short
+          path: out/episode-57-short.mp4
+          if-no-files-found: error
+          retention-days: 90
+          compression-level: 0
