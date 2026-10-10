@@ -64,9 +64,9 @@ const PhotoScene:React.FC<{f:number;d:SceneDef;start:number;index:number}>=({f,d
    <Dave f={f} x={245} y={1575} s={1.22} walk={rel<34||rel>142} keys={[
     {at:start,pose:d.poseA,expr:index<2?'shock':'worried'},
     {at:start+38,pose:'talk',expr:'angry',talk:true},
-    {at:start+78,pose:'facepalm',expr:'sad'},
-    {at:start+120,pose:'point_r',expr:'suspicious'},
-    {at:start+165,pose:'celebrate',expr:'happy'}
+    {at:start+78,pose:'facepalm',expr:'sad',talk:false},
+    {at:start+120,pose:'point_r',expr:'suspicious',talk:false},
+    {at:start+165,pose:'celebrate',expr:'happy',talk:false}
    ]}/>
    <Bob f={f} x={850} y={1575} s={1.12} keys={[
     {at:start,pose:d.poseB,expr:'smug'},
@@ -92,7 +92,7 @@ const Hook:React.FC<{f:number}>=({f})=><AbsoluteFill>
    {at:24,pose:'facepalm',expr:'sad'},
    {at:48,pose:'panic',expr:'worried'},
    {at:72,pose:'point_up',expr:'angry',talk:true},
-   {at:100,pose:'shrug',expr:'suspicious'}
+   {at:100,pose:'shrug',expr:'suspicious',talk:false}
   ]}/>
   <Bob f={f} x={850} y={1580} s={1.13} keys={[
    {at:0,pose:'shrug',expr:'smug'},
@@ -112,7 +112,7 @@ const Body:React.FC=()=>{
  const subAt=endShow?end:mid;
  return <AbsoluteFill style={{background:C.bg}}>
   <AbsoluteFill style={{transform:`scale(${1+0.006*Math.sin(f/11)})`}}>{current.el()}</AbsoluteFill>
-  {(midShow||endShow)&&<Svg><G x={540} y={1190} s={0.72*pop(f,subAt,10,220)}><SubButton done={f>subAt+50?1:0}/></G><G x={820} y={1190} s={0.7*pop(f,subAt+4,10,220)}><Bell f={f} ring={1}/></G><G x={540} y={1090} s={pop(f,subAt+2,8,220)}><Stamp text={endShow?'NEXT MONEY TRAP?':'MORE MONEY STORIES?' } color={C.navy} size={31}/></G></Svg>}
+  {(midShow||endShow)&&<Svg><G x={540} y={145} s={0.55*pop(f,subAt,10,220)}><SubButton done={f>subAt+50?1:0}/></G><G x={820} y={145} s={0.52*pop(f,subAt+4,10,220)}><Bell f={f} ring={1}/></G><G x={540} y={72} s={pop(f,subAt+2,8,220)}><Stamp text={endShow?'NEXT MONEY TRAP?':'MORE MONEY STORIES?' } color={C.navy} size={27}/></G></Svg>}
   <Captions f={f}/>
   <div style={{position:'absolute',left:0,right:0,bottom:0,height:9,background:'#2222',zIndex:21}}><div style={{height:'100%',width:`${100*f/duration}%`,background:C.green}}/></div>
   <Sequence from={0} durationInFrames={60}><Audio src={staticFile('sfx/whoosh.wav')} volume={0.7}/></Sequence>
