@@ -75,7 +75,6 @@ const PhotoScene:React.FC<{f:number;d:SceneDef;start:number;index:number}>=({f,d
     {at:start+130,pose:'wave',expr:'happy'},
     {at:start+170,pose:'shrug',expr:'smug'}
    ]}/>
-   <G x={540} y={1270} s={pop(f,start+12,8,220)}><Stamp text={index===9?'SALES ARE NOT PROFIT':'DAVE’S FACE SAYS IT ALL'} color={C.ink} size={29}/></G>
   </Svg>
  </AbsoluteFill>;
 };
