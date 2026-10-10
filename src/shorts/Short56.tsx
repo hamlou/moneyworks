@@ -59,24 +59,24 @@ const PhotoScene:React.FC<{f:number;id:string;label:string;memetext:string;idx:n
  </Svg>
 </AbsoluteFill>;
 const Hook:React.FC<{f:number}>=({f})=><AbsoluteFill>
- <Svg><rect width={W} height={H} fill={C.navy}/><rect y={1250} width={W} height={670} fill={C.floor}/><G x={540} y={280} s={1}><Stamp text="$3,000 SALES" color={C.green} size={74}/></G><G x={540} y={570} s={1}><Stamp text="-$1,546 BANK BALANCE" color={C.red} size={53}/></G><Dave f={f} x={230} y={1575} s={1.24} walk={f<28||f>78} keys={[{at:0,pose:'shock',expr:'shock'},{at:24,pose:'facepalm',expr:'sad'},{at:48,pose:'panic',expr:'worried'},{at:72,pose:'point_up',expr:'angry',talk:true},{at:100,pose:'shrug',expr:'suspicious',talk:false}]}/><Bob f={f} x={850} y={1575} s={1.12} keys={[{at:0,pose:'shrug',expr:'smug'},{at:30,pose:'think',expr:'think'},{at:60,pose:'panic',expr:'shock'},{at:90,pose:'facepalm',expr:'sad'}]}/><MemeCard f={f} at={0} y={900} text={'WHEN SALES LOOK GREAT\nBANK ACCOUNT: “NOPE”'} color={C.red}/></Svg>
+ <Svg><rect width={W} height={H} fill={C.navy}/><rect y={1250} width={W} height={670} fill={C.floor}/><G x={540} y={280} s={1}><Stamp text="$3,000 SALES" color={C.green} size={74}/></G><G x={540} y={570} s={1}><Stamp text="-$1,546 BANK BALANCE" color={C.red} size={53}/></G><Dave f={f} x={230} y={1575} s={1.24} walk={f<28||f>78} keys={[{at:0,pose:'shock',expr:'shock'},{at:24,pose:'facepalm',expr:'sad'},{at:48,pose:'panic',expr:'worried'},{at:72,pose:'point_up',expr:'angry',talk:true},{at:100,pose:'shrug',expr:'suspicious',talk:false}]}/><Bob f={f} x={850} y={1575} s={1.12} keys={[{at:0,pose:'shrug',expr:'smug'},{at:30,pose:'think',expr:'think'},{at:60,pose:'panic',expr:'shock'},{at:90,pose:'facepalm',expr:'sad'}]}/><MemeCard f={f} at={0} y={900} text={'$3,000 IN SALES.\nWHY IS HE DOWN $1,546?'} color={C.red}/></Svg>
 </AbsoluteFill>;
 const Body:React.FC=()=>{
  const f=useCurrentFrame();const {t,bs}=useT();const d=Math.round(t.total*30);
  const sceneAt=(id:string)=>Math.max(0,bs(id)-3);
  const scenes:any[]=[
  {at:0,el:()=> <Hook f={f}/>},
- {at:sceneAt('o2'),el:()=> <PhotoScene f={f} start={sceneAt('o2')} id="cat_lamp" label="THE $30 CAT LAMP" memetext={'DROPSHIPPING\nWAITER WHO NEVER SAW THE KITCHEN'} idx={0}/>},
- {at:sceneAt('o3'),el:()=> <PhotoScene f={f} start={sceneAt('o3')} id="online_store" label="THE STORE LOOKED EASY" memetext={'ONLINE STORE: “WE’RE RICH”\nBANK APP: “NOPE.”'} idx={10} pose="shock"/>},
- {at:sceneAt('c1'),el:()=> <PhotoScene f={f} start={sceneAt('c1')} id="shipping_box" label="SUPPLIER: $12" memetext={'THE SUPPLIER GETS PAID FIRST'} idx={1} pose="think"/>},
- {at:sceneAt('c2'),el:()=> <PhotoScene f={f} start={sceneAt('c2')} id="credit_card" label="PAYMENT FEES" memetext={'$30 SALE\nLESS FEES\nLESS $12 COST'} idx={2} pose="think"/>},
- {at:sceneAt('c3'),el:()=> <PhotoScene f={f} start={sceneAt('c3')} id="phone_ad" label="50¢ PER CLICK" memetext={'BUYING EYEBALLS\nNOT BUYERS'} idx={3}/>},
- {at:sceneAt('c4'),el:()=> <PhotoScene f={f} start={sceneAt('c4')} id="ad_dashboard" label="2 BUYERS OUT OF 100" memetext={'50 CLICKS = $25\nONE SALE = LOSS'} idx={4}/>},
- {at:sceneAt('c5'),el:()=> <PhotoScene f={f} start={sceneAt('c5')} id="warehouse" label="WHO GETS PAID?" memetext={'PLATFORMS WIN\nDAVE TAKES THE RISK'} idx={5}/>},
- {at:sceneAt('c6'),el:()=> <PhotoScene f={f} start={sceneAt('c6')} id="returns_box" label="REFUNDS + CHARGEBACKS" memetext={'DELIVERY LATE\nCUSTOMERS WANT MONEY BACK'} idx={6} pose="facepalm"/>},
- {at:sceneAt('c7'),el:()=> <PhotoScene f={f} start={sceneAt('c7')} id="calculator" label="THE AD CEILING" memetext={'MAX AD COST: $16.80\nDAVE SPENT $25'} idx={7} pose="think"/>},
- {at:sceneAt('c8'),el:()=> <PhotoScene f={f} start={sceneAt('c8')} id="product_search" label="CHECK THE MARKET" memetext={'SAME PRODUCT\nCHEAPER ELSEWHERE'} idx={8} pose="think"/>},
- {at:sceneAt('c9'),el:()=> <PhotoScene f={f} start={sceneAt('c9')} id="closed_laptop" label="ADS OFF" memetext={'SALES ≠ PROFIT\nCOUNT EVERY COST'} idx={9} pose="celebrate"/>}
+ {at:sceneAt('o2'),el:()=> <PhotoScene f={f} start={sceneAt('o2')} id="cat_lamp" label="THE $30 CAT LAMP" memetext={'DROPSHIPPING\nSELL IT. NEVER TOUCH IT.'} idx={0}/>},
+ {at:sceneAt('o3'),el:()=> <PhotoScene f={f} start={sceneAt('o3')} id="online_store" label="THE STORE LOOKED EASY" memetext={'STORE DASHBOARD: “WE’RE RICH”\nBANK APP: “BE SERIOUS.”'} idx={10} pose="shock"/>},
+ {at:sceneAt('c1'),el:()=> <PhotoScene f={f} start={sceneAt('c1')} id="shipping_box" label="SUPPLIER: $12" memetext={'SUPPLIER: PAID\nDAVE: NOT SO MUCH'} idx={1} pose="think"/>},
+ {at:sceneAt('c2'),el:()=> <PhotoScene f={f} start={sceneAt('c2')} id="credit_card" label="PAYMENT FEES" memetext={'$30 SALE\n−$12 PRODUCT\n−$1.20 PAYMENT FEE'} idx={2} pose="think"/>},
+ {at:sceneAt('c3'),el:()=> <PhotoScene f={f} start={sceneAt('c3')} id="phone_ad" label="50¢ PER CLICK" memetext={'THEY CLICKED.\nTHEY LEFT. YOU STILL PAY.'} idx={3}/>},
+ {at:sceneAt('c4'),el:()=> <PhotoScene f={f} start={sceneAt('c4')} id="ad_dashboard" label="2 BUYERS OUT OF 100" memetext={'100 CLICKS = $50\n2 SALES = $25 EACH'} idx={4}/>},
+ {at:sceneAt('c5'),el:()=> <PhotoScene f={f} start={sceneAt('c5')} id="warehouse" label="WHO GETS PAID?" memetext={'EVERYONE GOT PAID.\nDAVE GOT THE BILL.'} idx={5}/>},
+ {at:sceneAt('c6'),el:()=> <PhotoScene f={f} start={sceneAt('c6')} id="returns_box" label="REFUNDS + CHARGEBACKS" memetext={'PACKAGE LATE?\nREFUND REQUEST INCOMING.'} idx={6} pose="facepalm"/>},
+ {at:sceneAt('c7'),el:()=> <PhotoScene f={f} start={sceneAt('c7')} id="calculator" label="THE AD CEILING" memetext={'BREAK-EVEN AD COST: $16.80\nACTUAL COST: $25'} idx={7} pose="think"/>},
+ {at:sceneAt('c8'),el:()=> <PhotoScene f={f} start={sceneAt('c8')} id="product_search" label="CHECK THE MARKET" memetext={'THE MATH DOESN’T CARE\nABOUT YOUR HUSTLE.'} idx={8} pose="think"/>},
+ {at:sceneAt('c9'),el:()=> <PhotoScene f={f} start={sceneAt('c9')} id="closed_laptop" label="ADS OFF" memetext={'$3,000 IN SALES.\n−$1,546 IN REALITY.'} idx={9} pose="celebrate"/>}
  ];
  let current=scenes[0];for(const s of scenes){if(s.at<=f)current=s;}
  const mid=bs('c5')+20,end=d-120,midShow=f>=mid&&f<mid+75,endShow=f>=end;
