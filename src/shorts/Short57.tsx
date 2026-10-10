@@ -49,7 +49,7 @@ const Scenes:React.FC<{f:number;items:SceneItem[]}> = ({f,items})=>{
 };
 
 const Body:React.FC=()=>{
- const f=useCurrentFrame(); const {t,bs,w}=useT(); const d=Math.round(t.total*30);
+ const f=useCurrentFrame(); const {t,bs}=useT(); const d=Math.round(t.total*30);
  const A=(id:string)=>Math.max(0,bs(id)-4); const P=(at:number)=>pop(f,at+2);
  const scenes:SceneItem[]=[]; const scene=(at:number,el:()=>React.ReactNode)=>scenes.push({at,el});
  const micro=(beat:string,els:Array<()=>React.ReactNode>)=>els.forEach((el,i)=>scene(Math.max(0,bs(beat)-4)+i*60,el));
@@ -72,7 +72,7 @@ const Body:React.FC=()=>{
  // The money was sent on trust — the pizza emoji is the running gag.
  micro('c1',[
   ()=> <AbsoluteFill><Room street/><Svg><Dave f={f} x={250} y={1460} s={1.18} keys={[{at:0,pose:'present',expr:'sad'}]}/><Danny f={f} x={830} y={1460} s={1.18} keys={[{at:0,pose:'panic',expr:'worried'}]}/><G x={W/2} y={660} s={P(A('c1'))}><SendApp amount="$3,000" sent={f>bs('c1')+25?1:0} memo={f>bs('c1')+40?1:0}/></G></Svg></AbsoluteFill>,
-  ()=> <AbsoluteFill><Room/><Svg><Dave f={f} x={300} y={1460} s={1.15} keys={[{at:0,pose:'think',expr:'worried'}]}/><G x={760} y={690} s={P(bs('c1')+60)}><Paper id="pizza-contract" text={'CONTRACT\n\n🍕\n\nDUE DATE: ???'} reveal={1} w={490} h={470} size={58} color={C.red}/></G><G x={W/2} y={230} s={P(bs('c1')+60)}><Stamp text="A PIZZA EMOJI" color={C.red} size={48}/></G></Svg></AbsoluteFill>
+  ()=> <AbsoluteFill><Room/><Svg><Dave f={f} x={300} y={1460} s={1.15} keys={[{at:0,pose:'think',expr:'worried'}]}/><G x={760} y={690} s={P(bs('c1')+60)}><Paper id="pizza-contract" text={'CONTRACT\n\nPIZZA EMOJI\n\nDUE DATE: ???'} reveal={1} w={490} h={470} size={58} color={C.red}/></G><G x={W/2} y={230} s={P(bs('c1')+60)}><Stamp text="A PIZZA EMOJI" color={C.red} size={48}/></G></Svg></AbsoluteFill>
  ]);
  micro('c2',[
   ()=> <AbsoluteFill><Room/>{photo('card_payment',bs('c2'),540,620,780,560,'sticker','THEY HAVE LEVERAGE')}<Svg><Danny f={f} x={W/2} y={1480} s={1.0} keys={[{at:0,pose:'typing',expr:'neutral'}]}/></Svg></AbsoluteFill>,
