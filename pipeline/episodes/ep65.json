@@ -1,0 +1,491 @@
+{
+ "id": "ep65",
+ "title": "Why Your Rewards Points Are Making You Poorer",
+ "hook_form": "absurd_true_fact",
+ "tts": {
+  "rate": "-5%",
+  "hook_rate": "+3%",
+  "lead": 0.08
+ },
+ "spine": {
+  "goal": "Dave wants a 'free' beach flight: 60,000 bonus points from a new airline credit card, if he spends $4,000 in three months.",
+  "stakes": "He normally spends $900 a month, so he has to buy $1,300 of stuff he doesn't need (a kayak), then pays a $95 fee and about $90 of interest: $1,485 for a flight he could have bought for about $600.",
+  "central_question": "If points are free, who is actually paying for them, and why would an airline rather sell points than seats?",
+  "loop_big": "Hook shows Dave on the beach 'with fifteen hundred dollars a year back in his pocket'; paid in ch8-ch9: three questions on a sticky note undo all three costs ($1,300 chasing + $90 interest + $95 fee = $1,485) and he books the same beach with the points he already has.",
+  "loop_mid": "Pause-and-guess in ch4 (~33%): is one point worth ten cents, five cents or one cent? Paid about a minute later: about one cent (CFPB, issuers' own estimate), so 64,000 points = about $640.",
+  "villain": "The points printer (revealed ch4, ~40-50%): the airline creates points from nothing and sells them to the card bank; American Airlines got $6.2 billion in cash from card and other partners in 2025 against $111 million of net income, and in 2020 its points program was appraised at $19.5-31.5 billion, more than the airline's market value.",
+  "low_point": "~72%: the flight now costs 80,000 points, Dave carried a balance at about 22% interest, and his 'free' flight has cost $1,485 while he is still 20,000 points short. Dave: 'I got played by a kayak.'",
+  "win": "Education, not advice: (1) would I buy this with no points? (2) can I pay the whole bill every month? -> autopay in full (3) what does the card cost just to exist? -> no-fee cash back card; plus spend points fast. Dave books the same beach for 55,000 points off-season and keeps $1,485 a year. Balanced: rewards can be a nice little extra for people who pay in full and never chase."
+ },
+ "sources": [
+  "American Airlines Group Inc., Form 10-K for fiscal year 2025 (SEC, filed Feb 2026): 'Cash payments from co-branded credit card and other partners were $6.2 billion and $6.1 billion during 2025 and 2024, respectively.' Starting in 2026 Citi became the exclusive issuer of the AAdvantage co-branded card portfolio in the U.S. https://www.sec.gov/Archives/edgar/data/6201/000000620126000014/aal-20251231.htm",
+  "American Airlines press release, fourth-quarter and full-year 2025 results (Jan 2026): full-year GAAP net income of $111 million on record revenue of $54.6 billion. Math: $6.2B / $0.111B = about 56x -> 'over fifty times what it kept in profit all year'. https://news.aa.com/news/news-details/2026/American-Airlines-reports-fourth-quarter-and-full-year-2025-financial-results-CORP-FI-01/default.aspx",
+  "Federal Reserve Bank of Chicago, Working Paper 2010-19, Agarwal, Chakravorti and Lunn, 'Why Do Banks Reward Their Customers to Use Their Credit Cards?' (rev. Dec 2010): a 1% cash-back reward raised spending by $68 a month and card debt by $115 a month during the first quarter of the program (an earlier version of the abstract reports $79 and $191). Math: 1% of $68 = $0.68. https://www.chicagofed.org/publications/working-papers/2010/wp-19",
+  "Consumer Financial Protection Bureau, 'Credit Card Rewards: Issue Spotlight' (May 2024): over 1,200 rewards complaints in 2023 (+70% vs pre-pandemic); in one study rewards were on the front page of card offers over 94% of the time (APRs 28%); cardholders who revolve pay 94% of total interest and fees but gain less than 30% of rewards; a point is 'typically estimated by major issuers to be worth about $0.01'; issuers 'forfeit, expire, revoke, or otherwise take away hundreds of millions of dollars in earned rewards value each year'; themes include devaluation of earned rewards. https://www.consumerfinance.gov/data-research/research-reports/issue-spotlight-credit-card-rewards/",
+  "S&H Green Stamps: Sperry & Hutchinson founded 1896; retailers bought the stamps from S&H and gave them to shoppers, who pasted them in books and redeemed them for catalog goods; in the 1960s the company issued more stamps than the U.S. Postal Service (Reader's Digest, June 1963, via Wikipedia 'S&H Green Stamps'). https://en.wikipedia.org/wiki/S%26H_Green_Stamps",
+  "American Airlines AAdvantage launched May 1, 1981 (American Airlines corporate history), the first modern airline frequent-flyer program.",
+  "American Airlines Group Form 8-K (June 2020) and April-June 2020 investor disclosures: a third-party appraisal valued the AAdvantage program at $19.5 billion to $31.5 billion; the program was pledged as collateral for the CARES Act Treasury loan. American's stock-market value at the time was roughly $5.5-7 billion (View from the Wing, Apr/Jun 2020 coverage of the filings).",
+  "Delta SkyMiles, September 2023: changes announced Sept 13-14, 2023 caused a customer backlash; on Sept 25-27, 2023 CEO Ed Bastian said Delta 'probably went too far' and moved 'too fast'; Delta scaled back the changes on Oct 18, 2023 (AP, Fortune, Sept-Oct 2023).",
+  "U.S. Department of Transportation press release, Sept 5, 2024: USDOT opened an inquiry into the rewards programs of the four largest U.S. airlines (American, Delta, Southwest, United), covering devaluation of earned rewards, hidden or dynamic pricing, extra fees and reduced competition. https://www.transportation.gov/briefing-room/usdot-seeks-protect-consumers-airline-rewards-probe-four-largest-us-airlines-rewards",
+  "Federal Reserve Bank of Boston, Public Policy Discussion Paper 10-3, Schuh, Shy and Stavins, 'Who Gains and Who Loses from Credit Card Payments? Theory and Calibrations' (2010): 'each cash-using household pays $149 to card-using households and each card-using household receives $1,133 from cash users every year.' https://www.bostonfed.org/publications/public-policy-discussion-paper/2010/who-gains-and-who-loses-from-credit-card-payments-theory-and-calibrations.aspx",
+  "Federal Reserve Board, FEDS working paper, Agarwal, Presbitero, Silva and Wix, 'Who Pays For Your Rewards? Redistribution in the Credit Card Market' (Jan 2023): about $15 billion a year is redistributed; regardless of income, sophisticated cardholders gain from reward cards at the expense of naive ones. https://www.federalreserve.gov/econres/feds/who-pays-for-your-rewards-redistribution-in-the-credit-card-market.htm",
+  "Federal Reserve G.19 Consumer Credit (via FRED series TERMCBCCINTNS): commercial bank credit card interest rate on accounts assessed interest = 22.36% in August 2026. https://fred.stlouisfed.org/series/TERMCBCCINTNS",
+  "Dave's numbers are an illustration (fictional but typical): 60,000-point bonus after $4,000 of spending in 3 months; normal card spending $900 a month ($2,700) -> $1,300 extra; 64,000 points x about 1 cent = about $640; $95 annual fee; about $90 of interest on the $1,300 carried for a few months at about 22% APR; total $1,300 + $95 + $90 = $1,485. Swipe fee 'about two percent' as in our credit card video (ep02)."
+ ],
+ "beats": [
+  {
+   "id": "o1",
+   "job": "concept",
+   "text": "Last year, American Airlines took in about six billion dollars selling the points on cards like yours, over fifty times its profit for the year.",
+   "pause": 0.2
+  },
+  {
+   "id": "o2",
+   "job": "stakes",
+   "text": "And you're paying for them, because a Federal Reserve study caught a one percent reward making people spend about seventy dollars more a month.",
+   "pause": 0.2
+  },
+  {
+   "id": "o3",
+   "job": "ending",
+   "text": "So meet Dave, who ends this video on this beach, with about fifteen hundred dollars a year back in his pocket.",
+   "pause": 0.5
+  },
+  {
+   "id": "c1a",
+   "chapter": "Sixty Thousand Free Points",
+   "text": "It all starts at the airport, where Dave is dragging his suitcase past a little booth, and a very smiley man shouts: sir, would you like a free flight?",
+   "pause": 0.4,
+   "rate": "+3%"
+  },
+  {
+   "id": "c1b",
+   "text": "And honestly, who says no to that? You wouldn't, and I definitely wouldn't.",
+   "pause": 0.4
+  },
+  {
+   "id": "c1c",
+   "text": "The deal is a shiny airline credit card with sixty thousand bonus points, which he says is a round trip to a beach in Mexico.",
+   "pause": 0.4
+  },
+  {
+   "id": "c1d",
+   "text": "Dave goes: sixty thousand of anything sounds like a lot.",
+   "pause": 0.5,
+   "pitch": "+3Hz"
+  },
+  {
+   "id": "c1e",
+   "text": "There's just one little line at the bottom, and it says you have to spend four thousand dollars on the card in your first three months.",
+   "pause": 0.45
+  },
+  {
+   "id": "c1g",
+   "text": "Here's Dave's problem, though: he normally puts about nine hundred dollars a month on a card, so he's going to come up short.",
+   "pause": 0.4
+  },
+  {
+   "id": "c1h",
+   "text": "To grab his free flight, he needs to find thirteen hundred dollars of extra stuff to buy. And that's the exact moment Dave walks past a kayak.",
+   "pause": 0.5,
+   "rate": "-9%"
+  },
+  {
+   "id": "c1i",
+   "text": "Dave lives on the third floor, with a cat, nowhere near water. But the kayak has points on it, so the kayak is coming home.",
+   "pause": 0.8
+  },
+  {
+   "id": "c2a",
+   "chapter": "The Kayak Problem",
+   "text": "So Dave buys the kayak, and then an air fryer, and then he pays for the whole table at dinner so his friends can pay him back in cash.",
+   "pause": 0.4
+  },
+  {
+   "id": "c2b",
+   "text": "You've heard that little voice too, the one that says: well, I'm getting points on it, so it's basically on sale.",
+   "pause": 0.5,
+   "rate": "+3%"
+  },
+  {
+   "id": "c2c",
+   "text": "And somebody actually measured that voice. In two thousand ten, economists at the Chicago Fed studied a bank that had just added a one percent cash back reward to its cards.",
+   "pause": 0.45
+  },
+  {
+   "id": "c2d",
+   "text": "Same customers, same cards, one tiny new reward. So what do you think happened to their spending?",
+   "pause": 0.6,
+   "pitch": "+3Hz"
+  },
+  {
+   "id": "c2e",
+   "text": "It jumped by about sixty eight dollars a month, and the debt on those cards grew even faster.",
+   "pause": 0.6,
+   "rate": "-11%"
+  },
+  {
+   "id": "c2f",
+   "text": "Now look at that trade, because one percent back on that extra spending is about seventy cents.",
+   "pause": 0.5
+  },
+  {
+   "id": "c2g",
+   "text": "It's like a bakery that hands you one free cookie for every ten cakes you buy, and you walk out thinking you robbed the place.",
+   "pause": 0.5
+  },
+  {
+   "id": "c2h",
+   "text": "So in plain English: points don't pay you to shop. They get you to shop more, and then they hand you back the crumbs.",
+   "pause": 0.5
+  },
+  {
+   "id": "c2i",
+   "text": "Three months later Dave hits his four thousand dollars and feels like a genius. But he's thirteen hundred dollars poorer, and he starts wondering who invented this game.",
+   "pause": 0.8
+  },
+  {
+   "id": "c3a",
+   "chapter": "Grandma's Sticky Stamps",
+   "text": "So Dave asks his grandma, because Grandma remembers everything, and she pulls a little green book out of a kitchen drawer.",
+   "pause": 0.4
+  },
+  {
+   "id": "c3b",
+   "text": "These are S and H Green Stamps, and the company behind them started in eighteen ninety six.",
+   "pause": 0.4
+  },
+  {
+   "id": "c3c",
+   "text": "Every time you bought groceries, the shop gave you a strip of stamps. You licked them, stuck them in a book, and traded full books for a toaster.",
+   "pause": 0.45
+  },
+  {
+   "id": "c3d",
+   "text": "People went absolutely nuts for them. In the nineteen sixties, this one company was putting out more stamps than the United States Post Office.",
+   "pause": 0.5,
+   "rate": "+3%"
+  },
+  {
+   "id": "c3e",
+   "text": "And here's the clever bit: the shop had to buy those stamps. And a shop only has one place to get its money from, which is you.",
+   "pause": 0.5
+  },
+  {
+   "id": "c3f",
+   "text": "Grandma goes: so I paid for my own free toaster? Yes, Grandma. And you licked the receipt.",
+   "pause": 0.6,
+   "pitch": "+3Hz"
+  },
+  {
+   "id": "c3g",
+   "text": "Then in nineteen eighty one, American Airlines did the same thing with a computer instead of glue, and pretty soon everybody copied it.",
+   "pause": 0.45
+  },
+  {
+   "id": "c3h",
+   "text": "But a book of stamps had one honest feature. It bought the same toaster this year and next year, and Dave's about to learn that his points don't work like that.",
+   "pause": 0.8
+  },
+  {
+   "id": "c4a",
+   "chapter": "What's One Point Worth?",
+   "text": "First, a quick guess for you. Dave now has sixty four thousand points, so is one point worth about ten cents, five cents, or one cent?",
+   "pause": 0.5,
+   "rate": "+3%"
+  },
+  {
+   "id": "c4b",
+   "text": "Put your answer in the comments, because it comes back in about a minute.",
+   "pause": 0.5
+  },
+  {
+   "id": "c4c",
+   "text": "While you think: where do points even come from? The airline simply makes them up, on a computer, for free.",
+   "pause": 0.45
+  },
+  {
+   "id": "c4d",
+   "text": "Then it sells them, billions at a time, to the bank behind Dave's card, and the bank hands them to Dave whenever he swipes.",
+   "pause": 0.45
+  },
+  {
+   "id": "c4e",
+   "text": "Which means the airline gets paid when you buy groceries, when you fill your tank, and when Dave buys a kayak.",
+   "pause": 0.5
+  },
+  {
+   "id": "c4f",
+   "text": "That's the six billion from the start of this video. American Airlines' own annual report says card companies and other partners paid it six point two billion dollars in cash last year.",
+   "pause": 0.5,
+   "rate": "-8%"
+  },
+  {
+   "id": "c4g",
+   "text": "And its profit from everything, including all that actual flying? One hundred eleven million.",
+   "pause": 0.6,
+   "rate": "-10%"
+  },
+  {
+   "id": "c4h",
+   "text": "Dave goes: hang on, so I'm not the passenger. I'm the product.",
+   "pause": 0.9,
+   "pitch": "+3Hz"
+  },
+  {
+   "id": "c4i",
+   "text": "Now, back to your guess. According to the consumer bureau, the big card companies themselves value a typical point at about one cent.",
+   "pause": 0.5,
+   "rate": "-8%"
+  },
+  {
+   "id": "c4j",
+   "text": "So Dave's sixty four thousand points come to roughly six hundred forty dollars, about half of what he overspent to get them.",
+   "pause": 0.5
+  },
+  {
+   "id": "c4k",
+   "text": "And that's only if a point stays worth a cent. Because whoever prints the points also gets to decide what they buy.",
+   "pause": 0.8
+  },
+  {
+   "id": "c5a",
+   "chapter": "The Disappearing Flight",
+   "text": "So Dave opens the app to book his beach, and the flight that cost sixty thousand points at the airport booth now costs eighty thousand.",
+   "pause": 0.45
+  },
+  {
+   "id": "c5b",
+   "text": "Dave goes: but I have the points! I bought a kayak for this!",
+   "pause": 0.5,
+   "rate": "+5%",
+   "pitch": "+3Hz"
+  },
+  {
+   "id": "c5c",
+   "text": "Nobody took a single point away from him. They just raised the price of the seat, in points, without asking anyone.",
+   "pause": 0.45
+  },
+  {
+   "id": "c5d",
+   "text": "It's like saving arcade tickets for the giant teddy bear, and every time you get close, the guy behind the counter quietly swaps the sign.",
+   "pause": 0.55
+  },
+  {
+   "id": "c5e",
+   "text": "And it happens to real people. In September twenty twenty three, Delta changed its SkyMiles rules so sharply that customers revolted online.",
+   "pause": 0.4
+  },
+  {
+   "id": "c5f",
+   "text": "About two weeks later the boss, Ed Bastian, admitted they'd probably gone too far, and Delta softened some of the changes.",
+   "pause": 0.45
+  },
+  {
+   "id": "c5h",
+   "text": "The complaints piled up so high that in twenty twenty four the Department of Transportation opened an inquiry into the four biggest airlines' reward programs.",
+   "pause": 0.45
+  },
+  {
+   "id": "c5i",
+   "text": "So Dave's flight is now twenty thousand points away, and the only way to get more points is to spend more. But somebody else has been quietly paying for his points, and she just walked into the grocery store.",
+   "pause": 0.8
+  },
+  {
+   "id": "c6a",
+   "chapter": "Who Pays For Dave's Points?",
+   "text": "Remember Grandma? She pays cash for everything, and she's never had a rewards card in her life.",
+   "pause": 0.4
+  },
+  {
+   "id": "c6b",
+   "text": "Dave's right in front of her at the checkout, tapping his card, and with every tap the shop hands over about two percent of his bill.",
+   "pause": 0.45
+  },
+  {
+   "id": "c6c",
+   "text": "If you saw our credit card video, that's the raccoon's toll, and a big slice of it buys Dave's points.",
+   "pause": 0.45
+  },
+  {
+   "id": "c6d",
+   "text": "But the shop almost never charges Dave more than Grandma, so it nudges up the price of the bread for everybody.",
+   "pause": 0.5
+  },
+  {
+   "id": "c6e",
+   "text": "Be honest, did you know that when you pay with cash, you're chipping in for a stranger's vacation?",
+   "pause": 0.55,
+   "pitch": "+3Hz"
+  },
+  {
+   "id": "c6f",
+   "text": "Economists at the Boston Fed once estimated that a family paying cash hands over about one hundred fifty dollars a year to families paying with cards.",
+   "pause": 0.5,
+   "rate": "-8%"
+  },
+  {
+   "id": "c6g",
+   "text": "And a newer Fed study found it's less rich against poor, and more people who know the game against people who don't.",
+   "pause": 0.5
+  },
+  {
+   "id": "c6h",
+   "text": "To be fair, the card companies say rewards bring shops more customers and that cards are safer than cash, and that's a real debate.",
+   "pause": 0.5
+  },
+  {
+   "id": "c6i",
+   "text": "But Dave's about to find out which side of the game he's on, because his statement just landed.",
+   "pause": 0.8
+  },
+  {
+   "id": "c7a",
+   "chapter": "The Bill Arrives",
+   "text": "Quick one for you. Customer A pays the whole bill every month, and customer B pays a little and leaves the rest. Which one is paying for your points?",
+   "pause": 0.7,
+   "rate": "+3%"
+  },
+  {
+   "id": "c7b",
+   "text": "It's B, and it's not close. The consumer bureau found that people who carry a balance pay ninety four percent of all the interest and fees, and take home less than a third of the rewards.",
+   "pause": 0.5,
+   "rate": "-8%"
+  },
+  {
+   "id": "c7c",
+   "text": "And after the kayak, the air fryer and the big dinner, Dave couldn't pay it all off, so the card started charging him interest at around twenty two percent a year.",
+   "pause": 0.45
+  },
+  {
+   "id": "c7d",
+   "text": "His points pay about one percent. That's like a shop that gives you a penny for walking in, and charges you a quarter to leave.",
+   "pause": 0.55
+  },
+  {
+   "id": "c7e",
+   "text": "That cost him about ninety dollars in interest. Then the yearly fee showed up, and that was another ninety five.",
+   "pause": 0.5
+  },
+  {
+   "id": "c7f",
+   "text": "So let's add up Dave's free flight: the extra stuff, the fee, and the interest come to one thousand four hundred eighty five dollars.",
+   "pause": 0.6,
+   "rate": "-12%"
+  },
+  {
+   "id": "c7g",
+   "text": "For a flight he could've bought for about six hundred. And he still can't book it, because he's twenty thousand points short.",
+   "pause": 0.6,
+   "pitch": "-2Hz"
+  },
+  {
+   "id": "c7h",
+   "text": "Dave goes: I got played... by a kayak.",
+   "pause": 0.7,
+   "rate": "-10%"
+  },
+  {
+   "id": "c7i",
+   "text": "But there's one thing the smiley man at the booth doesn't want you to notice. This game only works on people who chase, and Dave just stopped chasing.",
+   "pause": 0.8
+  },
+  {
+   "id": "c8a",
+   "chapter": "Dave Fights Back",
+   "text": "This part is education, not advice, so take whatever fits your life. Dave writes three questions on a sticky note and wraps it around his card.",
+   "pause": 0.45
+  },
+  {
+   "id": "c8b",
+   "text": "Question one: would I buy this if there were no points? If the answer's no, then the points aren't a discount, they're the bait.",
+   "pause": 0.45
+  },
+  {
+   "id": "c8c",
+   "text": "Dave tries it, and the extra shopping just stops, which keeps thirteen hundred dollars a year at home.",
+   "pause": 0.5
+  },
+  {
+   "id": "c8d",
+   "text": "Question two: can I pay the whole bill, every single month? Because if you can't, no reward on Earth keeps up with twenty two percent interest, so Dave switches on autopay for the full balance.",
+   "pause": 0.5
+  },
+  {
+   "id": "c8f",
+   "text": "Question three: what does this card cost me just for existing? Dave's was ninety five dollars a year, so he swaps it for a boring one with no fee that just pays cash back.",
+   "pause": 0.5
+  },
+  {
+   "id": "c8g",
+   "text": "One last rule for the points you've already got: spend them. Points aren't a savings account, they're milk, and there's a date on the carton you can't see.",
+   "pause": 0.55
+  },
+  {
+   "id": "c8h",
+   "text": "So Dave stops waiting for the eighty thousand point flight, searches a rainy Tuesday in the off season, and finds the same beach for fifty five thousand.",
+   "pause": 0.45,
+   "rate": "+3%"
+  },
+  {
+   "id": "c8i",
+   "text": "He books it on the spot. And then he turns around and looks at the kayak.",
+   "pause": 0.8
+  },
+  {
+   "id": "c9a",
+   "chapter": "Same Beach, Different Dave",
+   "text": "So here's Dave, ten minutes after you met him, on the exact beach from the start of this video, on a flight his points really did pay for.",
+   "pause": 0.45,
+   "rate": "+3%"
+  },
+  {
+   "id": "c9c",
+   "text": "He can't get last year's one thousand four hundred eighty five dollars back. But this year it's staying in his pocket, and that's the whole trick.",
+   "pause": 0.5
+  },
+  {
+   "id": "c9d",
+   "text": "Because points were never free money. They're a bill, and somebody always pays it: the shopper who buys more, the neighbor who pays cash, or the person paying interest.",
+   "pause": 0.5,
+   "rate": "-8%"
+  },
+  {
+   "id": "c9e",
+   "text": "Your only job is to not be any of those three. And if you pay in full, never chase, and spend your points fast, rewards can be a perfectly nice little extra.",
+   "pause": 0.5
+  },
+  {
+   "id": "c9f",
+   "text": "Oh, and the kayak? Dave brought it with him. Turns out it floats.",
+   "pause": 0.9,
+   "pitch": "+3Hz"
+  },
+  {
+   "id": "r1",
+   "chapter": "What Dave Learned",
+   "text": "So here's what Dave learned. One: points can make you spend far more than they ever pay back.",
+   "pause": 0.35
+  },
+  {
+   "id": "r2",
+   "text": "Two: whoever prints the points decides what they're worth.",
+   "pause": 0.35
+  },
+  {
+   "id": "r3",
+   "text": "Three: pay in full, don't chase, and use them fast.",
+   "pause": 0.5
+  },
+  {
+   "id": "r4",
+   "text": "Next time, Dave adds a nine dollar spatula to his cart to save six dollars on shipping, and somehow that's not even the silly part.",
+   "pause": 0.5
+  },
+  {
+   "id": "r5",
+   "text": "Subscribe, because it's free, and unlike your points, it'll still be worth the same next year.",
+   "pause": 0.6
+  }
+ ]
+}
