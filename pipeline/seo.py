@@ -208,6 +208,18 @@ def build(ep):
     if nxt in SEO:
         desc += [f"▶️ Watch next: {SEO[nxt]['title']}"]
     desc += ["", "📚 Sources"] + [f"• {x}" for x in spec.get("sources", [])]
+    ph_p = ROOT / "pipeline" / "photos" / f"{ep}.json"
+    tsx_p = ROOT / "src" / "episodes" / f"Ep{ep[2:]}.tsx"
+    if ph_p.exists() and tsx_p.exists():
+        tsx = tsx_p.read_text(encoding="utf-8")
+        creds = []
+        for x in json.loads(ph_p.read_text(encoding="utf-8"))["photos"]:
+            if f"{ep}/{x['id']}." in tsx:
+                line = f"{x.get('credit', 'Unknown')} ({x.get('license', '')})"
+                if line not in creds:
+                    creds.append(line)
+        if creds:
+            desc += ["", "📷 Photos: " + "; ".join(creds) + ". Via Wikimedia Commons and free stock libraries; licences at creativecommons.org/licenses."]
     desc += ["", "🎵 Music: \"Fluffing a Duck\" Kevin MacLeod (incompetech.com)", "Licensed under Creative Commons: By Attribution 4.0 License", "http://creativecommons.org/licenses/by/4.0/", "",
              "⚠️ This video is for education and entertainment only. It is not financial advice.", "", " ".join(s["hashtags"])]
     body = "\n".join(desc)

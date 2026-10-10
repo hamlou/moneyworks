@@ -1,0 +1,36 @@
+name: photos
+run-name: photos ${{ inputs.ep }}
+
+# Background removal for photos marked "cutout": true in pipeline/photos/<ep>.json.
+# Reads the committed public/photos/<ep>/<id>.jpg, writes <id>.png next to it and commits. Artifact <ep>-photos = contact sheet.
+on:
+  workflow_dispatch:
+    inputs:
+      ep:
+        description: Episode id (e.g. ep61)
+        required: true
+
+permissions:
+  contents: write
+
+jobs:
+  cutout:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install -q "rembg[cpu]" pillow
+      - run: python pipeline/photos.py ${{ inputs.ep }} --cutout --force
+      - run: |
+          git config user.name "Moneyworks Bot"
+          git config user.email "bot@users.noreply.github.com"
+          git add public/photos/${{ inputs.ep }}
+          git diff --cached --quiet || git commit -q -m "${{ inputs.ep }}: photo cutouts"
+          for i in 1 2 3 4 5 6; do git pull --rebase -q && git push -q && break; sleep $((RANDOM % 10 + 5)); done
+      - uses: actions/upload-artifact@v4
+        with:
+          name: ${{ inputs.ep }}-photos
+          path: sheet.jpg
+          retention-days: 7

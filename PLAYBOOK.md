@@ -2,6 +2,8 @@
 
 This is the bible for the channel. Series 1 (ep01–ep10) was approved by the owner as **"exactly the style I was looking for for years"**. Every new episode must match it. Read this fully before writing anything.
 
+> **§0.10 (Human hook + mixed media v4, 10 Oct 2026) is the newest rule set: it overrides §0.3 (the freeze/rewind hook is retired) and sets 10 min+, real photos and the spoken style.**
+>
 > **Since ep61, §0 (Retention & CTR v3) OVERRIDES any older rule below that conflicts with it.** The look, cast, voice, research standard, SFX, props and pipeline stay exactly the same. What changes: how the script is *told* (one connected story, not a list of facts), how the hook is *animated*, and how thumbnails are *designed*.
 
 ---
@@ -211,6 +213,96 @@ We compared our pipeline with `Jakeschincariol/youtube-agent-skill` (11 prompt-s
 **Shorts (not in the pipeline yet — needs a 1080×1920 composition, owner decides):** a Short is a 20–55 s span that survives alone: opens on a complete thought, has a turn, ends on a line. Best sources in our scripts: the hook `o1…o4`, the pause-and-guess + its payoff, the villain reveal. Each needs a NEW first line (no context assumed) and a loop point.
 
 **Not taken, on purpose:** `hookscore.py` (its own author says it barely separates hits from misses, and it rewards "you" in the first 6 words, which fights our flash-forward hook §0.3); `deadair.py`/yt-edit (TTS has no retakes, pauses are auto-trimmed); `chapters.py` (ours come exactly from `timings.json`); `voice.md` (this playbook is the voice).
+
+### 0.10 HUMAN HOOK + MIXED MEDIA v4 (owner, 10 Oct 2026) — OVERRIDES §0.3 and everything above where they conflict
+
+**Owner's data + words:** viewers leave in the **first 6 seconds**; "the hook sounds really robotic and doesn't attach the viewers"; "the videos have value but feel robotic, people must focus so much to understand"; "make the viewer ENJOY staying the whole video, not just throwing information"; "add real pictures — when we talk about Trump, show the real picture of Trump with good animation. Mix drawings and real pictures"; videos **10 minutes minimum**.
+
+**Diagnosis of the ep51–60 hooks (why 6 seconds):**
+| What we did | Why they left |
+|---|---|
+| Title says **"Why YOUR…"**, first words are *"Dave just turned seventy."* | They clicked for THEIR problem and got a stranger's. The click promise is broken in second 1. |
+| The same *"Freeze. That's Dave. How did he end up here? Let's rewind."* in every video | 4–7 s with zero information, and anyone who saw two videos recognises a template. |
+| Staccato fragments: *"An ad. Up to one thousand dollars. Free."* | The TTS voice drops its pitch and pauses at every full stop. Three fragments = three robot bursts. **This is what "robotic" is.** |
+| One voice speed (−10 %) for 10 minutes, 0.4 s of silence at 0:00 | Flat, slow, no energy at the exact moment the viewer decides. |
+| Fact after fact, 2–3 numbers per beat | The viewer has to *work*. Work is not fun. |
+
+#### A. The hook (beats `o1…o5`, ≤ 25 s, ≤ 80 words) — the owner's 4 rules
+
+Every hook must do these **three jobs**, and each hook beat carries a `"job"` field in the JSON:
+
+1. **`concept` — introduce the video's concept.** The first sentence (o1) talks to the **viewer** ("you/your"), confirms the title in other words, and shows a **real picture at frame 0**. No Dave in o1. A viewer who hears only o1 knows what this video is about and that it is about *them*.
+2. **`stakes` — introduce the stakes.** What this costs the viewer, as ONE concrete number or loss ("about eleven hundred dollars a year", "a raise you never got"). Shown as a slam number.
+3. **`ending` — say, imply or SHOW how the video will end.** The viewer must see the finish line: flash the final scene for ~2 s ("this is Dave ten minutes from now, holding…"), or name the result ("…and Dave leaves that store paying four hundred dollars less"), or promise the skill ("in ten minutes no price tag will ever work on you again"). Not vague ("stay to the end"), not a table of contents. The video's last minute must then really deliver exactly that scene/result.
+   Optional extra beats: `proof` (a real example/person/company with a real photo) and `question` (the central mystery).
+4. **Never the same hook twice — we must look creative.** Each episode picks a `"hook_form"` from the menu below (or invents a new one and adds it here). **A form may not repeat within 5 episodes** (validator checks). The ORDER of the three jobs changes too (stakes-first, ending-first, concept-first…). Wording is written fresh every time — banned templates: "That's Dave", "Let's rewind", "How did he end up here", "Stay to the end".
+
+**Hook form menu**
+| `hook_form` | Shape | Example opening |
+|---|---|---|
+| `test_on_viewer` | Play the trick ON the viewer with a real object, then expose it. | "Look at this price tag for one second… you just read nine dollars, didn't you?" |
+| `absurd_true_fact` | A real company/person fact that sounds wrong, then "…and you're the one paying for it". | "This airline makes more money selling points to your credit card than flying planes." |
+| `the_pitch` | Narrator plays the smiling salesman pitching the viewer, then turns to camera. | "Congratulations, you've been selected for a brand new phone, for free…" |
+| `two_people` | Two real-feeling people, same situation, different outcome; the viewer is the loser. | "Two people do the same job at the same desk, and one of them earns nine thousand dollars more." |
+| `be_honest` | Second-person scene of something the viewer did THIS week. | "Last Friday you said 'let's just split it' and paid for someone else's lobster." |
+| `ending_first` | Open on the last scene of the video, then "here's how you get there". | |
+| `countdown` | A number ticking in real time while we talk ("since this video started…"). | |
+| `myth_flip` | Something everyone believes, flipped in one sentence, with real proof. | |
+| `the_object` | One real object on screen, its secret history in 10 s. | |
+
+**How it must SOUND (the anti-robot rules):**
+- Write **spoken sentences**: o1 is ONE flowing sentence of 12–24 words. Contractions (you're, didn't, that's). Connectors (and, but, so, because, which means). Max **one** 1–3-word fragment in the whole hook; max 20 % fragments in the whole script.
+- Read every line out loud as if telling a friend at a bar. If you wouldn't say it that way, rewrite it.
+- `"tts": {"rate": "-5%", "hook_rate": "+3%", "lead": 0.08}` in the episode JSON: the hook is spoken faster and the voice starts at 0:00 (no silence). Give at least 8 beats their own `"rate"` (excited `"+6%"`, slow reveal `"-12%"`) and optionally `"pitch"` (`"+3Hz"` for a question/joke, `"-2Hz"` for a serious line). The voice stays Andrew.
+- Hook pauses 0.15–0.3 s.
+
+**How it must LOOK (first 6 s):** frame 0 = a real photo already moving (`PicBg` push-in or a `Pic` slam) + a giant `Slam` word; a new visual every 1–2 s with an SFX (≥ 4 changes in the first 6 s); the key words appear as kinetic text so it works even on mute; Dave reacts in a corner — he is the viewer's stand-in, not the subject. The Damage Meter appears on the `stakes` beat. The `ending` beat SHOWS the final scene (reuse the real end scene as a function of a local frame, inside a tilted "10 MINUTES FROM NOW" frame).
+
+#### B. Make them ENJOY the whole video (not "throwing information")
+
+The narrator is a **funny friend who found something out and can't wait to tell you** — not a teacher.
+1. **Example before rule.** Always: real story/person/thing → what happened → *then* the one-line rule ("So in plain English: …"). Never definition first.
+2. **Number diet.** Max ONE number per beat, max 2–3 stats per chapter, and every stat is followed by a translation into everyday life ("that's a free vacation, every year"). If a number doesn't make Dave do something, cut it.
+3. **Talk to the viewer** at least once per chapter: "Be honest…", "You've done this. I've done this.", "Guess before I tell you." (≥ 2.2 you/your per 100 words — validator.)
+4. **Play with them**: two interactive moments per video (a 3-second guess with a ticking clock, "pick A or B" then the reveal, "spot the trick").
+5. **One real-world story per chapter** with a real name, year and **real photo** (a company, a CEO, an inventor, a study, a newspaper) — stories are what people stay for.
+6. **Dave talks.** Dave says short lines in speech bubbles and the narrator voices them ("Dave goes: wait… WHAT?"). He's funny, a bit dumb, lovable.
+7. **One running gag** per episode that returns at least 3 times and pays off in the last minute.
+8. **A laugh every ~30 s** (silly analogy, Dave's reaction, raccoon, understatement). Humour is specific, never random.
+9. **Emotion changes**: curiosity → surprise → anger at the villain → "oh no" low point → relief → victory. Mark the voice (`rate`/`pitch`) to match.
+10. **Length: 10:10–12:00** (≈ 1,550–1,750 words at these rates). validate.py fails under 10:05. Fill with *stories*, never with repetition.
+
+Everything in §0.2 (spine, BUT/SO/THEREFORE, cliffhangers, re-hooks, pause-and-guess, villain at ~50 %, low point ~75 %, fight back, payoff, 3-line recap, next-problem teaser) still applies.
+
+#### C. Mixed media — real pictures + drawings
+
+**Rule: what is REAL in the world is shown REAL; what is in Dave's life or in an analogy is DRAWN.** Named company → real photo of its store/product/HQ. Named person (CEO, inventor, president, researcher) → their real photo. Real object (an iPhone, a price tag, a gold watch, a boarding pass) → real photo or cutout. Dave, Bob, the raccoon, the duck, analogies, charts → drawn, as always. The magic is the **mix in one frame**: drawn Dave standing in a real store (`PicBg`), pointing at a real polaroid, a real CEO cutout next to the drawn raccoon.
+
+- **Minimum 14 different real photos per episode**, ≥ 2 in the hook (one at frame 0), ≥ 1 in every chapter. Never the same photo in the same look twice in a row.
+- **Kit: `src/photo.tsx`** (HTML layers in the same 1920×1080 space; siblings of `<Svg>`, order = depth):
+  - `<PicBg f={f} src="ep62/store.jpg" from={A('c1a')} dim={0.25} />` — full-screen real world with slow push-in; draw Dave in an `<Svg>` after it. Options `blur`, `gray`, `tint`, `pos`, `zoom`, `pan`.
+  - `<Pic f={f} src="ep62/ceo.jpg" x={1300} y={480} w={520} h={640} at={w('c2a','johnson')} look="polaroid" enter="slam" rot={4} label="Ron Johnson, 2012" />` — looks: `polaroid`, `sticker`, `tape`, `news` (red banner label), `circle`, `plain`, `cutout` (transparent PNG with white sticker outline). Enters: `pop`, `slam`, `drop`, `left`, `right`, `none`. Also `kb` (Ken Burns), `wob` (paper wobble), `gray`, `ring`, `out`, `pos="50% 20%"` (keep faces in frame), `s={bump(at)}`. x,y = CENTRE of the picture.
+  - `<Slam f={f} at={…} text="$9.99" x={960} y={300} size={220} color={C.yellow} />` — giant kinetic word.
+  - Demo of every look: composition `PicDemo` (`src/PicDemo.tsx`).
+- **Animate every photo**: it enters with an SFX (`paper`, `flip`, `stamp`, `pop`), keeps a slow Ken Burns/wobble, and something drawn interacts with it (Dave points, a red marker ring, an arrow, a stamp, a price sticker slapped on it). A photo that just sits there is a slideshow — banned.
+- **Where photos come from (free licences ONLY, credit is automatic):**
+  1. `py pipeline/photo_find.py "Walmart store" --sheet walmart` → Wikimedia Commons results (already filtered to PD / CC0 / CC BY / CC BY-SA) + a numbered contact sheet `../qa_dl/find_walmart.jpg`. **Look at the sheet** and choose. Prefer PD/CC0/CC BY; landscape for backgrounds; faces sharp and neutral.
+  2. Add to `pipeline/photos/epNN.json`: `{"id": "walmart", "file": "File:….jpg"}` (add `"cutout": true` for a person/object you want cut out). Unsplash / Pexels / Pixabay / US-government photos are also fine: `{"id", "url", "credit", "license", "page"}`.
+  3. `py pipeline/photos.py epNN` → downloads to `public/photos/epNN/` (small JPGs, committed to git), fills credit + licence, writes `../qa_dl/photos_epNN.jpg`. **Look at it.**
+  4. Cutouts: commit + push the JPGs, then `gh workflow run photos.yml -f ep=epNN` → the cloud removes backgrounds and commits `<id>.png`; `git pull`, download artifact `epNN-photos` to check the cutouts.
+  - NEVER: Google Images, news agencies (Getty/AP/Reuters), stock sites with watermarks, screenshots of films/TV, NC/ND licences. `photos.py` refuses non-free licences; `validate.py` refuses photos missing from the manifest. `seo.py` prints the photo credits in the description automatically.
+- **Real people:** public figures only, in a factual context (what they really did/said, with a source). No invented quotes, no speech bubbles putting words in a real person's mouth, no humiliating edits. Jokes are about the *situation*, said by the narrator or Dave. Politicians: balanced as always.
+- **Brands:** real photos of stores/products are fine (we're reporting on them). Still no *drawn* logos. Thumbnails stay drawn + (optionally) one real object; a real person's face on a thumbnail needs the owner's OK.
+
+#### D. v4 pre-flight (add to §0.7)
+- [ ] `hook_form` chosen, not used in the previous 5 episodes; hook beats tagged `job`: concept + stakes + ending all present; the ending shown in the hook is really the video's last scene.
+- [ ] o1 = one spoken sentence to "you", real photo at frame 0, no Dave; hook ≤ 25 s; voice starts at 0:00.
+- [ ] `tts` block set; ≥ 8 beats with their own `rate`; fragments ≤ 20 %; you/your ≥ 2.2 per 100 words.
+- [ ] One real story + real photo per chapter; ≥ 14 photos, all in the manifest with licence; contact sheet looked at.
+- [ ] Number diet respected; 2 interactive moments; running gag ×3; Dave speaks.
+- [ ] ≥ 10:05.
+
+---
 
 ## 1. The channel
 

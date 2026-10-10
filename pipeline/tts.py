@@ -15,8 +15,8 @@ LEAD = 0.4
 CHAPTER_GAP = 2.2
 
 
-async def synth(text: str, mp3: Path):
-    kw = dict(rate=RATE, pitch=PITCH)
+async def synth(text: str, mp3: Path, rate: str = RATE, pitch: str = PITCH):
+    kw = dict(rate=rate, pitch=pitch)
     try:
         c = edge_tts.Communicate(text, VOICE, boundary="WordBoundary", **kw)
     except TypeError:
@@ -55,7 +55,8 @@ async def main(spec_path: str, out_dir: str):
         words = []
         for attempt in range(6):
             try:
-                words = await synth(b["text"], mp3)
+                is_hook = b["id"].startswith("o")
+                words = await synth(b["text"], mp3, b.get("rate") or (cfg.get("hook_rate") if is_hook else None) or cfg.get("rate") or RATE, b.get("pitch") or cfg.get("pitch") or PITCH)
                 if words:
                     break
             except Exception as e:

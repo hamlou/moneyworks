@@ -1,4 +1,46 @@
-# Brief for parallel episode builders (Series 6+7: ep51–ep75, Retention & CTR v3)
+# Brief for parallel episode builders (ep61+ : v4 = Human hook + mixed media + 10 min)
+
+## >>> v4 ADDENDUM (10 Oct 2026) — READ FIRST, it overrides anything below that conflicts <<<
+
+The owner looked at the analytics: **viewers leave in the first 6 seconds**. His words: "the hook sounds really robotic and doesn't attach the viewers", "the videos are good but feel robotic, people must focus so much to understand", "make the viewer ENJOY staying the WHOLE video, not just throwing information", "add real pictures, mixed with the drawings, with good animation", "10 minute videos at least". And four hook rules, in his words:
+1. **Introduce the video concept in the hook.**
+2. **Introduce the stakes.**
+3. **Say / imply / show how the video will end.**
+4. **Don't spam the same hook on every video — we should seem creative.**
+
+**PLAYBOOK §0.10 is the full spec. Read it twice.** Summary of what changed for you:
+
+- **Hook** `o1…o5`, ≤ 25 s, ≤ 80 words. Each hook beat has `"job"`: `concept` (o1, to "you", real photo at frame 0, NO Dave), `stakes`, `ending` (required) + optional `proof`, `question`. Top-level `"hook_form"` = the form assigned to your episode (below). Freeze/rewind gag and "That's Dave / Let's rewind" are RETIRED. The `ending` beat shows ~2 s of the real last scene of your video, and your last minute must deliver exactly that.
+- **Sound human:** spoken, flowing sentences with contractions; fragments ≤ 20 % (validator); `"tts": {"rate": "-5%", "hook_rate": "+3%", "lead": 0.08}` at the top level of the JSON; ≥ 8 beats with their own `"rate"` (`"+6%"` excited, `"-12%"` slow reveal), optional `"pitch"` (`"+3Hz"`, `"-2Hz"`).
+- **Enjoyable, not a lecture** (§0.10 B): example before rule; number diet (max one number per beat); talk to "you" every chapter; 2 interactive moments; one real story + real photo per chapter; Dave talks in speech bubbles; one running gag ×3; a laugh every ~30 s.
+- **Real photos** (§0.10 C): ≥ 14 different real photos, ≥ 2 in the hook, ≥ 1 per chapter, each animated and interacting with the drawn world. Kit = `src/photo.tsx` (`Pic`, `PicBg`, `Slam`, `Halo`), reference = `src/PicDemo.tsx`. Workflow: `py pipeline/photo_find.py "words" --sheet name` → Read `../qa_dl/find_name.jpg` → add to `pipeline/photos/epNN.json` → `py pipeline/photos.py epNN` → Read `../qa_dl/photos_epNN.jpg` → commit `public/photos/epNN/` + the manifest. Cutouts: mark `"cutout": true`, push, `$GH workflow run photos.yml -R $R -f ep=epNN`, wait, `git pull`, then use `src="epNN/<id>.png" look="cutout"`.
+  - Drawn characters on top of a `PicBg` MUST be wrapped: `<Halo><Svg>…</Svg></Halo>` (white outline) or they disappear on dark photos.
+  - Captions sit at y ≈ 990 and the Damage Meter top-right: keep photos' labels clear of both.
+  - Use `pos="50% 20%"` on portraits so the face is not cropped. Look at every photo on the QA sheet.
+  - Real people: factual context only, no invented quotes, no words put in their mouth, nothing humiliating (§0.10 C).
+  - `photo_find.py` / `photos.py` are small downloads and DO run on the owner's PC. Keep every photo you download under ~500 KB (the script already resizes). Delete `../qa_dl/find_*.jpg` when you finish.
+- **Length:** ≥ 10:05 (validator), aim 10:15–11:30 → **about 1,600–1,750 spoken words**, 9–10 chapters. Check `total` after the first cloud TTS and extend with a real STORY chapter if short.
+- **Local stills are now allowed for spot checks** (3–6 frames at a time, the PC can do it): `node pipeline/stills.mjs ../qa_dl/epNN '[{"id":"Episode","ep":"epNN","timings":null,"frame":45}]'` (needs `public/epNN/timings.json`; ignore the missing voice.wav). ALWAYS check frames 0, 45, 90, 150 of your hook this way and Read them. Delete the PNGs afterwards. Full QA still runs in the cloud.
+- New files you may create: `pipeline/photos/epNN.json`, `public/photos/epNN/*`.
+- `validate.py` enforces all of this for ep ≥ 61. It must print OK.
+
+### Assigned hook forms + direction (write your own final wording with your verified numbers — these drafts only show the SOUND we want)
+
+| Ep | `hook_form` | Draft direction |
+|---|---|---|
+| 61 job loyalty | `two_people` | o1 concept: "If you've been at the same job for the last three years, there's a decent chance the new hire sitting next to you is getting paid more than you are, for the exact same work." → stakes: what loyalty costs over ten years as ONE number → proof: a real source/photo → ending: "…and ten minutes from now Dave walks back into this office with [the exact result], without quitting." |
+| 62 .99 prices | `test_on_viewer` | Frame 0: a REAL price tag fills the screen. o1 concept: "Look at this price for one second… and be honest, your brain just filed that under nine dollars, didn't it, not ten?" → proof: stores have used that one-cent glitch on you for about a hundred and fifty years (verify) → stakes: what it adds up to → ending: "by the last minute of this video, I'll show you the same tag again, and it won't work on you anymore" (and the video really ends with the re-test). |
+| 63 "free" phone | `the_pitch` | o1 concept, narrator as the too-friendly salesman, real phone-store photo: "Great news: your phone company wants to hand you a brand new eleven hundred dollar phone, today, for free, and all you have to do is sign right here." → turn: "So let me ask you something. When was the last time your phone company gave you anything for free?" → stakes number → ending: Dave walks out of that same store paying $X less, shown. |
+| 64 friends | `be_honest` | o1 concept: a second-person scene from this week — "Last weekend somebody said 'let's just split it evenly', and you smiled, and you paid for a lobster you didn't eat." → concept line: your friends are (lovingly) the most expensive thing in your life → stakes number → ending: "…and you're about to learn the one sentence Dave used to fix it, without losing a single friend" + flash of the last scene. |
+| 65 rewards points | `absurd_true_fact` | Frame 0: real airliner photo. o1 concept: "One of the biggest airlines on Earth now earns more money from the points on your credit card than from actually flying you anywhere" (VERIFY exactly which airline/year and phrase it truthfully) → "and you're the one paying for those points" → stakes number → ending shown. |
+
+Overlap episodes to read before writing (don't repeat their facts/analogies; a callback is fine): **61** → ep32 (raise), ep59 (work until 70). **62** → ep36 (store tricks), ep47. **63** → ep26 (Apple), ep10 (BNPL), ep23 (car loans), ep28 (subscriptions). **64** → ep31, ep38, ep24, ep50, ep57. **65** → ep02 (credit cards), ep11 (airlines), ep25 (Starbucks), ep12.
+
+Thumbnails: still made by the LEAD. In your report give 3 concepts + `thumb_question`.
+
+---
+
+## (older brief, still valid where v4 is silent)
 
 You build ONE complete episode of the YouTube channel "Dave Explains Money": script, choreography, props, thumbnails and SEO, matching the approved LOOK exactly and the new v3 STORY rules exactly. The owner said: "I don't want any mistakes."
 
@@ -53,10 +95,10 @@ Sessions can be cut off. Commit + push your JSON as soon as the script is writte
 - Title = a people problem (§1c). Use the approved title you were given (you may suggest alts in SEO).
 - Fill `"spine"` in the episode JSON FIRST (goal, stakes, central_question, loop_big, loop_mid, villain, low_point, win).
 - ONE Dave story joined by BUT / SO / THEREFORE. Every chapter opens with Dave doing something and ends with a cliffhanger line. Chapter titles = curiosity phrases ≤ 5 words. Outro chapter = "What Dave Learned".
-- Hook `o1…o6` ≤ 30 s, ≤ 85 words: flash-forward → freeze + rewind → relatable start → stakes number → central question → withheld payoff. Frame 0 in motion; first 3 s = the thumbnail-A scene; freeze/rewind gag (code in §0.3); slam number; villain silhouette.
+- Hook: see the v4 addendum above (concept / stakes / ending, assigned hook_form, real photo at frame 0). The old flash-forward + freeze/rewind hook is retired.
 - Damage Meter HUD (label must contain the word DAMAGE), pause-and-guess at ~30 % paid ~60 s later, re-hook every 60–90 s, villain reveal + SubReminder at ~50 %, low point ~75 %, Dave fights back (education, not advice), big payoff in the last minute, 3-line recap ≤ 15 s, next episode teased as Dave's next problem, subscribe joke.
 - Banned phrases: "Today:", "In this video", "Let's start with", "Next,", "Here are three more", "Another reason is", "So let's recap", "That's it", "In conclusion", "Before we wrap up", "Let's talk about".
-- Length: ~1,250–1,400 spoken words → 8:10–9:30. Must be ≥ 480 s (aim ≥ 500 s).
+- Length (v4): ~1,600–1,750 spoken words → 10:15–11:30. Must be ≥ 605 s.
 
 ## Hard rules (unchanged — breaking one = the episode fails)
 - **SFX names MUST exist** (render fails otherwise): pop, pop2, whoosh, whoosh_s, thud, stamp, coin, cash, click, key, key2, ding, chime, boing, buzz, quack, poof, scribble, marker, paper, flip, crinkle, clank, dream, sting, heart, rip, trombone, cricket, sputter, mail, crowd, tick, step, flutter, draw. List every SFX your EpNN.tsx uses and check each before committing.

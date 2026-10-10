@@ -216,7 +216,7 @@ export const Scenes: React.FC<{f: number; items: SceneItem[]}> = ({f, items}) =>
   if (i < 0) return null;
   const cur = s[i];
   const prev = i > 0 && f < cur.at + 9 ? s[i - 1] : null;
-  const o = ease(f, cur.at, cur.at + 8);
+  const o = cur.at <= 0 ? 1 : ease(f, cur.at, cur.at + 8); // frame 0 is never a fade-in
   return (
     <>
       {prev && <AbsoluteFill>{prev.el()}</AbsoluteFill>}

@@ -16,6 +16,7 @@ import {Ep08Thumb} from './thumbs/ep08';
 import {Ep09Thumb} from './thumbs/ep09';
 import {Ep10Thumb} from './thumbs/ep10';
 import {Short60, Short60Props} from './shorts/Short60';
+import {PicDemo, PicDemoProps} from './PicDemo';
 
 EP_THUMBS.ep02 = Ep02Thumb;
 EP_THUMBS.ep03 = Ep03Thumb;
@@ -29,6 +30,7 @@ EP_THUMBS.ep10 = Ep10Thumb;
 
 export const Root: React.FC = () => (
   <>
+  <Composition id="PicDemo" component={PicDemo} width={1920} height={1080} fps={30} durationInFrames={90} defaultProps={{v: 0} as PicDemoProps} />
   <Composition id="Avatar" component={Avatar} width={800} height={800} fps={30} durationInFrames={1} defaultProps={{v: 'A'} as AvatarProps} />
   <Composition id="AvatarV2" component={AvatarV2} width={800} height={800} fps={30} durationInFrames={1} defaultProps={{v: 'A'} as AvatarV2Props} />
   <Composition id="Banner" component={Banner} width={2560} height={1440} fps={30} durationInFrames={1} />
