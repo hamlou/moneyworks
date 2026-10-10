@@ -16,6 +16,7 @@ import {Ep08Thumb} from './thumbs/ep08';
 import {Ep09Thumb} from './thumbs/ep09';
 import {Ep10Thumb} from './thumbs/ep10';
 import {Short60, Short60Props} from './shorts/Short60';
+import {Short57, Short57Props} from './shorts/Short57';
 import {Short58, Short58Props} from './shorts/Short58';
 import {PicDemo, PicDemoProps} from './PicDemo';
 
@@ -82,6 +83,23 @@ export const Root: React.FC = () => (
     defaultProps={{timings: null} as Short60Props}
     calculateMetadata={async ({props}) => {
       const r = await fetch(staticFile('short60/timings.json'));
+      const timings = await r.json();
+      return {
+        durationInFrames: Math.ceil((timings.total + 1.2) * 30),
+        props: {...props, timings},
+      };
+    }}
+  />
+  <Composition
+    id="Short57"
+    component={Short57}
+    width={1080}
+    height={1920}
+    fps={30}
+    durationInFrames={300}
+    defaultProps={{timings: null} as Short57Props}
+    calculateMetadata={async ({props}) => {
+      const r = await fetch(staticFile('short57/timings.json'));
       const timings = await r.json();
       return {
         durationInFrames: Math.ceil((timings.total + 1.2) * 30),
