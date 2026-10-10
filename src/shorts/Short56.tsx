@@ -53,8 +53,8 @@ const PhotoScene:React.FC<{f:number;id:string;label:string;memetext:string;idx:n
  <Svg><rect width={W} height={H} fill={C.bg}/><rect width={W} height={1180} fill={C.wall}/><rect y={1180} width={W} height={740} fill={C.floor}/></Svg>
  <Pic f={f} src={`ep56/${id}.jpg`} x={545} y={590} w={650} h={450} at={start+2} look="plain" enter="slam" label={label} rot={-2} kb={0.08}/>
  <Svg>
-  <Dave f={f} x={230} y={1575} s={1.18} walk={f<start+28||f>start+118} keys={[{at:start,pose,expr:'shock'},{at:start+35,pose:'talk',expr:'angry',talk:true},{at:start+72,pose:'facepalm',expr:'sad',talk:false},{at:start+108,pose:'point_r',expr:'suspicious',talk:false},{at:start+145,pose:'celebrate',expr:'happy',talk:false}]}/>
-  <Bob f={f} x={850} y={1575} s={1.1} keys={[{at:start,pose:'think',expr:'worried'},{at:start+38,pose:'panic',expr:'shock'},{at:start+78,pose:'think',expr:'think'},{at:start+118,pose:'wave',expr:'happy'},{at:start+150,pose:'shrug',expr:'smug'}]}/>
+  <Dave f={f} x={230} y={1575} s={1.18} walk={!!ACTIONS[id]?.walk} keys={(ACTIONS[id]?.d??[{at:0,pose,expr:'shock'}]).map(k=>({...k,at:start+k.at}))}/>
+  <Bob f={f} x={850} y={1575} s={1.1} keys={(ACTIONS[id]?.b??[{at:0,pose:'think',expr:'worried'}]).map(k=>({...k,at:start+k.at}))}/>
   <MemeCard f={f} at={start+16} text={memetext} color={C.red}/>
  </Svg>
 </AbsoluteFill>;
