@@ -1,0 +1,472 @@
+{
+ "id": "ep61",
+ "title": "Why Staying Loyal to Your Job Keeps You Poorer",
+ "hook_form": "two_people",
+ "tts": {
+  "rate": "-5%",
+  "hook_rate": "+3%",
+  "lead": 0.08
+ },
+ "spine": {
+  "goal": "Dave, five loyal years at the same company on $62,000, wants to be paid what his job is worth today ($71,000, what the new hire Kyle got).",
+  "stakes": "If he stays quiet he pays a 'loyalty tax' of $9,000 a year: $90,000 over ten years (simple math, $9,000 x 10).",
+  "central_question": "Why does a company pay a stranger more than the person who already does the job well, and can Dave fix it without quitting?",
+  "loop_big": "Promised in the hook (o4): Dave walks back into the same office making $7,000 more without quitting -> paid at c8e/c8f ($69,000 via a market adjustment).",
+  "loop_mid": "Pause-and-guess at c3h: how much more did outside hires get than insiders promoted into the same kind of job? -> paid at c4h: 18 to 20 percent (Bidwell, Wharton). Second interactive at c4i: who got better reviews? (the insiders).",
+  "villain": "Not a person: a spreadsheet with two pots of money (a small raise pot of about 3.5% for people already inside, a market-priced hiring pot for strangers) plus the quiet bet that you won't leave. Revealed c4b-c4k (~45-50%).",
+  "low_point": "c6 (~70-75%): Dave writes his resignation, then sees the switching bonus is not guaranteed (zero in summer 2025), hiring is slow, and jumping has its own risks. Stuck between paying $9,000 a year and a cold job market. The five-year mug breaks.",
+  "win": "c7-c8: a third door. He finds his job's market price (his own company's posted pay range), asks for a 'market adjustment' instead of a raise, brings one page of results, and gets $69,000: +$7,000 a year without quitting. Damage Meter flips to SAVED +$7,000/YR.",
+  "damage_meter": "DAVE'S DAMAGE: shown as -$9,000/YR on the stakes beat (o3); story restarts at $0 in c1a; -$9,000/YR at c1f; flips to green SAVED +$7,000/YR at c8e.",
+  "running_gag": "The 'five years' mug (Dave's reward for loyalty): c1b gift, c2f 'a mug', c3f 'it does not tell time', c6g handle snaps off, c7j glued for luck, c8d/c8i pays off with Kyle."
+ },
+ "sources": [
+  "Dramatized story: Dave, Kyle, Dave's boss, the salaries ($62,000, $71,000, $69,000), the posted range ($68,000-$74,000), the 2% raise and the mug are illustrative. Math: $71,000 - $62,000 = $9,000 a year; x 10 years = $90,000 (no raises or interest assumed). $69,000 - $62,000 = $7,000. Dave's $62,000 is close to the U.S. full-time median (BLS Usual Weekly Earnings, Q3 2025: $1,214 a week, about $63,000 a year).",
+  "Matthew Bidwell (Wharton), 'Paying More to Get Less: The Effects of External Hiring versus Internal Mobility', Administrative Science Quarterly 56(3), 2011; Knowledge at Wharton, March 28, 2012: personnel data from the U.S. investment banking division of a financial services firm, 2003-2009. External hires were paid about 18% to 20% more than workers promoted internally into similar jobs, got significantly lower performance evaluations for their first two years and had higher exit rates; they often had more education and experience.",
+  "Federal Reserve Bank of Atlanta, Wage Growth Tracker (data since 1997; via FRED series FRBATLWGT3MMAUMHWGJMJSW and ...JMJST, updated Oct 9, 2026), 3-month moving average of median 12-month wage growth: July 2022 job switchers 8.6% vs job stayers 6.0%; July 2025 switchers 4.0% vs stayers 4.1%; September 2026 switchers 4.7% vs stayers 3.4% (gap 1.3 points).",
+  "The Henry Ford (museum), 'Ford's Five-Dollar Day': labor turnover at Ford Motor Company was 370% in 1913; the company hired about 52,000 workers in a year to keep a workforce of 13,000-14,000; on January 5, 1914 Henry Ford and James Couzens announced the five-dollar day, roughly doubling pay; turnover then fell sharply.",
+  "Gold watch: widely repeated account (e.g. McTear's Auctioneers, 'The Gift of Gold') that Pepsi-Cola popularized the retirement gold watch in the 1940s with the line 'you gave us your time, now we are giving you ours'. Presented in the script as 'the story goes'.",
+  "WTW Salary Budget Planning Report (July 2026; survey March-May 2026): U.S. salary increase budgets averaged 3.5% in 2026, 3.4% projected for 2027. Callback: episode 32 (raises vs prices).",
+  "Google, November 2010: internal memo from CEO Eric Schmidt giving all roughly 23,000 employees a 10% raise from January 2011 (plus a $1,000 bonus), amid departures to Facebook; reported by Fortune and Business Insider (Nov 9-10, 2010).",
+  "U.S. Bureau of Labor Statistics, Job Openings and Labor Turnover, August 2026 (USDL-26-1547, Sept 29, 2026): hires rate 3.3%, quits rate 1.9%.",
+  "Colorado Equal Pay for Equal Work Act (SB 19-085), in force January 1, 2021: job postings must include the pay rate or range. Since then more than a dozen states (among them California, New York, Washington, Illinois, Minnesota, New Jersey, Massachusetts, Vermont, Hawaii, Maryland) plus Washington DC have passed pay-range disclosure laws; details and employer-size thresholds differ by state.",
+  "U.S. Bureau of Labor Statistics, Occupational Employment and Wage Statistics (bls.gov/oes): free wage estimates for about 830 occupations, by state and metro area.",
+  "Pew Research Center, 'When negotiating starting salaries, most U.S. women and men don't ask for higher pay' (April 5, 2023; survey Feb 2023): 60% of workers did not ask for higher pay the last time they were hired; among those who asked, 28% got what they asked for and 38% got more than first offered but less than they asked (66% got more), 35% got only the first offer.",
+  "Callbacks: episode 32 (raise), episode 59 (Dad's pension = the vending machine), episode 60 teaser (2% after five loyal years)."
+ ],
+ "youtube": {
+  "title": "Why Staying Loyal to Your Job Keeps You Poorer",
+  "alt_titles": [
+   "Why the New Hire Makes More Than You (For the Same Job)",
+   "Your Company Pays Strangers More Than You. Here's Why."
+  ],
+  "hook": "The new hire at the next desk may be paid more than you for the same job. Why that happens, and how Dave got $7,000 more without quitting.",
+  "tags": [
+   "salary compression",
+   "new hire paid more than me",
+   "job hopping vs staying",
+   "how to ask for a raise",
+   "loyalty tax",
+   "market adjustment raise",
+   "why am i underpaid",
+   "pay transparency",
+   "career money",
+   "money explained simply",
+   "dave explains money"
+  ],
+  "hashtags": [
+   "#salary",
+   "#career",
+   "#personalfinance"
+  ],
+  "pinned": "How many years have you been at your current job? Drop the number below."
+ },
+ "beats": [
+  {
+   "id": "o1",
+   "job": "concept",
+   "text": "If you've been at your job a few years, the new hire at the next desk may be getting paid more than you, for the exact same work.",
+   "pause": 0.2
+  },
+  {
+   "id": "o2",
+   "job": "proof",
+   "text": "One Wharton study found people hired from outside got about eighteen percent more than insiders in the same kind of job.",
+   "pause": 0.2
+  },
+  {
+   "id": "o3",
+   "job": "stakes",
+   "text": "For a guy like Dave, the gap is nine thousand dollars a year, or ninety thousand over ten loyal years.",
+   "pause": 0.25
+  },
+  {
+   "id": "o4",
+   "job": "ending",
+   "text": "But ten minutes from now, Dave walks back into this office making seven thousand more, without quitting.",
+   "pause": 0.3,
+   "rate": "+0%"
+  },
+  {
+   "id": "c1a",
+   "chapter": "The Five-Year Mug",
+   "text": "It's Dave's five year anniversary at work, and his boss calls him in with a gift bag and a very big smile.",
+   "pause": 0.4
+  },
+  {
+   "id": "c1b",
+   "text": "Inside the bag there's a mug that says five years, and a letter with his raise, which is two percent.",
+   "pause": 0.5,
+   "rate": "-9%"
+  },
+  {
+   "id": "c1c",
+   "text": "Dave goes: wow, a mug! And honestly he's happy, because he likes this job, and it pays him sixty two thousand dollars a year.",
+   "pause": 0.5
+  },
+  {
+   "id": "c1d",
+   "text": "Then he walks over to the printer, and sitting in the tray is somebody else's offer letter. It belongs to Kyle, the new guy, who started on Monday.",
+   "pause": 0.45
+  },
+  {
+   "id": "c1e",
+   "text": "Kyle has the same job title as Dave, on the same team, and his starting salary is seventy one thousand dollars.",
+   "pause": 0.5,
+   "rate": "-10%"
+  },
+  {
+   "id": "c1f",
+   "text": "That's nine thousand dollars more than Dave, and Dave is the one who's training him.",
+   "pause": 0.6,
+   "pitch": "-2Hz"
+  },
+  {
+   "id": "c1g",
+   "text": "Be honest, you would've read it too. And then you'd go home, open your laptop at midnight, and type: new hire paid more than me, is this legal?",
+   "pause": 0.5
+  },
+  {
+   "id": "c1h",
+   "text": "Dave was hoping it was a mistake. What he found was worse, because it had a name.",
+   "pause": 0.9
+  },
+  {
+   "id": "c2a",
+   "chapter": "It Has A Name",
+   "text": "The internet answers in about four seconds. Yes, it's legal, and it's so common that H R people have a name for it. They call it salary compression.",
+   "pause": 0.45
+  },
+  {
+   "id": "c2b",
+   "text": "In plain English, pay for newcomers climbs with the market, while pay for people already inside creeps up slowly, until the new person passes you.",
+   "pause": 0.5
+  },
+  {
+   "id": "c2c",
+   "text": "Think of your salary like a price sticker with a date on it. Dave's sticker says five years ago, with a few tiny raises scribbled on top. Kyle's sticker says last Monday, at today's prices.",
+   "pause": 0.5
+  },
+  {
+   "id": "c2e",
+   "text": "Then Dave finds the scoreboard. The Federal Reserve Bank of Atlanta has tracked this since nineteen ninety seven, and it splits workers into two teams: the stayers, and the switchers.",
+   "pause": 0.5
+  },
+  {
+   "id": "c2f",
+   "text": "In the summer of twenty twenty two, the switchers were getting raises of almost nine percent. The stayers got six, and in Dave's case, a mug.",
+   "pause": 0.55,
+   "rate": "+3%"
+  },
+  {
+   "id": "c2g",
+   "text": "So try this on yourself. Do you know what your company would pay a stranger to do your job today? Most of us have no idea.",
+   "pause": 0.5,
+   "pitch": "+3Hz"
+  },
+  {
+   "id": "c2h",
+   "text": "But here's the weird part. By the elevator there's an old photo of a man named Walt, getting a gold watch for thirty years at this very company. So when did staying stop paying?",
+   "pause": 0.9
+  },
+  {
+   "id": "c3a",
+   "chapter": "When Staying Paid",
+   "text": "Dave stares at Walt and his watch, and he goes: hold on, companies used to pay people to stay?",
+   "pause": 0.45,
+   "pitch": "+3Hz"
+  },
+  {
+   "id": "c3b",
+   "text": "They did, and the best story is Henry Ford's. In nineteen thirteen his new assembly line was so boring that workers kept walking out, and he had to hire fifty two thousand people in one year, just to keep fourteen thousand jobs filled.",
+   "pause": 0.5
+  },
+  {
+   "id": "c3c",
+   "text": "So in January nineteen fourteen, Ford did something his rivals thought was insane. He doubled the pay to five dollars a day, and the quitting pretty much stopped.",
+   "pause": 0.5,
+   "rate": "+4%"
+  },
+  {
+   "id": "c3d",
+   "text": "Ford wasn't being sweet. He'd done the math, and losing people cost him more than paying them.",
+   "pause": 0.5
+  },
+  {
+   "id": "c3e",
+   "text": "For decades, big companies ran on that deal. You stayed thirty years, you got a pension, like the vending machine Dave's dad has, and at the end they handed you a gold watch.",
+   "pause": 0.5
+  },
+  {
+   "id": "c3f",
+   "text": "The story goes that Pepsi started the watch thing in the nineteen forties, with the line: you gave us your time, now we give you ours. Dave looks down at his mug. It does not tell time.",
+   "pause": 0.6
+  },
+  {
+   "id": "c3g",
+   "text": "Then somewhere along the way the deal flipped, and to show you how far, I need you to guess something.",
+   "pause": 0.5
+  },
+  {
+   "id": "c3h",
+   "text": "Quick guess. A Wharton professor got six years of pay records from one big company, and compared people hired from outside with insiders promoted into the same kind of job. How much more did the outsiders get paid? Put your number in the comments, the answer is coming.",
+   "pause": 0.9,
+   "rate": "-2%"
+  },
+  {
+   "id": "c4a",
+   "chapter": "Two Pots Of Money",
+   "text": "The next morning Dave does the brave thing. He walks into his boss's office and asks her straight: why does Kyle make more than me?",
+   "pause": 0.45
+  },
+  {
+   "id": "c4b",
+   "text": "And his boss, who actually likes Dave, sighs and tells him the truth. Dave, it's two different pots of money.",
+   "pause": 0.5,
+   "rate": "-9%"
+  },
+  {
+   "id": "c4c",
+   "text": "Pot one is the raise pot, for everybody who already works here. This year the typical American company filled it with about three and a half percent.",
+   "pause": 0.5
+  },
+  {
+   "id": "c4d",
+   "text": "Pot two is the hiring pot, and it works differently, because a stranger won't sign unless you pay what the job is worth today.",
+   "pause": 0.5
+  },
+  {
+   "id": "c4e",
+   "text": "So the hiring pot follows the market, the raise pot follows the budget, and every year those two drift a little further apart.",
+   "pause": 0.5
+  },
+  {
+   "id": "c4f",
+   "text": "It's like a family that brings home a new puppy and buys it steak, while the old dog, who's guarded the house for five years, gets the same dry kibble. Nobody hates the old dog. They just know he isn't going anywhere.",
+   "pause": 0.5
+  },
+  {
+   "id": "c4g",
+   "text": "Dave goes: wait, am I the old dog? Yes, Dave, you're the old dog.",
+   "pause": 0.6,
+   "pitch": "+3Hz"
+  },
+  {
+   "id": "c4h",
+   "text": "Now, your guess. In that Wharton study, by professor Matthew Bidwell, the outsiders were paid eighteen to twenty percent more.",
+   "pause": 0.6,
+   "rate": "-11%"
+  },
+  {
+   "id": "c4i",
+   "text": "And here's the part that should make you a little angry. Pick one: who got better performance reviews for the first two years, the expensive outsiders, or the cheaper insiders? It was the insiders. The company paid more to get less, and that's literally the title of the study.",
+   "pause": 0.6
+  },
+  {
+   "id": "c4j",
+   "text": "To be fair, the outsiders often had more experience on paper, and it costs extra to pull somebody out of a safe job.",
+   "pause": 0.5
+  },
+  {
+   "id": "c4k",
+   "text": "So nobody in Dave's building is twirling a mustache. The villain is a spreadsheet with two pots, and one quiet bet: that you won't leave. But why would a company feel so sure about you?",
+   "pause": 0.9,
+   "pitch": "-2Hz"
+  },
+  {
+   "id": "c5a",
+   "chapter": "The Bet On You",
+   "text": "Dave tests it on himself. He counts how many times he's seriously looked for another job in five years, and the answer is zero.",
+   "pause": 0.45
+  },
+  {
+   "id": "c5b",
+   "text": "You're probably the same, because switching is scary. There's a new boss, a new commute, and you'd be the new guy who doesn't know where they keep the good coffee.",
+   "pause": 0.5
+  },
+  {
+   "id": "c5d",
+   "text": "Dave always thought that if he kept his head down and worked hard, somebody upstairs would notice and fix his pay. Nope. From upstairs, an employee who never asks looks exactly like a happy one.",
+   "pause": 0.55
+  },
+  {
+   "id": "c5e",
+   "text": "Now watch what happens when a company stops feeling sure. In twenty ten, Google's engineers started leaving for a hot young company called Facebook.",
+   "pause": 0.45
+  },
+  {
+   "id": "c5f",
+   "text": "So the boss, Eric Schmidt, sent out a memo giving every single employee a ten percent raise, all at once. The money had been there the whole time, and it just took the fear of people leaving to open the pot.",
+   "pause": 0.5,
+   "rate": "+5%"
+  },
+  {
+   "id": "c5h",
+   "text": "So Dave makes the obvious decision. If leaving is the only language they understand, then fine. He'll quit.",
+   "pause": 0.9,
+   "rate": "-8%"
+  },
+  {
+   "id": "c6a",
+   "chapter": "Dave Almost Quits",
+   "text": "That night Dave writes the most dramatic resignation letter of his life. It has the word furthermore in it, twice.",
+   "pause": 0.5
+  },
+  {
+   "id": "c6c",
+   "text": "But before he hits send, he checks that Atlanta scoreboard one more time. The bonus for switching comes and goes, and by the summer of twenty twenty five it had shrunk to zero.",
+   "pause": 0.5
+  },
+  {
+   "id": "c6d",
+   "text": "This fall it's back, at a bit over one point, but companies are hiring slowly right now, so there are fewer doors for you to walk through.",
+   "pause": 0.5
+  },
+  {
+   "id": "c6e",
+   "text": "And jumping has its own price. You're the newest name on the list if layoffs come, and you can leave behind retirement money that isn't fully yours yet.",
+   "pause": 0.5
+  },
+  {
+   "id": "c6f",
+   "text": "So Dave is stuck. If he stays quiet, he keeps paying nine thousand dollars a year for being loyal. If he jumps, he might land somewhere worse.",
+   "pause": 0.55,
+   "rate": "-10%",
+   "pitch": "-2Hz"
+  },
+  {
+   "id": "c6g",
+   "text": "He drops his head on the desk, and knocks the five year mug onto the floor. The handle snaps clean off. Even the mug is leaving.",
+   "pause": 0.6
+  },
+  {
+   "id": "c6h",
+   "text": "And that's when Dave notices something on his screen. There was a third door, and it had been inside his own building the entire time.",
+   "pause": 0.9
+  },
+  {
+   "id": "c7a",
+   "chapter": "The Third Door",
+   "text": "Quick note: this part is education, not advice, and your job isn't Dave's job. But here's what Dave did, in three moves.",
+   "pause": 0.45
+  },
+  {
+   "id": "c7b",
+   "text": "Move one, he found out what his job is worth today. And the easiest place to look turned out to be his own company's careers page.",
+   "pause": 0.45
+  },
+  {
+   "id": "c7c",
+   "text": "Because starting with Colorado in twenty twenty one, more than a dozen states now make employers put the pay range right there in the job ad.",
+   "pause": 0.5
+  },
+  {
+   "id": "c7d",
+   "text": "And there it was. Dave's exact job, posted by his own company, at sixty eight to seventy four thousand dollars. Dave goes: hi, I'd like to apply for my own job, please.",
+   "pause": 0.55,
+   "pitch": "+3Hz"
+  },
+  {
+   "id": "c7e",
+   "text": "If your state doesn't do that yet, the Bureau of Labor Statistics publishes what hundreds of jobs pay, city by city, for free.",
+   "pause": 0.5
+  },
+  {
+   "id": "c7f",
+   "text": "Move two, he changed the question. If you ask for a raise, you get sent to pot one, the tiny one. So Dave asked for a market adjustment, which is H R language for: the price of my job went up, please update my sticker.",
+   "pause": 0.5
+  },
+  {
+   "id": "c7g",
+   "text": "Move three, he made it easy to say yes. He wrote one page, with three things he'd done this year that saved the company money, and one number at the bottom: seventy one thousand.",
+   "pause": 0.5
+  },
+  {
+   "id": "c7h",
+   "text": "Does asking even work? When Pew Research asked American workers, most said they never asked for more pay when they were hired. But among the ones who did ask, about two out of three got more money.",
+   "pause": 0.5
+  },
+  {
+   "id": "c7j",
+   "text": "So on Thursday morning, Dave picks up his one page, glues the handle back on his mug for luck, and knocks on his boss's door.",
+   "pause": 0.9
+  },
+  {
+   "id": "c8a",
+   "chapter": "The Meeting",
+   "text": "Dave doesn't threaten to quit, and he doesn't mention Kyle. He just slides the page across the desk, and says the sentence he practiced in the car.",
+   "pause": 0.45
+  },
+  {
+   "id": "c8b",
+   "text": "I like it here, and I want to stay. But the market rate for my job is seventy one thousand, and I'd like to talk about closing that gap.",
+   "pause": 0.6,
+   "rate": "-10%"
+  },
+  {
+   "id": "c8c",
+   "text": "His boss reads the page twice, and then she says the four most annoying words in business. Let me check upstairs.",
+   "pause": 0.5
+  },
+  {
+   "id": "c8d",
+   "text": "Two very long weeks go by, and Dave drinks a lot of nervous coffee out of a glued together mug.",
+   "pause": 0.5
+  },
+  {
+   "id": "c8e",
+   "text": "Then the email arrives. They can't do seventy one. But they can do sixty nine thousand dollars, starting next month.",
+   "pause": 0.6,
+   "rate": "-11%"
+  },
+  {
+   "id": "c8f",
+   "text": "That's seven thousand dollars more a year. So Dave walks back into the same office, to the same desk, and he never quit, and he never had to learn where a new building keeps the good coffee.",
+   "pause": 0.55,
+   "rate": "+3%"
+  },
+  {
+   "id": "c8g",
+   "text": "Now, it doesn't always go like that, and sometimes the answer is no. But even then, you'd know exactly what you're worth, and the other two doors would still be there.",
+   "pause": 0.5
+  },
+  {
+   "id": "c8h",
+   "text": "Because loyalty is a great thing to give a company. It's just a terrible thing to give away for free.",
+   "pause": 0.7,
+   "rate": "-10%",
+   "pitch": "-2Hz"
+  },
+  {
+   "id": "c8i",
+   "text": "Kyle, by the way, is doing great. In about five years, somebody should probably warn him about the mug.",
+   "pause": 0.9
+  },
+  {
+   "id": "r1",
+   "chapter": "What Dave Learned",
+   "text": "One, your pay was priced the day you were hired, and nobody updates the sticker unless you ask.",
+   "pause": 0.4
+  },
+  {
+   "id": "r2",
+   "text": "Two, companies have two pots of money, and the big one is for strangers.",
+   "pause": 0.4
+  },
+  {
+   "id": "r3",
+   "text": "Three, you don't have to quit, but you do have to know your number.",
+   "pause": 0.7
+  },
+  {
+   "id": "r4",
+   "text": "Next time, Dave celebrates by buying something for nine dollars and ninety nine cents. His brain files it under nine dollars, and stores have known that trick for a very long time.",
+   "pause": 0.5
+  },
+  {
+   "id": "r5",
+   "text": "Subscribe, it's free, and unlike your boss, we'll actually notice that you stayed.",
+   "pause": 1.4,
+   "pitch": "+3Hz"
+  }
+ ]
+}
