@@ -4,7 +4,7 @@ import {TimingProvider, Timings, useT} from '../timing';
 import {C, FONT} from '../theme';
 import {pop, ease, shake} from '../anim';
 import {Stick} from '../Stick';
-import {G, Stamp, Paper} from '../props';
+import {G, Stamp} from '../props';
 import {Pic} from '../photo';
 import {SubButton, Bell} from '../props2';
 
@@ -31,7 +31,15 @@ const Captions:React.FC<{f:number}>=({f})=>{
 
 const Backdrop:React.FC=()=> <Svg><rect width={W} height={H} fill={C.navy}/><rect y={1250} width={W} height={670} fill={C.floor}/><path d="M0 1250 H1080" stroke={C.ink} strokeWidth={8}/></Svg>;
 
-const MemeCard:React.FC<{f:number;at:number;id:string;text:string;color?:string}>=({f,at,id,text,color=C.red})=><G x={540+shake(f,at+7,9,3).x} y={1030+shake(f,at+7,9,2).y} s={pop(f,at,10,230)}><Paper id={id} text={text} reveal={1} w={690} h={205} size={31} color={color}/></G>;
+const MemeCard:React.FC<{f:number;at:number;id:string;text:string;color?:string}>=({f,at,text,color=C.red})=>{
+ const lines=text.split('\\n');
+ return <G x={540+shake(f,at+7,9,3).x} y={1030+shake(f,at+7,9,2).y} s={pop(f,at,10,230)}>
+  <rect x={-350} y={-105} width={700} height={215} rx={20} fill="rgba(0,0,0,.22)" transform="translate(8,10)"/>
+  <rect x={-350} y={-105} width={700} height={215} rx={20} fill="#FFF8E8" stroke={C.ink} strokeWidth={7}/>
+  <rect x={-350} y={-105} width={700} height={18} rx={8} fill={color}/>
+  {lines.map((line,i)=><text key={i} x={0} y={(i-(lines.length-1)/2)*47+18} textAnchor="middle" dominantBaseline="middle" fontFamily={FONT} fontWeight={800} fontSize={lines.length>2?28:34} fill={C.ink}>{line}</text>)}
+ </G>;
+};
 
 type SceneDef={beat:string;photo:string;label:string;meme:string;tag:string;poseA:string;poseB:string};
 const DEFINITIONS:SceneDef[]=[
