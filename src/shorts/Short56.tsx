@@ -61,12 +61,12 @@ const Hook:React.FC<{f:number}>=({f})=><AbsoluteFill>
   <rect width={W} height={H} fill={C.navy}/>
   <rect y={1180} width={W} height={740} fill={C.floor}/>
   <G x={540} y={270} s={1}><Stamp text="$3,000 SALES" color={C.green} size={82}/></G>
-  <G x={540} y={555} s={f>=14?pop(f,14,7,220):0}>
+  <G x={540} y={555} s={f>=5?pop(f,5,7,220):0}>
    <rect x={-440} y={-92} width={880} height={184} rx={24} fill="#FFE3EA" stroke={C.ink} strokeWidth={8}/>
    <text x={0} y={-16} textAnchor="middle" fontFamily={FONT} fontWeight={900} fontSize={34} fill={C.ink}>THEN HE CHECKED HIS BANK</text>
    <text x={0} y={58} textAnchor="middle" fontFamily={FONT} fontWeight={900} fontSize={76} fill={C.red}>−$1,546</text>
   </G>
-  <Dave f={f} x={540} y={1585} s={1.58} keys={[{at:0,pose:'celebrate',expr:'grin'},{at:14,pose:'shock',expr:'shock'},{at:48,pose:'facepalm',expr:'sad'}]}/>
+  <Dave f={f} x={540} y={1585} s={1.58} keys={[{at:0,pose:'celebrate',expr:'grin'},{at:5,pose:'shock',expr:'shock'},{at:48,pose:'facepalm',expr:'sad'}]}/>
   <G x={540} y={930} s={pop(f,8,7,220)}>
    <rect x={-350} y={-76} width={700} height={152} rx={20} fill="#FFF8E8" stroke={C.ink} strokeWidth={7}/>
    <text x={0} y={-8} textAnchor="middle" fontFamily={FONT} fontWeight={900} fontSize={31} fill={C.ink}>THE STORE SAID “WINNING.”</text>
@@ -79,17 +79,17 @@ const Body:React.FC=()=>{
  const sceneAt=(id:string)=>Math.max(0,bs(id)-3);
  const scenes:any[]=[
  {at:0,el:()=> <Hook f={f}/>},
- {at:sceneAt('o2'),el:()=> <PhotoScene f={f} start={sceneAt('o2')} id="cat_lamp" label="THE $30 CAT LAMP" memetext={'DROPSHIPPING\nSELL IT. NEVER TOUCH IT.'} idx={0}/>},
- {at:sceneAt('o3'),el:()=> <PhotoScene f={f} start={sceneAt('o3')} id="online_store" label="THE STORE LOOKED EASY" memetext={'STORE DASHBOARD: “WE’RE RICH”\nBANK APP: “BE SERIOUS.”'} idx={10} pose="shock"/>},
- {at:sceneAt('c1'),el:()=> <PhotoScene f={f} start={sceneAt('c1')} id="shipping_box" label="SUPPLIER: $12" memetext={'SUPPLIER: PAID\nDAVE: NOT SO MUCH'} idx={1} pose="think"/>},
- {at:sceneAt('c2'),el:()=> <PhotoScene f={f} start={sceneAt('c2')} id="credit_card" label="PAYMENT FEES" memetext={'$30 SALE\n−$12 PRODUCT\n−$1.20 PAYMENT FEE'} idx={2} pose="think"/>},
- {at:sceneAt('c3'),el:()=> <PhotoScene f={f} start={sceneAt('c3')} id="phone_ad" label="50¢ PER CLICK" memetext={'THEY CLICKED.\nTHEY LEFT. YOU STILL PAY.'} idx={3}/>},
- {at:sceneAt('c4'),el:()=> <PhotoScene f={f} start={sceneAt('c4')} id="ad_dashboard" label="2 BUYERS OUT OF 100" memetext={'100 CLICKS = $50\n2 SALES = $25 EACH'} idx={4}/>},
- {at:sceneAt('c5'),el:()=> <PhotoScene f={f} start={sceneAt('c5')} id="warehouse" label="WHO GETS PAID?" memetext={'EVERYONE GOT PAID.\nDAVE GOT THE BILL.'} idx={5}/>},
- {at:sceneAt('c6'),el:()=> <PhotoScene f={f} start={sceneAt('c6')} id="returns_box" label="REFUNDS + CHARGEBACKS" memetext={'PACKAGE LATE?\nREFUND REQUEST INCOMING.'} idx={6} pose="facepalm"/>},
- {at:sceneAt('c7'),el:()=> <PhotoScene f={f} start={sceneAt('c7')} id="calculator" label="THE AD CEILING" memetext={'BREAK-EVEN AD COST: $16.80\nACTUAL COST: $25'} idx={7} pose="think"/>},
- {at:sceneAt('c8'),el:()=> <PhotoScene f={f} start={sceneAt('c8')} id="product_search" label="CHECK THE MARKET" memetext={'THE MATH DOESN’T CARE\nABOUT YOUR HUSTLE.'} idx={8} pose="think"/>},
- {at:sceneAt('c9'),el:()=> <PhotoScene f={f} start={sceneAt('c9')} id="closed_laptop" label="ADS OFF" memetext={'$3,000 IN SALES.\n−$1,546 IN REALITY.'} idx={9} pose="celebrate"/>}
+ {at:sceneAt('o2'),el:()=> <PhotoScene f={f} start={sceneAt('o2')} id="cat_lamp" label="THE $30 CAT LAMP" memetext={'PASSIVE INCOME, THEY SAID.\nCUSTOMER SUPPORT, THEY SAID.'} idx={0}/>},
+ {at:sceneAt('o3'),el:()=> <PhotoScene f={f} start={sceneAt('o3')} id="online_store" label="THE STORE LOOKED EASY" memetext={'SALES SCREEN: 📈\nBANK APP: “BE SERIOUS.”'} idx={10} pose="shock"/>},
+ {at:sceneAt('c1'),el:()=> <PhotoScene f={f} start={sceneAt('c1')} id="shipping_box" label="SUPPLIER: $12" memetext={'SUPPLIER: PAID.\nDAVE: HOLDING THE BAG.'} idx={1} pose="think"/>},
+ {at:sceneAt('c2'),el:()=> <PhotoScene f={f} start={sceneAt('c2')} id="credit_card" label="PAYMENT FEES" memetext={'$30 IN\n$13.20 GONE\nAND ADS HAVEN’T STARTED.'} idx={2} pose="think"/>},
+ {at:sceneAt('c3'),el:()=> <PhotoScene f={f} start={sceneAt('c3')} id="phone_ad" label="50¢ PER CLICK" memetext={'CLICK. SCROLL. GONE.\nDAVE STILL PAYS.'} idx={3}/>},
+ {at:sceneAt('c4'),el:()=> <PhotoScene f={f} start={sceneAt('c4')} id="ad_dashboard" label="2 BUYERS OUT OF 100" memetext={'100 CLICKS.\n2 BUYERS.\n$25 TO GET ONE SALE.'} idx={4}/>},
+ {at:sceneAt('c5'),el:()=> <PhotoScene f={f} start={sceneAt('c5')} id="warehouse" label="WHO GETS PAID?" memetext={'EVERYONE GOT PAID.\nDAVE GOT THE PLOT TWIST.'} idx={5}/>},
+ {at:sceneAt('c6'),el:()=> <PhotoScene f={f} start={sceneAt('c6')} id="returns_box" label="REFUNDS + CHARGEBACKS" memetext={'CUSTOMER: “WHERE’S MY LAMP?”\nDAVE: “I’M ASKING TOO.”'} idx={6} pose="facepalm"/>},
+ {at:sceneAt('c7'),el:()=> <PhotoScene f={f} start={sceneAt('c7')} id="calculator" label="THE AD CEILING" memetext={'BREAK-EVEN: $16.80\nAD COST: $25\nMATH SAID NO.'} idx={7} pose="think"/>},
+ {at:sceneAt('c8'),el:()=> <PhotoScene f={f} start={sceneAt('c8')} id="product_search" label="CHECK THE MARKET" memetext={'SAME LAMP: $9 ELSEWHERE.\nDAVE’S MARKUP: AWKWARD.'} idx={8} pose="think"/>},
+ {at:sceneAt('c9'),el:()=> <PhotoScene f={f} start={sceneAt('c9')} id="closed_laptop" label="ADS OFF" memetext={'POV: YOU SCALED\nA LOSING BUSINESS.'} idx={9} pose="celebrate"/>}
  ];
  let current=scenes[0];for(const s of scenes){if(s.at<=f)current=s;}
  const mid=bs('c5')+20,end=d-120,midShow=f>=mid&&f<mid+75,endShow=f>=end;
