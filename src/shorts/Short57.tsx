@@ -44,7 +44,7 @@ const Scenes:React.FC<{f:number;items:SceneItem[]}> = ({f,items})=>{
  const s=[...items].sort((a,b)=>a.at-b.at); let i=-1;
  s.forEach((x,k)=>{if(x.at<=f)i=k;});
  if(i<0)return null;
- const cur=s[i]; const prev=i>0&&f<cur.at+8?s[i-1]:null; const o=ease(f,cur.at,cur.at+7);
+ const cur=s[i]; const prev=i>0&&f<cur.at+8?s[i-1]:null; const o=cur.at===0?1:ease(f,cur.at,cur.at+7);
  return <>{prev&&<AbsoluteFill>{prev.el()}</AbsoluteFill>}<AbsoluteFill style={{opacity:o,transform:`scale(${1.04-0.04*o})`}}>{cur.el()}</AbsoluteFill></>;
 };
 
@@ -98,7 +98,7 @@ const Body:React.FC=()=>{
   ()=> <AbsoluteFill><Room/>{photo('survey_cash',bs('c4')+60,540,610,760,520,'polaroid','44% LOST MONEY')}<Svg><Dave f={f} x={250} y={1460} s={0.98} keys={[{at:0,pose:'shock',expr:'shock'}]}/><G x={W/2} y={1250} s={P(bs('c4')+60)}><Stamp text="NEARLY 1 IN 2" color={C.red} size={50}/></G><G x={W/2} y={1500} s={P(bs('c4')+60)}><Text y={0} size={28} color={C.ink}>Bankrate · 2025</Text></G></Svg></AbsoluteFill>
  ]);
  micro('c5',[
-  ()=> <AbsoluteFill><Room/>{photo('empty_wallet',bs('c5'),540,610,680,440,'sticker','BROKE OR AVOIDING?')}<Svg><Danny f={f} x={W/2} y={1450} s={1.12} keys={[{at:0,pose:'think',expr:'worried'}]}/><G x={W/2} y={250} s={P(bs('c5'))}><Stamp text="NOT EVIL. JUST NO PLAN." color={C.red} size={43}/></G></Svg></AbsoluteFill>,
+  ()=> <AbsoluteFill><Room/>{photo('empty_wallet',bs('c5'),540,500,680,440,'sticker','BROKE OR AVOIDING?')}<Svg><Danny f={f} x={W/2} y={1450} s={1.12} keys={[{at:0,pose:'think',expr:'worried'}]}/><G x={W/2} y={250} s={P(bs('c5'))}><Stamp text="NOT EVIL. JUST NO PLAN." color={C.red} size={43}/></G></Svg></AbsoluteFill>,
   ()=> <AbsoluteFill><Room/><Svg><Dave f={f} x={280} y={1450} s={1.1} keys={[{at:0,pose:'facepalm',expr:'sad'}]}/><Danny f={f} x={820} y={1450} s={1.1} keys={[{at:0,pose:'shrug',expr:'smug'}]}/><G x={W/2} y={650} s={P(bs('c5')+60)}><Paper id="meme-waiting" text={'ME: “PAY ME FRIDAY”\n\nBRO: “NEXT FRIDAY BRO”'} reveal={1} w={790} h={390} size={38} color={C.navy}/></G><G x={W/2} y={250} s={P(bs('c5')+60)}><Stamp text="THE CLASSIC FAMILY MEME" color={C.red} size={36}/></G></Svg></AbsoluteFill>
  ]);
  micro('c6',[
@@ -117,7 +117,7 @@ const Body:React.FC=()=>{
  ]);
  micro('c9',[
   ()=> <AbsoluteFill><Room/><Svg><Dave f={f} x={W/2} y={1450} s={1.25} keys={[{at:0,pose:'wave',expr:'happy'}]}/><G x={W/2} y={650} s={P(bs('c9'))}><Stamp text="ONE QUESTION. ONE PAGE." color={C.navy} size={48}/></G></Svg></AbsoluteFill>,
-  ()=> <AbsoluteFill><Room/>{photo('bank_transfer',bs('c9')+60,540,590,700,480,'polaroid','MORE MONEY TRAPS')}<Svg><Dave f={f} x={W/2} y={1470} s={1.0} keys={[{at:0,pose:'wave',expr:'happy'}]}/></Svg></AbsoluteFill>
+  ()=> <AbsoluteFill><Room/>{photo('bank_transfer',bs('c9')+60,540,470,700,480,'polaroid','MORE MONEY TRAPS')}<Svg><Dave f={f} x={W/2} y={1470} s={1.0} keys={[{at:0,pose:'wave',expr:'happy'}]}/></Svg></AbsoluteFill>
  ]);
 
  const midStart=bs('c5')+18; const midEnd=midStart+96; const endStart=Math.max(0,d-150);
