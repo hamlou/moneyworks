@@ -80,7 +80,7 @@ const Body:React.FC=()=>{
  const scenes:any[]=[
  {at:0,el:()=> <Hook f={f}/>},
  {at:sceneAt('o2'),el:()=> <PhotoScene f={f} start={sceneAt('o2')} id="cat_lamp" label="THE $30 CAT LAMP" memetext={'PASSIVE INCOME, THEY SAID.\nCUSTOMER SUPPORT, THEY SAID.'} idx={0}/>},
- {at:sceneAt('o3'),el:()=> <PhotoScene f={f} start={sceneAt('o3')} id="online_store" label="THE STORE LOOKED EASY" memetext={'SALES SCREEN: 📈\nBANK APP: “BE SERIOUS.”'} idx={10} pose="shock"/>},
+ {at:sceneAt('o3'),el:()=> <PhotoScene f={f} start={sceneAt('o3')} id="online_store" label="THE STORE LOOKED EASY" memetext={'SALES SCREEN: UP\nBANK APP: “BE SERIOUS.”'} idx={10} pose="shock"/>},
  {at:sceneAt('c1'),el:()=> <PhotoScene f={f} start={sceneAt('c1')} id="shipping_box" label="SUPPLIER: $12" memetext={'SUPPLIER: PAID.\nDAVE: HOLDING THE BAG.'} idx={1} pose="think"/>},
  {at:sceneAt('c2'),el:()=> <PhotoScene f={f} start={sceneAt('c2')} id="credit_card" label="PAYMENT FEES" memetext={'$30 IN\n$13.20 GONE\nAND ADS HAVEN’T STARTED.'} idx={2} pose="think"/>},
  {at:sceneAt('c3'),el:()=> <PhotoScene f={f} start={sceneAt('c3')} id="phone_ad" label="50¢ PER CLICK" memetext={'CLICK. SCROLL. GONE.\nDAVE STILL PAYS.'} idx={3}/>},
