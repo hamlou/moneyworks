@@ -91,7 +91,7 @@ const Body:React.FC=()=>{
  ]);
  micro('c3',[
   ()=> <AbsoluteFill><Room/>{photo('tire_repair',bs('c3'),540,620,800,580,'news','THE TIRE BLOWS',true)}<Svg><Dave f={f} x={W/2} y={1480} s={1.08} keys={[{at:0,pose:'shock',expr:'shock'}]} sweat/><G x={W/2} y={1160} s={P(bs('c3'))}><Stamp text="+$400 ON HIS CARD" color={C.red} size={42}/></G></Svg></AbsoluteFill>,
-  ()=> <AbsoluteFill><Room/><Svg><Dave f={f} x={300} y={1460} s={1.1} keys={[{at:0,pose:'facepalm',expr:'sad'}]}/><G x={750} y={800} s={P(bs('c3')+60)}><CreditCard label="DAVE"/></G><G x={W/2} y={340} s={P(bs('c3')+60)}><Stamp text="HIS EMERGENCY FUND: GONE" color={C.red} size={39}/></G></Svg></AbsoluteFill>
+  ()=> <AbsoluteFill><Room/><Svg><Dave f={f} x={300} y={1460} s={1.1} keys={[{at:0,pose:'facepalm',expr:'sad'}]}/><G x={750} y={800} s={P(bs('c3')+60)}><CreditCard label="DAVE"/></G><G x={W/2} y={600} s={P(bs('c3')+60)}><Paper id="meme-broke" text={'ME AFTER LENDING FAMILY MONEY\n\nBANK ACCOUNT: $0'} reveal={1} w={650} h={310} size={32} color={C.red}/></G><G x={W/2} y={280} s={P(bs('c3')+60)}><Stamp text="BROKE SPEEDRUN" color={C.red} size={40}/></G></Svg></AbsoluteFill>
  ]);
  micro('c4',[
   ()=> <AbsoluteFill><Room/><Svg><G x={W/2} y={720} s={P(bs('c4'))}><GuessCard57 f={f} answer={f>bs('c4')+70?'44%':undefined}/></G><Dave f={f} x={W/2} y={1480} s={1.05} keys={[{at:0,pose:'think',expr:'think'}]}/><G x={W/2} y={240} s={P(bs('c4'))}><Stamp text="QUICK GUESS" color={C.navy} size={46}/></G></Svg></AbsoluteFill>,
