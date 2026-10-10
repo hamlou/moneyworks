@@ -105,9 +105,9 @@ const Hook:React.FC<{f:number}>=({f})=><AbsoluteFill>
 
 const Body:React.FC=()=>{
  const f=useCurrentFrame();const {t,bs}=useT();const duration=Math.round(t.total*30);
- const scenes:any[]=[{at:0,el:()=> <Hook f={f}/>},...DEFINITIONS.map((d,index)=>({at:Math.max(0,Math.round(bs(d.beat)*30)-4),el:()=> <PhotoScene f={f} d={d} index={index} start={Math.max(0,Math.round(bs(d.beat)*30)-4)}/> }))];
+ const scenes:any[]=[{at:0,el:()=> <Hook f={f}/>},...DEFINITIONS.map((d,index)=>({at:Math.max(0,bs(d.beat)-4),el:()=> <PhotoScene f={f} d={d} index={index} start={Math.max(0,Math.round(bs(d.beat)*30)-4)}/> }))];
  let current=scenes[0];for(const s of scenes){if(s.at<=f)current=s;}
- const mid=Math.max(0,Math.round(bs('c5')*30)+28),end=Math.max(0,duration-130);
+ const mid=Math.max(0,bs('c5')+28),end=Math.max(0,duration-130);
  const midShow=f>=mid&&f<mid+78,endShow=f>=end;
  const subAt=endShow?end:mid;
  return <AbsoluteFill style={{background:C.bg}}>
