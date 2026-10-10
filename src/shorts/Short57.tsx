@@ -69,8 +69,8 @@ const Body:React.FC=()=>{
   ()=> <AbsoluteFill><Room/>{photo('bill_paid',Math.max(0,bs('o1')+60),540,640,790,570,'polaroid','EVERY BILL PAID',true)}<Svg><Dave f={f} x={230} y={1470} s={1.0} keys={[{at:0,pose:'facepalm',expr:'sad'}]}/><G x={W/2} y={260} s={P(bs('o1')+60)}><Stamp text="EXCEPT YOURS" color={C.red} size={62}/></G></Svg></AbsoluteFill>
  ]);
  micro('o2',[
-  ()=> <AbsoluteFill><Room/>{photo('car_payment',bs('o2'),540,590,790,560,'sticker','CAR PAYMENT CLEARED')}<Svg><G x={W/2} y={1260} s={P(bs('o2'))}><Stamp text="PHONE: PAID" color={C.green} size={52}/></G></Svg></AbsoluteFill>,
-  ()=> <AbsoluteFill><Room/>{photo('credit_card_bill',bs('o2')+60,540,590,760,540,'news','CREDIT CARD: PAID')}<Svg><G x={W/2} y={1280} s={P(bs('o2')+60)}><Stamp text="DAVE: NOTHING" color={C.red} size={54}/></G></Svg></AbsoluteFill>
+  ()=> <AbsoluteFill><Room/>{photo('car_payment',bs('o2'),540,590,790,560,'sticker','CAR PAYMENT CLEARED')}<Svg><Dave f={f} x={250} y={1470} s={0.95} keys={[{at:0,pose:'shock',expr:'shock'}]}/><G x={W/2} y={1260} s={P(bs('o2'))}><Stamp text="PHONE: PAID" color={C.green} size={52}/></G></Svg></AbsoluteFill>,
+  ()=> <AbsoluteFill><Room/>{photo('credit_card_bill',bs('o2')+60,540,590,760,540,'news','CREDIT CARD: PAID')}<Svg><Dave f={f} x={250} y={1470} s={0.95} keys={[{at:0,pose:'facepalm',expr:'sad'}]}/><G x={W/2} y={1280} s={P(bs('o2')+60)}><Stamp text="DAVE: NOTHING" color={C.red} size={54}/></G></Svg></AbsoluteFill>
  ]);
  micro('o3',[
   ()=> <AbsoluteFill><Room/>{photo('repayment_plan',bs('o3'),540,620,740,560,'polaroid','THE FIX')}<Svg><Dave f={f} x={280} y={1480} s={1.05} keys={[{at:0,pose:'think',expr:'worried'}]}/><Danny f={f} x={820} y={1480} s={1.05} keys={[{at:0,pose:'present',expr:'happy'}]}/><G x={W/2} y={1160} s={P(bs('o3'))}><Stamp text="ONE QUESTION" color={C.green} size={48}/></G></Svg></AbsoluteFill>,
@@ -100,7 +100,7 @@ const Body:React.FC=()=>{
   ()=> <AbsoluteFill><Room/><Svg><Dave f={f} x={280} y={1450} s={1.1} keys={[{at:0,pose:'facepalm',expr:'sad'}]}/><Danny f={f} x={820} y={1450} s={1.1} keys={[{at:0,pose:'shrug',expr:'smug'}]}/><G x={W/2} y={650} s={P(bs('c5')+60)}><Paper id="meme-waiting" text={'ME: “PAY ME FRIDAY”\n\nBRO: “NEXT FRIDAY BRO”'} reveal={1} w={790} h={390} size={38} color={C.navy}/></G><G x={W/2} y={250} s={P(bs('c5')+60)}><Stamp text="THE CLASSIC FAMILY MEME" color={C.red} size={36}/></G></Svg></AbsoluteFill>
  ]);
  micro('c6',[
-  ()=> <AbsoluteFill><Room/>{photo('loan_note',bs('c6'),540,600,790,560,'news','WRITE IT DOWN')}<Svg><G x={W/2} y={1280} s={P(bs('c6'))}><Stamp text="LOAN ≠ GIFT" color={C.red} size={54}/></G></Svg></AbsoluteFill>,
+  ()=> <AbsoluteFill><Room/>{photo('loan_note',bs('c6'),540,600,790,560,'news','WRITE IT DOWN')}<Svg><Dave f={f} x={250} y={1470} s={0.98} keys={[{at:0,pose:'point_r',expr:'think'}]}/><G x={W/2} y={1280} s={P(bs('c6'))}><Stamp text="LOAN ≠ GIFT" color={C.red} size={54}/></G></Svg></AbsoluteFill>,
   ()=> <AbsoluteFill><Room/><Svg><Dave f={f} x={250} y={1460} s={1.08} keys={[{at:0,pose:'think',expr:'suspicious'}]}/><G x={760} y={700} s={P(bs('c6')+60)}><Paper id="loan-proof" text={'WRITTEN NOTE\n\nREPAYMENT DATES\n\nBOTH SIGN'} reveal={1} w={510} h={480} size={39}/></G><G x={W/2} y={250} s={P(bs('c6')+60)}><Stamp text="PIZZA EMOJI ≠ PROOF" color={C.red} size={37}/></G></Svg></AbsoluteFill>
  ]);
  micro('c7',[
