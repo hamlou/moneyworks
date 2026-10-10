@@ -56,12 +56,12 @@ const Body: React.FC = () => {
  </Svg></AbsoluteFill>);
  scene(A('c1'),()=> <AbsoluteFill><Room/><Svg>
   <Dave f={f} x={W/2} y={1460} s={1.45} keys={[{at:0,pose:'facepalm',expr:'sad'}]}/>
-  <G x={W/2} y={560} s={P(A('c1'))}><Paper w={600} h={360} text={'CAR PAID ✓\nPHONE PAID ✓\nCARD PAID ✓\nDAVE: $0'} size={45}/></G>
+  <G x={W/2} y={560} s={P(A('c1'))}><Paper id="bill-list" reveal={1} w={600} h={360} text={'CAR PAID ✓\nPHONE PAID ✓\nCARD PAID ✓\nDAVE: $0'} size={45}/></G>
   <Stamp x={W/2} y={170} text="EVERYONE BUT DAVE" color={C.red} size={48}/>
  </Svg></AbsoluteFill>);
  scene(A('c2'),()=> <AbsoluteFill><Room/><Svg>
   <Stamp x={W/2} y={180} text="THE PAYDAY LINE" color={C.navy} size={52}/>
-  {['LANDLORD','CAR LOAN','PHONE','CREDIT CARD'].map((v,i)=><G key={v} x={150+i*260} y={660} s={0.72}><Paper w={240} h={230} text={v} size={30}/><Text y={185} size={28} color={C.red}>{'#'+(i+1)}</Text></G>)}
+  {['LANDLORD','CAR LOAN','PHONE','CREDIT CARD'].map((v,i)=><G key={v} x={150+i*260} y={660} s={0.72}><Paper id={`queue-${i}`} reveal={1} w={240} h={230} text={v} size={30}/><Text y={185} size={28} color={C.red}>{'#'+(i+1)}</Text></G>)}
   <Dave f={f} x={W/2} y={1450} s={1.3} keys={[{at:0,pose:'shrug',expr:'worried'}]}/>
   <G x={W/2} y={1120} s={P(A('c2')+15)}><Stamp text="DAVE: LAST IN LINE" color={C.red} size={43}/></G>
  </Svg></AbsoluteFill>);
@@ -77,7 +77,7 @@ const Body: React.FC = () => {
  </Svg></AbsoluteFill>);
  scene(A('c5'),()=> <AbsoluteFill><Room/><Svg>
   <Dave f={f} x={260} y={1450} s={1.25} keys={[{at:0,pose:'think',expr:'worried'}]}/>
-  <G x={W/2+190} y={680} s={0.8*P(A('c5'))}><Paper w={540} h={500} text={'IRS · TOPIC 453\n\nPROVE IT WAS A LOAN\n\nWRITTEN NOTE\nREPAYMENT SCHEDULE'} size={33}/></G>
+  <G x={W/2+190} y={680} s={0.8*P(A('c5'))}><Paper id="irs-proof" reveal={1} w={540} h={500} text={'IRS · TOPIC 453\n\nPROVE IT WAS A LOAN\n\nWRITTEN NOTE\nREPAYMENT SCHEDULE'} size={33}/></G>
   <Stamp x={W/2} y={180} text="A PIZZA EMOJI ISN'T PROOF" color={C.red} size={36}/>
  </Svg></AbsoluteFill>);
  scene(A('c6'),()=> <AbsoluteFill><Room/><Svg>
