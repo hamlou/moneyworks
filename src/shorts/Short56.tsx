@@ -11,7 +11,6 @@ import {SubButton, Bell} from '../props2';
 const W=1080,H=1920;
 const Svg:React.FC<{children:React.ReactNode}>=({children})=><svg width={W} height={H} viewBox={`0 0 ${W} ${H}`} style={{position:'absolute',inset:0,overflow:'visible'}}>{children}</svg>;
 const Dave:React.FC<any>=(p)=><Stick acc={['hair']} seed={7} {...p}/>;
-const Bob:React.FC<any>=(p)=><Stick acc={['cap']} seed={21} {...p}/>;
 const Captions:React.FC<{f:number}>=({f})=>{
  const {t}=useT(); const sec=f/30; let i=0;
  for(let j=0;j<t.beats.length;j++){if(t.beats[j].start<=sec)i=j;else break;}
@@ -36,30 +35,44 @@ const MemeCard:React.FC<{f:number;at:number;text:string;x?:number;y?:number;colo
   {lines.map((line,i)=><text key={i} x={0} y={(i-(lines.length-1)/2)*47+18} textAnchor="middle" dominantBaseline="middle" fontFamily={FONT} fontWeight={900} fontSize={lines.length>2?27:33} fill={i===lines.length-1?color:C.ink}>{line}</text>)}
  </G>;
 };
-const ACTIONS:Record<string,{d:Key[];b:Key[];walk?:boolean}>={
-cat_lamp:{d:[{at:0,pose:'think',expr:'think'},{at:22,pose:'present',expr:'happy'},{at:55,pose:'celebrate',expr:'grin'},{at:92,pose:'shock',expr:'shock'},{at:128,pose:'point_r',expr:'worried'}],b:[{at:0,pose:'point_l',expr:'smug'},{at:30,pose:'shrug',expr:'smug'},{at:66,pose:'think',expr:'think'},{at:104,pose:'facepalm',expr:'sad'}]},
-online_store:{d:[{at:0,pose:'typing',expr:'happy',talk:true},{at:32,pose:'celebrate',expr:'grin'},{at:68,pose:'think',expr:'think'},{at:100,pose:'shock',expr:'shock'},{at:138,pose:'facepalm',expr:'sad'}],b:[{at:0,pose:'pockets',expr:'smug'},{at:36,pose:'present',expr:'happy'},{at:75,pose:'point_r',expr:'suspicious'},{at:112,pose:'shrug',expr:'worried'}],walk:true},
-shipping_box:{d:[{at:0,pose:'carry',expr:'worried'},{at:28,pose:'think',expr:'think'},{at:60,pose:'point_r',expr:'angry'},{at:96,pose:'shrug',expr:'sad'},{at:132,pose:'pockets',expr:'tired'}],b:[{at:0,pose:'present',expr:'neutral'},{at:34,pose:'point_l',expr:'smug'},{at:72,pose:'pockets',expr:'smug'},{at:112,pose:'wave',expr:'happy'}]},
-credit_card:{d:[{at:0,pose:'present',expr:'happy'},{at:28,pose:'think',expr:'think'},{at:56,pose:'shock',expr:'shock'},{at:88,pose:'facepalm',expr:'sad'},{at:126,pose:'shrug',expr:'worried'}],b:[{at:0,pose:'think',expr:'think'},{at:34,pose:'point_r',expr:'suspicious'},{at:70,pose:'shrug',expr:'smug'},{at:108,pose:'facepalm',expr:'sad'}]},
-phone_ad:{d:[{at:0,pose:'typing',expr:'happy'},{at:30,pose:'point_up',expr:'happy'},{at:60,pose:'think',expr:'worried'},{at:92,pose:'panic',expr:'scream'},{at:128,pose:'facepalm',expr:'sad'}],b:[{at:0,pose:'pockets',expr:'smug'},{at:38,pose:'think',expr:'think'},{at:76,pose:'shock',expr:'shock'},{at:112,pose:'shrug',expr:'worried'}],walk:true},
-ad_dashboard:{d:[{at:0,pose:'think',expr:'think'},{at:30,pose:'point_r',expr:'suspicious'},{at:60,pose:'shock',expr:'shock'},{at:94,pose:'facepalm',expr:'sad'},{at:130,pose:'panic',expr:'worried'}],b:[{at:0,pose:'typing',expr:'neutral'},{at:34,pose:'present',expr:'neutral'},{at:70,pose:'shrug',expr:'smug'},{at:108,pose:'point_l',expr:'suspicious'}]},
-warehouse:{d:[{at:0,pose:'shrug',expr:'worried'},{at:30,pose:'point_r',expr:'angry'},{at:64,pose:'present',expr:'angry'},{at:98,pose:'facepalm',expr:'sad'},{at:132,pose:'pockets',expr:'tired'}],b:[{at:0,pose:'celebrate',expr:'grin'},{at:35,pose:'pockets',expr:'smug'},{at:72,pose:'wave',expr:'happy'},{at:112,pose:'shrug',expr:'smug'}]},
-returns_box:{d:[{at:0,pose:'shock',expr:'shock'},{at:24,pose:'facepalm',expr:'sad'},{at:56,pose:'panic',expr:'worried'},{at:90,pose:'point_r',expr:'angry'},{at:126,pose:'shrug',expr:'tired'}],b:[{at:0,pose:'think',expr:'worried'},{at:30,pose:'point_l',expr:'suspicious'},{at:68,pose:'facepalm',expr:'sad'},{at:106,pose:'pockets',expr:'tired'}],walk:true},
-calculator:{d:[{at:0,pose:'think',expr:'think'},{at:32,pose:'typing',expr:'think'},{at:66,pose:'shock',expr:'shock'},{at:98,pose:'point_up',expr:'angry'},{at:132,pose:'present',expr:'worried'}],b:[{at:0,pose:'think',expr:'think'},{at:34,pose:'typing',expr:'neutral'},{at:72,pose:'point_r',expr:'suspicious'},{at:110,pose:'shrug',expr:'smug'}]},
-product_search:{d:[{at:0,pose:'pockets',expr:'suspicious'},{at:30,pose:'point_r',expr:'suspicious'},{at:62,pose:'think',expr:'worried'},{at:94,pose:'facepalm',expr:'sad'},{at:128,pose:'shrug',expr:'tired'}],b:[{at:0,pose:'present',expr:'neutral'},{at:34,pose:'point_l',expr:'think'},{at:70,pose:'shrug',expr:'smug'},{at:108,pose:'wave',expr:'happy'}]},
-closed_laptop:{d:[{at:0,pose:'typing',expr:'tired'},{at:28,pose:'facepalm',expr:'sad'},{at:62,pose:'carry',expr:'angry'},{at:94,pose:'pockets',expr:'tired'},{at:130,pose:'point_up',expr:'worried'}],b:[{at:0,pose:'think',expr:'think'},{at:32,pose:'shrug',expr:'worried'},{at:68,pose:'present',expr:'neutral'},{at:104,pose:'wave',expr:'happy'}],walk:true}
+const ACTIONS:Record<string,Key[]> = {
+  cat_lamp:[{at:0,pose:'present',expr:'happy'},{at:72,pose:'think',expr:'think'}],
+  online_store:[{at:0,pose:'typing',expr:'happy',talk:true},{at:54,pose:'shock',expr:'shock',talk:false}],
+  shipping_box:[{at:0,pose:'present',expr:'neutral'},{at:66,pose:'shrug',expr:'worried'}],
+  credit_card:[{at:0,pose:'think',expr:'think'},{at:58,pose:'facepalm',expr:'sad'}],
+  phone_ad:[{at:0,pose:'typing',expr:'neutral',talk:true},{at:70,pose:'think',expr:'worried',talk:false}],
+  ad_dashboard:[{at:0,pose:'think',expr:'suspicious'},{at:62,pose:'shock',expr:'shock'}],
+  warehouse:[{at:0,pose:'present',expr:'neutral'},{at:72,pose:'facepalm',expr:'sad'}],
+  returns_box:[{at:0,pose:'shock',expr:'shock'},{at:58,pose:'facepalm',expr:'sad'}],
+  calculator:[{at:0,pose:'think',expr:'think'},{at:76,pose:'point_r',expr:'worried'}],
+  product_search:[{at:0,pose:'think',expr:'suspicious'},{at:68,pose:'point_r',expr:'worried'}],
+  closed_laptop:[{at:0,pose:'typing',expr:'tired',talk:true},{at:52,pose:'facepalm',expr:'sad',talk:false}]
 };
-const PhotoScene:React.FC<{f:number;id:string;label:string;memetext:string;idx:number;start:number;pose?:string}>=({f,id,label,memetext,idx,start,pose='shock'})=><AbsoluteFill>
+const PhotoScene:React.FC<{f:number;id:string;label:string;memetext:string;idx:number;start:number;pose?:string}>=({f,id,label,memetext,idx,start,pose='think'})=><AbsoluteFill>
  <Svg><rect width={W} height={H} fill={C.bg}/><rect width={W} height={1180} fill={C.wall}/><rect y={1180} width={W} height={740} fill={C.floor}/></Svg>
- <Pic f={f} src={`ep56/${id}.jpg`} x={545} y={590} w={650} h={450} at={start+2} look="plain" enter="slam" label={label} rot={-2} kb={0.08}/>
+ <Pic f={f} src={`ep56/${id}.jpg`} x={540} y={555} w={760} h={480} at={start+2} look="plain" enter="slam" label={label} rot={-1} kb={0.035} wob={false}/>
  <Svg>
-  <Dave f={f} x={230} y={1575} s={1.18} walk={!!ACTIONS[id]?.walk} keys={(ACTIONS[id]?.d??[{at:0,pose,expr:'shock'}]).map(k=>({...k,at:start+k.at}))}/>
-  <Bob f={f} x={850} y={1575} s={1.1} keys={(ACTIONS[id]?.b??[{at:0,pose:'think',expr:'worried'}]).map(k=>({...k,at:start+k.at}))}/>
-  <MemeCard f={f} at={start+16} text={memetext} color={C.red}/>
+  <Dave f={f} x={540} y={1585} s={1.48} keys={(ACTIONS[id]??[{at:0,pose,expr:'think'}]).map(k=>({...k,at:start+k.at}))}/>
+  <MemeCard f={f} at={start+12} y={1010} text={memetext} color={C.red}/>
  </Svg>
 </AbsoluteFill>;
 const Hook:React.FC<{f:number}>=({f})=><AbsoluteFill>
- <Svg><rect width={W} height={H} fill={C.navy}/><rect y={1250} width={W} height={670} fill={C.floor}/><G x={540} y={280} s={1}><Stamp text="$3,000 SALES" color={C.green} size={74}/></G><G x={540} y={570} s={1}><Stamp text="-$1,546 BANK BALANCE" color={C.red} size={53}/></G><Dave f={f} x={230} y={1575} s={1.24} walk={f<28||f>78} keys={[{at:0,pose:'shock',expr:'shock'},{at:24,pose:'facepalm',expr:'sad'},{at:48,pose:'panic',expr:'worried'},{at:72,pose:'point_up',expr:'angry',talk:true},{at:100,pose:'shrug',expr:'suspicious',talk:false}]}/><Bob f={f} x={850} y={1575} s={1.12} keys={[{at:0,pose:'shrug',expr:'smug'},{at:30,pose:'think',expr:'think'},{at:60,pose:'panic',expr:'shock'},{at:90,pose:'facepalm',expr:'sad'}]}/><MemeCard f={f} at={0} y={900} text={'$3,000 IN SALES.\nWHY IS HE DOWN $1,546?'} color={C.red}/></Svg>
+ <Svg>
+  <rect width={W} height={H} fill={C.navy}/>
+  <rect y={1180} width={W} height={740} fill={C.floor}/>
+  <G x={540} y={270} s={1}><Stamp text="$3,000 SALES" color={C.green} size={82}/></G>
+  <G x={540} y={555} s={f>=14?pop(f,14,7,220):0}>
+   <rect x={-440} y={-92} width={880} height={184} rx={24} fill="#FFE3EA" stroke={C.ink} strokeWidth={8}/>
+   <text x={0} y={-16} textAnchor="middle" fontFamily={FONT} fontWeight={900} fontSize={34} fill={C.ink}>THEN HE CHECKED HIS BANK</text>
+   <text x={0} y={58} textAnchor="middle" fontFamily={FONT} fontWeight={900} fontSize={76} fill={C.red}>−$1,546</text>
+  </G>
+  <Dave f={f} x={540} y={1585} s={1.58} keys={[{at:0,pose:'celebrate',expr:'grin'},{at:14,pose:'shock',expr:'shock'},{at:48,pose:'facepalm',expr:'sad'}]}/>
+  <G x={540} y={930} s={pop(f,8,7,220)}>
+   <rect x={-350} y={-76} width={700} height={152} rx={20} fill="#FFF8E8" stroke={C.ink} strokeWidth={7}/>
+   <text x={0} y={-8} textAnchor="middle" fontFamily={FONT} fontWeight={900} fontSize={31} fill={C.ink}>THE STORE SAID “WINNING.”</text>
+   <text x={0} y={38} textAnchor="middle" fontFamily={FONT} fontWeight={900} fontSize={31} fill={C.red}>THE BANK DISAGREED.</text>
+  </G>
+ </Svg>
 </AbsoluteFill>;
 const Body:React.FC=()=>{
  const f=useCurrentFrame();const {t,bs}=useT();const d=Math.round(t.total*30);
