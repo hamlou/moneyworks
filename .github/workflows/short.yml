@@ -1,0 +1,49 @@
+name: short
+run-name: short ${{ inputs.id }}
+
+# Builds a vertical (1080x1920) short: real edge-tts voiceover + single-shot
+# Remotion render of the matching composition. Unlike render.yml this does
+# not chunk/assemble across machines -- shorts are small enough for one job.
+on:
+  workflow_dispatch:
+    inputs:
+      id:
+        description: Short id (e.g. short60) -- must match pipeline/episodes/<id>.json and a Root.tsx composition of the same name
+        required: true
+      composition:
+        description: Remotion composition id to render
+        default: Short60
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg
+      - run: pip install -q edge-tts numpy
+      - run: npm ci --no-audit --no-fund
+      - name: voice (real edge-tts, word-level timings)
+        run: python pipeline/tts.py pipeline/episodes/${{ inputs.id }}.json public/${{ inputs.id }}
+      - run: python -c "import json;print('total', json.load(open('public/${{ inputs.id }}/timings.json'))['total'])"
+      - name: render
+        run: >
+          npx remotion render src/index.ts ${{ inputs.composition }} out/${{ inputs.id }}.mp4
+          --codec=h264 --crf=18 --pixel-format=yuv420p --audio-codec=aac
+          --props='{"timings":null}'
+          --concurrency=100% --log=warn
+      - name: loudness-normalize
+        run: bash pipeline/master.sh out/${{ inputs.id }}.mp4
+      - uses: actions/upload-artifact@v4
+        with:
+          name: ${{ inputs.id }}-video
+          path: out/${{ inputs.id }}_final.mp4
+          retention-days: 14
+          compression-level: 0
