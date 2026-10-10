@@ -9,7 +9,7 @@ import {Pic} from '../photo';
 import {SubButton, Bell} from '../props2';
 
 const W=1080,H=1920;
-const Svg:React.FC<{children:React.ReactNode}>=({children})=><svg width={W} height={H} viewBox={`0 0 ${W} ${H}`} style={{position:'absolute',inset:0,overflow:'visible'}}{children}</svg>;
+const Svg:React.FC<{children:React.ReactNode}>=({children})=><svg width={W} height={H} viewBox={`0 0 ${W} ${H}`} style={{position:'absolute',inset:0,overflow:'visible'}}>{children}</svg>;
 const Dave:React.FC<any>=(p)=><Stick acc={['hair']} seed={7} {...p}/>;
 const Bob:React.FC<any>=(p)=><Stick acc={['cap']} seed={21} {...p}/>;
 
