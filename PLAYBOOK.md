@@ -496,3 +496,17 @@ Callbacks to earlier episodes are GOOD ("Remember the raccoon from our credit ca
 | 08 | Why Is Gold So Expensive? | gold cube 22 m, Nixon 1971, Buffett cube |
 | 09 | How the Stock Market Actually Works | Dave's lemonade stand, heat wave, Buffett's $1M bet |
 | 10 | "Pay in 4, 0% Interest"… How Does Klarna Make Billions? | fancier raccoon booth, babysitter paid twice |
+
+
+## Episode 56 visual QA correction (10 Oct 2026)
+
+The owner rejected the first ep56 render because the characters looked frozen, scene objects covered their faces, and the promised memes were not visually legible. Never repeat this.
+
+- **Character animation is mandatory:** do not leave a character in one pose for an entire scene. Use visible pose keyframes (gesture, reaction, gesture) about every 1–2 seconds; use walk/bob/talk animation where appropriate. A tiny idle bob alone does not count.
+- **Faces are protected space:** never place photos, meme cards, CTA buttons, labels, captions, or badges over a character's head/face. Keep the characters large enough to read on a phone and inspect frames at 9:16 size.
+- **Real photo + character + meme means three distinct visible layers:** show one relevant real photo, at least one clearly animated character, and a separate readable joke/meme card in the same scene. A photo caption, label, or generic title is NOT a meme.
+- **Meme legibility:** use short, punchy, recognizable joke setups/punchlines with strong contrast and enough on-screen time to read. Do not hide the meme behind a character, CTA, or caption.
+- **Use each real photo only once** and align it with the narration. Do not repeat the hook photo in the next scene.
+- **Motion cadence:** introduce a meaningful visual change (pose, prop, camera move, photo, meme, or number) every 1–4 seconds. Scene transitions alone do not excuse motionless characters.
+- **CTA safe zones:** show subscribe reminders twice, but place them in unused top/bottom safe space and check that neither character face nor meme is obscured.
+- **Render QA is visual, not just technical:** inspect a contact sheet and several actual frames from the final MP4, especially the hook, meme scenes, both CTAs, and ending. A successful GitHub Actions run does not mean the short is approved.
