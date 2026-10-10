@@ -137,13 +137,22 @@ const Body:React.FC=()=>{
   </Svg></AbsoluteFill>}
   <Captions f={f}/><Progress f={f} d={d}/>
   <Sfx at={0} file="whoosh" vol={0.7}/>
+  <Sfx at={bs('o1')+60} file="paper" vol={0.8}/>
   <Sfx at={bs('o2')} file="stamp"/>
+  <Sfx at={bs('o2')+60} file="flip" vol={0.8}/>
+  <Sfx at={bs('o3')} file="paper" vol={0.8}/>
   <Sfx at={bs('c1')} file="cash"/>
+  <Sfx at={bs('c2')} file="flip" vol={0.8}/>
   <Sfx at={bs('c3')} file="thud"/>
   <Sfx at={bs('c4')} file="tick"/>
   <Sfx at={bs('c4')+65} file="stamp"/>
+  <Sfx at={bs('c5')} file="pop" vol={0.8}/>
   <Sfx at={bs('c6')} file="paper"/>
+  <Sfx at={bs('c7')} file="paper" vol={0.8}/>
+  <Sfx at={bs('c7')+60} file="flip" vol={0.8}/>
   <Sfx at={bs('c7')+110} file="chime"/>
+  <Sfx at={bs('c8')+60} file="flip" vol={0.8}/>
+  <Sfx at={bs('c9')+60} file="pop" vol={0.8}/>
   <Sfx at={midStart} file="ding" vol={0.7}/>
   <Sfx at={endStart} file="ding" vol={0.7}/>
   <Audio src={staticFile('short57/voice.wav')}/>
