@@ -9,6 +9,8 @@ on:
       - '.github/workflows/render-short57.yml'
       - 'pipeline/episodes/ep57-short.json'
       - 'pipeline/photos/ep57.json'
+      - 'pipeline/shorts/short57.md'
+      - 'PLAYBOOK.md'
       - 'src/photo.tsx'
       - 'src/props2.tsx'
       - 'pipeline/tts.py'
