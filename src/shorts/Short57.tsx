@@ -89,7 +89,7 @@ const Body: React.FC = () => {
  scene(A('c7'),()=> <AbsoluteFill><Room/><Svg>
   <Dave f={f} x={W/2} y={1430} s={1.4} keys={[{at:0,pose:'point_up',expr:'happy'}]}/>
   <G x={W/2} y={530} s={P(A('c7'))}><Stamp text="GIFT OR LOAN?" color={C.green} size={68}/></G>
-  <G x={W/2} y={790} s={P(A('c7')+20)}><Paper w={650} h={240} text={'IF LOAN: WRITE IT DOWN\nIF GIFT: ONLY WHAT YOU CAN LOSE'} size={32}/></G>
+  <G x={W/2} y={790} s={P(A('c7')+20)}><Paper id="final-rule" reveal={1} w={650} h={240} text={'IF LOAN: WRITE IT DOWN\nIF GIFT: ONLY WHAT YOU CAN LOSE'} size={32}/></G>
  </Svg></AbsoluteFill>);
 
  let current=-1; scenes.sort((a,b)=>a.at-b.at).forEach((s,i)=>{if(s.at<=f)current=i;});
