@@ -3,7 +3,7 @@ import {AbsoluteFill, Audio, Sequence, staticFile, useCurrentFrame} from 'remoti
 import {TimingProvider, Timings, useT} from '../timing';
 import {C, FONT} from '../theme';
 import {pop, ease} from '../anim';
-import {Stick} from '../Stick';
+import {Stick, type Key} from '../Stick';
 import {G, Stamp} from '../props';
 import {Pic} from '../photo';
 import {SubButton, Bell} from '../props2';
@@ -35,6 +35,19 @@ const MemeCard:React.FC<{f:number;at:number;text:string;x?:number;y?:number;colo
   <rect x={-360} y={-112} width={720} height={20} rx={8} fill={color}/>
   {lines.map((line,i)=><text key={i} x={0} y={(i-(lines.length-1)/2)*47+18} textAnchor="middle" dominantBaseline="middle" fontFamily={FONT} fontWeight={900} fontSize={lines.length>2?27:33} fill={i===lines.length-1?color:C.ink}>{line}</text>)}
  </G>;
+};
+const ACTIONS:Record<string,{d:Key[];b:Key[];walk?:boolean}>={
+cat_lamp:{d:[{at:0,pose:'think',expr:'think'},{at:22,pose:'present',expr:'happy'},{at:55,pose:'celebrate',expr:'grin'},{at:92,pose:'shock',expr:'shock'},{at:128,pose:'point_r',expr:'worried'}],b:[{at:0,pose:'point_l',expr:'smug'},{at:30,pose:'shrug',expr:'smug'},{at:66,pose:'think',expr:'think'},{at:104,pose:'facepalm',expr:'sad'}]},
+online_store:{d:[{at:0,pose:'typing',expr:'happy',talk:true},{at:32,pose:'celebrate',expr:'grin'},{at:68,pose:'think',expr:'think'},{at:100,pose:'shock',expr:'shock'},{at:138,pose:'facepalm',expr:'sad'}],b:[{at:0,pose:'pockets',expr:'smug'},{at:36,pose:'present',expr:'happy'},{at:75,pose:'point_r',expr:'suspicious'},{at:112,pose:'shrug',expr:'worried'}],walk:true},
+shipping_box:{d:[{at:0,pose:'carry',expr:'worried'},{at:28,pose:'think',expr:'think'},{at:60,pose:'point_r',expr:'angry'},{at:96,pose:'shrug',expr:'sad'},{at:132,pose:'pockets',expr:'tired'}],b:[{at:0,pose:'present',expr:'neutral'},{at:34,pose:'point_l',expr:'smug'},{at:72,pose:'pockets',expr:'smug'},{at:112,pose:'wave',expr:'happy'}]},
+credit_card:{d:[{at:0,pose:'present',expr:'happy'},{at:28,pose:'think',expr:'think'},{at:56,pose:'shock',expr:'shock'},{at:88,pose:'facepalm',expr:'sad'},{at:126,pose:'shrug',expr:'worried'}],b:[{at:0,pose:'think',expr:'think'},{at:34,pose:'point_r',expr:'suspicious'},{at:70,pose:'shrug',expr:'smug'},{at:108,pose:'facepalm',expr:'sad'}]},
+phone_ad:{d:[{at:0,pose:'typing',expr:'happy'},{at:30,pose:'point_up',expr:'happy'},{at:60,pose:'think',expr:'worried'},{at:92,pose:'panic',expr:'scream'},{at:128,pose:'facepalm',expr:'sad'}],b:[{at:0,pose:'pockets',expr:'smug'},{at:38,pose:'think',expr:'think'},{at:76,pose:'shock',expr:'shock'},{at:112,pose:'shrug',expr:'worried'}],walk:true},
+ad_dashboard:{d:[{at:0,pose:'think',expr:'think'},{at:30,pose:'point_r',expr:'suspicious'},{at:60,pose:'shock',expr:'shock'},{at:94,pose:'facepalm',expr:'sad'},{at:130,pose:'panic',expr:'worried'}],b:[{at:0,pose:'typing',expr:'neutral'},{at:34,pose:'present',expr:'neutral'},{at:70,pose:'shrug',expr:'smug'},{at:108,pose:'point_l',expr:'suspicious'}]},
+warehouse:{d:[{at:0,pose:'shrug',expr:'worried'},{at:30,pose:'point_r',expr:'angry'},{at:64,pose:'present',expr:'angry'},{at:98,pose:'facepalm',expr:'sad'},{at:132,pose:'pockets',expr:'tired'}],b:[{at:0,pose:'celebrate',expr:'grin'},{at:35,pose:'pockets',expr:'smug'},{at:72,pose:'wave',expr:'happy'},{at:112,pose:'shrug',expr:'smug'}]},
+returns_box:{d:[{at:0,pose:'shock',expr:'shock'},{at:24,pose:'facepalm',expr:'sad'},{at:56,pose:'panic',expr:'worried'},{at:90,pose:'point_r',expr:'angry'},{at:126,pose:'shrug',expr:'tired'}],b:[{at:0,pose:'think',expr:'worried'},{at:30,pose:'point_l',expr:'suspicious'},{at:68,pose:'facepalm',expr:'sad'},{at:106,pose:'pockets',expr:'tired'}],walk:true},
+calculator:{d:[{at:0,pose:'think',expr:'think'},{at:32,pose:'typing',expr:'think'},{at:66,pose:'shock',expr:'shock'},{at:98,pose:'point_up',expr:'angry'},{at:132,pose:'present',expr:'worried'}],b:[{at:0,pose:'think',expr:'think'},{at:34,pose:'typing',expr:'neutral'},{at:72,pose:'point_r',expr:'suspicious'},{at:110,pose:'shrug',expr:'smug'}]},
+product_search:{d:[{at:0,pose:'pockets',expr:'suspicious'},{at:30,pose:'point_r',expr:'suspicious'},{at:62,pose:'think',expr:'worried'},{at:94,pose:'facepalm',expr:'sad'},{at:128,pose:'shrug',expr:'tired'}],b:[{at:0,pose:'present',expr:'neutral'},{at:34,pose:'point_l',expr:'think'},{at:70,pose:'shrug',expr:'smug'},{at:108,pose:'wave',expr:'happy'}]},
+closed_laptop:{d:[{at:0,pose:'typing',expr:'tired'},{at:28,pose:'facepalm',expr:'sad'},{at:62,pose:'carry',expr:'angry'},{at:94,pose:'pockets',expr:'tired'},{at:130,pose:'point_up',expr:'worried'}],b:[{at:0,pose:'think',expr:'think'},{at:32,pose:'shrug',expr:'worried'},{at:68,pose:'present',expr:'neutral'},{at:104,pose:'wave',expr:'happy'}],walk:true}
 };
 const PhotoScene:React.FC<{f:number;id:string;label:string;memetext:string;idx:number;start:number;pose?:string}>=({f,id,label,memetext,idx,start,pose='shock'})=><AbsoluteFill>
  <Svg><rect width={W} height={H} fill={C.bg}/><rect width={W} height={1180} fill={C.wall}/><rect y={1180} width={W} height={740} fill={C.floor}/></Svg>
