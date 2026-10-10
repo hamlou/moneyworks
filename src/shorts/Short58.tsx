@@ -227,7 +227,7 @@ const Body: React.FC = () => {
         <G x={W / 2} y={620} s={0.9 * P(bs('s5'))}>
           <Monitor value="$400/mo" valueColor={C.red} title="CREDIT REPORT" />
         </G>
-        <G x={W / 2} y={1040} s={pop(f, w('s5', 'frowns'))}>
+        <G x={W / 2} y={1040} s={pop(f, w('s5', 'flags'))}>
           <Stamp text="WHOSE IS THIS?" color={C.red} size={38} />
         </G>
       </Svg>
@@ -309,29 +309,19 @@ const Body: React.FC = () => {
     </AbsoluteFill>
   ));
 
-  // ============ s11: the repossession letter arrives ============
+  // ============ s11: the repossession letter + the scary math (merged, low point) ============
   scene(A('s11'), () => (
     <AbsoluteFill>
       <Room />
       <Svg>
-        <Dave f={f} x={330} y={1500} s={1.2} keys={[{at: 0, pose: 'think', expr: 'worried', look: 0.3}]} />
-        <G x={720} y={680} s={0.9 * P(bs('s11'))}>
-          <Paper id="s11paper" text={'REPO\nNOTICE'} reveal={1} color={C.red} w={440} h={300} size={64} />
+        <G x={W / 2} y={320} s={pop(f, bs('s11'))}>
+          <Stamp text="REPOSSESSION" color={C.red} size={44} />
         </G>
-      </Svg>
-    </AbsoluteFill>
-  ));
-
-  // ============ s12: owe $15k, sells for $8k, Dave could owe $7k more ============
-  scene(A('s12'), () => (
-    <AbsoluteFill>
-      <Room />
-      <Svg>
-        <G x={W / 2} y={720} s={0.95 * P(bs('s12'))}>
+        <G x={W / 2} y={820} s={0.95 * P(bs('s11') + 10)}>
           <Napkin lines={[
             {t: 'owe $15,000', c: C.ink, on: true},
-            {t: '- sells $8,000', c: C.red, on: f >= w('s12', 'sells')},
-            {t: 'gap: $7,000', c: C.red, on: f >= w('s12', 'thousand', 1)},
+            {t: '- sell $8,000', c: C.red, on: f >= w('s11', 'sell')},
+            {t: 'gap: $7,000', c: C.red, on: f >= w('s11', 'thousand', 1)},
           ]} />
         </G>
         <Dave f={f} x={W / 2} y={1660} s={1.1} keys={[{at: 0, pose: 'shock', expr: 'shock', look: 0}]} />
@@ -339,43 +329,43 @@ const Body: React.FC = () => {
     </AbsoluteFill>
   ));
 
-  // ============ s13: Dave and Bob make a plan ============
-  scene(A('s13'), () => (
+  // ============ s12: Dave and Bob make a plan ============
+  scene(A('s12'), () => (
     <AbsoluteFill>
       <Room />
       <Svg>
         <Dave f={f} x={360} y={1460} s={1.25} keys={[{at: 0, pose: 'talk', expr: 'neutral', look: 0.3}]} />
         <Bob f={f} x={720} y={1460} s={1.25} flip keys={[{at: 0, pose: 'thumbs', expr: 'happy', look: -0.3}]} />
-        <G x={W / 2} y={760} s={0.85 * P(bs('s13'))}>
+        <G x={W / 2} y={760} s={0.85 * P(bs('s12'))}>
           <Bubble text="sell it myself,\ncover the rest" size={34} bg="#fff" />
         </G>
       </Svg>
     </AbsoluteFill>
   ));
 
-  // ============ s14: loan closes, damage stops at $1,200, the $7k gap never happens ============
-  scene(A('s14'), () => (
+  // ============ s13: loan closes, damage stops at $1,200, the $7k gap never happens ============
+  scene(A('s13'), () => (
     <AbsoluteFill>
       <Room />
       <Svg>
         <Dave f={f} x={W / 2} y={1480} s={1.4} keys={[{at: 0, pose: 'celebrate', expr: 'grin', look: 0}]} />
-        <G x={W / 2} y={600} s={0.9 * P(bs('s14'))}>
+        <G x={W / 2} y={600} s={0.9 * P(bs('s13'))}>
           <Card top="LOAN CLOSED" big="$1,200" color={C.green} />
         </G>
-        <G x={W / 2} y={260} s={pop(f, w('s14', 'happens'))}>
+        <G x={W / 2} y={260} s={pop(f, w('s13', 'happens'))}>
           <Stamp text="$7,000 AVOIDED" color={C.gold} size={48} />
         </G>
       </Svg>
     </AbsoluteFill>
   ));
 
-  // ============ s15: that night, Dave finds the paper he signed ============
-  scene(A('s15'), () => (
+  // ============ s14: that night, Dave finds the paper he signed ============
+  scene(A('s14'), () => (
     <AbsoluteFill>
       <Room />
       <Svg>
         <Dave f={f} x={W / 2} y={1540} s={1.2} keys={[{at: 0, pose: 'think', expr: 'suspicious', look: 0}]} />
-        <G x={W / 2} y={700} s={0.9 * P(bs('s15'))}>
+        <G x={W / 2} y={700} s={0.9 * P(bs('s14'))}>
           <rect x={-320} y={-220} width={640} height={440} rx={18} fill="#fff" stroke={C.ink} strokeWidth={6} />
           {Array.from({length: 7}).map((_, i) => (
             <line key={i} x1={-280} x2={280} y1={-160 + i * 56} y2={-160 + i * 56} stroke="#E6DCC8" strokeWidth={3} />
@@ -385,16 +375,16 @@ const Body: React.FC = () => {
     </AbsoluteFill>
   ));
 
-  // ============ s16: the FTC sentence that predicted everything ============
-  scene(A('s16'), () => (
+  // ============ s15: the FTC sentence that predicted everything ============
+  scene(A('s15'), () => (
     <AbsoluteFill>
       <Room />
       <Svg>
-        <G x={W / 2} y={820} s={0.95 * P(bs('s16'))}>
+        <G x={W / 2} y={820} s={0.95 * P(bs('s15'))}>
           <Paper
-            id="s16quote"
+            id="s15quote"
             text={"If the borrower\ndoesn't pay,\nyou will have to."}
-            reveal={Math.min(1, (f - bs('s16')) / 50)}
+            reveal={Math.min(1, (f - bs('s15')) / 50)}
             color={C.red}
             w={820}
             h={520}
@@ -406,13 +396,13 @@ const Body: React.FC = () => {
     </AbsoluteFill>
   ));
 
-  // ============ s17: the rule — could I pay this whole loan, alone? ============
-  scene(A('s17'), () => (
+  // ============ s16: the rule — could I pay this whole loan, alone? ============
+  scene(A('s16'), () => (
     <AbsoluteFill>
       <Room />
       <Svg>
         <Dave f={f} x={W / 2} y={1500} s={1.3} keys={[{at: 0, pose: 'point_up', expr: 'neutral', look: 0}]} />
-        <G x={W / 2} y={640} s={0.9 * P(bs('s17'))}>
+        <G x={W / 2} y={640} s={0.9 * P(bs('s16'))}>
           <rect x={-380} y={-200} width={760} height={400} rx={26} fill="#fff" stroke={C.ink} strokeWidth={6} />
           <Text y={-100} size={34} color={C.ink}>THE RULE:</Text>
           <Text y={-20} size={40} color={C.navy}>"Could I pay this</Text>
@@ -422,8 +412,8 @@ const Body: React.FC = () => {
     </AbsoluteFill>
   ));
 
-  // ============ s18: if not, find another way to help your friend ============
-  scene(A('s18'), () => (
+  // ============ s17: if not, find another way to help your friend ============
+  scene(A('s17'), () => (
     <AbsoluteFill>
       <Room />
       <Svg>
@@ -433,13 +423,13 @@ const Body: React.FC = () => {
     </AbsoluteFill>
   ));
 
-  // ============ s19: outro / subscribe ============
-  scene(A('s19'), () => (
+  // ============ s18: outro / subscribe ============
+  scene(A('s18'), () => (
     <AbsoluteFill>
       <Room />
       <Svg>
         <Dave f={f} x={W / 2} y={1500} s={1.3} keys={[{at: 0, pose: 'present', expr: 'happy', look: 0}]} />
-        <G x={W / 2} y={620} s={pop(f, bs('s19'))}>
+        <G x={W / 2} y={620} s={pop(f, bs('s18'))}>
           <rect x={-320} y={-130} width={640} height={260} rx={24} fill={C.navy} />
           <Text y={-36} size={56} color="#fff" ls={2}>SUBSCRIBE</Text>
           <Text y={44} size={26} color="#CFE0F0" weight={500}>the only paper we'll ask you to sign</Text>
@@ -448,10 +438,10 @@ const Body: React.FC = () => {
     </AbsoluteFill>
   ));
 
-  // ---- HUD value: 0 -> $1,200 paid -> bumps to worst-case $8,200 -> relief back to final $1,200 ----
+  // ---- HUD value: $1,200 paid -> bumps to worst-case $8,200 -> relief back to final $1,200 ----
   const hudStart = bs('s10');
-  const worst = bs('s12');
-  const relief = bs('s14');
+  const worst = w('s11', 'thousand', 1);
+  const relief = bs('s13');
   const showHud = f >= hudStart;
   const hudValue = f >= relief ? '-$1,200' : f >= worst ? '-$8,200' : '-$1,200';
   const hudBump = f >= relief ? relief : f >= worst ? worst : hudStart;
@@ -473,10 +463,10 @@ const Body: React.FC = () => {
       <Sfx at={bs('s9')} file="cash" />
       <Sfx at={bs('s10')} file="cash" />
       <Sfx at={bs('s11')} file="rip" vol={0.7} />
-      <Sfx at={bs('s12')} file="sting" vol={0.7} />
-      <Sfx at={bs('s14')} file="chime" />
-      <Sfx at={bs('s16')} file="stamp" />
-      <Sfx at={bs('s19')} file="ding" vol={0.8} />
+      <Sfx at={worst} file="sting" vol={0.7} />
+      <Sfx at={bs('s13')} file="chime" />
+      <Sfx at={bs('s15')} file="stamp" />
+      <Sfx at={bs('s18')} file="ding" vol={0.8} />
 
       <Audio src={staticFile('short58/voice.wav')} />
       <Audio
