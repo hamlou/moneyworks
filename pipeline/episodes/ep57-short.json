@@ -11,21 +11,21 @@
     {
       "id": "o1",
       "job": "concept",
-      "text": "You lend your brother three thousand dollars. Then he pays every bill except yours.",
+      "text": "Your brother owes you three thousand dollars—but somehow, every bill gets paid except yours.",
       "rate": "+3%",
       "pause": 0.1
     },
     {
       "id": "o2",
       "job": "stakes",
-      "text": "Car payment: paid. Phone: paid. Credit card: paid. You get nothing. Then your tire blows.",
+      "text": "Then your tire blows, and you realize your own money is keeping you broke.",
       "rate": "+3%",
       "pause": 0.1
     },
     {
       "id": "o3",
       "job": "ending",
-      "text": "By the end, Dave has a plan that gets paid without wrecking the family. It starts with one question.",
+      "text": "Dave gets repaid without destroying the family—but the fix starts with one question nobody asked.",
       "rate": "+3%",
       "pause": 0.15
     },
