@@ -36,17 +36,17 @@ const MemeCard:React.FC<{f:number;at:number;text:string;x?:number;y?:number;colo
  </G>;
 };
 const ACTIONS:Record<string,Key[]> = {
-  cat_lamp:[{at:0,pose:'present',expr:'happy'},{at:72,pose:'think',expr:'think'}],
-  online_store:[{at:0,pose:'typing',expr:'happy',talk:true},{at:54,pose:'shock',expr:'shock',talk:false}],
-  shipping_box:[{at:0,pose:'present',expr:'neutral'},{at:66,pose:'shrug',expr:'worried'}],
-  credit_card:[{at:0,pose:'think',expr:'think'},{at:58,pose:'facepalm',expr:'sad'}],
-  phone_ad:[{at:0,pose:'typing',expr:'neutral',talk:true},{at:70,pose:'think',expr:'worried',talk:false}],
-  ad_dashboard:[{at:0,pose:'think',expr:'suspicious'},{at:62,pose:'shock',expr:'shock'}],
-  warehouse:[{at:0,pose:'present',expr:'neutral'},{at:72,pose:'facepalm',expr:'sad'}],
-  returns_box:[{at:0,pose:'shock',expr:'shock'},{at:58,pose:'facepalm',expr:'sad'}],
-  calculator:[{at:0,pose:'think',expr:'think'},{at:76,pose:'point_r',expr:'worried'}],
-  product_search:[{at:0,pose:'think',expr:'suspicious'},{at:68,pose:'point_r',expr:'worried'}],
-  closed_laptop:[{at:0,pose:'typing',expr:'tired',talk:true},{at:52,pose:'facepalm',expr:'sad',talk:false}]
+  cat_lamp:[{at:0,pose:'think',expr:'curious'},{at:24,pose:'present',expr:'happy'},{at:55,pose:'celebrate',expr:'grin'},{at:88,pose:'shock',expr:'shock'},{at:120,pose:'point_r',expr:'suspicious'}],
+  online_store:[{at:0,pose:'typing',expr:'focused',talk:true},{at:28,pose:'celebrate',expr:'happy'},{at:58,pose:'think',expr:'think'},{at:86,pose:'shock',expr:'shock'},{at:122,pose:'facepalm',expr:'sad'}],
+  shipping_box:[{at:0,pose:'present',expr:'neutral'},{at:26,pose:'think',expr:'think'},{at:54,pose:'point_r',expr:'suspicious'},{at:86,pose:'shrug',expr:'worried'},{at:122,pose:'pockets',expr:'sad'}],
+  credit_card:[{at:0,pose:'present',expr:'neutral'},{at:24,pose:'think',expr:'think'},{at:54,pose:'shock',expr:'shock'},{at:82,pose:'facepalm',expr:'sad'},{at:122,pose:'shrug',expr:'worried'}],
+  phone_ad:[{at:0,pose:'typing',expr:'focused',talk:true},{at:28,pose:'point_r',expr:'happy'},{at:56,pose:'think',expr:'think'},{at:86,pose:'panic',expr:'shock'},{at:120,pose:'facepalm',expr:'sad'}],
+  ad_dashboard:[{at:0,pose:'think',expr:'suspicious'},{at:28,pose:'point_r',expr:'curious'},{at:58,pose:'shock',expr:'shock'},{at:88,pose:'facepalm',expr:'sad'},{at:122,pose:'panic',expr:'worried'}],
+  warehouse:[{at:0,pose:'shrug',expr:'neutral'},{at:28,pose:'point_r',expr:'suspicious'},{at:58,pose:'present',expr:'angry'},{at:88,pose:'facepalm',expr:'sad'},{at:122,pose:'pockets',expr:'tired'}],
+  returns_box:[{at:0,pose:'shock',expr:'shock'},{at:26,pose:'facepalm',expr:'sad'},{at:54,pose:'panic',expr:'worried'},{at:86,pose:'point_r',expr:'angry'},{at:122,pose:'shrug',expr:'tired'}],
+  calculator:[{at:0,pose:'think',expr:'think'},{at:26,pose:'typing',expr:'focused'},{at:56,pose:'shock',expr:'shock'},{at:86,pose:'point_r',expr:'worried'},{at:122,pose:'present',expr:'sad'}],
+  product_search:[{at:0,pose:'pockets',expr:'suspicious'},{at:28,pose:'point_r',expr:'curious'},{at:58,pose:'think',expr:'think'},{at:88,pose:'facepalm',expr:'sad'},{at:122,pose:'shrug',expr:'worried'}],
+  closed_laptop:[{at:0,pose:'typing',expr:'focused',talk:true},{at:24,pose:'facepalm',expr:'sad',talk:false},{at:56,pose:'pockets',expr:'tired'},{at:88,pose:'point_r',expr:'angry'},{at:122,pose:'shrug',expr:'sad'}]
 };
 const PhotoScene:React.FC<{f:number;id:string;label:string;memetext:string;idx:number;start:number;pose?:string}>=({f,id,label,memetext,idx,start,pose='think'})=><AbsoluteFill>
  <Svg><rect width={W} height={H} fill={C.bg}/><rect width={W} height={1180} fill={C.wall}/><rect y={1180} width={W} height={740} fill={C.floor}/></Svg>
