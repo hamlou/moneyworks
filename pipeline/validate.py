@@ -135,8 +135,16 @@ if num.isdigit() and int(num) >= 61:
     used = sorted(set(re.findall(r"['\"`]" + ep + r"/([a-z0-9_]+)\.(?:jpg|png)['\"`]", tsx)))
     if "from '../photo'" not in tsx:
         problems.append("no real photos: import {Pic, PicBg, Slam} from '../photo' (sec 0.10)")
-    if len(used) < 14:
-        problems.append(f"only {len(used)} different real photos used (min 14, sec 0.10)")
+    need = max(14, int(dur // 15))
+    if len(used) < need:
+        problems.append(f"only {len(used)} different real photos used (min {need}: a NEW real photo every 10-15 s, PLAYBOOK_LONG sec 0.11)")
+    commas = [b["id"] for b in spec["beats"] if "," in b["text"]]
+    if commas:
+        problems.append(f"{len(commas)} beats contain a comma ({', '.join(commas[:12])}{'...' if len(commas) > 12 else ''}): owner rule, no commas in the spoken script, join with and/but/so/because or make two sentences (PLAYBOOK_LONG sec 0.11)")
+    memes = len(re.findall(r"<Meme\b", tsx))
+    need_m = int(dur // 40)
+    if memes < need_m:
+        problems.append(f"only {memes} <Meme> beats (min {need_m}: a trend meme about every 30 s, PLAYBOOK_LONG sec 0.11). Name the meme component Meme so this check can count it.")
     if man_p.exists():
         ids = {x["id"]: x for x in json.loads(man_p.read_text(encoding="utf-8"))["photos"]}
         pdir = ROOT / "public" / "photos" / ep

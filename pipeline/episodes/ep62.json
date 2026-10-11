@@ -1,0 +1,72 @@
+{
+ "id": "ep62",
+ "title": "Why Prices End in .99 (And Why It Still Works on You)",
+ "hook_form": "test_on_viewer",
+ "tts": {"rate": "-5%", "hook_rate": "+3%", "lead": 0.08},
+ "spine": {
+  "goal": "Dave wants to prove that the .99 trick does not work on him and win a $20 bet with Bob",
+  "stakes": "He already spent $124.95 while his head said 'about ninety', and he loses $20 and his pride if his brain keeps rounding down",
+  "central_question": "Why does a pricing trick that everybody knows about still work on everybody, and who started it?",
+  "loop_big": "The exact price tag from the first second comes back in the last minute and the viewer (and Dave) finally read it as four hundred dollars",
+  "loop_mid": "Pause-and-guess: how many cents does a one-cent jump from $4.99 to $5.00 feel like to shoppers? (about twenty)",
+  "villain": "The pricing office that picks every ending on purpose, helped by our own left-to-right brain (and by shoppers who punish honest prices)",
+  "low_point": "J.C. Penney tried honest round prices in 2012, lost more than four billion dollars of sales in a year and fired its boss: even killing the penny did not kill .99",
+  "win": "Dave says every price out loud rounded up, keeps a round running total, asks 'would I want it at the round price?', then wins the rematch and gets $40 back"
+ },
+ "youtube": {
+  "title": "Why Prices End in .99 (And Why It Still Works on You)",
+  "hook": "You know $9.99 is ten dollars. Your brain still files it under nine. Here is where that one-penny trick came from, what it really costs, and how Dave finally beat it.",
+  "tags": ["why prices end in 99", "psychological pricing", "left digit effect", "charm pricing explained", "99 cents trick", "jcpenney fair and square", "why gas prices end in 9/10", "pricing psychology", "store tricks", "money explained simply", "dave explains money"]
+ },
+ "sources": [
+  "Thomas & Morwitz, 'Penny Wise and Pound Foolish: The Left-Digit Effect in Price Cognition', Journal of Consumer Research 32(1), 2005",
+  "Lacetera, Pope & Sydnor, 'Heuristic Thinking and Limited Attention in the Car Market', American Economic Review 2012 (22 million used-car sales; ~$150-$210 drops at 10,000-mile marks)",
+  "List, Muir, Pope & Sun, 'Left-Digit Bias at Lyft', Review of Economic Studies 2023 (field experiment, 21 million riders; about half of the demand response happens at dollar boundaries)",
+  "Strulov-Shlain, 'More than a Penny's Worth: Left-Digit Bias and Firm Pricing', Review of Economic Studies 2023 (a 1-cent step from .99 acts like a 15-25 cent increase)",
+  "Levy, Lee, Chen, Kauffman & Bergen, 'Price Points and Price Rigidity', Review of Economics and Statistics 2011 (9 is the most frequent price ending)",
+  "Wadhwa & Zhang, 'This Number Just Feels Right', Journal of Consumer Research 2015 (champagne at $40.00 vs $39.72 / $40.28)",
+  "U.S. Patent 221,360 (4 Nov 1879), James and John Ritty, 'Cash Register and Indicator' (Ritty's Incorruptible Cashier); Smithsonian NMAH",
+  "Cecil Adams, The Straight Dope, 'Why do prices end in .99?' (Melville Stone / cash register legends; microfilm check of Chicago Daily News ads)",
+  "Apple press release, 5 May 2003: 'iTunes Music Store Sells Over One Million Songs in First Week' (99 cents a song)",
+  "Los Angeles Times interview with Dave Gold (2003) and obituary (April 2013), founder of 99 Cents Only Stores",
+  "NACS, 'Why Gas Is Priced Using Fractions of a Penny'; EIA: U.S. motor gasoline consumption 8.9 million barrels a day in 2025 (about 136 billion gallons x $0.009 = about $1.2 billion)",
+  "U.S. Mint / Treasury: last circulating pennies struck in Philadelphia, 12 Nov 2025 (cost about 3.7 cents each); Common Cents Act passed by Congress, Sept 2026 (cash rounding to the nearest five cents; cards not rounded)",
+  "J. C. Penney Company Form 10-K and results for fiscal 2012: net sales $12.985 billion, down 24.8% from $17.26 billion; Ron Johnson dismissed 8 April 2013"
+ ],
+ "beats": [
+  {"id": "o1", "job": "concept", "pause": 0.2, "text": "Look at this price tag for one second and be honest, your brain just filed that under three hundred something, didn't it?"},
+  {"id": "o2", "job": "proof", "pause": 0.2, "text": "It's four hundred dollars, and stores have run that one penny trick on you for over a century."},
+  {"id": "o3", "job": "stakes", "pause": 0.25, "rate": "+1%", "text": "It works so well that one giant store that quit it, along with its fake sales, lost four billion dollars in a year."},
+  {"id": "o4", "job": "ending", "pause": 0.3, "text": "Stick with me, because in ten minutes you'll see this exact tag again, and your brain will finally read it right."},
+
+  {"id": "c1a", "chapter": "Dave's Twenty Dollar Bet", "pause": 0.4, "text": "So meet Dave, who just walked out of a store feeling very smart, because he's sure this stuff only works on other people."},
+  {"id": "c1b", "pause": 0.4, "rate": "+5%", "pitch": "+3Hz", "text": "Dave goes: please, I know nine ninety nine is ten bucks, I'm not a child."},
+  {"id": "c1c", "pause": 0.4, "text": "His neighbor Bob hears that, grins, and says: twenty dollars says you can't tell me what you just spent, without looking at the receipt."},
+  {"id": "c1d", "pause": 0.5, "text": "Dave thinks about the headphones, the lamp, the frying pan and the snacks, and says: easy, about ninety bucks."},
+  {"id": "c1e", "pause": 0.8, "rate": "-12%", "text": "The receipt says one hundred twenty four dollars and ninety five cents."},
+  {"id": "c1f", "pause": 0.6, "text": "Dave didn't forget anything. His brain just kept the first digit of every price and quietly threw the rest away, like a guy who reads the first word of your text and replies okay."},
+  {"id": "c1g", "pause": 0.5, "text": "And before you laugh at Dave, here's a real shelf tag from a real store. Is your gut saying three bucks, or four?"},
+  {"id": "c1h", "pause": 0.9, "rate": "+4%", "text": "Now try three at once. You've got three seconds, so add these up in your head, and no calculator."},
+  {"id": "c1i", "pause": 0.5, "text": "If you landed somewhere around eighty, congratulations, you're Dave, because the real answer is three cents short of a hundred."},
+  {"id": "c1j", "pause": 0.8, "text": "So Dave is out twenty dollars, and he wants to know how a trick this dumb beat him. The answer starts in a bar, in eighteen seventy nine."},
+
+  {"id": "c2a", "chapter": "The Bartender's Machine", "pause": 0.4, "text": "Dave looks it up, and the first story he finds is about a saloon owner in Dayton, Ohio, named James Ritty."},
+  {"id": "c2b", "pause": 0.5, "text": "Ritty was sure his bartenders were pocketing the cash, so in eighteen seventy nine he patented a machine he called the Incorruptible Cashier. You know it as the cash register."},
+  {"id": "c2c", "pause": 0.5, "text": "And here's the legend. If your drink costs a round dollar, the bartender can slide that bill straight into his pocket, but if it costs ninety nine cents, he has to open the register to get your penny, and the sale gets recorded."},
+  {"id": "c2d", "pause": 0.6, "text": "It's a great story, and it's all over the internet, but nobody has ever found a shop owner from back then saying that's why he did it."},
+  {"id": "c2e", "pause": 0.4, "text": "The second story stars a Chicago newspaper man named Melville Stone, who sold his paper for one penny in the eighteen seventies, when almost nobody in town carried pennies."},
+  {"id": "c2f", "pause": 0.5, "text": "So the tale goes that he talked the local shops into pricing things a cent under the dollar, just so you'd get a penny back and spend it on his paper."},
+  {"id": "c2g", "pause": 0.6, "text": "Cute, right? Except a columnist who dug through that paper's old ads on microfilm found that prices ending in nine were rare until well into the eighteen eighties."},
+  {"id": "c2h", "pause": 0.5, "rate": "+5%", "pitch": "+3Hz", "text": "Dave goes: hold on, so I lost twenty bucks to a rumor?"},
+  {"id": "c2i", "pause": 0.8, "text": "Pretty much. Nobody really knows who started it. What we do know is why it never stopped, and that part happens inside your head."},
+
+  {"id": "c3a", "chapter": "One Second In Your Brain", "pause": 0.4, "text": "Dave still doesn't buy it, so let's test your brain on something that isn't even a price. Look at the odometer on this used truck."},
+  {"id": "c3b", "pause": 0.5, "text": "Ninety nine thousand miles feels a lot younger than a hundred thousand, doesn't it, even though that's one long weekend of driving."},
+  {"id": "c3c", "pause": 0.6, "text": "Researchers went through millions of used car sales, and a car sold just before a big round mileage number went for about two hundred dollars more than the same kind of car just after it."},
+  {"id": "c3d", "pause": 0.6, "text": "So in plain English: you read from left to right, and your brain decides how big a number is before your eyes even reach the end. Scientists call it the left digit effect."},
+  {"id": "c3e", "pause": 0.5, "text": "Two marketing professors pinned it down in two thousand five. A price of two ninety nine felt clearly cheaper to people than three dollars, but three fifty nine felt exactly like three sixty, because the first digit didn't move."},
+  {"id": "c3f", "pause": 0.7, "pitch": "+2Hz", "text": "Dave does this with everything, by the way. He is thirty nine years and eleven months old, and he tells people he's thirty something."},
+  {"id": "c3g", "pause": 0.5, "rate": "+4%", "text": "Now guess with me. When a price climbs one single cent, from four ninety nine to five dollars, how many cents does that feel like to shoppers?"},
+  {"id": "c3h", "pause": 0.9, "text": "Put your number in the comments. The answer is coming in a minute, and it's bigger than you think."}
+ ]
+}

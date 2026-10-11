@@ -1,5 +1,15 @@
 # Brief for parallel episode builders (ep61+ : v4 = Human hook + mixed media + 10 min)
 
+## >>> v5 ADDENDUM (11 Oct 2026) — NEWEST, overrides everything below that conflicts <<<
+
+You build LONG-FORM episodes. Your playbook is **`PLAYBOOK_LONG.md`** (every "PLAYBOOK §x" below means that file). `PLAYBOOK_SHORTS.md` is for vertical Shorts only: do not apply its numbers here. Full spec: `PLAYBOOK_LONG.md` §0.11.
+
+1. **No commas in the spoken script.** Zero `,` in any beat `text`. Flowing sentences with and / and also / but / so / because / which means, or two full sentences ("the bonus is free and also the house is free", never "bonus, free, house, free"). No dashes/semicolons/colons as a cheat, no 1–3-word fragments.
+2. **A NEW real photo every 10–15 s** for the whole video → about 45–60 different photos (the "≥ 14" below is obsolete). Each ID used once, matched to the exact line, animated, a drawn character interacting.
+3. **A trend meme about every 30 s** → about 20 per episode. Recognizable trending meme FORMATS recreated with our drawn cast and/or a free-licence photo (never a downloaded meme image or film/TV still), legible ≥ 2.5 s, as the punchline of the line just spoken. Put the component in your own episode file and **name it `Meme`** (the validator counts `<Meme`).
+4. Report: photo count, meme count, longest gap between two photos (≤ 15 s) and between two memes (≤ 40 s).
+5. Thumbnails: builders DO write `src/v2/tNN.tsx` (`V2EpNN`) and run `thumbs.yml` (the "LEAD makes them" notes below are obsolete).
+
 ## >>> v4 ADDENDUM (10 Oct 2026) — READ FIRST, it overrides anything below that conflicts <<<
 
 The owner looked at the analytics: **viewers leave in the first 6 seconds**. His words: "the hook sounds really robotic and doesn't attach the viewers", "the videos are good but feel robotic, people must focus so much to understand", "make the viewer ENJOY staying the WHOLE video, not just throwing information", "add real pictures, mixed with the drawings, with good animation", "10 minute videos at least". And four hook rules, in his words:

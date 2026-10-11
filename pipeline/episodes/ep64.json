@@ -1,0 +1,563 @@
+{
+ "id": "ep64",
+ "title": "Why Your Friends Are Making You Broke",
+ "hook_form": "be_honest",
+ "tts": {
+  "rate": "-5%",
+  "hook_rate": "+3%",
+  "lead": 0.08
+ },
+ "spine": {
+  "goal": "Dave wants to keep going out with his five friends while only paying for what he actually orders ($21 for a burger and tap water) instead of an even share of everyone's dinner ($79).",
+  "stakes": "Every even split costs him $58 ($79 - $21). At two dinners a month that is 24 x $58 = $1,392, about $1,400 a year, plus a $640 birthday trip he cannot afford: $2,032 in a year.",
+  "central_question": "If nobody at the table is a bad person, why does the split bill always come out so big, and can Dave stop paying for it without losing his friends?",
+  "loop_big": "Promised in the hook (o4): Dave sits at the same table with the same friends and pays $21 because of one small sentence -> paid at c10c-c10i (the separate-checks sentence, $21, about $1,400 a year back, nobody left).",
+  "loop_mid": "Pause-and-guess at c3e (~22%): how much more did the split tables spend than the pay-your-own tables? -> paid at c4g: about 36% more (Gneezy, Haruvy and Yafe 2004). Second interactive at c8d: pick one, did the friends who got turned down feel hurt or barely care? -> c8f.",
+  "villain": "Not Trevor: the split-the-bill rule itself (the unscrupulous diner's dilemma). It works like a hidden five-sixths coupon on whatever you order, pays everyone to order more and sends the bill to whoever ordered least; the restaurant sells about a third more. Revealed c4i-c4j (~40-45%).",
+  "low_point": "c6k-c7f (~62-72%): Dave says yes to a $640 Las Vegas birthday on his credit card, the damage passes $2,000, the sneaky fixes fail and hiding costs him the friends. He is stuck between keeping his friends and keeping his money.",
+  "win": "c8-c10: the Givi and Kirk study shows the awkward moment is mostly in his own head. Education, not advice: (1) say it before anyone orders, (2) one sentence with no apology ('I'm doing separate checks tonight because I'm on a budget this month'), (3) offer a cheaper yes for big plans, and let an app do the math. Same table: Dave pays $21, Bob and two others join him, Trevor orders chicken tenders. Damage Meter flips to SAVED about $1,400 a year.",
+  "damage_meter": "DAVE'S DAMAGE: -$1,400/YR on the stakes beat (o2); story restarts at $0 in c1a; -$58 at c1k; -$1,392/yr at c2c; -$2,032 at c6k; flips to green SAVED +$1,400/YR at c10i.",
+  "running_gag": "Trevor's lobster: o1 (the lobster you never tasted), c1d (Trevor orders it), c1k (most of it went into Trevor), c2d (one lobster claw at a time), c4a-c4c (the $48 lobster that costs Trevor $8), c7c (Dave orders it himself), c9e (he never mentions the lobster), pays off at c10f-c10g (Trevor orders chicken tenders: he only loves lobster at one sixth of the price) and c10k."
+ },
+ "sources": [
+  "Dramatized story: Dave, Bob, Trevor, the steakhouse, the $474 bill, the $48 lobster, the $640 Las Vegas weekend, the cookout and every line of dialogue are illustrative. Math: $474 / 6 = $79 each; Dave's burger and water with tax and tip $21; $79 - $21 = $58; two dinners a month = 24 a year; 24 x $58 = $1,392 (about $1,400); $1,392 + $640 = $2,032; lobster $48 / 6 = $8, the other $40 (five sixths) is paid by the other five diners.",
+  "Uri Gneezy, Ernan Haruvy and Hadas Yafe, 'The Inefficiency of Splitting the Bill', The Economic Journal 114 (April 2004), pp. 265-280 (rady.ucsd.edu/_files/faculty-research/uri-gneezy/splitting-bill.pdf): field experiment at a popular restaurant near the Technion campus (Haifa, Israel) at lunchtime; six subjects per table (three men, three women), chosen so they did not know each other; treatments: individual pay, even split, free meal (plus a 'pay one sixth' control). Mean cost of meal per subject (Table 1): individual pay 37.3 NIS, even split 50.9 NIS, free meal 82.3 NIS. Derived: 50.9 / 37.3 = 1.365, about 36% more ('about a third more'); 82.3 / 37.3 = 2.2 ('more than double'). 'When asked to choose, prior to ordering, whether to split the bill or pay individually, 80% choose the latter.'",
+  "Natalie S. Glance and Bernardo A. Huberman, 'The Dynamics of Social Dilemmas', Scientific American, March 1994, pp. 76-81: describes the 'unscrupulous diner's dilemma' (cited as the origin of the term by Gneezy, Haruvy and Yafe 2004).",
+  "Sumit Agarwal (National University of Singapore), Vyacheslav Mikhed (Federal Reserve Bank of Philadelphia) and Barry Scholnick (University of Alberta), 'Peers' Income and Financial Distress: Evidence from Lottery Winners and Neighboring Bankruptcies', Federal Reserve Bank of Philadelphia Working Paper 18-22 (October 2018); published in The Review of Financial Studies 33(1), 2020: lottery winners and bankruptcy filers in one Canadian province, neighbors = six-digit postal codes with a median of 13 households. 'A lottery win equal to the median annual income in our sample (C$29,229) increases bankruptcies of neighbors in the three years after the win by ... a 6.59% increase relative to the average bankruptcy rate.' The size of the neighbor's win is related to the value of more visible assets (house, car) but not less visible assets of the neighboring bankruptcy filers.",
+  "'Keeping Up with the Joneses', comic strip by Arthur R. 'Pop' Momand: debuted March 31, 1913 in The New York Globe and ran until 1938; by Momand's own account it was inspired by his and his wife's experience living beyond their means in Cedarhurst, New York (Wikipedia 'Keeping Up with the Joneses (comics)' and 'Pop Momand', citing contemporary newspaper accounts; Lambiek Comiclopedia).",
+  "LendingTree, 'Friends and Money Report' (2025, survey of about 2,000 U.S. consumers, lendingtree.com/credit-cards/study/friends-money-report): 31% of Americans say they have felt pressure to keep up with their friends' spending habits (41% of millennials); 69% have declined a social outing because it was too expensive; 36% have lost a friendship over money.",
+  "Julian Givi (West Virginia University) and Colleen P. Kirk (New York Institute of Technology), 'Saying No: The Negative Ramifications From Invitation Declines Are Less Severe Than We Think', Journal of Personality and Social Psychology (published online December 11, 2023; American Psychological Association press release the same day): in a pilot study 77% of respondents said they had accepted an invitation to an activity they did not want to attend because they worried about the consequences of declining; five experiments with more than 2,000 participants found that invitees overestimate the negative consequences of declining and overestimate how much the inviter focuses on the decline itself rather than on the thoughts behind it.",
+  "Venmo: founded in 2009 by Andrew Kortina and Iqram Magdon-Ismail, who met as freshman roommates at the University of Pennsylvania; widely told origin story (e.g. The Hustle, 'The Story of How Venmo Was Started'; The Daily Pennsylvanian, April 2013): Magdon-Ismail forgot his wallet on a visit and paid Kortina back by check. Presented in the script as 'the story goes'.",
+  "Callbacks: episode 63 (Dave cut his phone bill; teaser 'let's just split it evenly'), episode 57 (lending money to family). Overlap avoided: ep31, ep38, ep24, ep50, ep57."
+ ],
+ "youtube": {
+  "title": "Why Your Friends Are Making You Broke",
+  "alt_titles": [
+   "Why You Always Pay for Your Friend's Lobster",
+   "\"Let's Just Split It\" Is Costing You $1,400 a Year"
+  ],
+  "hook": "You ordered the burger, your friend ordered the lobster, and somebody said 'let's just split it'. Why that costs Dave $1,400 a year, and the one sentence that fixed it.",
+  "tags": [
+   "splitting the bill",
+   "friends and money",
+   "split the check evenly",
+   "why am i always broke",
+   "keeping up with the joneses",
+   "separate checks",
+   "how to say no to friends",
+   "peer pressure spending",
+   "save money eating out",
+   "money explained simply",
+   "dave explains money"
+  ],
+  "hashtags": [
+   "#personalfinance",
+   "#friends",
+   "#moneytips"
+  ],
+  "pinned": "Split evenly or separate checks: which team are you on? Reply SPLIT or SEPARATE."
+ },
+ "beats": [
+  {
+   "id": "o1",
+   "job": "concept",
+   "text": "Last weekend somebody said let's just split it evenly and you smiled and paid for a lobster you never even tasted.",
+   "pause": 0.2
+  },
+  {
+   "id": "o2",
+   "job": "stakes",
+   "text": "For a guy like Dave that friendly little sentence costs about fourteen hundred dollars a year.",
+   "pause": 0.2
+  },
+  {
+   "id": "o3",
+   "job": "proof",
+   "text": "Economists tested it in a real restaurant and the tables that split the bill spent a third more.",
+   "pause": 0.2
+  },
+  {
+   "id": "o4",
+   "job": "ending",
+   "text": "But ten minutes from now Dave sits at this same table with these same friends and pays twenty one dollars because of one small sentence.",
+   "pause": 0.3,
+   "rate": "+0%"
+  },
+  {
+   "id": "c1a",
+   "chapter": "Five Expensive Words",
+   "text": "It starts on a Friday night because Dave just cut his phone bill and his friends want to celebrate.",
+   "pause": 0.4
+  },
+  {
+   "id": "c1b",
+   "text": "They pick a steakhouse where the waiter introduces himself by name and you know that is never a cheap sign.",
+   "pause": 0.45
+  },
+  {
+   "id": "c1c",
+   "text": "Dave is being careful with money this month so he orders the burger and a glass of tap water.",
+   "pause": 0.45
+  },
+  {
+   "id": "c1d",
+   "text": "Then his buddy Trevor orders the lobster and a cocktail and then one more cocktail for safety.",
+   "pause": 0.45,
+   "rate": "+3%"
+  },
+  {
+   "id": "c1e",
+   "text": "Bob gets the biggest steak on the menu and somebody orders wine for the whole table.",
+   "pause": 0.5
+  },
+  {
+   "id": "c1f",
+   "text": "Two hours later the bill lands in the middle of the table like a tiny leather bomb.",
+   "pause": 0.45
+  },
+  {
+   "id": "c1g",
+   "text": "The total is four hundred seventy four dollars and then Trevor says the five most expensive words in friendship.",
+   "pause": 0.5,
+   "rate": "-8%"
+  },
+  {
+   "id": "c1h",
+   "text": "Let's just split it evenly.",
+   "pause": 0.6,
+   "rate": "-12%",
+   "pitch": "+3Hz"
+  },
+  {
+   "id": "c1i",
+   "text": "So everybody owes seventy nine dollars and that includes Dave whose burger and water came to twenty one.",
+   "pause": 0.5
+  },
+  {
+   "id": "c1j",
+   "text": "Be honest because you know what he did next and you have done it too. He smiled and he tapped his card.",
+   "pause": 0.5
+  },
+  {
+   "id": "c1k",
+   "text": "He just paid fifty eight dollars for food that went into other people and mostly into Trevor.",
+   "pause": 0.55,
+   "pitch": "-2Hz"
+  },
+  {
+   "id": "c1l",
+   "text": "On the drive home Dave wonders how many times this has happened and the answer is going to hurt.",
+   "pause": 0.9
+  },
+  {
+   "id": "c2a",
+   "chapter": "The Lobster Math",
+   "text": "At home Dave opens his banking app and scrolls back through a whole year of dinners with these friends.",
+   "pause": 0.45
+  },
+  {
+   "id": "c2b",
+   "text": "They go out twice a month which means twenty four dinners a year and Dave is always the burger guy.",
+   "pause": 0.45
+  },
+  {
+   "id": "c2c",
+   "text": "So he multiplies fifty eight dollars by twenty four and his calculator shows one thousand three hundred ninety two.",
+   "pause": 0.5,
+   "rate": "-8%"
+  },
+  {
+   "id": "c2d",
+   "text": "That is a real vacation and Dave gave it away one lobster claw at a time.",
+   "pause": 0.55
+  },
+  {
+   "id": "c2e",
+   "text": "And you have probably done the same thing at your own table because speaking up feels worse than paying.",
+   "pause": 0.5
+  },
+  {
+   "id": "c2h",
+   "text": "But your friends are not bad people and neither are Dave's. So why is the bill always so big? It turns out somebody already ran that experiment.",
+   "pause": 0.9
+  },
+  {
+   "id": "c3a",
+   "chapter": "A Restaurant In Haifa",
+   "text": "Dave types why are split bills so expensive into his phone and he lands on a real study from Israel.",
+   "pause": 0.45
+  },
+  {
+   "id": "c3b",
+   "text": "An economist named Uri Gneezy and two colleagues invited students to lunch at a popular restaurant near the Technion which is a big university in Haifa.",
+   "pause": 0.5
+  },
+  {
+   "id": "c3c",
+   "text": "Every table sat six strangers and each table was quietly given a different rule for paying.",
+   "pause": 0.45
+  },
+  {
+   "id": "c3d",
+   "text": "At some tables everybody paid for their own food and at others the bill was split evenly six ways.",
+   "pause": 0.5
+  },
+  {
+   "id": "c3e",
+   "text": "So here is a quick guess for you. How much more did the split tables spend than the pay your own tables? Lock in your number because the answer is coming.",
+   "pause": 0.6,
+   "rate": "-2%"
+  },
+  {
+   "id": "c3g",
+   "text": "There was even a third kind of table where lunch was free and those tables spent more than double which will not shock you if you have ever stood near an open bar.",
+   "pause": 0.5,
+   "rate": "+3%"
+  },
+  {
+   "id": "c3h",
+   "text": "But the split tables are the strange ones because those people were paying real money. So why did they order more?",
+   "pause": 0.9,
+   "pitch": "+3Hz"
+  },
+  {
+   "id": "c4a",
+   "chapter": "The Secret Coupon",
+   "text": "Dave grabs a napkin and works it out with Trevor's lobster which cost forty eight dollars.",
+   "pause": 0.45
+  },
+  {
+   "id": "c4b",
+   "text": "If Trevor pays for his own food then that lobster costs him forty eight dollars and he probably orders the chicken.",
+   "pause": 0.5
+  },
+  {
+   "id": "c4c",
+   "text": "But when six people split the bill that same lobster costs Trevor only eight dollars and his friends get mailed the other forty.",
+   "pause": 0.5,
+   "rate": "-8%"
+  },
+  {
+   "id": "c4d",
+   "text": "So a split bill is a secret coupon that takes five sixths off anything you order while your friends cover the rest.",
+   "pause": 0.5
+  },
+  {
+   "id": "c4f",
+   "text": "Economists call this the unscrupulous diner's dilemma and two researchers described it in Scientific American back in nineteen ninety four.",
+   "pause": 0.5
+  },
+  {
+   "id": "c4g",
+   "text": "Now here is the answer to your guess. In that restaurant in Haifa the split tables spent about thirty six percent more per person.",
+   "pause": 0.6,
+   "rate": "-11%"
+  },
+  {
+   "id": "c4i",
+   "text": "So the villain of this story is not Trevor. The villain is the rule itself because it pays everyone to order more and then it sends the bill to whoever ordered least.",
+   "pause": 0.6,
+   "pitch": "-2Hz"
+  },
+  {
+   "id": "c4j",
+   "text": "And guess who loves that rule. The restaurant just sold you a third more food without printing a single coupon.",
+   "pause": 0.5
+  },
+  {
+   "id": "c4k",
+   "text": "Dave feels better about Trevor now. But then he reads one more line of that study and it makes him feel much worse.",
+   "pause": 0.9
+  },
+  {
+   "id": "c5a",
+   "chapter": "Everybody Hated It",
+   "text": "Before lunch the researchers asked some of the tables how they would rather pay.",
+   "pause": 0.45
+  },
+  {
+   "id": "c5b",
+   "text": "About eight out of ten people picked separate bills which means almost everybody wanted to pay for their own food.",
+   "pause": 0.5,
+   "rate": "-9%"
+  },
+  {
+   "id": "c5c",
+   "text": "So think about your last group dinner. Most of your friends were probably sitting there hating the split too.",
+   "pause": 0.5
+  },
+  {
+   "id": "c5d",
+   "text": "Six people were all thinking the exact same thing and all six of them smiled and said sure.",
+   "pause": 0.5
+  },
+  {
+   "id": "c5f",
+   "text": "So why does nobody say it out loud? Because you would rather lose fifty eight dollars than look cheap for five seconds.",
+   "pause": 0.55
+  },
+  {
+   "id": "c5g",
+   "text": "And you and Dave are about to learn that dinner is only the small version of this problem.",
+   "pause": 0.9
+  },
+  {
+   "id": "c6a",
+   "chapter": "The Neighbor's Lottery Ticket",
+   "text": "That same week the group chat lights up because Trevor is turning thirty and he wants a birthday weekend in Las Vegas.",
+   "pause": 0.45
+  },
+  {
+   "id": "c6b",
+   "text": "It costs six hundred forty dollars each and you can guess what happens next because four thumbs up pop into the chat in under a minute.",
+   "pause": 0.45
+  },
+  {
+   "id": "c6d",
+   "text": "And here is the wild part because your friends do not only split your bills. They quietly decide what feels normal to you.",
+   "pause": 0.5
+  },
+  {
+   "id": "c6e",
+   "text": "Economists including one at the Federal Reserve Bank of Philadelphia studied lottery winners in Canada and then they watched the neighbors.",
+   "pause": 0.5
+  },
+  {
+   "id": "c6f",
+   "text": "When one house on a tiny street won a prize the size of a year's pay the bankruptcies among the close neighbors went up by about six and a half percent.",
+   "pause": 0.55,
+   "rate": "-9%"
+  },
+  {
+   "id": "c6h",
+   "text": "This habit is so old that it has its own comic strip. In nineteen thirteen a cartoonist named Pop Momand started drawing Keeping Up with the Joneses.",
+   "pause": 0.5
+  },
+  {
+   "id": "c6j",
+   "text": "And it never stopped. In a recent LendingTree survey almost a third of Americans said they feel pressure to keep up with how their friends spend.",
+   "pause": 0.5
+  },
+  {
+   "id": "c6k",
+   "text": "So Dave looks at the chat and then at his bank balance and then he types I'm in. Las Vegas goes on his credit card.",
+   "pause": 0.9,
+   "rate": "-8%",
+   "pitch": "-2Hz"
+  },
+  {
+   "id": "c7a",
+   "chapter": "Going Broke Politely",
+   "text": "Now the damage is past two thousand dollars and Dave is going broke so that nobody will think he is broke.",
+   "pause": 0.5
+  },
+  {
+   "id": "c7b",
+   "text": "He tries a sneaky fix first. He shows up late to skip the appetizers and he still pays for the appetizers.",
+   "pause": 0.5
+  },
+  {
+   "id": "c7d",
+   "text": "Then he tries hiding. He says he is busy three weekends in a row and he eats cereal over the sink.",
+   "pause": 0.5
+  },
+  {
+   "id": "c7e",
+   "text": "That saves money but it costs him the friends and you know the friends were the whole point.",
+   "pause": 0.55
+  },
+  {
+   "id": "c7f",
+   "text": "So Dave is stuck. He can keep his friends and lose his money or he can keep his money and lose his friends.",
+   "pause": 0.6,
+   "rate": "-10%",
+   "pitch": "-2Hz"
+  },
+  {
+   "id": "c7g",
+   "text": "And that is when he finds a study about the exact thing you and Dave are both afraid of.",
+   "pause": 0.9
+  },
+  {
+   "id": "c8a",
+   "chapter": "What Friends Really Think",
+   "text": "A professor named Julian Givi at West Virginia University wanted to know what really happens when you say no to a friend.",
+   "pause": 0.45
+  },
+  {
+   "id": "c8b",
+   "text": "First he asked people a simple question and about three out of four admitted they had said yes to an invitation they did not want because they were scared to say no.",
+   "pause": 0.5
+  },
+  {
+   "id": "c8d",
+   "text": "Pick one before I tell you. Did the friends who got turned down feel hurt or did they barely care?",
+   "pause": 0.6,
+   "pitch": "+3Hz"
+  },
+  {
+   "id": "c8e",
+   "text": "Across five experiments the people saying no predicted a disaster. They pictured a friend who was hurt and angry and done with inviting them.",
+   "pause": 0.5
+  },
+  {
+   "id": "c8f",
+   "text": "But the friends on the other side barely cared. They mostly thought about your reasons and not about the fact that you said no.",
+   "pause": 0.5,
+   "rate": "-8%"
+  },
+  {
+   "id": "c8g",
+   "text": "So in plain English the awkward moment you keep paying to avoid is mostly inside your own head.",
+   "pause": 0.55
+  },
+  {
+   "id": "c8h",
+   "text": "Dave reads that twice and says hold on. Have I been paying fourteen hundred dollars a year to dodge a feeling that nobody else is even having?",
+   "pause": 0.5,
+   "pitch": "+3Hz"
+  },
+  {
+   "id": "c8i",
+   "text": "Yes Dave that is exactly what you have been doing.",
+   "pause": 0.9,
+   "rate": "-8%"
+  },
+  {
+   "id": "c9a",
+   "chapter": "The One Sentence",
+   "text": "Quick note that this part is education and not advice. But here is what Dave did in three moves.",
+   "pause": 0.45
+  },
+  {
+   "id": "c9b",
+   "text": "Move one is timing. You say it before anybody orders because after the food arrives it sounds like an accusation.",
+   "pause": 0.5
+  },
+  {
+   "id": "c9c",
+   "text": "Move two is the sentence itself and you will notice it has no apology in it and no speech about money.",
+   "pause": 0.45
+  },
+  {
+   "id": "c9d",
+   "text": "Hey I'm doing separate checks tonight because I'm on a budget this month.",
+   "pause": 0.6,
+   "rate": "-11%"
+  },
+  {
+   "id": "c9e",
+   "text": "Notice what is missing. He never mentions the lobster and he never asks anybody else to change a thing.",
+   "pause": 0.5
+  },
+  {
+   "id": "c9f",
+   "text": "Move three is for the big stuff like Las Vegas. Dave stops saying no and starts offering a cheaper yes.",
+   "pause": 0.5
+  },
+  {
+   "id": "c9g",
+   "text": "He says I can't do Vegas but I will host the birthday cookout and the first round is on me.",
+   "pause": 0.5
+  },
+  {
+   "id": "c9i",
+   "text": "And he lets an app do the math. The story goes that two college roommates started Venmo in two thousand nine after one of them forgot his wallet.",
+   "pause": 0.5
+  },
+  {
+   "id": "c9j",
+   "text": "So Dave has his sentence. Now he has to say it out loud at the scariest place on earth which is a table full of friends.",
+   "pause": 0.9
+  },
+  {
+   "id": "c10a",
+   "chapter": "Same Table New Sentence",
+   "text": "Friday night comes around again and it is the same steakhouse and the same waiter and the same five friends.",
+   "pause": 0.45
+  },
+  {
+   "id": "c10b",
+   "text": "Dave's heart is pounding like he is about to rob the place. The waiter walks over and Dave just says it.",
+   "pause": 0.5
+  },
+  {
+   "id": "c10c",
+   "text": "Hey I'm doing separate checks tonight because I'm on a budget this month.",
+   "pause": 0.6,
+   "rate": "-10%"
+  },
+  {
+   "id": "c10d",
+   "text": "There is one full second of silence. Then Bob puts down his menu and says oh thank goodness me too.",
+   "pause": 0.55
+  },
+  {
+   "id": "c10e",
+   "text": "Then two more friends say the same and it turns out half the table has dreaded that bill for years.",
+   "pause": 0.5,
+   "rate": "+3%"
+  },
+  {
+   "id": "c10f",
+   "text": "And Trevor stares at the menu for a very long time and then he orders the chicken tenders.",
+   "pause": 0.55
+  },
+  {
+   "id": "c10g",
+   "text": "It turns out Trevor only loves lobster at one sixth of the price.",
+   "pause": 0.6,
+   "pitch": "+3Hz"
+  },
+  {
+   "id": "c10h",
+   "text": "The checks arrive and Dave pays twenty one dollars for a burger and a water and he is still sitting with the same five friends.",
+   "pause": 0.55,
+   "rate": "-8%"
+  },
+  {
+   "id": "c10i",
+   "text": "That is fifty eight dollars back tonight and about fourteen hundred dollars back every year and nobody left the group chat.",
+   "pause": 0.5
+  },
+  {
+   "id": "c10j",
+   "text": "To be fair an even split is totally fine when you all ordered about the same or when it is your turn to treat.",
+   "pause": 0.5
+  },
+  {
+   "id": "c10k",
+   "text": "It only gets expensive when it turns automatic. You can split a lot of things with your friends but you do not have to split a lobster.",
+   "pause": 0.9,
+   "rate": "-9%",
+   "pitch": "-2Hz"
+  },
+  {
+   "id": "r1",
+   "chapter": "What Dave Learned",
+   "text": "Here is what Dave learned. One is that a split bill is a hidden coupon and whoever orders least pays for it.",
+   "pause": 0.4
+  },
+  {
+   "id": "r2",
+   "text": "Two is that most of your table secretly wants separate checks so somebody just has to say it first.",
+   "pause": 0.4
+  },
+  {
+   "id": "r3",
+   "text": "Three is that a cheaper yes lets you keep the friend and the money.",
+   "pause": 0.7
+  },
+  {
+   "id": "r4",
+   "text": "Next time Dave is dragging his suitcase through the airport when a very smiley man offers him a free flight and all he has to do is sign up for a credit card.",
+   "pause": 0.5
+  },
+  {
+   "id": "r5",
+   "text": "Subscribe because it is free and we promise we will never split the bill with you.",
+   "pause": 1.4,
+   "pitch": "+3Hz"
+  }
+ ]
+}
