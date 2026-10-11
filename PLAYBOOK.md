@@ -252,6 +252,13 @@ Every hook must do these **three jobs**, and each hook beat carries a `"job"` fi
 
 **How it must SOUND (the anti-robot rules):**
 - Write **spoken sentences**: o1 is ONE flowing sentence of 12–24 words. Contractions (you're, didn't, that's). Connectors (and, but, so, because, which means). Max **one** 1–3-word fragment in the whole hook; max 20 % fragments in the whole script.
+- **No telegraphic pivots, ANYWHERE in the script, not just the hook (owner, 11 Oct 2026).** This is the single most repeated bug across both long-form and shorts: a setup → turn → consequence gets chopped into separate full-stop sentences that each read like a stage direction, e.g. "Dave eating. But wait. Problem. Dave has to lose weight." Each full stop is a pitch-drop for the TTS voice, so three choppy sentences in a row is exactly what "robotic" sounds like. Fix it by writing the pivot as ONE sentence a person would actually say, with a connector doing the work "but", "but then", "except", "the problem:", "only to realize" instead of a period:
+  - ❌ "Dave is eating. But wait. Problem. Dave has to lose weight."
+  - ✅ "While Dave's eating, he remembers he's supposed to be losing weight."
+  - ✅ "Dave's halfway through the plate when it hits him — he's supposed to be losing weight."
+  - ❌ "He signs the form. Then. The surprise. It's not what he thought."
+  - ✅ "He signs the form, and the surprise is waiting right underneath it."
+  Two short sentences back to back are fine for pacing or a punchline ("He signed it. Didn't even read it."); the bug is a CHAIN of three or more fragments doing one pivot's job, or a bare label word ("Problem.", "Twist.", "Then.") standing alone as its own sentence. Read the beat out loud — if it sounds like a list of stage directions instead of a sentence someone would say to a friend, rewrite it as one flowing clause before it ever reaches `tts.py`.
 - Read every line out loud as if telling a friend at a bar. If you wouldn't say it that way, rewrite it.
 - `"tts": {"rate": "-5%", "hook_rate": "+3%", "lead": 0.08}` in the episode JSON: the hook is spoken faster and the voice starts at 0:00 (no silence). Give at least 8 beats their own `"rate"` (excited `"+6%"`, slow reveal `"-12%"`) and optionally `"pitch"` (`"+3Hz"` for a question/joke, `"-2Hz"` for a serious line). The voice stays Andrew.
 - Hook pauses 0.15–0.3 s.
@@ -311,6 +318,7 @@ Everything in §0.2 (spine, BUT/SO/THEREFORE, cliffhangers, re-hooks, pause-and-
 - [ ] `tts` block set; ≥ 8 beats with their own `rate`; fragments ≤ 20 %; you/your ≥ 2.2 per 100 words.
 - [ ] One real story + real photo per chapter; ≥ 14 photos, all in the manifest with licence; contact sheet looked at.
 - [ ] Number diet respected; 2 interactive moments; running gag ×3; Dave speaks.
+- [ ] No telegraphic pivots: read every beat aloud — no beat is a chain of bare fragments ("X. But wait. Problem. Y.") doing one sentence's job.
 - [ ] ≥ 10:05.
 
 ---
@@ -394,7 +402,7 @@ Callbacks to earlier episodes are GOOD ("Remember the raccoon from our credit ca
    - **Big payoff** (closes the hook's promise) in the last ~60 s.
    - **"What Dave Learned"** outro: exactly 3 one-line points, ≤ 15 s (never "So let's recap").
    - **Teaser for the next episode as Dave's next problem** + subscribe line with a joke ("Subscribe, so the raccoon doesn't get you.").
-3. **Sentences:** short. One idea per sentence. Simple words. Numbers spelled out for TTS ("twenty twenty five", "one point four billion").
+3. **Sentences:** short. One idea per sentence. Simple words. Numbers spelled out for TTS ("twenty twenty five", "one point four billion"). But short ≠ chopped: a setup→turn→consequence is still ONE sentence with a connector ("but", "except", "only to realize"), never three bare fragments in a row ("Dave eating. But wait. Problem." → "While Dave's eating, he remembers the problem."). See §0.10 A "no telegraphic pivots" — this applies to shorts too, not just hooks.
 4. **Every concept gets a silly concrete analogy:** duck on paper = money creation; raccoon toll booth = swipe fee; bathtub + spoon = minimum payments; pizza slices = where payment goes; bouncy castle = borrowing cost; Monopoly hotels = McDonald's rent; babysitter paid twice = BNPL; bread in a town = inflation.
 5. **Hook pauses must be short** (≤ 0.35 s; last hook beat ≤ 0.6 s). Dead air in the hook is forbidden. `tts.py` auto-trims silence on beats whose id starts with `o`.
 6. **Beat pauses:** 0.4–0.6 normal, 0.7–0.9 after a punchline or at chapter end.
@@ -481,6 +489,7 @@ Callbacks to earlier episodes are GOOD ("Remember the raccoon from our credit ca
 - **QA report:** `N flagged beats out of M` must be `0`. `QA CRASHED` now only appears when frames really failed to render.
 - `seo.py` rewrites `pipeline/episodes/epNN.json` (youtube field) on purpose — commit that change, it is not stray.
 - Owner's topic taste (ep41–60 rounds): YES = life moments & money traps (weddings, divorce, co-signing, lending to family, MLMs, gurus, trading/betting apps, free games, gym, free trials, working until 70). NO = product-fee topics (printer ink, popcorn, warranties, resort fees, timeshares), 'feel poor on $100K', kids' sports/parties, nursing homes, dentists, lottery, pig-butchering scams.
+- **Telegraphic pivots keep slipping into scripts (owner, 11 Oct 2026, repeated in both shorts and long-form):** a setup→turn→consequence written as separate bare-fragment sentences ("Dave eating. But wait. Problem. Dave has to lose weight.") instead of one flowing sentence with a connector ("While Dave's eating, he remembers he has to lose weight."). See §0.10 A and §3.3 — check every pivot line out loud before it goes to `tts.py`, every single episode, not just the hook.
 
 ## 11. Series 1 episode list (for callbacks)
 
