@@ -1,8 +1,8 @@
 name: photos
 run-name: photos ${{ inputs.ep }}
 
-# Background removal for photos marked "cutout": true in pipeline/photos/<ep>.json.
-# Reads the committed public/photos/<ep>/<id>.jpg, writes <id>.png next to it and commits. Artifact <ep>-photos = contact sheet.
+# Downloads the photos of pipeline/photos/<ep>.json that are not in the repo yet (public/photos/<ep>/<id>.jpg), then removes the
+# background of those marked "cutout": true (<id>.png), and commits both. Artifact <ep>-photos = contact sheet.
 on:
   workflow_dispatch:
     inputs:
@@ -22,8 +22,11 @@ jobs:
         with:
           python-version: '3.12'
       - run: pip install -q "rembg[cpu]" pillow
+      # The owner's uplink is too slow to push JPGs: the cloud downloads every photo of the manifest that is not committed yet.
+      - run: python pipeline/photos.py ${{ inputs.ep }}
       - run: python pipeline/photos.py ${{ inputs.ep }} --cutout --force
       - run: |
+          git checkout -- pipeline/photos
           git config user.name "Moneyworks Bot"
           git config user.email "bot@users.noreply.github.com"
           git add public/photos/${{ inputs.ep }}
