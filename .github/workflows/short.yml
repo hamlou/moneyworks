@@ -31,8 +31,10 @@ jobs:
         with:
           python-version: '3.12'
       - run: sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg
-      - run: pip install -q edge-tts numpy
+      - run: pip install -q edge-tts numpy pillow
       - run: npm ci --no-audit --no-fund
+      - name: real photos (downloads whatever pipeline/photos/<id>.json lists and is not committed yet)
+        run: if [ -f pipeline/photos/${{ inputs.id }}.json ]; then python pipeline/photos.py ${{ inputs.id }}; fi
       - name: voice (real edge-tts, word-level timings)
         run: python pipeline/tts.py pipeline/episodes/${{ inputs.id }}.json public/${{ inputs.id }}
       - run: python -c "import json;print('total', json.load(open('public/${{ inputs.id }}/timings.json'))['total'])"

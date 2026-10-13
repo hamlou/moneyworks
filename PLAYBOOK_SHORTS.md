@@ -7,7 +7,7 @@ Shared with long-form, and read there when needed (same channel, same world): ca
 ## 1. What a Short is
 
 - A **standalone, fully-resolved story** — never a cliffhanger that only makes sense if you click away — but its job is still to drive views to one specific linked long-form `epNN` (see §6, 13 Oct 2026): resolve the loop completely, then end by pointing at the long video. 1080×1920, about 50–95 s, one loop only (one problem → one twist → one fix).
-- Files: brief `pipeline/shorts/shortNN.md`, script `pipeline/episodes/epNN-short.json`, animation `src/shorts/ShortNN.tsx`, photos `pipeline/photos/epNN.json`. Reference build: `short57` (brief + `src/shorts/Short57.tsx`).
+- Files: brief `pipeline/shorts/shortNN.md`, script `pipeline/episodes/shortNN.json`, animation `src/shorts/ShortNN.tsx`, photos `pipeline/photos/shortNN.json`. Reference build: `short52` (§9: brief + `src/shorts/Short52.tsx` + `src/memes52.tsx`).
 - Keep from the long episode only the two hardest numbers and the one emotional contrast. Cut everything else.
 
 ## 2. Story and hook
@@ -30,8 +30,8 @@ Open on a complete, emotionally sharp thought with no intro. The first frame mus
 
 ## 4. Cadence for Shorts (do not use the long-form numbers)
 
-- Photos: as many as the runtime supports, target 10–14 unique photos, each used once.
-- Memes: 2–4 per Short, only where the story earns them, in a recognizable trending meme FORMAT recreated with our drawn cast and/or a free-licence photo. Never download copyrighted meme images or film/TV stills.
+- Photos: a new real photo about every 5 s (16–20 unique photos in a 90 s Short, §9), each used once.
+- Memes: **one every 2–4 s (20+ in a 90 s Short, never more than ~4 s without one) — see §9, which replaced the old "2–4 per Short"**, each in a recognizable trending meme FORMAT recreated with our drawn cast and/or a free-licence photo. Never download copyrighted meme images or film/TV stills.
 - Visual change every 1–2 s in the first 6 s, then every 1–3 s.
 
 ## 5. Photo sourcing — default to Pexels, and where it can and can't run (owner, 13 Oct 2026)
@@ -69,3 +69,18 @@ The owner rejected the first ep56 render because the characters looked frozen, s
 - **Motion cadence:** introduce a meaningful visual change (pose, prop, camera move, photo, meme, or number) every 1–4 seconds. Scene transitions alone do not excuse motionless characters.
 - **CTA safe zones:** show subscribe reminders twice, but place them in unused top/bottom safe space and check that neither character face nor meme is obscured.
 - **Render QA is visual, not just technical:** inspect a contact sheet and several actual frames from the final MP4, especially the hook, meme scenes, both CTAs, and ending. A successful GitHub Actions run does not mean the short is approved.
+
+## 9. Fire, not cold — real photos + memes every few seconds, zero silence (owner, 13 Oct 2026, newest; wins over §3/§4 where they differ)
+
+The owner rejected the first `short52` render: drawn props only, 2 meme beats, half-second gaps between sentences. His words: "i need real photos and memes", "the memes needs to be every very few seconds", "the photos and the memes should be related what spoken", "without any silent moment or any low animated scene", "the short should be fire and not cold". Reference build: `src/shorts/Short52.tsx` + `src/memes52.tsx` + `pipeline/photos/short52.json`.
+
+- **A Short without real photos is not finished.** Never ship a drawn-only cut and call it done. If the session cannot reach the photo hosts (§5), stop at the brief and say so; do not render.
+- **Photo cadence:** a new real photo about every 5 s, each id once, cut in ON the word that names it ("Lamborghini" → the Lamborghini photo lands on that word; "revolving door" → the revolving door). Use `w('oN','word')` anchors, never guessed seconds. If the script names nothing photographable for 5 s, rewrite the line so it does.
+- **Meme cadence (owner, 14 Oct 2026: "the memes needs to be every very few seconds"):** a meme every 2–4 s and never more than ~4 s of screen time without one (short52: 22 in 89 s), each on screen ≥ 1.5 s, each one a joke about the sentence being spoken at that moment — never a random reaction. Formats that work (all redrawn with Dave / the guru in `src/memes52.tsx`): my-brain-at-2-AM, source-trust-me-bro, is-this-a-pigeon, panik/kalm/panik, shut-up-and-take-my-money, this-is-fine, always-has-been, Spider-Man pointing, stonks, Drake, surprised-reaction chat, two buttons, program.exe-stopped-responding, success fist, to-be-continued arrow, POV text box, I'm-in-danger, trade offer, nervous sweating, confused math, me-waiting (cobwebs), reverse card. When a meme card covers a kinetic-text slam move the slam to the strip under the card (y ≈ 1010), never delete it. Rotate formats; do not reuse one inside a Short.
+- **Layout that keeps all three layers readable:** top 1100 px = the real photo full-width (meme card pops over it), bottom = drawn stage with the cast reacting, captions on the line between. Nothing covers a face.
+- **Zero silence:** give every beat an id starting with `o` (`o1…oN`) so `tts.py` trims the silence edge-tts leaves around each sentence, set `"pause": 0.02`, and `"tts": {"rate": "+9%", "lead": 0.0}`. Voice starts on frame 0. A sound effect on every cut, slam and meme; music at 0.10 from frame 0 (no fade-in).
+- **Captions:** 3 words at a time, huge, uppercase, spoken word in yellow. Never a whole sentence on screen.
+- **Cast never holds a pose longer than ~1.5 s** — give every character 4–6 pose keys per sentence.
+- **Open loop:** the hook's second sentence promises the ending ("one question is about to make that man hang up"), the ending pays it, and the last line hands a NEW unanswered question to the long video ("his first two thousand is still gone and how he fights to win it back is in the full video linked right below").
+- **Where it runs:** a local Claude Code session on the owner's PC has open network — it finds photos itself with `py pipeline/photo_find.py "query" --sheet name` (Wikimedia Commons, no API key), LOOKS at the contact sheets, writes `pipeline/photos/shortNN.json`, runs `py pipeline/photos.py shortNN`. `short.yml` downloads any manifest photo that is not committed. Local voice preview: `py pipeline/tts.py … public/shortNN` needs a full ffmpeg on PATH (`pip install imageio-ffmpeg`; Remotion's bundled ffmpeg cannot decode mp3). QA stills: `node pipeline/stills.mjs <dir> '[{"id":"ShortNN","frame":120,"timings":null}]'` — look at ~50 frames before dispatching the render.
+- **Photo credits** (CC BY / BY-SA need attribution): paste the `credit` + `license` lines of the manifest into the Short's description.

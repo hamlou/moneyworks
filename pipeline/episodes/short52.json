@@ -1,21 +1,26 @@
 {
   "id": "short52",
   "title": "He Hung Up On One Question",
+  "tts": {
+    "rate": "+9%",
+    "lead": 0.0
+  },
   "beats": [
-    {"id": "s1", "text": "It's two in the morning and Dave is one tap from paying nine thousand nine hundred ninety seven dollars to a man he met on a webinar.", "pause": 0.15},
-    {"id": "s2", "text": "Three weeks earlier a mansion guy said I made a million dollars last year.", "pause": 0.25},
-    {"id": "s3", "text": "The F T C says one program like this pulled in more than one hundred twenty five million dollars.", "pause": 0.3},
-    {"id": "s4", "text": "Dave watched the free training and by minute ten he'd seen the mansion the car and a jet ski but still no secret.", "pause": 0.25},
-    {"id": "s5", "text": "Then a timer hit and nineteen spots became one so he paid the workshop fee. One thousand nine hundred ninety seven dollars.", "pause": 0.3},
-    {"id": "s6", "text": "Day two the real system turned out to live in Platinum like a game that never lets you reach the castle.", "pause": 0.3},
-    {"id": "s7", "text": "Dave searched the mansion photo. Just a rental you can book by the night.", "pause": 0.25},
-    {"id": "s8", "text": "He searched the guru's one business and it was the course itself.", "pause": 0.3},
-    {"id": "s9", "text": "The F T C's own words. The primary thing MOBE sells is more MOBE memberships.", "pause": 0.35},
-    {"id": "s10", "text": "Do the math. Sell that workshop to a thousand people and it's almost two million dollars even if nobody earns a cent.", "pause": 0.3},
-    {"id": "s11", "text": "Dave asked for a refund. The risk free guarantee turned into three replies and zero dollars back.", "pause": 0.35},
-    {"id": "s12", "text": "So he called his coach and asked the one question that matters. What did your typical student actually earn after paying.", "pause": 0.5},
-    {"id": "s13", "text": "Silence. Then I have another call. Click.", "pause": 0.5},
-    {"id": "s14", "text": "Dave closed the Platinum tab. Nine thousand nine hundred ninety seven dollars saved.", "pause": 0.5},
-    {"id": "s15", "text": "That question ends every pitch like this and Dave's full fight to win his money back is one tap away in the video linked below.", "pause": 1.0}
-  ]
+    {"id": "o1", "text": "It's two in the morning and Dave is one tap away from paying nine thousand nine hundred ninety seven dollars to a man he met on a webinar.", "pause": 0.02},
+    {"id": "o2", "text": "But one question is about to make that man hang up on him.", "pause": 0.02},
+    {"id": "o3", "text": "Three weeks earlier a guy standing in front of a mansion said I made a million dollars last year and I will show you how for free.", "pause": 0.02},
+    {"id": "o4", "text": "The free training showed Dave the mansion and the Lamborghini and a jet ski but never the actual secret.", "pause": 0.02},
+    {"id": "o5", "text": "Then a countdown timer appeared and twenty spots became one so Dave panicked and paid one thousand nine hundred ninety seven dollars.", "pause": 0.02},
+    {"id": "o6", "text": "On day two the guru said the real system lives in Platinum like a video game where the sword costs money and the armor costs money and you never reach the castle.", "pause": 0.02},
+    {"id": "o7", "text": "So Dave searched the mansion photo and it was a vacation rental you can book by the night.", "pause": 0.02},
+    {"id": "o8", "text": "Then he searched for the guru's real business and the only business was the course itself.", "pause": 0.02},
+    {"id": "o9", "text": "The F T C says one program like this called MOBE took more than one hundred twenty five million dollars and the primary thing it sold was more memberships.", "pause": 0.02},
+    {"id": "o10", "text": "Do the math because one workshop sold to a thousand people is almost two million dollars even if nobody in the room earns a cent.", "pause": 0.02},
+    {"id": "o11", "text": "Dave asked for his refund and the risk free guarantee became a revolving door with three replies and zero dollars back.", "pause": 0.02},
+    {"id": "o12", "text": "So he called his coach and asked the one question a guru hates. What did your typical student earn after paying and can you send that in writing.", "pause": 0.02},
+    {"id": "o13", "text": "The coach went silent and said I have another call and hung up.", "pause": 0.02},
+    {"id": "o14", "text": "Dave closed the Platinum tab and kept his nine thousand nine hundred ninety seven dollars.", "pause": 0.02},
+    {"id": "o15", "text": "But his first two thousand is still gone and how he fights to win it back is in the full video linked right below so tap it now.", "pause": 0.6}
+  ],
+  "note": "All beat ids start with \"o\" on purpose: tts.py trims the silence edge-tts leaves around every \"o\" beat, so the Short has no dead air between sentences (PLAYBOOK_SHORTS §9)."
 }
