@@ -34,6 +34,12 @@ Open on a complete, emotionally sharp thought with no intro. The first frame mus
 - Memes: 2–4 per Short, only where the story earns them, in a recognizable trending meme FORMAT recreated with our drawn cast and/or a free-licence photo. Never download copyrighted meme images or film/TV stills.
 - Visual change every 1–2 s in the first 6 s, then every 1–3 s.
 
+## 5. Photo sourcing — default to Pexels, and where it can and can't run (owner, 13 Oct 2026)
+
+Three free-licence sources are approved for real photos: Wikimedia Commons (`pipeline/photo_find.py`), Unsplash (manual `url`/`credit`/`license`/`page` entry, as in `pipeline/photos/ep57.json`), and **Pexels, now the default pick** — `pipeline/pexels_find.py` searches it the same way `photo_find.py` searches Commons (needs a free `PEXELS_API_KEY` from pexels.com/api). `pipeline/photos.py` already downloads and licence-checks all three with no code changes needed — its `FREE` tuple already includes `unsplash`, `pexels`, `pixabay`.
+
+**None of these can be run from the cloud agent sandbox.** Confirmed 13 Oct 2026: the sandbox's egress proxy blocks `commons.wikimedia.org`, `images.unsplash.com`, and `api.pexels.com`/`images.pexels.com` alike with `connect_rejected (organization policy)` — this is an org-wide allowlist (package registries + GitHub only), not something that changes by picking a different provider. `photo_find.py` / `pexels_find.py` / `photos.py` must run somewhere with open network access — the owner's PC (as this file already assumed) or any Claude session whose sandbox isn't locked to that allowlist. A future builder hitting the same 403s should not keep retrying providers — leave the photo manifest as a list of search queries (see any `pipeline/shorts/shortNN.md` for the format) and say so plainly, the way `short52.md`/`short52.json` did.
+
 ## 6. End CTA → the linked long-form video (owner, 13 Oct 2026 — overrides §1's "not a trailer, do not say watch the full video")
 
 Every Short in this pipeline exists to drive views to one specific linked long-form `epNN`, not only to stand alone. Keep the Short's own loop fully resolved — a viewer who never clicks still gets a complete problem → twist → fix — but the ending changes from §1:
