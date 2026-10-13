@@ -6,7 +6,7 @@ Shared with long-form, and read there when needed (same channel, same world): ca
 
 ## 1. What a Short is
 
-- A **standalone story**, not a trailer for the long video. 1080×1920, about 50–95 s, one loop only (one problem → one twist → one fix).
+- A **standalone, fully-resolved story** — never a cliffhanger that only makes sense if you click away — but its job is still to drive views to one specific linked long-form `epNN` (see §6, 13 Oct 2026): resolve the loop completely, then end by pointing at the long video. 1080×1920, about 50–95 s, one loop only (one problem → one twist → one fix).
 - Files: brief `pipeline/shorts/shortNN.md`, script `pipeline/episodes/epNN-short.json`, animation `src/shorts/ShortNN.tsx`, photos `pipeline/photos/epNN.json`. Reference build: `short57` (brief + `src/shorts/Short57.tsx`).
 - Keep from the long episode only the two hardest numbers and the one emotional contrast. Cut everything else.
 
@@ -34,7 +34,24 @@ Open on a complete, emotionally sharp thought with no intro. The first frame mus
 - Memes: 2–4 per Short, only where the story earns them, in a recognizable trending meme FORMAT recreated with our drawn cast and/or a free-licence photo. Never download copyrighted meme images or film/TV stills.
 - Visual change every 1–2 s in the first 6 s, then every 1–3 s.
 
-## 5. Visual QA rules (from the rejected ep56 Short, 10 Oct 2026)
+## 6. End CTA → the linked long-form video (owner, 13 Oct 2026 — overrides §1's "not a trailer, do not say watch the full video")
+
+Every Short in this pipeline exists to drive views to one specific linked long-form `epNN`, not only to stand alone. Keep the Short's own loop fully resolved — a viewer who never clicks still gets a complete problem → twist → fix — but the ending changes from §1:
+- **Last 2–4 s:** on-screen arrow/text pointing down/out ("FULL STORY ↓", "the whole fight for the $9,997 — linked below") plus a spoken line that names what's in the long video, not a generic "like and subscribe."
+- **Use the platform's native link**, not just on-screen text: set the Short's "Related Video" field (YouTube Studio, Short settings) to the matching `epNN` — it's the only clickable in-Short link. Pin a top comment with the long-form link too.
+- **Make the long-form tease a continuation of the story**, e.g. "Dave's full fight to get his $9,997 back — and the question that ended it — is one tap away," so it reads as the next scene, not an ad.
+
+## 7. Make it hit, not coast — virality pass (owner, 13 Oct 2026)
+
+Directional findings from current Shorts-algorithm write-ups (ClipSpeed AI; ScaleLab's 41 tips — treat exact percentages as unverified claims, not guaranteed numbers, and track our own results in `pipeline/ctr_log.md`):
+- **Hook inside the first ~1 s**, tighter than "by 3 s understand the problem": frame 0 is the single highest-contrast real photo already mid-motion, paired with the sharpest line in the whole script. No scene-setting, no throat-clearing word like "so," no breath before the shock.
+- **Zero dead zones, strictly:** treat any 2–3 s stretch with no new visual/number/reaction as a leak, not a style choice. The §2–4 "change every 1–3 s" cadence is a hard floor, never something to coast past because a scene "needed room to breathe."
+- **One deliberate rewatch hook:** withhold one concrete detail from the opening (the exact dollar figure, or the twist) and resolve it only in the final seconds, so finishing the loop rewards watching again.
+- **Captions animate word-by-word** on every line (not just stamp/meme cards) — most viewers are muted.
+- **Frame 0 reads like a thumbnail:** one punchy high-contrast claim, never a multi-person wide shot.
+- Sources: [YouTube Shorts Algorithm Decoded (ClipSpeed AI)](https://www.clipspeed.ai/blog/youtube-shorts-algorithm-decoded.html), [41 Tips to Make YouTube Shorts Viral (ScaleLab)](https://scalelab.com/en/41-tips-to-make-youtube-shorts-viral)
+
+## 8. Visual QA rules (from the rejected ep56 Short, 10 Oct 2026)
 
 The owner rejected the first ep56 render because the characters looked frozen, scene objects covered their faces, and the promised memes were not visually legible. Never repeat this.
 
