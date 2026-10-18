@@ -8,7 +8,7 @@ const ANTON = localFont('Anton', 'anton.woff2', '400');
 const O = {stroke: C.ink, strokeWidth: 6, strokeLinejoin: 'round' as const, strokeLinecap: 'round' as const};
 
 type SP = Omit<StickProps, 'acc' | 'seed'>;
-export const Dave: React.FC<SP> = (p) => <Stick acc={['hair']} seed={7} {...p} />;
+export const Dave: React.FC<SP> = (p) => <Stick big seed={7} {...p} />;
 export const Guru: React.FC<SP> = (p) => <Stick acc={['tie', 'shades']} seed={45} {...p} />;
 export const Coach: React.FC<SP> = (p) => <Stick acc={['cap', 'tie']} seed={52} {...p} />;
 

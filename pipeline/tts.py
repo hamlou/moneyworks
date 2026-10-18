@@ -41,6 +41,9 @@ def to_pcm(mp3: Path) -> bytes:
 
 async def main(spec_path: str, out_dir: str):
     spec = json.loads(Path(spec_path).read_text(encoding="utf-8"))
+    if spec.get("voice") == "chatterbox":  # owner's voice since 18 Oct 2026: made once by voice.yml, cached in pipeline/voice/
+        subprocess.run([sys.executable, str(Path(__file__).with_name("tts_cb.py")), Path(spec_path).stem, "--use", out_dir], check=True)
+        return
     out = Path(out_dir)
     tmp = out / "tmp"
     tmp.mkdir(parents=True, exist_ok=True)

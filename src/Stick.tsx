@@ -142,10 +142,10 @@ const Brows: React.FC<{e: Expr}> = ({e}) => {
   }
 };
 
-const Face: React.FC<{e: Expr; f: number; look: number; talk: boolean; seed: number}> = ({e, f, look, talk, seed}) => {
+const Face: React.FC<{e: Expr; f: number; look: number; talk: boolean; seed: number; dots?: boolean}> = ({e, f, look, talk, seed, dots}) => {
   const blink = (f + seed) % 101 < 4;
   const lid = e === 'tired' || e === 'suspicious' ? 0.45 : 1;
-  const ry = blink ? 0.8 : 5.6 * lid;
+  const ry = blink ? 0.8 : (dots ? 4.3 : 5.6) * lid;
   const lx = look * 5;
   const big = e === 'shock' || e === 'scream' ? 1.25 : 1;
   return (
@@ -161,7 +161,7 @@ const Face: React.FC<{e: Expr; f: number; look: number; talk: boolean; seed: num
           {(e === 'shock' || e === 'scream') && [-12, 12].map((ex) => <circle key={ex} cx={ex + lx + 1.5} cy={-6} r={1.6} fill="#fff" />)}
         </g>
       )}
-      <Brows e={e} />
+      {(!dots || ['angry', 'worried', 'shock', 'scream', 'suspicious', 'sad'].includes(e)) && <Brows e={e} />}
       <Mouth e={e} talk={talk} f={f} />
     </g>
   );
@@ -278,9 +278,11 @@ export type StickProps = {
   handItem?: React.ReactNode;
   // v3 (ep51+): item held IN one hand, pushed out along the forearm so it never sits on the chest/neck; text never mirrored.
   hold?: {item: React.ReactNode; side?: 'r' | 'l'; reach?: number; dx?: number; dy?: number};
+  // NEW DAVE (owner, 18 Oct 2026 - channel avatar): huge round head, dot eyes, small smile, no hair. Use for Dave from ep17 on.
+  big?: boolean;
 };
 
-export const Stick: React.FC<StickProps> = ({f, x, y, s = 1, keys, acc = [], walk, flip, sweat, pockets = 0, tinfoil, seed = 0, opacity = 1, handItem, hold}) => {
+export const Stick: React.FC<StickProps> = ({f, x, y, s = 1, keys, acc = [], walk, flip, sweat, pockets = 0, tinfoil, seed = 0, opacity = 1, handItem, hold, big}) => {
   const ks = resolve(keys);
   let i = ks.length - 1;
   while (i > 0 && ks[i].at > f) i--;
@@ -310,7 +312,8 @@ export const Stick: React.FC<StickProps> = ({f, x, y, s = 1, keys, acc = [], wal
   const hip: [number, number] = [0, 0];
   const neck = add(hip, L.torso, 180 - p.torso);
   const sho = add(neck, L.sho, -p.torso);
-  const headC = add(neck, L.neck + L.head, 180 - p.torso - p.head);
+  const HR = big ? 98 : L.head;
+  const headC = add(neck, L.neck + HR * (big ? 0.82 : 1), 180 - p.torso - p.head);
   const le = add(sho, L.ua, p.lu);
   const lh = add(le, L.la, p.lu + p.ll);
   const re = add(sho, L.ua, p.ru);
@@ -354,8 +357,19 @@ export const Stick: React.FC<StickProps> = ({f, x, y, s = 1, keys, acc = [], wal
           return <g transform={`translate(${h[0] + Math.cos(a) * r + (hold.dx ?? 0)},${h[1] + Math.sin(a) * r + (hold.dy ?? 0)}) scale(${flip ? -1 : 1},1)`}>{hold.item}</g>;
         })()}
       <g transform={`translate(${headC[0]},${headC[1]}) rotate(${p.torso + p.head}) scale(${flip ? -1 : 1},1)`}>
-        <circle cx={0} cy={0} r={L.head} fill={C.paper} stroke={C.ink} strokeWidth={SW} />
-        <Face e={expr} f={f} look={flip ? -look : look} talk={cur.talk} seed={seed} />
+        {big ? (
+          <>
+            <ellipse cx={0} cy={0} rx={HR * 1.03} ry={HR * 0.95} transform="rotate(-10)" fill={C.paper} stroke={C.ink} strokeWidth={SW * 1.5} />
+            <g transform={`translate(${HR * 0.3},${HR * 0.1}) scale(2.1)`}>
+              <Face e={expr} f={f} look={flip ? -look : look} talk={cur.talk} seed={seed} dots />
+            </g>
+          </>
+        ) : (
+          <>
+            <circle cx={0} cy={0} r={L.head} fill={C.paper} stroke={C.ink} strokeWidth={SW} />
+            <Face e={expr} f={f} look={flip ? -look : look} talk={cur.talk} seed={seed} />
+          </>
+        )}
         {acc.includes('hair') && <Hair />}
         {acc.includes('tophat') && <TopHat />}
         {acc.includes('monocle') && <Monocle />}

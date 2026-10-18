@@ -1,375 +1,888 @@
 {
-  "id": "ep17",
+ "id": "ep17",
+ "title": "How Casinos Always Win (The Math They Don't Show You)",
+ "voice": "chatterbox",
+ "tts": {
+  "rate": "-5%",
+  "hook_rate": "+3%",
+  "lead": 0.08
+ },
+ "upgraded": "2026-10-18 UPGRADE.md v1 (Dave host)",
+ "sources": [
+  "Nevada Gaming Control Board, Gaming Revenue Report (Dec 2025): Las Vegas Strip gaming win ≈ $8.8B in calendar 2025 (+0.03%); Nevada statewide record ≈ $15.8B (+1.2%)",
+  "Derived: $8.8B ÷ 365 days ≈ $24.1M per day; $8.8B ÷ 8,760 hours ≈ $1.0M per hour",
+  "Nevada Gaming Control Board monthly reports 2025: Strip slot win percentage (hold) ≈ 7.2%–7.9%",
+  "American roulette: 38 pockets, single-number payout 35 to 1 (fair = 37 to 1), house edge 2/38 = 5.26% (UNLV Center for Gaming Research, Casino Math Guide)",
+  "Blackjack: ≈ 0.5% house edge with basic strategy (six decks, 3:2); a 6:5 blackjack payout adds ≈ 1.4 percentage points (UNLV Center for Gaming Research)",
+  "Clark L. et al., 'Gambling near-misses enhance motivation to gamble and recruit win-related brain circuitry', Neuron 61 (2009), University of Cambridge",
+  "Natasha Dow Schüll, 'Addiction by Design: Machine Gambling in Las Vegas' (Princeton University Press, 2012): casino design, no clocks, player tracking and comps",
+  "American Gaming Association, Commercial Gaming Revenue 2025 (Feb 2026): sports betting handle $166.94B (+11.0%), revenue $16.96B (+22.8%); online casino $10.74B (+27.6%); total $78.7B",
+  "American Gaming Association (2026): legal sports betting live in 39 states + Washington, D.C.; Murphy v. NCAA, U.S. Supreme Court (2018)",
+  "Standard sportsbook pricing (-110): risk $110 to win $100",
+  "National Council on Problem Gambling helpline: 1-800-GAMBLER",
+  "Blaise Pascal and the origin of roulette (Britannica)",
+  "Edward O. Thorp, Beat the Dealer (1962)",
+  "Jacob Bernoulli, Ars Conjectandi (1713): law of large numbers",
+  "Clark et al. 2009, Neuron: near-misses recruit win-related brain circuitry (University of Cambridge)",
+  "Murphy v. NCAA (US Supreme Court, 2018)",
+  "Charles Fey Liberty Bell slot machine (1899)",
+  "Blaise Pascal and the origin of roulette (Britannica)",
+  "Edward O. Thorp, Beat the Dealer (1962)",
+  "Jacob Bernoulli, Ars Conjectandi (1713): law of large numbers",
+  "Clark et al. 2009, Neuron: near-misses recruit win-related brain circuitry (University of Cambridge)",
+  "Murphy v. NCAA (US Supreme Court, 2018)",
+  "Charles Fey Liberty Bell slot machine (1899)"
+ ],
+ "youtube": {
   "title": "How Casinos Always Win (The Math They Don't Show You)",
-  "sources": [
-    "Nevada Gaming Control Board, Gaming Revenue Report (Dec 2025): Las Vegas Strip gaming win ≈ $8.8B in calendar 2025 (+0.03%); Nevada statewide record ≈ $15.8B (+1.2%)",
-    "Derived: $8.8B ÷ 365 days ≈ $24.1M per day; $8.8B ÷ 8,760 hours ≈ $1.0M per hour",
-    "Nevada Gaming Control Board monthly reports 2025: Strip slot win percentage (hold) ≈ 7.2%–7.9%",
-    "American roulette: 38 pockets, single-number payout 35 to 1 (fair = 37 to 1), house edge 2/38 = 5.26% (UNLV Center for Gaming Research, Casino Math Guide)",
-    "Blackjack: ≈ 0.5% house edge with basic strategy (six decks, 3:2); a 6:5 blackjack payout adds ≈ 1.4 percentage points (UNLV Center for Gaming Research)",
-    "Clark L. et al., 'Gambling near-misses enhance motivation to gamble and recruit win-related brain circuitry', Neuron 61 (2009), University of Cambridge",
-    "Natasha Dow Schüll, 'Addiction by Design: Machine Gambling in Las Vegas' (Princeton University Press, 2012): casino design, no clocks, player tracking and comps",
-    "American Gaming Association, Commercial Gaming Revenue 2025 (Feb 2026): sports betting handle $166.94B (+11.0%), revenue $16.96B (+22.8%); online casino $10.74B (+27.6%); total $78.7B",
-    "American Gaming Association (2026): legal sports betting live in 39 states + Washington, D.C.; Murphy v. NCAA, U.S. Supreme Court (2018)",
-    "Standard sportsbook pricing (-110): risk $110 to win $100",
-    "National Council on Problem Gambling helpline: 1-800-GAMBLER"
+  "alt_titles": [
+   "Why the House Always Wins: Casino Math Explained",
+   "Las Vegas Makes $1 Million an Hour. Here's How."
   ],
-  "beats": [
-    {
-      "id": "o1",
-      "text": "Last year, casinos on the Las Vegas Strip kept eight point eight billion dollars from gamblers.",
-      "pause": 0.3
-    },
-    {
-      "id": "o2",
-      "text": "That's about twenty four million dollars. Every single day.",
-      "pause": 0.3
-    },
-    {
-      "id": "o3",
-      "text": "Now look at Dave. He just landed in Vegas with five hundred dollars and a plan. Win.",
-      "pause": 0.35
-    },
-    {
-      "id": "o4",
-      "text": "But here's the crazy part. The casino doesn't need luck. It doesn't even need Dave to lose tonight.",
-      "pause": 0.3
-    },
-    {
-      "id": "o5",
-      "text": "It just needs Dave to keep playing.",
-      "pause": 0.3
-    },
-    {
-      "id": "o6",
-      "text": "Today: the tiny math edge hidden in every game, the law that turns it into billions, and the sneaky tricks that keep you playing.",
-      "pause": 0.6
-    },
-    {
-      "id": "c1a",
-      "chapter": "Dave's Big Night",
-      "text": "Friday night. Dave walks into a giant casino. Bright lights. Ringing bells. A carpet with a very confusing pattern.",
-      "pause": 0.4
-    },
-    {
-      "id": "c1b",
-      "text": "He changes two hundred dollars into colorful plastic chips. And he sits down at the roulette table.",
-      "pause": 0.5
-    },
-    {
-      "id": "c1c",
-      "text": "First spin. He bets on red. Red! He wins. Second spin. Red again! Dave is clearly a genius.",
-      "pause": 0.5
-    },
-    {
-      "id": "c1d",
-      "text": "One hour later, Dave is up one hundred and fifty dollars. He is seriously thinking about quitting his job.",
-      "pause": 0.5
-    },
-    {
-      "id": "c1e",
-      "text": "And the casino? The casino is completely calm. Because the casino knows something Dave doesn't.",
-      "pause": 0.5
-    },
-    {
-      "id": "c1f",
-      "text": "Every game in this building has a tiny secret, built right into the math. Let's find it.",
-      "pause": 0.9
-    },
-    {
-      "id": "c2a",
-      "chapter": "The Roulette Secret",
-      "text": "Let's start with roulette. An American roulette wheel has thirty eight pockets.",
-      "pause": 0.4
-    },
-    {
-      "id": "c2b",
-      "text": "Eighteen red. Eighteen black. And two green ones. Zero, and double zero.",
-      "pause": 0.5
-    },
-    {
-      "id": "c2c",
-      "text": "If Dave bets on one single number and it hits, the casino pays him thirty five to one.",
-      "pause": 0.5
-    },
-    {
-      "id": "c2d",
-      "text": "But with thirty eight pockets, a fair payout would be thirty seven to one. So the casino quietly pays a little less than fair.",
-      "pause": 0.5
-    },
-    {
-      "id": "c2e",
-      "text": "That little gap has a name. The house edge. On American roulette, it's five point two six percent.",
-      "pause": 0.5
-    },
-    {
-      "id": "c2f",
-      "text": "So for every one hundred dollars Dave bets, the casino expects to keep about five dollars and twenty six cents.",
-      "pause": 0.5
-    },
-    {
-      "id": "c2g",
-      "text": "Remember the raccoon at the toll booth, from our credit card video? Same idea. A small toll, hidden inside every single bet.",
-      "pause": 0.9
-    },
-    {
-      "id": "c3a",
-      "chapter": "Blackjack and Slots",
-      "text": "Now, blackjack. This is the game with some of the best odds in the building.",
-      "pause": 0.4
-    },
-    {
-      "id": "c3b",
-      "text": "If Dave plays perfectly, following a strategy chart that math experts worked out, the house edge is only about half a percent.",
-      "pause": 0.5
-    },
-    {
-      "id": "c3c",
-      "text": "But most people don't play perfectly. They guess. They follow hunches. And every mistake makes the edge bigger.",
-      "pause": 0.5
-    },
-    {
-      "id": "c3d",
-      "text": "Some tables even pay six to five instead of three to two when you hit blackjack. That tiny change makes the house edge about four times bigger.",
-      "pause": 0.5
-    },
-    {
-      "id": "c3e",
-      "text": "Then there are the slot machines. On the Strip, slots keep around seven to eight cents of every dollar played.",
-      "pause": 0.5
-    },
-    {
-      "id": "c3f",
-      "text": "Seven cents doesn't sound like much. But a slot machine can take a new bet every few seconds. Hundreds of spins, every hour.",
-      "pause": 0.9
-    },
-    {
-      "id": "c4a",
-      "chapter": "The Law of Large Numbers",
-      "text": "So how does a tiny edge become billions? Meet the law of large numbers.",
-      "pause": 0.4
-    },
-    {
-      "id": "c4b",
-      "text": "Flip a coin ten times. You might get seven heads. That's just luck.",
-      "pause": 0.5
-    },
-    {
-      "id": "c4c",
-      "text": "Now flip it a million times. You'll land extremely close to half heads, half tails. The luck averages out.",
-      "pause": 0.5
-    },
-    {
-      "id": "c4d",
-      "text": "For Dave, one night is like ten coin flips. Anything can happen. He really can win.",
-      "pause": 0.5
-    },
-    {
-      "id": "c4e",
-      "text": "But the casino isn't playing one night. It's playing millions of bets, every day, against thousands of Daves.",
-      "pause": 0.5
-    },
-    {
-      "id": "c4f",
-      "text": "Most people think the casino is hoping you lose big tonight. Nope. It doesn't care about you at all. It only cares about the average.",
-      "pause": 0.5
-    },
-    {
-      "id": "c4g",
-      "text": "And over millions of bets, that average lands right on the house edge. Dave is gambling. The casino is doing math.",
-      "pause": 0.9
-    },
-    {
-      "id": "c5a",
-      "chapter": "A Million Dollars an Hour",
-      "text": "So how well does this math work? Let's check the official numbers.",
-      "pause": 0.4
-    },
-    {
-      "id": "c5b",
-      "text": "The Nevada Gaming Control Board counts every dollar. In twenty twenty five, Strip casinos kept eight point eight billion dollars from gamblers.",
-      "pause": 0.5
-    },
-    {
-      "id": "c5c",
-      "text": "Divide that by every hour in a year. That's about one million dollars. Every hour. Day and night.",
-      "pause": 0.5
-    },
-    {
-      "id": "c5d",
-      "text": "And the whole state of Nevada? A record fifteen point eight billion dollars.",
-      "pause": 0.5
-    },
-    {
-      "id": "c5e",
-      "text": "And remember, that's after paying out all the jackpots. All the lucky winners. Even Dave's wins on red.",
-      "pause": 0.5
-    },
-    {
-      "id": "c5f",
-      "text": "The winners are real. But they're paid with the losers' money. And the casino keeps its slice in the middle.",
-      "pause": 0.9
-    },
-    {
-      "id": "c6a",
-      "chapter": "Tricks in the Building",
-      "text": "But math isn't the only trick. The building itself is designed to keep you playing.",
-      "pause": 0.4
-    },
-    {
-      "id": "c6b",
-      "text": "Trick one. No clocks, and often no windows. Without the sun, you lose track of time. Is it nine at night? Three in the morning? Who knows.",
-      "pause": 0.5
-    },
-    {
-      "id": "c6c",
-      "text": "Trick two. Chips instead of cash. Handing over a real hundred dollar bill hurts. Tossing a plastic chip feels like a game.",
-      "pause": 0.5
-    },
-    {
-      "id": "c6d",
-      "text": "Trick three. Free drinks. Very generous. And a little alcohol makes risky bets feel like great ideas.",
-      "pause": 0.5
-    },
-    {
-      "id": "c6e",
-      "text": "Trick four. Near misses. Two jackpot symbols line up, and the third one stops just above the line. So close!",
-      "pause": 0.5
-    },
-    {
-      "id": "c6f",
-      "text": "Scientists at Cambridge found that near misses light up the same reward areas of the brain as real wins. Your brain says: try again.",
-      "pause": 0.5
-    },
-    {
-      "id": "c6g",
-      "text": "And trick five. Loyalty cards and free comps. Free rooms. Free dinners. Nice! But comps are based on how much the casino expects you to lose. It's giving you back a small piece of your own money.",
-      "pause": 0.9
-    },
-    {
-      "id": "c7a",
-      "chapter": "Casino in Your Pocket",
-      "text": "And today, you don't even need to fly to Vegas. The casino fits in your pocket.",
-      "pause": 0.4
-    },
-    {
-      "id": "c7b",
-      "text": "In twenty eighteen, the Supreme Court opened the door for states to legalize sports betting. Now it's legal in thirty nine states and Washington D C.",
-      "pause": 0.5
-    },
-    {
-      "id": "c7c",
-      "text": "In twenty twenty five, Americans bet almost one hundred and sixty seven billion dollars on sports, through legal sportsbooks.",
-      "pause": 0.5
-    },
-    {
-      "id": "c7d",
-      "text": "The sportsbooks kept almost seventeen billion dollars of it. That's up twenty three percent in just one year.",
-      "pause": 0.5
-    },
-    {
-      "id": "c7e",
-      "text": "How? A little fee called the vig. To win one hundred dollars on a typical bet, you have to risk one hundred and ten. Same raccoon. New outfit.",
-      "pause": 0.5
-    },
-    {
-      "id": "c7f",
-      "text": "And the app never closes. No drive. No dress code. Just a phone, at two in the morning, in your bed.",
-      "pause": 0.9
-    },
-    {
-      "id": "c8a",
-      "chapter": "How Dave Plays Smart",
-      "text": "Back to Dave. It's three in the morning. His lucky streak is gone. He's down three hundred dollars, and he wants to win it back.",
-      "pause": 0.4
-    },
-    {
-      "id": "c8b",
-      "text": "Stop right there, Dave. Here's how people keep gambling fun, instead of expensive. Education, not advice.",
-      "pause": 0.5
-    },
-    {
-      "id": "c8c",
-      "text": "One. Treat it like paying for entertainment, like a concert ticket. Decide the price before you walk in. And leave the cards in the hotel room.",
-      "pause": 0.5
-    },
-    {
-      "id": "c8d",
-      "text": "Two. Never chase losses. The next spin doesn't know you lost the last one. The edge stays exactly the same.",
-      "pause": 0.5
-    },
-    {
-      "id": "c8e",
-      "text": "Three. Set an alarm on your phone. The casino won't show you a clock, so bring your own.",
-      "pause": 0.5
-    },
-    {
-      "id": "c8f",
-      "text": "Four. If it stops being fun, talk to someone. In the U S, you can call one eight hundred gambler, any time.",
-      "pause": 0.5
-    },
-    {
-      "id": "c8g",
-      "text": "So Dave walked away with the two hundred dollars he had left. He called it the price of a very loud show.",
-      "pause": 0.9
-    },
-    {
-      "id": "c9a",
-      "chapter": "Now You Know",
-      "text": "So let's recap.",
-      "pause": 0.4
-    },
-    {
-      "id": "c9b",
-      "text": "One. Every casino game has a house edge. A small toll, built right into the math.",
-      "pause": 0.5
-    },
-    {
-      "id": "c9c",
-      "text": "Two. The law of large numbers turns that small edge into billions. You might win tonight. The casino wins over millions of bets.",
-      "pause": 0.5
-    },
-    {
-      "id": "c9d",
-      "text": "Three. No clocks, chips, free drinks, near misses and betting apps are all designed to keep you playing longer.",
-      "pause": 0.6
-    },
-    {
-      "id": "c9e",
-      "text": "Next time, Dave discovers something strange. Insurance companies pay out billions in claims every year. And they still make a fortune. How?",
-      "pause": 0.4
-    },
-    {
-      "id": "c9f",
-      "text": "Subscribe, so Dave can keep explaining money. Unlike roulette, the odds here are in your favor.",
-      "pause": 1.4
-    }
+  "hook": "How do casinos always win? Las Vegas Strip casinos kept $8.8 billion in 2025, about $1 million an hour. Here's the math and the tricks. Dave lands in Vegas with $500 and a plan: win. We explain the house edge on roulette (5.26%), blackjack and slots, how the law of large numbers turns a tiny edge into billions, the building's psychology tricks (no clocks, chips, free drinks, near misses, comps), and why sports betting apps grew 23% in a year.",
+  "tags": [
+   "how casinos make money",
+   "house edge explained",
+   "why the house always wins",
+   "law of large numbers",
+   "roulette odds explained",
+   "blackjack house edge",
+   "slot machine near miss",
+   "las vegas casino revenue",
+   "sports betting explained",
+   "money explained simply",
+   "dave explains money"
   ],
-  "youtube": {
-    "title": "How Casinos Always Win (The Math They Don't Show You)",
-    "alt_titles": [
-      "Why the House Always Wins: Casino Math Explained",
-      "Las Vegas Makes $1 Million an Hour. Here's How."
-    ],
-    "hook": "How do casinos always win? Las Vegas Strip casinos kept $8.8 billion in 2025, about $1 million an hour. Here's the math and the tricks. Dave lands in Vegas with $500 and a plan: win. We explain the house edge on roulette (5.26%), blackjack and slots, how the law of large numbers turns a tiny edge into billions, the building's psychology tricks (no clocks, chips, free drinks, near misses, comps), and why sports betting apps grew 23% in a year.",
-    "tags": [
-      "how casinos make money",
-      "house edge explained",
-      "why the house always wins",
-      "law of large numbers",
-      "roulette odds explained",
-      "blackjack house edge",
-      "slot machine near miss",
-      "las vegas casino revenue",
-      "sports betting explained",
-      "money explained simply",
-      "dave explains money"
-    ],
-    "hashtags": [
-      "#casino",
-      "#lasvegas",
-      "#money"
-    ],
-    "pinned": "Have you ever walked out of a casino with MORE money than you walked in with? YES or NO 👇"
+  "hashtags": [
+   "#casino",
+   "#lasvegas",
+   "#money"
+  ],
+  "pinned": "Have you ever walked out of a casino with MORE money than you walked in with? YES or NO 👇"
+ },
+ "beats": [
+  {
+   "id": "o1",
+   "text": "This is me last Friday walking into a Las Vegas casino with five hundred dollars and one plan which was to win.",
+   "host": true,
+   "mood": "grin",
+   "pose": "present",
+   "pic": "strip",
+   "slam": "$500",
+   "sfx": "riser",
+   "pause": 0.15
+  },
+  {
+   "id": "o2",
+   "text": "Everybody online keeps posting giant piles of casino cash so how hard can it be right?",
+   "host": true,
+   "mood": "smug",
+   "pose": "shrug",
+   "zoom": true,
+   "pause": 0.5
+  },
+  {
+   "id": "o3",
+   "text": "Spoiler.",
+   "card": {
+    "t": "Spoiler.",
+    "dark": true
+   },
+   "sfx": "scratch",
+   "pause": 0.5
+  },
+  {
+   "id": "o4",
+   "text": "By the end of this video you'll see exactly where my money went and the one trick the casino plays on you every single time you bet on anything.",
+   "host": true,
+   "mood": "worried",
+   "pose": "point_r",
+   "pic": {
+    "id": "chips",
+    "look": "tape"
+   },
+   "slam": "WHERE IT WENT",
+   "pause": 0.15
+  },
+  {
+   "id": "o5",
+   "text": "And most people click off before that part which is exactly what the casino wants you to do.",
+   "host": true,
+   "mood": "suspicious",
+   "pose": "hips",
+   "sfx": "pack/01_beating",
+   "pause": 0.3
+  },
+  {
+   "id": "c1a",
+   "text": "So Friday night I walk in and it's bright lights and ringing bells and a carpet with a pattern that honestly looks like a migraine.",
+   "pic": {
+    "id": "carpet",
+    "look": "polaroid",
+    "label": "the carpet"
+   },
+   "sfx": "crowd"
+  },
+  {
+   "id": "n1",
+   "text": "I'm a very smart person so I named my strategy the Dave Method. I couldn't think of anything else.",
+   "host": true,
+   "mood": "happy",
+   "pose": "present",
+   "zoom": true,
+   "pic": {
+    "id": "notebook",
+    "look": "tape",
+    "label": "the Dave Method"
+   },
+   "pause": 0.5
+  },
+  {
+   "id": "c1b",
+   "text": "I swap two hundred dollars for these little plastic chips and I sit down at the roulette table like I own the place.",
+   "pic": {
+    "id": "roulette",
+    "look": "plain"
+   },
+   "sfx": "pack/camera_shutter"
+  },
+  {
+   "id": "c1c",
+   "text": "First spin I bet on red and it's red. Second spin I bet on red again and it's red again. I am clearly a genius.",
+   "meme": {
+    "t": "stonks",
+    "a": "THE DAVE METHOD"
+   },
+   "sfx": "ding"
+  },
+  {
+   "id": "n15",
+   "text": "Me after two spins.",
+   "meme": {
+    "t": "brain",
+    "a": "Saving money",
+    "b": "Investing money",
+    "c": "Betting it all on red"
+   },
+   "sfx": "boom"
+  },
+  {
+   "id": "c1d",
+   "text": "One hour later I'm up one hundred and fifty dollars and I'm seriously thinking about quitting my job.",
+   "host": true,
+   "mood": "money",
+   "pose": "celebrate",
+   "slam": "+$150",
+   "sfx": "cash"
+  },
+  {
+   "id": "c1e",
+   "text": "But here's the weird part. The casino isn't nervous at all. Nobody runs over to stop me and nobody even looks at me.",
+   "host": true,
+   "mood": "think",
+   "pose": "think",
+   "pic": {
+    "id": "security",
+    "look": "circle"
+   },
+   "sfx": "cricket"
+  },
+  {
+   "id": "c1f",
+   "text": "And that's because the casino knows something about that table that I didn't know yet.",
+   "host": true,
+   "mood": "suspicious",
+   "zoom": true,
+   "sfx": "pack/02_deep",
+   "pic": {
+    "id": "dealer",
+    "look": "polaroid"
+   },
+   "pause": 0.5
+  },
+  {
+   "id": "c2a",
+   "text": "So I looked it up and roulette was kind of invented by accident by a French genius named Blaise Pascal who was actually trying to build a machine that spins forever.",
+   "chapter": "The Wheel Is Rigged (Legally)",
+   "pic": {
+    "id": "pascal",
+    "look": "polaroid",
+    "label": "Blaise Pascal"
+   },
+   "sfx": "pack/01_processing"
+  },
+  {
+   "id": "c2b",
+   "text": "He failed and three hundred years later his failure is taking my money.",
+   "host": true,
+   "mood": "tired",
+   "pose": "facepalm",
+   "sfx": "trombone",
+   "pic": {
+    "id": "perpetual",
+    "look": "sticker",
+    "label": "spins forever (no)"
+   }
+  },
+  {
+   "id": "c2c",
+   "text": "Here's the trick. If I bet on one number and it hits the casino pays me thirty five times my bet.",
+   "pic": {
+    "id": "roulette_table",
+    "look": "tape"
+   }
+  },
+  {
+   "id": "c2d",
+   "text": "Sounds fair until you count the pockets because there are thirty eight of them and that sneaky green zero and double zero are the casino's little hiding spots.",
+   "meme": {
+    "t": "drake",
+    "a": "Counting the pockets",
+    "b": "Betting on vibes"
+   },
+   "sfx": "pop"
+  },
+  {
+   "id": "n16",
+   "text": "Wait. Thirty eight?",
+   "meme": {
+    "t": "buttons",
+    "a": "Trust the wheel",
+    "b": "Count the pockets"
+   },
+   "sfx": "scratch"
+  },
+  {
+   "id": "c2e",
+   "text": "So every time I play the wheel quietly keeps about five cents of every dollar I bet. It's not luck. It's a toll.",
+   "host": true,
+   "mood": "angry",
+   "pose": "point_r",
+   "slam": "5¢ TOLL",
+   "sfx": "stamp",
+   "pic": {
+    "id": "toll_booth",
+    "look": "news",
+    "label": "the toll"
+   }
+  },
+  {
+   "id": "c2f",
+   "text": "Five cents doesn't sound like much and that's exactly why it works on you.",
+   "host": true,
+   "mood": "suspicious",
+   "zoom": true,
+   "pause": 0.5
+  },
+  {
+   "id": "c2g",
+   "text": "It's like a tiny raccoon sitting inside every bet and taking a bite every single time you play.",
+   "pic": {
+    "id": "raccoon",
+    "look": "circle"
+   },
+   "sfx": "quack"
+  },
+  {
+   "id": "c3a",
+   "text": "So I said okay roulette is rigged so let me try a smarter game and I walked over to the blackjack table.",
+   "pic": {
+    "id": "blackjack",
+    "look": "news",
+    "label": "the smart game"
+   },
+   "sfx": "whoosh"
+  },
+  {
+   "id": "c3b",
+   "text": "And blackjack actually is the best game in the building because in the sixties a math professor named Edward Thorp literally beat it with math.",
+   "pic": {
+    "id": "thorp",
+    "look": "polaroid",
+    "label": "Edward Thorp"
+   },
+   "sfx": "ding"
+  },
+  {
+   "id": "c3c",
+   "text": "He wrote a whole book about it and the casinos panicked so hard that they changed the rules and kicked people out.",
+   "meme": {
+    "t": "buttons",
+    "a": "Change the rules",
+    "b": "Ban the math guy"
+   },
+   "sfx": "boing"
+  },
+  {
+   "id": "n17",
+   "text": "Imagine being so good at math that a casino bans you.",
+   "meme": {
+    "t": "stonks",
+    "a": "BANNED FOR MATH"
+   },
+   "sfx": "boing"
+  },
+  {
+   "id": "c3d",
+   "text": "But I'm not a math professor. I'm a guy who hit on sixteen because it felt lucky.",
+   "host": true,
+   "mood": "sad",
+   "pose": "shrug",
+   "zoom": true,
+   "sfx": "trombone",
+   "pic": {
+    "id": "playing_cards",
+    "look": "circle"
+   },
+   "pause": 0.5
+  },
+  {
+   "id": "c3e",
+   "text": "And then I saw the slot machines and they were beautiful and flashing and making happy noises at me.",
+   "pic": {
+    "id": "slots",
+    "look": "plain"
+   },
+   "sfx": "pack/02_dial_up"
+  },
+  {
+   "id": "c3f",
+   "text": "Fun fact that I learned way too late. A slot machine can take a new bet every few seconds. That's hundreds of tiny tolls every hour.",
+   "host": true,
+   "mood": "shock",
+   "pose": "panic",
+   "pic": {
+    "id": "liberty_bell",
+    "look": "sticker",
+    "label": "the first slot 1899"
+   },
+   "sfx": "pack/01_beating"
+  },
+  {
+   "id": "n18",
+   "text": "My wallet watching me walk toward the slots.",
+   "meme": {
+    "t": "fine",
+    "a": "My wallet is fine"
+   },
+   "sfx": "pack/02_dial_up"
+  },
+  {
+   "id": "n2",
+   "text": "Midnight check. I'm still up one hundred dollars. I feel unstoppable.",
+   "card": "MIDNIGHT",
+   "sfx": "ding",
+   "pause": 0.5
+  },
+  {
+   "id": "c4a",
+   "text": "So why was the casino so calm while I was winning? Because the casino isn't playing my night. It's playing the average.",
+   "host": true,
+   "mood": "think",
+   "pose": "talk",
+   "sfx": "pack/01_evolve_brassy_swell",
+   "pic": {
+    "id": "casino_vault",
+    "look": "plain"
+   }
+  },
+  {
+   "id": "c4b",
+   "text": "Flip a coin ten times and you might get seven heads and feel like a wizard.",
+   "pic": {
+    "id": "coin",
+    "look": "circle"
+   },
+   "sfx": "coin"
+  },
+  {
+   "id": "c4c",
+   "text": "Flip it a million times and it lands almost exactly half and half. The luck just melts away.",
+   "meme": {
+    "t": "brain",
+    "a": "Ten flips",
+    "b": "A thousand flips",
+    "c": "A million flips"
+   },
+   "sfx": "pop"
+  },
+  {
+   "id": "c4d",
+   "text": "A Swiss mathematician named Jacob Bernoulli proved this more than three hundred years ago and casinos have been printing money with it ever since.",
+   "pic": {
+    "id": "bernoulli",
+    "look": "polaroid",
+    "label": "Jacob Bernoulli"
+   },
+   "sfx": "pack/01_processing"
+  },
+  {
+   "id": "c4e",
+   "text": "So me winning on Friday doesn't scare them at all. They don't need me to lose tonight. They just need me to keep playing.",
+   "host": true,
+   "mood": "worried",
+   "pose": "hips",
+   "slam": "KEEP PLAYING",
+   "sfx": "pack/03_evolve_boom_brass_d",
+   "pic": {
+    "id": "mgm",
+    "look": "tape"
+   }
+  },
+  {
+   "id": "c4f",
+   "text": "And that sentence right there is the whole casino business in one line.",
+   "host": true,
+   "mood": "shock",
+   "zoom": true,
+   "pause": 0.5
+  },
+  {
+   "id": "c4g",
+   "text": "You're gambling. They're doing math. And math doesn't get tired.",
+   "card": {
+    "t": "Math doesn't get tired.",
+    "dark": true
+   },
+   "sfx": "pack/02_deep",
+   "pause": 0.5
+  },
+  {
+   "id": "c5c",
+   "text": "Las Vegas casinos win about a million dollars every hour of every day and that's after paying every lucky winner like me.",
+   "pic": {
+    "id": "bellagio",
+    "look": "plain"
+   },
+   "slam": "$1M / HOUR",
+   "sfx": "cash"
+  },
+  {
+   "id": "c5f",
+   "text": "The winners are real but they get paid with the losers' money and the house keeps its bite in the middle.",
+   "meme": {
+    "t": "vs",
+    "a": "Me winning $150",
+    "b": "The casino that night"
+   },
+   "sfx": "boom"
+  },
+  {
+   "id": "n19",
+   "text": "Quick guess before I tell you. What's the most money one person ever won in a row in Las Vegas? Think of a number.",
+   "host": true,
+   "mood": "smug",
+   "pose": "point_r",
+   "sfx": "tick"
+  },
+  {
+   "id": "n20",
+   "text": "His name was Archie Karas and in nineteen ninety two he walked into Las Vegas with fifty dollars.",
+   "pic": {
+    "id": "binions",
+    "look": "polaroid",
+    "label": "Binion's Horseshoe"
+   },
+   "sfx": "drumroll"
+  },
+  {
+   "id": "n21",
+   "text": "Over the next three years he turned those fifty dollars into about forty million dollars. People call it the biggest winning streak in gambling history.",
+   "host": true,
+   "mood": "shock",
+   "pose": "panic",
+   "slam": "$40,000,000",
+   "sfx": "crowd",
+   "exag": 0.65
+  },
+  {
+   "id": "n22",
+   "text": "And then he kept playing.",
+   "card": {
+    "t": "And then he kept playing.",
+    "dark": true
+   },
+   "sfx": "pack/01_beating",
+   "pause": 0.5
+  },
+  {
+   "id": "n23",
+   "text": "In about three weeks he lost almost all of it. Forty million dollars gone because he didn't walk away.",
+   "host": true,
+   "mood": "sad",
+   "pose": "facepalm",
+   "pic": {
+    "id": "empty_wallet",
+    "look": "circle"
+   },
+   "sfx": "pack/02_evolve_brassy_drop_2"
+  },
+  {
+   "id": "n24",
+   "text": "That's the law of large numbers with a real face on it. Win big and the average still comes for you as long as you keep sitting at the table.",
+   "meme": {
+    "t": "vs",
+    "a": "Archie in 1995",
+    "b": "The average"
+   },
+   "sfx": "boom"
+  },
+  {
+   "id": "c6a",
+   "text": "But math isn't even the creepiest part. The building itself is designed to keep you inside.",
+   "chapter": "The Building Is A Trap",
+   "host": true,
+   "mood": "suspicious",
+   "pose": "point_r",
+   "sfx": "pack/01_beating",
+   "pic": {
+    "id": "casino_entrance",
+    "look": "polaroid"
+   }
+  },
+  {
+   "id": "c6b",
+   "text": "Look around a casino and try to find a clock or a window. You won't. No sun and no clock means you lose track of time and it's suddenly three in the morning.",
+   "pic": {
+    "id": "casino_floor",
+    "look": "tape"
+   },
+   "sfx": "tick"
+  },
+  {
+   "id": "c6c",
+   "text": "Then there's the chips. Handing over a real hundred dollar bill hurts but tossing a little plastic chip feels like you're playing Monopoly.",
+   "host": true,
+   "mood": "happy",
+   "pose": "present",
+   "pic": {
+    "id": "poker_chips",
+    "look": "sticker"
+   },
+   "sfx": "pop"
+  },
+  {
+   "id": "c6d",
+   "text": "And then they bring you free drinks which is very nice of them and also makes every bad bet look like a great idea.",
+   "meme": {
+    "t": "fine",
+    "a": "Just one more round"
+   },
+   "sfx": "boing"
+  },
+  {
+   "id": "n12",
+   "text": "Cheers to bad decisions.",
+   "pic": {
+    "id": "cocktail",
+    "look": "circle"
+   },
+   "sfx": "pack/camera_shutter"
+  },
+  {
+   "id": "c6e",
+   "text": "And the slot machines do this evil little thing called the near miss where two jackpots line up and the third one stops just above the line.",
+   "pic": {
+    "id": "slot_reels",
+    "look": "news",
+    "label": "SO CLOSE"
+   },
+   "sfx": "scratch"
+  },
+  {
+   "id": "c6f",
+   "text": "Scientists at Cambridge scanned people's brains and found that a near miss lights up the same reward spots as a real win. Your brain literally thinks you almost won.",
+   "host": true,
+   "mood": "shock",
+   "pose": "panic",
+   "pic": {
+    "id": "cambridge",
+    "look": "polaroid",
+    "label": "University of Cambridge"
+   },
+   "sfx": "pack/01_processing"
+  },
+  {
+   "id": "n25",
+   "text": "My brain at the slot machine.",
+   "meme": {
+    "t": "brain",
+    "a": "Losing",
+    "b": "Almost winning",
+    "c": "Basically winning"
+   },
+   "sfx": "pack/01_processing"
+  },
+  {
+   "id": "n3",
+   "text": "Be honest. You've felt that. The claw machine that almost grabbed the toy. The scratch card that was one number off.",
+   "host": true,
+   "mood": "smug",
+   "pose": "point_r",
+   "zoom": true,
+   "sfx": "boom",
+   "pic": {
+    "id": "claw",
+    "look": "sticker"
+   },
+   "pause": 0.5
+  },
+  {
+   "id": "c6g",
+   "text": "And the free hotel room and the free buffet? They're calculated from how much the casino expects you to lose. It's your own money coming back in a nicer outfit.",
+   "meme": {
+    "t": "drake",
+    "a": "Paying for dinner",
+    "b": "Free dinner that cost $300"
+   },
+   "sfx": "cash"
+  },
+  {
+   "id": "n13",
+   "text": "Enjoy the shrimp.",
+   "pic": {
+    "id": "buffet",
+    "look": "plain"
+   },
+   "sfx": "ding"
+  },
+  {
+   "id": "c8a",
+   "text": "Back to my night. It's three in the morning. My lucky streak is gone and I'm down three hundred dollars and all I can think is I just need one big win to get it back.",
+   "chapter": "3 AM",
+   "host": true,
+   "mood": "sad",
+   "pose": "facepalm",
+   "slam": "-$300",
+   "sfx": "pack/02_evolve_brassy_drop_2",
+   "exag": 0.6,
+   "pic": {
+    "id": "atm",
+    "look": "news",
+    "label": "3:07 AM"
+   }
+  },
+  {
+   "id": "n4",
+   "text": "And that thought right there is the most expensive thought in the whole building.",
+   "card": {
+    "t": "The most expensive thought.",
+    "dark": true
+   },
+   "sfx": "pack/02_deep",
+   "pause": 0.5
+  },
+  {
+   "id": "c8d",
+   "text": "Because the next spin doesn't know I lost the last one. The wheel doesn't feel sorry for me. The toll stays exactly the same.",
+   "host": true,
+   "mood": "tired",
+   "pose": "shrug",
+   "pic": {
+    "id": "roulette_ball",
+    "look": "circle"
+   }
+  },
+  {
+   "id": "n26",
+   "text": "Me trying to win it back.",
+   "meme": {
+    "t": "buttons",
+    "a": "Go to bed",
+    "b": "One more spin"
+   },
+   "sfx": "pack/01_beating"
+  },
+  {
+   "id": "n5",
+   "text": "And the worst part is I don't even need to fly to Vegas to feel this anymore because the casino now lives in your pocket.",
+   "pic": {
+    "id": "phone",
+    "look": "tape"
+   },
+   "sfx": "pack/01_beating"
+  },
+  {
+   "id": "c7b",
+   "text": "Since the Supreme Court opened the door in twenty eighteen sports betting is legal in most of the country and the app never closes.",
+   "pic": {
+    "id": "supreme_court",
+    "look": "news",
+    "label": "2018"
+   },
+   "sfx": "stamp"
+  },
+  {
+   "id": "c7e",
+   "text": "Same raccoon. New outfit. To win one hundred dollars on a typical bet you have to risk one hundred and ten.",
+   "host": true,
+   "mood": "angry",
+   "pose": "point_r",
+   "sfx": "quack"
+  },
+  {
+   "id": "n14",
+   "text": "Guess who wins that one.",
+   "meme": {
+    "t": "vs",
+    "a": "You at 2 AM",
+    "b": "The app at 2 AM"
+   },
+   "sfx": "boom"
+  },
+  {
+   "id": "c7f",
+   "text": "No drive and no dress code. Just you and your phone in bed at two in the morning.",
+   "pic": {
+    "id": "night_phone",
+    "look": "plain"
+   },
+   "sfx": "cricket"
+  },
+  {
+   "id": "n6",
+   "text": "So here's what I wish someone told me before Friday. Not financial advice. Just the stuff the casino really doesn't want you to know.",
+   "chapter": "How To Not Be Me",
+   "host": true,
+   "mood": "happy",
+   "pose": "talk",
+   "sfx": "pack/01_evolve_brassy_swell",
+   "pic": {
+    "id": "exit_sign",
+    "look": "circle"
+   }
+  },
+  {
+   "id": "c8c",
+   "text": "One. Treat it like a concert ticket. Decide the price before you walk in and leave the cards in the hotel room.",
+   "host": true,
+   "mood": "grin",
+   "pose": "point_up",
+   "pic": {
+    "id": "concert",
+    "look": "sticker"
+   },
+   "sfx": "ding"
+  },
+  {
+   "id": "c8e",
+   "text": "Two. Bring your own clock. Set an alarm on your phone because the casino will never show you one.",
+   "host": true,
+   "mood": "smug",
+   "pose": "present",
+   "pic": {
+    "id": "alarm_clock",
+    "look": "circle"
+   },
+   "sfx": "tick"
+  },
+  {
+   "id": "n7",
+   "text": "Three. When you win walk away. I know. Revolutionary.",
+   "host": true,
+   "mood": "happy",
+   "pose": "thumbs",
+   "zoom": true,
+   "sfx": "boom",
+   "pic": {
+    "id": "door",
+    "look": "tape"
+   },
+   "pause": 0.5
+  },
+  {
+   "id": "c8f",
+   "text": "And four. If it stops being fun talk to someone. In the US you can call one eight hundred gambler any time.",
+   "host": true,
+   "mood": "neutral",
+   "pose": "talk",
+   "slam": "1-800-GAMBLER",
+   "pic": {
+    "id": "hotline_phone",
+    "look": "plain"
+   }
+  },
+  {
+   "id": "c8g",
+   "text": "So I walked out with the two hundred dollars I had left and I called it the price of a very loud show.",
+   "pic": {
+    "id": "fremont",
+    "look": "polaroid",
+    "label": "walk of shame"
+   },
+   "sfx": "trombone"
+  },
+  {
+   "id": "n27",
+   "text": "The casino waving goodbye to me.",
+   "meme": {
+    "t": "stonks",
+    "a": "THANKS DAVE"
+   },
+   "sfx": "cash"
+  },
+  {
+   "id": "n8",
+   "text": "The good news is I learned how casinos really work. The bad news is it cost me three hundred dollars.",
+   "host": true,
+   "mood": "tired",
+   "pose": "shrug",
+   "zoom": true,
+   "pic": {
+    "id": "receipt",
+    "look": "polaroid"
+   },
+   "pause": 0.5
+  },
+  {
+   "id": "n9",
+   "text": "And remember the one trick I promised you at the start? It's this. They don't need you to lose tonight. They need you to come back.",
+   "host": true,
+   "mood": "suspicious",
+   "pose": "point_r",
+   "slam": "COME BACK",
+   "sfx": "pack/03_evolve_boom_brass_d",
+   "exag": 0.6
+  },
+  {
+   "id": "n10",
+   "text": "So can you beat a casino?",
+   "card": "Can you beat a casino?",
+   "sfx": "drumroll",
+   "pause": 0.5
+  },
+  {
+   "id": "n11",
+   "text": "No.",
+   "card": {
+    "t": "No.",
+    "dark": true
+   },
+   "sfx": "boom",
+   "pause": 0.6
+  },
+  {
+   "id": "c9e",
+   "text": "But next time I find out why insurance companies pay out billions every year and still make a fortune and I'm pretty sure I've been paying for it.",
+   "host": true,
+   "mood": "think",
+   "pose": "think",
+   "pic": {
+    "id": "insurance",
+    "look": "tape"
+   }
+  },
+  {
+   "id": "c9f",
+   "text": "Subscribe so I can keep losing money for science. Unlike roulette the odds here are actually in your favor.",
+   "host": true,
+   "mood": "grin",
+   "pose": "wave",
+   "sfx": "ding",
+   "pic": {
+    "id": "piggy",
+    "look": "sticker"
+   }
   }
+ ]
 }

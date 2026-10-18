@@ -13,7 +13,7 @@ import {MemberCard} from '../props8';
 import {BetPhone, BigCoin, Brain, CasinoBg, Chip, ChipStack, Cocktail, FELT, Hundred, NoClock, PlayingCard, RouletteWheel, SlotMachine} from '../props17';
 
 type SP = Omit<StickProps, 'acc' | 'seed'>;
-const Dave: React.FC<SP> = (p) => <Stick acc={['hair']} seed={7} {...p} />;
+const Dave: React.FC<SP> = (p) => <Stick big seed={7} {...p} />;
 const Boss: React.FC<SP> = (p) => <Stick acc={['tophat', 'monocle', 'tie']} seed={31} {...p} />;
 
 const G2: React.FC<{x?: number; y?: number; s?: number; r?: number; o?: number; children?: React.ReactNode}> = ({x = 0, y = 0, s = 1, r = 0, o = 1, children}) =>
