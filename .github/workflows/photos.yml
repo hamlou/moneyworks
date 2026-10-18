@@ -26,10 +26,9 @@ jobs:
       - run: python pipeline/photos.py ${{ inputs.ep }}
       - run: python pipeline/photos.py ${{ inputs.ep }} --cutout --force
       - run: |
-          git checkout -- pipeline/photos
           git config user.name "Moneyworks Bot"
           git config user.email "bot@users.noreply.github.com"
-          git add public/photos/${{ inputs.ep }}
+          git add public/photos/${{ inputs.ep }} pipeline/photos/${{ inputs.ep }}.json
           git diff --cached --quiet || git commit -q -m "${{ inputs.ep }}: photo cutouts"
           for i in 1 2 3 4 5 6; do git pull --rebase -q && git push -q && break; sleep $((RANDOM % 10 + 5)); done
       - uses: actions/upload-artifact@v4

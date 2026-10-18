@@ -19,7 +19,7 @@ from pathlib import Path
 from PIL import Image, ImageDraw
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-from photo_lib import get, info, license_ok
+from photo_lib import get, info, license_ok, search
 
 ROOT = Path(__file__).resolve().parent.parent
 ep = sys.argv[1]
@@ -53,6 +53,20 @@ if cloud:
             im.save(dst, optimize=True)
             print(f"  cutout {dst.name} {im.size}")
 else:
+    # Upgrade mode (UPGRADE.md): an entry may carry only {"id", "q"} -> first free-licence Commons hit, >= 800 px wide.
+    used = {p.get("file") for p in man["photos"]}
+    for p in man["photos"]:
+        if p.get("q") and not p.get("file") and not p.get("url"):
+            for words in (p["q"], " ".join(p["q"].split()[:2])):
+                hit = next((h for h in search(words, 20) if license_ok(h["license"]) and h["w"] >= 800 and h["title"] not in used and "svg" not in h["mime"]), None)
+                if hit:
+                    break
+            if hit:
+                p["file"] = hit["title"]
+                used.add(hit["title"])
+                print(f"  {p['id']}: '{p['q']}' -> {hit['title']}".encode("ascii", "replace").decode())
+            else:
+                problems.append(f"{p['id']}: no free photo for '{p['q']}' - write a simpler q")
     files = [p["file"] for p in man["photos"] if p.get("file")]
     meta = info(files) if files else {}
     for p in man["photos"]:

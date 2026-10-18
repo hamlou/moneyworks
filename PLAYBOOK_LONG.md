@@ -6,6 +6,8 @@ This is the bible for the channel. Series 1 (ep01–ep10) was approved by the ow
 
 > **§0.11 (owner, 11 Oct 2026) is the NEWEST rule set and overrides everything else where they conflict: no commas in the spoken script, a real photo every 10–15 s, a trend meme every ~30 s.**
 >
+> **§0.12 (Dave = host + UPGRADE mode, 18 Oct 2026) is the newest rule set: Dave talks to the viewer in the first person, almost no stats. "Redo / upgrade / ameliorate epNN" = follow `UPGRADE.md`, never rebuild from scratch.**
+>
 > **§0.10 (Human hook + mixed media v4, 10 Oct 2026) is the newest rule set: it overrides §0.3 (the freeze/rewind hook is retired) and sets 10 min+, real photos and the spoken style.**
 >
 > **Since ep61, §0 (Retention & CTR v3) OVERRIDES any older rule below that conflicts with it.** The look, cast, voice, research standard, SFX, props and pipeline stay exactly the same. What changes: how the script is *told* (one connected story, not a list of facts), how the hook is *animated*, and how thumbnails are *designed*.
@@ -522,3 +524,20 @@ Callbacks to earlier episodes are GOOD ("Remember the raccoon from our credit ca
 | 08 | Why Is Gold So Expensive? | gold cube 22 m, Nixon 1971, Buffett cube |
 | 09 | How the Stock Market Actually Works | Dave's lemonade stand, heat wave, Buffett's $1M bet |
 | 10 | "Pay in 4, 0% Interest"… How Does Klarna Make Billions? | fancier raccoon booth, babysitter paid twice |
+
+
+### 0.12 DAVE IS THE HOST + UPGRADE MODE (owner, 18 Oct 2026) — NEWEST, overrides everything above where they conflict
+
+**Owner's words:** "People don't care about stats and numbers. They care if it may happen to them, if it describes their lives. I want the script spoken to the viewer. I want real direct contact between the speaker, which is Dave, and the viewers. I don't want Dave to just look at the stats." · Data: most viewers quit in the first 30–60 s, no video passed 700 views.
+
+**A. Voice (all new AND upgraded episodes)**
+- Dave is the speaker: first person, straight to "you", like a friend on FaceTime. Other people's stories are told BY Dave. The old "narrator describes Dave" style is retired (this replaces §0.10 A "No Dave in o1": Dave is on screen talking at frame 0, next to a real photo).
+- Every beat answers "could this happen to me?" — the viewer's payday, phone, bills, habits. Not a documentary.
+- Max ONE number per ~30 s, always translated into the viewer's life. No stat lists, no "X billion per year" openers.
+- Visual: ≥ 40 % of beats are "host" scenes (big Dave facing camera + word-by-word captions, `src/upgrade.tsx`).
+
+**B. Upgrade mode — "redo / upgrade / ameliorate epNN"**
+- Never rebuild an old episode from scratch and never rewrite its `EpNN.tsx`. Follow `UPGRADE.md`: rewrite the spoken script in `pipeline/episodes/epNN.json` and add the beat fields `host / bg / mood / pose / pic / meme / slam`; `src/upgrade.tsx` lays them over the old cartoon (`tts.py` copies them into `timings.json`). New beats get ids `n1…` and must be `host`/`bg`; deleted beats are fine (`timing.tsx` hides their old scenes).
+- Photos: `pipeline/photos/epNN.json` entries may be just `{"id", "q"}` — `photos.py` (photos.yml) picks the first free-licence Commons hit and writes `file` back.
+- Order: commit JSON → `photos.yml` → `check` → `render.yml` (chunks 10) → watch the first 60 s.
+- `UPGRADE.md` is written so free claude.ai (read-only GitHub, small budget) can do it alone: it reads only `UPGRADE.md` + the episode JSON. Keep it self-contained; when a rule here changes the voice or the beat fields, update `UPGRADE.md` too.

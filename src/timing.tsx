@@ -19,7 +19,11 @@ export const useT = () => {
   const t = useContext(Ctx)!;
   const beat = (id: string) => {
     const b = t.beats.find((x) => x.id === id);
-    if (!b) throw new Error(`beat ${id} missing`);
+    // An upgraded episode (UPGRADE.md) may delete beats the old drawing still names: those scenes simply never appear.
+    if (!b) {
+      console.warn(`beat ${id} missing`);
+      return {id, start: t.total + 60, end: t.total + 61, text: '', words: [{text: '', start: t.total + 60, end: t.total + 61}]};
+    }
     return b;
   };
   const fr = (sec: number) => Math.round(sec * FPS);

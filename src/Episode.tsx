@@ -23,6 +23,7 @@ import {Ep16} from './episodes/Ep16';
 import {Ep18} from './episodes/Ep18';
 import {Ep15} from './episodes/Ep15';
 import {C} from './theme';
+import {Upgrade} from './upgrade';
 
 export type EpisodeProps = {ep: string; timings: Timings | null};
 
@@ -48,6 +49,7 @@ export const Episode: React.FC<EpisodeProps> = ({ep, timings}) => {
     <TimingProvider t={timings}>
       <AbsoluteFill style={{background: C.bg, overflow: 'hidden'}}>
         <Body />
+        <Upgrade ep={ep} />
         <AbsoluteFill style={{background: C.bg, opacity: fadeOut}} />
         <Audio src={staticFile(`${ep}/voice.wav`)} />
         <Audio src={staticFile('music/bgm.mp3')} volume={music} loop />
