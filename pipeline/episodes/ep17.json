@@ -784,10 +784,6 @@
    "pose": "thumbs",
    "zoom": true,
    "sfx": "boom",
-   "pic": {
-    "id": "door",
-    "look": "tape"
-   },
    "pause": 0.5
   },
   {
@@ -878,11 +874,7 @@
    "host": true,
    "mood": "grin",
    "pose": "wave",
-   "sfx": "ding",
-   "pic": {
-    "id": "piggy",
-    "look": "sticker"
-   }
+   "sfx": "ding"
   }
  ]
 }
