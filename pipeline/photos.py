@@ -12,6 +12,7 @@ Reads pipeline/photos/epNN.json:
 Writes public/photos/epNN/<id>.jpg (max 1600 px), fills credit/license/page back into the manifest and saves a contact
 sheet to ../qa_dl/photos_epNN.jpg - LOOK at it. Only free licences pass (PD, CC0, CC BY, CC BY-SA, Unsplash/Pexels/Pixabay, US Gov)."""
 import io
+import time
 import json
 import sys
 from pathlib import Path
@@ -57,8 +58,20 @@ else:
     used = {p.get("file") for p in man["photos"]}
     for p in man["photos"]:
         if p.get("q") and not p.get("file") and not p.get("url"):
+            # relevance: every key word of q (or for 3+ word queries all but one) must appear in the file title/description
+            keys = [w.lower().strip(".'") for w in p["q"].split() if len(w) > 2 and w.lower() not in ("the", "and", "of")]
+            need = len(keys) if len(keys) <= 2 else len(keys) - 1
+            rel = lambda h: sum(k[:6] in (h["title"] + " " + h["desc"]).lower() for k in keys) >= need
+            hit = None
             for words in (p["q"], " ".join(p["q"].split()[:2])):
-                hit = next((h for h in search(words, 20) if license_ok(h["license"]) and h["w"] >= 800 and h["title"] not in used and "svg" not in h["mime"]), None)
+                time.sleep(1.5)
+                try:
+                    hits = search(words, 25)
+                except Exception as e:
+                    print(f"  search failed for {p['id']}: {e}")
+                    time.sleep(20)
+                    hits = search(words, 25)
+                hit = next((h for h in hits if license_ok(h["license"]) and h["w"] >= 800 and h["title"] not in used and "svg" not in h["mime"] and h["mime"] != "image/webp" and rel(h)), None)
                 if hit:
                     break
             if hit:

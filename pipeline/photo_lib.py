@@ -11,7 +11,7 @@ OK_LICENSE = re.compile(r"^(pd|public domain|cc0|cc[- ]by([- ]sa)?[- ]?[0-9.]*|c
 BAD_LICENSE = re.compile(r"(-nc|-nd|non.?commercial|no.?deriv|fair use|copyrighted$)", re.I)
 
 
-def get(url, tries=5, binary=False):
+def get(url, tries=7, binary=False):
     err = None
     for i in range(tries):
         try:
@@ -21,7 +21,7 @@ def get(url, tries=5, binary=False):
             return data if binary else data.decode("utf-8")
         except Exception as e:  # network is flaky; 429 needs a real wait
             err = e
-            time.sleep(3 + i * 5)
+            time.sleep(5 + i * 10)
     raise SystemExit(f"download failed: {url} ({err})")
 
 
