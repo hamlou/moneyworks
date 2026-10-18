@@ -82,7 +82,7 @@ async def main(spec_path: str, out_dir: str):
             "id": b["id"], "text": b["text"],
             "start": t0 + words[0]["start"], "end": t0 + words[-1]["end"],
             "words": [{"text": w["text"], "start": round(t0 + w["start"], 3), "end": round(t0 + w["end"], 3)} for w in words],
-            **{k: b[k] for k in ("host", "mood", "pose", "bg", "pic", "meme", "slam") if k in b},  # UPGRADE.md layer (src/upgrade.tsx)
+            **{k: b[k] for k in ("host", "mood", "pose", "bg", "pic", "meme", "slam", "sfx", "card", "zoom") if k in b},  # UPGRADE.md layer (src/upgrade.tsx)
         })
         pcm += b"\x00\x00" * int(b.get("pause", 0.4) * SR)
         print(f"  {b['id']}: {dur:.2f}s  {len(words)} words")

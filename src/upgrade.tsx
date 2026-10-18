@@ -13,7 +13,7 @@ import {useT} from './timing';
 // with Dave talking straight to the viewer; "pic"/"meme"/"slam" float over the old drawing.
 export type Meme = {t: 'drake' | 'brain' | 'buttons' | 'fine' | 'stonks' | 'vs'; a: string; b?: string; c?: string};
 export type PicFx = string | {id: string; look?: PicLook; label?: string; cut?: boolean};
-export type Fx = {host?: boolean; mood?: Expr; pose?: string; bg?: string; pic?: PicFx; meme?: Meme; slam?: string};
+export type Fx = {host?: boolean; mood?: Expr; pose?: string; bg?: string; pic?: PicFx; meme?: Meme; slam?: string; sfx?: string; card?: string | {t: string; dark?: boolean}; zoom?: boolean};
 
 const LOOKS: PicLook[] = ['polaroid', 'tape', 'news', 'sticker', 'circle', 'plain'];
 const POSES = ['talk', 'present', 'point_r', 'shrug', 'hips', 'think'];
@@ -131,7 +131,7 @@ export const Upgrade: React.FC<{ep: string}> = ({ep}) => {
   const f = useCurrentFrame();
   const {t, fr} = useT();
   const beats = t.beats as (typeof t.beats[number] & Fx)[];
-  if (!beats.some((b) => b.host || b.bg || b.pic || b.meme || b.slam)) return null;
+  if (!beats.some((b) => b.host || b.bg || b.pic || b.meme || b.slam || b.card)) return null;
   const cues: Cue[] = [];
   const layers: React.ReactNode[] = [];
   let side = 0;
@@ -139,15 +139,23 @@ export const Upgrade: React.FC<{ep: string}> = ({ep}) => {
     const at = Math.max(0, fr(b.start) - 4);
     const next = beats[i + 1];
     const out = Math.max(at + 90, next ? fr(next.start) - 2 : fr(b.end) + 20);
-    const cover = !!(b.host || b.bg);
+    const cover = !!(b.host || b.bg || b.card);
     const pic = typeof b.pic === 'string' ? {id: b.pic} : b.pic;
     const picSrc = pic ? `${ep}/${pic.id}.${pic.cut ? 'png' : 'jpg'}` : '';
-    if (cover && f >= at && f < (next && (next.host || next.bg) ? fr(next.start) - 4 : fr(b.end) + 12)) {
+    const coverEnd = next && (next.host || next.bg || next.card) ? fr(next.start) - 4 : fr(b.end) + 12;
+    if (b.card && f >= at && f < coverEnd) {
+      const c = typeof b.card === 'string' ? {t: b.card} : b.card;
+      layers.push(
+        <AbsoluteFill key={`c${i}`} style={{background: c.dark ? '#000' : '#F2F2F2', alignItems: 'center', justifyContent: 'center'}}>
+          <div style={{fontFamily: 'Caveat', fontWeight: 700, fontSize: c.t.length > 14 ? 120 : 220, color: c.dark ? '#fff' : C.ink, textAlign: 'center', maxWidth: 1600, lineHeight: 0.95, transform: `scale(${pop(f, at, 10, 220)})`}}>{c.t}</div>
+        </AbsoluteFill>,
+      );
+    } else if (cover && f >= at && f < coverEnd) {
       const k = f - at;
-      const punch = 1 + 0.06 * (1 - ease(k, 0, 10));
+      const punch = b.zoom ? 1 + 0.9 * ease(k, 0, 5) : 1 + 0.06 * (1 - ease(k, 0, 10));
       const daveX = pic ? 470 : 560;
       layers.push(
-        <AbsoluteFill key={`h${i}`} style={{transform: `scale(${punch})`}}>
+        <AbsoluteFill key={`h${i}`} style={{transform: `scale(${punch})`, transformOrigin: b.zoom ? `${(pic ? 470 : 560) / 19.2}% 40%` : '50% 50%'}}>
           {b.bg ? <PicBg f={f} src={`${ep}/${b.bg}.jpg`} from={at} dim={0.45} /> : <AbsoluteFill style={{background: `radial-gradient(circle at 30% 40%, #fff 0%, ${i % 2 ? C.sky : C.stone} 70%)`}} />}
           <Svg>
             <ellipse cx={daveX} cy={1050} rx={260} ry={34} fill="rgba(0,0,0,0.18)" />
@@ -166,7 +174,9 @@ export const Upgrade: React.FC<{ep: string}> = ({ep}) => {
       if (b.meme) layers.push(<MemeCard key={`m${i}`} f={f} at={at} out={Math.min(out, at + 150)} m={b.meme} />);
       if (b.slam) layers.push(<Slam key={`s${i}`} f={f} at={at} text={b.slam} x={960} y={150} size={150} color={C.yellow} out={out} />);
     }
-    if (cover) cues.push({at, src: 'whoosh_s', v: 0.35});
+    if (b.sfx) cues.push({at, src: b.sfx, v: 0.8});
+    else if (b.zoom) cues.push({at, src: 'boom', v: 0.8});
+    else if (cover) cues.push({at, src: 'whoosh_s', v: 0.35});
     if (pic) cues.push({at: at + 6, src: 'paper', v: 0.6});
     if (b.meme) cues.push({at, src: 'pop', v: 0.6});
     if (b.slam) cues.push({at: at + 2, src: 'stamp', v: 0.5});

@@ -26,6 +26,25 @@ Why: viewers left in the first 30 s. Old episodes open with stats and an agenda 
 - Ask the viewer things: "Be honest." "Guess before I tell you." "Pick one. A or B." Two such games per video.
 - A laugh every ~30 s (Dave's reaction, a silly comparison). One running gag that returns 3 times and pays off at the end.
 
+## 2b. THE STYLE TO COPY (owner's favourite videos, analysed 18 Oct 2026)
+**Voice + script = "Can I Go VIRAL In 7 Days?" (Erthlord, 103K views).** Dave tells HIS OWN adventure like a funny friend. Copy these moves:
+- **Opens on Dave's personal problem in 3 words**, then the challenge: "I have a problem. I'm broke." → "So for the next ten minutes I'm going to try to beat a casino with five hundred dollars." A clear GOAL + a DEADLINE + a SCOREBOARD the viewer can follow ("only 4,998 to go").
+- **Self-roast gags:** "I'm a very creative person so I named it Dave's Fund. I couldn't think of anything else."
+- **Say it, then do the opposite:** "I would never do something that dumb right? … I'm doing something that dumb."
+- **Good news / bad news** with the same fact: "The good news is I've got forty-nine dollars. The bad news is I've got forty-nine dollars."
+- **Tiny reaction lines** to fake chat/comments ("this is so fake") and to the viewer ("What do you mean it's stupid?").
+- **Progress check-ins** ("Day two." "One hour later.") with a scoreboard number that matters to the GOAL, never a random stat.
+- **A soft serious beat at ~70 %** ("does any of this even matter?") → "Yeah whatever. Back to the casino." Then the ending answers the title question in one word: "Can you beat a casino? No."
+- Numbers are only the scoreboard of Dave's own story. Real-world facts enter as "so I looked it up and…" (one line), never as a lecture.
+
+**Hook = "Grox tutorial" (v1) + "This is me two years ago" (v2).** Both beat ours by far:
+- 0–5 s: proof the viewer WANTS this: a flood of fake comments/notifications ("make a video about this!!") or "This is me [time] ago" + the sad scoreboard (10 views / $0).
+- 5–15 s: one sentence promise + **show the end result** ("at the end of this video I'll [do X] live").
+- 15–25 s: the objection killer ("most people think it's impossible… it's actually easy") or the dare ("most people won't watch to the end… if you do you're ahead of 99 %").
+- **Edit pace:** a new visual every ~1 s in the hook (v1 has 30 changes in 30 s), every ~4 s in the body (v3: 123 cuts in 9 min). Kinetic words center screen, one key word in red/yellow, a red underline, arrows pointing.
+
+**Sound (v3):** a meme sound on every joke: `boom` (vine boom on a punchline/close-up), `scratch` (record scratch on "wait what"), `drumroll` before a reveal, `trombone` on a fail, `cricket` on silence/awkward, `crowd` on a win, `riser` before a big moment, `ding` on a scoreboard update. Silence + black card is a joke too ("Hopefully.").
+
 ## 3. Structure (keep it simple)
 - **Hook = beats `o1`…`o5`**, ≤ 25 s, ≤ 75 words, ids MUST start with `o` (they get the fast hook voice). Jobs, in any order:
   1. o1 = ONE flowing sentence to "you" that confirms the title and hits the viewer's own life. No stats in o1.
@@ -52,6 +71,9 @@ Why: viewers left in the first 30 s. Old episodes open with stats and an agenda 
 | `pic` | A real photo pops in (beside Dave in host scenes, top-left/right over the cartoon otherwise). | `"id"` or `{"id": "x", "look": "polaroid\|tape\|news\|sticker\|circle\|plain", "label": "Las Vegas 2024"}` |
 | `meme` | A meme card redrawn with our cast (center, 5 s). | `{"t": "drake", "a": "no line", "b": "yes line"}` · `{"t": "brain", "a", "b", "c"}` · `{"t": "buttons", "a", "b"}` · `{"t": "fine", "a"}` · `{"t": "stonks", "a"}` · `{"t": "vs", "a", "b"}` |
 | `slam` | Giant yellow kinetic word(s), ≤ 3 words. | `"ALL IN"` |
+| `sfx` | A sound at the start of the beat (overrides the default). | `boom` `scratch` `drumroll` `riser` `trombone` `cricket` `crowd` `ding` `cash` `boing` `quack` `sting` `thud` `pop` |
+| `zoom` | Comedy punch-in on Dave's face (host beats) + vine boom. Use on punchlines. | `true` |
+| `card` | Full-screen title card (white), covers everything; `dark` = black card. Use for "THE PLAN", "Day 2", "Hopefully.", "One hour later". | `"THE PLAN"` or `{"t": "Hopefully.", "dark": true}` |
 
 **Rules for using them:**
 - **The whole hook (`o1`–`o5`) is `host` or `bg`**, with a `pic` in o1 and a `slam` on the stakes beat.
@@ -60,6 +82,7 @@ Why: viewers left in the first 30 s. Old episodes open with stats and an agenda 
 - **A new `pic` about every 12 s** (≈ every 2nd beat) → 40–55 photos. Each photo id is used ONCE. Never two `pic` beats in a row with the same `look`.
 - **A `meme` about every 30 s** (≈ every 5th beat) → 15–20 memes, text ≤ 7 words per line, funny and about the viewer.
 - Never a `meme` and a `pic` on the same non-host beat.
+- **`sfx` on ≥ 1 beat in 3** (every joke gets a sound). `zoom` on 6–10 punchlines. `card` 5–8 times (one short beat each: the card text IS the spoken line, ≤ 4 words).
 
 ## 5. Photo manifest `pipeline/photos/epNN.json`
 ```json
@@ -81,6 +104,7 @@ Why: viewers left in the first 30 s. Old episodes open with stats and an agenda 
 6. Open the render run → download artifact `epNN-video` → watch the first 60 s before uploading.
 
 ## 6. Self-check before you output (silently, don't print it)
+- [ ] It's Dave's own adventure with a GOAL + scoreboard (§2b); self-roast, say-then-opposite, good news/bad news all used.
 - [ ] Dave speaks in first person to "you" the whole time; no beat starts with "Dave …" as a narrator.
 - [ ] Zero commas in every `text`; hook ≤ 75 words with no stats in o1 and no agenda.
 - [ ] ≤ 1 number per ~30 s; every number translated into the viewer's life.
