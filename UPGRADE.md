@@ -71,7 +71,7 @@ Why: viewers left in the first 30 s. Old episodes open with stats and an agenda 
 | `pic` | A real photo pops in (beside Dave in host scenes, top-left/right over the cartoon otherwise). | `"id"` or `{"id": "x", "look": "polaroid\|tape\|news\|sticker\|circle\|plain", "label": "Las Vegas 2024"}` |
 | `meme` | A meme card redrawn with our cast (center, 5 s). | `{"t": "drake", "a": "no line", "b": "yes line"}` · `{"t": "brain", "a", "b", "c"}` · `{"t": "buttons", "a", "b"}` · `{"t": "fine", "a"}` · `{"t": "stonks", "a"}` · `{"t": "vs", "a", "b"}` |
 | `slam` | Giant yellow kinetic word(s), ≤ 3 words. | `"ALL IN"` |
-| `sfx` | A sound at the start of the beat (overrides the default). | `boom` `scratch` `drumroll` `riser` `trombone` `cricket` `crowd` `ding` `cash` `boing` `quack` `sting` `thud` `pop` |
+| `sfx` | A sound at the start of the beat (overrides the default). | `boom` `scratch` `drumroll` `riser` `trombone` `cricket` `crowd` `ding` `cash` `boing` `quack` `sting` `thud` `pop` · owner pack: `pack/01_boom` (big cinematic hit) `pack/03_evolve_boom_brass_d` (dramatic brass) `pack/01_evolve_brassy_swell` (build-up) `pack/02_evolve_brassy_drop_2` (drop) `pack/02_deep` (deep impact) `pack/01_beating` (heartbeat tension) `pack/01_processing` (computer thinking) `pack/02_dial_up` (old internet) `pack/camera_shutter` (photo snap) `pack/001` `pack/002` |
 | `zoom` | Comedy punch-in on Dave's face (host beats) + vine boom. Use on punchlines. | `true` |
 | `card` | Full-screen title card (white), covers everything; `dark` = black card. Use for "THE PLAN", "Day 2", "Hopefully.", "One hour later". | `"THE PLAN"` or `{"t": "Hopefully.", "dark": true}` |
 
@@ -82,6 +82,7 @@ Why: viewers left in the first 30 s. Old episodes open with stats and an agenda 
 - **A new `pic` about every 12 s** (≈ every 2nd beat) → 40–55 photos. Each photo id is used ONCE. Never two `pic` beats in a row with the same `look`.
 - **A `meme` about every 30 s** (≈ every 5th beat) → 15–20 memes, text ≤ 7 words per line, funny and about the viewer.
 - Never a `meme` and a `pic` on the same non-host beat.
+- All sounds are normalised to −24 LUFS, under the voice: never stack more than 1 `sfx` per beat.
 - **`sfx` on ≥ 1 beat in 3** (every joke gets a sound). `zoom` on 6–10 punchlines. `card` 5–8 times (one short beat each: the card text IS the spoken line, ≤ 4 words).
 
 ## 5. Photo manifest `pipeline/photos/epNN.json`
