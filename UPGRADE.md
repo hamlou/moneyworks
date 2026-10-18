@@ -12,6 +12,11 @@ Claude, this file is everything you need. Follow it exactly.
 - Output = exactly **2 code blocks**: (1) the full new `pipeline/episodes/epNN.json`, (2) the full `pipeline/photos/epNN.json`. Then the 6-line "what to click" list from §5. Nothing else.
 - If your reply is about to cut off: stop right after a complete beat `},` and write `CONTINUE FROM <next beat id>`. When the owner says "continue", go on in a new code block from that beat. The owner pastes the parts one after another.
 
+## 0b. Fixed choices (owner, 18 Oct 2026)
+- **Voice = Chatterbox** (owner: "very human"). Put `"voice": "chatterbox"` at the top level of the JSON. It speaks fast (~230 words/min): write **1,750–2,000 words** for ~9–10 min. A beat may carry `"exag": 0.6` (more emotion, max 0.7) on 3–6 big moments; default 0.5.
+- **Dave = the new big-head Dave** (channel avatar). Nothing to do in the JSON: the code already draws him.
+- Worked example: `pipeline/episodes/ep17.json` (the first upgrade). Read it ONLY if you are unsure of the format.
+
 ## 1. What the upgrade is
 Same topic, same story idea and same `youtube`/`sources` blocks. You rewrite the **spoken script** and add **visual fields** to the beats. The old cartoon still plays underneath; the new fields lay real photos, memes, big words and "Dave talks to camera" scenes on top. No code is changed.
 
@@ -55,7 +60,7 @@ Why: viewers left in the first 30 s. Old episodes open with stats and an agenda 
 - **Chapter cards:** keep max 4 `"chapter"` fields, and each title is a curiosity phrase ("The trick on the carpet"), not a topic ("Casino Math"). Delete the other `"chapter"` keys.
 - Re-hook every 60–90 s ("and that's when I noticed something weird…"). At ~75 % a low point, then the fix as things the viewer can DO.
 - End: Dave's 3 quick lessons in ≤ 15 s → tease the next video as a new problem → a subscribe joke.
-- **Length: 1,550–1,750 words** (≈ 10–12 min). Fill with stories and viewer scenes, never repetition.
+- **Length: 1,750–2,000 words** (Chatterbox ≈ 9–10 min). Fill with stories and viewer scenes, never repetition.
 - Add at the top level: `"tts": {"rate": "-5%", "hook_rate": "+3%", "lead": 0.08}`. Give ≥ 8 beats their own `"rate"` (excited `"+6%"`, slow reveal `"-12%"`). Beat `"pause"` 0.2–0.4 (hook 0.15).
 
 ## 4. Beat fields (the visuals) — the code reads these
@@ -100,9 +105,10 @@ Why: viewers left in the first 30 s. Old episodes open with stats and an agenda 
 1. github.com/hamlou/moneyworks → `pipeline/episodes/epNN.json` → ✏️ → select all → paste block 1 → Commit.
 2. `pipeline/photos/` → Add file → Create new file → name `epNN.json` → paste block 2 → Commit.
 3. Actions → **photos** → Run workflow → `epNN` → wait for ✅ (if ❌ "no free photo for X": tell Claude, it gives a simpler `q`).
-4. Actions → **check** must be ✅ (if ❌ paste its error to Claude).
-5. Actions → **render** → Run workflow → `epNN`, chunks `10` → wait ✅ (~20–40 min).
-6. Open the render run → download artifact `epNN-video` → watch the first 60 s before uploading.
+4. Actions → **voice** → Run workflow → `epNN` → wait ✅ (~30–60 min, Chatterbox). Re-run it after ANY change to a beat's `text`; visual-only changes don't need it.
+5. Actions → **check** must be ✅ (if ❌ paste its error to Claude).
+6. Actions → **render** → Run workflow → `epNN`, chunks `10` → wait ✅ (~20–40 min).
+7. Open the render run → download artifact `epNN-video` → watch the first 60 s before uploading.
 
 ## 6. Self-check before you output (silently, don't print it)
 - [ ] It's Dave's own adventure with a GOAL + scoreboard (§2b); self-roast, say-then-opposite, good news/bad news all used.

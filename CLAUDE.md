@@ -1,6 +1,6 @@
 # Moneyworks — stickman money explainer channel
 
-**Newest (18 Oct 2026, PLAYBOOK_LONG §0.12):** Dave is the host talking to "you" in the first person, almost no stats. "Redo / upgrade / ameliorate epNN" = follow `UPGRADE.md` (edit the episode JSON only, overlay layer `src/upgrade.tsx`), never rebuild from scratch.
+**Newest (18 Oct 2026, PLAYBOOK_LONG §0.12):** Dave is the host talking to "you" in the first person, almost no stats. "Redo / upgrade / ameliorate epNN" = follow `UPGRADE.md` (edit the episode JSON only, overlay layer `src/upgrade.tsx`), never rebuild from scratch. Dave = new big-head avatar Dave (`<Stick big>`), voice = Chatterbox (`voice.yml`), §0.12 C.
 
 **Two playbooks, never mix them (owner, 11 Oct 2026):** long-form episodes (`epNN`, 16:9, 10 min+) → `PLAYBOOK_LONG.md`. Vertical Shorts (`shortNN`, 9:16) → `PLAYBOOK_SHORTS.md`. `PLAYBOOK.md` is only the index. "PLAYBOOK §x" below means `PLAYBOOK_LONG.md`.
 

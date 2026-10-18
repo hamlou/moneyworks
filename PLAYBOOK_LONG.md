@@ -541,3 +541,8 @@ Callbacks to earlier episodes are GOOD ("Remember the raccoon from our credit ca
 - Photos: `pipeline/photos/epNN.json` entries may be just `{"id", "q"}` — `photos.py` (photos.yml) picks the first free-licence Commons hit and writes `file` back.
 - Order: commit JSON → `photos.yml` → `check` → `render.yml` (chunks 10) → watch the first 60 s.
 - `UPGRADE.md` is written so free claude.ai (read-only GitHub, small budget) can do it alone: it reads only `UPGRADE.md` + the episode JSON. Keep it self-contained; when a rule here changes the voice or the beat fields, update `UPGRADE.md` too.
+
+**C. New Dave + Chatterbox voice (owner, 18 Oct 2026) — every video from now on**
+- Dave is the channel-avatar Dave: `<Stick big seed={7} … />` (huge round head, dot eyes, no hair; brows only on strong emotions). Never `acc={['hair']}` again. `src/memes52.tsx` `Dave` is already the new one; new episodes import it instead of redefining Dave. Clean avatar cutout: `public/dave_new.png` (thumbnails).
+- Voice: `"voice": "chatterbox"` in the episode JSON → run `voice.yml` once per script (12 machines, cached in `pipeline/voice/epNN.flac|json`), then `render.yml`. Chatterbox ≈ 230 words/min → 1,750–2,000 words for 9–10 min. `"exag"` 0.5 default, ≤ 0.7 on big moments. Andrew/edge-tts stays only as fallback.
+- Every sound is loudness-normalised to −24 LUFS (voice −16): an `sfx` can never be louder than Dave. Owner's pack: `public/sfx/pack/` (`index.txt`).
