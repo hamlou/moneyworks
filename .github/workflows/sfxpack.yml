@@ -17,7 +17,13 @@ jobs:
           python-version: '3.12'
       - run: sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg
       - run: pip install -q gdown
-      - run: gdown --folder "https://drive.google.com/drive/folders/${{ inputs.folder }}" -O raw || python -c "import gdown;gdown.download_folder('https://drive.google.com/drive/folders/${{ inputs.folder }}',output='raw',remaining_ok=True)"; find raw -type f | head -60
+      - run: |
+          mkdir -p raw
+          for id in 1QOJhxv0AljotWBQ76rXZlHTWvkeG2Ub4 1CmbghLbUWUcrkXpwTYXzfGNphckHMiRn 1xSsK_2cH5ohY4LkaFZKYEkQHalcMsdJt 1nzGmrT-MOYXO1q1JVix8zPaL0psOAXv8 1mxZPH1ppedJDqFS8XiIn3Cd_tzmnL7d_ 1h762BBSQ9TMgijd8rcACZOtGikhvVUGl 1EbOLp7QOJJ8unINCsHW0BPXXkpZmNE1c 1w5k5eWT4qqp7SJ8GIdEMIiIfQvzGRsXQ 1z1BqCcRz_7O-Um1up8HvhCVnZC0Xw2Qa 1CwL2A6O0iCylFYvmkJVetV1Em1ROykCZ 1_LARkkzl6jSyKUbc4vHsdu9wkh0KD1vX; do
+            (cd raw && gdown -q "$id") || gdown -q "https://drive.google.com/drive/folders/$id" -O "raw/$id" || echo "skip $id"
+            sleep 2
+          done
+          find raw -type f | head -80; du -sh raw
       - run: python pipeline/sfxpack.py
       - run: |
           git config user.name "Moneyworks Bot"
