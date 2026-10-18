@@ -17,7 +17,7 @@ jobs:
           python-version: '3.12'
       - run: sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg
       - run: pip install -q gdown
-      - run: gdown --folder "https://drive.google.com/drive/folders/${{ inputs.folder }}" -O raw --remaining-ok || true; find raw -type f | head -50
+      - run: gdown --folder "https://drive.google.com/drive/folders/${{ inputs.folder }}" -O raw || python -c "import gdown;gdown.download_folder('https://drive.google.com/drive/folders/${{ inputs.folder }}',output='raw',remaining_ok=True)"; find raw -type f | head -60
       - run: python pipeline/sfxpack.py
       - run: |
           git config user.name "Moneyworks Bot"
