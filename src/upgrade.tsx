@@ -152,10 +152,15 @@ export const Upgrade: React.FC<{ep: string}> = ({ep}) => {
       );
     } else if (cover && f >= at && f < coverEnd) {
       const k = f - at;
-      const punch = b.zoom ? 1 + 0.9 * ease(k, 0, 5) : 1 + 0.06 * (1 - ease(k, 0, 10));
       const daveX = pic ? 470 : 560;
+      // Camera cuts like the owner's reference videos: a new framing about every 1.8 s (wide -> face close-up -> medium).
+      const shot = Math.floor(k / 54);
+      const SHOTS: [number, string][] = [[1, '50% 50%'], [1.32, `${daveX / 19.2}% 28%`], [1.12, pic ? '70% 40%' : '35% 45%']];
+      const [sc, origin] = SHOTS[(shot + i) % 3];
+      const kick = 1 + 0.05 * (1 - ease(k - shot * 54, 0, 8));
+      const punch = b.zoom ? 1 + 0.9 * ease(k, 0, 5) : sc * kick;
       layers.push(
-        <AbsoluteFill key={`h${i}`} style={{transform: `scale(${punch})`, transformOrigin: b.zoom ? `${(pic ? 470 : 560) / 19.2}% 40%` : '50% 50%'}}>
+        <AbsoluteFill key={`h${i}`} style={{transform: `scale(${punch})`, transformOrigin: b.zoom ? `${daveX / 19.2}% 40%` : origin}}>
           {b.bg ? <PicBg f={f} src={`${ep}/${b.bg}.jpg`} from={at} dim={0.45} /> : <AbsoluteFill style={{background: `radial-gradient(circle at 30% 40%, #fff 0%, ${i % 2 ? C.sky : C.stone} 70%)`}} />}
           <Svg>
             <ellipse cx={daveX} cy={1050} rx={260} ry={34} fill="rgba(0,0,0,0.18)" />
