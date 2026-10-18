@@ -2,187 +2,371 @@
  "photos": [
   {
    "id": "strip",
-   "q": "Las Vegas Strip night"
+   "q": "Las Vegas Strip night",
+   "file": "File:Las Vegas (Nevada, USA), The Strip -- 2012 -- 6232.jpg",
+   "credit": "Dietmar Rabich",
+   "license": "CC BY-SA 4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Las_Vegas_(Nevada,_USA),_The_Strip_--_2012_--_6232.jpg"
   },
   {
    "id": "chips",
-   "q": "casino chips stack"
+   "q": "casino chips stack",
+   "file": "File:Poker Chips and Dealer Button (52485342107).jpg",
+   "credit": "Jerom Gerard",
+   "license": "CC BY 2.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Poker_Chips_and_Dealer_Button_(52485342107).jpg"
   },
   {
    "id": "carpet",
-   "q": "casino carpet"
+   "q": "casino carpet",
+   "file": "File:Atlantis Casino Resort Spa - July 2021 - Sarah Stierch 2.jpg",
+   "credit": "Missvain",
+   "license": "CC BY 4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Atlantis_Casino_Resort_Spa_-_July_2021_-_Sarah_Stierch_2.jpg"
   },
   {
    "id": "notebook",
-   "q": "notebook pen"
+   "q": "notebook pen",
+   "file": "File:Woman writing on a notebook with a pen.jpg",
+   "credit": "Kristin Hardwick",
+   "license": "CC0",
+   "page": "https://commons.wikimedia.org/wiki/File:Woman_writing_on_a_notebook_with_a_pen.jpg"
   },
   {
    "id": "roulette",
-   "q": "roulette wheel"
+   "q": "roulette wheel",
+   "file": "File:Roulette wheel in a casino.jpg",
+   "credit": "Legoloiii",
+   "license": "CC BY-SA 4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Roulette_wheel_in_a_casino.jpg"
   },
   {
    "id": "security",
-   "q": "casino security camera"
+   "q": "casino security camera",
+   "file": "File:Casino camera.jpg",
+   "credit": "Raul654",
+   "license": "CC BY-SA 3.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Casino_camera.jpg"
   },
   {
    "id": "dealer",
-   "q": "casino dealer"
+   "q": "casino dealer",
+   "file": "File:Gonçalo Leandro at Casino Estoril Portugal 2012. Photo by Ithaka Darin Pappas.jpg",
+   "credit": "IthakaDarinPappas",
+   "license": "CC BY-SA 4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Gon%C3%A7alo_Leandro_at_Casino_Estoril_Portugal_2012._Photo_by_Ithaka_Darin_Pappas.jpg"
   },
   {
    "id": "pascal",
-   "q": "Blaise Pascal portrait"
+   "q": "Blaise Pascal portrait",
+   "file": "File:Portrait de Blaise Pascal (MARQ 999.3.1).jpg",
+   "credit": "AnonymousUnknown author",
+   "license": "CC BY-SA 4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Portrait_de_Blaise_Pascal_(MARQ_999.3.1).jpg"
   },
   {
    "id": "perpetual",
-   "q": "perpetual motion machine"
+   "q": "perpetual motion machine",
+   "file": "File:Redheffer's perpetual motion machine - Franklin Institute - DSC06610.jpg",
+   "credit": "Daderot",
+   "license": "Public domain",
+   "page": "https://commons.wikimedia.org/wiki/File:Redheffer%27s_perpetual_motion_machine_-_Franklin_Institute_-_DSC06610.jpg"
   },
   {
    "id": "roulette_table",
-   "q": "roulette table layout"
+   "q": "roulette table layout",
+   "file": "File:Edvard Munch - At the Roulette Table in Monte Carlo - Google Art Project.jpg",
+   "credit": "Edvard Munch",
+   "license": "Public domain",
+   "page": "https://commons.wikimedia.org/wiki/File:Edvard_Munch_-_At_the_Roulette_Table_in_Monte_Carlo_-_Google_Art_Project.jpg"
   },
   {
    "id": "toll_booth",
-   "q": "toll booth"
+   "q": "toll booth",
+   "file": "File:Itchen Bridge toll booths.jpg",
+   "credit": "Murgatroyd49",
+   "license": "CC BY-SA 4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Itchen_Bridge_toll_booths.jpg"
   },
   {
    "id": "raccoon",
-   "q": "raccoon"
+   "q": "raccoon",
+   "file": "File:Raccoon (Procyon lotor) 2.jpg",
+   "credit": "Darkone",
+   "license": "CC BY-SA 2.5",
+   "page": "https://commons.wikimedia.org/wiki/File:Raccoon_(Procyon_lotor)_2.jpg"
   },
   {
    "id": "blackjack",
-   "q": "blackjack table"
+   "q": "blackjack table",
+   "file": "File:Blackjack table.png",
+   "credit": "Binbin245",
+   "license": "CC0",
+   "page": "https://commons.wikimedia.org/wiki/File:Blackjack_table.png"
   },
   {
    "id": "thorp",
-   "q": "blackjack hand cards"
+   "q": "blackjack hand cards",
+   "file": "File:Winning Blackjack hand (5857826966).jpg",
+   "credit": "Images Money",
+   "license": "CC BY 2.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Winning_Blackjack_hand_(5857826966).jpg"
   },
   {
    "id": "playing_cards",
-   "q": "playing cards"
+   "q": "playing cards",
+   "file": "File:Valentin de Boulogne - Soldiers Playing Cards and Dice (The Cheats).jpg",
+   "credit": "Valentin de Boulogne",
+   "license": "Public domain",
+   "page": "https://commons.wikimedia.org/wiki/File:Valentin_de_Boulogne_-_Soldiers_Playing_Cards_and_Dice_(The_Cheats).jpg"
   },
   {
    "id": "slots",
-   "q": "slot machines casino"
+   "q": "slot machines casino",
+   "file": "File:Slot Machines at the Rio Casino in Las Vegas 1.jpg",
+   "credit": "Lchung9779",
+   "license": "CC BY 4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Slot_Machines_at_the_Rio_Casino_in_Las_Vegas_1.jpg"
   },
   {
    "id": "liberty_bell",
-   "q": "Liberty Bell slot machine"
+   "q": "Liberty Bell slot machine",
+   "file": "File:Liberty Bell Slot Machine - 2021-09-17 - Sarah Stierch.jpg",
+   "credit": "Missvain",
+   "license": "CC BY 4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Liberty_Bell_Slot_Machine_-_2021-09-17_-_Sarah_Stierch.jpg"
   },
   {
    "id": "casino_vault",
-   "q": "bank vault door"
+   "q": "bank vault door",
+   "file": "File:Ocean National Bank vault door.png",
+   "credit": "Walling, George W. Recollections of a New York Chief of Police. Caxton book concern, limit",
+   "license": "Public domain",
+   "page": "https://commons.wikimedia.org/wiki/File:Ocean_National_Bank_vault_door.png"
   },
   {
    "id": "coin",
-   "q": "coin toss"
+   "q": "coin toss",
+   "file": "File:Coin Toss (3635981474).jpg",
+   "credit": "ICMA Photos",
+   "license": "CC BY-SA 2.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Coin_Toss_(3635981474).jpg"
   },
   {
    "id": "bernoulli",
-   "q": "Ars Conjectandi"
+   "q": "Ars Conjectandi",
+   "file": "File:Arsconj.gif",
+   "credit": "Jakob Bernoulli",
+   "license": "Public domain",
+   "page": "https://commons.wikimedia.org/wiki/File:Arsconj.gif"
   },
   {
    "id": "mgm",
-   "q": "MGM Grand Las Vegas"
+   "q": "MGM Grand Las Vegas",
+   "file": "File:Las Vegas MGM Grand at day 2013.jpg",
+   "credit": "Tuxyso",
+   "license": "CC BY-SA 3.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Las_Vegas_MGM_Grand_at_day_2013.jpg"
   },
   {
    "id": "bellagio",
-   "q": "Bellagio Las Vegas"
+   "q": "Bellagio Las Vegas",
+   "file": "File:Bellagio Las Vegas December 2013 panorama.jpg",
+   "credit": "King of Hearts",
+   "license": "CC BY-SA 3.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Bellagio_Las_Vegas_December_2013_panorama.jpg"
   },
   {
    "id": "binions",
-   "q": "Binion's Horseshoe"
+   "q": "Binion's Horseshoe",
+   "file": "File:Binions horseshoe 1986.jpg",
+   "credit": "Larry D. Moore",
+   "license": "CC BY 4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Binions_horseshoe_1986.jpg"
   },
   {
    "id": "empty_wallet",
-   "q": "empty wallet"
+   "q": "empty wallet",
+   "file": "File:Empty tank empty wallet.jpg",
+   "credit": "BigBruiser",
+   "license": "CC BY-SA 4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Empty_tank_empty_wallet.jpg"
   },
   {
    "id": "casino_entrance",
-   "q": "Caesars Palace"
+   "q": "Caesars Palace",
+   "file": "File:Caesars Palace and fountains, Las Vegas - April 2026.jpg",
+   "credit": "Christian David",
+   "license": "CC BY-SA 4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Caesars_Palace_and_fountains,_Las_Vegas_-_April_2026.jpg"
   },
   {
    "id": "casino_floor",
-   "q": "casino floor interior"
+   "q": "casino floor interior",
+   "file": "File:Aria casino floor in Las Vegas (2010).jpg",
+   "credit": "La Citta Vita",
+   "license": "CC BY-SA 2.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Aria_casino_floor_in_Las_Vegas_(2010).jpg"
   },
   {
    "id": "poker_chips",
-   "q": "poker chips"
+   "q": "poker chips",
+   "file": "File:Two poker cards and poker chips 20170611.jpg",
+   "credit": "Santeri Viinamäki",
+   "license": "CC BY-SA 4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Two_poker_cards_and_poker_chips_20170611.jpg"
   },
   {
    "id": "cocktail",
-   "q": "cocktail glass"
+   "q": "cocktail glass",
+   "file": "File:Cocktail-glass.jpg",
+   "credit": "Evan-Amos",
+   "license": "Public domain",
+   "page": "https://commons.wikimedia.org/wiki/File:Cocktail-glass.jpg"
   },
   {
    "id": "slot_reels",
-   "q": "slot machine reels"
+   "q": "slot machine reels",
+   "file": "File:Mills Novelty Co. Horse Head Bonus Antique Slot Machine.jpg",
+   "credit": "Gameroom Show, https://www.gameroomshow.com/faq/#Copyright",
+   "license": "CC BY-SA 4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Mills_Novelty_Co._Horse_Head_Bonus_Antique_Slot_Machine.jpg"
   },
   {
    "id": "cambridge",
-   "q": "University of Cambridge King's College"
+   "q": "University of Cambridge King's College",
+   "file": "File:King's College Chapel, Cambridge - The Great East Window.jpg",
+   "credit": "DeFacto",
+   "license": "CC BY-SA 4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:King%27s_College_Chapel,_Cambridge_-_The_Great_East_Window.jpg"
   },
   {
    "id": "claw",
-   "q": "claw crane game"
+   "q": "claw crane game",
+   "file": "File:ClawCraneCPU.jpg",
+   "credit": "Kapolu",
+   "license": "CC BY-SA 4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:ClawCraneCPU.jpg"
   },
   {
    "id": "buffet",
-   "q": "buffet restaurant food"
+   "q": "buffet restaurant food",
+   "file": "File:Man at chain buffet restaurant.jpg",
+   "credit": "MultiEditor03",
+   "license": "CC BY-SA 4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Man_at_chain_buffet_restaurant.jpg"
   },
   {
    "id": "atm",
-   "q": "ATM machine"
+   "q": "ATM machine",
+   "file": "File:ATM Machine RAS Syndrome sign.jpg",
+   "credit": "Nbarth",
+   "license": "CC BY-SA 3.0",
+   "page": "https://commons.wikimedia.org/wiki/File:ATM_Machine_RAS_Syndrome_sign.jpg"
   },
   {
    "id": "roulette_ball",
-   "q": "roulette ball"
+   "q": "roulette ball",
+   "file": "File:Roulette (PSF).png",
+   "credit": "Pearson Scott Foresman",
+   "license": "Public domain",
+   "page": "https://commons.wikimedia.org/wiki/File:Roulette_(PSF).png"
   },
   {
    "id": "phone",
-   "q": "smartphone hand"
+   "q": "smartphone hand",
+   "file": "File:Black smartphone in hand (Unsplash).jpg",
+   "credit": "Dennis Cortés cortes",
+   "license": "CC0",
+   "page": "https://commons.wikimedia.org/wiki/File:Black_smartphone_in_hand_(Unsplash).jpg"
   },
   {
    "id": "supreme_court",
-   "q": "United States Supreme Court building"
+   "q": "United States Supreme Court building",
+   "file": "File:US Supreme Court.JPG",
+   "credit": "Photo by Mr. Kjetil Ree.",
+   "license": "CC BY-SA 3.0",
+   "page": "https://commons.wikimedia.org/wiki/File:US_Supreme_Court.JPG"
   },
   {
    "id": "night_phone",
-   "q": "smartphone at night"
+   "q": "smartphone at night",
+   "file": "File:Woman taking photographs with a smartphone at night in Seoul (35605735705).jpg",
+   "credit": "chelsom tsai from TAIPEI, Taiwam",
+   "license": "CC BY 2.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Woman_taking_photographs_with_a_smartphone_at_night_in_Seoul_(35605735705).jpg"
   },
   {
    "id": "exit_sign",
-   "q": "exit sign"
+   "q": "exit sign",
+   "file": "File:Photoluminescent Exit Sign.jpg",
+   "credit": "Aug wiki 1257",
+   "license": "CC BY-SA 4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Photoluminescent_Exit_Sign.jpg"
   },
   {
    "id": "concert",
-   "q": "concert crowd stage"
+   "q": "concert crowd stage",
+   "file": "File:Crowd surf Green Day.jpg",
+   "credit": "Anirudh Koul",
+   "license": "CC BY 2.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Crowd_surf_Green_Day.jpg"
   },
   {
    "id": "alarm_clock",
-   "q": "alarm clock"
+   "q": "alarm clock",
+   "file": "File:Classic alarm clock 20180513.jpg",
+   "credit": "Santeri Viinamäki",
+   "license": "CC BY-SA 4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Classic_alarm_clock_20180513.jpg"
   },
   {
    "id": "door",
-   "q": "glass door exit"
+   "q": "glass door exit",
+   "file": "File:HK WC Wan Chai Pacific Place Three glass door exit and entrance Queen's Road East May 2025 R12S.jpg",
+   "credit": "Suwm HorC POONZ",
+   "license": "CC0",
+   "page": "https://commons.wikimedia.org/wiki/File:HK_WC_Wan_Chai_Pacific_Place_Three_glass_door_exit_and_entrance_Queen%27s_Road_East_May_2025_R12S.jpg"
   },
   {
    "id": "hotline_phone",
-   "q": "telephone"
+   "q": "telephone",
+   "file": "File:Telephone in the Botanical Garden of Sao Paulo.jpg",
+   "credit": "Wilfredor",
+   "license": "CC0",
+   "page": "https://commons.wikimedia.org/wiki/File:Telephone_in_the_Botanical_Garden_of_Sao_Paulo.jpg"
   },
   {
    "id": "fremont",
-   "q": "Fremont Street Las Vegas"
+   "q": "Fremont Street Las Vegas",
+   "file": "File:Fremont Street in Downtown Las Vegas in April 2025.jpg",
+   "credit": "ClearLight602",
+   "license": "CC BY-SA 4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Fremont_Street_in_Downtown_Las_Vegas_in_April_2025.jpg"
   },
   {
    "id": "receipt",
-   "q": "receipt paper"
+   "q": "receipt paper",
+   "file": "File:Thermal paper.jpg",
+   "credit": "IIVQ - Tijmen Stam",
+   "license": "CC BY-SA 3.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Thermal_paper.jpg"
   },
   {
    "id": "insurance",
-   "q": "insurance company building"
+   "q": "insurance company building",
+   "file": "File:346 Broadway Aug 2022 37.jpg",
+   "credit": "Epicgenius",
+   "license": "CC BY-SA 4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:346_Broadway_Aug_2022_37.jpg"
   },
   {
    "id": "piggy",
-   "q": "piggy bank"
+   "q": "piggy bank",
+   "file": "File:Model 1925 Kenworth Collectible Piggy Bank front view 2.jpg",
+   "credit": "Noah Wulf",
+   "license": "CC BY-SA 4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Model_1925_Kenworth_Collectible_Piggy_Bank_front_view_2.jpg"
   }
  ]
 }
