@@ -39,7 +39,7 @@ def _rec(p, ii):
     }
 
 
-def info(titles, width=1600):
+def info(titles, width=1280):  # Wikimedia only allows standard thumbnail steps (…960, 1280, 1920) without 429s
     """Commons metadata for File: titles -> {title: {url, thumb, w, h, license, credit, page}}"""
     out = {}
     for i in range(0, len(titles), 20):

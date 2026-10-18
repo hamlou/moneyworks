@@ -92,7 +92,7 @@ else:
             p.setdefault("credit", m["credit"])
             p["license"] = m["license"]
             p["page"] = m["page"]
-            src = m["thumb"] if m["w"] > 1600 else m["url"]
+            src = m["thumb"] if m["w"] > 1280 else m["url"]
         else:
             src = p.get("url", "")
             if not (src and p.get("credit") and p.get("license") and p.get("page")):
@@ -105,7 +105,12 @@ else:
         dst = out / f"{pid}.jpg"
         if (dst.exists() or (out / f"{pid}.png").exists()) and not force:
             continue
-        im = Image.open(io.BytesIO(get(src, binary=True)))
+        time.sleep(1.2)
+        try:
+            im = Image.open(io.BytesIO(get(src, binary=True)))
+        except SystemExit as e:  # keep going: the next run picks up what is still missing
+            problems.append(f"{pid}: {e}")
+            continue
         if im.mode == "P":
             im = im.convert("RGBA")
         if im.mode in ("RGBA", "LA"):
