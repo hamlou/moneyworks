@@ -1,0 +1,7568 @@
+{
+ "fps": 30,
+ "total": 397.265,
+ "hash": "c625d3228ae4ad87",
+ "chapters": [
+  {
+   "n": 1,
+   "title": "Dad's House vs My House",
+   "start": 28.75,
+   "beat": "c1a"
+  },
+  {
+   "n": 2,
+   "title": "Nobody Is Selling",
+   "start": 120.184,
+   "beat": "c3a"
+  },
+  {
+   "n": 3,
+   "title": "Is Wall Street Buying Everything?",
+   "start": 225.336,
+   "beat": "c6a"
+  },
+  {
+   "n": 4,
+   "title": "What I'm Doing Now",
+   "start": 314.683,
+   "beat": "c8a"
+  }
+ ],
+ "beats": [
+  {
+   "id": "o1",
+   "text": "This is my dad's house. He bought it in nineteen ninety five with one salary and two kids and a dog named Biscuit.",
+   "start": 0.08,
+   "end": 5.319,
+   "words": [
+    {
+     "text": "This",
+     "start": 0.08,
+     "end": 0.287
+    },
+    {
+     "text": "is",
+     "start": 0.31,
+     "end": 0.434
+    },
+    {
+     "text": "my",
+     "start": 0.447,
+     "end": 0.571
+    },
+    {
+     "text": "dad's",
+     "start": 0.585,
+     "end": 0.833
+    },
+    {
+     "text": "house.",
+     "start": 0.861,
+     "end": 1.15
+    },
+    {
+     "text": "He",
+     "start": 1.182,
+     "end": 1.306
+    },
+    {
+     "text": "bought",
+     "start": 1.32,
+     "end": 1.609
+    },
+    {
+     "text": "it",
+     "start": 1.641,
+     "end": 1.765
+    },
+    {
+     "text": "in",
+     "start": 1.779,
+     "end": 1.903
+    },
+    {
+     "text": "nineteen",
+     "start": 1.917,
+     "end": 2.288
+    },
+    {
+     "text": "ninety",
+     "start": 2.33,
+     "end": 2.619
+    },
+    {
+     "text": "five",
+     "start": 2.651,
+     "end": 2.858
+    },
+    {
+     "text": "with",
+     "start": 2.881,
+     "end": 3.087
+    },
+    {
+     "text": "one",
+     "start": 3.11,
+     "end": 3.276
+    },
+    {
+     "text": "salary",
+     "start": 3.294,
+     "end": 3.583
+    },
+    {
+     "text": "and",
+     "start": 3.615,
+     "end": 3.781
+    },
+    {
+     "text": "two",
+     "start": 3.799,
+     "end": 3.964
+    },
+    {
+     "text": "kids",
+     "start": 3.983,
+     "end": 4.189
+    },
+    {
+     "text": "and",
+     "start": 4.212,
+     "end": 4.377
+    },
+    {
+     "text": "a",
+     "start": 4.396,
+     "end": 4.478
+    },
+    {
+     "text": "dog",
+     "start": 4.488,
+     "end": 4.653
+    },
+    {
+     "text": "named",
+     "start": 4.671,
+     "end": 4.919
+    },
+    {
+     "text": "Biscuit.",
+     "start": 4.947,
+     "end": 5.319
+    }
+   ]
+  },
+  {
+   "id": "o2",
+   "text": "This is me and my girlfriend. Two salaries. Both full time. And we can't afford the garage.",
+   "start": 5.679458333333334,
+   "end": 10.259458333333335,
+   "words": [
+    {
+     "text": "This",
+     "start": 5.679,
+     "end": 5.779
+    },
+    {
+     "text": "is",
+     "start": 5.779,
+     "end": 5.919
+    },
+    {
+     "text": "me",
+     "start": 5.919,
+     "end": 6.039
+    },
+    {
+     "text": "and",
+     "start": 6.039,
+     "end": 6.239
+    },
+    {
+     "text": "my",
+     "start": 6.239,
+     "end": 6.339
+    },
+    {
+     "text": "girlfriend.",
+     "start": 6.339,
+     "end": 6.539
+    },
+    {
+     "text": "Two",
+     "start": 7.079,
+     "end": 7.319
+    },
+    {
+     "text": "salaries.",
+     "start": 7.319,
+     "end": 7.519
+    },
+    {
+     "text": "Both",
+     "start": 8.199,
+     "end": 8.359
+    },
+    {
+     "text": "full",
+     "start": 8.359,
+     "end": 8.579
+    },
+    {
+     "text": "time.",
+     "start": 8.579,
+     "end": 8.899
+    },
+    {
+     "text": "And",
+     "start": 9.259,
+     "end": 9.419
+    },
+    {
+     "text": "we",
+     "start": 9.419,
+     "end": 9.519
+    },
+    {
+     "text": "can't",
+     "start": 9.519,
+     "end": 9.759
+    },
+    {
+     "text": "afford",
+     "start": 9.759,
+     "end": 9.899
+    },
+    {
+     "text": "the",
+     "start": 9.899,
+     "end": 10.019
+    },
+    {
+     "text": "garage.",
+     "start": 10.019,
+     "end": 10.259
+    }
+   ]
+  },
+  {
+   "id": "o3",
+   "text": "My dad paid about three years of his pay for that house. The same house today costs about five years.",
+   "start": 10.820729166666666,
+   "end": 15.440729166666667,
+   "words": [
+    {
+     "text": "My",
+     "start": 10.821,
+     "end": 10.921
+    },
+    {
+     "text": "dad",
+     "start": 10.921,
+     "end": 11.101
+    },
+    {
+     "text": "paid",
+     "start": 11.101,
+     "end": 11.321
+    },
+    {
+     "text": "about",
+     "start": 11.321,
+     "end": 11.541
+    },
+    {
+     "text": "three",
+     "start": 11.541,
+     "end": 11.801
+    },
+    {
+     "text": "years",
+     "start": 11.801,
+     "end": 12.021
+    },
+    {
+     "text": "of",
+     "start": 12.021,
+     "end": 12.201
+    },
+    {
+     "text": "his",
+     "start": 12.201,
+     "end": 12.281
+    },
+    {
+     "text": "pay",
+     "start": 12.281,
+     "end": 12.421
+    },
+    {
+     "text": "for",
+     "start": 12.421,
+     "end": 12.581
+    },
+    {
+     "text": "that",
+     "start": 12.581,
+     "end": 12.721
+    },
+    {
+     "text": "house.",
+     "start": 12.721,
+     "end": 13.001
+    },
+    {
+     "text": "The",
+     "start": 13.521,
+     "end": 13.581
+    },
+    {
+     "text": "same",
+     "start": 13.581,
+     "end": 13.721
+    },
+    {
+     "text": "house",
+     "start": 13.721,
+     "end": 13.981
+    },
+    {
+     "text": "today",
+     "start": 13.981,
+     "end": 14.261
+    },
+    {
+     "text": "costs",
+     "start": 14.261,
+     "end": 14.581
+    },
+    {
+     "text": "about",
+     "start": 14.581,
+     "end": 14.881
+    },
+    {
+     "text": "five",
+     "start": 14.881,
+     "end": 15.141
+    },
+    {
+     "text": "years.",
+     "start": 15.141,
+     "end": 15.441
+    }
+   ]
+  },
+  {
+   "id": "o4",
+   "text": "And the average person buying their first home in America is now forty. Forty.",
+   "start": 15.9344375,
+   "end": 19.3344375,
+   "words": [
+    {
+     "text": "And",
+     "start": 15.934,
+     "end": 16.274
+    },
+    {
+     "text": "the",
+     "start": 16.274,
+     "end": 16.414
+    },
+    {
+     "text": "average",
+     "start": 16.414,
+     "end": 16.554
+    },
+    {
+     "text": "person",
+     "start": 16.554,
+     "end": 16.874
+    },
+    {
+     "text": "buying",
+     "start": 16.874,
+     "end": 17.174
+    },
+    {
+     "text": "their",
+     "start": 17.174,
+     "end": 17.354
+    },
+    {
+     "text": "first",
+     "start": 17.354,
+     "end": 17.514
+    },
+    {
+     "text": "home",
+     "start": 17.514,
+     "end": 17.674
+    },
+    {
+     "text": "in",
+     "start": 17.674,
+     "end": 17.774
+    },
+    {
+     "text": "America",
+     "start": 17.774,
+     "end": 17.974
+    },
+    {
+     "text": "is",
+     "start": 17.974,
+     "end": 18.374
+    },
+    {
+     "text": "now",
+     "start": 18.374,
+     "end": 18.534
+    },
+    {
+     "text": "forty.",
+     "start": 18.534,
+     "end": 18.734
+    },
+    {
+     "text": "Forty.",
+     "start": 19.114,
+     "end": 19.334
+    }
+   ]
+  },
+  {
+   "id": "o5",
+   "text": "By the end of this video you'll know who's really buying all the houses and I promise it's not who you think.",
+   "start": 19.910854166666667,
+   "end": 23.990854166666665,
+   "words": [
+    {
+     "text": "By",
+     "start": 19.911,
+     "end": 19.991
+    },
+    {
+     "text": "the",
+     "start": 19.991,
+     "end": 20.091
+    },
+    {
+     "text": "end",
+     "start": 20.091,
+     "end": 20.231
+    },
+    {
+     "text": "of",
+     "start": 20.231,
+     "end": 20.331
+    },
+    {
+     "text": "this",
+     "start": 20.331,
+     "end": 20.491
+    },
+    {
+     "text": "video",
+     "start": 20.491,
+     "end": 20.711
+    },
+    {
+     "text": "you'll",
+     "start": 20.891,
+     "end": 20.991
+    },
+    {
+     "text": "know",
+     "start": 20.991,
+     "end": 21.131
+    },
+    {
+     "text": "who's",
+     "start": 21.131,
+     "end": 21.371
+    },
+    {
+     "text": "really",
+     "start": 21.371,
+     "end": 21.531
+    },
+    {
+     "text": "buying",
+     "start": 21.531,
+     "end": 21.911
+    },
+    {
+     "text": "all",
+     "start": 21.911,
+     "end": 22.071
+    },
+    {
+     "text": "the",
+     "start": 22.071,
+     "end": 22.151
+    },
+    {
+     "text": "houses",
+     "start": 22.151,
+     "end": 22.391
+    },
+    {
+     "text": "and",
+     "start": 22.651,
+     "end": 22.691
+    },
+    {
+     "text": "I",
+     "start": 22.691,
+     "end": 22.751
+    },
+    {
+     "text": "promise",
+     "start": 22.751,
+     "end": 23.011
+    },
+    {
+     "text": "it's",
+     "start": 23.011,
+     "end": 23.351
+    },
+    {
+     "text": "not",
+     "start": 23.351,
+     "end": 23.491
+    },
+    {
+     "text": "who",
+     "start": 23.491,
+     "end": 23.671
+    },
+    {
+     "text": "you",
+     "start": 23.671,
+     "end": 23.791
+    },
+    {
+     "text": "think.",
+     "start": 23.791,
+     "end": 23.991
+    }
+   ]
+  },
+  {
+   "id": "o6",
+   "text": "But most people scroll away before that part which is exactly how they end up renting forever.",
+   "start": 24.365520833333335,
+   "end": 28.005520833333335,
+   "words": [
+    {
+     "text": "But",
+     "start": 24.366,
+     "end": 24.466
+    },
+    {
+     "text": "most",
+     "start": 24.466,
+     "end": 24.646
+    },
+    {
+     "text": "people",
+     "start": 24.646,
+     "end": 24.926
+    },
+    {
+     "text": "scroll",
+     "start": 24.926,
+     "end": 25.186
+    },
+    {
+     "text": "away",
+     "start": 25.186,
+     "end": 25.466
+    },
+    {
+     "text": "before",
+     "start": 25.466,
+     "end": 25.746
+    },
+    {
+     "text": "that",
+     "start": 25.746,
+     "end": 25.966
+    },
+    {
+     "text": "part",
+     "start": 25.966,
+     "end": 26.226
+    },
+    {
+     "text": "which",
+     "start": 26.386,
+     "end": 26.426
+    },
+    {
+     "text": "is",
+     "start": 26.426,
+     "end": 26.526
+    },
+    {
+     "text": "exactly",
+     "start": 26.526,
+     "end": 26.806
+    },
+    {
+     "text": "how",
+     "start": 26.806,
+     "end": 27.106
+    },
+    {
+     "text": "they",
+     "start": 27.106,
+     "end": 27.226
+    },
+    {
+     "text": "end",
+     "start": 27.226,
+     "end": 27.386
+    },
+    {
+     "text": "up",
+     "start": 27.386,
+     "end": 27.506
+    },
+    {
+     "text": "renting",
+     "start": 27.506,
+     "end": 27.686
+    },
+    {
+     "text": "forever.",
+     "start": 27.686,
+     "end": 28.006
+    }
+   ]
+  },
+  {
+   "id": "c1a",
+   "text": "So let me show you the ruler I use now. How many years of pay does a house cost?",
+   "start": 30.950479166666668,
+   "end": 34.95047916666667,
+   "words": [
+    {
+     "text": "So",
+     "start": 30.95,
+     "end": 31.13
+    },
+    {
+     "text": "let",
+     "start": 31.27,
+     "end": 31.37
+    },
+    {
+     "text": "me",
+     "start": 31.37,
+     "end": 31.47
+    },
+    {
+     "text": "show",
+     "start": 31.47,
+     "end": 31.63
+    },
+    {
+     "text": "you",
+     "start": 31.63,
+     "end": 31.75
+    },
+    {
+     "text": "the",
+     "start": 31.75,
+     "end": 31.85
+    },
+    {
+     "text": "ruler",
+     "start": 31.85,
+     "end": 31.99
+    },
+    {
+     "text": "I",
+     "start": 31.99,
+     "end": 32.23
+    },
+    {
+     "text": "use",
+     "start": 32.23,
+     "end": 32.37
+    },
+    {
+     "text": "now.",
+     "start": 32.37,
+     "end": 32.65
+    },
+    {
+     "text": "How",
+     "start": 33.33,
+     "end": 33.35
+    },
+    {
+     "text": "many",
+     "start": 33.35,
+     "end": 33.51
+    },
+    {
+     "text": "years",
+     "start": 33.51,
+     "end": 33.73
+    },
+    {
+     "text": "of",
+     "start": 33.73,
+     "end": 33.89
+    },
+    {
+     "text": "pay",
+     "start": 33.89,
+     "end": 34.11
+    },
+    {
+     "text": "does",
+     "start": 34.11,
+     "end": 34.35
+    },
+    {
+     "text": "a",
+     "start": 34.35,
+     "end": 34.45
+    },
+    {
+     "text": "house",
+     "start": 34.45,
+     "end": 34.57
+    },
+    {
+     "text": "cost?",
+     "start": 34.57,
+     "end": 34.95
+    }
+   ]
+  },
+  {
+   "id": "c1b",
+   "text": "When my dad bought his house it cost him about three years of pay. You could save for that. You could actually see the finish line.",
+   "start": 35.65635416666667,
+   "end": 40.65635416666667,
+   "words": [
+    {
+     "text": "When",
+     "start": 35.656,
+     "end": 35.736
+    },
+    {
+     "text": "my",
+     "start": 35.736,
+     "end": 35.876
+    },
+    {
+     "text": "dad",
+     "start": 35.876,
+     "end": 36.056
+    },
+    {
+     "text": "bought",
+     "start": 36.056,
+     "end": 36.276
+    },
+    {
+     "text": "his",
+     "start": 36.276,
+     "end": 36.396
+    },
+    {
+     "text": "house",
+     "start": 36.396,
+     "end": 36.556
+    },
+    {
+     "text": "it",
+     "start": 36.556,
+     "end": 36.736
+    },
+    {
+     "text": "cost",
+     "start": 36.736,
+     "end": 36.916
+    },
+    {
+     "text": "him",
+     "start": 36.916,
+     "end": 37.096
+    },
+    {
+     "text": "about",
+     "start": 37.096,
+     "end": 37.256
+    },
+    {
+     "text": "three",
+     "start": 37.256,
+     "end": 37.516
+    },
+    {
+     "text": "years",
+     "start": 37.516,
+     "end": 37.676
+    },
+    {
+     "text": "of",
+     "start": 37.676,
+     "end": 37.836
+    },
+    {
+     "text": "pay.",
+     "start": 37.836,
+     "end": 38.016
+    },
+    {
+     "text": "You",
+     "start": 38.316,
+     "end": 38.396
+    },
+    {
+     "text": "could",
+     "start": 38.396,
+     "end": 38.496
+    },
+    {
+     "text": "save",
+     "start": 38.496,
+     "end": 38.676
+    },
+    {
+     "text": "for",
+     "start": 38.676,
+     "end": 38.836
+    },
+    {
+     "text": "that.",
+     "start": 38.836,
+     "end": 39.036
+    },
+    {
+     "text": "You",
+     "start": 39.436,
+     "end": 39.516
+    },
+    {
+     "text": "could",
+     "start": 39.516,
+     "end": 39.616
+    },
+    {
+     "text": "actually",
+     "start": 39.616,
+     "end": 39.816
+    },
+    {
+     "text": "see",
+     "start": 39.816,
+     "end": 40.116
+    },
+    {
+     "text": "the",
+     "start": 40.116,
+     "end": 40.216
+    },
+    {
+     "text": "finish",
+     "start": 40.216,
+     "end": 40.376
+    },
+    {
+     "text": "line.",
+     "start": 40.376,
+     "end": 40.656
+    }
+   ]
+  },
+  {
+   "id": "n11",
+   "text": "Back then a guy with a normal job could buy a house and a car and still take the family to the beach every summer.",
+   "start": 41.32058333333333,
+   "end": 46.58058333333333,
+   "words": [
+    {
+     "text": "Back",
+     "start": 41.321,
+     "end": 41.481
+    },
+    {
+     "text": "then",
+     "start": 41.481,
+     "end": 41.761
+    },
+    {
+     "text": "a",
+     "start": 42.001,
+     "end": 42.021
+    },
+    {
+     "text": "guy",
+     "start": 42.021,
+     "end": 42.181
+    },
+    {
+     "text": "with",
+     "start": 42.181,
+     "end": 42.381
+    },
+    {
+     "text": "a",
+     "start": 42.381,
+     "end": 42.501
+    },
+    {
+     "text": "normal",
+     "start": 42.501,
+     "end": 42.661
+    },
+    {
+     "text": "job",
+     "start": 42.661,
+     "end": 42.981
+    },
+    {
+     "text": "could",
+     "start": 42.981,
+     "end": 43.241
+    },
+    {
+     "text": "buy",
+     "start": 43.241,
+     "end": 43.401
+    },
+    {
+     "text": "a",
+     "start": 43.401,
+     "end": 43.541
+    },
+    {
+     "text": "house",
+     "start": 43.541,
+     "end": 43.801
+    },
+    {
+     "text": "and",
+     "start": 43.801,
+     "end": 44.101
+    },
+    {
+     "text": "a",
+     "start": 44.101,
+     "end": 44.201
+    },
+    {
+     "text": "car",
+     "start": 44.201,
+     "end": 44.441
+    },
+    {
+     "text": "and",
+     "start": 44.441,
+     "end": 44.741
+    },
+    {
+     "text": "still",
+     "start": 44.741,
+     "end": 44.961
+    },
+    {
+     "text": "take",
+     "start": 44.961,
+     "end": 45.141
+    },
+    {
+     "text": "the",
+     "start": 45.141,
+     "end": 45.281
+    },
+    {
+     "text": "family",
+     "start": 45.281,
+     "end": 45.501
+    },
+    {
+     "text": "to",
+     "start": 45.501,
+     "end": 45.741
+    },
+    {
+     "text": "the",
+     "start": 45.741,
+     "end": 45.841
+    },
+    {
+     "text": "beach",
+     "start": 45.841,
+     "end": 45.981
+    },
+    {
+     "text": "every",
+     "start": 45.981,
+     "end": 46.321
+    },
+    {
+     "text": "summer.",
+     "start": 46.321,
+     "end": 46.581
+    }
+   ]
+  },
+  {
+   "id": "c1e",
+   "text": "Today the typical home is about five years of pay. And that's if you spend nothing. No food. No rent. No phone. Just vibes.",
+   "start": 47.23864583333334,
+   "end": 53.79864583333334,
+   "words": [
+    {
+     "text": "Today",
+     "start": 47.239,
+     "end": 47.439
+    },
+    {
+     "text": "the",
+     "start": 47.619,
+     "end": 47.699
+    },
+    {
+     "text": "typical",
+     "start": 47.699,
+     "end": 47.939
+    },
+    {
+     "text": "home",
+     "start": 47.939,
+     "end": 48.239
+    },
+    {
+     "text": "is",
+     "start": 48.239,
+     "end": 48.419
+    },
+    {
+     "text": "about",
+     "start": 48.419,
+     "end": 48.559
+    },
+    {
+     "text": "five",
+     "start": 48.559,
+     "end": 48.859
+    },
+    {
+     "text": "years",
+     "start": 48.859,
+     "end": 49.039
+    },
+    {
+     "text": "of",
+     "start": 49.039,
+     "end": 49.219
+    },
+    {
+     "text": "pay.",
+     "start": 49.219,
+     "end": 49.419
+    },
+    {
+     "text": "And",
+     "start": 49.779,
+     "end": 49.899
+    },
+    {
+     "text": "that's",
+     "start": 49.899,
+     "end": 50.119
+    },
+    {
+     "text": "if",
+     "start": 50.119,
+     "end": 50.179
+    },
+    {
+     "text": "you",
+     "start": 50.179,
+     "end": 50.279
+    },
+    {
+     "text": "spend",
+     "start": 50.279,
+     "end": 50.459
+    },
+    {
+     "text": "nothing.",
+     "start": 50.459,
+     "end": 50.739
+    },
+    {
+     "text": "No",
+     "start": 51.159,
+     "end": 51.279
+    },
+    {
+     "text": "food.",
+     "start": 51.279,
+     "end": 51.539
+    },
+    {
+     "text": "No",
+     "start": 51.859,
+     "end": 51.959
+    },
+    {
+     "text": "rent.",
+     "start": 51.959,
+     "end": 52.199
+    },
+    {
+     "text": "No",
+     "start": 52.439,
+     "end": 52.519
+    },
+    {
+     "text": "phone.",
+     "start": 52.519,
+     "end": 52.819
+    },
+    {
+     "text": "Just",
+     "start": 53.119,
+     "end": 53.239
+    },
+    {
+     "text": "vibes.",
+     "start": 53.239,
+     "end": 53.799
+    }
+   ]
+  },
+  {
+   "id": "n12",
+   "text": "Me trying to save five years of pay while also paying rent and eating food like a normal person.",
+   "start": 54.3184375,
+   "end": 58.5984375,
+   "words": [
+    {
+     "text": "Me",
+     "start": 54.318,
+     "end": 54.438
+    },
+    {
+     "text": "trying",
+     "start": 54.438,
+     "end": 54.658
+    },
+    {
+     "text": "to",
+     "start": 54.658,
+     "end": 54.798
+    },
+    {
+     "text": "save",
+     "start": 54.798,
+     "end": 54.938
+    },
+    {
+     "text": "five",
+     "start": 54.938,
+     "end": 55.178
+    },
+    {
+     "text": "years",
+     "start": 55.178,
+     "end": 55.378
+    },
+    {
+     "text": "of",
+     "start": 55.378,
+     "end": 55.518
+    },
+    {
+     "text": "pay",
+     "start": 55.518,
+     "end": 55.758
+    },
+    {
+     "text": "while",
+     "start": 55.758,
+     "end": 56.178
+    },
+    {
+     "text": "also",
+     "start": 56.178,
+     "end": 56.478
+    },
+    {
+     "text": "paying",
+     "start": 56.478,
+     "end": 56.718
+    },
+    {
+     "text": "rent",
+     "start": 56.718,
+     "end": 56.978
+    },
+    {
+     "text": "and",
+     "start": 56.978,
+     "end": 57.218
+    },
+    {
+     "text": "eating",
+     "start": 57.218,
+     "end": 57.358
+    },
+    {
+     "text": "food",
+     "start": 57.358,
+     "end": 57.678
+    },
+    {
+     "text": "like",
+     "start": 57.678,
+     "end": 57.918
+    },
+    {
+     "text": "a",
+     "start": 57.918,
+     "end": 58.018
+    },
+    {
+     "text": "normal",
+     "start": 58.018,
+     "end": 58.178
+    },
+    {
+     "text": "person.",
+     "start": 58.178,
+     "end": 58.598
+    }
+   ]
+  },
+  {
+   "id": "c1f",
+   "text": "It's like a ladder. Our pay climbed a few steps. House prices took the elevator.",
+   "start": 59.3019375,
+   "end": 62.4219375,
+   "words": [
+    {
+     "text": "It's",
+     "start": 59.302,
+     "end": 59.442
+    },
+    {
+     "text": "like",
+     "start": 59.442,
+     "end": 59.562
+    },
+    {
+     "text": "a",
+     "start": 59.562,
+     "end": 59.702
+    },
+    {
+     "text": "ladder.",
+     "start": 59.702,
+     "end": 59.882
+    },
+    {
+     "text": "Our",
+     "start": 60.262,
+     "end": 60.302
+    },
+    {
+     "text": "pay",
+     "start": 60.302,
+     "end": 60.422
+    },
+    {
+     "text": "climbed",
+     "start": 60.422,
+     "end": 60.642
+    },
+    {
+     "text": "a",
+     "start": 60.642,
+     "end": 60.782
+    },
+    {
+     "text": "few",
+     "start": 60.782,
+     "end": 60.902
+    },
+    {
+     "text": "steps.",
+     "start": 60.902,
+     "end": 61.142
+    },
+    {
+     "text": "House",
+     "start": 61.422,
+     "end": 61.502
+    },
+    {
+     "text": "prices",
+     "start": 61.502,
+     "end": 61.722
+    },
+    {
+     "text": "took",
+     "start": 61.722,
+     "end": 62.042
+    },
+    {
+     "text": "the",
+     "start": 62.042,
+     "end": 62.182
+    },
+    {
+     "text": "elevator.",
+     "start": 62.182,
+     "end": 62.422
+    }
+   ]
+  },
+  {
+   "id": "n1",
+   "text": "My paycheck trying to catch up with house prices.",
+   "start": 63.170541666666665,
+   "end": 65.33054166666666,
+   "words": [
+    {
+     "text": "My",
+     "start": 63.171,
+     "end": 63.311
+    },
+    {
+     "text": "paycheck",
+     "start": 63.311,
+     "end": 63.631
+    },
+    {
+     "text": "trying",
+     "start": 63.631,
+     "end": 64.071
+    },
+    {
+     "text": "to",
+     "start": 64.071,
+     "end": 64.331
+    },
+    {
+     "text": "catch",
+     "start": 64.331,
+     "end": 64.631
+    },
+    {
+     "text": "up",
+     "start": 64.631,
+     "end": 64.771
+    },
+    {
+     "text": "with",
+     "start": 64.771,
+     "end": 64.911
+    },
+    {
+     "text": "house",
+     "start": 64.911,
+     "end": 65.051
+    },
+    {
+     "text": "prices.",
+     "start": 65.051,
+     "end": 65.331
+    }
+   ]
+  },
+  {
+   "id": "c2a",
+   "text": "And it gets worse. Nobody pays cash for a house. You borrow. And borrowing got expensive.",
+   "start": 66.1879375,
+   "end": 71.08793750000001,
+   "words": [
+    {
+     "text": "And",
+     "start": 66.188,
+     "end": 66.548
+    },
+    {
+     "text": "it",
+     "start": 66.548,
+     "end": 66.688
+    },
+    {
+     "text": "gets",
+     "start": 66.688,
+     "end": 66.828
+    },
+    {
+     "text": "worse.",
+     "start": 66.828,
+     "end": 67.088
+    },
+    {
+     "text": "Nobody",
+     "start": 67.548,
+     "end": 67.668
+    },
+    {
+     "text": "pays",
+     "start": 67.668,
+     "end": 67.928
+    },
+    {
+     "text": "cash",
+     "start": 67.928,
+     "end": 68.148
+    },
+    {
+     "text": "for",
+     "start": 68.148,
+     "end": 68.348
+    },
+    {
+     "text": "a",
+     "start": 68.348,
+     "end": 68.408
+    },
+    {
+     "text": "house.",
+     "start": 68.408,
+     "end": 68.648
+    },
+    {
+     "text": "You",
+     "start": 68.908,
+     "end": 69.008
+    },
+    {
+     "text": "borrow.",
+     "start": 69.008,
+     "end": 69.208
+    },
+    {
+     "text": "And",
+     "start": 69.668,
+     "end": 70.148
+    },
+    {
+     "text": "borrowing",
+     "start": 70.148,
+     "end": 70.448
+    },
+    {
+     "text": "got",
+     "start": 70.448,
+     "end": 70.788
+    },
+    {
+     "text": "expensive.",
+     "start": 70.788,
+     "end": 71.088
+    }
+   ]
+  },
+  {
+   "id": "c2c",
+   "text": "Mortgage rates are around seven percent now. A few years ago they were three.",
+   "start": 71.879625,
+   "end": 75.379625,
+   "words": [
+    {
+     "text": "Mortgage",
+     "start": 71.88,
+     "end": 72.1
+    },
+    {
+     "text": "rates",
+     "start": 72.1,
+     "end": 72.38
+    },
+    {
+     "text": "are",
+     "start": 72.38,
+     "end": 72.66
+    },
+    {
+     "text": "around",
+     "start": 72.66,
+     "end": 72.84
+    },
+    {
+     "text": "seven",
+     "start": 72.84,
+     "end": 73.18
+    },
+    {
+     "text": "percent",
+     "start": 73.18,
+     "end": 73.52
+    },
+    {
+     "text": "now.",
+     "start": 73.52,
+     "end": 73.76
+    },
+    {
+     "text": "A",
+     "start": 74.06,
+     "end": 74.12
+    },
+    {
+     "text": "few",
+     "start": 74.12,
+     "end": 74.26
+    },
+    {
+     "text": "years",
+     "start": 74.26,
+     "end": 74.46
+    },
+    {
+     "text": "ago",
+     "start": 74.46,
+     "end": 74.72
+    },
+    {
+     "text": "they",
+     "start": 74.88,
+     "end": 74.98
+    },
+    {
+     "text": "were",
+     "start": 74.98,
+     "end": 75.1
+    },
+    {
+     "text": "three.",
+     "start": 75.1,
+     "end": 75.38
+    }
+   ]
+  },
+  {
+   "id": "n13",
+   "text": "Three to seven doesn't sound like much. But on a loan that big it's the difference between a car payment and a second rent.",
+   "start": 75.99033333333334,
+   "end": 80.90633333333334,
+   "words": [
+    {
+     "text": "Three",
+     "start": 75.99,
+     "end": 76.205
+    },
+    {
+     "text": "to",
+     "start": 76.229,
+     "end": 76.337
+    },
+    {
+     "text": "seven",
+     "start": 76.349,
+     "end": 76.564
+    },
+    {
+     "text": "doesn't",
+     "start": 76.588,
+     "end": 76.874
+    },
+    {
+     "text": "sound",
+     "start": 76.906,
+     "end": 77.121
+    },
+    {
+     "text": "like",
+     "start": 77.145,
+     "end": 77.325
+    },
+    {
+     "text": "much.",
+     "start": 77.345,
+     "end": 77.56
+    },
+    {
+     "text": "But",
+     "start": 77.584,
+     "end": 77.727
+    },
+    {
+     "text": "on",
+     "start": 77.743,
+     "end": 77.85
+    },
+    {
+     "text": "a",
+     "start": 77.862,
+     "end": 77.934
+    },
+    {
+     "text": "loan",
+     "start": 77.942,
+     "end": 78.121
+    },
+    {
+     "text": "that",
+     "start": 78.141,
+     "end": 78.321
+    },
+    {
+     "text": "big",
+     "start": 78.34,
+     "end": 78.484
+    },
+    {
+     "text": "it's",
+     "start": 78.5,
+     "end": 78.679
+    },
+    {
+     "text": "the",
+     "start": 78.699,
+     "end": 78.842
+    },
+    {
+     "text": "difference",
+     "start": 78.858,
+     "end": 79.253
+    },
+    {
+     "text": "between",
+     "start": 79.297,
+     "end": 79.583
+    },
+    {
+     "text": "a",
+     "start": 79.615,
+     "end": 79.687
+    },
+    {
+     "text": "car",
+     "start": 79.695,
+     "end": 79.838
+    },
+    {
+     "text": "payment",
+     "start": 79.854,
+     "end": 80.141
+    },
+    {
+     "text": "and",
+     "start": 80.173,
+     "end": 80.316
+    },
+    {
+     "text": "a",
+     "start": 80.332,
+     "end": 80.404
+    },
+    {
+     "text": "second",
+     "start": 80.412,
+     "end": 80.663
+    },
+    {
+     "text": "rent.",
+     "start": 80.691,
+     "end": 80.906
+    }
+   ]
+  },
+  {
+   "id": "c2d",
+   "text": "My dad paid even higher rates than that. Sounds worse right? But he borrowed way less money. So his monthly payment was tiny.",
+   "start": 81.58935416666667,
+   "end": 87.44935416666667,
+   "words": [
+    {
+     "text": "My",
+     "start": 81.589,
+     "end": 81.689
+    },
+    {
+     "text": "dad",
+     "start": 81.689,
+     "end": 81.849
+    },
+    {
+     "text": "paid",
+     "start": 81.849,
+     "end": 82.049
+    },
+    {
+     "text": "even",
+     "start": 82.049,
+     "end": 82.229
+    },
+    {
+     "text": "higher",
+     "start": 82.229,
+     "end": 82.449
+    },
+    {
+     "text": "rates",
+     "start": 82.449,
+     "end": 82.709
+    },
+    {
+     "text": "than",
+     "start": 82.709,
+     "end": 82.929
+    },
+    {
+     "text": "that.",
+     "start": 82.929,
+     "end": 83.129
+    },
+    {
+     "text": "Sounds",
+     "start": 83.329,
+     "end": 83.409
+    },
+    {
+     "text": "worse",
+     "start": 83.409,
+     "end": 83.729
+    },
+    {
+     "text": "right?",
+     "start": 84.009,
+     "end": 84.009
+    },
+    {
+     "text": "But",
+     "start": 84.669,
+     "end": 84.949
+    },
+    {
+     "text": "he",
+     "start": 84.949,
+     "end": 85.169
+    },
+    {
+     "text": "borrowed",
+     "start": 85.169,
+     "end": 85.329
+    },
+    {
+     "text": "way",
+     "start": 85.329,
+     "end": 85.589
+    },
+    {
+     "text": "less",
+     "start": 85.589,
+     "end": 85.789
+    },
+    {
+     "text": "money.",
+     "start": 85.789,
+     "end": 86.049
+    },
+    {
+     "text": "So",
+     "start": 86.269,
+     "end": 86.369
+    },
+    {
+     "text": "his",
+     "start": 86.369,
+     "end": 86.469
+    },
+    {
+     "text": "monthly",
+     "start": 86.469,
+     "end": 86.649
+    },
+    {
+     "text": "payment",
+     "start": 86.649,
+     "end": 87.049
+    },
+    {
+     "text": "was",
+     "start": 87.049,
+     "end": 87.189
+    },
+    {
+     "text": "tiny.",
+     "start": 87.189,
+     "end": 87.449
+    }
+   ]
+  },
+  {
+   "id": "c2f",
+   "text": "My payment on a normal house today? About two thousand three hundred dollars a month. Before taxes. Before insurance. Before the roof leaks.",
+   "start": 88.2500625,
+   "end": 94.9370625,
+   "words": [
+    {
+     "text": "My",
+     "start": 88.25,
+     "end": 88.379
+    },
+    {
+     "text": "payment",
+     "start": 88.393,
+     "end": 88.736
+    },
+    {
+     "text": "on",
+     "start": 88.774,
+     "end": 88.903
+    },
+    {
+     "text": "a",
+     "start": 88.917,
+     "end": 89.003
+    },
+    {
+     "text": "normal",
+     "start": 89.013,
+     "end": 89.313
+    },
+    {
+     "text": "house",
+     "start": 89.346,
+     "end": 89.604
+    },
+    {
+     "text": "today?",
+     "start": 89.632,
+     "end": 89.932
+    },
+    {
+     "text": "About",
+     "start": 89.966,
+     "end": 90.223
+    },
+    {
+     "text": "two",
+     "start": 90.252,
+     "end": 90.423
+    },
+    {
+     "text": "thousand",
+     "start": 90.442,
+     "end": 90.828
+    },
+    {
+     "text": "three",
+     "start": 90.871,
+     "end": 91.129
+    },
+    {
+     "text": "hundred",
+     "start": 91.157,
+     "end": 91.5
+    },
+    {
+     "text": "dollars",
+     "start": 91.539,
+     "end": 91.882
+    },
+    {
+     "text": "a",
+     "start": 91.92,
+     "end": 92.006
+    },
+    {
+     "text": "month.",
+     "start": 92.015,
+     "end": 92.315
+    },
+    {
+     "text": "Before",
+     "start": 92.349,
+     "end": 92.649
+    },
+    {
+     "text": "taxes.",
+     "start": 92.682,
+     "end": 92.983
+    },
+    {
+     "text": "Before",
+     "start": 93.016,
+     "end": 93.316
+    },
+    {
+     "text": "insurance.",
+     "start": 93.35,
+     "end": 93.821
+    },
+    {
+     "text": "Before",
+     "start": 93.874,
+     "end": 94.174
+    },
+    {
+     "text": "the",
+     "start": 94.207,
+     "end": 94.379
+    },
+    {
+     "text": "roof",
+     "start": 94.398,
+     "end": 94.613
+    },
+    {
+     "text": "leaks.",
+     "start": 94.636,
+     "end": 94.937
+    }
+   ]
+  },
+  {
+   "id": "n14",
+   "text": "Two thousand three hundred a month. That's more than my rent. And my rent already makes me cry in the shower.",
+   "start": 95.76610416666666,
+   "end": 100.61110416666666,
+   "words": [
+    {
+     "text": "Two",
+     "start": 95.766,
+     "end": 95.926
+    },
+    {
+     "text": "thousand",
+     "start": 95.943,
+     "end": 96.303
+    },
+    {
+     "text": "three",
+     "start": 96.343,
+     "end": 96.582
+    },
+    {
+     "text": "hundred",
+     "start": 96.609,
+     "end": 96.928
+    },
+    {
+     "text": "a",
+     "start": 96.964,
+     "end": 97.044
+    },
+    {
+     "text": "month.",
+     "start": 97.053,
+     "end": 97.332
+    },
+    {
+     "text": "That's",
+     "start": 97.363,
+     "end": 97.643
+    },
+    {
+     "text": "more",
+     "start": 97.674,
+     "end": 97.873
+    },
+    {
+     "text": "than",
+     "start": 97.895,
+     "end": 98.095
+    },
+    {
+     "text": "my",
+     "start": 98.117,
+     "end": 98.237
+    },
+    {
+     "text": "rent.",
+     "start": 98.25,
+     "end": 98.49
+    },
+    {
+     "text": "And",
+     "start": 98.517,
+     "end": 98.676
+    },
+    {
+     "text": "my",
+     "start": 98.694,
+     "end": 98.814
+    },
+    {
+     "text": "rent",
+     "start": 98.827,
+     "end": 99.027
+    },
+    {
+     "text": "already",
+     "start": 99.049,
+     "end": 99.368
+    },
+    {
+     "text": "makes",
+     "start": 99.404,
+     "end": 99.643
+    },
+    {
+     "text": "me",
+     "start": 99.67,
+     "end": 99.79
+    },
+    {
+     "text": "cry",
+     "start": 99.803,
+     "end": 99.963
+    },
+    {
+     "text": "in",
+     "start": 99.981,
+     "end": 100.1
+    },
+    {
+     "text": "the",
+     "start": 100.114,
+     "end": 100.273
+    },
+    {
+     "text": "shower.",
+     "start": 100.291,
+     "end": 100.611
+    }
+   ]
+  },
+  {
+   "id": "n2",
+   "text": "Me looking at the monthly payment.",
+   "start": 101.27858333333333,
+   "end": 102.29858333333333,
+   "words": [
+    {
+     "text": "Me",
+     "start": 101.279,
+     "end": 101.379
+    },
+    {
+     "text": "looking",
+     "start": 101.379,
+     "end": 101.599
+    },
+    {
+     "text": "at",
+     "start": 101.599,
+     "end": 101.739
+    },
+    {
+     "text": "the",
+     "start": 101.739,
+     "end": 101.839
+    },
+    {
+     "text": "monthly",
+     "start": 101.839,
+     "end": 101.979
+    },
+    {
+     "text": "payment.",
+     "start": 101.979,
+     "end": 102.299
+    }
+   ]
+  },
+  {
+   "id": "c2g",
+   "text": "And the down payment? For my dad it was a few months of pay. For me it's a whole year. A whole year of not eating avocado toast.",
+   "start": 102.90575,
+   "end": 109.02575,
+   "words": [
+    {
+     "text": "And",
+     "start": 102.906,
+     "end": 103.266
+    },
+    {
+     "text": "the",
+     "start": 103.266,
+     "end": 103.486
+    },
+    {
+     "text": "down",
+     "start": 103.486,
+     "end": 103.666
+    },
+    {
+     "text": "payment?",
+     "start": 103.666,
+     "end": 103.886
+    },
+    {
+     "text": "For",
+     "start": 103.886,
+     "end": 104.526
+    },
+    {
+     "text": "my",
+     "start": 104.526,
+     "end": 104.666
+    },
+    {
+     "text": "dad",
+     "start": 104.666,
+     "end": 104.826
+    },
+    {
+     "text": "it",
+     "start": 104.826,
+     "end": 104.966
+    },
+    {
+     "text": "was",
+     "start": 104.966,
+     "end": 105.046
+    },
+    {
+     "text": "a",
+     "start": 105.046,
+     "end": 105.126
+    },
+    {
+     "text": "few",
+     "start": 105.126,
+     "end": 105.246
+    },
+    {
+     "text": "months",
+     "start": 105.246,
+     "end": 105.406
+    },
+    {
+     "text": "of",
+     "start": 105.406,
+     "end": 105.566
+    },
+    {
+     "text": "pay.",
+     "start": 105.566,
+     "end": 105.706
+    },
+    {
+     "text": "For",
+     "start": 106.306,
+     "end": 106.306
+    },
+    {
+     "text": "me",
+     "start": 106.306,
+     "end": 106.426
+    },
+    {
+     "text": "it's",
+     "start": 106.426,
+     "end": 106.546
+    },
+    {
+     "text": "a",
+     "start": 106.546,
+     "end": 106.626
+    },
+    {
+     "text": "whole",
+     "start": 106.626,
+     "end": 106.746
+    },
+    {
+     "text": "year.",
+     "start": 106.746,
+     "end": 106.946
+    },
+    {
+     "text": "A",
+     "start": 107.166,
+     "end": 107.346
+    },
+    {
+     "text": "whole",
+     "start": 107.346,
+     "end": 107.486
+    },
+    {
+     "text": "year",
+     "start": 107.486,
+     "end": 107.746
+    },
+    {
+     "text": "of",
+     "start": 107.746,
+     "end": 107.846
+    },
+    {
+     "text": "not",
+     "start": 107.846,
+     "end": 107.986
+    },
+    {
+     "text": "eating",
+     "start": 107.986,
+     "end": 108.266
+    },
+    {
+     "text": "avocado",
+     "start": 108.266,
+     "end": 108.466
+    },
+    {
+     "text": "toast.",
+     "start": 108.466,
+     "end": 109.026
+    }
+   ]
+  },
+  {
+   "id": "n3",
+   "text": "And yes before you comment. I stopped buying avocado toast. I'm now twelve dollars closer to a house.",
+   "start": 109.78385416666667,
+   "end": 114.57085416666668,
+   "words": [
+    {
+     "text": "And",
+     "start": 109.784,
+     "end": 109.954
+    },
+    {
+     "text": "yes",
+     "start": 109.973,
+     "end": 110.143
+    },
+    {
+     "text": "before",
+     "start": 110.162,
+     "end": 110.46
+    },
+    {
+     "text": "you",
+     "start": 110.493,
+     "end": 110.663
+    },
+    {
+     "text": "comment.",
+     "start": 110.682,
+     "end": 111.065
+    },
+    {
+     "text": "I",
+     "start": 111.107,
+     "end": 111.192
+    },
+    {
+     "text": "stopped",
+     "start": 111.202,
+     "end": 111.542
+    },
+    {
+     "text": "buying",
+     "start": 111.58,
+     "end": 111.877
+    },
+    {
+     "text": "avocado",
+     "start": 111.91,
+     "end": 112.251
+    },
+    {
+     "text": "toast.",
+     "start": 112.289,
+     "end": 112.586
+    },
+    {
+     "text": "I'm",
+     "start": 112.619,
+     "end": 112.789
+    },
+    {
+     "text": "now",
+     "start": 112.808,
+     "end": 112.978
+    },
+    {
+     "text": "twelve",
+     "start": 112.997,
+     "end": 113.295
+    },
+    {
+     "text": "dollars",
+     "start": 113.328,
+     "end": 113.668
+    },
+    {
+     "text": "closer",
+     "start": 113.706,
+     "end": 114.004
+    },
+    {
+     "text": "to",
+     "start": 114.037,
+     "end": 114.165
+    },
+    {
+     "text": "a",
+     "start": 114.179,
+     "end": 114.264
+    },
+    {
+     "text": "house.",
+     "start": 114.273,
+     "end": 114.571
+    }
+   ]
+  },
+  {
+   "id": "n15",
+   "text": "I did the math. At twelve dollars a week I'll have my down payment in about a hundred and fifty years.",
+   "start": 115.23845833333333,
+   "end": 119.35045833333332,
+   "words": [
+    {
+     "text": "I",
+     "start": 115.238,
+     "end": 115.31
+    },
+    {
+     "text": "did",
+     "start": 115.318,
+     "end": 115.463
+    },
+    {
+     "text": "the",
+     "start": 115.479,
+     "end": 115.624
+    },
+    {
+     "text": "math.",
+     "start": 115.64,
+     "end": 115.857
+    },
+    {
+     "text": "At",
+     "start": 115.881,
+     "end": 115.99
+    },
+    {
+     "text": "twelve",
+     "start": 116.002,
+     "end": 116.255
+    },
+    {
+     "text": "dollars",
+     "start": 116.283,
+     "end": 116.572
+    },
+    {
+     "text": "a",
+     "start": 116.605,
+     "end": 116.677
+    },
+    {
+     "text": "week",
+     "start": 116.685,
+     "end": 116.866
+    },
+    {
+     "text": "I'll",
+     "start": 116.886,
+     "end": 117.067
+    },
+    {
+     "text": "have",
+     "start": 117.087,
+     "end": 117.268
+    },
+    {
+     "text": "my",
+     "start": 117.288,
+     "end": 117.396
+    },
+    {
+     "text": "down",
+     "start": 117.408,
+     "end": 117.589
+    },
+    {
+     "text": "payment",
+     "start": 117.609,
+     "end": 117.899
+    },
+    {
+     "text": "in",
+     "start": 117.931,
+     "end": 118.04
+    },
+    {
+     "text": "about",
+     "start": 118.052,
+     "end": 118.269
+    },
+    {
+     "text": "a",
+     "start": 118.293,
+     "end": 118.365
+    },
+    {
+     "text": "hundred",
+     "start": 118.373,
+     "end": 118.663
+    },
+    {
+     "text": "and",
+     "start": 118.695,
+     "end": 118.839
+    },
+    {
+     "text": "fifty",
+     "start": 118.855,
+     "end": 119.073
+    },
+    {
+     "text": "years.",
+     "start": 119.097,
+     "end": 119.35
+    }
+   ]
+  },
+  {
+   "id": "c3a",
+   "text": "So I start looking for a house anyway. And the first thing I notice? There's almost nothing for sale.",
+   "start": 122.38391666666666,
+   "end": 126.52391666666666,
+   "words": [
+    {
+     "text": "So",
+     "start": 122.384,
+     "end": 122.604
+    },
+    {
+     "text": "I",
+     "start": 122.604,
+     "end": 122.824
+    },
+    {
+     "text": "start",
+     "start": 122.824,
+     "end": 122.964
+    },
+    {
+     "text": "looking",
+     "start": 122.964,
+     "end": 123.184
+    },
+    {
+     "text": "for",
+     "start": 123.184,
+     "end": 123.364
+    },
+    {
+     "text": "a",
+     "start": 123.364,
+     "end": 123.404
+    },
+    {
+     "text": "house",
+     "start": 123.404,
+     "end": 123.524
+    },
+    {
+     "text": "anyway.",
+     "start": 123.524,
+     "end": 123.804
+    },
+    {
+     "text": "And",
+     "start": 124.244,
+     "end": 124.324
+    },
+    {
+     "text": "the",
+     "start": 124.324,
+     "end": 124.444
+    },
+    {
+     "text": "first",
+     "start": 124.444,
+     "end": 124.584
+    },
+    {
+     "text": "thing",
+     "start": 124.584,
+     "end": 124.724
+    },
+    {
+     "text": "I",
+     "start": 124.724,
+     "end": 124.824
+    },
+    {
+     "text": "notice?",
+     "start": 124.824,
+     "end": 125.024
+    },
+    {
+     "text": "There's",
+     "start": 125.544,
+     "end": 125.744
+    },
+    {
+     "text": "almost",
+     "start": 125.744,
+     "end": 125.844
+    },
+    {
+     "text": "nothing",
+     "start": 125.844,
+     "end": 126.144
+    },
+    {
+     "text": "for",
+     "start": 126.144,
+     "end": 126.324
+    },
+    {
+     "text": "sale.",
+     "start": 126.324,
+     "end": 126.524
+    }
+   ]
+  },
+  {
+   "id": "c3b",
+   "text": "Here's why. A few years ago rates dropped to around three percent and millions of people locked in super cheap loans.",
+   "start": 127.188875,
+   "end": 133.028875,
+   "words": [
+    {
+     "text": "Here's",
+     "start": 127.189,
+     "end": 127.369
+    },
+    {
+     "text": "why.",
+     "start": 127.369,
+     "end": 127.569
+    },
+    {
+     "text": "A",
+     "start": 128.229,
+     "end": 128.229
+    },
+    {
+     "text": "few",
+     "start": 128.229,
+     "end": 128.369
+    },
+    {
+     "text": "years",
+     "start": 128.369,
+     "end": 128.549
+    },
+    {
+     "text": "ago",
+     "start": 128.549,
+     "end": 128.809
+    },
+    {
+     "text": "rates",
+     "start": 128.949,
+     "end": 129.069
+    },
+    {
+     "text": "dropped",
+     "start": 129.069,
+     "end": 129.369
+    },
+    {
+     "text": "to",
+     "start": 129.369,
+     "end": 129.709
+    },
+    {
+     "text": "around",
+     "start": 129.709,
+     "end": 129.849
+    },
+    {
+     "text": "three",
+     "start": 129.849,
+     "end": 130.189
+    },
+    {
+     "text": "percent",
+     "start": 130.189,
+     "end": 130.509
+    },
+    {
+     "text": "and",
+     "start": 130.509,
+     "end": 130.889
+    },
+    {
+     "text": "millions",
+     "start": 130.889,
+     "end": 131.129
+    },
+    {
+     "text": "of",
+     "start": 131.129,
+     "end": 131.389
+    },
+    {
+     "text": "people",
+     "start": 131.389,
+     "end": 131.589
+    },
+    {
+     "text": "locked",
+     "start": 131.589,
+     "end": 131.929
+    },
+    {
+     "text": "in",
+     "start": 131.929,
+     "end": 132.189
+    },
+    {
+     "text": "super",
+     "start": 132.189,
+     "end": 132.449
+    },
+    {
+     "text": "cheap",
+     "start": 132.449,
+     "end": 132.729
+    },
+    {
+     "text": "loans.",
+     "start": 132.729,
+     "end": 133.029
+    }
+   ]
+  },
+  {
+   "id": "n16",
+   "text": "Imagine having a three percent loan. That's like owning a time machine back to cheap money. You don't give that up.",
+   "start": 133.79497916666668,
+   "end": 138.23497916666668,
+   "words": [
+    {
+     "text": "Imagine",
+     "start": 133.795,
+     "end": 134.035
+    },
+    {
+     "text": "having",
+     "start": 134.035,
+     "end": 134.235
+    },
+    {
+     "text": "a",
+     "start": 134.235,
+     "end": 134.395
+    },
+    {
+     "text": "three",
+     "start": 134.395,
+     "end": 134.555
+    },
+    {
+     "text": "percent",
+     "start": 134.555,
+     "end": 134.835
+    },
+    {
+     "text": "loan.",
+     "start": 134.835,
+     "end": 135.075
+    },
+    {
+     "text": "That's",
+     "start": 135.395,
+     "end": 135.575
+    },
+    {
+     "text": "like",
+     "start": 135.575,
+     "end": 135.635
+    },
+    {
+     "text": "owning",
+     "start": 135.635,
+     "end": 135.855
+    },
+    {
+     "text": "a",
+     "start": 135.855,
+     "end": 135.995
+    },
+    {
+     "text": "time",
+     "start": 135.995,
+     "end": 136.175
+    },
+    {
+     "text": "machine",
+     "start": 136.175,
+     "end": 136.395
+    },
+    {
+     "text": "back",
+     "start": 136.395,
+     "end": 136.635
+    },
+    {
+     "text": "to",
+     "start": 136.635,
+     "end": 136.775
+    },
+    {
+     "text": "cheap",
+     "start": 136.775,
+     "end": 136.935
+    },
+    {
+     "text": "money.",
+     "start": 136.935,
+     "end": 137.195
+    },
+    {
+     "text": "You",
+     "start": 137.535,
+     "end": 137.635
+    },
+    {
+     "text": "don't",
+     "start": 137.635,
+     "end": 137.815
+    },
+    {
+     "text": "give",
+     "start": 137.815,
+     "end": 137.915
+    },
+    {
+     "text": "that",
+     "start": 137.915,
+     "end": 138.075
+    },
+    {
+     "text": "up.",
+     "start": 138.075,
+     "end": 138.235
+    }
+   ]
+  },
+  {
+   "id": "c3d",
+   "text": "Now imagine you're one of them. If you sell and buy a new house you swap your cheap loan for an expensive one. Your payment jumps overnight.",
+   "start": 138.75545833333334,
+   "end": 144.53545833333334,
+   "words": [
+    {
+     "text": "Now",
+     "start": 138.755,
+     "end": 138.875
+    },
+    {
+     "text": "imagine",
+     "start": 138.875,
+     "end": 139.255
+    },
+    {
+     "text": "you're",
+     "start": 139.255,
+     "end": 139.395
+    },
+    {
+     "text": "one",
+     "start": 139.395,
+     "end": 139.595
+    },
+    {
+     "text": "of",
+     "start": 139.595,
+     "end": 139.695
+    },
+    {
+     "text": "them.",
+     "start": 139.695,
+     "end": 139.835
+    },
+    {
+     "text": "If",
+     "start": 140.375,
+     "end": 140.415
+    },
+    {
+     "text": "you",
+     "start": 140.415,
+     "end": 140.535
+    },
+    {
+     "text": "sell",
+     "start": 140.535,
+     "end": 140.715
+    },
+    {
+     "text": "and",
+     "start": 140.715,
+     "end": 140.855
+    },
+    {
+     "text": "buy",
+     "start": 140.855,
+     "end": 140.995
+    },
+    {
+     "text": "a",
+     "start": 140.995,
+     "end": 141.135
+    },
+    {
+     "text": "new",
+     "start": 141.135,
+     "end": 141.215
+    },
+    {
+     "text": "house",
+     "start": 141.215,
+     "end": 141.455
+    },
+    {
+     "text": "you",
+     "start": 141.635,
+     "end": 141.675
+    },
+    {
+     "text": "swap",
+     "start": 141.675,
+     "end": 141.815
+    },
+    {
+     "text": "your",
+     "start": 141.815,
+     "end": 142.035
+    },
+    {
+     "text": "cheap",
+     "start": 142.035,
+     "end": 142.195
+    },
+    {
+     "text": "loan",
+     "start": 142.195,
+     "end": 142.415
+    },
+    {
+     "text": "for",
+     "start": 142.415,
+     "end": 142.635
+    },
+    {
+     "text": "an",
+     "start": 142.635,
+     "end": 142.695
+    },
+    {
+     "text": "expensive",
+     "start": 142.695,
+     "end": 142.875
+    },
+    {
+     "text": "one.",
+     "start": 142.875,
+     "end": 143.295
+    },
+    {
+     "text": "Your",
+     "start": 143.755,
+     "end": 143.815
+    },
+    {
+     "text": "payment",
+     "start": 143.815,
+     "end": 144.055
+    },
+    {
+     "text": "jumps",
+     "start": 144.055,
+     "end": 144.255
+    },
+    {
+     "text": "overnight.",
+     "start": 144.255,
+     "end": 144.535
+    }
+   ]
+  },
+  {
+   "id": "c3e",
+   "text": "So people stay put. Kids move out. The house is way too big. They stay anyway. Economists call it the lock in effect.",
+   "start": 145.24558333333334,
+   "end": 150.80558333333335,
+   "words": [
+    {
+     "text": "So",
+     "start": 145.246,
+     "end": 145.366
+    },
+    {
+     "text": "people",
+     "start": 145.366,
+     "end": 145.526
+    },
+    {
+     "text": "stay",
+     "start": 145.526,
+     "end": 145.766
+    },
+    {
+     "text": "put.",
+     "start": 145.766,
+     "end": 146.006
+    },
+    {
+     "text": "Kids",
+     "start": 146.326,
+     "end": 146.486
+    },
+    {
+     "text": "move",
+     "start": 146.486,
+     "end": 146.666
+    },
+    {
+     "text": "out.",
+     "start": 146.666,
+     "end": 146.906
+    },
+    {
+     "text": "The",
+     "start": 147.226,
+     "end": 147.286
+    },
+    {
+     "text": "house",
+     "start": 147.286,
+     "end": 147.426
+    },
+    {
+     "text": "is",
+     "start": 147.426,
+     "end": 147.566
+    },
+    {
+     "text": "way",
+     "start": 147.566,
+     "end": 147.706
+    },
+    {
+     "text": "too",
+     "start": 147.706,
+     "end": 147.826
+    },
+    {
+     "text": "big.",
+     "start": 147.826,
+     "end": 148.106
+    },
+    {
+     "text": "They",
+     "start": 148.346,
+     "end": 148.486
+    },
+    {
+     "text": "stay",
+     "start": 148.486,
+     "end": 148.606
+    },
+    {
+     "text": "anyway.",
+     "start": 148.606,
+     "end": 148.946
+    },
+    {
+     "text": "Economists",
+     "start": 149.526,
+     "end": 149.866
+    },
+    {
+     "text": "call",
+     "start": 149.866,
+     "end": 150.046
+    },
+    {
+     "text": "it",
+     "start": 150.046,
+     "end": 150.186
+    },
+    {
+     "text": "the",
+     "start": 150.186,
+     "end": 150.326
+    },
+    {
+     "text": "lock",
+     "start": 150.326,
+     "end": 150.466
+    },
+    {
+     "text": "in",
+     "start": 150.466,
+     "end": 150.646
+    },
+    {
+     "text": "effect.",
+     "start": 150.646,
+     "end": 150.806
+    }
+   ]
+  },
+  {
+   "id": "c3f",
+   "text": "It's like golden handcuffs. Shiny. Comfy. And you can't leave.",
+   "start": 151.53275,
+   "end": 154.99275,
+   "words": [
+    {
+     "text": "It's",
+     "start": 151.533,
+     "end": 151.713
+    },
+    {
+     "text": "like",
+     "start": 151.713,
+     "end": 151.833
+    },
+    {
+     "text": "golden",
+     "start": 151.833,
+     "end": 152.173
+    },
+    {
+     "text": "handcuffs.",
+     "start": 152.173,
+     "end": 152.653
+    },
+    {
+     "text": "Shiny.",
+     "start": 153.093,
+     "end": 153.313
+    },
+    {
+     "text": "Comfy.",
+     "start": 153.773,
+     "end": 154.093
+    },
+    {
+     "text": "And",
+     "start": 154.393,
+     "end": 154.453
+    },
+    {
+     "text": "you",
+     "start": 154.453,
+     "end": 154.553
+    },
+    {
+     "text": "can't",
+     "start": 154.553,
+     "end": 154.833
+    },
+    {
+     "text": "leave.",
+     "start": 154.833,
+     "end": 154.993
+    }
+   ]
+  },
+  {
+   "id": "n4",
+   "text": "My neighbor with a three percent mortgage and four empty bedrooms.",
+   "start": 155.6405625,
+   "end": 157.90056249999998,
+   "words": [
+    {
+     "text": "My",
+     "start": 155.641,
+     "end": 155.741
+    },
+    {
+     "text": "neighbor",
+     "start": 155.741,
+     "end": 155.921
+    },
+    {
+     "text": "with",
+     "start": 155.921,
+     "end": 156.101
+    },
+    {
+     "text": "a",
+     "start": 156.101,
+     "end": 156.181
+    },
+    {
+     "text": "three",
+     "start": 156.181,
+     "end": 156.341
+    },
+    {
+     "text": "percent",
+     "start": 156.341,
+     "end": 156.581
+    },
+    {
+     "text": "mortgage",
+     "start": 156.581,
+     "end": 156.901
+    },
+    {
+     "text": "and",
+     "start": 156.901,
+     "end": 157.181
+    },
+    {
+     "text": "four",
+     "start": 157.181,
+     "end": 157.361
+    },
+    {
+     "text": "empty",
+     "start": 157.361,
+     "end": 157.621
+    },
+    {
+     "text": "bedrooms.",
+     "start": 157.621,
+     "end": 157.901
+    }
+   ]
+  },
+  {
+   "id": "n17",
+   "text": "Older couples in four bedroom houses. Young families in one bedroom apartments. Everyone stuck in the wrong size.",
+   "start": 158.61602083333332,
+   "end": 164.13602083333333,
+   "words": [
+    {
+     "text": "Older",
+     "start": 158.616,
+     "end": 158.796
+    },
+    {
+     "text": "couples",
+     "start": 158.796,
+     "end": 159.156
+    },
+    {
+     "text": "in",
+     "start": 159.156,
+     "end": 159.436
+    },
+    {
+     "text": "four",
+     "start": 159.436,
+     "end": 159.616
+    },
+    {
+     "text": "bedroom",
+     "start": 159.616,
+     "end": 159.916
+    },
+    {
+     "text": "houses.",
+     "start": 159.916,
+     "end": 160.296
+    },
+    {
+     "text": "Young",
+     "start": 160.736,
+     "end": 160.956
+    },
+    {
+     "text": "families",
+     "start": 160.956,
+     "end": 161.336
+    },
+    {
+     "text": "in",
+     "start": 161.336,
+     "end": 161.616
+    },
+    {
+     "text": "one",
+     "start": 161.616,
+     "end": 161.756
+    },
+    {
+     "text": "bedroom",
+     "start": 161.756,
+     "end": 162.076
+    },
+    {
+     "text": "apartments.",
+     "start": 162.076,
+     "end": 162.516
+    },
+    {
+     "text": "Everyone",
+     "start": 162.896,
+     "end": 163.156
+    },
+    {
+     "text": "stuck",
+     "start": 163.156,
+     "end": 163.456
+    },
+    {
+     "text": "in",
+     "start": 163.456,
+     "end": 163.656
+    },
+    {
+     "text": "the",
+     "start": 163.656,
+     "end": 163.736
+    },
+    {
+     "text": "wrong",
+     "start": 163.736,
+     "end": 163.876
+    },
+    {
+     "text": "size.",
+     "start": 163.876,
+     "end": 164.136
+    }
+   ]
+  },
+  {
+   "id": "c4a",
+   "text": "And the other big reason is simple. America didn't build enough homes.",
+   "start": 164.93364583333334,
+   "end": 167.73364583333336,
+   "words": [
+    {
+     "text": "And",
+     "start": 164.934,
+     "end": 165.114
+    },
+    {
+     "text": "the",
+     "start": 165.114,
+     "end": 165.194
+    },
+    {
+     "text": "other",
+     "start": 165.194,
+     "end": 165.314
+    },
+    {
+     "text": "big",
+     "start": 165.314,
+     "end": 165.474
+    },
+    {
+     "text": "reason",
+     "start": 165.474,
+     "end": 165.674
+    },
+    {
+     "text": "is",
+     "start": 165.674,
+     "end": 165.854
+    },
+    {
+     "text": "simple.",
+     "start": 165.854,
+     "end": 166.134
+    },
+    {
+     "text": "America",
+     "start": 166.514,
+     "end": 166.734
+    },
+    {
+     "text": "didn't",
+     "start": 166.734,
+     "end": 167.134
+    },
+    {
+     "text": "build",
+     "start": 167.134,
+     "end": 167.274
+    },
+    {
+     "text": "enough",
+     "start": 167.274,
+     "end": 167.454
+    },
+    {
+     "text": "homes.",
+     "start": 167.454,
+     "end": 167.734
+    }
+   ]
+  },
+  {
+   "id": "c4b",
+   "text": "After the crash in two thousand eight builders went bust. For about ten years almost nobody was building.",
+   "start": 168.52179166666667,
+   "end": 173.09779166666667,
+   "words": [
+    {
+     "text": "After",
+     "start": 168.522,
+     "end": 168.757
+    },
+    {
+     "text": "the",
+     "start": 168.784,
+     "end": 168.94
+    },
+    {
+     "text": "crash",
+     "start": 168.958,
+     "end": 169.193
+    },
+    {
+     "text": "in",
+     "start": 169.219,
+     "end": 169.337
+    },
+    {
+     "text": "two",
+     "start": 169.35,
+     "end": 169.507
+    },
+    {
+     "text": "thousand",
+     "start": 169.524,
+     "end": 169.877
+    },
+    {
+     "text": "eight",
+     "start": 169.917,
+     "end": 170.152
+    },
+    {
+     "text": "builders",
+     "start": 170.178,
+     "end": 170.531
+    },
+    {
+     "text": "went",
+     "start": 170.57,
+     "end": 170.767
+    },
+    {
+     "text": "bust.",
+     "start": 170.788,
+     "end": 171.024
+    },
+    {
+     "text": "For",
+     "start": 171.05,
+     "end": 171.207
+    },
+    {
+     "text": "about",
+     "start": 171.224,
+     "end": 171.46
+    },
+    {
+     "text": "ten",
+     "start": 171.486,
+     "end": 171.643
+    },
+    {
+     "text": "years",
+     "start": 171.66,
+     "end": 171.895
+    },
+    {
+     "text": "almost",
+     "start": 171.922,
+     "end": 172.196
+    },
+    {
+     "text": "nobody",
+     "start": 172.227,
+     "end": 172.501
+    },
+    {
+     "text": "was",
+     "start": 172.532,
+     "end": 172.689
+    },
+    {
+     "text": "building.",
+     "start": 172.706,
+     "end": 173.098
+    }
+   ]
+  },
+  {
+   "id": "c4c",
+   "text": "Meanwhile my whole generation grew up and wanted a place. Lots of new people. Not enough new houses.",
+   "start": 173.82191666666668,
+   "end": 178.26191666666668,
+   "words": [
+    {
+     "text": "Meanwhile",
+     "start": 173.822,
+     "end": 174.062
+    },
+    {
+     "text": "my",
+     "start": 174.302,
+     "end": 174.402
+    },
+    {
+     "text": "whole",
+     "start": 174.402,
+     "end": 174.542
+    },
+    {
+     "text": "generation",
+     "start": 174.542,
+     "end": 174.802
+    },
+    {
+     "text": "grew",
+     "start": 174.802,
+     "end": 175.242
+    },
+    {
+     "text": "up",
+     "start": 175.242,
+     "end": 175.402
+    },
+    {
+     "text": "and",
+     "start": 175.402,
+     "end": 175.522
+    },
+    {
+     "text": "wanted",
+     "start": 175.522,
+     "end": 175.702
+    },
+    {
+     "text": "a",
+     "start": 175.702,
+     "end": 175.842
+    },
+    {
+     "text": "place.",
+     "start": 175.842,
+     "end": 176.042
+    },
+    {
+     "text": "Lots",
+     "start": 176.442,
+     "end": 176.602
+    },
+    {
+     "text": "of",
+     "start": 176.602,
+     "end": 176.762
+    },
+    {
+     "text": "new",
+     "start": 176.762,
+     "end": 176.882
+    },
+    {
+     "text": "people.",
+     "start": 176.882,
+     "end": 177.182
+    },
+    {
+     "text": "Not",
+     "start": 177.462,
+     "end": 177.602
+    },
+    {
+     "text": "enough",
+     "start": 177.602,
+     "end": 177.742
+    },
+    {
+     "text": "new",
+     "start": 177.742,
+     "end": 177.982
+    },
+    {
+     "text": "houses.",
+     "start": 177.982,
+     "end": 178.262
+    }
+   ]
+  },
+  {
+   "id": "n18",
+   "text": "My friend Mike and his wife looked at forty houses last year. Forty. They lost every single one to someone with more cash.",
+   "start": 179.1029375,
+   "end": 184.52293749999998,
+   "words": [
+    {
+     "text": "My",
+     "start": 179.103,
+     "end": 179.203
+    },
+    {
+     "text": "friend",
+     "start": 179.203,
+     "end": 179.403
+    },
+    {
+     "text": "Mike",
+     "start": 179.403,
+     "end": 179.683
+    },
+    {
+     "text": "and",
+     "start": 179.683,
+     "end": 179.923
+    },
+    {
+     "text": "his",
+     "start": 179.923,
+     "end": 180.003
+    },
+    {
+     "text": "wife",
+     "start": 180.003,
+     "end": 180.203
+    },
+    {
+     "text": "looked",
+     "start": 180.203,
+     "end": 180.483
+    },
+    {
+     "text": "at",
+     "start": 180.483,
+     "end": 180.583
+    },
+    {
+     "text": "forty",
+     "start": 180.583,
+     "end": 180.803
+    },
+    {
+     "text": "houses",
+     "start": 180.803,
+     "end": 181.123
+    },
+    {
+     "text": "last",
+     "start": 181.123,
+     "end": 181.403
+    },
+    {
+     "text": "year.",
+     "start": 181.403,
+     "end": 181.683
+    },
+    {
+     "text": "Forty.",
+     "start": 182.003,
+     "end": 182.203
+    },
+    {
+     "text": "They",
+     "start": 182.543,
+     "end": 182.643
+    },
+    {
+     "text": "lost",
+     "start": 182.643,
+     "end": 182.763
+    },
+    {
+     "text": "every",
+     "start": 182.763,
+     "end": 183.023
+    },
+    {
+     "text": "single",
+     "start": 183.023,
+     "end": 183.323
+    },
+    {
+     "text": "one",
+     "start": 183.323,
+     "end": 183.563
+    },
+    {
+     "text": "to",
+     "start": 183.563,
+     "end": 183.743
+    },
+    {
+     "text": "someone",
+     "start": 183.743,
+     "end": 183.923
+    },
+    {
+     "text": "with",
+     "start": 183.923,
+     "end": 184.143
+    },
+    {
+     "text": "more",
+     "start": 184.143,
+     "end": 184.323
+    },
+    {
+     "text": "cash.",
+     "start": 184.323,
+     "end": 184.523
+    }
+   ]
+  },
+  {
+   "id": "c4e",
+   "text": "It's musical chairs. Ten people. Eight chairs. When the music stops everyone fights for a chair and the chairs get very expensive.",
+   "start": 185.28854166666667,
+   "end": 191.18854166666668,
+   "words": [
+    {
+     "text": "It's",
+     "start": 185.289,
+     "end": 185.429
+    },
+    {
+     "text": "musical",
+     "start": 185.429,
+     "end": 185.549
+    },
+    {
+     "text": "chairs.",
+     "start": 185.549,
+     "end": 185.929
+    },
+    {
+     "text": "Ten",
+     "start": 186.369,
+     "end": 186.449
+    },
+    {
+     "text": "people.",
+     "start": 186.449,
+     "end": 186.769
+    },
+    {
+     "text": "Eight",
+     "start": 187.009,
+     "end": 187.149
+    },
+    {
+     "text": "chairs.",
+     "start": 187.149,
+     "end": 187.449
+    },
+    {
+     "text": "When",
+     "start": 188.089,
+     "end": 188.109
+    },
+    {
+     "text": "the",
+     "start": 188.109,
+     "end": 188.209
+    },
+    {
+     "text": "music",
+     "start": 188.209,
+     "end": 188.369
+    },
+    {
+     "text": "stops",
+     "start": 188.369,
+     "end": 188.709
+    },
+    {
+     "text": "everyone",
+     "start": 188.889,
+     "end": 189.109
+    },
+    {
+     "text": "fights",
+     "start": 189.109,
+     "end": 189.389
+    },
+    {
+     "text": "for",
+     "start": 189.389,
+     "end": 189.649
+    },
+    {
+     "text": "a",
+     "start": 189.649,
+     "end": 189.729
+    },
+    {
+     "text": "chair",
+     "start": 189.729,
+     "end": 189.929
+    },
+    {
+     "text": "and",
+     "start": 189.929,
+     "end": 190.169
+    },
+    {
+     "text": "the",
+     "start": 190.169,
+     "end": 190.249
+    },
+    {
+     "text": "chairs",
+     "start": 190.249,
+     "end": 190.449
+    },
+    {
+     "text": "get",
+     "start": 190.449,
+     "end": 190.649
+    },
+    {
+     "text": "very",
+     "start": 190.649,
+     "end": 190.829
+    },
+    {
+     "text": "expensive.",
+     "start": 190.829,
+     "end": 191.189
+    }
+   ]
+  },
+  {
+   "id": "n5",
+   "text": "Me playing musical chairs with a guy who already has three chairs.",
+   "start": 191.99125,
+   "end": 194.63125,
+   "words": [
+    {
+     "text": "Me",
+     "start": 191.991,
+     "end": 192.111
+    },
+    {
+     "text": "playing",
+     "start": 192.111,
+     "end": 192.391
+    },
+    {
+     "text": "musical",
+     "start": 192.391,
+     "end": 192.651
+    },
+    {
+     "text": "chairs",
+     "start": 192.651,
+     "end": 193.031
+    },
+    {
+     "text": "with",
+     "start": 193.031,
+     "end": 193.231
+    },
+    {
+     "text": "a",
+     "start": 193.231,
+     "end": 193.291
+    },
+    {
+     "text": "guy",
+     "start": 193.291,
+     "end": 193.451
+    },
+    {
+     "text": "who",
+     "start": 193.451,
+     "end": 193.631
+    },
+    {
+     "text": "already",
+     "start": 193.631,
+     "end": 193.871
+    },
+    {
+     "text": "has",
+     "start": 193.871,
+     "end": 194.111
+    },
+    {
+     "text": "three",
+     "start": 194.111,
+     "end": 194.291
+    },
+    {
+     "text": "chairs.",
+     "start": 194.291,
+     "end": 194.631
+    }
+   ]
+  },
+  {
+   "id": "c5b",
+   "text": "And building more isn't easy. In a lot of cities the rules only allow one big house on one big lot. No apartments. No townhouses.",
+   "start": 195.2959375,
+   "end": 202.4959375,
+   "words": [
+    {
+     "text": "And",
+     "start": 195.296,
+     "end": 195.436
+    },
+    {
+     "text": "building",
+     "start": 195.436,
+     "end": 195.716
+    },
+    {
+     "text": "more",
+     "start": 195.716,
+     "end": 196.016
+    },
+    {
+     "text": "isn't",
+     "start": 196.016,
+     "end": 196.436
+    },
+    {
+     "text": "easy.",
+     "start": 196.436,
+     "end": 196.756
+    },
+    {
+     "text": "In",
+     "start": 197.196,
+     "end": 197.276
+    },
+    {
+     "text": "a",
+     "start": 197.276,
+     "end": 197.356
+    },
+    {
+     "text": "lot",
+     "start": 197.356,
+     "end": 197.516
+    },
+    {
+     "text": "of",
+     "start": 197.516,
+     "end": 197.616
+    },
+    {
+     "text": "cities",
+     "start": 197.616,
+     "end": 197.876
+    },
+    {
+     "text": "the",
+     "start": 198.096,
+     "end": 198.136
+    },
+    {
+     "text": "rules",
+     "start": 198.136,
+     "end": 198.336
+    },
+    {
+     "text": "only",
+     "start": 198.336,
+     "end": 198.696
+    },
+    {
+     "text": "allow",
+     "start": 198.696,
+     "end": 198.956
+    },
+    {
+     "text": "one",
+     "start": 198.956,
+     "end": 199.216
+    },
+    {
+     "text": "big",
+     "start": 199.216,
+     "end": 199.436
+    },
+    {
+     "text": "house",
+     "start": 199.436,
+     "end": 199.716
+    },
+    {
+     "text": "on",
+     "start": 199.716,
+     "end": 199.996
+    },
+    {
+     "text": "one",
+     "start": 199.996,
+     "end": 200.176
+    },
+    {
+     "text": "big",
+     "start": 200.176,
+     "end": 200.396
+    },
+    {
+     "text": "lot.",
+     "start": 200.396,
+     "end": 200.676
+    },
+    {
+     "text": "No",
+     "start": 200.996,
+     "end": 201.136
+    },
+    {
+     "text": "apartments.",
+     "start": 201.136,
+     "end": 201.476
+    },
+    {
+     "text": "No",
+     "start": 201.916,
+     "end": 201.996
+    },
+    {
+     "text": "townhouses.",
+     "start": 201.996,
+     "end": 202.496
+    }
+   ]
+  },
+  {
+   "id": "c5c",
+   "text": "Getting a permit can take years. And neighbors show up to meetings and say build it. Just not here.",
+   "start": 203.16204166666665,
+   "end": 208.08204166666664,
+   "words": [
+    {
+     "text": "Getting",
+     "start": 203.162,
+     "end": 203.322
+    },
+    {
+     "text": "a",
+     "start": 203.322,
+     "end": 203.402
+    },
+    {
+     "text": "permit",
+     "start": 203.402,
+     "end": 203.642
+    },
+    {
+     "text": "can",
+     "start": 203.642,
+     "end": 203.922
+    },
+    {
+     "text": "take",
+     "start": 203.922,
+     "end": 204.082
+    },
+    {
+     "text": "years.",
+     "start": 204.082,
+     "end": 204.362
+    },
+    {
+     "text": "And",
+     "start": 205.082,
+     "end": 205.282
+    },
+    {
+     "text": "neighbors",
+     "start": 205.282,
+     "end": 205.582
+    },
+    {
+     "text": "show",
+     "start": 205.582,
+     "end": 205.862
+    },
+    {
+     "text": "up",
+     "start": 205.862,
+     "end": 206.002
+    },
+    {
+     "text": "to",
+     "start": 206.002,
+     "end": 206.122
+    },
+    {
+     "text": "meetings",
+     "start": 206.122,
+     "end": 206.322
+    },
+    {
+     "text": "and",
+     "start": 206.322,
+     "end": 206.602
+    },
+    {
+     "text": "say",
+     "start": 206.602,
+     "end": 206.762
+    },
+    {
+     "text": "build",
+     "start": 206.762,
+     "end": 207.002
+    },
+    {
+     "text": "it.",
+     "start": 207.002,
+     "end": 207.182
+    },
+    {
+     "text": "Just",
+     "start": 207.422,
+     "end": 207.582
+    },
+    {
+     "text": "not",
+     "start": 207.582,
+     "end": 207.822
+    },
+    {
+     "text": "here.",
+     "start": 207.822,
+     "end": 208.082
+    }
+   ]
+  },
+  {
+   "id": "n6",
+   "text": "Every neighbor at the town meeting.",
+   "start": 208.741875,
+   "end": 209.981875,
+   "words": [
+    {
+     "text": "Every",
+     "start": 208.742,
+     "end": 208.982
+    },
+    {
+     "text": "neighbor",
+     "start": 208.982,
+     "end": 209.182
+    },
+    {
+     "text": "at",
+     "start": 209.182,
+     "end": 209.422
+    },
+    {
+     "text": "the",
+     "start": 209.422,
+     "end": 209.502
+    },
+    {
+     "text": "town",
+     "start": 209.502,
+     "end": 209.662
+    },
+    {
+     "text": "meeting.",
+     "start": 209.662,
+     "end": 209.982
+    }
+   ]
+  },
+  {
+   "id": "c5d",
+   "text": "Builders say all those rules add about a quarter to the price of a new home. Before they even buy a single brick.",
+   "start": 210.66533333333334,
+   "end": 215.76533333333333,
+   "words": [
+    {
+     "text": "Builders",
+     "start": 210.665,
+     "end": 210.965
+    },
+    {
+     "text": "say",
+     "start": 210.965,
+     "end": 211.165
+    },
+    {
+     "text": "all",
+     "start": 211.165,
+     "end": 211.465
+    },
+    {
+     "text": "those",
+     "start": 211.465,
+     "end": 211.685
+    },
+    {
+     "text": "rules",
+     "start": 211.685,
+     "end": 211.965
+    },
+    {
+     "text": "add",
+     "start": 211.965,
+     "end": 212.285
+    },
+    {
+     "text": "about",
+     "start": 212.285,
+     "end": 212.485
+    },
+    {
+     "text": "a",
+     "start": 212.485,
+     "end": 212.565
+    },
+    {
+     "text": "quarter",
+     "start": 212.565,
+     "end": 212.805
+    },
+    {
+     "text": "to",
+     "start": 212.805,
+     "end": 213.065
+    },
+    {
+     "text": "the",
+     "start": 213.065,
+     "end": 213.145
+    },
+    {
+     "text": "price",
+     "start": 213.145,
+     "end": 213.325
+    },
+    {
+     "text": "of",
+     "start": 213.325,
+     "end": 213.525
+    },
+    {
+     "text": "a",
+     "start": 213.525,
+     "end": 213.605
+    },
+    {
+     "text": "new",
+     "start": 213.605,
+     "end": 213.725
+    },
+    {
+     "text": "home.",
+     "start": 213.725,
+     "end": 214.005
+    },
+    {
+     "text": "Before",
+     "start": 214.005,
+     "end": 214.545
+    },
+    {
+     "text": "they",
+     "start": 214.545,
+     "end": 214.725
+    },
+    {
+     "text": "even",
+     "start": 214.725,
+     "end": 214.905
+    },
+    {
+     "text": "buy",
+     "start": 214.905,
+     "end": 215.125
+    },
+    {
+     "text": "a",
+     "start": 215.125,
+     "end": 215.265
+    },
+    {
+     "text": "single",
+     "start": 215.265,
+     "end": 215.485
+    },
+    {
+     "text": "brick.",
+     "start": 215.485,
+     "end": 215.765
+    }
+   ]
+  },
+  {
+   "id": "n19",
+   "text": "And lumber and workers and land all got more expensive. So when builders do build they build big fancy houses because those pay more.",
+   "start": 216.34322916666667,
+   "end": 222.74322916666668,
+   "words": [
+    {
+     "text": "And",
+     "start": 216.343,
+     "end": 216.443
+    },
+    {
+     "text": "lumber",
+     "start": 216.443,
+     "end": 216.643
+    },
+    {
+     "text": "and",
+     "start": 216.643,
+     "end": 216.903
+    },
+    {
+     "text": "workers",
+     "start": 216.903,
+     "end": 217.123
+    },
+    {
+     "text": "and",
+     "start": 217.123,
+     "end": 217.423
+    },
+    {
+     "text": "land",
+     "start": 217.423,
+     "end": 217.603
+    },
+    {
+     "text": "all",
+     "start": 217.603,
+     "end": 217.983
+    },
+    {
+     "text": "got",
+     "start": 217.983,
+     "end": 218.103
+    },
+    {
+     "text": "more",
+     "start": 218.103,
+     "end": 218.263
+    },
+    {
+     "text": "expensive.",
+     "start": 218.263,
+     "end": 218.503
+    },
+    {
+     "text": "So",
+     "start": 219.303,
+     "end": 219.403
+    },
+    {
+     "text": "when",
+     "start": 219.403,
+     "end": 219.523
+    },
+    {
+     "text": "builders",
+     "start": 219.523,
+     "end": 219.743
+    },
+    {
+     "text": "do",
+     "start": 219.743,
+     "end": 220.003
+    },
+    {
+     "text": "build",
+     "start": 220.003,
+     "end": 220.283
+    },
+    {
+     "text": "they",
+     "start": 220.483,
+     "end": 220.563
+    },
+    {
+     "text": "build",
+     "start": 220.563,
+     "end": 220.763
+    },
+    {
+     "text": "big",
+     "start": 220.763,
+     "end": 220.943
+    },
+    {
+     "text": "fancy",
+     "start": 220.943,
+     "end": 221.163
+    },
+    {
+     "text": "houses",
+     "start": 221.163,
+     "end": 221.543
+    },
+    {
+     "text": "because",
+     "start": 221.543,
+     "end": 222.003
+    },
+    {
+     "text": "those",
+     "start": 222.003,
+     "end": 222.263
+    },
+    {
+     "text": "pay",
+     "start": 222.263,
+     "end": 222.483
+    },
+    {
+     "text": "more.",
+     "start": 222.483,
+     "end": 222.743
+    }
+   ]
+  },
+  {
+   "id": "n20",
+   "text": "Builders deciding what to build.",
+   "start": 223.4326875,
+   "end": 224.65268749999998,
+   "words": [
+    {
+     "text": "Builders",
+     "start": 223.433,
+     "end": 223.693
+    },
+    {
+     "text": "deciding",
+     "start": 223.693,
+     "end": 223.873
+    },
+    {
+     "text": "what",
+     "start": 223.873,
+     "end": 224.273
+    },
+    {
+     "text": "to",
+     "start": 224.273,
+     "end": 224.413
+    },
+    {
+     "text": "build.",
+     "start": 224.413,
+     "end": 224.653
+    }
+   ]
+  },
+  {
+   "id": "c6a",
+   "text": "Okay. The big question. Is Wall Street buying all the houses?",
+   "start": 227.53639583333333,
+   "end": 230.83639583333334,
+   "words": [
+    {
+     "text": "Okay.",
+     "start": 227.536,
+     "end": 227.736
+    },
+    {
+     "text": "The",
+     "start": 228.196,
+     "end": 228.336
+    },
+    {
+     "text": "big",
+     "start": 228.336,
+     "end": 228.436
+    },
+    {
+     "text": "question.",
+     "start": 228.436,
+     "end": 228.876
+    },
+    {
+     "text": "Is",
+     "start": 229.556,
+     "end": 229.676
+    },
+    {
+     "text": "Wall",
+     "start": 229.676,
+     "end": 229.796
+    },
+    {
+     "text": "Street",
+     "start": 229.796,
+     "end": 230.016
+    },
+    {
+     "text": "buying",
+     "start": 230.016,
+     "end": 230.296
+    },
+    {
+     "text": "all",
+     "start": 230.296,
+     "end": 230.496
+    },
+    {
+     "text": "the",
+     "start": 230.496,
+     "end": 230.576
+    },
+    {
+     "text": "houses?",
+     "start": 230.576,
+     "end": 230.836
+    }
+   ]
+  },
+  {
+   "id": "c6b",
+   "text": "Most people think yes. Nope. Across the whole country the giant investors own only a tiny slice of the homes.",
+   "start": 231.69089583333334,
+   "end": 237.05089583333336,
+   "words": [
+    {
+     "text": "Most",
+     "start": 231.691,
+     "end": 231.851
+    },
+    {
+     "text": "people",
+     "start": 231.851,
+     "end": 232.111
+    },
+    {
+     "text": "think",
+     "start": 232.111,
+     "end": 232.311
+    },
+    {
+     "text": "yes.",
+     "start": 232.311,
+     "end": 232.531
+    },
+    {
+     "text": "Nope.",
+     "start": 232.951,
+     "end": 233.151
+    },
+    {
+     "text": "Across",
+     "start": 233.491,
+     "end": 233.651
+    },
+    {
+     "text": "the",
+     "start": 233.651,
+     "end": 233.911
+    },
+    {
+     "text": "whole",
+     "start": 233.911,
+     "end": 234.011
+    },
+    {
+     "text": "country",
+     "start": 234.011,
+     "end": 234.351
+    },
+    {
+     "text": "the",
+     "start": 234.451,
+     "end": 234.511
+    },
+    {
+     "text": "giant",
+     "start": 234.511,
+     "end": 234.691
+    },
+    {
+     "text": "investors",
+     "start": 234.691,
+     "end": 235.071
+    },
+    {
+     "text": "own",
+     "start": 235.071,
+     "end": 235.471
+    },
+    {
+     "text": "only",
+     "start": 235.471,
+     "end": 235.851
+    },
+    {
+     "text": "a",
+     "start": 235.851,
+     "end": 235.971
+    },
+    {
+     "text": "tiny",
+     "start": 235.971,
+     "end": 236.191
+    },
+    {
+     "text": "slice",
+     "start": 236.191,
+     "end": 236.511
+    },
+    {
+     "text": "of",
+     "start": 236.511,
+     "end": 236.751
+    },
+    {
+     "text": "the",
+     "start": 236.751,
+     "end": 236.851
+    },
+    {
+     "text": "homes.",
+     "start": 236.851,
+     "end": 237.051
+    }
+   ]
+  },
+  {
+   "id": "n21",
+   "text": "It's like blaming the guy with the biggest cart for the long line at the grocery store. He's annoying but he's not the whole line.",
+   "start": 237.86014583333332,
+   "end": 242.80014583333332,
+   "words": [
+    {
+     "text": "It's",
+     "start": 237.86,
+     "end": 238.0
+    },
+    {
+     "text": "like",
+     "start": 238.0,
+     "end": 238.1
+    },
+    {
+     "text": "blaming",
+     "start": 238.1,
+     "end": 238.3
+    },
+    {
+     "text": "the",
+     "start": 238.3,
+     "end": 238.52
+    },
+    {
+     "text": "guy",
+     "start": 238.52,
+     "end": 238.7
+    },
+    {
+     "text": "with",
+     "start": 238.7,
+     "end": 238.82
+    },
+    {
+     "text": "the",
+     "start": 238.82,
+     "end": 238.9
+    },
+    {
+     "text": "biggest",
+     "start": 238.9,
+     "end": 239.1
+    },
+    {
+     "text": "cart",
+     "start": 239.1,
+     "end": 239.36
+    },
+    {
+     "text": "for",
+     "start": 239.36,
+     "end": 239.52
+    },
+    {
+     "text": "the",
+     "start": 239.52,
+     "end": 239.62
+    },
+    {
+     "text": "long",
+     "start": 239.62,
+     "end": 239.78
+    },
+    {
+     "text": "line",
+     "start": 239.78,
+     "end": 240.02
+    },
+    {
+     "text": "at",
+     "start": 240.02,
+     "end": 240.14
+    },
+    {
+     "text": "the",
+     "start": 240.14,
+     "end": 240.2
+    },
+    {
+     "text": "grocery",
+     "start": 240.2,
+     "end": 240.34
+    },
+    {
+     "text": "store.",
+     "start": 240.34,
+     "end": 240.76
+    },
+    {
+     "text": "He's",
+     "start": 241.3,
+     "end": 241.4
+    },
+    {
+     "text": "annoying",
+     "start": 241.4,
+     "end": 241.58
+    },
+    {
+     "text": "but",
+     "start": 241.96,
+     "end": 242.02
+    },
+    {
+     "text": "he's",
+     "start": 242.02,
+     "end": 242.1
+    },
+    {
+     "text": "not",
+     "start": 242.1,
+     "end": 242.26
+    },
+    {
+     "text": "the",
+     "start": 242.26,
+     "end": 242.4
+    },
+    {
+     "text": "whole",
+     "start": 242.4,
+     "end": 242.5
+    },
+    {
+     "text": "line.",
+     "start": 242.5,
+     "end": 242.8
+    }
+   ]
+  },
+  {
+   "id": "c6c",
+   "text": "But here's the twist. They don't spread out. They pile into a few fast growing cities. Like Atlanta.",
+   "start": 243.45175,
+   "end": 248.11175,
+   "words": [
+    {
+     "text": "But",
+     "start": 243.452,
+     "end": 243.532
+    },
+    {
+     "text": "here's",
+     "start": 243.532,
+     "end": 243.752
+    },
+    {
+     "text": "the",
+     "start": 243.752,
+     "end": 243.852
+    },
+    {
+     "text": "twist.",
+     "start": 243.852,
+     "end": 243.932
+    },
+    {
+     "text": "They",
+     "start": 244.492,
+     "end": 244.552
+    },
+    {
+     "text": "don't",
+     "start": 244.552,
+     "end": 244.752
+    },
+    {
+     "text": "spread",
+     "start": 244.752,
+     "end": 244.892
+    },
+    {
+     "text": "out.",
+     "start": 244.892,
+     "end": 245.132
+    },
+    {
+     "text": "They",
+     "start": 245.432,
+     "end": 245.512
+    },
+    {
+     "text": "pile",
+     "start": 245.512,
+     "end": 245.672
+    },
+    {
+     "text": "into",
+     "start": 245.672,
+     "end": 245.972
+    },
+    {
+     "text": "a",
+     "start": 245.972,
+     "end": 246.132
+    },
+    {
+     "text": "few",
+     "start": 246.132,
+     "end": 246.252
+    },
+    {
+     "text": "fast",
+     "start": 246.252,
+     "end": 246.552
+    },
+    {
+     "text": "growing",
+     "start": 246.552,
+     "end": 246.752
+    },
+    {
+     "text": "cities.",
+     "start": 246.752,
+     "end": 247.052
+    },
+    {
+     "text": "Like",
+     "start": 247.832,
+     "end": 247.832
+    },
+    {
+     "text": "Atlanta.",
+     "start": 247.832,
+     "end": 248.112
+    }
+   ]
+  },
+  {
+   "id": "c6d",
+   "text": "In some Atlanta neighborhoods big investors own about one out of every four rental houses. There they really do compete with families like mine.",
+   "start": 248.92210416666666,
+   "end": 255.04210416666666,
+   "words": [
+    {
+     "text": "In",
+     "start": 248.922,
+     "end": 249.002
+    },
+    {
+     "text": "some",
+     "start": 249.002,
+     "end": 249.202
+    },
+    {
+     "text": "Atlanta",
+     "start": 249.202,
+     "end": 249.402
+    },
+    {
+     "text": "neighborhoods",
+     "start": 249.402,
+     "end": 249.922
+    },
+    {
+     "text": "big",
+     "start": 250.222,
+     "end": 250.242
+    },
+    {
+     "text": "investors",
+     "start": 250.242,
+     "end": 250.582
+    },
+    {
+     "text": "own",
+     "start": 250.582,
+     "end": 250.942
+    },
+    {
+     "text": "about",
+     "start": 250.942,
+     "end": 251.162
+    },
+    {
+     "text": "one",
+     "start": 251.162,
+     "end": 251.422
+    },
+    {
+     "text": "out",
+     "start": 251.422,
+     "end": 251.562
+    },
+    {
+     "text": "of",
+     "start": 251.562,
+     "end": 251.682
+    },
+    {
+     "text": "every",
+     "start": 251.682,
+     "end": 251.922
+    },
+    {
+     "text": "four",
+     "start": 251.922,
+     "end": 252.102
+    },
+    {
+     "text": "rental",
+     "start": 252.102,
+     "end": 252.302
+    },
+    {
+     "text": "houses.",
+     "start": 252.302,
+     "end": 252.602
+    },
+    {
+     "text": "There",
+     "start": 253.302,
+     "end": 253.442
+    },
+    {
+     "text": "they",
+     "start": 253.442,
+     "end": 253.622
+    },
+    {
+     "text": "really",
+     "start": 253.622,
+     "end": 253.842
+    },
+    {
+     "text": "do",
+     "start": 253.842,
+     "end": 254.002
+    },
+    {
+     "text": "compete",
+     "start": 254.002,
+     "end": 254.222
+    },
+    {
+     "text": "with",
+     "start": 254.222,
+     "end": 254.402
+    },
+    {
+     "text": "families",
+     "start": 254.402,
+     "end": 254.642
+    },
+    {
+     "text": "like",
+     "start": 254.642,
+     "end": 254.882
+    },
+    {
+     "text": "mine.",
+     "start": 254.882,
+     "end": 255.042
+    }
+   ]
+  },
+  {
+   "id": "n22",
+   "text": "Picture a family showing up to an open house with a sandwich and a dream. And a company showing up with a check.",
+   "start": 255.76822916666666,
+   "end": 260.66822916666666,
+   "words": [
+    {
+     "text": "Picture",
+     "start": 255.768,
+     "end": 255.968
+    },
+    {
+     "text": "a",
+     "start": 255.968,
+     "end": 256.088
+    },
+    {
+     "text": "family",
+     "start": 256.088,
+     "end": 256.368
+    },
+    {
+     "text": "showing",
+     "start": 256.368,
+     "end": 256.628
+    },
+    {
+     "text": "up",
+     "start": 256.628,
+     "end": 256.848
+    },
+    {
+     "text": "to",
+     "start": 256.848,
+     "end": 256.988
+    },
+    {
+     "text": "an",
+     "start": 256.988,
+     "end": 257.088
+    },
+    {
+     "text": "open",
+     "start": 257.088,
+     "end": 257.208
+    },
+    {
+     "text": "house",
+     "start": 257.208,
+     "end": 257.568
+    },
+    {
+     "text": "with",
+     "start": 257.568,
+     "end": 257.788
+    },
+    {
+     "text": "a",
+     "start": 257.788,
+     "end": 257.828
+    },
+    {
+     "text": "sandwich",
+     "start": 257.828,
+     "end": 258.108
+    },
+    {
+     "text": "and",
+     "start": 258.108,
+     "end": 258.388
+    },
+    {
+     "text": "a",
+     "start": 258.388,
+     "end": 258.488
+    },
+    {
+     "text": "dream.",
+     "start": 258.488,
+     "end": 258.688
+    },
+    {
+     "text": "And",
+     "start": 259.428,
+     "end": 259.468
+    },
+    {
+     "text": "a",
+     "start": 259.468,
+     "end": 259.528
+    },
+    {
+     "text": "company",
+     "start": 259.528,
+     "end": 259.768
+    },
+    {
+     "text": "showing",
+     "start": 259.768,
+     "end": 260.068
+    },
+    {
+     "text": "up",
+     "start": 260.068,
+     "end": 260.308
+    },
+    {
+     "text": "with",
+     "start": 260.308,
+     "end": 260.408
+    },
+    {
+     "text": "a",
+     "start": 260.408,
+     "end": 260.488
+    },
+    {
+     "text": "check.",
+     "start": 260.488,
+     "end": 260.668
+    }
+   ]
+  },
+  {
+   "id": "n7",
+   "text": "Me bidding against a company with a billion dollars.",
+   "start": 261.34110416666664,
+   "end": 263.40110416666664,
+   "words": [
+    {
+     "text": "Me",
+     "start": 261.341,
+     "end": 261.461
+    },
+    {
+     "text": "bidding",
+     "start": 261.461,
+     "end": 261.721
+    },
+    {
+     "text": "against",
+     "start": 261.721,
+     "end": 262.061
+    },
+    {
+     "text": "a",
+     "start": 262.061,
+     "end": 262.261
+    },
+    {
+     "text": "company",
+     "start": 262.261,
+     "end": 262.521
+    },
+    {
+     "text": "with",
+     "start": 262.521,
+     "end": 262.721
+    },
+    {
+     "text": "a",
+     "start": 262.721,
+     "end": 262.761
+    },
+    {
+     "text": "billion",
+     "start": 262.761,
+     "end": 262.961
+    },
+    {
+     "text": "dollars.",
+     "start": 262.961,
+     "end": 263.401
+    }
+   ]
+  },
+  {
+   "id": "c6e",
+   "text": "And there's another buyer. Regular people buying a second house to rent it out. Your dentist. Your uncle. That guy from the gym.",
+   "start": 264.1673125,
+   "end": 270.0473125,
+   "words": [
+    {
+     "text": "And",
+     "start": 264.167,
+     "end": 264.387
+    },
+    {
+     "text": "there's",
+     "start": 264.387,
+     "end": 264.607
+    },
+    {
+     "text": "another",
+     "start": 264.607,
+     "end": 264.747
+    },
+    {
+     "text": "buyer.",
+     "start": 264.747,
+     "end": 264.987
+    },
+    {
+     "text": "Regular",
+     "start": 265.707,
+     "end": 265.707
+    },
+    {
+     "text": "people",
+     "start": 265.707,
+     "end": 265.967
+    },
+    {
+     "text": "buying",
+     "start": 265.967,
+     "end": 266.327
+    },
+    {
+     "text": "a",
+     "start": 266.327,
+     "end": 266.487
+    },
+    {
+     "text": "second",
+     "start": 266.487,
+     "end": 266.607
+    },
+    {
+     "text": "house",
+     "start": 266.607,
+     "end": 266.887
+    },
+    {
+     "text": "to",
+     "start": 266.887,
+     "end": 267.067
+    },
+    {
+     "text": "rent",
+     "start": 267.067,
+     "end": 267.187
+    },
+    {
+     "text": "it",
+     "start": 267.187,
+     "end": 267.307
+    },
+    {
+     "text": "out.",
+     "start": 267.307,
+     "end": 267.507
+    },
+    {
+     "text": "Your",
+     "start": 267.907,
+     "end": 267.927
+    },
+    {
+     "text": "dentist.",
+     "start": 267.927,
+     "end": 268.167
+    },
+    {
+     "text": "Your",
+     "start": 268.687,
+     "end": 268.787
+    },
+    {
+     "text": "uncle.",
+     "start": 268.787,
+     "end": 269.087
+    },
+    {
+     "text": "That",
+     "start": 269.387,
+     "end": 269.467
+    },
+    {
+     "text": "guy",
+     "start": 269.467,
+     "end": 269.627
+    },
+    {
+     "text": "from",
+     "start": 269.627,
+     "end": 269.747
+    },
+    {
+     "text": "the",
+     "start": 269.747,
+     "end": 269.867
+    },
+    {
+     "text": "gym.",
+     "start": 269.867,
+     "end": 270.047
+    }
+   ]
+  },
+  {
+   "id": "n23",
+   "text": "Your dentist owning three houses is honestly more common than a giant fund owning yours.",
+   "start": 270.74614583333334,
+   "end": 274.36614583333335,
+   "words": [
+    {
+     "text": "Your",
+     "start": 270.746,
+     "end": 270.846
+    },
+    {
+     "text": "dentist",
+     "start": 270.846,
+     "end": 271.026
+    },
+    {
+     "text": "owning",
+     "start": 271.026,
+     "end": 271.426
+    },
+    {
+     "text": "three",
+     "start": 271.426,
+     "end": 271.646
+    },
+    {
+     "text": "houses",
+     "start": 271.646,
+     "end": 271.906
+    },
+    {
+     "text": "is",
+     "start": 271.906,
+     "end": 272.206
+    },
+    {
+     "text": "honestly",
+     "start": 272.206,
+     "end": 272.486
+    },
+    {
+     "text": "more",
+     "start": 272.486,
+     "end": 272.786
+    },
+    {
+     "text": "common",
+     "start": 272.786,
+     "end": 273.046
+    },
+    {
+     "text": "than",
+     "start": 273.046,
+     "end": 273.306
+    },
+    {
+     "text": "a",
+     "start": 273.306,
+     "end": 273.366
+    },
+    {
+     "text": "giant",
+     "start": 273.366,
+     "end": 273.546
+    },
+    {
+     "text": "fund",
+     "start": 273.546,
+     "end": 273.806
+    },
+    {
+     "text": "owning",
+     "start": 273.806,
+     "end": 274.106
+    },
+    {
+     "text": "yours.",
+     "start": 274.106,
+     "end": 274.366
+    }
+   ]
+  },
+  {
+   "id": "c6f",
+   "text": "So who is really buying the houses? Mostly nobody. Because the people who own them aren't selling and the new ones never got built.",
+   "start": 275.0706875,
+   "end": 281.73068750000004,
+   "words": [
+    {
+     "text": "So",
+     "start": 275.071,
+     "end": 275.271
+    },
+    {
+     "text": "who",
+     "start": 275.531,
+     "end": 275.711
+    },
+    {
+     "text": "is",
+     "start": 275.711,
+     "end": 275.851
+    },
+    {
+     "text": "really",
+     "start": 275.851,
+     "end": 276.031
+    },
+    {
+     "text": "buying",
+     "start": 276.031,
+     "end": 276.331
+    },
+    {
+     "text": "the",
+     "start": 276.331,
+     "end": 276.491
+    },
+    {
+     "text": "houses?",
+     "start": 276.491,
+     "end": 276.791
+    },
+    {
+     "text": "Mostly",
+     "start": 277.311,
+     "end": 277.651
+    },
+    {
+     "text": "nobody.",
+     "start": 277.651,
+     "end": 278.211
+    },
+    {
+     "text": "Because",
+     "start": 278.751,
+     "end": 279.051
+    },
+    {
+     "text": "the",
+     "start": 279.051,
+     "end": 279.191
+    },
+    {
+     "text": "people",
+     "start": 279.191,
+     "end": 279.411
+    },
+    {
+     "text": "who",
+     "start": 279.411,
+     "end": 279.551
+    },
+    {
+     "text": "own",
+     "start": 279.551,
+     "end": 279.731
+    },
+    {
+     "text": "them",
+     "start": 279.731,
+     "end": 279.891
+    },
+    {
+     "text": "aren't",
+     "start": 279.891,
+     "end": 280.151
+    },
+    {
+     "text": "selling",
+     "start": 280.151,
+     "end": 280.351
+    },
+    {
+     "text": "and",
+     "start": 280.351,
+     "end": 280.651
+    },
+    {
+     "text": "the",
+     "start": 280.651,
+     "end": 280.731
+    },
+    {
+     "text": "new",
+     "start": 280.731,
+     "end": 280.851
+    },
+    {
+     "text": "ones",
+     "start": 280.851,
+     "end": 281.051
+    },
+    {
+     "text": "never",
+     "start": 281.051,
+     "end": 281.271
+    },
+    {
+     "text": "got",
+     "start": 281.271,
+     "end": 281.471
+    },
+    {
+     "text": "built.",
+     "start": 281.471,
+     "end": 281.731
+    }
+   ]
+  },
+  {
+   "id": "n8",
+   "text": "That's the answer. It's not one villain in a suit. It's a traffic jam.",
+   "start": 282.56420833333334,
+   "end": 286.2042083333333,
+   "words": [
+    {
+     "text": "That's",
+     "start": 282.564,
+     "end": 282.904
+    },
+    {
+     "text": "the",
+     "start": 282.904,
+     "end": 282.984
+    },
+    {
+     "text": "answer.",
+     "start": 282.984,
+     "end": 283.324
+    },
+    {
+     "text": "It's",
+     "start": 283.844,
+     "end": 283.964
+    },
+    {
+     "text": "not",
+     "start": 283.964,
+     "end": 284.084
+    },
+    {
+     "text": "one",
+     "start": 284.084,
+     "end": 284.304
+    },
+    {
+     "text": "villain",
+     "start": 284.304,
+     "end": 284.504
+    },
+    {
+     "text": "in",
+     "start": 284.504,
+     "end": 284.724
+    },
+    {
+     "text": "a",
+     "start": 284.724,
+     "end": 284.804
+    },
+    {
+     "text": "suit.",
+     "start": 284.804,
+     "end": 285.044
+    },
+    {
+     "text": "It's",
+     "start": 285.544,
+     "end": 285.644
+    },
+    {
+     "text": "a",
+     "start": 285.644,
+     "end": 285.704
+    },
+    {
+     "text": "traffic",
+     "start": 285.704,
+     "end": 285.884
+    },
+    {
+     "text": "jam.",
+     "start": 285.884,
+     "end": 286.204
+    }
+   ]
+  },
+  {
+   "id": "c7b",
+   "text": "And that's why the first time buyer is now forty. When my grandpa bought his first house he was in his twenties.",
+   "start": 286.91520833333334,
+   "end": 291.59520833333335,
+   "words": [
+    {
+     "text": "And",
+     "start": 286.915,
+     "end": 286.995
+    },
+    {
+     "text": "that's",
+     "start": 286.995,
+     "end": 287.135
+    },
+    {
+     "text": "why",
+     "start": 287.135,
+     "end": 287.275
+    },
+    {
+     "text": "the",
+     "start": 287.275,
+     "end": 287.415
+    },
+    {
+     "text": "first",
+     "start": 287.415,
+     "end": 287.575
+    },
+    {
+     "text": "time",
+     "start": 287.575,
+     "end": 287.775
+    },
+    {
+     "text": "buyer",
+     "start": 287.775,
+     "end": 287.955
+    },
+    {
+     "text": "is",
+     "start": 287.955,
+     "end": 288.195
+    },
+    {
+     "text": "now",
+     "start": 288.195,
+     "end": 288.355
+    },
+    {
+     "text": "forty.",
+     "start": 288.355,
+     "end": 288.575
+    },
+    {
+     "text": "When",
+     "start": 289.195,
+     "end": 289.235
+    },
+    {
+     "text": "my",
+     "start": 289.235,
+     "end": 289.355
+    },
+    {
+     "text": "grandpa",
+     "start": 289.355,
+     "end": 289.755
+    },
+    {
+     "text": "bought",
+     "start": 289.755,
+     "end": 290.035
+    },
+    {
+     "text": "his",
+     "start": 290.035,
+     "end": 290.175
+    },
+    {
+     "text": "first",
+     "start": 290.175,
+     "end": 290.335
+    },
+    {
+     "text": "house",
+     "start": 290.335,
+     "end": 290.615
+    },
+    {
+     "text": "he",
+     "start": 290.715,
+     "end": 290.875
+    },
+    {
+     "text": "was",
+     "start": 290.875,
+     "end": 290.935
+    },
+    {
+     "text": "in",
+     "start": 290.935,
+     "end": 291.035
+    },
+    {
+     "text": "his",
+     "start": 291.035,
+     "end": 291.155
+    },
+    {
+     "text": "twenties.",
+     "start": 291.155,
+     "end": 291.595
+    }
+   ]
+  },
+  {
+   "id": "n24",
+   "text": "Forty. At forty my dad was already halfway done paying off his house. I'm just getting started. Maybe.",
+   "start": 292.11858333333333,
+   "end": 296.83858333333336,
+   "words": [
+    {
+     "text": "Forty.",
+     "start": 292.119,
+     "end": 292.339
+    },
+    {
+     "text": "At",
+     "start": 292.599,
+     "end": 292.799
+    },
+    {
+     "text": "forty",
+     "start": 292.799,
+     "end": 293.039
+    },
+    {
+     "text": "my",
+     "start": 293.179,
+     "end": 293.239
+    },
+    {
+     "text": "dad",
+     "start": 293.239,
+     "end": 293.379
+    },
+    {
+     "text": "was",
+     "start": 293.379,
+     "end": 293.519
+    },
+    {
+     "text": "already",
+     "start": 293.519,
+     "end": 293.799
+    },
+    {
+     "text": "halfway",
+     "start": 293.799,
+     "end": 294.039
+    },
+    {
+     "text": "done",
+     "start": 294.039,
+     "end": 294.359
+    },
+    {
+     "text": "paying",
+     "start": 294.359,
+     "end": 294.579
+    },
+    {
+     "text": "off",
+     "start": 294.579,
+     "end": 294.819
+    },
+    {
+     "text": "his",
+     "start": 294.819,
+     "end": 294.939
+    },
+    {
+     "text": "house.",
+     "start": 294.939,
+     "end": 295.179
+    },
+    {
+     "text": "I'm",
+     "start": 295.539,
+     "end": 295.599
+    },
+    {
+     "text": "just",
+     "start": 295.599,
+     "end": 295.739
+    },
+    {
+     "text": "getting",
+     "start": 295.739,
+     "end": 295.919
+    },
+    {
+     "text": "started.",
+     "start": 295.919,
+     "end": 296.239
+    },
+    {
+     "text": "Maybe.",
+     "start": 296.679,
+     "end": 296.839
+    }
+   ]
+  },
+  {
+   "id": "c7d",
+   "text": "The people who already own homes watched their prices go up and up. They win. The people trying to get in pay more.",
+   "start": 297.6605416666667,
+   "end": 302.6605416666667,
+   "words": [
+    {
+     "text": "The",
+     "start": 297.661,
+     "end": 297.721
+    },
+    {
+     "text": "people",
+     "start": 297.721,
+     "end": 297.961
+    },
+    {
+     "text": "who",
+     "start": 297.961,
+     "end": 298.101
+    },
+    {
+     "text": "already",
+     "start": 298.101,
+     "end": 298.381
+    },
+    {
+     "text": "own",
+     "start": 298.381,
+     "end": 298.701
+    },
+    {
+     "text": "homes",
+     "start": 298.701,
+     "end": 298.961
+    },
+    {
+     "text": "watched",
+     "start": 298.961,
+     "end": 299.241
+    },
+    {
+     "text": "their",
+     "start": 299.241,
+     "end": 299.461
+    },
+    {
+     "text": "prices",
+     "start": 299.461,
+     "end": 299.681
+    },
+    {
+     "text": "go",
+     "start": 299.681,
+     "end": 299.961
+    },
+    {
+     "text": "up",
+     "start": 299.961,
+     "end": 300.121
+    },
+    {
+     "text": "and",
+     "start": 300.121,
+     "end": 300.221
+    },
+    {
+     "text": "up.",
+     "start": 300.221,
+     "end": 300.361
+    },
+    {
+     "text": "They",
+     "start": 300.661,
+     "end": 300.761
+    },
+    {
+     "text": "win.",
+     "start": 300.761,
+     "end": 300.941
+    },
+    {
+     "text": "The",
+     "start": 301.421,
+     "end": 301.501
+    },
+    {
+     "text": "people",
+     "start": 301.501,
+     "end": 301.661
+    },
+    {
+     "text": "trying",
+     "start": 301.661,
+     "end": 301.881
+    },
+    {
+     "text": "to",
+     "start": 301.881,
+     "end": 302.061
+    },
+    {
+     "text": "get",
+     "start": 302.061,
+     "end": 302.161
+    },
+    {
+     "text": "in",
+     "start": 302.161,
+     "end": 302.261
+    },
+    {
+     "text": "pay",
+     "start": 302.261,
+     "end": 302.421
+    },
+    {
+     "text": "more.",
+     "start": 302.421,
+     "end": 302.661
+    }
+   ]
+  },
+  {
+   "id": "c7e",
+   "text": "My dad got his first house at twenty eight. I'm thirty four. Still renting. With a cat who also has no equity.",
+   "start": 303.31027083333333,
+   "end": 308.0752708333333,
+   "words": [
+    {
+     "text": "My",
+     "start": 303.31,
+     "end": 303.427
+    },
+    {
+     "text": "dad",
+     "start": 303.44,
+     "end": 303.595
+    },
+    {
+     "text": "got",
+     "start": 303.613,
+     "end": 303.768
+    },
+    {
+     "text": "his",
+     "start": 303.786,
+     "end": 303.941
+    },
+    {
+     "text": "first",
+     "start": 303.959,
+     "end": 304.192
+    },
+    {
+     "text": "house",
+     "start": 304.218,
+     "end": 304.452
+    },
+    {
+     "text": "at",
+     "start": 304.478,
+     "end": 304.594
+    },
+    {
+     "text": "twenty",
+     "start": 304.607,
+     "end": 304.88
+    },
+    {
+     "text": "eight.",
+     "start": 304.91,
+     "end": 305.182
+    },
+    {
+     "text": "I'm",
+     "start": 305.213,
+     "end": 305.368
+    },
+    {
+     "text": "thirty",
+     "start": 305.386,
+     "end": 305.658
+    },
+    {
+     "text": "four.",
+     "start": 305.688,
+     "end": 305.922
+    },
+    {
+     "text": "Still",
+     "start": 305.948,
+     "end": 306.181
+    },
+    {
+     "text": "renting.",
+     "start": 306.207,
+     "end": 306.558
+    },
+    {
+     "text": "With",
+     "start": 306.596,
+     "end": 306.791
+    },
+    {
+     "text": "a",
+     "start": 306.813,
+     "end": 306.891
+    },
+    {
+     "text": "cat",
+     "start": 306.899,
+     "end": 307.055
+    },
+    {
+     "text": "who",
+     "start": 307.072,
+     "end": 307.228
+    },
+    {
+     "text": "also",
+     "start": 307.245,
+     "end": 307.44
+    },
+    {
+     "text": "has",
+     "start": 307.461,
+     "end": 307.617
+    },
+    {
+     "text": "no",
+     "start": 307.634,
+     "end": 307.751
+    },
+    {
+     "text": "equity.",
+     "start": 307.764,
+     "end": 308.075
+    }
+   ]
+  },
+  {
+   "id": "n9",
+   "text": "My cat when I say we're moving again.",
+   "start": 308.7305,
+   "end": 310.3705,
+   "words": [
+    {
+     "text": "My",
+     "start": 308.731,
+     "end": 308.851
+    },
+    {
+     "text": "cat",
+     "start": 308.851,
+     "end": 309.111
+    },
+    {
+     "text": "when",
+     "start": 309.111,
+     "end": 309.411
+    },
+    {
+     "text": "I",
+     "start": 309.411,
+     "end": 309.531
+    },
+    {
+     "text": "say",
+     "start": 309.531,
+     "end": 309.69
+    },
+    {
+     "text": "we're",
+     "start": 309.69,
+     "end": 309.851
+    },
+    {
+     "text": "moving",
+     "start": 309.851,
+     "end": 310.07
+    },
+    {
+     "text": "again.",
+     "start": 310.07,
+     "end": 310.37
+    }
+   ]
+  },
+  {
+   "id": "n25",
+   "text": "Me at family dinner when my uncle says just stop buying coffee.",
+   "start": 310.97575,
+   "end": 313.95575,
+   "words": [
+    {
+     "text": "Me",
+     "start": 310.976,
+     "end": 311.096
+    },
+    {
+     "text": "at",
+     "start": 311.096,
+     "end": 311.196
+    },
+    {
+     "text": "family",
+     "start": 311.196,
+     "end": 311.416
+    },
+    {
+     "text": "dinner",
+     "start": 311.416,
+     "end": 311.736
+    },
+    {
+     "text": "when",
+     "start": 311.736,
+     "end": 312.136
+    },
+    {
+     "text": "my",
+     "start": 312.136,
+     "end": 312.256
+    },
+    {
+     "text": "uncle",
+     "start": 312.256,
+     "end": 312.416
+    },
+    {
+     "text": "says",
+     "start": 312.416,
+     "end": 312.756
+    },
+    {
+     "text": "just",
+     "start": 313.096,
+     "end": 313.216
+    },
+    {
+     "text": "stop",
+     "start": 313.216,
+     "end": 313.476
+    },
+    {
+     "text": "buying",
+     "start": 313.476,
+     "end": 313.736
+    },
+    {
+     "text": "coffee.",
+     "start": 313.736,
+     "end": 313.956
+    }
+   ]
+  },
+  {
+   "id": "c8a",
+   "text": "So what am I actually doing about it? Quick reminder this is education and not advice.",
+   "start": 316.8831875,
+   "end": 321.04318750000004,
+   "words": [
+    {
+     "text": "So",
+     "start": 316.883,
+     "end": 317.023
+    },
+    {
+     "text": "what",
+     "start": 317.023,
+     "end": 317.163
+    },
+    {
+     "text": "am",
+     "start": 317.163,
+     "end": 317.243
+    },
+    {
+     "text": "I",
+     "start": 317.243,
+     "end": 317.323
+    },
+    {
+     "text": "actually",
+     "start": 317.323,
+     "end": 317.583
+    },
+    {
+     "text": "doing",
+     "start": 317.583,
+     "end": 317.883
+    },
+    {
+     "text": "about",
+     "start": 317.883,
+     "end": 318.163
+    },
+    {
+     "text": "it?",
+     "start": 318.163,
+     "end": 318.363
+    },
+    {
+     "text": "Quick",
+     "start": 318.643,
+     "end": 318.763
+    },
+    {
+     "text": "reminder",
+     "start": 318.763,
+     "end": 319.063
+    },
+    {
+     "text": "this",
+     "start": 319.463,
+     "end": 319.503
+    },
+    {
+     "text": "is",
+     "start": 319.503,
+     "end": 319.603
+    },
+    {
+     "text": "education",
+     "start": 319.603,
+     "end": 319.923
+    },
+    {
+     "text": "and",
+     "start": 319.923,
+     "end": 320.503
+    },
+    {
+     "text": "not",
+     "start": 320.503,
+     "end": 320.803
+    },
+    {
+     "text": "advice.",
+     "start": 320.803,
+     "end": 321.043
+    }
+   ]
+  },
+  {
+   "id": "c8b",
+   "text": "First. Renting is not throwing money away. If you might move in a few years renting is often the smarter move.",
+   "start": 321.8928125,
+   "end": 327.0528125,
+   "words": [
+    {
+     "text": "First.",
+     "start": 321.893,
+     "end": 322.253
+    },
+    {
+     "text": "Renting",
+     "start": 322.473,
+     "end": 322.633
+    },
+    {
+     "text": "is",
+     "start": 322.633,
+     "end": 322.993
+    },
+    {
+     "text": "not",
+     "start": 322.993,
+     "end": 323.133
+    },
+    {
+     "text": "throwing",
+     "start": 323.133,
+     "end": 323.373
+    },
+    {
+     "text": "money",
+     "start": 323.373,
+     "end": 323.613
+    },
+    {
+     "text": "away.",
+     "start": 323.613,
+     "end": 323.933
+    },
+    {
+     "text": "If",
+     "start": 324.273,
+     "end": 324.353
+    },
+    {
+     "text": "you",
+     "start": 324.353,
+     "end": 324.453
+    },
+    {
+     "text": "might",
+     "start": 324.453,
+     "end": 324.593
+    },
+    {
+     "text": "move",
+     "start": 324.593,
+     "end": 324.793
+    },
+    {
+     "text": "in",
+     "start": 324.793,
+     "end": 324.933
+    },
+    {
+     "text": "a",
+     "start": 324.933,
+     "end": 325.013
+    },
+    {
+     "text": "few",
+     "start": 325.013,
+     "end": 325.153
+    },
+    {
+     "text": "years",
+     "start": 325.153,
+     "end": 325.413
+    },
+    {
+     "text": "renting",
+     "start": 325.673,
+     "end": 325.833
+    },
+    {
+     "text": "is",
+     "start": 325.833,
+     "end": 326.133
+    },
+    {
+     "text": "often",
+     "start": 326.133,
+     "end": 326.333
+    },
+    {
+     "text": "the",
+     "start": 326.333,
+     "end": 326.553
+    },
+    {
+     "text": "smarter",
+     "start": 326.553,
+     "end": 326.753
+    },
+    {
+     "text": "move.",
+     "start": 326.753,
+     "end": 327.053
+    }
+   ]
+  },
+  {
+   "id": "n26",
+   "text": "Renting means when the water heater explodes it's my landlord's problem. I sleep like a baby.",
+   "start": 327.62347916666664,
+   "end": 332.06347916666664,
+   "words": [
+    {
+     "text": "Renting",
+     "start": 327.623,
+     "end": 328.023
+    },
+    {
+     "text": "means",
+     "start": 328.023,
+     "end": 328.183
+    },
+    {
+     "text": "when",
+     "start": 328.183,
+     "end": 328.523
+    },
+    {
+     "text": "the",
+     "start": 328.523,
+     "end": 328.623
+    },
+    {
+     "text": "water",
+     "start": 328.623,
+     "end": 328.783
+    },
+    {
+     "text": "heater",
+     "start": 328.783,
+     "end": 329.043
+    },
+    {
+     "text": "explodes",
+     "start": 329.043,
+     "end": 329.423
+    },
+    {
+     "text": "it's",
+     "start": 329.423,
+     "end": 329.743
+    },
+    {
+     "text": "my",
+     "start": 329.743,
+     "end": 329.883
+    },
+    {
+     "text": "landlord's",
+     "start": 329.883,
+     "end": 330.403
+    },
+    {
+     "text": "problem.",
+     "start": 330.403,
+     "end": 330.583
+    },
+    {
+     "text": "I",
+     "start": 331.323,
+     "end": 331.343
+    },
+    {
+     "text": "sleep",
+     "start": 331.343,
+     "end": 331.523
+    },
+    {
+     "text": "like",
+     "start": 331.523,
+     "end": 331.783
+    },
+    {
+     "text": "a",
+     "start": 331.783,
+     "end": 331.883
+    },
+    {
+     "text": "baby.",
+     "start": 331.883,
+     "end": 332.063
+    }
+   ]
+  },
+  {
+   "id": "c8c",
+   "text": "Second. I look at the whole monthly cost. Not just the price. Taxes. Insurance. Repairs. The house is just the beginning.",
+   "start": 332.7965208333333,
+   "end": 338.89652083333334,
+   "words": [
+    {
+     "text": "Second.",
+     "start": 332.797,
+     "end": 333.097
+    },
+    {
+     "text": "I",
+     "start": 333.457,
+     "end": 333.657
+    },
+    {
+     "text": "look",
+     "start": 333.657,
+     "end": 333.777
+    },
+    {
+     "text": "at",
+     "start": 333.777,
+     "end": 333.877
+    },
+    {
+     "text": "the",
+     "start": 333.877,
+     "end": 333.957
+    },
+    {
+     "text": "whole",
+     "start": 333.957,
+     "end": 334.097
+    },
+    {
+     "text": "monthly",
+     "start": 334.097,
+     "end": 334.277
+    },
+    {
+     "text": "cost.",
+     "start": 334.277,
+     "end": 334.697
+    },
+    {
+     "text": "Not",
+     "start": 335.157,
+     "end": 335.217
+    },
+    {
+     "text": "just",
+     "start": 335.217,
+     "end": 335.417
+    },
+    {
+     "text": "the",
+     "start": 335.417,
+     "end": 335.557
+    },
+    {
+     "text": "price.",
+     "start": 335.557,
+     "end": 335.837
+    },
+    {
+     "text": "Taxes.",
+     "start": 336.117,
+     "end": 336.317
+    },
+    {
+     "text": "Insurance.",
+     "start": 336.797,
+     "end": 337.037
+    },
+    {
+     "text": "Repairs.",
+     "start": 337.677,
+     "end": 337.677
+    },
+    {
+     "text": "The",
+     "start": 338.017,
+     "end": 338.037
+    },
+    {
+     "text": "house",
+     "start": 338.037,
+     "end": 338.177
+    },
+    {
+     "text": "is",
+     "start": 338.177,
+     "end": 338.357
+    },
+    {
+     "text": "just",
+     "start": 338.357,
+     "end": 338.537
+    },
+    {
+     "text": "the",
+     "start": 338.537,
+     "end": 338.677
+    },
+    {
+     "text": "beginning.",
+     "start": 338.677,
+     "end": 338.897
+    }
+   ]
+  },
+  {
+   "id": "c8d",
+   "text": "Third. I check first time buyer programs. Lots of states and cities help with the down payment. Most people never even ask.",
+   "start": 339.6055416666667,
+   "end": 346.0255416666667,
+   "words": [
+    {
+     "text": "Third.",
+     "start": 339.606,
+     "end": 339.766
+    },
+    {
+     "text": "I",
+     "start": 340.346,
+     "end": 340.446
+    },
+    {
+     "text": "check",
+     "start": 340.446,
+     "end": 340.586
+    },
+    {
+     "text": "first",
+     "start": 340.586,
+     "end": 340.846
+    },
+    {
+     "text": "time",
+     "start": 340.846,
+     "end": 341.126
+    },
+    {
+     "text": "buyer",
+     "start": 341.126,
+     "end": 341.346
+    },
+    {
+     "text": "programs.",
+     "start": 341.346,
+     "end": 341.746
+    },
+    {
+     "text": "Lots",
+     "start": 342.426,
+     "end": 342.566
+    },
+    {
+     "text": "of",
+     "start": 342.566,
+     "end": 342.766
+    },
+    {
+     "text": "states",
+     "start": 342.766,
+     "end": 342.986
+    },
+    {
+     "text": "and",
+     "start": 342.986,
+     "end": 343.206
+    },
+    {
+     "text": "cities",
+     "start": 343.206,
+     "end": 343.506
+    },
+    {
+     "text": "help",
+     "start": 343.506,
+     "end": 343.706
+    },
+    {
+     "text": "with",
+     "start": 343.706,
+     "end": 343.886
+    },
+    {
+     "text": "the",
+     "start": 343.886,
+     "end": 343.946
+    },
+    {
+     "text": "down",
+     "start": 343.946,
+     "end": 344.126
+    },
+    {
+     "text": "payment.",
+     "start": 344.126,
+     "end": 344.366
+    },
+    {
+     "text": "Most",
+     "start": 344.926,
+     "end": 345.046
+    },
+    {
+     "text": "people",
+     "start": 345.046,
+     "end": 345.326
+    },
+    {
+     "text": "never",
+     "start": 345.326,
+     "end": 345.566
+    },
+    {
+     "text": "even",
+     "start": 345.566,
+     "end": 345.766
+    },
+    {
+     "text": "ask.",
+     "start": 345.766,
+     "end": 346.026
+    }
+   ]
+  },
+  {
+   "id": "n27",
+   "text": "Some programs give you thousands toward a down payment and people just don't know they exist. Five minutes of googling. Thousands of dollars.",
+   "start": 346.687625,
+   "end": 352.90762500000005,
+   "words": [
+    {
+     "text": "Some",
+     "start": 346.688,
+     "end": 346.848
+    },
+    {
+     "text": "programs",
+     "start": 346.848,
+     "end": 347.208
+    },
+    {
+     "text": "give",
+     "start": 347.208,
+     "end": 347.568
+    },
+    {
+     "text": "you",
+     "start": 347.568,
+     "end": 347.688
+    },
+    {
+     "text": "thousands",
+     "start": 347.688,
+     "end": 348.068
+    },
+    {
+     "text": "toward",
+     "start": 348.068,
+     "end": 348.388
+    },
+    {
+     "text": "a",
+     "start": 348.388,
+     "end": 348.468
+    },
+    {
+     "text": "down",
+     "start": 348.468,
+     "end": 348.668
+    },
+    {
+     "text": "payment",
+     "start": 348.668,
+     "end": 348.988
+    },
+    {
+     "text": "and",
+     "start": 348.988,
+     "end": 349.308
+    },
+    {
+     "text": "people",
+     "start": 349.308,
+     "end": 349.448
+    },
+    {
+     "text": "just",
+     "start": 349.448,
+     "end": 349.688
+    },
+    {
+     "text": "don't",
+     "start": 349.688,
+     "end": 349.948
+    },
+    {
+     "text": "know",
+     "start": 349.948,
+     "end": 350.068
+    },
+    {
+     "text": "they",
+     "start": 350.068,
+     "end": 350.208
+    },
+    {
+     "text": "exist.",
+     "start": 350.208,
+     "end": 350.468
+    },
+    {
+     "text": "Five",
+     "start": 350.928,
+     "end": 351.068
+    },
+    {
+     "text": "minutes",
+     "start": 351.068,
+     "end": 351.288
+    },
+    {
+     "text": "of",
+     "start": 351.288,
+     "end": 351.488
+    },
+    {
+     "text": "googling.",
+     "start": 351.488,
+     "end": 351.848
+    },
+    {
+     "text": "Thousands",
+     "start": 352.188,
+     "end": 352.428
+    },
+    {
+     "text": "of",
+     "start": 352.428,
+     "end": 352.668
+    },
+    {
+     "text": "dollars.",
+     "start": 352.668,
+     "end": 352.908
+    }
+   ]
+  },
+  {
+   "id": "c8e",
+   "text": "Fourth. I compare lenders. A tiny difference in the rate can save thousands over the loan.",
+   "start": 353.6120833333333,
+   "end": 357.77208333333334,
+   "words": [
+    {
+     "text": "Fourth.",
+     "start": 353.612,
+     "end": 353.692
+    },
+    {
+     "text": "I",
+     "start": 354.112,
+     "end": 354.292
+    },
+    {
+     "text": "compare",
+     "start": 354.292,
+     "end": 354.552
+    },
+    {
+     "text": "lenders.",
+     "start": 354.552,
+     "end": 354.872
+    },
+    {
+     "text": "A",
+     "start": 355.392,
+     "end": 355.492
+    },
+    {
+     "text": "tiny",
+     "start": 355.492,
+     "end": 355.652
+    },
+    {
+     "text": "difference",
+     "start": 355.652,
+     "end": 355.992
+    },
+    {
+     "text": "in",
+     "start": 355.992,
+     "end": 356.212
+    },
+    {
+     "text": "the",
+     "start": 356.212,
+     "end": 356.292
+    },
+    {
+     "text": "rate",
+     "start": 356.292,
+     "end": 356.432
+    },
+    {
+     "text": "can",
+     "start": 356.432,
+     "end": 356.632
+    },
+    {
+     "text": "save",
+     "start": 356.632,
+     "end": 356.812
+    },
+    {
+     "text": "thousands",
+     "start": 356.812,
+     "end": 357.132
+    },
+    {
+     "text": "over",
+     "start": 357.132,
+     "end": 357.512
+    },
+    {
+     "text": "the",
+     "start": 357.512,
+     "end": 357.612
+    },
+    {
+     "text": "loan.",
+     "start": 357.612,
+     "end": 357.772
+    }
+   ]
+  },
+  {
+   "id": "c8f",
+   "text": "And fifth. Nobody rushes me. Not the agent. Not my mom. Not the guy on the internet saying buy now or be poor forever.",
+   "start": 358.480375,
+   "end": 364.76037499999995,
+   "words": [
+    {
+     "text": "And",
+     "start": 358.48,
+     "end": 358.8
+    },
+    {
+     "text": "fifth.",
+     "start": 358.8,
+     "end": 359.16
+    },
+    {
+     "text": "Nobody",
+     "start": 359.58,
+     "end": 359.84
+    },
+    {
+     "text": "rushes",
+     "start": 359.84,
+     "end": 360.06
+    },
+    {
+     "text": "me.",
+     "start": 360.06,
+     "end": 360.36
+    },
+    {
+     "text": "Not",
+     "start": 360.6,
+     "end": 360.72
+    },
+    {
+     "text": "the",
+     "start": 360.72,
+     "end": 360.86
+    },
+    {
+     "text": "agent.",
+     "start": 360.86,
+     "end": 361.08
+    },
+    {
+     "text": "Not",
+     "start": 361.48,
+     "end": 361.52
+    },
+    {
+     "text": "my",
+     "start": 361.52,
+     "end": 361.68
+    },
+    {
+     "text": "mom.",
+     "start": 361.68,
+     "end": 361.94
+    },
+    {
+     "text": "Not",
+     "start": 362.22,
+     "end": 362.3
+    },
+    {
+     "text": "the",
+     "start": 362.3,
+     "end": 362.44
+    },
+    {
+     "text": "guy",
+     "start": 362.44,
+     "end": 362.56
+    },
+    {
+     "text": "on",
+     "start": 362.56,
+     "end": 362.66
+    },
+    {
+     "text": "the",
+     "start": 362.66,
+     "end": 362.76
+    },
+    {
+     "text": "internet",
+     "start": 362.76,
+     "end": 362.96
+    },
+    {
+     "text": "saying",
+     "start": 362.96,
+     "end": 363.34
+    },
+    {
+     "text": "buy",
+     "start": 363.34,
+     "end": 363.6
+    },
+    {
+     "text": "now",
+     "start": 363.6,
+     "end": 363.86
+    },
+    {
+     "text": "or",
+     "start": 363.86,
+     "end": 364.14
+    },
+    {
+     "text": "be",
+     "start": 364.14,
+     "end": 364.26
+    },
+    {
+     "text": "poor",
+     "start": 364.26,
+     "end": 364.46
+    },
+    {
+     "text": "forever.",
+     "start": 364.46,
+     "end": 364.76
+    }
+   ]
+  },
+  {
+   "id": "n10",
+   "text": "Real estate agents when I say I'm gonna wait.",
+   "start": 365.49139583333334,
+   "end": 367.2083958333333,
+   "words": [
+    {
+     "text": "Real",
+     "start": 365.491,
+     "end": 365.661
+    },
+    {
+     "text": "estate",
+     "start": 365.68,
+     "end": 365.918
+    },
+    {
+     "text": "agents",
+     "start": 365.945,
+     "end": 366.183
+    },
+    {
+     "text": "when",
+     "start": 366.21,
+     "end": 366.38
+    },
+    {
+     "text": "I",
+     "start": 366.399,
+     "end": 366.467
+    },
+    {
+     "text": "say",
+     "start": 366.474,
+     "end": 366.611
+    },
+    {
+     "text": "I'm",
+     "start": 366.626,
+     "end": 366.762
+    },
+    {
+     "text": "gonna",
+     "start": 366.777,
+     "end": 366.981
+    },
+    {
+     "text": "wait.",
+     "start": 367.004,
+     "end": 367.208
+    }
+   ]
+  },
+  {
+   "id": "d1b",
+   "text": "So who's buying all the houses? Mostly nobody. The market is stuck. And when it's stuck the people already inside win.",
+   "start": 367.9505833333333,
+   "end": 374.2305833333333,
+   "words": [
+    {
+     "text": "So",
+     "start": 367.951,
+     "end": 368.131
+    },
+    {
+     "text": "who's",
+     "start": 368.351,
+     "end": 368.551
+    },
+    {
+     "text": "buying",
+     "start": 368.551,
+     "end": 368.731
+    },
+    {
+     "text": "all",
+     "start": 368.731,
+     "end": 368.891
+    },
+    {
+     "text": "the",
+     "start": 368.891,
+     "end": 368.951
+    },
+    {
+     "text": "houses?",
+     "start": 368.951,
+     "end": 369.151
+    },
+    {
+     "text": "Mostly",
+     "start": 370.011,
+     "end": 370.011
+    },
+    {
+     "text": "nobody.",
+     "start": 370.011,
+     "end": 370.211
+    },
+    {
+     "text": "The",
+     "start": 370.891,
+     "end": 370.891
+    },
+    {
+     "text": "market",
+     "start": 370.891,
+     "end": 371.091
+    },
+    {
+     "text": "is",
+     "start": 371.091,
+     "end": 371.271
+    },
+    {
+     "text": "stuck.",
+     "start": 371.271,
+     "end": 371.551
+    },
+    {
+     "text": "And",
+     "start": 372.111,
+     "end": 372.131
+    },
+    {
+     "text": "when",
+     "start": 372.131,
+     "end": 372.291
+    },
+    {
+     "text": "it's",
+     "start": 372.291,
+     "end": 372.491
+    },
+    {
+     "text": "stuck",
+     "start": 372.491,
+     "end": 372.731
+    },
+    {
+     "text": "the",
+     "start": 372.891,
+     "end": 372.931
+    },
+    {
+     "text": "people",
+     "start": 372.931,
+     "end": 373.091
+    },
+    {
+     "text": "already",
+     "start": 373.091,
+     "end": 373.411
+    },
+    {
+     "text": "inside",
+     "start": 373.411,
+     "end": 373.691
+    },
+    {
+     "text": "win.",
+     "start": 373.691,
+     "end": 374.231
+    }
+   ]
+  },
+  {
+   "id": "d1c",
+   "text": "It's not my fault I can't afford my dad's house. And it's not yours either. The math changed.",
+   "start": 374.98714583333333,
+   "end": 379.16714583333334,
+   "words": [
+    {
+     "text": "It's",
+     "start": 374.987,
+     "end": 375.127
+    },
+    {
+     "text": "not",
+     "start": 375.127,
+     "end": 375.207
+    },
+    {
+     "text": "my",
+     "start": 375.207,
+     "end": 375.387
+    },
+    {
+     "text": "fault",
+     "start": 375.387,
+     "end": 375.627
+    },
+    {
+     "text": "I",
+     "start": 375.627,
+     "end": 375.787
+    },
+    {
+     "text": "can't",
+     "start": 375.787,
+     "end": 375.987
+    },
+    {
+     "text": "afford",
+     "start": 375.987,
+     "end": 376.127
+    },
+    {
+     "text": "my",
+     "start": 376.127,
+     "end": 376.307
+    },
+    {
+     "text": "dad's",
+     "start": 376.307,
+     "end": 376.627
+    },
+    {
+     "text": "house.",
+     "start": 376.627,
+     "end": 376.827
+    },
+    {
+     "text": "And",
+     "start": 377.367,
+     "end": 377.427
+    },
+    {
+     "text": "it's",
+     "start": 377.427,
+     "end": 377.587
+    },
+    {
+     "text": "not",
+     "start": 377.587,
+     "end": 377.707
+    },
+    {
+     "text": "yours",
+     "start": 377.707,
+     "end": 377.867
+    },
+    {
+     "text": "either.",
+     "start": 377.867,
+     "end": 378.247
+    },
+    {
+     "text": "The",
+     "start": 378.707,
+     "end": 378.747
+    },
+    {
+     "text": "math",
+     "start": 378.747,
+     "end": 378.867
+    },
+    {
+     "text": "changed.",
+     "start": 378.867,
+     "end": 379.167
+    }
+   ]
+  },
+  {
+   "id": "n28",
+   "text": "My dad didn't beat the game because he was smarter. He just played it on easy mode.",
+   "start": 379.96975,
+   "end": 383.32975,
+   "words": [
+    {
+     "text": "My",
+     "start": 379.97,
+     "end": 380.07
+    },
+    {
+     "text": "dad",
+     "start": 380.07,
+     "end": 380.27
+    },
+    {
+     "text": "didn't",
+     "start": 380.27,
+     "end": 380.59
+    },
+    {
+     "text": "beat",
+     "start": 380.59,
+     "end": 380.71
+    },
+    {
+     "text": "the",
+     "start": 380.71,
+     "end": 380.85
+    },
+    {
+     "text": "game",
+     "start": 380.85,
+     "end": 381.03
+    },
+    {
+     "text": "because",
+     "start": 381.03,
+     "end": 381.27
+    },
+    {
+     "text": "he",
+     "start": 381.27,
+     "end": 381.45
+    },
+    {
+     "text": "was",
+     "start": 381.45,
+     "end": 381.55
+    },
+    {
+     "text": "smarter.",
+     "start": 381.55,
+     "end": 381.81
+    },
+    {
+     "text": "He",
+     "start": 382.19,
+     "end": 382.29
+    },
+    {
+     "text": "just",
+     "start": 382.29,
+     "end": 382.39
+    },
+    {
+     "text": "played",
+     "start": 382.39,
+     "end": 382.63
+    },
+    {
+     "text": "it",
+     "start": 382.63,
+     "end": 382.77
+    },
+    {
+     "text": "on",
+     "start": 382.77,
+     "end": 382.87
+    },
+    {
+     "text": "easy",
+     "start": 382.87,
+     "end": 383.03
+    },
+    {
+     "text": "mode.",
+     "start": 383.03,
+     "end": 383.33
+    }
+   ]
+  },
+  {
+   "id": "d1d",
+   "text": "But knowing the math means nobody can rush you into the worst deal of your life.",
+   "start": 383.90208333333334,
+   "end": 387.00208333333336,
+   "words": [
+    {
+     "text": "But",
+     "start": 383.902,
+     "end": 383.982
+    },
+    {
+     "text": "knowing",
+     "start": 383.982,
+     "end": 384.142
+    },
+    {
+     "text": "the",
+     "start": 384.142,
+     "end": 384.322
+    },
+    {
+     "text": "math",
+     "start": 384.322,
+     "end": 384.522
+    },
+    {
+     "text": "means",
+     "start": 384.522,
+     "end": 384.822
+    },
+    {
+     "text": "nobody",
+     "start": 384.822,
+     "end": 385.162
+    },
+    {
+     "text": "can",
+     "start": 385.162,
+     "end": 385.422
+    },
+    {
+     "text": "rush",
+     "start": 385.422,
+     "end": 385.602
+    },
+    {
+     "text": "you",
+     "start": 385.602,
+     "end": 385.782
+    },
+    {
+     "text": "into",
+     "start": 385.782,
+     "end": 385.942
+    },
+    {
+     "text": "the",
+     "start": 385.942,
+     "end": 386.082
+    },
+    {
+     "text": "worst",
+     "start": 386.082,
+     "end": 386.282
+    },
+    {
+     "text": "deal",
+     "start": 386.282,
+     "end": 386.542
+    },
+    {
+     "text": "of",
+     "start": 386.542,
+     "end": 386.702
+    },
+    {
+     "text": "your",
+     "start": 386.702,
+     "end": 386.802
+    },
+    {
+     "text": "life.",
+     "start": 386.802,
+     "end": 387.002
+    }
+   ]
+  },
+  {
+   "id": "r5",
+   "text": "Next time I get paid on Friday and I'm broke by Monday. We'll find out where my paycheck goes.",
+   "start": 387.6622708333333,
+   "end": 391.70227083333333,
+   "words": [
+    {
+     "text": "Next",
+     "start": 387.662,
+     "end": 387.802
+    },
+    {
+     "text": "time",
+     "start": 387.802,
+     "end": 388.062
+    },
+    {
+     "text": "I",
+     "start": 388.062,
+     "end": 388.182
+    },
+    {
+     "text": "get",
+     "start": 388.182,
+     "end": 388.302
+    },
+    {
+     "text": "paid",
+     "start": 388.302,
+     "end": 388.442
+    },
+    {
+     "text": "on",
+     "start": 388.442,
+     "end": 388.602
+    },
+    {
+     "text": "Friday",
+     "start": 388.602,
+     "end": 388.782
+    },
+    {
+     "text": "and",
+     "start": 388.782,
+     "end": 389.122
+    },
+    {
+     "text": "I'm",
+     "start": 389.122,
+     "end": 389.222
+    },
+    {
+     "text": "broke",
+     "start": 389.222,
+     "end": 389.362
+    },
+    {
+     "text": "by",
+     "start": 389.362,
+     "end": 389.542
+    },
+    {
+     "text": "Monday.",
+     "start": 389.542,
+     "end": 389.742
+    },
+    {
+     "text": "We'll",
+     "start": 390.382,
+     "end": 390.602
+    },
+    {
+     "text": "find",
+     "start": 390.602,
+     "end": 390.762
+    },
+    {
+     "text": "out",
+     "start": 390.762,
+     "end": 390.902
+    },
+    {
+     "text": "where",
+     "start": 390.902,
+     "end": 391.022
+    },
+    {
+     "text": "my",
+     "start": 391.022,
+     "end": 391.142
+    },
+    {
+     "text": "paycheck",
+     "start": 391.142,
+     "end": 391.322
+    },
+    {
+     "text": "goes.",
+     "start": 391.322,
+     "end": 391.702
+    }
+   ]
+  },
+  {
+   "id": "r6",
+   "text": "Subscribe. It's free and unlike a house it will never cost you five years of pay.",
+   "start": 392.38529166666666,
+   "end": 396.56529166666667,
+   "words": [
+    {
+     "text": "Subscribe.",
+     "start": 392.385,
+     "end": 392.785
+    },
+    {
+     "text": "It's",
+     "start": 393.325,
+     "end": 393.485
+    },
+    {
+     "text": "free",
+     "start": 393.485,
+     "end": 393.685
+    },
+    {
+     "text": "and",
+     "start": 393.685,
+     "end": 393.965
+    },
+    {
+     "text": "unlike",
+     "start": 393.965,
+     "end": 394.245
+    },
+    {
+     "text": "a",
+     "start": 394.245,
+     "end": 394.445
+    },
+    {
+     "text": "house",
+     "start": 394.445,
+     "end": 394.665
+    },
+    {
+     "text": "it",
+     "start": 394.665,
+     "end": 394.885
+    },
+    {
+     "text": "will",
+     "start": 394.885,
+     "end": 395.005
+    },
+    {
+     "text": "never",
+     "start": 395.005,
+     "end": 395.185
+    },
+    {
+     "text": "cost",
+     "start": 395.185,
+     "end": 395.485
+    },
+    {
+     "text": "you",
+     "start": 395.485,
+     "end": 395.685
+    },
+    {
+     "text": "five",
+     "start": 395.685,
+     "end": 395.965
+    },
+    {
+     "text": "years",
+     "start": 395.965,
+     "end": 396.185
+    },
+    {
+     "text": "of",
+     "start": 396.185,
+     "end": 396.385
+    },
+    {
+     "text": "pay.",
+     "start": 396.385,
+     "end": 396.565
+    }
+   ]
+  }
+ ]
+}
