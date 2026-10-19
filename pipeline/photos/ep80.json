@@ -2,175 +2,347 @@
  "photos": [
   {
    "id": "dinner_bill",
-   "q": "restaurant bill"
+   "q": "restaurant bill",
+   "file": "File:Bill's restaurant sign (14880260349).jpg",
+   "credit": "Bill Smith from Virginia Beach",
+   "license": "CC BY 2.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Bill%27s_restaurant_sign_(14880260349).jpg"
   },
   {
    "id": "door_exit",
-   "q": "exit door"
+   "q": "exit door",
+   "file": "File:Ridgewood Exit doors.jpg",
+   "credit": "Rubik's Cube 3x3",
+   "license": "CC0",
+   "page": "https://commons.wikimedia.org/wiki/File:Ridgewood_Exit_doors.jpg"
   },
   {
    "id": "lobster",
-   "q": "lobster dinner"
+   "q": "lobster dinner",
+   "file": "File:Félix Bracquemond - Dinner Service (Rousseau service)- Large lobster with raised antenna (no. 2 - 1922.407 - Cleveland Museum of Art.tif",
+   "credit": "Félix Bracquemond",
+   "license": "CC0",
+   "page": "https://commons.wikimedia.org/wiki/File:F%C3%A9lix_Bracquemond_-_Dinner_Service_(Rousseau_service)-_Large_lobster_with_raised_antenna_(no._2_-_1922.407_-_Cleveland_Museum_of_Art.tif"
   },
   {
    "id": "phone_text",
-   "q": "smartphone text message"
+   "q": "smartphone text message",
+   "file": "File:Woman texting while eating while using laptop.jpg",
+   "credit": "Jason",
+   "license": "CC BY 2.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Woman_texting_while_eating_while_using_laptop.jpg"
   },
   {
    "id": "puppy",
-   "q": "sad puppy"
+   "q": "sad puppy",
+   "file": "File:Sad puppy is sad (4758689171).jpg",
+   "credit": "Beatrice Murch from Utrecht, Netherlands",
+   "license": "CC BY 2.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Sad_puppy_is_sad_(4758689171).jpg"
   },
   {
    "id": "office_clock",
-   "q": "office wall clock"
+   "q": "office wall clock",
+   "file": "File:Wall Clock দেওয়াল ঘড়ি.jpg",
+   "credit": "Sumasa",
+   "license": "CC BY-SA 4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Wall_Clock_%E0%A6%A6%E0%A7%87%E0%A6%93%E0%A6%AF%E0%A6%BC%E0%A6%BE%E0%A6%B2_%E0%A6%98%E0%A6%A1%E0%A6%BC%E0%A6%BF.jpg"
   },
   {
    "id": "warranty",
-   "q": "electronics store"
+   "q": "electronics store",
+   "file": "File:Store of Bajaj Electronics at Gadwal - 2024.jpg",
+   "credit": "Mouryan",
+   "license": "CC BY-SA 4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Store_of_Bajaj_Electronics_at_Gadwal_-_2024.jpg"
   },
   {
    "id": "tv",
-   "q": "flat screen television"
+   "q": "flat screen television",
+   "file": "File:Techwood flat screen television from 2010.jpg",
+   "credit": "Percivalor",
+   "license": "CC BY-SA 4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Techwood_flat_screen_television_from_2010.jpg"
   },
   {
    "id": "handshake",
-   "q": "business handshake"
+   "q": "business handshake",
+   "file": "File:Business agreement handshake at coffee shop.jpg",
+   "credit": "rawpixel.com",
+   "license": "CC0",
+   "page": "https://commons.wikimedia.org/wiki/File:Business_agreement_handshake_at_coffee_shop.jpg"
   },
   {
    "id": "mirror",
-   "q": "bathroom mirror"
+   "q": "bathroom mirror",
+   "file": "File:Bathroom of hotel in Paris (France) with reflected photographer in mirror, 2013.jpg",
+   "credit": "Pittigrilli",
+   "license": "CC0",
+   "page": "https://commons.wikimedia.org/wiki/File:Bathroom_of_hotel_in_Paris_(France)_with_reflected_photographer_in_mirror,_2013.jpg"
   },
   {
    "id": "library",
-   "q": "university library"
+   "q": "university library",
+   "file": "File:Graz University-Library reading-room.jpg",
+   "credit": "Dr. Marcus Gossler",
+   "license": "CC BY-SA 3.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Graz_University-Library_reading-room.jpg"
   },
   {
    "id": "researchers",
-   "q": "scientists at work"
+   "q": "scientists at work",
+   "file": "File:Scientists at work in the Bird's Head Seascape.jpg",
+   "credit": "Bird's Head Seascape / Jones/Shimlock / Secret Sea Visions",
+   "license": "CC BY-SA 4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Scientists_at_work_in_the_Bird%27s_Head_Seascape.jpg"
   },
   {
    "id": "used_car",
-   "q": "used car lot"
+   "q": "used car lot",
+   "file": "File:Winter Garden's used car lot and dance hall.jpg",
+   "credit": "Hines Studio",
+   "license": "Public domain",
+   "page": "https://commons.wikimedia.org/wiki/File:Winter_Garden%27s_used_car_lot_and_dance_hall.jpg"
   },
   {
    "id": "finish_line",
-   "q": "finish line race"
+   "q": "finish line race",
+   "file": "File:Sausage race finish line.jpg",
+   "credit": "jimcchou",
+   "license": "CC BY 2.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Sausage_race_finish_line.jpg"
   },
   {
    "id": "handshake2",
-   "q": "friendly people talking"
+   "q": "friendly people talking",
+   "file": "File:The friendly people of Cappadocia. Goreme, Central Turkey.jpg",
+   "credit": "Cllane4",
+   "license": "CC BY-SA 3.0",
+   "page": "https://commons.wikimedia.org/wiki/File:The_friendly_people_of_Cappadocia._Goreme,_Central_Turkey.jpg"
   },
   {
    "id": "contract",
-   "q": "signing contract"
+   "q": "signing contract",
+   "file": "File:Comet Interceptor contract signing ESA24643784.jpg",
+   "credit": "European Space Agency",
+   "license": "CC BY-SA 3.0 igo",
+   "page": "https://commons.wikimedia.org/wiki/File:Comet_Interceptor_contract_signing_ESA24643784.jpg"
   },
   {
    "id": "market",
-   "q": "outdoor market stall"
+   "q": "outdoor market stall",
+   "file": "File:Market stall Sclater Street Brick Lane Market Shoreditch London England 01.jpg",
+   "credit": "Acabashi",
+   "license": "CC BY-SA 4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Market_stall_Sclater_Street_Brick_Lane_Market_Shoreditch_London_England_01.jpg"
   },
   {
    "id": "staircase",
-   "q": "staircase"
+   "q": "staircase",
+   "file": "File:Staircase of Liesikuja parking hall in Myyrmäki, Vantaa, Finland, 2022 May.jpg",
+   "credit": "Ximonic (Simo Räsänen)",
+   "license": "CC BY 4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Staircase_of_Liesikuja_parking_hall_in_Myyrm%C3%A4ki,_Vantaa,_Finland,_2022_May.jpg"
   },
   {
    "id": "shadow",
-   "q": "long shadow"
+   "q": "long shadow",
+   "file": "File:Sunny green paddy fields with trees and long shadows at golden hour.jpg",
+   "credit": "Basile Morin",
+   "license": "CC BY-SA 4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Sunny_green_paddy_fields_with_trees_and_long_shadows_at_golden_hour.jpg"
   },
   {
    "id": "wallet",
-   "q": "empty wallet"
+   "q": "empty wallet",
+   "file": "File:Empty tank empty wallet.jpg",
+   "credit": "BigBruiser",
+   "license": "CC BY-SA 4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Empty_tank_empty_wallet.jpg"
   },
   {
    "id": "cubicle",
-   "q": "office cubicles"
+   "q": "office cubicles",
+   "file": "File:Messy office (cubicle).jpg",
+   "credit": "OboeBlanket",
+   "license": "CC0",
+   "page": "https://commons.wikimedia.org/wiki/File:Messy_office_(cubicle).jpg"
   },
   {
    "id": "thinking",
-   "q": "man thinking"
+   "q": "man thinking",
+   "file": "File:Man thinking on Recife.jpg",
+   "credit": "Wilfredor",
+   "license": "CC0",
+   "page": "https://commons.wikimedia.org/wiki/File:Man_thinking_on_Recife.jpg"
   },
   {
    "id": "birthday_card",
-   "q": "birthday card money"
+   "q": "birthday card money",
+   "file": "File:President Barack Obama holds the birthday card given to him during a group photo with interns on the South Portico of the White House, on Aug. 3, 2009.jpg",
+   "credit": "Pete Souza",
+   "license": "Public domain",
+   "page": "https://commons.wikimedia.org/wiki/File:President_Barack_Obama_holds_the_birthday_card_given_to_him_during_a_group_photo_with_interns_on_the_South_Portico_of_the_White_House,_on_Aug._3,_2009.jpg"
   },
   {
    "id": "peace",
-   "q": "peace sign hand"
+   "q": "peace sign hand",
+   "file": "File:Georgia flag peace hand sign.jpg",
+   "credit": "Image by David Peterson from Pixabay",
+   "license": "CC0",
+   "page": "https://commons.wikimedia.org/wiki/File:Georgia_flag_peace_hand_sign.jpg"
   },
   {
    "id": "parking_ticket",
-   "q": "parking ticket"
+   "q": "parking ticket",
+   "file": "File:Parking ticket.JPG",
+   "credit": "ThorRune",
+   "license": "Public domain",
+   "page": "https://commons.wikimedia.org/wiki/File:Parking_ticket.JPG"
   },
   {
    "id": "scale",
-   "q": "balance scale"
+   "q": "balance scale",
+   "file": "File:Balance scale IMGP9755.jpg",
+   "credit": "Nikodem Nijaki",
+   "license": "CC BY-SA 3.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Balance_scale_IMGP9755.jpg"
   },
   {
    "id": "smile",
-   "q": "smiling woman"
+   "q": "smiling woman",
+   "file": "File:Water reflection of a smiling woman planting rice.jpg",
+   "credit": "Basile Morin",
+   "license": "CC BY-SA 4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Water_reflection_of_a_smiling_woman_planting_rice.jpg"
   },
   {
    "id": "receipt",
-   "q": "long receipt"
+   "q": "long receipt",
+   "file": "File:Wikicurious WikiHaus at Sundance 2026 - Long Receipt.jpg",
+   "credit": "Kevin Payravi",
+   "license": "CC BY-SA 4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Wikicurious_WikiHaus_at_Sundance_2026_-_Long_Receipt.jpg"
   },
   {
    "id": "toolbox",
-   "q": "toolbox"
+   "q": "toolbox",
+   "file": "File:Toolbox.jpg",
+   "credit": "L3D",
+   "license": "CC BY-SA 4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Toolbox.jpg"
   },
   {
    "id": "hourglass",
-   "q": "hourglass"
+   "q": "hourglass",
+   "file": "File:Wooden hourglass 3.jpg",
+   "credit": "User:S Sepp",
+   "license": "CC BY-SA 3.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Wooden_hourglass_3.jpg"
   },
   {
    "id": "five_fingers",
-   "q": "open hand"
+   "q": "open hand",
+   "file": "File:Open Hand monument, Chandigarh.jpg",
+   "credit": "Raakesh Blokhra",
+   "license": "CC BY-SA 2.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Open_Hand_monument,_Chandigarh.jpg"
   },
   {
    "id": "interview",
-   "q": "job interview"
+   "q": "job interview",
+   "file": "File:What to Expect at a Job Interview at a Teaching School.jpg",
+   "credit": "HeatherKatz001",
+   "license": "CC BY-SA 4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:What_to_Expect_at_a_Job_Interview_at_a_Teaching_School.jpg"
   },
   {
    "id": "office",
-   "q": "modern office"
+   "q": "modern office",
+   "file": "File:Modern office development in the Zabłocie district, 2026, Kraków, Poland.jpg",
+   "credit": "Igor123121",
+   "license": "CC BY 4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Modern_office_development_in_the_Zab%C5%82ocie_district,_2026,_Krak%C3%B3w,_Poland.jpg"
   },
   {
    "id": "beach",
-   "q": "beach vacation"
+   "q": "beach vacation",
+   "file": "File:02 Cyprus vacation, sandy beach of Ayia Thekla, Sotira, Cyprus.jpg",
+   "credit": "Marek Ślusarczyk (Tupungato) Photo portfolio",
+   "license": "CC BY 3.0",
+   "page": "https://commons.wikimedia.org/wiki/File:02_Cyprus_vacation,_sandy_beach_of_Ayia_Thekla,_Sotira,_Cyprus.jpg"
   },
   {
    "id": "piggy",
-   "q": "piggy bank"
+   "q": "piggy bank",
+   "file": "File:Model 1925 Kenworth Collectible Piggy Bank front view 2.jpg",
+   "credit": "Noah Wulf",
+   "license": "CC BY-SA 4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Model_1925_Kenworth_Collectible_Piggy_Bank_front_view_2.jpg"
   },
   {
    "id": "car_ride",
-   "q": "car on road"
+   "q": "car on road",
+   "file": "File:Car park on Between Towns Road, Cowley - geograph.org.uk - 7984809.jpg",
+   "credit": "David Howard",
+   "license": "CC BY-SA 2.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Car_park_on_Between_Towns_Road,_Cowley_-_geograph.org.uk_-_7984809.jpg"
   },
   {
    "id": "grandma",
-   "q": "elderly woman smiling"
+   "q": "elderly woman smiling",
+   "file": "File:Elderly woman with curly blonde hair smiling while eating a donut with pink frosting.jpg",
+   "credit": "Shixart1985",
+   "license": "CC BY 2.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Elderly_woman_with_curly_blonde_hair_smiling_while_eating_a_donut_with_pink_frosting.jpg"
   },
   {
    "id": "notebook",
-   "q": "notebook pen"
+   "q": "notebook pen",
+   "file": "File:Woman writing on a notebook with a pen.jpg",
+   "credit": "Kristin Hardwick",
+   "license": "CC0",
+   "page": "https://commons.wikimedia.org/wiki/File:Woman_writing_on_a_notebook_with_a_pen.jpg"
   },
   {
    "id": "salad",
-   "q": "salad bowl"
+   "q": "salad bowl",
+   "file": "File:Salad Bowl MET DP258642.jpg",
+   "credit": "This file was donated to Wikimedia Commons as part of a project by the Metropolitan Museum",
+   "license": "CC0",
+   "page": "https://commons.wikimedia.org/wiki/File:Salad_Bowl_MET_DP258642.jpg"
   },
   {
    "id": "laptop_night",
-   "q": "laptop at night office"
+   "q": "laptop at night office",
+   "file": "File:A woman sits at a desk with her laptop, deeply focused on her work in a low-light environment.jpg",
+   "credit": "Shixart1985",
+   "license": "CC BY 2.0",
+   "page": "https://commons.wikimedia.org/wiki/File:A_woman_sits_at_a_desk_with_her_laptop,_deeply_focused_on_her_work_in_a_low-light_environment.jpg"
   },
   {
    "id": "friends",
-   "q": "group of friends laughing"
+   "q": "group of friends laughing",
+   "file": "File:Group hug+someon laughing, Beyoğlu 7May23.jpg",
+   "credit": "Mariam elr",
+   "license": "CC BY-SA 4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Group_hug%2Bsomeon_laughing,_Beyo%C4%9Flu_7May23.jpg"
   },
   {
    "id": "table_money",
-   "q": "money on table"
+   "q": "money on table",
+   "file": "File:Loanable funds, money multiplier, money creation (3 types of theories) without almost forgotten Credit Mechanics (table by IMF 2019).png",
+   "credit": "Marco Gross (IMF), Christoph Siebenbrunner (Oxford University)",
+   "license": "Public domain",
+   "page": "https://commons.wikimedia.org/wiki/File:Loanable_funds,_money_multiplier,_money_creation_(3_types_of_theories)_without_almost_forgotten_Credit_Mechanics_(table_by_IMF_2019).png"
   },
   {
    "id": "brain",
-   "q": "human brain model"
+   "q": "human brain model",
+   "file": "File:The Human Brain Model 02.jpg",
+   "credit": "Edeh Sophia",
+   "license": "CC0",
+   "page": "https://commons.wikimedia.org/wiki/File:The_Human_Brain_Model_02.jpg"
   }
  ]
 }
