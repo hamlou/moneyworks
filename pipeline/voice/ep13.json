@@ -1,0 +1,7827 @@
+{
+ "fps": 30,
+ "total": 410.902,
+ "hash": "cb1363bba67237b5",
+ "chapters": [
+  {
+   "n": 1,
+   "title": "How I Pay Tax",
+   "start": 30.04,
+   "beat": "c1a"
+  },
+  {
+   "n": 2,
+   "title": "Meet Richie",
+   "start": 79.145,
+   "beat": "c2a"
+  },
+  {
+   "n": 3,
+   "title": "Buy. Borrow. Die.",
+   "start": 136.624,
+   "beat": "c3a"
+  },
+  {
+   "n": 4,
+   "title": "What I Can Steal",
+   "start": 332.932,
+   "beat": "c8a"
+  }
+ ],
+ "beats": [
+  {
+   "id": "o1",
+   "text": "This is my paycheck. And before it even reaches me the government already took a bite. I never even got to hold that money.",
+   "start": 0.08,
+   "end": 6.4,
+   "words": [
+    {
+     "text": "This",
+     "start": 0.08,
+     "end": 0.32
+    },
+    {
+     "text": "is",
+     "start": 0.32,
+     "end": 0.66
+    },
+    {
+     "text": "my",
+     "start": 0.66,
+     "end": 0.96
+    },
+    {
+     "text": "paycheck.",
+     "start": 0.96,
+     "end": 1.28
+    },
+    {
+     "text": "And",
+     "start": 1.84,
+     "end": 1.9
+    },
+    {
+     "text": "before",
+     "start": 1.9,
+     "end": 2.14
+    },
+    {
+     "text": "it",
+     "start": 2.14,
+     "end": 2.32
+    },
+    {
+     "text": "even",
+     "start": 2.32,
+     "end": 2.46
+    },
+    {
+     "text": "reaches",
+     "start": 2.46,
+     "end": 2.78
+    },
+    {
+     "text": "me",
+     "start": 2.78,
+     "end": 3.04
+    },
+    {
+     "text": "the",
+     "start": 3.34,
+     "end": 3.4
+    },
+    {
+     "text": "government",
+     "start": 3.4,
+     "end": 3.64
+    },
+    {
+     "text": "already",
+     "start": 3.64,
+     "end": 3.98
+    },
+    {
+     "text": "took",
+     "start": 3.98,
+     "end": 4.26
+    },
+    {
+     "text": "a",
+     "start": 4.26,
+     "end": 4.36
+    },
+    {
+     "text": "bite.",
+     "start": 4.36,
+     "end": 4.54
+    },
+    {
+     "text": "I",
+     "start": 4.9,
+     "end": 5.0
+    },
+    {
+     "text": "never",
+     "start": 5.0,
+     "end": 5.14
+    },
+    {
+     "text": "even",
+     "start": 5.14,
+     "end": 5.4
+    },
+    {
+     "text": "got",
+     "start": 5.4,
+     "end": 5.62
+    },
+    {
+     "text": "to",
+     "start": 5.62,
+     "end": 5.76
+    },
+    {
+     "text": "hold",
+     "start": 5.76,
+     "end": 5.96
+    },
+    {
+     "text": "that",
+     "start": 5.96,
+     "end": 6.18
+    },
+    {
+     "text": "money.",
+     "start": 6.18,
+     "end": 6.4
+    }
+   ]
+  },
+  {
+   "id": "o2",
+   "text": "Now meet Richie. This year Richie got one billion dollars richer.",
+   "start": 6.855583333333334,
+   "end": 9.641583333333333,
+   "words": [
+    {
+     "text": "Now",
+     "start": 6.856,
+     "end": 7.01
+    },
+    {
+     "text": "meet",
+     "start": 7.027,
+     "end": 7.219
+    },
+    {
+     "text": "Richie.",
+     "start": 7.241,
+     "end": 7.548
+    },
+    {
+     "text": "This",
+     "start": 7.582,
+     "end": 7.775
+    },
+    {
+     "text": "year",
+     "start": 7.796,
+     "end": 7.988
+    },
+    {
+     "text": "Richie",
+     "start": 8.01,
+     "end": 8.279
+    },
+    {
+     "text": "got",
+     "start": 8.309,
+     "end": 8.463
+    },
+    {
+     "text": "one",
+     "start": 8.48,
+     "end": 8.633
+    },
+    {
+     "text": "billion",
+     "start": 8.651,
+     "end": 8.958
+    },
+    {
+     "text": "dollars",
+     "start": 8.992,
+     "end": 9.3
+    },
+    {
+     "text": "richer.",
+     "start": 9.334,
+     "end": 9.642
+    }
+   ]
+  },
+  {
+   "id": "n20",
+   "text": "Not by working harder. He was sleeping on a boat in Italy when it happened.",
+   "start": 10.281583333333334,
+   "end": 13.221583333333333,
+   "words": [
+    {
+     "text": "Not",
+     "start": 10.282,
+     "end": 10.422
+    },
+    {
+     "text": "by",
+     "start": 10.422,
+     "end": 10.582
+    },
+    {
+     "text": "working",
+     "start": 10.582,
+     "end": 10.782
+    },
+    {
+     "text": "harder.",
+     "start": 10.782,
+     "end": 11.102
+    },
+    {
+     "text": "He",
+     "start": 11.442,
+     "end": 11.522
+    },
+    {
+     "text": "was",
+     "start": 11.522,
+     "end": 11.602
+    },
+    {
+     "text": "sleeping",
+     "start": 11.602,
+     "end": 11.802
+    },
+    {
+     "text": "on",
+     "start": 11.802,
+     "end": 12.002
+    },
+    {
+     "text": "a",
+     "start": 12.002,
+     "end": 12.042
+    },
+    {
+     "text": "boat",
+     "start": 12.042,
+     "end": 12.222
+    },
+    {
+     "text": "in",
+     "start": 12.222,
+     "end": 12.422
+    },
+    {
+     "text": "Italy",
+     "start": 12.422,
+     "end": 12.602
+    },
+    {
+     "text": "when",
+     "start": 12.602,
+     "end": 12.862
+    },
+    {
+     "text": "it",
+     "start": 12.862,
+     "end": 12.942
+    },
+    {
+     "text": "happened.",
+     "start": 12.942,
+     "end": 13.222
+    }
+   ]
+  },
+  {
+   "id": "o3",
+   "text": "And he paid zero dollars in tax on it. Zero.",
+   "start": 13.864291666666666,
+   "end": 16.765291666666666,
+   "words": [
+    {
+     "text": "And",
+     "start": 13.864,
+     "end": 14.099
+    },
+    {
+     "text": "he",
+     "start": 14.125,
+     "end": 14.302
+    },
+    {
+     "text": "paid",
+     "start": 14.321,
+     "end": 14.615
+    },
+    {
+     "text": "zero",
+     "start": 14.648,
+     "end": 14.942
+    },
+    {
+     "text": "dollars",
+     "start": 14.975,
+     "end": 15.445
+    },
+    {
+     "text": "in",
+     "start": 15.497,
+     "end": 15.674
+    },
+    {
+     "text": "tax",
+     "start": 15.693,
+     "end": 15.929
+    },
+    {
+     "text": "on",
+     "start": 15.955,
+     "end": 16.131
+    },
+    {
+     "text": "it.",
+     "start": 16.151,
+     "end": 16.386
+    },
+    {
+     "text": "Zero.",
+     "start": 16.412,
+     "end": 16.765
+    }
+   ]
+  },
+  {
+   "id": "o5",
+   "text": "And the crazy part? It's legal. I checked. Three times.",
+   "start": 17.400708333333334,
+   "end": 19.968708333333336,
+   "words": [
+    {
+     "text": "And",
+     "start": 17.401,
+     "end": 17.568
+    },
+    {
+     "text": "the",
+     "start": 17.587,
+     "end": 17.754
+    },
+    {
+     "text": "crazy",
+     "start": 17.772,
+     "end": 18.023
+    },
+    {
+     "text": "part?",
+     "start": 18.051,
+     "end": 18.302
+    },
+    {
+     "text": "It's",
+     "start": 18.33,
+     "end": 18.539
+    },
+    {
+     "text": "legal.",
+     "start": 18.562,
+     "end": 18.854
+    },
+    {
+     "text": "I",
+     "start": 18.887,
+     "end": 18.97
+    },
+    {
+     "text": "checked.",
+     "start": 18.98,
+     "end": 19.356
+    },
+    {
+     "text": "Three",
+     "start": 19.397,
+     "end": 19.648
+    },
+    {
+     "text": "times.",
+     "start": 19.676,
+     "end": 19.969
+    }
+   ]
+  },
+  {
+   "id": "o4",
+   "text": "By the end of this video you'll know the three step trick the richest people in the world use and the one piece of it you can steal for yourself.",
+   "start": 20.75225,
+   "end": 25.97225,
+   "words": [
+    {
+     "text": "By",
+     "start": 20.752,
+     "end": 20.852
+    },
+    {
+     "text": "the",
+     "start": 20.852,
+     "end": 20.932
+    },
+    {
+     "text": "end",
+     "start": 20.932,
+     "end": 21.052
+    },
+    {
+     "text": "of",
+     "start": 21.052,
+     "end": 21.152
+    },
+    {
+     "text": "this",
+     "start": 21.152,
+     "end": 21.272
+    },
+    {
+     "text": "video",
+     "start": 21.272,
+     "end": 21.512
+    },
+    {
+     "text": "you'll",
+     "start": 21.612,
+     "end": 21.732
+    },
+    {
+     "text": "know",
+     "start": 21.732,
+     "end": 21.852
+    },
+    {
+     "text": "the",
+     "start": 21.852,
+     "end": 21.972
+    },
+    {
+     "text": "three",
+     "start": 21.972,
+     "end": 22.152
+    },
+    {
+     "text": "step",
+     "start": 22.152,
+     "end": 22.352
+    },
+    {
+     "text": "trick",
+     "start": 22.352,
+     "end": 22.592
+    },
+    {
+     "text": "the",
+     "start": 22.592,
+     "end": 22.812
+    },
+    {
+     "text": "richest",
+     "start": 22.812,
+     "end": 22.952
+    },
+    {
+     "text": "people",
+     "start": 22.952,
+     "end": 23.212
+    },
+    {
+     "text": "in",
+     "start": 23.212,
+     "end": 23.432
+    },
+    {
+     "text": "the",
+     "start": 23.432,
+     "end": 23.512
+    },
+    {
+     "text": "world",
+     "start": 23.512,
+     "end": 23.672
+    },
+    {
+     "text": "use",
+     "start": 23.672,
+     "end": 23.912
+    },
+    {
+     "text": "and",
+     "start": 23.912,
+     "end": 24.412
+    },
+    {
+     "text": "the",
+     "start": 24.412,
+     "end": 24.532
+    },
+    {
+     "text": "one",
+     "start": 24.532,
+     "end": 24.632
+    },
+    {
+     "text": "piece",
+     "start": 24.632,
+     "end": 24.832
+    },
+    {
+     "text": "of",
+     "start": 24.832,
+     "end": 24.992
+    },
+    {
+     "text": "it",
+     "start": 24.992,
+     "end": 25.112
+    },
+    {
+     "text": "you",
+     "start": 25.112,
+     "end": 25.192
+    },
+    {
+     "text": "can",
+     "start": 25.192,
+     "end": 25.312
+    },
+    {
+     "text": "steal",
+     "start": 25.312,
+     "end": 25.492
+    },
+    {
+     "text": "for",
+     "start": 25.492,
+     "end": 25.652
+    },
+    {
+     "text": "yourself.",
+     "start": 25.652,
+     "end": 25.972
+    }
+   ]
+  },
+  {
+   "id": "o6",
+   "text": "But most people click away before that part which is exactly why the trick keeps working.",
+   "start": 26.3275625,
+   "end": 29.4675625,
+   "words": [
+    {
+     "text": "But",
+     "start": 26.328,
+     "end": 26.408
+    },
+    {
+     "text": "most",
+     "start": 26.408,
+     "end": 26.568
+    },
+    {
+     "text": "people",
+     "start": 26.568,
+     "end": 26.768
+    },
+    {
+     "text": "click",
+     "start": 26.768,
+     "end": 26.988
+    },
+    {
+     "text": "away",
+     "start": 26.988,
+     "end": 27.188
+    },
+    {
+     "text": "before",
+     "start": 27.188,
+     "end": 27.428
+    },
+    {
+     "text": "that",
+     "start": 27.428,
+     "end": 27.628
+    },
+    {
+     "text": "part",
+     "start": 27.628,
+     "end": 27.848
+    },
+    {
+     "text": "which",
+     "start": 27.988,
+     "end": 28.028
+    },
+    {
+     "text": "is",
+     "start": 28.028,
+     "end": 28.148
+    },
+    {
+     "text": "exactly",
+     "start": 28.148,
+     "end": 28.408
+    },
+    {
+     "text": "why",
+     "start": 28.408,
+     "end": 28.688
+    },
+    {
+     "text": "the",
+     "start": 28.688,
+     "end": 28.808
+    },
+    {
+     "text": "trick",
+     "start": 28.808,
+     "end": 28.948
+    },
+    {
+     "text": "keeps",
+     "start": 28.948,
+     "end": 29.168
+    },
+    {
+     "text": "working.",
+     "start": 29.168,
+     "end": 29.468
+    }
+   ]
+  },
+  {
+   "id": "c1a",
+   "text": "So first let me show you how I pay tax. It's very simple. I don't get a choice.",
+   "start": 32.2400625,
+   "end": 36.0000625,
+   "words": [
+    {
+     "text": "So",
+     "start": 32.24,
+     "end": 32.38
+    },
+    {
+     "text": "first",
+     "start": 32.38,
+     "end": 32.78
+    },
+    {
+     "text": "let",
+     "start": 33.1,
+     "end": 33.16
+    },
+    {
+     "text": "me",
+     "start": 33.16,
+     "end": 33.28
+    },
+    {
+     "text": "show",
+     "start": 33.28,
+     "end": 33.46
+    },
+    {
+     "text": "you",
+     "start": 33.46,
+     "end": 33.56
+    },
+    {
+     "text": "how",
+     "start": 33.56,
+     "end": 33.74
+    },
+    {
+     "text": "I",
+     "start": 33.74,
+     "end": 33.86
+    },
+    {
+     "text": "pay",
+     "start": 33.86,
+     "end": 33.98
+    },
+    {
+     "text": "tax.",
+     "start": 33.98,
+     "end": 34.28
+    },
+    {
+     "text": "It's",
+     "start": 34.62,
+     "end": 34.72
+    },
+    {
+     "text": "very",
+     "start": 34.72,
+     "end": 34.82
+    },
+    {
+     "text": "simple.",
+     "start": 34.82,
+     "end": 35.18
+    },
+    {
+     "text": "I",
+     "start": 35.52,
+     "end": 35.6
+    },
+    {
+     "text": "don't",
+     "start": 35.6,
+     "end": 35.74
+    },
+    {
+     "text": "get",
+     "start": 35.74,
+     "end": 35.8
+    },
+    {
+     "text": "a",
+     "start": 35.8,
+     "end": 35.88
+    },
+    {
+     "text": "choice.",
+     "start": 35.88,
+     "end": 36.0
+    }
+   ]
+  },
+  {
+   "id": "c1b",
+   "text": "Every two weeks my boss pays me. And before the money lands in my account the government takes its slice. Automatically.",
+   "start": 36.62441666666667,
+   "end": 41.88441666666667,
+   "words": [
+    {
+     "text": "Every",
+     "start": 36.624,
+     "end": 36.764
+    },
+    {
+     "text": "two",
+     "start": 36.764,
+     "end": 36.964
+    },
+    {
+     "text": "weeks",
+     "start": 36.964,
+     "end": 37.124
+    },
+    {
+     "text": "my",
+     "start": 37.124,
+     "end": 37.344
+    },
+    {
+     "text": "boss",
+     "start": 37.344,
+     "end": 37.564
+    },
+    {
+     "text": "pays",
+     "start": 37.564,
+     "end": 37.784
+    },
+    {
+     "text": "me.",
+     "start": 37.784,
+     "end": 38.004
+    },
+    {
+     "text": "And",
+     "start": 38.444,
+     "end": 38.564
+    },
+    {
+     "text": "before",
+     "start": 38.564,
+     "end": 38.804
+    },
+    {
+     "text": "the",
+     "start": 38.804,
+     "end": 38.944
+    },
+    {
+     "text": "money",
+     "start": 38.944,
+     "end": 39.084
+    },
+    {
+     "text": "lands",
+     "start": 39.084,
+     "end": 39.344
+    },
+    {
+     "text": "in",
+     "start": 39.344,
+     "end": 39.544
+    },
+    {
+     "text": "my",
+     "start": 39.544,
+     "end": 39.664
+    },
+    {
+     "text": "account",
+     "start": 39.664,
+     "end": 40.004
+    },
+    {
+     "text": "the",
+     "start": 40.204,
+     "end": 40.224
+    },
+    {
+     "text": "government",
+     "start": 40.224,
+     "end": 40.404
+    },
+    {
+     "text": "takes",
+     "start": 40.404,
+     "end": 40.704
+    },
+    {
+     "text": "its",
+     "start": 40.704,
+     "end": 40.904
+    },
+    {
+     "text": "slice.",
+     "start": 40.904,
+     "end": 41.104
+    },
+    {
+     "text": "Automatically.",
+     "start": 41.104,
+     "end": 41.884
+    }
+   ]
+  },
+  {
+   "id": "n21",
+   "text": "I don't get a vote. I don't get a wait and see. I don't even get a notification. It's just gone.",
+   "start": 42.852125,
+   "end": 46.672125,
+   "words": [
+    {
+     "text": "I",
+     "start": 42.852,
+     "end": 42.932
+    },
+    {
+     "text": "don't",
+     "start": 42.932,
+     "end": 43.092
+    },
+    {
+     "text": "get",
+     "start": 43.092,
+     "end": 43.192
+    },
+    {
+     "text": "a",
+     "start": 43.192,
+     "end": 43.252
+    },
+    {
+     "text": "vote.",
+     "start": 43.252,
+     "end": 43.432
+    },
+    {
+     "text": "I",
+     "start": 43.832,
+     "end": 43.852
+    },
+    {
+     "text": "don't",
+     "start": 43.852,
+     "end": 43.992
+    },
+    {
+     "text": "get",
+     "start": 43.992,
+     "end": 44.092
+    },
+    {
+     "text": "a",
+     "start": 44.092,
+     "end": 44.152
+    },
+    {
+     "text": "wait",
+     "start": 44.152,
+     "end": 44.272
+    },
+    {
+     "text": "and",
+     "start": 44.272,
+     "end": 44.372
+    },
+    {
+     "text": "see.",
+     "start": 44.372,
+     "end": 44.572
+    },
+    {
+     "text": "I",
+     "start": 44.872,
+     "end": 44.912
+    },
+    {
+     "text": "don't",
+     "start": 44.912,
+     "end": 45.072
+    },
+    {
+     "text": "even",
+     "start": 45.072,
+     "end": 45.112
+    },
+    {
+     "text": "get",
+     "start": 45.112,
+     "end": 45.252
+    },
+    {
+     "text": "a",
+     "start": 45.252,
+     "end": 45.332
+    },
+    {
+     "text": "notification.",
+     "start": 45.332,
+     "end": 45.632
+    },
+    {
+     "text": "It's",
+     "start": 46.252,
+     "end": 46.372
+    },
+    {
+     "text": "just",
+     "start": 46.372,
+     "end": 46.452
+    },
+    {
+     "text": "gone.",
+     "start": 46.452,
+     "end": 46.672
+    }
+   ]
+  },
+  {
+   "id": "n1",
+   "text": "It's like ordering a pizza and the delivery guy eats two slices in the car and hands you the box like nothing happened.",
+   "start": 47.40558333333333,
+   "end": 52.74558333333333,
+   "words": [
+    {
+     "text": "It's",
+     "start": 47.406,
+     "end": 47.566
+    },
+    {
+     "text": "like",
+     "start": 47.566,
+     "end": 47.666
+    },
+    {
+     "text": "ordering",
+     "start": 47.666,
+     "end": 48.026
+    },
+    {
+     "text": "a",
+     "start": 48.026,
+     "end": 48.206
+    },
+    {
+     "text": "pizza",
+     "start": 48.206,
+     "end": 48.446
+    },
+    {
+     "text": "and",
+     "start": 48.446,
+     "end": 48.906
+    },
+    {
+     "text": "the",
+     "start": 48.906,
+     "end": 49.086
+    },
+    {
+     "text": "delivery",
+     "start": 49.086,
+     "end": 49.306
+    },
+    {
+     "text": "guy",
+     "start": 49.306,
+     "end": 49.666
+    },
+    {
+     "text": "eats",
+     "start": 49.666,
+     "end": 49.886
+    },
+    {
+     "text": "two",
+     "start": 49.886,
+     "end": 50.106
+    },
+    {
+     "text": "slices",
+     "start": 50.106,
+     "end": 50.346
+    },
+    {
+     "text": "in",
+     "start": 50.346,
+     "end": 50.626
+    },
+    {
+     "text": "the",
+     "start": 50.626,
+     "end": 50.706
+    },
+    {
+     "text": "car",
+     "start": 50.706,
+     "end": 50.906
+    },
+    {
+     "text": "and",
+     "start": 50.906,
+     "end": 51.186
+    },
+    {
+     "text": "hands",
+     "start": 51.186,
+     "end": 51.386
+    },
+    {
+     "text": "you",
+     "start": 51.386,
+     "end": 51.546
+    },
+    {
+     "text": "the",
+     "start": 51.546,
+     "end": 51.626
+    },
+    {
+     "text": "box",
+     "start": 51.626,
+     "end": 51.846
+    },
+    {
+     "text": "like",
+     "start": 51.846,
+     "end": 52.126
+    },
+    {
+     "text": "nothing",
+     "start": 52.126,
+     "end": 52.386
+    },
+    {
+     "text": "happened.",
+     "start": 52.386,
+     "end": 52.746
+    }
+   ]
+  },
+  {
+   "id": "n2",
+   "text": "Me opening my first paycheck ever.",
+   "start": 53.38695833333333,
+   "end": 55.14695833333333,
+   "words": [
+    {
+     "text": "Me",
+     "start": 53.387,
+     "end": 53.547
+    },
+    {
+     "text": "opening",
+     "start": 53.547,
+     "end": 53.847
+    },
+    {
+     "text": "my",
+     "start": 53.847,
+     "end": 54.027
+    },
+    {
+     "text": "first",
+     "start": 54.027,
+     "end": 54.207
+    },
+    {
+     "text": "paycheck",
+     "start": 54.207,
+     "end": 54.567
+    },
+    {
+     "text": "ever.",
+     "start": 54.567,
+     "end": 55.147
+    }
+   ]
+  },
+  {
+   "id": "c1d",
+   "text": "Why does it happen so fast? Because my money is a salary. And a salary is income. And income gets taxed right away.",
+   "start": 55.78879166666667,
+   "end": 62.14879166666667,
+   "words": [
+    {
+     "text": "Why",
+     "start": 55.789,
+     "end": 55.989
+    },
+    {
+     "text": "does",
+     "start": 55.989,
+     "end": 56.109
+    },
+    {
+     "text": "it",
+     "start": 56.109,
+     "end": 56.209
+    },
+    {
+     "text": "happen",
+     "start": 56.209,
+     "end": 56.349
+    },
+    {
+     "text": "so",
+     "start": 56.349,
+     "end": 56.609
+    },
+    {
+     "text": "fast?",
+     "start": 56.609,
+     "end": 56.869
+    },
+    {
+     "text": "Because",
+     "start": 57.589,
+     "end": 57.589
+    },
+    {
+     "text": "my",
+     "start": 57.589,
+     "end": 57.789
+    },
+    {
+     "text": "money",
+     "start": 57.789,
+     "end": 58.029
+    },
+    {
+     "text": "is",
+     "start": 58.029,
+     "end": 58.249
+    },
+    {
+     "text": "a",
+     "start": 58.249,
+     "end": 58.309
+    },
+    {
+     "text": "salary.",
+     "start": 58.309,
+     "end": 58.629
+    },
+    {
+     "text": "And",
+     "start": 59.109,
+     "end": 59.149
+    },
+    {
+     "text": "a",
+     "start": 59.149,
+     "end": 59.249
+    },
+    {
+     "text": "salary",
+     "start": 59.249,
+     "end": 59.509
+    },
+    {
+     "text": "is",
+     "start": 59.509,
+     "end": 59.849
+    },
+    {
+     "text": "income.",
+     "start": 59.849,
+     "end": 60.129
+    },
+    {
+     "text": "And",
+     "start": 60.669,
+     "end": 60.789
+    },
+    {
+     "text": "income",
+     "start": 60.789,
+     "end": 61.089
+    },
+    {
+     "text": "gets",
+     "start": 61.089,
+     "end": 61.349
+    },
+    {
+     "text": "taxed",
+     "start": 61.349,
+     "end": 61.529
+    },
+    {
+     "text": "right",
+     "start": 61.529,
+     "end": 61.909
+    },
+    {
+     "text": "away.",
+     "start": 61.909,
+     "end": 62.149
+    }
+   ]
+  },
+  {
+   "id": "c1e",
+   "text": "Remember that word. Income. Because the whole trick is about never having any.",
+   "start": 62.8406875,
+   "end": 66.8206875,
+   "words": [
+    {
+     "text": "Remember",
+     "start": 62.841,
+     "end": 63.001
+    },
+    {
+     "text": "that",
+     "start": 63.001,
+     "end": 63.261
+    },
+    {
+     "text": "word.",
+     "start": 63.261,
+     "end": 63.461
+    },
+    {
+     "text": "Income.",
+     "start": 63.801,
+     "end": 64.061
+    },
+    {
+     "text": "Because",
+     "start": 64.641,
+     "end": 64.881
+    },
+    {
+     "text": "the",
+     "start": 64.881,
+     "end": 65.041
+    },
+    {
+     "text": "whole",
+     "start": 65.041,
+     "end": 65.181
+    },
+    {
+     "text": "trick",
+     "start": 65.181,
+     "end": 65.501
+    },
+    {
+     "text": "is",
+     "start": 65.501,
+     "end": 65.721
+    },
+    {
+     "text": "about",
+     "start": 65.721,
+     "end": 65.881
+    },
+    {
+     "text": "never",
+     "start": 65.881,
+     "end": 66.181
+    },
+    {
+     "text": "having",
+     "start": 66.181,
+     "end": 66.561
+    },
+    {
+     "text": "any.",
+     "start": 66.561,
+     "end": 66.821
+    }
+   ]
+  },
+  {
+   "id": "c1f",
+   "text": "Every year thousands of my dollars leave before they arrive. Money I worked for but never touched.",
+   "start": 67.44789583333333,
+   "end": 71.98789583333334,
+   "words": [
+    {
+     "text": "Every",
+     "start": 67.448,
+     "end": 67.668
+    },
+    {
+     "text": "year",
+     "start": 67.668,
+     "end": 67.848
+    },
+    {
+     "text": "thousands",
+     "start": 68.008,
+     "end": 68.248
+    },
+    {
+     "text": "of",
+     "start": 68.248,
+     "end": 68.468
+    },
+    {
+     "text": "my",
+     "start": 68.468,
+     "end": 68.568
+    },
+    {
+     "text": "dollars",
+     "start": 68.568,
+     "end": 68.808
+    },
+    {
+     "text": "leave",
+     "start": 68.808,
+     "end": 69.148
+    },
+    {
+     "text": "before",
+     "start": 69.148,
+     "end": 69.508
+    },
+    {
+     "text": "they",
+     "start": 69.508,
+     "end": 69.668
+    },
+    {
+     "text": "arrive.",
+     "start": 69.668,
+     "end": 69.888
+    },
+    {
+     "text": "Money",
+     "start": 70.568,
+     "end": 70.688
+    },
+    {
+     "text": "I",
+     "start": 70.688,
+     "end": 70.868
+    },
+    {
+     "text": "worked",
+     "start": 70.868,
+     "end": 71.068
+    },
+    {
+     "text": "for",
+     "start": 71.068,
+     "end": 71.308
+    },
+    {
+     "text": "but",
+     "start": 71.308,
+     "end": 71.508
+    },
+    {
+     "text": "never",
+     "start": 71.508,
+     "end": 71.688
+    },
+    {
+     "text": "touched.",
+     "start": 71.688,
+     "end": 71.988
+    }
+   ]
+  },
+  {
+   "id": "n22",
+   "text": "And if I'm late paying taxes? Letters. Fees. Scary envelopes with my name in capital letters.",
+   "start": 72.69929166666667,
+   "end": 78.35929166666666,
+   "words": [
+    {
+     "text": "And",
+     "start": 72.699,
+     "end": 72.979
+    },
+    {
+     "text": "if",
+     "start": 72.999,
+     "end": 73.179
+    },
+    {
+     "text": "I'm",
+     "start": 73.179,
+     "end": 73.299
+    },
+    {
+     "text": "late",
+     "start": 73.299,
+     "end": 73.439
+    },
+    {
+     "text": "paying",
+     "start": 73.439,
+     "end": 73.619
+    },
+    {
+     "text": "taxes?",
+     "start": 73.619,
+     "end": 74.039
+    },
+    {
+     "text": "Letters.",
+     "start": 74.579,
+     "end": 74.839
+    },
+    {
+     "text": "Fees.",
+     "start": 75.419,
+     "end": 75.719
+    },
+    {
+     "text": "Scary",
+     "start": 76.299,
+     "end": 76.579
+    },
+    {
+     "text": "envelopes",
+     "start": 76.579,
+     "end": 77.179
+    },
+    {
+     "text": "with",
+     "start": 77.179,
+     "end": 77.259
+    },
+    {
+     "text": "my",
+     "start": 77.259,
+     "end": 77.399
+    },
+    {
+     "text": "name",
+     "start": 77.399,
+     "end": 77.579
+    },
+    {
+     "text": "in",
+     "start": 77.579,
+     "end": 77.759
+    },
+    {
+     "text": "capital",
+     "start": 77.759,
+     "end": 77.979
+    },
+    {
+     "text": "letters.",
+     "start": 77.979,
+     "end": 78.359
+    }
+   ]
+  },
+  {
+   "id": "c2a",
+   "text": "Now Richie. Richie started a company and he owns a giant pile of its shares.",
+   "start": 81.34533333333333,
+   "end": 85.16533333333332,
+   "words": [
+    {
+     "text": "Now",
+     "start": 81.345,
+     "end": 81.505
+    },
+    {
+     "text": "Richie.",
+     "start": 81.505,
+     "end": 81.685
+    },
+    {
+     "text": "Richie",
+     "start": 82.505,
+     "end": 82.505
+    },
+    {
+     "text": "started",
+     "start": 82.505,
+     "end": 82.685
+    },
+    {
+     "text": "a",
+     "start": 82.685,
+     "end": 82.885
+    },
+    {
+     "text": "company",
+     "start": 82.885,
+     "end": 83.185
+    },
+    {
+     "text": "and",
+     "start": 83.185,
+     "end": 83.485
+    },
+    {
+     "text": "he",
+     "start": 83.485,
+     "end": 83.625
+    },
+    {
+     "text": "owns",
+     "start": 83.625,
+     "end": 83.845
+    },
+    {
+     "text": "a",
+     "start": 83.845,
+     "end": 84.065
+    },
+    {
+     "text": "giant",
+     "start": 84.065,
+     "end": 84.225
+    },
+    {
+     "text": "pile",
+     "start": 84.225,
+     "end": 84.505
+    },
+    {
+     "text": "of",
+     "start": 84.505,
+     "end": 84.805
+    },
+    {
+     "text": "its",
+     "start": 84.805,
+     "end": 84.905
+    },
+    {
+     "text": "shares.",
+     "start": 84.905,
+     "end": 85.165
+    }
+   ]
+  },
+  {
+   "id": "c2b",
+   "text": "And Richie's salary? One dollar a year. Some famous billionaires really do this.",
+   "start": 85.96072916666667,
+   "end": 89.83172916666666,
+   "words": [
+    {
+     "text": "And",
+     "start": 85.961,
+     "end": 86.134
+    },
+    {
+     "text": "Richie's",
+     "start": 86.154,
+     "end": 86.544
+    },
+    {
+     "text": "salary?",
+     "start": 86.587,
+     "end": 86.934
+    },
+    {
+     "text": "One",
+     "start": 86.972,
+     "end": 87.145
+    },
+    {
+     "text": "dollar",
+     "start": 87.165,
+     "end": 87.468
+    },
+    {
+     "text": "a",
+     "start": 87.502,
+     "end": 87.588
+    },
+    {
+     "text": "year.",
+     "start": 87.598,
+     "end": 87.858
+    },
+    {
+     "text": "Some",
+     "start": 87.887,
+     "end": 88.104
+    },
+    {
+     "text": "famous",
+     "start": 88.128,
+     "end": 88.431
+    },
+    {
+     "text": "billionaires",
+     "start": 88.465,
+     "end": 89.028
+    },
+    {
+     "text": "really",
+     "start": 89.091,
+     "end": 89.394
+    },
+    {
+     "text": "do",
+     "start": 89.428,
+     "end": 89.558
+    },
+    {
+     "text": "this.",
+     "start": 89.572,
+     "end": 89.832
+    }
+   ]
+  },
+  {
+   "id": "n3",
+   "text": "Richie when the tax office asks about his income.",
+   "start": 90.5545625,
+   "end": 92.8545625,
+   "words": [
+    {
+     "text": "Richie",
+     "start": 90.555,
+     "end": 90.815
+    },
+    {
+     "text": "when",
+     "start": 91.075,
+     "end": 91.175
+    },
+    {
+     "text": "the",
+     "start": 91.175,
+     "end": 91.275
+    },
+    {
+     "text": "tax",
+     "start": 91.275,
+     "end": 91.435
+    },
+    {
+     "text": "office",
+     "start": 91.435,
+     "end": 91.795
+    },
+    {
+     "text": "asks",
+     "start": 91.795,
+     "end": 92.095
+    },
+    {
+     "text": "about",
+     "start": 92.095,
+     "end": 92.395
+    },
+    {
+     "text": "his",
+     "start": 92.395,
+     "end": 92.575
+    },
+    {
+     "text": "income.",
+     "start": 92.575,
+     "end": 92.855
+    }
+   ]
+  },
+  {
+   "id": "c2c",
+   "text": "This year his company does great. His shares go up by a billion dollars. He's a billion dollars richer.",
+   "start": 93.62822916666667,
+   "end": 98.18822916666667,
+   "words": [
+    {
+     "text": "This",
+     "start": 93.628,
+     "end": 93.768
+    },
+    {
+     "text": "year",
+     "start": 93.768,
+     "end": 93.988
+    },
+    {
+     "text": "his",
+     "start": 93.988,
+     "end": 94.188
+    },
+    {
+     "text": "company",
+     "start": 94.188,
+     "end": 94.488
+    },
+    {
+     "text": "does",
+     "start": 94.488,
+     "end": 94.708
+    },
+    {
+     "text": "great.",
+     "start": 94.708,
+     "end": 94.948
+    },
+    {
+     "text": "His",
+     "start": 95.348,
+     "end": 95.468
+    },
+    {
+     "text": "shares",
+     "start": 95.468,
+     "end": 95.688
+    },
+    {
+     "text": "go",
+     "start": 95.688,
+     "end": 95.968
+    },
+    {
+     "text": "up",
+     "start": 95.968,
+     "end": 96.108
+    },
+    {
+     "text": "by",
+     "start": 96.108,
+     "end": 96.268
+    },
+    {
+     "text": "a",
+     "start": 96.268,
+     "end": 96.348
+    },
+    {
+     "text": "billion",
+     "start": 96.348,
+     "end": 96.528
+    },
+    {
+     "text": "dollars.",
+     "start": 96.528,
+     "end": 96.968
+    },
+    {
+     "text": "He's",
+     "start": 97.248,
+     "end": 97.408
+    },
+    {
+     "text": "a",
+     "start": 97.408,
+     "end": 97.468
+    },
+    {
+     "text": "billion",
+     "start": 97.468,
+     "end": 97.628
+    },
+    {
+     "text": "dollars",
+     "start": 97.628,
+     "end": 97.948
+    },
+    {
+     "text": "richer.",
+     "start": 97.948,
+     "end": 98.188
+    }
+   ]
+  },
+  {
+   "id": "n23",
+   "text": "He didn't work extra. He didn't even go to the office. He literally got richer while eating breakfast.",
+   "start": 98.92608333333334,
+   "end": 102.72608333333334,
+   "words": [
+    {
+     "text": "He",
+     "start": 98.926,
+     "end": 99.006
+    },
+    {
+     "text": "didn't",
+     "start": 99.006,
+     "end": 99.186
+    },
+    {
+     "text": "work",
+     "start": 99.186,
+     "end": 99.306
+    },
+    {
+     "text": "extra.",
+     "start": 99.306,
+     "end": 99.686
+    },
+    {
+     "text": "He",
+     "start": 99.966,
+     "end": 100.006
+    },
+    {
+     "text": "didn't",
+     "start": 100.006,
+     "end": 100.206
+    },
+    {
+     "text": "even",
+     "start": 100.206,
+     "end": 100.306
+    },
+    {
+     "text": "go",
+     "start": 100.306,
+     "end": 100.466
+    },
+    {
+     "text": "to",
+     "start": 100.466,
+     "end": 100.546
+    },
+    {
+     "text": "the",
+     "start": 100.546,
+     "end": 100.626
+    },
+    {
+     "text": "office.",
+     "start": 100.626,
+     "end": 100.946
+    },
+    {
+     "text": "He",
+     "start": 101.246,
+     "end": 101.266
+    },
+    {
+     "text": "literally",
+     "start": 101.266,
+     "end": 101.446
+    },
+    {
+     "text": "got",
+     "start": 101.446,
+     "end": 101.766
+    },
+    {
+     "text": "richer",
+     "start": 101.766,
+     "end": 101.926
+    },
+    {
+     "text": "while",
+     "start": 101.926,
+     "end": 102.226
+    },
+    {
+     "text": "eating",
+     "start": 102.226,
+     "end": 102.366
+    },
+    {
+     "text": "breakfast.",
+     "start": 102.366,
+     "end": 102.726
+    }
+   ]
+  },
+  {
+   "id": "c2d",
+   "text": "And the tax on that billion? Zero.",
+   "start": 103.61289583333334,
+   "end": 105.49289583333334,
+   "words": [
+    {
+     "text": "And",
+     "start": 103.613,
+     "end": 103.973
+    },
+    {
+     "text": "the",
+     "start": 103.973,
+     "end": 104.093
+    },
+    {
+     "text": "tax",
+     "start": 104.093,
+     "end": 104.233
+    },
+    {
+     "text": "on",
+     "start": 104.233,
+     "end": 104.413
+    },
+    {
+     "text": "that",
+     "start": 104.413,
+     "end": 104.533
+    },
+    {
+     "text": "billion?",
+     "start": 104.533,
+     "end": 104.753
+    },
+    {
+     "text": "Zero.",
+     "start": 105.193,
+     "end": 105.493
+    }
+   ]
+  },
+  {
+   "id": "c2e",
+   "text": "Because that billion isn't income yet. It's a gain on paper. It only gets taxed when he sells.",
+   "start": 106.20702083333333,
+   "end": 110.38702083333334,
+   "words": [
+    {
+     "text": "Because",
+     "start": 106.207,
+     "end": 106.407
+    },
+    {
+     "text": "that",
+     "start": 106.407,
+     "end": 106.567
+    },
+    {
+     "text": "billion",
+     "start": 106.567,
+     "end": 106.827
+    },
+    {
+     "text": "isn't",
+     "start": 106.827,
+     "end": 107.247
+    },
+    {
+     "text": "income",
+     "start": 107.247,
+     "end": 107.507
+    },
+    {
+     "text": "yet.",
+     "start": 107.507,
+     "end": 107.827
+    },
+    {
+     "text": "It's",
+     "start": 108.147,
+     "end": 108.307
+    },
+    {
+     "text": "a",
+     "start": 108.307,
+     "end": 108.367
+    },
+    {
+     "text": "gain",
+     "start": 108.367,
+     "end": 108.487
+    },
+    {
+     "text": "on",
+     "start": 108.487,
+     "end": 108.627
+    },
+    {
+     "text": "paper.",
+     "start": 108.627,
+     "end": 108.927
+    },
+    {
+     "text": "It",
+     "start": 109.247,
+     "end": 109.307
+    },
+    {
+     "text": "only",
+     "start": 109.307,
+     "end": 109.407
+    },
+    {
+     "text": "gets",
+     "start": 109.407,
+     "end": 109.627
+    },
+    {
+     "text": "taxed",
+     "start": 109.627,
+     "end": 109.847
+    },
+    {
+     "text": "when",
+     "start": 109.847,
+     "end": 110.107
+    },
+    {
+     "text": "he",
+     "start": 110.107,
+     "end": 110.187
+    },
+    {
+     "text": "sells.",
+     "start": 110.187,
+     "end": 110.387
+    }
+   ]
+  },
+  {
+   "id": "n24",
+   "text": "It's like a video game where you only lose points when you press save. So Richie just never presses save.",
+   "start": 111.16533333333334,
+   "end": 115.14533333333334,
+   "words": [
+    {
+     "text": "It's",
+     "start": 111.165,
+     "end": 111.305
+    },
+    {
+     "text": "like",
+     "start": 111.305,
+     "end": 111.385
+    },
+    {
+     "text": "a",
+     "start": 111.385,
+     "end": 111.505
+    },
+    {
+     "text": "video",
+     "start": 111.505,
+     "end": 111.685
+    },
+    {
+     "text": "game",
+     "start": 111.685,
+     "end": 111.925
+    },
+    {
+     "text": "where",
+     "start": 111.925,
+     "end": 112.105
+    },
+    {
+     "text": "you",
+     "start": 112.105,
+     "end": 112.245
+    },
+    {
+     "text": "only",
+     "start": 112.245,
+     "end": 112.365
+    },
+    {
+     "text": "lose",
+     "start": 112.365,
+     "end": 112.645
+    },
+    {
+     "text": "points",
+     "start": 112.645,
+     "end": 112.845
+    },
+    {
+     "text": "when",
+     "start": 112.845,
+     "end": 113.105
+    },
+    {
+     "text": "you",
+     "start": 113.105,
+     "end": 113.185
+    },
+    {
+     "text": "press",
+     "start": 113.185,
+     "end": 113.325
+    },
+    {
+     "text": "save.",
+     "start": 113.325,
+     "end": 113.625
+    },
+    {
+     "text": "So",
+     "start": 113.905,
+     "end": 114.005
+    },
+    {
+     "text": "Richie",
+     "start": 114.005,
+     "end": 114.145
+    },
+    {
+     "text": "just",
+     "start": 114.145,
+     "end": 114.405
+    },
+    {
+     "text": "never",
+     "start": 114.405,
+     "end": 114.565
+    },
+    {
+     "text": "presses",
+     "start": 114.565,
+     "end": 114.825
+    },
+    {
+     "text": "save.",
+     "start": 114.825,
+     "end": 115.145
+    }
+   ]
+  },
+  {
+   "id": "c2f",
+   "text": "Think of an apple tree. You pay tax on the apples you pick. But the tree can grow and grow and nobody taxes the tree.",
+   "start": 115.73672916666666,
+   "end": 120.83672916666666,
+   "words": [
+    {
+     "text": "Think",
+     "start": 115.737,
+     "end": 115.817
+    },
+    {
+     "text": "of",
+     "start": 115.817,
+     "end": 115.937
+    },
+    {
+     "text": "an",
+     "start": 115.937,
+     "end": 116.037
+    },
+    {
+     "text": "apple",
+     "start": 116.037,
+     "end": 116.157
+    },
+    {
+     "text": "tree.",
+     "start": 116.157,
+     "end": 116.477
+    },
+    {
+     "text": "You",
+     "start": 116.717,
+     "end": 116.837
+    },
+    {
+     "text": "pay",
+     "start": 116.837,
+     "end": 116.977
+    },
+    {
+     "text": "tax",
+     "start": 116.977,
+     "end": 117.157
+    },
+    {
+     "text": "on",
+     "start": 117.157,
+     "end": 117.397
+    },
+    {
+     "text": "the",
+     "start": 117.397,
+     "end": 117.497
+    },
+    {
+     "text": "apples",
+     "start": 117.497,
+     "end": 117.657
+    },
+    {
+     "text": "you",
+     "start": 117.657,
+     "end": 117.837
+    },
+    {
+     "text": "pick.",
+     "start": 117.837,
+     "end": 118.017
+    },
+    {
+     "text": "But",
+     "start": 118.517,
+     "end": 118.557
+    },
+    {
+     "text": "the",
+     "start": 118.557,
+     "end": 118.637
+    },
+    {
+     "text": "tree",
+     "start": 118.637,
+     "end": 118.797
+    },
+    {
+     "text": "can",
+     "start": 118.797,
+     "end": 118.977
+    },
+    {
+     "text": "grow",
+     "start": 118.977,
+     "end": 119.197
+    },
+    {
+     "text": "and",
+     "start": 119.197,
+     "end": 119.457
+    },
+    {
+     "text": "grow",
+     "start": 119.457,
+     "end": 119.637
+    },
+    {
+     "text": "and",
+     "start": 119.637,
+     "end": 119.937
+    },
+    {
+     "text": "nobody",
+     "start": 119.937,
+     "end": 120.097
+    },
+    {
+     "text": "taxes",
+     "start": 120.097,
+     "end": 120.397
+    },
+    {
+     "text": "the",
+     "start": 120.397,
+     "end": 120.677
+    },
+    {
+     "text": "tree.",
+     "start": 120.677,
+     "end": 120.837
+    }
+   ]
+  },
+  {
+   "id": "c2g",
+   "text": "I get paid in apples. Richie owns the tree.",
+   "start": 121.42589583333333,
+   "end": 123.38589583333332,
+   "words": [
+    {
+     "text": "I",
+     "start": 121.426,
+     "end": 121.486
+    },
+    {
+     "text": "get",
+     "start": 121.486,
+     "end": 121.586
+    },
+    {
+     "text": "paid",
+     "start": 121.586,
+     "end": 121.726
+    },
+    {
+     "text": "in",
+     "start": 121.726,
+     "end": 121.886
+    },
+    {
+     "text": "apples.",
+     "start": 121.886,
+     "end": 122.146
+    },
+    {
+     "text": "Richie",
+     "start": 122.566,
+     "end": 122.766
+    },
+    {
+     "text": "owns",
+     "start": 122.766,
+     "end": 123.046
+    },
+    {
+     "text": "the",
+     "start": 123.046,
+     "end": 123.226
+    },
+    {
+     "text": "tree.",
+     "start": 123.226,
+     "end": 123.386
+    }
+   ]
+  },
+  {
+   "id": "n25",
+   "text": "A news investigation once looked at the real tax records of the twenty five richest Americans. Their wealth exploded and their true tax rate came out around three percent.",
+   "start": 124.19104166666666,
+   "end": 131.93004166666665,
+   "words": [
+    {
+     "text": "A",
+     "start": 124.191,
+     "end": 124.272
+    },
+    {
+     "text": "news",
+     "start": 124.281,
+     "end": 124.485
+    },
+    {
+     "text": "investigation",
+     "start": 124.508,
+     "end": 125.078
+    },
+    {
+     "text": "once",
+     "start": 125.141,
+     "end": 125.344
+    },
+    {
+     "text": "looked",
+     "start": 125.367,
+     "end": 125.652
+    },
+    {
+     "text": "at",
+     "start": 125.684,
+     "end": 125.806
+    },
+    {
+     "text": "the",
+     "start": 125.819,
+     "end": 125.982
+    },
+    {
+     "text": "real",
+     "start": 126.0,
+     "end": 126.204
+    },
+    {
+     "text": "tax",
+     "start": 126.226,
+     "end": 126.389
+    },
+    {
+     "text": "records",
+     "start": 126.407,
+     "end": 126.733
+    },
+    {
+     "text": "of",
+     "start": 126.769,
+     "end": 126.891
+    },
+    {
+     "text": "the",
+     "start": 126.905,
+     "end": 127.068
+    },
+    {
+     "text": "twenty",
+     "start": 127.086,
+     "end": 127.371
+    },
+    {
+     "text": "five",
+     "start": 127.403,
+     "end": 127.606
+    },
+    {
+     "text": "richest",
+     "start": 127.629,
+     "end": 127.954
+    },
+    {
+     "text": "Americans.",
+     "start": 127.991,
+     "end": 128.438
+    },
+    {
+     "text": "Their",
+     "start": 128.488,
+     "end": 128.732
+    },
+    {
+     "text": "wealth",
+     "start": 128.759,
+     "end": 129.044
+    },
+    {
+     "text": "exploded",
+     "start": 129.076,
+     "end": 129.442
+    },
+    {
+     "text": "and",
+     "start": 129.483,
+     "end": 129.646
+    },
+    {
+     "text": "their",
+     "start": 129.664,
+     "end": 129.908
+    },
+    {
+     "text": "true",
+     "start": 129.936,
+     "end": 130.139
+    },
+    {
+     "text": "tax",
+     "start": 130.162,
+     "end": 130.325
+    },
+    {
+     "text": "rate",
+     "start": 130.343,
+     "end": 130.546
+    },
+    {
+     "text": "came",
+     "start": 130.569,
+     "end": 130.772
+    },
+    {
+     "text": "out",
+     "start": 130.795,
+     "end": 130.958
+    },
+    {
+     "text": "around",
+     "start": 130.976,
+     "end": 131.261
+    },
+    {
+     "text": "three",
+     "start": 131.293,
+     "end": 131.537
+    },
+    {
+     "text": "percent.",
+     "start": 131.564,
+     "end": 131.93
+    }
+   ]
+  },
+  {
+   "id": "n26",
+   "text": "Three percent. I pay more than that on a sandwich.",
+   "start": 132.48979166666666,
+   "end": 134.46979166666665,
+   "words": [
+    {
+     "text": "Three",
+     "start": 132.49,
+     "end": 132.704
+    },
+    {
+     "text": "percent.",
+     "start": 132.728,
+     "end": 133.048
+    },
+    {
+     "text": "I",
+     "start": 133.084,
+     "end": 133.155
+    },
+    {
+     "text": "pay",
+     "start": 133.163,
+     "end": 133.306
+    },
+    {
+     "text": "more",
+     "start": 133.322,
+     "end": 133.5
+    },
+    {
+     "text": "than",
+     "start": 133.52,
+     "end": 133.698
+    },
+    {
+     "text": "that",
+     "start": 133.718,
+     "end": 133.896
+    },
+    {
+     "text": "on",
+     "start": 133.916,
+     "end": 134.023
+    },
+    {
+     "text": "a",
+     "start": 134.035,
+     "end": 134.106
+    },
+    {
+     "text": "sandwich.",
+     "start": 134.114,
+     "end": 134.47
+    }
+   ]
+  },
+  {
+   "id": "n4",
+   "text": "Me versus Richie.",
+   "start": 135.21764583333334,
+   "end": 135.99764583333334,
+   "words": [
+    {
+     "text": "Me",
+     "start": 135.218,
+     "end": 135.358
+    },
+    {
+     "text": "versus",
+     "start": 135.358,
+     "end": 135.618
+    },
+    {
+     "text": "Richie.",
+     "start": 135.618,
+     "end": 135.998
+    }
+   ]
+  },
+  {
+   "id": "c3a",
+   "text": "So here's the three step trick. Step one. Buy.",
+   "start": 138.82389583333332,
+   "end": 141.7438958333333,
+   "words": [
+    {
+     "text": "So",
+     "start": 138.824,
+     "end": 138.984
+    },
+    {
+     "text": "here's",
+     "start": 139.264,
+     "end": 139.524
+    },
+    {
+     "text": "the",
+     "start": 139.524,
+     "end": 139.624
+    },
+    {
+     "text": "three",
+     "start": 139.624,
+     "end": 139.804
+    },
+    {
+     "text": "step",
+     "start": 139.804,
+     "end": 140.024
+    },
+    {
+     "text": "trick.",
+     "start": 140.024,
+     "end": 140.304
+    },
+    {
+     "text": "Step",
+     "start": 140.824,
+     "end": 140.944
+    },
+    {
+     "text": "one.",
+     "start": 140.944,
+     "end": 141.204
+    },
+    {
+     "text": "Buy.",
+     "start": 141.504,
+     "end": 141.744
+    }
+   ]
+  },
+  {
+   "id": "c3b",
+   "text": "Buy things that grow. Shares. Buildings. Land. Whole companies.",
+   "start": 142.457375,
+   "end": 145.91737500000002,
+   "words": [
+    {
+     "text": "Buy",
+     "start": 142.457,
+     "end": 142.557
+    },
+    {
+     "text": "things",
+     "start": 142.557,
+     "end": 142.737
+    },
+    {
+     "text": "that",
+     "start": 142.737,
+     "end": 142.917
+    },
+    {
+     "text": "grow.",
+     "start": 142.917,
+     "end": 143.117
+    },
+    {
+     "text": "Shares.",
+     "start": 143.477,
+     "end": 143.797
+    },
+    {
+     "text": "Buildings.",
+     "start": 144.177,
+     "end": 144.417
+    },
+    {
+     "text": "Land.",
+     "start": 144.877,
+     "end": 145.057
+    },
+    {
+     "text": "Whole",
+     "start": 145.517,
+     "end": 145.577
+    },
+    {
+     "text": "companies.",
+     "start": 145.577,
+     "end": 145.917
+    }
+   ]
+  },
+  {
+   "id": "c3c",
+   "text": "And then the golden rule. Never sell. Because selling creates income. And income creates tax.",
+   "start": 146.78322916666667,
+   "end": 152.12322916666668,
+   "words": [
+    {
+     "text": "And",
+     "start": 146.783,
+     "end": 146.883
+    },
+    {
+     "text": "then",
+     "start": 146.883,
+     "end": 147.023
+    },
+    {
+     "text": "the",
+     "start": 147.023,
+     "end": 147.223
+    },
+    {
+     "text": "golden",
+     "start": 147.223,
+     "end": 147.383
+    },
+    {
+     "text": "rule.",
+     "start": 147.383,
+     "end": 147.683
+    },
+    {
+     "text": "Never",
+     "start": 148.023,
+     "end": 148.343
+    },
+    {
+     "text": "sell.",
+     "start": 148.343,
+     "end": 148.623
+    },
+    {
+     "text": "Because",
+     "start": 149.103,
+     "end": 149.323
+    },
+    {
+     "text": "selling",
+     "start": 149.323,
+     "end": 149.663
+    },
+    {
+     "text": "creates",
+     "start": 149.663,
+     "end": 149.923
+    },
+    {
+     "text": "income.",
+     "start": 149.923,
+     "end": 150.503
+    },
+    {
+     "text": "And",
+     "start": 150.503,
+     "end": 150.943
+    },
+    {
+     "text": "income",
+     "start": 150.943,
+     "end": 151.283
+    },
+    {
+     "text": "creates",
+     "start": 151.283,
+     "end": 151.743
+    },
+    {
+     "text": "tax.",
+     "start": 151.743,
+     "end": 152.123
+    }
+   ]
+  },
+  {
+   "id": "n27",
+   "text": "Richie treats selling like touching a hot stove. Never. Not even a little.",
+   "start": 152.87902083333333,
+   "end": 156.23902083333334,
+   "words": [
+    {
+     "text": "Richie",
+     "start": 152.879,
+     "end": 153.059
+    },
+    {
+     "text": "treats",
+     "start": 153.059,
+     "end": 153.239
+    },
+    {
+     "text": "selling",
+     "start": 153.239,
+     "end": 153.539
+    },
+    {
+     "text": "like",
+     "start": 153.539,
+     "end": 153.819
+    },
+    {
+     "text": "touching",
+     "start": 153.819,
+     "end": 154.039
+    },
+    {
+     "text": "a",
+     "start": 154.039,
+     "end": 154.219
+    },
+    {
+     "text": "hot",
+     "start": 154.219,
+     "end": 154.319
+    },
+    {
+     "text": "stove.",
+     "start": 154.319,
+     "end": 154.599
+    },
+    {
+     "text": "Never.",
+     "start": 155.019,
+     "end": 155.259
+    },
+    {
+     "text": "Not",
+     "start": 155.659,
+     "end": 155.799
+    },
+    {
+     "text": "even",
+     "start": 155.799,
+     "end": 155.939
+    },
+    {
+     "text": "a",
+     "start": 155.939,
+     "end": 156.059
+    },
+    {
+     "text": "little.",
+     "start": 156.059,
+     "end": 156.239
+    }
+   ]
+  },
+  {
+   "id": "c3e",
+   "text": "But wait. If Richie never sells anything how does he pay for his yacht?",
+   "start": 156.887125,
+   "end": 160.207125,
+   "words": [
+    {
+     "text": "But",
+     "start": 156.887,
+     "end": 156.987
+    },
+    {
+     "text": "wait.",
+     "start": 156.987,
+     "end": 157.127
+    },
+    {
+     "text": "If",
+     "start": 157.787,
+     "end": 157.967
+    },
+    {
+     "text": "Richie",
+     "start": 157.967,
+     "end": 158.047
+    },
+    {
+     "text": "never",
+     "start": 158.047,
+     "end": 158.387
+    },
+    {
+     "text": "sells",
+     "start": 158.387,
+     "end": 158.607
+    },
+    {
+     "text": "anything",
+     "start": 158.607,
+     "end": 158.907
+    },
+    {
+     "text": "how",
+     "start": 159.267,
+     "end": 159.347
+    },
+    {
+     "text": "does",
+     "start": 159.347,
+     "end": 159.447
+    },
+    {
+     "text": "he",
+     "start": 159.447,
+     "end": 159.547
+    },
+    {
+     "text": "pay",
+     "start": 159.547,
+     "end": 159.687
+    },
+    {
+     "text": "for",
+     "start": 159.687,
+     "end": 159.847
+    },
+    {
+     "text": "his",
+     "start": 159.847,
+     "end": 159.967
+    },
+    {
+     "text": "yacht?",
+     "start": 159.967,
+     "end": 160.207
+    }
+   ]
+  },
+  {
+   "id": "c4a",
+   "text": "Step two. Borrow.",
+   "start": 160.97445833333333,
+   "end": 161.81445833333333,
+   "words": [
+    {
+     "text": "Step",
+     "start": 160.974,
+     "end": 161.074
+    },
+    {
+     "text": "two.",
+     "start": 161.074,
+     "end": 161.334
+    },
+    {
+     "text": "Borrow.",
+     "start": 161.614,
+     "end": 161.814
+    }
+   ]
+  },
+  {
+   "id": "c4b",
+   "text": "Richie walks into a bank and says I need fifty million dollars. And here are my shares as a guarantee.",
+   "start": 162.6008125,
+   "end": 167.1718125,
+   "words": [
+    {
+     "text": "Richie",
+     "start": 162.601,
+     "end": 162.884
+    },
+    {
+     "text": "walks",
+     "start": 162.915,
+     "end": 163.157
+    },
+    {
+     "text": "into",
+     "start": 163.184,
+     "end": 163.386
+    },
+    {
+     "text": "a",
+     "start": 163.408,
+     "end": 163.489
+    },
+    {
+     "text": "bank",
+     "start": 163.498,
+     "end": 163.7
+    },
+    {
+     "text": "and",
+     "start": 163.722,
+     "end": 163.884
+    },
+    {
+     "text": "says",
+     "start": 163.902,
+     "end": 164.104
+    },
+    {
+     "text": "I",
+     "start": 164.126,
+     "end": 164.207
+    },
+    {
+     "text": "need",
+     "start": 164.216,
+     "end": 164.418
+    },
+    {
+     "text": "fifty",
+     "start": 164.44,
+     "end": 164.682
+    },
+    {
+     "text": "million",
+     "start": 164.709,
+     "end": 165.032
+    },
+    {
+     "text": "dollars.",
+     "start": 165.068,
+     "end": 165.431
+    },
+    {
+     "text": "And",
+     "start": 165.472,
+     "end": 165.633
+    },
+    {
+     "text": "here",
+     "start": 165.651,
+     "end": 165.853
+    },
+    {
+     "text": "are",
+     "start": 165.875,
+     "end": 166.037
+    },
+    {
+     "text": "my",
+     "start": 166.055,
+     "end": 166.176
+    },
+    {
+     "text": "shares",
+     "start": 166.189,
+     "end": 166.472
+    },
+    {
+     "text": "as",
+     "start": 166.503,
+     "end": 166.624
+    },
+    {
+     "text": "a",
+     "start": 166.638,
+     "end": 166.719
+    },
+    {
+     "text": "guarantee.",
+     "start": 166.728,
+     "end": 167.172
+    }
+   ]
+  },
+  {
+   "id": "c4c",
+   "text": "The bank loves him. His shares are worth billions. So they hand him the loan with a big smile and a low interest rate.",
+   "start": 168.07327083333334,
+   "end": 173.01327083333334,
+   "words": [
+    {
+     "text": "The",
+     "start": 168.073,
+     "end": 168.173
+    },
+    {
+     "text": "bank",
+     "start": 168.173,
+     "end": 168.293
+    },
+    {
+     "text": "loves",
+     "start": 168.293,
+     "end": 168.533
+    },
+    {
+     "text": "him.",
+     "start": 168.533,
+     "end": 168.793
+    },
+    {
+     "text": "His",
+     "start": 169.053,
+     "end": 169.133
+    },
+    {
+     "text": "shares",
+     "start": 169.133,
+     "end": 169.313
+    },
+    {
+     "text": "are",
+     "start": 169.313,
+     "end": 169.493
+    },
+    {
+     "text": "worth",
+     "start": 169.493,
+     "end": 169.633
+    },
+    {
+     "text": "billions.",
+     "start": 169.633,
+     "end": 169.993
+    },
+    {
+     "text": "So",
+     "start": 169.993,
+     "end": 170.433
+    },
+    {
+     "text": "they",
+     "start": 170.433,
+     "end": 170.553
+    },
+    {
+     "text": "hand",
+     "start": 170.553,
+     "end": 170.733
+    },
+    {
+     "text": "him",
+     "start": 170.733,
+     "end": 170.893
+    },
+    {
+     "text": "the",
+     "start": 170.893,
+     "end": 171.013
+    },
+    {
+     "text": "loan",
+     "start": 171.013,
+     "end": 171.173
+    },
+    {
+     "text": "with",
+     "start": 171.173,
+     "end": 171.373
+    },
+    {
+     "text": "a",
+     "start": 171.373,
+     "end": 171.433
+    },
+    {
+     "text": "big",
+     "start": 171.433,
+     "end": 171.593
+    },
+    {
+     "text": "smile",
+     "start": 171.593,
+     "end": 171.893
+    },
+    {
+     "text": "and",
+     "start": 171.893,
+     "end": 172.213
+    },
+    {
+     "text": "a",
+     "start": 172.213,
+     "end": 172.313
+    },
+    {
+     "text": "low",
+     "start": 172.313,
+     "end": 172.433
+    },
+    {
+     "text": "interest",
+     "start": 172.433,
+     "end": 172.733
+    },
+    {
+     "text": "rate.",
+     "start": 172.733,
+     "end": 173.013
+    }
+   ]
+  },
+  {
+   "id": "n28",
+   "text": "Meanwhile when I ask for a loan they want my last three paychecks and my blood type and the name of my first pet.",
+   "start": 173.67479166666666,
+   "end": 178.07479166666667,
+   "words": [
+    {
+     "text": "Meanwhile",
+     "start": 173.675,
+     "end": 173.935
+    },
+    {
+     "text": "when",
+     "start": 174.215,
+     "end": 174.255
+    },
+    {
+     "text": "I",
+     "start": 174.255,
+     "end": 174.315
+    },
+    {
+     "text": "ask",
+     "start": 174.315,
+     "end": 174.535
+    },
+    {
+     "text": "for",
+     "start": 174.535,
+     "end": 174.695
+    },
+    {
+     "text": "a",
+     "start": 174.695,
+     "end": 174.775
+    },
+    {
+     "text": "loan",
+     "start": 174.775,
+     "end": 174.995
+    },
+    {
+     "text": "they",
+     "start": 175.235,
+     "end": 175.275
+    },
+    {
+     "text": "want",
+     "start": 175.275,
+     "end": 175.415
+    },
+    {
+     "text": "my",
+     "start": 175.415,
+     "end": 175.535
+    },
+    {
+     "text": "last",
+     "start": 175.535,
+     "end": 175.695
+    },
+    {
+     "text": "three",
+     "start": 175.695,
+     "end": 175.935
+    },
+    {
+     "text": "paychecks",
+     "start": 175.935,
+     "end": 176.295
+    },
+    {
+     "text": "and",
+     "start": 176.295,
+     "end": 176.515
+    },
+    {
+     "text": "my",
+     "start": 176.515,
+     "end": 176.615
+    },
+    {
+     "text": "blood",
+     "start": 176.615,
+     "end": 176.775
+    },
+    {
+     "text": "type",
+     "start": 176.775,
+     "end": 176.975
+    },
+    {
+     "text": "and",
+     "start": 176.975,
+     "end": 177.235
+    },
+    {
+     "text": "the",
+     "start": 177.235,
+     "end": 177.335
+    },
+    {
+     "text": "name",
+     "start": 177.335,
+     "end": 177.475
+    },
+    {
+     "text": "of",
+     "start": 177.475,
+     "end": 177.575
+    },
+    {
+     "text": "my",
+     "start": 177.575,
+     "end": 177.695
+    },
+    {
+     "text": "first",
+     "start": 177.695,
+     "end": 177.855
+    },
+    {
+     "text": "pet.",
+     "start": 177.855,
+     "end": 178.075
+    }
+   ]
+  },
+  {
+   "id": "n5",
+   "text": "Me asking the same bank for a car loan.",
+   "start": 178.6475625,
+   "end": 180.4875625,
+   "words": [
+    {
+     "text": "Me",
+     "start": 178.648,
+     "end": 178.808
+    },
+    {
+     "text": "asking",
+     "start": 178.808,
+     "end": 179.128
+    },
+    {
+     "text": "the",
+     "start": 179.128,
+     "end": 179.328
+    },
+    {
+     "text": "same",
+     "start": 179.328,
+     "end": 179.508
+    },
+    {
+     "text": "bank",
+     "start": 179.508,
+     "end": 179.748
+    },
+    {
+     "text": "for",
+     "start": 179.748,
+     "end": 180.028
+    },
+    {
+     "text": "a",
+     "start": 180.028,
+     "end": 180.108
+    },
+    {
+     "text": "car",
+     "start": 180.108,
+     "end": 180.288
+    },
+    {
+     "text": "loan.",
+     "start": 180.288,
+     "end": 180.488
+    }
+   ]
+  },
+  {
+   "id": "c4d",
+   "text": "And here's the key. A loan is not income. You have to pay it back. So there's no income tax on it.",
+   "start": 181.1584375,
+   "end": 185.4614375,
+   "words": [
+    {
+     "text": "And",
+     "start": 181.158,
+     "end": 181.315
+    },
+    {
+     "text": "here's",
+     "start": 181.333,
+     "end": 181.607
+    },
+    {
+     "text": "the",
+     "start": 181.638,
+     "end": 181.795
+    },
+    {
+     "text": "key.",
+     "start": 181.813,
+     "end": 182.009
+    },
+    {
+     "text": "A",
+     "start": 182.031,
+     "end": 182.109
+    },
+    {
+     "text": "loan",
+     "start": 182.118,
+     "end": 182.314
+    },
+    {
+     "text": "is",
+     "start": 182.336,
+     "end": 182.454
+    },
+    {
+     "text": "not",
+     "start": 182.467,
+     "end": 182.624
+    },
+    {
+     "text": "income.",
+     "start": 182.642,
+     "end": 182.956
+    },
+    {
+     "text": "You",
+     "start": 182.991,
+     "end": 183.148
+    },
+    {
+     "text": "have",
+     "start": 183.165,
+     "end": 183.362
+    },
+    {
+     "text": "to",
+     "start": 183.383,
+     "end": 183.501
+    },
+    {
+     "text": "pay",
+     "start": 183.514,
+     "end": 183.671
+    },
+    {
+     "text": "it",
+     "start": 183.689,
+     "end": 183.807
+    },
+    {
+     "text": "back.",
+     "start": 183.82,
+     "end": 184.055
+    },
+    {
+     "text": "So",
+     "start": 184.082,
+     "end": 184.199
+    },
+    {
+     "text": "there's",
+     "start": 184.213,
+     "end": 184.527
+    },
+    {
+     "text": "no",
+     "start": 184.562,
+     "end": 184.679
+    },
+    {
+     "text": "income",
+     "start": 184.693,
+     "end": 184.967
+    },
+    {
+     "text": "tax",
+     "start": 184.998,
+     "end": 185.155
+    },
+    {
+     "text": "on",
+     "start": 185.173,
+     "end": 185.29
+    },
+    {
+     "text": "it.",
+     "start": 185.303,
+     "end": 185.461
+    }
+   ]
+  },
+  {
+   "id": "n29",
+   "text": "Read that again. Richie can spend millions and the tax office sees nothing. Because on paper he's broke. He just has a lot of debt.",
+   "start": 185.95420833333333,
+   "end": 191.91420833333333,
+   "words": [
+    {
+     "text": "Read",
+     "start": 185.954,
+     "end": 186.074
+    },
+    {
+     "text": "that",
+     "start": 186.074,
+     "end": 186.214
+    },
+    {
+     "text": "again.",
+     "start": 186.214,
+     "end": 186.414
+    },
+    {
+     "text": "Richie",
+     "start": 187.134,
+     "end": 187.174
+    },
+    {
+     "text": "can",
+     "start": 187.174,
+     "end": 187.394
+    },
+    {
+     "text": "spend",
+     "start": 187.394,
+     "end": 187.554
+    },
+    {
+     "text": "millions",
+     "start": 187.554,
+     "end": 187.854
+    },
+    {
+     "text": "and",
+     "start": 188.234,
+     "end": 188.274
+    },
+    {
+     "text": "the",
+     "start": 188.274,
+     "end": 188.374
+    },
+    {
+     "text": "tax",
+     "start": 188.374,
+     "end": 188.494
+    },
+    {
+     "text": "office",
+     "start": 188.494,
+     "end": 188.834
+    },
+    {
+     "text": "sees",
+     "start": 188.834,
+     "end": 189.034
+    },
+    {
+     "text": "nothing.",
+     "start": 189.034,
+     "end": 189.374
+    },
+    {
+     "text": "Because",
+     "start": 189.674,
+     "end": 189.934
+    },
+    {
+     "text": "on",
+     "start": 189.934,
+     "end": 190.094
+    },
+    {
+     "text": "paper",
+     "start": 190.094,
+     "end": 190.254
+    },
+    {
+     "text": "he's",
+     "start": 190.254,
+     "end": 190.594
+    },
+    {
+     "text": "broke.",
+     "start": 190.594,
+     "end": 190.794
+    },
+    {
+     "text": "He",
+     "start": 191.154,
+     "end": 191.234
+    },
+    {
+     "text": "just",
+     "start": 191.234,
+     "end": 191.354
+    },
+    {
+     "text": "has",
+     "start": 191.354,
+     "end": 191.474
+    },
+    {
+     "text": "a",
+     "start": 191.474,
+     "end": 191.534
+    },
+    {
+     "text": "lot",
+     "start": 191.534,
+     "end": 191.674
+    },
+    {
+     "text": "of",
+     "start": 191.674,
+     "end": 191.754
+    },
+    {
+     "text": "debt.",
+     "start": 191.754,
+     "end": 191.914
+    }
+   ]
+  },
+  {
+   "id": "c4f",
+   "text": "And while he spends the loan his shares keep growing. Often faster than the interest. So he just borrows again. And again.",
+   "start": 192.55708333333334,
+   "end": 198.31708333333333,
+   "words": [
+    {
+     "text": "And",
+     "start": 192.557,
+     "end": 192.817
+    },
+    {
+     "text": "while",
+     "start": 192.817,
+     "end": 192.957
+    },
+    {
+     "text": "he",
+     "start": 192.957,
+     "end": 193.097
+    },
+    {
+     "text": "spends",
+     "start": 193.097,
+     "end": 193.257
+    },
+    {
+     "text": "the",
+     "start": 193.257,
+     "end": 193.497
+    },
+    {
+     "text": "loan",
+     "start": 193.497,
+     "end": 193.717
+    },
+    {
+     "text": "his",
+     "start": 193.897,
+     "end": 193.917
+    },
+    {
+     "text": "shares",
+     "start": 193.917,
+     "end": 194.077
+    },
+    {
+     "text": "keep",
+     "start": 194.077,
+     "end": 194.317
+    },
+    {
+     "text": "growing.",
+     "start": 194.317,
+     "end": 194.557
+    },
+    {
+     "text": "Often",
+     "start": 195.137,
+     "end": 195.457
+    },
+    {
+     "text": "faster",
+     "start": 195.457,
+     "end": 195.657
+    },
+    {
+     "text": "than",
+     "start": 195.657,
+     "end": 195.977
+    },
+    {
+     "text": "the",
+     "start": 195.977,
+     "end": 196.057
+    },
+    {
+     "text": "interest.",
+     "start": 196.057,
+     "end": 196.277
+    },
+    {
+     "text": "So",
+     "start": 196.837,
+     "end": 196.897
+    },
+    {
+     "text": "he",
+     "start": 196.897,
+     "end": 196.997
+    },
+    {
+     "text": "just",
+     "start": 196.997,
+     "end": 197.137
+    },
+    {
+     "text": "borrows",
+     "start": 197.137,
+     "end": 197.477
+    },
+    {
+     "text": "again.",
+     "start": 197.477,
+     "end": 197.677
+    },
+    {
+     "text": "And",
+     "start": 197.677,
+     "end": 198.057
+    },
+    {
+     "text": "again.",
+     "start": 198.057,
+     "end": 198.317
+    }
+   ]
+  },
+  {
+   "id": "n30",
+   "text": "And remember the banks create money when they lend. So everybody's happy. The bank and Richie and the yacht dealer. Everyone except the tax office.",
+   "start": 198.96072916666665,
+   "end": 205.90072916666665,
+   "words": [
+    {
+     "text": "And",
+     "start": 198.961,
+     "end": 199.061
+    },
+    {
+     "text": "remember",
+     "start": 199.061,
+     "end": 199.261
+    },
+    {
+     "text": "the",
+     "start": 199.621,
+     "end": 199.721
+    },
+    {
+     "text": "banks",
+     "start": 199.721,
+     "end": 199.841
+    },
+    {
+     "text": "create",
+     "start": 199.841,
+     "end": 200.181
+    },
+    {
+     "text": "money",
+     "start": 200.181,
+     "end": 200.441
+    },
+    {
+     "text": "when",
+     "start": 200.441,
+     "end": 200.681
+    },
+    {
+     "text": "they",
+     "start": 200.681,
+     "end": 200.821
+    },
+    {
+     "text": "lend.",
+     "start": 200.821,
+     "end": 201.021
+    },
+    {
+     "text": "So",
+     "start": 201.561,
+     "end": 201.601
+    },
+    {
+     "text": "everybody's",
+     "start": 201.601,
+     "end": 202.181
+    },
+    {
+     "text": "happy.",
+     "start": 202.181,
+     "end": 202.401
+    },
+    {
+     "text": "The",
+     "start": 202.861,
+     "end": 202.881
+    },
+    {
+     "text": "bank",
+     "start": 202.881,
+     "end": 203.061
+    },
+    {
+     "text": "and",
+     "start": 203.061,
+     "end": 203.261
+    },
+    {
+     "text": "Richie",
+     "start": 203.261,
+     "end": 203.441
+    },
+    {
+     "text": "and",
+     "start": 203.441,
+     "end": 203.801
+    },
+    {
+     "text": "the",
+     "start": 203.801,
+     "end": 203.921
+    },
+    {
+     "text": "yacht",
+     "start": 203.921,
+     "end": 204.061
+    },
+    {
+     "text": "dealer.",
+     "start": 204.061,
+     "end": 204.281
+    },
+    {
+     "text": "Everyone",
+     "start": 204.581,
+     "end": 204.941
+    },
+    {
+     "text": "except",
+     "start": 204.941,
+     "end": 205.181
+    },
+    {
+     "text": "the",
+     "start": 205.181,
+     "end": 205.421
+    },
+    {
+     "text": "tax",
+     "start": 205.421,
+     "end": 205.501
+    },
+    {
+     "text": "office.",
+     "start": 205.501,
+     "end": 205.901
+    }
+   ]
+  },
+  {
+   "id": "c4g",
+   "text": "It's like living off an apple tree without ever picking an apple. You just borrow apples from the neighbor and promise him the tree.",
+   "start": 206.597125,
+   "end": 211.67712500000002,
+   "words": [
+    {
+     "text": "It's",
+     "start": 206.597,
+     "end": 206.737
+    },
+    {
+     "text": "like",
+     "start": 206.737,
+     "end": 206.817
+    },
+    {
+     "text": "living",
+     "start": 206.817,
+     "end": 207.077
+    },
+    {
+     "text": "off",
+     "start": 207.077,
+     "end": 207.257
+    },
+    {
+     "text": "an",
+     "start": 207.257,
+     "end": 207.397
+    },
+    {
+     "text": "apple",
+     "start": 207.397,
+     "end": 207.557
+    },
+    {
+     "text": "tree",
+     "start": 207.557,
+     "end": 207.857
+    },
+    {
+     "text": "without",
+     "start": 207.857,
+     "end": 208.057
+    },
+    {
+     "text": "ever",
+     "start": 208.057,
+     "end": 208.357
+    },
+    {
+     "text": "picking",
+     "start": 208.357,
+     "end": 208.617
+    },
+    {
+     "text": "an",
+     "start": 208.617,
+     "end": 208.797
+    },
+    {
+     "text": "apple.",
+     "start": 208.797,
+     "end": 209.037
+    },
+    {
+     "text": "You",
+     "start": 209.377,
+     "end": 209.457
+    },
+    {
+     "text": "just",
+     "start": 209.457,
+     "end": 209.597
+    },
+    {
+     "text": "borrow",
+     "start": 209.597,
+     "end": 209.837
+    },
+    {
+     "text": "apples",
+     "start": 209.837,
+     "end": 210.217
+    },
+    {
+     "text": "from",
+     "start": 210.217,
+     "end": 210.437
+    },
+    {
+     "text": "the",
+     "start": 210.437,
+     "end": 210.577
+    },
+    {
+     "text": "neighbor",
+     "start": 210.577,
+     "end": 210.777
+    },
+    {
+     "text": "and",
+     "start": 210.777,
+     "end": 210.977
+    },
+    {
+     "text": "promise",
+     "start": 210.977,
+     "end": 211.237
+    },
+    {
+     "text": "him",
+     "start": 211.237,
+     "end": 211.417
+    },
+    {
+     "text": "the",
+     "start": 211.417,
+     "end": 211.517
+    },
+    {
+     "text": "tree.",
+     "start": 211.517,
+     "end": 211.677
+    }
+   ]
+  },
+  {
+   "id": "n6",
+   "text": "Richie paying for a yacht with money that doesn't count as money.",
+   "start": 212.3834375,
+   "end": 214.62343750000002,
+   "words": [
+    {
+     "text": "Richie",
+     "start": 212.383,
+     "end": 212.563
+    },
+    {
+     "text": "paying",
+     "start": 212.563,
+     "end": 212.763
+    },
+    {
+     "text": "for",
+     "start": 212.763,
+     "end": 212.963
+    },
+    {
+     "text": "a",
+     "start": 212.963,
+     "end": 213.083
+    },
+    {
+     "text": "yacht",
+     "start": 213.083,
+     "end": 213.243
+    },
+    {
+     "text": "with",
+     "start": 213.243,
+     "end": 213.383
+    },
+    {
+     "text": "money",
+     "start": 213.383,
+     "end": 213.603
+    },
+    {
+     "text": "that",
+     "start": 213.603,
+     "end": 213.783
+    },
+    {
+     "text": "doesn't",
+     "start": 213.783,
+     "end": 214.043
+    },
+    {
+     "text": "count",
+     "start": 214.043,
+     "end": 214.203
+    },
+    {
+     "text": "as",
+     "start": 214.203,
+     "end": 214.363
+    },
+    {
+     "text": "money.",
+     "start": 214.363,
+     "end": 214.623
+    }
+   ]
+  },
+  {
+   "id": "c5a",
+   "text": "And step three. Well. Die.",
+   "start": 215.22872916666665,
+   "end": 216.94872916666665,
+   "words": [
+    {
+     "text": "And",
+     "start": 215.229,
+     "end": 215.309
+    },
+    {
+     "text": "step",
+     "start": 215.309,
+     "end": 215.489
+    },
+    {
+     "text": "three.",
+     "start": 215.489,
+     "end": 215.789
+    },
+    {
+     "text": "Well.",
+     "start": 216.149,
+     "end": 216.409
+    },
+    {
+     "text": "Die.",
+     "start": 216.729,
+     "end": 216.949
+    }
+   ]
+  },
+  {
+   "id": "c5b",
+   "text": "Sorry Richie. But this is where the magic happens.",
+   "start": 217.61416666666668,
+   "end": 220.1341666666667,
+   "words": [
+    {
+     "text": "Sorry",
+     "start": 217.614,
+     "end": 217.894
+    },
+    {
+     "text": "Richie.",
+     "start": 217.894,
+     "end": 218.134
+    },
+    {
+     "text": "But",
+     "start": 218.694,
+     "end": 218.954
+    },
+    {
+     "text": "this",
+     "start": 218.954,
+     "end": 219.114
+    },
+    {
+     "text": "is",
+     "start": 219.114,
+     "end": 219.234
+    },
+    {
+     "text": "where",
+     "start": 219.234,
+     "end": 219.354
+    },
+    {
+     "text": "the",
+     "start": 219.354,
+     "end": 219.474
+    },
+    {
+     "text": "magic",
+     "start": 219.474,
+     "end": 219.734
+    },
+    {
+     "text": "happens.",
+     "start": 219.734,
+     "end": 220.134
+    }
+   ]
+  },
+  {
+   "id": "c5c",
+   "text": "When Richie dies his kids get the shares. And normally if you sell shares you pay tax on all the growth since you bought them.",
+   "start": 220.92075,
+   "end": 226.14075,
+   "words": [
+    {
+     "text": "When",
+     "start": 220.921,
+     "end": 221.061
+    },
+    {
+     "text": "Richie",
+     "start": 221.061,
+     "end": 221.161
+    },
+    {
+     "text": "dies",
+     "start": 221.161,
+     "end": 221.461
+    },
+    {
+     "text": "his",
+     "start": 221.701,
+     "end": 221.761
+    },
+    {
+     "text": "kids",
+     "start": 221.761,
+     "end": 222.001
+    },
+    {
+     "text": "get",
+     "start": 222.001,
+     "end": 222.121
+    },
+    {
+     "text": "the",
+     "start": 222.121,
+     "end": 222.201
+    },
+    {
+     "text": "shares.",
+     "start": 222.201,
+     "end": 222.401
+    },
+    {
+     "text": "And",
+     "start": 223.081,
+     "end": 223.081
+    },
+    {
+     "text": "normally",
+     "start": 223.081,
+     "end": 223.241
+    },
+    {
+     "text": "if",
+     "start": 223.481,
+     "end": 223.641
+    },
+    {
+     "text": "you",
+     "start": 223.641,
+     "end": 223.701
+    },
+    {
+     "text": "sell",
+     "start": 223.701,
+     "end": 223.861
+    },
+    {
+     "text": "shares",
+     "start": 223.861,
+     "end": 224.201
+    },
+    {
+     "text": "you",
+     "start": 224.301,
+     "end": 224.381
+    },
+    {
+     "text": "pay",
+     "start": 224.381,
+     "end": 224.521
+    },
+    {
+     "text": "tax",
+     "start": 224.521,
+     "end": 224.741
+    },
+    {
+     "text": "on",
+     "start": 224.741,
+     "end": 224.941
+    },
+    {
+     "text": "all",
+     "start": 224.941,
+     "end": 225.141
+    },
+    {
+     "text": "the",
+     "start": 225.141,
+     "end": 225.241
+    },
+    {
+     "text": "growth",
+     "start": 225.241,
+     "end": 225.421
+    },
+    {
+     "text": "since",
+     "start": 225.421,
+     "end": 225.641
+    },
+    {
+     "text": "you",
+     "start": 225.641,
+     "end": 225.781
+    },
+    {
+     "text": "bought",
+     "start": 225.781,
+     "end": 225.901
+    },
+    {
+     "text": "them.",
+     "start": 225.901,
+     "end": 226.141
+    }
+   ]
+  },
+  {
+   "id": "c5d",
+   "text": "But there's a rule called the step up. When you inherit something the tax clock resets to zero. Like the kids bought it the day Richie died.",
+   "start": 226.7365625,
+   "end": 232.8105625,
+   "words": [
+    {
+     "text": "But",
+     "start": 226.737,
+     "end": 226.893
+    },
+    {
+     "text": "there's",
+     "start": 226.91,
+     "end": 227.222
+    },
+    {
+     "text": "a",
+     "start": 227.256,
+     "end": 227.334
+    },
+    {
+     "text": "rule",
+     "start": 227.343,
+     "end": 227.537
+    },
+    {
+     "text": "called",
+     "start": 227.559,
+     "end": 227.832
+    },
+    {
+     "text": "the",
+     "start": 227.862,
+     "end": 228.018
+    },
+    {
+     "text": "step",
+     "start": 228.035,
+     "end": 228.23
+    },
+    {
+     "text": "up.",
+     "start": 228.251,
+     "end": 228.407
+    },
+    {
+     "text": "When",
+     "start": 228.424,
+     "end": 228.619
+    },
+    {
+     "text": "you",
+     "start": 228.641,
+     "end": 228.796
+    },
+    {
+     "text": "inherit",
+     "start": 228.814,
+     "end": 229.125
+    },
+    {
+     "text": "something",
+     "start": 229.16,
+     "end": 229.549
+    },
+    {
+     "text": "the",
+     "start": 229.592,
+     "end": 229.748
+    },
+    {
+     "text": "tax",
+     "start": 229.765,
+     "end": 229.921
+    },
+    {
+     "text": "clock",
+     "start": 229.938,
+     "end": 230.172
+    },
+    {
+     "text": "resets",
+     "start": 230.198,
+     "end": 230.471
+    },
+    {
+     "text": "to",
+     "start": 230.501,
+     "end": 230.618
+    },
+    {
+     "text": "zero.",
+     "start": 230.631,
+     "end": 230.864
+    },
+    {
+     "text": "Like",
+     "start": 230.89,
+     "end": 231.085
+    },
+    {
+     "text": "the",
+     "start": 231.107,
+     "end": 231.262
+    },
+    {
+     "text": "kids",
+     "start": 231.28,
+     "end": 231.474
+    },
+    {
+     "text": "bought",
+     "start": 231.496,
+     "end": 231.768
+    },
+    {
+     "text": "it",
+     "start": 231.799,
+     "end": 231.916
+    },
+    {
+     "text": "the",
+     "start": 231.928,
+     "end": 232.084
+    },
+    {
+     "text": "day",
+     "start": 232.102,
+     "end": 232.257
+    },
+    {
+     "text": "Richie",
+     "start": 232.275,
+     "end": 232.547
+    },
+    {
+     "text": "died.",
+     "start": 232.577,
+     "end": 232.811
+    }
+   ]
+  },
+  {
+   "id": "c5e",
+   "text": "So all the growth from Richie's whole life? For income tax it just vanishes. Poof.",
+   "start": 233.4714375,
+   "end": 238.3514375,
+   "words": [
+    {
+     "text": "So",
+     "start": 233.471,
+     "end": 233.591
+    },
+    {
+     "text": "all",
+     "start": 233.591,
+     "end": 233.791
+    },
+    {
+     "text": "the",
+     "start": 233.791,
+     "end": 233.951
+    },
+    {
+     "text": "growth",
+     "start": 233.951,
+     "end": 234.151
+    },
+    {
+     "text": "from",
+     "start": 234.151,
+     "end": 234.411
+    },
+    {
+     "text": "Richie's",
+     "start": 234.411,
+     "end": 234.791
+    },
+    {
+     "text": "whole",
+     "start": 234.791,
+     "end": 234.911
+    },
+    {
+     "text": "life?",
+     "start": 234.911,
+     "end": 235.211
+    },
+    {
+     "text": "For",
+     "start": 235.611,
+     "end": 235.711
+    },
+    {
+     "text": "income",
+     "start": 235.711,
+     "end": 235.911
+    },
+    {
+     "text": "tax",
+     "start": 235.911,
+     "end": 236.251
+    },
+    {
+     "text": "it",
+     "start": 236.591,
+     "end": 236.631
+    },
+    {
+     "text": "just",
+     "start": 236.631,
+     "end": 236.831
+    },
+    {
+     "text": "vanishes.",
+     "start": 236.831,
+     "end": 237.511
+    },
+    {
+     "text": "Poof.",
+     "start": 238.051,
+     "end": 238.351
+    }
+   ]
+  },
+  {
+   "id": "c5f",
+   "text": "The kids sell a little. Pay back the loans. And owe little or no income tax on decades of growth.",
+   "start": 239.02004166666666,
+   "end": 243.38404166666666,
+   "words": [
+    {
+     "text": "The",
+     "start": 239.02,
+     "end": 239.182
+    },
+    {
+     "text": "kids",
+     "start": 239.2,
+     "end": 239.402
+    },
+    {
+     "text": "sell",
+     "start": 239.424,
+     "end": 239.626
+    },
+    {
+     "text": "a",
+     "start": 239.649,
+     "end": 239.729
+    },
+    {
+     "text": "little.",
+     "start": 239.738,
+     "end": 240.062
+    },
+    {
+     "text": "Pay",
+     "start": 240.098,
+     "end": 240.259
+    },
+    {
+     "text": "back",
+     "start": 240.277,
+     "end": 240.479
+    },
+    {
+     "text": "the",
+     "start": 240.502,
+     "end": 240.663
+    },
+    {
+     "text": "loans.",
+     "start": 240.681,
+     "end": 240.964
+    },
+    {
+     "text": "And",
+     "start": 240.996,
+     "end": 241.157
+    },
+    {
+     "text": "owe",
+     "start": 241.175,
+     "end": 241.337
+    },
+    {
+     "text": "little",
+     "start": 241.355,
+     "end": 241.638
+    },
+    {
+     "text": "or",
+     "start": 241.669,
+     "end": 241.79
+    },
+    {
+     "text": "no",
+     "start": 241.804,
+     "end": 241.925
+    },
+    {
+     "text": "income",
+     "start": 241.938,
+     "end": 242.221
+    },
+    {
+     "text": "tax",
+     "start": 242.253,
+     "end": 242.414
+    },
+    {
+     "text": "on",
+     "start": 242.432,
+     "end": 242.553
+    },
+    {
+     "text": "decades",
+     "start": 242.567,
+     "end": 242.89
+    },
+    {
+     "text": "of",
+     "start": 242.926,
+     "end": 243.047
+    },
+    {
+     "text": "growth.",
+     "start": 243.061,
+     "end": 243.384
+    }
+   ]
+  },
+  {
+   "id": "n31",
+   "text": "Decades of growth and the tax bill just disappears at a funeral. That's the wildest magic trick in the whole tax system.",
+   "start": 244.1021875,
+   "end": 249.62218750000002,
+   "words": [
+    {
+     "text": "Decades",
+     "start": 244.102,
+     "end": 244.402
+    },
+    {
+     "text": "of",
+     "start": 244.402,
+     "end": 244.522
+    },
+    {
+     "text": "growth",
+     "start": 244.522,
+     "end": 244.682
+    },
+    {
+     "text": "and",
+     "start": 244.682,
+     "end": 245.042
+    },
+    {
+     "text": "the",
+     "start": 245.042,
+     "end": 245.142
+    },
+    {
+     "text": "tax",
+     "start": 245.142,
+     "end": 245.262
+    },
+    {
+     "text": "bill",
+     "start": 245.262,
+     "end": 245.582
+    },
+    {
+     "text": "just",
+     "start": 245.582,
+     "end": 245.842
+    },
+    {
+     "text": "disappears",
+     "start": 245.842,
+     "end": 246.242
+    },
+    {
+     "text": "at",
+     "start": 246.242,
+     "end": 246.502
+    },
+    {
+     "text": "a",
+     "start": 246.502,
+     "end": 246.522
+    },
+    {
+     "text": "funeral.",
+     "start": 246.522,
+     "end": 246.722
+    },
+    {
+     "text": "That's",
+     "start": 247.462,
+     "end": 247.682
+    },
+    {
+     "text": "the",
+     "start": 247.682,
+     "end": 247.782
+    },
+    {
+     "text": "wildest",
+     "start": 247.782,
+     "end": 248.222
+    },
+    {
+     "text": "magic",
+     "start": 248.222,
+     "end": 248.382
+    },
+    {
+     "text": "trick",
+     "start": 248.382,
+     "end": 248.702
+    },
+    {
+     "text": "in",
+     "start": 248.702,
+     "end": 248.842
+    },
+    {
+     "text": "the",
+     "start": 248.842,
+     "end": 248.922
+    },
+    {
+     "text": "whole",
+     "start": 248.922,
+     "end": 249.062
+    },
+    {
+     "text": "tax",
+     "start": 249.062,
+     "end": 249.242
+    },
+    {
+     "text": "system.",
+     "start": 249.242,
+     "end": 249.622
+    }
+   ]
+  },
+  {
+   "id": "n7",
+   "text": "The kids at the will reading.",
+   "start": 250.28902083333332,
+   "end": 251.30902083333334,
+   "words": [
+    {
+     "text": "The",
+     "start": 250.289,
+     "end": 250.389
+    },
+    {
+     "text": "kids",
+     "start": 250.389,
+     "end": 250.609
+    },
+    {
+     "text": "at",
+     "start": 250.609,
+     "end": 250.889
+    },
+    {
+     "text": "the",
+     "start": 250.889,
+     "end": 250.969
+    },
+    {
+     "text": "will",
+     "start": 250.969,
+     "end": 251.089
+    },
+    {
+     "text": "reading.",
+     "start": 251.089,
+     "end": 251.309
+    }
+   ]
+  },
+  {
+   "id": "c5g",
+   "text": "There is an estate tax on very big fortunes. But the richest families hire experts and special trusts to shrink that bill a lot.",
+   "start": 251.98470833333334,
+   "end": 258.2647083333333,
+   "words": [
+    {
+     "text": "There",
+     "start": 251.985,
+     "end": 252.125
+    },
+    {
+     "text": "is",
+     "start": 252.125,
+     "end": 252.445
+    },
+    {
+     "text": "an",
+     "start": 252.445,
+     "end": 252.525
+    },
+    {
+     "text": "estate",
+     "start": 252.525,
+     "end": 252.705
+    },
+    {
+     "text": "tax",
+     "start": 252.705,
+     "end": 252.945
+    },
+    {
+     "text": "on",
+     "start": 252.945,
+     "end": 253.205
+    },
+    {
+     "text": "very",
+     "start": 253.205,
+     "end": 253.365
+    },
+    {
+     "text": "big",
+     "start": 253.365,
+     "end": 253.625
+    },
+    {
+     "text": "fortunes.",
+     "start": 253.625,
+     "end": 253.945
+    },
+    {
+     "text": "But",
+     "start": 254.745,
+     "end": 254.785
+    },
+    {
+     "text": "the",
+     "start": 254.785,
+     "end": 254.905
+    },
+    {
+     "text": "richest",
+     "start": 254.905,
+     "end": 255.065
+    },
+    {
+     "text": "families",
+     "start": 255.065,
+     "end": 255.525
+    },
+    {
+     "text": "hire",
+     "start": 255.525,
+     "end": 255.745
+    },
+    {
+     "text": "experts",
+     "start": 255.745,
+     "end": 256.085
+    },
+    {
+     "text": "and",
+     "start": 256.085,
+     "end": 256.365
+    },
+    {
+     "text": "special",
+     "start": 256.365,
+     "end": 256.565
+    },
+    {
+     "text": "trusts",
+     "start": 256.565,
+     "end": 256.905
+    },
+    {
+     "text": "to",
+     "start": 256.905,
+     "end": 257.365
+    },
+    {
+     "text": "shrink",
+     "start": 257.365,
+     "end": 257.565
+    },
+    {
+     "text": "that",
+     "start": 257.565,
+     "end": 257.745
+    },
+    {
+     "text": "bill",
+     "start": 257.745,
+     "end": 257.905
+    },
+    {
+     "text": "a",
+     "start": 257.905,
+     "end": 258.065
+    },
+    {
+     "text": "lot.",
+     "start": 258.065,
+     "end": 258.265
+    }
+   ]
+  },
+  {
+   "id": "n32",
+   "text": "It's a whole job. There are people whose only job is making sure rich families pay less. And they're very good at it.",
+   "start": 258.92970833333334,
+   "end": 264.1297083333333,
+   "words": [
+    {
+     "text": "It's",
+     "start": 258.93,
+     "end": 259.05
+    },
+    {
+     "text": "a",
+     "start": 259.05,
+     "end": 259.11
+    },
+    {
+     "text": "whole",
+     "start": 259.11,
+     "end": 259.19
+    },
+    {
+     "text": "job.",
+     "start": 259.19,
+     "end": 259.45
+    },
+    {
+     "text": "There",
+     "start": 259.91,
+     "end": 259.95
+    },
+    {
+     "text": "are",
+     "start": 259.95,
+     "end": 260.03
+    },
+    {
+     "text": "people",
+     "start": 260.03,
+     "end": 260.27
+    },
+    {
+     "text": "whose",
+     "start": 260.27,
+     "end": 260.41
+    },
+    {
+     "text": "only",
+     "start": 260.41,
+     "end": 260.65
+    },
+    {
+     "text": "job",
+     "start": 260.65,
+     "end": 260.91
+    },
+    {
+     "text": "is",
+     "start": 260.91,
+     "end": 261.07
+    },
+    {
+     "text": "making",
+     "start": 261.07,
+     "end": 261.29
+    },
+    {
+     "text": "sure",
+     "start": 261.29,
+     "end": 261.53
+    },
+    {
+     "text": "rich",
+     "start": 261.53,
+     "end": 261.75
+    },
+    {
+     "text": "families",
+     "start": 261.75,
+     "end": 262.13
+    },
+    {
+     "text": "pay",
+     "start": 262.13,
+     "end": 262.37
+    },
+    {
+     "text": "less.",
+     "start": 262.37,
+     "end": 262.63
+    },
+    {
+     "text": "And",
+     "start": 263.27,
+     "end": 263.31
+    },
+    {
+     "text": "they're",
+     "start": 263.31,
+     "end": 263.41
+    },
+    {
+     "text": "very",
+     "start": 263.41,
+     "end": 263.57
+    },
+    {
+     "text": "good",
+     "start": 263.57,
+     "end": 263.81
+    },
+    {
+     "text": "at",
+     "start": 263.81,
+     "end": 263.97
+    },
+    {
+     "text": "it.",
+     "start": 263.97,
+     "end": 264.13
+    }
+   ]
+  },
+  {
+   "id": "c6a",
+   "text": "And this isn't me being salty. Even billionaires think it's weird.",
+   "start": 264.6279583333333,
+   "end": 267.9079583333333,
+   "words": [
+    {
+     "text": "And",
+     "start": 264.628,
+     "end": 264.828
+    },
+    {
+     "text": "this",
+     "start": 264.828,
+     "end": 264.988
+    },
+    {
+     "text": "isn't",
+     "start": 264.988,
+     "end": 265.428
+    },
+    {
+     "text": "me",
+     "start": 265.428,
+     "end": 265.548
+    },
+    {
+     "text": "being",
+     "start": 265.548,
+     "end": 265.808
+    },
+    {
+     "text": "salty.",
+     "start": 265.808,
+     "end": 266.148
+    },
+    {
+     "text": "Even",
+     "start": 266.688,
+     "end": 266.768
+    },
+    {
+     "text": "billionaires",
+     "start": 266.768,
+     "end": 267.128
+    },
+    {
+     "text": "think",
+     "start": 267.128,
+     "end": 267.548
+    },
+    {
+     "text": "it's",
+     "start": 267.548,
+     "end": 267.748
+    },
+    {
+     "text": "weird.",
+     "start": 267.748,
+     "end": 267.908
+    }
+   ]
+  },
+  {
+   "id": "c6b",
+   "text": "Warren Buffett is one of the richest people alive. And he once wrote in the New York Times that he paid a lower tax rate than the people working in his office.",
+   "start": 268.57279166666666,
+   "end": 275.03279166666664,
+   "words": [
+    {
+     "text": "Warren",
+     "start": 268.573,
+     "end": 268.753
+    },
+    {
+     "text": "Buffett",
+     "start": 268.753,
+     "end": 268.953
+    },
+    {
+     "text": "is",
+     "start": 268.953,
+     "end": 269.253
+    },
+    {
+     "text": "one",
+     "start": 269.253,
+     "end": 269.353
+    },
+    {
+     "text": "of",
+     "start": 269.353,
+     "end": 269.433
+    },
+    {
+     "text": "the",
+     "start": 269.433,
+     "end": 269.513
+    },
+    {
+     "text": "richest",
+     "start": 269.513,
+     "end": 269.693
+    },
+    {
+     "text": "people",
+     "start": 269.693,
+     "end": 269.953
+    },
+    {
+     "text": "alive.",
+     "start": 269.953,
+     "end": 270.373
+    },
+    {
+     "text": "And",
+     "start": 270.973,
+     "end": 271.033
+    },
+    {
+     "text": "he",
+     "start": 271.033,
+     "end": 271.133
+    },
+    {
+     "text": "once",
+     "start": 271.133,
+     "end": 271.293
+    },
+    {
+     "text": "wrote",
+     "start": 271.293,
+     "end": 271.553
+    },
+    {
+     "text": "in",
+     "start": 271.553,
+     "end": 271.713
+    },
+    {
+     "text": "the",
+     "start": 271.713,
+     "end": 271.793
+    },
+    {
+     "text": "New",
+     "start": 271.793,
+     "end": 271.873
+    },
+    {
+     "text": "York",
+     "start": 271.873,
+     "end": 272.033
+    },
+    {
+     "text": "Times",
+     "start": 272.033,
+     "end": 272.293
+    },
+    {
+     "text": "that",
+     "start": 272.293,
+     "end": 272.513
+    },
+    {
+     "text": "he",
+     "start": 272.513,
+     "end": 272.633
+    },
+    {
+     "text": "paid",
+     "start": 272.633,
+     "end": 272.793
+    },
+    {
+     "text": "a",
+     "start": 272.793,
+     "end": 272.913
+    },
+    {
+     "text": "lower",
+     "start": 272.913,
+     "end": 273.093
+    },
+    {
+     "text": "tax",
+     "start": 273.093,
+     "end": 273.353
+    },
+    {
+     "text": "rate",
+     "start": 273.353,
+     "end": 273.673
+    },
+    {
+     "text": "than",
+     "start": 273.673,
+     "end": 273.873
+    },
+    {
+     "text": "the",
+     "start": 273.873,
+     "end": 273.953
+    },
+    {
+     "text": "people",
+     "start": 273.953,
+     "end": 274.133
+    },
+    {
+     "text": "working",
+     "start": 274.133,
+     "end": 274.413
+    },
+    {
+     "text": "in",
+     "start": 274.413,
+     "end": 274.573
+    },
+    {
+     "text": "his",
+     "start": 274.573,
+     "end": 274.673
+    },
+    {
+     "text": "office.",
+     "start": 274.673,
+     "end": 275.033
+    }
+   ]
+  },
+  {
+   "id": "c6e",
+   "text": "His secretary paid a higher rate than him. One of the richest men on Earth. And he was asking to pay more.",
+   "start": 275.74945833333334,
+   "end": 280.42945833333334,
+   "words": [
+    {
+     "text": "His",
+     "start": 275.749,
+     "end": 275.829
+    },
+    {
+     "text": "secretary",
+     "start": 275.829,
+     "end": 276.129
+    },
+    {
+     "text": "paid",
+     "start": 276.129,
+     "end": 276.569
+    },
+    {
+     "text": "a",
+     "start": 276.569,
+     "end": 276.669
+    },
+    {
+     "text": "higher",
+     "start": 276.669,
+     "end": 276.869
+    },
+    {
+     "text": "rate",
+     "start": 276.869,
+     "end": 277.109
+    },
+    {
+     "text": "than",
+     "start": 277.109,
+     "end": 277.289
+    },
+    {
+     "text": "him.",
+     "start": 277.289,
+     "end": 277.489
+    },
+    {
+     "text": "One",
+     "start": 277.769,
+     "end": 277.889
+    },
+    {
+     "text": "of",
+     "start": 277.889,
+     "end": 278.009
+    },
+    {
+     "text": "the",
+     "start": 278.009,
+     "end": 278.109
+    },
+    {
+     "text": "richest",
+     "start": 278.109,
+     "end": 278.329
+    },
+    {
+     "text": "men",
+     "start": 278.329,
+     "end": 278.609
+    },
+    {
+     "text": "on",
+     "start": 278.609,
+     "end": 278.769
+    },
+    {
+     "text": "Earth.",
+     "start": 278.769,
+     "end": 278.969
+    },
+    {
+     "text": "And",
+     "start": 279.249,
+     "end": 279.329
+    },
+    {
+     "text": "he",
+     "start": 279.329,
+     "end": 279.429
+    },
+    {
+     "text": "was",
+     "start": 279.429,
+     "end": 279.529
+    },
+    {
+     "text": "asking",
+     "start": 279.529,
+     "end": 279.849
+    },
+    {
+     "text": "to",
+     "start": 279.849,
+     "end": 280.049
+    },
+    {
+     "text": "pay",
+     "start": 280.049,
+     "end": 280.169
+    },
+    {
+     "text": "more.",
+     "start": 280.169,
+     "end": 280.429
+    }
+   ]
+  },
+  {
+   "id": "c6g",
+   "text": "Why? Because his money came from investments. And investment gains get taxed lower than salaries. His staff earned salaries.",
+   "start": 281.0833125,
+   "end": 287.36331249999995,
+   "words": [
+    {
+     "text": "Why?",
+     "start": 281.083,
+     "end": 281.283
+    },
+    {
+     "text": "Because",
+     "start": 281.723,
+     "end": 282.083
+    },
+    {
+     "text": "his",
+     "start": 282.083,
+     "end": 282.243
+    },
+    {
+     "text": "money",
+     "start": 282.243,
+     "end": 282.443
+    },
+    {
+     "text": "came",
+     "start": 282.443,
+     "end": 282.663
+    },
+    {
+     "text": "from",
+     "start": 282.663,
+     "end": 282.883
+    },
+    {
+     "text": "investments.",
+     "start": 282.883,
+     "end": 283.183
+    },
+    {
+     "text": "And",
+     "start": 283.943,
+     "end": 283.983
+    },
+    {
+     "text": "investment",
+     "start": 283.983,
+     "end": 284.243
+    },
+    {
+     "text": "gains",
+     "start": 284.243,
+     "end": 284.523
+    },
+    {
+     "text": "get",
+     "start": 284.523,
+     "end": 284.803
+    },
+    {
+     "text": "taxed",
+     "start": 284.803,
+     "end": 284.963
+    },
+    {
+     "text": "lower",
+     "start": 284.963,
+     "end": 285.323
+    },
+    {
+     "text": "than",
+     "start": 285.323,
+     "end": 285.523
+    },
+    {
+     "text": "salaries.",
+     "start": 285.523,
+     "end": 285.743
+    },
+    {
+     "text": "His",
+     "start": 286.363,
+     "end": 286.443
+    },
+    {
+     "text": "staff",
+     "start": 286.443,
+     "end": 286.703
+    },
+    {
+     "text": "earned",
+     "start": 286.703,
+     "end": 286.963
+    },
+    {
+     "text": "salaries.",
+     "start": 286.963,
+     "end": 287.363
+    }
+   ]
+  },
+  {
+   "id": "n33",
+   "text": "So the more your money comes from a job the more you pay. And the more it comes from owning stuff the less you pay. That's the whole game.",
+   "start": 288.1559375,
+   "end": 293.9559375,
+   "words": [
+    {
+     "text": "So",
+     "start": 288.156,
+     "end": 288.236
+    },
+    {
+     "text": "the",
+     "start": 288.236,
+     "end": 288.336
+    },
+    {
+     "text": "more",
+     "start": 288.336,
+     "end": 288.476
+    },
+    {
+     "text": "your",
+     "start": 288.476,
+     "end": 288.656
+    },
+    {
+     "text": "money",
+     "start": 288.656,
+     "end": 288.816
+    },
+    {
+     "text": "comes",
+     "start": 288.816,
+     "end": 289.056
+    },
+    {
+     "text": "from",
+     "start": 289.056,
+     "end": 289.276
+    },
+    {
+     "text": "a",
+     "start": 289.276,
+     "end": 289.356
+    },
+    {
+     "text": "job",
+     "start": 289.356,
+     "end": 289.576
+    },
+    {
+     "text": "the",
+     "start": 289.856,
+     "end": 289.916
+    },
+    {
+     "text": "more",
+     "start": 289.916,
+     "end": 290.056
+    },
+    {
+     "text": "you",
+     "start": 290.056,
+     "end": 290.176
+    },
+    {
+     "text": "pay.",
+     "start": 290.176,
+     "end": 290.376
+    },
+    {
+     "text": "And",
+     "start": 290.976,
+     "end": 291.016
+    },
+    {
+     "text": "the",
+     "start": 291.016,
+     "end": 291.116
+    },
+    {
+     "text": "more",
+     "start": 291.116,
+     "end": 291.236
+    },
+    {
+     "text": "it",
+     "start": 291.236,
+     "end": 291.356
+    },
+    {
+     "text": "comes",
+     "start": 291.356,
+     "end": 291.556
+    },
+    {
+     "text": "from",
+     "start": 291.556,
+     "end": 291.716
+    },
+    {
+     "text": "owning",
+     "start": 291.716,
+     "end": 291.936
+    },
+    {
+     "text": "stuff",
+     "start": 291.936,
+     "end": 292.276
+    },
+    {
+     "text": "the",
+     "start": 292.536,
+     "end": 292.576
+    },
+    {
+     "text": "less",
+     "start": 292.576,
+     "end": 292.716
+    },
+    {
+     "text": "you",
+     "start": 292.716,
+     "end": 292.856
+    },
+    {
+     "text": "pay.",
+     "start": 292.856,
+     "end": 293.056
+    },
+    {
+     "text": "That's",
+     "start": 293.436,
+     "end": 293.596
+    },
+    {
+     "text": "the",
+     "start": 293.596,
+     "end": 293.676
+    },
+    {
+     "text": "whole",
+     "start": 293.676,
+     "end": 293.796
+    },
+    {
+     "text": "game.",
+     "start": 293.796,
+     "end": 293.956
+    }
+   ]
+  },
+  {
+   "id": "n8",
+   "text": "Buffett's secretary finding out.",
+   "start": 294.618875,
+   "end": 296.018875,
+   "words": [
+    {
+     "text": "Buffett's",
+     "start": 294.619,
+     "end": 294.939
+    },
+    {
+     "text": "secretary",
+     "start": 294.939,
+     "end": 295.199
+    },
+    {
+     "text": "finding",
+     "start": 295.199,
+     "end": 295.659
+    },
+    {
+     "text": "out.",
+     "start": 295.659,
+     "end": 296.019
+    }
+   ]
+  },
+  {
+   "id": "n9",
+   "text": "Same thing in your office right now. The person cleaning the floor might pay a higher rate than the guy who owns the building.",
+   "start": 296.6733125,
+   "end": 301.0133125,
+   "words": [
+    {
+     "text": "Same",
+     "start": 296.673,
+     "end": 296.853
+    },
+    {
+     "text": "thing",
+     "start": 296.853,
+     "end": 297.053
+    },
+    {
+     "text": "in",
+     "start": 297.053,
+     "end": 297.153
+    },
+    {
+     "text": "your",
+     "start": 297.153,
+     "end": 297.233
+    },
+    {
+     "text": "office",
+     "start": 297.233,
+     "end": 297.453
+    },
+    {
+     "text": "right",
+     "start": 297.453,
+     "end": 297.673
+    },
+    {
+     "text": "now.",
+     "start": 297.673,
+     "end": 297.913
+    },
+    {
+     "text": "The",
+     "start": 298.193,
+     "end": 298.253
+    },
+    {
+     "text": "person",
+     "start": 298.253,
+     "end": 298.393
+    },
+    {
+     "text": "cleaning",
+     "start": 298.393,
+     "end": 298.713
+    },
+    {
+     "text": "the",
+     "start": 298.713,
+     "end": 298.893
+    },
+    {
+     "text": "floor",
+     "start": 298.893,
+     "end": 299.073
+    },
+    {
+     "text": "might",
+     "start": 299.073,
+     "end": 299.333
+    },
+    {
+     "text": "pay",
+     "start": 299.333,
+     "end": 299.513
+    },
+    {
+     "text": "a",
+     "start": 299.513,
+     "end": 299.633
+    },
+    {
+     "text": "higher",
+     "start": 299.633,
+     "end": 299.793
+    },
+    {
+     "text": "rate",
+     "start": 299.793,
+     "end": 299.993
+    },
+    {
+     "text": "than",
+     "start": 299.993,
+     "end": 300.133
+    },
+    {
+     "text": "the",
+     "start": 300.133,
+     "end": 300.213
+    },
+    {
+     "text": "guy",
+     "start": 300.213,
+     "end": 300.373
+    },
+    {
+     "text": "who",
+     "start": 300.373,
+     "end": 300.493
+    },
+    {
+     "text": "owns",
+     "start": 300.493,
+     "end": 300.673
+    },
+    {
+     "text": "the",
+     "start": 300.673,
+     "end": 300.813
+    },
+    {
+     "text": "building.",
+     "start": 300.813,
+     "end": 301.013
+    }
+   ]
+  },
+  {
+   "id": "c7a",
+   "text": "Now to be fair there's another side. And smart people really disagree.",
+   "start": 301.6954375,
+   "end": 304.55543750000004,
+   "words": [
+    {
+     "text": "Now",
+     "start": 301.695,
+     "end": 301.815
+    },
+    {
+     "text": "to",
+     "start": 301.815,
+     "end": 301.895
+    },
+    {
+     "text": "be",
+     "start": 301.895,
+     "end": 301.995
+    },
+    {
+     "text": "fair",
+     "start": 301.995,
+     "end": 302.215
+    },
+    {
+     "text": "there's",
+     "start": 302.355,
+     "end": 302.495
+    },
+    {
+     "text": "another",
+     "start": 302.495,
+     "end": 302.655
+    },
+    {
+     "text": "side.",
+     "start": 302.655,
+     "end": 303.075
+    },
+    {
+     "text": "And",
+     "start": 303.435,
+     "end": 303.535
+    },
+    {
+     "text": "smart",
+     "start": 303.535,
+     "end": 303.715
+    },
+    {
+     "text": "people",
+     "start": 303.715,
+     "end": 303.975
+    },
+    {
+     "text": "really",
+     "start": 303.975,
+     "end": 304.215
+    },
+    {
+     "text": "disagree.",
+     "start": 304.215,
+     "end": 304.555
+    }
+   ]
+  },
+  {
+   "id": "c7b",
+   "text": "Taxing paper gains is tricky. Shares can crash. Imagine paying tax on a billion and next year the billion is gone.",
+   "start": 305.3520833333333,
+   "end": 311.0520833333333,
+   "words": [
+    {
+     "text": "Taxing",
+     "start": 305.352,
+     "end": 305.692
+    },
+    {
+     "text": "paper",
+     "start": 305.692,
+     "end": 305.852
+    },
+    {
+     "text": "gains",
+     "start": 305.852,
+     "end": 306.072
+    },
+    {
+     "text": "is",
+     "start": 306.072,
+     "end": 306.272
+    },
+    {
+     "text": "tricky.",
+     "start": 306.272,
+     "end": 306.492
+    },
+    {
+     "text": "Shares",
+     "start": 306.892,
+     "end": 307.012
+    },
+    {
+     "text": "can",
+     "start": 307.012,
+     "end": 307.292
+    },
+    {
+     "text": "crash.",
+     "start": 307.292,
+     "end": 307.512
+    },
+    {
+     "text": "Imagine",
+     "start": 308.212,
+     "end": 308.272
+    },
+    {
+     "text": "paying",
+     "start": 308.272,
+     "end": 308.712
+    },
+    {
+     "text": "tax",
+     "start": 308.712,
+     "end": 308.992
+    },
+    {
+     "text": "on",
+     "start": 308.992,
+     "end": 309.272
+    },
+    {
+     "text": "a",
+     "start": 309.272,
+     "end": 309.332
+    },
+    {
+     "text": "billion",
+     "start": 309.332,
+     "end": 309.512
+    },
+    {
+     "text": "and",
+     "start": 309.892,
+     "end": 309.952
+    },
+    {
+     "text": "next",
+     "start": 309.952,
+     "end": 310.112
+    },
+    {
+     "text": "year",
+     "start": 310.112,
+     "end": 310.352
+    },
+    {
+     "text": "the",
+     "start": 310.352,
+     "end": 310.472
+    },
+    {
+     "text": "billion",
+     "start": 310.472,
+     "end": 310.692
+    },
+    {
+     "text": "is",
+     "start": 310.692,
+     "end": 310.852
+    },
+    {
+     "text": "gone.",
+     "start": 310.852,
+     "end": 311.052
+    }
+   ]
+  },
+  {
+   "id": "c7c",
+   "text": "The company already pays tax on its profits. So some people say taxing the owner again is taxing twice.",
+   "start": 311.7584375,
+   "end": 316.9584375,
+   "words": [
+    {
+     "text": "The",
+     "start": 311.758,
+     "end": 311.838
+    },
+    {
+     "text": "company",
+     "start": 311.838,
+     "end": 312.078
+    },
+    {
+     "text": "already",
+     "start": 312.078,
+     "end": 312.418
+    },
+    {
+     "text": "pays",
+     "start": 312.418,
+     "end": 312.698
+    },
+    {
+     "text": "tax",
+     "start": 312.698,
+     "end": 312.978
+    },
+    {
+     "text": "on",
+     "start": 312.978,
+     "end": 313.198
+    },
+    {
+     "text": "its",
+     "start": 313.198,
+     "end": 313.298
+    },
+    {
+     "text": "profits.",
+     "start": 313.298,
+     "end": 313.458
+    },
+    {
+     "text": "So",
+     "start": 314.238,
+     "end": 314.358
+    },
+    {
+     "text": "some",
+     "start": 314.358,
+     "end": 314.558
+    },
+    {
+     "text": "people",
+     "start": 314.558,
+     "end": 314.798
+    },
+    {
+     "text": "say",
+     "start": 314.798,
+     "end": 315.038
+    },
+    {
+     "text": "taxing",
+     "start": 315.038,
+     "end": 315.358
+    },
+    {
+     "text": "the",
+     "start": 315.358,
+     "end": 315.598
+    },
+    {
+     "text": "owner",
+     "start": 315.598,
+     "end": 315.738
+    },
+    {
+     "text": "again",
+     "start": 315.738,
+     "end": 316.098
+    },
+    {
+     "text": "is",
+     "start": 316.098,
+     "end": 316.378
+    },
+    {
+     "text": "taxing",
+     "start": 316.378,
+     "end": 316.638
+    },
+    {
+     "text": "twice.",
+     "start": 316.638,
+     "end": 316.958
+    }
+   ]
+  },
+  {
+   "id": "n34",
+   "text": "And the top earners already pay a huge share of all income tax. That part is true too.",
+   "start": 317.757875,
+   "end": 321.993875,
+   "words": [
+    {
+     "text": "And",
+     "start": 317.758,
+     "end": 317.934
+    },
+    {
+     "text": "the",
+     "start": 317.954,
+     "end": 318.13
+    },
+    {
+     "text": "top",
+     "start": 318.15,
+     "end": 318.326
+    },
+    {
+     "text": "earners",
+     "start": 318.346,
+     "end": 318.698
+    },
+    {
+     "text": "already",
+     "start": 318.737,
+     "end": 319.09
+    },
+    {
+     "text": "pay",
+     "start": 319.129,
+     "end": 319.305
+    },
+    {
+     "text": "a",
+     "start": 319.325,
+     "end": 319.413
+    },
+    {
+     "text": "huge",
+     "start": 319.423,
+     "end": 319.643
+    },
+    {
+     "text": "share",
+     "start": 319.668,
+     "end": 319.932
+    },
+    {
+     "text": "of",
+     "start": 319.961,
+     "end": 320.094
+    },
+    {
+     "text": "all",
+     "start": 320.108,
+     "end": 320.285
+    },
+    {
+     "text": "income",
+     "start": 320.304,
+     "end": 320.613
+    },
+    {
+     "text": "tax.",
+     "start": 320.647,
+     "end": 320.867
+    },
+    {
+     "text": "That",
+     "start": 320.892,
+     "end": 321.112
+    },
+    {
+     "text": "part",
+     "start": 321.137,
+     "end": 321.357
+    },
+    {
+     "text": "is",
+     "start": 321.381,
+     "end": 321.514
+    },
+    {
+     "text": "true",
+     "start": 321.528,
+     "end": 321.749
+    },
+    {
+     "text": "too.",
+     "start": 321.773,
+     "end": 321.994
+    }
+   ]
+  },
+  {
+   "id": "c7e",
+   "text": "And the other side says that's nice but a regular worker can't borrow against a billion to skip paying.",
+   "start": 322.61454166666664,
+   "end": 327.23454166666664,
+   "words": [
+    {
+     "text": "And",
+     "start": 322.615,
+     "end": 322.715
+    },
+    {
+     "text": "the",
+     "start": 322.715,
+     "end": 322.775
+    },
+    {
+     "text": "other",
+     "start": 322.775,
+     "end": 322.955
+    },
+    {
+     "text": "side",
+     "start": 322.955,
+     "end": 323.215
+    },
+    {
+     "text": "says",
+     "start": 323.215,
+     "end": 323.495
+    },
+    {
+     "text": "that's",
+     "start": 323.495,
+     "end": 323.935
+    },
+    {
+     "text": "nice",
+     "start": 323.935,
+     "end": 324.175
+    },
+    {
+     "text": "but",
+     "start": 324.555,
+     "end": 324.655
+    },
+    {
+     "text": "a",
+     "start": 324.655,
+     "end": 324.715
+    },
+    {
+     "text": "regular",
+     "start": 324.715,
+     "end": 324.995
+    },
+    {
+     "text": "worker",
+     "start": 324.995,
+     "end": 325.295
+    },
+    {
+     "text": "can't",
+     "start": 325.295,
+     "end": 325.655
+    },
+    {
+     "text": "borrow",
+     "start": 325.655,
+     "end": 325.795
+    },
+    {
+     "text": "against",
+     "start": 325.795,
+     "end": 326.175
+    },
+    {
+     "text": "a",
+     "start": 326.175,
+     "end": 326.335
+    },
+    {
+     "text": "billion",
+     "start": 326.335,
+     "end": 326.515
+    },
+    {
+     "text": "to",
+     "start": 326.515,
+     "end": 326.795
+    },
+    {
+     "text": "skip",
+     "start": 326.795,
+     "end": 326.955
+    },
+    {
+     "text": "paying.",
+     "start": 326.955,
+     "end": 327.235
+    }
+   ]
+  },
+  {
+   "id": "c7f",
+   "text": "Should the rules change? That's a political fight. But now you know how the game actually works.",
+   "start": 327.9853958333333,
+   "end": 332.1253958333333,
+   "words": [
+    {
+     "text": "Should",
+     "start": 327.985,
+     "end": 328.125
+    },
+    {
+     "text": "the",
+     "start": 328.125,
+     "end": 328.205
+    },
+    {
+     "text": "rules",
+     "start": 328.205,
+     "end": 328.385
+    },
+    {
+     "text": "change?",
+     "start": 328.385,
+     "end": 328.685
+    },
+    {
+     "text": "That's",
+     "start": 329.345,
+     "end": 329.565
+    },
+    {
+     "text": "a",
+     "start": 329.565,
+     "end": 329.585
+    },
+    {
+     "text": "political",
+     "start": 329.585,
+     "end": 329.745
+    },
+    {
+     "text": "fight.",
+     "start": 329.745,
+     "end": 330.185
+    },
+    {
+     "text": "But",
+     "start": 330.505,
+     "end": 330.605
+    },
+    {
+     "text": "now",
+     "start": 330.605,
+     "end": 330.745
+    },
+    {
+     "text": "you",
+     "start": 330.745,
+     "end": 330.925
+    },
+    {
+     "text": "know",
+     "start": 330.925,
+     "end": 331.045
+    },
+    {
+     "text": "how",
+     "start": 331.045,
+     "end": 331.225
+    },
+    {
+     "text": "the",
+     "start": 331.225,
+     "end": 331.325
+    },
+    {
+     "text": "game",
+     "start": 331.325,
+     "end": 331.485
+    },
+    {
+     "text": "actually",
+     "start": 331.485,
+     "end": 331.765
+    },
+    {
+     "text": "works.",
+     "start": 331.765,
+     "end": 332.125
+    }
+   ]
+  },
+  {
+   "id": "c8a",
+   "text": "So can I use any of this? A little. Quick reminder this is education and not advice.",
+   "start": 335.13191666666665,
+   "end": 339.39191666666665,
+   "words": [
+    {
+     "text": "So",
+     "start": 335.132,
+     "end": 335.312
+    },
+    {
+     "text": "can",
+     "start": 335.532,
+     "end": 335.632
+    },
+    {
+     "text": "I",
+     "start": 335.632,
+     "end": 335.752
+    },
+    {
+     "text": "use",
+     "start": 335.752,
+     "end": 335.912
+    },
+    {
+     "text": "any",
+     "start": 335.912,
+     "end": 336.092
+    },
+    {
+     "text": "of",
+     "start": 336.092,
+     "end": 336.212
+    },
+    {
+     "text": "this?",
+     "start": 336.212,
+     "end": 336.352
+    },
+    {
+     "text": "A",
+     "start": 336.852,
+     "end": 336.892
+    },
+    {
+     "text": "little.",
+     "start": 336.892,
+     "end": 337.052
+    },
+    {
+     "text": "Quick",
+     "start": 337.732,
+     "end": 337.732
+    },
+    {
+     "text": "reminder",
+     "start": 337.732,
+     "end": 337.912
+    },
+    {
+     "text": "this",
+     "start": 337.912,
+     "end": 338.252
+    },
+    {
+     "text": "is",
+     "start": 338.252,
+     "end": 338.332
+    },
+    {
+     "text": "education",
+     "start": 338.332,
+     "end": 338.612
+    },
+    {
+     "text": "and",
+     "start": 338.612,
+     "end": 339.072
+    },
+    {
+     "text": "not",
+     "start": 339.072,
+     "end": 339.212
+    },
+    {
+     "text": "advice.",
+     "start": 339.212,
+     "end": 339.392
+    }
+   ]
+  },
+  {
+   "id": "c8b",
+   "text": "First. Own something that grows. Not just a paycheck. Even small investments grow without being taxed every year.",
+   "start": 340.28333333333336,
+   "end": 346.06333333333333,
+   "words": [
+    {
+     "text": "First.",
+     "start": 340.283,
+     "end": 340.663
+    },
+    {
+     "text": "Own",
+     "start": 341.183,
+     "end": 341.243
+    },
+    {
+     "text": "something",
+     "start": 341.243,
+     "end": 341.563
+    },
+    {
+     "text": "that",
+     "start": 341.563,
+     "end": 341.743
+    },
+    {
+     "text": "grows.",
+     "start": 341.743,
+     "end": 341.943
+    },
+    {
+     "text": "Not",
+     "start": 342.583,
+     "end": 342.663
+    },
+    {
+     "text": "just",
+     "start": 342.663,
+     "end": 342.843
+    },
+    {
+     "text": "a",
+     "start": 342.843,
+     "end": 342.963
+    },
+    {
+     "text": "paycheck.",
+     "start": 342.963,
+     "end": 343.163
+    },
+    {
+     "text": "Even",
+     "start": 343.683,
+     "end": 343.823
+    },
+    {
+     "text": "small",
+     "start": 343.823,
+     "end": 344.043
+    },
+    {
+     "text": "investments",
+     "start": 344.043,
+     "end": 344.463
+    },
+    {
+     "text": "grow",
+     "start": 344.463,
+     "end": 344.823
+    },
+    {
+     "text": "without",
+     "start": 344.823,
+     "end": 345.063
+    },
+    {
+     "text": "being",
+     "start": 345.063,
+     "end": 345.323
+    },
+    {
+     "text": "taxed",
+     "start": 345.323,
+     "end": 345.563
+    },
+    {
+     "text": "every",
+     "start": 345.563,
+     "end": 345.843
+    },
+    {
+     "text": "year.",
+     "start": 345.843,
+     "end": 346.063
+    }
+   ]
+  },
+  {
+   "id": "n10",
+   "text": "Me buying my first tiny piece of the tree.",
+   "start": 346.70047916666664,
+   "end": 348.30047916666666,
+   "words": [
+    {
+     "text": "Me",
+     "start": 346.7,
+     "end": 346.8
+    },
+    {
+     "text": "buying",
+     "start": 346.8,
+     "end": 347.06
+    },
+    {
+     "text": "my",
+     "start": 347.06,
+     "end": 347.26
+    },
+    {
+     "text": "first",
+     "start": 347.26,
+     "end": 347.46
+    },
+    {
+     "text": "tiny",
+     "start": 347.46,
+     "end": 347.66
+    },
+    {
+     "text": "piece",
+     "start": 347.66,
+     "end": 347.9
+    },
+    {
+     "text": "of",
+     "start": 347.9,
+     "end": 348.04
+    },
+    {
+     "text": "the",
+     "start": 348.04,
+     "end": 348.12
+    },
+    {
+     "text": "tree.",
+     "start": 348.12,
+     "end": 348.3
+    }
+   ]
+  },
+  {
+   "id": "n35",
+   "text": "You don't need a billion. A few dollars a week in something that grows is still a tree. A tiny tree. But a tree.",
+   "start": 348.9618541666667,
+   "end": 354.5818541666667,
+   "words": [
+    {
+     "text": "You",
+     "start": 348.962,
+     "end": 349.042
+    },
+    {
+     "text": "don't",
+     "start": 349.042,
+     "end": 349.242
+    },
+    {
+     "text": "need",
+     "start": 349.242,
+     "end": 349.342
+    },
+    {
+     "text": "a",
+     "start": 349.342,
+     "end": 349.422
+    },
+    {
+     "text": "billion.",
+     "start": 349.422,
+     "end": 349.602
+    },
+    {
+     "text": "A",
+     "start": 350.102,
+     "end": 350.142
+    },
+    {
+     "text": "few",
+     "start": 350.142,
+     "end": 350.242
+    },
+    {
+     "text": "dollars",
+     "start": 350.242,
+     "end": 350.482
+    },
+    {
+     "text": "a",
+     "start": 350.482,
+     "end": 350.662
+    },
+    {
+     "text": "week",
+     "start": 350.662,
+     "end": 350.802
+    },
+    {
+     "text": "in",
+     "start": 350.802,
+     "end": 350.962
+    },
+    {
+     "text": "something",
+     "start": 350.962,
+     "end": 351.162
+    },
+    {
+     "text": "that",
+     "start": 351.162,
+     "end": 351.382
+    },
+    {
+     "text": "grows",
+     "start": 351.382,
+     "end": 351.582
+    },
+    {
+     "text": "is",
+     "start": 351.582,
+     "end": 351.862
+    },
+    {
+     "text": "still",
+     "start": 351.862,
+     "end": 352.102
+    },
+    {
+     "text": "a",
+     "start": 352.102,
+     "end": 352.182
+    },
+    {
+     "text": "tree.",
+     "start": 352.182,
+     "end": 352.402
+    },
+    {
+     "text": "A",
+     "start": 352.682,
+     "end": 352.782
+    },
+    {
+     "text": "tiny",
+     "start": 352.782,
+     "end": 352.942
+    },
+    {
+     "text": "tree.",
+     "start": 352.942,
+     "end": 353.262
+    },
+    {
+     "text": "But",
+     "start": 353.882,
+     "end": 353.942
+    },
+    {
+     "text": "a",
+     "start": 353.942,
+     "end": 354.062
+    },
+    {
+     "text": "tree.",
+     "start": 354.062,
+     "end": 354.582
+    }
+   ]
+  },
+  {
+   "id": "c8c",
+   "text": "Second. Be patient. In America if you hold an investment more than a year before you sell the tax is usually lower. For a lot of people it can even be zero.",
+   "start": 354.9698333333333,
+   "end": 362.64983333333333,
+   "words": [
+    {
+     "text": "Second.",
+     "start": 354.97,
+     "end": 355.25
+    },
+    {
+     "text": "Be",
+     "start": 355.75,
+     "end": 356.01
+    },
+    {
+     "text": "patient.",
+     "start": 356.01,
+     "end": 356.37
+    },
+    {
+     "text": "In",
+     "start": 356.91,
+     "end": 356.93
+    },
+    {
+     "text": "America",
+     "start": 356.93,
+     "end": 357.17
+    },
+    {
+     "text": "if",
+     "start": 357.39,
+     "end": 357.49
+    },
+    {
+     "text": "you",
+     "start": 357.49,
+     "end": 357.57
+    },
+    {
+     "text": "hold",
+     "start": 357.57,
+     "end": 357.77
+    },
+    {
+     "text": "an",
+     "start": 357.77,
+     "end": 357.89
+    },
+    {
+     "text": "investment",
+     "start": 357.89,
+     "end": 358.21
+    },
+    {
+     "text": "more",
+     "start": 358.21,
+     "end": 358.53
+    },
+    {
+     "text": "than",
+     "start": 358.53,
+     "end": 358.69
+    },
+    {
+     "text": "a",
+     "start": 358.69,
+     "end": 358.77
+    },
+    {
+     "text": "year",
+     "start": 358.77,
+     "end": 358.93
+    },
+    {
+     "text": "before",
+     "start": 358.93,
+     "end": 359.13
+    },
+    {
+     "text": "you",
+     "start": 359.13,
+     "end": 359.33
+    },
+    {
+     "text": "sell",
+     "start": 359.33,
+     "end": 359.49
+    },
+    {
+     "text": "the",
+     "start": 359.49,
+     "end": 359.61
+    },
+    {
+     "text": "tax",
+     "start": 359.61,
+     "end": 359.83
+    },
+    {
+     "text": "is",
+     "start": 359.83,
+     "end": 360.09
+    },
+    {
+     "text": "usually",
+     "start": 360.09,
+     "end": 360.37
+    },
+    {
+     "text": "lower.",
+     "start": 360.37,
+     "end": 360.67
+    },
+    {
+     "text": "For",
+     "start": 361.31,
+     "end": 361.31
+    },
+    {
+     "text": "a",
+     "start": 361.31,
+     "end": 361.41
+    },
+    {
+     "text": "lot",
+     "start": 361.41,
+     "end": 361.53
+    },
+    {
+     "text": "of",
+     "start": 361.53,
+     "end": 361.63
+    },
+    {
+     "text": "people",
+     "start": 361.63,
+     "end": 361.87
+    },
+    {
+     "text": "it",
+     "start": 361.95,
+     "end": 362.05
+    },
+    {
+     "text": "can",
+     "start": 362.05,
+     "end": 362.15
+    },
+    {
+     "text": "even",
+     "start": 362.15,
+     "end": 362.27
+    },
+    {
+     "text": "be",
+     "start": 362.27,
+     "end": 362.45
+    },
+    {
+     "text": "zero.",
+     "start": 362.45,
+     "end": 362.65
+    }
+   ]
+  },
+  {
+   "id": "n11",
+   "text": "Same Richie rule. Just smaller. Don't sell too fast.",
+   "start": 363.4261875,
+   "end": 366.16618750000004,
+   "words": [
+    {
+     "text": "Same",
+     "start": 363.426,
+     "end": 363.626
+    },
+    {
+     "text": "Richie",
+     "start": 363.626,
+     "end": 363.906
+    },
+    {
+     "text": "rule.",
+     "start": 363.906,
+     "end": 364.166
+    },
+    {
+     "text": "Just",
+     "start": 364.446,
+     "end": 364.606
+    },
+    {
+     "text": "smaller.",
+     "start": 364.606,
+     "end": 364.906
+    },
+    {
+     "text": "Don't",
+     "start": 365.346,
+     "end": 365.506
+    },
+    {
+     "text": "sell",
+     "start": 365.506,
+     "end": 365.646
+    },
+    {
+     "text": "too",
+     "start": 365.646,
+     "end": 365.866
+    },
+    {
+     "text": "fast.",
+     "start": 365.866,
+     "end": 366.166
+    }
+   ]
+  },
+  {
+   "id": "c8d",
+   "text": "Third. Use accounts like a four oh one k or an IRA where your money can grow with less tax. Your boss might even add free money.",
+   "start": 366.887625,
+   "end": 373.312625,
+   "words": [
+    {
+     "text": "Third.",
+     "start": 366.888,
+     "end": 367.203
+    },
+    {
+     "text": "Use",
+     "start": 367.239,
+     "end": 367.419
+    },
+    {
+     "text": "accounts",
+     "start": 367.439,
+     "end": 367.844
+    },
+    {
+     "text": "like",
+     "start": 367.89,
+     "end": 368.115
+    },
+    {
+     "text": "a",
+     "start": 368.14,
+     "end": 368.23
+    },
+    {
+     "text": "four",
+     "start": 368.24,
+     "end": 368.465
+    },
+    {
+     "text": "oh",
+     "start": 368.49,
+     "end": 368.626
+    },
+    {
+     "text": "one",
+     "start": 368.641,
+     "end": 368.821
+    },
+    {
+     "text": "k",
+     "start": 368.841,
+     "end": 368.931
+    },
+    {
+     "text": "or",
+     "start": 368.941,
+     "end": 369.076
+    },
+    {
+     "text": "an",
+     "start": 369.091,
+     "end": 369.227
+    },
+    {
+     "text": "IRA",
+     "start": 369.242,
+     "end": 369.422
+    },
+    {
+     "text": "where",
+     "start": 369.442,
+     "end": 369.712
+    },
+    {
+     "text": "your",
+     "start": 369.742,
+     "end": 369.968
+    },
+    {
+     "text": "money",
+     "start": 369.993,
+     "end": 370.263
+    },
+    {
+     "text": "can",
+     "start": 370.293,
+     "end": 370.474
+    },
+    {
+     "text": "grow",
+     "start": 370.494,
+     "end": 370.719
+    },
+    {
+     "text": "with",
+     "start": 370.744,
+     "end": 370.969
+    },
+    {
+     "text": "less",
+     "start": 370.994,
+     "end": 371.22
+    },
+    {
+     "text": "tax.",
+     "start": 371.245,
+     "end": 371.47
+    },
+    {
+     "text": "Your",
+     "start": 371.495,
+     "end": 371.72
+    },
+    {
+     "text": "boss",
+     "start": 371.746,
+     "end": 371.971
+    },
+    {
+     "text": "might",
+     "start": 371.996,
+     "end": 372.266
+    },
+    {
+     "text": "even",
+     "start": 372.296,
+     "end": 372.522
+    },
+    {
+     "text": "add",
+     "start": 372.547,
+     "end": 372.727
+    },
+    {
+     "text": "free",
+     "start": 372.747,
+     "end": 372.972
+    },
+    {
+     "text": "money.",
+     "start": 372.997,
+     "end": 373.313
+    }
+   ]
+  },
+  {
+   "id": "n36",
+   "text": "If your job matches what you put in and you don't take it that's literally free money left on the table. Go check tomorrow.",
+   "start": 373.9678125,
+   "end": 379.36781249999996,
+   "words": [
+    {
+     "text": "If",
+     "start": 373.968,
+     "end": 374.068
+    },
+    {
+     "text": "your",
+     "start": 374.068,
+     "end": 374.168
+    },
+    {
+     "text": "job",
+     "start": 374.168,
+     "end": 374.388
+    },
+    {
+     "text": "matches",
+     "start": 374.388,
+     "end": 374.768
+    },
+    {
+     "text": "what",
+     "start": 374.768,
+     "end": 374.928
+    },
+    {
+     "text": "you",
+     "start": 374.928,
+     "end": 375.048
+    },
+    {
+     "text": "put",
+     "start": 375.048,
+     "end": 375.228
+    },
+    {
+     "text": "in",
+     "start": 375.228,
+     "end": 375.408
+    },
+    {
+     "text": "and",
+     "start": 375.648,
+     "end": 375.708
+    },
+    {
+     "text": "you",
+     "start": 375.708,
+     "end": 375.788
+    },
+    {
+     "text": "don't",
+     "start": 375.788,
+     "end": 376.028
+    },
+    {
+     "text": "take",
+     "start": 376.028,
+     "end": 376.188
+    },
+    {
+     "text": "it",
+     "start": 376.188,
+     "end": 376.408
+    },
+    {
+     "text": "that's",
+     "start": 376.688,
+     "end": 376.868
+    },
+    {
+     "text": "literally",
+     "start": 376.868,
+     "end": 377.068
+    },
+    {
+     "text": "free",
+     "start": 377.068,
+     "end": 377.388
+    },
+    {
+     "text": "money",
+     "start": 377.388,
+     "end": 377.608
+    },
+    {
+     "text": "left",
+     "start": 377.608,
+     "end": 377.888
+    },
+    {
+     "text": "on",
+     "start": 377.888,
+     "end": 378.028
+    },
+    {
+     "text": "the",
+     "start": 378.028,
+     "end": 378.108
+    },
+    {
+     "text": "table.",
+     "start": 378.108,
+     "end": 378.368
+    },
+    {
+     "text": "Go",
+     "start": 378.788,
+     "end": 378.908
+    },
+    {
+     "text": "check",
+     "start": 378.908,
+     "end": 379.048
+    },
+    {
+     "text": "tomorrow.",
+     "start": 379.048,
+     "end": 379.368
+    }
+   ]
+  },
+  {
+   "id": "c8e",
+   "text": "And fourth. The step up rule isn't only for billionaires. If you ever inherit grandma's house it works for you too.",
+   "start": 380.13708333333335,
+   "end": 385.27708333333334,
+   "words": [
+    {
+     "text": "And",
+     "start": 380.137,
+     "end": 380.217
+    },
+    {
+     "text": "fourth.",
+     "start": 380.217,
+     "end": 380.457
+    },
+    {
+     "text": "The",
+     "start": 381.037,
+     "end": 381.117
+    },
+    {
+     "text": "step",
+     "start": 381.117,
+     "end": 381.297
+    },
+    {
+     "text": "up",
+     "start": 381.297,
+     "end": 381.437
+    },
+    {
+     "text": "rule",
+     "start": 381.437,
+     "end": 381.617
+    },
+    {
+     "text": "isn't",
+     "start": 381.617,
+     "end": 381.937
+    },
+    {
+     "text": "only",
+     "start": 381.937,
+     "end": 382.097
+    },
+    {
+     "text": "for",
+     "start": 382.097,
+     "end": 382.297
+    },
+    {
+     "text": "billionaires.",
+     "start": 382.297,
+     "end": 382.577
+    },
+    {
+     "text": "If",
+     "start": 383.157,
+     "end": 383.237
+    },
+    {
+     "text": "you",
+     "start": 383.237,
+     "end": 383.357
+    },
+    {
+     "text": "ever",
+     "start": 383.357,
+     "end": 383.537
+    },
+    {
+     "text": "inherit",
+     "start": 383.537,
+     "end": 383.737
+    },
+    {
+     "text": "grandma's",
+     "start": 383.737,
+     "end": 384.297
+    },
+    {
+     "text": "house",
+     "start": 384.297,
+     "end": 384.417
+    },
+    {
+     "text": "it",
+     "start": 384.457,
+     "end": 384.597
+    },
+    {
+     "text": "works",
+     "start": 384.597,
+     "end": 384.717
+    },
+    {
+     "text": "for",
+     "start": 384.717,
+     "end": 384.937
+    },
+    {
+     "text": "you",
+     "start": 384.937,
+     "end": 385.077
+    },
+    {
+     "text": "too.",
+     "start": 385.077,
+     "end": 385.277
+    }
+   ]
+  },
+  {
+   "id": "n12",
+   "text": "Me realizing I have one thing in common with Richie.",
+   "start": 385.9825416666667,
+   "end": 387.9825416666667,
+   "words": [
+    {
+     "text": "Me",
+     "start": 385.983,
+     "end": 386.083
+    },
+    {
+     "text": "realizing",
+     "start": 386.083,
+     "end": 386.363
+    },
+    {
+     "text": "I",
+     "start": 386.363,
+     "end": 386.743
+    },
+    {
+     "text": "have",
+     "start": 386.743,
+     "end": 386.903
+    },
+    {
+     "text": "one",
+     "start": 386.903,
+     "end": 387.063
+    },
+    {
+     "text": "thing",
+     "start": 387.063,
+     "end": 387.243
+    },
+    {
+     "text": "in",
+     "start": 387.243,
+     "end": 387.343
+    },
+    {
+     "text": "common",
+     "start": 387.343,
+     "end": 387.563
+    },
+    {
+     "text": "with",
+     "start": 387.563,
+     "end": 387.803
+    },
+    {
+     "text": "Richie.",
+     "start": 387.803,
+     "end": 387.983
+    }
+   ]
+  },
+  {
+   "id": "c9b",
+   "text": "So that's the difference. I get taxed on what I earn. Richie gets taxed on what he sells. And he never sells.",
+   "start": 388.7104166666667,
+   "end": 394.6504166666667,
+   "words": [
+    {
+     "text": "So",
+     "start": 388.71,
+     "end": 388.87
+    },
+    {
+     "text": "that's",
+     "start": 388.87,
+     "end": 389.31
+    },
+    {
+     "text": "the",
+     "start": 389.31,
+     "end": 389.41
+    },
+    {
+     "text": "difference.",
+     "start": 389.41,
+     "end": 389.67
+    },
+    {
+     "text": "I",
+     "start": 390.13,
+     "end": 390.15
+    },
+    {
+     "text": "get",
+     "start": 390.15,
+     "end": 390.29
+    },
+    {
+     "text": "taxed",
+     "start": 390.29,
+     "end": 390.49
+    },
+    {
+     "text": "on",
+     "start": 390.49,
+     "end": 390.77
+    },
+    {
+     "text": "what",
+     "start": 390.77,
+     "end": 390.91
+    },
+    {
+     "text": "I",
+     "start": 390.91,
+     "end": 391.03
+    },
+    {
+     "text": "earn.",
+     "start": 391.03,
+     "end": 391.29
+    },
+    {
+     "text": "Richie",
+     "start": 391.83,
+     "end": 391.83
+    },
+    {
+     "text": "gets",
+     "start": 391.83,
+     "end": 392.11
+    },
+    {
+     "text": "taxed",
+     "start": 392.11,
+     "end": 392.35
+    },
+    {
+     "text": "on",
+     "start": 392.35,
+     "end": 392.67
+    },
+    {
+     "text": "what",
+     "start": 392.67,
+     "end": 392.79
+    },
+    {
+     "text": "he",
+     "start": 392.79,
+     "end": 392.91
+    },
+    {
+     "text": "sells.",
+     "start": 392.91,
+     "end": 393.15
+    },
+    {
+     "text": "And",
+     "start": 393.83,
+     "end": 393.99
+    },
+    {
+     "text": "he",
+     "start": 393.99,
+     "end": 394.19
+    },
+    {
+     "text": "never",
+     "start": 394.19,
+     "end": 394.37
+    },
+    {
+     "text": "sells.",
+     "start": 394.37,
+     "end": 394.65
+    }
+   ]
+  },
+  {
+   "id": "n37",
+   "text": "Richie's whole trick in one picture.",
+   "start": 395.415125,
+   "end": 396.635125,
+   "words": [
+    {
+     "text": "Richie's",
+     "start": 395.415,
+     "end": 395.715
+    },
+    {
+     "text": "whole",
+     "start": 395.715,
+     "end": 395.835
+    },
+    {
+     "text": "trick",
+     "start": 395.835,
+     "end": 396.055
+    },
+    {
+     "text": "in",
+     "start": 396.055,
+     "end": 396.195
+    },
+    {
+     "text": "one",
+     "start": 396.195,
+     "end": 396.335
+    },
+    {
+     "text": "picture.",
+     "start": 396.335,
+     "end": 396.635
+    }
+   ]
+  },
+  {
+   "id": "c9c",
+   "text": "The rich don't have a secret. They just own the tree.",
+   "start": 397.33475,
+   "end": 399.47475,
+   "words": [
+    {
+     "text": "The",
+     "start": 397.335,
+     "end": 397.435
+    },
+    {
+     "text": "rich",
+     "start": 397.435,
+     "end": 397.555
+    },
+    {
+     "text": "don't",
+     "start": 397.555,
+     "end": 397.795
+    },
+    {
+     "text": "have",
+     "start": 397.795,
+     "end": 397.915
+    },
+    {
+     "text": "a",
+     "start": 397.915,
+     "end": 397.995
+    },
+    {
+     "text": "secret.",
+     "start": 397.995,
+     "end": 398.275
+    },
+    {
+     "text": "They",
+     "start": 398.735,
+     "end": 398.855
+    },
+    {
+     "text": "just",
+     "start": 398.855,
+     "end": 398.995
+    },
+    {
+     "text": "own",
+     "start": 398.995,
+     "end": 399.195
+    },
+    {
+     "text": "the",
+     "start": 399.195,
+     "end": 399.315
+    },
+    {
+     "text": "tree.",
+     "start": 399.315,
+     "end": 399.475
+    }
+   ]
+  },
+  {
+   "id": "c9e",
+   "text": "Next time I find out there's a secret number that follows me everywhere. My credit score. And nobody ever explained how it works.",
+   "start": 400.2379583333333,
+   "end": 405.7379583333333,
+   "words": [
+    {
+     "text": "Next",
+     "start": 400.238,
+     "end": 400.418
+    },
+    {
+     "text": "time",
+     "start": 400.418,
+     "end": 400.598
+    },
+    {
+     "text": "I",
+     "start": 400.598,
+     "end": 400.718
+    },
+    {
+     "text": "find",
+     "start": 400.718,
+     "end": 400.898
+    },
+    {
+     "text": "out",
+     "start": 400.898,
+     "end": 401.038
+    },
+    {
+     "text": "there's",
+     "start": 401.038,
+     "end": 401.198
+    },
+    {
+     "text": "a",
+     "start": 401.198,
+     "end": 401.298
+    },
+    {
+     "text": "secret",
+     "start": 401.298,
+     "end": 401.478
+    },
+    {
+     "text": "number",
+     "start": 401.478,
+     "end": 401.758
+    },
+    {
+     "text": "that",
+     "start": 401.758,
+     "end": 401.918
+    },
+    {
+     "text": "follows",
+     "start": 401.918,
+     "end": 402.178
+    },
+    {
+     "text": "me",
+     "start": 402.178,
+     "end": 402.338
+    },
+    {
+     "text": "everywhere.",
+     "start": 402.338,
+     "end": 402.578
+    },
+    {
+     "text": "My",
+     "start": 403.298,
+     "end": 403.438
+    },
+    {
+     "text": "credit",
+     "start": 403.438,
+     "end": 403.678
+    },
+    {
+     "text": "score.",
+     "start": 403.678,
+     "end": 403.938
+    },
+    {
+     "text": "And",
+     "start": 404.298,
+     "end": 404.458
+    },
+    {
+     "text": "nobody",
+     "start": 404.458,
+     "end": 404.678
+    },
+    {
+     "text": "ever",
+     "start": 404.678,
+     "end": 404.898
+    },
+    {
+     "text": "explained",
+     "start": 404.898,
+     "end": 405.158
+    },
+    {
+     "text": "how",
+     "start": 405.158,
+     "end": 405.438
+    },
+    {
+     "text": "it",
+     "start": 405.438,
+     "end": 405.538
+    },
+    {
+     "text": "works.",
+     "start": 405.538,
+     "end": 405.738
+    }
+   ]
+  },
+  {
+   "id": "c9f",
+   "text": "Subscribe. It's free. And unlike Richie's taxes it actually is free.",
+   "start": 406.4331041666667,
+   "end": 410.2531041666667,
+   "words": [
+    {
+     "text": "Subscribe.",
+     "start": 406.433,
+     "end": 406.753
+    },
+    {
+     "text": "It's",
+     "start": 407.113,
+     "end": 407.333
+    },
+    {
+     "text": "free.",
+     "start": 407.333,
+     "end": 407.473
+    },
+    {
+     "text": "And",
+     "start": 408.033,
+     "end": 408.193
+    },
+    {
+     "text": "unlike",
+     "start": 408.193,
+     "end": 408.573
+    },
+    {
+     "text": "Richie's",
+     "start": 408.573,
+     "end": 408.973
+    },
+    {
+     "text": "taxes",
+     "start": 408.973,
+     "end": 409.173
+    },
+    {
+     "text": "it",
+     "start": 409.573,
+     "end": 409.573
+    },
+    {
+     "text": "actually",
+     "start": 409.573,
+     "end": 409.793
+    },
+    {
+     "text": "is",
+     "start": 409.793,
+     "end": 410.053
+    },
+    {
+     "text": "free.",
+     "start": 410.053,
+     "end": 410.253
+    }
+   ]
+  }
+ ]
+}
