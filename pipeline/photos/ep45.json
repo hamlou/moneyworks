@@ -2,159 +2,315 @@
  "photos": [
   {
    "id": "gym",
-   "q": "gym treadmills"
+   "q": "gym treadmills",
+   "file": "File:Treadmills in Cobra Gym 24 Hour Fitness.jpg",
+   "credit": "Cobragym1",
+   "license": "CC BY-SA 3.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Treadmills_in_Cobra_Gym_24_Hour_Fitness.jpg"
   },
   {
    "id": "gym_front",
-   "q": "Planet Fitness"
+   "q": "Planet Fitness",
+   "file": "File:Planet Fitness Ypsilanti Twp.JPG",
+   "credit": "Dwight Burdette",
+   "license": "CC BY 3.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Planet_Fitness_Ypsilanti_Twp.JPG"
   },
   {
    "id": "stadium",
-   "q": "football stadium"
+   "q": "football stadium",
+   "file": "File:Petrovskiy football stadium in SPB.jpg",
+   "credit": "Florstein (Telegram:WikiPhoto.Space)",
+   "license": "CC BY-SA 4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Petrovskiy_football_stadium_in_SPB.jpg"
   },
   {
    "id": "buffet",
-   "q": "buffet food"
+   "q": "buffet food",
+   "file": "File:Man at chain buffet restaurant.jpg",
+   "credit": "MultiEditor03",
+   "license": "CC BY-SA 4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Man_at_chain_buffet_restaurant.jpg"
   },
   {
    "id": "plane_seats",
-   "q": "airplane cabin seats"
+   "q": "airplane cabin seats",
+   "file": "File:Interior View of Allegiant Airplane Cabin.jpg",
+   "credit": "User:YourUsername",
+   "license": "CC BY 2.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Interior_View_of_Allegiant_Airplane_Cabin.jpg"
   },
   {
    "id": "coffee",
-   "q": "coffee cup"
+   "q": "coffee cup",
+   "file": "File:A small cup of coffee.JPG",
+   "credit": "Julius Schorzman",
+   "license": "CC BY-SA 2.0",
+   "page": "https://commons.wikimedia.org/wiki/File:A_small_cup_of_coffee.JPG"
   },
   {
    "id": "pumpkins",
-   "q": "pumpkin patch"
+   "q": "pumpkin patch",
+   "file": "File:Rosa pumpkin patch 2.jpg",
+   "credit": "Ruff tuff cream puff",
+   "license": "CC0",
+   "page": "https://commons.wikimedia.org/wiki/File:Rosa_pumpkin_patch_2.jpg"
   },
   {
    "id": "selfie",
-   "q": "smartphone selfie"
+   "q": "smartphone selfie",
+   "file": "File:Polaroid Selfie 5,5\" Android Smartphone (16241074404).jpg",
+   "credit": "Maurizio Pesce from Milan, Italia",
+   "license": "CC BY 2.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Polaroid_Selfie_5,5%22_Android_Smartphone_(16241074404).jpg"
   },
   {
    "id": "treadmills",
-   "q": "treadmill"
+   "q": "treadmill",
+   "file": "File:Cyberith VidMill Video Production Treadmill used for Volumetric Capture.jpg",
+   "credit": "Holger2130",
+   "license": "CC BY-SA 4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Cyberith_VidMill_Video_Production_Treadmill_used_for_Volumetric_Capture.jpg"
   },
   {
    "id": "parking",
-   "q": "parking lot cars"
+   "q": "parking lot cars",
+   "file": "File:Parking lot, Gross-Gerau (P1090665).jpg",
+   "credit": "Matti Blume",
+   "license": "CC BY-SA 4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Parking_lot,_Gross-Gerau_(P1090665).jpg"
   },
   {
    "id": "shaker",
-   "q": "protein shaker bottle"
+   "q": "protein shaker bottle",
+   "file": "File:Person prepares a protein shake in a modern kitchen with water and containers nearby.jpg",
+   "credit": "Shixart1985",
+   "license": "CC BY 2.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Person_prepares_a_protein_shake_in_a_modern_kitchen_with_water_and_containers_nearby.jpg"
   },
   {
    "id": "runner",
-   "q": "jogging"
+   "q": "jogging",
+   "file": "File:Morning jogging session.jpg",
+   "credit": "Adewuyi Israel",
+   "license": "CC BY-SA 4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Morning_jogging_session.jpg"
   },
   {
    "id": "milk",
-   "q": "milk carton"
+   "q": "milk carton",
+   "file": "File:The Milk Carton Kids at 9-30 Club in Washington DC August 2012.jpg",
+   "credit": "ChunkyGlasses",
+   "license": "CC BY 2.0",
+   "page": "https://commons.wikimedia.org/wiki/File:The_Milk_Carton_Kids_at_9-30_Club_in_Washington_DC_August_2012.jpg"
   },
   {
    "id": "rain",
-   "q": "rain on window"
+   "q": "rain on window",
+   "file": "File:Four versions of a floodlight through rain on a window.jpg",
+   "credit": "W.carter",
+   "license": "CC BY-SA 4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Four_versions_of_a_floodlight_through_rain_on_a_window.jpg"
   },
   {
    "id": "card",
-   "q": "credit card"
+   "q": "credit card",
+   "file": "File:Credit-cards.jpg",
+   "credit": "Lotus Head from Johannesburg, Gauteng, South Africa",
+   "license": "CC BY-SA 2.5",
+   "page": "https://commons.wikimedia.org/wiki/File:Credit-cards.jpg"
   },
   {
    "id": "calculator",
-   "q": "calculator"
+   "q": "calculator",
+   "file": "File:Citizen SLD-100NR calculator.jpg",
+   "credit": "LoMit",
+   "license": "CC BY-SA 4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Citizen_SLD-100NR_calculator.jpg"
   },
   {
    "id": "shower",
-   "q": "shower head"
+   "q": "shower head",
+   "file": "File:Showerhead.JPG",
+   "credit": "Wikimedia Commons",
+   "license": "CC BY-SA 3.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Showerhead.JPG"
   },
   {
    "id": "trainer",
-   "q": "personal trainer"
+   "q": "personal trainer",
+   "file": "File:Personal Trainer (52613798782).jpg",
+   "credit": "Paul Hudson from United Kingdom",
+   "license": "CC BY 2.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Personal_Trainer_(52613798782).jpg"
   },
   {
    "id": "library",
-   "q": "university library"
+   "q": "university library",
+   "file": "File:Graz University-Library reading-room.jpg",
+   "credit": "Dr. Marcus Gossler",
+   "license": "CC BY-SA 3.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Graz_University-Library_reading-room.jpg"
   },
   {
    "id": "pizza",
-   "q": "pizza"
+   "q": "pizza",
+   "file": "File:Vegetarian Pizza.jpg",
+   "credit": "Petar Milošević",
+   "license": "CC BY-SA 4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Vegetarian_Pizza.jpg"
   },
   {
    "id": "sunrise",
-   "q": "sunrise"
+   "q": "sunrise",
+   "file": "File:Sunrise at viru bog.jpg",
+   "credit": "Abrget47j",
+   "license": "CC BY-SA 3.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Sunrise_at_viru_bog.jpg"
   },
   {
    "id": "clothes_rack",
-   "q": "clothes drying rack"
+   "q": "clothes drying rack",
+   "file": "File:Close-up of the clothespins on a drying rack.jpg",
+   "credit": "Shixart1985",
+   "license": "CC BY 2.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Close-up_of_the_clothespins_on_a_drying_rack.jpg"
   },
   {
    "id": "typewriter",
-   "q": "typewriter"
+   "q": "typewriter",
+   "file": "File:Olympia Simplex.jpg",
+   "credit": "Sammlung der Medien und Wissenschaft",
+   "license": "CC BY 4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Olympia_Simplex.jpg"
   },
   {
    "id": "stamp",
-   "q": "postage stamp"
+   "q": "postage stamp",
+   "file": "File:Magnifying glass2.jpg",
+   "credit": "Heptagon",
+   "license": "Public domain",
+   "page": "https://commons.wikimedia.org/wiki/File:Magnifying_glass2.jpg"
   },
   {
    "id": "receipt",
-   "q": "receipt"
+   "q": "receipt",
+   "file": "File:ReceiptSwiss.jpg",
+   "credit": "Audrius Meskauskas (Audriusa)",
+   "license": "CC BY-SA 3.0",
+   "page": "https://commons.wikimedia.org/wiki/File:ReceiptSwiss.jpg"
   },
   {
    "id": "remote",
-   "q": "television remote control"
+   "q": "television remote control",
+   "file": "File:Television remote control - black 01.jpg",
+   "credit": "Dmitry Makeev",
+   "license": "CC BY-SA 4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Television_remote_control_-_black_01.jpg"
   },
   {
    "id": "ftc",
-   "q": "Federal Trade Commission building"
+   "q": "Federal Trade Commission building",
+   "file": "File:Federal Trade Commission Building 3.jpg",
+   "credit": "Kurt Kaiser",
+   "license": "Public domain",
+   "page": "https://commons.wikimedia.org/wiki/File:Federal_Trade_Commission_Building_3.jpg"
   },
   {
    "id": "gavel",
-   "q": "judge gavel"
+   "q": "judge gavel",
+   "file": "File:Wide-angle Judge beating a protester (Royal Courts of Justice).jpg",
+   "credit": "Retiolus",
+   "license": "CC0",
+   "page": "https://commons.wikimedia.org/wiki/File:Wide-angle_Judge_beating_a_protester_(Royal_Courts_of_Justice).jpg"
   },
   {
    "id": "us_map",
-   "q": "United States map"
+   "q": "United States map",
+   "file": "File:City Lights of the United States 2012.jpg",
+   "credit": "NASA Earth Observatory",
+   "license": "Public domain",
+   "page": "https://commons.wikimedia.org/wiki/File:City_Lights_of_the_United_States_2012.jpg"
   },
   {
    "id": "laptop",
-   "q": "laptop"
+   "q": "laptop",
+   "file": "File:Laptop picture.jpg",
+   "credit": "Solutionservice21",
+   "license": "CC BY-SA 4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Laptop_picture.jpg"
   },
   {
    "id": "ticket",
-   "q": "admission ticket"
+   "q": "admission ticket",
+   "file": "File:Admission-Ticket-Bakel-Fort-Kasargod.jpg",
+   "credit": "Vaikoovery",
+   "license": "CC BY-SA 3.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Admission-Ticket-Bakel-Fort-Kasargod.jpg"
   },
   {
    "id": "park",
-   "q": "public park"
+   "q": "public park",
+   "file": "File:Marquette jardin public rue maurice ravel.jpg",
+   "credit": "Velvet",
+   "license": "CC BY-SA 4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Marquette_jardin_public_rue_maurice_ravel.jpg"
   },
   {
    "id": "exit",
-   "q": "exit sign"
+   "q": "exit sign",
+   "file": "File:Photoluminescent Exit Sign.jpg",
+   "credit": "Aug wiki 1257",
+   "license": "CC BY-SA 4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Photoluminescent_Exit_Sign.jpg"
   },
   {
    "id": "calendar",
-   "q": "wall calendar"
+   "q": "wall calendar",
+   "file": "File:WallCalendar.jpg",
+   "credit": "Claudio Elias",
+   "license": "Public domain",
+   "page": "https://commons.wikimedia.org/wiki/File:WallCalendar.jpg"
   },
   {
    "id": "bills",
-   "q": "paper bills invoice"
+   "q": "paper bills invoice",
+   "file": "File:Print-drawing, Wallpaper Invoice for the firm of Arthur et Robert, 1793 (CH 18613091).jpg",
+   "credit": "Made by Arthur & Robert",
+   "license": "Public domain",
+   "page": "https://commons.wikimedia.org/wiki/File:Print-drawing,_Wallpaper_Invoice_for_the_firm_of_Arthur_et_Robert,_1793_(CH_18613091).jpg"
   },
   {
    "id": "magazine",
-   "q": "magazines"
+   "q": "magazines",
+   "file": "File:Pistol magazine parts.jpg",
+   "credit": "Scoo.",
+   "license": "CC BY-SA 2.5",
+   "page": "https://commons.wikimedia.org/wiki/File:Pistol_magazine_parts.jpg"
   },
   {
    "id": "envelope",
-   "q": "envelope letter"
+   "q": "envelope letter",
+   "file": "File:Envelope-letter-icon.png",
+   "credit": "paomedia",
+   "license": "CC0",
+   "page": "https://commons.wikimedia.org/wiki/File:Envelope-letter-icon.png"
   },
   {
    "id": "trophy",
-   "q": "gold trophy"
+   "q": "gold trophy",
+   "file": "File:Newspaper advertisement for 1953 Gold Trophy Classic (The Daily Calumet, May 16, 1953).jpg",
+   "credit": "Unknown authorUnknown author",
+   "license": "Public domain",
+   "page": "https://commons.wikimedia.org/wiki/File:Newspaper_advertisement_for_1953_Gold_Trophy_Classic_(The_Daily_Calumet,_May_16,_1953).jpg"
   },
   {
    "id": "dog_vet",
-   "q": "dog veterinarian"
+   "q": "dog veterinarian",
+   "file": "File:Dog portrait with a veterinarian in blue uniform holding a stethoscope - 51647083727.jpg",
+   "credit": "Nenad Stojkovic",
+   "license": "CC BY 2.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Dog_portrait_with_a_veterinarian_in_blue_uniform_holding_a_stethoscope_-_51647083727.jpg"
   }
  ]
 }
