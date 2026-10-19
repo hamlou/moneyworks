@@ -1,0 +1,1844 @@
+{
+ "id": "ep80",
+ "title": "Why Nice People Finish Broke",
+ "voice": "chatterbox",
+ "upgraded": "2026-10-19 UPGRADE.md v2",
+ "sources": [
+  "Judge, Livingston & Hurst (2012), 'Do Nice Guys-and Gals-Really Finish Last?', Journal of Personality and Social Psychology 102(2): disagreeable men earned ~18% more",
+  "Glassdoor survey (2023): 54% of workers did not negotiate their most recent job offer",
+  "Babcock & Laschever, 'Women Don't Ask' / Carnegie Mellon graduates: negotiators raised starting salary ~7.4%",
+  "LendingTree survey: over a third of people who lent money to family or friends were not paid back; Bankrate: 44% reported a negative outcome",
+  "Judge, Livingston & Hurst (2012), 'Do Nice Guys-and Gals-Really Finish Last?', Journal of Personality and Social Psychology 102(2): disagreeable men earned ~18% more",
+  "Glassdoor survey (2023): 54% of workers did not negotiate their most recent job offer",
+  "Babcock & Laschever, 'Women Don't Ask' / Carnegie Mellon graduates: negotiators raised starting salary ~7.4%",
+  "LendingTree survey: over a third of people who lent money to family or friends were not paid back; Bankrate: 44% reported a negative outcome",
+  "Judge, Livingston & Hurst (2012), 'Do Nice Guys-and Gals-Really Finish Last?', Journal of Personality and Social Psychology 102(2): disagreeable men earned ~18% more",
+  "Glassdoor survey (2023): 54% of workers did not negotiate their most recent job offer",
+  "Babcock & Laschever, 'Women Don't Ask' / Carnegie Mellon graduates: negotiators raised starting salary ~7.4%",
+  "LendingTree survey: over a third of people who lent money to family or friends were not paid back; Bankrate: 44% reported a negative outcome"
+ ],
+ "youtube": {},
+ "beats": [
+  {
+   "id": "o1",
+   "text": "This is me saying no no it's fine. I say it about forty times a week. And every single time it costs me money.",
+   "host": true,
+   "mood": "happy",
+   "pose": "present",
+   "slam": {
+    "t": "NO NO IT'S FINE",
+    "at": "fine"
+   },
+   "sfx": [
+    {
+     "s": "ding",
+     "at": "fine"
+    },
+    {
+     "s": "tick",
+     "at": "forty"
+    },
+    {
+     "s": "cash",
+     "at": "money"
+    }
+   ],
+   "pause": 0.15
+  },
+  {
+   "id": "o2",
+   "text": "The dinner bill? No no I got it. My cousin needs cash? No no it's fine. The boss wants me to stay late for free? Of course. Happy to help.",
+   "pic": {
+    "id": "dinner_bill",
+    "at": "bill",
+    "look": "polaroid",
+    "label": "I got it"
+   },
+   "sfx": [
+    {
+     "s": "cash",
+     "at": "bill"
+    },
+    {
+     "s": "coin",
+     "at": "cash"
+    },
+    {
+     "s": "pack/01_beating",
+     "at": "free"
+    },
+    {
+     "s": "trombone",
+     "at": "help"
+    }
+   ],
+   "pause": 0.15
+  },
+  {
+   "id": "o3",
+   "text": "Everybody loves me. My bank account does not.",
+   "card": {
+    "t": "My bank account does not.",
+    "dark": true
+   },
+   "sfx": [
+    {
+     "s": "crowd",
+     "at": "loves"
+    },
+    {
+     "s": "pack/01_boom",
+     "at": "not"
+    }
+   ],
+   "pause": 0.3
+  },
+  {
+   "id": "o4",
+   "text": "And it turns out that's not bad luck. Scientists actually measured it. Nice people really do earn less.",
+   "host": true,
+   "mood": "shock",
+   "pose": "panic",
+   "slam": {
+    "t": "NICE = LESS MONEY?",
+    "at": "earn"
+   },
+   "zoom": {
+    "in": "really",
+    "out": "less"
+   },
+   "sfx": [
+    {
+     "s": "scratch",
+     "at": "luck"
+    },
+    {
+     "s": "stamp",
+     "at": "measured"
+    },
+    {
+     "s": "boom",
+     "at": "less"
+    }
+   ],
+   "pause": 0.15
+  },
+  {
+   "id": "o5",
+   "text": "By the end of this video you'll know the one sentence that lets you stay kind and still stop paying the nice tax.",
+   "host": true,
+   "mood": "suspicious",
+   "pose": "point_r",
+   "slam": {
+    "t": "ONE SENTENCE",
+    "at": "sentence"
+   },
+   "sfx": [
+    {
+     "s": "ding",
+     "at": "sentence"
+    },
+    {
+     "s": "drumroll",
+     "at": "kind"
+    },
+    {
+     "s": "boom",
+     "at": "tax"
+    }
+   ],
+   "pause": 0.15
+  },
+  {
+   "id": "o6",
+   "text": "But most people click away before that part. Probably because they're too nice to stay.",
+   "host": true,
+   "mood": "grin",
+   "pose": "shrug",
+   "sfx": [
+    {
+     "s": "whoosh",
+     "at": "click"
+    },
+    {
+     "s": "boing",
+     "at": "nice"
+    }
+   ],
+   "pause": 0.3,
+   "pic": {
+    "id": "door_exit",
+    "at": "click",
+    "look": "circle"
+   }
+  },
+  {
+   "id": "c1a",
+   "text": "So let me show you one normal week of being me.",
+   "chapter": "No No It's Fine",
+   "sfx": [
+    {
+     "s": "flip",
+     "at": "week"
+    },
+    {
+     "s": "ding",
+     "at": "me"
+    }
+   ]
+  },
+  {
+   "id": "c1b",
+   "text": "Monday. Eight of us go out for dinner. I ordered a salad and a water. Somebody ordered three cocktails and the lobster.",
+   "pic": {
+    "id": "lobster",
+    "at": "lobster",
+    "look": "tape"
+   },
+   "sfx": [
+    {
+     "s": "crowd",
+     "at": "Eight"
+    },
+    {
+     "s": "pop",
+     "at": "salad"
+    },
+    {
+     "s": "ding",
+     "at": "cocktails"
+    },
+    {
+     "s": "boing",
+     "at": "lobster"
+    }
+   ]
+  },
+  {
+   "id": "c1c",
+   "text": "The bill comes and Jake says let's just split it evenly. And I say no no it's fine. I just paid sixty dollars for a salad.",
+   "host": true,
+   "mood": "tired",
+   "pose": "facepalm",
+   "slam": {
+    "t": "$60 SALAD",
+    "at": "sixty"
+   },
+   "zoom": {
+    "in": "sixty",
+    "out": "salad"
+   },
+   "sfx": [
+    {
+     "s": "cash",
+     "at": "evenly"
+    },
+    {
+     "s": "scratch",
+     "at": "fine"
+    },
+    {
+     "s": "trombone",
+     "at": "salad"
+    }
+   ]
+  },
+  {
+   "id": "n1",
+   "text": "Me agreeing to split the bill evenly.",
+   "meme": {
+    "t": "fine",
+    "a": "Ordered a salad",
+    "at": "split"
+   },
+   "sfx": [
+    {
+     "s": "cricket",
+     "at": "evenly"
+    }
+   ]
+  },
+  {
+   "id": "c1d",
+   "text": "Tuesday. My cousin texts me. Hey man can I borrow four hundred bucks? I'll pay you back Friday. He doesn't say which Friday.",
+   "pic": {
+    "id": "phone_text",
+    "at": "texts",
+    "look": "circle"
+   },
+   "sfx": [
+    {
+     "s": "ding",
+     "at": "texts"
+    },
+    {
+     "s": "cash",
+     "at": "four"
+    },
+    {
+     "s": "boing",
+     "at": "which"
+    }
+   ]
+  },
+  {
+   "id": "c1e",
+   "text": "And I say of course. Because saying no to family feels like kicking a puppy.",
+   "host": true,
+   "mood": "worried",
+   "pose": "shrug",
+   "pic": {
+    "id": "puppy",
+    "at": "puppy",
+    "look": "sticker"
+   },
+   "sfx": [
+    {
+     "s": "ding",
+     "at": "course"
+    },
+    {
+     "s": "boing",
+     "at": "puppy"
+    }
+   ]
+  },
+  {
+   "id": "n2",
+   "text": "It has now been eleven Fridays.",
+   "card": {
+    "t": "Eleven Fridays.",
+    "dark": true
+   },
+   "sfx": [
+    {
+     "s": "tick",
+     "at": "eleven"
+    },
+    {
+     "s": "pack/01_boom",
+     "at": "Fridays"
+    }
+   ],
+   "pause": 0.4
+  },
+  {
+   "id": "c1f",
+   "text": "Wednesday. My boss walks by at five fifty nine. Hey Dave can you just finish this little thing before you go? The little thing takes three hours.",
+   "pic": {
+    "id": "office_clock",
+    "at": "five",
+    "look": "tape"
+   },
+   "sfx": [
+    {
+     "s": "tick",
+     "at": "fifty"
+    },
+    {
+     "s": "ding",
+     "at": "little"
+    },
+    {
+     "s": "pack/02_deep",
+     "at": "three"
+    }
+   ]
+  },
+  {
+   "id": "n3",
+   "text": "I don't get paid for those three hours. I get a thank you. A thank you does not pay rent.",
+   "host": true,
+   "mood": "sad",
+   "pose": "talk",
+   "zoom": {
+    "in": "does",
+    "out": "rent"
+   },
+   "sfx": [
+    {
+     "s": "cricket",
+     "at": "thank"
+    },
+    {
+     "s": "boom",
+     "at": "rent"
+    }
+   ]
+  },
+  {
+   "id": "n4",
+   "text": "My boss when I stay late for free again.",
+   "meme": {
+    "t": "stonks",
+    "a": "FREE OVERTIME",
+    "at": "late"
+   },
+   "sfx": [
+    {
+     "s": "cash",
+     "at": "free"
+    }
+   ]
+  },
+  {
+   "id": "c1g",
+   "text": "Thursday. A store employee asks if I want the extended warranty. I don't want it. But he seems really nice. So I buy it.",
+   "pic": {
+    "id": "warranty",
+    "at": "warranty",
+    "look": "polaroid"
+   },
+   "sfx": [
+    {
+     "s": "ding",
+     "at": "warranty"
+    },
+    {
+     "s": "boing",
+     "at": "nice"
+    },
+    {
+     "s": "cash",
+     "at": "buy"
+    }
+   ]
+  },
+  {
+   "id": "n30",
+   "text": "He had a really nice smile. I paid eighty nine dollars for that smile. I still think about him.",
+   "host": true,
+   "mood": "tired",
+   "pose": "shrug",
+   "pic": {
+    "id": "tv",
+    "at": "eighty",
+    "look": "sticker"
+   },
+   "zoom": {
+    "in": "still",
+    "out": "him"
+   },
+   "sfx": [
+    {
+     "s": "cash",
+     "at": "eighty"
+    },
+    {
+     "s": "boing",
+     "at": "smile"
+    },
+    {
+     "s": "boom",
+     "at": "him"
+    }
+   ]
+  },
+  {
+   "id": "c1h",
+   "text": "And Friday. The best one. I got a new job offer. They said the salary. And before they even finished the sentence I said yes. Yes please. Thank you so much.",
+   "host": true,
+   "mood": "happy",
+   "pose": "celebrate",
+   "pic": {
+    "id": "handshake",
+    "at": "offer",
+    "look": "circle"
+   },
+   "sfx": [
+    {
+     "s": "pack/01_evolve_brassy_swell",
+     "at": "offer"
+    },
+    {
+     "s": "ding",
+     "at": "yes"
+    },
+    {
+     "s": "ding",
+     "at": "Yes#2"
+    }
+   ]
+  },
+  {
+   "id": "n5",
+   "text": "Me accepting the first salary they offered.",
+   "meme": {
+    "t": "buttons",
+    "a": "Ask for more",
+    "b": "Say thank you and run",
+    "at": "first"
+   },
+   "sfx": [
+    {
+     "s": "pack/01_beating",
+     "at": "first"
+    }
+   ]
+  },
+  {
+   "id": "c1i",
+   "text": "Add up that week. The salad. The cousin. The free hours. The warranty. I lost hundreds of dollars and I didn't even notice. Because nobody robbed me. I handed it over with a smile.",
+   "host": true,
+   "mood": "shock",
+   "pose": "panic",
+   "slam": {
+    "t": "THE NICE TAX",
+    "at": "smile"
+   },
+   "sfx": [
+    {
+     "s": "cash",
+     "at": "salad"
+    },
+    {
+     "s": "cash",
+     "at": "cousin"
+    },
+    {
+     "s": "cash",
+     "at": "warranty"
+    },
+    {
+     "s": "drumroll",
+     "at": "lost"
+    },
+    {
+     "s": "pack/01_boom",
+     "at": "smile"
+    }
+   ]
+  },
+  {
+   "id": "n6",
+   "text": "And maybe you're thinking that's just Dave. Dave is a pushover. But be honest. How many times did you say no no it's fine this week?",
+   "host": true,
+   "mood": "suspicious",
+   "pose": "point_r",
+   "zoom": {
+    "in": "How",
+    "out": "week"
+   },
+   "sfx": [
+    {
+     "s": "scratch",
+     "at": "pushover"
+    },
+    {
+     "s": "tick",
+     "at": "times"
+    },
+    {
+     "s": "boom",
+     "at": "week"
+    }
+   ],
+   "pic": {
+    "id": "mirror",
+    "at": "honest",
+    "look": "tape"
+   }
+  },
+  {
+   "id": "n7",
+   "text": "Every nice person reading the comments right now.",
+   "meme": {
+    "t": "drake",
+    "a": "Saying no",
+    "b": "Saying no no it's fine",
+    "at": "comments"
+   },
+   "sfx": [
+    {
+     "s": "pop",
+     "at": "comments"
+    }
+   ]
+  },
+  {
+   "id": "c2a",
+   "text": "So I got curious. Is this just me? Or is being nice actually expensive? Turns out economists studied it.",
+   "chapter": "The Nice Tax Is Real",
+   "host": true,
+   "mood": "think",
+   "pose": "think",
+   "pic": {
+    "id": "library",
+    "at": "economists",
+    "look": "tape"
+   },
+   "sfx": [
+    {
+     "s": "pack/01_processing",
+     "at": "curious"
+    },
+    {
+     "s": "ding",
+     "at": "studied"
+    }
+   ]
+  },
+  {
+   "id": "c2b",
+   "text": "A group of researchers looked at thousands of workers over many years. They measured how agreeable people are. How nice. How easy to get along with.",
+   "pic": {
+    "id": "researchers",
+    "at": "researchers",
+    "look": "polaroid"
+   },
+   "sfx": [
+    {
+     "s": "paper",
+     "at": "researchers"
+    },
+    {
+     "s": "ding",
+     "at": "nice"
+    }
+   ]
+  },
+  {
+   "id": "c2c",
+   "text": "And the less agreeable men earned about eighteen percent more than the nice ones. Same kind of jobs. Same education. Just less nice.",
+   "host": true,
+   "mood": "shock",
+   "pose": "panic",
+   "slam": {
+    "t": "+18%",
+    "at": "eighteen"
+   },
+   "sfx": [
+    {
+     "s": "drumroll",
+     "at": "less"
+    },
+    {
+     "s": "pack/02_deep",
+     "at": "eighteen"
+    },
+    {
+     "s": "scratch",
+     "at": "nice#2"
+    }
+   ]
+  },
+  {
+   "id": "n31",
+   "text": "That's almost ten thousand dollars a year. For being pleasant. I could buy a used car every year with my niceness.",
+   "host": true,
+   "mood": "shock",
+   "pose": "point_r",
+   "pic": {
+    "id": "used_car",
+    "at": "car",
+    "look": "tape"
+   },
+   "slam": {
+    "t": "~$10K A YEAR",
+    "at": "thousand"
+   },
+   "sfx": [
+    {
+     "s": "cash",
+     "at": "thousand"
+    },
+    {
+     "s": "ding",
+     "at": "car"
+    },
+    {
+     "s": "boing",
+     "at": "niceness"
+    }
+   ]
+  },
+  {
+   "id": "n8",
+   "text": "The title of the study was literally do nice guys finish last. And the answer was kind of yes.",
+   "pic": {
+    "id": "finish_line",
+    "at": "finish",
+    "look": "news",
+    "label": "the actual study"
+   },
+   "sfx": [
+    {
+     "s": "ding",
+     "at": "title"
+    },
+    {
+     "s": "trombone",
+     "at": "yes"
+    }
+   ]
+  },
+  {
+   "id": "n9",
+   "text": "Me reading that study.",
+   "meme": {
+    "t": "fine",
+    "a": "Being nice was a trap",
+    "at": "study"
+   },
+   "sfx": [
+    {
+     "s": "cricket",
+     "at": "study"
+    }
+   ]
+  },
+  {
+   "id": "c2d",
+   "text": "Now wait. That doesn't mean jerks are better people. It doesn't even mean you should be a jerk. It means something more interesting.",
+   "host": true,
+   "mood": "smug",
+   "pose": "point_up",
+   "zoom": {
+    "in": "more",
+    "out": "interesting"
+   },
+   "sfx": [
+    {
+     "s": "scratch",
+     "at": "wait"
+    },
+    {
+     "s": "boing",
+     "at": "jerk"
+    },
+    {
+     "s": "boom",
+     "at": "interesting"
+    }
+   ],
+   "pic": {
+    "id": "handshake2",
+    "at": "jerks",
+    "look": "tape"
+   }
+  },
+  {
+   "id": "c2e",
+   "text": "The money system doesn't pay you for being good. It pays you for asking. And nice people almost never ask.",
+   "card": {
+    "t": "It pays the people who ask.",
+    "dark": true
+   },
+   "sfx": [
+    {
+     "s": "pack/01_boom",
+     "at": "asking"
+    },
+    {
+     "s": "cricket",
+     "at": "ask"
+    }
+   ],
+   "pause": 0.5
+  },
+  {
+   "id": "c2f",
+   "text": "Think about my job offer. When a company offers you a salary it's usually not their top number. It's their first number. They leave room because they expect you to ask.",
+   "pic": {
+    "id": "contract",
+    "at": "salary",
+    "look": "tape"
+   },
+   "sfx": [
+    {
+     "s": "ding",
+     "at": "salary"
+    },
+    {
+     "s": "stamp",
+     "at": "first"
+    },
+    {
+     "s": "pack/01_processing",
+     "at": "room"
+    }
+   ]
+  },
+  {
+   "id": "n10",
+   "text": "It's like a market where the price tag says ten but everybody knows it's really eight. Except nice people pay ten every time and feel proud for being polite.",
+   "pic": {
+    "id": "market",
+    "at": "market",
+    "look": "polaroid"
+   },
+   "sfx": [
+    {
+     "s": "coin",
+     "at": "ten"
+    },
+    {
+     "s": "coin",
+     "at": "eight"
+    },
+    {
+     "s": "boing",
+     "at": "polite"
+    }
+   ]
+  },
+  {
+   "id": "c2g",
+   "text": "About half of workers say they didn't negotiate their last job offer. Half. They just said yes.",
+   "host": true,
+   "mood": "sad",
+   "pose": "shrug",
+   "slam": {
+    "t": "HALF NEVER ASK",
+    "at": "Half"
+   },
+   "sfx": [
+    {
+     "s": "ding",
+     "at": "half"
+    },
+    {
+     "s": "pack/02_evolve_brassy_drop_2",
+     "at": "Half#2"
+    }
+   ]
+  },
+  {
+   "id": "c2h",
+   "text": "And people who do ask often get a few percent more. That sounds small. But every raise for the rest of your career is a percent of that first number.",
+   "pic": {
+    "id": "staircase",
+    "at": "raise",
+    "look": "tape"
+   },
+   "sfx": [
+    {
+     "s": "ding",
+     "at": "ask"
+    },
+    {
+     "s": "pack/01_evolve_brassy_swell",
+     "at": "career"
+    }
+   ]
+  },
+  {
+   "id": "n11",
+   "text": "So one awkward minute at twenty two can follow you for forty years. Like a little shadow made of money.",
+   "host": true,
+   "mood": "worried",
+   "pose": "talk",
+   "pic": {
+    "id": "shadow",
+    "at": "shadow",
+    "look": "circle"
+   },
+   "zoom": {
+    "in": "forty",
+    "out": "years"
+   },
+   "sfx": [
+    {
+     "s": "tick",
+     "at": "minute"
+    },
+    {
+     "s": "boom",
+     "at": "years"
+    },
+    {
+     "s": "sting",
+     "at": "shadow"
+    }
+   ]
+  },
+  {
+   "id": "n35",
+   "text": "Picture two friends with the same job and the same skills. One asks for a little more at the start. Thirty years later that one question can be worth more than a whole year of salary. Same work. Same people. One sentence.",
+   "host": true,
+   "mood": "suspicious",
+   "pose": "point_up",
+   "zoom": {
+    "in": "One",
+    "out": "sentence"
+   },
+   "sfx": [
+    {
+     "s": "ding",
+     "at": "friends"
+    },
+    {
+     "s": "tick",
+     "at": "Thirty"
+    },
+    {
+     "s": "pack/02_deep",
+     "at": "year"
+    },
+    {
+     "s": "boom",
+     "at": "sentence"
+    }
+   ]
+  },
+  {
+   "id": "n12",
+   "text": "My salary versus the guy who asked once.",
+   "meme": {
+    "t": "vs",
+    "a": "Me: said thank you",
+    "b": "Him: asked politely",
+    "at": "asked"
+   },
+   "sfx": [
+    {
+     "s": "pop",
+     "at": "asked"
+    }
+   ]
+  },
+  {
+   "id": "c2i",
+   "text": "And the cousin loan? Surveys keep finding the same thing. A lot of people who lend money to friends or family never get it back. And many of them regret it.",
+   "pic": {
+    "id": "wallet",
+    "at": "lend",
+    "look": "tape"
+   },
+   "sfx": [
+    {
+     "s": "cash",
+     "at": "lend"
+    },
+    {
+     "s": "cricket",
+     "at": "back"
+    },
+    {
+     "s": "trombone",
+     "at": "regret"
+    }
+   ]
+  },
+  {
+   "id": "n13",
+   "text": "Remember our family money episode? Same story. The nice one becomes the bank. A bank with no interest and no paperwork and no way to say no.",
+   "host": true,
+   "mood": "tired",
+   "pose": "facepalm",
+   "sfx": [
+    {
+     "s": "ding",
+     "at": "bank"
+    },
+    {
+     "s": "stamp",
+     "at": "paperwork"
+    },
+    {
+     "s": "scratch",
+     "at": "no#3"
+    }
+   ]
+  },
+  {
+   "id": "n14",
+   "text": "The cousin when I ask about the four hundred dollars.",
+   "meme": {
+    "t": "fine",
+    "a": "What four hundred?",
+    "at": "cousin"
+   },
+   "sfx": [
+    {
+     "s": "cricket",
+     "at": "cousin"
+    }
+   ]
+  },
+  {
+   "id": "c2j",
+   "text": "And remember the loyal worker from our job episode? The one who never asks for a raise and gets paid less than the new guy? Same nice tax. Different place.",
+   "pic": {
+    "id": "cubicle",
+    "at": "worker",
+    "look": "polaroid"
+   },
+   "sfx": [
+    {
+     "s": "ding",
+     "at": "loyal"
+    },
+    {
+     "s": "cash",
+     "at": "new"
+    },
+    {
+     "s": "pack/01_boom",
+     "at": "tax"
+    }
+   ]
+  },
+  {
+   "id": "c3a",
+   "text": "So why don't nice people ask? I thought about it. And I think I know exactly where it started.",
+   "chapter": "Who Taught You To Stay Quiet",
+   "host": true,
+   "mood": "think",
+   "pose": "point_up",
+   "sfx": [
+    {
+     "s": "pack/01_processing",
+     "at": "ask"
+    },
+    {
+     "s": "riser",
+     "at": "started"
+    }
+   ],
+   "pic": {
+    "id": "thinking",
+    "at": "thought",
+    "look": "circle"
+   }
+  },
+  {
+   "id": "c3b",
+   "text": "When I was a kid my grandma gave me birthday money. And my mom gave me the look. You say thank you and you don't count it in front of people.",
+   "pic": {
+    "id": "birthday_card",
+    "at": "birthday",
+    "look": "polaroid",
+    "label": "age 8"
+   },
+   "sfx": [
+    {
+     "s": "ding",
+     "at": "birthday"
+    },
+    {
+     "s": "boing",
+     "at": "look"
+    },
+    {
+     "s": "stamp",
+     "at": "count"
+    }
+   ]
+  },
+  {
+   "id": "c3c",
+   "text": "Money is rude. Asking is rude. Wanting more is greedy. That's what a lot of us learned before we could even spell money.",
+   "host": true,
+   "mood": "sad",
+   "pose": "talk",
+   "slam": {
+    "t": "MONEY IS RUDE",
+    "at": "rude"
+   },
+   "sfx": [
+    {
+     "s": "scratch",
+     "at": "rude"
+    },
+    {
+     "s": "scratch",
+     "at": "greedy"
+    },
+    {
+     "s": "boom",
+     "at": "spell"
+    }
+   ]
+  },
+  {
+   "id": "n15",
+   "text": "Kid me trying to open a birthday card politely.",
+   "meme": {
+    "t": "brain",
+    "a": "Say thank you",
+    "b": "Don't look inside",
+    "c": "Never ask how much",
+    "at": "card"
+   },
+   "sfx": [
+    {
+     "s": "pack/01_processing",
+     "at": "card"
+    }
+   ]
+  },
+  {
+   "id": "c3d",
+   "text": "And it gets worse. Nice people hate conflict. And asking for money feels like conflict. So our brain picks the cheaper feeling. Just pay and keep the peace.",
+   "pic": {
+    "id": "peace",
+    "at": "peace",
+    "look": "sticker"
+   },
+   "sfx": [
+    {
+     "s": "sting",
+     "at": "conflict"
+    },
+    {
+     "s": "cash",
+     "at": "pay"
+    },
+    {
+     "s": "ding",
+     "at": "peace"
+    }
+   ]
+  },
+  {
+   "id": "n32",
+   "text": "It's like getting a parking ticket and paying it twice just so the officer doesn't feel awkward.",
+   "pic": {
+    "id": "parking_ticket",
+    "at": "ticket",
+    "look": "tape"
+   },
+   "sfx": [
+    {
+     "s": "stamp",
+     "at": "ticket"
+    },
+    {
+     "s": "boing",
+     "at": "awkward"
+    }
+   ]
+  },
+  {
+   "id": "n16",
+   "text": "But keeping the peace has a price. And guess who pays it every time? The nice person.",
+   "host": true,
+   "mood": "angry",
+   "pose": "point_r",
+   "zoom": {
+    "in": "guess",
+    "out": "time"
+   },
+   "sfx": [
+    {
+     "s": "cash",
+     "at": "price"
+    },
+    {
+     "s": "boom",
+     "at": "time"
+    }
+   ],
+   "pic": {
+    "id": "scale",
+    "at": "price",
+    "look": "sticker"
+   }
+  },
+  {
+   "id": "c3e",
+   "text": "Here's the twist I didn't expect. The people who ask aren't always mean. A lot of them are just as kind as me. They just learned one thing I didn't.",
+   "host": true,
+   "mood": "suspicious",
+   "pose": "hips",
+   "sfx": [
+    {
+     "s": "scratch",
+     "at": "twist"
+    },
+    {
+     "s": "ding",
+     "at": "kind"
+    },
+    {
+     "s": "riser",
+     "at": "thing"
+    }
+   ],
+   "pic": {
+    "id": "smile",
+    "at": "kind",
+    "look": "tape"
+   }
+  },
+  {
+   "id": "c3f",
+   "text": "Asking isn't attacking. It's just information. Hey is there room on this number? That's not rude. That's a question.",
+   "card": {
+    "t": "Asking is not attacking.",
+    "dark": true
+   },
+   "sfx": [
+    {
+     "s": "pack/01_boom",
+     "at": "attacking"
+    },
+    {
+     "s": "ding",
+     "at": "question"
+    }
+   ],
+   "pause": 0.5
+  },
+  {
+   "id": "n17",
+   "text": "Me realizing a question is not a fight.",
+   "meme": {
+    "t": "stonks",
+    "a": "ASKING UNLOCKED",
+    "at": "question"
+   },
+   "sfx": [
+    {
+     "s": "pack/01_evolve_brassy_swell",
+     "at": "question"
+    }
+   ]
+  },
+  {
+   "id": "c3g",
+   "text": "And honestly who taught us that the polite thing is to lose money? The waiter doesn't feel bad charging me. The store doesn't feel bad selling me a warranty. Only I feel bad.",
+   "pic": {
+    "id": "receipt",
+    "at": "warranty",
+    "look": "tape"
+   },
+   "sfx": [
+    {
+     "s": "ding",
+     "at": "waiter"
+    },
+    {
+     "s": "cash",
+     "at": "warranty"
+    },
+    {
+     "s": "trombone",
+     "at": "bad#3"
+    }
+   ]
+  },
+  {
+   "id": "n18",
+   "text": "Companies aren't nice to you because they love you. They're nice because nice sells. And they never say no no it's fine when you owe them money.",
+   "host": true,
+   "mood": "smug",
+   "pose": "point_up",
+   "zoom": {
+    "in": "never",
+    "out": "money"
+   },
+   "sfx": [
+    {
+     "s": "cash",
+     "at": "sells"
+    },
+    {
+     "s": "scratch",
+     "at": "never"
+    },
+    {
+     "s": "boom",
+     "at": "money"
+    }
+   ]
+  },
+  {
+   "id": "n19",
+   "text": "Customer service when I'm one day late on a payment.",
+   "meme": {
+    "t": "vs",
+    "a": "Me: no no it's fine",
+    "b": "Them: late fee $35",
+    "at": "late"
+   },
+   "sfx": [
+    {
+     "s": "stamp",
+     "at": "late"
+    }
+   ]
+  },
+  {
+   "id": "c3h",
+   "text": "So the nice tax isn't really about being nice. It's about being silent. Kind people who speak up don't pay it. Kind people who stay quiet pay it forever.",
+   "host": true,
+   "mood": "shock",
+   "pose": "panic",
+   "slam": {
+    "t": "NICE ≠ SILENT",
+    "at": "silent"
+   },
+   "sfx": [
+    {
+     "s": "drumroll",
+     "at": "about"
+    },
+    {
+     "s": "pack/01_boom",
+     "at": "silent"
+    },
+    {
+     "s": "sting",
+     "at": "forever"
+    }
+   ]
+  },
+  {
+   "id": "c4a",
+   "text": "So here's what I changed. And I promise I didn't turn into a jerk. Quick reminder this is education and not advice.",
+   "chapter": "Kind And Firm",
+   "host": true,
+   "mood": "happy",
+   "pose": "point_up",
+   "sfx": [
+    {
+     "s": "ding",
+     "at": "changed"
+    },
+    {
+     "s": "boing",
+     "at": "jerk"
+    }
+   ],
+   "pic": {
+    "id": "toolbox",
+    "at": "changed",
+    "look": "tape"
+   }
+  },
+  {
+   "id": "c4b",
+   "text": "First. I bought myself time. When someone asks me for money or a favor I don't answer right away anymore. I say let me check and get back to you.",
+   "host": true,
+   "mood": "smug",
+   "pose": "present",
+   "pic": {
+    "id": "hourglass",
+    "at": "time",
+    "look": "circle"
+   },
+   "slam": {
+    "t": "LET ME CHECK",
+    "at": "check"
+   },
+   "sfx": [
+    {
+     "s": "tick",
+     "at": "time"
+    },
+    {
+     "s": "stamp",
+     "at": "check"
+    }
+   ]
+  },
+  {
+   "id": "n20",
+   "text": "Five little words. And suddenly my no no it's fine turned into a real decision instead of a reflex.",
+   "host": true,
+   "mood": "grin",
+   "pose": "thumbs",
+   "zoom": {
+    "in": "real",
+    "out": "decision"
+   },
+   "sfx": [
+    {
+     "s": "ding",
+     "at": "Five"
+    },
+    {
+     "s": "boom",
+     "at": "decision"
+    }
+   ],
+   "pic": {
+    "id": "five_fingers",
+    "at": "Five",
+    "look": "circle"
+   }
+  },
+  {
+   "id": "n21",
+   "text": "My cousin when I say let me check and get back to you.",
+   "meme": {
+    "t": "fine",
+    "a": "He has never heard this before",
+    "at": "check"
+   },
+   "sfx": [
+    {
+     "s": "cricket",
+     "at": "cousin"
+    }
+   ]
+  },
+  {
+   "id": "c4c",
+   "text": "Second. Next job offer I'm going to ask. Politely. With a smile. Thank you so much I'm really excited. Is there any flexibility on the salary?",
+   "pic": {
+    "id": "interview",
+    "at": "offer",
+    "look": "polaroid"
+   },
+   "sfx": [
+    {
+     "s": "ding",
+     "at": "ask"
+    },
+    {
+     "s": "pop",
+     "at": "smile"
+    },
+    {
+     "s": "drumroll",
+     "at": "flexibility"
+    }
+   ]
+  },
+  {
+   "id": "n22",
+   "text": "That's it. One question. Worst case they say no and I'm exactly where I was. Best case that one question pays me every year for the rest of my life.",
+   "host": true,
+   "mood": "happy",
+   "pose": "point_up",
+   "zoom": {
+    "in": "every",
+    "out": "life"
+   },
+   "sfx": [
+    {
+     "s": "ding",
+     "at": "question"
+    },
+    {
+     "s": "scratch",
+     "at": "no"
+    },
+    {
+     "s": "pack/01_evolve_brassy_swell",
+     "at": "life"
+    }
+   ]
+  },
+  {
+   "id": "n23",
+   "text": "Nobody ever got fired for asking nicely. Companies expect it. Some are honestly surprised when you don't.",
+   "pic": {
+    "id": "office",
+    "at": "Companies",
+    "look": "tape"
+   },
+   "sfx": [
+    {
+     "s": "ding",
+     "at": "fired"
+    },
+    {
+     "s": "boing",
+     "at": "surprised"
+    }
+   ]
+  },
+  {
+   "id": "n34",
+   "text": "And if they say no? Ask for something else. An extra week of vacation. A review in six months. A better title. Nice people forget there's more than one thing on the menu.",
+   "pic": {
+    "id": "beach",
+    "at": "vacation",
+    "look": "tape"
+   },
+   "sfx": [
+    {
+     "s": "ding",
+     "at": "vacation"
+    },
+    {
+     "s": "flip",
+     "at": "review"
+    },
+    {
+     "s": "pop",
+     "at": "menu"
+    }
+   ]
+  },
+  {
+   "id": "c4d",
+   "text": "Third. I pay me first. Before the dinners and the favors and the cousin. On payday a little bit goes straight into savings and investments. Automatically.",
+   "host": true,
+   "mood": "smug",
+   "pose": "thumbs",
+   "pic": {
+    "id": "piggy",
+    "at": "savings",
+    "look": "sticker"
+   },
+   "slam": {
+    "t": "PAY YOU FIRST",
+    "at": "first"
+   },
+   "sfx": [
+    {
+     "s": "cash",
+     "at": "payday"
+    },
+    {
+     "s": "coin",
+     "at": "savings"
+    },
+    {
+     "s": "stamp",
+     "at": "Automatically"
+    }
+   ]
+  },
+  {
+   "id": "n24",
+   "text": "Because a nice person who's broke can't help anybody. A nice person with savings can help on purpose. Not by accident.",
+   "card": {
+    "t": "Help on purpose. Not by accident.",
+    "dark": true
+   },
+   "sfx": [
+    {
+     "s": "pack/01_boom",
+     "at": "purpose"
+    }
+   ],
+   "pause": 0.5
+  },
+  {
+   "id": "n25",
+   "text": "Me paying myself before I pay everybody else.",
+   "meme": {
+    "t": "drake",
+    "a": "Saving what's left",
+    "b": "Saving first",
+    "at": "myself"
+   },
+   "sfx": [
+    {
+     "s": "pop",
+     "at": "myself"
+    }
+   ]
+  },
+  {
+   "id": "c4e",
+   "text": "Fourth. My new family rule. I only lend money I'm okay never seeing again. If I can't lose it I don't lend it. I can still help in other ways. A ride. A meal. Help with a resume.",
+   "pic": {
+    "id": "car_ride",
+    "at": "ride",
+    "look": "tape"
+   },
+   "sfx": [
+    {
+     "s": "stamp",
+     "at": "rule"
+    },
+    {
+     "s": "cash",
+     "at": "lose"
+    },
+    {
+     "s": "ding",
+     "at": "ride"
+    },
+    {
+     "s": "ding",
+     "at": "resume"
+    }
+   ]
+  },
+  {
+   "id": "n33",
+   "text": "My grandma had a rule like this. She said a loan to family is a gift with a long goodbye. She never lost a cousin. Or a dollar she couldn't spare.",
+   "pic": {
+    "id": "grandma",
+    "at": "grandma",
+    "look": "polaroid",
+    "label": "grandma's rule"
+   },
+   "sfx": [
+    {
+     "s": "ding",
+     "at": "grandma"
+    },
+    {
+     "s": "pack/01_beating",
+     "at": "goodbye"
+    },
+    {
+     "s": "ding",
+     "at": "spare"
+    }
+   ]
+  },
+  {
+   "id": "n26",
+   "text": "And if I do lend it I write it down. A text with the amount and the date. Not because I don't trust him. Because memories are bad at numbers.",
+   "host": true,
+   "mood": "grin",
+   "pose": "shrug",
+   "pic": {
+    "id": "notebook",
+    "at": "write",
+    "look": "circle"
+   },
+   "sfx": [
+    {
+     "s": "scribble",
+     "at": "write"
+    },
+    {
+     "s": "ding",
+     "at": "date"
+    },
+    {
+     "s": "boom",
+     "at": "numbers"
+    }
+   ]
+  },
+  {
+   "id": "c4f",
+   "text": "Fifth. Split the bill fair. I ordered a salad. I pay for a salad. Plus tip. With a smile. Nobody has ever stopped being my friend because of a salad.",
+   "pic": {
+    "id": "salad",
+    "at": "salad",
+    "look": "sticker"
+   },
+   "sfx": [
+    {
+     "s": "ding",
+     "at": "fair"
+    },
+    {
+     "s": "coin",
+     "at": "tip"
+    },
+    {
+     "s": "crowd",
+     "at": "friend"
+    },
+    {
+     "s": "boing",
+     "at": "salad#3"
+    }
+   ]
+  },
+  {
+   "id": "n27",
+   "text": "And sixth. The extra hours at work. Sometimes I stay because I want to. But if it's every week I bring it up. Nicely. It's not a favor anymore if it's every week. It's a job.",
+   "host": true,
+   "mood": "smug",
+   "pose": "hips",
+   "zoom": {
+    "in": "It's",
+    "out": "job"
+   },
+   "sfx": [
+    {
+     "s": "tick",
+     "at": "hours"
+    },
+    {
+     "s": "scratch",
+     "at": "every"
+    },
+    {
+     "s": "boom",
+     "at": "job"
+    }
+   ],
+   "pic": {
+    "id": "laptop_night",
+    "at": "hours",
+    "look": "tape"
+   }
+  },
+  {
+   "id": "n28",
+   "text": "My boss when I mention the unpaid hours politely.",
+   "meme": {
+    "t": "buttons",
+    "a": "Pay Dave",
+    "b": "Find another nice guy",
+    "at": "politely"
+   },
+   "sfx": [
+    {
+     "s": "pack/01_beating",
+     "at": "politely"
+    }
+   ]
+  },
+  {
+   "id": "c4g",
+   "text": "And here's the funny part. Since I started doing this people don't like me less. Some of them respect me more. Turns out nobody really respects the guy who pays for everyone's lobster.",
+   "host": true,
+   "mood": "happy",
+   "pose": "celebrate",
+   "pic": {
+    "id": "friends",
+    "at": "respect",
+    "look": "polaroid"
+   },
+   "sfx": [
+    {
+     "s": "crowd",
+     "at": "respect"
+    },
+    {
+     "s": "boing",
+     "at": "lobster"
+    }
+   ]
+  },
+  {
+   "id": "n29",
+   "text": "Me after one month of kind and firm.",
+   "meme": {
+    "t": "stonks",
+    "a": "SELF RESPECT +100",
+    "at": "month"
+   },
+   "sfx": [
+    {
+     "s": "pack/03_evolve_boom_brass_d",
+     "at": "month"
+    }
+   ]
+  },
+  {
+   "id": "r1",
+   "text": "So here's the one sentence I promised. Be kind with your heart and clear with your money.",
+   "host": true,
+   "mood": "happy",
+   "pose": "point_up",
+   "slam": {
+    "t": "KIND HEART. CLEAR MONEY.",
+    "at": "clear"
+   },
+   "sfx": [
+    {
+     "s": "drumroll",
+     "at": "sentence"
+    },
+    {
+     "s": "pack/01_boom",
+     "at": "clear"
+    },
+    {
+     "s": "cash",
+     "at": "money"
+    }
+   ]
+  },
+  {
+   "id": "r2",
+   "text": "You can still be the nicest person in the room. Just don't be the quietest one when money is on the table.",
+   "host": true,
+   "mood": "smug",
+   "pose": "point_r",
+   "pic": {
+    "id": "table_money",
+    "at": "table",
+    "look": "tape"
+   },
+   "zoom": {
+    "in": "quietest",
+    "out": "table"
+   },
+   "sfx": [
+    {
+     "s": "ding",
+     "at": "nicest"
+    },
+    {
+     "s": "boom",
+     "at": "table"
+    }
+   ]
+  },
+  {
+   "id": "r3",
+   "text": "Nice people don't finish broke because they're nice. They finish broke because they're silent.",
+   "card": {
+    "t": "Kind is fine. Silent is expensive.",
+    "dark": true
+   },
+   "sfx": [
+    {
+     "s": "pack/01_boom",
+     "at": "silent"
+    }
+   ],
+   "pause": 0.5
+  },
+  {
+   "id": "r4",
+   "text": "Oh and my cousin? I sent him one text. Hey man just checking in on the four hundred. He paid me back in two days. Two days. Eleven Fridays and all it took was one text.",
+   "host": true,
+   "mood": "grin",
+   "pose": "shrug",
+   "sfx": [
+    {
+     "s": "ding",
+     "at": "text"
+    },
+    {
+     "s": "cash",
+     "at": "paid"
+    },
+    {
+     "s": "crowd",
+     "at": "text#2"
+    }
+   ]
+  },
+  {
+   "id": "r5",
+   "text": "Next time I find out why being broke actually makes your brain make worse decisions. And it's not because you're bad with money.",
+   "pic": {
+    "id": "brain",
+    "at": "brain",
+    "look": "polaroid"
+   },
+   "sfx": [
+    {
+     "s": "pack/01_processing",
+     "at": "brain"
+    },
+    {
+     "s": "scratch",
+     "at": "money"
+    }
+   ]
+  },
+  {
+   "id": "r6",
+   "text": "Subscribe. It's free. And you don't even have to say no no it's fine.",
+   "host": true,
+   "mood": "grin",
+   "pose": "wave",
+   "zoom": {
+    "in": "no#2",
+    "out": "fine"
+   },
+   "sfx": [
+    {
+     "s": "ding",
+     "at": "Subscribe"
+    },
+    {
+     "s": "boom",
+     "at": "fine"
+    }
+   ]
+  }
+ ]
+}
