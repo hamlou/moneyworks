@@ -1,382 +1,1792 @@
 {
-  "id": "ep51",
+ "id": "ep51",
+ "title": "Why Your Trading App Gets Paid When You Lose",
+ "voice": "chatterbox",
+ "upgraded": "2026-10-19 UPGRADE.md v2",
+ "sources": [
+  "Robinhood Markets, Inc., Form 10-K for FY2025 (SEC EDGAR, filed Feb 2026), Note 5 Disaggregation of Revenues: options revenue $1,123M in 2025 vs equities $302M (1,123 / 302 = 3.7x); total net revenues $4,473M. 10-K defines PFOF: consideration received for routing users' equity and option orders to market makers/wholesalers.",
+  "Robinhood Q4 & FY2025 results, Exhibit 99.1 to Form 8-K filed Feb 10 2026 (SEC EDGAR): record revenues of $4.5 billion in 2025; Q4 2025 options revenue $314M; Q4 2025 Options Contracts Traded 659 million; each contract generally covers 100 shares. Derived: $314M / 659M contracts = about $0.48 per contract.",
+  "U.S. SEC press release 2020-321 (Dec 17 2020): Robinhood paid $65 million to settle charges of misleading customers about payment for order flow; inferior trade prices deprived customers of $34.1 million even after the commission savings.",
+  "Massachusetts Securities Division administrative complaint vs Robinhood Financial (Docket E-2020-0047, Dec 16 2020), as reported by CNN and Bloomberg Law: confetti after trades, push notifications ('gamification'); one customer with no investment experience made more than 12,700 trades in just over six months. Consent order (Jan 2024): $7.5 million fine; confetti feature discontinued as of March 31 2021.",
+  "Bryzgalova, Pavlova & Sikorskaya, 'Retail Trading in Options and the Rise of the Big Three Wholesalers', Journal of Finance (2023): retail investors favour weekly options with average bid-ask spreads of 12.6% and lose money on average; aggregate retail losses $2.1 billion (Nov 2019 - Jun 2021, 10-day horizon); trading costs $6.4 billion; in 2021 U.S. brokerages received $2.4 billion PFOF for options vs $1.3 billion for equities; top three options wholesalers (Citadel, Susquehanna, Wolverine) ~85% share.",
+  "Chague, De-Losso & Giovannetti, 'Day Trading for a Living?' (SSRN 3423101, 2019): individuals who began day trading Brazilian equity futures 2013-2015; 97% of those who persisted more than 300 days lost money; only 1.1% earned more than the minimum wage; no evidence of learning.",
+  "EU Regulation (EU) 2024/791 (MiFIR review), Art. 39a: ban on payment for order flow; member-state transitional exemption ended 30 June 2026 (fully in force across the EU from that date). In the U.S. PFOF remains legal with disclosure (SEC Rule 606).",
+  "Illustrative story numbers (Dave is fictional): $2,000 car fund; -$90 after first month; -$400 expired weekly options; -$1,000 after chasing; -$600 on one expiring trade = $1,600 lost, $400 left (SAVED). Ep02 raccoon toll booth and ep09 index-fund callbacks."
+ ],
+ "youtube": {
   "title": "Why Your Trading App Gets Paid When You Lose",
-  "spine": {
-    "goal": "Dave wants to grow his $2,000 car fund on a 'free' zero-commission trading app that feels like a game.",
-    "stakes": "If he keeps tapping, he loses the whole $2,000 car fund (he ends up losing $1,600 of it).",
-    "central_question": "If the trading app is free, who is paying for it?",
-    "loop_big": "Promised in o6: who that somebody is, and the one switch that saved Dave's last $400 (turning options trading off). Paid in ch8.",
-    "loop_mid": "Pause-and-guess at end of ch2 (~30%): how much does the app earn from ONE options contract? Paid in ch4 (~45%): about 48 cents ($314M / 659M contracts, Q4 2025).",
-    "villain": "The zero-commission business model: the app sells Dave's orders (payment for order flow) to a small club of wholesalers who earn the spread; options pay the app ~4x more than stock trades. Revealed in ch4 (~50%).",
-    "low_point": "Ch6 (~75%): at 11 pm Dave chases his losses, puts $600 on options expiring tomorrow, confetti falls, they expire worthless. Damage $1,600, $400 left; the Brazil study says 97% of persistent day traders lose.",
-    "win": "Ch7: Dave turns options trading off, kills notifications, moves the app off his home screen, asks the no-confetti question, automates a boring index fund (education, not advice). Damage Meter flips to SAVED $400."
-  },
-  "sources": [
-    "Robinhood Markets, Inc., Form 10-K for FY2025 (SEC EDGAR, filed Feb 2026), Note 5 Disaggregation of Revenues: options revenue $1,123M in 2025 vs equities $302M (1,123 / 302 = 3.7x); total net revenues $4,473M. 10-K defines PFOF: consideration received for routing users' equity and option orders to market makers/wholesalers.",
-    "Robinhood Q4 & FY2025 results, Exhibit 99.1 to Form 8-K filed Feb 10 2026 (SEC EDGAR): record revenues of $4.5 billion in 2025; Q4 2025 options revenue $314M; Q4 2025 Options Contracts Traded 659 million; each contract generally covers 100 shares. Derived: $314M / 659M contracts = about $0.48 per contract.",
-    "U.S. SEC press release 2020-321 (Dec 17 2020): Robinhood paid $65 million to settle charges of misleading customers about payment for order flow; inferior trade prices deprived customers of $34.1 million even after the commission savings.",
-    "Massachusetts Securities Division administrative complaint vs Robinhood Financial (Docket E-2020-0047, Dec 16 2020), as reported by CNN and Bloomberg Law: confetti after trades, push notifications ('gamification'); one customer with no investment experience made more than 12,700 trades in just over six months. Consent order (Jan 2024): $7.5 million fine; confetti feature discontinued as of March 31 2021.",
-    "Bryzgalova, Pavlova & Sikorskaya, 'Retail Trading in Options and the Rise of the Big Three Wholesalers', Journal of Finance (2023): retail investors favour weekly options with average bid-ask spreads of 12.6% and lose money on average; aggregate retail losses $2.1 billion (Nov 2019 - Jun 2021, 10-day horizon); trading costs $6.4 billion; in 2021 U.S. brokerages received $2.4 billion PFOF for options vs $1.3 billion for equities; top three options wholesalers (Citadel, Susquehanna, Wolverine) ~85% share.",
-    "Chague, De-Losso & Giovannetti, 'Day Trading for a Living?' (SSRN 3423101, 2019): individuals who began day trading Brazilian equity futures 2013-2015; 97% of those who persisted more than 300 days lost money; only 1.1% earned more than the minimum wage; no evidence of learning.",
-    "EU Regulation (EU) 2024/791 (MiFIR review), Art. 39a: ban on payment for order flow; member-state transitional exemption ended 30 June 2026 (fully in force across the EU from that date). In the U.S. PFOF remains legal with disclosure (SEC Rule 606).",
-    "Illustrative story numbers (Dave is fictional): $2,000 car fund; -$90 after first month; -$400 expired weekly options; -$1,000 after chasing; -$600 on one expiring trade = $1,600 lost, $400 left (SAVED). Ep02 raccoon toll booth and ep09 index-fund callbacks."
+  "alt_titles": [
+   "Your Trading App Is Free. So Who's Paying? (It's You)",
+   "Why Trading Apps Throw Confetti When You Lose Money"
   ],
-  "beats": [
+  "hook": "Dave's free trading app felt like a game: confetti, notifications, swipe and tap. Three months later his $2,000 car fund was down to $400. Dave thought zero commission meant free. But his trading app made $1.1 billion last year from options trades alone—about 48 cents per contract. The app doesn't care if you win. It cares that you trade. This video follows the money: payment for order flow, why options pay the app almost 4x more than stocks, the hidden spread wholesalers earn, the gamification tactics (confetti after trades, constant notifications), and the one setting that saved Dave's last $400. We show the official numbers from annual reports and academic studies, explain why 97% of persistent day traders lose money, and walk through the five steps Dave used to turn off the parts of the app designed to keep him tapping. Education, not advice.",
+  "tags": [
+   "trading app fees",
+   "payment for order flow explained",
+   "why day trading loses money",
+   "robinhood how it makes money",
+   "options trading for beginners",
+   "gamification trading apps",
+   "hidden trading costs",
+   "why free trading isn't free",
+   "how wholesalers make money",
+   "stock market for beginners",
+   "dave explains money"
+  ],
+  "hashtags": [
+   "tradingapps",
+   "stockmarket",
+   "investing"
+  ],
+  "pinned": "Have you ever bought options on a trading app? YES or NO in the comments—curious how many people have tried it."
+ },
+ "beats": [
+  {
+   "id": "o1",
+   "text": "This is me losing six hundred dollars in one tap and my phone is literally throwing confetti at me.",
+   "host": true,
+   "mood": "shock",
+   "pose": "panic",
+   "pic": {
+    "id": "phone_hand",
+    "at": "phone",
+    "look": "polaroid",
+    "label": "11:04 PM"
+   },
+   "slam": {
+    "t": "-$600",
+    "at": "six"
+   },
+   "sfx": [
     {
-      "id": "o1",
-      "text": "Dave just lost six hundred dollars in one tap. And his phone is throwing confetti at him.",
-      "pause": 0.3
+     "s": "click",
+     "at": "tap"
     },
     {
-      "id": "o2",
-      "text": "Yep. That's Dave. How did a free app cost him that much? Let's rewind.",
-      "pause": 0.3
-    },
-    {
-      "id": "o3",
-      "text": "Three months earlier. Zero fees. A free stock. Swipe, tap, buy. Like a game.",
-      "pause": 0.3
-    },
-    {
-      "id": "o4",
-      "text": "Last year, one of these apps made one point one billion dollars from options trades alone.",
-      "pause": 0.3
-    },
-    {
-      "id": "o5",
-      "text": "So if the app is free, who's paying?",
-      "pause": 0.3
-    },
-    {
-      "id": "o6",
-      "text": "By the end, you'll know. And the one switch that saved Dave's last four hundred dollars.",
-      "pause": 0.6
-    },
-    {
-      "id": "c1a",
-      "chapter": "Why Dave Kept Tapping",
-      "text": "So Dave puts in two thousand dollars. His whole car fund. He buys one share of a company he's heard of. And the screen explodes with confetti.",
-      "pause": 0.5
-    },
-    {
-      "id": "c1b",
-      "text": "It feels amazing. Like he just won something. But all he did was press a button.",
-      "pause": 0.5
-    },
-    {
-      "id": "c1c",
-      "text": "Then the notifications start. A stock is moving! Your watchlist is up! Don't miss out! Dave taps. Buys. Sells. Taps again.",
-      "pause": 0.5
-    },
-    {
-      "id": "c1d",
-      "text": "You know how people train a puppy? Click, treat. Click, treat. Pretty soon, the puppy sits before you even ask. Dave was the puppy. The confetti was the treat.",
-      "pause": 0.6
-    },
-    {
-      "id": "c1e",
-      "text": "And this isn't just a joke. In twenty twenty, Massachusetts regulators accused one big trading app of exactly this. Confetti after trades. Constant notifications. They called it gamification.",
-      "pause": 0.5
-    },
-    {
-      "id": "c1f",
-      "text": "In their complaint, one customer with no investing experience made more than twelve thousand seven hundred trades. In about six months.",
-      "pause": 0.5
-    },
-    {
-      "id": "c1g",
-      "text": "That app dropped its confetti in twenty twenty one, and paid seven and a half million dollars to settle in twenty twenty four. But puppy training works on everyone. Including Dave.",
-      "pause": 0.5
-    },
-    {
-      "id": "c1h",
-      "text": "After one month, Dave had made forty trades. And his account was down ninety dollars. Which was weird. Because every trade was free. Right?",
-      "pause": 0.8
-    },
-    {
-      "id": "c2a",
-      "chapter": "The Taxi That Gets Paid",
-      "text": "So Dave digs into the fine print. Why would a company build all this, and charge him nothing?",
-      "pause": 0.5
-    },
-    {
-      "id": "c2b",
-      "text": "Here's what he found. When Dave taps buy, his order doesn't go straight to the stock exchange. The app sells it.",
-      "pause": 0.5
-    },
-    {
-      "id": "c2c",
-      "text": "It sends the order to a giant trading firm, called a wholesaler. And the wholesaler pays the app for it. That's called payment for order flow.",
-      "pause": 0.5
-    },
-    {
-      "id": "c2d",
-      "text": "Picture a taxi driver in a tourist town. A restaurant pays him ten dollars for every tourist he drops at its door. Is the food good? Doesn't matter. He gets paid when you walk in.",
-      "pause": 0.6
-    },
-    {
-      "id": "c2e",
-      "text": "And the wholesaler earns the spread. It buys from you a little cheaper, and sells a little higher. Like an airport money exchange booth. A tiny gap, on every trade.",
-      "pause": 0.5
-    },
-    {
-      "id": "c2f",
-      "text": "Which means the app doesn't really care if Dave wins. It cares that Dave trades. Like the popcorn guy at a football game. He doesn't care who scores.",
-      "pause": 0.5
-    },
-    {
-      "id": "c2g",
-      "text": "And there was one kind of trade that paid the app much more. Options. Quick guess. When Dave buys one options contract, how much does the app get paid? A penny? A dollar? Ten dollars? Write your guess in the comments. The answer is coming.",
-      "pause": 0.8
-    },
-    {
-      "id": "c3a",
-      "chapter": "The Coupon That Expires",
-      "text": "So Dave taps the options button. His buddy at work swears it's how you turn two hundred dollars into two thousand.",
-      "pause": 0.5
-    },
-    {
-      "id": "c3b",
-      "text": "An option is like a coupon. It lets you buy a stock at a set price, but only until a certain date. After that date, the coupon expires.",
-      "pause": 0.5
-    },
-    {
-      "id": "c3c",
-      "text": "Think of a half price pizza coupon. If pizza prices jump, your coupon is gold. But if Friday midnight passes and you didn't use it, it's just paper. And you paid for that paper.",
-      "pause": 0.6
-    },
-    {
-      "id": "c3d",
-      "text": "Dave buys coupons that bet a stock will jump this week. Four hundred dollars of them. The stock moves. Just not enough. Friday comes. Zero.",
-      "pause": 0.6
-    },
-    {
-      "id": "c3e",
-      "text": "Dave's damage is now four hundred ninety dollars. And the app? It got paid the moment he bought those coupons. Win or lose.",
-      "pause": 0.5
-    },
-    {
-      "id": "c3f",
-      "text": "So Dave asked a dangerous question. If the app gets paid every time, who exactly is paying it? And how much?",
-      "pause": 0.8
-    },
-    {
-      "id": "c4a",
-      "chapter": "Who Pays For Free?",
-      "text": "So Dave pulls up the annual report of the most famous zero commission app. It's public. Anyone can read it.",
-      "pause": 0.5
-    },
-    {
-      "id": "c4b",
-      "text": "In twenty twenty five, that app made four point five billion dollars. One point one billion came from options alone. Almost four times what it made from stock trades.",
-      "pause": 0.5
-    },
-    {
-      "id": "c4c",
-      "text": "Remember your guess? In the last three months of twenty twenty five, the app earned three hundred fourteen million dollars from options, on six hundred fifty nine million contracts.",
-      "pause": 0.5
-    },
-    {
-      "id": "c4d",
-      "text": "That's about forty eight cents per contract. Tiny. But tiny, times millions of Daves, every single day.",
-      "pause": 0.6
-    },
-    {
-      "id": "c4e",
-      "text": "And who pays it? A small club of wholesalers. One study found that in twenty twenty one, American brokers got two point four billion dollars for options orders, and only one point three billion for stocks. Three firms paid most of it.",
-      "pause": 0.5
-    },
-    {
-      "id": "c4f",
-      "text": "Remember the raccoon at the toll booth, from our credit card video? He never left. He just got a faster computer.",
-      "pause": 0.6
-    },
-    {
-      "id": "c4g",
-      "text": "Is this illegal? No. In America it's legal, and disclosed. Fans say it keeps trading free. Critics say it pushes apps to make you trade more. Europe banned it in twenty twenty six. That's a political question. Now you know the numbers.",
-      "pause": 0.5
-    },
-    {
-      "id": "c4h",
-      "text": "But Dave still believed one thing. At least his trades were free. He was about to find out what free really costs.",
-      "pause": 0.8
-    },
-    {
-      "id": "c5a",
-      "chapter": "The Price You Never See",
-      "text": "Dave thought zero commission meant he paid nothing. Nope.",
-      "pause": 0.5
-    },
-    {
-      "id": "c5b",
-      "text": "In twenty twenty, the S E C said one big app gave its customers worse prices. They lost thirty four point one million dollars, even after the commissions they saved. The app paid sixty five million dollars to settle.",
-      "pause": 0.5
-    },
-    {
-      "id": "c5c",
-      "text": "And remember that airport money booth? Every time Dave buys and sells, he crosses the gap twice. On the cheap weekly options small traders love, one study found that gap averaged twelve point six percent.",
-      "pause": 0.5
-    },
-    {
-      "id": "c5d",
-      "text": "Imagine buying a phone for one hundred dollars, and the shop instantly offers to buy it back for eighty seven. Before you even open the box.",
-      "pause": 0.6
-    },
-    {
-      "id": "c5e",
-      "text": "Same study. From late twenty nineteen to mid twenty twenty one, small traders lost about two point one billion dollars on options. And paid about six point four billion dollars in hidden trading costs.",
-      "pause": 0.5
-    },
-    {
-      "id": "c5f",
-      "text": "Two weeks later, Dave's damage hit one thousand dollars. And instead of stopping, Dave did what almost everyone does. He tried to win it all back.",
-      "pause": 0.8
-    },
-    {
-      "id": "c6a",
-      "chapter": "The Six Hundred Dollar Tap",
-      "text": "It's eleven at night. Dave has one thousand dollars left. His phone buzzes. A stock is moving. Fast.",
-      "pause": 0.5
-    },
-    {
-      "id": "c6b",
-      "text": "Dave thinks, one big win, and it's all back. He puts six hundred dollars on options that expire tomorrow. Tap. Confetti.",
-      "pause": 0.5
-    },
-    {
-      "id": "c6c",
-      "text": "And here we are. Right back where we started. The next day, the coupons expire. Zero. Damage, sixteen hundred dollars. Four hundred left.",
-      "pause": 0.6
-    },
-    {
-      "id": "c6d",
-      "text": "Dave wondered if he was just bad at this. So he looked for proof that anyone was good at it.",
-      "pause": 0.5
-    },
-    {
-      "id": "c6e",
-      "text": "He found a study from Brazil. Of the people who kept day trading futures for more than three hundred days, ninety seven percent lost money.",
-      "pause": 0.5
-    },
-    {
-      "id": "c6f",
-      "text": "Only about one in a hundred earned more than the minimum wage. And the researchers found no sign that people got better with practice.",
-      "pause": 0.6
-    },
-    {
-      "id": "c6g",
-      "text": "Dave felt like a puppy who just found out the treats were made of his own money. But there was one thing the app really didn't want him to find. A switch.",
-      "pause": 0.8
-    },
-    {
-      "id": "c7a",
-      "chapter": "Dave Flips The Switch",
-      "text": "So Dave opens the settings. This is education, not advice.",
-      "pause": 0.5
-    },
-    {
-      "id": "c7b",
-      "text": "Step one. In many apps, you can turn off options trading, or ask support to remove it. Dave flips it off. No more coupons that melt on Friday.",
-      "pause": 0.5
-    },
-    {
-      "id": "c7c",
-      "text": "Step two. Notifications off. No more clicker. The puppy gets to just be a dog again.",
-      "pause": 0.5
-    },
-    {
-      "id": "c7d",
-      "text": "Step three. Dave moves the app off his home screen. One extra swipe. That tiny wall stops a lot of midnight taps.",
-      "pause": 0.5
-    },
-    {
-      "id": "c7e",
-      "text": "Step four. Before any trade, Dave asks one question. Would I still buy this with no confetti and no buzz? If the answer is no, he closes the app.",
-      "pause": 0.5
-    },
-    {
-      "id": "c7f",
-      "text": "Step five. For his long term money, Dave sets up a boring automatic investment every month, into a low cost index fund. Remember our stock market video? Boring is the point.",
-      "pause": 0.5
-    },
-    {
-      "id": "c7g",
-      "text": "Dave's last four hundred dollars? Still there. Saved. But the best part wasn't the money. It was finally answering the question he started with.",
-      "pause": 0.8
-    },
-    {
-      "id": "c8a",
-      "chapter": "Who Was Paying All Along",
-      "text": "So if the app is free, who's paying?",
-      "pause": 0.5
-    },
-    {
-      "id": "c8b",
-      "text": "Dave was. Not with a fee he could see. With a worse price on every trade. With coupons that melted on Friday. And with his attention, sold one tap at a time.",
-      "pause": 0.6
-    },
-    {
-      "id": "c8c",
-      "text": "The app made about forty eight cents on each contract. Dave lost sixteen hundred dollars. Both happened in the very same tap.",
-      "pause": 0.6
-    },
-    {
-      "id": "c8d",
-      "text": "And the one switch that saved his last four hundred dollars? It wasn't a secret trading trick. It was the off button for options. The one setting the confetti never mentioned.",
-      "pause": 0.9
-    },
-    {
-      "id": "r1",
-      "chapter": "What Dave Learned",
-      "text": "One. Free apps get paid when you trade, not when you win.",
-      "pause": 0.4
-    },
-    {
-      "id": "r2",
-      "text": "Two. Options are coupons that expire. Most small traders lose on them.",
-      "pause": 0.4
-    },
-    {
-      "id": "r3",
-      "text": "Three. Confetti is a clicker. You're allowed to turn it off.",
-      "pause": 0.6
-    },
-    {
-      "id": "r4",
-      "text": "But Dave's problems aren't over. Tonight, a guy in a rented Lamborghini wants to teach him how to trade. Dave has four hundred dollars left. The course costs three hundred ninety nine.",
-      "pause": 0.5
-    },
-    {
-      "id": "r5",
-      "text": "Subscribe, and you'll see what happens. No confetti, we promise. But the raccoon might be back.",
-      "pause": 1.4
+     "s": "pop",
+     "at": "confetti"
     }
-  ],
-  "youtube": {
-    "title": "Why Your Trading App Gets Paid When You Lose",
-    "alt_titles": [
-      "Your Trading App Is Free. So Who's Paying? (It's You)",
-      "Why Trading Apps Throw Confetti When You Lose Money"
-    ],
-    "hook": "Dave's free trading app felt like a game: confetti, notifications, swipe and tap. Three months later his $2,000 car fund was down to $400. Dave thought zero commission meant free. But his trading app made $1.1 billion last year from options trades alone—about 48 cents per contract. The app doesn't care if you win. It cares that you trade. This video follows the money: payment for order flow, why options pay the app almost 4x more than stocks, the hidden spread wholesalers earn, the gamification tactics (confetti after trades, constant notifications), and the one setting that saved Dave's last $400. We show the official numbers from annual reports and academic studies, explain why 97% of persistent day traders lose money, and walk through the five steps Dave used to turn off the parts of the app designed to keep him tapping. Education, not advice.",
-    "tags": [
-      "trading app fees",
-      "payment for order flow explained",
-      "why day trading loses money",
-      "robinhood how it makes money",
-      "options trading for beginners",
-      "gamification trading apps",
-      "hidden trading costs",
-      "why free trading isn't free",
-      "how wholesalers make money",
-      "stock market for beginners",
-      "dave explains money"
-    ],
-    "hashtags": [
-      "tradingapps",
-      "stockmarket",
-      "investing"
-    ],
-    "pinned": "Have you ever bought options on a trading app? YES or NO in the comments—curious how many people have tried it."
+   ],
+   "pause": 0.15
+  },
+  {
+   "id": "o2",
+   "text": "The app is free so how does a free app cost me sixteen hundred dollars?",
+   "host": true,
+   "mood": "think",
+   "pose": "shrug",
+   "zoom": {
+    "in": "sixteen",
+    "out": "dollars"
+   },
+   "sfx": [
+    {
+     "s": "scratch",
+     "at": "free#2"
+    },
+    {
+     "s": "boom",
+     "at": "dollars"
+    }
+   ],
+   "pause": 0.15
+  },
+  {
+   "id": "o3",
+   "text": "Plot twist.",
+   "card": {
+    "t": "Plot twist.",
+    "dark": true
+   },
+   "sfx": [
+    {
+     "s": "pack/01_boom",
+     "at": "twist"
+    }
+   ],
+   "pause": 0.15
+  },
+  {
+   "id": "o4",
+   "text": "By the end of this you'll know exactly who was paying for my free app and the one switch in the settings that saved my last four hundred dollars.",
+   "host": true,
+   "mood": "suspicious",
+   "pose": "point_r",
+   "pic": {
+    "id": "light_switch",
+    "at": "switch",
+    "look": "circle"
+   },
+   "slam": {
+    "t": "ONE SWITCH",
+    "at": "switch"
+   },
+   "sfx": [
+    {
+     "s": "click",
+     "at": "switch"
+    },
+    {
+     "s": "cash",
+     "at": "four"
+    }
+   ],
+   "pause": 0.15
+  },
+  {
+   "id": "o5",
+   "text": "And most people click off before that part which is funny because the app really hopes you never find that switch.",
+   "host": true,
+   "mood": "smug",
+   "pose": "hips",
+   "sfx": [
+    {
+     "s": "sting",
+     "at": "switch"
+    }
+   ],
+   "pause": 0.3
+  },
+  {
+   "id": "c1a",
+   "text": "So three months ago I put in two thousand dollars. My whole car fund. I buy one share of a company I've heard of and the screen explodes with confetti.",
+   "pic": {
+    "id": "party_confetti",
+    "at": "confetti",
+    "look": "tape"
+   },
+   "slam": {
+    "t": "$2,000",
+    "at": "two"
+   },
+   "sfx": [
+    {
+     "s": "cash",
+     "at": "two"
+    },
+    {
+     "s": "crowd",
+     "at": "explodes"
+    }
+   ]
+  },
+  {
+   "id": "n1",
+   "text": "I'm a very smart investor so I picked the company because I liked their logo. That was my entire research.",
+   "host": true,
+   "mood": "happy",
+   "pose": "present",
+   "zoom": {
+    "in": "entire",
+    "out": "research"
+   },
+   "sfx": [
+    {
+     "s": "ding",
+     "at": "logo"
+    },
+    {
+     "s": "boom",
+     "at": "research"
+    }
+   ],
+   "pic": {
+    "id": "logo_shirt",
+    "at": "logo",
+    "look": "sticker"
+   }
+  },
+  {
+   "id": "c1b",
+   "text": "And it feels amazing. Like I just won something. But all I did was press a button.",
+   "host": true,
+   "mood": "grin",
+   "pose": "celebrate",
+   "sfx": [
+    {
+     "s": "crowd",
+     "at": "won"
+    },
+    {
+     "s": "cricket",
+     "at": "button"
+    }
+   ],
+   "pic": {
+    "id": "trophy",
+    "at": "won",
+    "look": "circle"
+   }
+  },
+  {
+   "id": "c1c",
+   "text": "Then the notifications start. A stock is moving. Your watchlist is up. Don't miss out. And I tap and buy and sell and tap again.",
+   "pic": {
+    "id": "notification",
+    "at": "notifications",
+    "look": "sticker"
+   },
+   "sfx": [
+    {
+     "s": "ding",
+     "at": "moving"
+    },
+    {
+     "s": "ding",
+     "at": "up"
+    },
+    {
+     "s": "ding",
+     "at": "out"
+    },
+    {
+     "s": "click",
+     "at": "tap#2"
+    }
+   ]
+  },
+  {
+   "id": "n2",
+   "text": "Me at my desk every time my phone buzzes.",
+   "meme": {
+    "t": "buttons",
+    "a": "Do my job",
+    "b": "Check the stock",
+    "at": "buzzes"
+   },
+   "sfx": [
+    {
+     "s": "buzz",
+     "at": "buzzes"
+    }
+   ]
+  },
+  {
+   "id": "c1d",
+   "text": "You know how people train a puppy? Click and treat and click and treat until the puppy sits before you even ask. I was the puppy and the confetti was the treat.",
+   "pic": {
+    "id": "puppy",
+    "at": "puppy",
+    "look": "polaroid"
+   },
+   "sfx": [
+    {
+     "s": "click",
+     "at": "Click"
+    },
+    {
+     "s": "pop",
+     "at": "treat"
+    },
+    {
+     "s": "boing",
+     "at": "puppy#3"
+    }
+   ]
+  },
+  {
+   "id": "n14",
+   "text": "Every app wants to be a slot machine now and the confetti is the sound of a jackpot that never came.",
+   "pic": {
+    "id": "casino_lights",
+    "at": "jackpot",
+    "look": "plain"
+   },
+   "sfx": [
+    {
+     "s": "pack/01_beating",
+     "at": "slot"
+    },
+    {
+     "s": "trombone",
+     "at": "never"
+    }
+   ]
+  },
+  {
+   "id": "n3",
+   "text": "Good boy Dave.",
+   "host": true,
+   "mood": "money",
+   "pose": "thumbs",
+   "zoom": {
+    "in": "Good",
+    "out": "Dave"
+   },
+   "sfx": [
+    {
+     "s": "quack",
+     "at": "boy"
+    },
+    {
+     "s": "boom",
+     "at": "Dave"
+    }
+   ]
+  },
+  {
+   "id": "c1e",
+   "text": "And this isn't just a joke. Massachusetts regulators accused one big trading app of exactly this and they had a fancy word for it. Gamification.",
+   "pic": {
+    "id": "massachusetts",
+    "at": "Massachusetts",
+    "look": "news",
+    "label": "Massachusetts 2020"
+   },
+   "slam": {
+    "t": "GAMIFICATION",
+    "at": "Gamification"
+   },
+   "sfx": [
+    {
+     "s": "stamp",
+     "at": "accused"
+    },
+    {
+     "s": "pack/01_boom",
+     "at": "Gamification"
+    }
+   ]
+  },
+  {
+   "id": "c1f",
+   "text": "In their complaint one customer with zero experience made more than twelve thousand trades in about six months.",
+   "host": true,
+   "mood": "shock",
+   "pose": "panic",
+   "slam": {
+    "t": "12,000 TRADES",
+    "at": "twelve"
+   },
+   "sfx": [
+    {
+     "s": "drumroll",
+     "at": "customer"
+    },
+    {
+     "s": "boom",
+     "at": "twelve"
+    }
+   ]
+  },
+  {
+   "id": "n4",
+   "text": "That guy's thumb after six months.",
+   "meme": {
+    "t": "fine",
+    "a": "My thumb is fine",
+    "at": "thumb"
+   },
+   "sfx": [
+    {
+     "s": "pack/02_dial_up",
+     "at": "thumb"
+    }
+   ]
+  },
+  {
+   "id": "c1g",
+   "text": "That app dropped the confetti later and paid seven and a half million dollars to settle. But puppy training works on everyone. Including me.",
+   "host": true,
+   "mood": "tired",
+   "pose": "facepalm",
+   "sfx": [
+    {
+     "s": "cash",
+     "at": "million"
+    },
+    {
+     "s": "boom",
+     "at": "me"
+    }
+   ],
+   "pic": {
+    "id": "courthouse",
+    "at": "settle",
+    "look": "polaroid"
+   }
+  },
+  {
+   "id": "c1h",
+   "text": "After one month I've made forty trades and my account is down ninety dollars. Which is weird because every trade was free. Right?",
+   "host": true,
+   "mood": "think",
+   "pose": "think",
+   "slam": {
+    "t": "-$90",
+    "at": "ninety"
+   },
+   "zoom": {
+    "in": "Right",
+    "out": "Right"
+   },
+   "sfx": [
+    {
+     "s": "trombone",
+     "at": "ninety"
+    },
+    {
+     "s": "scratch",
+     "at": "Right"
+    }
+   ]
+  },
+  {
+   "id": "c2a",
+   "text": "So I dig into the fine print. Why would a company build all this and charge me nothing?",
+   "pic": {
+    "id": "magnifying_glass",
+    "at": "print",
+    "look": "circle"
+   },
+   "sfx": [
+    {
+     "s": "pack/01_processing",
+     "at": "dig"
+    }
+   ]
+  },
+  {
+   "id": "c2b",
+   "text": "Here's what I found. When I tap buy my order doesn't go straight to the stock exchange. The app sells it.",
+   "pic": {
+    "id": "nyse",
+    "at": "exchange",
+    "look": "polaroid",
+    "label": "where I thought it went"
+   },
+   "sfx": [
+    {
+     "s": "whoosh",
+     "at": "exchange"
+    },
+    {
+     "s": "scratch",
+     "at": "sells"
+    }
+   ]
+  },
+  {
+   "id": "c2c",
+   "text": "It sends my order to a giant trading firm called a wholesaler and the wholesaler pays the app for it. It's called payment for order flow.",
+   "host": true,
+   "mood": "suspicious",
+   "pose": "point_r",
+   "slam": {
+    "t": "PAYMENT FOR ORDER FLOW",
+    "at": "payment"
+   },
+   "sfx": [
+    {
+     "s": "cash",
+     "at": "pays"
+    },
+    {
+     "s": "stamp",
+     "at": "payment"
+    }
+   ],
+   "pic": {
+    "id": "server_room",
+    "at": "firm",
+    "look": "tape"
+   }
+  },
+  {
+   "id": "c2d",
+   "text": "Picture a taxi driver in a tourist town. A restaurant pays him ten dollars for every tourist he drops at its door. Is the food good? Doesn't matter. He gets paid when you walk in.",
+   "pic": {
+    "id": "taxi",
+    "at": "taxi",
+    "look": "tape"
+   },
+   "sfx": [
+    {
+     "s": "ding",
+     "at": "taxi"
+    },
+    {
+     "s": "cash",
+     "at": "ten"
+    },
+    {
+     "s": "cricket",
+     "at": "good"
+    }
+   ]
+  },
+  {
+   "id": "n5",
+   "text": "The taxi driver when you ask if the restaurant is good.",
+   "meme": {
+    "t": "fine",
+    "a": "Best food in town trust me",
+    "at": "driver"
+   },
+   "sfx": [
+    {
+     "s": "boing",
+     "at": "driver"
+    }
+   ]
+  },
+  {
+   "id": "c2e",
+   "text": "And the wholesaler makes money on the gap. It buys from me a little cheaper and sells a little higher. Like the money exchange booth at the airport.",
+   "pic": {
+    "id": "currency_exchange",
+    "at": "booth",
+    "look": "plain"
+   },
+   "sfx": [
+    {
+     "s": "coin",
+     "at": "cheaper"
+    },
+    {
+     "s": "coin",
+     "at": "higher"
+    }
+   ]
+  },
+  {
+   "id": "c2f",
+   "text": "Which means the app doesn't really care if I win. It cares that I trade. Like the popcorn guy at a football game. He doesn't care who scores.",
+   "host": true,
+   "mood": "smug",
+   "pose": "shrug",
+   "pic": {
+    "id": "popcorn",
+    "at": "popcorn",
+    "look": "sticker"
+   },
+   "zoom": {
+    "in": "care#2",
+    "out": "scores"
+   },
+   "sfx": [
+    {
+     "s": "pop",
+     "at": "popcorn"
+    },
+    {
+     "s": "crowd",
+     "at": "football"
+    },
+    {
+     "s": "boom",
+     "at": "scores"
+    }
+   ]
+  },
+  {
+   "id": "n15",
+   "text": "The app watching me trade at two in the morning.",
+   "meme": {
+    "t": "stonks",
+    "a": "ANOTHER TRADE",
+    "at": "watching"
+   },
+   "sfx": [
+    {
+     "s": "cash",
+     "at": "trade"
+    }
+   ]
+  },
+  {
+   "id": "c2g",
+   "text": "And there was one kind of trade that paid the app way more. Options. Quick guess. When I buy one options contract how much does the app get paid? A penny or a dollar or ten dollars? Write your guess in the comments.",
+   "host": true,
+   "mood": "suspicious",
+   "pose": "point_r",
+   "slam": {
+    "t": "GUESS",
+    "at": "guess"
+   },
+   "sfx": [
+    {
+     "s": "tick",
+     "at": "guess"
+    },
+    {
+     "s": "ding",
+     "at": "penny"
+    },
+    {
+     "s": "ding",
+     "at": "dollar"
+    },
+    {
+     "s": "ding",
+     "at": "ten"
+    }
+   ]
+  },
+  {
+   "id": "c3a",
+   "text": "So I tap the options button because my buddy at work swears it's how you turn two hundred dollars into two thousand.",
+   "pic": {
+    "id": "office_worker",
+    "at": "work",
+    "look": "polaroid",
+    "label": "my buddy Kyle"
+   },
+   "sfx": [
+    {
+     "s": "click",
+     "at": "tap"
+    },
+    {
+     "s": "cash",
+     "at": "thousand"
+    }
+   ]
+  },
+  {
+   "id": "n6",
+   "text": "My buddy explaining options.",
+   "meme": {
+    "t": "stonks",
+    "a": "TRUST ME BRO",
+    "at": "explaining"
+   },
+   "sfx": [
+    {
+     "s": "boom",
+     "at": "options"
+    }
+   ]
+  },
+  {
+   "id": "c3b",
+   "text": "An option is basically a coupon. It lets you buy a stock at a set price but only until a certain date. After that date the coupon expires.",
+   "host": true,
+   "mood": "think",
+   "pose": "present",
+   "pic": {
+    "id": "coupon",
+    "at": "coupon",
+    "look": "tape"
+   },
+   "sfx": [
+    {
+     "s": "paper",
+     "at": "coupon"
+    },
+    {
+     "s": "tick",
+     "at": "expires"
+    }
+   ]
+  },
+  {
+   "id": "c3c",
+   "text": "Think of a half price pizza coupon. If pizza prices jump your coupon is gold. But if Friday midnight passes and you didn't use it it's just paper. And you paid for that paper.",
+   "pic": {
+    "id": "pizza",
+    "at": "pizza",
+    "look": "sticker"
+   },
+   "sfx": [
+    {
+     "s": "ding",
+     "at": "gold"
+    },
+    {
+     "s": "tick",
+     "at": "midnight"
+    },
+    {
+     "s": "trombone",
+     "at": "paper#2"
+    }
+   ]
+  },
+  {
+   "id": "c3d",
+   "text": "So I buy coupons that bet a stock will jump this week. Four hundred dollars of them. The stock moves. Just not enough. Friday comes. Zero.",
+   "host": true,
+   "mood": "sad",
+   "pose": "facepalm",
+   "slam": {
+    "t": "$0",
+    "at": "Zero"
+   },
+   "sfx": [
+    {
+     "s": "cash",
+     "at": "Four"
+    },
+    {
+     "s": "pack/01_beating",
+     "at": "moves"
+    },
+    {
+     "s": "scratch",
+     "at": "enough"
+    },
+    {
+     "s": "pack/02_deep",
+     "at": "Zero"
+    }
+   ],
+   "exag": 0.6
+  },
+  {
+   "id": "n7",
+   "text": "Me checking my options on Friday night.",
+   "meme": {
+    "t": "vs",
+    "a": "Me on Monday",
+    "b": "Me on Friday",
+    "at": "Friday"
+   },
+   "sfx": [
+    {
+     "s": "trombone",
+     "at": "Friday"
+    }
+   ]
+  },
+  {
+   "id": "c3e",
+   "text": "My damage is now four hundred ninety dollars. And the app? It got paid the moment I bought those coupons. Win or lose.",
+   "host": true,
+   "mood": "angry",
+   "pose": "point_r",
+   "slam": {
+    "t": "-$490",
+    "at": "ninety"
+   },
+   "zoom": {
+    "in": "Win",
+    "out": "lose"
+   },
+   "sfx": [
+    {
+     "s": "cash",
+     "at": "paid"
+    },
+    {
+     "s": "boom",
+     "at": "lose"
+    }
+   ]
+  },
+  {
+   "id": "c3f",
+   "text": "So I asked a dangerous question. If the app gets paid every time then who exactly is paying it?",
+   "host": true,
+   "mood": "suspicious",
+   "pose": "think",
+   "sfx": [
+    {
+     "s": "riser",
+     "at": "dangerous"
+    },
+    {
+     "s": "sting",
+     "at": "paying"
+    }
+   ],
+   "pic": {
+    "id": "question_sign",
+    "at": "question",
+    "look": "circle"
+   }
+  },
+  {
+   "id": "c4a",
+   "text": "So I pull up the yearly report of the most famous free trading app. It's public and anyone can read it.",
+   "chapter": "Who Pays For Free",
+   "pic": {
+    "id": "annual_report",
+    "at": "report",
+    "look": "tape"
+   },
+   "sfx": [
+    {
+     "s": "paper",
+     "at": "report"
+    }
+   ]
+  },
+  {
+   "id": "c4b",
+   "text": "Last year that app made about four and a half billion dollars and one billion came from options alone.",
+   "host": true,
+   "mood": "shock",
+   "pose": "panic",
+   "slam": {
+    "t": "$1,000,000,000",
+    "at": "billion#2"
+   },
+   "sfx": [
+    {
+     "s": "drumroll",
+     "at": "made"
+    },
+    {
+     "s": "pack/03_evolve_boom_brass_d",
+     "at": "billion#2"
+    }
+   ]
+  },
+  {
+   "id": "c4c",
+   "text": "Remember your guess? It's about forty eight cents per contract.",
+   "host": true,
+   "mood": "happy",
+   "pose": "point_up",
+   "slam": {
+    "t": "48¢",
+    "at": "eight"
+   },
+   "sfx": [
+    {
+     "s": "drumroll",
+     "at": "guess"
+    },
+    {
+     "s": "ding",
+     "at": "cents"
+    }
+   ]
+  },
+  {
+   "id": "n16",
+   "text": "Wait. Forty eight cents? I lost four hundred dollars and they made forty eight cents?",
+   "host": true,
+   "mood": "shock",
+   "pose": "panic",
+   "zoom": {
+    "in": "they",
+    "out": "cents#2"
+   },
+   "sfx": [
+    {
+     "s": "scratch",
+     "at": "Wait"
+    },
+    {
+     "s": "boom",
+     "at": "cents#2"
+    }
+   ]
+  },
+  {
+   "id": "c4d",
+   "text": "Which sounds tiny. But tiny times millions of people like me every single day is a skyscraper.",
+   "pic": {
+    "id": "skyscraper",
+    "at": "skyscraper",
+    "look": "plain"
+   },
+   "sfx": [
+    {
+     "s": "coin",
+     "at": "tiny#2"
+    },
+    {
+     "s": "pack/01_boom",
+     "at": "skyscraper"
+    }
+   ]
+  },
+  {
+   "id": "n8",
+   "text": "Forty eight cents explained.",
+   "meme": {
+    "t": "brain",
+    "a": "48 cents",
+    "b": "48 cents times you",
+    "c": "48 cents times everyone",
+    "at": "explained"
+   },
+   "sfx": [
+    {
+     "s": "cash",
+     "at": "explained"
+    }
+   ]
+  },
+  {
+   "id": "c4e",
+   "text": "And who pays it? A small club of giant trading firms. And just three of them pay most of the money.",
+   "pic": {
+    "id": "wall_street",
+    "at": "firms",
+    "look": "news",
+    "label": "the club"
+   },
+   "sfx": [
+    {
+     "s": "sting",
+     "at": "club"
+    },
+    {
+     "s": "stamp",
+     "at": "three"
+    }
+   ]
+  },
+  {
+   "id": "c4f",
+   "text": "It's like a raccoon at a toll booth. He never left. He just got a faster computer.",
+   "pic": {
+    "id": "raccoon",
+    "at": "raccoon",
+    "look": "circle"
+   },
+   "sfx": [
+    {
+     "s": "quack",
+     "at": "raccoon"
+    },
+    {
+     "s": "pack/02_dial_up",
+     "at": "computer"
+    }
+   ]
+  },
+  {
+   "id": "n17",
+   "text": "The raccoon in twenty twenty six.",
+   "meme": {
+    "t": "vs",
+    "a": "Toll booth raccoon",
+    "b": "Raccoon with a supercomputer",
+    "at": "raccoon"
+   },
+   "sfx": [
+    {
+     "s": "quack",
+     "at": "raccoon"
+    }
+   ]
+  },
+  {
+   "id": "c4g",
+   "text": "Is it illegal? No. In America it's legal and it's disclosed. Fans say it keeps trading free and critics say it pushes apps to make you trade more. Europe decided to ban it. Now you know how it works.",
+   "host": true,
+   "mood": "neutral",
+   "pose": "talk",
+   "pic": {
+    "id": "eu_flag",
+    "at": "Europe",
+    "look": "sticker"
+   },
+   "sfx": [
+    {
+     "s": "stamp",
+     "at": "No"
+    },
+    {
+     "s": "ding",
+     "at": "Europe"
+    }
+   ]
+  },
+  {
+   "id": "c4h",
+   "text": "But I still believed one thing. At least my trades were free. And I was about to find out what free really costs.",
+   "host": true,
+   "mood": "worried",
+   "pose": "hips",
+   "sfx": [
+    {
+     "s": "riser",
+     "at": "free"
+    }
+   ],
+   "pic": {
+    "id": "price_tag",
+    "at": "costs",
+    "look": "sticker"
+   }
+  },
+  {
+   "id": "c5a",
+   "text": "I thought zero commission meant I paid nothing. Nope.",
+   "chapter": "The Price You Never See",
+   "card": {
+    "t": "Nope.",
+    "dark": true
+   },
+   "sfx": [
+    {
+     "s": "scratch",
+     "at": "Nope"
+    }
+   ],
+   "pause": 0.5
+  },
+  {
+   "id": "c5b",
+   "text": "In twenty twenty the SEC said one big app gave its customers worse prices and those customers lost more than the commissions they saved. The app paid sixty five million dollars to settle.",
+   "pic": {
+    "id": "sec",
+    "at": "SEC",
+    "look": "news",
+    "label": "U.S. SEC"
+   },
+   "sfx": [
+    {
+     "s": "stamp",
+     "at": "SEC"
+    },
+    {
+     "s": "cash",
+     "at": "million"
+    }
+   ]
+  },
+  {
+   "id": "c5c",
+   "text": "And remember the airport money booth? Every time I buy and sell I cross that gap twice. And on the cheap weekly options small traders love that gap can eat more than ten percent.",
+   "host": true,
+   "mood": "angry",
+   "pose": "point_r",
+   "slam": {
+    "t": "10%+ GONE",
+    "at": "ten"
+   },
+   "sfx": [
+    {
+     "s": "coin",
+     "at": "buy"
+    },
+    {
+     "s": "coin",
+     "at": "sell"
+    },
+    {
+     "s": "pack/02_deep",
+     "at": "eat"
+    }
+   ]
+  },
+  {
+   "id": "c5d",
+   "text": "Imagine buying a phone for one hundred dollars and the shop instantly offers to buy it back for eighty seven. Before you even open the box.",
+   "pic": {
+    "id": "phone_box",
+    "at": "box",
+    "look": "tape"
+   },
+   "sfx": [
+    {
+     "s": "cash",
+     "at": "hundred"
+    },
+    {
+     "s": "scratch",
+     "at": "eighty"
+    },
+    {
+     "s": "boom",
+     "at": "box"
+    }
+   ]
+  },
+  {
+   "id": "n9",
+   "text": "The phone shop guy.",
+   "meme": {
+    "t": "drake",
+    "a": "Selling you a phone",
+    "b": "Buying it back for less",
+    "at": "guy"
+   },
+   "sfx": [
+    {
+     "s": "pop",
+     "at": "guy"
+    }
+   ]
+  },
+  {
+   "id": "c5e",
+   "text": "One study found small traders lost about two billion dollars on options in less than two years. And paid even more in hidden costs on top.",
+   "host": true,
+   "mood": "sad",
+   "pose": "facepalm",
+   "pic": {
+    "id": "receipt",
+    "at": "costs",
+    "look": "polaroid"
+   },
+   "sfx": [
+    {
+     "s": "trombone",
+     "at": "lost"
+    },
+    {
+     "s": "pack/02_evolve_brassy_drop_2",
+     "at": "hidden"
+    }
+   ]
+  },
+  {
+   "id": "n18",
+   "text": "Hidden costs every time I hit buy.",
+   "meme": {
+    "t": "buttons",
+    "a": "Pay a fee",
+    "b": "Pay a hidden fee",
+    "at": "costs"
+   },
+   "sfx": [
+    {
+     "s": "coin",
+     "at": "buy"
+    }
+   ]
+  },
+  {
+   "id": "c5f",
+   "text": "Two weeks later my damage hit one thousand dollars. And instead of stopping I did what almost everyone does. I tried to win it all back.",
+   "host": true,
+   "mood": "worried",
+   "pose": "talk",
+   "slam": {
+    "t": "-$1,000",
+    "at": "thousand"
+   },
+   "sfx": [
+    {
+     "s": "pack/01_beating",
+     "at": "damage"
+    },
+    {
+     "s": "sting",
+     "at": "back"
+    }
+   ],
+   "exag": 0.6,
+   "pic": {
+    "id": "slot_machine",
+    "at": "back",
+    "look": "tape"
+   }
+  },
+  {
+   "id": "c6a",
+   "text": "It's eleven at night. I have one thousand dollars left. My phone buzzes. A stock is moving fast.",
+   "chapter": "The Six Hundred Dollar Tap",
+   "pic": {
+    "id": "night_bed",
+    "at": "phone",
+    "look": "plain"
+   },
+   "sfx": [
+    {
+     "s": "tick",
+     "at": "eleven"
+    },
+    {
+     "s": "buzz",
+     "at": "buzzes"
+    }
+   ]
+  },
+  {
+   "id": "c6b",
+   "text": "And I think one big win and it's all back. So I put six hundred dollars on options that expire tomorrow. Tap. Confetti.",
+   "host": true,
+   "mood": "money",
+   "pose": "celebrate",
+   "zoom": {
+    "in": "Tap",
+    "out": "Confetti"
+   },
+   "sfx": [
+    {
+     "s": "drumroll",
+     "at": "six"
+    },
+    {
+     "s": "click",
+     "at": "Tap"
+    },
+    {
+     "s": "pop",
+     "at": "Confetti"
+    }
+   ]
+  },
+  {
+   "id": "c6c",
+   "text": "And here we are back at the start. Next day the coupons expire. Zero. Sixteen hundred dollars gone and four hundred left.",
+   "host": true,
+   "mood": "sad",
+   "pose": "facepalm",
+   "slam": {
+    "t": "-$1,600",
+    "at": "Sixteen"
+   },
+   "sfx": [
+    {
+     "s": "pack/02_deep",
+     "at": "Zero"
+    },
+    {
+     "s": "trombone",
+     "at": "gone"
+    }
+   ],
+   "exag": 0.65
+  },
+  {
+   "id": "n10",
+   "text": "Me looking at my car fund.",
+   "meme": {
+    "t": "fine",
+    "a": "I'll take the bus",
+    "at": "car"
+   },
+   "sfx": [
+    {
+     "s": "cricket",
+     "at": "fund"
+    }
+   ]
+  },
+  {
+   "id": "c6d",
+   "text": "So I wondered if I was just bad at this. Maybe there are people who are good at it. So I looked for proof.",
+   "host": true,
+   "mood": "think",
+   "pose": "think",
+   "sfx": [
+    {
+     "s": "pack/01_processing",
+     "at": "proof"
+    }
+   ],
+   "pic": {
+    "id": "trader_screens",
+    "at": "people",
+    "look": "polaroid"
+   }
+  },
+  {
+   "id": "c6e",
+   "text": "I found a study from Brazil. Of the people who kept day trading for more than three hundred days ninety seven percent lost money.",
+   "pic": {
+    "id": "brazil",
+    "at": "Brazil",
+    "look": "polaroid",
+    "label": "São Paulo"
+   },
+   "slam": {
+    "t": "97% LOST",
+    "at": "ninety"
+   },
+   "sfx": [
+    {
+     "s": "whoosh",
+     "at": "Brazil"
+    },
+    {
+     "s": "stamp",
+     "at": "lost"
+    }
+   ]
+  },
+  {
+   "id": "c6f",
+   "text": "Only about one in a hundred earned more than minimum wage. And the people didn't get better with practice.",
+   "host": true,
+   "mood": "tired",
+   "pose": "shrug",
+   "zoom": {
+    "in": "didn't",
+    "out": "practice"
+   },
+   "sfx": [
+    {
+     "s": "trombone",
+     "at": "wage"
+    },
+    {
+     "s": "boom",
+     "at": "practice"
+    }
+   ]
+  },
+  {
+   "id": "n11",
+   "text": "Day traders after three hundred days of practice.",
+   "meme": {
+    "t": "brain",
+    "a": "Day 1 lose money",
+    "b": "Day 100 lose money faster",
+    "c": "Day 300 still losing",
+    "at": "practice"
+   },
+   "sfx": [
+    {
+     "s": "pack/01_processing",
+     "at": "practice"
+    }
+   ]
+  },
+  {
+   "id": "c6g",
+   "text": "I felt like a puppy who just found out the treats were made of his own money. But there was one thing the app really didn't want me to find. A switch.",
+   "host": true,
+   "mood": "suspicious",
+   "pose": "point_r",
+   "slam": {
+    "t": "THE SWITCH",
+    "at": "switch"
+   },
+   "sfx": [
+    {
+     "s": "quack",
+     "at": "puppy"
+    },
+    {
+     "s": "riser",
+     "at": "find"
+    },
+    {
+     "s": "click",
+     "at": "switch"
+    }
+   ]
+  },
+  {
+   "id": "n19",
+   "text": "And honestly the worst feeling isn't losing the money. It's realizing the app knew I'd keep tapping before I did. They built the whole thing around the version of me at eleven at night.",
+   "host": true,
+   "mood": "sad",
+   "pose": "think",
+   "pic": {
+    "id": "night_city",
+    "at": "night",
+    "look": "polaroid"
+   },
+   "sfx": [
+    {
+     "s": "pack/01_beating",
+     "at": "realizing"
+    },
+    {
+     "s": "tick",
+     "at": "eleven"
+    }
+   ],
+   "exag": 0.6
+  },
+  {
+   "id": "n20",
+   "text": "Yeah whatever. Let's fix it.",
+   "card": {
+    "t": "Let's fix it.",
+    "dark": false
+   },
+   "sfx": [
+    {
+     "s": "ding",
+     "at": "fix"
+    }
+   ],
+   "pause": 0.5
+  },
+  {
+   "id": "c7a",
+   "text": "So I open the settings. This is education and not advice.",
+   "chapter": "I Flip The Switch",
+   "pic": {
+    "id": "gear",
+    "at": "settings",
+    "look": "circle"
+   },
+   "sfx": [
+    {
+     "s": "click",
+     "at": "settings"
+    }
+   ]
+  },
+  {
+   "id": "c7b",
+   "text": "Step one. In a lot of apps you can turn off options trading or ask support to remove it. I flip it off. No more coupons that melt on Friday.",
+   "host": true,
+   "mood": "happy",
+   "pose": "point_up",
+   "slam": {
+    "t": "OPTIONS OFF",
+    "at": "off#2"
+   },
+   "sfx": [
+    {
+     "s": "ding",
+     "at": "one"
+    },
+    {
+     "s": "click",
+     "at": "flip"
+    }
+   ]
+  },
+  {
+   "id": "c7c",
+   "text": "Step two. Notifications off. No more clicker. The puppy gets to just be a dog again.",
+   "host": true,
+   "mood": "grin",
+   "pose": "thumbs",
+   "pic": {
+    "id": "dog_park",
+    "at": "dog",
+    "look": "polaroid"
+   },
+   "sfx": [
+    {
+     "s": "ding",
+     "at": "two"
+    },
+    {
+     "s": "click",
+     "at": "off"
+    },
+    {
+     "s": "boing",
+     "at": "dog"
+    }
+   ]
+  },
+  {
+   "id": "c7d",
+   "text": "Step three. I move the app off my home screen. One extra swipe is a tiny wall that stops a lot of midnight taps.",
+   "host": true,
+   "mood": "smug",
+   "pose": "present",
+   "pic": {
+    "id": "brick_wall",
+    "at": "wall",
+    "look": "tape"
+   },
+   "sfx": [
+    {
+     "s": "ding",
+     "at": "three"
+    },
+    {
+     "s": "whoosh",
+     "at": "swipe"
+    },
+    {
+     "s": "thud",
+     "at": "wall"
+    }
+   ]
+  },
+  {
+   "id": "c7e",
+   "text": "Step four. Before any trade I ask one question. Would I still buy this with no confetti and no buzz? If the answer is no I close the app.",
+   "host": true,
+   "mood": "think",
+   "pose": "talk",
+   "zoom": {
+    "in": "no#2",
+    "out": "app"
+   },
+   "sfx": [
+    {
+     "s": "ding",
+     "at": "four"
+    },
+    {
+     "s": "click",
+     "at": "close"
+    }
+   ]
+  },
+  {
+   "id": "n21",
+   "text": "My thumb at midnight now.",
+   "meme": {
+    "t": "fine",
+    "a": "Nothing to tap",
+    "at": "thumb"
+   },
+   "sfx": [
+    {
+     "s": "cricket",
+     "at": "midnight"
+    }
+   ]
+  },
+  {
+   "id": "c7f",
+   "text": "Step five. For my long term money I set up a boring automatic investment every month into a low cost index fund. Boring is the point.",
+   "host": true,
+   "mood": "happy",
+   "pose": "present",
+   "pic": {
+    "id": "piggy_bank",
+    "at": "investment",
+    "look": "sticker"
+   },
+   "slam": {
+    "t": "BORING = GOOD",
+    "at": "Boring"
+   },
+   "sfx": [
+    {
+     "s": "ding",
+     "at": "five"
+    },
+    {
+     "s": "coin",
+     "at": "month"
+    },
+    {
+     "s": "boom",
+     "at": "point"
+    }
+   ]
+  },
+  {
+   "id": "n12",
+   "text": "My portfolio now.",
+   "meme": {
+    "t": "drake",
+    "a": "Confetti trades at midnight",
+    "b": "Boring index fund",
+    "at": "portfolio"
+   },
+   "sfx": [
+    {
+     "s": "ding",
+     "at": "portfolio"
+    }
+   ]
+  },
+  {
+   "id": "c7g",
+   "text": "And my last four hundred dollars? Still there. But the best part wasn't the money. It was finally answering the question I started with.",
+   "host": true,
+   "mood": "grin",
+   "pose": "celebrate",
+   "slam": {
+    "t": "$400 SAVED",
+    "at": "four"
+   },
+   "sfx": [
+    {
+     "s": "crowd",
+     "at": "Still"
+    },
+    {
+     "s": "riser",
+     "at": "question"
+    }
+   ]
+  },
+  {
+   "id": "c8a",
+   "text": "So if the app is free who's paying?",
+   "card": "If the app is free who's paying?",
+   "sfx": [
+    {
+     "s": "drumroll",
+     "at": "paying"
+    }
+   ]
+  },
+  {
+   "id": "c8b",
+   "text": "I was.",
+   "card": {
+    "t": "I was.",
+    "dark": true
+   },
+   "sfx": [
+    {
+     "s": "pack/01_boom",
+     "at": "was"
+    }
+   ],
+   "pause": 0.6
+  },
+  {
+   "id": "n13",
+   "text": "Not with a fee I could see. With worse prices on every trade and coupons that melted on Friday and with my attention sold one tap at a time.",
+   "host": true,
+   "mood": "tired",
+   "pose": "shrug",
+   "sfx": [
+    {
+     "s": "coin",
+     "at": "prices"
+    },
+    {
+     "s": "tick",
+     "at": "Friday"
+    },
+    {
+     "s": "click",
+     "at": "tap"
+    }
+   ]
+  },
+  {
+   "id": "c8c",
+   "text": "The app made forty eight cents on that contract and I lost six hundred dollars. Same tap.",
+   "host": true,
+   "mood": "angry",
+   "pose": "point_r",
+   "zoom": {
+    "in": "Same",
+    "out": "tap"
+   },
+   "sfx": [
+    {
+     "s": "cash",
+     "at": "cents"
+    },
+    {
+     "s": "trombone",
+     "at": "six"
+    },
+    {
+     "s": "boom",
+     "at": "tap"
+    }
+   ]
+  },
+  {
+   "id": "n22",
+   "text": "The app and me after the same tap.",
+   "meme": {
+    "t": "vs",
+    "a": "Me -$600",
+    "b": "The app +48 cents",
+    "at": "same"
+   },
+   "sfx": [
+    {
+     "s": "cash",
+     "at": "tap"
+    }
+   ]
+  },
+  {
+   "id": "c8d",
+   "text": "And the switch that saved my last four hundred dollars wasn't a secret trading trick. It was the off button for options. The one setting the confetti never mentioned.",
+   "host": true,
+   "mood": "smug",
+   "pose": "present",
+   "sfx": [
+    {
+     "s": "click",
+     "at": "off"
+    },
+    {
+     "s": "boom",
+     "at": "mentioned"
+    }
+   ],
+   "pic": {
+    "id": "power_button",
+    "at": "button",
+    "look": "circle"
+   }
+  },
+  {
+   "id": "r1",
+   "text": "So quick lessons. Free apps get paid when you trade and not when you win.",
+   "host": true,
+   "mood": "happy",
+   "pose": "point_up",
+   "sfx": [
+    {
+     "s": "ding",
+     "at": "trade"
+    }
+   ],
+   "pic": {
+    "id": "cash_register",
+    "at": "trade",
+    "look": "plain"
+   }
+  },
+  {
+   "id": "r2",
+   "text": "Options are coupons that expire and most small traders lose on them.",
+   "host": true,
+   "mood": "neutral",
+   "pose": "talk",
+   "sfx": [
+    {
+     "s": "ding",
+     "at": "expire"
+    }
+   ],
+   "pic": {
+    "id": "calendar",
+    "at": "expire",
+    "look": "tape"
+   }
+  },
+  {
+   "id": "r3",
+   "text": "And confetti is a clicker. You're allowed to turn it off.",
+   "host": true,
+   "mood": "grin",
+   "pose": "thumbs",
+   "sfx": [
+    {
+     "s": "click",
+     "at": "off"
+    }
+   ]
+  },
+  {
+   "id": "r4",
+   "text": "But my problems aren't over. Tonight a guy in a rented Lamborghini wants to teach me how to trade. I have four hundred dollars left and his course costs three hundred ninety nine.",
+   "pic": {
+    "id": "lamborghini",
+    "at": "Lamborghini",
+    "look": "polaroid",
+    "label": "definitely his"
+   },
+   "sfx": [
+    {
+     "s": "whoosh",
+     "at": "Lamborghini"
+    },
+    {
+     "s": "scratch",
+     "at": "ninety"
+    }
+   ]
+  },
+  {
+   "id": "r5",
+   "text": "Subscribe so you can watch me make a terrible decision. No confetti I promise.",
+   "host": true,
+   "mood": "grin",
+   "pose": "wave",
+   "zoom": {
+    "in": "terrible",
+    "out": "decision"
+   },
+   "sfx": [
+    {
+     "s": "ding",
+     "at": "Subscribe"
+    },
+    {
+     "s": "boom",
+     "at": "decision"
+    }
+   ]
   }
+ ]
 }
