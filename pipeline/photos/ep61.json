@@ -114,13 +114,17 @@
   },
   {
    "id": "broken_mug",
-   "q": "mug"
+   "q": "mug",
+   "file": "File:Mug Wikipedia Malayalam.jpg",
+   "credit": "Ranjithsiji",
+   "license": "CC BY-SA 3.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Mug_Wikipedia_Malayalam.jpg"
   },
   {
    "id": "wharton",
    "q": "Wharton School",
    "file": "File:The Wharton School - UPenn 20240528.jpg",
-   "credit": "\u9890\u56ed\u5c45",
+   "credit": "颐园居",
    "license": "CC BY-SA 4.0",
    "page": "https://commons.wikimedia.org/wiki/File:The_Wharton_School_-_UPenn_20240528.jpg"
   },
@@ -150,13 +154,17 @@
   },
   {
    "id": "handshake",
-   "q": "shaking hands"
+   "q": "shaking hands",
+   "file": "File:East and West Shaking hands at the laying of last rail Union Pacific Railroad - Restoration.jpg",
+   "credit": "Andrew J. Russell / Adam Cuerden",
+   "license": "Public domain",
+   "page": "https://commons.wikimedia.org/wiki/File:East_and_West_Shaking_hands_at_the_laying_of_last_rail_Union_Pacific_Railroad_-_Restoration.jpg"
   },
   {
    "id": "puppy",
    "q": "puppy",
-   "file": "File:Puppy de Jeff Koons -- 2021 -- Bilbao, Espa\u00f1a.jpg",
-   "credit": "Jos\u00e9 Ligero Loarte",
+   "file": "File:Puppy de Jeff Koons -- 2021 -- Bilbao, España.jpg",
+   "credit": "José Ligero Loarte",
    "license": "CC BY-SA 4.0",
    "page": "https://commons.wikimedia.org/wiki/File:Puppy_de_Jeff_Koons_--_2021_--_Bilbao,_Espa%C3%B1a.jpg"
   },
@@ -202,7 +210,11 @@
   },
   {
    "id": "memo",
-   "q": "letter"
+   "q": "letter",
+   "file": "File:Lettre de Montaigne au maréchal de Matignon, 26 janvier 1585.jpg",
+   "credit": "Michel de Montaigne",
+   "license": "Public domain",
+   "page": "https://commons.wikimedia.org/wiki/File:Lettre_de_Montaigne_au_mar%C3%A9chal_de_Matignon,_26_janvier_1585.jpg"
   },
   {
    "id": "letter",
@@ -222,7 +234,11 @@
   },
   {
    "id": "closed_door",
-   "q": "door"
+   "q": "door",
+   "file": "File:Parked bicycle with graffitied building facade and doors in Amsterdam.jpg",
+   "credit": "Basile Morin",
+   "license": "CC BY-SA 4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Parked_bicycle_with_graffitied_building_facade_and_doors_in_Amsterdam.jpg"
   },
   {
    "id": "boxes",
@@ -235,7 +251,7 @@
   {
    "id": "traffic",
    "q": "traffic jam",
-   "file": "File:\u0422\u0430\u0448\u043a\u0435\u043d\u0442, \u0421\u0435\u0431\u0437\u0430\u0440.jpg",
+   "file": "File:Ташкент, Себзар.jpg",
    "credit": "Nikolai Bulykin",
    "license": "CC BY-SA 4.0",
    "page": "https://commons.wikimedia.org/wiki/File:%D0%A2%D0%B0%D1%88%D0%BA%D0%B5%D0%BD%D1%82,_%D0%A1%D0%B5%D0%B1%D0%B7%D0%B0%D1%80.jpg"
