@@ -1,0 +1,9579 @@
+{
+ "fps": 30,
+ "total": 485.028,
+ "hash": "02551eded6938a11",
+ "chapters": [
+  {
+   "n": 1,
+   "title": "I Lost A Bet To A Penny",
+   "start": 23.392,
+   "beat": "c1a"
+  },
+  {
+   "n": 2,
+   "title": "Who Started This?",
+   "start": 83.087,
+   "beat": "c2a"
+  },
+  {
+   "n": 3,
+   "title": "The Office That Picks The Last Digit",
+   "start": 235.4,
+   "beat": "c5a"
+  },
+  {
+   "n": 4,
+   "title": "The Store That Told The Truth",
+   "start": 334.076,
+   "beat": "c7a"
+  }
+ ],
+ "beats": [
+  {
+   "id": "o1",
+   "text": "Look at this price tag for one second. Be honest. Your brain just said three hundred something. Didn't it?",
+   "start": 0.08,
+   "end": 4.7620000000000005,
+   "words": [
+    {
+     "text": "Look",
+     "start": 0.08,
+     "end": 0.278
+    },
+    {
+     "text": "at",
+     "start": 0.3,
+     "end": 0.418
+    },
+    {
+     "text": "this",
+     "start": 0.431,
+     "end": 0.629
+    },
+    {
+     "text": "price",
+     "start": 0.651,
+     "end": 0.888
+    },
+    {
+     "text": "tag",
+     "start": 0.915,
+     "end": 1.073
+    },
+    {
+     "text": "for",
+     "start": 1.09,
+     "end": 1.248
+    },
+    {
+     "text": "one",
+     "start": 1.266,
+     "end": 1.424
+    },
+    {
+     "text": "second.",
+     "start": 1.442,
+     "end": 1.758
+    },
+    {
+     "text": "Be",
+     "start": 1.793,
+     "end": 1.912
+    },
+    {
+     "text": "honest.",
+     "start": 1.925,
+     "end": 2.241
+    },
+    {
+     "text": "Your",
+     "start": 2.276,
+     "end": 2.474
+    },
+    {
+     "text": "brain",
+     "start": 2.496,
+     "end": 2.733
+    },
+    {
+     "text": "just",
+     "start": 2.759,
+     "end": 2.957
+    },
+    {
+     "text": "said",
+     "start": 2.979,
+     "end": 3.177
+    },
+    {
+     "text": "three",
+     "start": 3.199,
+     "end": 3.436
+    },
+    {
+     "text": "hundred",
+     "start": 3.462,
+     "end": 3.779
+    },
+    {
+     "text": "something.",
+     "start": 3.814,
+     "end": 4.249
+    },
+    {
+     "text": "Didn't",
+     "start": 4.297,
+     "end": 4.574
+    },
+    {
+     "text": "it?",
+     "start": 4.604,
+     "end": 4.762
+    }
+   ]
+  },
+  {
+   "id": "o2",
+   "text": "It's four hundred dollars. And stores have been running that one penny trick on you for over a hundred years.",
+   "start": 5.114729166666667,
+   "end": 9.605729166666666,
+   "words": [
+    {
+     "text": "It's",
+     "start": 5.115,
+     "end": 5.3
+    },
+    {
+     "text": "four",
+     "start": 5.32,
+     "end": 5.505
+    },
+    {
+     "text": "hundred",
+     "start": 5.526,
+     "end": 5.822
+    },
+    {
+     "text": "dollars.",
+     "start": 5.855,
+     "end": 6.187
+    },
+    {
+     "text": "And",
+     "start": 6.224,
+     "end": 6.372
+    },
+    {
+     "text": "stores",
+     "start": 6.389,
+     "end": 6.648
+    },
+    {
+     "text": "have",
+     "start": 6.676,
+     "end": 6.861
+    },
+    {
+     "text": "been",
+     "start": 6.882,
+     "end": 7.067
+    },
+    {
+     "text": "running",
+     "start": 7.087,
+     "end": 7.383
+    },
+    {
+     "text": "that",
+     "start": 7.416,
+     "end": 7.601
+    },
+    {
+     "text": "one",
+     "start": 7.622,
+     "end": 7.769
+    },
+    {
+     "text": "penny",
+     "start": 7.786,
+     "end": 8.008
+    },
+    {
+     "text": "trick",
+     "start": 8.032,
+     "end": 8.254
+    },
+    {
+     "text": "on",
+     "start": 8.279,
+     "end": 8.39
+    },
+    {
+     "text": "you",
+     "start": 8.402,
+     "end": 8.55
+    },
+    {
+     "text": "for",
+     "start": 8.567,
+     "end": 8.715
+    },
+    {
+     "text": "over",
+     "start": 8.731,
+     "end": 8.916
+    },
+    {
+     "text": "a",
+     "start": 8.936,
+     "end": 9.01
+    },
+    {
+     "text": "hundred",
+     "start": 9.019,
+     "end": 9.314
+    },
+    {
+     "text": "years.",
+     "start": 9.347,
+     "end": 9.606
+    }
+   ]
+  },
+  {
+   "id": "o3",
+   "text": "Your brain got robbed by one cent.",
+   "start": 10.157875,
+   "end": 11.517875,
+   "words": [
+    {
+     "text": "Your",
+     "start": 10.158,
+     "end": 10.258
+    },
+    {
+     "text": "brain",
+     "start": 10.258,
+     "end": 10.418
+    },
+    {
+     "text": "got",
+     "start": 10.418,
+     "end": 10.598
+    },
+    {
+     "text": "robbed",
+     "start": 10.598,
+     "end": 10.798
+    },
+    {
+     "text": "by",
+     "start": 10.798,
+     "end": 11.058
+    },
+    {
+     "text": "one",
+     "start": 11.058,
+     "end": 11.238
+    },
+    {
+     "text": "cent.",
+     "start": 11.238,
+     "end": 11.518
+    }
+   ]
+  },
+  {
+   "id": "o4",
+   "text": "By the end of this video you'll see this exact tag again and your brain will finally read it right. And it takes one tiny habit.",
+   "start": 12.131104166666667,
+   "end": 18.751104166666668,
+   "words": [
+    {
+     "text": "By",
+     "start": 12.131,
+     "end": 12.211
+    },
+    {
+     "text": "the",
+     "start": 12.211,
+     "end": 12.311
+    },
+    {
+     "text": "end",
+     "start": 12.311,
+     "end": 12.471
+    },
+    {
+     "text": "of",
+     "start": 12.471,
+     "end": 12.571
+    },
+    {
+     "text": "this",
+     "start": 12.571,
+     "end": 12.691
+    },
+    {
+     "text": "video",
+     "start": 12.691,
+     "end": 12.991
+    },
+    {
+     "text": "you'll",
+     "start": 13.211,
+     "end": 13.371
+    },
+    {
+     "text": "see",
+     "start": 13.371,
+     "end": 13.531
+    },
+    {
+     "text": "this",
+     "start": 13.531,
+     "end": 13.751
+    },
+    {
+     "text": "exact",
+     "start": 13.751,
+     "end": 13.871
+    },
+    {
+     "text": "tag",
+     "start": 13.871,
+     "end": 14.311
+    },
+    {
+     "text": "again",
+     "start": 14.311,
+     "end": 14.671
+    },
+    {
+     "text": "and",
+     "start": 14.671,
+     "end": 15.011
+    },
+    {
+     "text": "your",
+     "start": 15.011,
+     "end": 15.111
+    },
+    {
+     "text": "brain",
+     "start": 15.111,
+     "end": 15.311
+    },
+    {
+     "text": "will",
+     "start": 15.311,
+     "end": 15.511
+    },
+    {
+     "text": "finally",
+     "start": 15.511,
+     "end": 15.831
+    },
+    {
+     "text": "read",
+     "start": 15.831,
+     "end": 16.191
+    },
+    {
+     "text": "it",
+     "start": 16.191,
+     "end": 16.371
+    },
+    {
+     "text": "right.",
+     "start": 16.371,
+     "end": 16.571
+    },
+    {
+     "text": "And",
+     "start": 16.991,
+     "end": 17.231
+    },
+    {
+     "text": "it",
+     "start": 17.231,
+     "end": 17.331
+    },
+    {
+     "text": "takes",
+     "start": 17.331,
+     "end": 17.531
+    },
+    {
+     "text": "one",
+     "start": 17.531,
+     "end": 17.811
+    },
+    {
+     "text": "tiny",
+     "start": 17.811,
+     "end": 18.271
+    },
+    {
+     "text": "habit.",
+     "start": 18.271,
+     "end": 18.751
+    }
+   ]
+  },
+  {
+   "id": "o5",
+   "text": "But most people scroll away before that part. Which is exactly what the pricing guys are counting on.",
+   "start": 19.265375,
+   "end": 22.885375,
+   "words": [
+    {
+     "text": "But",
+     "start": 19.265,
+     "end": 19.345
+    },
+    {
+     "text": "most",
+     "start": 19.345,
+     "end": 19.505
+    },
+    {
+     "text": "people",
+     "start": 19.505,
+     "end": 19.745
+    },
+    {
+     "text": "scroll",
+     "start": 19.745,
+     "end": 19.925
+    },
+    {
+     "text": "away",
+     "start": 19.925,
+     "end": 20.125
+    },
+    {
+     "text": "before",
+     "start": 20.125,
+     "end": 20.305
+    },
+    {
+     "text": "that",
+     "start": 20.305,
+     "end": 20.465
+    },
+    {
+     "text": "part.",
+     "start": 20.465,
+     "end": 20.705
+    },
+    {
+     "text": "Which",
+     "start": 21.025,
+     "end": 21.145
+    },
+    {
+     "text": "is",
+     "start": 21.145,
+     "end": 21.365
+    },
+    {
+     "text": "exactly",
+     "start": 21.365,
+     "end": 21.645
+    },
+    {
+     "text": "what",
+     "start": 21.645,
+     "end": 21.905
+    },
+    {
+     "text": "the",
+     "start": 21.905,
+     "end": 22.005
+    },
+    {
+     "text": "pricing",
+     "start": 22.005,
+     "end": 22.165
+    },
+    {
+     "text": "guys",
+     "start": 22.165,
+     "end": 22.385
+    },
+    {
+     "text": "are",
+     "start": 22.385,
+     "end": 22.505
+    },
+    {
+     "text": "counting",
+     "start": 22.505,
+     "end": 22.645
+    },
+    {
+     "text": "on.",
+     "start": 22.645,
+     "end": 22.885
+    }
+   ]
+  },
+  {
+   "id": "c1a",
+   "text": "So let me tell you how I lost twenty dollars to my neighbor Bob.",
+   "start": 25.592458333333333,
+   "end": 27.993458333333333,
+   "words": [
+    {
+     "text": "So",
+     "start": 25.592,
+     "end": 25.693
+    },
+    {
+     "text": "let",
+     "start": 25.704,
+     "end": 25.838
+    },
+    {
+     "text": "me",
+     "start": 25.853,
+     "end": 25.953
+    },
+    {
+     "text": "tell",
+     "start": 25.964,
+     "end": 26.132
+    },
+    {
+     "text": "you",
+     "start": 26.15,
+     "end": 26.284
+    },
+    {
+     "text": "how",
+     "start": 26.299,
+     "end": 26.433
+    },
+    {
+     "text": "I",
+     "start": 26.448,
+     "end": 26.515
+    },
+    {
+     "text": "lost",
+     "start": 26.523,
+     "end": 26.69
+    },
+    {
+     "text": "twenty",
+     "start": 26.709,
+     "end": 26.943
+    },
+    {
+     "text": "dollars",
+     "start": 26.97,
+     "end": 27.238
+    },
+    {
+     "text": "to",
+     "start": 27.267,
+     "end": 27.368
+    },
+    {
+     "text": "my",
+     "start": 27.379,
+     "end": 27.48
+    },
+    {
+     "text": "neighbor",
+     "start": 27.491,
+     "end": 27.792
+    },
+    {
+     "text": "Bob.",
+     "start": 27.826,
+     "end": 27.993
+    }
+   ]
+  },
+  {
+   "id": "c1b",
+   "text": "I walk out of a store feeling very smart. Because I'm sure this ninety nine stuff only works on other people.",
+   "start": 28.604979166666666,
+   "end": 33.25097916666667,
+   "words": [
+    {
+     "text": "I",
+     "start": 28.605,
+     "end": 28.682
+    },
+    {
+     "text": "walk",
+     "start": 28.69,
+     "end": 28.882
+    },
+    {
+     "text": "out",
+     "start": 28.903,
+     "end": 29.056
+    },
+    {
+     "text": "of",
+     "start": 29.073,
+     "end": 29.188
+    },
+    {
+     "text": "a",
+     "start": 29.201,
+     "end": 29.277
+    },
+    {
+     "text": "store",
+     "start": 29.286,
+     "end": 29.515
+    },
+    {
+     "text": "feeling",
+     "start": 29.541,
+     "end": 29.847
+    },
+    {
+     "text": "very",
+     "start": 29.881,
+     "end": 30.073
+    },
+    {
+     "text": "smart.",
+     "start": 30.094,
+     "end": 30.362
+    },
+    {
+     "text": "Because",
+     "start": 30.392,
+     "end": 30.698
+    },
+    {
+     "text": "I'm",
+     "start": 30.732,
+     "end": 30.885
+    },
+    {
+     "text": "sure",
+     "start": 30.902,
+     "end": 31.094
+    },
+    {
+     "text": "this",
+     "start": 31.115,
+     "end": 31.307
+    },
+    {
+     "text": "ninety",
+     "start": 31.328,
+     "end": 31.596
+    },
+    {
+     "text": "nine",
+     "start": 31.626,
+     "end": 31.817
+    },
+    {
+     "text": "stuff",
+     "start": 31.838,
+     "end": 32.068
+    },
+    {
+     "text": "only",
+     "start": 32.094,
+     "end": 32.285
+    },
+    {
+     "text": "works",
+     "start": 32.306,
+     "end": 32.536
+    },
+    {
+     "text": "on",
+     "start": 32.562,
+     "end": 32.677
+    },
+    {
+     "text": "other",
+     "start": 32.689,
+     "end": 32.919
+    },
+    {
+     "text": "people.",
+     "start": 32.945,
+     "end": 33.251
+    }
+   ]
+  },
+  {
+   "id": "n1",
+   "text": "Me thinking I'm immune to nine ninety nine.",
+   "start": 33.933770833333334,
+   "end": 35.51177083333334,
+   "words": [
+    {
+     "text": "Me",
+     "start": 33.934,
+     "end": 34.032
+    },
+    {
+     "text": "thinking",
+     "start": 34.043,
+     "end": 34.338
+    },
+    {
+     "text": "I'm",
+     "start": 34.37,
+     "end": 34.501
+    },
+    {
+     "text": "immune",
+     "start": 34.516,
+     "end": 34.745
+    },
+    {
+     "text": "to",
+     "start": 34.77,
+     "end": 34.869
+    },
+    {
+     "text": "nine",
+     "start": 34.879,
+     "end": 35.043
+    },
+    {
+     "text": "ninety",
+     "start": 35.061,
+     "end": 35.29
+    },
+    {
+     "text": "nine.",
+     "start": 35.316,
+     "end": 35.512
+    }
+   ]
+  },
+  {
+   "id": "c1c",
+   "text": "Bob grins and says twenty bucks says you can't tell me what you just spent without looking at the receipt.",
+   "start": 36.299083333333336,
+   "end": 40.04708333333333,
+   "words": [
+    {
+     "text": "Bob",
+     "start": 36.299,
+     "end": 36.426
+    },
+    {
+     "text": "grins",
+     "start": 36.44,
+     "end": 36.631
+    },
+    {
+     "text": "and",
+     "start": 36.652,
+     "end": 36.779
+    },
+    {
+     "text": "says",
+     "start": 36.794,
+     "end": 36.953
+    },
+    {
+     "text": "twenty",
+     "start": 36.97,
+     "end": 37.193
+    },
+    {
+     "text": "bucks",
+     "start": 37.218,
+     "end": 37.408
+    },
+    {
+     "text": "says",
+     "start": 37.429,
+     "end": 37.588
+    },
+    {
+     "text": "you",
+     "start": 37.606,
+     "end": 37.733
+    },
+    {
+     "text": "can't",
+     "start": 37.747,
+     "end": 37.938
+    },
+    {
+     "text": "tell",
+     "start": 37.959,
+     "end": 38.118
+    },
+    {
+     "text": "me",
+     "start": 38.136,
+     "end": 38.231
+    },
+    {
+     "text": "what",
+     "start": 38.242,
+     "end": 38.401
+    },
+    {
+     "text": "you",
+     "start": 38.419,
+     "end": 38.546
+    },
+    {
+     "text": "just",
+     "start": 38.56,
+     "end": 38.719
+    },
+    {
+     "text": "spent",
+     "start": 38.737,
+     "end": 38.927
+    },
+    {
+     "text": "without",
+     "start": 38.949,
+     "end": 39.203
+    },
+    {
+     "text": "looking",
+     "start": 39.231,
+     "end": 39.486
+    },
+    {
+     "text": "at",
+     "start": 39.514,
+     "end": 39.609
+    },
+    {
+     "text": "the",
+     "start": 39.62,
+     "end": 39.747
+    },
+    {
+     "text": "receipt.",
+     "start": 39.761,
+     "end": 40.047
+    }
+   ]
+  },
+  {
+   "id": "c1d",
+   "text": "Easy. Headphones. A lamp. A frying pan. Some snacks. About ninety bucks.",
+   "start": 40.785645833333334,
+   "end": 44.72564583333333,
+   "words": [
+    {
+     "text": "Easy.",
+     "start": 40.786,
+     "end": 41.066
+    },
+    {
+     "text": "Headphones.",
+     "start": 41.066,
+     "end": 41.626
+    },
+    {
+     "text": "A",
+     "start": 42.086,
+     "end": 42.106
+    },
+    {
+     "text": "lamp.",
+     "start": 42.106,
+     "end": 42.286
+    },
+    {
+     "text": "A",
+     "start": 42.586,
+     "end": 42.626
+    },
+    {
+     "text": "frying",
+     "start": 42.626,
+     "end": 42.786
+    },
+    {
+     "text": "pan.",
+     "start": 42.786,
+     "end": 43.086
+    },
+    {
+     "text": "Some",
+     "start": 43.446,
+     "end": 43.506
+    },
+    {
+     "text": "snacks.",
+     "start": 43.506,
+     "end": 43.786
+    },
+    {
+     "text": "About",
+     "start": 44.166,
+     "end": 44.266
+    },
+    {
+     "text": "ninety",
+     "start": 44.266,
+     "end": 44.506
+    },
+    {
+     "text": "bucks.",
+     "start": 44.506,
+     "end": 44.726
+    }
+   ]
+  },
+  {
+   "id": "c1e",
+   "text": "The receipt says one hundred twenty four dollars and ninety five cents.",
+   "start": 45.47904166666667,
+   "end": 48.11304166666667,
+   "words": [
+    {
+     "text": "The",
+     "start": 45.479,
+     "end": 45.612
+    },
+    {
+     "text": "receipt",
+     "start": 45.627,
+     "end": 45.893
+    },
+    {
+     "text": "says",
+     "start": 45.922,
+     "end": 46.089
+    },
+    {
+     "text": "one",
+     "start": 46.107,
+     "end": 46.24
+    },
+    {
+     "text": "hundred",
+     "start": 46.255,
+     "end": 46.521
+    },
+    {
+     "text": "twenty",
+     "start": 46.55,
+     "end": 46.783
+    },
+    {
+     "text": "four",
+     "start": 46.809,
+     "end": 46.975
+    },
+    {
+     "text": "dollars",
+     "start": 46.994,
+     "end": 47.26
+    },
+    {
+     "text": "and",
+     "start": 47.289,
+     "end": 47.422
+    },
+    {
+     "text": "ninety",
+     "start": 47.437,
+     "end": 47.67
+    },
+    {
+     "text": "five",
+     "start": 47.696,
+     "end": 47.862
+    },
+    {
+     "text": "cents.",
+     "start": 47.88,
+     "end": 48.113
+    }
+   ]
+  },
+  {
+   "id": "n2",
+   "text": "Bob with my twenty dollars.",
+   "start": 49.116375,
+   "end": 50.006375,
+   "words": [
+    {
+     "text": "Bob",
+     "start": 49.116,
+     "end": 49.234
+    },
+    {
+     "text": "with",
+     "start": 49.247,
+     "end": 49.395
+    },
+    {
+     "text": "my",
+     "start": 49.412,
+     "end": 49.5
+    },
+    {
+     "text": "twenty",
+     "start": 49.51,
+     "end": 49.717
+    },
+    {
+     "text": "dollars.",
+     "start": 49.74,
+     "end": 50.006
+    }
+   ]
+  },
+  {
+   "id": "c1f",
+   "text": "I didn't forget anything. My brain kept the first digit of every price and threw the rest away. Like a guy who reads the first word of your text and replies okay.",
+   "start": 51.09175,
+   "end": 58.05175,
+   "words": [
+    {
+     "text": "I",
+     "start": 51.092,
+     "end": 51.212
+    },
+    {
+     "text": "didn't",
+     "start": 51.212,
+     "end": 51.472
+    },
+    {
+     "text": "forget",
+     "start": 51.472,
+     "end": 51.612
+    },
+    {
+     "text": "anything.",
+     "start": 51.612,
+     "end": 51.932
+    },
+    {
+     "text": "My",
+     "start": 52.532,
+     "end": 52.532
+    },
+    {
+     "text": "brain",
+     "start": 52.532,
+     "end": 52.772
+    },
+    {
+     "text": "kept",
+     "start": 52.772,
+     "end": 52.952
+    },
+    {
+     "text": "the",
+     "start": 52.952,
+     "end": 53.092
+    },
+    {
+     "text": "first",
+     "start": 53.092,
+     "end": 53.272
+    },
+    {
+     "text": "digit",
+     "start": 53.272,
+     "end": 53.452
+    },
+    {
+     "text": "of",
+     "start": 53.452,
+     "end": 53.652
+    },
+    {
+     "text": "every",
+     "start": 53.652,
+     "end": 53.852
+    },
+    {
+     "text": "price",
+     "start": 53.852,
+     "end": 54.212
+    },
+    {
+     "text": "and",
+     "start": 54.212,
+     "end": 54.412
+    },
+    {
+     "text": "threw",
+     "start": 54.412,
+     "end": 54.552
+    },
+    {
+     "text": "the",
+     "start": 54.552,
+     "end": 54.672
+    },
+    {
+     "text": "rest",
+     "start": 54.672,
+     "end": 54.792
+    },
+    {
+     "text": "away.",
+     "start": 54.792,
+     "end": 55.052
+    },
+    {
+     "text": "Like",
+     "start": 55.512,
+     "end": 55.612
+    },
+    {
+     "text": "a",
+     "start": 55.612,
+     "end": 55.732
+    },
+    {
+     "text": "guy",
+     "start": 55.732,
+     "end": 55.892
+    },
+    {
+     "text": "who",
+     "start": 55.892,
+     "end": 56.032
+    },
+    {
+     "text": "reads",
+     "start": 56.032,
+     "end": 56.172
+    },
+    {
+     "text": "the",
+     "start": 56.172,
+     "end": 56.332
+    },
+    {
+     "text": "first",
+     "start": 56.332,
+     "end": 56.492
+    },
+    {
+     "text": "word",
+     "start": 56.492,
+     "end": 56.692
+    },
+    {
+     "text": "of",
+     "start": 56.692,
+     "end": 56.812
+    },
+    {
+     "text": "your",
+     "start": 56.812,
+     "end": 56.912
+    },
+    {
+     "text": "text",
+     "start": 56.912,
+     "end": 57.092
+    },
+    {
+     "text": "and",
+     "start": 57.092,
+     "end": 57.292
+    },
+    {
+     "text": "replies",
+     "start": 57.292,
+     "end": 57.472
+    },
+    {
+     "text": "okay.",
+     "start": 57.892,
+     "end": 58.052
+    }
+   ]
+  },
+  {
+   "id": "c1g",
+   "text": "And before you laugh at me look at this shelf tag. Is your gut saying three bucks or four?",
+   "start": 58.76833333333333,
+   "end": 63.44833333333333,
+   "words": [
+    {
+     "text": "And",
+     "start": 58.768,
+     "end": 59.208
+    },
+    {
+     "text": "before",
+     "start": 59.208,
+     "end": 59.428
+    },
+    {
+     "text": "you",
+     "start": 59.428,
+     "end": 59.728
+    },
+    {
+     "text": "laugh",
+     "start": 59.728,
+     "end": 59.908
+    },
+    {
+     "text": "at",
+     "start": 59.908,
+     "end": 60.088
+    },
+    {
+     "text": "me",
+     "start": 60.088,
+     "end": 60.208
+    },
+    {
+     "text": "look",
+     "start": 60.308,
+     "end": 60.408
+    },
+    {
+     "text": "at",
+     "start": 60.408,
+     "end": 60.508
+    },
+    {
+     "text": "this",
+     "start": 60.508,
+     "end": 60.608
+    },
+    {
+     "text": "shelf",
+     "start": 60.608,
+     "end": 60.768
+    },
+    {
+     "text": "tag.",
+     "start": 60.768,
+     "end": 61.128
+    },
+    {
+     "text": "Is",
+     "start": 61.868,
+     "end": 61.908
+    },
+    {
+     "text": "your",
+     "start": 61.908,
+     "end": 62.008
+    },
+    {
+     "text": "gut",
+     "start": 62.008,
+     "end": 62.188
+    },
+    {
+     "text": "saying",
+     "start": 62.188,
+     "end": 62.448
+    },
+    {
+     "text": "three",
+     "start": 62.448,
+     "end": 62.708
+    },
+    {
+     "text": "bucks",
+     "start": 62.708,
+     "end": 62.928
+    },
+    {
+     "text": "or",
+     "start": 62.928,
+     "end": 63.188
+    },
+    {
+     "text": "four?",
+     "start": 63.188,
+     "end": 63.448
+    }
+   ]
+  },
+  {
+   "id": "c1h",
+   "text": "Now three at once. You've got three seconds. Add them up in your head. No calculator.",
+   "start": 64.11704166666667,
+   "end": 67.77704166666666,
+   "words": [
+    {
+     "text": "Now",
+     "start": 64.117,
+     "end": 64.297
+    },
+    {
+     "text": "three",
+     "start": 64.297,
+     "end": 64.657
+    },
+    {
+     "text": "at",
+     "start": 64.657,
+     "end": 64.777
+    },
+    {
+     "text": "once.",
+     "start": 64.777,
+     "end": 64.997
+    },
+    {
+     "text": "You've",
+     "start": 65.437,
+     "end": 65.537
+    },
+    {
+     "text": "got",
+     "start": 65.537,
+     "end": 65.617
+    },
+    {
+     "text": "three",
+     "start": 65.617,
+     "end": 65.817
+    },
+    {
+     "text": "seconds.",
+     "start": 65.817,
+     "end": 66.157
+    },
+    {
+     "text": "Add",
+     "start": 66.457,
+     "end": 66.557
+    },
+    {
+     "text": "them",
+     "start": 66.557,
+     "end": 66.697
+    },
+    {
+     "text": "up",
+     "start": 66.697,
+     "end": 66.777
+    },
+    {
+     "text": "in",
+     "start": 66.777,
+     "end": 66.897
+    },
+    {
+     "text": "your",
+     "start": 66.897,
+     "end": 66.997
+    },
+    {
+     "text": "head.",
+     "start": 66.997,
+     "end": 67.177
+    },
+    {
+     "text": "No",
+     "start": 67.437,
+     "end": 67.477
+    },
+    {
+     "text": "calculator.",
+     "start": 67.477,
+     "end": 67.777
+    }
+   ]
+  },
+  {
+   "id": "c1i",
+   "text": "If you got somewhere around ninety congratulations. You're me. The real total is three cents short of a hundred.",
+   "start": 68.60629166666666,
+   "end": 73.48729166666666,
+   "words": [
+    {
+     "text": "If",
+     "start": 68.606,
+     "end": 68.724
+    },
+    {
+     "text": "you",
+     "start": 68.737,
+     "end": 68.893
+    },
+    {
+     "text": "got",
+     "start": 68.911,
+     "end": 69.068
+    },
+    {
+     "text": "somewhere",
+     "start": 69.085,
+     "end": 69.477
+    },
+    {
+     "text": "around",
+     "start": 69.52,
+     "end": 69.795
+    },
+    {
+     "text": "ninety",
+     "start": 69.825,
+     "end": 70.099
+    },
+    {
+     "text": "congratulations.",
+     "start": 70.13,
+     "end": 70.796
+    },
+    {
+     "text": "You're",
+     "start": 70.87,
+     "end": 71.144
+    },
+    {
+     "text": "me.",
+     "start": 71.175,
+     "end": 71.332
+    },
+    {
+     "text": "The",
+     "start": 71.349,
+     "end": 71.506
+    },
+    {
+     "text": "real",
+     "start": 71.523,
+     "end": 71.719
+    },
+    {
+     "text": "total",
+     "start": 71.741,
+     "end": 71.976
+    },
+    {
+     "text": "is",
+     "start": 72.002,
+     "end": 72.12
+    },
+    {
+     "text": "three",
+     "start": 72.133,
+     "end": 72.368
+    },
+    {
+     "text": "cents",
+     "start": 72.394,
+     "end": 72.629
+    },
+    {
+     "text": "short",
+     "start": 72.655,
+     "end": 72.89
+    },
+    {
+     "text": "of",
+     "start": 72.916,
+     "end": 73.034
+    },
+    {
+     "text": "a",
+     "start": 73.047,
+     "end": 73.125
+    },
+    {
+     "text": "hundred.",
+     "start": 73.134,
+     "end": 73.487
+    }
+   ]
+  },
+  {
+   "id": "n3",
+   "text": "Everyone who just did the math.",
+   "start": 74.23210416666667,
+   "end": 75.29210416666668,
+   "words": [
+    {
+     "text": "Everyone",
+     "start": 74.232,
+     "end": 74.532
+    },
+    {
+     "text": "who",
+     "start": 74.532,
+     "end": 74.712
+    },
+    {
+     "text": "just",
+     "start": 74.712,
+     "end": 74.852
+    },
+    {
+     "text": "did",
+     "start": 74.852,
+     "end": 75.052
+    },
+    {
+     "text": "the",
+     "start": 75.052,
+     "end": 75.172
+    },
+    {
+     "text": "math.",
+     "start": 75.172,
+     "end": 75.292
+    }
+   ]
+  },
+  {
+   "id": "c1j",
+   "text": "So I'm out twenty dollars and I want to know how a trick this dumb beat me. And the trail starts in an Ohio bar in eighteen seventy nine.",
+   "start": 75.97522916666667,
+   "end": 82.28722916666666,
+   "words": [
+    {
+     "text": "So",
+     "start": 75.975,
+     "end": 76.099
+    },
+    {
+     "text": "I'm",
+     "start": 76.113,
+     "end": 76.278
+    },
+    {
+     "text": "out",
+     "start": 76.297,
+     "end": 76.462
+    },
+    {
+     "text": "twenty",
+     "start": 76.48,
+     "end": 76.77
+    },
+    {
+     "text": "dollars",
+     "start": 76.802,
+     "end": 77.133
+    },
+    {
+     "text": "and",
+     "start": 77.169,
+     "end": 77.335
+    },
+    {
+     "text": "I",
+     "start": 77.353,
+     "end": 77.436
+    },
+    {
+     "text": "want",
+     "start": 77.445,
+     "end": 77.652
+    },
+    {
+     "text": "to",
+     "start": 77.675,
+     "end": 77.799
+    },
+    {
+     "text": "know",
+     "start": 77.813,
+     "end": 78.019
+    },
+    {
+     "text": "how",
+     "start": 78.042,
+     "end": 78.208
+    },
+    {
+     "text": "a",
+     "start": 78.226,
+     "end": 78.309
+    },
+    {
+     "text": "trick",
+     "start": 78.318,
+     "end": 78.566
+    },
+    {
+     "text": "this",
+     "start": 78.594,
+     "end": 78.8
+    },
+    {
+     "text": "dumb",
+     "start": 78.823,
+     "end": 79.03
+    },
+    {
+     "text": "beat",
+     "start": 79.053,
+     "end": 79.26
+    },
+    {
+     "text": "me.",
+     "start": 79.283,
+     "end": 79.448
+    },
+    {
+     "text": "And",
+     "start": 79.467,
+     "end": 79.632
+    },
+    {
+     "text": "the",
+     "start": 79.65,
+     "end": 79.816
+    },
+    {
+     "text": "trail",
+     "start": 79.834,
+     "end": 80.082
+    },
+    {
+     "text": "starts",
+     "start": 80.11,
+     "end": 80.399
+    },
+    {
+     "text": "in",
+     "start": 80.431,
+     "end": 80.555
+    },
+    {
+     "text": "an",
+     "start": 80.569,
+     "end": 80.693
+    },
+    {
+     "text": "Ohio",
+     "start": 80.707,
+     "end": 80.914
+    },
+    {
+     "text": "bar",
+     "start": 80.937,
+     "end": 81.102
+    },
+    {
+     "text": "in",
+     "start": 81.121,
+     "end": 81.245
+    },
+    {
+     "text": "eighteen",
+     "start": 81.258,
+     "end": 81.63
+    },
+    {
+     "text": "seventy",
+     "start": 81.672,
+     "end": 82.003
+    },
+    {
+     "text": "nine.",
+     "start": 82.039,
+     "end": 82.287
+    }
+   ]
+  },
+  {
+   "id": "c2a",
+   "text": "A bar owner in Dayton named James Ritty was sure his bartenders were stealing from him.",
+   "start": 85.28670833333334,
+   "end": 89.28670833333334,
+   "words": [
+    {
+     "text": "A",
+     "start": 85.287,
+     "end": 85.347
+    },
+    {
+     "text": "bar",
+     "start": 85.347,
+     "end": 85.527
+    },
+    {
+     "text": "owner",
+     "start": 85.527,
+     "end": 85.787
+    },
+    {
+     "text": "in",
+     "start": 85.787,
+     "end": 85.987
+    },
+    {
+     "text": "Dayton",
+     "start": 85.987,
+     "end": 86.167
+    },
+    {
+     "text": "named",
+     "start": 86.167,
+     "end": 86.607
+    },
+    {
+     "text": "James",
+     "start": 86.607,
+     "end": 86.927
+    },
+    {
+     "text": "Ritty",
+     "start": 86.927,
+     "end": 87.407
+    },
+    {
+     "text": "was",
+     "start": 87.407,
+     "end": 87.587
+    },
+    {
+     "text": "sure",
+     "start": 87.587,
+     "end": 87.807
+    },
+    {
+     "text": "his",
+     "start": 87.807,
+     "end": 88.027
+    },
+    {
+     "text": "bartenders",
+     "start": 88.027,
+     "end": 88.407
+    },
+    {
+     "text": "were",
+     "start": 88.407,
+     "end": 88.607
+    },
+    {
+     "text": "stealing",
+     "start": 88.607,
+     "end": 88.807
+    },
+    {
+     "text": "from",
+     "start": 88.807,
+     "end": 89.107
+    },
+    {
+     "text": "him.",
+     "start": 89.107,
+     "end": 89.287
+    }
+   ]
+  },
+  {
+   "id": "c2b",
+   "text": "So he invented a machine he called the Incorruptible Cashier. You know it as the cash register.",
+   "start": 89.86547916666666,
+   "end": 94.72547916666666,
+   "words": [
+    {
+     "text": "So",
+     "start": 89.865,
+     "end": 90.005
+    },
+    {
+     "text": "he",
+     "start": 90.005,
+     "end": 90.125
+    },
+    {
+     "text": "invented",
+     "start": 90.125,
+     "end": 90.345
+    },
+    {
+     "text": "a",
+     "start": 90.345,
+     "end": 90.525
+    },
+    {
+     "text": "machine",
+     "start": 90.525,
+     "end": 90.845
+    },
+    {
+     "text": "he",
+     "start": 90.845,
+     "end": 91.145
+    },
+    {
+     "text": "called",
+     "start": 91.145,
+     "end": 91.345
+    },
+    {
+     "text": "the",
+     "start": 91.345,
+     "end": 91.645
+    },
+    {
+     "text": "Incorruptible",
+     "start": 91.645,
+     "end": 92.345
+    },
+    {
+     "text": "Cashier.",
+     "start": 92.345,
+     "end": 92.845
+    },
+    {
+     "text": "You",
+     "start": 93.445,
+     "end": 93.505
+    },
+    {
+     "text": "know",
+     "start": 93.505,
+     "end": 93.705
+    },
+    {
+     "text": "it",
+     "start": 93.705,
+     "end": 93.885
+    },
+    {
+     "text": "as",
+     "start": 93.885,
+     "end": 94.065
+    },
+    {
+     "text": "the",
+     "start": 94.065,
+     "end": 94.165
+    },
+    {
+     "text": "cash",
+     "start": 94.165,
+     "end": 94.285
+    },
+    {
+     "text": "register.",
+     "start": 94.285,
+     "end": 94.725
+    }
+   ]
+  },
+  {
+   "id": "c2c",
+   "text": "And here's the legend. If your drink costs one round dollar the bartender can slide that bill into his pocket. At ninety nine cents he has to open the drawer for your penny.",
+   "start": 95.48904166666667,
+   "end": 103.43704166666666,
+   "words": [
+    {
+     "text": "And",
+     "start": 95.489,
+     "end": 95.654
+    },
+    {
+     "text": "here's",
+     "start": 95.672,
+     "end": 95.961
+    },
+    {
+     "text": "the",
+     "start": 95.993,
+     "end": 96.159
+    },
+    {
+     "text": "legend.",
+     "start": 96.177,
+     "end": 96.507
+    },
+    {
+     "text": "If",
+     "start": 96.544,
+     "end": 96.668
+    },
+    {
+     "text": "your",
+     "start": 96.681,
+     "end": 96.888
+    },
+    {
+     "text": "drink",
+     "start": 96.911,
+     "end": 97.158
+    },
+    {
+     "text": "costs",
+     "start": 97.186,
+     "end": 97.434
+    },
+    {
+     "text": "one",
+     "start": 97.461,
+     "end": 97.626
+    },
+    {
+     "text": "round",
+     "start": 97.645,
+     "end": 97.892
+    },
+    {
+     "text": "dollar",
+     "start": 97.92,
+     "end": 98.209
+    },
+    {
+     "text": "the",
+     "start": 98.241,
+     "end": 98.406
+    },
+    {
+     "text": "bartender",
+     "start": 98.424,
+     "end": 98.837
+    },
+    {
+     "text": "can",
+     "start": 98.883,
+     "end": 99.048
+    },
+    {
+     "text": "slide",
+     "start": 99.066,
+     "end": 99.314
+    },
+    {
+     "text": "that",
+     "start": 99.341,
+     "end": 99.548
+    },
+    {
+     "text": "bill",
+     "start": 99.571,
+     "end": 99.777
+    },
+    {
+     "text": "into",
+     "start": 99.8,
+     "end": 100.006
+    },
+    {
+     "text": "his",
+     "start": 100.029,
+     "end": 100.194
+    },
+    {
+     "text": "pocket.",
+     "start": 100.213,
+     "end": 100.543
+    },
+    {
+     "text": "At",
+     "start": 100.58,
+     "end": 100.704
+    },
+    {
+     "text": "ninety",
+     "start": 100.717,
+     "end": 101.006
+    },
+    {
+     "text": "nine",
+     "start": 101.038,
+     "end": 101.245
+    },
+    {
+     "text": "cents",
+     "start": 101.268,
+     "end": 101.515
+    },
+    {
+     "text": "he",
+     "start": 101.543,
+     "end": 101.667
+    },
+    {
+     "text": "has",
+     "start": 101.68,
+     "end": 101.845
+    },
+    {
+     "text": "to",
+     "start": 101.864,
+     "end": 101.988
+    },
+    {
+     "text": "open",
+     "start": 102.001,
+     "end": 102.208
+    },
+    {
+     "text": "the",
+     "start": 102.231,
+     "end": 102.396
+    },
+    {
+     "text": "drawer",
+     "start": 102.414,
+     "end": 102.703
+    },
+    {
+     "text": "for",
+     "start": 102.735,
+     "end": 102.9
+    },
+    {
+     "text": "your",
+     "start": 102.919,
+     "end": 103.125
+    },
+    {
+     "text": "penny.",
+     "start": 103.148,
+     "end": 103.437
+    }
+   ]
+  },
+  {
+   "id": "n4",
+   "text": "The bartender when the drink costs ninety nine cents.",
+   "start": 104.12739583333334,
+   "end": 105.92339583333334,
+   "words": [
+    {
+     "text": "The",
+     "start": 104.127,
+     "end": 104.248
+    },
+    {
+     "text": "bartender",
+     "start": 104.262,
+     "end": 104.565
+    },
+    {
+     "text": "when",
+     "start": 104.599,
+     "end": 104.751
+    },
+    {
+     "text": "the",
+     "start": 104.767,
+     "end": 104.889
+    },
+    {
+     "text": "drink",
+     "start": 104.902,
+     "end": 105.084
+    },
+    {
+     "text": "costs",
+     "start": 105.104,
+     "end": 105.286
+    },
+    {
+     "text": "ninety",
+     "start": 105.307,
+     "end": 105.519
+    },
+    {
+     "text": "nine",
+     "start": 105.543,
+     "end": 105.694
+    },
+    {
+     "text": "cents.",
+     "start": 105.711,
+     "end": 105.923
+    }
+   ]
+  },
+  {
+   "id": "c2d",
+   "text": "Great story. It's all over the internet. But nobody ever found a shop owner from back then saying that's why he did it.",
+   "start": 106.7536875,
+   "end": 112.0336875,
+   "words": [
+    {
+     "text": "Great",
+     "start": 106.754,
+     "end": 106.874
+    },
+    {
+     "text": "story.",
+     "start": 106.874,
+     "end": 107.154
+    },
+    {
+     "text": "It's",
+     "start": 107.554,
+     "end": 107.674
+    },
+    {
+     "text": "all",
+     "start": 107.674,
+     "end": 107.814
+    },
+    {
+     "text": "over",
+     "start": 107.814,
+     "end": 107.994
+    },
+    {
+     "text": "the",
+     "start": 107.994,
+     "end": 108.114
+    },
+    {
+     "text": "internet.",
+     "start": 108.114,
+     "end": 108.334
+    },
+    {
+     "text": "But",
+     "start": 109.014,
+     "end": 109.054
+    },
+    {
+     "text": "nobody",
+     "start": 109.054,
+     "end": 109.174
+    },
+    {
+     "text": "ever",
+     "start": 109.174,
+     "end": 109.434
+    },
+    {
+     "text": "found",
+     "start": 109.434,
+     "end": 109.614
+    },
+    {
+     "text": "a",
+     "start": 109.614,
+     "end": 109.734
+    },
+    {
+     "text": "shop",
+     "start": 109.734,
+     "end": 109.894
+    },
+    {
+     "text": "owner",
+     "start": 109.894,
+     "end": 110.114
+    },
+    {
+     "text": "from",
+     "start": 110.114,
+     "end": 110.334
+    },
+    {
+     "text": "back",
+     "start": 110.334,
+     "end": 110.474
+    },
+    {
+     "text": "then",
+     "start": 110.474,
+     "end": 110.694
+    },
+    {
+     "text": "saying",
+     "start": 110.694,
+     "end": 111.034
+    },
+    {
+     "text": "that's",
+     "start": 111.034,
+     "end": 111.514
+    },
+    {
+     "text": "why",
+     "start": 111.514,
+     "end": 111.614
+    },
+    {
+     "text": "he",
+     "start": 111.614,
+     "end": 111.754
+    },
+    {
+     "text": "did",
+     "start": 111.754,
+     "end": 111.894
+    },
+    {
+     "text": "it.",
+     "start": 111.894,
+     "end": 112.034
+    }
+   ]
+  },
+  {
+   "id": "c2e",
+   "text": "There's another legend about a Chicago newspaper man named Melville Stone who sold his paper for one penny. Supposedly shops priced things one cent under so you'd get a penny back for his paper.",
+   "start": 112.53054166666666,
+   "end": 120.91054166666666,
+   "words": [
+    {
+     "text": "There's",
+     "start": 112.531,
+     "end": 112.651
+    },
+    {
+     "text": "another",
+     "start": 112.651,
+     "end": 112.791
+    },
+    {
+     "text": "legend",
+     "start": 112.791,
+     "end": 113.191
+    },
+    {
+     "text": "about",
+     "start": 113.191,
+     "end": 113.431
+    },
+    {
+     "text": "a",
+     "start": 113.431,
+     "end": 113.531
+    },
+    {
+     "text": "Chicago",
+     "start": 113.531,
+     "end": 113.751
+    },
+    {
+     "text": "newspaper",
+     "start": 113.751,
+     "end": 114.111
+    },
+    {
+     "text": "man",
+     "start": 114.111,
+     "end": 114.511
+    },
+    {
+     "text": "named",
+     "start": 114.511,
+     "end": 114.771
+    },
+    {
+     "text": "Melville",
+     "start": 114.771,
+     "end": 115.071
+    },
+    {
+     "text": "Stone",
+     "start": 115.071,
+     "end": 115.331
+    },
+    {
+     "text": "who",
+     "start": 115.331,
+     "end": 115.631
+    },
+    {
+     "text": "sold",
+     "start": 115.631,
+     "end": 115.791
+    },
+    {
+     "text": "his",
+     "start": 115.791,
+     "end": 115.971
+    },
+    {
+     "text": "paper",
+     "start": 115.971,
+     "end": 116.171
+    },
+    {
+     "text": "for",
+     "start": 116.171,
+     "end": 116.391
+    },
+    {
+     "text": "one",
+     "start": 116.391,
+     "end": 116.531
+    },
+    {
+     "text": "penny.",
+     "start": 116.531,
+     "end": 116.731
+    },
+    {
+     "text": "Supposedly",
+     "start": 117.431,
+     "end": 117.871
+    },
+    {
+     "text": "shops",
+     "start": 117.951,
+     "end": 118.071
+    },
+    {
+     "text": "priced",
+     "start": 118.071,
+     "end": 118.411
+    },
+    {
+     "text": "things",
+     "start": 118.411,
+     "end": 118.671
+    },
+    {
+     "text": "one",
+     "start": 118.671,
+     "end": 118.931
+    },
+    {
+     "text": "cent",
+     "start": 118.931,
+     "end": 119.151
+    },
+    {
+     "text": "under",
+     "start": 119.151,
+     "end": 119.451
+    },
+    {
+     "text": "so",
+     "start": 119.451,
+     "end": 119.651
+    },
+    {
+     "text": "you'd",
+     "start": 119.651,
+     "end": 119.831
+    },
+    {
+     "text": "get",
+     "start": 119.831,
+     "end": 119.891
+    },
+    {
+     "text": "a",
+     "start": 119.891,
+     "end": 119.951
+    },
+    {
+     "text": "penny",
+     "start": 119.951,
+     "end": 120.131
+    },
+    {
+     "text": "back",
+     "start": 120.131,
+     "end": 120.351
+    },
+    {
+     "text": "for",
+     "start": 120.351,
+     "end": 120.531
+    },
+    {
+     "text": "his",
+     "start": 120.531,
+     "end": 120.631
+    },
+    {
+     "text": "paper.",
+     "start": 120.631,
+     "end": 120.911
+    }
+   ]
+  },
+  {
+   "id": "c2f",
+   "text": "Except someone dug through that paper's old ads and prices ending in nine were rare back then. So I lost twenty bucks to a rumor.",
+   "start": 121.58608333333333,
+   "end": 127.47408333333334,
+   "words": [
+    {
+     "text": "Except",
+     "start": 121.586,
+     "end": 121.873
+    },
+    {
+     "text": "someone",
+     "start": 121.905,
+     "end": 122.233
+    },
+    {
+     "text": "dug",
+     "start": 122.269,
+     "end": 122.433
+    },
+    {
+     "text": "through",
+     "start": 122.451,
+     "end": 122.779
+    },
+    {
+     "text": "that",
+     "start": 122.816,
+     "end": 123.02
+    },
+    {
+     "text": "paper's",
+     "start": 123.043,
+     "end": 123.371
+    },
+    {
+     "text": "old",
+     "start": 123.408,
+     "end": 123.571
+    },
+    {
+     "text": "ads",
+     "start": 123.59,
+     "end": 123.754
+    },
+    {
+     "text": "and",
+     "start": 123.772,
+     "end": 123.936
+    },
+    {
+     "text": "prices",
+     "start": 123.954,
+     "end": 124.241
+    },
+    {
+     "text": "ending",
+     "start": 124.273,
+     "end": 124.56
+    },
+    {
+     "text": "in",
+     "start": 124.592,
+     "end": 124.714
+    },
+    {
+     "text": "nine",
+     "start": 124.728,
+     "end": 124.933
+    },
+    {
+     "text": "were",
+     "start": 124.956,
+     "end": 125.161
+    },
+    {
+     "text": "rare",
+     "start": 125.184,
+     "end": 125.388
+    },
+    {
+     "text": "back",
+     "start": 125.411,
+     "end": 125.616
+    },
+    {
+     "text": "then.",
+     "start": 125.639,
+     "end": 125.885
+    },
+    {
+     "text": "So",
+     "start": 125.912,
+     "end": 126.035
+    },
+    {
+     "text": "I",
+     "start": 126.049,
+     "end": 126.131
+    },
+    {
+     "text": "lost",
+     "start": 126.14,
+     "end": 126.345
+    },
+    {
+     "text": "twenty",
+     "start": 126.368,
+     "end": 126.654
+    },
+    {
+     "text": "bucks",
+     "start": 126.686,
+     "end": 126.932
+    },
+    {
+     "text": "to",
+     "start": 126.96,
+     "end": 127.082
+    },
+    {
+     "text": "a",
+     "start": 127.096,
+     "end": 127.178
+    },
+    {
+     "text": "rumor.",
+     "start": 127.187,
+     "end": 127.474
+    }
+   ]
+  },
+  {
+   "id": "n5",
+   "text": "Nobody knows who started the ninety nine. But we know why it never stopped. And that part happens inside your head.",
+   "start": 128.20177083333334,
+   "end": 133.07677083333334,
+   "words": [
+    {
+     "text": "Nobody",
+     "start": 128.202,
+     "end": 128.468
+    },
+    {
+     "text": "knows",
+     "start": 128.498,
+     "end": 128.726
+    },
+    {
+     "text": "who",
+     "start": 128.751,
+     "end": 128.903
+    },
+    {
+     "text": "started",
+     "start": 128.92,
+     "end": 129.224
+    },
+    {
+     "text": "the",
+     "start": 129.258,
+     "end": 129.41
+    },
+    {
+     "text": "ninety",
+     "start": 129.427,
+     "end": 129.693
+    },
+    {
+     "text": "nine.",
+     "start": 129.723,
+     "end": 129.951
+    },
+    {
+     "text": "But",
+     "start": 129.976,
+     "end": 130.128
+    },
+    {
+     "text": "we",
+     "start": 130.145,
+     "end": 130.259
+    },
+    {
+     "text": "know",
+     "start": 130.272,
+     "end": 130.462
+    },
+    {
+     "text": "why",
+     "start": 130.483,
+     "end": 130.635
+    },
+    {
+     "text": "it",
+     "start": 130.652,
+     "end": 130.766
+    },
+    {
+     "text": "never",
+     "start": 130.779,
+     "end": 131.007
+    },
+    {
+     "text": "stopped.",
+     "start": 131.032,
+     "end": 131.374
+    },
+    {
+     "text": "And",
+     "start": 131.412,
+     "end": 131.564
+    },
+    {
+     "text": "that",
+     "start": 131.581,
+     "end": 131.771
+    },
+    {
+     "text": "part",
+     "start": 131.793,
+     "end": 131.983
+    },
+    {
+     "text": "happens",
+     "start": 132.004,
+     "end": 132.308
+    },
+    {
+     "text": "inside",
+     "start": 132.342,
+     "end": 132.608
+    },
+    {
+     "text": "your",
+     "start": 132.637,
+     "end": 132.827
+    },
+    {
+     "text": "head.",
+     "start": 132.849,
+     "end": 133.077
+    }
+   ]
+  },
+  {
+   "id": "c3a",
+   "text": "So let's test your brain on something that isn't even a price. Look at the miles on this used truck.",
+   "start": 133.82525,
+   "end": 138.40525000000002,
+   "words": [
+    {
+     "text": "So",
+     "start": 133.825,
+     "end": 133.945
+    },
+    {
+     "text": "let's",
+     "start": 134.125,
+     "end": 134.365
+    },
+    {
+     "text": "test",
+     "start": 134.365,
+     "end": 134.545
+    },
+    {
+     "text": "your",
+     "start": 134.545,
+     "end": 134.765
+    },
+    {
+     "text": "brain",
+     "start": 134.765,
+     "end": 134.945
+    },
+    {
+     "text": "on",
+     "start": 134.945,
+     "end": 135.105
+    },
+    {
+     "text": "something",
+     "start": 135.105,
+     "end": 135.405
+    },
+    {
+     "text": "that",
+     "start": 135.405,
+     "end": 135.585
+    },
+    {
+     "text": "isn't",
+     "start": 135.585,
+     "end": 135.865
+    },
+    {
+     "text": "even",
+     "start": 135.865,
+     "end": 136.065
+    },
+    {
+     "text": "a",
+     "start": 136.065,
+     "end": 136.185
+    },
+    {
+     "text": "price.",
+     "start": 136.185,
+     "end": 136.445
+    },
+    {
+     "text": "Look",
+     "start": 137.065,
+     "end": 137.185
+    },
+    {
+     "text": "at",
+     "start": 137.185,
+     "end": 137.265
+    },
+    {
+     "text": "the",
+     "start": 137.265,
+     "end": 137.365
+    },
+    {
+     "text": "miles",
+     "start": 137.365,
+     "end": 137.545
+    },
+    {
+     "text": "on",
+     "start": 137.545,
+     "end": 137.805
+    },
+    {
+     "text": "this",
+     "start": 137.805,
+     "end": 137.925
+    },
+    {
+     "text": "used",
+     "start": 137.925,
+     "end": 138.125
+    },
+    {
+     "text": "truck.",
+     "start": 138.125,
+     "end": 138.405
+    }
+   ]
+  },
+  {
+   "id": "c3b",
+   "text": "Ninety nine thousand miles feels a lot younger than a hundred thousand right? The gap is one long weekend of driving.",
+   "start": 138.97854166666667,
+   "end": 144.07954166666667,
+   "words": [
+    {
+     "text": "Ninety",
+     "start": 138.979,
+     "end": 139.253
+    },
+    {
+     "text": "nine",
+     "start": 139.284,
+     "end": 139.48
+    },
+    {
+     "text": "thousand",
+     "start": 139.502,
+     "end": 139.855
+    },
+    {
+     "text": "miles",
+     "start": 139.894,
+     "end": 140.129
+    },
+    {
+     "text": "feels",
+     "start": 140.155,
+     "end": 140.39
+    },
+    {
+     "text": "a",
+     "start": 140.416,
+     "end": 140.495
+    },
+    {
+     "text": "lot",
+     "start": 140.504,
+     "end": 140.66
+    },
+    {
+     "text": "younger",
+     "start": 140.678,
+     "end": 140.991
+    },
+    {
+     "text": "than",
+     "start": 141.026,
+     "end": 141.222
+    },
+    {
+     "text": "a",
+     "start": 141.244,
+     "end": 141.322
+    },
+    {
+     "text": "hundred",
+     "start": 141.331,
+     "end": 141.645
+    },
+    {
+     "text": "thousand",
+     "start": 141.68,
+     "end": 142.033
+    },
+    {
+     "text": "right?",
+     "start": 142.072,
+     "end": 142.346
+    },
+    {
+     "text": "The",
+     "start": 142.377,
+     "end": 142.533
+    },
+    {
+     "text": "gap",
+     "start": 142.551,
+     "end": 142.708
+    },
+    {
+     "text": "is",
+     "start": 142.725,
+     "end": 142.843
+    },
+    {
+     "text": "one",
+     "start": 142.856,
+     "end": 143.013
+    },
+    {
+     "text": "long",
+     "start": 143.03,
+     "end": 143.226
+    },
+    {
+     "text": "weekend",
+     "start": 143.248,
+     "end": 143.561
+    },
+    {
+     "text": "of",
+     "start": 143.596,
+     "end": 143.714
+    },
+    {
+     "text": "driving.",
+     "start": 143.727,
+     "end": 144.08
+    }
+   ]
+  },
+  {
+   "id": "c3c",
+   "text": "Economists looked at millions of used car sales. A car sold just under a big round mileage number went for about two hundred dollars more than the same car just over it.",
+   "start": 144.91139583333333,
+   "end": 152.91239583333333,
+   "words": [
+    {
+     "text": "Economists",
+     "start": 144.911,
+     "end": 145.378
+    },
+    {
+     "text": "looked",
+     "start": 145.43,
+     "end": 145.727
+    },
+    {
+     "text": "at",
+     "start": 145.76,
+     "end": 145.888
+    },
+    {
+     "text": "millions",
+     "start": 145.902,
+     "end": 146.284
+    },
+    {
+     "text": "of",
+     "start": 146.326,
+     "end": 146.454
+    },
+    {
+     "text": "used",
+     "start": 146.468,
+     "end": 146.68
+    },
+    {
+     "text": "car",
+     "start": 146.704,
+     "end": 146.874
+    },
+    {
+     "text": "sales.",
+     "start": 146.892,
+     "end": 147.19
+    },
+    {
+     "text": "A",
+     "start": 147.223,
+     "end": 147.308
+    },
+    {
+     "text": "car",
+     "start": 147.317,
+     "end": 147.487
+    },
+    {
+     "text": "sold",
+     "start": 147.506,
+     "end": 147.718
+    },
+    {
+     "text": "just",
+     "start": 147.742,
+     "end": 147.954
+    },
+    {
+     "text": "under",
+     "start": 147.977,
+     "end": 148.232
+    },
+    {
+     "text": "a",
+     "start": 148.261,
+     "end": 148.345
+    },
+    {
+     "text": "big",
+     "start": 148.355,
+     "end": 148.525
+    },
+    {
+     "text": "round",
+     "start": 148.544,
+     "end": 148.798
+    },
+    {
+     "text": "mileage",
+     "start": 148.827,
+     "end": 149.166
+    },
+    {
+     "text": "number",
+     "start": 149.204,
+     "end": 149.501
+    },
+    {
+     "text": "went",
+     "start": 149.534,
+     "end": 149.747
+    },
+    {
+     "text": "for",
+     "start": 149.77,
+     "end": 149.94
+    },
+    {
+     "text": "about",
+     "start": 149.959,
+     "end": 150.214
+    },
+    {
+     "text": "two",
+     "start": 150.242,
+     "end": 150.412
+    },
+    {
+     "text": "hundred",
+     "start": 150.431,
+     "end": 150.77
+    },
+    {
+     "text": "dollars",
+     "start": 150.808,
+     "end": 151.148
+    },
+    {
+     "text": "more",
+     "start": 151.185,
+     "end": 151.398
+    },
+    {
+     "text": "than",
+     "start": 151.421,
+     "end": 151.634
+    },
+    {
+     "text": "the",
+     "start": 151.657,
+     "end": 151.827
+    },
+    {
+     "text": "same",
+     "start": 151.846,
+     "end": 152.058
+    },
+    {
+     "text": "car",
+     "start": 152.082,
+     "end": 152.252
+    },
+    {
+     "text": "just",
+     "start": 152.271,
+     "end": 152.483
+    },
+    {
+     "text": "over",
+     "start": 152.506,
+     "end": 152.719
+    },
+    {
+     "text": "it.",
+     "start": 152.742,
+     "end": 152.912
+    }
+   ]
+  },
+  {
+   "id": "n6",
+   "text": "Car buyers at ninety nine thousand miles versus a hundred thousand.",
+   "start": 153.4281875,
+   "end": 156.4041875,
+   "words": [
+    {
+     "text": "Car",
+     "start": 153.428,
+     "end": 153.588
+    },
+    {
+     "text": "buyers",
+     "start": 153.606,
+     "end": 153.885
+    },
+    {
+     "text": "at",
+     "start": 153.917,
+     "end": 154.036
+    },
+    {
+     "text": "ninety",
+     "start": 154.05,
+     "end": 154.33
+    },
+    {
+     "text": "nine",
+     "start": 154.361,
+     "end": 154.56
+    },
+    {
+     "text": "thousand",
+     "start": 154.583,
+     "end": 154.942
+    },
+    {
+     "text": "miles",
+     "start": 154.982,
+     "end": 155.222
+    },
+    {
+     "text": "versus",
+     "start": 155.249,
+     "end": 155.529
+    },
+    {
+     "text": "a",
+     "start": 155.56,
+     "end": 155.64
+    },
+    {
+     "text": "hundred",
+     "start": 155.649,
+     "end": 155.968
+    },
+    {
+     "text": "thousand.",
+     "start": 156.004,
+     "end": 156.404
+    }
+   ]
+  },
+  {
+   "id": "c3d",
+   "text": "Here's what's going on. You read from left to right. And your brain decides how big a number is before your eyes reach the end. Scientists call it the left digit effect.",
+   "start": 156.9608125,
+   "end": 164.3008125,
+   "words": [
+    {
+     "text": "Here's",
+     "start": 156.961,
+     "end": 157.141
+    },
+    {
+     "text": "what's",
+     "start": 157.141,
+     "end": 157.321
+    },
+    {
+     "text": "going",
+     "start": 157.321,
+     "end": 157.501
+    },
+    {
+     "text": "on.",
+     "start": 157.501,
+     "end": 157.701
+    },
+    {
+     "text": "You",
+     "start": 158.101,
+     "end": 158.101
+    },
+    {
+     "text": "read",
+     "start": 158.101,
+     "end": 158.261
+    },
+    {
+     "text": "from",
+     "start": 158.261,
+     "end": 158.501
+    },
+    {
+     "text": "left",
+     "start": 158.501,
+     "end": 158.641
+    },
+    {
+     "text": "to",
+     "start": 158.641,
+     "end": 158.841
+    },
+    {
+     "text": "right.",
+     "start": 158.841,
+     "end": 159.061
+    },
+    {
+     "text": "And",
+     "start": 159.581,
+     "end": 159.721
+    },
+    {
+     "text": "your",
+     "start": 159.721,
+     "end": 159.821
+    },
+    {
+     "text": "brain",
+     "start": 159.821,
+     "end": 160.021
+    },
+    {
+     "text": "decides",
+     "start": 160.021,
+     "end": 160.241
+    },
+    {
+     "text": "how",
+     "start": 160.241,
+     "end": 160.521
+    },
+    {
+     "text": "big",
+     "start": 160.521,
+     "end": 160.621
+    },
+    {
+     "text": "a",
+     "start": 160.621,
+     "end": 160.721
+    },
+    {
+     "text": "number",
+     "start": 160.721,
+     "end": 160.961
+    },
+    {
+     "text": "is",
+     "start": 160.961,
+     "end": 161.181
+    },
+    {
+     "text": "before",
+     "start": 161.181,
+     "end": 161.341
+    },
+    {
+     "text": "your",
+     "start": 161.341,
+     "end": 161.581
+    },
+    {
+     "text": "eyes",
+     "start": 161.581,
+     "end": 161.761
+    },
+    {
+     "text": "reach",
+     "start": 161.761,
+     "end": 161.941
+    },
+    {
+     "text": "the",
+     "start": 161.941,
+     "end": 162.141
+    },
+    {
+     "text": "end.",
+     "start": 162.141,
+     "end": 162.381
+    },
+    {
+     "text": "Scientists",
+     "start": 162.801,
+     "end": 163.101
+    },
+    {
+     "text": "call",
+     "start": 163.101,
+     "end": 163.381
+    },
+    {
+     "text": "it",
+     "start": 163.381,
+     "end": 163.501
+    },
+    {
+     "text": "the",
+     "start": 163.501,
+     "end": 163.601
+    },
+    {
+     "text": "left",
+     "start": 163.601,
+     "end": 163.781
+    },
+    {
+     "text": "digit",
+     "start": 163.781,
+     "end": 164.001
+    },
+    {
+     "text": "effect.",
+     "start": 164.001,
+     "end": 164.301
+    }
+   ]
+  },
+  {
+   "id": "c3e",
+   "text": "Researchers at New York University tested it. Two ninety nine felt way cheaper than three dollars. But when the first digit stayed the same that one cent did almost nothing.",
+   "start": 165.199125,
+   "end": 173.536125,
+   "words": [
+    {
+     "text": "Researchers",
+     "start": 165.199,
+     "end": 165.719
+    },
+    {
+     "text": "at",
+     "start": 165.777,
+     "end": 165.907
+    },
+    {
+     "text": "New",
+     "start": 165.921,
+     "end": 166.095
+    },
+    {
+     "text": "York",
+     "start": 166.114,
+     "end": 166.331
+    },
+    {
+     "text": "University",
+     "start": 166.355,
+     "end": 166.832
+    },
+    {
+     "text": "tested",
+     "start": 166.885,
+     "end": 167.188
+    },
+    {
+     "text": "it.",
+     "start": 167.222,
+     "end": 167.395
+    },
+    {
+     "text": "Two",
+     "start": 167.414,
+     "end": 167.588
+    },
+    {
+     "text": "ninety",
+     "start": 167.607,
+     "end": 167.91
+    },
+    {
+     "text": "nine",
+     "start": 167.944,
+     "end": 168.161
+    },
+    {
+     "text": "felt",
+     "start": 168.185,
+     "end": 168.402
+    },
+    {
+     "text": "way",
+     "start": 168.426,
+     "end": 168.599
+    },
+    {
+     "text": "cheaper",
+     "start": 168.618,
+     "end": 168.965
+    },
+    {
+     "text": "than",
+     "start": 169.004,
+     "end": 169.22
+    },
+    {
+     "text": "three",
+     "start": 169.245,
+     "end": 169.505
+    },
+    {
+     "text": "dollars.",
+     "start": 169.533,
+     "end": 169.924
+    },
+    {
+     "text": "But",
+     "start": 169.967,
+     "end": 170.14
+    },
+    {
+     "text": "when",
+     "start": 170.16,
+     "end": 170.376
+    },
+    {
+     "text": "the",
+     "start": 170.4,
+     "end": 170.574
+    },
+    {
+     "text": "first",
+     "start": 170.593,
+     "end": 170.853
+    },
+    {
+     "text": "digit",
+     "start": 170.882,
+     "end": 171.142
+    },
+    {
+     "text": "stayed",
+     "start": 171.171,
+     "end": 171.474
+    },
+    {
+     "text": "the",
+     "start": 171.508,
+     "end": 171.681
+    },
+    {
+     "text": "same",
+     "start": 171.701,
+     "end": 171.917
+    },
+    {
+     "text": "that",
+     "start": 171.942,
+     "end": 172.158
+    },
+    {
+     "text": "one",
+     "start": 172.182,
+     "end": 172.356
+    },
+    {
+     "text": "cent",
+     "start": 172.375,
+     "end": 172.592
+    },
+    {
+     "text": "did",
+     "start": 172.616,
+     "end": 172.789
+    },
+    {
+     "text": "almost",
+     "start": 172.808,
+     "end": 173.112
+    },
+    {
+     "text": "nothing.",
+     "start": 173.146,
+     "end": 173.536
+    }
+   ]
+  },
+  {
+   "id": "c3f",
+   "text": "And I do this with everything. I'm thirty nine years and eleven months old and I tell people I'm thirty something.",
+   "start": 174.229875,
+   "end": 178.86487499999998,
+   "words": [
+    {
+     "text": "And",
+     "start": 174.23,
+     "end": 174.377
+    },
+    {
+     "text": "I",
+     "start": 174.393,
+     "end": 174.466
+    },
+    {
+     "text": "do",
+     "start": 174.474,
+     "end": 174.584
+    },
+    {
+     "text": "this",
+     "start": 174.596,
+     "end": 174.779
+    },
+    {
+     "text": "with",
+     "start": 174.8,
+     "end": 174.983
+    },
+    {
+     "text": "everything.",
+     "start": 175.003,
+     "end": 175.443
+    },
+    {
+     "text": "I'm",
+     "start": 175.492,
+     "end": 175.638
+    },
+    {
+     "text": "thirty",
+     "start": 175.654,
+     "end": 175.911
+    },
+    {
+     "text": "nine",
+     "start": 175.939,
+     "end": 176.122
+    },
+    {
+     "text": "years",
+     "start": 176.143,
+     "end": 176.362
+    },
+    {
+     "text": "and",
+     "start": 176.387,
+     "end": 176.533
+    },
+    {
+     "text": "eleven",
+     "start": 176.55,
+     "end": 176.806
+    },
+    {
+     "text": "months",
+     "start": 176.835,
+     "end": 177.091
+    },
+    {
+     "text": "old",
+     "start": 177.119,
+     "end": 177.266
+    },
+    {
+     "text": "and",
+     "start": 177.282,
+     "end": 177.429
+    },
+    {
+     "text": "I",
+     "start": 177.445,
+     "end": 177.518
+    },
+    {
+     "text": "tell",
+     "start": 177.526,
+     "end": 177.709
+    },
+    {
+     "text": "people",
+     "start": 177.73,
+     "end": 177.986
+    },
+    {
+     "text": "I'm",
+     "start": 178.015,
+     "end": 178.161
+    },
+    {
+     "text": "thirty",
+     "start": 178.177,
+     "end": 178.434
+    },
+    {
+     "text": "something.",
+     "start": 178.462,
+     "end": 178.865
+    }
+   ]
+  },
+  {
+   "id": "n7",
+   "text": "Me at thirty nine and eleven months.",
+   "start": 179.72341666666668,
+   "end": 181.32841666666667,
+   "words": [
+    {
+     "text": "Me",
+     "start": 179.723,
+     "end": 179.843
+    },
+    {
+     "text": "at",
+     "start": 179.856,
+     "end": 179.976
+    },
+    {
+     "text": "thirty",
+     "start": 179.989,
+     "end": 180.268
+    },
+    {
+     "text": "nine",
+     "start": 180.299,
+     "end": 180.499
+    },
+    {
+     "text": "and",
+     "start": 180.521,
+     "end": 180.68
+    },
+    {
+     "text": "eleven",
+     "start": 180.698,
+     "end": 180.977
+    },
+    {
+     "text": "months.",
+     "start": 181.008,
+     "end": 181.328
+    }
+   ]
+  },
+  {
+   "id": "c3g",
+   "text": "Now guess with me. When a price climbs one cent from four ninety nine to five dollars how many cents does that feel like to shoppers? Put your number in the comments.",
+   "start": 182.1244375,
+   "end": 189.7984375,
+   "words": [
+    {
+     "text": "Now",
+     "start": 182.124,
+     "end": 182.29
+    },
+    {
+     "text": "guess",
+     "start": 182.309,
+     "end": 182.559
+    },
+    {
+     "text": "with",
+     "start": 182.586,
+     "end": 182.794
+    },
+    {
+     "text": "me.",
+     "start": 182.817,
+     "end": 182.984
+    },
+    {
+     "text": "When",
+     "start": 183.002,
+     "end": 183.21
+    },
+    {
+     "text": "a",
+     "start": 183.233,
+     "end": 183.317
+    },
+    {
+     "text": "price",
+     "start": 183.326,
+     "end": 183.576
+    },
+    {
+     "text": "climbs",
+     "start": 183.603,
+     "end": 183.895
+    },
+    {
+     "text": "one",
+     "start": 183.927,
+     "end": 184.093
+    },
+    {
+     "text": "cent",
+     "start": 184.112,
+     "end": 184.32
+    },
+    {
+     "text": "from",
+     "start": 184.343,
+     "end": 184.551
+    },
+    {
+     "text": "four",
+     "start": 184.574,
+     "end": 184.782
+    },
+    {
+     "text": "ninety",
+     "start": 184.805,
+     "end": 185.096
+    },
+    {
+     "text": "nine",
+     "start": 185.129,
+     "end": 185.337
+    },
+    {
+     "text": "to",
+     "start": 185.36,
+     "end": 185.485
+    },
+    {
+     "text": "five",
+     "start": 185.499,
+     "end": 185.707
+    },
+    {
+     "text": "dollars",
+     "start": 185.73,
+     "end": 186.063
+    },
+    {
+     "text": "how",
+     "start": 186.1,
+     "end": 186.266
+    },
+    {
+     "text": "many",
+     "start": 186.284,
+     "end": 186.493
+    },
+    {
+     "text": "cents",
+     "start": 186.516,
+     "end": 186.765
+    },
+    {
+     "text": "does",
+     "start": 186.793,
+     "end": 187.001
+    },
+    {
+     "text": "that",
+     "start": 187.024,
+     "end": 187.232
+    },
+    {
+     "text": "feel",
+     "start": 187.255,
+     "end": 187.463
+    },
+    {
+     "text": "like",
+     "start": 187.486,
+     "end": 187.694
+    },
+    {
+     "text": "to",
+     "start": 187.718,
+     "end": 187.842
+    },
+    {
+     "text": "shoppers?",
+     "start": 187.856,
+     "end": 188.272
+    },
+    {
+     "text": "Put",
+     "start": 188.318,
+     "end": 188.485
+    },
+    {
+     "text": "your",
+     "start": 188.503,
+     "end": 188.711
+    },
+    {
+     "text": "number",
+     "start": 188.735,
+     "end": 189.026
+    },
+    {
+     "text": "in",
+     "start": 189.058,
+     "end": 189.183
+    },
+    {
+     "text": "the",
+     "start": 189.197,
+     "end": 189.363
+    },
+    {
+     "text": "comments.",
+     "start": 189.382,
+     "end": 189.798
+    }
+   ]
+  },
+  {
+   "id": "c4a",
+   "text": "While you think about it I found a man who built a whole empire on those two little nines. His name was Dave Gold. Great name.",
+   "start": 190.68916666666667,
+   "end": 196.52916666666667,
+   "words": [
+    {
+     "text": "While",
+     "start": 190.689,
+     "end": 190.769
+    },
+    {
+     "text": "you",
+     "start": 190.769,
+     "end": 190.869
+    },
+    {
+     "text": "think",
+     "start": 190.869,
+     "end": 190.969
+    },
+    {
+     "text": "about",
+     "start": 190.969,
+     "end": 191.229
+    },
+    {
+     "text": "it",
+     "start": 191.229,
+     "end": 191.389
+    },
+    {
+     "text": "I",
+     "start": 191.469,
+     "end": 191.549
+    },
+    {
+     "text": "found",
+     "start": 191.549,
+     "end": 191.729
+    },
+    {
+     "text": "a",
+     "start": 191.729,
+     "end": 191.849
+    },
+    {
+     "text": "man",
+     "start": 191.849,
+     "end": 192.029
+    },
+    {
+     "text": "who",
+     "start": 192.029,
+     "end": 192.209
+    },
+    {
+     "text": "built",
+     "start": 192.209,
+     "end": 192.349
+    },
+    {
+     "text": "a",
+     "start": 192.349,
+     "end": 192.469
+    },
+    {
+     "text": "whole",
+     "start": 192.469,
+     "end": 192.629
+    },
+    {
+     "text": "empire",
+     "start": 192.629,
+     "end": 192.989
+    },
+    {
+     "text": "on",
+     "start": 192.989,
+     "end": 193.329
+    },
+    {
+     "text": "those",
+     "start": 193.329,
+     "end": 193.469
+    },
+    {
+     "text": "two",
+     "start": 193.469,
+     "end": 193.689
+    },
+    {
+     "text": "little",
+     "start": 193.689,
+     "end": 193.909
+    },
+    {
+     "text": "nines.",
+     "start": 193.909,
+     "end": 194.209
+    },
+    {
+     "text": "His",
+     "start": 194.749,
+     "end": 194.849
+    },
+    {
+     "text": "name",
+     "start": 194.849,
+     "end": 195.069
+    },
+    {
+     "text": "was",
+     "start": 195.069,
+     "end": 195.269
+    },
+    {
+     "text": "Dave",
+     "start": 195.269,
+     "end": 195.449
+    },
+    {
+     "text": "Gold.",
+     "start": 195.449,
+     "end": 195.649
+    },
+    {
+     "text": "Great",
+     "start": 196.209,
+     "end": 196.329
+    },
+    {
+     "text": "name.",
+     "start": 196.329,
+     "end": 196.529
+    }
+   ]
+  },
+  {
+   "id": "c4b",
+   "text": "Gold ran a little liquor store in Los Angeles. When he put wine on sale for a dollar and two cents it just sat there. At ninety eight cents it sat there too.",
+   "start": 197.18485416666667,
+   "end": 203.38485416666666,
+   "words": [
+    {
+     "text": "Gold",
+     "start": 197.185,
+     "end": 197.362
+    },
+    {
+     "text": "ran",
+     "start": 197.382,
+     "end": 197.524
+    },
+    {
+     "text": "a",
+     "start": 197.539,
+     "end": 197.61
+    },
+    {
+     "text": "little",
+     "start": 197.618,
+     "end": 197.866
+    },
+    {
+     "text": "liquor",
+     "start": 197.894,
+     "end": 198.142
+    },
+    {
+     "text": "store",
+     "start": 198.169,
+     "end": 198.382
+    },
+    {
+     "text": "in",
+     "start": 198.405,
+     "end": 198.512
+    },
+    {
+     "text": "Los",
+     "start": 198.523,
+     "end": 198.665
+    },
+    {
+     "text": "Angeles.",
+     "start": 198.681,
+     "end": 199.0
+    },
+    {
+     "text": "When",
+     "start": 199.035,
+     "end": 199.212
+    },
+    {
+     "text": "he",
+     "start": 199.232,
+     "end": 199.338
+    },
+    {
+     "text": "put",
+     "start": 199.35,
+     "end": 199.492
+    },
+    {
+     "text": "wine",
+     "start": 199.508,
+     "end": 199.685
+    },
+    {
+     "text": "on",
+     "start": 199.704,
+     "end": 199.811
+    },
+    {
+     "text": "sale",
+     "start": 199.823,
+     "end": 200.0
+    },
+    {
+     "text": "for",
+     "start": 200.019,
+     "end": 200.161
+    },
+    {
+     "text": "a",
+     "start": 200.177,
+     "end": 200.248
+    },
+    {
+     "text": "dollar",
+     "start": 200.256,
+     "end": 200.504
+    },
+    {
+     "text": "and",
+     "start": 200.531,
+     "end": 200.673
+    },
+    {
+     "text": "two",
+     "start": 200.689,
+     "end": 200.83
+    },
+    {
+     "text": "cents",
+     "start": 200.846,
+     "end": 201.059
+    },
+    {
+     "text": "it",
+     "start": 201.082,
+     "end": 201.189
+    },
+    {
+     "text": "just",
+     "start": 201.2,
+     "end": 201.378
+    },
+    {
+     "text": "sat",
+     "start": 201.397,
+     "end": 201.539
+    },
+    {
+     "text": "there.",
+     "start": 201.555,
+     "end": 201.803
+    },
+    {
+     "text": "At",
+     "start": 201.83,
+     "end": 201.937
+    },
+    {
+     "text": "ninety",
+     "start": 201.948,
+     "end": 202.196
+    },
+    {
+     "text": "eight",
+     "start": 202.224,
+     "end": 202.437
+    },
+    {
+     "text": "cents",
+     "start": 202.46,
+     "end": 202.673
+    },
+    {
+     "text": "it",
+     "start": 202.696,
+     "end": 202.803
+    },
+    {
+     "text": "sat",
+     "start": 202.814,
+     "end": 202.956
+    },
+    {
+     "text": "there",
+     "start": 202.972,
+     "end": 203.185
+    },
+    {
+     "text": "too.",
+     "start": 203.208,
+     "end": 203.385
+    }
+   ]
+  },
+  {
+   "id": "c4c",
+   "text": "But when he wrote ninety nine cents on the sign it was gone in no time. He called it a magic number.",
+   "start": 204.06933333333333,
+   "end": 208.47433333333333,
+   "words": [
+    {
+     "text": "But",
+     "start": 204.069,
+     "end": 204.227
+    },
+    {
+     "text": "when",
+     "start": 204.245,
+     "end": 204.443
+    },
+    {
+     "text": "he",
+     "start": 204.465,
+     "end": 204.583
+    },
+    {
+     "text": "wrote",
+     "start": 204.597,
+     "end": 204.834
+    },
+    {
+     "text": "ninety",
+     "start": 204.86,
+     "end": 205.137
+    },
+    {
+     "text": "nine",
+     "start": 205.168,
+     "end": 205.366
+    },
+    {
+     "text": "cents",
+     "start": 205.388,
+     "end": 205.625
+    },
+    {
+     "text": "on",
+     "start": 205.652,
+     "end": 205.77
+    },
+    {
+     "text": "the",
+     "start": 205.783,
+     "end": 205.942
+    },
+    {
+     "text": "sign",
+     "start": 205.959,
+     "end": 206.157
+    },
+    {
+     "text": "it",
+     "start": 206.179,
+     "end": 206.298
+    },
+    {
+     "text": "was",
+     "start": 206.311,
+     "end": 206.469
+    },
+    {
+     "text": "gone",
+     "start": 206.487,
+     "end": 206.685
+    },
+    {
+     "text": "in",
+     "start": 206.707,
+     "end": 206.825
+    },
+    {
+     "text": "no",
+     "start": 206.839,
+     "end": 206.957
+    },
+    {
+     "text": "time.",
+     "start": 206.97,
+     "end": 207.208
+    },
+    {
+     "text": "He",
+     "start": 207.234,
+     "end": 207.353
+    },
+    {
+     "text": "called",
+     "start": 207.366,
+     "end": 207.643
+    },
+    {
+     "text": "it",
+     "start": 207.674,
+     "end": 207.792
+    },
+    {
+     "text": "a",
+     "start": 207.806,
+     "end": 207.885
+    },
+    {
+     "text": "magic",
+     "start": 207.894,
+     "end": 208.131
+    },
+    {
+     "text": "number.",
+     "start": 208.157,
+     "end": 208.474
+    }
+   ]
+  },
+  {
+   "id": "c4d",
+   "text": "Read that again. The wine sold better at ninety nine cents than at ninety eight. A higher price beat a lower one just because of how it looked.",
+   "start": 209.11214583333333,
+   "end": 214.50214583333332,
+   "words": [
+    {
+     "text": "Read",
+     "start": 209.112,
+     "end": 209.281
+    },
+    {
+     "text": "that",
+     "start": 209.3,
+     "end": 209.47
+    },
+    {
+     "text": "again.",
+     "start": 209.488,
+     "end": 209.726
+    },
+    {
+     "text": "The",
+     "start": 209.752,
+     "end": 209.887
+    },
+    {
+     "text": "wine",
+     "start": 209.902,
+     "end": 210.072
+    },
+    {
+     "text": "sold",
+     "start": 210.091,
+     "end": 210.26
+    },
+    {
+     "text": "better",
+     "start": 210.279,
+     "end": 210.516
+    },
+    {
+     "text": "at",
+     "start": 210.542,
+     "end": 210.644
+    },
+    {
+     "text": "ninety",
+     "start": 210.655,
+     "end": 210.892
+    },
+    {
+     "text": "nine",
+     "start": 210.919,
+     "end": 211.088
+    },
+    {
+     "text": "cents",
+     "start": 211.107,
+     "end": 211.31
+    },
+    {
+     "text": "than",
+     "start": 211.333,
+     "end": 211.502
+    },
+    {
+     "text": "at",
+     "start": 211.521,
+     "end": 211.623
+    },
+    {
+     "text": "ninety",
+     "start": 211.634,
+     "end": 211.871
+    },
+    {
+     "text": "eight.",
+     "start": 211.897,
+     "end": 212.134
+    },
+    {
+     "text": "A",
+     "start": 212.161,
+     "end": 212.228
+    },
+    {
+     "text": "higher",
+     "start": 212.236,
+     "end": 212.473
+    },
+    {
+     "text": "price",
+     "start": 212.499,
+     "end": 212.703
+    },
+    {
+     "text": "beat",
+     "start": 212.725,
+     "end": 212.895
+    },
+    {
+     "text": "a",
+     "start": 212.914,
+     "end": 212.981
+    },
+    {
+     "text": "lower",
+     "start": 212.989,
+     "end": 213.192
+    },
+    {
+     "text": "one",
+     "start": 213.215,
+     "end": 213.35
+    },
+    {
+     "text": "just",
+     "start": 213.365,
+     "end": 213.535
+    },
+    {
+     "text": "because",
+     "start": 213.553,
+     "end": 213.824
+    },
+    {
+     "text": "of",
+     "start": 213.854,
+     "end": 213.956
+    },
+    {
+     "text": "how",
+     "start": 213.967,
+     "end": 214.103
+    },
+    {
+     "text": "it",
+     "start": 214.118,
+     "end": 214.22
+    },
+    {
+     "text": "looked.",
+     "start": 214.231,
+     "end": 214.502
+    }
+   ]
+  },
+  {
+   "id": "n8",
+   "text": "My brain reading prices.",
+   "start": 215.15647916666666,
+   "end": 216.01647916666667,
+   "words": [
+    {
+     "text": "My",
+     "start": 215.156,
+     "end": 215.276
+    },
+    {
+     "text": "brain",
+     "start": 215.276,
+     "end": 215.476
+    },
+    {
+     "text": "reading",
+     "start": 215.476,
+     "end": 215.736
+    },
+    {
+     "text": "prices.",
+     "start": 215.736,
+     "end": 216.016
+    }
+   ]
+  },
+  {
+   "id": "c4e",
+   "text": "So he opened a store where everything cost ninety nine cents. It grew into hundreds of stores. And when costs went up the new price was ninety nine point nine nine cents.",
+   "start": 216.93316666666666,
+   "end": 224.46216666666666,
+   "words": [
+    {
+     "text": "So",
+     "start": 216.933,
+     "end": 217.052
+    },
+    {
+     "text": "he",
+     "start": 217.066,
+     "end": 217.185
+    },
+    {
+     "text": "opened",
+     "start": 217.198,
+     "end": 217.477
+    },
+    {
+     "text": "a",
+     "start": 217.508,
+     "end": 217.587
+    },
+    {
+     "text": "store",
+     "start": 217.596,
+     "end": 217.835
+    },
+    {
+     "text": "where",
+     "start": 217.861,
+     "end": 218.1
+    },
+    {
+     "text": "everything",
+     "start": 218.127,
+     "end": 218.564
+    },
+    {
+     "text": "cost",
+     "start": 218.613,
+     "end": 218.812
+    },
+    {
+     "text": "ninety",
+     "start": 218.834,
+     "end": 219.113
+    },
+    {
+     "text": "nine",
+     "start": 219.144,
+     "end": 219.342
+    },
+    {
+     "text": "cents.",
+     "start": 219.365,
+     "end": 219.643
+    },
+    {
+     "text": "It",
+     "start": 219.674,
+     "end": 219.793
+    },
+    {
+     "text": "grew",
+     "start": 219.807,
+     "end": 220.006
+    },
+    {
+     "text": "into",
+     "start": 220.028,
+     "end": 220.227
+    },
+    {
+     "text": "hundreds",
+     "start": 220.249,
+     "end": 220.607
+    },
+    {
+     "text": "of",
+     "start": 220.647,
+     "end": 220.766
+    },
+    {
+     "text": "stores.",
+     "start": 220.779,
+     "end": 221.098
+    },
+    {
+     "text": "And",
+     "start": 221.133,
+     "end": 221.292
+    },
+    {
+     "text": "when",
+     "start": 221.31,
+     "end": 221.509
+    },
+    {
+     "text": "costs",
+     "start": 221.531,
+     "end": 221.77
+    },
+    {
+     "text": "went",
+     "start": 221.796,
+     "end": 221.995
+    },
+    {
+     "text": "up",
+     "start": 222.017,
+     "end": 222.137
+    },
+    {
+     "text": "the",
+     "start": 222.15,
+     "end": 222.309
+    },
+    {
+     "text": "new",
+     "start": 222.327,
+     "end": 222.486
+    },
+    {
+     "text": "price",
+     "start": 222.504,
+     "end": 222.742
+    },
+    {
+     "text": "was",
+     "start": 222.769,
+     "end": 222.928
+    },
+    {
+     "text": "ninety",
+     "start": 222.946,
+     "end": 223.224
+    },
+    {
+     "text": "nine",
+     "start": 223.255,
+     "end": 223.454
+    },
+    {
+     "text": "point",
+     "start": 223.476,
+     "end": 223.715
+    },
+    {
+     "text": "nine",
+     "start": 223.741,
+     "end": 223.94
+    },
+    {
+     "text": "nine",
+     "start": 223.962,
+     "end": 224.161
+    },
+    {
+     "text": "cents.",
+     "start": 224.184,
+     "end": 224.462
+    }
+   ]
+  },
+  {
+   "id": "c4f",
+   "text": "And he wasn't alone. Steve Jobs priced every song in his new music store at ninety nine cents. It sold a million songs in the first week.",
+   "start": 225.30008333333333,
+   "end": 232.84708333333333,
+   "words": [
+    {
+     "text": "And",
+     "start": 225.3,
+     "end": 225.498
+    },
+    {
+     "text": "he",
+     "start": 225.52,
+     "end": 225.668
+    },
+    {
+     "text": "wasn't",
+     "start": 225.684,
+     "end": 226.031
+    },
+    {
+     "text": "alone.",
+     "start": 226.069,
+     "end": 226.415
+    },
+    {
+     "text": "Steve",
+     "start": 226.453,
+     "end": 226.75
+    },
+    {
+     "text": "Jobs",
+     "start": 226.783,
+     "end": 227.03
+    },
+    {
+     "text": "priced",
+     "start": 227.058,
+     "end": 227.404
+    },
+    {
+     "text": "every",
+     "start": 227.442,
+     "end": 227.739
+    },
+    {
+     "text": "song",
+     "start": 227.772,
+     "end": 228.019
+    },
+    {
+     "text": "in",
+     "start": 228.046,
+     "end": 228.195
+    },
+    {
+     "text": "his",
+     "start": 228.211,
+     "end": 228.409
+    },
+    {
+     "text": "new",
+     "start": 228.431,
+     "end": 228.629
+    },
+    {
+     "text": "music",
+     "start": 228.651,
+     "end": 228.947
+    },
+    {
+     "text": "store",
+     "start": 228.98,
+     "end": 229.277
+    },
+    {
+     "text": "at",
+     "start": 229.31,
+     "end": 229.458
+    },
+    {
+     "text": "ninety",
+     "start": 229.474,
+     "end": 229.821
+    },
+    {
+     "text": "nine",
+     "start": 229.859,
+     "end": 230.106
+    },
+    {
+     "text": "cents.",
+     "start": 230.134,
+     "end": 230.48
+    },
+    {
+     "text": "It",
+     "start": 230.518,
+     "end": 230.666
+    },
+    {
+     "text": "sold",
+     "start": 230.683,
+     "end": 230.93
+    },
+    {
+     "text": "a",
+     "start": 230.958,
+     "end": 231.056
+    },
+    {
+     "text": "million",
+     "start": 231.067,
+     "end": 231.463
+    },
+    {
+     "text": "songs",
+     "start": 231.507,
+     "end": 231.803
+    },
+    {
+     "text": "in",
+     "start": 231.836,
+     "end": 231.985
+    },
+    {
+     "text": "the",
+     "start": 232.001,
+     "end": 232.199
+    },
+    {
+     "text": "first",
+     "start": 232.221,
+     "end": 232.517
+    },
+    {
+     "text": "week.",
+     "start": 232.55,
+     "end": 232.847
+    }
+   ]
+  },
+  {
+   "id": "n9",
+   "text": "Apple deciding song prices.",
+   "start": 233.46189583333333,
+   "end": 234.56189583333332,
+   "words": [
+    {
+     "text": "Apple",
+     "start": 233.462,
+     "end": 233.682
+    },
+    {
+     "text": "deciding",
+     "start": 233.682,
+     "end": 233.962
+    },
+    {
+     "text": "song",
+     "start": 233.962,
+     "end": 234.222
+    },
+    {
+     "text": "prices.",
+     "start": 234.222,
+     "end": 234.562
+    }
+   ]
+  },
+  {
+   "id": "c5a",
+   "text": "And now I wanted to know who decides my lamp costs nineteen ninety nine and not twenty. Because somebody does.",
+   "start": 237.59954166666665,
+   "end": 242.79154166666666,
+   "words": [
+    {
+     "text": "And",
+     "start": 237.6,
+     "end": 237.769
+    },
+    {
+     "text": "now",
+     "start": 237.788,
+     "end": 237.957
+    },
+    {
+     "text": "I",
+     "start": 237.976,
+     "end": 238.061
+    },
+    {
+     "text": "wanted",
+     "start": 238.07,
+     "end": 238.367
+    },
+    {
+     "text": "to",
+     "start": 238.399,
+     "end": 238.526
+    },
+    {
+     "text": "know",
+     "start": 238.541,
+     "end": 238.752
+    },
+    {
+     "text": "who",
+     "start": 238.776,
+     "end": 238.945
+    },
+    {
+     "text": "decides",
+     "start": 238.964,
+     "end": 239.302
+    },
+    {
+     "text": "my",
+     "start": 239.34,
+     "end": 239.467
+    },
+    {
+     "text": "lamp",
+     "start": 239.481,
+     "end": 239.693
+    },
+    {
+     "text": "costs",
+     "start": 239.716,
+     "end": 239.97
+    },
+    {
+     "text": "nineteen",
+     "start": 239.998,
+     "end": 240.379
+    },
+    {
+     "text": "ninety",
+     "start": 240.422,
+     "end": 240.718
+    },
+    {
+     "text": "nine",
+     "start": 240.751,
+     "end": 240.962
+    },
+    {
+     "text": "and",
+     "start": 240.986,
+     "end": 241.155
+    },
+    {
+     "text": "not",
+     "start": 241.174,
+     "end": 241.343
+    },
+    {
+     "text": "twenty.",
+     "start": 241.362,
+     "end": 241.701
+    },
+    {
+     "text": "Because",
+     "start": 241.738,
+     "end": 242.077
+    },
+    {
+     "text": "somebody",
+     "start": 242.115,
+     "end": 242.496
+    },
+    {
+     "text": "does.",
+     "start": 242.538,
+     "end": 242.792
+    }
+   ]
+  },
+  {
+   "id": "c5b",
+   "text": "Every big chain has a pricing office. Choosing the last digit is somebody's actual job. With a spreadsheet.",
+   "start": 243.5855,
+   "end": 248.2655,
+   "words": [
+    {
+     "text": "Every",
+     "start": 243.585,
+     "end": 243.766
+    },
+    {
+     "text": "big",
+     "start": 243.766,
+     "end": 243.946
+    },
+    {
+     "text": "chain",
+     "start": 243.946,
+     "end": 244.225
+    },
+    {
+     "text": "has",
+     "start": 244.225,
+     "end": 244.405
+    },
+    {
+     "text": "a",
+     "start": 244.405,
+     "end": 244.486
+    },
+    {
+     "text": "pricing",
+     "start": 244.486,
+     "end": 244.666
+    },
+    {
+     "text": "office.",
+     "start": 244.666,
+     "end": 245.085
+    },
+    {
+     "text": "Choosing",
+     "start": 245.625,
+     "end": 245.725
+    },
+    {
+     "text": "the",
+     "start": 245.725,
+     "end": 245.965
+    },
+    {
+     "text": "last",
+     "start": 245.965,
+     "end": 246.145
+    },
+    {
+     "text": "digit",
+     "start": 246.145,
+     "end": 246.386
+    },
+    {
+     "text": "is",
+     "start": 246.386,
+     "end": 246.625
+    },
+    {
+     "text": "somebody's",
+     "start": 246.625,
+     "end": 247.005
+    },
+    {
+     "text": "actual",
+     "start": 247.005,
+     "end": 247.206
+    },
+    {
+     "text": "job.",
+     "start": 247.206,
+     "end": 247.645
+    },
+    {
+     "text": "With",
+     "start": 247.886,
+     "end": 248.005
+    },
+    {
+     "text": "a",
+     "start": 248.005,
+     "end": 248.085
+    },
+    {
+     "text": "spreadsheet.",
+     "start": 248.085,
+     "end": 248.266
+    }
+   ]
+  },
+  {
+   "id": "n10",
+   "text": "Somebody at a store literally gets paid to pick the nine. Imagine telling your mom that's your job.",
+   "start": 249.12854166666668,
+   "end": 253.46854166666668,
+   "words": [
+    {
+     "text": "Somebody",
+     "start": 249.129,
+     "end": 249.369
+    },
+    {
+     "text": "at",
+     "start": 249.369,
+     "end": 249.529
+    },
+    {
+     "text": "a",
+     "start": 249.529,
+     "end": 249.609
+    },
+    {
+     "text": "store",
+     "start": 249.609,
+     "end": 249.829
+    },
+    {
+     "text": "literally",
+     "start": 249.829,
+     "end": 250.169
+    },
+    {
+     "text": "gets",
+     "start": 250.169,
+     "end": 250.569
+    },
+    {
+     "text": "paid",
+     "start": 250.569,
+     "end": 250.809
+    },
+    {
+     "text": "to",
+     "start": 250.809,
+     "end": 251.029
+    },
+    {
+     "text": "pick",
+     "start": 251.029,
+     "end": 251.169
+    },
+    {
+     "text": "the",
+     "start": 251.169,
+     "end": 251.329
+    },
+    {
+     "text": "nine.",
+     "start": 251.329,
+     "end": 251.549
+    },
+    {
+     "text": "Imagine",
+     "start": 251.909,
+     "end": 252.129
+    },
+    {
+     "text": "telling",
+     "start": 252.129,
+     "end": 252.489
+    },
+    {
+     "text": "your",
+     "start": 252.489,
+     "end": 252.689
+    },
+    {
+     "text": "mom",
+     "start": 252.689,
+     "end": 252.849
+    },
+    {
+     "text": "that's",
+     "start": 252.849,
+     "end": 253.169
+    },
+    {
+     "text": "your",
+     "start": 253.169,
+     "end": 253.249
+    },
+    {
+     "text": "job.",
+     "start": 253.249,
+     "end": 253.469
+    }
+   ]
+  },
+  {
+   "id": "c5c",
+   "text": "Economists checked eight years of prices from a big supermarket. Nine was the most common last digit of all.",
+   "start": 254.179625,
+   "end": 259.839625,
+   "words": [
+    {
+     "text": "Economists",
+     "start": 254.18,
+     "end": 254.7
+    },
+    {
+     "text": "checked",
+     "start": 254.7,
+     "end": 254.96
+    },
+    {
+     "text": "eight",
+     "start": 254.96,
+     "end": 255.3
+    },
+    {
+     "text": "years",
+     "start": 255.3,
+     "end": 255.52
+    },
+    {
+     "text": "of",
+     "start": 255.52,
+     "end": 255.68
+    },
+    {
+     "text": "prices",
+     "start": 255.68,
+     "end": 255.86
+    },
+    {
+     "text": "from",
+     "start": 255.86,
+     "end": 256.28
+    },
+    {
+     "text": "a",
+     "start": 256.28,
+     "end": 256.34
+    },
+    {
+     "text": "big",
+     "start": 256.34,
+     "end": 256.5
+    },
+    {
+     "text": "supermarket.",
+     "start": 256.5,
+     "end": 256.9
+    },
+    {
+     "text": "Nine",
+     "start": 257.66,
+     "end": 257.92
+    },
+    {
+     "text": "was",
+     "start": 258.22,
+     "end": 258.24
+    },
+    {
+     "text": "the",
+     "start": 258.24,
+     "end": 258.38
+    },
+    {
+     "text": "most",
+     "start": 258.38,
+     "end": 258.52
+    },
+    {
+     "text": "common",
+     "start": 258.52,
+     "end": 258.82
+    },
+    {
+     "text": "last",
+     "start": 258.82,
+     "end": 259.12
+    },
+    {
+     "text": "digit",
+     "start": 259.12,
+     "end": 259.44
+    },
+    {
+     "text": "of",
+     "start": 259.44,
+     "end": 259.66
+    },
+    {
+     "text": "all.",
+     "start": 259.66,
+     "end": 259.84
+    }
+   ]
+  },
+  {
+   "id": "c5d",
+   "text": "And here's your answer. A researcher tracked thousands of products in twenty five store chains. When a price goes from four ninety nine to five dollars shoppers react like it went up about twenty cents.",
+   "start": 260.4968125,
+   "end": 269.4458125,
+   "words": [
+    {
+     "text": "And",
+     "start": 260.497,
+     "end": 260.656
+    },
+    {
+     "text": "here's",
+     "start": 260.674,
+     "end": 260.953
+    },
+    {
+     "text": "your",
+     "start": 260.984,
+     "end": 261.183
+    },
+    {
+     "text": "answer.",
+     "start": 261.205,
+     "end": 261.523
+    },
+    {
+     "text": "A",
+     "start": 261.559,
+     "end": 261.638
+    },
+    {
+     "text": "researcher",
+     "start": 261.647,
+     "end": 262.085
+    },
+    {
+     "text": "tracked",
+     "start": 262.134,
+     "end": 262.452
+    },
+    {
+     "text": "thousands",
+     "start": 262.488,
+     "end": 262.886
+    },
+    {
+     "text": "of",
+     "start": 262.93,
+     "end": 263.049
+    },
+    {
+     "text": "products",
+     "start": 263.063,
+     "end": 263.421
+    },
+    {
+     "text": "in",
+     "start": 263.461,
+     "end": 263.58
+    },
+    {
+     "text": "twenty",
+     "start": 263.594,
+     "end": 263.872
+    },
+    {
+     "text": "five",
+     "start": 263.903,
+     "end": 264.102
+    },
+    {
+     "text": "store",
+     "start": 264.124,
+     "end": 264.363
+    },
+    {
+     "text": "chains.",
+     "start": 264.39,
+     "end": 264.708
+    },
+    {
+     "text": "When",
+     "start": 264.744,
+     "end": 264.943
+    },
+    {
+     "text": "a",
+     "start": 264.965,
+     "end": 265.045
+    },
+    {
+     "text": "price",
+     "start": 265.053,
+     "end": 265.292
+    },
+    {
+     "text": "goes",
+     "start": 265.319,
+     "end": 265.518
+    },
+    {
+     "text": "from",
+     "start": 265.54,
+     "end": 265.739
+    },
+    {
+     "text": "four",
+     "start": 265.761,
+     "end": 265.96
+    },
+    {
+     "text": "ninety",
+     "start": 265.982,
+     "end": 266.261
+    },
+    {
+     "text": "nine",
+     "start": 266.292,
+     "end": 266.491
+    },
+    {
+     "text": "to",
+     "start": 266.513,
+     "end": 266.633
+    },
+    {
+     "text": "five",
+     "start": 266.646,
+     "end": 266.845
+    },
+    {
+     "text": "dollars",
+     "start": 266.867,
+     "end": 267.186
+    },
+    {
+     "text": "shoppers",
+     "start": 267.221,
+     "end": 267.579
+    },
+    {
+     "text": "react",
+     "start": 267.619,
+     "end": 267.858
+    },
+    {
+     "text": "like",
+     "start": 267.884,
+     "end": 268.084
+    },
+    {
+     "text": "it",
+     "start": 268.106,
+     "end": 268.225
+    },
+    {
+     "text": "went",
+     "start": 268.238,
+     "end": 268.437
+    },
+    {
+     "text": "up",
+     "start": 268.46,
+     "end": 268.579
+    },
+    {
+     "text": "about",
+     "start": 268.592,
+     "end": 268.831
+    },
+    {
+     "text": "twenty",
+     "start": 268.858,
+     "end": 269.136
+    },
+    {
+     "text": "cents.",
+     "start": 269.167,
+     "end": 269.446
+    }
+   ]
+  },
+  {
+   "id": "c5e",
+   "text": "One penny hits your brain like twenty of them. So a store that knocks off one cent gets treated like it gave you a real discount.",
+   "start": 270.2302291666667,
+   "end": 275.3502291666667,
+   "words": [
+    {
+     "text": "One",
+     "start": 270.23,
+     "end": 270.41
+    },
+    {
+     "text": "penny",
+     "start": 270.41,
+     "end": 270.59
+    },
+    {
+     "text": "hits",
+     "start": 270.59,
+     "end": 270.81
+    },
+    {
+     "text": "your",
+     "start": 270.81,
+     "end": 270.95
+    },
+    {
+     "text": "brain",
+     "start": 270.95,
+     "end": 271.11
+    },
+    {
+     "text": "like",
+     "start": 271.11,
+     "end": 271.31
+    },
+    {
+     "text": "twenty",
+     "start": 271.31,
+     "end": 271.53
+    },
+    {
+     "text": "of",
+     "start": 271.53,
+     "end": 271.73
+    },
+    {
+     "text": "them.",
+     "start": 271.73,
+     "end": 271.87
+    },
+    {
+     "text": "So",
+     "start": 272.23,
+     "end": 272.39
+    },
+    {
+     "text": "a",
+     "start": 272.39,
+     "end": 272.49
+    },
+    {
+     "text": "store",
+     "start": 272.49,
+     "end": 272.67
+    },
+    {
+     "text": "that",
+     "start": 272.67,
+     "end": 272.83
+    },
+    {
+     "text": "knocks",
+     "start": 272.83,
+     "end": 272.95
+    },
+    {
+     "text": "off",
+     "start": 272.95,
+     "end": 273.21
+    },
+    {
+     "text": "one",
+     "start": 273.21,
+     "end": 273.39
+    },
+    {
+     "text": "cent",
+     "start": 273.39,
+     "end": 273.67
+    },
+    {
+     "text": "gets",
+     "start": 273.67,
+     "end": 273.91
+    },
+    {
+     "text": "treated",
+     "start": 273.91,
+     "end": 274.19
+    },
+    {
+     "text": "like",
+     "start": 274.19,
+     "end": 274.43
+    },
+    {
+     "text": "it",
+     "start": 274.43,
+     "end": 274.55
+    },
+    {
+     "text": "gave",
+     "start": 274.55,
+     "end": 274.69
+    },
+    {
+     "text": "you",
+     "start": 274.69,
+     "end": 274.85
+    },
+    {
+     "text": "a",
+     "start": 274.85,
+     "end": 274.93
+    },
+    {
+     "text": "real",
+     "start": 274.93,
+     "end": 275.09
+    },
+    {
+     "text": "discount.",
+     "start": 275.09,
+     "end": 275.35
+    }
+   ]
+  },
+  {
+   "id": "n11",
+   "text": "Stores finding out one cent feels like twenty.",
+   "start": 276.207625,
+   "end": 278.207625,
+   "words": [
+    {
+     "text": "Stores",
+     "start": 276.208,
+     "end": 276.428
+    },
+    {
+     "text": "finding",
+     "start": 276.428,
+     "end": 276.668
+    },
+    {
+     "text": "out",
+     "start": 276.668,
+     "end": 276.888
+    },
+    {
+     "text": "one",
+     "start": 276.888,
+     "end": 277.068
+    },
+    {
+     "text": "cent",
+     "start": 277.068,
+     "end": 277.368
+    },
+    {
+     "text": "feels",
+     "start": 277.368,
+     "end": 277.748
+    },
+    {
+     "text": "like",
+     "start": 277.748,
+     "end": 277.968
+    },
+    {
+     "text": "twenty.",
+     "start": 277.968,
+     "end": 278.208
+    }
+   ]
+  },
+  {
+   "id": "c5f",
+   "text": "Want proof it prints money? Economists ran a test on twenty one million riders of the ride app Lyft.",
+   "start": 278.81475,
+   "end": 283.30775,
+   "words": [
+    {
+     "text": "Want",
+     "start": 278.815,
+     "end": 279.016
+    },
+    {
+     "text": "proof",
+     "start": 279.039,
+     "end": 279.28
+    },
+    {
+     "text": "it",
+     "start": 279.307,
+     "end": 279.428
+    },
+    {
+     "text": "prints",
+     "start": 279.442,
+     "end": 279.723
+    },
+    {
+     "text": "money?",
+     "start": 279.755,
+     "end": 280.037
+    },
+    {
+     "text": "Economists",
+     "start": 280.068,
+     "end": 280.511
+    },
+    {
+     "text": "ran",
+     "start": 280.56,
+     "end": 280.721
+    },
+    {
+     "text": "a",
+     "start": 280.739,
+     "end": 280.82
+    },
+    {
+     "text": "test",
+     "start": 280.829,
+     "end": 281.03
+    },
+    {
+     "text": "on",
+     "start": 281.053,
+     "end": 281.173
+    },
+    {
+     "text": "twenty",
+     "start": 281.187,
+     "end": 281.469
+    },
+    {
+     "text": "one",
+     "start": 281.5,
+     "end": 281.661
+    },
+    {
+     "text": "million",
+     "start": 281.679,
+     "end": 282.001
+    },
+    {
+     "text": "riders",
+     "start": 282.037,
+     "end": 282.319
+    },
+    {
+     "text": "of",
+     "start": 282.35,
+     "end": 282.471
+    },
+    {
+     "text": "the",
+     "start": 282.485,
+     "end": 282.646
+    },
+    {
+     "text": "ride",
+     "start": 282.664,
+     "end": 282.865
+    },
+    {
+     "text": "app",
+     "start": 282.887,
+     "end": 283.049
+    },
+    {
+     "text": "Lyft.",
+     "start": 283.066,
+     "end": 283.308
+    }
+   ]
+  },
+  {
+   "id": "c5g",
+   "text": "About half of everything a cheaper fare did happened at the moment the price slipped under a round dollar. Worth around one hundred sixty million dollars a year to them.",
+   "start": 284.0240625,
+   "end": 291.2190625,
+   "words": [
+    {
+     "text": "About",
+     "start": 284.024,
+     "end": 284.253
+    },
+    {
+     "text": "half",
+     "start": 284.279,
+     "end": 284.47
+    },
+    {
+     "text": "of",
+     "start": 284.491,
+     "end": 284.606
+    },
+    {
+     "text": "everything",
+     "start": 284.619,
+     "end": 285.039
+    },
+    {
+     "text": "a",
+     "start": 285.086,
+     "end": 285.162
+    },
+    {
+     "text": "cheaper",
+     "start": 285.171,
+     "end": 285.476
+    },
+    {
+     "text": "fare",
+     "start": 285.51,
+     "end": 285.702
+    },
+    {
+     "text": "did",
+     "start": 285.723,
+     "end": 285.876
+    },
+    {
+     "text": "happened",
+     "start": 285.893,
+     "end": 286.237
+    },
+    {
+     "text": "at",
+     "start": 286.275,
+     "end": 286.39
+    },
+    {
+     "text": "the",
+     "start": 286.402,
+     "end": 286.555
+    },
+    {
+     "text": "moment",
+     "start": 286.572,
+     "end": 286.84
+    },
+    {
+     "text": "the",
+     "start": 286.87,
+     "end": 287.022
+    },
+    {
+     "text": "price",
+     "start": 287.039,
+     "end": 287.269
+    },
+    {
+     "text": "slipped",
+     "start": 287.294,
+     "end": 287.6
+    },
+    {
+     "text": "under",
+     "start": 287.634,
+     "end": 287.863
+    },
+    {
+     "text": "a",
+     "start": 287.889,
+     "end": 287.965
+    },
+    {
+     "text": "round",
+     "start": 287.974,
+     "end": 288.203
+    },
+    {
+     "text": "dollar.",
+     "start": 288.229,
+     "end": 288.534
+    },
+    {
+     "text": "Worth",
+     "start": 288.568,
+     "end": 288.798
+    },
+    {
+     "text": "around",
+     "start": 288.823,
+     "end": 289.091
+    },
+    {
+     "text": "one",
+     "start": 289.12,
+     "end": 289.273
+    },
+    {
+     "text": "hundred",
+     "start": 289.29,
+     "end": 289.596
+    },
+    {
+     "text": "sixty",
+     "start": 289.63,
+     "end": 289.859
+    },
+    {
+     "text": "million",
+     "start": 289.885,
+     "end": 290.191
+    },
+    {
+     "text": "dollars",
+     "start": 290.225,
+     "end": 290.53
+    },
+    {
+     "text": "a",
+     "start": 290.564,
+     "end": 290.641
+    },
+    {
+     "text": "year",
+     "start": 290.649,
+     "end": 290.841
+    },
+    {
+     "text": "to",
+     "start": 290.862,
+     "end": 290.976
+    },
+    {
+     "text": "them.",
+     "start": 290.989,
+     "end": 291.219
+    }
+   ]
+  },
+  {
+   "id": "c5h",
+   "text": "So who wins? Not one evil guy in a tower. A quiet office with a spreadsheet. Using a glitch inside your own head.",
+   "start": 291.81941666666665,
+   "end": 297.69941666666665,
+   "words": [
+    {
+     "text": "So",
+     "start": 291.819,
+     "end": 291.939
+    },
+    {
+     "text": "who",
+     "start": 291.939,
+     "end": 292.099
+    },
+    {
+     "text": "wins?",
+     "start": 292.099,
+     "end": 292.319
+    },
+    {
+     "text": "Not",
+     "start": 292.719,
+     "end": 292.879
+    },
+    {
+     "text": "one",
+     "start": 292.879,
+     "end": 293.059
+    },
+    {
+     "text": "evil",
+     "start": 293.059,
+     "end": 293.279
+    },
+    {
+     "text": "guy",
+     "start": 293.279,
+     "end": 293.539
+    },
+    {
+     "text": "in",
+     "start": 293.539,
+     "end": 293.699
+    },
+    {
+     "text": "a",
+     "start": 293.699,
+     "end": 293.759
+    },
+    {
+     "text": "tower.",
+     "start": 293.759,
+     "end": 294.019
+    },
+    {
+     "text": "A",
+     "start": 294.619,
+     "end": 294.619
+    },
+    {
+     "text": "quiet",
+     "start": 294.619,
+     "end": 294.799
+    },
+    {
+     "text": "office",
+     "start": 294.799,
+     "end": 295.179
+    },
+    {
+     "text": "with",
+     "start": 295.179,
+     "end": 295.399
+    },
+    {
+     "text": "a",
+     "start": 295.399,
+     "end": 295.499
+    },
+    {
+     "text": "spreadsheet.",
+     "start": 295.499,
+     "end": 295.819
+    },
+    {
+     "text": "Using",
+     "start": 295.819,
+     "end": 296.299
+    },
+    {
+     "text": "a",
+     "start": 296.299,
+     "end": 296.519
+    },
+    {
+     "text": "glitch",
+     "start": 296.519,
+     "end": 296.679
+    },
+    {
+     "text": "inside",
+     "start": 296.679,
+     "end": 296.959
+    },
+    {
+     "text": "your",
+     "start": 296.959,
+     "end": 297.319
+    },
+    {
+     "text": "own",
+     "start": 297.319,
+     "end": 297.479
+    },
+    {
+     "text": "head.",
+     "start": 297.479,
+     "end": 297.699
+    }
+   ]
+  },
+  {
+   "id": "n19",
+   "text": "Think about how many prices you see in one week. Groceries and gas and apps and rent and that little snack at the counter. Every single one gets the same tiny haircut in your head.",
+   "start": 298.29475,
+   "end": 306.29475,
+   "words": [
+    {
+     "text": "Think",
+     "start": 298.295,
+     "end": 298.375
+    },
+    {
+     "text": "about",
+     "start": 298.375,
+     "end": 298.495
+    },
+    {
+     "text": "how",
+     "start": 298.495,
+     "end": 298.715
+    },
+    {
+     "text": "many",
+     "start": 298.715,
+     "end": 298.815
+    },
+    {
+     "text": "prices",
+     "start": 298.815,
+     "end": 299.095
+    },
+    {
+     "text": "you",
+     "start": 299.095,
+     "end": 299.375
+    },
+    {
+     "text": "see",
+     "start": 299.375,
+     "end": 299.575
+    },
+    {
+     "text": "in",
+     "start": 299.575,
+     "end": 299.795
+    },
+    {
+     "text": "one",
+     "start": 299.795,
+     "end": 299.935
+    },
+    {
+     "text": "week.",
+     "start": 299.935,
+     "end": 300.215
+    },
+    {
+     "text": "Groceries",
+     "start": 300.675,
+     "end": 300.975
+    },
+    {
+     "text": "and",
+     "start": 300.975,
+     "end": 301.075
+    },
+    {
+     "text": "gas",
+     "start": 301.075,
+     "end": 301.235
+    },
+    {
+     "text": "and",
+     "start": 301.235,
+     "end": 301.535
+    },
+    {
+     "text": "apps",
+     "start": 301.535,
+     "end": 301.695
+    },
+    {
+     "text": "and",
+     "start": 301.695,
+     "end": 301.895
+    },
+    {
+     "text": "rent",
+     "start": 301.895,
+     "end": 302.055
+    },
+    {
+     "text": "and",
+     "start": 302.055,
+     "end": 302.295
+    },
+    {
+     "text": "that",
+     "start": 302.295,
+     "end": 302.415
+    },
+    {
+     "text": "little",
+     "start": 302.415,
+     "end": 302.535
+    },
+    {
+     "text": "snack",
+     "start": 302.535,
+     "end": 302.815
+    },
+    {
+     "text": "at",
+     "start": 302.815,
+     "end": 303.015
+    },
+    {
+     "text": "the",
+     "start": 303.015,
+     "end": 303.095
+    },
+    {
+     "text": "counter.",
+     "start": 303.095,
+     "end": 303.375
+    },
+    {
+     "text": "Every",
+     "start": 303.915,
+     "end": 304.035
+    },
+    {
+     "text": "single",
+     "start": 304.035,
+     "end": 304.295
+    },
+    {
+     "text": "one",
+     "start": 304.295,
+     "end": 304.615
+    },
+    {
+     "text": "gets",
+     "start": 304.615,
+     "end": 304.835
+    },
+    {
+     "text": "the",
+     "start": 304.835,
+     "end": 305.015
+    },
+    {
+     "text": "same",
+     "start": 305.015,
+     "end": 305.215
+    },
+    {
+     "text": "tiny",
+     "start": 305.215,
+     "end": 305.415
+    },
+    {
+     "text": "haircut",
+     "start": 305.415,
+     "end": 305.675
+    },
+    {
+     "text": "in",
+     "start": 305.675,
+     "end": 305.975
+    },
+    {
+     "text": "your",
+     "start": 305.975,
+     "end": 306.075
+    },
+    {
+     "text": "head.",
+     "start": 306.075,
+     "end": 306.295
+    }
+   ]
+  },
+  {
+   "id": "c6a",
+   "text": "And if you think one cent is the smallest thing they'd shave off wait until you look at a gas station sign.",
+   "start": 306.92389583333335,
+   "end": 311.84389583333336,
+   "words": [
+    {
+     "text": "And",
+     "start": 306.924,
+     "end": 307.044
+    },
+    {
+     "text": "if",
+     "start": 307.044,
+     "end": 307.164
+    },
+    {
+     "text": "you",
+     "start": 307.164,
+     "end": 307.244
+    },
+    {
+     "text": "think",
+     "start": 307.244,
+     "end": 307.404
+    },
+    {
+     "text": "one",
+     "start": 307.404,
+     "end": 307.664
+    },
+    {
+     "text": "cent",
+     "start": 307.664,
+     "end": 307.944
+    },
+    {
+     "text": "is",
+     "start": 307.944,
+     "end": 308.184
+    },
+    {
+     "text": "the",
+     "start": 308.184,
+     "end": 308.304
+    },
+    {
+     "text": "smallest",
+     "start": 308.304,
+     "end": 308.564
+    },
+    {
+     "text": "thing",
+     "start": 308.564,
+     "end": 308.924
+    },
+    {
+     "text": "they'd",
+     "start": 308.924,
+     "end": 309.284
+    },
+    {
+     "text": "shave",
+     "start": 309.284,
+     "end": 309.404
+    },
+    {
+     "text": "off",
+     "start": 309.404,
+     "end": 309.784
+    },
+    {
+     "text": "wait",
+     "start": 310.264,
+     "end": 310.464
+    },
+    {
+     "text": "until",
+     "start": 310.464,
+     "end": 310.644
+    },
+    {
+     "text": "you",
+     "start": 310.644,
+     "end": 310.824
+    },
+    {
+     "text": "look",
+     "start": 310.824,
+     "end": 310.964
+    },
+    {
+     "text": "at",
+     "start": 310.964,
+     "end": 311.084
+    },
+    {
+     "text": "a",
+     "start": 311.084,
+     "end": 311.104
+    },
+    {
+     "text": "gas",
+     "start": 311.104,
+     "end": 311.224
+    },
+    {
+     "text": "station",
+     "start": 311.224,
+     "end": 311.604
+    },
+    {
+     "text": "sign.",
+     "start": 311.604,
+     "end": 311.844
+    }
+   ]
+  },
+  {
+   "id": "c6b",
+   "text": "See the tiny number next to the price? That's nine tenths of a cent. There's no coin in your pocket for that.",
+   "start": 312.6024791666667,
+   "end": 317.0584791666667,
+   "words": [
+    {
+     "text": "See",
+     "start": 312.602,
+     "end": 312.749
+    },
+    {
+     "text": "the",
+     "start": 312.765,
+     "end": 312.912
+    },
+    {
+     "text": "tiny",
+     "start": 312.928,
+     "end": 313.111
+    },
+    {
+     "text": "number",
+     "start": 313.131,
+     "end": 313.388
+    },
+    {
+     "text": "next",
+     "start": 313.417,
+     "end": 313.6
+    },
+    {
+     "text": "to",
+     "start": 313.62,
+     "end": 313.73
+    },
+    {
+     "text": "the",
+     "start": 313.742,
+     "end": 313.889
+    },
+    {
+     "text": "price?",
+     "start": 313.905,
+     "end": 314.162
+    },
+    {
+     "text": "That's",
+     "start": 314.19,
+     "end": 314.447
+    },
+    {
+     "text": "nine",
+     "start": 314.475,
+     "end": 314.659
+    },
+    {
+     "text": "tenths",
+     "start": 314.679,
+     "end": 314.936
+    },
+    {
+     "text": "of",
+     "start": 314.964,
+     "end": 315.074
+    },
+    {
+     "text": "a",
+     "start": 315.086,
+     "end": 315.16
+    },
+    {
+     "text": "cent.",
+     "start": 315.168,
+     "end": 315.388
+    },
+    {
+     "text": "There's",
+     "start": 315.412,
+     "end": 315.705
+    },
+    {
+     "text": "no",
+     "start": 315.738,
+     "end": 315.848
+    },
+    {
+     "text": "coin",
+     "start": 315.86,
+     "end": 316.043
+    },
+    {
+     "text": "in",
+     "start": 316.064,
+     "end": 316.174
+    },
+    {
+     "text": "your",
+     "start": 316.186,
+     "end": 316.369
+    },
+    {
+     "text": "pocket",
+     "start": 316.39,
+     "end": 316.646
+    },
+    {
+     "text": "for",
+     "start": 316.675,
+     "end": 316.821
+    },
+    {
+     "text": "that.",
+     "start": 316.838,
+     "end": 317.058
+    }
+   ]
+  },
+  {
+   "id": "c6c",
+   "text": "It started in the nineteen thirties when gas taxes came in slivers of a cent. The taxes changed. The nine tenths never left.",
+   "start": 317.60245833333335,
+   "end": 324.3104583333334,
+   "words": [
+    {
+     "text": "It",
+     "start": 317.602,
+     "end": 317.748
+    },
+    {
+     "text": "started",
+     "start": 317.764,
+     "end": 318.152
+    },
+    {
+     "text": "in",
+     "start": 318.195,
+     "end": 318.341
+    },
+    {
+     "text": "the",
+     "start": 318.357,
+     "end": 318.551
+    },
+    {
+     "text": "nineteen",
+     "start": 318.573,
+     "end": 319.009
+    },
+    {
+     "text": "thirties",
+     "start": 319.058,
+     "end": 319.495
+    },
+    {
+     "text": "when",
+     "start": 319.543,
+     "end": 319.786
+    },
+    {
+     "text": "gas",
+     "start": 319.813,
+     "end": 320.007
+    },
+    {
+     "text": "taxes",
+     "start": 320.028,
+     "end": 320.32
+    },
+    {
+     "text": "came",
+     "start": 320.352,
+     "end": 320.595
+    },
+    {
+     "text": "in",
+     "start": 320.622,
+     "end": 320.767
+    },
+    {
+     "text": "slivers",
+     "start": 320.783,
+     "end": 321.172
+    },
+    {
+     "text": "of",
+     "start": 321.215,
+     "end": 321.36
+    },
+    {
+     "text": "a",
+     "start": 321.376,
+     "end": 321.473
+    },
+    {
+     "text": "cent.",
+     "start": 321.484,
+     "end": 321.775
+    },
+    {
+     "text": "The",
+     "start": 321.808,
+     "end": 322.002
+    },
+    {
+     "text": "taxes",
+     "start": 322.023,
+     "end": 322.315
+    },
+    {
+     "text": "changed.",
+     "start": 322.347,
+     "end": 322.784
+    },
+    {
+     "text": "The",
+     "start": 322.832,
+     "end": 323.026
+    },
+    {
+     "text": "nine",
+     "start": 323.048,
+     "end": 323.291
+    },
+    {
+     "text": "tenths",
+     "start": 323.318,
+     "end": 323.657
+    },
+    {
+     "text": "never",
+     "start": 323.695,
+     "end": 323.986
+    },
+    {
+     "text": "left.",
+     "start": 324.018,
+     "end": 324.31
+    }
+   ]
+  },
+  {
+   "id": "c6d",
+   "text": "On one tank it's about a dime. But Americans burn so much gas that the invisible fraction adds up to more than a billion dollars a year.",
+   "start": 325.05935416666665,
+   "end": 331.01935416666663,
+   "words": [
+    {
+     "text": "On",
+     "start": 325.059,
+     "end": 325.179
+    },
+    {
+     "text": "one",
+     "start": 325.179,
+     "end": 325.319
+    },
+    {
+     "text": "tank",
+     "start": 325.319,
+     "end": 325.559
+    },
+    {
+     "text": "it's",
+     "start": 325.759,
+     "end": 325.819
+    },
+    {
+     "text": "about",
+     "start": 325.819,
+     "end": 325.979
+    },
+    {
+     "text": "a",
+     "start": 325.979,
+     "end": 326.099
+    },
+    {
+     "text": "dime.",
+     "start": 326.099,
+     "end": 326.299
+    },
+    {
+     "text": "But",
+     "start": 326.799,
+     "end": 326.899
+    },
+    {
+     "text": "Americans",
+     "start": 326.899,
+     "end": 327.099
+    },
+    {
+     "text": "burn",
+     "start": 327.099,
+     "end": 327.439
+    },
+    {
+     "text": "so",
+     "start": 327.439,
+     "end": 327.679
+    },
+    {
+     "text": "much",
+     "start": 327.679,
+     "end": 327.879
+    },
+    {
+     "text": "gas",
+     "start": 327.879,
+     "end": 328.119
+    },
+    {
+     "text": "that",
+     "start": 328.119,
+     "end": 328.419
+    },
+    {
+     "text": "the",
+     "start": 328.419,
+     "end": 328.519
+    },
+    {
+     "text": "invisible",
+     "start": 328.519,
+     "end": 328.659
+    },
+    {
+     "text": "fraction",
+     "start": 328.659,
+     "end": 329.079
+    },
+    {
+     "text": "adds",
+     "start": 329.079,
+     "end": 329.499
+    },
+    {
+     "text": "up",
+     "start": 329.499,
+     "end": 329.659
+    },
+    {
+     "text": "to",
+     "start": 329.659,
+     "end": 329.779
+    },
+    {
+     "text": "more",
+     "start": 329.779,
+     "end": 329.919
+    },
+    {
+     "text": "than",
+     "start": 329.919,
+     "end": 330.039
+    },
+    {
+     "text": "a",
+     "start": 330.039,
+     "end": 330.099
+    },
+    {
+     "text": "billion",
+     "start": 330.099,
+     "end": 330.339
+    },
+    {
+     "text": "dollars",
+     "start": 330.339,
+     "end": 330.699
+    },
+    {
+     "text": "a",
+     "start": 330.699,
+     "end": 330.859
+    },
+    {
+     "text": "year.",
+     "start": 330.859,
+     "end": 331.019
+    }
+   ]
+  },
+  {
+   "id": "n12",
+   "text": "Me paying for a coin that doesn't exist.",
+   "start": 331.66929166666665,
+   "end": 333.30929166666664,
+   "words": [
+    {
+     "text": "Me",
+     "start": 331.669,
+     "end": 331.869
+    },
+    {
+     "text": "paying",
+     "start": 331.869,
+     "end": 332.149
+    },
+    {
+     "text": "for",
+     "start": 332.149,
+     "end": 332.369
+    },
+    {
+     "text": "a",
+     "start": 332.369,
+     "end": 332.429
+    },
+    {
+     "text": "coin",
+     "start": 332.429,
+     "end": 332.629
+    },
+    {
+     "text": "that",
+     "start": 332.629,
+     "end": 332.809
+    },
+    {
+     "text": "doesn't",
+     "start": 332.809,
+     "end": 333.069
+    },
+    {
+     "text": "exist.",
+     "start": 333.069,
+     "end": 333.309
+    }
+   ]
+  },
+  {
+   "id": "c7a",
+   "text": "So I had one hopeful thought. If we all hate being tricked then a store that stops doing it should win. One huge company tried exactly that.",
+   "start": 336.2761875,
+   "end": 342.55618749999996,
+   "words": [
+    {
+     "text": "So",
+     "start": 336.276,
+     "end": 336.396
+    },
+    {
+     "text": "I",
+     "start": 336.396,
+     "end": 336.476
+    },
+    {
+     "text": "had",
+     "start": 336.476,
+     "end": 336.616
+    },
+    {
+     "text": "one",
+     "start": 336.616,
+     "end": 336.736
+    },
+    {
+     "text": "hopeful",
+     "start": 336.736,
+     "end": 336.976
+    },
+    {
+     "text": "thought.",
+     "start": 336.976,
+     "end": 337.276
+    },
+    {
+     "text": "If",
+     "start": 337.796,
+     "end": 337.836
+    },
+    {
+     "text": "we",
+     "start": 337.836,
+     "end": 337.936
+    },
+    {
+     "text": "all",
+     "start": 337.936,
+     "end": 338.056
+    },
+    {
+     "text": "hate",
+     "start": 338.056,
+     "end": 338.256
+    },
+    {
+     "text": "being",
+     "start": 338.256,
+     "end": 338.436
+    },
+    {
+     "text": "tricked",
+     "start": 338.436,
+     "end": 338.716
+    },
+    {
+     "text": "then",
+     "start": 339.016,
+     "end": 339.036
+    },
+    {
+     "text": "a",
+     "start": 339.036,
+     "end": 339.096
+    },
+    {
+     "text": "store",
+     "start": 339.096,
+     "end": 339.256
+    },
+    {
+     "text": "that",
+     "start": 339.256,
+     "end": 339.416
+    },
+    {
+     "text": "stops",
+     "start": 339.416,
+     "end": 339.716
+    },
+    {
+     "text": "doing",
+     "start": 339.716,
+     "end": 339.916
+    },
+    {
+     "text": "it",
+     "start": 339.916,
+     "end": 340.056
+    },
+    {
+     "text": "should",
+     "start": 340.056,
+     "end": 340.196
+    },
+    {
+     "text": "win.",
+     "start": 340.196,
+     "end": 340.416
+    },
+    {
+     "text": "One",
+     "start": 341.016,
+     "end": 341.116
+    },
+    {
+     "text": "huge",
+     "start": 341.116,
+     "end": 341.336
+    },
+    {
+     "text": "company",
+     "start": 341.336,
+     "end": 341.616
+    },
+    {
+     "text": "tried",
+     "start": 341.616,
+     "end": 341.896
+    },
+    {
+     "text": "exactly",
+     "start": 341.896,
+     "end": 342.136
+    },
+    {
+     "text": "that.",
+     "start": 342.136,
+     "end": 342.556
+    }
+   ]
+  },
+  {
+   "id": "c7b",
+   "text": "In twenty eleven J C Penney hired a new boss. Ron Johnson. The guy who built the Apple Store.",
+   "start": 343.105125,
+   "end": 347.90912499999996,
+   "words": [
+    {
+     "text": "In",
+     "start": 343.105,
+     "end": 343.244
+    },
+    {
+     "text": "twenty",
+     "start": 343.259,
+     "end": 343.584
+    },
+    {
+     "text": "eleven",
+     "start": 343.62,
+     "end": 343.944
+    },
+    {
+     "text": "J",
+     "start": 343.98,
+     "end": 344.073
+    },
+    {
+     "text": "C",
+     "start": 344.083,
+     "end": 344.176
+    },
+    {
+     "text": "Penney",
+     "start": 344.186,
+     "end": 344.511
+    },
+    {
+     "text": "hired",
+     "start": 344.547,
+     "end": 344.825
+    },
+    {
+     "text": "a",
+     "start": 344.856,
+     "end": 344.948
+    },
+    {
+     "text": "new",
+     "start": 344.959,
+     "end": 345.144
+    },
+    {
+     "text": "boss.",
+     "start": 345.165,
+     "end": 345.443
+    },
+    {
+     "text": "Ron",
+     "start": 345.474,
+     "end": 345.659
+    },
+    {
+     "text": "Johnson.",
+     "start": 345.679,
+     "end": 346.097
+    },
+    {
+     "text": "The",
+     "start": 346.143,
+     "end": 346.328
+    },
+    {
+     "text": "guy",
+     "start": 346.349,
+     "end": 346.534
+    },
+    {
+     "text": "who",
+     "start": 346.555,
+     "end": 346.74
+    },
+    {
+     "text": "built",
+     "start": 346.761,
+     "end": 347.039
+    },
+    {
+     "text": "the",
+     "start": 347.07,
+     "end": 347.255
+    },
+    {
+     "text": "Apple",
+     "start": 347.276,
+     "end": 347.554
+    },
+    {
+     "text": "Store.",
+     "start": 347.585,
+     "end": 347.909
+    }
+   ]
+  },
+  {
+   "id": "c7c",
+   "text": "His new company was running five hundred ninety different sales in a single year. So he cut the sales. Killed the coupons. And every price ended in a nice honest zero.",
+   "start": 348.586125,
+   "end": 356.49812499999996,
+   "words": [
+    {
+     "text": "His",
+     "start": 348.586,
+     "end": 348.756
+    },
+    {
+     "text": "new",
+     "start": 348.775,
+     "end": 348.945
+    },
+    {
+     "text": "company",
+     "start": 348.964,
+     "end": 349.304
+    },
+    {
+     "text": "was",
+     "start": 349.342,
+     "end": 349.512
+    },
+    {
+     "text": "running",
+     "start": 349.531,
+     "end": 349.872
+    },
+    {
+     "text": "five",
+     "start": 349.909,
+     "end": 350.122
+    },
+    {
+     "text": "hundred",
+     "start": 350.146,
+     "end": 350.486
+    },
+    {
+     "text": "ninety",
+     "start": 350.524,
+     "end": 350.821
+    },
+    {
+     "text": "different",
+     "start": 350.855,
+     "end": 351.28
+    },
+    {
+     "text": "sales",
+     "start": 351.327,
+     "end": 351.582
+    },
+    {
+     "text": "in",
+     "start": 351.611,
+     "end": 351.738
+    },
+    {
+     "text": "a",
+     "start": 351.753,
+     "end": 351.838
+    },
+    {
+     "text": "single",
+     "start": 351.847,
+     "end": 352.145
+    },
+    {
+     "text": "year.",
+     "start": 352.178,
+     "end": 352.433
+    },
+    {
+     "text": "So",
+     "start": 352.461,
+     "end": 352.589
+    },
+    {
+     "text": "he",
+     "start": 352.603,
+     "end": 352.731
+    },
+    {
+     "text": "cut",
+     "start": 352.745,
+     "end": 352.915
+    },
+    {
+     "text": "the",
+     "start": 352.934,
+     "end": 353.104
+    },
+    {
+     "text": "sales.",
+     "start": 353.123,
+     "end": 353.421
+    },
+    {
+     "text": "Killed",
+     "start": 353.454,
+     "end": 353.752
+    },
+    {
+     "text": "the",
+     "start": 353.785,
+     "end": 353.955
+    },
+    {
+     "text": "coupons.",
+     "start": 353.974,
+     "end": 354.357
+    },
+    {
+     "text": "And",
+     "start": 354.399,
+     "end": 354.569
+    },
+    {
+     "text": "every",
+     "start": 354.588,
+     "end": 354.843
+    },
+    {
+     "text": "price",
+     "start": 354.872,
+     "end": 355.127
+    },
+    {
+     "text": "ended",
+     "start": 355.155,
+     "end": 355.411
+    },
+    {
+     "text": "in",
+     "start": 355.439,
+     "end": 355.567
+    },
+    {
+     "text": "a",
+     "start": 355.581,
+     "end": 355.666
+    },
+    {
+     "text": "nice",
+     "start": 355.675,
+     "end": 355.888
+    },
+    {
+     "text": "honest",
+     "start": 355.912,
+     "end": 356.209
+    },
+    {
+     "text": "zero.",
+     "start": 356.242,
+     "end": 356.498
+    }
+   ]
+  },
+  {
+   "id": "c7d",
+   "text": "Be honest with me. You'd love a store like that. Right?",
+   "start": 357.26979166666666,
+   "end": 359.78979166666664,
+   "words": [
+    {
+     "text": "Be",
+     "start": 357.27,
+     "end": 357.35
+    },
+    {
+     "text": "honest",
+     "start": 357.35,
+     "end": 357.63
+    },
+    {
+     "text": "with",
+     "start": 357.63,
+     "end": 357.89
+    },
+    {
+     "text": "me.",
+     "start": 357.89,
+     "end": 358.07
+    },
+    {
+     "text": "You'd",
+     "start": 358.25,
+     "end": 358.47
+    },
+    {
+     "text": "love",
+     "start": 358.47,
+     "end": 358.59
+    },
+    {
+     "text": "a",
+     "start": 358.59,
+     "end": 358.71
+    },
+    {
+     "text": "store",
+     "start": 358.71,
+     "end": 358.91
+    },
+    {
+     "text": "like",
+     "start": 358.91,
+     "end": 359.13
+    },
+    {
+     "text": "that.",
+     "start": 359.13,
+     "end": 359.35
+    },
+    {
+     "text": "Right?",
+     "start": 359.63,
+     "end": 359.79
+    }
+   ]
+  },
+  {
+   "id": "c7e",
+   "text": "Shoppers walked away. Sales fell by about four billion dollars in one year. A quarter of the whole business.",
+   "start": 360.4862708333333,
+   "end": 365.2662708333333,
+   "words": [
+    {
+     "text": "Shoppers",
+     "start": 360.486,
+     "end": 360.706
+    },
+    {
+     "text": "walked",
+     "start": 360.706,
+     "end": 360.966
+    },
+    {
+     "text": "away.",
+     "start": 360.966,
+     "end": 361.286
+    },
+    {
+     "text": "Sales",
+     "start": 361.666,
+     "end": 361.846
+    },
+    {
+     "text": "fell",
+     "start": 361.846,
+     "end": 362.126
+    },
+    {
+     "text": "by",
+     "start": 362.126,
+     "end": 362.346
+    },
+    {
+     "text": "about",
+     "start": 362.346,
+     "end": 362.486
+    },
+    {
+     "text": "four",
+     "start": 362.486,
+     "end": 362.786
+    },
+    {
+     "text": "billion",
+     "start": 362.786,
+     "end": 363.006
+    },
+    {
+     "text": "dollars",
+     "start": 363.006,
+     "end": 363.466
+    },
+    {
+     "text": "in",
+     "start": 363.466,
+     "end": 363.646
+    },
+    {
+     "text": "one",
+     "start": 363.646,
+     "end": 363.806
+    },
+    {
+     "text": "year.",
+     "start": 363.806,
+     "end": 364.026
+    },
+    {
+     "text": "A",
+     "start": 364.286,
+     "end": 364.326
+    },
+    {
+     "text": "quarter",
+     "start": 364.326,
+     "end": 364.546
+    },
+    {
+     "text": "of",
+     "start": 364.546,
+     "end": 364.746
+    },
+    {
+     "text": "the",
+     "start": 364.746,
+     "end": 364.826
+    },
+    {
+     "text": "whole",
+     "start": 364.826,
+     "end": 364.926
+    },
+    {
+     "text": "business.",
+     "start": 364.926,
+     "end": 365.266
+    }
+   ]
+  },
+  {
+   "id": "n13",
+   "text": "Shoppers seeing honest prices at J C Penney.",
+   "start": 366.03389583333336,
+   "end": 368.52889583333337,
+   "words": [
+    {
+     "text": "Shoppers",
+     "start": 366.034,
+     "end": 366.491
+    },
+    {
+     "text": "seeing",
+     "start": 366.542,
+     "end": 366.898
+    },
+    {
+     "text": "honest",
+     "start": 366.937,
+     "end": 367.293
+    },
+    {
+     "text": "prices",
+     "start": 367.332,
+     "end": 367.688
+    },
+    {
+     "text": "at",
+     "start": 367.727,
+     "end": 367.88
+    },
+    {
+     "text": "J",
+     "start": 367.897,
+     "end": 367.998
+    },
+    {
+     "text": "C",
+     "start": 368.01,
+     "end": 368.111
+    },
+    {
+     "text": "Penney.",
+     "start": 368.122,
+     "end": 368.529
+    }
+   ]
+  },
+  {
+   "id": "c7f",
+   "text": "Johnson was out after seventeen months. The coupons came right back. And here's the ugly truth. The stores aren't forcing this on us. We punish the honest price.",
+   "start": 369.16108333333335,
+   "end": 376.5010833333333,
+   "words": [
+    {
+     "text": "Johnson",
+     "start": 369.161,
+     "end": 369.341
+    },
+    {
+     "text": "was",
+     "start": 369.341,
+     "end": 369.601
+    },
+    {
+     "text": "out",
+     "start": 369.601,
+     "end": 369.781
+    },
+    {
+     "text": "after",
+     "start": 369.781,
+     "end": 370.041
+    },
+    {
+     "text": "seventeen",
+     "start": 370.041,
+     "end": 370.341
+    },
+    {
+     "text": "months.",
+     "start": 370.341,
+     "end": 370.641
+    },
+    {
+     "text": "The",
+     "start": 371.301,
+     "end": 371.301
+    },
+    {
+     "text": "coupons",
+     "start": 371.301,
+     "end": 371.421
+    },
+    {
+     "text": "came",
+     "start": 371.421,
+     "end": 371.801
+    },
+    {
+     "text": "right",
+     "start": 371.801,
+     "end": 372.001
+    },
+    {
+     "text": "back.",
+     "start": 372.001,
+     "end": 372.201
+    },
+    {
+     "text": "And",
+     "start": 372.681,
+     "end": 372.781
+    },
+    {
+     "text": "here's",
+     "start": 372.781,
+     "end": 373.181
+    },
+    {
+     "text": "the",
+     "start": 373.181,
+     "end": 373.281
+    },
+    {
+     "text": "ugly",
+     "start": 373.281,
+     "end": 373.441
+    },
+    {
+     "text": "truth.",
+     "start": 373.441,
+     "end": 373.721
+    },
+    {
+     "text": "The",
+     "start": 374.221,
+     "end": 374.241
+    },
+    {
+     "text": "stores",
+     "start": 374.241,
+     "end": 374.381
+    },
+    {
+     "text": "aren't",
+     "start": 374.381,
+     "end": 374.701
+    },
+    {
+     "text": "forcing",
+     "start": 374.701,
+     "end": 374.901
+    },
+    {
+     "text": "this",
+     "start": 374.901,
+     "end": 375.161
+    },
+    {
+     "text": "on",
+     "start": 375.161,
+     "end": 375.321
+    },
+    {
+     "text": "us.",
+     "start": 375.321,
+     "end": 375.481
+    },
+    {
+     "text": "We",
+     "start": 375.521,
+     "end": 375.641
+    },
+    {
+     "text": "punish",
+     "start": 375.641,
+     "end": 375.821
+    },
+    {
+     "text": "the",
+     "start": 375.821,
+     "end": 376.041
+    },
+    {
+     "text": "honest",
+     "start": 376.041,
+     "end": 376.161
+    },
+    {
+     "text": "price.",
+     "start": 376.161,
+     "end": 376.501
+    }
+   ]
+  },
+  {
+   "id": "n14",
+   "text": "We reward the pretty price and punish the honest one.",
+   "start": 377.2573541666667,
+   "end": 379.59735416666666,
+   "words": [
+    {
+     "text": "We",
+     "start": 377.257,
+     "end": 377.357
+    },
+    {
+     "text": "reward",
+     "start": 377.357,
+     "end": 377.517
+    },
+    {
+     "text": "the",
+     "start": 377.517,
+     "end": 377.817
+    },
+    {
+     "text": "pretty",
+     "start": 377.817,
+     "end": 377.977
+    },
+    {
+     "text": "price",
+     "start": 377.977,
+     "end": 378.357
+    },
+    {
+     "text": "and",
+     "start": 378.357,
+     "end": 378.637
+    },
+    {
+     "text": "punish",
+     "start": 378.637,
+     "end": 378.917
+    },
+    {
+     "text": "the",
+     "start": 378.917,
+     "end": 379.157
+    },
+    {
+     "text": "honest",
+     "start": 379.157,
+     "end": 379.337
+    },
+    {
+     "text": "one.",
+     "start": 379.337,
+     "end": 379.597
+    }
+   ]
+  },
+  {
+   "id": "c8a",
+   "text": "And then America stopped making the penny. The last ones were made in Philadelphia in November twenty twenty five.",
+   "start": 380.35347916666666,
+   "end": 384.7104791666667,
+   "words": [
+    {
+     "text": "And",
+     "start": 380.353,
+     "end": 380.49
+    },
+    {
+     "text": "then",
+     "start": 380.505,
+     "end": 380.677
+    },
+    {
+     "text": "America",
+     "start": 380.696,
+     "end": 380.97
+    },
+    {
+     "text": "stopped",
+     "start": 381.0,
+     "end": 381.275
+    },
+    {
+     "text": "making",
+     "start": 381.305,
+     "end": 381.545
+    },
+    {
+     "text": "the",
+     "start": 381.572,
+     "end": 381.709
+    },
+    {
+     "text": "penny.",
+     "start": 381.724,
+     "end": 381.964
+    },
+    {
+     "text": "The",
+     "start": 381.991,
+     "end": 382.128
+    },
+    {
+     "text": "last",
+     "start": 382.143,
+     "end": 382.314
+    },
+    {
+     "text": "ones",
+     "start": 382.334,
+     "end": 382.505
+    },
+    {
+     "text": "were",
+     "start": 382.524,
+     "end": 382.695
+    },
+    {
+     "text": "made",
+     "start": 382.714,
+     "end": 382.886
+    },
+    {
+     "text": "in",
+     "start": 382.905,
+     "end": 383.008
+    },
+    {
+     "text": "Philadelphia",
+     "start": 383.019,
+     "end": 383.465
+    },
+    {
+     "text": "in",
+     "start": 383.514,
+     "end": 383.617
+    },
+    {
+     "text": "November",
+     "start": 383.628,
+     "end": 383.937
+    },
+    {
+     "text": "twenty",
+     "start": 383.971,
+     "end": 384.211
+    },
+    {
+     "text": "twenty",
+     "start": 384.238,
+     "end": 384.478
+    },
+    {
+     "text": "five.",
+     "start": 384.504,
+     "end": 384.71
+    }
+   ]
+  },
+  {
+   "id": "c8b",
+   "text": "Each penny cost almost four cents to make. Which is a very strange way to run a one cent coin.",
+   "start": 385.5848541666667,
+   "end": 389.96485416666667,
+   "words": [
+    {
+     "text": "Each",
+     "start": 385.585,
+     "end": 385.765
+    },
+    {
+     "text": "penny",
+     "start": 385.765,
+     "end": 385.945
+    },
+    {
+     "text": "cost",
+     "start": 385.945,
+     "end": 386.265
+    },
+    {
+     "text": "almost",
+     "start": 386.265,
+     "end": 386.585
+    },
+    {
+     "text": "four",
+     "start": 386.585,
+     "end": 386.865
+    },
+    {
+     "text": "cents",
+     "start": 386.865,
+     "end": 387.085
+    },
+    {
+     "text": "to",
+     "start": 387.085,
+     "end": 387.345
+    },
+    {
+     "text": "make.",
+     "start": 387.345,
+     "end": 387.505
+    },
+    {
+     "text": "Which",
+     "start": 387.845,
+     "end": 387.945
+    },
+    {
+     "text": "is",
+     "start": 387.945,
+     "end": 388.065
+    },
+    {
+     "text": "a",
+     "start": 388.065,
+     "end": 388.185
+    },
+    {
+     "text": "very",
+     "start": 388.185,
+     "end": 388.385
+    },
+    {
+     "text": "strange",
+     "start": 388.385,
+     "end": 388.765
+    },
+    {
+     "text": "way",
+     "start": 388.765,
+     "end": 388.945
+    },
+    {
+     "text": "to",
+     "start": 388.945,
+     "end": 389.125
+    },
+    {
+     "text": "run",
+     "start": 389.125,
+     "end": 389.265
+    },
+    {
+     "text": "a",
+     "start": 389.265,
+     "end": 389.345
+    },
+    {
+     "text": "one",
+     "start": 389.345,
+     "end": 389.505
+    },
+    {
+     "text": "cent",
+     "start": 389.505,
+     "end": 389.705
+    },
+    {
+     "text": "coin.",
+     "start": 389.705,
+     "end": 389.965
+    }
+   ]
+  },
+  {
+   "id": "c8c",
+   "text": "So the ninety nine should be dead. Right? Nope. Stores can round your cash total to the nearest nickel. But tap your card and you still pay nine ninety nine.",
+   "start": 390.7375625,
+   "end": 397.98956250000003,
+   "words": [
+    {
+     "text": "So",
+     "start": 390.738,
+     "end": 390.862
+    },
+    {
+     "text": "the",
+     "start": 390.876,
+     "end": 391.042
+    },
+    {
+     "text": "ninety",
+     "start": 391.061,
+     "end": 391.351
+    },
+    {
+     "text": "nine",
+     "start": 391.383,
+     "end": 391.59
+    },
+    {
+     "text": "should",
+     "start": 391.613,
+     "end": 391.904
+    },
+    {
+     "text": "be",
+     "start": 391.936,
+     "end": 392.06
+    },
+    {
+     "text": "dead.",
+     "start": 392.074,
+     "end": 392.323
+    },
+    {
+     "text": "Right?",
+     "start": 392.351,
+     "end": 392.641
+    },
+    {
+     "text": "Nope.",
+     "start": 392.673,
+     "end": 392.922
+    },
+    {
+     "text": "Stores",
+     "start": 392.95,
+     "end": 393.24
+    },
+    {
+     "text": "can",
+     "start": 393.272,
+     "end": 393.438
+    },
+    {
+     "text": "round",
+     "start": 393.456,
+     "end": 393.705
+    },
+    {
+     "text": "your",
+     "start": 393.733,
+     "end": 393.94
+    },
+    {
+     "text": "cash",
+     "start": 393.963,
+     "end": 394.171
+    },
+    {
+     "text": "total",
+     "start": 394.194,
+     "end": 394.443
+    },
+    {
+     "text": "to",
+     "start": 394.47,
+     "end": 394.595
+    },
+    {
+     "text": "the",
+     "start": 394.608,
+     "end": 394.774
+    },
+    {
+     "text": "nearest",
+     "start": 394.793,
+     "end": 395.124
+    },
+    {
+     "text": "nickel.",
+     "start": 395.161,
+     "end": 395.493
+    },
+    {
+     "text": "But",
+     "start": 395.53,
+     "end": 395.696
+    },
+    {
+     "text": "tap",
+     "start": 395.714,
+     "end": 395.88
+    },
+    {
+     "text": "your",
+     "start": 395.899,
+     "end": 396.106
+    },
+    {
+     "text": "card",
+     "start": 396.129,
+     "end": 396.336
+    },
+    {
+     "text": "and",
+     "start": 396.359,
+     "end": 396.525
+    },
+    {
+     "text": "you",
+     "start": 396.544,
+     "end": 396.709
+    },
+    {
+     "text": "still",
+     "start": 396.728,
+     "end": 396.977
+    },
+    {
+     "text": "pay",
+     "start": 397.004,
+     "end": 397.17
+    },
+    {
+     "text": "nine",
+     "start": 397.189,
+     "end": 397.396
+    },
+    {
+     "text": "ninety",
+     "start": 397.419,
+     "end": 397.709
+    },
+    {
+     "text": "nine.",
+     "start": 397.742,
+     "end": 397.99
+    }
+   ]
+  },
+  {
+   "id": "c8d",
+   "text": "And the tag on the shelf still says nine ninety nine. The coin died and the trick didn't even blink.",
+   "start": 398.744,
+   "end": 402.79600000000005,
+   "words": [
+    {
+     "text": "And",
+     "start": 398.744,
+     "end": 398.889
+    },
+    {
+     "text": "the",
+     "start": 398.906,
+     "end": 399.051
+    },
+    {
+     "text": "tag",
+     "start": 399.067,
+     "end": 399.213
+    },
+    {
+     "text": "on",
+     "start": 399.229,
+     "end": 399.338
+    },
+    {
+     "text": "the",
+     "start": 399.35,
+     "end": 399.495
+    },
+    {
+     "text": "shelf",
+     "start": 399.512,
+     "end": 399.73
+    },
+    {
+     "text": "still",
+     "start": 399.754,
+     "end": 399.972
+    },
+    {
+     "text": "says",
+     "start": 399.996,
+     "end": 400.178
+    },
+    {
+     "text": "nine",
+     "start": 400.198,
+     "end": 400.38
+    },
+    {
+     "text": "ninety",
+     "start": 400.4,
+     "end": 400.655
+    },
+    {
+     "text": "nine.",
+     "start": 400.683,
+     "end": 400.901
+    },
+    {
+     "text": "The",
+     "start": 400.925,
+     "end": 401.071
+    },
+    {
+     "text": "coin",
+     "start": 401.087,
+     "end": 401.269
+    },
+    {
+     "text": "died",
+     "start": 401.289,
+     "end": 401.471
+    },
+    {
+     "text": "and",
+     "start": 401.491,
+     "end": 401.636
+    },
+    {
+     "text": "the",
+     "start": 401.653,
+     "end": 401.798
+    },
+    {
+     "text": "trick",
+     "start": 401.814,
+     "end": 402.032
+    },
+    {
+     "text": "didn't",
+     "start": 402.056,
+     "end": 402.311
+    },
+    {
+     "text": "even",
+     "start": 402.339,
+     "end": 402.521
+    },
+    {
+     "text": "blink.",
+     "start": 402.541,
+     "end": 402.796
+    }
+   ]
+  },
+  {
+   "id": "n15",
+   "text": "The ninety nine after the penny died.",
+   "start": 403.4526666666667,
+   "end": 405.06666666666666,
+   "words": [
+    {
+     "text": "The",
+     "start": 403.453,
+     "end": 403.608
+    },
+    {
+     "text": "ninety",
+     "start": 403.626,
+     "end": 403.898
+    },
+    {
+     "text": "nine",
+     "start": 403.928,
+     "end": 404.122
+    },
+    {
+     "text": "after",
+     "start": 404.144,
+     "end": 404.377
+    },
+    {
+     "text": "the",
+     "start": 404.402,
+     "end": 404.558
+    },
+    {
+     "text": "penny",
+     "start": 404.575,
+     "end": 404.808
+    },
+    {
+     "text": "died.",
+     "start": 404.834,
+     "end": 405.067
+    }
+   ]
+  },
+  {
+   "id": "c9a",
+   "text": "But then I noticed something. The trick only works in the first second while your brain is on autopilot. So what if I grab the wheel? Quick reminder this is education and not advice.",
+   "start": 405.7338125,
+   "end": 412.6338125,
+   "words": [
+    {
+     "text": "But",
+     "start": 405.734,
+     "end": 405.794
+    },
+    {
+     "text": "then",
+     "start": 405.794,
+     "end": 405.914
+    },
+    {
+     "text": "I",
+     "start": 405.914,
+     "end": 405.994
+    },
+    {
+     "text": "noticed",
+     "start": 405.994,
+     "end": 406.174
+    },
+    {
+     "text": "something.",
+     "start": 406.174,
+     "end": 406.494
+    },
+    {
+     "text": "The",
+     "start": 406.934,
+     "end": 406.934
+    },
+    {
+     "text": "trick",
+     "start": 406.934,
+     "end": 407.054
+    },
+    {
+     "text": "only",
+     "start": 407.054,
+     "end": 407.234
+    },
+    {
+     "text": "works",
+     "start": 407.234,
+     "end": 407.454
+    },
+    {
+     "text": "in",
+     "start": 407.454,
+     "end": 407.634
+    },
+    {
+     "text": "the",
+     "start": 407.634,
+     "end": 407.694
+    },
+    {
+     "text": "first",
+     "start": 407.694,
+     "end": 407.834
+    },
+    {
+     "text": "second",
+     "start": 407.834,
+     "end": 408.134
+    },
+    {
+     "text": "while",
+     "start": 408.134,
+     "end": 408.394
+    },
+    {
+     "text": "your",
+     "start": 408.394,
+     "end": 408.494
+    },
+    {
+     "text": "brain",
+     "start": 408.494,
+     "end": 408.654
+    },
+    {
+     "text": "is",
+     "start": 408.654,
+     "end": 408.774
+    },
+    {
+     "text": "on",
+     "start": 408.774,
+     "end": 408.874
+    },
+    {
+     "text": "autopilot.",
+     "start": 408.874,
+     "end": 409.274
+    },
+    {
+     "text": "So",
+     "start": 409.814,
+     "end": 409.854
+    },
+    {
+     "text": "what",
+     "start": 409.854,
+     "end": 409.954
+    },
+    {
+     "text": "if",
+     "start": 409.954,
+     "end": 410.054
+    },
+    {
+     "text": "I",
+     "start": 410.054,
+     "end": 410.134
+    },
+    {
+     "text": "grab",
+     "start": 410.134,
+     "end": 410.254
+    },
+    {
+     "text": "the",
+     "start": 410.254,
+     "end": 410.414
+    },
+    {
+     "text": "wheel?",
+     "start": 410.414,
+     "end": 410.534
+    },
+    {
+     "text": "Quick",
+     "start": 410.914,
+     "end": 410.914
+    },
+    {
+     "text": "reminder",
+     "start": 410.914,
+     "end": 411.094
+    },
+    {
+     "text": "this",
+     "start": 411.514,
+     "end": 411.554
+    },
+    {
+     "text": "is",
+     "start": 411.554,
+     "end": 411.634
+    },
+    {
+     "text": "education",
+     "start": 411.634,
+     "end": 411.914
+    },
+    {
+     "text": "and",
+     "start": 411.914,
+     "end": 412.354
+    },
+    {
+     "text": "not",
+     "start": 412.354,
+     "end": 412.474
+    },
+    {
+     "text": "advice.",
+     "start": 412.474,
+     "end": 412.634
+    }
+   ]
+  },
+  {
+   "id": "c9b",
+   "text": "Rule one. I say every price out loud and round it up. Nineteen ninety nine is twenty. The cashier thinks I'm weird. I do not care.",
+   "start": 413.35914583333334,
+   "end": 419.6701458333333,
+   "words": [
+    {
+     "text": "Rule",
+     "start": 413.359,
+     "end": 413.577
+    },
+    {
+     "text": "one.",
+     "start": 413.601,
+     "end": 413.819
+    },
+    {
+     "text": "I",
+     "start": 413.843,
+     "end": 413.93
+    },
+    {
+     "text": "say",
+     "start": 413.94,
+     "end": 414.114
+    },
+    {
+     "text": "every",
+     "start": 414.133,
+     "end": 414.395
+    },
+    {
+     "text": "price",
+     "start": 414.424,
+     "end": 414.685
+    },
+    {
+     "text": "out",
+     "start": 414.714,
+     "end": 414.888
+    },
+    {
+     "text": "loud",
+     "start": 414.908,
+     "end": 415.125
+    },
+    {
+     "text": "and",
+     "start": 415.15,
+     "end": 415.324
+    },
+    {
+     "text": "round",
+     "start": 415.343,
+     "end": 415.605
+    },
+    {
+     "text": "it",
+     "start": 415.634,
+     "end": 415.764
+    },
+    {
+     "text": "up.",
+     "start": 415.779,
+     "end": 415.953
+    },
+    {
+     "text": "Nineteen",
+     "start": 415.972,
+     "end": 416.364
+    },
+    {
+     "text": "ninety",
+     "start": 416.408,
+     "end": 416.713
+    },
+    {
+     "text": "nine",
+     "start": 416.747,
+     "end": 416.965
+    },
+    {
+     "text": "is",
+     "start": 416.989,
+     "end": 417.119
+    },
+    {
+     "text": "twenty.",
+     "start": 417.134,
+     "end": 417.482
+    },
+    {
+     "text": "The",
+     "start": 417.521,
+     "end": 417.695
+    },
+    {
+     "text": "cashier",
+     "start": 417.715,
+     "end": 418.063
+    },
+    {
+     "text": "thinks",
+     "start": 418.102,
+     "end": 418.407
+    },
+    {
+     "text": "I'm",
+     "start": 418.441,
+     "end": 418.615
+    },
+    {
+     "text": "weird.",
+     "start": 418.634,
+     "end": 418.939
+    },
+    {
+     "text": "I",
+     "start": 418.973,
+     "end": 419.06
+    },
+    {
+     "text": "do",
+     "start": 419.07,
+     "end": 419.201
+    },
+    {
+     "text": "not",
+     "start": 419.215,
+     "end": 419.389
+    },
+    {
+     "text": "care.",
+     "start": 419.409,
+     "end": 419.67
+    }
+   ]
+  },
+  {
+   "id": "n16",
+   "text": "It sounds silly. But it forces your brain to read the whole number and not just the first digit.",
+   "start": 420.305375,
+   "end": 424.48537500000003,
+   "words": [
+    {
+     "text": "It",
+     "start": 420.305,
+     "end": 420.385
+    },
+    {
+     "text": "sounds",
+     "start": 420.385,
+     "end": 420.585
+    },
+    {
+     "text": "silly.",
+     "start": 420.585,
+     "end": 420.865
+    },
+    {
+     "text": "But",
+     "start": 421.585,
+     "end": 421.725
+    },
+    {
+     "text": "it",
+     "start": 421.725,
+     "end": 421.805
+    },
+    {
+     "text": "forces",
+     "start": 421.805,
+     "end": 421.985
+    },
+    {
+     "text": "your",
+     "start": 421.985,
+     "end": 422.245
+    },
+    {
+     "text": "brain",
+     "start": 422.245,
+     "end": 422.445
+    },
+    {
+     "text": "to",
+     "start": 422.445,
+     "end": 422.625
+    },
+    {
+     "text": "read",
+     "start": 422.625,
+     "end": 422.725
+    },
+    {
+     "text": "the",
+     "start": 422.725,
+     "end": 422.865
+    },
+    {
+     "text": "whole",
+     "start": 422.865,
+     "end": 423.025
+    },
+    {
+     "text": "number",
+     "start": 423.025,
+     "end": 423.385
+    },
+    {
+     "text": "and",
+     "start": 423.385,
+     "end": 423.585
+    },
+    {
+     "text": "not",
+     "start": 423.585,
+     "end": 423.765
+    },
+    {
+     "text": "just",
+     "start": 423.765,
+     "end": 423.925
+    },
+    {
+     "text": "the",
+     "start": 423.925,
+     "end": 424.065
+    },
+    {
+     "text": "first",
+     "start": 424.065,
+     "end": 424.245
+    },
+    {
+     "text": "digit.",
+     "start": 424.245,
+     "end": 424.485
+    }
+   ]
+  },
+  {
+   "id": "c9c",
+   "text": "Rule two. I keep a running total in round numbers while I shop. No more mystery receipts.",
+   "start": 425.14216666666664,
+   "end": 429.9821666666666,
+   "words": [
+    {
+     "text": "Rule",
+     "start": 425.142,
+     "end": 425.262
+    },
+    {
+     "text": "two.",
+     "start": 425.262,
+     "end": 425.602
+    },
+    {
+     "text": "I",
+     "start": 426.242,
+     "end": 426.302
+    },
+    {
+     "text": "keep",
+     "start": 426.302,
+     "end": 426.482
+    },
+    {
+     "text": "a",
+     "start": 426.482,
+     "end": 426.602
+    },
+    {
+     "text": "running",
+     "start": 426.602,
+     "end": 426.782
+    },
+    {
+     "text": "total",
+     "start": 426.782,
+     "end": 427.022
+    },
+    {
+     "text": "in",
+     "start": 427.022,
+     "end": 427.342
+    },
+    {
+     "text": "round",
+     "start": 427.342,
+     "end": 427.482
+    },
+    {
+     "text": "numbers",
+     "start": 427.482,
+     "end": 427.862
+    },
+    {
+     "text": "while",
+     "start": 427.862,
+     "end": 428.142
+    },
+    {
+     "text": "I",
+     "start": 428.142,
+     "end": 428.282
+    },
+    {
+     "text": "shop.",
+     "start": 428.282,
+     "end": 428.462
+    },
+    {
+     "text": "No",
+     "start": 429.042,
+     "end": 429.142
+    },
+    {
+     "text": "more",
+     "start": 429.142,
+     "end": 429.342
+    },
+    {
+     "text": "mystery",
+     "start": 429.342,
+     "end": 429.602
+    },
+    {
+     "text": "receipts.",
+     "start": 429.602,
+     "end": 429.982
+    }
+   ]
+  },
+  {
+   "id": "c9d",
+   "text": "Rule three. One question. Would I still want this at the round price? If the lamp is a yes at nineteen ninety nine and a no at twenty then I never wanted the lamp. I wanted the nine.",
+   "start": 430.8076041666667,
+   "end": 438.86160416666667,
+   "words": [
+    {
+     "text": "Rule",
+     "start": 430.808,
+     "end": 431.007
+    },
+    {
+     "text": "three.",
+     "start": 431.029,
+     "end": 431.307
+    },
+    {
+     "text": "One",
+     "start": 431.338,
+     "end": 431.497
+    },
+    {
+     "text": "question.",
+     "start": 431.514,
+     "end": 431.912
+    },
+    {
+     "text": "Would",
+     "start": 431.956,
+     "end": 432.194
+    },
+    {
+     "text": "I",
+     "start": 432.221,
+     "end": 432.3
+    },
+    {
+     "text": "still",
+     "start": 432.309,
+     "end": 432.548
+    },
+    {
+     "text": "want",
+     "start": 432.574,
+     "end": 432.773
+    },
+    {
+     "text": "this",
+     "start": 432.795,
+     "end": 432.994
+    },
+    {
+     "text": "at",
+     "start": 433.016,
+     "end": 433.135
+    },
+    {
+     "text": "the",
+     "start": 433.148,
+     "end": 433.307
+    },
+    {
+     "text": "round",
+     "start": 433.325,
+     "end": 433.563
+    },
+    {
+     "text": "price?",
+     "start": 433.59,
+     "end": 433.868
+    },
+    {
+     "text": "If",
+     "start": 433.899,
+     "end": 434.018
+    },
+    {
+     "text": "the",
+     "start": 434.031,
+     "end": 434.19
+    },
+    {
+     "text": "lamp",
+     "start": 434.208,
+     "end": 434.406
+    },
+    {
+     "text": "is",
+     "start": 434.429,
+     "end": 434.548
+    },
+    {
+     "text": "a",
+     "start": 434.561,
+     "end": 434.64
+    },
+    {
+     "text": "yes",
+     "start": 434.649,
+     "end": 434.808
+    },
+    {
+     "text": "at",
+     "start": 434.826,
+     "end": 434.945
+    },
+    {
+     "text": "nineteen",
+     "start": 434.958,
+     "end": 435.316
+    },
+    {
+     "text": "ninety",
+     "start": 435.356,
+     "end": 435.634
+    },
+    {
+     "text": "nine",
+     "start": 435.665,
+     "end": 435.864
+    },
+    {
+     "text": "and",
+     "start": 435.886,
+     "end": 436.045
+    },
+    {
+     "text": "a",
+     "start": 436.062,
+     "end": 436.142
+    },
+    {
+     "text": "no",
+     "start": 436.151,
+     "end": 436.27
+    },
+    {
+     "text": "at",
+     "start": 436.283,
+     "end": 436.402
+    },
+    {
+     "text": "twenty",
+     "start": 436.415,
+     "end": 436.694
+    },
+    {
+     "text": "then",
+     "start": 436.725,
+     "end": 436.923
+    },
+    {
+     "text": "I",
+     "start": 436.945,
+     "end": 437.025
+    },
+    {
+     "text": "never",
+     "start": 437.034,
+     "end": 437.272
+    },
+    {
+     "text": "wanted",
+     "start": 437.298,
+     "end": 437.577
+    },
+    {
+     "text": "the",
+     "start": 437.608,
+     "end": 437.767
+    },
+    {
+     "text": "lamp.",
+     "start": 437.784,
+     "end": 438.023
+    },
+    {
+     "text": "I",
+     "start": 438.049,
+     "end": 438.129
+    },
+    {
+     "text": "wanted",
+     "start": 438.137,
+     "end": 438.416
+    },
+    {
+     "text": "the",
+     "start": 438.446,
+     "end": 438.605
+    },
+    {
+     "text": "nine.",
+     "start": 438.623,
+     "end": 438.862
+    }
+   ]
+  },
+  {
+   "id": "n17",
+   "text": "Me now at every checkout.",
+   "start": 439.52095833333334,
+   "end": 440.52095833333334,
+   "words": [
+    {
+     "text": "Me",
+     "start": 439.521,
+     "end": 439.621
+    },
+    {
+     "text": "now",
+     "start": 439.621,
+     "end": 439.821
+    },
+    {
+     "text": "at",
+     "start": 439.821,
+     "end": 440.041
+    },
+    {
+     "text": "every",
+     "start": 440.041,
+     "end": 440.261
+    },
+    {
+     "text": "checkout.",
+     "start": 440.261,
+     "end": 440.521
+    }
+   ]
+  },
+  {
+   "id": "c9e",
+   "text": "Then I knocked on Bob's door. Double or nothing. He watched me shop. I muttered round numbers the whole way like a man counting sheep. At the exit I said one hundred ten dollars.",
+   "start": 441.34166666666664,
+   "end": 448.6046666666666,
+   "words": [
+    {
+     "text": "Then",
+     "start": 441.342,
+     "end": 441.526
+    },
+    {
+     "text": "I",
+     "start": 441.546,
+     "end": 441.619
+    },
+    {
+     "text": "knocked",
+     "start": 441.627,
+     "end": 441.921
+    },
+    {
+     "text": "on",
+     "start": 441.954,
+     "end": 442.064
+    },
+    {
+     "text": "Bob's",
+     "start": 442.076,
+     "end": 442.296
+    },
+    {
+     "text": "door.",
+     "start": 442.321,
+     "end": 442.541
+    },
+    {
+     "text": "Double",
+     "start": 442.565,
+     "end": 442.822
+    },
+    {
+     "text": "or",
+     "start": 442.851,
+     "end": 442.961
+    },
+    {
+     "text": "nothing.",
+     "start": 442.973,
+     "end": 443.304
+    },
+    {
+     "text": "He",
+     "start": 443.34,
+     "end": 443.45
+    },
+    {
+     "text": "watched",
+     "start": 443.463,
+     "end": 443.756
+    },
+    {
+     "text": "me",
+     "start": 443.789,
+     "end": 443.899
+    },
+    {
+     "text": "shop.",
+     "start": 443.911,
+     "end": 444.131
+    },
+    {
+     "text": "I",
+     "start": 444.156,
+     "end": 444.229
+    },
+    {
+     "text": "muttered",
+     "start": 444.238,
+     "end": 444.568
+    },
+    {
+     "text": "round",
+     "start": 444.605,
+     "end": 444.825
+    },
+    {
+     "text": "numbers",
+     "start": 444.849,
+     "end": 445.143
+    },
+    {
+     "text": "the",
+     "start": 445.176,
+     "end": 445.322
+    },
+    {
+     "text": "whole",
+     "start": 445.339,
+     "end": 445.559
+    },
+    {
+     "text": "way",
+     "start": 445.583,
+     "end": 445.73
+    },
+    {
+     "text": "like",
+     "start": 445.746,
+     "end": 445.93
+    },
+    {
+     "text": "a",
+     "start": 445.95,
+     "end": 446.024
+    },
+    {
+     "text": "man",
+     "start": 446.032,
+     "end": 446.179
+    },
+    {
+     "text": "counting",
+     "start": 446.195,
+     "end": 446.525
+    },
+    {
+     "text": "sheep.",
+     "start": 446.562,
+     "end": 446.819
+    },
+    {
+     "text": "At",
+     "start": 446.848,
+     "end": 446.958
+    },
+    {
+     "text": "the",
+     "start": 446.97,
+     "end": 447.117
+    },
+    {
+     "text": "exit",
+     "start": 447.133,
+     "end": 447.317
+    },
+    {
+     "text": "I",
+     "start": 447.337,
+     "end": 447.41
+    },
+    {
+     "text": "said",
+     "start": 447.419,
+     "end": 447.602
+    },
+    {
+     "text": "one",
+     "start": 447.622,
+     "end": 447.769
+    },
+    {
+     "text": "hundred",
+     "start": 447.786,
+     "end": 448.079
+    },
+    {
+     "text": "ten",
+     "start": 448.112,
+     "end": 448.259
+    },
+    {
+     "text": "dollars.",
+     "start": 448.275,
+     "end": 448.605
+    }
+   ]
+  },
+  {
+   "id": "c9f",
+   "text": "The receipt said one hundred nine dollars and ninety four cents. Bob paid up. I got my twenty back and twenty more on top.",
+   "start": 449.75772916666665,
+   "end": 455.25572916666664,
+   "words": [
+    {
+     "text": "The",
+     "start": 449.758,
+     "end": 449.92
+    },
+    {
+     "text": "receipt",
+     "start": 449.938,
+     "end": 450.261
+    },
+    {
+     "text": "said",
+     "start": 450.297,
+     "end": 450.498
+    },
+    {
+     "text": "one",
+     "start": 450.521,
+     "end": 450.682
+    },
+    {
+     "text": "hundred",
+     "start": 450.7,
+     "end": 451.024
+    },
+    {
+     "text": "nine",
+     "start": 451.059,
+     "end": 451.261
+    },
+    {
+     "text": "dollars",
+     "start": 451.284,
+     "end": 451.607
+    },
+    {
+     "text": "and",
+     "start": 451.643,
+     "end": 451.804
+    },
+    {
+     "text": "ninety",
+     "start": 451.822,
+     "end": 452.105
+    },
+    {
+     "text": "four",
+     "start": 452.137,
+     "end": 452.338
+    },
+    {
+     "text": "cents.",
+     "start": 452.361,
+     "end": 452.644
+    },
+    {
+     "text": "Bob",
+     "start": 452.675,
+     "end": 452.837
+    },
+    {
+     "text": "paid",
+     "start": 452.855,
+     "end": 453.057
+    },
+    {
+     "text": "up.",
+     "start": 453.079,
+     "end": 453.241
+    },
+    {
+     "text": "I",
+     "start": 453.258,
+     "end": 453.339
+    },
+    {
+     "text": "got",
+     "start": 453.348,
+     "end": 453.51
+    },
+    {
+     "text": "my",
+     "start": 453.528,
+     "end": 453.649
+    },
+    {
+     "text": "twenty",
+     "start": 453.662,
+     "end": 453.945
+    },
+    {
+     "text": "back",
+     "start": 453.977,
+     "end": 454.178
+    },
+    {
+     "text": "and",
+     "start": 454.201,
+     "end": 454.362
+    },
+    {
+     "text": "twenty",
+     "start": 454.38,
+     "end": 454.663
+    },
+    {
+     "text": "more",
+     "start": 454.695,
+     "end": 454.897
+    },
+    {
+     "text": "on",
+     "start": 454.919,
+     "end": 455.04
+    },
+    {
+     "text": "top.",
+     "start": 455.054,
+     "end": 455.256
+    }
+   ]
+  },
+  {
+   "id": "n18",
+   "text": "Bob handing me forty dollars.",
+   "start": 455.7992708333333,
+   "end": 456.6142708333333,
+   "words": [
+    {
+     "text": "Bob",
+     "start": 455.799,
+     "end": 455.9
+    },
+    {
+     "text": "handing",
+     "start": 455.911,
+     "end": 456.113
+    },
+    {
+     "text": "me",
+     "start": 456.135,
+     "end": 456.211
+    },
+    {
+     "text": "forty",
+     "start": 456.219,
+     "end": 456.37
+    },
+    {
+     "text": "dollars.",
+     "start": 456.387,
+     "end": 456.614
+    }
+   ]
+  },
+  {
+   "id": "r1",
+   "text": "Now it's your turn. Here's the exact tag from the first second of this video. Read it out loud. Round it up.",
+   "start": 457.5872083333333,
+   "end": 462.62720833333333,
+   "words": [
+    {
+     "text": "Now",
+     "start": 457.587,
+     "end": 457.707
+    },
+    {
+     "text": "it's",
+     "start": 457.707,
+     "end": 457.927
+    },
+    {
+     "text": "your",
+     "start": 457.927,
+     "end": 458.007
+    },
+    {
+     "text": "turn.",
+     "start": 458.007,
+     "end": 458.327
+    },
+    {
+     "text": "Here's",
+     "start": 458.607,
+     "end": 458.867
+    },
+    {
+     "text": "the",
+     "start": 458.867,
+     "end": 458.987
+    },
+    {
+     "text": "exact",
+     "start": 458.987,
+     "end": 459.147
+    },
+    {
+     "text": "tag",
+     "start": 459.147,
+     "end": 459.627
+    },
+    {
+     "text": "from",
+     "start": 459.627,
+     "end": 459.827
+    },
+    {
+     "text": "the",
+     "start": 459.827,
+     "end": 459.947
+    },
+    {
+     "text": "first",
+     "start": 459.947,
+     "end": 460.107
+    },
+    {
+     "text": "second",
+     "start": 460.107,
+     "end": 460.367
+    },
+    {
+     "text": "of",
+     "start": 460.367,
+     "end": 460.587
+    },
+    {
+     "text": "this",
+     "start": 460.587,
+     "end": 460.707
+    },
+    {
+     "text": "video.",
+     "start": 460.707,
+     "end": 461.007
+    },
+    {
+     "text": "Read",
+     "start": 461.347,
+     "end": 461.447
+    },
+    {
+     "text": "it",
+     "start": 461.447,
+     "end": 461.567
+    },
+    {
+     "text": "out",
+     "start": 461.567,
+     "end": 461.687
+    },
+    {
+     "text": "loud.",
+     "start": 461.687,
+     "end": 461.887
+    },
+    {
+     "text": "Round",
+     "start": 462.247,
+     "end": 462.307
+    },
+    {
+     "text": "it",
+     "start": 462.307,
+     "end": 462.487
+    },
+    {
+     "text": "up.",
+     "start": 462.487,
+     "end": 462.627
+    }
+   ]
+  },
+  {
+   "id": "r2",
+   "text": "Four hundred dollars. If that's the first thing your brain said then the trick just stopped working on you.",
+   "start": 463.14191666666665,
+   "end": 467.18291666666664,
+   "words": [
+    {
+     "text": "Four",
+     "start": 463.142,
+     "end": 463.311
+    },
+    {
+     "text": "hundred",
+     "start": 463.33,
+     "end": 463.601
+    },
+    {
+     "text": "dollars.",
+     "start": 463.631,
+     "end": 463.935
+    },
+    {
+     "text": "If",
+     "start": 463.969,
+     "end": 464.071
+    },
+    {
+     "text": "that's",
+     "start": 464.082,
+     "end": 464.319
+    },
+    {
+     "text": "the",
+     "start": 464.345,
+     "end": 464.48
+    },
+    {
+     "text": "first",
+     "start": 464.495,
+     "end": 464.698
+    },
+    {
+     "text": "thing",
+     "start": 464.721,
+     "end": 464.924
+    },
+    {
+     "text": "your",
+     "start": 464.946,
+     "end": 465.116
+    },
+    {
+     "text": "brain",
+     "start": 465.134,
+     "end": 465.337
+    },
+    {
+     "text": "said",
+     "start": 465.36,
+     "end": 465.529
+    },
+    {
+     "text": "then",
+     "start": 465.548,
+     "end": 465.717
+    },
+    {
+     "text": "the",
+     "start": 465.736,
+     "end": 465.871
+    },
+    {
+     "text": "trick",
+     "start": 465.886,
+     "end": 466.089
+    },
+    {
+     "text": "just",
+     "start": 466.112,
+     "end": 466.281
+    },
+    {
+     "text": "stopped",
+     "start": 466.3,
+     "end": 466.57
+    },
+    {
+     "text": "working",
+     "start": 466.601,
+     "end": 466.871
+    },
+    {
+     "text": "on",
+     "start": 466.901,
+     "end": 467.003
+    },
+    {
+     "text": "you.",
+     "start": 467.014,
+     "end": 467.183
+    }
+   ]
+  },
+  {
+   "id": "r3",
+   "text": "The price isn't nineteen ninety nine. It's twenty. It was always twenty.",
+   "start": 467.81502083333334,
+   "end": 471.0390208333333,
+   "words": [
+    {
+     "text": "The",
+     "start": 467.815,
+     "end": 467.976
+    },
+    {
+     "text": "price",
+     "start": 467.994,
+     "end": 468.235
+    },
+    {
+     "text": "isn't",
+     "start": 468.262,
+     "end": 468.503
+    },
+    {
+     "text": "nineteen",
+     "start": 468.53,
+     "end": 468.891
+    },
+    {
+     "text": "ninety",
+     "start": 468.931,
+     "end": 469.213
+    },
+    {
+     "text": "nine.",
+     "start": 469.244,
+     "end": 469.485
+    },
+    {
+     "text": "It's",
+     "start": 469.512,
+     "end": 469.713
+    },
+    {
+     "text": "twenty.",
+     "start": 469.735,
+     "end": 470.057
+    },
+    {
+     "text": "It",
+     "start": 470.093,
+     "end": 470.213
+    },
+    {
+     "text": "was",
+     "start": 470.227,
+     "end": 470.387
+    },
+    {
+     "text": "always",
+     "start": 470.405,
+     "end": 470.686
+    },
+    {
+     "text": "twenty.",
+     "start": 470.718,
+     "end": 471.039
+    }
+   ]
+  },
+  {
+   "id": "r4",
+   "text": "Oh and I finally said my real age out loud too. I'm forty. I took it pretty well.",
+   "start": 471.7998125,
+   "end": 476.0198125,
+   "words": [
+    {
+     "text": "Oh",
+     "start": 471.8,
+     "end": 471.96
+    },
+    {
+     "text": "and",
+     "start": 472.18,
+     "end": 472.26
+    },
+    {
+     "text": "I",
+     "start": 472.26,
+     "end": 472.36
+    },
+    {
+     "text": "finally",
+     "start": 472.36,
+     "end": 472.56
+    },
+    {
+     "text": "said",
+     "start": 472.56,
+     "end": 472.84
+    },
+    {
+     "text": "my",
+     "start": 472.84,
+     "end": 472.98
+    },
+    {
+     "text": "real",
+     "start": 472.98,
+     "end": 473.18
+    },
+    {
+     "text": "age",
+     "start": 473.18,
+     "end": 473.34
+    },
+    {
+     "text": "out",
+     "start": 473.34,
+     "end": 473.52
+    },
+    {
+     "text": "loud",
+     "start": 473.52,
+     "end": 473.7
+    },
+    {
+     "text": "too.",
+     "start": 473.7,
+     "end": 473.98
+    },
+    {
+     "text": "I'm",
+     "start": 474.46,
+     "end": 474.6
+    },
+    {
+     "text": "forty.",
+     "start": 474.6,
+     "end": 474.8
+    },
+    {
+     "text": "I",
+     "start": 475.22,
+     "end": 475.34
+    },
+    {
+     "text": "took",
+     "start": 475.34,
+     "end": 475.5
+    },
+    {
+     "text": "it",
+     "start": 475.5,
+     "end": 475.62
+    },
+    {
+     "text": "pretty",
+     "start": 475.62,
+     "end": 475.76
+    },
+    {
+     "text": "well.",
+     "start": 475.76,
+     "end": 476.02
+    }
+   ]
+  },
+  {
+   "id": "r5",
+   "text": "Next time a very friendly guy at the phone store offers me a brand new phone for free. That should worry you.",
+   "start": 476.6603958333333,
+   "end": 480.46039583333334,
+   "words": [
+    {
+     "text": "Next",
+     "start": 476.66,
+     "end": 476.8
+    },
+    {
+     "text": "time",
+     "start": 476.8,
+     "end": 477.0
+    },
+    {
+     "text": "a",
+     "start": 477.0,
+     "end": 477.1
+    },
+    {
+     "text": "very",
+     "start": 477.1,
+     "end": 477.24
+    },
+    {
+     "text": "friendly",
+     "start": 477.24,
+     "end": 477.5
+    },
+    {
+     "text": "guy",
+     "start": 477.5,
+     "end": 477.74
+    },
+    {
+     "text": "at",
+     "start": 477.74,
+     "end": 477.84
+    },
+    {
+     "text": "the",
+     "start": 477.84,
+     "end": 477.9
+    },
+    {
+     "text": "phone",
+     "start": 477.9,
+     "end": 478.04
+    },
+    {
+     "text": "store",
+     "start": 478.04,
+     "end": 478.24
+    },
+    {
+     "text": "offers",
+     "start": 478.24,
+     "end": 478.52
+    },
+    {
+     "text": "me",
+     "start": 478.52,
+     "end": 478.68
+    },
+    {
+     "text": "a",
+     "start": 478.68,
+     "end": 478.76
+    },
+    {
+     "text": "brand",
+     "start": 478.76,
+     "end": 478.9
+    },
+    {
+     "text": "new",
+     "start": 478.9,
+     "end": 479.04
+    },
+    {
+     "text": "phone",
+     "start": 479.04,
+     "end": 479.2
+    },
+    {
+     "text": "for",
+     "start": 479.2,
+     "end": 479.34
+    },
+    {
+     "text": "free.",
+     "start": 479.34,
+     "end": 479.58
+    },
+    {
+     "text": "That",
+     "start": 479.86,
+     "end": 479.94
+    },
+    {
+     "text": "should",
+     "start": 479.94,
+     "end": 480.08
+    },
+    {
+     "text": "worry",
+     "start": 480.08,
+     "end": 480.24
+    },
+    {
+     "text": "you.",
+     "start": 480.24,
+     "end": 480.46
+    }
+   ]
+  },
+  {
+   "id": "r6",
+   "text": "Subscribe. It costs zero dollars. Not zero ninety nine. Zero.",
+   "start": 481.045125,
+   "end": 484.432125,
+   "words": [
+    {
+     "text": "Subscribe.",
+     "start": 481.045,
+     "end": 481.591
+    },
+    {
+     "text": "It",
+     "start": 481.652,
+     "end": 481.801
+    },
+    {
+     "text": "costs",
+     "start": 481.817,
+     "end": 482.115
+    },
+    {
+     "text": "zero",
+     "start": 482.148,
+     "end": 482.396
+    },
+    {
+     "text": "dollars.",
+     "start": 482.424,
+     "end": 482.871
+    },
+    {
+     "text": "Not",
+     "start": 482.92,
+     "end": 483.119
+    },
+    {
+     "text": "zero",
+     "start": 483.141,
+     "end": 483.389
+    },
+    {
+     "text": "ninety",
+     "start": 483.417,
+     "end": 483.764
+    },
+    {
+     "text": "nine.",
+     "start": 483.803,
+     "end": 484.101
+    },
+    {
+     "text": "Zero.",
+     "start": 484.134,
+     "end": 484.432
+    }
+   ]
+  }
+ ]
+}
