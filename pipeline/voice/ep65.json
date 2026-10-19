@@ -1,0 +1,10392 @@
+{
+ "fps": 30,
+ "total": 516.242,
+ "hash": "916df784ad3f9a72",
+ "chapters": [
+  {
+   "n": 1,
+   "title": "Sixty Thousand Free Points",
+   "start": 23.88,
+   "beat": "c1a"
+  },
+  {
+   "n": 2,
+   "title": "What's One Point Worth?",
+   "start": 174.813,
+   "beat": "c4a"
+  },
+  {
+   "n": 3,
+   "title": "Who Pays For My Points?",
+   "start": 298.703,
+   "beat": "c6a"
+  },
+  {
+   "n": 4,
+   "title": "My Three Questions",
+   "start": 411.319,
+   "beat": "c8a"
+  }
+ ],
+ "beats": [
+  {
+   "id": "o1",
+   "text": "This is me at the airport and a smiley man just offered me a free flight to Mexico. Sixty thousand free points.",
+   "start": 0.08,
+   "end": 5.3,
+   "words": [
+    {
+     "text": "This",
+     "start": 0.08,
+     "end": 0.2
+    },
+    {
+     "text": "is",
+     "start": 0.2,
+     "end": 0.3
+    },
+    {
+     "text": "me",
+     "start": 0.3,
+     "end": 0.48
+    },
+    {
+     "text": "at",
+     "start": 0.48,
+     "end": 0.58
+    },
+    {
+     "text": "the",
+     "start": 0.58,
+     "end": 0.66
+    },
+    {
+     "text": "airport",
+     "start": 0.66,
+     "end": 0.92
+    },
+    {
+     "text": "and",
+     "start": 0.92,
+     "end": 1.38
+    },
+    {
+     "text": "a",
+     "start": 1.38,
+     "end": 1.46
+    },
+    {
+     "text": "smiley",
+     "start": 1.46,
+     "end": 1.82
+    },
+    {
+     "text": "man",
+     "start": 1.82,
+     "end": 1.98
+    },
+    {
+     "text": "just",
+     "start": 1.98,
+     "end": 2.18
+    },
+    {
+     "text": "offered",
+     "start": 2.18,
+     "end": 2.38
+    },
+    {
+     "text": "me",
+     "start": 2.38,
+     "end": 2.64
+    },
+    {
+     "text": "a",
+     "start": 2.64,
+     "end": 2.8
+    },
+    {
+     "text": "free",
+     "start": 2.8,
+     "end": 2.98
+    },
+    {
+     "text": "flight",
+     "start": 2.98,
+     "end": 3.2
+    },
+    {
+     "text": "to",
+     "start": 3.2,
+     "end": 3.38
+    },
+    {
+     "text": "Mexico.",
+     "start": 3.38,
+     "end": 3.7
+    },
+    {
+     "text": "Sixty",
+     "start": 4.14,
+     "end": 4.36
+    },
+    {
+     "text": "thousand",
+     "start": 4.36,
+     "end": 4.8
+    },
+    {
+     "text": "free",
+     "start": 4.8,
+     "end": 5.02
+    },
+    {
+     "text": "points.",
+     "start": 5.02,
+     "end": 5.3
+    }
+   ]
+  },
+  {
+   "id": "o2",
+   "text": "Three months later I own a kayak. I live on the third floor. With a cat.",
+   "start": 5.8380625,
+   "end": 9.3180625,
+   "words": [
+    {
+     "text": "Three",
+     "start": 5.838,
+     "end": 5.978
+    },
+    {
+     "text": "months",
+     "start": 5.978,
+     "end": 6.138
+    },
+    {
+     "text": "later",
+     "start": 6.138,
+     "end": 6.438
+    },
+    {
+     "text": "I",
+     "start": 6.638,
+     "end": 6.678
+    },
+    {
+     "text": "own",
+     "start": 6.678,
+     "end": 6.818
+    },
+    {
+     "text": "a",
+     "start": 6.818,
+     "end": 6.898
+    },
+    {
+     "text": "kayak.",
+     "start": 6.898,
+     "end": 7.418
+    },
+    {
+     "text": "I",
+     "start": 7.678,
+     "end": 7.758
+    },
+    {
+     "text": "live",
+     "start": 7.758,
+     "end": 7.898
+    },
+    {
+     "text": "on",
+     "start": 7.898,
+     "end": 8.038
+    },
+    {
+     "text": "the",
+     "start": 8.038,
+     "end": 8.138
+    },
+    {
+     "text": "third",
+     "start": 8.138,
+     "end": 8.298
+    },
+    {
+     "text": "floor.",
+     "start": 8.298,
+     "end": 8.618
+    },
+    {
+     "text": "With",
+     "start": 8.618,
+     "end": 9.078
+    },
+    {
+     "text": "a",
+     "start": 9.078,
+     "end": 9.158
+    },
+    {
+     "text": "cat.",
+     "start": 9.158,
+     "end": 9.318
+    }
+   ]
+  },
+  {
+   "id": "o3",
+   "text": "And I still haven't been to Mexico.",
+   "start": 9.82925,
+   "end": 11.52925,
+   "words": [
+    {
+     "text": "And",
+     "start": 9.829,
+     "end": 10.249
+    },
+    {
+     "text": "I",
+     "start": 10.249,
+     "end": 10.429
+    },
+    {
+     "text": "still",
+     "start": 10.429,
+     "end": 10.629
+    },
+    {
+     "text": "haven't",
+     "start": 10.629,
+     "end": 10.989
+    },
+    {
+     "text": "been",
+     "start": 10.989,
+     "end": 11.089
+    },
+    {
+     "text": "to",
+     "start": 11.089,
+     "end": 11.229
+    },
+    {
+     "text": "Mexico.",
+     "start": 11.229,
+     "end": 11.529
+    }
+   ]
+  },
+  {
+   "id": "o4",
+   "text": "By the end of this video you'll know what one point is really worth and who has been secretly paying for my vacation. Spoiler. It might be you.",
+   "start": 12.335875,
+   "end": 18.755875,
+   "words": [
+    {
+     "text": "By",
+     "start": 12.336,
+     "end": 12.416
+    },
+    {
+     "text": "the",
+     "start": 12.416,
+     "end": 12.516
+    },
+    {
+     "text": "end",
+     "start": 12.516,
+     "end": 12.636
+    },
+    {
+     "text": "of",
+     "start": 12.636,
+     "end": 12.756
+    },
+    {
+     "text": "this",
+     "start": 12.756,
+     "end": 12.876
+    },
+    {
+     "text": "video",
+     "start": 12.876,
+     "end": 13.116
+    },
+    {
+     "text": "you'll",
+     "start": 13.296,
+     "end": 13.456
+    },
+    {
+     "text": "know",
+     "start": 13.456,
+     "end": 13.596
+    },
+    {
+     "text": "what",
+     "start": 13.596,
+     "end": 13.776
+    },
+    {
+     "text": "one",
+     "start": 13.776,
+     "end": 13.976
+    },
+    {
+     "text": "point",
+     "start": 13.976,
+     "end": 14.256
+    },
+    {
+     "text": "is",
+     "start": 14.256,
+     "end": 14.436
+    },
+    {
+     "text": "really",
+     "start": 14.436,
+     "end": 14.596
+    },
+    {
+     "text": "worth",
+     "start": 14.596,
+     "end": 14.876
+    },
+    {
+     "text": "and",
+     "start": 14.876,
+     "end": 15.196
+    },
+    {
+     "text": "who",
+     "start": 15.196,
+     "end": 15.336
+    },
+    {
+     "text": "has",
+     "start": 15.336,
+     "end": 15.456
+    },
+    {
+     "text": "been",
+     "start": 15.456,
+     "end": 15.596
+    },
+    {
+     "text": "secretly",
+     "start": 15.596,
+     "end": 15.816
+    },
+    {
+     "text": "paying",
+     "start": 15.816,
+     "end": 16.236
+    },
+    {
+     "text": "for",
+     "start": 16.236,
+     "end": 16.416
+    },
+    {
+     "text": "my",
+     "start": 16.416,
+     "end": 16.536
+    },
+    {
+     "text": "vacation.",
+     "start": 16.536,
+     "end": 16.796
+    },
+    {
+     "text": "Spoiler.",
+     "start": 17.336,
+     "end": 17.576
+    },
+    {
+     "text": "It",
+     "start": 18.176,
+     "end": 18.296
+    },
+    {
+     "text": "might",
+     "start": 18.296,
+     "end": 18.416
+    },
+    {
+     "text": "be",
+     "start": 18.416,
+     "end": 18.576
+    },
+    {
+     "text": "you.",
+     "start": 18.576,
+     "end": 18.756
+    }
+   ]
+  },
+  {
+   "id": "o5",
+   "text": "But most people click away before that part which is exactly why the points game keeps working.",
+   "start": 19.1125625,
+   "end": 23.2325625,
+   "words": [
+    {
+     "text": "But",
+     "start": 19.113,
+     "end": 19.193
+    },
+    {
+     "text": "most",
+     "start": 19.193,
+     "end": 19.353
+    },
+    {
+     "text": "people",
+     "start": 19.353,
+     "end": 19.673
+    },
+    {
+     "text": "click",
+     "start": 19.673,
+     "end": 19.893
+    },
+    {
+     "text": "away",
+     "start": 19.893,
+     "end": 20.133
+    },
+    {
+     "text": "before",
+     "start": 20.133,
+     "end": 20.453
+    },
+    {
+     "text": "that",
+     "start": 20.453,
+     "end": 20.653
+    },
+    {
+     "text": "part",
+     "start": 20.653,
+     "end": 20.913
+    },
+    {
+     "text": "which",
+     "start": 21.113,
+     "end": 21.173
+    },
+    {
+     "text": "is",
+     "start": 21.173,
+     "end": 21.293
+    },
+    {
+     "text": "exactly",
+     "start": 21.293,
+     "end": 21.573
+    },
+    {
+     "text": "why",
+     "start": 21.573,
+     "end": 21.953
+    },
+    {
+     "text": "the",
+     "start": 21.953,
+     "end": 22.153
+    },
+    {
+     "text": "points",
+     "start": 22.153,
+     "end": 22.333
+    },
+    {
+     "text": "game",
+     "start": 22.333,
+     "end": 22.593
+    },
+    {
+     "text": "keeps",
+     "start": 22.593,
+     "end": 22.873
+    },
+    {
+     "text": "working.",
+     "start": 22.873,
+     "end": 23.233
+    }
+   ]
+  },
+  {
+   "id": "c1a",
+   "text": "So it starts at the airport. I'm dragging my suitcase past a little booth and the man shouts sir would you like a free flight?",
+   "start": 26.0800625,
+   "end": 31.340062500000002,
+   "words": [
+    {
+     "text": "So",
+     "start": 26.08,
+     "end": 26.2
+    },
+    {
+     "text": "it",
+     "start": 26.2,
+     "end": 26.28
+    },
+    {
+     "text": "starts",
+     "start": 26.28,
+     "end": 26.5
+    },
+    {
+     "text": "at",
+     "start": 26.5,
+     "end": 26.66
+    },
+    {
+     "text": "the",
+     "start": 26.66,
+     "end": 26.76
+    },
+    {
+     "text": "airport.",
+     "start": 26.76,
+     "end": 27.02
+    },
+    {
+     "text": "I'm",
+     "start": 27.44,
+     "end": 27.48
+    },
+    {
+     "text": "dragging",
+     "start": 27.48,
+     "end": 27.74
+    },
+    {
+     "text": "my",
+     "start": 27.74,
+     "end": 27.98
+    },
+    {
+     "text": "suitcase",
+     "start": 27.98,
+     "end": 28.16
+    },
+    {
+     "text": "past",
+     "start": 28.16,
+     "end": 28.64
+    },
+    {
+     "text": "a",
+     "start": 28.64,
+     "end": 28.8
+    },
+    {
+     "text": "little",
+     "start": 28.8,
+     "end": 28.96
+    },
+    {
+     "text": "booth",
+     "start": 28.96,
+     "end": 29.2
+    },
+    {
+     "text": "and",
+     "start": 29.2,
+     "end": 29.48
+    },
+    {
+     "text": "the",
+     "start": 29.48,
+     "end": 29.56
+    },
+    {
+     "text": "man",
+     "start": 29.56,
+     "end": 29.7
+    },
+    {
+     "text": "shouts",
+     "start": 29.7,
+     "end": 29.96
+    },
+    {
+     "text": "sir",
+     "start": 30.36,
+     "end": 30.48
+    },
+    {
+     "text": "would",
+     "start": 30.6,
+     "end": 30.66
+    },
+    {
+     "text": "you",
+     "start": 30.66,
+     "end": 30.76
+    },
+    {
+     "text": "like",
+     "start": 30.76,
+     "end": 30.86
+    },
+    {
+     "text": "a",
+     "start": 30.86,
+     "end": 30.98
+    },
+    {
+     "text": "free",
+     "start": 30.98,
+     "end": 31.1
+    },
+    {
+     "text": "flight?",
+     "start": 31.1,
+     "end": 31.34
+    }
+   ]
+  },
+  {
+   "id": "n1",
+   "text": "And honestly who says no to that? You wouldn't. I definitely didn't.",
+   "start": 32.0170625,
+   "end": 35.6370625,
+   "words": [
+    {
+     "text": "And",
+     "start": 32.017,
+     "end": 32.477
+    },
+    {
+     "text": "honestly",
+     "start": 32.477,
+     "end": 32.797
+    },
+    {
+     "text": "who",
+     "start": 32.997,
+     "end": 33.077
+    },
+    {
+     "text": "says",
+     "start": 33.077,
+     "end": 33.237
+    },
+    {
+     "text": "no",
+     "start": 33.237,
+     "end": 33.377
+    },
+    {
+     "text": "to",
+     "start": 33.377,
+     "end": 33.477
+    },
+    {
+     "text": "that?",
+     "start": 33.477,
+     "end": 33.657
+    },
+    {
+     "text": "You",
+     "start": 33.917,
+     "end": 34.037
+    },
+    {
+     "text": "wouldn't.",
+     "start": 34.037,
+     "end": 34.437
+    },
+    {
+     "text": "I",
+     "start": 34.697,
+     "end": 34.797
+    },
+    {
+     "text": "definitely",
+     "start": 34.797,
+     "end": 35.037
+    },
+    {
+     "text": "didn't.",
+     "start": 35.037,
+     "end": 35.637
+    }
+   ]
+  },
+  {
+   "id": "c1c",
+   "text": "The deal is a shiny airline credit card with sixty thousand bonus points. He says that's a round trip to a beach in Mexico.",
+   "start": 36.21358333333333,
+   "end": 41.453583333333334,
+   "words": [
+    {
+     "text": "The",
+     "start": 36.214,
+     "end": 36.274
+    },
+    {
+     "text": "deal",
+     "start": 36.274,
+     "end": 36.434
+    },
+    {
+     "text": "is",
+     "start": 36.434,
+     "end": 36.654
+    },
+    {
+     "text": "a",
+     "start": 36.654,
+     "end": 36.754
+    },
+    {
+     "text": "shiny",
+     "start": 36.754,
+     "end": 36.954
+    },
+    {
+     "text": "airline",
+     "start": 36.954,
+     "end": 37.234
+    },
+    {
+     "text": "credit",
+     "start": 37.234,
+     "end": 37.594
+    },
+    {
+     "text": "card",
+     "start": 37.594,
+     "end": 37.874
+    },
+    {
+     "text": "with",
+     "start": 37.874,
+     "end": 38.114
+    },
+    {
+     "text": "sixty",
+     "start": 38.114,
+     "end": 38.374
+    },
+    {
+     "text": "thousand",
+     "start": 38.374,
+     "end": 38.734
+    },
+    {
+     "text": "bonus",
+     "start": 38.734,
+     "end": 38.954
+    },
+    {
+     "text": "points.",
+     "start": 38.954,
+     "end": 39.214
+    },
+    {
+     "text": "He",
+     "start": 39.654,
+     "end": 39.734
+    },
+    {
+     "text": "says",
+     "start": 39.734,
+     "end": 39.894
+    },
+    {
+     "text": "that's",
+     "start": 39.894,
+     "end": 40.194
+    },
+    {
+     "text": "a",
+     "start": 40.194,
+     "end": 40.234
+    },
+    {
+     "text": "round",
+     "start": 40.234,
+     "end": 40.394
+    },
+    {
+     "text": "trip",
+     "start": 40.394,
+     "end": 40.594
+    },
+    {
+     "text": "to",
+     "start": 40.594,
+     "end": 40.814
+    },
+    {
+     "text": "a",
+     "start": 40.814,
+     "end": 40.894
+    },
+    {
+     "text": "beach",
+     "start": 40.894,
+     "end": 41.034
+    },
+    {
+     "text": "in",
+     "start": 41.034,
+     "end": 41.234
+    },
+    {
+     "text": "Mexico.",
+     "start": 41.234,
+     "end": 41.454
+    }
+   ]
+  },
+  {
+   "id": "n2",
+   "text": "Me hearing the words free flight.",
+   "start": 42.28664583333333,
+   "end": 43.84664583333333,
+   "words": [
+    {
+     "text": "Me",
+     "start": 42.287,
+     "end": 42.427
+    },
+    {
+     "text": "hearing",
+     "start": 42.427,
+     "end": 42.707
+    },
+    {
+     "text": "the",
+     "start": 42.707,
+     "end": 42.907
+    },
+    {
+     "text": "words",
+     "start": 42.907,
+     "end": 43.107
+    },
+    {
+     "text": "free",
+     "start": 43.387,
+     "end": 43.527
+    },
+    {
+     "text": "flight.",
+     "start": 43.527,
+     "end": 43.847
+    }
+   ]
+  },
+  {
+   "id": "c1e",
+   "text": "There's just one tiny line at the bottom. You have to spend four thousand dollars on the card in your first three months.",
+   "start": 44.5884375,
+   "end": 49.2374375,
+   "words": [
+    {
+     "text": "There's",
+     "start": 44.588,
+     "end": 44.864
+    },
+    {
+     "text": "just",
+     "start": 44.895,
+     "end": 45.068
+    },
+    {
+     "text": "one",
+     "start": 45.087,
+     "end": 45.225
+    },
+    {
+     "text": "tiny",
+     "start": 45.24,
+     "end": 45.413
+    },
+    {
+     "text": "line",
+     "start": 45.432,
+     "end": 45.605
+    },
+    {
+     "text": "at",
+     "start": 45.624,
+     "end": 45.727
+    },
+    {
+     "text": "the",
+     "start": 45.739,
+     "end": 45.877
+    },
+    {
+     "text": "bottom.",
+     "start": 45.892,
+     "end": 46.168
+    },
+    {
+     "text": "You",
+     "start": 46.199,
+     "end": 46.337
+    },
+    {
+     "text": "have",
+     "start": 46.353,
+     "end": 46.525
+    },
+    {
+     "text": "to",
+     "start": 46.544,
+     "end": 46.648
+    },
+    {
+     "text": "spend",
+     "start": 46.659,
+     "end": 46.867
+    },
+    {
+     "text": "four",
+     "start": 46.89,
+     "end": 47.062
+    },
+    {
+     "text": "thousand",
+     "start": 47.081,
+     "end": 47.392
+    },
+    {
+     "text": "dollars",
+     "start": 47.427,
+     "end": 47.703
+    },
+    {
+     "text": "on",
+     "start": 47.734,
+     "end": 47.837
+    },
+    {
+     "text": "the",
+     "start": 47.849,
+     "end": 47.987
+    },
+    {
+     "text": "card",
+     "start": 48.002,
+     "end": 48.175
+    },
+    {
+     "text": "in",
+     "start": 48.194,
+     "end": 48.297
+    },
+    {
+     "text": "your",
+     "start": 48.309,
+     "end": 48.482
+    },
+    {
+     "text": "first",
+     "start": 48.501,
+     "end": 48.708
+    },
+    {
+     "text": "three",
+     "start": 48.731,
+     "end": 48.938
+    },
+    {
+     "text": "months.",
+     "start": 48.961,
+     "end": 49.237
+    }
+   ]
+  },
+  {
+   "id": "c1g",
+   "text": "Here's my problem. I normally put about nine hundred dollars a month on a card. So I'm going to come up short.",
+   "start": 50.00966666666667,
+   "end": 54.699666666666666,
+   "words": [
+    {
+     "text": "Here's",
+     "start": 50.01,
+     "end": 50.278
+    },
+    {
+     "text": "my",
+     "start": 50.308,
+     "end": 50.422
+    },
+    {
+     "text": "problem.",
+     "start": 50.435,
+     "end": 50.78
+    },
+    {
+     "text": "I",
+     "start": 50.818,
+     "end": 50.894
+    },
+    {
+     "text": "normally",
+     "start": 50.903,
+     "end": 51.247
+    },
+    {
+     "text": "put",
+     "start": 51.286,
+     "end": 51.439
+    },
+    {
+     "text": "about",
+     "start": 51.456,
+     "end": 51.685
+    },
+    {
+     "text": "nine",
+     "start": 51.711,
+     "end": 51.902
+    },
+    {
+     "text": "hundred",
+     "start": 51.924,
+     "end": 52.23
+    },
+    {
+     "text": "dollars",
+     "start": 52.264,
+     "end": 52.57
+    },
+    {
+     "text": "a",
+     "start": 52.604,
+     "end": 52.68
+    },
+    {
+     "text": "month",
+     "start": 52.689,
+     "end": 52.919
+    },
+    {
+     "text": "on",
+     "start": 52.944,
+     "end": 53.059
+    },
+    {
+     "text": "a",
+     "start": 53.072,
+     "end": 53.148
+    },
+    {
+     "text": "card.",
+     "start": 53.157,
+     "end": 53.386
+    },
+    {
+     "text": "So",
+     "start": 53.412,
+     "end": 53.527
+    },
+    {
+     "text": "I'm",
+     "start": 53.539,
+     "end": 53.692
+    },
+    {
+     "text": "going",
+     "start": 53.709,
+     "end": 53.939
+    },
+    {
+     "text": "to",
+     "start": 53.965,
+     "end": 54.079
+    },
+    {
+     "text": "come",
+     "start": 54.092,
+     "end": 54.284
+    },
+    {
+     "text": "up",
+     "start": 54.305,
+     "end": 54.42
+    },
+    {
+     "text": "short.",
+     "start": 54.432,
+     "end": 54.7
+    }
+   ]
+  },
+  {
+   "id": "c1h",
+   "text": "To grab my free flight I need to find thirteen hundred dollars of extra stuff to buy. And that's the exact moment I walk past a kayak.",
+   "start": 55.30804166666667,
+   "end": 61.138041666666666,
+   "words": [
+    {
+     "text": "To",
+     "start": 55.308,
+     "end": 55.425
+    },
+    {
+     "text": "grab",
+     "start": 55.438,
+     "end": 55.634
+    },
+    {
+     "text": "my",
+     "start": 55.655,
+     "end": 55.772
+    },
+    {
+     "text": "free",
+     "start": 55.785,
+     "end": 55.981
+    },
+    {
+     "text": "flight",
+     "start": 56.003,
+     "end": 56.276
+    },
+    {
+     "text": "I",
+     "start": 56.306,
+     "end": 56.385
+    },
+    {
+     "text": "need",
+     "start": 56.393,
+     "end": 56.589
+    },
+    {
+     "text": "to",
+     "start": 56.61,
+     "end": 56.727
+    },
+    {
+     "text": "find",
+     "start": 56.74,
+     "end": 56.936
+    },
+    {
+     "text": "thirteen",
+     "start": 56.957,
+     "end": 57.309
+    },
+    {
+     "text": "hundred",
+     "start": 57.348,
+     "end": 57.661
+    },
+    {
+     "text": "dollars",
+     "start": 57.695,
+     "end": 58.008
+    },
+    {
+     "text": "of",
+     "start": 58.043,
+     "end": 58.16
+    },
+    {
+     "text": "extra",
+     "start": 58.173,
+     "end": 58.407
+    },
+    {
+     "text": "stuff",
+     "start": 58.433,
+     "end": 58.668
+    },
+    {
+     "text": "to",
+     "start": 58.694,
+     "end": 58.811
+    },
+    {
+     "text": "buy.",
+     "start": 58.824,
+     "end": 59.019
+    },
+    {
+     "text": "And",
+     "start": 59.041,
+     "end": 59.197
+    },
+    {
+     "text": "that's",
+     "start": 59.215,
+     "end": 59.488
+    },
+    {
+     "text": "the",
+     "start": 59.519,
+     "end": 59.675
+    },
+    {
+     "text": "exact",
+     "start": 59.692,
+     "end": 59.927
+    },
+    {
+     "text": "moment",
+     "start": 59.953,
+     "end": 60.226
+    },
+    {
+     "text": "I",
+     "start": 60.256,
+     "end": 60.335
+    },
+    {
+     "text": "walk",
+     "start": 60.343,
+     "end": 60.539
+    },
+    {
+     "text": "past",
+     "start": 60.56,
+     "end": 60.756
+    },
+    {
+     "text": "a",
+     "start": 60.777,
+     "end": 60.855
+    },
+    {
+     "text": "kayak.",
+     "start": 60.864,
+     "end": 61.138
+    }
+   ]
+  },
+  {
+   "id": "c1i",
+   "text": "I'm nowhere near water. I don't know how to kayak. But the kayak has points on it. So the kayak is coming home.",
+   "start": 61.684895833333336,
+   "end": 67.16489583333333,
+   "words": [
+    {
+     "text": "I'm",
+     "start": 61.685,
+     "end": 61.805
+    },
+    {
+     "text": "nowhere",
+     "start": 61.805,
+     "end": 62.065
+    },
+    {
+     "text": "near",
+     "start": 62.065,
+     "end": 62.285
+    },
+    {
+     "text": "water.",
+     "start": 62.285,
+     "end": 62.645
+    },
+    {
+     "text": "I",
+     "start": 62.965,
+     "end": 63.065
+    },
+    {
+     "text": "don't",
+     "start": 63.065,
+     "end": 63.165
+    },
+    {
+     "text": "know",
+     "start": 63.165,
+     "end": 63.345
+    },
+    {
+     "text": "how",
+     "start": 63.345,
+     "end": 63.465
+    },
+    {
+     "text": "to",
+     "start": 63.465,
+     "end": 63.585
+    },
+    {
+     "text": "kayak.",
+     "start": 63.585,
+     "end": 64.025
+    },
+    {
+     "text": "But",
+     "start": 64.525,
+     "end": 64.625
+    },
+    {
+     "text": "the",
+     "start": 64.625,
+     "end": 64.685
+    },
+    {
+     "text": "kayak",
+     "start": 64.685,
+     "end": 65.045
+    },
+    {
+     "text": "has",
+     "start": 65.045,
+     "end": 65.185
+    },
+    {
+     "text": "points",
+     "start": 65.185,
+     "end": 65.425
+    },
+    {
+     "text": "on",
+     "start": 65.425,
+     "end": 65.685
+    },
+    {
+     "text": "it.",
+     "start": 65.685,
+     "end": 65.825
+    },
+    {
+     "text": "So",
+     "start": 66.085,
+     "end": 66.165
+    },
+    {
+     "text": "the",
+     "start": 66.165,
+     "end": 66.245
+    },
+    {
+     "text": "kayak",
+     "start": 66.245,
+     "end": 66.585
+    },
+    {
+     "text": "is",
+     "start": 66.585,
+     "end": 66.685
+    },
+    {
+     "text": "coming",
+     "start": 66.685,
+     "end": 66.845
+    },
+    {
+     "text": "home.",
+     "start": 66.845,
+     "end": 67.165
+    }
+   ]
+  },
+  {
+   "id": "n3",
+   "text": "Me deciding if I need a kayak.",
+   "start": 67.84689583333333,
+   "end": 69.30689583333333,
+   "words": [
+    {
+     "text": "Me",
+     "start": 67.847,
+     "end": 67.987
+    },
+    {
+     "text": "deciding",
+     "start": 67.987,
+     "end": 68.307
+    },
+    {
+     "text": "if",
+     "start": 68.307,
+     "end": 68.587
+    },
+    {
+     "text": "I",
+     "start": 68.587,
+     "end": 68.687
+    },
+    {
+     "text": "need",
+     "start": 68.687,
+     "end": 68.827
+    },
+    {
+     "text": "a",
+     "start": 68.827,
+     "end": 68.907
+    },
+    {
+     "text": "kayak.",
+     "start": 68.907,
+     "end": 69.307
+    }
+   ]
+  },
+  {
+   "id": "c2a",
+   "text": "Then an air fryer. Then I pay for the whole table at dinner so my friends can pay me back in cash.",
+   "start": 69.85554166666667,
+   "end": 73.75554166666667,
+   "words": [
+    {
+     "text": "Then",
+     "start": 69.856,
+     "end": 69.996
+    },
+    {
+     "text": "an",
+     "start": 69.996,
+     "end": 70.076
+    },
+    {
+     "text": "air",
+     "start": 70.076,
+     "end": 70.216
+    },
+    {
+     "text": "fryer.",
+     "start": 70.216,
+     "end": 70.636
+    },
+    {
+     "text": "Then",
+     "start": 70.856,
+     "end": 71.016
+    },
+    {
+     "text": "I",
+     "start": 71.016,
+     "end": 71.116
+    },
+    {
+     "text": "pay",
+     "start": 71.116,
+     "end": 71.256
+    },
+    {
+     "text": "for",
+     "start": 71.256,
+     "end": 71.416
+    },
+    {
+     "text": "the",
+     "start": 71.416,
+     "end": 71.496
+    },
+    {
+     "text": "whole",
+     "start": 71.496,
+     "end": 71.596
+    },
+    {
+     "text": "table",
+     "start": 71.596,
+     "end": 71.856
+    },
+    {
+     "text": "at",
+     "start": 71.856,
+     "end": 72.056
+    },
+    {
+     "text": "dinner",
+     "start": 72.056,
+     "end": 72.216
+    },
+    {
+     "text": "so",
+     "start": 72.216,
+     "end": 72.456
+    },
+    {
+     "text": "my",
+     "start": 72.456,
+     "end": 72.576
+    },
+    {
+     "text": "friends",
+     "start": 72.576,
+     "end": 72.796
+    },
+    {
+     "text": "can",
+     "start": 72.796,
+     "end": 72.996
+    },
+    {
+     "text": "pay",
+     "start": 72.996,
+     "end": 73.156
+    },
+    {
+     "text": "me",
+     "start": 73.156,
+     "end": 73.256
+    },
+    {
+     "text": "back",
+     "start": 73.256,
+     "end": 73.436
+    },
+    {
+     "text": "in",
+     "start": 73.436,
+     "end": 73.576
+    },
+    {
+     "text": "cash.",
+     "start": 73.576,
+     "end": 73.756
+    }
+   ]
+  },
+  {
+   "id": "c2b",
+   "text": "You've heard that little voice too. The one that says it's basically on sale because I get points.",
+   "start": 74.5109375,
+   "end": 78.2309375,
+   "words": [
+    {
+     "text": "You've",
+     "start": 74.511,
+     "end": 74.651
+    },
+    {
+     "text": "heard",
+     "start": 74.651,
+     "end": 74.731
+    },
+    {
+     "text": "that",
+     "start": 74.731,
+     "end": 74.871
+    },
+    {
+     "text": "little",
+     "start": 74.871,
+     "end": 75.011
+    },
+    {
+     "text": "voice",
+     "start": 75.011,
+     "end": 75.251
+    },
+    {
+     "text": "too.",
+     "start": 75.251,
+     "end": 75.471
+    },
+    {
+     "text": "The",
+     "start": 76.211,
+     "end": 76.271
+    },
+    {
+     "text": "one",
+     "start": 76.271,
+     "end": 76.351
+    },
+    {
+     "text": "that",
+     "start": 76.351,
+     "end": 76.471
+    },
+    {
+     "text": "says",
+     "start": 76.471,
+     "end": 76.591
+    },
+    {
+     "text": "it's",
+     "start": 76.591,
+     "end": 76.771
+    },
+    {
+     "text": "basically",
+     "start": 76.771,
+     "end": 77.031
+    },
+    {
+     "text": "on",
+     "start": 77.031,
+     "end": 77.251
+    },
+    {
+     "text": "sale",
+     "start": 77.251,
+     "end": 77.491
+    },
+    {
+     "text": "because",
+     "start": 77.491,
+     "end": 77.771
+    },
+    {
+     "text": "I",
+     "start": 77.771,
+     "end": 77.911
+    },
+    {
+     "text": "get",
+     "start": 77.911,
+     "end": 78.031
+    },
+    {
+     "text": "points.",
+     "start": 78.031,
+     "end": 78.231
+    }
+   ]
+  },
+  {
+   "id": "n4",
+   "text": "Every shopping trip with a rewards card.",
+   "start": 79.0168125,
+   "end": 80.8968125,
+   "words": [
+    {
+     "text": "Every",
+     "start": 79.017,
+     "end": 79.277
+    },
+    {
+     "text": "shopping",
+     "start": 79.277,
+     "end": 79.517
+    },
+    {
+     "text": "trip",
+     "start": 79.517,
+     "end": 79.877
+    },
+    {
+     "text": "with",
+     "start": 79.877,
+     "end": 80.097
+    },
+    {
+     "text": "a",
+     "start": 80.097,
+     "end": 80.197
+    },
+    {
+     "text": "rewards",
+     "start": 80.197,
+     "end": 80.517
+    },
+    {
+     "text": "card.",
+     "start": 80.517,
+     "end": 80.897
+    }
+   ]
+  },
+  {
+   "id": "c2c",
+   "text": "And somebody actually measured that little voice. Economists at the Chicago Fed studied a bank that had just added one percent cash back to its cards.",
+   "start": 81.487625,
+   "end": 88.36762499999999,
+   "words": [
+    {
+     "text": "And",
+     "start": 81.488,
+     "end": 81.848
+    },
+    {
+     "text": "somebody",
+     "start": 81.848,
+     "end": 82.268
+    },
+    {
+     "text": "actually",
+     "start": 82.268,
+     "end": 82.568
+    },
+    {
+     "text": "measured",
+     "start": 82.568,
+     "end": 82.968
+    },
+    {
+     "text": "that",
+     "start": 82.968,
+     "end": 83.188
+    },
+    {
+     "text": "little",
+     "start": 83.188,
+     "end": 83.348
+    },
+    {
+     "text": "voice.",
+     "start": 83.348,
+     "end": 83.648
+    },
+    {
+     "text": "Economists",
+     "start": 84.368,
+     "end": 84.608
+    },
+    {
+     "text": "at",
+     "start": 84.608,
+     "end": 84.768
+    },
+    {
+     "text": "the",
+     "start": 84.768,
+     "end": 84.868
+    },
+    {
+     "text": "Chicago",
+     "start": 84.868,
+     "end": 85.128
+    },
+    {
+     "text": "Fed",
+     "start": 85.128,
+     "end": 85.448
+    },
+    {
+     "text": "studied",
+     "start": 85.448,
+     "end": 85.828
+    },
+    {
+     "text": "a",
+     "start": 85.828,
+     "end": 85.948
+    },
+    {
+     "text": "bank",
+     "start": 85.948,
+     "end": 86.148
+    },
+    {
+     "text": "that",
+     "start": 86.148,
+     "end": 86.388
+    },
+    {
+     "text": "had",
+     "start": 86.388,
+     "end": 86.488
+    },
+    {
+     "text": "just",
+     "start": 86.488,
+     "end": 86.648
+    },
+    {
+     "text": "added",
+     "start": 86.648,
+     "end": 86.888
+    },
+    {
+     "text": "one",
+     "start": 86.888,
+     "end": 87.148
+    },
+    {
+     "text": "percent",
+     "start": 87.148,
+     "end": 87.428
+    },
+    {
+     "text": "cash",
+     "start": 87.428,
+     "end": 87.648
+    },
+    {
+     "text": "back",
+     "start": 87.648,
+     "end": 87.868
+    },
+    {
+     "text": "to",
+     "start": 87.868,
+     "end": 88.048
+    },
+    {
+     "text": "its",
+     "start": 88.048,
+     "end": 88.148
+    },
+    {
+     "text": "cards.",
+     "start": 88.148,
+     "end": 88.368
+    }
+   ]
+  },
+  {
+   "id": "c2d",
+   "text": "Same customers. Same cards. One tiny new reward. So what do you think happened to their spending?",
+   "start": 89.17779166666666,
+   "end": 93.91779166666666,
+   "words": [
+    {
+     "text": "Same",
+     "start": 89.178,
+     "end": 89.358
+    },
+    {
+     "text": "customers.",
+     "start": 89.358,
+     "end": 89.618
+    },
+    {
+     "text": "Same",
+     "start": 90.178,
+     "end": 90.318
+    },
+    {
+     "text": "cards.",
+     "start": 90.318,
+     "end": 90.578
+    },
+    {
+     "text": "One",
+     "start": 91.198,
+     "end": 91.338
+    },
+    {
+     "text": "tiny",
+     "start": 91.338,
+     "end": 91.638
+    },
+    {
+     "text": "new",
+     "start": 91.638,
+     "end": 91.918
+    },
+    {
+     "text": "reward.",
+     "start": 91.918,
+     "end": 92.198
+    },
+    {
+     "text": "So",
+     "start": 92.678,
+     "end": 92.778
+    },
+    {
+     "text": "what",
+     "start": 92.778,
+     "end": 92.918
+    },
+    {
+     "text": "do",
+     "start": 92.918,
+     "end": 93.018
+    },
+    {
+     "text": "you",
+     "start": 93.018,
+     "end": 93.058
+    },
+    {
+     "text": "think",
+     "start": 93.058,
+     "end": 93.178
+    },
+    {
+     "text": "happened",
+     "start": 93.178,
+     "end": 93.438
+    },
+    {
+     "text": "to",
+     "start": 93.438,
+     "end": 93.598
+    },
+    {
+     "text": "their",
+     "start": 93.598,
+     "end": 93.698
+    },
+    {
+     "text": "spending?",
+     "start": 93.698,
+     "end": 93.918
+    }
+   ]
+  },
+  {
+   "id": "c2e",
+   "text": "It jumped by about seventy dollars a month. And the debt on those cards grew even faster.",
+   "start": 94.66358333333334,
+   "end": 98.44958333333334,
+   "words": [
+    {
+     "text": "It",
+     "start": 94.664,
+     "end": 94.779
+    },
+    {
+     "text": "jumped",
+     "start": 94.791,
+     "end": 95.059
+    },
+    {
+     "text": "by",
+     "start": 95.088,
+     "end": 95.203
+    },
+    {
+     "text": "about",
+     "start": 95.216,
+     "end": 95.445
+    },
+    {
+     "text": "seventy",
+     "start": 95.47,
+     "end": 95.776
+    },
+    {
+     "text": "dollars",
+     "start": 95.81,
+     "end": 96.116
+    },
+    {
+     "text": "a",
+     "start": 96.15,
+     "end": 96.226
+    },
+    {
+     "text": "month.",
+     "start": 96.234,
+     "end": 96.502
+    },
+    {
+     "text": "And",
+     "start": 96.532,
+     "end": 96.684
+    },
+    {
+     "text": "the",
+     "start": 96.701,
+     "end": 96.854
+    },
+    {
+     "text": "debt",
+     "start": 96.871,
+     "end": 97.062
+    },
+    {
+     "text": "on",
+     "start": 97.083,
+     "end": 97.198
+    },
+    {
+     "text": "those",
+     "start": 97.211,
+     "end": 97.44
+    },
+    {
+     "text": "cards",
+     "start": 97.465,
+     "end": 97.695
+    },
+    {
+     "text": "grew",
+     "start": 97.72,
+     "end": 97.911
+    },
+    {
+     "text": "even",
+     "start": 97.932,
+     "end": 98.123
+    },
+    {
+     "text": "faster.",
+     "start": 98.144,
+     "end": 98.45
+    }
+   ]
+  },
+  {
+   "id": "c2f",
+   "text": "Now look at that trade. One percent back on seventy dollars is seventy cents.",
+   "start": 99.3538125,
+   "end": 102.5448125,
+   "words": [
+    {
+     "text": "Now",
+     "start": 99.354,
+     "end": 99.503
+    },
+    {
+     "text": "look",
+     "start": 99.519,
+     "end": 99.705
+    },
+    {
+     "text": "at",
+     "start": 99.726,
+     "end": 99.837
+    },
+    {
+     "text": "that",
+     "start": 99.849,
+     "end": 100.035
+    },
+    {
+     "text": "trade.",
+     "start": 100.056,
+     "end": 100.316
+    },
+    {
+     "text": "One",
+     "start": 100.345,
+     "end": 100.493
+    },
+    {
+     "text": "percent",
+     "start": 100.51,
+     "end": 100.807
+    },
+    {
+     "text": "back",
+     "start": 100.84,
+     "end": 101.026
+    },
+    {
+     "text": "on",
+     "start": 101.047,
+     "end": 101.158
+    },
+    {
+     "text": "seventy",
+     "start": 101.17,
+     "end": 101.468
+    },
+    {
+     "text": "dollars",
+     "start": 101.501,
+     "end": 101.798
+    },
+    {
+     "text": "is",
+     "start": 101.831,
+     "end": 101.942
+    },
+    {
+     "text": "seventy",
+     "start": 101.955,
+     "end": 102.252
+    },
+    {
+     "text": "cents.",
+     "start": 102.285,
+     "end": 102.545
+    }
+   ]
+  },
+  {
+   "id": "c2g",
+   "text": "It's like a bakery that gives you one free cookie for every ten cakes you buy and you walk out thinking you robbed the place.",
+   "start": 103.4828125,
+   "end": 108.4028125,
+   "words": [
+    {
+     "text": "It's",
+     "start": 103.483,
+     "end": 103.643
+    },
+    {
+     "text": "like",
+     "start": 103.643,
+     "end": 103.723
+    },
+    {
+     "text": "a",
+     "start": 103.723,
+     "end": 103.823
+    },
+    {
+     "text": "bakery",
+     "start": 103.823,
+     "end": 104.103
+    },
+    {
+     "text": "that",
+     "start": 104.103,
+     "end": 104.363
+    },
+    {
+     "text": "gives",
+     "start": 104.363,
+     "end": 104.503
+    },
+    {
+     "text": "you",
+     "start": 104.503,
+     "end": 104.663
+    },
+    {
+     "text": "one",
+     "start": 104.663,
+     "end": 104.823
+    },
+    {
+     "text": "free",
+     "start": 104.823,
+     "end": 105.083
+    },
+    {
+     "text": "cookie",
+     "start": 105.083,
+     "end": 105.363
+    },
+    {
+     "text": "for",
+     "start": 105.363,
+     "end": 105.603
+    },
+    {
+     "text": "every",
+     "start": 105.603,
+     "end": 105.783
+    },
+    {
+     "text": "ten",
+     "start": 105.783,
+     "end": 106.023
+    },
+    {
+     "text": "cakes",
+     "start": 106.023,
+     "end": 106.223
+    },
+    {
+     "text": "you",
+     "start": 106.223,
+     "end": 106.443
+    },
+    {
+     "text": "buy",
+     "start": 106.443,
+     "end": 106.643
+    },
+    {
+     "text": "and",
+     "start": 106.643,
+     "end": 106.923
+    },
+    {
+     "text": "you",
+     "start": 106.923,
+     "end": 107.023
+    },
+    {
+     "text": "walk",
+     "start": 107.023,
+     "end": 107.203
+    },
+    {
+     "text": "out",
+     "start": 107.203,
+     "end": 107.423
+    },
+    {
+     "text": "thinking",
+     "start": 107.423,
+     "end": 107.643
+    },
+    {
+     "text": "you",
+     "start": 107.643,
+     "end": 107.963
+    },
+    {
+     "text": "robbed",
+     "start": 107.963,
+     "end": 108.063
+    },
+    {
+     "text": "the",
+     "start": 108.063,
+     "end": 108.223
+    },
+    {
+     "text": "place.",
+     "start": 108.223,
+     "end": 108.403
+    }
+   ]
+  },
+  {
+   "id": "n5",
+   "text": "Me after earning seventy cents for spending seventy dollars.",
+   "start": 109.166875,
+   "end": 111.70687500000001,
+   "words": [
+    {
+     "text": "Me",
+     "start": 109.167,
+     "end": 109.327
+    },
+    {
+     "text": "after",
+     "start": 109.327,
+     "end": 109.567
+    },
+    {
+     "text": "earning",
+     "start": 109.567,
+     "end": 109.807
+    },
+    {
+     "text": "seventy",
+     "start": 109.807,
+     "end": 110.067
+    },
+    {
+     "text": "cents",
+     "start": 110.067,
+     "end": 110.267
+    },
+    {
+     "text": "for",
+     "start": 110.267,
+     "end": 110.667
+    },
+    {
+     "text": "spending",
+     "start": 110.667,
+     "end": 110.887
+    },
+    {
+     "text": "seventy",
+     "start": 110.887,
+     "end": 111.187
+    },
+    {
+     "text": "dollars.",
+     "start": 111.187,
+     "end": 111.707
+    }
+   ]
+  },
+  {
+   "id": "c2h",
+   "text": "So points don't pay you to shop. They get you to shop more and then they hand you back the crumbs.",
+   "start": 112.40416666666667,
+   "end": 115.96416666666667,
+   "words": [
+    {
+     "text": "So",
+     "start": 112.404,
+     "end": 112.604
+    },
+    {
+     "text": "points",
+     "start": 112.784,
+     "end": 112.924
+    },
+    {
+     "text": "don't",
+     "start": 112.924,
+     "end": 113.144
+    },
+    {
+     "text": "pay",
+     "start": 113.144,
+     "end": 113.264
+    },
+    {
+     "text": "you",
+     "start": 113.264,
+     "end": 113.364
+    },
+    {
+     "text": "to",
+     "start": 113.364,
+     "end": 113.464
+    },
+    {
+     "text": "shop.",
+     "start": 113.464,
+     "end": 113.644
+    },
+    {
+     "text": "They",
+     "start": 113.964,
+     "end": 114.084
+    },
+    {
+     "text": "get",
+     "start": 114.084,
+     "end": 114.204
+    },
+    {
+     "text": "you",
+     "start": 114.204,
+     "end": 114.324
+    },
+    {
+     "text": "to",
+     "start": 114.324,
+     "end": 114.404
+    },
+    {
+     "text": "shop",
+     "start": 114.404,
+     "end": 114.564
+    },
+    {
+     "text": "more",
+     "start": 114.564,
+     "end": 114.784
+    },
+    {
+     "text": "and",
+     "start": 114.784,
+     "end": 115.044
+    },
+    {
+     "text": "then",
+     "start": 115.044,
+     "end": 115.144
+    },
+    {
+     "text": "they",
+     "start": 115.144,
+     "end": 115.244
+    },
+    {
+     "text": "hand",
+     "start": 115.244,
+     "end": 115.404
+    },
+    {
+     "text": "you",
+     "start": 115.404,
+     "end": 115.504
+    },
+    {
+     "text": "back",
+     "start": 115.504,
+     "end": 115.604
+    },
+    {
+     "text": "the",
+     "start": 115.604,
+     "end": 115.744
+    },
+    {
+     "text": "crumbs.",
+     "start": 115.744,
+     "end": 115.964
+    }
+   ]
+  },
+  {
+   "id": "c2i",
+   "text": "Three months later I hit my four thousand dollars and I feel like a genius. But I'm thirteen hundred dollars poorer. So I start wondering who invented this game.",
+   "start": 116.6409375,
+   "end": 123.01693750000001,
+   "words": [
+    {
+     "text": "Three",
+     "start": 116.641,
+     "end": 116.854
+    },
+    {
+     "text": "months",
+     "start": 116.878,
+     "end": 117.127
+    },
+    {
+     "text": "later",
+     "start": 117.155,
+     "end": 117.368
+    },
+    {
+     "text": "I",
+     "start": 117.392,
+     "end": 117.463
+    },
+    {
+     "text": "hit",
+     "start": 117.471,
+     "end": 117.613
+    },
+    {
+     "text": "my",
+     "start": 117.629,
+     "end": 117.735
+    },
+    {
+     "text": "four",
+     "start": 117.747,
+     "end": 117.925
+    },
+    {
+     "text": "thousand",
+     "start": 117.945,
+     "end": 118.265
+    },
+    {
+     "text": "dollars",
+     "start": 118.3,
+     "end": 118.585
+    },
+    {
+     "text": "and",
+     "start": 118.616,
+     "end": 118.759
+    },
+    {
+     "text": "I",
+     "start": 118.774,
+     "end": 118.845
+    },
+    {
+     "text": "feel",
+     "start": 118.853,
+     "end": 119.031
+    },
+    {
+     "text": "like",
+     "start": 119.051,
+     "end": 119.229
+    },
+    {
+     "text": "a",
+     "start": 119.248,
+     "end": 119.32
+    },
+    {
+     "text": "genius.",
+     "start": 119.327,
+     "end": 119.612
+    },
+    {
+     "text": "But",
+     "start": 119.643,
+     "end": 119.786
+    },
+    {
+     "text": "I'm",
+     "start": 119.801,
+     "end": 119.944
+    },
+    {
+     "text": "thirteen",
+     "start": 119.96,
+     "end": 120.28
+    },
+    {
+     "text": "hundred",
+     "start": 120.315,
+     "end": 120.6
+    },
+    {
+     "text": "dollars",
+     "start": 120.631,
+     "end": 120.916
+    },
+    {
+     "text": "poorer.",
+     "start": 120.947,
+     "end": 121.232
+    },
+    {
+     "text": "So",
+     "start": 121.263,
+     "end": 121.37
+    },
+    {
+     "text": "I",
+     "start": 121.382,
+     "end": 121.453
+    },
+    {
+     "text": "start",
+     "start": 121.461,
+     "end": 121.674
+    },
+    {
+     "text": "wondering",
+     "start": 121.698,
+     "end": 122.053
+    },
+    {
+     "text": "who",
+     "start": 122.093,
+     "end": 122.235
+    },
+    {
+     "text": "invented",
+     "start": 122.251,
+     "end": 122.571
+    },
+    {
+     "text": "this",
+     "start": 122.606,
+     "end": 122.784
+    },
+    {
+     "text": "game.",
+     "start": 122.804,
+     "end": 123.017
+    }
+   ]
+  },
+  {
+   "id": "c3a",
+   "text": "So I ask my grandma. Grandma remembers everything. And she pulls a little green book out of a kitchen drawer.",
+   "start": 123.73808333333334,
+   "end": 129.73808333333335,
+   "words": [
+    {
+     "text": "So",
+     "start": 123.738,
+     "end": 123.998
+    },
+    {
+     "text": "I",
+     "start": 124.478,
+     "end": 124.698
+    },
+    {
+     "text": "ask",
+     "start": 124.698,
+     "end": 124.898
+    },
+    {
+     "text": "my",
+     "start": 124.898,
+     "end": 125.098
+    },
+    {
+     "text": "grandma.",
+     "start": 125.098,
+     "end": 125.278
+    },
+    {
+     "text": "Grandma",
+     "start": 125.818,
+     "end": 126.078
+    },
+    {
+     "text": "remembers",
+     "start": 126.078,
+     "end": 126.398
+    },
+    {
+     "text": "everything.",
+     "start": 126.398,
+     "end": 126.958
+    },
+    {
+     "text": "And",
+     "start": 127.498,
+     "end": 127.618
+    },
+    {
+     "text": "she",
+     "start": 127.618,
+     "end": 127.738
+    },
+    {
+     "text": "pulls",
+     "start": 127.738,
+     "end": 127.958
+    },
+    {
+     "text": "a",
+     "start": 127.958,
+     "end": 128.218
+    },
+    {
+     "text": "little",
+     "start": 128.218,
+     "end": 128.358
+    },
+    {
+     "text": "green",
+     "start": 128.358,
+     "end": 128.558
+    },
+    {
+     "text": "book",
+     "start": 128.558,
+     "end": 128.858
+    },
+    {
+     "text": "out",
+     "start": 128.858,
+     "end": 129.078
+    },
+    {
+     "text": "of",
+     "start": 129.078,
+     "end": 129.178
+    },
+    {
+     "text": "a",
+     "start": 129.178,
+     "end": 129.238
+    },
+    {
+     "text": "kitchen",
+     "start": 129.238,
+     "end": 129.378
+    },
+    {
+     "text": "drawer.",
+     "start": 129.378,
+     "end": 129.738
+    }
+   ]
+  },
+  {
+   "id": "c3b",
+   "text": "Green stamps. Back in her day every time you bought groceries the shop gave you a strip of stamps. You licked them and stuck them in a book. And full books got you a toaster.",
+   "start": 130.39735416666667,
+   "end": 137.99735416666667,
+   "words": [
+    {
+     "text": "Green",
+     "start": 130.397,
+     "end": 130.537
+    },
+    {
+     "text": "stamps.",
+     "start": 130.537,
+     "end": 130.897
+    },
+    {
+     "text": "Back",
+     "start": 130.897,
+     "end": 131.617
+    },
+    {
+     "text": "in",
+     "start": 131.617,
+     "end": 131.777
+    },
+    {
+     "text": "her",
+     "start": 131.777,
+     "end": 131.877
+    },
+    {
+     "text": "day",
+     "start": 131.877,
+     "end": 132.077
+    },
+    {
+     "text": "every",
+     "start": 132.137,
+     "end": 132.337
+    },
+    {
+     "text": "time",
+     "start": 132.337,
+     "end": 132.537
+    },
+    {
+     "text": "you",
+     "start": 132.537,
+     "end": 132.677
+    },
+    {
+     "text": "bought",
+     "start": 132.677,
+     "end": 132.817
+    },
+    {
+     "text": "groceries",
+     "start": 132.817,
+     "end": 133.017
+    },
+    {
+     "text": "the",
+     "start": 133.437,
+     "end": 133.457
+    },
+    {
+     "text": "shop",
+     "start": 133.457,
+     "end": 133.617
+    },
+    {
+     "text": "gave",
+     "start": 133.617,
+     "end": 133.857
+    },
+    {
+     "text": "you",
+     "start": 133.857,
+     "end": 134.017
+    },
+    {
+     "text": "a",
+     "start": 134.017,
+     "end": 134.057
+    },
+    {
+     "text": "strip",
+     "start": 134.057,
+     "end": 134.237
+    },
+    {
+     "text": "of",
+     "start": 134.237,
+     "end": 134.377
+    },
+    {
+     "text": "stamps.",
+     "start": 134.377,
+     "end": 134.537
+    },
+    {
+     "text": "You",
+     "start": 135.097,
+     "end": 135.117
+    },
+    {
+     "text": "licked",
+     "start": 135.117,
+     "end": 135.357
+    },
+    {
+     "text": "them",
+     "start": 135.357,
+     "end": 135.537
+    },
+    {
+     "text": "and",
+     "start": 135.537,
+     "end": 135.737
+    },
+    {
+     "text": "stuck",
+     "start": 135.737,
+     "end": 135.937
+    },
+    {
+     "text": "them",
+     "start": 135.937,
+     "end": 136.117
+    },
+    {
+     "text": "in",
+     "start": 136.117,
+     "end": 136.197
+    },
+    {
+     "text": "a",
+     "start": 136.197,
+     "end": 136.257
+    },
+    {
+     "text": "book.",
+     "start": 136.257,
+     "end": 136.417
+    },
+    {
+     "text": "And",
+     "start": 136.717,
+     "end": 136.837
+    },
+    {
+     "text": "full",
+     "start": 136.837,
+     "end": 137.017
+    },
+    {
+     "text": "books",
+     "start": 137.017,
+     "end": 137.257
+    },
+    {
+     "text": "got",
+     "start": 137.257,
+     "end": 137.477
+    },
+    {
+     "text": "you",
+     "start": 137.477,
+     "end": 137.617
+    },
+    {
+     "text": "a",
+     "start": 137.617,
+     "end": 137.697
+    },
+    {
+     "text": "toaster.",
+     "start": 137.697,
+     "end": 137.997
+    }
+   ]
+  },
+  {
+   "id": "c3d",
+   "text": "People went nuts for them. At one point that company was printing more stamps than the United States Post Office.",
+   "start": 138.7115,
+   "end": 143.2715,
+   "words": [
+    {
+     "text": "People",
+     "start": 138.712,
+     "end": 138.931
+    },
+    {
+     "text": "went",
+     "start": 138.931,
+     "end": 139.072
+    },
+    {
+     "text": "nuts",
+     "start": 139.072,
+     "end": 139.272
+    },
+    {
+     "text": "for",
+     "start": 139.272,
+     "end": 139.492
+    },
+    {
+     "text": "them.",
+     "start": 139.492,
+     "end": 139.672
+    },
+    {
+     "text": "At",
+     "start": 140.131,
+     "end": 140.232
+    },
+    {
+     "text": "one",
+     "start": 140.232,
+     "end": 140.351
+    },
+    {
+     "text": "point",
+     "start": 140.351,
+     "end": 140.612
+    },
+    {
+     "text": "that",
+     "start": 140.612,
+     "end": 140.772
+    },
+    {
+     "text": "company",
+     "start": 140.772,
+     "end": 140.992
+    },
+    {
+     "text": "was",
+     "start": 140.992,
+     "end": 141.191
+    },
+    {
+     "text": "printing",
+     "start": 141.191,
+     "end": 141.411
+    },
+    {
+     "text": "more",
+     "start": 141.411,
+     "end": 141.672
+    },
+    {
+     "text": "stamps",
+     "start": 141.672,
+     "end": 141.832
+    },
+    {
+     "text": "than",
+     "start": 141.832,
+     "end": 142.191
+    },
+    {
+     "text": "the",
+     "start": 142.191,
+     "end": 142.272
+    },
+    {
+     "text": "United",
+     "start": 142.272,
+     "end": 142.392
+    },
+    {
+     "text": "States",
+     "start": 142.392,
+     "end": 142.772
+    },
+    {
+     "text": "Post",
+     "start": 142.772,
+     "end": 142.971
+    },
+    {
+     "text": "Office.",
+     "start": 142.971,
+     "end": 143.272
+    }
+   ]
+  },
+  {
+   "id": "c3e",
+   "text": "And here's the clever bit. The shop had to buy those stamps. And a shop only gets its money from one place. You.",
+   "start": 143.99195833333334,
+   "end": 149.49195833333334,
+   "words": [
+    {
+     "text": "And",
+     "start": 143.992,
+     "end": 144.192
+    },
+    {
+     "text": "here's",
+     "start": 144.192,
+     "end": 144.432
+    },
+    {
+     "text": "the",
+     "start": 144.432,
+     "end": 144.552
+    },
+    {
+     "text": "clever",
+     "start": 144.552,
+     "end": 144.612
+    },
+    {
+     "text": "bit.",
+     "start": 144.612,
+     "end": 144.952
+    },
+    {
+     "text": "The",
+     "start": 145.592,
+     "end": 145.592
+    },
+    {
+     "text": "shop",
+     "start": 145.592,
+     "end": 145.752
+    },
+    {
+     "text": "had",
+     "start": 145.752,
+     "end": 145.952
+    },
+    {
+     "text": "to",
+     "start": 145.952,
+     "end": 146.092
+    },
+    {
+     "text": "buy",
+     "start": 146.092,
+     "end": 146.232
+    },
+    {
+     "text": "those",
+     "start": 146.232,
+     "end": 146.432
+    },
+    {
+     "text": "stamps.",
+     "start": 146.432,
+     "end": 146.712
+    },
+    {
+     "text": "And",
+     "start": 147.192,
+     "end": 147.272
+    },
+    {
+     "text": "a",
+     "start": 147.272,
+     "end": 147.352
+    },
+    {
+     "text": "shop",
+     "start": 147.352,
+     "end": 147.532
+    },
+    {
+     "text": "only",
+     "start": 147.532,
+     "end": 147.752
+    },
+    {
+     "text": "gets",
+     "start": 147.752,
+     "end": 147.952
+    },
+    {
+     "text": "its",
+     "start": 147.952,
+     "end": 148.112
+    },
+    {
+     "text": "money",
+     "start": 148.112,
+     "end": 148.292
+    },
+    {
+     "text": "from",
+     "start": 148.292,
+     "end": 148.512
+    },
+    {
+     "text": "one",
+     "start": 148.512,
+     "end": 148.652
+    },
+    {
+     "text": "place.",
+     "start": 148.652,
+     "end": 148.972
+    },
+    {
+     "text": "You.",
+     "start": 149.312,
+     "end": 149.492
+    }
+   ]
+  },
+  {
+   "id": "c3f",
+   "text": "Grandma goes so I paid for my own free toaster? Yes Grandma. And you licked the receipt.",
+   "start": 150.12791666666666,
+   "end": 154.10791666666665,
+   "words": [
+    {
+     "text": "Grandma",
+     "start": 150.128,
+     "end": 150.488
+    },
+    {
+     "text": "goes",
+     "start": 150.488,
+     "end": 150.668
+    },
+    {
+     "text": "so",
+     "start": 150.668,
+     "end": 151.008
+    },
+    {
+     "text": "I",
+     "start": 151.008,
+     "end": 151.088
+    },
+    {
+     "text": "paid",
+     "start": 151.088,
+     "end": 151.228
+    },
+    {
+     "text": "for",
+     "start": 151.228,
+     "end": 151.388
+    },
+    {
+     "text": "my",
+     "start": 151.388,
+     "end": 151.508
+    },
+    {
+     "text": "own",
+     "start": 151.508,
+     "end": 151.628
+    },
+    {
+     "text": "free",
+     "start": 151.628,
+     "end": 151.788
+    },
+    {
+     "text": "toaster?",
+     "start": 151.788,
+     "end": 152.168
+    },
+    {
+     "text": "Yes",
+     "start": 152.468,
+     "end": 152.668
+    },
+    {
+     "text": "Grandma.",
+     "start": 152.668,
+     "end": 152.948
+    },
+    {
+     "text": "And",
+     "start": 153.388,
+     "end": 153.468
+    },
+    {
+     "text": "you",
+     "start": 153.468,
+     "end": 153.568
+    },
+    {
+     "text": "licked",
+     "start": 153.568,
+     "end": 153.768
+    },
+    {
+     "text": "the",
+     "start": 153.768,
+     "end": 153.888
+    },
+    {
+     "text": "receipt.",
+     "start": 153.888,
+     "end": 154.108
+    }
+   ]
+  },
+  {
+   "id": "n6",
+   "text": "Grandma realizing the toaster wasn't free.",
+   "start": 154.7966875,
+   "end": 156.61668749999998,
+   "words": [
+    {
+     "text": "Grandma",
+     "start": 154.797,
+     "end": 155.097
+    },
+    {
+     "text": "realizing",
+     "start": 155.317,
+     "end": 155.537
+    },
+    {
+     "text": "the",
+     "start": 155.537,
+     "end": 155.757
+    },
+    {
+     "text": "toaster",
+     "start": 155.757,
+     "end": 156.077
+    },
+    {
+     "text": "wasn't",
+     "start": 156.077,
+     "end": 156.417
+    },
+    {
+     "text": "free.",
+     "start": 156.417,
+     "end": 156.617
+    }
+   ]
+  },
+  {
+   "id": "c3g",
+   "text": "Then in nineteen eighty one an airline did the same thing with a computer instead of glue. And pretty soon everybody copied it.",
+   "start": 157.28297916666668,
+   "end": 162.70597916666668,
+   "words": [
+    {
+     "text": "Then",
+     "start": 157.283,
+     "end": 157.474
+    },
+    {
+     "text": "in",
+     "start": 157.496,
+     "end": 157.61
+    },
+    {
+     "text": "nineteen",
+     "start": 157.623,
+     "end": 157.967
+    },
+    {
+     "text": "eighty",
+     "start": 158.005,
+     "end": 158.273
+    },
+    {
+     "text": "one",
+     "start": 158.303,
+     "end": 158.456
+    },
+    {
+     "text": "an",
+     "start": 158.473,
+     "end": 158.588
+    },
+    {
+     "text": "airline",
+     "start": 158.601,
+     "end": 158.907
+    },
+    {
+     "text": "did",
+     "start": 158.941,
+     "end": 159.093
+    },
+    {
+     "text": "the",
+     "start": 159.111,
+     "end": 159.263
+    },
+    {
+     "text": "same",
+     "start": 159.28,
+     "end": 159.472
+    },
+    {
+     "text": "thing",
+     "start": 159.493,
+     "end": 159.723
+    },
+    {
+     "text": "with",
+     "start": 159.748,
+     "end": 159.939
+    },
+    {
+     "text": "a",
+     "start": 159.96,
+     "end": 160.037
+    },
+    {
+     "text": "computer",
+     "start": 160.045,
+     "end": 160.39
+    },
+    {
+     "text": "instead",
+     "start": 160.428,
+     "end": 160.734
+    },
+    {
+     "text": "of",
+     "start": 160.768,
+     "end": 160.883
+    },
+    {
+     "text": "glue.",
+     "start": 160.895,
+     "end": 161.125
+    },
+    {
+     "text": "And",
+     "start": 161.15,
+     "end": 161.303
+    },
+    {
+     "text": "pretty",
+     "start": 161.32,
+     "end": 161.588
+    },
+    {
+     "text": "soon",
+     "start": 161.618,
+     "end": 161.809
+    },
+    {
+     "text": "everybody",
+     "start": 161.831,
+     "end": 162.213
+    },
+    {
+     "text": "copied",
+     "start": 162.255,
+     "end": 162.523
+    },
+    {
+     "text": "it.",
+     "start": 162.553,
+     "end": 162.706
+    }
+   ]
+  },
+  {
+   "id": "c3g2",
+   "text": "Grandma holds her stamp book next to my shiny card. She squints. And she says they're the same picture.",
+   "start": 163.29108333333335,
+   "end": 167.45108333333334,
+   "words": [
+    {
+     "text": "Grandma",
+     "start": 163.291,
+     "end": 163.531
+    },
+    {
+     "text": "holds",
+     "start": 163.531,
+     "end": 163.691
+    },
+    {
+     "text": "her",
+     "start": 163.691,
+     "end": 163.871
+    },
+    {
+     "text": "stamp",
+     "start": 163.871,
+     "end": 164.071
+    },
+    {
+     "text": "book",
+     "start": 164.071,
+     "end": 164.251
+    },
+    {
+     "text": "next",
+     "start": 164.251,
+     "end": 164.451
+    },
+    {
+     "text": "to",
+     "start": 164.451,
+     "end": 164.611
+    },
+    {
+     "text": "my",
+     "start": 164.611,
+     "end": 164.691
+    },
+    {
+     "text": "shiny",
+     "start": 164.691,
+     "end": 164.871
+    },
+    {
+     "text": "card.",
+     "start": 164.871,
+     "end": 165.211
+    },
+    {
+     "text": "She",
+     "start": 165.591,
+     "end": 165.631
+    },
+    {
+     "text": "squints.",
+     "start": 165.631,
+     "end": 165.951
+    },
+    {
+     "text": "And",
+     "start": 166.431,
+     "end": 166.471
+    },
+    {
+     "text": "she",
+     "start": 166.471,
+     "end": 166.571
+    },
+    {
+     "text": "says",
+     "start": 166.571,
+     "end": 166.771
+    },
+    {
+     "text": "they're",
+     "start": 166.771,
+     "end": 166.991
+    },
+    {
+     "text": "the",
+     "start": 166.991,
+     "end": 167.071
+    },
+    {
+     "text": "same",
+     "start": 167.071,
+     "end": 167.211
+    },
+    {
+     "text": "picture.",
+     "start": 167.211,
+     "end": 167.451
+    }
+   ]
+  },
+  {
+   "id": "c3h",
+   "text": "But her stamps had one honest feature. A full book bought the same toaster this year and next year. My points? Not so much.",
+   "start": 168.16425,
+   "end": 174.10425,
+   "words": [
+    {
+     "text": "But",
+     "start": 168.164,
+     "end": 168.264
+    },
+    {
+     "text": "her",
+     "start": 168.264,
+     "end": 168.324
+    },
+    {
+     "text": "stamps",
+     "start": 168.324,
+     "end": 168.484
+    },
+    {
+     "text": "had",
+     "start": 168.484,
+     "end": 168.784
+    },
+    {
+     "text": "one",
+     "start": 168.784,
+     "end": 168.984
+    },
+    {
+     "text": "honest",
+     "start": 168.984,
+     "end": 169.264
+    },
+    {
+     "text": "feature.",
+     "start": 169.264,
+     "end": 169.564
+    },
+    {
+     "text": "A",
+     "start": 169.984,
+     "end": 170.044
+    },
+    {
+     "text": "full",
+     "start": 170.044,
+     "end": 170.184
+    },
+    {
+     "text": "book",
+     "start": 170.184,
+     "end": 170.424
+    },
+    {
+     "text": "bought",
+     "start": 170.424,
+     "end": 170.644
+    },
+    {
+     "text": "the",
+     "start": 170.644,
+     "end": 170.784
+    },
+    {
+     "text": "same",
+     "start": 170.784,
+     "end": 170.944
+    },
+    {
+     "text": "toaster",
+     "start": 170.944,
+     "end": 171.304
+    },
+    {
+     "text": "this",
+     "start": 171.304,
+     "end": 171.484
+    },
+    {
+     "text": "year",
+     "start": 171.484,
+     "end": 171.744
+    },
+    {
+     "text": "and",
+     "start": 171.744,
+     "end": 171.944
+    },
+    {
+     "text": "next",
+     "start": 171.944,
+     "end": 172.104
+    },
+    {
+     "text": "year.",
+     "start": 172.104,
+     "end": 172.404
+    },
+    {
+     "text": "My",
+     "start": 172.884,
+     "end": 172.904
+    },
+    {
+     "text": "points?",
+     "start": 172.904,
+     "end": 173.144
+    },
+    {
+     "text": "Not",
+     "start": 173.744,
+     "end": 173.744
+    },
+    {
+     "text": "so",
+     "start": 173.744,
+     "end": 173.924
+    },
+    {
+     "text": "much.",
+     "start": 173.924,
+     "end": 174.104
+    }
+   ]
+  },
+  {
+   "id": "c4a",
+   "text": "Quick guess for you. I now have sixty four thousand points. Is one point worth ten cents? Five cents? Or one cent?",
+   "start": 177.01310416666666,
+   "end": 182.16610416666666,
+   "words": [
+    {
+     "text": "Quick",
+     "start": 177.013,
+     "end": 177.256
+    },
+    {
+     "text": "guess",
+     "start": 177.283,
+     "end": 177.526
+    },
+    {
+     "text": "for",
+     "start": 177.554,
+     "end": 177.716
+    },
+    {
+     "text": "you.",
+     "start": 177.734,
+     "end": 177.936
+    },
+    {
+     "text": "I",
+     "start": 177.959,
+     "end": 178.04
+    },
+    {
+     "text": "now",
+     "start": 178.049,
+     "end": 178.211
+    },
+    {
+     "text": "have",
+     "start": 178.229,
+     "end": 178.432
+    },
+    {
+     "text": "sixty",
+     "start": 178.454,
+     "end": 178.698
+    },
+    {
+     "text": "four",
+     "start": 178.725,
+     "end": 178.927
+    },
+    {
+     "text": "thousand",
+     "start": 178.95,
+     "end": 179.315
+    },
+    {
+     "text": "points.",
+     "start": 179.355,
+     "end": 179.68
+    },
+    {
+     "text": "Is",
+     "start": 179.716,
+     "end": 179.837
+    },
+    {
+     "text": "one",
+     "start": 179.851,
+     "end": 180.013
+    },
+    {
+     "text": "point",
+     "start": 180.031,
+     "end": 180.274
+    },
+    {
+     "text": "worth",
+     "start": 180.301,
+     "end": 180.544
+    },
+    {
+     "text": "ten",
+     "start": 180.571,
+     "end": 180.734
+    },
+    {
+     "text": "cents?",
+     "start": 180.752,
+     "end": 181.035
+    },
+    {
+     "text": "Five",
+     "start": 181.067,
+     "end": 181.27
+    },
+    {
+     "text": "cents?",
+     "start": 181.292,
+     "end": 181.576
+    },
+    {
+     "text": "Or",
+     "start": 181.607,
+     "end": 181.729
+    },
+    {
+     "text": "one",
+     "start": 181.743,
+     "end": 181.905
+    },
+    {
+     "text": "cent?",
+     "start": 181.923,
+     "end": 182.166
+    }
+   ]
+  },
+  {
+   "id": "c4b",
+   "text": "Put your answer in the comments. It comes back in a minute.",
+   "start": 182.85608333333334,
+   "end": 184.81608333333335,
+   "words": [
+    {
+     "text": "Put",
+     "start": 182.856,
+     "end": 182.916
+    },
+    {
+     "text": "your",
+     "start": 182.916,
+     "end": 183.036
+    },
+    {
+     "text": "answer",
+     "start": 183.036,
+     "end": 183.256
+    },
+    {
+     "text": "in",
+     "start": 183.256,
+     "end": 183.396
+    },
+    {
+     "text": "the",
+     "start": 183.396,
+     "end": 183.476
+    },
+    {
+     "text": "comments.",
+     "start": 183.476,
+     "end": 183.736
+    },
+    {
+     "text": "It",
+     "start": 184.056,
+     "end": 184.116
+    },
+    {
+     "text": "comes",
+     "start": 184.116,
+     "end": 184.256
+    },
+    {
+     "text": "back",
+     "start": 184.256,
+     "end": 184.476
+    },
+    {
+     "text": "in",
+     "start": 184.476,
+     "end": 184.616
+    },
+    {
+     "text": "a",
+     "start": 184.616,
+     "end": 184.656
+    },
+    {
+     "text": "minute.",
+     "start": 184.656,
+     "end": 184.816
+    }
+   ]
+  },
+  {
+   "id": "c4c",
+   "text": "While you think about it where do points even come from? The airline just makes them up on a computer. For free.",
+   "start": 185.5289375,
+   "end": 190.64893750000002,
+   "words": [
+    {
+     "text": "While",
+     "start": 185.529,
+     "end": 185.709
+    },
+    {
+     "text": "you",
+     "start": 185.709,
+     "end": 185.889
+    },
+    {
+     "text": "think",
+     "start": 185.889,
+     "end": 186.069
+    },
+    {
+     "text": "about",
+     "start": 186.069,
+     "end": 186.309
+    },
+    {
+     "text": "it",
+     "start": 186.309,
+     "end": 186.489
+    },
+    {
+     "text": "where",
+     "start": 186.709,
+     "end": 186.849
+    },
+    {
+     "text": "do",
+     "start": 186.849,
+     "end": 186.989
+    },
+    {
+     "text": "points",
+     "start": 186.989,
+     "end": 187.229
+    },
+    {
+     "text": "even",
+     "start": 187.229,
+     "end": 187.429
+    },
+    {
+     "text": "come",
+     "start": 187.429,
+     "end": 187.689
+    },
+    {
+     "text": "from?",
+     "start": 187.689,
+     "end": 187.949
+    },
+    {
+     "text": "The",
+     "start": 188.289,
+     "end": 188.389
+    },
+    {
+     "text": "airline",
+     "start": 188.389,
+     "end": 188.549
+    },
+    {
+     "text": "just",
+     "start": 188.549,
+     "end": 188.889
+    },
+    {
+     "text": "makes",
+     "start": 188.889,
+     "end": 189.069
+    },
+    {
+     "text": "them",
+     "start": 189.069,
+     "end": 189.269
+    },
+    {
+     "text": "up",
+     "start": 189.269,
+     "end": 189.409
+    },
+    {
+     "text": "on",
+     "start": 189.409,
+     "end": 189.529
+    },
+    {
+     "text": "a",
+     "start": 189.529,
+     "end": 189.609
+    },
+    {
+     "text": "computer.",
+     "start": 189.609,
+     "end": 189.889
+    },
+    {
+     "text": "For",
+     "start": 190.289,
+     "end": 190.409
+    },
+    {
+     "text": "free.",
+     "start": 190.409,
+     "end": 190.649
+    }
+   ]
+  },
+  {
+   "id": "c4d",
+   "text": "Then it sells them by the billion to the bank behind my card. And the bank hands them to me every time I swipe.",
+   "start": 191.29729166666667,
+   "end": 195.89729166666666,
+   "words": [
+    {
+     "text": "Then",
+     "start": 191.297,
+     "end": 191.517
+    },
+    {
+     "text": "it",
+     "start": 191.637,
+     "end": 191.717
+    },
+    {
+     "text": "sells",
+     "start": 191.717,
+     "end": 191.837
+    },
+    {
+     "text": "them",
+     "start": 191.837,
+     "end": 192.037
+    },
+    {
+     "text": "by",
+     "start": 192.037,
+     "end": 192.157
+    },
+    {
+     "text": "the",
+     "start": 192.157,
+     "end": 192.257
+    },
+    {
+     "text": "billion",
+     "start": 192.257,
+     "end": 192.417
+    },
+    {
+     "text": "to",
+     "start": 192.417,
+     "end": 192.697
+    },
+    {
+     "text": "the",
+     "start": 192.697,
+     "end": 192.777
+    },
+    {
+     "text": "bank",
+     "start": 192.777,
+     "end": 192.897
+    },
+    {
+     "text": "behind",
+     "start": 192.897,
+     "end": 193.137
+    },
+    {
+     "text": "my",
+     "start": 193.137,
+     "end": 193.297
+    },
+    {
+     "text": "card.",
+     "start": 193.297,
+     "end": 193.497
+    },
+    {
+     "text": "And",
+     "start": 194.157,
+     "end": 194.297
+    },
+    {
+     "text": "the",
+     "start": 194.297,
+     "end": 194.377
+    },
+    {
+     "text": "bank",
+     "start": 194.377,
+     "end": 194.517
+    },
+    {
+     "text": "hands",
+     "start": 194.517,
+     "end": 194.737
+    },
+    {
+     "text": "them",
+     "start": 194.737,
+     "end": 194.957
+    },
+    {
+     "text": "to",
+     "start": 194.957,
+     "end": 195.097
+    },
+    {
+     "text": "me",
+     "start": 195.097,
+     "end": 195.217
+    },
+    {
+     "text": "every",
+     "start": 195.217,
+     "end": 195.397
+    },
+    {
+     "text": "time",
+     "start": 195.397,
+     "end": 195.637
+    },
+    {
+     "text": "I",
+     "start": 195.637,
+     "end": 195.757
+    },
+    {
+     "text": "swipe.",
+     "start": 195.757,
+     "end": 195.897
+    }
+   ]
+  },
+  {
+   "id": "c4e",
+   "text": "Which means the airline gets paid when I buy groceries. And when I fill my tank. And when I buy a kayak.",
+   "start": 196.50847916666666,
+   "end": 201.18847916666667,
+   "words": [
+    {
+     "text": "Which",
+     "start": 196.508,
+     "end": 196.628
+    },
+    {
+     "text": "means",
+     "start": 196.628,
+     "end": 196.788
+    },
+    {
+     "text": "the",
+     "start": 196.788,
+     "end": 197.048
+    },
+    {
+     "text": "airline",
+     "start": 197.048,
+     "end": 197.248
+    },
+    {
+     "text": "gets",
+     "start": 197.248,
+     "end": 197.548
+    },
+    {
+     "text": "paid",
+     "start": 197.548,
+     "end": 197.768
+    },
+    {
+     "text": "when",
+     "start": 197.768,
+     "end": 197.948
+    },
+    {
+     "text": "I",
+     "start": 197.948,
+     "end": 198.028
+    },
+    {
+     "text": "buy",
+     "start": 198.028,
+     "end": 198.168
+    },
+    {
+     "text": "groceries.",
+     "start": 198.168,
+     "end": 198.428
+    },
+    {
+     "text": "And",
+     "start": 198.908,
+     "end": 199.088
+    },
+    {
+     "text": "when",
+     "start": 199.088,
+     "end": 199.248
+    },
+    {
+     "text": "I",
+     "start": 199.248,
+     "end": 199.348
+    },
+    {
+     "text": "fill",
+     "start": 199.348,
+     "end": 199.448
+    },
+    {
+     "text": "my",
+     "start": 199.448,
+     "end": 199.568
+    },
+    {
+     "text": "tank.",
+     "start": 199.568,
+     "end": 199.768
+    },
+    {
+     "text": "And",
+     "start": 200.148,
+     "end": 200.348
+    },
+    {
+     "text": "when",
+     "start": 200.348,
+     "end": 200.548
+    },
+    {
+     "text": "I",
+     "start": 200.548,
+     "end": 200.608
+    },
+    {
+     "text": "buy",
+     "start": 200.608,
+     "end": 200.748
+    },
+    {
+     "text": "a",
+     "start": 200.748,
+     "end": 200.868
+    },
+    {
+     "text": "kayak.",
+     "start": 200.868,
+     "end": 201.188
+    }
+   ]
+  },
+  {
+   "id": "c4f",
+   "text": "American Airlines' own yearly report says card companies and partners paid it about six billion dollars in cash last year.",
+   "start": 201.61366666666666,
+   "end": 206.86766666666665,
+   "words": [
+    {
+     "text": "American",
+     "start": 201.614,
+     "end": 201.962
+    },
+    {
+     "text": "Airlines'",
+     "start": 202.0,
+     "end": 202.387
+    },
+    {
+     "text": "own",
+     "start": 202.43,
+     "end": 202.584
+    },
+    {
+     "text": "yearly",
+     "start": 202.601,
+     "end": 202.872
+    },
+    {
+     "text": "report",
+     "start": 202.902,
+     "end": 203.172
+    },
+    {
+     "text": "says",
+     "start": 203.202,
+     "end": 203.395
+    },
+    {
+     "text": "card",
+     "start": 203.417,
+     "end": 203.61
+    },
+    {
+     "text": "companies",
+     "start": 203.632,
+     "end": 204.018
+    },
+    {
+     "text": "and",
+     "start": 204.061,
+     "end": 204.215
+    },
+    {
+     "text": "partners",
+     "start": 204.233,
+     "end": 204.58
+    },
+    {
+     "text": "paid",
+     "start": 204.619,
+     "end": 204.812
+    },
+    {
+     "text": "it",
+     "start": 204.834,
+     "end": 204.949
+    },
+    {
+     "text": "about",
+     "start": 204.962,
+     "end": 205.194
+    },
+    {
+     "text": "six",
+     "start": 205.22,
+     "end": 205.374
+    },
+    {
+     "text": "billion",
+     "start": 205.392,
+     "end": 205.701
+    },
+    {
+     "text": "dollars",
+     "start": 205.735,
+     "end": 206.044
+    },
+    {
+     "text": "in",
+     "start": 206.078,
+     "end": 206.194
+    },
+    {
+     "text": "cash",
+     "start": 206.207,
+     "end": 206.4
+    },
+    {
+     "text": "last",
+     "start": 206.422,
+     "end": 206.615
+    },
+    {
+     "text": "year.",
+     "start": 206.636,
+     "end": 206.868
+    }
+   ]
+  },
+  {
+   "id": "c4g",
+   "text": "And its profit from everything? Including all that actual flying? About one hundred eleven million.",
+   "start": 207.53716666666668,
+   "end": 212.47216666666668,
+   "words": [
+    {
+     "text": "And",
+     "start": 207.537,
+     "end": 207.716
+    },
+    {
+     "text": "its",
+     "start": 207.736,
+     "end": 207.915
+    },
+    {
+     "text": "profit",
+     "start": 207.935,
+     "end": 208.249
+    },
+    {
+     "text": "from",
+     "start": 208.284,
+     "end": 208.508
+    },
+    {
+     "text": "everything?",
+     "start": 208.533,
+     "end": 209.071
+    },
+    {
+     "text": "Including",
+     "start": 209.131,
+     "end": 209.579
+    },
+    {
+     "text": "all",
+     "start": 209.629,
+     "end": 209.808
+    },
+    {
+     "text": "that",
+     "start": 209.828,
+     "end": 210.052
+    },
+    {
+     "text": "actual",
+     "start": 210.077,
+     "end": 210.391
+    },
+    {
+     "text": "flying?",
+     "start": 210.425,
+     "end": 210.784
+    },
+    {
+     "text": "About",
+     "start": 210.824,
+     "end": 211.093
+    },
+    {
+     "text": "one",
+     "start": 211.123,
+     "end": 211.302
+    },
+    {
+     "text": "hundred",
+     "start": 211.322,
+     "end": 211.68
+    },
+    {
+     "text": "eleven",
+     "start": 211.72,
+     "end": 212.034
+    },
+    {
+     "text": "million.",
+     "start": 212.069,
+     "end": 212.472
+    }
+   ]
+  },
+  {
+   "id": "n7",
+   "text": "The cash from points was more than fifty times what the airline kept in profit all year.",
+   "start": 213.1593125,
+   "end": 216.4993125,
+   "words": [
+    {
+     "text": "The",
+     "start": 213.159,
+     "end": 213.239
+    },
+    {
+     "text": "cash",
+     "start": 213.239,
+     "end": 213.379
+    },
+    {
+     "text": "from",
+     "start": 213.379,
+     "end": 213.579
+    },
+    {
+     "text": "points",
+     "start": 213.579,
+     "end": 213.859
+    },
+    {
+     "text": "was",
+     "start": 213.859,
+     "end": 214.099
+    },
+    {
+     "text": "more",
+     "start": 214.099,
+     "end": 214.259
+    },
+    {
+     "text": "than",
+     "start": 214.259,
+     "end": 214.399
+    },
+    {
+     "text": "fifty",
+     "start": 214.399,
+     "end": 214.619
+    },
+    {
+     "text": "times",
+     "start": 214.619,
+     "end": 214.959
+    },
+    {
+     "text": "what",
+     "start": 214.959,
+     "end": 215.159
+    },
+    {
+     "text": "the",
+     "start": 215.159,
+     "end": 215.259
+    },
+    {
+     "text": "airline",
+     "start": 215.259,
+     "end": 215.419
+    },
+    {
+     "text": "kept",
+     "start": 215.419,
+     "end": 215.739
+    },
+    {
+     "text": "in",
+     "start": 215.739,
+     "end": 215.879
+    },
+    {
+     "text": "profit",
+     "start": 215.879,
+     "end": 216.059
+    },
+    {
+     "text": "all",
+     "start": 216.059,
+     "end": 216.299
+    },
+    {
+     "text": "year.",
+     "start": 216.299,
+     "end": 216.499
+    }
+   ]
+  },
+  {
+   "id": "c4h",
+   "text": "So I'm not really the passenger. I'm the product.",
+   "start": 217.16091666666668,
+   "end": 219.60091666666668,
+   "words": [
+    {
+     "text": "So",
+     "start": 217.161,
+     "end": 217.301
+    },
+    {
+     "text": "I'm",
+     "start": 217.301,
+     "end": 217.781
+    },
+    {
+     "text": "not",
+     "start": 217.781,
+     "end": 217.921
+    },
+    {
+     "text": "really",
+     "start": 217.921,
+     "end": 218.161
+    },
+    {
+     "text": "the",
+     "start": 218.161,
+     "end": 218.341
+    },
+    {
+     "text": "passenger.",
+     "start": 218.341,
+     "end": 218.661
+    },
+    {
+     "text": "I'm",
+     "start": 219.141,
+     "end": 219.301
+    },
+    {
+     "text": "the",
+     "start": 219.301,
+     "end": 219.381
+    },
+    {
+     "text": "product.",
+     "start": 219.381,
+     "end": 219.601
+    }
+   ]
+  },
+  {
+   "id": "n8",
+   "text": "Airlines in twenty twenty six.",
+   "start": 220.5434375,
+   "end": 221.9994375,
+   "words": [
+    {
+     "text": "Airlines",
+     "start": 220.543,
+     "end": 220.93
+    },
+    {
+     "text": "in",
+     "start": 220.973,
+     "end": 221.102
+    },
+    {
+     "text": "twenty",
+     "start": 221.116,
+     "end": 221.417
+    },
+    {
+     "text": "twenty",
+     "start": 221.45,
+     "end": 221.751
+    },
+    {
+     "text": "six.",
+     "start": 221.784,
+     "end": 221.999
+    }
+   ]
+  },
+  {
+   "id": "n9",
+   "text": "In twenty twenty the airline even borrowed money from the government and used its points program as the guarantee. Experts said the program was worth more than the whole airline.",
+   "start": 222.76927083333334,
+   "end": 230.58927083333333,
+   "words": [
+    {
+     "text": "In",
+     "start": 222.769,
+     "end": 222.888
+    },
+    {
+     "text": "twenty",
+     "start": 222.901,
+     "end": 223.177
+    },
+    {
+     "text": "twenty",
+     "start": 223.208,
+     "end": 223.485
+    },
+    {
+     "text": "the",
+     "start": 223.515,
+     "end": 223.674
+    },
+    {
+     "text": "airline",
+     "start": 223.691,
+     "end": 224.007
+    },
+    {
+     "text": "even",
+     "start": 224.042,
+     "end": 224.24
+    },
+    {
+     "text": "borrowed",
+     "start": 224.262,
+     "end": 224.618
+    },
+    {
+     "text": "money",
+     "start": 224.657,
+     "end": 224.894
+    },
+    {
+     "text": "from",
+     "start": 224.921,
+     "end": 225.118
+    },
+    {
+     "text": "the",
+     "start": 225.14,
+     "end": 225.298
+    },
+    {
+     "text": "government",
+     "start": 225.316,
+     "end": 225.751
+    },
+    {
+     "text": "and",
+     "start": 225.799,
+     "end": 225.957
+    },
+    {
+     "text": "used",
+     "start": 225.974,
+     "end": 226.172
+    },
+    {
+     "text": "its",
+     "start": 226.194,
+     "end": 226.352
+    },
+    {
+     "text": "points",
+     "start": 226.37,
+     "end": 226.646
+    },
+    {
+     "text": "program",
+     "start": 226.677,
+     "end": 226.993
+    },
+    {
+     "text": "as",
+     "start": 227.028,
+     "end": 227.147
+    },
+    {
+     "text": "the",
+     "start": 227.16,
+     "end": 227.318
+    },
+    {
+     "text": "guarantee.",
+     "start": 227.336,
+     "end": 227.77
+    },
+    {
+     "text": "Experts",
+     "start": 227.819,
+     "end": 228.135
+    },
+    {
+     "text": "said",
+     "start": 228.17,
+     "end": 228.368
+    },
+    {
+     "text": "the",
+     "start": 228.39,
+     "end": 228.548
+    },
+    {
+     "text": "program",
+     "start": 228.565,
+     "end": 228.881
+    },
+    {
+     "text": "was",
+     "start": 228.916,
+     "end": 229.075
+    },
+    {
+     "text": "worth",
+     "start": 229.092,
+     "end": 229.329
+    },
+    {
+     "text": "more",
+     "start": 229.356,
+     "end": 229.553
+    },
+    {
+     "text": "than",
+     "start": 229.575,
+     "end": 229.773
+    },
+    {
+     "text": "the",
+     "start": 229.795,
+     "end": 229.953
+    },
+    {
+     "text": "whole",
+     "start": 229.97,
+     "end": 230.207
+    },
+    {
+     "text": "airline.",
+     "start": 230.234,
+     "end": 230.589
+    }
+   ]
+  },
+  {
+   "id": "c4i",
+   "text": "Now back to your guess. According to the consumer bureau the big card companies themselves value a typical point at about one cent.",
+   "start": 231.51589583333333,
+   "end": 237.89589583333333,
+   "words": [
+    {
+     "text": "Now",
+     "start": 231.516,
+     "end": 231.736
+    },
+    {
+     "text": "back",
+     "start": 231.736,
+     "end": 231.996
+    },
+    {
+     "text": "to",
+     "start": 231.996,
+     "end": 232.156
+    },
+    {
+     "text": "your",
+     "start": 232.156,
+     "end": 232.236
+    },
+    {
+     "text": "guess.",
+     "start": 232.236,
+     "end": 232.496
+    },
+    {
+     "text": "According",
+     "start": 233.096,
+     "end": 233.316
+    },
+    {
+     "text": "to",
+     "start": 233.316,
+     "end": 233.536
+    },
+    {
+     "text": "the",
+     "start": 233.536,
+     "end": 233.616
+    },
+    {
+     "text": "consumer",
+     "start": 233.616,
+     "end": 233.836
+    },
+    {
+     "text": "bureau",
+     "start": 233.836,
+     "end": 234.196
+    },
+    {
+     "text": "the",
+     "start": 234.456,
+     "end": 234.496
+    },
+    {
+     "text": "big",
+     "start": 234.496,
+     "end": 234.616
+    },
+    {
+     "text": "card",
+     "start": 234.616,
+     "end": 234.836
+    },
+    {
+     "text": "companies",
+     "start": 234.836,
+     "end": 235.196
+    },
+    {
+     "text": "themselves",
+     "start": 235.196,
+     "end": 235.576
+    },
+    {
+     "text": "value",
+     "start": 235.576,
+     "end": 236.176
+    },
+    {
+     "text": "a",
+     "start": 236.176,
+     "end": 236.316
+    },
+    {
+     "text": "typical",
+     "start": 236.316,
+     "end": 236.576
+    },
+    {
+     "text": "point",
+     "start": 236.576,
+     "end": 236.956
+    },
+    {
+     "text": "at",
+     "start": 236.956,
+     "end": 237.136
+    },
+    {
+     "text": "about",
+     "start": 237.136,
+     "end": 237.356
+    },
+    {
+     "text": "one",
+     "start": 237.356,
+     "end": 237.596
+    },
+    {
+     "text": "cent.",
+     "start": 237.596,
+     "end": 237.896
+    }
+   ]
+  },
+  {
+   "id": "c4j",
+   "text": "So my sixty four thousand points are worth about six hundred forty dollars. That's half of what I overspent to get them.",
+   "start": 238.571375,
+   "end": 244.12337499999998,
+   "words": [
+    {
+     "text": "So",
+     "start": 238.571,
+     "end": 238.696
+    },
+    {
+     "text": "my",
+     "start": 238.709,
+     "end": 238.834
+    },
+    {
+     "text": "sixty",
+     "start": 238.848,
+     "end": 239.097
+    },
+    {
+     "text": "four",
+     "start": 239.124,
+     "end": 239.332
+    },
+    {
+     "text": "thousand",
+     "start": 239.355,
+     "end": 239.729
+    },
+    {
+     "text": "points",
+     "start": 239.77,
+     "end": 240.061
+    },
+    {
+     "text": "are",
+     "start": 240.093,
+     "end": 240.259
+    },
+    {
+     "text": "worth",
+     "start": 240.277,
+     "end": 240.526
+    },
+    {
+     "text": "about",
+     "start": 240.554,
+     "end": 240.803
+    },
+    {
+     "text": "six",
+     "start": 240.831,
+     "end": 240.997
+    },
+    {
+     "text": "hundred",
+     "start": 241.015,
+     "end": 241.347
+    },
+    {
+     "text": "forty",
+     "start": 241.384,
+     "end": 241.633
+    },
+    {
+     "text": "dollars.",
+     "start": 241.661,
+     "end": 242.034
+    },
+    {
+     "text": "That's",
+     "start": 242.076,
+     "end": 242.366
+    },
+    {
+     "text": "half",
+     "start": 242.399,
+     "end": 242.606
+    },
+    {
+     "text": "of",
+     "start": 242.629,
+     "end": 242.754
+    },
+    {
+     "text": "what",
+     "start": 242.768,
+     "end": 242.975
+    },
+    {
+     "text": "I",
+     "start": 242.998,
+     "end": 243.081
+    },
+    {
+     "text": "overspent",
+     "start": 243.09,
+     "end": 243.505
+    },
+    {
+     "text": "to",
+     "start": 243.551,
+     "end": 243.676
+    },
+    {
+     "text": "get",
+     "start": 243.69,
+     "end": 243.856
+    },
+    {
+     "text": "them.",
+     "start": 243.874,
+     "end": 244.123
+    }
+   ]
+  },
+  {
+   "id": "n10",
+   "text": "Me doing the points math.",
+   "start": 244.764875,
+   "end": 245.624875,
+   "words": [
+    {
+     "text": "Me",
+     "start": 244.765,
+     "end": 244.865
+    },
+    {
+     "text": "doing",
+     "start": 244.865,
+     "end": 245.005
+    },
+    {
+     "text": "the",
+     "start": 245.005,
+     "end": 245.165
+    },
+    {
+     "text": "points",
+     "start": 245.165,
+     "end": 245.485
+    },
+    {
+     "text": "math.",
+     "start": 245.485,
+     "end": 245.625
+    }
+   ]
+  },
+  {
+   "id": "c4k",
+   "text": "And that's only if a point stays worth a cent. Because whoever prints the points also decides what they buy.",
+   "start": 246.21039583333334,
+   "end": 250.37039583333333,
+   "words": [
+    {
+     "text": "And",
+     "start": 246.21,
+     "end": 246.29
+    },
+    {
+     "text": "that's",
+     "start": 246.29,
+     "end": 246.45
+    },
+    {
+     "text": "only",
+     "start": 246.45,
+     "end": 246.67
+    },
+    {
+     "text": "if",
+     "start": 246.67,
+     "end": 246.83
+    },
+    {
+     "text": "a",
+     "start": 246.83,
+     "end": 246.89
+    },
+    {
+     "text": "point",
+     "start": 246.89,
+     "end": 247.07
+    },
+    {
+     "text": "stays",
+     "start": 247.07,
+     "end": 247.27
+    },
+    {
+     "text": "worth",
+     "start": 247.27,
+     "end": 247.45
+    },
+    {
+     "text": "a",
+     "start": 247.45,
+     "end": 247.57
+    },
+    {
+     "text": "cent.",
+     "start": 247.57,
+     "end": 247.77
+    },
+    {
+     "text": "Because",
+     "start": 248.05,
+     "end": 248.31
+    },
+    {
+     "text": "whoever",
+     "start": 248.31,
+     "end": 248.49
+    },
+    {
+     "text": "prints",
+     "start": 248.49,
+     "end": 248.81
+    },
+    {
+     "text": "the",
+     "start": 248.81,
+     "end": 248.97
+    },
+    {
+     "text": "points",
+     "start": 248.97,
+     "end": 249.19
+    },
+    {
+     "text": "also",
+     "start": 249.19,
+     "end": 249.51
+    },
+    {
+     "text": "decides",
+     "start": 249.51,
+     "end": 249.85
+    },
+    {
+     "text": "what",
+     "start": 249.85,
+     "end": 250.09
+    },
+    {
+     "text": "they",
+     "start": 250.09,
+     "end": 250.21
+    },
+    {
+     "text": "buy.",
+     "start": 250.21,
+     "end": 250.37
+    }
+   ]
+  },
+  {
+   "id": "c5a",
+   "text": "So I open the app to book my beach. And the flight that cost sixty thousand points at the booth now costs eighty thousand.",
+   "start": 251.03152083333333,
+   "end": 256.09152083333333,
+   "words": [
+    {
+     "text": "So",
+     "start": 251.032,
+     "end": 251.152
+    },
+    {
+     "text": "I",
+     "start": 251.152,
+     "end": 251.272
+    },
+    {
+     "text": "open",
+     "start": 251.272,
+     "end": 251.492
+    },
+    {
+     "text": "the",
+     "start": 251.492,
+     "end": 251.612
+    },
+    {
+     "text": "app",
+     "start": 251.612,
+     "end": 251.772
+    },
+    {
+     "text": "to",
+     "start": 251.772,
+     "end": 251.952
+    },
+    {
+     "text": "book",
+     "start": 251.952,
+     "end": 252.072
+    },
+    {
+     "text": "my",
+     "start": 252.072,
+     "end": 252.212
+    },
+    {
+     "text": "beach.",
+     "start": 252.212,
+     "end": 252.392
+    },
+    {
+     "text": "And",
+     "start": 252.832,
+     "end": 252.932
+    },
+    {
+     "text": "the",
+     "start": 252.932,
+     "end": 253.032
+    },
+    {
+     "text": "flight",
+     "start": 253.032,
+     "end": 253.212
+    },
+    {
+     "text": "that",
+     "start": 253.212,
+     "end": 253.372
+    },
+    {
+     "text": "cost",
+     "start": 253.372,
+     "end": 253.512
+    },
+    {
+     "text": "sixty",
+     "start": 253.512,
+     "end": 253.832
+    },
+    {
+     "text": "thousand",
+     "start": 253.832,
+     "end": 254.172
+    },
+    {
+     "text": "points",
+     "start": 254.172,
+     "end": 254.392
+    },
+    {
+     "text": "at",
+     "start": 254.392,
+     "end": 254.532
+    },
+    {
+     "text": "the",
+     "start": 254.532,
+     "end": 254.612
+    },
+    {
+     "text": "booth",
+     "start": 254.612,
+     "end": 254.772
+    },
+    {
+     "text": "now",
+     "start": 254.772,
+     "end": 255.052
+    },
+    {
+     "text": "costs",
+     "start": 255.052,
+     "end": 255.312
+    },
+    {
+     "text": "eighty",
+     "start": 255.312,
+     "end": 255.612
+    },
+    {
+     "text": "thousand.",
+     "start": 255.612,
+     "end": 256.092
+    }
+   ]
+  },
+  {
+   "id": "c5b",
+   "text": "But I have the points! I bought a kayak for this!",
+   "start": 256.65735416666666,
+   "end": 258.8773541666667,
+   "words": [
+    {
+     "text": "But",
+     "start": 256.657,
+     "end": 256.797
+    },
+    {
+     "text": "I",
+     "start": 256.797,
+     "end": 257.017
+    },
+    {
+     "text": "have",
+     "start": 257.017,
+     "end": 257.177
+    },
+    {
+     "text": "the",
+     "start": 257.177,
+     "end": 257.297
+    },
+    {
+     "text": "points!",
+     "start": 257.297,
+     "end": 257.497
+    },
+    {
+     "text": "I",
+     "start": 257.917,
+     "end": 257.997
+    },
+    {
+     "text": "bought",
+     "start": 257.997,
+     "end": 258.117
+    },
+    {
+     "text": "a",
+     "start": 258.117,
+     "end": 258.197
+    },
+    {
+     "text": "kayak",
+     "start": 258.197,
+     "end": 258.577
+    },
+    {
+     "text": "for",
+     "start": 258.577,
+     "end": 258.717
+    },
+    {
+     "text": "this!",
+     "start": 258.717,
+     "end": 258.877
+    }
+   ]
+  },
+  {
+   "id": "c5c",
+   "text": "Nobody took a single point away from me. They just raised the price of the seat in points. Without asking anyone.",
+   "start": 259.623625,
+   "end": 264.763625,
+   "words": [
+    {
+     "text": "Nobody",
+     "start": 259.624,
+     "end": 259.884
+    },
+    {
+     "text": "took",
+     "start": 259.884,
+     "end": 260.144
+    },
+    {
+     "text": "a",
+     "start": 260.144,
+     "end": 260.244
+    },
+    {
+     "text": "single",
+     "start": 260.244,
+     "end": 260.444
+    },
+    {
+     "text": "point",
+     "start": 260.444,
+     "end": 260.724
+    },
+    {
+     "text": "away",
+     "start": 260.724,
+     "end": 260.924
+    },
+    {
+     "text": "from",
+     "start": 260.924,
+     "end": 261.124
+    },
+    {
+     "text": "me.",
+     "start": 261.124,
+     "end": 261.324
+    },
+    {
+     "text": "They",
+     "start": 261.604,
+     "end": 261.704
+    },
+    {
+     "text": "just",
+     "start": 261.704,
+     "end": 261.844
+    },
+    {
+     "text": "raised",
+     "start": 261.844,
+     "end": 262.044
+    },
+    {
+     "text": "the",
+     "start": 262.044,
+     "end": 262.244
+    },
+    {
+     "text": "price",
+     "start": 262.244,
+     "end": 262.384
+    },
+    {
+     "text": "of",
+     "start": 262.384,
+     "end": 262.564
+    },
+    {
+     "text": "the",
+     "start": 262.564,
+     "end": 262.644
+    },
+    {
+     "text": "seat",
+     "start": 262.644,
+     "end": 262.824
+    },
+    {
+     "text": "in",
+     "start": 262.824,
+     "end": 262.964
+    },
+    {
+     "text": "points.",
+     "start": 262.964,
+     "end": 263.184
+    },
+    {
+     "text": "Without",
+     "start": 263.644,
+     "end": 263.904
+    },
+    {
+     "text": "asking",
+     "start": 263.904,
+     "end": 264.324
+    },
+    {
+     "text": "anyone.",
+     "start": 264.324,
+     "end": 264.764
+    }
+   ]
+  },
+  {
+   "id": "c5d",
+   "text": "It's like saving arcade tickets for the giant teddy bear and every time you get close the guy behind the counter quietly swaps the sign.",
+   "start": 265.3734375,
+   "end": 270.3334375,
+   "words": [
+    {
+     "text": "It's",
+     "start": 265.373,
+     "end": 265.513
+    },
+    {
+     "text": "like",
+     "start": 265.513,
+     "end": 265.573
+    },
+    {
+     "text": "saving",
+     "start": 265.573,
+     "end": 265.873
+    },
+    {
+     "text": "arcade",
+     "start": 265.873,
+     "end": 266.053
+    },
+    {
+     "text": "tickets",
+     "start": 266.053,
+     "end": 266.373
+    },
+    {
+     "text": "for",
+     "start": 266.373,
+     "end": 266.613
+    },
+    {
+     "text": "the",
+     "start": 266.613,
+     "end": 266.673
+    },
+    {
+     "text": "giant",
+     "start": 266.673,
+     "end": 266.833
+    },
+    {
+     "text": "teddy",
+     "start": 266.833,
+     "end": 267.093
+    },
+    {
+     "text": "bear",
+     "start": 267.093,
+     "end": 267.313
+    },
+    {
+     "text": "and",
+     "start": 267.313,
+     "end": 267.533
+    },
+    {
+     "text": "every",
+     "start": 267.533,
+     "end": 267.673
+    },
+    {
+     "text": "time",
+     "start": 267.673,
+     "end": 267.913
+    },
+    {
+     "text": "you",
+     "start": 267.913,
+     "end": 268.033
+    },
+    {
+     "text": "get",
+     "start": 268.033,
+     "end": 268.153
+    },
+    {
+     "text": "close",
+     "start": 268.153,
+     "end": 268.353
+    },
+    {
+     "text": "the",
+     "start": 268.573,
+     "end": 268.593
+    },
+    {
+     "text": "guy",
+     "start": 268.593,
+     "end": 268.713
+    },
+    {
+     "text": "behind",
+     "start": 268.713,
+     "end": 268.913
+    },
+    {
+     "text": "the",
+     "start": 268.913,
+     "end": 269.073
+    },
+    {
+     "text": "counter",
+     "start": 269.073,
+     "end": 269.253
+    },
+    {
+     "text": "quietly",
+     "start": 269.253,
+     "end": 269.633
+    },
+    {
+     "text": "swaps",
+     "start": 269.633,
+     "end": 269.913
+    },
+    {
+     "text": "the",
+     "start": 269.913,
+     "end": 270.173
+    },
+    {
+     "text": "sign.",
+     "start": 270.173,
+     "end": 270.333
+    }
+   ]
+  },
+  {
+   "id": "n11",
+   "text": "The rewards program when I finally have enough points.",
+   "start": 271.0607708333333,
+   "end": 273.2007708333333,
+   "words": [
+    {
+     "text": "The",
+     "start": 271.061,
+     "end": 271.121
+    },
+    {
+     "text": "rewards",
+     "start": 271.121,
+     "end": 271.341
+    },
+    {
+     "text": "program",
+     "start": 271.341,
+     "end": 271.761
+    },
+    {
+     "text": "when",
+     "start": 271.761,
+     "end": 272.101
+    },
+    {
+     "text": "I",
+     "start": 272.101,
+     "end": 272.201
+    },
+    {
+     "text": "finally",
+     "start": 272.201,
+     "end": 272.441
+    },
+    {
+     "text": "have",
+     "start": 272.441,
+     "end": 272.761
+    },
+    {
+     "text": "enough",
+     "start": 272.761,
+     "end": 272.901
+    },
+    {
+     "text": "points.",
+     "start": 272.901,
+     "end": 273.201
+    }
+   ]
+  },
+  {
+   "id": "c5e",
+   "text": "And this happens to real people. In twenty twenty three Delta changed its SkyMiles rules so hard that customers revolted online.",
+   "start": 273.94075,
+   "end": 279.12874999999997,
+   "words": [
+    {
+     "text": "And",
+     "start": 273.941,
+     "end": 274.087
+    },
+    {
+     "text": "this",
+     "start": 274.103,
+     "end": 274.285
+    },
+    {
+     "text": "happens",
+     "start": 274.305,
+     "end": 274.597
+    },
+    {
+     "text": "to",
+     "start": 274.629,
+     "end": 274.738
+    },
+    {
+     "text": "real",
+     "start": 274.75,
+     "end": 274.932
+    },
+    {
+     "text": "people.",
+     "start": 274.953,
+     "end": 275.244
+    },
+    {
+     "text": "In",
+     "start": 275.276,
+     "end": 275.386
+    },
+    {
+     "text": "twenty",
+     "start": 275.398,
+     "end": 275.653
+    },
+    {
+     "text": "twenty",
+     "start": 275.681,
+     "end": 275.936
+    },
+    {
+     "text": "three",
+     "start": 275.964,
+     "end": 276.183
+    },
+    {
+     "text": "Delta",
+     "start": 276.207,
+     "end": 276.426
+    },
+    {
+     "text": "changed",
+     "start": 276.45,
+     "end": 276.741
+    },
+    {
+     "text": "its",
+     "start": 276.774,
+     "end": 276.919
+    },
+    {
+     "text": "SkyMiles",
+     "start": 276.935,
+     "end": 277.263
+    },
+    {
+     "text": "rules",
+     "start": 277.3,
+     "end": 277.518
+    },
+    {
+     "text": "so",
+     "start": 277.542,
+     "end": 277.652
+    },
+    {
+     "text": "hard",
+     "start": 277.664,
+     "end": 277.846
+    },
+    {
+     "text": "that",
+     "start": 277.866,
+     "end": 278.048
+    },
+    {
+     "text": "customers",
+     "start": 278.068,
+     "end": 278.433
+    },
+    {
+     "text": "revolted",
+     "start": 278.473,
+     "end": 278.801
+    },
+    {
+     "text": "online.",
+     "start": 278.837,
+     "end": 279.129
+    }
+   ]
+  },
+  {
+   "id": "c5f",
+   "text": "Two weeks later the boss admitted they probably went too far. And Delta softened some of the changes.",
+   "start": 279.9643541666667,
+   "end": 283.9043541666667,
+   "words": [
+    {
+     "text": "Two",
+     "start": 279.964,
+     "end": 280.064
+    },
+    {
+     "text": "weeks",
+     "start": 280.064,
+     "end": 280.204
+    },
+    {
+     "text": "later",
+     "start": 280.204,
+     "end": 280.504
+    },
+    {
+     "text": "the",
+     "start": 280.704,
+     "end": 280.744
+    },
+    {
+     "text": "boss",
+     "start": 280.744,
+     "end": 280.864
+    },
+    {
+     "text": "admitted",
+     "start": 280.864,
+     "end": 281.144
+    },
+    {
+     "text": "they",
+     "start": 281.144,
+     "end": 281.344
+    },
+    {
+     "text": "probably",
+     "start": 281.344,
+     "end": 281.524
+    },
+    {
+     "text": "went",
+     "start": 281.524,
+     "end": 281.844
+    },
+    {
+     "text": "too",
+     "start": 281.844,
+     "end": 281.984
+    },
+    {
+     "text": "far.",
+     "start": 281.984,
+     "end": 282.264
+    },
+    {
+     "text": "And",
+     "start": 282.644,
+     "end": 282.724
+    },
+    {
+     "text": "Delta",
+     "start": 282.724,
+     "end": 282.864
+    },
+    {
+     "text": "softened",
+     "start": 282.864,
+     "end": 283.164
+    },
+    {
+     "text": "some",
+     "start": 283.164,
+     "end": 283.464
+    },
+    {
+     "text": "of",
+     "start": 283.464,
+     "end": 283.564
+    },
+    {
+     "text": "the",
+     "start": 283.564,
+     "end": 283.644
+    },
+    {
+     "text": "changes.",
+     "start": 283.644,
+     "end": 283.904
+    }
+   ]
+  },
+  {
+   "id": "c5h",
+   "text": "The complaints piled up so high that in twenty twenty four the government opened an inquiry into the four biggest airlines' reward programs.",
+   "start": 284.76489583333336,
+   "end": 290.16589583333337,
+   "words": [
+    {
+     "text": "The",
+     "start": 284.765,
+     "end": 284.904
+    },
+    {
+     "text": "complaints",
+     "start": 284.919,
+     "end": 285.301
+    },
+    {
+     "text": "piled",
+     "start": 285.344,
+     "end": 285.552
+    },
+    {
+     "text": "up",
+     "start": 285.575,
+     "end": 285.679
+    },
+    {
+     "text": "so",
+     "start": 285.691,
+     "end": 285.795
+    },
+    {
+     "text": "high",
+     "start": 285.807,
+     "end": 285.98
+    },
+    {
+     "text": "that",
+     "start": 286.0,
+     "end": 286.173
+    },
+    {
+     "text": "in",
+     "start": 286.193,
+     "end": 286.297
+    },
+    {
+     "text": "twenty",
+     "start": 286.308,
+     "end": 286.551
+    },
+    {
+     "text": "twenty",
+     "start": 286.578,
+     "end": 286.821
+    },
+    {
+     "text": "four",
+     "start": 286.848,
+     "end": 287.022
+    },
+    {
+     "text": "the",
+     "start": 287.041,
+     "end": 287.18
+    },
+    {
+     "text": "government",
+     "start": 287.196,
+     "end": 287.578
+    },
+    {
+     "text": "opened",
+     "start": 287.62,
+     "end": 287.863
+    },
+    {
+     "text": "an",
+     "start": 287.89,
+     "end": 287.994
+    },
+    {
+     "text": "inquiry",
+     "start": 288.006,
+     "end": 288.284
+    },
+    {
+     "text": "into",
+     "start": 288.315,
+     "end": 288.488
+    },
+    {
+     "text": "the",
+     "start": 288.507,
+     "end": 288.646
+    },
+    {
+     "text": "four",
+     "start": 288.662,
+     "end": 288.835
+    },
+    {
+     "text": "biggest",
+     "start": 288.855,
+     "end": 289.132
+    },
+    {
+     "text": "airlines'",
+     "start": 289.163,
+     "end": 289.511
+    },
+    {
+     "text": "reward",
+     "start": 289.549,
+     "end": 289.792
+    },
+    {
+     "text": "programs.",
+     "start": 289.819,
+     "end": 290.166
+    }
+   ]
+  },
+  {
+   "id": "c5i",
+   "text": "So my flight is now twenty thousand points away. And the only way to get more points is to spend more.",
+   "start": 290.9681458333333,
+   "end": 296.4081458333333,
+   "words": [
+    {
+     "text": "So",
+     "start": 290.968,
+     "end": 291.228
+    },
+    {
+     "text": "my",
+     "start": 291.408,
+     "end": 291.528
+    },
+    {
+     "text": "flight",
+     "start": 291.528,
+     "end": 291.808
+    },
+    {
+     "text": "is",
+     "start": 291.808,
+     "end": 292.108
+    },
+    {
+     "text": "now",
+     "start": 292.108,
+     "end": 292.288
+    },
+    {
+     "text": "twenty",
+     "start": 292.288,
+     "end": 292.588
+    },
+    {
+     "text": "thousand",
+     "start": 292.588,
+     "end": 293.008
+    },
+    {
+     "text": "points",
+     "start": 293.008,
+     "end": 293.168
+    },
+    {
+     "text": "away.",
+     "start": 293.168,
+     "end": 293.468
+    },
+    {
+     "text": "And",
+     "start": 294.068,
+     "end": 294.168
+    },
+    {
+     "text": "the",
+     "start": 294.168,
+     "end": 294.248
+    },
+    {
+     "text": "only",
+     "start": 294.248,
+     "end": 294.368
+    },
+    {
+     "text": "way",
+     "start": 294.368,
+     "end": 294.668
+    },
+    {
+     "text": "to",
+     "start": 294.668,
+     "end": 294.748
+    },
+    {
+     "text": "get",
+     "start": 294.748,
+     "end": 294.868
+    },
+    {
+     "text": "more",
+     "start": 294.868,
+     "end": 295.048
+    },
+    {
+     "text": "points",
+     "start": 295.048,
+     "end": 295.368
+    },
+    {
+     "text": "is",
+     "start": 295.368,
+     "end": 295.728
+    },
+    {
+     "text": "to",
+     "start": 295.728,
+     "end": 295.868
+    },
+    {
+     "text": "spend",
+     "start": 295.868,
+     "end": 296.068
+    },
+    {
+     "text": "more.",
+     "start": 296.068,
+     "end": 296.408
+    }
+   ]
+  },
+  {
+   "id": "n12",
+   "text": "Me staring at a second kayak.",
+   "start": 296.9840208333333,
+   "end": 298.2240208333333,
+   "words": [
+    {
+     "text": "Me",
+     "start": 296.984,
+     "end": 297.104
+    },
+    {
+     "text": "staring",
+     "start": 297.104,
+     "end": 297.344
+    },
+    {
+     "text": "at",
+     "start": 297.344,
+     "end": 297.544
+    },
+    {
+     "text": "a",
+     "start": 297.544,
+     "end": 297.584
+    },
+    {
+     "text": "second",
+     "start": 297.584,
+     "end": 297.784
+    },
+    {
+     "text": "kayak.",
+     "start": 297.784,
+     "end": 298.224
+    }
+   ]
+  },
+  {
+   "id": "c6a",
+   "text": "But somebody else has been quietly paying for my points. Remember Grandma? She pays cash for everything.",
+   "start": 300.903125,
+   "end": 305.603125,
+   "words": [
+    {
+     "text": "But",
+     "start": 300.903,
+     "end": 300.983
+    },
+    {
+     "text": "somebody",
+     "start": 300.983,
+     "end": 301.163
+    },
+    {
+     "text": "else",
+     "start": 301.163,
+     "end": 301.463
+    },
+    {
+     "text": "has",
+     "start": 301.463,
+     "end": 301.683
+    },
+    {
+     "text": "been",
+     "start": 301.683,
+     "end": 301.823
+    },
+    {
+     "text": "quietly",
+     "start": 301.823,
+     "end": 302.143
+    },
+    {
+     "text": "paying",
+     "start": 302.143,
+     "end": 302.543
+    },
+    {
+     "text": "for",
+     "start": 302.543,
+     "end": 302.763
+    },
+    {
+     "text": "my",
+     "start": 302.763,
+     "end": 302.843
+    },
+    {
+     "text": "points.",
+     "start": 302.843,
+     "end": 303.083
+    },
+    {
+     "text": "Remember",
+     "start": 303.883,
+     "end": 303.883
+    },
+    {
+     "text": "Grandma?",
+     "start": 303.883,
+     "end": 304.083
+    },
+    {
+     "text": "She",
+     "start": 304.603,
+     "end": 304.643
+    },
+    {
+     "text": "pays",
+     "start": 304.643,
+     "end": 304.803
+    },
+    {
+     "text": "cash",
+     "start": 304.803,
+     "end": 305.023
+    },
+    {
+     "text": "for",
+     "start": 305.023,
+     "end": 305.303
+    },
+    {
+     "text": "everything.",
+     "start": 305.303,
+     "end": 305.603
+    }
+   ]
+  },
+  {
+   "id": "c6b",
+   "text": "I'm right in front of her at the checkout tapping my card. And every tap costs the shop about two percent of my bill.",
+   "start": 306.3869583333333,
+   "end": 311.18695833333334,
+   "words": [
+    {
+     "text": "I'm",
+     "start": 306.387,
+     "end": 306.527
+    },
+    {
+     "text": "right",
+     "start": 306.527,
+     "end": 306.647
+    },
+    {
+     "text": "in",
+     "start": 306.647,
+     "end": 306.767
+    },
+    {
+     "text": "front",
+     "start": 306.767,
+     "end": 306.887
+    },
+    {
+     "text": "of",
+     "start": 306.887,
+     "end": 307.047
+    },
+    {
+     "text": "her",
+     "start": 307.047,
+     "end": 307.167
+    },
+    {
+     "text": "at",
+     "start": 307.167,
+     "end": 307.287
+    },
+    {
+     "text": "the",
+     "start": 307.287,
+     "end": 307.367
+    },
+    {
+     "text": "checkout",
+     "start": 307.367,
+     "end": 307.547
+    },
+    {
+     "text": "tapping",
+     "start": 307.547,
+     "end": 307.987
+    },
+    {
+     "text": "my",
+     "start": 307.987,
+     "end": 308.147
+    },
+    {
+     "text": "card.",
+     "start": 308.147,
+     "end": 308.367
+    },
+    {
+     "text": "And",
+     "start": 308.907,
+     "end": 309.027
+    },
+    {
+     "text": "every",
+     "start": 309.027,
+     "end": 309.247
+    },
+    {
+     "text": "tap",
+     "start": 309.247,
+     "end": 309.507
+    },
+    {
+     "text": "costs",
+     "start": 309.507,
+     "end": 309.767
+    },
+    {
+     "text": "the",
+     "start": 309.767,
+     "end": 309.987
+    },
+    {
+     "text": "shop",
+     "start": 309.987,
+     "end": 310.127
+    },
+    {
+     "text": "about",
+     "start": 310.127,
+     "end": 310.347
+    },
+    {
+     "text": "two",
+     "start": 310.347,
+     "end": 310.547
+    },
+    {
+     "text": "percent",
+     "start": 310.547,
+     "end": 310.827
+    },
+    {
+     "text": "of",
+     "start": 310.827,
+     "end": 310.927
+    },
+    {
+     "text": "my",
+     "start": 310.927,
+     "end": 311.027
+    },
+    {
+     "text": "bill.",
+     "start": 311.027,
+     "end": 311.187
+    }
+   ]
+  },
+  {
+   "id": "c6c",
+   "text": "If you saw our credit card video that's the raccoon's toll. And a big slice of it buys my points.",
+   "start": 311.7744375,
+   "end": 315.47443749999996,
+   "words": [
+    {
+     "text": "If",
+     "start": 311.774,
+     "end": 311.874
+    },
+    {
+     "text": "you",
+     "start": 311.874,
+     "end": 311.934
+    },
+    {
+     "text": "saw",
+     "start": 311.934,
+     "end": 312.134
+    },
+    {
+     "text": "our",
+     "start": 312.134,
+     "end": 312.214
+    },
+    {
+     "text": "credit",
+     "start": 312.214,
+     "end": 312.374
+    },
+    {
+     "text": "card",
+     "start": 312.374,
+     "end": 312.594
+    },
+    {
+     "text": "video",
+     "start": 312.594,
+     "end": 312.834
+    },
+    {
+     "text": "that's",
+     "start": 312.974,
+     "end": 313.114
+    },
+    {
+     "text": "the",
+     "start": 313.114,
+     "end": 313.194
+    },
+    {
+     "text": "raccoon's",
+     "start": 313.194,
+     "end": 313.634
+    },
+    {
+     "text": "toll.",
+     "start": 313.634,
+     "end": 313.794
+    },
+    {
+     "text": "And",
+     "start": 314.114,
+     "end": 314.234
+    },
+    {
+     "text": "a",
+     "start": 314.234,
+     "end": 314.314
+    },
+    {
+     "text": "big",
+     "start": 314.314,
+     "end": 314.434
+    },
+    {
+     "text": "slice",
+     "start": 314.434,
+     "end": 314.614
+    },
+    {
+     "text": "of",
+     "start": 314.614,
+     "end": 314.834
+    },
+    {
+     "text": "it",
+     "start": 314.834,
+     "end": 314.914
+    },
+    {
+     "text": "buys",
+     "start": 314.914,
+     "end": 315.054
+    },
+    {
+     "text": "my",
+     "start": 315.054,
+     "end": 315.254
+    },
+    {
+     "text": "points.",
+     "start": 315.254,
+     "end": 315.474
+    }
+   ]
+  },
+  {
+   "id": "c6d",
+   "text": "But the shop almost never charges me more than Grandma. So it nudges up the price of the bread for everybody.",
+   "start": 316.2797708333333,
+   "end": 320.6197708333333,
+   "words": [
+    {
+     "text": "But",
+     "start": 316.28,
+     "end": 316.38
+    },
+    {
+     "text": "the",
+     "start": 316.38,
+     "end": 316.5
+    },
+    {
+     "text": "shop",
+     "start": 316.5,
+     "end": 316.66
+    },
+    {
+     "text": "almost",
+     "start": 316.66,
+     "end": 316.96
+    },
+    {
+     "text": "never",
+     "start": 316.96,
+     "end": 317.2
+    },
+    {
+     "text": "charges",
+     "start": 317.2,
+     "end": 317.5
+    },
+    {
+     "text": "me",
+     "start": 317.5,
+     "end": 317.74
+    },
+    {
+     "text": "more",
+     "start": 317.74,
+     "end": 317.88
+    },
+    {
+     "text": "than",
+     "start": 317.88,
+     "end": 318.0
+    },
+    {
+     "text": "Grandma.",
+     "start": 318.0,
+     "end": 318.18
+    },
+    {
+     "text": "So",
+     "start": 318.7,
+     "end": 318.9
+    },
+    {
+     "text": "it",
+     "start": 318.9,
+     "end": 319.0
+    },
+    {
+     "text": "nudges",
+     "start": 319.0,
+     "end": 319.28
+    },
+    {
+     "text": "up",
+     "start": 319.28,
+     "end": 319.38
+    },
+    {
+     "text": "the",
+     "start": 319.38,
+     "end": 319.5
+    },
+    {
+     "text": "price",
+     "start": 319.5,
+     "end": 319.64
+    },
+    {
+     "text": "of",
+     "start": 319.64,
+     "end": 319.84
+    },
+    {
+     "text": "the",
+     "start": 319.84,
+     "end": 319.92
+    },
+    {
+     "text": "bread",
+     "start": 319.92,
+     "end": 320.08
+    },
+    {
+     "text": "for",
+     "start": 320.08,
+     "end": 320.28
+    },
+    {
+     "text": "everybody.",
+     "start": 320.28,
+     "end": 320.62
+    }
+   ]
+  },
+  {
+   "id": "c6e",
+   "text": "Be honest. Did you know that when you pay with cash you're chipping in for a stranger's vacation?",
+   "start": 321.36216666666667,
+   "end": 326.09316666666666,
+   "words": [
+    {
+     "text": "Be",
+     "start": 321.362,
+     "end": 321.494
+    },
+    {
+     "text": "honest.",
+     "start": 321.508,
+     "end": 321.86
+    },
+    {
+     "text": "Did",
+     "start": 321.899,
+     "end": 322.074
+    },
+    {
+     "text": "you",
+     "start": 322.094,
+     "end": 322.269
+    },
+    {
+     "text": "know",
+     "start": 322.289,
+     "end": 322.508
+    },
+    {
+     "text": "that",
+     "start": 322.533,
+     "end": 322.752
+    },
+    {
+     "text": "when",
+     "start": 322.776,
+     "end": 322.996
+    },
+    {
+     "text": "you",
+     "start": 323.02,
+     "end": 323.196
+    },
+    {
+     "text": "pay",
+     "start": 323.215,
+     "end": 323.391
+    },
+    {
+     "text": "with",
+     "start": 323.411,
+     "end": 323.63
+    },
+    {
+     "text": "cash",
+     "start": 323.654,
+     "end": 323.874
+    },
+    {
+     "text": "you're",
+     "start": 323.898,
+     "end": 324.206
+    },
+    {
+     "text": "chipping",
+     "start": 324.24,
+     "end": 324.635
+    },
+    {
+     "text": "in",
+     "start": 324.679,
+     "end": 324.81
+    },
+    {
+     "text": "for",
+     "start": 324.825,
+     "end": 325.001
+    },
+    {
+     "text": "a",
+     "start": 325.02,
+     "end": 325.108
+    },
+    {
+     "text": "stranger's",
+     "start": 325.118,
+     "end": 325.601
+    },
+    {
+     "text": "vacation?",
+     "start": 325.654,
+     "end": 326.093
+    }
+   ]
+  },
+  {
+   "id": "c6f",
+   "text": "Economists at the Boston Fed once estimated a family paying cash hands over about one hundred fifty dollars a year to families paying with cards.",
+   "start": 326.5175,
+   "end": 333.0265,
+   "words": [
+    {
+     "text": "Economists",
+     "start": 326.517,
+     "end": 326.96
+    },
+    {
+     "text": "at",
+     "start": 327.01,
+     "end": 327.131
+    },
+    {
+     "text": "the",
+     "start": 327.144,
+     "end": 327.305
+    },
+    {
+     "text": "Boston",
+     "start": 327.323,
+     "end": 327.606
+    },
+    {
+     "text": "Fed",
+     "start": 327.637,
+     "end": 327.798
+    },
+    {
+     "text": "once",
+     "start": 327.816,
+     "end": 328.018
+    },
+    {
+     "text": "estimated",
+     "start": 328.041,
+     "end": 328.443
+    },
+    {
+     "text": "a",
+     "start": 328.488,
+     "end": 328.57
+    },
+    {
+     "text": "family",
+     "start": 328.578,
+     "end": 328.861
+    },
+    {
+     "text": "paying",
+     "start": 328.892,
+     "end": 329.173
+    },
+    {
+     "text": "cash",
+     "start": 329.205,
+     "end": 329.406
+    },
+    {
+     "text": "hands",
+     "start": 329.429,
+     "end": 329.671
+    },
+    {
+     "text": "over",
+     "start": 329.697,
+     "end": 329.899
+    },
+    {
+     "text": "about",
+     "start": 329.921,
+     "end": 330.163
+    },
+    {
+     "text": "one",
+     "start": 330.19,
+     "end": 330.351
+    },
+    {
+     "text": "hundred",
+     "start": 330.369,
+     "end": 330.692
+    },
+    {
+     "text": "fifty",
+     "start": 330.728,
+     "end": 330.97
+    },
+    {
+     "text": "dollars",
+     "start": 330.996,
+     "end": 331.32
+    },
+    {
+     "text": "a",
+     "start": 331.356,
+     "end": 331.435
+    },
+    {
+     "text": "year",
+     "start": 331.445,
+     "end": 331.647
+    },
+    {
+     "text": "to",
+     "start": 331.668,
+     "end": 331.789
+    },
+    {
+     "text": "families",
+     "start": 331.803,
+     "end": 332.166
+    },
+    {
+     "text": "paying",
+     "start": 332.207,
+     "end": 332.488
+    },
+    {
+     "text": "with",
+     "start": 332.519,
+     "end": 332.721
+    },
+    {
+     "text": "cards.",
+     "start": 332.743,
+     "end": 333.026
+    }
+   ]
+  },
+  {
+   "id": "n13",
+   "text": "Grandma at the checkout paying for my beach trip.",
+   "start": 333.8843958333333,
+   "end": 335.9043958333333,
+   "words": [
+    {
+     "text": "Grandma",
+     "start": 333.884,
+     "end": 334.304
+    },
+    {
+     "text": "at",
+     "start": 334.304,
+     "end": 334.464
+    },
+    {
+     "text": "the",
+     "start": 334.464,
+     "end": 334.544
+    },
+    {
+     "text": "checkout",
+     "start": 334.544,
+     "end": 334.744
+    },
+    {
+     "text": "paying",
+     "start": 334.744,
+     "end": 335.084
+    },
+    {
+     "text": "for",
+     "start": 335.084,
+     "end": 335.304
+    },
+    {
+     "text": "my",
+     "start": 335.304,
+     "end": 335.404
+    },
+    {
+     "text": "beach",
+     "start": 335.404,
+     "end": 335.564
+    },
+    {
+     "text": "trip.",
+     "start": 335.564,
+     "end": 335.904
+    }
+   ]
+  },
+  {
+   "id": "c6g",
+   "text": "And a newer Fed study found it's less about rich against poor. It's about people who know the game against people who don't.",
+   "start": 336.4645208333333,
+   "end": 342.9675208333333,
+   "words": [
+    {
+     "text": "And",
+     "start": 336.465,
+     "end": 336.653
+    },
+    {
+     "text": "a",
+     "start": 336.674,
+     "end": 336.768
+    },
+    {
+     "text": "newer",
+     "start": 336.779,
+     "end": 337.061
+    },
+    {
+     "text": "Fed",
+     "start": 337.093,
+     "end": 337.281
+    },
+    {
+     "text": "study",
+     "start": 337.302,
+     "end": 337.585
+    },
+    {
+     "text": "found",
+     "start": 337.616,
+     "end": 337.899
+    },
+    {
+     "text": "it's",
+     "start": 337.93,
+     "end": 338.165
+    },
+    {
+     "text": "less",
+     "start": 338.192,
+     "end": 338.427
+    },
+    {
+     "text": "about",
+     "start": 338.453,
+     "end": 338.736
+    },
+    {
+     "text": "rich",
+     "start": 338.767,
+     "end": 339.003
+    },
+    {
+     "text": "against",
+     "start": 339.029,
+     "end": 339.405
+    },
+    {
+     "text": "poor.",
+     "start": 339.447,
+     "end": 339.73
+    },
+    {
+     "text": "It's",
+     "start": 339.761,
+     "end": 339.997
+    },
+    {
+     "text": "about",
+     "start": 340.023,
+     "end": 340.305
+    },
+    {
+     "text": "people",
+     "start": 340.337,
+     "end": 340.666
+    },
+    {
+     "text": "who",
+     "start": 340.703,
+     "end": 340.891
+    },
+    {
+     "text": "know",
+     "start": 340.912,
+     "end": 341.148
+    },
+    {
+     "text": "the",
+     "start": 341.174,
+     "end": 341.362
+    },
+    {
+     "text": "game",
+     "start": 341.383,
+     "end": 341.619
+    },
+    {
+     "text": "against",
+     "start": 341.645,
+     "end": 342.021
+    },
+    {
+     "text": "people",
+     "start": 342.063,
+     "end": 342.393
+    },
+    {
+     "text": "who",
+     "start": 342.429,
+     "end": 342.618
+    },
+    {
+     "text": "don't.",
+     "start": 342.639,
+     "end": 342.968
+    }
+   ]
+  },
+  {
+   "id": "c6h",
+   "text": "To be fair card companies say rewards bring shops more customers and that cards are safer than cash. That's a real debate.",
+   "start": 343.53335416666664,
+   "end": 350.07335416666666,
+   "words": [
+    {
+     "text": "To",
+     "start": 343.533,
+     "end": 343.633
+    },
+    {
+     "text": "be",
+     "start": 343.633,
+     "end": 343.713
+    },
+    {
+     "text": "fair",
+     "start": 343.713,
+     "end": 344.013
+    },
+    {
+     "text": "card",
+     "start": 344.453,
+     "end": 344.613
+    },
+    {
+     "text": "companies",
+     "start": 344.613,
+     "end": 344.873
+    },
+    {
+     "text": "say",
+     "start": 344.873,
+     "end": 345.253
+    },
+    {
+     "text": "rewards",
+     "start": 345.253,
+     "end": 345.513
+    },
+    {
+     "text": "bring",
+     "start": 345.513,
+     "end": 345.973
+    },
+    {
+     "text": "shops",
+     "start": 345.973,
+     "end": 346.253
+    },
+    {
+     "text": "more",
+     "start": 346.253,
+     "end": 346.513
+    },
+    {
+     "text": "customers",
+     "start": 346.513,
+     "end": 346.893
+    },
+    {
+     "text": "and",
+     "start": 346.893,
+     "end": 347.293
+    },
+    {
+     "text": "that",
+     "start": 347.293,
+     "end": 347.413
+    },
+    {
+     "text": "cards",
+     "start": 347.413,
+     "end": 347.593
+    },
+    {
+     "text": "are",
+     "start": 347.593,
+     "end": 347.873
+    },
+    {
+     "text": "safer",
+     "start": 347.873,
+     "end": 348.093
+    },
+    {
+     "text": "than",
+     "start": 348.093,
+     "end": 348.353
+    },
+    {
+     "text": "cash.",
+     "start": 348.353,
+     "end": 348.513
+    },
+    {
+     "text": "That's",
+     "start": 349.213,
+     "end": 349.533
+    },
+    {
+     "text": "a",
+     "start": 349.533,
+     "end": 349.633
+    },
+    {
+     "text": "real",
+     "start": 349.633,
+     "end": 349.793
+    },
+    {
+     "text": "debate.",
+     "start": 349.793,
+     "end": 350.073
+    }
+   ]
+  },
+  {
+   "id": "c7a",
+   "text": "So which side am I on? Here's a quick one. Customer A pays the whole bill every month. Customer B pays a little and leaves the rest. Who is paying for the points?",
+   "start": 350.8965,
+   "end": 358.5165,
+   "words": [
+    {
+     "text": "So",
+     "start": 350.897,
+     "end": 350.976
+    },
+    {
+     "text": "which",
+     "start": 350.976,
+     "end": 351.096
+    },
+    {
+     "text": "side",
+     "start": 351.096,
+     "end": 351.317
+    },
+    {
+     "text": "am",
+     "start": 351.317,
+     "end": 351.437
+    },
+    {
+     "text": "I",
+     "start": 351.437,
+     "end": 351.517
+    },
+    {
+     "text": "on?",
+     "start": 351.517,
+     "end": 351.697
+    },
+    {
+     "text": "Here's",
+     "start": 352.036,
+     "end": 352.156
+    },
+    {
+     "text": "a",
+     "start": 352.156,
+     "end": 352.216
+    },
+    {
+     "text": "quick",
+     "start": 352.216,
+     "end": 352.337
+    },
+    {
+     "text": "one.",
+     "start": 352.337,
+     "end": 352.577
+    },
+    {
+     "text": "Customer",
+     "start": 353.337,
+     "end": 353.337
+    },
+    {
+     "text": "A",
+     "start": 353.337,
+     "end": 353.637
+    },
+    {
+     "text": "pays",
+     "start": 353.637,
+     "end": 353.916
+    },
+    {
+     "text": "the",
+     "start": 353.916,
+     "end": 354.096
+    },
+    {
+     "text": "whole",
+     "start": 354.096,
+     "end": 354.197
+    },
+    {
+     "text": "bill",
+     "start": 354.197,
+     "end": 354.416
+    },
+    {
+     "text": "every",
+     "start": 354.416,
+     "end": 354.656
+    },
+    {
+     "text": "month.",
+     "start": 354.656,
+     "end": 354.897
+    },
+    {
+     "text": "Customer",
+     "start": 355.457,
+     "end": 355.457
+    },
+    {
+     "text": "B",
+     "start": 355.457,
+     "end": 355.676
+    },
+    {
+     "text": "pays",
+     "start": 355.676,
+     "end": 355.916
+    },
+    {
+     "text": "a",
+     "start": 355.916,
+     "end": 356.036
+    },
+    {
+     "text": "little",
+     "start": 356.036,
+     "end": 356.236
+    },
+    {
+     "text": "and",
+     "start": 356.236,
+     "end": 356.497
+    },
+    {
+     "text": "leaves",
+     "start": 356.497,
+     "end": 356.656
+    },
+    {
+     "text": "the",
+     "start": 356.656,
+     "end": 356.837
+    },
+    {
+     "text": "rest.",
+     "start": 356.837,
+     "end": 356.997
+    },
+    {
+     "text": "Who",
+     "start": 357.697,
+     "end": 357.796
+    },
+    {
+     "text": "is",
+     "start": 357.796,
+     "end": 357.897
+    },
+    {
+     "text": "paying",
+     "start": 357.897,
+     "end": 358.057
+    },
+    {
+     "text": "for",
+     "start": 358.057,
+     "end": 358.257
+    },
+    {
+     "text": "the",
+     "start": 358.257,
+     "end": 358.337
+    },
+    {
+     "text": "points?",
+     "start": 358.337,
+     "end": 358.517
+    }
+   ]
+  },
+  {
+   "id": "c7b",
+   "text": "It's B. And it's not close. People who carry a balance pay almost all of the interest and fees. And they take home less than a third of the rewards.",
+   "start": 359.3278125,
+   "end": 366.1478125,
+   "words": [
+    {
+     "text": "It's",
+     "start": 359.328,
+     "end": 359.508
+    },
+    {
+     "text": "B.",
+     "start": 359.508,
+     "end": 359.608
+    },
+    {
+     "text": "And",
+     "start": 359.988,
+     "end": 360.228
+    },
+    {
+     "text": "it's",
+     "start": 360.228,
+     "end": 360.408
+    },
+    {
+     "text": "not",
+     "start": 360.408,
+     "end": 360.528
+    },
+    {
+     "text": "close.",
+     "start": 360.528,
+     "end": 360.768
+    },
+    {
+     "text": "People",
+     "start": 361.608,
+     "end": 361.608
+    },
+    {
+     "text": "who",
+     "start": 361.608,
+     "end": 361.708
+    },
+    {
+     "text": "carry",
+     "start": 361.708,
+     "end": 361.928
+    },
+    {
+     "text": "a",
+     "start": 361.928,
+     "end": 362.088
+    },
+    {
+     "text": "balance",
+     "start": 362.088,
+     "end": 362.308
+    },
+    {
+     "text": "pay",
+     "start": 362.308,
+     "end": 362.568
+    },
+    {
+     "text": "almost",
+     "start": 362.568,
+     "end": 362.808
+    },
+    {
+     "text": "all",
+     "start": 362.808,
+     "end": 363.068
+    },
+    {
+     "text": "of",
+     "start": 363.068,
+     "end": 363.188
+    },
+    {
+     "text": "the",
+     "start": 363.188,
+     "end": 363.288
+    },
+    {
+     "text": "interest",
+     "start": 363.288,
+     "end": 363.528
+    },
+    {
+     "text": "and",
+     "start": 363.528,
+     "end": 363.728
+    },
+    {
+     "text": "fees.",
+     "start": 363.728,
+     "end": 363.948
+    },
+    {
+     "text": "And",
+     "start": 364.388,
+     "end": 364.488
+    },
+    {
+     "text": "they",
+     "start": 364.488,
+     "end": 364.608
+    },
+    {
+     "text": "take",
+     "start": 364.608,
+     "end": 364.768
+    },
+    {
+     "text": "home",
+     "start": 364.768,
+     "end": 364.948
+    },
+    {
+     "text": "less",
+     "start": 364.948,
+     "end": 365.188
+    },
+    {
+     "text": "than",
+     "start": 365.188,
+     "end": 365.348
+    },
+    {
+     "text": "a",
+     "start": 365.348,
+     "end": 365.428
+    },
+    {
+     "text": "third",
+     "start": 365.428,
+     "end": 365.648
+    },
+    {
+     "text": "of",
+     "start": 365.648,
+     "end": 365.788
+    },
+    {
+     "text": "the",
+     "start": 365.788,
+     "end": 365.888
+    },
+    {
+     "text": "rewards.",
+     "start": 365.888,
+     "end": 366.148
+    }
+   ]
+  },
+  {
+   "id": "c7c",
+   "text": "And after the kayak and the fryer and the big dinner I couldn't pay it all off. So the card started charging me around twenty two percent a year.",
+   "start": 366.96127083333334,
+   "end": 372.65727083333337,
+   "words": [
+    {
+     "text": "And",
+     "start": 366.961,
+     "end": 367.102
+    },
+    {
+     "text": "after",
+     "start": 367.118,
+     "end": 367.329
+    },
+    {
+     "text": "the",
+     "start": 367.353,
+     "end": 367.494
+    },
+    {
+     "text": "kayak",
+     "start": 367.509,
+     "end": 367.721
+    },
+    {
+     "text": "and",
+     "start": 367.745,
+     "end": 367.886
+    },
+    {
+     "text": "the",
+     "start": 367.901,
+     "end": 368.042
+    },
+    {
+     "text": "fryer",
+     "start": 368.058,
+     "end": 368.27
+    },
+    {
+     "text": "and",
+     "start": 368.293,
+     "end": 368.434
+    },
+    {
+     "text": "the",
+     "start": 368.45,
+     "end": 368.591
+    },
+    {
+     "text": "big",
+     "start": 368.606,
+     "end": 368.748
+    },
+    {
+     "text": "dinner",
+     "start": 368.763,
+     "end": 369.01
+    },
+    {
+     "text": "I",
+     "start": 369.037,
+     "end": 369.108
+    },
+    {
+     "text": "couldn't",
+     "start": 369.116,
+     "end": 369.433
+    },
+    {
+     "text": "pay",
+     "start": 369.468,
+     "end": 369.609
+    },
+    {
+     "text": "it",
+     "start": 369.625,
+     "end": 369.731
+    },
+    {
+     "text": "all",
+     "start": 369.743,
+     "end": 369.884
+    },
+    {
+     "text": "off.",
+     "start": 369.899,
+     "end": 370.076
+    },
+    {
+     "text": "So",
+     "start": 370.095,
+     "end": 370.201
+    },
+    {
+     "text": "the",
+     "start": 370.213,
+     "end": 370.354
+    },
+    {
+     "text": "card",
+     "start": 370.369,
+     "end": 370.546
+    },
+    {
+     "text": "started",
+     "start": 370.565,
+     "end": 370.847
+    },
+    {
+     "text": "charging",
+     "start": 370.879,
+     "end": 371.196
+    },
+    {
+     "text": "me",
+     "start": 371.231,
+     "end": 371.337
+    },
+    {
+     "text": "around",
+     "start": 371.349,
+     "end": 371.596
+    },
+    {
+     "text": "twenty",
+     "start": 371.623,
+     "end": 371.87
+    },
+    {
+     "text": "two",
+     "start": 371.897,
+     "end": 372.038
+    },
+    {
+     "text": "percent",
+     "start": 372.054,
+     "end": 372.336
+    },
+    {
+     "text": "a",
+     "start": 372.368,
+     "end": 372.438
+    },
+    {
+     "text": "year.",
+     "start": 372.446,
+     "end": 372.657
+    }
+   ]
+  },
+  {
+   "id": "c7d",
+   "text": "My points pay about one percent. That's like a shop that gives you a penny for walking in and charges you a quarter to leave.",
+   "start": 373.28066666666666,
+   "end": 378.07366666666667,
+   "words": [
+    {
+     "text": "My",
+     "start": 373.281,
+     "end": 373.384
+    },
+    {
+     "text": "points",
+     "start": 373.396,
+     "end": 373.637
+    },
+    {
+     "text": "pay",
+     "start": 373.664,
+     "end": 373.801
+    },
+    {
+     "text": "about",
+     "start": 373.817,
+     "end": 374.023
+    },
+    {
+     "text": "one",
+     "start": 374.046,
+     "end": 374.184
+    },
+    {
+     "text": "percent.",
+     "start": 374.199,
+     "end": 374.509
+    },
+    {
+     "text": "That's",
+     "start": 374.543,
+     "end": 374.784
+    },
+    {
+     "text": "like",
+     "start": 374.811,
+     "end": 374.983
+    },
+    {
+     "text": "a",
+     "start": 375.002,
+     "end": 375.071
+    },
+    {
+     "text": "shop",
+     "start": 375.079,
+     "end": 375.251
+    },
+    {
+     "text": "that",
+     "start": 375.27,
+     "end": 375.442
+    },
+    {
+     "text": "gives",
+     "start": 375.461,
+     "end": 375.668
+    },
+    {
+     "text": "you",
+     "start": 375.691,
+     "end": 375.829
+    },
+    {
+     "text": "a",
+     "start": 375.844,
+     "end": 375.913
+    },
+    {
+     "text": "penny",
+     "start": 375.921,
+     "end": 376.127
+    },
+    {
+     "text": "for",
+     "start": 376.15,
+     "end": 376.288
+    },
+    {
+     "text": "walking",
+     "start": 376.303,
+     "end": 376.578
+    },
+    {
+     "text": "in",
+     "start": 376.609,
+     "end": 376.712
+    },
+    {
+     "text": "and",
+     "start": 376.724,
+     "end": 376.862
+    },
+    {
+     "text": "charges",
+     "start": 376.877,
+     "end": 377.152
+    },
+    {
+     "text": "you",
+     "start": 377.183,
+     "end": 377.321
+    },
+    {
+     "text": "a",
+     "start": 377.336,
+     "end": 377.405
+    },
+    {
+     "text": "quarter",
+     "start": 377.412,
+     "end": 377.688
+    },
+    {
+     "text": "to",
+     "start": 377.718,
+     "end": 377.822
+    },
+    {
+     "text": "leave.",
+     "start": 377.833,
+     "end": 378.074
+    }
+   ]
+  },
+  {
+   "id": "n14",
+   "text": "Me finding out I'm customer B.",
+   "start": 378.72229166666665,
+   "end": 380.22229166666665,
+   "words": [
+    {
+     "text": "Me",
+     "start": 378.722,
+     "end": 378.862
+    },
+    {
+     "text": "finding",
+     "start": 378.862,
+     "end": 379.122
+    },
+    {
+     "text": "out",
+     "start": 379.122,
+     "end": 379.382
+    },
+    {
+     "text": "I'm",
+     "start": 379.382,
+     "end": 379.642
+    },
+    {
+     "text": "customer",
+     "start": 379.642,
+     "end": 379.962
+    },
+    {
+     "text": "B.",
+     "start": 379.962,
+     "end": 380.222
+    }
+   ]
+  },
+  {
+   "id": "c7e",
+   "text": "That cost me about ninety dollars in interest. Then the yearly fee showed up. Another ninety five.",
+   "start": 380.8633541666667,
+   "end": 385.25635416666665,
+   "words": [
+    {
+     "text": "That",
+     "start": 380.863,
+     "end": 381.064
+    },
+    {
+     "text": "cost",
+     "start": 381.086,
+     "end": 381.287
+    },
+    {
+     "text": "me",
+     "start": 381.309,
+     "end": 381.43
+    },
+    {
+     "text": "about",
+     "start": 381.443,
+     "end": 381.684
+    },
+    {
+     "text": "ninety",
+     "start": 381.711,
+     "end": 381.993
+    },
+    {
+     "text": "dollars",
+     "start": 382.024,
+     "end": 382.345
+    },
+    {
+     "text": "in",
+     "start": 382.381,
+     "end": 382.502
+    },
+    {
+     "text": "interest.",
+     "start": 382.515,
+     "end": 382.917
+    },
+    {
+     "text": "Then",
+     "start": 382.961,
+     "end": 383.162
+    },
+    {
+     "text": "the",
+     "start": 383.185,
+     "end": 383.345
+    },
+    {
+     "text": "yearly",
+     "start": 383.363,
+     "end": 383.644
+    },
+    {
+     "text": "fee",
+     "start": 383.676,
+     "end": 383.836
+    },
+    {
+     "text": "showed",
+     "start": 383.854,
+     "end": 384.136
+    },
+    {
+     "text": "up.",
+     "start": 384.167,
+     "end": 384.328
+    },
+    {
+     "text": "Another",
+     "start": 384.345,
+     "end": 384.667
+    },
+    {
+     "text": "ninety",
+     "start": 384.703,
+     "end": 384.984
+    },
+    {
+     "text": "five.",
+     "start": 385.015,
+     "end": 385.256
+    }
+   ]
+  },
+  {
+   "id": "c7f",
+   "text": "So let's add up my free flight. The extra stuff plus the fee plus the interest. One thousand four hundred eighty five dollars.",
+   "start": 385.90264583333334,
+   "end": 391.08564583333333,
+   "words": [
+    {
+     "text": "So",
+     "start": 385.903,
+     "end": 386.014
+    },
+    {
+     "text": "let's",
+     "start": 386.026,
+     "end": 386.248
+    },
+    {
+     "text": "add",
+     "start": 386.273,
+     "end": 386.421
+    },
+    {
+     "text": "up",
+     "start": 386.437,
+     "end": 386.548
+    },
+    {
+     "text": "my",
+     "start": 386.561,
+     "end": 386.672
+    },
+    {
+     "text": "free",
+     "start": 386.684,
+     "end": 386.869
+    },
+    {
+     "text": "flight.",
+     "start": 386.889,
+     "end": 387.185
+    },
+    {
+     "text": "The",
+     "start": 387.218,
+     "end": 387.366
+    },
+    {
+     "text": "extra",
+     "start": 387.383,
+     "end": 387.605
+    },
+    {
+     "text": "stuff",
+     "start": 387.629,
+     "end": 387.851
+    },
+    {
+     "text": "plus",
+     "start": 387.876,
+     "end": 388.061
+    },
+    {
+     "text": "the",
+     "start": 388.081,
+     "end": 388.229
+    },
+    {
+     "text": "fee",
+     "start": 388.246,
+     "end": 388.394
+    },
+    {
+     "text": "plus",
+     "start": 388.41,
+     "end": 388.595
+    },
+    {
+     "text": "the",
+     "start": 388.616,
+     "end": 388.764
+    },
+    {
+     "text": "interest.",
+     "start": 388.78,
+     "end": 389.15
+    },
+    {
+     "text": "One",
+     "start": 389.191,
+     "end": 389.339
+    },
+    {
+     "text": "thousand",
+     "start": 389.356,
+     "end": 389.689
+    },
+    {
+     "text": "four",
+     "start": 389.726,
+     "end": 389.91
+    },
+    {
+     "text": "hundred",
+     "start": 389.931,
+     "end": 390.227
+    },
+    {
+     "text": "eighty",
+     "start": 390.26,
+     "end": 390.519
+    },
+    {
+     "text": "five",
+     "start": 390.548,
+     "end": 390.733
+    },
+    {
+     "text": "dollars.",
+     "start": 390.753,
+     "end": 391.086
+    }
+   ]
+  },
+  {
+   "id": "c7g",
+   "text": "For a flight I could've just bought for about six hundred. And I still can't book it because I'm twenty thousand points short.",
+   "start": 392.44775,
+   "end": 397.66775,
+   "words": [
+    {
+     "text": "For",
+     "start": 392.448,
+     "end": 392.528
+    },
+    {
+     "text": "a",
+     "start": 392.528,
+     "end": 392.568
+    },
+    {
+     "text": "flight",
+     "start": 392.568,
+     "end": 392.788
+    },
+    {
+     "text": "I",
+     "start": 392.788,
+     "end": 392.988
+    },
+    {
+     "text": "could've",
+     "start": 392.988,
+     "end": 393.128
+    },
+    {
+     "text": "just",
+     "start": 393.128,
+     "end": 393.208
+    },
+    {
+     "text": "bought",
+     "start": 393.208,
+     "end": 393.368
+    },
+    {
+     "text": "for",
+     "start": 393.368,
+     "end": 393.588
+    },
+    {
+     "text": "about",
+     "start": 393.588,
+     "end": 393.768
+    },
+    {
+     "text": "six",
+     "start": 393.768,
+     "end": 393.888
+    },
+    {
+     "text": "hundred.",
+     "start": 393.888,
+     "end": 394.248
+    },
+    {
+     "text": "And",
+     "start": 394.888,
+     "end": 395.188
+    },
+    {
+     "text": "I",
+     "start": 395.188,
+     "end": 395.308
+    },
+    {
+     "text": "still",
+     "start": 395.308,
+     "end": 395.548
+    },
+    {
+     "text": "can't",
+     "start": 395.548,
+     "end": 395.848
+    },
+    {
+     "text": "book",
+     "start": 395.848,
+     "end": 395.988
+    },
+    {
+     "text": "it",
+     "start": 395.988,
+     "end": 396.148
+    },
+    {
+     "text": "because",
+     "start": 396.148,
+     "end": 396.428
+    },
+    {
+     "text": "I'm",
+     "start": 396.428,
+     "end": 396.608
+    },
+    {
+     "text": "twenty",
+     "start": 396.608,
+     "end": 396.828
+    },
+    {
+     "text": "thousand",
+     "start": 396.828,
+     "end": 397.188
+    },
+    {
+     "text": "points",
+     "start": 397.188,
+     "end": 397.388
+    },
+    {
+     "text": "short.",
+     "start": 397.388,
+     "end": 397.668
+    }
+   ]
+  },
+  {
+   "id": "c7g2",
+   "text": "So I sit in my kitchen next to the kayak with my coffee and I tell myself this is fine.",
+   "start": 398.36889583333334,
+   "end": 402.52889583333337,
+   "words": [
+    {
+     "text": "So",
+     "start": 398.369,
+     "end": 398.549
+    },
+    {
+     "text": "I",
+     "start": 398.549,
+     "end": 398.789
+    },
+    {
+     "text": "sit",
+     "start": 398.789,
+     "end": 398.929
+    },
+    {
+     "text": "in",
+     "start": 398.929,
+     "end": 399.069
+    },
+    {
+     "text": "my",
+     "start": 399.069,
+     "end": 399.169
+    },
+    {
+     "text": "kitchen",
+     "start": 399.169,
+     "end": 399.409
+    },
+    {
+     "text": "next",
+     "start": 399.409,
+     "end": 399.709
+    },
+    {
+     "text": "to",
+     "start": 399.709,
+     "end": 399.869
+    },
+    {
+     "text": "the",
+     "start": 399.869,
+     "end": 399.949
+    },
+    {
+     "text": "kayak",
+     "start": 399.949,
+     "end": 400.309
+    },
+    {
+     "text": "with",
+     "start": 400.309,
+     "end": 400.409
+    },
+    {
+     "text": "my",
+     "start": 400.409,
+     "end": 400.549
+    },
+    {
+     "text": "coffee",
+     "start": 400.549,
+     "end": 400.849
+    },
+    {
+     "text": "and",
+     "start": 400.849,
+     "end": 401.209
+    },
+    {
+     "text": "I",
+     "start": 401.209,
+     "end": 401.449
+    },
+    {
+     "text": "tell",
+     "start": 401.449,
+     "end": 401.589
+    },
+    {
+     "text": "myself",
+     "start": 401.589,
+     "end": 401.929
+    },
+    {
+     "text": "this",
+     "start": 401.929,
+     "end": 402.189
+    },
+    {
+     "text": "is",
+     "start": 402.189,
+     "end": 402.309
+    },
+    {
+     "text": "fine.",
+     "start": 402.309,
+     "end": 402.529
+    }
+   ]
+  },
+  {
+   "id": "c7h",
+   "text": "I got played by a kayak.",
+   "start": 403.210125,
+   "end": 404.290125,
+   "words": [
+    {
+     "text": "I",
+     "start": 403.21,
+     "end": 403.29
+    },
+    {
+     "text": "got",
+     "start": 403.29,
+     "end": 403.39
+    },
+    {
+     "text": "played",
+     "start": 403.39,
+     "end": 403.61
+    },
+    {
+     "text": "by",
+     "start": 403.61,
+     "end": 403.79
+    },
+    {
+     "text": "a",
+     "start": 403.79,
+     "end": 403.87
+    },
+    {
+     "text": "kayak.",
+     "start": 403.87,
+     "end": 404.29
+    }
+   ]
+  },
+  {
+   "id": "c7i",
+   "text": "But here's what the smiley man at the booth doesn't want you to notice. This game only works on people who chase. And I just stopped chasing.",
+   "start": 404.9786041666667,
+   "end": 410.5986041666667,
+   "words": [
+    {
+     "text": "But",
+     "start": 404.979,
+     "end": 405.059
+    },
+    {
+     "text": "here's",
+     "start": 405.059,
+     "end": 405.359
+    },
+    {
+     "text": "what",
+     "start": 405.359,
+     "end": 405.479
+    },
+    {
+     "text": "the",
+     "start": 405.479,
+     "end": 405.599
+    },
+    {
+     "text": "smiley",
+     "start": 405.599,
+     "end": 405.899
+    },
+    {
+     "text": "man",
+     "start": 405.899,
+     "end": 406.079
+    },
+    {
+     "text": "at",
+     "start": 406.079,
+     "end": 406.179
+    },
+    {
+     "text": "the",
+     "start": 406.179,
+     "end": 406.259
+    },
+    {
+     "text": "booth",
+     "start": 406.259,
+     "end": 406.399
+    },
+    {
+     "text": "doesn't",
+     "start": 406.399,
+     "end": 406.719
+    },
+    {
+     "text": "want",
+     "start": 406.719,
+     "end": 406.879
+    },
+    {
+     "text": "you",
+     "start": 406.879,
+     "end": 406.959
+    },
+    {
+     "text": "to",
+     "start": 406.959,
+     "end": 407.079
+    },
+    {
+     "text": "notice.",
+     "start": 407.079,
+     "end": 407.279
+    },
+    {
+     "text": "This",
+     "start": 407.799,
+     "end": 407.919
+    },
+    {
+     "text": "game",
+     "start": 407.919,
+     "end": 408.139
+    },
+    {
+     "text": "only",
+     "start": 408.139,
+     "end": 408.379
+    },
+    {
+     "text": "works",
+     "start": 408.379,
+     "end": 408.599
+    },
+    {
+     "text": "on",
+     "start": 408.599,
+     "end": 408.739
+    },
+    {
+     "text": "people",
+     "start": 408.739,
+     "end": 408.919
+    },
+    {
+     "text": "who",
+     "start": 408.919,
+     "end": 409.139
+    },
+    {
+     "text": "chase.",
+     "start": 409.139,
+     "end": 409.359
+    },
+    {
+     "text": "And",
+     "start": 409.719,
+     "end": 409.819
+    },
+    {
+     "text": "I",
+     "start": 409.819,
+     "end": 409.919
+    },
+    {
+     "text": "just",
+     "start": 409.919,
+     "end": 410.059
+    },
+    {
+     "text": "stopped",
+     "start": 410.059,
+     "end": 410.259
+    },
+    {
+     "text": "chasing.",
+     "start": 410.259,
+     "end": 410.599
+    }
+   ]
+  },
+  {
+   "id": "c8a",
+   "text": "This part is education and not advice. I write three questions on a sticky note and wrap it around my card.",
+   "start": 413.51877083333335,
+   "end": 418.59877083333333,
+   "words": [
+    {
+     "text": "This",
+     "start": 413.519,
+     "end": 413.619
+    },
+    {
+     "text": "part",
+     "start": 413.619,
+     "end": 413.859
+    },
+    {
+     "text": "is",
+     "start": 413.859,
+     "end": 414.039
+    },
+    {
+     "text": "education",
+     "start": 414.039,
+     "end": 414.319
+    },
+    {
+     "text": "and",
+     "start": 414.319,
+     "end": 414.779
+    },
+    {
+     "text": "not",
+     "start": 414.779,
+     "end": 414.959
+    },
+    {
+     "text": "advice.",
+     "start": 414.959,
+     "end": 415.179
+    },
+    {
+     "text": "I",
+     "start": 415.959,
+     "end": 415.999
+    },
+    {
+     "text": "write",
+     "start": 415.999,
+     "end": 416.119
+    },
+    {
+     "text": "three",
+     "start": 416.119,
+     "end": 416.319
+    },
+    {
+     "text": "questions",
+     "start": 416.319,
+     "end": 416.719
+    },
+    {
+     "text": "on",
+     "start": 416.719,
+     "end": 416.979
+    },
+    {
+     "text": "a",
+     "start": 416.979,
+     "end": 417.059
+    },
+    {
+     "text": "sticky",
+     "start": 417.059,
+     "end": 417.199
+    },
+    {
+     "text": "note",
+     "start": 417.199,
+     "end": 417.519
+    },
+    {
+     "text": "and",
+     "start": 417.519,
+     "end": 417.719
+    },
+    {
+     "text": "wrap",
+     "start": 417.719,
+     "end": 417.879
+    },
+    {
+     "text": "it",
+     "start": 417.879,
+     "end": 418.019
+    },
+    {
+     "text": "around",
+     "start": 418.019,
+     "end": 418.199
+    },
+    {
+     "text": "my",
+     "start": 418.199,
+     "end": 418.359
+    },
+    {
+     "text": "card.",
+     "start": 418.359,
+     "end": 418.599
+    }
+   ]
+  },
+  {
+   "id": "c8b",
+   "text": "Question one. Would I buy this if there were no points? If the answer is no the points aren't a discount. They're the bait.",
+   "start": 419.18125,
+   "end": 424.80125,
+   "words": [
+    {
+     "text": "Question",
+     "start": 419.181,
+     "end": 419.421
+    },
+    {
+     "text": "one.",
+     "start": 419.421,
+     "end": 419.621
+    },
+    {
+     "text": "Would",
+     "start": 420.021,
+     "end": 420.301
+    },
+    {
+     "text": "I",
+     "start": 420.301,
+     "end": 420.441
+    },
+    {
+     "text": "buy",
+     "start": 420.441,
+     "end": 420.581
+    },
+    {
+     "text": "this",
+     "start": 420.581,
+     "end": 420.801
+    },
+    {
+     "text": "if",
+     "start": 420.801,
+     "end": 421.061
+    },
+    {
+     "text": "there",
+     "start": 421.061,
+     "end": 421.221
+    },
+    {
+     "text": "were",
+     "start": 421.221,
+     "end": 421.341
+    },
+    {
+     "text": "no",
+     "start": 421.341,
+     "end": 421.481
+    },
+    {
+     "text": "points?",
+     "start": 421.481,
+     "end": 421.721
+    },
+    {
+     "text": "If",
+     "start": 422.301,
+     "end": 422.381
+    },
+    {
+     "text": "the",
+     "start": 422.381,
+     "end": 422.521
+    },
+    {
+     "text": "answer",
+     "start": 422.521,
+     "end": 422.681
+    },
+    {
+     "text": "is",
+     "start": 422.681,
+     "end": 422.841
+    },
+    {
+     "text": "no",
+     "start": 422.841,
+     "end": 423.041
+    },
+    {
+     "text": "the",
+     "start": 423.361,
+     "end": 423.441
+    },
+    {
+     "text": "points",
+     "start": 423.441,
+     "end": 423.601
+    },
+    {
+     "text": "aren't",
+     "start": 423.601,
+     "end": 423.841
+    },
+    {
+     "text": "a",
+     "start": 423.841,
+     "end": 423.861
+    },
+    {
+     "text": "discount.",
+     "start": 423.861,
+     "end": 424.101
+    },
+    {
+     "text": "They're",
+     "start": 424.521,
+     "end": 424.601
+    },
+    {
+     "text": "the",
+     "start": 424.601,
+     "end": 424.681
+    },
+    {
+     "text": "bait.",
+     "start": 424.681,
+     "end": 424.801
+    }
+   ]
+  },
+  {
+   "id": "c8c",
+   "text": "I try it and the extra shopping just stops. That keeps about thirteen hundred dollars a year at home.",
+   "start": 425.4922916666667,
+   "end": 429.9462916666667,
+   "words": [
+    {
+     "text": "I",
+     "start": 425.492,
+     "end": 425.571
+    },
+    {
+     "text": "try",
+     "start": 425.58,
+     "end": 425.738
+    },
+    {
+     "text": "it",
+     "start": 425.756,
+     "end": 425.874
+    },
+    {
+     "text": "and",
+     "start": 425.887,
+     "end": 426.045
+    },
+    {
+     "text": "the",
+     "start": 426.063,
+     "end": 426.221
+    },
+    {
+     "text": "extra",
+     "start": 426.239,
+     "end": 426.476
+    },
+    {
+     "text": "shopping",
+     "start": 426.502,
+     "end": 426.858
+    },
+    {
+     "text": "just",
+     "start": 426.897,
+     "end": 427.095
+    },
+    {
+     "text": "stops.",
+     "start": 427.117,
+     "end": 427.394
+    },
+    {
+     "text": "That",
+     "start": 427.425,
+     "end": 427.622
+    },
+    {
+     "text": "keeps",
+     "start": 427.644,
+     "end": 427.881
+    },
+    {
+     "text": "about",
+     "start": 427.908,
+     "end": 428.145
+    },
+    {
+     "text": "thirteen",
+     "start": 428.171,
+     "end": 428.527
+    },
+    {
+     "text": "hundred",
+     "start": 428.567,
+     "end": 428.883
+    },
+    {
+     "text": "dollars",
+     "start": 428.918,
+     "end": 429.234
+    },
+    {
+     "text": "a",
+     "start": 429.269,
+     "end": 429.348
+    },
+    {
+     "text": "year",
+     "start": 429.357,
+     "end": 429.555
+    },
+    {
+     "text": "at",
+     "start": 429.577,
+     "end": 429.695
+    },
+    {
+     "text": "home.",
+     "start": 429.708,
+     "end": 429.946
+    }
+   ]
+  },
+  {
+   "id": "n15",
+   "text": "Me walking past the kayak aisle now.",
+   "start": 430.62375,
+   "end": 432.10375,
+   "words": [
+    {
+     "text": "Me",
+     "start": 430.624,
+     "end": 430.724
+    },
+    {
+     "text": "walking",
+     "start": 430.724,
+     "end": 430.924
+    },
+    {
+     "text": "past",
+     "start": 430.924,
+     "end": 431.204
+    },
+    {
+     "text": "the",
+     "start": 431.204,
+     "end": 431.404
+    },
+    {
+     "text": "kayak",
+     "start": 431.404,
+     "end": 431.724
+    },
+    {
+     "text": "aisle",
+     "start": 431.724,
+     "end": 431.844
+    },
+    {
+     "text": "now.",
+     "start": 431.844,
+     "end": 432.104
+    }
+   ]
+  },
+  {
+   "id": "c8d",
+   "text": "Question two. Can I pay the whole bill every single month? Because no reward on Earth keeps up with twenty two percent interest. So I turn on autopay for the full balance.",
+   "start": 432.69210416666664,
+   "end": 440.35210416666666,
+   "words": [
+    {
+     "text": "Question",
+     "start": 432.692,
+     "end": 432.932
+    },
+    {
+     "text": "two.",
+     "start": 432.932,
+     "end": 433.232
+    },
+    {
+     "text": "Can",
+     "start": 433.552,
+     "end": 433.692
+    },
+    {
+     "text": "I",
+     "start": 433.692,
+     "end": 433.792
+    },
+    {
+     "text": "pay",
+     "start": 433.792,
+     "end": 433.952
+    },
+    {
+     "text": "the",
+     "start": 433.952,
+     "end": 434.072
+    },
+    {
+     "text": "whole",
+     "start": 434.072,
+     "end": 434.232
+    },
+    {
+     "text": "bill",
+     "start": 434.232,
+     "end": 434.492
+    },
+    {
+     "text": "every",
+     "start": 434.492,
+     "end": 434.752
+    },
+    {
+     "text": "single",
+     "start": 434.752,
+     "end": 435.012
+    },
+    {
+     "text": "month?",
+     "start": 435.012,
+     "end": 435.252
+    },
+    {
+     "text": "Because",
+     "start": 435.252,
+     "end": 435.752
+    },
+    {
+     "text": "no",
+     "start": 435.752,
+     "end": 435.952
+    },
+    {
+     "text": "reward",
+     "start": 435.952,
+     "end": 436.172
+    },
+    {
+     "text": "on",
+     "start": 436.172,
+     "end": 436.392
+    },
+    {
+     "text": "Earth",
+     "start": 436.392,
+     "end": 436.592
+    },
+    {
+     "text": "keeps",
+     "start": 436.592,
+     "end": 436.812
+    },
+    {
+     "text": "up",
+     "start": 436.812,
+     "end": 437.012
+    },
+    {
+     "text": "with",
+     "start": 437.012,
+     "end": 437.172
+    },
+    {
+     "text": "twenty",
+     "start": 437.172,
+     "end": 437.412
+    },
+    {
+     "text": "two",
+     "start": 437.412,
+     "end": 437.752
+    },
+    {
+     "text": "percent",
+     "start": 437.752,
+     "end": 438.092
+    },
+    {
+     "text": "interest.",
+     "start": 438.552,
+     "end": 438.752
+    },
+    {
+     "text": "So",
+     "start": 438.752,
+     "end": 438.872
+    },
+    {
+     "text": "I",
+     "start": 438.872,
+     "end": 439.032
+    },
+    {
+     "text": "turn",
+     "start": 439.032,
+     "end": 439.172
+    },
+    {
+     "text": "on",
+     "start": 439.172,
+     "end": 439.332
+    },
+    {
+     "text": "autopay",
+     "start": 439.332,
+     "end": 439.612
+    },
+    {
+     "text": "for",
+     "start": 439.612,
+     "end": 439.792
+    },
+    {
+     "text": "the",
+     "start": 439.792,
+     "end": 439.872
+    },
+    {
+     "text": "full",
+     "start": 439.872,
+     "end": 440.012
+    },
+    {
+     "text": "balance.",
+     "start": 440.012,
+     "end": 440.352
+    }
+   ]
+  },
+  {
+   "id": "c8f",
+   "text": "Question three. What does this card cost me just for existing? Mine was ninety five dollars a year. So I swap it for a boring one with no fee that just pays cash back.",
+   "start": 441.1149375,
+   "end": 448.2099375,
+   "words": [
+    {
+     "text": "Question",
+     "start": 441.115,
+     "end": 441.458
+    },
+    {
+     "text": "three.",
+     "start": 441.496,
+     "end": 441.763
+    },
+    {
+     "text": "What",
+     "start": 441.793,
+     "end": 441.984
+    },
+    {
+     "text": "does",
+     "start": 442.005,
+     "end": 442.196
+    },
+    {
+     "text": "this",
+     "start": 442.217,
+     "end": 442.408
+    },
+    {
+     "text": "card",
+     "start": 442.429,
+     "end": 442.62
+    },
+    {
+     "text": "cost",
+     "start": 442.641,
+     "end": 442.831
+    },
+    {
+     "text": "me",
+     "start": 442.853,
+     "end": 442.967
+    },
+    {
+     "text": "just",
+     "start": 442.98,
+     "end": 443.17
+    },
+    {
+     "text": "for",
+     "start": 443.192,
+     "end": 443.344
+    },
+    {
+     "text": "existing?",
+     "start": 443.361,
+     "end": 443.743
+    },
+    {
+     "text": "Mine",
+     "start": 443.785,
+     "end": 443.976
+    },
+    {
+     "text": "was",
+     "start": 443.997,
+     "end": 444.149
+    },
+    {
+     "text": "ninety",
+     "start": 444.166,
+     "end": 444.433
+    },
+    {
+     "text": "five",
+     "start": 444.463,
+     "end": 444.654
+    },
+    {
+     "text": "dollars",
+     "start": 444.675,
+     "end": 444.98
+    },
+    {
+     "text": "a",
+     "start": 445.014,
+     "end": 445.09
+    },
+    {
+     "text": "year.",
+     "start": 445.099,
+     "end": 445.328
+    },
+    {
+     "text": "So",
+     "start": 445.353,
+     "end": 445.468
+    },
+    {
+     "text": "I",
+     "start": 445.48,
+     "end": 445.557
+    },
+    {
+     "text": "swap",
+     "start": 445.565,
+     "end": 445.756
+    },
+    {
+     "text": "it",
+     "start": 445.777,
+     "end": 445.891
+    },
+    {
+     "text": "for",
+     "start": 445.904,
+     "end": 446.057
+    },
+    {
+     "text": "a",
+     "start": 446.074,
+     "end": 446.15
+    },
+    {
+     "text": "boring",
+     "start": 446.158,
+     "end": 446.425
+    },
+    {
+     "text": "one",
+     "start": 446.455,
+     "end": 446.608
+    },
+    {
+     "text": "with",
+     "start": 446.625,
+     "end": 446.815
+    },
+    {
+     "text": "no",
+     "start": 446.836,
+     "end": 446.951
+    },
+    {
+     "text": "fee",
+     "start": 446.964,
+     "end": 447.116
+    },
+    {
+     "text": "that",
+     "start": 447.133,
+     "end": 447.324
+    },
+    {
+     "text": "just",
+     "start": 447.345,
+     "end": 447.536
+    },
+    {
+     "text": "pays",
+     "start": 447.557,
+     "end": 447.748
+    },
+    {
+     "text": "cash",
+     "start": 447.769,
+     "end": 447.96
+    },
+    {
+     "text": "back.",
+     "start": 447.981,
+     "end": 448.21
+    }
+   ]
+  },
+  {
+   "id": "c8g",
+   "text": "And one rule for the points you already have. Spend them. Points aren't a savings account. They're milk. And there's a date on the carton you can't see.",
+   "start": 448.7714375,
+   "end": 455.3914375,
+   "words": [
+    {
+     "text": "And",
+     "start": 448.771,
+     "end": 448.971
+    },
+    {
+     "text": "one",
+     "start": 448.971,
+     "end": 449.151
+    },
+    {
+     "text": "rule",
+     "start": 449.151,
+     "end": 449.351
+    },
+    {
+     "text": "for",
+     "start": 449.351,
+     "end": 449.511
+    },
+    {
+     "text": "the",
+     "start": 449.511,
+     "end": 449.591
+    },
+    {
+     "text": "points",
+     "start": 449.591,
+     "end": 449.751
+    },
+    {
+     "text": "you",
+     "start": 449.751,
+     "end": 449.931
+    },
+    {
+     "text": "already",
+     "start": 449.931,
+     "end": 450.051
+    },
+    {
+     "text": "have.",
+     "start": 450.051,
+     "end": 450.471
+    },
+    {
+     "text": "Spend",
+     "start": 450.931,
+     "end": 450.931
+    },
+    {
+     "text": "them.",
+     "start": 450.931,
+     "end": 451.211
+    },
+    {
+     "text": "Points",
+     "start": 451.771,
+     "end": 451.911
+    },
+    {
+     "text": "aren't",
+     "start": 451.911,
+     "end": 452.271
+    },
+    {
+     "text": "a",
+     "start": 452.271,
+     "end": 452.311
+    },
+    {
+     "text": "savings",
+     "start": 452.311,
+     "end": 452.491
+    },
+    {
+     "text": "account.",
+     "start": 452.491,
+     "end": 452.851
+    },
+    {
+     "text": "They're",
+     "start": 453.231,
+     "end": 453.291
+    },
+    {
+     "text": "milk.",
+     "start": 453.291,
+     "end": 453.471
+    },
+    {
+     "text": "And",
+     "start": 453.991,
+     "end": 454.051
+    },
+    {
+     "text": "there's",
+     "start": 454.051,
+     "end": 454.211
+    },
+    {
+     "text": "a",
+     "start": 454.211,
+     "end": 454.291
+    },
+    {
+     "text": "date",
+     "start": 454.291,
+     "end": 454.391
+    },
+    {
+     "text": "on",
+     "start": 454.391,
+     "end": 454.511
+    },
+    {
+     "text": "the",
+     "start": 454.511,
+     "end": 454.591
+    },
+    {
+     "text": "carton",
+     "start": 454.591,
+     "end": 454.891
+    },
+    {
+     "text": "you",
+     "start": 454.891,
+     "end": 454.991
+    },
+    {
+     "text": "can't",
+     "start": 454.991,
+     "end": 455.231
+    },
+    {
+     "text": "see.",
+     "start": 455.231,
+     "end": 455.391
+    }
+   ]
+  },
+  {
+   "id": "n16",
+   "text": "My points sitting in the account for three years.",
+   "start": 456.0738125,
+   "end": 457.77381249999996,
+   "words": [
+    {
+     "text": "My",
+     "start": 456.074,
+     "end": 456.154
+    },
+    {
+     "text": "points",
+     "start": 456.154,
+     "end": 456.354
+    },
+    {
+     "text": "sitting",
+     "start": 456.354,
+     "end": 456.594
+    },
+    {
+     "text": "in",
+     "start": 456.594,
+     "end": 456.774
+    },
+    {
+     "text": "the",
+     "start": 456.774,
+     "end": 456.854
+    },
+    {
+     "text": "account",
+     "start": 456.854,
+     "end": 457.054
+    },
+    {
+     "text": "for",
+     "start": 457.054,
+     "end": 457.334
+    },
+    {
+     "text": "three",
+     "start": 457.334,
+     "end": 457.514
+    },
+    {
+     "text": "years.",
+     "start": 457.514,
+     "end": 457.774
+    }
+   ]
+  },
+  {
+   "id": "c8h",
+   "text": "So I stop waiting for the eighty thousand point flight. I search a rainy Tuesday in the off season. Same beach. Fifty five thousand.",
+   "start": 458.5080208333333,
+   "end": 464.72102083333334,
+   "words": [
+    {
+     "text": "So",
+     "start": 458.508,
+     "end": 458.635
+    },
+    {
+     "text": "I",
+     "start": 458.649,
+     "end": 458.734
+    },
+    {
+     "text": "stop",
+     "start": 458.743,
+     "end": 458.955
+    },
+    {
+     "text": "waiting",
+     "start": 458.979,
+     "end": 459.318
+    },
+    {
+     "text": "for",
+     "start": 459.355,
+     "end": 459.525
+    },
+    {
+     "text": "the",
+     "start": 459.543,
+     "end": 459.713
+    },
+    {
+     "text": "eighty",
+     "start": 459.732,
+     "end": 460.028
+    },
+    {
+     "text": "thousand",
+     "start": 460.061,
+     "end": 460.442
+    },
+    {
+     "text": "point",
+     "start": 460.485,
+     "end": 460.739
+    },
+    {
+     "text": "flight.",
+     "start": 460.767,
+     "end": 461.106
+    },
+    {
+     "text": "I",
+     "start": 461.144,
+     "end": 461.229
+    },
+    {
+     "text": "search",
+     "start": 461.238,
+     "end": 461.534
+    },
+    {
+     "text": "a",
+     "start": 461.567,
+     "end": 461.652
+    },
+    {
+     "text": "rainy",
+     "start": 461.662,
+     "end": 461.916
+    },
+    {
+     "text": "Tuesday",
+     "start": 461.944,
+     "end": 462.283
+    },
+    {
+     "text": "in",
+     "start": 462.32,
+     "end": 462.448
+    },
+    {
+     "text": "the",
+     "start": 462.462,
+     "end": 462.631
+    },
+    {
+     "text": "off",
+     "start": 462.65,
+     "end": 462.819
+    },
+    {
+     "text": "season.",
+     "start": 462.838,
+     "end": 463.177
+    },
+    {
+     "text": "Same",
+     "start": 463.215,
+     "end": 463.427
+    },
+    {
+     "text": "beach.",
+     "start": 463.45,
+     "end": 463.747
+    },
+    {
+     "text": "Fifty",
+     "start": 463.78,
+     "end": 464.034
+    },
+    {
+     "text": "five",
+     "start": 464.062,
+     "end": 464.274
+    },
+    {
+     "text": "thousand.",
+     "start": 464.297,
+     "end": 464.721
+    }
+   ]
+  },
+  {
+   "id": "c8i",
+   "text": "I book it on the spot. And then I turn around and look at the kayak.",
+   "start": 465.4509375,
+   "end": 468.1509375,
+   "words": [
+    {
+     "text": "I",
+     "start": 465.451,
+     "end": 465.531
+    },
+    {
+     "text": "book",
+     "start": 465.531,
+     "end": 465.651
+    },
+    {
+     "text": "it",
+     "start": 465.651,
+     "end": 465.771
+    },
+    {
+     "text": "on",
+     "start": 465.771,
+     "end": 465.871
+    },
+    {
+     "text": "the",
+     "start": 465.871,
+     "end": 465.971
+    },
+    {
+     "text": "spot.",
+     "start": 465.971,
+     "end": 466.231
+    },
+    {
+     "text": "And",
+     "start": 466.651,
+     "end": 466.811
+    },
+    {
+     "text": "then",
+     "start": 466.811,
+     "end": 466.911
+    },
+    {
+     "text": "I",
+     "start": 466.911,
+     "end": 466.971
+    },
+    {
+     "text": "turn",
+     "start": 466.971,
+     "end": 467.151
+    },
+    {
+     "text": "around",
+     "start": 467.151,
+     "end": 467.391
+    },
+    {
+     "text": "and",
+     "start": 467.391,
+     "end": 467.551
+    },
+    {
+     "text": "look",
+     "start": 467.551,
+     "end": 467.671
+    },
+    {
+     "text": "at",
+     "start": 467.671,
+     "end": 467.811
+    },
+    {
+     "text": "the",
+     "start": 467.811,
+     "end": 467.811
+    },
+    {
+     "text": "kayak.",
+     "start": 467.811,
+     "end": 468.151
+    }
+   ]
+  },
+  {
+   "id": "c9a",
+   "text": "So here I am. Same beach from the start of this video. On a flight my points really did pay for.",
+   "start": 468.6265625,
+   "end": 474.1865625,
+   "words": [
+    {
+     "text": "So",
+     "start": 468.627,
+     "end": 468.787
+    },
+    {
+     "text": "here",
+     "start": 468.787,
+     "end": 468.967
+    },
+    {
+     "text": "I",
+     "start": 468.967,
+     "end": 469.107
+    },
+    {
+     "text": "am.",
+     "start": 469.107,
+     "end": 469.287
+    },
+    {
+     "text": "Same",
+     "start": 469.827,
+     "end": 470.027
+    },
+    {
+     "text": "beach",
+     "start": 470.027,
+     "end": 470.287
+    },
+    {
+     "text": "from",
+     "start": 470.287,
+     "end": 470.547
+    },
+    {
+     "text": "the",
+     "start": 470.547,
+     "end": 470.647
+    },
+    {
+     "text": "start",
+     "start": 470.647,
+     "end": 470.887
+    },
+    {
+     "text": "of",
+     "start": 470.887,
+     "end": 470.987
+    },
+    {
+     "text": "this",
+     "start": 470.987,
+     "end": 471.147
+    },
+    {
+     "text": "video.",
+     "start": 471.147,
+     "end": 471.407
+    },
+    {
+     "text": "On",
+     "start": 472.087,
+     "end": 472.147
+    },
+    {
+     "text": "a",
+     "start": 472.147,
+     "end": 472.227
+    },
+    {
+     "text": "flight",
+     "start": 472.227,
+     "end": 472.427
+    },
+    {
+     "text": "my",
+     "start": 472.667,
+     "end": 472.687
+    },
+    {
+     "text": "points",
+     "start": 472.687,
+     "end": 472.947
+    },
+    {
+     "text": "really",
+     "start": 472.947,
+     "end": 473.247
+    },
+    {
+     "text": "did",
+     "start": 473.247,
+     "end": 473.467
+    },
+    {
+     "text": "pay",
+     "start": 473.467,
+     "end": 473.627
+    },
+    {
+     "text": "for.",
+     "start": 473.627,
+     "end": 474.187
+    }
+   ]
+  },
+  {
+   "id": "c9c",
+   "text": "I can't get last year's money back. But this year it's staying in my pocket. And that's the whole trick.",
+   "start": 474.5704166666667,
+   "end": 478.4304166666667,
+   "words": [
+    {
+     "text": "I",
+     "start": 474.57,
+     "end": 474.65
+    },
+    {
+     "text": "can't",
+     "start": 474.65,
+     "end": 474.87
+    },
+    {
+     "text": "get",
+     "start": 474.87,
+     "end": 474.97
+    },
+    {
+     "text": "last",
+     "start": 474.97,
+     "end": 475.13
+    },
+    {
+     "text": "year's",
+     "start": 475.13,
+     "end": 475.37
+    },
+    {
+     "text": "money",
+     "start": 475.37,
+     "end": 475.49
+    },
+    {
+     "text": "back.",
+     "start": 475.49,
+     "end": 475.71
+    },
+    {
+     "text": "But",
+     "start": 476.03,
+     "end": 476.17
+    },
+    {
+     "text": "this",
+     "start": 476.17,
+     "end": 476.31
+    },
+    {
+     "text": "year",
+     "start": 476.31,
+     "end": 476.53
+    },
+    {
+     "text": "it's",
+     "start": 476.53,
+     "end": 476.81
+    },
+    {
+     "text": "staying",
+     "start": 476.81,
+     "end": 476.93
+    },
+    {
+     "text": "in",
+     "start": 476.93,
+     "end": 477.07
+    },
+    {
+     "text": "my",
+     "start": 477.07,
+     "end": 477.15
+    },
+    {
+     "text": "pocket.",
+     "start": 477.15,
+     "end": 477.49
+    },
+    {
+     "text": "And",
+     "start": 477.49,
+     "end": 477.81
+    },
+    {
+     "text": "that's",
+     "start": 477.81,
+     "end": 478.03
+    },
+    {
+     "text": "the",
+     "start": 478.03,
+     "end": 478.13
+    },
+    {
+     "text": "whole",
+     "start": 478.13,
+     "end": 478.23
+    },
+    {
+     "text": "trick.",
+     "start": 478.23,
+     "end": 478.43
+    }
+   ]
+  },
+  {
+   "id": "c9d",
+   "text": "Because points were never free money. They're a bill. And somebody always pays it. The shopper who buys more. The neighbor who pays cash. Or the person paying interest.",
+   "start": 479.0651041666667,
+   "end": 485.64510416666667,
+   "words": [
+    {
+     "text": "Because",
+     "start": 479.065,
+     "end": 479.225
+    },
+    {
+     "text": "points",
+     "start": 479.225,
+     "end": 479.405
+    },
+    {
+     "text": "were",
+     "start": 479.405,
+     "end": 479.565
+    },
+    {
+     "text": "never",
+     "start": 479.565,
+     "end": 479.665
+    },
+    {
+     "text": "free",
+     "start": 479.665,
+     "end": 479.885
+    },
+    {
+     "text": "money.",
+     "start": 479.885,
+     "end": 480.125
+    },
+    {
+     "text": "They're",
+     "start": 480.465,
+     "end": 480.585
+    },
+    {
+     "text": "a",
+     "start": 480.585,
+     "end": 480.645
+    },
+    {
+     "text": "bill.",
+     "start": 480.645,
+     "end": 480.805
+    },
+    {
+     "text": "And",
+     "start": 481.145,
+     "end": 481.225
+    },
+    {
+     "text": "somebody",
+     "start": 481.225,
+     "end": 481.465
+    },
+    {
+     "text": "always",
+     "start": 481.465,
+     "end": 481.705
+    },
+    {
+     "text": "pays",
+     "start": 481.705,
+     "end": 481.925
+    },
+    {
+     "text": "it.",
+     "start": 481.925,
+     "end": 482.125
+    },
+    {
+     "text": "The",
+     "start": 482.325,
+     "end": 482.345
+    },
+    {
+     "text": "shopper",
+     "start": 482.345,
+     "end": 482.605
+    },
+    {
+     "text": "who",
+     "start": 482.605,
+     "end": 482.745
+    },
+    {
+     "text": "buys",
+     "start": 482.745,
+     "end": 482.905
+    },
+    {
+     "text": "more.",
+     "start": 482.905,
+     "end": 483.225
+    },
+    {
+     "text": "The",
+     "start": 483.465,
+     "end": 483.505
+    },
+    {
+     "text": "neighbor",
+     "start": 483.505,
+     "end": 483.665
+    },
+    {
+     "text": "who",
+     "start": 483.665,
+     "end": 483.845
+    },
+    {
+     "text": "pays",
+     "start": 483.845,
+     "end": 484.025
+    },
+    {
+     "text": "cash.",
+     "start": 484.025,
+     "end": 484.305
+    },
+    {
+     "text": "Or",
+     "start": 484.625,
+     "end": 484.745
+    },
+    {
+     "text": "the",
+     "start": 484.745,
+     "end": 484.905
+    },
+    {
+     "text": "person",
+     "start": 484.905,
+     "end": 485.105
+    },
+    {
+     "text": "paying",
+     "start": 485.105,
+     "end": 485.305
+    },
+    {
+     "text": "interest.",
+     "start": 485.305,
+     "end": 485.645
+    }
+   ]
+  },
+  {
+   "id": "c9e",
+   "text": "Your only job is to not be any of those three. Pay in full and never chase and spend your points fast. Then rewards can be a nice little extra.",
+   "start": 486.440125,
+   "end": 493.320125,
+   "words": [
+    {
+     "text": "Your",
+     "start": 486.44,
+     "end": 486.52
+    },
+    {
+     "text": "only",
+     "start": 486.52,
+     "end": 486.72
+    },
+    {
+     "text": "job",
+     "start": 486.72,
+     "end": 487.0
+    },
+    {
+     "text": "is",
+     "start": 487.0,
+     "end": 487.2
+    },
+    {
+     "text": "to",
+     "start": 487.2,
+     "end": 487.3
+    },
+    {
+     "text": "not",
+     "start": 487.3,
+     "end": 487.48
+    },
+    {
+     "text": "be",
+     "start": 487.48,
+     "end": 487.64
+    },
+    {
+     "text": "any",
+     "start": 487.64,
+     "end": 487.9
+    },
+    {
+     "text": "of",
+     "start": 487.9,
+     "end": 488.08
+    },
+    {
+     "text": "those",
+     "start": 488.08,
+     "end": 488.26
+    },
+    {
+     "text": "three.",
+     "start": 488.26,
+     "end": 488.54
+    },
+    {
+     "text": "Pay",
+     "start": 489.2,
+     "end": 489.22
+    },
+    {
+     "text": "in",
+     "start": 489.22,
+     "end": 489.38
+    },
+    {
+     "text": "full",
+     "start": 489.38,
+     "end": 489.58
+    },
+    {
+     "text": "and",
+     "start": 489.58,
+     "end": 489.8
+    },
+    {
+     "text": "never",
+     "start": 489.8,
+     "end": 490.0
+    },
+    {
+     "text": "chase",
+     "start": 490.0,
+     "end": 490.28
+    },
+    {
+     "text": "and",
+     "start": 490.28,
+     "end": 490.56
+    },
+    {
+     "text": "spend",
+     "start": 490.56,
+     "end": 490.74
+    },
+    {
+     "text": "your",
+     "start": 490.74,
+     "end": 490.92
+    },
+    {
+     "text": "points",
+     "start": 490.92,
+     "end": 491.1
+    },
+    {
+     "text": "fast.",
+     "start": 491.1,
+     "end": 491.38
+    },
+    {
+     "text": "Then",
+     "start": 491.92,
+     "end": 491.94
+    },
+    {
+     "text": "rewards",
+     "start": 491.94,
+     "end": 492.2
+    },
+    {
+     "text": "can",
+     "start": 492.2,
+     "end": 492.5
+    },
+    {
+     "text": "be",
+     "start": 492.5,
+     "end": 492.62
+    },
+    {
+     "text": "a",
+     "start": 492.62,
+     "end": 492.7
+    },
+    {
+     "text": "nice",
+     "start": 492.7,
+     "end": 492.86
+    },
+    {
+     "text": "little",
+     "start": 492.86,
+     "end": 493.08
+    },
+    {
+     "text": "extra.",
+     "start": 493.08,
+     "end": 493.32
+    }
+   ]
+  },
+  {
+   "id": "c9f",
+   "text": "Oh and the kayak? I brought it with me. Turns out it floats.",
+   "start": 494.08983333333333,
+   "end": 496.9698333333333,
+   "words": [
+    {
+     "text": "Oh",
+     "start": 494.09,
+     "end": 494.25
+    },
+    {
+     "text": "and",
+     "start": 494.53,
+     "end": 494.59
+    },
+    {
+     "text": "the",
+     "start": 494.59,
+     "end": 494.69
+    },
+    {
+     "text": "kayak?",
+     "start": 494.69,
+     "end": 495.11
+    },
+    {
+     "text": "I",
+     "start": 495.31,
+     "end": 495.47
+    },
+    {
+     "text": "brought",
+     "start": 495.47,
+     "end": 495.67
+    },
+    {
+     "text": "it",
+     "start": 495.67,
+     "end": 495.77
+    },
+    {
+     "text": "with",
+     "start": 495.77,
+     "end": 495.89
+    },
+    {
+     "text": "me.",
+     "start": 495.89,
+     "end": 496.07
+    },
+    {
+     "text": "Turns",
+     "start": 496.37,
+     "end": 496.53
+    },
+    {
+     "text": "out",
+     "start": 496.53,
+     "end": 496.69
+    },
+    {
+     "text": "it",
+     "start": 496.69,
+     "end": 496.79
+    },
+    {
+     "text": "floats.",
+     "start": 496.79,
+     "end": 496.97
+    }
+   ]
+  },
+  {
+   "id": "r1",
+   "text": "So one point is worth about a penny. And the flight was never free. Somebody was always paying for it.",
+   "start": 497.7531041666667,
+   "end": 501.6731041666667,
+   "words": [
+    {
+     "text": "So",
+     "start": 497.753,
+     "end": 497.833
+    },
+    {
+     "text": "one",
+     "start": 497.833,
+     "end": 497.973
+    },
+    {
+     "text": "point",
+     "start": 497.973,
+     "end": 498.233
+    },
+    {
+     "text": "is",
+     "start": 498.233,
+     "end": 498.353
+    },
+    {
+     "text": "worth",
+     "start": 498.353,
+     "end": 498.473
+    },
+    {
+     "text": "about",
+     "start": 498.473,
+     "end": 498.693
+    },
+    {
+     "text": "a",
+     "start": 498.693,
+     "end": 498.793
+    },
+    {
+     "text": "penny.",
+     "start": 498.793,
+     "end": 498.993
+    },
+    {
+     "text": "And",
+     "start": 499.313,
+     "end": 499.393
+    },
+    {
+     "text": "the",
+     "start": 499.393,
+     "end": 499.473
+    },
+    {
+     "text": "flight",
+     "start": 499.473,
+     "end": 499.633
+    },
+    {
+     "text": "was",
+     "start": 499.633,
+     "end": 499.813
+    },
+    {
+     "text": "never",
+     "start": 499.813,
+     "end": 499.993
+    },
+    {
+     "text": "free.",
+     "start": 499.993,
+     "end": 500.253
+    },
+    {
+     "text": "Somebody",
+     "start": 500.433,
+     "end": 500.593
+    },
+    {
+     "text": "was",
+     "start": 500.593,
+     "end": 500.813
+    },
+    {
+     "text": "always",
+     "start": 500.813,
+     "end": 500.953
+    },
+    {
+     "text": "paying",
+     "start": 500.953,
+     "end": 501.233
+    },
+    {
+     "text": "for",
+     "start": 501.233,
+     "end": 501.513
+    },
+    {
+     "text": "it.",
+     "start": 501.513,
+     "end": 501.673
+    }
+   ]
+  },
+  {
+   "id": "r2",
+   "text": "Whoever prints the points decides what they're worth. So don't let them decide what you buy.",
+   "start": 502.1275,
+   "end": 505.9875,
+   "words": [
+    {
+     "text": "Whoever",
+     "start": 502.127,
+     "end": 502.387
+    },
+    {
+     "text": "prints",
+     "start": 502.387,
+     "end": 502.608
+    },
+    {
+     "text": "the",
+     "start": 502.608,
+     "end": 502.788
+    },
+    {
+     "text": "points",
+     "start": 502.788,
+     "end": 502.988
+    },
+    {
+     "text": "decides",
+     "start": 502.988,
+     "end": 503.407
+    },
+    {
+     "text": "what",
+     "start": 503.407,
+     "end": 503.688
+    },
+    {
+     "text": "they're",
+     "start": 503.688,
+     "end": 503.827
+    },
+    {
+     "text": "worth.",
+     "start": 503.827,
+     "end": 504.087
+    },
+    {
+     "text": "So",
+     "start": 504.608,
+     "end": 504.668
+    },
+    {
+     "text": "don't",
+     "start": 504.668,
+     "end": 504.907
+    },
+    {
+     "text": "let",
+     "start": 504.907,
+     "end": 505.007
+    },
+    {
+     "text": "them",
+     "start": 505.007,
+     "end": 505.168
+    },
+    {
+     "text": "decide",
+     "start": 505.168,
+     "end": 505.407
+    },
+    {
+     "text": "what",
+     "start": 505.407,
+     "end": 505.668
+    },
+    {
+     "text": "you",
+     "start": 505.668,
+     "end": 505.788
+    },
+    {
+     "text": "buy.",
+     "start": 505.788,
+     "end": 505.988
+    }
+   ]
+  },
+  {
+   "id": "r4",
+   "text": "Next time I find out why nobody at school ever taught me any of this. Not one class. Not one day.",
+   "start": 506.7336875,
+   "end": 511.13368749999995,
+   "words": [
+    {
+     "text": "Next",
+     "start": 506.734,
+     "end": 506.894
+    },
+    {
+     "text": "time",
+     "start": 506.894,
+     "end": 507.114
+    },
+    {
+     "text": "I",
+     "start": 507.214,
+     "end": 507.294
+    },
+    {
+     "text": "find",
+     "start": 507.294,
+     "end": 507.454
+    },
+    {
+     "text": "out",
+     "start": 507.454,
+     "end": 507.634
+    },
+    {
+     "text": "why",
+     "start": 507.634,
+     "end": 507.814
+    },
+    {
+     "text": "nobody",
+     "start": 507.814,
+     "end": 508.034
+    },
+    {
+     "text": "at",
+     "start": 508.034,
+     "end": 508.274
+    },
+    {
+     "text": "school",
+     "start": 508.274,
+     "end": 508.454
+    },
+    {
+     "text": "ever",
+     "start": 508.454,
+     "end": 508.694
+    },
+    {
+     "text": "taught",
+     "start": 508.694,
+     "end": 508.894
+    },
+    {
+     "text": "me",
+     "start": 508.894,
+     "end": 509.034
+    },
+    {
+     "text": "any",
+     "start": 509.034,
+     "end": 509.194
+    },
+    {
+     "text": "of",
+     "start": 509.194,
+     "end": 509.354
+    },
+    {
+     "text": "this.",
+     "start": 509.354,
+     "end": 509.494
+    },
+    {
+     "text": "Not",
+     "start": 509.834,
+     "end": 509.934
+    },
+    {
+     "text": "one",
+     "start": 509.934,
+     "end": 510.094
+    },
+    {
+     "text": "class.",
+     "start": 510.094,
+     "end": 510.334
+    },
+    {
+     "text": "Not",
+     "start": 510.654,
+     "end": 510.774
+    },
+    {
+     "text": "one",
+     "start": 510.774,
+     "end": 510.954
+    },
+    {
+     "text": "day.",
+     "start": 510.954,
+     "end": 511.134
+    }
+   ]
+  },
+  {
+   "id": "r5",
+   "text": "Subscribe. It's free. And unlike your points it'll still be worth the same next year.",
+   "start": 511.8078541666667,
+   "end": 515.5678541666667,
+   "words": [
+    {
+     "text": "Subscribe.",
+     "start": 511.808,
+     "end": 512.108
+    },
+    {
+     "text": "It's",
+     "start": 512.528,
+     "end": 512.688
+    },
+    {
+     "text": "free.",
+     "start": 512.688,
+     "end": 512.848
+    },
+    {
+     "text": "And",
+     "start": 513.308,
+     "end": 513.428
+    },
+    {
+     "text": "unlike",
+     "start": 513.428,
+     "end": 513.608
+    },
+    {
+     "text": "your",
+     "start": 513.608,
+     "end": 513.808
+    },
+    {
+     "text": "points",
+     "start": 513.808,
+     "end": 514.048
+    },
+    {
+     "text": "it'll",
+     "start": 514.228,
+     "end": 514.348
+    },
+    {
+     "text": "still",
+     "start": 514.348,
+     "end": 514.508
+    },
+    {
+     "text": "be",
+     "start": 514.508,
+     "end": 514.668
+    },
+    {
+     "text": "worth",
+     "start": 514.668,
+     "end": 514.808
+    },
+    {
+     "text": "the",
+     "start": 514.808,
+     "end": 514.948
+    },
+    {
+     "text": "same",
+     "start": 514.948,
+     "end": 515.128
+    },
+    {
+     "text": "next",
+     "start": 515.128,
+     "end": 515.388
+    },
+    {
+     "text": "year.",
+     "start": 515.388,
+     "end": 515.568
+    }
+   ]
+  }
+ ]
+}
