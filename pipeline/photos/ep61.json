@@ -1,123 +1,168 @@
 {
  "photos": [
   {
-   "id": "office",
-   "file": "File:Cubicle land.jpg",
-   "credit": "Larsinio at English Wikipedia",
-   "license": "Public domain",
-   "page": "https://commons.wikimedia.org/wiki/File:Cubicle_land.jpg"
-  },
-  {
-   "id": "cubes",
-   "file": "File:CubeSpace.jpg",
-   "credit": "Asa Wilson",
-   "license": "CC BY-SA 2.0",
-   "page": "https://commons.wikimedia.org/wiki/File:CubeSpace.jpg"
-  },
-  {
-   "id": "desk",
-   "file": "File:Office-Cubical-5201.jpg",
-   "credit": "Loadmaster (David R. Tribble) This image was made by Loadmaster (David R. Tribble). Email ",
-   "license": "CC BY-SA 3.0",
-   "page": "https://commons.wikimedia.org/wiki/File:Office-Cubical-5201.jpg"
+   "id": "mug",
+   "q": "coffee mug"
   },
   {
    "id": "printer",
-   "file": "File:Canon ImageRUNNER Advance C7570i photocopier.jpg",
-   "credit": "Baron Maddock",
-   "license": "CC BY 4.0",
-   "page": "https://commons.wikimedia.org/wiki/File:Canon_ImageRUNNER_Advance_C7570i_photocopier.jpg"
+   "q": "office printer"
   },
   {
-   "id": "wharton",
-   "file": "File:UPenn - The Wharton School of Business - Huntsman Hall (53590621660).jpg",
-   "credit": "ajay_suresh",
-   "license": "CC BY 2.0",
-   "page": "https://commons.wikimedia.org/wiki/File:UPenn_-_The_Wharton_School_of_Business_-_Huntsman_Hall_(53590621660).jpg"
+   "id": "stapler",
+   "q": "stapler"
+  },
+  {
+   "id": "office",
+   "q": "office workers"
+  },
+  {
+   "id": "donuts",
+   "q": "donuts"
+  },
+  {
+   "id": "laptop_night",
+   "q": "laptop night"
+  },
+  {
+   "id": "dictionary",
+   "q": "dictionary"
+  },
+  {
+   "id": "price_tag",
+   "q": "price tag"
   },
   {
    "id": "atlfed",
-   "file": "File:Horizontal panorama of the Federal Reserve Bank Building of Atlanta.jpg",
-   "credit": "Marc Merlin",
-   "license": "CC BY-SA 4.0",
-   "page": "https://commons.wikimedia.org/wiki/File:Horizontal_panorama_of_the_Federal_Reserve_Bank_Building_of_Atlanta.jpg"
+   "q": "Federal Reserve Bank of Atlanta"
+  },
+  {
+   "id": "gold_watch",
+   "q": "gold pocket watch"
   },
   {
    "id": "ford",
-   "file": "File:Henry Ford at Edison's home in Ft. Myers Florida 1914 detail LC-LC-USZ62-131044.png",
-   "credit": "Wikimedia Commons",
-   "license": "Public domain",
-   "page": "https://commons.wikimedia.org/wiki/File:Henry_Ford_at_Edison%27s_home_in_Ft._Myers_Florida_1914_detail_LC-LC-USZ62-131044.png"
+   "q": "Henry Ford"
   },
   {
-   "id": "fordline",
-   "file": "File:Ford assembly line - 1913.jpg",
-   "credit": "Unknown authorUnknown author",
-   "license": "Public domain",
-   "page": "https://commons.wikimedia.org/wiki/File:Ford_assembly_line_-_1913.jpg"
+   "id": "assembly",
+   "q": "Ford assembly line"
   },
   {
-   "id": "watch",
-   "file": "File:Vintage Waltham 14 kt. Gold Pocket Watch, Roman Numeral Dial (8458964903).jpg",
-   "credit": "Joe Haupt from USA",
-   "license": "CC BY-SA 2.0",
-   "page": "https://commons.wikimedia.org/wiki/File:Vintage_Waltham_14_kt._Gold_Pocket_Watch,_Roman_Numeral_Dial_(8458964903).jpg"
+   "id": "retirement_party",
+   "q": "retirement party"
   },
   {
-   "id": "oldoffice",
-   "file": "File:Office Workers at their Desks (MSA) (20950621905).jpg",
-   "credit": "Missouri State Archives",
-   "license": "No restrictions",
-   "page": "https://commons.wikimedia.org/wiki/File:Office_Workers_at_their_Desks_(MSA)_(20950621905).jpg"
+   "id": "factory",
+   "q": "factory workers"
   },
   {
-   "id": "steak",
-   "file": "File:Perfectly grilled steak (8469274783).jpg",
-   "credit": "Prayitno / Thank you for (12 millions +) view from Los Angeles, USA",
-   "license": "CC BY 2.0",
-   "page": "https://commons.wikimedia.org/wiki/File:Perfectly_grilled_steak_(8469274783).jpg"
+   "id": "broken_mug",
+   "q": "broken mug"
   },
   {
-   "id": "google",
-   "file": "File:Googleplex HQ (cropped).jpg",
-   "credit": "Asoundd",
-   "license": "CC BY-SA 4.0",
-   "page": "https://commons.wikimedia.org/wiki/File:Googleplex_HQ_(cropped).jpg"
+   "id": "wharton",
+   "q": "Wharton School"
   },
   {
-   "id": "schmidt",
-   "file": "File:Eric E Schmidt, 2005.jpg",
-   "credit": "Charles Haynes",
-   "license": "CC BY-SA 2.0",
-   "page": "https://commons.wikimedia.org/wiki/File:Eric_E_Schmidt,_2005.jpg"
+   "id": "door",
+   "q": "office door"
   },
   {
-   "id": "capitol",
-   "file": "File:Colorado State Capitol - 54046380855.jpg",
-   "credit": "xiquinhosilva",
-   "license": "CC BY 2.0",
-   "page": "https://commons.wikimedia.org/wiki/File:Colorado_State_Capitol_-_54046380855.jpg"
+   "id": "pots",
+   "q": "cooking pots"
   },
   {
-   "id": "hiring",
-   "file": "File:\"Now Hiring\" Sign.jpg",
-   "credit": "Photo by DiscoA340Logo design by Chatham County Government",
-   "license": "CC0",
-   "page": "https://commons.wikimedia.org/wiki/File:%22Now_Hiring%22_Sign.jpg"
+   "id": "piggy",
+   "q": "piggy bank"
+  },
+  {
+   "id": "handshake",
+   "q": "handshake"
+  },
+  {
+   "id": "puppy",
+   "q": "puppy"
+  },
+  {
+   "id": "old_dog",
+   "q": "old dog"
   },
   {
    "id": "meeting",
-   "file": "File:Conference room table (Unsplash).jpg",
-   "credit": "Breather breather",
-   "license": "CC0",
-   "page": "https://commons.wikimedia.org/wiki/File:Conference_room_table_(Unsplash).jpg"
+   "q": "business meeting"
   },
   {
-   "id": "bls",
-   "file": "File:Postal Square Building.jpg",
-   "credit": "AgnosticPreachersKid. Original uploader was AgnosticPreachersKid at en.wikipedia",
-   "license": "CC BY-SA 3.0",
-   "page": "https://commons.wikimedia.org/wiki/File:Postal_Square_Building.jpg"
+   "id": "coffee",
+   "q": "coffee machine"
+  },
+  {
+   "id": "phone_bill",
+   "q": "mobile phone"
+  },
+  {
+   "id": "google",
+   "q": "Google office"
+  },
+  {
+   "id": "memo",
+   "q": "office memo"
+  },
+  {
+   "id": "letter",
+   "q": "handwritten letter"
+  },
+  {
+   "id": "cat",
+   "q": "cat"
+  },
+  {
+   "id": "closed_door",
+   "q": "closed door"
+  },
+  {
+   "id": "boxes",
+   "q": "moving boxes"
+  },
+  {
+   "id": "traffic",
+   "q": "traffic jam"
+  },
+  {
+   "id": "website",
+   "q": "website on laptop"
+  },
+  {
+   "id": "colorado",
+   "q": "Colorado State Capitol"
+  },
+  {
+   "id": "statistics",
+   "q": "statistics chart"
+  },
+  {
+   "id": "notepad",
+   "q": "notepad"
+  },
+  {
+   "id": "survey",
+   "q": "survey form"
+  },
+  {
+   "id": "glue",
+   "q": "glue bottle"
+  },
+  {
+   "id": "calendar",
+   "q": "wall calendar"
+  },
+  {
+   "id": "email",
+   "q": "email inbox"
+  },
+  {
+   "id": "price_99",
+   "q": "price tag 99"
   }
  ]
 }
