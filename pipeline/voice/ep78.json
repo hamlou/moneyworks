@@ -1,0 +1,9595 @@
+{
+ "fps": 30,
+ "total": 488.466,
+ "hash": "6e36c0a55b0c4cab",
+ "chapters": [
+  {
+   "n": 1,
+   "title": "Meet Grug",
+   "start": 34.437,
+   "beat": "c1a"
+  },
+  {
+   "n": 2,
+   "title": "Your Brain On Shopping",
+   "start": 125.077,
+   "beat": "c3a"
+  },
+  {
+   "n": 3,
+   "title": "Who Is Talking To Grug",
+   "start": 220.294,
+   "beat": "c4a"
+  },
+  {
+   "n": 4,
+   "title": "Stop Fighting Grug",
+   "start": 337.933,
+   "beat": "c5a"
+  }
+ ],
+ "beats": [
+  {
+   "id": "o1",
+   "text": "This is me at two in the morning with forty seven dollars of stuff in my cart that I did not need at ten o'clock.",
+   "start": 0.08,
+   "end": 4.227,
+   "words": [
+    {
+     "text": "This",
+     "start": 0.08,
+     "end": 0.245
+    },
+    {
+     "text": "is",
+     "start": 0.263,
+     "end": 0.362
+    },
+    {
+     "text": "me",
+     "start": 0.373,
+     "end": 0.472
+    },
+    {
+     "text": "at",
+     "start": 0.483,
+     "end": 0.582
+    },
+    {
+     "text": "two",
+     "start": 0.593,
+     "end": 0.725
+    },
+    {
+     "text": "in",
+     "start": 0.74,
+     "end": 0.839
+    },
+    {
+     "text": "the",
+     "start": 0.85,
+     "end": 0.982
+    },
+    {
+     "text": "morning",
+     "start": 0.997,
+     "end": 1.261
+    },
+    {
+     "text": "with",
+     "start": 1.29,
+     "end": 1.455
+    },
+    {
+     "text": "forty",
+     "start": 1.473,
+     "end": 1.671
+    },
+    {
+     "text": "seven",
+     "start": 1.693,
+     "end": 1.891
+    },
+    {
+     "text": "dollars",
+     "start": 1.913,
+     "end": 2.177
+    },
+    {
+     "text": "of",
+     "start": 2.207,
+     "end": 2.306
+    },
+    {
+     "text": "stuff",
+     "start": 2.317,
+     "end": 2.515
+    },
+    {
+     "text": "in",
+     "start": 2.537,
+     "end": 2.636
+    },
+    {
+     "text": "my",
+     "start": 2.647,
+     "end": 2.746
+    },
+    {
+     "text": "cart",
+     "start": 2.757,
+     "end": 2.922
+    },
+    {
+     "text": "that",
+     "start": 2.94,
+     "end": 3.105
+    },
+    {
+     "text": "I",
+     "start": 3.123,
+     "end": 3.189
+    },
+    {
+     "text": "did",
+     "start": 3.197,
+     "end": 3.329
+    },
+    {
+     "text": "not",
+     "start": 3.343,
+     "end": 3.475
+    },
+    {
+     "text": "need",
+     "start": 3.49,
+     "end": 3.655
+    },
+    {
+     "text": "at",
+     "start": 3.673,
+     "end": 3.772
+    },
+    {
+     "text": "ten",
+     "start": 3.783,
+     "end": 3.915
+    },
+    {
+     "text": "o'clock.",
+     "start": 3.93,
+     "end": 4.227
+    }
+   ]
+  },
+  {
+   "id": "o2",
+   "text": "A neck pillow. A tiny waffle maker. And a lamp shaped like a cat. I don't even like cats.",
+   "start": 4.535291666666667,
+   "end": 8.835291666666667,
+   "words": [
+    {
+     "text": "A",
+     "start": 4.535,
+     "end": 4.615
+    },
+    {
+     "text": "neck",
+     "start": 4.615,
+     "end": 4.735
+    },
+    {
+     "text": "pillow.",
+     "start": 4.735,
+     "end": 4.955
+    },
+    {
+     "text": "A",
+     "start": 5.315,
+     "end": 5.335
+    },
+    {
+     "text": "tiny",
+     "start": 5.335,
+     "end": 5.515
+    },
+    {
+     "text": "waffle",
+     "start": 5.515,
+     "end": 5.795
+    },
+    {
+     "text": "maker.",
+     "start": 5.795,
+     "end": 6.035
+    },
+    {
+     "text": "And",
+     "start": 6.695,
+     "end": 6.755
+    },
+    {
+     "text": "a",
+     "start": 6.755,
+     "end": 6.875
+    },
+    {
+     "text": "lamp",
+     "start": 6.875,
+     "end": 7.035
+    },
+    {
+     "text": "shaped",
+     "start": 7.035,
+     "end": 7.275
+    },
+    {
+     "text": "like",
+     "start": 7.275,
+     "end": 7.495
+    },
+    {
+     "text": "a",
+     "start": 7.495,
+     "end": 7.555
+    },
+    {
+     "text": "cat.",
+     "start": 7.555,
+     "end": 7.795
+    },
+    {
+     "text": "I",
+     "start": 8.135,
+     "end": 8.175
+    },
+    {
+     "text": "don't",
+     "start": 8.175,
+     "end": 8.335
+    },
+    {
+     "text": "even",
+     "start": 8.335,
+     "end": 8.395
+    },
+    {
+     "text": "like",
+     "start": 8.395,
+     "end": 8.615
+    },
+    {
+     "text": "cats.",
+     "start": 8.615,
+     "end": 8.835
+    }
+   ]
+  },
+  {
+   "id": "n30",
+   "text": "I woke up the next morning and saw the order confirmation. And I swear I had no memory of buying a cat lamp. It was like a different guy did it.",
+   "start": 9.402458333333334,
+   "end": 15.122458333333334,
+   "words": [
+    {
+     "text": "I",
+     "start": 9.402,
+     "end": 9.482
+    },
+    {
+     "text": "woke",
+     "start": 9.482,
+     "end": 9.622
+    },
+    {
+     "text": "up",
+     "start": 9.622,
+     "end": 9.742
+    },
+    {
+     "text": "the",
+     "start": 9.742,
+     "end": 9.862
+    },
+    {
+     "text": "next",
+     "start": 9.862,
+     "end": 9.962
+    },
+    {
+     "text": "morning",
+     "start": 9.962,
+     "end": 10.242
+    },
+    {
+     "text": "and",
+     "start": 10.242,
+     "end": 10.382
+    },
+    {
+     "text": "saw",
+     "start": 10.382,
+     "end": 10.522
+    },
+    {
+     "text": "the",
+     "start": 10.522,
+     "end": 10.642
+    },
+    {
+     "text": "order",
+     "start": 10.642,
+     "end": 10.802
+    },
+    {
+     "text": "confirmation.",
+     "start": 10.802,
+     "end": 11.142
+    },
+    {
+     "text": "And",
+     "start": 11.902,
+     "end": 11.942
+    },
+    {
+     "text": "I",
+     "start": 11.942,
+     "end": 12.022
+    },
+    {
+     "text": "swear",
+     "start": 12.022,
+     "end": 12.242
+    },
+    {
+     "text": "I",
+     "start": 12.242,
+     "end": 12.522
+    },
+    {
+     "text": "had",
+     "start": 12.522,
+     "end": 12.642
+    },
+    {
+     "text": "no",
+     "start": 12.642,
+     "end": 12.822
+    },
+    {
+     "text": "memory",
+     "start": 12.822,
+     "end": 13.062
+    },
+    {
+     "text": "of",
+     "start": 13.062,
+     "end": 13.202
+    },
+    {
+     "text": "buying",
+     "start": 13.202,
+     "end": 13.382
+    },
+    {
+     "text": "a",
+     "start": 13.382,
+     "end": 13.522
+    },
+    {
+     "text": "cat",
+     "start": 13.522,
+     "end": 13.662
+    },
+    {
+     "text": "lamp.",
+     "start": 13.662,
+     "end": 13.842
+    },
+    {
+     "text": "It",
+     "start": 14.122,
+     "end": 14.142
+    },
+    {
+     "text": "was",
+     "start": 14.142,
+     "end": 14.242
+    },
+    {
+     "text": "like",
+     "start": 14.242,
+     "end": 14.382
+    },
+    {
+     "text": "a",
+     "start": 14.382,
+     "end": 14.442
+    },
+    {
+     "text": "different",
+     "start": 14.442,
+     "end": 14.602
+    },
+    {
+     "text": "guy",
+     "start": 14.602,
+     "end": 14.802
+    },
+    {
+     "text": "did",
+     "start": 14.802,
+     "end": 14.982
+    },
+    {
+     "text": "it.",
+     "start": 14.982,
+     "end": 15.122
+    }
+   ]
+  },
+  {
+   "id": "o3",
+   "text": "And every time I tell myself the same thing. You're just bad with money Dave.",
+   "start": 15.637583333333334,
+   "end": 19.057583333333334,
+   "words": [
+    {
+     "text": "And",
+     "start": 15.638,
+     "end": 15.978
+    },
+    {
+     "text": "every",
+     "start": 15.978,
+     "end": 16.298
+    },
+    {
+     "text": "time",
+     "start": 16.298,
+     "end": 16.478
+    },
+    {
+     "text": "I",
+     "start": 16.478,
+     "end": 16.598
+    },
+    {
+     "text": "tell",
+     "start": 16.598,
+     "end": 16.738
+    },
+    {
+     "text": "myself",
+     "start": 16.738,
+     "end": 16.938
+    },
+    {
+     "text": "the",
+     "start": 16.938,
+     "end": 17.238
+    },
+    {
+     "text": "same",
+     "start": 17.238,
+     "end": 17.418
+    },
+    {
+     "text": "thing.",
+     "start": 17.418,
+     "end": 17.678
+    },
+    {
+     "text": "You're",
+     "start": 17.998,
+     "end": 18.138
+    },
+    {
+     "text": "just",
+     "start": 18.138,
+     "end": 18.238
+    },
+    {
+     "text": "bad",
+     "start": 18.238,
+     "end": 18.458
+    },
+    {
+     "text": "with",
+     "start": 18.458,
+     "end": 18.638
+    },
+    {
+     "text": "money",
+     "start": 18.638,
+     "end": 18.818
+    },
+    {
+     "text": "Dave.",
+     "start": 18.838,
+     "end": 19.058
+    }
+   ]
+  },
+  {
+   "id": "o4",
+   "text": "But what if that's not true? What if your brain was built for a world that doesn't exist anymore?",
+   "start": 19.473333333333333,
+   "end": 23.513333333333332,
+   "words": [
+    {
+     "text": "But",
+     "start": 19.473,
+     "end": 19.653
+    },
+    {
+     "text": "what",
+     "start": 19.653,
+     "end": 20.053
+    },
+    {
+     "text": "if",
+     "start": 20.053,
+     "end": 20.173
+    },
+    {
+     "text": "that's",
+     "start": 20.173,
+     "end": 20.413
+    },
+    {
+     "text": "not",
+     "start": 20.413,
+     "end": 20.533
+    },
+    {
+     "text": "true?",
+     "start": 20.533,
+     "end": 20.813
+    },
+    {
+     "text": "What",
+     "start": 21.313,
+     "end": 21.413
+    },
+    {
+     "text": "if",
+     "start": 21.413,
+     "end": 21.513
+    },
+    {
+     "text": "your",
+     "start": 21.513,
+     "end": 21.613
+    },
+    {
+     "text": "brain",
+     "start": 21.613,
+     "end": 21.813
+    },
+    {
+     "text": "was",
+     "start": 21.813,
+     "end": 21.993
+    },
+    {
+     "text": "built",
+     "start": 21.993,
+     "end": 22.173
+    },
+    {
+     "text": "for",
+     "start": 22.173,
+     "end": 22.373
+    },
+    {
+     "text": "a",
+     "start": 22.373,
+     "end": 22.433
+    },
+    {
+     "text": "world",
+     "start": 22.433,
+     "end": 22.613
+    },
+    {
+     "text": "that",
+     "start": 22.613,
+     "end": 22.773
+    },
+    {
+     "text": "doesn't",
+     "start": 22.773,
+     "end": 23.013
+    },
+    {
+     "text": "exist",
+     "start": 23.013,
+     "end": 23.173
+    },
+    {
+     "text": "anymore?",
+     "start": 23.173,
+     "end": 23.513
+    }
+   ]
+  },
+  {
+   "id": "o5",
+   "text": "By the end of this video you'll know the one trick that makes your old brain save money without using any willpower at all.",
+   "start": 24.198479166666665,
+   "end": 29.778479166666664,
+   "words": [
+    {
+     "text": "By",
+     "start": 24.198,
+     "end": 24.338
+    },
+    {
+     "text": "the",
+     "start": 24.338,
+     "end": 24.418
+    },
+    {
+     "text": "end",
+     "start": 24.418,
+     "end": 24.598
+    },
+    {
+     "text": "of",
+     "start": 24.598,
+     "end": 24.718
+    },
+    {
+     "text": "this",
+     "start": 24.718,
+     "end": 24.858
+    },
+    {
+     "text": "video",
+     "start": 24.858,
+     "end": 25.178
+    },
+    {
+     "text": "you'll",
+     "start": 25.498,
+     "end": 25.638
+    },
+    {
+     "text": "know",
+     "start": 25.638,
+     "end": 25.758
+    },
+    {
+     "text": "the",
+     "start": 25.758,
+     "end": 25.898
+    },
+    {
+     "text": "one",
+     "start": 25.898,
+     "end": 26.098
+    },
+    {
+     "text": "trick",
+     "start": 26.098,
+     "end": 26.418
+    },
+    {
+     "text": "that",
+     "start": 26.418,
+     "end": 26.698
+    },
+    {
+     "text": "makes",
+     "start": 26.698,
+     "end": 26.838
+    },
+    {
+     "text": "your",
+     "start": 26.838,
+     "end": 27.018
+    },
+    {
+     "text": "old",
+     "start": 27.018,
+     "end": 27.238
+    },
+    {
+     "text": "brain",
+     "start": 27.238,
+     "end": 27.458
+    },
+    {
+     "text": "save",
+     "start": 27.458,
+     "end": 27.758
+    },
+    {
+     "text": "money",
+     "start": 27.758,
+     "end": 28.018
+    },
+    {
+     "text": "without",
+     "start": 28.018,
+     "end": 28.318
+    },
+    {
+     "text": "using",
+     "start": 28.318,
+     "end": 28.698
+    },
+    {
+     "text": "any",
+     "start": 28.698,
+     "end": 28.918
+    },
+    {
+     "text": "willpower",
+     "start": 28.918,
+     "end": 29.218
+    },
+    {
+     "text": "at",
+     "start": 29.218,
+     "end": 29.618
+    },
+    {
+     "text": "all.",
+     "start": 29.618,
+     "end": 29.778
+    }
+   ]
+  },
+  {
+   "id": "o6",
+   "text": "But most people scroll away before that part which is exactly the old brain doing its thing.",
+   "start": 30.1844375,
+   "end": 33.8244375,
+   "words": [
+    {
+     "text": "But",
+     "start": 30.184,
+     "end": 30.324
+    },
+    {
+     "text": "most",
+     "start": 30.324,
+     "end": 30.464
+    },
+    {
+     "text": "people",
+     "start": 30.464,
+     "end": 30.704
+    },
+    {
+     "text": "scroll",
+     "start": 30.704,
+     "end": 30.944
+    },
+    {
+     "text": "away",
+     "start": 30.944,
+     "end": 31.204
+    },
+    {
+     "text": "before",
+     "start": 31.204,
+     "end": 31.424
+    },
+    {
+     "text": "that",
+     "start": 31.424,
+     "end": 31.604
+    },
+    {
+     "text": "part",
+     "start": 31.604,
+     "end": 31.844
+    },
+    {
+     "text": "which",
+     "start": 31.984,
+     "end": 32.024
+    },
+    {
+     "text": "is",
+     "start": 32.024,
+     "end": 32.124
+    },
+    {
+     "text": "exactly",
+     "start": 32.124,
+     "end": 32.404
+    },
+    {
+     "text": "the",
+     "start": 32.404,
+     "end": 32.684
+    },
+    {
+     "text": "old",
+     "start": 32.684,
+     "end": 32.864
+    },
+    {
+     "text": "brain",
+     "start": 32.864,
+     "end": 33.124
+    },
+    {
+     "text": "doing",
+     "start": 33.124,
+     "end": 33.404
+    },
+    {
+     "text": "its",
+     "start": 33.404,
+     "end": 33.584
+    },
+    {
+     "text": "thing.",
+     "start": 33.584,
+     "end": 33.824
+    }
+   ]
+  },
+  {
+   "id": "c1a",
+   "text": "So let me introduce you to my great great great great great grandpa. Way more greats. Let's call him Grug.",
+   "start": 36.637208333333334,
+   "end": 41.25120833333333,
+   "words": [
+    {
+     "text": "So",
+     "start": 36.637,
+     "end": 36.754
+    },
+    {
+     "text": "let",
+     "start": 36.767,
+     "end": 36.923
+    },
+    {
+     "text": "me",
+     "start": 36.941,
+     "end": 37.058
+    },
+    {
+     "text": "introduce",
+     "start": 37.071,
+     "end": 37.461
+    },
+    {
+     "text": "you",
+     "start": 37.504,
+     "end": 37.66
+    },
+    {
+     "text": "to",
+     "start": 37.678,
+     "end": 37.795
+    },
+    {
+     "text": "my",
+     "start": 37.808,
+     "end": 37.925
+    },
+    {
+     "text": "great",
+     "start": 37.938,
+     "end": 38.172
+    },
+    {
+     "text": "great",
+     "start": 38.198,
+     "end": 38.432
+    },
+    {
+     "text": "great",
+     "start": 38.458,
+     "end": 38.692
+    },
+    {
+     "text": "great",
+     "start": 38.718,
+     "end": 38.953
+    },
+    {
+     "text": "great",
+     "start": 38.979,
+     "end": 39.213
+    },
+    {
+     "text": "grandpa.",
+     "start": 39.239,
+     "end": 39.59
+    },
+    {
+     "text": "Way",
+     "start": 39.629,
+     "end": 39.785
+    },
+    {
+     "text": "more",
+     "start": 39.803,
+     "end": 39.998
+    },
+    {
+     "text": "greats.",
+     "start": 40.019,
+     "end": 40.332
+    },
+    {
+     "text": "Let's",
+     "start": 40.366,
+     "end": 40.601
+    },
+    {
+     "text": "call",
+     "start": 40.627,
+     "end": 40.822
+    },
+    {
+     "text": "him",
+     "start": 40.843,
+     "end": 40.999
+    },
+    {
+     "text": "Grug.",
+     "start": 41.017,
+     "end": 41.251
+    }
+   ]
+  },
+  {
+   "id": "c1b",
+   "text": "Grug lives in a cave. No fridge. No bank. No tomorrow that he can count on.",
+   "start": 41.84377083333333,
+   "end": 45.34377083333333,
+   "words": [
+    {
+     "text": "Grug",
+     "start": 41.844,
+     "end": 41.984
+    },
+    {
+     "text": "lives",
+     "start": 41.984,
+     "end": 42.124
+    },
+    {
+     "text": "in",
+     "start": 42.124,
+     "end": 42.324
+    },
+    {
+     "text": "a",
+     "start": 42.324,
+     "end": 42.384
+    },
+    {
+     "text": "cave.",
+     "start": 42.384,
+     "end": 42.544
+    },
+    {
+     "text": "No",
+     "start": 42.964,
+     "end": 42.964
+    },
+    {
+     "text": "fridge.",
+     "start": 42.964,
+     "end": 43.144
+    },
+    {
+     "text": "No",
+     "start": 43.524,
+     "end": 43.604
+    },
+    {
+     "text": "bank.",
+     "start": 43.604,
+     "end": 43.784
+    },
+    {
+     "text": "No",
+     "start": 44.104,
+     "end": 44.264
+    },
+    {
+     "text": "tomorrow",
+     "start": 44.264,
+     "end": 44.504
+    },
+    {
+     "text": "that",
+     "start": 44.504,
+     "end": 44.744
+    },
+    {
+     "text": "he",
+     "start": 44.744,
+     "end": 44.844
+    },
+    {
+     "text": "can",
+     "start": 44.844,
+     "end": 44.944
+    },
+    {
+     "text": "count",
+     "start": 44.944,
+     "end": 45.144
+    },
+    {
+     "text": "on.",
+     "start": 45.144,
+     "end": 45.344
+    }
+   ]
+  },
+  {
+   "id": "c1c",
+   "text": "One day Grug finds a bush full of berries. And what does Grug do? He eats every single berry. Right now.",
+   "start": 45.896166666666666,
+   "end": 50.49616666666667,
+   "words": [
+    {
+     "text": "One",
+     "start": 45.896,
+     "end": 46.016
+    },
+    {
+     "text": "day",
+     "start": 46.016,
+     "end": 46.196
+    },
+    {
+     "text": "Grug",
+     "start": 46.296,
+     "end": 46.436
+    },
+    {
+     "text": "finds",
+     "start": 46.436,
+     "end": 46.656
+    },
+    {
+     "text": "a",
+     "start": 46.656,
+     "end": 46.816
+    },
+    {
+     "text": "bush",
+     "start": 46.816,
+     "end": 46.916
+    },
+    {
+     "text": "full",
+     "start": 46.916,
+     "end": 47.116
+    },
+    {
+     "text": "of",
+     "start": 47.116,
+     "end": 47.216
+    },
+    {
+     "text": "berries.",
+     "start": 47.216,
+     "end": 47.396
+    },
+    {
+     "text": "And",
+     "start": 47.816,
+     "end": 47.896
+    },
+    {
+     "text": "what",
+     "start": 47.896,
+     "end": 48.016
+    },
+    {
+     "text": "does",
+     "start": 48.016,
+     "end": 48.156
+    },
+    {
+     "text": "Grug",
+     "start": 48.156,
+     "end": 48.336
+    },
+    {
+     "text": "do?",
+     "start": 48.336,
+     "end": 48.556
+    },
+    {
+     "text": "He",
+     "start": 48.856,
+     "end": 48.916
+    },
+    {
+     "text": "eats",
+     "start": 48.916,
+     "end": 49.096
+    },
+    {
+     "text": "every",
+     "start": 49.096,
+     "end": 49.316
+    },
+    {
+     "text": "single",
+     "start": 49.316,
+     "end": 49.556
+    },
+    {
+     "text": "berry.",
+     "start": 49.556,
+     "end": 49.876
+    },
+    {
+     "text": "Right",
+     "start": 50.196,
+     "end": 50.276
+    },
+    {
+     "text": "now.",
+     "start": 50.276,
+     "end": 50.496
+    }
+   ]
+  },
+  {
+   "id": "c1d",
+   "text": "And honestly? Smart move Grug. Because if he saves them for later a bear eats them. Or the berries rot. Or Grug gets eaten himself.",
+   "start": 51.17729166666667,
+   "end": 56.81729166666667,
+   "words": [
+    {
+     "text": "And",
+     "start": 51.177,
+     "end": 51.337
+    },
+    {
+     "text": "honestly?",
+     "start": 51.337,
+     "end": 51.717
+    },
+    {
+     "text": "Smart",
+     "start": 52.137,
+     "end": 52.417
+    },
+    {
+     "text": "move",
+     "start": 52.417,
+     "end": 52.617
+    },
+    {
+     "text": "Grug.",
+     "start": 52.617,
+     "end": 52.857
+    },
+    {
+     "text": "Because",
+     "start": 53.057,
+     "end": 53.277
+    },
+    {
+     "text": "if",
+     "start": 53.277,
+     "end": 53.417
+    },
+    {
+     "text": "he",
+     "start": 53.417,
+     "end": 53.497
+    },
+    {
+     "text": "saves",
+     "start": 53.497,
+     "end": 53.637
+    },
+    {
+     "text": "them",
+     "start": 53.637,
+     "end": 53.857
+    },
+    {
+     "text": "for",
+     "start": 53.857,
+     "end": 53.957
+    },
+    {
+     "text": "later",
+     "start": 53.957,
+     "end": 54.137
+    },
+    {
+     "text": "a",
+     "start": 54.137,
+     "end": 54.337
+    },
+    {
+     "text": "bear",
+     "start": 54.337,
+     "end": 54.457
+    },
+    {
+     "text": "eats",
+     "start": 54.457,
+     "end": 54.637
+    },
+    {
+     "text": "them.",
+     "start": 54.637,
+     "end": 54.877
+    },
+    {
+     "text": "Or",
+     "start": 55.137,
+     "end": 55.177
+    },
+    {
+     "text": "the",
+     "start": 55.177,
+     "end": 55.257
+    },
+    {
+     "text": "berries",
+     "start": 55.257,
+     "end": 55.497
+    },
+    {
+     "text": "rot.",
+     "start": 55.497,
+     "end": 55.677
+    },
+    {
+     "text": "Or",
+     "start": 55.977,
+     "end": 56.077
+    },
+    {
+     "text": "Grug",
+     "start": 56.077,
+     "end": 56.297
+    },
+    {
+     "text": "gets",
+     "start": 56.297,
+     "end": 56.457
+    },
+    {
+     "text": "eaten",
+     "start": 56.457,
+     "end": 56.577
+    },
+    {
+     "text": "himself.",
+     "start": 56.577,
+     "end": 56.817
+    }
+   ]
+  },
+  {
+   "id": "n31",
+   "text": "There's no berry bank. There's no freezer. Food you don't eat today is food you don't have. So Grug's brain learned one lesson really really well.",
+   "start": 57.4984375,
+   "end": 64.6494375,
+   "words": [
+    {
+     "text": "There's",
+     "start": 57.498,
+     "end": 57.85
+    },
+    {
+     "text": "no",
+     "start": 57.889,
+     "end": 58.021
+    },
+    {
+     "text": "berry",
+     "start": 58.035,
+     "end": 58.299
+    },
+    {
+     "text": "bank.",
+     "start": 58.328,
+     "end": 58.592
+    },
+    {
+     "text": "There's",
+     "start": 58.621,
+     "end": 58.973
+    },
+    {
+     "text": "no",
+     "start": 59.012,
+     "end": 59.144
+    },
+    {
+     "text": "freezer.",
+     "start": 59.159,
+     "end": 59.554
+    },
+    {
+     "text": "Food",
+     "start": 59.598,
+     "end": 59.818
+    },
+    {
+     "text": "you",
+     "start": 59.842,
+     "end": 60.018
+    },
+    {
+     "text": "don't",
+     "start": 60.038,
+     "end": 60.302
+    },
+    {
+     "text": "eat",
+     "start": 60.331,
+     "end": 60.507
+    },
+    {
+     "text": "today",
+     "start": 60.526,
+     "end": 60.79
+    },
+    {
+     "text": "is",
+     "start": 60.819,
+     "end": 60.951
+    },
+    {
+     "text": "food",
+     "start": 60.966,
+     "end": 61.186
+    },
+    {
+     "text": "you",
+     "start": 61.21,
+     "end": 61.386
+    },
+    {
+     "text": "don't",
+     "start": 61.405,
+     "end": 61.669
+    },
+    {
+     "text": "have.",
+     "start": 61.699,
+     "end": 61.962
+    },
+    {
+     "text": "So",
+     "start": 61.992,
+     "end": 62.123
+    },
+    {
+     "text": "Grug's",
+     "start": 62.138,
+     "end": 62.446
+    },
+    {
+     "text": "brain",
+     "start": 62.48,
+     "end": 62.744
+    },
+    {
+     "text": "learned",
+     "start": 62.773,
+     "end": 63.125
+    },
+    {
+     "text": "one",
+     "start": 63.164,
+     "end": 63.34
+    },
+    {
+     "text": "lesson",
+     "start": 63.359,
+     "end": 63.667
+    },
+    {
+     "text": "really",
+     "start": 63.701,
+     "end": 64.009
+    },
+    {
+     "text": "really",
+     "start": 64.043,
+     "end": 64.351
+    },
+    {
+     "text": "well.",
+     "start": 64.385,
+     "end": 64.649
+    }
+   ]
+  },
+  {
+   "id": "n1",
+   "text": "Grug's financial plan.",
+   "start": 65.258625,
+   "end": 66.238625,
+   "words": [
+    {
+     "text": "Grug's",
+     "start": 65.259,
+     "end": 65.519
+    },
+    {
+     "text": "financial",
+     "start": 65.519,
+     "end": 65.799
+    },
+    {
+     "text": "plan.",
+     "start": 65.799,
+     "end": 66.239
+    }
+   ]
+  },
+  {
+   "id": "c1e",
+   "text": "For hundreds of thousands of years the rule was simple. Something good in front of you? Take it now. Later might never come.",
+   "start": 66.8850625,
+   "end": 72.1050625,
+   "words": [
+    {
+     "text": "For",
+     "start": 66.885,
+     "end": 66.945
+    },
+    {
+     "text": "hundreds",
+     "start": 66.945,
+     "end": 67.165
+    },
+    {
+     "text": "of",
+     "start": 67.165,
+     "end": 67.285
+    },
+    {
+     "text": "thousands",
+     "start": 67.285,
+     "end": 67.505
+    },
+    {
+     "text": "of",
+     "start": 67.505,
+     "end": 67.785
+    },
+    {
+     "text": "years",
+     "start": 67.785,
+     "end": 67.925
+    },
+    {
+     "text": "the",
+     "start": 67.925,
+     "end": 68.125
+    },
+    {
+     "text": "rule",
+     "start": 68.125,
+     "end": 68.285
+    },
+    {
+     "text": "was",
+     "start": 68.285,
+     "end": 68.465
+    },
+    {
+     "text": "simple.",
+     "start": 68.465,
+     "end": 68.785
+    },
+    {
+     "text": "Something",
+     "start": 69.245,
+     "end": 69.445
+    },
+    {
+     "text": "good",
+     "start": 69.445,
+     "end": 69.665
+    },
+    {
+     "text": "in",
+     "start": 69.665,
+     "end": 69.785
+    },
+    {
+     "text": "front",
+     "start": 69.785,
+     "end": 69.905
+    },
+    {
+     "text": "of",
+     "start": 69.905,
+     "end": 70.065
+    },
+    {
+     "text": "you?",
+     "start": 70.065,
+     "end": 70.165
+    },
+    {
+     "text": "Take",
+     "start": 70.445,
+     "end": 70.565
+    },
+    {
+     "text": "it",
+     "start": 70.565,
+     "end": 70.705
+    },
+    {
+     "text": "now.",
+     "start": 70.705,
+     "end": 70.885
+    },
+    {
+     "text": "Later",
+     "start": 71.245,
+     "end": 71.365
+    },
+    {
+     "text": "might",
+     "start": 71.365,
+     "end": 71.585
+    },
+    {
+     "text": "never",
+     "start": 71.585,
+     "end": 71.825
+    },
+    {
+     "text": "come.",
+     "start": 71.825,
+     "end": 72.105
+    }
+   ]
+  },
+  {
+   "id": "c1f",
+   "text": "The people who waited didn't become our ancestors. The ones who grabbed did. You come from a very long line of grabbers.",
+   "start": 72.8215,
+   "end": 78.1615,
+   "words": [
+    {
+     "text": "The",
+     "start": 72.822,
+     "end": 72.901
+    },
+    {
+     "text": "people",
+     "start": 72.901,
+     "end": 73.061
+    },
+    {
+     "text": "who",
+     "start": 73.061,
+     "end": 73.222
+    },
+    {
+     "text": "waited",
+     "start": 73.222,
+     "end": 73.421
+    },
+    {
+     "text": "didn't",
+     "start": 73.421,
+     "end": 73.742
+    },
+    {
+     "text": "become",
+     "start": 73.742,
+     "end": 73.942
+    },
+    {
+     "text": "our",
+     "start": 73.942,
+     "end": 74.162
+    },
+    {
+     "text": "ancestors.",
+     "start": 74.162,
+     "end": 74.421
+    },
+    {
+     "text": "The",
+     "start": 75.061,
+     "end": 75.102
+    },
+    {
+     "text": "ones",
+     "start": 75.102,
+     "end": 75.222
+    },
+    {
+     "text": "who",
+     "start": 75.222,
+     "end": 75.401
+    },
+    {
+     "text": "grabbed",
+     "start": 75.401,
+     "end": 75.602
+    },
+    {
+     "text": "did.",
+     "start": 75.602,
+     "end": 75.921
+    },
+    {
+     "text": "You",
+     "start": 76.442,
+     "end": 76.541
+    },
+    {
+     "text": "come",
+     "start": 76.541,
+     "end": 76.722
+    },
+    {
+     "text": "from",
+     "start": 76.722,
+     "end": 76.882
+    },
+    {
+     "text": "a",
+     "start": 76.882,
+     "end": 77.001
+    },
+    {
+     "text": "very",
+     "start": 77.001,
+     "end": 77.181
+    },
+    {
+     "text": "long",
+     "start": 77.181,
+     "end": 77.401
+    },
+    {
+     "text": "line",
+     "start": 77.401,
+     "end": 77.722
+    },
+    {
+     "text": "of",
+     "start": 77.722,
+     "end": 77.822
+    },
+    {
+     "text": "grabbers.",
+     "start": 77.822,
+     "end": 78.162
+    }
+   ]
+  },
+  {
+   "id": "n2",
+   "text": "Me realizing my whole family tree is just people grabbing berries.",
+   "start": 78.82779166666667,
+   "end": 81.32779166666667,
+   "words": [
+    {
+     "text": "Me",
+     "start": 78.828,
+     "end": 78.928
+    },
+    {
+     "text": "realizing",
+     "start": 78.928,
+     "end": 79.228
+    },
+    {
+     "text": "my",
+     "start": 79.228,
+     "end": 79.548
+    },
+    {
+     "text": "whole",
+     "start": 79.548,
+     "end": 79.728
+    },
+    {
+     "text": "family",
+     "start": 79.728,
+     "end": 79.968
+    },
+    {
+     "text": "tree",
+     "start": 79.968,
+     "end": 80.248
+    },
+    {
+     "text": "is",
+     "start": 80.248,
+     "end": 80.428
+    },
+    {
+     "text": "just",
+     "start": 80.428,
+     "end": 80.528
+    },
+    {
+     "text": "people",
+     "start": 80.528,
+     "end": 80.728
+    },
+    {
+     "text": "grabbing",
+     "start": 80.728,
+     "end": 81.028
+    },
+    {
+     "text": "berries.",
+     "start": 81.028,
+     "end": 81.328
+    }
+   ]
+  },
+  {
+   "id": "c1g",
+   "text": "And here's the thing. Grug's brain is the brain you're using right now to watch this video. It got a few updates. But the main code is the same.",
+   "start": 82.275,
+   "end": 88.635,
+   "words": [
+    {
+     "text": "And",
+     "start": 82.275,
+     "end": 82.355
+    },
+    {
+     "text": "here's",
+     "start": 82.355,
+     "end": 82.555
+    },
+    {
+     "text": "the",
+     "start": 82.555,
+     "end": 82.635
+    },
+    {
+     "text": "thing.",
+     "start": 82.635,
+     "end": 82.795
+    },
+    {
+     "text": "Grug's",
+     "start": 83.235,
+     "end": 83.455
+    },
+    {
+     "text": "brain",
+     "start": 83.455,
+     "end": 83.615
+    },
+    {
+     "text": "is",
+     "start": 83.615,
+     "end": 83.995
+    },
+    {
+     "text": "the",
+     "start": 83.995,
+     "end": 84.115
+    },
+    {
+     "text": "brain",
+     "start": 84.115,
+     "end": 84.255
+    },
+    {
+     "text": "you're",
+     "start": 84.255,
+     "end": 84.455
+    },
+    {
+     "text": "using",
+     "start": 84.455,
+     "end": 84.695
+    },
+    {
+     "text": "right",
+     "start": 84.695,
+     "end": 84.935
+    },
+    {
+     "text": "now",
+     "start": 84.935,
+     "end": 85.135
+    },
+    {
+     "text": "to",
+     "start": 85.135,
+     "end": 85.295
+    },
+    {
+     "text": "watch",
+     "start": 85.295,
+     "end": 85.455
+    },
+    {
+     "text": "this",
+     "start": 85.455,
+     "end": 85.655
+    },
+    {
+     "text": "video.",
+     "start": 85.655,
+     "end": 85.915
+    },
+    {
+     "text": "It",
+     "start": 86.275,
+     "end": 86.295
+    },
+    {
+     "text": "got",
+     "start": 86.295,
+     "end": 86.395
+    },
+    {
+     "text": "a",
+     "start": 86.395,
+     "end": 86.455
+    },
+    {
+     "text": "few",
+     "start": 86.455,
+     "end": 86.595
+    },
+    {
+     "text": "updates.",
+     "start": 86.595,
+     "end": 86.895
+    },
+    {
+     "text": "But",
+     "start": 87.595,
+     "end": 87.635
+    },
+    {
+     "text": "the",
+     "start": 87.635,
+     "end": 87.735
+    },
+    {
+     "text": "main",
+     "start": 87.735,
+     "end": 87.875
+    },
+    {
+     "text": "code",
+     "start": 87.875,
+     "end": 88.135
+    },
+    {
+     "text": "is",
+     "start": 88.135,
+     "end": 88.375
+    },
+    {
+     "text": "the",
+     "start": 88.375,
+     "end": 88.475
+    },
+    {
+     "text": "same.",
+     "start": 88.475,
+     "end": 88.635
+    }
+   ]
+  },
+  {
+   "id": "n3",
+   "text": "It's like running the newest app on a phone from the stone age. It works. Kind of. But it crashes every time somebody says limited offer.",
+   "start": 89.34545833333334,
+   "end": 95.30545833333333,
+   "words": [
+    {
+     "text": "It's",
+     "start": 89.345,
+     "end": 89.465
+    },
+    {
+     "text": "like",
+     "start": 89.465,
+     "end": 89.565
+    },
+    {
+     "text": "running",
+     "start": 89.565,
+     "end": 89.765
+    },
+    {
+     "text": "the",
+     "start": 89.765,
+     "end": 89.945
+    },
+    {
+     "text": "newest",
+     "start": 89.945,
+     "end": 90.125
+    },
+    {
+     "text": "app",
+     "start": 90.125,
+     "end": 90.305
+    },
+    {
+     "text": "on",
+     "start": 90.305,
+     "end": 90.505
+    },
+    {
+     "text": "a",
+     "start": 90.505,
+     "end": 90.565
+    },
+    {
+     "text": "phone",
+     "start": 90.565,
+     "end": 90.785
+    },
+    {
+     "text": "from",
+     "start": 90.785,
+     "end": 90.965
+    },
+    {
+     "text": "the",
+     "start": 90.965,
+     "end": 91.065
+    },
+    {
+     "text": "stone",
+     "start": 91.065,
+     "end": 91.205
+    },
+    {
+     "text": "age.",
+     "start": 91.205,
+     "end": 91.445
+    },
+    {
+     "text": "It",
+     "start": 91.865,
+     "end": 91.885
+    },
+    {
+     "text": "works.",
+     "start": 91.885,
+     "end": 92.105
+    },
+    {
+     "text": "Kind",
+     "start": 92.465,
+     "end": 92.665
+    },
+    {
+     "text": "of.",
+     "start": 92.665,
+     "end": 92.845
+    },
+    {
+     "text": "But",
+     "start": 93.205,
+     "end": 93.385
+    },
+    {
+     "text": "it",
+     "start": 93.385,
+     "end": 93.465
+    },
+    {
+     "text": "crashes",
+     "start": 93.465,
+     "end": 93.645
+    },
+    {
+     "text": "every",
+     "start": 93.645,
+     "end": 93.945
+    },
+    {
+     "text": "time",
+     "start": 93.945,
+     "end": 94.165
+    },
+    {
+     "text": "somebody",
+     "start": 94.165,
+     "end": 94.405
+    },
+    {
+     "text": "says",
+     "start": 94.405,
+     "end": 94.725
+    },
+    {
+     "text": "limited",
+     "start": 94.725,
+     "end": 94.985
+    },
+    {
+     "text": "offer.",
+     "start": 94.985,
+     "end": 95.305
+    }
+   ]
+  },
+  {
+   "id": "c2a",
+   "text": "Now take Grug and drop him in a mall. Or worse. Give him a phone with a shopping app at two in the morning.",
+   "start": 96.0604375,
+   "end": 100.3604375,
+   "words": [
+    {
+     "text": "Now",
+     "start": 96.06,
+     "end": 96.2
+    },
+    {
+     "text": "take",
+     "start": 96.2,
+     "end": 96.42
+    },
+    {
+     "text": "Grug",
+     "start": 96.42,
+     "end": 96.66
+    },
+    {
+     "text": "and",
+     "start": 96.66,
+     "end": 96.84
+    },
+    {
+     "text": "drop",
+     "start": 96.84,
+     "end": 96.96
+    },
+    {
+     "text": "him",
+     "start": 96.96,
+     "end": 97.14
+    },
+    {
+     "text": "in",
+     "start": 97.14,
+     "end": 97.2
+    },
+    {
+     "text": "a",
+     "start": 97.2,
+     "end": 97.26
+    },
+    {
+     "text": "mall.",
+     "start": 97.26,
+     "end": 97.38
+    },
+    {
+     "text": "Or",
+     "start": 97.8,
+     "end": 97.86
+    },
+    {
+     "text": "worse.",
+     "start": 97.86,
+     "end": 98.04
+    },
+    {
+     "text": "Give",
+     "start": 98.56,
+     "end": 98.6
+    },
+    {
+     "text": "him",
+     "start": 98.6,
+     "end": 98.72
+    },
+    {
+     "text": "a",
+     "start": 98.72,
+     "end": 98.76
+    },
+    {
+     "text": "phone",
+     "start": 98.76,
+     "end": 98.92
+    },
+    {
+     "text": "with",
+     "start": 98.92,
+     "end": 99.1
+    },
+    {
+     "text": "a",
+     "start": 99.1,
+     "end": 99.16
+    },
+    {
+     "text": "shopping",
+     "start": 99.16,
+     "end": 99.3
+    },
+    {
+     "text": "app",
+     "start": 99.3,
+     "end": 99.62
+    },
+    {
+     "text": "at",
+     "start": 99.62,
+     "end": 99.76
+    },
+    {
+     "text": "two",
+     "start": 99.76,
+     "end": 99.92
+    },
+    {
+     "text": "in",
+     "start": 99.92,
+     "end": 100.1
+    },
+    {
+     "text": "the",
+     "start": 100.1,
+     "end": 100.12
+    },
+    {
+     "text": "morning.",
+     "start": 100.12,
+     "end": 100.36
+    }
+   ]
+  },
+  {
+   "id": "c2b",
+   "text": "Every screen is a berry bush now. Shoes. Snacks. Gadgets. All of it shouting take me now. And Grug brain says yes. Every time.",
+   "start": 101.01108333333333,
+   "end": 108.73108333333333,
+   "words": [
+    {
+     "text": "Every",
+     "start": 101.011,
+     "end": 101.211
+    },
+    {
+     "text": "screen",
+     "start": 101.211,
+     "end": 101.471
+    },
+    {
+     "text": "is",
+     "start": 101.471,
+     "end": 101.671
+    },
+    {
+     "text": "a",
+     "start": 101.671,
+     "end": 101.771
+    },
+    {
+     "text": "berry",
+     "start": 101.771,
+     "end": 101.991
+    },
+    {
+     "text": "bush",
+     "start": 101.991,
+     "end": 102.191
+    },
+    {
+     "text": "now.",
+     "start": 102.191,
+     "end": 102.471
+    },
+    {
+     "text": "Shoes.",
+     "start": 102.731,
+     "end": 102.971
+    },
+    {
+     "text": "Snacks.",
+     "start": 103.431,
+     "end": 103.611
+    },
+    {
+     "text": "Gadgets.",
+     "start": 104.331,
+     "end": 104.331
+    },
+    {
+     "text": "All",
+     "start": 104.991,
+     "end": 104.991
+    },
+    {
+     "text": "of",
+     "start": 104.991,
+     "end": 105.111
+    },
+    {
+     "text": "it",
+     "start": 105.111,
+     "end": 105.211
+    },
+    {
+     "text": "shouting",
+     "start": 105.211,
+     "end": 105.351
+    },
+    {
+     "text": "take",
+     "start": 105.351,
+     "end": 105.731
+    },
+    {
+     "text": "me",
+     "start": 105.731,
+     "end": 105.931
+    },
+    {
+     "text": "now.",
+     "start": 105.931,
+     "end": 106.131
+    },
+    {
+     "text": "And",
+     "start": 106.391,
+     "end": 106.651
+    },
+    {
+     "text": "Grug",
+     "start": 106.651,
+     "end": 106.891
+    },
+    {
+     "text": "brain",
+     "start": 106.891,
+     "end": 107.071
+    },
+    {
+     "text": "says",
+     "start": 107.071,
+     "end": 107.351
+    },
+    {
+     "text": "yes.",
+     "start": 107.351,
+     "end": 107.911
+    },
+    {
+     "text": "Every",
+     "start": 108.151,
+     "end": 108.391
+    },
+    {
+     "text": "time.",
+     "start": 108.391,
+     "end": 108.731
+    }
+   ]
+  },
+  {
+   "id": "n32",
+   "text": "A cave with a berry bush outside was rare. A phone with a million berries in your pocket is every single day. Your brain never had to deal with that much yes.",
+   "start": 109.44447916666667,
+   "end": 116.54447916666666,
+   "words": [
+    {
+     "text": "A",
+     "start": 109.444,
+     "end": 109.524
+    },
+    {
+     "text": "cave",
+     "start": 109.524,
+     "end": 109.724
+    },
+    {
+     "text": "with",
+     "start": 109.724,
+     "end": 109.904
+    },
+    {
+     "text": "a",
+     "start": 109.904,
+     "end": 109.964
+    },
+    {
+     "text": "berry",
+     "start": 109.964,
+     "end": 110.184
+    },
+    {
+     "text": "bush",
+     "start": 110.184,
+     "end": 110.404
+    },
+    {
+     "text": "outside",
+     "start": 110.404,
+     "end": 110.624
+    },
+    {
+     "text": "was",
+     "start": 110.624,
+     "end": 111.064
+    },
+    {
+     "text": "rare.",
+     "start": 111.064,
+     "end": 111.244
+    },
+    {
+     "text": "A",
+     "start": 111.944,
+     "end": 111.964
+    },
+    {
+     "text": "phone",
+     "start": 111.964,
+     "end": 112.184
+    },
+    {
+     "text": "with",
+     "start": 112.184,
+     "end": 112.344
+    },
+    {
+     "text": "a",
+     "start": 112.344,
+     "end": 112.424
+    },
+    {
+     "text": "million",
+     "start": 112.424,
+     "end": 112.684
+    },
+    {
+     "text": "berries",
+     "start": 112.684,
+     "end": 112.924
+    },
+    {
+     "text": "in",
+     "start": 112.924,
+     "end": 113.164
+    },
+    {
+     "text": "your",
+     "start": 113.164,
+     "end": 113.244
+    },
+    {
+     "text": "pocket",
+     "start": 113.244,
+     "end": 113.504
+    },
+    {
+     "text": "is",
+     "start": 113.504,
+     "end": 113.744
+    },
+    {
+     "text": "every",
+     "start": 113.744,
+     "end": 113.984
+    },
+    {
+     "text": "single",
+     "start": 113.984,
+     "end": 114.204
+    },
+    {
+     "text": "day.",
+     "start": 114.204,
+     "end": 114.524
+    },
+    {
+     "text": "Your",
+     "start": 114.944,
+     "end": 114.964
+    },
+    {
+     "text": "brain",
+     "start": 114.964,
+     "end": 115.164
+    },
+    {
+     "text": "never",
+     "start": 115.164,
+     "end": 115.364
+    },
+    {
+     "text": "had",
+     "start": 115.364,
+     "end": 115.564
+    },
+    {
+     "text": "to",
+     "start": 115.564,
+     "end": 115.664
+    },
+    {
+     "text": "deal",
+     "start": 115.664,
+     "end": 115.844
+    },
+    {
+     "text": "with",
+     "start": 115.844,
+     "end": 116.004
+    },
+    {
+     "text": "that",
+     "start": 116.004,
+     "end": 116.124
+    },
+    {
+     "text": "much",
+     "start": 116.124,
+     "end": 116.264
+    },
+    {
+     "text": "yes.",
+     "start": 116.264,
+     "end": 116.544
+    }
+   ]
+  },
+  {
+   "id": "n4",
+   "text": "Grug with free next day delivery.",
+   "start": 117.2154375,
+   "end": 118.59543749999999,
+   "words": [
+    {
+     "text": "Grug",
+     "start": 117.215,
+     "end": 117.495
+    },
+    {
+     "text": "with",
+     "start": 117.495,
+     "end": 117.755
+    },
+    {
+     "text": "free",
+     "start": 117.755,
+     "end": 117.915
+    },
+    {
+     "text": "next",
+     "start": 117.915,
+     "end": 118.115
+    },
+    {
+     "text": "day",
+     "start": 118.115,
+     "end": 118.355
+    },
+    {
+     "text": "delivery.",
+     "start": 118.355,
+     "end": 118.595
+    }
+   ]
+  },
+  {
+   "id": "c2c",
+   "text": "In Grug's world later was dangerous. In your world later is where all the money is. And your brain didn't get the memo.",
+   "start": 119.4245625,
+   "end": 124.51856249999999,
+   "words": [
+    {
+     "text": "In",
+     "start": 119.425,
+     "end": 119.54
+    },
+    {
+     "text": "Grug's",
+     "start": 119.553,
+     "end": 119.822
+    },
+    {
+     "text": "world",
+     "start": 119.852,
+     "end": 120.082
+    },
+    {
+     "text": "later",
+     "start": 120.108,
+     "end": 120.338
+    },
+    {
+     "text": "was",
+     "start": 120.364,
+     "end": 120.517
+    },
+    {
+     "text": "dangerous.",
+     "start": 120.534,
+     "end": 120.957
+    },
+    {
+     "text": "In",
+     "start": 121.004,
+     "end": 121.119
+    },
+    {
+     "text": "your",
+     "start": 121.132,
+     "end": 121.324
+    },
+    {
+     "text": "world",
+     "start": 121.345,
+     "end": 121.575
+    },
+    {
+     "text": "later",
+     "start": 121.601,
+     "end": 121.831
+    },
+    {
+     "text": "is",
+     "start": 121.857,
+     "end": 121.972
+    },
+    {
+     "text": "where",
+     "start": 121.985,
+     "end": 122.215
+    },
+    {
+     "text": "all",
+     "start": 122.241,
+     "end": 122.395
+    },
+    {
+     "text": "the",
+     "start": 122.412,
+     "end": 122.565
+    },
+    {
+     "text": "money",
+     "start": 122.582,
+     "end": 122.813
+    },
+    {
+     "text": "is.",
+     "start": 122.838,
+     "end": 122.992
+    },
+    {
+     "text": "And",
+     "start": 123.009,
+     "end": 123.163
+    },
+    {
+     "text": "your",
+     "start": 123.18,
+     "end": 123.372
+    },
+    {
+     "text": "brain",
+     "start": 123.393,
+     "end": 123.623
+    },
+    {
+     "text": "didn't",
+     "start": 123.649,
+     "end": 123.918
+    },
+    {
+     "text": "get",
+     "start": 123.948,
+     "end": 124.101
+    },
+    {
+     "text": "the",
+     "start": 124.118,
+     "end": 124.272
+    },
+    {
+     "text": "memo.",
+     "start": 124.289,
+     "end": 124.519
+    }
+   ]
+  },
+  {
+   "id": "c3a",
+   "text": "So scientists actually put people inside brain scanners and showed them stuff to buy. Chocolates. Gadgets. Things with price tags.",
+   "start": 127.276625,
+   "end": 132.896625,
+   "words": [
+    {
+     "text": "So",
+     "start": 127.277,
+     "end": 127.357
+    },
+    {
+     "text": "scientists",
+     "start": 127.357,
+     "end": 127.597
+    },
+    {
+     "text": "actually",
+     "start": 127.597,
+     "end": 127.897
+    },
+    {
+     "text": "put",
+     "start": 127.897,
+     "end": 128.157
+    },
+    {
+     "text": "people",
+     "start": 128.157,
+     "end": 128.337
+    },
+    {
+     "text": "inside",
+     "start": 128.337,
+     "end": 128.637
+    },
+    {
+     "text": "brain",
+     "start": 128.637,
+     "end": 129.017
+    },
+    {
+     "text": "scanners",
+     "start": 129.017,
+     "end": 129.297
+    },
+    {
+     "text": "and",
+     "start": 129.297,
+     "end": 129.677
+    },
+    {
+     "text": "showed",
+     "start": 129.677,
+     "end": 129.837
+    },
+    {
+     "text": "them",
+     "start": 129.837,
+     "end": 129.997
+    },
+    {
+     "text": "stuff",
+     "start": 129.997,
+     "end": 130.177
+    },
+    {
+     "text": "to",
+     "start": 130.177,
+     "end": 130.297
+    },
+    {
+     "text": "buy.",
+     "start": 130.297,
+     "end": 130.457
+    },
+    {
+     "text": "Chocolates.",
+     "start": 130.837,
+     "end": 131.237
+    },
+    {
+     "text": "Gadgets.",
+     "start": 131.437,
+     "end": 131.657
+    },
+    {
+     "text": "Things",
+     "start": 132.137,
+     "end": 132.237
+    },
+    {
+     "text": "with",
+     "start": 132.237,
+     "end": 132.417
+    },
+    {
+     "text": "price",
+     "start": 132.417,
+     "end": 132.577
+    },
+    {
+     "text": "tags.",
+     "start": 132.577,
+     "end": 132.897
+    }
+   ]
+  },
+  {
+   "id": "c3b",
+   "text": "And when people saw something they wanted a pleasure part of the brain lit up. Before they even saw the price.",
+   "start": 133.64575,
+   "end": 137.80575,
+   "words": [
+    {
+     "text": "And",
+     "start": 133.646,
+     "end": 133.846
+    },
+    {
+     "text": "when",
+     "start": 133.846,
+     "end": 133.966
+    },
+    {
+     "text": "people",
+     "start": 133.966,
+     "end": 134.166
+    },
+    {
+     "text": "saw",
+     "start": 134.166,
+     "end": 134.446
+    },
+    {
+     "text": "something",
+     "start": 134.446,
+     "end": 134.726
+    },
+    {
+     "text": "they",
+     "start": 134.726,
+     "end": 134.966
+    },
+    {
+     "text": "wanted",
+     "start": 134.966,
+     "end": 135.126
+    },
+    {
+     "text": "a",
+     "start": 135.126,
+     "end": 135.306
+    },
+    {
+     "text": "pleasure",
+     "start": 135.306,
+     "end": 135.566
+    },
+    {
+     "text": "part",
+     "start": 135.826,
+     "end": 135.986
+    },
+    {
+     "text": "of",
+     "start": 135.986,
+     "end": 136.086
+    },
+    {
+     "text": "the",
+     "start": 136.086,
+     "end": 136.146
+    },
+    {
+     "text": "brain",
+     "start": 136.146,
+     "end": 136.286
+    },
+    {
+     "text": "lit",
+     "start": 136.286,
+     "end": 136.486
+    },
+    {
+     "text": "up.",
+     "start": 136.486,
+     "end": 136.666
+    },
+    {
+     "text": "Before",
+     "start": 136.866,
+     "end": 137.026
+    },
+    {
+     "text": "they",
+     "start": 137.026,
+     "end": 137.186
+    },
+    {
+     "text": "even",
+     "start": 137.186,
+     "end": 137.346
+    },
+    {
+     "text": "saw",
+     "start": 137.346,
+     "end": 137.506
+    },
+    {
+     "text": "the",
+     "start": 137.506,
+     "end": 137.626
+    },
+    {
+     "text": "price.",
+     "start": 137.626,
+     "end": 137.806
+    }
+   ]
+  },
+  {
+   "id": "c3c",
+   "text": "Then the price showed up. And if it felt too high another part of the brain lit up. The part that feels pain.",
+   "start": 138.59416666666667,
+   "end": 143.41416666666666,
+   "words": [
+    {
+     "text": "Then",
+     "start": 138.594,
+     "end": 138.834
+    },
+    {
+     "text": "the",
+     "start": 138.994,
+     "end": 139.074
+    },
+    {
+     "text": "price",
+     "start": 139.074,
+     "end": 139.234
+    },
+    {
+     "text": "showed",
+     "start": 139.234,
+     "end": 139.454
+    },
+    {
+     "text": "up.",
+     "start": 139.454,
+     "end": 139.634
+    },
+    {
+     "text": "And",
+     "start": 139.994,
+     "end": 140.014
+    },
+    {
+     "text": "if",
+     "start": 140.014,
+     "end": 140.134
+    },
+    {
+     "text": "it",
+     "start": 140.134,
+     "end": 140.194
+    },
+    {
+     "text": "felt",
+     "start": 140.194,
+     "end": 140.294
+    },
+    {
+     "text": "too",
+     "start": 140.294,
+     "end": 140.594
+    },
+    {
+     "text": "high",
+     "start": 140.594,
+     "end": 140.874
+    },
+    {
+     "text": "another",
+     "start": 141.194,
+     "end": 141.314
+    },
+    {
+     "text": "part",
+     "start": 141.314,
+     "end": 141.574
+    },
+    {
+     "text": "of",
+     "start": 141.574,
+     "end": 141.654
+    },
+    {
+     "text": "the",
+     "start": 141.654,
+     "end": 141.734
+    },
+    {
+     "text": "brain",
+     "start": 141.734,
+     "end": 141.914
+    },
+    {
+     "text": "lit",
+     "start": 141.914,
+     "end": 142.074
+    },
+    {
+     "text": "up.",
+     "start": 142.074,
+     "end": 142.294
+    },
+    {
+     "text": "The",
+     "start": 142.574,
+     "end": 142.714
+    },
+    {
+     "text": "part",
+     "start": 142.714,
+     "end": 142.854
+    },
+    {
+     "text": "that",
+     "start": 142.854,
+     "end": 142.974
+    },
+    {
+     "text": "feels",
+     "start": 142.974,
+     "end": 143.174
+    },
+    {
+     "text": "pain.",
+     "start": 143.174,
+     "end": 143.414
+    }
+   ]
+  },
+  {
+   "id": "n33",
+   "text": "Which makes sense. Grug's brain treats losing stuff like losing food. Losing hurts. And if paying hurts enough Grug walks away.",
+   "start": 144.1424375,
+   "end": 150.3824375,
+   "words": [
+    {
+     "text": "Which",
+     "start": 144.142,
+     "end": 144.262
+    },
+    {
+     "text": "makes",
+     "start": 144.262,
+     "end": 144.382
+    },
+    {
+     "text": "sense.",
+     "start": 144.382,
+     "end": 144.662
+    },
+    {
+     "text": "Grug's",
+     "start": 145.302,
+     "end": 145.502
+    },
+    {
+     "text": "brain",
+     "start": 145.502,
+     "end": 145.662
+    },
+    {
+     "text": "treats",
+     "start": 145.662,
+     "end": 146.082
+    },
+    {
+     "text": "losing",
+     "start": 146.082,
+     "end": 146.242
+    },
+    {
+     "text": "stuff",
+     "start": 146.242,
+     "end": 146.602
+    },
+    {
+     "text": "like",
+     "start": 146.602,
+     "end": 146.802
+    },
+    {
+     "text": "losing",
+     "start": 146.802,
+     "end": 146.982
+    },
+    {
+     "text": "food.",
+     "start": 146.982,
+     "end": 147.342
+    },
+    {
+     "text": "Losing",
+     "start": 147.622,
+     "end": 147.862
+    },
+    {
+     "text": "hurts.",
+     "start": 147.862,
+     "end": 148.102
+    },
+    {
+     "text": "And",
+     "start": 148.522,
+     "end": 148.782
+    },
+    {
+     "text": "if",
+     "start": 148.782,
+     "end": 148.862
+    },
+    {
+     "text": "paying",
+     "start": 148.862,
+     "end": 149.062
+    },
+    {
+     "text": "hurts",
+     "start": 149.062,
+     "end": 149.322
+    },
+    {
+     "text": "enough",
+     "start": 149.322,
+     "end": 149.562
+    },
+    {
+     "text": "Grug",
+     "start": 149.802,
+     "end": 149.902
+    },
+    {
+     "text": "walks",
+     "start": 149.902,
+     "end": 150.102
+    },
+    {
+     "text": "away.",
+     "start": 150.102,
+     "end": 150.382
+    }
+   ]
+  },
+  {
+   "id": "n5",
+   "text": "So buying something is a fight inside your head. Pleasure on one side. Pain on the other. And whoever wins decides if you click buy.",
+   "start": 151.01641666666666,
+   "end": 157.07641666666666,
+   "words": [
+    {
+     "text": "So",
+     "start": 151.016,
+     "end": 151.136
+    },
+    {
+     "text": "buying",
+     "start": 151.136,
+     "end": 151.356
+    },
+    {
+     "text": "something",
+     "start": 151.356,
+     "end": 151.716
+    },
+    {
+     "text": "is",
+     "start": 151.716,
+     "end": 151.936
+    },
+    {
+     "text": "a",
+     "start": 151.936,
+     "end": 151.996
+    },
+    {
+     "text": "fight",
+     "start": 151.996,
+     "end": 152.156
+    },
+    {
+     "text": "inside",
+     "start": 152.156,
+     "end": 152.376
+    },
+    {
+     "text": "your",
+     "start": 152.376,
+     "end": 152.636
+    },
+    {
+     "text": "head.",
+     "start": 152.636,
+     "end": 152.896
+    },
+    {
+     "text": "Pleasure",
+     "start": 153.256,
+     "end": 153.516
+    },
+    {
+     "text": "on",
+     "start": 153.516,
+     "end": 153.656
+    },
+    {
+     "text": "one",
+     "start": 153.656,
+     "end": 153.776
+    },
+    {
+     "text": "side.",
+     "start": 153.776,
+     "end": 154.096
+    },
+    {
+     "text": "Pain",
+     "start": 154.356,
+     "end": 154.516
+    },
+    {
+     "text": "on",
+     "start": 154.516,
+     "end": 154.636
+    },
+    {
+     "text": "the",
+     "start": 154.636,
+     "end": 154.756
+    },
+    {
+     "text": "other.",
+     "start": 154.756,
+     "end": 154.956
+    },
+    {
+     "text": "And",
+     "start": 155.276,
+     "end": 155.356
+    },
+    {
+     "text": "whoever",
+     "start": 155.356,
+     "end": 155.476
+    },
+    {
+     "text": "wins",
+     "start": 155.476,
+     "end": 155.936
+    },
+    {
+     "text": "decides",
+     "start": 155.936,
+     "end": 156.336
+    },
+    {
+     "text": "if",
+     "start": 156.336,
+     "end": 156.596
+    },
+    {
+     "text": "you",
+     "start": 156.596,
+     "end": 156.676
+    },
+    {
+     "text": "click",
+     "start": 156.676,
+     "end": 156.836
+    },
+    {
+     "text": "buy.",
+     "start": 156.836,
+     "end": 157.076
+    }
+   ]
+  },
+  {
+   "id": "n6",
+   "text": "My brain at checkout.",
+   "start": 157.767,
+   "end": 158.427,
+   "words": [
+    {
+     "text": "My",
+     "start": 157.767,
+     "end": 157.867
+    },
+    {
+     "text": "brain",
+     "start": 157.867,
+     "end": 158.067
+    },
+    {
+     "text": "at",
+     "start": 158.067,
+     "end": 158.247
+    },
+    {
+     "text": "checkout.",
+     "start": 158.247,
+     "end": 158.427
+    }
+   ]
+  },
+  {
+   "id": "c3d",
+   "text": "And now here's the sneaky part. What if somebody could turn down the pain? Then pleasure wins every single time.",
+   "start": 159.23439583333334,
+   "end": 164.77439583333333,
+   "words": [
+    {
+     "text": "And",
+     "start": 159.234,
+     "end": 159.314
+    },
+    {
+     "text": "now",
+     "start": 159.314,
+     "end": 159.454
+    },
+    {
+     "text": "here's",
+     "start": 159.454,
+     "end": 159.754
+    },
+    {
+     "text": "the",
+     "start": 159.754,
+     "end": 159.854
+    },
+    {
+     "text": "sneaky",
+     "start": 159.854,
+     "end": 159.974
+    },
+    {
+     "text": "part.",
+     "start": 159.974,
+     "end": 160.394
+    },
+    {
+     "text": "What",
+     "start": 160.994,
+     "end": 161.074
+    },
+    {
+     "text": "if",
+     "start": 161.074,
+     "end": 161.174
+    },
+    {
+     "text": "somebody",
+     "start": 161.174,
+     "end": 161.394
+    },
+    {
+     "text": "could",
+     "start": 161.394,
+     "end": 161.694
+    },
+    {
+     "text": "turn",
+     "start": 161.694,
+     "end": 161.894
+    },
+    {
+     "text": "down",
+     "start": 161.894,
+     "end": 162.094
+    },
+    {
+     "text": "the",
+     "start": 162.094,
+     "end": 162.214
+    },
+    {
+     "text": "pain?",
+     "start": 162.214,
+     "end": 162.494
+    },
+    {
+     "text": "Then",
+     "start": 163.134,
+     "end": 163.234
+    },
+    {
+     "text": "pleasure",
+     "start": 163.234,
+     "end": 163.494
+    },
+    {
+     "text": "wins",
+     "start": 163.494,
+     "end": 163.794
+    },
+    {
+     "text": "every",
+     "start": 163.794,
+     "end": 164.134
+    },
+    {
+     "text": "single",
+     "start": 164.134,
+     "end": 164.414
+    },
+    {
+     "text": "time.",
+     "start": 164.414,
+     "end": 164.774
+    }
+   ]
+  },
+  {
+   "id": "c3e",
+   "text": "Somebody did. It's called a credit card.",
+   "start": 165.41327083333334,
+   "end": 167.05327083333333,
+   "words": [
+    {
+     "text": "Somebody",
+     "start": 165.413,
+     "end": 165.653
+    },
+    {
+     "text": "did.",
+     "start": 165.653,
+     "end": 165.953
+    },
+    {
+     "text": "It's",
+     "start": 166.293,
+     "end": 166.393
+    },
+    {
+     "text": "called",
+     "start": 166.393,
+     "end": 166.533
+    },
+    {
+     "text": "a",
+     "start": 166.533,
+     "end": 166.613
+    },
+    {
+     "text": "credit",
+     "start": 166.613,
+     "end": 166.793
+    },
+    {
+     "text": "card.",
+     "start": 166.793,
+     "end": 167.053
+    }
+   ]
+  },
+  {
+   "id": "c3f",
+   "text": "Two professors at MIT once auctioned real basketball tickets. Half the people had to pay cash. The other half could pay with a card.",
+   "start": 167.80783333333332,
+   "end": 174.1278333333333,
+   "words": [
+    {
+     "text": "Two",
+     "start": 167.808,
+     "end": 167.928
+    },
+    {
+     "text": "professors",
+     "start": 167.928,
+     "end": 168.268
+    },
+    {
+     "text": "at",
+     "start": 168.268,
+     "end": 168.648
+    },
+    {
+     "text": "MIT",
+     "start": 168.648,
+     "end": 168.948
+    },
+    {
+     "text": "once",
+     "start": 168.948,
+     "end": 169.368
+    },
+    {
+     "text": "auctioned",
+     "start": 169.368,
+     "end": 169.888
+    },
+    {
+     "text": "real",
+     "start": 169.888,
+     "end": 169.988
+    },
+    {
+     "text": "basketball",
+     "start": 169.988,
+     "end": 170.368
+    },
+    {
+     "text": "tickets.",
+     "start": 170.368,
+     "end": 170.688
+    },
+    {
+     "text": "Half",
+     "start": 171.428,
+     "end": 171.468
+    },
+    {
+     "text": "the",
+     "start": 171.468,
+     "end": 171.628
+    },
+    {
+     "text": "people",
+     "start": 171.628,
+     "end": 171.848
+    },
+    {
+     "text": "had",
+     "start": 171.848,
+     "end": 172.028
+    },
+    {
+     "text": "to",
+     "start": 172.028,
+     "end": 172.148
+    },
+    {
+     "text": "pay",
+     "start": 172.148,
+     "end": 172.288
+    },
+    {
+     "text": "cash.",
+     "start": 172.288,
+     "end": 172.548
+    },
+    {
+     "text": "The",
+     "start": 173.008,
+     "end": 173.028
+    },
+    {
+     "text": "other",
+     "start": 173.028,
+     "end": 173.188
+    },
+    {
+     "text": "half",
+     "start": 173.188,
+     "end": 173.408
+    },
+    {
+     "text": "could",
+     "start": 173.408,
+     "end": 173.588
+    },
+    {
+     "text": "pay",
+     "start": 173.588,
+     "end": 173.728
+    },
+    {
+     "text": "with",
+     "start": 173.728,
+     "end": 173.848
+    },
+    {
+     "text": "a",
+     "start": 173.848,
+     "end": 173.908
+    },
+    {
+     "text": "card.",
+     "start": 173.908,
+     "end": 174.128
+    }
+   ]
+  },
+  {
+   "id": "c3g",
+   "text": "Same tickets. Same game. The card people offered about twice as much money.",
+   "start": 174.74039583333334,
+   "end": 178.60039583333335,
+   "words": [
+    {
+     "text": "Same",
+     "start": 174.74,
+     "end": 174.88
+    },
+    {
+     "text": "tickets.",
+     "start": 174.88,
+     "end": 175.14
+    },
+    {
+     "text": "Same",
+     "start": 175.64,
+     "end": 175.92
+    },
+    {
+     "text": "game.",
+     "start": 175.92,
+     "end": 176.18
+    },
+    {
+     "text": "The",
+     "start": 176.74,
+     "end": 176.78
+    },
+    {
+     "text": "card",
+     "start": 176.78,
+     "end": 176.94
+    },
+    {
+     "text": "people",
+     "start": 176.94,
+     "end": 177.2
+    },
+    {
+     "text": "offered",
+     "start": 177.2,
+     "end": 177.58
+    },
+    {
+     "text": "about",
+     "start": 177.58,
+     "end": 177.82
+    },
+    {
+     "text": "twice",
+     "start": 177.82,
+     "end": 177.98
+    },
+    {
+     "text": "as",
+     "start": 177.98,
+     "end": 178.2
+    },
+    {
+     "text": "much",
+     "start": 178.2,
+     "end": 178.34
+    },
+    {
+     "text": "money.",
+     "start": 178.34,
+     "end": 178.6
+    }
+   ]
+  },
+  {
+   "id": "n7",
+   "text": "Cash feels like losing something. You watch the bills leave your hand. A card feels like nothing. A little beep. And the pain never shows up.",
+   "start": 179.25795833333333,
+   "end": 185.11795833333335,
+   "words": [
+    {
+     "text": "Cash",
+     "start": 179.258,
+     "end": 179.398
+    },
+    {
+     "text": "feels",
+     "start": 179.398,
+     "end": 179.638
+    },
+    {
+     "text": "like",
+     "start": 179.638,
+     "end": 179.798
+    },
+    {
+     "text": "losing",
+     "start": 179.798,
+     "end": 179.978
+    },
+    {
+     "text": "something.",
+     "start": 179.978,
+     "end": 180.418
+    },
+    {
+     "text": "You",
+     "start": 180.738,
+     "end": 180.838
+    },
+    {
+     "text": "watch",
+     "start": 180.838,
+     "end": 180.978
+    },
+    {
+     "text": "the",
+     "start": 180.978,
+     "end": 181.158
+    },
+    {
+     "text": "bills",
+     "start": 181.158,
+     "end": 181.298
+    },
+    {
+     "text": "leave",
+     "start": 181.298,
+     "end": 181.498
+    },
+    {
+     "text": "your",
+     "start": 181.498,
+     "end": 181.618
+    },
+    {
+     "text": "hand.",
+     "start": 181.618,
+     "end": 181.878
+    },
+    {
+     "text": "A",
+     "start": 182.218,
+     "end": 182.258
+    },
+    {
+     "text": "card",
+     "start": 182.258,
+     "end": 182.458
+    },
+    {
+     "text": "feels",
+     "start": 182.458,
+     "end": 182.658
+    },
+    {
+     "text": "like",
+     "start": 182.658,
+     "end": 182.838
+    },
+    {
+     "text": "nothing.",
+     "start": 182.838,
+     "end": 183.138
+    },
+    {
+     "text": "A",
+     "start": 183.438,
+     "end": 183.498
+    },
+    {
+     "text": "little",
+     "start": 183.498,
+     "end": 183.598
+    },
+    {
+     "text": "beep.",
+     "start": 183.598,
+     "end": 183.958
+    },
+    {
+     "text": "And",
+     "start": 184.138,
+     "end": 184.238
+    },
+    {
+     "text": "the",
+     "start": 184.238,
+     "end": 184.318
+    },
+    {
+     "text": "pain",
+     "start": 184.318,
+     "end": 184.438
+    },
+    {
+     "text": "never",
+     "start": 184.438,
+     "end": 184.638
+    },
+    {
+     "text": "shows",
+     "start": 184.638,
+     "end": 184.898
+    },
+    {
+     "text": "up.",
+     "start": 184.898,
+     "end": 185.118
+    }
+   ]
+  },
+  {
+   "id": "n34",
+   "text": "Have you noticed how easy it is to spend fifty dollars on an app but how hard it is to hand someone a fifty dollar bill? Same fifty dollars. Totally different feeling.",
+   "start": 185.62114583333334,
+   "end": 192.72314583333335,
+   "words": [
+    {
+     "text": "Have",
+     "start": 185.621,
+     "end": 185.812
+    },
+    {
+     "text": "you",
+     "start": 185.833,
+     "end": 185.986
+    },
+    {
+     "text": "noticed",
+     "start": 186.003,
+     "end": 186.309
+    },
+    {
+     "text": "how",
+     "start": 186.343,
+     "end": 186.497
+    },
+    {
+     "text": "easy",
+     "start": 186.513,
+     "end": 186.705
+    },
+    {
+     "text": "it",
+     "start": 186.726,
+     "end": 186.841
+    },
+    {
+     "text": "is",
+     "start": 186.853,
+     "end": 186.968
+    },
+    {
+     "text": "to",
+     "start": 186.981,
+     "end": 187.096
+    },
+    {
+     "text": "spend",
+     "start": 187.108,
+     "end": 187.338
+    },
+    {
+     "text": "fifty",
+     "start": 187.363,
+     "end": 187.593
+    },
+    {
+     "text": "dollars",
+     "start": 187.618,
+     "end": 187.924
+    },
+    {
+     "text": "on",
+     "start": 187.958,
+     "end": 188.073
+    },
+    {
+     "text": "an",
+     "start": 188.086,
+     "end": 188.201
+    },
+    {
+     "text": "app",
+     "start": 188.213,
+     "end": 188.366
+    },
+    {
+     "text": "but",
+     "start": 188.383,
+     "end": 188.536
+    },
+    {
+     "text": "how",
+     "start": 188.553,
+     "end": 188.706
+    },
+    {
+     "text": "hard",
+     "start": 188.723,
+     "end": 188.915
+    },
+    {
+     "text": "it",
+     "start": 188.936,
+     "end": 189.051
+    },
+    {
+     "text": "is",
+     "start": 189.063,
+     "end": 189.178
+    },
+    {
+     "text": "to",
+     "start": 189.191,
+     "end": 189.306
+    },
+    {
+     "text": "hand",
+     "start": 189.318,
+     "end": 189.51
+    },
+    {
+     "text": "someone",
+     "start": 189.531,
+     "end": 189.837
+    },
+    {
+     "text": "a",
+     "start": 189.871,
+     "end": 189.947
+    },
+    {
+     "text": "fifty",
+     "start": 189.956,
+     "end": 190.185
+    },
+    {
+     "text": "dollar",
+     "start": 190.211,
+     "end": 190.479
+    },
+    {
+     "text": "bill?",
+     "start": 190.508,
+     "end": 190.738
+    },
+    {
+     "text": "Same",
+     "start": 190.763,
+     "end": 190.955
+    },
+    {
+     "text": "fifty",
+     "start": 190.976,
+     "end": 191.205
+    },
+    {
+     "text": "dollars.",
+     "start": 191.231,
+     "end": 191.575
+    },
+    {
+     "text": "Totally",
+     "start": 191.613,
+     "end": 191.919
+    },
+    {
+     "text": "different",
+     "start": 191.953,
+     "end": 192.336
+    },
+    {
+     "text": "feeling.",
+     "start": 192.378,
+     "end": 192.723
+    }
+   ]
+  },
+  {
+   "id": "n8",
+   "text": "Me paying with cash versus paying with my phone.",
+   "start": 193.47054166666666,
+   "end": 195.49054166666667,
+   "words": [
+    {
+     "text": "Me",
+     "start": 193.471,
+     "end": 193.591
+    },
+    {
+     "text": "paying",
+     "start": 193.591,
+     "end": 193.831
+    },
+    {
+     "text": "with",
+     "start": 193.831,
+     "end": 194.011
+    },
+    {
+     "text": "cash",
+     "start": 194.011,
+     "end": 194.211
+    },
+    {
+     "text": "versus",
+     "start": 194.211,
+     "end": 194.651
+    },
+    {
+     "text": "paying",
+     "start": 194.651,
+     "end": 194.951
+    },
+    {
+     "text": "with",
+     "start": 194.951,
+     "end": 195.111
+    },
+    {
+     "text": "my",
+     "start": 195.111,
+     "end": 195.231
+    },
+    {
+     "text": "phone.",
+     "start": 195.231,
+     "end": 195.491
+    }
+   ]
+  },
+  {
+   "id": "c3h",
+   "text": "And now it's even easier. Tap your phone. Save your card in the app. One click buy. Every step you skip is a little less pain.",
+   "start": 196.16872916666668,
+   "end": 202.86872916666667,
+   "words": [
+    {
+     "text": "And",
+     "start": 196.169,
+     "end": 196.249
+    },
+    {
+     "text": "now",
+     "start": 196.249,
+     "end": 196.469
+    },
+    {
+     "text": "it's",
+     "start": 196.469,
+     "end": 196.909
+    },
+    {
+     "text": "even",
+     "start": 196.909,
+     "end": 197.029
+    },
+    {
+     "text": "easier.",
+     "start": 197.029,
+     "end": 197.349
+    },
+    {
+     "text": "Tap",
+     "start": 198.049,
+     "end": 198.129
+    },
+    {
+     "text": "your",
+     "start": 198.129,
+     "end": 198.269
+    },
+    {
+     "text": "phone.",
+     "start": 198.269,
+     "end": 198.469
+    },
+    {
+     "text": "Save",
+     "start": 198.829,
+     "end": 199.029
+    },
+    {
+     "text": "your",
+     "start": 199.029,
+     "end": 199.169
+    },
+    {
+     "text": "card",
+     "start": 199.169,
+     "end": 199.349
+    },
+    {
+     "text": "in",
+     "start": 199.349,
+     "end": 199.469
+    },
+    {
+     "text": "the",
+     "start": 199.469,
+     "end": 199.549
+    },
+    {
+     "text": "app.",
+     "start": 199.549,
+     "end": 199.769
+    },
+    {
+     "text": "One",
+     "start": 200.109,
+     "end": 200.209
+    },
+    {
+     "text": "click",
+     "start": 200.209,
+     "end": 200.409
+    },
+    {
+     "text": "buy.",
+     "start": 200.529,
+     "end": 200.689
+    },
+    {
+     "text": "Every",
+     "start": 201.069,
+     "end": 201.269
+    },
+    {
+     "text": "step",
+     "start": 201.269,
+     "end": 201.489
+    },
+    {
+     "text": "you",
+     "start": 201.489,
+     "end": 201.649
+    },
+    {
+     "text": "skip",
+     "start": 201.649,
+     "end": 201.849
+    },
+    {
+     "text": "is",
+     "start": 201.849,
+     "end": 202.109
+    },
+    {
+     "text": "a",
+     "start": 202.109,
+     "end": 202.209
+    },
+    {
+     "text": "little",
+     "start": 202.209,
+     "end": 202.369
+    },
+    {
+     "text": "less",
+     "start": 202.369,
+     "end": 202.589
+    },
+    {
+     "text": "pain.",
+     "start": 202.589,
+     "end": 202.869
+    }
+   ]
+  },
+  {
+   "id": "n35",
+   "text": "Casinos figured this out decades ago. That's why you don't bet with dollars at a casino. You bet with plastic chips. Chips don't feel like money. So you lose more.",
+   "start": 203.60385416666668,
+   "end": 211.8438541666667,
+   "words": [
+    {
+     "text": "Casinos",
+     "start": 203.604,
+     "end": 203.864
+    },
+    {
+     "text": "figured",
+     "start": 203.864,
+     "end": 204.144
+    },
+    {
+     "text": "this",
+     "start": 204.144,
+     "end": 204.424
+    },
+    {
+     "text": "out",
+     "start": 204.424,
+     "end": 204.544
+    },
+    {
+     "text": "decades",
+     "start": 204.544,
+     "end": 204.784
+    },
+    {
+     "text": "ago.",
+     "start": 204.784,
+     "end": 205.124
+    },
+    {
+     "text": "That's",
+     "start": 205.764,
+     "end": 205.904
+    },
+    {
+     "text": "why",
+     "start": 205.904,
+     "end": 206.004
+    },
+    {
+     "text": "you",
+     "start": 206.004,
+     "end": 206.104
+    },
+    {
+     "text": "don't",
+     "start": 206.104,
+     "end": 206.324
+    },
+    {
+     "text": "bet",
+     "start": 206.324,
+     "end": 206.464
+    },
+    {
+     "text": "with",
+     "start": 206.464,
+     "end": 206.644
+    },
+    {
+     "text": "dollars",
+     "start": 206.644,
+     "end": 206.904
+    },
+    {
+     "text": "at",
+     "start": 206.904,
+     "end": 207.124
+    },
+    {
+     "text": "a",
+     "start": 207.124,
+     "end": 207.184
+    },
+    {
+     "text": "casino.",
+     "start": 207.184,
+     "end": 207.404
+    },
+    {
+     "text": "You",
+     "start": 208.084,
+     "end": 208.124
+    },
+    {
+     "text": "bet",
+     "start": 208.124,
+     "end": 208.264
+    },
+    {
+     "text": "with",
+     "start": 208.264,
+     "end": 208.424
+    },
+    {
+     "text": "plastic",
+     "start": 208.424,
+     "end": 208.644
+    },
+    {
+     "text": "chips.",
+     "start": 208.644,
+     "end": 209.004
+    },
+    {
+     "text": "Chips",
+     "start": 209.724,
+     "end": 209.864
+    },
+    {
+     "text": "don't",
+     "start": 209.864,
+     "end": 210.204
+    },
+    {
+     "text": "feel",
+     "start": 210.204,
+     "end": 210.364
+    },
+    {
+     "text": "like",
+     "start": 210.364,
+     "end": 210.544
+    },
+    {
+     "text": "money.",
+     "start": 210.544,
+     "end": 210.804
+    },
+    {
+     "text": "So",
+     "start": 211.144,
+     "end": 211.304
+    },
+    {
+     "text": "you",
+     "start": 211.304,
+     "end": 211.444
+    },
+    {
+     "text": "lose",
+     "start": 211.444,
+     "end": 211.604
+    },
+    {
+     "text": "more.",
+     "start": 211.604,
+     "end": 211.844
+    }
+   ]
+  },
+  {
+   "id": "n36",
+   "text": "Casinos when they invented chips.",
+   "start": 212.60254166666667,
+   "end": 213.94254166666667,
+   "words": [
+    {
+     "text": "Casinos",
+     "start": 212.603,
+     "end": 212.863
+    },
+    {
+     "text": "when",
+     "start": 212.863,
+     "end": 213.223
+    },
+    {
+     "text": "they",
+     "start": 213.223,
+     "end": 213.343
+    },
+    {
+     "text": "invented",
+     "start": 213.343,
+     "end": 213.563
+    },
+    {
+     "text": "chips.",
+     "start": 213.563,
+     "end": 213.943
+    }
+   ]
+  },
+  {
+   "id": "n9",
+   "text": "It's like taking the brakes out of a car because they slow you down. Technically yes. That's what brakes are for.",
+   "start": 214.75214583333334,
+   "end": 219.59214583333335,
+   "words": [
+    {
+     "text": "It's",
+     "start": 214.752,
+     "end": 214.932
+    },
+    {
+     "text": "like",
+     "start": 214.932,
+     "end": 215.012
+    },
+    {
+     "text": "taking",
+     "start": 215.012,
+     "end": 215.312
+    },
+    {
+     "text": "the",
+     "start": 215.312,
+     "end": 215.432
+    },
+    {
+     "text": "brakes",
+     "start": 215.432,
+     "end": 215.592
+    },
+    {
+     "text": "out",
+     "start": 215.592,
+     "end": 215.792
+    },
+    {
+     "text": "of",
+     "start": 215.792,
+     "end": 215.912
+    },
+    {
+     "text": "a",
+     "start": 215.912,
+     "end": 215.952
+    },
+    {
+     "text": "car",
+     "start": 215.952,
+     "end": 216.092
+    },
+    {
+     "text": "because",
+     "start": 216.092,
+     "end": 216.332
+    },
+    {
+     "text": "they",
+     "start": 216.332,
+     "end": 216.552
+    },
+    {
+     "text": "slow",
+     "start": 216.552,
+     "end": 216.732
+    },
+    {
+     "text": "you",
+     "start": 216.732,
+     "end": 216.912
+    },
+    {
+     "text": "down.",
+     "start": 216.912,
+     "end": 217.092
+    },
+    {
+     "text": "Technically",
+     "start": 217.692,
+     "end": 217.932
+    },
+    {
+     "text": "yes.",
+     "start": 218.112,
+     "end": 218.172
+    },
+    {
+     "text": "That's",
+     "start": 218.712,
+     "end": 218.992
+    },
+    {
+     "text": "what",
+     "start": 218.992,
+     "end": 219.072
+    },
+    {
+     "text": "brakes",
+     "start": 219.072,
+     "end": 219.232
+    },
+    {
+     "text": "are",
+     "start": 219.232,
+     "end": 219.432
+    },
+    {
+     "text": "for.",
+     "start": 219.432,
+     "end": 219.592
+    }
+   ]
+  },
+  {
+   "id": "c4a",
+   "text": "And this is where it gets dark. Because companies know all of this. They study it. They hire people whose whole job is to talk to your Grug brain.",
+   "start": 222.49433333333334,
+   "end": 228.45433333333335,
+   "words": [
+    {
+     "text": "And",
+     "start": 222.494,
+     "end": 222.614
+    },
+    {
+     "text": "this",
+     "start": 222.614,
+     "end": 222.774
+    },
+    {
+     "text": "is",
+     "start": 222.774,
+     "end": 222.874
+    },
+    {
+     "text": "where",
+     "start": 222.874,
+     "end": 223.054
+    },
+    {
+     "text": "it",
+     "start": 223.054,
+     "end": 223.174
+    },
+    {
+     "text": "gets",
+     "start": 223.174,
+     "end": 223.294
+    },
+    {
+     "text": "dark.",
+     "start": 223.294,
+     "end": 223.534
+    },
+    {
+     "text": "Because",
+     "start": 224.254,
+     "end": 224.254
+    },
+    {
+     "text": "companies",
+     "start": 224.254,
+     "end": 224.514
+    },
+    {
+     "text": "know",
+     "start": 224.514,
+     "end": 224.794
+    },
+    {
+     "text": "all",
+     "start": 224.794,
+     "end": 224.974
+    },
+    {
+     "text": "of",
+     "start": 224.974,
+     "end": 225.054
+    },
+    {
+     "text": "this.",
+     "start": 225.054,
+     "end": 225.194
+    },
+    {
+     "text": "They",
+     "start": 225.514,
+     "end": 225.594
+    },
+    {
+     "text": "study",
+     "start": 225.594,
+     "end": 225.814
+    },
+    {
+     "text": "it.",
+     "start": 225.814,
+     "end": 226.014
+    },
+    {
+     "text": "They",
+     "start": 226.354,
+     "end": 226.434
+    },
+    {
+     "text": "hire",
+     "start": 226.434,
+     "end": 226.594
+    },
+    {
+     "text": "people",
+     "start": 226.594,
+     "end": 226.834
+    },
+    {
+     "text": "whose",
+     "start": 226.834,
+     "end": 227.054
+    },
+    {
+     "text": "whole",
+     "start": 227.054,
+     "end": 227.214
+    },
+    {
+     "text": "job",
+     "start": 227.214,
+     "end": 227.454
+    },
+    {
+     "text": "is",
+     "start": 227.454,
+     "end": 227.614
+    },
+    {
+     "text": "to",
+     "start": 227.614,
+     "end": 227.714
+    },
+    {
+     "text": "talk",
+     "start": 227.714,
+     "end": 227.854
+    },
+    {
+     "text": "to",
+     "start": 227.854,
+     "end": 227.994
+    },
+    {
+     "text": "your",
+     "start": 227.994,
+     "end": 228.074
+    },
+    {
+     "text": "Grug",
+     "start": 228.074,
+     "end": 228.294
+    },
+    {
+     "text": "brain.",
+     "start": 228.294,
+     "end": 228.454
+    }
+   ]
+  },
+  {
+   "id": "c4b",
+   "text": "Only three left in stock. That's Grug hearing there are only three berries left and a bear is coming.",
+   "start": 229.10302083333335,
+   "end": 233.76302083333334,
+   "words": [
+    {
+     "text": "Only",
+     "start": 229.103,
+     "end": 229.303
+    },
+    {
+     "text": "three",
+     "start": 229.303,
+     "end": 229.483
+    },
+    {
+     "text": "left",
+     "start": 229.483,
+     "end": 229.723
+    },
+    {
+     "text": "in",
+     "start": 229.723,
+     "end": 229.903
+    },
+    {
+     "text": "stock.",
+     "start": 229.903,
+     "end": 230.203
+    },
+    {
+     "text": "That's",
+     "start": 230.703,
+     "end": 231.003
+    },
+    {
+     "text": "Grug",
+     "start": 231.003,
+     "end": 231.203
+    },
+    {
+     "text": "hearing",
+     "start": 231.203,
+     "end": 231.423
+    },
+    {
+     "text": "there",
+     "start": 231.683,
+     "end": 231.743
+    },
+    {
+     "text": "are",
+     "start": 231.743,
+     "end": 231.843
+    },
+    {
+     "text": "only",
+     "start": 231.843,
+     "end": 232.023
+    },
+    {
+     "text": "three",
+     "start": 232.023,
+     "end": 232.303
+    },
+    {
+     "text": "berries",
+     "start": 232.303,
+     "end": 232.483
+    },
+    {
+     "text": "left",
+     "start": 232.483,
+     "end": 232.843
+    },
+    {
+     "text": "and",
+     "start": 232.843,
+     "end": 233.143
+    },
+    {
+     "text": "a",
+     "start": 233.143,
+     "end": 233.243
+    },
+    {
+     "text": "bear",
+     "start": 233.243,
+     "end": 233.363
+    },
+    {
+     "text": "is",
+     "start": 233.363,
+     "end": 233.523
+    },
+    {
+     "text": "coming.",
+     "start": 233.523,
+     "end": 233.763
+    }
+   ]
+  },
+  {
+   "id": "c4c",
+   "text": "Twelve people are looking at this right now. That's Grug seeing the whole tribe walking toward his bush.",
+   "start": 234.42802083333333,
+   "end": 238.38802083333334,
+   "words": [
+    {
+     "text": "Twelve",
+     "start": 234.428,
+     "end": 234.568
+    },
+    {
+     "text": "people",
+     "start": 234.568,
+     "end": 234.868
+    },
+    {
+     "text": "are",
+     "start": 234.868,
+     "end": 235.068
+    },
+    {
+     "text": "looking",
+     "start": 235.068,
+     "end": 235.268
+    },
+    {
+     "text": "at",
+     "start": 235.268,
+     "end": 235.448
+    },
+    {
+     "text": "this",
+     "start": 235.448,
+     "end": 235.588
+    },
+    {
+     "text": "right",
+     "start": 235.588,
+     "end": 235.768
+    },
+    {
+     "text": "now.",
+     "start": 235.768,
+     "end": 235.988
+    },
+    {
+     "text": "That's",
+     "start": 236.288,
+     "end": 236.488
+    },
+    {
+     "text": "Grug",
+     "start": 236.488,
+     "end": 236.688
+    },
+    {
+     "text": "seeing",
+     "start": 236.688,
+     "end": 236.888
+    },
+    {
+     "text": "the",
+     "start": 236.888,
+     "end": 237.068
+    },
+    {
+     "text": "whole",
+     "start": 237.068,
+     "end": 237.208
+    },
+    {
+     "text": "tribe",
+     "start": 237.208,
+     "end": 237.428
+    },
+    {
+     "text": "walking",
+     "start": 237.428,
+     "end": 237.788
+    },
+    {
+     "text": "toward",
+     "start": 237.788,
+     "end": 238.008
+    },
+    {
+     "text": "his",
+     "start": 238.008,
+     "end": 238.188
+    },
+    {
+     "text": "bush.",
+     "start": 238.188,
+     "end": 238.388
+    }
+   ]
+  },
+  {
+   "id": "c4d",
+   "text": "Offer ends in nine minutes. A countdown timer. Grug can't think when something is running out. So he grabs.",
+   "start": 239.09254166666668,
+   "end": 244.31254166666668,
+   "words": [
+    {
+     "text": "Offer",
+     "start": 239.093,
+     "end": 239.333
+    },
+    {
+     "text": "ends",
+     "start": 239.333,
+     "end": 239.593
+    },
+    {
+     "text": "in",
+     "start": 239.593,
+     "end": 239.773
+    },
+    {
+     "text": "nine",
+     "start": 239.773,
+     "end": 239.973
+    },
+    {
+     "text": "minutes.",
+     "start": 239.973,
+     "end": 240.253
+    },
+    {
+     "text": "A",
+     "start": 240.893,
+     "end": 240.933
+    },
+    {
+     "text": "countdown",
+     "start": 240.933,
+     "end": 241.073
+    },
+    {
+     "text": "timer.",
+     "start": 241.073,
+     "end": 241.613
+    },
+    {
+     "text": "Grug",
+     "start": 241.993,
+     "end": 242.073
+    },
+    {
+     "text": "can't",
+     "start": 242.073,
+     "end": 242.373
+    },
+    {
+     "text": "think",
+     "start": 242.373,
+     "end": 242.513
+    },
+    {
+     "text": "when",
+     "start": 242.513,
+     "end": 242.713
+    },
+    {
+     "text": "something",
+     "start": 242.713,
+     "end": 242.933
+    },
+    {
+     "text": "is",
+     "start": 242.933,
+     "end": 243.113
+    },
+    {
+     "text": "running",
+     "start": 243.113,
+     "end": 243.253
+    },
+    {
+     "text": "out.",
+     "start": 243.253,
+     "end": 243.573
+    },
+    {
+     "text": "So",
+     "start": 243.873,
+     "end": 243.993
+    },
+    {
+     "text": "he",
+     "start": 243.993,
+     "end": 244.133
+    },
+    {
+     "text": "grabs.",
+     "start": 244.133,
+     "end": 244.313
+    }
+   ]
+  },
+  {
+   "id": "n10",
+   "text": "Me buying something because a timer told me to.",
+   "start": 245.15439583333333,
+   "end": 247.09439583333332,
+   "words": [
+    {
+     "text": "Me",
+     "start": 245.154,
+     "end": 245.254
+    },
+    {
+     "text": "buying",
+     "start": 245.254,
+     "end": 245.474
+    },
+    {
+     "text": "something",
+     "start": 245.474,
+     "end": 245.734
+    },
+    {
+     "text": "because",
+     "start": 245.734,
+     "end": 246.174
+    },
+    {
+     "text": "a",
+     "start": 246.174,
+     "end": 246.294
+    },
+    {
+     "text": "timer",
+     "start": 246.294,
+     "end": 246.514
+    },
+    {
+     "text": "told",
+     "start": 246.514,
+     "end": 246.774
+    },
+    {
+     "text": "me",
+     "start": 246.774,
+     "end": 246.914
+    },
+    {
+     "text": "to.",
+     "start": 246.914,
+     "end": 247.094
+    }
+   ]
+  },
+  {
+   "id": "c4e",
+   "text": "And the free shipping if you spend fifteen more dollars? Grug spends twenty more dollars to save five. And feels like a genius.",
+   "start": 247.7423125,
+   "end": 252.9223125,
+   "words": [
+    {
+     "text": "And",
+     "start": 247.742,
+     "end": 247.822
+    },
+    {
+     "text": "the",
+     "start": 247.822,
+     "end": 247.902
+    },
+    {
+     "text": "free",
+     "start": 247.902,
+     "end": 248.022
+    },
+    {
+     "text": "shipping",
+     "start": 248.022,
+     "end": 248.202
+    },
+    {
+     "text": "if",
+     "start": 248.202,
+     "end": 248.542
+    },
+    {
+     "text": "you",
+     "start": 248.542,
+     "end": 248.622
+    },
+    {
+     "text": "spend",
+     "start": 248.622,
+     "end": 248.782
+    },
+    {
+     "text": "fifteen",
+     "start": 248.782,
+     "end": 249.122
+    },
+    {
+     "text": "more",
+     "start": 249.122,
+     "end": 249.322
+    },
+    {
+     "text": "dollars?",
+     "start": 249.322,
+     "end": 249.802
+    },
+    {
+     "text": "Grug",
+     "start": 250.222,
+     "end": 250.362
+    },
+    {
+     "text": "spends",
+     "start": 250.362,
+     "end": 250.602
+    },
+    {
+     "text": "twenty",
+     "start": 250.602,
+     "end": 250.822
+    },
+    {
+     "text": "more",
+     "start": 250.822,
+     "end": 251.022
+    },
+    {
+     "text": "dollars",
+     "start": 251.022,
+     "end": 251.342
+    },
+    {
+     "text": "to",
+     "start": 251.342,
+     "end": 251.502
+    },
+    {
+     "text": "save",
+     "start": 251.502,
+     "end": 251.642
+    },
+    {
+     "text": "five.",
+     "start": 251.642,
+     "end": 251.982
+    },
+    {
+     "text": "And",
+     "start": 251.982,
+     "end": 252.302
+    },
+    {
+     "text": "feels",
+     "start": 252.302,
+     "end": 252.442
+    },
+    {
+     "text": "like",
+     "start": 252.442,
+     "end": 252.662
+    },
+    {
+     "text": "a",
+     "start": 252.662,
+     "end": 252.722
+    },
+    {
+     "text": "genius.",
+     "start": 252.722,
+     "end": 252.922
+    }
+   ]
+  },
+  {
+   "id": "n37",
+   "text": "And buy now pay later? That's the dream. Grug gets the berry today and pays in little pieces later. And later Grug isn't Grug's problem.",
+   "start": 253.7265,
+   "end": 260.6065,
+   "words": [
+    {
+     "text": "And",
+     "start": 253.726,
+     "end": 253.866
+    },
+    {
+     "text": "buy",
+     "start": 253.866,
+     "end": 254.026
+    },
+    {
+     "text": "now",
+     "start": 254.026,
+     "end": 254.286
+    },
+    {
+     "text": "pay",
+     "start": 254.286,
+     "end": 254.526
+    },
+    {
+     "text": "later?",
+     "start": 254.526,
+     "end": 254.786
+    },
+    {
+     "text": "That's",
+     "start": 255.326,
+     "end": 255.786
+    },
+    {
+     "text": "the",
+     "start": 255.786,
+     "end": 255.866
+    },
+    {
+     "text": "dream.",
+     "start": 255.866,
+     "end": 256.087
+    },
+    {
+     "text": "Grug",
+     "start": 256.087,
+     "end": 256.587
+    },
+    {
+     "text": "gets",
+     "start": 256.587,
+     "end": 256.767
+    },
+    {
+     "text": "the",
+     "start": 256.767,
+     "end": 256.887
+    },
+    {
+     "text": "berry",
+     "start": 256.887,
+     "end": 257.087
+    },
+    {
+     "text": "today",
+     "start": 257.087,
+     "end": 257.366
+    },
+    {
+     "text": "and",
+     "start": 257.366,
+     "end": 257.587
+    },
+    {
+     "text": "pays",
+     "start": 257.587,
+     "end": 257.767
+    },
+    {
+     "text": "in",
+     "start": 257.767,
+     "end": 257.947
+    },
+    {
+     "text": "little",
+     "start": 257.947,
+     "end": 258.126
+    },
+    {
+     "text": "pieces",
+     "start": 258.126,
+     "end": 258.366
+    },
+    {
+     "text": "later.",
+     "start": 258.366,
+     "end": 258.726
+    },
+    {
+     "text": "And",
+     "start": 259.226,
+     "end": 259.286
+    },
+    {
+     "text": "later",
+     "start": 259.286,
+     "end": 259.486
+    },
+    {
+     "text": "Grug",
+     "start": 259.486,
+     "end": 259.887
+    },
+    {
+     "text": "isn't",
+     "start": 259.887,
+     "end": 260.147
+    },
+    {
+     "text": "Grug's",
+     "start": 260.147,
+     "end": 260.387
+    },
+    {
+     "text": "problem.",
+     "start": 260.387,
+     "end": 260.606
+    }
+   ]
+  },
+  {
+   "id": "n11",
+   "text": "Then there's the little red dot on your apps. The notification. Your brain can't stand it. It's like an itch you have to scratch.",
+   "start": 261.382625,
+   "end": 266.662625,
+   "words": [
+    {
+     "text": "Then",
+     "start": 261.383,
+     "end": 261.563
+    },
+    {
+     "text": "there's",
+     "start": 261.563,
+     "end": 261.863
+    },
+    {
+     "text": "the",
+     "start": 261.863,
+     "end": 261.983
+    },
+    {
+     "text": "little",
+     "start": 261.983,
+     "end": 262.143
+    },
+    {
+     "text": "red",
+     "start": 262.143,
+     "end": 262.363
+    },
+    {
+     "text": "dot",
+     "start": 262.363,
+     "end": 262.543
+    },
+    {
+     "text": "on",
+     "start": 262.543,
+     "end": 262.743
+    },
+    {
+     "text": "your",
+     "start": 262.743,
+     "end": 262.843
+    },
+    {
+     "text": "apps.",
+     "start": 262.843,
+     "end": 263.063
+    },
+    {
+     "text": "The",
+     "start": 263.543,
+     "end": 263.563
+    },
+    {
+     "text": "notification.",
+     "start": 263.563,
+     "end": 263.863
+    },
+    {
+     "text": "Your",
+     "start": 264.303,
+     "end": 264.383
+    },
+    {
+     "text": "brain",
+     "start": 264.383,
+     "end": 264.563
+    },
+    {
+     "text": "can't",
+     "start": 264.563,
+     "end": 264.863
+    },
+    {
+     "text": "stand",
+     "start": 264.863,
+     "end": 265.003
+    },
+    {
+     "text": "it.",
+     "start": 265.003,
+     "end": 265.203
+    },
+    {
+     "text": "It's",
+     "start": 265.623,
+     "end": 265.803
+    },
+    {
+     "text": "like",
+     "start": 265.803,
+     "end": 265.903
+    },
+    {
+     "text": "an",
+     "start": 265.903,
+     "end": 265.983
+    },
+    {
+     "text": "itch",
+     "start": 265.983,
+     "end": 266.123
+    },
+    {
+     "text": "you",
+     "start": 266.123,
+     "end": 266.303
+    },
+    {
+     "text": "have",
+     "start": 266.303,
+     "end": 266.383
+    },
+    {
+     "text": "to",
+     "start": 266.383,
+     "end": 266.503
+    },
+    {
+     "text": "scratch.",
+     "start": 266.503,
+     "end": 266.663
+    }
+   ]
+  },
+  {
+   "id": "c4f",
+   "text": "And the scroll that never ends. There's no bottom. Grug just keeps walking through the forest finding more and more berries.",
+   "start": 267.4375416666667,
+   "end": 272.31754166666667,
+   "words": [
+    {
+     "text": "And",
+     "start": 267.438,
+     "end": 267.578
+    },
+    {
+     "text": "the",
+     "start": 267.578,
+     "end": 267.678
+    },
+    {
+     "text": "scroll",
+     "start": 267.678,
+     "end": 267.858
+    },
+    {
+     "text": "that",
+     "start": 267.858,
+     "end": 268.078
+    },
+    {
+     "text": "never",
+     "start": 268.078,
+     "end": 268.238
+    },
+    {
+     "text": "ends.",
+     "start": 268.238,
+     "end": 268.618
+    },
+    {
+     "text": "There's",
+     "start": 268.938,
+     "end": 269.178
+    },
+    {
+     "text": "no",
+     "start": 269.178,
+     "end": 269.278
+    },
+    {
+     "text": "bottom.",
+     "start": 269.278,
+     "end": 269.538
+    },
+    {
+     "text": "Grug",
+     "start": 270.038,
+     "end": 270.158
+    },
+    {
+     "text": "just",
+     "start": 270.158,
+     "end": 270.318
+    },
+    {
+     "text": "keeps",
+     "start": 270.318,
+     "end": 270.478
+    },
+    {
+     "text": "walking",
+     "start": 270.478,
+     "end": 270.738
+    },
+    {
+     "text": "through",
+     "start": 270.738,
+     "end": 270.998
+    },
+    {
+     "text": "the",
+     "start": 270.998,
+     "end": 271.098
+    },
+    {
+     "text": "forest",
+     "start": 271.098,
+     "end": 271.298
+    },
+    {
+     "text": "finding",
+     "start": 271.298,
+     "end": 271.618
+    },
+    {
+     "text": "more",
+     "start": 271.618,
+     "end": 271.918
+    },
+    {
+     "text": "and",
+     "start": 271.918,
+     "end": 272.018
+    },
+    {
+     "text": "more",
+     "start": 272.018,
+     "end": 272.158
+    },
+    {
+     "text": "berries.",
+     "start": 272.158,
+     "end": 272.318
+    }
+   ]
+  },
+  {
+   "id": "n38",
+   "text": "And the ads follow you. You looked at one pair of shoes once. Now those shoes are on every website you visit for a week. Like a berry bush that walks behind you.",
+   "start": 273.1627291666667,
+   "end": 280.42272916666667,
+   "words": [
+    {
+     "text": "And",
+     "start": 273.163,
+     "end": 273.283
+    },
+    {
+     "text": "the",
+     "start": 273.283,
+     "end": 273.383
+    },
+    {
+     "text": "ads",
+     "start": 273.383,
+     "end": 273.543
+    },
+    {
+     "text": "follow",
+     "start": 273.543,
+     "end": 273.843
+    },
+    {
+     "text": "you.",
+     "start": 273.843,
+     "end": 274.123
+    },
+    {
+     "text": "You",
+     "start": 274.483,
+     "end": 274.603
+    },
+    {
+     "text": "looked",
+     "start": 274.603,
+     "end": 274.723
+    },
+    {
+     "text": "at",
+     "start": 274.723,
+     "end": 274.883
+    },
+    {
+     "text": "one",
+     "start": 274.883,
+     "end": 275.003
+    },
+    {
+     "text": "pair",
+     "start": 275.003,
+     "end": 275.223
+    },
+    {
+     "text": "of",
+     "start": 275.223,
+     "end": 275.323
+    },
+    {
+     "text": "shoes",
+     "start": 275.323,
+     "end": 275.463
+    },
+    {
+     "text": "once.",
+     "start": 275.463,
+     "end": 275.723
+    },
+    {
+     "text": "Now",
+     "start": 276.183,
+     "end": 276.203
+    },
+    {
+     "text": "those",
+     "start": 276.203,
+     "end": 276.383
+    },
+    {
+     "text": "shoes",
+     "start": 276.383,
+     "end": 276.643
+    },
+    {
+     "text": "are",
+     "start": 276.643,
+     "end": 276.923
+    },
+    {
+     "text": "on",
+     "start": 276.923,
+     "end": 277.023
+    },
+    {
+     "text": "every",
+     "start": 277.023,
+     "end": 277.223
+    },
+    {
+     "text": "website",
+     "start": 277.223,
+     "end": 277.583
+    },
+    {
+     "text": "you",
+     "start": 277.583,
+     "end": 277.783
+    },
+    {
+     "text": "visit",
+     "start": 277.783,
+     "end": 277.963
+    },
+    {
+     "text": "for",
+     "start": 277.963,
+     "end": 278.223
+    },
+    {
+     "text": "a",
+     "start": 278.223,
+     "end": 278.343
+    },
+    {
+     "text": "week.",
+     "start": 278.343,
+     "end": 278.503
+    },
+    {
+     "text": "Like",
+     "start": 278.863,
+     "end": 279.023
+    },
+    {
+     "text": "a",
+     "start": 279.023,
+     "end": 279.123
+    },
+    {
+     "text": "berry",
+     "start": 279.123,
+     "end": 279.323
+    },
+    {
+     "text": "bush",
+     "start": 279.323,
+     "end": 279.503
+    },
+    {
+     "text": "that",
+     "start": 279.503,
+     "end": 279.703
+    },
+    {
+     "text": "walks",
+     "start": 279.703,
+     "end": 279.863
+    },
+    {
+     "text": "behind",
+     "start": 279.863,
+     "end": 280.103
+    },
+    {
+     "text": "you.",
+     "start": 280.103,
+     "end": 280.423
+    }
+   ]
+  },
+  {
+   "id": "n39",
+   "text": "The shoes I looked at once.",
+   "start": 281.03464583333334,
+   "end": 281.8746458333333,
+   "words": [
+    {
+     "text": "The",
+     "start": 281.035,
+     "end": 281.115
+    },
+    {
+     "text": "shoes",
+     "start": 281.115,
+     "end": 281.195
+    },
+    {
+     "text": "I",
+     "start": 281.195,
+     "end": 281.375
+    },
+    {
+     "text": "looked",
+     "start": 281.375,
+     "end": 281.495
+    },
+    {
+     "text": "at",
+     "start": 281.495,
+     "end": 281.655
+    },
+    {
+     "text": "once.",
+     "start": 281.655,
+     "end": 281.875
+    }
+   ]
+  },
+  {
+   "id": "n12",
+   "text": "Online shopping after midnight.",
+   "start": 282.648125,
+   "end": 283.948125,
+   "words": [
+    {
+     "text": "Online",
+     "start": 282.648,
+     "end": 282.848
+    },
+    {
+     "text": "shopping",
+     "start": 282.848,
+     "end": 283.248
+    },
+    {
+     "text": "after",
+     "start": 283.248,
+     "end": 283.708
+    },
+    {
+     "text": "midnight.",
+     "start": 283.708,
+     "end": 283.948
+    }
+   ]
+  },
+  {
+   "id": "c4g",
+   "text": "Here's the part that changed how I see myself. The marshmallow test. Kids get one marshmallow now or two if they wait. The story was the kids who waited became more successful.",
+   "start": 284.6254583333333,
+   "end": 292.10545833333333,
+   "words": [
+    {
+     "text": "Here's",
+     "start": 284.625,
+     "end": 284.785
+    },
+    {
+     "text": "the",
+     "start": 284.785,
+     "end": 284.865
+    },
+    {
+     "text": "part",
+     "start": 284.865,
+     "end": 285.025
+    },
+    {
+     "text": "that",
+     "start": 285.025,
+     "end": 285.185
+    },
+    {
+     "text": "changed",
+     "start": 285.185,
+     "end": 285.385
+    },
+    {
+     "text": "how",
+     "start": 285.385,
+     "end": 285.605
+    },
+    {
+     "text": "I",
+     "start": 285.605,
+     "end": 285.745
+    },
+    {
+     "text": "see",
+     "start": 285.745,
+     "end": 285.865
+    },
+    {
+     "text": "myself.",
+     "start": 285.865,
+     "end": 286.045
+    },
+    {
+     "text": "The",
+     "start": 286.625,
+     "end": 286.665
+    },
+    {
+     "text": "marshmallow",
+     "start": 286.665,
+     "end": 286.945
+    },
+    {
+     "text": "test.",
+     "start": 286.945,
+     "end": 287.325
+    },
+    {
+     "text": "Kids",
+     "start": 287.685,
+     "end": 287.845
+    },
+    {
+     "text": "get",
+     "start": 287.845,
+     "end": 287.985
+    },
+    {
+     "text": "one",
+     "start": 287.985,
+     "end": 288.145
+    },
+    {
+     "text": "marshmallow",
+     "start": 288.145,
+     "end": 288.505
+    },
+    {
+     "text": "now",
+     "start": 288.505,
+     "end": 288.785
+    },
+    {
+     "text": "or",
+     "start": 288.785,
+     "end": 289.045
+    },
+    {
+     "text": "two",
+     "start": 289.045,
+     "end": 289.185
+    },
+    {
+     "text": "if",
+     "start": 289.185,
+     "end": 289.345
+    },
+    {
+     "text": "they",
+     "start": 289.345,
+     "end": 289.465
+    },
+    {
+     "text": "wait.",
+     "start": 289.465,
+     "end": 289.645
+    },
+    {
+     "text": "The",
+     "start": 290.185,
+     "end": 290.285
+    },
+    {
+     "text": "story",
+     "start": 290.285,
+     "end": 290.445
+    },
+    {
+     "text": "was",
+     "start": 290.445,
+     "end": 290.665
+    },
+    {
+     "text": "the",
+     "start": 290.665,
+     "end": 290.765
+    },
+    {
+     "text": "kids",
+     "start": 290.765,
+     "end": 290.945
+    },
+    {
+     "text": "who",
+     "start": 290.945,
+     "end": 291.065
+    },
+    {
+     "text": "waited",
+     "start": 291.065,
+     "end": 291.225
+    },
+    {
+     "text": "became",
+     "start": 291.225,
+     "end": 291.525
+    },
+    {
+     "text": "more",
+     "start": 291.525,
+     "end": 291.785
+    },
+    {
+     "text": "successful.",
+     "start": 291.785,
+     "end": 292.105
+    }
+   ]
+  },
+  {
+   "id": "c4h",
+   "text": "But when scientists ran it again with way more kids a lot of that difference shrank. It had a lot to do with the kid's home. Kids who grew up unsure there'd be a second marshmallow took the first one.",
+   "start": 292.9012916666667,
+   "end": 301.74129166666665,
+   "words": [
+    {
+     "text": "But",
+     "start": 292.901,
+     "end": 293.021
+    },
+    {
+     "text": "when",
+     "start": 293.021,
+     "end": 293.121
+    },
+    {
+     "text": "scientists",
+     "start": 293.121,
+     "end": 293.501
+    },
+    {
+     "text": "ran",
+     "start": 293.501,
+     "end": 293.761
+    },
+    {
+     "text": "it",
+     "start": 293.761,
+     "end": 293.901
+    },
+    {
+     "text": "again",
+     "start": 293.901,
+     "end": 294.141
+    },
+    {
+     "text": "with",
+     "start": 294.141,
+     "end": 294.361
+    },
+    {
+     "text": "way",
+     "start": 294.361,
+     "end": 294.581
+    },
+    {
+     "text": "more",
+     "start": 294.581,
+     "end": 294.861
+    },
+    {
+     "text": "kids",
+     "start": 294.861,
+     "end": 295.141
+    },
+    {
+     "text": "a",
+     "start": 295.481,
+     "end": 295.521
+    },
+    {
+     "text": "lot",
+     "start": 295.521,
+     "end": 295.661
+    },
+    {
+     "text": "of",
+     "start": 295.661,
+     "end": 295.761
+    },
+    {
+     "text": "that",
+     "start": 295.761,
+     "end": 295.861
+    },
+    {
+     "text": "difference",
+     "start": 295.861,
+     "end": 296.101
+    },
+    {
+     "text": "shrank.",
+     "start": 296.101,
+     "end": 296.341
+    },
+    {
+     "text": "It",
+     "start": 297.041,
+     "end": 297.041
+    },
+    {
+     "text": "had",
+     "start": 297.041,
+     "end": 297.161
+    },
+    {
+     "text": "a",
+     "start": 297.161,
+     "end": 297.221
+    },
+    {
+     "text": "lot",
+     "start": 297.221,
+     "end": 297.381
+    },
+    {
+     "text": "to",
+     "start": 297.381,
+     "end": 297.521
+    },
+    {
+     "text": "do",
+     "start": 297.521,
+     "end": 297.641
+    },
+    {
+     "text": "with",
+     "start": 297.641,
+     "end": 297.761
+    },
+    {
+     "text": "the",
+     "start": 297.761,
+     "end": 297.821
+    },
+    {
+     "text": "kid's",
+     "start": 297.821,
+     "end": 298.001
+    },
+    {
+     "text": "home.",
+     "start": 298.001,
+     "end": 298.301
+    },
+    {
+     "text": "Kids",
+     "start": 299.081,
+     "end": 299.081
+    },
+    {
+     "text": "who",
+     "start": 299.081,
+     "end": 299.241
+    },
+    {
+     "text": "grew",
+     "start": 299.241,
+     "end": 299.381
+    },
+    {
+     "text": "up",
+     "start": 299.381,
+     "end": 299.481
+    },
+    {
+     "text": "unsure",
+     "start": 299.481,
+     "end": 299.761
+    },
+    {
+     "text": "there'd",
+     "start": 299.761,
+     "end": 300.081
+    },
+    {
+     "text": "be",
+     "start": 300.081,
+     "end": 300.201
+    },
+    {
+     "text": "a",
+     "start": 300.201,
+     "end": 300.281
+    },
+    {
+     "text": "second",
+     "start": 300.281,
+     "end": 300.461
+    },
+    {
+     "text": "marshmallow",
+     "start": 300.461,
+     "end": 300.961
+    },
+    {
+     "text": "took",
+     "start": 300.961,
+     "end": 301.181
+    },
+    {
+     "text": "the",
+     "start": 301.181,
+     "end": 301.301
+    },
+    {
+     "text": "first",
+     "start": 301.301,
+     "end": 301.501
+    },
+    {
+     "text": "one.",
+     "start": 301.501,
+     "end": 301.741
+    }
+   ]
+  },
+  {
+   "id": "n13",
+   "text": "That's not weakness. That's Grug logic. When tomorrow feels shaky your brain grabs today. And money stress makes tomorrow feel very shaky.",
+   "start": 302.38910416666664,
+   "end": 308.58910416666663,
+   "words": [
+    {
+     "text": "That's",
+     "start": 302.389,
+     "end": 302.629
+    },
+    {
+     "text": "not",
+     "start": 302.629,
+     "end": 302.729
+    },
+    {
+     "text": "weakness.",
+     "start": 302.729,
+     "end": 302.889
+    },
+    {
+     "text": "That's",
+     "start": 303.549,
+     "end": 303.729
+    },
+    {
+     "text": "Grug",
+     "start": 303.729,
+     "end": 303.849
+    },
+    {
+     "text": "logic.",
+     "start": 303.849,
+     "end": 304.109
+    },
+    {
+     "text": "When",
+     "start": 304.869,
+     "end": 304.889
+    },
+    {
+     "text": "tomorrow",
+     "start": 304.889,
+     "end": 305.049
+    },
+    {
+     "text": "feels",
+     "start": 305.049,
+     "end": 305.409
+    },
+    {
+     "text": "shaky",
+     "start": 305.409,
+     "end": 305.609
+    },
+    {
+     "text": "your",
+     "start": 305.769,
+     "end": 305.829
+    },
+    {
+     "text": "brain",
+     "start": 305.829,
+     "end": 305.989
+    },
+    {
+     "text": "grabs",
+     "start": 305.989,
+     "end": 306.189
+    },
+    {
+     "text": "today.",
+     "start": 306.189,
+     "end": 306.489
+    },
+    {
+     "text": "And",
+     "start": 306.889,
+     "end": 306.949
+    },
+    {
+     "text": "money",
+     "start": 306.949,
+     "end": 307.069
+    },
+    {
+     "text": "stress",
+     "start": 307.069,
+     "end": 307.329
+    },
+    {
+     "text": "makes",
+     "start": 307.329,
+     "end": 307.549
+    },
+    {
+     "text": "tomorrow",
+     "start": 307.549,
+     "end": 307.769
+    },
+    {
+     "text": "feel",
+     "start": 307.769,
+     "end": 308.129
+    },
+    {
+     "text": "very",
+     "start": 308.129,
+     "end": 308.289
+    },
+    {
+     "text": "shaky.",
+     "start": 308.289,
+     "end": 308.589
+    }
+   ]
+  },
+  {
+   "id": "n14",
+   "text": "So if you've ever felt like a failure because you can't save. You're not broken. You're running very old software in a world built to hack it.",
+   "start": 309.47139583333336,
+   "end": 315.59139583333337,
+   "words": [
+    {
+     "text": "So",
+     "start": 309.471,
+     "end": 309.591
+    },
+    {
+     "text": "if",
+     "start": 309.591,
+     "end": 309.691
+    },
+    {
+     "text": "you've",
+     "start": 309.691,
+     "end": 309.851
+    },
+    {
+     "text": "ever",
+     "start": 309.851,
+     "end": 310.051
+    },
+    {
+     "text": "felt",
+     "start": 310.051,
+     "end": 310.271
+    },
+    {
+     "text": "like",
+     "start": 310.271,
+     "end": 310.431
+    },
+    {
+     "text": "a",
+     "start": 310.431,
+     "end": 310.511
+    },
+    {
+     "text": "failure",
+     "start": 310.511,
+     "end": 310.731
+    },
+    {
+     "text": "because",
+     "start": 310.731,
+     "end": 311.091
+    },
+    {
+     "text": "you",
+     "start": 311.091,
+     "end": 311.251
+    },
+    {
+     "text": "can't",
+     "start": 311.251,
+     "end": 311.531
+    },
+    {
+     "text": "save.",
+     "start": 311.531,
+     "end": 311.711
+    },
+    {
+     "text": "You're",
+     "start": 312.131,
+     "end": 312.231
+    },
+    {
+     "text": "not",
+     "start": 312.231,
+     "end": 312.371
+    },
+    {
+     "text": "broken.",
+     "start": 312.371,
+     "end": 312.631
+    },
+    {
+     "text": "You're",
+     "start": 313.291,
+     "end": 313.411
+    },
+    {
+     "text": "running",
+     "start": 313.411,
+     "end": 313.551
+    },
+    {
+     "text": "very",
+     "start": 313.551,
+     "end": 313.771
+    },
+    {
+     "text": "old",
+     "start": 313.771,
+     "end": 314.031
+    },
+    {
+     "text": "software",
+     "start": 314.031,
+     "end": 314.411
+    },
+    {
+     "text": "in",
+     "start": 314.411,
+     "end": 314.651
+    },
+    {
+     "text": "a",
+     "start": 314.651,
+     "end": 314.731
+    },
+    {
+     "text": "world",
+     "start": 314.731,
+     "end": 314.871
+    },
+    {
+     "text": "built",
+     "start": 314.871,
+     "end": 315.131
+    },
+    {
+     "text": "to",
+     "start": 315.131,
+     "end": 315.251
+    },
+    {
+     "text": "hack",
+     "start": 315.251,
+     "end": 315.411
+    },
+    {
+     "text": "it.",
+     "start": 315.411,
+     "end": 315.591
+    }
+   ]
+  },
+  {
+   "id": "n40",
+   "text": "And here's the thing nobody says. The people telling you to just have more discipline usually have a safety net. When you know there's a second marshmallow waiting is easy.",
+   "start": 316.268,
+   "end": 323.248,
+   "words": [
+    {
+     "text": "And",
+     "start": 316.268,
+     "end": 316.348
+    },
+    {
+     "text": "here's",
+     "start": 316.348,
+     "end": 316.588
+    },
+    {
+     "text": "the",
+     "start": 316.588,
+     "end": 316.708
+    },
+    {
+     "text": "thing",
+     "start": 316.708,
+     "end": 316.868
+    },
+    {
+     "text": "nobody",
+     "start": 316.868,
+     "end": 317.068
+    },
+    {
+     "text": "says.",
+     "start": 317.068,
+     "end": 317.448
+    },
+    {
+     "text": "The",
+     "start": 317.988,
+     "end": 318.048
+    },
+    {
+     "text": "people",
+     "start": 318.048,
+     "end": 318.208
+    },
+    {
+     "text": "telling",
+     "start": 318.208,
+     "end": 318.528
+    },
+    {
+     "text": "you",
+     "start": 318.528,
+     "end": 318.748
+    },
+    {
+     "text": "to",
+     "start": 318.748,
+     "end": 318.888
+    },
+    {
+     "text": "just",
+     "start": 318.888,
+     "end": 319.028
+    },
+    {
+     "text": "have",
+     "start": 319.028,
+     "end": 319.168
+    },
+    {
+     "text": "more",
+     "start": 319.168,
+     "end": 319.308
+    },
+    {
+     "text": "discipline",
+     "start": 319.308,
+     "end": 319.648
+    },
+    {
+     "text": "usually",
+     "start": 319.648,
+     "end": 320.128
+    },
+    {
+     "text": "have",
+     "start": 320.128,
+     "end": 320.468
+    },
+    {
+     "text": "a",
+     "start": 320.468,
+     "end": 320.548
+    },
+    {
+     "text": "safety",
+     "start": 320.548,
+     "end": 320.748
+    },
+    {
+     "text": "net.",
+     "start": 320.748,
+     "end": 321.028
+    },
+    {
+     "text": "When",
+     "start": 321.028,
+     "end": 321.488
+    },
+    {
+     "text": "you",
+     "start": 321.488,
+     "end": 321.608
+    },
+    {
+     "text": "know",
+     "start": 321.608,
+     "end": 321.748
+    },
+    {
+     "text": "there's",
+     "start": 321.748,
+     "end": 321.948
+    },
+    {
+     "text": "a",
+     "start": 321.948,
+     "end": 322.028
+    },
+    {
+     "text": "second",
+     "start": 322.028,
+     "end": 322.208
+    },
+    {
+     "text": "marshmallow",
+     "start": 322.208,
+     "end": 322.608
+    },
+    {
+     "text": "waiting",
+     "start": 322.608,
+     "end": 322.848
+    },
+    {
+     "text": "is",
+     "start": 322.848,
+     "end": 323.068
+    },
+    {
+     "text": "easy.",
+     "start": 323.068,
+     "end": 323.248
+    }
+   ]
+  },
+  {
+   "id": "n15",
+   "text": "Me finding out it's not entirely my fault.",
+   "start": 323.98229166666664,
+   "end": 325.64229166666667,
+   "words": [
+    {
+     "text": "Me",
+     "start": 323.982,
+     "end": 324.082
+    },
+    {
+     "text": "finding",
+     "start": 324.082,
+     "end": 324.322
+    },
+    {
+     "text": "out",
+     "start": 324.322,
+     "end": 324.542
+    },
+    {
+     "text": "it's",
+     "start": 324.542,
+     "end": 324.722
+    },
+    {
+     "text": "not",
+     "start": 324.722,
+     "end": 324.842
+    },
+    {
+     "text": "entirely",
+     "start": 324.842,
+     "end": 325.142
+    },
+    {
+     "text": "my",
+     "start": 325.142,
+     "end": 325.382
+    },
+    {
+     "text": "fault.",
+     "start": 325.382,
+     "end": 325.642
+    }
+   ]
+  },
+  {
+   "id": "c4i",
+   "text": "Remember the gym video? January me signing a contract for future me. Same Grug. Different berry.",
+   "start": 326.2923125,
+   "end": 331.2723125,
+   "words": [
+    {
+     "text": "Remember",
+     "start": 326.292,
+     "end": 326.492
+    },
+    {
+     "text": "the",
+     "start": 326.492,
+     "end": 326.672
+    },
+    {
+     "text": "gym",
+     "start": 326.672,
+     "end": 326.832
+    },
+    {
+     "text": "video?",
+     "start": 326.832,
+     "end": 327.112
+    },
+    {
+     "text": "January",
+     "start": 327.532,
+     "end": 327.712
+    },
+    {
+     "text": "me",
+     "start": 327.712,
+     "end": 328.112
+    },
+    {
+     "text": "signing",
+     "start": 328.112,
+     "end": 328.432
+    },
+    {
+     "text": "a",
+     "start": 328.432,
+     "end": 328.612
+    },
+    {
+     "text": "contract",
+     "start": 328.612,
+     "end": 328.852
+    },
+    {
+     "text": "for",
+     "start": 328.852,
+     "end": 329.152
+    },
+    {
+     "text": "future",
+     "start": 329.152,
+     "end": 329.332
+    },
+    {
+     "text": "me.",
+     "start": 329.332,
+     "end": 329.592
+    },
+    {
+     "text": "Same",
+     "start": 329.892,
+     "end": 330.032
+    },
+    {
+     "text": "Grug.",
+     "start": 330.032,
+     "end": 330.312
+    },
+    {
+     "text": "Different",
+     "start": 330.772,
+     "end": 330.992
+    },
+    {
+     "text": "berry.",
+     "start": 330.992,
+     "end": 331.272
+    }
+   ]
+  },
+  {
+   "id": "c4j",
+   "text": "And now the big question. If willpower is fighting a million years of instinct how does anyone ever save money?",
+   "start": 331.87875,
+   "end": 337.29875000000004,
+   "words": [
+    {
+     "text": "And",
+     "start": 331.879,
+     "end": 331.999
+    },
+    {
+     "text": "now",
+     "start": 331.999,
+     "end": 332.259
+    },
+    {
+     "text": "the",
+     "start": 332.599,
+     "end": 332.679
+    },
+    {
+     "text": "big",
+     "start": 332.679,
+     "end": 332.799
+    },
+    {
+     "text": "question.",
+     "start": 332.799,
+     "end": 333.219
+    },
+    {
+     "text": "If",
+     "start": 333.959,
+     "end": 333.959
+    },
+    {
+     "text": "willpower",
+     "start": 333.959,
+     "end": 334.079
+    },
+    {
+     "text": "is",
+     "start": 334.079,
+     "end": 334.599
+    },
+    {
+     "text": "fighting",
+     "start": 334.599,
+     "end": 334.719
+    },
+    {
+     "text": "a",
+     "start": 334.719,
+     "end": 334.919
+    },
+    {
+     "text": "million",
+     "start": 334.919,
+     "end": 335.139
+    },
+    {
+     "text": "years",
+     "start": 335.139,
+     "end": 335.399
+    },
+    {
+     "text": "of",
+     "start": 335.399,
+     "end": 335.539
+    },
+    {
+     "text": "instinct",
+     "start": 335.539,
+     "end": 335.859
+    },
+    {
+     "text": "how",
+     "start": 336.039,
+     "end": 336.099
+    },
+    {
+     "text": "does",
+     "start": 336.099,
+     "end": 336.219
+    },
+    {
+     "text": "anyone",
+     "start": 336.219,
+     "end": 336.479
+    },
+    {
+     "text": "ever",
+     "start": 336.479,
+     "end": 336.719
+    },
+    {
+     "text": "save",
+     "start": 336.719,
+     "end": 337.019
+    },
+    {
+     "text": "money?",
+     "start": 337.019,
+     "end": 337.299
+    }
+   ]
+  },
+  {
+   "id": "c5a",
+   "text": "Here's what I learned. People who save money aren't stronger than you. They just stopped fighting Grug. They went around him. Quick reminder this is education and not advice.",
+   "start": 340.1331666666667,
+   "end": 347.3931666666667,
+   "words": [
+    {
+     "text": "Here's",
+     "start": 340.133,
+     "end": 340.293
+    },
+    {
+     "text": "what",
+     "start": 340.293,
+     "end": 340.373
+    },
+    {
+     "text": "I",
+     "start": 340.373,
+     "end": 340.473
+    },
+    {
+     "text": "learned.",
+     "start": 340.473,
+     "end": 340.693
+    },
+    {
+     "text": "People",
+     "start": 341.073,
+     "end": 341.193
+    },
+    {
+     "text": "who",
+     "start": 341.193,
+     "end": 341.353
+    },
+    {
+     "text": "save",
+     "start": 341.353,
+     "end": 341.573
+    },
+    {
+     "text": "money",
+     "start": 341.573,
+     "end": 341.793
+    },
+    {
+     "text": "aren't",
+     "start": 341.793,
+     "end": 342.113
+    },
+    {
+     "text": "stronger",
+     "start": 342.113,
+     "end": 342.353
+    },
+    {
+     "text": "than",
+     "start": 342.353,
+     "end": 342.593
+    },
+    {
+     "text": "you.",
+     "start": 342.593,
+     "end": 342.733
+    },
+    {
+     "text": "They",
+     "start": 343.013,
+     "end": 343.093
+    },
+    {
+     "text": "just",
+     "start": 343.093,
+     "end": 343.233
+    },
+    {
+     "text": "stopped",
+     "start": 343.233,
+     "end": 343.453
+    },
+    {
+     "text": "fighting",
+     "start": 343.453,
+     "end": 343.773
+    },
+    {
+     "text": "Grug.",
+     "start": 343.773,
+     "end": 344.053
+    },
+    {
+     "text": "They",
+     "start": 344.313,
+     "end": 344.413
+    },
+    {
+     "text": "went",
+     "start": 344.413,
+     "end": 344.513
+    },
+    {
+     "text": "around",
+     "start": 344.513,
+     "end": 344.753
+    },
+    {
+     "text": "him.",
+     "start": 344.753,
+     "end": 344.993
+    },
+    {
+     "text": "Quick",
+     "start": 345.653,
+     "end": 345.653
+    },
+    {
+     "text": "reminder",
+     "start": 345.653,
+     "end": 345.833
+    },
+    {
+     "text": "this",
+     "start": 346.173,
+     "end": 346.233
+    },
+    {
+     "text": "is",
+     "start": 346.233,
+     "end": 346.313
+    },
+    {
+     "text": "education",
+     "start": 346.313,
+     "end": 346.633
+    },
+    {
+     "text": "and",
+     "start": 346.633,
+     "end": 347.053
+    },
+    {
+     "text": "not",
+     "start": 347.053,
+     "end": 347.213
+    },
+    {
+     "text": "advice.",
+     "start": 347.213,
+     "end": 347.393
+    }
+   ]
+  },
+  {
+   "id": "c5b",
+   "text": "The trick is simple. Make the saving happen before Grug ever sees the money. Automatic. On payday. Without asking you.",
+   "start": 348.26177083333334,
+   "end": 354.38177083333335,
+   "words": [
+    {
+     "text": "The",
+     "start": 348.262,
+     "end": 348.342
+    },
+    {
+     "text": "trick",
+     "start": 348.342,
+     "end": 348.402
+    },
+    {
+     "text": "is",
+     "start": 348.402,
+     "end": 348.542
+    },
+    {
+     "text": "simple.",
+     "start": 348.542,
+     "end": 348.822
+    },
+    {
+     "text": "Make",
+     "start": 349.282,
+     "end": 349.442
+    },
+    {
+     "text": "the",
+     "start": 349.442,
+     "end": 349.602
+    },
+    {
+     "text": "saving",
+     "start": 349.602,
+     "end": 349.782
+    },
+    {
+     "text": "happen",
+     "start": 349.782,
+     "end": 350.122
+    },
+    {
+     "text": "before",
+     "start": 350.122,
+     "end": 350.502
+    },
+    {
+     "text": "Grug",
+     "start": 350.502,
+     "end": 350.802
+    },
+    {
+     "text": "ever",
+     "start": 350.802,
+     "end": 351.142
+    },
+    {
+     "text": "sees",
+     "start": 351.142,
+     "end": 351.322
+    },
+    {
+     "text": "the",
+     "start": 351.322,
+     "end": 351.502
+    },
+    {
+     "text": "money.",
+     "start": 351.502,
+     "end": 351.702
+    },
+    {
+     "text": "Automatic.",
+     "start": 352.102,
+     "end": 352.282
+    },
+    {
+     "text": "On",
+     "start": 352.742,
+     "end": 352.962
+    },
+    {
+     "text": "payday.",
+     "start": 352.962,
+     "end": 353.222
+    },
+    {
+     "text": "Without",
+     "start": 353.222,
+     "end": 353.722
+    },
+    {
+     "text": "asking",
+     "start": 353.722,
+     "end": 354.182
+    },
+    {
+     "text": "you.",
+     "start": 354.182,
+     "end": 354.382
+    }
+   ]
+  },
+  {
+   "id": "c5c",
+   "text": "Because Grug can only spend what he can see. If the money moves to savings or into an investment the second your paycheck lands Grug never even knows it existed.",
+   "start": 354.9802291666667,
+   "end": 363.1002291666667,
+   "words": [
+    {
+     "text": "Because",
+     "start": 354.98,
+     "end": 355.2
+    },
+    {
+     "text": "Grug",
+     "start": 355.2,
+     "end": 355.58
+    },
+    {
+     "text": "can",
+     "start": 355.58,
+     "end": 355.8
+    },
+    {
+     "text": "only",
+     "start": 355.8,
+     "end": 356.0
+    },
+    {
+     "text": "spend",
+     "start": 356.0,
+     "end": 356.3
+    },
+    {
+     "text": "what",
+     "start": 356.3,
+     "end": 356.62
+    },
+    {
+     "text": "he",
+     "start": 356.62,
+     "end": 356.74
+    },
+    {
+     "text": "can",
+     "start": 356.74,
+     "end": 356.86
+    },
+    {
+     "text": "see.",
+     "start": 356.86,
+     "end": 357.08
+    },
+    {
+     "text": "If",
+     "start": 357.82,
+     "end": 357.82
+    },
+    {
+     "text": "the",
+     "start": 357.82,
+     "end": 357.92
+    },
+    {
+     "text": "money",
+     "start": 357.92,
+     "end": 358.02
+    },
+    {
+     "text": "moves",
+     "start": 358.02,
+     "end": 358.3
+    },
+    {
+     "text": "to",
+     "start": 358.3,
+     "end": 358.44
+    },
+    {
+     "text": "savings",
+     "start": 358.44,
+     "end": 358.68
+    },
+    {
+     "text": "or",
+     "start": 358.68,
+     "end": 359.12
+    },
+    {
+     "text": "into",
+     "start": 359.12,
+     "end": 359.38
+    },
+    {
+     "text": "an",
+     "start": 359.38,
+     "end": 359.5
+    },
+    {
+     "text": "investment",
+     "start": 359.5,
+     "end": 359.76
+    },
+    {
+     "text": "the",
+     "start": 360.16,
+     "end": 360.2
+    },
+    {
+     "text": "second",
+     "start": 360.2,
+     "end": 360.42
+    },
+    {
+     "text": "your",
+     "start": 360.42,
+     "end": 360.6
+    },
+    {
+     "text": "paycheck",
+     "start": 360.6,
+     "end": 360.78
+    },
+    {
+     "text": "lands",
+     "start": 360.78,
+     "end": 361.2
+    },
+    {
+     "text": "Grug",
+     "start": 361.68,
+     "end": 362.04
+    },
+    {
+     "text": "never",
+     "start": 362.04,
+     "end": 362.26
+    },
+    {
+     "text": "even",
+     "start": 362.26,
+     "end": 362.46
+    },
+    {
+     "text": "knows",
+     "start": 362.46,
+     "end": 362.68
+    },
+    {
+     "text": "it",
+     "start": 362.68,
+     "end": 362.84
+    },
+    {
+     "text": "existed.",
+     "start": 362.84,
+     "end": 363.1
+    }
+   ]
+  },
+  {
+   "id": "n41",
+   "text": "Out of sight out of mind. Your savings account is the top shelf. Your checking account is the berry bush right next to the cave.",
+   "start": 363.856625,
+   "end": 369.656625,
+   "words": [
+    {
+     "text": "Out",
+     "start": 363.857,
+     "end": 363.977
+    },
+    {
+     "text": "of",
+     "start": 363.977,
+     "end": 364.057
+    },
+    {
+     "text": "sight",
+     "start": 364.057,
+     "end": 364.257
+    },
+    {
+     "text": "out",
+     "start": 364.397,
+     "end": 364.497
+    },
+    {
+     "text": "of",
+     "start": 364.497,
+     "end": 364.597
+    },
+    {
+     "text": "mind.",
+     "start": 364.597,
+     "end": 364.777
+    },
+    {
+     "text": "Your",
+     "start": 365.417,
+     "end": 365.457
+    },
+    {
+     "text": "savings",
+     "start": 365.457,
+     "end": 365.697
+    },
+    {
+     "text": "account",
+     "start": 365.697,
+     "end": 366.057
+    },
+    {
+     "text": "is",
+     "start": 366.057,
+     "end": 366.337
+    },
+    {
+     "text": "the",
+     "start": 366.337,
+     "end": 366.457
+    },
+    {
+     "text": "top",
+     "start": 366.457,
+     "end": 366.617
+    },
+    {
+     "text": "shelf.",
+     "start": 366.617,
+     "end": 366.817
+    },
+    {
+     "text": "Your",
+     "start": 367.357,
+     "end": 367.437
+    },
+    {
+     "text": "checking",
+     "start": 367.437,
+     "end": 367.637
+    },
+    {
+     "text": "account",
+     "start": 367.637,
+     "end": 368.057
+    },
+    {
+     "text": "is",
+     "start": 368.057,
+     "end": 368.237
+    },
+    {
+     "text": "the",
+     "start": 368.237,
+     "end": 368.337
+    },
+    {
+     "text": "berry",
+     "start": 368.337,
+     "end": 368.557
+    },
+    {
+     "text": "bush",
+     "start": 368.557,
+     "end": 368.737
+    },
+    {
+     "text": "right",
+     "start": 368.737,
+     "end": 368.997
+    },
+    {
+     "text": "next",
+     "start": 368.997,
+     "end": 369.257
+    },
+    {
+     "text": "to",
+     "start": 369.257,
+     "end": 369.397
+    },
+    {
+     "text": "the",
+     "start": 369.397,
+     "end": 369.457
+    },
+    {
+     "text": "cave.",
+     "start": 369.457,
+     "end": 369.657
+    }
+   ]
+  },
+  {
+   "id": "n16",
+   "text": "It's like hiding the cookies on the top shelf. You still could get them. But you'd need a chair. And Grug is lazy.",
+   "start": 370.2824166666667,
+   "end": 374.9624166666667,
+   "words": [
+    {
+     "text": "It's",
+     "start": 370.282,
+     "end": 370.442
+    },
+    {
+     "text": "like",
+     "start": 370.442,
+     "end": 370.522
+    },
+    {
+     "text": "hiding",
+     "start": 370.522,
+     "end": 370.762
+    },
+    {
+     "text": "the",
+     "start": 370.762,
+     "end": 370.922
+    },
+    {
+     "text": "cookies",
+     "start": 370.922,
+     "end": 371.102
+    },
+    {
+     "text": "on",
+     "start": 371.102,
+     "end": 371.302
+    },
+    {
+     "text": "the",
+     "start": 371.302,
+     "end": 371.382
+    },
+    {
+     "text": "top",
+     "start": 371.382,
+     "end": 371.542
+    },
+    {
+     "text": "shelf.",
+     "start": 371.542,
+     "end": 371.802
+    },
+    {
+     "text": "You",
+     "start": 372.222,
+     "end": 372.302
+    },
+    {
+     "text": "still",
+     "start": 372.302,
+     "end": 372.482
+    },
+    {
+     "text": "could",
+     "start": 372.482,
+     "end": 372.622
+    },
+    {
+     "text": "get",
+     "start": 372.622,
+     "end": 372.742
+    },
+    {
+     "text": "them.",
+     "start": 372.742,
+     "end": 372.962
+    },
+    {
+     "text": "But",
+     "start": 373.302,
+     "end": 373.402
+    },
+    {
+     "text": "you'd",
+     "start": 373.402,
+     "end": 373.562
+    },
+    {
+     "text": "need",
+     "start": 373.562,
+     "end": 373.622
+    },
+    {
+     "text": "a",
+     "start": 373.622,
+     "end": 373.722
+    },
+    {
+     "text": "chair.",
+     "start": 373.722,
+     "end": 373.942
+    },
+    {
+     "text": "And",
+     "start": 373.942,
+     "end": 374.422
+    },
+    {
+     "text": "Grug",
+     "start": 374.422,
+     "end": 374.642
+    },
+    {
+     "text": "is",
+     "start": 374.642,
+     "end": 374.742
+    },
+    {
+     "text": "lazy.",
+     "start": 374.742,
+     "end": 374.962
+    }
+   ]
+  },
+  {
+   "id": "n17",
+   "text": "Me setting up automatic savings once and never thinking about it again.",
+   "start": 375.6341458333333,
+   "end": 378.79414583333335,
+   "words": [
+    {
+     "text": "Me",
+     "start": 375.634,
+     "end": 375.734
+    },
+    {
+     "text": "setting",
+     "start": 375.734,
+     "end": 375.994
+    },
+    {
+     "text": "up",
+     "start": 375.994,
+     "end": 376.194
+    },
+    {
+     "text": "automatic",
+     "start": 376.194,
+     "end": 376.474
+    },
+    {
+     "text": "savings",
+     "start": 376.474,
+     "end": 376.894
+    },
+    {
+     "text": "once",
+     "start": 376.894,
+     "end": 377.294
+    },
+    {
+     "text": "and",
+     "start": 377.294,
+     "end": 377.674
+    },
+    {
+     "text": "never",
+     "start": 377.674,
+     "end": 377.854
+    },
+    {
+     "text": "thinking",
+     "start": 377.854,
+     "end": 378.114
+    },
+    {
+     "text": "about",
+     "start": 378.114,
+     "end": 378.434
+    },
+    {
+     "text": "it",
+     "start": 378.434,
+     "end": 378.574
+    },
+    {
+     "text": "again.",
+     "start": 378.574,
+     "end": 378.794
+    }
+   ]
+  },
+  {
+   "id": "c5d",
+   "text": "Two economists tested this with real workers. Instead of asking people to save more now they asked them to save more later. Every time they got a raise a little more went to savings.",
+   "start": 379.49845833333336,
+   "end": 388.25845833333335,
+   "words": [
+    {
+     "text": "Two",
+     "start": 379.498,
+     "end": 379.618
+    },
+    {
+     "text": "economists",
+     "start": 379.618,
+     "end": 380.038
+    },
+    {
+     "text": "tested",
+     "start": 380.038,
+     "end": 380.698
+    },
+    {
+     "text": "this",
+     "start": 380.698,
+     "end": 381.078
+    },
+    {
+     "text": "with",
+     "start": 381.078,
+     "end": 381.258
+    },
+    {
+     "text": "real",
+     "start": 381.258,
+     "end": 381.398
+    },
+    {
+     "text": "workers.",
+     "start": 381.398,
+     "end": 381.778
+    },
+    {
+     "text": "Instead",
+     "start": 382.538,
+     "end": 382.538
+    },
+    {
+     "text": "of",
+     "start": 382.538,
+     "end": 382.698
+    },
+    {
+     "text": "asking",
+     "start": 382.698,
+     "end": 382.938
+    },
+    {
+     "text": "people",
+     "start": 382.938,
+     "end": 383.238
+    },
+    {
+     "text": "to",
+     "start": 383.238,
+     "end": 383.358
+    },
+    {
+     "text": "save",
+     "start": 383.358,
+     "end": 383.538
+    },
+    {
+     "text": "more",
+     "start": 383.538,
+     "end": 383.778
+    },
+    {
+     "text": "now",
+     "start": 383.778,
+     "end": 384.058
+    },
+    {
+     "text": "they",
+     "start": 384.338,
+     "end": 384.438
+    },
+    {
+     "text": "asked",
+     "start": 384.438,
+     "end": 384.618
+    },
+    {
+     "text": "them",
+     "start": 384.618,
+     "end": 384.858
+    },
+    {
+     "text": "to",
+     "start": 384.858,
+     "end": 384.938
+    },
+    {
+     "text": "save",
+     "start": 384.938,
+     "end": 385.118
+    },
+    {
+     "text": "more",
+     "start": 385.118,
+     "end": 385.318
+    },
+    {
+     "text": "later.",
+     "start": 385.318,
+     "end": 385.558
+    },
+    {
+     "text": "Every",
+     "start": 386.078,
+     "end": 386.178
+    },
+    {
+     "text": "time",
+     "start": 386.178,
+     "end": 386.438
+    },
+    {
+     "text": "they",
+     "start": 386.438,
+     "end": 386.558
+    },
+    {
+     "text": "got",
+     "start": 386.558,
+     "end": 386.658
+    },
+    {
+     "text": "a",
+     "start": 386.658,
+     "end": 386.778
+    },
+    {
+     "text": "raise",
+     "start": 386.778,
+     "end": 387.018
+    },
+    {
+     "text": "a",
+     "start": 387.298,
+     "end": 387.318
+    },
+    {
+     "text": "little",
+     "start": 387.318,
+     "end": 387.518
+    },
+    {
+     "text": "more",
+     "start": 387.518,
+     "end": 387.698
+    },
+    {
+     "text": "went",
+     "start": 387.698,
+     "end": 387.918
+    },
+    {
+     "text": "to",
+     "start": 387.918,
+     "end": 388.078
+    },
+    {
+     "text": "savings.",
+     "start": 388.078,
+     "end": 388.258
+    }
+   ]
+  },
+  {
+   "id": "c5e",
+   "text": "Grug said sure. Later sounds easy. Later is not my problem. And years later those workers were saving way more than before. Without feeling any pain.",
+   "start": 389.2547916666667,
+   "end": 396.45479166666667,
+   "words": [
+    {
+     "text": "Grug",
+     "start": 389.255,
+     "end": 389.415
+    },
+    {
+     "text": "said",
+     "start": 389.415,
+     "end": 389.575
+    },
+    {
+     "text": "sure.",
+     "start": 389.675,
+     "end": 389.835
+    },
+    {
+     "text": "Later",
+     "start": 390.195,
+     "end": 390.395
+    },
+    {
+     "text": "sounds",
+     "start": 390.395,
+     "end": 390.655
+    },
+    {
+     "text": "easy.",
+     "start": 390.655,
+     "end": 390.875
+    },
+    {
+     "text": "Later",
+     "start": 391.215,
+     "end": 391.395
+    },
+    {
+     "text": "is",
+     "start": 391.395,
+     "end": 391.555
+    },
+    {
+     "text": "not",
+     "start": 391.555,
+     "end": 391.695
+    },
+    {
+     "text": "my",
+     "start": 391.695,
+     "end": 391.815
+    },
+    {
+     "text": "problem.",
+     "start": 391.815,
+     "end": 392.175
+    },
+    {
+     "text": "And",
+     "start": 392.555,
+     "end": 392.715
+    },
+    {
+     "text": "years",
+     "start": 392.715,
+     "end": 392.895
+    },
+    {
+     "text": "later",
+     "start": 392.895,
+     "end": 393.215
+    },
+    {
+     "text": "those",
+     "start": 393.215,
+     "end": 393.435
+    },
+    {
+     "text": "workers",
+     "start": 393.435,
+     "end": 393.715
+    },
+    {
+     "text": "were",
+     "start": 393.715,
+     "end": 393.895
+    },
+    {
+     "text": "saving",
+     "start": 393.895,
+     "end": 394.095
+    },
+    {
+     "text": "way",
+     "start": 394.095,
+     "end": 394.415
+    },
+    {
+     "text": "more",
+     "start": 394.415,
+     "end": 394.675
+    },
+    {
+     "text": "than",
+     "start": 394.675,
+     "end": 394.795
+    },
+    {
+     "text": "before.",
+     "start": 394.795,
+     "end": 395.115
+    },
+    {
+     "text": "Without",
+     "start": 395.415,
+     "end": 395.575
+    },
+    {
+     "text": "feeling",
+     "start": 395.575,
+     "end": 395.915
+    },
+    {
+     "text": "any",
+     "start": 395.915,
+     "end": 396.155
+    },
+    {
+     "text": "pain.",
+     "start": 396.155,
+     "end": 396.455
+    }
+   ]
+  },
+  {
+   "id": "n18",
+   "text": "They used Grug's own weakness against him. He loves now and ignores later. So they put the saving in later. Genius.",
+   "start": 397.11939583333333,
+   "end": 402.8993958333333,
+   "words": [
+    {
+     "text": "They",
+     "start": 397.119,
+     "end": 397.199
+    },
+    {
+     "text": "used",
+     "start": 397.199,
+     "end": 397.419
+    },
+    {
+     "text": "Grug's",
+     "start": 397.419,
+     "end": 397.799
+    },
+    {
+     "text": "own",
+     "start": 397.799,
+     "end": 397.979
+    },
+    {
+     "text": "weakness",
+     "start": 397.979,
+     "end": 398.279
+    },
+    {
+     "text": "against",
+     "start": 398.279,
+     "end": 398.639
+    },
+    {
+     "text": "him.",
+     "start": 398.639,
+     "end": 398.919
+    },
+    {
+     "text": "He",
+     "start": 399.239,
+     "end": 399.339
+    },
+    {
+     "text": "loves",
+     "start": 399.339,
+     "end": 399.519
+    },
+    {
+     "text": "now",
+     "start": 399.519,
+     "end": 399.819
+    },
+    {
+     "text": "and",
+     "start": 399.819,
+     "end": 400.119
+    },
+    {
+     "text": "ignores",
+     "start": 400.119,
+     "end": 400.299
+    },
+    {
+     "text": "later.",
+     "start": 400.299,
+     "end": 400.739
+    },
+    {
+     "text": "So",
+     "start": 401.079,
+     "end": 401.199
+    },
+    {
+     "text": "they",
+     "start": 401.199,
+     "end": 401.299
+    },
+    {
+     "text": "put",
+     "start": 401.299,
+     "end": 401.439
+    },
+    {
+     "text": "the",
+     "start": 401.439,
+     "end": 401.539
+    },
+    {
+     "text": "saving",
+     "start": 401.539,
+     "end": 401.779
+    },
+    {
+     "text": "in",
+     "start": 401.779,
+     "end": 401.999
+    },
+    {
+     "text": "later.",
+     "start": 401.999,
+     "end": 402.299
+    },
+    {
+     "text": "Genius.",
+     "start": 402.679,
+     "end": 402.899
+    }
+   ]
+  },
+  {
+   "id": "c5f",
+   "text": "Second trick. Put some pain back. Delete your saved card from shopping apps. Now every purchase needs you to go find your wallet. Grug hates walking to the other room.",
+   "start": 403.7574375,
+   "end": 411.1974375,
+   "words": [
+    {
+     "text": "Second",
+     "start": 403.757,
+     "end": 404.017
+    },
+    {
+     "text": "trick.",
+     "start": 404.017,
+     "end": 404.277
+    },
+    {
+     "text": "Put",
+     "start": 404.657,
+     "end": 404.737
+    },
+    {
+     "text": "some",
+     "start": 404.737,
+     "end": 404.877
+    },
+    {
+     "text": "pain",
+     "start": 404.877,
+     "end": 405.077
+    },
+    {
+     "text": "back.",
+     "start": 405.077,
+     "end": 405.377
+    },
+    {
+     "text": "Delete",
+     "start": 405.737,
+     "end": 405.897
+    },
+    {
+     "text": "your",
+     "start": 405.897,
+     "end": 406.097
+    },
+    {
+     "text": "saved",
+     "start": 406.097,
+     "end": 406.297
+    },
+    {
+     "text": "card",
+     "start": 406.297,
+     "end": 406.577
+    },
+    {
+     "text": "from",
+     "start": 406.577,
+     "end": 406.757
+    },
+    {
+     "text": "shopping",
+     "start": 406.757,
+     "end": 406.957
+    },
+    {
+     "text": "apps.",
+     "start": 406.957,
+     "end": 407.317
+    },
+    {
+     "text": "Now",
+     "start": 407.677,
+     "end": 407.777
+    },
+    {
+     "text": "every",
+     "start": 407.777,
+     "end": 408.017
+    },
+    {
+     "text": "purchase",
+     "start": 408.017,
+     "end": 408.337
+    },
+    {
+     "text": "needs",
+     "start": 408.337,
+     "end": 408.577
+    },
+    {
+     "text": "you",
+     "start": 408.577,
+     "end": 408.737
+    },
+    {
+     "text": "to",
+     "start": 408.737,
+     "end": 408.817
+    },
+    {
+     "text": "go",
+     "start": 408.817,
+     "end": 408.937
+    },
+    {
+     "text": "find",
+     "start": 408.937,
+     "end": 409.117
+    },
+    {
+     "text": "your",
+     "start": 409.117,
+     "end": 409.277
+    },
+    {
+     "text": "wallet.",
+     "start": 409.277,
+     "end": 409.517
+    },
+    {
+     "text": "Grug",
+     "start": 409.917,
+     "end": 410.017
+    },
+    {
+     "text": "hates",
+     "start": 410.017,
+     "end": 410.237
+    },
+    {
+     "text": "walking",
+     "start": 410.237,
+     "end": 410.457
+    },
+    {
+     "text": "to",
+     "start": 410.457,
+     "end": 410.697
+    },
+    {
+     "text": "the",
+     "start": 410.697,
+     "end": 410.797
+    },
+    {
+     "text": "other",
+     "start": 410.797,
+     "end": 410.937
+    },
+    {
+     "text": "room.",
+     "start": 410.937,
+     "end": 411.197
+    }
+   ]
+  },
+  {
+   "id": "n19",
+   "text": "Third. The twenty four hour rule. Want something that isn't food or rent? Leave it in the cart for a day. Half the time tomorrow me doesn't even remember what it was.",
+   "start": 411.81652083333336,
+   "end": 419.0345208333334,
+   "words": [
+    {
+     "text": "Third.",
+     "start": 411.817,
+     "end": 412.09
+    },
+    {
+     "text": "The",
+     "start": 412.12,
+     "end": 412.277
+    },
+    {
+     "text": "twenty",
+     "start": 412.294,
+     "end": 412.567
+    },
+    {
+     "text": "four",
+     "start": 412.597,
+     "end": 412.792
+    },
+    {
+     "text": "hour",
+     "start": 412.814,
+     "end": 413.009
+    },
+    {
+     "text": "rule.",
+     "start": 413.031,
+     "end": 413.265
+    },
+    {
+     "text": "Want",
+     "start": 413.291,
+     "end": 413.486
+    },
+    {
+     "text": "something",
+     "start": 413.508,
+     "end": 413.898
+    },
+    {
+     "text": "that",
+     "start": 413.941,
+     "end": 414.136
+    },
+    {
+     "text": "isn't",
+     "start": 414.158,
+     "end": 414.392
+    },
+    {
+     "text": "food",
+     "start": 414.418,
+     "end": 414.613
+    },
+    {
+     "text": "or",
+     "start": 414.635,
+     "end": 414.752
+    },
+    {
+     "text": "rent?",
+     "start": 414.765,
+     "end": 414.999
+    },
+    {
+     "text": "Leave",
+     "start": 415.025,
+     "end": 415.259
+    },
+    {
+     "text": "it",
+     "start": 415.285,
+     "end": 415.402
+    },
+    {
+     "text": "in",
+     "start": 415.415,
+     "end": 415.532
+    },
+    {
+     "text": "the",
+     "start": 415.545,
+     "end": 415.701
+    },
+    {
+     "text": "cart",
+     "start": 415.719,
+     "end": 415.914
+    },
+    {
+     "text": "for",
+     "start": 415.936,
+     "end": 416.092
+    },
+    {
+     "text": "a",
+     "start": 416.109,
+     "end": 416.187
+    },
+    {
+     "text": "day.",
+     "start": 416.196,
+     "end": 416.391
+    },
+    {
+     "text": "Half",
+     "start": 416.412,
+     "end": 416.608
+    },
+    {
+     "text": "the",
+     "start": 416.629,
+     "end": 416.785
+    },
+    {
+     "text": "time",
+     "start": 416.803,
+     "end": 416.998
+    },
+    {
+     "text": "tomorrow",
+     "start": 417.019,
+     "end": 417.371
+    },
+    {
+     "text": "me",
+     "start": 417.41,
+     "end": 417.527
+    },
+    {
+     "text": "doesn't",
+     "start": 417.54,
+     "end": 417.852
+    },
+    {
+     "text": "even",
+     "start": 417.886,
+     "end": 418.082
+    },
+    {
+     "text": "remember",
+     "start": 418.103,
+     "end": 418.454
+    },
+    {
+     "text": "what",
+     "start": 418.493,
+     "end": 418.688
+    },
+    {
+     "text": "it",
+     "start": 418.71,
+     "end": 418.827
+    },
+    {
+     "text": "was.",
+     "start": 418.84,
+     "end": 419.035
+    }
+   ]
+  },
+  {
+   "id": "n42",
+   "text": "I tried it with a pair of headphones. Day one I needed them. Day two I kind of wanted them. Day three I forgot they existed. Saved a hundred and twenty dollars by doing nothing.",
+   "start": 419.81625,
+   "end": 427.19825000000003,
+   "words": [
+    {
+     "text": "I",
+     "start": 419.816,
+     "end": 419.891
+    },
+    {
+     "text": "tried",
+     "start": 419.899,
+     "end": 420.124
+    },
+    {
+     "text": "it",
+     "start": 420.149,
+     "end": 420.262
+    },
+    {
+     "text": "with",
+     "start": 420.275,
+     "end": 420.462
+    },
+    {
+     "text": "a",
+     "start": 420.483,
+     "end": 420.558
+    },
+    {
+     "text": "pair",
+     "start": 420.566,
+     "end": 420.754
+    },
+    {
+     "text": "of",
+     "start": 420.775,
+     "end": 420.887
+    },
+    {
+     "text": "headphones.",
+     "start": 420.9,
+     "end": 421.35
+    },
+    {
+     "text": "Day",
+     "start": 421.4,
+     "end": 421.55
+    },
+    {
+     "text": "one",
+     "start": 421.567,
+     "end": 421.717
+    },
+    {
+     "text": "I",
+     "start": 421.734,
+     "end": 421.809
+    },
+    {
+     "text": "needed",
+     "start": 421.817,
+     "end": 422.08
+    },
+    {
+     "text": "them.",
+     "start": 422.109,
+     "end": 422.334
+    },
+    {
+     "text": "Day",
+     "start": 422.359,
+     "end": 422.509
+    },
+    {
+     "text": "two",
+     "start": 422.526,
+     "end": 422.676
+    },
+    {
+     "text": "I",
+     "start": 422.692,
+     "end": 422.767
+    },
+    {
+     "text": "kind",
+     "start": 422.776,
+     "end": 422.963
+    },
+    {
+     "text": "of",
+     "start": 422.984,
+     "end": 423.097
+    },
+    {
+     "text": "wanted",
+     "start": 423.109,
+     "end": 423.372
+    },
+    {
+     "text": "them.",
+     "start": 423.401,
+     "end": 423.626
+    },
+    {
+     "text": "Day",
+     "start": 423.651,
+     "end": 423.801
+    },
+    {
+     "text": "three",
+     "start": 423.818,
+     "end": 424.043
+    },
+    {
+     "text": "I",
+     "start": 424.068,
+     "end": 424.143
+    },
+    {
+     "text": "forgot",
+     "start": 424.151,
+     "end": 424.414
+    },
+    {
+     "text": "they",
+     "start": 424.443,
+     "end": 424.631
+    },
+    {
+     "text": "existed.",
+     "start": 424.652,
+     "end": 424.989
+    },
+    {
+     "text": "Saved",
+     "start": 425.027,
+     "end": 425.252
+    },
+    {
+     "text": "a",
+     "start": 425.277,
+     "end": 425.352
+    },
+    {
+     "text": "hundred",
+     "start": 425.36,
+     "end": 425.66
+    },
+    {
+     "text": "and",
+     "start": 425.694,
+     "end": 425.844
+    },
+    {
+     "text": "twenty",
+     "start": 425.86,
+     "end": 426.123
+    },
+    {
+     "text": "dollars",
+     "start": 426.152,
+     "end": 426.452
+    },
+    {
+     "text": "by",
+     "start": 426.486,
+     "end": 426.598
+    },
+    {
+     "text": "doing",
+     "start": 426.611,
+     "end": 426.836
+    },
+    {
+     "text": "nothing.",
+     "start": 426.861,
+     "end": 427.198
+    }
+   ]
+  },
+  {
+   "id": "n43",
+   "text": "Me after the twenty four hour rule.",
+   "start": 427.8738125,
+   "end": 429.19181249999997,
+   "words": [
+    {
+     "text": "Me",
+     "start": 427.874,
+     "end": 427.974
+    },
+    {
+     "text": "after",
+     "start": 427.986,
+     "end": 428.187
+    },
+    {
+     "text": "the",
+     "start": 428.209,
+     "end": 428.343
+    },
+    {
+     "text": "twenty",
+     "start": 428.358,
+     "end": 428.592
+    },
+    {
+     "text": "four",
+     "start": 428.618,
+     "end": 428.786
+    },
+    {
+     "text": "hour",
+     "start": 428.805,
+     "end": 428.972
+    },
+    {
+     "text": "rule.",
+     "start": 428.991,
+     "end": 429.192
+    }
+   ]
+  },
+  {
+   "id": "n20",
+   "text": "My cart after twenty four hours.",
+   "start": 429.8766875,
+   "end": 431.2466875,
+   "words": [
+    {
+     "text": "My",
+     "start": 429.877,
+     "end": 429.992
+    },
+    {
+     "text": "cart",
+     "start": 430.004,
+     "end": 430.195
+    },
+    {
+     "text": "after",
+     "start": 430.216,
+     "end": 430.445
+    },
+    {
+     "text": "twenty",
+     "start": 430.471,
+     "end": 430.738
+    },
+    {
+     "text": "four",
+     "start": 430.768,
+     "end": 430.959
+    },
+    {
+     "text": "hours.",
+     "start": 430.98,
+     "end": 431.247
+    }
+   ]
+  },
+  {
+   "id": "c5g",
+   "text": "And fourth. Turn off the shopping notifications. Every red dot is someone tapping Grug on the shoulder saying hey berries.",
+   "start": 432.0048125,
+   "end": 437.72481250000004,
+   "words": [
+    {
+     "text": "And",
+     "start": 432.005,
+     "end": 432.105
+    },
+    {
+     "text": "fourth.",
+     "start": 432.105,
+     "end": 432.365
+    },
+    {
+     "text": "Turn",
+     "start": 432.885,
+     "end": 433.125
+    },
+    {
+     "text": "off",
+     "start": 433.125,
+     "end": 433.245
+    },
+    {
+     "text": "the",
+     "start": 433.245,
+     "end": 433.365
+    },
+    {
+     "text": "shopping",
+     "start": 433.365,
+     "end": 433.545
+    },
+    {
+     "text": "notifications.",
+     "start": 433.545,
+     "end": 433.885
+    },
+    {
+     "text": "Every",
+     "start": 434.985,
+     "end": 435.065
+    },
+    {
+     "text": "red",
+     "start": 435.065,
+     "end": 435.265
+    },
+    {
+     "text": "dot",
+     "start": 435.265,
+     "end": 435.505
+    },
+    {
+     "text": "is",
+     "start": 435.505,
+     "end": 435.705
+    },
+    {
+     "text": "someone",
+     "start": 435.705,
+     "end": 435.885
+    },
+    {
+     "text": "tapping",
+     "start": 435.885,
+     "end": 436.245
+    },
+    {
+     "text": "Grug",
+     "start": 436.245,
+     "end": 436.505
+    },
+    {
+     "text": "on",
+     "start": 436.505,
+     "end": 436.625
+    },
+    {
+     "text": "the",
+     "start": 436.625,
+     "end": 436.705
+    },
+    {
+     "text": "shoulder",
+     "start": 436.705,
+     "end": 436.865
+    },
+    {
+     "text": "saying",
+     "start": 436.865,
+     "end": 437.245
+    },
+    {
+     "text": "hey",
+     "start": 437.465,
+     "end": 437.545
+    },
+    {
+     "text": "berries.",
+     "start": 437.545,
+     "end": 437.725
+    }
+   ]
+  },
+  {
+   "id": "c5h",
+   "text": "And the best part is investing works the same way. If a little money goes into an investment automatically every month Grug can't panic and pull it out every time the news gets scary.",
+   "start": 438.5780625,
+   "end": 445.91806249999996,
+   "words": [
+    {
+     "text": "And",
+     "start": 438.578,
+     "end": 438.758
+    },
+    {
+     "text": "the",
+     "start": 438.758,
+     "end": 438.898
+    },
+    {
+     "text": "best",
+     "start": 438.898,
+     "end": 439.038
+    },
+    {
+     "text": "part",
+     "start": 439.038,
+     "end": 439.298
+    },
+    {
+     "text": "is",
+     "start": 439.298,
+     "end": 439.518
+    },
+    {
+     "text": "investing",
+     "start": 439.518,
+     "end": 439.798
+    },
+    {
+     "text": "works",
+     "start": 439.798,
+     "end": 440.038
+    },
+    {
+     "text": "the",
+     "start": 440.038,
+     "end": 440.238
+    },
+    {
+     "text": "same",
+     "start": 440.238,
+     "end": 440.378
+    },
+    {
+     "text": "way.",
+     "start": 440.378,
+     "end": 440.558
+    },
+    {
+     "text": "If",
+     "start": 441.158,
+     "end": 441.178
+    },
+    {
+     "text": "a",
+     "start": 441.178,
+     "end": 441.238
+    },
+    {
+     "text": "little",
+     "start": 441.238,
+     "end": 441.398
+    },
+    {
+     "text": "money",
+     "start": 441.398,
+     "end": 441.558
+    },
+    {
+     "text": "goes",
+     "start": 441.558,
+     "end": 441.778
+    },
+    {
+     "text": "into",
+     "start": 441.778,
+     "end": 441.998
+    },
+    {
+     "text": "an",
+     "start": 441.998,
+     "end": 442.118
+    },
+    {
+     "text": "investment",
+     "start": 442.118,
+     "end": 442.358
+    },
+    {
+     "text": "automatically",
+     "start": 442.358,
+     "end": 442.718
+    },
+    {
+     "text": "every",
+     "start": 442.718,
+     "end": 443.198
+    },
+    {
+     "text": "month",
+     "start": 443.198,
+     "end": 443.418
+    },
+    {
+     "text": "Grug",
+     "start": 443.658,
+     "end": 443.758
+    },
+    {
+     "text": "can't",
+     "start": 443.758,
+     "end": 444.038
+    },
+    {
+     "text": "panic",
+     "start": 444.038,
+     "end": 444.298
+    },
+    {
+     "text": "and",
+     "start": 444.298,
+     "end": 444.458
+    },
+    {
+     "text": "pull",
+     "start": 444.458,
+     "end": 444.598
+    },
+    {
+     "text": "it",
+     "start": 444.598,
+     "end": 444.738
+    },
+    {
+     "text": "out",
+     "start": 444.738,
+     "end": 444.858
+    },
+    {
+     "text": "every",
+     "start": 444.858,
+     "end": 445.038
+    },
+    {
+     "text": "time",
+     "start": 445.038,
+     "end": 445.278
+    },
+    {
+     "text": "the",
+     "start": 445.278,
+     "end": 445.398
+    },
+    {
+     "text": "news",
+     "start": 445.398,
+     "end": 445.498
+    },
+    {
+     "text": "gets",
+     "start": 445.498,
+     "end": 445.658
+    },
+    {
+     "text": "scary.",
+     "start": 445.658,
+     "end": 445.918
+    }
+   ]
+  },
+  {
+   "id": "n21",
+   "text": "Grug checking his investments every day versus Grug who forgot he even has them.",
+   "start": 446.59404166666667,
+   "end": 450.03404166666667,
+   "words": [
+    {
+     "text": "Grug",
+     "start": 446.594,
+     "end": 446.734
+    },
+    {
+     "text": "checking",
+     "start": 446.734,
+     "end": 446.954
+    },
+    {
+     "text": "his",
+     "start": 446.954,
+     "end": 447.194
+    },
+    {
+     "text": "investments",
+     "start": 447.194,
+     "end": 447.454
+    },
+    {
+     "text": "every",
+     "start": 447.454,
+     "end": 447.874
+    },
+    {
+     "text": "day",
+     "start": 447.874,
+     "end": 448.114
+    },
+    {
+     "text": "versus",
+     "start": 448.114,
+     "end": 448.434
+    },
+    {
+     "text": "Grug",
+     "start": 448.434,
+     "end": 448.814
+    },
+    {
+     "text": "who",
+     "start": 448.814,
+     "end": 448.994
+    },
+    {
+     "text": "forgot",
+     "start": 448.994,
+     "end": 449.194
+    },
+    {
+     "text": "he",
+     "start": 449.194,
+     "end": 449.414
+    },
+    {
+     "text": "even",
+     "start": 449.414,
+     "end": 449.594
+    },
+    {
+     "text": "has",
+     "start": 449.594,
+     "end": 449.814
+    },
+    {
+     "text": "them.",
+     "start": 449.814,
+     "end": 450.034
+    }
+   ]
+  },
+  {
+   "id": "c5i",
+   "text": "The less Grug touches it the better it grows. That's the funniest thing about money. Sometimes doing nothing is the smartest move.",
+   "start": 450.6266458333333,
+   "end": 456.74664583333333,
+   "words": [
+    {
+     "text": "The",
+     "start": 450.627,
+     "end": 450.727
+    },
+    {
+     "text": "less",
+     "start": 450.727,
+     "end": 450.867
+    },
+    {
+     "text": "Grug",
+     "start": 450.867,
+     "end": 451.207
+    },
+    {
+     "text": "touches",
+     "start": 451.207,
+     "end": 451.447
+    },
+    {
+     "text": "it",
+     "start": 451.447,
+     "end": 451.667
+    },
+    {
+     "text": "the",
+     "start": 451.827,
+     "end": 451.867
+    },
+    {
+     "text": "better",
+     "start": 451.867,
+     "end": 452.047
+    },
+    {
+     "text": "it",
+     "start": 452.047,
+     "end": 452.187
+    },
+    {
+     "text": "grows.",
+     "start": 452.187,
+     "end": 452.347
+    },
+    {
+     "text": "That's",
+     "start": 453.107,
+     "end": 453.307
+    },
+    {
+     "text": "the",
+     "start": 453.307,
+     "end": 453.407
+    },
+    {
+     "text": "funniest",
+     "start": 453.407,
+     "end": 453.787
+    },
+    {
+     "text": "thing",
+     "start": 453.787,
+     "end": 453.947
+    },
+    {
+     "text": "about",
+     "start": 453.947,
+     "end": 454.147
+    },
+    {
+     "text": "money.",
+     "start": 454.147,
+     "end": 454.367
+    },
+    {
+     "text": "Sometimes",
+     "start": 454.907,
+     "end": 455.087
+    },
+    {
+     "text": "doing",
+     "start": 455.087,
+     "end": 455.527
+    },
+    {
+     "text": "nothing",
+     "start": 455.527,
+     "end": 455.907
+    },
+    {
+     "text": "is",
+     "start": 455.907,
+     "end": 456.127
+    },
+    {
+     "text": "the",
+     "start": 456.127,
+     "end": 456.247
+    },
+    {
+     "text": "smartest",
+     "start": 456.247,
+     "end": 456.447
+    },
+    {
+     "text": "move.",
+     "start": 456.447,
+     "end": 456.747
+    }
+   ]
+  },
+  {
+   "id": "n44",
+   "text": "Every year I look at it and think wait I did that? No. Grug didn't. The system did. I just set it up once and walked away.",
+   "start": 457.3693125,
+   "end": 463.3093125,
+   "words": [
+    {
+     "text": "Every",
+     "start": 457.369,
+     "end": 457.549
+    },
+    {
+     "text": "year",
+     "start": 457.549,
+     "end": 457.729
+    },
+    {
+     "text": "I",
+     "start": 457.729,
+     "end": 457.869
+    },
+    {
+     "text": "look",
+     "start": 457.869,
+     "end": 458.029
+    },
+    {
+     "text": "at",
+     "start": 458.029,
+     "end": 458.189
+    },
+    {
+     "text": "it",
+     "start": 458.189,
+     "end": 458.289
+    },
+    {
+     "text": "and",
+     "start": 458.289,
+     "end": 458.369
+    },
+    {
+     "text": "think",
+     "start": 458.369,
+     "end": 458.549
+    },
+    {
+     "text": "wait",
+     "start": 458.789,
+     "end": 458.909
+    },
+    {
+     "text": "I",
+     "start": 459.209,
+     "end": 459.309
+    },
+    {
+     "text": "did",
+     "start": 459.309,
+     "end": 459.469
+    },
+    {
+     "text": "that?",
+     "start": 459.469,
+     "end": 459.669
+    },
+    {
+     "text": "No.",
+     "start": 459.989,
+     "end": 460.149
+    },
+    {
+     "text": "Grug",
+     "start": 460.449,
+     "end": 460.589
+    },
+    {
+     "text": "didn't.",
+     "start": 460.589,
+     "end": 461.009
+    },
+    {
+     "text": "The",
+     "start": 461.129,
+     "end": 461.169
+    },
+    {
+     "text": "system",
+     "start": 461.169,
+     "end": 461.349
+    },
+    {
+     "text": "did.",
+     "start": 461.349,
+     "end": 461.669
+    },
+    {
+     "text": "I",
+     "start": 461.849,
+     "end": 461.889
+    },
+    {
+     "text": "just",
+     "start": 461.889,
+     "end": 462.009
+    },
+    {
+     "text": "set",
+     "start": 462.009,
+     "end": 462.189
+    },
+    {
+     "text": "it",
+     "start": 462.189,
+     "end": 462.269
+    },
+    {
+     "text": "up",
+     "start": 462.269,
+     "end": 462.369
+    },
+    {
+     "text": "once",
+     "start": 462.369,
+     "end": 462.569
+    },
+    {
+     "text": "and",
+     "start": 462.569,
+     "end": 462.869
+    },
+    {
+     "text": "walked",
+     "start": 462.869,
+     "end": 463.029
+    },
+    {
+     "text": "away.",
+     "start": 463.029,
+     "end": 463.309
+    }
+   ]
+  },
+  {
+   "id": "r1",
+   "text": "So that's the trick. Don't fight your brain. Build a system so your brain never gets the chance to say yes.",
+   "start": 463.98325,
+   "end": 468.82325,
+   "words": [
+    {
+     "text": "So",
+     "start": 463.983,
+     "end": 464.143
+    },
+    {
+     "text": "that's",
+     "start": 464.143,
+     "end": 464.483
+    },
+    {
+     "text": "the",
+     "start": 464.483,
+     "end": 464.583
+    },
+    {
+     "text": "trick.",
+     "start": 464.583,
+     "end": 464.743
+    },
+    {
+     "text": "Don't",
+     "start": 465.323,
+     "end": 465.423
+    },
+    {
+     "text": "fight",
+     "start": 465.423,
+     "end": 465.583
+    },
+    {
+     "text": "your",
+     "start": 465.583,
+     "end": 465.703
+    },
+    {
+     "text": "brain.",
+     "start": 465.703,
+     "end": 465.943
+    },
+    {
+     "text": "Build",
+     "start": 466.443,
+     "end": 466.463
+    },
+    {
+     "text": "a",
+     "start": 466.463,
+     "end": 466.603
+    },
+    {
+     "text": "system",
+     "start": 466.603,
+     "end": 466.823
+    },
+    {
+     "text": "so",
+     "start": 466.823,
+     "end": 467.183
+    },
+    {
+     "text": "your",
+     "start": 467.183,
+     "end": 467.323
+    },
+    {
+     "text": "brain",
+     "start": 467.323,
+     "end": 467.523
+    },
+    {
+     "text": "never",
+     "start": 467.523,
+     "end": 467.683
+    },
+    {
+     "text": "gets",
+     "start": 467.683,
+     "end": 467.883
+    },
+    {
+     "text": "the",
+     "start": 467.883,
+     "end": 468.023
+    },
+    {
+     "text": "chance",
+     "start": 468.023,
+     "end": 468.203
+    },
+    {
+     "text": "to",
+     "start": 468.203,
+     "end": 468.403
+    },
+    {
+     "text": "say",
+     "start": 468.403,
+     "end": 468.543
+    },
+    {
+     "text": "yes.",
+     "start": 468.543,
+     "end": 468.823
+    }
+   ]
+  },
+  {
+   "id": "r2",
+   "text": "You're not bad with money. You're a caveman in a mall. And the mall knows it.",
+   "start": 469.5015833333333,
+   "end": 472.98158333333333,
+   "words": [
+    {
+     "text": "You're",
+     "start": 469.502,
+     "end": 469.602
+    },
+    {
+     "text": "not",
+     "start": 469.602,
+     "end": 469.782
+    },
+    {
+     "text": "bad",
+     "start": 469.782,
+     "end": 470.022
+    },
+    {
+     "text": "with",
+     "start": 470.022,
+     "end": 470.162
+    },
+    {
+     "text": "money.",
+     "start": 470.162,
+     "end": 470.442
+    },
+    {
+     "text": "You're",
+     "start": 470.722,
+     "end": 470.862
+    },
+    {
+     "text": "a",
+     "start": 470.862,
+     "end": 470.922
+    },
+    {
+     "text": "caveman",
+     "start": 470.922,
+     "end": 471.382
+    },
+    {
+     "text": "in",
+     "start": 471.382,
+     "end": 471.542
+    },
+    {
+     "text": "a",
+     "start": 471.542,
+     "end": 471.602
+    },
+    {
+     "text": "mall.",
+     "start": 471.602,
+     "end": 471.822
+    },
+    {
+     "text": "And",
+     "start": 472.182,
+     "end": 472.242
+    },
+    {
+     "text": "the",
+     "start": 472.242,
+     "end": 472.342
+    },
+    {
+     "text": "mall",
+     "start": 472.342,
+     "end": 472.482
+    },
+    {
+     "text": "knows",
+     "start": 472.482,
+     "end": 472.762
+    },
+    {
+     "text": "it.",
+     "start": 472.762,
+     "end": 472.982
+    }
+   ]
+  },
+  {
+   "id": "r3",
+   "text": "Oh and the cat lamp? I kept it. Grug won that one. But my savings went up anyway. Because now they leave before he wakes up.",
+   "start": 473.6449375,
+   "end": 478.62493750000004,
+   "words": [
+    {
+     "text": "Oh",
+     "start": 473.645,
+     "end": 473.805
+    },
+    {
+     "text": "and",
+     "start": 473.905,
+     "end": 473.985
+    },
+    {
+     "text": "the",
+     "start": 473.985,
+     "end": 474.065
+    },
+    {
+     "text": "cat",
+     "start": 474.065,
+     "end": 474.225
+    },
+    {
+     "text": "lamp?",
+     "start": 474.225,
+     "end": 474.365
+    },
+    {
+     "text": "I",
+     "start": 474.365,
+     "end": 474.585
+    },
+    {
+     "text": "kept",
+     "start": 474.585,
+     "end": 474.685
+    },
+    {
+     "text": "it.",
+     "start": 474.685,
+     "end": 474.865
+    },
+    {
+     "text": "Grug",
+     "start": 475.145,
+     "end": 475.205
+    },
+    {
+     "text": "won",
+     "start": 475.205,
+     "end": 475.345
+    },
+    {
+     "text": "that",
+     "start": 475.345,
+     "end": 475.485
+    },
+    {
+     "text": "one.",
+     "start": 475.485,
+     "end": 475.685
+    },
+    {
+     "text": "But",
+     "start": 476.185,
+     "end": 476.185
+    },
+    {
+     "text": "my",
+     "start": 476.185,
+     "end": 476.305
+    },
+    {
+     "text": "savings",
+     "start": 476.305,
+     "end": 476.505
+    },
+    {
+     "text": "went",
+     "start": 476.505,
+     "end": 476.705
+    },
+    {
+     "text": "up",
+     "start": 476.705,
+     "end": 476.805
+    },
+    {
+     "text": "anyway.",
+     "start": 476.805,
+     "end": 476.985
+    },
+    {
+     "text": "Because",
+     "start": 477.365,
+     "end": 477.485
+    },
+    {
+     "text": "now",
+     "start": 477.485,
+     "end": 477.625
+    },
+    {
+     "text": "they",
+     "start": 477.625,
+     "end": 477.745
+    },
+    {
+     "text": "leave",
+     "start": 477.745,
+     "end": 477.885
+    },
+    {
+     "text": "before",
+     "start": 477.885,
+     "end": 478.125
+    },
+    {
+     "text": "he",
+     "start": 478.125,
+     "end": 478.305
+    },
+    {
+     "text": "wakes",
+     "start": 478.305,
+     "end": 478.425
+    },
+    {
+     "text": "up.",
+     "start": 478.425,
+     "end": 478.625
+    }
+   ]
+  },
+  {
+   "id": "r4",
+   "text": "Next time I find out why rich kids stay rich and poor kids stay poor. And it's not just the money they get.",
+   "start": 479.1259166666667,
+   "end": 483.6259166666667,
+   "words": [
+    {
+     "text": "Next",
+     "start": 479.126,
+     "end": 479.286
+    },
+    {
+     "text": "time",
+     "start": 479.286,
+     "end": 479.546
+    },
+    {
+     "text": "I",
+     "start": 479.546,
+     "end": 479.686
+    },
+    {
+     "text": "find",
+     "start": 479.686,
+     "end": 479.886
+    },
+    {
+     "text": "out",
+     "start": 479.886,
+     "end": 480.046
+    },
+    {
+     "text": "why",
+     "start": 480.046,
+     "end": 480.226
+    },
+    {
+     "text": "rich",
+     "start": 480.226,
+     "end": 480.386
+    },
+    {
+     "text": "kids",
+     "start": 480.386,
+     "end": 480.586
+    },
+    {
+     "text": "stay",
+     "start": 480.586,
+     "end": 480.826
+    },
+    {
+     "text": "rich",
+     "start": 480.826,
+     "end": 480.986
+    },
+    {
+     "text": "and",
+     "start": 480.986,
+     "end": 481.146
+    },
+    {
+     "text": "poor",
+     "start": 481.146,
+     "end": 481.326
+    },
+    {
+     "text": "kids",
+     "start": 481.326,
+     "end": 481.546
+    },
+    {
+     "text": "stay",
+     "start": 481.546,
+     "end": 481.786
+    },
+    {
+     "text": "poor.",
+     "start": 481.786,
+     "end": 482.026
+    },
+    {
+     "text": "And",
+     "start": 482.446,
+     "end": 482.526
+    },
+    {
+     "text": "it's",
+     "start": 482.526,
+     "end": 482.666
+    },
+    {
+     "text": "not",
+     "start": 482.666,
+     "end": 482.786
+    },
+    {
+     "text": "just",
+     "start": 482.786,
+     "end": 482.966
+    },
+    {
+     "text": "the",
+     "start": 482.966,
+     "end": 483.166
+    },
+    {
+     "text": "money",
+     "start": 483.166,
+     "end": 483.286
+    },
+    {
+     "text": "they",
+     "start": 483.286,
+     "end": 483.466
+    },
+    {
+     "text": "get.",
+     "start": 483.466,
+     "end": 483.626
+    }
+   ]
+  },
+  {
+   "id": "r5",
+   "text": "Subscribe. It's free. And for once Grug and I agree on something.",
+   "start": 484.38610416666666,
+   "end": 487.80610416666667,
+   "words": [
+    {
+     "text": "Subscribe.",
+     "start": 484.386,
+     "end": 484.806
+    },
+    {
+     "text": "It's",
+     "start": 485.326,
+     "end": 485.486
+    },
+    {
+     "text": "free.",
+     "start": 485.486,
+     "end": 485.666
+    },
+    {
+     "text": "And",
+     "start": 486.086,
+     "end": 486.206
+    },
+    {
+     "text": "for",
+     "start": 486.206,
+     "end": 486.386
+    },
+    {
+     "text": "once",
+     "start": 486.386,
+     "end": 486.606
+    },
+    {
+     "text": "Grug",
+     "start": 486.766,
+     "end": 486.846
+    },
+    {
+     "text": "and",
+     "start": 486.846,
+     "end": 487.006
+    },
+    {
+     "text": "I",
+     "start": 487.006,
+     "end": 487.106
+    },
+    {
+     "text": "agree",
+     "start": 487.106,
+     "end": 487.326
+    },
+    {
+     "text": "on",
+     "start": 487.326,
+     "end": 487.506
+    },
+    {
+     "text": "something.",
+     "start": 487.506,
+     "end": 487.806
+    }
+   ]
+  }
+ ]
+}
