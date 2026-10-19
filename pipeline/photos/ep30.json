@@ -2,139 +2,275 @@
  "photos": [
   {
    "id": "house",
-   "q": "suburban house"
+   "q": "suburban house",
+   "file": "File:Modern suburban house in the outskirts - Ljubljana, Slovenia.jpg",
+   "credit": "Sebastiaan Broekhoven",
+   "license": "CC BY-SA 4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Modern_suburban_house_in_the_outskirts_-_Ljubljana,_Slovenia.jpg"
   },
   {
    "id": "piggy",
-   "q": "piggy bank"
+   "q": "piggy bank",
+   "file": "File:Model 1925 Kenworth Collectible Piggy Bank front view 2.jpg",
+   "credit": "Noah Wulf",
+   "license": "CC BY-SA 4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Model_1925_Kenworth_Collectible_Piggy_Bank_front_view_2.jpg"
   },
   {
    "id": "beach",
-   "q": "family beach"
+   "q": "family beach",
+   "file": "File:Family on Leven Beach - geograph.org.uk - 7133865.jpg",
+   "credit": "Oliver Dixon",
+   "license": "CC BY-SA 2.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Family_on_Leven_Beach_-_geograph.org.uk_-_7133865.jpg"
   },
   {
    "id": "elevator",
-   "q": "elevator"
+   "q": "elevator",
+   "file": "File:Saskatchewan Farm Elevator.jpg",
+   "credit": "Saffron Blaze",
+   "license": "CC BY-SA 3.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Saskatchewan_Farm_Elevator.jpg"
   },
   {
    "id": "bank",
-   "q": "bank building"
+   "q": "bank building",
+   "file": "File:Bank of America Building Baltimore MD1.jpg",
+   "credit": "Acroterion",
+   "license": "CC BY-SA 4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Bank_of_America_Building_Baltimore_MD1.jpg"
   },
   {
    "id": "car",
-   "q": "car dealership"
+   "q": "car dealership",
+   "file": "File:Münster, Beresa, Mercedes-Benz C-Klasse Cabrio -- 2018 -- 1757.jpg",
+   "credit": "Dietmar Rabich",
+   "license": "CC BY-SA 4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:M%C3%BCnster,_Beresa,_Mercedes-Benz_C-Klasse_Cabrio_--_2018_--_1757.jpg"
   },
   {
    "id": "roof",
-   "q": "roof shingles"
+   "q": "roof shingles",
+   "file": "File:Church of Saint Nicholas in Mikołów 03.jpg",
+   "credit": "Kritzolina",
+   "license": "CC BY-SA 4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Church_of_Saint_Nicholas_in_Miko%C5%82%C3%B3w_03.jpg"
   },
   {
    "id": "avocado",
-   "q": "avocado toast"
+   "q": "avocado toast",
+   "file": "File:Avocado toast at the girl & the fig - Sarah Stierch.jpg",
+   "credit": "Sarah Stierch",
+   "license": "CC BY 4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Avocado_toast_at_the_girl_%26_the_fig_-_Sarah_Stierch.jpg"
   },
   {
    "id": "padlock",
-   "q": "padlock"
+   "q": "padlock",
+   "file": "File:Love padlocks on the Butchers' Bridge (Ljubljana).jpg",
+   "credit": "Petar Milošević",
+   "license": "CC BY-SA 4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Love_padlocks_on_the_Butchers%27_Bridge_(Ljubljana).jpg"
   },
   {
    "id": "clock",
-   "q": "antique clock"
+   "q": "antique clock",
+   "file": "File:Pendulum clock by Jacob Kock, antique furniture photography, IMG 0931 edit.jpg",
+   "credit": "Christoph Braun",
+   "license": "CC0",
+   "page": "https://commons.wikimedia.org/wiki/File:Pendulum_clock_by_Jacob_Kock,_antique_furniture_photography,_IMG_0931_edit.jpg"
   },
   {
    "id": "handcuffs",
-   "q": "handcuffs"
+   "q": "handcuffs",
+   "file": "File:Handcuffs GDR - State Securit - Image 2.jpg",
+   "credit": "Lupus in Saxonia",
+   "license": "CC BY-SA 4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Handcuffs_GDR_-_State_Securit_-_Image_2.jpg"
   },
   {
    "id": "apartment",
-   "q": "small apartment interior"
+   "q": "small apartment interior",
+   "file": "File:Empty apartment room with extension cord.jpg",
+   "credit": "aismallard",
+   "license": "CC BY-SA 3.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Empty_apartment_room_with_extension_cord.jpg"
   },
   {
    "id": "construction",
-   "q": "construction site"
+   "q": "construction site",
+   "file": "File:Drilling rig at a construction site in Tuntorp.jpg",
+   "credit": "W.carter",
+   "license": "CC BY 4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Drilling_rig_at_a_construction_site_in_Tuntorp.jpg"
   },
   {
    "id": "open_house",
-   "q": "open house sign"
+   "q": "open house sign",
+   "file": "File:Following Artists Open Houses sign on the floor.jpg",
+   "credit": "Andy Li",
+   "license": "CC0",
+   "page": "https://commons.wikimedia.org/wiki/File:Following_Artists_Open_Houses_sign_on_the_floor.jpg"
   },
   {
    "id": "suburb",
-   "q": "suburb aerial view"
+   "q": "suburb aerial view",
+   "file": "File:Aerial view of a suburb near Houston, Texas LCCN2011635366.tif",
+   "credit": "Carol M. Highsmith",
+   "license": "Public domain",
+   "page": "https://commons.wikimedia.org/wiki/File:Aerial_view_of_a_suburb_near_Houston,_Texas_LCCN2011635366.tif"
   },
   {
    "id": "meeting",
-   "q": "town hall meeting"
+   "q": "town hall meeting",
+   "file": "File:Christchurch Town Hall of the Performing Arts, New Zealand.jpg",
+   "credit": "Michal Klajban",
+   "license": "CC BY-SA 4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Christchurch_Town_Hall_of_the_Performing_Arts,_New_Zealand.jpg"
   },
   {
    "id": "bricks",
-   "q": "bricks"
+   "q": "bricks",
+   "file": "File:Fallen bricks.jpg",
+   "credit": "Tomascastelazo",
+   "license": "CC BY-SA 4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Fallen_bricks.jpg"
   },
   {
    "id": "lumber",
-   "q": "lumber stack"
+   "q": "lumber stack",
+   "file": "File:Track, Cattle Grid and Lumber Stack at North Plantation - geograph.org.uk - 5176324.jpg",
+   "credit": "Peter Wood",
+   "license": "CC BY-SA 2.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Track,_Cattle_Grid_and_Lumber_Stack_at_North_Plantation_-_geograph.org.uk_-_5176324.jpg"
   },
   {
    "id": "wallst",
-   "q": "Wall Street sign"
+   "q": "Wall Street sign",
+   "file": "File:Wall-Street-Sign-New-York.jpg",
+   "credit": "Acediscovery",
+   "license": "CC BY 4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Wall-Street-Sign-New-York.jpg"
   },
   {
    "id": "cart",
-   "q": "shopping cart"
+   "q": "shopping cart",
+   "file": "File:Shopping cart anmd shelter.png",
+   "credit": "Curlyrnd",
+   "license": "CC BY-SA 4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Shopping_cart_anmd_shelter.png"
   },
   {
    "id": "atlanta",
-   "q": "Atlanta skyline"
+   "q": "Atlanta skyline",
+   "file": "File:Atlanta skyline from Jackson Street Bridge 2020.jpg",
+   "credit": "Marc Merlin",
+   "license": "CC BY-SA 4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Atlanta_skyline_from_Jackson_Street_Bridge_2020.jpg"
   },
   {
    "id": "check",
-   "q": "bank check"
+   "q": "bank check",
+   "file": "File:Getty Images, Bank check, Rostov-on-Don, Russia.jpg",
+   "credit": "Vyacheslav Argenberg",
+   "license": "CC BY 4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Getty_Images,_Bank_check,_Rostov-on-Don,_Russia.jpg"
   },
   {
    "id": "rent_sign",
-   "q": "for rent sign"
+   "q": "for rent sign",
+   "file": "File:For rent sign, Israel.jpg",
+   "credit": "Danielrosehill",
+   "license": "CC BY 4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:For_rent_sign,_Israel.jpg"
   },
   {
    "id": "traffic",
-   "q": "traffic jam"
+   "q": "traffic jam",
+   "file": "File:Ташкент, Себзар.jpg",
+   "credit": "Nikolai Bulykin",
+   "license": "CC BY-SA 4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:%D0%A2%D0%B0%D1%88%D0%BA%D0%B5%D0%BD%D1%82,_%D0%A1%D0%B5%D0%B1%D0%B7%D0%B0%D1%80.jpg"
   },
   {
    "id": "grandpa",
-   "q": "1950s house"
+   "q": "1950s house",
+   "file": "File:1950s-house interior.jpg",
+   "credit": "Storylanding",
+   "license": "CC0",
+   "page": "https://commons.wikimedia.org/wiki/File:1950s-house_interior.jpg"
   },
   {
    "id": "cake",
-   "q": "birthday cake candles"
+   "q": "birthday cake candles",
+   "file": "File:Italy - birthday cake with candles 5.jpg",
+   "credit": "Francesca Cesa Bianchi, Milano",
+   "license": "CC BY-SA 3.0 it",
+   "page": "https://commons.wikimedia.org/wiki/File:Italy_-_birthday_cake_with_candles_5.jpg"
   },
   {
    "id": "cat",
-   "q": "cat"
+   "q": "cat",
+   "file": "File:Felis catus-cat on snow.jpg",
+   "credit": "Von.grzanka",
+   "license": "CC BY-SA 3.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Felis_catus-cat_on_snow.jpg"
   },
   {
    "id": "keys",
-   "q": "house keys"
+   "q": "house keys",
+   "file": "File:Old House of Keys - geograph.org.uk - 8047827.jpg",
+   "credit": "N Chadwick",
+   "license": "CC BY-SA 2.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Old_House_of_Keys_-_geograph.org.uk_-_8047827.jpg"
   },
   {
    "id": "heater",
-   "q": "water heater"
+   "q": "water heater",
+   "file": "File:Rusty Water Heater Plate.jpg",
+   "credit": "Czarking0",
+   "license": "CC0",
+   "page": "https://commons.wikimedia.org/wiki/File:Rusty_Water_Heater_Plate.jpg"
   },
   {
    "id": "toolbox",
-   "q": "toolbox"
+   "q": "toolbox",
+   "file": "File:Toolbox.jpg",
+   "credit": "L3D",
+   "license": "CC BY-SA 4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Toolbox.jpg"
   },
   {
    "id": "laptop",
-   "q": "laptop"
+   "q": "laptop",
+   "file": "File:Compaq Concerto 001.jpg",
+   "credit": "No machine-readable author provided. Hymer2 assumed (based on copyright claims).",
+   "license": "CC0",
+   "page": "https://commons.wikimedia.org/wiki/File:Compaq_Concerto_001.jpg"
   },
   {
    "id": "magnifier",
-   "q": "magnifying glass"
+   "q": "magnifying glass",
+   "file": "File:Magnifying glass2.jpg",
+   "credit": "Heptagon",
+   "license": "Public domain",
+   "page": "https://commons.wikimedia.org/wiki/File:Magnifying_glass2.jpg"
   },
   {
    "id": "arcade",
-   "q": "arcade game"
+   "q": "arcade game",
+   "file": "File:Tron Arcade Game.jpg",
+   "credit": "Darth-Wiki-Man",
+   "license": "CC BY-SA 4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Tron_Arcade_Game.jpg"
   },
   {
    "id": "wallet",
-   "q": "empty wallet"
+   "q": "empty wallet",
+   "file": "File:Empty tank empty wallet.jpg",
+   "credit": "BigBruiser",
+   "license": "CC BY-SA 4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Empty_tank_empty_wallet.jpg"
   }
  ]
 }
