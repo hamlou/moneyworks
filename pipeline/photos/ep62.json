@@ -16,15 +16,27 @@
   },
   {
    "id": "receipt",
-   "q": "shopping receipt"
+   "q": "shopping receipt",
+   "file": "File:TW Wellcome shopping receipt 20150712.jpg",
+   "credit": "Solomon203",
+   "license": "CC BY-SA 4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:TW_Wellcome_shopping_receipt_20150712.jpg"
   },
   {
    "id": "headphones",
-   "q": "headphones"
+   "q": "headphones",
+   "file": "File:Bose QuietComfort 25 Acoustic Noise Cancelling Headphones with Carry Case.jpg",
+   "credit": "Florian Fuchs",
+   "license": "CC BY-SA 3.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Bose_QuietComfort_25_Acoustic_Noise_Cancelling_Headphones_with_Carry_Case.jpg"
   },
   {
    "id": "text_msg",
-   "q": "mobile phone"
+   "q": "mobile phone",
+   "file": "File:Mobile phone PHS Japan 1997-2003.jpg",
+   "credit": "Marus",
+   "license": "Public domain",
+   "page": "https://commons.wikimedia.org/wiki/File:Mobile_phone_PHS_Japan_1997-2003.jpg"
   },
   {
    "id": "tagwow",
@@ -35,11 +47,19 @@
   },
   {
    "id": "calculator",
-   "q": "calculator"
+   "q": "calculator",
+   "file": "File:Citizen SLD-100NR calculator.jpg",
+   "credit": "LoMit",
+   "license": "CC BY-SA 4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Citizen_SLD-100NR_calculator.jpg"
   },
   {
    "id": "saloon",
-   "q": "old saloon"
+   "q": "old saloon",
+   "file": "File:Looking Up at The Old Ship Saloon.jpg",
+   "credit": "Willis Lam",
+   "license": "CC BY-SA 2.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Looking_Up_at_The_Old_Ship_Saloon.jpg"
   },
   {
    "id": "register",
@@ -71,23 +91,43 @@
   },
   {
    "id": "road_trip",
-   "q": "highway road"
+   "q": "highway road",
+   "file": "File:Snowy road Sosonka 2013 G1.jpg",
+   "credit": "George Chernilevsky",
+   "license": "Public domain",
+   "page": "https://commons.wikimedia.org/wiki/File:Snowy_road_Sosonka_2013_G1.jpg"
   },
   {
    "id": "used_cars",
-   "q": "used car lot"
+   "q": "used car lot",
+   "file": "File:Winter Garden's used car lot and dance hall.jpg",
+   "credit": "Hines Studio",
+   "license": "Public domain",
+   "page": "https://commons.wikimedia.org/wiki/File:Winter_Garden%27s_used_car_lot_and_dance_hall.jpg"
   },
   {
    "id": "nyu",
-   "q": "New York University"
+   "q": "New York University",
+   "file": "File:New York University the washington square news daily student newspaper featuring Tae Kwon do club led by headmaster Duk Sung Son. Image of students of Tae Kwon Do Association NYU branch, including Ibrahim Benoh front left of photo 1989.jpg",
+   "credit": "Wardiverde",
+   "license": "CC BY-SA 4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:New_York_University_the_washington_square_news_daily_student_newspaper_featuring_Tae_Kwon_do_club_led_by_headmaster_Duk_Sung_Son._Image_of_students_of_Tae_Kwon_Do_Association_NYU_branch,_including_Ibrahim_Benoh_front_left_of_photo_1989.jpg"
   },
   {
    "id": "cake",
-   "q": "birthday cake candles"
+   "q": "birthday cake candles",
+   "file": "File:Italy - birthday cake with candles 5.jpg",
+   "credit": "Francesca Cesa Bianchi, Milano",
+   "license": "CC BY-SA 3.0 it",
+   "page": "https://commons.wikimedia.org/wiki/File:Italy_-_birthday_cake_with_candles_5.jpg"
   },
   {
    "id": "wine",
-   "q": "wine bottles shelf"
+   "q": "wine bottles shelf",
+   "file": "File:Wine bottle shelf at Iberostar Selection Bávaro Suites.jpg",
+   "credit": "This picture has been taken by Oleg Yunakov. Contact e-mail: yunakovgmail.com. Image can b",
+   "license": "CC BY-SA 4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Wine_bottle_shelf_at_Iberostar_Selection_B%C3%A1varo_Suites.jpg"
   },
   {
    "id": "nn",
@@ -105,15 +145,27 @@
   },
   {
    "id": "lamp",
-   "q": "table lamp"
+   "q": "table lamp",
+   "file": "File:Lamp with a lampshade illuminated by sunlight.jpg",
+   "credit": "LoMit",
+   "license": "CC BY-SA 4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Lamp_with_a_lampshade_illuminated_by_sunlight.jpg"
   },
   {
    "id": "spreadsheet",
-   "q": "office computer"
+   "q": "office computer",
+   "file": "File:Macintosh, Google NY office computer museum cropped.png",
+   "credit": "Marcin Wichary from San Francisco, U.S.A.",
+   "license": "CC BY 2.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Macintosh,_Google_NY_office_computer_museum_cropped.png"
   },
   {
    "id": "supermarket",
-   "q": "supermarket aisle"
+   "q": "supermarket aisle",
+   "file": "File:Aisle in L Intermarche supermarket in Quebec City.jpg",
+   "credit": "Wilfredor",
+   "license": "CC BY-SA 4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Aisle_in_L_Intermarche_supermarket_in_Quebec_City.jpg"
   },
   {
    "id": "lyft",
@@ -124,7 +176,11 @@
   },
   {
    "id": "snack_counter",
-   "q": "convenience store counter"
+   "q": "convenience store counter",
+   "file": "File:Plastic Sheet for Infection Prevention setting in Counter of Convenience Store.jpg",
+   "credit": "KKPCW",
+   "license": "CC BY-SA 4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Plastic_Sheet_for_Infection_Prevention_setting_in_Counter_of_Convenience_Store.jpg"
   },
   {
    "id": "gas",
@@ -142,7 +198,11 @@
   },
   {
    "id": "tanker",
-   "q": "fuel tanker truck"
+   "q": "fuel tanker truck",
+   "file": "File:Elevated tanker truck at a job site in San Mateo.jpg",
+   "credit": "Grendelkhan",
+   "license": "CC BY-SA 4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Elevated_tanker_truck_at_a_job_site_in_San_Mateo.jpg"
   },
   {
    "id": "jcp",
@@ -153,7 +213,11 @@
   },
   {
    "id": "coupon",
-   "q": "coupons"
+   "q": "coupons",
+   "file": "File:German International Reply Coupon, 2022-2026, Back.png",
+   "credit": "aveaoz",
+   "license": "Public domain",
+   "page": "https://commons.wikimedia.org/wiki/File:German_International_Reply_Coupon,_2022-2026,_Back.png"
   },
   {
    "id": "johnson",
@@ -178,27 +242,51 @@
   },
   {
    "id": "shelf_tag",
-   "q": "shelf price label"
+   "q": "shelf price label",
+   "file": "File:Back of a Hanshow Nebular Pro 437Q-N electronic shelf label.jpg",
+   "credit": "Siarhei V",
+   "license": "CC BY-SA 4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Back_of_a_Hanshow_Nebular_Pro_437Q-N_electronic_shelf_label.jpg"
   },
   {
    "id": "wheel",
-   "q": "steering wheel"
+   "q": "steering wheel",
+   "file": "File:Volvo steering wheel.jpg",
+   "credit": "SamH",
+   "license": "CC BY-SA 3.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Volvo_steering_wheel.jpg"
   },
   {
    "id": "cashier",
-   "q": "supermarket cashier"
+   "q": "supermarket cashier",
+   "file": "File:Cashier counter at SM Supermarket (2024-01-27).jpg",
+   "credit": "Wide Awake!",
+   "license": "CC BY 4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Cashier_counter_at_SM_Supermarket_(2024-01-27).jpg"
   },
   {
    "id": "cart",
-   "q": "shopping cart"
+   "q": "shopping cart",
+   "file": "File:Shopping cart anmd shelter.png",
+   "credit": "Curlyrnd",
+   "license": "CC BY-SA 4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Shopping_cart_anmd_shelter.png"
   },
   {
    "id": "sheep",
-   "q": "sheep"
+   "q": "sheep",
+   "file": "File:Flock of sheep.jpg",
+   "credit": "Keith Weller",
+   "license": "Public domain",
+   "page": "https://commons.wikimedia.org/wiki/File:Flock_of_sheep.jpg"
   },
   {
    "id": "cash",
-   "q": "dollar bills"
+   "q": "dollar bills",
+   "file": "File:Left hand holding several $100 bills.jpg",
+   "credit": "Fanti Salms",
+   "license": "CC BY-SA 4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Left_hand_holding_several_$100_bills.jpg"
   },
   {
    "id": "tag60",
@@ -209,11 +297,19 @@
   },
   {
    "id": "candles",
-   "q": "birthday candles"
+   "q": "birthday candles",
+   "file": "File:Banksia Birthday Candles.jpg",
+   "credit": "Melburnian",
+   "license": "CC BY 2.5",
+   "page": "https://commons.wikimedia.org/wiki/File:Banksia_Birthday_Candles.jpg"
   },
   {
    "id": "phone_store",
-   "q": "mobile phone shop"
+   "q": "mobile phone shop",
+   "file": "File:Mobile phone shops on Northgate and Prebend Row, Darlington (21st November 2025).jpg",
+   "credit": "Mtaylor848",
+   "license": "CC BY-SA 4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Mobile_phone_shops_on_Northgate_and_Prebend_Row,_Darlington_(21st_November_2025).jpg"
   }
  ]
 }
