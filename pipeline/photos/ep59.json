@@ -2,91 +2,179 @@
  "photos": [
   {
    "id": "birthday_cake",
-   "q": "birthday cake candles"
+   "q": "birthday cake candles",
+   "file": "File:Italy - birthday cake with candles 5.jpg",
+   "credit": "Francesca Cesa Bianchi, Milano",
+   "license": "CC BY-SA 3.0 it",
+   "page": "https://commons.wikimedia.org/wiki/File:Italy_-_birthday_cake_with_candles_5.jpg"
   },
   {
    "id": "finish_line",
-   "q": "finish line race"
+   "q": "finish line race",
+   "file": "File:Sausage race finish line.jpg",
+   "credit": "jimcchou",
+   "license": "CC BY 2.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Sausage_race_finish_line.jpg"
   },
   {
    "id": "document",
-   "q": "financial statement document"
+   "q": "financial statement document",
+   "file": "File:Kia Motors Financial Statements 10 years statistics.png",
+   "credit": "917ph",
+   "license": "CC0",
+   "page": "https://commons.wikimedia.org/wiki/File:Kia_Motors_Financial_Statements_10_years_statistics.png"
   },
   {
    "id": "old_phone",
-   "q": "rotary telephone"
+   "q": "rotary telephone",
+   "file": "File:Telefon BW 2012-02-18 13-44-32.JPG",
+   "credit": "Berthold Werner",
+   "license": "CC BY-SA 3.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Telefon_BW_2012-02-18_13-44-32.JPG"
   },
   {
    "id": "check",
-   "q": "bank check"
+   "q": "bank check",
+   "file": "File:Getty Images, Bank check, Rostov-on-Don, Russia.jpg",
+   "credit": "Vyacheslav Argenberg",
+   "license": "CC BY 4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Getty_Images,_Bank_check,_Rostov-on-Don,_Russia.jpg"
   },
   {
    "id": "vending_machine",
-   "q": "vending machine"
+   "q": "vending machine",
+   "file": "File:Vending machine, Rostock (LRM 20201205 124620).jpg",
+   "credit": "Matti Blume",
+   "license": "CC BY-SA 4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Vending_machine,_Rostock_(LRM_20201205_124620).jpg"
   },
   {
    "id": "factory",
-   "q": "factory workers 1970s"
+   "q": "factory workers 1970s",
+   "file": "File:A team of workers assemble engines at a tractor factory in Syria, 1974.jpg",
+   "credit": "Unknown authorUnknown author",
+   "license": "Public domain",
+   "page": "https://commons.wikimedia.org/wiki/File:A_team_of_workers_assemble_engines_at_a_tractor_factory_in_Syria,_1974.jpg"
   },
   {
    "id": "lunchbox",
-   "q": "lunch box"
+   "q": "lunch box",
+   "file": "File:Box-veggies-and-two-apples.jpg",
+   "credit": "Hay Kranen",
+   "license": "CC0",
+   "page": "https://commons.wikimedia.org/wiki/File:Box-veggies-and-two-apples.jpg"
   },
   {
    "id": "capitol",
-   "q": "United States Capitol"
+   "q": "United States Capitol",
+   "file": "File:Capitol Building Full View.jpg",
+   "credit": "Noclip",
+   "license": "Public domain",
+   "page": "https://commons.wikimedia.org/wiki/File:Capitol_Building_Full_View.jpg"
   },
   {
    "id": "ssa",
-   "q": "Social Security card"
+   "q": "Social Security card",
+   "file": "File:Social Security card (09-61).jpg",
+   "credit": "N Giovannucci",
+   "license": "CC BY-SA 4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Social_Security_card_(09-61).jpg"
   },
   {
    "id": "congress",
-   "q": "United States House of Representatives chamber"
+   "q": "United States House of Representatives chamber",
+   "file": "File:United States House of Representatives chamber.jpg",
+   "credit": "United States House of Representatives or Office of the Speaker of the House",
+   "license": "Public domain",
+   "page": "https://commons.wikimedia.org/wiki/File:United_States_House_of_Representatives_chamber.jpg"
   },
   {
    "id": "calendar_1960",
-   "q": "wall calendar"
+   "q": "wall calendar",
+   "file": "File:WallCalendar.jpg",
+   "credit": "Claudio Elias",
+   "license": "Public domain",
+   "page": "https://commons.wikimedia.org/wiki/File:WallCalendar.jpg"
   },
   {
    "id": "marathon",
-   "q": "marathon runners"
+   "q": "marathon runners",
+   "file": "File:Human running gait - terminal swing to heel strike (runner with Asics Metaspeed Edge Paris - 2024 Ljubljana Marathon).jpg",
+   "credit": "Petar Milošević",
+   "license": "CC BY-SA 4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Human_running_gait_-_terminal_swing_to_heel_strike_(runner_with_Asics_Metaspeed_Edge_Paris_-_2024_Ljubljana_Marathon).jpg"
   },
   {
    "id": "laptop",
-   "q": "laptop computer"
+   "q": "laptop computer",
+   "file": "File:Laptop der Marke exone go 20240203 HOF06886 RAW-Export 000276.png",
+   "credit": "PantheraLeo1359531",
+   "license": "CC BY 4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Laptop_der_Marke_exone_go_20240203_HOF06886_RAW-Export_000276.png"
   },
   {
    "id": "older_couple",
-   "q": "senior couple"
+   "q": "senior couple",
+   "file": "File:Senior couple in love on a farm.jpg",
+   "credit": "Shixart1985",
+   "license": "CC BY 2.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Senior_couple_in_love_on_a_farm.jpg"
   },
   {
    "id": "empty_lunchbox",
-   "q": "empty plate"
+   "q": "empty plate",
+   "file": "File:Empty Food plate with minimal food wastage.jpg",
+   "credit": "Mallikarjunasj",
+   "license": "CC BY-SA 3.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Empty_Food_plate_with_minimal_food_wastage.jpg"
   },
   {
    "id": "old_photo_1940",
-   "q": "1940s street"
+   "q": "1940s street",
+   "file": "File:Street Plan of Grantham, Lincolnshire c. 1940s map references.jpg",
+   "credit": "S. L. Mitchell, Borough Engineer and Surveyor, Grantham, Lincolnshire",
+   "license": "Public domain",
+   "page": "https://commons.wikimedia.org/wiki/File:Street_Plan_of_Grantham,_Lincolnshire_c._1940s_map_references.jpg"
   },
   {
    "id": "vermont",
-   "q": "Vermont village"
+   "q": "Vermont village",
+   "file": "File:Vermont Covered Bridge, Old Sturbridge Village MA.jpg",
+   "credit": "John Phelan",
+   "license": "CC BY 4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Vermont_Covered_Bridge,_Old_Sturbridge_Village_MA.jpg"
   },
   {
    "id": "suitcase",
-   "q": "suitcase"
+   "q": "suitcase",
+   "file": "File:Suitcase BW 2025-08-17 14-54-11.jpg",
+   "credit": "Berthold Werner",
+   "license": "CC BY-SA 4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Suitcase_BW_2025-08-17_14-54-11.jpg"
   },
   {
    "id": "napkin",
-   "q": "paper napkin"
+   "q": "paper napkin",
+   "file": "File:Table utensils wrapped in a paper napkin 2.jpg",
+   "credit": "Ser Amantio di Nicolao",
+   "license": "CC BY-SA 4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Table_utensils_wrapped_in_a_paper_napkin_2.jpg"
   },
   {
    "id": "office_building",
-   "q": "corporate office building"
+   "q": "corporate office building",
+   "file": "File:Cummins Corporate Office Building - 2008-08-25 - Elizabeth Nicodemus.jpg",
+   "credit": "Elizabeth Nicodemus",
+   "license": "CC BY-SA 2.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Cummins_Corporate_Office_Building_-_2008-08-25_-_Elizabeth_Nicodemus.jpg"
   },
   {
    "id": "scale",
-   "q": "balance scale"
+   "q": "balance scale",
+   "file": "File:Balance scale IMGP9755.jpg",
+   "credit": "Nikodem Nijaki",
+   "license": "CC BY-SA 3.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Balance_scale_IMGP9755.jpg"
   },
   {
    "id": "handshake",
@@ -94,79 +182,155 @@
   },
   {
    "id": "raccoon",
-   "q": "raccoon"
+   "q": "raccoon",
+   "file": "File:Raccoon (Procyon lotor) 2.jpg",
+   "credit": "Darkone",
+   "license": "CC BY-SA 2.5",
+   "page": "https://commons.wikimedia.org/wiki/File:Raccoon_(Procyon_lotor)_2.jpg"
   },
   {
    "id": "umbrella",
-   "q": "umbrella rain"
+   "q": "umbrella rain",
+   "file": "File:A man walks through heavy rain under an umbrella in Kigali, Rwanda. Emmanuel Kwizera.jpg",
+   "credit": "Emmanuelkwizera",
+   "license": "CC BY-SA 4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:A_man_walks_through_heavy_rain_under_an_umbrella_in_Kigali,_Rwanda._Emmanuel_Kwizera.jpg"
   },
   {
    "id": "paycheck",
-   "q": "pay stub"
+   "q": "pay stub",
+   "file": "File:Erwin Mills 1956 Pay Stub, Falls, North Carolina.jpg",
+   "credit": "Paultbarham",
+   "license": "CC BY-SA 4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Erwin_Mills_1956_Pay_Stub,_Falls,_North_Carolina.jpg"
   },
   {
    "id": "jar",
-   "q": "empty glass jar"
+   "q": "empty glass jar",
+   "file": "File:Empty Clear Jar (51330638811).jpg",
+   "credit": "Alabama Extension",
+   "license": "CC0",
+   "page": "https://commons.wikimedia.org/wiki/File:Empty_Clear_Jar_(51330638811).jpg"
   },
   {
    "id": "picnic",
-   "q": "picnic basket"
+   "q": "picnic basket",
+   "file": "File:Two children at table with picnic basket - Some Little Cooks and What They Did (1912) - Josephine Bruce.jpg",
+   "credit": "Josephine Bruce",
+   "license": "Public domain",
+   "page": "https://commons.wikimedia.org/wiki/File:Two_children_at_table_with_picnic_basket_-_Some_Little_Cooks_and_What_They_Did_(1912)_-_Josephine_Bruce.jpg"
   },
   {
    "id": "name_tag",
-   "q": "name tag badge"
+   "q": "name tag badge",
+   "file": "File:Jukun Wikipedia Outreach Name Tag.png",
+   "credit": "Kambai Akau",
+   "license": "CC BY-SA 4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Jukun_Wikipedia_Outreach_Name_Tag.png"
   },
   {
    "id": "porch",
-   "q": "house front porch"
+   "q": "house front porch",
+   "file": "File:VIEW OF FERRETTO HOUSE FRONT PORCH LOOKING SOUTH. - Peter Dalton Ranch, Ferretto House, 9005 South Virginia Street, Reno, Washoe County, NV HABS NEV,16-RENO,2B-7.tif",
+   "credit": "https://www.loc.gov/pictures/item/nv0157.photos.048939p",
+   "license": "Public domain",
+   "page": "https://commons.wikimedia.org/wiki/File:VIEW_OF_FERRETTO_HOUSE_FRONT_PORCH_LOOKING_SOUTH._-_Peter_Dalton_Ranch,_Ferretto_House,_9005_South_Virginia_Street,_Reno,_Washoe_County,_NV_HABS_NEV,16-RENO,2B-7.tif"
   },
   {
    "id": "lunch_bag",
-   "q": "paper lunch bag"
+   "q": "paper lunch bag",
+   "file": "File:HK Kwun Tong Lunch take-away curry chicken potato rice milktea cup cover plastic spoon paper bag sugar box Nov 2018 IX2 02.jpg",
+   "credit": "Isovevrhoral WOODS",
+   "license": "CC BY-SA 4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:HK_Kwun_Tong_Lunch_take-away_curry_chicken_potato_rice_milktea_cup_cover_plastic_spoon_paper_bag_sugar_box_Nov_2018_IX2_02.jpg"
   },
   {
    "id": "old_worker",
-   "q": "elderly worker"
+   "q": "elderly worker",
+   "file": "File:Elderly worker in front of a shop, NINO F Scholten Porte Entree 401-449 33.tiff",
+   "credit": "Frank Scholten",
+   "license": "Public domain",
+   "page": "https://commons.wikimedia.org/wiki/File:Elderly_worker_in_front_of_a_shop,_NINO_F_Scholten_Porte_Entree_401-449_33.tiff"
   },
   {
    "id": "hospital",
-   "q": "hospital corridor"
+   "q": "hospital corridor",
+   "file": "File:Hospital corridor in Turkey.jpg",
+   "credit": "Eyluleyel",
+   "license": "CC BY-SA 4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Hospital_corridor_in_Turkey.jpg"
   },
   {
    "id": "boss_office",
-   "q": "office desk manager"
+   "q": "office desk manager",
+   "file": "File:J K Korkeakivi, manager of SOK's office in Oulu 1940 (JOKAKAL3B-4402).tif",
+   "credit": "https://finna.fi/Record/museovirasto.925DF1B86EA19B2CDBE707FBEC31866D",
+   "license": "CC BY 4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:J_K_Korkeakivi,_manager_of_SOK%27s_office_in_Oulu_1940_(JOKAKAL3B-4402).tif"
   },
   {
    "id": "dial",
-   "q": "volume knob dial"
+   "q": "volume knob dial",
+   "file": "File:Radio volume knob 20180320.jpg",
+   "credit": "Santeri Viinamäki",
+   "license": "CC BY-SA 4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Radio_volume_knob_20180320.jpg"
   },
   {
    "id": "growth_plant",
-   "q": "plant growing"
+   "q": "plant growing",
+   "file": "File:Plant growing from wood.jpg",
+   "credit": "www.Pixel.la Free Stock Photos",
+   "license": "CC0",
+   "page": "https://commons.wikimedia.org/wiki/File:Plant_growing_from_wood.jpg"
   },
   {
    "id": "chart",
-   "q": "financial chart screen"
+   "q": "financial chart screen",
+   "file": "File:Financial Charts of NGU 2016 3.png",
+   "credit": "Unknown authorUnknown author",
+   "license": "Public domain",
+   "page": "https://commons.wikimedia.org/wiki/File:Financial_Charts_of_NGU_2016_3.png"
   },
   {
    "id": "boat",
-   "q": "small boat"
+   "q": "small boat",
+   "file": "File:Phayao - Small rowing boat moored on shores of Phayao Lake Jan 2024.jpg",
+   "credit": "Dominic Nelson",
+   "license": "CC BY-SA 4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Phayao_-_Small_rowing_boat_moored_on_shores_of_Phayao_Lake_Jan_2024.jpg"
   },
   {
    "id": "dol",
-   "q": "United States Department of Labor building"
+   "q": "United States Department of Labor building",
+   "file": "File:Frances Perkins Building of the United States Department of Labor in Washington, D.C. - 5.jpg",
+   "credit": "US Department of Labor",
+   "license": "CC BY 2.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Frances_Perkins_Building_of_the_United_States_Department_of_Labor_in_Washington,_D.C._-_5.jpg"
   },
   {
    "id": "runner_finish",
-   "q": "runner crossing finish line"
+   "q": "runner crossing finish line",
+   "file": "File:Mardi Gras Marathon Crossing Finish Line Wide.jpg",
+   "credit": "Mike Spille",
+   "license": "CC BY 2.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Mardi_Gras_Marathon_Crossing_Finish_Line_Wide.jpg"
   },
   {
    "id": "hourglass",
-   "q": "hourglass"
+   "q": "hourglass",
+   "file": "File:Wooden hourglass 3.jpg",
+   "credit": "User:S Sepp",
+   "license": "CC BY-SA 3.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Wooden_hourglass_3.jpg"
   },
   {
    "id": "sports_bet",
-   "q": "football stadium"
+   "q": "football stadium",
+   "file": "File:Petrovskiy football stadium in SPB.jpg",
+   "credit": "Florstein (Telegram:WikiPhoto.Space)",
+   "license": "CC BY-SA 4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Petrovskiy_football_stadium_in_SPB.jpg"
   }
  ]
 }
