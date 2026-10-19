@@ -13,7 +13,7 @@ import {Share} from '../props7';
 import {AppleTree, Paycheck, Scale, Tombstone, Yacht} from '../props8';
 
 type SP = Omit<StickProps, 'acc' | 'seed'>;
-const Dave: React.FC<SP> = (p) => <Stick acc={['hair']} seed={7} {...p} />;
+const Dave: React.FC<SP> = (p) => <Stick big seed={7} {...p} />;
 const Richie: React.FC<SP> = (p) => <Stick acc={['shades', 'tie']} seed={60} {...p} />;
 const Banker: React.FC<SP> = (p) => <Stick acc={['tophat', 'monocle', 'tie']} seed={31} {...p} />;
 const Buffett: React.FC<SP> = (p) => <Stick acc={['glasses', 'tie']} seed={79} {...p} />;
@@ -97,9 +97,9 @@ export const Ep13: React.FC = () => {
   {
     const pv = [w('o6', 'buy'), w('o6', 'borrow'), w('o6', 'die')];
     const bth = w('o6', 'both');
-    pv.forEach((x) => q(x, 'stamp', 0.55));
-    q(bth, 'pop', 0.5);
-    scene(A('o6'), () => (
+    if (0) pv.forEach((x) => q(x, 'stamp', 0.55));
+    if (0) q(bth, 'pop', 0.5);
+    if (0) scene(A('o6'), () => (
       <AbsoluteFill>
         <Board />
         <Svg>
