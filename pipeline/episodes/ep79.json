@@ -1,0 +1,1962 @@
+{
+ "id": "ep79",
+ "title": "Why Rich Kids Stay Rich and Poor Kids Stay Poor",
+ "voice": "chatterbox",
+ "upgraded": "2026-10-19 UPGRADE.md v2",
+ "sources": [
+  "Chetty, Grusky, Hell, Hendren, Manduca, Narang - The Fading American Dream: Trends in Absolute Income Mobility Since 1940 (Science 2017): ~90% of 1940 cohort vs ~50% of 1980s cohort out-earn parents",
+  "Bell, Chetty, Jaravel, Petkova, Van Reenen - Who Becomes an Inventor in America? (QJE 2019): top 1% children ~10x more likely to become inventors than bottom half ('Lost Einsteins')",
+  "Chetty et al. - Social Capital I & II (Nature, Aug 2022): economic connectedness strongest predictor of upward mobility; +~20% adult income",
+  "Redfin survey (May 2024): ~1 in 4 Gen Z/millennial recent homebuyers used family cash gift or inheritance for down payment",
+  "Chetty, Grusky, Hell, Hendren, Manduca, Narang - The Fading American Dream: Trends in Absolute Income Mobility Since 1940 (Science 2017): ~90% of 1940 cohort vs ~50% of 1980s cohort out-earn parents",
+  "Bell, Chetty, Jaravel, Petkova, Van Reenen - Who Becomes an Inventor in America? (QJE 2019): top 1% children ~10x more likely to become inventors than bottom half ('Lost Einsteins')",
+  "Chetty et al. - Social Capital I & II (Nature, Aug 2022): economic connectedness strongest predictor of upward mobility; +~20% adult income",
+  "Redfin survey (May 2024): ~1 in 4 Gen Z/millennial recent homebuyers used family cash gift or inheritance for down payment"
+ ],
+ "youtube": {
+  "title": "Why Rich Kids Stay Rich and Poor Kids Stay Poor",
+  "hook": "Same class same teacher. Today he owns two apartments and I own a toaster. Here are the 3 things rich families pass down that aren't money.",
+  "tags": []
+ },
+ "beats": [
+  {
+   "id": "o1",
+   "text": "This is Chad. We sat next to each other in school. Same class. Same teacher. Same terrible cafeteria pizza.",
+   "host": true,
+   "mood": "happy",
+   "pose": "present",
+   "pic": {
+    "id": "classroom",
+    "at": "school",
+    "look": "polaroid",
+    "label": "same class"
+   },
+   "sfx": [
+    {
+     "s": "ding",
+     "at": "Chad"
+    },
+    {
+     "s": "pop",
+     "at": "teacher"
+    },
+    {
+     "s": "boing",
+     "at": "pizza"
+    }
+   ],
+   "pause": 0.15
+  },
+  {
+   "id": "o2",
+   "text": "Today Chad owns two apartments and a company. And I own a toaster. A nice toaster. But a toaster.",
+   "host": true,
+   "mood": "tired",
+   "pose": "shrug",
+   "pic": {
+    "id": "toaster",
+    "at": "toaster",
+    "look": "sticker"
+   },
+   "slam": {
+    "t": "2 APARTMENTS vs 1 TOASTER",
+    "at": "toaster"
+   },
+   "sfx": [
+    {
+     "s": "cash",
+     "at": "apartments"
+    },
+    {
+     "s": "boing",
+     "at": "toaster"
+    },
+    {
+     "s": "trombone",
+     "at": "toaster#3"
+    }
+   ],
+   "pause": 0.15
+  },
+  {
+   "id": "o3",
+   "text": "And Chad loves to say he made it all on his own.",
+   "card": {
+    "t": "\"I made it on my own.\"",
+    "dark": true
+   },
+   "sfx": [
+    {
+     "s": "scratch",
+     "at": "loves"
+    },
+    {
+     "s": "pack/01_boom",
+     "at": "own"
+    }
+   ],
+   "pause": 0.3
+  },
+  {
+   "id": "o4",
+   "text": "By the end of this video you'll know the three things rich families pass to their kids that aren't money and the one you can start giving tonight for free.",
+   "host": true,
+   "mood": "suspicious",
+   "pose": "point_r",
+   "slam": {
+    "t": "3 THINGS. NOT MONEY.",
+    "at": "aren't"
+   },
+   "sfx": [
+    {
+     "s": "ding",
+     "at": "three"
+    },
+    {
+     "s": "drumroll",
+     "at": "tonight"
+    },
+    {
+     "s": "boom",
+     "at": "free"
+    }
+   ],
+   "pause": 0.15
+  },
+  {
+   "id": "o5",
+   "text": "Because it's not that rich kids are smarter. They're not. It's that they start the race already wearing running shoes.",
+   "host": true,
+   "mood": "smug",
+   "pose": "point_up",
+   "pic": {
+    "id": "sneakers",
+    "at": "shoes",
+    "look": "circle"
+   },
+   "zoom": {
+    "in": "running",
+    "out": "shoes"
+   },
+   "sfx": [
+    {
+     "s": "scratch",
+     "at": "smarter"
+    },
+    {
+     "s": "whoosh",
+     "at": "race"
+    },
+    {
+     "s": "boom",
+     "at": "shoes"
+    }
+   ],
+   "pause": 0.15
+  },
+  {
+   "id": "o6",
+   "text": "But most people click away before the part that matters which is exactly how the race stays the same.",
+   "host": true,
+   "mood": "worried",
+   "pose": "hips",
+   "sfx": [
+    {
+     "s": "whoosh",
+     "at": "click"
+    },
+    {
+     "s": "sting",
+     "at": "same"
+    }
+   ],
+   "pause": 0.3
+  },
+  {
+   "id": "c1a",
+   "text": "So let me tell you Chad's story. The way Chad tells it at parties.",
+   "chapter": "Chad Made It On His Own",
+   "pic": {
+    "id": "party",
+    "at": "parties",
+    "look": "tape"
+   },
+   "sfx": [
+    {
+     "s": "ding",
+     "at": "story"
+    },
+    {
+     "s": "crowd",
+     "at": "parties"
+    }
+   ]
+  },
+  {
+   "id": "c1b",
+   "text": "After college Chad started a business selling fancy dog shampoo. Out of his garage. Just him and a dream.",
+   "host": true,
+   "mood": "grin",
+   "pose": "present",
+   "pic": {
+    "id": "dog_bath",
+    "at": "dog",
+    "look": "polaroid",
+    "label": "the dream"
+   },
+   "sfx": [
+    {
+     "s": "pop",
+     "at": "business"
+    },
+    {
+     "s": "quack",
+     "at": "shampoo"
+    },
+    {
+     "s": "pack/01_evolve_brassy_swell",
+     "at": "dream"
+    }
+   ]
+  },
+  {
+   "id": "c1c",
+   "text": "Now here's the version Chad skips. The garage belonged to his parents. And he lived there for free. For three years.",
+   "host": true,
+   "mood": "suspicious",
+   "pose": "point_r",
+   "pic": {
+    "id": "garage",
+    "at": "garage",
+    "look": "tape"
+   },
+   "zoom": {
+    "in": "free",
+    "out": "years"
+   },
+   "sfx": [
+    {
+     "s": "scratch",
+     "at": "skips"
+    },
+    {
+     "s": "ding",
+     "at": "parents"
+    },
+    {
+     "s": "boom",
+     "at": "years"
+    }
+   ]
+  },
+  {
+   "id": "n30",
+   "text": "His mom also made him lunch every day. Which honestly is the most underrated business investment in history.",
+   "host": true,
+   "mood": "grin",
+   "pose": "shrug",
+   "pic": {
+    "id": "lunch_bag",
+    "at": "lunch",
+    "look": "sticker"
+   },
+   "zoom": {
+    "in": "underrated",
+    "out": "investment"
+   },
+   "sfx": [
+    {
+     "s": "ding",
+     "at": "lunch"
+    },
+    {
+     "s": "boom",
+     "at": "history"
+    }
+   ]
+  },
+  {
+   "id": "n1",
+   "text": "Chad describing his startup journey.",
+   "meme": {
+    "t": "fine",
+    "a": "Started from the bottom (of my parents' house)",
+    "at": "startup"
+   },
+   "sfx": [
+    {
+     "s": "cricket",
+     "at": "journey"
+    }
+   ]
+  },
+  {
+   "id": "c1d",
+   "text": "And the money to start? A small loan. From his dad. Fifty thousand dollars. With no interest and no deadline and no angry phone calls.",
+   "host": true,
+   "mood": "shock",
+   "pose": "panic",
+   "slam": {
+    "t": "A 'SMALL' LOAN",
+    "at": "small"
+   },
+   "pic": {
+    "id": "check",
+    "at": "loan",
+    "look": "circle"
+   },
+   "sfx": [
+    {
+     "s": "pack/01_beating",
+     "at": "start"
+    },
+    {
+     "s": "cash",
+     "at": "Fifty"
+    },
+    {
+     "s": "cricket",
+     "at": "calls"
+    }
+   ]
+  },
+  {
+   "id": "n2",
+   "text": "When I needed fifty dollars my dad asked me what happened to the last fifty dollars.",
+   "host": true,
+   "mood": "tired",
+   "pose": "facepalm",
+   "zoom": {
+    "in": "last",
+    "out": "dollars#2"
+   },
+   "sfx": [
+    {
+     "s": "ding",
+     "at": "needed"
+    },
+    {
+     "s": "boom",
+     "at": "dollars#2"
+    }
+   ]
+  },
+  {
+   "id": "c1e",
+   "text": "The first business failed. Chad lost everything. And then he moved back into the garage and tried again.",
+   "pic": {
+    "id": "closed_sign",
+    "at": "failed",
+    "look": "tape"
+   },
+   "sfx": [
+    {
+     "s": "pack/02_evolve_brassy_drop_2",
+     "at": "failed"
+    },
+    {
+     "s": "trombone",
+     "at": "everything"
+    },
+    {
+     "s": "whoosh",
+     "at": "again"
+    }
+   ]
+  },
+  {
+   "id": "c1f",
+   "text": "The second business failed too. Garage. Again. The third one worked. And now that's the only one he talks about.",
+   "host": true,
+   "mood": "smug",
+   "pose": "shrug",
+   "sfx": [
+    {
+     "s": "pack/02_evolve_brassy_drop_2",
+     "at": "second"
+    },
+    {
+     "s": "ding",
+     "at": "third"
+    },
+    {
+     "s": "crowd",
+     "at": "worked"
+    },
+    {
+     "s": "boom",
+     "at": "about"
+    }
+   ]
+  },
+  {
+   "id": "n3",
+   "text": "Chad's business plan.",
+   "meme": {
+    "t": "brain",
+    "a": "Fail once",
+    "b": "Fail twice",
+    "c": "Garage was free the whole time",
+    "at": "plan"
+   },
+   "sfx": [
+    {
+     "s": "pack/01_processing",
+     "at": "plan"
+    }
+   ]
+  },
+  {
+   "id": "c1g",
+   "text": "Meanwhile me. I got my first job at sixteen. Flipping burgers. And some months my paycheck helped pay the rent at home.",
+   "host": true,
+   "mood": "sad",
+   "pose": "talk",
+   "pic": {
+    "id": "burger",
+    "at": "burgers",
+    "look": "polaroid",
+    "label": "first job"
+   },
+   "sfx": [
+    {
+     "s": "ding",
+     "at": "sixteen"
+    },
+    {
+     "s": "pop",
+     "at": "burgers"
+    },
+    {
+     "s": "cash",
+     "at": "rent"
+    }
+   ]
+  },
+  {
+   "id": "n31",
+   "text": "My mom worked two jobs. She left before I woke up and came home after I fell asleep. I knew her mostly from the notes on the fridge.",
+   "host": true,
+   "mood": "sad",
+   "pose": "talk",
+   "pic": {
+    "id": "sticky_note",
+    "at": "notes",
+    "look": "circle"
+   },
+   "sfx": [
+    {
+     "s": "tick",
+     "at": "two"
+    },
+    {
+     "s": "paper",
+     "at": "notes"
+    },
+    {
+     "s": "pack/01_beating",
+     "at": "fridge"
+    }
+   ]
+  },
+  {
+   "id": "c1h",
+   "text": "So when I had an idea for a business I didn't try. Not because I was lazy. Because if I failed there was no garage. There was just the street.",
+   "host": true,
+   "mood": "worried",
+   "pose": "hips",
+   "pic": {
+    "id": "street",
+    "at": "street",
+    "look": "tape"
+   },
+   "slam": {
+    "t": "NO GARAGE",
+    "at": "garage"
+   },
+   "sfx": [
+    {
+     "s": "cricket",
+     "at": "idea"
+    },
+    {
+     "s": "scratch",
+     "at": "failed"
+    },
+    {
+     "s": "pack/01_boom",
+     "at": "street"
+    }
+   ]
+  },
+  {
+   "id": "n4",
+   "text": "Chad and I both had ideas. Only one of us could afford to be wrong.",
+   "card": {
+    "t": "Only one of us could afford to be wrong.",
+    "dark": true
+   },
+   "sfx": [
+    {
+     "s": "pack/01_boom",
+     "at": "wrong"
+    }
+   ],
+   "pause": 0.5
+  },
+  {
+   "id": "n32",
+   "text": "Rich kids are allowed to fail like it's practice. Poor kids have to treat every try like it's the final exam.",
+   "pic": {
+    "id": "exam",
+    "at": "exam",
+    "look": "tape"
+   },
+   "sfx": [
+    {
+     "s": "ding",
+     "at": "practice"
+    },
+    {
+     "s": "tick",
+     "at": "final"
+    },
+    {
+     "s": "boom",
+     "at": "exam"
+    }
+   ]
+  },
+  {
+   "id": "c1i",
+   "text": "And here's the thing. Chad isn't a bad guy. He works hard. He really does. But hard work with a safety net is a completely different sport.",
+   "host": true,
+   "mood": "think",
+   "pose": "point_up",
+   "pic": {
+    "id": "trapeze",
+    "at": "net",
+    "look": "circle"
+   },
+   "zoom": {
+    "in": "different",
+    "out": "sport"
+   },
+   "sfx": [
+    {
+     "s": "ding",
+     "at": "hard"
+    },
+    {
+     "s": "boing",
+     "at": "net"
+    },
+    {
+     "s": "boom",
+     "at": "sport"
+    }
+   ]
+  },
+  {
+   "id": "n5",
+   "text": "It's like two guys walking on a tightrope. Same rope. Same skill. But one of them has a giant trampoline under him.",
+   "pic": {
+    "id": "tightrope",
+    "at": "tightrope",
+    "look": "polaroid"
+   },
+   "sfx": [
+    {
+     "s": "whoosh",
+     "at": "tightrope"
+    },
+    {
+     "s": "boing",
+     "at": "trampoline"
+    }
+   ]
+  },
+  {
+   "id": "n6",
+   "text": "Me versus Chad trying something risky.",
+   "meme": {
+    "t": "vs",
+    "a": "Me: one mistake = game over",
+    "b": "Chad: extra lives",
+    "at": "risky"
+   },
+   "sfx": [
+    {
+     "s": "pop",
+     "at": "risky"
+    }
+   ]
+  },
+  {
+   "id": "n33",
+   "text": "Chad's parents watching him fail for the second time.",
+   "meme": {
+    "t": "fine",
+    "a": "Character building",
+    "at": "parents"
+   },
+   "sfx": [
+    {
+     "s": "cricket",
+     "at": "second"
+    }
+   ]
+  },
+  {
+   "id": "c2a",
+   "text": "So that's the first thing rich kids get. Not money in the bank. A safety net. The freedom to fall.",
+   "chapter": "The Three Invisible Gifts",
+   "host": true,
+   "mood": "smug",
+   "pose": "point_up",
+   "slam": {
+    "t": "GIFT #1: A NET",
+    "at": "net"
+   },
+   "sfx": [
+    {
+     "s": "ding",
+     "at": "first"
+    },
+    {
+     "s": "stamp",
+     "at": "net"
+    },
+    {
+     "s": "pack/01_evolve_brassy_swell",
+     "at": "fall"
+    }
+   ]
+  },
+  {
+   "id": "c2b",
+   "text": "And when you can fall you can take risks. And when you can take risks you can win big. That's where most big money comes from.",
+   "sfx": [
+    {
+     "s": "whoosh",
+     "at": "fall"
+    },
+    {
+     "s": "coin",
+     "at": "risks"
+    },
+    {
+     "s": "cash",
+     "at": "big"
+    }
+   ]
+  },
+  {
+   "id": "c2c",
+   "text": "Even buying a first home. In one survey about one in four young buyers got family money or an inheritance to help with the down payment.",
+   "host": true,
+   "mood": "shock",
+   "pose": "point_r",
+   "pic": {
+    "id": "house_keys",
+    "at": "home",
+    "look": "tape"
+   },
+   "slam": {
+    "t": "1 IN 4",
+    "at": "four"
+   },
+   "sfx": [
+    {
+     "s": "ding",
+     "at": "home"
+    },
+    {
+     "s": "pack/02_deep",
+     "at": "four"
+    },
+    {
+     "s": "cash",
+     "at": "payment"
+    }
+   ]
+  },
+  {
+   "id": "n7",
+   "text": "Me finding out my coworker's house was a gift from grandma.",
+   "meme": {
+    "t": "fine",
+    "a": "Self-made homeowner",
+    "at": "grandma"
+   },
+   "sfx": [
+    {
+     "s": "cricket",
+     "at": "grandma"
+    }
+   ]
+  },
+  {
+   "id": "c2d",
+   "text": "Think about what that does. Chad skips ten years of rent. That money goes into a house. The house grows. And he's thirty with a head start the size of a building.",
+   "pic": {
+    "id": "apartment_bldg",
+    "at": "building",
+    "look": "polaroid"
+   },
+   "sfx": [
+    {
+     "s": "whoosh",
+     "at": "skips"
+    },
+    {
+     "s": "ding",
+     "at": "house#2"
+    },
+    {
+     "s": "pack/01_evolve_brassy_swell",
+     "at": "grows"
+    },
+    {
+     "s": "boom",
+     "at": "building"
+    }
+   ]
+  },
+  {
+   "id": "n34",
+   "text": "And if the house roof leaks Chad calls dad. If my roof leaks I call a credit card. Same problem. One costs nothing. The other costs twenty percent a year.",
+   "host": true,
+   "mood": "angry",
+   "pose": "point_r",
+   "pic": {
+    "id": "leak",
+    "at": "leaks",
+    "look": "tape"
+   },
+   "slam": {
+    "t": "DAD vs CREDIT CARD",
+    "at": "credit"
+   },
+   "sfx": [
+    {
+     "s": "pack/02_dial_up",
+     "at": "calls"
+    },
+    {
+     "s": "cash",
+     "at": "credit"
+    },
+    {
+     "s": "pack/02_deep",
+     "at": "twenty"
+    }
+   ]
+  },
+  {
+   "id": "c2e",
+   "text": "And now the second gift. This one is sneakier. It's who you know.",
+   "host": true,
+   "mood": "suspicious",
+   "pose": "hips",
+   "slam": {
+    "t": "GIFT #2: WHO YOU KNOW",
+    "at": "know"
+   },
+   "sfx": [
+    {
+     "s": "riser",
+     "at": "second"
+    },
+    {
+     "s": "pack/01_boom",
+     "at": "know"
+    }
+   ]
+  },
+  {
+   "id": "c2f",
+   "text": "Chad's first internship? His uncle's friend runs a bank. One phone call. Chad was in. He didn't even apply. He just showed up in a borrowed suit.",
+   "host": true,
+   "mood": "angry",
+   "pose": "talk",
+   "pic": {
+    "id": "bank_tower",
+    "at": "bank",
+    "look": "tape"
+   },
+   "sfx": [
+    {
+     "s": "ding",
+     "at": "uncle's"
+    },
+    {
+     "s": "pack/02_dial_up",
+     "at": "call"
+    },
+    {
+     "s": "stamp",
+     "at": "in"
+    }
+   ]
+  },
+  {
+   "id": "n8",
+   "text": "My first internship was at a car wash and my uncle's friend was a guy named Steve who owed my uncle forty dollars.",
+   "host": true,
+   "mood": "grin",
+   "pose": "shrug",
+   "pic": {
+    "id": "car_wash",
+    "at": "wash",
+    "look": "circle"
+   },
+   "zoom": {
+    "in": "forty",
+    "out": "dollars"
+   },
+   "sfx": [
+    {
+     "s": "boing",
+     "at": "Steve"
+    },
+    {
+     "s": "coin",
+     "at": "forty"
+    },
+    {
+     "s": "boom",
+     "at": "dollars"
+    }
+   ]
+  },
+  {
+   "id": "c2g",
+   "text": "And those internships are often unpaid. Which sounds fair until you ask who can afford to work for free all summer. Kids whose parents pay their rent.",
+   "host": true,
+   "mood": "suspicious",
+   "pose": "point_r",
+   "sfx": [
+    {
+     "s": "cricket",
+     "at": "unpaid"
+    },
+    {
+     "s": "pack/01_processing",
+     "at": "afford"
+    },
+    {
+     "s": "cash",
+     "at": "rent"
+    }
+   ]
+  },
+  {
+   "id": "n9",
+   "text": "Unpaid internships explained.",
+   "meme": {
+    "t": "drake",
+    "a": "Paying interns",
+    "b": "Paying interns in experience",
+    "at": "explained"
+   },
+   "sfx": [
+    {
+     "s": "pop",
+     "at": "explained"
+    }
+   ]
+  },
+  {
+   "id": "c2h",
+   "text": "A famous economist named Raj Chetty studied this with billions of real friendships. And he found something wild.",
+   "pic": {
+    "id": "stanford",
+    "at": "economist",
+    "look": "news",
+    "label": "Opportunity Insights"
+   },
+   "sfx": [
+    {
+     "s": "paper",
+     "at": "studied"
+    },
+    {
+     "s": "drumroll",
+     "at": "wild"
+    }
+   ]
+  },
+  {
+   "id": "c2i",
+   "text": "Poor kids who grow up with friends from richer families earn a lot more later in life. Not because their friends give them money. Because their friends show them what's possible.",
+   "host": true,
+   "mood": "happy",
+   "pose": "present",
+   "slam": {
+    "t": "FRIENDS = MOBILITY",
+    "at": "friends#2"
+   },
+   "sfx": [
+    {
+     "s": "ding",
+     "at": "friends"
+    },
+    {
+     "s": "pack/03_evolve_boom_brass_d",
+     "at": "possible"
+    }
+   ]
+  },
+  {
+   "id": "n10",
+   "text": "That kid who sees his friend's mom is a lawyer starts thinking maybe I could be a lawyer. That kid who never meets a lawyer never even asks the question.",
+   "pic": {
+    "id": "lawyer",
+    "at": "lawyer",
+    "look": "polaroid"
+   },
+   "sfx": [
+    {
+     "s": "ding",
+     "at": "lawyer"
+    },
+    {
+     "s": "cricket",
+     "at": "question"
+    }
+   ]
+  },
+  {
+   "id": "n35",
+   "text": "Nobody in my family had ever met a banker. Except the one who called about the overdraft.",
+   "host": true,
+   "mood": "tired",
+   "pose": "facepalm",
+   "zoom": {
+    "in": "Except",
+    "out": "overdraft"
+   },
+   "sfx": [
+    {
+     "s": "ding",
+     "at": "banker"
+    },
+    {
+     "s": "boom",
+     "at": "overdraft"
+    }
+   ]
+  },
+  {
+   "id": "c2j",
+   "text": "Chetty's team also found that kids from the richest families are about ten times more likely to become inventors than kids from the bottom half. Same talent. Different exposure.",
+   "pic": {
+    "id": "lightbulb",
+    "at": "inventors",
+    "look": "sticker"
+   },
+   "slam": {
+    "t": "10x MORE INVENTORS",
+    "at": "ten"
+   },
+   "sfx": [
+    {
+     "s": "ding",
+     "at": "inventors"
+    },
+    {
+     "s": "pack/02_deep",
+     "at": "ten"
+    },
+    {
+     "s": "stamp",
+     "at": "exposure"
+    }
+   ]
+  },
+  {
+   "id": "n11",
+   "text": "They call those missing kids Lost Einsteins. Kids who could have invented something huge but nobody ever showed them how.",
+   "card": {
+    "t": "Lost Einsteins.",
+    "dark": true
+   },
+   "sfx": [
+    {
+     "s": "pack/01_boom",
+     "at": "Einsteins"
+    }
+   ],
+   "pause": 0.5
+  },
+  {
+   "id": "n12",
+   "text": "Somewhere out there is a Lost Einstein who could have cured something and instead he's really good at Fortnite.",
+   "host": true,
+   "mood": "grin",
+   "pose": "point_r",
+   "pic": {
+    "id": "gamer",
+    "at": "Fortnite",
+    "look": "tape"
+   },
+   "zoom": {
+    "in": "really",
+    "out": "Fortnite"
+   },
+   "sfx": [
+    {
+     "s": "click",
+     "at": "Fortnite"
+    },
+    {
+     "s": "boom",
+     "at": "Fortnite"
+    }
+   ]
+  },
+  {
+   "id": "n36",
+   "text": "Me finding out talent is everywhere but chances are not.",
+   "meme": {
+    "t": "vs",
+    "a": "Talent: everywhere",
+    "b": "Chances: one zip code",
+    "at": "talent"
+   },
+   "sfx": [
+    {
+     "s": "pop",
+     "at": "talent"
+    }
+   ]
+  },
+  {
+   "id": "c2k",
+   "text": "And the third gift? This one isn't money and it isn't friends. It's what you hear at the dinner table.",
+   "host": true,
+   "mood": "think",
+   "pose": "think",
+   "pic": {
+    "id": "dinner_table",
+    "at": "table",
+    "look": "polaroid"
+   },
+   "slam": {
+    "t": "GIFT #3: THE DINNER TABLE",
+    "at": "dinner"
+   },
+   "sfx": [
+    {
+     "s": "riser",
+     "at": "third"
+    },
+    {
+     "s": "ding",
+     "at": "table"
+    }
+   ]
+  },
+  {
+   "id": "c2l",
+   "text": "At Chad's dinner table they talked about stocks and rent and interest rates. Chad learned what a stock was before he could ride a bike.",
+   "pic": {
+    "id": "bicycle",
+    "at": "bike",
+    "look": "sticker"
+   },
+   "sfx": [
+    {
+     "s": "ding",
+     "at": "stocks"
+    },
+    {
+     "s": "cash",
+     "at": "rent"
+    },
+    {
+     "s": "boing",
+     "at": "bike"
+    }
+   ]
+  },
+  {
+   "id": "c2m",
+   "text": "At my dinner table we talked about money too. Mostly about how there wasn't any. And when a bill came we didn't open it. We put it on the fridge and stared at it.",
+   "host": true,
+   "mood": "sad",
+   "pose": "facepalm",
+   "pic": {
+    "id": "fridge",
+    "at": "fridge",
+    "look": "tape"
+   },
+   "sfx": [
+    {
+     "s": "cricket",
+     "at": "wasn't"
+    },
+    {
+     "s": "mail",
+     "at": "bill"
+    },
+    {
+     "s": "trombone",
+     "at": "stared"
+    }
+   ]
+  },
+  {
+   "id": "n37",
+   "text": "Nobody in my house ever said the word invest. We said the word stretch. As in we have to stretch this until Friday.",
+   "host": true,
+   "mood": "sad",
+   "pose": "shrug",
+   "slam": {
+    "t": "'STRETCH IT'",
+    "at": "stretch"
+   },
+   "pic": {
+    "id": "rubber_band",
+    "at": "stretch",
+    "look": "sticker"
+   },
+   "sfx": [
+    {
+     "s": "cricket",
+     "at": "invest"
+    },
+    {
+     "s": "boing",
+     "at": "stretch"
+    },
+    {
+     "s": "tick",
+     "at": "Friday"
+    }
+   ]
+  },
+  {
+   "id": "n13",
+   "text": "Me learning about investing at thirty from a guy on YouTube.",
+   "meme": {
+    "t": "vs",
+    "a": "Chad: stocks at age 8",
+    "b": "Me: stocks at age 30",
+    "at": "investing"
+   },
+   "sfx": [
+    {
+     "s": "pop",
+     "at": "investing"
+    }
+   ]
+  },
+  {
+   "id": "c2n",
+   "text": "So Chad grew up thinking money is a tool. I grew up thinking money is a monster. And you treat a tool very differently than you treat a monster.",
+   "host": true,
+   "mood": "smug",
+   "pose": "point_up",
+   "slam": {
+    "t": "TOOL vs MONSTER",
+    "at": "monster"
+   },
+   "zoom": {
+    "in": "tool#2",
+    "out": "monster#2"
+   },
+   "sfx": [
+    {
+     "s": "ding",
+     "at": "tool"
+    },
+    {
+     "s": "pack/01_beating",
+     "at": "monster"
+    },
+    {
+     "s": "boom",
+     "at": "monster#2"
+    }
+   ]
+  },
+  {
+   "id": "n14",
+   "text": "A tool you use. A monster you hide from. And money you hide from never grows.",
+   "card": {
+    "t": "Money you hide from never grows.",
+    "dark": true
+   },
+   "sfx": [
+    {
+     "s": "pack/01_boom",
+     "at": "grows"
+    }
+   ],
+   "pause": 0.5
+  },
+  {
+   "id": "c3a",
+   "text": "And here's why this matters more now than it did for our grandparents.",
+   "chapter": "Why The Ladder Got Taller",
+   "host": true,
+   "mood": "worried",
+   "pose": "talk",
+   "sfx": [
+    {
+     "s": "pack/01_beating",
+     "at": "matters"
+    }
+   ]
+  },
+  {
+   "id": "c3b",
+   "text": "If you were born in the nineteen forties you had about a ninety percent chance of earning more than your parents. Almost guaranteed.",
+   "pic": {
+    "id": "factory_1950",
+    "at": "forties",
+    "look": "polaroid",
+    "label": "grandpa's era"
+   },
+   "slam": {
+    "t": "~90%",
+    "at": "ninety"
+   },
+   "sfx": [
+    {
+     "s": "flip",
+     "at": "forties"
+    },
+    {
+     "s": "ding",
+     "at": "ninety"
+    },
+    {
+     "s": "crowd",
+     "at": "guaranteed"
+    }
+   ]
+  },
+  {
+   "id": "c3c",
+   "text": "If you were born in the eighties? About fifty percent. A coin flip. Flip a coin and find out if you'll do better than your mom.",
+   "host": true,
+   "mood": "shock",
+   "pose": "panic",
+   "pic": {
+    "id": "coin_flip",
+    "at": "coin",
+    "look": "circle"
+   },
+   "slam": {
+    "t": "~50%",
+    "at": "fifty"
+   },
+   "sfx": [
+    {
+     "s": "pack/02_deep",
+     "at": "fifty"
+    },
+    {
+     "s": "coin",
+     "at": "flip"
+    },
+    {
+     "s": "boom",
+     "at": "mom"
+    }
+   ]
+  },
+  {
+   "id": "n15",
+   "text": "My future being decided by a coin.",
+   "meme": {
+    "t": "fine",
+    "a": "Heads I'm middle class",
+    "at": "coin"
+   },
+   "sfx": [
+    {
+     "s": "coin",
+     "at": "coin"
+    }
+   ]
+  },
+  {
+   "id": "c3d",
+   "text": "Because back then a job could carry you all the way. A factory job bought a house. Now houses and stocks grow faster than paychecks. So the people who already own stuff pull ahead.",
+   "pic": {
+    "id": "stock_board",
+    "at": "stocks",
+    "look": "tape"
+   },
+   "sfx": [
+    {
+     "s": "ding",
+     "at": "factory"
+    },
+    {
+     "s": "pack/01_evolve_brassy_swell",
+     "at": "faster"
+    },
+    {
+     "s": "cash",
+     "at": "ahead"
+    }
+   ]
+  },
+  {
+   "id": "n38",
+   "text": "Grandpa could buy a house with one salary and a handshake. Today you need two salaries and a miracle and maybe a kidney.",
+   "pic": {
+    "id": "handshake",
+    "at": "handshake",
+    "look": "polaroid"
+   },
+   "sfx": [
+    {
+     "s": "ding",
+     "at": "handshake"
+    },
+    {
+     "s": "boing",
+     "at": "miracle"
+    },
+    {
+     "s": "boom",
+     "at": "kidney"
+    }
+   ]
+  },
+  {
+   "id": "c3e",
+   "text": "It's like a staircase where the rich take the escalator. Both are going up. But one is going up a lot faster. And the gap gets bigger every single floor.",
+   "pic": {
+    "id": "escalator",
+    "at": "escalator",
+    "look": "polaroid"
+   },
+   "sfx": [
+    {
+     "s": "whoosh",
+     "at": "escalator"
+    },
+    {
+     "s": "ding",
+     "at": "gap"
+    },
+    {
+     "s": "boom",
+     "at": "floor"
+    }
+   ]
+  },
+  {
+   "id": "n16",
+   "text": "Me on the stairs waving at Chad on the escalator.",
+   "meme": {
+    "t": "drake",
+    "a": "Climbing stairs with a paycheck",
+    "b": "Riding an escalator of assets",
+    "at": "escalator"
+   },
+   "sfx": [
+    {
+     "s": "pack/01_beating",
+     "at": "waving"
+    }
+   ]
+  },
+  {
+   "id": "c3f",
+   "text": "And then the kids of those kids start even further ahead. Chad's kid will get a garage. And a loan. And an uncle with a phone. That's how it stacks.",
+   "host": true,
+   "mood": "sad",
+   "pose": "shrug",
+   "zoom": {
+    "in": "stacks",
+    "out": "stacks"
+   },
+   "sfx": [
+    {
+     "s": "ding",
+     "at": "garage"
+    },
+    {
+     "s": "ding",
+     "at": "loan"
+    },
+    {
+     "s": "pack/02_dial_up",
+     "at": "phone"
+    },
+    {
+     "s": "boom",
+     "at": "stacks"
+    }
+   ]
+  },
+  {
+   "id": "c3g",
+   "text": "Now to be fair rich kids lose it too. There's an old saying. Shirtsleeves to shirtsleeves in three generations. Grandpa builds it. Dad grows it. And the grandkid spends it all on a boat.",
+   "pic": {
+    "id": "speedboat",
+    "at": "boat",
+    "look": "sticker"
+   },
+   "sfx": [
+    {
+     "s": "ding",
+     "at": "saying"
+    },
+    {
+     "s": "cash",
+     "at": "spends"
+    },
+    {
+     "s": "boing",
+     "at": "boat"
+    }
+   ]
+  },
+  {
+   "id": "n17",
+   "text": "So the money alone doesn't keep a family rich. The habits do. The net and the phone numbers and the dinner table. Lose those and the money leaks out.",
+   "host": true,
+   "mood": "think",
+   "pose": "point_up",
+   "slam": {
+    "t": "HABITS > MONEY",
+    "at": "habits"
+   },
+   "sfx": [
+    {
+     "s": "stamp",
+     "at": "habits"
+    },
+    {
+     "s": "pack/02_evolve_brassy_drop_2",
+     "at": "leaks"
+    }
+   ]
+  },
+  {
+   "id": "n39",
+   "text": "Lottery winners prove it. Some of them win millions and go broke in a few years. Money without the habits is a bucket with a hole in it.",
+   "pic": {
+    "id": "lottery",
+    "at": "Lottery",
+    "look": "tape"
+   },
+   "sfx": [
+    {
+     "s": "ding",
+     "at": "millions"
+    },
+    {
+     "s": "pack/02_evolve_brassy_drop_2",
+     "at": "broke"
+    },
+    {
+     "s": "boing",
+     "at": "hole"
+    }
+   ]
+  },
+  {
+   "id": "c3h",
+   "text": "Which is actually the best news in this whole video. Because habits are the one thing nobody can stop you from building.",
+   "host": true,
+   "mood": "happy",
+   "pose": "celebrate",
+   "zoom": {
+    "in": "nobody",
+    "out": "building"
+   },
+   "sfx": [
+    {
+     "s": "pack/01_evolve_brassy_swell",
+     "at": "best"
+    },
+    {
+     "s": "crowd",
+     "at": "building"
+    }
+   ]
+  },
+  {
+   "id": "n18",
+   "text": "Me realizing I can be the grandpa in this story.",
+   "meme": {
+    "t": "stonks",
+    "a": "GENERATION ONE",
+    "at": "grandpa"
+   },
+   "sfx": [
+    {
+     "s": "pack/03_evolve_boom_brass_d",
+     "at": "grandpa"
+    }
+   ]
+  },
+  {
+   "id": "c4a",
+   "text": "So how do you start the chain yourself? Quick reminder this is education and not advice.",
+   "chapter": "Start The Chain Yourself",
+   "host": true,
+   "mood": "happy",
+   "pose": "point_up",
+   "pic": {
+    "id": "chain",
+    "at": "chain",
+    "look": "circle"
+   },
+   "sfx": [
+    {
+     "s": "ding",
+     "at": "chain"
+    },
+    {
+     "s": "stamp",
+     "at": "advice"
+    }
+   ]
+  },
+  {
+   "id": "c4b",
+   "text": "First. Build your own small net. A little emergency fund. Even a few hundred dollars. Because a net is what lets you take a smart risk instead of panicking.",
+   "host": true,
+   "mood": "smug",
+   "pose": "present",
+   "pic": {
+    "id": "jar",
+    "at": "net",
+    "look": "sticker"
+   },
+   "slam": {
+    "t": "BUILD YOUR NET",
+    "at": "Build"
+   },
+   "sfx": [
+    {
+     "s": "stamp",
+     "at": "Build"
+    },
+    {
+     "s": "coin",
+     "at": "hundred"
+    },
+    {
+     "s": "boom",
+     "at": "panicking"
+    }
+   ]
+  },
+  {
+   "id": "n40",
+   "text": "Me building my emergency fund one coffee at a time.",
+   "meme": {
+    "t": "stonks",
+    "a": "$37 NET",
+    "at": "fund"
+   },
+   "sfx": [
+    {
+     "s": "cash",
+     "at": "fund"
+    }
+   ]
+  },
+  {
+   "id": "n19",
+   "text": "Chad's net was a garage. Yours can start as a jar. Jars count.",
+   "pic": {
+    "id": "coins_jar",
+    "at": "jar",
+    "look": "tape"
+   },
+   "sfx": [
+    {
+     "s": "coin",
+     "at": "jar"
+    },
+    {
+     "s": "ding",
+     "at": "count"
+    }
+   ]
+  },
+  {
+   "id": "c4c",
+   "text": "Second. Own something. Not just a paycheck. Even a tiny slice of an index fund. Because owning is the escalator and paychecks are the stairs.",
+   "host": true,
+   "mood": "happy",
+   "pose": "point_r",
+   "pic": {
+    "id": "plant",
+    "at": "Own",
+    "look": "polaroid"
+   },
+   "zoom": {
+    "in": "owning",
+    "out": "escalator"
+   },
+   "sfx": [
+    {
+     "s": "ding",
+     "at": "Own"
+    },
+    {
+     "s": "cash",
+     "at": "slice"
+    },
+    {
+     "s": "boom",
+     "at": "escalator"
+    }
+   ]
+  },
+  {
+   "id": "n20",
+   "text": "You don't need Chad's dad. You need to start before you feel ready. Time does the heavy lifting.",
+   "host": true,
+   "mood": "grin",
+   "pose": "thumbs",
+   "sfx": [
+    {
+     "s": "tick",
+     "at": "Time"
+    },
+    {
+     "s": "pack/01_evolve_brassy_swell",
+     "at": "lifting"
+    }
+   ]
+  },
+  {
+   "id": "n41",
+   "text": "If I had started at twenty instead of thirty my tiny monthly money would have had ten more years on the escalator. Ten years is a lot of floors.",
+   "host": true,
+   "mood": "tired",
+   "pose": "facepalm",
+   "pic": {
+    "id": "hourglass",
+    "at": "years",
+    "look": "circle"
+   },
+   "zoom": {
+    "in": "lot",
+    "out": "floors"
+   },
+   "sfx": [
+    {
+     "s": "tick",
+     "at": "twenty"
+    },
+    {
+     "s": "whoosh",
+     "at": "escalator"
+    },
+    {
+     "s": "boom",
+     "at": "floors"
+    }
+   ]
+  },
+  {
+   "id": "c4d",
+   "text": "Third. Go find your phone numbers. Talk to people who are where you want to be. Ask how they got there. Most people love telling that story. Even Chad.",
+   "pic": {
+    "id": "coffee_meet",
+    "at": "Talk",
+    "look": "tape"
+   },
+   "sfx": [
+    {
+     "s": "pack/02_dial_up",
+     "at": "phone"
+    },
+    {
+     "s": "ding",
+     "at": "Ask"
+    },
+    {
+     "s": "boing",
+     "at": "Chad"
+    }
+   ]
+  },
+  {
+   "id": "n21",
+   "text": "Me sending my first networking message.",
+   "meme": {
+    "t": "buttons",
+    "a": "Stay invisible",
+    "b": "Ask a stranger for coffee",
+    "at": "networking"
+   },
+   "sfx": [
+    {
+     "s": "pop",
+     "at": "networking"
+    }
+   ]
+  },
+  {
+   "id": "c4e",
+   "text": "Fourth. And this is the free one I promised. Change the dinner table. Talk about money out loud. With your kids. Your partner. Your little brother. Even if you're still learning.",
+   "host": true,
+   "mood": "happy",
+   "pose": "present",
+   "pic": {
+    "id": "family_talk",
+    "at": "table",
+    "look": "polaroid",
+    "label": "the free gift"
+   },
+   "slam": {
+    "t": "TALK ABOUT MONEY",
+    "at": "Talk"
+   },
+   "sfx": [
+    {
+     "s": "drumroll",
+     "at": "promised"
+    },
+    {
+     "s": "pack/01_boom",
+     "at": "dinner"
+    },
+    {
+     "s": "ding",
+     "at": "kids"
+    }
+   ]
+  },
+  {
+   "id": "n22",
+   "text": "Show a kid what a stock is. Let them see a bill get opened and paid. Let them watch you say no to something and explain why.",
+   "host": true,
+   "mood": "smug",
+   "pose": "point_up",
+   "pic": {
+    "id": "piggy_kid",
+    "at": "kid",
+    "look": "sticker"
+   },
+   "sfx": [
+    {
+     "s": "ding",
+     "at": "stock"
+    },
+    {
+     "s": "paper",
+     "at": "opened"
+    },
+    {
+     "s": "stamp",
+     "at": "no"
+    }
+   ]
+  },
+  {
+   "id": "n42",
+   "text": "My nephew is seven. Last week I showed him what one share of a company is. Now he thinks he owns the toy store. Kid's not wrong. He's a shareholder.",
+   "host": true,
+   "mood": "happy",
+   "pose": "celebrate",
+   "pic": {
+    "id": "toy_store",
+    "at": "toy",
+    "look": "tape"
+   },
+   "sfx": [
+    {
+     "s": "ding",
+     "at": "share"
+    },
+    {
+     "s": "crowd",
+     "at": "shareholder"
+    }
+   ]
+  },
+  {
+   "id": "n43",
+   "text": "My nephew after buying one share.",
+   "meme": {
+    "t": "stonks",
+    "a": "TOY STORE OWNER (0.0001%)",
+    "at": "nephew"
+   },
+   "sfx": [
+    {
+     "s": "pack/01_evolve_brassy_swell",
+     "at": "nephew"
+    }
+   ]
+  },
+  {
+   "id": "c4f",
+   "text": "That's how money stops being a monster in your family. One dinner at a time. And that costs exactly zero dollars.",
+   "card": {
+    "t": "One dinner at a time.",
+    "dark": true
+   },
+   "sfx": [
+    {
+     "s": "pack/01_boom",
+     "at": "dinner"
+    },
+    {
+     "s": "coin",
+     "at": "zero"
+    }
+   ],
+   "pause": 0.5
+  },
+  {
+   "id": "n23",
+   "text": "Me explaining compound interest to my cat because I don't have kids yet.",
+   "meme": {
+    "t": "fine",
+    "a": "He's learning",
+    "at": "cat"
+   },
+   "sfx": [
+    {
+     "s": "boing",
+     "at": "cat"
+    }
+   ]
+  },
+  {
+   "id": "r1",
+   "text": "So why do rich kids stay rich? Not because they're smarter. Because they get a net and a phone book and a dinner table that talks about money.",
+   "host": true,
+   "mood": "smug",
+   "pose": "point_up",
+   "zoom": {
+    "in": "dinner",
+    "out": "money"
+   },
+   "sfx": [
+    {
+     "s": "drumroll",
+     "at": "why"
+    },
+    {
+     "s": "ding",
+     "at": "net"
+    },
+    {
+     "s": "ding",
+     "at": "phone"
+    },
+    {
+     "s": "boom",
+     "at": "money"
+    }
+   ]
+  },
+  {
+   "id": "r2",
+   "text": "You might not have gotten those from your parents. But you can be the parent who gives them.",
+   "host": true,
+   "mood": "happy",
+   "pose": "thumbs",
+   "slam": {
+    "t": "BE GENERATION ONE",
+    "at": "parent"
+   },
+   "sfx": [
+    {
+     "s": "pack/03_evolve_boom_brass_d",
+     "at": "parent"
+    },
+    {
+     "s": "crowd",
+     "at": "them"
+    }
+   ]
+  },
+  {
+   "id": "r3",
+   "text": "Every rich family started with one person who decided the chain starts with me.",
+   "card": {
+    "t": "The chain starts with me.",
+    "dark": true
+   },
+   "sfx": [
+    {
+     "s": "pack/01_boom",
+     "at": "me"
+    }
+   ],
+   "pause": 0.5
+  },
+  {
+   "id": "r4",
+   "text": "Oh and Chad? He called me last week. His dog shampoo company needs investors. He said it's a small opportunity. I said I'll ask my uncle's friend Steve.",
+   "host": true,
+   "mood": "grin",
+   "pose": "shrug",
+   "sfx": [
+    {
+     "s": "pack/02_dial_up",
+     "at": "called"
+    },
+    {
+     "s": "quack",
+     "at": "shampoo"
+    },
+    {
+     "s": "boing",
+     "at": "Steve"
+    }
+   ]
+  },
+  {
+   "id": "r5",
+   "text": "Next time I find out why school spent twelve years teaching me about volcanoes and zero minutes teaching me how money works.",
+   "pic": {
+    "id": "school_bus",
+    "at": "school",
+    "look": "polaroid"
+   },
+   "sfx": [
+    {
+     "s": "ding",
+     "at": "school"
+    },
+    {
+     "s": "pack/02_deep",
+     "at": "zero"
+    }
+   ]
+  },
+  {
+   "id": "r6",
+   "text": "Subscribe. It's free. And unlike Chad's garage you don't need rich parents to get in.",
+   "host": true,
+   "mood": "grin",
+   "pose": "wave",
+   "zoom": {
+    "in": "rich",
+    "out": "parents"
+   },
+   "sfx": [
+    {
+     "s": "ding",
+     "at": "Subscribe"
+    },
+    {
+     "s": "boom",
+     "at": "in"
+    }
+   ]
+  }
+ ]
+}
