@@ -1,406 +1,1762 @@
 {
-  "id": "ep59",
+ "id": "ep59",
+ "title": "Why You'll Probably Work Until 70",
+ "voice": "chatterbox",
+ "upgraded": "2026-10-19 UPGRADE.md v2",
+ "sources": [
+  "Dramatized story: Dave, his dad, the retirement-calculator result (retire at 70), Dave's $25,000 balance, his company's 4% match and his 1.5% vs 0.5% fund choice are illustrative. 'Ten thousand extra hours' = 5 years x 52 weeks x 40 hours = 10,400.",
+  "U.S. Department of Labor, EBSA, Private Pension Plan Bulletin Historical Tables and Graphs 1975-2023: active participants in private-sector defined benefit plans 27.2 million (1975) vs about 11.1 million (2023)",
+  "U.S. Bureau of Labor Statistics, Employee Benefits in the United States, March 2025 (released Sept 25, 2025): 14% of private industry workers had access to defined benefit (pension) plans; 70% had access to defined contribution plans",
+  "Social Security Administration / Social Security Amendments of 1983: full retirement age rises gradually from 65 to 67; it is 67 for anyone born in 1960 or later (first cohort reaches 67 in 2027)",
+  "SSA, Program Explainer: Benefit Claiming Age / CRS R47151 adjustment factors: with FRA 67, claiming at 62 = 70% of the full benefit, at 65 = about 86.7% (about 13% less), at 70 = 124% (delayed retirement credits stop at 70)",
+  "SSA, 'Life Expectancy for Social Security' (ssa.gov/history/lifeexpect.html): men reaching 65 in 1940 could expect to live about 12.7 more years",
+  "CDC/NCHS Data Brief No. 548, Mortality in the United States, 2024 (Jan 2026): life expectancy at age 65 = 19.7 more years (about 20)",
+  "Vanguard, How America Saves 2026 (year-end 2025 data, ~5 million participants in Vanguard-administered plans): median 401(k) balance for ages 55-64 = $107,269 (average $305,006); median for all ages $44,115",
+  "4% rule of thumb (Bengen, 1994) -- a rule of thumb, not a guarantee. Math: $107,269 x 4% = $4,291/yr = about $358/month",
+  "2026 Social Security Trustees Report (June 9, 2026): OASI (retirement) trust fund reserves projected to be depleted in Q4 2032, after which 78% of scheduled benefits are payable (about a 22% cut); combined OASDI funds depleted 2034 with 83% payable",
+  "2026 Trustees Report, covered workers per beneficiary: 5.1 in 1960; about 2.6-2.7 in 2025",
+  "SSA 2026 COLA fact sheet: 2.8% COLA; average retired-worker benefit about $2,071/month (Jan 2026). Math: $2,071 x 22% = about $455/month",
+  "EBRI & Greenwald Research, 2026 Retirement Confidence Survey (online, Jan 2-28, 2026, 2,544 Americans 25+), Fact Sheet #2: workers' median expected retirement age 65 vs retirees' median actual retirement age 62; 39% of workers expect to retire at 70+ or never vs 10% of retirees who did; 46% of retirees retired earlier than planned; of those, 41% cited a health problem or disability and 35% changes at their company",
+  "U.S. Department of Labor, EBSA, 'A Look at 401(k) Plan Fees': $25,000 balance, 35 years, 7% average return: with 0.5% fees grows to $227,000; with 1.5% fees only $163,000 -- a 28% smaller balance. Difference = $64,000",
+  "Callback: episode 02 (credit card raccoon toll booth)"
+ ],
+ "youtube": {
   "title": "Why You'll Probably Work Until 70",
-  "spine": {
-    "goal": "Dave, 35, wants to stop working at 65 like his dad (who stopped at 62 on a pension).",
-    "stakes": "His retirement calculator says 70: five extra years, about 10,400 extra hours of work (5 x 52 x 40).",
-    "central_question": "Who moved Dave's finish line from 65 to 70?",
-    "loop_big": "The one boring line in Dave's account that was quietly stealing years (the 401(k) expense ratio) -> paid at c9: $64,000 difference (DOL example).",
-    "loop_mid": "Pause-and-guess at c3c: typical (median) 401(k) balance for ages 55-64 -> paid at c4d: about $107,000 (Vanguard HAS 2026).",
-    "villain": "Not one bad guy: the RISK moved from employers (pensions) onto workers (401k) + the fee raccoon taking a yearly cut (revealed c5, ~50%).",
-    "low_point": "c7 (~75%): Dave's backup plan 'just work until 70' breaks: 46% of retirees stop earlier than planned (health, company changes); median actual retirement age 62.",
-    "win": "c8-c9: Dave grabs the full employer match, learns the Social Security 62/67/70 dial, and switches from a 1.5% fund to a 0.5% fund -> Damage Meter flips to SAVED $64,000.",
-    "damage_meter": "DAVE'S DAMAGE in years of extra work: +0 (o4 shows target 70) -> +2 YRS at c2e (FRA 67) -> +5 YRS by c4f/c6 -> flips to green SAVED $64,000 at c9e."
-  },
-  "sources": [
-    "Dramatized story: Dave, his dad, the retirement-calculator result (retire at 70), Dave's $25,000 balance, his company's 4% match and his 1.5% vs 0.5% fund choice are illustrative. 'Ten thousand extra hours' = 5 years x 52 weeks x 40 hours = 10,400.",
-    "U.S. Department of Labor, EBSA, Private Pension Plan Bulletin Historical Tables and Graphs 1975-2023: active participants in private-sector defined benefit plans 27.2 million (1975) vs about 11.1 million (2023)",
-    "U.S. Bureau of Labor Statistics, Employee Benefits in the United States, March 2025 (released Sept 25, 2025): 14% of private industry workers had access to defined benefit (pension) plans; 70% had access to defined contribution plans",
-    "Social Security Administration / Social Security Amendments of 1983: full retirement age rises gradually from 65 to 67; it is 67 for anyone born in 1960 or later (first cohort reaches 67 in 2027)",
-    "SSA, Program Explainer: Benefit Claiming Age / CRS R47151 adjustment factors: with FRA 67, claiming at 62 = 70% of the full benefit, at 65 = about 86.7% (about 13% less), at 70 = 124% (delayed retirement credits stop at 70)",
-    "SSA, 'Life Expectancy for Social Security' (ssa.gov/history/lifeexpect.html): men reaching 65 in 1940 could expect to live about 12.7 more years",
-    "CDC/NCHS Data Brief No. 548, Mortality in the United States, 2024 (Jan 2026): life expectancy at age 65 = 19.7 more years (about 20)",
-    "Vanguard, How America Saves 2026 (year-end 2025 data, ~5 million participants in Vanguard-administered plans): median 401(k) balance for ages 55-64 = $107,269 (average $305,006); median for all ages $44,115",
-    "4% rule of thumb (Bengen, 1994) -- a rule of thumb, not a guarantee. Math: $107,269 x 4% = $4,291/yr = about $358/month",
-    "2026 Social Security Trustees Report (June 9, 2026): OASI (retirement) trust fund reserves projected to be depleted in Q4 2032, after which 78% of scheduled benefits are payable (about a 22% cut); combined OASDI funds depleted 2034 with 83% payable",
-    "2026 Trustees Report, covered workers per beneficiary: 5.1 in 1960; about 2.6-2.7 in 2025",
-    "SSA 2026 COLA fact sheet: 2.8% COLA; average retired-worker benefit about $2,071/month (Jan 2026). Math: $2,071 x 22% = about $455/month",
-    "EBRI & Greenwald Research, 2026 Retirement Confidence Survey (online, Jan 2-28, 2026, 2,544 Americans 25+), Fact Sheet #2: workers' median expected retirement age 65 vs retirees' median actual retirement age 62; 39% of workers expect to retire at 70+ or never vs 10% of retirees who did; 46% of retirees retired earlier than planned; of those, 41% cited a health problem or disability and 35% changes at their company",
-    "U.S. Department of Labor, EBSA, 'A Look at 401(k) Plan Fees': $25,000 balance, 35 years, 7% average return: with 0.5% fees grows to $227,000; with 1.5% fees only $163,000 -- a 28% smaller balance. Difference = $64,000",
-    "Callback: episode 02 (credit card raccoon toll booth)"
+  "alt_titles": [
+   "Your Dad Retired at 62. Why Can't You?",
+   "Who Moved Your Retirement Finish Line?"
   ],
-  "beats": [
-    {
-      "id": "o1",
-      "text": "Dave just turned seventy. He's spending his birthday at work. With a name tag.",
-      "pause": 0.3
-    },
-    {
-      "id": "o2",
-      "text": "Freeze. That's Dave. How did he end up here? Let's rewind.",
-      "pause": 0.3
-    },
-    {
-      "id": "o3",
-      "text": "Dave, age thirty five, opens a retirement calculator.",
-      "pause": 0.3
-    },
-    {
-      "id": "o4",
-      "text": "Retire at: seventy. Five years later than his dad.",
-      "pause": 0.3
-    },
-    {
-      "id": "o5",
-      "text": "So who moved Dave's finish line? Because it didn't move by itself.",
-      "pause": 0.3
-    },
-    {
-      "id": "o6",
-      "text": "By the end, you'll know who. And the boring line in Dave's account that was quietly stealing years.",
-      "pause": 0.6
-    },
-    {
-      "id": "c1a",
-      "chapter": "What Did Dad Have?",
-      "text": "So Dave calls his dad. Dad stopped working at sixty two. Dave asks him: how?",
-      "pause": 0.4
-    },
-    {
-      "id": "c1b",
-      "text": "Dad laughs. I had a pension. Every month, my old company sends me a check. For the rest of my life.",
-      "pause": 0.5
-    },
-    {
-      "id": "c1c",
-      "text": "Think of a pension like a vending machine. You work thirty years, and then it drops you a sandwich every month. Forever. You never pack lunch again.",
-      "pause": 0.5
-    },
-    {
-      "id": "c1d",
-      "text": "Dave checks his own job. No vending machine. In nineteen seventy five, about twenty seven million private sector workers were earning a pension like Dad's.",
-      "pause": 0.5
-    },
-    {
-      "id": "c1e",
-      "text": "Today? About eleven million. Even though America has way more workers now. Only about one in seven private workers even has access to one.",
-      "pause": 0.5
-    },
-    {
-      "id": "c1f",
-      "text": "Instead, Dave got a four oh one k. A lunchbox he has to fill himself. And make last.",
-      "pause": 0.5
-    },
-    {
-      "id": "c1g",
-      "text": "But Dad had one more advantage. And this one came from the government.",
-      "pause": 0.9
-    },
-    {
-      "id": "c2a",
-      "chapter": "The Finish Line Moved",
-      "text": "So Dave opens his Social Security statement online. And he spots a weird number. Full retirement age: sixty seven.",
-      "pause": 0.4
-    },
-    {
-      "id": "c2b",
-      "text": "Wait. Isn't it sixty five? It was, for Dad's generation. Then in nineteen eighty three, Congress passed a law that slowly pushed it back.",
-      "pause": 0.5
-    },
-    {
-      "id": "c2c",
-      "text": "If you were born in nineteen sixty or later, full retirement age is sixty seven. Next year, the very first people ever reach it.",
-      "pause": 0.5
-    },
-    {
-      "id": "c2d",
-      "text": "It's like running a marathon, and someone quietly moves the finish line two miles back. While you're still running.",
-      "pause": 0.5
-    },
-    {
-      "id": "c2e",
-      "text": "If Dave stops at sixty five anyway, his check is about thirteen percent smaller. For life. That's two years of Dave's life, gone.",
-      "pause": 0.5
-    },
-    {
-      "id": "c2f",
-      "text": "So Dave checks his lunchbox, to see if it can cover the gap. That's where it got scary.",
-      "pause": 0.9
-    },
-    {
-      "id": "c3a",
-      "chapter": "The Lunchbox Test",
-      "text": "Dave logs into his four oh one k. Twenty five thousand dollars. He feels pretty good about that.",
-      "pause": 0.4
-    },
-    {
-      "id": "c3b",
-      "text": "Then he wonders. What do people who are almost done have? People aged fifty five to sixty four. The finish line is right there.",
-      "pause": 0.5
-    },
-    {
-      "id": "c3c",
-      "text": "Quick guess. What's the typical four oh one k balance for that age group? Write your number in the comments. The answer is coming in a minute.",
-      "pause": 0.7
-    },
-    {
-      "id": "c3d",
-      "text": "While you think, here's the problem. Dad's vending machine never runs out. Dave's lunchbox does.",
-      "pause": 0.5
-    },
-    {
-      "id": "c3e",
-      "text": "And to know how big the box must be, Dave needs one number that nobody knows. How long he'll live.",
-      "pause": 0.9
-    },
-    {
-      "id": "c4a",
-      "chapter": "Living Too Long?",
-      "text": "So Dave looks it up. Back in nineteen forty, when Social Security checks started, a man who reached sixty five lived about twelve more years, on average.",
-      "pause": 0.4
-    },
-    {
-      "id": "c4b",
-      "text": "Today, a sixty five year old can expect about twenty more years. That's great news for Dave. And terrible news for his lunchbox.",
-      "pause": 0.5
-    },
-    {
-      "id": "c4c",
-      "text": "Twenty years of lunches from one box. It's like packing snacks for a weekend trip, and finding out the trip lasts three weeks.",
-      "pause": 0.5
-    },
-    {
-      "id": "c4d",
-      "text": "Now, your guess. For people aged fifty five to sixty four, the typical balance, the median, is about one hundred seven thousand dollars.",
-      "pause": 0.5
-    },
-    {
-      "id": "c4e",
-      "text": "A common rule of thumb says you can take out about four percent a year. That's around four thousand three hundred dollars a year. About three hundred sixty a month.",
-      "pause": 0.5
-    },
-    {
-      "id": "c4f",
-      "text": "Three hundred sixty dollars. Dad gets more than that from his vending machine. So who decided Dave should carry all this? Dave followed the money.",
-      "pause": 0.9
-    },
-    {
-      "id": "c5a",
-      "chapter": "Who Moved The Risk?",
-      "text": "Dave draws two boxes on a napkin. Dad's pension, and his own four oh one k. Then he asks one question. Who carries the risk?",
-      "pause": 0.4
-    },
-    {
-      "id": "c5b",
-      "text": "With a pension, if the stock market crashes, the company still has to pay. If Dad lives to a hundred, the company still pays. The risk sits with the company.",
-      "pause": 0.5
-    },
-    {
-      "id": "c5c",
-      "text": "With a four oh one k, a market crash hits Dave. Living to a hundred? Dave's problem. The risk quietly moved. Off the company's shoulders, and onto Dave's.",
-      "pause": 0.5
-    },
-    {
-      "id": "c5d",
-      "text": "And the numbers show the switch. Seventy percent of private workers can get a four oh one k style plan. Only fourteen percent can get a pension.",
-      "pause": 0.5
-    },
-    {
-      "id": "c5e",
-      "text": "To be fair, four oh one ks have real upsides. Dave owns the money. He keeps it when he switches jobs. And many companies add free money on top.",
-      "pause": 0.5
-    },
-    {
-      "id": "c5f",
-      "text": "So nobody stole Dave's retirement. The whole job of building it was just handed to him.",
-      "pause": 0.5
-    },
-    {
-      "id": "c5g",
-      "text": "And somebody else sat down next to Dave's lunchbox. The raccoon. Remember him from our credit card video? He charges a tiny fee, every single year. Dave never even looked at it.",
-      "pause": 0.9
-    },
-    {
-      "id": "c6a",
-      "chapter": "The Backup Plan Cracks",
-      "text": "So Dave builds a backup plan. Social Security. Dave thought it would run out completely before he gets old. Nope.",
-      "pause": 0.4
-    },
-    {
-      "id": "c6b",
-      "text": "Here's what the official trustees report actually says. Social Security is mostly paid by the taxes of people working today. That money keeps coming in.",
-      "pause": 0.5
-    },
-    {
-      "id": "c6c",
-      "text": "But there's also a savings jar for retirement checks, called a trust fund. And that jar is projected to run empty near the end of twenty thirty two.",
-      "pause": 0.5
-    },
-    {
-      "id": "c6d",
-      "text": "If Congress does nothing, the checks don't stop. They shrink. To about seventy eight percent. A cut of about twenty two percent, for everyone.",
-      "pause": 0.5
-    },
-    {
-      "id": "c6e",
-      "text": "The average retired worker gets about two thousand seventy dollars a month. A twenty two percent cut is about four hundred fifty five dollars. Every month.",
-      "pause": 0.5
-    },
-    {
-      "id": "c6f",
-      "text": "Why? In nineteen sixty, about five workers paid in for every person collecting. Today, fewer than three. Fewer people carrying the same picnic basket.",
-      "pause": 0.5
-    },
-    {
-      "id": "c6g",
-      "text": "Raise taxes? Trim benefits? Raise the age again? A mix? That's a political question. Now you know the numbers.",
-      "pause": 0.5
-    },
-    {
-      "id": "c6h",
-      "text": "So Dave settles on his final plan. Fine. I'll just work until seventy. What could go wrong?",
-      "pause": 0.9
-    },
-    {
-      "id": "c7a",
-      "chapter": "Plan B Breaks",
-      "text": "Dave tells his neighbor Bob about the plan. Bob is sixty. Bob goes very quiet.",
-      "pause": 0.4
-    },
-    {
-      "id": "c7b",
-      "text": "Because here's what the big Retirement Confidence Survey found. Workers expect to retire at sixty five. Retirees say they actually stopped at sixty two.",
-      "pause": 0.5
-    },
-    {
-      "id": "c7c",
-      "text": "Almost four in ten workers plan to work until seventy, or never stop. Only one in ten retirees actually did.",
-      "pause": 0.5
-    },
-    {
-      "id": "c7d",
-      "text": "Forty six percent of retirees left work earlier than they planned. Many because of a health problem. Others because their company changed things.",
-      "pause": 0.5
-    },
-    {
-      "id": "c7e",
-      "text": "Dave's plan was to outrun the problem. But your body and your boss get a vote too. Working until seventy isn't a plan. It's a hope.",
-      "pause": 0.5
-    },
-    {
-      "id": "c7f",
-      "text": "Dave sits down, defeated. And then he remembers the raccoon. And that tiny fee he never checked.",
-      "pause": 0.9
-    },
-    {
-      "id": "c8a",
-      "chapter": "Dave Fights Back",
-      "text": "This part is education, not advice. Dave makes three moves. Move one. He asks his boss if the company adds money when he saves.",
-      "pause": 0.4
-    },
-    {
-      "id": "c8b",
-      "text": "It does. They match up to four percent of his pay. Dave was only putting in two. So every paycheck, he was leaving free money on the table. He bumps it to four.",
-      "pause": 0.5
-    },
-    {
-      "id": "c8c",
-      "text": "Move two. The Social Security dial. Claim at sixty two, and Dave gets about seventy percent of his full check. At sixty seven, one hundred percent. At seventy, about one hundred twenty four percent.",
-      "pause": 0.5
-    },
-    {
-      "id": "c8d",
-      "text": "That's why seventy keeps coming up. It's the age where the check stops growing. And Dave can check his own numbers for free, on his Social Security statement.",
-      "pause": 0.5
-    },
-    {
-      "id": "c8e",
-      "text": "Move three. The boring line.",
-      "pause": 0.7
-    },
-    {
-      "id": "c9a",
-      "chapter": "The Boring Line",
-      "text": "Dave opens his four oh one k again. He scrolls past the colorful charts. Down to one tiny line. Expense ratio.",
-      "pause": 0.4
-    },
-    {
-      "id": "c9b",
-      "text": "His fund charges one and a half percent a year. A plain index fund in the same plan charges half a percent.",
-      "pause": 0.5
-    },
-    {
-      "id": "c9c",
-      "text": "The U.S. Department of Labor did this exact math. Twenty five thousand dollars. Thirty five years. Seven percent returns.",
-      "pause": 0.5
-    },
-    {
-      "id": "c9d",
-      "text": "With one and a half percent in fees, it grows to about one hundred sixty three thousand. With half a percent, about two hundred twenty seven thousand.",
-      "pause": 0.5
-    },
-    {
-      "id": "c9e",
-      "text": "Same Dave. Same savings. Sixty four thousand dollars more. From one boring line. That's years of retirement the raccoon was quietly eating.",
-      "pause": 0.5
-    },
-    {
-      "id": "c9f",
-      "text": "Dave's finish line didn't jump back to sixty two. But for the first time, Dave is the one moving it.",
-      "pause": 0.9
-    },
-    {
-      "id": "r1",
-      "chapter": "What Dave Learned",
-      "text": "One. The finish line moved, and the risk moved onto you.",
-      "pause": 0.4
-    },
-    {
-      "id": "r2",
-      "text": "Two. Working until seventy is a hope, not a plan.",
-      "pause": 0.4
-    },
-    {
-      "id": "r3",
-      "text": "Three. Grab the match, and check the boring line.",
-      "pause": 0.7
-    },
-    {
-      "id": "r4",
-      "text": "Next time, a betting app hands Dave a thousand dollars. Free. He wins. And the app bans him. Wait, what?",
-      "pause": 0.5
-    },
-    {
-      "id": "r5",
-      "text": "Subscribe, so you can retire before Dave does. It's free. Even the raccoon can't charge a fee on it.",
-      "pause": 1.4
+  "hook": "Dave's retirement calculator says 70 -- five years longer than his dad. Who moved the finish line? And what's the one boring line quietly stealing years? Dave types his savings into a retirement calculator and it says he'll work until 70 -- five extra years compared to his dad who stopped at 62. We follow the whole story: how Dad had a pension (a vending machine that never runs out) but Dave got a 401(k) lunchbox he has to fill himself and make last; how the Social Security finish line quietly moved from 65 to 67 for anyone born in 1960 or later; what the typical 401(k) balance is for people aged 55-64 (about $107,000, which gives roughly $358/month); how the risk moved from employers onto workers; why Dave's backup plan 'just work until 70' isn't a plan (46% of retirees stop earlier than planned due to health or company changes); and the one boring line in Dave's account -- the expense ratio -- that could cost him $64,000 over 35 years (DOL example: 1.5% vs 0.5% fees). Then how Dave fights back: grabbing the full match, learning the Social Security 62/67/70 dial, and checking that boring line.",
+  "tags": [
+   "retirement planning",
+   "why can't i retire",
+   "401k vs pension",
+   "social security full retirement age",
+   "retirement age 67",
+   "401k expense ratio",
+   "how much do i need to retire",
+   "working until 70",
+   "401k fees cost",
+   "money explained simply",
+   "dave explains money"
+  ],
+  "hashtags": [
+   "#retirement",
+   "#401k",
+   "#personalfinance"
+  ],
+  "pinned": "What age do YOU expect to retire? Drop your number below."
+ },
+ "beats": [
+  {
+   "id": "o1",
+   "text": "This is me on my seventieth birthday at work wearing a name tag and that's not a joke because a calculator just told me this is my future.",
+   "host": true,
+   "mood": "shock",
+   "pose": "panic",
+   "pic": {
+    "id": "birthday_cake",
+    "at": "birthday",
+    "look": "polaroid",
+    "label": "happy 70th"
+   },
+   "slam": {
+    "t": "AGE 70",
+    "at": "seventieth"
+   },
+   "sfx": [
+    {
+     "s": "pop",
+     "at": "birthday"
+    },
+    {
+     "s": "scratch",
+     "at": "tag"
+    },
+    {
+     "s": "pack/02_deep",
+     "at": "future"
     }
-  ],
-  "youtube": {
-    "title": "Why You'll Probably Work Until 70",
-    "alt_titles": [
-      "Your Dad Retired at 62. Why Can't You?",
-      "Who Moved Your Retirement Finish Line?"
-    ],
-    "hook": "Dave's retirement calculator says 70 -- five years longer than his dad. Who moved the finish line? And what's the one boring line quietly stealing years? Dave types his savings into a retirement calculator and it says he'll work until 70 -- five extra years compared to his dad who stopped at 62. We follow the whole story: how Dad had a pension (a vending machine that never runs out) but Dave got a 401(k) lunchbox he has to fill himself and make last; how the Social Security finish line quietly moved from 65 to 67 for anyone born in 1960 or later; what the typical 401(k) balance is for people aged 55-64 (about $107,000, which gives roughly $358/month); how the risk moved from employers onto workers; why Dave's backup plan 'just work until 70' isn't a plan (46% of retirees stop earlier than planned due to health or company changes); and the one boring line in Dave's account -- the expense ratio -- that could cost him $64,000 over 35 years (DOL example: 1.5% vs 0.5% fees). Then how Dave fights back: grabbing the full match, learning the Social Security 62/67/70 dial, and checking that boring line.",
-    "tags": [
-      "retirement planning",
-      "why can't i retire",
-      "401k vs pension",
-      "social security full retirement age",
-      "retirement age 67",
-      "401k expense ratio",
-      "how much do i need to retire",
-      "working until 70",
-      "401k fees cost",
-      "money explained simply",
-      "dave explains money"
-    ],
-    "hashtags": [
-      "#retirement",
-      "#401k",
-      "#personalfinance"
-    ],
-    "pinned": "What age do YOU expect to retire? Drop your number below."
+   ],
+   "pause": 0.15
+  },
+  {
+   "id": "o2",
+   "text": "My dad stopped working at sixty two so somebody moved my finish line eight years and I want to know who.",
+   "host": true,
+   "mood": "angry",
+   "pose": "point_r",
+   "pic": {
+    "id": "finish_line",
+    "at": "finish",
+    "look": "tape"
+   },
+   "zoom": {
+    "in": "who",
+    "out": "who"
+   },
+   "sfx": [
+    {
+     "s": "ding",
+     "at": "sixty"
+    },
+    {
+     "s": "whoosh",
+     "at": "moved"
+    },
+    {
+     "s": "boom",
+     "at": "who"
+    }
+   ],
+   "pause": 0.15
+  },
+  {
+   "id": "o3",
+   "text": "Spoiler. It was a lot of people.",
+   "card": {
+    "t": "Spoiler.",
+    "dark": true
+   },
+   "sfx": [
+    {
+     "s": "scratch",
+     "at": "Spoiler"
+    }
+   ],
+   "pause": 0.15
+  },
+  {
+   "id": "o4",
+   "text": "By the end of this you'll know who moved it and the one boring line in your retirement account that was quietly stealing years from me.",
+   "host": true,
+   "mood": "suspicious",
+   "pose": "point_r",
+   "pic": {
+    "id": "document",
+    "at": "line",
+    "look": "circle"
+   },
+   "slam": {
+    "t": "ONE BORING LINE",
+    "at": "boring"
+   },
+   "sfx": [
+    {
+     "s": "stamp",
+     "at": "line"
+    },
+    {
+     "s": "pack/01_beating",
+     "at": "stealing"
+    }
+   ],
+   "pause": 0.15
+  },
+  {
+   "id": "o5",
+   "text": "And most people click off before that part which is exactly why that line is still there.",
+   "host": true,
+   "mood": "smug",
+   "pose": "hips",
+   "sfx": [
+    {
+     "s": "sting",
+     "at": "line"
+    }
+   ],
+   "pause": 0.3
+  },
+  {
+   "id": "c1a",
+   "text": "So I call my dad and I ask him how he stopped at sixty two.",
+   "pic": {
+    "id": "old_phone",
+    "at": "call",
+    "look": "tape"
+   },
+   "sfx": [
+    {
+     "s": "ding",
+     "at": "call"
+    }
+   ]
+  },
+  {
+   "id": "c1b",
+   "text": "And he laughs and says I had a pension. Every month my old company sends me a check for the rest of my life.",
+   "host": true,
+   "mood": "shock",
+   "pose": "panic",
+   "pic": {
+    "id": "check",
+    "at": "check",
+    "look": "sticker"
+   },
+   "slam": {
+    "t": "FOREVER",
+    "at": "life"
+   },
+   "sfx": [
+    {
+     "s": "cash",
+     "at": "check"
+    },
+    {
+     "s": "pack/03_evolve_boom_brass_d",
+     "at": "life"
+    }
+   ]
+  },
+  {
+   "id": "c1c",
+   "text": "A pension is like a vending machine. You work thirty years and then it drops you a sandwich every month forever. You never pack lunch again.",
+   "pic": {
+    "id": "vending_machine",
+    "at": "machine",
+    "look": "polaroid"
+   },
+   "sfx": [
+    {
+     "s": "clank",
+     "at": "drops"
+    },
+    {
+     "s": "ding",
+     "at": "sandwich"
+    }
+   ]
+  },
+  {
+   "id": "n1",
+   "text": "My dad explaining his retirement.",
+   "meme": {
+    "t": "stonks",
+    "a": "FREE SANDWICH FOREVER",
+    "at": "retirement"
+   },
+   "sfx": [
+    {
+     "s": "boom",
+     "at": "retirement"
+    }
+   ]
+  },
+  {
+   "id": "c1d",
+   "text": "So I check my own job for the vending machine. There isn't one. Back when my dad started working most big companies had one.",
+   "host": true,
+   "mood": "sad",
+   "pose": "shrug",
+   "pic": {
+    "id": "factory",
+    "at": "job",
+    "look": "polaroid",
+    "label": "dad's job"
+   },
+   "sfx": [
+    {
+     "s": "cricket",
+     "at": "isn't"
+    }
+   ]
+  },
+  {
+   "id": "c1e",
+   "text": "Today only about one in seven private workers even gets offered one. Even though there are way more workers now.",
+   "host": true,
+   "mood": "tired",
+   "pose": "facepalm",
+   "slam": {
+    "t": "1 IN 7",
+    "at": "seven"
+   },
+   "sfx": [
+    {
+     "s": "stamp",
+     "at": "seven"
+    },
+    {
+     "s": "trombone",
+     "at": "now"
+    }
+   ]
+  },
+  {
+   "id": "c1f",
+   "text": "Instead I got a four oh one k. It's a lunchbox I have to fill myself and make last.",
+   "pic": {
+    "id": "lunchbox",
+    "at": "lunchbox",
+    "look": "sticker"
+   },
+   "sfx": [
+    {
+     "s": "paper",
+     "at": "lunchbox"
+    },
+    {
+     "s": "boing",
+     "at": "myself"
+    }
+   ]
+  },
+  {
+   "id": "n2",
+   "text": "Me comparing our retirements.",
+   "meme": {
+    "t": "vs",
+    "a": "Dad: vending machine",
+    "b": "Me: a lunchbox",
+    "at": "comparing"
+   },
+   "sfx": [
+    {
+     "s": "pop",
+     "at": "retirements"
+    }
+   ]
+  },
+  {
+   "id": "c1g",
+   "text": "But my dad had one more advantage and this one came from the government.",
+   "host": true,
+   "mood": "suspicious",
+   "pose": "think",
+   "pic": {
+    "id": "capitol",
+    "at": "government",
+    "look": "news"
+   },
+   "sfx": [
+    {
+     "s": "riser",
+     "at": "government"
+    }
+   ]
+  },
+  {
+   "id": "c2a",
+   "text": "So I open my Social Security statement and I spot a weird number. Full retirement age sixty seven.",
+   "chapter": "Someone Moved The Finish Line",
+   "pic": {
+    "id": "ssa",
+    "at": "Social",
+    "look": "tape"
+   },
+   "slam": {
+    "t": "67",
+    "at": "seven"
+   },
+   "sfx": [
+    {
+     "s": "click",
+     "at": "open"
+    },
+    {
+     "s": "scratch",
+     "at": "weird"
+    }
+   ]
+  },
+  {
+   "id": "c2b",
+   "text": "Wait. Isn't it sixty five? It was for my dad. Then in nineteen eighty three Congress passed a law that slowly pushed it back.",
+   "host": true,
+   "mood": "shock",
+   "pose": "panic",
+   "pic": {
+    "id": "congress",
+    "at": "Congress",
+    "look": "polaroid",
+    "label": "1983"
+   },
+   "sfx": [
+    {
+     "s": "scratch",
+     "at": "Wait"
+    },
+    {
+     "s": "stamp",
+     "at": "law"
+    }
+   ]
+  },
+  {
+   "id": "c2c",
+   "text": "So if you were born in nineteen sixty or later like me it's sixty seven.",
+   "host": true,
+   "mood": "tired",
+   "pose": "shrug",
+   "zoom": {
+    "in": "like",
+    "out": "me"
+   },
+   "sfx": [
+    {
+     "s": "boom",
+     "at": "me"
+    }
+   ],
+   "pic": {
+    "id": "calendar_1960",
+    "at": "born",
+    "look": "tape"
+   }
+  },
+  {
+   "id": "c2d",
+   "text": "It's like running a marathon and someone quietly moves the finish line two miles back while you're still running.",
+   "pic": {
+    "id": "marathon",
+    "at": "marathon",
+    "look": "plain"
+   },
+   "sfx": [
+    {
+     "s": "step",
+     "at": "running"
+    },
+    {
+     "s": "whoosh",
+     "at": "moves"
+    },
+    {
+     "s": "trombone",
+     "at": "running#2"
+    }
+   ]
+  },
+  {
+   "id": "n3",
+   "text": "Me in mile twenty six.",
+   "meme": {
+    "t": "fine",
+    "a": "Only two more miles",
+    "at": "mile"
+   },
+   "sfx": [
+    {
+     "s": "cricket",
+     "at": "six"
+    }
+   ]
+  },
+  {
+   "id": "c2e",
+   "text": "And if I stop at sixty five anyway my check is about thirteen percent smaller for the rest of my life.",
+   "host": true,
+   "mood": "angry",
+   "pose": "point_r",
+   "slam": {
+    "t": "-13% FOREVER",
+    "at": "thirteen"
+   },
+   "sfx": [
+    {
+     "s": "pack/02_deep",
+     "at": "smaller"
+    },
+    {
+     "s": "trombone",
+     "at": "life"
+    }
+   ]
+  },
+  {
+   "id": "c2f",
+   "text": "So I check my lunchbox to see if it can cover the gap. And that's where it got scary.",
+   "host": true,
+   "mood": "worried",
+   "pose": "hips",
+   "sfx": [
+    {
+     "s": "pack/01_beating",
+     "at": "scary"
+    }
+   ]
+  },
+  {
+   "id": "c3a",
+   "text": "I log into my four oh one k. Twenty five thousand dollars. And honestly I feel pretty good about that.",
+   "pic": {
+    "id": "laptop",
+    "at": "log",
+    "look": "tape"
+   },
+   "slam": {
+    "t": "$25,000",
+    "at": "Twenty"
+   },
+   "sfx": [
+    {
+     "s": "click",
+     "at": "log"
+    },
+    {
+     "s": "cash",
+     "at": "thousand"
+    },
+    {
+     "s": "ding",
+     "at": "good"
+    }
+   ]
+  },
+  {
+   "id": "n4",
+   "text": "I'm basically a millionaire already. I just need nine hundred seventy five thousand more.",
+   "host": true,
+   "mood": "grin",
+   "pose": "celebrate",
+   "zoom": {
+    "in": "nine",
+    "out": "more"
+   },
+   "sfx": [
+    {
+     "s": "crowd",
+     "at": "millionaire"
+    },
+    {
+     "s": "boom",
+     "at": "more"
+    }
+   ]
+  },
+  {
+   "id": "c3b",
+   "text": "Then I wonder what people who are almost done have. People in their late fifties and early sixties. The finish line is right there for them.",
+   "host": true,
+   "mood": "think",
+   "pose": "think",
+   "pic": {
+    "id": "older_couple",
+    "at": "people",
+    "look": "polaroid"
+   },
+   "sfx": [
+    {
+     "s": "pack/01_processing",
+     "at": "wonder"
+    }
+   ]
+  },
+  {
+   "id": "c3c",
+   "text": "Quick guess. What's the typical retirement balance for that age? Write your number in the comments.",
+   "host": true,
+   "mood": "suspicious",
+   "pose": "point_r",
+   "slam": {
+    "t": "GUESS",
+    "at": "guess"
+   },
+   "sfx": [
+    {
+     "s": "tick",
+     "at": "guess"
+    },
+    {
+     "s": "pop",
+     "at": "comments"
+    }
+   ]
+  },
+  {
+   "id": "c3d",
+   "text": "While you think here's the problem. Dad's vending machine never runs out. My lunchbox does.",
+   "host": true,
+   "mood": "worried",
+   "pose": "talk",
+   "zoom": {
+    "in": "lunchbox",
+    "out": "does"
+   },
+   "sfx": [
+    {
+     "s": "clank",
+     "at": "machine"
+    },
+    {
+     "s": "boom",
+     "at": "does"
+    }
+   ],
+   "pic": {
+    "id": "empty_lunchbox",
+    "at": "lunchbox",
+    "look": "sticker"
+   }
+  },
+  {
+   "id": "c3e",
+   "text": "And to know how big the box needs to be I need one number that nobody knows. How long I'll live.",
+   "card": {
+    "t": "How long will I live?",
+    "dark": true
+   },
+   "sfx": [
+    {
+     "s": "pack/01_beating",
+     "at": "live"
+    }
+   ],
+   "pause": 0.5
+  },
+  {
+   "id": "c4a",
+   "text": "Back when Social Security started a man who made it to sixty five lived about twelve more years.",
+   "pic": {
+    "id": "old_photo_1940",
+    "at": "started",
+    "look": "news",
+    "label": "1940"
+   },
+   "sfx": [
+    {
+     "s": "flip",
+     "at": "started"
+    }
+   ]
+  },
+  {
+   "id": "n15",
+   "text": "And here's a crazy story. The very first person to get a monthly Social Security check was a legal secretary from Vermont named Ida May Fuller.",
+   "pic": {
+    "id": "vermont",
+    "at": "Vermont",
+    "look": "polaroid",
+    "label": "Vermont 1940"
+   },
+   "sfx": [
+    {
+     "s": "flip",
+     "at": "story"
+    },
+    {
+     "s": "ding",
+     "at": "Fuller"
+    }
+   ]
+  },
+  {
+   "id": "n16",
+   "text": "She paid in for about three years. Her taxes added up to less than twenty five dollars total.",
+   "host": true,
+   "mood": "think",
+   "pose": "talk",
+   "slam": {
+    "t": "$24.75 PAID",
+    "at": "twenty"
+   },
+   "sfx": [
+    {
+     "s": "coin",
+     "at": "taxes"
+    },
+    {
+     "s": "ding",
+     "at": "dollars"
+    }
+   ]
+  },
+  {
+   "id": "n17",
+   "text": "Then she lived to one hundred and collected checks for thirty five years. Almost twenty three thousand dollars. Ida May Fuller was the GOAT.",
+   "host": true,
+   "mood": "grin",
+   "pose": "celebrate",
+   "slam": {
+    "t": "$22,888 BACK",
+    "at": "thousand"
+   },
+   "zoom": {
+    "in": "GOAT",
+    "out": "GOAT"
+   },
+   "sfx": [
+    {
+     "s": "cash",
+     "at": "thousand"
+    },
+    {
+     "s": "crowd",
+     "at": "GOAT"
+    }
+   ]
+  },
+  {
+   "id": "n18",
+   "text": "Ida May Fuller's investment strategy.",
+   "meme": {
+    "t": "stonks",
+    "a": "$25 IN $22,888 OUT",
+    "at": "strategy"
+   },
+   "sfx": [
+    {
+     "s": "cash",
+     "at": "strategy"
+    }
+   ]
+  },
+  {
+   "id": "c4b",
+   "text": "Today a sixty five year old can expect about twenty more years. Which is great news for me and terrible news for my lunchbox.",
+   "host": true,
+   "mood": "happy",
+   "pose": "present",
+   "slam": {
+    "t": "+20 YEARS",
+    "at": "twenty"
+   },
+   "sfx": [
+    {
+     "s": "crowd",
+     "at": "great"
+    },
+    {
+     "s": "trombone",
+     "at": "terrible"
+    }
+   ]
+  },
+  {
+   "id": "c4c",
+   "text": "Twenty years of lunches from one box. It's like packing snacks for a weekend trip and finding out the trip lasts three weeks.",
+   "pic": {
+    "id": "suitcase",
+    "at": "trip",
+    "look": "sticker"
+   },
+   "sfx": [
+    {
+     "s": "whoosh",
+     "at": "trip"
+    },
+    {
+     "s": "scratch",
+     "at": "weeks"
+    }
+   ]
+  },
+  {
+   "id": "n5",
+   "text": "Me on day nine of the weekend trip.",
+   "meme": {
+    "t": "fine",
+    "a": "One cracker left",
+    "at": "nine"
+   },
+   "sfx": [
+    {
+     "s": "cricket",
+     "at": "trip"
+    }
+   ]
+  },
+  {
+   "id": "c4d",
+   "text": "Now your guess. For people in their late fifties and early sixties the typical balance is about one hundred seven thousand dollars.",
+   "host": true,
+   "mood": "shock",
+   "pose": "panic",
+   "slam": {
+    "t": "$107,000",
+    "at": "seven"
+   },
+   "sfx": [
+    {
+     "s": "drumroll",
+     "at": "guess"
+    },
+    {
+     "s": "pack/02_deep",
+     "at": "seven"
+    }
+   ]
+  },
+  {
+   "id": "c4e",
+   "text": "A common rule says you can take out about four percent a year. That's around three hundred sixty dollars a month.",
+   "host": true,
+   "mood": "sad",
+   "pose": "facepalm",
+   "slam": {
+    "t": "$360/MONTH",
+    "at": "sixty"
+   },
+   "sfx": [
+    {
+     "s": "ding",
+     "at": "four"
+    },
+    {
+     "s": "trombone",
+     "at": "month"
+    }
+   ],
+   "exag": 0.6
+  },
+  {
+   "id": "n6",
+   "text": "Retirement plan reality check.",
+   "meme": {
+    "t": "drake",
+    "a": "Retire on $360 a month",
+    "b": "Work at 70 with a name tag",
+    "at": "reality"
+   },
+   "sfx": [
+    {
+     "s": "boom",
+     "at": "check"
+    }
+   ]
+  },
+  {
+   "id": "c4f",
+   "text": "Three hundred sixty dollars. My dad gets more than that from his vending machine. So who decided I should carry all this? I followed the money.",
+   "host": true,
+   "mood": "angry",
+   "pose": "point_r",
+   "sfx": [
+    {
+     "s": "cash",
+     "at": "dollars"
+    },
+    {
+     "s": "sting",
+     "at": "money"
+    }
+   ]
+  },
+  {
+   "id": "c5a",
+   "text": "I draw two boxes on a napkin. My dad's pension and my four oh one k. And I ask one question. Who carries the risk?",
+   "chapter": "Who Moved The Risk",
+   "pic": {
+    "id": "napkin",
+    "at": "napkin",
+    "look": "tape"
+   },
+   "sfx": [
+    {
+     "s": "scribble",
+     "at": "draw"
+    },
+    {
+     "s": "stamp",
+     "at": "risk"
+    }
+   ]
+  },
+  {
+   "id": "c5b",
+   "text": "With a pension if the stock market crashes the company still has to pay. If my dad lives to a hundred the company still pays.",
+   "host": true,
+   "mood": "happy",
+   "pose": "present",
+   "pic": {
+    "id": "office_building",
+    "at": "company",
+    "look": "polaroid"
+   },
+   "sfx": [
+    {
+     "s": "pack/02_deep",
+     "at": "crashes"
+    },
+    {
+     "s": "cash",
+     "at": "pays"
+    }
+   ]
+  },
+  {
+   "id": "c5c",
+   "text": "With my four oh one k a crash hits me. Living to a hundred? My problem. The risk quietly slid off the company and onto me.",
+   "host": true,
+   "mood": "angry",
+   "pose": "point_r",
+   "zoom": {
+    "in": "onto",
+    "out": "me#2"
+   },
+   "sfx": [
+    {
+     "s": "pack/02_deep",
+     "at": "crash"
+    },
+    {
+     "s": "whoosh",
+     "at": "slid"
+    },
+    {
+     "s": "boom",
+     "at": "me#2"
+    }
+   ]
+  },
+  {
+   "id": "n19",
+   "text": "And the numbers show the switch. Seventy percent of private workers can get a four oh one k. Only fourteen percent can get a pension.",
+   "pic": {
+    "id": "scale",
+    "at": "switch",
+    "look": "sticker"
+   },
+   "slam": {
+    "t": "70% vs 14%",
+    "at": "Seventy"
+   },
+   "sfx": [
+    {
+     "s": "ding",
+     "at": "Seventy"
+    },
+    {
+     "s": "trombone",
+     "at": "fourteen"
+    }
+   ]
+  },
+  {
+   "id": "n7",
+   "text": "The risk changing hands.",
+   "meme": {
+    "t": "vs",
+    "a": "Company in 1980",
+    "b": "Me in 2026",
+    "at": "risk"
+   },
+   "sfx": [
+    {
+     "s": "pop",
+     "at": "hands"
+    }
+   ]
+  },
+  {
+   "id": "c5e",
+   "text": "To be fair four oh one ks have real upsides. I own the money and I keep it when I switch jobs and many companies add free money on top.",
+   "host": true,
+   "mood": "neutral",
+   "pose": "talk",
+   "pic": {
+    "id": "handshake",
+    "at": "fair",
+    "look": "circle"
+   },
+   "sfx": [
+    {
+     "s": "ding",
+     "at": "own"
+    },
+    {
+     "s": "ding",
+     "at": "keep"
+    },
+    {
+     "s": "cash",
+     "at": "free"
+    }
+   ]
+  },
+  {
+   "id": "c5f",
+   "text": "So nobody stole my retirement. The whole job of building it was just handed to me.",
+   "host": true,
+   "mood": "tired",
+   "pose": "shrug",
+   "zoom": {
+    "in": "handed",
+    "out": "me"
+   },
+   "sfx": [
+    {
+     "s": "boom",
+     "at": "me"
+    }
+   ]
+  },
+  {
+   "id": "c5g",
+   "text": "And somebody else sat down next to my lunchbox. A raccoon. He charges a tiny fee every single year and I never even looked at him.",
+   "pic": {
+    "id": "raccoon",
+    "at": "raccoon",
+    "look": "circle"
+   },
+   "sfx": [
+    {
+     "s": "quack",
+     "at": "raccoon"
+    },
+    {
+     "s": "coin",
+     "at": "fee"
+    }
+   ]
+  },
+  {
+   "id": "n20",
+   "text": "The raccoon managing my retirement.",
+   "meme": {
+    "t": "drake",
+    "a": "Me checking my fees",
+    "b": "Me ignoring my fees",
+    "at": "managing"
+   },
+   "sfx": [
+    {
+     "s": "quack",
+     "at": "raccoon"
+    }
+   ]
+  },
+  {
+   "id": "c6a",
+   "text": "So I build a backup plan. Social Security. And I thought it would run out completely before I get old. Nope.",
+   "host": true,
+   "mood": "think",
+   "pose": "think",
+   "sfx": [
+    {
+     "s": "ding",
+     "at": "backup"
+    },
+    {
+     "s": "scratch",
+     "at": "Nope"
+    }
+   ],
+   "pic": {
+    "id": "umbrella",
+    "at": "backup",
+    "look": "polaroid"
+   }
+  },
+  {
+   "id": "c6b",
+   "text": "It's mostly paid by the taxes of people working today and that money keeps coming in.",
+   "pic": {
+    "id": "paycheck",
+    "at": "taxes",
+    "look": "tape"
+   },
+   "sfx": [
+    {
+     "s": "coin",
+     "at": "taxes"
+    }
+   ]
+  },
+  {
+   "id": "c6c",
+   "text": "But there's also a savings jar for the checks and that jar is projected to run empty around twenty thirty two.",
+   "pic": {
+    "id": "jar",
+    "at": "jar",
+    "look": "sticker"
+   },
+   "slam": {
+    "t": "2032",
+    "at": "thirty"
+   },
+   "sfx": [
+    {
+     "s": "clank",
+     "at": "jar"
+    },
+    {
+     "s": "pack/01_beating",
+     "at": "empty"
+    }
+   ]
+  },
+  {
+   "id": "c6d",
+   "text": "If Congress does nothing the checks don't stop. They shrink. About one fifth smaller for everyone.",
+   "host": true,
+   "mood": "worried",
+   "pose": "facepalm",
+   "slam": {
+    "t": "-22%",
+    "at": "fifth"
+   },
+   "sfx": [
+    {
+     "s": "cricket",
+     "at": "nothing"
+    },
+    {
+     "s": "pack/02_evolve_brassy_drop_2",
+     "at": "shrink"
+    }
+   ]
+  },
+  {
+   "id": "n8",
+   "text": "Congress looking at the jar.",
+   "meme": {
+    "t": "fine",
+    "a": "We'll fix it later",
+    "at": "jar"
+   },
+   "sfx": [
+    {
+     "s": "cricket",
+     "at": "jar"
+    }
+   ]
+  },
+  {
+   "id": "c6f",
+   "text": "Because when my dad started there were five workers paying in for every retiree. Today there are fewer than three. Fewer people carrying the same picnic basket.",
+   "pic": {
+    "id": "picnic",
+    "at": "picnic",
+    "look": "polaroid"
+   },
+   "sfx": [
+    {
+     "s": "step",
+     "at": "workers"
+    },
+    {
+     "s": "thud",
+     "at": "basket"
+    }
+   ]
+  },
+  {
+   "id": "c6g",
+   "text": "Raise taxes or trim checks or raise the age again? That's a political question. Now you know how it works.",
+   "host": true,
+   "mood": "neutral",
+   "pose": "shrug",
+   "sfx": [
+    {
+     "s": "ding",
+     "at": "taxes"
+    },
+    {
+     "s": "ding",
+     "at": "checks"
+    },
+    {
+     "s": "ding",
+     "at": "age"
+    }
+   ]
+  },
+  {
+   "id": "n21",
+   "text": "Politicians discussing Social Security.",
+   "meme": {
+    "t": "buttons",
+    "a": "Fix it now",
+    "b": "Fix it after the election",
+    "at": "discussing"
+   },
+   "sfx": [
+    {
+     "s": "pack/01_beating",
+     "at": "Security"
+    }
+   ]
+  },
+  {
+   "id": "c6h",
+   "text": "So I settle on my final plan. Fine. I'll just work until seventy. What could go wrong?",
+   "host": true,
+   "mood": "smug",
+   "pose": "hips",
+   "zoom": {
+    "in": "What",
+    "out": "wrong"
+   },
+   "sfx": [
+    {
+     "s": "boom",
+     "at": "wrong"
+    }
+   ],
+   "pic": {
+    "id": "name_tag",
+    "at": "work",
+    "look": "tape"
+   }
+  },
+  {
+   "id": "c7a",
+   "text": "I tell my neighbor Bob about my plan. Bob is sixty. Bob goes very quiet.",
+   "chapter": "Plan B Breaks",
+   "pic": {
+    "id": "porch",
+    "at": "neighbor",
+    "look": "tape"
+   },
+   "sfx": [
+    {
+     "s": "cricket",
+     "at": "quiet"
+    }
+   ]
+  },
+  {
+   "id": "c7b",
+   "text": "Because a big survey found that workers expect to retire at sixty five. But retirees say they actually stopped at sixty two.",
+   "host": true,
+   "mood": "shock",
+   "pose": "panic",
+   "slam": {
+    "t": "62",
+    "at": "two"
+   },
+   "sfx": [
+    {
+     "s": "ding",
+     "at": "five"
+    },
+    {
+     "s": "scratch",
+     "at": "actually"
+    }
+   ]
+  },
+  {
+   "id": "n22",
+   "text": "So that's three whole years earlier than they planned. Three years of lunches nobody packed for.",
+   "host": true,
+   "mood": "worried",
+   "pose": "facepalm",
+   "pic": {
+    "id": "lunch_bag",
+    "at": "lunches",
+    "look": "tape"
+   },
+   "zoom": {
+    "in": "nobody",
+    "out": "for"
+   },
+   "sfx": [
+    {
+     "s": "scratch",
+     "at": "earlier"
+    },
+    {
+     "s": "boom",
+     "at": "for"
+    }
+   ]
+  },
+  {
+   "id": "c7c",
+   "text": "Almost four in ten workers plan to work until seventy or never stop. Only one in ten retirees actually did.",
+   "pic": {
+    "id": "old_worker",
+    "at": "work",
+    "look": "polaroid"
+   },
+   "sfx": [
+    {
+     "s": "ding",
+     "at": "four"
+    },
+    {
+     "s": "trombone",
+     "at": "did"
+    }
+   ]
+  },
+  {
+   "id": "c7d",
+   "text": "And almost half of retirees left work earlier than they planned. Many because of a health problem. Others because their company changed things.",
+   "host": true,
+   "mood": "sad",
+   "pose": "facepalm",
+   "pic": {
+    "id": "hospital",
+    "at": "health",
+    "look": "news"
+   },
+   "sfx": [
+    {
+     "s": "pack/01_beating",
+     "at": "health"
+    },
+    {
+     "s": "thud",
+     "at": "company"
+    }
+   ],
+   "exag": 0.6
+  },
+  {
+   "id": "n9",
+   "text": "My plan versus my body.",
+   "meme": {
+    "t": "drake",
+    "a": "Work until 70",
+    "b": "My back at 58",
+    "at": "body"
+   },
+   "sfx": [
+    {
+     "s": "boing",
+     "at": "body"
+    }
+   ]
+  },
+  {
+   "id": "c7e",
+   "text": "My plan was to outrun the problem. But your body and your boss get a vote too. Working until seventy isn't a plan. It's a hope.",
+   "card": {
+    "t": "It's a hope.",
+    "dark": true
+   },
+   "sfx": [
+    {
+     "s": "pack/01_boom",
+     "at": "hope"
+    }
+   ],
+   "pause": 0.6
+  },
+  {
+   "id": "n10",
+   "text": "And honestly that one hit me. Does any of this even matter if I'm too tired to enjoy it? Yeah whatever. Let's fix it.",
+   "host": true,
+   "mood": "tired",
+   "pose": "think",
+   "sfx": [
+    {
+     "s": "pack/01_beating",
+     "at": "tired"
+    },
+    {
+     "s": "ding",
+     "at": "fix"
+    }
+   ]
+  },
+  {
+   "id": "c8a",
+   "text": "This part is education and not advice. Move one. I ask my boss if the company adds money when I save.",
+   "chapter": "I Fight Back",
+   "host": true,
+   "mood": "happy",
+   "pose": "point_up",
+   "pic": {
+    "id": "boss_office",
+    "at": "boss",
+    "look": "tape"
+   },
+   "sfx": [
+    {
+     "s": "ding",
+     "at": "one"
+    }
+   ]
+  },
+  {
+   "id": "c8b",
+   "text": "It does. They match up to four percent of my pay. I was only putting in two. So every paycheck I was leaving free money on the table. I bump it to four.",
+   "host": true,
+   "mood": "money",
+   "pose": "celebrate",
+   "slam": {
+    "t": "FREE MONEY",
+    "at": "free"
+   },
+   "sfx": [
+    {
+     "s": "scratch",
+     "at": "two"
+    },
+    {
+     "s": "cash",
+     "at": "free"
+    },
+    {
+     "s": "ding",
+     "at": "bump"
+    }
+   ]
+  },
+  {
+   "id": "n11",
+   "text": "Me finding out about the company match.",
+   "meme": {
+    "t": "stonks",
+    "a": "FREE MONEY UNLOCKED",
+    "at": "match"
+   },
+   "sfx": [
+    {
+     "s": "crowd",
+     "at": "match"
+    }
+   ]
+  },
+  {
+   "id": "c8c",
+   "text": "Move two. The Social Security dial. Claim at sixty two and you get about seventy percent. Wait until seventy and you get about one hundred twenty four percent.",
+   "host": true,
+   "mood": "smug",
+   "pose": "present",
+   "pic": {
+    "id": "dial",
+    "at": "dial",
+    "look": "circle"
+   },
+   "sfx": [
+    {
+     "s": "ding",
+     "at": "two"
+    },
+    {
+     "s": "click",
+     "at": "dial"
+    },
+    {
+     "s": "pack/01_evolve_brassy_swell",
+     "at": "twenty"
+    }
+   ]
+  },
+  {
+   "id": "c8d",
+   "text": "That's why seventy keeps coming up. It's where the check stops growing. And you can check your own numbers for free on your statement.",
+   "host": true,
+   "mood": "happy",
+   "pose": "point_r",
+   "sfx": [
+    {
+     "s": "ding",
+     "at": "seventy"
+    },
+    {
+     "s": "ding",
+     "at": "free"
+    }
+   ],
+   "pic": {
+    "id": "growth_plant",
+    "at": "growing",
+    "look": "circle"
+   }
+  },
+  {
+   "id": "c8e",
+   "text": "Move three. The boring line.",
+   "card": "Move three. The boring line.",
+   "sfx": [
+    {
+     "s": "drumroll",
+     "at": "line"
+    }
+   ],
+   "pause": 0.5
+  },
+  {
+   "id": "c9a",
+   "text": "I open my four oh one k again and I scroll past all the colorful charts down to one tiny line. Expense ratio.",
+   "pic": {
+    "id": "chart",
+    "at": "charts",
+    "look": "plain"
+   },
+   "slam": {
+    "t": "EXPENSE RATIO",
+    "at": "Expense"
+   },
+   "sfx": [
+    {
+     "s": "whoosh",
+     "at": "scroll"
+    },
+    {
+     "s": "stamp",
+     "at": "Expense"
+    }
+   ]
+  },
+  {
+   "id": "c9b",
+   "text": "My fund charges one and a half percent a year. A plain index fund in the same plan charges half a percent.",
+   "host": true,
+   "mood": "suspicious",
+   "pose": "talk",
+   "sfx": [
+    {
+     "s": "coin",
+     "at": "one"
+    },
+    {
+     "s": "coin",
+     "at": "half#2"
+    }
+   ]
+  },
+  {
+   "id": "n23",
+   "text": "One percent difference. That sounds like nothing right? It's like a tiny hole in your boat. You won't notice it today but in thirty five years you're swimming.",
+   "host": true,
+   "mood": "suspicious",
+   "pose": "talk",
+   "pic": {
+    "id": "boat",
+    "at": "boat",
+    "look": "polaroid"
+   },
+   "zoom": {
+    "in": "swimming",
+    "out": "swimming"
+   },
+   "sfx": [
+    {
+     "s": "ding",
+     "at": "difference"
+    },
+    {
+     "s": "pack/01_beating",
+     "at": "hole"
+    },
+    {
+     "s": "boom",
+     "at": "swimming"
+    }
+   ]
+  },
+  {
+   "id": "c9c",
+   "text": "The Department of Labor did this exact math. Twenty five thousand dollars for thirty five years.",
+   "pic": {
+    "id": "dol",
+    "at": "Labor",
+    "look": "news",
+    "label": "U.S. Dept. of Labor"
+   },
+   "sfx": [
+    {
+     "s": "pack/01_processing",
+     "at": "math"
+    }
+   ]
+  },
+  {
+   "id": "c9d",
+   "text": "With the high fee it grows to about one hundred sixty three thousand. With the low fee it's about two hundred twenty seven thousand.",
+   "host": true,
+   "mood": "shock",
+   "pose": "panic",
+   "slam": {
+    "t": "+$64,000",
+    "at": "twenty"
+   },
+   "sfx": [
+    {
+     "s": "drumroll",
+     "at": "high"
+    },
+    {
+     "s": "pack/03_evolve_boom_brass_d",
+     "at": "twenty"
+    }
+   ]
+  },
+  {
+   "id": "c9e",
+   "text": "Same me. Same savings. Sixty four thousand dollars more from one boring line. That's years of retirement the raccoon was quietly eating.",
+   "host": true,
+   "mood": "angry",
+   "pose": "point_r",
+   "zoom": {
+    "in": "quietly",
+    "out": "eating"
+   },
+   "sfx": [
+    {
+     "s": "cash",
+     "at": "Sixty"
+    },
+    {
+     "s": "quack",
+     "at": "raccoon"
+    },
+    {
+     "s": "boom",
+     "at": "eating"
+    }
+   ]
+  },
+  {
+   "id": "n24",
+   "text": "Me finding the expense ratio line.",
+   "meme": {
+    "t": "brain",
+    "a": "Look at the chart",
+    "b": "Look at the returns",
+    "c": "Look at the fees",
+    "at": "expense"
+   },
+   "sfx": [
+    {
+     "s": "pack/01_processing",
+     "at": "line"
+    }
+   ]
+  },
+  {
+   "id": "n12",
+   "text": "The raccoon when I switched funds.",
+   "meme": {
+    "t": "fine",
+    "a": "This is fine",
+    "at": "switched"
+   },
+   "sfx": [
+    {
+     "s": "trombone",
+     "at": "funds"
+    }
+   ]
+  },
+  {
+   "id": "n13",
+   "text": "So can I retire at sixty two like my dad?",
+   "card": "Can I retire at 62?",
+   "sfx": [
+    {
+     "s": "drumroll",
+     "at": "dad"
+    }
+   ]
+  },
+  {
+   "id": "n14",
+   "text": "No.",
+   "card": {
+    "t": "No.",
+    "dark": true
+   },
+   "sfx": [
+    {
+     "s": "pack/01_boom",
+     "at": "No"
+    }
+   ],
+   "pause": 0.6
+  },
+  {
+   "id": "c9f",
+   "text": "But for the first time I'm the one moving my finish line.",
+   "host": true,
+   "mood": "grin",
+   "pose": "celebrate",
+   "pic": {
+    "id": "runner_finish",
+    "at": "finish",
+    "look": "polaroid"
+   },
+   "sfx": [
+    {
+     "s": "crowd",
+     "at": "finish"
+    }
+   ]
+  },
+  {
+   "id": "r1",
+   "text": "Quick lessons. The finish line moved and the risk moved onto you.",
+   "host": true,
+   "mood": "happy",
+   "pose": "point_up",
+   "sfx": [
+    {
+     "s": "ding",
+     "at": "risk"
+    }
+   ]
+  },
+  {
+   "id": "r2",
+   "text": "Working until seventy is a hope and not a plan.",
+   "host": true,
+   "mood": "neutral",
+   "pose": "talk",
+   "sfx": [
+    {
+     "s": "ding",
+     "at": "hope"
+    }
+   ],
+   "pic": {
+    "id": "hourglass",
+    "at": "hope",
+    "look": "circle"
+   }
+  },
+  {
+   "id": "r3",
+   "text": "Grab the match and check the boring line.",
+   "host": true,
+   "mood": "smug",
+   "pose": "thumbs",
+   "sfx": [
+    {
+     "s": "cash",
+     "at": "match"
+    },
+    {
+     "s": "stamp",
+     "at": "line"
+    }
+   ]
+  },
+  {
+   "id": "r4",
+   "text": "But next time a betting app hands me a thousand dollars for free and I win and then the app bans me. Wait what?",
+   "pic": {
+    "id": "sports_bet",
+    "at": "betting",
+    "look": "tape"
+   },
+   "sfx": [
+    {
+     "s": "cash",
+     "at": "thousand"
+    },
+    {
+     "s": "scratch",
+     "at": "Wait"
+    }
+   ]
+  },
+  {
+   "id": "r5",
+   "text": "Subscribe so you can retire before I do. It's free and even the raccoon can't charge a fee on it.",
+   "host": true,
+   "mood": "grin",
+   "pose": "wave",
+   "zoom": {
+    "in": "raccoon",
+    "out": "it"
+   },
+   "sfx": [
+    {
+     "s": "ding",
+     "at": "Subscribe"
+    },
+    {
+     "s": "quack",
+     "at": "raccoon"
+    }
+   ]
   }
+ ]
 }
