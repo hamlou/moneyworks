@@ -2,159 +2,315 @@
  "photos": [
   {
    "id": "laptop_night",
-   "q": "laptop at night"
+   "q": "laptop at night",
+   "file": "File:Homo sapien using laptop at night.jpg",
+   "credit": "Javan Rhino",
+   "license": "CC BY 4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Homo_sapien_using_laptop_at_night.jpg"
   },
   {
    "id": "mansion",
-   "q": "mansion house"
+   "q": "mansion house",
+   "file": "File:Mansion House, City of London (40478193673).jpg",
+   "credit": "Michael Gwyther-Jones from London, UK",
+   "license": "CC BY 2.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Mansion_House,_City_of_London_(40478193673).jpg"
   },
   {
    "id": "phone_call",
-   "q": "telephone handset"
+   "q": "telephone handset",
+   "file": "File:Close-up of a telephone handset in a womans hand.jpg",
+   "credit": "Shixart1985",
+   "license": "CC BY 2.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Close-up_of_a_telephone_handset_in_a_womans_hand.jpg"
   },
   {
    "id": "snack",
-   "q": "potato chips bowl"
+   "q": "potato chips bowl",
+   "file": "File:Chips in a bowl at a party.JPG",
+   "credit": "Tomwsulcer",
+   "license": "CC0",
+   "page": "https://commons.wikimedia.org/wiki/File:Chips_in_a_bowl_at_a_party.JPG"
   },
   {
    "id": "notebook",
-   "q": "notebook pen"
+   "q": "notebook pen",
+   "file": "File:Woman writing on a notebook with a pen.jpg",
+   "credit": "Kristin Hardwick",
+   "license": "CC0",
+   "page": "https://commons.wikimedia.org/wiki/File:Woman_writing_on_a_notebook_with_a_pen.jpg"
   },
   {
    "id": "sports_car",
-   "q": "sports car"
+   "q": "sports car",
+   "file": "File:Porsche 911, 70 Years Porsche Sports Car, Berlin (1X7A3904).jpg",
+   "credit": "Matti Blume",
+   "license": "CC BY-SA 4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Porsche_911,_70_Years_Porsche_Sports_Car,_Berlin_(1X7A3904).jpg"
   },
   {
    "id": "stopwatch",
-   "q": "stopwatch"
+   "q": "stopwatch",
+   "file": "File:Stopwatch, 1810201155, ako.jpg",
+   "credit": "Ansgar Koreng",
+   "license": "CC BY-SA 4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Stopwatch,_1810201155,_ako.jpg"
   },
   {
    "id": "supermarket",
-   "q": "supermarket checkout"
+   "q": "supermarket checkout",
+   "file": "File:Supermarket checkout Tegut Tauberbischofsheim.jpg",
+   "credit": "Triplec85",
+   "license": "CC BY-SA 4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Supermarket_checkout_Tegut_Tauberbischofsheim.jpg"
   },
   {
    "id": "seminar",
-   "q": "seminar audience"
+   "q": "seminar audience",
+   "file": "File:Audience at Dianetics seminar in Los Angeles in 1950.jpg",
+   "credit": "Los Angeles Daily News",
+   "license": "CC BY 4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Audience_at_Dianetics_seminar_in_Los_Angeles_in_1950.jpg"
   },
   {
    "id": "gold_bars",
-   "q": "gold bars"
+   "q": "gold bars",
+   "file": "File:Gold bullion bars.jpg",
+   "credit": "Stevebidmead",
+   "license": "CC0",
+   "page": "https://commons.wikimedia.org/wiki/File:Gold_bullion_bars.jpg"
   },
   {
    "id": "castle",
-   "q": "medieval castle"
+   "q": "medieval castle",
+   "file": "File:Palmyra Castle, Tadmur Castle, Syria.jpg",
+   "credit": "Vyacheslav Argenberg",
+   "license": "CC BY 4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Palmyra_Castle,_Tadmur_Castle,_Syria.jpg"
   },
   {
    "id": "ftc",
-   "q": "Federal Trade Commission building"
+   "q": "Federal Trade Commission building",
+   "file": "File:Federal Trade Commission Building 3.jpg",
+   "credit": "Kurt Kaiser",
+   "license": "Public domain",
+   "page": "https://commons.wikimedia.org/wiki/File:Federal_Trade_Commission_Building_3.jpg"
   },
   {
    "id": "credit_card",
-   "q": "credit card"
+   "q": "credit card",
+   "file": "File:Credit-cards.jpg",
+   "credit": "Lotus Head from Johannesburg, Gauteng, South Africa",
+   "license": "CC BY-SA 2.5",
+   "page": "https://commons.wikimedia.org/wiki/File:Credit-cards.jpg"
   },
   {
    "id": "magnifier",
-   "q": "magnifying glass"
+   "q": "magnifying glass",
+   "file": "File:Magnifying glass2.jpg",
+   "credit": "Heptagon",
+   "license": "Public domain",
+   "page": "https://commons.wikimedia.org/wiki/File:Magnifying_glass2.jpg"
   },
   {
    "id": "villa_pool",
-   "q": "villa swimming pool"
+   "q": "villa swimming pool",
+   "file": "File:Villa Airport Prestige Swimming Pool - Cancun QR Jan 2020.jpg",
+   "credit": "Bernard DUPONT",
+   "license": "CC BY-SA 2.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Villa_Airport_Prestige_Swimming_Pool_-_Cancun_QR_Jan_2020.jpg"
   },
   {
    "id": "kitchen",
-   "q": "luxury kitchen"
+   "q": "luxury kitchen",
+   "file": "File:Modern luxury living room with kitchen interior.jpg",
+   "credit": "Shixart1985",
+   "license": "CC BY 2.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Modern_luxury_living_room_with_kitchen_interior.jpg"
   },
   {
    "id": "old_sf",
-   "q": "San Francisco 1851"
+   "q": "San Francisco 1851",
+   "file": "File:SanFranciscoharbor1851c sharp.jpg",
+   "credit": "Unknown authorUnknown author",
+   "license": "Public domain",
+   "page": "https://commons.wikimedia.org/wiki/File:SanFranciscoharbor1851c_sharp.jpg"
   },
   {
    "id": "brannan",
-   "q": "Samuel Brannan"
+   "q": "Samuel Brannan",
+   "file": "File:Samuel Brannan engraving.jpg",
+   "credit": "W. H. Thwaites, E. Hooper, sc.",
+   "license": "Public domain",
+   "page": "https://commons.wikimedia.org/wiki/File:Samuel_Brannan_engraving.jpg"
   },
   {
    "id": "gold_pan",
-   "q": "gold panning"
+   "q": "gold panning",
+   "file": "File:Gold panning at Bonanza Creek.JPG",
+   "credit": "Wikimedia Commons",
+   "license": "CC BY-SA 3.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Gold_panning_at_Bonanza_Creek.JPG"
   },
   {
    "id": "shovel",
-   "q": "shovel"
+   "q": "shovel",
+   "file": "File:Shovel-Cyclone-BD-2015-2.JPG",
+   "credit": "Thierry Caro",
+   "license": "CC BY-SA 4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Shovel-Cyclone-BD-2015-2.JPG"
   },
   {
    "id": "money_pile",
-   "q": "pile of money"
+   "q": "pile of money",
+   "file": "File:Pile of money in front of Yongle emperor statute at Changling tomb.jpg",
+   "credit": "Daniel Case",
+   "license": "CC BY-SA 3.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Pile_of_money_in_front_of_Yongle_emperor_statute_at_Changling_tomb.jpg"
   },
   {
    "id": "staircase",
-   "q": "staircase"
+   "q": "staircase",
+   "file": "File:Staircase of Liesikuja parking hall in Myyrmäki, Vantaa, Finland, 2022 May.jpg",
+   "credit": "Ximonic (Simo Räsänen)",
+   "license": "CC BY 4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Staircase_of_Liesikuja_parking_hall_in_Myyrm%C3%A4ki,_Vantaa,_Finland,_2022_May.jpg"
   },
   {
    "id": "menu",
-   "q": "restaurant menu"
+   "q": "restaurant menu",
+   "file": "File:Menu du jour d'un restaurant asiatique lyonnais en 2017.jpg",
+   "credit": "Benoît Prieur",
+   "license": "CC0",
+   "page": "https://commons.wikimedia.org/wiki/File:Menu_du_jour_d%27un_restaurant_asiatique_lyonnais_en_2017.jpg"
   },
   {
    "id": "funnel",
-   "q": "kitchen funnel"
+   "q": "kitchen funnel",
+   "file": "File:Kitchen Funnel.jpg",
+   "credit": "Donovan Govan.",
+   "license": "CC BY-SA 3.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Kitchen_Funnel.jpg"
   },
   {
    "id": "fishing",
-   "q": "fishing lake"
+   "q": "fishing lake",
+   "file": "File:Fishing at lake Couchiching in Ontario, Canada.jpg",
+   "credit": "Maksim Sokolov (maxergon.com)",
+   "license": "CC BY-SA 4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Fishing_at_lake_Couchiching_in_Ontario,_Canada.jpg"
   },
   {
    "id": "map",
-   "q": "old map"
+   "q": "old map",
+   "file": "File:Old City of Jerusalem map by Survey of Palestine map 1-2,500.jpg",
+   "credit": "Survey of Palestine",
+   "license": "Public domain",
+   "page": "https://commons.wikimedia.org/wiki/File:Old_City_of_Jerusalem_map_by_Survey_of_Palestine_map_1-2,500.jpg"
   },
   {
    "id": "camera_film",
-   "q": "video camera"
+   "q": "video camera",
+   "file": "File:Elevated video camera above First Avenue sit-in.jpg",
+   "credit": "Tessa Bury",
+   "license": "CC BY 4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Elevated_video_camera_above_First_Avenue_sit-in.jpg"
   },
   {
    "id": "envelope",
-   "q": "envelope letter"
+   "q": "envelope letter",
+   "file": "File:Envelope-letter-icon.png",
+   "credit": "paomedia",
+   "license": "CC0",
+   "page": "https://commons.wikimedia.org/wiki/File:Envelope-letter-icon.png"
   },
   {
    "id": "revolving_door",
-   "q": "revolving door"
+   "q": "revolving door",
+   "file": "File:Entrance in Torp shopping mall, Uddevalla.jpg",
+   "credit": "W.carter",
+   "license": "CC BY-SA 4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Entrance_in_Torp_shopping_mall,_Uddevalla.jpg"
   },
   {
    "id": "contract",
-   "q": "signing contract"
+   "q": "signing contract",
+   "file": "File:Comet Interceptor contract signing ESA24643784.jpg",
+   "credit": "European Space Agency",
+   "license": "CC BY-SA 3.0 igo",
+   "page": "https://commons.wikimedia.org/wiki/File:Comet_Interceptor_contract_signing_ESA24643784.jpg"
   },
   {
    "id": "smartphone",
-   "q": "smartphone"
+   "q": "smartphone",
+   "file": "File:Smartphone display screen.jpg",
+   "credit": "Skitterphoto",
+   "license": "CC0",
+   "page": "https://commons.wikimedia.org/wiki/File:Smartphone_display_screen.jpg"
   },
   {
    "id": "computer",
-   "q": "computer screen"
+   "q": "computer screen",
+   "file": "File:Computer monitor screen image simulated.jpg",
+   "credit": "Wikimedia Commons",
+   "license": "CC BY-SA 3.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Computer_monitor_screen_image_simulated.jpg"
   },
   {
    "id": "hourglass",
-   "q": "hourglass"
+   "q": "hourglass",
+   "file": "File:Wooden hourglass 3.jpg",
+   "credit": "User:S Sepp",
+   "license": "CC BY-SA 3.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Wooden_hourglass_3.jpg"
   },
   {
    "id": "gavel",
-   "q": "judge gavel"
+   "q": "judge gavel",
+   "file": "File:Wide-angle Judge beating a protester (Royal Courts of Justice).jpg",
+   "credit": "Retiolus",
+   "license": "CC0",
+   "page": "https://commons.wikimedia.org/wiki/File:Wide-angle_Judge_beating_a_protester_(Royal_Courts_of_Justice).jpg"
   },
   {
    "id": "headset",
-   "q": "call center headset"
+   "q": "call center headset",
+   "file": "File:Testing output from call center operator headset.jpg",
+   "credit": "Chuck Kardous",
+   "license": "Public domain",
+   "page": "https://commons.wikimedia.org/wiki/File:Testing_output_from_call_center_operator_headset.jpg"
   },
   {
    "id": "crowd",
-   "q": "large crowd"
+   "q": "large crowd",
+   "file": "File:2019 Feb 04 - Kumbh Mela - Mauni Amavasya Crowd 3.jpg",
+   "credit": "Michael T Balonek",
+   "license": "CC BY-SA 4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:2019_Feb_04_-_Kumbh_Mela_-_Mauni_Amavasya_Crowd_3.jpg"
   },
   {
    "id": "ladder",
-   "q": "ladder"
+   "q": "ladder",
+   "file": "File:Leiter in Baugrube Eppenreuther Straße 20241215 HOF8666 RAW-Export Ausschnitt bearbeitet.jpg",
+   "credit": "Original: PantheraLeo1359531 Derivative work: Aristeas",
+   "license": "CC BY 4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Leiter_in_Baugrube_Eppenreuther_Stra%C3%9Fe_20241215_HOF8666_RAW-Export_Ausschnitt_bearbeitet.jpg"
   },
   {
    "id": "alarm",
-   "q": "alarm clock"
+   "q": "alarm clock",
+   "file": "File:Classic alarm clock 20180513.jpg",
+   "credit": "Santeri Viinamäki",
+   "license": "CC BY-SA 4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Classic_alarm_clock_20180513.jpg"
   },
   {
    "id": "pyramid",
-   "q": "Great Pyramid of Giza"
+   "q": "Great Pyramid of Giza",
+   "file": "File:Great Sphinx of Giza (أبو الهول).jpg",
+   "credit": "Petar Milošević",
+   "license": "CC BY-SA 4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Great_Sphinx_of_Giza_(%D8%A3%D8%A8%D9%88_%D8%A7%D9%84%D9%87%D9%88%D9%84).jpg"
   }
  ]
 }
