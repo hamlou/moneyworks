@@ -1,0 +1,8591 @@
+{
+ "fps": 30,
+ "total": 427.6,
+ "hash": "dde1b6d7039ceca0",
+ "chapters": [
+  {
+   "n": 1,
+   "title": "The Oversell Machine",
+   "start": 24.6,
+   "beat": "c1a"
+  },
+  {
+   "n": 2,
+   "title": "I Paid For Guilt",
+   "start": 162.374,
+   "beat": "c4a"
+  },
+  {
+   "n": 3,
+   "title": "The Exit Maze",
+   "start": 245.791,
+   "beat": "c6a"
+  },
+  {
+   "n": 4,
+   "title": "How I Beat The Gym",
+   "start": 343.093,
+   "beat": "c9a"
+  }
+ ],
+ "beats": [
+  {
+   "id": "o1",
+   "text": "This is me on January first signing a gym contract and promising myself I will go every single day.",
+   "start": 0.08,
+   "end": 5.0200000000000005,
+   "words": [
+    {
+     "text": "This",
+     "start": 0.08,
+     "end": 0.24
+    },
+    {
+     "text": "is",
+     "start": 0.24,
+     "end": 0.36
+    },
+    {
+     "text": "me",
+     "start": 0.36,
+     "end": 0.54
+    },
+    {
+     "text": "on",
+     "start": 0.54,
+     "end": 0.76
+    },
+    {
+     "text": "January",
+     "start": 0.76,
+     "end": 1.08
+    },
+    {
+     "text": "first",
+     "start": 1.08,
+     "end": 1.6
+    },
+    {
+     "text": "signing",
+     "start": 1.6,
+     "end": 1.8
+    },
+    {
+     "text": "a",
+     "start": 1.8,
+     "end": 2.0
+    },
+    {
+     "text": "gym",
+     "start": 2.0,
+     "end": 2.1
+    },
+    {
+     "text": "contract",
+     "start": 2.1,
+     "end": 2.5
+    },
+    {
+     "text": "and",
+     "start": 2.5,
+     "end": 2.84
+    },
+    {
+     "text": "promising",
+     "start": 2.84,
+     "end": 3.1
+    },
+    {
+     "text": "myself",
+     "start": 3.1,
+     "end": 3.48
+    },
+    {
+     "text": "I",
+     "start": 3.48,
+     "end": 3.82
+    },
+    {
+     "text": "will",
+     "start": 3.82,
+     "end": 3.96
+    },
+    {
+     "text": "go",
+     "start": 3.96,
+     "end": 4.08
+    },
+    {
+     "text": "every",
+     "start": 4.08,
+     "end": 4.42
+    },
+    {
+     "text": "single",
+     "start": 4.42,
+     "end": 4.68
+    },
+    {
+     "text": "day.",
+     "start": 4.68,
+     "end": 5.02
+    }
+   ]
+  },
+  {
+   "id": "o2",
+   "text": "March. I've been three times. And the gym doesn't call me. The gym doesn't care.",
+   "start": 5.460083333333333,
+   "end": 9.200083333333334,
+   "words": [
+    {
+     "text": "March.",
+     "start": 5.46,
+     "end": 5.78
+    },
+    {
+     "text": "I've",
+     "start": 6.22,
+     "end": 6.36
+    },
+    {
+     "text": "been",
+     "start": 6.36,
+     "end": 6.48
+    },
+    {
+     "text": "three",
+     "start": 6.48,
+     "end": 6.66
+    },
+    {
+     "text": "times.",
+     "start": 6.66,
+     "end": 6.98
+    },
+    {
+     "text": "And",
+     "start": 7.38,
+     "end": 7.48
+    },
+    {
+     "text": "the",
+     "start": 7.48,
+     "end": 7.56
+    },
+    {
+     "text": "gym",
+     "start": 7.56,
+     "end": 7.7
+    },
+    {
+     "text": "doesn't",
+     "start": 7.7,
+     "end": 7.96
+    },
+    {
+     "text": "call",
+     "start": 7.96,
+     "end": 8.12
+    },
+    {
+     "text": "me.",
+     "start": 8.12,
+     "end": 8.28
+    },
+    {
+     "text": "The",
+     "start": 8.52,
+     "end": 8.58
+    },
+    {
+     "text": "gym",
+     "start": 8.58,
+     "end": 8.7
+    },
+    {
+     "text": "doesn't",
+     "start": 8.7,
+     "end": 9.0
+    },
+    {
+     "text": "care.",
+     "start": 9.0,
+     "end": 9.2
+    }
+   ]
+  },
+  {
+   "id": "o3",
+   "text": "Because I'm still paying them every single month for a gym I never visit.",
+   "start": 9.663541666666667,
+   "end": 12.003541666666667,
+   "words": [
+    {
+     "text": "Because",
+     "start": 9.664,
+     "end": 9.824
+    },
+    {
+     "text": "I'm",
+     "start": 9.824,
+     "end": 9.944
+    },
+    {
+     "text": "still",
+     "start": 9.944,
+     "end": 10.104
+    },
+    {
+     "text": "paying",
+     "start": 10.104,
+     "end": 10.324
+    },
+    {
+     "text": "them",
+     "start": 10.324,
+     "end": 10.524
+    },
+    {
+     "text": "every",
+     "start": 10.524,
+     "end": 10.704
+    },
+    {
+     "text": "single",
+     "start": 10.704,
+     "end": 10.904
+    },
+    {
+     "text": "month",
+     "start": 10.904,
+     "end": 11.144
+    },
+    {
+     "text": "for",
+     "start": 11.144,
+     "end": 11.344
+    },
+    {
+     "text": "a",
+     "start": 11.344,
+     "end": 11.404
+    },
+    {
+     "text": "gym",
+     "start": 11.404,
+     "end": 11.524
+    },
+    {
+     "text": "I",
+     "start": 11.524,
+     "end": 11.644
+    },
+    {
+     "text": "never",
+     "start": 11.644,
+     "end": 11.744
+    },
+    {
+     "text": "visit.",
+     "start": 11.744,
+     "end": 12.004
+    }
+   ]
+  },
+  {
+   "id": "o4",
+   "text": "Turns out that's not an accident. It's the plan.",
+   "start": 12.484916666666667,
+   "end": 14.544916666666667,
+   "words": [
+    {
+     "text": "Turns",
+     "start": 12.485,
+     "end": 12.605
+    },
+    {
+     "text": "out",
+     "start": 12.605,
+     "end": 12.785
+    },
+    {
+     "text": "that's",
+     "start": 12.785,
+     "end": 13.045
+    },
+    {
+     "text": "not",
+     "start": 13.045,
+     "end": 13.205
+    },
+    {
+     "text": "an",
+     "start": 13.205,
+     "end": 13.305
+    },
+    {
+     "text": "accident.",
+     "start": 13.305,
+     "end": 13.465
+    },
+    {
+     "text": "It's",
+     "start": 14.145,
+     "end": 14.285
+    },
+    {
+     "text": "the",
+     "start": 14.285,
+     "end": 14.365
+    },
+    {
+     "text": "plan.",
+     "start": 14.365,
+     "end": 14.545
+    }
+   ]
+  },
+  {
+   "id": "o5",
+   "text": "By the end of this video you'll know the one number every gym hopes you never figure out and it takes ten seconds.",
+   "start": 15.189854166666667,
+   "end": 19.909854166666666,
+   "words": [
+    {
+     "text": "By",
+     "start": 15.19,
+     "end": 15.29
+    },
+    {
+     "text": "the",
+     "start": 15.29,
+     "end": 15.37
+    },
+    {
+     "text": "end",
+     "start": 15.37,
+     "end": 15.49
+    },
+    {
+     "text": "of",
+     "start": 15.49,
+     "end": 15.59
+    },
+    {
+     "text": "this",
+     "start": 15.59,
+     "end": 15.73
+    },
+    {
+     "text": "video",
+     "start": 15.73,
+     "end": 16.05
+    },
+    {
+     "text": "you'll",
+     "start": 16.33,
+     "end": 16.45
+    },
+    {
+     "text": "know",
+     "start": 16.45,
+     "end": 16.55
+    },
+    {
+     "text": "the",
+     "start": 16.55,
+     "end": 16.67
+    },
+    {
+     "text": "one",
+     "start": 16.67,
+     "end": 16.81
+    },
+    {
+     "text": "number",
+     "start": 16.81,
+     "end": 17.07
+    },
+    {
+     "text": "every",
+     "start": 17.07,
+     "end": 17.37
+    },
+    {
+     "text": "gym",
+     "start": 17.37,
+     "end": 17.61
+    },
+    {
+     "text": "hopes",
+     "start": 17.61,
+     "end": 17.85
+    },
+    {
+     "text": "you",
+     "start": 17.85,
+     "end": 18.03
+    },
+    {
+     "text": "never",
+     "start": 18.03,
+     "end": 18.17
+    },
+    {
+     "text": "figure",
+     "start": 18.17,
+     "end": 18.43
+    },
+    {
+     "text": "out",
+     "start": 18.43,
+     "end": 18.69
+    },
+    {
+     "text": "and",
+     "start": 18.69,
+     "end": 19.07
+    },
+    {
+     "text": "it",
+     "start": 19.07,
+     "end": 19.15
+    },
+    {
+     "text": "takes",
+     "start": 19.15,
+     "end": 19.31
+    },
+    {
+     "text": "ten",
+     "start": 19.31,
+     "end": 19.59
+    },
+    {
+     "text": "seconds.",
+     "start": 19.59,
+     "end": 19.91
+    }
+   ]
+  },
+  {
+   "id": "o6",
+   "text": "But most people click off before that part which is exactly what the gym wants.",
+   "start": 20.521895833333332,
+   "end": 23.88189583333333,
+   "words": [
+    {
+     "text": "But",
+     "start": 20.522,
+     "end": 20.622
+    },
+    {
+     "text": "most",
+     "start": 20.622,
+     "end": 20.762
+    },
+    {
+     "text": "people",
+     "start": 20.762,
+     "end": 21.082
+    },
+    {
+     "text": "click",
+     "start": 21.082,
+     "end": 21.302
+    },
+    {
+     "text": "off",
+     "start": 21.302,
+     "end": 21.502
+    },
+    {
+     "text": "before",
+     "start": 21.502,
+     "end": 21.762
+    },
+    {
+     "text": "that",
+     "start": 21.762,
+     "end": 21.982
+    },
+    {
+     "text": "part",
+     "start": 21.982,
+     "end": 22.242
+    },
+    {
+     "text": "which",
+     "start": 22.522,
+     "end": 22.602
+    },
+    {
+     "text": "is",
+     "start": 22.602,
+     "end": 22.722
+    },
+    {
+     "text": "exactly",
+     "start": 22.722,
+     "end": 23.022
+    },
+    {
+     "text": "what",
+     "start": 23.022,
+     "end": 23.342
+    },
+    {
+     "text": "the",
+     "start": 23.342,
+     "end": 23.442
+    },
+    {
+     "text": "gym",
+     "start": 23.442,
+     "end": 23.562
+    },
+    {
+     "text": "wants.",
+     "start": 23.562,
+     "end": 23.882
+    }
+   ]
+  },
+  {
+   "id": "c1a",
+   "text": "So let me show you the business I actually signed up for.",
+   "start": 26.80025,
+   "end": 29.060249999999996,
+   "words": [
+    {
+     "text": "So",
+     "start": 26.8,
+     "end": 26.96
+    },
+    {
+     "text": "let",
+     "start": 26.96,
+     "end": 27.18
+    },
+    {
+     "text": "me",
+     "start": 27.18,
+     "end": 27.3
+    },
+    {
+     "text": "show",
+     "start": 27.3,
+     "end": 27.5
+    },
+    {
+     "text": "you",
+     "start": 27.5,
+     "end": 27.62
+    },
+    {
+     "text": "the",
+     "start": 27.62,
+     "end": 27.72
+    },
+    {
+     "text": "business",
+     "start": 27.72,
+     "end": 27.96
+    },
+    {
+     "text": "I",
+     "start": 27.96,
+     "end": 28.16
+    },
+    {
+     "text": "actually",
+     "start": 28.16,
+     "end": 28.36
+    },
+    {
+     "text": "signed",
+     "start": 28.36,
+     "end": 28.7
+    },
+    {
+     "text": "up",
+     "start": 28.7,
+     "end": 28.84
+    },
+    {
+     "text": "for.",
+     "start": 28.84,
+     "end": 29.06
+    }
+   ]
+  },
+  {
+   "id": "c1b",
+   "text": "Planet Fitness has about seven thousand members for every one of its clubs. Seven thousand people per building.",
+   "start": 29.652083333333334,
+   "end": 34.452083333333334,
+   "words": [
+    {
+     "text": "Planet",
+     "start": 29.652,
+     "end": 29.852
+    },
+    {
+     "text": "Fitness",
+     "start": 29.852,
+     "end": 30.052
+    },
+    {
+     "text": "has",
+     "start": 30.052,
+     "end": 30.372
+    },
+    {
+     "text": "about",
+     "start": 30.372,
+     "end": 30.572
+    },
+    {
+     "text": "seven",
+     "start": 30.572,
+     "end": 30.912
+    },
+    {
+     "text": "thousand",
+     "start": 30.912,
+     "end": 31.272
+    },
+    {
+     "text": "members",
+     "start": 31.272,
+     "end": 31.552
+    },
+    {
+     "text": "for",
+     "start": 31.552,
+     "end": 31.792
+    },
+    {
+     "text": "every",
+     "start": 31.792,
+     "end": 31.972
+    },
+    {
+     "text": "one",
+     "start": 31.972,
+     "end": 32.192
+    },
+    {
+     "text": "of",
+     "start": 32.192,
+     "end": 32.272
+    },
+    {
+     "text": "its",
+     "start": 32.272,
+     "end": 32.392
+    },
+    {
+     "text": "clubs.",
+     "start": 32.392,
+     "end": 32.592
+    },
+    {
+     "text": "Seven",
+     "start": 33.092,
+     "end": 33.352
+    },
+    {
+     "text": "thousand",
+     "start": 33.352,
+     "end": 33.692
+    },
+    {
+     "text": "people",
+     "start": 33.692,
+     "end": 33.952
+    },
+    {
+     "text": "per",
+     "start": 33.952,
+     "end": 34.172
+    },
+    {
+     "text": "building.",
+     "start": 34.172,
+     "end": 34.452
+    }
+   ]
+  },
+  {
+   "id": "n16",
+   "text": "That's not a gym. That's a stadium with a membership card.",
+   "start": 35.101645833333336,
+   "end": 37.72164583333333,
+   "words": [
+    {
+     "text": "That's",
+     "start": 35.102,
+     "end": 35.562
+    },
+    {
+     "text": "not",
+     "start": 35.562,
+     "end": 35.662
+    },
+    {
+     "text": "a",
+     "start": 35.662,
+     "end": 35.782
+    },
+    {
+     "text": "gym.",
+     "start": 35.782,
+     "end": 35.962
+    },
+    {
+     "text": "That's",
+     "start": 36.262,
+     "end": 36.422
+    },
+    {
+     "text": "a",
+     "start": 36.422,
+     "end": 36.482
+    },
+    {
+     "text": "stadium",
+     "start": 36.482,
+     "end": 36.762
+    },
+    {
+     "text": "with",
+     "start": 36.762,
+     "end": 36.982
+    },
+    {
+     "text": "a",
+     "start": 36.982,
+     "end": 37.082
+    },
+    {
+     "text": "membership",
+     "start": 37.082,
+     "end": 37.362
+    },
+    {
+     "text": "card.",
+     "start": 37.362,
+     "end": 37.722
+    }
+   ]
+  },
+  {
+   "id": "n1",
+   "text": "Now picture seven thousand people waiting for one squat rack.",
+   "start": 38.33147916666667,
+   "end": 41.03147916666667,
+   "words": [
+    {
+     "text": "Now",
+     "start": 38.331,
+     "end": 38.491
+    },
+    {
+     "text": "picture",
+     "start": 38.491,
+     "end": 38.791
+    },
+    {
+     "text": "seven",
+     "start": 38.791,
+     "end": 39.151
+    },
+    {
+     "text": "thousand",
+     "start": 39.151,
+     "end": 39.531
+    },
+    {
+     "text": "people",
+     "start": 39.531,
+     "end": 39.811
+    },
+    {
+     "text": "waiting",
+     "start": 39.811,
+     "end": 40.031
+    },
+    {
+     "text": "for",
+     "start": 40.031,
+     "end": 40.271
+    },
+    {
+     "text": "one",
+     "start": 40.271,
+     "end": 40.451
+    },
+    {
+     "text": "squat",
+     "start": 40.451,
+     "end": 40.711
+    },
+    {
+     "text": "rack.",
+     "start": 40.711,
+     "end": 41.031
+    }
+   ]
+  },
+  {
+   "id": "c1d",
+   "text": "A normal gym floor fits maybe two or three hundred people at once. Not seven thousand.",
+   "start": 41.5764375,
+   "end": 45.4164375,
+   "words": [
+    {
+     "text": "A",
+     "start": 41.576,
+     "end": 41.656
+    },
+    {
+     "text": "normal",
+     "start": 41.656,
+     "end": 41.836
+    },
+    {
+     "text": "gym",
+     "start": 41.836,
+     "end": 42.076
+    },
+    {
+     "text": "floor",
+     "start": 42.076,
+     "end": 42.356
+    },
+    {
+     "text": "fits",
+     "start": 42.356,
+     "end": 42.636
+    },
+    {
+     "text": "maybe",
+     "start": 42.636,
+     "end": 42.836
+    },
+    {
+     "text": "two",
+     "start": 42.836,
+     "end": 43.096
+    },
+    {
+     "text": "or",
+     "start": 43.096,
+     "end": 43.196
+    },
+    {
+     "text": "three",
+     "start": 43.196,
+     "end": 43.376
+    },
+    {
+     "text": "hundred",
+     "start": 43.376,
+     "end": 43.576
+    },
+    {
+     "text": "people",
+     "start": 43.576,
+     "end": 43.796
+    },
+    {
+     "text": "at",
+     "start": 43.796,
+     "end": 43.936
+    },
+    {
+     "text": "once.",
+     "start": 43.936,
+     "end": 44.096
+    },
+    {
+     "text": "Not",
+     "start": 44.496,
+     "end": 44.676
+    },
+    {
+     "text": "seven",
+     "start": 44.676,
+     "end": 44.956
+    },
+    {
+     "text": "thousand.",
+     "start": 44.956,
+     "end": 45.416
+    }
+   ]
+  },
+  {
+   "id": "c1e",
+   "text": "So how does that work? Simple. The gym is betting that almost nobody shows up. And most months most members show up zero times.",
+   "start": 45.9691875,
+   "end": 51.5291875,
+   "words": [
+    {
+     "text": "So",
+     "start": 45.969,
+     "end": 46.069
+    },
+    {
+     "text": "how",
+     "start": 46.069,
+     "end": 46.209
+    },
+    {
+     "text": "does",
+     "start": 46.209,
+     "end": 46.309
+    },
+    {
+     "text": "that",
+     "start": 46.309,
+     "end": 46.429
+    },
+    {
+     "text": "work?",
+     "start": 46.429,
+     "end": 46.629
+    },
+    {
+     "text": "Simple.",
+     "start": 47.309,
+     "end": 47.309
+    },
+    {
+     "text": "The",
+     "start": 47.669,
+     "end": 47.709
+    },
+    {
+     "text": "gym",
+     "start": 47.709,
+     "end": 47.829
+    },
+    {
+     "text": "is",
+     "start": 47.829,
+     "end": 48.009
+    },
+    {
+     "text": "betting",
+     "start": 48.009,
+     "end": 48.169
+    },
+    {
+     "text": "that",
+     "start": 48.169,
+     "end": 48.389
+    },
+    {
+     "text": "almost",
+     "start": 48.389,
+     "end": 48.549
+    },
+    {
+     "text": "nobody",
+     "start": 48.549,
+     "end": 48.849
+    },
+    {
+     "text": "shows",
+     "start": 48.849,
+     "end": 49.129
+    },
+    {
+     "text": "up.",
+     "start": 49.129,
+     "end": 49.349
+    },
+    {
+     "text": "And",
+     "start": 49.589,
+     "end": 49.669
+    },
+    {
+     "text": "most",
+     "start": 49.669,
+     "end": 49.849
+    },
+    {
+     "text": "months",
+     "start": 49.849,
+     "end": 50.089
+    },
+    {
+     "text": "most",
+     "start": 50.089,
+     "end": 50.329
+    },
+    {
+     "text": "members",
+     "start": 50.329,
+     "end": 50.629
+    },
+    {
+     "text": "show",
+     "start": 50.629,
+     "end": 50.869
+    },
+    {
+     "text": "up",
+     "start": 50.869,
+     "end": 50.989
+    },
+    {
+     "text": "zero",
+     "start": 50.989,
+     "end": 51.189
+    },
+    {
+     "text": "times.",
+     "start": 51.189,
+     "end": 51.529
+    }
+   ]
+  },
+  {
+   "id": "n17",
+   "text": "It's like a buffet that only stays open because most people don't come hungry. If everyone ate the buffet would go broke by Tuesday.",
+   "start": 52.285020833333334,
+   "end": 57.245020833333335,
+   "words": [
+    {
+     "text": "It's",
+     "start": 52.285,
+     "end": 52.425
+    },
+    {
+     "text": "like",
+     "start": 52.425,
+     "end": 52.505
+    },
+    {
+     "text": "a",
+     "start": 52.505,
+     "end": 52.645
+    },
+    {
+     "text": "buffet",
+     "start": 52.645,
+     "end": 52.765
+    },
+    {
+     "text": "that",
+     "start": 52.765,
+     "end": 53.105
+    },
+    {
+     "text": "only",
+     "start": 53.105,
+     "end": 53.225
+    },
+    {
+     "text": "stays",
+     "start": 53.225,
+     "end": 53.505
+    },
+    {
+     "text": "open",
+     "start": 53.505,
+     "end": 53.805
+    },
+    {
+     "text": "because",
+     "start": 53.805,
+     "end": 54.105
+    },
+    {
+     "text": "most",
+     "start": 54.105,
+     "end": 54.265
+    },
+    {
+     "text": "people",
+     "start": 54.265,
+     "end": 54.485
+    },
+    {
+     "text": "don't",
+     "start": 54.485,
+     "end": 54.705
+    },
+    {
+     "text": "come",
+     "start": 54.705,
+     "end": 54.805
+    },
+    {
+     "text": "hungry.",
+     "start": 54.805,
+     "end": 55.085
+    },
+    {
+     "text": "If",
+     "start": 55.445,
+     "end": 55.545
+    },
+    {
+     "text": "everyone",
+     "start": 55.545,
+     "end": 55.765
+    },
+    {
+     "text": "ate",
+     "start": 55.765,
+     "end": 56.005
+    },
+    {
+     "text": "the",
+     "start": 56.145,
+     "end": 56.185
+    },
+    {
+     "text": "buffet",
+     "start": 56.185,
+     "end": 56.385
+    },
+    {
+     "text": "would",
+     "start": 56.385,
+     "end": 56.605
+    },
+    {
+     "text": "go",
+     "start": 56.605,
+     "end": 56.705
+    },
+    {
+     "text": "broke",
+     "start": 56.705,
+     "end": 56.865
+    },
+    {
+     "text": "by",
+     "start": 56.865,
+     "end": 57.065
+    },
+    {
+     "text": "Tuesday.",
+     "start": 57.065,
+     "end": 57.245
+    }
+   ]
+  },
+  {
+   "id": "n2",
+   "text": "Including me. I'm most members.",
+   "start": 58.01316666666666,
+   "end": 59.67316666666666,
+   "words": [
+    {
+     "text": "Including",
+     "start": 58.013,
+     "end": 58.313
+    },
+    {
+     "text": "me.",
+     "start": 58.313,
+     "end": 58.633
+    },
+    {
+     "text": "I'm",
+     "start": 58.993,
+     "end": 59.153
+    },
+    {
+     "text": "most",
+     "start": 59.153,
+     "end": 59.273
+    },
+    {
+     "text": "members.",
+     "start": 59.273,
+     "end": 59.673
+    }
+   ]
+  },
+  {
+   "id": "c1f",
+   "text": "It's like an airline that sells three hundred tickets for a plane with one hundred seats and just hopes you oversleep.",
+   "start": 60.444208333333336,
+   "end": 64.74420833333333,
+   "words": [
+    {
+     "text": "It's",
+     "start": 60.444,
+     "end": 60.608
+    },
+    {
+     "text": "like",
+     "start": 60.626,
+     "end": 60.79
+    },
+    {
+     "text": "an",
+     "start": 60.809,
+     "end": 60.907
+    },
+    {
+     "text": "airline",
+     "start": 60.918,
+     "end": 61.181
+    },
+    {
+     "text": "that",
+     "start": 61.21,
+     "end": 61.374
+    },
+    {
+     "text": "sells",
+     "start": 61.392,
+     "end": 61.589
+    },
+    {
+     "text": "three",
+     "start": 61.611,
+     "end": 61.808
+    },
+    {
+     "text": "hundred",
+     "start": 61.83,
+     "end": 62.092
+    },
+    {
+     "text": "tickets",
+     "start": 62.122,
+     "end": 62.384
+    },
+    {
+     "text": "for",
+     "start": 62.413,
+     "end": 62.545
+    },
+    {
+     "text": "a",
+     "start": 62.559,
+     "end": 62.625
+    },
+    {
+     "text": "plane",
+     "start": 62.632,
+     "end": 62.829
+    },
+    {
+     "text": "with",
+     "start": 62.851,
+     "end": 63.015
+    },
+    {
+     "text": "one",
+     "start": 63.033,
+     "end": 63.165
+    },
+    {
+     "text": "hundred",
+     "start": 63.179,
+     "end": 63.442
+    },
+    {
+     "text": "seats",
+     "start": 63.471,
+     "end": 63.668
+    },
+    {
+     "text": "and",
+     "start": 63.69,
+     "end": 63.821
+    },
+    {
+     "text": "just",
+     "start": 63.836,
+     "end": 64.0
+    },
+    {
+     "text": "hopes",
+     "start": 64.018,
+     "end": 64.215
+    },
+    {
+     "text": "you",
+     "start": 64.237,
+     "end": 64.368
+    },
+    {
+     "text": "oversleep.",
+     "start": 64.383,
+     "end": 64.744
+    }
+   ]
+  },
+  {
+   "id": "n3",
+   "text": "Me paying for a gym I don't go to.",
+   "start": 65.32460416666666,
+   "end": 66.80460416666666,
+   "words": [
+    {
+     "text": "Me",
+     "start": 65.325,
+     "end": 65.405
+    },
+    {
+     "text": "paying",
+     "start": 65.405,
+     "end": 65.605
+    },
+    {
+     "text": "for",
+     "start": 65.605,
+     "end": 65.825
+    },
+    {
+     "text": "a",
+     "start": 65.825,
+     "end": 65.905
+    },
+    {
+     "text": "gym",
+     "start": 65.905,
+     "end": 66.065
+    },
+    {
+     "text": "I",
+     "start": 66.065,
+     "end": 66.285
+    },
+    {
+     "text": "don't",
+     "start": 66.285,
+     "end": 66.505
+    },
+    {
+     "text": "go",
+     "start": 66.505,
+     "end": 66.605
+    },
+    {
+     "text": "to.",
+     "start": 66.605,
+     "end": 66.805
+    }
+   ]
+  },
+  {
+   "id": "c1g",
+   "text": "And the cheap price is the whole trick. It costs less than my coffee habit so I never feel the pain enough to cancel.",
+   "start": 67.43120833333333,
+   "end": 72.27120833333333,
+   "words": [
+    {
+     "text": "And",
+     "start": 67.431,
+     "end": 67.531
+    },
+    {
+     "text": "the",
+     "start": 67.531,
+     "end": 67.591
+    },
+    {
+     "text": "cheap",
+     "start": 67.591,
+     "end": 67.731
+    },
+    {
+     "text": "price",
+     "start": 67.731,
+     "end": 68.071
+    },
+    {
+     "text": "is",
+     "start": 68.071,
+     "end": 68.391
+    },
+    {
+     "text": "the",
+     "start": 68.391,
+     "end": 68.511
+    },
+    {
+     "text": "whole",
+     "start": 68.511,
+     "end": 68.631
+    },
+    {
+     "text": "trick.",
+     "start": 68.631,
+     "end": 68.931
+    },
+    {
+     "text": "It",
+     "start": 69.291,
+     "end": 69.371
+    },
+    {
+     "text": "costs",
+     "start": 69.371,
+     "end": 69.551
+    },
+    {
+     "text": "less",
+     "start": 69.551,
+     "end": 69.811
+    },
+    {
+     "text": "than",
+     "start": 69.811,
+     "end": 70.011
+    },
+    {
+     "text": "my",
+     "start": 70.011,
+     "end": 70.111
+    },
+    {
+     "text": "coffee",
+     "start": 70.111,
+     "end": 70.291
+    },
+    {
+     "text": "habit",
+     "start": 70.291,
+     "end": 70.611
+    },
+    {
+     "text": "so",
+     "start": 70.611,
+     "end": 70.891
+    },
+    {
+     "text": "I",
+     "start": 70.891,
+     "end": 70.971
+    },
+    {
+     "text": "never",
+     "start": 70.971,
+     "end": 71.111
+    },
+    {
+     "text": "feel",
+     "start": 71.111,
+     "end": 71.331
+    },
+    {
+     "text": "the",
+     "start": 71.331,
+     "end": 71.451
+    },
+    {
+     "text": "pain",
+     "start": 71.451,
+     "end": 71.591
+    },
+    {
+     "text": "enough",
+     "start": 71.591,
+     "end": 71.831
+    },
+    {
+     "text": "to",
+     "start": 71.831,
+     "end": 72.031
+    },
+    {
+     "text": "cancel.",
+     "start": 72.031,
+     "end": 72.271
+    }
+   ]
+  },
+  {
+   "id": "n4",
+   "text": "Ten dollars a month doesn't feel like money. Until you count how many months.",
+   "start": 72.9805625,
+   "end": 76.0485625,
+   "words": [
+    {
+     "text": "Ten",
+     "start": 72.981,
+     "end": 73.124
+    },
+    {
+     "text": "dollars",
+     "start": 73.14,
+     "end": 73.426
+    },
+    {
+     "text": "a",
+     "start": 73.458,
+     "end": 73.529
+    },
+    {
+     "text": "month",
+     "start": 73.537,
+     "end": 73.752
+    },
+    {
+     "text": "doesn't",
+     "start": 73.776,
+     "end": 74.062
+    },
+    {
+     "text": "feel",
+     "start": 74.094,
+     "end": 74.273
+    },
+    {
+     "text": "like",
+     "start": 74.293,
+     "end": 74.471
+    },
+    {
+     "text": "money.",
+     "start": 74.491,
+     "end": 74.742
+    },
+    {
+     "text": "Until",
+     "start": 74.769,
+     "end": 74.984
+    },
+    {
+     "text": "you",
+     "start": 75.008,
+     "end": 75.151
+    },
+    {
+     "text": "count",
+     "start": 75.167,
+     "end": 75.382
+    },
+    {
+     "text": "how",
+     "start": 75.405,
+     "end": 75.548
+    },
+    {
+     "text": "many",
+     "start": 75.564,
+     "end": 75.743
+    },
+    {
+     "text": "months.",
+     "start": 75.763,
+     "end": 76.049
+    }
+   ]
+  },
+  {
+   "id": "c2a",
+   "text": "And the gym knows exactly when to catch me. January.",
+   "start": 76.87922916666666,
+   "end": 78.85922916666667,
+   "words": [
+    {
+     "text": "And",
+     "start": 76.879,
+     "end": 76.959
+    },
+    {
+     "text": "the",
+     "start": 76.959,
+     "end": 77.039
+    },
+    {
+     "text": "gym",
+     "start": 77.039,
+     "end": 77.139
+    },
+    {
+     "text": "knows",
+     "start": 77.139,
+     "end": 77.339
+    },
+    {
+     "text": "exactly",
+     "start": 77.339,
+     "end": 77.599
+    },
+    {
+     "text": "when",
+     "start": 77.599,
+     "end": 77.859
+    },
+    {
+     "text": "to",
+     "start": 77.859,
+     "end": 77.919
+    },
+    {
+     "text": "catch",
+     "start": 77.919,
+     "end": 78.079
+    },
+    {
+     "text": "me.",
+     "start": 78.079,
+     "end": 78.279
+    },
+    {
+     "text": "January.",
+     "start": 78.599,
+     "end": 78.859
+    }
+   ]
+  },
+  {
+   "id": "c2b",
+   "text": "New year new me. Everybody signs up in the same two weeks. For a gym January is like October for a pumpkin farm.",
+   "start": 79.5635,
+   "end": 85.2835,
+   "words": [
+    {
+     "text": "New",
+     "start": 79.564,
+     "end": 79.744
+    },
+    {
+     "text": "year",
+     "start": 79.744,
+     "end": 79.964
+    },
+    {
+     "text": "new",
+     "start": 80.124,
+     "end": 80.204
+    },
+    {
+     "text": "me.",
+     "start": 80.204,
+     "end": 80.424
+    },
+    {
+     "text": "Everybody",
+     "start": 80.704,
+     "end": 80.924
+    },
+    {
+     "text": "signs",
+     "start": 80.924,
+     "end": 81.224
+    },
+    {
+     "text": "up",
+     "start": 81.224,
+     "end": 81.484
+    },
+    {
+     "text": "in",
+     "start": 81.484,
+     "end": 81.564
+    },
+    {
+     "text": "the",
+     "start": 81.564,
+     "end": 81.624
+    },
+    {
+     "text": "same",
+     "start": 81.624,
+     "end": 81.784
+    },
+    {
+     "text": "two",
+     "start": 81.784,
+     "end": 81.984
+    },
+    {
+     "text": "weeks.",
+     "start": 81.984,
+     "end": 82.204
+    },
+    {
+     "text": "For",
+     "start": 82.523,
+     "end": 82.624
+    },
+    {
+     "text": "a",
+     "start": 82.624,
+     "end": 82.724
+    },
+    {
+     "text": "gym",
+     "start": 82.724,
+     "end": 82.904
+    },
+    {
+     "text": "January",
+     "start": 83.264,
+     "end": 83.504
+    },
+    {
+     "text": "is",
+     "start": 83.504,
+     "end": 83.944
+    },
+    {
+     "text": "like",
+     "start": 83.944,
+     "end": 84.064
+    },
+    {
+     "text": "October",
+     "start": 84.064,
+     "end": 84.344
+    },
+    {
+     "text": "for",
+     "start": 84.344,
+     "end": 84.704
+    },
+    {
+     "text": "a",
+     "start": 84.704,
+     "end": 84.784
+    },
+    {
+     "text": "pumpkin",
+     "start": 84.784,
+     "end": 84.944
+    },
+    {
+     "text": "farm.",
+     "start": 84.944,
+     "end": 85.284
+    }
+   ]
+  },
+  {
+   "id": "n18",
+   "text": "And I was one of them. I posted my membership card online with a flexing emoji. Thirty eight likes. Peak of my fitness career.",
+   "start": 85.98985416666666,
+   "end": 91.95185416666666,
+   "words": [
+    {
+     "text": "And",
+     "start": 85.99,
+     "end": 86.16
+    },
+    {
+     "text": "I",
+     "start": 86.179,
+     "end": 86.264
+    },
+    {
+     "text": "was",
+     "start": 86.273,
+     "end": 86.444
+    },
+    {
+     "text": "one",
+     "start": 86.462,
+     "end": 86.633
+    },
+    {
+     "text": "of",
+     "start": 86.651,
+     "end": 86.779
+    },
+    {
+     "text": "them.",
+     "start": 86.793,
+     "end": 87.048
+    },
+    {
+     "text": "I",
+     "start": 87.077,
+     "end": 87.162
+    },
+    {
+     "text": "posted",
+     "start": 87.171,
+     "end": 87.469
+    },
+    {
+     "text": "my",
+     "start": 87.502,
+     "end": 87.629
+    },
+    {
+     "text": "membership",
+     "start": 87.644,
+     "end": 88.111
+    },
+    {
+     "text": "card",
+     "start": 88.163,
+     "end": 88.376
+    },
+    {
+     "text": "online",
+     "start": 88.399,
+     "end": 88.697
+    },
+    {
+     "text": "with",
+     "start": 88.73,
+     "end": 88.943
+    },
+    {
+     "text": "a",
+     "start": 88.966,
+     "end": 89.051
+    },
+    {
+     "text": "flexing",
+     "start": 89.061,
+     "end": 89.401
+    },
+    {
+     "text": "emoji.",
+     "start": 89.439,
+     "end": 89.736
+    },
+    {
+     "text": "Thirty",
+     "start": 89.77,
+     "end": 90.067
+    },
+    {
+     "text": "eight",
+     "start": 90.1,
+     "end": 90.355
+    },
+    {
+     "text": "likes.",
+     "start": 90.384,
+     "end": 90.681
+    },
+    {
+     "text": "Peak",
+     "start": 90.714,
+     "end": 90.927
+    },
+    {
+     "text": "of",
+     "start": 90.951,
+     "end": 91.078
+    },
+    {
+     "text": "my",
+     "start": 91.092,
+     "end": 91.22
+    },
+    {
+     "text": "fitness",
+     "start": 91.234,
+     "end": 91.574
+    },
+    {
+     "text": "career.",
+     "start": 91.612,
+     "end": 91.952
+    }
+   ]
+  },
+  {
+   "id": "c2c",
+   "text": "The place is packed. There's a line for the treadmill. A guy is filming himself doing curls in the squat rack.",
+   "start": 92.6095625,
+   "end": 97.40956249999999,
+   "words": [
+    {
+     "text": "The",
+     "start": 92.61,
+     "end": 92.67
+    },
+    {
+     "text": "place",
+     "start": 92.67,
+     "end": 92.83
+    },
+    {
+     "text": "is",
+     "start": 92.83,
+     "end": 93.01
+    },
+    {
+     "text": "packed.",
+     "start": 93.01,
+     "end": 93.31
+    },
+    {
+     "text": "There's",
+     "start": 93.81,
+     "end": 93.95
+    },
+    {
+     "text": "a",
+     "start": 93.95,
+     "end": 94.01
+    },
+    {
+     "text": "line",
+     "start": 94.01,
+     "end": 94.17
+    },
+    {
+     "text": "for",
+     "start": 94.17,
+     "end": 94.35
+    },
+    {
+     "text": "the",
+     "start": 94.35,
+     "end": 94.43
+    },
+    {
+     "text": "treadmill.",
+     "start": 94.43,
+     "end": 94.65
+    },
+    {
+     "text": "A",
+     "start": 95.09,
+     "end": 95.17
+    },
+    {
+     "text": "guy",
+     "start": 95.17,
+     "end": 95.33
+    },
+    {
+     "text": "is",
+     "start": 95.33,
+     "end": 95.43
+    },
+    {
+     "text": "filming",
+     "start": 95.43,
+     "end": 95.69
+    },
+    {
+     "text": "himself",
+     "start": 95.69,
+     "end": 96.05
+    },
+    {
+     "text": "doing",
+     "start": 96.05,
+     "end": 96.29
+    },
+    {
+     "text": "curls",
+     "start": 96.29,
+     "end": 96.59
+    },
+    {
+     "text": "in",
+     "start": 96.59,
+     "end": 96.89
+    },
+    {
+     "text": "the",
+     "start": 96.89,
+     "end": 96.99
+    },
+    {
+     "text": "squat",
+     "start": 96.99,
+     "end": 97.15
+    },
+    {
+     "text": "rack.",
+     "start": 97.15,
+     "end": 97.41
+    }
+   ]
+  },
+  {
+   "id": "n35",
+   "text": "The parking lot is full. People are parking on the grass. It feels like a concert except everyone is sweating for no reason.",
+   "start": 97.97377083333333,
+   "end": 103.13377083333333,
+   "words": [
+    {
+     "text": "The",
+     "start": 97.974,
+     "end": 98.094
+    },
+    {
+     "text": "parking",
+     "start": 98.094,
+     "end": 98.294
+    },
+    {
+     "text": "lot",
+     "start": 98.294,
+     "end": 98.514
+    },
+    {
+     "text": "is",
+     "start": 98.514,
+     "end": 98.634
+    },
+    {
+     "text": "full.",
+     "start": 98.634,
+     "end": 98.874
+    },
+    {
+     "text": "People",
+     "start": 99.374,
+     "end": 99.534
+    },
+    {
+     "text": "are",
+     "start": 99.534,
+     "end": 99.694
+    },
+    {
+     "text": "parking",
+     "start": 99.694,
+     "end": 99.934
+    },
+    {
+     "text": "on",
+     "start": 99.934,
+     "end": 100.114
+    },
+    {
+     "text": "the",
+     "start": 100.114,
+     "end": 100.214
+    },
+    {
+     "text": "grass.",
+     "start": 100.214,
+     "end": 100.414
+    },
+    {
+     "text": "It",
+     "start": 100.734,
+     "end": 100.814
+    },
+    {
+     "text": "feels",
+     "start": 100.814,
+     "end": 100.954
+    },
+    {
+     "text": "like",
+     "start": 100.954,
+     "end": 101.134
+    },
+    {
+     "text": "a",
+     "start": 101.134,
+     "end": 101.214
+    },
+    {
+     "text": "concert",
+     "start": 101.214,
+     "end": 101.534
+    },
+    {
+     "text": "except",
+     "start": 101.534,
+     "end": 101.774
+    },
+    {
+     "text": "everyone",
+     "start": 101.774,
+     "end": 102.154
+    },
+    {
+     "text": "is",
+     "start": 102.154,
+     "end": 102.314
+    },
+    {
+     "text": "sweating",
+     "start": 102.314,
+     "end": 102.494
+    },
+    {
+     "text": "for",
+     "start": 102.494,
+     "end": 102.734
+    },
+    {
+     "text": "no",
+     "start": 102.734,
+     "end": 102.854
+    },
+    {
+     "text": "reason.",
+     "start": 102.854,
+     "end": 103.134
+    }
+   ]
+  },
+  {
+   "id": "n5",
+   "text": "Me in the first week of January.",
+   "start": 103.82947916666667,
+   "end": 105.24947916666667,
+   "words": [
+    {
+     "text": "Me",
+     "start": 103.829,
+     "end": 104.049
+    },
+    {
+     "text": "in",
+     "start": 104.049,
+     "end": 104.329
+    },
+    {
+     "text": "the",
+     "start": 104.329,
+     "end": 104.429
+    },
+    {
+     "text": "first",
+     "start": 104.429,
+     "end": 104.609
+    },
+    {
+     "text": "week",
+     "start": 104.609,
+     "end": 104.809
+    },
+    {
+     "text": "of",
+     "start": 104.809,
+     "end": 104.929
+    },
+    {
+     "text": "January.",
+     "start": 104.929,
+     "end": 105.249
+    }
+   ]
+  },
+  {
+   "id": "c2d",
+   "text": "I tell my neighbor Bob I'm a changed man. I buy the shaker bottle and the gloves and the tiny towel.",
+   "start": 105.87341666666667,
+   "end": 110.17341666666667,
+   "words": [
+    {
+     "text": "I",
+     "start": 105.873,
+     "end": 105.953
+    },
+    {
+     "text": "tell",
+     "start": 105.953,
+     "end": 106.093
+    },
+    {
+     "text": "my",
+     "start": 106.093,
+     "end": 106.213
+    },
+    {
+     "text": "neighbor",
+     "start": 106.213,
+     "end": 106.393
+    },
+    {
+     "text": "Bob",
+     "start": 106.393,
+     "end": 106.633
+    },
+    {
+     "text": "I'm",
+     "start": 106.633,
+     "end": 106.913
+    },
+    {
+     "text": "a",
+     "start": 106.913,
+     "end": 106.953
+    },
+    {
+     "text": "changed",
+     "start": 106.953,
+     "end": 107.173
+    },
+    {
+     "text": "man.",
+     "start": 107.173,
+     "end": 107.513
+    },
+    {
+     "text": "I",
+     "start": 108.013,
+     "end": 108.073
+    },
+    {
+     "text": "buy",
+     "start": 108.073,
+     "end": 108.193
+    },
+    {
+     "text": "the",
+     "start": 108.193,
+     "end": 108.333
+    },
+    {
+     "text": "shaker",
+     "start": 108.333,
+     "end": 108.573
+    },
+    {
+     "text": "bottle",
+     "start": 108.573,
+     "end": 108.753
+    },
+    {
+     "text": "and",
+     "start": 108.753,
+     "end": 109.053
+    },
+    {
+     "text": "the",
+     "start": 109.053,
+     "end": 109.133
+    },
+    {
+     "text": "gloves",
+     "start": 109.133,
+     "end": 109.333
+    },
+    {
+     "text": "and",
+     "start": 109.333,
+     "end": 109.653
+    },
+    {
+     "text": "the",
+     "start": 109.653,
+     "end": 109.733
+    },
+    {
+     "text": "tiny",
+     "start": 109.733,
+     "end": 109.893
+    },
+    {
+     "text": "towel.",
+     "start": 109.893,
+     "end": 110.173
+    }
+   ]
+  },
+  {
+   "id": "c2e",
+   "text": "And the gym prints my card and smiles. Because they've seen this exact movie every January and they know how it ends.",
+   "start": 110.902,
+   "end": 115.697,
+   "words": [
+    {
+     "text": "And",
+     "start": 110.902,
+     "end": 111.049
+    },
+    {
+     "text": "the",
+     "start": 111.065,
+     "end": 111.212
+    },
+    {
+     "text": "gym",
+     "start": 111.229,
+     "end": 111.376
+    },
+    {
+     "text": "prints",
+     "start": 111.392,
+     "end": 111.65
+    },
+    {
+     "text": "my",
+     "start": 111.678,
+     "end": 111.788
+    },
+    {
+     "text": "card",
+     "start": 111.801,
+     "end": 111.984
+    },
+    {
+     "text": "and",
+     "start": 112.005,
+     "end": 112.152
+    },
+    {
+     "text": "smiles.",
+     "start": 112.168,
+     "end": 112.462
+    },
+    {
+     "text": "Because",
+     "start": 112.495,
+     "end": 112.789
+    },
+    {
+     "text": "they've",
+     "start": 112.822,
+     "end": 113.116
+    },
+    {
+     "text": "seen",
+     "start": 113.149,
+     "end": 113.332
+    },
+    {
+     "text": "this",
+     "start": 113.353,
+     "end": 113.537
+    },
+    {
+     "text": "exact",
+     "start": 113.557,
+     "end": 113.778
+    },
+    {
+     "text": "movie",
+     "start": 113.802,
+     "end": 114.023
+    },
+    {
+     "text": "every",
+     "start": 114.047,
+     "end": 114.268
+    },
+    {
+     "text": "January",
+     "start": 114.292,
+     "end": 114.586
+    },
+    {
+     "text": "and",
+     "start": 114.619,
+     "end": 114.766
+    },
+    {
+     "text": "they",
+     "start": 114.783,
+     "end": 114.966
+    },
+    {
+     "text": "know",
+     "start": 114.987,
+     "end": 115.171
+    },
+    {
+     "text": "how",
+     "start": 115.191,
+     "end": 115.338
+    },
+    {
+     "text": "it",
+     "start": 115.354,
+     "end": 115.465
+    },
+    {
+     "text": "ends.",
+     "start": 115.477,
+     "end": 115.697
+    }
+   ]
+  },
+  {
+   "id": "n19",
+   "text": "Think about it. Does the gym hire more staff in January? Nope. Do they buy more treadmills? Nope. They just wait.",
+   "start": 116.4650625,
+   "end": 121.5850625,
+   "words": [
+    {
+     "text": "Think",
+     "start": 116.465,
+     "end": 116.565
+    },
+    {
+     "text": "about",
+     "start": 116.565,
+     "end": 116.745
+    },
+    {
+     "text": "it.",
+     "start": 116.745,
+     "end": 116.945
+    },
+    {
+     "text": "Does",
+     "start": 117.165,
+     "end": 117.265
+    },
+    {
+     "text": "the",
+     "start": 117.265,
+     "end": 117.385
+    },
+    {
+     "text": "gym",
+     "start": 117.385,
+     "end": 117.525
+    },
+    {
+     "text": "hire",
+     "start": 117.525,
+     "end": 117.765
+    },
+    {
+     "text": "more",
+     "start": 117.765,
+     "end": 117.965
+    },
+    {
+     "text": "staff",
+     "start": 117.965,
+     "end": 118.225
+    },
+    {
+     "text": "in",
+     "start": 118.225,
+     "end": 118.425
+    },
+    {
+     "text": "January?",
+     "start": 118.425,
+     "end": 118.705
+    },
+    {
+     "text": "Nope.",
+     "start": 119.205,
+     "end": 119.365
+    },
+    {
+     "text": "Do",
+     "start": 119.585,
+     "end": 119.625
+    },
+    {
+     "text": "they",
+     "start": 119.625,
+     "end": 119.725
+    },
+    {
+     "text": "buy",
+     "start": 119.725,
+     "end": 119.865
+    },
+    {
+     "text": "more",
+     "start": 119.865,
+     "end": 120.025
+    },
+    {
+     "text": "treadmills?",
+     "start": 120.025,
+     "end": 120.445
+    },
+    {
+     "text": "Nope.",
+     "start": 120.685,
+     "end": 120.845
+    },
+    {
+     "text": "They",
+     "start": 121.105,
+     "end": 121.265
+    },
+    {
+     "text": "just",
+     "start": 121.265,
+     "end": 121.365
+    },
+    {
+     "text": "wait.",
+     "start": 121.365,
+     "end": 121.585
+    }
+   ]
+  },
+  {
+   "id": "c3a",
+   "text": "There's even a day for when it all falls apart.",
+   "start": 122.1739375,
+   "end": 123.91393749999999,
+   "words": [
+    {
+     "text": "There's",
+     "start": 122.174,
+     "end": 122.374
+    },
+    {
+     "text": "even",
+     "start": 122.374,
+     "end": 122.534
+    },
+    {
+     "text": "a",
+     "start": 122.534,
+     "end": 122.674
+    },
+    {
+     "text": "day",
+     "start": 122.674,
+     "end": 122.814
+    },
+    {
+     "text": "for",
+     "start": 122.814,
+     "end": 122.974
+    },
+    {
+     "text": "when",
+     "start": 122.974,
+     "end": 123.134
+    },
+    {
+     "text": "it",
+     "start": 123.134,
+     "end": 123.214
+    },
+    {
+     "text": "all",
+     "start": 123.214,
+     "end": 123.314
+    },
+    {
+     "text": "falls",
+     "start": 123.314,
+     "end": 123.534
+    },
+    {
+     "text": "apart.",
+     "start": 123.534,
+     "end": 123.914
+    }
+   ]
+  },
+  {
+   "id": "c3b",
+   "text": "A fitness app looked at millions of workouts and found the exact day people give up. They call it Quitter's Day.",
+   "start": 124.5948125,
+   "end": 129.4548125,
+   "words": [
+    {
+     "text": "A",
+     "start": 124.595,
+     "end": 124.675
+    },
+    {
+     "text": "fitness",
+     "start": 124.675,
+     "end": 124.815
+    },
+    {
+     "text": "app",
+     "start": 124.815,
+     "end": 125.095
+    },
+    {
+     "text": "looked",
+     "start": 125.095,
+     "end": 125.315
+    },
+    {
+     "text": "at",
+     "start": 125.315,
+     "end": 125.435
+    },
+    {
+     "text": "millions",
+     "start": 125.435,
+     "end": 125.615
+    },
+    {
+     "text": "of",
+     "start": 125.615,
+     "end": 125.955
+    },
+    {
+     "text": "workouts",
+     "start": 125.955,
+     "end": 126.135
+    },
+    {
+     "text": "and",
+     "start": 126.135,
+     "end": 126.535
+    },
+    {
+     "text": "found",
+     "start": 126.535,
+     "end": 126.715
+    },
+    {
+     "text": "the",
+     "start": 126.715,
+     "end": 126.855
+    },
+    {
+     "text": "exact",
+     "start": 126.855,
+     "end": 126.995
+    },
+    {
+     "text": "day",
+     "start": 126.995,
+     "end": 127.375
+    },
+    {
+     "text": "people",
+     "start": 127.375,
+     "end": 127.615
+    },
+    {
+     "text": "give",
+     "start": 127.615,
+     "end": 127.875
+    },
+    {
+     "text": "up.",
+     "start": 127.875,
+     "end": 128.115
+    },
+    {
+     "text": "They",
+     "start": 128.495,
+     "end": 128.655
+    },
+    {
+     "text": "call",
+     "start": 128.655,
+     "end": 128.835
+    },
+    {
+     "text": "it",
+     "start": 128.835,
+     "end": 128.975
+    },
+    {
+     "text": "Quitter's",
+     "start": 128.975,
+     "end": 129.215
+    },
+    {
+     "text": "Day.",
+     "start": 129.215,
+     "end": 129.455
+    }
+   ]
+  },
+  {
+   "id": "c3c",
+   "text": "It's the second Friday of January. Not March. Not even February. The second Friday of January.",
+   "start": 130.09483333333333,
+   "end": 134.7348333333333,
+   "words": [
+    {
+     "text": "It's",
+     "start": 130.095,
+     "end": 130.255
+    },
+    {
+     "text": "the",
+     "start": 130.255,
+     "end": 130.355
+    },
+    {
+     "text": "second",
+     "start": 130.355,
+     "end": 130.575
+    },
+    {
+     "text": "Friday",
+     "start": 130.575,
+     "end": 130.815
+    },
+    {
+     "text": "of",
+     "start": 130.815,
+     "end": 131.015
+    },
+    {
+     "text": "January.",
+     "start": 131.015,
+     "end": 131.295
+    },
+    {
+     "text": "Not",
+     "start": 131.835,
+     "end": 132.015
+    },
+    {
+     "text": "March.",
+     "start": 132.015,
+     "end": 132.275
+    },
+    {
+     "text": "Not",
+     "start": 132.595,
+     "end": 132.755
+    },
+    {
+     "text": "even",
+     "start": 132.755,
+     "end": 132.875
+    },
+    {
+     "text": "February.",
+     "start": 132.875,
+     "end": 133.335
+    },
+    {
+     "text": "The",
+     "start": 133.655,
+     "end": 133.735
+    },
+    {
+     "text": "second",
+     "start": 133.735,
+     "end": 133.955
+    },
+    {
+     "text": "Friday",
+     "start": 133.955,
+     "end": 134.195
+    },
+    {
+     "text": "of",
+     "start": 134.195,
+     "end": 134.395
+    },
+    {
+     "text": "January.",
+     "start": 134.395,
+     "end": 134.735
+    }
+   ]
+  },
+  {
+   "id": "n20",
+   "text": "Not even two weeks. My New Year's resolution had a shorter life than a carton of milk.",
+   "start": 135.49479166666666,
+   "end": 139.49479166666666,
+   "words": [
+    {
+     "text": "Not",
+     "start": 135.495,
+     "end": 135.695
+    },
+    {
+     "text": "even",
+     "start": 135.695,
+     "end": 135.855
+    },
+    {
+     "text": "two",
+     "start": 135.855,
+     "end": 136.135
+    },
+    {
+     "text": "weeks.",
+     "start": 136.135,
+     "end": 136.415
+    },
+    {
+     "text": "My",
+     "start": 136.855,
+     "end": 136.935
+    },
+    {
+     "text": "New",
+     "start": 136.935,
+     "end": 137.115
+    },
+    {
+     "text": "Year's",
+     "start": 137.115,
+     "end": 137.375
+    },
+    {
+     "text": "resolution",
+     "start": 137.375,
+     "end": 137.655
+    },
+    {
+     "text": "had",
+     "start": 137.655,
+     "end": 138.035
+    },
+    {
+     "text": "a",
+     "start": 138.035,
+     "end": 138.115
+    },
+    {
+     "text": "shorter",
+     "start": 138.115,
+     "end": 138.315
+    },
+    {
+     "text": "life",
+     "start": 138.315,
+     "end": 138.635
+    },
+    {
+     "text": "than",
+     "start": 138.635,
+     "end": 138.855
+    },
+    {
+     "text": "a",
+     "start": 138.855,
+     "end": 138.935
+    },
+    {
+     "text": "carton",
+     "start": 138.935,
+     "end": 139.235
+    },
+    {
+     "text": "of",
+     "start": 139.235,
+     "end": 139.315
+    },
+    {
+     "text": "milk.",
+     "start": 139.315,
+     "end": 139.495
+    }
+   ]
+  },
+  {
+   "id": "n6",
+   "text": "My motivation on the second Friday of January.",
+   "start": 140.0310625,
+   "end": 141.8910625,
+   "words": [
+    {
+     "text": "My",
+     "start": 140.031,
+     "end": 140.151
+    },
+    {
+     "text": "motivation",
+     "start": 140.151,
+     "end": 140.391
+    },
+    {
+     "text": "on",
+     "start": 140.391,
+     "end": 140.731
+    },
+    {
+     "text": "the",
+     "start": 140.731,
+     "end": 140.851
+    },
+    {
+     "text": "second",
+     "start": 140.851,
+     "end": 141.071
+    },
+    {
+     "text": "Friday",
+     "start": 141.071,
+     "end": 141.291
+    },
+    {
+     "text": "of",
+     "start": 141.291,
+     "end": 141.511
+    },
+    {
+     "text": "January.",
+     "start": 141.511,
+     "end": 141.891
+    }
+   ]
+  },
+  {
+   "id": "c3d",
+   "text": "That was me. I went three times. Then it rained once and I took it personally.",
+   "start": 142.66277083333333,
+   "end": 146.32277083333332,
+   "words": [
+    {
+     "text": "That",
+     "start": 142.663,
+     "end": 142.803
+    },
+    {
+     "text": "was",
+     "start": 142.803,
+     "end": 142.943
+    },
+    {
+     "text": "me.",
+     "start": 142.943,
+     "end": 143.163
+    },
+    {
+     "text": "I",
+     "start": 143.563,
+     "end": 143.663
+    },
+    {
+     "text": "went",
+     "start": 143.663,
+     "end": 143.803
+    },
+    {
+     "text": "three",
+     "start": 143.803,
+     "end": 143.983
+    },
+    {
+     "text": "times.",
+     "start": 143.983,
+     "end": 144.383
+    },
+    {
+     "text": "Then",
+     "start": 144.743,
+     "end": 144.903
+    },
+    {
+     "text": "it",
+     "start": 144.903,
+     "end": 144.983
+    },
+    {
+     "text": "rained",
+     "start": 144.983,
+     "end": 145.243
+    },
+    {
+     "text": "once",
+     "start": 145.243,
+     "end": 145.483
+    },
+    {
+     "text": "and",
+     "start": 145.483,
+     "end": 145.703
+    },
+    {
+     "text": "I",
+     "start": 145.703,
+     "end": 145.783
+    },
+    {
+     "text": "took",
+     "start": 145.783,
+     "end": 145.903
+    },
+    {
+     "text": "it",
+     "start": 145.903,
+     "end": 145.983
+    },
+    {
+     "text": "personally.",
+     "start": 145.983,
+     "end": 146.323
+    }
+   ]
+  },
+  {
+   "id": "c3e",
+   "text": "And everybody who signed up with me? Same. The gym gets quieter every week but the money keeps coming in.",
+   "start": 147.07295833333333,
+   "end": 152.07295833333333,
+   "words": [
+    {
+     "text": "And",
+     "start": 147.073,
+     "end": 147.413
+    },
+    {
+     "text": "everybody",
+     "start": 147.413,
+     "end": 147.753
+    },
+    {
+     "text": "who",
+     "start": 147.753,
+     "end": 148.013
+    },
+    {
+     "text": "signed",
+     "start": 148.013,
+     "end": 148.153
+    },
+    {
+     "text": "up",
+     "start": 148.153,
+     "end": 148.333
+    },
+    {
+     "text": "with",
+     "start": 148.333,
+     "end": 148.453
+    },
+    {
+     "text": "me?",
+     "start": 148.453,
+     "end": 148.633
+    },
+    {
+     "text": "Same.",
+     "start": 148.953,
+     "end": 149.053
+    },
+    {
+     "text": "The",
+     "start": 149.853,
+     "end": 149.893
+    },
+    {
+     "text": "gym",
+     "start": 149.893,
+     "end": 149.993
+    },
+    {
+     "text": "gets",
+     "start": 149.993,
+     "end": 150.193
+    },
+    {
+     "text": "quieter",
+     "start": 150.193,
+     "end": 150.433
+    },
+    {
+     "text": "every",
+     "start": 150.433,
+     "end": 150.773
+    },
+    {
+     "text": "week",
+     "start": 150.773,
+     "end": 150.993
+    },
+    {
+     "text": "but",
+     "start": 151.233,
+     "end": 151.233
+    },
+    {
+     "text": "the",
+     "start": 151.233,
+     "end": 151.333
+    },
+    {
+     "text": "money",
+     "start": 151.333,
+     "end": 151.453
+    },
+    {
+     "text": "keeps",
+     "start": 151.453,
+     "end": 151.633
+    },
+    {
+     "text": "coming",
+     "start": 151.633,
+     "end": 151.913
+    },
+    {
+     "text": "in.",
+     "start": 151.913,
+     "end": 152.073
+    }
+   ]
+  },
+  {
+   "id": "n21",
+   "text": "And every month a little message from my bank. Gym membership. Paid. Like a tiny reminder that I'm a liar.",
+   "start": 152.72758333333334,
+   "end": 158.44758333333334,
+   "words": [
+    {
+     "text": "And",
+     "start": 152.728,
+     "end": 152.848
+    },
+    {
+     "text": "every",
+     "start": 152.848,
+     "end": 153.068
+    },
+    {
+     "text": "month",
+     "start": 153.068,
+     "end": 153.308
+    },
+    {
+     "text": "a",
+     "start": 153.308,
+     "end": 153.588
+    },
+    {
+     "text": "little",
+     "start": 153.588,
+     "end": 153.788
+    },
+    {
+     "text": "message",
+     "start": 153.788,
+     "end": 154.068
+    },
+    {
+     "text": "from",
+     "start": 154.068,
+     "end": 154.428
+    },
+    {
+     "text": "my",
+     "start": 154.428,
+     "end": 154.568
+    },
+    {
+     "text": "bank.",
+     "start": 154.568,
+     "end": 154.808
+    },
+    {
+     "text": "Gym",
+     "start": 155.128,
+     "end": 155.388
+    },
+    {
+     "text": "membership.",
+     "start": 155.388,
+     "end": 155.768
+    },
+    {
+     "text": "Paid.",
+     "start": 156.188,
+     "end": 156.488
+    },
+    {
+     "text": "Like",
+     "start": 156.928,
+     "end": 157.088
+    },
+    {
+     "text": "a",
+     "start": 157.088,
+     "end": 157.188
+    },
+    {
+     "text": "tiny",
+     "start": 157.188,
+     "end": 157.348
+    },
+    {
+     "text": "reminder",
+     "start": 157.348,
+     "end": 157.668
+    },
+    {
+     "text": "that",
+     "start": 157.668,
+     "end": 158.008
+    },
+    {
+     "text": "I'm",
+     "start": 158.008,
+     "end": 158.188
+    },
+    {
+     "text": "a",
+     "start": 158.188,
+     "end": 158.248
+    },
+    {
+     "text": "liar.",
+     "start": 158.248,
+     "end": 158.448
+    }
+   ]
+  },
+  {
+   "id": "n7",
+   "text": "By March the only guy still going was the one filming himself.",
+   "start": 159.1911875,
+   "end": 161.6111875,
+   "words": [
+    {
+     "text": "By",
+     "start": 159.191,
+     "end": 159.291
+    },
+    {
+     "text": "March",
+     "start": 159.291,
+     "end": 159.471
+    },
+    {
+     "text": "the",
+     "start": 159.731,
+     "end": 159.751
+    },
+    {
+     "text": "only",
+     "start": 159.751,
+     "end": 159.891
+    },
+    {
+     "text": "guy",
+     "start": 159.891,
+     "end": 160.131
+    },
+    {
+     "text": "still",
+     "start": 160.131,
+     "end": 160.411
+    },
+    {
+     "text": "going",
+     "start": 160.411,
+     "end": 160.671
+    },
+    {
+     "text": "was",
+     "start": 160.671,
+     "end": 160.871
+    },
+    {
+     "text": "the",
+     "start": 160.871,
+     "end": 160.991
+    },
+    {
+     "text": "one",
+     "start": 160.991,
+     "end": 161.111
+    },
+    {
+     "text": "filming",
+     "start": 161.111,
+     "end": 161.351
+    },
+    {
+     "text": "himself.",
+     "start": 161.351,
+     "end": 161.611
+    }
+   ]
+  },
+  {
+   "id": "c4a",
+   "text": "So I did something no gym member should ever do. I did the math.",
+   "start": 164.57429166666665,
+   "end": 167.49429166666664,
+   "words": [
+    {
+     "text": "So",
+     "start": 164.574,
+     "end": 164.694
+    },
+    {
+     "text": "I",
+     "start": 164.694,
+     "end": 164.754
+    },
+    {
+     "text": "did",
+     "start": 164.754,
+     "end": 164.894
+    },
+    {
+     "text": "something",
+     "start": 164.894,
+     "end": 165.214
+    },
+    {
+     "text": "no",
+     "start": 165.214,
+     "end": 165.674
+    },
+    {
+     "text": "gym",
+     "start": 165.674,
+     "end": 165.894
+    },
+    {
+     "text": "member",
+     "start": 165.894,
+     "end": 166.154
+    },
+    {
+     "text": "should",
+     "start": 166.154,
+     "end": 166.394
+    },
+    {
+     "text": "ever",
+     "start": 166.394,
+     "end": 166.534
+    },
+    {
+     "text": "do.",
+     "start": 166.534,
+     "end": 166.734
+    },
+    {
+     "text": "I",
+     "start": 167.054,
+     "end": 167.154
+    },
+    {
+     "text": "did",
+     "start": 167.154,
+     "end": 167.294
+    },
+    {
+     "text": "the",
+     "start": 167.294,
+     "end": 167.394
+    },
+    {
+     "text": "math.",
+     "start": 167.394,
+     "end": 167.494
+    }
+   ]
+  },
+  {
+   "id": "c4b",
+   "text": "Here's the one number. Take what you pay every month and divide it by how many times you actually went.",
+   "start": 168.05495833333333,
+   "end": 172.23495833333334,
+   "words": [
+    {
+     "text": "Here's",
+     "start": 168.055,
+     "end": 168.235
+    },
+    {
+     "text": "the",
+     "start": 168.235,
+     "end": 168.335
+    },
+    {
+     "text": "one",
+     "start": 168.335,
+     "end": 168.475
+    },
+    {
+     "text": "number.",
+     "start": 168.475,
+     "end": 168.775
+    },
+    {
+     "text": "Take",
+     "start": 169.055,
+     "end": 169.195
+    },
+    {
+     "text": "what",
+     "start": 169.195,
+     "end": 169.375
+    },
+    {
+     "text": "you",
+     "start": 169.375,
+     "end": 169.475
+    },
+    {
+     "text": "pay",
+     "start": 169.475,
+     "end": 169.635
+    },
+    {
+     "text": "every",
+     "start": 169.635,
+     "end": 169.895
+    },
+    {
+     "text": "month",
+     "start": 169.895,
+     "end": 170.135
+    },
+    {
+     "text": "and",
+     "start": 170.355,
+     "end": 170.395
+    },
+    {
+     "text": "divide",
+     "start": 170.395,
+     "end": 170.615
+    },
+    {
+     "text": "it",
+     "start": 170.615,
+     "end": 170.835
+    },
+    {
+     "text": "by",
+     "start": 170.835,
+     "end": 170.995
+    },
+    {
+     "text": "how",
+     "start": 170.995,
+     "end": 171.155
+    },
+    {
+     "text": "many",
+     "start": 171.155,
+     "end": 171.275
+    },
+    {
+     "text": "times",
+     "start": 171.275,
+     "end": 171.515
+    },
+    {
+     "text": "you",
+     "start": 171.515,
+     "end": 171.675
+    },
+    {
+     "text": "actually",
+     "start": 171.675,
+     "end": 171.935
+    },
+    {
+     "text": "went.",
+     "start": 171.935,
+     "end": 172.235
+    }
+   ]
+  },
+  {
+   "id": "c4c",
+   "text": "For me it was thirty dollars a visit. For one shower basically. The most expensive shower of my life.",
+   "start": 172.9491875,
+   "end": 177.2631875,
+   "words": [
+    {
+     "text": "For",
+     "start": 172.949,
+     "end": 173.102
+    },
+    {
+     "text": "me",
+     "start": 173.119,
+     "end": 173.234
+    },
+    {
+     "text": "it",
+     "start": 173.247,
+     "end": 173.362
+    },
+    {
+     "text": "was",
+     "start": 173.374,
+     "end": 173.528
+    },
+    {
+     "text": "thirty",
+     "start": 173.545,
+     "end": 173.813
+    },
+    {
+     "text": "dollars",
+     "start": 173.843,
+     "end": 174.149
+    },
+    {
+     "text": "a",
+     "start": 174.183,
+     "end": 174.26
+    },
+    {
+     "text": "visit.",
+     "start": 174.268,
+     "end": 174.536
+    },
+    {
+     "text": "For",
+     "start": 174.566,
+     "end": 174.719
+    },
+    {
+     "text": "one",
+     "start": 174.736,
+     "end": 174.889
+    },
+    {
+     "text": "shower",
+     "start": 174.906,
+     "end": 175.174
+    },
+    {
+     "text": "basically.",
+     "start": 175.204,
+     "end": 175.625
+    },
+    {
+     "text": "The",
+     "start": 175.672,
+     "end": 175.825
+    },
+    {
+     "text": "most",
+     "start": 175.842,
+     "end": 176.034
+    },
+    {
+     "text": "expensive",
+     "start": 176.055,
+     "end": 176.438
+    },
+    {
+     "text": "shower",
+     "start": 176.481,
+     "end": 176.749
+    },
+    {
+     "text": "of",
+     "start": 176.778,
+     "end": 176.893
+    },
+    {
+     "text": "my",
+     "start": 176.906,
+     "end": 177.021
+    },
+    {
+     "text": "life.",
+     "start": 177.034,
+     "end": 177.263
+    }
+   ]
+  },
+  {
+   "id": "n22",
+   "text": "I could have hired a personal trainer to come to my house and yell at me for less money.",
+   "start": 177.83095833333334,
+   "end": 180.71095833333334,
+   "words": [
+    {
+     "text": "I",
+     "start": 177.831,
+     "end": 177.911
+    },
+    {
+     "text": "could",
+     "start": 177.911,
+     "end": 178.031
+    },
+    {
+     "text": "have",
+     "start": 178.031,
+     "end": 178.111
+    },
+    {
+     "text": "hired",
+     "start": 178.111,
+     "end": 178.251
+    },
+    {
+     "text": "a",
+     "start": 178.251,
+     "end": 178.391
+    },
+    {
+     "text": "personal",
+     "start": 178.391,
+     "end": 178.551
+    },
+    {
+     "text": "trainer",
+     "start": 178.551,
+     "end": 178.851
+    },
+    {
+     "text": "to",
+     "start": 178.851,
+     "end": 179.091
+    },
+    {
+     "text": "come",
+     "start": 179.091,
+     "end": 179.211
+    },
+    {
+     "text": "to",
+     "start": 179.211,
+     "end": 179.331
+    },
+    {
+     "text": "my",
+     "start": 179.331,
+     "end": 179.411
+    },
+    {
+     "text": "house",
+     "start": 179.411,
+     "end": 179.591
+    },
+    {
+     "text": "and",
+     "start": 179.591,
+     "end": 179.751
+    },
+    {
+     "text": "yell",
+     "start": 179.751,
+     "end": 179.891
+    },
+    {
+     "text": "at",
+     "start": 179.891,
+     "end": 180.011
+    },
+    {
+     "text": "me",
+     "start": 180.011,
+     "end": 180.111
+    },
+    {
+     "text": "for",
+     "start": 180.111,
+     "end": 180.251
+    },
+    {
+     "text": "less",
+     "start": 180.251,
+     "end": 180.391
+    },
+    {
+     "text": "money.",
+     "start": 180.391,
+     "end": 180.711
+    }
+   ]
+  },
+  {
+   "id": "n8",
+   "text": "My gym membership versus my actual workouts.",
+   "start": 181.35858333333334,
+   "end": 183.09858333333335,
+   "words": [
+    {
+     "text": "My",
+     "start": 181.359,
+     "end": 181.439
+    },
+    {
+     "text": "gym",
+     "start": 181.439,
+     "end": 181.559
+    },
+    {
+     "text": "membership",
+     "start": 181.559,
+     "end": 181.979
+    },
+    {
+     "text": "versus",
+     "start": 181.979,
+     "end": 182.279
+    },
+    {
+     "text": "my",
+     "start": 182.279,
+     "end": 182.519
+    },
+    {
+     "text": "actual",
+     "start": 182.519,
+     "end": 182.759
+    },
+    {
+     "text": "workouts.",
+     "start": 182.759,
+     "end": 183.099
+    }
+   ]
+  },
+  {
+   "id": "c4d",
+   "text": "And this isn't just me being lazy. Two economists studied thousands of real gym members and found the same thing.",
+   "start": 183.9160625,
+   "end": 188.9160625,
+   "words": [
+    {
+     "text": "And",
+     "start": 183.916,
+     "end": 184.016
+    },
+    {
+     "text": "this",
+     "start": 184.016,
+     "end": 184.116
+    },
+    {
+     "text": "isn't",
+     "start": 184.116,
+     "end": 184.396
+    },
+    {
+     "text": "just",
+     "start": 184.396,
+     "end": 184.516
+    },
+    {
+     "text": "me",
+     "start": 184.516,
+     "end": 184.696
+    },
+    {
+     "text": "being",
+     "start": 184.696,
+     "end": 184.916
+    },
+    {
+     "text": "lazy.",
+     "start": 184.916,
+     "end": 185.156
+    },
+    {
+     "text": "Two",
+     "start": 185.976,
+     "end": 185.996
+    },
+    {
+     "text": "economists",
+     "start": 185.996,
+     "end": 186.276
+    },
+    {
+     "text": "studied",
+     "start": 186.276,
+     "end": 186.756
+    },
+    {
+     "text": "thousands",
+     "start": 186.756,
+     "end": 187.096
+    },
+    {
+     "text": "of",
+     "start": 187.096,
+     "end": 187.376
+    },
+    {
+     "text": "real",
+     "start": 187.376,
+     "end": 187.516
+    },
+    {
+     "text": "gym",
+     "start": 187.516,
+     "end": 187.716
+    },
+    {
+     "text": "members",
+     "start": 187.716,
+     "end": 188.016
+    },
+    {
+     "text": "and",
+     "start": 188.016,
+     "end": 188.196
+    },
+    {
+     "text": "found",
+     "start": 188.196,
+     "end": 188.336
+    },
+    {
+     "text": "the",
+     "start": 188.336,
+     "end": 188.496
+    },
+    {
+     "text": "same",
+     "start": 188.496,
+     "end": 188.656
+    },
+    {
+     "text": "thing.",
+     "start": 188.656,
+     "end": 188.916
+    }
+   ]
+  },
+  {
+   "id": "c4e",
+   "text": "People on the monthly plan paid way more per visit than if they just bought a ten visit pass. Most of them would have saved hundreds a year.",
+   "start": 189.61895833333332,
+   "end": 195.91895833333334,
+   "words": [
+    {
+     "text": "People",
+     "start": 189.619,
+     "end": 189.859
+    },
+    {
+     "text": "on",
+     "start": 189.859,
+     "end": 190.159
+    },
+    {
+     "text": "the",
+     "start": 190.159,
+     "end": 190.279
+    },
+    {
+     "text": "monthly",
+     "start": 190.279,
+     "end": 190.379
+    },
+    {
+     "text": "plan",
+     "start": 190.379,
+     "end": 190.919
+    },
+    {
+     "text": "paid",
+     "start": 190.919,
+     "end": 191.219
+    },
+    {
+     "text": "way",
+     "start": 191.219,
+     "end": 191.519
+    },
+    {
+     "text": "more",
+     "start": 191.519,
+     "end": 191.759
+    },
+    {
+     "text": "per",
+     "start": 191.759,
+     "end": 191.919
+    },
+    {
+     "text": "visit",
+     "start": 191.919,
+     "end": 192.179
+    },
+    {
+     "text": "than",
+     "start": 192.179,
+     "end": 192.519
+    },
+    {
+     "text": "if",
+     "start": 192.519,
+     "end": 192.639
+    },
+    {
+     "text": "they",
+     "start": 192.639,
+     "end": 192.739
+    },
+    {
+     "text": "just",
+     "start": 192.739,
+     "end": 192.919
+    },
+    {
+     "text": "bought",
+     "start": 192.919,
+     "end": 193.079
+    },
+    {
+     "text": "a",
+     "start": 193.079,
+     "end": 193.219
+    },
+    {
+     "text": "ten",
+     "start": 193.219,
+     "end": 193.359
+    },
+    {
+     "text": "visit",
+     "start": 193.359,
+     "end": 193.619
+    },
+    {
+     "text": "pass.",
+     "start": 193.619,
+     "end": 193.779
+    },
+    {
+     "text": "Most",
+     "start": 194.439,
+     "end": 194.599
+    },
+    {
+     "text": "of",
+     "start": 194.599,
+     "end": 194.739
+    },
+    {
+     "text": "them",
+     "start": 194.739,
+     "end": 194.879
+    },
+    {
+     "text": "would",
+     "start": 194.879,
+     "end": 194.999
+    },
+    {
+     "text": "have",
+     "start": 194.999,
+     "end": 195.059
+    },
+    {
+     "text": "saved",
+     "start": 195.059,
+     "end": 195.279
+    },
+    {
+     "text": "hundreds",
+     "start": 195.279,
+     "end": 195.559
+    },
+    {
+     "text": "a",
+     "start": 195.559,
+     "end": 195.739
+    },
+    {
+     "text": "year.",
+     "start": 195.739,
+     "end": 195.919
+    }
+   ]
+  },
+  {
+   "id": "n23",
+   "text": "Read that again. The people who picked the monthly plan to save money lost money. Because they bet on the wrong version of themselves.",
+   "start": 196.6276875,
+   "end": 202.08768750000002,
+   "words": [
+    {
+     "text": "Read",
+     "start": 196.628,
+     "end": 196.728
+    },
+    {
+     "text": "that",
+     "start": 196.728,
+     "end": 196.868
+    },
+    {
+     "text": "again.",
+     "start": 196.868,
+     "end": 197.108
+    },
+    {
+     "text": "The",
+     "start": 197.748,
+     "end": 197.748
+    },
+    {
+     "text": "people",
+     "start": 197.748,
+     "end": 197.948
+    },
+    {
+     "text": "who",
+     "start": 197.948,
+     "end": 198.108
+    },
+    {
+     "text": "picked",
+     "start": 198.108,
+     "end": 198.248
+    },
+    {
+     "text": "the",
+     "start": 198.248,
+     "end": 198.408
+    },
+    {
+     "text": "monthly",
+     "start": 198.408,
+     "end": 198.508
+    },
+    {
+     "text": "plan",
+     "start": 198.508,
+     "end": 198.848
+    },
+    {
+     "text": "to",
+     "start": 198.848,
+     "end": 199.008
+    },
+    {
+     "text": "save",
+     "start": 199.008,
+     "end": 199.148
+    },
+    {
+     "text": "money",
+     "start": 199.148,
+     "end": 199.388
+    },
+    {
+     "text": "lost",
+     "start": 199.388,
+     "end": 199.768
+    },
+    {
+     "text": "money.",
+     "start": 199.768,
+     "end": 200.188
+    },
+    {
+     "text": "Because",
+     "start": 200.188,
+     "end": 200.688
+    },
+    {
+     "text": "they",
+     "start": 200.688,
+     "end": 200.848
+    },
+    {
+     "text": "bet",
+     "start": 200.848,
+     "end": 200.968
+    },
+    {
+     "text": "on",
+     "start": 200.968,
+     "end": 201.088
+    },
+    {
+     "text": "the",
+     "start": 201.088,
+     "end": 201.168
+    },
+    {
+     "text": "wrong",
+     "start": 201.168,
+     "end": 201.368
+    },
+    {
+     "text": "version",
+     "start": 201.368,
+     "end": 201.668
+    },
+    {
+     "text": "of",
+     "start": 201.668,
+     "end": 201.888
+    },
+    {
+     "text": "themselves.",
+     "start": 201.888,
+     "end": 202.088
+    }
+   ]
+  },
+  {
+   "id": "c4f",
+   "text": "So basically we paid extra for the right to feel guilty about not going.",
+   "start": 203.05177083333334,
+   "end": 206.35177083333335,
+   "words": [
+    {
+     "text": "So",
+     "start": 203.052,
+     "end": 203.192
+    },
+    {
+     "text": "basically",
+     "start": 203.372,
+     "end": 203.532
+    },
+    {
+     "text": "we",
+     "start": 203.892,
+     "end": 203.992
+    },
+    {
+     "text": "paid",
+     "start": 203.992,
+     "end": 204.172
+    },
+    {
+     "text": "extra",
+     "start": 204.172,
+     "end": 204.412
+    },
+    {
+     "text": "for",
+     "start": 204.412,
+     "end": 204.752
+    },
+    {
+     "text": "the",
+     "start": 204.752,
+     "end": 204.812
+    },
+    {
+     "text": "right",
+     "start": 204.812,
+     "end": 204.972
+    },
+    {
+     "text": "to",
+     "start": 204.972,
+     "end": 205.112
+    },
+    {
+     "text": "feel",
+     "start": 205.112,
+     "end": 205.232
+    },
+    {
+     "text": "guilty",
+     "start": 205.232,
+     "end": 205.592
+    },
+    {
+     "text": "about",
+     "start": 205.592,
+     "end": 205.832
+    },
+    {
+     "text": "not",
+     "start": 205.832,
+     "end": 206.072
+    },
+    {
+     "text": "going.",
+     "start": 206.072,
+     "end": 206.352
+    }
+   ]
+  },
+  {
+   "id": "n9",
+   "text": "The gym business model in one picture.",
+   "start": 207.20635416666667,
+   "end": 208.74635416666666,
+   "words": [
+    {
+     "text": "The",
+     "start": 207.206,
+     "end": 207.286
+    },
+    {
+     "text": "gym",
+     "start": 207.286,
+     "end": 207.406
+    },
+    {
+     "text": "business",
+     "start": 207.406,
+     "end": 207.686
+    },
+    {
+     "text": "model",
+     "start": 207.686,
+     "end": 208.086
+    },
+    {
+     "text": "in",
+     "start": 208.086,
+     "end": 208.286
+    },
+    {
+     "text": "one",
+     "start": 208.286,
+     "end": 208.426
+    },
+    {
+     "text": "picture.",
+     "start": 208.426,
+     "end": 208.746
+    }
+   ]
+  },
+  {
+   "id": "c5a",
+   "text": "Now you might think this only happens to lazy people. Nope. It happens to you too.",
+   "start": 209.42072916666666,
+   "end": 213.00072916666667,
+   "words": [
+    {
+     "text": "Now",
+     "start": 209.421,
+     "end": 209.541
+    },
+    {
+     "text": "you",
+     "start": 209.541,
+     "end": 209.621
+    },
+    {
+     "text": "might",
+     "start": 209.621,
+     "end": 209.761
+    },
+    {
+     "text": "think",
+     "start": 209.761,
+     "end": 209.961
+    },
+    {
+     "text": "this",
+     "start": 209.961,
+     "end": 210.161
+    },
+    {
+     "text": "only",
+     "start": 210.161,
+     "end": 210.301
+    },
+    {
+     "text": "happens",
+     "start": 210.301,
+     "end": 210.621
+    },
+    {
+     "text": "to",
+     "start": 210.621,
+     "end": 210.821
+    },
+    {
+     "text": "lazy",
+     "start": 210.821,
+     "end": 210.961
+    },
+    {
+     "text": "people.",
+     "start": 210.961,
+     "end": 211.301
+    },
+    {
+     "text": "Nope.",
+     "start": 211.541,
+     "end": 211.841
+    },
+    {
+     "text": "It",
+     "start": 212.221,
+     "end": 212.281
+    },
+    {
+     "text": "happens",
+     "start": 212.281,
+     "end": 212.501
+    },
+    {
+     "text": "to",
+     "start": 212.501,
+     "end": 212.721
+    },
+    {
+     "text": "you",
+     "start": 212.721,
+     "end": 212.821
+    },
+    {
+     "text": "too.",
+     "start": 212.821,
+     "end": 213.001
+    }
+   ]
+  },
+  {
+   "id": "c5b",
+   "text": "There are two of me. Tonight me just wants pizza. But January me is sure that future me will run every morning.",
+   "start": 213.60085416666666,
+   "end": 218.96085416666668,
+   "words": [
+    {
+     "text": "There",
+     "start": 213.601,
+     "end": 213.701
+    },
+    {
+     "text": "are",
+     "start": 213.701,
+     "end": 213.761
+    },
+    {
+     "text": "two",
+     "start": 213.761,
+     "end": 213.941
+    },
+    {
+     "text": "of",
+     "start": 213.941,
+     "end": 214.081
+    },
+    {
+     "text": "me.",
+     "start": 214.081,
+     "end": 214.221
+    },
+    {
+     "text": "Tonight",
+     "start": 214.621,
+     "end": 214.821
+    },
+    {
+     "text": "me",
+     "start": 214.821,
+     "end": 215.001
+    },
+    {
+     "text": "just",
+     "start": 215.001,
+     "end": 215.161
+    },
+    {
+     "text": "wants",
+     "start": 215.161,
+     "end": 215.321
+    },
+    {
+     "text": "pizza.",
+     "start": 215.321,
+     "end": 215.541
+    },
+    {
+     "text": "But",
+     "start": 216.361,
+     "end": 216.381
+    },
+    {
+     "text": "January",
+     "start": 216.381,
+     "end": 216.541
+    },
+    {
+     "text": "me",
+     "start": 216.541,
+     "end": 217.021
+    },
+    {
+     "text": "is",
+     "start": 217.021,
+     "end": 217.261
+    },
+    {
+     "text": "sure",
+     "start": 217.261,
+     "end": 217.461
+    },
+    {
+     "text": "that",
+     "start": 217.461,
+     "end": 217.581
+    },
+    {
+     "text": "future",
+     "start": 217.581,
+     "end": 217.781
+    },
+    {
+     "text": "me",
+     "start": 217.781,
+     "end": 218.081
+    },
+    {
+     "text": "will",
+     "start": 218.081,
+     "end": 218.241
+    },
+    {
+     "text": "run",
+     "start": 218.241,
+     "end": 218.381
+    },
+    {
+     "text": "every",
+     "start": 218.381,
+     "end": 218.601
+    },
+    {
+     "text": "morning.",
+     "start": 218.601,
+     "end": 218.961
+    }
+   ]
+  },
+  {
+   "id": "c5c",
+   "text": "And January me is the one who signs the contract. Every time.",
+   "start": 219.62539583333333,
+   "end": 223.16539583333332,
+   "words": [
+    {
+     "text": "And",
+     "start": 219.625,
+     "end": 219.865
+    },
+    {
+     "text": "January",
+     "start": 219.865,
+     "end": 220.145
+    },
+    {
+     "text": "me",
+     "start": 220.145,
+     "end": 220.605
+    },
+    {
+     "text": "is",
+     "start": 220.605,
+     "end": 220.985
+    },
+    {
+     "text": "the",
+     "start": 220.985,
+     "end": 221.185
+    },
+    {
+     "text": "one",
+     "start": 221.185,
+     "end": 221.325
+    },
+    {
+     "text": "who",
+     "start": 221.325,
+     "end": 221.445
+    },
+    {
+     "text": "signs",
+     "start": 221.445,
+     "end": 221.625
+    },
+    {
+     "text": "the",
+     "start": 221.625,
+     "end": 221.825
+    },
+    {
+     "text": "contract.",
+     "start": 221.825,
+     "end": 222.185
+    },
+    {
+     "text": "Every",
+     "start": 222.725,
+     "end": 222.905
+    },
+    {
+     "text": "time.",
+     "start": 222.905,
+     "end": 223.165
+    }
+   ]
+  },
+  {
+   "id": "n24",
+   "text": "The gym isn't selling to you. It's selling to January you. The most optimistic person who has ever lived.",
+   "start": 223.8129375,
+   "end": 228.61293750000002,
+   "words": [
+    {
+     "text": "The",
+     "start": 223.813,
+     "end": 223.873
+    },
+    {
+     "text": "gym",
+     "start": 223.873,
+     "end": 224.033
+    },
+    {
+     "text": "isn't",
+     "start": 224.033,
+     "end": 224.313
+    },
+    {
+     "text": "selling",
+     "start": 224.313,
+     "end": 224.473
+    },
+    {
+     "text": "to",
+     "start": 224.473,
+     "end": 224.673
+    },
+    {
+     "text": "you.",
+     "start": 224.673,
+     "end": 224.833
+    },
+    {
+     "text": "It's",
+     "start": 225.133,
+     "end": 225.313
+    },
+    {
+     "text": "selling",
+     "start": 225.313,
+     "end": 225.453
+    },
+    {
+     "text": "to",
+     "start": 225.453,
+     "end": 225.673
+    },
+    {
+     "text": "January",
+     "start": 225.673,
+     "end": 225.973
+    },
+    {
+     "text": "you.",
+     "start": 225.973,
+     "end": 226.413
+    },
+    {
+     "text": "The",
+     "start": 226.733,
+     "end": 226.893
+    },
+    {
+     "text": "most",
+     "start": 226.893,
+     "end": 227.013
+    },
+    {
+     "text": "optimistic",
+     "start": 227.013,
+     "end": 227.393
+    },
+    {
+     "text": "person",
+     "start": 227.393,
+     "end": 227.853
+    },
+    {
+     "text": "who",
+     "start": 227.853,
+     "end": 228.113
+    },
+    {
+     "text": "has",
+     "start": 228.113,
+     "end": 228.193
+    },
+    {
+     "text": "ever",
+     "start": 228.193,
+     "end": 228.373
+    },
+    {
+     "text": "lived.",
+     "start": 228.373,
+     "end": 228.613
+    }
+   ]
+  },
+  {
+   "id": "n10",
+   "text": "Future me after January me signs a twelve month contract.",
+   "start": 229.31427083333332,
+   "end": 231.83027083333332,
+   "words": [
+    {
+     "text": "Future",
+     "start": 229.314,
+     "end": 229.592
+    },
+    {
+     "text": "me",
+     "start": 229.623,
+     "end": 229.742
+    },
+    {
+     "text": "after",
+     "start": 229.755,
+     "end": 229.994
+    },
+    {
+     "text": "January",
+     "start": 230.02,
+     "end": 230.338
+    },
+    {
+     "text": "me",
+     "start": 230.373,
+     "end": 230.492
+    },
+    {
+     "text": "signs",
+     "start": 230.506,
+     "end": 230.744
+    },
+    {
+     "text": "a",
+     "start": 230.771,
+     "end": 230.85
+    },
+    {
+     "text": "twelve",
+     "start": 230.859,
+     "end": 231.137
+    },
+    {
+     "text": "month",
+     "start": 231.168,
+     "end": 231.406
+    },
+    {
+     "text": "contract.",
+     "start": 231.433,
+     "end": 231.83
+    }
+   ]
+  },
+  {
+   "id": "c5e",
+   "text": "It's the same reason people buy a treadmill and it turns into the most expensive clothes rack in the house.",
+   "start": 232.63175,
+   "end": 236.77175,
+   "words": [
+    {
+     "text": "It's",
+     "start": 232.632,
+     "end": 232.792
+    },
+    {
+     "text": "the",
+     "start": 232.792,
+     "end": 232.912
+    },
+    {
+     "text": "same",
+     "start": 232.912,
+     "end": 233.132
+    },
+    {
+     "text": "reason",
+     "start": 233.132,
+     "end": 233.332
+    },
+    {
+     "text": "people",
+     "start": 233.332,
+     "end": 233.612
+    },
+    {
+     "text": "buy",
+     "start": 233.612,
+     "end": 233.912
+    },
+    {
+     "text": "a",
+     "start": 233.912,
+     "end": 233.992
+    },
+    {
+     "text": "treadmill",
+     "start": 233.992,
+     "end": 234.232
+    },
+    {
+     "text": "and",
+     "start": 234.552,
+     "end": 234.612
+    },
+    {
+     "text": "it",
+     "start": 234.612,
+     "end": 234.692
+    },
+    {
+     "text": "turns",
+     "start": 234.692,
+     "end": 234.872
+    },
+    {
+     "text": "into",
+     "start": 234.872,
+     "end": 235.172
+    },
+    {
+     "text": "the",
+     "start": 235.172,
+     "end": 235.312
+    },
+    {
+     "text": "most",
+     "start": 235.312,
+     "end": 235.452
+    },
+    {
+     "text": "expensive",
+     "start": 235.452,
+     "end": 235.652
+    },
+    {
+     "text": "clothes",
+     "start": 235.652,
+     "end": 236.112
+    },
+    {
+     "text": "rack",
+     "start": 236.112,
+     "end": 236.372
+    },
+    {
+     "text": "in",
+     "start": 236.372,
+     "end": 236.552
+    },
+    {
+     "text": "the",
+     "start": 236.552,
+     "end": 236.612
+    },
+    {
+     "text": "house.",
+     "start": 236.612,
+     "end": 236.772
+    }
+   ]
+  },
+  {
+   "id": "n25",
+   "text": "Me hanging a shirt on a treadmill I paid nine hundred dollars for.",
+   "start": 237.5200625,
+   "end": 239.9620625,
+   "words": [
+    {
+     "text": "Me",
+     "start": 237.52,
+     "end": 237.619
+    },
+    {
+     "text": "hanging",
+     "start": 237.63,
+     "end": 237.895
+    },
+    {
+     "text": "a",
+     "start": 237.924,
+     "end": 237.99
+    },
+    {
+     "text": "shirt",
+     "start": 237.997,
+     "end": 238.196
+    },
+    {
+     "text": "on",
+     "start": 238.218,
+     "end": 238.317
+    },
+    {
+     "text": "a",
+     "start": 238.328,
+     "end": 238.394
+    },
+    {
+     "text": "treadmill",
+     "start": 238.401,
+     "end": 238.732
+    },
+    {
+     "text": "I",
+     "start": 238.768,
+     "end": 238.834
+    },
+    {
+     "text": "paid",
+     "start": 238.842,
+     "end": 239.007
+    },
+    {
+     "text": "nine",
+     "start": 239.025,
+     "end": 239.191
+    },
+    {
+     "text": "hundred",
+     "start": 239.209,
+     "end": 239.473
+    },
+    {
+     "text": "dollars",
+     "start": 239.503,
+     "end": 239.767
+    },
+    {
+     "text": "for.",
+     "start": 239.796,
+     "end": 239.962
+    }
+   ]
+  },
+  {
+   "id": "n11",
+   "text": "Be honest. You have a treadmill or a yoga mat or a bike somewhere holding laundry right now.",
+   "start": 240.685375,
+   "end": 245.205375,
+   "words": [
+    {
+     "text": "Be",
+     "start": 240.685,
+     "end": 240.845
+    },
+    {
+     "text": "honest.",
+     "start": 240.845,
+     "end": 241.125
+    },
+    {
+     "text": "You",
+     "start": 241.665,
+     "end": 241.825
+    },
+    {
+     "text": "have",
+     "start": 241.825,
+     "end": 242.005
+    },
+    {
+     "text": "a",
+     "start": 242.005,
+     "end": 242.085
+    },
+    {
+     "text": "treadmill",
+     "start": 242.085,
+     "end": 242.305
+    },
+    {
+     "text": "or",
+     "start": 242.305,
+     "end": 242.825
+    },
+    {
+     "text": "a",
+     "start": 242.825,
+     "end": 242.925
+    },
+    {
+     "text": "yoga",
+     "start": 242.925,
+     "end": 243.085
+    },
+    {
+     "text": "mat",
+     "start": 243.085,
+     "end": 243.365
+    },
+    {
+     "text": "or",
+     "start": 243.365,
+     "end": 243.625
+    },
+    {
+     "text": "a",
+     "start": 243.625,
+     "end": 243.705
+    },
+    {
+     "text": "bike",
+     "start": 243.705,
+     "end": 243.865
+    },
+    {
+     "text": "somewhere",
+     "start": 243.865,
+     "end": 244.105
+    },
+    {
+     "text": "holding",
+     "start": 244.105,
+     "end": 244.425
+    },
+    {
+     "text": "laundry",
+     "start": 244.425,
+     "end": 244.705
+    },
+    {
+     "text": "right",
+     "start": 244.705,
+     "end": 245.005
+    },
+    {
+     "text": "now.",
+     "start": 245.005,
+     "end": 245.205
+    }
+   ]
+  },
+  {
+   "id": "c6a",
+   "text": "So in April I decide I'm done. Time to cancel.",
+   "start": 247.99145833333333,
+   "end": 250.17145833333333,
+   "words": [
+    {
+     "text": "So",
+     "start": 247.991,
+     "end": 248.111
+    },
+    {
+     "text": "in",
+     "start": 248.251,
+     "end": 248.291
+    },
+    {
+     "text": "April",
+     "start": 248.291,
+     "end": 248.551
+    },
+    {
+     "text": "I",
+     "start": 248.791,
+     "end": 248.831
+    },
+    {
+     "text": "decide",
+     "start": 248.831,
+     "end": 248.991
+    },
+    {
+     "text": "I'm",
+     "start": 248.991,
+     "end": 249.191
+    },
+    {
+     "text": "done.",
+     "start": 249.191,
+     "end": 249.351
+    },
+    {
+     "text": "Time",
+     "start": 249.711,
+     "end": 249.851
+    },
+    {
+     "text": "to",
+     "start": 249.851,
+     "end": 249.971
+    },
+    {
+     "text": "cancel.",
+     "start": 249.971,
+     "end": 250.171
+    }
+   ]
+  },
+  {
+   "id": "c6b",
+   "text": "Signing up took me two minutes on my phone. Cancelling? Different story.",
+   "start": 250.872,
+   "end": 254.65200000000002,
+   "words": [
+    {
+     "text": "Signing",
+     "start": 250.872,
+     "end": 251.192
+    },
+    {
+     "text": "up",
+     "start": 251.192,
+     "end": 251.312
+    },
+    {
+     "text": "took",
+     "start": 251.312,
+     "end": 251.532
+    },
+    {
+     "text": "me",
+     "start": 251.532,
+     "end": 251.732
+    },
+    {
+     "text": "two",
+     "start": 251.732,
+     "end": 251.912
+    },
+    {
+     "text": "minutes",
+     "start": 251.912,
+     "end": 252.192
+    },
+    {
+     "text": "on",
+     "start": 252.192,
+     "end": 252.412
+    },
+    {
+     "text": "my",
+     "start": 252.412,
+     "end": 252.552
+    },
+    {
+     "text": "phone.",
+     "start": 252.552,
+     "end": 252.832
+    },
+    {
+     "text": "Cancelling?",
+     "start": 253.192,
+     "end": 253.732
+    },
+    {
+     "text": "Different",
+     "start": 253.732,
+     "end": 254.292
+    },
+    {
+     "text": "story.",
+     "start": 254.292,
+     "end": 254.652
+    }
+   ]
+  },
+  {
+   "id": "c6c",
+   "text": "Some big gyms want a written letter. Sent by mail. With thirty days notice. Like I'm resigning from a job in nineteen fifty.",
+   "start": 255.35554166666665,
+   "end": 260.78454166666666,
+   "words": [
+    {
+     "text": "Some",
+     "start": 255.356,
+     "end": 255.553
+    },
+    {
+     "text": "big",
+     "start": 255.574,
+     "end": 255.732
+    },
+    {
+     "text": "gyms",
+     "start": 255.749,
+     "end": 255.946
+    },
+    {
+     "text": "want",
+     "start": 255.968,
+     "end": 256.164
+    },
+    {
+     "text": "a",
+     "start": 256.186,
+     "end": 256.265
+    },
+    {
+     "text": "written",
+     "start": 256.273,
+     "end": 256.588
+    },
+    {
+     "text": "letter.",
+     "start": 256.623,
+     "end": 256.937
+    },
+    {
+     "text": "Sent",
+     "start": 256.972,
+     "end": 257.169
+    },
+    {
+     "text": "by",
+     "start": 257.191,
+     "end": 257.308
+    },
+    {
+     "text": "mail.",
+     "start": 257.322,
+     "end": 257.557
+    },
+    {
+     "text": "With",
+     "start": 257.584,
+     "end": 257.78
+    },
+    {
+     "text": "thirty",
+     "start": 257.802,
+     "end": 258.077
+    },
+    {
+     "text": "days",
+     "start": 258.108,
+     "end": 258.304
+    },
+    {
+     "text": "notice.",
+     "start": 258.326,
+     "end": 258.641
+    },
+    {
+     "text": "Like",
+     "start": 258.676,
+     "end": 258.872
+    },
+    {
+     "text": "I'm",
+     "start": 258.894,
+     "end": 259.051
+    },
+    {
+     "text": "resigning",
+     "start": 259.069,
+     "end": 259.462
+    },
+    {
+     "text": "from",
+     "start": 259.506,
+     "end": 259.702
+    },
+    {
+     "text": "a",
+     "start": 259.724,
+     "end": 259.803
+    },
+    {
+     "text": "job",
+     "start": 259.811,
+     "end": 259.969
+    },
+    {
+     "text": "in",
+     "start": 259.986,
+     "end": 260.104
+    },
+    {
+     "text": "nineteen",
+     "start": 260.117,
+     "end": 260.471
+    },
+    {
+     "text": "fifty.",
+     "start": 260.51,
+     "end": 260.785
+    }
+   ]
+  },
+  {
+   "id": "n26",
+   "text": "I had to buy a stamp. I didn't even know what a stamp costs anymore. I had to Google it.",
+   "start": 261.65204166666666,
+   "end": 265.1920416666667,
+   "words": [
+    {
+     "text": "I",
+     "start": 261.652,
+     "end": 261.712
+    },
+    {
+     "text": "had",
+     "start": 261.712,
+     "end": 261.812
+    },
+    {
+     "text": "to",
+     "start": 261.812,
+     "end": 261.892
+    },
+    {
+     "text": "buy",
+     "start": 261.892,
+     "end": 261.992
+    },
+    {
+     "text": "a",
+     "start": 261.992,
+     "end": 262.092
+    },
+    {
+     "text": "stamp.",
+     "start": 262.092,
+     "end": 262.412
+    },
+    {
+     "text": "I",
+     "start": 262.812,
+     "end": 262.852
+    },
+    {
+     "text": "didn't",
+     "start": 262.852,
+     "end": 262.992
+    },
+    {
+     "text": "even",
+     "start": 262.992,
+     "end": 263.112
+    },
+    {
+     "text": "know",
+     "start": 263.112,
+     "end": 263.212
+    },
+    {
+     "text": "what",
+     "start": 263.212,
+     "end": 263.312
+    },
+    {
+     "text": "a",
+     "start": 263.312,
+     "end": 263.372
+    },
+    {
+     "text": "stamp",
+     "start": 263.372,
+     "end": 263.512
+    },
+    {
+     "text": "costs",
+     "start": 263.512,
+     "end": 263.792
+    },
+    {
+     "text": "anymore.",
+     "start": 263.792,
+     "end": 264.132
+    },
+    {
+     "text": "I",
+     "start": 264.512,
+     "end": 264.572
+    },
+    {
+     "text": "had",
+     "start": 264.572,
+     "end": 264.672
+    },
+    {
+     "text": "to",
+     "start": 264.672,
+     "end": 264.772
+    },
+    {
+     "text": "Google",
+     "start": 264.772,
+     "end": 264.932
+    },
+    {
+     "text": "it.",
+     "start": 264.932,
+     "end": 265.192
+    }
+   ]
+  },
+  {
+   "id": "n12",
+   "text": "Me at the post office trying to quit a gym.",
+   "start": 265.7,
+   "end": 267.28,
+   "words": [
+    {
+     "text": "Me",
+     "start": 265.7,
+     "end": 265.82
+    },
+    {
+     "text": "at",
+     "start": 265.82,
+     "end": 265.94
+    },
+    {
+     "text": "the",
+     "start": 265.94,
+     "end": 266.04
+    },
+    {
+     "text": "post",
+     "start": 266.04,
+     "end": 266.18
+    },
+    {
+     "text": "office",
+     "start": 266.18,
+     "end": 266.46
+    },
+    {
+     "text": "trying",
+     "start": 266.46,
+     "end": 266.76
+    },
+    {
+     "text": "to",
+     "start": 266.76,
+     "end": 266.9
+    },
+    {
+     "text": "quit",
+     "start": 266.9,
+     "end": 267.04
+    },
+    {
+     "text": "a",
+     "start": 267.04,
+     "end": 267.12
+    },
+    {
+     "text": "gym.",
+     "start": 267.12,
+     "end": 267.28
+    }
+   ]
+  },
+  {
+   "id": "c6d",
+   "text": "Other gyms make you cancel in person at your home club. And if you show up on the wrong day you get billed again.",
+   "start": 267.97352083333334,
+   "end": 272.6135208333333,
+   "words": [
+    {
+     "text": "Other",
+     "start": 267.974,
+     "end": 268.154
+    },
+    {
+     "text": "gyms",
+     "start": 268.154,
+     "end": 268.474
+    },
+    {
+     "text": "make",
+     "start": 268.474,
+     "end": 268.634
+    },
+    {
+     "text": "you",
+     "start": 268.634,
+     "end": 268.734
+    },
+    {
+     "text": "cancel",
+     "start": 268.734,
+     "end": 268.974
+    },
+    {
+     "text": "in",
+     "start": 268.974,
+     "end": 269.154
+    },
+    {
+     "text": "person",
+     "start": 269.154,
+     "end": 269.334
+    },
+    {
+     "text": "at",
+     "start": 269.334,
+     "end": 269.694
+    },
+    {
+     "text": "your",
+     "start": 269.694,
+     "end": 269.814
+    },
+    {
+     "text": "home",
+     "start": 269.814,
+     "end": 269.954
+    },
+    {
+     "text": "club.",
+     "start": 269.954,
+     "end": 270.234
+    },
+    {
+     "text": "And",
+     "start": 270.634,
+     "end": 270.774
+    },
+    {
+     "text": "if",
+     "start": 270.774,
+     "end": 270.954
+    },
+    {
+     "text": "you",
+     "start": 270.954,
+     "end": 271.034
+    },
+    {
+     "text": "show",
+     "start": 271.034,
+     "end": 271.234
+    },
+    {
+     "text": "up",
+     "start": 271.234,
+     "end": 271.314
+    },
+    {
+     "text": "on",
+     "start": 271.314,
+     "end": 271.434
+    },
+    {
+     "text": "the",
+     "start": 271.434,
+     "end": 271.494
+    },
+    {
+     "text": "wrong",
+     "start": 271.494,
+     "end": 271.654
+    },
+    {
+     "text": "day",
+     "start": 271.654,
+     "end": 271.894
+    },
+    {
+     "text": "you",
+     "start": 272.054,
+     "end": 272.074
+    },
+    {
+     "text": "get",
+     "start": 272.074,
+     "end": 272.194
+    },
+    {
+     "text": "billed",
+     "start": 272.194,
+     "end": 272.354
+    },
+    {
+     "text": "again.",
+     "start": 272.354,
+     "end": 272.614
+    }
+   ]
+  },
+  {
+   "id": "n27",
+   "text": "My friend Kevin tried to cancel in person. They told him the manager who handles cancellations works Tuesdays. Only Tuesdays.",
+   "start": 273.31572916666664,
+   "end": 278.69572916666664,
+   "words": [
+    {
+     "text": "My",
+     "start": 273.316,
+     "end": 273.396
+    },
+    {
+     "text": "friend",
+     "start": 273.396,
+     "end": 273.556
+    },
+    {
+     "text": "Kevin",
+     "start": 273.556,
+     "end": 273.736
+    },
+    {
+     "text": "tried",
+     "start": 273.736,
+     "end": 274.016
+    },
+    {
+     "text": "to",
+     "start": 274.016,
+     "end": 274.136
+    },
+    {
+     "text": "cancel",
+     "start": 274.136,
+     "end": 274.376
+    },
+    {
+     "text": "in",
+     "start": 274.376,
+     "end": 274.516
+    },
+    {
+     "text": "person.",
+     "start": 274.516,
+     "end": 274.676
+    },
+    {
+     "text": "They",
+     "start": 275.276,
+     "end": 275.316
+    },
+    {
+     "text": "told",
+     "start": 275.316,
+     "end": 275.476
+    },
+    {
+     "text": "him",
+     "start": 275.476,
+     "end": 275.616
+    },
+    {
+     "text": "the",
+     "start": 275.616,
+     "end": 275.696
+    },
+    {
+     "text": "manager",
+     "start": 275.696,
+     "end": 275.936
+    },
+    {
+     "text": "who",
+     "start": 275.936,
+     "end": 276.196
+    },
+    {
+     "text": "handles",
+     "start": 276.196,
+     "end": 276.456
+    },
+    {
+     "text": "cancellations",
+     "start": 276.456,
+     "end": 277.076
+    },
+    {
+     "text": "works",
+     "start": 277.076,
+     "end": 277.356
+    },
+    {
+     "text": "Tuesdays.",
+     "start": 277.356,
+     "end": 277.836
+    },
+    {
+     "text": "Only",
+     "start": 278.096,
+     "end": 278.296
+    },
+    {
+     "text": "Tuesdays.",
+     "start": 278.296,
+     "end": 278.696
+    }
+   ]
+  },
+  {
+   "id": "c6e",
+   "text": "Netflix? Two taps and you're out. Nobody asks you to mail a letter to Netflix.",
+   "start": 279.31258333333335,
+   "end": 283.23258333333337,
+   "words": [
+    {
+     "text": "Netflix?",
+     "start": 279.313,
+     "end": 279.613
+    },
+    {
+     "text": "Two",
+     "start": 280.193,
+     "end": 280.313
+    },
+    {
+     "text": "taps",
+     "start": 280.313,
+     "end": 280.553
+    },
+    {
+     "text": "and",
+     "start": 280.553,
+     "end": 280.753
+    },
+    {
+     "text": "you're",
+     "start": 280.753,
+     "end": 280.893
+    },
+    {
+     "text": "out.",
+     "start": 280.893,
+     "end": 281.113
+    },
+    {
+     "text": "Nobody",
+     "start": 281.513,
+     "end": 281.713
+    },
+    {
+     "text": "asks",
+     "start": 281.713,
+     "end": 282.033
+    },
+    {
+     "text": "you",
+     "start": 282.033,
+     "end": 282.233
+    },
+    {
+     "text": "to",
+     "start": 282.233,
+     "end": 282.333
+    },
+    {
+     "text": "mail",
+     "start": 282.333,
+     "end": 282.433
+    },
+    {
+     "text": "a",
+     "start": 282.433,
+     "end": 282.553
+    },
+    {
+     "text": "letter",
+     "start": 282.553,
+     "end": 282.733
+    },
+    {
+     "text": "to",
+     "start": 282.733,
+     "end": 282.913
+    },
+    {
+     "text": "Netflix.",
+     "start": 282.913,
+     "end": 283.233
+    }
+   ]
+  },
+  {
+   "id": "n13",
+   "text": "The gym front desk when I say the word cancel.",
+   "start": 284.02810416666665,
+   "end": 285.8681041666666,
+   "words": [
+    {
+     "text": "The",
+     "start": 284.028,
+     "end": 284.128
+    },
+    {
+     "text": "gym",
+     "start": 284.128,
+     "end": 284.268
+    },
+    {
+     "text": "front",
+     "start": 284.268,
+     "end": 284.488
+    },
+    {
+     "text": "desk",
+     "start": 284.488,
+     "end": 284.748
+    },
+    {
+     "text": "when",
+     "start": 284.748,
+     "end": 285.028
+    },
+    {
+     "text": "I",
+     "start": 285.028,
+     "end": 285.128
+    },
+    {
+     "text": "say",
+     "start": 285.128,
+     "end": 285.288
+    },
+    {
+     "text": "the",
+     "start": 285.288,
+     "end": 285.428
+    },
+    {
+     "text": "word",
+     "start": 285.428,
+     "end": 285.568
+    },
+    {
+     "text": "cancel.",
+     "start": 285.568,
+     "end": 285.868
+    }
+   ]
+  },
+  {
+   "id": "c7a",
+   "text": "And the crazy part? The government actually tried to fix this.",
+   "start": 286.55839583333335,
+   "end": 289.43839583333335,
+   "words": [
+    {
+     "text": "And",
+     "start": 286.558,
+     "end": 286.658
+    },
+    {
+     "text": "the",
+     "start": 286.658,
+     "end": 286.718
+    },
+    {
+     "text": "crazy",
+     "start": 286.718,
+     "end": 286.858
+    },
+    {
+     "text": "part?",
+     "start": 286.858,
+     "end": 287.258
+    },
+    {
+     "text": "The",
+     "start": 287.798,
+     "end": 287.878
+    },
+    {
+     "text": "government",
+     "start": 287.878,
+     "end": 288.078
+    },
+    {
+     "text": "actually",
+     "start": 288.078,
+     "end": 288.598
+    },
+    {
+     "text": "tried",
+     "start": 288.598,
+     "end": 288.918
+    },
+    {
+     "text": "to",
+     "start": 288.918,
+     "end": 289.058
+    },
+    {
+     "text": "fix",
+     "start": 289.058,
+     "end": 289.198
+    },
+    {
+     "text": "this.",
+     "start": 289.198,
+     "end": 289.438
+    }
+   ]
+  },
+  {
+   "id": "c7b",
+   "text": "There was a rule called click to cancel. If you can sign up online you have to be able to cancel online. Simple.",
+   "start": 289.9712083333333,
+   "end": 295.3712083333333,
+   "words": [
+    {
+     "text": "There",
+     "start": 289.971,
+     "end": 290.111
+    },
+    {
+     "text": "was",
+     "start": 290.111,
+     "end": 290.231
+    },
+    {
+     "text": "a",
+     "start": 290.231,
+     "end": 290.331
+    },
+    {
+     "text": "rule",
+     "start": 290.331,
+     "end": 290.511
+    },
+    {
+     "text": "called",
+     "start": 290.511,
+     "end": 290.891
+    },
+    {
+     "text": "click",
+     "start": 290.891,
+     "end": 291.231
+    },
+    {
+     "text": "to",
+     "start": 291.231,
+     "end": 291.411
+    },
+    {
+     "text": "cancel.",
+     "start": 291.411,
+     "end": 291.731
+    },
+    {
+     "text": "If",
+     "start": 292.211,
+     "end": 292.271
+    },
+    {
+     "text": "you",
+     "start": 292.271,
+     "end": 292.371
+    },
+    {
+     "text": "can",
+     "start": 292.371,
+     "end": 292.491
+    },
+    {
+     "text": "sign",
+     "start": 292.491,
+     "end": 292.671
+    },
+    {
+     "text": "up",
+     "start": 292.671,
+     "end": 292.811
+    },
+    {
+     "text": "online",
+     "start": 292.811,
+     "end": 293.031
+    },
+    {
+     "text": "you",
+     "start": 293.331,
+     "end": 293.431
+    },
+    {
+     "text": "have",
+     "start": 293.431,
+     "end": 293.571
+    },
+    {
+     "text": "to",
+     "start": 293.571,
+     "end": 293.711
+    },
+    {
+     "text": "be",
+     "start": 293.711,
+     "end": 293.811
+    },
+    {
+     "text": "able",
+     "start": 293.811,
+     "end": 293.971
+    },
+    {
+     "text": "to",
+     "start": 293.971,
+     "end": 294.091
+    },
+    {
+     "text": "cancel",
+     "start": 294.091,
+     "end": 294.311
+    },
+    {
+     "text": "online.",
+     "start": 294.311,
+     "end": 294.611
+    },
+    {
+     "text": "Simple.",
+     "start": 295.171,
+     "end": 295.371
+    }
+   ]
+  },
+  {
+   "id": "c7c",
+   "text": "It was supposed to start in the summer of twenty twenty five. And days before it did a court threw it out.",
+   "start": 296.05639583333334,
+   "end": 300.3363958333333,
+   "words": [
+    {
+     "text": "It",
+     "start": 296.056,
+     "end": 296.165
+    },
+    {
+     "text": "was",
+     "start": 296.177,
+     "end": 296.321
+    },
+    {
+     "text": "supposed",
+     "start": 296.337,
+     "end": 296.663
+    },
+    {
+     "text": "to",
+     "start": 296.699,
+     "end": 296.807
+    },
+    {
+     "text": "start",
+     "start": 296.82,
+     "end": 297.037
+    },
+    {
+     "text": "in",
+     "start": 297.061,
+     "end": 297.169
+    },
+    {
+     "text": "the",
+     "start": 297.181,
+     "end": 297.326
+    },
+    {
+     "text": "summer",
+     "start": 297.342,
+     "end": 297.595
+    },
+    {
+     "text": "of",
+     "start": 297.623,
+     "end": 297.732
+    },
+    {
+     "text": "twenty",
+     "start": 297.744,
+     "end": 297.997
+    },
+    {
+     "text": "twenty",
+     "start": 298.025,
+     "end": 298.278
+    },
+    {
+     "text": "five.",
+     "start": 298.306,
+     "end": 298.523
+    },
+    {
+     "text": "And",
+     "start": 298.548,
+     "end": 298.692
+    },
+    {
+     "text": "days",
+     "start": 298.708,
+     "end": 298.889
+    },
+    {
+     "text": "before",
+     "start": 298.909,
+     "end": 299.162
+    },
+    {
+     "text": "it",
+     "start": 299.191,
+     "end": 299.299
+    },
+    {
+     "text": "did",
+     "start": 299.311,
+     "end": 299.456
+    },
+    {
+     "text": "a",
+     "start": 299.472,
+     "end": 299.544
+    },
+    {
+     "text": "court",
+     "start": 299.552,
+     "end": 299.769
+    },
+    {
+     "text": "threw",
+     "start": 299.793,
+     "end": 300.01
+    },
+    {
+     "text": "it",
+     "start": 300.035,
+     "end": 300.143
+    },
+    {
+     "text": "out.",
+     "start": 300.155,
+     "end": 300.336
+    }
+   ]
+  },
+  {
+   "id": "n36",
+   "text": "Gym owners reading that court news.",
+   "start": 300.9894375,
+   "end": 302.5094375,
+   "words": [
+    {
+     "text": "Gym",
+     "start": 300.989,
+     "end": 301.169
+    },
+    {
+     "text": "owners",
+     "start": 301.169,
+     "end": 301.389
+    },
+    {
+     "text": "reading",
+     "start": 301.389,
+     "end": 301.749
+    },
+    {
+     "text": "that",
+     "start": 301.749,
+     "end": 301.969
+    },
+    {
+     "text": "court",
+     "start": 301.969,
+     "end": 302.189
+    },
+    {
+     "text": "news.",
+     "start": 302.189,
+     "end": 302.509
+    }
+   ]
+  },
+  {
+   "id": "c7d",
+   "text": "So right now it depends on where you live. Some states already make gyms let you cancel easily and some don't.",
+   "start": 303.27172916666666,
+   "end": 308.6317291666667,
+   "words": [
+    {
+     "text": "So",
+     "start": 303.272,
+     "end": 303.432
+    },
+    {
+     "text": "right",
+     "start": 303.432,
+     "end": 303.632
+    },
+    {
+     "text": "now",
+     "start": 303.632,
+     "end": 303.852
+    },
+    {
+     "text": "it",
+     "start": 303.852,
+     "end": 303.972
+    },
+    {
+     "text": "depends",
+     "start": 303.972,
+     "end": 304.132
+    },
+    {
+     "text": "on",
+     "start": 304.132,
+     "end": 304.372
+    },
+    {
+     "text": "where",
+     "start": 304.372,
+     "end": 304.532
+    },
+    {
+     "text": "you",
+     "start": 304.532,
+     "end": 304.652
+    },
+    {
+     "text": "live.",
+     "start": 304.652,
+     "end": 304.872
+    },
+    {
+     "text": "Some",
+     "start": 305.472,
+     "end": 305.612
+    },
+    {
+     "text": "states",
+     "start": 305.612,
+     "end": 305.872
+    },
+    {
+     "text": "already",
+     "start": 305.872,
+     "end": 306.232
+    },
+    {
+     "text": "make",
+     "start": 306.232,
+     "end": 306.512
+    },
+    {
+     "text": "gyms",
+     "start": 306.512,
+     "end": 306.852
+    },
+    {
+     "text": "let",
+     "start": 306.852,
+     "end": 306.992
+    },
+    {
+     "text": "you",
+     "start": 306.992,
+     "end": 307.092
+    },
+    {
+     "text": "cancel",
+     "start": 307.092,
+     "end": 307.332
+    },
+    {
+     "text": "easily",
+     "start": 307.332,
+     "end": 307.592
+    },
+    {
+     "text": "and",
+     "start": 307.592,
+     "end": 307.992
+    },
+    {
+     "text": "some",
+     "start": 307.992,
+     "end": 308.192
+    },
+    {
+     "text": "don't.",
+     "start": 308.192,
+     "end": 308.632
+    }
+   ]
+  },
+  {
+   "id": "n29",
+   "text": "Some of those state laws even say if you joined online they have to let you leave online. So look up your state before you buy a single stamp.",
+   "start": 309.11091666666664,
+   "end": 315.35091666666665,
+   "words": [
+    {
+     "text": "Some",
+     "start": 309.111,
+     "end": 309.251
+    },
+    {
+     "text": "of",
+     "start": 309.251,
+     "end": 309.351
+    },
+    {
+     "text": "those",
+     "start": 309.351,
+     "end": 309.511
+    },
+    {
+     "text": "state",
+     "start": 309.511,
+     "end": 309.711
+    },
+    {
+     "text": "laws",
+     "start": 309.711,
+     "end": 309.911
+    },
+    {
+     "text": "even",
+     "start": 309.911,
+     "end": 310.231
+    },
+    {
+     "text": "say",
+     "start": 310.231,
+     "end": 310.491
+    },
+    {
+     "text": "if",
+     "start": 310.491,
+     "end": 310.731
+    },
+    {
+     "text": "you",
+     "start": 310.731,
+     "end": 310.811
+    },
+    {
+     "text": "joined",
+     "start": 310.811,
+     "end": 311.011
+    },
+    {
+     "text": "online",
+     "start": 311.011,
+     "end": 311.251
+    },
+    {
+     "text": "they",
+     "start": 311.251,
+     "end": 311.671
+    },
+    {
+     "text": "have",
+     "start": 311.671,
+     "end": 311.831
+    },
+    {
+     "text": "to",
+     "start": 311.831,
+     "end": 311.971
+    },
+    {
+     "text": "let",
+     "start": 311.971,
+     "end": 312.111
+    },
+    {
+     "text": "you",
+     "start": 312.111,
+     "end": 312.211
+    },
+    {
+     "text": "leave",
+     "start": 312.211,
+     "end": 312.391
+    },
+    {
+     "text": "online.",
+     "start": 312.391,
+     "end": 312.551
+    },
+    {
+     "text": "So",
+     "start": 313.231,
+     "end": 313.371
+    },
+    {
+     "text": "look",
+     "start": 313.371,
+     "end": 313.671
+    },
+    {
+     "text": "up",
+     "start": 313.671,
+     "end": 313.791
+    },
+    {
+     "text": "your",
+     "start": 313.791,
+     "end": 313.911
+    },
+    {
+     "text": "state",
+     "start": 313.911,
+     "end": 314.151
+    },
+    {
+     "text": "before",
+     "start": 314.151,
+     "end": 314.391
+    },
+    {
+     "text": "you",
+     "start": 314.391,
+     "end": 314.571
+    },
+    {
+     "text": "buy",
+     "start": 314.571,
+     "end": 314.711
+    },
+    {
+     "text": "a",
+     "start": 314.711,
+     "end": 314.831
+    },
+    {
+     "text": "single",
+     "start": 314.831,
+     "end": 314.971
+    },
+    {
+     "text": "stamp.",
+     "start": 314.971,
+     "end": 315.351
+    }
+   ]
+  },
+  {
+   "id": "n14",
+   "text": "Gyms when that rule got thrown out.",
+   "start": 315.9149791666667,
+   "end": 317.5149791666667,
+   "words": [
+    {
+     "text": "Gyms",
+     "start": 315.915,
+     "end": 316.375
+    },
+    {
+     "text": "when",
+     "start": 316.375,
+     "end": 316.495
+    },
+    {
+     "text": "that",
+     "start": 316.495,
+     "end": 316.635
+    },
+    {
+     "text": "rule",
+     "start": 316.635,
+     "end": 316.815
+    },
+    {
+     "text": "got",
+     "start": 316.815,
+     "end": 317.015
+    },
+    {
+     "text": "thrown",
+     "start": 317.015,
+     "end": 317.215
+    },
+    {
+     "text": "out.",
+     "start": 317.215,
+     "end": 317.515
+    }
+   ]
+  },
+  {
+   "id": "c8a",
+   "text": "And honestly? Part of me gets it.",
+   "start": 318.07897916666667,
+   "end": 319.89897916666666,
+   "words": [
+    {
+     "text": "And",
+     "start": 318.079,
+     "end": 318.479
+    },
+    {
+     "text": "honestly?",
+     "start": 318.479,
+     "end": 318.859
+    },
+    {
+     "text": "Part",
+     "start": 319.259,
+     "end": 319.379
+    },
+    {
+     "text": "of",
+     "start": 319.379,
+     "end": 319.479
+    },
+    {
+     "text": "me",
+     "start": 319.479,
+     "end": 319.559
+    },
+    {
+     "text": "gets",
+     "start": 319.559,
+     "end": 319.699
+    },
+    {
+     "text": "it.",
+     "start": 319.699,
+     "end": 319.899
+    }
+   ]
+  },
+  {
+   "id": "c8b",
+   "text": "If all seven thousand members showed up on the same Monday the gym would explode. The building only works because people like me stay home.",
+   "start": 320.388375,
+   "end": 326.661375,
+   "words": [
+    {
+     "text": "If",
+     "start": 320.388,
+     "end": 320.509
+    },
+    {
+     "text": "all",
+     "start": 320.523,
+     "end": 320.685
+    },
+    {
+     "text": "seven",
+     "start": 320.703,
+     "end": 320.946
+    },
+    {
+     "text": "thousand",
+     "start": 320.973,
+     "end": 321.338
+    },
+    {
+     "text": "members",
+     "start": 321.378,
+     "end": 321.702
+    },
+    {
+     "text": "showed",
+     "start": 321.738,
+     "end": 322.022
+    },
+    {
+     "text": "up",
+     "start": 322.053,
+     "end": 322.174
+    },
+    {
+     "text": "on",
+     "start": 322.188,
+     "end": 322.31
+    },
+    {
+     "text": "the",
+     "start": 322.323,
+     "end": 322.485
+    },
+    {
+     "text": "same",
+     "start": 322.503,
+     "end": 322.706
+    },
+    {
+     "text": "Monday",
+     "start": 322.728,
+     "end": 323.012
+    },
+    {
+     "text": "the",
+     "start": 323.043,
+     "end": 323.205
+    },
+    {
+     "text": "gym",
+     "start": 323.223,
+     "end": 323.385
+    },
+    {
+     "text": "would",
+     "start": 323.403,
+     "end": 323.646
+    },
+    {
+     "text": "explode.",
+     "start": 323.673,
+     "end": 324.038
+    },
+    {
+     "text": "The",
+     "start": 324.078,
+     "end": 324.24
+    },
+    {
+     "text": "building",
+     "start": 324.258,
+     "end": 324.623
+    },
+    {
+     "text": "only",
+     "start": 324.663,
+     "end": 324.866
+    },
+    {
+     "text": "works",
+     "start": 324.888,
+     "end": 325.131
+    },
+    {
+     "text": "because",
+     "start": 325.158,
+     "end": 325.482
+    },
+    {
+     "text": "people",
+     "start": 325.518,
+     "end": 325.802
+    },
+    {
+     "text": "like",
+     "start": 325.833,
+     "end": 326.036
+    },
+    {
+     "text": "me",
+     "start": 326.058,
+     "end": 326.18
+    },
+    {
+     "text": "stay",
+     "start": 326.193,
+     "end": 326.395
+    },
+    {
+     "text": "home.",
+     "start": 326.418,
+     "end": 326.661
+    }
+   ]
+  },
+  {
+   "id": "n30",
+   "text": "Imagine every single member showing up on Monday at six. People doing pushups in the parking lot.",
+   "start": 327.32329166666665,
+   "end": 331.90029166666665,
+   "words": [
+    {
+     "text": "Imagine",
+     "start": 327.323,
+     "end": 327.661
+    },
+    {
+     "text": "every",
+     "start": 327.699,
+     "end": 327.952
+    },
+    {
+     "text": "single",
+     "start": 327.98,
+     "end": 328.276
+    },
+    {
+     "text": "member",
+     "start": 328.309,
+     "end": 328.604
+    },
+    {
+     "text": "showing",
+     "start": 328.637,
+     "end": 328.975
+    },
+    {
+     "text": "up",
+     "start": 329.013,
+     "end": 329.14
+    },
+    {
+     "text": "on",
+     "start": 329.154,
+     "end": 329.28
+    },
+    {
+     "text": "Monday",
+     "start": 329.294,
+     "end": 329.59
+    },
+    {
+     "text": "at",
+     "start": 329.623,
+     "end": 329.75
+    },
+    {
+     "text": "six.",
+     "start": 329.764,
+     "end": 329.975
+    },
+    {
+     "text": "People",
+     "start": 329.999,
+     "end": 330.294
+    },
+    {
+     "text": "doing",
+     "start": 330.327,
+     "end": 330.581
+    },
+    {
+     "text": "pushups",
+     "start": 330.609,
+     "end": 330.947
+    },
+    {
+     "text": "in",
+     "start": 330.984,
+     "end": 331.111
+    },
+    {
+     "text": "the",
+     "start": 331.125,
+     "end": 331.294
+    },
+    {
+     "text": "parking",
+     "start": 331.313,
+     "end": 331.651
+    },
+    {
+     "text": "lot.",
+     "start": 331.688,
+     "end": 331.9
+    }
+   ]
+  },
+  {
+   "id": "c8c",
+   "text": "So in a weird way my empty spot on the treadmill is paying for someone else's workout.",
+   "start": 332.49145833333336,
+   "end": 336.0314583333334,
+   "words": [
+    {
+     "text": "So",
+     "start": 332.491,
+     "end": 332.711
+    },
+    {
+     "text": "in",
+     "start": 332.911,
+     "end": 332.951
+    },
+    {
+     "text": "a",
+     "start": 332.951,
+     "end": 333.031
+    },
+    {
+     "text": "weird",
+     "start": 333.031,
+     "end": 333.171
+    },
+    {
+     "text": "way",
+     "start": 333.171,
+     "end": 333.411
+    },
+    {
+     "text": "my",
+     "start": 333.711,
+     "end": 333.791
+    },
+    {
+     "text": "empty",
+     "start": 333.791,
+     "end": 333.991
+    },
+    {
+     "text": "spot",
+     "start": 333.991,
+     "end": 334.211
+    },
+    {
+     "text": "on",
+     "start": 334.211,
+     "end": 334.391
+    },
+    {
+     "text": "the",
+     "start": 334.391,
+     "end": 334.451
+    },
+    {
+     "text": "treadmill",
+     "start": 334.451,
+     "end": 334.651
+    },
+    {
+     "text": "is",
+     "start": 334.651,
+     "end": 334.971
+    },
+    {
+     "text": "paying",
+     "start": 334.971,
+     "end": 335.171
+    },
+    {
+     "text": "for",
+     "start": 335.171,
+     "end": 335.371
+    },
+    {
+     "text": "someone",
+     "start": 335.371,
+     "end": 335.571
+    },
+    {
+     "text": "else's",
+     "start": 335.571,
+     "end": 335.871
+    },
+    {
+     "text": "workout.",
+     "start": 335.871,
+     "end": 336.031
+    }
+   ]
+  },
+  {
+   "id": "c8d",
+   "text": "That doesn't make the cancel maze okay. It just means the gym isn't selling workouts. It's selling the feeling of being someone who works out.",
+   "start": 336.7231875,
+   "end": 342.3431875,
+   "words": [
+    {
+     "text": "That",
+     "start": 336.723,
+     "end": 336.783
+    },
+    {
+     "text": "doesn't",
+     "start": 336.783,
+     "end": 337.043
+    },
+    {
+     "text": "make",
+     "start": 337.043,
+     "end": 337.143
+    },
+    {
+     "text": "the",
+     "start": 337.143,
+     "end": 337.263
+    },
+    {
+     "text": "cancel",
+     "start": 337.263,
+     "end": 337.523
+    },
+    {
+     "text": "maze",
+     "start": 337.523,
+     "end": 337.723
+    },
+    {
+     "text": "okay.",
+     "start": 337.723,
+     "end": 338.063
+    },
+    {
+     "text": "It",
+     "start": 338.363,
+     "end": 338.443
+    },
+    {
+     "text": "just",
+     "start": 338.443,
+     "end": 338.563
+    },
+    {
+     "text": "means",
+     "start": 338.563,
+     "end": 338.763
+    },
+    {
+     "text": "the",
+     "start": 338.763,
+     "end": 338.983
+    },
+    {
+     "text": "gym",
+     "start": 338.983,
+     "end": 339.123
+    },
+    {
+     "text": "isn't",
+     "start": 339.123,
+     "end": 339.423
+    },
+    {
+     "text": "selling",
+     "start": 339.423,
+     "end": 339.583
+    },
+    {
+     "text": "workouts.",
+     "start": 339.583,
+     "end": 339.923
+    },
+    {
+     "text": "It's",
+     "start": 340.423,
+     "end": 340.563
+    },
+    {
+     "text": "selling",
+     "start": 340.563,
+     "end": 340.703
+    },
+    {
+     "text": "the",
+     "start": 340.703,
+     "end": 340.903
+    },
+    {
+     "text": "feeling",
+     "start": 340.903,
+     "end": 341.103
+    },
+    {
+     "text": "of",
+     "start": 341.103,
+     "end": 341.283
+    },
+    {
+     "text": "being",
+     "start": 341.283,
+     "end": 341.423
+    },
+    {
+     "text": "someone",
+     "start": 341.423,
+     "end": 341.723
+    },
+    {
+     "text": "who",
+     "start": 341.723,
+     "end": 341.923
+    },
+    {
+     "text": "works",
+     "start": 341.923,
+     "end": 342.103
+    },
+    {
+     "text": "out.",
+     "start": 342.103,
+     "end": 342.343
+    }
+   ]
+  },
+  {
+   "id": "c9a",
+   "text": "So here's how I play it now. Quick reminder this is education and not advice.",
+   "start": 345.2932083333333,
+   "end": 348.53320833333333,
+   "words": [
+    {
+     "text": "So",
+     "start": 345.293,
+     "end": 345.393
+    },
+    {
+     "text": "here's",
+     "start": 345.393,
+     "end": 345.593
+    },
+    {
+     "text": "how",
+     "start": 345.593,
+     "end": 345.673
+    },
+    {
+     "text": "I",
+     "start": 345.673,
+     "end": 345.793
+    },
+    {
+     "text": "play",
+     "start": 345.793,
+     "end": 345.953
+    },
+    {
+     "text": "it",
+     "start": 345.953,
+     "end": 346.093
+    },
+    {
+     "text": "now.",
+     "start": 346.093,
+     "end": 346.273
+    },
+    {
+     "text": "Quick",
+     "start": 346.733,
+     "end": 346.793
+    },
+    {
+     "text": "reminder",
+     "start": 346.793,
+     "end": 347.033
+    },
+    {
+     "text": "this",
+     "start": 347.293,
+     "end": 347.353
+    },
+    {
+     "text": "is",
+     "start": 347.353,
+     "end": 347.433
+    },
+    {
+     "text": "education",
+     "start": 347.433,
+     "end": 347.733
+    },
+    {
+     "text": "and",
+     "start": 347.733,
+     "end": 348.173
+    },
+    {
+     "text": "not",
+     "start": 348.173,
+     "end": 348.313
+    },
+    {
+     "text": "advice.",
+     "start": 348.313,
+     "end": 348.533
+    }
+   ]
+  },
+  {
+   "id": "c9b",
+   "text": "Before I sign anything I ask last year me. Not January me. How many times did I actually work out last year?",
+   "start": 349.3585625,
+   "end": 354.1785625,
+   "words": [
+    {
+     "text": "Before",
+     "start": 349.359,
+     "end": 349.539
+    },
+    {
+     "text": "I",
+     "start": 349.539,
+     "end": 349.679
+    },
+    {
+     "text": "sign",
+     "start": 349.679,
+     "end": 349.819
+    },
+    {
+     "text": "anything",
+     "start": 349.819,
+     "end": 350.079
+    },
+    {
+     "text": "I",
+     "start": 350.079,
+     "end": 350.399
+    },
+    {
+     "text": "ask",
+     "start": 350.399,
+     "end": 350.599
+    },
+    {
+     "text": "last",
+     "start": 350.599,
+     "end": 350.739
+    },
+    {
+     "text": "year",
+     "start": 350.739,
+     "end": 350.959
+    },
+    {
+     "text": "me.",
+     "start": 350.959,
+     "end": 351.079
+    },
+    {
+     "text": "Not",
+     "start": 351.379,
+     "end": 351.519
+    },
+    {
+     "text": "January",
+     "start": 351.519,
+     "end": 351.779
+    },
+    {
+     "text": "me.",
+     "start": 351.779,
+     "end": 352.119
+    },
+    {
+     "text": "How",
+     "start": 352.599,
+     "end": 352.659
+    },
+    {
+     "text": "many",
+     "start": 352.659,
+     "end": 352.759
+    },
+    {
+     "text": "times",
+     "start": 352.759,
+     "end": 352.979
+    },
+    {
+     "text": "did",
+     "start": 352.979,
+     "end": 353.139
+    },
+    {
+     "text": "I",
+     "start": 353.139,
+     "end": 353.219
+    },
+    {
+     "text": "actually",
+     "start": 353.219,
+     "end": 353.379
+    },
+    {
+     "text": "work",
+     "start": 353.379,
+     "end": 353.659
+    },
+    {
+     "text": "out",
+     "start": 353.659,
+     "end": 353.779
+    },
+    {
+     "text": "last",
+     "start": 353.779,
+     "end": 353.959
+    },
+    {
+     "text": "year?",
+     "start": 353.959,
+     "end": 354.179
+    }
+   ]
+  },
+  {
+   "id": "c9c",
+   "text": "If the honest answer is not much I pay per visit first. A day pass costs more one time but way less than a year of guilt.",
+   "start": 354.7621041666667,
+   "end": 360.9821041666667,
+   "words": [
+    {
+     "text": "If",
+     "start": 354.762,
+     "end": 354.882
+    },
+    {
+     "text": "the",
+     "start": 354.882,
+     "end": 354.942
+    },
+    {
+     "text": "honest",
+     "start": 354.942,
+     "end": 355.142
+    },
+    {
+     "text": "answer",
+     "start": 355.142,
+     "end": 355.582
+    },
+    {
+     "text": "is",
+     "start": 355.582,
+     "end": 355.742
+    },
+    {
+     "text": "not",
+     "start": 355.742,
+     "end": 355.902
+    },
+    {
+     "text": "much",
+     "start": 355.902,
+     "end": 356.102
+    },
+    {
+     "text": "I",
+     "start": 356.462,
+     "end": 356.522
+    },
+    {
+     "text": "pay",
+     "start": 356.522,
+     "end": 356.702
+    },
+    {
+     "text": "per",
+     "start": 356.702,
+     "end": 356.862
+    },
+    {
+     "text": "visit",
+     "start": 356.862,
+     "end": 357.062
+    },
+    {
+     "text": "first.",
+     "start": 357.062,
+     "end": 357.262
+    },
+    {
+     "text": "A",
+     "start": 357.982,
+     "end": 358.022
+    },
+    {
+     "text": "day",
+     "start": 358.022,
+     "end": 358.142
+    },
+    {
+     "text": "pass",
+     "start": 358.142,
+     "end": 358.342
+    },
+    {
+     "text": "costs",
+     "start": 358.342,
+     "end": 358.682
+    },
+    {
+     "text": "more",
+     "start": 358.682,
+     "end": 359.022
+    },
+    {
+     "text": "one",
+     "start": 359.022,
+     "end": 359.202
+    },
+    {
+     "text": "time",
+     "start": 359.202,
+     "end": 359.542
+    },
+    {
+     "text": "but",
+     "start": 359.842,
+     "end": 359.882
+    },
+    {
+     "text": "way",
+     "start": 359.882,
+     "end": 360.022
+    },
+    {
+     "text": "less",
+     "start": 360.022,
+     "end": 360.282
+    },
+    {
+     "text": "than",
+     "start": 360.282,
+     "end": 360.462
+    },
+    {
+     "text": "a",
+     "start": 360.462,
+     "end": 360.542
+    },
+    {
+     "text": "year",
+     "start": 360.542,
+     "end": 360.662
+    },
+    {
+     "text": "of",
+     "start": 360.662,
+     "end": 360.802
+    },
+    {
+     "text": "guilt.",
+     "start": 360.802,
+     "end": 360.982
+    }
+   ]
+  },
+  {
+   "id": "n31",
+   "text": "Or try the free stuff first. A park and some stairs and your own two legs. If you can't show up for free you won't show up for thirty a month.",
+   "start": 361.6813125,
+   "end": 367.7813125,
+   "words": [
+    {
+     "text": "Or",
+     "start": 361.681,
+     "end": 361.921
+    },
+    {
+     "text": "try",
+     "start": 361.921,
+     "end": 362.201
+    },
+    {
+     "text": "the",
+     "start": 362.201,
+     "end": 362.341
+    },
+    {
+     "text": "free",
+     "start": 362.341,
+     "end": 362.461
+    },
+    {
+     "text": "stuff",
+     "start": 362.461,
+     "end": 362.681
+    },
+    {
+     "text": "first.",
+     "start": 362.681,
+     "end": 362.921
+    },
+    {
+     "text": "A",
+     "start": 363.501,
+     "end": 363.521
+    },
+    {
+     "text": "park",
+     "start": 363.521,
+     "end": 363.701
+    },
+    {
+     "text": "and",
+     "start": 363.701,
+     "end": 363.941
+    },
+    {
+     "text": "some",
+     "start": 363.941,
+     "end": 364.061
+    },
+    {
+     "text": "stairs",
+     "start": 364.061,
+     "end": 364.301
+    },
+    {
+     "text": "and",
+     "start": 364.301,
+     "end": 364.561
+    },
+    {
+     "text": "your",
+     "start": 364.561,
+     "end": 364.701
+    },
+    {
+     "text": "own",
+     "start": 364.701,
+     "end": 364.861
+    },
+    {
+     "text": "two",
+     "start": 364.861,
+     "end": 364.981
+    },
+    {
+     "text": "legs.",
+     "start": 364.981,
+     "end": 365.201
+    },
+    {
+     "text": "If",
+     "start": 365.781,
+     "end": 365.841
+    },
+    {
+     "text": "you",
+     "start": 365.841,
+     "end": 365.941
+    },
+    {
+     "text": "can't",
+     "start": 365.941,
+     "end": 366.081
+    },
+    {
+     "text": "show",
+     "start": 366.081,
+     "end": 366.281
+    },
+    {
+     "text": "up",
+     "start": 366.281,
+     "end": 366.341
+    },
+    {
+     "text": "for",
+     "start": 366.341,
+     "end": 366.461
+    },
+    {
+     "text": "free",
+     "start": 366.461,
+     "end": 366.701
+    },
+    {
+     "text": "you",
+     "start": 366.841,
+     "end": 366.841
+    },
+    {
+     "text": "won't",
+     "start": 366.841,
+     "end": 367.001
+    },
+    {
+     "text": "show",
+     "start": 367.001,
+     "end": 367.081
+    },
+    {
+     "text": "up",
+     "start": 367.081,
+     "end": 367.201
+    },
+    {
+     "text": "for",
+     "start": 367.201,
+     "end": 367.321
+    },
+    {
+     "text": "thirty",
+     "start": 367.321,
+     "end": 367.481
+    },
+    {
+     "text": "a",
+     "start": 367.481,
+     "end": 367.661
+    },
+    {
+     "text": "month.",
+     "start": 367.661,
+     "end": 367.781
+    }
+   ]
+  },
+  {
+   "id": "c9d",
+   "text": "If I do sign up I pick month to month even if it costs a bit more. I'm paying for the exit door.",
+   "start": 368.3837291666667,
+   "end": 372.5637291666667,
+   "words": [
+    {
+     "text": "If",
+     "start": 368.384,
+     "end": 368.484
+    },
+    {
+     "text": "I",
+     "start": 368.484,
+     "end": 368.584
+    },
+    {
+     "text": "do",
+     "start": 368.584,
+     "end": 368.704
+    },
+    {
+     "text": "sign",
+     "start": 368.704,
+     "end": 368.904
+    },
+    {
+     "text": "up",
+     "start": 368.904,
+     "end": 369.084
+    },
+    {
+     "text": "I",
+     "start": 369.224,
+     "end": 369.244
+    },
+    {
+     "text": "pick",
+     "start": 369.244,
+     "end": 369.364
+    },
+    {
+     "text": "month",
+     "start": 369.364,
+     "end": 369.564
+    },
+    {
+     "text": "to",
+     "start": 369.564,
+     "end": 369.784
+    },
+    {
+     "text": "month",
+     "start": 369.784,
+     "end": 369.924
+    },
+    {
+     "text": "even",
+     "start": 369.924,
+     "end": 370.244
+    },
+    {
+     "text": "if",
+     "start": 370.244,
+     "end": 370.364
+    },
+    {
+     "text": "it",
+     "start": 370.364,
+     "end": 370.424
+    },
+    {
+     "text": "costs",
+     "start": 370.424,
+     "end": 370.624
+    },
+    {
+     "text": "a",
+     "start": 370.624,
+     "end": 370.884
+    },
+    {
+     "text": "bit",
+     "start": 370.884,
+     "end": 370.984
+    },
+    {
+     "text": "more.",
+     "start": 370.984,
+     "end": 371.204
+    },
+    {
+     "text": "I'm",
+     "start": 371.484,
+     "end": 371.624
+    },
+    {
+     "text": "paying",
+     "start": 371.624,
+     "end": 371.804
+    },
+    {
+     "text": "for",
+     "start": 371.804,
+     "end": 372.044
+    },
+    {
+     "text": "the",
+     "start": 372.044,
+     "end": 372.164
+    },
+    {
+     "text": "exit",
+     "start": 372.164,
+     "end": 372.304
+    },
+    {
+     "text": "door.",
+     "start": 372.304,
+     "end": 372.564
+    }
+   ]
+  },
+  {
+   "id": "c9e",
+   "text": "I put my gym days in my calendar like a meeting with my boss. Because I skip workouts but I don't skip my boss.",
+   "start": 373.174625,
+   "end": 378.234625,
+   "words": [
+    {
+     "text": "I",
+     "start": 373.175,
+     "end": 373.235
+    },
+    {
+     "text": "put",
+     "start": 373.235,
+     "end": 373.375
+    },
+    {
+     "text": "my",
+     "start": 373.375,
+     "end": 373.495
+    },
+    {
+     "text": "gym",
+     "start": 373.495,
+     "end": 373.675
+    },
+    {
+     "text": "days",
+     "start": 373.675,
+     "end": 373.915
+    },
+    {
+     "text": "in",
+     "start": 373.915,
+     "end": 374.075
+    },
+    {
+     "text": "my",
+     "start": 374.075,
+     "end": 374.175
+    },
+    {
+     "text": "calendar",
+     "start": 374.175,
+     "end": 374.475
+    },
+    {
+     "text": "like",
+     "start": 374.475,
+     "end": 374.795
+    },
+    {
+     "text": "a",
+     "start": 374.795,
+     "end": 374.895
+    },
+    {
+     "text": "meeting",
+     "start": 374.895,
+     "end": 375.095
+    },
+    {
+     "text": "with",
+     "start": 375.095,
+     "end": 375.275
+    },
+    {
+     "text": "my",
+     "start": 375.275,
+     "end": 375.415
+    },
+    {
+     "text": "boss.",
+     "start": 375.415,
+     "end": 375.655
+    },
+    {
+     "text": "Because",
+     "start": 376.115,
+     "end": 376.355
+    },
+    {
+     "text": "I",
+     "start": 376.355,
+     "end": 376.495
+    },
+    {
+     "text": "skip",
+     "start": 376.495,
+     "end": 376.695
+    },
+    {
+     "text": "workouts",
+     "start": 376.695,
+     "end": 377.015
+    },
+    {
+     "text": "but",
+     "start": 377.355,
+     "end": 377.435
+    },
+    {
+     "text": "I",
+     "start": 377.435,
+     "end": 377.495
+    },
+    {
+     "text": "don't",
+     "start": 377.495,
+     "end": 377.735
+    },
+    {
+     "text": "skip",
+     "start": 377.735,
+     "end": 377.855
+    },
+    {
+     "text": "my",
+     "start": 377.855,
+     "end": 378.015
+    },
+    {
+     "text": "boss.",
+     "start": 378.015,
+     "end": 378.235
+    }
+   ]
+  },
+  {
+   "id": "c9f",
+   "text": "And once a year I check my bank statement for anything still charging me. Gym included. It takes fifteen minutes.",
+   "start": 378.99495833333333,
+   "end": 384.17495833333334,
+   "words": [
+    {
+     "text": "And",
+     "start": 378.995,
+     "end": 379.235
+    },
+    {
+     "text": "once",
+     "start": 379.235,
+     "end": 379.455
+    },
+    {
+     "text": "a",
+     "start": 379.455,
+     "end": 379.635
+    },
+    {
+     "text": "year",
+     "start": 379.635,
+     "end": 379.795
+    },
+    {
+     "text": "I",
+     "start": 379.995,
+     "end": 380.015
+    },
+    {
+     "text": "check",
+     "start": 380.015,
+     "end": 380.135
+    },
+    {
+     "text": "my",
+     "start": 380.135,
+     "end": 380.315
+    },
+    {
+     "text": "bank",
+     "start": 380.315,
+     "end": 380.455
+    },
+    {
+     "text": "statement",
+     "start": 380.455,
+     "end": 380.775
+    },
+    {
+     "text": "for",
+     "start": 380.775,
+     "end": 381.015
+    },
+    {
+     "text": "anything",
+     "start": 381.015,
+     "end": 381.195
+    },
+    {
+     "text": "still",
+     "start": 381.195,
+     "end": 381.555
+    },
+    {
+     "text": "charging",
+     "start": 381.555,
+     "end": 381.815
+    },
+    {
+     "text": "me.",
+     "start": 381.815,
+     "end": 382.075
+    },
+    {
+     "text": "Gym",
+     "start": 382.355,
+     "end": 382.495
+    },
+    {
+     "text": "included.",
+     "start": 382.495,
+     "end": 382.775
+    },
+    {
+     "text": "It",
+     "start": 383.295,
+     "end": 383.375
+    },
+    {
+     "text": "takes",
+     "start": 383.375,
+     "end": 383.555
+    },
+    {
+     "text": "fifteen",
+     "start": 383.555,
+     "end": 383.855
+    },
+    {
+     "text": "minutes.",
+     "start": 383.855,
+     "end": 384.175
+    }
+   ]
+  },
+  {
+   "id": "n32",
+   "text": "Last time I did it I found a gym and two streaming apps and a magazine I forgot I was paying for. A magazine.",
+   "start": 384.90052083333336,
+   "end": 389.92052083333334,
+   "words": [
+    {
+     "text": "Last",
+     "start": 384.901,
+     "end": 385.061
+    },
+    {
+     "text": "time",
+     "start": 385.061,
+     "end": 385.341
+    },
+    {
+     "text": "I",
+     "start": 385.341,
+     "end": 385.461
+    },
+    {
+     "text": "did",
+     "start": 385.461,
+     "end": 385.621
+    },
+    {
+     "text": "it",
+     "start": 385.621,
+     "end": 385.741
+    },
+    {
+     "text": "I",
+     "start": 385.881,
+     "end": 385.901
+    },
+    {
+     "text": "found",
+     "start": 385.901,
+     "end": 386.081
+    },
+    {
+     "text": "a",
+     "start": 386.081,
+     "end": 386.241
+    },
+    {
+     "text": "gym",
+     "start": 386.241,
+     "end": 386.421
+    },
+    {
+     "text": "and",
+     "start": 386.421,
+     "end": 386.721
+    },
+    {
+     "text": "two",
+     "start": 386.721,
+     "end": 386.881
+    },
+    {
+     "text": "streaming",
+     "start": 386.881,
+     "end": 387.181
+    },
+    {
+     "text": "apps",
+     "start": 387.181,
+     "end": 387.481
+    },
+    {
+     "text": "and",
+     "start": 387.481,
+     "end": 387.761
+    },
+    {
+     "text": "a",
+     "start": 387.761,
+     "end": 387.821
+    },
+    {
+     "text": "magazine",
+     "start": 387.821,
+     "end": 388.141
+    },
+    {
+     "text": "I",
+     "start": 388.141,
+     "end": 388.381
+    },
+    {
+     "text": "forgot",
+     "start": 388.381,
+     "end": 388.541
+    },
+    {
+     "text": "I",
+     "start": 388.541,
+     "end": 388.741
+    },
+    {
+     "text": "was",
+     "start": 388.741,
+     "end": 388.841
+    },
+    {
+     "text": "paying",
+     "start": 388.841,
+     "end": 389.001
+    },
+    {
+     "text": "for.",
+     "start": 389.001,
+     "end": 389.301
+    },
+    {
+     "text": "A",
+     "start": 389.641,
+     "end": 389.701
+    },
+    {
+     "text": "magazine.",
+     "start": 389.701,
+     "end": 389.921
+    }
+   ]
+  },
+  {
+   "id": "c9g",
+   "text": "And when I finally cancelled? Certified mail. Receipt. A screenshot of the tracking page. Paper trails win arguments.",
+   "start": 390.7974791666667,
+   "end": 396.17747916666667,
+   "words": [
+    {
+     "text": "And",
+     "start": 390.797,
+     "end": 391.137
+    },
+    {
+     "text": "when",
+     "start": 391.137,
+     "end": 391.297
+    },
+    {
+     "text": "I",
+     "start": 391.297,
+     "end": 391.397
+    },
+    {
+     "text": "finally",
+     "start": 391.397,
+     "end": 391.637
+    },
+    {
+     "text": "cancelled?",
+     "start": 391.637,
+     "end": 392.077
+    },
+    {
+     "text": "Certified",
+     "start": 392.357,
+     "end": 392.637
+    },
+    {
+     "text": "mail.",
+     "start": 392.637,
+     "end": 393.077
+    },
+    {
+     "text": "Receipt.",
+     "start": 393.277,
+     "end": 393.497
+    },
+    {
+     "text": "A",
+     "start": 393.797,
+     "end": 393.877
+    },
+    {
+     "text": "screenshot",
+     "start": 393.877,
+     "end": 394.137
+    },
+    {
+     "text": "of",
+     "start": 394.137,
+     "end": 394.417
+    },
+    {
+     "text": "the",
+     "start": 394.417,
+     "end": 394.497
+    },
+    {
+     "text": "tracking",
+     "start": 394.497,
+     "end": 394.637
+    },
+    {
+     "text": "page.",
+     "start": 394.637,
+     "end": 395.097
+    },
+    {
+     "text": "Paper",
+     "start": 395.257,
+     "end": 395.377
+    },
+    {
+     "text": "trails",
+     "start": 395.377,
+     "end": 395.677
+    },
+    {
+     "text": "win",
+     "start": 395.677,
+     "end": 395.857
+    },
+    {
+     "text": "arguments.",
+     "start": 395.857,
+     "end": 396.177
+    }
+   ]
+  },
+  {
+   "id": "n15",
+   "text": "Me walking out of the post office with my receipt.",
+   "start": 396.97935416666667,
+   "end": 398.75935416666664,
+   "words": [
+    {
+     "text": "Me",
+     "start": 396.979,
+     "end": 397.119
+    },
+    {
+     "text": "walking",
+     "start": 397.119,
+     "end": 397.339
+    },
+    {
+     "text": "out",
+     "start": 397.339,
+     "end": 397.579
+    },
+    {
+     "text": "of",
+     "start": 397.579,
+     "end": 397.659
+    },
+    {
+     "text": "the",
+     "start": 397.659,
+     "end": 397.739
+    },
+    {
+     "text": "post",
+     "start": 397.739,
+     "end": 397.879
+    },
+    {
+     "text": "office",
+     "start": 397.879,
+     "end": 398.179
+    },
+    {
+     "text": "with",
+     "start": 398.179,
+     "end": 398.359
+    },
+    {
+     "text": "my",
+     "start": 398.359,
+     "end": 398.499
+    },
+    {
+     "text": "receipt.",
+     "start": 398.499,
+     "end": 398.759
+    }
+   ]
+  },
+  {
+   "id": "r1",
+   "text": "So remember that one number. What you pay divided by how many times you go.",
+   "start": 399.47195833333336,
+   "end": 402.55195833333335,
+   "words": [
+    {
+     "text": "So",
+     "start": 399.472,
+     "end": 399.572
+    },
+    {
+     "text": "remember",
+     "start": 399.572,
+     "end": 399.712
+    },
+    {
+     "text": "that",
+     "start": 399.712,
+     "end": 400.032
+    },
+    {
+     "text": "one",
+     "start": 400.032,
+     "end": 400.192
+    },
+    {
+     "text": "number.",
+     "start": 400.192,
+     "end": 400.492
+    },
+    {
+     "text": "What",
+     "start": 401.052,
+     "end": 401.052
+    },
+    {
+     "text": "you",
+     "start": 401.052,
+     "end": 401.172
+    },
+    {
+     "text": "pay",
+     "start": 401.172,
+     "end": 401.312
+    },
+    {
+     "text": "divided",
+     "start": 401.312,
+     "end": 401.472
+    },
+    {
+     "text": "by",
+     "start": 401.472,
+     "end": 401.752
+    },
+    {
+     "text": "how",
+     "start": 401.752,
+     "end": 401.892
+    },
+    {
+     "text": "many",
+     "start": 401.892,
+     "end": 402.012
+    },
+    {
+     "text": "times",
+     "start": 402.012,
+     "end": 402.192
+    },
+    {
+     "text": "you",
+     "start": 402.192,
+     "end": 402.372
+    },
+    {
+     "text": "go.",
+     "start": 402.372,
+     "end": 402.552
+    }
+   ]
+  },
+  {
+   "id": "r2",
+   "text": "If that number is bigger than a day pass the gym isn't your gym. You're the customer who never comes.",
+   "start": 403.1706041666667,
+   "end": 407.5906041666667,
+   "words": [
+    {
+     "text": "If",
+     "start": 403.171,
+     "end": 403.291
+    },
+    {
+     "text": "that",
+     "start": 403.291,
+     "end": 403.411
+    },
+    {
+     "text": "number",
+     "start": 403.411,
+     "end": 403.671
+    },
+    {
+     "text": "is",
+     "start": 403.671,
+     "end": 403.811
+    },
+    {
+     "text": "bigger",
+     "start": 403.811,
+     "end": 403.991
+    },
+    {
+     "text": "than",
+     "start": 403.991,
+     "end": 404.191
+    },
+    {
+     "text": "a",
+     "start": 404.191,
+     "end": 404.251
+    },
+    {
+     "text": "day",
+     "start": 404.251,
+     "end": 404.411
+    },
+    {
+     "text": "pass",
+     "start": 404.411,
+     "end": 404.711
+    },
+    {
+     "text": "the",
+     "start": 405.091,
+     "end": 405.171
+    },
+    {
+     "text": "gym",
+     "start": 405.171,
+     "end": 405.311
+    },
+    {
+     "text": "isn't",
+     "start": 405.311,
+     "end": 405.691
+    },
+    {
+     "text": "your",
+     "start": 405.691,
+     "end": 405.811
+    },
+    {
+     "text": "gym.",
+     "start": 405.811,
+     "end": 406.071
+    },
+    {
+     "text": "You're",
+     "start": 406.431,
+     "end": 406.551
+    },
+    {
+     "text": "the",
+     "start": 406.551,
+     "end": 406.631
+    },
+    {
+     "text": "customer",
+     "start": 406.631,
+     "end": 406.911
+    },
+    {
+     "text": "who",
+     "start": 406.911,
+     "end": 407.151
+    },
+    {
+     "text": "never",
+     "start": 407.151,
+     "end": 407.291
+    },
+    {
+     "text": "comes.",
+     "start": 407.291,
+     "end": 407.591
+    }
+   ]
+  },
+  {
+   "id": "n34",
+   "text": "And if it's smaller? Congrats. You're the rare person the gym actually loses money on. Keep going.",
+   "start": 408.39620833333333,
+   "end": 413.5362083333333,
+   "words": [
+    {
+     "text": "And",
+     "start": 408.396,
+     "end": 408.736
+    },
+    {
+     "text": "if",
+     "start": 408.736,
+     "end": 408.896
+    },
+    {
+     "text": "it's",
+     "start": 408.896,
+     "end": 409.056
+    },
+    {
+     "text": "smaller?",
+     "start": 409.056,
+     "end": 409.236
+    },
+    {
+     "text": "Congrats.",
+     "start": 409.676,
+     "end": 410.176
+    },
+    {
+     "text": "You're",
+     "start": 410.436,
+     "end": 410.496
+    },
+    {
+     "text": "the",
+     "start": 410.496,
+     "end": 410.596
+    },
+    {
+     "text": "rare",
+     "start": 410.596,
+     "end": 410.756
+    },
+    {
+     "text": "person",
+     "start": 410.756,
+     "end": 411.116
+    },
+    {
+     "text": "the",
+     "start": 411.116,
+     "end": 411.276
+    },
+    {
+     "text": "gym",
+     "start": 411.276,
+     "end": 411.416
+    },
+    {
+     "text": "actually",
+     "start": 411.416,
+     "end": 411.856
+    },
+    {
+     "text": "loses",
+     "start": 411.856,
+     "end": 412.156
+    },
+    {
+     "text": "money",
+     "start": 412.156,
+     "end": 412.476
+    },
+    {
+     "text": "on.",
+     "start": 412.476,
+     "end": 412.696
+    },
+    {
+     "text": "Keep",
+     "start": 413.116,
+     "end": 413.256
+    },
+    {
+     "text": "going.",
+     "start": 413.256,
+     "end": 413.536
+    }
+   ]
+  },
+  {
+   "id": "r3",
+   "text": "The gym doesn't make money when you work out. It makes money when you don't.",
+   "start": 414.2083958333333,
+   "end": 417.38839583333333,
+   "words": [
+    {
+     "text": "The",
+     "start": 414.208,
+     "end": 414.288
+    },
+    {
+     "text": "gym",
+     "start": 414.288,
+     "end": 414.408
+    },
+    {
+     "text": "doesn't",
+     "start": 414.408,
+     "end": 414.728
+    },
+    {
+     "text": "make",
+     "start": 414.728,
+     "end": 414.848
+    },
+    {
+     "text": "money",
+     "start": 414.848,
+     "end": 415.108
+    },
+    {
+     "text": "when",
+     "start": 415.108,
+     "end": 415.288
+    },
+    {
+     "text": "you",
+     "start": 415.288,
+     "end": 415.388
+    },
+    {
+     "text": "work",
+     "start": 415.388,
+     "end": 415.568
+    },
+    {
+     "text": "out.",
+     "start": 415.568,
+     "end": 415.828
+    },
+    {
+     "text": "It",
+     "start": 416.148,
+     "end": 416.228
+    },
+    {
+     "text": "makes",
+     "start": 416.228,
+     "end": 416.388
+    },
+    {
+     "text": "money",
+     "start": 416.388,
+     "end": 416.688
+    },
+    {
+     "text": "when",
+     "start": 416.688,
+     "end": 416.868
+    },
+    {
+     "text": "you",
+     "start": 416.868,
+     "end": 416.988
+    },
+    {
+     "text": "don't.",
+     "start": 416.988,
+     "end": 417.388
+    }
+   ]
+  },
+  {
+   "id": "r4",
+   "text": "Next time my dog needs surgery and the bill nearly knocks me over. We'll find out why vet bills got so crazy.",
+   "start": 418.0350833333333,
+   "end": 423.0550833333333,
+   "words": [
+    {
+     "text": "Next",
+     "start": 418.035,
+     "end": 418.215
+    },
+    {
+     "text": "time",
+     "start": 418.215,
+     "end": 418.435
+    },
+    {
+     "text": "my",
+     "start": 418.435,
+     "end": 418.555
+    },
+    {
+     "text": "dog",
+     "start": 418.555,
+     "end": 418.755
+    },
+    {
+     "text": "needs",
+     "start": 418.755,
+     "end": 418.915
+    },
+    {
+     "text": "surgery",
+     "start": 418.915,
+     "end": 419.175
+    },
+    {
+     "text": "and",
+     "start": 419.175,
+     "end": 419.655
+    },
+    {
+     "text": "the",
+     "start": 419.655,
+     "end": 419.755
+    },
+    {
+     "text": "bill",
+     "start": 419.755,
+     "end": 419.915
+    },
+    {
+     "text": "nearly",
+     "start": 419.915,
+     "end": 420.115
+    },
+    {
+     "text": "knocks",
+     "start": 420.115,
+     "end": 420.415
+    },
+    {
+     "text": "me",
+     "start": 420.415,
+     "end": 420.595
+    },
+    {
+     "text": "over.",
+     "start": 420.595,
+     "end": 420.855
+    },
+    {
+     "text": "We'll",
+     "start": 421.295,
+     "end": 421.435
+    },
+    {
+     "text": "find",
+     "start": 421.435,
+     "end": 421.615
+    },
+    {
+     "text": "out",
+     "start": 421.615,
+     "end": 421.775
+    },
+    {
+     "text": "why",
+     "start": 421.775,
+     "end": 421.995
+    },
+    {
+     "text": "vet",
+     "start": 421.995,
+     "end": 422.155
+    },
+    {
+     "text": "bills",
+     "start": 422.155,
+     "end": 422.495
+    },
+    {
+     "text": "got",
+     "start": 422.495,
+     "end": 422.595
+    },
+    {
+     "text": "so",
+     "start": 422.595,
+     "end": 422.795
+    },
+    {
+     "text": "crazy.",
+     "start": 422.795,
+     "end": 423.055
+    }
+   ]
+  },
+  {
+   "id": "r5",
+   "text": "Subscribe. It's free and it's way easier to cancel than a gym.",
+   "start": 423.8073125,
+   "end": 426.8673125,
+   "words": [
+    {
+     "text": "Subscribe.",
+     "start": 423.807,
+     "end": 424.127
+    },
+    {
+     "text": "It's",
+     "start": 424.707,
+     "end": 424.847
+    },
+    {
+     "text": "free",
+     "start": 424.847,
+     "end": 425.007
+    },
+    {
+     "text": "and",
+     "start": 425.007,
+     "end": 425.347
+    },
+    {
+     "text": "it's",
+     "start": 425.347,
+     "end": 425.467
+    },
+    {
+     "text": "way",
+     "start": 425.467,
+     "end": 425.627
+    },
+    {
+     "text": "easier",
+     "start": 425.627,
+     "end": 425.987
+    },
+    {
+     "text": "to",
+     "start": 425.987,
+     "end": 426.127
+    },
+    {
+     "text": "cancel",
+     "start": 426.127,
+     "end": 426.387
+    },
+    {
+     "text": "than",
+     "start": 426.387,
+     "end": 426.647
+    },
+    {
+     "text": "a",
+     "start": 426.647,
+     "end": 426.727
+    },
+    {
+     "text": "gym.",
+     "start": 426.727,
+     "end": 426.867
+    }
+   ]
+  }
+ ]
+}
