@@ -187,9 +187,9 @@ export const Ep30: React.FC = () => {
   }
   {
     const pv = [w('o6', 'price'), w('o6', 'rate'), w('o6', 'missing'), w('o6', 'investors'), w('o6', 'dave')];
-    pv.forEach((x) => q(x, 'stamp', 0.5));
+    if (0) pv.forEach((x) => q(x, 'stamp', 0.5));
     const labels = ['PRICES', 'RATE TRAP', 'MISSING HOMES', 'INVESTORS', "DAVE'S MOVES"];
-    scene(A('o6'), () => (
+    if (0) scene(A('o6'), () => (
       <AbsoluteFill>
         <Board />
         <Svg>

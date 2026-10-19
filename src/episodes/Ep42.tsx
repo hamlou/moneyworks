@@ -132,9 +132,9 @@ export const Ep42: React.FC = () => {
   }
   {
     const pv = [w('o6', 'money'), w('o6', 'algorithm'), w('o6', 'broke')];
-    pv.forEach((x) => q(x, 'pop', 0.55));
+    if (0) pv.forEach((x) => q(x, 'pop', 0.55));
     const cur = pv.filter((x) => f >= x).length;
-    scene(A('o6'), () => (
+    if (0) scene(A('o6'), () => (
       <AbsoluteFill>
         <Board />
         <Svg>
