@@ -1,0 +1,8449 @@
+{
+ "fps": 30,
+ "total": 440.428,
+ "hash": "14f27669ca40d9f7",
+ "chapters": [
+  {
+   "n": 1,
+   "title": "Someone Moved The Finish Line",
+   "start": 62.843,
+   "beat": "c2a"
+  },
+  {
+   "n": 2,
+   "title": "Who Moved The Risk",
+   "start": 192.851,
+   "beat": "c5a"
+  },
+  {
+   "n": 3,
+   "title": "Plan B Breaks",
+   "start": 287.402,
+   "beat": "c7a"
+  },
+  {
+   "n": 4,
+   "title": "I Fight Back",
+   "start": 333.496,
+   "beat": "c8a"
+  }
+ ],
+ "beats": [
+  {
+   "id": "o1",
+   "text": "This is me on my seventieth birthday at work wearing a name tag and that's not a joke because a calculator just told me this is my future.",
+   "start": 0.08,
+   "end": 5.96,
+   "words": [
+    {
+     "text": "This",
+     "start": 0.08,
+     "end": 0.24
+    },
+    {
+     "text": "is",
+     "start": 0.24,
+     "end": 0.36
+    },
+    {
+     "text": "me",
+     "start": 0.36,
+     "end": 0.54
+    },
+    {
+     "text": "on",
+     "start": 0.54,
+     "end": 0.76
+    },
+    {
+     "text": "my",
+     "start": 0.76,
+     "end": 0.86
+    },
+    {
+     "text": "seventieth",
+     "start": 0.86,
+     "end": 1.34
+    },
+    {
+     "text": "birthday",
+     "start": 1.34,
+     "end": 1.48
+    },
+    {
+     "text": "at",
+     "start": 1.48,
+     "end": 1.78
+    },
+    {
+     "text": "work",
+     "start": 1.78,
+     "end": 1.94
+    },
+    {
+     "text": "wearing",
+     "start": 1.94,
+     "end": 2.22
+    },
+    {
+     "text": "a",
+     "start": 2.22,
+     "end": 2.4
+    },
+    {
+     "text": "name",
+     "start": 2.4,
+     "end": 2.54
+    },
+    {
+     "text": "tag",
+     "start": 2.54,
+     "end": 2.78
+    },
+    {
+     "text": "and",
+     "start": 2.78,
+     "end": 3.04
+    },
+    {
+     "text": "that's",
+     "start": 3.04,
+     "end": 3.26
+    },
+    {
+     "text": "not",
+     "start": 3.26,
+     "end": 3.36
+    },
+    {
+     "text": "a",
+     "start": 3.36,
+     "end": 3.48
+    },
+    {
+     "text": "joke",
+     "start": 3.48,
+     "end": 3.64
+    },
+    {
+     "text": "because",
+     "start": 3.64,
+     "end": 3.98
+    },
+    {
+     "text": "a",
+     "start": 3.98,
+     "end": 4.06
+    },
+    {
+     "text": "calculator",
+     "start": 4.06,
+     "end": 4.32
+    },
+    {
+     "text": "just",
+     "start": 4.32,
+     "end": 4.74
+    },
+    {
+     "text": "told",
+     "start": 4.74,
+     "end": 4.92
+    },
+    {
+     "text": "me",
+     "start": 4.92,
+     "end": 5.1
+    },
+    {
+     "text": "this",
+     "start": 5.1,
+     "end": 5.46
+    },
+    {
+     "text": "is",
+     "start": 5.46,
+     "end": 5.56
+    },
+    {
+     "text": "my",
+     "start": 5.56,
+     "end": 5.7
+    },
+    {
+     "text": "future.",
+     "start": 5.7,
+     "end": 5.96
+    }
+   ]
+  },
+  {
+   "id": "o2",
+   "text": "My dad stopped working at sixty two so somebody moved my finish line eight years and I want to know who.",
+   "start": 6.4425,
+   "end": 10.8415,
+   "words": [
+    {
+     "text": "My",
+     "start": 6.442,
+     "end": 6.556
+    },
+    {
+     "text": "dad",
+     "start": 6.569,
+     "end": 6.72
+    },
+    {
+     "text": "stopped",
+     "start": 6.737,
+     "end": 7.04
+    },
+    {
+     "text": "working",
+     "start": 7.074,
+     "end": 7.377
+    },
+    {
+     "text": "at",
+     "start": 7.41,
+     "end": 7.524
+    },
+    {
+     "text": "sixty",
+     "start": 7.537,
+     "end": 7.764
+    },
+    {
+     "text": "two",
+     "start": 7.79,
+     "end": 7.941
+    },
+    {
+     "text": "so",
+     "start": 7.957,
+     "end": 8.072
+    },
+    {
+     "text": "somebody",
+     "start": 8.085,
+     "end": 8.425
+    },
+    {
+     "text": "moved",
+     "start": 8.463,
+     "end": 8.691
+    },
+    {
+     "text": "my",
+     "start": 8.716,
+     "end": 8.829
+    },
+    {
+     "text": "finish",
+     "start": 8.841,
+     "end": 9.107
+    },
+    {
+     "text": "line",
+     "start": 9.136,
+     "end": 9.326
+    },
+    {
+     "text": "eight",
+     "start": 9.348,
+     "end": 9.575
+    },
+    {
+     "text": "years",
+     "start": 9.599,
+     "end": 9.826
+    },
+    {
+     "text": "and",
+     "start": 9.852,
+     "end": 10.003
+    },
+    {
+     "text": "I",
+     "start": 10.021,
+     "end": 10.096
+    },
+    {
+     "text": "want",
+     "start": 10.104,
+     "end": 10.294
+    },
+    {
+     "text": "to",
+     "start": 10.316,
+     "end": 10.428
+    },
+    {
+     "text": "know",
+     "start": 10.441,
+     "end": 10.63
+    },
+    {
+     "text": "who.",
+     "start": 10.652,
+     "end": 10.841
+    }
+   ]
+  },
+  {
+   "id": "o3",
+   "text": "Spoiler. It was a lot of people.",
+   "start": 11.3135625,
+   "end": 12.9135625,
+   "words": [
+    {
+     "text": "Spoiler.",
+     "start": 11.314,
+     "end": 11.594
+    },
+    {
+     "text": "It",
+     "start": 11.994,
+     "end": 12.074
+    },
+    {
+     "text": "was",
+     "start": 12.074,
+     "end": 12.174
+    },
+    {
+     "text": "a",
+     "start": 12.174,
+     "end": 12.294
+    },
+    {
+     "text": "lot",
+     "start": 12.294,
+     "end": 12.514
+    },
+    {
+     "text": "of",
+     "start": 12.514,
+     "end": 12.654
+    },
+    {
+     "text": "people.",
+     "start": 12.654,
+     "end": 12.914
+    }
+   ]
+  },
+  {
+   "id": "o4",
+   "text": "By the end of this you'll know who moved it and the one boring line in your retirement account that was quietly stealing years from me.",
+   "start": 13.398541666666667,
+   "end": 18.538541666666667,
+   "words": [
+    {
+     "text": "By",
+     "start": 13.399,
+     "end": 13.479
+    },
+    {
+     "text": "the",
+     "start": 13.479,
+     "end": 13.579
+    },
+    {
+     "text": "end",
+     "start": 13.579,
+     "end": 13.699
+    },
+    {
+     "text": "of",
+     "start": 13.699,
+     "end": 13.799
+    },
+    {
+     "text": "this",
+     "start": 13.799,
+     "end": 13.959
+    },
+    {
+     "text": "you'll",
+     "start": 14.239,
+     "end": 14.339
+    },
+    {
+     "text": "know",
+     "start": 14.339,
+     "end": 14.459
+    },
+    {
+     "text": "who",
+     "start": 14.459,
+     "end": 14.579
+    },
+    {
+     "text": "moved",
+     "start": 14.579,
+     "end": 14.779
+    },
+    {
+     "text": "it",
+     "start": 14.779,
+     "end": 14.919
+    },
+    {
+     "text": "and",
+     "start": 14.919,
+     "end": 15.179
+    },
+    {
+     "text": "the",
+     "start": 15.179,
+     "end": 15.299
+    },
+    {
+     "text": "one",
+     "start": 15.299,
+     "end": 15.439
+    },
+    {
+     "text": "boring",
+     "start": 15.439,
+     "end": 15.659
+    },
+    {
+     "text": "line",
+     "start": 15.659,
+     "end": 15.979
+    },
+    {
+     "text": "in",
+     "start": 15.979,
+     "end": 16.199
+    },
+    {
+     "text": "your",
+     "start": 16.199,
+     "end": 16.319
+    },
+    {
+     "text": "retirement",
+     "start": 16.319,
+     "end": 16.579
+    },
+    {
+     "text": "account",
+     "start": 16.579,
+     "end": 16.939
+    },
+    {
+     "text": "that",
+     "start": 16.939,
+     "end": 17.159
+    },
+    {
+     "text": "was",
+     "start": 17.159,
+     "end": 17.259
+    },
+    {
+     "text": "quietly",
+     "start": 17.259,
+     "end": 17.499
+    },
+    {
+     "text": "stealing",
+     "start": 17.499,
+     "end": 17.879
+    },
+    {
+     "text": "years",
+     "start": 17.879,
+     "end": 18.139
+    },
+    {
+     "text": "from",
+     "start": 18.139,
+     "end": 18.379
+    },
+    {
+     "text": "me.",
+     "start": 18.379,
+     "end": 18.539
+    }
+   ]
+  },
+  {
+   "id": "o5",
+   "text": "And most people click off before that part which is exactly why that line is still there.",
+   "start": 18.9415,
+   "end": 22.8415,
+   "words": [
+    {
+     "text": "And",
+     "start": 18.942,
+     "end": 19.222
+    },
+    {
+     "text": "most",
+     "start": 19.222,
+     "end": 19.422
+    },
+    {
+     "text": "people",
+     "start": 19.422,
+     "end": 19.702
+    },
+    {
+     "text": "click",
+     "start": 19.702,
+     "end": 19.922
+    },
+    {
+     "text": "off",
+     "start": 19.922,
+     "end": 20.142
+    },
+    {
+     "text": "before",
+     "start": 20.142,
+     "end": 20.462
+    },
+    {
+     "text": "that",
+     "start": 20.462,
+     "end": 20.642
+    },
+    {
+     "text": "part",
+     "start": 20.642,
+     "end": 20.882
+    },
+    {
+     "text": "which",
+     "start": 21.102,
+     "end": 21.142
+    },
+    {
+     "text": "is",
+     "start": 21.142,
+     "end": 21.282
+    },
+    {
+     "text": "exactly",
+     "start": 21.282,
+     "end": 21.542
+    },
+    {
+     "text": "why",
+     "start": 21.542,
+     "end": 21.882
+    },
+    {
+     "text": "that",
+     "start": 21.882,
+     "end": 22.042
+    },
+    {
+     "text": "line",
+     "start": 22.042,
+     "end": 22.262
+    },
+    {
+     "text": "is",
+     "start": 22.262,
+     "end": 22.402
+    },
+    {
+     "text": "still",
+     "start": 22.402,
+     "end": 22.582
+    },
+    {
+     "text": "there.",
+     "start": 22.582,
+     "end": 22.841
+    }
+   ]
+  },
+  {
+   "id": "c1a",
+   "text": "So I call my dad and I ask him how he stopped at sixty two.",
+   "start": 23.411104166666668,
+   "end": 25.49310416666667,
+   "words": [
+    {
+     "text": "So",
+     "start": 23.411,
+     "end": 23.506
+    },
+    {
+     "text": "I",
+     "start": 23.516,
+     "end": 23.579
+    },
+    {
+     "text": "call",
+     "start": 23.586,
+     "end": 23.743
+    },
+    {
+     "text": "my",
+     "start": 23.761,
+     "end": 23.855
+    },
+    {
+     "text": "dad",
+     "start": 23.866,
+     "end": 23.992
+    },
+    {
+     "text": "and",
+     "start": 24.006,
+     "end": 24.132
+    },
+    {
+     "text": "I",
+     "start": 24.146,
+     "end": 24.209
+    },
+    {
+     "text": "ask",
+     "start": 24.216,
+     "end": 24.342
+    },
+    {
+     "text": "him",
+     "start": 24.356,
+     "end": 24.482
+    },
+    {
+     "text": "how",
+     "start": 24.496,
+     "end": 24.622
+    },
+    {
+     "text": "he",
+     "start": 24.636,
+     "end": 24.731
+    },
+    {
+     "text": "stopped",
+     "start": 24.741,
+     "end": 24.993
+    },
+    {
+     "text": "at",
+     "start": 25.021,
+     "end": 25.116
+    },
+    {
+     "text": "sixty",
+     "start": 25.126,
+     "end": 25.315
+    },
+    {
+     "text": "two.",
+     "start": 25.336,
+     "end": 25.493
+    }
+   ]
+  },
+  {
+   "id": "c1b",
+   "text": "And he laughs and says I had a pension. Every month my old company sends me a check for the rest of my life.",
+   "start": 26.446791666666666,
+   "end": 31.166791666666665,
+   "words": [
+    {
+     "text": "And",
+     "start": 26.447,
+     "end": 26.547
+    },
+    {
+     "text": "he",
+     "start": 26.547,
+     "end": 26.627
+    },
+    {
+     "text": "laughs",
+     "start": 26.627,
+     "end": 26.807
+    },
+    {
+     "text": "and",
+     "start": 26.807,
+     "end": 27.047
+    },
+    {
+     "text": "says",
+     "start": 27.047,
+     "end": 27.127
+    },
+    {
+     "text": "I",
+     "start": 27.127,
+     "end": 27.347
+    },
+    {
+     "text": "had",
+     "start": 27.347,
+     "end": 27.447
+    },
+    {
+     "text": "a",
+     "start": 27.447,
+     "end": 27.507
+    },
+    {
+     "text": "pension.",
+     "start": 27.507,
+     "end": 27.807
+    },
+    {
+     "text": "Every",
+     "start": 28.667,
+     "end": 28.667
+    },
+    {
+     "text": "month",
+     "start": 28.667,
+     "end": 28.887
+    },
+    {
+     "text": "my",
+     "start": 28.887,
+     "end": 29.107
+    },
+    {
+     "text": "old",
+     "start": 29.107,
+     "end": 29.267
+    },
+    {
+     "text": "company",
+     "start": 29.267,
+     "end": 29.587
+    },
+    {
+     "text": "sends",
+     "start": 29.587,
+     "end": 29.867
+    },
+    {
+     "text": "me",
+     "start": 29.867,
+     "end": 30.067
+    },
+    {
+     "text": "a",
+     "start": 30.067,
+     "end": 30.147
+    },
+    {
+     "text": "check",
+     "start": 30.147,
+     "end": 30.247
+    },
+    {
+     "text": "for",
+     "start": 30.247,
+     "end": 30.487
+    },
+    {
+     "text": "the",
+     "start": 30.487,
+     "end": 30.567
+    },
+    {
+     "text": "rest",
+     "start": 30.567,
+     "end": 30.707
+    },
+    {
+     "text": "of",
+     "start": 30.707,
+     "end": 30.847
+    },
+    {
+     "text": "my",
+     "start": 30.847,
+     "end": 30.947
+    },
+    {
+     "text": "life.",
+     "start": 30.947,
+     "end": 31.167
+    }
+   ]
+  },
+  {
+   "id": "c1c",
+   "text": "A pension is like a vending machine. You work thirty years and then it drops you a sandwich every month forever. You never pack lunch again.",
+   "start": 31.7323125,
+   "end": 37.712312499999996,
+   "words": [
+    {
+     "text": "A",
+     "start": 31.732,
+     "end": 31.792
+    },
+    {
+     "text": "pension",
+     "start": 31.792,
+     "end": 31.952
+    },
+    {
+     "text": "is",
+     "start": 31.952,
+     "end": 32.272
+    },
+    {
+     "text": "like",
+     "start": 32.272,
+     "end": 32.412
+    },
+    {
+     "text": "a",
+     "start": 32.412,
+     "end": 32.512
+    },
+    {
+     "text": "vending",
+     "start": 32.512,
+     "end": 32.632
+    },
+    {
+     "text": "machine.",
+     "start": 32.632,
+     "end": 33.032
+    },
+    {
+     "text": "You",
+     "start": 33.632,
+     "end": 33.652
+    },
+    {
+     "text": "work",
+     "start": 33.652,
+     "end": 33.792
+    },
+    {
+     "text": "thirty",
+     "start": 33.792,
+     "end": 33.992
+    },
+    {
+     "text": "years",
+     "start": 33.992,
+     "end": 34.312
+    },
+    {
+     "text": "and",
+     "start": 34.312,
+     "end": 34.612
+    },
+    {
+     "text": "then",
+     "start": 34.612,
+     "end": 34.732
+    },
+    {
+     "text": "it",
+     "start": 34.732,
+     "end": 34.792
+    },
+    {
+     "text": "drops",
+     "start": 34.792,
+     "end": 34.972
+    },
+    {
+     "text": "you",
+     "start": 34.972,
+     "end": 35.152
+    },
+    {
+     "text": "a",
+     "start": 35.152,
+     "end": 35.232
+    },
+    {
+     "text": "sandwich",
+     "start": 35.232,
+     "end": 35.492
+    },
+    {
+     "text": "every",
+     "start": 35.492,
+     "end": 35.732
+    },
+    {
+     "text": "month",
+     "start": 35.732,
+     "end": 36.032
+    },
+    {
+     "text": "forever.",
+     "start": 36.032,
+     "end": 36.272
+    },
+    {
+     "text": "You",
+     "start": 36.792,
+     "end": 36.812
+    },
+    {
+     "text": "never",
+     "start": 36.812,
+     "end": 36.972
+    },
+    {
+     "text": "pack",
+     "start": 36.972,
+     "end": 37.192
+    },
+    {
+     "text": "lunch",
+     "start": 37.192,
+     "end": 37.412
+    },
+    {
+     "text": "again.",
+     "start": 37.412,
+     "end": 37.712
+    }
+   ]
+  },
+  {
+   "id": "n1",
+   "text": "My dad explaining his retirement.",
+   "start": 38.422875,
+   "end": 39.822874999999996,
+   "words": [
+    {
+     "text": "My",
+     "start": 38.423,
+     "end": 38.543
+    },
+    {
+     "text": "dad",
+     "start": 38.543,
+     "end": 38.763
+    },
+    {
+     "text": "explaining",
+     "start": 38.923,
+     "end": 39.163
+    },
+    {
+     "text": "his",
+     "start": 39.163,
+     "end": 39.443
+    },
+    {
+     "text": "retirement.",
+     "start": 39.443,
+     "end": 39.823
+    }
+   ]
+  },
+  {
+   "id": "c1d",
+   "text": "So I check my own job for the vending machine. There isn't one. Back when my dad started working most big companies had one.",
+   "start": 40.614979166666664,
+   "end": 46.31497916666667,
+   "words": [
+    {
+     "text": "So",
+     "start": 40.615,
+     "end": 40.775
+    },
+    {
+     "text": "I",
+     "start": 40.775,
+     "end": 41.015
+    },
+    {
+     "text": "check",
+     "start": 41.015,
+     "end": 41.115
+    },
+    {
+     "text": "my",
+     "start": 41.115,
+     "end": 41.295
+    },
+    {
+     "text": "own",
+     "start": 41.295,
+     "end": 41.455
+    },
+    {
+     "text": "job",
+     "start": 41.455,
+     "end": 41.655
+    },
+    {
+     "text": "for",
+     "start": 41.655,
+     "end": 41.835
+    },
+    {
+     "text": "the",
+     "start": 41.835,
+     "end": 41.935
+    },
+    {
+     "text": "vending",
+     "start": 41.935,
+     "end": 42.035
+    },
+    {
+     "text": "machine.",
+     "start": 42.035,
+     "end": 42.355
+    },
+    {
+     "text": "There",
+     "start": 42.895,
+     "end": 42.915
+    },
+    {
+     "text": "isn't",
+     "start": 42.915,
+     "end": 43.195
+    },
+    {
+     "text": "one.",
+     "start": 43.195,
+     "end": 43.315
+    },
+    {
+     "text": "Back",
+     "start": 43.875,
+     "end": 43.955
+    },
+    {
+     "text": "when",
+     "start": 43.955,
+     "end": 44.115
+    },
+    {
+     "text": "my",
+     "start": 44.115,
+     "end": 44.235
+    },
+    {
+     "text": "dad",
+     "start": 44.235,
+     "end": 44.415
+    },
+    {
+     "text": "started",
+     "start": 44.415,
+     "end": 44.735
+    },
+    {
+     "text": "working",
+     "start": 44.735,
+     "end": 45.035
+    },
+    {
+     "text": "most",
+     "start": 45.195,
+     "end": 45.315
+    },
+    {
+     "text": "big",
+     "start": 45.315,
+     "end": 45.575
+    },
+    {
+     "text": "companies",
+     "start": 45.575,
+     "end": 45.795
+    },
+    {
+     "text": "had",
+     "start": 45.795,
+     "end": 46.115
+    },
+    {
+     "text": "one.",
+     "start": 46.115,
+     "end": 46.315
+    }
+   ]
+  },
+  {
+   "id": "c1e",
+   "text": "Today only about one in seven private workers even gets offered one. Even though there are way more workers now.",
+   "start": 46.93289583333333,
+   "end": 51.59289583333333,
+   "words": [
+    {
+     "text": "Today",
+     "start": 46.933,
+     "end": 47.133
+    },
+    {
+     "text": "only",
+     "start": 47.413,
+     "end": 47.513
+    },
+    {
+     "text": "about",
+     "start": 47.513,
+     "end": 47.733
+    },
+    {
+     "text": "one",
+     "start": 47.733,
+     "end": 47.993
+    },
+    {
+     "text": "in",
+     "start": 47.993,
+     "end": 48.113
+    },
+    {
+     "text": "seven",
+     "start": 48.113,
+     "end": 48.353
+    },
+    {
+     "text": "private",
+     "start": 48.353,
+     "end": 48.593
+    },
+    {
+     "text": "workers",
+     "start": 48.593,
+     "end": 48.933
+    },
+    {
+     "text": "even",
+     "start": 48.933,
+     "end": 49.153
+    },
+    {
+     "text": "gets",
+     "start": 49.153,
+     "end": 49.353
+    },
+    {
+     "text": "offered",
+     "start": 49.353,
+     "end": 49.593
+    },
+    {
+     "text": "one.",
+     "start": 49.593,
+     "end": 49.873
+    },
+    {
+     "text": "Even",
+     "start": 50.113,
+     "end": 50.293
+    },
+    {
+     "text": "though",
+     "start": 50.293,
+     "end": 50.433
+    },
+    {
+     "text": "there",
+     "start": 50.433,
+     "end": 50.573
+    },
+    {
+     "text": "are",
+     "start": 50.573,
+     "end": 50.673
+    },
+    {
+     "text": "way",
+     "start": 50.673,
+     "end": 50.853
+    },
+    {
+     "text": "more",
+     "start": 50.853,
+     "end": 51.053
+    },
+    {
+     "text": "workers",
+     "start": 51.053,
+     "end": 51.333
+    },
+    {
+     "text": "now.",
+     "start": 51.333,
+     "end": 51.593
+    }
+   ]
+  },
+  {
+   "id": "c1f",
+   "text": "Instead I got a four oh one k. It's a lunchbox I have to fill myself and make last.",
+   "start": 52.25052083333333,
+   "end": 56.04352083333333,
+   "words": [
+    {
+     "text": "Instead",
+     "start": 52.251,
+     "end": 52.578
+    },
+    {
+     "text": "I",
+     "start": 52.615,
+     "end": 52.697
+    },
+    {
+     "text": "got",
+     "start": 52.706,
+     "end": 52.869
+    },
+    {
+     "text": "a",
+     "start": 52.888,
+     "end": 52.97
+    },
+    {
+     "text": "four",
+     "start": 52.979,
+     "end": 53.183
+    },
+    {
+     "text": "oh",
+     "start": 53.206,
+     "end": 53.329
+    },
+    {
+     "text": "one",
+     "start": 53.342,
+     "end": 53.506
+    },
+    {
+     "text": "k.",
+     "start": 53.524,
+     "end": 53.647
+    },
+    {
+     "text": "It's",
+     "start": 53.661,
+     "end": 53.865
+    },
+    {
+     "text": "a",
+     "start": 53.888,
+     "end": 53.97
+    },
+    {
+     "text": "lunchbox",
+     "start": 53.979,
+     "end": 54.347
+    },
+    {
+     "text": "I",
+     "start": 54.388,
+     "end": 54.47
+    },
+    {
+     "text": "have",
+     "start": 54.479,
+     "end": 54.684
+    },
+    {
+     "text": "to",
+     "start": 54.707,
+     "end": 54.829
+    },
+    {
+     "text": "fill",
+     "start": 54.843,
+     "end": 55.048
+    },
+    {
+     "text": "myself",
+     "start": 55.071,
+     "end": 55.357
+    },
+    {
+     "text": "and",
+     "start": 55.389,
+     "end": 55.553
+    },
+    {
+     "text": "make",
+     "start": 55.571,
+     "end": 55.775
+    },
+    {
+     "text": "last.",
+     "start": 55.798,
+     "end": 56.044
+    }
+   ]
+  },
+  {
+   "id": "n2",
+   "text": "Me comparing our retirements.",
+   "start": 56.8715,
+   "end": 58.2315,
+   "words": [
+    {
+     "text": "Me",
+     "start": 56.871,
+     "end": 57.072
+    },
+    {
+     "text": "comparing",
+     "start": 57.072,
+     "end": 57.431
+    },
+    {
+     "text": "our",
+     "start": 57.431,
+     "end": 57.731
+    },
+    {
+     "text": "retirements.",
+     "start": 57.731,
+     "end": 58.231
+    }
+   ]
+  },
+  {
+   "id": "c1g",
+   "text": "But my dad had one more advantage and this one came from the government.",
+   "start": 58.925354166666665,
+   "end": 62.04535416666666,
+   "words": [
+    {
+     "text": "But",
+     "start": 58.925,
+     "end": 59.065
+    },
+    {
+     "text": "my",
+     "start": 59.065,
+     "end": 59.205
+    },
+    {
+     "text": "dad",
+     "start": 59.205,
+     "end": 59.405
+    },
+    {
+     "text": "had",
+     "start": 59.405,
+     "end": 59.645
+    },
+    {
+     "text": "one",
+     "start": 59.645,
+     "end": 59.885
+    },
+    {
+     "text": "more",
+     "start": 59.885,
+     "end": 60.085
+    },
+    {
+     "text": "advantage",
+     "start": 60.085,
+     "end": 60.485
+    },
+    {
+     "text": "and",
+     "start": 60.905,
+     "end": 60.945
+    },
+    {
+     "text": "this",
+     "start": 60.945,
+     "end": 61.085
+    },
+    {
+     "text": "one",
+     "start": 61.085,
+     "end": 61.285
+    },
+    {
+     "text": "came",
+     "start": 61.285,
+     "end": 61.485
+    },
+    {
+     "text": "from",
+     "start": 61.485,
+     "end": 61.665
+    },
+    {
+     "text": "the",
+     "start": 61.665,
+     "end": 61.785
+    },
+    {
+     "text": "government.",
+     "start": 61.785,
+     "end": 62.045
+    }
+   ]
+  },
+  {
+   "id": "c2a",
+   "text": "So I open my Social Security statement and I spot a weird number. Full retirement age sixty seven.",
+   "start": 65.0430625,
+   "end": 69.1740625,
+   "words": [
+    {
+     "text": "So",
+     "start": 65.043,
+     "end": 65.156
+    },
+    {
+     "text": "I",
+     "start": 65.169,
+     "end": 65.245
+    },
+    {
+     "text": "open",
+     "start": 65.253,
+     "end": 65.442
+    },
+    {
+     "text": "my",
+     "start": 65.463,
+     "end": 65.577
+    },
+    {
+     "text": "Social",
+     "start": 65.589,
+     "end": 65.854
+    },
+    {
+     "text": "Security",
+     "start": 65.883,
+     "end": 66.224
+    },
+    {
+     "text": "statement",
+     "start": 66.262,
+     "end": 66.64
+    },
+    {
+     "text": "and",
+     "start": 66.682,
+     "end": 66.833
+    },
+    {
+     "text": "I",
+     "start": 66.85,
+     "end": 66.926
+    },
+    {
+     "text": "spot",
+     "start": 66.934,
+     "end": 67.123
+    },
+    {
+     "text": "a",
+     "start": 67.144,
+     "end": 67.22
+    },
+    {
+     "text": "weird",
+     "start": 67.228,
+     "end": 67.455
+    },
+    {
+     "text": "number.",
+     "start": 67.48,
+     "end": 67.783
+    },
+    {
+     "text": "Full",
+     "start": 67.816,
+     "end": 68.005
+    },
+    {
+     "text": "retirement",
+     "start": 68.026,
+     "end": 68.442
+    },
+    {
+     "text": "age",
+     "start": 68.489,
+     "end": 68.64
+    },
+    {
+     "text": "sixty",
+     "start": 68.657,
+     "end": 68.884
+    },
+    {
+     "text": "seven.",
+     "start": 68.909,
+     "end": 69.174
+    }
+   ]
+  },
+  {
+   "id": "c2b",
+   "text": "Wait. Isn't it sixty five? It was for my dad. Then in nineteen eighty three Congress passed a law that slowly pushed it back.",
+   "start": 70.01733333333334,
+   "end": 76.64533333333334,
+   "words": [
+    {
+     "text": "Wait.",
+     "start": 70.017,
+     "end": 70.302
+    },
+    {
+     "text": "Isn't",
+     "start": 70.334,
+     "end": 70.62
+    },
+    {
+     "text": "it",
+     "start": 70.651,
+     "end": 70.794
+    },
+    {
+     "text": "sixty",
+     "start": 70.81,
+     "end": 71.095
+    },
+    {
+     "text": "five?",
+     "start": 71.127,
+     "end": 71.412
+    },
+    {
+     "text": "It",
+     "start": 71.444,
+     "end": 71.587
+    },
+    {
+     "text": "was",
+     "start": 71.603,
+     "end": 71.793
+    },
+    {
+     "text": "for",
+     "start": 71.814,
+     "end": 72.004
+    },
+    {
+     "text": "my",
+     "start": 72.026,
+     "end": 72.168
+    },
+    {
+     "text": "dad.",
+     "start": 72.184,
+     "end": 72.422
+    },
+    {
+     "text": "Then",
+     "start": 72.448,
+     "end": 72.686
+    },
+    {
+     "text": "in",
+     "start": 72.713,
+     "end": 72.855
+    },
+    {
+     "text": "nineteen",
+     "start": 72.871,
+     "end": 73.299
+    },
+    {
+     "text": "eighty",
+     "start": 73.347,
+     "end": 73.68
+    },
+    {
+     "text": "three",
+     "start": 73.717,
+     "end": 74.002
+    },
+    {
+     "text": "Congress",
+     "start": 74.034,
+     "end": 74.462
+    },
+    {
+     "text": "passed",
+     "start": 74.51,
+     "end": 74.843
+    },
+    {
+     "text": "a",
+     "start": 74.88,
+     "end": 74.975
+    },
+    {
+     "text": "law",
+     "start": 74.986,
+     "end": 75.176
+    },
+    {
+     "text": "that",
+     "start": 75.197,
+     "end": 75.435
+    },
+    {
+     "text": "slowly",
+     "start": 75.461,
+     "end": 75.794
+    },
+    {
+     "text": "pushed",
+     "start": 75.831,
+     "end": 76.164
+    },
+    {
+     "text": "it",
+     "start": 76.201,
+     "end": 76.344
+    },
+    {
+     "text": "back.",
+     "start": 76.36,
+     "end": 76.645
+    }
+   ]
+  },
+  {
+   "id": "c2c",
+   "text": "So if you were born in nineteen sixty or later like me it's sixty seven.",
+   "start": 77.2413125,
+   "end": 80.60831250000001,
+   "words": [
+    {
+     "text": "So",
+     "start": 77.241,
+     "end": 77.367
+    },
+    {
+     "text": "if",
+     "start": 77.381,
+     "end": 77.506
+    },
+    {
+     "text": "you",
+     "start": 77.52,
+     "end": 77.688
+    },
+    {
+     "text": "were",
+     "start": 77.707,
+     "end": 77.916
+    },
+    {
+     "text": "born",
+     "start": 77.94,
+     "end": 78.149
+    },
+    {
+     "text": "in",
+     "start": 78.173,
+     "end": 78.298
+    },
+    {
+     "text": "nineteen",
+     "start": 78.312,
+     "end": 78.689
+    },
+    {
+     "text": "sixty",
+     "start": 78.731,
+     "end": 78.983
+    },
+    {
+     "text": "or",
+     "start": 79.011,
+     "end": 79.137
+    },
+    {
+     "text": "later",
+     "start": 79.151,
+     "end": 79.402
+    },
+    {
+     "text": "like",
+     "start": 79.43,
+     "end": 79.64
+    },
+    {
+     "text": "me",
+     "start": 79.663,
+     "end": 79.789
+    },
+    {
+     "text": "it's",
+     "start": 79.803,
+     "end": 80.012
+    },
+    {
+     "text": "sixty",
+     "start": 80.036,
+     "end": 80.287
+    },
+    {
+     "text": "seven.",
+     "start": 80.315,
+     "end": 80.608
+    }
+   ]
+  },
+  {
+   "id": "c2d",
+   "text": "It's like running a marathon and someone quietly moves the finish line two miles back while you're still running.",
+   "start": 81.52191666666667,
+   "end": 86.18191666666667,
+   "words": [
+    {
+     "text": "It's",
+     "start": 81.522,
+     "end": 81.622
+    },
+    {
+     "text": "like",
+     "start": 81.622,
+     "end": 81.742
+    },
+    {
+     "text": "running",
+     "start": 81.742,
+     "end": 81.962
+    },
+    {
+     "text": "a",
+     "start": 81.962,
+     "end": 82.122
+    },
+    {
+     "text": "marathon",
+     "start": 82.122,
+     "end": 82.402
+    },
+    {
+     "text": "and",
+     "start": 82.402,
+     "end": 82.782
+    },
+    {
+     "text": "someone",
+     "start": 82.782,
+     "end": 83.022
+    },
+    {
+     "text": "quietly",
+     "start": 83.022,
+     "end": 83.382
+    },
+    {
+     "text": "moves",
+     "start": 83.382,
+     "end": 83.762
+    },
+    {
+     "text": "the",
+     "start": 83.762,
+     "end": 83.922
+    },
+    {
+     "text": "finish",
+     "start": 83.922,
+     "end": 84.122
+    },
+    {
+     "text": "line",
+     "start": 84.122,
+     "end": 84.402
+    },
+    {
+     "text": "two",
+     "start": 84.402,
+     "end": 84.662
+    },
+    {
+     "text": "miles",
+     "start": 84.662,
+     "end": 84.962
+    },
+    {
+     "text": "back",
+     "start": 84.962,
+     "end": 85.282
+    },
+    {
+     "text": "while",
+     "start": 85.282,
+     "end": 85.562
+    },
+    {
+     "text": "you're",
+     "start": 85.562,
+     "end": 85.722
+    },
+    {
+     "text": "still",
+     "start": 85.722,
+     "end": 85.902
+    },
+    {
+     "text": "running.",
+     "start": 85.902,
+     "end": 86.182
+    }
+   ]
+  },
+  {
+   "id": "n3",
+   "text": "Me in mile twenty six.",
+   "start": 86.83445833333333,
+   "end": 87.94945833333333,
+   "words": [
+    {
+     "text": "Me",
+     "start": 86.834,
+     "end": 86.968
+    },
+    {
+     "text": "in",
+     "start": 86.983,
+     "end": 87.117
+    },
+    {
+     "text": "mile",
+     "start": 87.131,
+     "end": 87.354
+    },
+    {
+     "text": "twenty",
+     "start": 87.379,
+     "end": 87.691
+    },
+    {
+     "text": "six.",
+     "start": 87.726,
+     "end": 87.949
+    }
+   ]
+  },
+  {
+   "id": "c2e",
+   "text": "And if I stop at sixty five anyway my check is about thirteen percent smaller for the rest of my life.",
+   "start": 88.88695833333334,
+   "end": 93.18195833333334,
+   "words": [
+    {
+     "text": "And",
+     "start": 88.887,
+     "end": 89.038
+    },
+    {
+     "text": "if",
+     "start": 89.055,
+     "end": 89.168
+    },
+    {
+     "text": "I",
+     "start": 89.181,
+     "end": 89.256
+    },
+    {
+     "text": "stop",
+     "start": 89.264,
+     "end": 89.453
+    },
+    {
+     "text": "at",
+     "start": 89.474,
+     "end": 89.587
+    },
+    {
+     "text": "sixty",
+     "start": 89.6,
+     "end": 89.826
+    },
+    {
+     "text": "five",
+     "start": 89.852,
+     "end": 90.04
+    },
+    {
+     "text": "anyway",
+     "start": 90.061,
+     "end": 90.326
+    },
+    {
+     "text": "my",
+     "start": 90.355,
+     "end": 90.468
+    },
+    {
+     "text": "check",
+     "start": 90.481,
+     "end": 90.707
+    },
+    {
+     "text": "is",
+     "start": 90.732,
+     "end": 90.846
+    },
+    {
+     "text": "about",
+     "start": 90.858,
+     "end": 91.085
+    },
+    {
+     "text": "thirteen",
+     "start": 91.11,
+     "end": 91.45
+    },
+    {
+     "text": "percent",
+     "start": 91.487,
+     "end": 91.789
+    },
+    {
+     "text": "smaller",
+     "start": 91.823,
+     "end": 92.125
+    },
+    {
+     "text": "for",
+     "start": 92.158,
+     "end": 92.309
+    },
+    {
+     "text": "the",
+     "start": 92.326,
+     "end": 92.477
+    },
+    {
+     "text": "rest",
+     "start": 92.494,
+     "end": 92.683
+    },
+    {
+     "text": "of",
+     "start": 92.704,
+     "end": 92.817
+    },
+    {
+     "text": "my",
+     "start": 92.83,
+     "end": 92.943
+    },
+    {
+     "text": "life.",
+     "start": 92.955,
+     "end": 93.182
+    }
+   ]
+  },
+  {
+   "id": "c2f",
+   "text": "So I check my lunchbox to see if it can cover the gap. And that's where it got scary.",
+   "start": 93.771125,
+   "end": 97.73112499999999,
+   "words": [
+    {
+     "text": "So",
+     "start": 93.771,
+     "end": 93.871
+    },
+    {
+     "text": "I",
+     "start": 93.871,
+     "end": 93.951
+    },
+    {
+     "text": "check",
+     "start": 93.951,
+     "end": 94.051
+    },
+    {
+     "text": "my",
+     "start": 94.051,
+     "end": 94.231
+    },
+    {
+     "text": "lunchbox",
+     "start": 94.231,
+     "end": 94.631
+    },
+    {
+     "text": "to",
+     "start": 94.631,
+     "end": 94.871
+    },
+    {
+     "text": "see",
+     "start": 94.871,
+     "end": 95.011
+    },
+    {
+     "text": "if",
+     "start": 95.011,
+     "end": 95.131
+    },
+    {
+     "text": "it",
+     "start": 95.131,
+     "end": 95.211
+    },
+    {
+     "text": "can",
+     "start": 95.211,
+     "end": 95.351
+    },
+    {
+     "text": "cover",
+     "start": 95.351,
+     "end": 95.571
+    },
+    {
+     "text": "the",
+     "start": 95.571,
+     "end": 95.711
+    },
+    {
+     "text": "gap.",
+     "start": 95.711,
+     "end": 95.931
+    },
+    {
+     "text": "And",
+     "start": 96.371,
+     "end": 96.571
+    },
+    {
+     "text": "that's",
+     "start": 96.571,
+     "end": 97.011
+    },
+    {
+     "text": "where",
+     "start": 97.011,
+     "end": 97.171
+    },
+    {
+     "text": "it",
+     "start": 97.171,
+     "end": 97.271
+    },
+    {
+     "text": "got",
+     "start": 97.271,
+     "end": 97.411
+    },
+    {
+     "text": "scary.",
+     "start": 97.411,
+     "end": 97.731
+    }
+   ]
+  },
+  {
+   "id": "c3a",
+   "text": "I log into my four oh one k. Twenty five thousand dollars. And honestly I feel pretty good about that.",
+   "start": 98.487875,
+   "end": 103.696875,
+   "words": [
+    {
+     "text": "I",
+     "start": 98.488,
+     "end": 98.58
+    },
+    {
+     "text": "log",
+     "start": 98.59,
+     "end": 98.773
+    },
+    {
+     "text": "into",
+     "start": 98.793,
+     "end": 99.022
+    },
+    {
+     "text": "my",
+     "start": 99.048,
+     "end": 99.185
+    },
+    {
+     "text": "four",
+     "start": 99.2,
+     "end": 99.429
+    },
+    {
+     "text": "oh",
+     "start": 99.455,
+     "end": 99.592
+    },
+    {
+     "text": "one",
+     "start": 99.607,
+     "end": 99.79
+    },
+    {
+     "text": "k.",
+     "start": 99.811,
+     "end": 99.948
+    },
+    {
+     "text": "Twenty",
+     "start": 99.963,
+     "end": 100.284
+    },
+    {
+     "text": "five",
+     "start": 100.319,
+     "end": 100.548
+    },
+    {
+     "text": "thousand",
+     "start": 100.574,
+     "end": 100.986
+    },
+    {
+     "text": "dollars.",
+     "start": 101.032,
+     "end": 101.444
+    },
+    {
+     "text": "And",
+     "start": 101.49,
+     "end": 101.673
+    },
+    {
+     "text": "honestly",
+     "start": 101.693,
+     "end": 102.105
+    },
+    {
+     "text": "I",
+     "start": 102.151,
+     "end": 102.242
+    },
+    {
+     "text": "feel",
+     "start": 102.253,
+     "end": 102.482
+    },
+    {
+     "text": "pretty",
+     "start": 102.507,
+     "end": 102.828
+    },
+    {
+     "text": "good",
+     "start": 102.863,
+     "end": 103.092
+    },
+    {
+     "text": "about",
+     "start": 103.118,
+     "end": 103.392
+    },
+    {
+     "text": "that.",
+     "start": 103.423,
+     "end": 103.697
+    }
+   ]
+  },
+  {
+   "id": "n4",
+   "text": "I'm basically a millionaire already. I just need nine hundred seventy five thousand more.",
+   "start": 104.29177083333333,
+   "end": 108.56277083333333,
+   "words": [
+    {
+     "text": "I'm",
+     "start": 104.292,
+     "end": 104.464
+    },
+    {
+     "text": "basically",
+     "start": 104.483,
+     "end": 104.913
+    },
+    {
+     "text": "a",
+     "start": 104.961,
+     "end": 105.047
+    },
+    {
+     "text": "millionaire",
+     "start": 105.056,
+     "end": 105.572
+    },
+    {
+     "text": "already.",
+     "start": 105.63,
+     "end": 106.017
+    },
+    {
+     "text": "I",
+     "start": 106.06,
+     "end": 106.146
+    },
+    {
+     "text": "just",
+     "start": 106.155,
+     "end": 106.37
+    },
+    {
+     "text": "need",
+     "start": 106.394,
+     "end": 106.609
+    },
+    {
+     "text": "nine",
+     "start": 106.633,
+     "end": 106.848
+    },
+    {
+     "text": "hundred",
+     "start": 106.872,
+     "end": 107.216
+    },
+    {
+     "text": "seventy",
+     "start": 107.254,
+     "end": 107.598
+    },
+    {
+     "text": "five",
+     "start": 107.636,
+     "end": 107.851
+    },
+    {
+     "text": "thousand",
+     "start": 107.875,
+     "end": 108.262
+    },
+    {
+     "text": "more.",
+     "start": 108.305,
+     "end": 108.563
+    }
+   ]
+  },
+  {
+   "id": "c3b",
+   "text": "Then I wonder what people who are almost done have. People in their late fifties and early sixties. The finish line is right there for them.",
+   "start": 109.26260416666666,
+   "end": 115.36260416666666,
+   "words": [
+    {
+     "text": "Then",
+     "start": 109.263,
+     "end": 109.443
+    },
+    {
+     "text": "I",
+     "start": 109.443,
+     "end": 109.583
+    },
+    {
+     "text": "wonder",
+     "start": 109.583,
+     "end": 109.803
+    },
+    {
+     "text": "what",
+     "start": 109.803,
+     "end": 110.043
+    },
+    {
+     "text": "people",
+     "start": 110.043,
+     "end": 110.203
+    },
+    {
+     "text": "who",
+     "start": 110.203,
+     "end": 110.443
+    },
+    {
+     "text": "are",
+     "start": 110.443,
+     "end": 110.523
+    },
+    {
+     "text": "almost",
+     "start": 110.523,
+     "end": 110.763
+    },
+    {
+     "text": "done",
+     "start": 110.763,
+     "end": 111.003
+    },
+    {
+     "text": "have.",
+     "start": 111.003,
+     "end": 111.303
+    },
+    {
+     "text": "People",
+     "start": 111.663,
+     "end": 111.823
+    },
+    {
+     "text": "in",
+     "start": 111.823,
+     "end": 112.003
+    },
+    {
+     "text": "their",
+     "start": 112.003,
+     "end": 112.123
+    },
+    {
+     "text": "late",
+     "start": 112.123,
+     "end": 112.263
+    },
+    {
+     "text": "fifties",
+     "start": 112.263,
+     "end": 112.703
+    },
+    {
+     "text": "and",
+     "start": 112.703,
+     "end": 112.763
+    },
+    {
+     "text": "early",
+     "start": 112.763,
+     "end": 112.963
+    },
+    {
+     "text": "sixties.",
+     "start": 112.963,
+     "end": 113.583
+    },
+    {
+     "text": "The",
+     "start": 113.803,
+     "end": 113.863
+    },
+    {
+     "text": "finish",
+     "start": 113.863,
+     "end": 114.063
+    },
+    {
+     "text": "line",
+     "start": 114.063,
+     "end": 114.323
+    },
+    {
+     "text": "is",
+     "start": 114.323,
+     "end": 114.583
+    },
+    {
+     "text": "right",
+     "start": 114.583,
+     "end": 114.763
+    },
+    {
+     "text": "there",
+     "start": 114.763,
+     "end": 115.003
+    },
+    {
+     "text": "for",
+     "start": 115.003,
+     "end": 115.203
+    },
+    {
+     "text": "them.",
+     "start": 115.203,
+     "end": 115.363
+    }
+   ]
+  },
+  {
+   "id": "c3c",
+   "text": "Quick guess. What's the typical retirement balance for that age? Write your number in the comments.",
+   "start": 115.98975,
+   "end": 120.10975,
+   "words": [
+    {
+     "text": "Quick",
+     "start": 115.99,
+     "end": 116.07
+    },
+    {
+     "text": "guess.",
+     "start": 116.07,
+     "end": 116.29
+    },
+    {
+     "text": "What's",
+     "start": 116.65,
+     "end": 116.99
+    },
+    {
+     "text": "the",
+     "start": 116.99,
+     "end": 117.07
+    },
+    {
+     "text": "typical",
+     "start": 117.07,
+     "end": 117.29
+    },
+    {
+     "text": "retirement",
+     "start": 117.29,
+     "end": 117.63
+    },
+    {
+     "text": "balance",
+     "start": 117.63,
+     "end": 118.01
+    },
+    {
+     "text": "for",
+     "start": 118.01,
+     "end": 118.27
+    },
+    {
+     "text": "that",
+     "start": 118.27,
+     "end": 118.41
+    },
+    {
+     "text": "age?",
+     "start": 118.41,
+     "end": 118.63
+    },
+    {
+     "text": "Write",
+     "start": 119.09,
+     "end": 119.21
+    },
+    {
+     "text": "your",
+     "start": 119.21,
+     "end": 119.35
+    },
+    {
+     "text": "number",
+     "start": 119.35,
+     "end": 119.55
+    },
+    {
+     "text": "in",
+     "start": 119.55,
+     "end": 119.77
+    },
+    {
+     "text": "the",
+     "start": 119.77,
+     "end": 119.87
+    },
+    {
+     "text": "comments.",
+     "start": 119.87,
+     "end": 120.11
+    }
+   ]
+  },
+  {
+   "id": "c3d",
+   "text": "While you think here's the problem. Dad's vending machine never runs out. My lunchbox does.",
+   "start": 120.90295833333333,
+   "end": 125.04295833333333,
+   "words": [
+    {
+     "text": "While",
+     "start": 120.903,
+     "end": 121.003
+    },
+    {
+     "text": "you",
+     "start": 121.003,
+     "end": 121.103
+    },
+    {
+     "text": "think",
+     "start": 121.103,
+     "end": 121.243
+    },
+    {
+     "text": "here's",
+     "start": 121.243,
+     "end": 121.483
+    },
+    {
+     "text": "the",
+     "start": 121.483,
+     "end": 121.583
+    },
+    {
+     "text": "problem.",
+     "start": 121.583,
+     "end": 121.923
+    },
+    {
+     "text": "Dad's",
+     "start": 122.403,
+     "end": 122.743
+    },
+    {
+     "text": "vending",
+     "start": 122.743,
+     "end": 122.843
+    },
+    {
+     "text": "machine",
+     "start": 122.843,
+     "end": 123.303
+    },
+    {
+     "text": "never",
+     "start": 123.303,
+     "end": 123.523
+    },
+    {
+     "text": "runs",
+     "start": 123.523,
+     "end": 123.723
+    },
+    {
+     "text": "out.",
+     "start": 123.723,
+     "end": 123.963
+    },
+    {
+     "text": "My",
+     "start": 124.263,
+     "end": 124.343
+    },
+    {
+     "text": "lunchbox",
+     "start": 124.343,
+     "end": 124.803
+    },
+    {
+     "text": "does.",
+     "start": 124.803,
+     "end": 125.043
+    }
+   ]
+  },
+  {
+   "id": "c3e",
+   "text": "And to know how big the box needs to be I need one number that nobody knows. How long I'll live.",
+   "start": 125.80252083333333,
+   "end": 130.60252083333333,
+   "words": [
+    {
+     "text": "And",
+     "start": 125.803,
+     "end": 125.943
+    },
+    {
+     "text": "to",
+     "start": 125.943,
+     "end": 126.083
+    },
+    {
+     "text": "know",
+     "start": 126.083,
+     "end": 126.243
+    },
+    {
+     "text": "how",
+     "start": 126.243,
+     "end": 126.423
+    },
+    {
+     "text": "big",
+     "start": 126.423,
+     "end": 126.623
+    },
+    {
+     "text": "the",
+     "start": 126.623,
+     "end": 126.763
+    },
+    {
+     "text": "box",
+     "start": 126.763,
+     "end": 126.943
+    },
+    {
+     "text": "needs",
+     "start": 126.943,
+     "end": 127.203
+    },
+    {
+     "text": "to",
+     "start": 127.203,
+     "end": 127.403
+    },
+    {
+     "text": "be",
+     "start": 127.403,
+     "end": 127.543
+    },
+    {
+     "text": "I",
+     "start": 127.783,
+     "end": 127.823
+    },
+    {
+     "text": "need",
+     "start": 127.823,
+     "end": 127.963
+    },
+    {
+     "text": "one",
+     "start": 127.963,
+     "end": 128.223
+    },
+    {
+     "text": "number",
+     "start": 128.223,
+     "end": 128.543
+    },
+    {
+     "text": "that",
+     "start": 128.543,
+     "end": 128.803
+    },
+    {
+     "text": "nobody",
+     "start": 128.803,
+     "end": 129.023
+    },
+    {
+     "text": "knows.",
+     "start": 129.023,
+     "end": 129.383
+    },
+    {
+     "text": "How",
+     "start": 129.963,
+     "end": 130.043
+    },
+    {
+     "text": "long",
+     "start": 130.043,
+     "end": 130.223
+    },
+    {
+     "text": "I'll",
+     "start": 130.223,
+     "end": 130.443
+    },
+    {
+     "text": "live.",
+     "start": 130.443,
+     "end": 130.603
+    }
+   ]
+  },
+  {
+   "id": "c4a",
+   "text": "Back when Social Security started a man who made it to sixty five lived about twelve more years.",
+   "start": 131.37645833333335,
+   "end": 135.72445833333336,
+   "words": [
+    {
+     "text": "Back",
+     "start": 131.376,
+     "end": 131.579
+    },
+    {
+     "text": "when",
+     "start": 131.602,
+     "end": 131.805
+    },
+    {
+     "text": "Social",
+     "start": 131.828,
+     "end": 132.112
+    },
+    {
+     "text": "Security",
+     "start": 132.144,
+     "end": 132.509
+    },
+    {
+     "text": "started",
+     "start": 132.55,
+     "end": 132.875
+    },
+    {
+     "text": "a",
+     "start": 132.911,
+     "end": 132.993
+    },
+    {
+     "text": "man",
+     "start": 133.002,
+     "end": 133.164
+    },
+    {
+     "text": "who",
+     "start": 133.182,
+     "end": 133.345
+    },
+    {
+     "text": "made",
+     "start": 133.363,
+     "end": 133.566
+    },
+    {
+     "text": "it",
+     "start": 133.589,
+     "end": 133.71
+    },
+    {
+     "text": "to",
+     "start": 133.724,
+     "end": 133.846
+    },
+    {
+     "text": "sixty",
+     "start": 133.86,
+     "end": 134.103
+    },
+    {
+     "text": "five",
+     "start": 134.13,
+     "end": 134.334
+    },
+    {
+     "text": "lived",
+     "start": 134.356,
+     "end": 134.6
+    },
+    {
+     "text": "about",
+     "start": 134.627,
+     "end": 134.871
+    },
+    {
+     "text": "twelve",
+     "start": 134.898,
+     "end": 135.183
+    },
+    {
+     "text": "more",
+     "start": 135.214,
+     "end": 135.417
+    },
+    {
+     "text": "years.",
+     "start": 135.44,
+     "end": 135.724
+    }
+   ]
+  },
+  {
+   "id": "n15",
+   "text": "And here's a crazy story. The very first person to get a monthly Social Security check was a legal secretary from Vermont named Ida May Fuller.",
+   "start": 136.52975,
+   "end": 143.16975,
+   "words": [
+    {
+     "text": "And",
+     "start": 136.53,
+     "end": 136.79
+    },
+    {
+     "text": "here's",
+     "start": 136.79,
+     "end": 137.15
+    },
+    {
+     "text": "a",
+     "start": 137.15,
+     "end": 137.23
+    },
+    {
+     "text": "crazy",
+     "start": 137.23,
+     "end": 137.33
+    },
+    {
+     "text": "story.",
+     "start": 137.33,
+     "end": 137.77
+    },
+    {
+     "text": "The",
+     "start": 138.39,
+     "end": 138.41
+    },
+    {
+     "text": "very",
+     "start": 138.41,
+     "end": 138.55
+    },
+    {
+     "text": "first",
+     "start": 138.55,
+     "end": 138.83
+    },
+    {
+     "text": "person",
+     "start": 138.83,
+     "end": 139.07
+    },
+    {
+     "text": "to",
+     "start": 139.07,
+     "end": 139.33
+    },
+    {
+     "text": "get",
+     "start": 139.33,
+     "end": 139.41
+    },
+    {
+     "text": "a",
+     "start": 139.41,
+     "end": 139.49
+    },
+    {
+     "text": "monthly",
+     "start": 139.49,
+     "end": 139.67
+    },
+    {
+     "text": "Social",
+     "start": 139.67,
+     "end": 139.95
+    },
+    {
+     "text": "Security",
+     "start": 139.95,
+     "end": 140.43
+    },
+    {
+     "text": "check",
+     "start": 140.43,
+     "end": 140.69
+    },
+    {
+     "text": "was",
+     "start": 140.69,
+     "end": 140.87
+    },
+    {
+     "text": "a",
+     "start": 140.87,
+     "end": 140.99
+    },
+    {
+     "text": "legal",
+     "start": 140.99,
+     "end": 141.13
+    },
+    {
+     "text": "secretary",
+     "start": 141.13,
+     "end": 141.49
+    },
+    {
+     "text": "from",
+     "start": 141.49,
+     "end": 141.89
+    },
+    {
+     "text": "Vermont",
+     "start": 141.89,
+     "end": 142.15
+    },
+    {
+     "text": "named",
+     "start": 142.15,
+     "end": 142.49
+    },
+    {
+     "text": "Ida",
+     "start": 142.49,
+     "end": 142.79
+    },
+    {
+     "text": "May",
+     "start": 142.79,
+     "end": 142.95
+    },
+    {
+     "text": "Fuller.",
+     "start": 142.95,
+     "end": 143.17
+    }
+   ]
+  },
+  {
+   "id": "n16",
+   "text": "She paid in for about three years. Her taxes added up to less than twenty five dollars total.",
+   "start": 143.882625,
+   "end": 147.83262499999998,
+   "words": [
+    {
+     "text": "She",
+     "start": 143.883,
+     "end": 144.035
+    },
+    {
+     "text": "paid",
+     "start": 144.052,
+     "end": 144.243
+    },
+    {
+     "text": "in",
+     "start": 144.264,
+     "end": 144.378
+    },
+    {
+     "text": "for",
+     "start": 144.391,
+     "end": 144.544
+    },
+    {
+     "text": "about",
+     "start": 144.56,
+     "end": 144.789
+    },
+    {
+     "text": "three",
+     "start": 144.814,
+     "end": 145.043
+    },
+    {
+     "text": "years.",
+     "start": 145.069,
+     "end": 145.335
+    },
+    {
+     "text": "Her",
+     "start": 145.365,
+     "end": 145.517
+    },
+    {
+     "text": "taxes",
+     "start": 145.534,
+     "end": 145.763
+    },
+    {
+     "text": "added",
+     "start": 145.788,
+     "end": 146.017
+    },
+    {
+     "text": "up",
+     "start": 146.042,
+     "end": 146.157
+    },
+    {
+     "text": "to",
+     "start": 146.169,
+     "end": 146.284
+    },
+    {
+     "text": "less",
+     "start": 146.296,
+     "end": 146.487
+    },
+    {
+     "text": "than",
+     "start": 146.508,
+     "end": 146.699
+    },
+    {
+     "text": "twenty",
+     "start": 146.72,
+     "end": 146.987
+    },
+    {
+     "text": "five",
+     "start": 147.016,
+     "end": 147.207
+    },
+    {
+     "text": "dollars",
+     "start": 147.228,
+     "end": 147.533
+    },
+    {
+     "text": "total.",
+     "start": 147.567,
+     "end": 147.833
+    }
+   ]
+  },
+  {
+   "id": "n17",
+   "text": "Then she lived to one hundred and collected checks for thirty five years. Almost twenty three thousand dollars. Ida May Fuller was the GOAT.",
+   "start": 148.56939583333335,
+   "end": 155.22139583333333,
+   "words": [
+    {
+     "text": "Then",
+     "start": 148.569,
+     "end": 148.782
+    },
+    {
+     "text": "she",
+     "start": 148.806,
+     "end": 148.976
+    },
+    {
+     "text": "lived",
+     "start": 148.995,
+     "end": 149.251
+    },
+    {
+     "text": "to",
+     "start": 149.28,
+     "end": 149.408
+    },
+    {
+     "text": "one",
+     "start": 149.422,
+     "end": 149.592
+    },
+    {
+     "text": "hundred",
+     "start": 149.611,
+     "end": 149.952
+    },
+    {
+     "text": "and",
+     "start": 149.99,
+     "end": 150.161
+    },
+    {
+     "text": "collected",
+     "start": 150.18,
+     "end": 150.606
+    },
+    {
+     "text": "checks",
+     "start": 150.654,
+     "end": 150.952
+    },
+    {
+     "text": "for",
+     "start": 150.985,
+     "end": 151.156
+    },
+    {
+     "text": "thirty",
+     "start": 151.175,
+     "end": 151.473
+    },
+    {
+     "text": "five",
+     "start": 151.506,
+     "end": 151.719
+    },
+    {
+     "text": "years.",
+     "start": 151.743,
+     "end": 152.042
+    },
+    {
+     "text": "Almost",
+     "start": 152.075,
+     "end": 152.373
+    },
+    {
+     "text": "twenty",
+     "start": 152.406,
+     "end": 152.705
+    },
+    {
+     "text": "three",
+     "start": 152.738,
+     "end": 152.994
+    },
+    {
+     "text": "thousand",
+     "start": 153.022,
+     "end": 153.406
+    },
+    {
+     "text": "dollars.",
+     "start": 153.449,
+     "end": 153.832
+    },
+    {
+     "text": "Ida",
+     "start": 153.875,
+     "end": 154.046
+    },
+    {
+     "text": "May",
+     "start": 154.065,
+     "end": 154.235
+    },
+    {
+     "text": "Fuller",
+     "start": 154.254,
+     "end": 154.553
+    },
+    {
+     "text": "was",
+     "start": 154.586,
+     "end": 154.756
+    },
+    {
+     "text": "the",
+     "start": 154.775,
+     "end": 154.946
+    },
+    {
+     "text": "GOAT.",
+     "start": 154.965,
+     "end": 155.221
+    }
+   ]
+  },
+  {
+   "id": "n18",
+   "text": "Ida May Fuller's investment strategy.",
+   "start": 155.92685416666666,
+   "end": 157.66685416666667,
+   "words": [
+    {
+     "text": "Ida",
+     "start": 155.927,
+     "end": 156.187
+    },
+    {
+     "text": "May",
+     "start": 156.187,
+     "end": 156.307
+    },
+    {
+     "text": "Fuller's",
+     "start": 156.307,
+     "end": 156.787
+    },
+    {
+     "text": "investment",
+     "start": 156.787,
+     "end": 157.087
+    },
+    {
+     "text": "strategy.",
+     "start": 157.087,
+     "end": 157.667
+    }
+   ]
+  },
+  {
+   "id": "c4b",
+   "text": "Today a sixty five year old can expect about twenty more years. Which is great news for me and terrible news for my lunchbox.",
+   "start": 158.44854166666667,
+   "end": 164.34154166666667,
+   "words": [
+    {
+     "text": "Today",
+     "start": 158.449,
+     "end": 158.704
+    },
+    {
+     "text": "a",
+     "start": 158.732,
+     "end": 158.817
+    },
+    {
+     "text": "sixty",
+     "start": 158.826,
+     "end": 159.081
+    },
+    {
+     "text": "five",
+     "start": 159.109,
+     "end": 159.321
+    },
+    {
+     "text": "year",
+     "start": 159.345,
+     "end": 159.557
+    },
+    {
+     "text": "old",
+     "start": 159.58,
+     "end": 159.75
+    },
+    {
+     "text": "can",
+     "start": 159.769,
+     "end": 159.939
+    },
+    {
+     "text": "expect",
+     "start": 159.958,
+     "end": 160.255
+    },
+    {
+     "text": "about",
+     "start": 160.288,
+     "end": 160.542
+    },
+    {
+     "text": "twenty",
+     "start": 160.57,
+     "end": 160.867
+    },
+    {
+     "text": "more",
+     "start": 160.9,
+     "end": 161.113
+    },
+    {
+     "text": "years.",
+     "start": 161.136,
+     "end": 161.433
+    },
+    {
+     "text": "Which",
+     "start": 161.466,
+     "end": 161.721
+    },
+    {
+     "text": "is",
+     "start": 161.749,
+     "end": 161.876
+    },
+    {
+     "text": "great",
+     "start": 161.89,
+     "end": 162.145
+    },
+    {
+     "text": "news",
+     "start": 162.173,
+     "end": 162.385
+    },
+    {
+     "text": "for",
+     "start": 162.409,
+     "end": 162.579
+    },
+    {
+     "text": "me",
+     "start": 162.598,
+     "end": 162.725
+    },
+    {
+     "text": "and",
+     "start": 162.739,
+     "end": 162.909
+    },
+    {
+     "text": "terrible",
+     "start": 162.928,
+     "end": 163.309
+    },
+    {
+     "text": "news",
+     "start": 163.352,
+     "end": 163.564
+    },
+    {
+     "text": "for",
+     "start": 163.588,
+     "end": 163.757
+    },
+    {
+     "text": "my",
+     "start": 163.776,
+     "end": 163.903
+    },
+    {
+     "text": "lunchbox.",
+     "start": 163.918,
+     "end": 164.342
+    }
+   ]
+  },
+  {
+   "id": "c4c",
+   "text": "Twenty years of lunches from one box. It's like packing snacks for a weekend trip and finding out the trip lasts three weeks.",
+   "start": 165.15364583333334,
+   "end": 169.94664583333335,
+   "words": [
+    {
+     "text": "Twenty",
+     "start": 165.154,
+     "end": 165.395
+    },
+    {
+     "text": "years",
+     "start": 165.422,
+     "end": 165.628
+    },
+    {
+     "text": "of",
+     "start": 165.651,
+     "end": 165.755
+    },
+    {
+     "text": "lunches",
+     "start": 165.766,
+     "end": 166.041
+    },
+    {
+     "text": "from",
+     "start": 166.072,
+     "end": 166.244
+    },
+    {
+     "text": "one",
+     "start": 166.263,
+     "end": 166.401
+    },
+    {
+     "text": "box.",
+     "start": 166.416,
+     "end": 166.589
+    },
+    {
+     "text": "It's",
+     "start": 166.608,
+     "end": 166.78
+    },
+    {
+     "text": "like",
+     "start": 166.799,
+     "end": 166.971
+    },
+    {
+     "text": "packing",
+     "start": 166.99,
+     "end": 167.266
+    },
+    {
+     "text": "snacks",
+     "start": 167.296,
+     "end": 167.537
+    },
+    {
+     "text": "for",
+     "start": 167.564,
+     "end": 167.702
+    },
+    {
+     "text": "a",
+     "start": 167.717,
+     "end": 167.786
+    },
+    {
+     "text": "weekend",
+     "start": 167.794,
+     "end": 168.069
+    },
+    {
+     "text": "trip",
+     "start": 168.1,
+     "end": 168.272
+    },
+    {
+     "text": "and",
+     "start": 168.291,
+     "end": 168.429
+    },
+    {
+     "text": "finding",
+     "start": 168.444,
+     "end": 168.719
+    },
+    {
+     "text": "out",
+     "start": 168.75,
+     "end": 168.888
+    },
+    {
+     "text": "the",
+     "start": 168.903,
+     "end": 169.041
+    },
+    {
+     "text": "trip",
+     "start": 169.056,
+     "end": 169.228
+    },
+    {
+     "text": "lasts",
+     "start": 169.247,
+     "end": 169.454
+    },
+    {
+     "text": "three",
+     "start": 169.477,
+     "end": 169.683
+    },
+    {
+     "text": "weeks.",
+     "start": 169.706,
+     "end": 169.947
+    }
+   ]
+  },
+  {
+   "id": "n5",
+   "text": "Me on day nine of the weekend trip.",
+   "start": 170.7038125,
+   "end": 172.3638125,
+   "words": [
+    {
+     "text": "Me",
+     "start": 170.704,
+     "end": 170.864
+    },
+    {
+     "text": "on",
+     "start": 170.864,
+     "end": 171.144
+    },
+    {
+     "text": "day",
+     "start": 171.144,
+     "end": 171.324
+    },
+    {
+     "text": "nine",
+     "start": 171.324,
+     "end": 171.624
+    },
+    {
+     "text": "of",
+     "start": 171.624,
+     "end": 171.804
+    },
+    {
+     "text": "the",
+     "start": 171.804,
+     "end": 171.904
+    },
+    {
+     "text": "weekend",
+     "start": 171.904,
+     "end": 172.044
+    },
+    {
+     "text": "trip.",
+     "start": 172.044,
+     "end": 172.364
+    }
+   ]
+  },
+  {
+   "id": "c4d",
+   "text": "Now your guess. For people in their late fifties and early sixties the typical balance is about one hundred seven thousand dollars.",
+   "start": 172.88764583333332,
+   "end": 178.42964583333332,
+   "words": [
+    {
+     "text": "Now",
+     "start": 172.888,
+     "end": 173.04
+    },
+    {
+     "text": "your",
+     "start": 173.057,
+     "end": 173.247
+    },
+    {
+     "text": "guess.",
+     "start": 173.268,
+     "end": 173.535
+    },
+    {
+     "text": "For",
+     "start": 173.564,
+     "end": 173.717
+    },
+    {
+     "text": "people",
+     "start": 173.733,
+     "end": 174.0
+    },
+    {
+     "text": "in",
+     "start": 174.029,
+     "end": 174.144
+    },
+    {
+     "text": "their",
+     "start": 174.156,
+     "end": 174.384
+    },
+    {
+     "text": "late",
+     "start": 174.41,
+     "end": 174.6
+    },
+    {
+     "text": "fifties",
+     "start": 174.621,
+     "end": 174.926
+    },
+    {
+     "text": "and",
+     "start": 174.959,
+     "end": 175.112
+    },
+    {
+     "text": "early",
+     "start": 175.128,
+     "end": 175.357
+    },
+    {
+     "text": "sixties",
+     "start": 175.382,
+     "end": 175.686
+    },
+    {
+     "text": "the",
+     "start": 175.72,
+     "end": 175.872
+    },
+    {
+     "text": "typical",
+     "start": 175.889,
+     "end": 176.194
+    },
+    {
+     "text": "balance",
+     "start": 176.228,
+     "end": 176.532
+    },
+    {
+     "text": "is",
+     "start": 176.566,
+     "end": 176.68
+    },
+    {
+     "text": "about",
+     "start": 176.693,
+     "end": 176.921
+    },
+    {
+     "text": "one",
+     "start": 176.946,
+     "end": 177.098
+    },
+    {
+     "text": "hundred",
+     "start": 177.115,
+     "end": 177.42
+    },
+    {
+     "text": "seven",
+     "start": 177.453,
+     "end": 177.682
+    },
+    {
+     "text": "thousand",
+     "start": 177.707,
+     "end": 178.05
+    },
+    {
+     "text": "dollars.",
+     "start": 178.088,
+     "end": 178.43
+    }
+   ]
+  },
+  {
+   "id": "c4e",
+   "text": "A common rule says you can take out about four percent a year. That's around three hundred sixty dollars a month.",
+   "start": 179.460625,
+   "end": 183.515625,
+   "words": [
+    {
+     "text": "A",
+     "start": 179.461,
+     "end": 179.525
+    },
+    {
+     "text": "common",
+     "start": 179.533,
+     "end": 179.758
+    },
+    {
+     "text": "rule",
+     "start": 179.783,
+     "end": 179.944
+    },
+    {
+     "text": "says",
+     "start": 179.962,
+     "end": 180.123
+    },
+    {
+     "text": "you",
+     "start": 180.141,
+     "end": 180.27
+    },
+    {
+     "text": "can",
+     "start": 180.284,
+     "end": 180.413
+    },
+    {
+     "text": "take",
+     "start": 180.427,
+     "end": 180.588
+    },
+    {
+     "text": "out",
+     "start": 180.606,
+     "end": 180.735
+    },
+    {
+     "text": "about",
+     "start": 180.749,
+     "end": 180.943
+    },
+    {
+     "text": "four",
+     "start": 180.964,
+     "end": 181.125
+    },
+    {
+     "text": "percent",
+     "start": 181.143,
+     "end": 181.401
+    },
+    {
+     "text": "a",
+     "start": 181.429,
+     "end": 181.494
+    },
+    {
+     "text": "year.",
+     "start": 181.501,
+     "end": 181.694
+    },
+    {
+     "text": "That's",
+     "start": 181.716,
+     "end": 181.941
+    },
+    {
+     "text": "around",
+     "start": 181.966,
+     "end": 182.192
+    },
+    {
+     "text": "three",
+     "start": 182.217,
+     "end": 182.41
+    },
+    {
+     "text": "hundred",
+     "start": 182.432,
+     "end": 182.689
+    },
+    {
+     "text": "sixty",
+     "start": 182.718,
+     "end": 182.911
+    },
+    {
+     "text": "dollars",
+     "start": 182.933,
+     "end": 183.19
+    },
+    {
+     "text": "a",
+     "start": 183.219,
+     "end": 183.283
+    },
+    {
+     "text": "month.",
+     "start": 183.29,
+     "end": 183.516
+    }
+   ]
+  },
+  {
+   "id": "n6",
+   "text": "Retirement plan reality check.",
+   "start": 184.06858333333332,
+   "end": 185.30858333333333,
+   "words": [
+    {
+     "text": "Retirement",
+     "start": 184.069,
+     "end": 184.389
+    },
+    {
+     "text": "plan",
+     "start": 184.389,
+     "end": 184.629
+    },
+    {
+     "text": "reality",
+     "start": 184.629,
+     "end": 185.049
+    },
+    {
+     "text": "check.",
+     "start": 185.049,
+     "end": 185.309
+    }
+   ]
+  },
+  {
+   "id": "c4f",
+   "text": "Three hundred sixty dollars. My dad gets more than that from his vending machine. So who decided I should carry all this? I followed the money.",
+   "start": 185.88270833333334,
+   "end": 192.17170833333333,
+   "words": [
+    {
+     "text": "Three",
+     "start": 185.883,
+     "end": 186.12
+    },
+    {
+     "text": "hundred",
+     "start": 186.146,
+     "end": 186.462
+    },
+    {
+     "text": "sixty",
+     "start": 186.497,
+     "end": 186.734
+    },
+    {
+     "text": "dollars.",
+     "start": 186.761,
+     "end": 187.116
+    },
+    {
+     "text": "My",
+     "start": 187.156,
+     "end": 187.274
+    },
+    {
+     "text": "dad",
+     "start": 187.287,
+     "end": 187.445
+    },
+    {
+     "text": "gets",
+     "start": 187.463,
+     "end": 187.661
+    },
+    {
+     "text": "more",
+     "start": 187.682,
+     "end": 187.88
+    },
+    {
+     "text": "than",
+     "start": 187.902,
+     "end": 188.099
+    },
+    {
+     "text": "that",
+     "start": 188.121,
+     "end": 188.319
+    },
+    {
+     "text": "from",
+     "start": 188.341,
+     "end": 188.538
+    },
+    {
+     "text": "his",
+     "start": 188.56,
+     "end": 188.718
+    },
+    {
+     "text": "vending",
+     "start": 188.736,
+     "end": 189.052
+    },
+    {
+     "text": "machine.",
+     "start": 189.087,
+     "end": 189.442
+    },
+    {
+     "text": "So",
+     "start": 189.482,
+     "end": 189.6
+    },
+    {
+     "text": "who",
+     "start": 189.614,
+     "end": 189.772
+    },
+    {
+     "text": "decided",
+     "start": 189.789,
+     "end": 190.105
+    },
+    {
+     "text": "I",
+     "start": 190.14,
+     "end": 190.219
+    },
+    {
+     "text": "should",
+     "start": 190.228,
+     "end": 190.505
+    },
+    {
+     "text": "carry",
+     "start": 190.535,
+     "end": 190.772
+    },
+    {
+     "text": "all",
+     "start": 190.799,
+     "end": 190.957
+    },
+    {
+     "text": "this?",
+     "start": 190.974,
+     "end": 191.211
+    },
+    {
+     "text": "I",
+     "start": 191.237,
+     "end": 191.316
+    },
+    {
+     "text": "followed",
+     "start": 191.325,
+     "end": 191.681
+    },
+    {
+     "text": "the",
+     "start": 191.72,
+     "end": 191.878
+    },
+    {
+     "text": "money.",
+     "start": 191.896,
+     "end": 192.172
+    }
+   ]
+  },
+  {
+   "id": "c5a",
+   "text": "I draw two boxes on a napkin. My dad's pension and my four oh one k. And I ask one question. Who carries the risk?",
+   "start": 195.0513125,
+   "end": 200.9603125,
+   "words": [
+    {
+     "text": "I",
+     "start": 195.051,
+     "end": 195.144
+    },
+    {
+     "text": "draw",
+     "start": 195.154,
+     "end": 195.387
+    },
+    {
+     "text": "two",
+     "start": 195.413,
+     "end": 195.599
+    },
+    {
+     "text": "boxes",
+     "start": 195.619,
+     "end": 195.898
+    },
+    {
+     "text": "on",
+     "start": 195.929,
+     "end": 196.069
+    },
+    {
+     "text": "a",
+     "start": 196.084,
+     "end": 196.177
+    },
+    {
+     "text": "napkin.",
+     "start": 196.187,
+     "end": 196.559
+    },
+    {
+     "text": "My",
+     "start": 196.601,
+     "end": 196.74
+    },
+    {
+     "text": "dad's",
+     "start": 196.756,
+     "end": 197.034
+    },
+    {
+     "text": "pension",
+     "start": 197.065,
+     "end": 197.437
+    },
+    {
+     "text": "and",
+     "start": 197.479,
+     "end": 197.665
+    },
+    {
+     "text": "my",
+     "start": 197.685,
+     "end": 197.825
+    },
+    {
+     "text": "four",
+     "start": 197.84,
+     "end": 198.073
+    },
+    {
+     "text": "oh",
+     "start": 198.098,
+     "end": 198.238
+    },
+    {
+     "text": "one",
+     "start": 198.253,
+     "end": 198.439
+    },
+    {
+     "text": "k.",
+     "start": 198.46,
+     "end": 198.6
+    },
+    {
+     "text": "And",
+     "start": 198.615,
+     "end": 198.801
+    },
+    {
+     "text": "I",
+     "start": 198.822,
+     "end": 198.915
+    },
+    {
+     "text": "ask",
+     "start": 198.925,
+     "end": 199.111
+    },
+    {
+     "text": "one",
+     "start": 199.132,
+     "end": 199.317
+    },
+    {
+     "text": "question.",
+     "start": 199.338,
+     "end": 199.803
+    },
+    {
+     "text": "Who",
+     "start": 199.855,
+     "end": 200.041
+    },
+    {
+     "text": "carries",
+     "start": 200.061,
+     "end": 200.433
+    },
+    {
+     "text": "the",
+     "start": 200.474,
+     "end": 200.66
+    },
+    {
+     "text": "risk?",
+     "start": 200.681,
+     "end": 200.96
+    }
+   ]
+  },
+  {
+   "id": "c5b",
+   "text": "With a pension if the stock market crashes the company still has to pay. If my dad lives to a hundred the company still pays.",
+   "start": 201.597625,
+   "end": 207.25062499999999,
+   "words": [
+    {
+     "text": "With",
+     "start": 201.598,
+     "end": 201.801
+    },
+    {
+     "text": "a",
+     "start": 201.823,
+     "end": 201.905
+    },
+    {
+     "text": "pension",
+     "start": 201.914,
+     "end": 202.238
+    },
+    {
+     "text": "if",
+     "start": 202.274,
+     "end": 202.396
+    },
+    {
+     "text": "the",
+     "start": 202.409,
+     "end": 202.572
+    },
+    {
+     "text": "stock",
+     "start": 202.59,
+     "end": 202.833
+    },
+    {
+     "text": "market",
+     "start": 202.86,
+     "end": 203.144
+    },
+    {
+     "text": "crashes",
+     "start": 203.176,
+     "end": 203.5
+    },
+    {
+     "text": "the",
+     "start": 203.536,
+     "end": 203.699
+    },
+    {
+     "text": "company",
+     "start": 203.717,
+     "end": 204.041
+    },
+    {
+     "text": "still",
+     "start": 204.077,
+     "end": 204.321
+    },
+    {
+     "text": "has",
+     "start": 204.348,
+     "end": 204.51
+    },
+    {
+     "text": "to",
+     "start": 204.528,
+     "end": 204.65
+    },
+    {
+     "text": "pay.",
+     "start": 204.663,
+     "end": 204.866
+    },
+    {
+     "text": "If",
+     "start": 204.889,
+     "end": 205.011
+    },
+    {
+     "text": "my",
+     "start": 205.024,
+     "end": 205.146
+    },
+    {
+     "text": "dad",
+     "start": 205.159,
+     "end": 205.322
+    },
+    {
+     "text": "lives",
+     "start": 205.34,
+     "end": 205.583
+    },
+    {
+     "text": "to",
+     "start": 205.61,
+     "end": 205.732
+    },
+    {
+     "text": "a",
+     "start": 205.745,
+     "end": 205.826
+    },
+    {
+     "text": "hundred",
+     "start": 205.835,
+     "end": 206.16
+    },
+    {
+     "text": "the",
+     "start": 206.196,
+     "end": 206.358
+    },
+    {
+     "text": "company",
+     "start": 206.376,
+     "end": 206.701
+    },
+    {
+     "text": "still",
+     "start": 206.737,
+     "end": 206.98
+    },
+    {
+     "text": "pays.",
+     "start": 207.008,
+     "end": 207.251
+    }
+   ]
+  },
+  {
+   "id": "c5c",
+   "text": "With my four oh one k a crash hits me. Living to a hundred? My problem. The risk quietly slid off the company and onto me.",
+   "start": 208.1118125,
+   "end": 214.19181250000003,
+   "words": [
+    {
+     "text": "With",
+     "start": 208.112,
+     "end": 208.335
+    },
+    {
+     "text": "my",
+     "start": 208.36,
+     "end": 208.494
+    },
+    {
+     "text": "four",
+     "start": 208.509,
+     "end": 208.732
+    },
+    {
+     "text": "oh",
+     "start": 208.757,
+     "end": 208.891
+    },
+    {
+     "text": "one",
+     "start": 208.905,
+     "end": 209.084
+    },
+    {
+     "text": "k",
+     "start": 209.104,
+     "end": 209.193
+    },
+    {
+     "text": "a",
+     "start": 209.203,
+     "end": 209.292
+    },
+    {
+     "text": "crash",
+     "start": 209.302,
+     "end": 209.57
+    },
+    {
+     "text": "hits",
+     "start": 209.6,
+     "end": 209.823
+    },
+    {
+     "text": "me.",
+     "start": 209.848,
+     "end": 210.026
+    },
+    {
+     "text": "Living",
+     "start": 210.046,
+     "end": 210.359
+    },
+    {
+     "text": "to",
+     "start": 210.393,
+     "end": 210.527
+    },
+    {
+     "text": "a",
+     "start": 210.542,
+     "end": 210.631
+    },
+    {
+     "text": "hundred?",
+     "start": 210.641,
+     "end": 211.043
+    },
+    {
+     "text": "My",
+     "start": 211.088,
+     "end": 211.222
+    },
+    {
+     "text": "problem.",
+     "start": 211.236,
+     "end": 211.638
+    },
+    {
+     "text": "The",
+     "start": 211.683,
+     "end": 211.861
+    },
+    {
+     "text": "risk",
+     "start": 211.881,
+     "end": 212.104
+    },
+    {
+     "text": "quietly",
+     "start": 212.129,
+     "end": 212.486
+    },
+    {
+     "text": "slid",
+     "start": 212.526,
+     "end": 212.749
+    },
+    {
+     "text": "off",
+     "start": 212.774,
+     "end": 212.952
+    },
+    {
+     "text": "the",
+     "start": 212.972,
+     "end": 213.151
+    },
+    {
+     "text": "company",
+     "start": 213.171,
+     "end": 213.528
+    },
+    {
+     "text": "and",
+     "start": 213.567,
+     "end": 213.746
+    },
+    {
+     "text": "onto",
+     "start": 213.766,
+     "end": 213.989
+    },
+    {
+     "text": "me.",
+     "start": 214.014,
+     "end": 214.192
+    }
+   ]
+  },
+  {
+   "id": "n19",
+   "text": "And the numbers show the switch. Seventy percent of private workers can get a four oh one k. Only fourteen percent can get a pension.",
+   "start": 214.84785416666668,
+   "end": 220.7078541666667,
+   "words": [
+    {
+     "text": "And",
+     "start": 214.848,
+     "end": 215.007
+    },
+    {
+     "text": "the",
+     "start": 215.024,
+     "end": 215.183
+    },
+    {
+     "text": "numbers",
+     "start": 215.2,
+     "end": 215.517
+    },
+    {
+     "text": "show",
+     "start": 215.552,
+     "end": 215.751
+    },
+    {
+     "text": "the",
+     "start": 215.773,
+     "end": 215.931
+    },
+    {
+     "text": "switch.",
+     "start": 215.949,
+     "end": 216.266
+    },
+    {
+     "text": "Seventy",
+     "start": 216.301,
+     "end": 216.618
+    },
+    {
+     "text": "percent",
+     "start": 216.653,
+     "end": 216.97
+    },
+    {
+     "text": "of",
+     "start": 217.005,
+     "end": 217.124
+    },
+    {
+     "text": "private",
+     "start": 217.138,
+     "end": 217.455
+    },
+    {
+     "text": "workers",
+     "start": 217.49,
+     "end": 217.807
+    },
+    {
+     "text": "can",
+     "start": 217.842,
+     "end": 218.001
+    },
+    {
+     "text": "get",
+     "start": 218.018,
+     "end": 218.177
+    },
+    {
+     "text": "a",
+     "start": 218.194,
+     "end": 218.274
+    },
+    {
+     "text": "four",
+     "start": 218.282,
+     "end": 218.48
+    },
+    {
+     "text": "oh",
+     "start": 218.502,
+     "end": 218.621
+    },
+    {
+     "text": "one",
+     "start": 218.635,
+     "end": 218.793
+    },
+    {
+     "text": "k.",
+     "start": 218.811,
+     "end": 218.93
+    },
+    {
+     "text": "Only",
+     "start": 218.943,
+     "end": 219.141
+    },
+    {
+     "text": "fourteen",
+     "start": 219.163,
+     "end": 219.52
+    },
+    {
+     "text": "percent",
+     "start": 219.559,
+     "end": 219.876
+    },
+    {
+     "text": "can",
+     "start": 219.911,
+     "end": 220.07
+    },
+    {
+     "text": "get",
+     "start": 220.088,
+     "end": 220.246
+    },
+    {
+     "text": "a",
+     "start": 220.264,
+     "end": 220.343
+    },
+    {
+     "text": "pension.",
+     "start": 220.352,
+     "end": 220.708
+    }
+   ]
+  },
+  {
+   "id": "n7",
+   "text": "The risk changing hands.",
+   "start": 221.4853125,
+   "end": 222.3853125,
+   "words": [
+    {
+     "text": "The",
+     "start": 221.485,
+     "end": 221.565
+    },
+    {
+     "text": "risk",
+     "start": 221.565,
+     "end": 221.705
+    },
+    {
+     "text": "changing",
+     "start": 221.705,
+     "end": 222.085
+    },
+    {
+     "text": "hands.",
+     "start": 222.085,
+     "end": 222.385
+    }
+   ]
+  },
+  {
+   "id": "c5e",
+   "text": "To be fair four oh one ks have real upsides. I own the money and I keep it when I switch jobs and many companies add free money on top.",
+   "start": 223.198875,
+   "end": 229.95387499999998,
+   "words": [
+    {
+     "text": "To",
+     "start": 223.199,
+     "end": 223.334
+    },
+    {
+     "text": "be",
+     "start": 223.349,
+     "end": 223.483
+    },
+    {
+     "text": "fair",
+     "start": 223.498,
+     "end": 223.722
+    },
+    {
+     "text": "four",
+     "start": 223.747,
+     "end": 223.972
+    },
+    {
+     "text": "oh",
+     "start": 223.997,
+     "end": 224.131
+    },
+    {
+     "text": "one",
+     "start": 224.146,
+     "end": 224.326
+    },
+    {
+     "text": "ks",
+     "start": 224.346,
+     "end": 224.48
+    },
+    {
+     "text": "have",
+     "start": 224.495,
+     "end": 224.72
+    },
+    {
+     "text": "real",
+     "start": 224.744,
+     "end": 224.969
+    },
+    {
+     "text": "upsides.",
+     "start": 224.994,
+     "end": 225.398
+    },
+    {
+     "text": "I",
+     "start": 225.442,
+     "end": 225.532
+    },
+    {
+     "text": "own",
+     "start": 225.542,
+     "end": 225.722
+    },
+    {
+     "text": "the",
+     "start": 225.741,
+     "end": 225.921
+    },
+    {
+     "text": "money",
+     "start": 225.941,
+     "end": 226.21
+    },
+    {
+     "text": "and",
+     "start": 226.24,
+     "end": 226.419
+    },
+    {
+     "text": "I",
+     "start": 226.439,
+     "end": 226.529
+    },
+    {
+     "text": "keep",
+     "start": 226.539,
+     "end": 226.763
+    },
+    {
+     "text": "it",
+     "start": 226.788,
+     "end": 226.923
+    },
+    {
+     "text": "when",
+     "start": 226.938,
+     "end": 227.162
+    },
+    {
+     "text": "I",
+     "start": 227.187,
+     "end": 227.277
+    },
+    {
+     "text": "switch",
+     "start": 227.287,
+     "end": 227.601
+    },
+    {
+     "text": "jobs",
+     "start": 227.636,
+     "end": 227.86
+    },
+    {
+     "text": "and",
+     "start": 227.885,
+     "end": 228.065
+    },
+    {
+     "text": "many",
+     "start": 228.085,
+     "end": 228.309
+    },
+    {
+     "text": "companies",
+     "start": 228.334,
+     "end": 228.783
+    },
+    {
+     "text": "add",
+     "start": 228.832,
+     "end": 229.012
+    },
+    {
+     "text": "free",
+     "start": 229.032,
+     "end": 229.256
+    },
+    {
+     "text": "money",
+     "start": 229.281,
+     "end": 229.55
+    },
+    {
+     "text": "on",
+     "start": 229.58,
+     "end": 229.715
+    },
+    {
+     "text": "top.",
+     "start": 229.73,
+     "end": 229.954
+    }
+   ]
+  },
+  {
+   "id": "c5f",
+   "text": "So nobody stole my retirement. The whole job of building it was just handed to me.",
+   "start": 230.50360416666666,
+   "end": 233.72360416666666,
+   "words": [
+    {
+     "text": "So",
+     "start": 230.504,
+     "end": 230.644
+    },
+    {
+     "text": "nobody",
+     "start": 230.644,
+     "end": 230.844
+    },
+    {
+     "text": "stole",
+     "start": 230.844,
+     "end": 231.164
+    },
+    {
+     "text": "my",
+     "start": 231.164,
+     "end": 231.364
+    },
+    {
+     "text": "retirement.",
+     "start": 231.364,
+     "end": 231.744
+    },
+    {
+     "text": "The",
+     "start": 232.044,
+     "end": 232.124
+    },
+    {
+     "text": "whole",
+     "start": 232.124,
+     "end": 232.224
+    },
+    {
+     "text": "job",
+     "start": 232.224,
+     "end": 232.464
+    },
+    {
+     "text": "of",
+     "start": 232.464,
+     "end": 232.564
+    },
+    {
+     "text": "building",
+     "start": 232.564,
+     "end": 232.744
+    },
+    {
+     "text": "it",
+     "start": 232.744,
+     "end": 232.964
+    },
+    {
+     "text": "was",
+     "start": 232.964,
+     "end": 233.064
+    },
+    {
+     "text": "just",
+     "start": 233.064,
+     "end": 233.184
+    },
+    {
+     "text": "handed",
+     "start": 233.184,
+     "end": 233.384
+    },
+    {
+     "text": "to",
+     "start": 233.384,
+     "end": 233.604
+    },
+    {
+     "text": "me.",
+     "start": 233.604,
+     "end": 233.724
+    }
+   ]
+  },
+  {
+   "id": "c5g",
+   "text": "And somebody else sat down next to my lunchbox. A raccoon. He charges a tiny fee every single year and I never even looked at him.",
+   "start": 234.3278125,
+   "end": 241.0478125,
+   "words": [
+    {
+     "text": "And",
+     "start": 234.328,
+     "end": 234.548
+    },
+    {
+     "text": "somebody",
+     "start": 234.548,
+     "end": 234.888
+    },
+    {
+     "text": "else",
+     "start": 234.888,
+     "end": 235.148
+    },
+    {
+     "text": "sat",
+     "start": 235.148,
+     "end": 235.368
+    },
+    {
+     "text": "down",
+     "start": 235.368,
+     "end": 235.588
+    },
+    {
+     "text": "next",
+     "start": 235.588,
+     "end": 235.748
+    },
+    {
+     "text": "to",
+     "start": 235.748,
+     "end": 235.908
+    },
+    {
+     "text": "my",
+     "start": 235.908,
+     "end": 236.008
+    },
+    {
+     "text": "lunchbox.",
+     "start": 236.008,
+     "end": 236.388
+    },
+    {
+     "text": "A",
+     "start": 236.828,
+     "end": 236.988
+    },
+    {
+     "text": "raccoon.",
+     "start": 236.988,
+     "end": 237.328
+    },
+    {
+     "text": "He",
+     "start": 237.968,
+     "end": 238.048
+    },
+    {
+     "text": "charges",
+     "start": 238.048,
+     "end": 238.228
+    },
+    {
+     "text": "a",
+     "start": 238.228,
+     "end": 238.468
+    },
+    {
+     "text": "tiny",
+     "start": 238.468,
+     "end": 238.628
+    },
+    {
+     "text": "fee",
+     "start": 238.628,
+     "end": 238.948
+    },
+    {
+     "text": "every",
+     "start": 238.948,
+     "end": 239.288
+    },
+    {
+     "text": "single",
+     "start": 239.288,
+     "end": 239.528
+    },
+    {
+     "text": "year",
+     "start": 239.528,
+     "end": 239.868
+    },
+    {
+     "text": "and",
+     "start": 239.868,
+     "end": 240.108
+    },
+    {
+     "text": "I",
+     "start": 240.108,
+     "end": 240.188
+    },
+    {
+     "text": "never",
+     "start": 240.188,
+     "end": 240.368
+    },
+    {
+     "text": "even",
+     "start": 240.368,
+     "end": 240.548
+    },
+    {
+     "text": "looked",
+     "start": 240.548,
+     "end": 240.748
+    },
+    {
+     "text": "at",
+     "start": 240.748,
+     "end": 240.908
+    },
+    {
+     "text": "him.",
+     "start": 240.908,
+     "end": 241.048
+    }
+   ]
+  },
+  {
+   "id": "n20",
+   "text": "The raccoon managing my retirement.",
+   "start": 241.6634375,
+   "end": 243.0234375,
+   "words": [
+    {
+     "text": "The",
+     "start": 241.663,
+     "end": 241.723
+    },
+    {
+     "text": "raccoon",
+     "start": 241.723,
+     "end": 242.003
+    },
+    {
+     "text": "managing",
+     "start": 242.003,
+     "end": 242.383
+    },
+    {
+     "text": "my",
+     "start": 242.383,
+     "end": 242.603
+    },
+    {
+     "text": "retirement.",
+     "start": 242.603,
+     "end": 243.023
+    }
+   ]
+  },
+  {
+   "id": "c6a",
+   "text": "So I build a backup plan. Social Security. And I thought it would run out completely before I get old. Nope.",
+   "start": 243.64339583333333,
+   "end": 249.62339583333332,
+   "words": [
+    {
+     "text": "So",
+     "start": 243.643,
+     "end": 244.003
+    },
+    {
+     "text": "I",
+     "start": 244.423,
+     "end": 244.563
+    },
+    {
+     "text": "build",
+     "start": 244.563,
+     "end": 244.823
+    },
+    {
+     "text": "a",
+     "start": 244.823,
+     "end": 245.003
+    },
+    {
+     "text": "backup",
+     "start": 245.003,
+     "end": 245.163
+    },
+    {
+     "text": "plan.",
+     "start": 245.163,
+     "end": 245.503
+    },
+    {
+     "text": "Social",
+     "start": 245.823,
+     "end": 246.043
+    },
+    {
+     "text": "Security.",
+     "start": 246.043,
+     "end": 246.523
+    },
+    {
+     "text": "And",
+     "start": 246.903,
+     "end": 247.203
+    },
+    {
+     "text": "I",
+     "start": 247.203,
+     "end": 247.383
+    },
+    {
+     "text": "thought",
+     "start": 247.383,
+     "end": 247.563
+    },
+    {
+     "text": "it",
+     "start": 247.563,
+     "end": 247.663
+    },
+    {
+     "text": "would",
+     "start": 247.663,
+     "end": 247.723
+    },
+    {
+     "text": "run",
+     "start": 247.723,
+     "end": 247.843
+    },
+    {
+     "text": "out",
+     "start": 247.843,
+     "end": 247.983
+    },
+    {
+     "text": "completely",
+     "start": 247.983,
+     "end": 248.243
+    },
+    {
+     "text": "before",
+     "start": 248.243,
+     "end": 248.643
+    },
+    {
+     "text": "I",
+     "start": 248.643,
+     "end": 248.743
+    },
+    {
+     "text": "get",
+     "start": 248.743,
+     "end": 248.823
+    },
+    {
+     "text": "old.",
+     "start": 248.823,
+     "end": 249.003
+    },
+    {
+     "text": "Nope.",
+     "start": 249.403,
+     "end": 249.623
+    }
+   ]
+  },
+  {
+   "id": "c6b",
+   "text": "It's mostly paid by the taxes of people working today and that money keeps coming in.",
+   "start": 250.1885625,
+   "end": 253.6285625,
+   "words": [
+    {
+     "text": "It's",
+     "start": 250.189,
+     "end": 250.309
+    },
+    {
+     "text": "mostly",
+     "start": 250.309,
+     "end": 250.489
+    },
+    {
+     "text": "paid",
+     "start": 250.489,
+     "end": 250.849
+    },
+    {
+     "text": "by",
+     "start": 250.849,
+     "end": 251.009
+    },
+    {
+     "text": "the",
+     "start": 251.009,
+     "end": 251.109
+    },
+    {
+     "text": "taxes",
+     "start": 251.109,
+     "end": 251.329
+    },
+    {
+     "text": "of",
+     "start": 251.329,
+     "end": 251.569
+    },
+    {
+     "text": "people",
+     "start": 251.569,
+     "end": 251.729
+    },
+    {
+     "text": "working",
+     "start": 251.729,
+     "end": 252.049
+    },
+    {
+     "text": "today",
+     "start": 252.049,
+     "end": 252.349
+    },
+    {
+     "text": "and",
+     "start": 252.349,
+     "end": 252.609
+    },
+    {
+     "text": "that",
+     "start": 252.609,
+     "end": 252.729
+    },
+    {
+     "text": "money",
+     "start": 252.729,
+     "end": 252.909
+    },
+    {
+     "text": "keeps",
+     "start": 252.909,
+     "end": 253.129
+    },
+    {
+     "text": "coming",
+     "start": 253.129,
+     "end": 253.429
+    },
+    {
+     "text": "in.",
+     "start": 253.429,
+     "end": 253.629
+    }
+   ]
+  },
+  {
+   "id": "c6c",
+   "text": "But there's also a savings jar for the checks and that jar is projected to run empty around twenty thirty two.",
+   "start": 254.23389583333332,
+   "end": 259.6338958333333,
+   "words": [
+    {
+     "text": "But",
+     "start": 254.234,
+     "end": 254.414
+    },
+    {
+     "text": "there's",
+     "start": 254.414,
+     "end": 254.754
+    },
+    {
+     "text": "also",
+     "start": 254.754,
+     "end": 255.074
+    },
+    {
+     "text": "a",
+     "start": 255.074,
+     "end": 255.194
+    },
+    {
+     "text": "savings",
+     "start": 255.194,
+     "end": 255.434
+    },
+    {
+     "text": "jar",
+     "start": 255.434,
+     "end": 255.734
+    },
+    {
+     "text": "for",
+     "start": 255.734,
+     "end": 255.934
+    },
+    {
+     "text": "the",
+     "start": 255.934,
+     "end": 256.014
+    },
+    {
+     "text": "checks",
+     "start": 256.014,
+     "end": 256.234
+    },
+    {
+     "text": "and",
+     "start": 256.234,
+     "end": 256.574
+    },
+    {
+     "text": "that",
+     "start": 256.574,
+     "end": 256.714
+    },
+    {
+     "text": "jar",
+     "start": 256.714,
+     "end": 256.994
+    },
+    {
+     "text": "is",
+     "start": 256.994,
+     "end": 257.094
+    },
+    {
+     "text": "projected",
+     "start": 257.094,
+     "end": 257.434
+    },
+    {
+     "text": "to",
+     "start": 257.434,
+     "end": 257.734
+    },
+    {
+     "text": "run",
+     "start": 257.734,
+     "end": 257.854
+    },
+    {
+     "text": "empty",
+     "start": 257.854,
+     "end": 258.174
+    },
+    {
+     "text": "around",
+     "start": 258.174,
+     "end": 258.514
+    },
+    {
+     "text": "twenty",
+     "start": 258.514,
+     "end": 259.214
+    },
+    {
+     "text": "thirty",
+     "start": 259.214,
+     "end": 259.334
+    },
+    {
+     "text": "two.",
+     "start": 259.574,
+     "end": 259.634
+    }
+   ]
+  },
+  {
+   "id": "c6d",
+   "text": "If Congress does nothing the checks don't stop. They shrink. About one fifth smaller for everyone.",
+   "start": 260.0177708333333,
+   "end": 264.5977708333333,
+   "words": [
+    {
+     "text": "If",
+     "start": 260.018,
+     "end": 260.138
+    },
+    {
+     "text": "Congress",
+     "start": 260.138,
+     "end": 260.318
+    },
+    {
+     "text": "does",
+     "start": 260.318,
+     "end": 260.598
+    },
+    {
+     "text": "nothing",
+     "start": 260.598,
+     "end": 260.958
+    },
+    {
+     "text": "the",
+     "start": 261.258,
+     "end": 261.278
+    },
+    {
+     "text": "checks",
+     "start": 261.278,
+     "end": 261.398
+    },
+    {
+     "text": "don't",
+     "start": 261.398,
+     "end": 261.758
+    },
+    {
+     "text": "stop.",
+     "start": 261.758,
+     "end": 261.978
+    },
+    {
+     "text": "They",
+     "start": 262.318,
+     "end": 262.398
+    },
+    {
+     "text": "shrink.",
+     "start": 262.398,
+     "end": 262.558
+    },
+    {
+     "text": "About",
+     "start": 263.138,
+     "end": 263.278
+    },
+    {
+     "text": "one",
+     "start": 263.278,
+     "end": 263.498
+    },
+    {
+     "text": "fifth",
+     "start": 263.498,
+     "end": 263.678
+    },
+    {
+     "text": "smaller",
+     "start": 263.678,
+     "end": 263.978
+    },
+    {
+     "text": "for",
+     "start": 263.978,
+     "end": 264.238
+    },
+    {
+     "text": "everyone.",
+     "start": 264.238,
+     "end": 264.598
+    }
+   ]
+  },
+  {
+   "id": "n8",
+   "text": "Congress looking at the jar.",
+   "start": 265.2999791666667,
+   "end": 266.37997916666666,
+   "words": [
+    {
+     "text": "Congress",
+     "start": 265.3,
+     "end": 265.58
+    },
+    {
+     "text": "looking",
+     "start": 265.58,
+     "end": 265.88
+    },
+    {
+     "text": "at",
+     "start": 265.88,
+     "end": 266.1
+    },
+    {
+     "text": "the",
+     "start": 266.1,
+     "end": 266.22
+    },
+    {
+     "text": "jar.",
+     "start": 266.22,
+     "end": 266.38
+    }
+   ]
+  },
+  {
+   "id": "c6f",
+   "text": "Because when my dad started there were five workers paying in for every retiree. Today there are fewer than three. Fewer people carrying the same picnic basket.",
+   "start": 267.037625,
+   "end": 273.357625,
+   "words": [
+    {
+     "text": "Because",
+     "start": 267.038,
+     "end": 267.238
+    },
+    {
+     "text": "when",
+     "start": 267.238,
+     "end": 267.558
+    },
+    {
+     "text": "my",
+     "start": 267.558,
+     "end": 267.658
+    },
+    {
+     "text": "dad",
+     "start": 267.658,
+     "end": 267.798
+    },
+    {
+     "text": "started",
+     "start": 267.798,
+     "end": 268.198
+    },
+    {
+     "text": "there",
+     "start": 268.478,
+     "end": 268.498
+    },
+    {
+     "text": "were",
+     "start": 268.498,
+     "end": 268.598
+    },
+    {
+     "text": "five",
+     "start": 268.598,
+     "end": 268.798
+    },
+    {
+     "text": "workers",
+     "start": 268.798,
+     "end": 269.038
+    },
+    {
+     "text": "paying",
+     "start": 269.038,
+     "end": 269.298
+    },
+    {
+     "text": "in",
+     "start": 269.298,
+     "end": 269.458
+    },
+    {
+     "text": "for",
+     "start": 269.458,
+     "end": 269.598
+    },
+    {
+     "text": "every",
+     "start": 269.598,
+     "end": 269.778
+    },
+    {
+     "text": "retiree.",
+     "start": 269.778,
+     "end": 270.378
+    },
+    {
+     "text": "Today",
+     "start": 270.678,
+     "end": 270.778
+    },
+    {
+     "text": "there",
+     "start": 270.778,
+     "end": 270.978
+    },
+    {
+     "text": "are",
+     "start": 270.978,
+     "end": 271.078
+    },
+    {
+     "text": "fewer",
+     "start": 271.078,
+     "end": 271.218
+    },
+    {
+     "text": "than",
+     "start": 271.218,
+     "end": 271.438
+    },
+    {
+     "text": "three.",
+     "start": 271.438,
+     "end": 271.658
+    },
+    {
+     "text": "Fewer",
+     "start": 271.658,
+     "end": 271.938
+    },
+    {
+     "text": "people",
+     "start": 271.938,
+     "end": 272.238
+    },
+    {
+     "text": "carrying",
+     "start": 272.238,
+     "end": 272.518
+    },
+    {
+     "text": "the",
+     "start": 272.518,
+     "end": 272.738
+    },
+    {
+     "text": "same",
+     "start": 272.738,
+     "end": 272.878
+    },
+    {
+     "text": "picnic",
+     "start": 272.878,
+     "end": 273.098
+    },
+    {
+     "text": "basket.",
+     "start": 273.098,
+     "end": 273.358
+    }
+   ]
+  },
+  {
+   "id": "c6g",
+   "text": "Raise taxes or trim checks or raise the age again? That's a political question. Now you know how it works.",
+   "start": 274.0937916666667,
+   "end": 279.5137916666667,
+   "words": [
+    {
+     "text": "Raise",
+     "start": 274.094,
+     "end": 274.214
+    },
+    {
+     "text": "taxes",
+     "start": 274.214,
+     "end": 274.514
+    },
+    {
+     "text": "or",
+     "start": 274.514,
+     "end": 274.854
+    },
+    {
+     "text": "trim",
+     "start": 274.854,
+     "end": 275.034
+    },
+    {
+     "text": "checks",
+     "start": 275.034,
+     "end": 275.334
+    },
+    {
+     "text": "or",
+     "start": 275.334,
+     "end": 275.594
+    },
+    {
+     "text": "raise",
+     "start": 275.594,
+     "end": 275.774
+    },
+    {
+     "text": "the",
+     "start": 275.774,
+     "end": 275.914
+    },
+    {
+     "text": "age",
+     "start": 275.914,
+     "end": 276.114
+    },
+    {
+     "text": "again?",
+     "start": 276.114,
+     "end": 276.294
+    },
+    {
+     "text": "That's",
+     "start": 276.874,
+     "end": 277.154
+    },
+    {
+     "text": "a",
+     "start": 277.154,
+     "end": 277.294
+    },
+    {
+     "text": "political",
+     "start": 277.294,
+     "end": 277.434
+    },
+    {
+     "text": "question.",
+     "start": 277.434,
+     "end": 277.894
+    },
+    {
+     "text": "Now",
+     "start": 278.714,
+     "end": 278.774
+    },
+    {
+     "text": "you",
+     "start": 278.774,
+     "end": 278.954
+    },
+    {
+     "text": "know",
+     "start": 278.954,
+     "end": 279.094
+    },
+    {
+     "text": "how",
+     "start": 279.094,
+     "end": 279.254
+    },
+    {
+     "text": "it",
+     "start": 279.254,
+     "end": 279.374
+    },
+    {
+     "text": "works.",
+     "start": 279.374,
+     "end": 279.514
+    }
+   ]
+  },
+  {
+   "id": "n21",
+   "text": "Politicians discussing Social Security.",
+   "start": 280.28764583333333,
+   "end": 281.9876458333333,
+   "words": [
+    {
+     "text": "Politicians",
+     "start": 280.288,
+     "end": 280.788
+    },
+    {
+     "text": "discussing",
+     "start": 280.788,
+     "end": 281.088
+    },
+    {
+     "text": "Social",
+     "start": 281.088,
+     "end": 281.648
+    },
+    {
+     "text": "Security.",
+     "start": 281.648,
+     "end": 281.988
+    }
+   ]
+  },
+  {
+   "id": "c6h",
+   "text": "So I settle on my final plan. Fine. I'll just work until seventy. What could go wrong?",
+   "start": 282.83077083333336,
+   "end": 286.73077083333334,
+   "words": [
+    {
+     "text": "So",
+     "start": 282.831,
+     "end": 282.991
+    },
+    {
+     "text": "I",
+     "start": 282.991,
+     "end": 283.251
+    },
+    {
+     "text": "settle",
+     "start": 283.251,
+     "end": 283.411
+    },
+    {
+     "text": "on",
+     "start": 283.411,
+     "end": 283.571
+    },
+    {
+     "text": "my",
+     "start": 283.571,
+     "end": 283.671
+    },
+    {
+     "text": "final",
+     "start": 283.671,
+     "end": 283.891
+    },
+    {
+     "text": "plan.",
+     "start": 283.891,
+     "end": 284.151
+    },
+    {
+     "text": "Fine.",
+     "start": 284.451,
+     "end": 284.731
+    },
+    {
+     "text": "I'll",
+     "start": 285.011,
+     "end": 285.111
+    },
+    {
+     "text": "just",
+     "start": 285.111,
+     "end": 285.211
+    },
+    {
+     "text": "work",
+     "start": 285.211,
+     "end": 285.371
+    },
+    {
+     "text": "until",
+     "start": 285.371,
+     "end": 285.531
+    },
+    {
+     "text": "seventy.",
+     "start": 285.531,
+     "end": 285.891
+    },
+    {
+     "text": "What",
+     "start": 286.171,
+     "end": 286.271
+    },
+    {
+     "text": "could",
+     "start": 286.271,
+     "end": 286.411
+    },
+    {
+     "text": "go",
+     "start": 286.411,
+     "end": 286.511
+    },
+    {
+     "text": "wrong?",
+     "start": 286.511,
+     "end": 286.731
+    }
+   ]
+  },
+  {
+   "id": "c7a",
+   "text": "I tell my neighbor Bob about my plan. Bob is sixty. Bob goes very quiet.",
+   "start": 289.6019375,
+   "end": 293.5019375,
+   "words": [
+    {
+     "text": "I",
+     "start": 289.602,
+     "end": 289.682
+    },
+    {
+     "text": "tell",
+     "start": 289.682,
+     "end": 289.842
+    },
+    {
+     "text": "my",
+     "start": 289.842,
+     "end": 289.982
+    },
+    {
+     "text": "neighbor",
+     "start": 289.982,
+     "end": 290.202
+    },
+    {
+     "text": "Bob",
+     "start": 290.202,
+     "end": 290.422
+    },
+    {
+     "text": "about",
+     "start": 290.422,
+     "end": 290.742
+    },
+    {
+     "text": "my",
+     "start": 290.742,
+     "end": 290.902
+    },
+    {
+     "text": "plan.",
+     "start": 290.902,
+     "end": 291.162
+    },
+    {
+     "text": "Bob",
+     "start": 291.562,
+     "end": 291.822
+    },
+    {
+     "text": "is",
+     "start": 291.822,
+     "end": 291.982
+    },
+    {
+     "text": "sixty.",
+     "start": 291.982,
+     "end": 292.222
+    },
+    {
+     "text": "Bob",
+     "start": 292.622,
+     "end": 292.762
+    },
+    {
+     "text": "goes",
+     "start": 292.762,
+     "end": 292.982
+    },
+    {
+     "text": "very",
+     "start": 292.982,
+     "end": 293.222
+    },
+    {
+     "text": "quiet.",
+     "start": 293.222,
+     "end": 293.502
+    }
+   ]
+  },
+  {
+   "id": "c7b",
+   "text": "Because a big survey found that workers expect to retire at sixty five. But retirees say they actually stopped at sixty two.",
+   "start": 294.2287083333333,
+   "end": 299.7867083333333,
+   "words": [
+    {
+     "text": "Because",
+     "start": 294.229,
+     "end": 294.55
+    },
+    {
+     "text": "a",
+     "start": 294.586,
+     "end": 294.666
+    },
+    {
+     "text": "big",
+     "start": 294.675,
+     "end": 294.836
+    },
+    {
+     "text": "survey",
+     "start": 294.854,
+     "end": 295.135
+    },
+    {
+     "text": "found",
+     "start": 295.166,
+     "end": 295.407
+    },
+    {
+     "text": "that",
+     "start": 295.434,
+     "end": 295.635
+    },
+    {
+     "text": "workers",
+     "start": 295.657,
+     "end": 295.979
+    },
+    {
+     "text": "expect",
+     "start": 296.015,
+     "end": 296.296
+    },
+    {
+     "text": "to",
+     "start": 296.327,
+     "end": 296.448
+    },
+    {
+     "text": "retire",
+     "start": 296.461,
+     "end": 296.742
+    },
+    {
+     "text": "at",
+     "start": 296.773,
+     "end": 296.894
+    },
+    {
+     "text": "sixty",
+     "start": 296.907,
+     "end": 297.148
+    },
+    {
+     "text": "five.",
+     "start": 297.175,
+     "end": 297.416
+    },
+    {
+     "text": "But",
+     "start": 297.443,
+     "end": 297.604
+    },
+    {
+     "text": "retirees",
+     "start": 297.622,
+     "end": 297.983
+    },
+    {
+     "text": "say",
+     "start": 298.023,
+     "end": 298.184
+    },
+    {
+     "text": "they",
+     "start": 298.202,
+     "end": 298.403
+    },
+    {
+     "text": "actually",
+     "start": 298.425,
+     "end": 298.787
+    },
+    {
+     "text": "stopped",
+     "start": 298.827,
+     "end": 299.148
+    },
+    {
+     "text": "at",
+     "start": 299.184,
+     "end": 299.305
+    },
+    {
+     "text": "sixty",
+     "start": 299.318,
+     "end": 299.559
+    },
+    {
+     "text": "two.",
+     "start": 299.586,
+     "end": 299.787
+    }
+   ]
+  },
+  {
+   "id": "n22",
+   "text": "So that's three whole years earlier than they planned. Three years of lunches nobody packed for.",
+   "start": 300.60954166666664,
+   "end": 304.98654166666665,
+   "words": [
+    {
+     "text": "So",
+     "start": 300.61,
+     "end": 300.732
+    },
+    {
+     "text": "that's",
+     "start": 300.746,
+     "end": 301.032
+    },
+    {
+     "text": "three",
+     "start": 301.064,
+     "end": 301.309
+    },
+    {
+     "text": "whole",
+     "start": 301.336,
+     "end": 301.581
+    },
+    {
+     "text": "years",
+     "start": 301.608,
+     "end": 301.853
+    },
+    {
+     "text": "earlier",
+     "start": 301.88,
+     "end": 302.207
+    },
+    {
+     "text": "than",
+     "start": 302.243,
+     "end": 302.447
+    },
+    {
+     "text": "they",
+     "start": 302.47,
+     "end": 302.674
+    },
+    {
+     "text": "planned.",
+     "start": 302.697,
+     "end": 303.064
+    },
+    {
+     "text": "Three",
+     "start": 303.105,
+     "end": 303.35
+    },
+    {
+     "text": "years",
+     "start": 303.377,
+     "end": 303.622
+    },
+    {
+     "text": "of",
+     "start": 303.649,
+     "end": 303.772
+    },
+    {
+     "text": "lunches",
+     "start": 303.785,
+     "end": 304.112
+    },
+    {
+     "text": "nobody",
+     "start": 304.148,
+     "end": 304.434
+    },
+    {
+     "text": "packed",
+     "start": 304.466,
+     "end": 304.751
+    },
+    {
+     "text": "for.",
+     "start": 304.783,
+     "end": 304.987
+    }
+   ]
+  },
+  {
+   "id": "c7c",
+   "text": "Almost four in ten workers plan to work until seventy or never stop. Only one in ten retirees actually did.",
+   "start": 305.71908333333334,
+   "end": 311.13908333333336,
+   "words": [
+    {
+     "text": "Almost",
+     "start": 305.719,
+     "end": 305.959
+    },
+    {
+     "text": "four",
+     "start": 305.959,
+     "end": 306.239
+    },
+    {
+     "text": "in",
+     "start": 306.239,
+     "end": 306.399
+    },
+    {
+     "text": "ten",
+     "start": 306.399,
+     "end": 306.559
+    },
+    {
+     "text": "workers",
+     "start": 306.559,
+     "end": 306.799
+    },
+    {
+     "text": "plan",
+     "start": 306.799,
+     "end": 307.139
+    },
+    {
+     "text": "to",
+     "start": 307.139,
+     "end": 307.319
+    },
+    {
+     "text": "work",
+     "start": 307.319,
+     "end": 307.459
+    },
+    {
+     "text": "until",
+     "start": 307.459,
+     "end": 307.619
+    },
+    {
+     "text": "seventy",
+     "start": 307.619,
+     "end": 307.979
+    },
+    {
+     "text": "or",
+     "start": 307.979,
+     "end": 308.359
+    },
+    {
+     "text": "never",
+     "start": 308.359,
+     "end": 308.519
+    },
+    {
+     "text": "stop.",
+     "start": 308.519,
+     "end": 308.799
+    },
+    {
+     "text": "Only",
+     "start": 309.599,
+     "end": 309.599
+    },
+    {
+     "text": "one",
+     "start": 309.599,
+     "end": 309.779
+    },
+    {
+     "text": "in",
+     "start": 309.779,
+     "end": 309.879
+    },
+    {
+     "text": "ten",
+     "start": 309.879,
+     "end": 310.059
+    },
+    {
+     "text": "retirees",
+     "start": 310.059,
+     "end": 310.339
+    },
+    {
+     "text": "actually",
+     "start": 310.339,
+     "end": 310.859
+    },
+    {
+     "text": "did.",
+     "start": 310.859,
+     "end": 311.139
+    }
+   ]
+  },
+  {
+   "id": "c7d",
+   "text": "And almost half of retirees left work earlier than they planned. Many because of a health problem. Others because their company changed things.",
+   "start": 311.7846875,
+   "end": 317.7846875,
+   "words": [
+    {
+     "text": "And",
+     "start": 311.785,
+     "end": 311.865
+    },
+    {
+     "text": "almost",
+     "start": 311.865,
+     "end": 311.985
+    },
+    {
+     "text": "half",
+     "start": 311.985,
+     "end": 312.245
+    },
+    {
+     "text": "of",
+     "start": 312.245,
+     "end": 312.765
+    },
+    {
+     "text": "retirees",
+     "start": 312.765,
+     "end": 312.765
+    },
+    {
+     "text": "left",
+     "start": 312.765,
+     "end": 313.005
+    },
+    {
+     "text": "work",
+     "start": 313.005,
+     "end": 313.205
+    },
+    {
+     "text": "earlier",
+     "start": 313.205,
+     "end": 313.445
+    },
+    {
+     "text": "than",
+     "start": 313.445,
+     "end": 313.765
+    },
+    {
+     "text": "they",
+     "start": 313.765,
+     "end": 313.885
+    },
+    {
+     "text": "planned.",
+     "start": 313.885,
+     "end": 314.125
+    },
+    {
+     "text": "Many",
+     "start": 314.765,
+     "end": 314.825
+    },
+    {
+     "text": "because",
+     "start": 314.825,
+     "end": 315.045
+    },
+    {
+     "text": "of",
+     "start": 315.045,
+     "end": 315.225
+    },
+    {
+     "text": "a",
+     "start": 315.225,
+     "end": 315.305
+    },
+    {
+     "text": "health",
+     "start": 315.305,
+     "end": 315.405
+    },
+    {
+     "text": "problem.",
+     "start": 315.405,
+     "end": 315.825
+    },
+    {
+     "text": "Others",
+     "start": 316.165,
+     "end": 316.425
+    },
+    {
+     "text": "because",
+     "start": 316.425,
+     "end": 316.665
+    },
+    {
+     "text": "their",
+     "start": 316.665,
+     "end": 316.865
+    },
+    {
+     "text": "company",
+     "start": 316.865,
+     "end": 317.125
+    },
+    {
+     "text": "changed",
+     "start": 317.125,
+     "end": 317.425
+    },
+    {
+     "text": "things.",
+     "start": 317.425,
+     "end": 317.785
+    }
+   ]
+  },
+  {
+   "id": "n9",
+   "text": "My plan versus my body.",
+   "start": 318.5747083333333,
+   "end": 319.8947083333333,
+   "words": [
+    {
+     "text": "My",
+     "start": 318.575,
+     "end": 318.675
+    },
+    {
+     "text": "plan",
+     "start": 318.675,
+     "end": 319.015
+    },
+    {
+     "text": "versus",
+     "start": 319.015,
+     "end": 319.435
+    },
+    {
+     "text": "my",
+     "start": 319.435,
+     "end": 319.655
+    },
+    {
+     "text": "body.",
+     "start": 319.655,
+     "end": 319.895
+    }
+   ]
+  },
+  {
+   "id": "c7e",
+   "text": "My plan was to outrun the problem. But your body and your boss get a vote too. Working until seventy isn't a plan. It's a hope.",
+   "start": 320.5231875,
+   "end": 326.7831875,
+   "words": [
+    {
+     "text": "My",
+     "start": 320.523,
+     "end": 320.623
+    },
+    {
+     "text": "plan",
+     "start": 320.623,
+     "end": 320.943
+    },
+    {
+     "text": "was",
+     "start": 320.943,
+     "end": 321.103
+    },
+    {
+     "text": "to",
+     "start": 321.103,
+     "end": 321.223
+    },
+    {
+     "text": "outrun",
+     "start": 321.223,
+     "end": 321.523
+    },
+    {
+     "text": "the",
+     "start": 321.523,
+     "end": 321.643
+    },
+    {
+     "text": "problem.",
+     "start": 321.643,
+     "end": 321.943
+    },
+    {
+     "text": "But",
+     "start": 322.503,
+     "end": 322.583
+    },
+    {
+     "text": "your",
+     "start": 322.583,
+     "end": 322.683
+    },
+    {
+     "text": "body",
+     "start": 322.683,
+     "end": 323.003
+    },
+    {
+     "text": "and",
+     "start": 323.003,
+     "end": 323.183
+    },
+    {
+     "text": "your",
+     "start": 323.183,
+     "end": 323.323
+    },
+    {
+     "text": "boss",
+     "start": 323.323,
+     "end": 323.523
+    },
+    {
+     "text": "get",
+     "start": 323.523,
+     "end": 323.723
+    },
+    {
+     "text": "a",
+     "start": 323.723,
+     "end": 323.783
+    },
+    {
+     "text": "vote",
+     "start": 323.783,
+     "end": 323.963
+    },
+    {
+     "text": "too.",
+     "start": 323.963,
+     "end": 324.163
+    },
+    {
+     "text": "Working",
+     "start": 324.643,
+     "end": 324.783
+    },
+    {
+     "text": "until",
+     "start": 324.783,
+     "end": 325.083
+    },
+    {
+     "text": "seventy",
+     "start": 325.083,
+     "end": 325.403
+    },
+    {
+     "text": "isn't",
+     "start": 325.403,
+     "end": 325.883
+    },
+    {
+     "text": "a",
+     "start": 325.883,
+     "end": 325.923
+    },
+    {
+     "text": "plan.",
+     "start": 325.923,
+     "end": 326.143
+    },
+    {
+     "text": "It's",
+     "start": 326.503,
+     "end": 326.603
+    },
+    {
+     "text": "a",
+     "start": 326.603,
+     "end": 326.663
+    },
+    {
+     "text": "hope.",
+     "start": 326.663,
+     "end": 326.783
+    }
+   ]
+  },
+  {
+   "id": "n10",
+   "text": "And honestly that one hit me. Does any of this even matter if I'm too tired to enjoy it? Yeah whatever. Let's fix it.",
+   "start": 327.60154166666666,
+   "end": 333.00154166666664,
+   "words": [
+    {
+     "text": "And",
+     "start": 327.602,
+     "end": 327.702
+    },
+    {
+     "text": "honestly",
+     "start": 327.702,
+     "end": 327.942
+    },
+    {
+     "text": "that",
+     "start": 327.942,
+     "end": 328.222
+    },
+    {
+     "text": "one",
+     "start": 328.222,
+     "end": 328.342
+    },
+    {
+     "text": "hit",
+     "start": 328.342,
+     "end": 328.522
+    },
+    {
+     "text": "me.",
+     "start": 328.522,
+     "end": 328.682
+    },
+    {
+     "text": "Does",
+     "start": 329.282,
+     "end": 329.282
+    },
+    {
+     "text": "any",
+     "start": 329.282,
+     "end": 329.462
+    },
+    {
+     "text": "of",
+     "start": 329.462,
+     "end": 329.602
+    },
+    {
+     "text": "this",
+     "start": 329.602,
+     "end": 329.722
+    },
+    {
+     "text": "even",
+     "start": 329.722,
+     "end": 329.902
+    },
+    {
+     "text": "matter",
+     "start": 329.902,
+     "end": 330.142
+    },
+    {
+     "text": "if",
+     "start": 330.142,
+     "end": 330.402
+    },
+    {
+     "text": "I'm",
+     "start": 330.402,
+     "end": 330.502
+    },
+    {
+     "text": "too",
+     "start": 330.502,
+     "end": 330.622
+    },
+    {
+     "text": "tired",
+     "start": 330.622,
+     "end": 330.842
+    },
+    {
+     "text": "to",
+     "start": 330.842,
+     "end": 331.022
+    },
+    {
+     "text": "enjoy",
+     "start": 331.022,
+     "end": 331.182
+    },
+    {
+     "text": "it?",
+     "start": 331.182,
+     "end": 331.502
+    },
+    {
+     "text": "Yeah",
+     "start": 331.802,
+     "end": 331.882
+    },
+    {
+     "text": "whatever.",
+     "start": 331.962,
+     "end": 332.042
+    },
+    {
+     "text": "Let's",
+     "start": 332.482,
+     "end": 332.642
+    },
+    {
+     "text": "fix",
+     "start": 332.642,
+     "end": 332.802
+    },
+    {
+     "text": "it.",
+     "start": 332.802,
+     "end": 333.002
+    }
+   ]
+  },
+  {
+   "id": "c8a",
+   "text": "This part is education and not advice. Move one. I ask my boss if the company adds money when I save.",
+   "start": 335.6959791666667,
+   "end": 341.2959791666667,
+   "words": [
+    {
+     "text": "This",
+     "start": 335.696,
+     "end": 335.836
+    },
+    {
+     "text": "part",
+     "start": 335.836,
+     "end": 336.096
+    },
+    {
+     "text": "is",
+     "start": 336.096,
+     "end": 336.256
+    },
+    {
+     "text": "education",
+     "start": 336.256,
+     "end": 336.596
+    },
+    {
+     "text": "and",
+     "start": 336.596,
+     "end": 337.076
+    },
+    {
+     "text": "not",
+     "start": 337.076,
+     "end": 337.236
+    },
+    {
+     "text": "advice.",
+     "start": 337.236,
+     "end": 337.556
+    },
+    {
+     "text": "Move",
+     "start": 338.136,
+     "end": 338.316
+    },
+    {
+     "text": "one.",
+     "start": 338.316,
+     "end": 338.756
+    },
+    {
+     "text": "I",
+     "start": 339.036,
+     "end": 339.176
+    },
+    {
+     "text": "ask",
+     "start": 339.176,
+     "end": 339.356
+    },
+    {
+     "text": "my",
+     "start": 339.356,
+     "end": 339.536
+    },
+    {
+     "text": "boss",
+     "start": 339.536,
+     "end": 339.736
+    },
+    {
+     "text": "if",
+     "start": 339.736,
+     "end": 339.916
+    },
+    {
+     "text": "the",
+     "start": 339.916,
+     "end": 340.016
+    },
+    {
+     "text": "company",
+     "start": 340.016,
+     "end": 340.236
+    },
+    {
+     "text": "adds",
+     "start": 340.236,
+     "end": 340.516
+    },
+    {
+     "text": "money",
+     "start": 340.516,
+     "end": 340.756
+    },
+    {
+     "text": "when",
+     "start": 340.756,
+     "end": 340.976
+    },
+    {
+     "text": "I",
+     "start": 340.976,
+     "end": 341.096
+    },
+    {
+     "text": "save.",
+     "start": 341.096,
+     "end": 341.296
+    }
+   ]
+  },
+  {
+   "id": "c8b",
+   "text": "It does. They match up to four percent of my pay. I was only putting in two. So every paycheck I was leaving free money on the table. I bump it to four.",
+   "start": 341.942,
+   "end": 349.10200000000003,
+   "words": [
+    {
+     "text": "It",
+     "start": 341.942,
+     "end": 342.042
+    },
+    {
+     "text": "does.",
+     "start": 342.042,
+     "end": 342.262
+    },
+    {
+     "text": "They",
+     "start": 342.862,
+     "end": 342.862
+    },
+    {
+     "text": "match",
+     "start": 342.862,
+     "end": 343.022
+    },
+    {
+     "text": "up",
+     "start": 343.022,
+     "end": 343.202
+    },
+    {
+     "text": "to",
+     "start": 343.202,
+     "end": 343.322
+    },
+    {
+     "text": "four",
+     "start": 343.322,
+     "end": 343.482
+    },
+    {
+     "text": "percent",
+     "start": 343.482,
+     "end": 343.722
+    },
+    {
+     "text": "of",
+     "start": 343.722,
+     "end": 343.842
+    },
+    {
+     "text": "my",
+     "start": 343.842,
+     "end": 343.962
+    },
+    {
+     "text": "pay.",
+     "start": 343.962,
+     "end": 344.122
+    },
+    {
+     "text": "I",
+     "start": 344.582,
+     "end": 344.622
+    },
+    {
+     "text": "was",
+     "start": 344.622,
+     "end": 344.722
+    },
+    {
+     "text": "only",
+     "start": 344.722,
+     "end": 344.822
+    },
+    {
+     "text": "putting",
+     "start": 344.822,
+     "end": 345.062
+    },
+    {
+     "text": "in",
+     "start": 345.062,
+     "end": 345.222
+    },
+    {
+     "text": "two.",
+     "start": 345.222,
+     "end": 345.422
+    },
+    {
+     "text": "So",
+     "start": 345.902,
+     "end": 346.102
+    },
+    {
+     "text": "every",
+     "start": 346.102,
+     "end": 346.302
+    },
+    {
+     "text": "paycheck",
+     "start": 346.302,
+     "end": 346.562
+    },
+    {
+     "text": "I",
+     "start": 346.562,
+     "end": 346.822
+    },
+    {
+     "text": "was",
+     "start": 346.822,
+     "end": 346.922
+    },
+    {
+     "text": "leaving",
+     "start": 346.922,
+     "end": 347.122
+    },
+    {
+     "text": "free",
+     "start": 347.122,
+     "end": 347.382
+    },
+    {
+     "text": "money",
+     "start": 347.382,
+     "end": 347.622
+    },
+    {
+     "text": "on",
+     "start": 347.622,
+     "end": 347.762
+    },
+    {
+     "text": "the",
+     "start": 347.762,
+     "end": 347.862
+    },
+    {
+     "text": "table.",
+     "start": 347.862,
+     "end": 348.122
+    },
+    {
+     "text": "I",
+     "start": 348.482,
+     "end": 348.502
+    },
+    {
+     "text": "bump",
+     "start": 348.502,
+     "end": 348.642
+    },
+    {
+     "text": "it",
+     "start": 348.642,
+     "end": 348.762
+    },
+    {
+     "text": "to",
+     "start": 348.762,
+     "end": 348.882
+    },
+    {
+     "text": "four.",
+     "start": 348.882,
+     "end": 349.102
+    }
+   ]
+  },
+  {
+   "id": "n11",
+   "text": "Me finding out about the company match.",
+   "start": 349.758625,
+   "end": 351.198625,
+   "words": [
+    {
+     "text": "Me",
+     "start": 349.759,
+     "end": 349.879
+    },
+    {
+     "text": "finding",
+     "start": 349.879,
+     "end": 350.159
+    },
+    {
+     "text": "out",
+     "start": 350.159,
+     "end": 350.359
+    },
+    {
+     "text": "about",
+     "start": 350.359,
+     "end": 350.539
+    },
+    {
+     "text": "the",
+     "start": 350.539,
+     "end": 350.679
+    },
+    {
+     "text": "company",
+     "start": 350.679,
+     "end": 350.919
+    },
+    {
+     "text": "match.",
+     "start": 350.919,
+     "end": 351.199
+    }
+   ]
+  },
+  {
+   "id": "c8c",
+   "text": "Move two. The Social Security dial. Claim at sixty two and you get about seventy percent. Wait until seventy and you get about one hundred twenty four percent.",
+   "start": 351.96070833333334,
+   "end": 359.2597083333333,
+   "words": [
+    {
+     "text": "Move",
+     "start": 351.961,
+     "end": 352.167
+    },
+    {
+     "text": "two.",
+     "start": 352.19,
+     "end": 352.397
+    },
+    {
+     "text": "The",
+     "start": 352.42,
+     "end": 352.585
+    },
+    {
+     "text": "Social",
+     "start": 352.603,
+     "end": 352.892
+    },
+    {
+     "text": "Security",
+     "start": 352.924,
+     "end": 353.296
+    },
+    {
+     "text": "dial.",
+     "start": 353.337,
+     "end": 353.585
+    },
+    {
+     "text": "Claim",
+     "start": 353.613,
+     "end": 353.86
+    },
+    {
+     "text": "at",
+     "start": 353.888,
+     "end": 354.012
+    },
+    {
+     "text": "sixty",
+     "start": 354.025,
+     "end": 354.273
+    },
+    {
+     "text": "two",
+     "start": 354.301,
+     "end": 354.466
+    },
+    {
+     "text": "and",
+     "start": 354.484,
+     "end": 354.649
+    },
+    {
+     "text": "you",
+     "start": 354.668,
+     "end": 354.833
+    },
+    {
+     "text": "get",
+     "start": 354.851,
+     "end": 355.016
+    },
+    {
+     "text": "about",
+     "start": 355.035,
+     "end": 355.282
+    },
+    {
+     "text": "seventy",
+     "start": 355.31,
+     "end": 355.64
+    },
+    {
+     "text": "percent.",
+     "start": 355.677,
+     "end": 356.048
+    },
+    {
+     "text": "Wait",
+     "start": 356.09,
+     "end": 356.296
+    },
+    {
+     "text": "until",
+     "start": 356.319,
+     "end": 356.567
+    },
+    {
+     "text": "seventy",
+     "start": 356.594,
+     "end": 356.925
+    },
+    {
+     "text": "and",
+     "start": 356.961,
+     "end": 357.127
+    },
+    {
+     "text": "you",
+     "start": 357.145,
+     "end": 357.31
+    },
+    {
+     "text": "get",
+     "start": 357.328,
+     "end": 357.494
+    },
+    {
+     "text": "about",
+     "start": 357.512,
+     "end": 357.76
+    },
+    {
+     "text": "one",
+     "start": 357.787,
+     "end": 357.952
+    },
+    {
+     "text": "hundred",
+     "start": 357.971,
+     "end": 358.301
+    },
+    {
+     "text": "twenty",
+     "start": 358.338,
+     "end": 358.627
+    },
+    {
+     "text": "four",
+     "start": 358.659,
+     "end": 358.865
+    },
+    {
+     "text": "percent.",
+     "start": 358.888,
+     "end": 359.26
+    }
+   ]
+  },
+  {
+   "id": "c8d",
+   "text": "That's why seventy keeps coming up. It's where the check stops growing. And you can check your own numbers for free on your statement.",
+   "start": 360.0193125,
+   "end": 365.8593125,
+   "words": [
+    {
+     "text": "That's",
+     "start": 360.019,
+     "end": 360.239
+    },
+    {
+     "text": "why",
+     "start": 360.239,
+     "end": 360.359
+    },
+    {
+     "text": "seventy",
+     "start": 360.359,
+     "end": 360.779
+    },
+    {
+     "text": "keeps",
+     "start": 360.779,
+     "end": 360.959
+    },
+    {
+     "text": "coming",
+     "start": 360.959,
+     "end": 361.299
+    },
+    {
+     "text": "up.",
+     "start": 361.299,
+     "end": 361.559
+    },
+    {
+     "text": "It's",
+     "start": 361.959,
+     "end": 361.979
+    },
+    {
+     "text": "where",
+     "start": 361.979,
+     "end": 362.139
+    },
+    {
+     "text": "the",
+     "start": 362.139,
+     "end": 362.279
+    },
+    {
+     "text": "check",
+     "start": 362.279,
+     "end": 362.419
+    },
+    {
+     "text": "stops",
+     "start": 362.419,
+     "end": 362.699
+    },
+    {
+     "text": "growing.",
+     "start": 362.699,
+     "end": 363.039
+    },
+    {
+     "text": "And",
+     "start": 363.739,
+     "end": 363.819
+    },
+    {
+     "text": "you",
+     "start": 363.819,
+     "end": 363.939
+    },
+    {
+     "text": "can",
+     "start": 363.939,
+     "end": 364.039
+    },
+    {
+     "text": "check",
+     "start": 364.039,
+     "end": 364.199
+    },
+    {
+     "text": "your",
+     "start": 364.199,
+     "end": 364.379
+    },
+    {
+     "text": "own",
+     "start": 364.379,
+     "end": 364.559
+    },
+    {
+     "text": "numbers",
+     "start": 364.559,
+     "end": 364.819
+    },
+    {
+     "text": "for",
+     "start": 364.819,
+     "end": 365.079
+    },
+    {
+     "text": "free",
+     "start": 365.079,
+     "end": 365.319
+    },
+    {
+     "text": "on",
+     "start": 365.319,
+     "end": 365.519
+    },
+    {
+     "text": "your",
+     "start": 365.519,
+     "end": 365.619
+    },
+    {
+     "text": "statement.",
+     "start": 365.619,
+     "end": 365.859
+    }
+   ]
+  },
+  {
+   "id": "c8e",
+   "text": "Move three. The boring line.",
+   "start": 366.624625,
+   "end": 368.364625,
+   "words": [
+    {
+     "text": "Move",
+     "start": 366.625,
+     "end": 366.845
+    },
+    {
+     "text": "three.",
+     "start": 366.845,
+     "end": 367.185
+    },
+    {
+     "text": "The",
+     "start": 367.585,
+     "end": 367.685
+    },
+    {
+     "text": "boring",
+     "start": 367.685,
+     "end": 367.945
+    },
+    {
+     "text": "line.",
+     "start": 367.945,
+     "end": 368.365
+    }
+   ]
+  },
+  {
+   "id": "c9a",
+   "text": "I open my four oh one k again and I scroll past all the colorful charts down to one tiny line. Expense ratio.",
+   "start": 369.170625,
+   "end": 375.847625,
+   "words": [
+    {
+     "text": "I",
+     "start": 369.171,
+     "end": 369.281
+    },
+    {
+     "text": "open",
+     "start": 369.293,
+     "end": 369.568
+    },
+    {
+     "text": "my",
+     "start": 369.599,
+     "end": 369.764
+    },
+    {
+     "text": "four",
+     "start": 369.782,
+     "end": 370.057
+    },
+    {
+     "text": "oh",
+     "start": 370.087,
+     "end": 370.252
+    },
+    {
+     "text": "one",
+     "start": 370.271,
+     "end": 370.491
+    },
+    {
+     "text": "k",
+     "start": 370.515,
+     "end": 370.625
+    },
+    {
+     "text": "again",
+     "start": 370.637,
+     "end": 370.967
+    },
+    {
+     "text": "and",
+     "start": 371.004,
+     "end": 371.224
+    },
+    {
+     "text": "I",
+     "start": 371.248,
+     "end": 371.358
+    },
+    {
+     "text": "scroll",
+     "start": 371.37,
+     "end": 371.755
+    },
+    {
+     "text": "past",
+     "start": 371.798,
+     "end": 372.073
+    },
+    {
+     "text": "all",
+     "start": 372.103,
+     "end": 372.323
+    },
+    {
+     "text": "the",
+     "start": 372.348,
+     "end": 372.568
+    },
+    {
+     "text": "colorful",
+     "start": 372.592,
+     "end": 373.087
+    },
+    {
+     "text": "charts",
+     "start": 373.142,
+     "end": 373.527
+    },
+    {
+     "text": "down",
+     "start": 373.57,
+     "end": 373.844
+    },
+    {
+     "text": "to",
+     "start": 373.875,
+     "end": 374.04
+    },
+    {
+     "text": "one",
+     "start": 374.058,
+     "end": 374.278
+    },
+    {
+     "text": "tiny",
+     "start": 374.303,
+     "end": 374.578
+    },
+    {
+     "text": "line.",
+     "start": 374.608,
+     "end": 374.938
+    },
+    {
+     "text": "Expense",
+     "start": 374.975,
+     "end": 375.414
+    },
+    {
+     "text": "ratio.",
+     "start": 375.463,
+     "end": 375.848
+    }
+   ]
+  },
+  {
+   "id": "c9b",
+   "text": "My fund charges one and a half percent a year. A plain index fund in the same plan charges half a percent.",
+   "start": 376.2633125,
+   "end": 381.54331249999996,
+   "words": [
+    {
+     "text": "My",
+     "start": 376.263,
+     "end": 376.403
+    },
+    {
+     "text": "fund",
+     "start": 376.403,
+     "end": 376.643
+    },
+    {
+     "text": "charges",
+     "start": 376.643,
+     "end": 376.903
+    },
+    {
+     "text": "one",
+     "start": 376.903,
+     "end": 377.323
+    },
+    {
+     "text": "and",
+     "start": 377.323,
+     "end": 377.443
+    },
+    {
+     "text": "a",
+     "start": 377.443,
+     "end": 377.483
+    },
+    {
+     "text": "half",
+     "start": 377.483,
+     "end": 377.663
+    },
+    {
+     "text": "percent",
+     "start": 377.663,
+     "end": 377.963
+    },
+    {
+     "text": "a",
+     "start": 377.963,
+     "end": 378.163
+    },
+    {
+     "text": "year.",
+     "start": 378.163,
+     "end": 378.343
+    },
+    {
+     "text": "A",
+     "start": 378.983,
+     "end": 379.003
+    },
+    {
+     "text": "plain",
+     "start": 379.003,
+     "end": 379.183
+    },
+    {
+     "text": "index",
+     "start": 379.183,
+     "end": 379.423
+    },
+    {
+     "text": "fund",
+     "start": 379.423,
+     "end": 379.763
+    },
+    {
+     "text": "in",
+     "start": 379.763,
+     "end": 379.943
+    },
+    {
+     "text": "the",
+     "start": 379.943,
+     "end": 380.043
+    },
+    {
+     "text": "same",
+     "start": 380.043,
+     "end": 380.223
+    },
+    {
+     "text": "plan",
+     "start": 380.223,
+     "end": 380.523
+    },
+    {
+     "text": "charges",
+     "start": 380.523,
+     "end": 380.843
+    },
+    {
+     "text": "half",
+     "start": 380.843,
+     "end": 381.183
+    },
+    {
+     "text": "a",
+     "start": 381.183,
+     "end": 381.323
+    },
+    {
+     "text": "percent.",
+     "start": 381.323,
+     "end": 381.543
+    }
+   ]
+  },
+  {
+   "id": "n23",
+   "text": "One percent difference. That sounds like nothing right? It's like a tiny hole in your boat. You won't notice it today but in thirty five years you're swimming.",
+   "start": 382.24252083333334,
+   "end": 389.0995208333334,
+   "words": [
+    {
+     "text": "One",
+     "start": 382.243,
+     "end": 382.398
+    },
+    {
+     "text": "percent",
+     "start": 382.416,
+     "end": 382.726
+    },
+    {
+     "text": "difference.",
+     "start": 382.761,
+     "end": 383.226
+    },
+    {
+     "text": "That",
+     "start": 383.278,
+     "end": 383.472
+    },
+    {
+     "text": "sounds",
+     "start": 383.494,
+     "end": 383.765
+    },
+    {
+     "text": "like",
+     "start": 383.796,
+     "end": 383.99
+    },
+    {
+     "text": "nothing",
+     "start": 384.011,
+     "end": 384.322
+    },
+    {
+     "text": "right?",
+     "start": 384.356,
+     "end": 384.628
+    },
+    {
+     "text": "It's",
+     "start": 384.658,
+     "end": 384.852
+    },
+    {
+     "text": "like",
+     "start": 384.874,
+     "end": 385.068
+    },
+    {
+     "text": "a",
+     "start": 385.089,
+     "end": 385.167
+    },
+    {
+     "text": "tiny",
+     "start": 385.176,
+     "end": 385.37
+    },
+    {
+     "text": "hole",
+     "start": 385.391,
+     "end": 385.585
+    },
+    {
+     "text": "in",
+     "start": 385.607,
+     "end": 385.723
+    },
+    {
+     "text": "your",
+     "start": 385.736,
+     "end": 385.93
+    },
+    {
+     "text": "boat.",
+     "start": 385.952,
+     "end": 386.185
+    },
+    {
+     "text": "You",
+     "start": 386.211,
+     "end": 386.366
+    },
+    {
+     "text": "won't",
+     "start": 386.383,
+     "end": 386.616
+    },
+    {
+     "text": "notice",
+     "start": 386.642,
+     "end": 386.913
+    },
+    {
+     "text": "it",
+     "start": 386.944,
+     "end": 387.06
+    },
+    {
+     "text": "today",
+     "start": 387.073,
+     "end": 387.306
+    },
+    {
+     "text": "but",
+     "start": 387.332,
+     "end": 387.487
+    },
+    {
+     "text": "in",
+     "start": 387.504,
+     "end": 387.621
+    },
+    {
+     "text": "thirty",
+     "start": 387.634,
+     "end": 387.905
+    },
+    {
+     "text": "five",
+     "start": 387.936,
+     "end": 388.13
+    },
+    {
+     "text": "years",
+     "start": 388.151,
+     "end": 388.384
+    },
+    {
+     "text": "you're",
+     "start": 388.41,
+     "end": 388.682
+    },
+    {
+     "text": "swimming.",
+     "start": 388.712,
+     "end": 389.1
+    }
+   ]
+  },
+  {
+   "id": "c9c",
+   "text": "The Department of Labor did this exact math. Twenty five thousand dollars for thirty five years.",
+   "start": 389.91235416666666,
+   "end": 393.80435416666666,
+   "words": [
+    {
+     "text": "The",
+     "start": 389.912,
+     "end": 390.057
+    },
+    {
+     "text": "Department",
+     "start": 390.074,
+     "end": 390.474
+    },
+    {
+     "text": "of",
+     "start": 390.518,
+     "end": 390.627
+    },
+    {
+     "text": "Labor",
+     "start": 390.639,
+     "end": 390.858
+    },
+    {
+     "text": "did",
+     "start": 390.882,
+     "end": 391.027
+    },
+    {
+     "text": "this",
+     "start": 391.044,
+     "end": 391.225
+    },
+    {
+     "text": "exact",
+     "start": 391.246,
+     "end": 391.464
+    },
+    {
+     "text": "math.",
+     "start": 391.488,
+     "end": 391.706
+    },
+    {
+     "text": "Twenty",
+     "start": 391.731,
+     "end": 391.985
+    },
+    {
+     "text": "five",
+     "start": 392.013,
+     "end": 392.195
+    },
+    {
+     "text": "thousand",
+     "start": 392.216,
+     "end": 392.543
+    },
+    {
+     "text": "dollars",
+     "start": 392.579,
+     "end": 392.87
+    },
+    {
+     "text": "for",
+     "start": 392.903,
+     "end": 393.048
+    },
+    {
+     "text": "thirty",
+     "start": 393.064,
+     "end": 393.319
+    },
+    {
+     "text": "five",
+     "start": 393.347,
+     "end": 393.529
+    },
+    {
+     "text": "years.",
+     "start": 393.549,
+     "end": 393.804
+    }
+   ]
+  },
+  {
+   "id": "c9d",
+   "text": "With the high fee it grows to about one hundred sixty three thousand. With the low fee it's about two hundred twenty seven thousand.",
+   "start": 394.60727083333336,
+   "end": 400.5222708333334,
+   "words": [
+    {
+     "text": "With",
+     "start": 394.607,
+     "end": 394.809
+    },
+    {
+     "text": "the",
+     "start": 394.831,
+     "end": 394.992
+    },
+    {
+     "text": "high",
+     "start": 395.01,
+     "end": 395.212
+    },
+    {
+     "text": "fee",
+     "start": 395.234,
+     "end": 395.396
+    },
+    {
+     "text": "it",
+     "start": 395.414,
+     "end": 395.535
+    },
+    {
+     "text": "grows",
+     "start": 395.548,
+     "end": 395.79
+    },
+    {
+     "text": "to",
+     "start": 395.817,
+     "end": 395.938
+    },
+    {
+     "text": "about",
+     "start": 395.951,
+     "end": 396.193
+    },
+    {
+     "text": "one",
+     "start": 396.22,
+     "end": 396.382
+    },
+    {
+     "text": "hundred",
+     "start": 396.399,
+     "end": 396.722
+    },
+    {
+     "text": "sixty",
+     "start": 396.758,
+     "end": 397.0
+    },
+    {
+     "text": "three",
+     "start": 397.027,
+     "end": 397.269
+    },
+    {
+     "text": "thousand.",
+     "start": 397.296,
+     "end": 397.699
+    },
+    {
+     "text": "With",
+     "start": 397.744,
+     "end": 397.945
+    },
+    {
+     "text": "the",
+     "start": 397.968,
+     "end": 398.129
+    },
+    {
+     "text": "low",
+     "start": 398.147,
+     "end": 398.308
+    },
+    {
+     "text": "fee",
+     "start": 398.326,
+     "end": 398.488
+    },
+    {
+     "text": "it's",
+     "start": 398.506,
+     "end": 398.707
+    },
+    {
+     "text": "about",
+     "start": 398.73,
+     "end": 398.972
+    },
+    {
+     "text": "two",
+     "start": 398.999,
+     "end": 399.16
+    },
+    {
+     "text": "hundred",
+     "start": 399.178,
+     "end": 399.5
+    },
+    {
+     "text": "twenty",
+     "start": 399.536,
+     "end": 399.819
+    },
+    {
+     "text": "seven",
+     "start": 399.85,
+     "end": 400.092
+    },
+    {
+     "text": "thousand.",
+     "start": 400.119,
+     "end": 400.522
+    }
+   ]
+  },
+  {
+   "id": "c9e",
+   "text": "Same me. Same savings. Sixty four thousand dollars more from one boring line. That's years of retirement the raccoon was quietly eating.",
+   "start": 401.152375,
+   "end": 407.33637500000003,
+   "words": [
+    {
+     "text": "Same",
+     "start": 401.152,
+     "end": 401.356
+    },
+    {
+     "text": "me.",
+     "start": 401.379,
+     "end": 401.542
+    },
+    {
+     "text": "Same",
+     "start": 401.561,
+     "end": 401.765
+    },
+    {
+     "text": "savings.",
+     "start": 401.788,
+     "end": 402.155
+    },
+    {
+     "text": "Sixty",
+     "start": 402.196,
+     "end": 402.441
+    },
+    {
+     "text": "four",
+     "start": 402.469,
+     "end": 402.673
+    },
+    {
+     "text": "thousand",
+     "start": 402.696,
+     "end": 403.063
+    },
+    {
+     "text": "dollars",
+     "start": 403.104,
+     "end": 403.431
+    },
+    {
+     "text": "more",
+     "start": 403.467,
+     "end": 403.672
+    },
+    {
+     "text": "from",
+     "start": 403.694,
+     "end": 403.899
+    },
+    {
+     "text": "one",
+     "start": 403.921,
+     "end": 404.085
+    },
+    {
+     "text": "boring",
+     "start": 404.103,
+     "end": 404.389
+    },
+    {
+     "text": "line.",
+     "start": 404.421,
+     "end": 404.666
+    },
+    {
+     "text": "That's",
+     "start": 404.693,
+     "end": 404.979
+    },
+    {
+     "text": "years",
+     "start": 405.011,
+     "end": 405.256
+    },
+    {
+     "text": "of",
+     "start": 405.284,
+     "end": 405.406
+    },
+    {
+     "text": "retirement",
+     "start": 405.42,
+     "end": 405.869
+    },
+    {
+     "text": "the",
+     "start": 405.919,
+     "end": 406.083
+    },
+    {
+     "text": "raccoon",
+     "start": 406.101,
+     "end": 406.428
+    },
+    {
+     "text": "was",
+     "start": 406.464,
+     "end": 406.627
+    },
+    {
+     "text": "quietly",
+     "start": 406.646,
+     "end": 406.972
+    },
+    {
+     "text": "eating.",
+     "start": 407.009,
+     "end": 407.336
+    }
+   ]
+  },
+  {
+   "id": "n24",
+   "text": "Me finding the expense ratio line.",
+   "start": 408.0706875,
+   "end": 409.81068750000003,
+   "words": [
+    {
+     "text": "Me",
+     "start": 408.071,
+     "end": 408.211
+    },
+    {
+     "text": "finding",
+     "start": 408.211,
+     "end": 408.531
+    },
+    {
+     "text": "the",
+     "start": 408.531,
+     "end": 408.771
+    },
+    {
+     "text": "expense",
+     "start": 408.771,
+     "end": 409.011
+    },
+    {
+     "text": "ratio",
+     "start": 409.011,
+     "end": 409.511
+    },
+    {
+     "text": "line.",
+     "start": 409.511,
+     "end": 409.811
+    }
+   ]
+  },
+  {
+   "id": "n12",
+   "text": "The raccoon when I switched funds.",
+   "start": 410.5488541666667,
+   "end": 411.7888541666667,
+   "words": [
+    {
+     "text": "The",
+     "start": 410.549,
+     "end": 410.609
+    },
+    {
+     "text": "raccoon",
+     "start": 410.609,
+     "end": 410.949
+    },
+    {
+     "text": "when",
+     "start": 410.949,
+     "end": 411.189
+    },
+    {
+     "text": "I",
+     "start": 411.189,
+     "end": 411.269
+    },
+    {
+     "text": "switched",
+     "start": 411.269,
+     "end": 411.469
+    },
+    {
+     "text": "funds.",
+     "start": 411.469,
+     "end": 411.789
+    }
+   ]
+  },
+  {
+   "id": "n13",
+   "text": "So can I retire at sixty two like my dad?",
+   "start": 412.5450833333333,
+   "end": 414.6790833333333,
+   "words": [
+    {
+     "text": "So",
+     "start": 412.545,
+     "end": 412.684
+    },
+    {
+     "text": "can",
+     "start": 412.699,
+     "end": 412.884
+    },
+    {
+     "text": "I",
+     "start": 412.905,
+     "end": 412.998
+    },
+    {
+     "text": "retire",
+     "start": 413.008,
+     "end": 413.332
+    },
+    {
+     "text": "at",
+     "start": 413.368,
+     "end": 413.507
+    },
+    {
+     "text": "sixty",
+     "start": 413.522,
+     "end": 413.8
+    },
+    {
+     "text": "two",
+     "start": 413.831,
+     "end": 414.016
+    },
+    {
+     "text": "like",
+     "start": 414.036,
+     "end": 414.268
+    },
+    {
+     "text": "my",
+     "start": 414.294,
+     "end": 414.432
+    },
+    {
+     "text": "dad?",
+     "start": 414.448,
+     "end": 414.679
+    }
+   ]
+  },
+  {
+   "id": "n14",
+   "text": "No.",
+   "start": 415.40360416666664,
+   "end": 415.56360416666666,
+   "words": [
+    {
+     "text": "No.",
+     "start": 415.404,
+     "end": 415.564
+    }
+   ]
+  },
+  {
+   "id": "c9f",
+   "text": "But for the first time I'm the one moving my finish line.",
+   "start": 416.56008333333335,
+   "end": 419.02008333333333,
+   "words": [
+    {
+     "text": "But",
+     "start": 416.56,
+     "end": 416.68
+    },
+    {
+     "text": "for",
+     "start": 416.68,
+     "end": 416.8
+    },
+    {
+     "text": "the",
+     "start": 416.8,
+     "end": 416.9
+    },
+    {
+     "text": "first",
+     "start": 416.9,
+     "end": 417.08
+    },
+    {
+     "text": "time",
+     "start": 417.08,
+     "end": 417.44
+    },
+    {
+     "text": "I'm",
+     "start": 417.7,
+     "end": 417.96
+    },
+    {
+     "text": "the",
+     "start": 417.96,
+     "end": 418.06
+    },
+    {
+     "text": "one",
+     "start": 418.06,
+     "end": 418.18
+    },
+    {
+     "text": "moving",
+     "start": 418.18,
+     "end": 418.38
+    },
+    {
+     "text": "my",
+     "start": 418.38,
+     "end": 418.56
+    },
+    {
+     "text": "finish",
+     "start": 418.56,
+     "end": 418.74
+    },
+    {
+     "text": "line.",
+     "start": 418.74,
+     "end": 419.02
+    }
+   ]
+  },
+  {
+   "id": "r1",
+   "text": "Quick lessons. The finish line moved and the risk moved onto you.",
+   "start": 419.6656875,
+   "end": 422.4246875,
+   "words": [
+    {
+     "text": "Quick",
+     "start": 419.666,
+     "end": 419.893
+    },
+    {
+     "text": "lessons.",
+     "start": 419.919,
+     "end": 420.26
+    },
+    {
+     "text": "The",
+     "start": 420.298,
+     "end": 420.449
+    },
+    {
+     "text": "finish",
+     "start": 420.466,
+     "end": 420.732
+    },
+    {
+     "text": "line",
+     "start": 420.761,
+     "end": 420.951
+    },
+    {
+     "text": "moved",
+     "start": 420.972,
+     "end": 421.199
+    },
+    {
+     "text": "and",
+     "start": 421.224,
+     "end": 421.376
+    },
+    {
+     "text": "the",
+     "start": 421.393,
+     "end": 421.545
+    },
+    {
+     "text": "risk",
+     "start": 421.561,
+     "end": 421.751
+    },
+    {
+     "text": "moved",
+     "start": 421.772,
+     "end": 422.0
+    },
+    {
+     "text": "onto",
+     "start": 422.025,
+     "end": 422.214
+    },
+    {
+     "text": "you.",
+     "start": 422.235,
+     "end": 422.425
+    }
+   ]
+  },
+  {
+   "id": "r2",
+   "text": "Working until seventy is a hope and not a plan.",
+   "start": 423.017125,
+   "end": 425.23712500000005,
+   "words": [
+    {
+     "text": "Working",
+     "start": 423.017,
+     "end": 423.237
+    },
+    {
+     "text": "until",
+     "start": 423.237,
+     "end": 423.417
+    },
+    {
+     "text": "seventy",
+     "start": 423.417,
+     "end": 423.877
+    },
+    {
+     "text": "is",
+     "start": 423.877,
+     "end": 424.177
+    },
+    {
+     "text": "a",
+     "start": 424.177,
+     "end": 424.257
+    },
+    {
+     "text": "hope",
+     "start": 424.257,
+     "end": 424.457
+    },
+    {
+     "text": "and",
+     "start": 424.457,
+     "end": 424.677
+    },
+    {
+     "text": "not",
+     "start": 424.677,
+     "end": 424.937
+    },
+    {
+     "text": "a",
+     "start": 424.937,
+     "end": 425.037
+    },
+    {
+     "text": "plan.",
+     "start": 425.037,
+     "end": 425.237
+    }
+   ]
+  },
+  {
+   "id": "r3",
+   "text": "Grab the match and check the boring line.",
+   "start": 426.00941666666665,
+   "end": 427.76941666666664,
+   "words": [
+    {
+     "text": "Grab",
+     "start": 426.009,
+     "end": 426.129
+    },
+    {
+     "text": "the",
+     "start": 426.129,
+     "end": 426.249
+    },
+    {
+     "text": "match",
+     "start": 426.249,
+     "end": 426.469
+    },
+    {
+     "text": "and",
+     "start": 426.469,
+     "end": 426.789
+    },
+    {
+     "text": "check",
+     "start": 426.789,
+     "end": 427.089
+    },
+    {
+     "text": "the",
+     "start": 427.089,
+     "end": 427.289
+    },
+    {
+     "text": "boring",
+     "start": 427.289,
+     "end": 427.449
+    },
+    {
+     "text": "line.",
+     "start": 427.449,
+     "end": 427.769
+    }
+   ]
+  },
+  {
+   "id": "r4",
+   "text": "But next time a betting app hands me a thousand dollars for free and I win and then the app bans me. Wait what?",
+   "start": 428.44314583333335,
+   "end": 434.32314583333334,
+   "words": [
+    {
+     "text": "But",
+     "start": 428.443,
+     "end": 428.523
+    },
+    {
+     "text": "next",
+     "start": 428.523,
+     "end": 428.643
+    },
+    {
+     "text": "time",
+     "start": 428.643,
+     "end": 428.963
+    },
+    {
+     "text": "a",
+     "start": 429.163,
+     "end": 429.183
+    },
+    {
+     "text": "betting",
+     "start": 429.183,
+     "end": 429.343
+    },
+    {
+     "text": "app",
+     "start": 429.343,
+     "end": 429.603
+    },
+    {
+     "text": "hands",
+     "start": 429.603,
+     "end": 429.843
+    },
+    {
+     "text": "me",
+     "start": 429.843,
+     "end": 430.103
+    },
+    {
+     "text": "a",
+     "start": 430.103,
+     "end": 430.283
+    },
+    {
+     "text": "thousand",
+     "start": 430.283,
+     "end": 430.623
+    },
+    {
+     "text": "dollars",
+     "start": 430.623,
+     "end": 431.063
+    },
+    {
+     "text": "for",
+     "start": 431.063,
+     "end": 431.343
+    },
+    {
+     "text": "free",
+     "start": 431.343,
+     "end": 431.563
+    },
+    {
+     "text": "and",
+     "start": 431.563,
+     "end": 431.703
+    },
+    {
+     "text": "I",
+     "start": 431.703,
+     "end": 431.903
+    },
+    {
+     "text": "win",
+     "start": 431.903,
+     "end": 432.143
+    },
+    {
+     "text": "and",
+     "start": 432.143,
+     "end": 432.283
+    },
+    {
+     "text": "then",
+     "start": 432.283,
+     "end": 432.423
+    },
+    {
+     "text": "the",
+     "start": 432.423,
+     "end": 432.603
+    },
+    {
+     "text": "app",
+     "start": 432.603,
+     "end": 432.923
+    },
+    {
+     "text": "bans",
+     "start": 432.923,
+     "end": 433.163
+    },
+    {
+     "text": "me.",
+     "start": 433.603,
+     "end": 433.903
+    },
+    {
+     "text": "Wait",
+     "start": 434.023,
+     "end": 434.183
+    },
+    {
+     "text": "what?",
+     "start": 434.183,
+     "end": 434.323
+    }
+   ]
+  },
+  {
+   "id": "r5",
+   "text": "Subscribe so you can retire before I do. It's free and even the raccoon can't charge a fee on it.",
+   "start": 434.975625,
+   "end": 439.81562499999995,
+   "words": [
+    {
+     "text": "Subscribe",
+     "start": 434.976,
+     "end": 435.256
+    },
+    {
+     "text": "so",
+     "start": 435.256,
+     "end": 435.656
+    },
+    {
+     "text": "you",
+     "start": 435.656,
+     "end": 435.776
+    },
+    {
+     "text": "can",
+     "start": 435.776,
+     "end": 435.896
+    },
+    {
+     "text": "retire",
+     "start": 435.896,
+     "end": 436.116
+    },
+    {
+     "text": "before",
+     "start": 436.116,
+     "end": 436.496
+    },
+    {
+     "text": "I",
+     "start": 436.496,
+     "end": 436.696
+    },
+    {
+     "text": "do.",
+     "start": 436.696,
+     "end": 436.896
+    },
+    {
+     "text": "It's",
+     "start": 437.276,
+     "end": 437.456
+    },
+    {
+     "text": "free",
+     "start": 437.456,
+     "end": 437.616
+    },
+    {
+     "text": "and",
+     "start": 437.616,
+     "end": 438.016
+    },
+    {
+     "text": "even",
+     "start": 438.016,
+     "end": 438.256
+    },
+    {
+     "text": "the",
+     "start": 438.256,
+     "end": 438.396
+    },
+    {
+     "text": "raccoon",
+     "start": 438.396,
+     "end": 438.716
+    },
+    {
+     "text": "can't",
+     "start": 438.716,
+     "end": 439.076
+    },
+    {
+     "text": "charge",
+     "start": 439.076,
+     "end": 439.196
+    },
+    {
+     "text": "a",
+     "start": 439.196,
+     "end": 439.356
+    },
+    {
+     "text": "fee",
+     "start": 439.356,
+     "end": 439.476
+    },
+    {
+     "text": "on",
+     "start": 439.476,
+     "end": 439.656
+    },
+    {
+     "text": "it.",
+     "start": 439.656,
+     "end": 439.816
+    }
+   ]
+  }
+ ]
+}
