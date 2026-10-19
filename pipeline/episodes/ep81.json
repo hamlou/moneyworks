@@ -1,0 +1,1915 @@
+{
+ "id": "ep81",
+ "title": "Why Being Broke Makes You Make Worse Decisions",
+ "voice": "chatterbox",
+ "upgraded": "2026-10-19 UPGRADE.md v2",
+ "sources": [
+  "Mani, Mullainathan, Shafir & Zhao, 'Poverty Impedes Cognitive Function', Science 341 (2013): sugarcane farmers pre/post harvest; New Jersey mall hypothetical car repair test",
+  "Mullainathan & Shafir, 'Scarcity: Why Having Too Little Means So Much' (2013): bandwidth and tunneling",
+  "Carvalho, Meier & Wang, 'Poverty and Economic Decision-Making: Evidence from Changes in Financial Resources at Payday', American Economic Review (2016): smaller/no cognitive effect found",
+  "CFPB, Payday Loans and Deposit Advance Products white paper (2013): repeat borrowing",
+  "Mani, Mullainathan, Shafir & Zhao, 'Poverty Impedes Cognitive Function', Science 341 (2013): sugarcane farmers pre/post harvest; New Jersey mall hypothetical car repair test",
+  "Mullainathan & Shafir, 'Scarcity: Why Having Too Little Means So Much' (2013): bandwidth and tunneling",
+  "Carvalho, Meier & Wang, 'Poverty and Economic Decision-Making: Evidence from Changes in Financial Resources at Payday', American Economic Review (2016): smaller/no cognitive effect found",
+  "CFPB, Payday Loans and Deposit Advance Products white paper (2013): repeat borrowing",
+  "Mani, Mullainathan, Shafir & Zhao, 'Poverty Impedes Cognitive Function', Science 341 (2013): sugarcane farmers pre/post harvest; New Jersey mall hypothetical car repair test",
+  "Mullainathan & Shafir, 'Scarcity: Why Having Too Little Means So Much' (2013): bandwidth and tunneling",
+  "Carvalho, Meier & Wang, 'Poverty and Economic Decision-Making: Evidence from Changes in Financial Resources at Payday', American Economic Review (2016): smaller/no cognitive effect found",
+  "CFPB, Payday Loans and Deposit Advance Products white paper (2013): repeat borrowing"
+ ],
+ "youtube": {},
+ "beats": [
+  {
+   "id": "o1",
+   "text": "This is me on the twenty eighth of the month. I have eleven dollars and three bills and a brain that feels like a browser with forty tabs open.",
+   "host": true,
+   "mood": "worried",
+   "pose": "talk",
+   "pic": {
+    "id": "tabs",
+    "at": "browser",
+    "look": "polaroid",
+    "label": "my brain"
+   },
+   "slam": {
+    "t": "40 TABS OPEN",
+    "at": "forty"
+   },
+   "sfx": [
+    {
+     "s": "pack/01_beating",
+     "at": "eleven"
+    },
+    {
+     "s": "pack/02_dial_up",
+     "at": "browser"
+    },
+    {
+     "s": "boom",
+     "at": "open"
+    }
+   ],
+   "pause": 0.15
+  },
+  {
+   "id": "o2",
+   "text": "And right here I'm about to make a decision I would never make on payday.",
+   "host": true,
+   "mood": "shock",
+   "pose": "panic",
+   "zoom": {
+    "in": "never",
+    "out": "payday"
+   },
+   "sfx": [
+    {
+     "s": "riser",
+     "at": "decision"
+    },
+    {
+     "s": "boom",
+     "at": "payday"
+    }
+   ],
+   "pause": 0.15
+  },
+  {
+   "id": "o3",
+   "text": "I'm about to borrow three hundred dollars from a store with a neon sign.",
+   "pic": {
+    "id": "neon",
+    "at": "neon",
+    "look": "tape"
+   },
+   "sfx": [
+    {
+     "s": "cash",
+     "at": "borrow"
+    },
+    {
+     "s": "pack/01_boom",
+     "at": "sign"
+    }
+   ],
+   "pause": 0.15
+  },
+  {
+   "id": "o4",
+   "text": "And here's the weird part. I'm not stupid. Being broke is making me stupid.",
+   "card": {
+    "t": "Broke makes you dumber.",
+    "dark": true
+   },
+   "sfx": [
+    {
+     "s": "scratch",
+     "at": "weird"
+    },
+    {
+     "s": "pack/01_boom",
+     "at": "stupid#2"
+    }
+   ],
+   "pause": 0.3
+  },
+  {
+   "id": "o5",
+   "text": "By the end of this video you'll know why being broke steals your brainpower and the one small thing that gives it back.",
+   "host": true,
+   "mood": "suspicious",
+   "pose": "point_r",
+   "slam": {
+    "t": "ONE SMALL THING",
+    "at": "small"
+   },
+   "sfx": [
+    {
+     "s": "ding",
+     "at": "steals"
+    },
+    {
+     "s": "tick",
+     "at": "small"
+    },
+    {
+     "s": "boom",
+     "at": "back"
+    }
+   ],
+   "pause": 0.15
+  },
+  {
+   "id": "o6",
+   "text": "But most people scroll away before that part. And honestly if you're broke right now that's exactly what your tired brain wants to do.",
+   "host": true,
+   "mood": "grin",
+   "pose": "hips",
+   "sfx": [
+    {
+     "s": "whoosh",
+     "at": "scroll"
+    },
+    {
+     "s": "sting",
+     "at": "do"
+    }
+   ],
+   "pause": 0.3
+  },
+  {
+   "id": "c1a",
+   "text": "So let me tell you about my twenty eighth. Rent is due on the first. The phone bill is due tomorrow. And my car makes a noise like a sad duck.",
+   "chapter": "The Twenty Eighth",
+   "pic": {
+    "id": "car_old",
+    "at": "car",
+    "look": "polaroid",
+    "label": "my car"
+   },
+   "sfx": [
+    {
+     "s": "flip",
+     "at": "twenty"
+    },
+    {
+     "s": "ding",
+     "at": "Rent"
+    },
+    {
+     "s": "ding",
+     "at": "phone"
+    },
+    {
+     "s": "quack",
+     "at": "duck"
+    }
+   ]
+  },
+  {
+   "id": "c1b",
+   "text": "I'm at work but I'm not really at work. My body is typing an email. My brain is doing math. Rent minus phone minus gas minus food. It never adds up.",
+   "host": true,
+   "mood": "tired",
+   "pose": "think",
+   "zoom": {
+    "in": "never",
+    "out": "up"
+   },
+   "sfx": [
+    {
+     "s": "click",
+     "at": "typing"
+    },
+    {
+     "s": "pack/01_processing",
+     "at": "math"
+    },
+    {
+     "s": "trombone",
+     "at": "up"
+    }
+   ]
+  },
+  {
+   "id": "n1",
+   "text": "Me at work pretending to listen in a meeting.",
+   "meme": {
+    "t": "fine",
+    "a": "Calculating rent in my head",
+    "at": "meeting"
+   },
+   "sfx": [
+    {
+     "s": "cricket",
+     "at": "meeting"
+    }
+   ]
+  },
+  {
+   "id": "c1c",
+   "text": "My boss asks me a simple question. I say yes. I have no idea what I just said yes to.",
+   "host": true,
+   "mood": "shock",
+   "pose": "shrug",
+   "pic": {
+    "id": "office",
+    "at": "boss",
+    "look": "tape"
+   },
+   "sfx": [
+    {
+     "s": "ding",
+     "at": "question"
+    },
+    {
+     "s": "boing",
+     "at": "yes#2"
+    }
+   ]
+  },
+  {
+   "id": "n30",
+   "text": "And at lunch I skip eating to save eight dollars. Then at four I'm so hungry I buy a fourteen dollar snack box from the vending machine.",
+   "pic": {
+    "id": "vending",
+    "at": "vending",
+    "look": "tape"
+   },
+   "sfx": [
+    {
+     "s": "coin",
+     "at": "eight"
+    },
+    {
+     "s": "boing",
+     "at": "hungry"
+    },
+    {
+     "s": "cash",
+     "at": "fourteen"
+    }
+   ]
+  },
+  {
+   "id": "n31",
+   "text": "That's the math of a tired brain. Save eight. Lose fourteen. Feel proud for three hours.",
+   "host": true,
+   "mood": "grin",
+   "pose": "shrug",
+   "zoom": {
+    "in": "Feel",
+    "out": "hours"
+   },
+   "sfx": [
+    {
+     "s": "ding",
+     "at": "eight"
+    },
+    {
+     "s": "trombone",
+     "at": "fourteen"
+    },
+    {
+     "s": "boom",
+     "at": "hours"
+    }
+   ]
+  },
+  {
+   "id": "c1d",
+   "text": "On the way home I forget my keys in the car. I forget to reply to my mom. I forget it's my friend's birthday. I'm forgetting everything except the number in my bank account.",
+   "sfx": [
+    {
+     "s": "thud",
+     "at": "keys"
+    },
+    {
+     "s": "cricket",
+     "at": "mom"
+    },
+    {
+     "s": "pop",
+     "at": "birthday"
+    },
+    {
+     "s": "pack/02_deep",
+     "at": "account"
+    }
+   ]
+  },
+  {
+   "id": "n2",
+   "text": "It's like my brain has one parking spot and the bills took it. Everything else drives around in circles.",
+   "pic": {
+    "id": "parking",
+    "at": "parking",
+    "look": "tape"
+   },
+   "sfx": [
+    {
+     "s": "ding",
+     "at": "spot"
+    },
+    {
+     "s": "whoosh",
+     "at": "circles"
+    }
+   ]
+  },
+  {
+   "id": "c1e",
+   "text": "Then I see a letter on the counter. The electric bill. It was due five days ago. It's been sitting there the whole time. I walked past it every day.",
+   "host": true,
+   "mood": "sad",
+   "pose": "facepalm",
+   "pic": {
+    "id": "letter",
+    "at": "letter",
+    "look": "circle"
+   },
+   "sfx": [
+    {
+     "s": "paper",
+     "at": "letter"
+    },
+    {
+     "s": "tick",
+     "at": "five"
+    },
+    {
+     "s": "trombone",
+     "at": "day"
+    }
+   ]
+  },
+  {
+   "id": "n3",
+   "text": "Me walking past the bill I'm scared of.",
+   "meme": {
+    "t": "drake",
+    "a": "Opening the bill",
+    "b": "Pretending it's a menu",
+    "at": "bill"
+   },
+   "sfx": [
+    {
+     "s": "pop",
+     "at": "walking"
+    }
+   ]
+  },
+  {
+   "id": "c1f",
+   "text": "Late fee. Thirty five dollars. Which I don't have. So now I'm more broke because I was too broke to think.",
+   "host": true,
+   "mood": "angry",
+   "pose": "talk",
+   "slam": {
+    "t": "LATE FEE",
+    "at": "Late"
+   },
+   "sfx": [
+    {
+     "s": "stamp",
+     "at": "Late"
+    },
+    {
+     "s": "cash",
+     "at": "Thirty"
+    },
+    {
+     "s": "boom",
+     "at": "think"
+    }
+   ]
+  },
+  {
+   "id": "n4",
+   "text": "That's the loop. And you've probably been inside it too. Broke makes you forget. Forgetting makes you more broke.",
+   "host": true,
+   "mood": "suspicious",
+   "pose": "point_r",
+   "zoom": {
+    "in": "more",
+    "out": "broke#2"
+   },
+   "sfx": [
+    {
+     "s": "pack/01_beating",
+     "at": "loop"
+    },
+    {
+     "s": "boom",
+     "at": "broke#2"
+    }
+   ]
+  },
+  {
+   "id": "c1g",
+   "text": "And that's when I walk past the store with the neon sign. Cash today. No credit check. And for the first time in my life it looks like a good idea.",
+   "pic": {
+    "id": "storefront",
+    "at": "store",
+    "look": "polaroid"
+   },
+   "sfx": [
+    {
+     "s": "ding",
+     "at": "neon"
+    },
+    {
+     "s": "cash",
+     "at": "Cash"
+    },
+    {
+     "s": "riser",
+     "at": "idea"
+    }
+   ]
+  },
+  {
+   "id": "n32",
+   "text": "My phone buzzes. A text from the bank. Low balance. Like I needed a reminder. Like my stomach wasn't already reminding me.",
+   "pic": {
+    "id": "phone_text",
+    "at": "text",
+    "look": "circle"
+   },
+   "sfx": [
+    {
+     "s": "ding",
+     "at": "buzzes"
+    },
+    {
+     "s": "pack/01_beating",
+     "at": "Low"
+    },
+    {
+     "s": "boing",
+     "at": "stomach"
+    }
+   ]
+  },
+  {
+   "id": "n5",
+   "text": "Payday me would laugh at that sign. Twenty eighth me walks right in.",
+   "host": true,
+   "mood": "tired",
+   "pose": "shrug",
+   "sfx": [
+    {
+     "s": "crowd",
+     "at": "laugh"
+    },
+    {
+     "s": "pack/01_boom",
+     "at": "in"
+    }
+   ]
+  },
+  {
+   "id": "n6",
+   "text": "Payday me versus twenty eighth me.",
+   "meme": {
+    "t": "vs",
+    "a": "Payday me: genius",
+    "b": "28th me: says yes to anything",
+    "at": "Payday"
+   },
+   "sfx": [
+    {
+     "s": "pop",
+     "at": "Payday"
+    }
+   ]
+  },
+  {
+   "id": "c2a",
+   "text": "So that night I start wondering. Am I just bad with money? Is something wrong with me?",
+   "chapter": "The Brain Tax",
+   "host": true,
+   "mood": "sad",
+   "pose": "think",
+   "sfx": [
+    {
+     "s": "pack/01_processing",
+     "at": "wondering"
+    },
+    {
+     "s": "sting",
+     "at": "me"
+    }
+   ]
+  },
+  {
+   "id": "c2b",
+   "text": "And then I found a study that changed how I see all of this. Scientists went to farmers in India who grow sugarcane.",
+   "pic": {
+    "id": "sugarcane",
+    "at": "sugarcane",
+    "look": "polaroid",
+    "label": "India"
+   },
+   "sfx": [
+    {
+     "s": "flip",
+     "at": "study"
+    },
+    {
+     "s": "ding",
+     "at": "farmers"
+    }
+   ]
+  },
+  {
+   "id": "n46",
+   "text": "Not lazy people. Not careless people. Hard working farmers who wake up before the sun.",
+   "pic": {
+    "id": "farmer",
+    "at": "farmers",
+    "look": "tape"
+   },
+   "sfx": [
+    {
+     "s": "ding",
+     "at": "lazy"
+    },
+    {
+     "s": "pack/01_evolve_brassy_swell",
+     "at": "sun"
+    }
+   ]
+  },
+  {
+   "id": "c2c",
+   "text": "These farmers get paid once a year. At harvest. So right before harvest they're broke. And right after harvest they have money.",
+   "pic": {
+    "id": "harvest",
+    "at": "harvest",
+    "look": "tape"
+   },
+   "sfx": [
+    {
+     "s": "tick",
+     "at": "year"
+    },
+    {
+     "s": "pack/01_beating",
+     "at": "broke"
+    },
+    {
+     "s": "cash",
+     "at": "money"
+    }
+   ]
+  },
+  {
+   "id": "n33",
+   "text": "Imagine getting your whole salary once a year. You'd be a millionaire in October and eating rice in August.",
+   "host": true,
+   "mood": "grin",
+   "pose": "present",
+   "pic": {
+    "id": "rice",
+    "at": "rice",
+    "look": "sticker"
+   },
+   "zoom": {
+    "in": "eating",
+    "out": "August"
+   },
+   "sfx": [
+    {
+     "s": "cash",
+     "at": "millionaire"
+    },
+    {
+     "s": "boing",
+     "at": "rice"
+    },
+    {
+     "s": "boom",
+     "at": "August"
+    }
+   ]
+  },
+  {
+   "id": "c2d",
+   "text": "Same farmers. Same people. Same brains. The scientists gave them puzzles before harvest and again after harvest.",
+   "host": true,
+   "mood": "suspicious",
+   "pose": "point_up",
+   "pic": {
+    "id": "puzzle",
+    "at": "puzzles",
+    "look": "sticker"
+   },
+   "sfx": [
+    {
+     "s": "ding",
+     "at": "Same"
+    },
+    {
+     "s": "pop",
+     "at": "puzzles"
+    }
+   ]
+  },
+  {
+   "id": "c2e",
+   "text": "Guess what happened. Before harvest when they were broke they did worse. After harvest they did better. The only thing that changed was the money.",
+   "host": true,
+   "mood": "shock",
+   "pose": "panic",
+   "slam": {
+    "t": "ONLY THE MONEY CHANGED",
+    "at": "only"
+   },
+   "sfx": [
+    {
+     "s": "drumroll",
+     "at": "Guess"
+    },
+    {
+     "s": "trombone",
+     "at": "worse"
+    },
+    {
+     "s": "ding",
+     "at": "better"
+    },
+    {
+     "s": "pack/01_boom",
+     "at": "money"
+    }
+   ]
+  },
+  {
+   "id": "n7",
+   "text": "My brain before payday versus after payday.",
+   "meme": {
+    "t": "brain",
+    "a": "Before payday",
+    "b": "Payday",
+    "c": "Payday plus one coffee",
+    "at": "brain"
+   },
+   "sfx": [
+    {
+     "s": "pack/01_processing",
+     "at": "brain"
+    }
+   ]
+  },
+  {
+   "id": "c2f",
+   "text": "Then the same scientists tried it at a mall in New Jersey. They asked people to imagine their car needs a repair.",
+   "pic": {
+    "id": "mall",
+    "at": "mall",
+    "look": "tape"
+   },
+   "sfx": [
+    {
+     "s": "ding",
+     "at": "mall"
+    },
+    {
+     "s": "pack/01_processing",
+     "at": "imagine"
+    }
+   ]
+  },
+  {
+   "id": "c2g",
+   "text": "When it was a cheap repair everyone did fine on the puzzles. When it was an expensive repair the people with less money suddenly did a lot worse.",
+   "pic": {
+    "id": "mechanic",
+    "at": "repair#2",
+    "look": "polaroid"
+   },
+   "sfx": [
+    {
+     "s": "coin",
+     "at": "cheap"
+    },
+    {
+     "s": "pack/02_evolve_brassy_drop_2",
+     "at": "expensive"
+    },
+    {
+     "s": "trombone",
+     "at": "worse"
+    }
+   ]
+  },
+  {
+   "id": "n34",
+   "text": "And the people with more money? They did the same no matter which repair. A big bill didn't scare them. So it didn't slow them down.",
+   "pic": {
+    "id": "businessman",
+    "at": "money",
+    "look": "tape"
+   },
+   "sfx": [
+    {
+     "s": "ding",
+     "at": "same"
+    },
+    {
+     "s": "cricket",
+     "at": "scare"
+    }
+   ]
+  },
+  {
+   "id": "c2h",
+   "text": "They didn't even have to pay for anything. Just thinking about the money problem was enough to make their brains slower.",
+   "host": true,
+   "mood": "shock",
+   "pose": "point_r",
+   "zoom": {
+    "in": "thinking",
+    "out": "slower"
+   },
+   "sfx": [
+    {
+     "s": "scratch",
+     "at": "anything"
+    },
+    {
+     "s": "boom",
+     "at": "slower"
+    }
+   ]
+  },
+  {
+   "id": "n8",
+   "text": "The researchers said it was like losing a whole night of sleep. Every single day. Just from money worry.",
+   "host": true,
+   "mood": "tired",
+   "pose": "facepalm",
+   "pic": {
+    "id": "sleepless",
+    "at": "sleep",
+    "look": "circle"
+   },
+   "slam": {
+    "t": "A NIGHT OF NO SLEEP",
+    "at": "night"
+   },
+   "sfx": [
+    {
+     "s": "pack/02_deep",
+     "at": "night"
+    },
+    {
+     "s": "tick",
+     "at": "day"
+    }
+   ]
+  },
+  {
+   "id": "n9",
+   "text": "Me trying to make smart choices on zero sleep and eleven dollars.",
+   "meme": {
+    "t": "fine",
+    "a": "I'm thinking clearly",
+    "at": "smart"
+   },
+   "sfx": [
+    {
+     "s": "cricket",
+     "at": "smart"
+    }
+   ]
+  },
+  {
+   "id": "c2i",
+   "text": "To be fair some later studies found smaller effects and scientists still argue about how big it is. But the main idea keeps coming back. Worry takes up space.",
+   "host": true,
+   "mood": "think",
+   "pose": "shrug",
+   "sfx": [
+    {
+     "s": "ding",
+     "at": "fair"
+    },
+    {
+     "s": "pack/01_processing",
+     "at": "argue"
+    },
+    {
+     "s": "stamp",
+     "at": "space"
+    }
+   ]
+  },
+  {
+   "id": "c2j",
+   "text": "Think about your phone. Ten apps running in the background. It gets hot. It gets slow. It dies at fifty percent. That's your brain on money worry.",
+   "pic": {
+    "id": "phone_hot",
+    "at": "phone",
+    "look": "tape"
+   },
+   "sfx": [
+    {
+     "s": "ding",
+     "at": "apps"
+    },
+    {
+     "s": "pack/01_beating",
+     "at": "hot"
+    },
+    {
+     "s": "trombone",
+     "at": "dies"
+    },
+    {
+     "s": "boom",
+     "at": "worry"
+    }
+   ]
+  },
+  {
+   "id": "n10",
+   "text": "It's not that you're dumb. You're running too many apps.",
+   "card": {
+    "t": "Too many apps running.",
+    "dark": true
+   },
+   "sfx": [
+    {
+     "s": "pack/01_boom",
+     "at": "apps"
+    }
+   ],
+   "pause": 0.5
+  },
+  {
+   "id": "n35",
+   "text": "Me at the end of the month trying to remember my own phone number.",
+   "meme": {
+    "t": "fine",
+    "a": "Brain at 5% battery",
+    "at": "month"
+   },
+   "sfx": [
+    {
+     "s": "cricket",
+     "at": "number"
+    }
+   ]
+  },
+  {
+   "id": "c3a",
+   "text": "And there's a second thing that happens. Scientists call it tunneling.",
+   "chapter": "The Tunnel",
+   "host": true,
+   "mood": "suspicious",
+   "pose": "point_up",
+   "slam": {
+    "t": "TUNNELING",
+    "at": "tunneling"
+   },
+   "sfx": [
+    {
+     "s": "riser",
+     "at": "second"
+    },
+    {
+     "s": "pack/03_evolve_boom_brass_d",
+     "at": "tunneling"
+    }
+   ]
+  },
+  {
+   "id": "c3b",
+   "text": "When you're broke your brain zooms in on the emergency right in front of you. Rent. Tomorrow. Now. And everything outside the tunnel just disappears.",
+   "pic": {
+    "id": "tunnel",
+    "at": "tunnel",
+    "look": "polaroid"
+   },
+   "sfx": [
+    {
+     "s": "whoosh",
+     "at": "zooms"
+    },
+    {
+     "s": "tick",
+     "at": "Tomorrow"
+    },
+    {
+     "s": "pack/01_boom",
+     "at": "disappears"
+    }
+   ]
+  },
+  {
+   "id": "n36",
+   "text": "It's like a firefighter who only sees the fire in front of him. Great at putting out that fire. Doesn't notice the house next door is starting to smoke.",
+   "pic": {
+    "id": "firefighter",
+    "at": "firefighter",
+    "look": "polaroid"
+   },
+   "sfx": [
+    {
+     "s": "whoosh",
+     "at": "fire"
+    },
+    {
+     "s": "ding",
+     "at": "Great"
+    },
+    {
+     "s": "pack/02_deep",
+     "at": "smoke"
+    }
+   ]
+  },
+  {
+   "id": "c3c",
+   "text": "It's like looking through a toilet paper roll. You can see one thing really clearly. And you can't see the giant truck coming from the side.",
+   "host": true,
+   "mood": "grin",
+   "pose": "present",
+   "pic": {
+    "id": "tp_roll",
+    "at": "toilet",
+    "look": "sticker"
+   },
+   "zoom": {
+    "in": "giant",
+    "out": "side"
+   },
+   "sfx": [
+    {
+     "s": "boing",
+     "at": "toilet"
+    },
+    {
+     "s": "pack/02_deep",
+     "at": "truck"
+    },
+    {
+     "s": "boom",
+     "at": "side"
+    }
+   ]
+  },
+  {
+   "id": "n11",
+   "text": "Me solving this week's problem by creating next month's problem.",
+   "meme": {
+    "t": "buttons",
+    "a": "Fix it now",
+    "b": "Fix it forever",
+    "at": "problem"
+   },
+   "sfx": [
+    {
+     "s": "pack/01_beating",
+     "at": "problem"
+    }
+   ]
+  },
+  {
+   "id": "c3d",
+   "text": "That's why the neon sign looked good. Inside the tunnel I only see three hundred dollars today. I don't see what I'll owe in two weeks.",
+   "host": true,
+   "mood": "sad",
+   "pose": "talk",
+   "pic": {
+    "id": "calendar",
+    "at": "weeks",
+    "look": "tape"
+   },
+   "sfx": [
+    {
+     "s": "cash",
+     "at": "hundred"
+    },
+    {
+     "s": "tick",
+     "at": "weeks"
+    }
+   ]
+  },
+  {
+   "id": "n37",
+   "text": "And the tunnel is not just loans. It's buying the cheap shoes that break in two months. It's paying the minimum. It's the rent-to-own couch that costs triple.",
+   "pic": {
+    "id": "couch",
+    "at": "couch",
+    "look": "tape"
+   },
+   "sfx": [
+    {
+     "s": "thud",
+     "at": "shoes"
+    },
+    {
+     "s": "coin",
+     "at": "minimum"
+    },
+    {
+     "s": "cash",
+     "at": "triple"
+    }
+   ]
+  },
+  {
+   "id": "n38",
+   "text": "Every one of those makes sense inside the tunnel. And every one of them makes the tunnel longer.",
+   "host": true,
+   "mood": "sad",
+   "pose": "talk",
+   "zoom": {
+    "in": "tunnel#2",
+    "out": "longer"
+   },
+   "sfx": [
+    {
+     "s": "ding",
+     "at": "sense"
+    },
+    {
+     "s": "boom",
+     "at": "longer"
+    }
+   ]
+  },
+  {
+   "id": "c3e",
+   "text": "Payday loans are built for the tunnel. Fast. Easy. One page. Because they know a person in the tunnel won't read page two.",
+   "host": true,
+   "mood": "angry",
+   "pose": "point_r",
+   "slam": {
+    "t": "BUILT FOR THE TUNNEL",
+    "at": "built"
+   },
+   "sfx": [
+    {
+     "s": "stamp",
+     "at": "built"
+    },
+    {
+     "s": "whoosh",
+     "at": "Fast"
+    },
+    {
+     "s": "paper",
+     "at": "two"
+    }
+   ]
+  },
+  {
+   "id": "n12",
+   "text": "The payday loan guy when I walk in on the twenty eighth.",
+   "meme": {
+    "t": "stonks",
+    "a": "TUNNEL CUSTOMER",
+    "at": "guy"
+   },
+   "sfx": [
+    {
+     "s": "cash",
+     "at": "guy"
+    }
+   ]
+  },
+  {
+   "id": "c3f",
+   "text": "And when the loan comes due I'm broke again. So I borrow again. The tunnel gets longer. It's a hamster wheel with interest.",
+   "pic": {
+    "id": "hamster",
+    "at": "hamster",
+    "look": "circle"
+   },
+   "sfx": [
+    {
+     "s": "pack/02_evolve_brassy_drop_2",
+     "at": "again#2"
+    },
+    {
+     "s": "boing",
+     "at": "hamster"
+    },
+    {
+     "s": "cash",
+     "at": "interest"
+    }
+   ]
+  },
+  {
+   "id": "n39",
+   "text": "Me every two weeks.",
+   "meme": {
+    "t": "brain",
+    "a": "Borrow to pay rent",
+    "b": "Borrow to pay the loan",
+    "c": "Borrow to pay the loan for the loan",
+    "at": "weeks"
+   },
+   "sfx": [
+    {
+     "s": "pack/01_processing",
+     "at": "weeks"
+    }
+   ]
+  },
+  {
+   "id": "n13",
+   "text": "Remember my video about being broke three days after payday? This is the brain part of that story.",
+   "host": true,
+   "mood": "smug",
+   "pose": "point_up",
+   "sfx": [
+    {
+     "s": "flip",
+     "at": "Remember"
+    },
+    {
+     "s": "ding",
+     "at": "brain"
+    }
+   ]
+  },
+  {
+   "id": "c3g",
+   "text": "And here's what hit me the hardest. Rich people make dumb money mistakes too. They just have room for them.",
+   "host": true,
+   "mood": "shock",
+   "pose": "panic",
+   "zoom": {
+    "in": "room",
+    "out": "them"
+   },
+   "sfx": [
+    {
+     "s": "scratch",
+     "at": "Rich"
+    },
+    {
+     "s": "boom",
+     "at": "them"
+    }
+   ]
+  },
+  {
+   "id": "c3h",
+   "text": "A rich guy forgets a bill and the late fee is a rounding error. He doesn't even notice. I forget a bill and it becomes my whole week.",
+   "pic": {
+    "id": "yacht",
+    "at": "rich",
+    "look": "tape"
+   },
+   "sfx": [
+    {
+     "s": "ding",
+     "at": "forgets"
+    },
+    {
+     "s": "coin",
+     "at": "rounding"
+    },
+    {
+     "s": "trombone",
+     "at": "week"
+    }
+   ]
+  },
+  {
+   "id": "n40",
+   "text": "Think about a pilot. Bad weather? A good plane has extra fuel. A plane with an empty tank has to land anywhere. Even in a field.",
+   "pic": {
+    "id": "cockpit",
+    "at": "pilot",
+    "look": "polaroid"
+   },
+   "sfx": [
+    {
+     "s": "ding",
+     "at": "pilot"
+    },
+    {
+     "s": "pack/01_beating",
+     "at": "weather"
+    },
+    {
+     "s": "thud",
+     "at": "field"
+    }
+   ]
+  },
+  {
+   "id": "n14",
+   "text": "Same mistake. Different damage.",
+   "card": {
+    "t": "Same mistake. Different damage.",
+    "dark": true
+   },
+   "sfx": [
+    {
+     "s": "pack/01_boom",
+     "at": "damage"
+    }
+   ],
+   "pause": 0.5
+  },
+  {
+   "id": "c3i",
+   "text": "It's like two people walking on a cliff. One has a fence. One doesn't. They both trip the same amount. Only one of them falls.",
+   "pic": {
+    "id": "cliff",
+    "at": "cliff",
+    "look": "polaroid"
+   },
+   "sfx": [
+    {
+     "s": "whoosh",
+     "at": "walking"
+    },
+    {
+     "s": "thud",
+     "at": "trip"
+    },
+    {
+     "s": "pack/02_evolve_brassy_drop_2",
+     "at": "falls"
+    }
+   ]
+  },
+  {
+   "id": "n15",
+   "text": "So when someone says poor people just make bad choices? Put them in the tunnel for a month. Let's see their choices.",
+   "host": true,
+   "mood": "angry",
+   "pose": "point_r",
+   "zoom": {
+    "in": "see",
+    "out": "choices#2"
+   },
+   "sfx": [
+    {
+     "s": "scratch",
+     "at": "bad"
+    },
+    {
+     "s": "boom",
+     "at": "choices#2"
+    }
+   ]
+  },
+  {
+   "id": "n16",
+   "text": "People who never had a money problem explaining money problems.",
+   "meme": {
+    "t": "fine",
+    "a": "Just stop buying coffee",
+    "at": "explaining"
+   },
+   "sfx": [
+    {
+     "s": "cricket",
+     "at": "explaining"
+    }
+   ]
+  },
+  {
+   "id": "c3j",
+   "text": "Being broke isn't a personality. It's a weight on your back while you're taking a test.",
+   "card": {
+    "t": "It's a weight. Not a personality.",
+    "dark": true
+   },
+   "sfx": [
+    {
+     "s": "pack/01_boom",
+     "at": "weight"
+    }
+   ],
+   "pause": 0.5
+  },
+  {
+   "id": "c4a",
+   "text": "So how do I get out? Willpower? Nope. Willpower lives in the same brain the bills are eating.",
+   "chapter": "Building Slack",
+   "host": true,
+   "mood": "happy",
+   "pose": "point_up",
+   "sfx": [
+    {
+     "s": "pack/01_processing",
+     "at": "out"
+    },
+    {
+     "s": "scratch",
+     "at": "Nope"
+    },
+    {
+     "s": "boom",
+     "at": "eating"
+    }
+   ]
+  },
+  {
+   "id": "c4b",
+   "text": "The answer scientists keep pointing to is one word. Slack. A little room. A little space between you and the cliff.",
+   "host": true,
+   "mood": "smug",
+   "pose": "present",
+   "slam": {
+    "t": "SLACK",
+    "at": "Slack"
+   },
+   "pic": {
+    "id": "rope",
+    "at": "Slack",
+    "look": "sticker"
+   },
+   "sfx": [
+    {
+     "s": "drumroll",
+     "at": "answer"
+    },
+    {
+     "s": "pack/01_boom",
+     "at": "Slack"
+    },
+    {
+     "s": "ding",
+     "at": "space"
+    }
+   ]
+  },
+  {
+   "id": "c4c",
+   "text": "Quick reminder this is education and not advice. But here's how I started building mine.",
+   "host": true,
+   "mood": "happy",
+   "pose": "thumbs",
+   "sfx": [
+    {
+     "s": "ding",
+     "at": "started"
+    }
+   ]
+  },
+  {
+   "id": "c4d",
+   "text": "First a tiny emergency fund. Not six months of salary. Just enough so a flat tire isn't a disaster. Even a few hundred dollars changes how your brain feels.",
+   "pic": {
+    "id": "jar",
+    "at": "fund",
+    "look": "circle"
+   },
+   "sfx": [
+    {
+     "s": "coin",
+     "at": "tiny"
+    },
+    {
+     "s": "thud",
+     "at": "tire"
+    },
+    {
+     "s": "pack/01_evolve_brassy_swell",
+     "at": "feels"
+    }
+   ]
+  },
+  {
+   "id": "n41",
+   "text": "Start stupidly small. Five dollars a week. Put it somewhere boring. Don't touch it. In a year that's a flat tire you can survive.",
+   "host": true,
+   "mood": "happy",
+   "pose": "point_up",
+   "pic": {
+    "id": "coins",
+    "at": "Five",
+    "look": "sticker"
+   },
+   "slam": {
+    "t": "$5 A WEEK",
+    "at": "Five"
+   },
+   "sfx": [
+    {
+     "s": "coin",
+     "at": "Five"
+    },
+    {
+     "s": "ding",
+     "at": "boring"
+    },
+    {
+     "s": "crowd",
+     "at": "survive"
+    }
+   ]
+  },
+  {
+   "id": "n17",
+   "text": "The first time I had two hundred dollars I wasn't planning to spend I slept like a baby. For real. My brain finally closed a few tabs.",
+   "host": true,
+   "mood": "money",
+   "pose": "celebrate",
+   "pic": {
+    "id": "baby",
+    "at": "baby",
+    "look": "sticker"
+   },
+   "zoom": {
+    "in": "closed",
+    "out": "tabs"
+   },
+   "sfx": [
+    {
+     "s": "ding",
+     "at": "slept"
+    },
+    {
+     "s": "pop",
+     "at": "baby"
+    },
+    {
+     "s": "boom",
+     "at": "tabs"
+    }
+   ]
+  },
+  {
+   "id": "n18",
+   "text": "Me with a two hundred dollar emergency fund.",
+   "meme": {
+    "t": "stonks",
+    "a": "UNSHAKEABLE",
+    "at": "fund"
+   },
+   "sfx": [
+    {
+     "s": "pack/01_evolve_brassy_swell",
+     "at": "fund"
+    }
+   ]
+  },
+  {
+   "id": "c4e",
+   "text": "Second I automated my bills. Every bill pays itself on payday. So the twenty eighth me never has to remember anything. Payday me already handled it.",
+   "pic": {
+    "id": "autopay",
+    "at": "automated",
+    "look": "tape"
+   },
+   "sfx": [
+    {
+     "s": "click",
+     "at": "automated"
+    },
+    {
+     "s": "ding",
+     "at": "itself"
+    },
+    {
+     "s": "stamp",
+     "at": "handled"
+    }
+   ]
+  },
+  {
+   "id": "n42",
+   "text": "My bills paying themselves while I sleep.",
+   "meme": {
+    "t": "stonks",
+    "a": "ZERO LATE FEES",
+    "at": "sleep"
+   },
+   "sfx": [
+    {
+     "s": "ding",
+     "at": "sleep"
+    }
+   ]
+  },
+  {
+   "id": "n19",
+   "text": "Let smart you make the decisions so tired you doesn't have to.",
+   "host": true,
+   "mood": "smug",
+   "pose": "point_r",
+   "slam": {
+    "t": "SMART YOU DECIDES",
+    "at": "smart"
+   },
+   "sfx": [
+    {
+     "s": "ding",
+     "at": "smart"
+    },
+    {
+     "s": "boom",
+     "at": "have"
+    }
+   ]
+  },
+  {
+   "id": "c4f",
+   "text": "Third I moved my savings to a different bank. One I don't see in my app every day. Out of sight. Out of the tunnel.",
+   "pic": {
+    "id": "piggy",
+    "at": "savings",
+    "look": "sticker"
+   },
+   "sfx": [
+    {
+     "s": "whoosh",
+     "at": "moved"
+    },
+    {
+     "s": "ding",
+     "at": "different"
+    },
+    {
+     "s": "pop",
+     "at": "tunnel"
+    }
+   ]
+  },
+  {
+   "id": "n43",
+   "text": "It's like hiding cookies on the top shelf. You can still get them. You just have to really want them. And at eleven at night you usually don't.",
+   "pic": {
+    "id": "cookies",
+    "at": "cookies",
+    "look": "sticker"
+   },
+   "sfx": [
+    {
+     "s": "pop",
+     "at": "cookies"
+    },
+    {
+     "s": "boing",
+     "at": "shelf"
+    },
+    {
+     "s": "tick",
+     "at": "eleven"
+    }
+   ]
+  },
+  {
+   "id": "c4g",
+   "text": "Fourth I made big money decisions only on payday. Never on the twenty eighth. The twenty eighth me is not allowed to sign anything.",
+   "host": true,
+   "mood": "grin",
+   "pose": "present",
+   "zoom": {
+    "in": "not",
+    "out": "anything"
+   },
+   "sfx": [
+    {
+     "s": "stamp",
+     "at": "payday"
+    },
+    {
+     "s": "scratch",
+     "at": "Never"
+    },
+    {
+     "s": "boom",
+     "at": "anything"
+    }
+   ]
+  },
+  {
+   "id": "n20",
+   "text": "Twenty eighth me trying to sign up for anything.",
+   "meme": {
+    "t": "drake",
+    "a": "Signing a loan on the 28th",
+    "b": "Waiting until payday",
+    "at": "sign"
+   },
+   "sfx": [
+    {
+     "s": "pop",
+     "at": "sign"
+    }
+   ]
+  },
+  {
+   "id": "c4h",
+   "text": "And fifth I cleared the junk. Every little subscription and every tiny decision I didn't need. Fewer things to juggle means more brain left over.",
+   "pic": {
+    "id": "juggler",
+    "at": "juggle",
+    "look": "polaroid"
+   },
+   "sfx": [
+    {
+     "s": "pop",
+     "at": "subscription"
+    },
+    {
+     "s": "boing",
+     "at": "juggle"
+    },
+    {
+     "s": "ding",
+     "at": "brain"
+    }
+   ]
+  },
+  {
+   "id": "n44",
+   "text": "Me deleting eleven apps that each wanted four dollars a month.",
+   "meme": {
+    "t": "drake",
+    "a": "Eleven subscriptions",
+    "b": "One brain with free space",
+    "at": "deleting"
+   },
+   "sfx": [
+    {
+     "s": "pop",
+     "at": "deleting"
+    }
+   ]
+  },
+  {
+   "id": "c4i",
+   "text": "And then something cool happened. With a little slack my decisions got better. Better decisions gave me more slack. The loop started spinning the other way.",
+   "host": true,
+   "mood": "happy",
+   "pose": "celebrate",
+   "slam": {
+    "t": "THE LOOP REVERSED",
+    "at": "loop"
+   },
+   "sfx": [
+    {
+     "s": "riser",
+     "at": "cool"
+    },
+    {
+     "s": "pack/01_evolve_brassy_swell",
+     "at": "loop"
+    },
+    {
+     "s": "crowd",
+     "at": "way"
+    }
+   ]
+  },
+  {
+   "id": "n47",
+   "text": "Six months later I opened every letter the day it arrived. I even answered my mom on time. She asked if I was sick.",
+   "host": true,
+   "mood": "grin",
+   "pose": "shrug",
+   "pic": {
+    "id": "mailbox",
+    "at": "letter",
+    "look": "circle"
+   },
+   "zoom": {
+    "in": "was",
+    "out": "sick"
+   },
+   "sfx": [
+    {
+     "s": "mail",
+     "at": "letter"
+    },
+    {
+     "s": "ding",
+     "at": "mom"
+    },
+    {
+     "s": "boom",
+     "at": "sick"
+    }
+   ]
+  },
+  {
+   "id": "n21",
+   "text": "That's the whole secret. You don't need a smarter brain. You need an emptier one.",
+   "host": true,
+   "mood": "smug",
+   "pose": "point_up",
+   "zoom": {
+    "in": "emptier",
+    "out": "one"
+   },
+   "sfx": [
+    {
+     "s": "ding",
+     "at": "secret"
+    },
+    {
+     "s": "boom",
+     "at": "one"
+    }
+   ]
+  },
+  {
+   "id": "n22",
+   "text": "And that's where investing comes in later. Money that grows quietly is the biggest slack there is. But you build the fence first. Then you build the tree.",
+   "pic": {
+    "id": "tree",
+    "at": "grows",
+    "look": "polaroid"
+   },
+   "sfx": [
+    {
+     "s": "ding",
+     "at": "investing"
+    },
+    {
+     "s": "pack/01_evolve_brassy_swell",
+     "at": "grows"
+    },
+    {
+     "s": "stamp",
+     "at": "fence"
+    }
+   ]
+  },
+  {
+   "id": "n45",
+   "text": "And the cool part? Once you have slack you finally have the brainpower to learn the stuff nobody taught you. Like how investing actually works.",
+   "host": true,
+   "mood": "smug",
+   "pose": "point_r",
+   "pic": {
+    "id": "library",
+    "at": "learn",
+    "look": "tape"
+   },
+   "sfx": [
+    {
+     "s": "ding",
+     "at": "slack"
+    },
+    {
+     "s": "pack/01_evolve_brassy_swell",
+     "at": "investing"
+    }
+   ]
+  },
+  {
+   "id": "r1",
+   "text": "So remember the one small thing. A tiny cushion. Not to get rich. To get your brain back.",
+   "host": true,
+   "mood": "happy",
+   "pose": "point_up",
+   "slam": {
+    "t": "GET YOUR BRAIN BACK",
+    "at": "brain"
+   },
+   "sfx": [
+    {
+     "s": "drumroll",
+     "at": "remember"
+    },
+    {
+     "s": "pack/01_boom",
+     "at": "brain"
+    }
+   ]
+  },
+  {
+   "id": "r2",
+   "text": "If you're in the tunnel right now you're not lazy and you're not dumb. You're carrying a weight. Put a little bit down every month.",
+   "host": true,
+   "mood": "smug",
+   "pose": "present",
+   "zoom": {
+    "in": "not",
+    "out": "dumb"
+   },
+   "sfx": [
+    {
+     "s": "scratch",
+     "at": "lazy"
+    },
+    {
+     "s": "boom",
+     "at": "dumb"
+    },
+    {
+     "s": "ding",
+     "at": "month"
+    }
+   ]
+  },
+  {
+   "id": "r3",
+   "text": "Broke isn't who you are. It's where you are. And you can leave.",
+   "card": {
+    "t": "You can leave.",
+    "dark": true
+   },
+   "sfx": [
+    {
+     "s": "pack/01_boom",
+     "at": "leave"
+    }
+   ],
+   "pause": 0.5
+  },
+  {
+   "id": "r4",
+   "text": "Oh and that neon sign store? I walked past it last week. On the twenty eighth. Didn't even slow down.",
+   "host": true,
+   "mood": "grin",
+   "pose": "thumbs",
+   "pic": {
+    "id": "walk",
+    "at": "walked",
+    "look": "tape"
+   },
+   "sfx": [
+    {
+     "s": "whoosh",
+     "at": "walked"
+    },
+    {
+     "s": "crowd",
+     "at": "down"
+    }
+   ]
+  },
+  {
+   "id": "r5",
+   "text": "Next time I find out why school taught me the Pythagorean theorem but never once told me how a credit card works.",
+   "pic": {
+    "id": "school",
+    "at": "school",
+    "look": "polaroid"
+   },
+   "sfx": [
+    {
+     "s": "ding",
+     "at": "school"
+    },
+    {
+     "s": "scratch",
+     "at": "never"
+    },
+    {
+     "s": "cash",
+     "at": "card"
+    }
+   ]
+  },
+  {
+   "id": "r6",
+   "text": "Subscribe. It takes one click. Even on the twenty eighth.",
+   "host": true,
+   "mood": "grin",
+   "pose": "wave",
+   "zoom": {
+    "in": "Even",
+    "out": "eighth"
+   },
+   "sfx": [
+    {
+     "s": "ding",
+     "at": "Subscribe"
+    },
+    {
+     "s": "boom",
+     "at": "eighth"
+    }
+   ]
+  }
+ ]
+}
