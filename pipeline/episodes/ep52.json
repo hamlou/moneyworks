@@ -1,398 +1,1866 @@
 {
-  "id": "ep52",
-  "title": "Why 'Get Rich' Gurus Sell Courses Instead of Doing It",
-  "spine": {
-    "goal": "Dave wants the guru's 'million-dollar system' so he can quit his job. He already paid $1,997 for a three-day workshop and is about to pay $9,997 for the 'Platinum' level.",
-    "stakes": "$9,997 on a credit card (on top of the $1,997 already gone) - more than everything Dave has saved.",
-    "central_question": "If the guru's system really makes a million dollars a year, why is he selling it to Dave instead of just using it?",
-    "loop_big": "The one question that made the guru's enrollment coach hang up on Dave (promised in o6, paid in ch8).",
-    "loop_mid": "Pause-and-guess (ch2, ~30%): how high did the upsell ladder go in a real FTC case? Paid at the end of ch3: $41,297 (Zurixx).",
-    "villain": "The course-selling funnel itself: the course IS the business. Revealed at ~50% with MOBE ($125M+ per the FTC), where 'the primary thing MOBE sells is more MOBE memberships'.",
-    "low_point": "~75%: the 'risk-free' refund turns into a maze, Dave's workshop buddy Kevin is told the fix is buying the next level, and Dave is tempted to spend $9,997 to 'earn it back'.",
-    "win": "Dave learns what the FTC already says about earnings claims and pressure tactics, keeps proof, reports it, asks his card company about a dispute, closes the Platinum tab (SAVED $9,997) and asks the one question that ends the pitch."
-  },
-  "sources": [
-    "FTC press release, June 2018, 'FTC Action Halts MOBE, a Massive Internet Business Coaching Scheme': defendants allegedly took more than $125 million from thousands of consumers; $49 entry fee for a '21-step system', then membership packages costing thousands of dollars; the 'proven system' turned out to be selling the same memberships to others; most buyers could not recoup their costs, some lost more than $20,000; refunds often refused or paid only after persistent demands (ftc.gov/news-events/news/press-releases/2018/06/ftc-action-halts-mobe-massive-internet-business-coaching-scheme)",
-    "FTC Business Blog, June 2018, 'FTC alleges MOBE tells a whale of a tale with misleading money-making claims': 21-Step System for $49 or less; Gold Masterclass $4,997; Diamond Mastermind $29,997; FTC: 'the primary thing MOBE sells is more MOBE memberships'; fine print: 'the average Consultant ... generates less than $250 per year'; '100% risk-free' 30-day money-back promise (ftc.gov/business-guidance/blog/2018/06/ftc-alleges-mobe-tells-whale-tale-misleading-money-making-claims)",
-    "FTC press release, Oct 2019, 'FTC Acts Against Company Using Celebrity Endorsements, Bogus Earnings Claims to Sell Real Estate Seminars' (Zurixx, with Utah Division of Consumer Protection): free event was a sales pitch for a $1,997 three-day workshop, described as 'beginner' level; upsells cost as much as $41,297; presenters routinely told attendees to get new credit cards or raise credit limits; some refund recipients had to sign agreements barring them from speaking with the FTC (ftc.gov/news-events/news/press-releases/2019/10/ftc-acts-against-company-using-celebrity-endorsements-bogus-earnings-claims-sell-real-estate)",
-    "FTC press release, July 2024, 'FTC Sends More Than $12 Million in Refunds to Consumers Harmed by Zurixx': more than $12 million to 25,563 consumers; February 2022 settlement permanently banned the defendants from selling real estate or business coaching programs (ftc.gov/news-events/news/press-releases/2024/07/ftc-sends-more-12-million-refunds-consumers-harmed-zurixx-real-estate-investment-coaching-scheme)",
-    "FTC press release, 26 Oct 2021, 'FTC Puts Businesses on Notice that False Money-Making Claims Could Lead to Big Penalties': Notice of Penalty Offenses sent to more than 1,100 businesses including business coaching; listed deceptive practices include misrepresenting earnings, claiming profits are typical, claiming no experience is needed, and claiming consumers must act immediately",
-    "FTC press release, 13 Jan 2025, 'FTC Proposes Rule Changes and New Rule to Deter Deceptive Earnings Claims by Multilevel Marketers and Money-Making Opportunity Sellers': proposal (3-2 vote) to extend the Business Opportunity Rule (16 CFR 437) to money-making opportunities such as business coaching; sellers would need written substantiation for earnings claims; deceptive earnings claims are already illegal",
-    "PBS American Experience, 'The Gold Rush' (film and companion features): Sam Brannan waved a vial of gold through San Francisco shouting 'Gold! Gold from the American River!' after stocking up on prospecting supplies; sales at his store near the mines totaled $36,000 in May, June and early July 1848; he never mined, and became California's first millionaire; most miners did hard labor and many ended up as wage workers",
-    "FTC ReportFraud portal: reportfraud.ftc.gov (where consumers report money-making scams)",
-    "Illustrative math (story, not a statistic): $1,997 x 1,000 buyers = $1,997,000 in revenue for one recorded workshop. Dave, Kevin, the guru and the coach are fictional characters."
+ "id": "ep52",
+ "title": "Why 'Get Rich' Gurus Sell Courses Instead of Doing It",
+ "voice": "chatterbox",
+ "upgraded": "2026-10-19 UPGRADE.md v2",
+ "sources": [
+  "FTC press release, June 2018, 'FTC Action Halts MOBE, a Massive Internet Business Coaching Scheme': defendants allegedly took more than $125 million from thousands of consumers; $49 entry fee for a '21-step system', then membership packages costing thousands of dollars; the 'proven system' turned out to be selling the same memberships to others; most buyers could not recoup their costs, some lost more than $20,000; refunds often refused or paid only after persistent demands (ftc.gov/news-events/news/press-releases/2018/06/ftc-action-halts-mobe-massive-internet-business-coaching-scheme)",
+  "FTC Business Blog, June 2018, 'FTC alleges MOBE tells a whale of a tale with misleading money-making claims': 21-Step System for $49 or less; Gold Masterclass $4,997; Diamond Mastermind $29,997; FTC: 'the primary thing MOBE sells is more MOBE memberships'; fine print: 'the average Consultant ... generates less than $250 per year'; '100% risk-free' 30-day money-back promise (ftc.gov/business-guidance/blog/2018/06/ftc-alleges-mobe-tells-whale-tale-misleading-money-making-claims)",
+  "FTC press release, Oct 2019, 'FTC Acts Against Company Using Celebrity Endorsements, Bogus Earnings Claims to Sell Real Estate Seminars' (Zurixx, with Utah Division of Consumer Protection): free event was a sales pitch for a $1,997 three-day workshop, described as 'beginner' level; upsells cost as much as $41,297; presenters routinely told attendees to get new credit cards or raise credit limits; some refund recipients had to sign agreements barring them from speaking with the FTC (ftc.gov/news-events/news/press-releases/2019/10/ftc-acts-against-company-using-celebrity-endorsements-bogus-earnings-claims-sell-real-estate)",
+  "FTC press release, July 2024, 'FTC Sends More Than $12 Million in Refunds to Consumers Harmed by Zurixx': more than $12 million to 25,563 consumers; February 2022 settlement permanently banned the defendants from selling real estate or business coaching programs (ftc.gov/news-events/news/press-releases/2024/07/ftc-sends-more-12-million-refunds-consumers-harmed-zurixx-real-estate-investment-coaching-scheme)",
+  "FTC press release, 26 Oct 2021, 'FTC Puts Businesses on Notice that False Money-Making Claims Could Lead to Big Penalties': Notice of Penalty Offenses sent to more than 1,100 businesses including business coaching; listed deceptive practices include misrepresenting earnings, claiming profits are typical, claiming no experience is needed, and claiming consumers must act immediately",
+  "FTC press release, 13 Jan 2025, 'FTC Proposes Rule Changes and New Rule to Deter Deceptive Earnings Claims by Multilevel Marketers and Money-Making Opportunity Sellers': proposal (3-2 vote) to extend the Business Opportunity Rule (16 CFR 437) to money-making opportunities such as business coaching; sellers would need written substantiation for earnings claims; deceptive earnings claims are already illegal",
+  "PBS American Experience, 'The Gold Rush' (film and companion features): Sam Brannan waved a vial of gold through San Francisco shouting 'Gold! Gold from the American River!' after stocking up on prospecting supplies; sales at his store near the mines totaled $36,000 in May, June and early July 1848; he never mined, and became California's first millionaire; most miners did hard labor and many ended up as wage workers",
+  "FTC ReportFraud portal: reportfraud.ftc.gov (where consumers report money-making scams)",
+  "Illustrative math (story, not a statistic): $1,997 x 1,000 buyers = $1,997,000 in revenue for one recorded workshop. Dave, Kevin, the guru and the coach are fictional characters.",
+  "FTC v. MOBE Ltd. (2018) complaint and settlement",
+  "FTC v. Zurixx LLC (2019) complaint",
+  "FTC Notice of Penalty Offenses Concerning Money-Making Opportunities (Oct 2021)",
+  "FTC proposed Earnings Claim Rule for business opportunities and coaching (2025)",
+  "Sam Brannan and the 1848 Gold Rush (California State Library)"
+ ],
+ "youtube": {
+  "title": "Why 'Get Rich' Gurus Sell You Courses Instead of Doing It",
+  "alt_titles": [
+   "You Paid $1,997 for His System. Why Is He Selling It?",
+   "Why Your 'Free Training' Always Ends With an Upsell"
   ],
-  "beats": [
-    {
-      "id": "o1",
-      "text": "Two A M. Dave is about to pay nine thousand nine hundred ninety seven dollars.",
-      "pause": 0.3
-    },
-    {
-      "id": "o2",
-      "text": "For a course on getting rich. Yep, that's Dave. Rewind.",
-      "pause": 0.3
-    },
-    {
-      "id": "o3",
-      "text": "Three weeks earlier, a mansion guy said: I made a million last year.",
-      "pause": 0.3
-    },
-    {
-      "id": "o4",
-      "text": "The F T C says one program like this took over one hundred twenty five million dollars.",
-      "pause": 0.3
-    },
-    {
-      "id": "o5",
-      "text": "So why would a millionaire sell his secret?",
-      "pause": 0.3
-    },
-    {
-      "id": "o6",
-      "text": "Stay for the one question that made the guru hang up.",
-      "pause": 0.6
-    },
-    {
-      "id": "c1a",
-      "chapter": "The Free Training Catch",
-      "text": "So Dave clicked. Free training. Ninety minutes. He grabbed a snack and got ready for the secret.",
-      "pause": 0.5
-    },
-    {
-      "id": "c1b",
-      "text": "Minute one, the guru showed his mansion. Minute ten, his car. Minute forty, a jet ski.",
-      "pause": 0.5
-    },
-    {
-      "id": "c1c",
-      "text": "Minute eighty five. Still no secret. But there was an offer. A three day workshop, for one thousand nine hundred ninety seven dollars. Only twenty spots. And a timer.",
-      "pause": 0.5
-    },
-    {
-      "id": "c1d",
-      "text": "It's like a free sample at the grocery store. Except the guy with the toothpick follows you all the way to the checkout.",
-      "pause": 0.6
-    },
-    {
-      "id": "c1e",
-      "text": "Dave watched the spots tick down. Nineteen. Eighteen. Seventeen. He bought one.",
-      "pause": 0.5
-    },
-    {
-      "id": "c1f",
-      "text": "And on day one of the workshop, Dave heard a sentence he'd hear again and again. This is just the beginner level.",
-      "pause": 0.9
-    },
-    {
-      "id": "c2a",
-      "chapter": "Just The Beginner Level",
-      "text": "Day one, Dave filled a whole notebook. Lots of excitement. Very few actual steps.",
-      "pause": 0.5
-    },
-    {
-      "id": "c2b",
-      "text": "Day two, the guru explained. The real system lives in the advanced program. Gold. Platinum. Diamond.",
-      "pause": 0.5
-    },
-    {
-      "id": "c2c",
-      "text": "It's like a game that's free to download. Then the sword costs money. Then the armor. Then the horse. And somehow you never reach the castle.",
-      "pause": 0.6
-    },
-    {
-      "id": "c2d",
-      "text": "And this isn't a made up guru trick. The F T C sued a real estate coaching company called Zurixx. First, a free event. Then a three day workshop for one thousand nine hundred ninety seven dollars. Then the upsells.",
-      "pause": 0.5
-    },
-    {
-      "id": "c2e",
-      "text": "Quick guess. How high did that ladder go? What did the most expensive package cost? Write your number in the comments. The answer is in a minute.",
-      "pause": 0.7
-    },
-    {
-      "id": "c2f",
-      "text": "Back at the workshop, a coach pulled Dave aside. Platinum, he said. Nine thousand nine hundred ninety seven dollars. Credit limit too low? Just call your card and ask for more.",
-      "pause": 0.5
-    },
-    {
-      "id": "c2g",
-      "text": "Dave had one night to decide. So he did something the guru never taught. He looked the guru up.",
-      "pause": 0.9
-    },
-    {
-      "id": "c3a",
-      "chapter": "Who Sold The Shovels?",
-      "text": "Dave searched the mansion photo. It was a vacation rental. You can book it by the night.",
-      "pause": 0.5
-    },
-    {
-      "id": "c3b",
-      "text": "Then he searched for the guru's million dollar business. He found exactly one business. The course.",
-      "pause": 0.6
-    },
-    {
-      "id": "c3c",
-      "text": "And that reminded Dave of a story from eighteen forty eight.",
-      "pause": 0.4
-    },
-    {
-      "id": "c3d",
-      "text": "A shopkeeper named Sam Brannan ran through San Francisco, waving a little bottle of gold, shouting: Gold! Gold from the American River!",
-      "pause": 0.5
-    },
-    {
-      "id": "c3e",
-      "text": "Thousands rushed off to dig. But Brannan had already stocked up on picks, pans and shovels. His store near the mines sold thirty six thousand dollars of goods in about two months.",
-      "pause": 0.5
-    },
-    {
-      "id": "c3f",
-      "text": "Most miners got blisters. Brannan became California's first millionaire. And he never dug for gold.",
-      "pause": 0.6
-    },
-    {
-      "id": "c3g",
-      "text": "Oh, and the answer to the guess. In the Zurixx case, the upsells went as high as forty one thousand two hundred ninety seven dollars. For coaching.",
-      "pause": 0.6
-    },
-    {
-      "id": "c3h",
-      "text": "So Dave asked himself the scary question. What if the course isn't how the guru got rich? What if the course is the gold?",
-      "pause": 0.9
-    },
-    {
-      "id": "c4a",
-      "chapter": "The Course Is The Gold",
-      "text": "Dave went looking for the biggest case he could find. Remember that one hundred twenty five million dollars? That program was called MOBE. My Online Business Education.",
-      "pause": 0.5
-    },
-    {
-      "id": "c4b",
-      "text": "It started at forty nine dollars, for a twenty one step system. Then came the masterclasses. Gold, four thousand nine hundred ninety seven dollars. Diamond, twenty nine thousand nine hundred ninety seven.",
-      "pause": 0.5
-    },
-    {
-      "id": "c4c",
-      "text": "And the proven system for making money? According to the F T C, it was mostly selling more of the same memberships to other people.",
-      "pause": 0.5
-    },
-    {
-      "id": "c4d",
-      "text": "In the F T C's own words, the primary thing MOBE sells is more MOBE memberships.",
-      "pause": 0.6
-    },
-    {
-      "id": "c4e",
-      "text": "It's like a restaurant where the only dish on the menu is a recipe for opening a restaurant.",
-      "pause": 0.6
-    },
-    {
-      "id": "c4f",
-      "text": "And the fine print? The average member made less than two hundred fifty dollars a year. Some people lost more than twenty thousand.",
-      "pause": 0.6
-    },
-    {
-      "id": "c4g",
-      "text": "So there's the villain. Not one guy in a mansion. The machine behind him. A sales funnel built to move you up one more step, again and again.",
-      "pause": 0.7
-    },
-    {
-      "id": "c4h",
-      "text": "But that left Dave with a weird question. If someone really had a money machine, why would they sell it at all?",
-      "pause": 0.9
-    },
-    {
-      "id": "c5a",
-      "chapter": "Why Sell A Secret?",
-      "text": "Dave thought about his uncle's secret fishing spot. It's full of fish. And his uncle has never told anyone where it is.",
-      "pause": 0.5
-    },
-    {
-      "id": "c5b",
-      "text": "Because if he sold a map to a thousand people, the spot would be empty by Tuesday.",
-      "pause": 0.6
-    },
-    {
-      "id": "c5c",
-      "text": "Real money tricks work the same way. The more people use them, the less they work. So a real secret gets kept, not sold.",
-      "pause": 0.5
-    },
-    {
-      "id": "c5d",
-      "text": "But a course is a different animal. You record it once and sell it forever. No shop. No stock. No risk.",
-      "pause": 0.5
-    },
-    {
-      "id": "c5e",
-      "text": "Do the math. A one thousand nine hundred ninety seven dollar workshop, sold to a thousand people, is almost two million dollars. Even if nobody in the room ever flips a single house.",
-      "pause": 0.6
-    },
-    {
-      "id": "c5f",
-      "text": "Dave used to think: he's rich, so he must know the secret. Nope. He's rich because people like Dave believed he knew the secret.",
-      "pause": 0.7
-    },
-    {
-      "id": "c5g",
-      "text": "So Dave decided to get his money back. That's when things got worse.",
-      "pause": 0.9
-    },
-    {
-      "id": "c6a",
-      "chapter": "The Refund Maze",
-      "text": "Dave emailed support. The sales page had promised: one hundred percent risk free. Thirty day money back guarantee.",
-      "pause": 0.5
-    },
-    {
-      "id": "c6b",
-      "text": "Reply one. Please fill out the form. Reply two. First, you must finish every lesson. Reply three. Nothing.",
-      "pause": 0.5
-    },
-    {
-      "id": "c6c",
-      "text": "It was like pushing a revolving door. Lots of effort, and you always end up right where you started.",
-      "pause": 0.5
-    },
-    {
-      "id": "c6d",
-      "text": "And it's not just Dave's bad luck. The F T C says MOBE often refused refunds, or paid only after people kept demanding. In the Zurixx case, some people had to sign a paper promising not to talk to the F T C.",
-      "pause": 0.6
-    },
-    {
-      "id": "c6e",
-      "text": "Then Dave's workshop buddy Kevin texted. He'd bought Platinum, on two credit cards. And his coach had the perfect fix. Buy the next level.",
-      "pause": 0.5
-    },
-    {
-      "id": "c6f",
-      "text": "Dave stared at his own Platinum offer. Still open. Two spots left. Maybe he had to spend more to earn it all back?",
-      "pause": 0.7
-    },
-    {
-      "id": "c6g",
-      "text": "It looked hopeless. But there's one thing these gurus really don't want you to know. And it's sitting right there in the rules.",
-      "pause": 0.9
-    },
-    {
-      "id": "c7a",
-      "chapter": "Dave Fights Back",
-      "text": "Dave opened the F T C website. Quick reminder, this is education, not advice.",
-      "pause": 0.5
-    },
-    {
-      "id": "c7b",
-      "text": "Clue one. Lying about earnings is already illegal. In twenty twenty one, the F T C warned more than eleven hundred companies, including business coaching sellers, that fake money claims could bring big penalties.",
-      "pause": 0.5
-    },
-    {
-      "id": "c7c",
-      "text": "Clue two. That warning even lists the tricks. Saying the profits are typical. Saying you don't need experience. Saying you must act immediately. Dave's countdown timer suddenly looked very different.",
-      "pause": 0.5
-    },
-    {
-      "id": "c7d",
-      "text": "Clue three. In twenty twenty five, the F T C proposed rules aimed right at business coaching. Any earnings claim would need written proof behind it.",
-      "pause": 0.5
-    },
-    {
-      "id": "c7e",
-      "text": "So Dave made a plan. He saved screenshots of every promise. He reported the program at report fraud dot F T C dot gov. And he asked his card company about disputing the charge.",
-      "pause": 0.5
-    },
-    {
-      "id": "c7f",
-      "text": "And the Platinum offer? Dave closed the tab. Nine thousand nine hundred ninety seven dollars, saved.",
-      "pause": 0.7
-    },
-    {
-      "id": "c7g",
-      "text": "But Dave still had one call booked with his enrollment coach. And this time, he'd prepared a question.",
-      "pause": 0.9
-    },
-    {
-      "id": "c8a",
-      "chapter": "The Question Gurus Hate",
-      "text": "The coach picked up, all smiles. So, Dave. Ready for Platinum?",
-      "pause": 0.5
-    },
-    {
-      "id": "c8b",
-      "text": "Dave said: maybe. One question first. What did your typical student earn last year, after paying for the program? And can you send that in writing?",
-      "pause": 0.7
-    },
-    {
-      "id": "c8c",
-      "text": "Silence. Then: well, results vary. Then: oh, I have another call. Click.",
-      "pause": 0.7
-    },
-    {
-      "id": "c8d",
-      "text": "That's the question. Not how much did you make. How much did your typical buyer make. In writing.",
-      "pause": 0.5
-    },
-    {
-      "id": "c8e",
-      "text": "Because the guru's real number was never his income. It was how many Daves bought the course.",
-      "pause": 0.6
-    },
-    {
-      "id": "c8f",
-      "text": "A guy with a real money machine doesn't need your two thousand dollars. A guy selling one does.",
-      "pause": 0.9
-    },
-    {
-      "id": "r1",
-      "chapter": "What Dave Learned",
-      "text": "One. If someone sells the secret, the selling is the business.",
-      "pause": 0.4
-    },
-    {
-      "id": "r2",
-      "text": "Two. Free training is just the first step of a long ladder.",
-      "pause": 0.4
-    },
-    {
-      "id": "r3",
-      "text": "Three. Ask what the typical buyer earned. In writing.",
-      "pause": 0.6
-    },
-    {
-      "id": "r4",
-      "text": "A week later, Bob knocked on Dave's door. Not with a course. With a business opportunity. And Bob swears it's not a pyramid.",
-      "pause": 0.6
-    },
-    {
-      "id": "r5",
-      "text": "Subscribe, so the raccoon can't sell you a course on spotting raccoons.",
-      "pause": 1.4
+  "hook": "It's 2 AM and Dave is about to pay $9,997 for a course on getting rich. If the system really works, why is the guru selling it instead of using it? Dave joins a free webinar, buys a $1,997 'beginner' workshop, and is one click away from the $9,997 Platinum level. We follow the upsell ladder step by step, using what the FTC found in real cases: one program took more than $125 million while its average member made under $250 a year, and another pushed upsells as high as $41,297. Then the 1848 gold rush shopkeeper who got rich without digging, why the refund guarantee turns into a maze, and the one question that made the sales coach hang up.",
+  "tags": [
+   "get rich quick courses",
+   "online course scam",
+   "fake guru",
+   "make money online",
+   "business coaching scam",
+   "upsell",
+   "FTC",
+   "side hustle",
+   "financial literacy",
+   "money traps",
+   "dave explains money"
+  ],
+  "hashtags": [
+   "#MakeMoneyOnline",
+   "#MoneyTraps",
+   "#FinancialLiteracy"
+  ],
+  "pinned": "Have you ever bought a course that promised to make you rich? What happened? (No judgment, Dave almost paid $9,997.)"
+ },
+ "beats": [
+  {
+   "id": "o1",
+   "text": "This is me at two in the morning about to pay nine thousand nine hundred ninety seven dollars for a course on how to get rich.",
+   "host": true,
+   "mood": "money",
+   "pose": "present",
+   "pic": {
+    "id": "laptop_night",
+    "at": "course",
+    "look": "polaroid",
+    "label": "2:07 AM"
+   },
+   "slam": {
+    "t": "$9,997",
+    "at": "nine"
+   },
+   "sfx": [
+    {
+     "s": "pack/01_beating",
+     "at": "two"
+    },
+    {
+     "s": "cash",
+     "at": "course"
     }
-  ],
-  "youtube": {
-    "title": "Why 'Get Rich' Gurus Sell You Courses Instead of Doing It",
-    "alt_titles": [
-      "You Paid $1,997 for His System. Why Is He Selling It?",
-      "Why Your 'Free Training' Always Ends With an Upsell"
-    ],
-    "hook": "It's 2 AM and Dave is about to pay $9,997 for a course on getting rich. If the system really works, why is the guru selling it instead of using it? Dave joins a free webinar, buys a $1,997 'beginner' workshop, and is one click away from the $9,997 Platinum level. We follow the upsell ladder step by step, using what the FTC found in real cases: one program took more than $125 million while its average member made under $250 a year, and another pushed upsells as high as $41,297. Then the 1848 gold rush shopkeeper who got rich without digging, why the refund guarantee turns into a maze, and the one question that made the sales coach hang up.",
-    "tags": [
-      "get rich quick courses",
-      "online course scam",
-      "fake guru",
-      "make money online",
-      "business coaching scam",
-      "upsell",
-      "FTC",
-      "side hustle",
-      "financial literacy",
-      "money traps",
-      "dave explains money"
-    ],
-    "hashtags": [
-      "#MakeMoneyOnline",
-      "#MoneyTraps",
-      "#FinancialLiteracy"
-    ],
-    "pinned": "Have you ever bought a course that promised to make you rich? What happened? (No judgment, Dave almost paid $9,997.)"
+   ],
+   "pause": 0.15
+  },
+  {
+   "id": "o2",
+   "text": "And the guy selling it lives in a mansion so obviously he knows the secret right?",
+   "host": true,
+   "mood": "smug",
+   "pose": "shrug",
+   "pic": {
+    "id": "mansion",
+    "at": "mansion",
+    "look": "tape"
+   },
+   "zoom": {
+    "in": "obviously",
+    "out": "right"
+   },
+   "sfx": [
+    {
+     "s": "ding",
+     "at": "mansion"
+    },
+    {
+     "s": "boom",
+     "at": "right"
+    }
+   ],
+   "pause": 0.15
+  },
+  {
+   "id": "o3",
+   "text": "Spoiler.",
+   "card": {
+    "t": "Spoiler.",
+    "dark": true
+   },
+   "sfx": [
+    {
+     "s": "scratch",
+     "at": "Spoiler"
+    }
+   ],
+   "pause": 0.15
+  },
+  {
+   "id": "o4",
+   "text": "By the end of this video you'll know the one question that made his coach hang up on me in four seconds and you can use it on any guru.",
+   "host": true,
+   "mood": "suspicious",
+   "pose": "point_r",
+   "pic": {
+    "id": "phone_call",
+    "at": "question",
+    "look": "circle"
+   },
+   "slam": {
+    "t": "ONE QUESTION",
+    "at": "question"
+   },
+   "sfx": [
+    {
+     "s": "tick",
+     "at": "four"
+    },
+    {
+     "s": "stamp",
+     "at": "guru"
+    }
+   ],
+   "pause": 0.15
+  },
+  {
+   "id": "o5",
+   "text": "But most people click off before that part which is exactly what the gurus want.",
+   "host": true,
+   "mood": "worried",
+   "pose": "hips",
+   "sfx": [
+    {
+     "s": "sting",
+     "at": "gurus"
+    }
+   ],
+   "pause": 0.3
+  },
+  {
+   "id": "c1a",
+   "text": "So it starts like this. An ad pops up that says free training and ninety minutes that will change your life. I grab a snack and I click.",
+   "pic": {
+    "id": "snack",
+    "at": "snack",
+    "look": "sticker"
+   },
+   "sfx": [
+    {
+     "s": "pop",
+     "at": "pops"
+    },
+    {
+     "s": "crinkle",
+     "at": "snack"
+    },
+    {
+     "s": "click",
+     "at": "click"
+    }
+   ]
+  },
+  {
+   "id": "n1",
+   "text": "I'm a very smart person so I wrote down my goal in a notebook. Get rich. That was the whole plan.",
+   "host": true,
+   "mood": "happy",
+   "pose": "present",
+   "pic": {
+    "id": "notebook",
+    "at": "notebook",
+    "look": "tape",
+    "label": "the plan"
+   },
+   "zoom": {
+    "in": "whole",
+    "out": "plan"
+   },
+   "sfx": [
+    {
+     "s": "scribble",
+     "at": "notebook"
+    },
+    {
+     "s": "boom",
+     "at": "plan"
+    }
+   ]
+  },
+  {
+   "id": "c1b",
+   "text": "Minute one he shows me his mansion. Minute ten it's his car. Minute forty he's on a jet ski.",
+   "pic": {
+    "id": "sports_car",
+    "at": "car",
+    "look": "plain"
+   },
+   "sfx": [
+    {
+     "s": "ding",
+     "at": "mansion"
+    },
+    {
+     "s": "whoosh",
+     "at": "car"
+    }
+   ]
+  },
+  {
+   "id": "n15",
+   "text": "Me watching a stranger's jet ski for forty minutes like it's a documentary.",
+   "meme": {
+    "t": "stonks",
+    "a": "LEARNING NOTHING",
+    "at": "jet"
+   },
+   "sfx": [
+    {
+     "s": "boing",
+     "at": "jet"
+    },
+    {
+     "s": "boom",
+     "at": "documentary"
+    }
+   ]
+  },
+  {
+   "id": "n2",
+   "text": "Minute sixty I'm still waiting for the part where I get rich.",
+   "meme": {
+    "t": "fine",
+    "a": "Still waiting for the secret",
+    "at": "waiting"
+   },
+   "sfx": [
+    {
+     "s": "tick",
+     "at": "waiting"
+    },
+    {
+     "s": "cricket",
+     "at": "rich"
+    }
+   ]
+  },
+  {
+   "id": "c1c",
+   "text": "Minute eighty five and there's still no secret but there is an offer. A three day workshop for one thousand nine hundred ninety seven dollars with only twenty spots and a countdown timer.",
+   "host": true,
+   "mood": "shock",
+   "pose": "panic",
+   "pic": {
+    "id": "stopwatch",
+    "at": "timer",
+    "look": "circle"
+   },
+   "slam": {
+    "t": "20 SPOTS",
+    "at": "twenty"
+   },
+   "sfx": [
+    {
+     "s": "cash",
+     "at": "dollars"
+    },
+    {
+     "s": "tick",
+     "at": "timer"
+    }
+   ]
+  },
+  {
+   "id": "c1d",
+   "text": "It's like a free sample at the grocery store except the guy with the toothpick follows you all the way to the checkout.",
+   "pic": {
+    "id": "supermarket",
+    "at": "checkout",
+    "look": "tape"
+   },
+   "sfx": [
+    {
+     "s": "boing",
+     "at": "follows"
+    },
+    {
+     "s": "ding",
+     "at": "checkout"
+    }
+   ]
+  },
+  {
+   "id": "c1e",
+   "text": "I watch the spots drop. Nineteen. Eighteen. Seventeen. And I buy one.",
+   "host": true,
+   "mood": "worried",
+   "pose": "talk",
+   "zoom": {
+    "in": "buy",
+    "out": "one"
+   },
+   "sfx": [
+    {
+     "s": "drumroll",
+     "at": "drop"
+    },
+    {
+     "s": "cash",
+     "at": "buy"
+    }
+   ]
+  },
+  {
+   "id": "n3",
+   "text": "Me pressing the buy button.",
+   "meme": {
+    "t": "buttons",
+    "a": "Save $2,000",
+    "b": "Become a millionaire",
+    "at": "button"
+   },
+   "sfx": [
+    {
+     "s": "click",
+     "at": "pressing"
+    },
+    {
+     "s": "boom",
+     "at": "button"
+    }
+   ]
+  },
+  {
+   "id": "c1f",
+   "text": "And on day one of the workshop I hear a sentence I'm going to hear again and again. This is just the beginner level.",
+   "host": true,
+   "mood": "suspicious",
+   "pose": "think",
+   "slam": {
+    "t": "BEGINNER LEVEL",
+    "at": "beginner"
+   },
+   "sfx": [
+    {
+     "s": "scratch",
+     "at": "beginner"
+    }
+   ]
+  },
+  {
+   "id": "n16",
+   "text": "Spoiler again. It's always the beginner level.",
+   "host": true,
+   "mood": "tired",
+   "pose": "shrug",
+   "zoom": {
+    "in": "always",
+    "out": "level"
+   },
+   "sfx": [
+    {
+     "s": "boom",
+     "at": "level"
+    }
+   ]
+  },
+  {
+   "id": "c2a",
+   "text": "Day one I fill a whole notebook with excitement and almost zero actual steps.",
+   "pic": {
+    "id": "seminar",
+    "at": "Day",
+    "look": "polaroid",
+    "label": "day one"
+   },
+   "sfx": [
+    {
+     "s": "scribble",
+     "at": "notebook"
+    },
+    {
+     "s": "cricket",
+     "at": "steps"
+    }
+   ]
+  },
+  {
+   "id": "c2b",
+   "text": "Day two the guru explains that the real system lives in the advanced program. There's Gold and there's Platinum and there's Diamond.",
+   "host": true,
+   "mood": "shock",
+   "pose": "point_up",
+   "pic": {
+    "id": "gold_bars",
+    "at": "Gold",
+    "look": "sticker"
+   },
+   "sfx": [
+    {
+     "s": "ding",
+     "at": "Gold"
+    },
+    {
+     "s": "ding",
+     "at": "Platinum"
+    },
+    {
+     "s": "pack/03_evolve_boom_brass_d",
+     "at": "Diamond"
+    }
+   ]
+  },
+  {
+   "id": "c2c",
+   "text": "It's like a game that's free to download. Then the sword costs money and then the armor and then the horse and somehow you never reach the castle.",
+   "pic": {
+    "id": "castle",
+    "at": "castle",
+    "look": "plain"
+   },
+   "sfx": [
+    {
+     "s": "coin",
+     "at": "sword"
+    },
+    {
+     "s": "coin",
+     "at": "armor"
+    },
+    {
+     "s": "coin",
+     "at": "horse"
+    },
+    {
+     "s": "trombone",
+     "at": "castle"
+    }
+   ]
+  },
+  {
+   "id": "n17",
+   "text": "And the worst part is that every level comes with the same promise. This is the one that finally works. The next level is where the real money is. Trust me bro.",
+   "host": true,
+   "mood": "suspicious",
+   "pose": "talk",
+   "slam": {
+    "t": "TRUST ME BRO",
+    "at": "Trust"
+   },
+   "sfx": [
+    {
+     "s": "ding",
+     "at": "same"
+    },
+    {
+     "s": "scratch",
+     "at": "Trust"
+    },
+    {
+     "s": "boom",
+     "at": "bro"
+    }
+   ]
+  },
+  {
+   "id": "n4",
+   "text": "My wallet climbing the guru ladder.",
+   "meme": {
+    "t": "brain",
+    "a": "Free training",
+    "b": "$1,997 workshop",
+    "c": "$9,997 Platinum",
+    "at": "ladder"
+   },
+   "sfx": [
+    {
+     "s": "pack/01_evolve_brassy_swell",
+     "at": "ladder"
+    }
+   ]
+  },
+  {
+   "id": "c2d",
+   "text": "And this isn't something I made up. The FTC sued a real coaching company called Zurixx that did this exact thing with a free event then a three day workshop then the upsells.",
+   "pic": {
+    "id": "ftc",
+    "at": "FTC",
+    "look": "news",
+    "label": "Federal Trade Commission"
+   },
+   "sfx": [
+    {
+     "s": "stamp",
+     "at": "sued"
+    },
+    {
+     "s": "ding",
+     "at": "upsells"
+    }
+   ]
+  },
+  {
+   "id": "c2e",
+   "text": "Quick guess before I tell you. How high do you think that ladder went? Write your number in the comments.",
+   "host": true,
+   "mood": "smug",
+   "pose": "point_r",
+   "slam": {
+    "t": "GUESS",
+    "at": "guess"
+   },
+   "sfx": [
+    {
+     "s": "tick",
+     "at": "guess"
+    },
+    {
+     "s": "pop",
+     "at": "comments"
+    }
+   ]
+  },
+  {
+   "id": "c2f",
+   "text": "Back at the workshop a coach pulls me aside and whispers Platinum. Nine thousand nine hundred ninety seven dollars. And if my credit limit is too low I should just call my card company and ask for more.",
+   "host": true,
+   "mood": "worried",
+   "pose": "facepalm",
+   "pic": {
+    "id": "credit_card",
+    "at": "card",
+    "look": "tape"
+   },
+   "sfx": [
+    {
+     "s": "pack/01_beating",
+     "at": "whispers"
+    },
+    {
+     "s": "cash",
+     "at": "dollars"
+    },
+    {
+     "s": "scratch",
+     "at": "more"
+    }
+   ],
+   "exag": 0.6
+  },
+  {
+   "id": "n5",
+   "text": "Be honest. You've been one click away from something like this at two in the morning.",
+   "host": true,
+   "mood": "suspicious",
+   "pose": "point_r",
+   "zoom": {
+    "in": "two",
+    "out": "morning"
+   },
+   "sfx": [
+    {
+     "s": "boom",
+     "at": "morning"
+    }
+   ]
+  },
+  {
+   "id": "c2g",
+   "text": "I had one night to decide. So I did the one thing the guru never taught me. I looked him up.",
+   "host": true,
+   "mood": "think",
+   "pose": "think",
+   "pic": {
+    "id": "magnifier",
+    "at": "looked",
+    "look": "circle"
+   },
+   "sfx": [
+    {
+     "s": "pack/01_processing",
+     "at": "looked"
+    }
+   ]
+  },
+  {
+   "id": "n18",
+   "text": "Me at the workshop versus me after one Google search.",
+   "meme": {
+    "t": "drake",
+    "a": "Trusting the mansion guy",
+    "b": "Googling the mansion guy",
+    "at": "Google"
+   },
+   "sfx": [
+    {
+     "s": "pack/01_processing",
+     "at": "Google"
+    }
+   ]
+  },
+  {
+   "id": "c3a",
+   "text": "That mansion from the video? It's a vacation rental. You can book it for the night.",
+   "chapter": "Who Sold The Shovels",
+   "pic": {
+    "id": "villa_pool",
+    "at": "rental",
+    "look": "polaroid",
+    "label": "available tonight"
+   },
+   "sfx": [
+    {
+     "s": "scratch",
+     "at": "rental"
+    },
+    {
+     "s": "boom",
+     "at": "night"
+    }
+   ]
+  },
+  {
+   "id": "n19",
+   "text": "I scrolled through the photos and there it was. The same pool and the same couch and the same fancy kitchen. Forty two five star reviews. One of them said great place for filming.",
+   "host": true,
+   "mood": "shock",
+   "pose": "panic",
+   "pic": {
+    "id": "kitchen",
+    "at": "kitchen",
+    "look": "tape"
+   },
+   "slam": {
+    "t": "GREAT FOR FILMING",
+    "at": "filming"
+   },
+   "sfx": [
+    {
+     "s": "pack/camera_shutter",
+     "at": "photos"
+    },
+    {
+     "s": "ding",
+     "at": "reviews"
+    },
+    {
+     "s": "boom",
+     "at": "filming"
+    }
+   ]
+  },
+  {
+   "id": "n6",
+   "text": "The guru when I found the rental listing.",
+   "meme": {
+    "t": "vs",
+    "a": "His mansion",
+    "b": "Airbnb for the weekend",
+    "at": "listing"
+   },
+   "sfx": [
+    {
+     "s": "pack/camera_shutter",
+     "at": "listing"
+    }
+   ]
+  },
+  {
+   "id": "c3b",
+   "text": "Then I looked for his million dollar business and I found exactly one business. The course.",
+   "host": true,
+   "mood": "shock",
+   "pose": "panic",
+   "slam": {
+    "t": "THE COURSE",
+    "at": "course"
+   },
+   "sfx": [
+    {
+     "s": "drumroll",
+     "at": "found"
+    },
+    {
+     "s": "boom",
+     "at": "course"
+    }
+   ]
+  },
+  {
+   "id": "c3c",
+   "text": "And that reminded me of a crazy story from eighteen forty eight in San Francisco.",
+   "pic": {
+    "id": "old_sf",
+    "at": "Francisco",
+    "look": "news",
+    "label": "San Francisco 1850"
+   },
+   "sfx": [
+    {
+     "s": "flip",
+     "at": "story"
+    }
+   ]
+  },
+  {
+   "id": "c3d",
+   "text": "A shopkeeper named Sam Brannan runs through the streets waving a little bottle of gold and shouting gold from the American River.",
+   "pic": {
+    "id": "brannan",
+    "at": "Brannan",
+    "look": "polaroid",
+    "label": "Sam Brannan"
+   },
+   "sfx": [
+    {
+     "s": "crowd",
+     "at": "shouting"
+    }
+   ]
+  },
+  {
+   "id": "c3e",
+   "text": "Thousands of people rush off to dig. But Sam had already bought every pick and pan and shovel he could find and his store sold them like crazy.",
+   "pic": {
+    "id": "gold_pan",
+    "at": "pan",
+    "look": "tape"
+   },
+   "sfx": [
+    {
+     "s": "whoosh",
+     "at": "rush"
+    },
+    {
+     "s": "cash",
+     "at": "store"
+    }
+   ]
+  },
+  {
+   "id": "c3f",
+   "text": "Most miners got blisters. Sam became California's first millionaire. And he never dug for gold.",
+   "host": true,
+   "mood": "grin",
+   "pose": "point_up",
+   "pic": {
+    "id": "shovel",
+    "at": "dug",
+    "look": "sticker"
+   },
+   "zoom": {
+    "in": "never",
+    "out": "gold"
+   },
+   "sfx": [
+    {
+     "s": "trombone",
+     "at": "blisters"
+    },
+    {
+     "s": "ding",
+     "at": "millionaire"
+    },
+    {
+     "s": "boom",
+     "at": "gold"
+    }
+   ]
+  },
+  {
+   "id": "n20",
+   "text": "Sam Brannan explaining the business model to the miners.",
+   "meme": {
+    "t": "vs",
+    "a": "Miners digging for gold",
+    "b": "Sam selling them shovels",
+    "at": "business"
+   },
+   "sfx": [
+    {
+     "s": "cash",
+     "at": "business"
+    }
+   ]
+  },
+  {
+   "id": "c3g",
+   "text": "Oh and the answer to the guess. In the Zurixx case the ladder went up to forty one thousand dollars. For coaching.",
+   "host": true,
+   "mood": "shock",
+   "pose": "panic",
+   "slam": {
+    "t": "$41,000",
+    "at": "forty"
+   },
+   "sfx": [
+    {
+     "s": "drumroll",
+     "at": "answer"
+    },
+    {
+     "s": "pack/02_deep",
+     "at": "forty"
+    },
+    {
+     "s": "boom",
+     "at": "coaching"
+    }
+   ]
+  },
+  {
+   "id": "c3h",
+   "text": "So I asked myself the scary question. What if the course isn't how he got rich? What if the course is the gold?",
+   "card": {
+    "t": "The course is the gold.",
+    "dark": true
+   },
+   "sfx": [
+    {
+     "s": "pack/01_boom",
+     "at": "gold"
+    }
+   ],
+   "pause": 0.5
+  },
+  {
+   "id": "c4a",
+   "text": "Then I found the biggest one. A program called MOBE that the FTC says took over one hundred twenty five million dollars from people.",
+   "chapter": "The Course Is The Gold",
+   "host": true,
+   "mood": "angry",
+   "pose": "point_r",
+   "pic": {
+    "id": "money_pile",
+    "at": "MOBE",
+    "look": "news",
+    "label": "MOBE"
+   },
+   "slam": {
+    "t": "$125M",
+    "at": "million"
+   },
+   "sfx": [
+    {
+     "s": "sting",
+     "at": "MOBE"
+    },
+    {
+     "s": "cash",
+     "at": "million"
+    }
+   ]
+  },
+  {
+   "id": "c4b",
+   "text": "It started at forty nine dollars and then the masterclasses went up to almost thirty thousand.",
+   "pic": {
+    "id": "staircase",
+    "at": "masterclasses",
+    "look": "plain"
+   },
+   "sfx": [
+    {
+     "s": "coin",
+     "at": "forty"
+    },
+    {
+     "s": "pack/01_evolve_brassy_swell",
+     "at": "thirty"
+    }
+   ]
+  },
+  {
+   "id": "c4c",
+   "text": "And the proven system for making money? According to the FTC it was mostly selling more memberships to other people.",
+   "host": true,
+   "mood": "suspicious",
+   "pose": "hips",
+   "zoom": {
+    "in": "selling",
+    "out": "people"
+   },
+   "sfx": [
+    {
+     "s": "scratch",
+     "at": "selling"
+    },
+    {
+     "s": "boom",
+     "at": "people"
+    }
+   ]
+  },
+  {
+   "id": "n21",
+   "text": "So the people at the top got rich from the people at the bottom who were promised they'd get rich from the people below them. And at the very bottom there's just a guy like me with a notebook.",
+   "host": true,
+   "mood": "sad",
+   "pose": "facepalm",
+   "zoom": {
+    "in": "guy",
+    "out": "notebook"
+   },
+   "sfx": [
+    {
+     "s": "pack/02_evolve_brassy_drop_2",
+     "at": "bottom"
+    },
+    {
+     "s": "trombone",
+     "at": "notebook"
+    }
+   ]
+  },
+  {
+   "id": "c4e",
+   "text": "It's like a restaurant where the only thing on the menu is a recipe for opening a restaurant.",
+   "pic": {
+    "id": "menu",
+    "at": "menu",
+    "look": "tape"
+   },
+   "sfx": [
+    {
+     "s": "ding",
+     "at": "menu"
+    },
+    {
+     "s": "boing",
+     "at": "restaurant#2"
+    }
+   ]
+  },
+  {
+   "id": "n7",
+   "text": "The guru economy explained.",
+   "meme": {
+    "t": "stonks",
+    "a": "SELLING COURSES ON SELLING COURSES",
+    "at": "economy"
+   },
+   "sfx": [
+    {
+     "s": "cash",
+     "at": "economy"
+    }
+   ]
+  },
+  {
+   "id": "c4f",
+   "text": "And the fine print? The average member made less than two hundred fifty dollars a year and some people lost more than twenty thousand.",
+   "host": true,
+   "mood": "sad",
+   "pose": "facepalm",
+   "slam": {
+    "t": "$250/YEAR",
+    "at": "fifty"
+   },
+   "sfx": [
+    {
+     "s": "trombone",
+     "at": "year"
+    },
+    {
+     "s": "pack/02_evolve_brassy_drop_2",
+     "at": "lost"
+    }
+   ]
+  },
+  {
+   "id": "c4g",
+   "text": "So the villain isn't one guy in a mansion. It's the machine behind him. A sales funnel built to move you up one more step again and again.",
+   "pic": {
+    "id": "funnel",
+    "at": "funnel",
+    "look": "circle"
+   },
+   "sfx": [
+    {
+     "s": "sting",
+     "at": "machine"
+    },
+    {
+     "s": "whoosh",
+     "at": "funnel"
+    }
+   ]
+  },
+  {
+   "id": "c4h",
+   "text": "But that left me with a weird question. If someone really had a money machine why would they sell it at all?",
+   "host": true,
+   "mood": "think",
+   "pose": "think",
+   "sfx": [
+    {
+     "s": "pack/01_processing",
+     "at": "weird"
+    }
+   ]
+  },
+  {
+   "id": "n22",
+   "text": "My brain trying to understand the guru business.",
+   "meme": {
+    "t": "brain",
+    "a": "Get rich",
+    "b": "Teach how to get rich",
+    "c": "Sell courses on teaching it",
+    "at": "brain"
+   },
+   "sfx": [
+    {
+     "s": "pack/01_processing",
+     "at": "brain"
+    }
+   ]
+  },
+  {
+   "id": "c5a",
+   "text": "Think about my uncle's secret fishing spot. It's full of fish and he has never told a single person where it is.",
+   "pic": {
+    "id": "fishing",
+    "at": "fishing",
+    "look": "polaroid",
+    "label": "uncle's spot"
+   },
+   "sfx": [
+    {
+     "s": "quack",
+     "at": "fish"
+    }
+   ]
+  },
+  {
+   "id": "c5b",
+   "text": "Because if he sold a map to a thousand people that spot would be empty by Tuesday.",
+   "host": true,
+   "mood": "grin",
+   "pose": "shrug",
+   "pic": {
+    "id": "map",
+    "at": "map",
+    "look": "tape"
+   },
+   "zoom": {
+    "in": "empty",
+    "out": "Tuesday"
+   },
+   "sfx": [
+    {
+     "s": "ding",
+     "at": "map"
+    },
+    {
+     "s": "boom",
+     "at": "Tuesday"
+    }
+   ]
+  },
+  {
+   "id": "n23",
+   "text": "My uncle if you ask him where the spot is.",
+   "meme": {
+    "t": "fine",
+    "a": "What fishing spot?",
+    "at": "uncle"
+   },
+   "sfx": [
+    {
+     "s": "cricket",
+     "at": "spot"
+    }
+   ]
+  },
+  {
+   "id": "c5c",
+   "text": "Real money tricks work the same way. The more people use them the less they work. So a real secret gets kept and not sold.",
+   "host": true,
+   "mood": "smug",
+   "pose": "present",
+   "slam": {
+    "t": "KEPT NOT SOLD",
+    "at": "kept"
+   },
+   "sfx": [
+    {
+     "s": "stamp",
+     "at": "kept"
+    }
+   ]
+  },
+  {
+   "id": "c5d",
+   "text": "But a course is different. You record it once and you sell it forever with no shop and no stock and no risk.",
+   "pic": {
+    "id": "camera_film",
+    "at": "record",
+    "look": "sticker"
+   },
+   "sfx": [
+    {
+     "s": "pack/camera_shutter",
+     "at": "record"
+    },
+    {
+     "s": "cash",
+     "at": "forever"
+    }
+   ]
+  },
+  {
+   "id": "c5e",
+   "text": "Sell a two thousand dollar workshop to a thousand people and that's almost two million dollars even if nobody in the room ever gets rich.",
+   "host": true,
+   "mood": "money",
+   "pose": "celebrate",
+   "slam": {
+    "t": "$2,000,000",
+    "at": "million"
+   },
+   "sfx": [
+    {
+     "s": "cash",
+     "at": "million"
+    },
+    {
+     "s": "cricket",
+     "at": "rich"
+    }
+   ]
+  },
+  {
+   "id": "n8",
+   "text": "Him counting our money while we take notes.",
+   "meme": {
+    "t": "vs",
+    "a": "Students taking notes",
+    "b": "Guru counting money",
+    "at": "counting"
+   },
+   "sfx": [
+    {
+     "s": "cash",
+     "at": "counting"
+    }
+   ]
+  },
+  {
+   "id": "c5f",
+   "text": "I used to think he's rich so he must know the secret. Nope. He's rich because people like me believed he knew the secret.",
+   "host": true,
+   "mood": "tired",
+   "pose": "facepalm",
+   "zoom": {
+    "in": "people",
+    "out": "secret#2"
+   },
+   "sfx": [
+    {
+     "s": "scratch",
+     "at": "Nope"
+    },
+    {
+     "s": "boom",
+     "at": "secret#2"
+    }
+   ]
+  },
+  {
+   "id": "c5g",
+   "text": "So I decided to get my money back. That's when things got worse.",
+   "host": true,
+   "mood": "worried",
+   "pose": "hips",
+   "sfx": [
+    {
+     "s": "pack/01_beating",
+     "at": "worse"
+    }
+   ]
+  },
+  {
+   "id": "c6a",
+   "text": "I email support. The sales page promised one hundred percent risk free and a thirty day money back guarantee.",
+   "chapter": "The Refund Maze",
+   "pic": {
+    "id": "envelope",
+    "at": "email",
+    "look": "tape"
+   },
+   "sfx": [
+    {
+     "s": "mail",
+     "at": "email"
+    },
+    {
+     "s": "ding",
+     "at": "guarantee"
+    }
+   ]
+  },
+  {
+   "id": "c6b",
+   "text": "Reply one says fill out the form. Reply two says first you must finish every lesson. Reply three says nothing.",
+   "host": true,
+   "mood": "angry",
+   "pose": "talk",
+   "sfx": [
+    {
+     "s": "ding",
+     "at": "one"
+    },
+    {
+     "s": "ding",
+     "at": "two"
+    },
+    {
+     "s": "cricket",
+     "at": "nothing"
+    }
+   ]
+  },
+  {
+   "id": "c6c",
+   "text": "It's like pushing a revolving door. Lots of effort and you end up exactly where you started.",
+   "pic": {
+    "id": "revolving_door",
+    "at": "door",
+    "look": "plain"
+   },
+   "sfx": [
+    {
+     "s": "whoosh",
+     "at": "revolving"
+    },
+    {
+     "s": "trombone",
+     "at": "started"
+    }
+   ]
+  },
+  {
+   "id": "n24",
+   "text": "Me after reply number three.",
+   "meme": {
+    "t": "buttons",
+    "a": "Give up",
+    "b": "Buy the next level",
+    "at": "three"
+   },
+   "sfx": [
+    {
+     "s": "pack/01_beating",
+     "at": "three"
+    }
+   ]
+  },
+  {
+   "id": "c6d",
+   "text": "And it wasn't just me. The FTC says MOBE often refused refunds and in the Zurixx case some people had to sign a paper promising not to talk to the FTC.",
+   "pic": {
+    "id": "contract",
+    "at": "paper",
+    "look": "news",
+    "label": "don't tell anyone"
+   },
+   "sfx": [
+    {
+     "s": "stamp",
+     "at": "refused"
+    },
+    {
+     "s": "scratch",
+     "at": "sign"
+    }
+   ]
+  },
+  {
+   "id": "n9",
+   "text": "Customer support in the guru world.",
+   "meme": {
+    "t": "drake",
+    "a": "Giving refunds",
+    "b": "Selling the next level",
+    "at": "support"
+   },
+   "sfx": [
+    {
+     "s": "pop",
+     "at": "support"
+    }
+   ]
+  },
+  {
+   "id": "c6e",
+   "text": "Then my workshop buddy Kevin texts me. He bought Platinum on two credit cards and his coach has the perfect fix. Buy the next level.",
+   "host": true,
+   "mood": "shock",
+   "pose": "panic",
+   "pic": {
+    "id": "smartphone",
+    "at": "texts",
+    "look": "circle"
+   },
+   "sfx": [
+    {
+     "s": "ding",
+     "at": "texts"
+    },
+    {
+     "s": "boom",
+     "at": "level"
+    }
+   ]
+  },
+  {
+   "id": "c6f",
+   "text": "And I'm staring at my own Platinum offer. Still open. Two spots left. Maybe I have to spend more to win it all back?",
+   "host": true,
+   "mood": "sad",
+   "pose": "think",
+   "zoom": {
+    "in": "spend",
+    "out": "back"
+   },
+   "sfx": [
+    {
+     "s": "pack/01_beating",
+     "at": "staring"
+    },
+    {
+     "s": "tick",
+     "at": "left"
+    }
+   ],
+   "exag": 0.6
+  },
+  {
+   "id": "n25",
+   "text": "And honestly that's the moment the whole trap is built for. When you're down two thousand dollars the only thing that feels like hope is spending ten thousand more. Casinos do it and guru funnels do it and they both call it an opportunity.",
+   "host": true,
+   "mood": "worried",
+   "pose": "think",
+   "slam": {
+    "t": "THE TRAP",
+    "at": "trap"
+   },
+   "sfx": [
+    {
+     "s": "sting",
+     "at": "trap"
+    },
+    {
+     "s": "pack/01_beating",
+     "at": "hope"
+    },
+    {
+     "s": "boom",
+     "at": "opportunity"
+    }
+   ],
+   "exag": 0.6
+  },
+  {
+   "id": "n10",
+   "text": "Yeah no.",
+   "card": {
+    "t": "Yeah no.",
+    "dark": true
+   },
+   "sfx": [
+    {
+     "s": "scratch",
+     "at": "Yeah"
+    }
+   ],
+   "pause": 0.5
+  },
+  {
+   "id": "c6g",
+   "text": "Because there's one thing these gurus really don't want you to know and it's sitting right there in the rules.",
+   "host": true,
+   "mood": "suspicious",
+   "pose": "point_r",
+   "sfx": [
+    {
+     "s": "riser",
+     "at": "rules"
+    }
+   ]
+  },
+  {
+   "id": "c7a",
+   "text": "So I open the FTC website. Quick reminder this is education and not advice.",
+   "pic": {
+    "id": "computer",
+    "at": "website",
+    "look": "tape"
+   },
+   "sfx": [
+    {
+     "s": "click",
+     "at": "open"
+    }
+   ]
+  },
+  {
+   "id": "c7b",
+   "text": "Clue one. Lying about how much you'll earn is already illegal and in twenty twenty one the FTC warned more than eleven hundred companies about it.",
+   "host": true,
+   "mood": "happy",
+   "pose": "point_up",
+   "slam": {
+    "t": "ILLEGAL",
+    "at": "illegal"
+   },
+   "sfx": [
+    {
+     "s": "ding",
+     "at": "one"
+    },
+    {
+     "s": "stamp",
+     "at": "illegal"
+    }
+   ]
+  },
+  {
+   "id": "c7c",
+   "text": "Clue two. The warning even lists the tricks. Saying the results are typical. Saying you don't need experience. Saying you must act right now.",
+   "host": true,
+   "mood": "suspicious",
+   "pose": "talk",
+   "sfx": [
+    {
+     "s": "ding",
+     "at": "two"
+    },
+    {
+     "s": "tick",
+     "at": "now"
+    }
+   ]
+  },
+  {
+   "id": "n11",
+   "text": "My countdown timer suddenly looked very different.",
+   "pic": {
+    "id": "hourglass",
+    "at": "timer",
+    "look": "circle"
+   },
+   "sfx": [
+    {
+     "s": "tick",
+     "at": "timer"
+    },
+    {
+     "s": "boom",
+     "at": "different"
+    }
+   ]
+  },
+  {
+   "id": "c7d",
+   "text": "Clue three. In twenty twenty five the FTC proposed rules aimed right at business coaching where any money promise needs written proof.",
+   "host": true,
+   "mood": "grin",
+   "pose": "present",
+   "pic": {
+    "id": "gavel",
+    "at": "rules",
+    "look": "sticker"
+   },
+   "sfx": [
+    {
+     "s": "ding",
+     "at": "three"
+    },
+    {
+     "s": "stamp",
+     "at": "proof"
+    }
+   ]
+  },
+  {
+   "id": "c7e",
+   "text": "So I made a plan. I saved screenshots of every promise and I reported the program and I called my card company about disputing the charge.",
+   "host": true,
+   "mood": "happy",
+   "pose": "thumbs",
+   "sfx": [
+    {
+     "s": "pack/camera_shutter",
+     "at": "screenshots"
+    },
+    {
+     "s": "stamp",
+     "at": "reported"
+    },
+    {
+     "s": "ding",
+     "at": "charge"
+    }
+   ]
+  },
+  {
+   "id": "c7f",
+   "text": "And the Platinum offer? I closed the tab. Nine thousand nine hundred ninety seven dollars saved.",
+   "host": true,
+   "mood": "money",
+   "pose": "celebrate",
+   "slam": {
+    "t": "SAVED $9,997",
+    "at": "saved"
+   },
+   "zoom": {
+    "in": "closed",
+    "out": "tab"
+   },
+   "sfx": [
+    {
+     "s": "click",
+     "at": "closed"
+    },
+    {
+     "s": "crowd",
+     "at": "saved"
+    }
+   ]
+  },
+  {
+   "id": "n26",
+   "text": "The FTC after I sent my screenshots.",
+   "meme": {
+    "t": "stonks",
+    "a": "CASE FILE GROWING",
+    "at": "screenshots"
+   },
+   "sfx": [
+    {
+     "s": "stamp",
+     "at": "screenshots"
+    }
+   ]
+  },
+  {
+   "id": "c7g",
+   "text": "But I still had one call booked with my enrollment coach. And this time I prepared a question.",
+   "host": true,
+   "mood": "smug",
+   "pose": "hips",
+   "sfx": [
+    {
+     "s": "riser",
+     "at": "question"
+    }
+   ]
+  },
+  {
+   "id": "c8a",
+   "text": "He picks up all smiles. So Dave. Ready for Platinum?",
+   "chapter": "The Question Gurus Hate",
+   "pic": {
+    "id": "headset",
+    "at": "picks",
+    "look": "polaroid"
+   },
+   "sfx": [
+    {
+     "s": "ding",
+     "at": "picks"
+    }
+   ]
+  },
+  {
+   "id": "c8b",
+   "text": "And I say maybe. But one question first. What did your typical student earn last year after paying for the program? And can you send that in writing?",
+   "host": true,
+   "mood": "suspicious",
+   "pose": "point_r",
+   "slam": {
+    "t": "IN WRITING",
+    "at": "writing"
+   },
+   "sfx": [
+    {
+     "s": "drumroll",
+     "at": "question"
+    },
+    {
+     "s": "stamp",
+     "at": "writing"
+    }
+   ],
+   "exag": 0.6
+  },
+  {
+   "id": "c8c",
+   "text": "Silence. Then well results vary. Then oh I have another call. Click.",
+   "card": {
+    "t": "Click.",
+    "dark": true
+   },
+   "sfx": [
+    {
+     "s": "cricket",
+     "at": "Silence"
+    },
+    {
+     "s": "boom",
+     "at": "Click"
+    }
+   ],
+   "pause": 0.6
+  },
+  {
+   "id": "n12",
+   "text": "Four seconds. I timed it.",
+   "host": true,
+   "mood": "grin",
+   "pose": "thumbs",
+   "zoom": {
+    "in": "timed",
+    "out": "it"
+   },
+   "sfx": [
+    {
+     "s": "tick",
+     "at": "Four"
+    },
+    {
+     "s": "boom",
+     "at": "timed"
+    }
+   ]
+  },
+  {
+   "id": "c8d",
+   "text": "That's the question. Not how much did you make. How much did your typical buyer make. In writing.",
+   "host": true,
+   "mood": "happy",
+   "pose": "point_up",
+   "sfx": [
+    {
+     "s": "stamp",
+     "at": "typical"
+    },
+    {
+     "s": "stamp",
+     "at": "writing"
+    }
+   ]
+  },
+  {
+   "id": "c8e",
+   "text": "Because the guru's real number was never his income. It was how many people like me bought the course.",
+   "pic": {
+    "id": "crowd",
+    "at": "people",
+    "look": "plain"
+   },
+   "sfx": [
+    {
+     "s": "crowd",
+     "at": "people"
+    }
+   ]
+  },
+  {
+   "id": "c8f",
+   "text": "A guy with a real money machine doesn't need your two thousand dollars. A guy selling one does.",
+   "host": true,
+   "mood": "smug",
+   "pose": "present",
+   "zoom": {
+    "in": "selling",
+    "out": "does"
+   },
+   "sfx": [
+    {
+     "s": "boom",
+     "at": "does"
+    }
+   ]
+  },
+  {
+   "id": "n27",
+   "text": "Gurus when you ask for proof in writing.",
+   "meme": {
+    "t": "fine",
+    "a": "Results may vary",
+    "at": "proof"
+   },
+   "sfx": [
+    {
+     "s": "cricket",
+     "at": "writing"
+    }
+   ]
+  },
+  {
+   "id": "n13",
+   "text": "So do gurus get rich from their secret?",
+   "card": "Do gurus get rich from their secret?",
+   "sfx": [
+    {
+     "s": "drumroll",
+     "at": "secret"
+    }
+   ]
+  },
+  {
+   "id": "n14",
+   "text": "No. They get rich from yours.",
+   "card": {
+    "t": "No. From yours.",
+    "dark": true
+   },
+   "sfx": [
+    {
+     "s": "pack/01_boom",
+     "at": "No"
+    },
+    {
+     "s": "stamp",
+     "at": "yours"
+    }
+   ],
+   "pause": 0.6
+  },
+  {
+   "id": "r1",
+   "text": "So here's what I learned. If someone sells the secret then the selling is the business.",
+   "host": true,
+   "mood": "happy",
+   "pose": "point_up",
+   "sfx": [
+    {
+     "s": "ding",
+     "at": "selling"
+    }
+   ]
+  },
+  {
+   "id": "r2",
+   "text": "Free training is just the first step of a very long and very expensive ladder.",
+   "pic": {
+    "id": "ladder",
+    "at": "ladder",
+    "look": "sticker"
+   },
+   "sfx": [
+    {
+     "s": "ding",
+     "at": "ladder"
+    }
+   ]
+  },
+  {
+   "id": "r3",
+   "text": "And always ask what the typical buyer earned. In writing.",
+   "host": true,
+   "mood": "smug",
+   "pose": "thumbs",
+   "sfx": [
+    {
+     "s": "stamp",
+     "at": "writing"
+    }
+   ]
+  },
+  {
+   "id": "n28",
+   "text": "And if a timer is counting down while someone is talking about your future close the tab. Real opportunities don't disappear in eleven minutes.",
+   "host": true,
+   "mood": "smug",
+   "pose": "point_up",
+   "pic": {
+    "id": "alarm",
+    "at": "timer",
+    "look": "circle"
+   },
+   "zoom": {
+    "in": "eleven",
+    "out": "minutes"
+   },
+   "sfx": [
+    {
+     "s": "tick",
+     "at": "timer"
+    },
+    {
+     "s": "click",
+     "at": "tab"
+    },
+    {
+     "s": "boom",
+     "at": "minutes"
+    }
+   ]
+  },
+  {
+   "id": "r4",
+   "text": "A week later my friend Bob knocks on my door with a business opportunity and he swears it is not a pyramid.",
+   "pic": {
+    "id": "pyramid",
+    "at": "pyramid",
+    "look": "polaroid"
+   },
+   "sfx": [
+    {
+     "s": "thud",
+     "at": "knocks"
+    },
+    {
+     "s": "scratch",
+     "at": "pyramid"
+    }
+   ]
+  },
+  {
+   "id": "r5",
+   "text": "Subscribe so I can find out if Bob is lying. He's lying.",
+   "host": true,
+   "mood": "grin",
+   "pose": "wave",
+   "zoom": {
+    "in": "lying#2",
+    "out": "lying#2"
+   },
+   "sfx": [
+    {
+     "s": "ding",
+     "at": "Subscribe"
+    },
+    {
+     "s": "boom",
+     "at": "lying#2"
+    }
+   ]
   }
+ ]
 }
