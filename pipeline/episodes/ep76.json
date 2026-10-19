@@ -1,0 +1,1871 @@
+{
+ "id": "ep76",
+ "title": "Why School Never Taught You About Money",
+ "voice": "chatterbox",
+ "upgraded": "2026-10-19 UPGRADE.md v2",
+ "sources": [
+  "Next Gen Personal Finance state policy tracker: personal finance graduation guarantees (~half of states, mostly 2023-2030 rollouts)",
+  "Prussian compulsory schooling (1717) and Horace Mann's 1843 report; historian Sherman Dorn on the 'factory model' myth",
+  "Credit CARD Act of 2009 (ban on tangible gifts for student card sign-ups, effective Feb 2010)",
+  "Federal Reserve G.19: credit card rate on accounts assessed interest ~22% (2025)",
+  "CFPB overdraft/NSF data spotlight (2024): $5.8B in 2023",
+  "Next Gen Personal Finance state policy tracker: personal finance graduation guarantees (~half of states, mostly 2023-2030 rollouts)",
+  "Prussian compulsory schooling (1717) and Horace Mann's 1843 report; historian Sherman Dorn on the 'factory model' myth",
+  "Credit CARD Act of 2009 (ban on tangible gifts for student card sign-ups, effective Feb 2010)",
+  "Federal Reserve G.19: credit card rate on accounts assessed interest ~22% (2025)",
+  "CFPB overdraft/NSF data spotlight (2024): $5.8B in 2023",
+  "Next Gen Personal Finance state policy tracker: personal finance graduation guarantees (~half of states, mostly 2023-2030 rollouts)",
+  "Prussian compulsory schooling (1717) and Horace Mann's 1843 report; historian Sherman Dorn on the 'factory model' myth",
+  "Credit CARD Act of 2009 (ban on tangible gifts for student card sign-ups, effective Feb 2010)",
+  "Federal Reserve G.19: credit card rate on accounts assessed interest ~22% (2025)",
+  "CFPB overdraft/NSF data spotlight (2024): $5.8B in 2023"
+ ],
+ "youtube": {},
+ "beats": [
+  {
+   "id": "o1",
+   "text": "This is me at sixteen. I can find X in an equation. I can name the parts of a plant cell. I know the year of a battle that happened nine hundred years ago.",
+   "host": true,
+   "mood": "smug",
+   "pose": "present",
+   "pic": {
+    "id": "classroom",
+    "at": "sixteen",
+    "look": "polaroid",
+    "label": "me at 16"
+   },
+   "sfx": [
+    {
+     "s": "ding",
+     "at": "X"
+    },
+    {
+     "s": "pop",
+     "at": "cell"
+    },
+    {
+     "s": "pack/01_evolve_brassy_swell",
+     "at": "battle"
+    }
+   ],
+   "pause": 0.15
+  },
+  {
+   "id": "o2",
+   "text": "This is me at eighteen. A guy gives me a free t-shirt and I sign up for my first credit card. I had no idea what interest was.",
+   "host": true,
+   "mood": "happy",
+   "pose": "celebrate",
+   "pic": {
+    "id": "tshirt",
+    "at": "t-shirt",
+    "look": "tape",
+    "label": "FREE!"
+   },
+   "slam": {
+    "t": "FREE T-SHIRT",
+    "at": "t-shirt"
+   },
+   "sfx": [
+    {
+     "s": "pop",
+     "at": "free"
+    },
+    {
+     "s": "cash",
+     "at": "card"
+    },
+    {
+     "s": "trombone",
+     "at": "interest"
+    }
+   ],
+   "pause": 0.15
+  },
+  {
+   "id": "o3",
+   "text": "Twelve years of school. Not one class on money.",
+   "card": {
+    "t": "Not one class on money.",
+    "dark": true
+   },
+   "sfx": [
+    {
+     "s": "tick",
+     "at": "Twelve"
+    },
+    {
+     "s": "pack/01_boom",
+     "at": "money"
+    }
+   ],
+   "pause": 0.3
+  },
+  {
+   "id": "o4",
+   "text": "By the end of this video you'll know why school skipped the one subject you use every single day and the four rules nobody was in a hurry to teach you.",
+   "host": true,
+   "mood": "suspicious",
+   "pose": "point_r",
+   "slam": {
+    "t": "4 RULES",
+    "at": "four"
+   },
+   "sfx": [
+    {
+     "s": "ding",
+     "at": "skipped"
+    },
+    {
+     "s": "drumroll",
+     "at": "rules"
+    },
+    {
+     "s": "boom",
+     "at": "you"
+    }
+   ],
+   "pause": 0.15
+  },
+  {
+   "id": "o5",
+   "text": "But most people click away before that part. And honestly that's how you got here in the first place.",
+   "host": true,
+   "mood": "worried",
+   "pose": "hips",
+   "zoom": {
+    "in": "first",
+    "out": "place"
+   },
+   "sfx": [
+    {
+     "s": "whoosh",
+     "at": "click"
+    },
+    {
+     "s": "sting",
+     "at": "place"
+    }
+   ],
+   "pause": 0.3
+  },
+  {
+   "id": "c1a",
+   "text": "So let me take you back to my school. Bells ring. Everybody stands up at the same time. Everybody walks to the next room. Sit down. Copy the board. Bell rings again.",
+   "chapter": "What School Was Built For",
+   "pic": {
+    "id": "school_bell",
+    "at": "Bells",
+    "look": "circle"
+   },
+   "sfx": [
+    {
+     "s": "ding",
+     "at": "Bells"
+    },
+    {
+     "s": "whoosh",
+     "at": "walks"
+    },
+    {
+     "s": "scribble",
+     "at": "Copy"
+    },
+    {
+     "s": "ding",
+     "at": "again"
+    }
+   ]
+  },
+  {
+   "id": "c1b",
+   "text": "Five days a week. Twelve years. And somewhere in all those hours nobody ever said here's how a paycheck works.",
+   "host": true,
+   "mood": "tired",
+   "pose": "talk",
+   "sfx": [
+    {
+     "s": "tick",
+     "at": "Twelve"
+    },
+    {
+     "s": "cricket",
+     "at": "works"
+    }
+   ]
+  },
+  {
+   "id": "n30",
+   "text": "I had a test on the Roman Empire. I had a test on fractions. I had a test on the water cycle. I never had a test on what a tax return is.",
+   "pic": {
+    "id": "rome",
+    "at": "Roman",
+    "look": "polaroid"
+   },
+   "sfx": [
+    {
+     "s": "ding",
+     "at": "Roman"
+    },
+    {
+     "s": "ding",
+     "at": "fractions"
+    },
+    {
+     "s": "ding",
+     "at": "water"
+    },
+    {
+     "s": "cricket",
+     "at": "return"
+    }
+   ]
+  },
+  {
+   "id": "n1",
+   "text": "Me in school learning stuff I'd never use again.",
+   "meme": {
+    "t": "drake",
+    "a": "How to do your taxes",
+    "b": "The mitochondria is the powerhouse of the cell",
+    "at": "school"
+   },
+   "sfx": [
+    {
+     "s": "pop",
+     "at": "school"
+    }
+   ]
+  },
+  {
+   "id": "c1c",
+   "text": "So I went looking for why. And it starts way before any of us were born. In Prussia. Around three hundred years ago.",
+   "pic": {
+    "id": "prussia",
+    "at": "Prussia",
+    "look": "news",
+    "label": "Prussia"
+   },
+   "sfx": [
+    {
+     "s": "flip",
+     "at": "looking"
+    },
+    {
+     "s": "ding",
+     "at": "Prussia"
+    }
+   ]
+  },
+  {
+   "id": "c1d",
+   "text": "The king made school required for regular kids. That was a huge deal. Before that most kids worked on farms and never learned to read at all.",
+   "pic": {
+    "id": "farm_kids",
+    "at": "farms",
+    "look": "polaroid"
+   },
+   "sfx": [
+    {
+     "s": "stamp",
+     "at": "required"
+    },
+    {
+     "s": "ding",
+     "at": "deal"
+    },
+    {
+     "s": "boing",
+     "at": "farms"
+    }
+   ]
+  },
+  {
+   "id": "c1e",
+   "text": "Later an American named Horace Mann went to see it. He loved it. He came home and pushed for public schools across America.",
+   "pic": {
+    "id": "mann",
+    "at": "Horace",
+    "look": "news",
+    "label": "Horace Mann"
+   },
+   "sfx": [
+    {
+     "s": "ding",
+     "at": "Horace"
+    },
+    {
+     "s": "crowd",
+     "at": "loved"
+    },
+    {
+     "s": "stamp",
+     "at": "schools"
+    }
+   ]
+  },
+  {
+   "id": "n31",
+   "text": "And to be fair school changed the world. Way more people could read. That's huge. I'm not mad at reading.",
+   "host": true,
+   "mood": "happy",
+   "pose": "shrug",
+   "pic": {
+    "id": "books",
+    "at": "read",
+    "look": "sticker"
+   },
+   "zoom": {
+    "in": "mad",
+    "out": "reading"
+   },
+   "sfx": [
+    {
+     "s": "ding",
+     "at": "read"
+    },
+    {
+     "s": "boom",
+     "at": "reading"
+    }
+   ]
+  },
+  {
+   "id": "c1f",
+   "text": "Now you'll hear people online say school was built to make obedient factory workers. Historians say that's way too simple. Schools had a lot of goals.",
+   "host": true,
+   "mood": "think",
+   "pose": "point_up",
+   "zoom": {
+    "in": "too",
+    "out": "simple"
+   },
+   "sfx": [
+    {
+     "s": "scratch",
+     "at": "obedient"
+    },
+    {
+     "s": "boom",
+     "at": "simple"
+    }
+   ]
+  },
+  {
+   "id": "c1g",
+   "text": "Reading. Writing. Math. Being a good citizen. Showing up on time. Following instructions. All useful. But look at that list again.",
+   "pic": {
+    "id": "chalkboard",
+    "at": "list",
+    "look": "tape"
+   },
+   "sfx": [
+    {
+     "s": "ding",
+     "at": "Reading"
+    },
+    {
+     "s": "ding",
+     "at": "Math"
+    },
+    {
+     "s": "tick",
+     "at": "time"
+    },
+    {
+     "s": "pack/01_beating",
+     "at": "again"
+    }
+   ]
+  },
+  {
+   "id": "n2",
+   "text": "Money is not on it. Not even at the bottom.",
+   "card": {
+    "t": "Money isn't on the list.",
+    "dark": true
+   },
+   "sfx": [
+    {
+     "s": "cricket",
+     "at": "Money"
+    },
+    {
+     "s": "pack/01_boom",
+     "at": "bottom"
+    }
+   ],
+   "pause": 0.5
+  },
+  {
+   "id": "c1h",
+   "text": "Back then most people didn't need it. You got paid in cash. You put it under the mattress. No credit cards. No apps. No four hundred page loan contracts.",
+   "pic": {
+    "id": "mattress",
+    "at": "mattress",
+    "look": "sticker"
+   },
+   "sfx": [
+    {
+     "s": "cash",
+     "at": "cash"
+    },
+    {
+     "s": "boing",
+     "at": "mattress"
+    },
+    {
+     "s": "scratch",
+     "at": "contracts"
+    }
+   ]
+  },
+  {
+   "id": "n32",
+   "text": "My great grandpa got paid on Friday in an envelope. He bought groceries. He paid rent. Whatever was left went in a jar. That was his whole financial plan.",
+   "pic": {
+    "id": "jar",
+    "at": "jar",
+    "look": "polaroid",
+    "label": "great grandpa's bank"
+   },
+   "sfx": [
+    {
+     "s": "mail",
+     "at": "envelope"
+    },
+    {
+     "s": "coin",
+     "at": "jar"
+    },
+    {
+     "s": "ding",
+     "at": "plan"
+    }
+   ]
+  },
+  {
+   "id": "n3",
+   "text": "But then the world changed. Money got complicated. Really complicated. And school? School just kept teaching the plant cell.",
+   "host": true,
+   "mood": "sad",
+   "pose": "shrug",
+   "zoom": {
+    "in": "plant",
+    "out": "cell"
+   },
+   "sfx": [
+    {
+     "s": "pack/02_evolve_brassy_drop_2",
+     "at": "complicated#2"
+    },
+    {
+     "s": "boing",
+     "at": "cell"
+    }
+   ]
+  },
+  {
+   "id": "n33",
+   "text": "Today an eighteen year old has to deal with student loans and credit scores and apps that let you buy a pizza in four payments. Nobody gave them a map.",
+   "host": true,
+   "mood": "worried",
+   "pose": "talk",
+   "pic": {
+    "id": "map",
+    "at": "map",
+    "look": "tape"
+   },
+   "sfx": [
+    {
+     "s": "ding",
+     "at": "loans"
+    },
+    {
+     "s": "pop",
+     "at": "pizza"
+    },
+    {
+     "s": "pack/01_beating",
+     "at": "map"
+    }
+   ]
+  },
+  {
+   "id": "n4",
+   "text": "School watching money get complicated.",
+   "meme": {
+    "t": "fine",
+    "a": "Anyway here's photosynthesis",
+    "at": "watching"
+   },
+   "sfx": [
+    {
+     "s": "cricket",
+     "at": "watching"
+    }
+   ]
+  },
+  {
+   "id": "c1i",
+   "text": "Even today only about half of the states make high schoolers take a personal finance class. And most of those rules are brand new. So if you're out of school already you probably never got one.",
+   "host": true,
+   "mood": "shock",
+   "pose": "point_r",
+   "slam": {
+    "t": "ONLY ~HALF",
+    "at": "half"
+   },
+   "pic": {
+    "id": "map_us",
+    "at": "states",
+    "look": "plain"
+   },
+   "sfx": [
+    {
+     "s": "ding",
+     "at": "half"
+    },
+    {
+     "s": "pack/02_deep",
+     "at": "new"
+    },
+    {
+     "s": "trombone",
+     "at": "one"
+    }
+   ]
+  },
+  {
+   "id": "n5",
+   "text": "Raise your hand if you learned how a credit card works in school. Yeah. Me neither.",
+   "host": true,
+   "mood": "grin",
+   "pose": "point_up",
+   "zoom": {
+    "in": "Me",
+    "out": "neither"
+   },
+   "sfx": [
+    {
+     "s": "ding",
+     "at": "hand"
+    },
+    {
+     "s": "boom",
+     "at": "neither"
+    }
+   ]
+  },
+  {
+   "id": "c2a",
+   "text": "So I leave school knowing everything except the thing I'll use every day. And guess who was waiting for me on the other side?",
+   "chapter": "The Free T-Shirt",
+   "host": true,
+   "mood": "suspicious",
+   "pose": "hips",
+   "sfx": [
+    {
+     "s": "riser",
+     "at": "waiting"
+    },
+    {
+     "s": "pack/01_boom",
+     "at": "side"
+    }
+   ]
+  },
+  {
+   "id": "c2b",
+   "text": "Back in the day credit card companies set up tables right on college campuses. Free t-shirts. Free pizza. Free water bottles. Just sign here.",
+   "pic": {
+    "id": "campus",
+    "at": "campuses",
+    "look": "polaroid"
+   },
+   "sfx": [
+    {
+     "s": "pop",
+     "at": "t-shirts"
+    },
+    {
+     "s": "pop",
+     "at": "pizza"
+    },
+    {
+     "s": "pop",
+     "at": "bottles"
+    },
+    {
+     "s": "stamp",
+     "at": "sign"
+    }
+   ]
+  },
+  {
+   "id": "n34",
+   "text": "Some students signed up for four or five cards in one week. Just for the free stuff. I knew a guy with a closet full of credit card t-shirts.",
+   "pic": {
+    "id": "closet",
+    "at": "closet",
+    "look": "circle"
+   },
+   "sfx": [
+    {
+     "s": "pop",
+     "at": "five"
+    },
+    {
+     "s": "boing",
+     "at": "closet"
+    }
+   ]
+  },
+  {
+   "id": "n6",
+   "text": "Eighteen year old me seeing a free t-shirt.",
+   "meme": {
+    "t": "buttons",
+    "a": "Read the terms",
+    "b": "Free t-shirt",
+    "at": "Eighteen"
+   },
+   "sfx": [
+    {
+     "s": "pack/01_beating",
+     "at": "Eighteen"
+    }
+   ]
+  },
+  {
+   "id": "c2c",
+   "text": "It got so bad that Congress passed a law in two thousand nine that banned giving students free stuff for signing up for a card.",
+   "pic": {
+    "id": "capitol",
+    "at": "Congress",
+    "look": "news",
+    "label": "Credit CARD Act, 2009"
+   },
+   "slam": {
+    "t": "BANNED",
+    "at": "banned"
+   },
+   "sfx": [
+    {
+     "s": "stamp",
+     "at": "law"
+    },
+    {
+     "s": "pack/03_evolve_boom_brass_d",
+     "at": "banned"
+    }
+   ]
+  },
+  {
+   "id": "n48",
+   "text": "Credit card companies after the new law.",
+   "meme": {
+    "t": "fine",
+    "a": "We'll just use apps now",
+    "at": "law"
+   },
+   "sfx": [
+    {
+     "s": "cricket",
+     "at": "law"
+    }
+   ]
+  },
+  {
+   "id": "n7",
+   "text": "Think about that. They had to make a law to stop banks from trading teenagers a t-shirt for a lifetime of debt.",
+   "host": true,
+   "mood": "angry",
+   "pose": "point_r",
+   "zoom": {
+    "in": "lifetime",
+    "out": "debt"
+   },
+   "sfx": [
+    {
+     "s": "scratch",
+     "at": "law"
+    },
+    {
+     "s": "boom",
+     "at": "debt"
+    }
+   ]
+  },
+  {
+   "id": "c2d",
+   "text": "Why go after students? Because a student doesn't know the rules yet. And someone who doesn't know the rules is the best customer a bank can have.",
+   "host": true,
+   "mood": "smug",
+   "pose": "point_up",
+   "slam": {
+    "t": "BEST CUSTOMER",
+    "at": "best"
+   },
+   "sfx": [
+    {
+     "s": "ding",
+     "at": "students"
+    },
+    {
+     "s": "cash",
+     "at": "customer"
+    }
+   ]
+  },
+  {
+   "id": "n35",
+   "text": "It's like a casino setting up a free buffet right outside a high school. Technically legal. Morally weird.",
+   "pic": {
+    "id": "casino",
+    "at": "casino",
+    "look": "tape"
+   },
+   "sfx": [
+    {
+     "s": "coin",
+     "at": "casino"
+    },
+    {
+     "s": "boing",
+     "at": "weird"
+    }
+   ]
+  },
+  {
+   "id": "c2e",
+   "text": "Here's how my card worked. I bought a laptop. The bill said minimum payment twenty five dollars. I thought great. Twenty five dollars. I'm rich.",
+   "pic": {
+    "id": "laptop",
+    "at": "laptop",
+    "look": "tape"
+   },
+   "sfx": [
+    {
+     "s": "click",
+     "at": "laptop"
+    },
+    {
+     "s": "ding",
+     "at": "minimum"
+    },
+    {
+     "s": "cash",
+     "at": "rich"
+    }
+   ]
+  },
+  {
+   "id": "n8",
+   "text": "Me paying the minimum every month thinking I'm responsible.",
+   "meme": {
+    "t": "stonks",
+    "a": "FINANCIALLY RESPONSIBLE",
+    "at": "minimum"
+   },
+   "sfx": [
+    {
+     "s": "cash",
+     "at": "minimum"
+    }
+   ]
+  },
+  {
+   "id": "c2f",
+   "text": "Nobody told me the card was charging me more than twenty percent a year on everything I didn't pay. Paying the minimum meant that laptop would take years to pay off. And cost way more than the laptop.",
+   "host": true,
+   "mood": "shock",
+   "pose": "panic",
+   "slam": {
+    "t": "20%+ A YEAR",
+    "at": "twenty"
+   },
+   "sfx": [
+    {
+     "s": "drumroll",
+     "at": "Nobody"
+    },
+    {
+     "s": "pack/02_deep",
+     "at": "twenty"
+    },
+    {
+     "s": "trombone",
+     "at": "laptop#2"
+    }
+   ]
+  },
+  {
+   "id": "n9",
+   "text": "It's like a bathtub with the tap running and you're bailing water out with a spoon. Every month you scoop. Every month it fills right back up.",
+   "pic": {
+    "id": "bathtub",
+    "at": "bathtub",
+    "look": "polaroid"
+   },
+   "sfx": [
+    {
+     "s": "ding",
+     "at": "bathtub"
+    },
+    {
+     "s": "pop",
+     "at": "spoon"
+    },
+    {
+     "s": "boing",
+     "at": "up"
+    }
+   ]
+  },
+  {
+   "id": "c2g",
+   "text": "And then the bank account. One coffee too many. Account below zero. Fee. Another coffee. Another fee. I paid more in fees than the coffee cost.",
+   "pic": {
+    "id": "coffee",
+    "at": "coffee",
+    "look": "circle"
+   },
+   "sfx": [
+    {
+     "s": "ding",
+     "at": "coffee"
+    },
+    {
+     "s": "scratch",
+     "at": "Fee"
+    },
+    {
+     "s": "scratch",
+     "at": "fee#2"
+    },
+    {
+     "s": "trombone",
+     "at": "cost"
+    }
+   ]
+  },
+  {
+   "id": "n36",
+   "text": "One month I paid thirty five dollars in fees for a four dollar coffee. The most expensive coffee in human history. And I didn't even like it.",
+   "host": true,
+   "mood": "shock",
+   "pose": "panic",
+   "slam": {
+    "t": "$35 COFFEE",
+    "at": "thirty"
+   },
+   "zoom": {
+    "in": "didn't",
+    "out": "it"
+   },
+   "sfx": [
+    {
+     "s": "cash",
+     "at": "thirty"
+    },
+    {
+     "s": "trombone",
+     "at": "coffee#2"
+    },
+    {
+     "s": "boom",
+     "at": "it"
+    }
+   ]
+  },
+  {
+   "id": "n10",
+   "text": "Banks made billions from those fees. A big chunk from people who just didn't know how it worked.",
+   "host": true,
+   "mood": "sad",
+   "pose": "talk",
+   "pic": {
+    "id": "bank",
+    "at": "Banks",
+    "look": "news"
+   },
+   "sfx": [
+    {
+     "s": "cash",
+     "at": "billions"
+    },
+    {
+     "s": "cricket",
+     "at": "worked"
+    }
+   ]
+  },
+  {
+   "id": "n11",
+   "text": "My bank account after one month of being an adult.",
+   "meme": {
+    "t": "fine",
+    "a": "-$35 overdraft fee",
+    "at": "adult"
+   },
+   "sfx": [
+    {
+     "s": "cricket",
+     "at": "adult"
+    }
+   ]
+  },
+  {
+   "id": "c2h",
+   "text": "And here's what nobody tells you. Not knowing about money isn't free. You pay for it. Every single month. In interest and fees and bad deals.",
+   "host": true,
+   "mood": "angry",
+   "pose": "talk",
+   "zoom": {
+    "in": "isn't",
+    "out": "free"
+   },
+   "sfx": [
+    {
+     "s": "scratch",
+     "at": "knowing"
+    },
+    {
+     "s": "boom",
+     "at": "free"
+    },
+    {
+     "s": "cash",
+     "at": "deals"
+    }
+   ]
+  },
+  {
+   "id": "c3a",
+   "text": "So who wins when you don't know? I asked myself that question and the answer scared me a little.",
+   "chapter": "Who Wins When You Don't Know",
+   "host": true,
+   "mood": "worried",
+   "pose": "think",
+   "sfx": [
+    {
+     "s": "pack/01_processing",
+     "at": "wins"
+    },
+    {
+     "s": "sting",
+     "at": "little"
+    }
+   ]
+  },
+  {
+   "id": "c3b",
+   "text": "Every dollar of interest I paid went somewhere. It didn't vanish. It went to someone who understood interest better than me.",
+   "pic": {
+    "id": "money_stack",
+    "at": "dollar",
+    "look": "tape"
+   },
+   "sfx": [
+    {
+     "s": "cash",
+     "at": "dollar"
+    },
+    {
+     "s": "ding",
+     "at": "someone"
+    }
+   ]
+  },
+  {
+   "id": "c3c",
+   "text": "Money has a direction. It flows from the people who don't know the rules to the people who do. Every single day. Like water running downhill.",
+   "pic": {
+    "id": "river",
+    "at": "water",
+    "look": "polaroid"
+   },
+   "slam": {
+    "t": "MONEY FLOWS",
+    "at": "flows"
+   },
+   "sfx": [
+    {
+     "s": "whoosh",
+     "at": "flows"
+    },
+    {
+     "s": "ding",
+     "at": "do"
+    },
+    {
+     "s": "pack/01_evolve_brassy_swell",
+     "at": "downhill"
+    }
+   ]
+  },
+  {
+   "id": "n37",
+   "text": "Think of a seesaw. When I'm paying interest I'm down here. The bank is up there. It's the same seesaw. Just somebody always sits on the high side.",
+   "pic": {
+    "id": "seesaw",
+    "at": "seesaw",
+    "look": "sticker"
+   },
+   "sfx": [
+    {
+     "s": "boing",
+     "at": "seesaw"
+    },
+    {
+     "s": "ding",
+     "at": "high"
+    }
+   ]
+  },
+  {
+   "id": "n12",
+   "text": "Interest when you owe it versus interest when you own it.",
+   "meme": {
+    "t": "vs",
+    "a": "You owe it: it eats you",
+    "b": "You own it: it feeds you",
+    "at": "versus"
+   },
+   "sfx": [
+    {
+     "s": "pop",
+     "at": "versus"
+    }
+   ]
+  },
+  {
+   "id": "c3d",
+   "text": "And here's the part that really got me. Rich kids learn this stuff. Just not at school. At the dinner table.",
+   "host": true,
+   "mood": "shock",
+   "pose": "point_r",
+   "pic": {
+    "id": "dinner_table",
+    "at": "dinner",
+    "look": "polaroid"
+   },
+   "zoom": {
+    "in": "dinner",
+    "out": "table"
+   },
+   "sfx": [
+    {
+     "s": "scratch",
+     "at": "Rich"
+    },
+    {
+     "s": "boom",
+     "at": "table"
+    }
+   ]
+  },
+  {
+   "id": "c3e",
+   "text": "Their parents talk about stocks and rent and taxes like it's the weather. By sixteen they already know what an investment is. I knew what a plant cell was.",
+   "host": true,
+   "mood": "tired",
+   "pose": "facepalm",
+   "sfx": [
+    {
+     "s": "ding",
+     "at": "stocks"
+    },
+    {
+     "s": "ding",
+     "at": "taxes"
+    },
+    {
+     "s": "boing",
+     "at": "cell"
+    }
+   ]
+  },
+  {
+   "id": "n38",
+   "text": "One kid gets a savings account at ten and a lesson about compound interest. Another kid gets told money doesn't grow on trees and to turn off the lights.",
+   "host": true,
+   "mood": "grin",
+   "pose": "point_r",
+   "pic": {
+    "id": "light_switch",
+    "at": "lights",
+    "look": "circle"
+   },
+   "sfx": [
+    {
+     "s": "ding",
+     "at": "savings"
+    },
+    {
+     "s": "click",
+     "at": "lights"
+    }
+   ]
+  },
+  {
+   "id": "n13",
+   "text": "Rich kid at dinner versus me at dinner.",
+   "meme": {
+    "t": "vs",
+    "a": "Dad explaining index funds",
+    "b": "Dad yelling about the light bill",
+    "at": "dinner"
+   },
+   "sfx": [
+    {
+     "s": "pop",
+     "at": "dinner"
+    }
+   ]
+  },
+  {
+   "id": "c3f",
+   "text": "So the money lesson didn't disappear. It just moved. From the classroom to rich families. And if your family didn't know either you got nothing.",
+   "host": true,
+   "mood": "sad",
+   "pose": "shrug",
+   "pic": {
+    "id": "mansion",
+    "at": "families",
+    "look": "tape"
+   },
+   "sfx": [
+    {
+     "s": "whoosh",
+     "at": "moved"
+    },
+    {
+     "s": "ding",
+     "at": "families"
+    },
+    {
+     "s": "cricket",
+     "at": "nothing"
+    }
+   ]
+  },
+  {
+   "id": "c3g",
+   "text": "Now am I saying there's a secret club that hid money from school on purpose? No. It's simpler than that. And honestly worse.",
+   "host": true,
+   "mood": "suspicious",
+   "pose": "hips",
+   "sfx": [
+    {
+     "s": "scratch",
+     "at": "club"
+    },
+    {
+     "s": "pack/01_beating",
+     "at": "worse"
+    }
+   ]
+  },
+  {
+   "id": "c3h",
+   "text": "Nobody had to hide it. The system just never needed you to understand money. It works perfectly fine whether you get it or not. It just works better for the people who do.",
+   "card": {
+    "t": "The system never needed you to understand money.",
+    "dark": true
+   },
+   "sfx": [
+    {
+     "s": "pack/01_boom",
+     "at": "needed"
+    },
+    {
+     "s": "stamp",
+     "at": "do"
+    }
+   ],
+   "pause": 0.6
+  },
+  {
+   "id": "n14",
+   "text": "A bank doesn't need you to understand interest. It needs you to pay it. A credit card doesn't need you to read the terms. It needs you to sign.",
+   "host": true,
+   "mood": "angry",
+   "pose": "point_up",
+   "zoom": {
+    "in": "needs#2",
+    "out": "sign"
+   },
+   "sfx": [
+    {
+     "s": "cash",
+     "at": "pay"
+    },
+    {
+     "s": "stamp",
+     "at": "sign"
+    }
+   ]
+  },
+  {
+   "id": "n15",
+   "text": "Banks reading about schools adding finance class.",
+   "meme": {
+    "t": "fine",
+    "a": "Please don't",
+    "at": "Banks"
+   },
+   "sfx": [
+    {
+     "s": "cricket",
+     "at": "Banks"
+    }
+   ]
+  },
+  {
+   "id": "c3i",
+   "text": "And that's why nobody was rushing. Teachers were busy. Parents didn't know. Banks were happy. And you and me walked into adult life blindfolded.",
+   "pic": {
+    "id": "blindfold",
+    "at": "blindfolded",
+    "look": "circle"
+   },
+   "sfx": [
+    {
+     "s": "tick",
+     "at": "rushing"
+    },
+    {
+     "s": "ding",
+     "at": "happy"
+    },
+    {
+     "s": "pack/02_evolve_brassy_drop_2",
+     "at": "blindfolded"
+    }
+   ]
+  },
+  {
+   "id": "n39",
+   "text": "And here's the sad loop. You don't learn it. So you can't teach your kids. So they don't learn it either. The blindfold gets handed down.",
+   "host": true,
+   "mood": "sad",
+   "pose": "facepalm",
+   "zoom": {
+    "in": "handed",
+    "out": "down"
+   },
+   "sfx": [
+    {
+     "s": "pack/02_evolve_brassy_drop_2",
+     "at": "loop"
+    },
+    {
+     "s": "boom",
+     "at": "down"
+    }
+   ]
+  },
+  {
+   "id": "n16",
+   "text": "It's like being thrown into a poker game where everyone else got the rule book and you got a free t-shirt.",
+   "pic": {
+    "id": "poker",
+    "at": "poker",
+    "look": "polaroid"
+   },
+   "sfx": [
+    {
+     "s": "pop",
+     "at": "poker"
+    },
+    {
+     "s": "boing",
+     "at": "t-shirt"
+    }
+   ]
+  },
+  {
+   "id": "n40",
+   "text": "The good news? You can break that loop in one generation. Starting with you. Starting today.",
+   "host": true,
+   "mood": "happy",
+   "pose": "point_up",
+   "slam": {
+    "t": "BREAK THE LOOP",
+    "at": "break"
+   },
+   "sfx": [
+    {
+     "s": "pack/01_evolve_brassy_swell",
+     "at": "break"
+    },
+    {
+     "s": "ding",
+     "at": "today"
+    }
+   ]
+  },
+  {
+   "id": "n41",
+   "text": "Breaking the family money curse.",
+   "meme": {
+    "t": "stonks",
+    "a": "GENERATIONAL LEARNING",
+    "at": "curse"
+   },
+   "sfx": [
+    {
+     "s": "cash",
+     "at": "curse"
+    }
+   ]
+  },
+  {
+   "id": "c4a",
+   "text": "So let me give you the class school skipped. Four rules. Quick reminder this is education and not advice.",
+   "chapter": "The Class School Skipped",
+   "host": true,
+   "mood": "happy",
+   "pose": "point_up",
+   "pic": {
+    "id": "notebook",
+    "at": "class",
+    "look": "tape",
+    "label": "class 101"
+   },
+   "sfx": [
+    {
+     "s": "ding",
+     "at": "class"
+    },
+    {
+     "s": "drumroll",
+     "at": "rules"
+    }
+   ]
+  },
+  {
+   "id": "c4b",
+   "text": "Rule one. Interest is a machine. It either works for you or against you. There's no third option.",
+   "host": true,
+   "mood": "smug",
+   "pose": "present",
+   "slam": {
+    "t": "RULE 1: INTEREST",
+    "at": "Interest"
+   },
+   "pic": {
+    "id": "gears",
+    "at": "machine",
+    "look": "sticker"
+   },
+   "sfx": [
+    {
+     "s": "ding",
+     "at": "one"
+    },
+    {
+     "s": "pack/01_processing",
+     "at": "machine"
+    },
+    {
+     "s": "boom",
+     "at": "option"
+    }
+   ]
+  },
+  {
+   "id": "c4c",
+   "text": "When you owe on a card the machine eats you a little every month. When you own something that grows the same machine feeds you a little every month. Same machine. Opposite side.",
+   "sfx": [
+    {
+     "s": "trombone",
+     "at": "eats"
+    },
+    {
+     "s": "ding",
+     "at": "feeds"
+    },
+    {
+     "s": "stamp",
+     "at": "Opposite"
+    }
+   ]
+  },
+  {
+   "id": "n42",
+   "text": "A credit card balance is the machine eating. A retirement account is the machine feeding. Same math. You just pick the side.",
+   "pic": {
+    "id": "calculator",
+    "at": "math",
+    "look": "tape"
+   },
+   "sfx": [
+    {
+     "s": "trombone",
+     "at": "eating"
+    },
+    {
+     "s": "ding",
+     "at": "feeding"
+    },
+    {
+     "s": "stamp",
+     "at": "side"
+    }
+   ]
+  },
+  {
+   "id": "n17",
+   "text": "The whole money game is just getting on the right side of that machine. That's it. That's the secret they never wrote on the board.",
+   "host": true,
+   "mood": "grin",
+   "pose": "point_r",
+   "zoom": {
+    "in": "right",
+    "out": "machine"
+   },
+   "sfx": [
+    {
+     "s": "ding",
+     "at": "right"
+    },
+    {
+     "s": "boom",
+     "at": "board"
+    }
+   ]
+  },
+  {
+   "id": "c4d",
+   "text": "Rule two. Your paycheck isn't your wealth. What you keep and what you own is. A guy earning a lot and spending it all is just a well paid broke guy.",
+   "host": true,
+   "mood": "smug",
+   "pose": "shrug",
+   "slam": {
+    "t": "RULE 2: KEEP & OWN",
+    "at": "keep"
+   },
+   "pic": {
+    "id": "sports_car",
+    "at": "guy",
+    "look": "tape"
+   },
+   "sfx": [
+    {
+     "s": "ding",
+     "at": "two"
+    },
+    {
+     "s": "cash",
+     "at": "keep"
+    },
+    {
+     "s": "boing",
+     "at": "broke"
+    }
+   ]
+  },
+  {
+   "id": "n43",
+   "text": "There are doctors who are broke and plumbers who are rich. Not because of the paycheck. Because of what they did with it.",
+   "pic": {
+    "id": "plumber",
+    "at": "plumbers",
+    "look": "polaroid"
+   },
+   "sfx": [
+    {
+     "s": "ding",
+     "at": "doctors"
+    },
+    {
+     "s": "cash",
+     "at": "rich"
+    }
+   ]
+  },
+  {
+   "id": "n18",
+   "text": "Me with my first big paycheck.",
+   "meme": {
+    "t": "brain",
+    "a": "Save some",
+    "b": "Buy new shoes",
+    "c": "Buy new shoes on a credit card",
+    "at": "paycheck"
+   },
+   "sfx": [
+    {
+     "s": "pack/01_processing",
+     "at": "paycheck"
+    }
+   ]
+  },
+  {
+   "id": "c4e",
+   "text": "Rule three. Own things that grow. A small slice of companies. Over long stretches the stock market has grown way faster than a savings account. With scary drops along the way. You hold on through them.",
+   "host": true,
+   "mood": "happy",
+   "pose": "point_up",
+   "slam": {
+    "t": "RULE 3: OWN THINGS",
+    "at": "Own"
+   },
+   "pic": {
+    "id": "seedling",
+    "at": "grow",
+    "look": "sticker"
+   },
+   "sfx": [
+    {
+     "s": "ding",
+     "at": "three"
+    },
+    {
+     "s": "pack/01_evolve_brassy_swell",
+     "at": "faster"
+    },
+    {
+     "s": "pack/02_evolve_brassy_drop_2",
+     "at": "drops"
+    }
+   ]
+  },
+  {
+   "id": "n19",
+   "text": "You don't need a lot. You need time. Someone who starts with a little at twenty usually beats someone who starts with a lot at forty. Time does the heavy lifting.",
+   "pic": {
+    "id": "clock",
+    "at": "time",
+    "look": "circle"
+   },
+   "sfx": [
+    {
+     "s": "tick",
+     "at": "time"
+    },
+    {
+     "s": "ding",
+     "at": "beats"
+    },
+    {
+     "s": "boom",
+     "at": "lifting"
+    }
+   ]
+  },
+  {
+   "id": "n44",
+   "text": "Think of a snowball rolling down a hill. Start it at the top and it gets huge. Start it halfway down and it stays small. Same snow. More hill.",
+   "pic": {
+    "id": "snowball",
+    "at": "snowball",
+    "look": "circle"
+   },
+   "sfx": [
+    {
+     "s": "whoosh",
+     "at": "rolling"
+    },
+    {
+     "s": "pack/01_evolve_brassy_swell",
+     "at": "huge"
+    },
+    {
+     "s": "boom",
+     "at": "hill#2"
+    }
+   ]
+  },
+  {
+   "id": "n20",
+   "text": "Twenty year old me learning that time is the cheat code.",
+   "meme": {
+    "t": "stonks",
+    "a": "TIME > MONEY",
+    "at": "cheat"
+   },
+   "sfx": [
+    {
+     "s": "cash",
+     "at": "cheat"
+    }
+   ]
+  },
+  {
+   "id": "c4f",
+   "text": "Rule four. Read the deal before you sign. Every card. Every loan. Every free trial. The free t-shirt is never free.",
+   "host": true,
+   "mood": "suspicious",
+   "pose": "point_r",
+   "slam": {
+    "t": "RULE 4: READ THE DEAL",
+    "at": "Read"
+   },
+   "pic": {
+    "id": "contract",
+    "at": "deal",
+    "look": "tape"
+   },
+   "sfx": [
+    {
+     "s": "ding",
+     "at": "four"
+    },
+    {
+     "s": "paper",
+     "at": "deal"
+    },
+    {
+     "s": "stamp",
+     "at": "free#2"
+    }
+   ]
+  },
+  {
+   "id": "n45",
+   "text": "Anything that says free or zero percent or no payments for a year. That's the part to read twice. The catch always lives in the small print.",
+   "pic": {
+    "id": "magnifier",
+    "at": "print",
+    "look": "sticker"
+   },
+   "sfx": [
+    {
+     "s": "pop",
+     "at": "free"
+    },
+    {
+     "s": "pack/01_processing",
+     "at": "twice"
+    },
+    {
+     "s": "stamp",
+     "at": "print"
+    }
+   ]
+  },
+  {
+   "id": "n21",
+   "text": "Ask one question every time. How much does this cost me if I'm late or if I pay slowly? That one question would have saved eighteen year old me thousands.",
+   "host": true,
+   "mood": "happy",
+   "pose": "thumbs",
+   "zoom": {
+    "in": "saved",
+    "out": "thousands"
+   },
+   "sfx": [
+    {
+     "s": "tick",
+     "at": "slowly"
+    },
+    {
+     "s": "cash",
+     "at": "thousands"
+    }
+   ]
+  },
+  {
+   "id": "n22",
+   "text": "Me reading the terms before signing now.",
+   "meme": {
+    "t": "drake",
+    "a": "Free t-shirt",
+    "b": "Reading page four",
+    "at": "terms"
+   },
+   "sfx": [
+    {
+     "s": "pop",
+     "at": "terms"
+    }
+   ]
+  },
+  {
+   "id": "n46",
+   "text": "If school won't teach it then you teach it. Tell your little brother. Tell your kid. Tell your friend who just got a credit card in the mail.",
+   "host": true,
+   "mood": "happy",
+   "pose": "point_r",
+   "pic": {
+    "id": "mailbox",
+    "at": "mail",
+    "look": "tape"
+   },
+   "sfx": [
+    {
+     "s": "ding",
+     "at": "brother"
+    },
+    {
+     "s": "ding",
+     "at": "kid"
+    },
+    {
+     "s": "mail",
+     "at": "mail"
+    }
+   ]
+  },
+  {
+   "id": "n47",
+   "text": "Me explaining compound interest at every family dinner now.",
+   "meme": {
+    "t": "vs",
+    "a": "Family: please stop",
+    "b": "Me: one more rule",
+    "at": "dinner"
+   },
+   "sfx": [
+    {
+     "s": "pop",
+     "at": "dinner"
+    }
+   ]
+  },
+  {
+   "id": "r1",
+   "text": "So why did school never teach you about money? Not because of some evil plan. Because nobody's job was to teach it. And the people who profit from you not knowing had no reason to complain.",
+   "host": true,
+   "mood": "smug",
+   "pose": "point_up",
+   "zoom": {
+    "in": "no",
+    "out": "complain"
+   },
+   "sfx": [
+    {
+     "s": "drumroll",
+     "at": "why"
+    },
+    {
+     "s": "scratch",
+     "at": "evil"
+    },
+    {
+     "s": "boom",
+     "at": "complain"
+    }
+   ]
+  },
+  {
+   "id": "r2",
+   "text": "But here's the good news. The class is short. You just took it. Four rules. Interest. Keep. Own. Read.",
+   "host": true,
+   "mood": "happy",
+   "pose": "celebrate",
+   "slam": {
+    "t": "CLASS DISMISSED",
+    "at": "took"
+   },
+   "sfx": [
+    {
+     "s": "ding",
+     "at": "Interest"
+    },
+    {
+     "s": "ding",
+     "at": "Keep"
+    },
+    {
+     "s": "ding",
+     "at": "Own"
+    },
+    {
+     "s": "pack/03_evolve_boom_brass_d",
+     "at": "Read"
+    }
+   ]
+  },
+  {
+   "id": "r3",
+   "text": "The people who know the rules don't work harder than you. They just stopped playing blindfolded.",
+   "card": {
+    "t": "Take the blindfold off.",
+    "dark": true
+   },
+   "sfx": [
+    {
+     "s": "pack/01_boom",
+     "at": "blindfolded"
+    }
+   ],
+   "pause": 0.5
+  },
+  {
+   "id": "r4",
+   "text": "Oh and that free t-shirt? I still have it. It's the most expensive shirt I've ever owned.",
+   "host": true,
+   "mood": "grin",
+   "pose": "shrug",
+   "pic": {
+    "id": "old_shirt",
+    "at": "shirt",
+    "look": "sticker"
+   },
+   "zoom": {
+    "in": "most",
+    "out": "owned"
+   },
+   "sfx": [
+    {
+     "s": "boing",
+     "at": "t-shirt"
+    },
+    {
+     "s": "boom",
+     "at": "owned"
+    }
+   ]
+  },
+  {
+   "id": "r5",
+   "text": "Next time I find out why my grandpa worked one job and bought a house while I work two jobs and own a couch. Why hard work stopped making people rich.",
+   "pic": {
+    "id": "factory_worker",
+    "at": "grandpa",
+    "look": "polaroid",
+    "label": "grandpa"
+   },
+   "sfx": [
+    {
+     "s": "ding",
+     "at": "grandpa"
+    },
+    {
+     "s": "trombone",
+     "at": "couch"
+    },
+    {
+     "s": "pack/01_beating",
+     "at": "rich"
+    }
+   ]
+  },
+  {
+   "id": "r6",
+   "text": "Subscribe. It's free. And unlike that t-shirt it actually is.",
+   "host": true,
+   "mood": "grin",
+   "pose": "wave",
+   "zoom": {
+    "in": "actually",
+    "out": "is"
+   },
+   "sfx": [
+    {
+     "s": "ding",
+     "at": "Subscribe"
+    },
+    {
+     "s": "boom",
+     "at": "is"
+    }
+   ]
+  }
+ ]
+}
