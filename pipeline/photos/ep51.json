@@ -2,23 +2,43 @@
  "photos": [
   {
    "id": "phone_hand",
-   "q": "smartphone in hand"
+   "q": "smartphone in hand",
+   "file": "File:Black smartphone in hand (Unsplash).jpg",
+   "credit": "Dennis Cortés cortes",
+   "license": "CC0",
+   "page": "https://commons.wikimedia.org/wiki/File:Black_smartphone_in_hand_(Unsplash).jpg"
   },
   {
    "id": "light_switch",
-   "q": "light switch"
+   "q": "light switch",
+   "file": "File:Switches 20201003 110916.jpg",
+   "credit": "Ka23 13",
+   "license": "CC BY-SA 4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Switches_20201003_110916.jpg"
   },
   {
    "id": "party_confetti",
-   "q": "confetti"
+   "q": "confetti",
+   "file": "File:XS Nightclub Las Vegas Confetti 2.jpg",
+   "credit": "jencu",
+   "license": "CC BY 2.0",
+   "page": "https://commons.wikimedia.org/wiki/File:XS_Nightclub_Las_Vegas_Confetti_2.jpg"
   },
   {
    "id": "logo_shirt",
-   "q": "company logo sign"
+   "q": "company logo sign",
+   "file": "File:People's Insurance Company of China logo 2.png",
+   "credit": "People's Insurance Company of China",
+   "license": "Public domain",
+   "page": "https://commons.wikimedia.org/wiki/File:People%27s_Insurance_Company_of_China_logo_2.png"
   },
   {
    "id": "trophy",
-   "q": "trophy cup"
+   "q": "trophy cup",
+   "file": "File:The FA Cup Trophy.jpg",
+   "credit": "Carlos yo",
+   "license": "CC BY-SA 4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:The_FA_Cup_Trophy.jpg"
   },
   {
    "id": "notification",
@@ -26,99 +46,195 @@
   },
   {
    "id": "puppy",
-   "q": "puppy dog"
+   "q": "puppy dog",
+   "file": "File:Puppy with a blow-up collar (53254).jpg",
+   "credit": "Rhododendrites",
+   "license": "CC BY-SA 4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Puppy_with_a_blow-up_collar_(53254).jpg"
   },
   {
    "id": "casino_lights",
-   "q": "Las Vegas casino lights"
+   "q": "Las Vegas casino lights",
+   "file": "File:Las Vegas Night Lights.jpg",
+   "credit": "Steve Jurvetson",
+   "license": "CC BY 2.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Las_Vegas_Night_Lights.jpg"
   },
   {
    "id": "massachusetts",
-   "q": "Massachusetts State House"
+   "q": "Massachusetts State House",
+   "file": "File:Massachusetts State House Boston November 2016.jpg",
+   "credit": "King of Hearts",
+   "license": "CC BY-SA 4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Massachusetts_State_House_Boston_November_2016.jpg"
   },
   {
    "id": "courthouse",
-   "q": "courthouse building"
+   "q": "courthouse building",
+   "file": "File:CourthousePostOfficeTampa01.jpg",
+   "credit": "Ebyabe",
+   "license": "CC BY 2.5",
+   "page": "https://commons.wikimedia.org/wiki/File:CourthousePostOfficeTampa01.jpg"
   },
   {
    "id": "magnifying_glass",
-   "q": "magnifying glass"
+   "q": "magnifying glass",
+   "file": "File:Magnifying glass2.jpg",
+   "credit": "Heptagon",
+   "license": "Public domain",
+   "page": "https://commons.wikimedia.org/wiki/File:Magnifying_glass2.jpg"
   },
   {
    "id": "nyse",
-   "q": "New York Stock Exchange"
+   "q": "New York Stock Exchange",
+   "file": "File:New York Stock Exchange building, 20231002 171816.jpg",
+   "credit": "Jakub Hałun",
+   "license": "CC BY 4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:New_York_Stock_Exchange_building,_20231002_171816.jpg"
   },
   {
    "id": "server_room",
-   "q": "data center servers"
+   "q": "data center servers",
+   "file": "File:BalticServers data center.jpg",
+   "credit": "BalticServers.com",
+   "license": "CC BY-SA 3.0",
+   "page": "https://commons.wikimedia.org/wiki/File:BalticServers_data_center.jpg"
   },
   {
    "id": "taxi",
-   "q": "yellow taxi"
+   "q": "yellow taxi",
+   "file": "File:Green and yellow taxi at night in Yasukuni-dori Avenue, Shinjuku, Tokyo.jpg",
+   "credit": "Basile Morin",
+   "license": "CC BY-SA 4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Green_and_yellow_taxi_at_night_in_Yasukuni-dori_Avenue,_Shinjuku,_Tokyo.jpg"
   },
   {
    "id": "currency_exchange",
-   "q": "currency exchange booth"
+   "q": "currency exchange booth",
+   "file": "File:Inauguration Expatriates Welfare Bank Foreign Currency Exchange Booth Hazrat Shahjalal International Airport Dhaka 2022-06-11 (PID-0022725).jpg",
+   "credit": "Press Information Department",
+   "license": "Public domain",
+   "page": "https://commons.wikimedia.org/wiki/File:Inauguration_Expatriates_Welfare_Bank_Foreign_Currency_Exchange_Booth_Hazrat_Shahjalal_International_Airport_Dhaka_2022-06-11_(PID-0022725).jpg"
   },
   {
    "id": "popcorn",
-   "q": "popcorn"
+   "q": "popcorn",
+   "file": "File:Popcorn Christian Church.jpg",
+   "credit": "Nyttend",
+   "license": "Public domain",
+   "page": "https://commons.wikimedia.org/wiki/File:Popcorn_Christian_Church.jpg"
   },
   {
    "id": "office_worker",
-   "q": "office worker desk"
+   "q": "office worker desk",
+   "file": "File:Desk chair by Frank Lloyd Wright, V&A London.jpg",
+   "credit": "14GTR",
+   "license": "CC0",
+   "page": "https://commons.wikimedia.org/wiki/File:Desk_chair_by_Frank_Lloyd_Wright,_V%26A_London.jpg"
   },
   {
    "id": "coupon",
-   "q": "coupon"
+   "q": "coupon",
+   "file": "File:Coupon Pile Stock Photo (10865703765).jpg",
+   "credit": "Carol Pyles from Winter Haven, FL, US",
+   "license": "CC BY 2.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Coupon_Pile_Stock_Photo_(10865703765).jpg"
   },
   {
    "id": "pizza",
-   "q": "pizza"
+   "q": "pizza",
+   "file": "File:Vegetarian Pizza.jpg",
+   "credit": "Petar Milošević",
+   "license": "CC BY-SA 4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Vegetarian_Pizza.jpg"
   },
   {
    "id": "question_sign",
-   "q": "question mark sign"
+   "q": "question mark sign",
+   "file": "File:Unclothed woman behind question mark sign.jpg",
+   "credit": "National Photo Company",
+   "license": "Public domain",
+   "page": "https://commons.wikimedia.org/wiki/File:Unclothed_woman_behind_question_mark_sign.jpg"
   },
   {
    "id": "annual_report",
-   "q": "annual report document"
+   "q": "annual report document",
+   "file": "File:Annual report (1903) (18240717348).jpg",
+   "credit": "Internet Archive Book Images",
+   "license": "No restrictions",
+   "page": "https://commons.wikimedia.org/wiki/File:Annual_report_(1903)_(18240717348).jpg"
   },
   {
    "id": "skyscraper",
-   "q": "skyscraper"
+   "q": "skyscraper",
+   "file": "File:Skyscraper Los Angeles Downtown 2013.jpg",
+   "credit": "Tuxyso",
+   "license": "CC BY-SA 3.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Skyscraper_Los_Angeles_Downtown_2013.jpg"
   },
   {
    "id": "wall_street",
-   "q": "Wall Street sign"
+   "q": "Wall Street sign",
+   "file": "File:Wall-Street-Sign-New-York.jpg",
+   "credit": "Acediscovery",
+   "license": "CC BY 4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Wall-Street-Sign-New-York.jpg"
   },
   {
    "id": "raccoon",
-   "q": "raccoon"
+   "q": "raccoon",
+   "file": "File:Raccoon (Procyon lotor) 2.jpg",
+   "credit": "Darkone",
+   "license": "CC BY-SA 2.5",
+   "page": "https://commons.wikimedia.org/wiki/File:Raccoon_(Procyon_lotor)_2.jpg"
   },
   {
    "id": "eu_flag",
-   "q": "European Union flag"
+   "q": "European Union flag",
+   "file": "File:Karlsruhe Palace Flag of Europe 2025-05-09 01.jpg",
+   "credit": "Entbert",
+   "license": "CC BY 4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Karlsruhe_Palace_Flag_of_Europe_2025-05-09_01.jpg"
   },
   {
    "id": "price_tag",
-   "q": "price tag"
+   "q": "price tag",
+   "file": "File:2021-06-28 E-ink price tag in Sydney supermarket.jpg",
+   "credit": "Maksym Kozlenko",
+   "license": "CC BY-SA 4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:2021-06-28_E-ink_price_tag_in_Sydney_supermarket.jpg"
   },
   {
    "id": "sec",
-   "q": "SEC headquarters"
+   "q": "SEC headquarters",
+   "file": "File:SEC Headquarters Birmingham Nov 2011.jpg",
+   "credit": "Chris Pruitt",
+   "license": "CC BY-SA 3.0",
+   "page": "https://commons.wikimedia.org/wiki/File:SEC_Headquarters_Birmingham_Nov_2011.jpg"
   },
   {
    "id": "phone_box",
-   "q": "smartphone box"
+   "q": "smartphone box",
+   "file": "File:Samsung Omnia (Box) - Front.jpg",
+   "credit": "Beamish4",
+   "license": "CC BY-SA 4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Samsung_Omnia_(Box)_-_Front.jpg"
   },
   {
    "id": "receipt",
-   "q": "long receipt"
+   "q": "long receipt",
+   "file": "File:Wikicurious WikiHaus at Sundance 2026 - Long Receipt.jpg",
+   "credit": "Kevin Payravi",
+   "license": "CC BY-SA 4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Wikicurious_WikiHaus_at_Sundance_2026_-_Long_Receipt.jpg"
   },
   {
    "id": "slot_machine",
-   "q": "slot machine"
+   "q": "slot machine",
+   "file": "File:Slot machine.jpg",
+   "credit": "Jeff Kubina from the milky way galaxy",
+   "license": "CC BY-SA 2.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Slot_machine.jpg"
   },
   {
    "id": "night_bed",
@@ -126,15 +242,27 @@
   },
   {
    "id": "trader_screens",
-   "q": "stock trader screens"
+   "q": "stock trader screens",
+   "file": "File:NY stock exchange traders floor LC-U9-10548-6.jpg",
+   "credit": "Thomas J. O'Halloran",
+   "license": "Public domain",
+   "page": "https://commons.wikimedia.org/wiki/File:NY_stock_exchange_traders_floor_LC-U9-10548-6.jpg"
   },
   {
    "id": "brazil",
-   "q": "Sao Paulo skyline"
+   "q": "Sao Paulo skyline",
+   "file": "File:Ponte estaiada Octavio Frias - Sao Paulo.jpg",
+   "credit": "Marcosleal",
+   "license": "CC BY-SA 3.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Ponte_estaiada_Octavio_Frias_-_Sao_Paulo.jpg"
   },
   {
    "id": "night_city",
-   "q": "city at night"
+   "q": "city at night",
+   "file": "File:Price Building illuminated at night in Quebec City.jpg",
+   "credit": "Wilfredor",
+   "license": "CC0",
+   "page": "https://commons.wikimedia.org/wiki/File:Price_Building_illuminated_at_night_in_Quebec_City.jpg"
   },
   {
    "id": "gear",
@@ -142,31 +270,59 @@
   },
   {
    "id": "dog_park",
-   "q": "dog running grass"
+   "q": "dog running grass",
+   "file": "File:Shaggy Dog running.jpg",
+   "credit": "Sheila Sund",
+   "license": "CC BY 2.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Shaggy_Dog_running.jpg"
   },
   {
    "id": "brick_wall",
-   "q": "brick wall"
+   "q": "brick wall",
+   "file": "File:Brick wall close-up view.jpg",
+   "credit": "Pawel Wozniak",
+   "license": "CC BY-SA 3.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Brick_wall_close-up_view.jpg"
   },
   {
    "id": "piggy_bank",
-   "q": "piggy bank coins"
+   "q": "piggy bank coins",
+   "file": "File:Colorful-plastic-chicken-piggy-bank-indonesia.jpg",
+   "credit": "Undeka 11",
+   "license": "CC BY-SA 4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Colorful-plastic-chicken-piggy-bank-indonesia.jpg"
   },
   {
    "id": "power_button",
-   "q": "power button"
+   "q": "power button",
+   "file": "File:Macbook Pro Power Button - Macro (5477920228).jpg",
+   "credit": "vincentq from Melbourne, Australia",
+   "license": "CC BY-SA 2.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Macbook_Pro_Power_Button_-_Macro_(5477920228).jpg"
   },
   {
    "id": "cash_register",
-   "q": "cash register"
+   "q": "cash register",
+   "file": "File:Antique cash register in a cafe, Darjeeling.jpg",
+   "credit": "Subhrajyoti07",
+   "license": "CC BY-SA 4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Antique_cash_register_in_a_cafe,_Darjeeling.jpg"
   },
   {
    "id": "calendar",
-   "q": "calendar page"
+   "q": "calendar page",
+   "file": "File:One Page Calendar 2021.jpg",
+   "credit": "AnonymousUnknown author",
+   "license": "Public domain",
+   "page": "https://commons.wikimedia.org/wiki/File:One_Page_Calendar_2021.jpg"
   },
   {
    "id": "lamborghini",
-   "q": "Lamborghini"
+   "q": "Lamborghini",
+   "file": "File:Lamborghini Islero, Techno Classica 2018, Essen (IMG 9696).jpg",
+   "credit": "Matti Blume",
+   "license": "CC BY-SA 4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Lamborghini_Islero,_Techno_Classica_2018,_Essen_(IMG_9696).jpg"
   }
  ]
 }
