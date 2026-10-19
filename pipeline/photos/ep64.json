@@ -2,171 +2,339 @@
  "photos": [
   {
    "id": "lobster",
-   "q": "lobster"
+   "q": "lobster",
+   "file": "File:Stacks of lobster traps in Norra Grundsund 7.jpg",
+   "credit": "W.carter",
+   "license": "CC0",
+   "page": "https://commons.wikimedia.org/wiki/File:Stacks_of_lobster_traps_in_Norra_Grundsund_7.jpg"
   },
   {
    "id": "friends",
-   "q": "friends dinner"
+   "q": "friends dinner",
+   "file": "File:Dinner at Good Friends Chinese Restaurant, Brighton 2023-06-16.jpg",
+   "credit": "Andy Li",
+   "license": "CC0",
+   "page": "https://commons.wikimedia.org/wiki/File:Dinner_at_Good_Friends_Chinese_Restaurant,_Brighton_2023-06-16.jpg"
   },
   {
    "id": "steakhouse",
-   "q": "steakhouse"
+   "q": "steakhouse",
+   "file": "File:Mr Onion Steakhouse 洋蔥牛排館 - panoramio.jpg",
+   "credit": "lienyuan lee",
+   "license": "CC BY 3.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Mr_Onion_Steakhouse_%E6%B4%8B%E8%94%A5%E7%89%9B%E6%8E%92%E9%A4%A8_-_panoramio.jpg"
   },
   {
    "id": "burger",
-   "q": "hamburger"
+   "q": "hamburger",
+   "file": "File:Big Mac hamburger.jpg",
+   "credit": "Evan-Amos",
+   "license": "CC0",
+   "page": "https://commons.wikimedia.org/wiki/File:Big_Mac_hamburger.jpg"
   },
   {
    "id": "cocktail",
-   "q": "cocktail glass"
+   "q": "cocktail glass",
+   "file": "File:Cocktail-glass.jpg",
+   "credit": "Evan-Amos",
+   "license": "Public domain",
+   "page": "https://commons.wikimedia.org/wiki/File:Cocktail-glass.jpg"
   },
   {
    "id": "steak",
-   "q": "steak dinner"
+   "q": "steak dinner",
+   "file": "File:Steak dinner - Indianapolis - 2006.jpg",
+   "credit": "NV89119",
+   "license": "CC BY 2.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Steak_dinner_-_Indianapolis_-_2006.jpg"
   },
   {
    "id": "bill",
-   "q": "restaurant bill"
+   "q": "restaurant bill",
+   "file": "File:Bill's restaurant sign (14880260349).jpg",
+   "credit": "Bill Smith from Virginia Beach",
+   "license": "CC BY 2.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Bill%27s_restaurant_sign_(14880260349).jpg"
   },
   {
    "id": "receipt",
-   "q": "receipt"
+   "q": "receipt",
+   "file": "File:ReceiptSwiss.jpg",
+   "credit": "Audrius Meskauskas (Audriusa)",
+   "license": "CC BY-SA 3.0",
+   "page": "https://commons.wikimedia.org/wiki/File:ReceiptSwiss.jpg"
   },
   {
    "id": "card_tap",
-   "q": "contactless payment card"
+   "q": "contactless payment card",
+   "file": "File:Contactless Payment Card opened to show RF antenna.jpg",
+   "credit": "AmarinderBrar",
+   "license": "CC BY-SA 4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Contactless_Payment_Card_opened_to_show_RF_antenna.jpg"
   },
   {
    "id": "cake",
-   "q": "chocolate cake"
+   "q": "chocolate cake",
+   "file": "File:Piece of chocolate cake on a white plate decorated with chocolate sauce.jpg",
+   "credit": "Daria YakovlevaMinor edits made by Subsidiary account",
+   "license": "CC0",
+   "page": "https://commons.wikimedia.org/wiki/File:Piece_of_chocolate_cake_on_a_white_plate_decorated_with_chocolate_sauce.jpg"
   },
   {
    "id": "bank_app",
-   "q": "mobile phone screen"
+   "q": "mobile phone screen",
+   "file": "File:Anycool mobile phone with television.jpg",
+   "credit": "Jannet",
+   "license": "CC BY 2.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Anycool_mobile_phone_with_television.jpg"
   },
   {
    "id": "calendar",
-   "q": "wall calendar"
+   "q": "wall calendar",
+   "file": "File:WallCalendar.jpg",
+   "credit": "Claudio Elias",
+   "license": "Public domain",
+   "page": "https://commons.wikimedia.org/wiki/File:WallCalendar.jpg"
   },
   {
    "id": "calculator",
-   "q": "calculator"
+   "q": "calculator",
+   "file": "File:Citizen SLD-100NR calculator.jpg",
+   "credit": "LoMit",
+   "license": "CC BY-SA 4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Citizen_SLD-100NR_calculator.jpg"
   },
   {
    "id": "beach",
-   "q": "tropical beach"
+   "q": "tropical beach",
+   "file": "File:Havelock Island, Mangrove tree on the beach, Andaman Islands.jpg",
+   "credit": "Vyacheslav Argenberg",
+   "license": "CC BY 4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Havelock_Island,_Mangrove_tree_on_the_beach,_Andaman_Islands.jpg"
   },
   {
    "id": "restaurant",
-   "q": "restaurant interior"
+   "q": "restaurant interior",
+   "file": "File:Van Gogh - Interieur eines Restaurants.jpeg",
+   "credit": "Vincent van Gogh",
+   "license": "Public domain",
+   "page": "https://commons.wikimedia.org/wiki/File:Van_Gogh_-_Interieur_eines_Restaurants.jpeg"
   },
   {
    "id": "buffet",
-   "q": "buffet"
+   "q": "buffet",
+   "file": "File:Waterfall buffet table.jpg",
+   "credit": "Ɱ",
+   "license": "CC BY-SA 4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Waterfall_buffet_table.jpg"
   },
   {
    "id": "napkin",
-   "q": "paper napkin"
+   "q": "paper napkin",
+   "file": "File:Table utensils wrapped in a paper napkin 2.jpg",
+   "credit": "Ser Amantio di Nicolao",
+   "license": "CC BY-SA 4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Table_utensils_wrapped_in_a_paper_napkin_2.jpg"
   },
   {
    "id": "magazine",
-   "q": "science magazine"
+   "q": "science magazine",
+   "file": "File:Asimovs Science Fiction magazine circulation.png",
+   "credit": "Mike Christie",
+   "license": "CC BY-SA 4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Asimovs_Science_Fiction_magazine_circulation.png"
   },
   {
    "id": "cash_register",
-   "q": "cash register"
+   "q": "cash register",
+   "file": "File:Antique cash register in a cafe, Darjeeling.jpg",
+   "credit": "Subhrajyoti07",
+   "license": "CC BY-SA 4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Antique_cash_register_in_a_cafe,_Darjeeling.jpg"
   },
   {
    "id": "dinner_table",
-   "q": "dinner table"
+   "q": "dinner table",
+   "file": "File:Dinner table side pine wood large table side.png",
+   "credit": "Kurtkaiser",
+   "license": "CC0",
+   "page": "https://commons.wikimedia.org/wiki/File:Dinner_table_side_pine_wood_large_table_side.png"
   },
   {
    "id": "waiter",
-   "q": "waiter"
+   "q": "waiter",
+   "file": "File:Waiter in a restaurant, Paris 2011.jpg",
+   "credit": "Florian Plag",
+   "license": "CC BY 2.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Waiter_in_a_restaurant,_Paris_2011.jpg"
   },
   {
    "id": "vegas",
-   "q": "Las Vegas"
+   "q": "Las Vegas",
+   "file": "File:Las Vegas (Nevada, USA), The Strip -- 2012 -- 6232.jpg",
+   "credit": "Dietmar Rabich",
+   "license": "CC BY-SA 4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Las_Vegas_(Nevada,_USA),_The_Strip_--_2012_--_6232.jpg"
   },
   {
    "id": "wedding",
-   "q": "wedding"
+   "q": "wedding",
+   "file": "File:Royal Wedding Stockholm 2010-Slottsbacken-05 edit.jpg",
+   "credit": "Holger Motzkau",
+   "license": "CC BY-SA 3.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Royal_Wedding_Stockholm_2010-Slottsbacken-05_edit.jpg"
   },
   {
    "id": "lottery",
-   "q": "lottery ticket"
+   "q": "lottery ticket",
+   "file": "File:Filling lottery ticket 20180215.jpg",
+   "credit": "Santeri Viinamäki",
+   "license": "CC BY-SA 4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Filling_lottery_ticket_20180215.jpg"
   },
   {
    "id": "new_car",
-   "q": "new car"
+   "q": "new car",
+   "file": "File:Abandoned car in Marine Park (10852p).jpg",
+   "credit": "Rhododendrites",
+   "license": "CC BY-SA 4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Abandoned_car_in_Marine_Park_(10852p).jpg"
   },
   {
    "id": "street",
-   "q": "suburban street"
+   "q": "suburban street",
+   "file": "File:Spencer Gore (1878-1914) - Suburban Street - 1956-016 - Bradford Museums and Galleries.jpg",
+   "credit": "Spencer Gore",
+   "license": "Public domain",
+   "page": "https://commons.wikimedia.org/wiki/File:Spencer_Gore_(1878-1914)_-_Suburban_Street_-_1956-016_-_Bradford_Museums_and_Galleries.jpg"
   },
   {
    "id": "comic",
-   "q": "newspaper comic strip"
+   "q": "newspaper comic strip",
+   "file": "File:Amos 'n' Andy comic strip panel.jpg",
+   "credit": "Charles Mueller",
+   "license": "Public domain",
+   "page": "https://commons.wikimedia.org/wiki/File:Amos_%27n%27_Andy_comic_strip_panel.jpg"
   },
   {
    "id": "instagram",
-   "q": "smartphone social media"
+   "q": "smartphone social media",
+   "file": "File:Social media addiction.jpg",
+   "credit": "Doctorxgc",
+   "license": "CC BY-SA 4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Social_media_addiction.jpg"
   },
   {
    "id": "survey",
-   "q": "clipboard survey"
+   "q": "clipboard survey",
+   "file": "File:A field scientist conducting vegetation surveys in Denali (c3deacfc-29b9-4fc0-be28-e947452540ef).jpg",
+   "credit": "NPS Photo / Kira Heeschen",
+   "license": "Public domain",
+   "page": "https://commons.wikimedia.org/wiki/File:A_field_scientist_conducting_vegetation_surveys_in_Denali_(c3deacfc-29b9-4fc0-be28-e947452540ef).jpg"
   },
   {
    "id": "credit_card",
-   "q": "credit card"
+   "q": "credit card",
+   "file": "File:Credit-cards.jpg",
+   "credit": "Lotus Head from Johannesburg, Gauteng, South Africa",
+   "license": "CC BY-SA 2.5",
+   "page": "https://commons.wikimedia.org/wiki/File:Credit-cards.jpg"
   },
   {
    "id": "appetizer",
-   "q": "appetizer plate"
+   "q": "appetizer plate",
+   "file": "File:Appetizer plate at a restaurant.jpg",
+   "credit": "dreamcat115 from Tokyo, Japan",
+   "license": "CC BY-SA 2.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Appetizer_plate_at_a_restaurant.jpg"
   },
   {
    "id": "cereal",
-   "q": "bowl of cereal"
+   "q": "bowl of cereal",
+   "file": "File:Cereal-Fruity-Pebbles.jpg",
+   "credit": "Evan-Amos",
+   "license": "Public domain",
+   "page": "https://commons.wikimedia.org/wiki/File:Cereal-Fruity-Pebbles.jpg"
   },
   {
    "id": "couch",
-   "q": "sofa living room"
+   "q": "sofa living room",
+   "file": "File:Couch-furniture-living-room-sofa (24300293356).jpg",
+   "credit": "www.Pixel.la Free Stock Photos",
+   "license": "CC0",
+   "page": "https://commons.wikimedia.org/wiki/File:Couch-furniture-living-room-sofa_(24300293356).jpg"
   },
   {
    "id": "university",
-   "q": "university building"
+   "q": "university building",
+   "file": "File:Moscow State University crop.jpg",
+   "credit": "Dmitry A. Mottl (cropped by King of Hearts)",
+   "license": "CC BY-SA 3.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Moscow_State_University_crop.jpg"
   },
   {
    "id": "storm",
-   "q": "storm clouds"
+   "q": "storm clouds",
+   "file": "File:Thomas Lindsay - Storm Clouds - B1975.4.59 - Yale Center for British Art.jpg",
+   "credit": "Thomas Lindsay",
+   "license": "CC0",
+   "page": "https://commons.wikimedia.org/wiki/File:Thomas_Lindsay_-_Storm_Clouds_-_B1975.4.59_-_Yale_Center_for_British_Art.jpg"
   },
   {
    "id": "menu",
-   "q": "restaurant menu"
+   "q": "restaurant menu",
+   "file": "File:Menu du jour d'un restaurant asiatique lyonnais en 2017.jpg",
+   "credit": "Benoît Prieur",
+   "license": "CC0",
+   "page": "https://commons.wikimedia.org/wiki/File:Menu_du_jour_d%27un_restaurant_asiatique_lyonnais_en_2017.jpg"
   },
   {
    "id": "bbq",
-   "q": "barbecue grill"
+   "q": "barbecue grill",
+   "file": "File:University of North Texas September 2015 57 (barbecue grill).jpg",
+   "credit": "Michael Barera",
+   "license": "CC BY-SA 4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:University_of_North_Texas_September_2015_57_(barbecue_grill).jpg"
   },
   {
    "id": "wallet",
-   "q": "wallet"
+   "q": "wallet",
+   "file": "File:WalletMpegMan.jpg",
+   "credit": "The original uploader was TheArmadillo at English Wikipedia.. Uploaded to Commons by Körne",
+   "license": "CC BY-SA 3.0",
+   "page": "https://commons.wikimedia.org/wiki/File:WalletMpegMan.jpg"
   },
   {
    "id": "relief",
-   "q": "people laughing"
+   "q": "people laughing",
+   "file": "File:People laughing in Lutheran Church in Ohio.jpg",
+   "credit": "Andres Rodriguez",
+   "license": "CC BY-SA 2.0",
+   "page": "https://commons.wikimedia.org/wiki/File:People_laughing_in_Lutheran_Church_in_Ohio.jpg"
   },
   {
    "id": "chicken",
-   "q": "chicken tenders"
+   "q": "chicken tenders",
+   "file": "File:Chicken tenders and french fries - June 2023 - Sarah Stierch.jpg",
+   "credit": "Missvain",
+   "license": "CC BY 4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Chicken_tenders_and_french_fries_-_June_2023_-_Sarah_Stierch.jpg"
   },
   {
    "id": "texting",
-   "q": "texting on smartphone"
+   "q": "texting on smartphone",
+   "file": "File:Woman texting on a smartphone.jpg",
+   "credit": "Kristin Hardwick",
+   "license": "CC0",
+   "page": "https://commons.wikimedia.org/wiki/File:Woman_texting_on_a_smartphone.jpg"
   },
   {
    "id": "airport",
-   "q": "airport terminal"
+   "q": "airport terminal",
+   "file": "File:Berlin Brandenburg Airport Terminal 1.jpg",
+   "credit": "Arne Müseler",
+   "license": "CC BY-SA 3.0 de",
+   "page": "https://commons.wikimedia.org/wiki/File:Berlin_Brandenburg_Airport_Terminal_1.jpg"
   }
  ]
 }
