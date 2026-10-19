@@ -1,0 +1,8066 @@
+{
+ "fps": 30,
+ "total": 411.669,
+ "hash": "c08b39b3f80c5ce3",
+ "chapters": [
+  {
+   "n": 1,
+   "title": "The Free App",
+   "start": 26.373,
+   "beat": "c1a"
+  },
+  {
+   "n": 2,
+   "title": "I Am The Product",
+   "start": 111.61,
+   "beat": "c3a"
+  },
+  {
+   "n": 3,
+   "title": "The Slot Machine In Your Pocket",
+   "start": 226.053,
+   "beat": "c6a"
+  },
+  {
+   "n": 4,
+   "title": "How I Date Now",
+   "start": 319.402,
+   "beat": "c10a"
+  }
+ ],
+ "beats": [
+  {
+   "id": "o1",
+   "text": "This is me paying forty dollars a month to a dating app so I can stay single.",
+   "start": 0.08,
+   "end": 3.267,
+   "words": [
+    {
+     "text": "This",
+     "start": 0.08,
+     "end": 0.266
+    },
+    {
+     "text": "is",
+     "start": 0.286,
+     "end": 0.398
+    },
+    {
+     "text": "me",
+     "start": 0.41,
+     "end": 0.522
+    },
+    {
+     "text": "paying",
+     "start": 0.534,
+     "end": 0.794
+    },
+    {
+     "text": "forty",
+     "start": 0.823,
+     "end": 1.046
+    },
+    {
+     "text": "dollars",
+     "start": 1.071,
+     "end": 1.368
+    },
+    {
+     "text": "a",
+     "start": 1.401,
+     "end": 1.475
+    },
+    {
+     "text": "month",
+     "start": 1.484,
+     "end": 1.707
+    },
+    {
+     "text": "to",
+     "start": 1.731,
+     "end": 1.843
+    },
+    {
+     "text": "a",
+     "start": 1.855,
+     "end": 1.929
+    },
+    {
+     "text": "dating",
+     "start": 1.938,
+     "end": 2.198
+    },
+    {
+     "text": "app",
+     "start": 2.227,
+     "end": 2.375
+    },
+    {
+     "text": "so",
+     "start": 2.392,
+     "end": 2.503
+    },
+    {
+     "text": "I",
+     "start": 2.516,
+     "end": 2.59
+    },
+    {
+     "text": "can",
+     "start": 2.598,
+     "end": 2.747
+    },
+    {
+     "text": "stay",
+     "start": 2.763,
+     "end": 2.949
+    },
+    {
+     "text": "single.",
+     "start": 2.97,
+     "end": 3.267
+    }
+   ]
+  },
+  {
+   "id": "o2",
+   "text": "Zero new matches. Same as last month. Same as the month before that.",
+   "start": 3.7969583333333334,
+   "end": 7.696958333333333,
+   "words": [
+    {
+     "text": "Zero",
+     "start": 3.797,
+     "end": 4.077
+    },
+    {
+     "text": "new",
+     "start": 4.077,
+     "end": 4.397
+    },
+    {
+     "text": "matches.",
+     "start": 4.397,
+     "end": 4.837
+    },
+    {
+     "text": "Same",
+     "start": 5.357,
+     "end": 5.597
+    },
+    {
+     "text": "as",
+     "start": 5.597,
+     "end": 5.757
+    },
+    {
+     "text": "last",
+     "start": 5.757,
+     "end": 5.897
+    },
+    {
+     "text": "month.",
+     "start": 5.897,
+     "end": 6.177
+    },
+    {
+     "text": "Same",
+     "start": 6.557,
+     "end": 6.817
+    },
+    {
+     "text": "as",
+     "start": 6.817,
+     "end": 6.977
+    },
+    {
+     "text": "the",
+     "start": 6.977,
+     "end": 7.077
+    },
+    {
+     "text": "month",
+     "start": 7.077,
+     "end": 7.197
+    },
+    {
+     "text": "before",
+     "start": 7.197,
+     "end": 7.497
+    },
+    {
+     "text": "that.",
+     "start": 7.497,
+     "end": 7.697
+    }
+   ]
+  },
+  {
+   "id": "o3",
+   "text": "And here's the twist. The app is not broken. It's working exactly like it was built to.",
+   "start": 8.044354166666666,
+   "end": 12.484354166666666,
+   "words": [
+    {
+     "text": "And",
+     "start": 8.044,
+     "end": 8.284
+    },
+    {
+     "text": "here's",
+     "start": 8.284,
+     "end": 8.604
+    },
+    {
+     "text": "the",
+     "start": 8.604,
+     "end": 8.724
+    },
+    {
+     "text": "twist.",
+     "start": 8.724,
+     "end": 8.964
+    },
+    {
+     "text": "The",
+     "start": 9.564,
+     "end": 9.624
+    },
+    {
+     "text": "app",
+     "start": 9.624,
+     "end": 9.824
+    },
+    {
+     "text": "is",
+     "start": 9.824,
+     "end": 10.024
+    },
+    {
+     "text": "not",
+     "start": 10.024,
+     "end": 10.184
+    },
+    {
+     "text": "broken.",
+     "start": 10.184,
+     "end": 10.464
+    },
+    {
+     "text": "It's",
+     "start": 10.904,
+     "end": 10.984
+    },
+    {
+     "text": "working",
+     "start": 10.984,
+     "end": 11.164
+    },
+    {
+     "text": "exactly",
+     "start": 11.164,
+     "end": 11.464
+    },
+    {
+     "text": "like",
+     "start": 11.464,
+     "end": 11.884
+    },
+    {
+     "text": "it",
+     "start": 11.884,
+     "end": 11.984
+    },
+    {
+     "text": "was",
+     "start": 11.984,
+     "end": 12.084
+    },
+    {
+     "text": "built",
+     "start": 12.084,
+     "end": 12.264
+    },
+    {
+     "text": "to.",
+     "start": 12.264,
+     "end": 12.484
+    }
+   ]
+  },
+  {
+   "id": "o4",
+   "text": "Because me finding love was never the goal. Me still paying is the goal.",
+   "start": 12.921270833333333,
+   "end": 16.601270833333334,
+   "words": [
+    {
+     "text": "Because",
+     "start": 12.921,
+     "end": 13.141
+    },
+    {
+     "text": "me",
+     "start": 13.141,
+     "end": 13.301
+    },
+    {
+     "text": "finding",
+     "start": 13.301,
+     "end": 13.561
+    },
+    {
+     "text": "love",
+     "start": 13.561,
+     "end": 13.821
+    },
+    {
+     "text": "was",
+     "start": 13.821,
+     "end": 14.061
+    },
+    {
+     "text": "never",
+     "start": 14.061,
+     "end": 14.261
+    },
+    {
+     "text": "the",
+     "start": 14.261,
+     "end": 14.441
+    },
+    {
+     "text": "goal.",
+     "start": 14.441,
+     "end": 14.641
+    },
+    {
+     "text": "Me",
+     "start": 15.141,
+     "end": 15.241
+    },
+    {
+     "text": "still",
+     "start": 15.241,
+     "end": 15.461
+    },
+    {
+     "text": "paying",
+     "start": 15.461,
+     "end": 15.781
+    },
+    {
+     "text": "is",
+     "start": 15.781,
+     "end": 16.161
+    },
+    {
+     "text": "the",
+     "start": 16.161,
+     "end": 16.441
+    },
+    {
+     "text": "goal.",
+     "start": 16.441,
+     "end": 16.601
+    }
+   ]
+  },
+  {
+   "id": "o5",
+   "text": "By the end of this video you'll know the one move that makes a dating app lose money on you and it costs zero dollars.",
+   "start": 17.275708333333334,
+   "end": 21.935708333333334,
+   "words": [
+    {
+     "text": "By",
+     "start": 17.276,
+     "end": 17.356
+    },
+    {
+     "text": "the",
+     "start": 17.356,
+     "end": 17.436
+    },
+    {
+     "text": "end",
+     "start": 17.436,
+     "end": 17.556
+    },
+    {
+     "text": "of",
+     "start": 17.556,
+     "end": 17.656
+    },
+    {
+     "text": "this",
+     "start": 17.656,
+     "end": 17.776
+    },
+    {
+     "text": "video",
+     "start": 17.776,
+     "end": 18.016
+    },
+    {
+     "text": "you'll",
+     "start": 18.296,
+     "end": 18.416
+    },
+    {
+     "text": "know",
+     "start": 18.416,
+     "end": 18.536
+    },
+    {
+     "text": "the",
+     "start": 18.536,
+     "end": 18.656
+    },
+    {
+     "text": "one",
+     "start": 18.656,
+     "end": 18.796
+    },
+    {
+     "text": "move",
+     "start": 18.796,
+     "end": 19.036
+    },
+    {
+     "text": "that",
+     "start": 19.036,
+     "end": 19.196
+    },
+    {
+     "text": "makes",
+     "start": 19.196,
+     "end": 19.336
+    },
+    {
+     "text": "a",
+     "start": 19.336,
+     "end": 19.476
+    },
+    {
+     "text": "dating",
+     "start": 19.476,
+     "end": 19.656
+    },
+    {
+     "text": "app",
+     "start": 19.656,
+     "end": 19.876
+    },
+    {
+     "text": "lose",
+     "start": 19.876,
+     "end": 20.056
+    },
+    {
+     "text": "money",
+     "start": 20.056,
+     "end": 20.296
+    },
+    {
+     "text": "on",
+     "start": 20.296,
+     "end": 20.516
+    },
+    {
+     "text": "you",
+     "start": 20.516,
+     "end": 20.656
+    },
+    {
+     "text": "and",
+     "start": 20.656,
+     "end": 20.856
+    },
+    {
+     "text": "it",
+     "start": 20.856,
+     "end": 20.936
+    },
+    {
+     "text": "costs",
+     "start": 20.936,
+     "end": 21.096
+    },
+    {
+     "text": "zero",
+     "start": 21.096,
+     "end": 21.536
+    },
+    {
+     "text": "dollars.",
+     "start": 21.536,
+     "end": 21.936
+    }
+   ]
+  },
+  {
+   "id": "o6",
+   "text": "But most people swipe away before that part which is exactly what the app wants.",
+   "start": 22.420125,
+   "end": 25.720125,
+   "words": [
+    {
+     "text": "But",
+     "start": 22.42,
+     "end": 22.52
+    },
+    {
+     "text": "most",
+     "start": 22.52,
+     "end": 22.68
+    },
+    {
+     "text": "people",
+     "start": 22.68,
+     "end": 22.98
+    },
+    {
+     "text": "swipe",
+     "start": 22.98,
+     "end": 23.22
+    },
+    {
+     "text": "away",
+     "start": 23.22,
+     "end": 23.48
+    },
+    {
+     "text": "before",
+     "start": 23.48,
+     "end": 23.82
+    },
+    {
+     "text": "that",
+     "start": 23.82,
+     "end": 24.0
+    },
+    {
+     "text": "part",
+     "start": 24.0,
+     "end": 24.22
+    },
+    {
+     "text": "which",
+     "start": 24.4,
+     "end": 24.44
+    },
+    {
+     "text": "is",
+     "start": 24.44,
+     "end": 24.56
+    },
+    {
+     "text": "exactly",
+     "start": 24.56,
+     "end": 24.84
+    },
+    {
+     "text": "what",
+     "start": 24.84,
+     "end": 25.18
+    },
+    {
+     "text": "the",
+     "start": 25.18,
+     "end": 25.28
+    },
+    {
+     "text": "app",
+     "start": 25.28,
+     "end": 25.42
+    },
+    {
+     "text": "wants.",
+     "start": 25.42,
+     "end": 25.72
+    }
+   ]
+  },
+  {
+   "id": "c1a",
+   "text": "So let me tell you how this started. My friend says just download Tinder bro. It's free.",
+   "start": 28.573479166666665,
+   "end": 32.59347916666667,
+   "words": [
+    {
+     "text": "So",
+     "start": 28.573,
+     "end": 28.733
+    },
+    {
+     "text": "let",
+     "start": 28.733,
+     "end": 28.913
+    },
+    {
+     "text": "me",
+     "start": 28.913,
+     "end": 28.973
+    },
+    {
+     "text": "tell",
+     "start": 28.973,
+     "end": 29.113
+    },
+    {
+     "text": "you",
+     "start": 29.113,
+     "end": 29.193
+    },
+    {
+     "text": "how",
+     "start": 29.193,
+     "end": 29.313
+    },
+    {
+     "text": "this",
+     "start": 29.313,
+     "end": 29.413
+    },
+    {
+     "text": "started.",
+     "start": 29.413,
+     "end": 29.733
+    },
+    {
+     "text": "My",
+     "start": 30.253,
+     "end": 30.313
+    },
+    {
+     "text": "friend",
+     "start": 30.313,
+     "end": 30.453
+    },
+    {
+     "text": "says",
+     "start": 30.453,
+     "end": 30.673
+    },
+    {
+     "text": "just",
+     "start": 30.873,
+     "end": 30.993
+    },
+    {
+     "text": "download",
+     "start": 30.993,
+     "end": 31.293
+    },
+    {
+     "text": "Tinder",
+     "start": 31.293,
+     "end": 31.593
+    },
+    {
+     "text": "bro.",
+     "start": 31.853,
+     "end": 31.973
+    },
+    {
+     "text": "It's",
+     "start": 32.293,
+     "end": 32.453
+    },
+    {
+     "text": "free.",
+     "start": 32.453,
+     "end": 32.593
+    }
+   ]
+  },
+  {
+   "id": "n30",
+   "text": "And I'm not gonna lie I felt smart. Free app. Free love. What could go wrong?",
+   "start": 33.23341666666666,
+   "end": 37.47541666666666,
+   "words": [
+    {
+     "text": "And",
+     "start": 33.233,
+     "end": 33.431
+    },
+    {
+     "text": "I'm",
+     "start": 33.452,
+     "end": 33.65
+    },
+    {
+     "text": "not",
+     "start": 33.672,
+     "end": 33.87
+    },
+    {
+     "text": "gonna",
+     "start": 33.891,
+     "end": 34.188
+    },
+    {
+     "text": "lie",
+     "start": 34.221,
+     "end": 34.418
+    },
+    {
+     "text": "I",
+     "start": 34.44,
+     "end": 34.539
+    },
+    {
+     "text": "felt",
+     "start": 34.55,
+     "end": 34.797
+    },
+    {
+     "text": "smart.",
+     "start": 34.824,
+     "end": 35.17
+    },
+    {
+     "text": "Free",
+     "start": 35.208,
+     "end": 35.455
+    },
+    {
+     "text": "app.",
+     "start": 35.483,
+     "end": 35.73
+    },
+    {
+     "text": "Free",
+     "start": 35.757,
+     "end": 36.004
+    },
+    {
+     "text": "love.",
+     "start": 36.031,
+     "end": 36.328
+    },
+    {
+     "text": "What",
+     "start": 36.361,
+     "end": 36.608
+    },
+    {
+     "text": "could",
+     "start": 36.635,
+     "end": 36.931
+    },
+    {
+     "text": "go",
+     "start": 36.964,
+     "end": 37.112
+    },
+    {
+     "text": "wrong?",
+     "start": 37.129,
+     "end": 37.475
+    }
+   ]
+  },
+  {
+   "id": "n1",
+   "text": "Free. Remember that word.",
+   "start": 38.14275,
+   "end": 39.36275,
+   "words": [
+    {
+     "text": "Free.",
+     "start": 38.143,
+     "end": 38.343
+    },
+    {
+     "text": "Remember",
+     "start": 38.683,
+     "end": 38.843
+    },
+    {
+     "text": "that",
+     "start": 38.843,
+     "end": 39.143
+    },
+    {
+     "text": "word.",
+     "start": 39.143,
+     "end": 39.363
+    }
+   ]
+  },
+  {
+   "id": "c1b",
+   "text": "Week one I swipe on everyone. I swipe on the bus. I swipe in the shower. I swipe while my mom is talking to me.",
+   "start": 39.920145833333336,
+   "end": 45.600145833333336,
+   "words": [
+    {
+     "text": "Week",
+     "start": 39.92,
+     "end": 40.04
+    },
+    {
+     "text": "one",
+     "start": 40.04,
+     "end": 40.36
+    },
+    {
+     "text": "I",
+     "start": 40.58,
+     "end": 40.7
+    },
+    {
+     "text": "swipe",
+     "start": 40.7,
+     "end": 40.84
+    },
+    {
+     "text": "on",
+     "start": 40.84,
+     "end": 41.04
+    },
+    {
+     "text": "everyone.",
+     "start": 41.04,
+     "end": 41.24
+    },
+    {
+     "text": "I",
+     "start": 41.82,
+     "end": 41.9
+    },
+    {
+     "text": "swipe",
+     "start": 41.9,
+     "end": 42.02
+    },
+    {
+     "text": "on",
+     "start": 42.02,
+     "end": 42.24
+    },
+    {
+     "text": "the",
+     "start": 42.24,
+     "end": 42.3
+    },
+    {
+     "text": "bus.",
+     "start": 42.3,
+     "end": 42.48
+    },
+    {
+     "text": "I",
+     "start": 43.0,
+     "end": 43.06
+    },
+    {
+     "text": "swipe",
+     "start": 43.06,
+     "end": 43.18
+    },
+    {
+     "text": "in",
+     "start": 43.18,
+     "end": 43.4
+    },
+    {
+     "text": "the",
+     "start": 43.4,
+     "end": 43.48
+    },
+    {
+     "text": "shower.",
+     "start": 43.48,
+     "end": 43.72
+    },
+    {
+     "text": "I",
+     "start": 44.16,
+     "end": 44.2
+    },
+    {
+     "text": "swipe",
+     "start": 44.2,
+     "end": 44.34
+    },
+    {
+     "text": "while",
+     "start": 44.34,
+     "end": 44.58
+    },
+    {
+     "text": "my",
+     "start": 44.58,
+     "end": 44.7
+    },
+    {
+     "text": "mom",
+     "start": 44.7,
+     "end": 44.86
+    },
+    {
+     "text": "is",
+     "start": 44.86,
+     "end": 45.0
+    },
+    {
+     "text": "talking",
+     "start": 45.0,
+     "end": 45.18
+    },
+    {
+     "text": "to",
+     "start": 45.18,
+     "end": 45.46
+    },
+    {
+     "text": "me.",
+     "start": 45.46,
+     "end": 45.6
+    }
+   ]
+  },
+  {
+   "id": "n12",
+   "text": "I swiped so much my thumb started hurting. I had a swiping injury. I almost went to a doctor.",
+   "start": 46.2469375,
+   "end": 50.6869375,
+   "words": [
+    {
+     "text": "I",
+     "start": 46.247,
+     "end": 46.327
+    },
+    {
+     "text": "swiped",
+     "start": 46.327,
+     "end": 46.567
+    },
+    {
+     "text": "so",
+     "start": 46.567,
+     "end": 46.767
+    },
+    {
+     "text": "much",
+     "start": 46.767,
+     "end": 47.007
+    },
+    {
+     "text": "my",
+     "start": 47.007,
+     "end": 47.207
+    },
+    {
+     "text": "thumb",
+     "start": 47.207,
+     "end": 47.407
+    },
+    {
+     "text": "started",
+     "start": 47.407,
+     "end": 47.647
+    },
+    {
+     "text": "hurting.",
+     "start": 47.647,
+     "end": 47.927
+    },
+    {
+     "text": "I",
+     "start": 48.567,
+     "end": 48.607
+    },
+    {
+     "text": "had",
+     "start": 48.607,
+     "end": 48.707
+    },
+    {
+     "text": "a",
+     "start": 48.707,
+     "end": 48.807
+    },
+    {
+     "text": "swiping",
+     "start": 48.807,
+     "end": 49.087
+    },
+    {
+     "text": "injury.",
+     "start": 49.087,
+     "end": 49.407
+    },
+    {
+     "text": "I",
+     "start": 49.907,
+     "end": 49.927
+    },
+    {
+     "text": "almost",
+     "start": 49.927,
+     "end": 50.047
+    },
+    {
+     "text": "went",
+     "start": 50.047,
+     "end": 50.287
+    },
+    {
+     "text": "to",
+     "start": 50.287,
+     "end": 50.407
+    },
+    {
+     "text": "a",
+     "start": 50.407,
+     "end": 50.467
+    },
+    {
+     "text": "doctor.",
+     "start": 50.467,
+     "end": 50.687
+    }
+   ]
+  },
+  {
+   "id": "n2",
+   "text": "Me swiping right on every single person within fifty miles.",
+   "start": 51.46995833333333,
+   "end": 53.99995833333333,
+   "words": [
+    {
+     "text": "Me",
+     "start": 51.47,
+     "end": 51.585
+    },
+    {
+     "text": "swiping",
+     "start": 51.598,
+     "end": 51.905
+    },
+    {
+     "text": "right",
+     "start": 51.939,
+     "end": 52.17
+    },
+    {
+     "text": "on",
+     "start": 52.195,
+     "end": 52.311
+    },
+    {
+     "text": "every",
+     "start": 52.323,
+     "end": 52.554
+    },
+    {
+     "text": "single",
+     "start": 52.579,
+     "end": 52.848
+    },
+    {
+     "text": "person",
+     "start": 52.878,
+     "end": 53.147
+    },
+    {
+     "text": "within",
+     "start": 53.177,
+     "end": 53.445
+    },
+    {
+     "text": "fifty",
+     "start": 53.475,
+     "end": 53.706
+    },
+    {
+     "text": "miles.",
+     "start": 53.731,
+     "end": 54.0
+    }
+   ]
+  },
+  {
+   "id": "c1c",
+   "text": "Zero matches. So the app pops up a little message. Want to see who already likes you? Just upgrade.",
+   "start": 54.810208333333335,
+   "end": 60.29020833333334,
+   "words": [
+    {
+     "text": "Zero",
+     "start": 54.81,
+     "end": 55.11
+    },
+    {
+     "text": "matches.",
+     "start": 55.11,
+     "end": 55.45
+    },
+    {
+     "text": "So",
+     "start": 56.09,
+     "end": 56.09
+    },
+    {
+     "text": "the",
+     "start": 56.09,
+     "end": 56.23
+    },
+    {
+     "text": "app",
+     "start": 56.23,
+     "end": 56.39
+    },
+    {
+     "text": "pops",
+     "start": 56.39,
+     "end": 56.63
+    },
+    {
+     "text": "up",
+     "start": 56.63,
+     "end": 56.87
+    },
+    {
+     "text": "a",
+     "start": 56.87,
+     "end": 56.95
+    },
+    {
+     "text": "little",
+     "start": 56.95,
+     "end": 57.13
+    },
+    {
+     "text": "message.",
+     "start": 57.13,
+     "end": 57.55
+    },
+    {
+     "text": "Want",
+     "start": 58.13,
+     "end": 58.19
+    },
+    {
+     "text": "to",
+     "start": 58.19,
+     "end": 58.33
+    },
+    {
+     "text": "see",
+     "start": 58.33,
+     "end": 58.49
+    },
+    {
+     "text": "who",
+     "start": 58.49,
+     "end": 58.65
+    },
+    {
+     "text": "already",
+     "start": 58.65,
+     "end": 58.93
+    },
+    {
+     "text": "likes",
+     "start": 58.93,
+     "end": 59.25
+    },
+    {
+     "text": "you?",
+     "start": 59.25,
+     "end": 59.45
+    },
+    {
+     "text": "Just",
+     "start": 59.99,
+     "end": 59.99
+    },
+    {
+     "text": "upgrade.",
+     "start": 59.99,
+     "end": 60.29
+    }
+   ]
+  },
+  {
+   "id": "c1d",
+   "text": "And I think wait. People already like me? I pay. Obviously.",
+   "start": 61.032270833333335,
+   "end": 64.53227083333334,
+   "words": [
+    {
+     "text": "And",
+     "start": 61.032,
+     "end": 61.252
+    },
+    {
+     "text": "I",
+     "start": 61.252,
+     "end": 61.612
+    },
+    {
+     "text": "think",
+     "start": 61.612,
+     "end": 61.792
+    },
+    {
+     "text": "wait.",
+     "start": 62.192,
+     "end": 62.352
+    },
+    {
+     "text": "People",
+     "start": 62.672,
+     "end": 62.832
+    },
+    {
+     "text": "already",
+     "start": 62.832,
+     "end": 63.112
+    },
+    {
+     "text": "like",
+     "start": 63.112,
+     "end": 63.352
+    },
+    {
+     "text": "me?",
+     "start": 63.352,
+     "end": 63.532
+    },
+    {
+     "text": "I",
+     "start": 63.732,
+     "end": 63.812
+    },
+    {
+     "text": "pay.",
+     "start": 63.812,
+     "end": 63.972
+    },
+    {
+     "text": "Obviously.",
+     "start": 64.272,
+     "end": 64.532
+    }
+   ]
+  },
+  {
+   "id": "n31",
+   "text": "I paid so fast my card didn't even have time to be scared. Forty dollars. Gone. For a list of people who like me.",
+   "start": 65.3285,
+   "end": 71.0085,
+   "words": [
+    {
+     "text": "I",
+     "start": 65.329,
+     "end": 65.419
+    },
+    {
+     "text": "paid",
+     "start": 65.428,
+     "end": 65.654
+    },
+    {
+     "text": "so",
+     "start": 65.678,
+     "end": 65.814
+    },
+    {
+     "text": "fast",
+     "start": 65.829,
+     "end": 66.053
+    },
+    {
+     "text": "my",
+     "start": 66.079,
+     "end": 66.214
+    },
+    {
+     "text": "card",
+     "start": 66.229,
+     "end": 66.454
+    },
+    {
+     "text": "didn't",
+     "start": 66.479,
+     "end": 66.794
+    },
+    {
+     "text": "even",
+     "start": 66.829,
+     "end": 67.053
+    },
+    {
+     "text": "have",
+     "start": 67.079,
+     "end": 67.303
+    },
+    {
+     "text": "time",
+     "start": 67.329,
+     "end": 67.553
+    },
+    {
+     "text": "to",
+     "start": 67.579,
+     "end": 67.714
+    },
+    {
+     "text": "be",
+     "start": 67.729,
+     "end": 67.864
+    },
+    {
+     "text": "scared.",
+     "start": 67.879,
+     "end": 68.239
+    },
+    {
+     "text": "Forty",
+     "start": 68.279,
+     "end": 68.549
+    },
+    {
+     "text": "dollars.",
+     "start": 68.579,
+     "end": 68.984
+    },
+    {
+     "text": "Gone.",
+     "start": 69.029,
+     "end": 69.299
+    },
+    {
+     "text": "For",
+     "start": 69.329,
+     "end": 69.508
+    },
+    {
+     "text": "a",
+     "start": 69.529,
+     "end": 69.619
+    },
+    {
+     "text": "list",
+     "start": 69.629,
+     "end": 69.854
+    },
+    {
+     "text": "of",
+     "start": 69.879,
+     "end": 70.014
+    },
+    {
+     "text": "people",
+     "start": 70.029,
+     "end": 70.344
+    },
+    {
+     "text": "who",
+     "start": 70.379,
+     "end": 70.559
+    },
+    {
+     "text": "like",
+     "start": 70.579,
+     "end": 70.803
+    },
+    {
+     "text": "me.",
+     "start": 70.829,
+     "end": 71.008
+    }
+   ]
+  },
+  {
+   "id": "c1e",
+   "text": "Turns out the people who liked me were a guy named Steve and a bot selling sunglasses.",
+   "start": 71.638875,
+   "end": 74.858875,
+   "words": [
+    {
+     "text": "Turns",
+     "start": 71.639,
+     "end": 71.779
+    },
+    {
+     "text": "out",
+     "start": 71.779,
+     "end": 72.019
+    },
+    {
+     "text": "the",
+     "start": 72.019,
+     "end": 72.199
+    },
+    {
+     "text": "people",
+     "start": 72.199,
+     "end": 72.379
+    },
+    {
+     "text": "who",
+     "start": 72.379,
+     "end": 72.539
+    },
+    {
+     "text": "liked",
+     "start": 72.539,
+     "end": 72.679
+    },
+    {
+     "text": "me",
+     "start": 72.679,
+     "end": 72.899
+    },
+    {
+     "text": "were",
+     "start": 72.899,
+     "end": 73.079
+    },
+    {
+     "text": "a",
+     "start": 73.079,
+     "end": 73.159
+    },
+    {
+     "text": "guy",
+     "start": 73.159,
+     "end": 73.299
+    },
+    {
+     "text": "named",
+     "start": 73.299,
+     "end": 73.519
+    },
+    {
+     "text": "Steve",
+     "start": 73.519,
+     "end": 73.799
+    },
+    {
+     "text": "and",
+     "start": 73.799,
+     "end": 74.039
+    },
+    {
+     "text": "a",
+     "start": 74.039,
+     "end": 74.079
+    },
+    {
+     "text": "bot",
+     "start": 74.079,
+     "end": 74.219
+    },
+    {
+     "text": "selling",
+     "start": 74.219,
+     "end": 74.479
+    },
+    {
+     "text": "sunglasses.",
+     "start": 74.479,
+     "end": 74.859
+    }
+   ]
+  },
+  {
+   "id": "n3",
+   "text": "Me after paying to see who likes me.",
+   "start": 75.75335416666667,
+   "end": 77.29335416666667,
+   "words": [
+    {
+     "text": "Me",
+     "start": 75.753,
+     "end": 75.913
+    },
+    {
+     "text": "after",
+     "start": 75.913,
+     "end": 76.173
+    },
+    {
+     "text": "paying",
+     "start": 76.173,
+     "end": 76.393
+    },
+    {
+     "text": "to",
+     "start": 76.393,
+     "end": 76.573
+    },
+    {
+     "text": "see",
+     "start": 76.573,
+     "end": 76.693
+    },
+    {
+     "text": "who",
+     "start": 76.693,
+     "end": 76.833
+    },
+    {
+     "text": "likes",
+     "start": 76.833,
+     "end": 77.013
+    },
+    {
+     "text": "me.",
+     "start": 77.013,
+     "end": 77.293
+    }
+   ]
+  },
+  {
+   "id": "c2a",
+   "text": "So I get mad and delete Tinder and download Hinge instead. New app. Fresh start. Different company.",
+   "start": 77.89572916666667,
+   "end": 82.65572916666667,
+   "words": [
+    {
+     "text": "So",
+     "start": 77.896,
+     "end": 78.036
+    },
+    {
+     "text": "I",
+     "start": 78.036,
+     "end": 78.276
+    },
+    {
+     "text": "get",
+     "start": 78.276,
+     "end": 78.356
+    },
+    {
+     "text": "mad",
+     "start": 78.356,
+     "end": 78.576
+    },
+    {
+     "text": "and",
+     "start": 78.576,
+     "end": 78.836
+    },
+    {
+     "text": "delete",
+     "start": 78.836,
+     "end": 78.996
+    },
+    {
+     "text": "Tinder",
+     "start": 78.996,
+     "end": 79.236
+    },
+    {
+     "text": "and",
+     "start": 79.236,
+     "end": 79.576
+    },
+    {
+     "text": "download",
+     "start": 79.576,
+     "end": 79.776
+    },
+    {
+     "text": "Hinge",
+     "start": 79.776,
+     "end": 80.136
+    },
+    {
+     "text": "instead.",
+     "start": 80.136,
+     "end": 80.496
+    },
+    {
+     "text": "New",
+     "start": 80.916,
+     "end": 80.996
+    },
+    {
+     "text": "app.",
+     "start": 80.996,
+     "end": 81.216
+    },
+    {
+     "text": "Fresh",
+     "start": 81.576,
+     "end": 81.636
+    },
+    {
+     "text": "start.",
+     "start": 81.636,
+     "end": 81.896
+    },
+    {
+     "text": "Different",
+     "start": 82.276,
+     "end": 82.416
+    },
+    {
+     "text": "company.",
+     "start": 82.416,
+     "end": 82.656
+    }
+   ]
+  },
+  {
+   "id": "c2b",
+   "text": "Except it's not. Tinder and Hinge and Match and OkCupid and Plenty of Fish are all owned by the same company.",
+   "start": 83.37458333333333,
+   "end": 88.75458333333333,
+   "words": [
+    {
+     "text": "Except",
+     "start": 83.375,
+     "end": 83.655
+    },
+    {
+     "text": "it's",
+     "start": 83.655,
+     "end": 83.995
+    },
+    {
+     "text": "not.",
+     "start": 83.995,
+     "end": 84.175
+    },
+    {
+     "text": "Tinder",
+     "start": 84.635,
+     "end": 84.755
+    },
+    {
+     "text": "and",
+     "start": 84.755,
+     "end": 85.035
+    },
+    {
+     "text": "Hinge",
+     "start": 85.035,
+     "end": 85.315
+    },
+    {
+     "text": "and",
+     "start": 85.315,
+     "end": 85.555
+    },
+    {
+     "text": "Match",
+     "start": 85.555,
+     "end": 85.755
+    },
+    {
+     "text": "and",
+     "start": 85.755,
+     "end": 86.035
+    },
+    {
+     "text": "OkCupid",
+     "start": 86.035,
+     "end": 86.655
+    },
+    {
+     "text": "and",
+     "start": 86.655,
+     "end": 86.815
+    },
+    {
+     "text": "Plenty",
+     "start": 86.815,
+     "end": 86.975
+    },
+    {
+     "text": "of",
+     "start": 86.975,
+     "end": 87.175
+    },
+    {
+     "text": "Fish",
+     "start": 87.175,
+     "end": 87.355
+    },
+    {
+     "text": "are",
+     "start": 87.355,
+     "end": 87.575
+    },
+    {
+     "text": "all",
+     "start": 87.575,
+     "end": 87.755
+    },
+    {
+     "text": "owned",
+     "start": 87.755,
+     "end": 88.015
+    },
+    {
+     "text": "by",
+     "start": 88.015,
+     "end": 88.195
+    },
+    {
+     "text": "the",
+     "start": 88.195,
+     "end": 88.275
+    },
+    {
+     "text": "same",
+     "start": 88.275,
+     "end": 88.415
+    },
+    {
+     "text": "company.",
+     "start": 88.415,
+     "end": 88.755
+    }
+   ]
+  },
+  {
+   "id": "n32",
+   "text": "One company and a bunch of logos. It's like a restaurant that changes its sign every night but the same guy is cooking.",
+   "start": 89.45497916666666,
+   "end": 94.93497916666666,
+   "words": [
+    {
+     "text": "One",
+     "start": 89.455,
+     "end": 89.555
+    },
+    {
+     "text": "company",
+     "start": 89.555,
+     "end": 89.875
+    },
+    {
+     "text": "and",
+     "start": 89.875,
+     "end": 90.195
+    },
+    {
+     "text": "a",
+     "start": 90.195,
+     "end": 90.275
+    },
+    {
+     "text": "bunch",
+     "start": 90.275,
+     "end": 90.475
+    },
+    {
+     "text": "of",
+     "start": 90.475,
+     "end": 90.595
+    },
+    {
+     "text": "logos.",
+     "start": 90.595,
+     "end": 90.775
+    },
+    {
+     "text": "It's",
+     "start": 91.715,
+     "end": 91.795
+    },
+    {
+     "text": "like",
+     "start": 91.795,
+     "end": 91.875
+    },
+    {
+     "text": "a",
+     "start": 91.875,
+     "end": 91.975
+    },
+    {
+     "text": "restaurant",
+     "start": 91.975,
+     "end": 92.275
+    },
+    {
+     "text": "that",
+     "start": 92.275,
+     "end": 92.515
+    },
+    {
+     "text": "changes",
+     "start": 92.515,
+     "end": 92.775
+    },
+    {
+     "text": "its",
+     "start": 92.775,
+     "end": 92.975
+    },
+    {
+     "text": "sign",
+     "start": 92.975,
+     "end": 93.135
+    },
+    {
+     "text": "every",
+     "start": 93.135,
+     "end": 93.455
+    },
+    {
+     "text": "night",
+     "start": 93.455,
+     "end": 93.735
+    },
+    {
+     "text": "but",
+     "start": 93.995,
+     "end": 94.075
+    },
+    {
+     "text": "the",
+     "start": 94.075,
+     "end": 94.155
+    },
+    {
+     "text": "same",
+     "start": 94.155,
+     "end": 94.335
+    },
+    {
+     "text": "guy",
+     "start": 94.335,
+     "end": 94.575
+    },
+    {
+     "text": "is",
+     "start": 94.575,
+     "end": 94.715
+    },
+    {
+     "text": "cooking.",
+     "start": 94.715,
+     "end": 94.935
+    }
+   ]
+  },
+  {
+   "id": "n13",
+   "text": "It's like storming out of one supermarket because you hate it and walking into a different aisle of the same supermarket.",
+   "start": 95.65972916666666,
+   "end": 100.15972916666666,
+   "words": [
+    {
+     "text": "It's",
+     "start": 95.66,
+     "end": 95.8
+    },
+    {
+     "text": "like",
+     "start": 95.8,
+     "end": 95.9
+    },
+    {
+     "text": "storming",
+     "start": 95.9,
+     "end": 96.26
+    },
+    {
+     "text": "out",
+     "start": 96.26,
+     "end": 96.38
+    },
+    {
+     "text": "of",
+     "start": 96.38,
+     "end": 96.46
+    },
+    {
+     "text": "one",
+     "start": 96.46,
+     "end": 96.58
+    },
+    {
+     "text": "supermarket",
+     "start": 96.58,
+     "end": 96.9
+    },
+    {
+     "text": "because",
+     "start": 96.9,
+     "end": 97.36
+    },
+    {
+     "text": "you",
+     "start": 97.36,
+     "end": 97.56
+    },
+    {
+     "text": "hate",
+     "start": 97.56,
+     "end": 97.72
+    },
+    {
+     "text": "it",
+     "start": 97.72,
+     "end": 97.9
+    },
+    {
+     "text": "and",
+     "start": 98.18,
+     "end": 98.26
+    },
+    {
+     "text": "walking",
+     "start": 98.26,
+     "end": 98.42
+    },
+    {
+     "text": "into",
+     "start": 98.42,
+     "end": 98.74
+    },
+    {
+     "text": "a",
+     "start": 98.74,
+     "end": 98.84
+    },
+    {
+     "text": "different",
+     "start": 98.84,
+     "end": 99.06
+    },
+    {
+     "text": "aisle",
+     "start": 99.06,
+     "end": 99.26
+    },
+    {
+     "text": "of",
+     "start": 99.26,
+     "end": 99.48
+    },
+    {
+     "text": "the",
+     "start": 99.48,
+     "end": 99.56
+    },
+    {
+     "text": "same",
+     "start": 99.56,
+     "end": 99.72
+    },
+    {
+     "text": "supermarket.",
+     "start": 99.72,
+     "end": 100.16
+    }
+   ]
+  },
+  {
+   "id": "c2c",
+   "text": "So when I switch apps to escape one subscription I'm still paying the exact same people.",
+   "start": 101.07529166666667,
+   "end": 105.09529166666667,
+   "words": [
+    {
+     "text": "So",
+     "start": 101.075,
+     "end": 101.275
+    },
+    {
+     "text": "when",
+     "start": 101.275,
+     "end": 101.575
+    },
+    {
+     "text": "I",
+     "start": 101.575,
+     "end": 101.675
+    },
+    {
+     "text": "switch",
+     "start": 101.675,
+     "end": 101.855
+    },
+    {
+     "text": "apps",
+     "start": 101.855,
+     "end": 102.175
+    },
+    {
+     "text": "to",
+     "start": 102.175,
+     "end": 102.435
+    },
+    {
+     "text": "escape",
+     "start": 102.435,
+     "end": 102.635
+    },
+    {
+     "text": "one",
+     "start": 102.635,
+     "end": 102.915
+    },
+    {
+     "text": "subscription",
+     "start": 102.915,
+     "end": 103.215
+    },
+    {
+     "text": "I'm",
+     "start": 103.635,
+     "end": 103.735
+    },
+    {
+     "text": "still",
+     "start": 103.735,
+     "end": 103.895
+    },
+    {
+     "text": "paying",
+     "start": 103.895,
+     "end": 104.095
+    },
+    {
+     "text": "the",
+     "start": 104.095,
+     "end": 104.315
+    },
+    {
+     "text": "exact",
+     "start": 104.315,
+     "end": 104.475
+    },
+    {
+     "text": "same",
+     "start": 104.475,
+     "end": 104.815
+    },
+    {
+     "text": "people.",
+     "start": 104.815,
+     "end": 105.095
+    }
+   ]
+  },
+  {
+   "id": "c2d",
+   "text": "It's like breaking up with someone and then dating their twin. Who also has your credit card.",
+   "start": 105.740625,
+   "end": 109.440625,
+   "words": [
+    {
+     "text": "It's",
+     "start": 105.741,
+     "end": 105.881
+    },
+    {
+     "text": "like",
+     "start": 105.881,
+     "end": 105.961
+    },
+    {
+     "text": "breaking",
+     "start": 105.961,
+     "end": 106.181
+    },
+    {
+     "text": "up",
+     "start": 106.181,
+     "end": 106.421
+    },
+    {
+     "text": "with",
+     "start": 106.421,
+     "end": 106.561
+    },
+    {
+     "text": "someone",
+     "start": 106.561,
+     "end": 106.801
+    },
+    {
+     "text": "and",
+     "start": 106.801,
+     "end": 107.081
+    },
+    {
+     "text": "then",
+     "start": 107.081,
+     "end": 107.221
+    },
+    {
+     "text": "dating",
+     "start": 107.221,
+     "end": 107.401
+    },
+    {
+     "text": "their",
+     "start": 107.401,
+     "end": 107.661
+    },
+    {
+     "text": "twin.",
+     "start": 107.661,
+     "end": 107.881
+    },
+    {
+     "text": "Who",
+     "start": 108.341,
+     "end": 108.421
+    },
+    {
+     "text": "also",
+     "start": 108.421,
+     "end": 108.581
+    },
+    {
+     "text": "has",
+     "start": 108.581,
+     "end": 108.881
+    },
+    {
+     "text": "your",
+     "start": 108.881,
+     "end": 109.001
+    },
+    {
+     "text": "credit",
+     "start": 109.001,
+     "end": 109.161
+    },
+    {
+     "text": "card.",
+     "start": 109.161,
+     "end": 109.441
+    }
+   ]
+  },
+  {
+   "id": "n4",
+   "text": "Me switching dating apps.",
+   "start": 110.03047916666667,
+   "end": 110.91047916666666,
+   "words": [
+    {
+     "text": "Me",
+     "start": 110.03,
+     "end": 110.13
+    },
+    {
+     "text": "switching",
+     "start": 110.13,
+     "end": 110.35
+    },
+    {
+     "text": "dating",
+     "start": 110.35,
+     "end": 110.65
+    },
+    {
+     "text": "apps.",
+     "start": 110.65,
+     "end": 110.91
+    }
+   ]
+  },
+  {
+   "id": "c3a",
+   "text": "And then it hit me. If I meet someone tomorrow and delete the app what does the app make off me? Basically nothing.",
+   "start": 113.81025,
+   "end": 119.81025,
+   "words": [
+    {
+     "text": "And",
+     "start": 113.81,
+     "end": 114.27
+    },
+    {
+     "text": "then",
+     "start": 114.27,
+     "end": 114.51
+    },
+    {
+     "text": "it",
+     "start": 114.51,
+     "end": 114.61
+    },
+    {
+     "text": "hit",
+     "start": 114.61,
+     "end": 114.73
+    },
+    {
+     "text": "me.",
+     "start": 114.73,
+     "end": 114.89
+    },
+    {
+     "text": "If",
+     "start": 115.53,
+     "end": 115.57
+    },
+    {
+     "text": "I",
+     "start": 115.57,
+     "end": 115.67
+    },
+    {
+     "text": "meet",
+     "start": 115.67,
+     "end": 115.77
+    },
+    {
+     "text": "someone",
+     "start": 115.77,
+     "end": 115.95
+    },
+    {
+     "text": "tomorrow",
+     "start": 115.95,
+     "end": 116.29
+    },
+    {
+     "text": "and",
+     "start": 116.29,
+     "end": 116.69
+    },
+    {
+     "text": "delete",
+     "start": 116.69,
+     "end": 116.89
+    },
+    {
+     "text": "the",
+     "start": 116.89,
+     "end": 117.07
+    },
+    {
+     "text": "app",
+     "start": 117.07,
+     "end": 117.27
+    },
+    {
+     "text": "what",
+     "start": 117.63,
+     "end": 117.77
+    },
+    {
+     "text": "does",
+     "start": 117.77,
+     "end": 117.91
+    },
+    {
+     "text": "the",
+     "start": 117.91,
+     "end": 118.01
+    },
+    {
+     "text": "app",
+     "start": 118.01,
+     "end": 118.13
+    },
+    {
+     "text": "make",
+     "start": 118.13,
+     "end": 118.31
+    },
+    {
+     "text": "off",
+     "start": 118.31,
+     "end": 118.49
+    },
+    {
+     "text": "me?",
+     "start": 118.49,
+     "end": 118.67
+    },
+    {
+     "text": "Basically",
+     "start": 118.97,
+     "end": 119.15
+    },
+    {
+     "text": "nothing.",
+     "start": 119.55,
+     "end": 119.81
+    }
+   ]
+  },
+  {
+   "id": "c3c",
+   "text": "But if I stay single and keep swiping and keep paying every single month? Now I'm a great customer.",
+   "start": 120.5000625,
+   "end": 125.2200625,
+   "words": [
+    {
+     "text": "But",
+     "start": 120.5,
+     "end": 120.72
+    },
+    {
+     "text": "if",
+     "start": 120.72,
+     "end": 120.92
+    },
+    {
+     "text": "I",
+     "start": 120.92,
+     "end": 121.06
+    },
+    {
+     "text": "stay",
+     "start": 121.06,
+     "end": 121.22
+    },
+    {
+     "text": "single",
+     "start": 121.22,
+     "end": 121.56
+    },
+    {
+     "text": "and",
+     "start": 121.56,
+     "end": 121.86
+    },
+    {
+     "text": "keep",
+     "start": 121.86,
+     "end": 122.02
+    },
+    {
+     "text": "swiping",
+     "start": 122.02,
+     "end": 122.4
+    },
+    {
+     "text": "and",
+     "start": 122.4,
+     "end": 122.7
+    },
+    {
+     "text": "keep",
+     "start": 122.7,
+     "end": 122.86
+    },
+    {
+     "text": "paying",
+     "start": 122.86,
+     "end": 123.1
+    },
+    {
+     "text": "every",
+     "start": 123.1,
+     "end": 123.36
+    },
+    {
+     "text": "single",
+     "start": 123.36,
+     "end": 123.52
+    },
+    {
+     "text": "month?",
+     "start": 123.52,
+     "end": 123.8
+    },
+    {
+     "text": "Now",
+     "start": 124.28,
+     "end": 124.58
+    },
+    {
+     "text": "I'm",
+     "start": 124.58,
+     "end": 124.84
+    },
+    {
+     "text": "a",
+     "start": 124.84,
+     "end": 124.9
+    },
+    {
+     "text": "great",
+     "start": 124.9,
+     "end": 125.04
+    },
+    {
+     "text": "customer.",
+     "start": 125.04,
+     "end": 125.22
+    }
+   ]
+  },
+  {
+   "id": "n33",
+   "text": "Think about it from their side. Every month I'm sad and single is a month they get paid. My loneliness is their rent money.",
+   "start": 126.07322916666666,
+   "end": 132.17322916666666,
+   "words": [
+    {
+     "text": "Think",
+     "start": 126.073,
+     "end": 126.173
+    },
+    {
+     "text": "about",
+     "start": 126.173,
+     "end": 126.373
+    },
+    {
+     "text": "it",
+     "start": 126.373,
+     "end": 126.513
+    },
+    {
+     "text": "from",
+     "start": 126.513,
+     "end": 126.653
+    },
+    {
+     "text": "their",
+     "start": 126.653,
+     "end": 126.833
+    },
+    {
+     "text": "side.",
+     "start": 126.833,
+     "end": 127.213
+    },
+    {
+     "text": "Every",
+     "start": 127.953,
+     "end": 127.953
+    },
+    {
+     "text": "month",
+     "start": 127.953,
+     "end": 128.173
+    },
+    {
+     "text": "I'm",
+     "start": 128.173,
+     "end": 128.433
+    },
+    {
+     "text": "sad",
+     "start": 128.433,
+     "end": 128.733
+    },
+    {
+     "text": "and",
+     "start": 128.733,
+     "end": 128.893
+    },
+    {
+     "text": "single",
+     "start": 128.893,
+     "end": 129.213
+    },
+    {
+     "text": "is",
+     "start": 129.213,
+     "end": 129.433
+    },
+    {
+     "text": "a",
+     "start": 129.433,
+     "end": 129.493
+    },
+    {
+     "text": "month",
+     "start": 129.493,
+     "end": 129.693
+    },
+    {
+     "text": "they",
+     "start": 129.693,
+     "end": 129.873
+    },
+    {
+     "text": "get",
+     "start": 129.873,
+     "end": 129.993
+    },
+    {
+     "text": "paid.",
+     "start": 129.993,
+     "end": 130.253
+    },
+    {
+     "text": "My",
+     "start": 130.773,
+     "end": 130.853
+    },
+    {
+     "text": "loneliness",
+     "start": 130.853,
+     "end": 131.193
+    },
+    {
+     "text": "is",
+     "start": 131.193,
+     "end": 131.593
+    },
+    {
+     "text": "their",
+     "start": 131.593,
+     "end": 131.733
+    },
+    {
+     "text": "rent",
+     "start": 131.733,
+     "end": 131.913
+    },
+    {
+     "text": "money.",
+     "start": 131.913,
+     "end": 132.173
+    }
+   ]
+  },
+  {
+   "id": "n6",
+   "text": "A happy couple who deletes the app is a lost customer. A sad guy who keeps swiping is a subscription.",
+   "start": 132.83695833333334,
+   "end": 137.53695833333333,
+   "words": [
+    {
+     "text": "A",
+     "start": 132.837,
+     "end": 132.917
+    },
+    {
+     "text": "happy",
+     "start": 132.917,
+     "end": 133.097
+    },
+    {
+     "text": "couple",
+     "start": 133.097,
+     "end": 133.357
+    },
+    {
+     "text": "who",
+     "start": 133.357,
+     "end": 133.577
+    },
+    {
+     "text": "deletes",
+     "start": 133.577,
+     "end": 133.917
+    },
+    {
+     "text": "the",
+     "start": 133.917,
+     "end": 134.017
+    },
+    {
+     "text": "app",
+     "start": 134.017,
+     "end": 134.197
+    },
+    {
+     "text": "is",
+     "start": 134.197,
+     "end": 134.397
+    },
+    {
+     "text": "a",
+     "start": 134.397,
+     "end": 134.457
+    },
+    {
+     "text": "lost",
+     "start": 134.457,
+     "end": 134.617
+    },
+    {
+     "text": "customer.",
+     "start": 134.617,
+     "end": 135.037
+    },
+    {
+     "text": "A",
+     "start": 135.737,
+     "end": 135.757
+    },
+    {
+     "text": "sad",
+     "start": 135.757,
+     "end": 135.897
+    },
+    {
+     "text": "guy",
+     "start": 135.897,
+     "end": 136.157
+    },
+    {
+     "text": "who",
+     "start": 136.157,
+     "end": 136.317
+    },
+    {
+     "text": "keeps",
+     "start": 136.317,
+     "end": 136.457
+    },
+    {
+     "text": "swiping",
+     "start": 136.457,
+     "end": 136.877
+    },
+    {
+     "text": "is",
+     "start": 136.877,
+     "end": 137.097
+    },
+    {
+     "text": "a",
+     "start": 137.097,
+     "end": 137.217
+    },
+    {
+     "text": "subscription.",
+     "start": 137.217,
+     "end": 137.537
+    }
+   ]
+  },
+  {
+   "id": "n5",
+   "text": "The dating app business plan.",
+   "start": 138.58541666666667,
+   "end": 139.86541666666668,
+   "words": [
+    {
+     "text": "The",
+     "start": 138.585,
+     "end": 138.705
+    },
+    {
+     "text": "dating",
+     "start": 138.705,
+     "end": 138.925
+    },
+    {
+     "text": "app",
+     "start": 138.925,
+     "end": 139.185
+    },
+    {
+     "text": "business",
+     "start": 139.185,
+     "end": 139.565
+    },
+    {
+     "text": "plan.",
+     "start": 139.565,
+     "end": 139.865
+    }
+   ]
+  },
+  {
+   "id": "c3d",
+   "text": "To be fair the apps don't want everyone sad forever. Some people really do find love. They just make more money from the ones who don't.",
+   "start": 140.534875,
+   "end": 146.694875,
+   "words": [
+    {
+     "text": "To",
+     "start": 140.535,
+     "end": 140.635
+    },
+    {
+     "text": "be",
+     "start": 140.635,
+     "end": 140.735
+    },
+    {
+     "text": "fair",
+     "start": 140.735,
+     "end": 140.975
+    },
+    {
+     "text": "the",
+     "start": 141.235,
+     "end": 141.255
+    },
+    {
+     "text": "apps",
+     "start": 141.255,
+     "end": 141.415
+    },
+    {
+     "text": "don't",
+     "start": 141.415,
+     "end": 141.735
+    },
+    {
+     "text": "want",
+     "start": 141.735,
+     "end": 141.875
+    },
+    {
+     "text": "everyone",
+     "start": 141.875,
+     "end": 142.135
+    },
+    {
+     "text": "sad",
+     "start": 142.135,
+     "end": 142.475
+    },
+    {
+     "text": "forever.",
+     "start": 142.475,
+     "end": 142.695
+    },
+    {
+     "text": "Some",
+     "start": 143.235,
+     "end": 143.375
+    },
+    {
+     "text": "people",
+     "start": 143.375,
+     "end": 143.675
+    },
+    {
+     "text": "really",
+     "start": 143.675,
+     "end": 143.835
+    },
+    {
+     "text": "do",
+     "start": 143.835,
+     "end": 144.075
+    },
+    {
+     "text": "find",
+     "start": 144.075,
+     "end": 144.335
+    },
+    {
+     "text": "love.",
+     "start": 144.335,
+     "end": 144.615
+    },
+    {
+     "text": "They",
+     "start": 144.895,
+     "end": 144.995
+    },
+    {
+     "text": "just",
+     "start": 144.995,
+     "end": 145.115
+    },
+    {
+     "text": "make",
+     "start": 145.115,
+     "end": 145.295
+    },
+    {
+     "text": "more",
+     "start": 145.295,
+     "end": 145.475
+    },
+    {
+     "text": "money",
+     "start": 145.475,
+     "end": 145.655
+    },
+    {
+     "text": "from",
+     "start": 145.655,
+     "end": 145.875
+    },
+    {
+     "text": "the",
+     "start": 145.875,
+     "end": 145.995
+    },
+    {
+     "text": "ones",
+     "start": 145.995,
+     "end": 146.135
+    },
+    {
+     "text": "who",
+     "start": 146.135,
+     "end": 146.315
+    },
+    {
+     "text": "don't.",
+     "start": 146.315,
+     "end": 146.695
+    }
+   ]
+  },
+  {
+   "id": "n23",
+   "text": "Think about a gym that loses money when you get fit. Or a dentist who loses money when your teeth are fine. Weird right?",
+   "start": 147.18389583333334,
+   "end": 152.20389583333335,
+   "words": [
+    {
+     "text": "Think",
+     "start": 147.184,
+     "end": 147.304
+    },
+    {
+     "text": "about",
+     "start": 147.304,
+     "end": 147.464
+    },
+    {
+     "text": "a",
+     "start": 147.464,
+     "end": 147.564
+    },
+    {
+     "text": "gym",
+     "start": 147.564,
+     "end": 147.744
+    },
+    {
+     "text": "that",
+     "start": 147.744,
+     "end": 147.924
+    },
+    {
+     "text": "loses",
+     "start": 147.924,
+     "end": 148.104
+    },
+    {
+     "text": "money",
+     "start": 148.104,
+     "end": 148.384
+    },
+    {
+     "text": "when",
+     "start": 148.384,
+     "end": 148.564
+    },
+    {
+     "text": "you",
+     "start": 148.564,
+     "end": 148.664
+    },
+    {
+     "text": "get",
+     "start": 148.664,
+     "end": 148.784
+    },
+    {
+     "text": "fit.",
+     "start": 148.784,
+     "end": 149.024
+    },
+    {
+     "text": "Or",
+     "start": 149.464,
+     "end": 149.524
+    },
+    {
+     "text": "a",
+     "start": 149.524,
+     "end": 149.624
+    },
+    {
+     "text": "dentist",
+     "start": 149.624,
+     "end": 149.764
+    },
+    {
+     "text": "who",
+     "start": 149.764,
+     "end": 150.084
+    },
+    {
+     "text": "loses",
+     "start": 150.084,
+     "end": 150.264
+    },
+    {
+     "text": "money",
+     "start": 150.264,
+     "end": 150.564
+    },
+    {
+     "text": "when",
+     "start": 150.564,
+     "end": 150.764
+    },
+    {
+     "text": "your",
+     "start": 150.764,
+     "end": 150.844
+    },
+    {
+     "text": "teeth",
+     "start": 150.844,
+     "end": 151.024
+    },
+    {
+     "text": "are",
+     "start": 151.024,
+     "end": 151.184
+    },
+    {
+     "text": "fine.",
+     "start": 151.184,
+     "end": 151.464
+    },
+    {
+     "text": "Weird",
+     "start": 151.784,
+     "end": 151.944
+    },
+    {
+     "text": "right?",
+     "start": 152.064,
+     "end": 152.204
+    }
+   ]
+  },
+  {
+   "id": "c4a",
+   "text": "And here's the part that really got me. The notification that says someone likes you? It isn't always a person.",
+   "start": 152.91370833333335,
+   "end": 157.19370833333335,
+   "words": [
+    {
+     "text": "And",
+     "start": 152.914,
+     "end": 153.034
+    },
+    {
+     "text": "here's",
+     "start": 153.034,
+     "end": 153.254
+    },
+    {
+     "text": "the",
+     "start": 153.254,
+     "end": 153.334
+    },
+    {
+     "text": "part",
+     "start": 153.334,
+     "end": 153.474
+    },
+    {
+     "text": "that",
+     "start": 153.474,
+     "end": 153.594
+    },
+    {
+     "text": "really",
+     "start": 153.594,
+     "end": 153.734
+    },
+    {
+     "text": "got",
+     "start": 153.734,
+     "end": 153.894
+    },
+    {
+     "text": "me.",
+     "start": 153.894,
+     "end": 154.074
+    },
+    {
+     "text": "The",
+     "start": 154.454,
+     "end": 154.534
+    },
+    {
+     "text": "notification",
+     "start": 154.534,
+     "end": 154.894
+    },
+    {
+     "text": "that",
+     "start": 154.894,
+     "end": 155.214
+    },
+    {
+     "text": "says",
+     "start": 155.214,
+     "end": 155.374
+    },
+    {
+     "text": "someone",
+     "start": 155.374,
+     "end": 155.594
+    },
+    {
+     "text": "likes",
+     "start": 155.594,
+     "end": 155.854
+    },
+    {
+     "text": "you?",
+     "start": 155.854,
+     "end": 156.074
+    },
+    {
+     "text": "It",
+     "start": 156.294,
+     "end": 156.394
+    },
+    {
+     "text": "isn't",
+     "start": 156.394,
+     "end": 156.634
+    },
+    {
+     "text": "always",
+     "start": 156.634,
+     "end": 156.834
+    },
+    {
+     "text": "a",
+     "start": 156.834,
+     "end": 156.934
+    },
+    {
+     "text": "person.",
+     "start": 156.934,
+     "end": 157.194
+    }
+   ]
+  },
+  {
+   "id": "c4c",
+   "text": "The FTC sued Match Group and said the company sent people those someone likes you emails from accounts it had already flagged as likely fake. To get people to pay.",
+   "start": 157.86825,
+   "end": 165.04825,
+   "words": [
+    {
+     "text": "The",
+     "start": 157.868,
+     "end": 157.948
+    },
+    {
+     "text": "FTC",
+     "start": 157.948,
+     "end": 158.128
+    },
+    {
+     "text": "sued",
+     "start": 158.128,
+     "end": 158.608
+    },
+    {
+     "text": "Match",
+     "start": 158.608,
+     "end": 158.828
+    },
+    {
+     "text": "Group",
+     "start": 158.828,
+     "end": 159.068
+    },
+    {
+     "text": "and",
+     "start": 159.068,
+     "end": 159.328
+    },
+    {
+     "text": "said",
+     "start": 159.328,
+     "end": 159.468
+    },
+    {
+     "text": "the",
+     "start": 159.468,
+     "end": 159.568
+    },
+    {
+     "text": "company",
+     "start": 159.568,
+     "end": 159.788
+    },
+    {
+     "text": "sent",
+     "start": 159.788,
+     "end": 160.068
+    },
+    {
+     "text": "people",
+     "start": 160.068,
+     "end": 160.348
+    },
+    {
+     "text": "those",
+     "start": 160.348,
+     "end": 160.548
+    },
+    {
+     "text": "someone",
+     "start": 160.548,
+     "end": 160.788
+    },
+    {
+     "text": "likes",
+     "start": 160.788,
+     "end": 161.148
+    },
+    {
+     "text": "you",
+     "start": 161.148,
+     "end": 161.268
+    },
+    {
+     "text": "emails",
+     "start": 161.268,
+     "end": 161.528
+    },
+    {
+     "text": "from",
+     "start": 161.528,
+     "end": 161.808
+    },
+    {
+     "text": "accounts",
+     "start": 161.808,
+     "end": 162.008
+    },
+    {
+     "text": "it",
+     "start": 162.008,
+     "end": 162.268
+    },
+    {
+     "text": "had",
+     "start": 162.268,
+     "end": 162.368
+    },
+    {
+     "text": "already",
+     "start": 162.368,
+     "end": 162.628
+    },
+    {
+     "text": "flagged",
+     "start": 162.628,
+     "end": 162.888
+    },
+    {
+     "text": "as",
+     "start": 162.888,
+     "end": 163.188
+    },
+    {
+     "text": "likely",
+     "start": 163.188,
+     "end": 163.368
+    },
+    {
+     "text": "fake.",
+     "start": 163.368,
+     "end": 163.688
+    },
+    {
+     "text": "To",
+     "start": 164.288,
+     "end": 164.388
+    },
+    {
+     "text": "get",
+     "start": 164.388,
+     "end": 164.508
+    },
+    {
+     "text": "people",
+     "start": 164.508,
+     "end": 164.688
+    },
+    {
+     "text": "to",
+     "start": 164.688,
+     "end": 164.888
+    },
+    {
+     "text": "pay.",
+     "start": 164.888,
+     "end": 165.048
+    }
+   ]
+  },
+  {
+   "id": "n44",
+   "text": "So the app was basically catfishing me into paying. With its own fake people.",
+   "start": 165.73679166666668,
+   "end": 169.8167916666667,
+   "words": [
+    {
+     "text": "So",
+     "start": 165.737,
+     "end": 165.937
+    },
+    {
+     "text": "the",
+     "start": 165.937,
+     "end": 166.237
+    },
+    {
+     "text": "app",
+     "start": 166.237,
+     "end": 166.417
+    },
+    {
+     "text": "was",
+     "start": 166.417,
+     "end": 166.617
+    },
+    {
+     "text": "basically",
+     "start": 166.617,
+     "end": 166.977
+    },
+    {
+     "text": "catfishing",
+     "start": 166.977,
+     "end": 167.637
+    },
+    {
+     "text": "me",
+     "start": 167.637,
+     "end": 167.877
+    },
+    {
+     "text": "into",
+     "start": 167.877,
+     "end": 168.077
+    },
+    {
+     "text": "paying.",
+     "start": 168.077,
+     "end": 168.437
+    },
+    {
+     "text": "With",
+     "start": 168.957,
+     "end": 169.037
+    },
+    {
+     "text": "its",
+     "start": 169.037,
+     "end": 169.197
+    },
+    {
+     "text": "own",
+     "start": 169.197,
+     "end": 169.317
+    },
+    {
+     "text": "fake",
+     "start": 169.317,
+     "end": 169.497
+    },
+    {
+     "text": "people.",
+     "start": 169.497,
+     "end": 169.817
+    }
+   ]
+  },
+  {
+   "id": "n7",
+   "text": "Me getting excited about a like from a fake account.",
+   "start": 170.49408333333332,
+   "end": 172.6340833333333,
+   "words": [
+    {
+     "text": "Me",
+     "start": 170.494,
+     "end": 170.594
+    },
+    {
+     "text": "getting",
+     "start": 170.594,
+     "end": 170.754
+    },
+    {
+     "text": "excited",
+     "start": 170.754,
+     "end": 171.114
+    },
+    {
+     "text": "about",
+     "start": 171.114,
+     "end": 171.474
+    },
+    {
+     "text": "a",
+     "start": 171.474,
+     "end": 171.594
+    },
+    {
+     "text": "like",
+     "start": 171.594,
+     "end": 171.794
+    },
+    {
+     "text": "from",
+     "start": 171.794,
+     "end": 172.054
+    },
+    {
+     "text": "a",
+     "start": 172.054,
+     "end": 172.134
+    },
+    {
+     "text": "fake",
+     "start": 172.134,
+     "end": 172.294
+    },
+    {
+     "text": "account.",
+     "start": 172.294,
+     "end": 172.634
+    }
+   ]
+  },
+  {
+   "id": "c4d",
+   "text": "In twenty twenty five Match agreed to pay fourteen million dollars to settle and it didn't admit doing anything wrong.",
+   "start": 173.38233333333332,
+   "end": 178.07433333333333,
+   "words": [
+    {
+     "text": "In",
+     "start": 173.382,
+     "end": 173.489
+    },
+    {
+     "text": "twenty",
+     "start": 173.501,
+     "end": 173.751
+    },
+    {
+     "text": "twenty",
+     "start": 173.779,
+     "end": 174.029
+    },
+    {
+     "text": "five",
+     "start": 174.056,
+     "end": 174.235
+    },
+    {
+     "text": "Match",
+     "start": 174.255,
+     "end": 174.469
+    },
+    {
+     "text": "agreed",
+     "start": 174.493,
+     "end": 174.742
+    },
+    {
+     "text": "to",
+     "start": 174.77,
+     "end": 174.877
+    },
+    {
+     "text": "pay",
+     "start": 174.889,
+     "end": 175.032
+    },
+    {
+     "text": "fourteen",
+     "start": 175.048,
+     "end": 175.369
+    },
+    {
+     "text": "million",
+     "start": 175.405,
+     "end": 175.69
+    },
+    {
+     "text": "dollars",
+     "start": 175.722,
+     "end": 176.008
+    },
+    {
+     "text": "to",
+     "start": 176.039,
+     "end": 176.147
+    },
+    {
+     "text": "settle",
+     "start": 176.158,
+     "end": 176.408
+    },
+    {
+     "text": "and",
+     "start": 176.436,
+     "end": 176.579
+    },
+    {
+     "text": "it",
+     "start": 176.595,
+     "end": 176.702
+    },
+    {
+     "text": "didn't",
+     "start": 176.714,
+     "end": 176.964
+    },
+    {
+     "text": "admit",
+     "start": 176.991,
+     "end": 177.206
+    },
+    {
+     "text": "doing",
+     "start": 177.229,
+     "end": 177.444
+    },
+    {
+     "text": "anything",
+     "start": 177.467,
+     "end": 177.789
+    },
+    {
+     "text": "wrong.",
+     "start": 177.824,
+     "end": 178.074
+    }
+   ]
+  },
+  {
+   "id": "n34",
+   "text": "Fourteen million sounds like a lot. For a company that big it's like you or me paying a parking ticket.",
+   "start": 178.79408333333333,
+   "end": 183.11408333333333,
+   "words": [
+    {
+     "text": "Fourteen",
+     "start": 178.794,
+     "end": 179.074
+    },
+    {
+     "text": "million",
+     "start": 179.074,
+     "end": 179.274
+    },
+    {
+     "text": "sounds",
+     "start": 179.274,
+     "end": 179.574
+    },
+    {
+     "text": "like",
+     "start": 179.574,
+     "end": 179.794
+    },
+    {
+     "text": "a",
+     "start": 179.794,
+     "end": 179.894
+    },
+    {
+     "text": "lot.",
+     "start": 179.894,
+     "end": 180.114
+    },
+    {
+     "text": "For",
+     "start": 180.534,
+     "end": 180.654
+    },
+    {
+     "text": "a",
+     "start": 180.654,
+     "end": 180.734
+    },
+    {
+     "text": "company",
+     "start": 180.734,
+     "end": 180.974
+    },
+    {
+     "text": "that",
+     "start": 180.974,
+     "end": 181.214
+    },
+    {
+     "text": "big",
+     "start": 181.214,
+     "end": 181.474
+    },
+    {
+     "text": "it's",
+     "start": 181.714,
+     "end": 181.834
+    },
+    {
+     "text": "like",
+     "start": 181.834,
+     "end": 181.934
+    },
+    {
+     "text": "you",
+     "start": 181.934,
+     "end": 182.134
+    },
+    {
+     "text": "or",
+     "start": 182.134,
+     "end": 182.254
+    },
+    {
+     "text": "me",
+     "start": 182.254,
+     "end": 182.354
+    },
+    {
+     "text": "paying",
+     "start": 182.354,
+     "end": 182.554
+    },
+    {
+     "text": "a",
+     "start": 182.554,
+     "end": 182.674
+    },
+    {
+     "text": "parking",
+     "start": 182.674,
+     "end": 182.854
+    },
+    {
+     "text": "ticket.",
+     "start": 182.854,
+     "end": 183.114
+    }
+   ]
+  },
+  {
+   "id": "c4e",
+   "text": "So that little buzz in your pocket? It's not a love letter. It's a sales email.",
+   "start": 183.90697916666667,
+   "end": 187.54697916666666,
+   "words": [
+    {
+     "text": "So",
+     "start": 183.907,
+     "end": 184.067
+    },
+    {
+     "text": "that",
+     "start": 184.067,
+     "end": 184.427
+    },
+    {
+     "text": "little",
+     "start": 184.427,
+     "end": 184.607
+    },
+    {
+     "text": "buzz",
+     "start": 184.607,
+     "end": 184.787
+    },
+    {
+     "text": "in",
+     "start": 184.787,
+     "end": 184.947
+    },
+    {
+     "text": "your",
+     "start": 184.947,
+     "end": 185.027
+    },
+    {
+     "text": "pocket?",
+     "start": 185.027,
+     "end": 185.327
+    },
+    {
+     "text": "It's",
+     "start": 185.827,
+     "end": 185.947
+    },
+    {
+     "text": "not",
+     "start": 185.947,
+     "end": 186.127
+    },
+    {
+     "text": "a",
+     "start": 186.127,
+     "end": 186.327
+    },
+    {
+     "text": "love",
+     "start": 186.327,
+     "end": 186.427
+    },
+    {
+     "text": "letter.",
+     "start": 186.427,
+     "end": 186.627
+    },
+    {
+     "text": "It's",
+     "start": 186.867,
+     "end": 186.967
+    },
+    {
+     "text": "a",
+     "start": 186.967,
+     "end": 187.007
+    },
+    {
+     "text": "sales",
+     "start": 187.007,
+     "end": 187.127
+    },
+    {
+     "text": "email.",
+     "start": 187.127,
+     "end": 187.547
+    }
+   ]
+  },
+  {
+   "id": "n24",
+   "text": "Me after learning that.",
+   "start": 188.2614375,
+   "end": 189.3614375,
+   "words": [
+    {
+     "text": "Me",
+     "start": 188.261,
+     "end": 188.421
+    },
+    {
+     "text": "after",
+     "start": 188.421,
+     "end": 188.861
+    },
+    {
+     "text": "learning",
+     "start": 188.861,
+     "end": 189.101
+    },
+    {
+     "text": "that.",
+     "start": 189.101,
+     "end": 189.361
+    }
+   ]
+  },
+  {
+   "id": "c5a",
+   "text": "So what does my forty dollars actually buy?",
+   "start": 189.96114583333335,
+   "end": 191.68114583333335,
+   "words": [
+    {
+     "text": "So",
+     "start": 189.961,
+     "end": 190.068
+    },
+    {
+     "text": "what",
+     "start": 190.08,
+     "end": 190.258
+    },
+    {
+     "text": "does",
+     "start": 190.277,
+     "end": 190.455
+    },
+    {
+     "text": "my",
+     "start": 190.475,
+     "end": 190.582
+    },
+    {
+     "text": "forty",
+     "start": 190.594,
+     "end": 190.807
+    },
+    {
+     "text": "dollars",
+     "start": 190.831,
+     "end": 191.116
+    },
+    {
+     "text": "actually",
+     "start": 191.147,
+     "end": 191.468
+    },
+    {
+     "text": "buy?",
+     "start": 191.503,
+     "end": 191.681
+    }
+   ]
+  },
+  {
+   "id": "c5b",
+   "text": "I get to see who liked me. Unlimited swipes. An undo button. And a boost so more people see my face.",
+   "start": 192.34314583333332,
+   "end": 197.10314583333331,
+   "words": [
+    {
+     "text": "I",
+     "start": 192.343,
+     "end": 192.423
+    },
+    {
+     "text": "get",
+     "start": 192.423,
+     "end": 192.523
+    },
+    {
+     "text": "to",
+     "start": 192.523,
+     "end": 192.623
+    },
+    {
+     "text": "see",
+     "start": 192.623,
+     "end": 192.763
+    },
+    {
+     "text": "who",
+     "start": 192.763,
+     "end": 192.903
+    },
+    {
+     "text": "liked",
+     "start": 192.903,
+     "end": 193.063
+    },
+    {
+     "text": "me.",
+     "start": 193.063,
+     "end": 193.323
+    },
+    {
+     "text": "Unlimited",
+     "start": 193.643,
+     "end": 193.863
+    },
+    {
+     "text": "swipes.",
+     "start": 193.863,
+     "end": 194.403
+    },
+    {
+     "text": "An",
+     "start": 194.623,
+     "end": 194.643
+    },
+    {
+     "text": "undo",
+     "start": 194.643,
+     "end": 194.903
+    },
+    {
+     "text": "button.",
+     "start": 194.903,
+     "end": 195.203
+    },
+    {
+     "text": "And",
+     "start": 195.563,
+     "end": 195.623
+    },
+    {
+     "text": "a",
+     "start": 195.623,
+     "end": 195.703
+    },
+    {
+     "text": "boost",
+     "start": 195.703,
+     "end": 195.883
+    },
+    {
+     "text": "so",
+     "start": 195.883,
+     "end": 196.203
+    },
+    {
+     "text": "more",
+     "start": 196.203,
+     "end": 196.343
+    },
+    {
+     "text": "people",
+     "start": 196.343,
+     "end": 196.503
+    },
+    {
+     "text": "see",
+     "start": 196.503,
+     "end": 196.743
+    },
+    {
+     "text": "my",
+     "start": 196.743,
+     "end": 196.863
+    },
+    {
+     "text": "face.",
+     "start": 196.863,
+     "end": 197.103
+    }
+   ]
+  },
+  {
+   "id": "n35",
+   "text": "And the boost is a little auction. The more people pay to be seen the more you have to pay to be seen too.",
+   "start": 197.8014375,
+   "end": 202.2614375,
+   "words": [
+    {
+     "text": "And",
+     "start": 197.801,
+     "end": 197.881
+    },
+    {
+     "text": "the",
+     "start": 197.881,
+     "end": 197.961
+    },
+    {
+     "text": "boost",
+     "start": 197.961,
+     "end": 198.121
+    },
+    {
+     "text": "is",
+     "start": 198.121,
+     "end": 198.301
+    },
+    {
+     "text": "a",
+     "start": 198.301,
+     "end": 198.401
+    },
+    {
+     "text": "little",
+     "start": 198.401,
+     "end": 198.521
+    },
+    {
+     "text": "auction.",
+     "start": 198.521,
+     "end": 198.901
+    },
+    {
+     "text": "The",
+     "start": 199.561,
+     "end": 199.601
+    },
+    {
+     "text": "more",
+     "start": 199.601,
+     "end": 199.741
+    },
+    {
+     "text": "people",
+     "start": 199.741,
+     "end": 199.961
+    },
+    {
+     "text": "pay",
+     "start": 199.961,
+     "end": 200.181
+    },
+    {
+     "text": "to",
+     "start": 200.181,
+     "end": 200.301
+    },
+    {
+     "text": "be",
+     "start": 200.301,
+     "end": 200.401
+    },
+    {
+     "text": "seen",
+     "start": 200.401,
+     "end": 200.601
+    },
+    {
+     "text": "the",
+     "start": 200.901,
+     "end": 200.901
+    },
+    {
+     "text": "more",
+     "start": 200.901,
+     "end": 201.041
+    },
+    {
+     "text": "you",
+     "start": 201.041,
+     "end": 201.181
+    },
+    {
+     "text": "have",
+     "start": 201.181,
+     "end": 201.301
+    },
+    {
+     "text": "to",
+     "start": 201.301,
+     "end": 201.441
+    },
+    {
+     "text": "pay",
+     "start": 201.441,
+     "end": 201.601
+    },
+    {
+     "text": "to",
+     "start": 201.601,
+     "end": 201.701
+    },
+    {
+     "text": "be",
+     "start": 201.701,
+     "end": 201.801
+    },
+    {
+     "text": "seen",
+     "start": 201.801,
+     "end": 201.981
+    },
+    {
+     "text": "too.",
+     "start": 201.981,
+     "end": 202.261
+    }
+   ]
+  },
+  {
+   "id": "n22",
+   "text": "And there's an even fancier version that costs more. For people who want to be single at a premium level.",
+   "start": 202.91497916666665,
+   "end": 207.46497916666667,
+   "words": [
+    {
+     "text": "And",
+     "start": 202.915,
+     "end": 203.071
+    },
+    {
+     "text": "there's",
+     "start": 203.088,
+     "end": 203.399
+    },
+    {
+     "text": "an",
+     "start": 203.433,
+     "end": 203.55
+    },
+    {
+     "text": "even",
+     "start": 203.563,
+     "end": 203.758
+    },
+    {
+     "text": "fancier",
+     "start": 203.779,
+     "end": 204.09
+    },
+    {
+     "text": "version",
+     "start": 204.125,
+     "end": 204.436
+    },
+    {
+     "text": "that",
+     "start": 204.47,
+     "end": 204.665
+    },
+    {
+     "text": "costs",
+     "start": 204.687,
+     "end": 204.92
+    },
+    {
+     "text": "more.",
+     "start": 204.946,
+     "end": 205.179
+    },
+    {
+     "text": "For",
+     "start": 205.205,
+     "end": 205.361
+    },
+    {
+     "text": "people",
+     "start": 205.378,
+     "end": 205.65
+    },
+    {
+     "text": "who",
+     "start": 205.68,
+     "end": 205.836
+    },
+    {
+     "text": "want",
+     "start": 205.853,
+     "end": 206.048
+    },
+    {
+     "text": "to",
+     "start": 206.069,
+     "end": 206.186
+    },
+    {
+     "text": "be",
+     "start": 206.199,
+     "end": 206.315
+    },
+    {
+     "text": "single",
+     "start": 206.328,
+     "end": 206.601
+    },
+    {
+     "text": "at",
+     "start": 206.631,
+     "end": 206.748
+    },
+    {
+     "text": "a",
+     "start": 206.76,
+     "end": 206.838
+    },
+    {
+     "text": "premium",
+     "start": 206.847,
+     "end": 207.158
+    },
+    {
+     "text": "level.",
+     "start": 207.193,
+     "end": 207.465
+    }
+   ]
+  },
+  {
+   "id": "c5c",
+   "text": "None of that finds me a better person. It just removes a little wall the app built in the first place.",
+   "start": 207.86916666666667,
+   "end": 212.06916666666666,
+   "words": [
+    {
+     "text": "None",
+     "start": 207.869,
+     "end": 208.109
+    },
+    {
+     "text": "of",
+     "start": 208.109,
+     "end": 208.269
+    },
+    {
+     "text": "that",
+     "start": 208.269,
+     "end": 208.409
+    },
+    {
+     "text": "finds",
+     "start": 208.409,
+     "end": 208.629
+    },
+    {
+     "text": "me",
+     "start": 208.629,
+     "end": 208.809
+    },
+    {
+     "text": "a",
+     "start": 208.809,
+     "end": 208.949
+    },
+    {
+     "text": "better",
+     "start": 208.949,
+     "end": 209.029
+    },
+    {
+     "text": "person.",
+     "start": 209.029,
+     "end": 209.349
+    },
+    {
+     "text": "It",
+     "start": 209.809,
+     "end": 209.889
+    },
+    {
+     "text": "just",
+     "start": 209.889,
+     "end": 210.009
+    },
+    {
+     "text": "removes",
+     "start": 210.009,
+     "end": 210.289
+    },
+    {
+     "text": "a",
+     "start": 210.289,
+     "end": 210.569
+    },
+    {
+     "text": "little",
+     "start": 210.569,
+     "end": 210.689
+    },
+    {
+     "text": "wall",
+     "start": 210.689,
+     "end": 210.929
+    },
+    {
+     "text": "the",
+     "start": 210.929,
+     "end": 211.169
+    },
+    {
+     "text": "app",
+     "start": 211.169,
+     "end": 211.329
+    },
+    {
+     "text": "built",
+     "start": 211.329,
+     "end": 211.509
+    },
+    {
+     "text": "in",
+     "start": 211.509,
+     "end": 211.629
+    },
+    {
+     "text": "the",
+     "start": 211.629,
+     "end": 211.709
+    },
+    {
+     "text": "first",
+     "start": 211.709,
+     "end": 211.829
+    },
+    {
+     "text": "place.",
+     "start": 211.829,
+     "end": 212.069
+    }
+   ]
+  },
+  {
+   "id": "c5d",
+   "text": "It's like a guy who builds a toll booth in the middle of your street and then sells you a pass to skip it.",
+   "start": 212.63325,
+   "end": 216.71325000000002,
+   "words": [
+    {
+     "text": "It's",
+     "start": 212.633,
+     "end": 212.753
+    },
+    {
+     "text": "like",
+     "start": 212.753,
+     "end": 212.893
+    },
+    {
+     "text": "a",
+     "start": 212.893,
+     "end": 213.033
+    },
+    {
+     "text": "guy",
+     "start": 213.033,
+     "end": 213.253
+    },
+    {
+     "text": "who",
+     "start": 213.253,
+     "end": 213.413
+    },
+    {
+     "text": "builds",
+     "start": 213.413,
+     "end": 213.573
+    },
+    {
+     "text": "a",
+     "start": 213.573,
+     "end": 213.733
+    },
+    {
+     "text": "toll",
+     "start": 213.733,
+     "end": 213.933
+    },
+    {
+     "text": "booth",
+     "start": 213.933,
+     "end": 214.173
+    },
+    {
+     "text": "in",
+     "start": 214.173,
+     "end": 214.353
+    },
+    {
+     "text": "the",
+     "start": 214.353,
+     "end": 214.433
+    },
+    {
+     "text": "middle",
+     "start": 214.433,
+     "end": 214.573
+    },
+    {
+     "text": "of",
+     "start": 214.573,
+     "end": 214.733
+    },
+    {
+     "text": "your",
+     "start": 214.733,
+     "end": 214.813
+    },
+    {
+     "text": "street",
+     "start": 214.813,
+     "end": 215.073
+    },
+    {
+     "text": "and",
+     "start": 215.073,
+     "end": 215.393
+    },
+    {
+     "text": "then",
+     "start": 215.393,
+     "end": 215.513
+    },
+    {
+     "text": "sells",
+     "start": 215.513,
+     "end": 215.713
+    },
+    {
+     "text": "you",
+     "start": 215.713,
+     "end": 215.913
+    },
+    {
+     "text": "a",
+     "start": 215.913,
+     "end": 215.993
+    },
+    {
+     "text": "pass",
+     "start": 215.993,
+     "end": 216.153
+    },
+    {
+     "text": "to",
+     "start": 216.153,
+     "end": 216.353
+    },
+    {
+     "text": "skip",
+     "start": 216.353,
+     "end": 216.513
+    },
+    {
+     "text": "it.",
+     "start": 216.513,
+     "end": 216.713
+    }
+   ]
+  },
+  {
+   "id": "n8",
+   "text": "Paying to fix a problem the app made.",
+   "start": 217.23452083333333,
+   "end": 218.65452083333332,
+   "words": [
+    {
+     "text": "Paying",
+     "start": 217.235,
+     "end": 217.395
+    },
+    {
+     "text": "to",
+     "start": 217.395,
+     "end": 217.555
+    },
+    {
+     "text": "fix",
+     "start": 217.555,
+     "end": 217.695
+    },
+    {
+     "text": "a",
+     "start": 217.695,
+     "end": 217.835
+    },
+    {
+     "text": "problem",
+     "start": 217.835,
+     "end": 218.095
+    },
+    {
+     "text": "the",
+     "start": 218.095,
+     "end": 218.295
+    },
+    {
+     "text": "app",
+     "start": 218.295,
+     "end": 218.415
+    },
+    {
+     "text": "made.",
+     "start": 218.415,
+     "end": 218.655
+    }
+   ]
+  },
+  {
+   "id": "c5e",
+   "text": "And most people never pay a cent. They're the free version. The bait. The faces people like me pay to see.",
+   "start": 219.331125,
+   "end": 225.411125,
+   "words": [
+    {
+     "text": "And",
+     "start": 219.331,
+     "end": 219.611
+    },
+    {
+     "text": "most",
+     "start": 219.611,
+     "end": 219.831
+    },
+    {
+     "text": "people",
+     "start": 219.831,
+     "end": 220.091
+    },
+    {
+     "text": "never",
+     "start": 220.091,
+     "end": 220.251
+    },
+    {
+     "text": "pay",
+     "start": 220.251,
+     "end": 220.491
+    },
+    {
+     "text": "a",
+     "start": 220.491,
+     "end": 220.551
+    },
+    {
+     "text": "cent.",
+     "start": 220.551,
+     "end": 220.791
+    },
+    {
+     "text": "They're",
+     "start": 221.411,
+     "end": 221.491
+    },
+    {
+     "text": "the",
+     "start": 221.491,
+     "end": 221.591
+    },
+    {
+     "text": "free",
+     "start": 221.591,
+     "end": 221.751
+    },
+    {
+     "text": "version.",
+     "start": 221.751,
+     "end": 222.031
+    },
+    {
+     "text": "The",
+     "start": 222.871,
+     "end": 222.891
+    },
+    {
+     "text": "bait.",
+     "start": 222.891,
+     "end": 223.071
+    },
+    {
+     "text": "The",
+     "start": 223.791,
+     "end": 223.831
+    },
+    {
+     "text": "faces",
+     "start": 223.831,
+     "end": 224.051
+    },
+    {
+     "text": "people",
+     "start": 224.051,
+     "end": 224.351
+    },
+    {
+     "text": "like",
+     "start": 224.351,
+     "end": 224.651
+    },
+    {
+     "text": "me",
+     "start": 224.651,
+     "end": 224.831
+    },
+    {
+     "text": "pay",
+     "start": 224.831,
+     "end": 225.071
+    },
+    {
+     "text": "to",
+     "start": 225.071,
+     "end": 225.211
+    },
+    {
+     "text": "see.",
+     "start": 225.211,
+     "end": 225.411
+    }
+   ]
+  },
+  {
+   "id": "c6a",
+   "text": "And here's why I kept opening it. Swiping feels like a slot machine.",
+   "start": 228.2525625,
+   "end": 231.8125625,
+   "words": [
+    {
+     "text": "And",
+     "start": 228.253,
+     "end": 228.473
+    },
+    {
+     "text": "here's",
+     "start": 228.473,
+     "end": 228.953
+    },
+    {
+     "text": "why",
+     "start": 228.953,
+     "end": 229.113
+    },
+    {
+     "text": "I",
+     "start": 229.113,
+     "end": 229.253
+    },
+    {
+     "text": "kept",
+     "start": 229.253,
+     "end": 229.373
+    },
+    {
+     "text": "opening",
+     "start": 229.373,
+     "end": 229.753
+    },
+    {
+     "text": "it.",
+     "start": 229.753,
+     "end": 230.013
+    },
+    {
+     "text": "Swiping",
+     "start": 230.533,
+     "end": 230.713
+    },
+    {
+     "text": "feels",
+     "start": 230.713,
+     "end": 230.913
+    },
+    {
+     "text": "like",
+     "start": 230.913,
+     "end": 231.253
+    },
+    {
+     "text": "a",
+     "start": 231.253,
+     "end": 231.353
+    },
+    {
+     "text": "slot",
+     "start": 231.353,
+     "end": 231.493
+    },
+    {
+     "text": "machine.",
+     "start": 231.493,
+     "end": 231.813
+    }
+   ]
+  },
+  {
+   "id": "c6b",
+   "text": "Most swipes get nothing. Nothing. Nothing. Then boom. A match. And my brain goes crazy.",
+   "start": 232.48095833333332,
+   "end": 237.0809583333333,
+   "words": [
+    {
+     "text": "Most",
+     "start": 232.481,
+     "end": 232.661
+    },
+    {
+     "text": "swipes",
+     "start": 232.661,
+     "end": 233.021
+    },
+    {
+     "text": "get",
+     "start": 233.021,
+     "end": 233.281
+    },
+    {
+     "text": "nothing.",
+     "start": 233.281,
+     "end": 233.581
+    },
+    {
+     "text": "Nothing.",
+     "start": 233.921,
+     "end": 234.281
+    },
+    {
+     "text": "Nothing.",
+     "start": 234.561,
+     "end": 234.861
+    },
+    {
+     "text": "Then",
+     "start": 234.861,
+     "end": 235.101
+    },
+    {
+     "text": "boom.",
+     "start": 235.101,
+     "end": 235.381
+    },
+    {
+     "text": "A",
+     "start": 235.661,
+     "end": 235.701
+    },
+    {
+     "text": "match.",
+     "start": 235.701,
+     "end": 235.921
+    },
+    {
+     "text": "And",
+     "start": 236.181,
+     "end": 236.221
+    },
+    {
+     "text": "my",
+     "start": 236.221,
+     "end": 236.341
+    },
+    {
+     "text": "brain",
+     "start": 236.341,
+     "end": 236.601
+    },
+    {
+     "text": "goes",
+     "start": 236.601,
+     "end": 236.781
+    },
+    {
+     "text": "crazy.",
+     "start": 236.781,
+     "end": 237.081
+    }
+   ]
+  },
+  {
+   "id": "n36",
+   "text": "Scientists tried this on pigeons. Give them food every time and they get bored. Give them food at random and they peck that button all day.",
+   "start": 237.88845833333335,
+   "end": 243.80845833333333,
+   "words": [
+    {
+     "text": "Scientists",
+     "start": 237.888,
+     "end": 238.188
+    },
+    {
+     "text": "tried",
+     "start": 238.188,
+     "end": 238.528
+    },
+    {
+     "text": "this",
+     "start": 238.528,
+     "end": 238.728
+    },
+    {
+     "text": "on",
+     "start": 238.728,
+     "end": 238.868
+    },
+    {
+     "text": "pigeons.",
+     "start": 238.868,
+     "end": 239.308
+    },
+    {
+     "text": "Give",
+     "start": 239.828,
+     "end": 239.848
+    },
+    {
+     "text": "them",
+     "start": 239.848,
+     "end": 239.988
+    },
+    {
+     "text": "food",
+     "start": 239.988,
+     "end": 240.168
+    },
+    {
+     "text": "every",
+     "start": 240.168,
+     "end": 240.308
+    },
+    {
+     "text": "time",
+     "start": 240.308,
+     "end": 240.668
+    },
+    {
+     "text": "and",
+     "start": 240.668,
+     "end": 240.868
+    },
+    {
+     "text": "they",
+     "start": 240.868,
+     "end": 240.968
+    },
+    {
+     "text": "get",
+     "start": 240.968,
+     "end": 241.108
+    },
+    {
+     "text": "bored.",
+     "start": 241.108,
+     "end": 241.308
+    },
+    {
+     "text": "Give",
+     "start": 241.828,
+     "end": 241.828
+    },
+    {
+     "text": "them",
+     "start": 241.828,
+     "end": 241.968
+    },
+    {
+     "text": "food",
+     "start": 241.968,
+     "end": 242.128
+    },
+    {
+     "text": "at",
+     "start": 242.128,
+     "end": 242.228
+    },
+    {
+     "text": "random",
+     "start": 242.228,
+     "end": 242.348
+    },
+    {
+     "text": "and",
+     "start": 242.348,
+     "end": 242.688
+    },
+    {
+     "text": "they",
+     "start": 242.688,
+     "end": 242.768
+    },
+    {
+     "text": "peck",
+     "start": 242.768,
+     "end": 242.928
+    },
+    {
+     "text": "that",
+     "start": 242.928,
+     "end": 243.088
+    },
+    {
+     "text": "button",
+     "start": 243.088,
+     "end": 243.368
+    },
+    {
+     "text": "all",
+     "start": 243.368,
+     "end": 243.588
+    },
+    {
+     "text": "day.",
+     "start": 243.588,
+     "end": 243.808
+    }
+   ]
+  },
+  {
+   "id": "n37",
+   "text": "I am the pigeon. You are the pigeon. We are all pecking the button at two in the morning.",
+   "start": 244.40989583333334,
+   "end": 248.64989583333335,
+   "words": [
+    {
+     "text": "I",
+     "start": 244.41,
+     "end": 244.61
+    },
+    {
+     "text": "am",
+     "start": 244.61,
+     "end": 244.77
+    },
+    {
+     "text": "the",
+     "start": 244.77,
+     "end": 244.89
+    },
+    {
+     "text": "pigeon.",
+     "start": 244.89,
+     "end": 245.27
+    },
+    {
+     "text": "You",
+     "start": 245.61,
+     "end": 245.73
+    },
+    {
+     "text": "are",
+     "start": 245.73,
+     "end": 245.97
+    },
+    {
+     "text": "the",
+     "start": 245.97,
+     "end": 246.09
+    },
+    {
+     "text": "pigeon.",
+     "start": 246.09,
+     "end": 246.47
+    },
+    {
+     "text": "We",
+     "start": 246.77,
+     "end": 246.91
+    },
+    {
+     "text": "are",
+     "start": 246.91,
+     "end": 246.99
+    },
+    {
+     "text": "all",
+     "start": 246.99,
+     "end": 247.13
+    },
+    {
+     "text": "pecking",
+     "start": 247.13,
+     "end": 247.45
+    },
+    {
+     "text": "the",
+     "start": 247.45,
+     "end": 247.59
+    },
+    {
+     "text": "button",
+     "start": 247.59,
+     "end": 247.75
+    },
+    {
+     "text": "at",
+     "start": 247.75,
+     "end": 247.95
+    },
+    {
+     "text": "two",
+     "start": 247.95,
+     "end": 248.19
+    },
+    {
+     "text": "in",
+     "start": 248.19,
+     "end": 248.35
+    },
+    {
+     "text": "the",
+     "start": 248.35,
+     "end": 248.41
+    },
+    {
+     "text": "morning.",
+     "start": 248.41,
+     "end": 248.65
+    }
+   ]
+  },
+  {
+   "id": "c6c",
+   "text": "Psychologists call that a random reward. Same trick as casinos and same trick as your social media feed.",
+   "start": 249.33464583333333,
+   "end": 255.49464583333332,
+   "words": [
+    {
+     "text": "Psychologists",
+     "start": 249.335,
+     "end": 249.775
+    },
+    {
+     "text": "call",
+     "start": 249.775,
+     "end": 250.115
+    },
+    {
+     "text": "that",
+     "start": 250.115,
+     "end": 250.415
+    },
+    {
+     "text": "a",
+     "start": 250.415,
+     "end": 250.655
+    },
+    {
+     "text": "random",
+     "start": 250.655,
+     "end": 251.035
+    },
+    {
+     "text": "reward.",
+     "start": 251.035,
+     "end": 251.535
+    },
+    {
+     "text": "Same",
+     "start": 252.335,
+     "end": 252.335
+    },
+    {
+     "text": "trick",
+     "start": 252.335,
+     "end": 252.595
+    },
+    {
+     "text": "as",
+     "start": 252.595,
+     "end": 252.895
+    },
+    {
+     "text": "casinos",
+     "start": 252.895,
+     "end": 253.135
+    },
+    {
+     "text": "and",
+     "start": 253.715,
+     "end": 253.815
+    },
+    {
+     "text": "same",
+     "start": 253.815,
+     "end": 254.055
+    },
+    {
+     "text": "trick",
+     "start": 254.055,
+     "end": 254.335
+    },
+    {
+     "text": "as",
+     "start": 254.335,
+     "end": 254.555
+    },
+    {
+     "text": "your",
+     "start": 254.555,
+     "end": 254.715
+    },
+    {
+     "text": "social",
+     "start": 254.715,
+     "end": 254.935
+    },
+    {
+     "text": "media",
+     "start": 254.935,
+     "end": 255.255
+    },
+    {
+     "text": "feed.",
+     "start": 255.255,
+     "end": 255.495
+    }
+   ]
+  },
+  {
+   "id": "n15",
+   "text": "Las Vegas figured this out a long time ago. Dating apps just put the casino in your pocket.",
+   "start": 256.1770833333333,
+   "end": 260.1770833333333,
+   "words": [
+    {
+     "text": "Las",
+     "start": 256.177,
+     "end": 256.277
+    },
+    {
+     "text": "Vegas",
+     "start": 256.277,
+     "end": 256.577
+    },
+    {
+     "text": "figured",
+     "start": 256.577,
+     "end": 256.917
+    },
+    {
+     "text": "this",
+     "start": 256.917,
+     "end": 257.137
+    },
+    {
+     "text": "out",
+     "start": 257.137,
+     "end": 257.277
+    },
+    {
+     "text": "a",
+     "start": 257.277,
+     "end": 257.357
+    },
+    {
+     "text": "long",
+     "start": 257.357,
+     "end": 257.497
+    },
+    {
+     "text": "time",
+     "start": 257.497,
+     "end": 257.757
+    },
+    {
+     "text": "ago.",
+     "start": 257.757,
+     "end": 257.997
+    },
+    {
+     "text": "Dating",
+     "start": 258.317,
+     "end": 258.477
+    },
+    {
+     "text": "apps",
+     "start": 258.477,
+     "end": 258.777
+    },
+    {
+     "text": "just",
+     "start": 258.777,
+     "end": 259.037
+    },
+    {
+     "text": "put",
+     "start": 259.037,
+     "end": 259.237
+    },
+    {
+     "text": "the",
+     "start": 259.237,
+     "end": 259.337
+    },
+    {
+     "text": "casino",
+     "start": 259.337,
+     "end": 259.477
+    },
+    {
+     "text": "in",
+     "start": 259.477,
+     "end": 259.797
+    },
+    {
+     "text": "your",
+     "start": 259.797,
+     "end": 259.897
+    },
+    {
+     "text": "pocket.",
+     "start": 259.897,
+     "end": 260.177
+    }
+   ]
+  },
+  {
+   "id": "n9",
+   "text": "Me checking the app for the twentieth time today.",
+   "start": 260.94085416666667,
+   "end": 262.7408541666667,
+   "words": [
+    {
+     "text": "Me",
+     "start": 260.941,
+     "end": 261.041
+    },
+    {
+     "text": "checking",
+     "start": 261.041,
+     "end": 261.261
+    },
+    {
+     "text": "the",
+     "start": 261.261,
+     "end": 261.461
+    },
+    {
+     "text": "app",
+     "start": 261.461,
+     "end": 261.641
+    },
+    {
+     "text": "for",
+     "start": 261.641,
+     "end": 261.841
+    },
+    {
+     "text": "the",
+     "start": 261.841,
+     "end": 261.921
+    },
+    {
+     "text": "twentieth",
+     "start": 261.921,
+     "end": 262.281
+    },
+    {
+     "text": "time",
+     "start": 262.281,
+     "end": 262.481
+    },
+    {
+     "text": "today.",
+     "start": 262.481,
+     "end": 262.741
+    }
+   ]
+  },
+  {
+   "id": "c6d",
+   "text": "Be honest. You've checked an app like that in the bathroom at work. We all have.",
+   "start": 263.4247916666667,
+   "end": 266.7997916666667,
+   "words": [
+    {
+     "text": "Be",
+     "start": 263.425,
+     "end": 263.538
+    },
+    {
+     "text": "honest.",
+     "start": 263.551,
+     "end": 263.853
+    },
+    {
+     "text": "You've",
+     "start": 263.887,
+     "end": 264.151
+    },
+    {
+     "text": "checked",
+     "start": 264.181,
+     "end": 264.483
+    },
+    {
+     "text": "an",
+     "start": 264.516,
+     "end": 264.63
+    },
+    {
+     "text": "app",
+     "start": 264.642,
+     "end": 264.793
+    },
+    {
+     "text": "like",
+     "start": 264.81,
+     "end": 264.999
+    },
+    {
+     "text": "that",
+     "start": 265.02,
+     "end": 265.209
+    },
+    {
+     "text": "in",
+     "start": 265.23,
+     "end": 265.343
+    },
+    {
+     "text": "the",
+     "start": 265.356,
+     "end": 265.507
+    },
+    {
+     "text": "bathroom",
+     "start": 265.524,
+     "end": 265.864
+    },
+    {
+     "text": "at",
+     "start": 265.902,
+     "end": 266.015
+    },
+    {
+     "text": "work.",
+     "start": 266.027,
+     "end": 266.254
+    },
+    {
+     "text": "We",
+     "start": 266.279,
+     "end": 266.393
+    },
+    {
+     "text": "all",
+     "start": 266.405,
+     "end": 266.556
+    },
+    {
+     "text": "have.",
+     "start": 266.573,
+     "end": 266.8
+    }
+   ]
+  },
+  {
+   "id": "c7a",
+   "text": "And even when I finally got a date? That costs money too now.",
+   "start": 267.42020833333333,
+   "end": 270.0602083333333,
+   "words": [
+    {
+     "text": "And",
+     "start": 267.42,
+     "end": 267.5
+    },
+    {
+     "text": "even",
+     "start": 267.5,
+     "end": 267.62
+    },
+    {
+     "text": "when",
+     "start": 267.62,
+     "end": 267.78
+    },
+    {
+     "text": "I",
+     "start": 267.78,
+     "end": 267.88
+    },
+    {
+     "text": "finally",
+     "start": 267.88,
+     "end": 268.04
+    },
+    {
+     "text": "got",
+     "start": 268.04,
+     "end": 268.26
+    },
+    {
+     "text": "a",
+     "start": 268.26,
+     "end": 268.36
+    },
+    {
+     "text": "date?",
+     "start": 268.36,
+     "end": 268.54
+    },
+    {
+     "text": "That",
+     "start": 269.02,
+     "end": 269.16
+    },
+    {
+     "text": "costs",
+     "start": 269.16,
+     "end": 269.32
+    },
+    {
+     "text": "money",
+     "start": 269.32,
+     "end": 269.6
+    },
+    {
+     "text": "too",
+     "start": 269.6,
+     "end": 269.82
+    },
+    {
+     "text": "now.",
+     "start": 269.82,
+     "end": 270.06
+    }
+   ]
+  },
+  {
+   "id": "c7b",
+   "text": "Dinner and drinks and the Uber and the haircut I got for the date. One night cost me almost two hundred dollars.",
+   "start": 270.6891458333333,
+   "end": 275.53014583333334,
+   "words": [
+    {
+     "text": "Dinner",
+     "start": 270.689,
+     "end": 270.961
+    },
+    {
+     "text": "and",
+     "start": 270.991,
+     "end": 271.147
+    },
+    {
+     "text": "drinks",
+     "start": 271.164,
+     "end": 271.436
+    },
+    {
+     "text": "and",
+     "start": 271.466,
+     "end": 271.622
+    },
+    {
+     "text": "the",
+     "start": 271.639,
+     "end": 271.795
+    },
+    {
+     "text": "Uber",
+     "start": 271.812,
+     "end": 272.006
+    },
+    {
+     "text": "and",
+     "start": 272.028,
+     "end": 272.183
+    },
+    {
+     "text": "the",
+     "start": 272.201,
+     "end": 272.356
+    },
+    {
+     "text": "haircut",
+     "start": 272.373,
+     "end": 272.684
+    },
+    {
+     "text": "I",
+     "start": 272.719,
+     "end": 272.796
+    },
+    {
+     "text": "got",
+     "start": 272.805,
+     "end": 272.961
+    },
+    {
+     "text": "for",
+     "start": 272.978,
+     "end": 273.133
+    },
+    {
+     "text": "the",
+     "start": 273.151,
+     "end": 273.306
+    },
+    {
+     "text": "date.",
+     "start": 273.323,
+     "end": 273.557
+    },
+    {
+     "text": "One",
+     "start": 273.582,
+     "end": 273.738
+    },
+    {
+     "text": "night",
+     "start": 273.755,
+     "end": 273.988
+    },
+    {
+     "text": "cost",
+     "start": 274.014,
+     "end": 274.209
+    },
+    {
+     "text": "me",
+     "start": 274.23,
+     "end": 274.347
+    },
+    {
+     "text": "almost",
+     "start": 274.36,
+     "end": 274.632
+    },
+    {
+     "text": "two",
+     "start": 274.662,
+     "end": 274.818
+    },
+    {
+     "text": "hundred",
+     "start": 274.835,
+     "end": 275.146
+    },
+    {
+     "text": "dollars.",
+     "start": 275.18,
+     "end": 275.53
+    }
+   ]
+  },
+  {
+   "id": "n16",
+   "text": "The haircut alone was forty dollars. For a guy who looks exactly the same after.",
+   "start": 276.6999375,
+   "end": 280.1899375,
+   "words": [
+    {
+     "text": "The",
+     "start": 276.7,
+     "end": 276.856
+    },
+    {
+     "text": "haircut",
+     "start": 276.874,
+     "end": 277.187
+    },
+    {
+     "text": "alone",
+     "start": 277.221,
+     "end": 277.456
+    },
+    {
+     "text": "was",
+     "start": 277.482,
+     "end": 277.639
+    },
+    {
+     "text": "forty",
+     "start": 277.656,
+     "end": 277.891
+    },
+    {
+     "text": "dollars.",
+     "start": 277.917,
+     "end": 278.269
+    },
+    {
+     "text": "For",
+     "start": 278.308,
+     "end": 278.464
+    },
+    {
+     "text": "a",
+     "start": 278.482,
+     "end": 278.56
+    },
+    {
+     "text": "guy",
+     "start": 278.569,
+     "end": 278.725
+    },
+    {
+     "text": "who",
+     "start": 278.742,
+     "end": 278.899
+    },
+    {
+     "text": "looks",
+     "start": 278.916,
+     "end": 279.151
+    },
+    {
+     "text": "exactly",
+     "start": 279.177,
+     "end": 279.49
+    },
+    {
+     "text": "the",
+     "start": 279.525,
+     "end": 279.681
+    },
+    {
+     "text": "same",
+     "start": 279.699,
+     "end": 279.894
+    },
+    {
+     "text": "after.",
+     "start": 279.916,
+     "end": 280.19
+    }
+   ]
+  },
+  {
+   "id": "c7c",
+   "text": "And she ordered the lobster. On a first date. I respect it but my bank account doesn't.",
+   "start": 280.893,
+   "end": 284.85299999999995,
+   "words": [
+    {
+     "text": "And",
+     "start": 280.893,
+     "end": 281.213
+    },
+    {
+     "text": "she",
+     "start": 281.213,
+     "end": 281.353
+    },
+    {
+     "text": "ordered",
+     "start": 281.353,
+     "end": 281.613
+    },
+    {
+     "text": "the",
+     "start": 281.613,
+     "end": 281.773
+    },
+    {
+     "text": "lobster.",
+     "start": 281.773,
+     "end": 281.913
+    },
+    {
+     "text": "On",
+     "start": 282.533,
+     "end": 282.593
+    },
+    {
+     "text": "a",
+     "start": 282.593,
+     "end": 282.653
+    },
+    {
+     "text": "first",
+     "start": 282.653,
+     "end": 282.773
+    },
+    {
+     "text": "date.",
+     "start": 282.773,
+     "end": 283.053
+    },
+    {
+     "text": "I",
+     "start": 283.453,
+     "end": 283.533
+    },
+    {
+     "text": "respect",
+     "start": 283.533,
+     "end": 283.733
+    },
+    {
+     "text": "it",
+     "start": 283.733,
+     "end": 283.933
+    },
+    {
+     "text": "but",
+     "start": 283.933,
+     "end": 284.033
+    },
+    {
+     "text": "my",
+     "start": 284.033,
+     "end": 284.133
+    },
+    {
+     "text": "bank",
+     "start": 284.133,
+     "end": 284.233
+    },
+    {
+     "text": "account",
+     "start": 284.233,
+     "end": 284.433
+    },
+    {
+     "text": "doesn't.",
+     "start": 284.433,
+     "end": 284.853
+    }
+   ]
+  },
+  {
+   "id": "n10",
+   "text": "My bank account after one date.",
+   "start": 285.3405625,
+   "end": 286.74056249999995,
+   "words": [
+    {
+     "text": "My",
+     "start": 285.341,
+     "end": 285.461
+    },
+    {
+     "text": "bank",
+     "start": 285.461,
+     "end": 285.601
+    },
+    {
+     "text": "account",
+     "start": 285.601,
+     "end": 285.921
+    },
+    {
+     "text": "after",
+     "start": 285.921,
+     "end": 286.221
+    },
+    {
+     "text": "one",
+     "start": 286.221,
+     "end": 286.501
+    },
+    {
+     "text": "date.",
+     "start": 286.501,
+     "end": 286.741
+    }
+   ]
+  },
+  {
+   "id": "n17",
+   "text": "Meanwhile my dad took my mom to a diner for two burgers and a milkshake. They've been married thirty years.",
+   "start": 287.3930625,
+   "end": 291.9330625,
+   "words": [
+    {
+     "text": "Meanwhile",
+     "start": 287.393,
+     "end": 287.693
+    },
+    {
+     "text": "my",
+     "start": 287.953,
+     "end": 288.033
+    },
+    {
+     "text": "dad",
+     "start": 288.033,
+     "end": 288.173
+    },
+    {
+     "text": "took",
+     "start": 288.173,
+     "end": 288.373
+    },
+    {
+     "text": "my",
+     "start": 288.373,
+     "end": 288.533
+    },
+    {
+     "text": "mom",
+     "start": 288.533,
+     "end": 288.693
+    },
+    {
+     "text": "to",
+     "start": 288.693,
+     "end": 288.873
+    },
+    {
+     "text": "a",
+     "start": 288.873,
+     "end": 288.953
+    },
+    {
+     "text": "diner",
+     "start": 288.953,
+     "end": 289.153
+    },
+    {
+     "text": "for",
+     "start": 289.153,
+     "end": 289.373
+    },
+    {
+     "text": "two",
+     "start": 289.373,
+     "end": 289.533
+    },
+    {
+     "text": "burgers",
+     "start": 289.533,
+     "end": 289.753
+    },
+    {
+     "text": "and",
+     "start": 289.753,
+     "end": 290.093
+    },
+    {
+     "text": "a",
+     "start": 290.093,
+     "end": 290.173
+    },
+    {
+     "text": "milkshake.",
+     "start": 290.173,
+     "end": 290.573
+    },
+    {
+     "text": "They've",
+     "start": 290.913,
+     "end": 291.033
+    },
+    {
+     "text": "been",
+     "start": 291.033,
+     "end": 291.153
+    },
+    {
+     "text": "married",
+     "start": 291.153,
+     "end": 291.333
+    },
+    {
+     "text": "thirty",
+     "start": 291.333,
+     "end": 291.653
+    },
+    {
+     "text": "years.",
+     "start": 291.653,
+     "end": 291.933
+    }
+   ]
+  },
+  {
+   "id": "n38",
+   "text": "Thirty years. On a milkshake. And I spent two hundred dollars to get ghosted by text.",
+   "start": 292.6669375,
+   "end": 296.71893750000004,
+   "words": [
+    {
+     "text": "Thirty",
+     "start": 292.667,
+     "end": 292.966
+    },
+    {
+     "text": "years.",
+     "start": 292.999,
+     "end": 293.298
+    },
+    {
+     "text": "On",
+     "start": 293.331,
+     "end": 293.459
+    },
+    {
+     "text": "a",
+     "start": 293.474,
+     "end": 293.559
+    },
+    {
+     "text": "milkshake.",
+     "start": 293.568,
+     "end": 294.038
+    },
+    {
+     "text": "And",
+     "start": 294.09,
+     "end": 294.261
+    },
+    {
+     "text": "I",
+     "start": 294.28,
+     "end": 294.365
+    },
+    {
+     "text": "spent",
+     "start": 294.375,
+     "end": 294.631
+    },
+    {
+     "text": "two",
+     "start": 294.66,
+     "end": 294.83
+    },
+    {
+     "text": "hundred",
+     "start": 294.849,
+     "end": 295.191
+    },
+    {
+     "text": "dollars",
+     "start": 295.229,
+     "end": 295.57
+    },
+    {
+     "text": "to",
+     "start": 295.608,
+     "end": 295.736
+    },
+    {
+     "text": "get",
+     "start": 295.751,
+     "end": 295.922
+    },
+    {
+     "text": "ghosted",
+     "start": 295.94,
+     "end": 296.282
+    },
+    {
+     "text": "by",
+     "start": 296.32,
+     "end": 296.448
+    },
+    {
+     "text": "text.",
+     "start": 296.462,
+     "end": 296.719
+    }
+   ]
+  },
+  {
+   "id": "c7e",
+   "text": "No wonder so many people my age say dating just doesn't feel worth the money anymore. A lot of us just stopped spending.",
+   "start": 297.4859375,
+   "end": 302.7059375,
+   "words": [
+    {
+     "text": "No",
+     "start": 297.486,
+     "end": 297.606
+    },
+    {
+     "text": "wonder",
+     "start": 297.606,
+     "end": 297.866
+    },
+    {
+     "text": "so",
+     "start": 297.866,
+     "end": 298.146
+    },
+    {
+     "text": "many",
+     "start": 298.146,
+     "end": 298.306
+    },
+    {
+     "text": "people",
+     "start": 298.306,
+     "end": 298.566
+    },
+    {
+     "text": "my",
+     "start": 298.566,
+     "end": 298.746
+    },
+    {
+     "text": "age",
+     "start": 298.746,
+     "end": 299.026
+    },
+    {
+     "text": "say",
+     "start": 299.026,
+     "end": 299.226
+    },
+    {
+     "text": "dating",
+     "start": 299.226,
+     "end": 299.486
+    },
+    {
+     "text": "just",
+     "start": 299.486,
+     "end": 299.706
+    },
+    {
+     "text": "doesn't",
+     "start": 299.706,
+     "end": 299.966
+    },
+    {
+     "text": "feel",
+     "start": 299.966,
+     "end": 300.086
+    },
+    {
+     "text": "worth",
+     "start": 300.086,
+     "end": 300.246
+    },
+    {
+     "text": "the",
+     "start": 300.246,
+     "end": 300.406
+    },
+    {
+     "text": "money",
+     "start": 300.406,
+     "end": 300.566
+    },
+    {
+     "text": "anymore.",
+     "start": 300.566,
+     "end": 300.986
+    },
+    {
+     "text": "A",
+     "start": 301.466,
+     "end": 301.566
+    },
+    {
+     "text": "lot",
+     "start": 301.566,
+     "end": 301.706
+    },
+    {
+     "text": "of",
+     "start": 301.706,
+     "end": 301.826
+    },
+    {
+     "text": "us",
+     "start": 301.826,
+     "end": 301.946
+    },
+    {
+     "text": "just",
+     "start": 301.946,
+     "end": 302.086
+    },
+    {
+     "text": "stopped",
+     "start": 302.086,
+     "end": 302.306
+    },
+    {
+     "text": "spending.",
+     "start": 302.306,
+     "end": 302.706
+    }
+   ]
+  },
+  {
+   "id": "n39",
+   "text": "And it's not because we don't want love. It's because rent already eats our paycheck and love wants a bite too.",
+   "start": 303.39964583333335,
+   "end": 308.13964583333336,
+   "words": [
+    {
+     "text": "And",
+     "start": 303.4,
+     "end": 303.5
+    },
+    {
+     "text": "it's",
+     "start": 303.5,
+     "end": 303.64
+    },
+    {
+     "text": "not",
+     "start": 303.64,
+     "end": 303.74
+    },
+    {
+     "text": "because",
+     "start": 303.74,
+     "end": 304.04
+    },
+    {
+     "text": "we",
+     "start": 304.04,
+     "end": 304.24
+    },
+    {
+     "text": "don't",
+     "start": 304.24,
+     "end": 304.44
+    },
+    {
+     "text": "want",
+     "start": 304.44,
+     "end": 304.56
+    },
+    {
+     "text": "love.",
+     "start": 304.56,
+     "end": 304.84
+    },
+    {
+     "text": "It's",
+     "start": 305.18,
+     "end": 305.32
+    },
+    {
+     "text": "because",
+     "start": 305.32,
+     "end": 305.52
+    },
+    {
+     "text": "rent",
+     "start": 305.52,
+     "end": 305.74
+    },
+    {
+     "text": "already",
+     "start": 305.74,
+     "end": 306.02
+    },
+    {
+     "text": "eats",
+     "start": 306.02,
+     "end": 306.36
+    },
+    {
+     "text": "our",
+     "start": 306.36,
+     "end": 306.54
+    },
+    {
+     "text": "paycheck",
+     "start": 306.54,
+     "end": 306.76
+    },
+    {
+     "text": "and",
+     "start": 306.76,
+     "end": 307.18
+    },
+    {
+     "text": "love",
+     "start": 307.18,
+     "end": 307.36
+    },
+    {
+     "text": "wants",
+     "start": 307.36,
+     "end": 307.58
+    },
+    {
+     "text": "a",
+     "start": 307.58,
+     "end": 307.74
+    },
+    {
+     "text": "bite",
+     "start": 307.74,
+     "end": 307.86
+    },
+    {
+     "text": "too.",
+     "start": 307.86,
+     "end": 308.14
+    }
+   ]
+  },
+  {
+   "id": "c8c",
+   "text": "And you know what? Some of them are winning. About half of Gen Z says they spend zero dollars a month on dating.",
+   "start": 308.8840625,
+   "end": 313.9280625,
+   "words": [
+    {
+     "text": "And",
+     "start": 308.884,
+     "end": 309.046
+    },
+    {
+     "text": "you",
+     "start": 309.064,
+     "end": 309.226
+    },
+    {
+     "text": "know",
+     "start": 309.244,
+     "end": 309.446
+    },
+    {
+     "text": "what?",
+     "start": 309.468,
+     "end": 309.711
+    },
+    {
+     "text": "Some",
+     "start": 309.738,
+     "end": 309.94
+    },
+    {
+     "text": "of",
+     "start": 309.963,
+     "end": 310.084
+    },
+    {
+     "text": "them",
+     "start": 310.098,
+     "end": 310.3
+    },
+    {
+     "text": "are",
+     "start": 310.323,
+     "end": 310.484
+    },
+    {
+     "text": "winning.",
+     "start": 310.502,
+     "end": 310.867
+    },
+    {
+     "text": "About",
+     "start": 310.907,
+     "end": 311.15
+    },
+    {
+     "text": "half",
+     "start": 311.177,
+     "end": 311.379
+    },
+    {
+     "text": "of",
+     "start": 311.402,
+     "end": 311.523
+    },
+    {
+     "text": "Gen",
+     "start": 311.536,
+     "end": 311.698
+    },
+    {
+     "text": "Z",
+     "start": 311.716,
+     "end": 311.797
+    },
+    {
+     "text": "says",
+     "start": 311.806,
+     "end": 312.008
+    },
+    {
+     "text": "they",
+     "start": 312.031,
+     "end": 312.233
+    },
+    {
+     "text": "spend",
+     "start": 312.256,
+     "end": 312.498
+    },
+    {
+     "text": "zero",
+     "start": 312.525,
+     "end": 312.728
+    },
+    {
+     "text": "dollars",
+     "start": 312.75,
+     "end": 313.074
+    },
+    {
+     "text": "a",
+     "start": 313.11,
+     "end": 313.191
+    },
+    {
+     "text": "month",
+     "start": 313.2,
+     "end": 313.443
+    },
+    {
+     "text": "on",
+     "start": 313.469,
+     "end": 313.591
+    },
+    {
+     "text": "dating.",
+     "start": 313.604,
+     "end": 313.928
+    }
+   ]
+  },
+  {
+   "id": "n18",
+   "text": "They watch a movie at home. They cook pasta. And somehow they still fall in love.",
+   "start": 314.66852083333333,
+   "end": 318.82852083333336,
+   "words": [
+    {
+     "text": "They",
+     "start": 314.669,
+     "end": 314.749
+    },
+    {
+     "text": "watch",
+     "start": 314.749,
+     "end": 314.889
+    },
+    {
+     "text": "a",
+     "start": 314.889,
+     "end": 315.049
+    },
+    {
+     "text": "movie",
+     "start": 315.049,
+     "end": 315.189
+    },
+    {
+     "text": "at",
+     "start": 315.189,
+     "end": 315.409
+    },
+    {
+     "text": "home.",
+     "start": 315.409,
+     "end": 315.609
+    },
+    {
+     "text": "They",
+     "start": 315.989,
+     "end": 316.069
+    },
+    {
+     "text": "cook",
+     "start": 316.069,
+     "end": 316.189
+    },
+    {
+     "text": "pasta.",
+     "start": 316.189,
+     "end": 316.469
+    },
+    {
+     "text": "And",
+     "start": 316.949,
+     "end": 317.189
+    },
+    {
+     "text": "somehow",
+     "start": 317.189,
+     "end": 317.589
+    },
+    {
+     "text": "they",
+     "start": 317.589,
+     "end": 317.889
+    },
+    {
+     "text": "still",
+     "start": 317.889,
+     "end": 318.149
+    },
+    {
+     "text": "fall",
+     "start": 318.149,
+     "end": 318.429
+    },
+    {
+     "text": "in",
+     "start": 318.429,
+     "end": 318.629
+    },
+    {
+     "text": "love.",
+     "start": 318.629,
+     "end": 318.829
+    }
+   ]
+  },
+  {
+   "id": "c10a",
+   "text": "So here's how I date now. Quick reminder this is education and not relationship advice.",
+   "start": 321.602125,
+   "end": 325.562125,
+   "words": [
+    {
+     "text": "So",
+     "start": 321.602,
+     "end": 321.682
+    },
+    {
+     "text": "here's",
+     "start": 321.682,
+     "end": 321.942
+    },
+    {
+     "text": "how",
+     "start": 321.942,
+     "end": 322.042
+    },
+    {
+     "text": "I",
+     "start": 322.042,
+     "end": 322.162
+    },
+    {
+     "text": "date",
+     "start": 322.162,
+     "end": 322.302
+    },
+    {
+     "text": "now.",
+     "start": 322.302,
+     "end": 322.522
+    },
+    {
+     "text": "Quick",
+     "start": 323.222,
+     "end": 323.222
+    },
+    {
+     "text": "reminder",
+     "start": 323.222,
+     "end": 323.442
+    },
+    {
+     "text": "this",
+     "start": 323.442,
+     "end": 323.782
+    },
+    {
+     "text": "is",
+     "start": 323.782,
+     "end": 323.862
+    },
+    {
+     "text": "education",
+     "start": 323.862,
+     "end": 324.182
+    },
+    {
+     "text": "and",
+     "start": 324.182,
+     "end": 324.642
+    },
+    {
+     "text": "not",
+     "start": 324.642,
+     "end": 324.802
+    },
+    {
+     "text": "relationship",
+     "start": 324.802,
+     "end": 325.162
+    },
+    {
+     "text": "advice.",
+     "start": 325.162,
+     "end": 325.562
+    }
+   ]
+  },
+  {
+   "id": "c10b",
+   "text": "First I use the free version. Most of my real matches happened without paying a single cent.",
+   "start": 326.3310833333333,
+   "end": 330.3510833333333,
+   "words": [
+    {
+     "text": "First",
+     "start": 326.331,
+     "end": 326.511
+    },
+    {
+     "text": "I",
+     "start": 326.511,
+     "end": 326.711
+    },
+    {
+     "text": "use",
+     "start": 326.711,
+     "end": 326.831
+    },
+    {
+     "text": "the",
+     "start": 326.831,
+     "end": 326.991
+    },
+    {
+     "text": "free",
+     "start": 326.991,
+     "end": 327.091
+    },
+    {
+     "text": "version.",
+     "start": 327.091,
+     "end": 327.411
+    },
+    {
+     "text": "Most",
+     "start": 328.091,
+     "end": 328.091
+    },
+    {
+     "text": "of",
+     "start": 328.091,
+     "end": 328.251
+    },
+    {
+     "text": "my",
+     "start": 328.251,
+     "end": 328.371
+    },
+    {
+     "text": "real",
+     "start": 328.371,
+     "end": 328.511
+    },
+    {
+     "text": "matches",
+     "start": 328.511,
+     "end": 328.851
+    },
+    {
+     "text": "happened",
+     "start": 328.851,
+     "end": 329.191
+    },
+    {
+     "text": "without",
+     "start": 329.191,
+     "end": 329.411
+    },
+    {
+     "text": "paying",
+     "start": 329.411,
+     "end": 329.751
+    },
+    {
+     "text": "a",
+     "start": 329.751,
+     "end": 329.891
+    },
+    {
+     "text": "single",
+     "start": 329.891,
+     "end": 330.011
+    },
+    {
+     "text": "cent.",
+     "start": 330.011,
+     "end": 330.351
+    }
+   ]
+  },
+  {
+   "id": "n19",
+   "text": "The paid stuff mostly makes you feel like you're doing something. Like buying running shoes instead of running.",
+   "start": 331.01770833333336,
+   "end": 334.9977083333334,
+   "words": [
+    {
+     "text": "The",
+     "start": 331.018,
+     "end": 331.098
+    },
+    {
+     "text": "paid",
+     "start": 331.098,
+     "end": 331.218
+    },
+    {
+     "text": "stuff",
+     "start": 331.218,
+     "end": 331.518
+    },
+    {
+     "text": "mostly",
+     "start": 331.518,
+     "end": 331.758
+    },
+    {
+     "text": "makes",
+     "start": 331.758,
+     "end": 332.098
+    },
+    {
+     "text": "you",
+     "start": 332.098,
+     "end": 332.218
+    },
+    {
+     "text": "feel",
+     "start": 332.218,
+     "end": 332.358
+    },
+    {
+     "text": "like",
+     "start": 332.358,
+     "end": 332.538
+    },
+    {
+     "text": "you're",
+     "start": 332.538,
+     "end": 332.638
+    },
+    {
+     "text": "doing",
+     "start": 332.638,
+     "end": 332.798
+    },
+    {
+     "text": "something.",
+     "start": 332.798,
+     "end": 333.038
+    },
+    {
+     "text": "Like",
+     "start": 333.638,
+     "end": 333.738
+    },
+    {
+     "text": "buying",
+     "start": 333.738,
+     "end": 333.998
+    },
+    {
+     "text": "running",
+     "start": 333.998,
+     "end": 334.198
+    },
+    {
+     "text": "shoes",
+     "start": 334.198,
+     "end": 334.398
+    },
+    {
+     "text": "instead",
+     "start": 334.398,
+     "end": 334.718
+    },
+    {
+     "text": "of",
+     "start": 334.718,
+     "end": 334.818
+    },
+    {
+     "text": "running.",
+     "start": 334.818,
+     "end": 334.998
+    }
+   ]
+  },
+  {
+   "id": "n40",
+   "text": "I did the free version for a month and got more dates than when I was paying. Because I stopped swiping on everyone and actually read the profiles.",
+   "start": 335.6887708333333,
+   "end": 342.0287708333333,
+   "words": [
+    {
+     "text": "I",
+     "start": 335.689,
+     "end": 335.769
+    },
+    {
+     "text": "did",
+     "start": 335.769,
+     "end": 335.889
+    },
+    {
+     "text": "the",
+     "start": 335.889,
+     "end": 336.009
+    },
+    {
+     "text": "free",
+     "start": 336.009,
+     "end": 336.149
+    },
+    {
+     "text": "version",
+     "start": 336.149,
+     "end": 336.449
+    },
+    {
+     "text": "for",
+     "start": 336.449,
+     "end": 336.689
+    },
+    {
+     "text": "a",
+     "start": 336.689,
+     "end": 336.749
+    },
+    {
+     "text": "month",
+     "start": 336.749,
+     "end": 336.969
+    },
+    {
+     "text": "and",
+     "start": 336.969,
+     "end": 337.249
+    },
+    {
+     "text": "got",
+     "start": 337.249,
+     "end": 337.389
+    },
+    {
+     "text": "more",
+     "start": 337.389,
+     "end": 337.569
+    },
+    {
+     "text": "dates",
+     "start": 337.569,
+     "end": 337.829
+    },
+    {
+     "text": "than",
+     "start": 337.829,
+     "end": 338.089
+    },
+    {
+     "text": "when",
+     "start": 338.089,
+     "end": 338.189
+    },
+    {
+     "text": "I",
+     "start": 338.189,
+     "end": 338.309
+    },
+    {
+     "text": "was",
+     "start": 338.309,
+     "end": 338.389
+    },
+    {
+     "text": "paying.",
+     "start": 338.389,
+     "end": 338.689
+    },
+    {
+     "text": "Because",
+     "start": 339.269,
+     "end": 339.469
+    },
+    {
+     "text": "I",
+     "start": 339.469,
+     "end": 339.609
+    },
+    {
+     "text": "stopped",
+     "start": 339.609,
+     "end": 339.789
+    },
+    {
+     "text": "swiping",
+     "start": 339.789,
+     "end": 340.189
+    },
+    {
+     "text": "on",
+     "start": 340.189,
+     "end": 340.349
+    },
+    {
+     "text": "everyone",
+     "start": 340.349,
+     "end": 340.629
+    },
+    {
+     "text": "and",
+     "start": 340.629,
+     "end": 341.009
+    },
+    {
+     "text": "actually",
+     "start": 341.009,
+     "end": 341.269
+    },
+    {
+     "text": "read",
+     "start": 341.269,
+     "end": 341.589
+    },
+    {
+     "text": "the",
+     "start": 341.589,
+     "end": 341.749
+    },
+    {
+     "text": "profiles.",
+     "start": 341.749,
+     "end": 342.029
+    }
+   ]
+  },
+  {
+   "id": "c10d",
+   "text": "Second I move off the app fast. The app's job is done the second we swap numbers. So I swap numbers.",
+   "start": 342.95589583333333,
+   "end": 348.7358958333333,
+   "words": [
+    {
+     "text": "Second",
+     "start": 342.956,
+     "end": 343.236
+    },
+    {
+     "text": "I",
+     "start": 343.476,
+     "end": 343.536
+    },
+    {
+     "text": "move",
+     "start": 343.536,
+     "end": 343.696
+    },
+    {
+     "text": "off",
+     "start": 343.696,
+     "end": 343.896
+    },
+    {
+     "text": "the",
+     "start": 343.896,
+     "end": 344.016
+    },
+    {
+     "text": "app",
+     "start": 344.016,
+     "end": 344.136
+    },
+    {
+     "text": "fast.",
+     "start": 344.136,
+     "end": 344.456
+    },
+    {
+     "text": "The",
+     "start": 345.156,
+     "end": 345.236
+    },
+    {
+     "text": "app's",
+     "start": 345.236,
+     "end": 345.496
+    },
+    {
+     "text": "job",
+     "start": 345.496,
+     "end": 345.656
+    },
+    {
+     "text": "is",
+     "start": 345.656,
+     "end": 345.796
+    },
+    {
+     "text": "done",
+     "start": 345.796,
+     "end": 345.976
+    },
+    {
+     "text": "the",
+     "start": 345.976,
+     "end": 346.136
+    },
+    {
+     "text": "second",
+     "start": 346.136,
+     "end": 346.396
+    },
+    {
+     "text": "we",
+     "start": 346.396,
+     "end": 346.556
+    },
+    {
+     "text": "swap",
+     "start": 346.556,
+     "end": 346.696
+    },
+    {
+     "text": "numbers.",
+     "start": 346.696,
+     "end": 347.016
+    },
+    {
+     "text": "So",
+     "start": 347.736,
+     "end": 347.836
+    },
+    {
+     "text": "I",
+     "start": 347.836,
+     "end": 348.196
+    },
+    {
+     "text": "swap",
+     "start": 348.196,
+     "end": 348.376
+    },
+    {
+     "text": "numbers.",
+     "start": 348.376,
+     "end": 348.736
+    }
+   ]
+  },
+  {
+   "id": "n20",
+   "text": "Phone call first. Ten minutes. If it's weird on the phone it's going to be weird at a two hundred dollar dinner.",
+   "start": 349.58079166666664,
+   "end": 353.92979166666663,
+   "words": [
+    {
+     "text": "Phone",
+     "start": 349.581,
+     "end": 349.79
+    },
+    {
+     "text": "call",
+     "start": 349.814,
+     "end": 349.988
+    },
+    {
+     "text": "first.",
+     "start": 350.007,
+     "end": 350.252
+    },
+    {
+     "text": "Ten",
+     "start": 350.279,
+     "end": 350.418
+    },
+    {
+     "text": "minutes.",
+     "start": 350.434,
+     "end": 350.748
+    },
+    {
+     "text": "If",
+     "start": 350.783,
+     "end": 350.887
+    },
+    {
+     "text": "it's",
+     "start": 350.899,
+     "end": 351.073
+    },
+    {
+     "text": "weird",
+     "start": 351.093,
+     "end": 351.302
+    },
+    {
+     "text": "on",
+     "start": 351.325,
+     "end": 351.43
+    },
+    {
+     "text": "the",
+     "start": 351.442,
+     "end": 351.581
+    },
+    {
+     "text": "phone",
+     "start": 351.597,
+     "end": 351.806
+    },
+    {
+     "text": "it's",
+     "start": 351.829,
+     "end": 352.004
+    },
+    {
+     "text": "going",
+     "start": 352.023,
+     "end": 352.232
+    },
+    {
+     "text": "to",
+     "start": 352.256,
+     "end": 352.36
+    },
+    {
+     "text": "be",
+     "start": 352.372,
+     "end": 352.476
+    },
+    {
+     "text": "weird",
+     "start": 352.488,
+     "end": 352.697
+    },
+    {
+     "text": "at",
+     "start": 352.721,
+     "end": 352.825
+    },
+    {
+     "text": "a",
+     "start": 352.837,
+     "end": 352.907
+    },
+    {
+     "text": "two",
+     "start": 352.914,
+     "end": 353.054
+    },
+    {
+     "text": "hundred",
+     "start": 353.069,
+     "end": 353.349
+    },
+    {
+     "text": "dollar",
+     "start": 353.38,
+     "end": 353.624
+    },
+    {
+     "text": "dinner.",
+     "start": 353.651,
+     "end": 353.93
+    }
+   ]
+  },
+  {
+   "id": "n25",
+   "text": "Dating apps when two people swap numbers.",
+   "start": 354.63085416666667,
+   "end": 356.27085416666665,
+   "words": [
+    {
+     "text": "Dating",
+     "start": 354.631,
+     "end": 354.811
+    },
+    {
+     "text": "apps",
+     "start": 354.811,
+     "end": 355.051
+    },
+    {
+     "text": "when",
+     "start": 355.051,
+     "end": 355.311
+    },
+    {
+     "text": "two",
+     "start": 355.311,
+     "end": 355.471
+    },
+    {
+     "text": "people",
+     "start": 355.471,
+     "end": 355.691
+    },
+    {
+     "text": "swap",
+     "start": 355.691,
+     "end": 355.931
+    },
+    {
+     "text": "numbers.",
+     "start": 355.931,
+     "end": 356.271
+    }
+   ]
+  },
+  {
+   "id": "c10e",
+   "text": "Third if a whole month goes by with zero real conversations I cancel. I don't upgrade. I cancel.",
+   "start": 357.0120416666667,
+   "end": 361.2520416666667,
+   "words": [
+    {
+     "text": "Third",
+     "start": 357.012,
+     "end": 357.152
+    },
+    {
+     "text": "if",
+     "start": 357.352,
+     "end": 357.432
+    },
+    {
+     "text": "a",
+     "start": 357.432,
+     "end": 357.472
+    },
+    {
+     "text": "whole",
+     "start": 357.472,
+     "end": 357.592
+    },
+    {
+     "text": "month",
+     "start": 357.592,
+     "end": 357.772
+    },
+    {
+     "text": "goes",
+     "start": 357.772,
+     "end": 357.952
+    },
+    {
+     "text": "by",
+     "start": 357.952,
+     "end": 358.152
+    },
+    {
+     "text": "with",
+     "start": 358.152,
+     "end": 358.352
+    },
+    {
+     "text": "zero",
+     "start": 358.352,
+     "end": 358.532
+    },
+    {
+     "text": "real",
+     "start": 358.532,
+     "end": 358.772
+    },
+    {
+     "text": "conversations",
+     "start": 358.772,
+     "end": 359.132
+    },
+    {
+     "text": "I",
+     "start": 359.132,
+     "end": 359.532
+    },
+    {
+     "text": "cancel.",
+     "start": 359.532,
+     "end": 359.752
+    },
+    {
+     "text": "I",
+     "start": 360.132,
+     "end": 360.212
+    },
+    {
+     "text": "don't",
+     "start": 360.212,
+     "end": 360.392
+    },
+    {
+     "text": "upgrade.",
+     "start": 360.392,
+     "end": 360.612
+    },
+    {
+     "text": "I",
+     "start": 360.992,
+     "end": 361.032
+    },
+    {
+     "text": "cancel.",
+     "start": 361.032,
+     "end": 361.252
+    }
+   ]
+  },
+  {
+   "id": "n41",
+   "text": "Set the rule before you start. One month. If nothing real happens the money stays in my pocket.",
+   "start": 362.05027083333334,
+   "end": 366.23027083333335,
+   "words": [
+    {
+     "text": "Set",
+     "start": 362.05,
+     "end": 362.19
+    },
+    {
+     "text": "the",
+     "start": 362.19,
+     "end": 362.33
+    },
+    {
+     "text": "rule",
+     "start": 362.33,
+     "end": 362.45
+    },
+    {
+     "text": "before",
+     "start": 362.45,
+     "end": 362.67
+    },
+    {
+     "text": "you",
+     "start": 362.67,
+     "end": 362.85
+    },
+    {
+     "text": "start.",
+     "start": 362.85,
+     "end": 363.03
+    },
+    {
+     "text": "One",
+     "start": 363.51,
+     "end": 363.51
+    },
+    {
+     "text": "month.",
+     "start": 363.51,
+     "end": 363.71
+    },
+    {
+     "text": "If",
+     "start": 364.23,
+     "end": 364.33
+    },
+    {
+     "text": "nothing",
+     "start": 364.33,
+     "end": 364.47
+    },
+    {
+     "text": "real",
+     "start": 364.47,
+     "end": 364.73
+    },
+    {
+     "text": "happens",
+     "start": 364.73,
+     "end": 365.05
+    },
+    {
+     "text": "the",
+     "start": 365.23,
+     "end": 365.25
+    },
+    {
+     "text": "money",
+     "start": 365.25,
+     "end": 365.37
+    },
+    {
+     "text": "stays",
+     "start": 365.37,
+     "end": 365.63
+    },
+    {
+     "text": "in",
+     "start": 365.63,
+     "end": 365.81
+    },
+    {
+     "text": "my",
+     "start": 365.81,
+     "end": 365.89
+    },
+    {
+     "text": "pocket.",
+     "start": 365.89,
+     "end": 366.23
+    }
+   ]
+  },
+  {
+   "id": "c10f",
+   "text": "And fourth cheap dates work. A coffee or a walk tells you more about a person than a lobster ever will.",
+   "start": 366.7789375,
+   "end": 371.8989375,
+   "words": [
+    {
+     "text": "And",
+     "start": 366.779,
+     "end": 367.119
+    },
+    {
+     "text": "fourth",
+     "start": 367.119,
+     "end": 367.599
+    },
+    {
+     "text": "cheap",
+     "start": 367.599,
+     "end": 367.779
+    },
+    {
+     "text": "dates",
+     "start": 367.779,
+     "end": 367.999
+    },
+    {
+     "text": "work.",
+     "start": 367.999,
+     "end": 368.299
+    },
+    {
+     "text": "A",
+     "start": 368.719,
+     "end": 368.759
+    },
+    {
+     "text": "coffee",
+     "start": 368.759,
+     "end": 368.979
+    },
+    {
+     "text": "or",
+     "start": 368.979,
+     "end": 369.299
+    },
+    {
+     "text": "a",
+     "start": 369.299,
+     "end": 369.359
+    },
+    {
+     "text": "walk",
+     "start": 369.359,
+     "end": 369.599
+    },
+    {
+     "text": "tells",
+     "start": 369.599,
+     "end": 369.859
+    },
+    {
+     "text": "you",
+     "start": 369.859,
+     "end": 370.039
+    },
+    {
+     "text": "more",
+     "start": 370.039,
+     "end": 370.199
+    },
+    {
+     "text": "about",
+     "start": 370.199,
+     "end": 370.419
+    },
+    {
+     "text": "a",
+     "start": 370.419,
+     "end": 370.519
+    },
+    {
+     "text": "person",
+     "start": 370.519,
+     "end": 370.799
+    },
+    {
+     "text": "than",
+     "start": 370.799,
+     "end": 371.039
+    },
+    {
+     "text": "a",
+     "start": 371.039,
+     "end": 371.099
+    },
+    {
+     "text": "lobster",
+     "start": 371.099,
+     "end": 371.339
+    },
+    {
+     "text": "ever",
+     "start": 371.339,
+     "end": 371.679
+    },
+    {
+     "text": "will.",
+     "start": 371.679,
+     "end": 371.899
+    }
+   ]
+  },
+  {
+   "id": "n11",
+   "text": "Me asking her on a walk instead of a fancy dinner.",
+   "start": 372.48772916666667,
+   "end": 374.62772916666665,
+   "words": [
+    {
+     "text": "Me",
+     "start": 372.488,
+     "end": 372.608
+    },
+    {
+     "text": "asking",
+     "start": 372.608,
+     "end": 372.888
+    },
+    {
+     "text": "her",
+     "start": 372.888,
+     "end": 373.088
+    },
+    {
+     "text": "on",
+     "start": 373.088,
+     "end": 373.208
+    },
+    {
+     "text": "a",
+     "start": 373.208,
+     "end": 373.268
+    },
+    {
+     "text": "walk",
+     "start": 373.268,
+     "end": 373.488
+    },
+    {
+     "text": "instead",
+     "start": 373.488,
+     "end": 373.828
+    },
+    {
+     "text": "of",
+     "start": 373.828,
+     "end": 374.028
+    },
+    {
+     "text": "a",
+     "start": 374.028,
+     "end": 374.108
+    },
+    {
+     "text": "fancy",
+     "start": 374.108,
+     "end": 374.388
+    },
+    {
+     "text": "dinner.",
+     "start": 374.388,
+     "end": 374.628
+    }
+   ]
+  },
+  {
+   "id": "n42",
+   "text": "Also a walk has no lobster on the menu. Just saying.",
+   "start": 375.3059583333333,
+   "end": 377.7259583333333,
+   "words": [
+    {
+     "text": "Also",
+     "start": 375.306,
+     "end": 375.526
+    },
+    {
+     "text": "a",
+     "start": 375.526,
+     "end": 375.666
+    },
+    {
+     "text": "walk",
+     "start": 375.666,
+     "end": 375.846
+    },
+    {
+     "text": "has",
+     "start": 375.846,
+     "end": 376.046
+    },
+    {
+     "text": "no",
+     "start": 376.046,
+     "end": 376.166
+    },
+    {
+     "text": "lobster",
+     "start": 376.166,
+     "end": 376.466
+    },
+    {
+     "text": "on",
+     "start": 376.466,
+     "end": 376.666
+    },
+    {
+     "text": "the",
+     "start": 376.666,
+     "end": 376.766
+    },
+    {
+     "text": "menu.",
+     "start": 376.766,
+     "end": 377.006
+    },
+    {
+     "text": "Just",
+     "start": 377.366,
+     "end": 377.486
+    },
+    {
+     "text": "saying.",
+     "start": 377.486,
+     "end": 377.726
+    }
+   ]
+  },
+  {
+   "id": "c9a",
+   "text": "So here's the one move. Get off the app as fast as you can. Every day you stay is money for them.",
+   "start": 378.4006875,
+   "end": 382.6606875,
+   "words": [
+    {
+     "text": "So",
+     "start": 378.401,
+     "end": 378.581
+    },
+    {
+     "text": "here's",
+     "start": 378.741,
+     "end": 378.941
+    },
+    {
+     "text": "the",
+     "start": 378.941,
+     "end": 379.021
+    },
+    {
+     "text": "one",
+     "start": 379.021,
+     "end": 379.141
+    },
+    {
+     "text": "move.",
+     "start": 379.141,
+     "end": 379.361
+    },
+    {
+     "text": "Get",
+     "start": 379.841,
+     "end": 379.961
+    },
+    {
+     "text": "off",
+     "start": 379.961,
+     "end": 380.061
+    },
+    {
+     "text": "the",
+     "start": 380.061,
+     "end": 380.201
+    },
+    {
+     "text": "app",
+     "start": 380.201,
+     "end": 380.341
+    },
+    {
+     "text": "as",
+     "start": 380.341,
+     "end": 380.521
+    },
+    {
+     "text": "fast",
+     "start": 380.521,
+     "end": 380.701
+    },
+    {
+     "text": "as",
+     "start": 380.701,
+     "end": 380.901
+    },
+    {
+     "text": "you",
+     "start": 380.901,
+     "end": 381.001
+    },
+    {
+     "text": "can.",
+     "start": 381.001,
+     "end": 381.181
+    },
+    {
+     "text": "Every",
+     "start": 381.461,
+     "end": 381.561
+    },
+    {
+     "text": "day",
+     "start": 381.561,
+     "end": 381.721
+    },
+    {
+     "text": "you",
+     "start": 381.721,
+     "end": 381.841
+    },
+    {
+     "text": "stay",
+     "start": 381.841,
+     "end": 382.001
+    },
+    {
+     "text": "is",
+     "start": 382.001,
+     "end": 382.141
+    },
+    {
+     "text": "money",
+     "start": 382.141,
+     "end": 382.301
+    },
+    {
+     "text": "for",
+     "start": 382.301,
+     "end": 382.481
+    },
+    {
+     "text": "them.",
+     "start": 382.481,
+     "end": 382.661
+    }
+   ]
+  },
+  {
+   "id": "c9b",
+   "text": "The app makes money while I'm swiping. The second I'm on a real date it makes nothing.",
+   "start": 383.1739166666667,
+   "end": 386.7339166666667,
+   "words": [
+    {
+     "text": "The",
+     "start": 383.174,
+     "end": 383.254
+    },
+    {
+     "text": "app",
+     "start": 383.254,
+     "end": 383.374
+    },
+    {
+     "text": "makes",
+     "start": 383.374,
+     "end": 383.574
+    },
+    {
+     "text": "money",
+     "start": 383.574,
+     "end": 383.774
+    },
+    {
+     "text": "while",
+     "start": 383.774,
+     "end": 383.974
+    },
+    {
+     "text": "I'm",
+     "start": 383.974,
+     "end": 384.094
+    },
+    {
+     "text": "swiping.",
+     "start": 384.094,
+     "end": 384.474
+    },
+    {
+     "text": "The",
+     "start": 384.914,
+     "end": 384.994
+    },
+    {
+     "text": "second",
+     "start": 384.994,
+     "end": 385.234
+    },
+    {
+     "text": "I'm",
+     "start": 385.234,
+     "end": 385.394
+    },
+    {
+     "text": "on",
+     "start": 385.394,
+     "end": 385.514
+    },
+    {
+     "text": "a",
+     "start": 385.514,
+     "end": 385.594
+    },
+    {
+     "text": "real",
+     "start": 385.594,
+     "end": 385.734
+    },
+    {
+     "text": "date",
+     "start": 385.734,
+     "end": 385.974
+    },
+    {
+     "text": "it",
+     "start": 386.254,
+     "end": 386.314
+    },
+    {
+     "text": "makes",
+     "start": 386.314,
+     "end": 386.434
+    },
+    {
+     "text": "nothing.",
+     "start": 386.434,
+     "end": 386.734
+    }
+   ]
+  },
+  {
+   "id": "n43",
+   "text": "Every hour you spend talking to a real human is an hour the app can't sell to you.",
+   "start": 387.4262083333333,
+   "end": 391.1262083333333,
+   "words": [
+    {
+     "text": "Every",
+     "start": 387.426,
+     "end": 387.626
+    },
+    {
+     "text": "hour",
+     "start": 387.626,
+     "end": 387.846
+    },
+    {
+     "text": "you",
+     "start": 387.846,
+     "end": 388.086
+    },
+    {
+     "text": "spend",
+     "start": 388.086,
+     "end": 388.286
+    },
+    {
+     "text": "talking",
+     "start": 388.286,
+     "end": 388.586
+    },
+    {
+     "text": "to",
+     "start": 388.586,
+     "end": 388.826
+    },
+    {
+     "text": "a",
+     "start": 388.826,
+     "end": 388.926
+    },
+    {
+     "text": "real",
+     "start": 388.926,
+     "end": 389.066
+    },
+    {
+     "text": "human",
+     "start": 389.066,
+     "end": 389.426
+    },
+    {
+     "text": "is",
+     "start": 389.426,
+     "end": 389.606
+    },
+    {
+     "text": "an",
+     "start": 389.606,
+     "end": 389.726
+    },
+    {
+     "text": "hour",
+     "start": 389.726,
+     "end": 389.966
+    },
+    {
+     "text": "the",
+     "start": 389.966,
+     "end": 390.126
+    },
+    {
+     "text": "app",
+     "start": 390.126,
+     "end": 390.306
+    },
+    {
+     "text": "can't",
+     "start": 390.306,
+     "end": 390.606
+    },
+    {
+     "text": "sell",
+     "start": 390.606,
+     "end": 390.746
+    },
+    {
+     "text": "to",
+     "start": 390.746,
+     "end": 390.926
+    },
+    {
+     "text": "you.",
+     "start": 390.926,
+     "end": 391.126
+    }
+   ]
+  },
+  {
+   "id": "n45",
+   "text": "The app watching us leave together.",
+   "start": 391.69641666666666,
+   "end": 393.19641666666666,
+   "words": [
+    {
+     "text": "The",
+     "start": 391.696,
+     "end": 391.836
+    },
+    {
+     "text": "app",
+     "start": 391.836,
+     "end": 392.076
+    },
+    {
+     "text": "watching",
+     "start": 392.256,
+     "end": 392.476
+    },
+    {
+     "text": "us",
+     "start": 392.476,
+     "end": 392.636
+    },
+    {
+     "text": "leave",
+     "start": 392.636,
+     "end": 392.796
+    },
+    {
+     "text": "together.",
+     "start": 392.796,
+     "end": 393.196
+    }
+   ]
+  },
+  {
+   "id": "c9d",
+   "text": "The best way to beat a dating app is to stop needing it.",
+   "start": 393.8129375,
+   "end": 396.0529375,
+   "words": [
+    {
+     "text": "The",
+     "start": 393.813,
+     "end": 393.893
+    },
+    {
+     "text": "best",
+     "start": 393.893,
+     "end": 394.033
+    },
+    {
+     "text": "way",
+     "start": 394.033,
+     "end": 394.253
+    },
+    {
+     "text": "to",
+     "start": 394.253,
+     "end": 394.353
+    },
+    {
+     "text": "beat",
+     "start": 394.353,
+     "end": 394.473
+    },
+    {
+     "text": "a",
+     "start": 394.473,
+     "end": 394.573
+    },
+    {
+     "text": "dating",
+     "start": 394.573,
+     "end": 394.773
+    },
+    {
+     "text": "app",
+     "start": 394.773,
+     "end": 395.053
+    },
+    {
+     "text": "is",
+     "start": 395.053,
+     "end": 395.273
+    },
+    {
+     "text": "to",
+     "start": 395.273,
+     "end": 395.393
+    },
+    {
+     "text": "stop",
+     "start": 395.393,
+     "end": 395.593
+    },
+    {
+     "text": "needing",
+     "start": 395.593,
+     "end": 395.813
+    },
+    {
+     "text": "it.",
+     "start": 395.813,
+     "end": 396.053
+    }
+   ]
+  },
+  {
+   "id": "r4",
+   "text": "Oh and that bot selling sunglasses? Still messages me every week. Most loyal relationship I've ever had.",
+   "start": 396.70345833333334,
+   "end": 401.58345833333334,
+   "words": [
+    {
+     "text": "Oh",
+     "start": 396.703,
+     "end": 396.823
+    },
+    {
+     "text": "and",
+     "start": 396.823,
+     "end": 396.923
+    },
+    {
+     "text": "that",
+     "start": 396.923,
+     "end": 397.023
+    },
+    {
+     "text": "bot",
+     "start": 397.023,
+     "end": 397.183
+    },
+    {
+     "text": "selling",
+     "start": 397.183,
+     "end": 397.463
+    },
+    {
+     "text": "sunglasses?",
+     "start": 397.463,
+     "end": 397.763
+    },
+    {
+     "text": "Still",
+     "start": 398.663,
+     "end": 398.663
+    },
+    {
+     "text": "messages",
+     "start": 398.663,
+     "end": 398.843
+    },
+    {
+     "text": "me",
+     "start": 398.843,
+     "end": 399.163
+    },
+    {
+     "text": "every",
+     "start": 399.163,
+     "end": 399.303
+    },
+    {
+     "text": "week.",
+     "start": 399.303,
+     "end": 399.503
+    },
+    {
+     "text": "Most",
+     "start": 400.203,
+     "end": 400.203
+    },
+    {
+     "text": "loyal",
+     "start": 400.203,
+     "end": 400.443
+    },
+    {
+     "text": "relationship",
+     "start": 400.443,
+     "end": 400.983
+    },
+    {
+     "text": "I've",
+     "start": 400.983,
+     "end": 401.183
+    },
+    {
+     "text": "ever",
+     "start": 401.183,
+     "end": 401.363
+    },
+    {
+     "text": "had.",
+     "start": 401.363,
+     "end": 401.583
+    }
+   ]
+  },
+  {
+   "id": "r5",
+   "text": "Next time my sister tells me a kid costs three hundred thousand dollars. I laugh. Then I do the math.",
+   "start": 402.2671041666667,
+   "end": 406.8001041666667,
+   "words": [
+    {
+     "text": "Next",
+     "start": 402.267,
+     "end": 402.468
+    },
+    {
+     "text": "time",
+     "start": 402.491,
+     "end": 402.692
+    },
+    {
+     "text": "my",
+     "start": 402.714,
+     "end": 402.835
+    },
+    {
+     "text": "sister",
+     "start": 402.848,
+     "end": 403.13
+    },
+    {
+     "text": "tells",
+     "start": 403.161,
+     "end": 403.403
+    },
+    {
+     "text": "me",
+     "start": 403.429,
+     "end": 403.55
+    },
+    {
+     "text": "a",
+     "start": 403.563,
+     "end": 403.644
+    },
+    {
+     "text": "kid",
+     "start": 403.653,
+     "end": 403.814
+    },
+    {
+     "text": "costs",
+     "start": 403.832,
+     "end": 404.073
+    },
+    {
+     "text": "three",
+     "start": 404.1,
+     "end": 404.341
+    },
+    {
+     "text": "hundred",
+     "start": 404.368,
+     "end": 404.69
+    },
+    {
+     "text": "thousand",
+     "start": 404.726,
+     "end": 405.088
+    },
+    {
+     "text": "dollars.",
+     "start": 405.128,
+     "end": 405.49
+    },
+    {
+     "text": "I",
+     "start": 405.531,
+     "end": 405.611
+    },
+    {
+     "text": "laugh.",
+     "start": 405.62,
+     "end": 405.902
+    },
+    {
+     "text": "Then",
+     "start": 405.933,
+     "end": 406.134
+    },
+    {
+     "text": "I",
+     "start": 406.156,
+     "end": 406.237
+    },
+    {
+     "text": "do",
+     "start": 406.246,
+     "end": 406.367
+    },
+    {
+     "text": "the",
+     "start": 406.38,
+     "end": 406.541
+    },
+    {
+     "text": "math.",
+     "start": 406.559,
+     "end": 406.8
+    }
+   ]
+  },
+  {
+   "id": "r6",
+   "text": "Subscribe. It's free. And unlike dating apps it actually stays free.",
+   "start": 407.41858333333334,
+   "end": 411.05858333333333,
+   "words": [
+    {
+     "text": "Subscribe.",
+     "start": 407.419,
+     "end": 407.699
+    },
+    {
+     "text": "It's",
+     "start": 408.139,
+     "end": 408.319
+    },
+    {
+     "text": "free.",
+     "start": 408.319,
+     "end": 408.459
+    },
+    {
+     "text": "And",
+     "start": 408.959,
+     "end": 409.119
+    },
+    {
+     "text": "unlike",
+     "start": 409.119,
+     "end": 409.459
+    },
+    {
+     "text": "dating",
+     "start": 409.459,
+     "end": 409.759
+    },
+    {
+     "text": "apps",
+     "start": 409.759,
+     "end": 410.039
+    },
+    {
+     "text": "it",
+     "start": 410.279,
+     "end": 410.299
+    },
+    {
+     "text": "actually",
+     "start": 410.299,
+     "end": 410.479
+    },
+    {
+     "text": "stays",
+     "start": 410.479,
+     "end": 410.719
+    },
+    {
+     "text": "free.",
+     "start": 410.719,
+     "end": 411.059
+    }
+   ]
+  }
+ ]
+}
