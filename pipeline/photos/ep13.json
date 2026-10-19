@@ -2,143 +2,283 @@
  "photos": [
   {
    "id": "paycheck",
-   "q": "paycheck"
+   "q": "paycheck",
+   "file": "File:2023-03-13 paycheck-salary.jpg",
+   "credit": "Rakoon",
+   "license": "CC0",
+   "page": "https://commons.wikimedia.org/wiki/File:2023-03-13_paycheck-salary.jpg"
   },
   {
    "id": "yacht",
-   "q": "luxury yacht"
+   "q": "luxury yacht",
+   "file": "File:Stella-maris-luxury-yacht-gallery-10.jpg",
+   "credit": "Ecuapromo",
+   "license": "CC BY-SA 4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Stella-maris-luxury-yacht-gallery-10.jpg"
   },
   {
    "id": "italy",
-   "q": "Amalfi coast"
+   "q": "Amalfi coast",
+   "file": "File:Atrani (Costiera Amalfitana, 23-8-2011).jpg",
+   "credit": "Paolo Costa Baldi",
+   "license": "CC BY 3.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Atrani_(Costiera_Amalfitana,_23-8-2011).jpg"
   },
   {
    "id": "pizza",
-   "q": "pizza slice"
+   "q": "pizza slice",
+   "file": "File:LPS online concert 2020.png",
+   "credit": "KILLING PRODUCTION PRODUCENT SI",
+   "license": "CC BY 3.0",
+   "page": "https://commons.wikimedia.org/wiki/File:LPS_online_concert_2020.png"
   },
   {
    "id": "delivery",
-   "q": "pizza delivery"
+   "q": "pizza delivery",
+   "file": "File:2022.11.09 Fully electric Peugeot iOn as a pizza delivery car in Tomaszów Mazowiecki, Poland.jpg",
+   "credit": "WrS.tm.pl",
+   "license": "Public domain",
+   "page": "https://commons.wikimedia.org/wiki/File:2022.11.09_Fully_electric_Peugeot_iOn_as_a_pizza_delivery_car_in_Tomasz%C3%B3w_Mazowiecki,_Poland.jpg"
   },
   {
    "id": "wallet",
-   "q": "empty wallet"
+   "q": "empty wallet",
+   "file": "File:Empty tank empty wallet.jpg",
+   "credit": "BigBruiser",
+   "license": "CC BY-SA 4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Empty_tank_empty_wallet.jpg"
   },
   {
    "id": "envelope",
-   "q": "envelope letter"
+   "q": "envelope letter",
+   "file": "File:Envelope-letter-icon.png",
+   "credit": "paomedia",
+   "license": "CC0",
+   "page": "https://commons.wikimedia.org/wiki/File:Envelope-letter-icon.png"
   },
   {
    "id": "skyscraper",
-   "q": "corporate skyscraper"
+   "q": "corporate skyscraper",
+   "file": "File:Bank of America Corporate Center Charlotte NC.jpg",
+   "credit": "Kiran891",
+   "license": "CC BY-SA 4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Bank_of_America_Corporate_Center_Charlotte_NC.jpg"
   },
   {
    "id": "dollar",
-   "q": "one dollar bill"
+   "q": "one dollar bill",
+   "file": "File:United States one dollar bill, reverse.jpg",
+   "credit": "United States Government",
+   "license": "Public domain",
+   "page": "https://commons.wikimedia.org/wiki/File:United_States_one_dollar_bill,_reverse.jpg"
   },
   {
    "id": "breakfast",
-   "q": "breakfast plate"
+   "q": "breakfast plate",
+   "file": "File:Bernard Baron - Marriage A-La-Mode, Plate II, The Breakfast Scene - B1981.25.1432 - Yale Center for British Art.jpg",
+   "credit": "Bernard Baron",
+   "license": "CC0",
+   "page": "https://commons.wikimedia.org/wiki/File:Bernard_Baron_-_Marriage_A-La-Mode,_Plate_II,_The_Breakfast_Scene_-_B1981.25.1432_-_Yale_Center_for_British_Art.jpg"
   },
   {
    "id": "paper",
-   "q": "stack of paper"
+   "q": "stack of paper",
+   "file": "File:Stack of brown paper bags beneath a counter.jpg",
+   "credit": "Tessa Bury",
+   "license": "CC BY 4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Stack_of_brown_paper_bags_beneath_a_counter.jpg"
   },
   {
    "id": "controller",
-   "q": "game controller"
+   "q": "game controller",
+   "file": "File:InclusiveGameLab Hori-Flex-Controller 4 CC-BY-SA 02.jpg",
+   "credit": "InclusiveGameLab",
+   "license": "CC BY-SA 4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:InclusiveGameLab_Hori-Flex-Controller_4_CC-BY-SA_02.jpg"
   },
   {
    "id": "apple_tree",
-   "q": "apple tree"
+   "q": "apple tree",
+   "file": "File:Tree with red apples in Barkedal 4.jpg",
+   "credit": "W.carter",
+   "license": "CC0",
+   "page": "https://commons.wikimedia.org/wiki/File:Tree_with_red_apples_in_Barkedal_4.jpg"
   },
   {
    "id": "irs",
-   "q": "Internal Revenue Service building"
+   "q": "Internal Revenue Service building",
+   "file": "File:Plan for New Internal Revenue Building, Washington, D.C. (1927).png",
+   "credit": "Underwood & Underwood",
+   "license": "Public domain",
+   "page": "https://commons.wikimedia.org/wiki/File:Plan_for_New_Internal_Revenue_Building,_Washington,_D.C._(1927).png"
   },
   {
    "id": "sandwich",
-   "q": "sandwich"
+   "q": "sandwich",
+   "file": "File:Sandwich on a cutting board.jpg",
+   "credit": "Revital Salomon",
+   "license": "CC BY-SA 4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Sandwich_on_a_cutting_board.jpg"
   },
   {
    "id": "land",
-   "q": "farmland aerial"
+   "q": "farmland aerial",
+   "file": "File:Aerial view of Pennsylvania farmland LCCN2011631350 (flipped).tif",
+   "credit": "Carol M. Highsmith",
+   "license": "Public domain",
+   "page": "https://commons.wikimedia.org/wiki/File:Aerial_view_of_Pennsylvania_farmland_LCCN2011631350_(flipped).tif"
   },
   {
    "id": "stove",
-   "q": "stove burner"
+   "q": "stove burner",
+   "file": "File:Gas stove burner flame.jpg",
+   "credit": "Lisafern",
+   "license": "CC0",
+   "page": "https://commons.wikimedia.org/wiki/File:Gas_stove_burner_flame.jpg"
   },
   {
    "id": "bank",
-   "q": "bank lobby"
+   "q": "bank lobby",
+   "file": "File:On the Banks of the Wabash lobby card.jpg",
+   "credit": "Vitagraph Company of America",
+   "license": "Public domain",
+   "page": "https://commons.wikimedia.org/wiki/File:On_the_Banks_of_the_Wabash_lobby_card.jpg"
   },
   {
    "id": "chart",
-   "q": "stock chart"
+   "q": "stock chart",
+   "file": "File:Fingerprint Cards Stock Chart.png",
+   "credit": "Wes97",
+   "license": "CC BY-SA 4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Fingerprint_Cards_Stock_Chart.png"
   },
   {
    "id": "marina",
-   "q": "yacht marina"
+   "q": "yacht marina",
+   "file": "File:Harbor Town Yacht Club Marina.jpg",
+   "credit": "Fritzmann2002",
+   "license": "CC BY-SA 4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Harbor_Town_Yacht_Club_Marina.jpg"
   },
   {
    "id": "family",
-   "q": "family portrait"
+   "q": "family portrait",
+   "file": "File:Lions Family Portrait Masai Mara.jpg",
+   "credit": "Benh LIEU SONG",
+   "license": "CC BY-SA 3.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Lions_Family_Portrait_Masai_Mara.jpg"
   },
   {
    "id": "stopwatch",
-   "q": "stopwatch"
+   "q": "stopwatch",
+   "file": "File:Stopwatch, 1810201155, ako.jpg",
+   "credit": "Ansgar Koreng",
+   "license": "CC BY-SA 4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Stopwatch,_1810201155,_ako.jpg"
   },
   {
    "id": "magician",
-   "q": "magician hat"
+   "q": "magician hat",
+   "file": "File:Thurston, master magician all out of a hat. LCCN2014636958.jpg",
+   "credit": "Performing Arts Posters",
+   "license": "Public domain",
+   "page": "https://commons.wikimedia.org/wiki/File:Thurston,_master_magician_all_out_of_a_hat._LCCN2014636958.jpg"
   },
   {
    "id": "lawyers",
-   "q": "lawyers office"
+   "q": "lawyers office",
+   "file": "File:Lawyers' Office, Bridgetown, January 2022.jpg",
+   "credit": "Calistemon",
+   "license": "CC BY-SA 4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Lawyers%27_Office,_Bridgetown,_January_2022.jpg"
   },
   {
    "id": "office",
-   "q": "law office"
+   "q": "law office",
+   "file": "File:Henry Clay's law office.jpg",
+   "credit": "FloNight (Sydney Poore) and Russell Poore",
+   "license": "CC BY-SA 4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Henry_Clay%27s_law_office.jpg"
   },
   {
    "id": "buffett",
-   "q": "Warren Buffett"
+   "q": "Warren Buffett",
+   "file": "File:Warren Buffett KU Visit.jpg",
+   "credit": "Mark Hirschey",
+   "license": "CC BY-SA 2.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Warren_Buffett_KU_Visit.jpg"
   },
   {
    "id": "typewriter_desk",
-   "q": "office secretary desk"
+   "q": "office secretary desk",
+   "file": "File:Acting Defense Secretary Chris Miller sits at the desk in the Office of the Secretary of Defense, as he prepares to transition out of the office at the Pentagon on January 20, 2021.jpg",
+   "credit": "U.S. Secretary of Defense",
+   "license": "CC BY 2.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Acting_Defense_Secretary_Chris_Miller_sits_at_the_desk_in_the_Office_of_the_Secretary_of_Defense,_as_he_prepares_to_transition_out_of_the_office_at_the_Pentagon_on_January_20,_2021.jpg"
   },
   {
    "id": "janitor",
-   "q": "janitor mop"
+   "q": "janitor mop",
+   "file": "File:Janitor's bucket with mop.jpg",
+   "credit": "The original uploader was Husond at English Wikipedia.",
+   "license": "CC BY-SA 3.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Janitor%27s_bucket_with_mop.jpg"
   },
   {
    "id": "crash",
-   "q": "stock market crash"
+   "q": "stock market crash",
+   "file": "File:Stock market Image public domain.jpg",
+   "credit": "Unknown authorUnknown author",
+   "license": "CC0",
+   "page": "https://commons.wikimedia.org/wiki/File:Stock_market_Image_public_domain.jpg"
   },
   {
    "id": "seedling",
-   "q": "seedling plant"
+   "q": "seedling plant",
+   "file": "File:Actinidia deliciosa seedling - red shoot.jpg",
+   "credit": "Eiku en exil",
+   "license": "CC BY-SA 4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Actinidia_deliciosa_seedling_-_red_shoot.jpg"
   },
   {
    "id": "sapling",
-   "q": "small tree"
+   "q": "small tree",
+   "file": "File:Ma - Camarhynchus parvulus and Certhidea olivacea.jpg",
+   "credit": "Emőke Dénes",
+   "license": "CC BY-SA 4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Ma_-_Camarhynchus_parvulus_and_Certhidea_olivacea.jpg"
   },
   {
    "id": "piggy",
-   "q": "piggy bank"
+   "q": "piggy bank",
+   "file": "File:A Model 1925 Kenworth Collectible piggy bank sitting on table.jpg",
+   "credit": "Noah Wulf",
+   "license": "CC BY-SA 4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:A_Model_1925_Kenworth_Collectible_piggy_bank_sitting_on_table.jpg"
   },
   {
    "id": "table",
-   "q": "money on table"
+   "q": "money on table",
+   "file": "File:Loanable funds, money multiplier, money creation (3 types of theories) without almost forgotten Credit Mechanics (table by IMF 2019).png",
+   "credit": "Marco Gross (IMF), Christoph Siebenbrunner (Oxford University)",
+   "license": "Public domain",
+   "page": "https://commons.wikimedia.org/wiki/File:Loanable_funds,_money_multiplier,_money_creation_(3_types_of_theories)_without_almost_forgotten_Credit_Mechanics_(table_by_IMF_2019).png"
   },
   {
    "id": "grandma_house",
-   "q": "old cottage house"
+   "q": "old cottage house",
+   "file": "File:Little Cottage, Old Cottage ^ Wisteria Cottage - geograph.org.uk - 6974333.jpg",
+   "credit": "N Chadwick",
+   "license": "CC BY-SA 2.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Little_Cottage,_Old_Cottage_%5E_Wisteria_Cottage_-_geograph.org.uk_-_6974333.jpg"
   },
   {
    "id": "credit_card",
-   "q": "credit card"
+   "q": "credit card",
+   "file": "File:Credit-cards.jpg",
+   "credit": "Lotus Head from Johannesburg, Gauteng, South Africa",
+   "license": "CC BY-SA 2.5",
+   "page": "https://commons.wikimedia.org/wiki/File:Credit-cards.jpg"
   }
  ]
 }
