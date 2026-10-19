@@ -20,7 +20,7 @@
    "id": "sneakers",
    "q": "running shoes",
    "file": "File:Mizuno Wave Ibuki 2.jpg",
-   "credit": "Petar Milošević",
+   "credit": "Petar Milo\u0161evi\u0107",
    "license": "CC BY-SA 4.0",
    "page": "https://commons.wikimedia.org/wiki/File:Mizuno_Wave_Ibuki_2.jpg"
   },
@@ -35,7 +35,7 @@
   {
    "id": "dog_bath",
    "q": "dog bath",
-   "file": "File:Dog bath Rømø camping.jpg",
+   "file": "File:Dog bath R\u00f8m\u00f8 camping.jpg",
    "credit": "Elgaard",
    "license": "CC BY-SA 4.0",
    "page": "https://commons.wikimedia.org/wiki/File:Dog_bath_R%C3%B8m%C3%B8_camping.jpg"
@@ -138,7 +138,7 @@
   },
   {
    "id": "leak",
-   "q": "bucket under leaking roof"
+   "q": "bucket"
   },
   {
    "id": "bank_tower",
@@ -151,7 +151,7 @@
   {
    "id": "car_wash",
    "q": "car wash",
-   "file": "File:2015 Kłodzko, ul. Dusznicka, myjnia samochodowa 02.jpg",
+   "file": "File:2015 K\u0142odzko, ul. Dusznicka, myjnia samochodowa 02.jpg",
    "credit": "Jacek Halicki",
    "license": "CC BY-SA 4.0",
    "page": "https://commons.wikimedia.org/wiki/File:2015_K%C5%82odzko,_ul._Dusznicka,_myjnia_samochodowa_02.jpg"
@@ -287,8 +287,8 @@
   {
    "id": "jar",
    "q": "money jar savings",
-   "file": "File:Sparepenger på Norgesglass.jpg",
-   "credit": "Øyvind Holmstad",
+   "file": "File:Sparepenger p\u00e5 Norgesglass.jpg",
+   "credit": "\u00d8yvind Holmstad",
    "license": "CC BY-SA 4.0",
    "page": "https://commons.wikimedia.org/wiki/File:Sparepenger_p%C3%A5_Norgesglass.jpg"
   },
@@ -334,11 +334,7 @@
   },
   {
    "id": "piggy_kid",
-   "q": "child piggy bank",
-   "file": "File:Child piggy-backing across a muddy road (12328908245).jpg",
-   "credit": "Toronto History from Toronto, Canada",
-   "license": "CC BY 2.0",
-   "page": "https://commons.wikimedia.org/wiki/File:Child_piggy-backing_across_a_muddy_road_(12328908245).jpg"
+   "q": "piggy bank"
   },
   {
    "id": "toy_store",
