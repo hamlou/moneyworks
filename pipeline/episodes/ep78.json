@@ -1,0 +1,1902 @@
+{
+ "id": "ep78",
+ "title": "Why Your Brain Is Wired to Waste Money",
+ "voice": "chatterbox",
+ "upgraded": "2026-10-19 UPGRADE.md v2",
+ "sources": [
+  "Knutson, Rick, Wimmer, Prelec & Loewenstein (2007) 'Neural Predictors of Purchases', Neuron 53(1)",
+  "Prelec & Simester (2001) 'Always Leave Home Without It', Marketing Letters 12(1): credit card bids for Celtics tickets up to ~2x cash",
+  "Watts, Duncan & Quan (2018) 'Revisiting the Marshmallow Test', Psychological Science",
+  "Mischel et al. delay of gratification studies (1970s-1990)",
+  "Thaler & Benartzi (2004) 'Save More Tomorrow', Journal of Political Economy",
+  "Laibson (1997) hyperbolic discounting; O'Donoghue & Rabin (1999) present bias",
+  "Knutson, Rick, Wimmer, Prelec & Loewenstein (2007) 'Neural Predictors of Purchases', Neuron 53(1)",
+  "Prelec & Simester (2001) 'Always Leave Home Without It', Marketing Letters 12(1): credit card bids for Celtics tickets up to ~2x cash",
+  "Watts, Duncan & Quan (2018) 'Revisiting the Marshmallow Test', Psychological Science",
+  "Mischel et al. delay of gratification studies (1970s-1990)",
+  "Thaler & Benartzi (2004) 'Save More Tomorrow', Journal of Political Economy",
+  "Laibson (1997) hyperbolic discounting; O'Donoghue & Rabin (1999) present bias"
+ ],
+ "youtube": {
+  "title": "Why Your Brain Is Wired to Waste Money",
+  "hook": "You're not bad with money. Your brain is a caveman in a mall, and the mall knows it."
+ },
+ "beats": [
+  {
+   "id": "o1",
+   "text": "This is me at two in the morning with forty seven dollars of stuff in my cart that I did not need at ten o'clock.",
+   "host": true,
+   "mood": "money",
+   "pose": "present",
+   "pic": {
+    "id": "night_phone",
+    "at": "cart",
+    "look": "polaroid",
+    "label": "2:04 AM"
+   },
+   "slam": {
+    "t": "2 AM CART",
+    "at": "two"
+   },
+   "sfx": [
+    {
+     "s": "pack/01_beating",
+     "at": "two"
+    },
+    {
+     "s": "pop",
+     "at": "cart"
+    },
+    {
+     "s": "cash",
+     "at": "dollars"
+    }
+   ],
+   "pause": 0.15
+  },
+  {
+   "id": "o2",
+   "text": "A neck pillow. A tiny waffle maker. And a lamp shaped like a cat. I don't even like cats.",
+   "pic": {
+    "id": "waffle",
+    "at": "waffle",
+    "look": "sticker"
+   },
+   "sfx": [
+    {
+     "s": "ding",
+     "at": "pillow"
+    },
+    {
+     "s": "pop",
+     "at": "waffle"
+    },
+    {
+     "s": "boing",
+     "at": "cat"
+    },
+    {
+     "s": "trombone",
+     "at": "cats"
+    }
+   ],
+   "pause": 0.15
+  },
+  {
+   "id": "n30",
+   "text": "I woke up the next morning and saw the order confirmation. And I swear I had no memory of buying a cat lamp. It was like a different guy did it.",
+   "host": true,
+   "mood": "shock",
+   "pose": "panic",
+   "zoom": {
+    "in": "different",
+    "out": "guy"
+   },
+   "sfx": [
+    {
+     "s": "ding",
+     "at": "confirmation"
+    },
+    {
+     "s": "scratch",
+     "at": "cat"
+    },
+    {
+     "s": "boom",
+     "at": "guy"
+    }
+   ]
+  },
+  {
+   "id": "o3",
+   "text": "And every time I tell myself the same thing. You're just bad with money Dave.",
+   "host": true,
+   "mood": "sad",
+   "pose": "facepalm",
+   "zoom": {
+    "in": "bad",
+    "out": "Dave"
+   },
+   "sfx": [
+    {
+     "s": "cricket",
+     "at": "same"
+    },
+    {
+     "s": "boom",
+     "at": "Dave"
+    }
+   ],
+   "pause": 0.15
+  },
+  {
+   "id": "o4",
+   "text": "But what if that's not true? What if your brain was built for a world that doesn't exist anymore?",
+   "card": {
+    "t": "Your brain is out of date.",
+    "dark": true
+   },
+   "sfx": [
+    {
+     "s": "scratch",
+     "at": "true"
+    },
+    {
+     "s": "pack/01_boom",
+     "at": "anymore"
+    }
+   ],
+   "pause": 0.3
+  },
+  {
+   "id": "o5",
+   "text": "By the end of this video you'll know the one trick that makes your old brain save money without using any willpower at all.",
+   "host": true,
+   "mood": "suspicious",
+   "pose": "point_r",
+   "slam": {
+    "t": "ZERO WILLPOWER",
+    "at": "willpower"
+   },
+   "sfx": [
+    {
+     "s": "ding",
+     "at": "trick"
+    },
+    {
+     "s": "drumroll",
+     "at": "willpower"
+    },
+    {
+     "s": "boom",
+     "at": "all"
+    }
+   ],
+   "pause": 0.15
+  },
+  {
+   "id": "o6",
+   "text": "But most people scroll away before that part which is exactly the old brain doing its thing.",
+   "host": true,
+   "mood": "worried",
+   "pose": "hips",
+   "sfx": [
+    {
+     "s": "whoosh",
+     "at": "scroll"
+    },
+    {
+     "s": "sting",
+     "at": "thing"
+    }
+   ],
+   "pause": 0.3
+  },
+  {
+   "id": "c1a",
+   "text": "So let me introduce you to my great great great great great grandpa. Way more greats. Let's call him Grug.",
+   "chapter": "Meet Grug",
+   "pic": {
+    "id": "cave",
+    "at": "Grug",
+    "look": "polaroid",
+    "label": "grandpa Grug"
+   },
+   "sfx": [
+    {
+     "s": "pack/02_dial_up",
+     "at": "introduce"
+    },
+    {
+     "s": "boing",
+     "at": "greats"
+    },
+    {
+     "s": "ding",
+     "at": "Grug"
+    }
+   ]
+  },
+  {
+   "id": "c1b",
+   "text": "Grug lives in a cave. No fridge. No bank. No tomorrow that he can count on.",
+   "pic": {
+    "id": "campfire",
+    "at": "cave",
+    "look": "tape"
+   },
+   "sfx": [
+    {
+     "s": "ding",
+     "at": "fridge"
+    },
+    {
+     "s": "ding",
+     "at": "bank"
+    },
+    {
+     "s": "cricket",
+     "at": "tomorrow"
+    }
+   ]
+  },
+  {
+   "id": "c1c",
+   "text": "One day Grug finds a bush full of berries. And what does Grug do? He eats every single berry. Right now.",
+   "pic": {
+    "id": "berries",
+    "at": "berries",
+    "look": "sticker"
+   },
+   "sfx": [
+    {
+     "s": "pop",
+     "at": "berries"
+    },
+    {
+     "s": "boing",
+     "at": "eats"
+    },
+    {
+     "s": "boom",
+     "at": "now"
+    }
+   ]
+  },
+  {
+   "id": "c1d",
+   "text": "And honestly? Smart move Grug. Because if he saves them for later a bear eats them. Or the berries rot. Or Grug gets eaten himself.",
+   "host": true,
+   "mood": "grin",
+   "pose": "shrug",
+   "pic": {
+    "id": "bear",
+    "at": "bear",
+    "look": "circle"
+   },
+   "sfx": [
+    {
+     "s": "ding",
+     "at": "Smart"
+    },
+    {
+     "s": "pack/02_deep",
+     "at": "bear"
+    },
+    {
+     "s": "trombone",
+     "at": "himself"
+    }
+   ]
+  },
+  {
+   "id": "n31",
+   "text": "There's no berry bank. There's no freezer. Food you don't eat today is food you don't have. So Grug's brain learned one lesson really really well.",
+   "pic": {
+    "id": "freezer",
+    "at": "freezer",
+    "look": "tape"
+   },
+   "sfx": [
+    {
+     "s": "ding",
+     "at": "bank"
+    },
+    {
+     "s": "cricket",
+     "at": "freezer"
+    },
+    {
+     "s": "riser",
+     "at": "lesson"
+    }
+   ]
+  },
+  {
+   "id": "n1",
+   "text": "Grug's financial plan.",
+   "meme": {
+    "t": "drake",
+    "a": "Saving berries for later",
+    "b": "Eating all the berries now",
+    "at": "plan"
+   },
+   "sfx": [
+    {
+     "s": "pop",
+     "at": "plan"
+    }
+   ]
+  },
+  {
+   "id": "c1e",
+   "text": "For hundreds of thousands of years the rule was simple. Something good in front of you? Take it now. Later might never come.",
+   "host": true,
+   "mood": "smug",
+   "pose": "point_up",
+   "slam": {
+    "t": "TAKE IT NOW",
+    "at": "now"
+   },
+   "sfx": [
+    {
+     "s": "tick",
+     "at": "years"
+    },
+    {
+     "s": "stamp",
+     "at": "now"
+    },
+    {
+     "s": "sting",
+     "at": "never"
+    }
+   ]
+  },
+  {
+   "id": "c1f",
+   "text": "The people who waited didn't become our ancestors. The ones who grabbed did. You come from a very long line of grabbers.",
+   "host": true,
+   "mood": "shock",
+   "pose": "panic",
+   "zoom": {
+    "in": "grabbers",
+    "out": "grabbers"
+   },
+   "sfx": [
+    {
+     "s": "scratch",
+     "at": "waited"
+    },
+    {
+     "s": "pack/01_boom",
+     "at": "grabbers"
+    }
+   ]
+  },
+  {
+   "id": "n2",
+   "text": "Me realizing my whole family tree is just people grabbing berries.",
+   "meme": {
+    "t": "fine",
+    "a": "Generational wealth: zero berries",
+    "at": "tree"
+   },
+   "sfx": [
+    {
+     "s": "cricket",
+     "at": "tree"
+    }
+   ]
+  },
+  {
+   "id": "c1g",
+   "text": "And here's the thing. Grug's brain is the brain you're using right now to watch this video. It got a few updates. But the main code is the same.",
+   "host": true,
+   "mood": "suspicious",
+   "pose": "point_r",
+   "pic": {
+    "id": "brain",
+    "at": "brain",
+    "look": "polaroid"
+   },
+   "sfx": [
+    {
+     "s": "pack/01_processing",
+     "at": "brain"
+    },
+    {
+     "s": "ding",
+     "at": "updates"
+    },
+    {
+     "s": "boom",
+     "at": "same"
+    }
+   ]
+  },
+  {
+   "id": "n3",
+   "text": "It's like running the newest app on a phone from the stone age. It works. Kind of. But it crashes every time somebody says limited offer.",
+   "pic": {
+    "id": "old_phone",
+    "at": "phone",
+    "look": "tape"
+   },
+   "sfx": [
+    {
+     "s": "pack/02_dial_up",
+     "at": "stone"
+    },
+    {
+     "s": "pack/02_evolve_brassy_drop_2",
+     "at": "crashes"
+    },
+    {
+     "s": "boing",
+     "at": "offer"
+    }
+   ]
+  },
+  {
+   "id": "c2a",
+   "text": "Now take Grug and drop him in a mall. Or worse. Give him a phone with a shopping app at two in the morning.",
+   "host": true,
+   "mood": "worried",
+   "pose": "talk",
+   "pic": {
+    "id": "mall",
+    "at": "mall",
+    "look": "polaroid"
+   },
+   "sfx": [
+    {
+     "s": "whoosh",
+     "at": "drop"
+    },
+    {
+     "s": "ding",
+     "at": "mall"
+    },
+    {
+     "s": "pack/01_beating",
+     "at": "morning"
+    }
+   ]
+  },
+  {
+   "id": "c2b",
+   "text": "Every screen is a berry bush now. Shoes. Snacks. Gadgets. All of it shouting take me now. And Grug brain says yes. Every time.",
+   "pic": {
+    "id": "shoes",
+    "at": "Shoes",
+    "look": "sticker"
+   },
+   "sfx": [
+    {
+     "s": "pop",
+     "at": "Shoes"
+    },
+    {
+     "s": "pop",
+     "at": "Snacks"
+    },
+    {
+     "s": "pop",
+     "at": "Gadgets"
+    },
+    {
+     "s": "scratch",
+     "at": "yes"
+    }
+   ]
+  },
+  {
+   "id": "n32",
+   "text": "A cave with a berry bush outside was rare. A phone with a million berries in your pocket is every single day. Your brain never had to deal with that much yes.",
+   "host": true,
+   "mood": "worried",
+   "pose": "talk",
+   "pic": {
+    "id": "pocket",
+    "at": "pocket",
+    "look": "circle"
+   },
+   "slam": {
+    "t": "TOO MUCH YES",
+    "at": "yes"
+   },
+   "sfx": [
+    {
+     "s": "ding",
+     "at": "rare"
+    },
+    {
+     "s": "pop",
+     "at": "million"
+    },
+    {
+     "s": "pack/02_deep",
+     "at": "yes"
+    }
+   ]
+  },
+  {
+   "id": "n4",
+   "text": "Grug with free next day delivery.",
+   "meme": {
+    "t": "stonks",
+    "a": "BERRIES DELIVERED",
+    "at": "delivery"
+   },
+   "sfx": [
+    {
+     "s": "cash",
+     "at": "delivery"
+    }
+   ]
+  },
+  {
+   "id": "c2c",
+   "text": "In Grug's world later was dangerous. In your world later is where all the money is. And your brain didn't get the memo.",
+   "card": {
+    "t": "Later is where the money is.",
+    "dark": true
+   },
+   "sfx": [
+    {
+     "s": "pack/01_boom",
+     "at": "money"
+    }
+   ],
+   "pause": 0.5
+  },
+  {
+   "id": "c3a",
+   "text": "So scientists actually put people inside brain scanners and showed them stuff to buy. Chocolates. Gadgets. Things with price tags.",
+   "chapter": "Your Brain On Shopping",
+   "pic": {
+    "id": "mri",
+    "at": "scanners",
+    "look": "news",
+    "label": "Stanford brain study"
+   },
+   "sfx": [
+    {
+     "s": "pack/01_processing",
+     "at": "scanners"
+    },
+    {
+     "s": "pop",
+     "at": "Chocolates"
+    },
+    {
+     "s": "ding",
+     "at": "tags"
+    }
+   ]
+  },
+  {
+   "id": "c3b",
+   "text": "And when people saw something they wanted a pleasure part of the brain lit up. Before they even saw the price.",
+   "host": true,
+   "mood": "money",
+   "pose": "celebrate",
+   "slam": {
+    "t": "PLEASURE FIRST",
+    "at": "pleasure"
+   },
+   "sfx": [
+    {
+     "s": "pack/01_evolve_brassy_swell",
+     "at": "lit"
+    },
+    {
+     "s": "ding",
+     "at": "price"
+    }
+   ]
+  },
+  {
+   "id": "c3c",
+   "text": "Then the price showed up. And if it felt too high another part of the brain lit up. The part that feels pain.",
+   "host": true,
+   "mood": "shock",
+   "pose": "panic",
+   "zoom": {
+    "in": "feels",
+    "out": "pain"
+   },
+   "sfx": [
+    {
+     "s": "cash",
+     "at": "price"
+    },
+    {
+     "s": "pack/02_deep",
+     "at": "pain"
+    }
+   ]
+  },
+  {
+   "id": "n33",
+   "text": "Which makes sense. Grug's brain treats losing stuff like losing food. Losing hurts. And if paying hurts enough Grug walks away.",
+   "pic": {
+    "id": "empty_plate",
+    "at": "food",
+    "look": "sticker"
+   },
+   "sfx": [
+    {
+     "s": "trombone",
+     "at": "Losing"
+    },
+    {
+     "s": "whoosh",
+     "at": "walks"
+    }
+   ]
+  },
+  {
+   "id": "n5",
+   "text": "So buying something is a fight inside your head. Pleasure on one side. Pain on the other. And whoever wins decides if you click buy.",
+   "pic": {
+    "id": "boxing",
+    "at": "fight",
+    "look": "tape"
+   },
+   "sfx": [
+    {
+     "s": "pack/03_evolve_boom_brass_d",
+     "at": "fight"
+    },
+    {
+     "s": "ding",
+     "at": "Pleasure"
+    },
+    {
+     "s": "thud",
+     "at": "Pain"
+    },
+    {
+     "s": "click",
+     "at": "buy"
+    }
+   ]
+  },
+  {
+   "id": "n6",
+   "text": "My brain at checkout.",
+   "meme": {
+    "t": "vs",
+    "a": "Pleasure: buy it",
+    "b": "Pain: that's rent money",
+    "at": "checkout"
+   },
+   "sfx": [
+    {
+     "s": "pop",
+     "at": "checkout"
+    }
+   ]
+  },
+  {
+   "id": "c3d",
+   "text": "And now here's the sneaky part. What if somebody could turn down the pain? Then pleasure wins every single time.",
+   "host": true,
+   "mood": "suspicious",
+   "pose": "hips",
+   "sfx": [
+    {
+     "s": "sting",
+     "at": "sneaky"
+    },
+    {
+     "s": "boom",
+     "at": "time"
+    }
+   ]
+  },
+  {
+   "id": "c3e",
+   "text": "Somebody did. It's called a credit card.",
+   "card": {
+    "t": "It's called a credit card.",
+    "dark": true
+   },
+   "sfx": [
+    {
+     "s": "drumroll",
+     "at": "Somebody"
+    },
+    {
+     "s": "pack/01_boom",
+     "at": "card"
+    }
+   ],
+   "pause": 0.5
+  },
+  {
+   "id": "c3f",
+   "text": "Two professors at MIT once auctioned real basketball tickets. Half the people had to pay cash. The other half could pay with a card.",
+   "pic": {
+    "id": "basketball",
+    "at": "basketball",
+    "look": "polaroid",
+    "label": "real tickets"
+   },
+   "sfx": [
+    {
+     "s": "ding",
+     "at": "MIT"
+    },
+    {
+     "s": "pop",
+     "at": "tickets"
+    },
+    {
+     "s": "coin",
+     "at": "cash"
+    },
+    {
+     "s": "click",
+     "at": "card"
+    }
+   ]
+  },
+  {
+   "id": "c3g",
+   "text": "Same tickets. Same game. The card people offered about twice as much money.",
+   "host": true,
+   "mood": "shock",
+   "pose": "panic",
+   "slam": {
+    "t": "2X MORE WITH A CARD",
+    "at": "twice"
+   },
+   "sfx": [
+    {
+     "s": "scratch",
+     "at": "Same"
+    },
+    {
+     "s": "pack/02_deep",
+     "at": "twice"
+    },
+    {
+     "s": "cash",
+     "at": "money"
+    }
+   ]
+  },
+  {
+   "id": "n7",
+   "text": "Cash feels like losing something. You watch the bills leave your hand. A card feels like nothing. A little beep. And the pain never shows up.",
+   "pic": {
+    "id": "cash_hand",
+    "at": "bills",
+    "look": "tape"
+   },
+   "sfx": [
+    {
+     "s": "cash",
+     "at": "bills"
+    },
+    {
+     "s": "click",
+     "at": "beep"
+    },
+    {
+     "s": "cricket",
+     "at": "pain"
+    }
+   ]
+  },
+  {
+   "id": "n34",
+   "text": "Have you noticed how easy it is to spend fifty dollars on an app but how hard it is to hand someone a fifty dollar bill? Same fifty dollars. Totally different feeling.",
+   "host": true,
+   "mood": "suspicious",
+   "pose": "point_r",
+   "pic": {
+    "id": "fifty",
+    "at": "bill",
+    "look": "tape"
+   },
+   "sfx": [
+    {
+     "s": "click",
+     "at": "app"
+    },
+    {
+     "s": "cash",
+     "at": "bill"
+    },
+    {
+     "s": "boom",
+     "at": "feeling"
+    }
+   ]
+  },
+  {
+   "id": "n8",
+   "text": "Me paying with cash versus paying with my phone.",
+   "meme": {
+    "t": "drake",
+    "a": "Handing over $100 bills",
+    "b": "Tapping my phone",
+    "at": "phone"
+   },
+   "sfx": [
+    {
+     "s": "click",
+     "at": "phone"
+    }
+   ]
+  },
+  {
+   "id": "c3h",
+   "text": "And now it's even easier. Tap your phone. Save your card in the app. One click buy. Every step you skip is a little less pain.",
+   "host": true,
+   "mood": "tired",
+   "pose": "facepalm",
+   "pic": {
+    "id": "tap_pay",
+    "at": "Tap",
+    "look": "circle"
+   },
+   "sfx": [
+    {
+     "s": "click",
+     "at": "Tap"
+    },
+    {
+     "s": "click",
+     "at": "click"
+    },
+    {
+     "s": "boom",
+     "at": "pain"
+    }
+   ]
+  },
+  {
+   "id": "n35",
+   "text": "Casinos figured this out decades ago. That's why you don't bet with dollars at a casino. You bet with plastic chips. Chips don't feel like money. So you lose more.",
+   "pic": {
+    "id": "chips",
+    "at": "chips",
+    "look": "polaroid"
+   },
+   "sfx": [
+    {
+     "s": "coin",
+     "at": "chips"
+    },
+    {
+     "s": "ding",
+     "at": "money"
+    },
+    {
+     "s": "trombone",
+     "at": "more"
+    }
+   ]
+  },
+  {
+   "id": "n36",
+   "text": "Casinos when they invented chips.",
+   "meme": {
+    "t": "stonks",
+    "a": "MONEY THAT DOESN'T FEEL LIKE MONEY",
+    "at": "chips"
+   },
+   "sfx": [
+    {
+     "s": "cash",
+     "at": "chips"
+    }
+   ]
+  },
+  {
+   "id": "n9",
+   "text": "It's like taking the brakes out of a car because they slow you down. Technically yes. That's what brakes are for.",
+   "pic": {
+    "id": "brakes",
+    "at": "brakes",
+    "look": "sticker"
+   },
+   "sfx": [
+    {
+     "s": "ding",
+     "at": "brakes"
+    },
+    {
+     "s": "boing",
+     "at": "slow"
+    },
+    {
+     "s": "boom",
+     "at": "for"
+    }
+   ]
+  },
+  {
+   "id": "c4a",
+   "text": "And this is where it gets dark. Because companies know all of this. They study it. They hire people whose whole job is to talk to your Grug brain.",
+   "chapter": "Who Is Talking To Grug",
+   "host": true,
+   "mood": "angry",
+   "pose": "point_r",
+   "slam": {
+    "t": "THEY KNOW",
+    "at": "know"
+   },
+   "sfx": [
+    {
+     "s": "sting",
+     "at": "dark"
+    },
+    {
+     "s": "stamp",
+     "at": "know"
+    },
+    {
+     "s": "pack/01_beating",
+     "at": "Grug"
+    }
+   ]
+  },
+  {
+   "id": "c4b",
+   "text": "Only three left in stock. That's Grug hearing there are only three berries left and a bear is coming.",
+   "pic": {
+    "id": "stock_sign",
+    "at": "stock",
+    "look": "tape"
+   },
+   "sfx": [
+    {
+     "s": "tick",
+     "at": "three"
+    },
+    {
+     "s": "pack/02_deep",
+     "at": "bear"
+    }
+   ]
+  },
+  {
+   "id": "c4c",
+   "text": "Twelve people are looking at this right now. That's Grug seeing the whole tribe walking toward his bush.",
+   "pic": {
+    "id": "crowd",
+    "at": "tribe",
+    "look": "polaroid"
+   },
+   "sfx": [
+    {
+     "s": "crowd",
+     "at": "people"
+    },
+    {
+     "s": "whoosh",
+     "at": "walking"
+    }
+   ]
+  },
+  {
+   "id": "c4d",
+   "text": "Offer ends in nine minutes. A countdown timer. Grug can't think when something is running out. So he grabs.",
+   "host": true,
+   "mood": "shock",
+   "pose": "panic",
+   "pic": {
+    "id": "timer",
+    "at": "timer",
+    "look": "circle"
+   },
+   "zoom": {
+    "in": "he",
+    "out": "grabs"
+   },
+   "sfx": [
+    {
+     "s": "tick",
+     "at": "nine"
+    },
+    {
+     "s": "tick",
+     "at": "timer"
+    },
+    {
+     "s": "boom",
+     "at": "grabs"
+    }
+   ]
+  },
+  {
+   "id": "n10",
+   "text": "Me buying something because a timer told me to.",
+   "meme": {
+    "t": "buttons",
+    "a": "Think about it",
+    "b": "Buy before the timer ends",
+    "at": "timer"
+   },
+   "sfx": [
+    {
+     "s": "pack/01_beating",
+     "at": "timer"
+    }
+   ]
+  },
+  {
+   "id": "c4e",
+   "text": "And the free shipping if you spend fifteen more dollars? Grug spends twenty more dollars to save five. And feels like a genius.",
+   "host": true,
+   "mood": "grin",
+   "pose": "celebrate",
+   "pic": {
+    "id": "boxes",
+    "at": "shipping",
+    "look": "tape"
+   },
+   "sfx": [
+    {
+     "s": "ding",
+     "at": "free"
+    },
+    {
+     "s": "cash",
+     "at": "twenty"
+    },
+    {
+     "s": "crowd",
+     "at": "genius"
+    }
+   ]
+  },
+  {
+   "id": "n37",
+   "text": "And buy now pay later? That's the dream. Grug gets the berry today and pays in little pieces later. And later Grug isn't Grug's problem.",
+   "host": true,
+   "mood": "angry",
+   "pose": "talk",
+   "pic": {
+    "id": "installments",
+    "at": "pieces",
+    "look": "circle"
+   },
+   "sfx": [
+    {
+     "s": "pop",
+     "at": "berry"
+    },
+    {
+     "s": "coin",
+     "at": "pieces"
+    },
+    {
+     "s": "boom",
+     "at": "problem"
+    }
+   ]
+  },
+  {
+   "id": "n11",
+   "text": "Then there's the little red dot on your apps. The notification. Your brain can't stand it. It's like an itch you have to scratch.",
+   "pic": {
+    "id": "notification",
+    "at": "notification",
+    "look": "circle"
+   },
+   "sfx": [
+    {
+     "s": "ding",
+     "at": "dot"
+    },
+    {
+     "s": "pop",
+     "at": "notification"
+    },
+    {
+     "s": "boing",
+     "at": "scratch"
+    }
+   ]
+  },
+  {
+   "id": "c4f",
+   "text": "And the scroll that never ends. There's no bottom. Grug just keeps walking through the forest finding more and more berries.",
+   "pic": {
+    "id": "forest",
+    "at": "forest",
+    "look": "polaroid"
+   },
+   "sfx": [
+    {
+     "s": "whoosh",
+     "at": "scroll"
+    },
+    {
+     "s": "ding",
+     "at": "forest"
+    },
+    {
+     "s": "pop",
+     "at": "berries"
+    }
+   ]
+  },
+  {
+   "id": "n38",
+   "text": "And the ads follow you. You looked at one pair of shoes once. Now those shoes are on every website you visit for a week. Like a berry bush that walks behind you.",
+   "pic": {
+    "id": "billboard",
+    "at": "ads",
+    "look": "tape"
+   },
+   "sfx": [
+    {
+     "s": "whoosh",
+     "at": "follow"
+    },
+    {
+     "s": "pop",
+     "at": "shoes"
+    },
+    {
+     "s": "boing",
+     "at": "walks"
+    }
+   ]
+  },
+  {
+   "id": "n39",
+   "text": "The shoes I looked at once.",
+   "meme": {
+    "t": "fine",
+    "a": "Following you since Tuesday",
+    "at": "shoes"
+   },
+   "sfx": [
+    {
+     "s": "cricket",
+     "at": "shoes"
+    }
+   ]
+  },
+  {
+   "id": "n12",
+   "text": "Online shopping after midnight.",
+   "meme": {
+    "t": "brain",
+    "a": "Just looking",
+    "b": "Adding to cart",
+    "c": "Express shipping",
+    "at": "midnight"
+   },
+   "sfx": [
+    {
+     "s": "pack/01_processing",
+     "at": "midnight"
+    }
+   ]
+  },
+  {
+   "id": "c4g",
+   "text": "Here's the part that changed how I see myself. The marshmallow test. Kids get one marshmallow now or two if they wait. The story was the kids who waited became more successful.",
+   "pic": {
+    "id": "marshmallow",
+    "at": "marshmallow",
+    "look": "sticker"
+   },
+   "sfx": [
+    {
+     "s": "ding",
+     "at": "marshmallow"
+    },
+    {
+     "s": "pop",
+     "at": "two"
+    },
+    {
+     "s": "ding",
+     "at": "successful"
+    }
+   ]
+  },
+  {
+   "id": "c4h",
+   "text": "But when scientists ran it again with way more kids a lot of that difference shrank. It had a lot to do with the kid's home. Kids who grew up unsure there'd be a second marshmallow took the first one.",
+   "host": true,
+   "mood": "think",
+   "pose": "think",
+   "slam": {
+    "t": "IT'S NOT WEAKNESS",
+    "at": "unsure"
+   },
+   "sfx": [
+    {
+     "s": "pack/01_processing",
+     "at": "again"
+    },
+    {
+     "s": "scratch",
+     "at": "shrank"
+    },
+    {
+     "s": "ding",
+     "at": "first"
+    }
+   ]
+  },
+  {
+   "id": "n13",
+   "text": "That's not weakness. That's Grug logic. When tomorrow feels shaky your brain grabs today. And money stress makes tomorrow feel very shaky.",
+   "card": {
+    "t": "It's not weakness. It's Grug.",
+    "dark": true
+   },
+   "sfx": [
+    {
+     "s": "pack/01_boom",
+     "at": "logic"
+    },
+    {
+     "s": "sting",
+     "at": "shaky#2"
+    }
+   ],
+   "pause": 0.5
+  },
+  {
+   "id": "n14",
+   "text": "So if you've ever felt like a failure because you can't save. You're not broken. You're running very old software in a world built to hack it.",
+   "host": true,
+   "mood": "happy",
+   "pose": "present",
+   "zoom": {
+    "in": "not",
+    "out": "broken"
+   },
+   "sfx": [
+    {
+     "s": "ding",
+     "at": "failure"
+    },
+    {
+     "s": "boom",
+     "at": "broken"
+    },
+    {
+     "s": "pack/01_evolve_brassy_swell",
+     "at": "hack"
+    }
+   ]
+  },
+  {
+   "id": "n40",
+   "text": "And here's the thing nobody says. The people telling you to just have more discipline usually have a safety net. When you know there's a second marshmallow waiting is easy.",
+   "host": true,
+   "mood": "smug",
+   "pose": "hips",
+   "pic": {
+    "id": "net",
+    "at": "net",
+    "look": "sticker"
+   },
+   "sfx": [
+    {
+     "s": "ding",
+     "at": "discipline"
+    },
+    {
+     "s": "pop",
+     "at": "marshmallow"
+    },
+    {
+     "s": "boom",
+     "at": "easy"
+    }
+   ]
+  },
+  {
+   "id": "n15",
+   "text": "Me finding out it's not entirely my fault.",
+   "meme": {
+    "t": "stonks",
+    "a": "SELF ESTEEM RECOVERED",
+    "at": "fault"
+   },
+   "sfx": [
+    {
+     "s": "crowd",
+     "at": "fault"
+    }
+   ]
+  },
+  {
+   "id": "c4i",
+   "text": "Remember the gym video? January me signing a contract for future me. Same Grug. Different berry.",
+   "host": true,
+   "mood": "grin",
+   "pose": "point_r",
+   "pic": {
+    "id": "gym",
+    "at": "gym",
+    "look": "tape"
+   },
+   "sfx": [
+    {
+     "s": "flip",
+     "at": "gym"
+    },
+    {
+     "s": "boing",
+     "at": "berry"
+    }
+   ]
+  },
+  {
+   "id": "c4j",
+   "text": "And now the big question. If willpower is fighting a million years of instinct how does anyone ever save money?",
+   "host": true,
+   "mood": "think",
+   "pose": "think",
+   "sfx": [
+    {
+     "s": "riser",
+     "at": "question"
+    },
+    {
+     "s": "pack/01_beating",
+     "at": "money"
+    }
+   ]
+  },
+  {
+   "id": "c5a",
+   "text": "Here's what I learned. People who save money aren't stronger than you. They just stopped fighting Grug. They went around him. Quick reminder this is education and not advice.",
+   "chapter": "Stop Fighting Grug",
+   "host": true,
+   "mood": "smug",
+   "pose": "point_up",
+   "slam": {
+    "t": "GO AROUND HIM",
+    "at": "around"
+   },
+   "sfx": [
+    {
+     "s": "scratch",
+     "at": "stronger"
+    },
+    {
+     "s": "ding",
+     "at": "around"
+    },
+    {
+     "s": "stamp",
+     "at": "advice"
+    }
+   ]
+  },
+  {
+   "id": "c5b",
+   "text": "The trick is simple. Make the saving happen before Grug ever sees the money. Automatic. On payday. Without asking you.",
+   "host": true,
+   "mood": "happy",
+   "pose": "present",
+   "pic": {
+    "id": "calendar",
+    "at": "payday",
+    "look": "circle"
+   },
+   "sfx": [
+    {
+     "s": "ding",
+     "at": "trick"
+    },
+    {
+     "s": "pack/01_evolve_brassy_swell",
+     "at": "Automatic"
+    },
+    {
+     "s": "cash",
+     "at": "payday"
+    }
+   ]
+  },
+  {
+   "id": "c5c",
+   "text": "Because Grug can only spend what he can see. If the money moves to savings or into an investment the second your paycheck lands Grug never even knows it existed.",
+   "pic": {
+    "id": "piggy",
+    "at": "savings",
+    "look": "sticker"
+   },
+   "sfx": [
+    {
+     "s": "whoosh",
+     "at": "moves"
+    },
+    {
+     "s": "coin",
+     "at": "investment"
+    },
+    {
+     "s": "cricket",
+     "at": "existed"
+    }
+   ]
+  },
+  {
+   "id": "n41",
+   "text": "Out of sight out of mind. Your savings account is the top shelf. Your checking account is the berry bush right next to the cave.",
+   "pic": {
+    "id": "shelf",
+    "at": "shelf",
+    "look": "tape"
+   },
+   "sfx": [
+    {
+     "s": "whoosh",
+     "at": "sight"
+    },
+    {
+     "s": "ding",
+     "at": "shelf"
+    },
+    {
+     "s": "pop",
+     "at": "bush"
+    }
+   ]
+  },
+  {
+   "id": "n16",
+   "text": "It's like hiding the cookies on the top shelf. You still could get them. But you'd need a chair. And Grug is lazy.",
+   "pic": {
+    "id": "cookies",
+    "at": "cookies",
+    "look": "tape"
+   },
+   "zoom": {
+    "in": "Grug",
+    "out": "lazy"
+   },
+   "sfx": [
+    {
+     "s": "pop",
+     "at": "cookies"
+    },
+    {
+     "s": "boing",
+     "at": "chair"
+    },
+    {
+     "s": "boom",
+     "at": "lazy"
+    }
+   ]
+  },
+  {
+   "id": "n17",
+   "text": "Me setting up automatic savings once and never thinking about it again.",
+   "meme": {
+    "t": "drake",
+    "a": "Saving with willpower",
+    "b": "Saving on autopilot",
+    "at": "automatic"
+   },
+   "sfx": [
+    {
+     "s": "pop",
+     "at": "automatic"
+    }
+   ]
+  },
+  {
+   "id": "c5d",
+   "text": "Two economists tested this with real workers. Instead of asking people to save more now they asked them to save more later. Every time they got a raise a little more went to savings.",
+   "pic": {
+    "id": "office",
+    "at": "workers",
+    "look": "polaroid"
+   },
+   "sfx": [
+    {
+     "s": "ding",
+     "at": "tested"
+    },
+    {
+     "s": "tick",
+     "at": "later"
+    },
+    {
+     "s": "cash",
+     "at": "raise"
+    }
+   ]
+  },
+  {
+   "id": "c5e",
+   "text": "Grug said sure. Later sounds easy. Later is not my problem. And years later those workers were saving way more than before. Without feeling any pain.",
+   "host": true,
+   "mood": "money",
+   "pose": "celebrate",
+   "slam": {
+    "t": "SAVE MORE TOMORROW",
+    "at": "saving"
+   },
+   "sfx": [
+    {
+     "s": "boing",
+     "at": "sure"
+    },
+    {
+     "s": "pack/03_evolve_boom_brass_d",
+     "at": "saving"
+    },
+    {
+     "s": "crowd",
+     "at": "pain"
+    }
+   ]
+  },
+  {
+   "id": "n18",
+   "text": "They used Grug's own weakness against him. He loves now and ignores later. So they put the saving in later. Genius.",
+   "host": true,
+   "mood": "grin",
+   "pose": "point_up",
+   "zoom": {
+    "in": "Genius",
+    "out": "Genius"
+   },
+   "sfx": [
+    {
+     "s": "ding",
+     "at": "weakness"
+    },
+    {
+     "s": "pack/01_boom",
+     "at": "Genius"
+    }
+   ]
+  },
+  {
+   "id": "c5f",
+   "text": "Second trick. Put some pain back. Delete your saved card from shopping apps. Now every purchase needs you to go find your wallet. Grug hates walking to the other room.",
+   "pic": {
+    "id": "wallet",
+    "at": "wallet",
+    "look": "circle"
+   },
+   "sfx": [
+    {
+     "s": "pack/02_evolve_brassy_drop_2",
+     "at": "Delete"
+    },
+    {
+     "s": "ding",
+     "at": "wallet"
+    },
+    {
+     "s": "boing",
+     "at": "room"
+    }
+   ]
+  },
+  {
+   "id": "n19",
+   "text": "Third. The twenty four hour rule. Want something that isn't food or rent? Leave it in the cart for a day. Half the time tomorrow me doesn't even remember what it was.",
+   "host": true,
+   "mood": "smug",
+   "pose": "point_r",
+   "pic": {
+    "id": "hourglass",
+    "at": "day",
+    "look": "tape"
+   },
+   "sfx": [
+    {
+     "s": "tick",
+     "at": "twenty"
+    },
+    {
+     "s": "tick",
+     "at": "day"
+    },
+    {
+     "s": "cricket",
+     "at": "was"
+    }
+   ]
+  },
+  {
+   "id": "n42",
+   "text": "I tried it with a pair of headphones. Day one I needed them. Day two I kind of wanted them. Day three I forgot they existed. Saved a hundred and twenty dollars by doing nothing.",
+   "host": true,
+   "mood": "money",
+   "pose": "celebrate",
+   "pic": {
+    "id": "headphones",
+    "at": "headphones",
+    "look": "polaroid"
+   },
+   "slam": {
+    "t": "SAVED $120",
+    "at": "Saved"
+   },
+   "sfx": [
+    {
+     "s": "tick",
+     "at": "one"
+    },
+    {
+     "s": "tick",
+     "at": "two"
+    },
+    {
+     "s": "cricket",
+     "at": "forgot"
+    },
+    {
+     "s": "cash",
+     "at": "Saved"
+    }
+   ]
+  },
+  {
+   "id": "n43",
+   "text": "Me after the twenty four hour rule.",
+   "meme": {
+    "t": "drake",
+    "a": "Buying at 2 AM",
+    "b": "Buying nothing at 2 PM",
+    "at": "rule"
+   },
+   "sfx": [
+    {
+     "s": "pop",
+     "at": "rule"
+    }
+   ]
+  },
+  {
+   "id": "n20",
+   "text": "My cart after twenty four hours.",
+   "meme": {
+    "t": "fine",
+    "a": "Cat lamp: no longer needed",
+    "at": "cart"
+   },
+   "sfx": [
+    {
+     "s": "cricket",
+     "at": "cart"
+    }
+   ]
+  },
+  {
+   "id": "c5g",
+   "text": "And fourth. Turn off the shopping notifications. Every red dot is someone tapping Grug on the shoulder saying hey berries.",
+   "pic": {
+    "id": "phone_off",
+    "at": "notifications",
+    "look": "sticker"
+   },
+   "sfx": [
+    {
+     "s": "click",
+     "at": "Turn"
+    },
+    {
+     "s": "pop",
+     "at": "dot"
+    },
+    {
+     "s": "boing",
+     "at": "berries"
+    }
+   ]
+  },
+  {
+   "id": "c5h",
+   "text": "And the best part is investing works the same way. If a little money goes into an investment automatically every month Grug can't panic and pull it out every time the news gets scary.",
+   "host": true,
+   "mood": "happy",
+   "pose": "thumbs",
+   "pic": {
+    "id": "chart",
+    "at": "investing",
+    "look": "tape"
+   },
+   "sfx": [
+    {
+     "s": "ding",
+     "at": "investing"
+    },
+    {
+     "s": "cash",
+     "at": "month"
+    },
+    {
+     "s": "sting",
+     "at": "scary"
+    }
+   ]
+  },
+  {
+   "id": "n21",
+   "text": "Grug checking his investments every day versus Grug who forgot he even has them.",
+   "meme": {
+    "t": "vs",
+    "a": "Checks daily: panics",
+    "b": "Forgot about it: rich",
+    "at": "forgot"
+   },
+   "sfx": [
+    {
+     "s": "pack/01_beating",
+     "at": "checking"
+    }
+   ]
+  },
+  {
+   "id": "c5i",
+   "text": "The less Grug touches it the better it grows. That's the funniest thing about money. Sometimes doing nothing is the smartest move.",
+   "host": true,
+   "mood": "grin",
+   "pose": "shrug",
+   "pic": {
+    "id": "seedling",
+    "at": "grows",
+    "look": "circle"
+   },
+   "zoom": {
+    "in": "doing",
+    "out": "nothing"
+   },
+   "sfx": [
+    {
+     "s": "pack/01_evolve_brassy_swell",
+     "at": "grows"
+    },
+    {
+     "s": "boom",
+     "at": "nothing"
+    }
+   ]
+  },
+  {
+   "id": "n44",
+   "text": "Every year I look at it and think wait I did that? No. Grug didn't. The system did. I just set it up once and walked away.",
+   "host": true,
+   "mood": "happy",
+   "pose": "thumbs",
+   "zoom": {
+    "in": "system",
+    "out": "did#2"
+   },
+   "sfx": [
+    {
+     "s": "ding",
+     "at": "year"
+    },
+    {
+     "s": "pack/03_evolve_boom_brass_d",
+     "at": "system"
+    },
+    {
+     "s": "boom",
+     "at": "did#2"
+    }
+   ]
+  },
+  {
+   "id": "r1",
+   "text": "So that's the trick. Don't fight your brain. Build a system so your brain never gets the chance to say yes.",
+   "host": true,
+   "mood": "smug",
+   "pose": "point_up",
+   "slam": {
+    "t": "BUILD A SYSTEM",
+    "at": "system"
+   },
+   "sfx": [
+    {
+     "s": "drumroll",
+     "at": "trick"
+    },
+    {
+     "s": "pack/01_boom",
+     "at": "system"
+    }
+   ]
+  },
+  {
+   "id": "r2",
+   "text": "You're not bad with money. You're a caveman in a mall. And the mall knows it.",
+   "card": {
+    "t": "A caveman in a mall.",
+    "dark": true
+   },
+   "sfx": [
+    {
+     "s": "pack/01_boom",
+     "at": "mall#2"
+    }
+   ],
+   "pause": 0.5
+  },
+  {
+   "id": "r3",
+   "text": "Oh and the cat lamp? I kept it. Grug won that one. But my savings went up anyway. Because now they leave before he wakes up.",
+   "host": true,
+   "mood": "grin",
+   "pose": "shrug",
+   "pic": {
+    "id": "lamp",
+    "at": "lamp",
+    "look": "sticker"
+   },
+   "sfx": [
+    {
+     "s": "boing",
+     "at": "lamp"
+    },
+    {
+     "s": "ding",
+     "at": "savings"
+    },
+    {
+     "s": "crowd",
+     "at": "wakes"
+    }
+   ]
+  },
+  {
+   "id": "r4",
+   "text": "Next time I find out why rich kids stay rich and poor kids stay poor. And it's not just the money they get.",
+   "pic": {
+    "id": "mansion",
+    "at": "rich",
+    "look": "polaroid"
+   },
+   "sfx": [
+    {
+     "s": "ding",
+     "at": "rich"
+    },
+    {
+     "s": "scratch",
+     "at": "money"
+    }
+   ]
+  },
+  {
+   "id": "r5",
+   "text": "Subscribe. It's free. And for once Grug and I agree on something.",
+   "host": true,
+   "mood": "grin",
+   "pose": "wave",
+   "zoom": {
+    "in": "Grug",
+    "out": "something"
+   },
+   "sfx": [
+    {
+     "s": "ding",
+     "at": "Subscribe"
+    },
+    {
+     "s": "boom",
+     "at": "something"
+    }
+   ]
+  }
+ ]
+}
