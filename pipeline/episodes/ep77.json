@@ -1,0 +1,1964 @@
+{
+ "id": "ep77",
+ "title": "Why Hard Work Stopped Making People Rich",
+ "voice": "chatterbox",
+ "upgraded": "2026-10-19 UPGRADE.md v2",
+ "sources": [
+  "Economic Policy Institute, The Productivity-Pay Gap (2025 update): 1979-2024 net productivity +80.9% vs typical worker hourly compensation +29.4%",
+  "BLS TED (2026): nonfarm business labor share 52.8% in Q2 2026, lowest on record",
+  "S&P Dow Jones Indices / company filings on share buybacks (general)",
+  "Economic Policy Institute, The Productivity-Pay Gap (2025 update): 1979-2024 net productivity +80.9% vs typical worker hourly compensation +29.4%",
+  "BLS TED (2026): nonfarm business labor share 52.8% in Q2 2026, lowest on record",
+  "S&P Dow Jones Indices / company filings on share buybacks (general)",
+  "Economic Policy Institute, The Productivity-Pay Gap (2025 update): 1979-2024 net productivity +80.9% vs typical worker hourly compensation +29.4%",
+  "BLS TED (2026): nonfarm business labor share 52.8% in Q2 2026, lowest on record",
+  "S&P Dow Jones Indices / company filings on share buybacks (general)"
+ ],
+ "youtube": {},
+ "beats": [
+  {
+   "id": "o1",
+   "text": "This is me finishing my second shift of the day. Sixteen hours. My feet feel like two angry bricks.",
+   "host": true,
+   "mood": "tired",
+   "pose": "facepalm",
+   "pic": {
+    "id": "warehouse",
+    "at": "shift",
+    "look": "polaroid",
+    "label": "shift #2"
+   },
+   "slam": {
+    "t": "16 HOURS",
+    "at": "Sixteen"
+   },
+   "sfx": [
+    {
+     "s": "pack/01_beating",
+     "at": "second"
+    },
+    {
+     "s": "tick",
+     "at": "Sixteen"
+    },
+    {
+     "s": "thud",
+     "at": "bricks"
+    }
+   ],
+   "pause": 0.15
+  },
+  {
+   "id": "o2",
+   "text": "And this is my landlord. Right now he is asleep. And tonight he is making more money than me.",
+   "pic": {
+    "id": "sleeping",
+    "at": "asleep",
+    "look": "tape"
+   },
+   "sfx": [
+    {
+     "s": "ding",
+     "at": "landlord"
+    },
+    {
+     "s": "boing",
+     "at": "asleep"
+    },
+    {
+     "s": "cash",
+     "at": "money"
+    }
+   ],
+   "pause": 0.15
+  },
+  {
+   "id": "o3",
+   "text": "He's asleep.",
+   "card": {
+    "t": "He's asleep.",
+    "dark": true
+   },
+   "sfx": [
+    {
+     "s": "scratch",
+     "at": "asleep"
+    }
+   ],
+   "pause": 0.3
+  },
+  {
+   "id": "o4",
+   "text": "My grandpa always told me work hard and you'll be fine. And he wasn't lying. In his time it was true.",
+   "host": true,
+   "mood": "sad",
+   "pose": "talk",
+   "pic": {
+    "id": "grandpa",
+    "at": "grandpa",
+    "look": "polaroid",
+    "label": "grandpa, 1965"
+   },
+   "zoom": {
+    "in": "his",
+    "out": "true"
+   },
+   "sfx": [
+    {
+     "s": "flip",
+     "at": "grandpa"
+    },
+    {
+     "s": "boom",
+     "at": "true"
+    }
+   ],
+   "pause": 0.15
+  },
+  {
+   "id": "o5",
+   "text": "By the end of this video you'll know the exact moment hard work stopped paying and the one switch that puts you on the other side.",
+   "host": true,
+   "mood": "suspicious",
+   "pose": "point_r",
+   "slam": {
+    "t": "ONE SWITCH",
+    "at": "switch"
+   },
+   "sfx": [
+    {
+     "s": "ding",
+     "at": "moment"
+    },
+    {
+     "s": "click",
+     "at": "switch"
+    },
+    {
+     "s": "boom",
+     "at": "side"
+    }
+   ],
+   "pause": 0.15
+  },
+  {
+   "id": "o6",
+   "text": "But most people never find out because they're too tired to finish the video. Which is kind of the whole point.",
+   "host": true,
+   "mood": "worried",
+   "pose": "hips",
+   "sfx": [
+    {
+     "s": "pack/01_beating",
+     "at": "tired"
+    },
+    {
+     "s": "sting",
+     "at": "point"
+    }
+   ],
+   "pause": 0.3
+  },
+  {
+   "id": "c1a",
+   "text": "So let me tell you about grandpa's deal. He worked at a factory. One job. Forty hours a week.",
+   "chapter": "Grandpa's Deal",
+   "pic": {
+    "id": "factory",
+    "at": "factory",
+    "look": "polaroid",
+    "label": "grandpa's job"
+   },
+   "sfx": [
+    {
+     "s": "ding",
+     "at": "deal"
+    },
+    {
+     "s": "thud",
+     "at": "factory"
+    },
+    {
+     "s": "tick",
+     "at": "Forty"
+    }
+   ]
+  },
+  {
+   "id": "c1b",
+   "text": "With that one paycheck he bought a house. A car. He fed four kids. And grandma didn't even have to work if she didn't want to.",
+   "host": true,
+   "mood": "shock",
+   "pose": "panic",
+   "pic": {
+    "id": "suburb_house",
+    "at": "house",
+    "look": "tape"
+   },
+   "sfx": [
+    {
+     "s": "ding",
+     "at": "house"
+    },
+    {
+     "s": "ding",
+     "at": "car"
+    },
+    {
+     "s": "pop",
+     "at": "kids"
+    },
+    {
+     "s": "scratch",
+     "at": "grandma"
+    }
+   ]
+  },
+  {
+   "id": "n30",
+   "text": "Grandma still talks about their first color TV like it was a moon landing. They paid cash. Cash. Who pays cash for anything?",
+   "pic": {
+    "id": "old_tv",
+    "at": "TV",
+    "look": "polaroid",
+    "label": "first color TV"
+   },
+   "sfx": [
+    {
+     "s": "ding",
+     "at": "TV"
+    },
+    {
+     "s": "pack/01_evolve_brassy_swell",
+     "at": "landing"
+    },
+    {
+     "s": "cash",
+     "at": "Cash#2"
+    }
+   ]
+  },
+  {
+   "id": "n1",
+   "text": "Me hearing that one paycheck bought a house and a car and four kids.",
+   "meme": {
+    "t": "fine",
+    "a": "Me with two jobs and a roommate",
+    "at": "paycheck"
+   },
+   "sfx": [
+    {
+     "s": "cricket",
+     "at": "kids"
+    }
+   ]
+  },
+  {
+   "id": "c1c",
+   "text": "He wasn't a genius. He wasn't lucky. He just worked. And every year the company made more stuff and grandpa got a bigger slice.",
+   "host": true,
+   "mood": "happy",
+   "pose": "present",
+   "pic": {
+    "id": "cake",
+    "at": "slice",
+    "look": "sticker"
+   },
+   "sfx": [
+    {
+     "s": "scratch",
+     "at": "genius"
+    },
+    {
+     "s": "scratch",
+     "at": "lucky"
+    },
+    {
+     "s": "pack/01_evolve_brassy_swell",
+     "at": "slice"
+    }
+   ]
+  },
+  {
+   "id": "c1d",
+   "text": "That was the deal back then. If the factory got better at making stuff the workers got richer too. The boss and the worker climbed the stairs together.",
+   "pic": {
+    "id": "stairs",
+    "at": "stairs",
+    "look": "tape"
+   },
+   "sfx": [
+    {
+     "s": "ding",
+     "at": "deal"
+    },
+    {
+     "s": "step",
+     "at": "climbed"
+    },
+    {
+     "s": "ding",
+     "at": "together"
+    }
+   ]
+  },
+  {
+   "id": "n31",
+   "text": "When the company had a great year there was a Christmas bonus and a turkey for every family. A whole turkey. My job gave me a mug.",
+   "pic": {
+    "id": "turkey",
+    "at": "turkey",
+    "look": "tape"
+   },
+   "sfx": [
+    {
+     "s": "ding",
+     "at": "bonus"
+    },
+    {
+     "s": "pop",
+     "at": "turkey"
+    },
+    {
+     "s": "trombone",
+     "at": "mug"
+    }
+   ]
+  },
+  {
+   "id": "n2",
+   "text": "It's like rowing a boat with your friend. You row harder. The boat goes faster. You both get to the beach sooner. Fair.",
+   "pic": {
+    "id": "rowing",
+    "at": "boat",
+    "look": "polaroid"
+   },
+   "sfx": [
+    {
+     "s": "whoosh",
+     "at": "row"
+    },
+    {
+     "s": "ding",
+     "at": "beach"
+    },
+    {
+     "s": "stamp",
+     "at": "Fair"
+    }
+   ]
+  },
+  {
+   "id": "c1e",
+   "text": "So of course grandpa believed in hard work. In his world it worked. Every single time.",
+   "host": true,
+   "mood": "smug",
+   "pose": "point_up",
+   "zoom": {
+    "in": "Every",
+    "out": "time"
+   },
+   "sfx": [
+    {
+     "s": "ding",
+     "at": "worked"
+    },
+    {
+     "s": "boom",
+     "at": "time"
+    }
+   ]
+  },
+  {
+   "id": "c1f",
+   "text": "Now here's me. Same hard work. Actually more of it. Two jobs. Side gigs. Delivering food at night.",
+   "host": true,
+   "mood": "tired",
+   "pose": "talk",
+   "pic": {
+    "id": "delivery_bike",
+    "at": "Delivering",
+    "look": "tape"
+   },
+   "sfx": [
+    {
+     "s": "pack/01_beating",
+     "at": "more"
+    },
+    {
+     "s": "ding",
+     "at": "Two"
+    },
+    {
+     "s": "whoosh",
+     "at": "Delivering"
+    }
+   ]
+  },
+  {
+   "id": "n3",
+   "text": "Me working three jobs to afford one apartment.",
+   "meme": {
+    "t": "brain",
+    "a": "Job one",
+    "b": "Job two",
+    "c": "Delivering tacos at midnight",
+    "at": "three"
+   },
+   "sfx": [
+    {
+     "s": "pack/01_processing",
+     "at": "jobs"
+    }
+   ]
+  },
+  {
+   "id": "c1g",
+   "text": "And I own nothing. No house. No car that's actually paid off. My fridge has a mortgage.",
+   "host": true,
+   "mood": "sad",
+   "pose": "facepalm",
+   "slam": {
+    "t": "I OWN NOTHING",
+    "at": "nothing"
+   },
+   "sfx": [
+    {
+     "s": "pack/02_deep",
+     "at": "nothing"
+    },
+    {
+     "s": "boing",
+     "at": "fridge"
+    },
+    {
+     "s": "trombone",
+     "at": "mortgage"
+    }
+   ]
+  },
+  {
+   "id": "n32",
+   "text": "I did everything they told me. Get good grades. Go to school. Get a job. Work hard. Don't complain. And at thirty I still split a bathroom with a guy named Tyler.",
+   "host": true,
+   "mood": "tired",
+   "pose": "shrug",
+   "pic": {
+    "id": "bathroom",
+    "at": "bathroom",
+    "look": "circle"
+   },
+   "zoom": {
+    "in": "named",
+    "out": "Tyler"
+   },
+   "sfx": [
+    {
+     "s": "ding",
+     "at": "grades"
+    },
+    {
+     "s": "ding",
+     "at": "school"
+    },
+    {
+     "s": "ding",
+     "at": "job"
+    },
+    {
+     "s": "boing",
+     "at": "Tyler"
+    }
+   ]
+  },
+  {
+   "id": "n4",
+   "text": "So what happened? Did people get lazy? Nope. Something broke. And I found the exact year it broke.",
+   "host": true,
+   "mood": "suspicious",
+   "pose": "point_r",
+   "zoom": {
+    "in": "exact",
+    "out": "broke#2"
+   },
+   "sfx": [
+    {
+     "s": "scratch",
+     "at": "Nope"
+    },
+    {
+     "s": "drumroll",
+     "at": "exact"
+    },
+    {
+     "s": "pack/01_boom",
+     "at": "broke#2"
+    }
+   ]
+  },
+  {
+   "id": "n5",
+   "text": "My boss when I say I'm tired.",
+   "meme": {
+    "t": "fine",
+    "a": "Have you tried working harder",
+    "at": "tired"
+   },
+   "sfx": [
+    {
+     "s": "cricket",
+     "at": "tired"
+    }
+   ]
+  },
+  {
+   "id": "c2a",
+   "text": "Picture two lines on a chart. One line is how much stuff workers make every hour. The other line is how much workers get paid.",
+   "chapter": "The Day The Lines Split",
+   "pic": {
+    "id": "chart",
+    "at": "chart",
+    "look": "tape"
+   },
+   "sfx": [
+    {
+     "s": "pack/01_processing",
+     "at": "chart"
+    },
+    {
+     "s": "ding",
+     "at": "make"
+    },
+    {
+     "s": "cash",
+     "at": "paid"
+    }
+   ]
+  },
+  {
+   "id": "c2b",
+   "text": "For grandpa those two lines went up together. Hand in hand. Like a couple in a movie.",
+   "host": true,
+   "mood": "happy",
+   "pose": "present",
+   "pic": {
+    "id": "couple",
+    "at": "Hand",
+    "look": "polaroid"
+   },
+   "sfx": [
+    {
+     "s": "ding",
+     "at": "together"
+    },
+    {
+     "s": "pack/01_evolve_brassy_swell",
+     "at": "movie"
+    }
+   ]
+  },
+  {
+   "id": "c2c",
+   "text": "And then around nineteen seventy nine they broke up.",
+   "card": {
+    "t": "Then they broke up.",
+    "dark": true
+   },
+   "sfx": [
+    {
+     "s": "scratch",
+     "at": "broke"
+    },
+    {
+     "s": "pack/01_boom",
+     "at": "up"
+    }
+   ],
+   "pause": 0.5
+  },
+  {
+   "id": "c2d",
+   "text": "Since then workers became way more productive. Computers. Robots. Email at midnight. We make almost twice as much stuff every hour.",
+   "host": true,
+   "mood": "shock",
+   "pose": "panic",
+   "pic": {
+    "id": "robot_arm",
+    "at": "Robots",
+    "look": "tape"
+   },
+   "slam": {
+    "t": "~2X MORE STUFF",
+    "at": "twice"
+   },
+   "sfx": [
+    {
+     "s": "click",
+     "at": "Computers"
+    },
+    {
+     "s": "pack/03_evolve_boom_brass_d",
+     "at": "Robots"
+    },
+    {
+     "s": "ding",
+     "at": "twice"
+    }
+   ]
+  },
+  {
+   "id": "c2e",
+   "text": "But the pay for a typical worker? It barely moved. The line that should be climbing just kind of shuffled along.",
+   "host": true,
+   "mood": "sad",
+   "pose": "shrug",
+   "zoom": {
+    "in": "barely",
+    "out": "moved"
+   },
+   "sfx": [
+    {
+     "s": "pack/02_evolve_brassy_drop_2",
+     "at": "barely"
+    },
+    {
+     "s": "boom",
+     "at": "moved"
+    },
+    {
+     "s": "trombone",
+     "at": "along"
+    }
+   ]
+  },
+  {
+   "id": "n33",
+   "text": "Imagine you're a cashier. A machine now scans twice as fast. You check out twice as many people. Does your paycheck double? Has it ever?",
+   "host": true,
+   "mood": "suspicious",
+   "pose": "point_r",
+   "pic": {
+    "id": "cashier",
+    "at": "cashier",
+    "look": "tape"
+   },
+   "sfx": [
+    {
+     "s": "click",
+     "at": "scans"
+    },
+    {
+     "s": "whoosh",
+     "at": "twice#2"
+    },
+    {
+     "s": "cricket",
+     "at": "ever"
+    }
+   ]
+  },
+  {
+   "id": "n6",
+   "text": "The two lines after nineteen seventy nine.",
+   "meme": {
+    "t": "vs",
+    "a": "What workers make",
+    "b": "What workers get",
+    "at": "lines"
+   },
+   "sfx": [
+    {
+     "s": "pop",
+     "at": "lines"
+    }
+   ]
+  },
+  {
+   "id": "c2f",
+   "text": "It's like baking twice as many cookies for the same boss and still getting the same one cookie at the end of the day.",
+   "pic": {
+    "id": "cookies",
+    "at": "cookies",
+    "look": "sticker"
+   },
+   "sfx": [
+    {
+     "s": "ding",
+     "at": "cookies"
+    },
+    {
+     "s": "boing",
+     "at": "one"
+    }
+   ]
+  },
+  {
+   "id": "n7",
+   "text": "So I asked the obvious question. Where did all the extra cookies go?",
+   "host": true,
+   "mood": "think",
+   "pose": "think",
+   "pic": {
+    "id": "cookie_jar",
+    "at": "cookies",
+    "look": "circle"
+   },
+   "sfx": [
+    {
+     "s": "pack/01_processing",
+     "at": "asked"
+    },
+    {
+     "s": "ding",
+     "at": "cookies"
+    }
+   ]
+  },
+  {
+   "id": "n34",
+   "text": "I asked my manager once. He said the company had a record year. I said great. Where's mine? He laughed so hard he had to sit down.",
+   "host": true,
+   "mood": "angry",
+   "pose": "talk",
+   "slam": {
+    "t": "RECORD YEAR",
+    "at": "record"
+   },
+   "sfx": [
+    {
+     "s": "ding",
+     "at": "record"
+    },
+    {
+     "s": "scratch",
+     "at": "mine"
+    },
+    {
+     "s": "boing",
+     "at": "laughed"
+    }
+   ]
+  },
+  {
+   "id": "c2g",
+   "text": "They didn't disappear. They went to the people who own the bakery.",
+   "host": true,
+   "mood": "angry",
+   "pose": "point_r",
+   "slam": {
+    "t": "THE OWNERS",
+    "at": "own"
+   },
+   "pic": {
+    "id": "bakery",
+    "at": "bakery",
+    "look": "tape"
+   },
+   "sfx": [
+    {
+     "s": "scratch",
+     "at": "disappear"
+    },
+    {
+     "s": "stamp",
+     "at": "own"
+    },
+    {
+     "s": "cash",
+     "at": "bakery"
+    }
+   ]
+  },
+  {
+   "id": "c2h",
+   "text": "The government even measures this. Out of all the money businesses make the part that goes to workers just hit the lowest level ever recorded.",
+   "host": true,
+   "mood": "shock",
+   "pose": "panic",
+   "pic": {
+    "id": "bls",
+    "at": "government",
+    "look": "news",
+    "label": "labor share: record low"
+   },
+   "sfx": [
+    {
+     "s": "paper",
+     "at": "measures"
+    },
+    {
+     "s": "pack/02_deep",
+     "at": "lowest"
+    },
+    {
+     "s": "trombone",
+     "at": "recorded"
+    }
+   ]
+  },
+  {
+   "id": "n8",
+   "text": "Ever. Not lowest this year. Lowest since they started counting.",
+   "host": true,
+   "mood": "angry",
+   "pose": "talk",
+   "zoom": {
+    "in": "started",
+    "out": "counting"
+   },
+   "sfx": [
+    {
+     "s": "scratch",
+     "at": "Ever"
+    },
+    {
+     "s": "boom",
+     "at": "counting"
+    }
+   ]
+  },
+  {
+   "id": "n47",
+   "text": "Think of the whole economy as one giant pizza. Every year the workers get a thinner slice and the owners get a thicker one. Same pizza. Different knives.",
+   "pic": {
+    "id": "pizza",
+    "at": "pizza",
+    "look": "tape"
+   },
+   "sfx": [
+    {
+     "s": "ding",
+     "at": "pizza"
+    },
+    {
+     "s": "boing",
+     "at": "thinner"
+    },
+    {
+     "s": "scratch",
+     "at": "knives"
+    }
+   ]
+  },
+  {
+   "id": "n9",
+   "text": "Workers looking for their share of the pie.",
+   "meme": {
+    "t": "fine",
+    "a": "Plenty of pie left",
+    "at": "pie"
+   },
+   "sfx": [
+    {
+     "s": "cricket",
+     "at": "pie"
+    }
+   ]
+  },
+  {
+   "id": "c2i",
+   "text": "So what changed? A bunch of things at once. Unions shrank. Jobs moved to cheaper countries. Machines replaced people. And companies started caring about one person above everyone else.",
+   "pic": {
+    "id": "union",
+    "at": "Unions",
+    "look": "polaroid"
+   },
+   "sfx": [
+    {
+     "s": "pack/02_evolve_brassy_drop_2",
+     "at": "shrank"
+    },
+    {
+     "s": "whoosh",
+     "at": "moved"
+    },
+    {
+     "s": "thud",
+     "at": "Machines"
+    },
+    {
+     "s": "riser",
+     "at": "else"
+    }
+   ]
+  },
+  {
+   "id": "n35",
+   "text": "Back in grandpa's day a big chunk of factory workers were in a union. Today it's way fewer. Fewer people at the table means a smaller slice when the pie gets cut.",
+   "pic": {
+    "id": "pie",
+    "at": "pie",
+    "look": "sticker"
+   },
+   "sfx": [
+    {
+     "s": "ding",
+     "at": "union"
+    },
+    {
+     "s": "pack/02_evolve_brassy_drop_2",
+     "at": "fewer"
+    },
+    {
+     "s": "thud",
+     "at": "cut"
+    }
+   ]
+  },
+  {
+   "id": "c2j",
+   "text": "The shareholder. The person who owns a piece of the company. Keeping them happy became job number one.",
+   "host": true,
+   "mood": "suspicious",
+   "pose": "hips",
+   "pic": {
+    "id": "stock_exchange",
+    "at": "shareholder",
+    "look": "tape"
+   },
+   "sfx": [
+    {
+     "s": "ding",
+     "at": "shareholder"
+    },
+    {
+     "s": "cash",
+     "at": "owns"
+    },
+    {
+     "s": "stamp",
+     "at": "one"
+    }
+   ]
+  },
+  {
+   "id": "n10",
+   "text": "Companies deciding where the extra money goes.",
+   "meme": {
+    "t": "drake",
+    "a": "Raise for workers",
+    "b": "Bonus for shareholders",
+    "at": "money"
+   },
+   "sfx": [
+    {
+     "s": "pop",
+     "at": "money"
+    }
+   ]
+  },
+  {
+   "id": "n36",
+   "text": "And honestly a lot of bosses get paid in shares too. So when the share price goes up their bonus goes up. Guess who they're working for.",
+   "host": true,
+   "mood": "smug",
+   "pose": "shrug",
+   "pic": {
+    "id": "ceo",
+    "at": "bosses",
+    "look": "tape"
+   },
+   "zoom": {
+    "in": "Guess",
+    "out": "for"
+   },
+   "sfx": [
+    {
+     "s": "cash",
+     "at": "shares"
+    },
+    {
+     "s": "boom",
+     "at": "for"
+    }
+   ]
+  },
+  {
+   "id": "c2k",
+   "text": "So when a company makes a big profit it often buys back its own shares. That pushes the price up for the owners. Your raise? Maybe next year.",
+   "pic": {
+    "id": "shares",
+    "at": "shares",
+    "look": "sticker"
+   },
+   "sfx": [
+    {
+     "s": "cash",
+     "at": "profit"
+    },
+    {
+     "s": "pack/01_evolve_brassy_swell",
+     "at": "owners"
+    },
+    {
+     "s": "cricket",
+     "at": "year"
+    }
+   ]
+  },
+  {
+   "id": "n11",
+   "text": "That's the moment hard work stopped making people rich. Not because work got easier. Because the reward for work stopped growing.",
+   "card": {
+    "t": "The reward stopped growing.",
+    "dark": true
+   },
+   "sfx": [
+    {
+     "s": "pack/01_boom",
+     "at": "growing"
+    }
+   ],
+   "pause": 0.5
+  },
+  {
+   "id": "c3a",
+   "text": "And here's the part that kept me awake. Money itself got a better deal than people.",
+   "chapter": "Money Works Harder Than You",
+   "host": true,
+   "mood": "worried",
+   "pose": "talk",
+   "sfx": [
+    {
+     "s": "pack/01_beating",
+     "at": "awake"
+    },
+    {
+     "s": "sting",
+     "at": "people"
+    }
+   ]
+  },
+  {
+   "id": "c3b",
+   "text": "Think about my landlord again. I work all month. Half my paycheck goes to him. He does nothing. And every year his building is worth more.",
+   "host": true,
+   "mood": "angry",
+   "pose": "point_r",
+   "pic": {
+    "id": "apartment",
+    "at": "building",
+    "look": "tape"
+   },
+   "sfx": [
+    {
+     "s": "tick",
+     "at": "month"
+    },
+    {
+     "s": "cash",
+     "at": "Half"
+    },
+    {
+     "s": "cricket",
+     "at": "nothing"
+    },
+    {
+     "s": "ding",
+     "at": "more"
+    }
+   ]
+  },
+  {
+   "id": "n12",
+   "text": "My landlord on the first of the month.",
+   "meme": {
+    "t": "stonks",
+    "a": "PASSIVE INCOME",
+    "at": "landlord"
+   },
+   "sfx": [
+    {
+     "s": "cash",
+     "at": "landlord"
+    }
+   ]
+  },
+  {
+   "id": "c3c",
+   "text": "The people who owned stocks and buildings and businesses watched their stuff grow way faster than any paycheck. While they slept.",
+   "pic": {
+    "id": "skyline",
+    "at": "slept",
+    "look": "polaroid"
+   },
+   "sfx": [
+    {
+     "s": "ding",
+     "at": "stocks"
+    },
+    {
+     "s": "pack/01_evolve_brassy_swell",
+     "at": "faster"
+    },
+    {
+     "s": "boing",
+     "at": "slept"
+    }
+   ]
+  },
+  {
+   "id": "n37",
+   "text": "Since grandpa's time the stock market grew way faster than paychecks. Way faster. If you owned a piece of it you were pulled up. If you didn't you just watched.",
+   "pic": {
+    "id": "rocket",
+    "at": "faster",
+    "look": "polaroid"
+   },
+   "sfx": [
+    {
+     "s": "pack/03_evolve_boom_brass_d",
+     "at": "faster"
+    },
+    {
+     "s": "cricket",
+     "at": "watched"
+    }
+   ]
+  },
+  {
+   "id": "c3d",
+   "text": "There are two kinds of money. Money you earn with your body. And money your money earns. The first one gets tired. The second one never sleeps.",
+   "host": true,
+   "mood": "smug",
+   "pose": "point_up",
+   "slam": {
+    "t": "MONEY NEVER SLEEPS",
+    "at": "never"
+   },
+   "sfx": [
+    {
+     "s": "ding",
+     "at": "two"
+    },
+    {
+     "s": "thud",
+     "at": "body"
+    },
+    {
+     "s": "boom",
+     "at": "sleeps"
+    }
+   ]
+  },
+  {
+   "id": "n13",
+   "text": "You can only work twenty four hours a day. Trust me I've tried. But money can work in a thousand places at once.",
+   "host": true,
+   "mood": "tired",
+   "pose": "shrug",
+   "pic": {
+    "id": "clock",
+    "at": "hours",
+    "look": "circle"
+   },
+   "zoom": {
+    "in": "thousand",
+    "out": "once"
+   },
+   "sfx": [
+    {
+     "s": "tick",
+     "at": "hours"
+    },
+    {
+     "s": "boing",
+     "at": "tried"
+    },
+    {
+     "s": "boom",
+     "at": "once"
+    }
+   ]
+  },
+  {
+   "id": "n38",
+   "text": "My landlord made more money this year by doing nothing than I made by delivering four hundred tacos. I counted. It was four hundred and twelve.",
+   "host": true,
+   "mood": "tired",
+   "pose": "facepalm",
+   "pic": {
+    "id": "tacos",
+    "at": "tacos",
+    "look": "sticker"
+   },
+   "slam": {
+    "t": "412 TACOS",
+    "at": "twelve"
+   },
+   "sfx": [
+    {
+     "s": "cash",
+     "at": "money"
+    },
+    {
+     "s": "pop",
+     "at": "tacos"
+    },
+    {
+     "s": "boom",
+     "at": "twelve"
+    }
+   ]
+  },
+  {
+   "id": "c3e",
+   "text": "It's like a race where you run on your legs and the other guy rides an escalator that keeps getting faster. You can run harder. You won't catch him.",
+   "pic": {
+    "id": "escalator",
+    "at": "escalator",
+    "look": "tape"
+   },
+   "sfx": [
+    {
+     "s": "step",
+     "at": "run"
+    },
+    {
+     "s": "whoosh",
+     "at": "escalator"
+    },
+    {
+     "s": "trombone",
+     "at": "him"
+    }
+   ]
+  },
+  {
+   "id": "n39",
+   "text": "And the worst part? The escalator guy isn't smarter than you. He's not working harder than you. He just got on earlier.",
+   "host": true,
+   "mood": "angry",
+   "pose": "point_r",
+   "zoom": {
+    "in": "got",
+    "out": "earlier"
+   },
+   "sfx": [
+    {
+     "s": "scratch",
+     "at": "smarter"
+    },
+    {
+     "s": "boom",
+     "at": "earlier"
+    }
+   ]
+  },
+  {
+   "id": "n14",
+   "text": "Me running after the escalator guy.",
+   "meme": {
+    "t": "vs",
+    "a": "My overtime",
+    "b": "His stocks while he naps",
+    "at": "running"
+   },
+   "sfx": [
+    {
+     "s": "whoosh",
+     "at": "running"
+    }
+   ]
+  },
+  {
+   "id": "c3f",
+   "text": "And the gap feeds itself. The more you own the more you earn. The more you earn the more you buy. That's why it feels like the rich get richer on autopilot.",
+   "host": true,
+   "mood": "suspicious",
+   "pose": "hips",
+   "pic": {
+    "id": "snowball",
+    "at": "autopilot",
+    "look": "circle"
+   },
+   "sfx": [
+    {
+     "s": "ding",
+     "at": "own"
+    },
+    {
+     "s": "cash",
+     "at": "earn"
+    },
+    {
+     "s": "pack/01_evolve_brassy_swell",
+     "at": "autopilot"
+    }
+   ]
+  },
+  {
+   "id": "n15",
+   "text": "Like a snowball. Small at the top of the hill. A monster at the bottom. And you're standing at the bottom with a spoon.",
+   "pic": {
+    "id": "spoon",
+    "at": "spoon",
+    "look": "sticker"
+   },
+   "sfx": [
+    {
+     "s": "whoosh",
+     "at": "snowball"
+    },
+    {
+     "s": "pack/03_evolve_boom_brass_d",
+     "at": "monster"
+    },
+    {
+     "s": "boing",
+     "at": "spoon"
+    }
+   ]
+  },
+  {
+   "id": "n40",
+   "text": "That's why the gap between owners and workers isn't just a gap. It's a gap that grows every single night while you sleep.",
+   "host": true,
+   "mood": "worried",
+   "pose": "talk",
+   "pic": {
+    "id": "moon",
+    "at": "night",
+    "look": "circle"
+   },
+   "sfx": [
+    {
+     "s": "pack/01_beating",
+     "at": "grows"
+    },
+    {
+     "s": "sting",
+     "at": "sleep"
+    }
+   ]
+  },
+  {
+   "id": "c3g",
+   "text": "Remember the billionaire video? Same idea. They don't get rich from salary. They get rich from owning things.",
+   "host": true,
+   "mood": "smug",
+   "pose": "point_r",
+   "sfx": [
+    {
+     "s": "ding",
+     "at": "billionaire"
+    },
+    {
+     "s": "stamp",
+     "at": "owning"
+    }
+   ]
+  },
+  {
+   "id": "c3h",
+   "text": "And here's the sad twist. Grandpa owned a house. That house quietly made him richer than his job ever did. He thought it was hard work. It was owning.",
+   "host": true,
+   "mood": "shock",
+   "pose": "panic",
+   "slam": {
+    "t": "IT WAS OWNING",
+    "at": "owning"
+   },
+   "sfx": [
+    {
+     "s": "drumroll",
+     "at": "twist"
+    },
+    {
+     "s": "pack/01_boom",
+     "at": "owning"
+    }
+   ]
+  },
+  {
+   "id": "n16",
+   "text": "Grandpa finding out his house did more work than him.",
+   "meme": {
+    "t": "fine",
+    "a": "Forty years of overtime",
+    "at": "house"
+   },
+   "sfx": [
+    {
+     "s": "cricket",
+     "at": "house"
+    }
+   ]
+  },
+  {
+   "id": "c3i",
+   "text": "So the lesson wasn't work hard. The lesson was work hard and own something. Grandpa just never said the second part out loud.",
+   "card": {
+    "t": "Work hard AND own something.",
+    "dark": true
+   },
+   "sfx": [
+    {
+     "s": "pack/01_boom",
+     "at": "own"
+    }
+   ],
+   "pause": 0.5
+  },
+  {
+   "id": "n17",
+   "text": "Be honest. Has anyone in your family ever said the word investing at dinner? Mine said pass the potatoes and stop asking questions.",
+   "host": true,
+   "mood": "grin",
+   "pose": "point_r",
+   "pic": {
+    "id": "potatoes",
+    "at": "potatoes",
+    "look": "sticker"
+   },
+   "sfx": [
+    {
+     "s": "ding",
+     "at": "investing"
+    },
+    {
+     "s": "boing",
+     "at": "potatoes"
+    }
+   ]
+  },
+  {
+   "id": "c3j",
+   "text": "And that's not an accident. When you're tired from two jobs you don't have time to learn how money works. Tired people don't ask questions.",
+   "host": true,
+   "mood": "suspicious",
+   "pose": "talk",
+   "zoom": {
+    "in": "Tired",
+    "out": "questions"
+   },
+   "sfx": [
+    {
+     "s": "pack/01_beating",
+     "at": "tired"
+    },
+    {
+     "s": "boom",
+     "at": "questions"
+    }
+   ]
+  },
+  {
+   "id": "n41",
+   "text": "Nobody sat you down and explained this. School taught you how to be a good worker. Show up on time. Raise your hand. Nobody taught you how to be an owner.",
+   "pic": {
+    "id": "classroom",
+    "at": "School",
+    "look": "tape"
+   },
+   "sfx": [
+    {
+     "s": "ding",
+     "at": "School"
+    },
+    {
+     "s": "tick",
+     "at": "time"
+    },
+    {
+     "s": "stamp",
+     "at": "owner"
+    }
+   ]
+  },
+  {
+   "id": "n42",
+   "text": "School teaching us to be good employees.",
+   "meme": {
+    "t": "drake",
+    "a": "How to own a business",
+    "b": "How to raise your hand to pee",
+    "at": "employees"
+   },
+   "sfx": [
+    {
+     "s": "pop",
+     "at": "employees"
+    }
+   ]
+  },
+  {
+   "id": "c4a",
+   "text": "So what's the switch? How do you get on the escalator? Quick reminder this is education and not advice.",
+   "chapter": "Switching Sides",
+   "host": true,
+   "mood": "happy",
+   "pose": "point_up",
+   "sfx": [
+    {
+     "s": "click",
+     "at": "switch"
+    },
+    {
+     "s": "ding",
+     "at": "escalator"
+    }
+   ]
+  },
+  {
+   "id": "c4b",
+   "text": "The switch is simple. Stop being only a worker. Become an owner. Even a tiny one.",
+   "host": true,
+   "mood": "smug",
+   "pose": "present",
+   "slam": {
+    "t": "BECOME AN OWNER",
+    "at": "owner"
+   },
+   "sfx": [
+    {
+     "s": "click",
+     "at": "switch"
+    },
+    {
+     "s": "pack/03_evolve_boom_brass_d",
+     "at": "owner"
+    },
+    {
+     "s": "pop",
+     "at": "tiny"
+    }
+   ]
+  },
+  {
+   "id": "n18",
+   "text": "No I don't mean buy a building. I can't even buy a couch without a payment plan.",
+   "host": true,
+   "mood": "grin",
+   "pose": "shrug",
+   "pic": {
+    "id": "couch",
+    "at": "couch",
+    "look": "tape"
+   },
+   "sfx": [
+    {
+     "s": "scratch",
+     "at": "building"
+    },
+    {
+     "s": "boing",
+     "at": "couch"
+    }
+   ]
+  },
+  {
+   "id": "c4c",
+   "text": "One. An index fund is a little piece of hundreds of companies at once. The same companies that kept the extra cookies. Now some of the cookies come back to you.",
+   "pic": {
+    "id": "index",
+    "at": "index",
+    "look": "tape"
+   },
+   "sfx": [
+    {
+     "s": "ding",
+     "at": "One"
+    },
+    {
+     "s": "cash",
+     "at": "companies"
+    },
+    {
+     "s": "pop",
+     "at": "cookies#2"
+    }
+   ]
+  },
+  {
+   "id": "n43",
+   "text": "Think about it. When those companies make record profits a little of that record comes to you. You're not just the worker anymore. You're also the shareholder they're working for.",
+   "host": true,
+   "mood": "grin",
+   "pose": "present",
+   "slam": {
+    "t": "YOU'RE THE SHAREHOLDER",
+    "at": "shareholder"
+   },
+   "sfx": [
+    {
+     "s": "ding",
+     "at": "record"
+    },
+    {
+     "s": "pack/01_evolve_brassy_swell",
+     "at": "shareholder"
+    }
+   ]
+  },
+  {
+   "id": "n19",
+   "text": "Me buying my first tiny slice of every company in the country.",
+   "meme": {
+    "t": "stonks",
+    "a": "PART OWNER OF EVERYTHING",
+    "at": "slice"
+   },
+   "sfx": [
+    {
+     "s": "pack/01_evolve_brassy_swell",
+     "at": "slice"
+    }
+   ]
+  },
+  {
+   "id": "c4d",
+   "text": "Two. If your job matches what you save for retirement take it. That's your boss handing you a piece of the escalator for free. Most people leave it on the table.",
+   "host": true,
+   "mood": "shock",
+   "pose": "point_r",
+   "pic": {
+    "id": "handshake",
+    "at": "boss",
+    "look": "circle"
+   },
+   "zoom": {
+    "in": "free",
+    "out": "table"
+   },
+   "sfx": [
+    {
+     "s": "ding",
+     "at": "Two"
+    },
+    {
+     "s": "cash",
+     "at": "free"
+    },
+    {
+     "s": "boom",
+     "at": "table"
+    }
+   ]
+  },
+  {
+   "id": "n20",
+   "text": "People skipping the free match.",
+   "meme": {
+    "t": "buttons",
+    "a": "Free money from my boss",
+    "b": "Thirty more dollars this month",
+    "at": "match"
+   },
+   "sfx": [
+    {
+     "s": "pack/01_beating",
+     "at": "match"
+    }
+   ]
+  },
+  {
+   "id": "c4e",
+   "text": "Three. Start stupidly small. Ten dollars. Twenty. The amount doesn't matter at first. Being on the escalator matters.",
+   "host": true,
+   "mood": "happy",
+   "pose": "thumbs",
+   "pic": {
+    "id": "coins",
+    "at": "Ten",
+    "look": "sticker"
+   },
+   "sfx": [
+    {
+     "s": "coin",
+     "at": "Ten"
+    },
+    {
+     "s": "coin",
+     "at": "Twenty"
+    },
+    {
+     "s": "ding",
+     "at": "escalator"
+    }
+   ]
+  },
+  {
+   "id": "c4f",
+   "text": "Four. Own your skills too. A skill nobody else has is like a little building inside your head. You can rent it out forever.",
+   "pic": {
+    "id": "tools",
+    "at": "skills",
+    "look": "tape"
+   },
+   "sfx": [
+    {
+     "s": "ding",
+     "at": "skills"
+    },
+    {
+     "s": "pack/01_processing",
+     "at": "head"
+    },
+    {
+     "s": "cash",
+     "at": "forever"
+    }
+   ]
+  },
+  {
+   "id": "n44",
+   "text": "My friend learned to fix air conditioners. Now in summer people beg him to come over. He sets the price. That's what owning a skill feels like.",
+   "pic": {
+    "id": "aircon",
+    "at": "conditioners",
+    "look": "tape"
+   },
+   "sfx": [
+    {
+     "s": "ding",
+     "at": "fix"
+    },
+    {
+     "s": "crowd",
+     "at": "beg"
+    },
+    {
+     "s": "cash",
+     "at": "price"
+    }
+   ]
+  },
+  {
+   "id": "c4g",
+   "text": "And five. Time is your secret weapon. Money you put in at twenty five works for forty years. Every year you wait the escalator gets harder to catch.",
+   "host": true,
+   "mood": "suspicious",
+   "pose": "point_up",
+   "pic": {
+    "id": "hourglass",
+    "at": "Time",
+    "look": "circle"
+   },
+   "slam": {
+    "t": "TIME IS THE WEAPON",
+    "at": "weapon"
+   },
+   "sfx": [
+    {
+     "s": "tick",
+     "at": "Time"
+    },
+    {
+     "s": "boom",
+     "at": "weapon"
+    },
+    {
+     "s": "whoosh",
+     "at": "escalator"
+    }
+   ]
+  },
+  {
+   "id": "n21",
+   "text": "Me at twenty five versus me at forty five.",
+   "meme": {
+    "t": "drake",
+    "a": "Starting later",
+    "b": "Starting tiny today",
+    "at": "versus"
+   },
+   "sfx": [
+    {
+     "s": "pop",
+     "at": "versus"
+    }
+   ]
+  },
+  {
+   "id": "c4h",
+   "text": "It won't feel like much at first. A few dollars growing slowly. But remember the snowball. It starts tiny. That's not a bug. That's how every snowball starts.",
+   "host": true,
+   "mood": "happy",
+   "pose": "present",
+   "pic": {
+    "id": "snowman",
+    "at": "snowball",
+    "look": "sticker"
+   },
+   "sfx": [
+    {
+     "s": "ding",
+     "at": "few"
+    },
+    {
+     "s": "whoosh",
+     "at": "snowball"
+    },
+    {
+     "s": "boom",
+     "at": "starts#2"
+    }
+   ]
+  },
+  {
+   "id": "n45",
+   "text": "And skip the get rich fast stuff. Remember the gurus. The escalator is slow and boring. Boring is the point.",
+   "host": true,
+   "mood": "smug",
+   "pose": "hips",
+   "pic": {
+    "id": "snail",
+    "at": "slow",
+    "look": "sticker"
+   },
+   "zoom": {
+    "in": "Boring#2",
+    "out": "point"
+   },
+   "sfx": [
+    {
+     "s": "scratch",
+     "at": "fast"
+    },
+    {
+     "s": "boing",
+     "at": "slow"
+    },
+    {
+     "s": "boom",
+     "at": "point"
+    }
+   ]
+  },
+  {
+   "id": "n46",
+   "text": "My investments growing at the speed of a snail.",
+   "meme": {
+    "t": "fine",
+    "a": "Up four dollars this year",
+    "at": "investments"
+   },
+   "sfx": [
+    {
+     "s": "cricket",
+     "at": "investments"
+    }
+   ]
+  },
+  {
+   "id": "r1",
+   "text": "So did hard work stop making people rich? Kind of. Hard work alone stopped. The reward moved from the people who work to the people who own.",
+   "host": true,
+   "mood": "smug",
+   "pose": "point_up",
+   "zoom": {
+    "in": "who",
+    "out": "own"
+   },
+   "sfx": [
+    {
+     "s": "drumroll",
+     "at": "stop"
+    },
+    {
+     "s": "pack/01_boom",
+     "at": "own"
+    }
+   ]
+  },
+  {
+   "id": "r2",
+   "text": "Grandpa's advice wasn't wrong. It was just missing a sentence. Work hard. Then make your money work too.",
+   "host": true,
+   "mood": "happy",
+   "pose": "thumbs",
+   "slam": {
+    "t": "MAKE YOUR MONEY WORK",
+    "at": "money"
+   },
+   "sfx": [
+    {
+     "s": "ding",
+     "at": "sentence"
+    },
+    {
+     "s": "stamp",
+     "at": "money"
+    }
+   ]
+  },
+  {
+   "id": "r3",
+   "text": "Tonight my landlord is asleep. And for the first time a tiny piece of my money is working the night shift too.",
+   "card": {
+    "t": "My money works nights now.",
+    "dark": true
+   },
+   "sfx": [
+    {
+     "s": "pack/01_boom",
+     "at": "night"
+    }
+   ],
+   "pause": 0.5
+  },
+  {
+   "id": "r4",
+   "text": "And if I own a little piece of everything maybe one day I can sleep in too.",
+   "host": true,
+   "mood": "grin",
+   "pose": "shrug",
+   "pic": {
+    "id": "alarm_clock",
+    "at": "sleep",
+    "look": "circle"
+   },
+   "sfx": [
+    {
+     "s": "boing",
+     "at": "sleep"
+    }
+   ]
+  },
+  {
+   "id": "r5",
+   "text": "Next time I spend a hundred dollars I don't have on something I don't need. Again. We'll find out why my brain is wired to waste money.",
+   "pic": {
+    "id": "shopping",
+    "at": "spend",
+    "look": "polaroid"
+   },
+   "sfx": [
+    {
+     "s": "cash",
+     "at": "hundred"
+    },
+    {
+     "s": "scratch",
+     "at": "Again"
+    },
+    {
+     "s": "ding",
+     "at": "brain"
+    }
+   ]
+  },
+  {
+   "id": "r6",
+   "text": "Subscribe. It's free. And unlike my landlord it works for you.",
+   "host": true,
+   "mood": "grin",
+   "pose": "wave",
+   "zoom": {
+    "in": "works",
+    "out": "you"
+   },
+   "sfx": [
+    {
+     "s": "ding",
+     "at": "Subscribe"
+    },
+    {
+     "s": "boom",
+     "at": "you"
+    }
+   ]
+  }
+ ]
+}
