@@ -2,19 +2,35 @@
  "photos": [
   {
    "id": "warehouse",
-   "q": "warehouse worker"
+   "q": "warehouse worker",
+   "file": "File:Warehouse workers prepare packages for shipment at Sharpe Army Depot - DPLA - 414220df83b823977c05c01a4b6b4106.jpeg",
+   "credit": "Department of Defense. American Forces Information Service. Defense Visual Information Cen",
+   "license": "Public domain",
+   "page": "https://commons.wikimedia.org/wiki/File:Warehouse_workers_prepare_packages_for_shipment_at_Sharpe_Army_Depot_-_DPLA_-_414220df83b823977c05c01a4b6b4106.jpeg"
   },
   {
    "id": "sleeping",
-   "q": "man sleeping in bed"
+   "q": "man sleeping in bed",
+   "file": "File:Man sleeping with framed picture.jpg",
+   "credit": "LunaEatsTuna",
+   "license": "CC BY-SA 4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Man_sleeping_with_framed_picture.jpg"
   },
   {
    "id": "grandpa",
-   "q": "elderly man portrait"
+   "q": "elderly man portrait",
+   "file": "File:Elderly man in Rhodes, Greece (black and white).jpg",
+   "credit": "Martin Hricko",
+   "license": "CC BY 3.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Elderly_man_in_Rhodes,_Greece_(black_and_white).jpg"
   },
   {
    "id": "factory",
-   "q": "1960s factory workers"
+   "q": "1960s factory workers",
+   "file": "File:Workers leaving factories Watertown NY, 1950s.jpg",
+   "credit": "Severance Photography, Inc.",
+   "license": "Public domain",
+   "page": "https://commons.wikimedia.org/wiki/File:Workers_leaving_factories_Watertown_NY,_1950s.jpg"
   },
   {
    "id": "suburb_house",
@@ -22,175 +38,347 @@
   },
   {
    "id": "old_tv",
-   "q": "vintage television"
+   "q": "vintage television",
+   "file": "File:Vintage television (Unsplash).jpg",
+   "credit": "Sven Scheuermeier sveninho",
+   "license": "CC0",
+   "page": "https://commons.wikimedia.org/wiki/File:Vintage_television_(Unsplash).jpg"
   },
   {
    "id": "cake",
-   "q": "cake slice"
+   "q": "cake slice",
+   "file": "File:Slice of Lemon Cake.jpg",
+   "credit": "Whoisjohngalt",
+   "license": "CC BY-SA 4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Slice_of_Lemon_Cake.jpg"
   },
   {
    "id": "stairs",
-   "q": "staircase"
+   "q": "staircase",
+   "file": "File:Staircase of Liesikuja parking hall in Myyrmäki, Vantaa, Finland, 2022 May.jpg",
+   "credit": "Ximonic (Simo Räsänen)",
+   "license": "CC BY 4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Staircase_of_Liesikuja_parking_hall_in_Myyrm%C3%A4ki,_Vantaa,_Finland,_2022_May.jpg"
   },
   {
    "id": "turkey",
-   "q": "roast turkey"
+   "q": "roast turkey",
+   "file": "File:Roast turkey from fall season.jpg",
+   "credit": "Jim, the Photographer",
+   "license": "CC BY 2.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Roast_turkey_from_fall_season.jpg"
   },
   {
    "id": "rowing",
-   "q": "rowing boat"
+   "q": "rowing boat",
+   "file": "File:Phayao - Small rowing boat moored on shores of Phayao Lake Jan 2024.jpg",
+   "credit": "Dominic Nelson",
+   "license": "CC BY-SA 4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Phayao_-_Small_rowing_boat_moored_on_shores_of_Phayao_Lake_Jan_2024.jpg"
   },
   {
    "id": "delivery_bike",
-   "q": "food delivery bicycle"
+   "q": "food delivery bicycle",
+   "file": "File:Soba-Noodles-Deliveryman-Tokyo-1935.png",
+   "credit": "Mainichi Shimbun",
+   "license": "Public domain",
+   "page": "https://commons.wikimedia.org/wiki/File:Soba-Noodles-Deliveryman-Tokyo-1935.png"
   },
   {
    "id": "bathroom",
-   "q": "small bathroom sink"
+   "q": "small bathroom sink",
+   "file": "File:Bilal Sink - small cat in sink of home bathroom, New Orleans, 1999.jpg",
+   "credit": "Bart Everson",
+   "license": "CC BY 2.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Bilal_Sink_-_small_cat_in_sink_of_home_bathroom,_New_Orleans,_1999.jpg"
   },
   {
    "id": "chart",
-   "q": "line chart graph"
+   "q": "line chart graph",
+   "file": "File:Line Graph GDP and Year.png",
+   "credit": "User46200",
+   "license": "CC BY-SA 4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Line_Graph_GDP_and_Year.png"
   },
   {
    "id": "couple",
-   "q": "old couple holding hands"
+   "q": "old couple holding hands",
+   "file": "File:Adult couple holding hands.jpg",
+   "credit": "Alice Donovan Rouse (@alicekat)",
+   "license": "CC0",
+   "page": "https://commons.wikimedia.org/wiki/File:Adult_couple_holding_hands.jpg"
   },
   {
    "id": "robot_arm",
-   "q": "industrial robot arm"
+   "q": "industrial robot arm",
+   "file": "File:UR16e robot arm.png",
+   "credit": "Auledas",
+   "license": "CC BY-SA 4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:UR16e_robot_arm.png"
   },
   {
    "id": "cashier",
-   "q": "supermarket cashier"
+   "q": "supermarket cashier",
+   "file": "File:Cashier counter at SM Supermarket (2024-01-27).jpg",
+   "credit": "Wide Awake!",
+   "license": "CC BY 4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Cashier_counter_at_SM_Supermarket_(2024-01-27).jpg"
   },
   {
    "id": "cookies",
-   "q": "plate of cookies"
+   "q": "plate of cookies",
+   "file": "File:Seven maple leaf cookies on a plate.jpg",
+   "credit": "Hannah Clover",
+   "license": "CC BY-SA 4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Seven_maple_leaf_cookies_on_a_plate.jpg"
   },
   {
    "id": "cookie_jar",
-   "q": "cookie jar"
+   "q": "cookie jar",
+   "file": "File:Illuminated wooden shelf with many glass jars containing cookies for sale in Tokyo.jpg",
+   "credit": "Basile Morin",
+   "license": "CC BY-SA 4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Illuminated_wooden_shelf_with_many_glass_jars_containing_cookies_for_sale_in_Tokyo.jpg"
   },
   {
    "id": "bakery",
-   "q": "bakery shop"
+   "q": "bakery shop",
+   "file": "File:Sang Lung Bakery shop sign.jpg",
+   "credit": "Andy Li",
+   "license": "CC0",
+   "page": "https://commons.wikimedia.org/wiki/File:Sang_Lung_Bakery_shop_sign.jpg"
   },
   {
    "id": "bls",
-   "q": "Bureau of Labor Statistics"
+   "q": "Bureau of Labor Statistics",
+   "file": "File:Bureau of Labor Statistics - Bureau of Labor Statistics Analyzing Labor Statistics Graduation Ceremony - DPLA - bb091aa36c35d568939fcf4f00421eed.jpg",
+   "credit": "Department of Labor. Office of Public Affairs. Division of Audiovisual Communications. ca.",
+   "license": "Public domain",
+   "page": "https://commons.wikimedia.org/wiki/File:Bureau_of_Labor_Statistics_-_Bureau_of_Labor_Statistics_Analyzing_Labor_Statistics_Graduation_Ceremony_-_DPLA_-_bb091aa36c35d568939fcf4f00421eed.jpg"
   },
   {
    "id": "pizza",
-   "q": "pizza"
+   "q": "pizza",
+   "file": "File:Vegetarian Pizza.jpg",
+   "credit": "Petar Milošević",
+   "license": "CC BY-SA 4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Vegetarian_Pizza.jpg"
   },
   {
    "id": "union",
-   "q": "labor union rally"
+   "q": "labor union rally",
+   "file": "File:Labor union members gather at a rally for Tom Barrett. (7316881108).jpg",
+   "credit": "WisPolitics.com",
+   "license": "CC BY-SA 2.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Labor_union_members_gather_at_a_rally_for_Tom_Barrett._(7316881108).jpg"
   },
   {
    "id": "pie",
-   "q": "apple pie"
+   "q": "apple pie",
+   "file": "File:Apple cake with vanilla ice cream 2.jpg",
+   "credit": "W.carter",
+   "license": "CC0",
+   "page": "https://commons.wikimedia.org/wiki/File:Apple_cake_with_vanilla_ice_cream_2.jpg"
   },
   {
    "id": "stock_exchange",
-   "q": "New York Stock Exchange trading floor"
+   "q": "New York Stock Exchange trading floor",
+   "file": "File:Trading floor, New York Stock Exchange, New York, New York LCCN2011630168.tif",
+   "credit": "Carol M. Highsmith",
+   "license": "Public domain",
+   "page": "https://commons.wikimedia.org/wiki/File:Trading_floor,_New_York_Stock_Exchange,_New_York,_New_York_LCCN2011630168.tif"
   },
   {
    "id": "ceo",
-   "q": "businessman suit office"
+   "q": "businessman suit office",
+   "file": "File:Businessman leaving the office (Unsplash).jpg",
+   "credit": "Bram Naus bramnaus",
+   "license": "CC0",
+   "page": "https://commons.wikimedia.org/wiki/File:Businessman_leaving_the_office_(Unsplash).jpg"
   },
   {
    "id": "shares",
-   "q": "stock certificate"
+   "q": "stock certificate",
+   "file": "File:Aktie Chicago Burlington.jpg",
+   "credit": "Issued by Chicago, Burlington and Quincy Railroad Company in 1885, reproduced from an orig",
+   "license": "Public domain",
+   "page": "https://commons.wikimedia.org/wiki/File:Aktie_Chicago_Burlington.jpg"
   },
   {
    "id": "apartment",
-   "q": "apartment building"
+   "q": "apartment building",
+   "file": "File:Melrose Apartment Building, Galveston.jpg",
+   "credit": "Jim Evans",
+   "license": "CC BY-SA 3.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Melrose_Apartment_Building,_Galveston.jpg"
   },
   {
    "id": "skyline",
-   "q": "city skyline night"
+   "q": "city skyline night",
+   "file": "File:Price Building illuminated at night in Quebec City.jpg",
+   "credit": "Wilfredor",
+   "license": "CC0",
+   "page": "https://commons.wikimedia.org/wiki/File:Price_Building_illuminated_at_night_in_Quebec_City.jpg"
   },
   {
    "id": "rocket",
-   "q": "rocket launch"
+   "q": "rocket launch",
+   "file": "File:First NASA ISINGLASS rocket launch.jpg",
+   "credit": "NASA",
+   "license": "Public domain",
+   "page": "https://commons.wikimedia.org/wiki/File:First_NASA_ISINGLASS_rocket_launch.jpg"
   },
   {
    "id": "clock",
-   "q": "wall clock"
+   "q": "wall clock",
+   "file": "File:Clock, Cremyll Quay Landing.jpg",
+   "credit": ".mw-parser-output .messagebox{margin:4px 0;width:auto;border-collapse:collapse;border:2px ",
+   "license": "CC BY-SA 4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Clock,_Cremyll_Quay_Landing.jpg"
   },
   {
    "id": "tacos",
-   "q": "tacos"
+   "q": "tacos",
+   "file": "File:001 Tacos de carnitas, carne asada y al pastor.jpg",
+   "credit": "Larry Miller",
+   "license": "CC BY-SA 2.0",
+   "page": "https://commons.wikimedia.org/wiki/File:001_Tacos_de_carnitas,_carne_asada_y_al_pastor.jpg"
   },
   {
    "id": "escalator",
-   "q": "escalator"
+   "q": "escalator",
+   "file": "File:Copenhagen Metro escalators.jpg",
+   "credit": "Stig Nygaard from Copenhagen, Denmark",
+   "license": "CC BY 2.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Copenhagen_Metro_escalators.jpg"
   },
   {
    "id": "snowball",
-   "q": "snowball in snow"
+   "q": "snowball in snow",
+   "file": "File:Snowball pyramid at Santa Claus' Village Large.jpg",
+   "credit": "Samuli Lintula",
+   "license": "CC BY-SA 2.5",
+   "page": "https://commons.wikimedia.org/wiki/File:Snowball_pyramid_at_Santa_Claus%27_Village_Large.jpg"
   },
   {
    "id": "spoon",
-   "q": "spoon"
+   "q": "spoon",
+   "file": "File:SpoonCollection.jpg",
+   "credit": "THOR",
+   "license": "CC BY 2.0",
+   "page": "https://commons.wikimedia.org/wiki/File:SpoonCollection.jpg"
   },
   {
    "id": "moon",
-   "q": "full moon night"
+   "q": "full moon night",
+   "file": "File:Space Shuttle Discovery under a full moon, 03-11-09.jpg",
+   "credit": "NASA/Bill Inglais",
+   "license": "Public domain",
+   "page": "https://commons.wikimedia.org/wiki/File:Space_Shuttle_Discovery_under_a_full_moon,_03-11-09.jpg"
   },
   {
    "id": "potatoes",
-   "q": "mashed potatoes"
+   "q": "mashed potatoes",
+   "file": "File:MashedPotatoes.jpg",
+   "credit": "Renee Comet (photographer)",
+   "license": "Public domain",
+   "page": "https://commons.wikimedia.org/wiki/File:MashedPotatoes.jpg"
   },
   {
    "id": "classroom",
-   "q": "school classroom desks"
+   "q": "school classroom desks",
+   "file": "File:Business High School classroom Washington DC 1899.png",
+   "credit": "Frances Benjamin Johnston (1864-1952), photographer",
+   "license": "Public domain",
+   "page": "https://commons.wikimedia.org/wiki/File:Business_High_School_classroom_Washington_DC_1899.png"
   },
   {
    "id": "couch",
-   "q": "sofa couch"
+   "q": "sofa couch",
+   "file": "File:Sofa, Couch, Studio, Rostov-on-Don, Russia.jpg",
+   "credit": "Vyacheslav Argenberg",
+   "license": "CC BY 4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Sofa,_Couch,_Studio,_Rostov-on-Don,_Russia.jpg"
   },
   {
    "id": "index",
-   "q": "stock market screen"
+   "q": "stock market screen",
+   "file": "File:Market centre in Tokyo stock exchange.jpg",
+   "credit": "ehnmark",
+   "license": "CC BY 2.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Market_centre_in_Tokyo_stock_exchange.jpg"
   },
   {
    "id": "handshake",
-   "q": "shaking hands"
+   "q": "shaking hands",
+   "file": "File:East and West Shaking hands at the laying of last rail Union Pacific Railroad - Restoration.jpg",
+   "credit": "Andrew J. Russell / Adam Cuerden",
+   "license": "Public domain",
+   "page": "https://commons.wikimedia.org/wiki/File:East_and_West_Shaking_hands_at_the_laying_of_last_rail_Union_Pacific_Railroad_-_Restoration.jpg"
   },
   {
    "id": "coins",
-   "q": "pile of coins"
+   "q": "pile of coins",
+   "file": "File:Venice, Museo Correr, pile of coins.jpg",
+   "credit": "Armin Kleiner",
+   "license": "CC BY-SA 4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Venice,_Museo_Correr,_pile_of_coins.jpg"
   },
   {
    "id": "tools",
-   "q": "workbench tools"
+   "q": "workbench tools",
+   "file": "File:Cluttered workbench in a rustic workshop filled with tools and materials.jpg",
+   "credit": "Shixart1985",
+   "license": "CC BY 2.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Cluttered_workbench_in_a_rustic_workshop_filled_with_tools_and_materials.jpg"
   },
   {
    "id": "aircon",
-   "q": "air conditioner unit"
+   "q": "air conditioner unit",
+   "file": "File:LG AIR CONDITIONER OUTDOOR UNIT, Panasonic AIR CONDITIONER OUTDOOR UNIT, National (Panasonic) AIR CONDITIONER OUTDOOR UNIT & DAIKIN AIR CONDITIONER OUTDOOR UNIT.jpg",
+   "credit": "Dinkun Chen",
+   "license": "CC BY-SA 4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:LG_AIR_CONDITIONER_OUTDOOR_UNIT,_Panasonic_AIR_CONDITIONER_OUTDOOR_UNIT,_National_(Panasonic)_AIR_CONDITIONER_OUTDOOR_UNIT_%26_DAIKIN_AIR_CONDITIONER_OUTDOOR_UNIT.jpg"
   },
   {
    "id": "hourglass",
-   "q": "hourglass"
+   "q": "hourglass",
+   "file": "File:Wooden hourglass 3.jpg",
+   "credit": "User:S Sepp",
+   "license": "CC BY-SA 3.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Wooden_hourglass_3.jpg"
   },
   {
    "id": "snowman",
-   "q": "snowman"
+   "q": "snowman",
+   "file": "File:Bonhomme de neige 2.jpg",
+   "credit": "Sphiiix",
+   "license": "CC BY-SA 4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Bonhomme_de_neige_2.jpg"
   },
   {
    "id": "snail",
-   "q": "garden snail"
+   "q": "garden snail",
+   "file": "File:Snail-wiki-120-Zachi-Evenor.jpg",
+   "credit": "Zachi Evenor",
+   "license": "CC BY 2.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Snail-wiki-120-Zachi-Evenor.jpg"
   },
   {
    "id": "alarm_clock",
-   "q": "alarm clock"
+   "q": "alarm clock",
+   "file": "File:Classic alarm clock 20180513.jpg",
+   "credit": "Santeri Viinamäki",
+   "license": "CC BY-SA 4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Classic_alarm_clock_20180513.jpg"
   },
   {
    "id": "shopping",
-   "q": "shopping bags"
+   "q": "shopping bags",
+   "file": "File:Blokker shopping bags, Groningen (2019).jpg",
+   "credit": "Donald Trung Quoc Don (Chữ Hán: 徵國單) - Wikimedia Commons.(Want to use this image?)",
+   "license": "CC BY-SA 4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Blokker_shopping_bags,_Groningen_(2019).jpg"
   }
  ]
 }
