@@ -15,7 +15,7 @@ import {Seesaw} from '../props16';
 import {Cake, Chair, Dog, Elevator, Handcuffs, Hourglass, Ladder, Lumber, Ruler} from '../props30';
 
 type SP = Omit<StickProps, 'acc' | 'seed'>;
-const Dave: React.FC<SP> = (p) => <Stick acc={['hair']} seed={7} {...p} />;
+const Dave: React.FC<SP> = (p) => <Stick big seed={7} {...p} />;
 const Dad: React.FC<SP> = (p) => <Stick acc={['fedora', 'glasses']} seed={12} {...p} />;
 const Partner: React.FC<SP> = (p) => <Stick acc={['ponytail', 'glasses']} seed={55} {...p} />;
 const Bob: React.FC<SP> = (p) => <Stick acc={['cap']} seed={21} {...p} />;

@@ -15,7 +15,7 @@ import {Brain} from '../props17';
 import {Treadmill, Dumbbell, CapacityDots} from '../props45';
 
 type SP = Omit<StickProps, 'acc' | 'seed'>;
-const Dave: React.FC<SP> = (p) => <Stick acc={['hair']} seed={7} {...p} />;
+const Dave: React.FC<SP> = (p) => <Stick big seed={7} {...p} />;
 const Bob: React.FC<SP> = (p) => <Stick acc={['cap']} seed={21} {...p} />;
 const Manager: React.FC<SP> = (p) => <Stick acc={['shades']} seed={91} {...p} />;
 

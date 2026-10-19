@@ -1,394 +1,1812 @@
 {
-  "id": "ep45",
+ "id": "ep45",
+ "title": "Why Gym Memberships Are Designed for You to Quit",
+ "voice": "chatterbox",
+ "upgraded": "2026-10-19 UPGRADE.md v2",
+ "sources": [
+  "Planet Fitness, Inc., Form 10-K for fiscal year 2025 (SEC EDGAR, filed 2026): approximately 20.8 million members and 2,896 clubs at year-end 2025 (~7,200 members/club, derived: 20.8M ÷ 2,896); Classic Card $15/month, PF Black Card $24.99/month (rising to $29.99 after 2026 peak join season), $49 standard annual fee",
+  "DellaVigna & Malmendier, 'Paying Not to Go to the Gym', American Economic Review 96(3), 2006: 7,752 members across 3 U.S. health clubs over 3 years; monthly-contract members averaged ~4.3 visits/month, a real cost of $17+ per visit vs. a $10 per-visit pass; ~80% of monthly members would have saved money on a pay-per-visit contract, forgoing average savings of $600-700/year",
+  "Industry survey compilations (Health & Fitness Association-sourced data via Gymdesk/Glofox/smarthealthclubs.com, 2025-2026, soft/secondary source): ~67% of gym members rarely or never use their membership; Americans waste an estimated $1.3 billion/year on unused memberships; ~66% annual retention (roughly 1 in 3 members cancel yearly); about half of new members quit within 6 months",
+  "Strava year-end data / 'Quitter's Day': analysis of 30M+ global January activities identifies the second Friday of January (Jan 9, 2026) as the day resolution activity drops sharply; ~80% of resolutions abandoned by that point",
+  "Gym industry survey compilations (GymMaster/Glofox, 2025-2026): ~12% of a year's gym sign-ups happen in January; check-ins rise ~30-50% in the first two weeks of January vs. December",
+  "LA Fitness membership agreement / cancellation policy (company FAQ, lafitnessmembership.com): written cancellation required, 30 days' notice, mailed (certified mail recommended) to a PO box, or in person",
+  "Planet Fitness cancellation policy (company FAQ): cancel in person at home club or by mail; request must arrive several business days before the billing date or another month is billed",
+  "FTC, 'Negative Option Rule' ('click-to-cancel'): finalized Oct 2024, was to take effect July 14, 2025; the Eighth Circuit vacated it July 8, 2025 for a procedural (Reg Flex Act) violation; FTC submitted a draft ANPRM to OIRA Jan 30, 2026 to restart rulemaking (not yet law as of this video); state auto-renewal laws (e.g. CA, NY, MN) separately require easy cancellation",
+  "ClassPass pricing pages (2026): pay-per-class/credit membership model, plans roughly $19-$249/month by city and credit count, no long-term contract required"
+ ],
+ "youtube": {
   "title": "Why Gym Memberships Are Designed for You to Quit",
-  "sources": [
-    "Planet Fitness, Inc., Form 10-K for fiscal year 2025 (SEC EDGAR, filed 2026): approximately 20.8 million members and 2,896 clubs at year-end 2025 (~7,200 members/club, derived: 20.8M ÷ 2,896); Classic Card $15/month, PF Black Card $24.99/month (rising to $29.99 after 2026 peak join season), $49 standard annual fee",
-    "DellaVigna & Malmendier, 'Paying Not to Go to the Gym', American Economic Review 96(3), 2006: 7,752 members across 3 U.S. health clubs over 3 years; monthly-contract members averaged ~4.3 visits/month, a real cost of $17+ per visit vs. a $10 per-visit pass; ~80% of monthly members would have saved money on a pay-per-visit contract, forgoing average savings of $600-700/year",
-    "Industry survey compilations (Health & Fitness Association-sourced data via Gymdesk/Glofox/smarthealthclubs.com, 2025-2026, soft/secondary source): ~67% of gym members rarely or never use their membership; Americans waste an estimated $1.3 billion/year on unused memberships; ~66% annual retention (roughly 1 in 3 members cancel yearly); about half of new members quit within 6 months",
-    "Strava year-end data / 'Quitter's Day': analysis of 30M+ global January activities identifies the second Friday of January (Jan 9, 2026) as the day resolution activity drops sharply; ~80% of resolutions abandoned by that point",
-    "Gym industry survey compilations (GymMaster/Glofox, 2025-2026): ~12% of a year's gym sign-ups happen in January; check-ins rise ~30-50% in the first two weeks of January vs. December",
-    "LA Fitness membership agreement / cancellation policy (company FAQ, lafitnessmembership.com): written cancellation required, 30 days' notice, mailed (certified mail recommended) to a PO box, or in person",
-    "Planet Fitness cancellation policy (company FAQ): cancel in person at home club or by mail; request must arrive several business days before the billing date or another month is billed",
-    "FTC, 'Negative Option Rule' ('click-to-cancel'): finalized Oct 2024, was to take effect July 14, 2025; the Eighth Circuit vacated it July 8, 2025 for a procedural (Reg Flex Act) violation; FTC submitted a draft ANPRM to OIRA Jan 30, 2026 to restart rulemaking (not yet law as of this video); state auto-renewal laws (e.g. CA, NY, MN) separately require easy cancellation",
-    "ClassPass pricing pages (2026): pay-per-class/credit membership model, plans roughly $19-$249/month by city and credit count, no long-term contract required"
+  "alt_titles": [
+   "The Gym Business Model: Why They Want You to Quit",
+   "Why Cancelling a Gym Is Harder Than Joining One"
   ],
-  "beats": [
-    {
-      "id": "o1",
-      "text": "It's January first. Dave signs a gym contract. He promises himself: every single day.",
-      "pause": 0.3
-    },
-    {
-      "id": "o2",
-      "text": "March. Dave has been three times. The gym doesn't call. The gym doesn't care.",
-      "pause": 0.3
-    },
-    {
-      "id": "o3",
-      "text": "Now look at this. Dave is still paying, every single month, for a gym he never visits.",
-      "pause": 0.3
-    },
-    {
-      "id": "o4",
-      "text": "Turns out, that's not an accident. It's the plan.",
-      "pause": 0.35
-    },
-    {
-      "id": "o5",
-      "text": "Gyms sell more memberships than they have room for, and they're betting you'll quit showing up.",
-      "pause": 0.35
-    },
-    {
-      "id": "o6",
-      "text": "Today: the business model, the study that proved it, and how to beat it.",
-      "pause": 0.6
-    },
-    {
-      "id": "c1a",
-      "chapter": "The Oversell Machine",
-      "text": "Here's the business Dave actually signed up for.",
-      "pause": 0.4
-    },
-    {
-      "id": "c1b",
-      "text": "Planet Fitness, the biggest chain in America, had about twenty point eight million members at the end of twenty twenty five. Spread across two thousand, eight hundred ninety six clubs.",
-      "pause": 0.5
-    },
-    {
-      "id": "c1c",
-      "text": "Do the math. That's about seven thousand, two hundred members for every single club.",
-      "pause": 0.5
-    },
-    {
-      "id": "c1d",
-      "text": "A normal gym floor fits maybe two or three hundred people at once. Not seven thousand.",
-      "pause": 0.5
-    },
-    {
-      "id": "c1e",
-      "text": "So how does that work? Simple. The gym is betting that almost nobody shows up at the same time. Most months, most members show up zero times.",
-      "pause": 0.5
-    },
-    {
-      "id": "c1f",
-      "text": "It's the same trick as an airline overbooking a flight. Sell more seats than you have, and bet that some people won't show.",
-      "pause": 0.5
-    },
-    {
-      "id": "c1g",
-      "text": "The low monthly price is the whole point. It gets you in the door for less than a coffee habit, and keeps you enrolled longer than a pricier gym would.",
-      "pause": 0.9
-    },
-    {
-      "id": "c2a",
-      "chapter": "January: The Big Bet",
-      "text": "So when does the gym place that bet? January.",
-      "pause": 0.4
-    },
-    {
-      "id": "c2b",
-      "text": "About twelve percent of the whole year's new sign ups happen in January alone. New Year, new you.",
-      "pause": 0.5
-    },
-    {
-      "id": "c2c",
-      "text": "Check-ins jump thirty to fifty percent in the first two weeks of January, compared to December.",
-      "pause": 0.5
-    },
-    {
-      "id": "c2d",
-      "text": "Dave signs up on January first. He's excited. He tells his neighbor Bob he's a changed man.",
-      "pause": 0.5
-    },
-    {
-      "id": "c2e",
-      "text": "The gym prints his member card. And they already know, statistically, most of these new members won't last.",
-      "pause": 0.5
-    },
-    {
-      "id": "c2f",
-      "text": "They're not guessing. They've seen this exact movie every January for years.",
-      "pause": 0.9
-    },
-    {
-      "id": "c3a",
-      "chapter": "Quitter's Day",
-      "text": "There's even a date for when it all falls apart.",
-      "pause": 0.4
-    },
-    {
-      "id": "c3b",
-      "text": "The fitness app Strava studied over thirty million January workouts, and found the exact day motivation collapses.",
-      "pause": 0.5
-    },
-    {
-      "id": "c3c",
-      "text": "They call it Quitter's Day. The second Friday of January. This year, that's January ninth.",
-      "pause": 0.5
-    },
-    {
-      "id": "c3d",
-      "text": "By Quitter's Day, Strava found about eighty percent of resolutions are already abandoned.",
-      "pause": 0.5
-    },
-    {
-      "id": "c3e",
-      "text": "And it doesn't stop at January. Industry surveys say about sixty seven percent of gym members rarely, or never, use their membership at all.",
-      "pause": 0.5
-    },
-    {
-      "id": "c3f",
-      "text": "Add it up, and Americans waste an estimated one point three billion dollars a year, on memberships they don't use.",
-      "pause": 0.5
-    },
-    {
-      "id": "c3g",
-      "text": "That's not pocket change. That's one point three billion dollars a year, just evaporating on unused memberships.",
-      "pause": 0.9
-    },
-    {
-      "id": "c4a",
-      "chapter": "The Gym Study",
-      "text": "This isn't just a vibe. Two economists actually proved it.",
-      "pause": 0.4
-    },
-    {
-      "id": "c4b",
-      "text": "In two thousand six, Stefano DellaVigna and Ulrike Malmendier studied seven thousand, seven hundred fifty two real gym members, over three years.",
-      "pause": 0.5
-    },
-    {
-      "id": "c4c",
-      "text": "People on the monthly plan went to the gym about four times a month. But they paid like they were going way more.",
-      "pause": 0.5
-    },
-    {
-      "id": "c4d",
-      "text": "Their real cost per visit worked out to over seventeen dollars. The same gym sold a ten visit pass for ten dollars a visit.",
-      "pause": 0.5
-    },
-    {
-      "id": "c4e",
-      "text": "About eighty percent of monthly members would have saved money on the pay per visit option. On average, about six hundred to seven hundred dollars a year.",
-      "pause": 0.5
-    },
-    {
-      "id": "c4f",
-      "text": "They paid extra, for the right to feel guilty about not going.",
-      "pause": 0.9
-    },
-    {
-      "id": "c5a",
-      "chapter": "Why Smart People Do This",
-      "text": "Most people think this only happens to lazy people. Nope.",
-      "pause": 0.4
-    },
-    {
-      "id": "c5b",
-      "text": "It happens to smart, disciplined people too. Economists have a name for it: present bias.",
-      "pause": 0.5
-    },
-    {
-      "id": "c5c",
-      "text": "Today-Dave is tired and just wants pizza. But contract-signing-Dave, planning for the future, is sure future-Dave will go every day.",
-      "pause": 0.5
-    },
-    {
-      "id": "c5d",
-      "text": "So Dave bets on his best possible self. And the gym is happy to take that bet, because they've seen the odds.",
-      "pause": 0.5
-    },
-    {
-      "id": "c5e",
-      "text": "It's the same reason people buy treadmills that become laundry racks. We're bad at predicting our own future effort.",
-      "pause": 0.5
-    },
-    {
-      "id": "c5f",
-      "text": "There's a second reason too. The monthly fee is small, often under twenty dollars. Small enough that most people don't bother fighting to cancel something that barely dents their budget.",
-      "pause": 0.9
-    },
-    {
-      "id": "c6a",
-      "chapter": "The Exit Maze",
-      "text": "Fine, Dave thinks in April. Time to cancel.",
-      "pause": 0.4
-    },
-    {
-      "id": "c6b",
-      "text": "That's when he learns something interesting. Signing up took two minutes on an app. Cancelling does not.",
-      "pause": 0.5
-    },
-    {
-      "id": "c6c",
-      "text": "Big chains like L A Fitness often require a written cancellation letter, thirty days notice, sent by mail. Certified mail, so there's proof.",
-      "pause": 0.5
-    },
-    {
-      "id": "c6d",
-      "text": "Planet Fitness lets you cancel in person at your home club, or by mail. Show up on the wrong day, and you get billed again.",
-      "pause": 0.5
-    },
-    {
-      "id": "c6e",
-      "text": "Compare that to signing up. No letter, no post office, no thirty day wait. Just a click.",
-      "pause": 0.5
-    },
-    {
-      "id": "c6f",
-      "text": "Compare that to Netflix. Two taps, and you're out. No stamps, no thirty day countdown.",
-      "pause": 0.9
-    },
-    {
-      "id": "c7a",
-      "chapter": "Click to Cancel... Or Not",
-      "text": "The government actually tried to fix this.",
-      "pause": 0.4
-    },
-    {
-      "id": "c7b",
-      "text": "In twenty twenty four, the F T C finalized a rule nicknamed click to cancel. If you can sign up online, you must be able to cancel online, just as easily.",
-      "pause": 0.5
-    },
-    {
-      "id": "c7c",
-      "text": "It was supposed to start July twenty twenty five. Days before it did, a federal appeals court threw it out, on a technicality about how the rule was written.",
-      "pause": 0.5
-    },
-    {
-      "id": "c7d",
-      "text": "In January twenty twenty six, the F T C started over, drafting a new version. It's not law yet.",
-      "pause": 0.5
-    },
-    {
-      "id": "c7e",
-      "text": "The good news: states like California, New York, and Minnesota already have their own laws requiring easy cancellation. Should there be a national one? That's a political question. Now you know where it stands.",
-      "pause": 0.9
-    },
-    {
-      "id": "c8a",
-      "chapter": "Who Profits?",
-      "text": "So who wins when Dave pays and doesn't show up?",
-      "pause": 0.4
-    },
-    {
-      "id": "c8b",
-      "text": "The gym does, obviously. An empty treadmill costs nothing extra to keep running. A missed workout is pure profit.",
-      "pause": 0.5
-    },
-    {
-      "id": "c8c",
-      "text": "To be fair, gyms also need the no-shows. If every single member showed up at once, the whole business would collapse, and even the people who DO go couldn't fit.",
-      "pause": 0.5
-    },
-    {
-      "id": "c8d",
-      "text": "So in a weird way, Dave not going is what keeps the gym cheap enough for everyone, including the people who go every day.",
-      "pause": 0.5
-    },
-    {
-      "id": "c8e",
-      "text": "That doesn't make the cancellation maze okay. It just explains why the business is built this way.",
-      "pause": 0.9
-    },
-    {
-      "id": "c9a",
-      "chapter": "How to Not Get Trapped",
-      "text": "So how do you win this game? Remember, this is education, not advice.",
-      "pause": 0.4
-    },
-    {
-      "id": "c9b",
-      "text": "One. Before you sign anything, ask honestly: will I actually go three times a week? Not hopeful-you. Actual you, based on last year.",
-      "pause": 0.5
-    },
-    {
-      "id": "c9c",
-      "text": "Two. If you're not sure, try pay per visit apps first, like ClassPass style credit systems. No long contract, no certified mail required to leave.",
-      "pause": 0.5
-    },
-    {
-      "id": "c9d",
-      "text": "Three. Pick month to month over an annual contract, even if it costs a few dollars more. You're paying for the exit door.",
-      "pause": 0.5
-    },
-    {
-      "id": "c9e",
-      "text": "Four. Put your gym days on your calendar like a meeting with your boss. People skip workouts. People don't skip meetings.",
-      "pause": 0.5
-    },
-    {
-      "id": "c9f",
-      "text": "Five. If you do cancel, use certified mail or go in person, and keep the receipt. Assume they might bill you again by mistake.",
-      "pause": 0.5
-    },
-    {
-      "id": "c9g",
-      "text": "Six. Check your bank statement once a year for every subscription still charging you, gym included. It's an easy fifteen minutes that can save real money.",
-      "pause": 0.5
-    },
-    {
-      "id": "c9h",
-      "text": "Seven. If a gym asks for certified mail, send it registered too, and screenshot the tracking page. Paper trails win arguments.",
-      "pause": 0.9
-    },
-    {
-      "id": "r1",
-      "chapter": "Now You Know",
-      "text": "So let's recap.",
-      "pause": 0.4
-    },
-    {
-      "id": "r2",
-      "text": "One. Gyms sell more memberships than they have room for, betting that most people quit showing up.",
-      "pause": 0.5
-    },
-    {
-      "id": "r3",
-      "text": "Two. A famous study found most monthly members would save money paying per visit instead.",
-      "pause": 0.5
-    },
-    {
-      "id": "r4",
-      "text": "Three. Cancelling is built to be harder than signing up, so pick month to month, and test yourself honestly first.",
-      "pause": 0.6
-    },
-    {
-      "id": "r5",
-      "text": "Next time, Dave's dog needs surgery, and the bill nearly knocks him over. We'll find out why.",
-      "pause": 0.4
-    },
-    {
-      "id": "r6",
-      "text": "Subscribe, so Dave can keep explaining money. It's free. Way easier to cancel than a gym membership. We checked.",
-      "pause": 1.4
+  "hook": "Why do gyms want you to sign up and never show up? A famous study found most members would save money paying per visit instead. Dave signs a gym contract on January 1st, goes three times, and keeps paying all year. We break down why: Planet Fitness has about 7,200 members per club (way more than any floor holds), the January sign-up spike and 'Quitter's Day' drop-off, the famous DellaVigna & Malmendier study proving most monthly members would save money paying per visit, the psychology (present bias) behind why smart people still sign long contracts, the hard-to-cancel tactics (certified mail, in-person only, 30-day notice), and the FTC's 'click-to-cancel' rule that got vacated by a federal court in 2025. Then, practical ways to avoid the trap: pay-per-visit apps, month-to-month plans, and an honest 'will I actually go' test before you sign.",
+  "tags": [
+   "why gym memberships are designed for you to quit",
+   "gym membership scam",
+   "paying not to go to the gym",
+   "how to cancel gym membership",
+   "planet fitness business model",
+   "gym cancellation policy",
+   "click to cancel rule",
+   "classpass vs gym membership",
+   "new year resolution gym statistics",
+   "money explained simply",
+   "dave explains money"
+  ],
+  "hashtags": [
+   "#gym",
+   "#personalfinance",
+   "#money"
+  ],
+  "pinned": "Do you still pay for a gym you don't go to? YES or NO below 👇"
+ },
+ "beats": [
+  {
+   "id": "o1",
+   "text": "This is me on January first signing a gym contract and promising myself I will go every single day.",
+   "host": true,
+   "mood": "happy",
+   "pose": "present",
+   "pic": {
+    "id": "gym",
+    "at": "gym",
+    "look": "polaroid",
+    "label": "Jan 1"
+   },
+   "slam": {
+    "t": "EVERY DAY",
+    "at": "every"
+   },
+   "sfx": [
+    {
+     "s": "pack/01_beating",
+     "at": "January"
+    },
+    {
+     "s": "stamp",
+     "at": "contract"
+    },
+    {
+     "s": "ding",
+     "at": "day"
     }
-  ],
-  "youtube": {
-    "title": "Why Gym Memberships Are Designed for You to Quit",
-    "alt_titles": [
-      "The Gym Business Model: Why They Want You to Quit",
-      "Why Cancelling a Gym Is Harder Than Joining One"
-    ],
-    "hook": "Why do gyms want you to sign up and never show up? A famous study found most members would save money paying per visit instead. Dave signs a gym contract on January 1st, goes three times, and keeps paying all year. We break down why: Planet Fitness has about 7,200 members per club (way more than any floor holds), the January sign-up spike and 'Quitter's Day' drop-off, the famous DellaVigna & Malmendier study proving most monthly members would save money paying per visit, the psychology (present bias) behind why smart people still sign long contracts, the hard-to-cancel tactics (certified mail, in-person only, 30-day notice), and the FTC's 'click-to-cancel' rule that got vacated by a federal court in 2025. Then, practical ways to avoid the trap: pay-per-visit apps, month-to-month plans, and an honest 'will I actually go' test before you sign.",
-    "tags": [
-      "why gym memberships are designed for you to quit",
-      "gym membership scam",
-      "paying not to go to the gym",
-      "how to cancel gym membership",
-      "planet fitness business model",
-      "gym cancellation policy",
-      "click to cancel rule",
-      "classpass vs gym membership",
-      "new year resolution gym statistics",
-      "money explained simply",
-      "dave explains money"
-    ],
-    "hashtags": [
-      "#gym",
-      "#personalfinance",
-      "#money"
-    ],
-    "pinned": "Do you still pay for a gym you don't go to? YES or NO below 👇"
+   ],
+   "pause": 0.15
+  },
+  {
+   "id": "o2",
+   "text": "March. I've been three times. And the gym doesn't call me. The gym doesn't care.",
+   "sfx": [
+    {
+     "s": "flip",
+     "at": "March"
+    },
+    {
+     "s": "cricket",
+     "at": "care"
+    }
+   ],
+   "pause": 0.15
+  },
+  {
+   "id": "o3",
+   "text": "Because I'm still paying them every single month for a gym I never visit.",
+   "sfx": [
+    {
+     "s": "cash",
+     "at": "paying"
+    },
+    {
+     "s": "trombone",
+     "at": "visit"
+    }
+   ],
+   "pause": 0.15
+  },
+  {
+   "id": "o4",
+   "text": "Turns out that's not an accident. It's the plan.",
+   "card": {
+    "t": "It's the plan.",
+    "dark": true
+   },
+   "sfx": [
+    {
+     "s": "scratch",
+     "at": "accident"
+    },
+    {
+     "s": "pack/01_boom",
+     "at": "plan"
+    }
+   ],
+   "pause": 0.3
+  },
+  {
+   "id": "o5",
+   "text": "By the end of this video you'll know the one number every gym hopes you never figure out and it takes ten seconds.",
+   "host": true,
+   "mood": "suspicious",
+   "pose": "point_r",
+   "slam": {
+    "t": "ONE NUMBER",
+    "at": "number"
+   },
+   "sfx": [
+    {
+     "s": "ding",
+     "at": "number"
+    },
+    {
+     "s": "tick",
+     "at": "ten"
+    },
+    {
+     "s": "boom",
+     "at": "seconds"
+    }
+   ],
+   "pause": 0.15
+  },
+  {
+   "id": "o6",
+   "text": "But most people click off before that part which is exactly what the gym wants.",
+   "host": true,
+   "mood": "worried",
+   "pose": "hips",
+   "sfx": [
+    {
+     "s": "sting",
+     "at": "wants"
+    }
+   ],
+   "pause": 0.3
+  },
+  {
+   "id": "c1a",
+   "text": "So let me show you the business I actually signed up for.",
+   "chapter": "The Oversell Machine",
+   "sfx": [
+    {
+     "s": "whoosh",
+     "at": "show"
+    },
+    {
+     "s": "ding",
+     "at": "business"
+    }
+   ]
+  },
+  {
+   "id": "c1b",
+   "text": "Planet Fitness has about seven thousand members for every one of its clubs. Seven thousand people per building.",
+   "pic": {
+    "id": "gym_front",
+    "at": "Planet",
+    "look": "news",
+    "label": "Planet Fitness"
+   },
+   "sfx": [
+    {
+     "s": "ding",
+     "at": "seven"
+    },
+    {
+     "s": "pack/02_deep",
+     "at": "building"
+    }
+   ]
+  },
+  {
+   "id": "n16",
+   "text": "That's not a gym. That's a stadium with a membership card.",
+   "host": true,
+   "mood": "grin",
+   "pose": "shrug",
+   "pic": {
+    "id": "stadium",
+    "at": "stadium",
+    "look": "tape"
+   },
+   "zoom": {
+    "in": "stadium",
+    "out": "card"
+   },
+   "sfx": [
+    {
+     "s": "crowd",
+     "at": "stadium"
+    },
+    {
+     "s": "boom",
+     "at": "card"
+    }
+   ]
+  },
+  {
+   "id": "n1",
+   "text": "Now picture seven thousand people waiting for one squat rack.",
+   "meme": {
+    "t": "fine",
+    "a": "Plenty of room",
+    "at": "squat"
+   },
+   "sfx": [
+    {
+     "s": "crowd",
+     "at": "people"
+    },
+    {
+     "s": "boing",
+     "at": "squat"
+    }
+   ]
+  },
+  {
+   "id": "c1d",
+   "text": "A normal gym floor fits maybe two or three hundred people at once. Not seven thousand.",
+   "sfx": [
+    {
+     "s": "tick",
+     "at": "three"
+    },
+    {
+     "s": "scratch",
+     "at": "Not"
+    }
+   ]
+  },
+  {
+   "id": "c1e",
+   "text": "So how does that work? Simple. The gym is betting that almost nobody shows up. And most months most members show up zero times.",
+   "sfx": [
+    {
+     "s": "pack/01_processing",
+     "at": "work"
+    },
+    {
+     "s": "ding",
+     "at": "betting"
+    },
+    {
+     "s": "cricket",
+     "at": "zero"
+    }
+   ]
+  },
+  {
+   "id": "n17",
+   "text": "It's like a buffet that only stays open because most people don't come hungry. If everyone ate the buffet would go broke by Tuesday.",
+   "pic": {
+    "id": "buffet",
+    "at": "buffet",
+    "look": "polaroid"
+   },
+   "sfx": [
+    {
+     "s": "ding",
+     "at": "buffet"
+    },
+    {
+     "s": "pack/02_evolve_brassy_drop_2",
+     "at": "Tuesday"
+    }
+   ]
+  },
+  {
+   "id": "n2",
+   "text": "Including me. I'm most members.",
+   "host": true,
+   "mood": "tired",
+   "pose": "facepalm",
+   "zoom": {
+    "in": "most",
+    "out": "members"
+   },
+   "sfx": [
+    {
+     "s": "trombone",
+     "at": "members"
+    }
+   ]
+  },
+  {
+   "id": "c1f",
+   "text": "It's like an airline that sells three hundred tickets for a plane with one hundred seats and just hopes you oversleep.",
+   "pic": {
+    "id": "plane_seats",
+    "at": "plane",
+    "look": "tape"
+   },
+   "sfx": [
+    {
+     "s": "whoosh",
+     "at": "plane"
+    },
+    {
+     "s": "boing",
+     "at": "oversleep"
+    }
+   ]
+  },
+  {
+   "id": "n3",
+   "text": "Me paying for a gym I don't go to.",
+   "meme": {
+    "t": "drake",
+    "a": "Going to the gym",
+    "b": "Paying for the gym",
+    "at": "paying"
+   },
+   "sfx": [
+    {
+     "s": "pop",
+     "at": "paying"
+    },
+    {
+     "s": "cash",
+     "at": "go"
+    }
+   ]
+  },
+  {
+   "id": "c1g",
+   "text": "And the cheap price is the whole trick. It costs less than my coffee habit so I never feel the pain enough to cancel.",
+   "host": true,
+   "mood": "suspicious",
+   "pose": "hips",
+   "pic": {
+    "id": "coffee",
+    "at": "coffee",
+    "look": "circle"
+   },
+   "zoom": {
+    "in": "never",
+    "out": "cancel"
+   },
+   "sfx": [
+    {
+     "s": "ding",
+     "at": "coffee"
+    },
+    {
+     "s": "boom",
+     "at": "cancel"
+    }
+   ]
+  },
+  {
+   "id": "n4",
+   "text": "Ten dollars a month doesn't feel like money. Until you count how many months.",
+   "host": true,
+   "mood": "shock",
+   "pose": "panic",
+   "slam": {
+    "t": "HOW MANY MONTHS?",
+    "at": "months"
+   },
+   "sfx": [
+    {
+     "s": "coin",
+     "at": "Ten"
+    },
+    {
+     "s": "tick",
+     "at": "count"
+    },
+    {
+     "s": "boom",
+     "at": "months"
+    }
+   ]
+  },
+  {
+   "id": "c2a",
+   "text": "And the gym knows exactly when to catch me. January.",
+   "host": true,
+   "mood": "smug",
+   "pose": "point_up",
+   "slam": {
+    "t": "JANUARY",
+    "at": "January"
+   },
+   "sfx": [
+    {
+     "s": "riser",
+     "at": "catch"
+    },
+    {
+     "s": "pack/01_boom",
+     "at": "January"
+    }
+   ]
+  },
+  {
+   "id": "c2b",
+   "text": "New year new me. Everybody signs up in the same two weeks. For a gym January is like October for a pumpkin farm.",
+   "pic": {
+    "id": "pumpkins",
+    "at": "pumpkin",
+    "look": "polaroid",
+    "label": "harvest season"
+   },
+   "sfx": [
+    {
+     "s": "crowd",
+     "at": "Everybody"
+    },
+    {
+     "s": "ding",
+     "at": "pumpkin"
+    }
+   ]
+  },
+  {
+   "id": "n18",
+   "text": "And I was one of them. I posted my membership card online with a flexing emoji. Thirty eight likes. Peak of my fitness career.",
+   "host": true,
+   "mood": "money",
+   "pose": "celebrate",
+   "pic": {
+    "id": "selfie",
+    "at": "posted",
+    "look": "circle"
+   },
+   "slam": {
+    "t": "38 LIKES",
+    "at": "Thirty"
+   },
+   "sfx": [
+    {
+     "s": "pack/camera_shutter",
+     "at": "posted"
+    },
+    {
+     "s": "ding",
+     "at": "likes"
+    },
+    {
+     "s": "boom",
+     "at": "career"
+    }
+   ]
+  },
+  {
+   "id": "c2c",
+   "text": "The place is packed. There's a line for the treadmill. A guy is filming himself doing curls in the squat rack.",
+   "pic": {
+    "id": "treadmills",
+    "at": "treadmill",
+    "look": "tape"
+   },
+   "sfx": [
+    {
+     "s": "crowd",
+     "at": "packed"
+    },
+    {
+     "s": "pack/camera_shutter",
+     "at": "filming"
+    }
+   ]
+  },
+  {
+   "id": "n35",
+   "text": "The parking lot is full. People are parking on the grass. It feels like a concert except everyone is sweating for no reason.",
+   "pic": {
+    "id": "parking",
+    "at": "parking",
+    "look": "tape"
+   },
+   "sfx": [
+    {
+     "s": "crowd",
+     "at": "concert"
+    },
+    {
+     "s": "boing",
+     "at": "sweating"
+    }
+   ]
+  },
+  {
+   "id": "n5",
+   "text": "Me in the first week of January.",
+   "meme": {
+    "t": "stonks",
+    "a": "GAINS LOADING",
+    "at": "week"
+   },
+   "sfx": [
+    {
+     "s": "pack/01_evolve_brassy_swell",
+     "at": "January"
+    }
+   ]
+  },
+  {
+   "id": "c2d",
+   "text": "I tell my neighbor Bob I'm a changed man. I buy the shaker bottle and the gloves and the tiny towel.",
+   "host": true,
+   "mood": "happy",
+   "pose": "celebrate",
+   "pic": {
+    "id": "shaker",
+    "at": "shaker",
+    "look": "sticker"
+   },
+   "sfx": [
+    {
+     "s": "ding",
+     "at": "changed"
+    },
+    {
+     "s": "pop",
+     "at": "shaker"
+    },
+    {
+     "s": "pop",
+     "at": "towel"
+    }
+   ]
+  },
+  {
+   "id": "c2e",
+   "text": "And the gym prints my card and smiles. Because they've seen this exact movie every January and they know how it ends.",
+   "sfx": [
+    {
+     "s": "stamp",
+     "at": "card"
+    },
+    {
+     "s": "sting",
+     "at": "ends"
+    }
+   ]
+  },
+  {
+   "id": "n19",
+   "text": "Think about it. Does the gym hire more staff in January? Nope. Do they buy more treadmills? Nope. They just wait.",
+   "host": true,
+   "mood": "suspicious",
+   "pose": "hips",
+   "zoom": {
+    "in": "just",
+    "out": "wait"
+   },
+   "sfx": [
+    {
+     "s": "scratch",
+     "at": "Nope"
+    },
+    {
+     "s": "scratch",
+     "at": "Nope#2"
+    },
+    {
+     "s": "tick",
+     "at": "wait"
+    }
+   ]
+  },
+  {
+   "id": "c3a",
+   "text": "There's even a day for when it all falls apart.",
+   "host": true,
+   "mood": "worried",
+   "pose": "talk",
+   "sfx": [
+    {
+     "s": "pack/01_beating",
+     "at": "apart"
+    }
+   ]
+  },
+  {
+   "id": "c3b",
+   "text": "A fitness app looked at millions of workouts and found the exact day people give up. They call it Quitter's Day.",
+   "pic": {
+    "id": "runner",
+    "at": "workouts",
+    "look": "tape"
+   },
+   "slam": {
+    "t": "QUITTER'S DAY",
+    "at": "Quitter's"
+   },
+   "sfx": [
+    {
+     "s": "ding",
+     "at": "found"
+    },
+    {
+     "s": "pack/02_deep",
+     "at": "Quitter's"
+    }
+   ]
+  },
+  {
+   "id": "c3c",
+   "text": "It's the second Friday of January. Not March. Not even February. The second Friday of January.",
+   "sfx": [
+    {
+     "s": "flip",
+     "at": "Friday"
+    },
+    {
+     "s": "tick",
+     "at": "February"
+    },
+    {
+     "s": "boom",
+     "at": "Friday#2"
+    }
+   ]
+  },
+  {
+   "id": "n20",
+   "text": "Not even two weeks. My New Year's resolution had a shorter life than a carton of milk.",
+   "pic": {
+    "id": "milk",
+    "at": "milk",
+    "look": "sticker"
+   },
+   "sfx": [
+    {
+     "s": "ding",
+     "at": "resolution"
+    },
+    {
+     "s": "boing",
+     "at": "milk"
+    }
+   ]
+  },
+  {
+   "id": "n6",
+   "text": "My motivation on the second Friday of January.",
+   "meme": {
+    "t": "buttons",
+    "a": "Go to the gym",
+    "b": "Lie down forever",
+    "at": "motivation"
+   },
+   "sfx": [
+    {
+     "s": "pack/01_beating",
+     "at": "motivation"
+    }
+   ]
+  },
+  {
+   "id": "c3d",
+   "text": "That was me. I went three times. Then it rained once and I took it personally.",
+   "host": true,
+   "mood": "tired",
+   "pose": "shrug",
+   "pic": {
+    "id": "rain",
+    "at": "rained",
+    "look": "circle"
+   },
+   "zoom": {
+    "in": "rained",
+    "out": "personally"
+   },
+   "sfx": [
+    {
+     "s": "boing",
+     "at": "rained"
+    },
+    {
+     "s": "boom",
+     "at": "personally"
+    }
+   ]
+  },
+  {
+   "id": "c3e",
+   "text": "And everybody who signed up with me? Same. The gym gets quieter every week but the money keeps coming in.",
+   "sfx": [
+    {
+     "s": "cricket",
+     "at": "quieter"
+    },
+    {
+     "s": "cash",
+     "at": "money"
+    }
+   ]
+  },
+  {
+   "id": "n21",
+   "text": "And every month a little message from my bank. Gym membership. Paid. Like a tiny reminder that I'm a liar.",
+   "host": true,
+   "mood": "sad",
+   "pose": "facepalm",
+   "pic": {
+    "id": "card",
+    "at": "Paid",
+    "look": "tape"
+   },
+   "sfx": [
+    {
+     "s": "ding",
+     "at": "message"
+    },
+    {
+     "s": "cash",
+     "at": "Paid"
+    },
+    {
+     "s": "cricket",
+     "at": "liar"
+    }
+   ]
+  },
+  {
+   "id": "n7",
+   "text": "By March the only guy still going was the one filming himself.",
+   "host": true,
+   "mood": "grin",
+   "pose": "point_r",
+   "zoom": {
+    "in": "filming",
+    "out": "himself"
+   },
+   "sfx": [
+    {
+     "s": "pack/camera_shutter",
+     "at": "filming"
+    },
+    {
+     "s": "boom",
+     "at": "himself"
+    }
+   ]
+  },
+  {
+   "id": "c4a",
+   "text": "So I did something no gym member should ever do. I did the math.",
+   "chapter": "I Paid For Guilt",
+   "host": true,
+   "mood": "shock",
+   "pose": "panic",
+   "slam": {
+    "t": "THE MATH",
+    "at": "math"
+   },
+   "sfx": [
+    {
+     "s": "drumroll",
+     "at": "something"
+    },
+    {
+     "s": "pack/01_boom",
+     "at": "math"
+    }
+   ]
+  },
+  {
+   "id": "c4b",
+   "text": "Here's the one number. Take what you pay every month and divide it by how many times you actually went.",
+   "host": true,
+   "mood": "smug",
+   "pose": "point_up",
+   "pic": {
+    "id": "calculator",
+    "at": "divide",
+    "look": "circle"
+   },
+   "sfx": [
+    {
+     "s": "ding",
+     "at": "number"
+    },
+    {
+     "s": "click",
+     "at": "divide"
+    }
+   ]
+  },
+  {
+   "id": "c4c",
+   "text": "For me it was thirty dollars a visit. For one shower basically. The most expensive shower of my life.",
+   "host": true,
+   "mood": "shock",
+   "pose": "panic",
+   "slam": {
+    "t": "$30 A VISIT",
+    "at": "thirty"
+   },
+   "pic": {
+    "id": "shower",
+    "at": "shower#2",
+    "look": "tape"
+   },
+   "sfx": [
+    {
+     "s": "cash",
+     "at": "thirty"
+    },
+    {
+     "s": "trombone",
+     "at": "life"
+    }
+   ]
+  },
+  {
+   "id": "n22",
+   "text": "I could have hired a personal trainer to come to my house and yell at me for less money.",
+   "host": true,
+   "mood": "shock",
+   "pose": "point_r",
+   "pic": {
+    "id": "trainer",
+    "at": "trainer",
+    "look": "tape"
+   },
+   "sfx": [
+    {
+     "s": "boing",
+     "at": "yell"
+    },
+    {
+     "s": "boom",
+     "at": "money"
+    }
+   ]
+  },
+  {
+   "id": "n8",
+   "text": "My gym membership versus my actual workouts.",
+   "meme": {
+    "t": "vs",
+    "a": "$30 a month",
+    "b": "One shower",
+    "at": "actual"
+   },
+   "sfx": [
+    {
+     "s": "pop",
+     "at": "actual"
+    }
+   ]
+  },
+  {
+   "id": "c4d",
+   "text": "And this isn't just me being lazy. Two economists studied thousands of real gym members and found the same thing.",
+   "pic": {
+    "id": "library",
+    "at": "economists",
+    "look": "news",
+    "label": "the gym study"
+   },
+   "sfx": [
+    {
+     "s": "flip",
+     "at": "studied"
+    },
+    {
+     "s": "ding",
+     "at": "same"
+    }
+   ]
+  },
+  {
+   "id": "c4e",
+   "text": "People on the monthly plan paid way more per visit than if they just bought a ten visit pass. Most of them would have saved hundreds a year.",
+   "sfx": [
+    {
+     "s": "coin",
+     "at": "ten"
+    },
+    {
+     "s": "cash",
+     "at": "hundreds"
+    }
+   ]
+  },
+  {
+   "id": "n23",
+   "text": "Read that again. The people who picked the monthly plan to save money lost money. Because they bet on the wrong version of themselves.",
+   "host": true,
+   "mood": "smug",
+   "pose": "point_up",
+   "zoom": {
+    "in": "wrong",
+    "out": "themselves"
+   },
+   "sfx": [
+    {
+     "s": "scratch",
+     "at": "lost"
+    },
+    {
+     "s": "boom",
+     "at": "themselves"
+    }
+   ]
+  },
+  {
+   "id": "c4f",
+   "text": "So basically we paid extra for the right to feel guilty about not going.",
+   "card": {
+    "t": "We paid for guilt.",
+    "dark": true
+   },
+   "sfx": [
+    {
+     "s": "pack/01_boom",
+     "at": "guilty"
+    }
+   ],
+   "pause": 0.5
+  },
+  {
+   "id": "n9",
+   "text": "The gym business model in one picture.",
+   "meme": {
+    "t": "stonks",
+    "a": "NOBODY SHOWS UP",
+    "at": "picture"
+   },
+   "sfx": [
+    {
+     "s": "cash",
+     "at": "picture"
+    }
+   ]
+  },
+  {
+   "id": "c5a",
+   "text": "Now you might think this only happens to lazy people. Nope. It happens to you too.",
+   "host": true,
+   "mood": "suspicious",
+   "pose": "point_r",
+   "zoom": {
+    "in": "you#2",
+    "out": "too"
+   },
+   "sfx": [
+    {
+     "s": "scratch",
+     "at": "Nope"
+    },
+    {
+     "s": "boom",
+     "at": "too"
+    }
+   ]
+  },
+  {
+   "id": "c5b",
+   "text": "There are two of me. Tonight me just wants pizza. But January me is sure that future me will run every morning.",
+   "pic": {
+    "id": "pizza",
+    "at": "pizza",
+    "look": "sticker"
+   },
+   "sfx": [
+    {
+     "s": "ding",
+     "at": "pizza"
+    },
+    {
+     "s": "pack/01_evolve_brassy_swell",
+     "at": "morning"
+    }
+   ]
+  },
+  {
+   "id": "c5c",
+   "text": "And January me is the one who signs the contract. Every time.",
+   "host": true,
+   "mood": "tired",
+   "pose": "facepalm",
+   "sfx": [
+    {
+     "s": "stamp",
+     "at": "contract"
+    },
+    {
+     "s": "boom",
+     "at": "time"
+    }
+   ]
+  },
+  {
+   "id": "n24",
+   "text": "The gym isn't selling to you. It's selling to January you. The most optimistic person who has ever lived.",
+   "pic": {
+    "id": "sunrise",
+    "at": "optimistic",
+    "look": "polaroid"
+   },
+   "sfx": [
+    {
+     "s": "pack/01_evolve_brassy_swell",
+     "at": "optimistic"
+    }
+   ]
+  },
+  {
+   "id": "n10",
+   "text": "Future me after January me signs a twelve month contract.",
+   "meme": {
+    "t": "fine",
+    "a": "Twelve more months",
+    "at": "contract"
+   },
+   "sfx": [
+    {
+     "s": "cricket",
+     "at": "contract"
+    }
+   ]
+  },
+  {
+   "id": "c5e",
+   "text": "It's the same reason people buy a treadmill and it turns into the most expensive clothes rack in the house.",
+   "pic": {
+    "id": "clothes_rack",
+    "at": "rack",
+    "look": "tape"
+   },
+   "sfx": [
+    {
+     "s": "boing",
+     "at": "rack"
+    },
+    {
+     "s": "ding",
+     "at": "house"
+    }
+   ]
+  },
+  {
+   "id": "n25",
+   "text": "Me hanging a shirt on a treadmill I paid nine hundred dollars for.",
+   "meme": {
+    "t": "drake",
+    "a": "Running on it",
+    "b": "Drying socks on it",
+    "at": "shirt"
+   },
+   "sfx": [
+    {
+     "s": "boing",
+     "at": "shirt"
+    }
+   ]
+  },
+  {
+   "id": "n11",
+   "text": "Be honest. You have a treadmill or a yoga mat or a bike somewhere holding laundry right now.",
+   "host": true,
+   "mood": "grin",
+   "pose": "point_r",
+   "zoom": {
+    "in": "laundry",
+    "out": "now"
+   },
+   "sfx": [
+    {
+     "s": "pop",
+     "at": "mat"
+    },
+    {
+     "s": "boom",
+     "at": "now"
+    }
+   ]
+  },
+  {
+   "id": "c6a",
+   "text": "So in April I decide I'm done. Time to cancel.",
+   "chapter": "The Exit Maze",
+   "host": true,
+   "mood": "angry",
+   "pose": "talk",
+   "sfx": [
+    {
+     "s": "whoosh",
+     "at": "April"
+    },
+    {
+     "s": "stamp",
+     "at": "cancel"
+    }
+   ]
+  },
+  {
+   "id": "c6b",
+   "text": "Signing up took me two minutes on my phone. Cancelling? Different story.",
+   "sfx": [
+    {
+     "s": "click",
+     "at": "phone"
+    },
+    {
+     "s": "scratch",
+     "at": "Cancelling"
+    }
+   ]
+  },
+  {
+   "id": "c6c",
+   "text": "Some big gyms want a written letter. Sent by mail. With thirty days notice. Like I'm resigning from a job in nineteen fifty.",
+   "pic": {
+    "id": "typewriter",
+    "at": "letter",
+    "look": "polaroid",
+    "label": "dear gym"
+   },
+   "sfx": [
+    {
+     "s": "mail",
+     "at": "mail"
+    },
+    {
+     "s": "boing",
+     "at": "fifty"
+    }
+   ]
+  },
+  {
+   "id": "n26",
+   "text": "I had to buy a stamp. I didn't even know what a stamp costs anymore. I had to Google it.",
+   "host": true,
+   "mood": "tired",
+   "pose": "shrug",
+   "pic": {
+    "id": "stamp",
+    "at": "stamp",
+    "look": "circle"
+   },
+   "zoom": {
+    "in": "Google",
+    "out": "it"
+   },
+   "sfx": [
+    {
+     "s": "stamp",
+     "at": "stamp"
+    },
+    {
+     "s": "pack/01_processing",
+     "at": "Google"
+    }
+   ]
+  },
+  {
+   "id": "n12",
+   "text": "Me at the post office trying to quit a gym.",
+   "meme": {
+    "t": "drake",
+    "a": "Clicking cancel",
+    "b": "Buying a stamp",
+    "at": "office"
+   },
+   "sfx": [
+    {
+     "s": "pack/02_dial_up",
+     "at": "office"
+    }
+   ]
+  },
+  {
+   "id": "c6d",
+   "text": "Other gyms make you cancel in person at your home club. And if you show up on the wrong day you get billed again.",
+   "pic": {
+    "id": "receipt",
+    "at": "billed",
+    "look": "tape"
+   },
+   "sfx": [
+    {
+     "s": "thud",
+     "at": "wrong"
+    },
+    {
+     "s": "cash",
+     "at": "billed"
+    }
+   ]
+  },
+  {
+   "id": "n27",
+   "text": "My friend Kevin tried to cancel in person. They told him the manager who handles cancellations works Tuesdays. Only Tuesdays.",
+   "host": true,
+   "mood": "shock",
+   "pose": "panic",
+   "slam": {
+    "t": "ONLY TUESDAYS",
+    "at": "Only"
+   },
+   "sfx": [
+    {
+     "s": "cricket",
+     "at": "manager"
+    },
+    {
+     "s": "boom",
+     "at": "Tuesdays#2"
+    }
+   ]
+  },
+  {
+   "id": "c6e",
+   "text": "Netflix? Two taps and you're out. Nobody asks you to mail a letter to Netflix.",
+   "host": true,
+   "mood": "smug",
+   "pose": "shrug",
+   "pic": {
+    "id": "remote",
+    "at": "Netflix",
+    "look": "circle"
+   },
+   "zoom": {
+    "in": "Two",
+    "out": "out"
+   },
+   "sfx": [
+    {
+     "s": "click",
+     "at": "taps"
+    },
+    {
+     "s": "boom",
+     "at": "out"
+    }
+   ]
+  },
+  {
+   "id": "n13",
+   "text": "The gym front desk when I say the word cancel.",
+   "meme": {
+    "t": "fine",
+    "a": "Let me get my manager",
+    "at": "cancel"
+   },
+   "sfx": [
+    {
+     "s": "pack/01_processing",
+     "at": "cancel"
+    }
+   ]
+  },
+  {
+   "id": "c7a",
+   "text": "And the crazy part? The government actually tried to fix this.",
+   "host": true,
+   "mood": "shock",
+   "pose": "panic",
+   "sfx": [
+    {
+     "s": "riser",
+     "at": "fix"
+    }
+   ]
+  },
+  {
+   "id": "c7b",
+   "text": "There was a rule called click to cancel. If you can sign up online you have to be able to cancel online. Simple.",
+   "pic": {
+    "id": "ftc",
+    "at": "rule",
+    "look": "news",
+    "label": "click to cancel"
+   },
+   "sfx": [
+    {
+     "s": "click",
+     "at": "click"
+    },
+    {
+     "s": "ding",
+     "at": "Simple"
+    }
+   ]
+  },
+  {
+   "id": "c7c",
+   "text": "It was supposed to start in the summer of twenty twenty five. And days before it did a court threw it out.",
+   "host": true,
+   "mood": "sad",
+   "pose": "facepalm",
+   "slam": {
+    "t": "THROWN OUT",
+    "at": "threw"
+   },
+   "pic": {
+    "id": "gavel",
+    "at": "court",
+    "look": "sticker"
+   },
+   "sfx": [
+    {
+     "s": "pack/02_evolve_brassy_drop_2",
+     "at": "court"
+    },
+    {
+     "s": "trombone",
+     "at": "out"
+    }
+   ]
+  },
+  {
+   "id": "n36",
+   "text": "Gym owners reading that court news.",
+   "meme": {
+    "t": "buttons",
+    "a": "Make cancel easy",
+    "b": "Keep the stamps",
+    "at": "owners"
+   },
+   "sfx": [
+    {
+     "s": "pack/01_beating",
+     "at": "owners"
+    }
+   ]
+  },
+  {
+   "id": "c7d",
+   "text": "So right now it depends on where you live. Some states already make gyms let you cancel easily and some don't.",
+   "pic": {
+    "id": "us_map",
+    "at": "states",
+    "look": "plain"
+   },
+   "sfx": [
+    {
+     "s": "ding",
+     "at": "states"
+    }
+   ]
+  },
+  {
+   "id": "n29",
+   "text": "Some of those state laws even say if you joined online they have to let you leave online. So look up your state before you buy a single stamp.",
+   "pic": {
+    "id": "laptop",
+    "at": "online",
+    "look": "tape"
+   },
+   "sfx": [
+    {
+     "s": "click",
+     "at": "online"
+    },
+    {
+     "s": "stamp",
+     "at": "stamp"
+    }
+   ]
+  },
+  {
+   "id": "n14",
+   "text": "Gyms when that rule got thrown out.",
+   "meme": {
+    "t": "stonks",
+    "a": "CERTIFIED MAIL FOREVER",
+    "at": "Gyms"
+   },
+   "sfx": [
+    {
+     "s": "cash",
+     "at": "Gyms"
+    }
+   ]
+  },
+  {
+   "id": "c8a",
+   "text": "And honestly? Part of me gets it.",
+   "host": true,
+   "mood": "think",
+   "pose": "think",
+   "sfx": [
+    {
+     "s": "pack/01_processing",
+     "at": "honestly"
+    }
+   ]
+  },
+  {
+   "id": "c8b",
+   "text": "If all seven thousand members showed up on the same Monday the gym would explode. The building only works because people like me stay home.",
+   "sfx": [
+    {
+     "s": "crowd",
+     "at": "Monday"
+    },
+    {
+     "s": "pack/03_evolve_boom_brass_d",
+     "at": "explode"
+    }
+   ]
+  },
+  {
+   "id": "n30",
+   "text": "Imagine every single member showing up on Monday at six. People doing pushups in the parking lot.",
+   "meme": {
+    "t": "vs",
+    "a": "Gym room for 300",
+    "b": "Members 7,000",
+    "at": "Imagine"
+   },
+   "sfx": [
+    {
+     "s": "crowd",
+     "at": "parking"
+    }
+   ]
+  },
+  {
+   "id": "c8c",
+   "text": "So in a weird way my empty spot on the treadmill is paying for someone else's workout.",
+   "host": true,
+   "mood": "grin",
+   "pose": "shrug",
+   "zoom": {
+    "in": "paying",
+    "out": "workout"
+   },
+   "sfx": [
+    {
+     "s": "boom",
+     "at": "workout"
+    }
+   ]
+  },
+  {
+   "id": "c8d",
+   "text": "That doesn't make the cancel maze okay. It just means the gym isn't selling workouts. It's selling the feeling of being someone who works out.",
+   "card": {
+    "t": "They sell the feeling.",
+    "dark": true
+   },
+   "sfx": [
+    {
+     "s": "pack/01_boom",
+     "at": "feeling"
+    }
+   ],
+   "pause": 0.5
+  },
+  {
+   "id": "c9a",
+   "text": "So here's how I play it now. Quick reminder this is education and not advice.",
+   "chapter": "How I Beat The Gym",
+   "host": true,
+   "mood": "happy",
+   "pose": "point_up",
+   "sfx": [
+    {
+     "s": "ding",
+     "at": "play"
+    }
+   ]
+  },
+  {
+   "id": "c9b",
+   "text": "Before I sign anything I ask last year me. Not January me. How many times did I actually work out last year?",
+   "host": true,
+   "mood": "suspicious",
+   "pose": "point_r",
+   "zoom": {
+    "in": "last",
+    "out": "year#2"
+   },
+   "sfx": [
+    {
+     "s": "tick",
+     "at": "last"
+    },
+    {
+     "s": "boom",
+     "at": "year#2"
+    }
+   ]
+  },
+  {
+   "id": "c9c",
+   "text": "If the honest answer is not much I pay per visit first. A day pass costs more one time but way less than a year of guilt.",
+   "pic": {
+    "id": "ticket",
+    "at": "pass",
+    "look": "sticker"
+   },
+   "sfx": [
+    {
+     "s": "coin",
+     "at": "pass"
+    },
+    {
+     "s": "ding",
+     "at": "guilt"
+    }
+   ]
+  },
+  {
+   "id": "n31",
+   "text": "Or try the free stuff first. A park and some stairs and your own two legs. If you can't show up for free you won't show up for thirty a month.",
+   "pic": {
+    "id": "park",
+    "at": "park",
+    "look": "tape"
+   },
+   "sfx": [
+    {
+     "s": "ding",
+     "at": "free"
+    },
+    {
+     "s": "boom",
+     "at": "month"
+    }
+   ]
+  },
+  {
+   "id": "c9d",
+   "text": "If I do sign up I pick month to month even if it costs a bit more. I'm paying for the exit door.",
+   "pic": {
+    "id": "exit",
+    "at": "exit",
+    "look": "circle"
+   },
+   "sfx": [
+    {
+     "s": "ding",
+     "at": "exit"
+    },
+    {
+     "s": "whoosh",
+     "at": "door"
+    }
+   ]
+  },
+  {
+   "id": "c9e",
+   "text": "I put my gym days in my calendar like a meeting with my boss. Because I skip workouts but I don't skip my boss.",
+   "host": true,
+   "mood": "grin",
+   "pose": "present",
+   "pic": {
+    "id": "calendar",
+    "at": "calendar",
+    "look": "tape"
+   },
+   "sfx": [
+    {
+     "s": "flip",
+     "at": "calendar"
+    },
+    {
+     "s": "boom",
+     "at": "boss#2"
+    }
+   ]
+  },
+  {
+   "id": "c9f",
+   "text": "And once a year I check my bank statement for anything still charging me. Gym included. It takes fifteen minutes.",
+   "pic": {
+    "id": "bills",
+    "at": "statement",
+    "look": "tape"
+   },
+   "sfx": [
+    {
+     "s": "paper",
+     "at": "statement"
+    },
+    {
+     "s": "cash",
+     "at": "charging"
+    },
+    {
+     "s": "tick",
+     "at": "fifteen"
+    }
+   ]
+  },
+  {
+   "id": "n32",
+   "text": "Last time I did it I found a gym and two streaming apps and a magazine I forgot I was paying for. A magazine.",
+   "host": true,
+   "mood": "shock",
+   "pose": "panic",
+   "pic": {
+    "id": "magazine",
+    "at": "magazine",
+    "look": "polaroid"
+   },
+   "slam": {
+    "t": "A MAGAZINE",
+    "at": "magazine#2"
+   },
+   "sfx": [
+    {
+     "s": "drumroll",
+     "at": "found"
+    },
+    {
+     "s": "scratch",
+     "at": "magazine#2"
+    }
+   ]
+  },
+  {
+   "id": "c9g",
+   "text": "And when I finally cancelled? Certified mail. Receipt. A screenshot of the tracking page. Paper trails win arguments.",
+   "host": true,
+   "mood": "smug",
+   "pose": "thumbs",
+   "pic": {
+    "id": "envelope",
+    "at": "Certified",
+    "look": "polaroid"
+   },
+   "slam": {
+    "t": "PAPER TRAIL",
+    "at": "Paper"
+   },
+   "sfx": [
+    {
+     "s": "stamp",
+     "at": "Certified"
+    },
+    {
+     "s": "pack/camera_shutter",
+     "at": "screenshot"
+    },
+    {
+     "s": "ding",
+     "at": "win"
+    }
+   ]
+  },
+  {
+   "id": "n15",
+   "text": "Me walking out of the post office with my receipt.",
+   "meme": {
+    "t": "vs",
+    "a": "January me",
+    "b": "April me with a receipt",
+    "at": "receipt"
+   },
+   "sfx": [
+    {
+     "s": "crowd",
+     "at": "receipt"
+    }
+   ]
+  },
+  {
+   "id": "r1",
+   "text": "So remember that one number. What you pay divided by how many times you go.",
+   "host": true,
+   "mood": "happy",
+   "pose": "point_up",
+   "slam": {
+    "t": "PRICE ÷ VISITS",
+    "at": "divided"
+   },
+   "sfx": [
+    {
+     "s": "ding",
+     "at": "number"
+    },
+    {
+     "s": "click",
+     "at": "divided"
+    }
+   ]
+  },
+  {
+   "id": "r2",
+   "text": "If that number is bigger than a day pass the gym isn't your gym. You're the customer who never comes.",
+   "host": true,
+   "mood": "smug",
+   "pose": "point_r",
+   "zoom": {
+    "in": "never",
+    "out": "comes"
+   },
+   "sfx": [
+    {
+     "s": "scratch",
+     "at": "isn't"
+    },
+    {
+     "s": "boom",
+     "at": "comes"
+    }
+   ]
+  },
+  {
+   "id": "n34",
+   "text": "And if it's smaller? Congrats. You're the rare person the gym actually loses money on. Keep going.",
+   "host": true,
+   "mood": "happy",
+   "pose": "thumbs",
+   "pic": {
+    "id": "trophy",
+    "at": "Congrats",
+    "look": "sticker"
+   },
+   "sfx": [
+    {
+     "s": "crowd",
+     "at": "Congrats"
+    },
+    {
+     "s": "ding",
+     "at": "going"
+    }
+   ]
+  },
+  {
+   "id": "r3",
+   "text": "The gym doesn't make money when you work out. It makes money when you don't.",
+   "card": {
+    "t": "They win when you don't.",
+    "dark": true
+   },
+   "sfx": [
+    {
+     "s": "cash",
+     "at": "money"
+    },
+    {
+     "s": "pack/01_boom",
+     "at": "don't"
+    }
+   ],
+   "pause": 0.5
+  },
+  {
+   "id": "r4",
+   "text": "Next time my dog needs surgery and the bill nearly knocks me over. We'll find out why vet bills got so crazy.",
+   "pic": {
+    "id": "dog_vet",
+    "at": "dog",
+    "look": "polaroid"
+   },
+   "sfx": [
+    {
+     "s": "thud",
+     "at": "knocks"
+    },
+    {
+     "s": "ding",
+     "at": "crazy"
+    }
+   ]
+  },
+  {
+   "id": "r5",
+   "text": "Subscribe. It's free and it's way easier to cancel than a gym.",
+   "host": true,
+   "mood": "grin",
+   "pose": "wave",
+   "zoom": {
+    "in": "easier",
+    "out": "gym"
+   },
+   "sfx": [
+    {
+     "s": "ding",
+     "at": "Subscribe"
+    },
+    {
+     "s": "boom",
+     "at": "gym"
+    }
+   ]
   }
+ ]
 }

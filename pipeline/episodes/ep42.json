@@ -1,357 +1,1715 @@
 {
-  "id": "ep42",
+ "id": "ep42",
+ "title": "Why Dating Costs So Much Now (Apps Charge You to Stay Single)",
+ "voice": "chatterbox",
+ "upgraded": "2026-10-19 UPGRADE.md v2",
+ "sources": [
+  "Match Group FY2025 results / Business of Apps 'Match Statistics' (2026): Match Group (Tinder, Hinge, Match.com, etc.) reported ~$3.5 billion revenue in 2025",
+  "Business of Apps 'Bumble Statistics' (2026): Bumble reported ~$782 million revenue in 2025, a ~9.6% decline year-over-year; Business of Apps 'Dating App Market' (2026): the dating-app industry took in just over $6 billion in 2025",
+  "FTC v. Match Group (filed Sept 2019): FTC alleged Match.com used communications from accounts it had already flagged as likely fraudulent to send 'someone's interested in you' notices that pushed non-subscribers to pay; FTC press release (Aug 2025): Match Group agreed to pay $14 million and to change its advertising, guarantee, and cancellation practices to resolve the FTC's claims, without admitting wrongdoing",
+  "Industry data on paywalled features (SwipeStats/dating-app-economy roundups, 2026): common subscription-gated features include seeing who liked you, unlimited likes/swipes, undoing swipes ('rewind'), and boosted visibility; roughly 7% of dating-app users worldwide pay for premium features (about 35% of U.S. users have paid at some point)",
+  "Variable-reward / behavioral-design concept (widely documented in behavioral psychology and tech-design research, e.g. B.F. Skinner's variable-ratio reinforcement, cited in analyses of swipe-based app design): unpredictable rewards (occasional matches) drive repeated-checking behavior similar to slot machines",
+  "BMO Real Financial Progress Index / Ipsos survey of 2,501 U.S. adults, Dec 29, 2025-Jan 27, 2026 (published Feb 11, 2026): average 'all-in' cost of a date (including prep and gas) reached $189, up 12.5% from $168 the year before ('date-flation'); average American adult spends about $2,323/year on dates; ~47% of single adults said dating no longer feels financially worth it; average number of dates fell to ~12/year from ~14",
+  "Dating-app spend roundups (Players Time / getstream.io / connectedcouples, 2026, citing survey data): active daters spend upward of $300/month on apps and dates combined; average paying subscriber spends roughly $19-22/month on app subscriptions alone",
+  "Bank of America Better Money Habits survey (915 Gen Z adults, reported Aug 2025): 53% of Gen Z adults said they spend $0/month on dating; about a third spend under $100/month",
+  "Match Group corporate portfolio (Match Group investor materials; Wikipedia 'Match Group'): Match Group owns and operates Tinder, Hinge, Match.com, Meetic, OkCupid, Plenty of Fish, and other dating brands under one parent company",
+  "Business of Apps 'Tinder Statistics' (2026, citing Match Group financial disclosures): Tinder generated ~$1.9 billion in 2025 revenue (Match Group's single largest brand) despite paying subscribers falling ~8% to 8.77 million, the eighth straight quarter of subscriber declines, while revenue per payer rose ~5% to $17.63/quarter; Tinder has ~75 million monthly active users globally",
+  "Callback: credit card raccoon toll-booth / hidden-fee analogy (ep02)",
+  "FTC v. Match Group (2019) complaint; 2025 $14M settlement",
+  "FTC v. Match Group (2019) complaint; 2025 $14M settlement",
+  "FTC v. Match Group (2019) complaint; 2025 $14M settlement"
+ ],
+ "youtube": {
   "title": "Why Dating Costs So Much Now (Apps Charge You to Stay Single)",
-  "sources": [
-    "Match Group FY2025 results / Business of Apps 'Match Statistics' (2026): Match Group (Tinder, Hinge, Match.com, etc.) reported ~$3.5 billion revenue in 2025",
-    "Business of Apps 'Bumble Statistics' (2026): Bumble reported ~$782 million revenue in 2025, a ~9.6% decline year-over-year; Business of Apps 'Dating App Market' (2026): the dating-app industry took in just over $6 billion in 2025",
-    "FTC v. Match Group (filed Sept 2019): FTC alleged Match.com used communications from accounts it had already flagged as likely fraudulent to send 'someone's interested in you' notices that pushed non-subscribers to pay; FTC press release (Aug 2025): Match Group agreed to pay $14 million and to change its advertising, guarantee, and cancellation practices to resolve the FTC's claims, without admitting wrongdoing",
-    "Industry data on paywalled features (SwipeStats/dating-app-economy roundups, 2026): common subscription-gated features include seeing who liked you, unlimited likes/swipes, undoing swipes ('rewind'), and boosted visibility; roughly 7% of dating-app users worldwide pay for premium features (about 35% of U.S. users have paid at some point)",
-    "Variable-reward / behavioral-design concept (widely documented in behavioral psychology and tech-design research, e.g. B.F. Skinner's variable-ratio reinforcement, cited in analyses of swipe-based app design): unpredictable rewards (occasional matches) drive repeated-checking behavior similar to slot machines",
-    "BMO Real Financial Progress Index / Ipsos survey of 2,501 U.S. adults, Dec 29, 2025-Jan 27, 2026 (published Feb 11, 2026): average 'all-in' cost of a date (including prep and gas) reached $189, up 12.5% from $168 the year before ('date-flation'); average American adult spends about $2,323/year on dates; ~47% of single adults said dating no longer feels financially worth it; average number of dates fell to ~12/year from ~14",
-    "Dating-app spend roundups (Players Time / getstream.io / connectedcouples, 2026, citing survey data): active daters spend upward of $300/month on apps and dates combined; average paying subscriber spends roughly $19-22/month on app subscriptions alone",
-    "Bank of America Better Money Habits survey (915 Gen Z adults, reported Aug 2025): 53% of Gen Z adults said they spend $0/month on dating; about a third spend under $100/month",
-    "Match Group corporate portfolio (Match Group investor materials; Wikipedia 'Match Group'): Match Group owns and operates Tinder, Hinge, Match.com, Meetic, OkCupid, Plenty of Fish, and other dating brands under one parent company",
-    "Business of Apps 'Tinder Statistics' (2026, citing Match Group financial disclosures): Tinder generated ~$1.9 billion in 2025 revenue (Match Group's single largest brand) despite paying subscribers falling ~8% to 8.77 million, the eighth straight quarter of subscriber declines, while revenue per payer rose ~5% to $17.63/quarter; Tinder has ~75 million monthly active users globally",
-    "Callback: credit card raccoon toll-booth / hidden-fee analogy (ep02)"
+  "alt_titles": [
+   "Dating Apps Don't Want You to Find Someone. Here's Why.",
+   "Why Your $40/Month Dating App Has Zero Matches"
   ],
-  "beats": [
+  "hook": "Why does your dating app cost $40 a month with zero matches? Because a match that ends your subscription is bad for its business. Dave pays $40 a month for a dating app and still has zero matches. We break down how dating apps actually make money (Match Group and Bumble's real 2025 revenue, and how one company quietly owns Tinder, Hinge, Match, OkCupid and more), why a happy couple who deletes the app is a lost customer, the FTC's case against Match Group over fake 'someone likes you' emails, what your subscription actually buys (a 'paywall buffet' of removed annoyances), why swiping feels like a slot machine, and how much dates themselves now cost ('date-flation'). Then a light, practical way to date without going broke.",
+  "tags": [
+   "why dating apps cost so much",
+   "how dating apps make money",
+   "match group revenue explained",
+   "tinder bumble business model",
+   "dating app algorithm myth",
+   "date-flation explained",
+   "cost of dating 2026",
+   "dating app subscription",
+   "how to date on a budget",
+   "money explained simply",
+   "dave explains money"
+  ],
+  "hashtags": [
+   "#dating",
+   "#personalfinance",
+   "#money"
+  ],
+  "pinned": "How many months did you pay for a dating app before it actually worked? 👇"
+ },
+ "beats": [
+  {
+   "id": "o1",
+   "text": "This is me paying forty dollars a month to a dating app so I can stay single.",
+   "host": true,
+   "mood": "sad",
+   "pose": "present",
+   "pic": {
+    "id": "dating_app",
+    "at": "app",
+    "look": "polaroid",
+    "label": "-$40 / month"
+   },
+   "slam": {
+    "t": "-$40/MONTH",
+    "at": "forty"
+   },
+   "sfx": [
     {
-      "id": "o1",
-      "text": "Dave checks his banking app. Forty dollars, gone again, to a dating app subscription.",
-      "pause": 0.3
+     "s": "pack/01_beating",
+     "at": "paying"
     },
     {
-      "id": "o2",
-      "text": "He opens the app. Zero new matches. Same as last month. Same as the month before that.",
-      "pause": 0.3
+     "s": "cash",
+     "at": "forty"
     },
     {
-      "id": "o3",
-      "text": "And here's the twist. The app is not broken. It's working exactly as designed.",
-      "pause": 0.3
-    },
-    {
-      "id": "o4",
-      "text": "Because a match isn't really the goal. Dave, still paying, still swiping, that's the goal.",
-      "pause": 0.3
-    },
-    {
-      "id": "o5",
-      "text": "The longer he stays single and subscribed, the more the app makes.",
-      "pause": 0.35
-    },
-    {
-      "id": "o6",
-      "text": "Today: how dating apps actually make money, the myth about the algorithm, and how to date without going broke.",
-      "pause": 0.6
-    },
-    {
-      "id": "c1a",
-      "chapter": "The Dating Economy Is Bigger Than You Think",
-      "text": "Let's start with the size of this thing. Dave thinks he's using a free app.",
-      "pause": 0.4
-    },
-    {
-      "id": "c1b",
-      "text": "Match Group alone, the company behind Tinder, Hinge, and Match dot com, made about three and a half billion dollars in twenty twenty five.",
-      "pause": 0.5
-    },
-    {
-      "id": "c1c",
-      "text": "Bumble made about seven hundred eighty two million. And that was actually a drop from the year before.",
-      "pause": 0.5
-    },
-    {
-      "id": "c1d",
-      "text": "Across the whole industry, dating apps pulled in just over six billion dollars last year. From people looking for love, or at least a Friday night plan.",
-      "pause": 0.5
-    },
-    {
-      "id": "c1e",
-      "text": "Tinder alone made about one point nine billion of that, even after paying subscribers fell for eight quarters straight. Fewer people paying, but more money out of each one who does.",
-      "pause": 0.9
-    },
-    {
-      "id": "c2a",
-      "chapter": "One Company, Almost No Choice",
-      "text": "Dave got frustrated with Tinder, so he deleted it and tried Hinge instead. Same result.",
-      "pause": 0.4
-    },
-    {
-      "id": "c2b",
-      "text": "Here's the twist. Tinder, Hinge, Match dot com, Ok Cupid, Plenty of Fish, and several more, are all owned by the very same company.",
-      "pause": 0.5
-    },
-    {
-      "id": "c2c",
-      "text": "So when Dave 'switches apps' to escape one subscription, he's very often still paying the exact same parent company.",
-      "pause": 0.5
-    },
-    {
-      "id": "c2d",
-      "text": "It's less like choosing between competing stores, and more like walking to a different aisle inside the same supermarket.",
-      "pause": 0.9
-    },
-    {
-      "id": "c3a",
-      "chapter": "Matches Are Not the Goal",
-      "text": "Here's the part that stings a little. A happy couple who deletes the app is a lost customer.",
-      "pause": 0.4
-    },
-    {
-      "id": "c3b",
-      "text": "If Dave meets someone on day two and cancels his subscription, the app makes almost nothing off him.",
-      "pause": 0.5
-    },
-    {
-      "id": "c3c",
-      "text": "If Dave stays single, keeps swiping, and keeps paying every month, the app makes far more, month after month.",
-      "pause": 0.5
-    },
-    {
-      "id": "c3d",
-      "text": "That doesn't mean the apps want everyone miserable forever. It means the business math rewards you staying a customer, not you finding 'the one' on day one.",
-      "pause": 0.9
-    },
-    {
-      "id": "c4a",
-      "chapter": "Myth-Bust: The Algorithm Wants You to Match",
-      "text": "Most people think the app's algorithm is working hard to find their soulmate. Nope.",
-      "pause": 0.4
-    },
-    {
-      "id": "c4b",
-      "text": "The algorithm is trained to keep you using the app. Matching you instantly, every time, would actually work against that.",
-      "pause": 0.5
-    },
-    {
-      "id": "c4c",
-      "text": "In twenty nineteen, the F T C sued Match Group. The claim: the company used flagged, likely fraudulent accounts to send 'someone likes you' emails, to push people into paying.",
-      "pause": 0.5
-    },
-    {
-      "id": "c4d",
-      "text": "In twenty twenty five, Match Group agreed to pay fourteen million dollars, and to change its ads, guarantees, and cancellation process, to settle those claims.",
-      "pause": 0.5
-    },
-    {
-      "id": "c4e",
-      "text": "The company didn't admit wrongdoing. But the lesson stands. The notification that pulls you back into the app is a business tool, not a promise.",
-      "pause": 0.9
-    },
-    {
-      "id": "c5a",
-      "chapter": "The Paywall Buffet",
-      "text": "So what does Dave's forty dollars a month actually buy?",
-      "pause": 0.4
-    },
-    {
-      "id": "c5b",
-      "text": "Seeing who already liked him. Unlimited swipes, instead of a daily limit. Undoing an accidental left swipe. Being shown higher up in other people's stacks.",
-      "pause": 0.5
-    },
-    {
-      "id": "c5c",
-      "text": "None of these features find him a better person. They remove a small annoyance the app put there in the first place.",
-      "pause": 0.5
-    },
-    {
-      "id": "c5d",
-      "text": "It's a lot like our credit card video's raccoon. First it builds a tiny toll booth in your way. Then it charges you to skip the line.",
-      "pause": 0.5
-    },
-    {
-      "id": "c5e",
-      "text": "Only about seven percent of dating app users worldwide actually pay for any of it. The other ninety three percent are the free product, shown ads and constant upgrade offers.",
-      "pause": 0.9
-    },
-    {
-      "id": "c6a",
-      "chapter": "Why You Keep Swiping",
-      "text": "Ever wonder why swiping feels a little like a slot machine?",
-      "pause": 0.4
-    },
-    {
-      "id": "c6b",
-      "text": "Because the reward is random. Most swipes get nothing. Every so often, one gets a match. Your brain loves that pattern.",
-      "pause": 0.5
-    },
-    {
-      "id": "c6c",
-      "text": "Psychologists call it a variable reward. It's the same trick that makes slot machines, and social media feeds, so hard to put down.",
-      "pause": 0.5
-    },
-    {
-      "id": "c6d",
-      "text": "The app isn't lying to you about your matches. It's just built on a shape that keeps you opening it, once, twice, twenty times a day.",
-      "pause": 0.9
-    },
-    {
-      "id": "c7a",
-      "chapter": "Dates Got Expensive Too",
-      "text": "And it's not just the app. Actually going on the date costs more now too.",
-      "pause": 0.4
-    },
-    {
-      "id": "c7b",
-      "text": "A twenty twenty six survey put the average American date night, including getting ready and gas money, at about one hundred eighty nine dollars.",
-      "pause": 0.5
-    },
-    {
-      "id": "c7c",
-      "text": "That's up about twelve and a half percent in a single year. Regular inflation didn't move anywhere near that fast.",
-      "pause": 0.5
-    },
-    {
-      "id": "c7d",
-      "text": "Add it up over a year, and the average adult spends around two thousand three hundred twenty three dollars, just on date nights.",
-      "pause": 0.5
-    },
-    {
-      "id": "c7e",
-      "text": "No wonder almost half of single adults in that survey said dating just doesn't feel financially worth it anymore. Many said they now go on fewer dates, or pick cheaper ones on purpose.",
-      "pause": 0.9
-    },
-    {
-      "id": "c8a",
-      "chapter": "How Much This Generation Actually Spends",
-      "text": "So how much does dating itself cost, app plus dates, every month?",
-      "pause": 0.4
-    },
-    {
-      "id": "c8b",
-      "text": "People who date actively, not just casually, spend over three hundred dollars a month on the whole thing, apps and dates combined.",
-      "pause": 0.5
-    },
-    {
-      "id": "c8c",
-      "text": "But a lot of Gen Z has opted out of the spending, not the dating. In one survey, fifty three percent of Gen Z adults said they spend zero dollars a month on dating.",
-      "pause": 0.5
-    },
-    {
-      "id": "c8d",
-      "text": "About a third spend under a hundred dollars. So this generation isn't cheap, or lazy. Plenty of them have just noticed the math, and would rather save the money.",
-      "pause": 0.9
-    },
-    {
-      "id": "c9a",
-      "chapter": "Who Actually Profits",
-      "text": "So who wins here, while Dave keeps swiping alone?",
-      "pause": 0.4
-    },
-    {
-      "id": "c9b",
-      "text": "The dating apps win, every single month Dave stays subscribed and single. That's recurring revenue, built from a habit, not a purchase.",
-      "pause": 0.5
-    },
-    {
-      "id": "c9c",
-      "text": "Restaurants and bars win too, from date-flation, higher prices on the exact things people do on a first date.",
-      "pause": 0.5
-    },
-    {
-      "id": "c9d",
-      "text": "Dave only wins if he treats the app like a tool to meet someone, not a slot machine to check between meetings.",
-      "pause": 0.5
-    },
-    {
-      "id": "c9e",
-      "text": "None of this means dating apps are evil, or that nobody finds real love on them. Plenty of people do. It just means the business quietly profits either way.",
-      "pause": 0.9
-    },
-    {
-      "id": "c10a",
-      "chapter": "How to Date Without Going Broke",
-      "text": "So how do you play this smarter? Remember, this is education, not relationship advice.",
-      "pause": 0.4
-    },
-    {
-      "id": "c10b",
-      "text": "One. Try the free tier first, seriously. Most matches happen without paying a single cent.",
-      "pause": 0.5
-    },
-    {
-      "id": "c10c",
-      "text": "Two. Set a real budget for dates, the same way you'd budget for groceries. It stops 'date-flation' from becoming a surprise.",
-      "pause": 0.5
-    },
-    {
-      "id": "c10d",
-      "text": "Three. Move to an actual phone call or a meetup faster. The app's job is done the moment you swap numbers. Don't let it linger.",
-      "pause": 0.5
-    },
-    {
-      "id": "c10e",
-      "text": "Four. If a month goes by with a paid subscription and zero real conversations, that's a signal to cancel, not to upgrade.",
-      "pause": 0.5
-    },
-    {
-      "id": "c10f",
-      "text": "Five. Cheap dates work fine. A coffee, or a walk, tells you more about a person than a fancy dinner ever will.",
-      "pause": 0.5
-    },
-    {
-      "id": "c10g",
-      "text": "None of that costs forty dollars a month. Most of it costs nothing at all.",
-      "pause": 0.9
-    },
-    {
-      "id": "r1",
-      "chapter": "Now You Know",
-      "text": "So let's recap.",
-      "pause": 0.4
-    },
-    {
-      "id": "r2",
-      "text": "One. Dating apps made over six billion dollars last year, and a match that ends your subscription is actually bad for their business.",
-      "pause": 0.5
-    },
-    {
-      "id": "r3",
-      "text": "Two. The algorithm isn't rooting for you. It's built to keep you swiping, and actual dates got a lot more expensive too.",
-      "pause": 0.5
-    },
-    {
-      "id": "r4",
-      "text": "Three. The free tier, a real budget, and moving off the app fast beat almost every paid feature.",
-      "pause": 0.6
-    },
-    {
-      "id": "r5",
-      "text": "Next time, Dave finally gets the raise he's been asking for. So why does his paycheck look exactly the same?",
-      "pause": 0.4
-    },
-    {
-      "id": "r6",
-      "text": "Subscribe, so Dave can keep explaining money. It's free. Which, this episode taught us, is rarer than it sounds.",
-      "pause": 1.4
+     "s": "trombone",
+     "at": "single"
     }
-  ],
-  "youtube": {
-    "title": "Why Dating Costs So Much Now (Apps Charge You to Stay Single)",
-    "alt_titles": [
-      "Dating Apps Don't Want You to Find Someone. Here's Why.",
-      "Why Your $40/Month Dating App Has Zero Matches"
-    ],
-    "hook": "Why does your dating app cost $40 a month with zero matches? Because a match that ends your subscription is bad for its business. Dave pays $40 a month for a dating app and still has zero matches. We break down how dating apps actually make money (Match Group and Bumble's real 2025 revenue, and how one company quietly owns Tinder, Hinge, Match, OkCupid and more), why a happy couple who deletes the app is a lost customer, the FTC's case against Match Group over fake 'someone likes you' emails, what your subscription actually buys (a 'paywall buffet' of removed annoyances), why swiping feels like a slot machine, and how much dates themselves now cost ('date-flation'). Then a light, practical way to date without going broke.",
-    "tags": [
-      "why dating apps cost so much",
-      "how dating apps make money",
-      "match group revenue explained",
-      "tinder bumble business model",
-      "dating app algorithm myth",
-      "date-flation explained",
-      "cost of dating 2026",
-      "dating app subscription",
-      "how to date on a budget",
-      "money explained simply",
-      "dave explains money"
-    ],
-    "hashtags": [
-      "#dating",
-      "#personalfinance",
-      "#money"
-    ],
-    "pinned": "How many months did you pay for a dating app before it actually worked? 👇"
+   ],
+   "pause": 0.15
+  },
+  {
+   "id": "o2",
+   "text": "Zero new matches. Same as last month. Same as the month before that.",
+   "sfx": [
+    {
+     "s": "cricket",
+     "at": "Zero"
+    },
+    {
+     "s": "tick",
+     "at": "month"
+    },
+    {
+     "s": "boom",
+     "at": "that"
+    }
+   ],
+   "pause": 0.15
+  },
+  {
+   "id": "o3",
+   "text": "And here's the twist. The app is not broken. It's working exactly like it was built to.",
+   "sfx": [
+    {
+     "s": "scratch",
+     "at": "twist"
+    },
+    {
+     "s": "ding",
+     "at": "built"
+    }
+   ],
+   "pause": 0.15
+  },
+  {
+   "id": "o4",
+   "text": "Because me finding love was never the goal. Me still paying is the goal.",
+   "card": {
+    "t": "Me paying is the goal.",
+    "dark": true
+   },
+   "sfx": [
+    {
+     "s": "pack/01_boom",
+     "at": "goal#2"
+    }
+   ],
+   "pause": 0.3
+  },
+  {
+   "id": "o5",
+   "text": "By the end of this video you'll know the one move that makes a dating app lose money on you and it costs zero dollars.",
+   "host": true,
+   "mood": "suspicious",
+   "pose": "point_r",
+   "slam": {
+    "t": "ONE MOVE",
+    "at": "move"
+   },
+   "sfx": [
+    {
+     "s": "ding",
+     "at": "move"
+    },
+    {
+     "s": "coin",
+     "at": "zero"
+    },
+    {
+     "s": "boom",
+     "at": "dollars"
+    }
+   ],
+   "pause": 0.15
+  },
+  {
+   "id": "o6",
+   "text": "But most people swipe away before that part which is exactly what the app wants.",
+   "host": true,
+   "mood": "worried",
+   "pose": "hips",
+   "sfx": [
+    {
+     "s": "whoosh",
+     "at": "swipe"
+    },
+    {
+     "s": "sting",
+     "at": "wants"
+    }
+   ],
+   "pause": 0.3
+  },
+  {
+   "id": "c1a",
+   "text": "So let me tell you how this started. My friend says just download Tinder bro. It's free.",
+   "chapter": "The Free App",
+   "sfx": [
+    {
+     "s": "pop",
+     "at": "download"
+    },
+    {
+     "s": "ding",
+     "at": "free"
+    }
+   ]
+  },
+  {
+   "id": "n30",
+   "text": "And I'm not gonna lie I felt smart. Free app. Free love. What could go wrong?",
+   "host": true,
+   "mood": "happy",
+   "pose": "present",
+   "zoom": {
+    "in": "could",
+    "out": "wrong"
+   },
+   "sfx": [
+    {
+     "s": "ding",
+     "at": "love"
+    },
+    {
+     "s": "pack/01_beating",
+     "at": "wrong"
+    }
+   ]
+  },
+  {
+   "id": "n1",
+   "text": "Free. Remember that word.",
+   "host": true,
+   "mood": "smug",
+   "pose": "point_up",
+   "zoom": {
+    "in": "Remember",
+    "out": "word"
+   },
+   "sfx": [
+    {
+     "s": "boom",
+     "at": "word"
+    }
+   ]
+  },
+  {
+   "id": "c1b",
+   "text": "Week one I swipe on everyone. I swipe on the bus. I swipe in the shower. I swipe while my mom is talking to me.",
+   "host": true,
+   "mood": "happy",
+   "pose": "talk",
+   "pic": {
+    "id": "bus",
+    "at": "bus",
+    "look": "tape"
+   },
+   "sfx": [
+    {
+     "s": "whoosh",
+     "at": "everyone"
+    },
+    {
+     "s": "whoosh",
+     "at": "bus"
+    },
+    {
+     "s": "boing",
+     "at": "shower"
+    },
+    {
+     "s": "scratch",
+     "at": "mom"
+    }
+   ]
+  },
+  {
+   "id": "n12",
+   "text": "I swiped so much my thumb started hurting. I had a swiping injury. I almost went to a doctor.",
+   "host": true,
+   "mood": "tired",
+   "pose": "facepalm",
+   "pic": {
+    "id": "thumb",
+    "at": "thumb",
+    "look": "circle"
+   },
+   "zoom": {
+    "in": "almost",
+    "out": "doctor"
+   },
+   "sfx": [
+    {
+     "s": "boing",
+     "at": "thumb"
+    },
+    {
+     "s": "boom",
+     "at": "doctor"
+    }
+   ]
+  },
+  {
+   "id": "n2",
+   "text": "Me swiping right on every single person within fifty miles.",
+   "meme": {
+    "t": "stonks",
+    "a": "SWIPES 1,000 MATCHES 0",
+    "at": "swiping"
+   },
+   "sfx": [
+    {
+     "s": "whoosh",
+     "at": "swiping"
+    },
+    {
+     "s": "cricket",
+     "at": "miles"
+    }
+   ]
+  },
+  {
+   "id": "c1c",
+   "text": "Zero matches. So the app pops up a little message. Want to see who already likes you? Just upgrade.",
+   "pic": {
+    "id": "phone",
+    "at": "message",
+    "look": "circle"
+   },
+   "sfx": [
+    {
+     "s": "cricket",
+     "at": "Zero"
+    },
+    {
+     "s": "pop",
+     "at": "pops"
+    },
+    {
+     "s": "ding",
+     "at": "upgrade"
+    }
+   ]
+  },
+  {
+   "id": "c1d",
+   "text": "And I think wait. People already like me? I pay. Obviously.",
+   "host": true,
+   "mood": "shock",
+   "pose": "celebrate",
+   "slam": {
+    "t": "PEOPLE LIKE ME?",
+    "at": "like"
+   },
+   "sfx": [
+    {
+     "s": "drumroll",
+     "at": "wait"
+    },
+    {
+     "s": "cash",
+     "at": "pay"
+    },
+    {
+     "s": "boom",
+     "at": "Obviously"
+    }
+   ]
+  },
+  {
+   "id": "n31",
+   "text": "I paid so fast my card didn't even have time to be scared. Forty dollars. Gone. For a list of people who like me.",
+   "host": true,
+   "mood": "money",
+   "pose": "celebrate",
+   "pic": {
+    "id": "card",
+    "at": "card",
+    "look": "sticker"
+   },
+   "sfx": [
+    {
+     "s": "cash",
+     "at": "Forty"
+    },
+    {
+     "s": "whoosh",
+     "at": "Gone"
+    }
+   ]
+  },
+  {
+   "id": "c1e",
+   "text": "Turns out the people who liked me were a guy named Steve and a bot selling sunglasses.",
+   "pic": {
+    "id": "sunglasses",
+    "at": "sunglasses",
+    "look": "sticker"
+   },
+   "sfx": [
+    {
+     "s": "boing",
+     "at": "Steve"
+    },
+    {
+     "s": "trombone",
+     "at": "sunglasses"
+    }
+   ]
+  },
+  {
+   "id": "n3",
+   "text": "Me after paying to see who likes me.",
+   "meme": {
+    "t": "fine",
+    "a": "Two likes. Worth it.",
+    "at": "likes"
+   },
+   "sfx": [
+    {
+     "s": "cricket",
+     "at": "likes"
+    }
+   ]
+  },
+  {
+   "id": "c2a",
+   "text": "So I get mad and delete Tinder and download Hinge instead. New app. Fresh start. Different company.",
+   "host": true,
+   "mood": "angry",
+   "pose": "talk",
+   "pic": {
+    "id": "trash",
+    "at": "delete",
+    "look": "circle"
+   },
+   "sfx": [
+    {
+     "s": "thud",
+     "at": "delete"
+    },
+    {
+     "s": "ding",
+     "at": "Hinge"
+    },
+    {
+     "s": "boom",
+     "at": "company"
+    }
+   ]
+  },
+  {
+   "id": "c2b",
+   "text": "Except it's not. Tinder and Hinge and Match and OkCupid and Plenty of Fish are all owned by the same company.",
+   "sfx": [
+    {
+     "s": "scratch",
+     "at": "not"
+    },
+    {
+     "s": "pack/02_deep",
+     "at": "same"
+    }
+   ]
+  },
+  {
+   "id": "n32",
+   "text": "One company and a bunch of logos. It's like a restaurant that changes its sign every night but the same guy is cooking.",
+   "pic": {
+    "id": "chef",
+    "at": "cooking",
+    "look": "tape"
+   },
+   "sfx": [
+    {
+     "s": "ding",
+     "at": "logos"
+    },
+    {
+     "s": "boing",
+     "at": "cooking"
+    }
+   ]
+  },
+  {
+   "id": "n13",
+   "text": "It's like storming out of one supermarket because you hate it and walking into a different aisle of the same supermarket.",
+   "pic": {
+    "id": "supermarket",
+    "at": "aisle",
+    "look": "tape"
+   },
+   "sfx": [
+    {
+     "s": "whoosh",
+     "at": "walking"
+    },
+    {
+     "s": "trombone",
+     "at": "supermarket#2"
+    }
+   ]
+  },
+  {
+   "id": "c2c",
+   "text": "So when I switch apps to escape one subscription I'm still paying the exact same people.",
+   "host": true,
+   "mood": "sad",
+   "pose": "facepalm",
+   "zoom": {
+    "in": "exact",
+    "out": "people"
+   },
+   "sfx": [
+    {
+     "s": "cash",
+     "at": "paying"
+    },
+    {
+     "s": "boom",
+     "at": "people"
+    }
+   ]
+  },
+  {
+   "id": "c2d",
+   "text": "It's like breaking up with someone and then dating their twin. Who also has your credit card.",
+   "pic": {
+    "id": "twins",
+    "at": "twin",
+    "look": "polaroid"
+   },
+   "sfx": [
+    {
+     "s": "boing",
+     "at": "twin"
+    },
+    {
+     "s": "cash",
+     "at": "card"
+    }
+   ]
+  },
+  {
+   "id": "n4",
+   "text": "Me switching dating apps.",
+   "meme": {
+    "t": "drake",
+    "a": "Paying Tinder",
+    "b": "Paying Hinge (same company)",
+    "at": "switching"
+   },
+   "sfx": [
+    {
+     "s": "pop",
+     "at": "switching"
+    }
+   ]
+  },
+  {
+   "id": "c3a",
+   "text": "And then it hit me. If I meet someone tomorrow and delete the app what does the app make off me? Basically nothing.",
+   "chapter": "I Am The Product",
+   "host": true,
+   "mood": "think",
+   "pose": "think",
+   "pic": {
+    "id": "bulb",
+    "at": "hit",
+    "look": "sticker"
+   },
+   "sfx": [
+    {
+     "s": "pack/01_processing",
+     "at": "hit"
+    },
+    {
+     "s": "cricket",
+     "at": "nothing"
+    }
+   ]
+  },
+  {
+   "id": "c3c",
+   "text": "But if I stay single and keep swiping and keep paying every single month? Now I'm a great customer.",
+   "sfx": [
+    {
+     "s": "cash",
+     "at": "paying"
+    },
+    {
+     "s": "ding",
+     "at": "customer"
+    }
+   ]
+  },
+  {
+   "id": "n33",
+   "text": "Think about it from their side. Every month I'm sad and single is a month they get paid. My loneliness is their rent money.",
+   "host": true,
+   "mood": "suspicious",
+   "pose": "point_r",
+   "slam": {
+    "t": "MY LONELINESS = THEIR RENT",
+    "at": "rent"
+   },
+   "sfx": [
+    {
+     "s": "cash",
+     "at": "paid"
+    },
+    {
+     "s": "boom",
+     "at": "rent"
+    }
+   ]
+  },
+  {
+   "id": "n6",
+   "text": "A happy couple who deletes the app is a lost customer. A sad guy who keeps swiping is a subscription.",
+   "card": {
+    "t": "Single = subscription.",
+    "dark": true
+   },
+   "sfx": [
+    {
+     "s": "pack/01_boom",
+     "at": "subscription"
+    }
+   ],
+   "pause": 0.5
+  },
+  {
+   "id": "n5",
+   "text": "The dating app business plan.",
+   "meme": {
+    "t": "stonks",
+    "a": "STILL SINGLE",
+    "at": "plan"
+   },
+   "sfx": [
+    {
+     "s": "cash",
+     "at": "plan"
+    }
+   ]
+  },
+  {
+   "id": "c3d",
+   "text": "To be fair the apps don't want everyone sad forever. Some people really do find love. They just make more money from the ones who don't.",
+   "host": true,
+   "mood": "smug",
+   "pose": "shrug",
+   "pic": {
+    "id": "wedding",
+    "at": "love",
+    "look": "polaroid"
+   },
+   "sfx": [
+    {
+     "s": "ding",
+     "at": "love"
+    },
+    {
+     "s": "cash",
+     "at": "money"
+    }
+   ]
+  },
+  {
+   "id": "n23",
+   "text": "Think about a gym that loses money when you get fit. Or a dentist who loses money when your teeth are fine. Weird right?",
+   "pic": {
+    "id": "dentist",
+    "at": "dentist",
+    "look": "tape"
+   },
+   "sfx": [
+    {
+     "s": "ding",
+     "at": "dentist"
+    },
+    {
+     "s": "boom",
+     "at": "right"
+    }
+   ]
+  },
+  {
+   "id": "c4a",
+   "text": "And here's the part that really got me. The notification that says someone likes you? It isn't always a person.",
+   "host": true,
+   "mood": "suspicious",
+   "pose": "point_r",
+   "slam": {
+    "t": "SOMEONE LIKES YOU",
+    "at": "someone"
+   },
+   "sfx": [
+    {
+     "s": "ding",
+     "at": "notification"
+    },
+    {
+     "s": "sting",
+     "at": "person"
+    }
+   ]
+  },
+  {
+   "id": "c4c",
+   "text": "The FTC sued Match Group and said the company sent people those someone likes you emails from accounts it had already flagged as likely fake. To get people to pay.",
+   "pic": {
+    "id": "ftc",
+    "at": "FTC",
+    "look": "news",
+    "label": "FTC v. Match Group"
+   },
+   "sfx": [
+    {
+     "s": "stamp",
+     "at": "sued"
+    },
+    {
+     "s": "scratch",
+     "at": "fake"
+    },
+    {
+     "s": "cash",
+     "at": "pay"
+    }
+   ]
+  },
+  {
+   "id": "n44",
+   "text": "So the app was basically catfishing me into paying. With its own fake people.",
+   "host": true,
+   "mood": "angry",
+   "pose": "point_r",
+   "zoom": {
+    "in": "own",
+    "out": "people"
+   },
+   "sfx": [
+    {
+     "s": "scratch",
+     "at": "catfishing"
+    },
+    {
+     "s": "boom",
+     "at": "people"
+    }
+   ]
+  },
+  {
+   "id": "n7",
+   "text": "Me getting excited about a like from a fake account.",
+   "meme": {
+    "t": "vs",
+    "a": "Someone likes you!",
+    "b": "A flagged account",
+    "at": "fake"
+   },
+   "sfx": [
+    {
+     "s": "pack/01_beating",
+     "at": "excited"
+    }
+   ]
+  },
+  {
+   "id": "c4d",
+   "text": "In twenty twenty five Match agreed to pay fourteen million dollars to settle and it didn't admit doing anything wrong.",
+   "pic": {
+    "id": "gavel",
+    "at": "settle",
+    "look": "sticker"
+   },
+   "slam": {
+    "t": "$14M",
+    "at": "fourteen"
+   },
+   "sfx": [
+    {
+     "s": "pack/02_evolve_brassy_drop_2",
+     "at": "fourteen"
+    },
+    {
+     "s": "stamp",
+     "at": "settle"
+    }
+   ]
+  },
+  {
+   "id": "n34",
+   "text": "Fourteen million sounds like a lot. For a company that big it's like you or me paying a parking ticket.",
+   "pic": {
+    "id": "ticket",
+    "at": "ticket",
+    "look": "sticker"
+   },
+   "sfx": [
+    {
+     "s": "stamp",
+     "at": "ticket"
+    },
+    {
+     "s": "boing",
+     "at": "parking"
+    }
+   ]
+  },
+  {
+   "id": "c4e",
+   "text": "So that little buzz in your pocket? It's not a love letter. It's a sales email.",
+   "host": true,
+   "mood": "grin",
+   "pose": "point_up",
+   "pic": {
+    "id": "letter",
+    "at": "letter",
+    "look": "tape"
+   },
+   "zoom": {
+    "in": "sales",
+    "out": "email"
+   },
+   "sfx": [
+    {
+     "s": "ding",
+     "at": "buzz"
+    },
+    {
+     "s": "boom",
+     "at": "email"
+    }
+   ]
+  },
+  {
+   "id": "n24",
+   "text": "Me after learning that.",
+   "meme": {
+    "t": "stonks",
+    "a": "TRUST ISSUES",
+    "at": "learning"
+   },
+   "sfx": [
+    {
+     "s": "pack/01_evolve_brassy_swell",
+     "at": "learning"
+    }
+   ]
+  },
+  {
+   "id": "c5a",
+   "text": "So what does my forty dollars actually buy?",
+   "host": true,
+   "mood": "shock",
+   "pose": "shrug",
+   "pic": {
+    "id": "dollars",
+    "at": "dollars",
+    "look": "circle"
+   },
+   "sfx": [
+    {
+     "s": "cash",
+     "at": "dollars"
+    }
+   ]
+  },
+  {
+   "id": "c5b",
+   "text": "I get to see who liked me. Unlimited swipes. An undo button. And a boost so more people see my face.",
+   "sfx": [
+    {
+     "s": "ding",
+     "at": "liked"
+    },
+    {
+     "s": "whoosh",
+     "at": "swipes"
+    },
+    {
+     "s": "click",
+     "at": "undo"
+    },
+    {
+     "s": "pack/01_evolve_brassy_swell",
+     "at": "boost"
+    }
+   ]
+  },
+  {
+   "id": "n35",
+   "text": "And the boost is a little auction. The more people pay to be seen the more you have to pay to be seen too.",
+   "host": true,
+   "mood": "think",
+   "pose": "hips",
+   "sfx": [
+    {
+     "s": "coin",
+     "at": "auction"
+    },
+    {
+     "s": "cash",
+     "at": "pay#2"
+    }
+   ]
+  },
+  {
+   "id": "n22",
+   "text": "And there's an even fancier version that costs more. For people who want to be single at a premium level.",
+   "host": true,
+   "mood": "smug",
+   "pose": "point_up",
+   "slam": {
+    "t": "PREMIUM SINGLE",
+    "at": "premium"
+   },
+   "sfx": [
+    {
+     "s": "pack/03_evolve_boom_brass_d",
+     "at": "premium"
+    }
+   ]
+  },
+  {
+   "id": "c5c",
+   "text": "None of that finds me a better person. It just removes a little wall the app built in the first place.",
+   "host": true,
+   "mood": "suspicious",
+   "pose": "hips",
+   "pic": {
+    "id": "wall",
+    "at": "wall",
+    "look": "tape"
+   },
+   "sfx": [
+    {
+     "s": "thud",
+     "at": "wall"
+    }
+   ]
+  },
+  {
+   "id": "c5d",
+   "text": "It's like a guy who builds a toll booth in the middle of your street and then sells you a pass to skip it.",
+   "pic": {
+    "id": "tollbooth",
+    "at": "toll",
+    "look": "tape"
+   },
+   "sfx": [
+    {
+     "s": "cash",
+     "at": "pass"
+    },
+    {
+     "s": "boing",
+     "at": "skip"
+    }
+   ]
+  },
+  {
+   "id": "n8",
+   "text": "Paying to fix a problem the app made.",
+   "meme": {
+    "t": "brain",
+    "a": "Free app",
+    "b": "Pay to see likes",
+    "c": "Pay to undo a swipe",
+    "at": "problem"
+   },
+   "sfx": [
+    {
+     "s": "pack/01_processing",
+     "at": "problem"
+    }
+   ]
+  },
+  {
+   "id": "c5e",
+   "text": "And most people never pay a cent. They're the free version. The bait. The faces people like me pay to see.",
+   "host": true,
+   "mood": "shock",
+   "pose": "panic",
+   "pic": {
+    "id": "bait",
+    "at": "bait",
+    "look": "sticker"
+   },
+   "zoom": {
+    "in": "bait",
+    "out": "see"
+   },
+   "sfx": [
+    {
+     "s": "scratch",
+     "at": "bait"
+    },
+    {
+     "s": "boom",
+     "at": "see"
+    }
+   ]
+  },
+  {
+   "id": "c6a",
+   "text": "And here's why I kept opening it. Swiping feels like a slot machine.",
+   "chapter": "The Slot Machine In Your Pocket",
+   "host": true,
+   "mood": "think",
+   "pose": "talk",
+   "pic": {
+    "id": "slot",
+    "at": "slot",
+    "look": "circle"
+   },
+   "sfx": [
+    {
+     "s": "pack/01_beating",
+     "at": "opening"
+    },
+    {
+     "s": "coin",
+     "at": "slot"
+    }
+   ]
+  },
+  {
+   "id": "c6b",
+   "text": "Most swipes get nothing. Nothing. Nothing. Then boom. A match. And my brain goes crazy.",
+   "sfx": [
+    {
+     "s": "cricket",
+     "at": "nothing"
+    },
+    {
+     "s": "pack/01_boom",
+     "at": "boom"
+    },
+    {
+     "s": "crowd",
+     "at": "crazy"
+    }
+   ]
+  },
+  {
+   "id": "n36",
+   "text": "Scientists tried this on pigeons. Give them food every time and they get bored. Give them food at random and they peck that button all day.",
+   "pic": {
+    "id": "pigeon",
+    "at": "pigeons",
+    "look": "polaroid"
+   },
+   "sfx": [
+    {
+     "s": "boing",
+     "at": "pigeons"
+    },
+    {
+     "s": "click",
+     "at": "button"
+    }
+   ]
+  },
+  {
+   "id": "n37",
+   "text": "I am the pigeon. You are the pigeon. We are all pecking the button at two in the morning.",
+   "host": true,
+   "mood": "tired",
+   "pose": "facepalm",
+   "zoom": {
+    "in": "two",
+    "out": "morning"
+   },
+   "sfx": [
+    {
+     "s": "boing",
+     "at": "pigeon"
+    },
+    {
+     "s": "boom",
+     "at": "morning"
+    }
+   ]
+  },
+  {
+   "id": "c6c",
+   "text": "Psychologists call that a random reward. Same trick as casinos and same trick as your social media feed.",
+   "pic": {
+    "id": "casino",
+    "at": "casinos",
+    "look": "tape"
+   },
+   "sfx": [
+    {
+     "s": "coin",
+     "at": "random"
+    },
+    {
+     "s": "ding",
+     "at": "casinos"
+    }
+   ]
+  },
+  {
+   "id": "n15",
+   "text": "Las Vegas figured this out a long time ago. Dating apps just put the casino in your pocket.",
+   "pic": {
+    "id": "vegas",
+    "at": "Vegas",
+    "look": "polaroid"
+   },
+   "sfx": [
+    {
+     "s": "ding",
+     "at": "Vegas"
+    },
+    {
+     "s": "coin",
+     "at": "pocket"
+    }
+   ]
+  },
+  {
+   "id": "n9",
+   "text": "Me checking the app for the twentieth time today.",
+   "meme": {
+    "t": "buttons",
+    "a": "Go to sleep",
+    "b": "One more swipe",
+    "at": "twentieth"
+   },
+   "sfx": [
+    {
+     "s": "whoosh",
+     "at": "checking"
+    }
+   ]
+  },
+  {
+   "id": "c6d",
+   "text": "Be honest. You've checked an app like that in the bathroom at work. We all have.",
+   "host": true,
+   "mood": "grin",
+   "pose": "point_r",
+   "zoom": {
+    "in": "bathroom",
+    "out": "work"
+   },
+   "sfx": [
+    {
+     "s": "boing",
+     "at": "bathroom"
+    },
+    {
+     "s": "boom",
+     "at": "work"
+    }
+   ]
+  },
+  {
+   "id": "c7a",
+   "text": "And even when I finally got a date? That costs money too now.",
+   "host": true,
+   "mood": "worried",
+   "pose": "talk",
+   "sfx": [
+    {
+     "s": "pack/01_beating",
+     "at": "date"
+    }
+   ]
+  },
+  {
+   "id": "c7b",
+   "text": "Dinner and drinks and the Uber and the haircut I got for the date. One night cost me almost two hundred dollars.",
+   "pic": {
+    "id": "dinner",
+    "at": "Dinner",
+    "look": "polaroid"
+   },
+   "slam": {
+    "t": "$200 NIGHT",
+    "at": "two"
+   },
+   "sfx": [
+    {
+     "s": "ding",
+     "at": "Dinner"
+    },
+    {
+     "s": "cash",
+     "at": "dollars"
+    }
+   ]
+  },
+  {
+   "id": "n16",
+   "text": "The haircut alone was forty dollars. For a guy who looks exactly the same after.",
+   "pic": {
+    "id": "barber",
+    "at": "haircut",
+    "look": "tape"
+   },
+   "sfx": [
+    {
+     "s": "cash",
+     "at": "forty"
+    },
+    {
+     "s": "boing",
+     "at": "same"
+    }
+   ]
+  },
+  {
+   "id": "c7c",
+   "text": "And she ordered the lobster. On a first date. I respect it but my bank account doesn't.",
+   "pic": {
+    "id": "lobster",
+    "at": "lobster",
+    "look": "sticker"
+   },
+   "sfx": [
+    {
+     "s": "boing",
+     "at": "lobster"
+    },
+    {
+     "s": "trombone",
+     "at": "doesn't"
+    }
+   ]
+  },
+  {
+   "id": "n10",
+   "text": "My bank account after one date.",
+   "meme": {
+    "t": "fine",
+    "a": "$200 gone",
+    "at": "account"
+   },
+   "sfx": [
+    {
+     "s": "cricket",
+     "at": "account"
+    }
+   ]
+  },
+  {
+   "id": "n17",
+   "text": "Meanwhile my dad took my mom to a diner for two burgers and a milkshake. They've been married thirty years.",
+   "pic": {
+    "id": "diner",
+    "at": "diner",
+    "look": "polaroid",
+    "label": "dad's first date"
+   },
+   "sfx": [
+    {
+     "s": "ding",
+     "at": "diner"
+    },
+    {
+     "s": "crowd",
+     "at": "married"
+    }
+   ]
+  },
+  {
+   "id": "n38",
+   "text": "Thirty years. On a milkshake. And I spent two hundred dollars to get ghosted by text.",
+   "host": true,
+   "mood": "sad",
+   "pose": "facepalm",
+   "slam": {
+    "t": "GHOSTED",
+    "at": "ghosted"
+   },
+   "sfx": [
+    {
+     "s": "pack/02_evolve_brassy_drop_2",
+     "at": "ghosted"
+    }
+   ]
+  },
+  {
+   "id": "c7e",
+   "text": "No wonder so many people my age say dating just doesn't feel worth the money anymore. A lot of us just stopped spending.",
+   "host": true,
+   "mood": "sad",
+   "pose": "shrug",
+   "sfx": [
+    {
+     "s": "ding",
+     "at": "worth"
+    },
+    {
+     "s": "boom",
+     "at": "spending"
+    }
+   ]
+  },
+  {
+   "id": "n39",
+   "text": "And it's not because we don't want love. It's because rent already eats our paycheck and love wants a bite too.",
+   "pic": {
+    "id": "apartment",
+    "at": "rent",
+    "look": "tape"
+   },
+   "sfx": [
+    {
+     "s": "cash",
+     "at": "rent"
+    },
+    {
+     "s": "boing",
+     "at": "bite"
+    }
+   ]
+  },
+  {
+   "id": "c8c",
+   "text": "And you know what? Some of them are winning. About half of Gen Z says they spend zero dollars a month on dating.",
+   "host": true,
+   "mood": "happy",
+   "pose": "point_up",
+   "slam": {
+    "t": "$0",
+    "at": "zero"
+   },
+   "pic": {
+    "id": "piggy",
+    "at": "spend",
+    "look": "sticker"
+   },
+   "sfx": [
+    {
+     "s": "crowd",
+     "at": "winning"
+    },
+    {
+     "s": "coin",
+     "at": "zero"
+    }
+   ]
+  },
+  {
+   "id": "n18",
+   "text": "They watch a movie at home. They cook pasta. And somehow they still fall in love.",
+   "pic": {
+    "id": "pasta",
+    "at": "pasta",
+    "look": "sticker"
+   },
+   "sfx": [
+    {
+     "s": "ding",
+     "at": "pasta"
+    },
+    {
+     "s": "pack/01_evolve_brassy_swell",
+     "at": "love"
+    }
+   ]
+  },
+  {
+   "id": "c10a",
+   "text": "So here's how I date now. Quick reminder this is education and not relationship advice.",
+   "chapter": "How I Date Now",
+   "host": true,
+   "mood": "happy",
+   "pose": "point_up",
+   "sfx": [
+    {
+     "s": "ding",
+     "at": "date"
+    }
+   ]
+  },
+  {
+   "id": "c10b",
+   "text": "First I use the free version. Most of my real matches happened without paying a single cent.",
+   "host": true,
+   "mood": "smug",
+   "pose": "thumbs",
+   "pic": {
+    "id": "coin",
+    "at": "cent",
+    "look": "circle"
+   },
+   "sfx": [
+    {
+     "s": "coin",
+     "at": "cent"
+    }
+   ]
+  },
+  {
+   "id": "n19",
+   "text": "The paid stuff mostly makes you feel like you're doing something. Like buying running shoes instead of running.",
+   "pic": {
+    "id": "shoes",
+    "at": "shoes",
+    "look": "tape"
+   },
+   "sfx": [
+    {
+     "s": "boing",
+     "at": "shoes"
+    }
+   ]
+  },
+  {
+   "id": "n40",
+   "text": "I did the free version for a month and got more dates than when I was paying. Because I stopped swiping on everyone and actually read the profiles.",
+   "host": true,
+   "mood": "happy",
+   "pose": "thumbs",
+   "sfx": [
+    {
+     "s": "ding",
+     "at": "dates"
+    },
+    {
+     "s": "pack/01_processing",
+     "at": "read"
+    }
+   ]
+  },
+  {
+   "id": "c10d",
+   "text": "Second I move off the app fast. The app's job is done the second we swap numbers. So I swap numbers.",
+   "sfx": [
+    {
+     "s": "ding",
+     "at": "swap"
+    },
+    {
+     "s": "boom",
+     "at": "numbers#2"
+    }
+   ]
+  },
+  {
+   "id": "n20",
+   "text": "Phone call first. Ten minutes. If it's weird on the phone it's going to be weird at a two hundred dollar dinner.",
+   "pic": {
+    "id": "telephone",
+    "at": "call",
+    "look": "circle"
+   },
+   "sfx": [
+    {
+     "s": "tick",
+     "at": "Ten"
+    },
+    {
+     "s": "boom",
+     "at": "dinner"
+    }
+   ]
+  },
+  {
+   "id": "n25",
+   "text": "Dating apps when two people swap numbers.",
+   "meme": {
+    "t": "fine",
+    "a": "Customers lost",
+    "at": "numbers"
+   },
+   "sfx": [
+    {
+     "s": "cricket",
+     "at": "numbers"
+    }
+   ]
+  },
+  {
+   "id": "c10e",
+   "text": "Third if a whole month goes by with zero real conversations I cancel. I don't upgrade. I cancel.",
+   "host": true,
+   "mood": "angry",
+   "pose": "talk",
+   "slam": {
+    "t": "CANCEL",
+    "at": "cancel"
+   },
+   "zoom": {
+    "in": "upgrade",
+    "out": "cancel#2"
+   },
+   "sfx": [
+    {
+     "s": "scratch",
+     "at": "upgrade"
+    },
+    {
+     "s": "stamp",
+     "at": "cancel#2"
+    }
+   ]
+  },
+  {
+   "id": "n41",
+   "text": "Set the rule before you start. One month. If nothing real happens the money stays in my pocket.",
+   "pic": {
+    "id": "calendar",
+    "at": "month",
+    "look": "circle"
+   },
+   "sfx": [
+    {
+     "s": "flip",
+     "at": "month"
+    },
+    {
+     "s": "coin",
+     "at": "pocket"
+    }
+   ]
+  },
+  {
+   "id": "c10f",
+   "text": "And fourth cheap dates work. A coffee or a walk tells you more about a person than a lobster ever will.",
+   "pic": {
+    "id": "walk",
+    "at": "walk",
+    "look": "tape"
+   },
+   "sfx": [
+    {
+     "s": "ding",
+     "at": "coffee"
+    },
+    {
+     "s": "boing",
+     "at": "lobster"
+    }
+   ]
+  },
+  {
+   "id": "n11",
+   "text": "Me asking her on a walk instead of a fancy dinner.",
+   "meme": {
+    "t": "drake",
+    "a": "$200 dinner",
+    "b": "A free walk",
+    "at": "walk"
+   },
+   "sfx": [
+    {
+     "s": "pop",
+     "at": "walk"
+    }
+   ]
+  },
+  {
+   "id": "n42",
+   "text": "Also a walk has no lobster on the menu. Just saying.",
+   "host": true,
+   "mood": "grin",
+   "pose": "shrug",
+   "zoom": {
+    "in": "Just",
+    "out": "saying"
+   },
+   "sfx": [
+    {
+     "s": "boing",
+     "at": "lobster"
+    },
+    {
+     "s": "boom",
+     "at": "saying"
+    }
+   ]
+  },
+  {
+   "id": "c9a",
+   "text": "So here's the one move. Get off the app as fast as you can. Every day you stay is money for them.",
+   "host": true,
+   "mood": "happy",
+   "pose": "point_up",
+   "slam": {
+    "t": "GET OFF THE APP",
+    "at": "off"
+   },
+   "sfx": [
+    {
+     "s": "drumroll",
+     "at": "move"
+    },
+    {
+     "s": "pack/01_boom",
+     "at": "off"
+    },
+    {
+     "s": "cash",
+     "at": "money"
+    }
+   ]
+  },
+  {
+   "id": "c9b",
+   "text": "The app makes money while I'm swiping. The second I'm on a real date it makes nothing.",
+   "host": true,
+   "mood": "smug",
+   "pose": "shrug",
+   "zoom": {
+    "in": "real",
+    "out": "nothing"
+   },
+   "sfx": [
+    {
+     "s": "cash",
+     "at": "swiping"
+    },
+    {
+     "s": "boom",
+     "at": "nothing"
+    }
+   ]
+  },
+  {
+   "id": "n43",
+   "text": "Every hour you spend talking to a real human is an hour the app can't sell to you.",
+   "host": true,
+   "mood": "smug",
+   "pose": "point_up",
+   "sfx": [
+    {
+     "s": "tick",
+     "at": "hour"
+    },
+    {
+     "s": "ding",
+     "at": "human"
+    }
+   ]
+  },
+  {
+   "id": "n45",
+   "text": "The app watching us leave together.",
+   "meme": {
+    "t": "fine",
+    "a": "Revenue leaving",
+    "at": "leave"
+   },
+   "sfx": [
+    {
+     "s": "cricket",
+     "at": "leave"
+    }
+   ]
+  },
+  {
+   "id": "c9d",
+   "text": "The best way to beat a dating app is to stop needing it.",
+   "card": {
+    "t": "Stop needing it.",
+    "dark": true
+   },
+   "sfx": [
+    {
+     "s": "pack/01_boom",
+     "at": "needing"
+    }
+   ],
+   "pause": 0.5
+  },
+  {
+   "id": "r4",
+   "text": "Oh and that bot selling sunglasses? Still messages me every week. Most loyal relationship I've ever had.",
+   "host": true,
+   "mood": "grin",
+   "pose": "shrug",
+   "sfx": [
+    {
+     "s": "ding",
+     "at": "sunglasses"
+    },
+    {
+     "s": "boom",
+     "at": "had"
+    }
+   ]
+  },
+  {
+   "id": "r5",
+   "text": "Next time my sister tells me a kid costs three hundred thousand dollars. I laugh. Then I do the math.",
+   "pic": {
+    "id": "baby",
+    "at": "kid",
+    "look": "polaroid"
+   },
+   "sfx": [
+    {
+     "s": "cash",
+     "at": "dollars"
+    },
+    {
+     "s": "scratch",
+     "at": "math"
+    }
+   ]
+  },
+  {
+   "id": "r6",
+   "text": "Subscribe. It's free. And unlike dating apps it actually stays free.",
+   "host": true,
+   "mood": "grin",
+   "pose": "wave",
+   "zoom": {
+    "in": "actually",
+    "out": "free#2"
+   },
+   "sfx": [
+    {
+     "s": "ding",
+     "at": "Subscribe"
+    },
+    {
+     "s": "boom",
+     "at": "free#2"
+    }
+   ]
   }
+ ]
 }

@@ -12,7 +12,7 @@ import {Brain} from '../props17';
 import {AppIcon, Confetti, DatingPhone, DateTable, PaywallLock, SlotMachine, SwipeCard, UmbrellaOwner, XHeartBtns} from '../props42';
 
 type SP = Omit<StickProps, 'acc' | 'seed'>;
-const Dave: React.FC<SP> = (p) => <Stick acc={['hair']} seed={7} {...p} />;
+const Dave: React.FC<SP> = (p) => <Stick big seed={7} {...p} />;
 
 const G2: React.FC<{x?: number; y?: number; s?: number; r?: number; o?: number; children?: React.ReactNode}> = ({x = 0, y = 0, s = 1, r = 0, o = 1, children}) =>
   s === 0 || o <= 0 ? null : (
