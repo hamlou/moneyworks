@@ -5,7 +5,7 @@ import {ease, pop} from './anim';
 import {Cue, Sfx, Svg} from './fx';
 import {Pic, PicBg, PicLook, Slam} from './photo';
 import {Dave, Guru, Ink} from './memes52';
-import {Expr} from './Stick';
+import {Expr, Key} from './Stick';
 import {Beat, Timings, useT} from './timing';
 
 // UPGRADE.md layer: an old episode is upgraded by editing ONLY pipeline/episodes/epNN.json. Beat fields read here
@@ -139,6 +139,23 @@ const MemeCard: React.FC<{f: number; at: number; out: number; m: Meme; x?: numbe
   );
 };
 
+// Mouth moves only while words are actually spoken: talk on at each run of words, off at gaps and after the last word.
+export const speechKeys = (words: {start: number; end: number}[], at: number, pose: string, expr: Expr, look = 0.15, endPose = pose): Key[] => {
+  const ks: Key[] = [{at, pose, expr, look, talk: false}];
+  let runStart = -1;
+  words.forEach((w, j) => {
+    if (runStart < 0) runStart = w.start;
+    const nx = words[j + 1];
+    if (!nx || nx.start - w.end > 0.2) {
+      ks.push({at: Math.round(runStart * 30), talk: true}, {at: Math.round(w.end * 30), talk: false});
+      runStart = -1;
+    }
+  });
+  const last = words.length ? Math.round(words[words.length - 1].end * 30) : at;
+  ks.push({at: last + 1, pose: endPose, talk: false});
+  return ks;
+};
+
 // Big word-synced captions for host scenes: the last 4 spoken words, current word in yellow.
 const HostCaption: React.FC<{f: number; words: {text: string; start: number; end: number}[]; x: number}> = ({f, words, x}) => {
   const sec = f / 30;
@@ -212,13 +229,13 @@ export const Upgrade: React.FC<{ep: string}> = ({ep}) => {
           {b.bg ? <PicBg f={f} src={`${ep}/${b.bg}.jpg`} from={at} dim={0.45} /> : <AbsoluteFill style={{background: `radial-gradient(circle at 30% 40%, #fff 0%, ${i % 2 ? C.sky : C.stone} 70%)`}} />}
           <Svg>
             <ellipse cx={daveX} cy={1050} rx={260} ry={34} fill="rgba(0,0,0,0.18)" />
-            <Dave f={f} x={daveX} y={1060} s={2.3} keys={[{at, pose: b.pose ?? POSES[i % POSES.length], expr: b.mood ?? 'happy', look: 0.15, talk: true}, {at: fr(b.end), pose: b.pose ?? 'idle', expr: b.mood ?? 'happy', look: 0.15}]} />
+            <Dave f={f} x={daveX} y={1060} s={2.3} keys={speechKeys(b.words, at, b.pose ?? POSES[i % POSES.length], b.mood ?? 'happy', 0.15, b.pose ?? 'idle')} />
           </Svg>
           {pic && <Pic f={f} src={picSrc} x={1340} y={400} w={760} h={560} at={picAt} look={pic.cut ? 'cutout' : pic.look ?? LOOKS[i % LOOKS.length]} enter="slam" rot={i % 2 ? 3 : -3} label={pic.label} />}
           {slam && <Slam f={f} at={slamAt} text={slam.t} x={pic ? 1340 : 1300} y={pic ? 120 : 380} size={pic ? 110 : 170} color={C.yellow} />}
-          <HostCaption f={f} words={b.words} x={pic ? 1340 : 1300} />
         </AbsoluteFill>,
       );
+      layers.push(<HostCaption key={`hc${i}`} f={f} words={b.words} x={pic ? 1340 : 1300} />);
       if (z) cues.push({at: zin, src: 'boom', v: 0.9});
     } else if (!cover) {
       // right-hand panel: the old drawing is shrunk to the left by Episode.tsx, so nothing Dave explains is hidden

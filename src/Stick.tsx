@@ -1,6 +1,7 @@
 import React from 'react';
 import {C, FONT, SW} from './theme';
 import {ease, lerp} from './anim';
+import {useSpeaking} from './timing';
 
 export type Pose = {torso: number; head: number; lu: number; ll: number; ru: number; rl: number; lt: number; ls: number; rt: number; rs: number};
 export type Expr = 'neutral' | 'happy' | 'grin' | 'sad' | 'shock' | 'worried' | 'smug' | 'think' | 'tired' | 'suspicious' | 'angry' | 'money' | 'scream';
@@ -283,6 +284,7 @@ export type StickProps = {
 };
 
 export const Stick: React.FC<StickProps> = ({f, x, y, s = 1, keys, acc = [], walk, flip, sweat, pockets = 0, tinfoil, seed = 0, opacity = 1, handItem, hold, big}) => {
+  const speaking = useSpeaking(f);
   const ks = resolve(keys);
   let i = ks.length - 1;
   while (i > 0 && ks[i].at > f) i--;
@@ -361,13 +363,13 @@ export const Stick: React.FC<StickProps> = ({f, x, y, s = 1, keys, acc = [], wal
           <>
             <ellipse cx={0} cy={0} rx={HR * 1.03} ry={HR * 0.95} transform="rotate(-10)" fill={C.paper} stroke={C.ink} strokeWidth={SW * 1.5} />
             <g transform={`translate(${HR * 0.3},${HR * 0.1}) scale(2.1)`}>
-              <Face e={expr} f={f} look={flip ? -look : look} talk={cur.talk} seed={seed} dots />
+              <Face e={expr} f={f} look={flip ? -look : look} talk={cur.talk && speaking} seed={seed} dots />
             </g>
           </>
         ) : (
           <>
             <circle cx={0} cy={0} r={L.head} fill={C.paper} stroke={C.ink} strokeWidth={SW} />
-            <Face e={expr} f={f} look={flip ? -look : look} talk={cur.talk} seed={seed} />
+            <Face e={expr} f={f} look={flip ? -look : look} talk={cur.talk && speaking} seed={seed} />
           </>
         )}
         {acc.includes('hair') && <Hair />}

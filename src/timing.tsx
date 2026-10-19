@@ -42,3 +42,23 @@ export const useT = () => {
   const we = (id: string, word: string, nth = 0) => w(id, word, nth, 'end');
   return {t, beat, bs, be, w, we, fr, end: fr(t.total)};
 };
+
+// True while a word is being spoken at frame f (or when there are no timings, e.g. thumbnails).
+const spans = new WeakMap<Timings, number[]>();
+export const useSpeaking = (f: number) => {
+  const t = useContext(Ctx);
+  if (!t) return true;
+  let s = spans.get(t);
+  if (!s) {
+    s = t.beats.flatMap((b) => (b.words ?? []).flatMap((w) => [Math.round(w.start * FPS) - 1, Math.round(w.end * FPS) + 1]));
+    spans.set(t, s);
+  }
+  let lo = 0, hi = s.length / 2 - 1;
+  while (lo <= hi) {
+    const m = (lo + hi) >> 1;
+    if (f < s[2 * m]) hi = m - 1;
+    else if (f > s[2 * m + 1]) lo = m + 1;
+    else return true;
+  }
+  return false;
+};
