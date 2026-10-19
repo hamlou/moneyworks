@@ -24,7 +24,7 @@ import {Paycheck, Scale} from '../props8';
 import {AgeBadge, ExpenseRatioLine, FinishLine, FRABadge, Lunchbox, NameTag, PicnicBasket, RetirementCalc, SSdial, TrustJar, VendingMachine} from '../props59';
 
 type SP = Omit<StickProps, 'acc' | 'seed'>;
-const Dave: React.FC<SP> = (p) => <Stick acc={['hair']} seed={7} {...p} />;
+const Dave: React.FC<SP> = (p) => <Stick big seed={7} {...p} />;
 const Dad: React.FC<SP> = (p) => <Stick acc={['cap', 'glasses']} seed={19} {...p} />;
 const Officer: React.FC<SP> = (p) => <Stick acc={['ponytail', 'glasses']} seed={44} {...p} />;
 const Bob: React.FC<SP> = (p) => <Stick acc={['cap']} seed={21} {...p} />;

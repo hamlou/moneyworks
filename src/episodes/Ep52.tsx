@@ -14,7 +14,7 @@ import {Contract} from '../props5';
 import {WebinarLaptop, Mansion, Notebook, CourseTier, GoldBottle, MiningTools, GeneralStore, GameSword, GameArmor, GameHorse, SampleStand, PayButton, ScreenshotFolder, FTCBadge} from '../props52';
 
 type SP = Omit<StickProps, 'acc' | 'seed'>;
-const Dave: React.FC<SP> = (p) => <Stick acc={['hair']} seed={7} {...p} />;
+const Dave: React.FC<SP> = (p) => <Stick big seed={7} {...p} />;
 const Guru: React.FC<SP> = (p) => <Stick acc={['tie', 'shades']} seed={45} {...p} />;
 const Coach: React.FC<SP> = (p) => <Stick acc={['cap', 'tie']} seed={52} {...p} />;
 const Kevin: React.FC<SP> = (p) => <Stick acc={['cap']} seed={29} {...p} />;
