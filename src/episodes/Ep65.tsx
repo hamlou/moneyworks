@@ -1,0 +1,63 @@
+import React from 'react';
+import {Stage} from '../stage';
+import {C} from '../theme';
+
+export const Ep65: React.FC = () => (
+  <Stage
+    sub="c4h"
+    props={{
+      o1: {title: 'the airport booth', sign: 'FREE FLIGHT!', bubble: 'sir... free flight?'},
+      o2: {title: '3 months later', money: 2, bubble: 'I live on floor 3'},
+      c1a: {title: 'the airport booth', sign: 'FREE FLIGHT!', room: true},
+      c1c: {title: 'the deal', phone: {title: 'AIRLINE CARD', value: '60,000 pts', color: C.green}},
+      n2: {title: 'the deal', phone: {title: 'AIRLINE CARD', value: '60,000 pts', color: C.green}, bubble: 'Mexico!'},
+      c1h: {title: 'need: $1,300 extra', phone: {title: 'SPENT SO FAR', value: '$2,700', color: C.red}},
+      n3: {title: 'the kayak aisle', sign: 'KAYAK = POINTS', bubble: 'I need this'},
+      c2a: {title: 'the shopping spree', phone: {title: 'SPENT SO FAR', value: '$3,500', color: C.red}},
+      n4: {title: 'the little voice', bubble: "it's basically on sale"},
+      c2c: {title: 'the Chicago Fed test', laptop: '#DDEBF7', bubble: '+1% cash back'},
+      n5: {title: 'the trade', money: 1, bubble: '70 cents!'},
+      c2g: {title: 'the free cookie', bubble: '1 cookie per 10 cakes'},
+      c3a: {title: "grandma's drawer", room: true, bubble: 'green stamps'},
+      c3b: {title: "grandma's drawer", room: true, sign: '1 BOOK = 1 TOASTER'},
+      n6: {title: "grandma's toaster", room: true, bubble: 'I paid for it?'},
+      c3g: {title: '1981', laptop: '#C8F0D2', bubble: 'stamps... on a computer'},
+      c3g2: {title: 'same picture', room: true, phone: {title: 'MY CARD', value: '64,000 pts', color: C.green}},
+      c4c: {title: 'where points come from', laptop: '#FFF3C4', bubble: 'print. print. print.'},
+      c4d: {title: 'airline → bank → me', money: 4, phone: {title: 'MY CARD', value: '+1 pt', color: C.green}},
+      c4e: {title: 'every swipe pays them', phone: {title: 'MY CARD', value: '+1 pt', color: C.green}},
+      c4f: {title: 'American Airlines, last year', money: 6, sign: '$6.2B FROM POINTS'},
+      n8: {title: 'the real business', money: 6, sign: 'PROFIT: $0.1B'},
+      n9: {title: '2020', sign: 'POINTS > AIRLINE'},
+      c4i: {title: 'one point =', sign: '≈ 1 CENT'},
+      n10: {title: '64,000 points', phone: {title: 'WORTH', value: '≈ $640', color: C.red}},
+      c5a: {title: 'booking the beach', phone: {title: 'MEXICO', value: '80,000 pts', color: C.red}},
+      c5c: {title: 'the price moved', phone: {title: 'MEXICO', value: '80,000 pts', color: C.red}, bubble: 'nobody asked me'},
+      c5d: {title: 'the arcade', sign: 'TEDDY: 2,000 TICKETS'},
+      n11: {title: 'so close...', phone: {title: 'MEXICO', value: '80,000 pts', color: C.red}},
+      c5e: {title: 'Delta, 2023', notif: {title: 'SkyMiles', body: 'New rules!'}},
+      c5f: {title: 'Delta, 2023', bubble: 'we went too far'},
+      c5h: {title: '2024', sign: 'INQUIRY: 4 AIRLINES'},
+      n12: {title: '20,000 points short', sign: 'KAYAK #2?'},
+      c6b: {title: 'the checkout', phone: {title: 'TAP', value: '-2% to shop', color: C.red}},
+      c6d: {title: 'the checkout', sign: 'BREAD +2¢'},
+      c6f: {title: 'the Boston Fed', money: 2, bubble: 'cash pays ~$150/yr'},
+      n13: {title: 'who pays my points?', bubble: 'grandma does'},
+      c7c: {title: 'the statement', phone: {title: 'APR', value: '22%', color: C.red}},
+      c7d: {title: 'the trade', sign: 'GET 1% · PAY 22%'},
+      n14: {title: 'customer B', phone: {title: 'BALANCE', value: '$1,300', color: C.red}},
+      c7g2: {title: 'my kitchen', room: true, bubble: 'this is fine'},
+      c8a: {title: '3 questions', bubble: '1. 2. 3.'},
+      c8b: {title: 'question 1', bubble: 'would I buy it with no points?'},
+      n15: {title: 'question 1', money: 5, bubble: '$1,300 stays home'},
+      c8d: {title: 'question 2', phone: {title: 'AUTOPAY', value: 'FULL BALANCE', color: C.green}},
+      c8f: {title: 'question 3', phone: {title: 'ANNUAL FEE', value: '$0', color: C.green}},
+      c8g: {title: 'points = milk', sign: 'USE BY: ???'},
+      n16: {title: 'points = milk', sign: 'USE BY: ???', bubble: 'spend them'},
+      c9a: {title: 'Mexico', bubble: 'paid by points. really.'},
+      c9d: {title: 'somebody always pays', sign: 'SHOPPER · NEIGHBOR · BORROWER'},
+      c9f: {title: 'Mexico', bubble: 'it floats!'},
+      r4: {title: 'next time', sign: 'SCHOOL: 0 MONEY CLASSES'},
+    }}
+  />
+);

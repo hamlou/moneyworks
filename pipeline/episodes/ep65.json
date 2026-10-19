@@ -1,22 +1,8 @@
 {
  "id": "ep65",
  "title": "Why Your Rewards Points Are Making You Poorer",
- "hook_form": "absurd_true_fact",
- "tts": {
-  "rate": "-5%",
-  "hook_rate": "+3%",
-  "lead": 0.08
- },
- "spine": {
-  "goal": "Dave wants a 'free' beach flight: 60,000 bonus points from a new airline credit card, if he spends $4,000 in three months.",
-  "stakes": "He normally spends $900 a month, so he has to buy $1,300 of stuff he doesn't need (a kayak), then pays a $95 fee and about $90 of interest: $1,485 for a flight he could have bought for about $600.",
-  "central_question": "If points are free, who is actually paying for them, and why would an airline rather sell points than seats?",
-  "loop_big": "Hook shows Dave on the beach 'with fifteen hundred dollars a year back in his pocket'; paid in ch8-ch9: three questions on a sticky note undo all three costs ($1,300 chasing + $90 interest + $95 fee = $1,485) and he books the same beach with the points he already has.",
-  "loop_mid": "Pause-and-guess in ch4 (~33%): is one point worth ten cents, five cents or one cent? Paid about a minute later: about one cent (CFPB, issuers' own estimate), so 64,000 points = about $640.",
-  "villain": "The points printer (revealed ch4, ~40-50%): the airline creates points from nothing and sells them to the card bank; American Airlines got $6.2 billion in cash from card and other partners in 2025 against $111 million of net income, and in 2020 its points program was appraised at $19.5-31.5 billion, more than the airline's market value.",
-  "low_point": "~72%: the flight now costs 80,000 points, Dave carried a balance at about 22% interest, and his 'free' flight has cost $1,485 while he is still 20,000 points short. Dave: 'I got played by a kayak.'",
-  "win": "Education, not advice: (1) would I buy this with no points? (2) can I pay the whole bill every month? -> autopay in full (3) what does the card cost just to exist? -> no-fee cash back card; plus spend points fast. Dave books the same beach for 55,000 points off-season and keeps $1,485 a year. Balanced: rewards can be a nice little extra for people who pay in full and never chase."
- },
+ "voice": "chatterbox",
+ "upgraded": "2026-10-19 UPGRADE.md v2",
  "sources": [
   "American Airlines Group Inc., Form 10-K for fiscal year 2025 (SEC, filed Feb 2026): 'Cash payments from co-branded credit card and other partners were $6.2 billion and $6.1 billion during 2025 and 2024, respectively.' NOTE (hook wording): the $6.2B is cash from co-branded card AND other partners (mileage credits sold plus marketing services), so the script says 'from the banks and partners buying its points', not 'from selling points on cards' alone. Starting in 2026 Citi became the exclusive issuer of the AAdvantage co-branded card portfolio in the U.S. https://www.sec.gov/Archives/edgar/data/6201/000000620126000014/aal-20251231.htm",
   "American Airlines press release, fourth-quarter and full-year 2025 results (Jan 2026): full-year GAAP net income of $111 million on record revenue of $54.6 billion. Math: $6.2B / $0.111B = about 56x -> 'over fifty times what it kept in profit all year'. https://news.aa.com/news/news-details/2026/American-Airlines-reports-fourth-quarter-and-full-year-2025-financial-results-CORP-FI-01/default.aspx",
@@ -62,589 +48,2054 @@
  "beats": [
   {
    "id": "o1",
-   "job": "concept",
-   "text": "Last year American Airlines took in about six billion dollars from the banks and partners buying its points for cards like yours and that is over fifty times its profit.",
-   "pause": 0.2
+   "text": "This is me at the airport and a smiley man just offered me a free flight to Mexico. Sixty thousand free points.",
+   "host": true,
+   "mood": "money",
+   "pose": "present",
+   "pic": {
+    "id": "terminal",
+    "at": "airport",
+    "look": "polaroid",
+    "label": "the booth"
+   },
+   "slam": {
+    "t": "60,000 FREE POINTS",
+    "at": "Sixty"
+   },
+   "sfx": [
+    {
+     "s": "ding",
+     "at": "free"
+    },
+    {
+     "s": "pack/01_evolve_brassy_swell",
+     "at": "Mexico"
+    },
+    {
+     "s": "cash",
+     "at": "points"
+    }
+   ],
+   "pause": 0.15
   },
   {
    "id": "o2",
-   "job": "stakes",
-   "text": "And you're the one paying for them because a Federal Reserve study caught a one percent reward making people spend about seventy dollars more every month.",
-   "pause": 0.2
+   "text": "Three months later I own a kayak. I live on the third floor. With a cat.",
+   "pic": {
+    "id": "kayaks",
+    "at": "kayak",
+    "look": "tape"
+   },
+   "sfx": [
+    {
+     "s": "boing",
+     "at": "kayak"
+    },
+    {
+     "s": "tick",
+     "at": "third"
+    },
+    {
+     "s": "cricket",
+     "at": "cat"
+    }
+   ],
+   "pause": 0.15
   },
   {
    "id": "o3",
-   "job": "ending",
-   "text": "So meet Dave who ends this video on this beach with about fifteen hundred dollars a year back in his pocket.",
-   "pause": 0.5
+   "text": "And I still haven't been to Mexico.",
+   "card": {
+    "t": "Still no Mexico.",
+    "dark": true
+   },
+   "sfx": [
+    {
+     "s": "scratch",
+     "at": "still"
+    },
+    {
+     "s": "pack/01_boom",
+     "at": "Mexico"
+    }
+   ],
+   "pause": 0.3
+  },
+  {
+   "id": "o4",
+   "text": "By the end of this video you'll know what one point is really worth and who has been secretly paying for my vacation. Spoiler. It might be you.",
+   "host": true,
+   "mood": "suspicious",
+   "pose": "point_r",
+   "slam": {
+    "t": "WHO PAYS?",
+    "at": "paying"
+   },
+   "sfx": [
+    {
+     "s": "ding",
+     "at": "worth"
+    },
+    {
+     "s": "drumroll",
+     "at": "secretly"
+    },
+    {
+     "s": "boom",
+     "at": "you"
+    }
+   ],
+   "pause": 0.15
+  },
+  {
+   "id": "o5",
+   "text": "But most people click away before that part which is exactly why the points game keeps working.",
+   "host": true,
+   "mood": "worried",
+   "pose": "hips",
+   "sfx": [
+    {
+     "s": "whoosh",
+     "at": "click"
+    },
+    {
+     "s": "sting",
+     "at": "working"
+    }
+   ],
+   "pause": 0.3
   },
   {
    "id": "c1a",
+   "text": "So it starts at the airport. I'm dragging my suitcase past a little booth and the man shouts sir would you like a free flight?",
    "chapter": "Sixty Thousand Free Points",
-   "text": "It all starts at the airport where Dave is dragging his suitcase past a little booth and a very smiley man shouts sir would you like a free flight?",
-   "pause": 0.4,
-   "rate": "+3%"
+   "pic": {
+    "id": "suitcase",
+    "at": "suitcase",
+    "look": "tape"
+   },
+   "sfx": [
+    {
+     "s": "whoosh",
+     "at": "dragging"
+    },
+    {
+     "s": "ding",
+     "at": "booth"
+    },
+    {
+     "s": "pack/01_beating",
+     "at": "flight"
+    }
+   ]
   },
   {
-   "id": "c1b",
-   "text": "And honestly who says no to that? You wouldn't and I definitely wouldn't.",
-   "pause": 0.4
+   "id": "n1",
+   "text": "And honestly who says no to that? You wouldn't. I definitely didn't.",
+   "host": true,
+   "mood": "happy",
+   "pose": "shrug",
+   "zoom": {
+    "in": "definitely",
+    "out": "didn't"
+   },
+   "sfx": [
+    {
+     "s": "boom",
+     "at": "didn't"
+    }
+   ]
   },
   {
    "id": "c1c",
-   "text": "The deal is a shiny airline credit card with sixty thousand bonus points which he says is a round trip to a beach in Mexico.",
-   "pause": 0.4
+   "text": "The deal is a shiny airline credit card with sixty thousand bonus points. He says that's a round trip to a beach in Mexico.",
+   "pic": {
+    "id": "cards",
+    "at": "card",
+    "look": "sticker"
+   },
+   "sfx": [
+    {
+     "s": "ding",
+     "at": "shiny"
+    },
+    {
+     "s": "cash",
+     "at": "sixty"
+    },
+    {
+     "s": "pack/01_evolve_brassy_swell",
+     "at": "beach"
+    }
+   ]
   },
   {
-   "id": "c1d",
-   "text": "Dave goes wow because sixty thousand of anything sounds like a lot.",
-   "pause": 0.5,
-   "pitch": "+3Hz",
+   "id": "n2",
+   "text": "Me hearing the words free flight.",
    "meme": {
-    "format": "stonks",
-    "caption": "POINTZ",
-    "word": "sounds"
-   }
+    "t": "stonks",
+    "a": "FREE VACATION",
+    "at": "flight"
+   },
+   "sfx": [
+    {
+     "s": "pack/01_evolve_brassy_swell",
+     "at": "flight"
+    }
+   ]
   },
   {
    "id": "c1e",
-   "text": "There's just one little line at the bottom and it says you have to spend four thousand dollars on the card in your first three months.",
-   "pause": 0.45
+   "text": "There's just one tiny line at the bottom. You have to spend four thousand dollars on the card in your first three months.",
+   "host": true,
+   "mood": "suspicious",
+   "pose": "point_up",
+   "slam": {
+    "t": "SPEND $4,000",
+    "at": "four"
+   },
+   "sfx": [
+    {
+     "s": "scratch",
+     "at": "tiny"
+    },
+    {
+     "s": "cash",
+     "at": "four"
+    },
+    {
+     "s": "tick",
+     "at": "three"
+    }
+   ]
   },
   {
    "id": "c1g",
-   "text": "But here's Dave's problem. He normally puts about nine hundred dollars a month on a card so he's going to come up short.",
-   "pause": 0.4
+   "text": "Here's my problem. I normally put about nine hundred dollars a month on a card. So I'm going to come up short.",
+   "host": true,
+   "mood": "think",
+   "pose": "think",
+   "sfx": [
+    {
+     "s": "pack/01_processing",
+     "at": "problem"
+    },
+    {
+     "s": "trombone",
+     "at": "short"
+    }
+   ]
   },
   {
    "id": "c1h",
-   "text": "To grab his free flight he needs to find thirteen hundred dollars of extra stuff to buy. And that's the exact moment Dave walks past a kayak.",
-   "pause": 0.5,
-   "rate": "-9%"
+   "text": "To grab my free flight I need to find thirteen hundred dollars of extra stuff to buy. And that's the exact moment I walk past a kayak.",
+   "pic": {
+    "id": "store_aisle",
+    "at": "kayak",
+    "look": "tape"
+   },
+   "sfx": [
+    {
+     "s": "ding",
+     "at": "thirteen"
+    },
+    {
+     "s": "drumroll",
+     "at": "walk"
+    },
+    {
+     "s": "boing",
+     "at": "kayak"
+    }
+   ]
   },
   {
    "id": "c1i",
-   "text": "Dave lives on the third floor with a cat and he is nowhere near water. But the kayak has points on it so the kayak is coming home.",
-   "pause": 0.8,
+   "text": "I'm nowhere near water. I don't know how to kayak. But the kayak has points on it. So the kayak is coming home.",
+   "host": true,
+   "mood": "grin",
+   "pose": "present",
+   "zoom": {
+    "in": "coming",
+    "out": "home"
+   },
+   "sfx": [
+    {
+     "s": "cricket",
+     "at": "water"
+    },
+    {
+     "s": "ding",
+     "at": "points"
+    },
+    {
+     "s": "boom",
+     "at": "home"
+    }
+   ]
+  },
+  {
+   "id": "n3",
+   "text": "Me deciding if I need a kayak.",
    "meme": {
-    "format": "distracted boyfriend",
-    "caption": "DAVE looks at KAYAK WITH POINTS while HIS BUDGET stares",
-    "word": "points"
-   }
+    "t": "drake",
+    "a": "Do I need a kayak",
+    "b": "Does the kayak have points",
+    "at": "kayak"
+   },
+   "sfx": [
+    {
+     "s": "pop",
+     "at": "kayak"
+    }
+   ]
   },
   {
    "id": "c2a",
-   "chapter": "The Kayak Problem",
-   "text": "So Dave buys the kayak and then an air fryer and then he pays for the whole table at dinner so his friends can pay him back in cash.",
-   "pause": 0.4
+   "text": "Then an air fryer. Then I pay for the whole table at dinner so my friends can pay me back in cash.",
+   "pic": {
+    "id": "fryer",
+    "at": "fryer",
+    "look": "sticker"
+   },
+   "sfx": [
+    {
+     "s": "ding",
+     "at": "fryer"
+    },
+    {
+     "s": "cash",
+     "at": "dinner"
+    },
+    {
+     "s": "pop",
+     "at": "friends"
+    }
+   ]
   },
   {
    "id": "c2b",
-   "text": "You've heard that little voice too. It's the one that says well I'm getting points on it so it's basically on sale.",
-   "pause": 0.5,
-   "rate": "+3%",
+   "text": "You've heard that little voice too. The one that says it's basically on sale because I get points.",
+   "host": true,
+   "mood": "smug",
+   "pose": "point_r",
+   "slam": {
+    "t": "BASICALLY ON SALE",
+    "at": "sale"
+   },
+   "sfx": [
+    {
+     "s": "pack/01_beating",
+     "at": "voice"
+    },
+    {
+     "s": "ding",
+     "at": "sale"
+    }
+   ]
+  },
+  {
+   "id": "n4",
+   "text": "Every shopping trip with a rewards card.",
    "meme": {
-    "format": "drake",
-    "caption": "NO: JUST BUYING THE FLIGHT / YES: BUYING A KAYAK TO FLY FREE",
-    "word": "points"
-   }
+    "t": "brain",
+    "a": "Buying what I need",
+    "b": "Buying for points",
+    "c": "Buying a kayak for points",
+    "at": "shopping"
+   },
+   "sfx": [
+    {
+     "s": "pack/01_processing",
+     "at": "shopping"
+    }
+   ]
   },
   {
    "id": "c2c",
-   "text": "And somebody actually measured that voice. In two thousand ten economists at the Chicago Fed studied a bank that had just added a one percent cash back reward to its cards.",
-   "pause": 0.45
+   "text": "And somebody actually measured that little voice. Economists at the Chicago Fed studied a bank that had just added one percent cash back to its cards.",
+   "pic": {
+    "id": "chifed",
+    "at": "Chicago",
+    "look": "news",
+    "label": "Chicago Fed study"
+   },
+   "sfx": [
+    {
+     "s": "ding",
+     "at": "measured"
+    },
+    {
+     "s": "flip",
+     "at": "studied"
+    }
+   ]
   },
   {
    "id": "c2d",
-   "text": "It was the same customers and the same cards with one tiny new reward. So what do you think happened to their spending?",
-   "pause": 0.6,
-   "pitch": "+3Hz"
+   "text": "Same customers. Same cards. One tiny new reward. So what do you think happened to their spending?",
+   "host": true,
+   "mood": "suspicious",
+   "pose": "point_up",
+   "sfx": [
+    {
+     "s": "tick",
+     "at": "Same"
+    },
+    {
+     "s": "tick",
+     "at": "Same#2"
+    },
+    {
+     "s": "drumroll",
+     "at": "happened"
+    }
+   ]
   },
   {
    "id": "c2e",
-   "text": "It jumped by about sixty eight dollars a month and the debt on those cards grew even faster.",
-   "pause": 0.6,
-   "rate": "-11%"
+   "text": "It jumped by about seventy dollars a month. And the debt on those cards grew even faster.",
+   "host": true,
+   "mood": "shock",
+   "pose": "panic",
+   "slam": {
+    "t": "+$70 A MONTH",
+    "at": "seventy"
+   },
+   "sfx": [
+    {
+     "s": "pack/01_boom",
+     "at": "jumped"
+    },
+    {
+     "s": "cash",
+     "at": "seventy"
+    },
+    {
+     "s": "pack/02_deep",
+     "at": "faster"
+    }
+   ]
   },
   {
    "id": "c2f",
-   "text": "Now look at that trade because one percent back on that extra spending is about seventy cents.",
-   "pause": 0.5,
-   "meme": {
-    "format": "trade offer",
-    "caption": "I RECEIVE: $68 MORE A MONTH / YOU RECEIVE: 70 CENTS",
-    "word": "seventy"
-   }
+   "text": "Now look at that trade. One percent back on seventy dollars is seventy cents.",
+   "host": true,
+   "mood": "tired",
+   "pose": "facepalm",
+   "zoom": {
+    "in": "seventy#2",
+    "out": "cents"
+   },
+   "pic": {
+    "id": "coins",
+    "at": "cents",
+    "look": "circle"
+   },
+   "sfx": [
+    {
+     "s": "coin",
+     "at": "cents"
+    },
+    {
+     "s": "boom",
+     "at": "cents"
+    }
+   ]
   },
   {
    "id": "c2g",
-   "text": "It's like a bakery that hands you one free cookie for every ten cakes you buy and you walk out thinking you robbed the place.",
-   "pause": 0.5
+   "text": "It's like a bakery that gives you one free cookie for every ten cakes you buy and you walk out thinking you robbed the place.",
+   "pic": {
+    "id": "bakery",
+    "at": "bakery",
+    "look": "polaroid"
+   },
+   "sfx": [
+    {
+     "s": "ding",
+     "at": "cookie"
+    },
+    {
+     "s": "boing",
+     "at": "robbed"
+    }
+   ]
+  },
+  {
+   "id": "n5",
+   "text": "Me after earning seventy cents for spending seventy dollars.",
+   "meme": {
+    "t": "fine",
+    "a": "I'm winning",
+    "at": "earning"
+   },
+   "sfx": [
+    {
+     "s": "cricket",
+     "at": "earning"
+    }
+   ]
   },
   {
    "id": "c2h",
-   "text": "So in plain English points don't pay you to shop. They get you to shop more and then they hand you back the crumbs.",
+   "text": "So points don't pay you to shop. They get you to shop more and then they hand you back the crumbs.",
+   "card": {
+    "t": "They hand you the crumbs.",
+    "dark": true
+   },
+   "sfx": [
+    {
+     "s": "pack/01_boom",
+     "at": "crumbs"
+    }
+   ],
    "pause": 0.5
   },
   {
    "id": "c2i",
-   "text": "Three months later Dave hits his four thousand dollars and he feels like a genius. But he's thirteen hundred dollars poorer and he starts wondering who invented this game.",
-   "pause": 0.8,
-   "meme": {
-    "format": "panik kalm panik",
-    "caption": "SPEND $4,000: PANIK / 60,000 POINTS: KALM / $1,300 POORER: PANIK",
-    "word": "poorer"
-   }
+   "text": "Three months later I hit my four thousand dollars and I feel like a genius. But I'm thirteen hundred dollars poorer. So I start wondering who invented this game.",
+   "host": true,
+   "mood": "money",
+   "pose": "celebrate",
+   "sfx": [
+    {
+     "s": "crowd",
+     "at": "genius"
+    },
+    {
+     "s": "trombone",
+     "at": "poorer"
+    },
+    {
+     "s": "pack/01_processing",
+     "at": "invented"
+    }
+   ]
   },
   {
    "id": "c3a",
-   "chapter": "Grandma's Sticky Stamps",
-   "text": "So Dave asks his grandma because Grandma remembers everything and she pulls a little green book out of a kitchen drawer.",
-   "pause": 0.4
+   "text": "So I ask my grandma. Grandma remembers everything. And she pulls a little green book out of a kitchen drawer.",
+   "pic": {
+    "id": "stamps",
+    "at": "book",
+    "look": "polaroid",
+    "label": "grandma's drawer"
+   },
+   "sfx": [
+    {
+     "s": "flip",
+     "at": "grandma"
+    },
+    {
+     "s": "paper",
+     "at": "book"
+    }
+   ]
   },
   {
    "id": "c3b",
-   "text": "These are S and H Green Stamps and the company behind them started in eighteen ninety six.",
-   "pause": 0.4
-  },
-  {
-   "id": "c3c",
-   "text": "Every time you bought groceries the shop gave you a strip of stamps. You licked them and stuck them in a book and then you traded full books for a toaster.",
-   "pause": 0.45
+   "text": "Green stamps. Back in her day every time you bought groceries the shop gave you a strip of stamps. You licked them and stuck them in a book. And full books got you a toaster.",
+   "pic": {
+    "id": "toaster",
+    "at": "toaster",
+    "look": "sticker"
+   },
+   "sfx": [
+    {
+     "s": "pop",
+     "at": "stamps"
+    },
+    {
+     "s": "boing",
+     "at": "licked"
+    },
+    {
+     "s": "ding",
+     "at": "toaster"
+    }
+   ]
   },
   {
    "id": "c3d",
-   "text": "People went absolutely nuts for them. In the nineteen sixties this one company was putting out more stamps than the United States Post Office.",
-   "pause": 0.5,
-   "rate": "+3%"
+   "text": "People went nuts for them. At one point that company was printing more stamps than the United States Post Office.",
+   "host": true,
+   "mood": "shock",
+   "pose": "panic",
+   "slam": {
+    "t": "MORE THAN THE POST OFFICE",
+    "at": "Post"
+   },
+   "pic": {
+    "id": "post_office",
+    "at": "Office",
+    "look": "tape"
+   },
+   "sfx": [
+    {
+     "s": "crowd",
+     "at": "nuts"
+    },
+    {
+     "s": "pack/03_evolve_boom_brass_d",
+     "at": "Office"
+    }
+   ]
   },
   {
    "id": "c3e",
-   "text": "And here's the clever bit. The shop had to buy those stamps and a shop only has one place to get its money from which is you.",
-   "pause": 0.5
+   "text": "And here's the clever bit. The shop had to buy those stamps. And a shop only gets its money from one place. You.",
+   "host": true,
+   "mood": "smug",
+   "pose": "point_r",
+   "zoom": {
+    "in": "one",
+    "out": "You"
+   },
+   "sfx": [
+    {
+     "s": "cash",
+     "at": "buy"
+    },
+    {
+     "s": "boom",
+     "at": "You"
+    }
+   ]
   },
   {
    "id": "c3f",
-   "text": "Grandma goes so I paid for my own free toaster? Yes Grandma and you also licked the receipt.",
-   "pause": 0.6,
-   "pitch": "+3Hz",
+   "text": "Grandma goes so I paid for my own free toaster? Yes Grandma. And you licked the receipt.",
+   "pic": {
+    "id": "grandma",
+    "at": "Grandma",
+    "look": "circle"
+   },
+   "sfx": [
+    {
+     "s": "scratch",
+     "at": "paid"
+    },
+    {
+     "s": "boing",
+     "at": "licked"
+    }
+   ]
+  },
+  {
+   "id": "n6",
+   "text": "Grandma realizing the toaster wasn't free.",
    "meme": {
-    "format": "surprised pikachu",
-    "caption": "PAYS FOR STAMPS WITH EVERY GROCERY BILL / THE FREE TOASTER WAS NOT FREE / GRANDMA:",
-    "word": "yes"
-   }
+    "t": "vs",
+    "a": "Free toaster",
+    "b": "Paid for in groceries",
+    "at": "toaster"
+   },
+   "sfx": [
+    {
+     "s": "pop",
+     "at": "toaster"
+    }
+   ]
   },
   {
    "id": "c3g",
-   "text": "Then in nineteen eighty one American Airlines did the same thing with a computer instead of glue and pretty soon everybody copied it.",
-   "pause": 0.45
+   "text": "Then in nineteen eighty one an airline did the same thing with a computer instead of glue. And pretty soon everybody copied it.",
+   "pic": {
+    "id": "aa_old",
+    "at": "airline",
+    "look": "news",
+    "label": "1981"
+   },
+   "sfx": [
+    {
+     "s": "pack/02_dial_up",
+     "at": "computer"
+    },
+    {
+     "s": "whoosh",
+     "at": "copied"
+    }
+   ]
   },
   {
    "id": "c3g2",
-   "pause": 0.6,
-   "pitch": "+3Hz",
-   "text": "Grandma holds her stamp book next to Dave's shiny card and she squints and she says they're the same picture.",
+   "text": "Grandma holds her stamp book next to my shiny card. She squints. And she says they're the same picture.",
    "meme": {
-    "format": "they're the same picture",
-    "caption": "GREEN STAMPS 1896 vs AIRLINE POINTS 1981 / THEY'RE THE SAME PICTURE",
-    "word": "squints"
-   }
+    "t": "vs",
+    "a": "Grandma's stamp book",
+    "b": "My shiny card",
+    "at": "picture"
+   },
+   "sfx": [
+    {
+     "s": "pack/camera_shutter",
+     "at": "picture"
+    }
+   ]
   },
   {
    "id": "c3h",
-   "text": "But a book of stamps had one honest feature. It bought the same toaster this year and next year and Dave's about to learn that his points don't work like that.",
-   "pause": 0.8
+   "text": "But her stamps had one honest feature. A full book bought the same toaster this year and next year. My points? Not so much.",
+   "host": true,
+   "mood": "worried",
+   "pose": "talk",
+   "sfx": [
+    {
+     "s": "ding",
+     "at": "honest"
+    },
+    {
+     "s": "sting",
+     "at": "much"
+    }
+   ]
   },
   {
    "id": "c4a",
+   "text": "Quick guess for you. I now have sixty four thousand points. Is one point worth ten cents? Five cents? Or one cent?",
    "chapter": "What's One Point Worth?",
-   "text": "First here's a quick guess for you. Dave now has sixty four thousand points so is one point worth about ten cents or five cents or one cent?",
-   "pause": 0.5,
-   "rate": "+3%"
+   "host": true,
+   "mood": "smug",
+   "pose": "point_up",
+   "slam": {
+    "t": "GUESS",
+    "at": "guess"
+   },
+   "sfx": [
+    {
+     "s": "tick",
+     "at": "guess"
+    },
+    {
+     "s": "coin",
+     "at": "ten"
+    },
+    {
+     "s": "coin",
+     "at": "Five"
+    },
+    {
+     "s": "coin",
+     "at": "one#2"
+    }
+   ]
   },
   {
    "id": "c4b",
-   "text": "Put your answer in the comments because it comes back in about a minute.",
-   "pause": 0.5
+   "text": "Put your answer in the comments. It comes back in a minute.",
+   "host": true,
+   "mood": "grin",
+   "pose": "point_r",
+   "sfx": [
+    {
+     "s": "pop",
+     "at": "comments"
+    },
+    {
+     "s": "tick",
+     "at": "minute"
+    }
+   ]
   },
   {
    "id": "c4c",
-   "text": "While you think about it where do points even come from? The airline simply makes them up on a computer for free.",
-   "pause": 0.45,
-   "meme": {
-    "format": "it's free real estate",
-    "caption": "IT'S FREE POINTS",
-    "word": "computer"
-   }
+   "text": "While you think about it where do points even come from? The airline just makes them up on a computer. For free.",
+   "pic": {
+    "id": "laptop",
+    "at": "computer",
+    "look": "tape"
+   },
+   "sfx": [
+    {
+     "s": "pack/01_processing",
+     "at": "makes"
+    },
+    {
+     "s": "ding",
+     "at": "free"
+    }
+   ]
   },
   {
    "id": "c4d",
-   "text": "Then it sells them by the billion to the bank behind Dave's card and the bank hands them to Dave whenever he swipes.",
-   "pause": 0.45
+   "text": "Then it sells them by the billion to the bank behind my card. And the bank hands them to me every time I swipe.",
+   "pic": {
+    "id": "bank",
+    "at": "bank",
+    "look": "polaroid"
+   },
+   "sfx": [
+    {
+     "s": "cash",
+     "at": "sells"
+    },
+    {
+     "s": "ding",
+     "at": "bank"
+    },
+    {
+     "s": "click",
+     "at": "swipe"
+    }
+   ]
   },
   {
    "id": "c4e",
-   "text": "Which means the airline gets paid when you buy groceries and when you fill your tank and also when Dave buys a kayak.",
-   "pause": 0.5
+   "text": "Which means the airline gets paid when I buy groceries. And when I fill my tank. And when I buy a kayak.",
+   "pic": {
+    "id": "gas",
+    "at": "tank",
+    "look": "tape"
+   },
+   "sfx": [
+    {
+     "s": "cash",
+     "at": "groceries"
+    },
+    {
+     "s": "cash",
+     "at": "tank"
+    },
+    {
+     "s": "boing",
+     "at": "kayak"
+    }
+   ]
   },
   {
    "id": "c4f",
-   "text": "That's the six billion from the start of this video. American Airlines' own annual report says card companies and other partners paid it six point two billion dollars in cash last year.",
-   "pause": 0.5,
-   "rate": "-8%"
+   "text": "American Airlines' own yearly report says card companies and partners paid it about six billion dollars in cash last year.",
+   "pic": {
+    "id": "aa",
+    "at": "American",
+    "look": "news",
+    "label": "American Airlines 10-K"
+   },
+   "slam": {
+    "t": "$6.2 BILLION",
+    "at": "six"
+   },
+   "sfx": [
+    {
+     "s": "paper",
+     "at": "report"
+    },
+    {
+     "s": "pack/02_deep",
+     "at": "six"
+    },
+    {
+     "s": "cash",
+     "at": "cash"
+    }
+   ]
   },
   {
    "id": "c4g",
-   "text": "And do you know its profit from everything including all that actual flying? It was one hundred eleven million.",
-   "pause": 0.6,
-   "rate": "-10%"
+   "text": "And its profit from everything? Including all that actual flying? About one hundred eleven million.",
+   "host": true,
+   "mood": "shock",
+   "pose": "panic",
+   "slam": {
+    "t": "PROFIT: $0.1B",
+    "at": "eleven"
+   },
+   "sfx": [
+    {
+     "s": "drumroll",
+     "at": "profit"
+    },
+    {
+     "s": "scratch",
+     "at": "flying"
+    },
+    {
+     "s": "pack/01_boom",
+     "at": "million"
+    }
+   ]
+  },
+  {
+   "id": "n7",
+   "text": "The cash from points was more than fifty times what the airline kept in profit all year.",
+   "host": true,
+   "mood": "shock",
+   "pose": "point_up",
+   "zoom": {
+    "in": "fifty",
+    "out": "year"
+   },
+   "sfx": [
+    {
+     "s": "pack/03_evolve_boom_brass_d",
+     "at": "fifty"
+    },
+    {
+     "s": "boom",
+     "at": "year"
+    }
+   ]
   },
   {
    "id": "c4h",
-   "text": "Dave goes hang on so I'm not the passenger. I'm the product.",
-   "pause": 0.9,
-   "pitch": "+3Hz",
+   "text": "So I'm not really the passenger. I'm the product.",
+   "card": {
+    "t": "I'm the product.",
+    "dark": true
+   },
+   "sfx": [
+    {
+     "s": "pack/01_boom",
+     "at": "product"
+    }
+   ],
+   "pause": 0.5
+  },
+  {
+   "id": "n8",
+   "text": "Airlines in twenty twenty six.",
    "meme": {
-    "format": "pov",
-    "caption": "POV: YOU JUST FOUND OUT YOU ARE THE PRODUCT",
-    "word": "product"
-   }
+    "t": "drake",
+    "a": "Flying planes",
+    "b": "Selling made up points",
+    "at": "Airlines"
+   },
+   "sfx": [
+    {
+     "s": "pop",
+     "at": "Airlines"
+    }
+   ]
+  },
+  {
+   "id": "n9",
+   "text": "In twenty twenty the airline even borrowed money from the government and used its points program as the guarantee. Experts said the program was worth more than the whole airline.",
+   "pic": {
+    "id": "aa_fleet",
+    "at": "program#2",
+    "look": "tape"
+   },
+   "sfx": [
+    {
+     "s": "stamp",
+     "at": "guarantee"
+    },
+    {
+     "s": "pack/02_deep",
+     "at": "whole"
+    }
+   ]
   },
   {
    "id": "c4i",
    "text": "Now back to your guess. According to the consumer bureau the big card companies themselves value a typical point at about one cent.",
-   "pause": 0.5,
-   "rate": "-8%"
+   "pic": {
+    "id": "cfpb",
+    "at": "bureau",
+    "look": "news",
+    "label": "CFPB"
+   },
+   "sfx": [
+    {
+     "s": "drumroll",
+     "at": "guess"
+    },
+    {
+     "s": "coin",
+     "at": "cent"
+    }
+   ]
   },
   {
    "id": "c4j",
-   "text": "So Dave's sixty four thousand points come to roughly six hundred forty dollars which is about half of what he overspent to get them.",
-   "pause": 0.5,
+   "text": "So my sixty four thousand points are worth about six hundred forty dollars. That's half of what I overspent to get them.",
+   "host": true,
+   "mood": "sad",
+   "pose": "facepalm",
+   "slam": {
+    "t": "~$640",
+    "at": "forty"
+   },
+   "sfx": [
+    {
+     "s": "cash",
+     "at": "forty"
+    },
+    {
+     "s": "trombone",
+     "at": "them"
+    }
+   ]
+  },
+  {
+   "id": "n10",
+   "text": "Me doing the points math.",
    "meme": {
-    "format": "not stonks",
-    "caption": "NOT STONKS",
-    "word": "half"
-   }
+    "t": "fine",
+    "a": "Half my money back",
+    "at": "math"
+   },
+   "sfx": [
+    {
+     "s": "cricket",
+     "at": "math"
+    }
+   ]
   },
   {
    "id": "c4k",
-   "text": "And that's only if a point stays worth a cent. Because whoever prints the points also gets to decide what they buy.",
-   "pause": 0.8
+   "text": "And that's only if a point stays worth a cent. Because whoever prints the points also decides what they buy.",
+   "host": true,
+   "mood": "suspicious",
+   "pose": "hips",
+   "zoom": {
+    "in": "prints",
+    "out": "buy"
+   },
+   "sfx": [
+    {
+     "s": "ding",
+     "at": "cent"
+    },
+    {
+     "s": "sting",
+     "at": "prints"
+    },
+    {
+     "s": "boom",
+     "at": "buy"
+    }
+   ]
   },
   {
    "id": "c5a",
-   "chapter": "The Disappearing Flight",
-   "text": "So Dave opens the app to book his beach and the flight that cost sixty thousand points at the airport booth now costs eighty thousand.",
-   "pause": 0.45
+   "text": "So I open the app to book my beach. And the flight that cost sixty thousand points at the booth now costs eighty thousand.",
+   "host": true,
+   "mood": "shock",
+   "pose": "panic",
+   "pic": {
+    "id": "phone",
+    "at": "app",
+    "look": "circle"
+   },
+   "slam": {
+    "t": "60K → 80K",
+    "at": "eighty"
+   },
+   "sfx": [
+    {
+     "s": "click",
+     "at": "app"
+    },
+    {
+     "s": "pack/02_evolve_brassy_drop_2",
+     "at": "eighty"
+    }
+   ]
   },
   {
    "id": "c5b",
-   "text": "Dave goes but I have the points and I bought a kayak for this!",
-   "pause": 0.5,
-   "rate": "+5%",
-   "pitch": "+3Hz",
-   "meme": {
-    "format": "woman yelling at cat",
-    "caption": "I BOUGHT A KAYAK FOR THIS! / THE APP: 80,000 PLEASE",
-    "word": "have"
-   }
+   "text": "But I have the points! I bought a kayak for this!",
+   "host": true,
+   "mood": "angry",
+   "pose": "talk",
+   "zoom": {
+    "in": "kayak",
+    "out": "this"
+   },
+   "sfx": [
+    {
+     "s": "scratch",
+     "at": "points"
+    },
+    {
+     "s": "boing",
+     "at": "kayak"
+    },
+    {
+     "s": "boom",
+     "at": "this"
+    }
+   ]
   },
   {
    "id": "c5c",
-   "text": "Nobody took a single point away from him. They just raised the price of the seat in points without asking anyone.",
-   "pause": 0.45,
-   "meme": {
-    "format": "change my mind",
-    "caption": "YOUR POINTS ARE WORTH WHAT I SAY. CHANGE MY MIND",
-    "word": "price"
-   }
+   "text": "Nobody took a single point away from me. They just raised the price of the seat in points. Without asking anyone.",
+   "pic": {
+    "id": "seat",
+    "at": "seat",
+    "look": "tape"
+   },
+   "sfx": [
+    {
+     "s": "ding",
+     "at": "single"
+    },
+    {
+     "s": "pack/02_deep",
+     "at": "raised"
+    },
+    {
+     "s": "cricket",
+     "at": "anyone"
+    }
+   ]
   },
   {
    "id": "c5d",
    "text": "It's like saving arcade tickets for the giant teddy bear and every time you get close the guy behind the counter quietly swaps the sign.",
-   "pause": 0.55
+   "pic": {
+    "id": "teddy",
+    "at": "teddy",
+    "look": "sticker"
+   },
+   "sfx": [
+    {
+     "s": "ding",
+     "at": "tickets"
+    },
+    {
+     "s": "boing",
+     "at": "swaps"
+    }
+   ]
+  },
+  {
+   "id": "n11",
+   "text": "The rewards program when I finally have enough points.",
+   "meme": {
+    "t": "buttons",
+    "a": "Let him fly",
+    "b": "Raise the price",
+    "at": "enough"
+   },
+   "sfx": [
+    {
+     "s": "pack/01_beating",
+     "at": "enough"
+    }
+   ]
   },
   {
    "id": "c5e",
-   "text": "And it happens to real people. In September twenty twenty three Delta changed its SkyMiles rules so sharply that customers revolted online.",
-   "pause": 0.4
+   "text": "And this happens to real people. In twenty twenty three Delta changed its SkyMiles rules so hard that customers revolted online.",
+   "pic": {
+    "id": "delta",
+    "at": "Delta",
+    "look": "news",
+    "label": "SkyMiles 2023"
+   },
+   "sfx": [
+    {
+     "s": "ding",
+     "at": "Delta"
+    },
+    {
+     "s": "crowd",
+     "at": "revolted"
+    }
+   ]
   },
   {
    "id": "c5f",
-   "text": "About two weeks later the boss Ed Bastian admitted they'd probably gone too far and Delta softened some of the changes.",
-   "pause": 0.45
+   "text": "Two weeks later the boss admitted they probably went too far. And Delta softened some of the changes.",
+   "pic": {
+    "id": "bastian",
+    "at": "boss",
+    "look": "polaroid"
+   },
+   "sfx": [
+    {
+     "s": "scratch",
+     "at": "admitted"
+    },
+    {
+     "s": "ding",
+     "at": "softened"
+    }
+   ]
   },
   {
    "id": "c5h",
-   "text": "The complaints piled up so high that in twenty twenty four the Department of Transportation opened an inquiry into the four biggest airlines' reward programs.",
-   "pause": 0.45
+   "text": "The complaints piled up so high that in twenty twenty four the government opened an inquiry into the four biggest airlines' reward programs.",
+   "pic": {
+    "id": "dot",
+    "at": "government",
+    "look": "news",
+    "label": "USDOT inquiry"
+   },
+   "slam": {
+    "t": "GOVERNMENT INQUIRY",
+    "at": "inquiry"
+   },
+   "sfx": [
+    {
+     "s": "paper",
+     "at": "piled"
+    },
+    {
+     "s": "stamp",
+     "at": "inquiry"
+    }
+   ]
   },
   {
    "id": "c5i",
-   "text": "So Dave's flight is now twenty thousand points away and the only way to get more points is to spend more. That leaves Dave sweating over two buttons.",
-   "pause": 0.6,
-   "meme": {
-    "format": "two buttons",
-    "caption": "STOP SPENDING / 20,000 MORE POINTS",
-    "word": "sweating"
-   }
+   "text": "So my flight is now twenty thousand points away. And the only way to get more points is to spend more.",
+   "host": true,
+   "mood": "tired",
+   "pose": "shrug",
+   "zoom": {
+    "in": "spend",
+    "out": "more#2"
+   },
+   "sfx": [
+    {
+     "s": "tick",
+     "at": "twenty"
+    },
+    {
+     "s": "cash",
+     "at": "spend"
+    },
+    {
+     "s": "boom",
+     "at": "more#2"
+    }
+   ]
   },
   {
-   "id": "c5j",
-   "pause": 0.8,
-   "text": "But somebody else has been quietly paying for his points and she just walked into the grocery store."
+   "id": "n12",
+   "text": "Me staring at a second kayak.",
+   "meme": {
+    "t": "buttons",
+    "a": "Stop spending",
+    "b": "Buy kayak number two",
+    "at": "second"
+   },
+   "sfx": [
+    {
+     "s": "pack/01_beating",
+     "at": "second"
+    }
+   ]
   },
   {
    "id": "c6a",
-   "chapter": "Who Pays For Dave's Points?",
-   "text": "Remember Grandma? She pays cash for everything and she's never had a rewards card in her life.",
-   "pause": 0.4
+   "text": "But somebody else has been quietly paying for my points. Remember Grandma? She pays cash for everything.",
+   "chapter": "Who Pays For My Points?",
+   "host": true,
+   "mood": "suspicious",
+   "pose": "point_r",
+   "pic": {
+    "id": "cash",
+    "at": "cash",
+    "look": "tape"
+   },
+   "sfx": [
+    {
+     "s": "pack/01_beating",
+     "at": "quietly"
+    },
+    {
+     "s": "ding",
+     "at": "Grandma"
+    },
+    {
+     "s": "cash",
+     "at": "cash"
+    }
+   ]
   },
   {
    "id": "c6b",
-   "text": "Dave's right in front of her at the checkout tapping his card and with every tap the shop hands over about two percent of his bill.",
-   "pause": 0.45
+   "text": "I'm right in front of her at the checkout tapping my card. And every tap costs the shop about two percent of my bill.",
+   "pic": {
+    "id": "tap",
+    "at": "tapping",
+    "look": "circle"
+   },
+   "sfx": [
+    {
+     "s": "click",
+     "at": "tapping"
+    },
+    {
+     "s": "cash",
+     "at": "two"
+    }
+   ]
   },
   {
    "id": "c6c",
-   "text": "If you saw our credit card video that's the raccoon's toll and a big slice of it buys Dave's points.",
-   "pause": 0.45
+   "text": "If you saw our credit card video that's the raccoon's toll. And a big slice of it buys my points.",
+   "host": true,
+   "mood": "smug",
+   "pose": "present",
+   "sfx": [
+    {
+     "s": "ding",
+     "at": "raccoon's"
+    },
+    {
+     "s": "coin",
+     "at": "slice"
+    }
+   ]
   },
   {
    "id": "c6d",
-   "text": "But the shop almost never charges Dave more than Grandma so it nudges up the price of the bread for everybody.",
-   "pause": 0.5
+   "text": "But the shop almost never charges me more than Grandma. So it nudges up the price of the bread for everybody.",
+   "pic": {
+    "id": "bread",
+    "at": "bread",
+    "look": "sticker"
+   },
+   "sfx": [
+    {
+     "s": "ding",
+     "at": "Grandma"
+    },
+    {
+     "s": "cash",
+     "at": "bread"
+    }
+   ]
   },
   {
    "id": "c6e",
    "text": "Be honest. Did you know that when you pay with cash you're chipping in for a stranger's vacation?",
-   "pause": 0.55,
-   "pitch": "+3Hz",
-   "meme": {
-    "format": "always has been",
-    "caption": "WAIT I PAY FOR HIS VACATION? / ALWAYS HAVE",
-    "word": "chipping"
-   }
+   "host": true,
+   "mood": "shock",
+   "pose": "point_r",
+   "slam": {
+    "t": "CASH PAYS FOR MY VACATION",
+    "at": "vacation"
+   },
+   "zoom": {
+    "in": "stranger's",
+    "out": "vacation"
+   },
+   "sfx": [
+    {
+     "s": "scratch",
+     "at": "cash"
+    },
+    {
+     "s": "boom",
+     "at": "vacation"
+    }
+   ]
   },
   {
    "id": "c6f",
-   "text": "Economists at the Boston Fed once estimated that a family paying cash hands over about one hundred fifty dollars a year to families paying with cards.",
-   "pause": 0.5,
-   "rate": "-8%"
+   "text": "Economists at the Boston Fed once estimated a family paying cash hands over about one hundred fifty dollars a year to families paying with cards.",
+   "pic": {
+    "id": "bosfed",
+    "at": "Boston",
+    "look": "news",
+    "label": "Boston Fed"
+   },
+   "sfx": [
+    {
+     "s": "flip",
+     "at": "Boston"
+    },
+    {
+     "s": "cash",
+     "at": "fifty"
+    }
+   ]
+  },
+  {
+   "id": "n13",
+   "text": "Grandma at the checkout paying for my beach trip.",
+   "meme": {
+    "t": "vs",
+    "a": "Grandma pays cash",
+    "b": "I get the points",
+    "at": "Grandma"
+   },
+   "sfx": [
+    {
+     "s": "cash",
+     "at": "Grandma"
+    }
+   ]
   },
   {
    "id": "c6g",
-   "text": "And a newer Fed study found it's less about rich against poor and more about people who know the game against people who don't.",
-   "pause": 0.5
+   "text": "And a newer Fed study found it's less about rich against poor. It's about people who know the game against people who don't.",
+   "host": true,
+   "mood": "think",
+   "pose": "point_up",
+   "slam": {
+    "t": "WHO KNOWS THE GAME",
+    "at": "game"
+   },
+   "sfx": [
+    {
+     "s": "ding",
+     "at": "newer"
+    },
+    {
+     "s": "stamp",
+     "at": "game"
+    }
+   ]
   },
   {
    "id": "c6h",
-   "text": "To be fair the card companies say rewards bring shops more customers and that cards are safer than cash and that's a real debate.",
-   "pause": 0.5
-  },
-  {
-   "id": "c6i",
-   "text": "But Dave's about to find out which side of the game he's on because his statement just landed.",
-   "pause": 0.8,
-   "meme": {
-    "format": "surprised pikachu",
-    "caption": "BUYS A KAYAK FOR THE POINTS / THE BILL SHOWS UP / DAVE:",
-    "word": "statement"
-   }
+   "text": "To be fair card companies say rewards bring shops more customers and that cards are safer than cash. That's a real debate.",
+   "host": true,
+   "mood": "neutral",
+   "pose": "shrug",
+   "sfx": [
+    {
+     "s": "ding",
+     "at": "fair"
+    },
+    {
+     "s": "pack/01_processing",
+     "at": "debate"
+    }
+   ]
   },
   {
    "id": "c7a",
-   "chapter": "The Bill Arrives",
-   "text": "Here's a quick one for you. Customer A pays the whole bill every month and customer B pays a little and leaves the rest. Which one is paying for your points?",
-   "pause": 0.7,
-   "rate": "+3%"
+   "text": "So which side am I on? Here's a quick one. Customer A pays the whole bill every month. Customer B pays a little and leaves the rest. Who is paying for the points?",
+   "host": true,
+   "mood": "suspicious",
+   "pose": "point_r",
+   "sfx": [
+    {
+     "s": "tick",
+     "at": "A"
+    },
+    {
+     "s": "tick",
+     "at": "B"
+    },
+    {
+     "s": "drumroll",
+     "at": "points"
+    }
+   ]
   },
   {
    "id": "c7b",
-   "text": "It's B and it's not close. The consumer bureau found that people who carry a balance pay ninety four percent of all the interest and fees and they take home less than a third of the rewards.",
-   "pause": 0.5,
-   "rate": "-8%"
+   "text": "It's B. And it's not close. People who carry a balance pay almost all of the interest and fees. And they take home less than a third of the rewards.",
+   "host": true,
+   "mood": "shock",
+   "pose": "panic",
+   "slam": {
+    "t": "B PAYS FOR EVERYONE",
+    "at": "B"
+   },
+   "sfx": [
+    {
+     "s": "pack/01_boom",
+     "at": "B"
+    },
+    {
+     "s": "cash",
+     "at": "interest"
+    },
+    {
+     "s": "trombone",
+     "at": "rewards"
+    }
+   ]
   },
   {
    "id": "c7c",
-   "text": "And after the kayak and the air fryer and the big dinner Dave couldn't pay it all off so the card started charging him interest at around twenty two percent a year.",
-   "pause": 0.45
+   "text": "And after the kayak and the fryer and the big dinner I couldn't pay it all off. So the card started charging me around twenty two percent a year.",
+   "pic": {
+    "id": "statement",
+    "at": "card",
+    "look": "tape"
+   },
+   "sfx": [
+    {
+     "s": "paper",
+     "at": "pay"
+    },
+    {
+     "s": "pack/02_evolve_brassy_drop_2",
+     "at": "twenty"
+    }
+   ]
   },
   {
    "id": "c7d",
-   "text": "His points pay about one percent. That's like a shop that gives you a penny for walking in and then charges you a quarter to leave.",
-   "pause": 0.55,
+   "text": "My points pay about one percent. That's like a shop that gives you a penny for walking in and charges you a quarter to leave.",
+   "pic": {
+    "id": "penny",
+    "at": "penny",
+    "look": "sticker"
+   },
+   "sfx": [
+    {
+     "s": "coin",
+     "at": "penny"
+    },
+    {
+     "s": "cash",
+     "at": "quarter"
+    }
+   ]
+  },
+  {
+   "id": "n14",
+   "text": "Me finding out I'm customer B.",
    "meme": {
-    "format": "is this a pigeon",
-    "caption": "22% INTEREST CARD / IS THIS A DISCOUNT?",
-    "word": "quarter"
-   }
+    "t": "fine",
+    "a": "I'm customer B",
+    "at": "B"
+   },
+   "sfx": [
+    {
+     "s": "cricket",
+     "at": "B"
+    }
+   ]
   },
   {
    "id": "c7e",
-   "text": "That cost him about ninety dollars in interest. Then the yearly fee showed up and that was another ninety five.",
-   "pause": 0.5
+   "text": "That cost me about ninety dollars in interest. Then the yearly fee showed up. Another ninety five.",
+   "sfx": [
+    {
+     "s": "cash",
+     "at": "ninety"
+    },
+    {
+     "s": "cash",
+     "at": "ninety#2"
+    },
+    {
+     "s": "trombone",
+     "at": "five"
+    }
+   ]
   },
   {
    "id": "c7f",
-   "text": "So let's add up Dave's free flight. The extra stuff and the fee and the interest come to one thousand four hundred eighty five dollars.",
-   "pause": 0.6,
-   "rate": "-12%"
+   "text": "So let's add up my free flight. The extra stuff plus the fee plus the interest. One thousand four hundred eighty five dollars.",
+   "host": true,
+   "mood": "sad",
+   "pose": "facepalm",
+   "slam": {
+    "t": "FREE FLIGHT: $1,485",
+    "at": "eighty"
+   },
+   "sfx": [
+    {
+     "s": "drumroll",
+     "at": "add"
+    },
+    {
+     "s": "pack/01_boom",
+     "at": "eighty"
+    },
+    {
+     "s": "pack/02_deep",
+     "at": "dollars"
+    }
+   ]
   },
   {
    "id": "c7g",
-   "text": "That's for a flight he could've bought for about six hundred. And he still can't book it because he's twenty thousand points short.",
-   "pause": 0.45,
-   "pitch": "-2Hz"
+   "text": "For a flight I could've just bought for about six hundred. And I still can't book it because I'm twenty thousand points short.",
+   "host": true,
+   "mood": "tired",
+   "pose": "shrug",
+   "zoom": {
+    "in": "still",
+    "out": "short"
+   },
+   "sfx": [
+    {
+     "s": "cash",
+     "at": "six"
+    },
+    {
+     "s": "boom",
+     "at": "short"
+    }
+   ]
   },
   {
    "id": "c7g2",
-   "pause": 0.6,
-   "rate": "-8%",
-   "text": "So Dave sits down in his kitchen next to the kayak and he sips his coffee and he tells himself that this is fine.",
+   "text": "So I sit in my kitchen next to the kayak with my coffee and I tell myself this is fine.",
    "meme": {
-    "format": "this is fine",
-    "caption": "THIS IS FINE",
-    "word": "coffee"
-   }
+    "t": "fine",
+    "a": "Free flight",
+    "at": "fine"
+   },
+   "sfx": [
+    {
+     "s": "cricket",
+     "at": "fine"
+    }
+   ]
   },
   {
    "id": "c7h",
-   "text": "Then Dave goes I got played by a kayak.",
-   "pause": 0.7,
-   "rate": "-10%"
+   "text": "I got played by a kayak.",
+   "card": {
+    "t": "I got played by a kayak.",
+    "dark": true
+   },
+   "sfx": [
+    {
+     "s": "pack/01_boom",
+     "at": "kayak"
+    }
+   ],
+   "pause": 0.5
   },
   {
    "id": "c7i",
-   "text": "But there's one thing the smiley man at the booth doesn't want you to notice. This game only works on people who chase and Dave just stopped chasing.",
-   "pause": 0.8
+   "text": "But here's what the smiley man at the booth doesn't want you to notice. This game only works on people who chase. And I just stopped chasing.",
+   "host": true,
+   "mood": "smug",
+   "pose": "point_up",
+   "zoom": {
+    "in": "stopped",
+    "out": "chasing"
+   },
+   "sfx": [
+    {
+     "s": "sting",
+     "at": "notice"
+    },
+    {
+     "s": "riser",
+     "at": "stopped"
+    },
+    {
+     "s": "boom",
+     "at": "chasing"
+    }
+   ]
   },
   {
    "id": "c8a",
-   "chapter": "Dave Fights Back",
-   "text": "This part is education and it is not advice so take whatever fits your life. Dave writes three questions on a sticky note and wraps it around his card.",
-   "pause": 0.45
+   "text": "This part is education and not advice. I write three questions on a sticky note and wrap it around my card.",
+   "chapter": "My Three Questions",
+   "host": true,
+   "mood": "happy",
+   "pose": "present",
+   "pic": {
+    "id": "sticky",
+    "at": "sticky",
+    "look": "sticker"
+   },
+   "sfx": [
+    {
+     "s": "ding",
+     "at": "three"
+    },
+    {
+     "s": "scribble",
+     "at": "sticky"
+    }
+   ]
   },
   {
    "id": "c8b",
-   "text": "Question one is would I buy this if there were no points? If the answer's no then the points aren't a discount because they're the bait.",
-   "pause": 0.45
+   "text": "Question one. Would I buy this if there were no points? If the answer is no the points aren't a discount. They're the bait.",
+   "host": true,
+   "mood": "suspicious",
+   "pose": "point_r",
+   "slam": {
+    "t": "POINTS = BAIT",
+    "at": "bait"
+   },
+   "pic": {
+    "id": "hook",
+    "at": "bait",
+    "look": "circle"
+   },
+   "sfx": [
+    {
+     "s": "ding",
+     "at": "one"
+    },
+    {
+     "s": "stamp",
+     "at": "bait"
+    }
+   ]
   },
   {
    "id": "c8c",
-   "text": "Dave tries it and the extra shopping just stops which keeps thirteen hundred dollars a year at home.",
-   "pause": 0.5,
+   "text": "I try it and the extra shopping just stops. That keeps about thirteen hundred dollars a year at home.",
+   "host": true,
+   "mood": "money",
+   "pose": "celebrate",
+   "sfx": [
+    {
+     "s": "scratch",
+     "at": "stops"
+    },
+    {
+     "s": "cash",
+     "at": "thirteen"
+    },
+    {
+     "s": "crowd",
+     "at": "home"
+    }
+   ]
+  },
+  {
+   "id": "n15",
+   "text": "Me walking past the kayak aisle now.",
    "meme": {
-    "format": "drake",
-    "caption": "NO: IT HAS POINTS SO IT'S ON SALE / YES: WOULD I BUY THIS WITH NO POINTS?",
-    "word": "stops"
-   }
+    "t": "drake",
+    "a": "Kayak for points",
+    "b": "Keep my $1,300",
+    "at": "aisle"
+   },
+   "sfx": [
+    {
+     "s": "pop",
+     "at": "aisle"
+    }
+   ]
   },
   {
    "id": "c8d",
-   "text": "Question two is can I pay the whole bill every single month? Because if you can't then no reward on Earth keeps up with twenty two percent interest so Dave switches on autopay for the full balance.",
-   "pause": 0.5
+   "text": "Question two. Can I pay the whole bill every single month? Because no reward on Earth keeps up with twenty two percent interest. So I turn on autopay for the full balance.",
+   "pic": {
+    "id": "calendar",
+    "at": "month",
+    "look": "tape"
+   },
+   "sfx": [
+    {
+     "s": "ding",
+     "at": "two"
+    },
+    {
+     "s": "pack/02_deep",
+     "at": "twenty"
+    },
+    {
+     "s": "click",
+     "at": "autopay"
+    }
+   ]
   },
   {
    "id": "c8f",
-   "text": "Question three is what does this card cost me just for existing? Dave's was ninety five dollars a year so he swaps it for a boring one with no fee that just pays cash back.",
-   "pause": 0.5,
-   "meme": {
-    "format": "distracted boyfriend",
-    "caption": "DAVE looks at BORING NO FEE CARD while $95 AIRLINE CARD stares",
-    "word": "boring"
-   }
+   "text": "Question three. What does this card cost me just for existing? Mine was ninety five dollars a year. So I swap it for a boring one with no fee that just pays cash back.",
+   "host": true,
+   "mood": "smug",
+   "pose": "thumbs",
+   "zoom": {
+    "in": "boring",
+    "out": "one"
+   },
+   "sfx": [
+    {
+     "s": "ding",
+     "at": "three"
+    },
+    {
+     "s": "cash",
+     "at": "ninety"
+    },
+    {
+     "s": "boom",
+     "at": "one"
+    }
+   ]
   },
   {
    "id": "c8g",
-   "text": "Here's one last rule for the points you've already got and it's spend them. Points aren't a savings account because they're milk and there's a date on the carton that you can't see.",
-   "pause": 0.55,
+   "text": "And one rule for the points you already have. Spend them. Points aren't a savings account. They're milk. And there's a date on the carton you can't see.",
+   "pic": {
+    "id": "milk",
+    "at": "milk",
+    "look": "sticker"
+   },
+   "sfx": [
+    {
+     "s": "stamp",
+     "at": "Spend"
+    },
+    {
+     "s": "boing",
+     "at": "milk"
+    },
+    {
+     "s": "tick",
+     "at": "date"
+    }
+   ]
+  },
+  {
+   "id": "n16",
+   "text": "My points sitting in the account for three years.",
    "meme": {
-    "format": "image macro",
-    "caption": "ONE DOES NOT SIMPLY / SAVE POINTS FOR LATER",
-    "word": "carton"
-   }
+    "t": "stonks",
+    "a": "POINTS LOSING VALUE",
+    "at": "years"
+   },
+   "sfx": [
+    {
+     "s": "pack/02_evolve_brassy_drop_2",
+     "at": "years"
+    }
+   ]
   },
   {
    "id": "c8h",
-   "text": "So Dave stops waiting for the eighty thousand point flight and searches a rainy Tuesday in the off season and finds the same beach for fifty five thousand.",
-   "pause": 0.45,
-   "rate": "+3%"
+   "text": "So I stop waiting for the eighty thousand point flight. I search a rainy Tuesday in the off season. Same beach. Fifty five thousand.",
+   "host": true,
+   "mood": "happy",
+   "pose": "point_up",
+   "pic": {
+    "id": "rain",
+    "at": "rainy",
+    "look": "polaroid"
+   },
+   "slam": {
+    "t": "55K",
+    "at": "Fifty"
+   },
+   "sfx": [
+    {
+     "s": "ding",
+     "at": "rainy"
+    },
+    {
+     "s": "tick",
+     "at": "Tuesday"
+    },
+    {
+     "s": "crowd",
+     "at": "Fifty"
+    }
+   ]
   },
   {
    "id": "c8i",
-   "text": "He books it on the spot. And then he turns around and looks at the kayak.",
-   "pause": 0.8,
-   "meme": {
-    "format": "spider-man pointing",
-    "caption": "DAVE and THE KAYAK point at each other: YOU!",
-    "word": "looks"
-   }
+   "text": "I book it on the spot. And then I turn around and look at the kayak.",
+   "host": true,
+   "mood": "grin",
+   "pose": "shrug",
+   "zoom": {
+    "in": "look",
+    "out": "kayak"
+   },
+   "sfx": [
+    {
+     "s": "click",
+     "at": "book"
+    },
+    {
+     "s": "boing",
+     "at": "kayak"
+    }
+   ]
   },
   {
    "id": "c9a",
-   "chapter": "Same Beach, Different Dave",
-   "text": "So here's Dave ten minutes after you met him on the exact beach from the start of this video and he's on a flight his points really did pay for.",
-   "pause": 0.45,
-   "rate": "+3%"
+   "text": "So here I am. Same beach from the start of this video. On a flight my points really did pay for.",
+   "pic": {
+    "id": "beach",
+    "at": "beach",
+    "look": "polaroid",
+    "label": "finally"
+   },
+   "sfx": [
+    {
+     "s": "pack/01_evolve_brassy_swell",
+     "at": "beach"
+    },
+    {
+     "s": "ding",
+     "at": "pay"
+    }
+   ]
   },
   {
    "id": "c9c",
-   "text": "He can't get last year's one thousand four hundred eighty five dollars back. But this year it's staying in his pocket and that's the whole trick.",
-   "pause": 0.5
+   "text": "I can't get last year's money back. But this year it's staying in my pocket. And that's the whole trick.",
+   "host": true,
+   "mood": "happy",
+   "pose": "present",
+   "sfx": [
+    {
+     "s": "cash",
+     "at": "pocket"
+    },
+    {
+     "s": "ding",
+     "at": "trick"
+    }
+   ]
   },
   {
    "id": "c9d",
-   "text": "Because points were never free money. They're a bill and somebody always pays it. It's the shopper who buys more or the neighbor who pays cash or the person paying interest.",
-   "pause": 0.5,
-   "rate": "-8%"
+   "text": "Because points were never free money. They're a bill. And somebody always pays it. The shopper who buys more. The neighbor who pays cash. Or the person paying interest.",
+   "card": {
+    "t": "Somebody always pays.",
+    "dark": true
+   },
+   "sfx": [
+    {
+     "s": "pack/01_boom",
+     "at": "bill"
+    },
+    {
+     "s": "tick",
+     "at": "shopper"
+    },
+    {
+     "s": "tick",
+     "at": "neighbor"
+    },
+    {
+     "s": "tick",
+     "at": "interest"
+    }
+   ],
+   "pause": 0.4
   },
   {
    "id": "c9e",
-   "text": "Your only job is to not be any of those three. And if you pay in full and never chase and spend your points fast then rewards can be a perfectly nice little extra.",
-   "pause": 0.5,
-   "meme": {
-    "format": "chad vs wojak",
-    "caption": "CHASES EVERY BONUS and PAYS 22% vs PAYS IN FULL and NEVER CHASES",
-    "word": "fast"
-   }
+   "text": "Your only job is to not be any of those three. Pay in full and never chase and spend your points fast. Then rewards can be a nice little extra.",
+   "host": true,
+   "mood": "smug",
+   "pose": "thumbs",
+   "slam": {
+    "t": "DON'T BE THE ONE WHO PAYS",
+    "at": "three"
+   },
+   "sfx": [
+    {
+     "s": "stamp",
+     "at": "full"
+    },
+    {
+     "s": "ding",
+     "at": "fast"
+    },
+    {
+     "s": "boom",
+     "at": "extra"
+    }
+   ]
   },
   {
    "id": "c9f",
-   "text": "Oh and the kayak? Dave brought it with him. Turns out it floats.",
-   "pause": 0.9,
-   "pitch": "+3Hz",
-   "meme": {
-    "format": "nobody",
-    "caption": "NOBODY: / DAVE: brings the kayak to the beach",
-    "word": "brought"
-   }
+   "text": "Oh and the kayak? I brought it with me. Turns out it floats.",
+   "pic": {
+    "id": "lake",
+    "at": "floats",
+    "look": "tape"
+   },
+   "sfx": [
+    {
+     "s": "ding",
+     "at": "kayak"
+    },
+    {
+     "s": "boing",
+     "at": "floats"
+    }
+   ]
   },
   {
    "id": "r1",
-   "chapter": "What Dave Learned",
-   "text": "So here's what Dave learned. Number one is that points can make you spend far more than they ever pay back.",
-   "pause": 0.35
+   "text": "So one point is worth about a penny. And the flight was never free. Somebody was always paying for it.",
+   "host": true,
+   "mood": "happy",
+   "pose": "point_up",
+   "zoom": {
+    "in": "never",
+    "out": "free"
+   },
+   "sfx": [
+    {
+     "s": "coin",
+     "at": "penny"
+    },
+    {
+     "s": "boom",
+     "at": "free"
+    },
+    {
+     "s": "ding",
+     "at": "paying"
+    }
+   ]
   },
   {
    "id": "r2",
-   "text": "Number two is that whoever prints the points decides what they're worth.",
-   "pause": 0.35
-  },
-  {
-   "id": "r3",
-   "text": "Number three is pay in full and don't chase and use them fast.",
-   "pause": 0.5
+   "text": "Whoever prints the points decides what they're worth. So don't let them decide what you buy.",
+   "host": true,
+   "mood": "smug",
+   "pose": "point_r",
+   "sfx": [
+    {
+     "s": "stamp",
+     "at": "prints"
+    },
+    {
+     "s": "boom",
+     "at": "buy"
+    }
+   ]
   },
   {
    "id": "r4",
-   "text": "Next time Dave adds a nine dollar spatula to his cart to save six dollars on shipping and somehow that's not even the silly part.",
-   "pause": 0.5
+   "text": "Next time I find out why nobody at school ever taught me any of this. Not one class. Not one day.",
+   "pic": {
+    "id": "school",
+    "at": "school",
+    "look": "polaroid"
+   },
+   "sfx": [
+    {
+     "s": "pack/01_beating",
+     "at": "school"
+    },
+    {
+     "s": "scratch",
+     "at": "class"
+    },
+    {
+     "s": "boom",
+     "at": "day"
+    }
+   ]
   },
   {
    "id": "r5",
-   "text": "Subscribe because it's free and unlike your points it'll still be worth the same next year.",
-   "pause": 0.6
+   "text": "Subscribe. It's free. And unlike your points it'll still be worth the same next year.",
+   "host": true,
+   "mood": "grin",
+   "pose": "wave",
+   "zoom": {
+    "in": "same",
+    "out": "year"
+   },
+   "sfx": [
+    {
+     "s": "ding",
+     "at": "Subscribe"
+    },
+    {
+     "s": "boom",
+     "at": "year"
+    }
+   ]
   }
  ]
 }
