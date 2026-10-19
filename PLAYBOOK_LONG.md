@@ -546,3 +546,9 @@ Callbacks to earlier episodes are GOOD ("Remember the raccoon from our credit ca
 - Dave is the channel-avatar Dave: `<Stick big seed={7} … />` (huge round head, dot eyes, no hair; brows only on strong emotions). Never `acc={['hair']}` again. `src/memes52.tsx` `Dave` is already the new one; new episodes import it instead of redefining Dave. Clean avatar cutout: `public/dave_new.png` (thumbnails).
 - Voice: `"voice": "chatterbox"` in the episode JSON → run `voice.yml` once per script (12 machines, cached in `pipeline/voice/epNN.flac|json`), then `render.yml`. Chatterbox ≈ 230 words/min → 1,750–2,000 words for 9–10 min. `"exag"` 0.5 default, ≤ 0.7 on big moments. Andrew/edge-tts stays only as fallback.
 - Every sound is loudness-normalised to −24 LUFS (voice −16): an `sfx` can never be louder than Dave. Owner's pack: `public/sfx/pack/` (`index.txt`).
+
+**D. Owner feedback on upgraded ep17 (19 Oct 2026) — binding for every video**
+- A photo must show exactly what Dave says at that moment: every `pic`/`meme`/`slam`/`zoom`/`sfx` is anchored to a spoken word (`"at"`). Pick the noun first, then the photo.
+- Never hide what is being explained: photos/memes on cartoon beats open a right panel and the cartoon shrinks to the left (`splitAt` in `src/upgrade.tsx`, applied in `Episode.tsx`). In new hand-built episodes keep photos in empty space or shrink the scene the same way.
+- Zooms start on the punch word and end on the joke's last word; host camera re-frames only at sentence starts/breaths, never on a timer.
+- More sound effects (~1 per beat) but each must illustrate its word; failure trombone is quiet (−28 LUFS file, gain 0.3).

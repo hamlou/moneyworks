@@ -23,7 +23,7 @@ import {Ep16} from './episodes/Ep16';
 import {Ep18} from './episodes/Ep18';
 import {Ep15} from './episodes/Ep15';
 import {C} from './theme';
-import {Upgrade} from './upgrade';
+import {SPLIT_SCALE, splitAt, Upgrade} from './upgrade';
 
 export type EpisodeProps = {ep: string; timings: Timings | null};
 
@@ -48,7 +48,16 @@ export const Episode: React.FC<EpisodeProps> = ({ep, timings}) => {
   return (
     <TimingProvider t={timings}>
       <AbsoluteFill style={{background: C.bg, overflow: 'hidden'}}>
-        <Body />
+        {(() => {
+          const k = splitAt(timings, f);
+          if (k <= 0) return <Body />;
+          const sc = 1 - (1 - SPLIT_SCALE) * k;
+          return (
+            <AbsoluteFill style={{transform: `translate(${36 * k}px, 0) scale(${sc})`, transformOrigin: '0% 50%', borderRadius: 28 * k, overflow: 'hidden', boxShadow: `0 0 0 ${8 * k}px ${C.ink}`}}>
+              <Body />
+            </AbsoluteFill>
+          );
+        })()}
         <Upgrade ep={ep} />
         <AbsoluteFill style={{background: C.bg, opacity: fadeOut}} />
         <Audio src={staticFile(`${ep}/voice.wav`)} />
