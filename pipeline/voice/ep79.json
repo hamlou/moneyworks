@@ -1,0 +1,9596 @@
+{
+ "fps": 30,
+ "total": 483.433,
+ "hash": "efb7e727fca29812",
+ "chapters": [
+  {
+   "n": 1,
+   "title": "Chad Made It On His Own",
+   "start": 30.542,
+   "beat": "c1a"
+  },
+  {
+   "n": 2,
+   "title": "The Three Invisible Gifts",
+   "start": 125.709,
+   "beat": "c2a"
+  },
+  {
+   "n": 3,
+   "title": "Why The Ladder Got Taller",
+   "start": 280.527,
+   "beat": "c3a"
+  },
+  {
+   "n": 4,
+   "title": "Start The Chain Yourself",
+   "start": 365.92,
+   "beat": "c4a"
+  }
+ ],
+ "beats": [
+  {
+   "id": "o1",
+   "text": "This is Chad. We sat next to each other in school. Same class. Same teacher. Same terrible cafeteria pizza.",
+   "start": 0.08,
+   "end": 5.22,
+   "words": [
+    {
+     "text": "This",
+     "start": 0.08,
+     "end": 0.24
+    },
+    {
+     "text": "is",
+     "start": 0.24,
+     "end": 0.32
+    },
+    {
+     "text": "Chad.",
+     "start": 0.32,
+     "end": 0.52
+    },
+    {
+     "text": "We",
+     "start": 1.04,
+     "end": 1.08
+    },
+    {
+     "text": "sat",
+     "start": 1.08,
+     "end": 1.2
+    },
+    {
+     "text": "next",
+     "start": 1.2,
+     "end": 1.38
+    },
+    {
+     "text": "to",
+     "start": 1.38,
+     "end": 1.56
+    },
+    {
+     "text": "each",
+     "start": 1.56,
+     "end": 1.66
+    },
+    {
+     "text": "other",
+     "start": 1.66,
+     "end": 1.78
+    },
+    {
+     "text": "in",
+     "start": 1.78,
+     "end": 1.88
+    },
+    {
+     "text": "school.",
+     "start": 1.88,
+     "end": 2.1
+    },
+    {
+     "text": "Same",
+     "start": 2.48,
+     "end": 2.64
+    },
+    {
+     "text": "class.",
+     "start": 2.64,
+     "end": 2.92
+    },
+    {
+     "text": "Same",
+     "start": 3.26,
+     "end": 3.38
+    },
+    {
+     "text": "teacher.",
+     "start": 3.38,
+     "end": 3.66
+    },
+    {
+     "text": "Same",
+     "start": 3.98,
+     "end": 4.18
+    },
+    {
+     "text": "terrible",
+     "start": 4.18,
+     "end": 4.5
+    },
+    {
+     "text": "cafeteria",
+     "start": 4.5,
+     "end": 4.76
+    },
+    {
+     "text": "pizza.",
+     "start": 4.76,
+     "end": 5.22
+    }
+   ]
+  },
+  {
+   "id": "o2",
+   "text": "Today Chad owns two apartments and a company. And I own a toaster. A nice toaster. But a toaster.",
+   "start": 5.7634791666666665,
+   "end": 11.423479166666667,
+   "words": [
+    {
+     "text": "Today",
+     "start": 5.763,
+     "end": 6.003
+    },
+    {
+     "text": "Chad",
+     "start": 6.003,
+     "end": 6.263
+    },
+    {
+     "text": "owns",
+     "start": 6.263,
+     "end": 6.563
+    },
+    {
+     "text": "two",
+     "start": 6.563,
+     "end": 6.783
+    },
+    {
+     "text": "apartments",
+     "start": 6.783,
+     "end": 7.103
+    },
+    {
+     "text": "and",
+     "start": 7.103,
+     "end": 7.503
+    },
+    {
+     "text": "a",
+     "start": 7.503,
+     "end": 7.603
+    },
+    {
+     "text": "company.",
+     "start": 7.603,
+     "end": 7.903
+    },
+    {
+     "text": "And",
+     "start": 8.523,
+     "end": 8.563
+    },
+    {
+     "text": "I",
+     "start": 8.563,
+     "end": 8.723
+    },
+    {
+     "text": "own",
+     "start": 8.723,
+     "end": 8.943
+    },
+    {
+     "text": "a",
+     "start": 8.943,
+     "end": 9.043
+    },
+    {
+     "text": "toaster.",
+     "start": 9.043,
+     "end": 9.403
+    },
+    {
+     "text": "A",
+     "start": 9.723,
+     "end": 9.823
+    },
+    {
+     "text": "nice",
+     "start": 9.823,
+     "end": 9.943
+    },
+    {
+     "text": "toaster.",
+     "start": 9.943,
+     "end": 10.403
+    },
+    {
+     "text": "But",
+     "start": 10.743,
+     "end": 10.943
+    },
+    {
+     "text": "a",
+     "start": 10.943,
+     "end": 11.043
+    },
+    {
+     "text": "toaster.",
+     "start": 11.043,
+     "end": 11.423
+    }
+   ]
+  },
+  {
+   "id": "o3",
+   "text": "And Chad loves to say he made it all on his own.",
+   "start": 11.923708333333334,
+   "end": 13.743708333333334,
+   "words": [
+    {
+     "text": "And",
+     "start": 11.924,
+     "end": 12.004
+    },
+    {
+     "text": "Chad",
+     "start": 12.004,
+     "end": 12.144
+    },
+    {
+     "text": "loves",
+     "start": 12.144,
+     "end": 12.364
+    },
+    {
+     "text": "to",
+     "start": 12.364,
+     "end": 12.584
+    },
+    {
+     "text": "say",
+     "start": 12.584,
+     "end": 12.724
+    },
+    {
+     "text": "he",
+     "start": 12.724,
+     "end": 12.864
+    },
+    {
+     "text": "made",
+     "start": 12.864,
+     "end": 13.024
+    },
+    {
+     "text": "it",
+     "start": 13.024,
+     "end": 13.124
+    },
+    {
+     "text": "all",
+     "start": 13.124,
+     "end": 13.264
+    },
+    {
+     "text": "on",
+     "start": 13.264,
+     "end": 13.424
+    },
+    {
+     "text": "his",
+     "start": 13.424,
+     "end": 13.524
+    },
+    {
+     "text": "own.",
+     "start": 13.524,
+     "end": 13.744
+    }
+   ]
+  },
+  {
+   "id": "o4",
+   "text": "By the end of this video you'll know the three things rich families pass to their kids that aren't money and the one you can start giving tonight for free.",
+   "start": 14.328895833333334,
+   "end": 20.168895833333334,
+   "words": [
+    {
+     "text": "By",
+     "start": 14.329,
+     "end": 14.409
+    },
+    {
+     "text": "the",
+     "start": 14.409,
+     "end": 14.489
+    },
+    {
+     "text": "end",
+     "start": 14.489,
+     "end": 14.629
+    },
+    {
+     "text": "of",
+     "start": 14.629,
+     "end": 14.769
+    },
+    {
+     "text": "this",
+     "start": 14.769,
+     "end": 14.889
+    },
+    {
+     "text": "video",
+     "start": 14.889,
+     "end": 15.169
+    },
+    {
+     "text": "you'll",
+     "start": 15.329,
+     "end": 15.469
+    },
+    {
+     "text": "know",
+     "start": 15.469,
+     "end": 15.589
+    },
+    {
+     "text": "the",
+     "start": 15.589,
+     "end": 15.729
+    },
+    {
+     "text": "three",
+     "start": 15.729,
+     "end": 15.909
+    },
+    {
+     "text": "things",
+     "start": 15.909,
+     "end": 16.229
+    },
+    {
+     "text": "rich",
+     "start": 16.229,
+     "end": 16.469
+    },
+    {
+     "text": "families",
+     "start": 16.469,
+     "end": 16.829
+    },
+    {
+     "text": "pass",
+     "start": 16.829,
+     "end": 17.069
+    },
+    {
+     "text": "to",
+     "start": 17.069,
+     "end": 17.289
+    },
+    {
+     "text": "their",
+     "start": 17.289,
+     "end": 17.409
+    },
+    {
+     "text": "kids",
+     "start": 17.409,
+     "end": 17.629
+    },
+    {
+     "text": "that",
+     "start": 17.629,
+     "end": 17.829
+    },
+    {
+     "text": "aren't",
+     "start": 17.829,
+     "end": 18.009
+    },
+    {
+     "text": "money",
+     "start": 18.009,
+     "end": 18.229
+    },
+    {
+     "text": "and",
+     "start": 18.449,
+     "end": 18.509
+    },
+    {
+     "text": "the",
+     "start": 18.509,
+     "end": 18.589
+    },
+    {
+     "text": "one",
+     "start": 18.589,
+     "end": 18.729
+    },
+    {
+     "text": "you",
+     "start": 18.729,
+     "end": 18.869
+    },
+    {
+     "text": "can",
+     "start": 18.869,
+     "end": 18.989
+    },
+    {
+     "text": "start",
+     "start": 18.989,
+     "end": 19.189
+    },
+    {
+     "text": "giving",
+     "start": 19.189,
+     "end": 19.389
+    },
+    {
+     "text": "tonight",
+     "start": 19.389,
+     "end": 19.649
+    },
+    {
+     "text": "for",
+     "start": 19.649,
+     "end": 19.929
+    },
+    {
+     "text": "free.",
+     "start": 19.929,
+     "end": 20.169
+    }
+   ]
+  },
+  {
+   "id": "o5",
+   "text": "Because it's not that rich kids are smarter. They're not. It's that they start the race already wearing running shoes.",
+   "start": 20.609895833333333,
+   "end": 25.229895833333334,
+   "words": [
+    {
+     "text": "Because",
+     "start": 20.61,
+     "end": 20.81
+    },
+    {
+     "text": "it's",
+     "start": 20.81,
+     "end": 20.95
+    },
+    {
+     "text": "not",
+     "start": 20.95,
+     "end": 21.11
+    },
+    {
+     "text": "that",
+     "start": 21.11,
+     "end": 21.25
+    },
+    {
+     "text": "rich",
+     "start": 21.25,
+     "end": 21.39
+    },
+    {
+     "text": "kids",
+     "start": 21.39,
+     "end": 21.59
+    },
+    {
+     "text": "are",
+     "start": 21.59,
+     "end": 21.73
+    },
+    {
+     "text": "smarter.",
+     "start": 21.73,
+     "end": 21.91
+    },
+    {
+     "text": "They're",
+     "start": 22.45,
+     "end": 22.51
+    },
+    {
+     "text": "not.",
+     "start": 22.51,
+     "end": 22.67
+    },
+    {
+     "text": "It's",
+     "start": 23.21,
+     "end": 23.41
+    },
+    {
+     "text": "that",
+     "start": 23.41,
+     "end": 23.53
+    },
+    {
+     "text": "they",
+     "start": 23.53,
+     "end": 23.65
+    },
+    {
+     "text": "start",
+     "start": 23.65,
+     "end": 23.81
+    },
+    {
+     "text": "the",
+     "start": 23.81,
+     "end": 23.97
+    },
+    {
+     "text": "race",
+     "start": 23.97,
+     "end": 24.13
+    },
+    {
+     "text": "already",
+     "start": 24.13,
+     "end": 24.41
+    },
+    {
+     "text": "wearing",
+     "start": 24.41,
+     "end": 24.77
+    },
+    {
+     "text": "running",
+     "start": 24.77,
+     "end": 24.95
+    },
+    {
+     "text": "shoes.",
+     "start": 24.95,
+     "end": 25.23
+    }
+   ]
+  },
+  {
+   "id": "o6",
+   "text": "But most people click away before the part that matters which is exactly how the race stays the same.",
+   "start": 25.783895833333332,
+   "end": 29.879895833333332,
+   "words": [
+    {
+     "text": "But",
+     "start": 25.784,
+     "end": 25.929
+    },
+    {
+     "text": "most",
+     "start": 25.946,
+     "end": 26.127
+    },
+    {
+     "text": "people",
+     "start": 26.148,
+     "end": 26.402
+    },
+    {
+     "text": "click",
+     "start": 26.43,
+     "end": 26.648
+    },
+    {
+     "text": "away",
+     "start": 26.673,
+     "end": 26.854
+    },
+    {
+     "text": "before",
+     "start": 26.875,
+     "end": 27.129
+    },
+    {
+     "text": "the",
+     "start": 27.157,
+     "end": 27.303
+    },
+    {
+     "text": "part",
+     "start": 27.319,
+     "end": 27.501
+    },
+    {
+     "text": "that",
+     "start": 27.521,
+     "end": 27.703
+    },
+    {
+     "text": "matters",
+     "start": 27.723,
+     "end": 28.014
+    },
+    {
+     "text": "which",
+     "start": 28.046,
+     "end": 28.264
+    },
+    {
+     "text": "is",
+     "start": 28.288,
+     "end": 28.397
+    },
+    {
+     "text": "exactly",
+     "start": 28.409,
+     "end": 28.7
+    },
+    {
+     "text": "how",
+     "start": 28.733,
+     "end": 28.878
+    },
+    {
+     "text": "the",
+     "start": 28.894,
+     "end": 29.04
+    },
+    {
+     "text": "race",
+     "start": 29.056,
+     "end": 29.238
+    },
+    {
+     "text": "stays",
+     "start": 29.258,
+     "end": 29.476
+    },
+    {
+     "text": "the",
+     "start": 29.5,
+     "end": 29.645
+    },
+    {
+     "text": "same.",
+     "start": 29.662,
+     "end": 29.88
+    }
+   ]
+  },
+  {
+   "id": "c1a",
+   "text": "So let me tell you Chad's story. The way Chad tells it at parties.",
+   "start": 32.742104166666664,
+   "end": 35.60210416666666,
+   "words": [
+    {
+     "text": "So",
+     "start": 32.742,
+     "end": 32.902
+    },
+    {
+     "text": "let",
+     "start": 33.042,
+     "end": 33.142
+    },
+    {
+     "text": "me",
+     "start": 33.142,
+     "end": 33.262
+    },
+    {
+     "text": "tell",
+     "start": 33.262,
+     "end": 33.422
+    },
+    {
+     "text": "you",
+     "start": 33.422,
+     "end": 33.582
+    },
+    {
+     "text": "Chad's",
+     "start": 33.582,
+     "end": 33.962
+    },
+    {
+     "text": "story.",
+     "start": 33.962,
+     "end": 34.182
+    },
+    {
+     "text": "The",
+     "start": 34.522,
+     "end": 34.622
+    },
+    {
+     "text": "way",
+     "start": 34.622,
+     "end": 34.722
+    },
+    {
+     "text": "Chad",
+     "start": 34.722,
+     "end": 34.942
+    },
+    {
+     "text": "tells",
+     "start": 34.942,
+     "end": 35.162
+    },
+    {
+     "text": "it",
+     "start": 35.162,
+     "end": 35.322
+    },
+    {
+     "text": "at",
+     "start": 35.322,
+     "end": 35.402
+    },
+    {
+     "text": "parties.",
+     "start": 35.402,
+     "end": 35.602
+    }
+   ]
+  },
+  {
+   "id": "c1b",
+   "text": "After college Chad started a business selling fancy dog shampoo. Out of his garage. Just him and a dream.",
+   "start": 36.347479166666666,
+   "end": 41.247479166666665,
+   "words": [
+    {
+     "text": "After",
+     "start": 36.347,
+     "end": 36.507
+    },
+    {
+     "text": "college",
+     "start": 36.507,
+     "end": 36.807
+    },
+    {
+     "text": "Chad",
+     "start": 37.027,
+     "end": 37.127
+    },
+    {
+     "text": "started",
+     "start": 37.127,
+     "end": 37.407
+    },
+    {
+     "text": "a",
+     "start": 37.407,
+     "end": 37.547
+    },
+    {
+     "text": "business",
+     "start": 37.547,
+     "end": 37.767
+    },
+    {
+     "text": "selling",
+     "start": 37.767,
+     "end": 38.047
+    },
+    {
+     "text": "fancy",
+     "start": 38.047,
+     "end": 38.327
+    },
+    {
+     "text": "dog",
+     "start": 38.327,
+     "end": 38.547
+    },
+    {
+     "text": "shampoo.",
+     "start": 38.547,
+     "end": 38.847
+    },
+    {
+     "text": "Out",
+     "start": 39.407,
+     "end": 39.527
+    },
+    {
+     "text": "of",
+     "start": 39.527,
+     "end": 39.627
+    },
+    {
+     "text": "his",
+     "start": 39.627,
+     "end": 39.707
+    },
+    {
+     "text": "garage.",
+     "start": 39.707,
+     "end": 39.927
+    },
+    {
+     "text": "Just",
+     "start": 40.387,
+     "end": 40.507
+    },
+    {
+     "text": "him",
+     "start": 40.507,
+     "end": 40.747
+    },
+    {
+     "text": "and",
+     "start": 40.747,
+     "end": 40.967
+    },
+    {
+     "text": "a",
+     "start": 40.967,
+     "end": 41.087
+    },
+    {
+     "text": "dream.",
+     "start": 41.087,
+     "end": 41.247
+    }
+   ]
+  },
+  {
+   "id": "c1c",
+   "text": "Now here's the version Chad skips. The garage belonged to his parents. And he lived there for free. For three years.",
+   "start": 41.9486875,
+   "end": 46.6686875,
+   "words": [
+    {
+     "text": "Now",
+     "start": 41.949,
+     "end": 42.049
+    },
+    {
+     "text": "here's",
+     "start": 42.049,
+     "end": 42.269
+    },
+    {
+     "text": "the",
+     "start": 42.269,
+     "end": 42.349
+    },
+    {
+     "text": "version",
+     "start": 42.349,
+     "end": 42.509
+    },
+    {
+     "text": "Chad",
+     "start": 42.509,
+     "end": 42.849
+    },
+    {
+     "text": "skips.",
+     "start": 42.849,
+     "end": 43.329
+    },
+    {
+     "text": "The",
+     "start": 43.669,
+     "end": 43.709
+    },
+    {
+     "text": "garage",
+     "start": 43.709,
+     "end": 43.849
+    },
+    {
+     "text": "belonged",
+     "start": 43.849,
+     "end": 44.189
+    },
+    {
+     "text": "to",
+     "start": 44.189,
+     "end": 44.389
+    },
+    {
+     "text": "his",
+     "start": 44.389,
+     "end": 44.449
+    },
+    {
+     "text": "parents.",
+     "start": 44.449,
+     "end": 44.749
+    },
+    {
+     "text": "And",
+     "start": 45.129,
+     "end": 45.189
+    },
+    {
+     "text": "he",
+     "start": 45.189,
+     "end": 45.269
+    },
+    {
+     "text": "lived",
+     "start": 45.269,
+     "end": 45.409
+    },
+    {
+     "text": "there",
+     "start": 45.409,
+     "end": 45.589
+    },
+    {
+     "text": "for",
+     "start": 45.589,
+     "end": 45.709
+    },
+    {
+     "text": "free.",
+     "start": 45.709,
+     "end": 45.949
+    },
+    {
+     "text": "For",
+     "start": 45.949,
+     "end": 46.249
+    },
+    {
+     "text": "three",
+     "start": 46.249,
+     "end": 46.409
+    },
+    {
+     "text": "years.",
+     "start": 46.409,
+     "end": 46.669
+    }
+   ]
+  },
+  {
+   "id": "n30",
+   "text": "His mom also made him lunch every day. Which honestly is the most underrated business investment in history.",
+   "start": 47.3836875,
+   "end": 52.3436875,
+   "words": [
+    {
+     "text": "His",
+     "start": 47.384,
+     "end": 47.484
+    },
+    {
+     "text": "mom",
+     "start": 47.484,
+     "end": 47.644
+    },
+    {
+     "text": "also",
+     "start": 47.644,
+     "end": 47.984
+    },
+    {
+     "text": "made",
+     "start": 47.984,
+     "end": 48.184
+    },
+    {
+     "text": "him",
+     "start": 48.184,
+     "end": 48.284
+    },
+    {
+     "text": "lunch",
+     "start": 48.284,
+     "end": 48.464
+    },
+    {
+     "text": "every",
+     "start": 48.464,
+     "end": 48.744
+    },
+    {
+     "text": "day.",
+     "start": 48.744,
+     "end": 49.024
+    },
+    {
+     "text": "Which",
+     "start": 49.484,
+     "end": 49.604
+    },
+    {
+     "text": "honestly",
+     "start": 49.604,
+     "end": 49.904
+    },
+    {
+     "text": "is",
+     "start": 49.904,
+     "end": 50.424
+    },
+    {
+     "text": "the",
+     "start": 50.424,
+     "end": 50.504
+    },
+    {
+     "text": "most",
+     "start": 50.504,
+     "end": 50.644
+    },
+    {
+     "text": "underrated",
+     "start": 50.644,
+     "end": 51.004
+    },
+    {
+     "text": "business",
+     "start": 51.004,
+     "end": 51.404
+    },
+    {
+     "text": "investment",
+     "start": 51.404,
+     "end": 51.924
+    },
+    {
+     "text": "in",
+     "start": 51.924,
+     "end": 52.104
+    },
+    {
+     "text": "history.",
+     "start": 52.104,
+     "end": 52.344
+    }
+   ]
+  },
+  {
+   "id": "n1",
+   "text": "Chad describing his startup journey.",
+   "start": 53.0750625,
+   "end": 54.5550625,
+   "words": [
+    {
+     "text": "Chad",
+     "start": 53.075,
+     "end": 53.255
+    },
+    {
+     "text": "describing",
+     "start": 53.255,
+     "end": 53.555
+    },
+    {
+     "text": "his",
+     "start": 53.555,
+     "end": 53.875
+    },
+    {
+     "text": "startup",
+     "start": 53.875,
+     "end": 54.135
+    },
+    {
+     "text": "journey.",
+     "start": 54.135,
+     "end": 54.555
+    }
+   ]
+  },
+  {
+   "id": "c1d",
+   "text": "And the money to start? A small loan. From his dad. Fifty thousand dollars. With no interest and no deadline and no angry phone calls.",
+   "start": 55.16045833333333,
+   "end": 61.427458333333334,
+   "words": [
+    {
+     "text": "And",
+     "start": 55.16,
+     "end": 55.328
+    },
+    {
+     "text": "the",
+     "start": 55.347,
+     "end": 55.515
+    },
+    {
+     "text": "money",
+     "start": 55.533,
+     "end": 55.785
+    },
+    {
+     "text": "to",
+     "start": 55.813,
+     "end": 55.939
+    },
+    {
+     "text": "start?",
+     "start": 55.953,
+     "end": 56.247
+    },
+    {
+     "text": "A",
+     "start": 56.28,
+     "end": 56.364
+    },
+    {
+     "text": "small",
+     "start": 56.373,
+     "end": 56.625
+    },
+    {
+     "text": "loan.",
+     "start": 56.653,
+     "end": 56.905
+    },
+    {
+     "text": "From",
+     "start": 56.933,
+     "end": 57.143
+    },
+    {
+     "text": "his",
+     "start": 57.167,
+     "end": 57.335
+    },
+    {
+     "text": "dad.",
+     "start": 57.353,
+     "end": 57.563
+    },
+    {
+     "text": "Fifty",
+     "start": 57.587,
+     "end": 57.839
+    },
+    {
+     "text": "thousand",
+     "start": 57.867,
+     "end": 58.245
+    },
+    {
+     "text": "dollars.",
+     "start": 58.287,
+     "end": 58.665
+    },
+    {
+     "text": "With",
+     "start": 58.707,
+     "end": 58.917
+    },
+    {
+     "text": "no",
+     "start": 58.94,
+     "end": 59.066
+    },
+    {
+     "text": "interest",
+     "start": 59.08,
+     "end": 59.458
+    },
+    {
+     "text": "and",
+     "start": 59.5,
+     "end": 59.668
+    },
+    {
+     "text": "no",
+     "start": 59.687,
+     "end": 59.813
+    },
+    {
+     "text": "deadline",
+     "start": 59.827,
+     "end": 60.205
+    },
+    {
+     "text": "and",
+     "start": 60.247,
+     "end": 60.415
+    },
+    {
+     "text": "no",
+     "start": 60.433,
+     "end": 60.559
+    },
+    {
+     "text": "angry",
+     "start": 60.573,
+     "end": 60.825
+    },
+    {
+     "text": "phone",
+     "start": 60.853,
+     "end": 61.105
+    },
+    {
+     "text": "calls.",
+     "start": 61.133,
+     "end": 61.427
+    }
+   ]
+  },
+  {
+   "id": "n2",
+   "text": "When I needed fifty dollars my dad asked me what happened to the last fifty dollars.",
+   "start": 62.032895833333335,
+   "end": 64.50689583333333,
+   "words": [
+    {
+     "text": "When",
+     "start": 62.033,
+     "end": 62.165
+    },
+    {
+     "text": "I",
+     "start": 62.18,
+     "end": 62.233
+    },
+    {
+     "text": "needed",
+     "start": 62.239,
+     "end": 62.424
+    },
+    {
+     "text": "fifty",
+     "start": 62.445,
+     "end": 62.604
+    },
+    {
+     "text": "dollars",
+     "start": 62.621,
+     "end": 62.833
+    },
+    {
+     "text": "my",
+     "start": 62.857,
+     "end": 62.936
+    },
+    {
+     "text": "dad",
+     "start": 62.945,
+     "end": 63.051
+    },
+    {
+     "text": "asked",
+     "start": 63.062,
+     "end": 63.221
+    },
+    {
+     "text": "me",
+     "start": 63.239,
+     "end": 63.318
+    },
+    {
+     "text": "what",
+     "start": 63.327,
+     "end": 63.459
+    },
+    {
+     "text": "happened",
+     "start": 63.474,
+     "end": 63.712
+    },
+    {
+     "text": "to",
+     "start": 63.739,
+     "end": 63.818
+    },
+    {
+     "text": "the",
+     "start": 63.827,
+     "end": 63.933
+    },
+    {
+     "text": "last",
+     "start": 63.945,
+     "end": 64.077
+    },
+    {
+     "text": "fifty",
+     "start": 64.092,
+     "end": 64.251
+    },
+    {
+     "text": "dollars.",
+     "start": 64.268,
+     "end": 64.507
+    }
+   ]
+  },
+  {
+   "id": "c1e",
+   "text": "The first business failed. Chad lost everything. And then he moved back into the garage and tried again.",
+   "start": 65.47970833333333,
+   "end": 69.97970833333333,
+   "words": [
+    {
+     "text": "The",
+     "start": 65.48,
+     "end": 65.6
+    },
+    {
+     "text": "first",
+     "start": 65.6,
+     "end": 65.74
+    },
+    {
+     "text": "business",
+     "start": 65.74,
+     "end": 66.06
+    },
+    {
+     "text": "failed.",
+     "start": 66.06,
+     "end": 66.44
+    },
+    {
+     "text": "Chad",
+     "start": 66.88,
+     "end": 66.96
+    },
+    {
+     "text": "lost",
+     "start": 66.96,
+     "end": 67.22
+    },
+    {
+     "text": "everything.",
+     "start": 67.22,
+     "end": 67.7
+    },
+    {
+     "text": "And",
+     "start": 68.12,
+     "end": 68.24
+    },
+    {
+     "text": "then",
+     "start": 68.24,
+     "end": 68.34
+    },
+    {
+     "text": "he",
+     "start": 68.34,
+     "end": 68.44
+    },
+    {
+     "text": "moved",
+     "start": 68.44,
+     "end": 68.58
+    },
+    {
+     "text": "back",
+     "start": 68.58,
+     "end": 68.82
+    },
+    {
+     "text": "into",
+     "start": 68.82,
+     "end": 69.0
+    },
+    {
+     "text": "the",
+     "start": 69.0,
+     "end": 69.14
+    },
+    {
+     "text": "garage",
+     "start": 69.14,
+     "end": 69.32
+    },
+    {
+     "text": "and",
+     "start": 69.32,
+     "end": 69.56
+    },
+    {
+     "text": "tried",
+     "start": 69.56,
+     "end": 69.68
+    },
+    {
+     "text": "again.",
+     "start": 69.68,
+     "end": 69.98
+    }
+   ]
+  },
+  {
+   "id": "c1f",
+   "text": "The second business failed too. Garage. Again. The third one worked. And now that's the only one he talks about.",
+   "start": 70.62583333333333,
+   "end": 75.77383333333333,
+   "words": [
+    {
+     "text": "The",
+     "start": 70.626,
+     "end": 70.791
+    },
+    {
+     "text": "second",
+     "start": 70.809,
+     "end": 71.098
+    },
+    {
+     "text": "business",
+     "start": 71.13,
+     "end": 71.502
+    },
+    {
+     "text": "failed",
+     "start": 71.543,
+     "end": 71.832
+    },
+    {
+     "text": "too.",
+     "start": 71.864,
+     "end": 72.07
+    },
+    {
+     "text": "Garage.",
+     "start": 72.093,
+     "end": 72.423
+    },
+    {
+     "text": "Again.",
+     "start": 72.46,
+     "end": 72.748
+    },
+    {
+     "text": "The",
+     "start": 72.781,
+     "end": 72.946
+    },
+    {
+     "text": "third",
+     "start": 72.964,
+     "end": 73.211
+    },
+    {
+     "text": "one",
+     "start": 73.239,
+     "end": 73.404
+    },
+    {
+     "text": "worked.",
+     "start": 73.422,
+     "end": 73.752
+    },
+    {
+     "text": "And",
+     "start": 73.789,
+     "end": 73.954
+    },
+    {
+     "text": "now",
+     "start": 73.972,
+     "end": 74.137
+    },
+    {
+     "text": "that's",
+     "start": 74.156,
+     "end": 74.445
+    },
+    {
+     "text": "the",
+     "start": 74.477,
+     "end": 74.642
+    },
+    {
+     "text": "only",
+     "start": 74.66,
+     "end": 74.866
+    },
+    {
+     "text": "one",
+     "start": 74.889,
+     "end": 75.054
+    },
+    {
+     "text": "he",
+     "start": 75.073,
+     "end": 75.196
+    },
+    {
+     "text": "talks",
+     "start": 75.21,
+     "end": 75.458
+    },
+    {
+     "text": "about.",
+     "start": 75.485,
+     "end": 75.774
+    }
+   ]
+  },
+  {
+   "id": "n3",
+   "text": "Chad's business plan.",
+   "start": 76.48733333333334,
+   "end": 77.26733333333334,
+   "words": [
+    {
+     "text": "Chad's",
+     "start": 76.487,
+     "end": 76.787
+    },
+    {
+     "text": "business",
+     "start": 76.787,
+     "end": 76.947
+    },
+    {
+     "text": "plan.",
+     "start": 76.947,
+     "end": 77.267
+    }
+   ]
+  },
+  {
+   "id": "c1g",
+   "text": "Meanwhile me. I got my first job at sixteen. Flipping burgers. And some months my paycheck helped pay the rent at home.",
+   "start": 77.99029166666666,
+   "end": 83.73029166666666,
+   "words": [
+    {
+     "text": "Meanwhile",
+     "start": 77.99,
+     "end": 78.17
+    },
+    {
+     "text": "me.",
+     "start": 78.45,
+     "end": 78.55
+    },
+    {
+     "text": "I",
+     "start": 78.95,
+     "end": 79.07
+    },
+    {
+     "text": "got",
+     "start": 79.07,
+     "end": 79.17
+    },
+    {
+     "text": "my",
+     "start": 79.17,
+     "end": 79.29
+    },
+    {
+     "text": "first",
+     "start": 79.29,
+     "end": 79.47
+    },
+    {
+     "text": "job",
+     "start": 79.47,
+     "end": 79.67
+    },
+    {
+     "text": "at",
+     "start": 79.67,
+     "end": 79.81
+    },
+    {
+     "text": "sixteen.",
+     "start": 79.81,
+     "end": 80.11
+    },
+    {
+     "text": "Flipping",
+     "start": 80.55,
+     "end": 80.81
+    },
+    {
+     "text": "burgers.",
+     "start": 80.81,
+     "end": 81.11
+    },
+    {
+     "text": "And",
+     "start": 81.55,
+     "end": 81.61
+    },
+    {
+     "text": "some",
+     "start": 81.61,
+     "end": 81.79
+    },
+    {
+     "text": "months",
+     "start": 81.79,
+     "end": 82.05
+    },
+    {
+     "text": "my",
+     "start": 82.05,
+     "end": 82.29
+    },
+    {
+     "text": "paycheck",
+     "start": 82.29,
+     "end": 82.53
+    },
+    {
+     "text": "helped",
+     "start": 82.53,
+     "end": 82.89
+    },
+    {
+     "text": "pay",
+     "start": 82.89,
+     "end": 83.09
+    },
+    {
+     "text": "the",
+     "start": 83.09,
+     "end": 83.23
+    },
+    {
+     "text": "rent",
+     "start": 83.23,
+     "end": 83.35
+    },
+    {
+     "text": "at",
+     "start": 83.35,
+     "end": 83.51
+    },
+    {
+     "text": "home.",
+     "start": 83.51,
+     "end": 83.73
+    }
+   ]
+  },
+  {
+   "id": "n31",
+   "text": "My mom worked two jobs. She left before I woke up and came home after I fell asleep. I knew her mostly from the notes on the fridge.",
+   "start": 84.3961875,
+   "end": 89.7961875,
+   "words": [
+    {
+     "text": "My",
+     "start": 84.396,
+     "end": 84.496
+    },
+    {
+     "text": "mom",
+     "start": 84.496,
+     "end": 84.636
+    },
+    {
+     "text": "worked",
+     "start": 84.636,
+     "end": 84.836
+    },
+    {
+     "text": "two",
+     "start": 84.836,
+     "end": 85.036
+    },
+    {
+     "text": "jobs.",
+     "start": 85.036,
+     "end": 85.396
+    },
+    {
+     "text": "She",
+     "start": 85.736,
+     "end": 85.816
+    },
+    {
+     "text": "left",
+     "start": 85.816,
+     "end": 85.976
+    },
+    {
+     "text": "before",
+     "start": 85.976,
+     "end": 86.176
+    },
+    {
+     "text": "I",
+     "start": 86.176,
+     "end": 86.376
+    },
+    {
+     "text": "woke",
+     "start": 86.376,
+     "end": 86.516
+    },
+    {
+     "text": "up",
+     "start": 86.516,
+     "end": 86.696
+    },
+    {
+     "text": "and",
+     "start": 86.696,
+     "end": 86.836
+    },
+    {
+     "text": "came",
+     "start": 86.836,
+     "end": 86.956
+    },
+    {
+     "text": "home",
+     "start": 86.956,
+     "end": 87.196
+    },
+    {
+     "text": "after",
+     "start": 87.196,
+     "end": 87.456
+    },
+    {
+     "text": "I",
+     "start": 87.456,
+     "end": 87.556
+    },
+    {
+     "text": "fell",
+     "start": 87.556,
+     "end": 87.696
+    },
+    {
+     "text": "asleep.",
+     "start": 87.696,
+     "end": 87.996
+    },
+    {
+     "text": "I",
+     "start": 88.376,
+     "end": 88.396
+    },
+    {
+     "text": "knew",
+     "start": 88.396,
+     "end": 88.496
+    },
+    {
+     "text": "her",
+     "start": 88.496,
+     "end": 88.616
+    },
+    {
+     "text": "mostly",
+     "start": 88.616,
+     "end": 88.856
+    },
+    {
+     "text": "from",
+     "start": 88.856,
+     "end": 89.096
+    },
+    {
+     "text": "the",
+     "start": 89.096,
+     "end": 89.216
+    },
+    {
+     "text": "notes",
+     "start": 89.216,
+     "end": 89.336
+    },
+    {
+     "text": "on",
+     "start": 89.336,
+     "end": 89.496
+    },
+    {
+     "text": "the",
+     "start": 89.496,
+     "end": 89.576
+    },
+    {
+     "text": "fridge.",
+     "start": 89.576,
+     "end": 89.796
+    }
+   ]
+  },
+  {
+   "id": "c1h",
+   "text": "So when I had an idea for a business I didn't try. Not because I was lazy. Because if I failed there was no garage. There was just the street.",
+   "start": 90.51685416666666,
+   "end": 96.81685416666666,
+   "words": [
+    {
+     "text": "So",
+     "start": 90.517,
+     "end": 90.617
+    },
+    {
+     "text": "when",
+     "start": 90.617,
+     "end": 90.717
+    },
+    {
+     "text": "I",
+     "start": 90.717,
+     "end": 90.777
+    },
+    {
+     "text": "had",
+     "start": 90.777,
+     "end": 90.937
+    },
+    {
+     "text": "an",
+     "start": 90.937,
+     "end": 91.037
+    },
+    {
+     "text": "idea",
+     "start": 91.037,
+     "end": 91.237
+    },
+    {
+     "text": "for",
+     "start": 91.237,
+     "end": 91.417
+    },
+    {
+     "text": "a",
+     "start": 91.417,
+     "end": 91.497
+    },
+    {
+     "text": "business",
+     "start": 91.497,
+     "end": 91.677
+    },
+    {
+     "text": "I",
+     "start": 91.857,
+     "end": 91.877
+    },
+    {
+     "text": "didn't",
+     "start": 91.877,
+     "end": 92.057
+    },
+    {
+     "text": "try.",
+     "start": 92.057,
+     "end": 92.257
+    },
+    {
+     "text": "Not",
+     "start": 92.797,
+     "end": 92.937
+    },
+    {
+     "text": "because",
+     "start": 92.937,
+     "end": 93.197
+    },
+    {
+     "text": "I",
+     "start": 93.197,
+     "end": 93.337
+    },
+    {
+     "text": "was",
+     "start": 93.337,
+     "end": 93.437
+    },
+    {
+     "text": "lazy.",
+     "start": 93.437,
+     "end": 93.737
+    },
+    {
+     "text": "Because",
+     "start": 94.197,
+     "end": 94.437
+    },
+    {
+     "text": "if",
+     "start": 94.437,
+     "end": 94.577
+    },
+    {
+     "text": "I",
+     "start": 94.577,
+     "end": 94.657
+    },
+    {
+     "text": "failed",
+     "start": 94.657,
+     "end": 94.937
+    },
+    {
+     "text": "there",
+     "start": 95.057,
+     "end": 95.097
+    },
+    {
+     "text": "was",
+     "start": 95.097,
+     "end": 95.197
+    },
+    {
+     "text": "no",
+     "start": 95.197,
+     "end": 95.337
+    },
+    {
+     "text": "garage.",
+     "start": 95.337,
+     "end": 95.637
+    },
+    {
+     "text": "There",
+     "start": 96.057,
+     "end": 96.117
+    },
+    {
+     "text": "was",
+     "start": 96.117,
+     "end": 96.237
+    },
+    {
+     "text": "just",
+     "start": 96.237,
+     "end": 96.377
+    },
+    {
+     "text": "the",
+     "start": 96.377,
+     "end": 96.577
+    },
+    {
+     "text": "street.",
+     "start": 96.577,
+     "end": 96.817
+    }
+   ]
+  },
+  {
+   "id": "n4",
+   "text": "Chad and I both had ideas. Only one of us could afford to be wrong.",
+   "start": 97.53479166666666,
+   "end": 100.65479166666667,
+   "words": [
+    {
+     "text": "Chad",
+     "start": 97.535,
+     "end": 97.715
+    },
+    {
+     "text": "and",
+     "start": 97.715,
+     "end": 97.855
+    },
+    {
+     "text": "I",
+     "start": 97.855,
+     "end": 98.015
+    },
+    {
+     "text": "both",
+     "start": 98.015,
+     "end": 98.235
+    },
+    {
+     "text": "had",
+     "start": 98.235,
+     "end": 98.455
+    },
+    {
+     "text": "ideas.",
+     "start": 98.455,
+     "end": 98.855
+    },
+    {
+     "text": "Only",
+     "start": 99.235,
+     "end": 99.415
+    },
+    {
+     "text": "one",
+     "start": 99.415,
+     "end": 99.595
+    },
+    {
+     "text": "of",
+     "start": 99.595,
+     "end": 99.715
+    },
+    {
+     "text": "us",
+     "start": 99.715,
+     "end": 99.835
+    },
+    {
+     "text": "could",
+     "start": 99.835,
+     "end": 99.995
+    },
+    {
+     "text": "afford",
+     "start": 99.995,
+     "end": 100.155
+    },
+    {
+     "text": "to",
+     "start": 100.155,
+     "end": 100.355
+    },
+    {
+     "text": "be",
+     "start": 100.355,
+     "end": 100.435
+    },
+    {
+     "text": "wrong.",
+     "start": 100.435,
+     "end": 100.655
+    }
+   ]
+  },
+  {
+   "id": "n32",
+   "text": "Rich kids are allowed to fail like it's practice. Poor kids have to treat every try like it's the final exam.",
+   "start": 101.48760416666667,
+   "end": 106.38760416666668,
+   "words": [
+    {
+     "text": "Rich",
+     "start": 101.488,
+     "end": 101.608
+    },
+    {
+     "text": "kids",
+     "start": 101.608,
+     "end": 101.848
+    },
+    {
+     "text": "are",
+     "start": 101.848,
+     "end": 102.028
+    },
+    {
+     "text": "allowed",
+     "start": 102.028,
+     "end": 102.208
+    },
+    {
+     "text": "to",
+     "start": 102.208,
+     "end": 102.388
+    },
+    {
+     "text": "fail",
+     "start": 102.388,
+     "end": 102.568
+    },
+    {
+     "text": "like",
+     "start": 102.568,
+     "end": 102.768
+    },
+    {
+     "text": "it's",
+     "start": 102.768,
+     "end": 102.908
+    },
+    {
+     "text": "practice.",
+     "start": 102.908,
+     "end": 103.208
+    },
+    {
+     "text": "Poor",
+     "start": 103.888,
+     "end": 104.008
+    },
+    {
+     "text": "kids",
+     "start": 104.008,
+     "end": 104.188
+    },
+    {
+     "text": "have",
+     "start": 104.188,
+     "end": 104.408
+    },
+    {
+     "text": "to",
+     "start": 104.408,
+     "end": 104.528
+    },
+    {
+     "text": "treat",
+     "start": 104.528,
+     "end": 104.688
+    },
+    {
+     "text": "every",
+     "start": 104.688,
+     "end": 104.928
+    },
+    {
+     "text": "try",
+     "start": 104.928,
+     "end": 105.228
+    },
+    {
+     "text": "like",
+     "start": 105.228,
+     "end": 105.608
+    },
+    {
+     "text": "it's",
+     "start": 105.608,
+     "end": 105.788
+    },
+    {
+     "text": "the",
+     "start": 105.788,
+     "end": 105.888
+    },
+    {
+     "text": "final",
+     "start": 105.888,
+     "end": 106.068
+    },
+    {
+     "text": "exam.",
+     "start": 106.068,
+     "end": 106.388
+    }
+   ]
+  },
+  {
+   "id": "c1i",
+   "text": "And here's the thing. Chad isn't a bad guy. He works hard. He really does. But hard work with a safety net is a completely different sport.",
+   "start": 107.1445,
+   "end": 113.8245,
+   "words": [
+    {
+     "text": "And",
+     "start": 107.144,
+     "end": 107.224
+    },
+    {
+     "text": "here's",
+     "start": 107.224,
+     "end": 107.464
+    },
+    {
+     "text": "the",
+     "start": 107.464,
+     "end": 107.564
+    },
+    {
+     "text": "thing.",
+     "start": 107.564,
+     "end": 107.744
+    },
+    {
+     "text": "Chad",
+     "start": 108.424,
+     "end": 108.424
+    },
+    {
+     "text": "isn't",
+     "start": 108.424,
+     "end": 108.784
+    },
+    {
+     "text": "a",
+     "start": 108.784,
+     "end": 108.825
+    },
+    {
+     "text": "bad",
+     "start": 108.825,
+     "end": 109.004
+    },
+    {
+     "text": "guy.",
+     "start": 109.004,
+     "end": 109.244
+    },
+    {
+     "text": "He",
+     "start": 109.444,
+     "end": 109.484
+    },
+    {
+     "text": "works",
+     "start": 109.484,
+     "end": 109.644
+    },
+    {
+     "text": "hard.",
+     "start": 109.644,
+     "end": 109.964
+    },
+    {
+     "text": "He",
+     "start": 110.164,
+     "end": 110.224
+    },
+    {
+     "text": "really",
+     "start": 110.224,
+     "end": 110.404
+    },
+    {
+     "text": "does.",
+     "start": 110.404,
+     "end": 110.724
+    },
+    {
+     "text": "But",
+     "start": 111.404,
+     "end": 111.444
+    },
+    {
+     "text": "hard",
+     "start": 111.444,
+     "end": 111.764
+    },
+    {
+     "text": "work",
+     "start": 111.764,
+     "end": 112.004
+    },
+    {
+     "text": "with",
+     "start": 112.004,
+     "end": 112.164
+    },
+    {
+     "text": "a",
+     "start": 112.164,
+     "end": 112.224
+    },
+    {
+     "text": "safety",
+     "start": 112.224,
+     "end": 112.424
+    },
+    {
+     "text": "net",
+     "start": 112.424,
+     "end": 112.704
+    },
+    {
+     "text": "is",
+     "start": 112.704,
+     "end": 112.904
+    },
+    {
+     "text": "a",
+     "start": 112.904,
+     "end": 112.964
+    },
+    {
+     "text": "completely",
+     "start": 112.964,
+     "end": 113.204
+    },
+    {
+     "text": "different",
+     "start": 113.204,
+     "end": 113.564
+    },
+    {
+     "text": "sport.",
+     "start": 113.564,
+     "end": 113.825
+    }
+   ]
+  },
+  {
+   "id": "n5",
+   "text": "It's like two guys walking on a tightrope. Same rope. Same skill. But one of them has a giant trampoline under him.",
+   "start": 114.57233333333333,
+   "end": 120.11233333333334,
+   "words": [
+    {
+     "text": "It's",
+     "start": 114.572,
+     "end": 114.712
+    },
+    {
+     "text": "like",
+     "start": 114.712,
+     "end": 114.812
+    },
+    {
+     "text": "two",
+     "start": 114.812,
+     "end": 115.052
+    },
+    {
+     "text": "guys",
+     "start": 115.052,
+     "end": 115.212
+    },
+    {
+     "text": "walking",
+     "start": 115.212,
+     "end": 115.432
+    },
+    {
+     "text": "on",
+     "start": 115.432,
+     "end": 115.612
+    },
+    {
+     "text": "a",
+     "start": 115.612,
+     "end": 115.692
+    },
+    {
+     "text": "tightrope.",
+     "start": 115.692,
+     "end": 116.152
+    },
+    {
+     "text": "Same",
+     "start": 116.632,
+     "end": 116.632
+    },
+    {
+     "text": "rope.",
+     "start": 116.632,
+     "end": 116.812
+    },
+    {
+     "text": "Same",
+     "start": 117.112,
+     "end": 117.292
+    },
+    {
+     "text": "skill.",
+     "start": 117.292,
+     "end": 117.552
+    },
+    {
+     "text": "But",
+     "start": 118.232,
+     "end": 118.412
+    },
+    {
+     "text": "one",
+     "start": 118.412,
+     "end": 118.612
+    },
+    {
+     "text": "of",
+     "start": 118.612,
+     "end": 118.692
+    },
+    {
+     "text": "them",
+     "start": 118.692,
+     "end": 118.852
+    },
+    {
+     "text": "has",
+     "start": 118.852,
+     "end": 119.032
+    },
+    {
+     "text": "a",
+     "start": 119.032,
+     "end": 119.132
+    },
+    {
+     "text": "giant",
+     "start": 119.132,
+     "end": 119.292
+    },
+    {
+     "text": "trampoline",
+     "start": 119.292,
+     "end": 119.692
+    },
+    {
+     "text": "under",
+     "start": 119.692,
+     "end": 119.912
+    },
+    {
+     "text": "him.",
+     "start": 119.912,
+     "end": 120.112
+    }
+   ]
+  },
+  {
+   "id": "n6",
+   "text": "Me versus Chad trying something risky.",
+   "start": 120.73970833333334,
+   "end": 122.37970833333334,
+   "words": [
+    {
+     "text": "Me",
+     "start": 120.74,
+     "end": 120.86
+    },
+    {
+     "text": "versus",
+     "start": 120.86,
+     "end": 121.1
+    },
+    {
+     "text": "Chad",
+     "start": 121.1,
+     "end": 121.38
+    },
+    {
+     "text": "trying",
+     "start": 121.38,
+     "end": 121.66
+    },
+    {
+     "text": "something",
+     "start": 121.66,
+     "end": 122.0
+    },
+    {
+     "text": "risky.",
+     "start": 122.0,
+     "end": 122.38
+    }
+   ]
+  },
+  {
+   "id": "n33",
+   "text": "Chad's parents watching him fail for the second time.",
+   "start": 122.99322916666667,
+   "end": 125.05322916666667,
+   "words": [
+    {
+     "text": "Chad's",
+     "start": 122.993,
+     "end": 123.273
+    },
+    {
+     "text": "parents",
+     "start": 123.273,
+     "end": 123.513
+    },
+    {
+     "text": "watching",
+     "start": 123.513,
+     "end": 123.793
+    },
+    {
+     "text": "him",
+     "start": 123.793,
+     "end": 124.053
+    },
+    {
+     "text": "fail",
+     "start": 124.053,
+     "end": 124.253
+    },
+    {
+     "text": "for",
+     "start": 124.253,
+     "end": 124.453
+    },
+    {
+     "text": "the",
+     "start": 124.453,
+     "end": 124.533
+    },
+    {
+     "text": "second",
+     "start": 124.533,
+     "end": 124.753
+    },
+    {
+     "text": "time.",
+     "start": 124.753,
+     "end": 125.053
+    }
+   ]
+  },
+  {
+   "id": "c2a",
+   "text": "So that's the first thing rich kids get. Not money in the bank. A safety net. The freedom to fall.",
+   "start": 127.9093125,
+   "end": 132.6893125,
+   "words": [
+    {
+     "text": "So",
+     "start": 127.909,
+     "end": 128.089
+    },
+    {
+     "text": "that's",
+     "start": 128.089,
+     "end": 128.489
+    },
+    {
+     "text": "the",
+     "start": 128.489,
+     "end": 128.569
+    },
+    {
+     "text": "first",
+     "start": 128.569,
+     "end": 128.729
+    },
+    {
+     "text": "thing",
+     "start": 128.729,
+     "end": 128.969
+    },
+    {
+     "text": "rich",
+     "start": 128.969,
+     "end": 129.149
+    },
+    {
+     "text": "kids",
+     "start": 129.149,
+     "end": 129.369
+    },
+    {
+     "text": "get.",
+     "start": 129.369,
+     "end": 129.589
+    },
+    {
+     "text": "Not",
+     "start": 129.849,
+     "end": 130.029
+    },
+    {
+     "text": "money",
+     "start": 130.029,
+     "end": 130.249
+    },
+    {
+     "text": "in",
+     "start": 130.249,
+     "end": 130.429
+    },
+    {
+     "text": "the",
+     "start": 130.429,
+     "end": 130.529
+    },
+    {
+     "text": "bank.",
+     "start": 130.529,
+     "end": 130.709
+    },
+    {
+     "text": "A",
+     "start": 131.129,
+     "end": 131.229
+    },
+    {
+     "text": "safety",
+     "start": 131.229,
+     "end": 131.449
+    },
+    {
+     "text": "net.",
+     "start": 131.449,
+     "end": 131.729
+    },
+    {
+     "text": "The",
+     "start": 132.049,
+     "end": 132.129
+    },
+    {
+     "text": "freedom",
+     "start": 132.129,
+     "end": 132.269
+    },
+    {
+     "text": "to",
+     "start": 132.269,
+     "end": 132.469
+    },
+    {
+     "text": "fall.",
+     "start": 132.469,
+     "end": 132.689
+    }
+   ]
+  },
+  {
+   "id": "c2b",
+   "text": "And when you can fall you can take risks. And when you can take risks you can win big. That's where most big money comes from.",
+   "start": 133.35447916666666,
+   "end": 138.85447916666666,
+   "words": [
+    {
+     "text": "And",
+     "start": 133.354,
+     "end": 133.734
+    },
+    {
+     "text": "when",
+     "start": 133.734,
+     "end": 133.954
+    },
+    {
+     "text": "you",
+     "start": 133.954,
+     "end": 134.054
+    },
+    {
+     "text": "can",
+     "start": 134.054,
+     "end": 134.174
+    },
+    {
+     "text": "fall",
+     "start": 134.174,
+     "end": 134.394
+    },
+    {
+     "text": "you",
+     "start": 134.714,
+     "end": 134.754
+    },
+    {
+     "text": "can",
+     "start": 134.754,
+     "end": 134.854
+    },
+    {
+     "text": "take",
+     "start": 134.854,
+     "end": 134.994
+    },
+    {
+     "text": "risks.",
+     "start": 134.994,
+     "end": 135.274
+    },
+    {
+     "text": "And",
+     "start": 135.634,
+     "end": 135.754
+    },
+    {
+     "text": "when",
+     "start": 135.754,
+     "end": 136.014
+    },
+    {
+     "text": "you",
+     "start": 136.014,
+     "end": 136.094
+    },
+    {
+     "text": "can",
+     "start": 136.094,
+     "end": 136.194
+    },
+    {
+     "text": "take",
+     "start": 136.194,
+     "end": 136.294
+    },
+    {
+     "text": "risks",
+     "start": 136.294,
+     "end": 136.554
+    },
+    {
+     "text": "you",
+     "start": 136.734,
+     "end": 136.834
+    },
+    {
+     "text": "can",
+     "start": 136.834,
+     "end": 136.934
+    },
+    {
+     "text": "win",
+     "start": 136.934,
+     "end": 137.074
+    },
+    {
+     "text": "big.",
+     "start": 137.074,
+     "end": 137.294
+    },
+    {
+     "text": "That's",
+     "start": 137.574,
+     "end": 137.854
+    },
+    {
+     "text": "where",
+     "start": 137.854,
+     "end": 137.934
+    },
+    {
+     "text": "most",
+     "start": 137.934,
+     "end": 138.074
+    },
+    {
+     "text": "big",
+     "start": 138.074,
+     "end": 138.254
+    },
+    {
+     "text": "money",
+     "start": 138.254,
+     "end": 138.454
+    },
+    {
+     "text": "comes",
+     "start": 138.454,
+     "end": 138.634
+    },
+    {
+     "text": "from.",
+     "start": 138.634,
+     "end": 138.854
+    }
+   ]
+  },
+  {
+   "id": "c2c",
+   "text": "Even buying a first home. In one survey about one in four young buyers got family money or an inheritance to help with the down payment.",
+   "start": 139.417375,
+   "end": 145.737375,
+   "words": [
+    {
+     "text": "Even",
+     "start": 139.417,
+     "end": 139.617
+    },
+    {
+     "text": "buying",
+     "start": 139.617,
+     "end": 139.817
+    },
+    {
+     "text": "a",
+     "start": 139.817,
+     "end": 139.977
+    },
+    {
+     "text": "first",
+     "start": 139.977,
+     "end": 140.137
+    },
+    {
+     "text": "home.",
+     "start": 140.137,
+     "end": 140.377
+    },
+    {
+     "text": "In",
+     "start": 141.057,
+     "end": 141.057
+    },
+    {
+     "text": "one",
+     "start": 141.057,
+     "end": 141.217
+    },
+    {
+     "text": "survey",
+     "start": 141.217,
+     "end": 141.477
+    },
+    {
+     "text": "about",
+     "start": 141.577,
+     "end": 141.817
+    },
+    {
+     "text": "one",
+     "start": 141.817,
+     "end": 142.057
+    },
+    {
+     "text": "in",
+     "start": 142.057,
+     "end": 142.177
+    },
+    {
+     "text": "four",
+     "start": 142.177,
+     "end": 142.377
+    },
+    {
+     "text": "young",
+     "start": 142.377,
+     "end": 142.537
+    },
+    {
+     "text": "buyers",
+     "start": 142.537,
+     "end": 142.877
+    },
+    {
+     "text": "got",
+     "start": 142.877,
+     "end": 143.197
+    },
+    {
+     "text": "family",
+     "start": 143.197,
+     "end": 143.437
+    },
+    {
+     "text": "money",
+     "start": 143.437,
+     "end": 143.797
+    },
+    {
+     "text": "or",
+     "start": 143.797,
+     "end": 144.077
+    },
+    {
+     "text": "an",
+     "start": 144.077,
+     "end": 144.157
+    },
+    {
+     "text": "inheritance",
+     "start": 144.157,
+     "end": 144.437
+    },
+    {
+     "text": "to",
+     "start": 144.437,
+     "end": 144.897
+    },
+    {
+     "text": "help",
+     "start": 144.897,
+     "end": 145.017
+    },
+    {
+     "text": "with",
+     "start": 145.017,
+     "end": 145.197
+    },
+    {
+     "text": "the",
+     "start": 145.197,
+     "end": 145.277
+    },
+    {
+     "text": "down",
+     "start": 145.277,
+     "end": 145.437
+    },
+    {
+     "text": "payment.",
+     "start": 145.437,
+     "end": 145.737
+    }
+   ]
+  },
+  {
+   "id": "n7",
+   "text": "Me finding out my coworker's house was a gift from grandma.",
+   "start": 146.45454166666667,
+   "end": 148.59454166666666,
+   "words": [
+    {
+     "text": "Me",
+     "start": 146.455,
+     "end": 146.575
+    },
+    {
+     "text": "finding",
+     "start": 146.575,
+     "end": 146.815
+    },
+    {
+     "text": "out",
+     "start": 146.815,
+     "end": 147.015
+    },
+    {
+     "text": "my",
+     "start": 147.015,
+     "end": 147.155
+    },
+    {
+     "text": "coworker's",
+     "start": 147.155,
+     "end": 147.635
+    },
+    {
+     "text": "house",
+     "start": 147.635,
+     "end": 147.755
+    },
+    {
+     "text": "was",
+     "start": 147.755,
+     "end": 147.975
+    },
+    {
+     "text": "a",
+     "start": 147.975,
+     "end": 148.055
+    },
+    {
+     "text": "gift",
+     "start": 148.055,
+     "end": 148.195
+    },
+    {
+     "text": "from",
+     "start": 148.195,
+     "end": 148.395
+    },
+    {
+     "text": "grandma.",
+     "start": 148.395,
+     "end": 148.595
+    }
+   ]
+  },
+  {
+   "id": "c2d",
+   "text": "Think about what that does. Chad skips ten years of rent. That money goes into a house. The house grows. And he's thirty with a head start the size of a building.",
+   "start": 149.41377083333333,
+   "end": 156.75377083333333,
+   "words": [
+    {
+     "text": "Think",
+     "start": 149.414,
+     "end": 149.514
+    },
+    {
+     "text": "about",
+     "start": 149.514,
+     "end": 149.674
+    },
+    {
+     "text": "what",
+     "start": 149.674,
+     "end": 149.874
+    },
+    {
+     "text": "that",
+     "start": 149.874,
+     "end": 150.034
+    },
+    {
+     "text": "does.",
+     "start": 150.034,
+     "end": 150.514
+    },
+    {
+     "text": "Chad",
+     "start": 150.814,
+     "end": 150.954
+    },
+    {
+     "text": "skips",
+     "start": 150.954,
+     "end": 151.354
+    },
+    {
+     "text": "ten",
+     "start": 151.354,
+     "end": 151.554
+    },
+    {
+     "text": "years",
+     "start": 151.554,
+     "end": 151.734
+    },
+    {
+     "text": "of",
+     "start": 151.734,
+     "end": 151.894
+    },
+    {
+     "text": "rent.",
+     "start": 151.894,
+     "end": 152.094
+    },
+    {
+     "text": "That",
+     "start": 152.474,
+     "end": 152.534
+    },
+    {
+     "text": "money",
+     "start": 152.534,
+     "end": 152.694
+    },
+    {
+     "text": "goes",
+     "start": 152.694,
+     "end": 152.914
+    },
+    {
+     "text": "into",
+     "start": 152.914,
+     "end": 153.114
+    },
+    {
+     "text": "a",
+     "start": 153.114,
+     "end": 153.254
+    },
+    {
+     "text": "house.",
+     "start": 153.254,
+     "end": 153.494
+    },
+    {
+     "text": "The",
+     "start": 153.814,
+     "end": 153.874
+    },
+    {
+     "text": "house",
+     "start": 153.874,
+     "end": 154.014
+    },
+    {
+     "text": "grows.",
+     "start": 154.014,
+     "end": 154.354
+    },
+    {
+     "text": "And",
+     "start": 154.794,
+     "end": 154.874
+    },
+    {
+     "text": "he's",
+     "start": 154.874,
+     "end": 155.054
+    },
+    {
+     "text": "thirty",
+     "start": 155.054,
+     "end": 155.254
+    },
+    {
+     "text": "with",
+     "start": 155.254,
+     "end": 155.494
+    },
+    {
+     "text": "a",
+     "start": 155.494,
+     "end": 155.554
+    },
+    {
+     "text": "head",
+     "start": 155.554,
+     "end": 155.714
+    },
+    {
+     "text": "start",
+     "start": 155.714,
+     "end": 155.914
+    },
+    {
+     "text": "the",
+     "start": 155.914,
+     "end": 156.114
+    },
+    {
+     "text": "size",
+     "start": 156.114,
+     "end": 156.234
+    },
+    {
+     "text": "of",
+     "start": 156.234,
+     "end": 156.414
+    },
+    {
+     "text": "a",
+     "start": 156.414,
+     "end": 156.474
+    },
+    {
+     "text": "building.",
+     "start": 156.474,
+     "end": 156.754
+    }
+   ]
+  },
+  {
+   "id": "n34",
+   "text": "And if the house roof leaks Chad calls dad. If my roof leaks I call a credit card. Same problem. One costs nothing. The other costs twenty percent a year.",
+   "start": 157.48864583333332,
+   "end": 163.80864583333332,
+   "words": [
+    {
+     "text": "And",
+     "start": 157.489,
+     "end": 157.709
+    },
+    {
+     "text": "if",
+     "start": 157.709,
+     "end": 157.829
+    },
+    {
+     "text": "the",
+     "start": 157.829,
+     "end": 157.889
+    },
+    {
+     "text": "house",
+     "start": 157.889,
+     "end": 158.009
+    },
+    {
+     "text": "roof",
+     "start": 158.009,
+     "end": 158.189
+    },
+    {
+     "text": "leaks",
+     "start": 158.189,
+     "end": 158.369
+    },
+    {
+     "text": "Chad",
+     "start": 158.369,
+     "end": 158.569
+    },
+    {
+     "text": "calls",
+     "start": 158.569,
+     "end": 158.789
+    },
+    {
+     "text": "dad.",
+     "start": 158.789,
+     "end": 158.969
+    },
+    {
+     "text": "If",
+     "start": 159.649,
+     "end": 159.669
+    },
+    {
+     "text": "my",
+     "start": 159.669,
+     "end": 159.789
+    },
+    {
+     "text": "roof",
+     "start": 159.789,
+     "end": 159.949
+    },
+    {
+     "text": "leaks",
+     "start": 159.949,
+     "end": 160.129
+    },
+    {
+     "text": "I",
+     "start": 160.229,
+     "end": 160.349
+    },
+    {
+     "text": "call",
+     "start": 160.349,
+     "end": 160.469
+    },
+    {
+     "text": "a",
+     "start": 160.469,
+     "end": 160.549
+    },
+    {
+     "text": "credit",
+     "start": 160.549,
+     "end": 160.669
+    },
+    {
+     "text": "card.",
+     "start": 160.669,
+     "end": 160.889
+    },
+    {
+     "text": "Same",
+     "start": 161.349,
+     "end": 161.389
+    },
+    {
+     "text": "problem.",
+     "start": 161.389,
+     "end": 161.609
+    },
+    {
+     "text": "One",
+     "start": 161.989,
+     "end": 162.069
+    },
+    {
+     "text": "costs",
+     "start": 162.069,
+     "end": 162.209
+    },
+    {
+     "text": "nothing.",
+     "start": 162.209,
+     "end": 162.509
+    },
+    {
+     "text": "The",
+     "start": 162.829,
+     "end": 162.869
+    },
+    {
+     "text": "other",
+     "start": 162.869,
+     "end": 162.949
+    },
+    {
+     "text": "costs",
+     "start": 162.949,
+     "end": 163.109
+    },
+    {
+     "text": "twenty",
+     "start": 163.109,
+     "end": 163.329
+    },
+    {
+     "text": "percent",
+     "start": 163.329,
+     "end": 163.569
+    },
+    {
+     "text": "a",
+     "start": 163.569,
+     "end": 163.669
+    },
+    {
+     "text": "year.",
+     "start": 163.669,
+     "end": 163.809
+    }
+   ]
+  },
+  {
+   "id": "c2e",
+   "text": "And now the second gift. This one is sneakier. It's who you know.",
+   "start": 164.455375,
+   "end": 168.115375,
+   "words": [
+    {
+     "text": "And",
+     "start": 164.455,
+     "end": 164.555
+    },
+    {
+     "text": "now",
+     "start": 164.555,
+     "end": 164.695
+    },
+    {
+     "text": "the",
+     "start": 164.695,
+     "end": 164.855
+    },
+    {
+     "text": "second",
+     "start": 164.855,
+     "end": 165.135
+    },
+    {
+     "text": "gift.",
+     "start": 165.135,
+     "end": 165.415
+    },
+    {
+     "text": "This",
+     "start": 165.875,
+     "end": 166.035
+    },
+    {
+     "text": "one",
+     "start": 166.035,
+     "end": 166.255
+    },
+    {
+     "text": "is",
+     "start": 166.255,
+     "end": 166.575
+    },
+    {
+     "text": "sneakier.",
+     "start": 166.575,
+     "end": 167.355
+    },
+    {
+     "text": "It's",
+     "start": 167.635,
+     "end": 167.775
+    },
+    {
+     "text": "who",
+     "start": 167.775,
+     "end": 167.835
+    },
+    {
+     "text": "you",
+     "start": 167.835,
+     "end": 167.955
+    },
+    {
+     "text": "know.",
+     "start": 167.955,
+     "end": 168.115
+    }
+   ]
+  },
+  {
+   "id": "c2f",
+   "text": "Chad's first internship? His uncle's friend runs a bank. One phone call. Chad was in. He didn't even apply. He just showed up in a borrowed suit.",
+   "start": 168.63285416666668,
+   "end": 175.39285416666667,
+   "words": [
+    {
+     "text": "Chad's",
+     "start": 168.633,
+     "end": 168.913
+    },
+    {
+     "text": "first",
+     "start": 168.913,
+     "end": 169.053
+    },
+    {
+     "text": "internship?",
+     "start": 169.053,
+     "end": 169.333
+    },
+    {
+     "text": "His",
+     "start": 169.933,
+     "end": 170.013
+    },
+    {
+     "text": "uncle's",
+     "start": 170.013,
+     "end": 170.313
+    },
+    {
+     "text": "friend",
+     "start": 170.313,
+     "end": 170.493
+    },
+    {
+     "text": "runs",
+     "start": 170.493,
+     "end": 170.653
+    },
+    {
+     "text": "a",
+     "start": 170.653,
+     "end": 170.773
+    },
+    {
+     "text": "bank.",
+     "start": 170.773,
+     "end": 170.913
+    },
+    {
+     "text": "One",
+     "start": 171.533,
+     "end": 171.633
+    },
+    {
+     "text": "phone",
+     "start": 171.633,
+     "end": 171.813
+    },
+    {
+     "text": "call.",
+     "start": 171.813,
+     "end": 172.033
+    },
+    {
+     "text": "Chad",
+     "start": 172.493,
+     "end": 172.593
+    },
+    {
+     "text": "was",
+     "start": 172.593,
+     "end": 172.773
+    },
+    {
+     "text": "in.",
+     "start": 172.773,
+     "end": 172.933
+    },
+    {
+     "text": "He",
+     "start": 173.213,
+     "end": 173.253
+    },
+    {
+     "text": "didn't",
+     "start": 173.253,
+     "end": 173.453
+    },
+    {
+     "text": "even",
+     "start": 173.453,
+     "end": 173.573
+    },
+    {
+     "text": "apply.",
+     "start": 173.573,
+     "end": 173.813
+    },
+    {
+     "text": "He",
+     "start": 174.193,
+     "end": 174.293
+    },
+    {
+     "text": "just",
+     "start": 174.293,
+     "end": 174.433
+    },
+    {
+     "text": "showed",
+     "start": 174.433,
+     "end": 174.593
+    },
+    {
+     "text": "up",
+     "start": 174.593,
+     "end": 174.713
+    },
+    {
+     "text": "in",
+     "start": 174.713,
+     "end": 174.853
+    },
+    {
+     "text": "a",
+     "start": 174.853,
+     "end": 174.893
+    },
+    {
+     "text": "borrowed",
+     "start": 174.893,
+     "end": 175.013
+    },
+    {
+     "text": "suit.",
+     "start": 175.013,
+     "end": 175.393
+    }
+   ]
+  },
+  {
+   "id": "n8",
+   "text": "My first internship was at a car wash and my uncle's friend was a guy named Steve who owed my uncle forty dollars.",
+   "start": 176.01933333333332,
+   "end": 180.80133333333333,
+   "words": [
+    {
+     "text": "My",
+     "start": 176.019,
+     "end": 176.132
+    },
+    {
+     "text": "first",
+     "start": 176.145,
+     "end": 176.371
+    },
+    {
+     "text": "internship",
+     "start": 176.396,
+     "end": 176.811
+    },
+    {
+     "text": "was",
+     "start": 176.857,
+     "end": 177.008
+    },
+    {
+     "text": "at",
+     "start": 177.025,
+     "end": 177.138
+    },
+    {
+     "text": "a",
+     "start": 177.151,
+     "end": 177.226
+    },
+    {
+     "text": "car",
+     "start": 177.234,
+     "end": 177.385
+    },
+    {
+     "text": "wash",
+     "start": 177.402,
+     "end": 177.591
+    },
+    {
+     "text": "and",
+     "start": 177.612,
+     "end": 177.763
+    },
+    {
+     "text": "my",
+     "start": 177.779,
+     "end": 177.893
+    },
+    {
+     "text": "uncle's",
+     "start": 177.905,
+     "end": 178.207
+    },
+    {
+     "text": "friend",
+     "start": 178.24,
+     "end": 178.504
+    },
+    {
+     "text": "was",
+     "start": 178.534,
+     "end": 178.685
+    },
+    {
+     "text": "a",
+     "start": 178.701,
+     "end": 178.777
+    },
+    {
+     "text": "guy",
+     "start": 178.785,
+     "end": 178.936
+    },
+    {
+     "text": "named",
+     "start": 178.953,
+     "end": 179.179
+    },
+    {
+     "text": "Steve",
+     "start": 179.204,
+     "end": 179.431
+    },
+    {
+     "text": "who",
+     "start": 179.456,
+     "end": 179.607
+    },
+    {
+     "text": "owed",
+     "start": 179.624,
+     "end": 179.812
+    },
+    {
+     "text": "my",
+     "start": 179.833,
+     "end": 179.946
+    },
+    {
+     "text": "uncle",
+     "start": 179.959,
+     "end": 180.185
+    },
+    {
+     "text": "forty",
+     "start": 180.21,
+     "end": 180.437
+    },
+    {
+     "text": "dollars.",
+     "start": 180.462,
+     "end": 180.801
+    }
+   ]
+  },
+  {
+   "id": "c2g",
+   "text": "And those internships are often unpaid. Which sounds fair until you ask who can afford to work for free all summer. Kids whose parents pay their rent.",
+   "start": 181.8561875,
+   "end": 188.6761875,
+   "words": [
+    {
+     "text": "And",
+     "start": 181.856,
+     "end": 182.116
+    },
+    {
+     "text": "those",
+     "start": 182.116,
+     "end": 182.356
+    },
+    {
+     "text": "internships",
+     "start": 182.356,
+     "end": 182.896
+    },
+    {
+     "text": "are",
+     "start": 182.896,
+     "end": 183.096
+    },
+    {
+     "text": "often",
+     "start": 183.096,
+     "end": 183.316
+    },
+    {
+     "text": "unpaid.",
+     "start": 183.316,
+     "end": 183.556
+    },
+    {
+     "text": "Which",
+     "start": 184.236,
+     "end": 184.296
+    },
+    {
+     "text": "sounds",
+     "start": 184.296,
+     "end": 184.496
+    },
+    {
+     "text": "fair",
+     "start": 184.496,
+     "end": 184.796
+    },
+    {
+     "text": "until",
+     "start": 184.796,
+     "end": 185.076
+    },
+    {
+     "text": "you",
+     "start": 185.076,
+     "end": 185.276
+    },
+    {
+     "text": "ask",
+     "start": 185.276,
+     "end": 185.476
+    },
+    {
+     "text": "who",
+     "start": 185.476,
+     "end": 185.656
+    },
+    {
+     "text": "can",
+     "start": 185.656,
+     "end": 185.736
+    },
+    {
+     "text": "afford",
+     "start": 185.736,
+     "end": 185.976
+    },
+    {
+     "text": "to",
+     "start": 185.976,
+     "end": 186.096
+    },
+    {
+     "text": "work",
+     "start": 186.096,
+     "end": 186.216
+    },
+    {
+     "text": "for",
+     "start": 186.216,
+     "end": 186.356
+    },
+    {
+     "text": "free",
+     "start": 186.356,
+     "end": 186.596
+    },
+    {
+     "text": "all",
+     "start": 186.596,
+     "end": 186.816
+    },
+    {
+     "text": "summer.",
+     "start": 186.816,
+     "end": 187.076
+    },
+    {
+     "text": "Kids",
+     "start": 187.456,
+     "end": 187.636
+    },
+    {
+     "text": "whose",
+     "start": 187.636,
+     "end": 187.836
+    },
+    {
+     "text": "parents",
+     "start": 187.836,
+     "end": 188.156
+    },
+    {
+     "text": "pay",
+     "start": 188.156,
+     "end": 188.316
+    },
+    {
+     "text": "their",
+     "start": 188.316,
+     "end": 188.436
+    },
+    {
+     "text": "rent.",
+     "start": 188.436,
+     "end": 188.676
+    }
+   ]
+  },
+  {
+   "id": "n9",
+   "text": "Unpaid internships explained.",
+   "start": 189.34989583333333,
+   "end": 190.54989583333332,
+   "words": [
+    {
+     "text": "Unpaid",
+     "start": 189.35,
+     "end": 189.63
+    },
+    {
+     "text": "internships",
+     "start": 189.63,
+     "end": 190.23
+    },
+    {
+     "text": "explained.",
+     "start": 190.23,
+     "end": 190.55
+    }
+   ]
+  },
+  {
+   "id": "c2h",
+   "text": "A famous economist named Raj Chetty studied this with billions of real friendships. And he found something wild.",
+   "start": 191.26416666666665,
+   "end": 196.26416666666665,
+   "words": [
+    {
+     "text": "A",
+     "start": 191.264,
+     "end": 191.324
+    },
+    {
+     "text": "famous",
+     "start": 191.324,
+     "end": 191.544
+    },
+    {
+     "text": "economist",
+     "start": 191.544,
+     "end": 191.904
+    },
+    {
+     "text": "named",
+     "start": 191.904,
+     "end": 192.324
+    },
+    {
+     "text": "Raj",
+     "start": 192.324,
+     "end": 192.584
+    },
+    {
+     "text": "Chetty",
+     "start": 192.584,
+     "end": 193.004
+    },
+    {
+     "text": "studied",
+     "start": 193.004,
+     "end": 193.384
+    },
+    {
+     "text": "this",
+     "start": 193.384,
+     "end": 193.584
+    },
+    {
+     "text": "with",
+     "start": 193.584,
+     "end": 193.764
+    },
+    {
+     "text": "billions",
+     "start": 193.764,
+     "end": 193.964
+    },
+    {
+     "text": "of",
+     "start": 193.964,
+     "end": 194.304
+    },
+    {
+     "text": "real",
+     "start": 194.304,
+     "end": 194.464
+    },
+    {
+     "text": "friendships.",
+     "start": 194.464,
+     "end": 194.824
+    },
+    {
+     "text": "And",
+     "start": 195.324,
+     "end": 195.384
+    },
+    {
+     "text": "he",
+     "start": 195.384,
+     "end": 195.464
+    },
+    {
+     "text": "found",
+     "start": 195.464,
+     "end": 195.604
+    },
+    {
+     "text": "something",
+     "start": 195.604,
+     "end": 195.864
+    },
+    {
+     "text": "wild.",
+     "start": 195.864,
+     "end": 196.264
+    }
+   ]
+  },
+  {
+   "id": "c2i",
+   "text": "Poor kids who grow up with friends from richer families earn a lot more later in life. Not because their friends give them money. Because their friends show them what's possible.",
+   "start": 197.0003125,
+   "end": 204.2003125,
+   "words": [
+    {
+     "text": "Poor",
+     "start": 197.0,
+     "end": 197.08
+    },
+    {
+     "text": "kids",
+     "start": 197.08,
+     "end": 197.32
+    },
+    {
+     "text": "who",
+     "start": 197.32,
+     "end": 197.58
+    },
+    {
+     "text": "grow",
+     "start": 197.58,
+     "end": 197.72
+    },
+    {
+     "text": "up",
+     "start": 197.72,
+     "end": 197.9
+    },
+    {
+     "text": "with",
+     "start": 197.9,
+     "end": 198.0
+    },
+    {
+     "text": "friends",
+     "start": 198.0,
+     "end": 198.24
+    },
+    {
+     "text": "from",
+     "start": 198.24,
+     "end": 198.44
+    },
+    {
+     "text": "richer",
+     "start": 198.44,
+     "end": 198.54
+    },
+    {
+     "text": "families",
+     "start": 198.54,
+     "end": 199.02
+    },
+    {
+     "text": "earn",
+     "start": 199.02,
+     "end": 199.34
+    },
+    {
+     "text": "a",
+     "start": 199.34,
+     "end": 199.46
+    },
+    {
+     "text": "lot",
+     "start": 199.46,
+     "end": 199.62
+    },
+    {
+     "text": "more",
+     "start": 199.62,
+     "end": 199.8
+    },
+    {
+     "text": "later",
+     "start": 199.8,
+     "end": 200.04
+    },
+    {
+     "text": "in",
+     "start": 200.04,
+     "end": 200.22
+    },
+    {
+     "text": "life.",
+     "start": 200.22,
+     "end": 200.46
+    },
+    {
+     "text": "Not",
+     "start": 200.88,
+     "end": 201.06
+    },
+    {
+     "text": "because",
+     "start": 201.06,
+     "end": 201.3
+    },
+    {
+     "text": "their",
+     "start": 201.3,
+     "end": 201.5
+    },
+    {
+     "text": "friends",
+     "start": 201.5,
+     "end": 201.72
+    },
+    {
+     "text": "give",
+     "start": 201.72,
+     "end": 201.88
+    },
+    {
+     "text": "them",
+     "start": 201.88,
+     "end": 202.0
+    },
+    {
+     "text": "money.",
+     "start": 202.0,
+     "end": 202.28
+    },
+    {
+     "text": "Because",
+     "start": 202.66,
+     "end": 202.88
+    },
+    {
+     "text": "their",
+     "start": 202.88,
+     "end": 203.08
+    },
+    {
+     "text": "friends",
+     "start": 203.08,
+     "end": 203.36
+    },
+    {
+     "text": "show",
+     "start": 203.36,
+     "end": 203.62
+    },
+    {
+     "text": "them",
+     "start": 203.62,
+     "end": 203.76
+    },
+    {
+     "text": "what's",
+     "start": 203.76,
+     "end": 203.96
+    },
+    {
+     "text": "possible.",
+     "start": 203.96,
+     "end": 204.2
+    }
+   ]
+  },
+  {
+   "id": "n10",
+   "text": "That kid who sees his friend's mom is a lawyer starts thinking maybe I could be a lawyer. That kid who never meets a lawyer never even asks the question.",
+   "start": 205.04610416666668,
+   "end": 211.32610416666668,
+   "words": [
+    {
+     "text": "That",
+     "start": 205.046,
+     "end": 205.146
+    },
+    {
+     "text": "kid",
+     "start": 205.146,
+     "end": 205.346
+    },
+    {
+     "text": "who",
+     "start": 205.346,
+     "end": 205.506
+    },
+    {
+     "text": "sees",
+     "start": 205.506,
+     "end": 205.646
+    },
+    {
+     "text": "his",
+     "start": 205.646,
+     "end": 205.846
+    },
+    {
+     "text": "friend's",
+     "start": 205.846,
+     "end": 206.146
+    },
+    {
+     "text": "mom",
+     "start": 206.146,
+     "end": 206.326
+    },
+    {
+     "text": "is",
+     "start": 206.326,
+     "end": 206.506
+    },
+    {
+     "text": "a",
+     "start": 206.506,
+     "end": 206.546
+    },
+    {
+     "text": "lawyer",
+     "start": 206.546,
+     "end": 206.766
+    },
+    {
+     "text": "starts",
+     "start": 206.766,
+     "end": 207.106
+    },
+    {
+     "text": "thinking",
+     "start": 207.106,
+     "end": 207.386
+    },
+    {
+     "text": "maybe",
+     "start": 207.386,
+     "end": 207.826
+    },
+    {
+     "text": "I",
+     "start": 207.826,
+     "end": 208.026
+    },
+    {
+     "text": "could",
+     "start": 208.026,
+     "end": 208.186
+    },
+    {
+     "text": "be",
+     "start": 208.186,
+     "end": 208.306
+    },
+    {
+     "text": "a",
+     "start": 208.306,
+     "end": 208.366
+    },
+    {
+     "text": "lawyer.",
+     "start": 208.366,
+     "end": 208.566
+    },
+    {
+     "text": "That",
+     "start": 209.186,
+     "end": 209.286
+    },
+    {
+     "text": "kid",
+     "start": 209.286,
+     "end": 209.486
+    },
+    {
+     "text": "who",
+     "start": 209.486,
+     "end": 209.586
+    },
+    {
+     "text": "never",
+     "start": 209.586,
+     "end": 209.706
+    },
+    {
+     "text": "meets",
+     "start": 209.706,
+     "end": 209.906
+    },
+    {
+     "text": "a",
+     "start": 209.906,
+     "end": 210.046
+    },
+    {
+     "text": "lawyer",
+     "start": 210.046,
+     "end": 210.206
+    },
+    {
+     "text": "never",
+     "start": 210.206,
+     "end": 210.446
+    },
+    {
+     "text": "even",
+     "start": 210.446,
+     "end": 210.606
+    },
+    {
+     "text": "asks",
+     "start": 210.606,
+     "end": 210.806
+    },
+    {
+     "text": "the",
+     "start": 210.806,
+     "end": 211.026
+    },
+    {
+     "text": "question.",
+     "start": 211.026,
+     "end": 211.326
+    }
+   ]
+  },
+  {
+   "id": "n35",
+   "text": "Nobody in my family had ever met a banker. Except the one who called about the overdraft.",
+   "start": 212.03375,
+   "end": 215.91375,
+   "words": [
+    {
+     "text": "Nobody",
+     "start": 212.034,
+     "end": 212.274
+    },
+    {
+     "text": "in",
+     "start": 212.274,
+     "end": 212.454
+    },
+    {
+     "text": "my",
+     "start": 212.454,
+     "end": 212.574
+    },
+    {
+     "text": "family",
+     "start": 212.574,
+     "end": 212.854
+    },
+    {
+     "text": "had",
+     "start": 212.854,
+     "end": 213.094
+    },
+    {
+     "text": "ever",
+     "start": 213.094,
+     "end": 213.234
+    },
+    {
+     "text": "met",
+     "start": 213.234,
+     "end": 213.374
+    },
+    {
+     "text": "a",
+     "start": 213.374,
+     "end": 213.454
+    },
+    {
+     "text": "banker.",
+     "start": 213.454,
+     "end": 213.654
+    },
+    {
+     "text": "Except",
+     "start": 214.194,
+     "end": 214.434
+    },
+    {
+     "text": "the",
+     "start": 214.434,
+     "end": 214.634
+    },
+    {
+     "text": "one",
+     "start": 214.634,
+     "end": 214.774
+    },
+    {
+     "text": "who",
+     "start": 214.774,
+     "end": 214.914
+    },
+    {
+     "text": "called",
+     "start": 214.914,
+     "end": 215.074
+    },
+    {
+     "text": "about",
+     "start": 215.074,
+     "end": 215.314
+    },
+    {
+     "text": "the",
+     "start": 215.314,
+     "end": 215.454
+    },
+    {
+     "text": "overdraft.",
+     "start": 215.454,
+     "end": 215.914
+    }
+   ]
+  },
+  {
+   "id": "c2j",
+   "text": "Chetty's team also found that kids from the richest families are about ten times more likely to become inventors than kids from the bottom half. Same talent. Different exposure.",
+   "start": 216.59402083333333,
+   "end": 224.73402083333332,
+   "words": [
+    {
+     "text": "Chetty's",
+     "start": 216.594,
+     "end": 216.854
+    },
+    {
+     "text": "team",
+     "start": 216.854,
+     "end": 217.034
+    },
+    {
+     "text": "also",
+     "start": 217.034,
+     "end": 217.234
+    },
+    {
+     "text": "found",
+     "start": 217.234,
+     "end": 217.694
+    },
+    {
+     "text": "that",
+     "start": 217.694,
+     "end": 217.894
+    },
+    {
+     "text": "kids",
+     "start": 217.894,
+     "end": 218.114
+    },
+    {
+     "text": "from",
+     "start": 218.114,
+     "end": 218.354
+    },
+    {
+     "text": "the",
+     "start": 218.354,
+     "end": 218.494
+    },
+    {
+     "text": "richest",
+     "start": 218.494,
+     "end": 218.674
+    },
+    {
+     "text": "families",
+     "start": 218.674,
+     "end": 219.014
+    },
+    {
+     "text": "are",
+     "start": 219.014,
+     "end": 219.394
+    },
+    {
+     "text": "about",
+     "start": 219.394,
+     "end": 219.534
+    },
+    {
+     "text": "ten",
+     "start": 219.534,
+     "end": 219.814
+    },
+    {
+     "text": "times",
+     "start": 219.814,
+     "end": 220.054
+    },
+    {
+     "text": "more",
+     "start": 220.054,
+     "end": 220.334
+    },
+    {
+     "text": "likely",
+     "start": 220.334,
+     "end": 220.554
+    },
+    {
+     "text": "to",
+     "start": 220.554,
+     "end": 220.814
+    },
+    {
+     "text": "become",
+     "start": 220.814,
+     "end": 221.034
+    },
+    {
+     "text": "inventors",
+     "start": 221.034,
+     "end": 221.614
+    },
+    {
+     "text": "than",
+     "start": 221.614,
+     "end": 221.734
+    },
+    {
+     "text": "kids",
+     "start": 221.734,
+     "end": 221.954
+    },
+    {
+     "text": "from",
+     "start": 221.954,
+     "end": 222.154
+    },
+    {
+     "text": "the",
+     "start": 222.154,
+     "end": 222.254
+    },
+    {
+     "text": "bottom",
+     "start": 222.254,
+     "end": 222.434
+    },
+    {
+     "text": "half.",
+     "start": 222.434,
+     "end": 222.654
+    },
+    {
+     "text": "Same",
+     "start": 223.394,
+     "end": 223.394
+    },
+    {
+     "text": "talent.",
+     "start": 223.394,
+     "end": 223.634
+    },
+    {
+     "text": "Different",
+     "start": 224.434,
+     "end": 224.434
+    },
+    {
+     "text": "exposure.",
+     "start": 224.434,
+     "end": 224.734
+    }
+   ]
+  },
+  {
+   "id": "n11",
+   "text": "They call those missing kids Lost Einsteins. Kids who could have invented something huge but nobody ever showed them how.",
+   "start": 225.545125,
+   "end": 231.38512500000002,
+   "words": [
+    {
+     "text": "They",
+     "start": 225.545,
+     "end": 225.645
+    },
+    {
+     "text": "call",
+     "start": 225.645,
+     "end": 225.805
+    },
+    {
+     "text": "those",
+     "start": 225.805,
+     "end": 225.985
+    },
+    {
+     "text": "missing",
+     "start": 225.985,
+     "end": 226.145
+    },
+    {
+     "text": "kids",
+     "start": 226.145,
+     "end": 226.645
+    },
+    {
+     "text": "Lost",
+     "start": 226.645,
+     "end": 226.925
+    },
+    {
+     "text": "Einsteins.",
+     "start": 226.925,
+     "end": 227.745
+    },
+    {
+     "text": "Kids",
+     "start": 228.345,
+     "end": 228.345
+    },
+    {
+     "text": "who",
+     "start": 228.345,
+     "end": 228.605
+    },
+    {
+     "text": "could",
+     "start": 228.605,
+     "end": 228.905
+    },
+    {
+     "text": "have",
+     "start": 228.905,
+     "end": 228.985
+    },
+    {
+     "text": "invented",
+     "start": 228.985,
+     "end": 229.205
+    },
+    {
+     "text": "something",
+     "start": 229.205,
+     "end": 229.525
+    },
+    {
+     "text": "huge",
+     "start": 229.525,
+     "end": 229.945
+    },
+    {
+     "text": "but",
+     "start": 230.225,
+     "end": 230.285
+    },
+    {
+     "text": "nobody",
+     "start": 230.285,
+     "end": 230.485
+    },
+    {
+     "text": "ever",
+     "start": 230.485,
+     "end": 230.765
+    },
+    {
+     "text": "showed",
+     "start": 230.765,
+     "end": 230.965
+    },
+    {
+     "text": "them",
+     "start": 230.965,
+     "end": 231.145
+    },
+    {
+     "text": "how.",
+     "start": 231.145,
+     "end": 231.385
+    }
+   ]
+  },
+  {
+   "id": "n12",
+   "text": "Somewhere out there is a Lost Einstein who could have cured something and instead he's really good at Fortnite.",
+   "start": 232.20810416666666,
+   "end": 237.10810416666666,
+   "words": [
+    {
+     "text": "Somewhere",
+     "start": 232.208,
+     "end": 232.468
+    },
+    {
+     "text": "out",
+     "start": 232.468,
+     "end": 232.808
+    },
+    {
+     "text": "there",
+     "start": 232.808,
+     "end": 232.968
+    },
+    {
+     "text": "is",
+     "start": 232.968,
+     "end": 233.148
+    },
+    {
+     "text": "a",
+     "start": 233.148,
+     "end": 233.228
+    },
+    {
+     "text": "Lost",
+     "start": 233.228,
+     "end": 233.468
+    },
+    {
+     "text": "Einstein",
+     "start": 233.468,
+     "end": 233.768
+    },
+    {
+     "text": "who",
+     "start": 233.768,
+     "end": 234.248
+    },
+    {
+     "text": "could",
+     "start": 234.248,
+     "end": 234.408
+    },
+    {
+     "text": "have",
+     "start": 234.408,
+     "end": 234.508
+    },
+    {
+     "text": "cured",
+     "start": 234.508,
+     "end": 234.688
+    },
+    {
+     "text": "something",
+     "start": 234.688,
+     "end": 235.068
+    },
+    {
+     "text": "and",
+     "start": 235.068,
+     "end": 235.368
+    },
+    {
+     "text": "instead",
+     "start": 235.368,
+     "end": 235.688
+    },
+    {
+     "text": "he's",
+     "start": 236.108,
+     "end": 236.268
+    },
+    {
+     "text": "really",
+     "start": 236.268,
+     "end": 236.408
+    },
+    {
+     "text": "good",
+     "start": 236.408,
+     "end": 236.648
+    },
+    {
+     "text": "at",
+     "start": 236.648,
+     "end": 236.748
+    },
+    {
+     "text": "Fortnite.",
+     "start": 236.748,
+     "end": 237.108
+    }
+   ]
+  },
+  {
+   "id": "n36",
+   "text": "Me finding out talent is everywhere but chances are not.",
+   "start": 237.59777083333333,
+   "end": 240.07777083333332,
+   "words": [
+    {
+     "text": "Me",
+     "start": 237.598,
+     "end": 237.698
+    },
+    {
+     "text": "finding",
+     "start": 237.698,
+     "end": 237.958
+    },
+    {
+     "text": "out",
+     "start": 237.958,
+     "end": 238.198
+    },
+    {
+     "text": "talent",
+     "start": 238.198,
+     "end": 238.358
+    },
+    {
+     "text": "is",
+     "start": 238.358,
+     "end": 238.698
+    },
+    {
+     "text": "everywhere",
+     "start": 238.698,
+     "end": 239.018
+    },
+    {
+     "text": "but",
+     "start": 239.338,
+     "end": 239.398
+    },
+    {
+     "text": "chances",
+     "start": 239.398,
+     "end": 239.598
+    },
+    {
+     "text": "are",
+     "start": 239.598,
+     "end": 239.878
+    },
+    {
+     "text": "not.",
+     "start": 239.878,
+     "end": 240.078
+    }
+   ]
+  },
+  {
+   "id": "c2k",
+   "text": "And the third gift? This one isn't money and it isn't friends. It's what you hear at the dinner table.",
+   "start": 240.7230625,
+   "end": 245.3830625,
+   "words": [
+    {
+     "text": "And",
+     "start": 240.723,
+     "end": 240.903
+    },
+    {
+     "text": "the",
+     "start": 240.903,
+     "end": 241.043
+    },
+    {
+     "text": "third",
+     "start": 241.043,
+     "end": 241.203
+    },
+    {
+     "text": "gift?",
+     "start": 241.203,
+     "end": 241.423
+    },
+    {
+     "text": "This",
+     "start": 242.103,
+     "end": 242.103
+    },
+    {
+     "text": "one",
+     "start": 242.103,
+     "end": 242.303
+    },
+    {
+     "text": "isn't",
+     "start": 242.303,
+     "end": 242.643
+    },
+    {
+     "text": "money",
+     "start": 242.643,
+     "end": 242.803
+    },
+    {
+     "text": "and",
+     "start": 242.803,
+     "end": 243.103
+    },
+    {
+     "text": "it",
+     "start": 243.103,
+     "end": 243.203
+    },
+    {
+     "text": "isn't",
+     "start": 243.203,
+     "end": 243.483
+    },
+    {
+     "text": "friends.",
+     "start": 243.483,
+     "end": 243.643
+    },
+    {
+     "text": "It's",
+     "start": 244.123,
+     "end": 244.183
+    },
+    {
+     "text": "what",
+     "start": 244.183,
+     "end": 244.303
+    },
+    {
+     "text": "you",
+     "start": 244.303,
+     "end": 244.443
+    },
+    {
+     "text": "hear",
+     "start": 244.443,
+     "end": 244.603
+    },
+    {
+     "text": "at",
+     "start": 244.603,
+     "end": 244.843
+    },
+    {
+     "text": "the",
+     "start": 244.843,
+     "end": 244.923
+    },
+    {
+     "text": "dinner",
+     "start": 244.923,
+     "end": 245.063
+    },
+    {
+     "text": "table.",
+     "start": 245.063,
+     "end": 245.383
+    }
+   ]
+  },
+  {
+   "id": "c2l",
+   "text": "At Chad's dinner table they talked about stocks and rent and interest rates. Chad learned what a stock was before he could ride a bike.",
+   "start": 246.01260416666668,
+   "end": 251.99260416666667,
+   "words": [
+    {
+     "text": "At",
+     "start": 246.013,
+     "end": 246.113
+    },
+    {
+     "text": "Chad's",
+     "start": 246.113,
+     "end": 246.413
+    },
+    {
+     "text": "dinner",
+     "start": 246.413,
+     "end": 246.533
+    },
+    {
+     "text": "table",
+     "start": 246.533,
+     "end": 246.873
+    },
+    {
+     "text": "they",
+     "start": 247.053,
+     "end": 247.093
+    },
+    {
+     "text": "talked",
+     "start": 247.093,
+     "end": 247.253
+    },
+    {
+     "text": "about",
+     "start": 247.253,
+     "end": 247.533
+    },
+    {
+     "text": "stocks",
+     "start": 247.533,
+     "end": 247.793
+    },
+    {
+     "text": "and",
+     "start": 247.793,
+     "end": 248.213
+    },
+    {
+     "text": "rent",
+     "start": 248.213,
+     "end": 248.393
+    },
+    {
+     "text": "and",
+     "start": 248.393,
+     "end": 248.613
+    },
+    {
+     "text": "interest",
+     "start": 248.613,
+     "end": 248.853
+    },
+    {
+     "text": "rates.",
+     "start": 248.853,
+     "end": 249.113
+    },
+    {
+     "text": "Chad",
+     "start": 249.813,
+     "end": 249.833
+    },
+    {
+     "text": "learned",
+     "start": 249.833,
+     "end": 250.153
+    },
+    {
+     "text": "what",
+     "start": 250.153,
+     "end": 250.393
+    },
+    {
+     "text": "a",
+     "start": 250.393,
+     "end": 250.473
+    },
+    {
+     "text": "stock",
+     "start": 250.473,
+     "end": 250.633
+    },
+    {
+     "text": "was",
+     "start": 250.633,
+     "end": 251.013
+    },
+    {
+     "text": "before",
+     "start": 251.013,
+     "end": 251.253
+    },
+    {
+     "text": "he",
+     "start": 251.253,
+     "end": 251.493
+    },
+    {
+     "text": "could",
+     "start": 251.493,
+     "end": 251.593
+    },
+    {
+     "text": "ride",
+     "start": 251.593,
+     "end": 251.733
+    },
+    {
+     "text": "a",
+     "start": 251.733,
+     "end": 251.833
+    },
+    {
+     "text": "bike.",
+     "start": 251.833,
+     "end": 251.993
+    }
+   ]
+  },
+  {
+   "id": "c2m",
+   "text": "At my dinner table we talked about money too. Mostly about how there wasn't any. And when a bill came we didn't open it. We put it on the fridge and stared at it.",
+   "start": 252.58352083333332,
+   "end": 259.5835208333333,
+   "words": [
+    {
+     "text": "At",
+     "start": 252.584,
+     "end": 252.664
+    },
+    {
+     "text": "my",
+     "start": 252.664,
+     "end": 252.744
+    },
+    {
+     "text": "dinner",
+     "start": 252.744,
+     "end": 252.904
+    },
+    {
+     "text": "table",
+     "start": 252.904,
+     "end": 253.224
+    },
+    {
+     "text": "we",
+     "start": 253.224,
+     "end": 253.364
+    },
+    {
+     "text": "talked",
+     "start": 253.364,
+     "end": 253.484
+    },
+    {
+     "text": "about",
+     "start": 253.484,
+     "end": 253.704
+    },
+    {
+     "text": "money",
+     "start": 253.704,
+     "end": 253.884
+    },
+    {
+     "text": "too.",
+     "start": 253.884,
+     "end": 254.144
+    },
+    {
+     "text": "Mostly",
+     "start": 254.704,
+     "end": 254.904
+    },
+    {
+     "text": "about",
+     "start": 254.904,
+     "end": 255.244
+    },
+    {
+     "text": "how",
+     "start": 255.244,
+     "end": 255.444
+    },
+    {
+     "text": "there",
+     "start": 255.444,
+     "end": 255.564
+    },
+    {
+     "text": "wasn't",
+     "start": 255.564,
+     "end": 255.844
+    },
+    {
+     "text": "any.",
+     "start": 255.844,
+     "end": 255.984
+    },
+    {
+     "text": "And",
+     "start": 256.384,
+     "end": 256.504
+    },
+    {
+     "text": "when",
+     "start": 256.504,
+     "end": 256.644
+    },
+    {
+     "text": "a",
+     "start": 256.644,
+     "end": 256.704
+    },
+    {
+     "text": "bill",
+     "start": 256.704,
+     "end": 256.864
+    },
+    {
+     "text": "came",
+     "start": 256.864,
+     "end": 257.084
+    },
+    {
+     "text": "we",
+     "start": 257.084,
+     "end": 257.264
+    },
+    {
+     "text": "didn't",
+     "start": 257.264,
+     "end": 257.504
+    },
+    {
+     "text": "open",
+     "start": 257.504,
+     "end": 257.644
+    },
+    {
+     "text": "it.",
+     "start": 257.644,
+     "end": 257.864
+    },
+    {
+     "text": "We",
+     "start": 258.104,
+     "end": 258.164
+    },
+    {
+     "text": "put",
+     "start": 258.164,
+     "end": 258.324
+    },
+    {
+     "text": "it",
+     "start": 258.324,
+     "end": 258.404
+    },
+    {
+     "text": "on",
+     "start": 258.404,
+     "end": 258.524
+    },
+    {
+     "text": "the",
+     "start": 258.524,
+     "end": 258.604
+    },
+    {
+     "text": "fridge",
+     "start": 258.604,
+     "end": 258.764
+    },
+    {
+     "text": "and",
+     "start": 258.764,
+     "end": 259.004
+    },
+    {
+     "text": "stared",
+     "start": 259.004,
+     "end": 259.184
+    },
+    {
+     "text": "at",
+     "start": 259.184,
+     "end": 259.464
+    },
+    {
+     "text": "it.",
+     "start": 259.464,
+     "end": 259.584
+    }
+   ]
+  },
+  {
+   "id": "n37",
+   "text": "Nobody in my house ever said the word invest. We said the word stretch. As in we have to stretch this until Friday.",
+   "start": 260.04291666666666,
+   "end": 264.9629166666667,
+   "words": [
+    {
+     "text": "Nobody",
+     "start": 260.043,
+     "end": 260.243
+    },
+    {
+     "text": "in",
+     "start": 260.243,
+     "end": 260.403
+    },
+    {
+     "text": "my",
+     "start": 260.403,
+     "end": 260.463
+    },
+    {
+     "text": "house",
+     "start": 260.463,
+     "end": 260.643
+    },
+    {
+     "text": "ever",
+     "start": 260.643,
+     "end": 260.843
+    },
+    {
+     "text": "said",
+     "start": 260.843,
+     "end": 261.063
+    },
+    {
+     "text": "the",
+     "start": 261.063,
+     "end": 261.163
+    },
+    {
+     "text": "word",
+     "start": 261.163,
+     "end": 261.263
+    },
+    {
+     "text": "invest.",
+     "start": 261.263,
+     "end": 261.583
+    },
+    {
+     "text": "We",
+     "start": 262.343,
+     "end": 262.423
+    },
+    {
+     "text": "said",
+     "start": 262.423,
+     "end": 262.543
+    },
+    {
+     "text": "the",
+     "start": 262.543,
+     "end": 262.623
+    },
+    {
+     "text": "word",
+     "start": 262.623,
+     "end": 262.743
+    },
+    {
+     "text": "stretch.",
+     "start": 262.743,
+     "end": 263.043
+    },
+    {
+     "text": "As",
+     "start": 263.563,
+     "end": 263.683
+    },
+    {
+     "text": "in",
+     "start": 263.683,
+     "end": 263.823
+    },
+    {
+     "text": "we",
+     "start": 263.823,
+     "end": 264.003
+    },
+    {
+     "text": "have",
+     "start": 264.003,
+     "end": 264.123
+    },
+    {
+     "text": "to",
+     "start": 264.123,
+     "end": 264.243
+    },
+    {
+     "text": "stretch",
+     "start": 264.243,
+     "end": 264.383
+    },
+    {
+     "text": "this",
+     "start": 264.383,
+     "end": 264.543
+    },
+    {
+     "text": "until",
+     "start": 264.543,
+     "end": 264.683
+    },
+    {
+     "text": "Friday.",
+     "start": 264.683,
+     "end": 264.963
+    }
+   ]
+  },
+  {
+   "id": "n13",
+   "text": "Me learning about investing at thirty from a guy on YouTube.",
+   "start": 265.7155833333333,
+   "end": 268.0355833333333,
+   "words": [
+    {
+     "text": "Me",
+     "start": 265.716,
+     "end": 265.836
+    },
+    {
+     "text": "learning",
+     "start": 265.836,
+     "end": 265.996
+    },
+    {
+     "text": "about",
+     "start": 265.996,
+     "end": 266.276
+    },
+    {
+     "text": "investing",
+     "start": 266.276,
+     "end": 266.536
+    },
+    {
+     "text": "at",
+     "start": 266.536,
+     "end": 266.816
+    },
+    {
+     "text": "thirty",
+     "start": 266.816,
+     "end": 267.016
+    },
+    {
+     "text": "from",
+     "start": 267.016,
+     "end": 267.296
+    },
+    {
+     "text": "a",
+     "start": 267.296,
+     "end": 267.376
+    },
+    {
+     "text": "guy",
+     "start": 267.376,
+     "end": 267.536
+    },
+    {
+     "text": "on",
+     "start": 267.536,
+     "end": 267.696
+    },
+    {
+     "text": "YouTube.",
+     "start": 267.696,
+     "end": 268.036
+    }
+   ]
+  },
+  {
+   "id": "c2n",
+   "text": "So Chad grew up thinking money is a tool. I grew up thinking money is a monster. And you treat a tool very differently than you treat a monster.",
+   "start": 268.76575,
+   "end": 274.80575000000005,
+   "words": [
+    {
+     "text": "So",
+     "start": 268.766,
+     "end": 268.926
+    },
+    {
+     "text": "Chad",
+     "start": 268.926,
+     "end": 269.226
+    },
+    {
+     "text": "grew",
+     "start": 269.226,
+     "end": 269.426
+    },
+    {
+     "text": "up",
+     "start": 269.426,
+     "end": 269.526
+    },
+    {
+     "text": "thinking",
+     "start": 269.526,
+     "end": 269.726
+    },
+    {
+     "text": "money",
+     "start": 269.726,
+     "end": 269.986
+    },
+    {
+     "text": "is",
+     "start": 269.986,
+     "end": 270.226
+    },
+    {
+     "text": "a",
+     "start": 270.226,
+     "end": 270.306
+    },
+    {
+     "text": "tool.",
+     "start": 270.306,
+     "end": 270.526
+    },
+    {
+     "text": "I",
+     "start": 270.946,
+     "end": 271.006
+    },
+    {
+     "text": "grew",
+     "start": 271.006,
+     "end": 271.126
+    },
+    {
+     "text": "up",
+     "start": 271.126,
+     "end": 271.266
+    },
+    {
+     "text": "thinking",
+     "start": 271.266,
+     "end": 271.426
+    },
+    {
+     "text": "money",
+     "start": 271.426,
+     "end": 271.706
+    },
+    {
+     "text": "is",
+     "start": 271.706,
+     "end": 271.946
+    },
+    {
+     "text": "a",
+     "start": 271.946,
+     "end": 272.006
+    },
+    {
+     "text": "monster.",
+     "start": 272.006,
+     "end": 272.346
+    },
+    {
+     "text": "And",
+     "start": 272.726,
+     "end": 272.826
+    },
+    {
+     "text": "you",
+     "start": 272.826,
+     "end": 272.926
+    },
+    {
+     "text": "treat",
+     "start": 272.926,
+     "end": 273.066
+    },
+    {
+     "text": "a",
+     "start": 273.066,
+     "end": 273.166
+    },
+    {
+     "text": "tool",
+     "start": 273.166,
+     "end": 273.306
+    },
+    {
+     "text": "very",
+     "start": 273.306,
+     "end": 273.526
+    },
+    {
+     "text": "differently",
+     "start": 273.526,
+     "end": 273.866
+    },
+    {
+     "text": "than",
+     "start": 273.866,
+     "end": 274.206
+    },
+    {
+     "text": "you",
+     "start": 274.206,
+     "end": 274.286
+    },
+    {
+     "text": "treat",
+     "start": 274.286,
+     "end": 274.406
+    },
+    {
+     "text": "a",
+     "start": 274.406,
+     "end": 274.526
+    },
+    {
+     "text": "monster.",
+     "start": 274.526,
+     "end": 274.806
+    }
+   ]
+  },
+  {
+   "id": "n14",
+   "text": "A tool you use. A monster you hide from. And money you hide from never grows.",
+   "start": 275.5318541666667,
+   "end": 279.5718541666667,
+   "words": [
+    {
+     "text": "A",
+     "start": 275.532,
+     "end": 275.612
+    },
+    {
+     "text": "tool",
+     "start": 275.612,
+     "end": 275.792
+    },
+    {
+     "text": "you",
+     "start": 275.792,
+     "end": 276.012
+    },
+    {
+     "text": "use.",
+     "start": 276.012,
+     "end": 276.452
+    },
+    {
+     "text": "A",
+     "start": 276.792,
+     "end": 276.872
+    },
+    {
+     "text": "monster",
+     "start": 276.872,
+     "end": 277.052
+    },
+    {
+     "text": "you",
+     "start": 277.052,
+     "end": 277.332
+    },
+    {
+     "text": "hide",
+     "start": 277.332,
+     "end": 277.532
+    },
+    {
+     "text": "from.",
+     "start": 277.532,
+     "end": 277.792
+    },
+    {
+     "text": "And",
+     "start": 278.152,
+     "end": 278.232
+    },
+    {
+     "text": "money",
+     "start": 278.232,
+     "end": 278.372
+    },
+    {
+     "text": "you",
+     "start": 278.372,
+     "end": 278.572
+    },
+    {
+     "text": "hide",
+     "start": 278.572,
+     "end": 278.792
+    },
+    {
+     "text": "from",
+     "start": 278.792,
+     "end": 279.012
+    },
+    {
+     "text": "never",
+     "start": 279.012,
+     "end": 279.272
+    },
+    {
+     "text": "grows.",
+     "start": 279.272,
+     "end": 279.572
+    }
+   ]
+  },
+  {
+   "id": "c3a",
+   "text": "And here's why this matters more now than it did for our grandparents.",
+   "start": 282.7273125,
+   "end": 285.2273125,
+   "words": [
+    {
+     "text": "And",
+     "start": 282.727,
+     "end": 282.807
+    },
+    {
+     "text": "here's",
+     "start": 282.807,
+     "end": 283.067
+    },
+    {
+     "text": "why",
+     "start": 283.067,
+     "end": 283.207
+    },
+    {
+     "text": "this",
+     "start": 283.207,
+     "end": 283.367
+    },
+    {
+     "text": "matters",
+     "start": 283.367,
+     "end": 283.647
+    },
+    {
+     "text": "more",
+     "start": 283.647,
+     "end": 283.907
+    },
+    {
+     "text": "now",
+     "start": 283.907,
+     "end": 284.127
+    },
+    {
+     "text": "than",
+     "start": 284.127,
+     "end": 284.367
+    },
+    {
+     "text": "it",
+     "start": 284.367,
+     "end": 284.467
+    },
+    {
+     "text": "did",
+     "start": 284.467,
+     "end": 284.627
+    },
+    {
+     "text": "for",
+     "start": 284.627,
+     "end": 284.767
+    },
+    {
+     "text": "our",
+     "start": 284.767,
+     "end": 284.867
+    },
+    {
+     "text": "grandparents.",
+     "start": 284.867,
+     "end": 285.227
+    }
+   ]
+  },
+  {
+   "id": "c3b",
+   "text": "If you were born in the nineteen forties you had about a ninety percent chance of earning more than your parents. Almost guaranteed.",
+   "start": 286.16795833333333,
+   "end": 291.0239583333333,
+   "words": [
+    {
+     "text": "If",
+     "start": 286.168,
+     "end": 286.267
+    },
+    {
+     "text": "you",
+     "start": 286.279,
+     "end": 286.411
+    },
+    {
+     "text": "were",
+     "start": 286.426,
+     "end": 286.592
+    },
+    {
+     "text": "born",
+     "start": 286.61,
+     "end": 286.776
+    },
+    {
+     "text": "in",
+     "start": 286.794,
+     "end": 286.894
+    },
+    {
+     "text": "the",
+     "start": 286.905,
+     "end": 287.037
+    },
+    {
+     "text": "nineteen",
+     "start": 287.052,
+     "end": 287.351
+    },
+    {
+     "text": "forties",
+     "start": 287.384,
+     "end": 287.649
+    },
+    {
+     "text": "you",
+     "start": 287.679,
+     "end": 287.811
+    },
+    {
+     "text": "had",
+     "start": 287.826,
+     "end": 287.959
+    },
+    {
+     "text": "about",
+     "start": 287.973,
+     "end": 288.172
+    },
+    {
+     "text": "a",
+     "start": 288.194,
+     "end": 288.261
+    },
+    {
+     "text": "ninety",
+     "start": 288.268,
+     "end": 288.5
+    },
+    {
+     "text": "percent",
+     "start": 288.526,
+     "end": 288.791
+    },
+    {
+     "text": "chance",
+     "start": 288.821,
+     "end": 289.053
+    },
+    {
+     "text": "of",
+     "start": 289.079,
+     "end": 289.178
+    },
+    {
+     "text": "earning",
+     "start": 289.189,
+     "end": 289.454
+    },
+    {
+     "text": "more",
+     "start": 289.484,
+     "end": 289.65
+    },
+    {
+     "text": "than",
+     "start": 289.668,
+     "end": 289.834
+    },
+    {
+     "text": "your",
+     "start": 289.852,
+     "end": 290.018
+    },
+    {
+     "text": "parents.",
+     "start": 290.036,
+     "end": 290.335
+    },
+    {
+     "text": "Almost",
+     "start": 290.368,
+     "end": 290.6
+    },
+    {
+     "text": "guaranteed.",
+     "start": 290.626,
+     "end": 291.024
+    }
+   ]
+  },
+  {
+   "id": "c3c",
+   "text": "If you were born in the eighties? About fifty percent. A coin flip. Flip a coin and find out if you'll do better than your mom.",
+   "start": 291.90975,
+   "end": 297.46774999999997,
+   "words": [
+    {
+     "text": "If",
+     "start": 291.91,
+     "end": 292.028
+    },
+    {
+     "text": "you",
+     "start": 292.041,
+     "end": 292.198
+    },
+    {
+     "text": "were",
+     "start": 292.215,
+     "end": 292.411
+    },
+    {
+     "text": "born",
+     "start": 292.433,
+     "end": 292.629
+    },
+    {
+     "text": "in",
+     "start": 292.651,
+     "end": 292.769
+    },
+    {
+     "text": "the",
+     "start": 292.782,
+     "end": 292.939
+    },
+    {
+     "text": "eighties?",
+     "start": 292.956,
+     "end": 293.349
+    },
+    {
+     "text": "About",
+     "start": 293.392,
+     "end": 293.628
+    },
+    {
+     "text": "fifty",
+     "start": 293.654,
+     "end": 293.889
+    },
+    {
+     "text": "percent.",
+     "start": 293.915,
+     "end": 294.268
+    },
+    {
+     "text": "A",
+     "start": 294.308,
+     "end": 294.386
+    },
+    {
+     "text": "coin",
+     "start": 294.395,
+     "end": 294.591
+    },
+    {
+     "text": "flip.",
+     "start": 294.613,
+     "end": 294.848
+    },
+    {
+     "text": "Flip",
+     "start": 294.874,
+     "end": 295.071
+    },
+    {
+     "text": "a",
+     "start": 295.092,
+     "end": 295.171
+    },
+    {
+     "text": "coin",
+     "start": 295.18,
+     "end": 295.376
+    },
+    {
+     "text": "and",
+     "start": 295.398,
+     "end": 295.554
+    },
+    {
+     "text": "find",
+     "start": 295.572,
+     "end": 295.768
+    },
+    {
+     "text": "out",
+     "start": 295.79,
+     "end": 295.947
+    },
+    {
+     "text": "if",
+     "start": 295.964,
+     "end": 296.082
+    },
+    {
+     "text": "you'll",
+     "start": 296.095,
+     "end": 296.37
+    },
+    {
+     "text": "do",
+     "start": 296.4,
+     "end": 296.518
+    },
+    {
+     "text": "better",
+     "start": 296.531,
+     "end": 296.806
+    },
+    {
+     "text": "than",
+     "start": 296.836,
+     "end": 297.032
+    },
+    {
+     "text": "your",
+     "start": 297.054,
+     "end": 297.25
+    },
+    {
+     "text": "mom.",
+     "start": 297.272,
+     "end": 297.468
+    }
+   ]
+  },
+  {
+   "id": "n15",
+   "text": "My future being decided by a coin.",
+   "start": 298.2007708333333,
+   "end": 299.6807708333333,
+   "words": [
+    {
+     "text": "My",
+     "start": 298.201,
+     "end": 298.301
+    },
+    {
+     "text": "future",
+     "start": 298.301,
+     "end": 298.461
+    },
+    {
+     "text": "being",
+     "start": 298.461,
+     "end": 298.741
+    },
+    {
+     "text": "decided",
+     "start": 298.741,
+     "end": 299.041
+    },
+    {
+     "text": "by",
+     "start": 299.041,
+     "end": 299.341
+    },
+    {
+     "text": "a",
+     "start": 299.341,
+     "end": 299.441
+    },
+    {
+     "text": "coin.",
+     "start": 299.441,
+     "end": 299.681
+    }
+   ]
+  },
+  {
+   "id": "c3d",
+   "text": "Because back then a job could carry you all the way. A factory job bought a house. Now houses and stocks grow faster than paychecks. So the people who already own stuff pull ahead.",
+   "start": 300.37452083333335,
+   "end": 309.25452083333334,
+   "words": [
+    {
+     "text": "Because",
+     "start": 300.375,
+     "end": 300.595
+    },
+    {
+     "text": "back",
+     "start": 300.595,
+     "end": 300.855
+    },
+    {
+     "text": "then",
+     "start": 300.855,
+     "end": 301.155
+    },
+    {
+     "text": "a",
+     "start": 301.415,
+     "end": 301.455
+    },
+    {
+     "text": "job",
+     "start": 301.455,
+     "end": 301.615
+    },
+    {
+     "text": "could",
+     "start": 301.615,
+     "end": 301.815
+    },
+    {
+     "text": "carry",
+     "start": 301.815,
+     "end": 302.015
+    },
+    {
+     "text": "you",
+     "start": 302.015,
+     "end": 302.195
+    },
+    {
+     "text": "all",
+     "start": 302.195,
+     "end": 302.335
+    },
+    {
+     "text": "the",
+     "start": 302.335,
+     "end": 302.435
+    },
+    {
+     "text": "way.",
+     "start": 302.435,
+     "end": 302.635
+    },
+    {
+     "text": "A",
+     "start": 303.195,
+     "end": 303.215
+    },
+    {
+     "text": "factory",
+     "start": 303.215,
+     "end": 303.415
+    },
+    {
+     "text": "job",
+     "start": 303.415,
+     "end": 303.795
+    },
+    {
+     "text": "bought",
+     "start": 303.795,
+     "end": 304.015
+    },
+    {
+     "text": "a",
+     "start": 304.015,
+     "end": 304.015
+    },
+    {
+     "text": "house.",
+     "start": 304.015,
+     "end": 304.515
+    },
+    {
+     "text": "Now",
+     "start": 304.995,
+     "end": 305.135
+    },
+    {
+     "text": "houses",
+     "start": 305.135,
+     "end": 305.435
+    },
+    {
+     "text": "and",
+     "start": 305.435,
+     "end": 305.735
+    },
+    {
+     "text": "stocks",
+     "start": 305.735,
+     "end": 305.975
+    },
+    {
+     "text": "grow",
+     "start": 305.975,
+     "end": 306.235
+    },
+    {
+     "text": "faster",
+     "start": 306.235,
+     "end": 306.515
+    },
+    {
+     "text": "than",
+     "start": 306.515,
+     "end": 306.755
+    },
+    {
+     "text": "paychecks.",
+     "start": 306.755,
+     "end": 307.095
+    },
+    {
+     "text": "So",
+     "start": 307.515,
+     "end": 307.575
+    },
+    {
+     "text": "the",
+     "start": 307.575,
+     "end": 307.675
+    },
+    {
+     "text": "people",
+     "start": 307.675,
+     "end": 307.915
+    },
+    {
+     "text": "who",
+     "start": 307.915,
+     "end": 308.075
+    },
+    {
+     "text": "already",
+     "start": 308.075,
+     "end": 308.295
+    },
+    {
+     "text": "own",
+     "start": 308.295,
+     "end": 308.555
+    },
+    {
+     "text": "stuff",
+     "start": 308.555,
+     "end": 308.815
+    },
+    {
+     "text": "pull",
+     "start": 308.815,
+     "end": 309.055
+    },
+    {
+     "text": "ahead.",
+     "start": 309.055,
+     "end": 309.255
+    }
+   ]
+  },
+  {
+   "id": "n38",
+   "text": "Grandpa could buy a house with one salary and a handshake. Today you need two salaries and a miracle and maybe a kidney.",
+   "start": 309.96841666666666,
+   "end": 315.58841666666666,
+   "words": [
+    {
+     "text": "Grandpa",
+     "start": 309.968,
+     "end": 310.208
+    },
+    {
+     "text": "could",
+     "start": 310.208,
+     "end": 310.348
+    },
+    {
+     "text": "buy",
+     "start": 310.348,
+     "end": 310.488
+    },
+    {
+     "text": "a",
+     "start": 310.488,
+     "end": 310.628
+    },
+    {
+     "text": "house",
+     "start": 310.628,
+     "end": 310.808
+    },
+    {
+     "text": "with",
+     "start": 310.808,
+     "end": 311.008
+    },
+    {
+     "text": "one",
+     "start": 311.008,
+     "end": 311.168
+    },
+    {
+     "text": "salary",
+     "start": 311.168,
+     "end": 311.448
+    },
+    {
+     "text": "and",
+     "start": 311.448,
+     "end": 311.788
+    },
+    {
+     "text": "a",
+     "start": 311.788,
+     "end": 311.888
+    },
+    {
+     "text": "handshake.",
+     "start": 311.888,
+     "end": 312.168
+    },
+    {
+     "text": "Today",
+     "start": 312.668,
+     "end": 312.828
+    },
+    {
+     "text": "you",
+     "start": 312.828,
+     "end": 313.028
+    },
+    {
+     "text": "need",
+     "start": 313.028,
+     "end": 313.168
+    },
+    {
+     "text": "two",
+     "start": 313.168,
+     "end": 313.388
+    },
+    {
+     "text": "salaries",
+     "start": 313.388,
+     "end": 313.768
+    },
+    {
+     "text": "and",
+     "start": 313.768,
+     "end": 314.088
+    },
+    {
+     "text": "a",
+     "start": 314.088,
+     "end": 314.148
+    },
+    {
+     "text": "miracle",
+     "start": 314.148,
+     "end": 314.428
+    },
+    {
+     "text": "and",
+     "start": 314.428,
+     "end": 314.868
+    },
+    {
+     "text": "maybe",
+     "start": 314.868,
+     "end": 315.208
+    },
+    {
+     "text": "a",
+     "start": 315.208,
+     "end": 315.388
+    },
+    {
+     "text": "kidney.",
+     "start": 315.388,
+     "end": 315.588
+    }
+   ]
+  },
+  {
+   "id": "c3e",
+   "text": "It's like a staircase where the rich take the escalator. Both are going up. But one is going up a lot faster. And the gap gets bigger every single floor.",
+   "start": 316.36133333333333,
+   "end": 323.40133333333335,
+   "words": [
+    {
+     "text": "It's",
+     "start": 316.361,
+     "end": 316.501
+    },
+    {
+     "text": "like",
+     "start": 316.501,
+     "end": 316.601
+    },
+    {
+     "text": "a",
+     "start": 316.601,
+     "end": 316.701
+    },
+    {
+     "text": "staircase",
+     "start": 316.701,
+     "end": 316.941
+    },
+    {
+     "text": "where",
+     "start": 316.941,
+     "end": 317.361
+    },
+    {
+     "text": "the",
+     "start": 317.361,
+     "end": 317.441
+    },
+    {
+     "text": "rich",
+     "start": 317.441,
+     "end": 317.581
+    },
+    {
+     "text": "take",
+     "start": 317.581,
+     "end": 317.741
+    },
+    {
+     "text": "the",
+     "start": 317.741,
+     "end": 317.881
+    },
+    {
+     "text": "escalator.",
+     "start": 317.881,
+     "end": 318.341
+    },
+    {
+     "text": "Both",
+     "start": 318.641,
+     "end": 318.741
+    },
+    {
+     "text": "are",
+     "start": 318.741,
+     "end": 318.861
+    },
+    {
+     "text": "going",
+     "start": 318.861,
+     "end": 319.041
+    },
+    {
+     "text": "up.",
+     "start": 319.041,
+     "end": 319.281
+    },
+    {
+     "text": "But",
+     "start": 319.481,
+     "end": 319.841
+    },
+    {
+     "text": "one",
+     "start": 319.841,
+     "end": 320.001
+    },
+    {
+     "text": "is",
+     "start": 320.001,
+     "end": 320.181
+    },
+    {
+     "text": "going",
+     "start": 320.181,
+     "end": 320.381
+    },
+    {
+     "text": "up",
+     "start": 320.381,
+     "end": 320.581
+    },
+    {
+     "text": "a",
+     "start": 320.581,
+     "end": 320.721
+    },
+    {
+     "text": "lot",
+     "start": 320.721,
+     "end": 320.901
+    },
+    {
+     "text": "faster.",
+     "start": 320.901,
+     "end": 321.201
+    },
+    {
+     "text": "And",
+     "start": 321.821,
+     "end": 321.921
+    },
+    {
+     "text": "the",
+     "start": 321.921,
+     "end": 321.981
+    },
+    {
+     "text": "gap",
+     "start": 321.981,
+     "end": 322.141
+    },
+    {
+     "text": "gets",
+     "start": 322.141,
+     "end": 322.381
+    },
+    {
+     "text": "bigger",
+     "start": 322.381,
+     "end": 322.601
+    },
+    {
+     "text": "every",
+     "start": 322.601,
+     "end": 322.841
+    },
+    {
+     "text": "single",
+     "start": 322.841,
+     "end": 323.081
+    },
+    {
+     "text": "floor.",
+     "start": 323.081,
+     "end": 323.401
+    }
+   ]
+  },
+  {
+   "id": "n16",
+   "text": "Me on the stairs waving at Chad on the escalator.",
+   "start": 324.11414583333334,
+   "end": 326.23414583333334,
+   "words": [
+    {
+     "text": "Me",
+     "start": 324.114,
+     "end": 324.234
+    },
+    {
+     "text": "on",
+     "start": 324.234,
+     "end": 324.374
+    },
+    {
+     "text": "the",
+     "start": 324.374,
+     "end": 324.494
+    },
+    {
+     "text": "stairs",
+     "start": 324.494,
+     "end": 324.674
+    },
+    {
+     "text": "waving",
+     "start": 324.954,
+     "end": 325.094
+    },
+    {
+     "text": "at",
+     "start": 325.094,
+     "end": 325.254
+    },
+    {
+     "text": "Chad",
+     "start": 325.254,
+     "end": 325.434
+    },
+    {
+     "text": "on",
+     "start": 325.434,
+     "end": 325.634
+    },
+    {
+     "text": "the",
+     "start": 325.634,
+     "end": 325.734
+    },
+    {
+     "text": "escalator.",
+     "start": 325.734,
+     "end": 326.234
+    }
+   ]
+  },
+  {
+   "id": "c3f",
+   "text": "And then the kids of those kids start even further ahead. Chad's kid will get a garage. And a loan. And an uncle with a phone. That's how it stacks.",
+   "start": 326.8221875,
+   "end": 333.9221875,
+   "words": [
+    {
+     "text": "And",
+     "start": 326.822,
+     "end": 326.922
+    },
+    {
+     "text": "then",
+     "start": 326.922,
+     "end": 327.042
+    },
+    {
+     "text": "the",
+     "start": 327.042,
+     "end": 327.142
+    },
+    {
+     "text": "kids",
+     "start": 327.142,
+     "end": 327.362
+    },
+    {
+     "text": "of",
+     "start": 327.362,
+     "end": 327.502
+    },
+    {
+     "text": "those",
+     "start": 327.502,
+     "end": 327.642
+    },
+    {
+     "text": "kids",
+     "start": 327.642,
+     "end": 327.842
+    },
+    {
+     "text": "start",
+     "start": 327.842,
+     "end": 328.082
+    },
+    {
+     "text": "even",
+     "start": 328.082,
+     "end": 328.282
+    },
+    {
+     "text": "further",
+     "start": 328.282,
+     "end": 328.462
+    },
+    {
+     "text": "ahead.",
+     "start": 328.462,
+     "end": 328.822
+    },
+    {
+     "text": "Chad's",
+     "start": 329.622,
+     "end": 329.742
+    },
+    {
+     "text": "kid",
+     "start": 329.742,
+     "end": 329.902
+    },
+    {
+     "text": "will",
+     "start": 329.902,
+     "end": 330.022
+    },
+    {
+     "text": "get",
+     "start": 330.022,
+     "end": 330.142
+    },
+    {
+     "text": "a",
+     "start": 330.142,
+     "end": 330.182
+    },
+    {
+     "text": "garage.",
+     "start": 330.182,
+     "end": 330.502
+    },
+    {
+     "text": "And",
+     "start": 331.042,
+     "end": 331.102
+    },
+    {
+     "text": "a",
+     "start": 331.102,
+     "end": 331.202
+    },
+    {
+     "text": "loan.",
+     "start": 331.202,
+     "end": 331.462
+    },
+    {
+     "text": "And",
+     "start": 331.882,
+     "end": 331.982
+    },
+    {
+     "text": "an",
+     "start": 331.982,
+     "end": 332.082
+    },
+    {
+     "text": "uncle",
+     "start": 332.082,
+     "end": 332.262
+    },
+    {
+     "text": "with",
+     "start": 332.262,
+     "end": 332.442
+    },
+    {
+     "text": "a",
+     "start": 332.442,
+     "end": 332.502
+    },
+    {
+     "text": "phone.",
+     "start": 332.502,
+     "end": 332.822
+    },
+    {
+     "text": "That's",
+     "start": 333.202,
+     "end": 333.482
+    },
+    {
+     "text": "how",
+     "start": 333.482,
+     "end": 333.602
+    },
+    {
+     "text": "it",
+     "start": 333.602,
+     "end": 333.702
+    },
+    {
+     "text": "stacks.",
+     "start": 333.702,
+     "end": 333.922
+    }
+   ]
+  },
+  {
+   "id": "c3g",
+   "text": "Now to be fair rich kids lose it too. There's an old saying. Shirtsleeves to shirtsleeves in three generations. Grandpa builds it. Dad grows it. And the grandkid spends it all on a boat.",
+   "start": 334.7885625,
+   "end": 343.3015625,
+   "words": [
+    {
+     "text": "Now",
+     "start": 334.789,
+     "end": 334.953
+    },
+    {
+     "text": "to",
+     "start": 334.972,
+     "end": 335.095
+    },
+    {
+     "text": "be",
+     "start": 335.109,
+     "end": 335.232
+    },
+    {
+     "text": "fair",
+     "start": 335.246,
+     "end": 335.451
+    },
+    {
+     "text": "rich",
+     "start": 335.474,
+     "end": 335.68
+    },
+    {
+     "text": "kids",
+     "start": 335.702,
+     "end": 335.908
+    },
+    {
+     "text": "lose",
+     "start": 335.931,
+     "end": 336.136
+    },
+    {
+     "text": "it",
+     "start": 336.159,
+     "end": 336.282
+    },
+    {
+     "text": "too.",
+     "start": 336.296,
+     "end": 336.502
+    },
+    {
+     "text": "There's",
+     "start": 336.524,
+     "end": 336.853
+    },
+    {
+     "text": "an",
+     "start": 336.89,
+     "end": 337.013
+    },
+    {
+     "text": "old",
+     "start": 337.027,
+     "end": 337.191
+    },
+    {
+     "text": "saying.",
+     "start": 337.209,
+     "end": 337.538
+    },
+    {
+     "text": "Shirtsleeves",
+     "start": 337.575,
+     "end": 338.109
+    },
+    {
+     "text": "to",
+     "start": 338.168,
+     "end": 338.292
+    },
+    {
+     "text": "shirtsleeves",
+     "start": 338.305,
+     "end": 338.84
+    },
+    {
+     "text": "in",
+     "start": 338.899,
+     "end": 339.022
+    },
+    {
+     "text": "three",
+     "start": 339.036,
+     "end": 339.283
+    },
+    {
+     "text": "generations.",
+     "start": 339.31,
+     "end": 339.844
+    },
+    {
+     "text": "Grandpa",
+     "start": 339.904,
+     "end": 340.233
+    },
+    {
+     "text": "builds",
+     "start": 340.269,
+     "end": 340.557
+    },
+    {
+     "text": "it.",
+     "start": 340.589,
+     "end": 340.753
+    },
+    {
+     "text": "Dad",
+     "start": 340.772,
+     "end": 340.936
+    },
+    {
+     "text": "grows",
+     "start": 340.954,
+     "end": 341.201
+    },
+    {
+     "text": "it.",
+     "start": 341.228,
+     "end": 341.393
+    },
+    {
+     "text": "And",
+     "start": 341.411,
+     "end": 341.575
+    },
+    {
+     "text": "the",
+     "start": 341.594,
+     "end": 341.758
+    },
+    {
+     "text": "grandkid",
+     "start": 341.776,
+     "end": 342.146
+    },
+    {
+     "text": "spends",
+     "start": 342.187,
+     "end": 342.475
+    },
+    {
+     "text": "it",
+     "start": 342.507,
+     "end": 342.63
+    },
+    {
+     "text": "all",
+     "start": 342.644,
+     "end": 342.808
+    },
+    {
+     "text": "on",
+     "start": 342.827,
+     "end": 342.95
+    },
+    {
+     "text": "a",
+     "start": 342.964,
+     "end": 343.046
+    },
+    {
+     "text": "boat.",
+     "start": 343.055,
+     "end": 343.302
+    }
+   ]
+  },
+  {
+   "id": "n17",
+   "text": "So the money alone doesn't keep a family rich. The habits do. The net and the phone numbers and the dinner table. Lose those and the money leaks out.",
+   "start": 343.90045833333335,
+   "end": 350.42045833333333,
+   "words": [
+    {
+     "text": "So",
+     "start": 343.9,
+     "end": 344.08
+    },
+    {
+     "text": "the",
+     "start": 344.3,
+     "end": 344.34
+    },
+    {
+     "text": "money",
+     "start": 344.34,
+     "end": 344.48
+    },
+    {
+     "text": "alone",
+     "start": 344.48,
+     "end": 344.74
+    },
+    {
+     "text": "doesn't",
+     "start": 344.74,
+     "end": 345.08
+    },
+    {
+     "text": "keep",
+     "start": 345.08,
+     "end": 345.22
+    },
+    {
+     "text": "a",
+     "start": 345.22,
+     "end": 345.32
+    },
+    {
+     "text": "family",
+     "start": 345.32,
+     "end": 345.54
+    },
+    {
+     "text": "rich.",
+     "start": 345.54,
+     "end": 345.88
+    },
+    {
+     "text": "The",
+     "start": 346.24,
+     "end": 346.28
+    },
+    {
+     "text": "habits",
+     "start": 346.28,
+     "end": 346.46
+    },
+    {
+     "text": "do.",
+     "start": 346.46,
+     "end": 346.78
+    },
+    {
+     "text": "The",
+     "start": 347.12,
+     "end": 347.18
+    },
+    {
+     "text": "net",
+     "start": 347.18,
+     "end": 347.32
+    },
+    {
+     "text": "and",
+     "start": 347.32,
+     "end": 347.5
+    },
+    {
+     "text": "the",
+     "start": 347.5,
+     "end": 347.58
+    },
+    {
+     "text": "phone",
+     "start": 347.58,
+     "end": 347.7
+    },
+    {
+     "text": "numbers",
+     "start": 347.7,
+     "end": 347.96
+    },
+    {
+     "text": "and",
+     "start": 347.96,
+     "end": 348.12
+    },
+    {
+     "text": "the",
+     "start": 348.12,
+     "end": 348.2
+    },
+    {
+     "text": "dinner",
+     "start": 348.2,
+     "end": 348.34
+    },
+    {
+     "text": "table.",
+     "start": 348.34,
+     "end": 348.68
+    },
+    {
+     "text": "Lose",
+     "start": 349.08,
+     "end": 349.24
+    },
+    {
+     "text": "those",
+     "start": 349.24,
+     "end": 349.48
+    },
+    {
+     "text": "and",
+     "start": 349.48,
+     "end": 349.74
+    },
+    {
+     "text": "the",
+     "start": 349.74,
+     "end": 349.82
+    },
+    {
+     "text": "money",
+     "start": 349.82,
+     "end": 349.96
+    },
+    {
+     "text": "leaks",
+     "start": 349.96,
+     "end": 350.16
+    },
+    {
+     "text": "out.",
+     "start": 350.16,
+     "end": 350.42
+    }
+   ]
+  },
+  {
+   "id": "n39",
+   "text": "Lottery winners prove it. Some of them win millions and go broke in a few years. Money without the habits is a bucket with a hole in it.",
+   "start": 351.0120625,
+   "end": 357.0740625,
+   "words": [
+    {
+     "text": "Lottery",
+     "start": 351.012,
+     "end": 351.332
+    },
+    {
+     "text": "winners",
+     "start": 351.367,
+     "end": 351.687
+    },
+    {
+     "text": "prove",
+     "start": 351.722,
+     "end": 351.962
+    },
+    {
+     "text": "it.",
+     "start": 351.988,
+     "end": 352.148
+    },
+    {
+     "text": "Some",
+     "start": 352.166,
+     "end": 352.366
+    },
+    {
+     "text": "of",
+     "start": 352.388,
+     "end": 352.508
+    },
+    {
+     "text": "them",
+     "start": 352.521,
+     "end": 352.721
+    },
+    {
+     "text": "win",
+     "start": 352.743,
+     "end": 352.903
+    },
+    {
+     "text": "millions",
+     "start": 352.92,
+     "end": 353.28
+    },
+    {
+     "text": "and",
+     "start": 353.32,
+     "end": 353.48
+    },
+    {
+     "text": "go",
+     "start": 353.497,
+     "end": 353.617
+    },
+    {
+     "text": "broke",
+     "start": 353.63,
+     "end": 353.87
+    },
+    {
+     "text": "in",
+     "start": 353.897,
+     "end": 354.016
+    },
+    {
+     "text": "a",
+     "start": 354.03,
+     "end": 354.11
+    },
+    {
+     "text": "few",
+     "start": 354.119,
+     "end": 354.278
+    },
+    {
+     "text": "years.",
+     "start": 354.296,
+     "end": 354.576
+    },
+    {
+     "text": "Money",
+     "start": 354.607,
+     "end": 354.846
+    },
+    {
+     "text": "without",
+     "start": 354.873,
+     "end": 355.193
+    },
+    {
+     "text": "the",
+     "start": 355.228,
+     "end": 355.388
+    },
+    {
+     "text": "habits",
+     "start": 355.406,
+     "end": 355.685
+    },
+    {
+     "text": "is",
+     "start": 355.716,
+     "end": 355.836
+    },
+    {
+     "text": "a",
+     "start": 355.849,
+     "end": 355.929
+    },
+    {
+     "text": "bucket",
+     "start": 355.938,
+     "end": 356.218
+    },
+    {
+     "text": "with",
+     "start": 356.249,
+     "end": 356.448
+    },
+    {
+     "text": "a",
+     "start": 356.471,
+     "end": 356.551
+    },
+    {
+     "text": "hole",
+     "start": 356.559,
+     "end": 356.759
+    },
+    {
+     "text": "in",
+     "start": 356.781,
+     "end": 356.901
+    },
+    {
+     "text": "it.",
+     "start": 356.914,
+     "end": 357.074
+    }
+   ]
+  },
+  {
+   "id": "c3h",
+   "text": "Which is actually the best news in this whole video. Because habits are the one thing nobody can stop you from building.",
+   "start": 357.7042083333333,
+   "end": 362.56420833333334,
+   "words": [
+    {
+     "text": "Which",
+     "start": 357.704,
+     "end": 357.824
+    },
+    {
+     "text": "is",
+     "start": 357.824,
+     "end": 357.924
+    },
+    {
+     "text": "actually",
+     "start": 357.924,
+     "end": 358.184
+    },
+    {
+     "text": "the",
+     "start": 358.184,
+     "end": 358.384
+    },
+    {
+     "text": "best",
+     "start": 358.384,
+     "end": 358.544
+    },
+    {
+     "text": "news",
+     "start": 358.544,
+     "end": 358.764
+    },
+    {
+     "text": "in",
+     "start": 358.764,
+     "end": 358.984
+    },
+    {
+     "text": "this",
+     "start": 358.984,
+     "end": 359.084
+    },
+    {
+     "text": "whole",
+     "start": 359.084,
+     "end": 359.244
+    },
+    {
+     "text": "video.",
+     "start": 359.244,
+     "end": 359.524
+    },
+    {
+     "text": "Because",
+     "start": 360.284,
+     "end": 360.284
+    },
+    {
+     "text": "habits",
+     "start": 360.284,
+     "end": 360.504
+    },
+    {
+     "text": "are",
+     "start": 360.504,
+     "end": 360.824
+    },
+    {
+     "text": "the",
+     "start": 360.824,
+     "end": 360.944
+    },
+    {
+     "text": "one",
+     "start": 360.944,
+     "end": 361.084
+    },
+    {
+     "text": "thing",
+     "start": 361.084,
+     "end": 361.244
+    },
+    {
+     "text": "nobody",
+     "start": 361.244,
+     "end": 361.504
+    },
+    {
+     "text": "can",
+     "start": 361.504,
+     "end": 361.784
+    },
+    {
+     "text": "stop",
+     "start": 361.784,
+     "end": 361.984
+    },
+    {
+     "text": "you",
+     "start": 361.984,
+     "end": 362.124
+    },
+    {
+     "text": "from",
+     "start": 362.124,
+     "end": 362.264
+    },
+    {
+     "text": "building.",
+     "start": 362.264,
+     "end": 362.564
+    }
+   ]
+  },
+  {
+   "id": "n18",
+   "text": "Me realizing I can be the grandpa in this story.",
+   "start": 363.22514583333333,
+   "end": 365.26514583333335,
+   "words": [
+    {
+     "text": "Me",
+     "start": 363.225,
+     "end": 363.325
+    },
+    {
+     "text": "realizing",
+     "start": 363.325,
+     "end": 363.625
+    },
+    {
+     "text": "I",
+     "start": 363.625,
+     "end": 364.045
+    },
+    {
+     "text": "can",
+     "start": 364.045,
+     "end": 364.165
+    },
+    {
+     "text": "be",
+     "start": 364.165,
+     "end": 364.265
+    },
+    {
+     "text": "the",
+     "start": 364.265,
+     "end": 364.365
+    },
+    {
+     "text": "grandpa",
+     "start": 364.365,
+     "end": 364.705
+    },
+    {
+     "text": "in",
+     "start": 364.705,
+     "end": 364.865
+    },
+    {
+     "text": "this",
+     "start": 364.865,
+     "end": 364.965
+    },
+    {
+     "text": "story.",
+     "start": 364.965,
+     "end": 365.265
+    }
+   ]
+  },
+  {
+   "id": "c4a",
+   "text": "So how do you start the chain yourself? Quick reminder this is education and not advice.",
+   "start": 368.11960416666665,
+   "end": 372.43960416666664,
+   "words": [
+    {
+     "text": "So",
+     "start": 368.12,
+     "end": 368.38
+    },
+    {
+     "text": "how",
+     "start": 368.7,
+     "end": 368.78
+    },
+    {
+     "text": "do",
+     "start": 368.78,
+     "end": 368.86
+    },
+    {
+     "text": "you",
+     "start": 368.86,
+     "end": 368.94
+    },
+    {
+     "text": "start",
+     "start": 368.94,
+     "end": 369.08
+    },
+    {
+     "text": "the",
+     "start": 369.08,
+     "end": 369.24
+    },
+    {
+     "text": "chain",
+     "start": 369.24,
+     "end": 369.4
+    },
+    {
+     "text": "yourself?",
+     "start": 369.4,
+     "end": 369.68
+    },
+    {
+     "text": "Quick",
+     "start": 370.14,
+     "end": 370.22
+    },
+    {
+     "text": "reminder",
+     "start": 370.22,
+     "end": 370.5
+    },
+    {
+     "text": "this",
+     "start": 370.98,
+     "end": 371.06
+    },
+    {
+     "text": "is",
+     "start": 371.06,
+     "end": 371.16
+    },
+    {
+     "text": "education",
+     "start": 371.16,
+     "end": 371.46
+    },
+    {
+     "text": "and",
+     "start": 371.46,
+     "end": 372.02
+    },
+    {
+     "text": "not",
+     "start": 372.02,
+     "end": 372.2
+    },
+    {
+     "text": "advice.",
+     "start": 372.2,
+     "end": 372.44
+    }
+   ]
+  },
+  {
+   "id": "c4b",
+   "text": "First. Build your own small net. A little emergency fund. Even a few hundred dollars. Because a net is what lets you take a smart risk instead of panicking.",
+   "start": 373.3115625,
+   "end": 379.9715625,
+   "words": [
+    {
+     "text": "First.",
+     "start": 373.312,
+     "end": 373.512
+    },
+    {
+     "text": "Build",
+     "start": 373.712,
+     "end": 373.932
+    },
+    {
+     "text": "your",
+     "start": 373.932,
+     "end": 374.072
+    },
+    {
+     "text": "own",
+     "start": 374.072,
+     "end": 374.272
+    },
+    {
+     "text": "small",
+     "start": 374.272,
+     "end": 374.472
+    },
+    {
+     "text": "net.",
+     "start": 374.472,
+     "end": 374.712
+    },
+    {
+     "text": "A",
+     "start": 375.032,
+     "end": 375.072
+    },
+    {
+     "text": "little",
+     "start": 375.072,
+     "end": 375.232
+    },
+    {
+     "text": "emergency",
+     "start": 375.232,
+     "end": 375.432
+    },
+    {
+     "text": "fund.",
+     "start": 375.432,
+     "end": 375.872
+    },
+    {
+     "text": "Even",
+     "start": 376.092,
+     "end": 376.272
+    },
+    {
+     "text": "a",
+     "start": 376.272,
+     "end": 376.352
+    },
+    {
+     "text": "few",
+     "start": 376.352,
+     "end": 376.472
+    },
+    {
+     "text": "hundred",
+     "start": 376.472,
+     "end": 376.692
+    },
+    {
+     "text": "dollars.",
+     "start": 376.692,
+     "end": 376.952
+    },
+    {
+     "text": "Because",
+     "start": 377.332,
+     "end": 377.572
+    },
+    {
+     "text": "a",
+     "start": 377.572,
+     "end": 377.692
+    },
+    {
+     "text": "net",
+     "start": 377.692,
+     "end": 377.832
+    },
+    {
+     "text": "is",
+     "start": 377.832,
+     "end": 378.012
+    },
+    {
+     "text": "what",
+     "start": 378.012,
+     "end": 378.112
+    },
+    {
+     "text": "lets",
+     "start": 378.112,
+     "end": 378.312
+    },
+    {
+     "text": "you",
+     "start": 378.312,
+     "end": 378.412
+    },
+    {
+     "text": "take",
+     "start": 378.412,
+     "end": 378.572
+    },
+    {
+     "text": "a",
+     "start": 378.572,
+     "end": 378.672
+    },
+    {
+     "text": "smart",
+     "start": 378.672,
+     "end": 378.812
+    },
+    {
+     "text": "risk",
+     "start": 378.812,
+     "end": 379.152
+    },
+    {
+     "text": "instead",
+     "start": 379.152,
+     "end": 379.412
+    },
+    {
+     "text": "of",
+     "start": 379.412,
+     "end": 379.612
+    },
+    {
+     "text": "panicking.",
+     "start": 379.612,
+     "end": 379.972
+    }
+   ]
+  },
+  {
+   "id": "n40",
+   "text": "Me building my emergency fund one coffee at a time.",
+   "start": 380.5065416666667,
+   "end": 382.7665416666667,
+   "words": [
+    {
+     "text": "Me",
+     "start": 380.507,
+     "end": 380.607
+    },
+    {
+     "text": "building",
+     "start": 380.607,
+     "end": 380.827
+    },
+    {
+     "text": "my",
+     "start": 380.827,
+     "end": 381.027
+    },
+    {
+     "text": "emergency",
+     "start": 381.027,
+     "end": 381.307
+    },
+    {
+     "text": "fund",
+     "start": 381.307,
+     "end": 381.707
+    },
+    {
+     "text": "one",
+     "start": 381.707,
+     "end": 382.027
+    },
+    {
+     "text": "coffee",
+     "start": 382.027,
+     "end": 382.307
+    },
+    {
+     "text": "at",
+     "start": 382.307,
+     "end": 382.487
+    },
+    {
+     "text": "a",
+     "start": 382.487,
+     "end": 382.547
+    },
+    {
+     "text": "time.",
+     "start": 382.547,
+     "end": 382.767
+    }
+   ]
+  },
+  {
+   "id": "n19",
+   "text": "Chad's net was a garage. Yours can start as a jar. Jars count.",
+   "start": 383.35633333333334,
+   "end": 386.71633333333335,
+   "words": [
+    {
+     "text": "Chad's",
+     "start": 383.356,
+     "end": 383.636
+    },
+    {
+     "text": "net",
+     "start": 383.636,
+     "end": 383.776
+    },
+    {
+     "text": "was",
+     "start": 383.776,
+     "end": 383.956
+    },
+    {
+     "text": "a",
+     "start": 383.956,
+     "end": 384.056
+    },
+    {
+     "text": "garage.",
+     "start": 384.056,
+     "end": 384.236
+    },
+    {
+     "text": "Yours",
+     "start": 385.056,
+     "end": 385.056
+    },
+    {
+     "text": "can",
+     "start": 385.056,
+     "end": 385.276
+    },
+    {
+     "text": "start",
+     "start": 385.276,
+     "end": 385.476
+    },
+    {
+     "text": "as",
+     "start": 385.476,
+     "end": 385.676
+    },
+    {
+     "text": "a",
+     "start": 385.676,
+     "end": 385.756
+    },
+    {
+     "text": "jar.",
+     "start": 385.756,
+     "end": 385.916
+    },
+    {
+     "text": "Jars",
+     "start": 386.296,
+     "end": 386.576
+    },
+    {
+     "text": "count.",
+     "start": 386.576,
+     "end": 386.716
+    }
+   ]
+  },
+  {
+   "id": "c4c",
+   "text": "Second. Own something. Not just a paycheck. Even a tiny slice of an index fund. Because owning is the escalator and paychecks are the stairs.",
+   "start": 387.43277083333334,
+   "end": 394.81277083333333,
+   "words": [
+    {
+     "text": "Second.",
+     "start": 387.433,
+     "end": 387.713
+    },
+    {
+     "text": "Own",
+     "start": 388.393,
+     "end": 388.433
+    },
+    {
+     "text": "something.",
+     "start": 388.433,
+     "end": 388.773
+    },
+    {
+     "text": "Not",
+     "start": 389.313,
+     "end": 389.353
+    },
+    {
+     "text": "just",
+     "start": 389.353,
+     "end": 389.553
+    },
+    {
+     "text": "a",
+     "start": 389.553,
+     "end": 389.673
+    },
+    {
+     "text": "paycheck.",
+     "start": 389.673,
+     "end": 389.833
+    },
+    {
+     "text": "Even",
+     "start": 390.453,
+     "end": 390.573
+    },
+    {
+     "text": "a",
+     "start": 390.573,
+     "end": 390.693
+    },
+    {
+     "text": "tiny",
+     "start": 390.693,
+     "end": 390.873
+    },
+    {
+     "text": "slice",
+     "start": 390.873,
+     "end": 391.113
+    },
+    {
+     "text": "of",
+     "start": 391.113,
+     "end": 391.313
+    },
+    {
+     "text": "an",
+     "start": 391.313,
+     "end": 391.373
+    },
+    {
+     "text": "index",
+     "start": 391.373,
+     "end": 391.553
+    },
+    {
+     "text": "fund.",
+     "start": 391.553,
+     "end": 391.873
+    },
+    {
+     "text": "Because",
+     "start": 392.353,
+     "end": 392.633
+    },
+    {
+     "text": "owning",
+     "start": 392.633,
+     "end": 392.873
+    },
+    {
+     "text": "is",
+     "start": 392.873,
+     "end": 393.133
+    },
+    {
+     "text": "the",
+     "start": 393.133,
+     "end": 393.213
+    },
+    {
+     "text": "escalator",
+     "start": 393.213,
+     "end": 393.733
+    },
+    {
+     "text": "and",
+     "start": 393.733,
+     "end": 393.933
+    },
+    {
+     "text": "paychecks",
+     "start": 393.933,
+     "end": 394.293
+    },
+    {
+     "text": "are",
+     "start": 394.293,
+     "end": 394.473
+    },
+    {
+     "text": "the",
+     "start": 394.473,
+     "end": 394.593
+    },
+    {
+     "text": "stairs.",
+     "start": 394.593,
+     "end": 394.813
+    }
+   ]
+  },
+  {
+   "id": "n20",
+   "text": "You don't need Chad's dad. You need to start before you feel ready. Time does the heavy lifting.",
+   "start": 395.6141875,
+   "end": 399.3541875,
+   "words": [
+    {
+     "text": "You",
+     "start": 395.614,
+     "end": 395.694
+    },
+    {
+     "text": "don't",
+     "start": 395.694,
+     "end": 395.874
+    },
+    {
+     "text": "need",
+     "start": 395.874,
+     "end": 395.994
+    },
+    {
+     "text": "Chad's",
+     "start": 395.994,
+     "end": 396.314
+    },
+    {
+     "text": "dad.",
+     "start": 396.314,
+     "end": 396.494
+    },
+    {
+     "text": "You",
+     "start": 397.014,
+     "end": 397.054
+    },
+    {
+     "text": "need",
+     "start": 397.054,
+     "end": 397.154
+    },
+    {
+     "text": "to",
+     "start": 397.154,
+     "end": 397.274
+    },
+    {
+     "text": "start",
+     "start": 397.274,
+     "end": 397.414
+    },
+    {
+     "text": "before",
+     "start": 397.414,
+     "end": 397.574
+    },
+    {
+     "text": "you",
+     "start": 397.574,
+     "end": 397.794
+    },
+    {
+     "text": "feel",
+     "start": 397.794,
+     "end": 397.894
+    },
+    {
+     "text": "ready.",
+     "start": 397.894,
+     "end": 398.174
+    },
+    {
+     "text": "Time",
+     "start": 398.654,
+     "end": 398.654
+    },
+    {
+     "text": "does",
+     "start": 398.654,
+     "end": 398.854
+    },
+    {
+     "text": "the",
+     "start": 398.854,
+     "end": 398.974
+    },
+    {
+     "text": "heavy",
+     "start": 398.974,
+     "end": 399.074
+    },
+    {
+     "text": "lifting.",
+     "start": 399.074,
+     "end": 399.354
+    }
+   ]
+  },
+  {
+   "id": "n41",
+   "text": "If I had started at twenty instead of thirty my tiny monthly money would have had ten more years on the escalator. Ten years is a lot of floors.",
+   "start": 400.0565208333333,
+   "end": 406.7365208333333,
+   "words": [
+    {
+     "text": "If",
+     "start": 400.057,
+     "end": 400.157
+    },
+    {
+     "text": "I",
+     "start": 400.157,
+     "end": 400.277
+    },
+    {
+     "text": "had",
+     "start": 400.277,
+     "end": 400.377
+    },
+    {
+     "text": "started",
+     "start": 400.377,
+     "end": 400.577
+    },
+    {
+     "text": "at",
+     "start": 400.577,
+     "end": 400.777
+    },
+    {
+     "text": "twenty",
+     "start": 400.777,
+     "end": 400.957
+    },
+    {
+     "text": "instead",
+     "start": 400.957,
+     "end": 401.357
+    },
+    {
+     "text": "of",
+     "start": 401.357,
+     "end": 401.497
+    },
+    {
+     "text": "thirty",
+     "start": 401.497,
+     "end": 401.757
+    },
+    {
+     "text": "my",
+     "start": 402.297,
+     "end": 402.337
+    },
+    {
+     "text": "tiny",
+     "start": 402.337,
+     "end": 402.537
+    },
+    {
+     "text": "monthly",
+     "start": 402.537,
+     "end": 402.817
+    },
+    {
+     "text": "money",
+     "start": 402.817,
+     "end": 403.257
+    },
+    {
+     "text": "would",
+     "start": 403.257,
+     "end": 403.417
+    },
+    {
+     "text": "have",
+     "start": 403.417,
+     "end": 403.517
+    },
+    {
+     "text": "had",
+     "start": 403.517,
+     "end": 403.657
+    },
+    {
+     "text": "ten",
+     "start": 403.657,
+     "end": 403.897
+    },
+    {
+     "text": "more",
+     "start": 403.897,
+     "end": 404.057
+    },
+    {
+     "text": "years",
+     "start": 404.057,
+     "end": 404.277
+    },
+    {
+     "text": "on",
+     "start": 404.277,
+     "end": 404.477
+    },
+    {
+     "text": "the",
+     "start": 404.477,
+     "end": 404.557
+    },
+    {
+     "text": "escalator.",
+     "start": 404.557,
+     "end": 405.057
+    },
+    {
+     "text": "Ten",
+     "start": 405.557,
+     "end": 405.717
+    },
+    {
+     "text": "years",
+     "start": 405.717,
+     "end": 405.937
+    },
+    {
+     "text": "is",
+     "start": 405.937,
+     "end": 406.197
+    },
+    {
+     "text": "a",
+     "start": 406.197,
+     "end": 406.257
+    },
+    {
+     "text": "lot",
+     "start": 406.257,
+     "end": 406.437
+    },
+    {
+     "text": "of",
+     "start": 406.437,
+     "end": 406.537
+    },
+    {
+     "text": "floors.",
+     "start": 406.537,
+     "end": 406.737
+    }
+   ]
+  },
+  {
+   "id": "c4d",
+   "text": "Third. Go find your phone numbers. Talk to people who are where you want to be. Ask how they got there. Most people love telling that story. Even Chad.",
+   "start": 407.5858958333333,
+   "end": 413.8458958333333,
+   "words": [
+    {
+     "text": "Third.",
+     "start": 407.586,
+     "end": 407.746
+    },
+    {
+     "text": "Go",
+     "start": 408.126,
+     "end": 408.126
+    },
+    {
+     "text": "find",
+     "start": 408.126,
+     "end": 408.266
+    },
+    {
+     "text": "your",
+     "start": 408.266,
+     "end": 408.386
+    },
+    {
+     "text": "phone",
+     "start": 408.386,
+     "end": 408.506
+    },
+    {
+     "text": "numbers.",
+     "start": 408.506,
+     "end": 408.706
+    },
+    {
+     "text": "Talk",
+     "start": 409.066,
+     "end": 409.146
+    },
+    {
+     "text": "to",
+     "start": 409.146,
+     "end": 409.266
+    },
+    {
+     "text": "people",
+     "start": 409.266,
+     "end": 409.426
+    },
+    {
+     "text": "who",
+     "start": 409.426,
+     "end": 409.626
+    },
+    {
+     "text": "are",
+     "start": 409.626,
+     "end": 409.706
+    },
+    {
+     "text": "where",
+     "start": 409.706,
+     "end": 409.826
+    },
+    {
+     "text": "you",
+     "start": 409.826,
+     "end": 409.926
+    },
+    {
+     "text": "want",
+     "start": 409.926,
+     "end": 410.046
+    },
+    {
+     "text": "to",
+     "start": 410.046,
+     "end": 410.166
+    },
+    {
+     "text": "be.",
+     "start": 410.166,
+     "end": 410.306
+    },
+    {
+     "text": "Ask",
+     "start": 410.666,
+     "end": 410.826
+    },
+    {
+     "text": "how",
+     "start": 410.826,
+     "end": 410.986
+    },
+    {
+     "text": "they",
+     "start": 410.986,
+     "end": 411.086
+    },
+    {
+     "text": "got",
+     "start": 411.086,
+     "end": 411.186
+    },
+    {
+     "text": "there.",
+     "start": 411.186,
+     "end": 411.446
+    },
+    {
+     "text": "Most",
+     "start": 411.846,
+     "end": 411.886
+    },
+    {
+     "text": "people",
+     "start": 411.886,
+     "end": 412.166
+    },
+    {
+     "text": "love",
+     "start": 412.166,
+     "end": 412.386
+    },
+    {
+     "text": "telling",
+     "start": 412.386,
+     "end": 412.726
+    },
+    {
+     "text": "that",
+     "start": 412.726,
+     "end": 412.926
+    },
+    {
+     "text": "story.",
+     "start": 412.926,
+     "end": 413.206
+    },
+    {
+     "text": "Even",
+     "start": 413.446,
+     "end": 413.686
+    },
+    {
+     "text": "Chad.",
+     "start": 413.686,
+     "end": 413.846
+    }
+   ]
+  },
+  {
+   "id": "n21",
+   "text": "Me sending my first networking message.",
+   "start": 414.48172916666664,
+   "end": 415.90172916666666,
+   "words": [
+    {
+     "text": "Me",
+     "start": 414.482,
+     "end": 414.582
+    },
+    {
+     "text": "sending",
+     "start": 414.582,
+     "end": 414.782
+    },
+    {
+     "text": "my",
+     "start": 414.782,
+     "end": 414.982
+    },
+    {
+     "text": "first",
+     "start": 414.982,
+     "end": 415.162
+    },
+    {
+     "text": "networking",
+     "start": 415.162,
+     "end": 415.522
+    },
+    {
+     "text": "message.",
+     "start": 415.522,
+     "end": 415.902
+    }
+   ]
+  },
+  {
+   "id": "c4e",
+   "text": "Fourth. And this is the free one I promised. Change the dinner table. Talk about money out loud. With your kids. Your partner. Your little brother. Even if you're still learning.",
+   "start": 416.5920208333333,
+   "end": 424.3880208333333,
+   "words": [
+    {
+     "text": "Fourth.",
+     "start": 416.592,
+     "end": 416.907
+    },
+    {
+     "text": "And",
+     "start": 416.942,
+     "end": 417.1
+    },
+    {
+     "text": "this",
+     "start": 417.118,
+     "end": 417.315
+    },
+    {
+     "text": "is",
+     "start": 417.337,
+     "end": 417.455
+    },
+    {
+     "text": "the",
+     "start": 417.468,
+     "end": 417.626
+    },
+    {
+     "text": "free",
+     "start": 417.643,
+     "end": 417.84
+    },
+    {
+     "text": "one",
+     "start": 417.862,
+     "end": 418.02
+    },
+    {
+     "text": "I",
+     "start": 418.037,
+     "end": 418.116
+    },
+    {
+     "text": "promised.",
+     "start": 418.125,
+     "end": 418.519
+    },
+    {
+     "text": "Change",
+     "start": 418.563,
+     "end": 418.839
+    },
+    {
+     "text": "the",
+     "start": 418.87,
+     "end": 419.027
+    },
+    {
+     "text": "dinner",
+     "start": 419.045,
+     "end": 419.321
+    },
+    {
+     "text": "table.",
+     "start": 419.351,
+     "end": 419.627
+    },
+    {
+     "text": "Talk",
+     "start": 419.658,
+     "end": 419.855
+    },
+    {
+     "text": "about",
+     "start": 419.877,
+     "end": 420.113
+    },
+    {
+     "text": "money",
+     "start": 420.14,
+     "end": 420.376
+    },
+    {
+     "text": "out",
+     "start": 420.403,
+     "end": 420.56
+    },
+    {
+     "text": "loud.",
+     "start": 420.578,
+     "end": 420.814
+    },
+    {
+     "text": "With",
+     "start": 420.84,
+     "end": 421.038
+    },
+    {
+     "text": "your",
+     "start": 421.059,
+     "end": 421.257
+    },
+    {
+     "text": "kids.",
+     "start": 421.278,
+     "end": 421.515
+    },
+    {
+     "text": "Your",
+     "start": 421.541,
+     "end": 421.738
+    },
+    {
+     "text": "partner.",
+     "start": 421.76,
+     "end": 422.115
+    },
+    {
+     "text": "Your",
+     "start": 422.154,
+     "end": 422.352
+    },
+    {
+     "text": "little",
+     "start": 422.373,
+     "end": 422.649
+    },
+    {
+     "text": "brother.",
+     "start": 422.68,
+     "end": 423.035
+    },
+    {
+     "text": "Even",
+     "start": 423.074,
+     "end": 423.271
+    },
+    {
+     "text": "if",
+     "start": 423.293,
+     "end": 423.411
+    },
+    {
+     "text": "you're",
+     "start": 423.425,
+     "end": 423.701
+    },
+    {
+     "text": "still",
+     "start": 423.731,
+     "end": 423.968
+    },
+    {
+     "text": "learning.",
+     "start": 423.994,
+     "end": 424.388
+    }
+   ]
+  },
+  {
+   "id": "n22",
+   "text": "Show a kid what a stock is. Let them see a bill get opened and paid. Let them watch you say no to something and explain why.",
+   "start": 425.17097916666665,
+   "end": 430.43097916666665,
+   "words": [
+    {
+     "text": "Show",
+     "start": 425.171,
+     "end": 425.331
+    },
+    {
+     "text": "a",
+     "start": 425.331,
+     "end": 425.431
+    },
+    {
+     "text": "kid",
+     "start": 425.431,
+     "end": 425.551
+    },
+    {
+     "text": "what",
+     "start": 425.551,
+     "end": 425.671
+    },
+    {
+     "text": "a",
+     "start": 425.671,
+     "end": 425.771
+    },
+    {
+     "text": "stock",
+     "start": 425.771,
+     "end": 425.911
+    },
+    {
+     "text": "is.",
+     "start": 425.911,
+     "end": 426.191
+    },
+    {
+     "text": "Let",
+     "start": 426.851,
+     "end": 426.891
+    },
+    {
+     "text": "them",
+     "start": 426.891,
+     "end": 427.031
+    },
+    {
+     "text": "see",
+     "start": 427.031,
+     "end": 427.131
+    },
+    {
+     "text": "a",
+     "start": 427.131,
+     "end": 427.231
+    },
+    {
+     "text": "bill",
+     "start": 427.231,
+     "end": 427.351
+    },
+    {
+     "text": "get",
+     "start": 427.351,
+     "end": 427.491
+    },
+    {
+     "text": "opened",
+     "start": 427.491,
+     "end": 427.691
+    },
+    {
+     "text": "and",
+     "start": 427.691,
+     "end": 427.811
+    },
+    {
+     "text": "paid.",
+     "start": 427.811,
+     "end": 428.011
+    },
+    {
+     "text": "Let",
+     "start": 428.571,
+     "end": 428.571
+    },
+    {
+     "text": "them",
+     "start": 428.571,
+     "end": 428.711
+    },
+    {
+     "text": "watch",
+     "start": 428.711,
+     "end": 428.871
+    },
+    {
+     "text": "you",
+     "start": 428.871,
+     "end": 429.071
+    },
+    {
+     "text": "say",
+     "start": 429.071,
+     "end": 429.211
+    },
+    {
+     "text": "no",
+     "start": 429.211,
+     "end": 429.351
+    },
+    {
+     "text": "to",
+     "start": 429.351,
+     "end": 429.471
+    },
+    {
+     "text": "something",
+     "start": 429.471,
+     "end": 429.651
+    },
+    {
+     "text": "and",
+     "start": 429.651,
+     "end": 429.811
+    },
+    {
+     "text": "explain",
+     "start": 429.811,
+     "end": 430.051
+    },
+    {
+     "text": "why.",
+     "start": 430.051,
+     "end": 430.431
+    }
+   ]
+  },
+  {
+   "id": "n42",
+   "text": "My nephew is seven. Last week I showed him what one share of a company is. Now he thinks he owns the toy store. Kid's not wrong. He's a shareholder.",
+   "start": 431.07152083333335,
+   "end": 438.37152083333336,
+   "words": [
+    {
+     "text": "My",
+     "start": 431.072,
+     "end": 431.192
+    },
+    {
+     "text": "nephew",
+     "start": 431.192,
+     "end": 431.372
+    },
+    {
+     "text": "is",
+     "start": 431.372,
+     "end": 431.612
+    },
+    {
+     "text": "seven.",
+     "start": 431.612,
+     "end": 431.872
+    },
+    {
+     "text": "Last",
+     "start": 432.432,
+     "end": 432.512
+    },
+    {
+     "text": "week",
+     "start": 432.512,
+     "end": 432.812
+    },
+    {
+     "text": "I",
+     "start": 432.812,
+     "end": 432.972
+    },
+    {
+     "text": "showed",
+     "start": 432.972,
+     "end": 433.172
+    },
+    {
+     "text": "him",
+     "start": 433.172,
+     "end": 433.352
+    },
+    {
+     "text": "what",
+     "start": 433.352,
+     "end": 433.492
+    },
+    {
+     "text": "one",
+     "start": 433.492,
+     "end": 433.692
+    },
+    {
+     "text": "share",
+     "start": 433.692,
+     "end": 433.932
+    },
+    {
+     "text": "of",
+     "start": 433.932,
+     "end": 434.072
+    },
+    {
+     "text": "a",
+     "start": 434.072,
+     "end": 434.112
+    },
+    {
+     "text": "company",
+     "start": 434.112,
+     "end": 434.412
+    },
+    {
+     "text": "is.",
+     "start": 434.412,
+     "end": 434.692
+    },
+    {
+     "text": "Now",
+     "start": 435.252,
+     "end": 435.392
+    },
+    {
+     "text": "he",
+     "start": 435.392,
+     "end": 435.572
+    },
+    {
+     "text": "thinks",
+     "start": 435.572,
+     "end": 435.772
+    },
+    {
+     "text": "he",
+     "start": 435.772,
+     "end": 435.972
+    },
+    {
+     "text": "owns",
+     "start": 435.972,
+     "end": 436.152
+    },
+    {
+     "text": "the",
+     "start": 436.152,
+     "end": 436.352
+    },
+    {
+     "text": "toy",
+     "start": 436.352,
+     "end": 436.452
+    },
+    {
+     "text": "store.",
+     "start": 436.452,
+     "end": 436.772
+    },
+    {
+     "text": "Kid's",
+     "start": 437.172,
+     "end": 437.312
+    },
+    {
+     "text": "not",
+     "start": 437.312,
+     "end": 437.512
+    },
+    {
+     "text": "wrong.",
+     "start": 437.512,
+     "end": 437.712
+    },
+    {
+     "text": "He's",
+     "start": 437.952,
+     "end": 438.092
+    },
+    {
+     "text": "a",
+     "start": 438.092,
+     "end": 438.152
+    },
+    {
+     "text": "shareholder.",
+     "start": 438.152,
+     "end": 438.372
+    }
+   ]
+  },
+  {
+   "id": "n43",
+   "text": "My nephew after buying one share.",
+   "start": 439.286125,
+   "end": 440.726125,
+   "words": [
+    {
+     "text": "My",
+     "start": 439.286,
+     "end": 439.386
+    },
+    {
+     "text": "nephew",
+     "start": 439.386,
+     "end": 439.666
+    },
+    {
+     "text": "after",
+     "start": 439.666,
+     "end": 439.946
+    },
+    {
+     "text": "buying",
+     "start": 439.946,
+     "end": 440.226
+    },
+    {
+     "text": "one",
+     "start": 440.226,
+     "end": 440.446
+    },
+    {
+     "text": "share.",
+     "start": 440.446,
+     "end": 440.726
+    }
+   ]
+  },
+  {
+   "id": "c4f",
+   "text": "That's how money stops being a monster in your family. One dinner at a time. And that costs exactly zero dollars.",
+   "start": 441.4194791666667,
+   "end": 447.0194791666667,
+   "words": [
+    {
+     "text": "That's",
+     "start": 441.419,
+     "end": 441.639
+    },
+    {
+     "text": "how",
+     "start": 441.639,
+     "end": 441.719
+    },
+    {
+     "text": "money",
+     "start": 441.719,
+     "end": 441.879
+    },
+    {
+     "text": "stops",
+     "start": 441.879,
+     "end": 442.179
+    },
+    {
+     "text": "being",
+     "start": 442.179,
+     "end": 442.439
+    },
+    {
+     "text": "a",
+     "start": 442.439,
+     "end": 442.579
+    },
+    {
+     "text": "monster",
+     "start": 442.579,
+     "end": 442.699
+    },
+    {
+     "text": "in",
+     "start": 442.699,
+     "end": 442.979
+    },
+    {
+     "text": "your",
+     "start": 442.979,
+     "end": 443.059
+    },
+    {
+     "text": "family.",
+     "start": 443.059,
+     "end": 443.399
+    },
+    {
+     "text": "One",
+     "start": 443.879,
+     "end": 443.879
+    },
+    {
+     "text": "dinner",
+     "start": 443.879,
+     "end": 444.099
+    },
+    {
+     "text": "at",
+     "start": 444.099,
+     "end": 444.359
+    },
+    {
+     "text": "a",
+     "start": 444.359,
+     "end": 444.419
+    },
+    {
+     "text": "time.",
+     "start": 444.419,
+     "end": 444.699
+    },
+    {
+     "text": "And",
+     "start": 445.119,
+     "end": 445.219
+    },
+    {
+     "text": "that",
+     "start": 445.219,
+     "end": 445.359
+    },
+    {
+     "text": "costs",
+     "start": 445.359,
+     "end": 445.619
+    },
+    {
+     "text": "exactly",
+     "start": 445.619,
+     "end": 445.979
+    },
+    {
+     "text": "zero",
+     "start": 445.979,
+     "end": 446.579
+    },
+    {
+     "text": "dollars.",
+     "start": 446.579,
+     "end": 447.019
+    }
+   ]
+  },
+  {
+   "id": "n23",
+   "text": "Me explaining compound interest to my cat because I don't have kids yet.",
+   "start": 447.89804166666664,
+   "end": 450.7380416666666,
+   "words": [
+    {
+     "text": "Me",
+     "start": 447.898,
+     "end": 448.038
+    },
+    {
+     "text": "explaining",
+     "start": 448.038,
+     "end": 448.398
+    },
+    {
+     "text": "compound",
+     "start": 448.398,
+     "end": 448.738
+    },
+    {
+     "text": "interest",
+     "start": 448.738,
+     "end": 449.158
+    },
+    {
+     "text": "to",
+     "start": 449.158,
+     "end": 449.358
+    },
+    {
+     "text": "my",
+     "start": 449.358,
+     "end": 449.438
+    },
+    {
+     "text": "cat",
+     "start": 449.438,
+     "end": 449.658
+    },
+    {
+     "text": "because",
+     "start": 449.658,
+     "end": 449.938
+    },
+    {
+     "text": "I",
+     "start": 449.938,
+     "end": 450.078
+    },
+    {
+     "text": "don't",
+     "start": 450.078,
+     "end": 450.258
+    },
+    {
+     "text": "have",
+     "start": 450.258,
+     "end": 450.338
+    },
+    {
+     "text": "kids",
+     "start": 450.338,
+     "end": 450.518
+    },
+    {
+     "text": "yet.",
+     "start": 450.518,
+     "end": 450.738
+    }
+   ]
+  },
+  {
+   "id": "r1",
+   "text": "So why do rich kids stay rich? Not because they're smarter. Because they get a net and a phone book and a dinner table that talks about money.",
+   "start": 451.2467291666667,
+   "end": 456.9667291666667,
+   "words": [
+    {
+     "text": "So",
+     "start": 451.247,
+     "end": 451.367
+    },
+    {
+     "text": "why",
+     "start": 451.367,
+     "end": 451.507
+    },
+    {
+     "text": "do",
+     "start": 451.507,
+     "end": 451.627
+    },
+    {
+     "text": "rich",
+     "start": 451.627,
+     "end": 451.767
+    },
+    {
+     "text": "kids",
+     "start": 451.767,
+     "end": 451.967
+    },
+    {
+     "text": "stay",
+     "start": 451.967,
+     "end": 452.167
+    },
+    {
+     "text": "rich?",
+     "start": 452.167,
+     "end": 452.387
+    },
+    {
+     "text": "Not",
+     "start": 452.807,
+     "end": 452.887
+    },
+    {
+     "text": "because",
+     "start": 452.887,
+     "end": 453.127
+    },
+    {
+     "text": "they're",
+     "start": 453.127,
+     "end": 453.307
+    },
+    {
+     "text": "smarter.",
+     "start": 453.307,
+     "end": 453.547
+    },
+    {
+     "text": "Because",
+     "start": 453.947,
+     "end": 454.147
+    },
+    {
+     "text": "they",
+     "start": 454.147,
+     "end": 454.307
+    },
+    {
+     "text": "get",
+     "start": 454.307,
+     "end": 454.427
+    },
+    {
+     "text": "a",
+     "start": 454.427,
+     "end": 454.507
+    },
+    {
+     "text": "net",
+     "start": 454.507,
+     "end": 454.707
+    },
+    {
+     "text": "and",
+     "start": 454.707,
+     "end": 454.927
+    },
+    {
+     "text": "a",
+     "start": 454.927,
+     "end": 455.007
+    },
+    {
+     "text": "phone",
+     "start": 455.007,
+     "end": 455.167
+    },
+    {
+     "text": "book",
+     "start": 455.167,
+     "end": 455.407
+    },
+    {
+     "text": "and",
+     "start": 455.407,
+     "end": 455.607
+    },
+    {
+     "text": "a",
+     "start": 455.607,
+     "end": 455.687
+    },
+    {
+     "text": "dinner",
+     "start": 455.687,
+     "end": 455.807
+    },
+    {
+     "text": "table",
+     "start": 455.807,
+     "end": 456.167
+    },
+    {
+     "text": "that",
+     "start": 456.167,
+     "end": 456.327
+    },
+    {
+     "text": "talks",
+     "start": 456.327,
+     "end": 456.487
+    },
+    {
+     "text": "about",
+     "start": 456.487,
+     "end": 456.727
+    },
+    {
+     "text": "money.",
+     "start": 456.727,
+     "end": 456.967
+    }
+   ]
+  },
+  {
+   "id": "r2",
+   "text": "You might not have gotten those from your parents. But you can be the parent who gives them.",
+   "start": 457.6411458333333,
+   "end": 461.1411458333333,
+   "words": [
+    {
+     "text": "You",
+     "start": 457.641,
+     "end": 457.721
+    },
+    {
+     "text": "might",
+     "start": 457.721,
+     "end": 457.861
+    },
+    {
+     "text": "not",
+     "start": 457.861,
+     "end": 458.021
+    },
+    {
+     "text": "have",
+     "start": 458.021,
+     "end": 458.141
+    },
+    {
+     "text": "gotten",
+     "start": 458.141,
+     "end": 458.301
+    },
+    {
+     "text": "those",
+     "start": 458.301,
+     "end": 458.581
+    },
+    {
+     "text": "from",
+     "start": 458.581,
+     "end": 458.761
+    },
+    {
+     "text": "your",
+     "start": 458.761,
+     "end": 458.901
+    },
+    {
+     "text": "parents.",
+     "start": 458.901,
+     "end": 459.201
+    },
+    {
+     "text": "But",
+     "start": 459.721,
+     "end": 459.881
+    },
+    {
+     "text": "you",
+     "start": 459.881,
+     "end": 460.021
+    },
+    {
+     "text": "can",
+     "start": 460.021,
+     "end": 460.161
+    },
+    {
+     "text": "be",
+     "start": 460.161,
+     "end": 460.281
+    },
+    {
+     "text": "the",
+     "start": 460.281,
+     "end": 460.361
+    },
+    {
+     "text": "parent",
+     "start": 460.361,
+     "end": 460.561
+    },
+    {
+     "text": "who",
+     "start": 460.561,
+     "end": 460.721
+    },
+    {
+     "text": "gives",
+     "start": 460.721,
+     "end": 460.861
+    },
+    {
+     "text": "them.",
+     "start": 460.861,
+     "end": 461.141
+    }
+   ]
+  },
+  {
+   "id": "r3",
+   "text": "Every rich family started with one person who decided the chain starts with me.",
+   "start": 461.7841041666667,
+   "end": 464.98410416666667,
+   "words": [
+    {
+     "text": "Every",
+     "start": 461.784,
+     "end": 461.964
+    },
+    {
+     "text": "rich",
+     "start": 461.964,
+     "end": 462.124
+    },
+    {
+     "text": "family",
+     "start": 462.124,
+     "end": 462.384
+    },
+    {
+     "text": "started",
+     "start": 462.384,
+     "end": 462.684
+    },
+    {
+     "text": "with",
+     "start": 462.684,
+     "end": 462.944
+    },
+    {
+     "text": "one",
+     "start": 462.944,
+     "end": 463.104
+    },
+    {
+     "text": "person",
+     "start": 463.104,
+     "end": 463.364
+    },
+    {
+     "text": "who",
+     "start": 463.364,
+     "end": 463.664
+    },
+    {
+     "text": "decided",
+     "start": 463.664,
+     "end": 463.864
+    },
+    {
+     "text": "the",
+     "start": 463.864,
+     "end": 464.104
+    },
+    {
+     "text": "chain",
+     "start": 464.104,
+     "end": 464.264
+    },
+    {
+     "text": "starts",
+     "start": 464.264,
+     "end": 464.604
+    },
+    {
+     "text": "with",
+     "start": 464.604,
+     "end": 464.824
+    },
+    {
+     "text": "me.",
+     "start": 464.824,
+     "end": 464.984
+    }
+   ]
+  },
+  {
+   "id": "r4",
+   "text": "Oh and Chad? He called me last week. His dog shampoo company needs investors. He said it's a small opportunity. I said I'll ask my uncle's friend Steve.",
+   "start": 465.73527083333335,
+   "end": 472.17527083333334,
+   "words": [
+    {
+     "text": "Oh",
+     "start": 465.735,
+     "end": 465.875
+    },
+    {
+     "text": "and",
+     "start": 465.995,
+     "end": 466.055
+    },
+    {
+     "text": "Chad?",
+     "start": 466.055,
+     "end": 466.255
+    },
+    {
+     "text": "He",
+     "start": 466.575,
+     "end": 466.615
+    },
+    {
+     "text": "called",
+     "start": 466.615,
+     "end": 466.775
+    },
+    {
+     "text": "me",
+     "start": 466.775,
+     "end": 466.935
+    },
+    {
+     "text": "last",
+     "start": 466.935,
+     "end": 467.035
+    },
+    {
+     "text": "week.",
+     "start": 467.035,
+     "end": 467.295
+    },
+    {
+     "text": "His",
+     "start": 467.635,
+     "end": 467.635
+    },
+    {
+     "text": "dog",
+     "start": 467.635,
+     "end": 467.795
+    },
+    {
+     "text": "shampoo",
+     "start": 467.795,
+     "end": 467.915
+    },
+    {
+     "text": "company",
+     "start": 467.915,
+     "end": 468.355
+    },
+    {
+     "text": "needs",
+     "start": 468.355,
+     "end": 468.535
+    },
+    {
+     "text": "investors.",
+     "start": 468.535,
+     "end": 468.855
+    },
+    {
+     "text": "He",
+     "start": 469.295,
+     "end": 469.295
+    },
+    {
+     "text": "said",
+     "start": 469.295,
+     "end": 469.475
+    },
+    {
+     "text": "it's",
+     "start": 469.475,
+     "end": 469.615
+    },
+    {
+     "text": "a",
+     "start": 469.615,
+     "end": 469.715
+    },
+    {
+     "text": "small",
+     "start": 469.715,
+     "end": 469.795
+    },
+    {
+     "text": "opportunity.",
+     "start": 469.795,
+     "end": 470.215
+    },
+    {
+     "text": "I",
+     "start": 470.935,
+     "end": 470.955
+    },
+    {
+     "text": "said",
+     "start": 470.955,
+     "end": 471.095
+    },
+    {
+     "text": "I'll",
+     "start": 471.095,
+     "end": 471.215
+    },
+    {
+     "text": "ask",
+     "start": 471.215,
+     "end": 471.295
+    },
+    {
+     "text": "my",
+     "start": 471.295,
+     "end": 471.455
+    },
+    {
+     "text": "uncle's",
+     "start": 471.455,
+     "end": 471.775
+    },
+    {
+     "text": "friend",
+     "start": 471.775,
+     "end": 471.875
+    },
+    {
+     "text": "Steve.",
+     "start": 472.035,
+     "end": 472.175
+    }
+   ]
+  },
+  {
+   "id": "r5",
+   "text": "Next time I find out why school spent twelve years teaching me about volcanoes and zero minutes teaching me how money works.",
+   "start": 472.79327083333334,
+   "end": 477.83327083333336,
+   "words": [
+    {
+     "text": "Next",
+     "start": 472.793,
+     "end": 472.933
+    },
+    {
+     "text": "time",
+     "start": 472.933,
+     "end": 473.173
+    },
+    {
+     "text": "I",
+     "start": 473.173,
+     "end": 473.293
+    },
+    {
+     "text": "find",
+     "start": 473.293,
+     "end": 473.453
+    },
+    {
+     "text": "out",
+     "start": 473.453,
+     "end": 473.633
+    },
+    {
+     "text": "why",
+     "start": 473.633,
+     "end": 473.793
+    },
+    {
+     "text": "school",
+     "start": 473.793,
+     "end": 474.033
+    },
+    {
+     "text": "spent",
+     "start": 474.033,
+     "end": 474.313
+    },
+    {
+     "text": "twelve",
+     "start": 474.313,
+     "end": 474.573
+    },
+    {
+     "text": "years",
+     "start": 474.573,
+     "end": 474.813
+    },
+    {
+     "text": "teaching",
+     "start": 474.813,
+     "end": 475.073
+    },
+    {
+     "text": "me",
+     "start": 475.073,
+     "end": 475.333
+    },
+    {
+     "text": "about",
+     "start": 475.333,
+     "end": 475.473
+    },
+    {
+     "text": "volcanoes",
+     "start": 475.473,
+     "end": 476.073
+    },
+    {
+     "text": "and",
+     "start": 476.073,
+     "end": 476.293
+    },
+    {
+     "text": "zero",
+     "start": 476.293,
+     "end": 476.493
+    },
+    {
+     "text": "minutes",
+     "start": 476.493,
+     "end": 476.773
+    },
+    {
+     "text": "teaching",
+     "start": 476.773,
+     "end": 476.993
+    },
+    {
+     "text": "me",
+     "start": 476.993,
+     "end": 477.233
+    },
+    {
+     "text": "how",
+     "start": 477.233,
+     "end": 477.353
+    },
+    {
+     "text": "money",
+     "start": 477.353,
+     "end": 477.533
+    },
+    {
+     "text": "works.",
+     "start": 477.533,
+     "end": 477.833
+    }
+   ]
+  },
+  {
+   "id": "r6",
+   "text": "Subscribe. It's free. And unlike Chad's garage you don't need rich parents to get in.",
+   "start": 478.5253125,
+   "end": 482.80531249999996,
+   "words": [
+    {
+     "text": "Subscribe.",
+     "start": 478.525,
+     "end": 478.805
+    },
+    {
+     "text": "It's",
+     "start": 479.405,
+     "end": 479.505
+    },
+    {
+     "text": "free.",
+     "start": 479.505,
+     "end": 479.625
+    },
+    {
+     "text": "And",
+     "start": 480.325,
+     "end": 480.325
+    },
+    {
+     "text": "unlike",
+     "start": 480.325,
+     "end": 480.625
+    },
+    {
+     "text": "Chad's",
+     "start": 480.625,
+     "end": 481.045
+    },
+    {
+     "text": "garage",
+     "start": 481.045,
+     "end": 481.165
+    },
+    {
+     "text": "you",
+     "start": 481.525,
+     "end": 481.525
+    },
+    {
+     "text": "don't",
+     "start": 481.525,
+     "end": 481.745
+    },
+    {
+     "text": "need",
+     "start": 481.745,
+     "end": 481.885
+    },
+    {
+     "text": "rich",
+     "start": 481.885,
+     "end": 482.045
+    },
+    {
+     "text": "parents",
+     "start": 482.045,
+     "end": 482.385
+    },
+    {
+     "text": "to",
+     "start": 482.385,
+     "end": 482.565
+    },
+    {
+     "text": "get",
+     "start": 482.565,
+     "end": 482.685
+    },
+    {
+     "text": "in.",
+     "start": 482.685,
+     "end": 482.805
+    }
+   ]
+  }
+ ]
+}
