@@ -1,28 +1,12 @@
 {
  "photos": [
   {
-   "id": "store_a",
-   "file": "File:An AT&T wireless retail store in Asheville, North Carolina 01.jpg",
-   "beat": "o1 frame 0: your phone company's store",
-   "credit": "Harrison Keely",
-   "license": "CC BY 4.0",
-   "page": "https://commons.wikimedia.org/wiki/File:An_AT%26T_wireless_retail_store_in_Asheville,_North_Carolina_01.jpg"
-  },
-  {
    "id": "ip18_front",
    "file": "File:IPhone 18 Pro - black 02.jpg",
    "beat": "o1: brand new twelve hundred dollar phone",
    "credit": "Farragutful",
    "license": "CC BY-SA 4.0",
    "page": "https://commons.wikimedia.org/wiki/File:IPhone_18_Pro_-_black_02.jpg"
-  },
-  {
-   "id": "store_b",
-   "file": "File:An AT&T wireless retail store in Asheville, North Carolina 02.jpg",
-   "beat": "o4: Dave walks out of this exact store",
-   "credit": "Harrison Keely",
-   "license": "CC BY 4.0",
-   "page": "https://commons.wikimedia.org/wiki/File:An_AT%26T_wireless_retail_store_in_Asheville,_North_Carolina_02.jpg"
   },
   {
    "id": "crack",
@@ -33,6 +17,22 @@
    "page": "https://commons.wikimedia.org/wiki/File:Smartphone_cracked_screen.jpg"
   },
   {
+   "id": "store_a",
+   "file": "File:An AT&T wireless retail store in Asheville, North Carolina 01.jpg",
+   "beat": "o1 frame 0: your phone company's store",
+   "credit": "Harrison Keely",
+   "license": "CC BY 4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:An_AT%26T_wireless_retail_store_in_Asheville,_North_Carolina_01.jpg"
+  },
+  {
+   "id": "pen",
+   "file": "File:Ballpoint Pen DS.jpg",
+   "beat": "c9h: he kept the pen",
+   "credit": "Augustus Binu : flickr",
+   "license": "CC BY-SA 3.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Ballpoint_Pen_DS.jpg"
+  },
+  {
    "id": "vz_store",
    "file": "File:Verizon Store - Cellular Retail Phone Store (47109159491).jpg",
    "beat": "c1c: all three big phone companies (Verizon)",
@@ -41,36 +41,40 @@
    "page": "https://commons.wikimedia.org/wiki/File:Verizon_Store_-_Cellular_Retail_Phone_Store_(47109159491).jpg"
   },
   {
-   "id": "tmo_store",
-   "file": "File:T-Mobile Store in Hartford, CT.jpg",
-   "beat": "c1c: all three big phone companies (T-Mobile)",
-   "credit": "Mike Mozart",
-   "license": "CC BY 2.0",
-   "page": "https://commons.wikimedia.org/wiki/File:T-Mobile_Store_in_Hartford,_CT.jpg"
+   "id": "balloons",
+   "q": "balloons"
   },
   {
-   "id": "att_sign",
-   "file": "File:AT&T Store (14150499903).jpg",
-   "beat": "c1c: all three big phone companies (AT&T)",
-   "credit": "Mike Mozart from Funny YouTube, USA",
-   "license": "CC BY 2.0",
-   "page": "https://commons.wikimedia.org/wiki/File:AT%26T_Store_(14150499903).jpg"
+   "id": "reader",
+   "q": "card reader"
   },
   {
-   "id": "ip18_box",
-   "file": "File:IPhone 18 Pro - black 03.jpg",
-   "beat": "c2d: he bought a phone on a three year loan",
-   "credit": "Farragutful",
-   "license": "CC BY-SA 4.0",
-   "page": "https://commons.wikimedia.org/wiki/File:IPhone_18_Pro_-_black_03.jpg"
+   "id": "bill",
+   "q": "paper bill"
   },
   {
-   "id": "tmo_inside",
-   "file": "File:T-Mobile store, Salmon Run Mall.png",
-   "beat": "c3b: the most expensive plan in the store",
-   "credit": "Lallint",
-   "license": "CC0",
-   "page": "https://commons.wikimedia.org/wiki/File:T-Mobile_store,_Salmon_Run_Mall.png"
+   "id": "mask",
+   "q": "masquerade mask"
+  },
+  {
+   "id": "steak",
+   "q": "steak dinner"
+  },
+  {
+   "id": "hotspot",
+   "q": "wifi router"
+  },
+  {
+   "id": "door_a",
+   "q": "red door"
+  },
+  {
+   "id": "door_b",
+   "q": "blue door"
+  },
+  {
+   "id": "rabbit",
+   "q": "rabbit"
   },
   {
    "id": "jobs",
@@ -89,6 +93,10 @@
    "page": "https://commons.wikimedia.org/wiki/File:An_iPhone_3G_in_its_original_packaging.jpg"
   },
   {
+   "id": "queue",
+   "q": "people waiting in line"
+  },
+  {
    "id": "legere",
    "file": "File:T-Mobile John Legere at CES14.jpg",
    "beat": "c4f: John Legere of T-Mobile",
@@ -97,12 +105,20 @@
    "page": "https://commons.wikimedia.org/wiki/File:T-Mobile_John_Legere_at_CES14.jpg"
   },
   {
-   "id": "vz_burl",
-   "file": "File:A modern Verizon retail store in Burlington, Vermont.jpg",
-   "beat": "c5g: Verizon sold its phones for less than they cost",
-   "credit": "Harrison Keely",
-   "license": "CC BY 4.0",
-   "page": "https://commons.wikimedia.org/wiki/File:A_modern_Verizon_retail_store_in_Burlington,_Vermont.jpg"
+   "id": "napkin",
+   "q": "paper napkin"
+  },
+  {
+   "id": "dinner_plate",
+   "q": "dinner plate"
+  },
+  {
+   "id": "report",
+   "q": "annual report"
+  },
+  {
+   "id": "goldfish",
+   "q": "goldfish"
   },
   {
    "id": "tower",
@@ -121,6 +137,26 @@
    "page": "https://commons.wikimedia.org/wiki/File:Ryan_Reynolds_by_Gage_Skidmore_3.jpg"
   },
   {
+   "id": "grandpa",
+   "q": "old man smiling"
+  },
+  {
+   "id": "bowl",
+   "q": "glass bowl"
+  },
+  {
+   "id": "headset",
+   "q": "call center headset"
+  },
+  {
+   "id": "padlock",
+   "q": "padlock"
+  },
+  {
+   "id": "road",
+   "q": "empty road"
+  },
+  {
    "id": "fcc",
    "file": "File:FCC HQ.jpg",
    "beat": "c6j: the F C C proposed",
@@ -137,12 +173,44 @@
    "page": "https://commons.wikimedia.org/wiki/File:Blue_USPS_Mailbox.jpg"
   },
   {
+   "id": "tmo_store",
+   "file": "File:T-Mobile Store in Hartford, CT.jpg",
+   "beat": "c1c: all three big phone companies (T-Mobile)",
+   "credit": "Mike Mozart",
+   "license": "CC BY 2.0",
+   "page": "https://commons.wikimedia.org/wiki/File:T-Mobile_Store_in_Hartford,_CT.jpg"
+  },
+  {
+   "id": "receipt",
+   "q": "receipt"
+  },
+  {
+   "id": "calendar",
+   "q": "wall calendar"
+  },
+  {
    "id": "applestore",
    "file": "File:Apple Store, Maine Mall.jpg",
    "beat": "c8f: buy unlocked, straight from the maker",
    "credit": "Seasider53",
    "license": "CC BY-SA 4.0",
    "page": "https://commons.wikimedia.org/wiki/File:Apple_Store,_Maine_Mall.jpg"
+  },
+  {
+   "id": "store_b",
+   "file": "File:An AT&T wireless retail store in Asheville, North Carolina 02.jpg",
+   "beat": "o4: Dave walks out of this exact store",
+   "credit": "Harrison Keely",
+   "license": "CC BY 4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:An_AT%26T_wireless_retail_store_in_Asheville,_North_Carolina_02.jpg"
+  },
+  {
+   "id": "watch",
+   "q": "smartwatch"
+  },
+  {
+   "id": "phone_hand",
+   "q": "smartphone in hand"
   },
   {
    "id": "jar",
@@ -153,20 +221,8 @@
    "page": "https://commons.wikimedia.org/wiki/File:Swear_jar_2.jpg"
   },
   {
-   "id": "pen",
-   "file": "File:Ballpoint Pen DS.jpg",
-   "beat": "c9h: he kept the pen",
-   "credit": "Augustus Binu : flickr",
-   "license": "CC BY-SA 3.0",
-   "page": "https://commons.wikimedia.org/wiki/File:Ballpoint_Pen_DS.jpg"
-  },
-  {
-   "id": "store_c",
-   "file": "File:An AT&T wireless retail store in Asheville, North Carolina 03.jpg",
-   "beat": "c9h: walking out of the exact store where we started",
-   "credit": "Harrison Keely",
-   "license": "CC BY 4.0",
-   "page": "https://commons.wikimedia.org/wiki/File:An_AT%26T_wireless_retail_store_in_Asheville,_North_Carolina_03.jpg"
+   "id": "dinner",
+   "q": "restaurant dinner friends"
   }
  ]
 }

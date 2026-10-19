@@ -1,24 +1,8 @@
 {
  "id": "ep64",
  "title": "Why Your Friends Are Making You Broke",
- "hook_form": "be_honest",
- "tts": {
-  "rate": "-5%",
-  "hook_rate": "+3%",
-  "lead": 0.08
- },
- "spine": {
-  "goal": "Dave wants to keep going out with his five friends while only paying for what he actually orders ($21 for a burger and tap water) instead of an even share of everyone's dinner ($79).",
-  "stakes": "Every even split costs him $58 ($79 - $21). At two dinners a month that is 24 x $58 = $1,392, about $1,400 a year, plus a $640 birthday trip he cannot afford: $2,032 in a year.",
-  "central_question": "If nobody at the table is a bad person, why does the split bill always come out so big, and can Dave stop paying for it without losing his friends?",
-  "loop_big": "Promised in the hook (o4): Dave sits at the same table with the same friends and pays $21 because of one small sentence -> paid at c10c-c10i (the separate-checks sentence, $21, about $1,400 a year back, nobody left).",
-  "loop_mid": "Pause-and-guess at c3e (~22%): how much more did the split tables spend than the pay-your-own tables? -> paid at c4g: about 36% more (Gneezy, Haruvy and Yafe 2004). Second interactive at c8d: pick one, did the friends who got turned down feel hurt or barely care? -> c8f.",
-  "villain": "Not Trevor: the split-the-bill rule itself (the unscrupulous diner's dilemma). It works like a hidden five-sixths coupon on whatever you order, pays everyone to order more and sends the bill to whoever ordered least; the restaurant sells about a third more. Revealed c4i-c4j (~40-45%).",
-  "low_point": "c6k-c7f (~62-72%): Dave says yes to a $640 Las Vegas birthday on his credit card, the damage passes $2,000, the sneaky fixes fail and hiding costs him the friends. He is stuck between keeping his friends and keeping his money.",
-  "win": "c8-c10: the Givi and Kirk study shows the awkward moment is mostly in his own head. Education, not advice: (1) say it before anyone orders, (2) one sentence with no apology ('I'm doing separate checks tonight because I'm on a budget this month'), (3) offer a cheaper yes for big plans, and let an app do the math. Same table: Dave pays $21, Bob and two others join him, Trevor orders chicken tenders. Damage Meter flips to SAVED about $1,400 a year.",
-  "damage_meter": "DAVE'S DAMAGE: -$1,400/YR on the stakes beat (o2); story restarts at $0 in c1a; -$58 at c1k; -$1,392/yr at c2c; -$2,032 at c6k; flips to green SAVED +$1,400/YR at c10i.",
-  "running_gag": "Trevor's lobster: o1 (the lobster you never tasted), c1d (Trevor orders it), c1k (most of it went into Trevor), c2d (one lobster claw at a time), c4a-c4c (the $48 lobster that costs Trevor $8), c7c (Dave orders it himself), c9e (he never mentions the lobster), pays off at c10f-c10g (Trevor orders chicken tenders: he only loves lobster at one sixth of the price) and c10k."
- },
+ "voice": "chatterbox",
+ "upgraded": "2026-10-19 UPGRADE.md v2",
  "sources": [
   "Dramatized story: Dave, Bob, Trevor, the steakhouse, the $474 bill, the $48 lobster, the $640 Las Vegas weekend, the cookout and every line of dialogue are illustrative. Math: $474 / 6 = $79 each; Dave's burger and water with tax and tip $21; $79 - $21 = $58; two dinners a month = 24 a year; 24 x $58 = $1,392 (about $1,400); $1,392 + $640 = $2,032; lobster $48 / 6 = $8, the other $40 (five sixths) is paid by the other five diners.",
   "Uri Gneezy, Ernan Haruvy and Hadas Yafe, 'The Inefficiency of Splitting the Bill', The Economic Journal 114 (April 2004), pp. 265-280 (rady.ucsd.edu/_files/faculty-research/uri-gneezy/splitting-bill.pdf): field experiment at a popular restaurant near the Technion campus (Haifa, Israel) at lunchtime; six subjects per table (three men, three women), chosen so they did not know each other; treatments: individual pay, even split, free meal (plus a 'pay one sixth' control). Mean cost of meal per subject (Table 1): individual pay 37.3 NIS, even split 50.9 NIS, free meal 82.3 NIS. Derived: 50.9 / 37.3 = 1.365, about 36% more ('about a third more'); 82.3 / 37.3 = 2.2 ('more than double'). 'When asked to choose, prior to ordering, whether to split the bill or pay individually, 80% choose the latter.'",
@@ -60,504 +44,2119 @@
  "beats": [
   {
    "id": "o1",
-   "job": "concept",
-   "text": "Last weekend somebody said let's just split it evenly and you smiled and paid for a lobster you never even tasted.",
-   "pause": 0.2
+   "text": "This is me last Friday paying for a lobster I never even tasted. I ordered a burger and a glass of water.",
+   "host": true,
+   "mood": "sad",
+   "pose": "present",
+   "pic": {
+    "id": "lobster",
+    "at": "lobster",
+    "look": "polaroid",
+    "label": "not my lobster"
+   },
+   "slam": {
+    "t": "NOT MY LOBSTER",
+    "at": "lobster"
+   },
+   "sfx": [
+    {
+     "s": "pack/01_beating",
+     "at": "Friday"
+    },
+    {
+     "s": "boing",
+     "at": "lobster"
+    },
+    {
+     "s": "trombone",
+     "at": "water"
+    }
+   ],
+   "pause": 0.15
   },
   {
    "id": "o2",
-   "job": "stakes",
-   "text": "For a guy like Dave that friendly little sentence costs about fourteen hundred dollars a year.",
-   "pause": 0.2
+   "text": "Because somebody at the table said five little words. Let's just split it evenly.",
+   "sfx": [
+    {
+     "s": "tick",
+     "at": "five"
+    },
+    {
+     "s": "scratch",
+     "at": "split"
+    },
+    {
+     "s": "pack/01_boom",
+     "at": "evenly"
+    }
+   ],
+   "pause": 0.15
   },
   {
    "id": "o3",
-   "job": "proof",
-   "text": "Economists tested it in a real restaurant and the tables that split the bill spent a third more.",
-   "pause": 0.2
+   "text": "And that friendly little sentence is costing me about fourteen hundred dollars a year.",
+   "card": {
+    "t": "$1,400 a year.",
+    "dark": true
+   },
+   "sfx": [
+    {
+     "s": "cash",
+     "at": "fourteen"
+    },
+    {
+     "s": "pack/01_boom",
+     "at": "year"
+    }
+   ],
+   "pause": 0.3
   },
   {
    "id": "o4",
-   "job": "ending",
-   "text": "But ten minutes from now Dave sits at this same table with these same friends and pays twenty one dollars because of one small sentence.",
-   "pause": 0.3,
-   "rate": "+0%"
+   "text": "By the end of this video you'll know the one sentence that got my money back and somehow made my friends like me more.",
+   "host": true,
+   "mood": "suspicious",
+   "pose": "point_r",
+   "slam": {
+    "t": "ONE SENTENCE",
+    "at": "sentence"
+   },
+   "sfx": [
+    {
+     "s": "ding",
+     "at": "sentence"
+    },
+    {
+     "s": "drumroll",
+     "at": "back"
+    },
+    {
+     "s": "boom",
+     "at": "more"
+    }
+   ],
+   "pause": 0.15
+  },
+  {
+   "id": "o5",
+   "text": "But most people click away before that part which is exactly why everyone keeps paying for the lobster.",
+   "host": true,
+   "mood": "worried",
+   "pose": "hips",
+   "sfx": [
+    {
+     "s": "whoosh",
+     "at": "click"
+    },
+    {
+     "s": "sting",
+     "at": "lobster"
+    }
+   ],
+   "pause": 0.3
   },
   {
    "id": "c1a",
+   "text": "So it starts on a Friday night. I just cut my phone bill and my friends want to celebrate my new rich life.",
    "chapter": "Five Expensive Words",
-   "text": "It starts on a Friday night because Dave just cut his phone bill and his friends want to celebrate.",
-   "pause": 0.4
+   "host": true,
+   "mood": "happy",
+   "pose": "celebrate",
+   "pic": {
+    "id": "friends",
+    "at": "friends",
+    "look": "tape"
+   },
+   "sfx": [
+    {
+     "s": "ding",
+     "at": "phone"
+    },
+    {
+     "s": "crowd",
+     "at": "celebrate"
+    },
+    {
+     "s": "pack/01_evolve_brassy_swell",
+     "at": "rich"
+    }
+   ]
   },
   {
    "id": "c1b",
-   "text": "They pick a steakhouse where the waiter introduces himself by name and you know that is never a cheap sign.",
-   "pause": 0.45
+   "text": "They pick a steakhouse where the waiter tells you his name. And you know that's never a cheap sign.",
+   "pic": {
+    "id": "steakhouse",
+    "at": "steakhouse",
+    "look": "polaroid"
+   },
+   "sfx": [
+    {
+     "s": "ding",
+     "at": "steakhouse"
+    },
+    {
+     "s": "boing",
+     "at": "name"
+    },
+    {
+     "s": "cash",
+     "at": "cheap"
+    }
+   ]
   },
   {
    "id": "c1c",
-   "text": "Dave is being careful with money this month so he orders the burger and a glass of tap water.",
-   "pause": 0.45
+   "text": "I'm being careful this month. So I order the burger and a glass of tap water. Very responsible. Very boring.",
+   "host": true,
+   "mood": "smug",
+   "pose": "present",
+   "pic": {
+    "id": "burger",
+    "at": "burger",
+    "look": "sticker"
+   },
+   "zoom": {
+    "in": "Very",
+    "out": "boring"
+   },
+   "sfx": [
+    {
+     "s": "pop",
+     "at": "burger"
+    },
+    {
+     "s": "ding",
+     "at": "water"
+    },
+    {
+     "s": "boom",
+     "at": "boring"
+    }
+   ]
   },
   {
    "id": "c1d",
-   "text": "Then his buddy Trevor orders the lobster and a cocktail and then one more cocktail for safety.",
-   "pause": 0.45,
-   "rate": "+3%"
+   "text": "Then my buddy Trevor orders the lobster and a cocktail. And then one more cocktail. For safety.",
+   "pic": {
+    "id": "cocktail",
+    "at": "cocktail#2",
+    "look": "tape"
+   },
+   "sfx": [
+    {
+     "s": "ding",
+     "at": "lobster"
+    },
+    {
+     "s": "pop",
+     "at": "cocktail"
+    },
+    {
+     "s": "pop",
+     "at": "cocktail#2"
+    },
+    {
+     "s": "boing",
+     "at": "safety"
+    }
+   ]
   },
   {
    "id": "c1e",
-   "text": "Bob gets the biggest steak on the menu and somebody orders wine for the whole table.",
-   "pause": 0.5
+   "text": "Bob gets the biggest steak on the menu. And somebody orders wine for the whole table without asking anybody.",
+   "pic": {
+    "id": "steak",
+    "at": "steak",
+    "look": "circle"
+   },
+   "sfx": [
+    {
+     "s": "ding",
+     "at": "steak"
+    },
+    {
+     "s": "pop",
+     "at": "wine"
+    },
+    {
+     "s": "scratch",
+     "at": "asking"
+    }
+   ]
+  },
+  {
+   "id": "n1",
+   "text": "Me watching the table order while I sip my free water.",
+   "meme": {
+    "t": "fine",
+    "a": "I'm just having water",
+    "at": "water"
+   },
+   "sfx": [
+    {
+     "s": "cricket",
+     "at": "water"
+    }
+   ]
   },
   {
    "id": "c1f",
    "text": "Two hours later the bill lands in the middle of the table like a tiny leather bomb.",
-   "pause": 0.45
+   "pic": {
+    "id": "bill",
+    "at": "bill",
+    "look": "polaroid"
+   },
+   "sfx": [
+    {
+     "s": "tick",
+     "at": "hours"
+    },
+    {
+     "s": "thud",
+     "at": "bill"
+    },
+    {
+     "s": "pack/03_evolve_boom_brass_d",
+     "at": "bomb"
+    }
+   ]
   },
   {
    "id": "c1g",
-   "text": "The total is four hundred seventy four dollars and then Trevor says the five most expensive words in friendship.",
-   "pause": 0.5,
-   "rate": "-8%"
+   "text": "Four hundred seventy four dollars. And Trevor says it. Let's just split it evenly.",
+   "host": true,
+   "mood": "shock",
+   "pose": "panic",
+   "slam": {
+    "t": "SPLIT IT EVENLY",
+    "at": "split"
+   },
+   "sfx": [
+    {
+     "s": "cash",
+     "at": "dollars"
+    },
+    {
+     "s": "drumroll",
+     "at": "Trevor"
+    },
+    {
+     "s": "pack/01_boom",
+     "at": "evenly"
+    }
+   ]
   },
   {
    "id": "c1h",
-   "text": "Let's just split it evenly.",
-   "pause": 0.6,
-   "rate": "-12%",
-   "pitch": "+3Hz"
+   "text": "So everybody owes seventy nine dollars. Including me. My burger and my water were twenty one.",
+   "sfx": [
+    {
+     "s": "cash",
+     "at": "seventy"
+    },
+    {
+     "s": "coin",
+     "at": "twenty"
+    },
+    {
+     "s": "trombone",
+     "at": "one"
+    }
+   ],
+   "pic": {
+    "id": "receipt",
+    "at": "burger",
+    "look": "tape",
+    "label": "my real order: $21"
+   }
   },
   {
    "id": "c1i",
-   "text": "So everybody owes seventy nine dollars and that includes Dave whose burger and water came to twenty one.",
-   "pause": 0.5
+   "text": "And be honest. You know exactly what I did next because you've done it too. I smiled. And I tapped my card.",
+   "host": true,
+   "mood": "tired",
+   "pose": "facepalm",
+   "pic": {
+    "id": "card_tap",
+    "at": "card",
+    "look": "tape"
+   },
+   "zoom": {
+    "in": "smiled",
+    "out": "card"
+   },
+   "sfx": [
+    {
+     "s": "click",
+     "at": "tapped"
+    },
+    {
+     "s": "boom",
+     "at": "card"
+    }
+   ]
+  },
+  {
+   "id": "n2",
+   "text": "Me paying for Trevor's lobster with a smile on my face.",
+   "meme": {
+    "t": "vs",
+    "a": "My face: :)",
+    "b": "My bank account: :(",
+    "at": "smile"
+   },
+   "sfx": [
+    {
+     "s": "pack/01_beating",
+     "at": "smile"
+    }
+   ]
   },
   {
    "id": "c1j",
-   "text": "Be honest because you know what he did next and you have done it too. He smiled and he tapped his card.",
-   "pause": 0.5
+   "text": "I just paid fifty eight dollars for food that went into other people. Mostly into Trevor.",
+   "host": true,
+   "mood": "sad",
+   "pose": "shrug",
+   "slam": {
+    "t": "-$58",
+    "at": "fifty"
+   },
+   "sfx": [
+    {
+     "s": "cash",
+     "at": "fifty"
+    },
+    {
+     "s": "boing",
+     "at": "Trevor"
+    }
+   ]
   },
   {
-   "id": "c1k",
-   "text": "He just paid fifty eight dollars for food that went into other people and mostly into Trevor.",
-   "pause": 0.55,
-   "pitch": "-2Hz"
-  },
-  {
-   "id": "c1l",
-   "text": "On the drive home Dave wonders how many times this has happened and the answer is going to hurt.",
-   "pause": 0.9
+   "id": "n15",
+   "text": "And the worst part? I didn't even get dessert. Trevor got dessert. I paid for a third of a chocolate cake I watched from across the table.",
+   "pic": {
+    "id": "cake",
+    "at": "cake",
+    "look": "sticker"
+   },
+   "sfx": [
+    {
+     "s": "boing",
+     "at": "dessert"
+    },
+    {
+     "s": "trombone",
+     "at": "cake"
+    }
+   ]
   },
   {
    "id": "c2a",
-   "chapter": "The Lobster Math",
-   "text": "At home Dave opens his banking app and scrolls back through a whole year of dinners with these friends.",
-   "pause": 0.45
+   "text": "So at home I open my banking app and scroll back through a whole year of dinners with these guys.",
+   "host": true,
+   "mood": "worried",
+   "pose": "think",
+   "pic": {
+    "id": "bank_app",
+    "at": "banking",
+    "look": "circle"
+   },
+   "sfx": [
+    {
+     "s": "click",
+     "at": "app"
+    },
+    {
+     "s": "whoosh",
+     "at": "scroll"
+    },
+    {
+     "s": "pack/01_processing",
+     "at": "year"
+    }
+   ]
   },
   {
    "id": "c2b",
-   "text": "They go out twice a month which means twenty four dinners a year and Dave is always the burger guy.",
-   "pause": 0.45
+   "text": "We go out twice a month. That's twenty four dinners a year. And I'm always the burger guy.",
+   "sfx": [
+    {
+     "s": "ding",
+     "at": "twice"
+    },
+    {
+     "s": "tick",
+     "at": "twenty"
+    },
+    {
+     "s": "boing",
+     "at": "burger"
+    }
+   ],
+   "pic": {
+    "id": "calendar",
+    "at": "month",
+    "look": "circle"
+   }
   },
   {
    "id": "c2c",
-   "text": "So he multiplies fifty eight dollars by twenty four and his calculator shows one thousand three hundred ninety two.",
-   "pause": 0.5,
-   "rate": "-8%"
+   "text": "Fifty eight dollars times twenty four. My calculator says almost fourteen hundred dollars.",
+   "host": true,
+   "mood": "shock",
+   "pose": "panic",
+   "pic": {
+    "id": "calculator",
+    "at": "calculator",
+    "look": "sticker"
+   },
+   "slam": {
+    "t": "$1,392",
+    "at": "fourteen"
+   },
+   "sfx": [
+    {
+     "s": "click",
+     "at": "times"
+    },
+    {
+     "s": "pack/02_deep",
+     "at": "fourteen"
+    }
+   ]
   },
   {
    "id": "c2d",
-   "text": "That is a real vacation and Dave gave it away one lobster claw at a time.",
-   "pause": 0.55
+   "text": "That's a real vacation. A beach. A hotel. And I gave it away one lobster claw at a time.",
+   "pic": {
+    "id": "beach",
+    "at": "beach",
+    "look": "polaroid",
+    "label": "my vacation"
+   },
+   "zoom": {
+    "in": "lobster",
+    "out": "time"
+   },
+   "sfx": [
+    {
+     "s": "ding",
+     "at": "beach"
+    },
+    {
+     "s": "trombone",
+     "at": "claw"
+    },
+    {
+     "s": "boom",
+     "at": "time"
+    }
+   ]
+  },
+  {
+   "id": "n3",
+   "text": "My vacation fund every time someone says let's split it.",
+   "meme": {
+    "t": "stonks",
+    "a": "VACATION FUND",
+    "at": "split"
+   },
+   "sfx": [
+    {
+     "s": "pack/02_evolve_brassy_drop_2",
+     "at": "split"
+    }
+   ]
   },
   {
    "id": "c2e",
-   "text": "And you have probably done the same thing at your own table because speaking up feels worse than paying.",
-   "pause": 0.5
-  },
-  {
-   "id": "c2h",
-   "text": "But your friends are not bad people and neither are Dave's. So why is the bill always so big? It turns out somebody already ran that experiment.",
-   "pause": 0.9
+   "text": "But here's the thing. My friends aren't bad people. So why is the bill always so big? Turns out somebody already ran the experiment.",
+   "host": true,
+   "mood": "think",
+   "pose": "point_up",
+   "sfx": [
+    {
+     "s": "ding",
+     "at": "bad"
+    },
+    {
+     "s": "pack/01_processing",
+     "at": "big"
+    },
+    {
+     "s": "riser",
+     "at": "experiment"
+    }
+   ]
   },
   {
    "id": "c3a",
-   "chapter": "A Restaurant In Haifa",
-   "text": "Dave types why are split bills so expensive into his phone and he lands on a real study from Israel.",
-   "pause": 0.45
+   "text": "An economist named Uri Gneezy invited students to lunch at a popular restaurant near a big university in Israel.",
+   "chapter": "The Secret Coupon",
+   "pic": {
+    "id": "restaurant",
+    "at": "restaurant",
+    "look": "polaroid",
+    "label": "the lunch experiment"
+   },
+   "sfx": [
+    {
+     "s": "flip",
+     "at": "economist"
+    },
+    {
+     "s": "ding",
+     "at": "lunch"
+    }
+   ]
   },
   {
    "id": "c3b",
-   "text": "An economist named Uri Gneezy and two colleagues invited students to lunch at a popular restaurant near the Technion which is a big university in Haifa.",
-   "pause": 0.5
+   "text": "Every table had six strangers. And each table got a secret rule. Some tables paid for their own food. Some tables split the bill evenly.",
+   "host": true,
+   "mood": "suspicious",
+   "pose": "talk",
+   "sfx": [
+    {
+     "s": "ding",
+     "at": "six"
+    },
+    {
+     "s": "tick",
+     "at": "secret"
+    },
+    {
+     "s": "scratch",
+     "at": "evenly"
+    }
+   ]
   },
   {
    "id": "c3c",
-   "text": "Every table sat six strangers and each table was quietly given a different rule for paying.",
-   "pause": 0.45
+   "text": "Quick guess before I tell you. How much more did the split tables spend? Lock in your number in the comments.",
+   "host": true,
+   "mood": "smug",
+   "pose": "point_r",
+   "slam": {
+    "t": "GUESS",
+    "at": "guess"
+   },
+   "sfx": [
+    {
+     "s": "tick",
+     "at": "guess"
+    },
+    {
+     "s": "pop",
+     "at": "comments"
+    }
+   ]
   },
   {
    "id": "c3d",
-   "text": "At some tables everybody paid for their own food and at others the bill was split evenly six ways.",
-   "pause": 0.5
+   "text": "There was even a table where lunch was free. And those people ate more than double. Which won't shock anyone who's ever stood near an open bar.",
+   "pic": {
+    "id": "buffet",
+    "at": "lunch",
+    "look": "tape"
+   },
+   "sfx": [
+    {
+     "s": "ding",
+     "at": "free"
+    },
+    {
+     "s": "boing",
+     "at": "double"
+    },
+    {
+     "s": "crowd",
+     "at": "bar"
+    }
+   ]
+  },
+  {
+   "id": "n4",
+   "text": "Me at any event with free food.",
+   "meme": {
+    "t": "drake",
+    "a": "Eating a normal amount",
+    "b": "Eating like it's my last day",
+    "at": "free"
+   },
+   "sfx": [
+    {
+     "s": "pop",
+     "at": "event"
+    }
+   ]
   },
   {
    "id": "c3e",
-   "text": "So here is a quick guess for you. How much more did the split tables spend than the pay your own tables? Lock in your number because the answer is coming.",
-   "pause": 0.6,
-   "rate": "-2%"
-  },
-  {
-   "id": "c3g",
-   "text": "There was even a third kind of table where lunch was free and those tables spent more than double which will not shock you if you have ever stood near an open bar.",
-   "pause": 0.5,
-   "rate": "+3%"
-  },
-  {
-   "id": "c3h",
-   "text": "But the split tables are the strange ones because those people were paying real money. So why did they order more?",
-   "pause": 0.9,
-   "pitch": "+3Hz"
+   "text": "But the split tables are the weird ones. Those people paid real money. So why did they order more?",
+   "host": true,
+   "mood": "think",
+   "pose": "think",
+   "sfx": [
+    {
+     "s": "pack/01_processing",
+     "at": "weird"
+    },
+    {
+     "s": "ding",
+     "at": "more"
+    }
+   ]
   },
   {
    "id": "c4a",
-   "chapter": "The Secret Coupon",
-   "text": "Dave grabs a napkin and works it out with Trevor's lobster which cost forty eight dollars.",
-   "pause": 0.45
+   "text": "So I grab a napkin and work it out with Trevor's lobster. Forty eight dollars.",
+   "pic": {
+    "id": "napkin",
+    "at": "napkin",
+    "look": "sticker"
+   },
+   "sfx": [
+    {
+     "s": "paper",
+     "at": "napkin"
+    },
+    {
+     "s": "cash",
+     "at": "Forty"
+    }
+   ]
   },
   {
    "id": "c4b",
-   "text": "If Trevor pays for his own food then that lobster costs him forty eight dollars and he probably orders the chicken.",
-   "pause": 0.5
+   "text": "If Trevor pays for his own food that lobster costs him forty eight dollars. And he probably orders the chicken.",
+   "sfx": [
+    {
+     "s": "cash",
+     "at": "forty"
+    },
+    {
+     "s": "boing",
+     "at": "chicken"
+    }
+   ]
   },
   {
    "id": "c4c",
-   "text": "But when six people split the bill that same lobster costs Trevor only eight dollars and his friends get mailed the other forty.",
-   "pause": 0.5,
-   "rate": "-8%"
+   "text": "But split six ways? That same lobster costs Trevor eight dollars. And his friends get the other forty.",
+   "host": true,
+   "mood": "shock",
+   "pose": "panic",
+   "slam": {
+    "t": "$48 → $8",
+    "at": "eight"
+   },
+   "zoom": {
+    "in": "eight",
+    "out": "forty"
+   },
+   "sfx": [
+    {
+     "s": "scratch",
+     "at": "eight"
+    },
+    {
+     "s": "pack/01_boom",
+     "at": "forty"
+    }
+   ]
   },
   {
    "id": "c4d",
-   "text": "So a split bill is a secret coupon that takes five sixths off anything you order while your friends cover the rest.",
+   "text": "So a split bill is a secret coupon. Five sixths off anything you order. And your friends pay for the coupon.",
+   "card": {
+    "t": "A split bill is a secret coupon.",
+    "dark": true
+   },
+   "sfx": [
+    {
+     "s": "stamp",
+     "at": "coupon"
+    },
+    {
+     "s": "pack/01_boom",
+     "at": "coupon#2"
+    }
+   ],
    "pause": 0.5
+  },
+  {
+   "id": "n5",
+   "text": "Trevor discovering the split bill coupon.",
+   "meme": {
+    "t": "brain",
+    "a": "Order the chicken",
+    "b": "Order the lobster",
+    "c": "Order the lobster on a split bill",
+    "at": "coupon"
+   },
+   "sfx": [
+    {
+     "s": "pack/01_processing",
+     "at": "discovering"
+    }
+   ]
+  },
+  {
+   "id": "c4e",
+   "text": "Economists even have a name for it. The unscrupulous diner's dilemma. It was described in Scientific American back in nineteen ninety four.",
+   "pic": {
+    "id": "magazine",
+    "at": "Scientific",
+    "look": "news",
+    "label": "1994"
+   },
+   "sfx": [
+    {
+     "s": "flip",
+     "at": "name"
+    },
+    {
+     "s": "ding",
+     "at": "dilemma"
+    },
+    {
+     "s": "paper",
+     "at": "four"
+    }
+   ]
   },
   {
    "id": "c4f",
-   "text": "Economists call this the unscrupulous diner's dilemma and two researchers described it in Scientific American back in nineteen ninety four.",
-   "pause": 0.5
+   "text": "And the answer to your guess. The split tables spent about a third more per person. Same food. Same restaurant. Just a different rule.",
+   "host": true,
+   "mood": "shock",
+   "pose": "point_up",
+   "slam": {
+    "t": "+36%",
+    "at": "third"
+   },
+   "sfx": [
+    {
+     "s": "drumroll",
+     "at": "answer"
+    },
+    {
+     "s": "pack/02_deep",
+     "at": "third"
+    },
+    {
+     "s": "ding",
+     "at": "rule"
+    }
+   ]
   },
   {
    "id": "c4g",
-   "text": "Now here is the answer to your guess. In that restaurant in Haifa the split tables spent about thirty six percent more per person.",
-   "pause": 0.6,
-   "rate": "-11%"
+   "text": "So the villain isn't Trevor. The villain is the rule. It pays everyone to order more and then it sends the bill to whoever ordered the least.",
+   "host": true,
+   "mood": "angry",
+   "pose": "point_r",
+   "zoom": {
+    "in": "ordered",
+    "out": "least"
+   },
+   "sfx": [
+    {
+     "s": "scratch",
+     "at": "Trevor"
+    },
+    {
+     "s": "sting",
+     "at": "rule"
+    },
+    {
+     "s": "boom",
+     "at": "least"
+    }
+   ]
   },
   {
-   "id": "c4i",
-   "text": "So the villain of this story is not Trevor. The villain is the rule itself because it pays everyone to order more and then it sends the bill to whoever ordered least.",
-   "pause": 0.6,
-   "pitch": "-2Hz"
+   "id": "c4h",
+   "text": "And guess who loves that rule. The restaurant. It just sold a third more food without printing a single coupon.",
+   "pic": {
+    "id": "cash_register",
+    "at": "restaurant",
+    "look": "tape"
+   },
+   "sfx": [
+    {
+     "s": "cash",
+     "at": "loves"
+    },
+    {
+     "s": "ding",
+     "at": "food"
+    },
+    {
+     "s": "stamp",
+     "at": "coupon"
+    }
+   ]
   },
   {
-   "id": "c4j",
-   "text": "And guess who loves that rule. The restaurant just sold you a third more food without printing a single coupon.",
-   "pause": 0.5
-  },
-  {
-   "id": "c4k",
-   "text": "Dave feels better about Trevor now. But then he reads one more line of that study and it makes him feel much worse.",
-   "pause": 0.9
+   "id": "n6",
+   "text": "The restaurant when six friends ask for one bill.",
+   "meme": {
+    "t": "stonks",
+    "a": "ONE BILL PLEASE",
+    "at": "restaurant"
+   },
+   "sfx": [
+    {
+     "s": "cash",
+     "at": "bill"
+    }
+   ]
   },
   {
    "id": "c5a",
-   "chapter": "Everybody Hated It",
-   "text": "Before lunch the researchers asked some of the tables how they would rather pay.",
-   "pause": 0.45
+   "text": "But then I read one more line of that study. Before lunch they asked people how they wanted to pay.",
+   "host": true,
+   "mood": "suspicious",
+   "pose": "talk",
+   "sfx": [
+    {
+     "s": "flip",
+     "at": "line"
+    },
+    {
+     "s": "ding",
+     "at": "pay"
+    }
+   ]
   },
   {
    "id": "c5b",
-   "text": "About eight out of ten people picked separate bills which means almost everybody wanted to pay for their own food.",
-   "pause": 0.5,
-   "rate": "-9%"
+   "text": "About eight out of ten said separate bills. Eight out of ten. Almost everybody wanted to pay for their own food.",
+   "host": true,
+   "mood": "shock",
+   "pose": "panic",
+   "slam": {
+    "t": "8 IN 10",
+    "at": "eight"
+   },
+   "sfx": [
+    {
+     "s": "ding",
+     "at": "separate"
+    },
+    {
+     "s": "pack/02_deep",
+     "at": "Eight#2"
+    }
+   ]
   },
   {
    "id": "c5c",
-   "text": "So think about your last group dinner. Most of your friends were probably sitting there hating the split too.",
-   "pause": 0.5
+   "text": "So think about your last group dinner. Most of your friends were probably sitting there hating the split too. Six people thinking the same thing. And all six smiled and said sure.",
+   "pic": {
+    "id": "dinner_table",
+    "at": "dinner",
+    "look": "polaroid"
+   },
+   "sfx": [
+    {
+     "s": "cricket",
+     "at": "hating"
+    },
+    {
+     "s": "ding",
+     "at": "same"
+    },
+    {
+     "s": "trombone",
+     "at": "sure"
+    }
+   ]
+  },
+  {
+   "id": "n16",
+   "text": "Six adults with jobs and bills and opinions. All too scared to say four words to a waiter.",
+   "pic": {
+    "id": "waiter",
+    "at": "waiter",
+    "look": "polaroid"
+   },
+   "sfx": [
+    {
+     "s": "ding",
+     "at": "jobs"
+    },
+    {
+     "s": "cricket",
+     "at": "scared"
+    },
+    {
+     "s": "boom",
+     "at": "waiter"
+    }
+   ]
+  },
+  {
+   "id": "n7",
+   "text": "Six friends at the table all secretly hating the split.",
+   "meme": {
+    "t": "fine",
+    "a": "Sure let's split it",
+    "at": "secretly"
+   },
+   "sfx": [
+    {
+     "s": "cricket",
+     "at": "split"
+    }
+   ]
   },
   {
    "id": "c5d",
-   "text": "Six people were all thinking the exact same thing and all six of them smiled and said sure.",
+   "text": "Why does nobody say it? Because we'd rather lose fifty eight dollars than look cheap for five seconds.",
+   "card": {
+    "t": "We pay not to look cheap.",
+    "dark": true
+   },
+   "sfx": [
+    {
+     "s": "cash",
+     "at": "fifty"
+    },
+    {
+     "s": "pack/01_boom",
+     "at": "seconds"
+    }
+   ],
    "pause": 0.5
-  },
-  {
-   "id": "c5f",
-   "text": "So why does nobody say it out loud? Because you would rather lose fifty eight dollars than look cheap for five seconds.",
-   "pause": 0.55
-  },
-  {
-   "id": "c5g",
-   "text": "And you and Dave are about to learn that dinner is only the small version of this problem.",
-   "pause": 0.9
   },
   {
    "id": "c6a",
-   "chapter": "The Neighbor's Lottery Ticket",
-   "text": "That same week the group chat lights up because Trevor is turning thirty and he wants a birthday weekend in Las Vegas.",
-   "pause": 0.45
+   "text": "And dinner is just the small version. That same week the group chat lights up. Trevor turns thirty and he wants a birthday weekend in Las Vegas.",
+   "chapter": "Keeping Up With My Friends",
+   "pic": {
+    "id": "vegas",
+    "at": "Vegas",
+    "look": "polaroid",
+    "label": "Trevor's 30th"
+   },
+   "sfx": [
+    {
+     "s": "ding",
+     "at": "chat"
+    },
+    {
+     "s": "crowd",
+     "at": "birthday"
+    },
+    {
+     "s": "pack/01_evolve_brassy_swell",
+     "at": "Vegas"
+    }
+   ]
   },
   {
    "id": "c6b",
-   "text": "It costs six hundred forty dollars each and you can guess what happens next because four thumbs up pop into the chat in under a minute.",
-   "pause": 0.45
+   "text": "Six hundred forty dollars each. And four thumbs up pop into the chat in under a minute.",
+   "host": true,
+   "mood": "worried",
+   "pose": "talk",
+   "slam": {
+    "t": "$640",
+    "at": "forty"
+   },
+   "sfx": [
+    {
+     "s": "cash",
+     "at": "forty"
+    },
+    {
+     "s": "pop",
+     "at": "thumbs"
+    },
+    {
+     "s": "pop",
+     "at": "chat"
+    },
+    {
+     "s": "tick",
+     "at": "minute"
+    }
+   ]
+  },
+  {
+   "id": "n8",
+   "text": "Me staring at the group chat with my thumb above the button.",
+   "meme": {
+    "t": "buttons",
+    "a": "Pay rent",
+    "b": "Go to Vegas",
+    "at": "button"
+   },
+   "sfx": [
+    {
+     "s": "pack/01_beating",
+     "at": "button"
+    }
+   ]
+  },
+  {
+   "id": "c6c",
+   "text": "And then there's the wedding. And the bachelor party for the wedding. And the trip for the bachelor party for the wedding.",
+   "pic": {
+    "id": "wedding",
+    "at": "wedding",
+    "look": "tape"
+   },
+   "sfx": [
+    {
+     "s": "ding",
+     "at": "wedding"
+    },
+    {
+     "s": "ding",
+     "at": "bachelor"
+    },
+    {
+     "s": "boing",
+     "at": "wedding#3"
+    }
+   ]
   },
   {
    "id": "c6d",
-   "text": "And here is the wild part because your friends do not only split your bills. They quietly decide what feels normal to you.",
-   "pause": 0.5
+   "text": "Here's the wild part. My friends don't just split my bills. They quietly decide what feels normal to me.",
+   "host": true,
+   "mood": "suspicious",
+   "pose": "point_up",
+   "zoom": {
+    "in": "feels",
+    "out": "normal"
+   },
+   "sfx": [
+    {
+     "s": "sting",
+     "at": "wild"
+    },
+    {
+     "s": "boom",
+     "at": "normal"
+    }
+   ]
   },
   {
    "id": "c6e",
-   "text": "Economists including one at the Federal Reserve Bank of Philadelphia studied lottery winners in Canada and then they watched the neighbors.",
-   "pause": 0.5
+   "text": "Economists studied lottery winners in Canada. And then they watched the neighbors.",
+   "pic": {
+    "id": "lottery",
+    "at": "lottery",
+    "look": "sticker"
+   },
+   "sfx": [
+    {
+     "s": "ding",
+     "at": "lottery"
+    },
+    {
+     "s": "pack/camera_shutter",
+     "at": "neighbors"
+    }
+   ]
   },
   {
    "id": "c6f",
-   "text": "When one house on a tiny street won a prize the size of a year's pay the bankruptcies among the close neighbors went up by about six and a half percent.",
-   "pause": 0.55,
-   "rate": "-9%"
+   "text": "When one house on a tiny street won big the neighbors started going bankrupt more often. Not the winner. The neighbors.",
+   "host": true,
+   "mood": "shock",
+   "pose": "panic",
+   "slam": {
+    "t": "THE NEIGHBORS",
+    "at": "neighbors#2"
+   },
+   "sfx": [
+    {
+     "s": "cash",
+     "at": "won"
+    },
+    {
+     "s": "pack/02_evolve_brassy_drop_2",
+     "at": "bankrupt"
+    },
+    {
+     "s": "boom",
+     "at": "neighbors#2"
+    }
+   ]
+  },
+  {
+   "id": "c6g",
+   "text": "Because the winner buys a new car. And then the guy next door needs a new car too. With money he doesn't have.",
+   "pic": {
+    "id": "new_car",
+    "at": "car",
+    "look": "polaroid"
+   },
+   "sfx": [
+    {
+     "s": "ding",
+     "at": "car"
+    },
+    {
+     "s": "boing",
+     "at": "door"
+    },
+    {
+     "s": "cash",
+     "at": "have"
+    }
+   ]
+  },
+  {
+   "id": "n17",
+   "text": "It's not about the car. It's about not feeling like the poor guy on the street.",
+   "host": true,
+   "mood": "sad",
+   "pose": "talk",
+   "pic": {
+    "id": "street",
+    "at": "street",
+    "look": "tape"
+   },
+   "sfx": [
+    {
+     "s": "ding",
+     "at": "car"
+    },
+    {
+     "s": "pack/01_beating",
+     "at": "street"
+    }
+   ]
+  },
+  {
+   "id": "n9",
+   "text": "The neighbors when one guy wins the lottery.",
+   "meme": {
+    "t": "vs",
+    "a": "His lottery money",
+    "b": "Our credit cards",
+    "at": "lottery"
+   },
+   "sfx": [
+    {
+     "s": "pop",
+     "at": "lottery"
+    }
+   ]
   },
   {
    "id": "c6h",
-   "text": "This habit is so old that it has its own comic strip. In nineteen thirteen a cartoonist named Pop Momand started drawing Keeping Up with the Joneses.",
-   "pause": 0.5
+   "text": "This is so old it has its own name. In nineteen thirteen a cartoonist started a comic strip called Keeping Up with the Joneses.",
+   "pic": {
+    "id": "comic",
+    "at": "comic",
+    "look": "news",
+    "label": "1913"
+   },
+   "sfx": [
+    {
+     "s": "flip",
+     "at": "thirteen"
+    },
+    {
+     "s": "ding",
+     "at": "Joneses"
+    }
+   ]
+  },
+  {
+   "id": "c6i",
+   "text": "And it was based on his own life. He and his wife were living way beyond their money trying to keep up with the neighbors.",
+   "host": true,
+   "mood": "grin",
+   "pose": "shrug",
+   "sfx": [
+    {
+     "s": "ding",
+     "at": "life"
+    },
+    {
+     "s": "cash",
+     "at": "money"
+    },
+    {
+     "s": "boing",
+     "at": "neighbors"
+    }
+   ]
   },
   {
    "id": "c6j",
-   "text": "And it never stopped. In a recent LendingTree survey almost a third of Americans said they feel pressure to keep up with how their friends spend.",
-   "pause": 0.5
+   "text": "Over a hundred years later it's worse. Because now the Joneses live in your phone. You see every trip and every dinner every single day.",
+   "pic": {
+    "id": "instagram",
+    "at": "phone",
+    "look": "tape"
+   },
+   "zoom": {
+    "in": "Joneses",
+    "out": "phone"
+   },
+   "sfx": [
+    {
+     "s": "ding",
+     "at": "hundred"
+    },
+    {
+     "s": "pack/01_beating",
+     "at": "phone"
+    },
+    {
+     "s": "whoosh",
+     "at": "day"
+    }
+   ]
   },
   {
    "id": "c6k",
-   "text": "So Dave looks at the chat and then at his bank balance and then he types I'm in. Las Vegas goes on his credit card.",
-   "pause": 0.9,
-   "rate": "-8%",
-   "pitch": "-2Hz"
+   "text": "In one survey almost a third of Americans said they feel pressure to keep up with how their friends spend. For people my age it's even more.",
+   "host": true,
+   "mood": "sad",
+   "pose": "talk",
+   "sfx": [
+    {
+     "s": "ding",
+     "at": "third"
+    },
+    {
+     "s": "pack/01_beating",
+     "at": "pressure"
+    }
+   ],
+   "pic": {
+    "id": "survey",
+    "at": "survey",
+    "look": "tape"
+   }
+  },
+  {
+   "id": "c6l",
+   "text": "So I look at the chat. Then at my bank balance. And I type I'm in. Las Vegas goes on my credit card.",
+   "host": true,
+   "mood": "tired",
+   "pose": "facepalm",
+   "pic": {
+    "id": "credit_card",
+    "at": "credit",
+    "look": "circle"
+   },
+   "zoom": {
+    "in": "credit",
+    "out": "card"
+   },
+   "sfx": [
+    {
+     "s": "click",
+     "at": "type"
+    },
+    {
+     "s": "cash",
+     "at": "Vegas"
+    },
+    {
+     "s": "trombone",
+     "at": "card"
+    }
+   ]
+  },
+  {
+   "id": "n10",
+   "text": "Me in Vegas acting rich on a credit card.",
+   "meme": {
+    "t": "stonks",
+    "a": "RICH FOR 48 HOURS",
+    "at": "Vegas"
+   },
+   "sfx": [
+    {
+     "s": "pack/01_evolve_brassy_swell",
+     "at": "rich"
+    }
+   ]
   },
   {
    "id": "c7a",
-   "chapter": "Going Broke Politely",
-   "text": "Now the damage is past two thousand dollars and Dave is going broke so that nobody will think he is broke.",
+   "text": "Now the damage is over two thousand dollars. I'm going broke so that nobody thinks I'm broke.",
+   "card": {
+    "t": "Broke so nobody thinks I'm broke.",
+    "dark": true
+   },
+   "sfx": [
+    {
+     "s": "cash",
+     "at": "thousand"
+    },
+    {
+     "s": "pack/01_boom",
+     "at": "broke#2"
+    }
+   ],
    "pause": 0.5
   },
   {
    "id": "c7b",
-   "text": "He tries a sneaky fix first. He shows up late to skip the appetizers and he still pays for the appetizers.",
-   "pause": 0.5
+   "text": "So I try a sneaky fix. I show up late to skip the appetizers. And I still pay for the appetizers.",
+   "host": true,
+   "mood": "smug",
+   "pose": "hips",
+   "pic": {
+    "id": "appetizer",
+    "at": "appetizers#2",
+    "look": "tape"
+   },
+   "sfx": [
+    {
+     "s": "tick",
+     "at": "late"
+    },
+    {
+     "s": "scratch",
+     "at": "still"
+    },
+    {
+     "s": "boing",
+     "at": "appetizers#2"
+    }
+   ]
+  },
+  {
+   "id": "c7c",
+   "text": "Then I try hiding. I say I'm busy three weekends in a row and I eat cereal over the sink.",
+   "pic": {
+    "id": "cereal",
+    "at": "cereal",
+    "look": "sticker"
+   },
+   "sfx": [
+    {
+     "s": "ding",
+     "at": "busy"
+    },
+    {
+     "s": "cricket",
+     "at": "sink"
+    }
+   ]
+  },
+  {
+   "id": "n18",
+   "text": "I even muted the group chat. Then I watched their Instagram stories alone on my couch eating cereal. Peak loneliness.",
+   "host": true,
+   "mood": "tired",
+   "pose": "facepalm",
+   "pic": {
+    "id": "couch",
+    "at": "couch",
+    "look": "circle"
+   },
+   "zoom": {
+    "in": "Peak",
+    "out": "loneliness"
+   },
+   "sfx": [
+    {
+     "s": "click",
+     "at": "muted"
+    },
+    {
+     "s": "boing",
+     "at": "cereal"
+    },
+    {
+     "s": "boom",
+     "at": "loneliness"
+    }
+   ]
+  },
+  {
+   "id": "n11",
+   "text": "Me telling my friends I'm busy this weekend.",
+   "meme": {
+    "t": "drake",
+    "a": "Saying I can't afford it",
+    "b": "Saying I'm busy forever",
+    "at": "busy"
+   },
+   "sfx": [
+    {
+     "s": "pop",
+     "at": "busy"
+    }
+   ]
   },
   {
    "id": "c7d",
-   "text": "Then he tries hiding. He says he is busy three weekends in a row and he eats cereal over the sink.",
-   "pause": 0.5
+   "text": "That saves money. But it costs me my friends. And the friends were the whole point.",
+   "host": true,
+   "mood": "sad",
+   "pose": "shrug",
+   "zoom": {
+    "in": "whole",
+    "out": "point"
+   },
+   "sfx": [
+    {
+     "s": "coin",
+     "at": "saves"
+    },
+    {
+     "s": "trombone",
+     "at": "friends#2"
+    },
+    {
+     "s": "boom",
+     "at": "point"
+    }
+   ]
   },
   {
    "id": "c7e",
-   "text": "That saves money but it costs him the friends and you know the friends were the whole point.",
-   "pause": 0.55
-  },
-  {
-   "id": "c7f",
-   "text": "So Dave is stuck. He can keep his friends and lose his money or he can keep his money and lose his friends.",
-   "pause": 0.6,
-   "rate": "-10%",
-   "pitch": "-2Hz"
-  },
-  {
-   "id": "c7g",
-   "text": "And that is when he finds a study about the exact thing you and Dave are both afraid of.",
-   "pause": 0.9
+   "text": "So I'm stuck. Keep my friends and lose my money. Or keep my money and lose my friends.",
+   "host": true,
+   "mood": "worried",
+   "pose": "think",
+   "sfx": [
+    {
+     "s": "pack/01_beating",
+     "at": "stuck"
+    },
+    {
+     "s": "tick",
+     "at": "money#2"
+    }
+   ]
   },
   {
    "id": "c8a",
-   "chapter": "What Friends Really Think",
-   "text": "A professor named Julian Givi at West Virginia University wanted to know what really happens when you say no to a friend.",
-   "pause": 0.45
+   "text": "Then I find a study about the exact thing I'm scared of. Saying no to a friend.",
+   "chapter": "The One Sentence",
+   "host": true,
+   "mood": "think",
+   "pose": "point_up",
+   "pic": {
+    "id": "university",
+    "at": "study",
+    "look": "polaroid"
+   },
+   "sfx": [
+    {
+     "s": "ding",
+     "at": "study"
+    },
+    {
+     "s": "sting",
+     "at": "no"
+    }
+   ]
   },
   {
    "id": "c8b",
-   "text": "First he asked people a simple question and about three out of four admitted they had said yes to an invitation they did not want because they were scared to say no.",
-   "pause": 0.5
+   "text": "A professor named Julian Givi asked people a simple question. About three out of four admitted they'd said yes to plans they didn't want. Just because they were scared to say no.",
+   "sfx": [
+    {
+     "s": "ding",
+     "at": "professor"
+    },
+    {
+     "s": "pack/02_deep",
+     "at": "three"
+    },
+    {
+     "s": "scratch",
+     "at": "scared"
+    }
+   ]
+  },
+  {
+   "id": "c8c",
+   "text": "Then he tested what really happens. Pick one before I tell you. Did the friends who got a no feel hurt? Or did they barely care?",
+   "host": true,
+   "mood": "suspicious",
+   "pose": "point_r",
+   "sfx": [
+    {
+     "s": "drumroll",
+     "at": "Pick"
+    },
+    {
+     "s": "tick",
+     "at": "care"
+    }
+   ]
   },
   {
    "id": "c8d",
-   "text": "Pick one before I tell you. Did the friends who got turned down feel hurt or did they barely care?",
-   "pause": 0.6,
-   "pitch": "+3Hz"
+   "text": "The people saying no expected a disaster. Angry friend. Hurt friend. Never invited again.",
+   "pic": {
+    "id": "storm",
+    "at": "disaster",
+    "look": "tape"
+   },
+   "sfx": [
+    {
+     "s": "pack/03_evolve_boom_brass_d",
+     "at": "disaster"
+    },
+    {
+     "s": "thud",
+     "at": "again"
+    }
+   ]
   },
   {
    "id": "c8e",
-   "text": "Across five experiments the people saying no predicted a disaster. They pictured a friend who was hurt and angry and done with inviting them.",
-   "pause": 0.5
+   "text": "But the friends barely cared. They mostly thought about your reasons. Not about the no.",
+   "host": true,
+   "mood": "shock",
+   "pose": "panic",
+   "slam": {
+    "t": "THEY BARELY CARED",
+    "at": "barely"
+   },
+   "zoom": {
+    "in": "barely",
+    "out": "cared"
+   },
+   "sfx": [
+    {
+     "s": "scratch",
+     "at": "barely"
+    },
+    {
+     "s": "pack/01_boom",
+     "at": "cared"
+    }
+   ]
+  },
+  {
+   "id": "n12",
+   "text": "Me realizing the awkward moment only exists in my head.",
+   "meme": {
+    "t": "fine",
+    "a": "Paid $1,400 to avoid a feeling",
+    "at": "head"
+   },
+   "sfx": [
+    {
+     "s": "cricket",
+     "at": "head"
+    }
+   ]
   },
   {
    "id": "c8f",
-   "text": "But the friends on the other side barely cared. They mostly thought about your reasons and not about the fact that you said no.",
-   "pause": 0.5,
-   "rate": "-8%"
-  },
-  {
-   "id": "c8g",
-   "text": "So in plain English the awkward moment you keep paying to avoid is mostly inside your own head.",
-   "pause": 0.55
-  },
-  {
-   "id": "c8h",
-   "text": "Dave reads that twice and says hold on. Have I been paying fourteen hundred dollars a year to dodge a feeling that nobody else is even having?",
-   "pause": 0.5,
-   "pitch": "+3Hz"
-  },
-  {
-   "id": "c8i",
-   "text": "Yes Dave that is exactly what you have been doing.",
-   "pause": 0.9,
-   "rate": "-8%"
+   "text": "So I've been paying fourteen hundred dollars a year to dodge a feeling nobody else is even having.",
+   "card": {
+    "t": "Paying to dodge a feeling.",
+    "dark": true
+   },
+   "sfx": [
+    {
+     "s": "cash",
+     "at": "fourteen"
+    },
+    {
+     "s": "pack/01_boom",
+     "at": "having"
+    }
+   ],
+   "pause": 0.5
   },
   {
    "id": "c9a",
-   "chapter": "The One Sentence",
-   "text": "Quick note that this part is education and not advice. But here is what Dave did in three moves.",
-   "pause": 0.45
+   "text": "So here's what I did. Quick reminder this is education and not advice. Three moves.",
+   "host": true,
+   "mood": "happy",
+   "pose": "point_up",
+   "sfx": [
+    {
+     "s": "ding",
+     "at": "three"
+    }
+   ]
   },
   {
    "id": "c9b",
-   "text": "Move one is timing. You say it before anybody orders because after the food arrives it sounds like an accusation.",
-   "pause": 0.5
+   "text": "Move one. Timing. You say it before anybody orders. After the food comes it sounds like an accusation.",
+   "host": true,
+   "mood": "smug",
+   "pose": "talk",
+   "pic": {
+    "id": "menu",
+    "at": "orders",
+    "look": "tape"
+   },
+   "sfx": [
+    {
+     "s": "ding",
+     "at": "one"
+    },
+    {
+     "s": "tick",
+     "at": "before"
+    },
+    {
+     "s": "scratch",
+     "at": "accusation"
+    }
+   ]
   },
   {
    "id": "c9c",
-   "text": "Move two is the sentence itself and you will notice it has no apology in it and no speech about money.",
-   "pause": 0.45
+   "text": "Move two. The sentence. No apology. No speech about money. Just this.",
+   "host": true,
+   "mood": "happy",
+   "pose": "present",
+   "sfx": [
+    {
+     "s": "ding",
+     "at": "two"
+    },
+    {
+     "s": "riser",
+     "at": "this"
+    }
+   ]
   },
   {
    "id": "c9d",
-   "text": "Hey I'm doing separate checks tonight because I'm on a budget this month.",
-   "pause": 0.6,
-   "rate": "-11%"
+   "text": "Hey I'm doing separate checks tonight. I'm on a budget this month.",
+   "card": {
+    "t": "\"Separate checks tonight. I'm on a budget.\"",
+    "dark": true
+   },
+   "sfx": [
+    {
+     "s": "pack/01_boom",
+     "at": "checks"
+    },
+    {
+     "s": "stamp",
+     "at": "budget"
+    }
+   ],
+   "pause": 0.5
   },
   {
    "id": "c9e",
-   "text": "Notice what is missing. He never mentions the lobster and he never asks anybody else to change a thing.",
-   "pause": 0.5
+   "text": "Notice what's missing. I never mention the lobster. I never ask anybody else to change anything.",
+   "host": true,
+   "mood": "smug",
+   "pose": "point_up",
+   "zoom": {
+    "in": "never",
+    "out": "lobster"
+   },
+   "sfx": [
+    {
+     "s": "ding",
+     "at": "missing"
+    },
+    {
+     "s": "boom",
+     "at": "lobster"
+    }
+   ]
   },
   {
    "id": "c9f",
-   "text": "Move three is for the big stuff like Las Vegas. Dave stops saying no and starts offering a cheaper yes.",
-   "pause": 0.5
+   "text": "Move three is for the big stuff. Like Vegas or the bachelor trip. I stop saying no. I offer a cheaper yes.",
+   "host": true,
+   "mood": "grin",
+   "pose": "present",
+   "slam": {
+    "t": "A CHEAPER YES",
+    "at": "cheaper"
+   },
+   "sfx": [
+    {
+     "s": "ding",
+     "at": "three"
+    },
+    {
+     "s": "pack/03_evolve_boom_brass_d",
+     "at": "cheaper"
+    }
+   ]
   },
   {
    "id": "c9g",
-   "text": "He says I can't do Vegas but I will host the birthday cookout and the first round is on me.",
-   "pause": 0.5
+   "text": "I can't do Vegas but I'll host the birthday cookout and the first round is on me.",
+   "pic": {
+    "id": "bbq",
+    "at": "cookout",
+    "look": "polaroid",
+    "label": "Trevor's party v2"
+   },
+   "sfx": [
+    {
+     "s": "ding",
+     "at": "host"
+    },
+    {
+     "s": "crowd",
+     "at": "cookout"
+    },
+    {
+     "s": "cash",
+     "at": "me"
+    }
+   ]
   },
   {
-   "id": "c9i",
-   "text": "And he lets an app do the math. The story goes that two college roommates started Venmo in two thousand nine after one of them forgot his wallet.",
-   "pause": 0.5
+   "id": "n13",
+   "text": "Me hosting the cookout instead of flying to Vegas.",
+   "meme": {
+    "t": "drake",
+    "a": "$640 Vegas weekend",
+    "b": "$60 backyard cookout",
+    "at": "cookout"
+   },
+   "sfx": [
+    {
+     "s": "pop",
+     "at": "cookout"
+    }
+   ]
   },
   {
-   "id": "c9j",
-   "text": "So Dave has his sentence. Now he has to say it out loud at the scariest place on earth which is a table full of friends.",
-   "pause": 0.9
+   "id": "c9h",
+   "text": "And the split math? An app does it now. The story goes that Venmo started because one of two college roommates forgot his wallet.",
+   "pic": {
+    "id": "wallet",
+    "at": "wallet",
+    "look": "sticker"
+   },
+   "sfx": [
+    {
+     "s": "click",
+     "at": "app"
+    },
+    {
+     "s": "ding",
+     "at": "Venmo"
+    },
+    {
+     "s": "boing",
+     "at": "wallet"
+    }
+   ]
   },
   {
    "id": "c10a",
-   "chapter": "Same Table New Sentence",
-   "text": "Friday night comes around again and it is the same steakhouse and the same waiter and the same five friends.",
-   "pause": 0.45
+   "text": "So Friday comes around again. Same steakhouse. Same waiter. Same five friends.",
+   "host": true,
+   "mood": "worried",
+   "pose": "hips",
+   "sfx": [
+    {
+     "s": "tick",
+     "at": "Friday"
+    },
+    {
+     "s": "ding",
+     "at": "waiter"
+    }
+   ]
   },
   {
    "id": "c10b",
-   "text": "Dave's heart is pounding like he is about to rob the place. The waiter walks over and Dave just says it.",
-   "pause": 0.5
+   "text": "My heart is pounding like I'm about to rob the place. The waiter walks over. And I just say it.",
+   "host": true,
+   "mood": "shock",
+   "pose": "panic",
+   "zoom": {
+    "in": "say",
+    "out": "it"
+   },
+   "sfx": [
+    {
+     "s": "pack/01_beating",
+     "at": "heart"
+    },
+    {
+     "s": "drumroll",
+     "at": "waiter"
+    },
+    {
+     "s": "boom",
+     "at": "it"
+    }
+   ]
   },
   {
    "id": "c10c",
-   "text": "Hey I'm doing separate checks tonight because I'm on a budget this month.",
-   "pause": 0.6,
-   "rate": "-10%"
+   "text": "Separate checks tonight. I'm on a budget.",
+   "host": true,
+   "mood": "smug",
+   "pose": "point_up",
+   "slam": {
+    "t": "SEPARATE CHECKS",
+    "at": "Separate"
+   },
+   "sfx": [
+    {
+     "s": "stamp",
+     "at": "checks"
+    },
+    {
+     "s": "cricket",
+     "at": "budget"
+    }
+   ]
   },
   {
    "id": "c10d",
-   "text": "There is one full second of silence. Then Bob puts down his menu and says oh thank goodness me too.",
-   "pause": 0.55
+   "text": "One full second of silence. Then Bob puts down his menu and says oh thank goodness. Me too.",
+   "pic": {
+    "id": "relief",
+    "at": "Bob",
+    "look": "tape"
+   },
+   "sfx": [
+    {
+     "s": "cricket",
+     "at": "silence"
+    },
+    {
+     "s": "crowd",
+     "at": "goodness"
+    },
+    {
+     "s": "ding",
+     "at": "too"
+    }
+   ]
   },
   {
    "id": "c10e",
-   "text": "Then two more friends say the same and it turns out half the table has dreaded that bill for years.",
-   "pause": 0.5,
-   "rate": "+3%"
+   "text": "Then two more friends say the same. Half the table has been dreading that bill for years.",
+   "host": true,
+   "mood": "happy",
+   "pose": "celebrate",
+   "sfx": [
+    {
+     "s": "crowd",
+     "at": "same"
+    },
+    {
+     "s": "ding",
+     "at": "years"
+    }
+   ]
   },
   {
    "id": "c10f",
-   "text": "And Trevor stares at the menu for a very long time and then he orders the chicken tenders.",
-   "pause": 0.55
+   "text": "And Trevor stares at the menu for a very long time. And he orders the chicken tenders.",
+   "pic": {
+    "id": "chicken",
+    "at": "chicken",
+    "look": "sticker"
+   },
+   "zoom": {
+    "in": "chicken",
+    "out": "tenders"
+   },
+   "sfx": [
+    {
+     "s": "tick",
+     "at": "stares"
+    },
+    {
+     "s": "boing",
+     "at": "chicken"
+    },
+    {
+     "s": "boom",
+     "at": "tenders"
+    }
+   ]
+  },
+  {
+   "id": "n14",
+   "text": "Trevor only loves lobster when it costs eight dollars.",
+   "meme": {
+    "t": "vs",
+    "a": "Lobster at $8",
+    "b": "Lobster at $48",
+    "at": "loves"
+   },
+   "sfx": [
+    {
+     "s": "boing",
+     "at": "lobster"
+    }
+   ]
   },
   {
    "id": "c10g",
-   "text": "It turns out Trevor only loves lobster at one sixth of the price.",
-   "pause": 0.6,
-   "pitch": "+3Hz"
+   "text": "I pay twenty one dollars. Same table. Same friends. Nobody left the group chat. And I get about fourteen hundred dollars a year back.",
+   "host": true,
+   "mood": "money",
+   "pose": "celebrate",
+   "slam": {
+    "t": "+$1,400/YEAR",
+    "at": "fourteen"
+   },
+   "sfx": [
+    {
+     "s": "coin",
+     "at": "twenty"
+    },
+    {
+     "s": "ding",
+     "at": "chat"
+    },
+    {
+     "s": "cash",
+     "at": "fourteen"
+    },
+    {
+     "s": "crowd",
+     "at": "back"
+    }
+   ]
+  },
+  {
+   "id": "n19",
+   "text": "Two weeks later Trevor texts me. Hey can you send me that budget app you use? Trevor. The lobster guy.",
+   "pic": {
+    "id": "texting",
+    "at": "texts",
+    "look": "tape"
+   },
+   "sfx": [
+    {
+     "s": "ding",
+     "at": "texts"
+    },
+    {
+     "s": "scratch",
+     "at": "Trevor#2"
+    },
+    {
+     "s": "boing",
+     "at": "lobster"
+    }
+   ]
   },
   {
    "id": "c10h",
-   "text": "The checks arrive and Dave pays twenty one dollars for a burger and a water and he is still sitting with the same five friends.",
-   "pause": 0.55,
-   "rate": "-8%"
-  },
-  {
-   "id": "c10i",
-   "text": "That is fifty eight dollars back tonight and about fourteen hundred dollars back every year and nobody left the group chat.",
-   "pause": 0.5
-  },
-  {
-   "id": "c10j",
-   "text": "To be fair an even split is totally fine when you all ordered about the same or when it is your turn to treat.",
-   "pause": 0.5
-  },
-  {
-   "id": "c10k",
-   "text": "It only gets expensive when it turns automatic. You can split a lot of things with your friends but you do not have to split a lobster.",
-   "pause": 0.9,
-   "rate": "-9%",
-   "pitch": "-2Hz"
+   "text": "To be fair splitting evenly is totally fine when you all ordered about the same. Or when it's your turn to treat.",
+   "host": true,
+   "mood": "happy",
+   "pose": "shrug",
+   "sfx": [
+    {
+     "s": "ding",
+     "at": "fine"
+    },
+    {
+     "s": "pop",
+     "at": "treat"
+    }
+   ]
   },
   {
    "id": "r1",
-   "chapter": "What Dave Learned",
-   "text": "Here is what Dave learned. One is that a split bill is a hidden coupon and whoever orders least pays for it.",
-   "pause": 0.4
-  },
-  {
-   "id": "r2",
-   "text": "Two is that most of your table secretly wants separate checks so somebody just has to say it first.",
-   "pause": 0.4
-  },
-  {
-   "id": "r3",
-   "text": "Three is that a cheaper yes lets you keep the friend and the money.",
-   "pause": 0.7
-  },
-  {
-   "id": "r4",
-   "text": "Next time Dave is dragging his suitcase through the airport when a very smiley man offers him a free flight and all he has to do is sign up for a credit card.",
+   "text": "It only gets expensive when it's automatic. You can split a lot of things with your friends. You don't have to split a lobster.",
+   "card": {
+    "t": "Don't split the lobster.",
+    "dark": true
+   },
+   "sfx": [
+    {
+     "s": "pack/01_boom",
+     "at": "lobster"
+    }
+   ],
    "pause": 0.5
   },
   {
-   "id": "r5",
-   "text": "Subscribe because it is free and we promise we will never split the bill with you.",
-   "pause": 1.4,
-   "pitch": "+3Hz"
+   "id": "r2",
+   "text": "Your friends aren't making you broke. The silence is. And the silence ends with one sentence.",
+   "host": true,
+   "mood": "smug",
+   "pose": "point_r",
+   "zoom": {
+    "in": "one",
+    "out": "sentence"
+   },
+   "sfx": [
+    {
+     "s": "scratch",
+     "at": "silence"
+    },
+    {
+     "s": "boom",
+     "at": "sentence"
+    }
+   ]
+  },
+  {
+   "id": "r3",
+   "text": "Next time I'm dragging my suitcase through the airport and a very smiley man offers me a free flight. All I have to do is sign up for a credit card. What could go wrong?",
+   "pic": {
+    "id": "airport",
+    "at": "airport",
+    "look": "polaroid"
+   },
+   "sfx": [
+    {
+     "s": "whoosh",
+     "at": "suitcase"
+    },
+    {
+     "s": "ding",
+     "at": "free"
+    },
+    {
+     "s": "cash",
+     "at": "card"
+    },
+    {
+     "s": "sting",
+     "at": "wrong"
+    }
+   ]
+  },
+  {
+   "id": "r4",
+   "text": "Subscribe. It's free. And I promise I'll never split the bill with you.",
+   "host": true,
+   "mood": "grin",
+   "pose": "wave",
+   "zoom": {
+    "in": "never",
+    "out": "you"
+   },
+   "sfx": [
+    {
+     "s": "ding",
+     "at": "Subscribe"
+    },
+    {
+     "s": "boom",
+     "at": "you"
+    }
+   ]
   }
  ]
 }

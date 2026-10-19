@@ -1,23 +1,8 @@
 {
  "id": "ep62",
  "title": "Why Prices End in .99 (And Why It Still Works on You)",
- "hook_form": "test_on_viewer",
- "tts": {"rate": "-5%", "hook_rate": "+3%", "lead": 0.08},
- "spine": {
-  "goal": "Dave wants to prove that the .99 trick does not work on him and win back the $20 he bet Bob",
-  "stakes": "He spent $124.95 while his head said 'about ninety', he is out $20 and his pride, and his brain keeps rounding every price down",
-  "central_question": "Why does a pricing trick that everybody knows about still work on everybody, and who decides the last digit?",
-  "loop_big": "The exact price tag from the first second comes back in the last minute and the viewer (and Dave) finally read it as four hundred dollars",
-  "loop_mid": "Pause-and-guess: how many cents does a one-cent jump from $4.99 to $5.00 feel like to shoppers? (about twenty)",
-  "villain": "The pricing office that picks every last digit on purpose, helped by our own left-to-right brain (and by shoppers who punish honest prices)",
-  "low_point": "J.C. Penney tried honest round prices in 2012 and lost about four billion dollars of sales in a year; then the U.S. stopped making the penny and .99 survived anyway",
-  "win": "Dave says every price out loud rounded up, keeps a round running total, asks 'would I want it at the round price?', then wins the double-or-nothing rematch and gets $40 from Bob"
- },
- "youtube": {
-  "title": "Why Prices End in .99 (And Why It Still Works on You)",
-  "hook": "You know $9.99 is ten dollars. Your brain still files it under nine. Here is where that one-penny trick came from, what it really costs you, and how Dave finally beat it.",
-  "tags": ["why prices end in 99", "psychological pricing", "left digit effect", "charm pricing explained", "99 cents trick", "jcpenney fair and square", "why gas prices end in 9/10", "pricing psychology", "store tricks", "money explained simply", "dave explains money"]
- },
+ "voice": "chatterbox",
+ "upgraded": "2026-10-19 UPGRADE.md v2",
  "sources": [
   "Thomas & Morwitz (New York University), 'Penny Wise and Pound Foolish: The Left-Digit Effect in Price Cognition', Journal of Consumer Research 32(1), June 2005 (effect only when the leftmost digit changes, e.g. $2.99 vs $3.00)",
   "Lacetera, Pope & Sydnor, 'Heuristic Thinking and Limited Attention in the Car Market', American Economic Review, Aug 2012 (over 22 million used-car transactions; drops of about $150-$200 at each 10,000-mile mark; $210 at 80,000 miles)",
@@ -32,109 +17,1954 @@
   "U.S. Mint / Treasury: last circulating pennies struck in Philadelphia on 12 Nov 2025; unit cost 3.69 cents (FY2024). Common Cents Act: passed the House 14 Sept 2026 and the Senate 29 Sept 2026 (cash totals rounded to the nearest five cents; card payments not rounded)",
   "J. C. Penney Company Form 10-K, fiscal 2012: net sales $12.985 billion, down 24.8% from $17.26 billion; 590 promotions in 2011 cut to 12 ('Fair and Square', round-number tags, Feb 2012); Ron Johnson dismissed 8 April 2013 after 17 months"
  ],
+ "youtube": {
+  "title": "Why Prices End in .99 (And Why It Still Works on You)",
+  "hook": "You know $9.99 is ten dollars. Your brain still files it under nine. Here is where that one-penny trick came from, what it really costs you, and how Dave finally beat it.",
+  "tags": [
+   "why prices end in 99",
+   "psychological pricing",
+   "left digit effect",
+   "charm pricing explained",
+   "99 cents trick",
+   "jcpenney fair and square",
+   "why gas prices end in 9/10",
+   "pricing psychology",
+   "store tricks",
+   "money explained simply",
+   "dave explains money"
+  ]
+ },
  "beats": [
-  {"id": "o1", "job": "concept", "pause": 0.2, "photo": "tag400", "text": "Look at this price tag for one second and be honest because your brain just filed it under three hundred something didn't it?"},
-  {"id": "o2", "job": "proof", "pause": 0.2, "photo": "oldshop", "text": "It's four hundred dollars and stores have run that one penny trick on you for over a century."},
-  {"id": "o3", "job": "stakes", "pause": 0.25, "photo": "jcpclosed", "text": "It works so well that one giant store quit it along with its coupons and lost four billion dollars in one year."},
-  {"id": "o4", "job": "ending", "pause": 0.3, "text": "In ten minutes you'll see this exact tag again and your brain will finally read it right."},
-
-  {"id": "c1a", "chapter": "Dave's Twenty Dollar Bet", "pause": 0.4, "photo": "store", "text": "So meet Dave who just walked out of a store feeling very smart because he's sure this stuff only works on other people."},
-  {"id": "c1b", "pause": 0.4, "rate": "+5%", "pitch": "+3Hz", "text": "Dave says please. I know nine ninety nine is ten bucks and I'm not a child."},
-  {"id": "c1c", "pause": 0.4, "photo": "twenty", "text": "His neighbor Bob hears that and grins and says twenty dollars says you can't tell me what you just spent without looking at the receipt."},
-  {"id": "c1d", "pause": 0.5, "photo": "headphones", "text": "Dave thinks about the headphones and the lamp and the frying pan and the snacks and then he says easy. It was about ninety bucks."},
-  {"id": "c1e", "pause": 0.8, "rate": "-12%", "photo": "receipt", "text": "The receipt says one hundred twenty four dollars and ninety five cents."},
-  {"id": "c1f", "pause": 0.6, "text": "Dave didn't forget anything. His brain kept the first digit of every price and threw the rest away like a guy who reads the first word of your text and replies okay."},
-  {"id": "c1g", "pause": 0.5, "photo": "tagwow", "text": "And before you laugh at Dave here's a real shelf tag from a real store. Is your gut saying three bucks or four?"},
-  {"id": "c1h", "pause": 0.9, "rate": "+4%", "photo": "tag60", "text": "Now try three at once. You've got three seconds so add these up in your head and no calculator."},
-  {"id": "c1i", "pause": 0.5, "photo": "calc", "text": "If you got somewhere around ninety then congratulations because you're Dave. The real total is three cents short of a hundred."},
-  {"id": "c1j", "pause": 0.8, "photo": "saloon", "text": "So Dave is out twenty dollars and he wants to know how a trick this dumb beat him. The trail starts in an Ohio saloon in eighteen seventy nine."},
-
-  {"id": "c2a", "chapter": "The Bartender's Machine", "pause": 0.4, "photo": "ritty", "text": "Dave looks it up and the first story he finds is about a saloon owner in Dayton Ohio named James Ritty."},
-  {"id": "c2b", "pause": 0.5, "photo": "rittydial", "text": "Ritty was sure his bartenders were pocketing the cash so in eighteen seventy nine he patented a machine he called the Incorruptible Cashier. You know it as the cash register."},
-  {"id": "c2c", "pause": 0.5, "photo": "register", "text": "And here's the legend. If your drink costs one round dollar the bartender can slide that bill straight into his pocket. But at ninety nine cents he has to open the drawer for your penny and the sale gets recorded."},
-  {"id": "c2d", "pause": 0.6, "photo": "bartender", "text": "It's a great story and it's all over the internet but nobody has ever found a shop owner from back then saying that's why he did it."},
-  {"id": "c2e", "pause": 0.4, "photo": "stone", "text": "The second story stars a Chicago newspaper man named Melville Stone who sold his paper for one penny back when almost nobody in town carried pennies."},
-  {"id": "c2f", "pause": 0.5, "photo": "indianpenny", "text": "The tale goes that he talked local shops into pricing things one cent under the dollar so you'd get a penny back and spend it on his paper."},
-  {"id": "c2g", "pause": 0.6, "photo": "microfilm", "text": "Cute right? Except a columnist dug through that paper's old ads on microfilm and prices ending in nine were rare until well into the eighteen eighties."},
-  {"id": "c2h", "pause": 0.5, "rate": "+5%", "pitch": "+3Hz", "text": "Dave says hold on. So I lost twenty bucks to a rumor?"},
-  {"id": "c2i", "pause": 0.8, "photo": "oldad", "text": "Pretty much. Nobody really knows who started it. What we do know is why it never stopped and that part happens inside your head."},
-
-  {"id": "c3a", "chapter": "One Second In Your Brain", "pause": 0.4, "photo": "odo", "text": "Dave still doesn't buy it so let's test your brain on something that isn't even a price. Look at the odometer on this used truck."},
-  {"id": "c3b", "pause": 0.5, "photo": "carlot", "text": "Ninety nine thousand miles feels a lot younger than a hundred thousand doesn't it? And that gap is one long weekend of driving."},
-  {"id": "c3c", "pause": 0.6, "photo": "auction", "text": "Researchers went through millions of used car sales and a car sold just before a big round mileage number went for about two hundred dollars more than the same car just after it."},
-  {"id": "c3d", "pause": 0.6, "photo": "reading", "text": "So in plain English you read from left to right and your brain decides how big a number is before your eyes reach the end. Scientists call it the left digit effect."},
-  {"id": "c3e", "pause": 0.5, "photo": "nyu", "text": "Two researchers at New York University tested it in two thousand five. Two ninety nine felt clearly cheaper to people than three dollars. But when the first digit stayed the same that one cent did almost nothing."},
-  {"id": "c3f", "pause": 0.7, "pitch": "+2Hz", "photo": "cake", "text": "Dave does this with everything by the way. He is thirty nine years and eleven months old and he tells people he's thirty something."},
-  {"id": "c3g", "pause": 0.5, "rate": "+4%", "photo": "onecent", "text": "Now guess with me. When a price climbs one single cent from four ninety nine to five dollars how many cents does that feel like to shoppers?"},
-  {"id": "c3h", "pause": 0.8, "text": "Put your number in the comments because the answer is coming in a minute. But first Dave finds a man who built a whole empire on those two little nines."},
-
-  {"id": "c4a", "chapter": "The Ninety Nine Cent King", "pause": 0.4, "photo": "gcm", "text": "His name was Dave Gold and he ran his family's little liquor store in downtown Los Angeles."},
-  {"id": "c4b", "pause": 0.5, "photo": "wine", "text": "Gold noticed something weird. When he put wine on sale for a dollar and two cents it just sat there and at ninety eight cents it sat there too."},
-  {"id": "c4c", "pause": 0.6, "photo": "sign99", "text": "But when he wrote ninety nine cents on the sign it was gone in no time. He called it a magic number."},
-  {"id": "c4d", "pause": 0.6, "rate": "+4%", "text": "Think about that. The wine sold better at ninety nine cents than at ninety eight. A higher price beat a lower one because of how it looked."},
-  {"id": "c4e", "pause": 0.5, "photo": "nn", "text": "So in nineteen eighty two he opened a store where every single thing cost ninety nine cents and he called it Ninety Nine Cents Only."},
-  {"id": "c4f", "pause": 0.6, "photo": "nnaisle", "text": "It grew into hundreds of stores. And when his costs went up do you know what the new price was? It was ninety nine point nine nine cents."},
-  {"id": "c4g", "pause": 0.5, "photo": "jobs", "text": "And he wasn't the only one who knew. In two thousand three Steve Jobs opened a music store on your computer and he priced every song at ninety nine cents."},
-  {"id": "c4h", "pause": 0.6, "photo": "ipod", "text": "It sold a million songs in its first week."},
-  {"id": "c4i", "pause": 0.5, "rate": "+5%", "pitch": "+3Hz", "text": "Dave says okay so ninety nine sells. But who decides that my lamp costs nineteen ninety nine and not twenty?"},
-  {"id": "c4j", "pause": 0.8, "text": "Great question Dave. Because somebody does decide and that somebody has a spreadsheet."},
-
-  {"id": "c5a", "chapter": "Who Picks The Last Digit", "pause": 0.4, "photo": "office", "text": "Dave always pictured a price tag as a kind of accident. It isn't. Every big chain has a pricing office and choosing the last digit is somebody's actual job."},
-  {"id": "c5b", "pause": 0.5, "photo": "aisle", "text": "Economists checked eight years of prices from a big supermarket chain and nine was the most common last digit of them all."},
-  {"id": "c5c", "pause": 0.5, "photo": "booth", "text": "And now you get your answer. A researcher at the University of Chicago tracked thousands of products across twenty five store chains."},
-  {"id": "c5d", "pause": 0.8, "rate": "-12%", "photo": "dimes", "text": "When a price crosses from four ninety nine to five dollars shoppers react as if it went up by about twenty cents."},
-  {"id": "c5e", "pause": 0.6, "text": "One penny hits your brain like twenty of them. So a store that knocks one cent off gets treated as if it gave you a real discount."},
-  {"id": "c5g", "pause": 0.5, "photo": "lyft", "text": "Do you want proof that it prints money? Economists ran an experiment on twenty one million riders of the ride app Lyft."},
-  {"id": "c5h", "pause": 0.5, "photo": "phoneride", "text": "About half of everything a cheaper fare did happened at the exact moment the price slipped under a round dollar."},
-  {"id": "c5i", "pause": 0.6, "photo": "cashpile", "text": "They worked out that ending fares in ninety nine could be worth around one hundred sixty million dollars a year to the company."},
-  {"id": "c5j", "pause": 0.7, "pitch": "-2Hz", "text": "So that's who wins. It isn't one evil guy in a tower. It's a quiet office with a spreadsheet and it's using a glitch inside your own head."},
-  {"id": "c5k", "pause": 0.8, "text": "And if you think one cent is the smallest thing they'd bother to shave off then wait until Dave pulls into a gas station."},
-
-  {"id": "c6a", "chapter": "The Fraction At The Pump", "pause": 0.4, "photo": "gas", "text": "Dave fills up his car and for the first time in his life he actually reads the sign."},
-  {"id": "c6b", "pause": 0.5, "photo": "pump", "text": "Look at the tiny number sitting next to the price. That's nine tenths of a cent and there is no coin in your pocket for that."},
-  {"id": "c6c", "pause": 0.5, "photo": "gas1936", "text": "Those fractions showed up on gas signs back in the nineteen thirties when gas taxes came in slivers of a cent and a whole penny was a big deal."},
-  {"id": "c6d", "pause": 0.5, "photo": "nozzle", "text": "The taxes changed but the nine tenths never left. On one tank it costs you about a dime."},
-  {"id": "c6e", "pause": 0.5, "photo": "traffic", "text": "But Americans burn around one hundred thirty six billion gallons of gasoline a year."},
-  {"id": "c6f", "pause": 0.7, "rate": "-10%", "text": "So that invisible fraction adds up to more than a billion dollars every single year."},
-  {"id": "c6g", "pause": 0.5, "rate": "+5%", "pitch": "+3Hz", "text": "Dave says so I've been paying for a coin that doesn't even exist?"},
-  {"id": "c6h", "pause": 0.8, "text": "Now Dave has one hopeful thought. If we all hate being tricked then surely a store that stops doing it would win. One huge company tried exactly that."},
-
-  {"id": "c7a", "chapter": "The Store That Told The Truth", "pause": 0.4, "photo": "johnson", "text": "In twenty eleven the department store J C Penney hired a new boss named Ron Johnson. He was the man who had built the Apple Store."},
-  {"id": "c7b", "pause": 0.5, "photo": "applestore", "text": "Johnson looked at his new company and saw a mess. It had run five hundred ninety different sales in a single year."},
-  {"id": "c7c", "pause": 0.5, "photo": "coupons", "text": "So in twenty twelve he made a brave move. He cut the endless sales and he killed the coupons and he called the plan Fair and Square."},
-  {"id": "c7d", "pause": 0.5, "photo": "jcp", "text": "And the tags changed too. A price that used to end in ninety nine now ended in a nice honest zero."},
-  {"id": "c7e", "pause": 0.6, "rate": "+4%", "pitch": "+2Hz", "text": "Be honest with me. You'd love a store like that wouldn't you?"},
-  {"id": "c7f", "pause": 0.8, "rate": "-12%", "photo": "emptymall", "text": "Shoppers walked away. Sales fell by about four billion dollars in one year which was a quarter of the whole business."},
-  {"id": "c7g", "pause": 0.5, "photo": "clearance", "text": "Johnson was out after seventeen months and the coupons came right back."},
-  {"id": "c7h", "pause": 0.7, "pitch": "-2Hz", "text": "And that's the ugly truth Dave didn't want to hear. The stores aren't forcing this on us. We punish the honest price and we reward the pretty one."},
-  {"id": "c7i", "pause": 0.8, "text": "But Dave had one last hope. Because in twenty twenty five the United States did something that should have killed the ninety nine forever."},
-
-  {"id": "c8a", "chapter": "They Killed The Penny", "pause": 0.4, "photo": "mint", "text": "It stopped making the penny. The last ones were struck at the Philadelphia Mint in November of twenty twenty five."},
-  {"id": "c8b", "pause": 0.5, "photo": "pennies", "text": "Each penny cost almost four cents to make which is a very strange way to run a one cent coin."},
-  {"id": "c8c", "pause": 0.5, "photo": "change", "text": "So think about it. If the penny is going away then nobody can hand you one cent in change. The ninety nine should be dead."},
-  {"id": "c8d", "pause": 0.5, "photo": "capitol", "text": "But it isn't dead. In September of twenty twenty six Congress passed a bill that lets stores round your cash total to the nearest nickel."},
-  {"id": "c8e", "pause": 0.5, "photo": "cardpay", "text": "So if your total is nine ninety nine and you pay cash you hand over ten dollars. And if you tap your card you still pay nine ninety nine."},
-  {"id": "c8f", "pause": 0.7, "photo": "shelftags", "text": "And the tag on the shelf still says nine ninety nine. The coin died and the trick didn't even blink."},
-  {"id": "c8g", "pause": 0.6, "rate": "-8%", "pitch": "-2Hz", "text": "Dave slumps on his couch and feels every one of his thirty something years. History couldn't explain it and honesty couldn't beat it and killing the penny couldn't stop it."},
-  {"id": "c8h", "pause": 0.8, "text": "But then Dave notices one thing. The trick only works in the first second while your brain is on autopilot. So what if he grabbed the wheel?"},
-
-  {"id": "c9a", "chapter": "Dave Fights Back", "pause": 0.4, "text": "Dave makes three small rules for himself. And remember that this is education and not advice."},
-  {"id": "c9b", "pause": 0.5, "photo": "cashier", "text": "Rule one is that he says every price out loud and rounds it up. Nineteen ninety nine becomes twenty. The cashier thinks he's weird and Dave does not care."},
-  {"id": "c9c", "pause": 0.5, "text": "It sounds silly but it forces your brain to read the whole number and not just the first digit."},
-  {"id": "c9d", "pause": 0.5, "photo": "cart", "text": "Rule two is that he keeps a running total in round numbers while he shops. No more mystery receipts."},
-  {"id": "c9e", "pause": 0.6, "photo": "lamp", "text": "Rule three is one question. Would I still want this at the round price? If a lamp is a yes at nineteen ninety nine and a no at twenty then you never wanted the lamp. You wanted the nine."},
-  {"id": "c9g", "pause": 0.5, "rate": "+4%", "photo": "door", "text": "Then Dave knocks on Bob's door and says double or nothing."},
-  {"id": "c9h", "pause": 0.6, "photo": "checkout", "text": "Bob watches him shop. Dave mutters round numbers the whole way like a man counting sheep. At the exit he says one hundred and ten dollars."},
-  {"id": "c9i", "pause": 0.8, "rate": "-12%", "text": "The receipt says one hundred nine dollars and ninety four cents."},
-  {"id": "c9j", "pause": 0.8, "photo": "wallet", "text": "Bob pays up. Dave gets his twenty back and twenty more on top and for the first time he knows what he spent before the receipt does."},
-
-  {"id": "c10a", "chapter": "What Dave Learned", "pause": 0.5, "photo": "tag400", "text": "Now it's your turn because I made you a promise. Here's the exact tag from the first second of this video."},
-  {"id": "c10b", "pause": 0.8, "rate": "-10%", "text": "Read it out loud and round it up. It's four hundred dollars. If that's the first thing your brain said then the trick just stopped working on you."},
-  {"id": "c10c", "pause": 0.4, "text": "So here's what Dave learned. Your brain reads the first digit and guesses the rest."},
-  {"id": "c10d", "pause": 0.4, "text": "Nobody is sure who started the ninety nine and it outlived an honest store and a dead penny because it works on us."},
-  {"id": "c10e", "pause": 0.5, "text": "And saying the round number out loud is enough to break it."},
-  {"id": "c10f", "pause": 0.6, "pitch": "+2Hz", "text": "Oh and Dave finally said his real age out loud too. He's forty. He took it pretty well."},
-  {"id": "c10g", "pause": 0.6, "photo": "phonestore", "text": "Next time Dave walks into a phone store and a very friendly salesman offers him a brand new phone for free. That should worry you."},
-  {"id": "c10h", "pause": 0.6, "text": "Subscribe so the raccoon in the pricing office doesn't get you. It costs zero dollars. Not zero point nine nine. Zero."}
+  {
+   "id": "o1",
+   "text": "Look at this price tag for one second. Be honest. Your brain just said three hundred something. Didn't it?",
+   "host": true,
+   "mood": "suspicious",
+   "pose": "present",
+   "pic": {
+    "id": "tag400",
+    "at": "tag",
+    "look": "polaroid",
+    "label": "1 second"
+   },
+   "sfx": [
+    {
+     "s": "tick",
+     "at": "second"
+    },
+    {
+     "s": "ding",
+     "at": "Be"
+    },
+    {
+     "s": "pack/01_processing",
+     "at": "three"
+    }
+   ],
+   "pause": 0.15
+  },
+  {
+   "id": "o2",
+   "text": "It's four hundred dollars. And stores have been running that one penny trick on you for over a hundred years.",
+   "host": true,
+   "mood": "shock",
+   "pose": "panic",
+   "slam": {
+    "t": "$400",
+    "at": "four"
+   },
+   "zoom": {
+    "in": "four",
+    "out": "dollars"
+   },
+   "sfx": [
+    {
+     "s": "pack/01_boom",
+     "at": "four"
+    },
+    {
+     "s": "coin",
+     "at": "penny"
+    },
+    {
+     "s": "boom",
+     "at": "years"
+    }
+   ],
+   "pause": 0.15
+  },
+  {
+   "id": "o3",
+   "text": "Your brain got robbed by one cent.",
+   "card": {
+    "t": "Robbed by one cent.",
+    "dark": true
+   },
+   "sfx": [
+    {
+     "s": "scratch",
+     "at": "robbed"
+    },
+    {
+     "s": "pack/01_boom",
+     "at": "cent"
+    }
+   ],
+   "pause": 0.3
+  },
+  {
+   "id": "o4",
+   "text": "By the end of this video you'll see this exact tag again and your brain will finally read it right. And it takes one tiny habit.",
+   "host": true,
+   "mood": "smug",
+   "pose": "point_r",
+   "slam": {
+    "t": "ONE TINY HABIT",
+    "at": "habit"
+   },
+   "sfx": [
+    {
+     "s": "ding",
+     "at": "exact"
+    },
+    {
+     "s": "drumroll",
+     "at": "finally"
+    },
+    {
+     "s": "boom",
+     "at": "habit"
+    }
+   ],
+   "pause": 0.15
+  },
+  {
+   "id": "o5",
+   "text": "But most people scroll away before that part. Which is exactly what the pricing guys are counting on.",
+   "host": true,
+   "mood": "worried",
+   "pose": "hips",
+   "sfx": [
+    {
+     "s": "whoosh",
+     "at": "scroll"
+    },
+    {
+     "s": "sting",
+     "at": "counting"
+    }
+   ],
+   "pause": 0.3
+  },
+  {
+   "id": "c1a",
+   "text": "So let me tell you how I lost twenty dollars to my neighbor Bob.",
+   "chapter": "I Lost A Bet To A Penny",
+   "sfx": [
+    {
+     "s": "cash",
+     "at": "twenty"
+    },
+    {
+     "s": "ding",
+     "at": "Bob"
+    }
+   ]
+  },
+  {
+   "id": "c1b",
+   "text": "I walk out of a store feeling very smart. Because I'm sure this ninety nine stuff only works on other people.",
+   "host": true,
+   "mood": "smug",
+   "pose": "present",
+   "pic": {
+    "id": "store",
+    "at": "store",
+    "look": "tape"
+   },
+   "sfx": [
+    {
+     "s": "ding",
+     "at": "smart"
+    },
+    {
+     "s": "boing",
+     "at": "other"
+    }
+   ]
+  },
+  {
+   "id": "n1",
+   "text": "Me thinking I'm immune to nine ninety nine.",
+   "meme": {
+    "t": "stonks",
+    "a": "TOO SMART FOR .99",
+    "at": "immune"
+   },
+   "sfx": [
+    {
+     "s": "pack/01_evolve_brassy_swell",
+     "at": "immune"
+    }
+   ]
+  },
+  {
+   "id": "c1c",
+   "text": "Bob grins and says twenty bucks says you can't tell me what you just spent without looking at the receipt.",
+   "pic": {
+    "id": "receipt",
+    "at": "receipt",
+    "look": "circle"
+   },
+   "sfx": [
+    {
+     "s": "cash",
+     "at": "twenty"
+    },
+    {
+     "s": "paper",
+     "at": "receipt"
+    }
+   ]
+  },
+  {
+   "id": "c1d",
+   "text": "Easy. Headphones. A lamp. A frying pan. Some snacks. About ninety bucks.",
+   "host": true,
+   "mood": "happy",
+   "pose": "talk",
+   "pic": {
+    "id": "headphones",
+    "at": "Headphones",
+    "look": "sticker"
+   },
+   "sfx": [
+    {
+     "s": "ding",
+     "at": "Headphones"
+    },
+    {
+     "s": "ding",
+     "at": "lamp"
+    },
+    {
+     "s": "ding",
+     "at": "pan"
+    },
+    {
+     "s": "pop",
+     "at": "snacks"
+    },
+    {
+     "s": "cash",
+     "at": "ninety"
+    }
+   ]
+  },
+  {
+   "id": "c1e",
+   "text": "The receipt says one hundred twenty four dollars and ninety five cents.",
+   "host": true,
+   "mood": "shock",
+   "pose": "panic",
+   "slam": {
+    "t": "$124.95",
+    "at": "twenty"
+   },
+   "zoom": {
+    "in": "hundred",
+    "out": "cents"
+   },
+   "sfx": [
+    {
+     "s": "drumroll",
+     "at": "receipt"
+    },
+    {
+     "s": "pack/01_boom",
+     "at": "hundred"
+    },
+    {
+     "s": "trombone",
+     "at": "cents"
+    }
+   ]
+  },
+  {
+   "id": "n2",
+   "text": "Bob with my twenty dollars.",
+   "meme": {
+    "t": "vs",
+    "a": "Me: about $90",
+    "b": "Receipt: $124.95",
+    "at": "Bob"
+   },
+   "sfx": [
+    {
+     "s": "cash",
+     "at": "twenty"
+    }
+   ]
+  },
+  {
+   "id": "c1f",
+   "text": "I didn't forget anything. My brain kept the first digit of every price and threw the rest away. Like a guy who reads the first word of your text and replies okay.",
+   "host": true,
+   "mood": "tired",
+   "pose": "facepalm",
+   "pic": {
+    "id": "text_msg",
+    "at": "text",
+    "look": "circle"
+   },
+   "sfx": [
+    {
+     "s": "ding",
+     "at": "first"
+    },
+    {
+     "s": "whoosh",
+     "at": "threw"
+    },
+    {
+     "s": "boing",
+     "at": "okay"
+    }
+   ]
+  },
+  {
+   "id": "c1g",
+   "text": "And before you laugh at me look at this shelf tag. Is your gut saying three bucks or four?",
+   "pic": {
+    "id": "tagwow",
+    "at": "tag",
+    "look": "tape"
+   },
+   "sfx": [
+    {
+     "s": "tick",
+     "at": "gut"
+    },
+    {
+     "s": "ding",
+     "at": "four"
+    }
+   ]
+  },
+  {
+   "id": "c1h",
+   "text": "Now three at once. You've got three seconds. Add them up in your head. No calculator.",
+   "host": true,
+   "mood": "suspicious",
+   "pose": "point_r",
+   "pic": {
+    "id": "calculator",
+    "at": "calculator",
+    "look": "sticker"
+   },
+   "sfx": [
+    {
+     "s": "tick",
+     "at": "three"
+    },
+    {
+     "s": "tick",
+     "at": "seconds"
+    },
+    {
+     "s": "scratch",
+     "at": "calculator"
+    }
+   ]
+  },
+  {
+   "id": "c1i",
+   "text": "If you got somewhere around ninety congratulations. You're me. The real total is three cents short of a hundred.",
+   "host": true,
+   "mood": "grin",
+   "pose": "shrug",
+   "zoom": {
+    "in": "You're",
+    "out": "me"
+   },
+   "sfx": [
+    {
+     "s": "ding",
+     "at": "ninety"
+    },
+    {
+     "s": "boom",
+     "at": "me"
+    },
+    {
+     "s": "coin",
+     "at": "hundred"
+    }
+   ]
+  },
+  {
+   "id": "n3",
+   "text": "Everyone who just did the math.",
+   "meme": {
+    "t": "fine",
+    "a": "I'm good at math",
+    "at": "math"
+   },
+   "sfx": [
+    {
+     "s": "cricket",
+     "at": "math"
+    }
+   ]
+  },
+  {
+   "id": "c1j",
+   "text": "So I'm out twenty dollars and I want to know how a trick this dumb beat me. And the trail starts in an Ohio bar in eighteen seventy nine.",
+   "pic": {
+    "id": "saloon",
+    "at": "bar",
+    "look": "polaroid",
+    "label": "Ohio 1879"
+   },
+   "sfx": [
+    {
+     "s": "cash",
+     "at": "twenty"
+    },
+    {
+     "s": "flip",
+     "at": "Ohio"
+    },
+    {
+     "s": "riser",
+     "at": "nine"
+    }
+   ]
+  },
+  {
+   "id": "c2a",
+   "text": "A bar owner in Dayton named James Ritty was sure his bartenders were stealing from him.",
+   "chapter": "Who Started This?",
+   "host": true,
+   "mood": "suspicious",
+   "pose": "talk",
+   "pic": {
+    "id": "register",
+    "at": "bartenders",
+    "look": "tape"
+   },
+   "sfx": [
+    {
+     "s": "ding",
+     "at": "Ritty"
+    },
+    {
+     "s": "sting",
+     "at": "stealing"
+    }
+   ]
+  },
+  {
+   "id": "c2b",
+   "text": "So he invented a machine he called the Incorruptible Cashier. You know it as the cash register.",
+   "pic": {
+    "id": "rittydial",
+    "at": "machine",
+    "look": "polaroid",
+    "label": "the first one"
+   },
+   "slam": {
+    "t": "INCORRUPTIBLE",
+    "at": "Incorruptible"
+   },
+   "sfx": [
+    {
+     "s": "pack/01_processing",
+     "at": "machine"
+    },
+    {
+     "s": "stamp",
+     "at": "Incorruptible"
+    },
+    {
+     "s": "cash",
+     "at": "register"
+    }
+   ]
+  },
+  {
+   "id": "c2c",
+   "text": "And here's the legend. If your drink costs one round dollar the bartender can slide that bill into his pocket. At ninety nine cents he has to open the drawer for your penny.",
+   "host": true,
+   "mood": "grin",
+   "pose": "point_up",
+   "zoom": {
+    "in": "open",
+    "out": "drawer"
+   },
+   "sfx": [
+    {
+     "s": "whoosh",
+     "at": "slide"
+    },
+    {
+     "s": "pack/01_beating",
+     "at": "pocket"
+    },
+    {
+     "s": "cash",
+     "at": "drawer"
+    }
+   ]
+  },
+  {
+   "id": "n4",
+   "text": "The bartender when the drink costs ninety nine cents.",
+   "meme": {
+    "t": "drake",
+    "a": "Round dollar into my pocket",
+    "b": "Open the drawer for a penny",
+    "at": "bartender"
+   },
+   "sfx": [
+    {
+     "s": "pop",
+     "at": "bartender"
+    }
+   ]
+  },
+  {
+   "id": "c2d",
+   "text": "Great story. It's all over the internet. But nobody ever found a shop owner from back then saying that's why he did it.",
+   "host": true,
+   "mood": "smug",
+   "pose": "shrug",
+   "sfx": [
+    {
+     "s": "ding",
+     "at": "Great"
+    },
+    {
+     "s": "scratch",
+     "at": "nobody"
+    },
+    {
+     "s": "cricket",
+     "at": "did"
+    }
+   ]
+  },
+  {
+   "id": "c2e",
+   "text": "There's another legend about a Chicago newspaper man named Melville Stone who sold his paper for one penny. Supposedly shops priced things one cent under so you'd get a penny back for his paper.",
+   "pic": {
+    "id": "stone",
+    "at": "Stone",
+    "look": "polaroid",
+    "label": "Melville Stone"
+   },
+   "sfx": [
+    {
+     "s": "flip",
+     "at": "newspaper"
+    },
+    {
+     "s": "coin",
+     "at": "penny"
+    },
+    {
+     "s": "ding",
+     "at": "paper#2"
+    }
+   ]
+  },
+  {
+   "id": "c2f",
+   "text": "Except someone dug through that paper's old ads and prices ending in nine were rare back then. So I lost twenty bucks to a rumor.",
+   "host": true,
+   "mood": "tired",
+   "pose": "facepalm",
+   "slam": {
+    "t": "A RUMOR",
+    "at": "rumor"
+   },
+   "sfx": [
+    {
+     "s": "paper",
+     "at": "dug"
+    },
+    {
+     "s": "trombone",
+     "at": "rumor"
+    }
+   ]
+  },
+  {
+   "id": "n5",
+   "text": "Nobody knows who started the ninety nine. But we know why it never stopped. And that part happens inside your head.",
+   "card": {
+    "t": "It lives inside your head.",
+    "dark": true
+   },
+   "sfx": [
+    {
+     "s": "pack/01_boom",
+     "at": "head"
+    }
+   ],
+   "pause": 0.5
+  },
+  {
+   "id": "c3a",
+   "text": "So let's test your brain on something that isn't even a price. Look at the miles on this used truck.",
+   "host": true,
+   "mood": "think",
+   "pose": "point_r",
+   "pic": {
+    "id": "odo",
+    "at": "miles",
+    "look": "tape",
+    "label": "99,173 mi"
+   },
+   "sfx": [
+    {
+     "s": "pack/01_processing",
+     "at": "test"
+    },
+    {
+     "s": "ding",
+     "at": "miles"
+    }
+   ]
+  },
+  {
+   "id": "c3b",
+   "text": "Ninety nine thousand miles feels a lot younger than a hundred thousand right? The gap is one long weekend of driving.",
+   "pic": {
+    "id": "road_trip",
+    "at": "weekend",
+    "look": "polaroid"
+   },
+   "sfx": [
+    {
+     "s": "ding",
+     "at": "younger"
+    },
+    {
+     "s": "whoosh",
+     "at": "driving"
+    }
+   ]
+  },
+  {
+   "id": "c3c",
+   "text": "Economists looked at millions of used car sales. A car sold just under a big round mileage number went for about two hundred dollars more than the same car just over it.",
+   "host": true,
+   "mood": "shock",
+   "pose": "panic",
+   "pic": {
+    "id": "used_cars",
+    "at": "car",
+    "look": "tape"
+   },
+   "slam": {
+    "t": "+$200",
+    "at": "two"
+   },
+   "sfx": [
+    {
+     "s": "ding",
+     "at": "millions"
+    },
+    {
+     "s": "cash",
+     "at": "dollars"
+    },
+    {
+     "s": "boom",
+     "at": "over"
+    }
+   ]
+  },
+  {
+   "id": "n6",
+   "text": "Car buyers at ninety nine thousand miles versus a hundred thousand.",
+   "meme": {
+    "t": "vs",
+    "a": "99,000 miles: basically new",
+    "b": "100,000 miles: ancient",
+    "at": "Car"
+   },
+   "sfx": [
+    {
+     "s": "boing",
+     "at": "hundred"
+    }
+   ]
+  },
+  {
+   "id": "c3d",
+   "text": "Here's what's going on. You read from left to right. And your brain decides how big a number is before your eyes reach the end. Scientists call it the left digit effect.",
+   "host": true,
+   "mood": "smug",
+   "pose": "point_up",
+   "slam": {
+    "t": "LEFT DIGIT EFFECT",
+    "at": "left#2"
+   },
+   "sfx": [
+    {
+     "s": "whoosh",
+     "at": "left"
+    },
+    {
+     "s": "pack/01_processing",
+     "at": "decides"
+    },
+    {
+     "s": "stamp",
+     "at": "digit"
+    }
+   ]
+  },
+  {
+   "id": "c3e",
+   "text": "Researchers at New York University tested it. Two ninety nine felt way cheaper than three dollars. But when the first digit stayed the same that one cent did almost nothing.",
+   "pic": {
+    "id": "nyu",
+    "at": "University",
+    "look": "news",
+    "label": "New York University"
+   },
+   "sfx": [
+    {
+     "s": "ding",
+     "at": "tested"
+    },
+    {
+     "s": "coin",
+     "at": "cent"
+    },
+    {
+     "s": "cricket",
+     "at": "nothing"
+    }
+   ]
+  },
+  {
+   "id": "c3f",
+   "text": "And I do this with everything. I'm thirty nine years and eleven months old and I tell people I'm thirty something.",
+   "host": true,
+   "mood": "grin",
+   "pose": "shrug",
+   "pic": {
+    "id": "cake",
+    "at": "years",
+    "look": "sticker"
+   },
+   "zoom": {
+    "in": "thirty#2",
+    "out": "something"
+   },
+   "sfx": [
+    {
+     "s": "tick",
+     "at": "eleven"
+    },
+    {
+     "s": "boing",
+     "at": "something"
+    }
+   ]
+  },
+  {
+   "id": "n7",
+   "text": "Me at thirty nine and eleven months.",
+   "meme": {
+    "t": "fine",
+    "a": "Basically thirty",
+    "at": "months"
+   },
+   "sfx": [
+    {
+     "s": "cricket",
+     "at": "months"
+    }
+   ]
+  },
+  {
+   "id": "c3g",
+   "text": "Now guess with me. When a price climbs one cent from four ninety nine to five dollars how many cents does that feel like to shoppers? Put your number in the comments.",
+   "host": true,
+   "mood": "suspicious",
+   "pose": "point_r",
+   "slam": {
+    "t": "GUESS",
+    "at": "guess"
+   },
+   "sfx": [
+    {
+     "s": "tick",
+     "at": "guess"
+    },
+    {
+     "s": "coin",
+     "at": "cent"
+    },
+    {
+     "s": "pop",
+     "at": "comments"
+    }
+   ]
+  },
+  {
+   "id": "c4a",
+   "text": "While you think about it I found a man who built a whole empire on those two little nines. His name was Dave Gold. Great name.",
+   "host": true,
+   "mood": "happy",
+   "pose": "present",
+   "zoom": {
+    "in": "Great",
+    "out": "name"
+   },
+   "sfx": [
+    {
+     "s": "ding",
+     "at": "empire"
+    },
+    {
+     "s": "pack/03_evolve_boom_brass_d",
+     "at": "Gold"
+    },
+    {
+     "s": "boom",
+     "at": "name"
+    }
+   ]
+  },
+  {
+   "id": "c4b",
+   "text": "Gold ran a little liquor store in Los Angeles. When he put wine on sale for a dollar and two cents it just sat there. At ninety eight cents it sat there too.",
+   "pic": {
+    "id": "wine",
+    "at": "wine",
+    "look": "tape"
+   },
+   "sfx": [
+    {
+     "s": "ding",
+     "at": "wine"
+    },
+    {
+     "s": "cricket",
+     "at": "there"
+    },
+    {
+     "s": "cricket",
+     "at": "too"
+    }
+   ]
+  },
+  {
+   "id": "c4c",
+   "text": "But when he wrote ninety nine cents on the sign it was gone in no time. He called it a magic number.",
+   "host": true,
+   "mood": "shock",
+   "pose": "celebrate",
+   "slam": {
+    "t": "MAGIC NUMBER",
+    "at": "magic"
+   },
+   "sfx": [
+    {
+     "s": "whoosh",
+     "at": "gone"
+    },
+    {
+     "s": "pack/01_evolve_brassy_swell",
+     "at": "magic"
+    }
+   ]
+  },
+  {
+   "id": "c4d",
+   "text": "Read that again. The wine sold better at ninety nine cents than at ninety eight. A higher price beat a lower one just because of how it looked.",
+   "host": true,
+   "mood": "smug",
+   "pose": "point_up",
+   "zoom": {
+    "in": "higher",
+    "out": "lower"
+   },
+   "sfx": [
+    {
+     "s": "scratch",
+     "at": "higher"
+    },
+    {
+     "s": "boom",
+     "at": "looked"
+    }
+   ]
+  },
+  {
+   "id": "n8",
+   "text": "My brain reading prices.",
+   "meme": {
+    "t": "brain",
+    "a": "98 cents",
+    "b": "99 cents",
+    "c": "99 cents but it's magic",
+    "at": "brain"
+   },
+   "sfx": [
+    {
+     "s": "pack/01_processing",
+     "at": "brain"
+    }
+   ]
+  },
+  {
+   "id": "c4e",
+   "text": "So he opened a store where everything cost ninety nine cents. It grew into hundreds of stores. And when costs went up the new price was ninety nine point nine nine cents.",
+   "pic": {
+    "id": "nn",
+    "at": "store",
+    "look": "polaroid",
+    "label": "99 Cents Only"
+   },
+   "sfx": [
+    {
+     "s": "ding",
+     "at": "store"
+    },
+    {
+     "s": "crowd",
+     "at": "hundreds"
+    },
+    {
+     "s": "scratch",
+     "at": "point"
+    }
+   ]
+  },
+  {
+   "id": "c4f",
+   "text": "And he wasn't alone. Steve Jobs priced every song in his new music store at ninety nine cents. It sold a million songs in the first week.",
+   "pic": {
+    "id": "ipod",
+    "at": "song",
+    "look": "sticker"
+   },
+   "sfx": [
+    {
+     "s": "ding",
+     "at": "Jobs"
+    },
+    {
+     "s": "coin",
+     "at": "ninety"
+    },
+    {
+     "s": "crowd",
+     "at": "million"
+    }
+   ]
+  },
+  {
+   "id": "n9",
+   "text": "Apple deciding song prices.",
+   "meme": {
+    "t": "buttons",
+    "a": "One dollar",
+    "b": "99 cents",
+    "at": "Apple"
+   },
+   "sfx": [
+    {
+     "s": "pack/01_beating",
+     "at": "Apple"
+    }
+   ]
+  },
+  {
+   "id": "c5a",
+   "text": "And now I wanted to know who decides my lamp costs nineteen ninety nine and not twenty. Because somebody does.",
+   "chapter": "The Office That Picks The Last Digit",
+   "host": true,
+   "mood": "think",
+   "pose": "think",
+   "pic": {
+    "id": "lamp",
+    "at": "lamp",
+    "look": "circle"
+   },
+   "sfx": [
+    {
+     "s": "pack/01_processing",
+     "at": "decides"
+    },
+    {
+     "s": "ding",
+     "at": "lamp"
+    },
+    {
+     "s": "boom",
+     "at": "does"
+    }
+   ]
+  },
+  {
+   "id": "c5b",
+   "text": "Every big chain has a pricing office. Choosing the last digit is somebody's actual job. With a spreadsheet.",
+   "pic": {
+    "id": "spreadsheet",
+    "at": "spreadsheet",
+    "look": "tape"
+   },
+   "sfx": [
+    {
+     "s": "ding",
+     "at": "office"
+    },
+    {
+     "s": "click",
+     "at": "spreadsheet"
+    }
+   ]
+  },
+  {
+   "id": "n10",
+   "text": "Somebody at a store literally gets paid to pick the nine. Imagine telling your mom that's your job.",
+   "host": true,
+   "mood": "grin",
+   "pose": "shrug",
+   "zoom": {
+    "in": "pick",
+    "out": "nine"
+   },
+   "sfx": [
+    {
+     "s": "cash",
+     "at": "paid"
+    },
+    {
+     "s": "boom",
+     "at": "nine"
+    },
+    {
+     "s": "boing",
+     "at": "mom"
+    }
+   ]
+  },
+  {
+   "id": "c5c",
+   "text": "Economists checked eight years of prices from a big supermarket. Nine was the most common last digit of all.",
+   "pic": {
+    "id": "supermarket",
+    "at": "supermarket",
+    "look": "polaroid"
+   },
+   "sfx": [
+    {
+     "s": "flip",
+     "at": "eight"
+    },
+    {
+     "s": "stamp",
+     "at": "Nine"
+    }
+   ]
+  },
+  {
+   "id": "c5d",
+   "text": "And here's your answer. A researcher tracked thousands of products in twenty five store chains. When a price goes from four ninety nine to five dollars shoppers react like it went up about twenty cents.",
+   "host": true,
+   "mood": "shock",
+   "pose": "panic",
+   "slam": {
+    "t": "1¢ FEELS LIKE 20¢",
+    "at": "twenty#2"
+   },
+   "sfx": [
+    {
+     "s": "drumroll",
+     "at": "answer"
+    },
+    {
+     "s": "coin",
+     "at": "five"
+    },
+    {
+     "s": "pack/01_boom",
+     "at": "twenty#2"
+    }
+   ]
+  },
+  {
+   "id": "c5e",
+   "text": "One penny hits your brain like twenty of them. So a store that knocks off one cent gets treated like it gave you a real discount.",
+   "card": {
+    "t": "One penny feels like twenty.",
+    "dark": true
+   },
+   "sfx": [
+    {
+     "s": "pack/01_boom",
+     "at": "twenty"
+    }
+   ],
+   "pause": 0.5
+  },
+  {
+   "id": "n11",
+   "text": "Stores finding out one cent feels like twenty.",
+   "meme": {
+    "t": "stonks",
+    "a": "ONE CENT DISCOUNT",
+    "at": "Stores"
+   },
+   "sfx": [
+    {
+     "s": "cash",
+     "at": "Stores"
+    }
+   ]
+  },
+  {
+   "id": "c5f",
+   "text": "Want proof it prints money? Economists ran a test on twenty one million riders of the ride app Lyft.",
+   "pic": {
+    "id": "lyft",
+    "at": "Lyft",
+    "look": "polaroid"
+   },
+   "sfx": [
+    {
+     "s": "ding",
+     "at": "proof"
+    },
+    {
+     "s": "crowd",
+     "at": "million"
+    }
+   ]
+  },
+  {
+   "id": "c5g",
+   "text": "About half of everything a cheaper fare did happened at the moment the price slipped under a round dollar. Worth around one hundred sixty million dollars a year to them.",
+   "host": true,
+   "mood": "shock",
+   "pose": "point_r",
+   "slam": {
+    "t": "$160M A YEAR",
+    "at": "sixty"
+   },
+   "sfx": [
+    {
+     "s": "pack/01_processing",
+     "at": "half"
+    },
+    {
+     "s": "scratch",
+     "at": "slipped"
+    },
+    {
+     "s": "cash",
+     "at": "million"
+    }
+   ]
+  },
+  {
+   "id": "c5h",
+   "text": "So who wins? Not one evil guy in a tower. A quiet office with a spreadsheet. Using a glitch inside your own head.",
+   "host": true,
+   "mood": "suspicious",
+   "pose": "hips",
+   "zoom": {
+    "in": "own",
+    "out": "head"
+   },
+   "sfx": [
+    {
+     "s": "ding",
+     "at": "wins"
+    },
+    {
+     "s": "sting",
+     "at": "glitch"
+    },
+    {
+     "s": "boom",
+     "at": "head"
+    }
+   ]
+  },
+  {
+   "id": "n19",
+   "text": "Think about how many prices you see in one week. Groceries and gas and apps and rent and that little snack at the counter. Every single one gets the same tiny haircut in your head.",
+   "pic": {
+    "id": "snack_counter",
+    "at": "counter",
+    "look": "tape"
+   },
+   "sfx": [
+    {
+     "s": "ding",
+     "at": "Groceries"
+    },
+    {
+     "s": "ding",
+     "at": "gas"
+    },
+    {
+     "s": "pop",
+     "at": "snack"
+    },
+    {
+     "s": "scratch",
+     "at": "haircut"
+    }
+   ]
+  },
+  {
+   "id": "c6a",
+   "text": "And if you think one cent is the smallest thing they'd shave off wait until you look at a gas station sign.",
+   "pic": {
+    "id": "gas",
+    "at": "gas",
+    "look": "tape"
+   },
+   "sfx": [
+    {
+     "s": "riser",
+     "at": "smallest"
+    },
+    {
+     "s": "ding",
+     "at": "gas"
+    }
+   ]
+  },
+  {
+   "id": "c6b",
+   "text": "See the tiny number next to the price? That's nine tenths of a cent. There's no coin in your pocket for that.",
+   "host": true,
+   "mood": "shock",
+   "pose": "panic",
+   "slam": {
+    "t": "9/10 OF A CENT",
+    "at": "tenths"
+   },
+   "sfx": [
+    {
+     "s": "pop",
+     "at": "tiny"
+    },
+    {
+     "s": "stamp",
+     "at": "tenths"
+    },
+    {
+     "s": "cricket",
+     "at": "that"
+    }
+   ]
+  },
+  {
+   "id": "c6c",
+   "text": "It started in the nineteen thirties when gas taxes came in slivers of a cent. The taxes changed. The nine tenths never left.",
+   "pic": {
+    "id": "gas1936",
+    "at": "thirties",
+    "look": "polaroid",
+    "label": "1930s"
+   },
+   "sfx": [
+    {
+     "s": "flip",
+     "at": "thirties"
+    },
+    {
+     "s": "scratch",
+     "at": "never"
+    }
+   ]
+  },
+  {
+   "id": "c6d",
+   "text": "On one tank it's about a dime. But Americans burn so much gas that the invisible fraction adds up to more than a billion dollars a year.",
+   "host": true,
+   "mood": "angry",
+   "pose": "talk",
+   "pic": {
+    "id": "tanker",
+    "at": "gas",
+    "look": "tape"
+   },
+   "zoom": {
+    "in": "billion",
+    "out": "year"
+   },
+   "sfx": [
+    {
+     "s": "coin",
+     "at": "dime"
+    },
+    {
+     "s": "pack/02_deep",
+     "at": "billion"
+    },
+    {
+     "s": "boom",
+     "at": "year"
+    }
+   ]
+  },
+  {
+   "id": "n12",
+   "text": "Me paying for a coin that doesn't exist.",
+   "meme": {
+    "t": "fine",
+    "a": "$0.009 well spent",
+    "at": "coin"
+   },
+   "sfx": [
+    {
+     "s": "cricket",
+     "at": "coin"
+    }
+   ]
+  },
+  {
+   "id": "c7a",
+   "text": "So I had one hopeful thought. If we all hate being tricked then a store that stops doing it should win. One huge company tried exactly that.",
+   "chapter": "The Store That Told The Truth",
+   "host": true,
+   "mood": "happy",
+   "pose": "point_up",
+   "sfx": [
+    {
+     "s": "ding",
+     "at": "hopeful"
+    },
+    {
+     "s": "riser",
+     "at": "tried"
+    }
+   ]
+  },
+  {
+   "id": "c7b",
+   "text": "In twenty eleven J C Penney hired a new boss. Ron Johnson. The guy who built the Apple Store.",
+   "pic": {
+    "id": "jcp",
+    "at": "Penney",
+    "look": "news",
+    "label": "J. C. Penney"
+   },
+   "sfx": [
+    {
+     "s": "ding",
+     "at": "Penney"
+    },
+    {
+     "s": "pack/01_evolve_brassy_swell",
+     "at": "Apple"
+    }
+   ]
+  },
+  {
+   "id": "c7c",
+   "text": "His new company was running five hundred ninety different sales in a single year. So he cut the sales. Killed the coupons. And every price ended in a nice honest zero.",
+   "host": true,
+   "mood": "happy",
+   "pose": "present",
+   "pic": {
+    "id": "coupon",
+    "at": "coupons",
+    "look": "sticker"
+   },
+   "slam": {
+    "t": "FAIR AND SQUARE",
+    "at": "honest"
+   },
+   "sfx": [
+    {
+     "s": "scratch",
+     "at": "cut"
+    },
+    {
+     "s": "scratch",
+     "at": "Killed"
+    },
+    {
+     "s": "ding",
+     "at": "zero"
+    }
+   ]
+  },
+  {
+   "id": "c7d",
+   "text": "Be honest with me. You'd love a store like that. Right?",
+   "host": true,
+   "mood": "smug",
+   "pose": "point_r",
+   "zoom": {
+    "in": "love",
+    "out": "that"
+   },
+   "sfx": [
+    {
+     "s": "ding",
+     "at": "love"
+    },
+    {
+     "s": "boom",
+     "at": "Right"
+    }
+   ]
+  },
+  {
+   "id": "c7e",
+   "text": "Shoppers walked away. Sales fell by about four billion dollars in one year. A quarter of the whole business.",
+   "host": true,
+   "mood": "shock",
+   "pose": "panic",
+   "slam": {
+    "t": "-$4 BILLION",
+    "at": "four"
+   },
+   "sfx": [
+    {
+     "s": "whoosh",
+     "at": "walked"
+    },
+    {
+     "s": "pack/02_evolve_brassy_drop_2",
+     "at": "billion"
+    },
+    {
+     "s": "trombone",
+     "at": "business"
+    }
+   ]
+  },
+  {
+   "id": "n13",
+   "text": "Shoppers seeing honest prices at J C Penney.",
+   "meme": {
+    "t": "drake",
+    "a": "Honest $20",
+    "b": "$19.99 with a fake sale",
+    "at": "Shoppers"
+   },
+   "sfx": [
+    {
+     "s": "pop",
+     "at": "Shoppers"
+    }
+   ]
+  },
+  {
+   "id": "c7f",
+   "text": "Johnson was out after seventeen months. The coupons came right back. And here's the ugly truth. The stores aren't forcing this on us. We punish the honest price.",
+   "pic": {
+    "id": "johnson",
+    "at": "Johnson",
+    "look": "polaroid",
+    "label": "Ron Johnson"
+   },
+   "sfx": [
+    {
+     "s": "stamp",
+     "at": "out"
+    },
+    {
+     "s": "ding",
+     "at": "back"
+    },
+    {
+     "s": "sting",
+     "at": "punish"
+    }
+   ]
+  },
+  {
+   "id": "n14",
+   "text": "We reward the pretty price and punish the honest one.",
+   "card": {
+    "t": "We punish the honest price.",
+    "dark": true
+   },
+   "sfx": [
+    {
+     "s": "pack/01_boom",
+     "at": "honest"
+    }
+   ],
+   "pause": 0.5
+  },
+  {
+   "id": "c8a",
+   "text": "And then America stopped making the penny. The last ones were made in Philadelphia in November twenty twenty five.",
+   "pic": {
+    "id": "mint",
+    "at": "Philadelphia",
+    "look": "news",
+    "label": "U.S. Mint"
+   },
+   "sfx": [
+    {
+     "s": "ding",
+     "at": "penny"
+    },
+    {
+     "s": "stamp",
+     "at": "last"
+    }
+   ]
+  },
+  {
+   "id": "c8b",
+   "text": "Each penny cost almost four cents to make. Which is a very strange way to run a one cent coin.",
+   "host": true,
+   "mood": "grin",
+   "pose": "shrug",
+   "pic": {
+    "id": "pennies",
+    "at": "penny",
+    "look": "circle"
+   },
+   "zoom": {
+    "in": "strange",
+    "out": "coin"
+   },
+   "sfx": [
+    {
+     "s": "coin",
+     "at": "four"
+    },
+    {
+     "s": "boing",
+     "at": "strange"
+    },
+    {
+     "s": "boom",
+     "at": "coin"
+    }
+   ]
+  },
+  {
+   "id": "c8c",
+   "text": "So the ninety nine should be dead. Right? Nope. Stores can round your cash total to the nearest nickel. But tap your card and you still pay nine ninety nine.",
+   "host": true,
+   "mood": "suspicious",
+   "pose": "talk",
+   "sfx": [
+    {
+     "s": "scratch",
+     "at": "Nope"
+    },
+    {
+     "s": "coin",
+     "at": "nickel"
+    },
+    {
+     "s": "click",
+     "at": "tap"
+    }
+   ]
+  },
+  {
+   "id": "c8d",
+   "text": "And the tag on the shelf still says nine ninety nine. The coin died and the trick didn't even blink.",
+   "pic": {
+    "id": "shelf_tag",
+    "at": "tag",
+    "look": "tape"
+   },
+   "sfx": [
+    {
+     "s": "pack/01_boom",
+     "at": "died"
+    },
+    {
+     "s": "cricket",
+     "at": "blink"
+    }
+   ]
+  },
+  {
+   "id": "n15",
+   "text": "The ninety nine after the penny died.",
+   "meme": {
+    "t": "fine",
+    "a": "Still here",
+    "at": "died"
+   },
+   "sfx": [
+    {
+     "s": "cricket",
+     "at": "died"
+    }
+   ]
+  },
+  {
+   "id": "c9a",
+   "text": "But then I noticed something. The trick only works in the first second while your brain is on autopilot. So what if I grab the wheel? Quick reminder this is education and not advice.",
+   "host": true,
+   "mood": "happy",
+   "pose": "point_up",
+   "pic": {
+    "id": "wheel",
+    "at": "wheel",
+    "look": "circle"
+   },
+   "slam": {
+    "t": "GRAB THE WHEEL",
+    "at": "grab"
+   },
+   "sfx": [
+    {
+     "s": "ding",
+     "at": "noticed"
+    },
+    {
+     "s": "whoosh",
+     "at": "grab"
+    },
+    {
+     "s": "ding",
+     "at": "advice"
+    }
+   ]
+  },
+  {
+   "id": "c9b",
+   "text": "Rule one. I say every price out loud and round it up. Nineteen ninety nine is twenty. The cashier thinks I'm weird. I do not care.",
+   "host": true,
+   "mood": "smug",
+   "pose": "talk",
+   "pic": {
+    "id": "cashier",
+    "at": "cashier",
+    "look": "tape"
+   },
+   "zoom": {
+    "in": "not",
+    "out": "care"
+   },
+   "sfx": [
+    {
+     "s": "stamp",
+     "at": "one"
+    },
+    {
+     "s": "ding",
+     "at": "twenty"
+    },
+    {
+     "s": "boing",
+     "at": "weird"
+    },
+    {
+     "s": "boom",
+     "at": "care"
+    }
+   ]
+  },
+  {
+   "id": "n16",
+   "text": "It sounds silly. But it forces your brain to read the whole number and not just the first digit.",
+   "host": true,
+   "mood": "happy",
+   "pose": "point_up",
+   "sfx": [
+    {
+     "s": "ding",
+     "at": "whole"
+    },
+    {
+     "s": "pack/01_processing",
+     "at": "first"
+    }
+   ]
+  },
+  {
+   "id": "c9c",
+   "text": "Rule two. I keep a running total in round numbers while I shop. No more mystery receipts.",
+   "pic": {
+    "id": "cart",
+    "at": "total",
+    "look": "sticker"
+   },
+   "sfx": [
+    {
+     "s": "stamp",
+     "at": "two"
+    },
+    {
+     "s": "coin",
+     "at": "round"
+    },
+    {
+     "s": "paper",
+     "at": "receipts"
+    }
+   ]
+  },
+  {
+   "id": "c9d",
+   "text": "Rule three. One question. Would I still want this at the round price? If the lamp is a yes at nineteen ninety nine and a no at twenty then I never wanted the lamp. I wanted the nine.",
+   "host": true,
+   "mood": "smug",
+   "pose": "point_r",
+   "slam": {
+    "t": "YOU WANTED THE 9",
+    "at": "nine#2"
+   },
+   "sfx": [
+    {
+     "s": "stamp",
+     "at": "three"
+    },
+    {
+     "s": "pack/01_beating",
+     "at": "round"
+    },
+    {
+     "s": "boom",
+     "at": "nine#2"
+    }
+   ]
+  },
+  {
+   "id": "n17",
+   "text": "Me now at every checkout.",
+   "meme": {
+    "t": "drake",
+    "a": "Reading $19.99",
+    "b": "Saying TWENTY out loud",
+    "at": "checkout"
+   },
+   "sfx": [
+    {
+     "s": "pop",
+     "at": "checkout"
+    }
+   ]
+  },
+  {
+   "id": "c9e",
+   "text": "Then I knocked on Bob's door. Double or nothing. He watched me shop. I muttered round numbers the whole way like a man counting sheep. At the exit I said one hundred ten dollars.",
+   "pic": {
+    "id": "sheep",
+    "at": "sheep",
+    "look": "polaroid"
+   },
+   "sfx": [
+    {
+     "s": "thud",
+     "at": "knocked"
+    },
+    {
+     "s": "drumroll",
+     "at": "Double"
+    },
+    {
+     "s": "boing",
+     "at": "sheep"
+    },
+    {
+     "s": "ding",
+     "at": "ten"
+    }
+   ]
+  },
+  {
+   "id": "c9f",
+   "text": "The receipt said one hundred nine dollars and ninety four cents. Bob paid up. I got my twenty back and twenty more on top.",
+   "host": true,
+   "mood": "money",
+   "pose": "celebrate",
+   "slam": {
+    "t": "+$40",
+    "at": "paid"
+   },
+   "pic": {
+    "id": "cash",
+    "at": "twenty#2",
+    "look": "sticker"
+   },
+   "sfx": [
+    {
+     "s": "paper",
+     "at": "receipt"
+    },
+    {
+     "s": "crowd",
+     "at": "paid"
+    },
+    {
+     "s": "cash",
+     "at": "top"
+    }
+   ]
+  },
+  {
+   "id": "n18",
+   "text": "Bob handing me forty dollars.",
+   "meme": {
+    "t": "vs",
+    "a": "Bob before",
+    "b": "Bob after the round numbers",
+    "at": "forty"
+   },
+   "sfx": [
+    {
+     "s": "cash",
+     "at": "forty"
+    }
+   ]
+  },
+  {
+   "id": "r1",
+   "text": "Now it's your turn. Here's the exact tag from the first second of this video. Read it out loud. Round it up.",
+   "host": true,
+   "mood": "happy",
+   "pose": "point_r",
+   "pic": {
+    "id": "tag60",
+    "at": "tag",
+    "look": "polaroid",
+    "label": "say it out loud"
+   },
+   "sfx": [
+    {
+     "s": "drumroll",
+     "at": "turn"
+    },
+    {
+     "s": "ding",
+     "at": "tag"
+    },
+    {
+     "s": "pop",
+     "at": "up"
+    }
+   ]
+  },
+  {
+   "id": "r2",
+   "text": "Four hundred dollars. If that's the first thing your brain said then the trick just stopped working on you.",
+   "host": true,
+   "mood": "smug",
+   "pose": "thumbs",
+   "slam": {
+    "t": "TRICK BROKEN",
+    "at": "stopped"
+   },
+   "zoom": {
+    "in": "stopped",
+    "out": "you"
+   },
+   "sfx": [
+    {
+     "s": "pack/01_boom",
+     "at": "Four"
+    },
+    {
+     "s": "crowd",
+     "at": "stopped"
+    }
+   ]
+  },
+  {
+   "id": "r3",
+   "text": "The price isn't nineteen ninety nine. It's twenty. It was always twenty.",
+   "card": {
+    "t": "It was always twenty.",
+    "dark": true
+   },
+   "sfx": [
+    {
+     "s": "pack/01_boom",
+     "at": "always"
+    }
+   ],
+   "pause": 0.5
+  },
+  {
+   "id": "r4",
+   "text": "Oh and I finally said my real age out loud too. I'm forty. I took it pretty well.",
+   "host": true,
+   "mood": "tired",
+   "pose": "shrug",
+   "pic": {
+    "id": "candles",
+    "at": "forty",
+    "look": "circle"
+   },
+   "zoom": {
+    "in": "pretty",
+    "out": "well"
+   },
+   "sfx": [
+    {
+     "s": "boing",
+     "at": "forty"
+    },
+    {
+     "s": "boom",
+     "at": "well"
+    }
+   ]
+  },
+  {
+   "id": "r5",
+   "text": "Next time a very friendly guy at the phone store offers me a brand new phone for free. That should worry you.",
+   "pic": {
+    "id": "phone_store",
+    "at": "phone",
+    "look": "polaroid"
+   },
+   "sfx": [
+    {
+     "s": "ding",
+     "at": "free"
+    },
+    {
+     "s": "sting",
+     "at": "worry"
+    }
+   ]
+  },
+  {
+   "id": "r6",
+   "text": "Subscribe. It costs zero dollars. Not zero ninety nine. Zero.",
+   "host": true,
+   "mood": "grin",
+   "pose": "wave",
+   "zoom": {
+    "in": "Not",
+    "out": "Zero#2"
+   },
+   "sfx": [
+    {
+     "s": "ding",
+     "at": "Subscribe"
+    },
+    {
+     "s": "coin",
+     "at": "ninety"
+    },
+    {
+     "s": "boom",
+     "at": "Zero#2"
+    }
+   ]
+  }
  ]
 }

@@ -8,11 +8,23 @@
    "page": "https://commons.wikimedia.org/wiki/File:Xbox_360_FF_XIII_Special_Ed._bundle_price_tag_at_Target,_Tanforan.JPG"
   },
   {
-   "id": "tag60",
-   "file": "File:FF XIII Xbox 360 version price tag with gift card offer at Target, Tanforan.JPG",
-   "credit": "BrokenSphere",
+   "id": "store",
+   "file": "File:Central corridor at Target, Middletown, NY.jpg",
+   "credit": "Daniel Case",
    "license": "CC BY-SA 3.0",
-   "page": "https://commons.wikimedia.org/wiki/File:FF_XIII_Xbox_360_version_price_tag_with_gift_card_offer_at_Target,_Tanforan.JPG"
+   "page": "https://commons.wikimedia.org/wiki/File:Central_corridor_at_Target,_Middletown,_NY.jpg"
+  },
+  {
+   "id": "receipt",
+   "q": "shopping receipt"
+  },
+  {
+   "id": "headphones",
+   "q": "headphones"
+  },
+  {
+   "id": "text_msg",
+   "q": "mobile phone"
   },
   {
    "id": "tagwow",
@@ -22,11 +34,12 @@
    "page": "https://commons.wikimedia.org/wiki/File:%22wow%22_price_tag.jpg"
   },
   {
-   "id": "store",
-   "file": "File:Central corridor at Target, Middletown, NY.jpg",
-   "credit": "Daniel Case",
-   "license": "CC BY-SA 3.0",
-   "page": "https://commons.wikimedia.org/wiki/File:Central_corridor_at_Target,_Middletown,_NY.jpg"
+   "id": "calculator",
+   "q": "calculator"
+  },
+  {
+   "id": "saloon",
+   "q": "old saloon"
   },
   {
    "id": "register",
@@ -50,18 +63,31 @@
    "page": "https://commons.wikimedia.org/wiki/File:Melville_Elijah_Stone_by_WJ_Root,_c1890s.jpg"
   },
   {
-   "id": "jobs",
-   "file": "File:Steve Jobs Headshot 2010-CROP2.jpg",
-   "credit": "MetalGearLiquid, based on File:Steve_Jobs_Headshot_2010-CROP.jpg made by Matt Yohe",
-   "license": "CC BY-SA 3.0",
-   "page": "https://commons.wikimedia.org/wiki/File:Steve_Jobs_Headshot_2010-CROP2.jpg"
+   "id": "odo",
+   "file": "File:Odometer in a 1998 Ford F-150 at 99,173 mi (5917625346).jpg",
+   "credit": "cogdogblog",
+   "license": "CC BY 2.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Odometer_in_a_1998_Ford_F-150_at_99,173_mi_(5917625346).jpg"
   },
   {
-   "id": "ipod",
-   "file": "File:Ipod-classic-6th-gen.jpg",
-   "credit": "Evan-Amos",
-   "license": "Public domain",
-   "page": "https://commons.wikimedia.org/wiki/File:Ipod-classic-6th-gen.jpg"
+   "id": "road_trip",
+   "q": "highway road"
+  },
+  {
+   "id": "used_cars",
+   "q": "used car lot"
+  },
+  {
+   "id": "nyu",
+   "q": "New York University"
+  },
+  {
+   "id": "cake",
+   "q": "birthday cake candles"
+  },
+  {
+   "id": "wine",
+   "q": "wine bottles shelf"
   },
   {
    "id": "nn",
@@ -71,6 +97,25 @@
    "page": "https://commons.wikimedia.org/wiki/File:99_Cents_Only_Store_Las_Vegas,_Nevada.jpg"
   },
   {
+   "id": "ipod",
+   "file": "File:Ipod-classic-6th-gen.jpg",
+   "credit": "Evan-Amos",
+   "license": "Public domain",
+   "page": "https://commons.wikimedia.org/wiki/File:Ipod-classic-6th-gen.jpg"
+  },
+  {
+   "id": "lamp",
+   "q": "table lamp"
+  },
+  {
+   "id": "spreadsheet",
+   "q": "office computer"
+  },
+  {
+   "id": "supermarket",
+   "q": "supermarket aisle"
+  },
+  {
    "id": "lyft",
    "file": "File:Lyft Car Pink Mustache.jpg",
    "credit": "Quinn Dombrowski",
@@ -78,11 +123,8 @@
    "page": "https://commons.wikimedia.org/wiki/File:Lyft_Car_Pink_Mustache.jpg"
   },
   {
-   "id": "odo",
-   "file": "File:Odometer in a 1998 Ford F-150 at 99,173 mi (5917625346).jpg",
-   "credit": "cogdogblog",
-   "license": "CC BY 2.0",
-   "page": "https://commons.wikimedia.org/wiki/File:Odometer_in_a_1998_Ford_F-150_at_99,173_mi_(5917625346).jpg"
+   "id": "snack_counter",
+   "q": "convenience store counter"
   },
   {
    "id": "gas",
@@ -99,18 +141,8 @@
    "page": "https://commons.wikimedia.org/wiki/File:Gasoline_station,_Tremont_Avenue_and_Dock_Street,_Bronx_(NYPL_b13668355-482811).jpg"
   },
   {
-   "id": "pennies",
-   "file": "File:Pile of Pennies 3 (25890504285).jpg",
-   "credit": "cweyant from Syracuse, United States",
-   "license": "CC0",
-   "page": "https://commons.wikimedia.org/wiki/File:Pile_of_Pennies_3_(25890504285).jpg"
-  },
-  {
-   "id": "mint",
-   "file": "File:United States Mint Philadelphia.jpg",
-   "credit": "Beyond My Ken",
-   "license": "CC BY-SA 4.0",
-   "page": "https://commons.wikimedia.org/wiki/File:United_States_Mint_Philadelphia.jpg"
+   "id": "tanker",
+   "q": "fuel tanker truck"
   },
   {
    "id": "jcp",
@@ -120,6 +152,10 @@
    "page": "https://commons.wikimedia.org/wiki/File:JC_Penney_store_in_Dadeland_Mall,_Miami.jpg"
   },
   {
+   "id": "coupon",
+   "q": "coupons"
+  },
+  {
    "id": "johnson",
    "file": "File:Ron Johnson TCD 2015.jpg",
    "credit": "TechCrunch",
@@ -127,11 +163,57 @@
    "page": "https://commons.wikimedia.org/wiki/File:Ron_Johnson_TCD_2015.jpg"
   },
   {
-   "id": "champagne",
-   "file": "File:Champagne flute and bottle.jpg",
-   "credit": "Taken on September 22, 2005",
-   "license": "CC BY 2.0",
-   "page": "https://commons.wikimedia.org/wiki/File:Champagne_flute_and_bottle.jpg"
+   "id": "mint",
+   "file": "File:United States Mint Philadelphia.jpg",
+   "credit": "Beyond My Ken",
+   "license": "CC BY-SA 4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:United_States_Mint_Philadelphia.jpg"
+  },
+  {
+   "id": "pennies",
+   "file": "File:Pile of Pennies 3 (25890504285).jpg",
+   "credit": "cweyant from Syracuse, United States",
+   "license": "CC0",
+   "page": "https://commons.wikimedia.org/wiki/File:Pile_of_Pennies_3_(25890504285).jpg"
+  },
+  {
+   "id": "shelf_tag",
+   "q": "shelf price label"
+  },
+  {
+   "id": "wheel",
+   "q": "steering wheel"
+  },
+  {
+   "id": "cashier",
+   "q": "supermarket cashier"
+  },
+  {
+   "id": "cart",
+   "q": "shopping cart"
+  },
+  {
+   "id": "sheep",
+   "q": "sheep"
+  },
+  {
+   "id": "cash",
+   "q": "dollar bills"
+  },
+  {
+   "id": "tag60",
+   "file": "File:FF XIII Xbox 360 version price tag with gift card offer at Target, Tanforan.JPG",
+   "credit": "BrokenSphere",
+   "license": "CC BY-SA 3.0",
+   "page": "https://commons.wikimedia.org/wiki/File:FF_XIII_Xbox_360_version_price_tag_with_gift_card_offer_at_Target,_Tanforan.JPG"
+  },
+  {
+   "id": "candles",
+   "q": "birthday candles"
+  },
+  {
+   "id": "phone_store",
+   "q": "mobile phone shop"
   }
  ]
 }

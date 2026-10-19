@@ -1,0 +1,55 @@
+import React from 'react';
+import {Stage} from '../stage';
+
+export const Ep64: React.FC = () => (
+  <Stage
+    sub="c4e"
+    props={{
+      o1: {title: 'MY ORDER', sign: 'BURGER + WATER'},
+      o2: {title: "let's just split it evenly", bubble: 'sure... :)'},
+      c1b: {room: true, title: 'FRIDAY NIGHT', sign: 'STEAKHOUSE'},
+      c1d: {room: true, title: "TREVOR'S ORDER", sign: 'LOBSTER + 2 COCKTAILS'},
+      c1e: {room: true, title: "BOB'S ORDER", sign: 'BIGGEST STEAK + WINE'},
+      c1f: {room: true, title: 'THE BILL', phone: {title: 'TOTAL', value: '$474'}},
+      c1h: {room: true, title: '$474 ÷ 6', phone: {title: 'EACH PAYS', value: '$79'}, bubble: 'mine was $21'},
+      n2: {room: true, phone: {title: 'CARD TAPPED', value: '-$79'}},
+      n15: {room: true, title: "TREVOR'S DESSERT", bubble: 'I paid 1/3 of that cake'},
+      c2a: {phone: {title: 'DINNERS THIS YEAR', value: '24'}},
+      c2c: {phone: {title: '$58 × 24', value: '$1,392'}, money: 3},
+      c2d: {title: 'WHAT $1,392 COULD BE', sign: 'BEACH VACATION'},
+      c3a: {title: 'THE LUNCH EXPERIMENT', sign: '6 STRANGERS PER TABLE'},
+      c3d: {title: 'FREE LUNCH TABLE', sign: 'ATE 2× MORE'},
+      c4a: {title: 'THE NAPKIN MATH', phone: {title: 'LOBSTER', value: '$48'}},
+      c4c: {title: 'SPLIT 6 WAYS', phone: {title: 'TREVOR PAYS', value: '$8', color: '#2BB673'}, bubble: 'friends pay $40'},
+      c4e: {title: 'THE UNSCRUPULOUS DINER', sign: 'SPLIT = 5/6 OFF'},
+      c4f: {title: 'SPLIT TABLES SPENT', phone: {title: 'PER PERSON', value: '+36%'}},
+      c4h: {room: true, title: 'WHO WINS', money: 5},
+      c5b: {title: 'BEFORE LUNCH', bubble: '8 in 10 wanted separate bills'},
+      c5c: {room: true, title: 'EVERYONE THINKING', bubble: 'please not a split...'},
+      c6a: {notif: {title: 'GROUP CHAT', body: "Trevor's 30th: VEGAS weekend!"}},
+      c6b: {notif: {title: 'GROUP CHAT', body: '👍 👍 👍 👍  $640 each'}, phone: {title: 'MY BALANCE', value: '$410'}},
+      c6c: {title: 'THE WEDDING SEASON', sign: 'WEDDING + BACHELOR + TRIP'},
+      c6e: {title: 'LOTTERY STUDY', sign: 'WATCH THE NEIGHBORS'},
+      c6g: {title: 'NEXT DOOR', sign: 'NEW CAR (ON CREDIT)'},
+      c6h: {title: '1913', sign: 'KEEPING UP WITH THE JONESES'},
+      c6j: {phone: {title: 'FEED', value: 'trip · dinner · trip'}},
+      c6l: {phone: {title: 'CREDIT CARD', value: '-$640'}},
+      c7b: {room: true, title: 'SNEAKY FIX #1', bubble: 'skip the appetizers?'},
+      c7c: {room: true, title: 'SNEAKY FIX #2', sign: 'CEREAL OVER THE SINK'},
+      n18: {room: true, phone: {title: 'GROUP CHAT', value: 'MUTED'}},
+      c8a: {title: 'THE "SAYING NO" STUDY', sign: 'JULIAN GIVI'},
+      c8b: {title: 'SAID YES TO PLANS', phone: {title: 'THEY DIDN\'T WANT', value: '3 in 4'}},
+      c8d: {title: 'WHAT WE EXPECT', bubble: 'they will hate me'},
+      c8e: {title: 'WHAT REALLY HAPPENS', bubble: 'ok no worries!'},
+      c9b: {room: true, title: 'MOVE 1: TIMING', sign: 'BEFORE ANYONE ORDERS'},
+      c9g: {title: 'MOVE 3: A CHEAPER YES', sign: 'BACKYARD COOKOUT'},
+      c9h: {phone: {title: 'SPLIT APP', value: 'each pays own'}},
+      c10a: {room: true, title: 'FRIDAY AGAIN', sign: 'STEAKHOUSE'},
+      c10d: {room: true, bubble: 'oh thank goodness. me too'},
+      c10f: {room: true, title: "TREVOR'S NEW ORDER", sign: 'CHICKEN TENDERS'},
+      c10g: {room: true, phone: {title: 'I PAID', value: '$21', color: '#2BB673'}, money: 4},
+      n19: {notif: {title: 'TREVOR', body: 'send me that budget app?'}},
+      r3: {title: 'NEXT TIME', sign: 'FREE FLIGHT?'},
+    }}
+  />
+);
