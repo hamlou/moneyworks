@@ -34,7 +34,11 @@
   },
   {
    "id": "suburb_house",
-   "q": "suburban house"
+   "q": "suburban house",
+   "file": "File:Modern suburban house in the outskirts - Ljubljana, Slovenia.jpg",
+   "credit": "Sebastiaan Broekhoven",
+   "license": "CC BY-SA 4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Modern_suburban_house_in_the_outskirts_-_Ljubljana,_Slovenia.jpg"
   },
   {
    "id": "old_tv",
@@ -55,8 +59,8 @@
   {
    "id": "stairs",
    "q": "staircase",
-   "file": "File:Staircase of Liesikuja parking hall in Myyrm\u00e4ki, Vantaa, Finland, 2022 May.jpg",
-   "credit": "Ximonic (Simo R\u00e4s\u00e4nen)",
+   "file": "File:Staircase of Liesikuja parking hall in Myyrmäki, Vantaa, Finland, 2022 May.jpg",
+   "credit": "Ximonic (Simo Räsänen)",
    "license": "CC BY 4.0",
    "page": "https://commons.wikimedia.org/wiki/File:Staircase_of_Liesikuja_parking_hall_in_Myyrm%C3%A4ki,_Vantaa,_Finland,_2022_May.jpg"
   },
@@ -160,7 +164,7 @@
    "id": "pizza",
    "q": "pizza",
    "file": "File:Vegetarian Pizza.jpg",
-   "credit": "Petar Milo\u0161evi\u0107",
+   "credit": "Petar Milošević",
    "license": "CC BY-SA 4.0",
    "page": "https://commons.wikimedia.org/wiki/File:Vegetarian_Pizza.jpg"
   },
@@ -368,7 +372,7 @@
    "id": "alarm_clock",
    "q": "alarm clock",
    "file": "File:Classic alarm clock 20180513.jpg",
-   "credit": "Santeri Viinam\u00e4ki",
+   "credit": "Santeri Viinamäki",
    "license": "CC BY-SA 4.0",
    "page": "https://commons.wikimedia.org/wiki/File:Classic_alarm_clock_20180513.jpg"
   },
@@ -376,7 +380,7 @@
    "id": "shopping",
    "q": "shopping bags",
    "file": "File:Blokker shopping bags, Groningen (2019).jpg",
-   "credit": "Donald Trung Quoc Don (Ch\u1eef H\u00e1n: \u5fb5\u570b\u55ae) - Wikimedia Commons.(Want to use this image?)",
+   "credit": "Donald Trung Quoc Don (Chữ Hán: 徵國單) - Wikimedia Commons.(Want to use this image?)",
    "license": "CC BY-SA 4.0",
    "page": "https://commons.wikimedia.org/wiki/File:Blokker_shopping_bags,_Groningen_(2019).jpg"
   }
