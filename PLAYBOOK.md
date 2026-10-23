@@ -2,6 +2,8 @@
 
 The playbook is split in two. Read the one for the format you are building and do not mix their rules.
 
+**NEWEST (23 Oct 2026): long-form style = `STYLE_3D.md` (v6). It overrides `PLAYBOOK_LONG.md` and `UPGRADE.md` wherever they conflict.**
+
 | You are building | Read | Format |
 |---|---|---|
 | A long-form episode (`epNN`) | **`PLAYBOOK_LONG.md`** | 1920×1080, 10–12 min, story spine, real photo every 10–15 s, trend meme every ~30 s |

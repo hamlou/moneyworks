@@ -2,6 +2,14 @@
 
 **Owner starts a chat on claude.ai (repo `hamlou/moneyworks` connected) with:** `Read UPGRADE.md in my repo and follow it. Upgrade ep52.`
 
+## ★ v6 STYLE (owner, 23 Oct 2026) — overrides §2–§4 below where they conflict
+Copy the delivery of the owner's reference video "I posted SLEEPING VIDEOS for 30 days" (never copy its words, voice or character):
+- **Dave's experiment.** The episode becomes Dave trying the topic himself: goal + deadline + scoreboard said by 0:45 ("I gave myself 30 days and $500 to beat a casino"). Chapters = time steps (`"Day 1"`, `"Week 2"`, `"The Results"`), up to 10. Facts appear only as tools/obstacles Dave hits. Real-world numbers stay real and sourced; never present an invented result as real data.
+- **Writing:** long run-on sentences joined with and/so/but/which then a 1–3 word punch ("Ew." "Yuck." "Perfect."). One fake-out ("…is what I would have said if…"). Dave predicts wrong ≥ 3 times and admits it. Every number gets an absurd real comparison ("that's half what a peasant made in the 1700s"). ≥ 2 direct questions to the viewer with a silence after. Plant 2 callbacks and pay them late. One "Dave goes away" break near 70 % (`card` beats + photos, almost no words). End with the final scoreboard + ONE honest lesson + Dave's sign-off line. Still zero commas.
+- **Voice (fixes the robot sound):** add `"cb": {"cfg": 0.35, "exag": 0.5}` at top level. Beats = breath groups of 25–60 words (2–4 sentences of one thought); visuals inside a beat use `at` words. `"pause"`: 0.1 when the next beat continues the thought, 0.35 between thoughts, 0.8–1.2 before a punchline/reaction/fake-out reveal, 1.5 before a time skip. `"exag"` 0.45 dry asides, 0.6–0.7 hype lines. Target 180–200 words per minute.
+- **Length:** 2,500–3,300 words (≈ 13–18 min). The hook may run to 60 s but sentence one states the concept to "you" and the first 20 s show a jaw-drop real proof with a `pic`/`bg`.
+- **Visual with today's fields:** `meme` is retired (use `slam` + `sfx` "boom" as a comic gag every 25–40 s instead). Every scoreboard number = a `slam` on its word. `pic` looks: only `plain` or `news`. Chapter = time-step title. The full v6 look (3D Dave, UI cards, scoreboard TV, no captions) comes with the v6 kit — see `STYLE_3D.md` §7–§8 (you don't need to read it).
+
 ## 0. Budget rules (free plan — obey strictly)
 - Read ONLY this file + `pipeline/episodes/epNN.json`. Never open `src/`, playbooks, other episodes, workflows or Python. If unsure of the format, skim `pipeline/episodes/ep17.json` (finished example) — first 40 lines only.
 - No plan, no questions, no explanations. Output exactly: **block 1** = full new `pipeline/episodes/epNN.json`, **block 2** = full `pipeline/photos/epNN.json`, then the click list (§6). Nothing else.
@@ -91,4 +99,5 @@ One entry per photo id used. `q` = 2–4 plain English words naming a REAL, conc
 6. Actions → **render** → Run → `epNN`, chunks `10` → ✅ → open the run → download `epNN-video` → watch the first 60 s.
 
 ## 7. Silent self-check before output
+v6 first: experiment format + Day/Week chapters · `cb` block · breath-group beats 25–60 words · varied pauses · 2,500–3,300 words · no `meme` · fake-out + callbacks + viewer questions + break + sign-off. Then (where not overridden):
 Dave first person to "you" the whole time · zero commas · hook ≤ 75 words, no stats, no agenda · 1,750–2,000 words · every pic/meme/slam/zoom/sfx has an `at` word that exists in its beat · every photo shows the spoken noun · sounds ≥ 1 per beat, each meaningful · new `n*` beats are host/card or carry pic/meme · ≤ 4 chapters · valid JSON.

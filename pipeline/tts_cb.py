@@ -28,7 +28,9 @@ cache = ROOT / "pipeline" / "voice"
 
 def script_hash():
     import hashlib
-    key = [(b["id"], b["text"], b.get("pause"), b.get("chapter"), b.get("exag")) for b in beats]
+    key = [(b["id"], b["text"], b.get("pause"), b.get("chapter"), b.get("exag")) + ((b["cfg"],) if "cfg" in b else ()) for b in beats]
+    if spec.get("cb"):  # v6 voice settings (STYLE_3D.md §4); absent -> same hash as before, old caches stay valid
+        key.append(spec["cb"])
     return hashlib.sha1(json.dumps(key).encode()).hexdigest()[:16]
 
 
@@ -64,7 +66,10 @@ def shard(i, n):
         best = None
         for attempt in range(3):
             torch.manual_seed(1000 + j * 7 + attempt)
-            w = m.generate(b["text"], exaggeration=b.get("exag", 0.5), cfg_weight=0.5)
+            cbs = spec.get("cb", {})
+            ref = cbs.get("ref")  # owner's OWN recorded voice only (STYLE_3D.md §4), never another creator's
+            w = m.generate(b["text"], exaggeration=b.get("exag", cbs.get("exag", 0.5)), cfg_weight=b.get("cfg", cbs.get("cfg", 0.5)),
+                           **({"audio_prompt_path": str(ROOT / ref)} if ref else {}))
             tmp = cb / f"{b['id']}_raw.wav"
             ta.save(str(tmp), w, m.sr)
             x, _ = trim(pcm(tmp), SR)

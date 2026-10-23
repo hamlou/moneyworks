@@ -4,6 +4,8 @@
 
 This is the bible for the channel. Series 1 (ep01–ep10) was approved by the owner as **"exactly the style I was looking for for years"**. Every new episode must match it. Read this fully before writing anything.
 
+> **§0.13 = `STYLE_3D.md` (v6 "3D animator" style, owner, 23 Oct 2026) is THE NEWEST rule set and overrides everything in this file where they conflict** — format (Dave's experiment, Day/Week chapters), writing, voice (180–200 wpm, real pauses), edit grammar, 3D look. Its §9 lists exactly which old rules are retired (memes, polaroids, captions, Damage Meter, 25 s hook limit, 10–12 min length). Zero commas, Dave-as-host, research, licences and `at` anchoring stay.
+>
 > **§0.11 (owner, 11 Oct 2026) is the NEWEST rule set and overrides everything else where they conflict: no commas in the spoken script, a real photo every 10–15 s, a trend meme every ~30 s.**
 >
 > **§0.12 (Dave = host + UPGRADE mode, 18 Oct 2026) is the newest rule set: Dave talks to the viewer in the first person, almost no stats. "Redo / upgrade / ameliorate epNN" = follow `UPGRADE.md`, never rebuild from scratch.**

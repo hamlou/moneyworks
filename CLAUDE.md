@@ -1,5 +1,7 @@
 # Moneyworks — stickman money explainer channel
 
+**NEWEST — overrides everything below (23 Oct 2026): `STYLE_3D.md` (v6 "3D animator" style).** Every long video now copies the owner's reference video (https://youtu.be/9yXNBbf3TW0) ~99 %: each episode = Dave's experiment (goal + deadline + scoreboard, Day/Week chapters), casual run-on writing with fake-outs and absurd comparisons, 180–200 wpm voice with real pauses (`cb.cfg`), 3D-look Dave in the lower right with a pose/face swap every 1.5–3 s, dark home-base set + UI cards + big number cards + 3D sets, no captions, no meme cards, no polaroids. Kept from the old rules: zero commas, Dave first person to "you", sources, free-licence photos, `at`-word anchoring. Read `STYLE_3D.md` first, then the playbook only for what it doesn't cover.
+
 **Newest (18 Oct 2026, PLAYBOOK_LONG §0.12):** Dave is the host talking to "you" in the first person, almost no stats. "Redo / upgrade / ameliorate epNN" = follow `UPGRADE.md` (edit the episode JSON only, overlay layer `src/upgrade.tsx`), never rebuild from scratch. Dave = new big-head avatar Dave (`<Stick big>`), voice = Chatterbox (`voice.yml`), §0.12 C.
 
 **Two playbooks, never mix them (owner, 11 Oct 2026):** long-form episodes (`epNN`, 16:9, 10 min+) → `PLAYBOOK_LONG.md`. Vertical Shorts (`shortNN`, 9:16) → `PLAYBOOK_SHORTS.md`. `PLAYBOOK.md` is only the index. "PLAYBOOK §x" below means `PLAYBOOK_LONG.md`.
