@@ -60,7 +60,7 @@ export const V6Demo: React.FC = () => {
           ) : null}
         </UICard>
         <Stage cam={[0, 1.9, 11]} look={[0, 1.6, 0]}>
-          <DaveT f={f} position={[2.75, -0.9, 0]} rotation={[0, -0.45, 0]} scale={1.15} keys={[{at: 2, pose: 'point_l', face: 'talk'}, {at: 26, face: 'grin'}, {at: 44, pose: 'present_l', face: 'shock'}, {at: 62, pose: 'thumbs', face: 'smug'}]} />
+          <DaveT f={f} position={[3.05, -0.9, 0]} rotation={[0, -0.45, 0]} scale={1.15} keys={[{at: 2, pose: 'point_l', face: 'talk'}, {at: 26, face: 'grin'}, {at: 44, pose: 'present_l', face: 'shock'}, {at: 62, pose: 'thumbs', face: 'smug'}]} />
         </Stage>
       </AbsoluteFill>
     );
@@ -86,7 +86,7 @@ export const V6Demo: React.FC = () => {
         <Stage cam={[2.2 - push * 0.3, 2.3, 6.4 - push * 0.5]} look={[0.4, 1.5, -1.2]} fov={40} lights={lit ? 'warm' : 'night'}>
           <Bedroom tvOn />
           <Blob p={[0.8, 0.48, -0.9]} r={0.7} o={0.25} />
-          <DaveT f={f} position={[0.8, -0.05, -0.75]} rotation={[0, -0.25, 0]} keys={[{at: 135, pose: 'sit', face: 'sleep'}, {at: 190, pose: 'panic', face: 'shock'}, {at: 222, pose: 'facepalm', face: 'sad'}]} shake={f >= 190 && f < 210 ? 0.025 : 0} />
+          <DaveT f={f} position={[0.8, -0.05, -0.75]} rotation={[0, 0.3, 0]} keys={[{at: 135, pose: 'sit', face: 'sleep'}, {at: 190, pose: 'panic_sit', face: 'shock'}, {at: 222, pose: 'facepalm_sit', face: 'sad'}]} shake={f >= 190 && f < 210 ? 0.025 : 0} />
         </Stage>
         <ShockLines f={f} at={190} x={1010} y={300} r={150} />
         <WhiteFlash f={f} at={190} n={1} />

@@ -37,6 +37,9 @@ export const POSES3D: Record<string, Pose> = {
   sit: P({aHx: -88, bHx: -88, aKx: 88, bKx: 88, aH: -8, bH: 8, aS: -24, aE: 30, aSx: -20, bS: 24, bE: -30, bSx: -20}),
   lie: P({lie: true, aS: -20, bS: 20, aE: 40, bE: -40}),
 };
+// sitting variants: upper body of a pose + sitting legs
+const SIT = {aHx: -88, bHx: -88, aKx: 88, bKx: 88, aH: -8, bH: 8, aK: 0, bK: 0};
+for (const k of ['panic', 'facepalm', 'shrug', 'think', 'point_l', 'point_r', 'celebrate', 'thumbs']) POSES3D[`${k}_sit`] = {...POSES3D[k], ...SIT};
 
 // ---- materials ---------------------------------------------------------------------------------------------
 const toonRamp = (() => {
