@@ -1,0 +1,34 @@
+name: voicebake
+# Free voice bake-off (STYLE_3D.md 4b): same Dave script through 3 open-source engines. Download artifact "voicebake-*" and listen.
+on: workflow_dispatch
+jobs:
+  engine:
+    runs-on: ubuntu-latest
+    timeout-minutes: 150
+    strategy:
+      fail-fast: false
+      matrix:
+        job: [kokoro, chatterbox, orpheus-leo, orpheus-dan, orpheus-zac]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg espeak-ng
+      - if: matrix.job == 'kokoro'
+        run: pip install -q --extra-index-url https://download.pytorch.org/whl/cpu "kokoro>=0.9" soundfile numpy && cd pipeline/voicebake && python kokoro_run.py
+      - if: matrix.job == 'chatterbox'
+        run: pip install -q --extra-index-url https://download.pytorch.org/whl/cpu chatterbox-tts numpy && cd pipeline/voicebake && python chatterbox_run.py
+      - if: startsWith(matrix.job, 'orpheus')
+        run: |
+          pip install -q --extra-index-url https://download.pytorch.org/whl/cpu torch snac numpy huggingface_hub
+          pip install -q llama-cpp-python --extra-index-url https://abetlen.github.io/llama-cpp-python/whl/cpu
+          cd pipeline/voicebake && python orpheus_run.py ${MATRIX_JOB#orpheus-}
+        env:
+          MATRIX_JOB: ${{ matrix.job }}
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: voicebake-${{ matrix.job }}
+          path: pipeline/voicebake/voicebake/*.mp3
+          if-no-files-found: warn
