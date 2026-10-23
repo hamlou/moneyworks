@@ -229,3 +229,61 @@ Older plan, still the order of work:
 - [ ] Voice: beats 25–60 words, `cb.cfg` set, pauses varied (0.1 / 0.35 / 1.0), measured 180–200 wpm per chapter.
 - [ ] Visual: change every ≤ 2.5 s (≥ 35 in minute 1), scene change every 4–6 s, real image every ≤ 15 s, gag every ≤ 40 s, scoreboard ≥ 6×, report card per week, no captions, no memes, no polaroids.
 - [ ] Sources + licences as always; no real logos; real people factual only; no invented result presented as real data.
+
+---
+
+## 11. Channel study — all 13 videos (23 Oct 2026, owner: "we're at 25 %, study ALL his videos")
+
+Sources: 12 auto-caption transcripts (the brainrot video has none), per-frame motion data on his 3 biggest hits (1.7 M "Why are there no 3D animators", 1.2 M "BRAINROT Shorts for 30 days", 479 K "SLEEPING videos"), 2.5 s frame sheets of their openings, and his own workflow video "How I Make 3D Animated Videos for YouTube" (720 s).
+
+### 11.1 His real production recipe (from his own words) → our equivalent
+| His step | Ours |
+|---|---|
+| Google Doc script, bullet points expanded, `[notes in brackets]` for gags | episode JSON beats + `[gag]` notes |
+| **Records his OWN voice word for word** (AT2020 mic, blanket over his head against echo), Audacity noise reduction, **Adobe Podcast Enhance** (free web tool), cuts stutters in Premiere. Non-native English speaker. | §4b voice paths (owner decides) |
+| Pen-and-paper storyboard: scene number + script line + sketch | beat `set` + `shot` notes |
+| Audio cut into one snippet per scene, numbered | one beat = one scene |
+| **Blender EEVEE, 1920×1080, 24 fps**, anime skybox pack, 32 samples, **shadows + ray tracing + motion blur ON** | `@remotion/three` scene at 24 fps, shadows on, motion-blur pass (§11.4) |
+| Character: default human rig, grease-pencil outline, **face drawn per line in draw mode** | `Dave3D` + face textures ✓ |
+| **Backgrounds and props = free downloaded 3D models** (Sketchfab, GLB format, textures included). "If someone has done it before you, don't make it yourself." | CC0 libraries we can download without login: Poly Haven (HDRI skies + models), Kenney, Quaternius; Sketchfab CC-BY needs the owner's login |
+| **Background people = low-poly model + Mixamo mocap** (crowds, soldiers) | Quaternius CC0 animated characters; Mixamo needs the owner's Adobe login |
+| Static shots in After Effects: video samples with **rounded corners** and **every item bobbles (wiggle expression)** "so it feels alive" | `wiggle()` on every UI/photo card (§11.4) |
+| Music: one cosy game-soundtrack loop under everything; SFX: **whooshes, body hits, typewriters, number counters** | free lofi loop (licensed) + those 4 SFX families |
+| Outro stretched so the end screen has room; 2–3 thumbnails per video for A/B tests | same |
+
+### 11.2 Shot grammar seen in all 3 hits
+- **Two shot types only** (his words): *fully animated shots* (character acting inside a 3D world) and *static shots* (character in the corner + props/cards). Ratio in the openings ≈ 60 / 40.
+- **A new WORLD every 5–15 s**: empty concrete room → classroom → dark desk room → cinema projector → purple void with giant props → city street with whiteboard → grass field with a crowd. The world itself is the joke ("too shy for a camera" → he hides in a dark room).
+- **Information is shown ON world objects**: chalkboard list, projector screen showing the clip, CRT TV scoreboard, tear-off day calendar ("day 0 → day 1"), whiteboard "Point 1/2/3", flags on poles, cards floating in 3D with shadows. Flat full-screen cards only for big numbers and comparisons.
+- **Visual metaphors are built literally**: "you could fit all Odyssey viewers in one truck… and this is all of YouTube's" → 50 trucks; "crowd in a niche" → a field of identical white stickmen; money → a wall of banknotes; time → giant clock.
+- **Big chapter text lives in the world** (outlined "DAY 1" letters in the room), not on a separate card. The blue/yellow card is the exception, not the rule.
+- **Hook = speed-lines world** (green radial streaks) with objects flying at camera: calendar, stopwatch, banknotes — 6 different props in 10 s.
+- Burst-and-hold motion confirmed on all three: 36–45 % of frames perfectly still, holds mostly < 0.5 s.
+
+### 11.3 How he writes the jokes (the "spirit")
+1. **Personification skits**: platforms/ideas become people with a life ("YouTube in the 1960s = slicked-back hair driving a Mustang to his suburban family… Odyssey = the RV hippie: I'm decentralized bro"). One per video, 15–25 s, with a quick voice change.
+2. **Framing device for the whole video**: a boxing match with an announcer ("fighting out of the red corner…"), rounds and a score; a tier list; a 30-day experiment. Pick ONE per episode.
+3. **Absurd scale analogies, shown literally**: strawberries → trucks; "more than the population of Poland, Spain or even Canada".
+4. **Self-roast as a running texture**: "too ugly or too shy… that's me right now. Please subscribe." / "I'm incredibly bad at thumbnails" / "at least half of those views is just me. You're welcome, I just paid your rent."
+5. **He interrupts himself** ("Hey hey hey stop. That's enough.") and **mock-argues with the viewer** ("Before any film school students come crashing out in the comments: yes I know").
+6. **Fake-meta twists**: "Or am I just paid to say that?… Well probably. Or is it?"
+7. **Literal-misunderstanding gag**: "a folder called audios with a Z… wait not this kind of B" → wrong visual for one beat.
+8. **Pop-culture moments** he reacts to ("Cars 3 crash… Oh it's so good. Oh it's so good.") — we use only factual/free footage, so we recreate the moment with our own 3D.
+9. **Subscribe asks are jokes, mid-video, placed right after a self-roast.**
+10. **Fixed sign-off catchphrase** every video (his: "Life is short so thanks for wasting a bit of it here. Until next time." — never copy it; Dave needs his own, e.g. "Spend smart. Or don't. I'm a stickman not your mom.").
+Measured pace across 12 videos: **150–215 wpm, median ≈ 180**; quieter, slower intros (150–165) and fast rants (200–215).
+
+### 11.4 The 75 % gap — what we must build (in this order)
+1. **Worlds, not wallpapers**: every beat gets a `set`. Asset loader for GLB models + HDRI skies (CC0 first: Poly Haven, Kenney, Quaternius) committed to `public/3d/`. Shadows on.
+2. **World screens**: chalkboard / projector / TV / floating card objects whose surface shows our UI, photo or number (canvas or image texture), so information is IN the world.
+3. **Character acting**: animated loops for Dave (walk, type, sit, fall, run, dance) + CC0 mocap crowds/background people.
+4. **Camera + motion feel**: 24 fps, motion blur on fast moves, wiggle on every static card, burst-and-hold timing (§5.9).
+5. **Voice with a performer** (§4b).
+6. Gag library: speed-lines hook world, personification skit kit (props: hats, cars, RV), boxing-match/tier-list framing kits, literal-metaphor builders (trucks, crowds, money walls).
+
+### 4b. Voice — the honest truth (added after the channel study)
+His "spirit" is a human actor reading his own jokes. Measured on 120 s windows: his pitch ≈ 155–159 Hz (young), smooth (2.6 semitones/100 ms) and almost continuous (3–8 short breaths per minute, ~0.22 s); our Chatterbox Dave ≈ 128 Hz (older), jittery (3.4), choppy (17–21 pauses per minute, ~0.44 s). Cloning HIS voice is illegal and off the table. Legal ways to get the same spirit, best first:
+- **A. Owner records** (exactly his method; he is a non-native speaker too): phone in a quiet room/under a blanket → Adobe Podcast Enhance (free) → our aligner cuts stutters and long gaps automatically. Best spirit, free.
+- **B. Hire a young English voice actor** (Fiverr/Voices.com, commercial licence + written consent to AI cloning) → clone THAT actor with ElevenLabs Professional Voice Clone → every episode in his voice with v3 audio tags (`[sarcastic]`, `[laughs]`, `[whispers]`, `[excited]`).
+- **C. ElevenLabs v3 library voice + audio tags** (paid, no actor).
+- **D. Free Chatterbox tuned** (cfg 0.3, breath-group beats, short pauses, +2–3 semitone pitch): ceiling ≈ 40 % of his spirit.
