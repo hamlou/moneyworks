@@ -53,12 +53,12 @@ const useMats = (flash: boolean, color: string): Mats =>
     () =>
       flash
         ? {body: new THREE.MeshBasicMaterial({color: '#ffffff'}), line: new THREE.MeshBasicMaterial({color: '#d8d8d8', side: THREE.BackSide})}
-        : {body: new THREE.MeshToonMaterial({color, gradientMap: toonRamp}), line: new THREE.MeshBasicMaterial({color: '#141414', side: THREE.BackSide})},
+        : {body: new THREE.MeshPhysicalMaterial({color, roughness: 0.42, clearcoat: 0.35, clearcoatRoughness: 0.3}), line: new THREE.MeshBasicMaterial({color: '#141414', side: THREE.BackSide})},
     [flash, color],
   );
 
-const LINE = 0.032; // outline thickness (inverted hull)
-const R = 0.075; // limb radius
+const LINE = 0.026; // outline thickness (inverted hull)
+const R = 0.105; // limb radius
 
 const Seg: React.FC<{len: number; m: Mats; r?: number}> = ({len, m, r = R}) => (
   <group position={[0, -len / 2, 0]}>
@@ -278,11 +278,11 @@ export const Dave3D: React.FC<Dave3DProps> = ({pose = 'idle', face = 'neutral', 
             <Seg len={NECK - HIP} m={m} />
           </group>
           {/* arms from just under the head */}
-          <group position={[-0.02, NECK - 0.08, 0]}>
-            <Limb s={p.aS} e={p.aE} sx={p.aSx} l1={0.5} l2={0.48} m={m} end />
+          <group position={[-0.04, NECK - 0.3, 0.02]}>
+            <Limb s={p.aS} e={p.aE} sx={p.aSx} l1={0.6} l2={0.56} m={m} end />
           </group>
-          <group position={[0.02, NECK - 0.08, 0]}>
-            <Limb s={p.bS} e={p.bE} sx={p.bSx} l1={0.5} l2={0.48} m={m} end />
+          <group position={[0.04, NECK - 0.3, 0.02]}>
+            <Limb s={p.bS} e={p.bE} sx={p.bSx} l1={0.6} l2={0.56} m={m} end />
           </group>
           {/* head: slightly wide egg, face texture on the front */}
           <group position={[0, HEAD, 0]} rotation={[0, 0, rad(p.tilt)]} scale={[1.06, 1, 0.98]}>

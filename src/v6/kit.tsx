@@ -75,9 +75,10 @@ export const Stage: React.FC<{
       </>
     ) : (
       <>
-        <ambientLight intensity={1.1} />
-        <directionalLight position={[4, 6, 8]} intensity={2.4} />
-        <directionalLight position={[-6, 3, -6]} intensity={1.8} color="#b9d4ff" />
+        <hemisphereLight args={['#ffffff', '#3a3d44', 1.1]} />
+        <directionalLight position={[5, 7, 6]} intensity={2.8} />
+        <directionalLight position={[-7, 2, 3]} intensity={0.5} color="#cfe0ff" />
+        <directionalLight position={[-3, 4, -8]} intensity={2.4} color="#ffffff" />
       </>
     )}
     {children}

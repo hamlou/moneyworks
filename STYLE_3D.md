@@ -153,6 +153,20 @@ A retro CRT TV in the TV-room set (or as a 2D card on home base). Screen: rounde
 - Hook (first 60 s): a visual change every ≤ 1.5 s, at least 3 different set types (photo plate, home base, 3D set).
 - Frame 0 is already moving and shows the most impressive thing (the jaw-drop proof), never a title.
 
+### 5.9 Motion grammar — measured frame by frame (30 fps, every frame diffed + 10 fps strips)
+This is what makes it feel "smooth" and animator-made. It is NOT constant motion:
+- **Burst → hold.** 45 % of all frames are perfectly still; 36 % move. Motion comes in short bursts (4–10 frames) then the image HOLDS 0.3–1.5 s (751 holds of 0.1–0.5 s, 102 of 0.5–1 s, only 8 longer than 3 s). Never a slow continuous drift as the only motion.
+- **Pose swaps are instant, not tweened.** The character cuts from one held pose to the next. On the swap frame(s) the character is drawn as a **flat WHITE silhouette for 1–2 frames** (seen at 0:17.7, 0:20.3, 0:21.5, 1:28.6, 1:29.1). Kit: `track()` + `DaveT` do this automatically.
+- **Entrances ≤ 6 frames** with ease-out + overshoot (the card at 0:00 goes from 15 % to 100 % size in 6 frames). Kit: `snap()`.
+- **Smear frames** on fast moves and character drops: 1–2 frames of directional blur + stretch (0:18.8, 0:21.5, 1:30.3, 4:03.4). Kit: `Smear`.
+- **1-frame high-contrast black/white "photocopy" frame** right before a big VFX/reveal (4:17.5). Kit: `Threshold`.
+- **Counters roll in ~1.5 s** with vertical motion blur while the card slowly pushes in (0:01.6–0:03.2), then land with a tiny bounce. Kit: `Counter`.
+- **Comic bursts** slam in over 3 frames with a decaying shake (0:17.8–0:18.9). Kit: `ComicBurst`.
+- **3D shots mostly use a LOCKED camera** and let the character act (fidget loop, sitting, typing); lights can **snap** on instantly as a gag (0:28.2). Camera moves are reserved for reveals (a fast whip + blur to a low-angle close-up at 4:03.4; a slow crane on the finale).
+- **Hand-drawn effects boil on top of 3D**: white jagged shock lines redrawn every 3 frames (0:28.2–0:30.2). Kit: `ShockLines`.
+- **Full-frame white flash** (1–2 frames) to hard-switch a number card. Kit: `WhiteFlash`.
+- Animation runs on ones (full 30 fps), not on twos.
+
 ---
 
 ## 6. Sound
@@ -186,7 +200,9 @@ Density per video (targets): visual change every 1.5–2.5 s · scene change eve
 
 ## 8. Build status + roadmap (be honest with the owner)
 
-Our renderer is Remotion (2D, React/SVG). Real 3D needs Blender. Plan, in order:
+**Chosen solution (23 Oct 2026): real 3D inside Remotion with three.js (`@remotion/three`), no Blender step.** The reference's white round-head stickman (0:00, 0:27, 0:42) IS a 3D Dave, so Dave is built from primitives in `src/v6/Dave3D.tsx`: toon shading (3-step ramp) + black inverted-hull outline + face drawn on a canvas texture (14 faces) + joint-angle pose library (16 poses). Kit: `src/v6/kit.tsx` (Stage, DaveT pose track with white-flash swaps, HomeBase, UICard push-in, Counter, NumCard, ComicBurst, ChapterCard, ReportCard, WhiteFlash, Threshold, Smear, ShockLines). Sets: `src/v6/sets.tsx` (Bedroom so far). Demo: composition `V6Demo` in the separate entry `src/v6/index.ts`, rendered by Actions → `v6demo` (uses `--gl=swangle`, software WebGL; uploads the mp4 + 10 fps contact sheets). Blender stays optional later for richer sets (render clips, drop them in as video).
+
+Older plan, still the order of work:
 1. **v6 script + voice — works TODAY.** Format §2, writing §3, voice §4 (`cb.cfg`, beat `cfg`/`exag`, breath-group beats, real pauses, optional own-voice reference) → `voice.yml` as usual.
 2. **v6 2D kit `src/v6/`** (Remotion, no Blender): home-base set, UI cards with push-in + cursor, big number cards, chapter title card, week report card, time-skip card, comic panels, scoreboard TV card, white-frame photo flash, captions off. ← next build step.
 3. **3D Dave** (Blender, runs in GitHub Actions `blender -b`): model + toon outline + face texture swap → render the pose×face PNG library to `public/dave3d/` (committed). Until it exists the v6 kit uses the current 2D Dave with a toon-shaded look (gradient shading + thick outline + drop shadow) so it already reads as "3D-ish".

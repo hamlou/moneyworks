@@ -51,7 +51,7 @@ export const V6Demo: React.FC = () => {
     shot = (
       <AbsoluteFill>
         <HomeBase f={f} />
-        <UICard f={f} at={0} x={150} y={170} w={1050} h={640} push={40} px={0.18} py={0.95} zoom={1.45}>
+        <UICard f={f} at={0} x={150} y={170} w={1050} h={640} push={40} px={0.3} py={0.95} zoom={1.4}>
           <Thumb />
           {f >= 40 ? (
             <div style={{position: 'absolute', right: 40, bottom: 24, background: K.bg, padding: '4px 18px', borderRadius: 12}}>
@@ -60,7 +60,7 @@ export const V6Demo: React.FC = () => {
           ) : null}
         </UICard>
         <Stage cam={[0, 1.9, 11]} look={[0, 1.6, 0]}>
-          <DaveT f={f} position={[2.55, -0.4, 0]} scale={1.05} keys={[{at: 2, pose: 'point_l', face: 'talk'}, {at: 26, face: 'grin'}, {at: 44, pose: 'present_l', face: 'shock'}, {at: 62, pose: 'thumbs', face: 'smug'}]} />
+          <DaveT f={f} position={[2.75, -0.9, 0]} rotation={[0, -0.45, 0]} scale={1.15} keys={[{at: 2, pose: 'point_l', face: 'talk'}, {at: 26, face: 'grin'}, {at: 44, pose: 'present_l', face: 'shock'}, {at: 62, pose: 'thumbs', face: 'smug'}]} />
         </Stage>
       </AbsoluteFill>
     );
@@ -83,7 +83,7 @@ export const V6Demo: React.FC = () => {
     const push = lin(f, 135, 255);
     shot = (
       <AbsoluteFill style={{background: '#000'}}>
-        <Stage cam={[2.6 - push * 0.4, 2.6, 8.6 - push * 0.6]} look={[0.2, 1.4, -1.2]} fov={40} lights={lit ? 'warm' : 'night'}>
+        <Stage cam={[2.2 - push * 0.3, 2.3, 6.4 - push * 0.5]} look={[0.4, 1.5, -1.2]} fov={40} lights={lit ? 'warm' : 'night'}>
           <Bedroom tvOn />
           <Blob p={[0.8, 0.48, -0.9]} r={0.7} o={0.25} />
           <DaveT f={f} position={[0.8, -0.05, -0.75]} rotation={[0, -0.25, 0]} keys={[{at: 135, pose: 'sit', face: 'sleep'}, {at: 190, pose: 'panic', face: 'shock'}, {at: 222, pose: 'facepalm', face: 'sad'}]} shake={f >= 190 && f < 210 ? 0.025 : 0} />
@@ -99,7 +99,7 @@ export const V6Demo: React.FC = () => {
         <HomeBase f={f} />
         {!second ? <NumCard f={f} at={257} label="RPM" to={0.98} dec={2} prefix="$" color={K.yellow} sub="(money per 1,000 views)" /> : <NumCard f={f} at={295} label="TOTAL MADE" to={783896} prefix="$" color={K.green} sub="(over 10 years)" />}
         <Stage>
-          <DaveT f={f} position={[2.8, -0.4, 0]} keys={[{at: 255, pose: 'point_l', face: 'think'}, {at: 295, pose: 'celebrate', face: 'money'}]} />
+          <DaveT f={f} position={[2.9, -0.9, 0]} rotation={[0, -0.4, 0]} scale={1.15} keys={[{at: 255, pose: 'point_l', face: 'think'}, {at: 295, pose: 'celebrate', face: 'money'}]} />
         </Stage>
         <WhiteFlash f={f} at={295} n={2} />
       </AbsoluteFill>
