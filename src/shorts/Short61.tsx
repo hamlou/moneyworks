@@ -56,7 +56,9 @@ const Camera: React.FC<{f: number; close: boolean}> = ({f, close}) => {
   return null;
 };
 
-const DaveStage: React.FC<{f: number; keys: PKey[]; mode: Mode; close?: boolean}> = ({f, keys, mode, close = false}) => {\n  const enter = snap(f, 4, 12);\n  return (
+const DaveStage: React.FC<{f: number; keys: PKey[]; mode: Mode; close?: boolean}> = ({f, keys, mode, close = false}) => {
+  const enter = snap(f, 4, 12);
+  return (
   <ThreeCanvas width={W} height={H} style={{position: 'absolute', inset: 0}} gl={{antialias: true, alpha: true, preserveDrawingBuffer: true}} camera={{fov: 24, position: [0, 1.78, 12], near: 0.1, far: 100}}>
     <Camera f={f} close={close} />
     <ambientLight intensity={mode === 'hospital' ? 0.8 : 0.62} />
@@ -65,7 +67,8 @@ const DaveStage: React.FC<{f: number; keys: PKey[]; mode: Mode; close?: boolean}
     <World mode={mode} f={f} />
     <DaveT f={f} keys={keys} position={[close ? 0.1 : -0.4 + 1.22 * enter + Math.sin(f / 17) * 0.025, close ? -1.05 : -0.3 + Math.sin(f / 12) * 0.01, 0.35]} rotation={[0, -0.18 + Math.sin(f / 23) * 0.035, 0]} scale={close ? 0.92 : 0.72 * enter} shake={mode === 'capitol' && f > 0 ? 0.035 : 0} />
   </ThreeCanvas>
-);
+  );
+};
 
 const PhotoPlate: React.FC<{f: number; at: number; id: string; label: string}> = ({f, at, id, label}) => {
   if (f < at) return null;
