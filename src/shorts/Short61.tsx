@@ -60,11 +60,11 @@ const PhotoPlate: React.FC<{f: number; at: number; id: string; label: string}> =
   </div>;
 };
 
-const Kinetic: React.FC<{f: number; at: number; title: string; sub?: string; color?: string}> = ({f, at, title, sub, color = K.white}) => {
+const Kinetic: React.FC<{f: number; at: number; title: string; sub?: string; color?: string; top?: number; width?: number; size?: number}> = ({f, at, title, sub, color = K.white, top = 960, width = 520, size = 58}) => {
   const p = snap(f, at, 5);
   if (f < at) return null;
-  return <div style={{position: 'absolute', left: 52, top: 960, width: 520, transform: 'translateY(' + ((1 - p) * 55) + 'px) scale(' + (0.9 + 0.1 * p) + ')', opacity: Math.min(1, p * 1.5), transformOrigin: 'left center'}}>
-    <div style={{fontFamily: ANTON, fontSize: 58, lineHeight: 0.95, color, letterSpacing: 1, textShadow: '0 7px 0 rgba(0,0,0,0.35)'}}>{title}</div>
+  return <div style={{position: 'absolute', left: 52, top, width, transform: 'translateY(' + ((1 - p) * 55) + 'px) scale(' + (0.9 + 0.1 * p) + ')', opacity: Math.min(1, p * 1.5), transformOrigin: 'left center'}}>
+    <div style={{fontFamily: ANTON, fontSize: size, lineHeight: 0.95, color, letterSpacing: 1, textShadow: '0 7px 0 rgba(0,0,0,0.35)'}}>{title}</div>
     {sub ? <div style={{fontFamily: UI, fontWeight: 600, fontSize: 28, lineHeight: 1.12, color: '#d6d8dc', marginTop: 13}}>{sub}</div> : null}
   </div>;
 };
@@ -123,8 +123,8 @@ const Body: React.FC = () => {
   return <AbsoluteFill style={{background: K.bg, overflow: 'hidden'}}>
     <AbsoluteFill style={{background: 'radial-gradient(ellipse at 45% 35%, #2c3440 0%, #11151b 75%)'}} />
     <DaveStage f={f} keys={keys} mode={world} close={close} />
-    <PhotoPlate f={f} at={photo.at} id={photo.id} label={photo.label} />
-    <Kinetic f={f} at={label.at} title={label.title} sub={label.sub} color={label.color} />
+    {!close ? <PhotoPlate f={f} at={photo.at} id={photo.id} label={photo.label} /> : null}
+    <Kinetic f={f} at={label.at} title={label.title} sub={label.sub} color={label.color} top={close ? 190 : 960} width={close ? 940 : 520} size={close ? 76 : 58} />
     {f >= a.wall && f < a.wall + 24 ? <ComicBurst f={f} at={a.wall} top="THE BILL" word="BOUNCES" x={520} y={530} color={K.red} /> : null}
     <Threshold f={f} at={a.trump} n={1}><WhiteFlash f={f} at={a.trump} n={1} /></Threshold>
     <Sfx at={0} file="boom" volume={0.9} />
