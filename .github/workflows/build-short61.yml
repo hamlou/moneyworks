@@ -66,6 +66,8 @@ jobs:
           git config user.email "bot@users.noreply.github.com"
           git add pipeline/voice/short61.flac pipeline/voice/short61.json
           git commit -q -m "short61: cache Chatterbox voice"
+          # Other workflow jobs may update main while voice shards run.
+          git pull --rebase origin main
           git push origin HEAD:main
 
   render:
