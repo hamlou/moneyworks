@@ -98,10 +98,10 @@ const Body: React.FC = () => {
   const f = useCurrentFrame();
   const {t, w} = useT();
   const a = {
-    oval: w('o1', 'president'), fight: w('o1', 'fight'), muslim: w('o1', 'Muslim'),
-    senate: w('o2', 'Senate'), trump: w('o2', 'Trump'), baseless: w('o2', 'baseless'),
-    medicare: w('o3', 'Medicare'), insurers: w('o3', 'insurers'),
-    congress: w('o4', 'Congress'), wall: w('o4', 'wall'), govern: w('o5', 'govern')
+    oval: w('o1', 'president'), fight: w('o1', 'fight'), signs: w('o1', 'signs'), single: w('o1', 'single'), see: w('o1', 'see'), muslim: w('o1', 'Muslim'),
+    senate: w('o2', 'Senate'), michigan: w('o2', 'Michigan'), trump: w('o2', 'Trump'), loyalty: w('o2', 'loyalty'), attacks: w('o2', 'attacks'), baseless: w('o2', 'baseless'),
+    medicare: w('o3', 'Medicare'), corporate: w('o3', 'corporate'), future: w('o3', 'future'), insurers: w('o3', 'insurers'), fight3: w('o3', 'fight'),
+    promises: w('o4', 'promises'), congress: w('o4', 'Congress'), pass: w('o4', 'pass'), wall: w('o4', 'wall'), overnight: w('o4', 'overnight'), bigger: w('o5', 'bigger'), country: w('o5', 'country'), govern: w('o5', 'govern')
   };
   const photos = [
     {at: 0, id: 'abdul', label: 'THE HYPOTHETICAL'},
@@ -122,11 +122,12 @@ const Body: React.FC = () => {
   for (const s of worlds) if (s.at <= f) world = s.mode;
   const keys: PKey[] = [
     {at: 0, pose: 'point_l', face: 'talk'}, {at: a.fight, pose: 'panic', face: 'shock'},
-    {at: a.muslim, pose: 'facepalm', face: 'sad'}, {at: a.senate, pose: 'present_l', face: 'neutral'},
-    {at: a.trump, pose: 'point_r', face: 'angry'}, {at: a.baseless, pose: 'shrug', face: 'think'},
-    {at: a.medicare, pose: 'point_l', face: 'talk'}, {at: a.insurers, pose: 'think', face: 'spiral'},
-    {at: a.congress, pose: 'point_up', face: 'shock'}, {at: a.wall, pose: 'panic', face: 'x_eyes'},
-    {at: a.govern, pose: 'think', face: 'neutral'}
+    {at: a.signs, pose: 'point_r', face: 'angry'}, {at: a.single, pose: 'shrug', face: 'think'}, {at: a.see, pose: 'think', face: 'sad'}, {at: a.muslim, pose: 'facepalm', face: 'sad'},
+    {at: a.senate, pose: 'present_l', face: 'neutral'}, {at: a.michigan, pose: 'point_l', face: 'talk'},
+    {at: a.trump, pose: 'point_r', face: 'angry'}, {at: a.loyalty, pose: 'panic', face: 'shock'}, {at: a.attacks, pose: 'shrug', face: 'sad'}, {at: a.baseless, pose: 'think', face: 'neutral'},
+    {at: a.medicare, pose: 'point_l', face: 'talk'}, {at: a.corporate, pose: 'present_l', face: 'smug'}, {at: a.future, pose: 'think', face: 'spiral'}, {at: a.insurers, pose: 'facepalm', face: 'think'}, {at: a.fight3, pose: 'panic', face: 'shock'},
+    {at: a.promises, pose: 'facepalm', face: 'sad'}, {at: a.congress, pose: 'point_up', face: 'shock'}, {at: a.pass, pose: 'point_r', face: 'angry'}, {at: a.wall, pose: 'panic', face: 'x_eyes'}, {at: a.overnight, pose: 'shrug', face: 'think'},
+    {at: a.bigger, pose: 'think', face: 'neutral'}, {at: a.country, pose: 'point_l', face: 'talk'}, {at: a.govern, pose: 'think', face: 'neutral'}
   ];
   const labels = [
     {at: 0, title: 'WHAT IF HE WON?', sub: 'A hypothetical presidency', color: K.yellow},
