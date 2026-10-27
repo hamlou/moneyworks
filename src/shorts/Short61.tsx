@@ -3,7 +3,7 @@ import {AbsoluteFill, Audio, Img, Sequence, interpolate, staticFile, useCurrentF
 import {ThreeCanvas} from '@remotion/three';
 import {useThree} from '@react-three/fiber';
 import {TimingProvider, Timings, useT} from '../timing';
-import {ANTON, ComicBurst, DaveT, K, PKey, UI, snap, WhiteFlash, Smear, Threshold} from '../v6/kit';
+import {ANTON, ComicBurst, DaveT, K, PKey, UI, snap, WhiteFlash, Threshold} from '../v6/kit';
 
 const W = 1080;
 const H = 1920;
@@ -127,7 +127,6 @@ const Body: React.FC = () => {
     <Kinetic f={f} at={label.at} title={label.title} sub={label.sub} color={label.color} />
     {f >= a.wall && f < a.wall + 24 ? <ComicBurst f={f} at={a.wall} top="THE BILL" word="BOUNCES" x={520} y={530} color={K.red} /> : null}
     <Threshold f={f} at={a.trump} n={1}><WhiteFlash f={f} at={a.trump} n={1} /></Threshold>
-    <Smear f={f} at={a.congress} n={2} />
     <Sfx at={0} file="boom" volume={0.9} />
     <Sfx at={a.oval} file="whoosh" />
     <Sfx at={a.fight} file="thud" volume={0.55} />
