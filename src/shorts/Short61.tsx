@@ -3,7 +3,7 @@ import {AbsoluteFill, Audio, Img, Sequence, interpolate, staticFile, useCurrentF
 import {ThreeCanvas} from '@remotion/three';
 import {useThree} from '@react-three/fiber';
 import {TimingProvider, Timings, useT} from '../timing';
-import {DaveT, K, UI, snap} from '../v6/kit';
+import {DaveT, K, UI, PKey, snap} from '../v6/kit';
 
 const W = 1080;
 const H = 1920;
@@ -19,7 +19,7 @@ const Camera: React.FC = () => {
   return null;
 };
 
-const DaveStage: React.FC<{f: number; keys: any[]}> = ({f, keys}) => (
+const DaveStage: React.FC<{f: number; keys: PKey[]}> = ({f, keys}) => (
   <ThreeCanvas width={W} height={H} style={{position: 'absolute', inset: 0}} gl={{antialias: true, alpha: true, preserveDrawingBuffer: true}} camera={{fov: 24, position: [0, 1.75, 12], near: 0.1, far: 100}}>
     <Camera />
     <ambientLight intensity={0.9} />
@@ -80,7 +80,7 @@ const Body: React.FC = () => {
   let shot = shots[0];
   for (const s of shots) if (s.at <= f) shot = s;
 
-  const keys = [
+  const keys: PKey[] = [
     {at: 0, pose: 'point_r', face: 'think'},
     {at: anchors.oval, pose: 'present_l', face: 'neutral'},
     {at: anchors.trump, pose: 'point_l', face: 'angry'},
