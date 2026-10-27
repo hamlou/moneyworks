@@ -31,7 +31,9 @@ const DoorLeaf: React.FC<{side: -1 | 1; f: number}> = ({side, f}) => {
   </group>;
 };
 
-const billDepth = (f: number, at: number) => at < 0 ? 1.5 : interpolate(f, [at, at + 12, at + 18, at + 30], [1.5, -3.2, -1.4, 1.5], {extrapolateLeft: 'clamp', extrapolateRight: 'clamp'});\n\nconst World: React.FC<{mode: Mode; f: number; gagAt: number}> = ({mode, f, gagAt}) => (
+const billDepth = (f: number, at: number) => at < 0 ? 1.5 : interpolate(f, [at, at + 12, at + 18, at + 30], [1.5, -3.2, -1.4, 1.5], {extrapolateLeft: 'clamp', extrapolateRight: 'clamp'});
+
+const World: React.FC<{mode: Mode; f: number; gagAt: number}> = ({mode, f, gagAt}) => (
   <group>
     <mesh position={[0, -1.18, -1]} rotation={[-Math.PI / 2, 0, 0]} receiveShadow><planeGeometry args={[22, 20]} /><Mat c={mode === 'finale' ? '#182332' : '#34363b'} /></mesh>
     {mode === 'oval' ? <><Block p={[0, 2.4, -4.8]} s={[18, 7.2, 0.25]} c="#263d36" /><Block p={[-3.8, 2.45, -4.62]} s={[3.8, 4.9, 0.08]} c="#5c806e" /><Block p={[0.2, 2.45, -4.62]} s={[3.8, 4.9, 0.08]} c="#5c806e" /><Block p={[4.15, 2.45, -4.62]} s={[3.8, 4.9, 0.08]} c="#5c806e" /><Block p={[0, 0.05, -2.1]} s={[5.2, 0.32, 2.1]} c="#563c2d" /><Block p={[0, 0.28, -2.1]} s={[5.1, 0.12, 2.0]} c="#8a6746" /><Block p={[-6.8, 2.1, -3.2]} s={[0.16, 4.2, 0.16]} c="#b7b7b7" /><Block p={[-6.45, 3.3, -3.2]} s={[0.85, 1.5, 0.05]} c="#183b72" /><Block p={[6.8, 2.1, -3.2]} s={[0.16, 4.2, 0.16]} c="#b7b7b7" /><Block p={[6.45, 3.3, -3.2]} s={[0.85, 1.5, 0.05]} c="#b22234" /><DoorLeaf side={-1} f={f} /><DoorLeaf side={1} f={f} /></> : null}
