@@ -1,918 +1,831 @@
 {
  "fps": 30,
- "total": 51.582,
- "hash": "b58e52bd34b75013",
+ "total": 42.95,
+ "hash": "d695675202266ac5",
  "chapters": [],
  "beats": [
   {
    "id": "o1",
-   "text": "I want you to imagine Abdul El-Sayed walking into the Oval Office. The first fight might not even be about his policies. It might be about whether America is ready to see a Muslim president as just another American president.",
+   "text": "What if Abdul El-Sayed became president? The first fight might start before he signs a single law. Would America see a president or a Muslim man it has been told to fear?",
    "start": 0.08,
-   "end": 10.967,
+   "end": 7.135,
    "words": [
     {
-     "text": "I",
+     "text": "What",
      "start": 0.08,
-     "end": 0.167
+     "end": 0.266
     },
     {
-     "text": "want",
-     "start": 0.177,
-     "end": 0.395
-    },
-    {
-     "text": "you",
-     "start": 0.419,
-     "end": 0.593
-    },
-    {
-     "text": "to",
-     "start": 0.612,
-     "end": 0.743
-    },
-    {
-     "text": "imagine",
-     "start": 0.758,
-     "end": 1.106
+     "text": "if",
+     "start": 0.287,
+     "end": 0.399
     },
     {
      "text": "Abdul",
-     "start": 1.145,
-     "end": 1.406
+     "start": 0.411,
+     "end": 0.635
     },
     {
      "text": "El-Sayed",
-     "start": 1.435,
-     "end": 1.827
+     "start": 0.66,
+     "end": 0.995
     },
     {
-     "text": "walking",
-     "start": 1.871,
-     "end": 2.22
+     "text": "became",
+     "start": 1.032,
+     "end": 1.293
     },
     {
-     "text": "into",
-     "start": 2.258,
-     "end": 2.476
-    },
-    {
-     "text": "the",
-     "start": 2.5,
-     "end": 2.675
-    },
-    {
-     "text": "Oval",
-     "start": 2.694,
-     "end": 2.912
-    },
-    {
-     "text": "Office.",
-     "start": 2.936,
-     "end": 3.285
+     "text": "president?",
+     "start": 1.322,
+     "end": 1.732
     },
     {
      "text": "The",
-     "start": 3.323,
-     "end": 3.498
+     "start": 1.778,
+     "end": 1.927
     },
     {
      "text": "first",
-     "start": 3.517,
-     "end": 3.778
+     "start": 1.943,
+     "end": 2.167
     },
     {
      "text": "fight",
-     "start": 3.807,
-     "end": 4.069
+     "start": 2.192,
+     "end": 2.415
     },
     {
      "text": "might",
-     "start": 4.098,
-     "end": 4.359
+     "start": 2.44,
+     "end": 2.664
     },
     {
-     "text": "not",
-     "start": 4.388,
-     "end": 4.562
+     "text": "start",
+     "start": 2.688,
+     "end": 2.912
     },
     {
-     "text": "even",
-     "start": 4.582,
-     "end": 4.8
+     "text": "before",
+     "start": 2.937,
+     "end": 3.198
     },
     {
-     "text": "be",
-     "start": 4.824,
-     "end": 4.955
+     "text": "he",
+     "start": 3.227,
+     "end": 3.338
     },
     {
-     "text": "about",
-     "start": 4.969,
-     "end": 5.231
-    },
-    {
-     "text": "his",
-     "start": 5.26,
-     "end": 5.434
-    },
-    {
-     "text": "policies.",
-     "start": 5.453,
-     "end": 5.889
-    },
-    {
-     "text": "It",
-     "start": 5.937,
-     "end": 6.068
-    },
-    {
-     "text": "might",
-     "start": 6.082,
-     "end": 6.344
-    },
-    {
-     "text": "be",
-     "start": 6.373,
-     "end": 6.504
-    },
-    {
-     "text": "about",
-     "start": 6.518,
-     "end": 6.78
-    },
-    {
-     "text": "whether",
-     "start": 6.809,
-     "end": 7.157
-    },
-    {
-     "text": "America",
-     "start": 7.196,
-     "end": 7.544
-    },
-    {
-     "text": "is",
-     "start": 7.583,
-     "end": 7.714
-    },
-    {
-     "text": "ready",
-     "start": 7.728,
-     "end": 7.99
-    },
-    {
-     "text": "to",
-     "start": 8.019,
-     "end": 8.149
-    },
-    {
-     "text": "see",
-     "start": 8.164,
-     "end": 8.338
+     "text": "signs",
+     "start": 3.351,
+     "end": 3.574
     },
     {
      "text": "a",
-     "start": 8.358,
-     "end": 8.445
+     "start": 3.599,
+     "end": 3.674
     },
     {
-     "text": "Muslim",
-     "start": 8.454,
-     "end": 8.759
+     "text": "single",
+     "start": 3.682,
+     "end": 3.943
+    },
+    {
+     "text": "law.",
+     "start": 3.972,
+     "end": 4.158
+    },
+    {
+     "text": "Would",
+     "start": 4.179,
+     "end": 4.403
+    },
+    {
+     "text": "America",
+     "start": 4.427,
+     "end": 4.725
+    },
+    {
+     "text": "see",
+     "start": 4.759,
+     "end": 4.908
+    },
+    {
+     "text": "a",
+     "start": 4.924,
+     "end": 4.999
     },
     {
      "text": "president",
-     "start": 8.793,
-     "end": 9.229
+     "start": 5.007,
+     "end": 5.38
     },
     {
-     "text": "as",
-     "start": 9.277,
-     "end": 9.408
+     "text": "or",
+     "start": 5.421,
+     "end": 5.533
     },
     {
-     "text": "just",
-     "start": 9.423,
-     "end": 9.64
+     "text": "a",
+     "start": 5.545,
+     "end": 5.62
     },
     {
-     "text": "another",
-     "start": 9.665,
-     "end": 10.013
+     "text": "Muslim",
+     "start": 5.628,
+     "end": 5.889
     },
     {
-     "text": "American",
-     "start": 10.052,
-     "end": 10.444
+     "text": "man",
+     "start": 5.918,
+     "end": 6.067
     },
     {
-     "text": "president.",
-     "start": 10.488,
-     "end": 10.967
+     "text": "it",
+     "start": 6.084,
+     "end": 6.195
+    },
+    {
+     "text": "has",
+     "start": 6.208,
+     "end": 6.357
+    },
+    {
+     "text": "been",
+     "start": 6.373,
+     "end": 6.56
+    },
+    {
+     "text": "told",
+     "start": 6.58,
+     "end": 6.767
+    },
+    {
+     "text": "to",
+     "start": 6.787,
+     "end": 6.899
+    },
+    {
+     "text": "fear?",
+     "start": 6.912,
+     "end": 7.135
     }
    ]
   },
   {
    "id": "o2",
-   "text": "Because right now he is a Michigan Senate candidate and not a presidential candidate. This week Donald Trump called him a jihadist and questioned his loyalty. El-Sayed called those attacks baseless. That is the real political climate behind this hypothetical.",
-   "start": 11.733,
-   "end": 24.285,
+   "text": "That is hypothetical. El-Sayed is running for Senate in Michigan not the White House. But Donald Trump has called him a jihadist and questioned his loyalty. El-Sayed rejected those attacks as baseless.",
+   "start": 7.587916666666667,
+   "end": 17.00091666666667,
    "words": [
     {
-     "text": "Because",
-     "start": 11.733,
-     "end": 12.082
-    },
-    {
-     "text": "right",
-     "start": 12.121,
-     "end": 12.383
-    },
-    {
-     "text": "now",
-     "start": 12.413,
-     "end": 12.587
-    },
-    {
-     "text": "he",
-     "start": 12.607,
-     "end": 12.738
-    },
-    {
-     "text": "is",
-     "start": 12.752,
-     "end": 12.883
-    },
-    {
-     "text": "a",
-     "start": 12.898,
-     "end": 12.985
-    },
-    {
-     "text": "Michigan",
-     "start": 12.995,
-     "end": 13.388
-    },
-    {
-     "text": "Senate",
-     "start": 13.432,
-     "end": 13.738
-    },
-    {
-     "text": "candidate",
-     "start": 13.772,
-     "end": 14.208
-    },
-    {
-     "text": "and",
-     "start": 14.257,
-     "end": 14.432
-    },
-    {
-     "text": "not",
-     "start": 14.451,
-     "end": 14.626
-    },
-    {
-     "text": "a",
-     "start": 14.645,
-     "end": 14.733
-    },
-    {
-     "text": "presidential",
-     "start": 14.742,
-     "end": 15.31
-    },
-    {
-     "text": "candidate.",
-     "start": 15.373,
-     "end": 15.854
-    },
-    {
-     "text": "This",
-     "start": 15.907,
-     "end": 16.126
-    },
-    {
-     "text": "week",
-     "start": 16.15,
-     "end": 16.368
-    },
-    {
-     "text": "Donald",
-     "start": 16.393,
-     "end": 16.698
-    },
-    {
-     "text": "Trump",
-     "start": 16.732,
-     "end": 16.995
-    },
-    {
-     "text": "called",
-     "start": 17.024,
-     "end": 17.329
-    },
-    {
-     "text": "him",
-     "start": 17.363,
-     "end": 17.538
-    },
-    {
-     "text": "a",
-     "start": 17.558,
-     "end": 17.645
-    },
-    {
-     "text": "jihadist",
-     "start": 17.655,
-     "end": 18.048
-    },
-    {
-     "text": "and",
-     "start": 18.092,
-     "end": 18.266
-    },
-    {
-     "text": "questioned",
-     "start": 18.286,
-     "end": 18.766
-    },
-    {
-     "text": "his",
-     "start": 18.82,
-     "end": 18.994
-    },
-    {
-     "text": "loyalty.",
-     "start": 19.014,
-     "end": 19.407
-    },
-    {
-     "text": "El-Sayed",
-     "start": 19.451,
-     "end": 19.844
-    },
-    {
-     "text": "called",
-     "start": 19.887,
-     "end": 20.193
-    },
-    {
-     "text": "those",
-     "start": 20.227,
-     "end": 20.489
-    },
-    {
-     "text": "attacks",
-     "start": 20.518,
-     "end": 20.868
-    },
-    {
-     "text": "baseless.",
-     "start": 20.907,
-     "end": 21.344
-    },
-    {
      "text": "That",
-     "start": 21.392,
-     "end": 21.611
+     "start": 7.588,
+     "end": 7.799
     },
     {
      "text": "is",
-     "start": 21.635,
-     "end": 21.766
-    },
-    {
-     "text": "the",
-     "start": 21.78,
-     "end": 21.955
-    },
-    {
-     "text": "real",
-     "start": 21.975,
-     "end": 22.193
-    },
-    {
-     "text": "political",
-     "start": 22.217,
-     "end": 22.654
-    },
-    {
-     "text": "climate",
-     "start": 22.703,
-     "end": 23.052
-    },
-    {
-     "text": "behind",
-     "start": 23.091,
-     "end": 23.397
-    },
-    {
-     "text": "this",
-     "start": 23.431,
-     "end": 23.649
+     "start": 7.822,
+     "end": 7.949
     },
     {
      "text": "hypothetical.",
-     "start": 23.673,
-     "end": 24.285
+     "start": 7.963,
+     "end": 8.553
+    },
+    {
+     "text": "El-Sayed",
+     "start": 8.618,
+     "end": 8.998
+    },
+    {
+     "text": "is",
+     "start": 9.04,
+     "end": 9.166
+    },
+    {
+     "text": "running",
+     "start": 9.18,
+     "end": 9.517
+    },
+    {
+     "text": "for",
+     "start": 9.555,
+     "end": 9.724
+    },
+    {
+     "text": "Senate",
+     "start": 9.742,
+     "end": 10.037
+    },
+    {
+     "text": "in",
+     "start": 10.07,
+     "end": 10.197
+    },
+    {
+     "text": "Michigan",
+     "start": 10.211,
+     "end": 10.59
+    },
+    {
+     "text": "not",
+     "start": 10.632,
+     "end": 10.801
+    },
+    {
+     "text": "the",
+     "start": 10.819,
+     "end": 10.988
+    },
+    {
+     "text": "White",
+     "start": 11.007,
+     "end": 11.26
+    },
+    {
+     "text": "House.",
+     "start": 11.288,
+     "end": 11.583
+    },
+    {
+     "text": "But",
+     "start": 11.616,
+     "end": 11.784
+    },
+    {
+     "text": "Donald",
+     "start": 11.803,
+     "end": 12.098
+    },
+    {
+     "text": "Trump",
+     "start": 12.131,
+     "end": 12.384
+    },
+    {
+     "text": "has",
+     "start": 12.412,
+     "end": 12.58
+    },
+    {
+     "text": "called",
+     "start": 12.599,
+     "end": 12.894
+    },
+    {
+     "text": "him",
+     "start": 12.927,
+     "end": 13.095
+    },
+    {
+     "text": "a",
+     "start": 13.114,
+     "end": 13.198
+    },
+    {
+     "text": "jihadist",
+     "start": 13.208,
+     "end": 13.587
+    },
+    {
+     "text": "and",
+     "start": 13.629,
+     "end": 13.798
+    },
+    {
+     "text": "questioned",
+     "start": 13.817,
+     "end": 14.28
+    },
+    {
+     "text": "his",
+     "start": 14.332,
+     "end": 14.5
+    },
+    {
+     "text": "loyalty.",
+     "start": 14.519,
+     "end": 14.898
+    },
+    {
+     "text": "El-Sayed",
+     "start": 14.941,
+     "end": 15.32
+    },
+    {
+     "text": "rejected",
+     "start": 15.362,
+     "end": 15.741
+    },
+    {
+     "text": "those",
+     "start": 15.784,
+     "end": 16.036
+    },
+    {
+     "text": "attacks",
+     "start": 16.065,
+     "end": 16.402
+    },
+    {
+     "text": "as",
+     "start": 16.439,
+     "end": 16.566
+    },
+    {
+     "text": "baseless.",
+     "start": 16.58,
+     "end": 17.001
     }
    ]
   },
   {
    "id": "o3",
-   "text": "Now imagine he wins the White House. He wants Medicare for All and he wants corporate money out of politics. That could put private insurers in a very different role and trigger a huge fight over who pays for American healthcare.",
-   "start": 25.206625,
-   "end": 35.512625,
+   "text": "Now imagine he wins. His platform calls for Medicare for All and getting corporate money out of politics. Private health insurers could face a very different future and a massive fight over who pays for care.",
+   "start": 17.738125,
+   "end": 27.438125,
    "words": [
     {
      "text": "Now",
-     "start": 25.207,
-     "end": 25.369
+     "start": 17.738,
+     "end": 17.898
     },
     {
      "text": "imagine",
-     "start": 25.387,
-     "end": 25.711
+     "start": 17.898,
+     "end": 18.298
     },
     {
      "text": "he",
-     "start": 25.748,
-     "end": 25.869
+     "start": 18.298,
+     "end": 18.478
     },
     {
-     "text": "wins",
-     "start": 25.883,
-     "end": 26.085
+     "text": "wins.",
+     "start": 18.478,
+     "end": 18.718
     },
     {
-     "text": "the",
-     "start": 26.108,
-     "end": 26.27
+     "text": "His",
+     "start": 19.298,
+     "end": 19.318
     },
     {
-     "text": "White",
-     "start": 26.288,
-     "end": 26.531
+     "text": "platform",
+     "start": 19.318,
+     "end": 19.578
     },
     {
-     "text": "House.",
-     "start": 26.558,
-     "end": 26.842
+     "text": "calls",
+     "start": 19.578,
+     "end": 19.978
     },
     {
-     "text": "He",
-     "start": 26.874,
-     "end": 26.995
-    },
-    {
-     "text": "wants",
-     "start": 27.009,
-     "end": 27.252
+     "text": "for",
+     "start": 19.978,
+     "end": 20.198
     },
     {
      "text": "Medicare",
-     "start": 27.279,
-     "end": 27.644
+     "start": 20.198,
+     "end": 20.398
     },
     {
      "text": "for",
-     "start": 27.684,
-     "end": 27.847
+     "start": 20.398,
+     "end": 20.738
     },
     {
      "text": "All",
-     "start": 27.865,
-     "end": 28.027
+     "start": 20.738,
+     "end": 20.978
     },
     {
      "text": "and",
-     "start": 28.045,
-     "end": 28.207
+     "start": 20.978,
+     "end": 21.178
     },
     {
-     "text": "he",
-     "start": 28.225,
-     "end": 28.347
-    },
-    {
-     "text": "wants",
-     "start": 28.36,
-     "end": 28.603
+     "text": "getting",
+     "start": 21.178,
+     "end": 21.298
     },
     {
      "text": "corporate",
-     "start": 28.63,
-     "end": 29.036
+     "start": 21.298,
+     "end": 21.598
     },
     {
      "text": "money",
-     "start": 29.081,
-     "end": 29.324
+     "start": 21.598,
+     "end": 21.958
     },
     {
      "text": "out",
-     "start": 29.351,
-     "end": 29.513
+     "start": 21.958,
+     "end": 22.138
     },
     {
      "text": "of",
-     "start": 29.531,
-     "end": 29.653
+     "start": 22.138,
+     "end": 22.218
     },
     {
      "text": "politics.",
-     "start": 29.666,
-     "end": 30.072
+     "start": 22.218,
+     "end": 22.638
     },
     {
-     "text": "That",
-     "start": 30.117,
-     "end": 30.319
+     "text": "Private",
+     "start": 23.178,
+     "end": 23.358
     },
     {
-     "text": "could",
-     "start": 30.342,
-     "end": 30.585
-    },
-    {
-     "text": "put",
-     "start": 30.612,
-     "end": 30.774
-    },
-    {
-     "text": "private",
-     "start": 30.792,
-     "end": 31.117
+     "text": "health",
+     "start": 23.358,
+     "end": 23.618
     },
     {
      "text": "insurers",
-     "start": 31.153,
-     "end": 31.518
+     "start": 23.618,
+     "end": 23.918
     },
     {
-     "text": "in",
-     "start": 31.558,
-     "end": 31.68
+     "text": "could",
+     "start": 23.918,
+     "end": 24.238
+    },
+    {
+     "text": "face",
+     "start": 24.238,
+     "end": 24.418
     },
     {
      "text": "a",
-     "start": 31.693,
-     "end": 31.774
+     "start": 24.418,
+     "end": 24.558
     },
     {
      "text": "very",
-     "start": 31.783,
-     "end": 31.986
+     "start": 24.558,
+     "end": 24.778
     },
     {
      "text": "different",
-     "start": 32.009,
-     "end": 32.414
+     "start": 24.778,
+     "end": 25.038
     },
     {
-     "text": "role",
-     "start": 32.459,
-     "end": 32.662
+     "text": "future",
+     "start": 25.038,
+     "end": 25.318
     },
     {
      "text": "and",
-     "start": 32.684,
-     "end": 32.846
-    },
-    {
-     "text": "trigger",
-     "start": 32.864,
-     "end": 33.189
+     "start": 25.318,
+     "end": 25.658
     },
     {
      "text": "a",
-     "start": 33.225,
-     "end": 33.306
+     "start": 25.658,
+     "end": 25.778
     },
     {
-     "text": "huge",
-     "start": 33.315,
-     "end": 33.518
+     "text": "massive",
+     "start": 25.778,
+     "end": 25.978
     },
     {
      "text": "fight",
-     "start": 33.54,
-     "end": 33.783
+     "start": 25.978,
+     "end": 26.358
     },
     {
      "text": "over",
-     "start": 33.81,
-     "end": 34.013
+     "start": 26.358,
+     "end": 26.658
     },
     {
      "text": "who",
-     "start": 34.036,
-     "end": 34.198
+     "start": 26.658,
+     "end": 26.818
     },
     {
      "text": "pays",
-     "start": 34.216,
-     "end": 34.418
+     "start": 26.818,
+     "end": 27.038
     },
     {
      "text": "for",
-     "start": 34.441,
-     "end": 34.603
+     "start": 27.038,
+     "end": 27.238
     },
     {
-     "text": "American",
-     "start": 34.621,
-     "end": 34.986
-    },
-    {
-     "text": "healthcare.",
-     "start": 35.026,
-     "end": 35.513
+     "text": "care.",
+     "start": 27.238,
+     "end": 27.438
     }
    ]
   },
   {
    "id": "o4",
-   "text": "But here is the twist. A president cannot pass Medicare for All alone. Congress has to approve it. So even if he wins the biggest office in America the system could block his biggest promise. And that brings us back to the first fight. Would America accept him before he even gets to change anything?",
-   "start": 36.231291666666664,
-   "end": 50.39129166666666,
+   "text": "But winning the Oval Office would not make those promises law. Congress would still have to pass them. A president can demand change but he cannot simply order the entire healthcare system to change overnight.",
+   "start": 27.945208333333333,
+   "end": 37.10520833333334,
    "words": [
     {
      "text": "But",
-     "start": 36.231,
-     "end": 36.411
+     "start": 27.945,
+     "end": 28.065
     },
     {
-     "text": "here",
-     "start": 36.411,
-     "end": 36.731
-    },
-    {
-     "text": "is",
-     "start": 36.731,
-     "end": 36.951
+     "text": "winning",
+     "start": 28.065,
+     "end": 28.285
     },
     {
      "text": "the",
-     "start": 36.951,
-     "end": 37.071
+     "start": 28.285,
+     "end": 28.465
     },
     {
-     "text": "twist.",
-     "start": 37.071,
-     "end": 37.191
+     "text": "Oval",
+     "start": 28.465,
+     "end": 28.585
     },
     {
-     "text": "A",
-     "start": 37.911,
-     "end": 37.931
+     "text": "Office",
+     "start": 28.585,
+     "end": 29.025
     },
     {
-     "text": "president",
-     "start": 37.931,
-     "end": 38.191
+     "text": "would",
+     "start": 29.025,
+     "end": 29.225
     },
     {
-     "text": "cannot",
-     "start": 38.191,
-     "end": 38.491
+     "text": "not",
+     "start": 29.225,
+     "end": 29.405
     },
     {
-     "text": "pass",
-     "start": 38.491,
-     "end": 38.831
+     "text": "make",
+     "start": 29.405,
+     "end": 29.585
     },
     {
-     "text": "Medicare",
-     "start": 38.831,
-     "end": 39.051
+     "text": "those",
+     "start": 29.585,
+     "end": 29.725
     },
     {
-     "text": "for",
-     "start": 39.051,
-     "end": 39.431
+     "text": "promises",
+     "start": 29.725,
+     "end": 30.105
     },
     {
-     "text": "All",
-     "start": 39.431,
-     "end": 39.591
-    },
-    {
-     "text": "alone.",
-     "start": 39.591,
-     "end": 39.891
+     "text": "law.",
+     "start": 30.105,
+     "end": 30.365
     },
     {
      "text": "Congress",
-     "start": 40.331,
-     "end": 40.591
+     "start": 31.265,
+     "end": 31.265
     },
     {
-     "text": "has",
-     "start": 40.591,
-     "end": 40.811
+     "text": "would",
+     "start": 31.265,
+     "end": 31.505
     },
     {
-     "text": "to",
-     "start": 40.811,
-     "end": 40.991
+     "text": "still",
+     "start": 31.505,
+     "end": 31.725
     },
     {
-     "text": "approve",
-     "start": 40.991,
-     "end": 41.171
-    },
-    {
-     "text": "it.",
-     "start": 41.171,
-     "end": 41.411
-    },
-    {
-     "text": "So",
-     "start": 41.811,
-     "end": 41.931
-    },
-    {
-     "text": "even",
-     "start": 41.931,
-     "end": 42.071
-    },
-    {
-     "text": "if",
-     "start": 42.071,
-     "end": 42.291
-    },
-    {
-     "text": "he",
-     "start": 42.291,
-     "end": 42.371
-    },
-    {
-     "text": "wins",
-     "start": 42.371,
-     "end": 42.571
-    },
-    {
-     "text": "the",
-     "start": 42.571,
-     "end": 42.771
-    },
-    {
-     "text": "biggest",
-     "start": 42.771,
-     "end": 42.931
-    },
-    {
-     "text": "office",
-     "start": 42.931,
-     "end": 43.271
-    },
-    {
-     "text": "in",
-     "start": 43.271,
-     "end": 43.451
-    },
-    {
-     "text": "America",
-     "start": 43.451,
-     "end": 43.671
-    },
-    {
-     "text": "the",
-     "start": 44.051,
-     "end": 44.111
-    },
-    {
-     "text": "system",
-     "start": 44.111,
-     "end": 44.331
-    },
-    {
-     "text": "could",
-     "start": 44.331,
-     "end": 44.611
-    },
-    {
-     "text": "block",
-     "start": 44.611,
-     "end": 44.831
-    },
-    {
-     "text": "his",
-     "start": 44.831,
-     "end": 45.031
-    },
-    {
-     "text": "biggest",
-     "start": 45.031,
-     "end": 45.211
-    },
-    {
-     "text": "promise.",
-     "start": 45.211,
-     "end": 45.531
-    },
-    {
-     "text": "And",
-     "start": 46.151,
-     "end": 46.231
-    },
-    {
-     "text": "that",
-     "start": 46.231,
-     "end": 46.331
-    },
-    {
-     "text": "brings",
-     "start": 46.331,
-     "end": 46.511
-    },
-    {
-     "text": "us",
-     "start": 46.511,
-     "end": 46.711
-    },
-    {
-     "text": "back",
-     "start": 46.711,
-     "end": 46.851
+     "text": "have",
+     "start": 31.725,
+     "end": 31.865
     },
     {
      "text": "to",
-     "start": 46.851,
-     "end": 47.011
+     "start": 31.865,
+     "end": 31.965
     },
     {
-     "text": "the",
-     "start": 47.011,
-     "end": 47.091
+     "text": "pass",
+     "start": 31.965,
+     "end": 32.145
     },
     {
-     "text": "first",
-     "start": 47.091,
-     "end": 47.231
+     "text": "them.",
+     "start": 32.145,
+     "end": 32.385
     },
     {
-     "text": "fight.",
-     "start": 47.231,
-     "end": 47.471
+     "text": "A",
+     "start": 32.885,
+     "end": 33.005
     },
     {
-     "text": "Would",
-     "start": 48.111,
-     "end": 48.131
+     "text": "president",
+     "start": 33.005,
+     "end": 33.265
     },
     {
-     "text": "America",
-     "start": 48.131,
-     "end": 48.351
+     "text": "can",
+     "start": 33.265,
+     "end": 33.505
     },
     {
-     "text": "accept",
-     "start": 48.351,
-     "end": 48.731
-    },
-    {
-     "text": "him",
-     "start": 48.731,
-     "end": 49.011
-    },
-    {
-     "text": "before",
-     "start": 49.011,
-     "end": 49.271
-    },
-    {
-     "text": "he",
-     "start": 49.271,
-     "end": 49.431
-    },
-    {
-     "text": "even",
-     "start": 49.431,
-     "end": 49.651
-    },
-    {
-     "text": "gets",
-     "start": 49.651,
-     "end": 49.791
-    },
-    {
-     "text": "to",
-     "start": 49.791,
-     "end": 49.971
+     "text": "demand",
+     "start": 33.505,
+     "end": 33.705
     },
     {
      "text": "change",
-     "start": 49.971,
-     "end": 50.151
+     "start": 33.705,
+     "end": 34.005
     },
     {
-     "text": "anything?",
-     "start": 50.151,
-     "end": 50.391
+     "text": "but",
+     "start": 34.065,
+     "end": 34.265
+    },
+    {
+     "text": "he",
+     "start": 34.265,
+     "end": 34.365
+    },
+    {
+     "text": "cannot",
+     "start": 34.365,
+     "end": 34.565
+    },
+    {
+     "text": "simply",
+     "start": 34.565,
+     "end": 34.825
+    },
+    {
+     "text": "order",
+     "start": 34.825,
+     "end": 35.185
+    },
+    {
+     "text": "the",
+     "start": 35.185,
+     "end": 35.365
+    },
+    {
+     "text": "entire",
+     "start": 35.365,
+     "end": 35.525
+    },
+    {
+     "text": "healthcare",
+     "start": 35.525,
+     "end": 35.845
+    },
+    {
+     "text": "system",
+     "start": 35.845,
+     "end": 36.285
+    },
+    {
+     "text": "to",
+     "start": 36.285,
+     "end": 36.525
+    },
+    {
+     "text": "change",
+     "start": 36.525,
+     "end": 36.745
+    },
+    {
+     "text": "overnight.",
+     "start": 36.745,
+     "end": 37.105
+    }
+   ]
+  },
+  {
+   "id": "o5",
+   "text": "So the real question is bigger than one election. Could he win the country and then convince Congress to let him govern?",
+   "start": 37.5980625,
+   "end": 42.3380625,
+   "words": [
+    {
+     "text": "So",
+     "start": 37.598,
+     "end": 37.698
+    },
+    {
+     "text": "the",
+     "start": 37.698,
+     "end": 37.798
+    },
+    {
+     "text": "real",
+     "start": 37.798,
+     "end": 37.898
+    },
+    {
+     "text": "question",
+     "start": 37.898,
+     "end": 38.258
+    },
+    {
+     "text": "is",
+     "start": 38.258,
+     "end": 38.478
+    },
+    {
+     "text": "bigger",
+     "start": 38.478,
+     "end": 38.678
+    },
+    {
+     "text": "than",
+     "start": 38.678,
+     "end": 38.918
+    },
+    {
+     "text": "one",
+     "start": 38.918,
+     "end": 39.058
+    },
+    {
+     "text": "election.",
+     "start": 39.058,
+     "end": 39.338
+    },
+    {
+     "text": "Could",
+     "start": 39.938,
+     "end": 39.978
+    },
+    {
+     "text": "he",
+     "start": 39.978,
+     "end": 40.098
+    },
+    {
+     "text": "win",
+     "start": 40.098,
+     "end": 40.238
+    },
+    {
+     "text": "the",
+     "start": 40.238,
+     "end": 40.398
+    },
+    {
+     "text": "country",
+     "start": 40.398,
+     "end": 40.658
+    },
+    {
+     "text": "and",
+     "start": 40.658,
+     "end": 40.938
+    },
+    {
+     "text": "then",
+     "start": 40.938,
+     "end": 41.038
+    },
+    {
+     "text": "convince",
+     "start": 41.038,
+     "end": 41.278
+    },
+    {
+     "text": "Congress",
+     "start": 41.278,
+     "end": 41.658
+    },
+    {
+     "text": "to",
+     "start": 41.658,
+     "end": 41.878
+    },
+    {
+     "text": "let",
+     "start": 41.878,
+     "end": 41.998
+    },
+    {
+     "text": "him",
+     "start": 41.998,
+     "end": 42.098
+    },
+    {
+     "text": "govern?",
+     "start": 42.098,
+     "end": 42.338
     }
    ]
   }
