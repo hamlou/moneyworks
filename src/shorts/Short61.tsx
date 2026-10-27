@@ -25,7 +25,7 @@ const DaveStage: React.FC<{f: number; keys: PKey[]}> = ({f, keys}) => (
     <ambientLight intensity={0.9} />
     <directionalLight position={[4, 7, 6]} intensity={2.5} />
     <directionalLight position={[-5, 3, 2]} intensity={0.7} color="#c8d9ff" />
-    <DaveT f={f} keys={keys} position={[0.75, -0.72, 0]} scale={0.82} />
+    <DaveT f={f} keys={keys} position={[2.6, -0.72, 0]} scale={0.78} />
   </ThreeCanvas>
 );
 
@@ -92,14 +92,14 @@ const Body: React.FC = () => {
   ];
 
   const cards = [
-    {at: 0, title: 'THE FIRST FIGHT?', sub: 'A hypothetical presidency'},
+    {at: 0, title: 'THE FIRST FIGHT?', sub: 'Would America accept him?'},
     {at: anchors.oval, title: 'THE OVAL OFFICE', sub: 'What if he won?'},
     {at: anchors.trump, title: 'A REAL POLITICAL ATTACK', sub: 'Reported October 25 2026', color: K.red},
     {at: anchors.baseless, title: 'HE CALLED IT BASELESS', sub: 'El-Sayed rejected the accusations'},
     {at: anchors.medicare, title: 'MEDICARE FOR ALL', sub: 'A central campaign promise', color: K.green},
     {at: anchors.insurers, title: 'WHO PAYS FOR CARE?', sub: 'A fight over the healthcare system', color: K.yellow},
     {at: anchors.congress, title: 'CONGRESS MUST VOTE', sub: 'A president cannot do it alone', color: K.red},
-    {at: anchors.accept, title: 'WOULD AMERICA ACCEPT HIM?', sub: 'That is the first fight'}
+    {at: anchors.accept, title: 'THE FIRST FIGHT?', sub: 'Would America accept him?'}
   ];
   let card = cards[0];
   for (const c of cards) if (c.at <= f) card = c;
