@@ -31,7 +31,7 @@ const Camera: React.FC<{f: number; close: boolean}> = ({f, close}) => {
   const {camera} = useThree();
   useLayoutEffect(() => {
     camera.position.set(close ? 0.55 : 0, 1.78, close ? 9.7 : 12 - Math.sin(f / 29) * 0.12);
-    camera.lookAt(close ? [0.45, 1.62, 0] : [0, 1.7, 0]);
+    camera.lookAt(close ? 0.1 : 0, close ? 1.62 : 1.7, 0);
     (camera as any).fov = close ? 27 : 24;
     camera.updateProjectionMatrix();
   }, [camera, f, close]);
@@ -45,7 +45,7 @@ const DaveStage: React.FC<{f: number; keys: PKey[]; mode: Mode; close?: boolean}
     <directionalLight position={[4, 7, 6]} intensity={2.4} />
     <directionalLight position={[-5, 3, 2]} intensity={0.85} color={mode === 'press' ? '#b6caff' : '#d4e2ff'} />
     <World mode={mode} f={f} />
-    <DaveT f={f} keys={keys} position={[1.5 + Math.sin(f / 17) * 0.035, -0.78 + Math.sin(f / 12) * 0.012, 0.35]} rotation={[0, -0.18 + Math.sin(f / 23) * 0.035, 0]} scale={close ? 1.03 : 0.88} shake={mode === 'capitol' && f > 0 ? 0.035 : 0} />
+    <DaveT f={f} keys={keys} position={[close ? 0.1 : 0.82 + Math.sin(f / 17) * 0.025, close ? -1.05 : -0.3 + Math.sin(f / 12) * 0.01, 0.35]} rotation={[0, -0.18 + Math.sin(f / 23) * 0.035, 0]} scale={close ? 0.92 : 0.72} shake={mode === 'capitol' && f > 0 ? 0.035 : 0} />
   </ThreeCanvas>
 );
 
@@ -53,7 +53,7 @@ const PhotoPlate: React.FC<{f: number; at: number; id: string; label: string}> =
   if (f < at) return null;
   const enter = snap(f, at, 6);
   const zoom = interpolate(f - at, [0, 140], [1.12, 1], {extrapolateLeft: 'clamp', extrapolateRight: 'clamp'});
-  return <div style={{position: 'absolute', left: 42, top: 88, width: 850, height: 800, overflow: 'hidden', borderRadius: 26, border: '2px solid #4a4e57', boxShadow: '0 30px 90px rgba(0,0,0,0.5)', opacity: Math.min(1, enter * 1.4), transform: 'translateX(' + ((1 - enter) * -70) + 'px) scale(' + (0.94 + enter * 0.06) + ')', transformOrigin: 'left top'}}>
+  return <div style={{position: 'absolute', left: 42, top: 88, width: 660, height: 640, overflow: 'hidden', borderRadius: 26, border: '2px solid #4a4e57', boxShadow: '0 30px 90px rgba(0,0,0,0.5)', opacity: Math.min(1, enter * 1.4), transform: 'translateX(' + ((1 - enter) * -70) + 'px) scale(' + (0.94 + enter * 0.06) + ')', transformOrigin: 'left top'}}>
     <Img src={staticFile('photos/short61/' + id + '.jpg')} style={{width: '100%', height: '100%', objectFit: 'cover', transform: 'scale(' + zoom + ')', filter: 'saturate(1.08) contrast(1.05)'}} />
     <div style={{position: 'absolute', inset: 0, background: 'linear-gradient(180deg, rgba(0,0,0,0.02) 35%, rgba(0,0,0,0.65) 100%)'}} />
     <div style={{position: 'absolute', left: 28, bottom: 26, fontFamily: UI, fontSize: 25, fontWeight: 700, color: '#fff', letterSpacing: 2, textShadow: '0 3px 12px #000'}}>{label}</div>
@@ -63,8 +63,8 @@ const PhotoPlate: React.FC<{f: number; at: number; id: string; label: string}> =
 const Kinetic: React.FC<{f: number; at: number; title: string; sub?: string; color?: string}> = ({f, at, title, sub, color = K.white}) => {
   const p = snap(f, at, 5);
   if (f < at) return null;
-  return <div style={{position: 'absolute', left: 52, top: 960, width: 720, transform: 'translateY(' + ((1 - p) * 55) + 'px) scale(' + (0.9 + 0.1 * p) + ')', opacity: Math.min(1, p * 1.5), transformOrigin: 'left center'}}>
-    <div style={{fontFamily: ANTON, fontSize: 70, lineHeight: 0.95, color, letterSpacing: 1, textShadow: '0 7px 0 rgba(0,0,0,0.35)'}}>{title}</div>
+  return <div style={{position: 'absolute', left: 52, top: 960, width: 520, transform: 'translateY(' + ((1 - p) * 55) + 'px) scale(' + (0.9 + 0.1 * p) + ')', opacity: Math.min(1, p * 1.5), transformOrigin: 'left center'}}>
+    <div style={{fontFamily: ANTON, fontSize: 58, lineHeight: 0.95, color, letterSpacing: 1, textShadow: '0 7px 0 rgba(0,0,0,0.35)'}}>{title}</div>
     {sub ? <div style={{fontFamily: UI, fontWeight: 600, fontSize: 28, lineHeight: 1.12, color: '#d6d8dc', marginTop: 13}}>{sub}</div> : null}
   </div>;
 };
@@ -122,8 +122,8 @@ const Body: React.FC = () => {
   const close = f >= a.govern;
   return <AbsoluteFill style={{background: K.bg, overflow: 'hidden'}}>
     <AbsoluteFill style={{background: 'radial-gradient(ellipse at 45% 35%, #2c3440 0%, #11151b 75%)'}} />
-    <PhotoPlate f={f} at={photo.at} id={photo.id} label={photo.label} />
     <DaveStage f={f} keys={keys} mode={world} close={close} />
+    <PhotoPlate f={f} at={photo.at} id={photo.id} label={photo.label} />
     <Kinetic f={f} at={label.at} title={label.title} sub={label.sub} color={label.color} />
     {f >= a.wall && f < a.wall + 24 ? <ComicBurst f={f} at={a.wall} top="THE BILL" word="BOUNCES" x={520} y={530} color={K.red} /> : null}
     <Threshold f={f} at={a.trump} n={1}><WhiteFlash f={f} at={a.trump} n={1} /></Threshold>
