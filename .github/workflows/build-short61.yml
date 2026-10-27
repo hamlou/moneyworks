@@ -1,0 +1,117 @@
+name: Build Short61
+run-name: build short61 — Abdul El-Sayed
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/build-short61.yml'
+      - 'pipeline/episodes/short61.json'
+      - 'src/shorts/Short61.tsx'
+      - 'src/Root.tsx'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  actions: read
+
+jobs:
+  voice:
+    runs-on: ubuntu-latest
+    timeout-minutes: 150
+    strategy:
+      fail-fast: false
+      matrix:
+        shard: [0, 1, 2, 3]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg
+      - run: pip install -q --extra-index-url https://download.pytorch.org/whl/cpu chatterbox-tts faster-whisper numpy
+      - name: Generate Chatterbox voice shard
+        run: python pipeline/tts_cb.py short61 --shard ${{ matrix.shard }} --of 4
+      - uses: actions/upload-artifact@v4
+        with:
+          name: short61-cb-${{ matrix.shard }}
+          path: cb/*.wav
+          retention-days: 1
+      - uses: actions/upload-artifact@v4
+        with:
+          name: short61-cbj-${{ matrix.shard }}
+          path: cb/*.json
+          retention-days: 1
+
+  merge-voice:
+    needs: voice
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg
+      - run: pip install -q numpy
+      - uses: actions/download-artifact@v4
+        with:
+          pattern: short61-cb*
+          path: cb
+          merge-multiple: true
+      - name: Merge voice and word timings
+        run: python pipeline/tts_cb.py short61 --merge
+      - name: Commit Chatterbox voice cache
+        run: |
+          git config user.name "Moneyworks Bot"
+          git config user.email "bot@users.noreply.github.com"
+          git add pipeline/voice/short61.flac pipeline/voice/short61.json
+          git commit -q -m "short61: cache Chatterbox voice"
+          git push origin HEAD:main
+
+  render:
+    needs: merge-voice
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg
+      - run: pip install -q edge-tts numpy pillow
+      - run: npm ci --no-audit --no-fund
+      - name: Download and licence-check relevant real photos
+        run: python pipeline/photos.py short61
+      - name: Load cached Chatterbox voice and word timings
+        run: python pipeline/tts.py pipeline/episodes/short61.json public/short61
+      - name: Render vertical Short
+        run: >
+          npx remotion render src/index.ts Short61 out/short61.mp4
+          --codec=h264 --crf=18 --pixel-format=yuv420p --audio-codec=aac
+          --props='{"timings":null}'
+          --concurrency=100% --log=warn
+      - name: Loudness normalize
+        run: bash pipeline/master.sh out/short61.mp4
+      - name: Commit finished MP4 and photo credits
+        run: |
+          mkdir -p deliverables
+          cp out/short61_final.mp4 deliverables/short61.mp4
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add deliverables/short61.mp4 pipeline/photos/short61.json
+          git commit -m "deliverables: render short61"
+          git push origin HEAD:main
+      - uses: actions/upload-artifact@v4
+        with:
+          name: short61-video-and-photo-sheet
+          path: |
+            deliverables/short61.mp4
+            ../qa_dl/photos_short61.jpg
+          retention-days: 14
+          compression-level: 0
