@@ -13,10 +13,28 @@ const Mat: React.FC<{c: string; metal?: number; rough?: number}> = ({c, metal = 
 const Block: React.FC<{p: [number, number, number]; s: [number, number, number]; c: string}> = ({p, s, c}) => <mesh position={p} castShadow receiveShadow><boxGeometry args={s} /><Mat c={c} /></mesh>;
 const Pillar: React.FC<{x: number}> = ({x}) => <group position={[x, 2.35, -3.6]}><mesh castShadow><cylinderGeometry args={[0.32, 0.42, 4.7, 20]} /><Mat c="#e5e0d5" /></mesh><Block p={[0, 2.42, 0]} s={[0.95, 0.18, 0.95]} c="#f5f1e9" /><Block p={[0, -2.42, 0]} s={[0.95, 0.18, 0.95]} c="#d0c8b8" /></group>;
 
+const DoorLeaf: React.FC<{side: -1 | 1; f: number}> = ({side, f}) => {
+  const open = interpolate(f, [0, 22], [0, 1], {extrapolateLeft: 'clamp', extrapolateRight: 'clamp'});
+  return <group position={[side * 1.35, 1.55, -3.7]} rotation={[0, side * open * 0.92, 0]}>
+    <mesh position={[-side * 0.68, 0, 0]} castShadow>
+      <boxGeometry args={[1.36, 3.1, 0.16]} />
+      <Mat c="#5b4937" />
+    </mesh>
+    <mesh position={[-side * 0.68, 0, 0.09]}>
+      <boxGeometry args={[1.08, 2.82, 0.035]} />
+      <Mat c="#80684c" />
+    </mesh>
+    <mesh position={[-side * 0.18, 0, 0.16]}>
+      <sphereGeometry args={[0.055, 12, 10]} />
+      <meshStandardMaterial color="#d5bd7c" metalness={0.8} roughness={0.25} />
+    </mesh>
+  </group>;
+};
+
 const World: React.FC<{mode: Mode; f: number}> = ({mode, f}) => (
   <group>
     <mesh position={[0, -1.18, -1]} rotation={[-Math.PI / 2, 0, 0]} receiveShadow><planeGeometry args={[22, 20]} /><Mat c={mode === 'finale' ? '#182332' : '#34363b'} /></mesh>
-    {mode === 'oval' ? <><Block p={[0, 2.4, -4.8]} s={[18, 7.2, 0.25]} c="#263d36" /><Block p={[-3.8, 2.45, -4.62]} s={[3.8, 4.9, 0.08]} c="#5c806e" /><Block p={[0.2, 2.45, -4.62]} s={[3.8, 4.9, 0.08]} c="#5c806e" /><Block p={[4.15, 2.45, -4.62]} s={[3.8, 4.9, 0.08]} c="#5c806e" /><Block p={[0, 0.05, -2.1]} s={[5.2, 0.32, 2.1]} c="#563c2d" /><Block p={[0, 0.28, -2.1]} s={[5.1, 0.12, 2.0]} c="#8a6746" /><Block p={[-6.8, 2.1, -3.2]} s={[0.16, 4.2, 0.16]} c="#b7b7b7" /><Block p={[-6.45, 3.3, -3.2]} s={[0.85, 1.5, 0.05]} c="#183b72" /><Block p={[6.8, 2.1, -3.2]} s={[0.16, 4.2, 0.16]} c="#b7b7b7" /><Block p={[6.45, 3.3, -3.2]} s={[0.85, 1.5, 0.05]} c="#b22234" /></> : null}
+    {mode === 'oval' ? <><Block p={[0, 2.4, -4.8]} s={[18, 7.2, 0.25]} c="#263d36" /><Block p={[-3.8, 2.45, -4.62]} s={[3.8, 4.9, 0.08]} c="#5c806e" /><Block p={[0.2, 2.45, -4.62]} s={[3.8, 4.9, 0.08]} c="#5c806e" /><Block p={[4.15, 2.45, -4.62]} s={[3.8, 4.9, 0.08]} c="#5c806e" /><Block p={[0, 0.05, -2.1]} s={[5.2, 0.32, 2.1]} c="#563c2d" /><Block p={[0, 0.28, -2.1]} s={[5.1, 0.12, 2.0]} c="#8a6746" /><Block p={[-6.8, 2.1, -3.2]} s={[0.16, 4.2, 0.16]} c="#b7b7b7" /><Block p={[-6.45, 3.3, -3.2]} s={[0.85, 1.5, 0.05]} c="#183b72" /><Block p={[6.8, 2.1, -3.2]} s={[0.16, 4.2, 0.16]} c="#b7b7b7" /><Block p={[6.45, 3.3, -3.2]} s={[0.85, 1.5, 0.05]} c="#b22234" /><DoorLeaf side={-1} f={f} /><DoorLeaf side={1} f={f} /></> : null}
     {mode === 'press' ? <><Block p={[0, 2.3, -4.7]} s={[18, 7, 0.3]} c="#10233e" />{Array.from({length: 8}).map((_, i) => <Block key={i} p={[-6.2 + i * 1.75, 2.25, -4.48]} s={[0.09, 4.8, 0.08]} c="#7e8da4" />)}<Block p={[0, 0.55, -2.4]} s={[2.4, 1.1, 0.85]} c="#3c4654" /><Block p={[0, 1.2, -2.4]} s={[2.8, 0.12, 1.0]} c="#aeb6c2" /><Block p={[0, 2.05, -2.4]} s={[0.12, 1.7, 0.12]} c="#d8d8d8" /></> : null}
     {mode === 'hospital' ? <><Block p={[0, 2.4, -4.8]} s={[18, 7.2, 0.2]} c="#d9e4e8" /><Block p={[-3.3, 1.0, -2.5]} s={[4.6, 0.3, 2.2]} c="#f4f6f7" /><Block p={[-3.3, 1.65, -3.35]} s={[4.5, 1.0, 0.25]} c="#9eb6c2" /><Block p={[4.5, 2.1, -3.2]} s={[2.2, 1.8, 0.15]} c="#24323d" /><Block p={[4.5, 2.1, -3.08]} s={[2.0, 1.6, 0.05]} c="#1e9b9a" /></> : null}
     {mode === 'insurance' ? <><Block p={[0, 2.4, -4.8]} s={[18, 7.2, 0.2]} c="#202e40" />{Array.from({length: 5}).map((_, i) => <Block key={i} p={[-4.2 + i * 2.1, 1.1 + (i % 2) * 0.22, -2.7]} s={[1.45, 2.2 + (i % 2) * 0.45, 0.32]} c={i % 2 ? '#4a6077' : '#6d8297'} />)}<Block p={[0, 0.25, -2.2]} s={[8.2, 0.35, 2.0]} c="#4a382d" /></> : null}
@@ -38,14 +56,14 @@ const Camera: React.FC<{f: number; close: boolean}> = ({f, close}) => {
   return null;
 };
 
-const DaveStage: React.FC<{f: number; keys: PKey[]; mode: Mode; close?: boolean}> = ({f, keys, mode, close = false}) => (
+const DaveStage: React.FC<{f: number; keys: PKey[]; mode: Mode; close?: boolean}> = ({f, keys, mode, close = false}) => {\n  const enter = snap(f, 4, 12);\n  return (
   <ThreeCanvas width={W} height={H} style={{position: 'absolute', inset: 0}} gl={{antialias: true, alpha: true, preserveDrawingBuffer: true}} camera={{fov: 24, position: [0, 1.78, 12], near: 0.1, far: 100}}>
     <Camera f={f} close={close} />
     <ambientLight intensity={mode === 'hospital' ? 0.8 : 0.62} />
     <directionalLight position={[4, 7, 6]} intensity={2.4} />
     <directionalLight position={[-5, 3, 2]} intensity={0.85} color={mode === 'press' ? '#b6caff' : '#d4e2ff'} />
     <World mode={mode} f={f} />
-    <DaveT f={f} keys={keys} position={[close ? 0.1 : 0.82 + Math.sin(f / 17) * 0.025, close ? -1.05 : -0.3 + Math.sin(f / 12) * 0.01, 0.35]} rotation={[0, -0.18 + Math.sin(f / 23) * 0.035, 0]} scale={close ? 0.92 : 0.72} shake={mode === 'capitol' && f > 0 ? 0.035 : 0} />
+    <DaveT f={f} keys={keys} position={[close ? 0.1 : -0.4 + 1.22 * enter + Math.sin(f / 17) * 0.025, close ? -1.05 : -0.3 + Math.sin(f / 12) * 0.01, 0.35]} rotation={[0, -0.18 + Math.sin(f / 23) * 0.035, 0]} scale={close ? 0.92 : 0.72 * enter} shake={mode === 'capitol' && f > 0 ? 0.035 : 0} />
   </ThreeCanvas>
 );
 
