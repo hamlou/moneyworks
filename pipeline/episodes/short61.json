@@ -1,0 +1,17 @@
+{
+  "id": "short61",
+  "title": "What If Abdul El-Sayed Became President?",
+  "voice": "chatterbox",
+  "cb": {"cfg": 0.35, "exag": 0.5},
+  "beats": [
+    {"id":"o1","text":"I want you to imagine Abdul El-Sayed walking into the Oval Office. The first fight might not even be about his policies. It might be about whether America is ready to see a Muslim president as just another American president.","pause":0.35,"exag":0.58},
+    {"id":"o2","text":"Because right now he is a Michigan Senate candidate and not a presidential candidate. This week Donald Trump called him a jihadist and questioned his loyalty. El-Sayed called those attacks baseless. That is the real political climate behind this hypothetical.","pause":0.35,"exag":0.48},
+    {"id":"o3","text":"Now imagine he wins the White House. He wants Medicare for All and he wants corporate money out of politics. That could put private insurers in a very different role and trigger a huge fight over who pays for American healthcare.","pause":0.35,"exag":0.5},
+    {"id":"o4","text":"But here is the twist. A president cannot pass Medicare for All alone. Congress has to approve it. So even if he wins the biggest office in America the system could block his biggest promise. And that brings us back to the first fight. Would America accept him before he even gets to change anything?","pause":0.8,"exag":0.58}
+  ],
+  "sources": [
+    "https://apnews.com/article/162330c3d193ecb94538f8dd8083f916",
+    "https://www.theguardian.com/us-news/2026/oct/27/jd-vance-el-sayed-attacks",
+    "https://abdulforsenate.com/"
+  ]
+}
