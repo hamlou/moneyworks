@@ -554,3 +554,72 @@ Callbacks to earlier episodes are GOOD ("Remember the raccoon from our credit ca
 - Never hide what is being explained: photos/memes on cartoon beats open a right panel and the cartoon shrinks to the left (`splitAt` in `src/upgrade.tsx`, applied in `Episode.tsx`). In new hand-built episodes keep photos in empty space or shrink the scene the same way.
 - Zooms start on the punch word and end on the joke's last word; host camera re-frames only at sentence starts/breaths, never on a timer.
 - More sound effects (~1 per beat) but each must illustrate its word; failure trombone is quiet (−28 LUFS file, gain 0.3).
+
+## 12. Ideation gates, looped arc, hook-as-question, upload + analytics routine (added 27 Oct 2026 from the "Isa / Nile Blue 7-day channel" case study — adapted for long-form)
+
+**Precedence:** this section ADDS a planning layer and a post-publish routine to long-form episodes. Wherever it touches a rule in §0–§11 (story spine, hook, chapter cards, thumbnails, photo/meme cadence, Dave-as-host, STYLE_3D) the owner's rule in §0–§11 wins. Benchmark numbers below come from one creator's experiment, so treat them as targets to test and log in `pipeline/ctr_log.md`, not guarantees.
+
+### 12.1 Three gates before a brief is written (an episode must pass all three)
+
+1. **Universal relatability:** a stranger with zero prior knowledge gets the premise with the sound off. Money situations everyone has lived (rent, bonus, refund, scam call, lending to a friend) pass. Jargon-first premises fail. Pick the MOST relatable story, not the one with the biggest numbers.
+2. **Completion compulsion:** the story follows the looped arc (12.2) so the ending is not predictable and the viewer stays to the payoff. For long-form this means the story spine (§0.2) embeds the arc at the episode level: goal → rising → villain reveal → low point → win.
+3. **Open loop:** the hook plants a question that only finishing the video can close (12.3). Never hand the answer over in the opening line. The §0.3 hook spec already demands an unanswered question + withheld payoff — this gate ensures the BRIEF enforces it before scripting begins.
+
+Write the three results at the top of `pipeline/episodes/epNN_brief.md` (one line each: PASS plus why). Any FAIL means rewrite the premise before scripting anything.
+
+### 12.2 The looped arc (how the story spine of §0.2 maps to the arc)
+
+```
+HOOK (open-loop question — §0.3 hook spec)
+  → RISING ACTION   (Dave's problem escalates: §0.2 goal + stakes + early chapters)
+  → VILLAIN REVEAL  (who profits — §0.2 villain, revealed ~50 %)
+  → LOW POINT       (it looks hopeless for Dave — §0.2 low_point ~75 %)
+  → COMEBACK        (the practical chapter: Dave's fight-back — §0.2 win)
+  → PAYOFF          (the final number or line that closes the hook's loop — §0.2 loop_big, paid ~90 %)
+```
+
+- **Villain reveal** and **low point** are real beats with their own chapter(s), not only twist lines. **Comeback** is a separate chapter that visibly resolves it. Together they make the arc less predictable than hook → facts → recap.
+- In the episode brief list the six phases with their chapter ids and approximate timestamps before scripting. In `pipeline/episodes/epNN.json` group beats by phase so the timeline reads left to right as hook, rising, villain, low point, comeback, payoff.
+- Write the script by filling each phase with Dave's story, and write the HOOK LAST once the payoff is known.
+- The §0.2 story spine fields map directly: `goal` + `stakes` = RISING ACTION, `central_question` = the HOOK's open loop, `villain` = VILLAIN REVEAL, `low_point` = LOW POINT, `win` = COMEBACK, `loop_big` = PAYOFF.
+
+### 12.3 Hook = a question, not a statement (works together with §0.3, §0.10 A, §0.12 A)
+
+A statement that reports the result gives viewers no reason to stay. Keep §0.3 (unanswered question + withheld payoff), §0.10 A (concept + stakes + how the video ends), and §0.12 A (Dave first person to "you") — and make the spoken line plant a question or withhold the result. Zero commas still applies.
+
+- Weak (answers it): "Dave got his full $9,997 refund after one phone call."
+- Strong (open loop): "What would happen if one question made the bank hang up on Dave and refuse to give back $9,997."
+- Checklist: question form or withheld result, curiosity gap, payoff only in the last ~60 s, the hook's second sentence promises the ending (§0.2 loop_big), and the chapter cards never reveal it early (§0.4).
+
+### 12.4 Upload checklist (long-form)
+
+- **Title:** say what happens in plain words and make it about the viewer (§5 thumbnail/title rules). Credit an original creator in the title only if footage is reused (our episodes use free-licence photos and original animation, so credits go in the description).
+- **Description:** the story premise in 2–3 sentences, timestamps for chapters, the photo `credit` + `license` lines, and 3–5 hashtags (topic tags such as `#money` `#personalfinance`).
+- **Thumbnails:** follow the §0.6 five concepts. Test on a phone grid before uploading (§0.6 F).
+- Set "not made for kids", add end screen (subscribe + best-for-viewer), set cards linking to the next episode if available, publish public.
+
+### 12.5 Analytics routine after publishing
+
+Log in `pipeline/ctr_log.md` for every episode: views at 24 h and 48 h, CTR (click-through rate from impressions), average view duration as a percent of length, and audience retention graph shape (where the biggest drops are).
+
+| Metric (Studio → Analytics) | Target to test | Reading |
+|---|---|---|
+| CTR (impressions click-through rate) | ≥ 5–8 % | Below it the thumbnail/title aren't hooking in browse/suggested. Iterate thumbnails (§0.6) |
+| Average view duration | ≥ 50 % of video length (5+ min of a 10 min video) | Low means the story spine or pacing has dead zones. Check the retention graph for the exact drop-off beat |
+| Retention graph — first 30 s | ≤ 30 % drop | A steeper drop means the hook is leaking. Revisit §0.3 + 12.3 |
+| Retention graph — mid-video dips | n/a | Each dip maps to a chapter — if a chapter loses >10 % it's either too slow, too stat-heavy, or the chapter card gave away the answer |
+| Hourly candles (views per hour) | n/a | Shows distribution waves, more telling than the total |
+
+- **Do not judge an episode before 48 h.** A slow first day can still take off on day 2 to 7 because YouTube pushes long-form in browse/suggested in waves.
+- **Next upload timing:** for long-form the cadence matters less than for Shorts — upload when the next episode is ready. However, note in the log if uploading during an active push visibly flatlined a previous video.
+- Keep producing while waiting, and check analytics on a schedule (for example morning and evening), not every few minutes.
+- Expect misses: structure (12.1 to 12.3) is how we shorten the number of unstructured guesses before a hit.
+
+### 12.6 Pre-script scorecard (add to the §0.2 spine and §3 audit)
+
+- [ ] Relatable with sound off (title + thumbnail tell the story alone)
+- [ ] Looped arc present: villain reveal beat, low point beat, AND comeback beat as separate chapters
+- [ ] Open-loop hook written last, with a question or withheld result
+- [ ] Story spine (§0.2) filled with all fields mapping to the arc (12.2)
+- [ ] Title, description, and thumbnails follow 12.4
+

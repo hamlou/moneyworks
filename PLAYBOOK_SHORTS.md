@@ -84,3 +84,66 @@ The owner rejected the first `short52` render: drawn props only, 2 meme beats, h
 - **Open loop:** the hook's second sentence promises the ending ("one question is about to make that man hang up"), the ending pays it, and the last line hands a NEW unanswered question to the long video ("his first two thousand is still gone and how he fights to win it back is in the full video linked right below").
 - **Where it runs (verified 14 Oct 2026):** `.github/workflows/short.yml` runs `pipeline/photos.py` on GitHub Actions, and Actions can reach Wikimedia Commons — so `short52` (run 38485195999) rendered real photos with no PC step. Only the search (`photo_find.py` / `pexels_find.py`) needs a machine with open network; the cloud agent sandbox cannot reach any photo host (§5). Finished = Actions run green AND `deliverables/shortNN.mp4` committed. Also a local Claude Code session on the owner's PC has open network — it finds photos itself with `py pipeline/photo_find.py "query" --sheet name` (Wikimedia Commons, no API key), LOOKS at the contact sheets, writes `pipeline/photos/shortNN.json`, runs `py pipeline/photos.py shortNN`. `short.yml` downloads any manifest photo that is not committed. Local voice preview: `py pipeline/tts.py … public/shortNN` needs a full ffmpeg on PATH (`pip install imageio-ffmpeg`; Remotion's bundled ffmpeg cannot decode mp3). QA stills: `node pipeline/stills.mjs <dir> '[{"id":"ShortNN","frame":120,"timings":null}]'` — look at ~50 frames before dispatching the render.
 - **Photo credits** (CC BY / BY-SA need attribution): paste the `credit` + `license` lines of the manifest into the Short's description.
+
+## 10. Ideation gates, looped arc, hook-as-question, upload + analytics routine (added 27 Oct 2026 from the "Isa / Nile Blue 7-day channel" case study)
+
+**Precedence:** this section ADDS a planning layer and a post-publish routine. Wherever it touches a rule in §2–§9 (frame 0, no commas, photo/meme cadence, CTA to the long video) the owner's rule in §2–§9 wins. Benchmark numbers below come from one creator's experiment, so treat them as targets to test and log in `pipeline/ctr_log.md`, not guarantees.
+
+### 10.1 Three gates before a brief is written (a Short must pass all three)
+
+1. **Universal relatability:** a stranger with zero prior knowledge gets the premise with the sound off. Money situations everyone has lived (rent, bonus, refund, scam call) pass. Jargon-first premises fail. Pick the MOST relatable story, not the one with the biggest numbers.
+2. **Completion compulsion:** the story follows the looped arc (10.2) so the ending is not predictable and the viewer stays to the payoff.
+3. **Open loop:** the hook plants a question that only finishing the Short can close (10.3). Never hand the answer over in the opening line.
+
+Write the three results at the top of `pipeline/shorts/shortNN.md` (one line each: PASS plus why). Any FAIL means rewrite the premise before animating anything.
+
+### 10.2 The looped arc (how the one loop of §1 is built)
+
+```
+HOOK (open-loop question)
+  → RISING ACTION   (the problem escalates: §1 problem)
+  → CONFLICT        (something goes wrong midway: a miscalculation / failed attempt / bad advice / the twist)
+  → COMEBACK        (the retry or the fix: §1 fix)
+  → PAYOFF          (the reaction or number that finally closes the loop, then §6 CTA)
+```
+
+- Conflict is a real beat with its own scene(s) at roughly the middle of the runtime, not only a twist line. Comeback is a separate beat that visibly resolves it. Together they make the arc less predictable than plain hook → action → payoff.
+- In `pipeline/shorts/shortNN.md` list the five phases with their beat ids (`o1…oN`) and approximate timestamps before building. In `src/shorts/ShortNN.tsx` group scenes by phase so the timeline reads left to right as hook, rising, conflict, comeback, payoff.
+- Write the script by filling each phase with story, and write the HOOK LAST once the payoff is known.
+
+### 10.3 Hook = a question, not a statement (works together with §2, §7, §9)
+
+A statement that reports the result gives viewers no reason to stay. Keep §7 frame 0 (moving real photo, oversized caption, impact SFX, first word on frame 0) and make the spoken line plant a question or withhold the result. Zero commas still applies.
+
+- Weak (answers it): "Dave got his full refund after one phone call."
+- Strong (open loop): "What would happen if one question made the bank hang up on you."
+- Checklist: question form or withheld result, curiosity gap, payoff only at the end, and the second sentence promises the ending (§9 open loop).
+
+### 10.4 Upload checklist
+
+- **Title:** say what happens in plain words and add two relevant emojis (for example a shocked face). Credit an original creator in the title only if footage is reused (our Shorts use free-licence photos and original animation, so credits go in the description per §9).
+- **Description:** the same story with slightly more detail than the title, the photo `credit` + `license` lines (§9), and 3–4 hashtags (`#shorts` plus topic tags such as `#money`).
+- Set "not made for kids", ignore the other advanced settings, set the "Related Video" field (§6), publish public.
+
+### 10.5 Analytics routine after publishing
+
+Log in `pipeline/ctr_log.md` for every Short: views at 24 h and 48 h, swipe-through rate, average view duration as a percent of length, and the peak views per hour.
+
+| Metric (Studio → Analytics → Engagement) | Target to test | Reading |
+|---|---|---|
+| Swipe-through rate ("how viewers engaged") | ≥ 80% | Below it the first 3 s are leaking. Rising over time means the algorithm keeps pushing |
+| Average view duration | ≈ 85% of Short length (52 s of 61 s was called strong) | Low means the conflict or comeback drags |
+| Hourly candles (views per hour) | n/a | Shows distribution waves, more telling than the total |
+
+- **Do not judge a Short before 48 h.** A tiny first day (a few thousand views) can still take off on day 2 to 4 because the push comes in waves.
+- **Next upload timing:** wait until views per hour stays under about 5,000 for 24 h or longer. Uploading while a Short is still being pushed can flatline it. If the schedule forces an earlier upload accept the trade-off knowingly and note it in the log.
+- Keep producing while waiting, and check analytics on a schedule (for example morning and evening), not every few minutes.
+- Expect misses: structure (10.1 to 10.3) is how we shorten the number of unstructured guesses before a hit.
+
+### 10.6 Pre-render scorecard (add to the §3 audit)
+
+- [ ] Relatable with sound off
+- [ ] Looped arc present: conflict beat AND comeback beat
+- [ ] Open-loop hook written last, with a question or withheld result
+- [ ] Title and description follow 10.4
+

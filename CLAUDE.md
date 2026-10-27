@@ -17,3 +17,9 @@ Before doing ANY work on a new episode, read `PLAYBOOK_LONG.md` completely and f
 "Make video 11" means: research → `pipeline/episodes/ep11.json` → `src/episodes/Ep11.tsx` → `src/thumbs/ep11.tsx` → register in `src/Episode.tsx` + `src/Root.tsx` → push → wait for `check` → `gh workflow run render.yml -R hamlou/moneyworks -f ep=ep11 -f chunks=10` → download to `Desktop\100\videos\ep11` → QA.
 
 GitHub CLI: `%LOCALAPPDATA%\ghcli\bin\gh.exe` (logged in as hamlou). Repo: `hamlou/moneyworks` (private). Renders run on GitHub Actions, not the VPS.
+
+**Shorts planning layer (27 Oct 2026): `PLAYBOOK_SHORTS.md` §10.** Before writing a Short brief it must pass 3 gates (universal relatability, completion compulsion via the looped arc hook → rising → CONFLICT → COMEBACK → payoff, open-loop hook written last as a question or withheld result). After publishing: judge at 48 h, log swipe-through (target ≥ 80%) and average view duration in `pipeline/ctr_log.md`, upload the next Short only when views/hour has stayed under ~5k for 24 h. Owner rules in §2–§9 win on any conflict.
+
+
+**Long-form planning layer (27 Oct 2026): `PLAYBOOK_LONG.md` §12.** Before writing an episode brief it must pass 3 gates (universal relatability, completion compulsion via the looped arc hook → rising → VILLAIN REVEAL → LOW POINT → COMEBACK → payoff mapped to the §0.2 story spine, open-loop hook written last as a question or withheld result). After publishing: judge at 48 h, log CTR (target ≥ 5–8 %), average view duration (target ≥ 50 % of length), and retention graph drops in `pipeline/ctr_log.md`. Owner rules in §0–§11 win on any conflict.
+
