@@ -53,7 +53,7 @@ const PhotoPlate: React.FC<{f: number; at: number; id: string; label: string}> =
   if (f < at) return null;
   const enter = snap(f, at, 6);
   const zoom = interpolate(f - at, [0, 140], [1.12, 1], {extrapolateLeft: 'clamp', extrapolateRight: 'clamp'});
-  return <div style={{position: 'absolute', left: 42, top: 88, width: 660, height: 640, overflow: 'hidden', borderRadius: 26, border: '2px solid #4a4e57', boxShadow: '0 30px 90px rgba(0,0,0,0.5)', opacity: Math.min(1, enter * 1.4), transform: 'translateX(' + ((1 - enter) * -70) + 'px) scale(' + (0.94 + enter * 0.06) + ')', transformOrigin: 'left top'}}>
+  return <div style={{position: 'absolute', left: 42, top: 88, width: 660, height: 640, overflow: 'hidden', borderRadius: 26, border: '2px solid #4a4e57', boxShadow: '0 30px 90px rgba(0,0,0,0.5)', opacity: Math.max(0.65, Math.min(1, enter * 1.4)), transform: 'translateX(' + ((1 - enter) * -70) + 'px) scale(' + (0.94 + enter * 0.06) + ')', transformOrigin: 'left top'}}>
     <Img src={staticFile('photos/short61/' + id + '.jpg')} style={{width: '100%', height: '100%', objectFit: 'cover', transform: 'scale(' + zoom + ')', filter: 'saturate(1.08) contrast(1.05)'}} />
     <div style={{position: 'absolute', inset: 0, background: 'linear-gradient(180deg, rgba(0,0,0,0.02) 35%, rgba(0,0,0,0.65) 100%)'}} />
     <div style={{position: 'absolute', left: 28, bottom: 26, fontFamily: UI, fontSize: 25, fontWeight: 700, color: '#fff', letterSpacing: 2, textShadow: '0 3px 12px #000'}}>{label}</div>
@@ -63,7 +63,7 @@ const PhotoPlate: React.FC<{f: number; at: number; id: string; label: string}> =
 const Kinetic: React.FC<{f: number; at: number; title: string; sub?: string; color?: string; top?: number; width?: number; size?: number}> = ({f, at, title, sub, color = K.white, top = 960, width = 520, size = 58}) => {
   const p = snap(f, at, 5);
   if (f < at) return null;
-  return <div style={{position: 'absolute', left: 52, top, width, transform: 'translateY(' + ((1 - p) * 55) + 'px) scale(' + (0.9 + 0.1 * p) + ')', opacity: Math.min(1, p * 1.5), transformOrigin: 'left center'}}>
+  return <div style={{position: 'absolute', left: 52, top, width, transform: 'translateY(' + ((1 - p) * 55) + 'px) scale(' + (0.9 + 0.1 * p) + ')', opacity: Math.max(0.45, Math.min(1, p * 1.5)), transformOrigin: 'left center'}}>
     <div style={{fontFamily: ANTON, fontSize: size, lineHeight: 0.95, color, letterSpacing: 1, textShadow: '0 7px 0 rgba(0,0,0,0.35)'}}>{title}</div>
     {sub ? <div style={{fontFamily: UI, fontWeight: 600, fontSize: 28, lineHeight: 1.12, color: '#d6d8dc', marginTop: 13}}>{sub}</div> : null}
   </div>;
