@@ -47,7 +47,7 @@ const Callout: React.FC<{f: number; at: number; title: string; sub?: string; col
   return (
     <div style={{position: 'absolute', left: 58, top: 1190, width: 650, transform: 'translateY(' + ((1 - p) * 28) + 'px) scale(' + (0.94 + 0.06 * p) + ')', transformOrigin: 'left center', opacity: Math.min(1, p * 1.5)}}>
       <div style={{fontFamily: UI, fontWeight: 700, fontSize: 29, letterSpacing: 4, color: K.grey, marginBottom: 12}}>MONEYWORKS / THE HYPOTHETICAL</div>
-      <div style={{fontFamily: UI, fontWeight: 700, fontSize: 66, lineHeight: 0.98, color, textShadow: '0 5px 0 rgba(0,0,0,0.35)'}}>{title}</div>
+      <div style={{fontFamily: UI, fontWeight: 700, fontSize: 52, lineHeight: 1.0, color, textShadow: '0 5px 0 rgba(0,0,0,0.35)'}}>{title}</div>
       {sub ? <div style={{fontFamily: UI, fontWeight: 500, fontSize: 30, lineHeight: 1.15, color: '#b8bbc2', marginTop: 16}}>{sub}</div> : null}
     </div>
   );
