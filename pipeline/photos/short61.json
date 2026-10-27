@@ -1,11 +1,52 @@
 {
-  "episode": "short61",
-  "photos": [
-    {"id": "abdul", "file": "File:Abdul El-Sayed.jpg"},
-    {"id": "white_house", "q": "Oval Office"},
-    {"id": "trump_rally", "q": "Donald Trump rally"},
-    {"id": "hospital", "q": "hospital doctor"},
-    {"id": "insurance", "q": "health insurance"},
-    {"id": "capitol", "q": "United States Capitol"}
-  ]
+ "episode": "short61",
+ "photos": [
+  {
+   "id": "abdul",
+   "file": "File:Abdul El-Sayed.jpg",
+   "credit": "Kenneth C. Zirkel",
+   "license": "CC BY-SA 4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Abdul_El-Sayed.jpg"
+  },
+  {
+   "id": "white_house",
+   "q": "Oval Office",
+   "file": "File:President Barack Obama.jpg",
+   "credit": "Official White House Photo by Pete Souza",
+   "license": "Public domain",
+   "page": "https://commons.wikimedia.org/wiki/File:President_Barack_Obama.jpg"
+  },
+  {
+   "id": "trump_rally",
+   "q": "Donald Trump rally",
+   "file": "File:Donald Trump rally Grappone Conference Center Concord NH January 2024 15.jpg",
+   "credit": "Artaxerxes",
+   "license": "CC BY-SA 4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Donald_Trump_rally_Grappone_Conference_Center_Concord_NH_January_2024_15.jpg"
+  },
+  {
+   "id": "hospital",
+   "q": "hospital doctor",
+   "file": "File:Vista de l'hospital Doctor Peset, València.JPG",
+   "credit": "Joanbanjo",
+   "license": "CC BY-SA 3.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Vista_de_l%27hospital_Doctor_Peset,_Val%C3%A8ncia.JPG"
+  },
+  {
+   "id": "insurance",
+   "q": "health insurance",
+   "file": "File:Claims- Health Insurance.jpg",
+   "credit": "National Library of Medicine",
+   "license": "No restrictions",
+   "page": "https://commons.wikimedia.org/wiki/File:Claims-_Health_Insurance.jpg"
+  },
+  {
+   "id": "capitol",
+   "q": "United States Capitol",
+   "file": "File:Capitol Building Full View.jpg",
+   "credit": "Noclip",
+   "license": "Public domain",
+   "page": "https://commons.wikimedia.org/wiki/File:Capitol_Building_Full_View.jpg"
+  }
+ ]
 }
