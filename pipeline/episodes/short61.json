@@ -2,12 +2,13 @@
   "id": "short61",
   "title": "What If Abdul El-Sayed Became President?",
   "voice": "chatterbox",
-  "cb": {"cfg": 0.35, "exag": 0.5},
+  "cb": {"cfg": 0.3, "exag": 0.58},
   "beats": [
-    {"id":"o1","text":"I want you to imagine Abdul El-Sayed walking into the Oval Office. The first fight might not even be about his policies. It might be about whether America is ready to see a Muslim president as just another American president.","pause":0.35,"exag":0.58},
-    {"id":"o2","text":"Because right now he is a Michigan Senate candidate and not a presidential candidate. This week Donald Trump called him a jihadist and questioned his loyalty. El-Sayed called those attacks baseless. That is the real political climate behind this hypothetical.","pause":0.35,"exag":0.48},
-    {"id":"o3","text":"Now imagine he wins the White House. He wants Medicare for All and he wants corporate money out of politics. That could put private insurers in a very different role and trigger a huge fight over who pays for American healthcare.","pause":0.35,"exag":0.5},
-    {"id":"o4","text":"But here is the twist. A president cannot pass Medicare for All alone. Congress has to approve it. So even if he wins the biggest office in America the system could block his biggest promise. And that brings us back to the first fight. Would America accept him before he even gets to change anything?","pause":0.8,"exag":0.58}
+    {"id":"o1","text":"What if Abdul El-Sayed became president? The first fight might start before he signs a single law. Would America see a president or a Muslim man it has been told to fear?","pause":0.12,"exag":0.68},
+    {"id":"o2","text":"That is hypothetical. El-Sayed is running for Senate in Michigan not the White House. But Donald Trump has called him a jihadist and questioned his loyalty. El-Sayed rejected those attacks as baseless.","pause":0.12,"exag":0.55},
+    {"id":"o3","text":"Now imagine he wins. His platform calls for Medicare for All and getting corporate money out of politics. Private health insurers could face a very different future and a massive fight over who pays for care.","pause":0.12,"exag":0.58},
+    {"id":"o4","text":"But winning the Oval Office would not make those promises law. Congress would still have to pass them. A president can demand change but he cannot simply order the entire healthcare system to change overnight.","pause":0.12,"exag":0.52},
+    {"id":"o5","text":"So the real question is bigger than one election. Could he win the country and then convince Congress to let him govern?","pause":0.35,"exag":0.68}
   ],
   "sources": [
     "https://apnews.com/article/162330c3d193ecb94538f8dd8083f916",
