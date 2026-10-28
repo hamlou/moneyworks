@@ -350,3 +350,9 @@ It is **Higgsfield "Katana"**: Claude driven through the Higgsfield MCP writes *
 3. World objects: CRT TV daily scoreboard, week report card, whiteboard checklist, concrete chapter plate, typewriter maths plate.
 4. 3D worlds from CC0 GLB (living room, bedroom, garage, classroom, street) + white stickman crowd.
 5. Costume prop library for Dave.
+
+### 12.9 Test 1 — Higgsfield vs free kit (28 Oct, same line, `videos/v6_compare/compare.mp4`)
+Line: "school spent 12 years teaching me triangles and zero minutes teaching me taxes".
+- **Higgsfield** (Nano Banana image 2 cr + Seedance 1.5 i2v 4.8 cr): film-quality light/materials/expression, Dave on-model. BUT 4 s only, continuous floaty motion (no burst→hold, no snaps, no punch-in), camera reframed by itself, free plan blocks Seedance 2 / Grok / Kling video ("job_minimum_basic_plan_required"). 3.2 credits left.
+- **Free kit** (`src/v6/Classroom.tsx` TaxShot, CI render): the edit grammar is exact (hold → face snap → 2-frame white-silhouette punch-in → smear → comic burst), unlimited, re-editable per line. v2 added window key light + real shadows, vignette, sweat drop, tighter framing. Still behind on materials, hand acting (paper hides body) and set detail.
+- **Verdict / use:** AI clips = rare hero/hook plates only (and stills as backgrounds for static shots); every acting shot = free kit. Next upgrades to close the look gap: CC0 GLB props + HDRI, Dave hands that grip props, AO/bloom post pass, depth of field on close-ups.
