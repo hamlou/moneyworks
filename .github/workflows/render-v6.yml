@@ -24,7 +24,7 @@ jobs:
         with:
           python-version: '3.12'
       - run: sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg
-      - run: pip install -q numpy
+      - run: pip install -q edge-tts numpy
       - run: python pipeline/tts.py pipeline/episodes/${{ inputs.ep }}.json public/${{ inputs.ep }}
       - run: cp pipeline/episodes/${{ inputs.ep }}.json public/${{ inputs.ep }}/script.json
       - run: ls public/photos/${{ inputs.ep }} 2>/dev/null | head -30 || echo "no photos for ${{ inputs.ep }} (photo plates will be skipped)"
