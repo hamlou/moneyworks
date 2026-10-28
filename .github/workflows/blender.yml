@@ -1,9 +1,11 @@
 name: blender
-run-name: blender ${{ inputs.shot }} ${{ inputs.mode }}
+run-name: blender ${{ inputs.shot || 'taxshot' }} ${{ inputs.mode || 'auto' }}
 
 # Real 3D shots the reference's way (STYLE_3D.md §12): Blender 4.2 LTS + CC0 Poly Haven models, Cycles on CPU.
 # mode=preview → 4 stills at half res (layout check, ~5 min); mode=full → 120 frames, 4 parallel chunks → mp4.
 on:
+  push:
+    paths: ['blender/**', '.github/workflows/blender.yml']
   workflow_dispatch:
     inputs:
       shot:
@@ -21,11 +23,19 @@ jobs:
     runs-on: ubuntu-latest
     outputs:
       chunks: ${{ steps.p.outputs.chunks }}
+      shot: ${{ steps.p.outputs.shot }}
+      mode: ${{ steps.p.outputs.mode }}
+      samples: ${{ steps.p.outputs.samples }}
       res: ${{ steps.p.outputs.res }}
     steps:
+      - uses: actions/checkout@v4
       - id: p
         run: |
-          if [ "${{ inputs.mode }}" = "full" ]; then
+          SHOT=${{ inputs.shot }}; SHOT=${SHOT:-$(awk '{print $1}' blender/RUN)}
+          MODE=${{ inputs.mode }}; MODE=${MODE:-$(awk '{print $2}' blender/RUN)}
+          SAMPLES=${{ inputs.samples }}; SAMPLES=${SAMPLES:-$(awk '{print $3}' blender/RUN)}
+          echo "shot=$SHOT" >> $GITHUB_OUTPUT; echo "mode=$MODE" >> $GITHUB_OUTPUT; echo "samples=$SAMPLES" >> $GITHUB_OUTPUT
+          if [ "$MODE" = "full" ]; then
             echo 'chunks=["1-30","31-60","61-90","91-120"]' >> $GITHUB_OUTPUT; echo 'res=1920x1080' >> $GITHUB_OUTPUT
           else
             echo 'chunks=["5,30,60,95"]' >> $GITHUB_OUTPUT; echo 'res=960x540' >> $GITHUB_OUTPUT
@@ -54,13 +64,13 @@ jobs:
       - uses: actions/cache@v4
         with:
           path: assets
-          key: ph-${{ hashFiles('blender/fetch.py') }}-${{ inputs.shot }}
+          key: ph-${{ hashFiles('blender/fetch.py') }}-${{ needs.plan.outputs.shot }}
       - name: CC0 assets (Poly Haven)
         run: python3 blender/fetch.py assets SchoolDesk_01 SchoolChair_01 wall_clock potted_plant_01 book_encyclopedia_set_01
       - name: Render ${{ matrix.chunk }}
         run: |
-          ~/blender/blender -b -P blender/${{ inputs.shot }}.py -- --assets assets --tex blender/tex --out out/frames \
-            --frames "${{ matrix.chunk }}" --samples ${{ inputs.samples }} --res ${{ needs.plan.outputs.res }} 2>&1 | grep -E "frame |Error|error|Traceback|skip|^  File" || true
+          ~/blender/blender -b -P blender/${{ needs.plan.outputs.shot }}.py -- --assets assets --tex blender/tex --out out/frames \
+            --frames "${{ matrix.chunk }}" --samples ${{ needs.plan.outputs.samples }} --res ${{ needs.plan.outputs.res }} 2>&1 | grep -E "frame |Error|error|Traceback|skip|^  File" || true
           ls out/frames | wc -l
           test -n "$(ls out/frames)"
       - id: n
@@ -72,7 +82,7 @@ jobs:
           retention-days: 3
 
   assemble:
-    needs: render
+    needs: [plan, render]
     runs-on: ubuntu-latest
     steps:
       - uses: actions/download-artifact@v4
@@ -85,13 +95,13 @@ jobs:
         run: |
           mkdir -p out
           ls frames | head
-          if [ "${{ inputs.mode }}" = "full" ]; then
-            ffmpeg -v error -framerate 24 -i frames/f_%04d.jpg -c:v libx264 -crf 17 -pix_fmt yuv420p out/${{ inputs.shot }}.mp4
-            ffmpeg -v error -i out/${{ inputs.shot }}.mp4 -vf "fps=8,scale=320:-1,tile=8x5" out/sheet_%02d.jpg
+          if [ "${{ needs.plan.outputs.mode }}" = "full" ]; then
+            ffmpeg -v error -framerate 24 -i frames/f_%04d.jpg -c:v libx264 -crf 17 -pix_fmt yuv420p out/${{ needs.plan.outputs.shot }}.mp4
+            ffmpeg -v error -i out/${{ needs.plan.outputs.shot }}.mp4 -vf "fps=8,scale=320:-1,tile=8x5" out/sheet_%02d.jpg
           fi
           cp frames/*.jpg out/
       - uses: actions/upload-artifact@v4
         with:
-          name: ${{ inputs.shot }}-${{ inputs.mode }}
+          name: ${{ needs.plan.outputs.shot }}-${{ needs.plan.outputs.mode }}
           path: out
           retention-days: 7
