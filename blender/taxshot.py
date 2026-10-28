@@ -33,6 +33,7 @@ sc.frame_start, sc.frame_end = 1, 120
 sc.render.use_motion_blur = True
 sc.render.motion_blur_shutter = 0.5
 sc.view_settings.view_transform = "AgX"
+sc.view_settings.look = "AgX - Medium High Contrast"
 sc.render.image_settings.file_format = "JPEG"
 sc.render.image_settings.quality = 92
 
@@ -220,6 +221,7 @@ box("chalk_tray", (-1.3, 2.95, 0.89), (2.8, 0.1, 0.03), trim_m)
 chair = import_model("SchoolChair_01")
 chair.rotation_euler.z = math.radians(-90) - back_dir(chair)  # flip: preview showed the backrest toward camera
 desk = import_model("SchoolDesk_01", (0, -0.62, 0))
+TURN = math.radians(28)  # Dave + chair angled toward the camera so his whole body acts on screen
 dlo, dhi = bbox(desk)
 if (dhi.x - dlo.x) < (dhi.y - dlo.y):
     desk.rotation_euler.z = math.radians(90)
@@ -237,6 +239,9 @@ for mid, loc, rz in [("wall_clock", (1.6, 3.02, 2.35), 0), ("potted_plant_01", (
         print("skip", mid, e)
 
 SEAT = seat_z(0, -0.06)
+chair.rotation_euler.z += TURN
+desk.location = (-0.85, -0.35, 0)
+desk.rotation_euler.z += TURN
 
 # ---------------------------------------------------------------- Dave (stickman: white tubes + ball head)
 dave = bpy.data.collections.new("Dave")
@@ -256,6 +261,7 @@ FLASH = mixs.inputs["Fac"]
 root = bpy.data.objects.new("Dave", None)
 dave.objects.link(root)
 root.location = (0, -0.04, SEAT + 0.03)
+root.rotation_euler.z = TURN
 
 
 def link(o):
@@ -332,7 +338,7 @@ for nm in ["neutral", "shock", "think", "spiral", "panic"]:
     o.parent = head
     faces[nm] = o
 # sweat drop
-bpy.ops.mesh.primitive_uv_sphere_add(radius=0.03, location=(0.17, -0.12, 0.1))
+bpy.ops.mesh.primitive_uv_sphere_add(radius=0.022, location=(0.12, -0.16, 0.13))
 drop = bpy.context.object
 drop.scale = (1, 1, 1.5)
 drop.data.materials.append(flat("drop", (0.55, 0.8, 1.0), 0.05, 1.0))
@@ -349,7 +355,7 @@ form.parent = root
 POSES = {
     "hold": dict(el=(-0.15, -0.1, 0.17), hl=(-0.08, -0.3, 0.27), er=(0.15, -0.1, 0.17), hr=(0.08, -0.3, 0.27), form=((0, -0.33, 0.3), (math.radians(62), 0, 0)), head=(0, 0, 0)),
     "look": dict(el=(-0.15, -0.1, 0.17), hl=(-0.09, -0.29, 0.25), er=(0.15, -0.1, 0.17), hr=(0.07, -0.29, 0.25), form=((-0.01, -0.32, 0.28), (math.radians(58), 0, 0)), head=(math.radians(-4), math.radians(6), math.radians(-32))),
-    "panic": dict(el=(-0.24, -0.1, 0.3), hl=(-0.2, -0.3, 0.44), er=(0.24, -0.1, 0.3), hr=(0.02, -0.32, 0.4), form=((-0.1, -0.34, 0.42), (math.radians(78), 0, math.radians(18))), head=(math.radians(8), 0, 0)),
+    "panic": dict(el=(-0.24, -0.1, 0.3), hl=(-0.2, -0.3, 0.44), er=(0.24, -0.1, 0.3), hr=(0.02, -0.32, 0.4), form=((-0.16, -0.33, 0.36), (math.radians(74), 0, math.radians(24))), head=(math.radians(8), 0, 0)),
 }
 
 
@@ -398,9 +404,9 @@ drop.hide_render = True
 drop.keyframe_insert("hide_render", frame=1)
 drop.hide_render = False
 drop.keyframe_insert("hide_render", frame=9.5)
-drop.location = (0.17, -0.12, 0.1)
+drop.location = (0.12, -0.16, 0.13)
 drop.keyframe_insert("location", frame=10)
-drop.location = (0.18, -0.11, -0.02)
+drop.location = (0.14, -0.15, 0.03)
 drop.keyframe_insert("location", frame=120)
 
 for o in list(arms.values()) + list(hands.values()) + [head, form] + list(faces.values()) + [drop]:
@@ -448,8 +454,8 @@ wn["Background"].inputs["Strength"].default_value = 0.35
 
 sun = bpy.data.objects.new("sun", bpy.data.lights.new("sun", "SUN"))
 sc.collection.objects.link(sun)
-sun.data.energy, sun.data.color, sun.data.angle = 3.2, (1.0, 0.92, 0.8), math.radians(3)
-sun.rotation_euler = Vector((1, 0.35, -0.5)).to_track_quat("-Z", "Y").to_euler()
+sun.data.energy, sun.data.color, sun.data.angle = 5.5, (1.0, 0.9, 0.76), math.radians(2)
+sun.rotation_euler = Vector((1, 0.2, -0.36)).to_track_quat("-Z", "Y").to_euler()
 win = bpy.data.objects.new("window", bpy.data.lights.new("window", "AREA"))
 sc.collection.objects.link(win)
 win.data.shape, win.data.size, win.data.size_y = "RECTANGLE", 2.6, 1.5
@@ -457,7 +463,7 @@ win.data.energy, win.data.color = 380, (0.8, 0.87, 1.0)
 win.location, win.rotation_euler = (-3.85, -0.1, 1.65), (0, math.radians(-90), 0)
 fill = bpy.data.objects.new("ceiling", bpy.data.lights.new("ceiling", "AREA"))
 sc.collection.objects.link(fill)
-fill.data.size, fill.data.energy, fill.data.color = 4.0, 120, (1.0, 0.95, 0.88)
+fill.data.size, fill.data.energy, fill.data.color = 4.0, 45, (1.0, 0.95, 0.88)
 fill.location = (0.3, 0.3, 2.95)
 
 # ---------------------------------------------------------------- cameras + cuts
@@ -470,9 +476,9 @@ def cam(name, loc, target, lens):
     return c
 
 
-wide = cam("wide", (1.45, -2.75, 0.95), (-0.15, 0.25, 1.0), 24)
-close = cam("close", (0.55, -1.3, 1.12), (-0.2, 0.3, 1.1), 34)
-wide2 = cam("wide2", (1.45, -2.75, 0.95), (-0.15, 0.25, 1.0), 24)
+wide = cam("wide", (1.3, -2.6, 0.9), (-0.1, 0.1, 0.85), 24)
+close = cam("close", (0.8, -1.2, 1.15), (-0.15, 0.25, 1.08), 34)
+wide2 = cam("wide2", (1.3, -2.6, 0.9), (-0.1, 0.1, 0.85), 24)
 r_end = wide2.rotation_euler.copy()
 wide2.rotation_euler = (r_end.x - 0.03, r_end.y, r_end.z + math.radians(16))
 wide2.keyframe_insert("rotation_euler", frame=79.5)
