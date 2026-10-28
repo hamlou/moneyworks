@@ -219,7 +219,7 @@ box("chalk_tray", (-1.3, 2.95, 0.89), (2.8, 0.1, 0.03), trim_m)
 
 # ---------------------------------------------------------------- furniture (real CC0 models)
 chair = import_model("SchoolChair_01")
-chair.rotation_euler.z = math.radians(-90) - back_dir(chair)  # flip: preview showed the backrest toward camera
+chair.rotation_euler.z = math.radians(90) - back_dir(chair)  # backrest → +Y (behind Dave)
 desk = import_model("SchoolDesk_01", (0, -0.62, 0))
 TURN = math.radians(28)  # Dave + chair angled toward the camera so his whole body acts on screen
 dlo, dhi = bbox(desk)
