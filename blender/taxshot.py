@@ -314,8 +314,8 @@ for i, pt in enumerate([HIP, NECK]):
 
 # sitting legs (fixed): knees forward, shins down to the floor
 for s in "lr":
-    k = HP[s] + Vector((-0.03 if s == "l" else 0.03, -0.32, 0.04))
-    ft = Vector((k.x, k.y - 0.05, -SEAT + 0.03))
+    k = HP[s] + Vector((-0.05 if s == "l" else 0.05, -0.34, 0.1))
+    ft = Vector((k.x * 1.2, k.y + 0.06, -SEAT + 0.04))
     for i, pt in enumerate(bend(HP[s], k, ft)):
         legs[s].data.splines[0].points[i].co = (*pt, 1)
     feet[s].location = ft + Vector((0, -0.05, 0.02))
@@ -338,7 +338,7 @@ for nm in ["neutral", "shock", "think", "spiral", "panic"]:
     o.parent = head
     faces[nm] = o
 # sweat drop
-bpy.ops.mesh.primitive_uv_sphere_add(radius=0.022, location=(0.12, -0.16, 0.13))
+bpy.ops.mesh.primitive_uv_sphere_add(radius=0.022, location=(-0.1, -0.17, 0.13))
 drop = bpy.context.object
 drop.scale = (1, 1, 1.5)
 drop.data.materials.append(flat("drop", (0.55, 0.8, 1.0), 0.05, 1.0))
@@ -353,9 +353,11 @@ form.parent = root
 
 # ---------------------------------------------------------------- poses (local to root; Dave faces -Y)
 POSES = {
-    "hold": dict(el=(-0.15, -0.1, 0.17), hl=(-0.08, -0.3, 0.27), er=(0.15, -0.1, 0.17), hr=(0.08, -0.3, 0.27), form=((0, -0.33, 0.3), (math.radians(62), 0, 0)), head=(0, 0, 0)),
-    "look": dict(el=(-0.15, -0.1, 0.17), hl=(-0.09, -0.29, 0.25), er=(0.15, -0.1, 0.17), hr=(0.07, -0.29, 0.25), form=((-0.01, -0.32, 0.28), (math.radians(58), 0, 0)), head=(math.radians(-4), math.radians(6), math.radians(-32))),
-    "panic": dict(el=(-0.24, -0.1, 0.3), hl=(-0.2, -0.3, 0.44), er=(0.24, -0.1, 0.3), hr=(0.02, -0.32, 0.4), form=((-0.16, -0.33, 0.36), (math.radians(74), 0, math.radians(24))), head=(math.radians(8), 0, 0)),
+    # form held out in one hand (screen-right), the other hand on the knee — the body shape stays readable
+    "hold": dict(el=(-0.17, -0.06, 0.14), hl=(-0.1, -0.26, 0.04), er=(0.2, -0.06, 0.2), hr=(0.25, -0.24, 0.31), form=((0.25, -0.28, 0.4), (math.radians(72), 0, math.radians(-14))), head=(math.radians(-8), 0, math.radians(8))),
+    "look": dict(el=(-0.17, -0.06, 0.14), hl=(-0.1, -0.26, 0.04), er=(0.2, -0.06, 0.2), hr=(0.25, -0.24, 0.31), form=((0.25, -0.28, 0.4), (math.radians(72), 0, math.radians(-14))), head=(math.radians(-4), math.radians(6), math.radians(-34))),
+    # panic: free hand slapped on the head, form shaken up high
+    "panic": dict(el=(-0.27, -0.04, 0.38), hl=(-0.2, -0.08, 0.66), er=(0.26, -0.06, 0.32), hr=(0.27, -0.22, 0.52), form=((0.28, -0.26, 0.6), (math.radians(80), 0, math.radians(-10))), head=(math.radians(10), 0, math.radians(-6))),
 }
 
 
@@ -404,9 +406,9 @@ drop.hide_render = True
 drop.keyframe_insert("hide_render", frame=1)
 drop.hide_render = False
 drop.keyframe_insert("hide_render", frame=9.5)
-drop.location = (0.12, -0.16, 0.13)
+drop.location = (-0.1, -0.17, 0.13)
 drop.keyframe_insert("location", frame=10)
-drop.location = (0.14, -0.15, 0.03)
+drop.location = (-0.12, -0.16, 0.04)
 drop.keyframe_insert("location", frame=120)
 
 for o in list(arms.values()) + list(hands.values()) + [head, form] + list(faces.values()) + [drop]:
@@ -450,7 +452,7 @@ wn = world.node_tree.nodes
 env = wn.new("ShaderNodeTexEnvironment")
 env.image = bpy.data.images.load(os.path.join(A, MAN["hdri"]))
 world.node_tree.links.new(env.outputs["Color"], wn["Background"].inputs["Color"])
-wn["Background"].inputs["Strength"].default_value = 0.35
+wn["Background"].inputs["Strength"].default_value = 0.12
 
 sun = bpy.data.objects.new("sun", bpy.data.lights.new("sun", "SUN"))
 sc.collection.objects.link(sun)
@@ -459,7 +461,7 @@ sun.rotation_euler = Vector((1, 0.2, -0.36)).to_track_quat("-Z", "Y").to_euler()
 win = bpy.data.objects.new("window", bpy.data.lights.new("window", "AREA"))
 sc.collection.objects.link(win)
 win.data.shape, win.data.size, win.data.size_y = "RECTANGLE", 2.6, 1.5
-win.data.energy, win.data.color = 380, (0.8, 0.87, 1.0)
+win.data.energy, win.data.color = 260, (0.78, 0.86, 1.0)
 win.location, win.rotation_euler = (-3.85, -0.1, 1.65), (0, math.radians(-90), 0)
 fill = bpy.data.objects.new("ceiling", bpy.data.lights.new("ceiling", "AREA"))
 sc.collection.objects.link(fill)
