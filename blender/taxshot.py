@@ -224,8 +224,8 @@ dlo, dhi = bbox(desk)
 if (dhi.x - dlo.x) < (dhi.y - dlo.y):
     desk.rotation_euler.z = math.radians(90)
 for x, y in [(-1.8, 0), (-1.8, 1.5), (0, 1.5), (1.8, 1.5), (-1.8, -1.6)]:
-    dup(desk, (x, y - 0.62))
-    dup(chair, (x, y), chair.rotation_euler.z)
+    dup(desk, (x, y - 0.62, 0))
+    dup(chair, (x, y, 0), chair.rotation_euler.z)
 for mid, loc, rz in [("wall_clock", (1.6, 3.02, 2.35), 0), ("potted_plant_01", (3.4, 2.5, 0), 0.4), ("book_encyclopedia_set_01", (-1.8, 0.9, 0.0), 0.3)]:
     try:
         r = import_model(mid, loc, rz)
