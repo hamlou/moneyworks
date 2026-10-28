@@ -51,17 +51,39 @@ const Cam: React.FC<{pos: [number, number, number]; look: [number, number, numbe
   return null;
 };
 
+// every mesh casts + receives shadows (Dave3D and the sets don't set the flags themselves)
+const ShadowAll: React.FC = () => {
+  const {scene} = useThree();
+  useLayoutEffect(() => {
+    scene.traverse((o: any) => {
+      if (o.isMesh && !o.material?.transparent) {
+        o.castShadow = true;
+        o.receiveShadow = true;
+      }
+    });
+  });
+  return null;
+};
+
 export const Stage: React.FC<{
   cam?: [number, number, number];
   look?: [number, number, number];
   fov?: number;
-  lights?: 'studio' | 'night' | 'warm';
+  lights?: 'studio' | 'night' | 'warm' | 'window';
   style?: React.CSSProperties;
   children: React.ReactNode;
 }> = ({cam = [0, 1.9, 11], look = [0, 1.7, 0], fov = 32, lights = 'studio', style, children}) => (
-  <ThreeCanvas width={1920} height={1080} style={{position: 'absolute', inset: 0, ...style}} gl={{antialias: true, alpha: true, preserveDrawingBuffer: true}} camera={{fov, position: cam, near: 0.1, far: 200}}>
+  <ThreeCanvas width={1920} height={1080} shadows={lights === 'window'} style={{position: 'absolute', inset: 0, ...style}} gl={{antialias: true, alpha: true, preserveDrawingBuffer: true}} camera={{fov, position: cam, near: 0.1, far: 200}}>
     <Cam pos={cam} look={look} fov={fov} />
-    {lights === 'night' ? (
+    {lights === 'window' ? (
+      <>
+        <ShadowAll />
+        <ambientLight intensity={0.28} color="#ffd9b0" />
+        <hemisphereLight args={['#ffe7c4', '#2a1d14', 0.45]} />
+        <directionalLight position={[9, 6.5, 2.5]} intensity={3.6} color="#ffcf91" castShadow shadow-mapSize-width={2048} shadow-mapSize-height={2048} shadow-camera-left={-9} shadow-camera-right={9} shadow-camera-top={8} shadow-camera-bottom={-4} shadow-bias={-0.0004} />
+        <directionalLight position={[-6, 4, 8]} intensity={0.45} color="#9fb8e8" />
+      </>
+    ) : lights === 'night' ? (
       <>
         <ambientLight intensity={0.35} color="#7d93c9" />
         <directionalLight position={[-4, 5, 6]} intensity={1.1} color="#9fc2ff" />

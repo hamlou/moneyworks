@@ -149,18 +149,36 @@ const Form: React.FC<{f: number}> = ({f}) => {
   const shake = f >= 100 ? Math.sin(f * 2.9) * 0.05 : 0;
   const up = f >= 100 ? 0.35 : 0;
   return (
-    <mesh position={[1.2 + shake, 2.05 + up, 1.05]} rotation={[-0.35 + (f >= 100 ? 0.25 : 0), 0, shake * 2]}>
-      <planeGeometry args={[0.9, 1.17]} />
+    <mesh position={[1.2 + shake, 1.85 + up, 0.75]} rotation={[-0.75 + (f >= 100 ? 0.45 : 0), 0, shake * 2]}>
+      <planeGeometry args={[0.78, 1.0]} />
       <meshStandardMaterial map={tex} side={THREE.DoubleSide} roughness={0.9} />
     </mesh>
+  );
+};
+
+// sweat drop next to Dave's head: pops in with the shock face, then slides down
+const Sweat: React.FC<{f: number}> = ({f}) => {
+  if (f < 12) return null;
+  const y = 3.55 - Math.min(0.5, (f - 12) * 0.006) - (f >= 100 ? 0.25 : 0);
+  return (
+    <group position={[2.05, y, 0.25]} scale={0.22}>
+      <mesh>
+        <sphereGeometry args={[1, 24, 16]} />
+        <meshPhysicalMaterial color="#8fd3ff" roughness={0.1} clearcoat={1} transparent opacity={0.92} />
+      </mesh>
+      <mesh position={[0, 1.15, 0]}>
+        <coneGeometry args={[0.86, 1.6, 24]} />
+        <meshPhysicalMaterial color="#8fd3ff" roughness={0.1} clearcoat={1} transparent opacity={0.92} />
+      </mesh>
+    </group>
   );
 };
 
 export const TaxShot: React.FC = () => {
   const f = useCurrentFrame();
   const close = f >= 60 && f < 100;
-  const cam: [number, number, number] = close ? [0.2, 3.1, 6.2] : [0.6, 3.0, 12.5];
-  const look: [number, number, number] = close ? [-0.6, 3.0, 0] : [0.4, 2.4, 0];
+  const cam: [number, number, number] = close ? [0.4, 3.15, 5.6] : [1.8, 3.3, 8.8];
+  const look: [number, number, number] = close ? [-0.4, 3.0, 0] : [0.7, 2.5, 0];
   const cues: Cue[] = [
     {at: 12, src: 'pop', v: 0.3},
     {at: 34, src: 'whoosh', v: 0.25},
@@ -171,12 +189,14 @@ export const TaxShot: React.FC = () => {
   return (
     <AbsoluteFill style={{background: '#1a1410'}}>
       <Smear f={f} at={100} n={2}>
-        <Stage cam={cam} look={look} fov={close ? 30 : 34} lights="warm">
+        <Stage cam={cam} look={look} fov={close ? 30 : 34} lights="window">
           <Classroom />
           <DaveT f={f} keys={KEYS} position={[1.2, 0.45, -0.3]} shake={f >= 100 ? 0.03 : 0} />
           <Form f={f} />
+          <Sweat f={f} />
         </Stage>
       </Smear>
+      <AbsoluteFill style={{background: 'radial-gradient(ellipse at 55% 45%, rgba(0,0,0,0) 45%, rgba(20,8,0,0.55) 100%)', mixBlendMode: 'multiply'}} />
       <ComicBurst f={f} at={104} word="TAXES?!" x={360} y={300} />
       <WhiteFlash f={f} at={100} n={1} />
       <Sfx cues={cues} />
