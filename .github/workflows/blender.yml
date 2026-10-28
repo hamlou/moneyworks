@@ -1,0 +1,97 @@
+name: blender
+run-name: blender ${{ inputs.shot }} ${{ inputs.mode }}
+
+# Real 3D shots the reference's way (STYLE_3D.md §12): Blender 4.2 LTS + CC0 Poly Haven models, Cycles on CPU.
+# mode=preview → 4 stills at half res (layout check, ~5 min); mode=full → 120 frames, 4 parallel chunks → mp4.
+on:
+  workflow_dispatch:
+    inputs:
+      shot:
+        description: blender/<shot>.py
+        default: taxshot
+      mode:
+        description: preview | full
+        default: preview
+      samples:
+        description: Cycles samples
+        default: '32'
+
+jobs:
+  plan:
+    runs-on: ubuntu-latest
+    outputs:
+      chunks: ${{ steps.p.outputs.chunks }}
+      res: ${{ steps.p.outputs.res }}
+    steps:
+      - id: p
+        run: |
+          if [ "${{ inputs.mode }}" = "full" ]; then
+            echo 'chunks=["1-30","31-60","61-90","91-120"]' >> $GITHUB_OUTPUT; echo 'res=1920x1080' >> $GITHUB_OUTPUT
+          else
+            echo 'chunks=["5,30,60,95"]' >> $GITHUB_OUTPUT; echo 'res=960x540' >> $GITHUB_OUTPUT
+          fi
+
+  render:
+    needs: plan
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: true
+      matrix:
+        chunk: ${{ fromJson(needs.plan.outputs.chunks) }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/cache@v4
+        with:
+          path: ~/blender
+          key: blender-4.2.3
+      - name: Blender 4.2 LTS
+        run: |
+          if [ ! -x ~/blender/blender ]; then
+            mkdir -p ~/blender && curl -sL https://download.blender.org/release/Blender4.2/blender-4.2.3-linux-x64.tar.xz | tar -xJ -C ~/blender --strip-components=1
+          fi
+          sudo apt-get update -qq && sudo apt-get install -y -qq libxi6 libxxf86vm1 libxfixes3 libxrender1 libgl1 libxkbcommon0 libsm6 libegl1 >/dev/null
+          ~/blender/blender --version | head -1
+      - uses: actions/cache@v4
+        with:
+          path: assets
+          key: ph-${{ hashFiles('blender/fetch.py') }}-${{ inputs.shot }}
+      - name: CC0 assets (Poly Haven)
+        run: python3 blender/fetch.py assets SchoolDesk_01 SchoolChair_01 wall_clock potted_plant_01 book_encyclopedia_set_01
+      - name: Render ${{ matrix.chunk }}
+        run: |
+          ~/blender/blender -b -P blender/${{ inputs.shot }}.py -- --assets assets --tex blender/tex --out out/frames \
+            --frames "${{ matrix.chunk }}" --samples ${{ inputs.samples }} --res ${{ needs.plan.outputs.res }} 2>&1 | grep -E "frame |Error|error|Traceback|skip|^  File" || true
+          ls out/frames | wc -l
+          test -n "$(ls out/frames)"
+      - id: n
+        run: echo "name=$(echo '${{ matrix.chunk }}' | tr ',' '_')" >> $GITHUB_OUTPUT
+      - uses: actions/upload-artifact@v4
+        with:
+          name: frames-${{ steps.n.outputs.name }}
+          path: out/frames
+          retention-days: 3
+
+  assemble:
+    needs: render
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/download-artifact@v4
+        with:
+          pattern: frames-*
+          path: frames
+          merge-multiple: true
+      - run: sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg >/dev/null
+      - name: mp4 + contact sheet
+        run: |
+          mkdir -p out
+          ls frames | head
+          if [ "${{ inputs.mode }}" = "full" ]; then
+            ffmpeg -v error -framerate 24 -i frames/f_%04d.jpg -c:v libx264 -crf 17 -pix_fmt yuv420p out/${{ inputs.shot }}.mp4
+            ffmpeg -v error -i out/${{ inputs.shot }}.mp4 -vf "fps=8,scale=320:-1,tile=8x5" out/sheet_%02d.jpg
+          fi
+          cp frames/*.jpg out/
+      - uses: actions/upload-artifact@v4
+        with:
+          name: ${{ inputs.shot }}-${{ inputs.mode }}
+          path: out
+          retention-days: 7
