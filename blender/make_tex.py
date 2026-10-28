@@ -15,7 +15,7 @@ def wob(pts, amp=3, seed=1):
     return [(x + r.uniform(-amp, amp), y + r.uniform(-amp, amp)) for x, y in pts]
 
 
-def stroke(d, pts, w=16, seed=1):
+def stroke(d, pts, w=24, seed=1):
     pts = wob(pts, 2.2, seed)
     d.line(pts, fill=INK, width=w, joint="curve")
     for p in (pts[0], pts[-1]):
@@ -26,12 +26,12 @@ def arc(cx, cy, rx, ry, a0, a1, n=24):
     return [(cx + rx * math.cos(math.radians(a)), cy + ry * math.sin(math.radians(a))) for a in [a0 + (a1 - a0) * i / n for i in range(n + 1)]]
 
 
-def eye(d, cx, cy, r=26, look=(0, 0)):
+def eye(d, cx, cy, r=38, look=(0, 0)):
     d.ellipse([cx - r + look[0], cy - r * 1.25 + look[1], cx + r + look[0], cy + r * 1.25 + look[1]], fill=INK)
 
 
-def big_eye(d, cx, cy, r=60, look=(0, 0), pupil=18):
-    d.ellipse([cx - r, cy - r * 1.15, cx + r, cy + r * 1.15], outline=INK, width=12, fill=(255, 255, 255, 255))
+def big_eye(d, cx, cy, r=72, look=(0, 0), pupil=24):
+    d.ellipse([cx - r, cy - r * 1.15, cx + r, cy + r * 1.15], outline=INK, width=18, fill=(255, 255, 255, 255))
     d.ellipse([cx - pupil + look[0], cy - pupil + look[1], cx + pupil + look[0], cy + pupil + look[1]], fill=INK)
 
 

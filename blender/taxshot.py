@@ -206,7 +206,7 @@ for z in (0.9, 1.65, 2.4):
 sky = flat("sky", (0.7, 0.8, 0.9))
 sky.node_tree.nodes["Principled BSDF"].inputs["Emission Color"].default_value = (0.75, 0.85, 1.0, 1)
 sky.node_tree.nodes["Principled BSDF"].inputs["Emission Strength"].default_value = 2.5
-plane("sky", (-6.5, 0, 1.6), (6, 4), (0, math.radians(90), 0), sky)
+plane("sky", (-6.5, 0, 1.6), (26, 10), (0, math.radians(90), 0), sky)
 # skirting + chalkboard on the back wall, left of Dave
 box("skirt", (0, 3.0, 0.06), (9, 0.04, 0.12), trim_m)
 plane("board", (-1.3, 3.015, 1.55), (2.8, 1.25), (math.radians(90), 0, 0), board_m)
@@ -218,7 +218,7 @@ box("chalk_tray", (-1.3, 2.95, 0.89), (2.8, 0.1, 0.03), trim_m)
 
 # ---------------------------------------------------------------- furniture (real CC0 models)
 chair = import_model("SchoolChair_01")
-chair.rotation_euler.z = math.radians(90) - back_dir(chair)  # backrest → +Y (away from camera)
+chair.rotation_euler.z = math.radians(-90) - back_dir(chair)  # flip: preview showed the backrest toward camera
 desk = import_model("SchoolDesk_01", (0, -0.62, 0))
 dlo, dhi = bbox(desk)
 if (dhi.x - dlo.x) < (dhi.y - dlo.y):
@@ -317,7 +317,7 @@ for s in "lr":
 # ink faces: a shrink-wrapped decal per expression, hidden except while active
 faces = {}
 for nm in ["neutral", "shock", "think", "spiral", "panic"]:
-    bpy.ops.mesh.primitive_plane_add(size=0.34, location=(0, -0.24, 0), rotation=(math.radians(90), 0, 0))
+    bpy.ops.mesh.primitive_plane_add(size=0.44, location=(0, -0.26, 0.01), rotation=(math.radians(90), 0, 0))
     o = bpy.context.object
     o.name = f"face_{nm}"
     bpy.ops.object.mode_set(mode="EDIT")
@@ -348,8 +348,8 @@ form.parent = root
 # ---------------------------------------------------------------- poses (local to root; Dave faces -Y)
 POSES = {
     "hold": dict(el=(-0.15, -0.1, 0.17), hl=(-0.08, -0.3, 0.27), er=(0.15, -0.1, 0.17), hr=(0.08, -0.3, 0.27), form=((0, -0.33, 0.3), (math.radians(62), 0, 0)), head=(0, 0, 0)),
-    "look": dict(el=(-0.15, -0.1, 0.17), hl=(-0.09, -0.29, 0.25), er=(0.15, -0.1, 0.17), hr=(0.07, -0.29, 0.25), form=((-0.01, -0.32, 0.28), (math.radians(58), 0, 0)), head=(math.radians(-6), math.radians(8), math.radians(-62))),
-    "panic": dict(el=(-0.22, -0.08, 0.36), hl=(-0.09, -0.27, 0.56), er=(0.22, -0.08, 0.36), hr=(0.09, -0.27, 0.56), form=((0, -0.3, 0.6), (math.radians(80), 0, 0)), head=(math.radians(8), 0, 0)),
+    "look": dict(el=(-0.15, -0.1, 0.17), hl=(-0.09, -0.29, 0.25), er=(0.15, -0.1, 0.17), hr=(0.07, -0.29, 0.25), form=((-0.01, -0.32, 0.28), (math.radians(58), 0, 0)), head=(math.radians(-4), math.radians(6), math.radians(-32))),
+    "panic": dict(el=(-0.24, -0.1, 0.3), hl=(-0.2, -0.3, 0.44), er=(0.24, -0.1, 0.3), hr=(0.02, -0.32, 0.4), form=((-0.1, -0.34, 0.42), (math.radians(78), 0, math.radians(18))), head=(math.radians(8), 0, 0)),
 }
 
 
@@ -419,7 +419,7 @@ for fc in form.animation_data.action.fcurves:
 # ---------------------------------------------------------------- outline: Freestyle on Dave only
 sc.render.use_freestyle = True
 sc.render.line_thickness_mode = "ABSOLUTE"
-sc.render.line_thickness = 3.2 * H / 1080
+sc.render.line_thickness = 4.6 * H / 1080
 fs = bpy.context.view_layer.freestyle_settings
 for ls in list(fs.linesets):
     fs.linesets.remove(ls)
@@ -427,7 +427,7 @@ ls = fs.linesets.new("dave")
 ls.select_by_collection, ls.collection = True, dave
 ls.select_silhouette, ls.select_border, ls.select_crease = True, True, False
 ls.linestyle.color = (0.04, 0.04, 0.04)
-ls.linestyle.thickness = 3.2 * H / 1080
+ls.linestyle.thickness = 4.6 * H / 1080
 fs.use_culling = False
 ls.select_by_face_marks = False
 excl = bpy.data.collections.new("no_line")
@@ -470,9 +470,9 @@ def cam(name, loc, target, lens):
     return c
 
 
-wide = cam("wide", (2.25, -4.3, 1.0), (-0.35, 0.5, 0.95), 26)
-close = cam("close", (0.7, -1.55, 1.08), (-0.25, 0.4, 1.02), 38)
-wide2 = cam("wide2", (2.25, -4.3, 1.0), (-0.35, 0.5, 0.95), 26)
+wide = cam("wide", (1.45, -2.75, 0.95), (-0.15, 0.25, 1.0), 24)
+close = cam("close", (0.55, -1.3, 1.12), (-0.2, 0.3, 1.1), 34)
+wide2 = cam("wide2", (1.45, -2.75, 0.95), (-0.15, 0.25, 1.0), 24)
 r_end = wide2.rotation_euler.copy()
 wide2.rotation_euler = (r_end.x - 0.03, r_end.y, r_end.z + math.radians(16))
 wide2.keyframe_insert("rotation_euler", frame=79.5)
