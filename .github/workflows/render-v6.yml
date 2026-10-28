@@ -1,0 +1,95 @@
+name: render-v6
+run-name: render-v6 ${{ inputs.ep }}
+
+# Renders a v6 (STYLE_3D.md) episode with src/v6/V6Episode.tsx. Order: 1) run `voice` for the episode (Chatterbox, cached in
+# pipeline/voice/), 2) optionally photos (pipeline/photos.py), 3) run this. 3D needs WebGL: --gl=swangle (software GPU).
+on:
+  workflow_dispatch:
+    inputs:
+      ep:
+        description: Episode id (e.g. ep82)
+        required: true
+      chunks:
+        description: Parallel render machines
+        default: '24'
+
+jobs:
+  prep:
+    runs-on: ubuntu-latest
+    outputs:
+      matrix: ${{ steps.m.outputs.matrix }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg
+      - run: pip install -q numpy
+      - run: python pipeline/tts.py pipeline/episodes/${{ inputs.ep }}.json public/${{ inputs.ep }}
+      - run: cp pipeline/episodes/${{ inputs.ep }}.json public/${{ inputs.ep }}/script.json
+      - run: ls public/photos/${{ inputs.ep }} 2>/dev/null | head -30 || echo "no photos for ${{ inputs.ep }} (photo plates will be skipped)"
+      - id: m
+        run: echo "matrix=$(python pipeline/chunks.py ${{ inputs.ep }} ${{ inputs.chunks }})" >> "$GITHUB_OUTPUT"
+      - uses: actions/upload-artifact@v4
+        with:
+          name: voice
+          path: public/${{ inputs.ep }}
+          retention-days: 1
+
+  render:
+    needs: prep
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    strategy:
+      fail-fast: false
+      matrix:
+        chunk: ${{ fromJson(needs.prep.outputs.matrix) }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci --no-audit --no-fund
+      - uses: actions/download-artifact@v4
+        with:
+          name: voice
+          path: public/${{ inputs.ep }}
+      - run: >
+          npx remotion render src/v6/index.ts V6Episode out/part.mkv
+          --frames=${{ matrix.chunk.a }}-${{ matrix.chunk.b }}
+          --gl=swangle --codec=h264 --crf=18 --pixel-format=yuv420p --audio-codec=pcm-16
+          --props='{"ep":"${{ inputs.ep }}"}'
+          --concurrency=100% --log=warn
+      - uses: actions/upload-artifact@v4
+        with:
+          name: part-${{ matrix.chunk.i }}
+          path: out/part.mkv
+          retention-days: 1
+          compression-level: 0
+
+  assemble:
+    needs: render
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg
+      - uses: actions/download-artifact@v4
+        with:
+          pattern: part-*
+          path: parts
+      - run: |
+          mkdir -p final work
+          : > work/list.txt
+          for d in $(ls -d parts/part-* | sort); do echo "file '$PWD/$d/part.mkv'" >> work/list.txt; done
+          ffmpeg -hide_banner -v error -y -f concat -safe 0 -i work/list.txt -c copy work/full.mkv
+          ffmpeg -hide_banner -v error -y -i work/full.mkv -map 0:v -map 0:a -map_metadata -1 -c:v copy -c:a aac -b:a 192k -ar 48000 \
+            -af "loudnorm=I=-14:TP=-1.5:LRA=11" -movflags +faststart final/${{ inputs.ep }}.mp4
+          ffmpeg -v error -i final/${{ inputs.ep }}.mp4 -vf "fps=1/6,scale=320:-1,tile=8x5" -frames:v 3 final/sheet_%02d.jpg || true
+          ffprobe -v error -show_entries format=duration -of compact final/${{ inputs.ep }}.mp4
+      - uses: actions/upload-artifact@v4
+        with:
+          name: ${{ inputs.ep }}-video
+          path: final
+          retention-days: 90
+          compression-level: 0

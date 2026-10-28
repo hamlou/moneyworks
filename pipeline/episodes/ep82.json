@@ -1,0 +1,1920 @@
+{
+ "id": "ep82",
+ "title": "What If Abdul El-Sayed Became President? I Simulated His First 100 Days",
+ "voice": "chatterbox",
+ "style": "v6 (STYLE_3D.md, 23 Oct 2026)",
+ "cb": {
+  "cfg": 0.35,
+  "exag": 0.5
+ },
+ "spine": {
+  "goal": "Dave runs a 100-day paper simulation: take El-Sayed's eight published campaign promises and push each through the real rules of Washington",
+  "stakes": "Healthcare is a 5.3 trillion dollar system and a 15,474 dollars per person bill; the video shows what one president can and cannot change",
+  "central_question": "What could a President El-Sayed actually do on his own and what would the system stop?",
+  "loop_big": "Eight promises on a whiteboard and a scoreboard of promises passed / Senate votes counted / dollars on the line",
+  "loop_mid": "Is it insurance money, AIPAC money or Trump behind the attacks (Dave guesses and is wrong or finds no receipt)",
+  "villain": "The rules themselves (the filibuster, Congress, the courts, the money) not any one person or group",
+  "low_point": "Week 8: whiteboard is a crime scene and zero promises passed",
+  "win": "Agencies and appointments move the scoreboard; honest lesson: a president is the gas pedal not the engine"
+ },
+ "hypothetical_label": "Everything after 'Day one January 2029' is Dave's cartoon simulation built from real rules. No invented quotes from any real person. Results are Dave's guess and say so on screen.",
+ "sources": [
+  "Axios: Stevens' 12-to-1 Michigan TV spending advantage over El-Sayed (final five weeks of the primary)",
+  "Associated Press: AIPAC and affiliated groups spent nearly $30M and outside groups nearly $50M in the Michigan Senate primary",
+  "Reuters: Trump invokes 9/11 in urging Michigan voters to oppose El-Sayed (Oct 25 2026)",
+  "The Washington Post: how anti-Muslim rhetoric is influencing the Michigan Senate race (analysis of 8,800 posts; Schar School poll Sept 2026; Trump photo post; Tuberville and Vance remarks)",
+  "Bridge Michigan: Abdul El-Sayed under the microscope (record, medical debt $57.38M for 83,291 residents June 2026, Narcan kits, no elected office)",
+  "CMS National Health Expenditure 2024: $5.3T, 18% of GDP, $15,474 per person, $1.64T private health insurance",
+  "OpenSecrets 2024 lobbying: insurance $155.9M, pharma and health products $391.6M, hospitals and nursing homes $134.2M, health services and HMOs $123.7M",
+  "PolitiFact: El-Sayed plan and employer or union coverage claim",
+  "U.S. Constitution: Article I (Congress writes laws), Article V (amendments), Article VI (no religious test)",
+  "Senate rules: cloture at 60 votes; budget reconciliation and the Byrd rule",
+  "Inflation Reduction Act of 2022: Medicare drug price negotiation",
+  "Vermont Green Mountain Care (2011 law, dropped Dec 2014); Colorado Amendment 69 (Nov 2016)",
+  "John F. Kennedy Houston ministers speech, Sept 12 1960"
+ ],
+ "youtube": {},
+ "beats": [
+  {
+   "id": "o1",
+   "text": "A guy who has never held elected office just won the Democratic nomination for a Senate seat in Michigan and on November third voters decide if he becomes the first Muslim senator in American history and the whole internet is already asking what happens if he becomes president.",
+   "set": "home",
+   "plate": {
+    "id": "elsayed_stage",
+    "at": "guy"
+   },
+   "face": "shock",
+   "pose3d": "point_r",
+   "sfx": [
+    {
+     "s": "boom",
+     "at": "guy"
+    },
+    {
+     "s": "whoosh",
+     "at": "november"
+    },
+    {
+     "s": "riser",
+     "at": "president"
+    }
+   ],
+   "pause": 0.12
+  },
+  {
+   "id": "o2",
+   "text": "And here's the number that made me spit out my drink. In the last five weeks of his primary one side booked twenty six point nine million dollars of super PAC TV ads and his side booked two point one million. That's twelve to one. And he won anyway.",
+   "set": "home",
+   "face": "shock",
+   "pose3d": "present",
+   "num": {
+    "label": "TV ADS BOOKED",
+    "v": "12 to 1",
+    "color": "yellow",
+    "sub": "(Last five weeks of the primary. Source Axios)",
+    "at": "twelve"
+   },
+   "sfx": [
+    {
+     "s": "cash",
+     "at": "million"
+    },
+    {
+     "s": "stamp",
+     "at": "twelve"
+    },
+    {
+     "s": "boom",
+     "at": "anyway"
+    }
+   ],
+   "pause": 0.35
+  },
+  {
+   "id": "o3",
+   "text": "To see why healthcare is the center of his whole campaign you have to see the money. Americans spent about five point three trillion dollars on healthcare in twenty twenty four. That's eighteen percent of the entire American economy.",
+   "set": "home",
+   "face": "neutral",
+   "pose3d": "point_up",
+   "num": {
+    "label": "US HEALTHCARE SPENDING 2024",
+    "v": "$5.3T",
+    "color": "yellow",
+    "sub": "(18% of the economy. Source CMS)",
+    "at": "trillion"
+   },
+   "sfx": [
+    {
+     "s": "ding",
+     "at": "trillion"
+    },
+    {
+     "s": "stamp",
+     "at": "eighteen"
+    }
+   ],
+   "pause": 0.12
+  },
+  {
+   "id": "o4",
+   "text": "Split that evenly and every single person in this country spent fifteen thousand four hundred seventy four dollars. For a family of four that's about sixty two thousand dollars a year which is two and a half brand new cars. Every single year. For doctors.",
+   "set": "home",
+   "face": "worried",
+   "pose3d": "hands_on_face",
+   "num": {
+    "label": "PER PERSON",
+    "v": "$15,474",
+    "color": "red",
+    "sub": "(Source CMS)",
+    "at": "fifteen"
+   },
+   "sfx": [
+    {
+     "s": "cash",
+     "at": "fifteen"
+    },
+    {
+     "s": "thud",
+     "at": "doctors"
+    }
+   ],
+   "pause": 0.35
+  },
+  {
+   "id": "o5",
+   "text": "So here's my challenge. I'm taking his real campaign promises and running them through the real rules of Washington for one hundred days. If he walked into the White House in January twenty twenty nine what could he do on his own and what would get crushed. Eight promises. One whiteboard. One ninety nine cent pen.",
+   "set": "garage",
+   "face": "smug",
+   "pose3d": "pointer_stick",
+   "sfx": [
+    {
+     "s": "marker",
+     "at": "whiteboard"
+    },
+    {
+     "s": "click",
+     "at": "pen"
+    }
+   ],
+   "pause": 0.12
+  },
+  {
+   "id": "o6",
+   "text": "Every rule I use is real and every number has a source and when I'm guessing I'll tell you I'm guessing. My scoreboard has three tiles. Promises passed. Senate votes I can count. And dollars on the line.",
+   "set": "tvroom",
+   "face": "grin",
+   "pose3d": "present",
+   "score": {
+    "a": 0,
+    "b": 0,
+    "c": "$5.3T",
+    "at": "scoreboard"
+   },
+   "sfx": [
+    {
+     "s": "ding",
+     "at": "scoreboard"
+    },
+    {
+     "s": "tick",
+     "at": "tiles"
+    }
+   ],
+   "pause": 0.35
+  },
+  {
+   "id": "o7",
+   "text": "And before anyone yells in the comments I am not telling you who to vote for. I'm a stickman. I can't even vote.",
+   "set": "home",
+   "face": "grin",
+   "pose3d": "shrug",
+   "sfx": [
+    {
+     "s": "pop",
+     "at": "stickman"
+    }
+   ],
+   "pause": 0.8
+  },
+  {
+   "id": "d1a",
+   "text": "Day one. January twentieth twenty twenty nine. He takes the oath and the first thing I realize is I have no idea who this guy actually is. So I open the folder and start reading.",
+   "chapter": "DAY 1",
+   "set": "home",
+   "face": "think",
+   "pose3d": "thinking",
+   "sfx": [
+    {
+     "s": "whoosh",
+     "at": "oath"
+    },
+    {
+     "s": "flip",
+     "at": "folder"
+    }
+   ],
+   "pause": 0.12,
+   "chapter_sub": "The Oath"
+  },
+  {
+   "id": "d1b",
+   "text": "He was born in Michigan in nineteen eighty four and his parents came from Egypt. He went to the University of Michigan and became a Rhodes Scholar and then earned a medical degree and a doctorate in public health. And then he did something weird. He chose to run health departments instead of practicing medicine.",
+   "set": "home",
+   "face": "neutral",
+   "pose3d": "present",
+   "plate": {
+    "id": "michigan_campus",
+    "at": "michigan"
+   },
+   "sfx": [
+    {
+     "s": "pop",
+     "at": "rhodes"
+    },
+    {
+     "s": "ding",
+     "at": "doctorate"
+    }
+   ],
+   "pause": 0.12
+  },
+  {
+   "id": "d1c",
+   "text": "First Detroit's health department and then Wayne County's. In twenty eighteen he ran for governor of Michigan and lost the primary to Gretchen Whitmer. And right here I write the first big red note on my whiteboard. He has never held elected office. Not one day.",
+   "set": "garage",
+   "face": "suspicious",
+   "pose3d": "point_r",
+   "sfx": [
+    {
+     "s": "marker",
+     "at": "red"
+    },
+    {
+     "s": "stamp",
+     "at": "day"
+    }
+   ],
+   "pause": 0.35
+  },
+  {
+   "id": "d1d",
+   "text": "My first thought was nobody jumps from running a health department to the White House. Then I remembered America has elected a general and an actor and a businessman. So experience isn't the only road. But I'm still circling it because a president who has never counted votes has to learn how very fast.",
+   "set": "home",
+   "face": "think",
+   "pose3d": "arms_crossed",
+   "sfx": [
+    {
+     "s": "scratch",
+     "at": "nobody"
+    },
+    {
+     "s": "ding",
+     "at": "general"
+    }
+   ],
+   "pause": 0.12
+  },
+  {
+   "id": "d1e",
+   "text": "Then I write his promises on the board. Medicare for All. A bigger tax on billionaires. Overturning Citizens United. Restructuring ICE. Public oversight of AI. Cheaper housing. A different foreign policy on Israel and Gaza. And changing the Supreme Court and the filibuster. That's eight. Eight big swings.",
+   "set": "garage",
+   "face": "neutral",
+   "pose3d": "pointer_stick",
+   "ui": {
+    "t": "list",
+    "data": {
+     "title": "THE EIGHT PROMISES",
+     "rows": [
+      "Medicare for All",
+      "Tax on billionaires",
+      "Overturn Citizens United",
+      "Restructure ICE",
+      "Public oversight of AI",
+      "Cheaper housing",
+      "New Israel and Gaza policy",
+      "Court and filibuster changes"
+     ]
+    },
+    "push": "eight"
+   },
+   "sfx": [
+    {
+     "s": "marker",
+     "at": "board"
+    },
+    {
+     "s": "tick",
+     "at": "eight"
+    }
+   ],
+   "pause": 0.35
+  },
+  {
+   "id": "d1f",
+   "text": "So on day one he sits down and signs Medicare for All with a giant golden pen and every insurance company on Earth cries in a parking lot and everybody has healthcare by Friday.",
+   "set": "home",
+   "face": "happy",
+   "pose3d": "celebrate",
+   "sfx": [
+    {
+     "s": "coin",
+     "at": "golden"
+    },
+    {
+     "s": "cricket",
+     "at": "parking"
+    }
+   ],
+   "pause": 1.2
+  },
+  {
+   "id": "d1g",
+   "text": "Is what I would have said if a president could write laws.",
+   "set": "home",
+   "face": "smug",
+   "pose3d": "shrug",
+   "comic": {
+    "t": "RECORD SCRATCH",
+    "at": "said"
+   },
+   "sfx": [
+    {
+     "s": "scratch",
+     "at": "said"
+    },
+    {
+     "s": "trombone",
+     "at": "laws"
+    }
+   ],
+   "pause": 0.35
+  },
+  {
+   "id": "d2a",
+   "text": "Day two. I hand him the pen. It's a ninety nine cent gas station pen and I'm very proud of it. And now I need to ask you something. What can a president sign all by himself. Take a wild guess.",
+   "chapter": "DAY 2",
+   "set": "garage",
+   "face": "grin",
+   "pose3d": "present",
+   "sfx": [
+    {
+     "s": "whoosh",
+     "at": "pen"
+    },
+    {
+     "s": "click",
+     "at": "guess"
+    }
+   ],
+   "pause": 1.2,
+   "chapter_sub": "The Pen"
+  },
+  {
+   "id": "d2b",
+   "text": "A lot of orders to his own agencies. Pardons. Vetoes. But a brand new healthcare system for three hundred million people. Not a single word of it.",
+   "set": "home",
+   "face": "smug",
+   "pose3d": "point_up",
+   "sfx": [
+    {
+     "s": "stamp",
+     "at": "vetoes"
+    },
+    {
+     "s": "thud",
+     "at": "word"
+    }
+   ],
+   "pause": 0.35
+  },
+  {
+   "id": "d2c",
+   "text": "The Constitution says Congress writes the laws. A president can suggest and sign and veto and that's about it. So Medicare for All needs Congress to write it and fund it and the Senate to pass it. And most bills in the Senate need sixty votes just to get to a vote because of something called the filibuster.",
+   "set": "home",
+   "face": "neutral",
+   "pose3d": "point_r",
+   "plate": {
+    "id": "us_capitol",
+    "at": "congress"
+   },
+   "sfx": [
+    {
+     "s": "paper",
+     "at": "laws"
+    },
+    {
+     "s": "ding",
+     "at": "sixty"
+    }
+   ],
+   "pause": 0.12
+  },
+  {
+   "id": "d2d",
+   "text": "Sixty out of a hundred. Nobody has held sixty seats since about twenty ten. So I take my scoreboard and I write the number in the votes tile. Sixty needed. And I can count zero.",
+   "set": "tvroom",
+   "face": "worried",
+   "pose3d": "hands_on_face",
+   "num": {
+    "label": "SENATE VOTES NEEDED",
+    "v": "60",
+    "color": "red",
+    "sub": "(Votes I can count so far. 0)",
+    "at": "sixty"
+   },
+   "sfx": [
+    {
+     "s": "stamp",
+     "at": "sixty"
+    },
+    {
+     "s": "trombone",
+     "at": "zero"
+    }
+   ],
+   "pause": 0.35
+  },
+  {
+   "id": "d2e",
+   "text": "There's a workaround called reconciliation which lets some budget bills pass with fifty one votes. But there's a referee called the parliamentarian who can throw out anything that isn't really about the budget. Rewriting a whole healthcare system that way is like trying to fit a couch through a mail slot.",
+   "set": "home",
+   "face": "think",
+   "pose3d": "thinking",
+   "sfx": [
+    {
+     "s": "whoosh",
+     "at": "workaround"
+    },
+    {
+     "s": "boing",
+     "at": "couch"
+    },
+    {
+     "s": "mail",
+     "at": "slot"
+    }
+   ],
+   "pause": 0.12
+  },
+  {
+   "id": "d2f",
+   "text": "And people have tried this on smaller stages. Vermont passed a state run healthcare law in twenty eleven and then dropped it in twenty fourteen because paying for it meant huge new taxes. Colorado put a version on the ballot in twenty sixteen and about four out of five voters said no.",
+   "set": "home",
+   "face": "suspicious",
+   "pose3d": "arms_crossed",
+   "ui": {
+    "t": "stats",
+    "data": {
+     "title": "STATE ATTEMPTS",
+     "rows": [
+      [
+       "Vermont",
+       "Dropped 2014"
+      ],
+      [
+       "Colorado",
+       "About 4 in 5 voted no"
+      ]
+     ]
+    },
+    "push": "four"
+   },
+   "sfx": [
+    {
+     "s": "flip",
+     "at": "vermont"
+    },
+    {
+     "s": "buzz",
+     "at": "no"
+    }
+   ],
+   "pause": 0.12
+  },
+  {
+   "id": "d2g",
+   "text": "Supporters say a whole country can do what one little state can't because it has way more money and can borrow. Critics say that just moves the bill onto taxpayers. And honestly both of them are describing the same bill from different sides.",
+   "set": "home",
+   "face": "neutral",
+   "pose3d": "shrug",
+   "sfx": [
+    {
+     "s": "ding",
+     "at": "supporters"
+    },
+    {
+     "s": "pop",
+     "at": "critics"
+    }
+   ],
+   "pause": 0.35
+  },
+  {
+   "id": "d2h",
+   "text": "So I try it anyway. I sign a paper that says Medicare for All. The paper does nothing. It's just paper. And my ninety nine cent pen runs out of ink.",
+   "set": "garage",
+   "face": "sad",
+   "pose3d": "facepalm",
+   "comic": {
+    "t": "NOTHING.",
+    "at": "nothing"
+   },
+   "sfx": [
+    {
+     "s": "scribble",
+     "at": "sign"
+    },
+    {
+     "s": "trombone",
+     "at": "ink"
+    }
+   ],
+   "pause": 0.35
+  },
+  {
+   "id": "d2i",
+   "text": "But hold on. Not everything is stuck. A president runs the agencies. And a twenty twenty two law already lets Medicare negotiate the price of some drugs. So a president can push that machine harder. It's not a revolution. It's turning a dial.",
+   "set": "home",
+   "face": "smug",
+   "pose3d": "point_up",
+   "sfx": [
+    {
+     "s": "ding",
+     "at": "agencies"
+    },
+    {
+     "s": "click",
+     "at": "dial"
+    }
+   ],
+   "pause": 0.12
+  },
+  {
+   "id": "d2j",
+   "text": "Scoreboard after day two. Promises passed zero. Votes counted zero. Dollars on the line five point three trillion. It's not a great scoreboard. But it's an honest one.",
+   "set": "tvroom",
+   "face": "tired",
+   "pose3d": "sitting_laptop",
+   "score": {
+    "a": 0,
+    "b": 0,
+    "c": "$5.3T",
+    "at": "scoreboard"
+   },
+   "sfx": [
+    {
+     "s": "ding",
+     "at": "scoreboard"
+    },
+    {
+     "s": "cricket",
+     "at": "honest"
+    }
+   ],
+   "pause": 0.35
+  },
+  {
+   "id": "d3a",
+   "text": "Days three through ten I follow the money because here's the thing about changing healthcare. Somebody's income shrinks. Private insurance paid for about one point six four trillion dollars of care in twenty twenty four. If a government plan took over a big chunk of that somebody's business would change.",
+   "chapter": "DAY 3 TO 10",
+   "set": "bedroom",
+   "face": "think",
+   "pose3d": "sitting_laptop",
+   "ui": {
+    "t": "search",
+    "data": {
+     "query": "who pays for american healthcare",
+     "suggest": [
+      "private insurance spending 2024",
+      "medicare for all cost",
+      "who lobbies congress"
+     ]
+    },
+    "push": "trillion"
+   },
+   "sfx": [
+    {
+     "s": "click",
+     "at": "money"
+    },
+    {
+     "s": "cash",
+     "at": "trillion"
+    }
+   ],
+   "pause": 0.12,
+   "chapter_sub": "Follow the money"
+  },
+  {
+   "id": "d3b",
+   "text": "And those industries are not shy. In twenty twenty four insurance companies spent a hundred fifty five point nine million dollars lobbying Washington. Drug and health product companies spent three hundred ninety one point six million. Hospitals and nursing homes spent a hundred thirty four million and health services and HMOs spent another hundred twenty three million.",
+   "set": "home",
+   "face": "neutral",
+   "pose3d": "present",
+   "ui": {
+    "t": "stats",
+    "data": {
+     "title": "LOBBYING 2024 (OpenSecrets)",
+     "rows": [
+      [
+       "Insurance",
+       "$155.9M"
+      ],
+      [
+       "Drugs and health products",
+       "$391.6M"
+      ],
+      [
+       "Hospitals and nursing homes",
+       "$134.2M"
+      ],
+      [
+       "Health services and HMOs",
+       "$123.7M"
+      ]
+     ]
+    },
+    "push": "three"
+   },
+   "sfx": [
+    {
+     "s": "cash",
+     "at": "million"
+    },
+    {
+     "s": "coin",
+     "at": "hospitals"
+    }
+   ],
+   "pause": 0.12
+  },
+  {
+   "id": "d3c",
+   "text": "Add that up and it's over eight hundred million dollars in one year. That's roughly a hundred Super Bowl commercials. Every year. Just to talk to Congress.",
+   "set": "home",
+   "face": "shock",
+   "pose3d": "panic",
+   "num": {
+    "label": "HEALTH LOBBYING IN ONE YEAR",
+    "v": "$805M",
+    "color": "yellow",
+    "sub": "(Those four groups added together)",
+    "at": "eight"
+   },
+   "sfx": [
+    {
+     "s": "stamp",
+     "at": "eight"
+    },
+    {
+     "s": "crowd",
+     "at": "super"
+    }
+   ],
+   "pause": 0.35
+  },
+  {
+   "id": "d3d",
+   "text": "And right here I got way too excited. I grabbed the red marker and wrote INSURANCE COMPANIES PAID FOR THE ATTACK ADS in giant letters. It felt amazing. It felt like a movie.",
+   "set": "garage",
+   "face": "angry",
+   "pose3d": "point_r",
+   "sfx": [
+    {
+     "s": "marker",
+     "at": "marker"
+    },
+    {
+     "s": "scribble",
+     "at": "giant"
+    },
+    {
+     "s": "sting",
+     "at": "movie"
+    }
+   ],
+   "pause": 0.8
+  },
+  {
+   "id": "d3e",
+   "text": "Then I went looking for the receipt. And I found nothing. Lobbying is not the same as campaign spending. And I couldn't find reliable evidence that insurance companies paid to beat him in that primary.",
+   "set": "bedroom",
+   "face": "suspicious",
+   "pose3d": "sitting_laptop",
+   "sfx": [
+    {
+     "s": "click",
+     "at": "receipt"
+    },
+    {
+     "s": "cricket",
+     "at": "nothing"
+    }
+   ],
+   "pause": 0.8
+  },
+  {
+   "id": "d3f",
+   "text": "So I erased it. Dave was wrong. And that's my rule for this whole video. If I can't find the receipt I don't say it.",
+   "set": "garage",
+   "face": "sad",
+   "pose3d": "shrug",
+   "sfx": [
+    {
+     "s": "rip",
+     "at": "erased"
+    },
+    {
+     "s": "stamp",
+     "at": "rule"
+    }
+   ],
+   "pause": 0.35
+  },
+  {
+   "id": "d3g",
+   "text": "Here's another thing my whiteboard got wrong. His plan doesn't ban private insurance. His campaign says extra coverage through an employer or a union could still exist on top. So the fight isn't insurance vanishes tomorrow. It's how much of that giant pie is left for each player.",
+   "set": "home",
+   "face": "think",
+   "pose3d": "point_up",
+   "sfx": [
+    {
+     "s": "scratch",
+     "at": "wrong"
+    },
+    {
+     "s": "pop",
+     "at": "pie"
+    }
+   ],
+   "pause": 0.12
+  },
+  {
+   "id": "d3h",
+   "text": "Critics say the move would be brutal. Millions of jobs in insurance and billing. New taxes. And nobody has a perfect plan for how to pay hospitals fairly. Supporters say America already spends more per person than any other rich country and people shouldn't lose coverage when they lose a job. Both sides have real numbers.",
+   "set": "home",
+   "face": "neutral",
+   "pose3d": "present",
+   "sfx": [
+    {
+     "s": "thud",
+     "at": "brutal"
+    },
+    {
+     "s": "ding",
+     "at": "supporters"
+    }
+   ],
+   "pause": 0.35
+  },
+  {
+   "id": "d4a",
+   "text": "Week two I go back and look at how he even got here. In that Michigan primary he faced Representative Haley Stevens and Mallory McMorrow. And the Associated Press reported that AIPAC and groups tied to it spent nearly thirty million dollars supporting Stevens and opposing him. Almost fifty million came from outside groups in total.",
+   "chapter": "WEEK 2",
+   "set": "home",
+   "face": "shock",
+   "pose3d": "point_r",
+   "num": {
+    "label": "OUTSIDE SPENDING IN THE PRIMARY",
+    "v": "~$50M",
+    "color": "yellow",
+    "sub": "(AIPAC and affiliated groups about $30M. Source AP)",
+    "at": "fifty"
+   },
+   "sfx": [
+    {
+     "s": "whoosh",
+     "at": "week"
+    },
+    {
+     "s": "cash",
+     "at": "thirty"
+    },
+    {
+     "s": "stamp",
+     "at": "fifty"
+    }
+   ],
+   "pause": 0.35,
+   "chapter_sub": "The money war"
+  },
+  {
+   "id": "d4b",
+   "text": "Let me be really careful here because this is where people start mixing everything together. AIPAC is not the insurance industry. Different people. Different reasons. Different money. Please don't blend them in the comments.",
+   "set": "home",
+   "face": "suspicious",
+   "pose3d": "arms_crossed",
+   "sfx": [
+    {
+     "s": "buzz",
+     "at": "careful"
+    },
+    {
+     "s": "ding",
+     "at": "different"
+    }
+   ],
+   "pause": 0.35
+  },
+  {
+   "id": "d4c",
+   "text": "El-Sayed has called Israel's military campaign in Gaza a genocide and criticized American military support. AIPAC and its supporters say they back candidates who support the US Israel relationship and that spending to do that is ordinary politics. And some Jewish Democrats have been alienated by his language. Everybody in this fight has a reason they believe.",
+   "set": "home",
+   "face": "neutral",
+   "pose3d": "shrug",
+   "sfx": [
+    {
+     "s": "pop",
+     "at": "gaza"
+    },
+    {
+     "s": "ding",
+     "at": "politics"
+    }
+   ],
+   "pause": 0.12
+  },
+  {
+   "id": "d4d",
+   "text": "Two things can be true. A group can legally spend money to help a candidate it likes. And voters can still look at a twelve to one ad advantage and ask who a senator would really answer to. That second question is the one I care about because it's the money question.",
+   "set": "home",
+   "face": "think",
+   "pose3d": "thinking",
+   "sfx": [
+    {
+     "s": "ding",
+     "at": "true"
+    },
+    {
+     "s": "tick",
+     "at": "twelve"
+    }
+   ],
+   "pause": 0.35
+  },
+  {
+   "id": "d4e",
+   "text": "And then August fourth happened and he won. He beat both of them. Twelve to one on TV and he still won. Which tells me money buys attention. It just doesn't always buy the vote.",
+   "set": "home",
+   "face": "smug",
+   "pose3d": "celebrate",
+   "plate": {
+    "id": "ballot_box",
+    "at": "august"
+   },
+   "sfx": [
+    {
+     "s": "stamp",
+     "at": "won"
+    },
+    {
+     "s": "crowd",
+     "at": "vote"
+    }
+   ],
+   "pause": 0.8
+  },
+  {
+   "id": "d4f",
+   "text": "Though one primary doesn't prove that works every time.",
+   "set": "home",
+   "face": "tired",
+   "pose3d": "shrug",
+   "aside": true,
+   "exag": 0.4,
+   "sfx": [
+    {
+     "s": "cricket",
+     "at": "primary"
+    }
+   ],
+   "pause": 0.35
+  },
+  {
+   "id": "d4g",
+   "text": "Quick aside. If you've made it this far I like you. Subscribe so I don't have to talk to this whiteboard alone. It's getting weird.",
+   "set": "garage",
+   "face": "grin",
+   "pose3d": "wave",
+   "aside": true,
+   "sfx": [
+    {
+     "s": "ding",
+     "at": "subscribe"
+    },
+    {
+     "s": "pop",
+     "at": "weird"
+    }
+   ],
+   "pause": 0.35
+  },
+  {
+   "id": "d4h",
+   "text": "Week two report card. Promises passed zero. Votes counted one primary win. And one very loud lesson about advertising.",
+   "set": "tvroom",
+   "face": "neutral",
+   "pose3d": "present",
+   "report": {
+    "title": "Week 2",
+    "rows": [
+     [
+      "Promises passed",
+      "0"
+     ],
+     [
+      "Votes counted",
+      "1 primary"
+     ],
+     [
+      "Lessons about ads",
+      "1"
+     ]
+    ],
+    "grade": "Incomplete"
+   },
+   "sfx": [
+    {
+     "s": "tick",
+     "at": "report"
+    },
+    {
+     "s": "stamp",
+     "at": "lesson"
+    }
+   ],
+   "pause": 0.35
+  },
+  {
+   "id": "d5a",
+   "text": "Week three gets loud. On October twenty fifth at a rally in Michigan Donald Trump told voters to reject El-Sayed. Reuters reported that he brought up the September eleventh attacks and accused him of being a member of the Muslim Brotherhood and compared him to the hijackers on Flight ninety three.",
+   "chapter": "WEEK 3",
+   "set": "home",
+   "face": "worried",
+   "pose3d": "hands_on_face",
+   "ui": {
+    "t": "app",
+    "data": {
+     "title": "REUTERS REPORT",
+     "rows": [
+      "Oct 25 Michigan rally",
+      "Invoked 9/11",
+      "Muslim Brotherhood accusation",
+      "No evidence provided"
+     ]
+    },
+    "push": "september"
+   },
+   "sfx": [
+    {
+     "s": "whoosh",
+     "at": "week"
+    },
+    {
+     "s": "sting",
+     "at": "attacks"
+    },
+    {
+     "s": "thud",
+     "at": "hijackers"
+    }
+   ],
+   "pause": 0.35,
+   "chapter_sub": "The rally"
+  },
+  {
+   "id": "d5b",
+   "text": "Reuters also reported that Trump offered no evidence. And that El-Sayed rejected all of it and called questions about his loyalty to America shameful.",
+   "set": "home",
+   "face": "neutral",
+   "pose3d": "point_r",
+   "sfx": [
+    {
+     "s": "stamp",
+     "at": "evidence"
+    },
+    {
+     "s": "ding",
+     "at": "shameful"
+    }
+   ],
+   "pause": 0.8
+  },
+  {
+   "id": "d5c",
+   "text": "Think about that for a second. He was born in Michigan. He went to American schools. He worked in American health departments. And Reuters said some people in that crowd shouted that he should be deported. A man born in the state he's running to represent. Which can't legally happen to a citizen.",
+   "set": "home",
+   "face": "sad",
+   "pose3d": "facepalm",
+   "sfx": [
+    {
+     "s": "scratch",
+     "at": "second"
+    },
+    {
+     "s": "thud",
+     "at": "deported"
+    }
+   ],
+   "pause": 0.35
+  },
+  {
+   "id": "d5d",
+   "text": "A month earlier Trump posted a photo of himself and Melania next to El-Sayed and his wife who wears a hijab and said it showed two very different Americas according to the Washington Post. And the Post also reported that Senator Tommy Tuberville called him a terrorist and a radical Islamist and Vice President JD Vance called him very evil.",
+   "set": "home",
+   "face": "neutral",
+   "pose3d": "present",
+   "sfx": [
+    {
+     "s": "flip",
+     "at": "photo"
+    },
+    {
+     "s": "sting",
+     "at": "terrorist"
+    }
+   ],
+   "pause": 0.35
+  },
+  {
+   "id": "d5e",
+   "text": "Now in fairness plenty of Republicans disagree with him on taxes and healthcare and tariffs and Israel and those are normal political fights. Nobody has to like his policies. The story I'm talking about is something else. It's about whether somebody's religion becomes the main argument.",
+   "set": "home",
+   "face": "think",
+   "pose3d": "thinking",
+   "sfx": [
+    {
+     "s": "ding",
+     "at": "fairness"
+    },
+    {
+     "s": "tick",
+     "at": "religion"
+    }
+   ],
+   "pause": 0.35
+  },
+  {
+   "id": "d5f",
+   "text": "And I can't read minds. I can read newspapers. What's on the record is that a big chunk of the attacks aimed at him weren't about healthcare or taxes. They were about who he is.",
+   "set": "home",
+   "face": "suspicious",
+   "pose3d": "arms_crossed",
+   "sfx": [
+    {
+     "s": "pop",
+     "at": "newspapers"
+    },
+    {
+     "s": "stamp",
+     "at": "is"
+    }
+   ],
+   "pause": 0.8
+  },
+  {
+   "id": "d5g",
+   "text": "Does that mean Trump opposes him because of insurance money. I looked for that too. Nothing. I'm not going to invent a motive. The record shows the attacks. It doesn't show the reason.",
+   "set": "bedroom",
+   "face": "tired",
+   "pose3d": "sitting_laptop",
+   "sfx": [
+    {
+     "s": "click",
+     "at": "looked"
+    },
+    {
+     "s": "cricket",
+     "at": "nothing"
+    }
+   ],
+   "pause": 0.35
+  },
+  {
+   "id": "d5h",
+   "text": "Week three report card. Promises passed zero. Votes counted zero. Insults counted way too many.",
+   "set": "tvroom",
+   "face": "grin",
+   "pose3d": "shrug",
+   "report": {
+    "title": "Week 3",
+    "rows": [
+     [
+      "Promises passed",
+      "0"
+     ],
+     [
+      "Votes counted",
+      "0"
+     ],
+     [
+      "Insults counted",
+      "Too many"
+     ]
+    ],
+    "grade": "D"
+   },
+   "sfx": [
+    {
+     "s": "tick",
+     "at": "report"
+    },
+    {
+     "s": "stamp",
+     "at": "insults"
+    }
+   ],
+   "pause": 0.35
+  },
+  {
+   "id": "d6a",
+   "text": "Week four I ask the question that sits under everything. Could America actually elect a Muslim president.",
+   "chapter": "WEEK 4",
+   "set": "home",
+   "face": "think",
+   "pose3d": "thinking",
+   "sfx": [
+    {
+     "s": "whoosh",
+     "at": "week"
+    },
+    {
+     "s": "riser",
+     "at": "question"
+    }
+   ],
+   "pause": 0.8,
+   "chapter_sub": "The question"
+  },
+  {
+   "id": "d6b",
+   "text": "Legally the answer is yes. Article six of the Constitution says no religious test shall ever be required for any office in America. So nobody can say you have to be this religion or that religion to be president. It's right there in the rules.",
+   "set": "home",
+   "face": "smug",
+   "pose3d": "point_up",
+   "ui": {
+    "t": "app",
+    "data": {
+     "title": "ARTICLE VI",
+     "rows": [
+      "No religious Test shall ever be required",
+      "as a Qualification to any Office"
+     ]
+    },
+    "push": "article"
+   },
+   "sfx": [
+    {
+     "s": "paper",
+     "at": "constitution"
+    },
+    {
+     "s": "stamp",
+     "at": "yes"
+    }
+   ],
+   "pause": 0.35
+  },
+  {
+   "id": "d6c",
+   "text": "But legal and political are two different universes. The Washington Post and the Schar School asked likely voters in September and forty five percent said they would not even consider voting for a Muslim presidential candidate. Among Republicans it was seventy eight percent. Among Democrats it was twenty two. That's a poll about a hypothetical candidate and not a prediction about him.",
+   "set": "home",
+   "face": "shock",
+   "pose3d": "point_r",
+   "num": {
+    "label": "WOULD NOT CONSIDER A MUSLIM CANDIDATE",
+    "v": "45%",
+    "color": "red",
+    "sub": "(Likely voters. Republicans 78%. Democrats 22%. Source Washington Post and Schar School)",
+    "at": "forty"
+   },
+   "sfx": [
+    {
+     "s": "ding",
+     "at": "september"
+    },
+    {
+     "s": "stamp",
+     "at": "forty"
+    },
+    {
+     "s": "thud",
+     "at": "twenty"
+    }
+   ],
+   "pause": 0.35
+  },
+  {
+   "id": "d6d",
+   "text": "Forty five percent is almost half the country. If those numbers held a candidate would start with a huge chunk of voters who closed the door before reading a single policy.",
+   "set": "home",
+   "face": "worried",
+   "pose3d": "panic",
+   "sfx": [
+    {
+     "s": "scratch",
+     "at": "almost"
+    },
+    {
+     "s": "boom",
+     "at": "policy"
+    }
+   ],
+   "pause": 0.35
+  },
+  {
+   "id": "d6e",
+   "text": "The Post also went through eight thousand eight hundred posts and podcasts from political figures and commentators. By mid August nearly one in three right wing posts about him mentioned Islam or Muslims or Sharia. Religion had passed socialism as the thing they talked about most.",
+   "set": "bedroom",
+   "face": "suspicious",
+   "pose3d": "sitting_laptop",
+   "ui": {
+    "t": "stats",
+    "data": {
+     "title": "WASHINGTON POST ANALYSIS",
+     "rows": [
+      [
+       "Posts and podcasts reviewed",
+       "8,800"
+      ],
+      [
+       "Right wing posts mentioning Islam or Sharia",
+       "Nearly 1 in 3"
+      ]
+     ]
+    },
+    "push": "eight"
+   },
+   "sfx": [
+    {
+     "s": "click",
+     "at": "posts"
+    },
+    {
+     "s": "ding",
+     "at": "religion"
+    }
+   ],
+   "pause": 0.35
+  },
+  {
+   "id": "d6f",
+   "text": "And this isn't new. In nineteen sixty a lot of Americans worried a Catholic president would take orders from the Pope. John F Kennedy had to stand in front of Protestant ministers in Houston and explain that he wouldn't. He won. Today nobody blinks when a Catholic runs. History doesn't promise the same ending. It just shows the argument isn't new.",
+   "set": "home",
+   "face": "think",
+   "pose3d": "present",
+   "plate": {
+    "id": "jfk_houston_1960",
+    "at": "kennedy"
+   },
+   "sfx": [
+    {
+     "s": "flip",
+     "at": "nineteen"
+    },
+    {
+     "s": "crowd",
+     "at": "won"
+    }
+   ],
+   "pause": 0.35
+  },
+  {
+   "id": "d6g",
+   "text": "Michigan has about two hundred forty thousand Muslim residents and the Post talked to some of them. Some said the attacks brought back memories of being treated as suspicious because of their religion.",
+   "set": "home",
+   "face": "sad",
+   "pose3d": "shrug",
+   "sfx": [
+    {
+     "s": "pop",
+     "at": "michigan"
+    },
+    {
+     "s": "cricket",
+     "at": "suspicious"
+    }
+   ],
+   "pause": 0.35
+  },
+  {
+   "id": "d6h",
+   "text": "People who support him say he gets asked to prove his loyalty in ways other candidates never do. People who oppose his policies say criticizing his positions on Israel isn't about religion. Both of those are things people are saying out loud right now. I just want you to notice they can both be happening at the same time.",
+   "set": "home",
+   "face": "neutral",
+   "pose3d": "arms_crossed",
+   "sfx": [
+    {
+     "s": "ding",
+     "at": "support"
+    },
+    {
+     "s": "ding",
+     "at": "oppose"
+    }
+   ],
+   "pause": 0.35
+  },
+  {
+   "id": "d6i",
+   "text": "Week four report card. Promises passed zero. Votes counted zero. But for the first time I learned the Constitution doesn't care what you pray to. Voters might.",
+   "set": "tvroom",
+   "face": "smug",
+   "pose3d": "point_up",
+   "report": {
+    "title": "Week 4",
+    "rows": [
+     [
+      "Promises passed",
+      "0"
+     ],
+     [
+      "Votes counted",
+      "0"
+     ],
+     [
+      "Constitution says yes",
+      "1"
+     ]
+    ],
+    "grade": "C"
+   },
+   "sfx": [
+    {
+     "s": "tick",
+     "at": "report"
+    },
+    {
+     "s": "stamp",
+     "at": "voters"
+    }
+   ],
+   "pause": 0.35
+  },
+  {
+   "id": "d7a",
+   "text": "Weeks five through eight I stop being nice. Because if I only show you the attacks I'm not being honest. He has real problems too.",
+   "chapter": "WEEK 5 TO 8",
+   "set": "garage",
+   "face": "suspicious",
+   "pose3d": "pointer_stick",
+   "sfx": [
+    {
+     "s": "whoosh",
+     "at": "weeks"
+    },
+    {
+     "s": "marker",
+     "at": "problems"
+    }
+   ],
+   "pause": 0.35,
+   "chapter_sub": "The fine print"
+  },
+  {
+   "id": "d7b",
+   "text": "Problem one. Hasan Piker. He's a very popular left wing streamer who has said things that make plenty of Democrats cringe. El-Sayed campaigned with him. Representative Hillary Scholten said she wouldn't endorse because he wouldn't directly disavow what Piker said. Afterward El-Sayed said he had no plans to campaign with Piker again but he never fully disavowed him.",
+   "set": "home",
+   "face": "worried",
+   "pose3d": "hands_on_face",
+   "sfx": [
+    {
+     "s": "sting",
+     "at": "problem"
+    },
+    {
+     "s": "buzz",
+     "at": "disavow"
+    }
+   ],
+   "pause": 0.35
+  },
+  {
+   "id": "d7c",
+   "text": "Problem two. And this one got me. He talks about erasing seven hundred million dollars of medical debt in Wayne County. So I wrote DONE next to it. Then I read Bridge Michigan.",
+   "set": "garage",
+   "face": "grin",
+   "pose3d": "thumbs_up",
+   "sfx": [
+    {
+     "s": "marker",
+     "at": "wrote"
+    },
+    {
+     "s": "scratch",
+     "at": "then"
+    }
+   ],
+   "pause": 1.2
+  },
+  {
+   "id": "d7d",
+   "text": "In June twenty twenty six the program had settled about fifty seven point three eight million dollars of debt for eighty three thousand two hundred ninety one people. The seven hundred million was the goal. Not the finished number. Dave was wrong again.",
+   "set": "home",
+   "face": "sad",
+   "pose3d": "facepalm",
+   "num": {
+    "label": "MEDICAL DEBT SETTLED SO FAR",
+    "v": "$57.38M",
+    "color": "green",
+    "sub": "(For 83,291 people as of June 2026. The $700M was the target. Source Bridge Michigan)",
+    "at": "fifty"
+   },
+   "sfx": [
+    {
+     "s": "cash",
+     "at": "fifty"
+    },
+    {
+     "s": "trombone",
+     "at": "wrong"
+    }
+   ],
+   "pause": 0.35
+  },
+  {
+   "id": "d7e",
+   "text": "But to be fair that's still real money. It works out to about six hundred ninety dollars for each person. And the same county program handed out more than thirty six thousand Narcan kits. It's a real record. It's just not the record the slogan says.",
+   "set": "home",
+   "face": "neutral",
+   "pose3d": "present",
+   "sfx": [
+    {
+     "s": "coin",
+     "at": "hundred"
+    },
+    {
+     "s": "ding",
+     "at": "narcan"
+    }
+   ],
+   "pause": 0.35
+  },
+  {
+   "id": "d7g",
+   "text": "Problem three. The billionaire tax. He supports a higher rate on income over one million dollars and a wealth tax on billionaires. Congress would have to pass it and lawyers argue about whether a wealth tax is even allowed under the Constitution. Some say yes and some say it ends up at the Supreme Court.",
+   "set": "home",
+   "face": "suspicious",
+   "pose3d": "point_r",
+   "sfx": [
+    {
+     "s": "cash",
+     "at": "billionaire"
+    },
+    {
+     "s": "paper",
+     "at": "constitution"
+    }
+   ],
+   "pause": 0.12
+  },
+  {
+   "id": "d7h",
+   "text": "Problem four. Citizens United. He wants it overturned and a president can't do that because it's a Supreme Court decision. To undo it you need a different Court someday or a constitutional amendment which needs two thirds of the House and the Senate and then thirty eight states. In the whole history of America there are only twenty seven.",
+   "set": "home",
+   "face": "worried",
+   "pose3d": "panic",
+   "ui": {
+    "t": "stats",
+    "data": {
+     "title": "HOW TO CHANGE THE CONSTITUTION",
+     "rows": [
+      [
+       "House and Senate",
+       "2/3 each"
+      ],
+      [
+       "States",
+       "38 of 50"
+      ],
+      [
+       "Amendments ever",
+       "27"
+      ]
+     ]
+    },
+    "push": "thirty"
+   },
+   "sfx": [
+    {
+     "s": "ding",
+     "at": "amendment"
+    },
+    {
+     "s": "stamp",
+     "at": "twenty"
+    }
+   ],
+   "pause": 0.35
+  },
+  {
+   "id": "d7i",
+   "text": "Problem five. His Israel position. Some Democrats think he's right to push for more pressure. Others think the old alliance matters for security. So even inside his own party he'd have a fight on day one. And it's the area where a president has the most room to move without Congress.",
+   "set": "home",
+   "face": "think",
+   "pose3d": "thinking",
+   "sfx": [
+    {
+     "s": "ding",
+     "at": "democrats"
+    },
+    {
+     "s": "boom",
+     "at": "fight"
+    }
+   ],
+   "pause": 0.35
+  },
+  {
+   "id": "d7j",
+   "text": "Week eight scoreboard. Promises passed zero. Votes counted maybe a few friendly ones. Dollars on the line about five point three trillion. And my whiteboard is basically a crime scene.",
+   "set": "tvroom",
+   "face": "tired",
+   "pose3d": "sitting_laptop",
+   "score": {
+    "a": 0,
+    "b": 3,
+    "c": "$5.3T",
+    "at": "scoreboard"
+   },
+   "sfx": [
+    {
+     "s": "ding",
+     "at": "scoreboard"
+    },
+    {
+     "s": "cricket",
+     "at": "crime"
+    }
+   ],
+   "pause": 1.5
+  },
+  {
+   "id": "k1",
+   "text": "Week nine.",
+   "set": "bedroom",
+   "skip": "Week nine. Dave leaves the simulation.",
+   "face": "tired",
+   "pose3d": "lying_down",
+   "sfx": [
+    {
+     "s": "tick",
+     "at": "week"
+    }
+   ],
+   "pause": 1.5
+  },
+  {
+   "id": "k2",
+   "text": "At grandma's I ate eleven pancakes and read zero headlines.",
+   "set": "finale",
+   "face": "happy",
+   "pose3d": "peace",
+   "plate": {
+    "id": "pancakes",
+    "at": "pancakes"
+   },
+   "sfx": [
+    {
+     "s": "pop",
+     "at": "pancakes"
+    },
+    {
+     "s": "ding",
+     "at": "zero"
+    }
+   ],
+   "pause": 1.2
+  },
+  {
+   "id": "k3",
+   "text": "Surely nothing happened while I was gone.",
+   "set": "home",
+   "face": "smug",
+   "pose3d": "shrug",
+   "sfx": [
+    {
+     "s": "cricket",
+     "at": "nothing"
+    }
+   ],
+   "pause": 1.2
+  },
+  {
+   "id": "k4",
+   "text": "Oh my god. Something happened. His agencies were doing things the whole time. Because a president's biggest power isn't a pen. It's picking the people who run everything else.",
+   "set": "tvroom",
+   "face": "scream",
+   "pose3d": "celebrate",
+   "score": {
+    "a": 1,
+    "b": 3,
+    "c": "$5.3T",
+    "at": "agencies"
+   },
+   "sfx": [
+    {
+     "s": "boom",
+     "at": "god"
+    },
+    {
+     "s": "ding",
+     "at": "agencies"
+    },
+    {
+     "s": "stamp",
+     "at": "pen"
+    }
+   ],
+   "pause": 0.35
+  },
+  {
+   "id": "d8a",
+   "text": "Week twelve I try the dumbest idea of the whole simulation. I call every senator in the country and ask them nicely.",
+   "chapter": "WEEK 12",
+   "set": "garage",
+   "face": "grin",
+   "pose3d": "point_up",
+   "sfx": [
+    {
+     "s": "whoosh",
+     "at": "week"
+    },
+    {
+     "s": "buzz",
+     "at": "call"
+    }
+   ],
+   "pause": 0.8,
+   "chapter_sub": "The dumbest idea"
+  },
+  {
+   "id": "d8b",
+   "text": "In a cartoon that takes four seconds. In real life every senator has a donor and a voter and a state and a lunch they'd rather be eating. Which is why the dumbest idea is also the most real one. Persuasion is the whole job.",
+   "set": "home",
+   "face": "smug",
+   "pose3d": "shrug",
+   "sfx": [
+    {
+     "s": "pop",
+     "at": "donor"
+    },
+    {
+     "s": "ding",
+     "at": "persuasion"
+    }
+   ],
+   "pause": 0.35
+  },
+  {
+   "id": "d8c",
+   "text": "And here's what I figured out. A president's real tools are the boring ones. Appointments. Agency rules. A budget proposal. And the bully pulpit where he can make a whole country care about something. None of those are a golden pen. All of them are real.",
+   "set": "home",
+   "face": "think",
+   "pose3d": "pointer_stick",
+   "sfx": [
+    {
+     "s": "ding",
+     "at": "appointments"
+    },
+    {
+     "s": "stamp",
+     "at": "real"
+    }
+   ],
+   "pause": 0.35
+  },
+  {
+   "id": "d8d",
+   "text": "Housing is a good example. A president can send federal money but zoning is decided by cities and counties. AI is another. He can set rules for the government's own AI use but public ownership of AI companies would need Congress. And ICE was created by a law so dissolving it takes a law. He can change how it enforces. He can't erase it with a signature.",
+   "set": "home",
+   "face": "neutral",
+   "pose3d": "point_r",
+   "sfx": [
+    {
+     "s": "ding",
+     "at": "housing"
+    },
+    {
+     "s": "click",
+     "at": "zoning"
+    },
+    {
+     "s": "stamp",
+     "at": "law"
+    }
+   ],
+   "pause": 0.35
+  },
+  {
+   "id": "r1",
+   "text": "Day one hundred. The results. This is my guess and not a prediction. A supporter would say I'm underrating how much one determined president can do. An opponent would say I'm overrating it. I'm just a stickman with a whiteboard.",
+   "chapter": "DAY 100",
+   "set": "finale",
+   "face": "smug",
+   "pose3d": "present",
+   "sfx": [
+    {
+     "s": "whoosh",
+     "at": "results"
+    },
+    {
+     "s": "ding",
+     "at": "guess"
+    }
+   ],
+   "pause": 0.35,
+   "chapter_sub": "The results"
+  },
+  {
+   "id": "r2",
+   "text": "Here's the final report card. Medicare for All stalled. Billionaire tax stalled. Citizens United stalled. Court and filibuster changes stalled. Restructuring ICE partly moving. AI oversight partly moving. Housing partly moving. And foreign policy is moving the most.",
+   "set": "tvroom",
+   "face": "neutral",
+   "pose3d": "pointer_stick",
+   "report": {
+    "title": "Day 100",
+    "rows": [
+     [
+      "Medicare for All",
+      "Stalled"
+     ],
+     [
+      "Billionaire tax",
+      "Stalled"
+     ],
+     [
+      "Citizens United",
+      "Stalled"
+     ],
+     [
+      "Court and filibuster",
+      "Stalled"
+     ],
+     [
+      "Restructuring ICE",
+      "Partly"
+     ],
+     [
+      "AI oversight",
+      "Partly"
+     ],
+     [
+      "Housing",
+      "Partly"
+     ],
+     [
+      "Foreign policy",
+      "Moving"
+     ]
+    ],
+    "grade": "C-"
+   },
+   "sfx": [
+    {
+     "s": "tick",
+     "at": "report"
+    },
+    {
+     "s": "stamp",
+     "at": "stalled"
+    },
+    {
+     "s": "ding",
+     "at": "moving"
+    }
+   ],
+   "pause": 0.35
+  },
+  {
+   "id": "r3",
+   "text": "The top three are the ones where a president has the most room. Foreign policy. The agencies. And federal housing money. The bottom three need Congress or the Supreme Court or the whole country voting on an amendment. That's the gap between what gets said on stage and what gets signed.",
+   "set": "finale",
+   "face": "grin",
+   "pose3d": "point_up",
+   "sfx": [
+    {
+     "s": "ding",
+     "at": "foreign"
+    },
+    {
+     "s": "thud",
+     "at": "bottom"
+    }
+   ],
+   "pause": 0.35
+  },
+  {
+   "id": "r4",
+   "text": "So here's the honest lesson. A president is the gas pedal and not the engine. Congress and the courts and the money and the voters are the engine. Which means whoever you want in the White House the question that matters just as much is who you want in the other five hundred thirty five seats.",
+   "set": "finale",
+   "face": "smug",
+   "pose3d": "point_r",
+   "slam": {
+    "t": "GAS PEDAL NOT ENGINE",
+    "at": "pedal"
+   },
+   "sfx": [
+    {
+     "s": "drumroll",
+     "at": "honest"
+    },
+    {
+     "s": "boom",
+     "at": "pedal"
+    }
+   ],
+   "pause": 0.35
+  },
+  {
+   "id": "r5",
+   "text": "And remember twelve to one. He won anyway. The money can shout but the voters still get the last word. In Michigan that's November third.",
+   "set": "finale",
+   "face": "happy",
+   "pose3d": "thumbs_up",
+   "sfx": [
+    {
+     "s": "ding",
+     "at": "twelve"
+    },
+    {
+     "s": "crowd",
+     "at": "voters"
+    }
+   ],
+   "pause": 0.35
+  },
+  {
+   "id": "r6",
+   "text": "And the pen. It ran out of ink on day two. I'd like to point out it was a ninety nine cent pen. Real presidents have better pens. Their problem is still sixty votes.",
+   "set": "garage",
+   "face": "grin",
+   "pose3d": "shrug",
+   "sfx": [
+    {
+     "s": "click",
+     "at": "pen"
+    },
+    {
+     "s": "trombone",
+     "at": "votes"
+    }
+   ],
+   "pause": 0.35
+  },
+  {
+   "id": "r7",
+   "text": "And since this is a money channel here's the money lesson. Next time somebody tells you one person will fix your healthcare bill ask what it takes. Then ask who gets paid if it doesn't happen. Because the bill is still fifteen thousand four hundred seventy four dollars for every person in this country. This is education and not advice.",
+   "set": "home",
+   "face": "smug",
+   "pose3d": "point_up",
+   "sfx": [
+    {
+     "s": "cash",
+     "at": "money"
+    },
+    {
+     "s": "stamp",
+     "at": "bill"
+    }
+   ],
+   "pause": 0.35
+  },
+  {
+   "id": "r8",
+   "text": "Next time I find out why your phone gets slow right when the new one comes out. And yes I have a theory. And yes I'm going to be wrong about at least one part of it.",
+   "set": "home",
+   "face": "suspicious",
+   "pose3d": "point_r",
+   "sfx": [
+    {
+     "s": "pop",
+     "at": "phone"
+    },
+    {
+     "s": "trombone",
+     "at": "wrong"
+    }
+   ],
+   "pause": 0.35
+  },
+  {
+   "id": "r9",
+   "text": "Subscribe. It takes less effort than a vote and way less than sixty. Spend smart. Or don't. I'm a stickman and not your mom.",
+   "set": "finale",
+   "face": "grin",
+   "pose3d": "wave",
+   "sfx": [
+    {
+     "s": "ding",
+     "at": "subscribe"
+    },
+    {
+     "s": "pop",
+     "at": "mom"
+    }
+   ],
+   "pause": 0.35
+  }
+ ]
+}
