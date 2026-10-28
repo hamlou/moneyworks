@@ -153,6 +153,20 @@ A retro CRT TV in the TV-room set (or as a 2D card on home base). Screen: rounde
 - Hook (first 60 s): a visual change every ≤ 1.5 s, at least 3 different set types (photo plate, home base, 3D set).
 - Frame 0 is already moving and shows the most impressive thing (the jaw-drop proof), never a title.
 
+### 5.9 Motion grammar — measured frame by frame (30 fps, every frame diffed + 10 fps strips)
+This is what makes it feel "smooth" and animator-made. It is NOT constant motion:
+- **Burst → hold.** 45 % of all frames are perfectly still; 36 % move. Motion comes in short bursts (4–10 frames) then the image HOLDS 0.3–1.5 s (751 holds of 0.1–0.5 s, 102 of 0.5–1 s, only 8 longer than 3 s). Never a slow continuous drift as the only motion.
+- **Pose swaps are instant, not tweened.** The character cuts from one held pose to the next. On the swap frame(s) the character is drawn as a **flat WHITE silhouette for 1–2 frames** (seen at 0:17.7, 0:20.3, 0:21.5, 1:28.6, 1:29.1). Kit: `track()` + `DaveT` do this automatically.
+- **Entrances ≤ 6 frames** with ease-out + overshoot (the card at 0:00 goes from 15 % to 100 % size in 6 frames). Kit: `snap()`.
+- **Smear frames** on fast moves and character drops: 1–2 frames of directional blur + stretch (0:18.8, 0:21.5, 1:30.3, 4:03.4). Kit: `Smear`.
+- **1-frame high-contrast black/white "photocopy" frame** right before a big VFX/reveal (4:17.5). Kit: `Threshold`.
+- **Counters roll in ~1.5 s** with vertical motion blur while the card slowly pushes in (0:01.6–0:03.2), then land with a tiny bounce. Kit: `Counter`.
+- **Comic bursts** slam in over 3 frames with a decaying shake (0:17.8–0:18.9). Kit: `ComicBurst`.
+- **3D shots mostly use a LOCKED camera** and let the character act (fidget loop, sitting, typing); lights can **snap** on instantly as a gag (0:28.2). Camera moves are reserved for reveals (a fast whip + blur to a low-angle close-up at 4:03.4; a slow crane on the finale).
+- **Hand-drawn effects boil on top of 3D**: white jagged shock lines redrawn every 3 frames (0:28.2–0:30.2). Kit: `ShockLines`.
+- **Full-frame white flash** (1–2 frames) to hard-switch a number card. Kit: `WhiteFlash`.
+- Animation runs on ones (full 30 fps), not on twos.
+
 ---
 
 ## 6. Sound
@@ -186,7 +200,9 @@ Density per video (targets): visual change every 1.5–2.5 s · scene change eve
 
 ## 8. Build status + roadmap (be honest with the owner)
 
-Our renderer is Remotion (2D, React/SVG). Real 3D needs Blender. Plan, in order:
+**Chosen solution (23 Oct 2026): real 3D inside Remotion with three.js (`@remotion/three`), no Blender step.** The reference's white round-head stickman (0:00, 0:27, 0:42) IS a 3D Dave, so Dave is built from primitives in `src/v6/Dave3D.tsx`: toon shading (3-step ramp) + black inverted-hull outline + face drawn on a canvas texture (14 faces) + joint-angle pose library (16 poses). Kit: `src/v6/kit.tsx` (Stage, DaveT pose track with white-flash swaps, HomeBase, UICard push-in, Counter, NumCard, ComicBurst, ChapterCard, ReportCard, WhiteFlash, Threshold, Smear, ShockLines). Sets: `src/v6/sets.tsx` (Bedroom so far). Demo: composition `V6Demo` in the separate entry `src/v6/index.ts`, rendered by Actions → `v6demo` (uses `--gl=swangle`, software WebGL; uploads the mp4 + 10 fps contact sheets). Blender stays optional later for richer sets (render clips, drop them in as video).
+
+Older plan, still the order of work:
 1. **v6 script + voice — works TODAY.** Format §2, writing §3, voice §4 (`cb.cfg`, beat `cfg`/`exag`, breath-group beats, real pauses, optional own-voice reference) → `voice.yml` as usual.
 2. **v6 2D kit `src/v6/`** (Remotion, no Blender): home-base set, UI cards with push-in + cursor, big number cards, chapter title card, week report card, time-skip card, comic panels, scoreboard TV card, white-frame photo flash, captions off. ← next build step.
 3. **3D Dave** (Blender, runs in GitHub Actions `blender -b`): model + toon outline + face texture swap → render the pose×face PNG library to `public/dave3d/` (committed). Until it exists the v6 kit uses the current 2D Dave with a toon-shaded look (gradient shading + thick outline + drop shadow) so it already reads as "3D-ish".
@@ -213,3 +229,124 @@ Our renderer is Remotion (2D, React/SVG). Real 3D needs Blender. Plan, in order:
 - [ ] Voice: beats 25–60 words, `cb.cfg` set, pauses varied (0.1 / 0.35 / 1.0), measured 180–200 wpm per chapter.
 - [ ] Visual: change every ≤ 2.5 s (≥ 35 in minute 1), scene change every 4–6 s, real image every ≤ 15 s, gag every ≤ 40 s, scoreboard ≥ 6×, report card per week, no captions, no memes, no polaroids.
 - [ ] Sources + licences as always; no real logos; real people factual only; no invented result presented as real data.
+
+---
+
+## 11. Channel study — all 13 videos (23 Oct 2026, owner: "we're at 25 %, study ALL his videos")
+
+Sources: 12 auto-caption transcripts (the brainrot video has none), per-frame motion data on his 3 biggest hits (1.7 M "Why are there no 3D animators", 1.2 M "BRAINROT Shorts for 30 days", 479 K "SLEEPING videos"), 2.5 s frame sheets of their openings, and his own workflow video "How I Make 3D Animated Videos for YouTube" (720 s).
+
+### 11.1 His real production recipe (from his own words) → our equivalent
+| His step | Ours |
+|---|---|
+| Google Doc script, bullet points expanded, `[notes in brackets]` for gags | episode JSON beats + `[gag]` notes |
+| **Records his OWN voice word for word** (AT2020 mic, blanket over his head against echo), Audacity noise reduction, **Adobe Podcast Enhance** (free web tool), cuts stutters in Premiere. Non-native English speaker. | §4b voice paths (owner decides) |
+| Pen-and-paper storyboard: scene number + script line + sketch | beat `set` + `shot` notes |
+| Audio cut into one snippet per scene, numbered | one beat = one scene |
+| **Blender EEVEE, 1920×1080, 24 fps**, anime skybox pack, 32 samples, **shadows + ray tracing + motion blur ON** | `@remotion/three` scene at 24 fps, shadows on, motion-blur pass (§11.4) |
+| Character: default human rig, grease-pencil outline, **face drawn per line in draw mode** | `Dave3D` + face textures ✓ |
+| **Backgrounds and props = free downloaded 3D models** (Sketchfab, GLB format, textures included). "If someone has done it before you, don't make it yourself." | CC0 libraries we can download without login: Poly Haven (HDRI skies + models), Kenney, Quaternius; Sketchfab CC-BY needs the owner's login |
+| **Background people = low-poly model + Mixamo mocap** (crowds, soldiers) | Quaternius CC0 animated characters; Mixamo needs the owner's Adobe login |
+| Static shots in After Effects: video samples with **rounded corners** and **every item bobbles (wiggle expression)** "so it feels alive" | `wiggle()` on every UI/photo card (§11.4) |
+| Music: one cosy game-soundtrack loop under everything; SFX: **whooshes, body hits, typewriters, number counters** | free lofi loop (licensed) + those 4 SFX families |
+| Outro stretched so the end screen has room; 2–3 thumbnails per video for A/B tests | same |
+
+### 11.2 Shot grammar seen in all 3 hits
+- **Two shot types only** (his words): *fully animated shots* (character acting inside a 3D world) and *static shots* (character in the corner + props/cards). Ratio in the openings ≈ 60 / 40.
+- **A new WORLD every 5–15 s**: empty concrete room → classroom → dark desk room → cinema projector → purple void with giant props → city street with whiteboard → grass field with a crowd. The world itself is the joke ("too shy for a camera" → he hides in a dark room).
+- **Information is shown ON world objects**: chalkboard list, projector screen showing the clip, CRT TV scoreboard, tear-off day calendar ("day 0 → day 1"), whiteboard "Point 1/2/3", flags on poles, cards floating in 3D with shadows. Flat full-screen cards only for big numbers and comparisons.
+- **Visual metaphors are built literally**: "you could fit all Odyssey viewers in one truck… and this is all of YouTube's" → 50 trucks; "crowd in a niche" → a field of identical white stickmen; money → a wall of banknotes; time → giant clock.
+- **Big chapter text lives in the world** (outlined "DAY 1" letters in the room), not on a separate card. The blue/yellow card is the exception, not the rule.
+- **Hook = speed-lines world** (green radial streaks) with objects flying at camera: calendar, stopwatch, banknotes — 6 different props in 10 s.
+- Burst-and-hold motion confirmed on all three: 36–45 % of frames perfectly still, holds mostly < 0.5 s.
+
+### 11.3 How he writes the jokes (the "spirit")
+1. **Personification skits**: platforms/ideas become people with a life ("YouTube in the 1960s = slicked-back hair driving a Mustang to his suburban family… Odyssey = the RV hippie: I'm decentralized bro"). One per video, 15–25 s, with a quick voice change.
+2. **Framing device for the whole video**: a boxing match with an announcer ("fighting out of the red corner…"), rounds and a score; a tier list; a 30-day experiment. Pick ONE per episode.
+3. **Absurd scale analogies, shown literally**: strawberries → trucks; "more than the population of Poland, Spain or even Canada".
+4. **Self-roast as a running texture**: "too ugly or too shy… that's me right now. Please subscribe." / "I'm incredibly bad at thumbnails" / "at least half of those views is just me. You're welcome, I just paid your rent."
+5. **He interrupts himself** ("Hey hey hey stop. That's enough.") and **mock-argues with the viewer** ("Before any film school students come crashing out in the comments: yes I know").
+6. **Fake-meta twists**: "Or am I just paid to say that?… Well probably. Or is it?"
+7. **Literal-misunderstanding gag**: "a folder called audios with a Z… wait not this kind of B" → wrong visual for one beat.
+8. **Pop-culture moments** he reacts to ("Cars 3 crash… Oh it's so good. Oh it's so good.") — we use only factual/free footage, so we recreate the moment with our own 3D.
+9. **Subscribe asks are jokes, mid-video, placed right after a self-roast.**
+10. **Fixed sign-off catchphrase** every video (his: "Life is short so thanks for wasting a bit of it here. Until next time." — never copy it; Dave needs his own, e.g. "Spend smart. Or don't. I'm a stickman not your mom.").
+Measured pace across 12 videos: **150–215 wpm, median ≈ 180**; quieter, slower intros (150–165) and fast rants (200–215).
+
+### 11.4 The 75 % gap — what we must build (in this order)
+1. **Worlds, not wallpapers**: every beat gets a `set`. Asset loader for GLB models + HDRI skies (CC0 first: Poly Haven, Kenney, Quaternius) committed to `public/3d/`. Shadows on.
+2. **World screens**: chalkboard / projector / TV / floating card objects whose surface shows our UI, photo or number (canvas or image texture), so information is IN the world.
+3. **Character acting**: animated loops for Dave (walk, type, sit, fall, run, dance) + CC0 mocap crowds/background people.
+4. **Camera + motion feel**: 24 fps, motion blur on fast moves, wiggle on every static card, burst-and-hold timing (§5.9).
+5. **Voice with a performer** (§4b).
+6. Gag library: speed-lines hook world, personification skit kit (props: hats, cars, RV), boxing-match/tier-list framing kits, literal-metaphor builders (trucks, crowds, money walls).
+
+### 4b. Voice — the honest truth (added after the channel study)
+His "spirit" is a human actor reading his own jokes. Measured on 120 s windows: his pitch ≈ 155–159 Hz (young), smooth (2.6 semitones/100 ms) and almost continuous (3–8 short breaths per minute, ~0.22 s); our Chatterbox Dave ≈ 128 Hz (older), jittery (3.4), choppy (17–21 pauses per minute, ~0.44 s). Cloning HIS voice is illegal and off the table. Legal ways to get the same spirit, best first:
+- **A. Owner records** (exactly his method; he is a non-native speaker too): phone in a quiet room/under a blanket → Adobe Podcast Enhance (free) → our aligner cuts stutters and long gaps automatically. Best spirit, free.
+- **B. Hire a young English voice actor** (Fiverr/Voices.com, commercial licence + written consent to AI cloning) → clone THAT actor with ElevenLabs Professional Voice Clone → every episode in his voice with v3 audio tags (`[sarcastic]`, `[laughs]`, `[whispers]`, `[excited]`).
+- **C. ElevenLabs v3 library voice + audio tags** (paid, no actor).
+- **D. Free Chatterbox tuned** (cfg 0.3, breath-group beats, short pauses, +2–3 semitone pitch): ceiling ≈ 40 % of his spirit.
+
+---
+
+## 12. Deep study v2 — whole channel, every frame (28 Oct 2026, owner: "STYLE_3D is unfinished, analyse until it's enough")
+
+**Data:** all 14 uploads (13 long + 1 short, 6,950 s). Every frame diffed (96×54), every hard cut detected, one still per shot → contact sheets, word-timed auto-captions for 10. Raw data: `qa_dl/chan/an/<id>/` (`shots.json` = start, length, motion, words per shot · `sheet_NN.jpg` = every shot · `diff.npy` = per-frame motion). Per-frame strips of 7 transitions: `qa_dl/chan/micro/`. Tool: `qa_dl/chan_tools/analyze.py <mp4> <outdir> [--sheets]`.
+
+### 12.1 Channel-wide numbers (hard cuts only — card swaps inside home base are extra)
+| Video | dur | cuts | median shot | flash cuts ≤ 0.2 s | shots ≥ 10 s | frames perfectly still |
+|---|---|---|---|---|---|---|
+| SLEEPING 30 days (ref) | 19:16 | 215 | 3.5 s | 18 | 23 | 82 % |
+| No 3D animators (1.7 M) | 9:00 | 87 | 4.1 s | 3 | 18 | 63 % |
+| BRAINROT 30 days (1.2 M) | 11:00 | 72 | 6.0 s | 1 | 18 | 74 % |
+| How much YT pays | 5:32 | 46 | 4.9 s | 1 | 9 | 76 % |
+| YouTube killer | 8:00 | 64 | 5.4 s | 2 | 18 | 59 % |
+| Guru epidemic | 10:01 | 84 | 3.5 s | 17 | 16 | 58 % |
+| others (6) | 4:30–10:16 | 41–81 | 2.1–6.5 s | 1–8 | 7–23 | 62–78 % |
+→ **Rule:** a hard scene change every 3.5–6 s (median), 8–11 per minute, the first minute 2× denser (ref: 20 cuts in min 1). About **1 shot in 10 is a long "home base" talk shot (10–38 s)** carried by card/pose/face swaps instead of cuts. 1–18 flash cuts (≤ 6 frames) per video = transitions, not shots.
+
+### 12.2 Shot types — what the screen actually shows (counted on the ref's 215 shots)
+1. **Home base (≈ 45 % of time):** dark charcoal backdrop with a faint repeated icon pattern (newer videos) or white crumpled low-poly paper (older videos). Host **waist-up in the lower right**, pointing / shrugging at the content on the left. Content = floating screenshot / thumbnail / video card with rounded corners and a soft shadow, slightly tilted in 3D, wobbling.
+2. **Acting shot in a 3D world (≈ 30 %):** lit set from free models (living room + couch, bedroom, forest, garage with whiteboard, library, yacht deck, city street in rain, school classroom with chalkboard, military parade, beach). Locked camera, host acts (sleeps, falls, types, gets hit).
+3. **World scoreboard objects (≈ 10 %):** CRT TV on a brick wall showing a dark card "DAY 7 · views · subs · $" in 3 coloured rounded boxes (blue/red/green) → appears **every in-story day**; whiteboard checklist in the garage (plan → ticks); the money video uses the same CRT as a running ledger "ADS / SPONSORS / MERCH / MEMBERSHIPS / TOTAL".
+4. **Week report card (5 in ref):** pure black, "Week ①", 4 rows with dotted leaders (Views / Subscribers / Revenue / Rating) and a coloured letter grade (C- → B → A → S). Holds 8–13 s.
+5. **Big number / title plates:** 3D outlined white chunky text in the world ("30 DAYS" on a table, "DAY 3"), counters over a sky plate ("1:27:54 Average Watch Time" ticking up one unit per frame), grey concrete plate with white stencil word for chapters ("ADS", "SPONSORS", "MERCH"), typewriter monospace maths on white paper ("VIEWS......48,214 /1,000 · RPM......$15.00").
+6. **Screen recordings (≈ 10 %):** real tools (Studio, keyword tool, Premiere, stock sites) full-frame with the host cut-out overlaid lower right.
+7. **Experiment-series devices (BRAINROT + SLEEPING both):** CRT TV with the day card + **tear-off wall calendar "day N"** next to it (hard cut to it every in-story day) · our own uploads shown as **vertical 9:16 rounded cards floating in home base** with a view badge beside ("700K views") · the number of the day under the card ("DAY 3").
+8. **Process-video chapters (How I Make):** white plate, small spaced "STAGE 1" + huge pixel/blocky title "SCRIPTING" + one icon + a progress bar that grows across the video (3 % → 7 % → 13 %).
+9. **Real footage montage (rare, 70 s once):** shaky GoPro clips with fisheye vignette and light-leak flashes — his vacation/sponsor block. Skip for us.
+
+### 12.3 Frame-exact recipes (30 fps content; counted frame by frame in `micro/`)
+| Moment | Frames | Recipe |
+|---|---|---|
+| **Time-skip flash** (0:08.5) | hold 9 → 2 pink-red light leak wipe from left → 3 near-white overexposed → 1 dark gradient wipe reveals new pose → hold | 6 frames total, no fade |
+| **Emphasis punch-in** (0:17.7) | hold 26 → **1 frame white silhouette with black outline at the NEW framing** → closer camera + new face (angry) + background also scaled up | number "500" types in one digit per frame (5 → 50 → 500) inside a white comic burst that grows over 3 frames |
+| **Whip-zoom to reaction** (1:04.8) | counter ticks +1 per frame → 3 frames heavy directional motion blur → hard cut to close-up wearing pixel sunglasses, money raining | |
+| **Hit / smear** (4:04.2) | hold 19 → 1 wind-up blur → 2 full-frame smears → 1 white impact frame → comic "WHACK!" with white radial spikes 3 frames → spikes gone, word stays and shakes | |
+| **Realisation zap** (4:17.5) | 1 smear → **3 frames black/white threshold** (photocopy) → 17 frames cyan-inverted lighting + boiling lightning drawn on the character → hard cut to the next set | |
+| **Light-leak montage** (12:54) | 1 bloom → 6 white/orange leak frames → leak fades over 6 while handheld clip runs | real-footage only |
+| Pose swap | instant; character holds 10–40 frames between swaps | never tweened |
+
+### 12.4 Character acting rules (for Dave — never his cat-hood design)
+- Face is a **flat drawn face on a dark/plain head** that changes per line (XD, X O, angry brows, sad, smug). Body pose changes ~every 1–3 s in home base, face more often.
+- Background people / past self / "average creator" = **plain white round-head stickmen**, often in crowds (identical copies).
+- **Costume gags**: tricorn hat, white beard (Gandalf), pixel sunglasses, party hat — a prop on the host = an instant joke.
+- Host is cut out with a **black outline** (grease pencil) so he reads over any plate.
+
+### 12.5 What we must NOT copy (copyright)
+He uses Pixar / Spider-Verse / LEGO Movie / Rick & Morty / Gandalf clips and a game-soundtrack song under fair-use commentary. We replace them with our own 3D shots, CC0 models and licensed music. His mascot, voice and jokes stay his.
+
+### 12.6 The Instagram "Higgsfield" reel (owner sent, 86 s, analysed every 0.25 s)
+It is **Higgsfield "Katana"**: Claude driven through the Higgsfield MCP writes **motion graphics** (neon kinetic type on a dark grid, glow, particles, wireframe 3D shapes, morphing labels, a 1-frame white flash between titles). It is code-made animation — **the same kind of thing our Remotion kit already renders for free**. So: Katana-style titles = build in Remotion (`src/v6/`), no subscription. Real AI *video* (photoreal or 3D-look clips) is what costs credits.
+
+### 12.7 Best mix (owner approved 28 Oct)
+- **Free core (every episode):** Remotion three.js / Blender 3D Dave + CC0 worlds + the §12.3 transition recipes + home base + CRT scoreboard + week report card + Katana-style kinetic titles.
+- **Higgsfield (paid credits, optional):** only hook shots that need a "wow" (5 s clips). Free plan = 10 credits ≈ 1 image (Nano Banana 2, 2 cr) + 1 clip (Seedance 2.0 Mini / Grok 1.5 Lite, 5 cr). Always `higgsfield generate cost` first; never spend without the owner's OK.
+
+### 12.8 Build order (replaces §11.4 order)
+1. Transition kit exactly as §12.3 (light-leak flash, white-silhouette punch-in, whip-blur, smear+comic burst, threshold+zap, digit-per-frame number type-on).
+2. Home base v2: charcoal icon-pattern backdrop + tilted rounded wobbling card + Dave lower-right waist-up.
+3. World objects: CRT TV daily scoreboard, week report card, whiteboard checklist, concrete chapter plate, typewriter maths plate.
+4. 3D worlds from CC0 GLB (living room, bedroom, garage, classroom, street) + white stickman crowd.
+5. Costume prop library for Dave.
