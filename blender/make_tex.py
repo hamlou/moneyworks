@@ -167,3 +167,54 @@ def book_cover():
 board_day1()
 book_cover()
 print(sorted(os.listdir(OUT)))
+
+
+# ---- test1 pass 2: train problem on the board + rent bill
+def chalk_train():
+    W, H = 2048, 1024
+    im = Image.new("RGB", (W, H), (38, 64, 50))
+    d = ImageDraw.Draw(im, "RGBA")
+    r = random.Random(11)
+    for _ in range(300):
+        x, y = r.uniform(0, W), r.uniform(0, H)
+        d.ellipse([x - 90, y - 25, x + 90, y + 25], fill=(255, 255, 255, 7))
+    from PIL import ImageFont
+    try:
+        f, g = ImageFont.truetype("comicbd.ttf", 120), ImageFont.truetype("comicbd.ttf", 90)
+    except OSError:
+        f = g = ImageFont.load_default()
+    ch = (236, 238, 228, 225)
+    d.text((140, 90), "PROBLEM 7", font=f, fill=ch)
+    d.text((140, 280), "A train leaves Chicago", font=g, fill=ch)
+    d.text((140, 400), "at 3:00 PM going 60 mph.", font=g, fill=ch)
+    d.text((140, 520), "When does it arrive?", font=g, fill=ch)
+    x0, y0 = 1350, 760
+    for i in range(3):
+        d.rectangle([x0 + i * 190, y0, x0 + i * 190 + 160, y0 + 110], outline=ch, width=9)
+        for cx in (35, 125):
+            d.ellipse([x0 + i * 190 + cx - 26, y0 + 92, x0 + i * 190 + cx + 26, y0 + 144], outline=ch, width=8)
+    d.line([(1300, 910), (1980, 910)], fill=ch, width=7)
+    im.save(os.path.join(OUT, "chalk_train.png"))
+
+
+def rent_bill():
+    im = Image.new("RGB", (768, 1000), (246, 240, 232))
+    d = ImageDraw.Draw(im)
+    from PIL import ImageFont
+    try:
+        f, g = ImageFont.truetype("arialbd.ttf", 150), ImageFont.truetype("arialbd.ttf", 64)
+    except OSError:
+        f = g = ImageFont.load_default()
+    d.rectangle([0, 0, 768, 230], fill=(200, 36, 36))
+    d.text((90, 40), "RENT", font=f, fill=(255, 255, 255))
+    d.text((60, 300), "DUE EVERY MONTH", font=g, fill=(30, 30, 30))
+    r = random.Random(3)
+    for i in range(8):
+        d.rectangle([60, 430 + i * 50, 60 + r.randint(300, 620), 442 + i * 50], fill=(160, 154, 146))
+    d.rectangle([380, 840, 720, 960], outline=(200, 36, 36), width=10)
+    d.text((410, 860), "PAY NOW", font=g, fill=(200, 36, 36))
+    im.save(os.path.join(OUT, "rent_bill.png"))
+
+
+chalk_train()
+rent_bill()

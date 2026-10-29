@@ -18,6 +18,7 @@ SEAT = room.seat + 0.03
 form = dave.prop("taxform", (0.26, 0.34), "taxform.png")
 cover = dave.prop("book", (0.2, 0.26), "book_math.png")
 pages = dave.prop("pages", (0.46, 0.3), "book_pages.png")
+bill = dave.prop("bill", (0.26, 0.34), "rent_bill.png")
 days = text3d("30 DAYS", (-0.6, -1.05, 0), (R(90), 0, R(24)), 0.5, __import__("lib").flat("days_white", (0.97, 0.97, 0.95), 0.3, 0.3, emit=0.35), dave.coll, extrude=0.09)
 
 CAM = {
@@ -27,7 +28,7 @@ CAM = {
     "days": cam("days", (1.5, -3.2, 0.95), (-0.05, -0.6, 0.6), 24),
     "board": cam("board", (-0.75, 1.15, 1.45), (-1.3, 3.0, 1.55), 30),
     "desk": cam("desk", (1.05, -1.75, 1.25), (-0.05, -0.3, 0.75), 28),
-    "cut": cam("cut", (0, -2.6, 0.92), (0, 0, 0.82), 42),
+    "cut": cam("cut", (0, -1.5, 1.25), (0, 0, 1.22), 40),
 }
 FORM = {"hold": ((0.25, -0.28, 0.4), (72, 0, -14)), "look": ((0.25, -0.28, 0.4), (72, 0, -14)), "panic": ((0.28, -0.26, 0.6), (80, 0, -10))}
 
@@ -154,6 +155,37 @@ def _():
 def _():
     sit("slump", "dead")
     dave.root.location.z -= 0.08
+
+
+# t8 "a train that leaves Chicago at three" — problem on the board, then Dave stares at it
+@state("t8_board", "board")
+def _(): room.board("chalk_train.png"); dave.show(False)
+@state("t8_stare", "close")
+def _(): room.board("chalk_train.png"); sit("look", "think")
+
+
+# t8 "...the train that leaves your bank account every month called rent" — RENT bill instead of the tax form
+def rent_pose(shake=(0, 0)):
+    room.board("chalk_train.png")
+    sit("panic", "shock", drop=True, shake=shake)
+    form.hide_render = True
+    bill.hide_render = False
+    loc, r = FORM["panic"]
+    bill.location = Vector(loc) + Vector((shake[0], 0, shake[1]))
+    bill.rotation_euler = (R(r[0]), R(r[1]), R(r[2]) + shake[0] * 4)
+@state("t8_rent", "wide")
+def _(): rent_pose()
+@state("t8_rent_b", "wide")
+def _(): rent_pose((0.014, 0.01))
+
+
+# t9 "I searched the whole textbook" — hunched over the open book
+@state("t9_search", "desk")
+def _():
+    top = desk_in_front()
+    sit("read", "think")
+    pages.hide_render = False
+    pages.location, pages.rotation_euler = (0.0, -0.52, top + 0.004), (0, 0, R(-6))
 
 
 # home-base cut-outs (transparent PNG, the reference's "character in the corner")
