@@ -107,7 +107,7 @@ jobs:
           if [ "${{ needs.plan.outputs.mode }}" = "full" ] && ls frames/[A-Z]_*.jpg >/dev/null 2>&1; then
             : > list.txt
             for p in $(ls frames | grep -oE '^[A-Z]_' | sort -u | tr -d _); do
-              ffmpeg -v error -framerate 24 -start_number 1 -i frames/${p}_%04d.jpg -vf "noise=alls=7:allf=t" -c:v libx264 -crf 16 -pix_fmt yuv420p out/shot_$p.mp4
+              ffmpeg -v error -framerate 24 -start_number 1 -i frames/${p}_%04d.jpg -vf "vignette=PI/5,noise=alls=7:allf=t" -c:v libx264 -crf 16 -pix_fmt yuv420p out/shot_$p.mp4
               echo "file 'out/shot_$p.mp4'" >> list.txt
             done
             ffmpeg -v error -f concat -safe 0 -i list.txt -c copy out/${{ needs.plan.outputs.shot }}.mp4

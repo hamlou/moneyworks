@@ -104,7 +104,7 @@ sc.camera = cam0
 # ================================================================== A · money yard
 if SHOT == "A":
     sky(0.22, 6, 210)
-    light("sun", "SUN", (0, 0, 10), (R(76), 0, R(35)), energy=3.2, color=(1.0, 0.82, 0.6), angle=R(1.5))
+    light("sun", "SUN", (0, 0, 10), (R(76), 0, R(35)), energy=2.4, color=(1.0, 0.82, 0.6), angle=R(1.5))
     plane("ground", (0, 0, 0), (60, 60), (0, 0, 0), flat("paving", (0.42, 0.4, 0.37), 0.8))
     cash = image_mat("cash", "banknote.png", rough=0.7)
     gold = flat("gold", (0.9, 0.62, 0.15), 0.25)

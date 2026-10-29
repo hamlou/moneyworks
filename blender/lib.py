@@ -389,7 +389,10 @@ def _live_handler(scene, *_):
             dv.live_node.image = _IMG[name]
 
 
-bpy.app.handlers.frame_change_pre.append(_live_handler)
+def _ensure_handler():
+    # read_factory_settings() (setup) wipes app handlers → (re)register whenever a Dave is built
+    if _live_handler not in bpy.app.handlers.frame_change_pre:
+        bpy.app.handlers.frame_change_pre.append(_live_handler)
 
 
 def finish(grain=0.035, vignette=0.35, bloom=True):
@@ -404,7 +407,7 @@ def finish(grain=0.035, vignette=0.35, bloom=True):
     last = rl.outputs["Image"]
     if bloom:
         g = nt.nodes.new("CompositorNodeGlare")
-        g.glare_type, g.quality, g.threshold, g.size = "FOG_GLOW", "MEDIUM", 0.85, 7
+        g.glare_type, g.quality, g.threshold, g.size = "FOG_GLOW", "MEDIUM", 1.3, 6
         nt.links.new(last, g.inputs["Image"]); last = g.outputs["Image"]
     ld = nt.nodes.new("CompositorNodeLensdist")
     ld.inputs["Dispersion"].default_value = 0.012
@@ -413,21 +416,8 @@ def finish(grain=0.035, vignette=0.35, bloom=True):
     cb.correction_method = "LIFT_GAMMA_GAIN"
     cb.lift, cb.gamma, cb.gain = (1.0, 0.99, 0.97), (1.0, 1.0, 0.98), (1.04, 1.01, 0.96)
     nt.links.new(last, cb.inputs["Image"]); last = cb.outputs["Image"]
-    em = nt.nodes.new("CompositorNodeEllipseMask")
-    em.width, em.height = 1.05, 0.95
-    bl = nt.nodes.new("CompositorNodeBlur")
-    bl.filter_type, bl.use_relative, bl.factor_x, bl.factor_y = "FAST_GAUSS", True, 0.35, 0.35
-    nt.links.new(em.outputs["Mask"], bl.inputs["Image"])
-    inv = nt.nodes.new("CompositorNodeMath")
-    inv.operation, inv.use_clamp = "MULTIPLY_ADD", True
-    inv.inputs[1].default_value, inv.inputs[2].default_value = vignette, 1 - vignette
-    nt.links.new(bl.outputs["Image"], inv.inputs[0])
-    mul = nt.nodes.new("CompositorNodeMixRGB")  # image × (1 − v + v·mask): darker edges, centre untouched
-    mul.blend_type = "MULTIPLY"
-    mul.inputs[0].default_value = 1.0
-    nt.links.new(last, mul.inputs[1])
-    nt.links.new(inv.outputs["Value"], mul.inputs[2])
-    nt.links.new(mul.outputs["Image"], comp.inputs["Image"])
+    nt.links.new(last, comp.inputs["Image"])  # vignette + grain are added at assembly (ffmpeg) — the ellipse-mask
+    # version left a ghost oval in the frame (29 Oct)
 
 
 def dof(camera, target_obj, fstop=2.8):
@@ -502,6 +492,7 @@ class Dave:
         self.live_obj, self.live_node, self.sched, self.voice_open = lf, lm.node_tree.nodes["Image Texture"], {}, None
         self.blink_seed = len(LIVE_DAVES) * 37
         LIVE_DAVES.append(self)
+        _ensure_handler()
         # clothes: one flashable material per part (recoloured per outfit) + costume extras
         self.cloth = {}
         self.flash_ins = [self.flash_in]
