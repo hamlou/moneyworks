@@ -1,14 +1,14 @@
 {
  "fps": 30,
- "total": 61.611,
- "hash": "1d4dd0a9fedbc7c3",
+ "total": 57.493,
+ "hash": "cc8df94e09e75eac",
  "chapters": [],
  "beats": [
   {
    "id": "t1",
    "text": "I spent twelve years in school and they taught me how to find the area of a triangle but they spent zero minutes teaching me how to do my taxes.",
    "start": 0.08,
-   "end": 7.24,
+   "end": 5.96,
    "words": [
     {
      "text": "I",
@@ -18,1184 +18,1184 @@
     {
      "text": "spent",
      "start": 0.16,
-     "end": 0.36
+     "end": 0.34
     },
     {
      "text": "twelve",
-     "start": 0.36,
-     "end": 0.72
+     "start": 0.34,
+     "end": 0.58
     },
     {
      "text": "years",
-     "start": 0.72,
-     "end": 0.96
+     "start": 0.58,
+     "end": 0.82
     },
     {
      "text": "in",
-     "start": 0.96,
-     "end": 1.16
+     "start": 0.82,
+     "end": 0.98
     },
     {
      "text": "school",
-     "start": 1.16,
-     "end": 1.4
+     "start": 0.98,
+     "end": 1.18
     },
     {
      "text": "and",
-     "start": 1.4,
-     "end": 1.76
+     "start": 1.18,
+     "end": 1.52
     },
     {
      "text": "they",
-     "start": 1.76,
-     "end": 1.88
+     "start": 1.52,
+     "end": 1.62
     },
     {
      "text": "taught",
-     "start": 1.88,
+     "start": 1.62,
+     "end": 1.78
+    },
+    {
+     "text": "me",
+     "start": 1.78,
+     "end": 1.94
+    },
+    {
+     "text": "how",
+     "start": 1.94,
      "end": 2.06
     },
     {
-     "text": "me",
-     "start": 2.06,
-     "end": 2.26
-    },
-    {
-     "text": "how",
-     "start": 2.26,
-     "end": 2.44
-    },
-    {
      "text": "to",
-     "start": 2.44,
-     "end": 2.52
+     "start": 2.06,
+     "end": 2.1
     },
     {
      "text": "find",
-     "start": 2.52,
-     "end": 2.72
+     "start": 2.1,
+     "end": 2.28
     },
     {
      "text": "the",
-     "start": 2.72,
-     "end": 2.88
+     "start": 2.28,
+     "end": 2.4
     },
     {
      "text": "area",
-     "start": 2.88,
-     "end": 3.16
+     "start": 2.4,
+     "end": 2.62
     },
     {
      "text": "of",
-     "start": 3.16,
-     "end": 3.44
+     "start": 2.62,
+     "end": 2.86
     },
     {
      "text": "a",
-     "start": 3.44,
-     "end": 3.46
+     "start": 2.86,
+     "end": 2.88
     },
     {
      "text": "triangle",
-     "start": 3.46,
-     "end": 3.76
+     "start": 2.88,
+     "end": 3.14
     },
     {
      "text": "but",
-     "start": 4.76,
-     "end": 4.82
+     "start": 3.84,
+     "end": 3.92
     },
     {
      "text": "they",
-     "start": 4.82,
-     "end": 4.96
+     "start": 3.92,
+     "end": 4.02
     },
     {
      "text": "spent",
-     "start": 4.96,
-     "end": 5.18
+     "start": 4.02,
+     "end": 4.18
     },
     {
      "text": "zero",
-     "start": 5.18,
-     "end": 5.48
+     "start": 4.18,
+     "end": 4.42
     },
     {
      "text": "minutes",
-     "start": 5.48,
-     "end": 5.9
+     "start": 4.42,
+     "end": 4.74
     },
     {
      "text": "teaching",
-     "start": 5.9,
-     "end": 6.28
+     "start": 4.74,
+     "end": 5.0
     },
     {
      "text": "me",
-     "start": 6.28,
-     "end": 6.54
+     "start": 5.0,
+     "end": 5.24
     },
     {
      "text": "how",
-     "start": 6.54,
-     "end": 6.7
+     "start": 5.24,
+     "end": 5.36
     },
     {
      "text": "to",
-     "start": 6.7,
-     "end": 6.8
+     "start": 5.36,
+     "end": 5.44
     },
     {
      "text": "do",
-     "start": 6.8,
-     "end": 6.92
+     "start": 5.44,
+     "end": 5.52
     },
     {
      "text": "my",
-     "start": 6.92,
-     "end": 7.04
+     "start": 5.52,
+     "end": 5.62
     },
     {
      "text": "taxes.",
-     "start": 7.04,
-     "end": 7.24
+     "start": 5.62,
+     "end": 5.96
     }
    ]
   },
   {
    "id": "t2",
    "text": "And twelve years is about as long as a dog lives so a whole dog lived and died while I was learning triangles.",
-   "start": 7.786270833333333,
-   "end": 12.886270833333333,
+   "start": 6.768416666666667,
+   "end": 11.288416666666667,
    "words": [
     {
      "text": "And",
-     "start": 7.786,
-     "end": 7.866
+     "start": 6.768,
+     "end": 6.948
     },
     {
      "text": "twelve",
-     "start": 7.866,
-     "end": 8.026
+     "start": 6.948,
+     "end": 7.148
     },
     {
      "text": "years",
-     "start": 8.026,
-     "end": 8.346
+     "start": 7.148,
+     "end": 7.468
     },
     {
      "text": "is",
-     "start": 8.346,
-     "end": 8.586
+     "start": 7.468,
+     "end": 7.708
     },
     {
      "text": "about",
-     "start": 8.586,
-     "end": 8.786
+     "start": 7.708,
+     "end": 7.888
     },
     {
      "text": "as",
-     "start": 8.786,
-     "end": 8.966
+     "start": 7.888,
+     "end": 8.028
     },
     {
      "text": "long",
-     "start": 8.966,
-     "end": 9.206
+     "start": 8.028,
+     "end": 8.188
     },
     {
      "text": "as",
-     "start": 9.206,
-     "end": 9.406
+     "start": 8.188,
+     "end": 8.348
     },
     {
      "text": "a",
-     "start": 9.406,
-     "end": 9.506
+     "start": 8.348,
+     "end": 8.428
     },
     {
      "text": "dog",
-     "start": 9.506,
-     "end": 9.766
+     "start": 8.428,
+     "end": 8.588
     },
     {
      "text": "lives",
-     "start": 9.766,
-     "end": 10.006
+     "start": 8.588,
+     "end": 8.868
     },
     {
      "text": "so",
-     "start": 10.286,
-     "end": 10.346
+     "start": 9.148,
+     "end": 9.208
     },
     {
      "text": "a",
-     "start": 10.346,
-     "end": 10.486
+     "start": 9.208,
+     "end": 9.328
     },
     {
      "text": "whole",
-     "start": 10.486,
-     "end": 10.626
+     "start": 9.328,
+     "end": 9.448
     },
     {
      "text": "dog",
-     "start": 10.626,
-     "end": 10.886
+     "start": 9.448,
+     "end": 9.688
     },
     {
      "text": "lived",
-     "start": 10.886,
-     "end": 11.166
+     "start": 9.688,
+     "end": 9.928
     },
     {
      "text": "and",
-     "start": 11.166,
-     "end": 11.466
+     "start": 9.928,
+     "end": 10.088
     },
     {
      "text": "died",
-     "start": 11.466,
-     "end": 11.706
+     "start": 10.088,
+     "end": 10.288
     },
     {
      "text": "while",
-     "start": 11.706,
-     "end": 12.006
+     "start": 10.288,
+     "end": 10.468
     },
     {
      "text": "I",
-     "start": 12.006,
-     "end": 12.146
+     "start": 10.468,
+     "end": 10.588
     },
     {
      "text": "was",
-     "start": 12.146,
-     "end": 12.266
+     "start": 10.588,
+     "end": 10.688
     },
     {
      "text": "learning",
-     "start": 12.266,
-     "end": 12.526
+     "start": 10.688,
+     "end": 10.888
     },
     {
      "text": "triangles.",
-     "start": 12.526,
-     "end": 12.886
+     "start": 10.888,
+     "end": 11.288
     }
    ]
   },
   {
    "id": "t3",
    "text": "So I did the only reasonable thing and I went back to school.",
-   "start": 13.836875,
-   "end": 16.456875,
+   "start": 12.414791666666666,
+   "end": 15.514791666666666,
    "words": [
     {
      "text": "So",
-     "start": 13.837,
-     "end": 13.897
+     "start": 12.415,
+     "end": 12.655
     },
     {
      "text": "I",
-     "start": 13.897,
-     "end": 13.977
+     "start": 12.955,
+     "end": 13.055
     },
     {
      "text": "did",
-     "start": 13.977,
-     "end": 14.117
+     "start": 13.055,
+     "end": 13.195
     },
     {
      "text": "the",
-     "start": 14.117,
-     "end": 14.257
+     "start": 13.195,
+     "end": 13.315
     },
     {
      "text": "only",
-     "start": 14.257,
-     "end": 14.477
+     "start": 13.315,
+     "end": 13.535
     },
     {
      "text": "reasonable",
-     "start": 14.477,
-     "end": 14.917
+     "start": 13.535,
+     "end": 13.935
     },
     {
      "text": "thing",
-     "start": 14.917,
-     "end": 15.317
+     "start": 13.935,
+     "end": 14.355
     },
     {
      "text": "and",
-     "start": 15.317,
-     "end": 15.577
+     "start": 14.355,
+     "end": 14.715
     },
     {
      "text": "I",
-     "start": 15.577,
-     "end": 15.697
+     "start": 14.715,
+     "end": 14.815
     },
     {
      "text": "went",
-     "start": 15.697,
-     "end": 15.837
+     "start": 14.815,
+     "end": 14.935
     },
     {
      "text": "back",
-     "start": 15.837,
-     "end": 15.997
+     "start": 14.935,
+     "end": 15.115
     },
     {
      "text": "to",
-     "start": 15.997,
-     "end": 16.217
+     "start": 15.115,
+     "end": 15.295
     },
     {
      "text": "school.",
-     "start": 16.217,
-     "end": 16.457
+     "start": 15.295,
+     "end": 15.515
     }
    ]
   },
   {
    "id": "t4",
    "text": "For the next thirty days I am sitting in every single class a normal school has because I am looking for the one lesson that teaches you about money.",
-   "start": 17.082791666666665,
-   "end": 23.902791666666666,
+   "start": 16.186083333333332,
+   "end": 22.486083333333333,
    "words": [
     {
      "text": "For",
-     "start": 17.083,
-     "end": 17.143
+     "start": 16.186,
+     "end": 16.246
     },
     {
      "text": "the",
-     "start": 17.143,
-     "end": 17.243
+     "start": 16.246,
+     "end": 16.346
     },
     {
      "text": "next",
-     "start": 17.243,
-     "end": 17.383
+     "start": 16.346,
+     "end": 16.486
     },
     {
      "text": "thirty",
-     "start": 17.383,
-     "end": 17.663
+     "start": 16.486,
+     "end": 16.726
     },
     {
      "text": "days",
-     "start": 17.663,
-     "end": 17.923
+     "start": 16.726,
+     "end": 17.026
     },
     {
      "text": "I",
-     "start": 17.943,
-     "end": 18.203
+     "start": 17.286,
+     "end": 17.306
     },
     {
      "text": "am",
-     "start": 18.203,
-     "end": 18.283
+     "start": 17.306,
+     "end": 17.406
     },
     {
      "text": "sitting",
-     "start": 18.283,
-     "end": 18.483
+     "start": 17.406,
+     "end": 17.586
     },
     {
      "text": "in",
-     "start": 18.483,
-     "end": 18.763
+     "start": 17.586,
+     "end": 17.786
     },
     {
      "text": "every",
-     "start": 18.763,
-     "end": 19.003
+     "start": 17.786,
+     "end": 18.006
     },
     {
      "text": "single",
-     "start": 19.003,
-     "end": 19.403
+     "start": 18.006,
+     "end": 18.226
     },
     {
      "text": "class",
-     "start": 19.403,
-     "end": 19.683
+     "start": 18.226,
+     "end": 18.566
     },
     {
      "text": "a",
-     "start": 19.683,
-     "end": 19.903
+     "start": 18.566,
+     "end": 18.786
     },
     {
      "text": "normal",
-     "start": 19.903,
-     "end": 20.063
+     "start": 18.786,
+     "end": 18.926
     },
     {
      "text": "school",
-     "start": 20.063,
-     "end": 20.363
+     "start": 18.926,
+     "end": 19.246
     },
     {
      "text": "has",
-     "start": 20.363,
-     "end": 20.723
+     "start": 19.246,
+     "end": 19.506
     },
     {
      "text": "because",
-     "start": 20.723,
-     "end": 21.263
+     "start": 19.506,
+     "end": 19.786
     },
     {
      "text": "I",
-     "start": 21.263,
-     "end": 21.503
+     "start": 19.786,
+     "end": 20.046
     },
     {
      "text": "am",
-     "start": 21.503,
-     "end": 21.603
+     "start": 20.046,
+     "end": 20.146
     },
     {
      "text": "looking",
-     "start": 21.603,
-     "end": 21.783
+     "start": 20.146,
+     "end": 20.346
     },
     {
      "text": "for",
-     "start": 21.783,
-     "end": 22.063
+     "start": 20.346,
+     "end": 20.586
     },
     {
      "text": "the",
-     "start": 22.063,
-     "end": 22.183
+     "start": 20.586,
+     "end": 20.706
     },
     {
      "text": "one",
-     "start": 22.183,
-     "end": 22.363
+     "start": 20.706,
+     "end": 20.866
     },
     {
      "text": "lesson",
-     "start": 22.363,
-     "end": 22.663
+     "start": 20.866,
+     "end": 21.146
     },
     {
      "text": "that",
-     "start": 22.663,
-     "end": 22.903
+     "start": 21.146,
+     "end": 21.466
     },
     {
      "text": "teaches",
-     "start": 22.903,
-     "end": 23.143
+     "start": 21.466,
+     "end": 21.666
     },
     {
      "text": "you",
-     "start": 23.143,
-     "end": 23.463
+     "start": 21.666,
+     "end": 21.966
     },
     {
      "text": "about",
-     "start": 23.463,
-     "end": 23.663
+     "start": 21.966,
+     "end": 22.226
     },
     {
      "text": "money.",
-     "start": 23.663,
-     "end": 23.903
+     "start": 22.226,
+     "end": 22.486
     }
    ]
   },
   {
    "id": "t5",
    "text": "If I find it I win but if I don't find it I am writing that class myself and you are all taking it.",
-   "start": 24.384729166666666,
-   "end": 30.924729166666665,
+   "start": 23.083354166666666,
+   "end": 28.043354166666667,
    "words": [
     {
      "text": "If",
-     "start": 24.385,
-     "end": 24.485
+     "start": 23.083,
+     "end": 23.203
     },
     {
      "text": "I",
-     "start": 24.485,
-     "end": 24.605
+     "start": 23.203,
+     "end": 23.283
     },
     {
      "text": "find",
-     "start": 24.605,
-     "end": 24.825
+     "start": 23.283,
+     "end": 23.563
     },
     {
      "text": "it",
-     "start": 24.825,
-     "end": 24.945
+     "start": 23.563,
+     "end": 23.703
     },
     {
      "text": "I",
-     "start": 25.045,
-     "end": 25.065
+     "start": 23.883,
+     "end": 23.983
     },
     {
      "text": "win",
-     "start": 25.065,
-     "end": 25.285
+     "start": 23.983,
+     "end": 24.203
     },
     {
      "text": "but",
-     "start": 26.025,
-     "end": 26.185
+     "start": 24.683,
+     "end": 24.763
     },
     {
      "text": "if",
-     "start": 26.185,
-     "end": 26.305
+     "start": 24.763,
+     "end": 24.883
     },
     {
      "text": "I",
-     "start": 26.305,
-     "end": 26.405
+     "start": 24.883,
+     "end": 24.963
     },
     {
      "text": "don't",
-     "start": 26.405,
-     "end": 26.745
+     "start": 24.963,
+     "end": 25.183
     },
     {
      "text": "find",
-     "start": 26.745,
-     "end": 26.925
+     "start": 25.183,
+     "end": 25.343
     },
     {
      "text": "it",
-     "start": 26.925,
-     "end": 27.145
+     "start": 25.343,
+     "end": 25.543
     },
     {
      "text": "I",
-     "start": 27.365,
-     "end": 27.445
+     "start": 25.663,
+     "end": 25.723
     },
     {
      "text": "am",
-     "start": 27.445,
-     "end": 27.565
+     "start": 25.723,
+     "end": 25.843
     },
     {
      "text": "writing",
-     "start": 27.565,
-     "end": 27.745
+     "start": 25.843,
+     "end": 26.003
     },
     {
      "text": "that",
-     "start": 27.745,
-     "end": 28.005
+     "start": 26.003,
+     "end": 26.223
     },
     {
      "text": "class",
-     "start": 28.005,
-     "end": 28.205
+     "start": 26.223,
+     "end": 26.403
     },
     {
      "text": "myself",
-     "start": 28.205,
-     "end": 28.705
+     "start": 26.403,
+     "end": 26.823
     },
     {
      "text": "and",
-     "start": 29.565,
-     "end": 29.705
+     "start": 26.823,
+     "end": 27.143
     },
     {
      "text": "you",
-     "start": 29.705,
-     "end": 29.925
+     "start": 27.143,
+     "end": 27.263
     },
     {
      "text": "are",
-     "start": 29.925,
-     "end": 30.145
+     "start": 27.263,
+     "end": 27.443
     },
     {
      "text": "all",
-     "start": 30.145,
-     "end": 30.325
+     "start": 27.443,
+     "end": 27.543
     },
     {
      "text": "taking",
-     "start": 30.325,
-     "end": 30.665
+     "start": 27.543,
+     "end": 27.783
     },
     {
      "text": "it.",
-     "start": 30.665,
-     "end": 30.925
+     "start": 27.783,
+     "end": 28.043
     }
    ]
   },
   {
    "id": "t6",
    "text": "So on day one I walked into my math class.",
-   "start": 31.8644375,
-   "end": 33.6044375,
+   "start": 29.090708333333332,
+   "end": 31.390708333333333,
    "words": [
     {
      "text": "So",
-     "start": 31.864,
-     "end": 31.944
+     "start": 29.091,
+     "end": 29.291
     },
     {
      "text": "on",
-     "start": 31.944,
-     "end": 32.044
+     "start": 29.291,
+     "end": 29.571
     },
     {
      "text": "day",
-     "start": 32.044,
-     "end": 32.204
+     "start": 29.571,
+     "end": 29.751
     },
     {
      "text": "one",
-     "start": 32.204,
-     "end": 32.424
+     "start": 29.751,
+     "end": 30.011
     },
     {
      "text": "I",
-     "start": 32.484,
-     "end": 32.584
+     "start": 30.291,
+     "end": 30.371
     },
     {
      "text": "walked",
-     "start": 32.584,
-     "end": 32.764
+     "start": 30.371,
+     "end": 30.571
     },
     {
      "text": "into",
-     "start": 32.764,
-     "end": 33.024
+     "start": 30.571,
+     "end": 30.811
     },
     {
      "text": "my",
-     "start": 33.024,
-     "end": 33.204
+     "start": 30.811,
+     "end": 30.991
     },
     {
      "text": "math",
-     "start": 33.204,
-     "end": 33.404
+     "start": 30.991,
+     "end": 31.151
     },
     {
      "text": "class.",
-     "start": 33.404,
-     "end": 33.604
+     "start": 31.151,
+     "end": 31.391
     }
    ]
   },
   {
    "id": "t7",
    "text": "And I was so happy because finally there were numbers and numbers are basically money right?",
-   "start": 34.40875,
-   "end": 38.668749999999996,
+   "start": 32.33377083333333,
+   "end": 36.27377083333333,
    "words": [
     {
      "text": "And",
-     "start": 34.409,
-     "end": 34.489
+     "start": 32.334,
+     "end": 32.414
     },
     {
      "text": "I",
-     "start": 34.489,
-     "end": 34.569
+     "start": 32.414,
+     "end": 32.494
     },
     {
      "text": "was",
-     "start": 34.569,
-     "end": 34.669
+     "start": 32.494,
+     "end": 32.634
     },
     {
      "text": "so",
-     "start": 34.669,
-     "end": 34.829
+     "start": 32.634,
+     "end": 32.834
     },
     {
      "text": "happy",
-     "start": 34.829,
-     "end": 35.169
+     "start": 32.834,
+     "end": 33.134
     },
     {
      "text": "because",
-     "start": 35.169,
-     "end": 35.549
+     "start": 33.134,
+     "end": 33.414
     },
     {
      "text": "finally",
-     "start": 35.549,
-     "end": 35.909
+     "start": 33.414,
+     "end": 33.754
     },
     {
      "text": "there",
-     "start": 35.909,
-     "end": 36.209
+     "start": 34.074,
+     "end": 34.174
     },
     {
      "text": "were",
-     "start": 36.209,
-     "end": 36.329
+     "start": 34.174,
+     "end": 34.274
     },
     {
      "text": "numbers",
-     "start": 36.329,
-     "end": 36.629
+     "start": 34.274,
+     "end": 34.594
     },
     {
      "text": "and",
-     "start": 37.129,
-     "end": 37.289
+     "start": 34.594,
+     "end": 34.974
     },
     {
      "text": "numbers",
-     "start": 37.289,
-     "end": 37.529
+     "start": 34.974,
+     "end": 35.234
     },
     {
      "text": "are",
-     "start": 37.529,
-     "end": 37.729
+     "start": 35.234,
+     "end": 35.454
     },
     {
      "text": "basically",
-     "start": 37.729,
-     "end": 38.109
+     "start": 35.454,
+     "end": 35.714
     },
     {
      "text": "money",
-     "start": 38.109,
-     "end": 38.389
+     "start": 35.714,
+     "end": 36.034
     },
     {
      "text": "right?",
-     "start": 38.669,
-     "end": 38.669
+     "start": 36.174,
+     "end": 36.274
     }
    ]
   },
   {
    "id": "t8",
    "text": "Well we spent fifty minutes on a train that leaves Chicago at three and not one second on the train that leaves your bank account every month which is called rent.",
-   "start": 39.260104166666665,
-   "end": 46.800104166666664,
+   "start": 36.88729166666667,
+   "end": 43.58729166666667,
    "words": [
     {
      "text": "Well",
-     "start": 39.26,
-     "end": 39.34
+     "start": 36.887,
+     "end": 36.987
     },
     {
      "text": "we",
-     "start": 39.34,
-     "end": 39.44
+     "start": 36.987,
+     "end": 37.107
     },
     {
      "text": "spent",
-     "start": 39.44,
-     "end": 39.66
+     "start": 37.107,
+     "end": 37.287
     },
     {
      "text": "fifty",
-     "start": 39.66,
-     "end": 40.0
+     "start": 37.287,
+     "end": 37.607
     },
     {
      "text": "minutes",
-     "start": 40.0,
-     "end": 40.36
+     "start": 37.607,
+     "end": 37.867
     },
     {
      "text": "on",
-     "start": 40.36,
-     "end": 40.64
+     "start": 37.867,
+     "end": 38.107
     },
     {
      "text": "a",
-     "start": 40.64,
-     "end": 40.76
+     "start": 38.107,
+     "end": 38.167
     },
     {
      "text": "train",
-     "start": 40.76,
-     "end": 40.98
+     "start": 38.167,
+     "end": 38.407
     },
     {
      "text": "that",
-     "start": 40.98,
-     "end": 41.24
+     "start": 38.407,
+     "end": 38.587
     },
     {
      "text": "leaves",
-     "start": 41.24,
-     "end": 41.42
+     "start": 38.587,
+     "end": 38.727
     },
     {
      "text": "Chicago",
-     "start": 41.42,
-     "end": 41.8
+     "start": 38.727,
+     "end": 38.987
     },
     {
      "text": "at",
-     "start": 41.8,
-     "end": 42.22
+     "start": 38.987,
+     "end": 39.367
     },
     {
      "text": "three",
-     "start": 42.22,
-     "end": 42.5
+     "start": 39.367,
+     "end": 39.547
     },
     {
      "text": "and",
-     "start": 42.5,
-     "end": 42.9
+     "start": 40.087,
+     "end": 40.167
     },
     {
      "text": "not",
-     "start": 42.9,
-     "end": 43.06
+     "start": 40.167,
+     "end": 40.307
     },
     {
      "text": "one",
-     "start": 43.06,
-     "end": 43.26
+     "start": 40.307,
+     "end": 40.487
     },
     {
      "text": "second",
-     "start": 43.26,
-     "end": 43.56
+     "start": 40.487,
+     "end": 40.847
     },
     {
      "text": "on",
-     "start": 43.56,
-     "end": 43.8
+     "start": 40.847,
+     "end": 41.027
     },
     {
      "text": "the",
-     "start": 43.8,
-     "end": 43.9
+     "start": 41.027,
+     "end": 41.107
     },
     {
      "text": "train",
-     "start": 43.9,
-     "end": 44.1
+     "start": 41.107,
+     "end": 41.327
     },
     {
      "text": "that",
-     "start": 44.1,
-     "end": 44.34
+     "start": 41.327,
+     "end": 41.547
     },
     {
      "text": "leaves",
-     "start": 44.34,
-     "end": 44.48
+     "start": 41.547,
+     "end": 41.687
     },
     {
      "text": "your",
-     "start": 44.48,
-     "end": 44.68
+     "start": 41.687,
+     "end": 41.867
     },
     {
      "text": "bank",
-     "start": 44.68,
-     "end": 44.86
+     "start": 41.867,
+     "end": 42.007
     },
     {
      "text": "account",
-     "start": 44.86,
-     "end": 45.12
+     "start": 42.007,
+     "end": 42.327
     },
     {
      "text": "every",
-     "start": 45.12,
-     "end": 45.52
+     "start": 42.327,
+     "end": 42.487
     },
     {
      "text": "month",
-     "start": 45.52,
-     "end": 45.82
+     "start": 42.487,
+     "end": 42.787
     },
     {
      "text": "which",
-     "start": 46.1,
-     "end": 46.16
+     "start": 43.027,
+     "end": 43.047
     },
     {
      "text": "is",
-     "start": 46.16,
-     "end": 46.28
+     "start": 43.047,
+     "end": 43.187
     },
     {
      "text": "called",
-     "start": 46.28,
-     "end": 46.54
+     "start": 43.187,
+     "end": 43.347
     },
     {
      "text": "rent.",
-     "start": 46.54,
-     "end": 46.8
+     "start": 43.347,
+     "end": 43.587
     }
    ]
   },
   {
    "id": "t9",
    "text": "So I searched the whole textbook for the word interest and in four hundred pages there was zero interest which is also exactly how much I had left by page ten.",
-   "start": 47.346666666666664,
-   "end": 55.79966666666667,
+   "start": 44.2591875,
+   "end": 51.3971875,
    "words": [
     {
      "text": "So",
-     "start": 47.347,
-     "end": 47.49
+     "start": 44.259,
+     "end": 44.38
     },
     {
      "text": "I",
-     "start": 47.506,
-     "end": 47.601
+     "start": 44.393,
+     "end": 44.474
     },
     {
      "text": "searched",
-     "start": 47.612,
-     "end": 48.041
+     "start": 44.483,
+     "end": 44.845
     },
     {
      "text": "the",
-     "start": 48.089,
-     "end": 48.28
+     "start": 44.885,
+     "end": 45.047
     },
     {
      "text": "whole",
-     "start": 48.301,
-     "end": 48.587
+     "start": 45.065,
+     "end": 45.306
     },
     {
      "text": "textbook",
-     "start": 48.619,
-     "end": 49.048
+     "start": 45.333,
+     "end": 45.695
     },
     {
      "text": "for",
-     "start": 49.096,
-     "end": 49.287
+     "start": 45.736,
+     "end": 45.897
     },
     {
      "text": "the",
-     "start": 49.308,
-     "end": 49.499
+     "start": 45.915,
+     "end": 46.076
     },
     {
      "text": "word",
-     "start": 49.52,
-     "end": 49.759
+     "start": 46.094,
+     "end": 46.295
     },
     {
      "text": "interest",
-     "start": 49.785,
-     "end": 50.214
+     "start": 46.317,
+     "end": 46.68
     },
     {
      "text": "and",
-     "start": 50.262,
-     "end": 50.453
+     "start": 46.72,
+     "end": 46.881
     },
     {
      "text": "in",
-     "start": 50.474,
-     "end": 50.617
+     "start": 46.899,
+     "end": 47.02
     },
     {
      "text": "four",
-     "start": 50.633,
-     "end": 50.871
+     "start": 47.033,
+     "end": 47.235
     },
     {
      "text": "hundred",
-     "start": 50.898,
-     "end": 51.28
+     "start": 47.257,
+     "end": 47.579
     },
     {
      "text": "pages",
-     "start": 51.322,
-     "end": 51.608
+     "start": 47.615,
+     "end": 47.857
     },
     {
      "text": "there",
-     "start": 51.64,
-     "end": 51.926
+     "start": 47.884,
+     "end": 48.125
     },
     {
      "text": "was",
-     "start": 51.958,
-     "end": 52.149
+     "start": 48.152,
+     "end": 48.313
     },
     {
      "text": "zero",
-     "start": 52.17,
-     "end": 52.409
+     "start": 48.331,
+     "end": 48.533
     },
     {
      "text": "interest",
-     "start": 52.435,
-     "end": 52.864
+     "start": 48.555,
+     "end": 48.917
     },
     {
      "text": "which",
-     "start": 52.912,
-     "end": 53.198
+     "start": 48.958,
+     "end": 49.199
     },
     {
      "text": "is",
-     "start": 53.23,
-     "end": 53.373
+     "start": 49.226,
+     "end": 49.347
     },
     {
      "text": "also",
-     "start": 53.389,
-     "end": 53.627
+     "start": 49.361,
+     "end": 49.562
     },
     {
      "text": "exactly",
-     "start": 53.654,
-     "end": 54.036
+     "start": 49.584,
+     "end": 49.906
     },
     {
      "text": "how",
-     "start": 54.078,
-     "end": 54.269
+     "start": 49.942,
+     "end": 50.103
     },
     {
      "text": "much",
-     "start": 54.29,
-     "end": 54.528
+     "start": 50.121,
+     "end": 50.323
     },
     {
      "text": "I",
-     "start": 54.555,
-     "end": 54.65
+     "start": 50.345,
+     "end": 50.426
     },
     {
      "text": "had",
-     "start": 54.661,
-     "end": 54.852
+     "start": 50.435,
+     "end": 50.596
     },
     {
      "text": "left",
-     "start": 54.873,
-     "end": 55.111
+     "start": 50.614,
+     "end": 50.815
     },
     {
      "text": "by",
-     "start": 55.138,
-     "end": 55.281
+     "start": 50.837,
+     "end": 50.958
     },
     {
      "text": "page",
-     "start": 55.297,
-     "end": 55.535
+     "start": 50.971,
+     "end": 51.173
     },
     {
      "text": "ten.",
-     "start": 55.562,
-     "end": 55.8
+     "start": 51.195,
+     "end": 51.397
     }
    ]
   },
   {
    "id": "t10",
    "text": "So day one gave me zero money lessons and honestly I already want to drop out.",
-   "start": 56.77372916666667,
-   "end": 60.85372916666667,
+   "start": 52.55520833333333,
+   "end": 56.73520833333333,
    "words": [
     {
      "text": "So",
-     "start": 56.774,
-     "end": 56.854
+     "start": 52.555,
+     "end": 52.675
     },
     {
      "text": "day",
-     "start": 56.854,
-     "end": 56.994
+     "start": 52.675,
+     "end": 52.835
     },
     {
      "text": "one",
-     "start": 56.994,
-     "end": 57.274
+     "start": 52.835,
+     "end": 53.135
     },
     {
      "text": "gave",
-     "start": 57.274,
-     "end": 57.514
+     "start": 53.135,
+     "end": 53.475
     },
     {
      "text": "me",
-     "start": 57.514,
-     "end": 57.714
+     "start": 53.475,
+     "end": 53.675
     },
     {
      "text": "zero",
-     "start": 57.714,
-     "end": 58.054
+     "start": 53.675,
+     "end": 53.975
     },
     {
      "text": "money",
-     "start": 58.054,
-     "end": 58.354
+     "start": 53.975,
+     "end": 54.235
     },
     {
      "text": "lessons",
-     "start": 58.354,
-     "end": 58.734
+     "start": 54.235,
+     "end": 54.575
     },
     {
      "text": "and",
-     "start": 58.734,
-     "end": 59.254
+     "start": 54.575,
+     "end": 54.955
     },
     {
      "text": "honestly",
-     "start": 59.254,
-     "end": 59.674
+     "start": 54.955,
+     "end": 55.255
     },
     {
      "text": "I",
-     "start": 59.674,
-     "end": 60.054
+     "start": 55.255,
+     "end": 55.695
     },
     {
      "text": "already",
-     "start": 60.054,
-     "end": 60.254
+     "start": 55.695,
+     "end": 55.995
     },
     {
      "text": "want",
-     "start": 60.254,
-     "end": 60.414
+     "start": 55.995,
+     "end": 56.255
     },
     {
      "text": "to",
-     "start": 60.414,
-     "end": 60.494
+     "start": 56.255,
+     "end": 56.375
     },
     {
      "text": "drop",
-     "start": 60.494,
-     "end": 60.674
+     "start": 56.375,
+     "end": 56.535
     },
     {
      "text": "out.",
-     "start": 60.674,
-     "end": 60.854
+     "start": 56.535,
+     "end": 56.735
     }
    ]
   }
