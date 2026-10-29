@@ -7,8 +7,9 @@ import {FlyStack, SelfDrawGraph, Shake, ThumbCard, WipePanel} from './kit2';
 // AnimTest (29 Oct 2026): the animated Blender shots (public/anim/shot_<X>.mp4, 24 fps, from blender/anim.py) cut
 // together at 30 fps with the kit2 living graphics and dense SFX — the full look+sound check before a real episode.
 // A money yard 0–2.5 s · kit2 wipe panels + flying cards 2.5–4.5 s · B graph ride 4.5–8 s · C alley 8–12 s · D army 12–15 s
+// · E real-mocap jog on a street 15–18 s
 const S = (sec: number) => Math.round(sec * 30);
-export const ANIMTEST_FRAMES = S(15);
+export const ANIMTEST_FRAMES = S(18);
 
 const Shot: React.FC<{name: string}> = ({name}) => <OffthreadVideo src={staticFile(`anim/shot_${name}.mp4`)} muted style={{width: 1920, height: 1080}} />;
 
@@ -36,6 +37,10 @@ export const AnimTest: React.FC = () => {
     {at: S(12), src: 'thump_low', v: 0.6},
     {at: S(12), src: 'drumroll', v: 0.35},
     {at: S(12.4), src: 'crowd', v: 0.2},
+    ...[0, 1, 2, 3, 4, 5, 6, 7].map((i) => ({at: S(12) + i * 11, src: 'step', v: 0.25})),
+    {at: S(15), src: 'swish', v: 0.5},
+    ...Array.from({length: 11}, (_, i) => ({at: S(15) + i * 8, src: 'step', v: 0.45})),
+    {at: S(16.9), src: 'pop_hi', v: 0.4},
   ];
   return (
     <AbsoluteFill style={{background: '#000'}}>
@@ -66,6 +71,9 @@ export const AnimTest: React.FC = () => {
       </Sequence>
       <Sequence from={S(12)} durationInFrames={S(3)}>
         <Shot name="D" />
+      </Sequence>
+      <Sequence from={S(15)} durationInFrames={S(3)}>
+        <Shot name="E" />
       </Sequence>
       <Sfx cues={cues} />
     </AbsoluteFill>

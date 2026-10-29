@@ -54,9 +54,14 @@ def trim(x, sr):
 def shard(i, n):
     import torch
     import torchaudio as ta
-    from chatterbox.tts import ChatterboxTTS
     from faster_whisper import WhisperModel
-    m = ChatterboxTTS.from_pretrained(device="cpu")
+    engine = spec.get("cb", {}).get("engine", "chatterbox")  # "turbo" = Chatterbox-Turbo (MIT), voice bake-off v2 (29 Oct)
+    if engine == "turbo":
+        from chatterbox.tts_turbo import ChatterboxTurboTTS
+        m = ChatterboxTurboTTS.from_pretrained(device="cpu")
+    else:
+        from chatterbox.tts import ChatterboxTTS
+        m = ChatterboxTTS.from_pretrained(device="cpu")
     wm = WhisperModel("base.en", device="cpu", compute_type="int8")
     cb.mkdir(exist_ok=True)
     for j, b in enumerate(beats):
@@ -68,8 +73,11 @@ def shard(i, n):
             torch.manual_seed(1000 + j * 7 + attempt)
             cbs = spec.get("cb", {})
             ref = cbs.get("ref")  # owner's OWN recorded voice only (STYLE_3D.md §4), never another creator's
-            w = m.generate(b["text"], exaggeration=b.get("exag", cbs.get("exag", 0.5)), cfg_weight=b.get("cfg", cbs.get("cfg", 0.5)),
-                           **({"audio_prompt_path": str(ROOT / ref)} if ref else {}))
+            if engine == "turbo":
+                w = m.generate(b["text"], **({"audio_prompt_path": str(ROOT / ref)} if ref else {}))
+            else:
+                w = m.generate(b["text"], exaggeration=b.get("exag", cbs.get("exag", 0.5)), cfg_weight=b.get("cfg", cbs.get("cfg", 0.5)),
+                               **({"audio_prompt_path": str(ROOT / ref)} if ref else {}))
             tmp = cb / f"{b['id']}_raw.wav"
             ta.save(str(tmp), w, m.sr)
             x, _ = trim(pcm(tmp), SR)
