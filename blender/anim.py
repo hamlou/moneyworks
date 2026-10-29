@@ -283,7 +283,7 @@ if SHOT == "C":
 # ================================================================== D · marching army (crowd of linked copies)
 if SHOT == "D":
     world_hdri("golden", 1.0, 120)
-    ground("grass", 80, 0.4)
+    ground("grass", 80, 3.0)
     light("sun", "SUN", (0, 0, 10), (R(74), 0, R(-140)), energy=2.2, color=(1.0, 0.85, 0.65), angle=R(2))
     soldier = Dave("Soldier")
     soldier.outfit("none")
@@ -314,7 +314,7 @@ if SHOT == "D":
 # ================================================================== E · real mocap jog on a street
 if SHOT == "E":
     world_hdri("city", 1.0, 40)
-    ground("asphalt", 80, 0.35)
+    ground("asphalt", 80, 3.0)
     light("sun", "SUN", (0, 0, 10), (R(55), 0, R(30)), energy=2.0, color=(1.0, 0.94, 0.86), angle=R(2))
     jog, walk = Mocap("02_03", start=1, step=5, frames=80), Mocap("02_01", start=1, step=5, frames=80)
     d = Dave()

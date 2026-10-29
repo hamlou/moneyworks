@@ -76,7 +76,11 @@ def main():
     for mood, cat in (("golden", "sunrise-sunset"), ("day", "skies"), ("night", "night"), ("city", "urban"), ("studio", "studio")):
         try:
             hs = js(f"{API}/assets?t=hdris&c={cat}")
-            best = max(hs, key=lambda k: hs[k].get("download_count", 0))
+            if mood == "city":  # most-downloaded "urban" is a courtyard interior → prefer real streets
+                hs = {k: v for k, v in hs.items() if "outdoor" in v.get("categories", []) and "indoor" not in v.get("categories", [])} or hs
+                best = next((k for k in ["potsdamer_platz", "urban_street_01", "urban_street_04", "urban_street_03", "shanghai_bund", "rooftop_night"] if k in hs), None) or max(hs, key=lambda k: hs[k].get("download_count", 0))
+            else:
+                best = max(hs, key=lambda k: hs[k].get("download_count", 0))
             u = js(f"{API}/files/{best}")["hdri"]["2k"]["hdr"]["url"]
             path = os.path.join(out, "hdri", f"{mood}.hdr")
             save(u, path)

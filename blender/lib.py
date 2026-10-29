@@ -925,7 +925,8 @@ class Mocap:
         right = r0["RightUpLeg"] - r0["LeftUpLeg"]
         right.z = 0
         fwd = Vector((0, 0, 1)).cross(right.normalized())
-        self.yaw = math.atan2(fwd.y, fwd.x) - math.atan2(-1, 0)  # rotate so the actor faces -Y (towards camera)
+        self.yaw = math.atan2(fwd.y, fwd.x) - math.atan2(-1, 0) + math.pi  # face -Y (towards camera); +π: the CMU
+        # BVH "Left*" joints are on the actor's left, so the cross product above points backwards (29 Oct test: hood on the face)
         self.hip0 = r0["Hips"].copy()
 
     def __len__(self):
