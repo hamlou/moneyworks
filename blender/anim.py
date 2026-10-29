@@ -313,7 +313,7 @@ if SHOT == "D":
 
 # ================================================================== E · real mocap jog on a street
 if SHOT == "E":
-    world_hdri("city", 1.0, 40)
+    world_hdri("city", 1.0, 215)  # turned so no brand billboard is in shot (LICENSES.md: no brands)
     ground("asphalt", 80, 3.0)
     light("sun", "SUN", (0, 0, 10), (R(55), 0, R(30)), energy=2.0, color=(1.0, 0.94, 0.86), angle=R(2))
     jog, walk = Mocap("02_03", start=1, step=5, frames=80), Mocap("02_01", start=1, step=5, frames=80)

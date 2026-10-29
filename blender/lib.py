@@ -513,7 +513,7 @@ class Dave:
         self.flash_ins.append(fac)
         bpy.ops.mesh.primitive_uv_sphere_add(radius=0.2, segments=32, ring_count=16)
         self.hood = bpy.context.object
-        self.hood.name, self.hood.scale = "hood", (1.12, 0.7, 0.62)
+        self.hood.name, self.hood.scale = "hood", (1.05, 0.6, 0.5)  # a bunched hood behind the neck (a ball from the side before)
         bpy.ops.object.shade_smooth()
         self.hood.data.materials.append(hood_m)
         into(self.hood, self.coll).parent = self.root
@@ -751,7 +751,7 @@ class Dave:
                 self.arms[s].data.splines[0].points[i].co = (*pt, 1)
             self.hands[s].location = pts[-1]
         self.head.location = up(self.NECK + Vector((0, 0, 0.2)))
-        self.hood.location = up(self.NECK + Vector((0, 0.07, 0.13)))
+        self.hood.location = up(self.NECK + Vector((0, 0.1, 0.03)))
         self.extras["tie"][0].location = up(Vector((0, -0.08, 0.32)))
         hx, hy, hz = P.get("head", (0, 0, 0))
         self.head.rotation_euler = (R(hx + P.get("lean", 0)), R(hy), R(hz))
@@ -975,7 +975,7 @@ def mocap_pose(dave, m, i, base=(0, 0, 0), turn=0.0, root_motion=True):
     out = OUTFITS[getattr(dave, "outfit_name", "hoodie")]
     r = out["torso"][1]
     lean_e = tq.to_euler()
-    dave.hood.location = up(dave.NECK + Vector((0, 0.07, 0.13)))
+    dave.hood.location = up(dave.NECK + Vector((0, 0.1, 0.03)))
     dave.extras["hem"][0].location, dave.extras["hem"][0].rotation_euler = up(Vector((0, 0, 0.03))), lean_e
     dave.extras["hem"][0].scale = (r * 1.12 / 0.14, r * 1.12 / 0.14, 1)
     dave.extras["pocket"][0].location = up(Vector((0, -r * 1.02, 0.13)))

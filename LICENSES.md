@@ -22,6 +22,7 @@ Rule: **every sound, voice, model, texture, motion and font in a video must be o
 - Clips, frames, sounds or UI of the reference creator or any other creator/film/game/TV (the reference uses Pixar/LEGO clips under fair use — we never do).
 - Higgsfield (or any AI generator) output made on a **free/trial plan** — free plans usually do not grant commercial rights; only use it after checking the plan's terms and noting them here.
 - ElevenLabs free tier (non-commercial).
+- Visible brand logos/ads (e.g. a billboard inside an HDRI sky, a product logo on a model): rotate the sky or swap the model so no brand reads on screen.
 
 ## Voice rules (no trouble with likeness or AI policies)
 1. Only the engines' own built-in synthetic voices. **Never clone a real person** (no reference clip of a creator, celebrity, politician or anyone without written consent).
