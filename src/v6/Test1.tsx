@@ -36,7 +36,7 @@ const pick = (f: number, keys: [number, string][]) => {
 
 // ---- home base ---------------------------------------------------------------------------------------------
 // Dave cut-out lower right; instant pose swaps with a 1-frame white silhouette (outline kept), gentle bobble
-const OUTLINE = ['3px 0', '-3px 0', '0 3px', '0 -3px'].map((o) => `drop-shadow(${o} 0 #111)`).join(' ');
+const OUTLINE = ['5px 0', '-5px 0', '0 5px', '0 -5px'].map((o) => `drop-shadow(${o} 0 #111)`).join(' ');
 const Cut: React.FC<{f: number; keys: [number, string][]}> = ({f, keys}) => {
   const name = pick(f, keys);
   const swap = keys.some(([a], i) => i > 0 && f === a);
@@ -44,12 +44,12 @@ const Cut: React.FC<{f: number; keys: [number, string][]}> = ({f, keys}) => {
   return (
     <Img
       src={staticFile(`test1/cut_${name}.png`)}
-      style={{position: 'absolute', right: 40, bottom: -60, height: 900, transformOrigin: '50% 100%', transform: `rotate(${bob}deg)`, filter: swap ? `brightness(0) invert(1) ${OUTLINE}` : `${OUTLINE} drop-shadow(0 20px 30px rgba(0,0,0,0.45))`}}
+      style={{position: 'absolute', right: -40, bottom: 0, height: 1080, transformOrigin: '50% 100%', transform: `rotate(${bob}deg)`, filter: swap ? `brightness(0) invert(1) ${OUTLINE}` : `${OUTLINE} drop-shadow(0 20px 30px rgba(0,0,0,0.45))`}}
     />
   );
 };
 const Wob: React.FC<{f: number; i?: number; children: React.ReactNode}> = ({f, i = 0, children}) => (
-  <div style={{position: 'absolute', inset: 0, transform: `rotate(${Math.sin(f / 23 + i) * 0.6}deg) translateY(${Math.sin(f / 19 + i * 2) * 4}px)`}}>{children}</div>
+  <div style={{position: 'absolute', inset: 0, transformOrigin: '6% 50%', transform: `scale(1.22) rotate(${Math.sin(f / 23 + i) * 0.6}deg) translateY(${Math.sin(f / 19 + i * 2) * 4}px)`}}>{children}</div>
 );
 const Big: React.FC<{children: React.ReactNode; color?: string; size?: number; style?: React.CSSProperties}> = ({children, color = K.white, size = 120, style}) => (
   <div style={{fontFamily: ANTON, fontSize: size, color, lineHeight: 1.05, ...style}}>{children}</div>
@@ -109,7 +109,6 @@ export const Test1: React.FC = () => {
   const t7 = at('t7');
   const t8 = at('t8');
   const rent = at('t8', 'rent');
-  const train = at('t8', 'train');
   const t9 = at('t9');
   const four = at('t9', 'four');
   const zero9 = at('t9', 'zero');
@@ -223,46 +222,43 @@ export const Test1: React.FC = () => {
   } else if (f < t8) {
     // t6 "Day one." chalk board (3D) after a light-leak time skip → t7 maths class cheer (3D)
     scene = <Still name={f < t7 ? 't6_board' : 't7_math'} />;
+  } else if (f < t9) {
+    // t8: the train problem chalked on the board → [fifty] Dave stares at it → [rent] whip to the RENT bill panic
+    const fifty = at('t8', 'fifty');
+    const st = f < fifty ? 't8_board' : f < rent ? 't8_stare' : Math.floor((f - rent) / 2) % 2 ? 't8_rent_b' : 't8_rent';
+    scene = (
+      <>
+        <Smear f={f} at={rent} n={2}>
+          <Still name={st} />
+        </Smear>
+        {f >= fifty && f < rent ? <Big size={110} style={{position: 'absolute', left: 120, top: 100, WebkitTextStroke: '5px #111', transform: `scale(${1.4 - 0.4 * snap(f, fifty, 4)})`}}>50 MINUTES</Big> : null}
+        {f >= rent ? <ComicBurst f={f} at={rent + 2} word="EVERY MONTH" x={470} y={250} rot={-6} /> : null}
+      </>
+    );
+  } else if (f < four) {
+    // t9 "I searched the whole textbook for the word interest" — hunched over the book (3D), search bar types on top
+    scene = (
+      <>
+        <Still name="t9_search" />
+        <div style={{position: 'absolute', left: 140, top: 90, background: '#23252bee', borderRadius: 50, padding: '22px 44px', fontFamily: UI, fontSize: 64, color: '#fff', boxShadow: '0 20px 50px rgba(0,0,0,0.5)', transform: `scale(${0.6 + 0.4 * snap(f, t9 + 4, 6)})`, transformOrigin: 'left'}}>
+          search: {'interest'.slice(0, Math.max(0, Math.floor((f - t9 - 10) / 3)))}
+          <span style={{opacity: Math.floor(f / 8) % 2}}>|</span>
+        </div>
+      </>
+    );
   } else if (f < which) {
-    // t8 + first half of t9: home base, word problem vs rent, then the textbook search
-    const keys: [number, string][] = [[t8, 'count_think'], [rent, 'panic_shock'], [t9, 'point_l_grin'], [zero9, 'idle_dead']];
+    const keys: [number, string][] = [[four, 'count_think'], [zero9, 'idle_dead']];
     scene = (
       <>
         <HomeBase f={f} />
-        {f < rent ? (
-          <Wob f={f}>
-            <UICard f={f} at={t8 + 2} x={170} y={230} w={960} h={560}>
-              <div style={{padding: 50, background: '#f3efe4', height: '100%'}}>
-                <div style={{fontFamily: UI, fontWeight: 700, fontSize: 40, color: '#8a2a20'}}>PROBLEM 7</div>
-                <div style={{fontFamily: UI, fontSize: 50, color: '#222', marginTop: 16, lineHeight: 1.25}}>A train leaves Chicago at 3:00 PM going 60 mph. When does it arrive?</div>
-                <div style={{fontFamily: ANTON, fontSize: 70, color: '#8a2a20', marginTop: 30, opacity: f >= train + 20 ? 1 : 0}}>50 MINUTES</div>
-              </div>
-            </UICard>
-          </Wob>
-        ) : f < t9 ? (
-          <Wob f={f} i={1}>
-            <UICard f={f} at={rent} x={170} y={260} w={960} h={500} push={rent + 8} zoom={1.2}>
-              <div style={{padding: 50}}>
-                <Small color={K.white} size={44}>your bank account · every month</Small>
-                <Big size={170} color={K.red}>− RENT</Big>
-                <Small size={40}>taught in class: 0 seconds</Small>
-              </div>
-            </UICard>
-          </Wob>
-        ) : (
-          <Wob f={f} i={2}>
-            <UICard f={f} at={t9 + 2} x={170} y={200} w={960} h={640}>
-              <div style={{padding: 50}}>
-                <div style={{background: '#2e3036', borderRadius: 40, padding: '22px 36px', fontFamily: UI, fontSize: 54, color: '#fff'}}>
-                  search: {'interest'.slice(0, Math.max(0, Math.floor((f - t9 - 8) / 3)))}
-                  <span style={{opacity: Math.floor(f / 8) % 2}}>|</span>
-                </div>
-                {f >= four ? <Counter f={f} at={four} to={400} suffix=" PAGES" size={130} style={{marginTop: 40}} /> : null}
-                {f >= zero9 ? <Big size={120} color={K.red} style={{marginTop: 10}}>0 RESULTS</Big> : null}
-              </div>
-            </UICard>
-          </Wob>
-        )}
+        <Wob f={f} i={2}>
+          <UICard f={f} at={four} x={170} y={260} w={860} h={520} push={zero9} zoom={1.15}>
+            <div style={{padding: 60}}>
+              <Counter f={f} at={four} to={400} suffix=" PAGES" size={150} />
+              {f >= zero9 ? <Big size={150} color={K.red} style={{marginTop: 10, transform: `scale(${1.5 - 0.5 * snap(f, zero9, 4)})`, transformOrigin: 'left'}}>0 INTEREST</Big> : null}
+            </div>
+          </UICard>
+        </Wob>
         <Cut f={f} keys={keys} />
       </>
     );
@@ -295,8 +291,11 @@ export const Test1: React.FC = () => {
     {at: t6 - 2, src: 'whoosh', v: 0.45},
     {at: t6 + 2, src: 'scribble', v: 0.5},
     {at: t7, src: 'pop', v: 0.4},
-    {at: rent, src: 'buzz', v: 0.45},
-    {at: t9 + 8, src: 'key', v: 0.35},
+    {at: rent, src: 'whoosh', v: 0.5},
+    {at: rent + 2, src: 'buzz', v: 0.45},
+    {at: at('t8', 'fifty'), src: 'pop', v: 0.4},
+    {at: t9 + 10, src: 'key', v: 0.35},
+    {at: four, src: 'tick', v: 0.4},
     {at: zero9, src: 'trombone', v: 0.35},
     {at: which + 10, src: 'dream', v: 0.3},
     {at: t10, src: 'stamp', v: 0.5},
