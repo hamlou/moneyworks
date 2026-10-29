@@ -445,3 +445,40 @@ Line: "school spent 12 years teaching me triangles and zero minutes teaching me 
 - **Higgsfield** (Nano Banana image 2 cr + Seedance 1.5 i2v 4.8 cr): film-quality light/materials/expression, Dave on-model. BUT 4 s only, continuous floaty motion (no burst→hold, no snaps, no punch-in), camera reframed by itself, free plan blocks Seedance 2 / Grok / Kling video ("job_minimum_basic_plan_required"). 3.2 credits left.
 - **Free kit** (`src/v6/Classroom.tsx` TaxShot, CI render): the edit grammar is exact (hold → face snap → 2-frame white-silhouette punch-in → smear → comic burst), unlimited, re-editable per line. v2 added window key light + real shadows, vignette, sweat drop, tighter framing. Still behind on materials, hand acting (paper hides body) and set detail.
 - **Verdict / use:** AI clips = rare hero/hook plates only (and stills as backgrounds for static shots); every acting shot = free kit. Next upgrades to close the look gap: CC0 GLB props + HDRI, Dave hands that grip props, AO/bloom post pass, depth of field on close-ups.
+
+---
+
+## 13. Gap analysis vs the reference (29 Oct 2026, "The YouTube Killer You Haven't Heard Of", 6YakH_jGjUs, first 36 s every 1/8 s, vs our test1 v3)
+
+**Measured:** his first 12 s = **72 % of frames moving** (mean motion 4.2); ours = **14 %** (1.3). Over 36 s: his 54 %, ours 10 %. We have MORE cuts (30 vs 7 hard changes) but almost nothing moves inside them — we are a slideshow of good stills, he is an animation. This is gap #1.
+
+What he does in the first 36 s (the hook):
+| t | shot | what moves |
+|---|---|---|
+| 0.0 | the TOPIC as a character: a red bodybuilder with a YouTube-logo head standing in a mansion yard full of money bags + sports cars | idle flex, camera slowly pushes |
+| 1.5 | a giant fist punches into frame from the foreground (motion-blurred), the character gets hit | 6-frame action |
+| 2.4 | hard cut to white lined paper: a growth graph DRAWS itself while the tiny character drives a toy car up the line | line + car animated every frame for 3 s |
+| 5.4 | camera zooms onto the car, character turns its head | push-in |
+| 7.1 | volcano hellscape, an ARMY of soldiers marching, each carrying a creator's thumbnail card | marching mocap crowd, flexing giant, 8.5 s continuous |
+| 15.6 | whip-zoom with motion blur → close-up of the giant roaring in fire | whip + flames |
+| 17.5 | white paper → purple panel wipes in from the left (Twitch), then a green one (Rumble); host lower-right points; thumbnails fly in with motion blur and land in stacks | wipes + flying cards |
+| 24.0 | dark graffiti alley, a black SILHOUETTE; light sweeps across and reveals the Odysee character (white body, pink head) | light reveal over 0.75 s |
+| 27.0 | logo + red arrow pop next to it, a tweet card slides in | pops |
+| 32.5 | full-screen YouTube UI scroll | scroll |
+| 35.5 | host leaning out of a box at a ringside | idle |
+
+### What we miss (in order of impact)
+1. **Real animation, not held stills.** Acting shots must be rendered as moving frames: characters walk/flex/drive/turn, cameras push and whip, objects fly. Pose-state stills are allowed ONLY for home base and for deliberate holds. Target ≥ 50 % moving frames in the first 12 s.
+2. **Concepts become characters.** He personifies the topic (YouTube = muscle giant, Odysee = white figure, creators = an army carrying their cards). We only had Dave + props. Every video needs 1–3 "concept characters" built from the kit (box/logo head on a body, crowds of copies).
+3. **A new WORLD every 5–8 s, matched to the sentence** (mansion of money → graph paper → volcano hell → alley at night → UI). We used one classroom for a minute.
+4. **Frame 0 = the most spectacular image + motion.** Ours opened on a static wide still for 3.4 s with a small Dave (the exact 5–10 s drop-off the owner measured). His opening shows the subject huge, in a rich world, already moving, with an action at 1.5 s and a new world at 2.4 s.
+5. **Camera language:** slow push-ins, whip-zooms with motion blur, foreground objects (the fist), low hero angles, close-ups for emotion. Ours: locked cameras only.
+6. **Dramatic lighting per mood:** fire orange, night alley, silhouette → light-sweep reveals. Ours: flat daylight.
+7. **Living diagrams:** graphs that draw themselves with a character riding the line, panels that wipe in, cards that fly in with blur and land in stacks.
+8. **Scale:** the subject fills 40–80 % of the frame in most shots; our wide shots kept Dave at ~10 %.
+
+### Build plan to close it (before the next video)
+- `blender/anim.py`: keyframed animation on the Dave rig and concept-character rigs (walk cycle, flex, point, drive, turn-head, fall), crowd duplicator with offsets, camera moves (push, whip with motion blur, orbit), light-sweep reveals. Render real frames at 24 fps, 1080p, Cycles 12–16 samples + denoise, split over up to 20 parallel GitHub jobs (~40–60 s per frame each).
+- `blender/worlds.py`: a library of quick worlds (graph-paper void, money mansion yard, volcano/fire, night alley, city street, studio void with HDRI) — CC0 Poly Haven HDRIs + models.
+- Remotion: wipe panels, flying-card stacks with motion blur, self-drawing graph line.
+- Hook template: 0.0 s subject huge + moving in a rich world · 1.5 s action hit · 2.5 s new world · ≥ 4 worlds in the first 15 s · ≥ 70 % moving frames in the first 10 s.
