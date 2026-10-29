@@ -13,8 +13,8 @@ type W = {text: string; start: number; end: number};
 type Beat = {id: string; start: number; end: number; words: W[]};
 const beats = (V as {beats: Beat[]}).beats;
 const B: Record<string, Beat> = Object.fromEntries(beats.map((b) => [b.id, b]));
-// the voice file in public/test1 is slowed to 0.87× with pitch kept (Chatterbox reads ~210 wpm; the reference ~190)
-const STRETCH = 1 / 0.87;
+// the voice file in public/test1 is slowed to 0.82× with pitch kept (Chatterbox reads ~233 wpm on long sentences; the reference ~190)
+const STRETCH = 1 / 0.82;
 const fr = (t: number) => Math.round(t * STRETCH * FPS);
 const norm = (s: string) => s.toLowerCase().replace(/[^a-z0-9']/g, '');
 // frame where `word` (n-th time) is spoken in beat `id`; no word → beat start
@@ -97,6 +97,7 @@ export const Test1: React.FC = () => {
   const taxes = at('t1', 'taxes');
   const t2 = at('t2');
   const dog = at('t2', 'dog');
+  const died = at('t2', 'died');
   const t3 = at('t3');
   const back = at('t3', 'went');
   const t4 = at('t4');
@@ -105,6 +106,7 @@ export const Test1: React.FC = () => {
   const t5 = at('t5');
   const dont = at('t5', "don't");
   const you5 = at('t5', 'you');
+  const writing = at('t5', 'writing');
   const t6 = at('t6');
   const t7 = at('t7');
   const t8 = at('t8');
@@ -132,7 +134,7 @@ export const Test1: React.FC = () => {
     );
   } else if (f < back) {
     // t2 + first half of t3: home base, counters
-    const keys: [number, string][] = [[t2, 'count_think'], [dog, 'shrug_neutral'], [t3, 'shrug_neutral']];
+    const keys: [number, string][] = [[t2, 'count_think'], [dog, 'shrug_neutral'], [died, 'idle_dead'], [t3, 'point_l_determined']];
     scene = (
       <>
         <HomeBase f={f} />
@@ -140,9 +142,19 @@ export const Test1: React.FC = () => {
           <Wob f={f}>
             <NumCard f={f} at={t2 + 2} label="YEARS IN SCHOOL" to={12} color={K.yellow} x={700} y={480} />
           </Wob>
-        ) : f < t3 ? (
+        ) : f < died ? (
           <Wob f={f} i={1}>
             <NumCard f={f} at={dog} label="AVERAGE DOG LIFE" to={12.5} dec={1} suffix=" YRS" color={K.blue} sub="(yes I checked)" x={700} y={480} />
+          </Wob>
+        ) : f < t3 ? (
+          <Wob f={f} i={3}>
+            <UICard f={f} at={died} x={300} y={250} w={700} h={560}>
+              <div style={{height: '100%', background: '#3a3d44', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center'}}>
+                <Big size={150} color="#d8d8d8">R.I.P.</Big>
+                <Small color={K.white} size={48}>good boy</Small>
+                <Small size={34}>died while I learned triangles</Small>
+              </div>
+            </UICard>
           </Wob>
         ) : (
           <Wob f={f} i={2}>
@@ -190,7 +202,7 @@ export const Test1: React.FC = () => {
     );
   } else if (f < t6) {
     // t5: win card → punch to "MONEY 101 taught by Dave" with the viewer as the student
-    const keys: [number, string][] = [[t5, 'cheer_grin'], [dont, 'point_you_smug']];
+    const keys: [number, string][] = [[t5, 'cheer_grin'], [dont, 'shrug_neutral'], [writing, 'point_l_grin_professor'], [you5, 'point_you_smug_professor']];
     scene = (
       <>
         <HomeBase f={f} />
@@ -276,30 +288,61 @@ export const Test1: React.FC = () => {
     scene = <Still name="t10_slump" />;
   }
 
+  // dense SFX (owner 29 Oct): every pop, swap, cut, counter and prop gets a sound
+  const swaps = [t2, dog, died, t3, sitting, t5, dont, writing, you5, four, zero9];
   const cues: Cue[] = [
-    {at: t1 + 12, src: 'pop', v: 0.35},
-    {at: tri, src: 'whoosh_s', v: 0.4},
-    {at: taxes, src: 'whoosh', v: 0.5},
+    {at: 0, src: 'thump_low', v: 0.6},
+    {at: t1 + 12, src: 'pop_hi', v: 0.4},
+    {at: t1 + 12, src: 'boing', v: 0.25},
+    {at: tri, src: 'snap_white', v: 0.6},
+    {at: tri + 1, src: 'swish_fast', v: 0.4},
+    {at: zero, src: 'stamp', v: 0.45},
+    {at: taxes, src: 'swish', v: 0.6},
     {at: taxes + 3, src: 'boom', v: 0.55},
-    {at: t2 + 2, src: 'tick', v: 0.4},
-    {at: dog, src: 'pop2', v: 0.4},
-    {at: back + 6, src: 'thud', v: 0.6},
+    {at: taxes + 3, src: 'crowd', v: 0.12},
+    {at: t2, src: 'slide', v: 0.5},
+    {at: t2 + 4, src: 'count_roll', v: 0.55},
+    {at: dog, src: 'slide', v: 0.5},
+    {at: dog + 4, src: 'count_roll', v: 0.55},
+    {at: died, src: 'trombone', v: 0.35},
+    {at: t3, src: 'slide', v: 0.45},
+    {at: back, src: 'thump_low', v: 0.7},
+    {at: back + 6, src: 'snap_white', v: 0.6},
+    {at: back + 7, src: 'thud', v: 0.6},
     {at: at('t4', 'thirty') - 1, src: 'stamp', v: 0.6},
-    {at: money4, src: 'cash', v: 0.5},
-    {at: t5 + 2, src: 'ding', v: 0.4},
-    {at: you5, src: 'stamp', v: 0.5},
-    {at: t6 - 2, src: 'whoosh', v: 0.45},
-    {at: t6 + 2, src: 'scribble', v: 0.5},
-    {at: t7, src: 'pop', v: 0.4},
-    {at: rent, src: 'whoosh', v: 0.5},
-    {at: rent + 2, src: 'buzz', v: 0.45},
-    {at: at('t8', 'fifty'), src: 'pop', v: 0.4},
-    {at: t9 + 10, src: 'key', v: 0.35},
-    {at: four, src: 'tick', v: 0.4},
-    {at: zero9, src: 'trombone', v: 0.35},
-    {at: which + 10, src: 'dream', v: 0.3},
+    {at: at('t4', 'thirty') + 1, src: 'boom', v: 0.4},
+    {at: sitting, src: 'slide', v: 0.5},
+    ...CLASSES.map((_, i) => ({at: sitting + Math.max(6, Math.floor((money4 - sitting) / (CLASSES.length + 1))) * (i + 1), src: 'marker', v: 0.35})),
+    {at: money4, src: 'cash', v: 0.55},
+    {at: money4, src: 'ding', v: 0.35},
+    {at: t5 + 2, src: 'pop_hi', v: 0.45},
+    {at: t5 + 4, src: 'sting', v: 0.35},
+    {at: dont + 1, src: 'slide', v: 0.5},
+    {at: writing, src: 'poof', v: 0.5},
+    {at: you5, src: 'stamp', v: 0.55},
+    {at: t6 - 4, src: 'riser_up', v: 0.35},
+    {at: t6 - 2, src: 'swish', v: 0.6},
+    {at: t6 + 2, src: 'chalk', v: 0.6},
+    {at: t7, src: 'thump_low', v: 0.6},
+    {at: t7 + 2, src: 'crowd', v: 0.2},
+    {at: t8, src: 'chalk', v: 0.5},
+    {at: at('t8', 'fifty'), src: 'snap_white', v: 0.5},
+    {at: at('t8', 'fifty'), src: 'tick', v: 0.4},
+    {at: rent, src: 'swish', v: 0.6},
+    {at: rent + 2, src: 'boom', v: 0.45},
+    {at: rent + 2, src: 'buzz', v: 0.4},
+    {at: t9, src: 'pageflip', v: 0.6},
+    {at: t9 + 6, src: 'pageflip', v: 0.5},
+    ...Array.from({length: 8}, (_, i) => ({at: t9 + 10 + i * 3, src: i % 2 ? 'key2' : 'key', v: 0.35})),
+    {at: four, src: 'slide', v: 0.5},
+    {at: four, src: 'count_roll', v: 0.6},
+    {at: zero9, src: 'trombone', v: 0.4},
+    {at: which + 10, src: 'dream', v: 0.35},
     {at: t10, src: 'stamp', v: 0.5},
-    {at: already, src: 'thud', v: 0.5},
+    {at: t10 + 14, src: 'marker', v: 0.4},
+    {at: t10 + 28, src: 'boom', v: 0.4},
+    {at: already, src: 'thud', v: 0.6},
+    ...swaps.map((a) => ({at: a, src: 'snap_white', v: 0.35})),
   ];
   return (
     <AbsoluteFill style={{background: '#000'}}>
