@@ -339,3 +339,78 @@ def build_live():
 
 
 build_live()
+
+
+# ---- ea1 "What if Abdul El-Sayed became president" (29 Oct): office + props from the script
+def us_flag():
+    W, H = 1900, 1000
+    im = Image.new("RGB", (W, H), (255, 255, 255))
+    d = ImageDraw.Draw(im)
+    for i in range(13):
+        if i % 2 == 0:
+            d.rectangle([0, i * H / 13, W, (i + 1) * H / 13], fill=(178, 34, 52))
+    d.rectangle([0, 0, W * 0.4, H * 7 / 13], fill=(60, 59, 110))
+    for r in range(9):
+        for c in range(11 if r % 2 == 0 else 10):
+            x = (c + (0.5 if r % 2 else 0) + 0.5) * W * 0.4 / 11.5
+            y = (r + 0.5) * H * 7 / 13 / 9
+            d.ellipse([x - 14, y - 14, x + 14, y + 14], fill=(255, 255, 255))
+    im.save(os.path.join(OUT, "us_flag.png"))
+
+
+def egypt_postcard():
+    im = Image.new("RGB", (900, 600), (240, 226, 196))
+    d = ImageDraw.Draw(im)
+    d.rectangle([0, 0, 900, 600], outline=(120, 90, 50), width=16)
+    d.polygon([(120, 470), (330, 170), (540, 470)], fill=(214, 170, 90), outline=(140, 100, 40))
+    d.polygon([(420, 470), (580, 250), (740, 470)], fill=(200, 155, 80), outline=(140, 100, 40))
+    d.ellipse([650, 70, 780, 200], fill=(250, 200, 90))
+    from PIL import ImageFont
+    try:
+        f = ImageFont.truetype("arialbd.ttf", 64)
+    except OSError:
+        f = ImageFont.load_default()
+    d.text((60, 500), "ALEXANDRIA · EGYPT", font=f, fill=(90, 60, 30))
+    for i, col in enumerate([(206, 17, 38), (255, 255, 255), (0, 0, 0)]):
+        d.rectangle([740, 470 + i * 30, 860, 500 + i * 30], fill=col)
+    im.save(os.path.join(OUT, "egypt_postcard.png"))
+
+
+def m4a_paper():
+    im = Image.new("RGB", (768, 1000), (246, 242, 232))
+    d = ImageDraw.Draw(im)
+    from PIL import ImageFont
+    try:
+        f, g = ImageFont.truetype("arialbd.ttf", 72), ImageFont.truetype("arial.ttf", 40)
+    except OSError:
+        f = g = ImageFont.load_default()
+    d.text((70, 70), "MEDICARE", font=f, fill=(25, 45, 110))
+    d.text((70, 150), "FOR ALL", font=f, fill=(25, 45, 110))
+    d.line([(70, 250), (700, 250)], fill=(25, 45, 110), width=6)
+    r = random.Random(4)
+    for i in range(11):
+        d.rectangle([70, 300 + i * 46, 70 + r.randint(380, 620), 312 + i * 46], fill=(160, 156, 146))
+    d.line([(70, 900), (420, 900)], fill=(30, 30, 30), width=4)
+    d.text((70, 910), "signature", font=g, fill=(120, 120, 120))
+    im.save(os.path.join(OUT, "m4a_paper.png"))
+
+
+def insurance_head():
+    im = Image.new("RGB", (512, 512), (30, 80, 160))
+    d = ImageDraw.Draw(im)
+    d.polygon([(256, 70), (390, 120), (380, 280), (256, 380), (132, 280), (122, 120)], fill=(240, 240, 245), outline=(10, 30, 80))
+    d.line([(200, 220), (245, 270), (320, 170)], fill=(30, 80, 160), width=22)
+    from PIL import ImageFont
+    try:
+        f = ImageFont.truetype("arialbd.ttf", 62)
+    except OSError:
+        f = ImageFont.load_default()
+    w = d.textlength("INSURANCE", font=f)
+    d.text(((512 - w) / 2, 400), "INSURANCE", font=f, fill=(255, 255, 255))
+    im.save(os.path.join(OUT, "logo_insurance.png"))
+
+
+us_flag()
+egypt_postcard()
+m4a_paper()
+insurance_head()

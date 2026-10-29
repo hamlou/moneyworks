@@ -1,0 +1,164 @@
+{
+ "note": "ea1 sound plan (STYLE_3D §0.12): each sound is cued by its line/word in src/v6/Ea1.tsx",
+ "sounds": [
+  {
+   "name": "door",
+   "recipe": "impact",
+   "params": {
+    "weight": 0.5,
+    "metal": 0.2
+   },
+   "cue": "h1 frame 0: Dave enters the office"
+  },
+  {
+   "name": "steps",
+   "recipe": "steps",
+   "params": {
+    "n": 6,
+    "rate": 2.2,
+    "surface": "hard"
+   },
+   "cue": "h1 walk in"
+  },
+  {
+   "name": "heart",
+   "recipe": "heartbeat",
+   "params": {
+    "n": 2,
+    "bpm": 80
+   },
+   "cue": "h1 'doctor'"
+  },
+  {
+   "name": "chair_whoosh",
+   "recipe": "whoosh",
+   "params": {
+    "dur": 0.4
+   },
+   "cue": "h1 'most powerful' — whip to the chair"
+  },
+  {
+   "name": "photo_slide",
+   "recipe": "slide",
+   "params": {
+    "dur": 0.3
+   },
+   "cue": "h2 the real photo card slides in"
+  },
+  {
+   "name": "gavel",
+   "recipe": "impact",
+   "params": {
+    "weight": 0.85
+   },
+   "cue": "h3 'Constitution'"
+  },
+  {
+   "name": "check1",
+   "recipe": "ding",
+   "params": {
+    "pitch": 1.0
+   },
+   "cue": "h3 'born an American' ✓"
+  },
+  {
+   "name": "check2",
+   "recipe": "ding",
+   "params": {
+    "pitch": 1.25
+   },
+   "cue": "h3 'thirty five' ✓"
+  },
+  {
+   "name": "scribble",
+   "recipe": "pencil",
+   "params": {
+    "dur": 1.2
+   },
+   "cue": "h4 'sign' — pen on the paper"
+  },
+  {
+   "name": "deflate",
+   "recipe": "drop",
+   "params": {
+    "dur": 0.9
+   },
+   "cue": "h5 'unnecessary' — the insurance giant slumps"
+  },
+  {
+   "name": "stamp_un",
+   "recipe": "stamp",
+   "cue": "h5 UNNECESSARY stamp"
+  },
+  {
+   "name": "cash_rain",
+   "recipe": "coin",
+   "params": {
+    "n": 14
+   },
+   "cue": "h6 'thirty three million dollars'"
+  },
+  {
+   "name": "roll33",
+   "recipe": "tick_roll",
+   "params": {
+    "dur": 1.4
+   },
+   "cue": "h6 $33,000,000 counter"
+  },
+  {
+   "name": "vote_tick",
+   "recipe": "tick_roll",
+   "params": {
+    "dur": 0.8
+   },
+   "cue": "h6 48.4 vs 47.6 bars"
+  },
+  {
+   "name": "notif",
+   "recipe": "phone",
+   "params": {
+    "dur": 0.5
+   },
+   "cue": "h7 the Truth Social post card pops"
+  },
+  {
+   "name": "name_glitch",
+   "recipe": "glitch",
+   "params": {
+    "dur": 0.35
+   },
+   "cue": "h7 'Mohammed'"
+  },
+  {
+   "name": "reply_pop",
+   "recipe": "pop",
+   "params": {
+    "pitch": 1.2
+   },
+   "cue": "h8 his reply card"
+  },
+  {
+   "name": "claim_buzz",
+   "recipe": "buzz",
+   "params": {
+    "dur": 0.4,
+    "pitch": 140
+   },
+   "cue": "h9 the claim card"
+  },
+  {
+   "name": "no_evidence",
+   "recipe": "stamp",
+   "cue": "h9 'no evidence' stamp"
+  },
+  {
+   "name": "end_riser",
+   "recipe": "riser",
+   "params": {
+    "dur": 2.2
+   },
+   "cue": "h10 under the open question"
+  }
+ ]
+}
