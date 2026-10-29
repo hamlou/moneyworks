@@ -327,12 +327,31 @@ POSES = {
 }
 
 
-def flashable(name, rgb, rough=0.6, coat=0.0):
-    """material that can turn into the reference's flat white silhouette (mix factor 1 = white emission)"""
+def flashable(name, rgb, rough=0.6, coat=0.0, fabric=False):
+    """material that can turn into the reference's flat white silhouette (mix factor 1 = white emission).
+    fabric=True: knit bump + sheen so clothes read as cloth, not paint (owner 29 Oct)"""
     m, n, l, p = nodes_mat(name)
     p.inputs["Base Color"].default_value = (*rgb, 1)
     p.inputs["Roughness"].default_value = rough
     p.inputs["Coat Weight"].default_value = coat
+    if fabric:
+        p.inputs["Sheen Weight"].default_value = 0.8
+        p.inputs["Sheen Roughness"].default_value = 0.6
+        nz = n.new("ShaderNodeTexNoise")
+        nz.inputs["Scale"].default_value = 900
+        nz.inputs["Detail"].default_value = 2
+        wv = n.new("ShaderNodeTexWave")
+        wv.inputs["Scale"].default_value = 260
+        wv.inputs["Distortion"].default_value = 3
+        mixc = n.new("ShaderNodeMath")
+        mixc.operation = "ADD"
+        l.new(nz.outputs["Fac"], mixc.inputs[0])
+        l.new(wv.outputs["Fac"], mixc.inputs[1])
+        bp = n.new("ShaderNodeBump")
+        bp.inputs["Strength"].default_value = 0.12
+        bp.inputs["Distance"].default_value = 0.002
+        l.new(mixc.outputs["Value"], bp.inputs["Height"])
+        l.new(bp.outputs["Normal"], p.inputs["Normal"])
     em = n.new("ShaderNodeEmission")
     em.inputs["Strength"].default_value = 1.6
     mx = n.new("ShaderNodeMixShader")
@@ -345,10 +364,10 @@ def flashable(name, rgb, rough=0.6, coat=0.0):
 # outfits: (torso colour, torso radius, sleeve colour, sleeve radius, pants colour, pants radius, extras)
 # default (owner 29 Oct): red OVERSIZED hoodie + black pants; costume swaps per scene role
 OUTFITS = {
-    "hoodie": dict(torso=((0.62, 0.04, 0.05), 0.1), arms=((0.62, 0.04, 0.05), 0.056), legs=((0.03, 0.03, 0.035), 0.045), hood=True),
-    "professor": dict(torso=((0.33, 0.2, 0.11), 0.072), arms=((0.33, 0.2, 0.11), 0.045), legs=((0.16, 0.16, 0.18), 0.042), glasses=True, cap=True),
-    "doctor": dict(torso=((0.92, 0.93, 0.95), 0.08), arms=((0.92, 0.93, 0.95), 0.047), legs=((0.12, 0.3, 0.42), 0.042), mirror=True),
-    "suit": dict(torso=((0.08, 0.09, 0.13), 0.07), arms=((0.08, 0.09, 0.13), 0.044), legs=((0.08, 0.09, 0.13), 0.042), tie=True),
+    "hoodie": dict(torso=((0.62, 0.04, 0.05), 0.135), arms=((0.62, 0.04, 0.05), 0.072), legs=((0.035, 0.035, 0.04), 0.07), hood=True, hem=True, pocket=True, strings=True, waist=True, shoes=True),
+    "professor": dict(torso=((0.33, 0.2, 0.11), 0.1), arms=((0.33, 0.2, 0.11), 0.058), legs=((0.16, 0.16, 0.18), 0.058), glasses=True, cap=True, waist=True, shoes=True),
+    "doctor": dict(torso=((0.92, 0.93, 0.95), 0.11), arms=((0.92, 0.93, 0.95), 0.06), legs=((0.12, 0.3, 0.42), 0.058), mirror=True, waist=True, shoes=True),
+    "suit": dict(torso=((0.08, 0.09, 0.13), 0.095), arms=((0.08, 0.09, 0.13), 0.055), legs=((0.08, 0.09, 0.13), 0.055), tie=True, waist=True, shoes=True),
     "none": dict(torso=(None, 0.034), arms=(None, 0.03), legs=(None, 0.03)),
 }
 
@@ -376,7 +395,7 @@ class Dave:
         self.NECK, self.HIP = Vector((0, 0, 0.44)), Vector((0, 0, 0))
         self.SH = {"l": Vector((-0.05, 0, 0.38)), "r": Vector((0.05, 0, 0.38))}
         self.HP = {"l": Vector((-0.06, 0, 0)), "r": Vector((0.06, 0, 0))}
-        self.torso = self.tube("torso", 2, 0.034)
+        self.torso = self.tube("torso", 7, 0.034)
         self.arms = {s: self.tube(f"arm_{s}") for s in "lr"}
         self.legs = {s: self.tube(f"leg_{s}") for s in "lr"}
         self.hands = {s: self.ball(f"hand_{s}", 0.042) for s in "lr"}
@@ -405,7 +424,7 @@ class Dave:
         self.cloth = {}
         self.flash_ins = [self.flash_in]
         for part in ("torso", "arms", "legs"):
-            m, fac = flashable(f"cloth_{part}", (1, 1, 1), 0.85)
+            m, fac = flashable(f"cloth_{part}", (1, 1, 1), 0.85, fabric=True)
             self.cloth[part] = m
             self.flash_ins.append(fac)
         for o in [self.torso]:
@@ -413,7 +432,7 @@ class Dave:
         for s_ in "lr":
             self.arms[s_].data.materials[0] = self.cloth["arms"]
             self.legs[s_].data.materials[0] = self.cloth["legs"]
-        hood_m, fac = flashable("hood", (0.55, 0.03, 0.04), 0.9)
+        hood_m, fac = flashable("hood", (0.55, 0.03, 0.04), 0.9, fabric=True)
         self.flash_ins.append(fac)
         bpy.ops.mesh.primitive_uv_sphere_add(radius=0.2, segments=32, ring_count=16)
         self.hood = bpy.context.object
@@ -460,6 +479,43 @@ class Dave:
         mir.data.materials.append(flat("mirror", (0.85, 0.87, 0.9), 0.1))
         into(mir, self.noline).parent = self.head
         self.extras["mirror"] = [mir]
+        # hoodie / pants details: ribbed hem band, kangaroo pocket, drawstrings, waistband, sneakers
+        rib_m, fac = flashable("rib", (0.5, 0.03, 0.04), 0.95, fabric=True)
+        self.flash_ins.append(fac)
+        bpy.ops.mesh.primitive_torus_add(major_radius=0.14, minor_radius=0.03)
+        hem = bpy.context.object
+        bpy.ops.object.shade_smooth()
+        hem.data.materials.append(rib_m)
+        into(hem, self.coll).parent = self.root
+        self.extras["hem"] = [hem]
+        bpy.ops.mesh.primitive_cylinder_add(radius=0.1, depth=0.2, vertices=32)
+        pk = bpy.context.object
+        pk.scale = (1, 0.55, 0.15)
+        pk.data.materials.append(rib_m)
+        bpy.ops.object.shade_smooth()
+        into(pk, self.coll).parent = self.root
+        self.extras["pocket"] = [pk]
+        white_m, fac = flashable("string", (0.9, 0.9, 0.88), 0.7)
+        self.flash_ins.append(fac)
+        st = []
+        for x in (-0.035, 0.035):
+            bpy.ops.mesh.primitive_cylinder_add(radius=0.008, depth=0.16)
+            o = bpy.context.object
+            o.data.materials.append(white_m)
+            into(o, self.noline).parent = self.root
+            st.append(o)
+        self.extras["strings"] = st
+        belt_m, fac = flashable("waistband", (0.02, 0.02, 0.02), 0.6, fabric=True)
+        self.flash_ins.append(fac)
+        bpy.ops.mesh.primitive_torus_add(major_radius=0.1, minor_radius=0.03)
+        wb = bpy.context.object
+        bpy.ops.object.shade_smooth()
+        wb.data.materials.append(belt_m)
+        into(wb, self.coll).parent = self.root
+        self.extras["waist"] = [wb]
+        self.shoe_m, fac = flashable("sneaker", (0.95, 0.95, 0.95), 0.45, 0.3)
+        self.flash_ins.append(fac)
+        self.extras["shoes"] = []
         self.outfit("hoodie")
         self.outline()
 
@@ -527,8 +583,22 @@ class Dave:
         P = POSES[name]
         rot = Matrix.Rotation(R(P.get("lean", 0)), 3, "X")
         up = lambda v: rot @ Vector(v)
-        self.torso.data.splines[0].points[0].co = (*self.HIP, 1)
-        self.torso.data.splines[0].points[1].co = (*up(self.NECK), 1)
+        for i, pt in enumerate(self.torso.data.splines[0].points):
+            pt.co = (*up(self.HIP.lerp(self.NECK, i / 6)), 1)
+        out = OUTFITS[getattr(self, "outfit_name", "hoodie")]
+        lean_e = (R(P.get("lean", 0)), 0, 0)
+        r = out["torso"][1]
+        self.extras["hem"][0].location = up(Vector((0, 0, 0.03)))
+        self.extras["hem"][0].rotation_euler = lean_e
+        self.extras["hem"][0].scale = (r * 1.12 / 0.14, r * 1.12 / 0.14, 1)
+        self.extras["pocket"][0].location = up(Vector((0, -r * 1.02, 0.13)))
+        self.extras["pocket"][0].rotation_euler = (R(90 + P.get("lean", 0)), 0, 0)
+        for x_, o_ in zip((-0.035, 0.035), self.extras["strings"]):
+            o_.location = up(Vector((x_, -r * 0.92, 0.34)))
+            o_.rotation_euler = lean_e
+        ws = out["legs"][1] * 1.9 / 0.1
+        self.extras["waist"][0].location = Vector((0, 0, -0.01))
+        self.extras["waist"][0].scale = (ws, ws, 1)
         sh = Vector((shake[0], 0, shake[1]))
         for s in "lr":
             e = P.get("e" + s) or POSES["idle"]["e" + s]
@@ -559,6 +629,18 @@ class Dave:
                 ob.data.materials[0] = self.cloth[part] if rgb else self.body_m
             if rgb:
                 self.cloth[part].node_tree.nodes["Principled BSDF"].inputs["Base Color"].default_value = (*rgb, 1)
+        prof = {
+            "torso": [1.12, 1.16, 1.12, 1.04, 0.96, 0.86, 0.7] if o.get("hood") else [1.0, 1.0, 1.0, 1.0, 0.98, 0.92, 0.8],
+            "arms": [0.85, 0.95, 1.0, 1.05, 1.08, 1.0, 1.14, 0.98, 1.1],  # sleeve bunches near the cuff
+            "legs": [1.1, 1.05, 1.0, 0.98, 1.02, 1.06, 0.98, 1.12, 1.0],  # pant folds over the shoe
+        }
+        for part, objs in (("torso", [self.torso]), ("arms", list(self.arms.values())), ("legs", list(self.legs.values()))):
+            for ob in objs:
+                for i, pt in enumerate(ob.data.splines[0].points):
+                    pt.radius = prof[part][i] if o[part][0] else 1.0
+        for f_ in self.feet.values():
+            f_.data.materials[0] = self.shoe_m if o.get("shoes") else self.body_m
+            f_.scale = (1.05, 1.9, 0.75) if o.get("shoes") else (0.8, 1.5, 0.6)
         self.hood.hide_render = not o.get("hood")
         for k, objs in self.extras.items():
             for ob in objs:
