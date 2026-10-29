@@ -1,0 +1,87 @@
+{
+  "id": "ea1",
+  "title": "What If Abdul El-Sayed Became President? (1-minute hook test)",
+  "style": "v7",
+  "voice": "chatterbox",
+  "cb": {
+    "cfg": 0.25,
+    "exag": 0.5
+  },
+  "note": "Owner 29 Oct 2026: 1-min test = the first minute of a 10-min video 'what would change if Abdul El-Sayed became US president'. SENSITIVE: every claim below is in `sources`; real people are never voiced or given words they did not say; quotes are verbatim and attributed; claims by opponents are labelled as claims and paired with the fact-check. Hypothetical framing: he is a 2026 U.S. Senate candidate (Michigan), not a presidential candidate.",
+  "sources": [
+    "S1 Birth Oct 31 1984 Rochester Hills, Michigan; father Mohamed El-Sayed, an immigrant from Alexandria, Egypt; Rhodes Scholar; MD Columbia; Detroit Health Department director 2015-2017 — Wikipedia 'Abdul El-Sayed' (accessed 29 Oct 2026) https://en.wikipedia.org/wiki/Abdul_El-Sayed ; parents emigrated from Alexandria, Egypt — Wikipedia + HollywoodLife profile.",
+    "S2 Presidential eligibility: natural-born citizen + at least 35 years old — U.S. Constitution, Article II, Section 1, Clause 5. Born in Michigan in 1984 → eligible.",
+    "S3 2026 Michigan Democratic U.S. Senate primary: El-Sayed 48.4% vs Rep. Haley Stevens 47.6% (Aug 4 2026; AP projection) — Wikipedia; ClickOnDetroit 5 Aug 2026 https://www.clickondetroit.com/news/local/2026/08/05/abdul-el-sayed-wins-2026-michigan-us-senate-democratic-primary-election-ap-projects/ ; general election vs Republican Mike Rogers on 3 Nov 2026.",
+    "S4 'United Democracy Project spent $33 million on ads in the Democratic primary against El-Sayed and in support of his primary opponent, Rep. Haley Stevens' — NBC News, 9 Oct 2026 https://www.nbcnews.com/politics/2026-election/aipac-super-pac-starts-spending-michigan-senate-race-rcna602597 (UDP = AIPAC's super PAC).",
+    "S5 His plan: 'Medicare for All is guaranteed baseline government health insurance. If you like your insurance from your employer or from your union, that can still be there for you.' (Jan 2026) and his campaign: 'Medicare for All does not have to ban additional private insurance through unions or employers, although Medicare for All should make those choices redundant and unnecessary.' — Bridge Michigan fact check, 25 Sep 2026 https://bridgemi.com/michigan-politics/fact-check-would-abdul-el-sayed-raise-taxes-to-pay-for-medicare-for-all/",
+    "S6 Trump on Truth Social, 8 Oct 2026: 'Mohammed El-Sayed is a terrible Candidate for the Dumocrats...Mohammed goes back to the days of the Jihad. He is a RADICAL Extremist, Terrorist Sympathizer...' and El-Sayed on X: 'He knows my name is Abdul. He says it everyday.' — Mediaite, 9 Oct 2026 https://www.mediaite.com/media/news/abdul-el-sayed-claps-back-after-trump-called-him-mohammed-in-truth-social-rant-he-knows-my-name-is-abdul/ ; Detroit News 8 Oct 2026 (post 'labeled racist' by critics).",
+    "S7 Republican Mike Rogers claimed El-Sayed 'pledged his support to the Muslim Brotherhood' (Aug 5 statement); Bridge Michigan fact check: 'There is no evidence that El-Sayed has ties to the organization or pledged support.' — Bridge Michigan, 3 Sep 2026 https://bridgemi.com/michigan-politics/fact-check-no-evidence-abdul-el-sayed-pledged-support-to-muslim-brotherhood/",
+    "Photo: Abdul El-Sayed testifying at a U.S. Senate HELP Committee hearing, 2024 — public domain (U.S. Senate), Wikimedia Commons https://commons.wikimedia.org/wiki/File:Abdul_El-Sayed_testifying_at_committee_hearing,_2024.jpg"
+  ],
+  "beats": [
+    {
+      "id": "h1",
+      "src": "S1 S2",
+      "text": "What would happen if a doctor whose dad came from Egypt became the president of the United States?",
+      "pause": 0.4,
+      "exag": 0.55
+    },
+    {
+      "id": "h2",
+      "src": "S1 S3",
+      "text": "His name is Abdul El-Sayed and right now he is running for the Senate in Michigan but today we are making him president.",
+      "pause": 0.3
+    },
+    {
+      "id": "h3",
+      "src": "S1 S2",
+      "text": "And he really could because he was born in Michigan and the Constitution only asks that you are born an American and at least thirty five.",
+      "pause": 0.45
+    },
+    {
+      "id": "h4",
+      "src": "S5",
+      "text": "On day one he would sign Medicare for All which makes the government everybody's basic health insurance.",
+      "pause": 0.3
+    },
+    {
+      "id": "h5",
+      "src": "S5",
+      "text": "And his own campaign says it should make private insurance redundant and unnecessary which is exactly the thing insurance companies sell.",
+      "pause": 0.6,
+      "exag": 0.45
+    },
+    {
+      "id": "h6",
+      "src": "S4 S3",
+      "text": "But first he has to win and in his Senate primary a super PAC linked to AIPAC spent thirty three million dollars to help somebody else and he still won by less than one point.",
+      "pause": 0.5
+    },
+    {
+      "id": "h7",
+      "src": "S6",
+      "text": "Then there is the current president who keeps calling him Mohammed on Truth Social and wrote that he goes back to the days of the Jihad.",
+      "pause": 0.35
+    },
+    {
+      "id": "h8",
+      "src": "S6",
+      "text": "And El-Sayed answered that Trump knows his name is Abdul because he says it every day.",
+      "pause": 0.6,
+      "exag": 0.45
+    },
+    {
+      "id": "h9",
+      "src": "S7",
+      "text": "His opponent even claimed he pledged support to the Muslim Brotherhood but a fact check found no evidence at all.",
+      "pause": 0.5
+    },
+    {
+      "id": "h10",
+      "src": "",
+      "text": "So what would really change for you and who would fight the hardest to stop him?",
+      "pause": 0.6,
+      "exag": 0.55
+    }
+  ]
+}
