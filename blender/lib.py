@@ -636,6 +636,7 @@ class Dave:
                 fs.linesets.remove(ls)
             Dave._lined = True
         ls = fs.linesets.new(self.coll.name)
+        self.lineset = ls
         ls.select_by_collection, ls.collection = True, self.coll
         ls.select_silhouette, ls.select_border, ls.select_crease = True, True, False
         ls.linestyle.color = (0.04, 0.04, 0.04)
@@ -792,6 +793,9 @@ class Dave:
             f_.data.materials[0] = self.shoe_m if o.get("shoes") else self.body_m
             f_.scale = (1.05, 1.9, 0.75) if o.get("shoes") else (0.8, 1.5, 0.6)
         self.hood.hide_render = not o.get("hood")
+        # plain white stickmen (crowds, extras): a thin outline, or thin limbs read as solid black (29 Oct army test)
+        if hasattr(self, "lineset"):
+            self.lineset.linestyle.thickness = (1.6 if name == "none" else 4.6) * K.H / 1080
         for k, objs in self.extras.items():
             for ob in objs:
                 ob.hide_render = not o.get(k)
