@@ -26,7 +26,11 @@ def setup(argv):
     sc.cycles.device = "CPU"
     sc.cycles.samples = int(args.get("--samples", "32"))
     sc.cycles.use_denoising = True
-    sc.cycles.max_bounces = 6
+    sc.cycles.denoiser = "OPENIMAGEDENOISE"
+    sc.cycles.max_bounces = 4  # speed (29 Oct): 4 bounces + adaptive sampling + persistent data ≈ 2× faster per frame
+    sc.cycles.diffuse_bounces, sc.cycles.glossy_bounces, sc.cycles.transmission_bounces = 2, 2, 4
+    sc.cycles.use_adaptive_sampling, sc.cycles.adaptive_threshold = True, 0.04
+    sc.render.use_persistent_data = True
     sc.render.resolution_x, sc.render.resolution_y = K.W, K.H
     sc.render.fps = 24
     sc.view_settings.view_transform = "AgX"
@@ -836,3 +840,49 @@ def back_out(t, k=1.7):
     """ease-out with overshoot (the reference's snappy entrances)"""
     t = max(0.0, min(1.0, t)) - 1
     return t * t * ((k + 1) * t + k) + 1
+
+
+# ---- worlds + crowds (29 Oct) -------------------------------------------------------------------------------------------
+def world_hdri(mood="day", strength=1.0, rot=0.0):
+    """real photographed sky/lighting from Poly Haven (fetch.py manifest["moods"]): golden, day, night, city, studio"""
+    w = bpy.data.worlds.new("w_" + mood)
+    K.sc.world = w
+    w.use_nodes = True
+    n, l = w.node_tree.nodes, w.node_tree.links
+    tc, mp, env = n.new("ShaderNodeTexCoord"), n.new("ShaderNodeMapping"), n.new("ShaderNodeTexEnvironment")
+    mp.inputs["Rotation"].default_value = (0, 0, R(rot))
+    path = K.MAN.get("moods", {}).get(mood) or K.MAN["hdri"]
+    env.image = bpy.data.images.load(os.path.join(K.A, path))
+    l.new(tc.outputs["Generated"], mp.inputs["Vector"])
+    l.new(mp.outputs["Vector"], env.inputs["Vector"])
+    l.new(env.outputs["Color"], n["Background"].inputs["Color"])
+    n["Background"].inputs["Strength"].default_value = strength
+    return w
+
+
+def ground(kind="asphalt", size=60, scale=0.25, tint=None):
+    tex = K.MAN.get(kind) or K.MAN["floor"]
+    return plane("ground_" + kind, (0, 0, 0), (size, size), (0, 0, 0), pbr("g_" + kind, tex, scale, tint))
+
+
+def crowd(dave, rows=4, cols=8, dx=0.9, dy=1.1, origin=(0, 4, 0), jitter=0.15, seed=3):
+    """an army / crowd of copies of an ALREADY ANIMATED character (the reference's marching soldiers / 'everyone else').
+    Linked duplicates share the animated curve data → they move in sync, each copy sits on its own offset empty."""
+    import random
+    r = random.Random(seed)
+    src = tree(dave.root)
+    out = []
+    for i in range(rows):
+        for j in range(cols):
+            bpy.ops.object.select_all(action="DESELECT")
+            for o in src:
+                o.select_set(True)
+            bpy.context.view_layer.objects.active = dave.root
+            bpy.ops.object.duplicate(linked=True)
+            new_root = next(o for o in bpy.context.selected_objects if o.parent is None)
+            off = bpy.data.objects.new(f"crowd_{i}_{j}", None)
+            K.sc.collection.objects.link(off)
+            off.location = (origin[0] + (j - (cols - 1) / 2) * dx + r.uniform(-jitter, jitter), origin[1] + i * dy + r.uniform(-jitter, jitter), origin[2])
+            new_root.parent = off
+            out.append(off)
+    return out

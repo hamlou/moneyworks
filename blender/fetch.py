@@ -71,6 +71,28 @@ def main():
     hp = os.path.join(out, "hdri", f"{hdri}.hdr")
     save(h, hp)
     man = {"floor": texture(out, floor), "wall": texture(out, wall), "hdri": os.path.relpath(hp, out), "ids": {"floor": floor, "wall": wall, "hdri": hdri}}
+    # real photographed skies per mood (29 Oct: replaces the procedural sky) — the most downloaded HDRI of each category
+    man["moods"] = {}
+    for mood, cat in (("golden", "sunrise-sunset"), ("day", "skies"), ("night", "night"), ("city", "urban"), ("studio", "studio")):
+        try:
+            hs = js(f"{API}/assets?t=hdris&c={cat}")
+            best = max(hs, key=lambda k: hs[k].get("download_count", 0))
+            u = js(f"{API}/files/{best}")["hdri"]["2k"]["hdr"]["url"]
+            path = os.path.join(out, "hdri", f"{mood}.hdr")
+            save(u, path)
+            man["moods"][mood] = os.path.relpath(path, out)
+            man["ids"]["hdri_" + mood] = best
+        except Exception as e:
+            print("skip hdri", mood, e)
+    # ground/wall materials for outdoor worlds
+    for key_, prefs, cats in (("asphalt", ["asphalt_02", "asphalt_track", "asphalt_pit_lane"], "asphalt"), ("concrete", ["concrete_floor_02", "concrete_pavement", "concrete_wall_008"], "concrete"),
+                              ("brick", ["red_brick_03", "red_bricks_04", "brick_wall_001"], "brick"), ("grass", ["aerial_grass_rock", "grass_path_2", "forrest_ground_01"], "grass")):
+        try:
+            tid = pick({k for k, v in tex.items() if cats in " ".join(v.get("categories", [])) or cats in k}, prefs, [cats])
+            man[key_] = texture(out, tid)
+            man["ids"][key_] = tid
+        except Exception as e:
+            print("skip tex", key_, e)
     json.dump(man, open(os.path.join(out, "manifest.json"), "w"), indent=1)
     print(json.dumps(man["ids"]))
 

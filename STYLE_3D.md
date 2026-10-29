@@ -49,6 +49,7 @@
 
 ### 0.6 The hook — THE priority (built with the loop method §0.10) (owner 29 Oct: "more than 50 % of clickers leave in the first 5–10 seconds")
 - The first 10 s decide the video. Frame 0 already moving and already showing the most surprising thing; the concept + stakes are clear by second 5; a visual change every ≤ 1 s for the first 10 s; a reason to keep watching (open question / withheld result) before second 10.
+- **Use his TECHNIQUES, never his scenes** (owner 29 Oct): worlds, concept characters and gags are invented from OUR topic and each spoken line; his videos (and our animtest shots) are a quality/technique benchmark only, never copied.
 - Before writing any new hook, study how the reference channel (Nion Anarchy, `qa_dl/chan/an/<id>/` shot data + sheets) opens its videos and write the findings into STYLE_3D §12/§13. Old hook rules that still apply: PLAYBOOK_LONG §0.10 A (concept + stakes + how it ends, never the same hook form twice) and §12.3 (hook = a question).
 
 ### 0.7 Shorts use the SAME standard

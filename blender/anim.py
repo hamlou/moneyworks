@@ -6,12 +6,14 @@ blender -b -P blender/anim.py -- --assets A --tex T --out O --frames "A:1-20" [-
                    mansion at golden hour, camera pushes in; Dave tiny in front looks up; at 38 the giant punches at the camera
   B  graph   84 f  lined paper: a growth line draws itself while Dave drives a toy car up it; camera tracks, then pushes in
   C  alley   96 f  night alley: Dave walks in as a silhouette, a spotlight sweeps across and reveals him, he snaps to camera
+  D  army    72 f  golden-hour field (real HDRI sky): an army of 32 identical white stickmen marches toward camera in sync,
+                   Dave in his red hoodie walks in front of them looking back, low tracking camera
 """
 import sys, os, math
 from mathutils import Vector
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-from lib import K, R, setup, Dave, flat, pbr, image_mat, box, plane, cam, blend, ease, back_out, finish, dof, POSES  # noqa: E402
+from lib import K, R, setup, Dave, flat, pbr, image_mat, box, plane, cam, blend, ease, back_out, finish, dof, world_hdri, ground, crowd, POSES  # noqa: E402
 import bpy  # noqa: E402
 
 args = setup(sys.argv[sys.argv.index("--") + 1:])
@@ -25,7 +27,7 @@ FRAMES = []
 for part in rng.split(","):
     a, _, b = part.partition("-")
     FRAMES += list(range(int(a), int(b or a) + 1))
-LEN = {"A": 60, "B": 84, "C": 96}[SHOT]
+LEN = {"A": 60, "B": 84, "C": 96, "D": 72}[SHOT]
 
 POSES["flex"] = dict(el=(-0.3, 0.0, 0.4), hl=(-0.24, -0.04, 0.64), er=(0.3, 0.0, 0.4), hr=(0.24, -0.04, 0.64), head=(-6, 0, 0))
 POSES["windup"] = dict(el=(-0.3, 0.0, 0.4), hl=(-0.24, -0.04, 0.64), er=(0.26, 0.18, 0.3), hr=(0.2, 0.3, 0.42), head=(4, 0, -10), lean=-6)
@@ -276,8 +278,39 @@ if SHOT == "C":
         p = ease((f - 76) / 10) if f >= 76 else 0
         key_cam(cam0, f, (0.6, -5.2 + 1.6 * p, 1.05), (0.4, 0, 1.15), 30 + 8 * p)
 
+# ================================================================== D · marching army (crowd of linked copies)
+if SHOT == "D":
+    world_hdri("golden", 1.0, 120)
+    ground("grass", 80, 0.4)
+    light("sun", "SUN", (0, 0, 10), (R(74), 0, R(-140)), energy=2.2, color=(1.0, 0.85, 0.65), angle=R(2))
+    soldier = Dave("Soldier")
+    soldier.outfit("none")
+    soldier.live_obj.hide_render = True
+    soldier.face(None)
+    d = Dave()
+    for f in range(1, LEN + 1):
+        ph = f / 24 * 2 * math.pi  # one step pair per second, marching in sync
+        bob = soldier.legs_walk(ph, 0.28, 0.06)
+        soldier.place((0, 6 - f * 0.035, 0.72 + bob), R(0))
+        sw = math.sin(ph) * 0.14
+        P = dict(POSES["idle"])
+        P["hl"], P["hr"] = (-0.13, -0.02 - sw, -0.06), (0.13, -0.02 + sw, -0.06)
+        P["head"] = (0, 0, 0)
+        soldier.pose(P)
+        soldier.key(f)
+        bob = d.legs_walk(ph * 1.1, 0.3, 0.07)
+        d.place((0.3, 2.2 - f * 0.038, 0.72 + bob), R(0))
+        Q = dict(P)
+        Q["head"] = (-6, 0, 150 if 30 < f < 54 else 0)  # glances back at the army, then back to camera
+        d.pose(Q)
+        d.live(f, "shock" if 30 < f < 54 else "determined", talking=f >= 54)
+        d.life(f, 0.5)
+        d.key(f)
+        key_cam(cam0, f, (1.4, -3.4 - f * 0.036, 0.35), (0.2, 3 - f * 0.036, 1.3), 22)
+    crowd(soldier, rows=4, cols=8, dx=0.95, dy=1.2, origin=(0, 0, 0))
+
 finish()
-if SHOT in ("B", "C"):
+if SHOT in ("B", "C", "D"):
     dof(cam0, d.head, 2.2 if SHOT == "B" else 2.8)
 # ------------------------------------------------------------------ render the requested frames
 sc.render.image_settings.file_format, sc.render.image_settings.quality = "JPEG", 90
