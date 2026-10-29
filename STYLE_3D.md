@@ -520,3 +520,8 @@ What he does in the first 36 s (the hook):
 - 3.0–6.0 s: a spectacular or absurd action shot (punch, whip-zoom close-up, crowd, speed tunnel).
 - 6.0–10 s: Dave in the first world of the story, the plan in one sentence, and an open loop ("…and by day 30 something happened that I did not see coming").
 - Never: a still frame, an empty background, a logo intro, a greeting, or the answer.
+- **Worlds**: `world_hdri(mood, strength, rot)` real Poly Haven skies (golden, day, night, city = a real street, studio) + `ground(kind, size, scale)` (asphalt, concrete, brick, grass; scale ≈ 3 for realistic tiling). Rotate the sky so **no brand billboard** is in shot.
+- **Crowds**: `crowd(dave, rows, cols, …)` = linked copies of an already-animated character (armies, queues, "everyone else"). Background people use `outfit("none")` (plain white).
+- **Real human motion (CMU mocap, free)**: `blender/fetch_mocap.py` downloads BVH by id (02_01 walk, 02_03 jog, 02_04 jump, 02_05 punch, more in the cmubvh READMEs); `Mocap(id)` + `mocap_pose(dave, m, i, base, turn)` retargets it onto Dave every frame. Use for walks/runs/fights/dances and for crowds.
+- **Living 2D graphics** (`src/v6/kit2.tsx`): `SelfDrawGraph`, `WipePanel`, `FlyStack`, `Shake`. `src/v6/AnimTest.tsx` shows how animated shot mp4s (public/anim, re-encoded crf 23 ≈ 2–4 MB) are cut with 2D layers and SFX.
+- **Voice engine switch**: `"cb": {"engine": "turbo"}` in the episode JSON uses Chatterbox-Turbo instead of Chatterbox (pick after the owner listens to `videos/voice_bakeoff2/`).
