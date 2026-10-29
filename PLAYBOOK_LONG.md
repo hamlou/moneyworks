@@ -1,5 +1,7 @@
 # MONEYWORKS PLAYBOOK — LONG-FORM (16:9 episodes, 10 min+)
 
+> **★ v7 STANDARD (owner, 29 Oct 2026) — `STYLE_3D.md` §0 is THE rule set for EVERY new video (long-form and Shorts) and wins over everything in this file.** Natural connected speech (no commas AND no fragment chains like "12 years. Day one. Math class."), Blender 3D Dave in a red oversized hoodie + wide black pants with costume swaps per scene role, objects from the words of each line, ≥ 50 % real 3D, something new every 1.5–2.5 s, dense SFX (counter roll ticks etc.), hook = the priority (50 %+ of viewers leave in 5–10 s). Retired: memes, polaroids, photo-every-10–15 s, photos+memes every 2–4 s in Shorts, captions, 2D Dave for new videos, asking the owner to record their voice. Template: `pipeline/episodes/test1.json` + `blender/test1.py` + `src/v6/Test1.tsx`.
+
 **This file is ONLY for long-form episodes (`epNN`, 1920×1080, 10–12 min).** Vertical Shorts have their own file: `PLAYBOOK_SHORTS.md`. Never apply a Shorts rule to a long video or a long-form rule to a Short (owner, 11 Oct 2026: "you are in long form not in shorts, don't mix between them").
 
 This is the bible for the channel. Series 1 (ep01–ep10) was approved by the owner as **"exactly the style I was looking for for years"**. Every new episode must match it. Read this fully before writing anything.

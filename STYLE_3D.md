@@ -1,4 +1,4 @@
-# STYLE_3D.md — v6 "3D ANIMATOR" STYLE (owner, 23 Oct 2026) — NEWEST, overrides every other rule where they conflict
+# STYLE_3D.md — v6 "3D ANIMATOR" STYLE + v7 STANDARD (owner, 23–29 Oct 2026) — NEWEST, overrides every other rule in this repo where they conflict
 
 **Owner's words:** "I definitely liked this video. The script and the 3D animation are incredibly amazing. This is the type of videos I want my channel to be like. My current videos feel too robotic in the editing. I want it to feel like it's edited by a 3D animator. Copy the way he speaks, his script, the way he montages and the 3D animation. Go more than 99 % with this video style and keep 1 % of our old .md files (no commas and the things that don't conflict). Our voice-over is still too far from this video. Make it the SAME (don't clone the voice, that's illegal)."
 
@@ -9,6 +9,62 @@
 **The 1 % we keep from the old playbooks:** zero commas in spoken text (§0.11 A — his sentences already run on with "and / so / but", it fits perfectly) · Dave hosts in the first person to "you" (§0.12) · research standard + sources (§4) · free-licence photos only, each used once (§0.10 C) · real people only in factual context · "education not advice" · `at`-word anchoring of every visual and sound (UPGRADE.md §4) · thumbnails + SEO tooling (§0.6, §5b) · pipeline/build steps (§8). **Everything else that conflicts with this file is retired** (see §9 for the exact list).
 
 ---
+
+## ★★ §0. v7 STANDARD (owner, 28–29 Oct 2026) — THE CURRENT RULES FOR EVERY VIDEO (long-form AND Shorts). Read this first; it wins over every other line in every .md file of this repo.
+
+**Why it exists:** the owner approved the 1-minute test `test1` ("Dave goes back to school", `videos/v6_test1/test1_v3.mp4`, built 29 Oct 2026) after four review rounds. Everything the owner corrected in that session is written here as a hard rule. Old rules that conflict are **retired** (list in §0.9). If a rule below is missing for your case, follow the closest older rule that does NOT conflict with this section.
+
+**Template to copy for every new video:** `pipeline/episodes/test1.json` (script) → `blender/test1.py` + `blender/test1.chunks` (3D pose-state stills) → `src/v6/Test1.tsx` (edit on the voice) → composition registered in `src/v6/Root.tsx`. Never rebuild the kit; add new states/props/sets to `blender/` and new components to `src/v6/`.
+
+### 0.1 Script — a human talking, never a book (owner 29 Oct: "it's not a book, it's someone speaking naturally like humans")
+1. **Zero commas AND zero fragment chains.** A comma rule cheated with full stops is still a violation. NEVER: "…do my taxes. 12 years. That is…", "Day one. Math class. Finally numbers.", "for the word interest. Four hundred pages. Zero interest." ALWAYS one connected spoken sentence per thought, linked with and / so / but / because / which / and then: "…zero minutes teaching me how to do my taxes. And twelve years is about as long as a dog lives so a whole dog lived and died while I was learning triangles." / "So on day one I walked into my math class. And I was so happy because finally there were numbers…" / "…in four hundred pages there was zero interest which is also exactly how much I had left by page ten."
+2. **Chapter labels are visual, not spoken alone.** "Day 1" appears on screen (chalkboard, title, world object); the voice says it inside a sentence ("So on day one I walked into…").
+3. Each beat = one breath group of 15–45 words. Every line must make sense to someone who heard ONLY the previous line (no jumps that confuse the viewer).
+4. Dave = first person to "you", experiment format (goal + deadline + scoreboard), fake-outs, absurd real comparisons with a sourced fact (e.g. 12 years ≈ a dog's life), callbacks. Real numbers stay real and sourced in `sources`.
+5. Validate before voicing: no `,` in any `text`; no sentence under 5 words unless it is a deliberate punchline after a long sentence (max 1 per 30 s); no line that starts with a bare label ("Day one." "Math class.").
+
+### 0.2 Voice
+- The owner will **NOT** record their own voice. Never ask or suggest it again. Voice = Chatterbox via `voice.yml` with `"cb": {"cfg": 0.25, "exag": 0.5}`; per-beat `exag` 0.45 dry / 0.55–0.6 hype.
+- Chatterbox reads long sentences at ~230 wpm → the edit slows the cached voice with ffmpeg `atempo` (test1: 0.82 → ≈190 wpm) into `public/<id>/voice.flac`, and the TSX multiplies every word time by `STRETCH = 1/atempo`. Measure wpm after every voice run (target 180–200) and pick atempo = measured/190.
+- Paid alternative only if the owner asks: ElevenLabs v3 library voice (never a clone of a real creator).
+
+### 0.3 Dave — 3D, dressed, costume per scene (owner 29 Oct)
+- **Rig:** `blender/lib.py` `Dave` = white ball head with ink-line face decals (`blender/tex/face_*.png`, made by `blender/make_tex.py`), stickman limbs as bevelled curves, Freestyle black outline, 1-frame white-silhouette swap (`dave.flash(True)`).
+- **Default outfit = red OVERSIZED hoodie + wide black pants** (`OUTFITS["hoodie"]`): baggy torso profile, sleeves that bunch at the cuff, pants that fold over white sneakers, hood, ribbed hem band, kangaroo pocket, drawstrings, waistband, knit fabric shading (sheen + bump). Clothes must read as CLOTH in every pose including sitting — never as colour painted on thin limbs (owner: "he seems like just a colored painting"). After any rig change render a sitting AND a standing preview and check this.
+- **Costume = the role of the scene** (an instant joke, like the reference's hats and beards): teaching → `professor` (brown jacket, round glasses, mortarboard); medical → `doctor` (white coat, head mirror); business/bank/boss → `suit` (dark suit, red tie). Add new outfits to `OUTFITS` for new roles (chef, judge, police, gym, astronaut…). Swap the costume on the exact word that changes the role ("I am **writing** that class myself" → professor).
+- Background people / past self / "average person" = plain white stickmen (no clothes) so Dave always stands out.
+
+### 0.4 Visuals — the reference's grammar (STYLE_3D §5, §11, §12)
+- **Objects come from the words of the line being spoken** (memory `props-from-script`): triangles chalkboard on "triangle", TAX FORM on "taxes", RENT bill on "rent", the textbook on "textbook". No fixed prop list reused across videos.
+- **≥ 50 % of the runtime is real 3D** (Blender + CC0 Poly Haven models via `blender/fetch.py`, Cycles on GitHub Actions `blender.yml`). The rest = home base: charcoal icon backdrop, big rounded wobbling cards (scaled 1.22×), Dave big and **waist-up lower right** (cut-out PNG from the `cut` camera), pointing at the card.
+- Render **pose-state stills, not every frame**: each pose/face/camera state = one still; Remotion holds/cuts them on the voice words (burst → hold). A minute ≈ 20–35 stills, 6 parallel machines, ~30 min.
+- **Something changes every 1.5–2.5 s** (pose, face, card, counter, punch-in, prop). No hold over ~3 s without a change. Hard cut every 3.5–6 s.
+- Transitions measured frame by frame (§12.3): 1-frame white silhouette on pose swaps, 2-frame smear on whips, 6-frame light-leak time skip, 1-frame B&W threshold before a reveal, comic bursts that slam in over 3 frames, counters that roll ~1.5 s and land with a bounce.
+- No burned-in captions, no meme cards, no polaroid/tape photos.
+
+### 0.5 Sound — dense (owner 29 Oct: "the video is very poor of sound effects")
+- Every visual event gets a sound: card slide → `slide`/`swish`, pop-in → `pop_hi`, pose swap → `snap_white`, 3D hard cut → `thump_low`, **every counter going up → `count_roll` (ticks that speed up and land with a ding)**, chalk → `chalk`, book → `pageflip`, typing → `key`/`key2` every 3 frames, reveals → `boom`/`stamp`, fails → `trombone`, money → `cash`/`ding`, sleep → `dream`, plus `crowd`/`sting`/`boing` as comedy accents. test1 = ~60 cues per minute; aim for that.
+- New SFX are synthesised by `pipeline/sfx_synth.py` (never overwrite an existing `public/sfx/*.wav`; give new sounds new names). Owner's 2 Google Drive SFX folders: ids in `.github/workflows/sfxpack.yml`; on 29 Oct the main folder returned "permission denied" → ask the owner to re-share as "Anyone with the link" before relying on it.
+- Music: `public/music/bgm.mp3` at ~0.07 under the voice.
+
+### 0.6 The hook — THE priority (owner 29 Oct: "more than 50 % of clickers leave in the first 5–10 seconds")
+- The first 10 s decide the video. Frame 0 already moving and already showing the most surprising thing; the concept + stakes are clear by second 5; a visual change every ≤ 1 s for the first 10 s; a reason to keep watching (open question / withheld result) before second 10.
+- Before writing any new hook, study how the reference channel (Nion Anarchy, `qa_dl/chan/an/<id>/` shot data + sheets) opens its videos and write the findings into STYLE_3D §12/§13. Old hook rules that still apply: PLAYBOOK_LONG §0.10 A (concept + stakes + how it ends, never the same hook form twice) and §12.3 (hook = a question).
+
+### 0.7 Shorts use the SAME standard
+Shorts (`shortNN`, 9:16) are built with the same kit: 3D Dave in his outfits, natural connected speech, objects from the words, dense SFX, the same transitions. Differences only: 1080×1920 framing (Dave and the card stacked vertically), 50–90 s, one loop, hook in the first 2 s, a visual change every 1–1.5 s. The old Shorts rules "real photos + meme every 2–4 s" are retired (§0.9).
+
+### 0.8 Pipeline (what actually works — 8 GB RAM PC, slow connection)
+1. Never render Remotion or Blender on the owner's PC (it crashed the session). Everything renders on GitHub Actions on branch `shorts-playbook-rules`: `voice.yml -f ep=<id>`, `blender.yml` (push trigger; `blender/RUN` = `<shot> <preview|full> <samples> cycles`, `blender/<shot>.chunks` = JSON list of comma-separated state groups), `v6demo.yml -f comp=<Comp>`.
+2. Preview first (4 states, half res), look at them, then full. Check every still before the edit.
+3. Downloads: `gh run download` often fails on this connection → use `gh api repos/hamlou/moneyworks/actions/artifacts/<id>/zip > a.zip` in a retry loop, in the background.
+4. Copy stills into `public/<id>/`, commit, render the composition, then contact-sheet the mp4 at 1–2 fps and check every shot before sending it to the owner.
+
+### 0.9 Retired by v7 (do not use in any new video)
+Meme cards (all formats) · polaroid/tape/sticker photos · "real photo every 10–15 s" (long) and "photos + meme every 2–4 s" (Shorts) · burned-in captions · the 2D `<Stick>` Dave and the three.js `Dave3D` for new videos (Blender Dave replaces them; the old episodes keep theirs) · asking the owner to record their voice · fixed recurring prop lists · fragment-chain sentences · `validate.py` meme/photo counts for v7 videos.
+
+---
+
 
 ## 1. The measured numbers (the targets)
 

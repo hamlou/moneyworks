@@ -1,5 +1,8 @@
 # UPGRADE.md — master prompt: upgrade an existing long episode (cheap on tokens)
 
+> **★ v7 STANDARD (owner, 29 Oct 2026) — `STYLE_3D.md` §0 is THE rule set for EVERY new video (long-form and Shorts) and wins over everything in this file.** Natural connected speech (no commas AND no fragment chains like "12 years. Day one. Math class."), Blender 3D Dave in a red oversized hoodie + wide black pants with costume swaps per scene role, objects from the words of each line, ≥ 50 % real 3D, something new every 1.5–2.5 s, dense SFX (counter roll ticks etc.), hook = the priority (50 %+ of viewers leave in 5–10 s). Retired: memes, polaroids, photo-every-10–15 s, photos+memes every 2–4 s in Shorts, captions, 2D Dave for new videos, asking the owner to record their voice. Template: `pipeline/episodes/test1.json` + `blender/test1.py` + `src/v6/Test1.tsx`.
+
+
 **Owner starts a chat on claude.ai (repo `hamlou/moneyworks` connected) with:** `Read UPGRADE.md in my repo and follow it. Upgrade ep52.`
 
 ## ★ v6 STYLE (owner, 23 Oct 2026) — overrides §2–§4 below where they conflict
