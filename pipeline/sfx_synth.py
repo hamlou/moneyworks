@@ -11,6 +11,7 @@ pop [pitch] · swish [dur] · chalk [dur] · page · typing [dur rate] · cash �
 buzz [dur pitch] · phone [dur] · crowd [dur mood: murmur|cheer|gasp|laugh] · steps [n rate surface: hard|soft]
 riser [dur] · drop [dur] · glitch [dur] · heartbeat [n bpm] · rain [dur] · wind [dur] · thud · snap · slide [dur]
 boing [pitch] · zip [dur up] · stamp · paper [dur] · clock [n] · alarm [dur] · fire [dur] · water [dur] · glass
+school_bell [dur] · train_horn [dur] · snore [n period] · bark [n] · whimper [dur] · pencil [dur]
 """
 import json, os, sys, wave
 import numpy as np
@@ -295,6 +296,50 @@ def r_glass():
     t = T(1.0)
     shards = sum(np.sin(2 * np.pi * rng.uniform(2500, 7000) * t) * env(len(t), 0.0005, rng.uniform(0.05, 0.3)) * rng.uniform(0.1, 0.4) for _ in range(12))
     return shards + lowpass(noise(1.0), 2) * env(len(t), 0.0005, 0.03)
+
+
+def r_school_bell(dur=1.6):
+    t = T(dur)
+    ring = r_bell(1.25, dur) * (0.6 + 0.4 * np.sign(np.sin(2 * np.pi * 22 * t)))  # electric bell: struck 22×/s
+    return ring * np.minimum(1, (dur - t) * 6)
+
+
+def r_train_horn(dur=1.4):
+    t = T(dur)
+    chord = sum(tone(f, dur, "sq") * a for f, a in ((311, 1), (370, 0.8), (466, 0.7)))
+    return lowpass(chord, 6) * np.minimum(1, t * 12) * np.minimum(1, (dur - t) * 5)
+
+
+def r_snore(n=2, period=1.8):
+    x = np.zeros(int((n * period + 0.2) * SR))
+    for k in range(n):
+        d = period * 0.6
+        t = T(d)
+        rasp = lowpass(noise(d), 4) * (0.5 + 0.5 * np.sin(2 * np.pi * 38 * t)) * np.sin(np.pi * t / d)
+        mixat(x, rasp, k * period)
+        mixat(x, lowpass(noise(period * 0.3), 30) * 0.3 * np.sin(np.pi * T(period * 0.3) / (period * 0.3)), k * period + d)
+    return x
+
+
+def r_bark(n=1):
+    x = np.zeros(int((n * 0.35 + 0.3) * SR))
+    for k in range(n):
+        t = T(0.18)
+        f = 520 * np.exp(-t * 6) + 280
+        b_ = (np.sin(2 * np.pi * np.cumsum(f) / SR) + 0.4 * lowpass(noise(0.18), 3)) * env(len(t), 0.003, 0.06)
+        mixat(x, b_, k * 0.33)
+    return x
+
+
+def r_whimper(dur=0.9):
+    t = T(dur)
+    f = 900 - 350 * t / dur + 30 * np.sin(2 * np.pi * 7 * t)
+    return np.sin(2 * np.pi * np.cumsum(f) / SR) * np.sin(np.pi * t / dur) * 0.6
+
+
+def r_pencil(dur=0.8):
+    n = int(dur * SR)
+    return lowpass(np.diff(np.concatenate([[0], noise(dur)])), 2) * (0.4 + 0.6 * (np.sin(np.arange(n) / SR * 2 * np.pi * 5) > 0)) * env(n, 0.01, dur)
 
 
 RECIPES = {k[2:]: v for k, v in globals().items() if k.startswith("r_")}

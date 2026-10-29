@@ -1,0 +1,148 @@
+{
+ "note": "test1 'Dave goes back to school' — sounds designed from ITS script (STYLE_3D §0.12). Each line → the event it cues.",
+ "sounds": [
+  {
+   "name": "bell_open",
+   "recipe": "school_bell",
+   "params": {
+    "dur": 1.2
+   },
+   "cue": "t1 frame 0 under the wide classroom (school ambience starts the video)"
+  },
+  {
+   "name": "form_rustle",
+   "recipe": "paper",
+   "params": {
+    "dur": 0.4
+   },
+   "cue": "t1 'taxes' — the tax form shakes"
+  },
+  {
+   "name": "chalk_tri",
+   "recipe": "chalk",
+   "params": {
+    "dur": 0.5
+   },
+   "cue": "t1 'triangle' — punch-in on the triangles board"
+  },
+  {
+   "name": "dog_bark",
+   "recipe": "bark",
+   "params": {
+    "n": 2
+   },
+   "cue": "t2 'dog'"
+  },
+  {
+   "name": "dog_rip",
+   "recipe": "whimper",
+   "params": {
+    "dur": 0.9
+   },
+   "cue": "t2 'died' — R.I.P. card"
+  },
+  {
+   "name": "door_thud",
+   "recipe": "impact",
+   "params": {
+    "weight": 0.8
+   },
+   "cue": "t3 'went back' — hero shot lands"
+  },
+  {
+   "name": "days_roll",
+   "recipe": "tick_roll",
+   "params": {
+    "dur": 1.0
+   },
+   "cue": "t4 'thirty days' — 30 DAYS letters"
+  },
+  {
+   "name": "checklist_tick",
+   "recipe": "pencil",
+   "params": {
+    "dur": 0.25
+   },
+   "cue": "t4 each class ticks onto the list"
+  },
+  {
+   "name": "win_ding",
+   "recipe": "ding",
+   "params": {
+    "pitch": 1.2
+   },
+   "cue": "t5 'I win'"
+  },
+  {
+   "name": "bell_class",
+   "recipe": "school_bell",
+   "params": {
+    "dur": 1.6
+   },
+   "cue": "t6 'day one' — chalkboard DAY 1"
+  },
+  {
+   "name": "kids_murmur",
+   "recipe": "crowd",
+   "params": {
+    "dur": 3.0,
+    "mood": "murmur"
+   },
+   "cue": "t7 under the math-class shot"
+  },
+  {
+   "name": "train",
+   "recipe": "train_horn",
+   "params": {
+    "dur": 1.2
+   },
+   "cue": "t8 'train that leaves Chicago'"
+  },
+  {
+   "name": "rent_alarm",
+   "recipe": "alarm",
+   "params": {
+    "dur": 0.8
+   },
+   "cue": "t8 'rent' — RENT bill panic"
+  },
+  {
+   "name": "pages",
+   "recipe": "paper",
+   "params": {
+    "dur": 0.9
+   },
+   "cue": "t9 'searched the whole textbook'"
+  },
+  {
+   "name": "typing_search",
+   "recipe": "typing",
+   "params": {
+    "dur": 0.9,
+    "rate": 12
+   },
+   "cue": "t9 search bar types 'interest'"
+  },
+  {
+   "name": "zero_drop",
+   "recipe": "drop",
+   "params": {
+    "dur": 0.7
+   },
+   "cue": "t9 'zero interest'"
+  },
+  {
+   "name": "snore",
+   "recipe": "snore",
+   "params": {
+    "n": 2
+   },
+   "cue": "t9 'by page ten' — asleep on the book"
+  },
+  {
+   "name": "grade_f",
+   "recipe": "stamp",
+   "cue": "t10 report card F"
+  }
+ ]
+}
