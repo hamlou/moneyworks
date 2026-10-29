@@ -489,3 +489,30 @@ What he does in the first 36 s (the hook):
 - **Live face**: `dave.live(f, expr, talking)` → mouth flaps (from the voice with `load_voice(wav)`; a natural fallback pattern without voice), blinks every ~3 s, the ink lines "boil" (3 drawings swapped every 3 frames). Textures `blender/tex/live/<expr>_<c|o|b>_<k>.png` from `make_tex.py`. Expressions: neutral grin shock think determined panic smug spiral dead.
 - **Finishing pass**: `finish()` (bloom on lights, slight lens dispersion, warm grade) + `dof(camera, target)` on close-ups; vignette and per-frame grain at assembly.
 - Gotchas learned: Principled mix-shader Fac defaults to 0.5 (washed-out white) → set 0; white sheen turns red cloth pink → sheen 0.3 tinted; `read_factory_settings` wipes frame handlers → `_ensure_handler()`; GitHub artifact names can't contain `:`; a compositor ellipse mask left a ghost oval → vignette in ffmpeg instead.
+
+## 14. Hook study — the first 10 s of all 13 long videos (29 Oct 2026, sheet `qa_dl/cmp/hooks_all.jpg`, 2 fps)
+
+| Video (views) | 0–10 s, in order | Type |
+|---|---|---|
+| Why are there no 3D animators (1.7 M) | dark empty concrete room (mystery), host walks in, creator name cards pop on the wall; the TITLE is the open question | curiosity title + moody world |
+| BRAINROT Shorts 30 days (1.2 M) | tear-off calendar flipping ("30 days") on a green speed-lines tunnel, short cards fly past, stopwatch, host flies through the tunnel — never still | time-limit device + constant motion |
+| SLEEPING videos 30 days (860 K) | his sleeping-video thumbnail with a VIEWS counter rolling 557 K → 995 K (the RESULT first), stopwatch "CLICK!" comic, giant eyeball close-up, stickman asleep on a couch | result proof + deadline + absurd close-up |
+| NICHE Pride Flags (241 K) | white void, host + logo pops, crowd of icons explodes outward, flags | topical + pops |
+| YouTube Killer (87 K) | concept character (YouTube muscle giant) in a money mansion, punch, self-drawing graph ride, volcano army | personification + rich worlds |
+| How much YouTube pays (86 K) | host on white, "1 YEAR" title, cards flying in, "10 videos / 13 shorts" counters | numbers + cards |
+| Guru epidemic (50 K) | real man talking to camera + kinetic text | talking head (weakest look) |
+| others 18–61 K | mostly the host on a plain white or grey room talking, slow | static start |
+
+**What separates the hits (≥ 800 K) from the rest:**
+1. **Second 0 shows the RESULT or the STAKES as a picture that moves** — a views counter rolling up, a calendar of 30 days flipping — never the host introducing himself on an empty background (that is how the 18–35 K videos open).
+2. **A time-limit device in the first 3 s** for experiment videos (calendar, stopwatch, "30 days") = the deadline the loop closes on.
+3. **One absurd or spectacular close-up by second 5** (the giant eye, the punch, the speed tunnel).
+4. **4–6 different visuals in the first 10 s, with motion inside each.**
+5. The spoken line is a question or a promise whose answer is the end of the video (§0.10 C); the title itself can be the open loop ("Why are there no…").
+
+**Hook template (use for every new video, write the brief against it):**
+- 0.0–1.0 s: the RESULT / STAKES image, already moving (counter rolling, money pile growing, the concept character in its world).
+- 1.0–3.0 s: the time-limit or challenge device (calendar / stopwatch / scoreboard) + the question spoken.
+- 3.0–6.0 s: a spectacular or absurd action shot (punch, whip-zoom close-up, crowd, speed tunnel).
+- 6.0–10 s: Dave in the first world of the story, the plan in one sentence, and an open loop ("…and by day 30 something happened that I did not see coming").
+- Never: a still frame, an empty background, a logo intro, a greeting, or the answer.
