@@ -63,7 +63,7 @@ Shorts (`shortNN`, 9:16) are built with the same kit: 3D Dave in his outfits, na
 ### 0.10 The LOOP METHOD — mandatory for every video (owner, 29 Oct 2026: "integrate this strategy in our next videos", from the "Isa / Nile Blue — viral in 7 days" case study)
 The full case study notes stay in `PLAYBOOK_LONG.md` §12 and `PLAYBOOK_SHORTS.md` §10 — they are now MANDATORY (no longer an optional layer). Summary of what every new long video AND Short must do:
 
-**A. Three gates before any script is written** (write PASS + one-line reason for each at the top of `pipeline/episodes/<id>_brief.md`; one FAIL = change the premise, not the wording):
+**A. Three gates before any script is written** (write PASS + one-line reason for each at the top of `pipeline/episodes/<id>_brief.md` (copy `pipeline/episodes/_brief_template.md`); one FAIL = change the premise, not the wording):
 1. **Universal relatability** — a stranger with zero knowledge gets it with the sound off. Pick the most relatable angle, not the biggest number ("school never taught me taxes" beats "the 1913 Federal Reserve Act").
 2. **Completion compulsion** — the story follows the looped arc (B), so the ending is not predictable.
 3. **Open loop** — the hook plants a question or withholds the result; only finishing the video closes it.
