@@ -345,7 +345,7 @@ def flashable(name, rgb, rough=0.6, coat=0.0):
 # outfits: (torso colour, torso radius, sleeve colour, sleeve radius, pants colour, pants radius, extras)
 # default (owner 29 Oct): red OVERSIZED hoodie + black pants; costume swaps per scene role
 OUTFITS = {
-    "hoodie": dict(torso=((0.62, 0.04, 0.05), 0.085), arms=((0.62, 0.04, 0.05), 0.05), legs=((0.03, 0.03, 0.035), 0.045), hood=True),
+    "hoodie": dict(torso=((0.62, 0.04, 0.05), 0.1), arms=((0.62, 0.04, 0.05), 0.056), legs=((0.03, 0.03, 0.035), 0.045), hood=True),
     "professor": dict(torso=((0.33, 0.2, 0.11), 0.072), arms=((0.33, 0.2, 0.11), 0.045), legs=((0.16, 0.16, 0.18), 0.042), glasses=True, cap=True),
     "doctor": dict(torso=((0.92, 0.93, 0.95), 0.08), arms=((0.92, 0.93, 0.95), 0.047), legs=((0.12, 0.3, 0.42), 0.042), mirror=True),
     "suit": dict(torso=((0.08, 0.09, 0.13), 0.07), arms=((0.08, 0.09, 0.13), 0.044), legs=((0.08, 0.09, 0.13), 0.042), tie=True),
