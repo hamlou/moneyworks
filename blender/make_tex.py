@@ -218,3 +218,53 @@ def rent_bill():
 
 chalk_train()
 rent_bill()
+
+
+# ---- animation kit worlds (29 Oct): lined paper, banknote, concept-character logo heads
+def lined_paper():
+    W, H = 2048, 1152
+    im = Image.new("RGB", (W, H), (246, 245, 240))
+    d = ImageDraw.Draw(im)
+    for y in range(60, H, 56):
+        d.line([(0, y), (W, y)], fill=(190, 205, 225), width=3)
+    d.line([(150, 0), (150, H)], fill=(230, 150, 150), width=4)
+    r = random.Random(1)
+    for _ in range(1500):  # paper grain
+        x, y = r.randint(0, W - 1), r.randint(0, H - 1)
+        d.point((x, y), fill=(232, 230, 224))
+    im.save(os.path.join(OUT, "paper_lined.png"))
+
+
+def banknote():
+    im = Image.new("RGB", (512, 256), (120, 160, 110))
+    d = ImageDraw.Draw(im)
+    d.rectangle([8, 8, 503, 247], outline=(60, 95, 60), width=10)
+    d.ellipse([196, 48, 316, 208], fill=(150, 185, 140), outline=(60, 95, 60), width=6)
+    from PIL import ImageFont
+    try:
+        f = ImageFont.truetype("arialbd.ttf", 70)
+    except OSError:
+        f = ImageFont.load_default()
+    d.text((30, 20), "100", font=f, fill=(60, 95, 60))
+    d.text((380, 160), "100", font=f, fill=(60, 95, 60))
+    d.text((238, 85), "$", font=f, fill=(60, 95, 60))
+    im.save(os.path.join(OUT, "banknote.png"))
+
+
+def logo_head(name, bg, fg, text):
+    im = Image.new("RGB", (512, 512), bg)
+    d = ImageDraw.Draw(im)
+    from PIL import ImageFont
+    try:
+        f = ImageFont.truetype("arialbd.ttf", 300 if len(text) < 3 else 150)
+    except OSError:
+        f = ImageFont.load_default()
+    w = d.textlength(text, font=f)
+    d.text(((512 - w) / 2, 80 if len(text) < 3 else 170), text, font=f, fill=fg)
+    im.save(os.path.join(OUT, f"logo_{name}.png"))
+
+
+lined_paper()
+banknote()
+logo_head("bank", (200, 24, 30), (255, 255, 255), "$")
+logo_head("bank_word", (30, 60, 140), (255, 255, 255), "BANK")

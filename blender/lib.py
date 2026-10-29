@@ -369,6 +369,7 @@ OUTFITS = {
     "doctor": dict(torso=((0.92, 0.93, 0.95), 0.11), arms=((0.92, 0.93, 0.95), 0.06), legs=((0.12, 0.3, 0.42), 0.058), mirror=True, waist=True, shoes=True),
     "suit": dict(torso=((0.08, 0.09, 0.13), 0.095), arms=((0.08, 0.09, 0.13), 0.055), legs=((0.08, 0.09, 0.13), 0.055), tie=True, waist=True, shoes=True),
     "none": dict(torso=(None, 0.034), arms=(None, 0.03), legs=(None, 0.03)),
+    "muscle": dict(torso=((0.72, 0.07, 0.09), 0.17), arms=((0.72, 0.07, 0.09), 0.085), legs=((0.72, 0.07, 0.09), 0.075), shoes=True),
 }
 
 
@@ -554,9 +555,11 @@ class Dave:
         th = 4.6 * K.H / 1080
         sc.render.line_thickness = th
         fs = bpy.context.view_layer.freestyle_settings
-        for ls in list(fs.linesets):
-            fs.linesets.remove(ls)
-        ls = fs.linesets.new("dave")
+        if not getattr(Dave, "_lined", False):
+            for ls in list(fs.linesets):
+                fs.linesets.remove(ls)
+            Dave._lined = True
+        ls = fs.linesets.new(self.coll.name)
         ls.select_by_collection, ls.collection = True, self.coll
         ls.select_silhouette, ls.select_border, ls.select_crease = True, True, False
         ls.linestyle.color = (0.04, 0.04, 0.04)
@@ -564,6 +567,34 @@ class Dave:
 
     def place(self, loc, turn=0.0):
         self.root.location, self.root.rotation_euler = loc, (0, 0, turn)
+
+    def legs_walk(self, phase, stride=0.32, lift=0.07):
+        """walk cycle: legs swing opposite, swing leg lifts its foot; returns body bob"""
+        for s, ph in (("l", phase), ("r", phase + math.pi)):
+            hp = self.HP[s]
+            sx = -1 if s == "l" else 1
+            fwd = -math.sin(ph) * stride
+            up_ = max(0.0, math.cos(ph)) * lift
+            ft = Vector((sx * 0.08, fwd, -0.7 + up_))
+            k = (hp + ft) / 2 + Vector((0, -0.06 - up_ * 0.6, 0))
+            for i, pt in enumerate(bend(hp, k, ft)):
+                self.legs[s].data.splines[0].points[i].co = (*pt, 1)
+            self.feet[s].location = ft + Vector((0, -0.05, 0.02))
+        return abs(math.sin(phase)) * 0.025
+
+    def key(self, f):
+        """keyframe everything the rig moves at frame f (per-frame keys → Cycles motion blur works)"""
+        for o in [self.root, self.head, self.hood, self.drop] + list(self.hands.values()) + list(self.feet.values()) + [x for v in self.extras.values() for x in v]:
+            o.keyframe_insert("location", frame=f)
+            o.keyframe_insert("rotation_euler", frame=f)
+            o.keyframe_insert("scale", frame=f)
+        for o in [self.torso] + list(self.arms.values()) + list(self.legs.values()):
+            for pt in o.data.splines[0].points:
+                pt.keyframe_insert("co", frame=f)
+        for o in list(self.faces.values()) + [self.drop]:
+            o.keyframe_insert("hide_render", frame=f)
+        for fi in self.flash_ins:
+            fi.keyframe_insert("default_value", frame=f)
 
     def legs_set(self, mode, seat=0.45):
         for s in "lr":
@@ -580,7 +611,7 @@ class Dave:
             self.feet[s].location = ft + Vector((0, -0.05, 0.02))
 
     def pose(self, name, shake=(0, 0)):
-        P = POSES[name]
+        P = POSES[name] if isinstance(name, str) else name
         rot = Matrix.Rotation(R(P.get("lean", 0)), 3, "X")
         up = lambda v: rot @ Vector(v)
         for i, pt in enumerate(self.torso.data.splines[0].points):
@@ -671,3 +702,27 @@ def render(name, camera, transparent=False):
     sc.render.filepath = os.path.join(K.OUT, name + (".png" if transparent else ".jpg"))
     bpy.ops.render.render(write_still=True)
     print("frame", name, flush=True)
+
+
+def blend(a, b, t):
+    """pose dict between poses a and b (names or dicts), t 0..1 — eased in-betweens for real animation"""
+    A = POSES[a] if isinstance(a, str) else a
+    B = POSES[b] if isinstance(b, str) else b
+    I = POSES["idle"]
+    out = {}
+    for k in ("el", "hl", "er", "hr", "head"):
+        va, vb = A.get(k) or I.get(k, (0, 0, 0)), B.get(k) or I.get(k, (0, 0, 0))
+        out[k] = tuple(x + (y - x) * t for x, y in zip(va, vb))
+    out["lean"] = A.get("lean", 0) + (B.get("lean", 0) - A.get("lean", 0)) * t
+    return out
+
+
+def ease(t):
+    t = max(0.0, min(1.0, t))
+    return t * t * (3 - 2 * t)
+
+
+def back_out(t, k=1.7):
+    """ease-out with overshoot (the reference's snappy entrances)"""
+    t = max(0.0, min(1.0, t)) - 1
+    return t * t * ((k + 1) * t + k) + 1

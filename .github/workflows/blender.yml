@@ -103,6 +103,16 @@ jobs:
         run: |
           mkdir -p out
           ls frames | head
+          # animated shots (anim.py): frames named <SHOT>_<n>.jpg → one mp4 per shot, then all shots joined
+          if [ "${{ needs.plan.outputs.mode }}" = "full" ] && ls frames/[A-Z]_*.jpg >/dev/null 2>&1; then
+            : > list.txt
+            for p in $(ls frames | grep -oE '^[A-Z]_' | sort -u | tr -d _); do
+              ffmpeg -v error -framerate 24 -start_number 1 -i frames/${p}_%04d.jpg -c:v libx264 -crf 16 -pix_fmt yuv420p out/shot_$p.mp4
+              echo "file 'out/shot_$p.mp4'" >> list.txt
+            done
+            ffmpeg -v error -f concat -safe 0 -i list.txt -c copy out/${{ needs.plan.outputs.shot }}.mp4
+            ffmpeg -v error -i out/${{ needs.plan.outputs.shot }}.mp4 -vf "fps=6,scale=320:-1,tile=8x6" out/sheet_%02d.jpg
+          fi
           if [ "${{ needs.plan.outputs.mode }}" = "full" ] && ls frames/f_*.jpg >/dev/null 2>&1; then
             ffmpeg -v error -framerate 24 -i frames/f_%04d.jpg -c:v libx264 -crf 17 -pix_fmt yuv420p out/${{ needs.plan.outputs.shot }}.mp4
             ffmpeg -v error -i out/${{ needs.plan.outputs.shot }}.mp4 -vf "fps=8,scale=320:-1,tile=8x5" out/sheet_%02d.jpg
