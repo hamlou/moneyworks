@@ -18,12 +18,12 @@ SEAT = room.seat + 0.03
 form = dave.prop("taxform", (0.26, 0.34), "taxform.png")
 cover = dave.prop("book", (0.2, 0.26), "book_math.png")
 pages = dave.prop("pages", (0.46, 0.3), "book_pages.png")
-days = text3d("30 DAYS", (-0.55, -1.0, 0), (R(90), 0, R(24)), 0.42, dave.body_m, dave.coll)
+days = text3d("30 DAYS", (-0.6, -1.05, 0), (R(90), 0, R(24)), 0.5, __import__("lib").flat("days_white", (0.97, 0.97, 0.95), 0.3, 0.3, emit=0.35), dave.coll, extrude=0.09)
 
 CAM = {
     "wide": cam("wide", (1.3, -2.6, 0.9), (-0.1, 0.1, 0.85), 24),
     "close": cam("close", (0.8, -1.2, 1.15), (-0.15, 0.25, 1.08), 34),
-    "hero": cam("hero", (0.95, -1.75, 0.32), (0.05, -0.2, 1.0), 20),
+    "hero": cam("hero", (1.0, -1.95, 0.3), (0.1, -0.3, 0.9), 17),
     "days": cam("days", (1.5, -3.2, 0.95), (-0.05, -0.6, 0.6), 24),
     "board": cam("board", (-0.75, 1.15, 1.45), (-1.3, 3.0, 1.55), 30),
     "desk": cam("desk", (1.05, -1.75, 1.25), (-0.05, -0.3, 0.75), 28),
