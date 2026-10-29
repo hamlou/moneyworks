@@ -101,3 +101,69 @@ def taxform():
 board()
 taxform()
 print(sorted(os.listdir(OUT)))
+
+
+# ---- test1 additions (29 Oct): more faces + props from the script lines
+face("grin", lambda d: (stroke(d, arc(L, EY + 10, 34, 26, 200, 340), seed=12), stroke(d, arc(R, EY + 10, 34, 26, 200, 340), seed=13),
+                        d.chord([420, MY - 60, 604, MY + 90], 0, 180, outline=INK, fill=(70, 22, 22, 255), width=14)))
+face("determined", lambda d: (eye(d, L, EY + 8), eye(d, R, EY + 8), stroke(d, [(L - 60, EY - 90), (L + 45, EY - 50)], seed=14), stroke(d, [(R - 45, EY - 50), (R + 60, EY - 90)], seed=15),
+                              stroke(d, [(450, MY + 10), (520, MY), (580, MY - 25)], seed=16)))
+face("smug", lambda d: (stroke(d, [(L - 40, EY), (L + 40, EY)], seed=17), stroke(d, [(R - 40, EY), (R + 40, EY)], seed=18), eye(d, L + 10, EY + 18, 20), eye(d, R + 10, EY + 18, 20),
+                        stroke(d, [(L - 50, EY - 80), (L + 40, EY - 95)], seed=19), stroke(d, [(450, MY + 15), (540, MY + 15), (590, MY - 20)], seed=20)))
+face("sleep", lambda d: (stroke(d, arc(L, EY, 36, 18, 20, 160), seed=21), stroke(d, arc(R, EY, 36, 18, 20, 160), seed=22), d.ellipse([490, MY, 534, MY + 50], outline=INK, width=12)))
+
+
+def xeye(d, cx, cy, r=34, s=1):
+    stroke(d, [(cx - r, cy - r), (cx + r, cy + r)], seed=s)
+    stroke(d, [(cx - r, cy + r), (cx + r, cy - r)], seed=s + 1)
+
+
+face("dead", lambda d: (xeye(d, L, EY, s=23), xeye(d, R, EY, s=25), stroke(d, [(450, MY + 20), (500, MY + 5), (560, MY + 25)], seed=27)))
+
+
+def board_day1():
+    W, H = 2048, 1024
+    im = Image.new("RGB", (W, H), (38, 64, 50))
+    d = ImageDraw.Draw(im, "RGBA")
+    r = random.Random(9)
+    for _ in range(300):  # old erased chalk
+        x, y = r.uniform(0, W), r.uniform(0, H)
+        d.ellipse([x - 90, y - 25, x + 90, y + 25], fill=(255, 255, 255, 7))
+    from PIL import ImageFont
+    try:
+        f = ImageFont.truetype("comicbd.ttf", 420)
+    except OSError:
+        f = ImageFont.load_default()
+    for dx, dy in [(0, 0), (3, 2), (-2, 3)]:
+        d.text((360 + dx, 220 + dy), "DAY 1", font=f, fill=(236, 238, 228, 120))
+    d.line(wob([(380, 760), (900, 790), (1680, 760)], 6, 3), fill=(236, 238, 228, 170), width=14)
+    im.save(os.path.join(OUT, "chalk_day1.png"))
+
+
+def book_cover():
+    im = Image.new("RGB", (800, 1000), (176, 40, 38))
+    d = ImageDraw.Draw(im)
+    from PIL import ImageFont
+    try:
+        f, g = ImageFont.truetype("arialbd.ttf", 170), ImageFont.truetype("arialbd.ttf", 60)
+    except OSError:
+        f = g = ImageFont.load_default()
+    d.rectangle([0, 0, 800, 1000], outline=(120, 24, 22), width=30)
+    d.text((110, 240), "MATH", font=f, fill=(250, 236, 200))
+    d.text((150, 460), "GRADE 10", font=g, fill=(250, 236, 200))
+    for i, (x, y) in enumerate([(180, 640), (420, 600), (560, 760)]):
+        d.polygon([(x, y + 120), (x + 160, y + 120), (x + 40, y)], outline=(250, 236, 200), width=10)
+    im.save(os.path.join(OUT, "book_math.png"))
+    pg = Image.new("RGB", (1200, 800), (244, 240, 228))
+    d = ImageDraw.Draw(pg)
+    rr = random.Random(5)
+    for side in (0, 600):
+        for i in range(16):
+            d.rectangle([side + 60, 80 + i * 42, side + 60 + rr.randint(300, 470), 92 + i * 42], fill=(150, 146, 136))
+    d.line([(600, 0), (600, 800)], fill=(200, 194, 180), width=8)
+    pg.save(os.path.join(OUT, "book_pages.png"))
+
+
+board_day1()
+book_cover()
+print(sorted(os.listdir(OUT)))

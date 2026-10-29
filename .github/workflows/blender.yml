@@ -37,7 +37,10 @@ jobs:
           SAMPLES=${{ inputs.samples }}; SAMPLES=${SAMPLES:-$(awk '{print $3}' blender/RUN)}
           ENGINE=$(awk '{print $4}' blender/RUN); echo "engine=${ENGINE:-cycles}" >> $GITHUB_OUTPUT
           echo "shot=$SHOT" >> $GITHUB_OUTPUT; echo "mode=$MODE" >> $GITHUB_OUTPUT; echo "samples=$SAMPLES" >> $GITHUB_OUTPUT
-          if [ "$MODE" = "full" ]; then
+          if [ -f blender/$SHOT.chunks ]; then
+            echo "chunks=$(cat blender/$SHOT.chunks)" >> $GITHUB_OUTPUT
+            [ "$MODE" = "full" ] && echo 'res=1920x1080' >> $GITHUB_OUTPUT || echo 'res=960x540' >> $GITHUB_OUTPUT
+          elif [ "$MODE" = "full" ]; then
             echo 'chunks=["1-30","31-60","61-90","91-120"]' >> $GITHUB_OUTPUT; echo 'res=1920x1080' >> $GITHUB_OUTPUT
           else
             echo 'chunks=["5,30,60,95"]' >> $GITHUB_OUTPUT; echo 'res=960x540' >> $GITHUB_OUTPUT
@@ -100,11 +103,11 @@ jobs:
         run: |
           mkdir -p out
           ls frames | head
-          if [ "${{ needs.plan.outputs.mode }}" = "full" ]; then
+          if [ "${{ needs.plan.outputs.mode }}" = "full" ] && ls frames/f_*.jpg >/dev/null 2>&1; then
             ffmpeg -v error -framerate 24 -i frames/f_%04d.jpg -c:v libx264 -crf 17 -pix_fmt yuv420p out/${{ needs.plan.outputs.shot }}.mp4
             ffmpeg -v error -i out/${{ needs.plan.outputs.shot }}.mp4 -vf "fps=8,scale=320:-1,tile=8x5" out/sheet_%02d.jpg
           fi
-          cp frames/*.jpg out/
+          cp frames/*.jpg frames/*.png out/ 2>/dev/null || true
       - uses: actions/upload-artifact@v4
         with:
           name: ${{ needs.plan.outputs.shot }}-${{ needs.plan.outputs.mode }}
