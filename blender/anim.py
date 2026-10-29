@@ -8,12 +8,14 @@ blender -b -P blender/anim.py -- --assets A --tex T --out O --frames "A:1-20" [-
   C  alley   96 f  night alley: Dave walks in as a silhouette, a spotlight sweeps across and reveals him, he snaps to camera
   D  army    72 f  golden-hour field (real HDRI sky): an army of 32 identical white stickmen marches toward camera in sync,
                    Dave in his red hoodie walks in front of them looking back, low tracking camera
+  E  street  72 f  REAL MOCAP (CMU 02_03 jog): Dave jogs down a city street (urban HDRI, asphalt) past white bystanders
+                   who walk with CMU 02_01; tracking camera at hip height
 """
 import sys, os, math
 from mathutils import Vector
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-from lib import K, R, setup, Dave, flat, pbr, image_mat, box, plane, cam, blend, ease, back_out, finish, dof, world_hdri, ground, crowd, POSES  # noqa: E402
+from lib import K, R, setup, Dave, flat, pbr, image_mat, box, plane, cam, blend, ease, back_out, finish, dof, world_hdri, ground, crowd, Mocap, mocap_pose, POSES  # noqa: E402
 import bpy  # noqa: E402
 
 args = setup(sys.argv[sys.argv.index("--") + 1:])
@@ -27,7 +29,7 @@ FRAMES = []
 for part in rng.split(","):
     a, _, b = part.partition("-")
     FRAMES += list(range(int(a), int(b or a) + 1))
-LEN = {"A": 60, "B": 84, "C": 96, "D": 72}[SHOT]
+LEN = {"A": 60, "B": 84, "C": 96, "D": 72, "E": 72}[SHOT]
 
 POSES["flex"] = dict(el=(-0.3, 0.0, 0.4), hl=(-0.24, -0.04, 0.64), er=(0.3, 0.0, 0.4), hr=(0.24, -0.04, 0.64), head=(-6, 0, 0))
 POSES["windup"] = dict(el=(-0.3, 0.0, 0.4), hl=(-0.24, -0.04, 0.64), er=(0.26, 0.18, 0.3), hr=(0.2, 0.3, 0.42), head=(4, 0, -10), lean=-6)
@@ -309,8 +311,30 @@ if SHOT == "D":
         key_cam(cam0, f, (1.4, -3.4 - f * 0.036, 0.35), (0.2, 3 - f * 0.036, 1.3), 22)
     crowd(soldier, rows=4, cols=8, dx=0.95, dy=1.2, origin=(0, 0, 0))
 
+# ================================================================== E · real mocap jog on a street
+if SHOT == "E":
+    world_hdri("city", 1.0, 40)
+    ground("asphalt", 80, 0.35)
+    light("sun", "SUN", (0, 0, 10), (R(55), 0, R(30)), energy=2.0, color=(1.0, 0.94, 0.86), angle=R(2))
+    jog, walk = Mocap("02_03", start=1, step=5, frames=80), Mocap("02_01", start=1, step=5, frames=80)
+    d = Dave()
+    extra = Dave("Bystander")
+    extra.outfit("none")
+    extra.live_obj.hide_render = True
+    extra.face(None)
+    for f in range(1, LEN + 1):
+        mocap_pose(d, jog, (f - 1) % len(jog), base=(-2.5, 0, 0), turn=R(-90))
+        d.live(f, "determined" if f < 46 else "grin", talking=f >= 46)
+        d.life(f, 0.3)
+        d.key(f)
+        mocap_pose(extra, walk, (f - 1) % len(walk), base=(3, 2.5, 0), turn=R(90))
+        extra.key(f)
+        dx = d.root.location.x
+        key_cam(cam0, f, (dx + 0.6, -4.2, 0.9), (dx + 0.9, 0, 0.95), 26)
+    crowd(extra, rows=2, cols=4, dx=1.6, dy=1.8, origin=(0, 1.5, 0), jitter=0.4)
+
 finish()
-if SHOT in ("B", "C", "D"):
+if SHOT in ("B", "C", "D", "E"):
     dof(cam0, d.head, 2.2 if SHOT == "B" else 2.8)
 # ------------------------------------------------------------------ render the requested frames
 sc.render.image_settings.file_format, sc.render.image_settings.quality = "JPEG", 90

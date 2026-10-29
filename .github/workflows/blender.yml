@@ -71,7 +71,9 @@ jobs:
           path: assets
           key: ph-${{ hashFiles('blender/fetch.py') }}-${{ needs.plan.outputs.shot }}
       - name: CC0 assets (Poly Haven)
-        run: python3 blender/fetch.py assets SchoolDesk_01 SchoolChair_01 wall_clock potted_plant_01 book_encyclopedia_set_01
+        run: |
+          python3 blender/fetch.py assets SchoolDesk_01 SchoolChair_01 wall_clock potted_plant_01 book_encyclopedia_set_01
+          python3 blender/fetch_mocap.py assets 02_01 02_03 02_04 02_05
       - name: Render ${{ matrix.chunk }}
         run: |
           export LIBGL_ALWAYS_SOFTWARE=1 GALLIUM_DRIVER=llvmpipe

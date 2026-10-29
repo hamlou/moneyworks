@@ -886,3 +886,99 @@ def crowd(dave, rows=4, cols=8, dx=0.9, dy=1.1, origin=(0, 4, 0), jitter=0.15, s
             new_root.parent = off
             out.append(off)
     return out
+
+
+# ---- motion capture → Dave (29 Oct): real recorded human motion (CMU, free) retargeted onto the curve rig -------------
+class Mocap:
+    """load a CMU BVH, sample joint positions at 24 fps, normalised to Dave's size and turned to face -Y.
+    m = Mocap("02_03"); s = m.sample(i) → dict of joint positions in Dave's body frame (+ root offset)."""
+    J = ["Hips", "Spine", "Neck", "Head", "LeftUpLeg", "LeftLeg", "LeftFoot", "RightUpLeg", "RightLeg", "RightFoot",
+         "LeftArm", "LeftForeArm", "LeftHand", "RightArm", "RightForeArm", "RightHand"]
+
+    def __init__(self, mid, start=1, step=5, frames=200):
+        sc = K.sc
+        keep = sc.frame_current
+        bpy.ops.object.select_all(action="DESELECT")
+        bpy.ops.import_anim.bvh(filepath=os.path.join(K.A, "mocap", mid + ".bvh"), axis_forward="-Z", axis_up="Y", global_scale=1.0, update_scene_fps=False, update_scene_duration=False)
+        arm = bpy.context.object
+        arm.hide_render = True
+        names = {b.name: b for b in arm.pose.bones}
+
+        def find(j):
+            if j in names:
+                return names[j]
+            return next((b for n, b in names.items() if n.lower().endswith(j.lower())), None)
+
+        bones = {j: find(j) for j in self.J}
+        a0, a1 = arm.animation_data.action.frame_range
+        self.raw = []
+        f = a0 + start
+        while f <= a1 and len(self.raw) < frames:
+            sc.frame_set(int(f))
+            self.raw.append({j: (arm.matrix_world @ b.head).copy() for j, b in bones.items() if b})
+            f += step
+        sc.frame_set(keep)
+        r0 = self.raw[0]
+        ground = min(min(fr["LeftFoot"].z, fr["RightFoot"].z) for fr in self.raw[:10])
+        self.scale = 0.72 / max(1e-6, r0["Hips"].z - ground)
+        self.ground = ground
+        right = r0["RightUpLeg"] - r0["LeftUpLeg"]
+        right.z = 0
+        fwd = Vector((0, 0, 1)).cross(right.normalized())
+        self.yaw = math.atan2(fwd.y, fwd.x) - math.atan2(-1, 0)  # rotate so the actor faces -Y (towards camera)
+        self.hip0 = r0["Hips"].copy()
+
+    def __len__(self):
+        return len(self.raw)
+
+    def sample(self, i):
+        fr = self.raw[min(i, len(self.raw) - 1)]
+        rot = Matrix.Rotation(-self.yaw, 3, "Z")
+        hips = fr["Hips"]
+        local = {j: rot @ ((v - hips) * self.scale) for j, v in fr.items()}
+        d = rot @ ((hips - self.hip0) * self.scale)
+        return local, Vector((d.x, d.y, (hips.z - self.ground) * self.scale))
+
+
+def _set_curve(o, a, b, c):
+    for i, pt in enumerate(bend(a, b, c)):
+        o.data.splines[0].points[i].co = (*pt, 1)
+
+
+def mocap_pose(dave, m, i, base=(0, 0, 0), turn=0.0, root_motion=True):
+    """drive Dave's whole rig from mocap sample i. Dave's 'l' side (screen-left, his anatomical right) ← the actor's Right*."""
+    J, root = m.sample(i)
+    rz = Matrix.Rotation(turn, 3, "Z")
+    off = rz @ root if root_motion else Vector((0, 0, root.z))
+    dave.root.location = (base[0] + off.x, base[1] + off.y, base[2] + off.z)
+    dave.root.rotation_euler = (0, 0, turn)
+    neck, head = J["Neck"], J["Head"]
+    spine = neck.normalized()
+    tq = Vector((0, 0, 1)).rotation_difference(spine)
+    up = lambda v: tq @ Vector(v)
+    for k, pt in enumerate(dave.torso.data.splines[0].points):
+        pt.co = (*up(dave.HIP.lerp(dave.NECK, k / 6)), 1)
+    neckp = up(dave.NECK)
+    for s, side in (("l", "Right"), ("r", "Left")):
+        sh = up(dave.SH[s])
+        e, h = J[side + "ForeArm"] - J[side + "Arm"], J[side + "Hand"] - J[side + "Arm"]
+        _set_curve(dave.arms[s], sh, sh + e * 1.05, sh + h * 1.05)
+        dave.hands[s].location = sh + h * 1.05
+        hp = dave.HP[s]
+        kn, ft = J[side + "Leg"] - J[side + "UpLeg"], J[side + "Foot"] - J[side + "UpLeg"]
+        _set_curve(dave.legs[s], hp, hp + kn, hp + ft)
+        dave.feet[s].location = hp + ft + Vector((0, -0.05, 0.02))
+    dave.head.location = neckp + (head - neck).normalized() * 0.2
+    tilt = (head - neck).normalized()
+    dave.head.rotation_euler = (math.atan2(-tilt.y, tilt.z), 0, 0)
+    out = OUTFITS[getattr(dave, "outfit_name", "hoodie")]
+    r = out["torso"][1]
+    lean_e = tq.to_euler()
+    dave.hood.location = up(dave.NECK + Vector((0, 0.07, 0.13)))
+    dave.extras["hem"][0].location, dave.extras["hem"][0].rotation_euler = up(Vector((0, 0, 0.03))), lean_e
+    dave.extras["hem"][0].scale = (r * 1.12 / 0.14, r * 1.12 / 0.14, 1)
+    dave.extras["pocket"][0].location = up(Vector((0, -r * 1.02, 0.13)))
+    dave.extras["pocket"][0].rotation_euler = (lean_e.x + R(90), lean_e.y, lean_e.z)
+    for x_, o_ in zip((-0.035, 0.035), dave.extras["strings"]):
+        o_.location, o_.rotation_euler = up(Vector((x_, -r * 0.92, 0.34))), lean_e
+    dave.extras["tie"][0].location = up(Vector((0, -0.08, 0.32)))
