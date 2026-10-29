@@ -1,0 +1,40 @@
+name: voicebake2
+# Free voice bake-off v2 (29 Oct 2026, owner: "find a free solution for the voice"): our current Chatterbox vs
+# Chatterbox-Turbo (MIT) vs Dia 1.6B (Apache 2.0, 2 seeds) on the test1 hook. Download "voicebake2-*" and listen.
+on:
+  push:
+    paths: ['pipeline/voicebake2/**', '.github/workflows/voicebake2.yml']
+  workflow_dispatch:
+jobs:
+  engine:
+    runs-on: ubuntu-latest
+    timeout-minutes: 180
+    strategy:
+      fail-fast: false
+      matrix:
+        job: [cb-current, cb-turbo, dia-3, dia-42]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg
+      - if: startsWith(matrix.job, 'cb-')
+        run: pip install -q --extra-index-url https://download.pytorch.org/whl/cpu chatterbox-tts numpy
+      - if: matrix.job == 'cb-current'
+        run: cd pipeline/voicebake2 && python cb_current.py
+      - if: matrix.job == 'cb-turbo'
+        run: cd pipeline/voicebake2 && python cb_turbo.py
+      - if: startsWith(matrix.job, 'dia')
+        run: |
+          pip install -q --extra-index-url https://download.pytorch.org/whl/cpu torch torchaudio numpy
+          pip install -q git+https://github.com/nari-labs/dia.git
+          cd pipeline/voicebake2 && python dia_run.py ${MATRIX_JOB#dia-}
+        env:
+          MATRIX_JOB: ${{ matrix.job }}
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: voicebake2-${{ matrix.job }}
+          path: pipeline/voicebake2/voicebake/*.mp3
+          if-no-files-found: warn

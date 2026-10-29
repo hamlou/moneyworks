@@ -1,0 +1,29 @@
+{
+ "note": "voice bake-off v2 (29 Oct 2026): test1 natural-speech hook, same lines for every engine. Dia gets [S1] + (laughs) cues; others plain.",
+ "lines": [
+  {
+   "t": "I spent twelve years in school and they taught me how to find the area of a triangle but they spent zero minutes teaching me how to do my taxes.",
+   "gap": 0.25
+  },
+  {
+   "t": "And twelve years is about as long as a dog lives so a whole dog lived and died while I was learning triangles.",
+   "gap": 0.6
+  },
+  {
+   "t": "So I did the only reasonable thing and I went back to school.",
+   "gap": 0.25
+  },
+  {
+   "t": "For the next thirty days I am sitting in every single class a normal school has because I am looking for the one lesson that teaches you about money.",
+   "gap": 0.25
+  },
+  {
+   "t": "If I find it I win but if I don't find it I am writing that class myself and you are all taking it.",
+   "gap": 0.6
+  },
+  {
+   "t": "So on day one I walked into my math class.",
+   "gap": 0.6
+  }
+ ]
+}
