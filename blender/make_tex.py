@@ -10,8 +10,11 @@ S = 1024
 INK = (18, 18, 18, 255)
 
 
+BOIL = 0  # 0,1,2: the hand-drawn "boil" — same drawing, slightly different wobble (live faces swap it every 3 frames)
+
+
 def wob(pts, amp=3, seed=1):
-    r = random.Random(seed)
+    r = random.Random(seed + BOIL * 997)
     return [(x + r.uniform(-amp, amp), y + r.uniform(-amp, amp)) for x, y in pts]
 
 
@@ -268,3 +271,71 @@ lined_paper()
 banknote()
 logo_head("bank", (200, 24, 30), (255, 255, 255), "$")
 logo_head("bank_word", (30, 60, 140), (255, 255, 255), "BANK")
+
+
+
+# ---- LIVE faces (29 Oct): per expression closed / open (talking) / blink mouth+eyes, each in 3 boil drawings
+# → tex/live/<expr>_<c|o|b>_<k>.png. Used by lib.Dave.live() (mouth flaps on the voice, blinks, line boil).
+def _j(v):
+    r = random.Random(BOIL * 31 + int(v))
+    return r.uniform(-2.5, 2.5) if BOIL else 0
+
+
+def e_dots(d, look=(0, 0), r=38):
+    eye(d, L + _j(1), EY + _j(2), r, look); eye(d, R + _j(3), EY + _j(4), r, look)
+
+
+def e_big(d, look=(0, 0), r=72, pupil=24):
+    big_eye(d, L + _j(5), EY + _j(6), r, look, pupil); big_eye(d, R + _j(7), EY + _j(8), r, look, pupil)
+
+
+def e_blink(d):
+    stroke(d, arc(L, EY + 6, 40, 12, 10, 170), seed=40); stroke(d, arc(R, EY + 6, 40, 12, 10, 170), seed=41)
+
+
+def brows(d, l, r_):
+    stroke(d, l, seed=42); stroke(d, r_, seed=43)
+
+
+def m_smile(d): stroke(d, arc(512, MY - 40, 70, 40, 30, 150), seed=50)
+def m_line(d): stroke(d, [(470, MY + 20), (520, MY + 10), (560, MY + 25)], seed=51)
+def m_o(d, w=40, h=50): d.ellipse([512 - w, MY - 10, 512 + w, MY - 10 + h * 2], outline=INK, width=14, fill=(60, 20, 20, 255))
+def m_open_smile(d, h=110): d.chord([420, MY - 60, 604, MY - 60 + h * 1.4], 0, 180, outline=INK, fill=(70, 22, 22, 255), width=14)
+def m_wide(d, h=110): d.polygon([(430, MY), (594, MY), (560, MY + h), (464, MY + h)], outline=INK, fill=(70, 22, 22, 255), width=14)
+def m_zig(d): stroke(d, [(440, MY + 30), (475, MY), (512, MY + 30), (549, MY), (585, MY + 30)], 14, seed=52)
+
+
+SHOCK_B = ([(L - 60, EY - 120), (L + 40, EY - 140)], [(R - 40, EY - 140), (R + 60, EY - 120)])
+THINK_B = ([(L - 50, EY - 115), (L + 50, EY - 95)], [(R - 50, EY - 125), (R + 50, EY - 135)])
+ANGRY_B = ([(L - 60, EY - 90), (L + 45, EY - 50)], [(R - 45, EY - 50), (R + 60, EY - 90)])
+PANIC_B = ([(L - 70, EY - 100), (L + 40, EY - 135)], [(R - 40, EY - 135), (R + 70, EY - 100)])
+LIVE = {  # expr: (eyes, closed mouth, open mouth)
+    "neutral": (lambda d: e_dots(d), m_smile, lambda d: m_o(d, 34, 34)),
+    "grin": (lambda d: (stroke(d, arc(L, EY + 10, 34, 26, 200, 340), seed=12), stroke(d, arc(R, EY + 10, 34, 26, 200, 340), seed=13)), lambda d: m_open_smile(d, 70), lambda d: m_open_smile(d, 120)),
+    "shock": (lambda d: (e_big(d), brows(d, *SHOCK_B)), lambda d: m_o(d, 30, 34), lambda d: m_o(d, 48, 62)),
+    "think": (lambda d: (e_big(d, (-26, -8), 52, 16), brows(d, *THINK_B)), m_line, lambda d: m_o(d, 26, 30)),
+    "determined": (lambda d: (e_dots(d), brows(d, *ANGRY_B)), lambda d: stroke(d, [(450, MY + 10), (520, MY), (580, MY - 25)], seed=16), lambda d: m_wide(d, 70)),
+    "panic": (lambda d: (e_big(d, (0, 6), 64, 12), brows(d, *PANIC_B)), lambda d: m_wide(d, 60), lambda d: m_wide(d, 120)),
+    "smug": (lambda d: (stroke(d, [(L - 40, EY), (L + 40, EY)], seed=17), stroke(d, [(R - 40, EY), (R + 40, EY)], seed=18), eye(d, L + 10, EY + 18, 20), eye(d, R + 10, EY + 18, 20)), lambda d: stroke(d, [(450, MY + 15), (540, MY + 15), (590, MY - 20)], seed=20), lambda d: m_open_smile(d, 60)),
+    "spiral": (lambda d: (spiral(d, L, EY), spiral(d, R, EY)), m_zig, lambda d: m_o(d, 30, 40)),
+    "dead": (lambda d: (xeye(d, L, EY, s=23), xeye(d, R, EY, s=25)), lambda d: stroke(d, [(450, MY + 20), (500, MY + 5), (560, MY + 25)], seed=27), lambda d: m_o(d, 30, 30)),
+}
+
+
+def build_live():
+    global BOIL
+    out = os.path.join(OUT, "live")
+    os.makedirs(out, exist_ok=True)
+    for name, (eyes, mc, mo) in LIVE.items():
+        for k in range(3):
+            BOIL = k
+            for var, mouth, blink in (("c", mc, False), ("o", mo, False), ("b", mc, True)):
+                im = Image.new("RGBA", (S, S), (0, 0, 0, 0))
+                d = ImageDraw.Draw(im)
+                (e_blink if blink and name not in ("dead", "spiral") else eyes)(d)
+                mouth(d)
+                im.filter(ImageFilter.GaussianBlur(0.7)).save(os.path.join(out, f"{name}_{var}_{k}.png"))
+    BOIL = 0
+
+
+build_live()

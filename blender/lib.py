@@ -335,8 +335,9 @@ def flashable(name, rgb, rough=0.6, coat=0.0, fabric=False):
     p.inputs["Roughness"].default_value = rough
     p.inputs["Coat Weight"].default_value = coat
     if fabric:
-        p.inputs["Sheen Weight"].default_value = 0.8
+        p.inputs["Sheen Weight"].default_value = 0.3  # 0.8 white sheen turned the red hoodie pink (29 Oct)
         p.inputs["Sheen Roughness"].default_value = 0.6
+        p.inputs["Sheen Tint"].default_value = (*rgb, 1)
         nz = n.new("ShaderNodeTexNoise")
         nz.inputs["Scale"].default_value = 900
         nz.inputs["Detail"].default_value = 2
@@ -372,6 +373,67 @@ OUTFITS = {
     "none": dict(torso=(None, 0.034), arms=(None, 0.03), legs=(None, 0.03)),
     "muscle": dict(torso=((0.72, 0.07, 0.09), 0.17), arms=((0.72, 0.07, 0.09), 0.085), legs=((0.72, 0.07, 0.09), 0.075), shoes=True),
 }
+
+
+LIVE_DAVES = []
+_IMG = {}
+
+
+def _live_handler(scene, *_):
+    f = scene.frame_current
+    for dv in LIVE_DAVES:
+        name = dv.sched.get(f)
+        if name:
+            if name not in _IMG:
+                _IMG[name] = bpy.data.images.load(os.path.join(K.T, "live", name), check_existing=True)
+            dv.live_node.image = _IMG[name]
+
+
+bpy.app.handlers.frame_change_pre.append(_live_handler)
+
+
+def finish(grain=0.035, vignette=0.35, bloom=True):
+    """finishing pass (29 Oct, 'less computer'): bloom on bright lights, slight lens dispersion, warm grade, vignette.
+    Film grain is added at assembly (ffmpeg noise) so it changes every frame."""
+    sc = K.sc
+    sc.use_nodes = True
+    nt = sc.node_tree
+    for n in list(nt.nodes):
+        nt.nodes.remove(n)
+    rl, comp = nt.nodes.new("CompositorNodeRLayers"), nt.nodes.new("CompositorNodeComposite")
+    last = rl.outputs["Image"]
+    if bloom:
+        g = nt.nodes.new("CompositorNodeGlare")
+        g.glare_type, g.quality, g.threshold, g.size = "FOG_GLOW", "MEDIUM", 0.85, 7
+        nt.links.new(last, g.inputs["Image"]); last = g.outputs["Image"]
+    ld = nt.nodes.new("CompositorNodeLensdist")
+    ld.inputs["Dispersion"].default_value = 0.012
+    nt.links.new(last, ld.inputs["Image"]); last = ld.outputs["Image"]
+    cb = nt.nodes.new("CompositorNodeColorBalance")
+    cb.correction_method = "LIFT_GAMMA_GAIN"
+    cb.lift, cb.gamma, cb.gain = (1.0, 0.99, 0.97), (1.0, 1.0, 0.98), (1.04, 1.01, 0.96)
+    nt.links.new(last, cb.inputs["Image"]); last = cb.outputs["Image"]
+    em = nt.nodes.new("CompositorNodeEllipseMask")
+    em.width, em.height = 1.05, 0.95
+    bl = nt.nodes.new("CompositorNodeBlur")
+    bl.filter_type, bl.use_relative, bl.factor_x, bl.factor_y = "FAST_GAUSS", True, 0.35, 0.35
+    nt.links.new(em.outputs["Mask"], bl.inputs["Image"])
+    inv = nt.nodes.new("CompositorNodeMath")
+    inv.operation, inv.use_clamp = "MULTIPLY_ADD", True
+    inv.inputs[1].default_value, inv.inputs[2].default_value = vignette, 1 - vignette
+    nt.links.new(bl.outputs["Image"], inv.inputs[0])
+    mul = nt.nodes.new("CompositorNodeMixRGB")  # image × (1 − v + v·mask): darker edges, centre untouched
+    mul.blend_type = "MULTIPLY"
+    mul.inputs[0].default_value = 1.0
+    nt.links.new(last, mul.inputs[1])
+    nt.links.new(inv.outputs["Value"], mul.inputs[2])
+    nt.links.new(mul.outputs["Image"], comp.inputs["Image"])
+
+
+def dof(camera, target_obj, fstop=2.8):
+    camera.data.dof.use_dof = True
+    camera.data.dof.focus_object = target_obj
+    camera.data.dof.aperture_fstop = fstop
 
 
 class Dave:
@@ -423,6 +485,23 @@ class Dave:
         self.drop.data.materials.append(flat("drop", (0.55, 0.8, 1.0), 0.05, 1.0))
         into(self.drop, self.noline).parent = self.head
         self.props = {}
+        # LIVE face (29 Oct): one decal whose image is swapped every frame by a frame-change handler →
+        # mouth flaps on the voice, blinks, 3-drawing line boil (tex/live/<expr>_<c|o|b>_<k>.png)
+        bpy.ops.mesh.primitive_plane_add(size=0.44, location=(0, -0.26, 0.01), rotation=(R(90), 0, 0))
+        lf = bpy.context.object
+        lf.name = "face_live"
+        bpy.ops.object.mode_set(mode="EDIT")
+        bpy.ops.mesh.subdivide(number_cuts=24)
+        bpy.ops.object.mode_set(mode="OBJECT")
+        sw = lf.modifiers.new("wrap", "SHRINKWRAP")
+        sw.target, sw.offset = self.head, 0.0025
+        lm = image_mat("face_live_" + coll_name, "live/neutral_c_0.png", alpha=True, rough=0.5)
+        lf.data.materials.append(lm)
+        into(lf, self.noline).parent = self.head
+        lf.hide_render = True
+        self.live_obj, self.live_node, self.sched, self.voice_open = lf, lm.node_tree.nodes["Image Texture"], {}, None
+        self.blink_seed = len(LIVE_DAVES) * 37
+        LIVE_DAVES.append(self)
         # clothes: one flashable material per part (recoloured per outfit) + costume extras
         self.cloth = {}
         self.flash_ins = [self.flash_in]
@@ -570,6 +649,42 @@ class Dave:
     def place(self, loc, turn=0.0):
         self.root.location, self.root.rotation_euler = loc, (0, 0, turn)
 
+    # ---- life (29 Oct): live face + idle micro-motion + squash & stretch -------------------------------------------
+    def load_voice(self, wav, start_frame=1, fps=24, thresh=0.18):
+        """mouth-open frames from the voice loudness (RMS per frame above thresh × peak)"""
+        import wave, numpy as np
+        with wave.open(wav) as w:
+            sr, x = w.getframerate(), np.frombuffer(w.readframes(w.getnframes()), np.int16).astype(np.float32)
+        hop = int(sr / fps)
+        rms = np.array([np.sqrt((x[i:i + hop] ** 2).mean() + 1e-9) for i in range(0, len(x) - hop, hop)])
+        self.voice_open = {start_frame + i for i, v in enumerate(rms) if v > thresh * rms.max()}
+
+    def talking_open(self, f):
+        if self.voice_open is not None:
+            return f in self.voice_open
+        return ((f // 3) * 7 + f // 5) % 3 != 0  # no voice yet: a natural-looking open/close pattern
+
+    def live(self, f, expr, talking=False):
+        """set the live face for frame f: blink every ~2.5–4 s (3 frames), mouth flaps while talking, boil every 3 frames"""
+        for o in self.faces.values():
+            o.hide_render = True
+        self.live_obj.hide_render = False
+        period = 70 + (self.blink_seed % 29)
+        blink = (f + self.blink_seed) % period < 3 and expr not in ("dead", "spiral")
+        var = "b" if blink else ("o" if talking and self.talking_open(f) else "c")
+        self.sched[f] = f"{expr}_{var}_{(f // 3) % 3}.png"
+
+    def life(self, f, amount=1.0):
+        """idle micro-motion so nobody is ever frozen: head drift + breathing bob (additive, call after pose)"""
+        hx, hy, hz = self.head.rotation_euler
+        self.head.rotation_euler = (hx + R(2.0) * math.sin(f / 23) * amount, hy, hz + R(3.0) * math.sin(f / 31 + 1) * amount)
+        self.root.location.z += 0.006 * math.sin(f / 19) * amount
+
+    def squash(self, t):
+        """t > 0 squash (landing/hit), t < 0 stretch (jump/whip); multiply onto the root scale"""
+        sx, sy, sz = self.root.scale
+        self.root.scale = (sx * (1 + 0.12 * t), sy * (1 + 0.12 * t), sz * (1 - 0.15 * t))
+
     def legs_walk(self, phase, stride=0.32, lift=0.07):
         """walk cycle: legs swing opposite, swing leg lifts its foot; returns body bob"""
         for s, ph in (("l", phase), ("r", phase + math.pi)):
@@ -593,7 +708,7 @@ class Dave:
         for o in [self.torso] + list(self.arms.values()) + list(self.legs.values()):
             for pt in o.data.splines[0].points:
                 pt.keyframe_insert("co", frame=f)
-        for o in list(self.faces.values()) + [self.drop]:
+        for o in list(self.faces.values()) + [self.drop, self.live_obj]:
             o.keyframe_insert("hide_render", frame=f)
         for fi in self.flash_ins:
             fi.keyframe_insert("default_value", frame=f)
@@ -661,7 +776,9 @@ class Dave:
                 ob.data.bevel_depth = r
                 ob.data.materials[0] = self.cloth[part] if rgb else self.body_m
             if rgb:
-                self.cloth[part].node_tree.nodes["Principled BSDF"].inputs["Base Color"].default_value = (*rgb, 1)
+                bsdf = self.cloth[part].node_tree.nodes["Principled BSDF"]
+                bsdf.inputs["Base Color"].default_value = (*rgb, 1)
+                bsdf.inputs["Sheen Tint"].default_value = (*rgb, 1)
         prof = {
             "torso": [1.12, 1.16, 1.12, 1.04, 0.96, 0.86, 0.7] if o.get("hood") else [1.0, 1.0, 1.0, 1.0, 0.98, 0.92, 0.8],
             "arms": [0.85, 0.95, 1.0, 1.05, 1.08, 1.0, 1.14, 0.98, 1.1],  # sleeve bunches near the cuff

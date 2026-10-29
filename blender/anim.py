@@ -11,7 +11,7 @@ import sys, os, math
 from mathutils import Vector
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-from lib import K, R, setup, Dave, flat, pbr, image_mat, box, plane, cam, blend, ease, back_out, POSES  # noqa: E402
+from lib import K, R, setup, Dave, flat, pbr, image_mat, box, plane, cam, blend, ease, back_out, finish, dof, POSES  # noqa: E402
 import bpy  # noqa: E402
 
 args = setup(sys.argv[sys.argv.index("--") + 1:])
@@ -130,7 +130,7 @@ if SHOT == "A":
     for ix in range(-5, 6):
         bpy.ops.mesh.primitive_cylinder_add(radius=0.28, depth=7, location=(ix * 2.0, 9.2, 3.5))
         bpy.context.object.data.materials.append(wall)
-    g = mascot("bank", 2.6)
+    g = mascot("bank", 3.3)
     d = Dave()
     d.face("shock", drop=True)
     for f in range(1, LEN + 1):
@@ -142,19 +142,24 @@ if SHOT == "A":
             P = blend("flex", "windup", ease((f - 30) / 7))
         else:
             P = blend("windup", "punch", back_out((f - 38) / 4))
-        g.place((0, 1.2, 0.72 * 2.6), R(0))
+        g.place((0, 1.2, 0.72 * 3.3), R(0))
         g.legs_set("stand")
         g.pose(P)
         g.key(f)
         d.place((1.7, -2.2, 0.72), R(150))
         d.legs_set("stand")
         d.pose(blend("idle", "look_up", ease(f / 10)) if f < 38 else POSES["panic"])
-        d.face("shock" if f < 38 else "panic", drop=True)
+        d.live(f, "shock" if f < 38 else "panic", talking=f >= 44)
+        d.drop.hide_render = False
+        d.life(f)
+        if 41 <= f <= 46:
+            d.squash(0.8 * (1 - (f - 41) / 5))
+        g.life(f, 0.5)
         d.key(f)
         # camera: slow push-in, low hero angle; after the punch a decaying shake
         t = f / LEN
         shake = (math.sin(f * 2.7) * 0.06 * max(0, 1 - (f - 41) / 10)) if f >= 41 else 0
-        key_cam(cam0, f, (0.6 + shake, -8.2 + 2.6 * ease(t), 0.45 + shake * 0.5), (0.2, 1.2, 3.0), 24)
+        key_cam(cam0, f, (0.9 + shake, -7.2 + 2.4 * ease(t), 0.28 + shake * 0.5), (0.3, 1.2, 3.4), 18)
 
 # ================================================================== B · self-drawing graph ride
 if SHOT == "B":
@@ -221,12 +226,13 @@ if SHOT == "B":
         d.root.location.z += bump
         end = f >= 66
         d.pose(blend("drive", "wave_cam", ease((f - 66) / 5)) if end else "drive")
-        d.face("grin" if end else "determined")
+        d.live(f, "grin" if end else "determined", talking=end)
+        d.life(f, 0.6)
         d.key(f)
         # camera tracks the car from the side, then pushes in for the wave
         cx, cz = pos.x + 0.8, pos.z + 0.6
         z = ease((f - 62) / 14)
-        key_cam(cam0, f, (cx - 0.3 * z, -5.2 + 2.4 * z, cz + 0.15), (pos.x + 0.3, 0, pos.z + 0.35), 30 + 10 * z)
+        key_cam(cam0, f, (cx - 0.3 * z, -3.6 + 1.4 * z, cz + 0.1), (pos.x + 0.25, 0, pos.z + 0.38), 32 + 10 * z)
 
 # ================================================================== C · night alley reveal
 if SHOT == "C":
@@ -254,7 +260,11 @@ if SHOT == "C":
             d.place((0.2, -0.2, 0.72), R(-90) if f < 76 else R(-90) + R(90) * back_out((f - 76) / 4))
             d.legs_set("stand")
             d.pose("idle" if f < 76 else "panic")
-        d.face("neutral" if f < 76 else "shock", drop=f >= 76)
+        d.live(f, "neutral" if f < 76 else "shock", talking=f >= 82)
+        d.drop.hide_render = f < 76
+        d.life(f)
+        if 76 <= f <= 80:
+            d.squash(-0.6 * (1 - (f - 76) / 4))
         d.key(f)
         st = ease((f - 48) / 18)
         spot.data.energy = 0 if f < 48 else 2600
@@ -266,6 +276,9 @@ if SHOT == "C":
         p = ease((f - 76) / 10) if f >= 76 else 0
         key_cam(cam0, f, (0.6, -5.2 + 1.6 * p, 1.05), (0.4, 0, 1.15), 30 + 8 * p)
 
+finish()
+if SHOT in ("B", "C"):
+    dof(cam0, d.head, 2.2 if SHOT == "B" else 2.8)
 # ------------------------------------------------------------------ render the requested frames
 sc.render.image_settings.file_format, sc.render.image_settings.quality = "JPEG", 90
 sc.frame_start, sc.frame_end = 1, LEN
