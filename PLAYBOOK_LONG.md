@@ -1,6 +1,6 @@
 # MONEYWORKS PLAYBOOK — LONG-FORM (16:9 episodes, 10 min+)
 
-> **★ v7 STANDARD (owner, 29 Oct 2026) — `STYLE_3D.md` §0 is THE rule set for EVERY new video (long-form and Shorts) and wins over everything in this file.** Natural connected speech (no commas AND no fragment chains like "12 years. Day one. Math class."), Blender 3D Dave in a red oversized hoodie + wide black pants with costume swaps per scene role, objects from the words of each line, ≥ 50 % real 3D, something new every 1.5–2.5 s, dense SFX (counter roll ticks etc.), hook = the priority (50 %+ of viewers leave in 5–10 s). Retired: memes, polaroids, photo-every-10–15 s, photos+memes every 2–4 s in Shorts, captions, 2D Dave for new videos, asking the owner to record their voice. Template: `pipeline/episodes/test1.json` + `blender/test1.py` + `src/v6/Test1.tsx`.
+> **★ v7 STANDARD (owner, 29 Oct 2026) — `STYLE_3D.md` §0 is THE rule set for EVERY new video (long-form and Shorts) and wins over everything in this file.** Natural connected speech (no commas AND no fragment chains like "12 years. Day one. Math class."), Blender 3D Dave in a red oversized hoodie + wide black pants with costume swaps per scene role, objects from the words of each line, ≥ 50 % real 3D, something new every 1.5–2.5 s, dense SFX (counter roll ticks etc.), hook = the priority (50 %+ of viewers leave in 5–10 s), built with the mandatory LOOP METHOD (§0.10: 3 gates, looped arc hook→rising→conflict→comeback→payoff, hook as a question, mini-loops per chapter, Shorts swipe-through ≥ 80 %, next Short only when < ~5k views/h for 24 h). Retired: memes, polaroids, photo-every-10–15 s, photos+memes every 2–4 s in Shorts, captions, 2D Dave for new videos, asking the owner to record their voice. Template: `pipeline/episodes/test1.json` + `blender/test1.py` + `src/v6/Test1.tsx`.
 
 **This file is ONLY for long-form episodes (`epNN`, 1920×1080, 10–12 min).** Vertical Shorts have their own file: `PLAYBOOK_SHORTS.md`. Never apply a Shorts rule to a long video or a long-form rule to a Short (owner, 11 Oct 2026: "you are in long form not in shorts, don't mix between them").
 
@@ -559,7 +559,7 @@ Callbacks to earlier episodes are GOOD ("Remember the raccoon from our credit ca
 
 ## 12. Ideation gates, looped arc, hook-as-question, upload + analytics routine (added 27 Oct 2026 from the "Isa / Nile Blue 7-day channel" case study — adapted for long-form)
 
-**Precedence:** this section ADDS a planning layer and a post-publish routine to long-form episodes. Wherever it touches a rule in §0–§11 (story spine, hook, chapter cards, thumbnails, photo/meme cadence, Dave-as-host, STYLE_3D) the owner's rule in §0–§11 wins. Benchmark numbers below come from one creator's experiment, so treat them as targets to test and log in `pipeline/ctr_log.md`, not guarantees.
+**Precedence (updated 29 Oct 2026, owner: "integrate this strategy in our next videos"):** this section is MANDATORY for every new episode, summarised as `STYLE_3D.md` §0.10 (the loop method mapped onto Dave's experiment format). It only yields to `STYLE_3D.md` §0 itself; the photo/meme cadence mentioned below is retired. Benchmark numbers below come from one creator's experiment, so treat them as targets to test and log in `pipeline/ctr_log.md`, not guarantees.
 
 ### 12.1 Three gates before a brief is written (an episode must pass all three)
 

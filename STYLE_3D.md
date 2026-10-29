@@ -47,7 +47,7 @@
 - New SFX are synthesised by `pipeline/sfx_synth.py` (never overwrite an existing `public/sfx/*.wav`; give new sounds new names). Owner's 2 Google Drive SFX folders: ids in `.github/workflows/sfxpack.yml`; on 29 Oct the main folder returned "permission denied" → ask the owner to re-share as "Anyone with the link" before relying on it.
 - Music: `public/music/bgm.mp3` at ~0.07 under the voice.
 
-### 0.6 The hook — THE priority (owner 29 Oct: "more than 50 % of clickers leave in the first 5–10 seconds")
+### 0.6 The hook — THE priority (built with the loop method §0.10) (owner 29 Oct: "more than 50 % of clickers leave in the first 5–10 seconds")
 - The first 10 s decide the video. Frame 0 already moving and already showing the most surprising thing; the concept + stakes are clear by second 5; a visual change every ≤ 1 s for the first 10 s; a reason to keep watching (open question / withheld result) before second 10.
 - Before writing any new hook, study how the reference channel (Nion Anarchy, `qa_dl/chan/an/<id>/` shot data + sheets) opens its videos and write the findings into STYLE_3D §12/§13. Old hook rules that still apply: PLAYBOOK_LONG §0.10 A (concept + stakes + how it ends, never the same hook form twice) and §12.3 (hook = a question).
 
@@ -59,6 +59,39 @@ Shorts (`shortNN`, 9:16) are built with the same kit: 3D Dave in his outfits, na
 2. Preview first (4 states, half res), look at them, then full. Check every still before the edit.
 3. Downloads: `gh run download` often fails on this connection → use `gh api repos/hamlou/moneyworks/actions/artifacts/<id>/zip > a.zip` in a retry loop, in the background.
 4. Copy stills into `public/<id>/`, commit, render the composition, then contact-sheet the mp4 at 1–2 fps and check every shot before sending it to the owner.
+
+### 0.10 The LOOP METHOD — mandatory for every video (owner, 29 Oct 2026: "integrate this strategy in our next videos", from the "Isa / Nile Blue — viral in 7 days" case study)
+The full case study notes stay in `PLAYBOOK_LONG.md` §12 and `PLAYBOOK_SHORTS.md` §10 — they are now MANDATORY (no longer an optional layer). Summary of what every new long video AND Short must do:
+
+**A. Three gates before any script is written** (write PASS + one-line reason for each at the top of `pipeline/episodes/<id>_brief.md`; one FAIL = change the premise, not the wording):
+1. **Universal relatability** — a stranger with zero knowledge gets it with the sound off. Pick the most relatable angle, not the biggest number ("school never taught me taxes" beats "the 1913 Federal Reserve Act").
+2. **Completion compulsion** — the story follows the looped arc (B), so the ending is not predictable.
+3. **Open loop** — the hook plants a question or withholds the result; only finishing the video closes it.
+
+**B. The looped arc = Dave's experiment** (hook → rising → CONFLICT → COMEBACK → payoff; a plain hook → rising → payoff is predictable and loses viewers):
+
+| Phase | Long-form (10 min+) | Short (50–90 s) | test1 example |
+|---|---|---|---|
+| HOOK (open loop, written LAST) | 0:00–0:30, ends on the question | 0–2 s | "12 years of triangles and zero minutes of taxes… so I went back to school" → will he find the money class? |
+| RISING | Day/Week chapters, Dave's plan, early wins | 2–25 s | day 1 math class, numbers! |
+| CONFLICT | ~50 %: the villain / the trap / Dave's plan fails | ~30–60 % | zero interest in 400 pages, Dave wants to drop out |
+| COMEBACK | ~75 %: Dave fights back with the real fix (its own chapter) | ~60–85 % | (next chapters) |
+| PAYOFF | last ~60 s: the number/line that closes the hook's loop | last 5 s, loops back to frame 0 | (finale) |
+
+Map it before scripting: list the 5 phases with beat ids + timestamps in the brief; group the beats in the JSON in that order; write the hook last.
+
+**C. Hook = a question or a withheld result, never a statement of the answer.**
+Weak: "Abdul turned $1,000 into $50,000." Strong: "What happens when you give one man $1,000 and a city that hates him?" The case study's own example: "This YouTuber turned 100 cans of Red Bull into powder" (gives it away) → "What would happen if you compressed 100 cans of Red Bull into one drink?" (opens a loop). Combine with §0.6 (frame 0 moving, concept + stakes by 5 s, visual change ≤ 1 s) and Dave first person.
+
+**D. Mini-loops inside the video** (keeps the middle from sagging, same principle at chapter scale): every chapter opens with a small question or a "but then…" and closes it before the next chapter opens its own; never close the BIG loop before the payoff; chapter titles never reveal answers.
+
+**E. Upload + analytics routine** (log every video in `pipeline/ctr_log.md`):
+- Title = what happens in plain words about the viewer; description = the premise in 2–3 sentences + sources; never "made for kids".
+- **Shorts:** swipe-through rate (Studio → Engagement "how viewers engaged") **≥ 80 %**; average view duration ≈ 85 %+ of length. Do not judge before 48 h (the case study went 3,000 views on day 1 → 10 M later). Upload the next Short only when the current one's hourly views stay **under ~5,000/hour for 24 h** (uploading during a push can flatline it).
+- **Long-form:** CTR ≥ 5–8 %, average view duration ≥ 50 %, first-30 s retention drop ≤ 30 % (owner's diagnosis: 50 %+ were leaving in 5–10 s → the hook is THE priority). Judge at 48 h; check analytics on a schedule, not every few minutes.
+- Expect misses: the structure shortens the guessing, it does not remove it. Keep producing while waiting.
+
+**F. Not copied from the case study:** re-uploading other creators' videos ("value-add editing") — our videos are 100 % original 3D animation, so no reuse risk. AI clips (Higgsfield) only as rare hook plates per §12.7, never to replace our 3D shots.
 
 ### 0.9 Retired by v7 (do not use in any new video)
 Meme cards (all formats) · polaroid/tape/sticker photos · "real photo every 10–15 s" (long) and "photos + meme every 2–4 s" (Shorts) · burned-in captions · the 2D `<Stick>` Dave and the three.js `Dave3D` for new videos (Blender Dave replaces them; the old episodes keep theirs) · asking the owner to record their voice · fixed recurring prop lists · fragment-chain sentences · `validate.py` meme/photo counts for v7 videos.
