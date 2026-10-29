@@ -1,0 +1,71 @@
+{
+  "id": "test1",
+  "title": "v6 1-minute test: I went back to school for 30 days to find the money class",
+  "voice": "chatterbox",
+  "cb": {
+    "cfg": 0.35,
+    "exag": 0.5
+  },
+  "note": "STYLE_3D.md v6 test (owner 29 Oct 2026: 'we need just 1 min test'). Opening minute of a Dave experiment episode; every visual comes from the words of its own line (props-from-script).",
+  "sources": [
+    "Dog lifespan: median life expectancy of UK dogs about 12.5 years (Teng et al. 2024, Scientific Reports 14:3421, 584,734 dogs) -> 'about as long as a dog lives' for 12 years.",
+    "The train problem and the textbook are jokes about a typical maths class, not data."
+  ],
+  "beats": [
+    {
+      "id": "t1",
+      "text": "I spent twelve years in school and they taught me how to find the area of a triangle and zero minutes on how to do my taxes.",
+      "pause": 0.35
+    },
+    {
+      "id": "t2",
+      "text": "Twelve years. That is about as long as a dog lives.",
+      "pause": 0.6,
+      "exag": 0.45
+    },
+    {
+      "id": "t3",
+      "text": "So I did the only reasonable thing. I went back.",
+      "pause": 0.35,
+      "exag": 0.6
+    },
+    {
+      "id": "t4",
+      "text": "For thirty days I am sitting in every single class a normal school has and I am looking for the one lesson that teaches you about money.",
+      "pause": 0.3
+    },
+    {
+      "id": "t5",
+      "text": "If I find it I win. If I don't find it I am writing that class myself and you are all taking it.",
+      "pause": 0.9,
+      "exag": 0.55
+    },
+    {
+      "id": "t6",
+      "text": "Day one.",
+      "pause": 0.5
+    },
+    {
+      "id": "t7",
+      "text": "Math class. Finally numbers. Numbers are money right?",
+      "pause": 0.4,
+      "exag": 0.6
+    },
+    {
+      "id": "t8",
+      "text": "We spent fifty minutes on a train that leaves Chicago at three and not one second on the train that leaves your bank account every month called rent.",
+      "pause": 0.35
+    },
+    {
+      "id": "t9",
+      "text": "I searched the whole textbook for the word interest. Four hundred pages. Zero interest. Which is also exactly how much I had by page ten.",
+      "pause": 0.8,
+      "exag": 0.45
+    },
+    {
+      "id": "t10",
+      "text": "Day one. Zero money lessons. And honestly I already want to drop out.",
+      "pause": 0.5
+    }
+  ]
+}
