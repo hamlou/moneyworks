@@ -94,6 +94,9 @@ Weak: "Abdul turned $1,000 into $50,000." Strong: "What happens when you give on
 
 **F. Not copied from the case study:** re-uploading other creators' videos ("value-add editing") — our videos are 100 % original 3D animation, so no reuse risk. AI clips (Higgsfield) only as rare hook plates per §12.7, never to replace our 3D shots.
 
+### 0.11 Monetization-safe assets only (owner 29 Oct: "make sure we won't get any trouble in the monetization later")
+Every sound, voice, model, texture, motion and font must be on the ✅ list of **`LICENSES.md`**; anything else is banned until checked. Never `public/sfx/pack/*` (unknown licence), never other creators' clips/music, never free-plan AI-generator output, never a cloned or real person's voice, never words put in a real person's mouth. Add the `LICENSES.md` description footer to every upload.
+
 ### 0.9 Retired by v7 (do not use in any new video)
 Meme cards (all formats) · polaroid/tape/sticker photos · "real photo every 10–15 s" (long) and "photos + meme every 2–4 s" (Shorts) · burned-in captions · the 2D `<Stick>` Dave and the three.js `Dave3D` for new videos (Blender Dave replaces them; the old episodes keep theirs) · asking the owner to record their voice · fixed recurring prop lists · fragment-chain sentences · `validate.py` meme/photo counts for v7 videos.
 
