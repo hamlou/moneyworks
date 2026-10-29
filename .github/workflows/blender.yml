@@ -26,6 +26,7 @@ jobs:
       shot: ${{ steps.p.outputs.shot }}
       mode: ${{ steps.p.outputs.mode }}
       samples: ${{ steps.p.outputs.samples }}
+      engine: ${{ steps.p.outputs.engine }}
       res: ${{ steps.p.outputs.res }}
     steps:
       - uses: actions/checkout@v4
@@ -34,6 +35,7 @@ jobs:
           SHOT=${{ inputs.shot }}; SHOT=${SHOT:-$(awk '{print $1}' blender/RUN)}
           MODE=${{ inputs.mode }}; MODE=${MODE:-$(awk '{print $2}' blender/RUN)}
           SAMPLES=${{ inputs.samples }}; SAMPLES=${SAMPLES:-$(awk '{print $3}' blender/RUN)}
+          ENGINE=$(awk '{print $4}' blender/RUN); echo "engine=${ENGINE:-cycles}" >> $GITHUB_OUTPUT
           echo "shot=$SHOT" >> $GITHUB_OUTPUT; echo "mode=$MODE" >> $GITHUB_OUTPUT; echo "samples=$SAMPLES" >> $GITHUB_OUTPUT
           if [ "$MODE" = "full" ]; then
             echo 'chunks=["1-30","31-60","61-90","91-120"]' >> $GITHUB_OUTPUT; echo 'res=1920x1080' >> $GITHUB_OUTPUT
@@ -59,7 +61,7 @@ jobs:
           if [ ! -x ~/blender/blender ]; then
             mkdir -p ~/blender && curl -sL https://download.blender.org/release/Blender4.2/blender-4.2.3-linux-x64.tar.xz | tar -xJ -C ~/blender --strip-components=1
           fi
-          sudo apt-get update -qq && sudo apt-get install -y -qq libxi6 libxxf86vm1 libxfixes3 libxrender1 libgl1 libxkbcommon0 libsm6 libegl1 >/dev/null
+          sudo apt-get update -qq && sudo apt-get install -y -qq libxi6 libxxf86vm1 libxfixes3 libxrender1 libgl1 libxkbcommon0 libsm6 libegl1 xvfb libgl1-mesa-dri mesa-utils >/dev/null
           ~/blender/blender --version | head -1
       - uses: actions/cache@v4
         with:
@@ -69,8 +71,11 @@ jobs:
         run: python3 blender/fetch.py assets SchoolDesk_01 SchoolChair_01 wall_clock potted_plant_01 book_encyclopedia_set_01
       - name: Render ${{ matrix.chunk }}
         run: |
-          ~/blender/blender -b -P blender/${{ needs.plan.outputs.shot }}.py -- --assets assets --tex blender/tex --out out/frames \
-            --frames "${{ matrix.chunk }}" --samples ${{ needs.plan.outputs.samples }} --res ${{ needs.plan.outputs.res }} 2>&1 | grep -E "frame |Error|error|Traceback|skip|^  File" || true
+          export LIBGL_ALWAYS_SOFTWARE=1 GALLIUM_DRIVER=llvmpipe
+          start=$(date +%s)
+          xvfb-run -a -s "-screen 0 1920x1080x24" ~/blender/blender -b -P blender/${{ needs.plan.outputs.shot }}.py -- --assets assets --tex blender/tex --out out/frames \
+            --frames "${{ matrix.chunk }}" --samples ${{ needs.plan.outputs.samples }} --res ${{ needs.plan.outputs.res }} --engine ${{ needs.plan.outputs.engine }} 2>&1 | grep -E "frame |Error|error|Traceback|skip|^  File" || true
+          echo "render seconds: $(( $(date +%s) - start ))"
           ls out/frames | wc -l
           test -n "$(ls out/frames)"
       - id: n

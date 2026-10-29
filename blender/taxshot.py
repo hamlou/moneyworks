@@ -1,7 +1,7 @@
 """TaxShot in Blender, the reference's own pipeline (STYLE_3D.md §11.1/§12): real CC0 models, lit room, Cycles,
 24 fps, motion blur, Freestyle black outline on the character only, ink-line faces swapped per line.
 Line: "school spent 12 years teaching me triangles and zero minutes teaching me taxes".
-blender -b -P blender/taxshot.py -- --assets A --tex T --out O [--frames 1-120 | 5,40,60] [--samples 32] [--res 1920x1080]
+blender -b -P blender/taxshot.py -- --assets A --tex T --out O [--frames 1-120 | 5,40,60] [--samples 32] [--res 1920x1080] [--engine cycles|eevee]
 
 Shot (24 fps, 120 frames):
   A   1–47  wide, low, off-centre: Dave slumped at his desk holding the TAX FORM; face snaps to shock at 10;
@@ -22,11 +22,20 @@ MAN = json.load(open(os.path.join(A, "manifest.json")))
 
 bpy.ops.wm.read_factory_settings(use_empty=True)
 sc = bpy.context.scene
-sc.render.engine = "CYCLES"
-sc.cycles.device = "CPU"
-sc.cycles.samples = SAMPLES
-sc.cycles.use_denoising = True
-sc.cycles.max_bounces = 6
+ENGINE = args.get("--engine", "cycles")
+if ENGINE == "eevee":  # the reference's engine (his video: EEVEE, ray tracing + shadows + motion blur on)
+    sc.render.engine = "BLENDER_EEVEE_NEXT"
+    ee = sc.eevee
+    ee.taa_render_samples = SAMPLES
+    ee.use_raytracing = True
+    ee.use_shadows = True
+    ee.use_gtao = True
+else:
+    sc.render.engine = "CYCLES"
+    sc.cycles.device = "CPU"
+    sc.cycles.samples = SAMPLES
+    sc.cycles.use_denoising = True
+    sc.cycles.max_bounces = 6
 sc.render.resolution_x, sc.render.resolution_y = W, H
 sc.render.fps = 24
 sc.frame_start, sc.frame_end = 1, 120
