@@ -56,12 +56,26 @@ def shard(i, n):
     import torchaudio as ta
     from faster_whisper import WhisperModel
     engine = spec.get("cb", {}).get("engine", "chatterbox")  # "turbo" = Chatterbox-Turbo (MIT), voice bake-off v2 (29 Oct)
-    if engine == "turbo":
+    dev = "cuda" if torch.cuda.is_available() else "cpu"  # Kaggle GPU (kaggle/README.md) or GitHub CPU
+    if engine == "dia":  # Dia 1.6B (Apache 2.0): one fixed SYNTHETIC voice anchor (pipeline/voice_ref/dia_dave.*)
+        import numpy as np_, soundfile as sf
+        from dia.model import Dia
+        m = Dia.from_pretrained("nari-labs/Dia-1.6B-0626", compute_dtype="float16" if dev == "cuda" else "float32", device=dev)
+        m.sr = 44100
+        anchor = ROOT / "pipeline" / "voice_ref" / "dia_dave.wav"
+        anchor_txt = ROOT / "pipeline" / "voice_ref" / "dia_dave.txt"
+        if not anchor.exists():  # first run ever: make the anchor from a short neutral line with a fixed seed, then commit it
+            anchor.parent.mkdir(exist_ok=True)
+            line = "So I did the only reasonable thing and I went back to school."
+            torch.manual_seed(3)
+            sf.write(str(anchor), m.generate("[S1] " + line, use_torch_compile=False, cfg_scale=3.0, temperature=1.4, top_p=0.9), 44100)
+            anchor_txt.write_text("[S1] " + line)
+    elif engine == "turbo":
         from chatterbox.tts_turbo import ChatterboxTurboTTS
-        m = ChatterboxTurboTTS.from_pretrained(device="cpu")
+        m = ChatterboxTurboTTS.from_pretrained(device=dev)
     else:
         from chatterbox.tts import ChatterboxTTS
-        m = ChatterboxTTS.from_pretrained(device="cpu")
+        m = ChatterboxTTS.from_pretrained(device=dev)
     wm = WhisperModel("base.en", device="cpu", compute_type="int8")
     cb.mkdir(exist_ok=True)
     for j, b in enumerate(beats):
@@ -73,13 +87,21 @@ def shard(i, n):
             torch.manual_seed(1000 + j * 7 + attempt)
             cbs = spec.get("cb", {})
             ref = cbs.get("ref")  # owner's OWN recorded voice only (STYLE_3D.md §4), never another creator's
-            if engine == "turbo":
+            if engine == "dia":
+                tmp = cb / f"{b['id']}_raw.wav"
+                pt = anchor_txt.read_text().strip()
+                out = m.generate(pt + " [S1] " + b["text"], audio_prompt=str(anchor), use_torch_compile=False, cfg_scale=3.0,
+                                 temperature=1.5, top_p=0.92)
+                sf.write(str(tmp), np_.asarray(out, dtype=np_.float32), 44100)
+                w = None
+            elif engine == "turbo":
                 w = m.generate(b["text"], **({"audio_prompt_path": str(ROOT / ref)} if ref else {}))
             else:
                 w = m.generate(b["text"], exaggeration=b.get("exag", cbs.get("exag", 0.5)), cfg_weight=b.get("cfg", cbs.get("cfg", 0.5)),
                                **({"audio_prompt_path": str(ROOT / ref)} if ref else {}))
             tmp = cb / f"{b['id']}_raw.wav"
-            ta.save(str(tmp), w, m.sr)
+            if w is not None:
+                ta.save(str(tmp), w, m.sr)
             x, _ = trim(pcm(tmp), SR)
             dst = cb / f"{b['id']}.wav"
             with wave.open(str(dst), "wb") as wv:
