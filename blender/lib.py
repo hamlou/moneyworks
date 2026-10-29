@@ -327,6 +327,32 @@ POSES = {
 }
 
 
+def flashable(name, rgb, rough=0.6, coat=0.0):
+    """material that can turn into the reference's flat white silhouette (mix factor 1 = white emission)"""
+    m, n, l, p = nodes_mat(name)
+    p.inputs["Base Color"].default_value = (*rgb, 1)
+    p.inputs["Roughness"].default_value = rough
+    p.inputs["Coat Weight"].default_value = coat
+    em = n.new("ShaderNodeEmission")
+    em.inputs["Strength"].default_value = 1.6
+    mx = n.new("ShaderNodeMixShader")
+    l.new(p.outputs["BSDF"], mx.inputs[1])
+    l.new(em.outputs["Emission"], mx.inputs[2])
+    l.new(mx.outputs["Shader"], n["Material Output"].inputs["Surface"])
+    return m, mx.inputs["Fac"]
+
+
+# outfits: (torso colour, torso radius, sleeve colour, sleeve radius, pants colour, pants radius, extras)
+# default (owner 29 Oct): red OVERSIZED hoodie + black pants; costume swaps per scene role
+OUTFITS = {
+    "hoodie": dict(torso=((0.62, 0.04, 0.05), 0.085), arms=((0.62, 0.04, 0.05), 0.05), legs=((0.03, 0.03, 0.035), 0.045), hood=True),
+    "professor": dict(torso=((0.33, 0.2, 0.11), 0.072), arms=((0.33, 0.2, 0.11), 0.045), legs=((0.16, 0.16, 0.18), 0.042), glasses=True, cap=True),
+    "doctor": dict(torso=((0.92, 0.93, 0.95), 0.08), arms=((0.92, 0.93, 0.95), 0.047), legs=((0.12, 0.3, 0.42), 0.042), mirror=True),
+    "suit": dict(torso=((0.08, 0.09, 0.13), 0.07), arms=((0.08, 0.09, 0.13), 0.044), legs=((0.08, 0.09, 0.13), 0.042), tie=True),
+    "none": dict(torso=(None, 0.034), arms=(None, 0.03), legs=(None, 0.03)),
+}
+
+
 class Dave:
     def __init__(self, coll_name="Dave"):
         sc = K.sc
@@ -375,16 +401,76 @@ class Dave:
         self.drop.data.materials.append(flat("drop", (0.55, 0.8, 1.0), 0.05, 1.0))
         into(self.drop, self.noline).parent = self.head
         self.props = {}
+        # clothes: one flashable material per part (recoloured per outfit) + costume extras
+        self.cloth = {}
+        self.flash_ins = [self.flash_in]
+        for part in ("torso", "arms", "legs"):
+            m, fac = flashable(f"cloth_{part}", (1, 1, 1), 0.85)
+            self.cloth[part] = m
+            self.flash_ins.append(fac)
+        for o in [self.torso]:
+            o.data.materials[0] = self.cloth["torso"]
+        for s_ in "lr":
+            self.arms[s_].data.materials[0] = self.cloth["arms"]
+            self.legs[s_].data.materials[0] = self.cloth["legs"]
+        hood_m, fac = flashable("hood", (0.55, 0.03, 0.04), 0.9)
+        self.flash_ins.append(fac)
+        bpy.ops.mesh.primitive_uv_sphere_add(radius=0.2, segments=32, ring_count=16)
+        self.hood = bpy.context.object
+        self.hood.name, self.hood.scale = "hood", (1.12, 0.7, 0.62)
+        bpy.ops.object.shade_smooth()
+        self.hood.data.materials.append(hood_m)
+        into(self.hood, self.coll).parent = self.root
+        dark_m, fac = flashable("costume_dark", (0.03, 0.03, 0.03), 0.5)
+        self.flash_ins.append(fac)
+        self.extras = {}
+        # glasses: two rings + bridge on the face (parented to the head)
+        g = []
+        for x in (-0.075, 0.075):
+            bpy.ops.mesh.primitive_torus_add(major_radius=0.05, minor_radius=0.007, location=(x, -0.205, 0.04), rotation=(R(90), 0, 0))
+            g.append(bpy.context.object)
+        bpy.ops.mesh.primitive_cylinder_add(radius=0.006, depth=0.05, location=(0, -0.21, 0.045), rotation=(0, R(90), 0))
+        g.append(bpy.context.object)
+        for o in g:
+            o.data.materials.append(dark_m)
+            into(o, self.noline).parent = self.head
+        self.extras["glasses"] = g
+        # mortarboard
+        bpy.ops.mesh.primitive_cube_add(size=1, location=(0, 0, 0.215))
+        top = bpy.context.object
+        top.scale, top.rotation_euler = (0.34, 0.34, 0.018), (R(-6), 0, R(45))
+        bpy.ops.mesh.primitive_cylinder_add(radius=0.12, depth=0.07, location=(0, 0, 0.18))
+        cap = [top, bpy.context.object]
+        for o in cap:
+            o.data.materials.append(dark_m)
+            into(o, self.coll).parent = self.head
+        self.extras["cap"] = cap
+        # tie (suit)
+        red_m, fac = flashable("tie", (0.7, 0.05, 0.05), 0.5)
+        self.flash_ins.append(fac)
+        bpy.ops.mesh.primitive_cube_add(size=1, location=(0, -0.075, 0.33))
+        tie = bpy.context.object
+        tie.scale = (0.035, 0.012, 0.13)
+        tie.data.materials.append(red_m)
+        into(tie, self.coll).parent = self.root
+        self.extras["tie"] = [tie]
+        # head mirror (doctor)
+        bpy.ops.mesh.primitive_cylinder_add(radius=0.045, depth=0.008, location=(0, -0.18, 0.15), rotation=(R(80), 0, 0))
+        mir = bpy.context.object
+        mir.data.materials.append(flat("mirror", (0.85, 0.87, 0.9), 0.1))
+        into(mir, self.noline).parent = self.head
+        self.extras["mirror"] = [mir]
+        self.outfit("hoodie")
         self.outline()
 
-    def tube(self, name, n=9, r=0.03):
+    def tube(self, name, n=9, r=0.03, mat=None):
         cu = bpy.data.curves.new(name, "CURVE")
         cu.dimensions = "3D"
         cu.bevel_depth, cu.bevel_resolution, cu.use_fill_caps = r, 4, True
         sp = cu.splines.new("POLY")
         sp.points.add(n - 1)
         o = bpy.data.objects.new(name, cu)
-        o.data.materials.append(self.body_m)
+        o.data.materials.append(mat or self.body_m)
         self.coll.objects.link(o)
         o.parent = self.root
         return o
@@ -452,6 +538,8 @@ class Dave:
                 self.arms[s].data.splines[0].points[i].co = (*pt, 1)
             self.hands[s].location = pts[-1]
         self.head.location = up(self.NECK + Vector((0, 0, 0.2)))
+        self.hood.location = up(self.NECK + Vector((0, 0.07, 0.13)))
+        self.extras["tie"][0].location = up(Vector((0, -0.08, 0.32)))
         hx, hy, hz = P.get("head", (0, 0, 0))
         self.head.rotation_euler = (R(hx + P.get("lean", 0)), R(hy), R(hz))
         return up
@@ -461,15 +549,33 @@ class Dave:
             o.hide_render = k != name
         self.drop.hide_render = not drop
 
+    def outfit(self, name):
+        o = OUTFITS[name]
+        self.outfit_name = name
+        for part, objs in (("torso", [self.torso]), ("arms", list(self.arms.values())), ("legs", list(self.legs.values()))):
+            rgb, r = o[part]
+            for ob in objs:
+                ob.data.bevel_depth = r
+                ob.data.materials[0] = self.cloth[part] if rgb else self.body_m
+            if rgb:
+                self.cloth[part].node_tree.nodes["Principled BSDF"].inputs["Base Color"].default_value = (*rgb, 1)
+        self.hood.hide_render = not o.get("hood")
+        for k, objs in self.extras.items():
+            for ob in objs:
+                ob.hide_render = not o.get(k)
+
     def flash(self, on):
         """the reference's 1-frame white silhouette (black outline stays, no face)"""
-        self.flash_in.default_value = 1.0 if on else 0.0
+        for fi in self.flash_ins:
+            fi.default_value = 1.0 if on else 0.0
         if on:
             self.face(None)
 
     def show(self, on=True):
         for o in list(self.coll.all_objects) + list(self.noline.all_objects):
             o.hide_render = not on
+        if on:  # re-hide what the current outfit doesn't wear (props are re-hidden by the shot's reset)
+            self.outfit(self.outfit_name)
 
 
 def render(name, camera, transparent=False):

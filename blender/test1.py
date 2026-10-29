@@ -34,6 +34,7 @@ FORM = {"hold": ((0.25, -0.28, 0.4), (72, 0, -14)), "look": ((0.25, -0.28, 0.4),
 
 
 def reset():
+    dave.outfit_name = "hoodie"
     room.show(True)
     dave.show(True)
     dave.flash(False)
@@ -189,10 +190,16 @@ def _():
 
 
 # home-base cut-outs (transparent PNG, the reference's "character in the corner")
-for pose, face in [("point_l", "grin"), ("shrug", "neutral"), ("point_you", "smug"), ("count", "think"), ("cheer", "grin"), ("idle", "dead"), ("panic", "shock"), ("point_l", "determined")]:
-    def mk(p=pose, f=face):
-        return lambda: cutout(p, f)
-    STATES[f"cut_{pose}_{face}"] = (mk(), "cut", True)
+CUTS = [("point_l", "grin", "hoodie"), ("shrug", "neutral", "hoodie"), ("point_you", "smug", "hoodie"), ("count", "think", "hoodie"), ("cheer", "grin", "hoodie"),
+        ("idle", "dead", "hoodie"), ("panic", "shock", "hoodie"), ("point_l", "determined", "hoodie"),
+        ("point_you", "smug", "professor"), ("point_l", "grin", "professor")]  # t5 "I am writing that class myself" → professor
+for pose, face, out in CUTS:
+    def mk(p=pose, f=face, o=out):
+        def fn():
+            dave.outfit(o)
+            cutout(p, f)
+        return fn
+    STATES[f"cut_{pose}_{face}" + ("" if out == "hoodie" else f"_{out}")] = (mk(), "cut", True)
 
 want = args.get("--frames", "all")
 names = list(STATES) if want == "all" else [n for n in want.split(",") if n in STATES]
