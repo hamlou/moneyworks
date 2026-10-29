@@ -103,8 +103,8 @@ sc.camera = cam0
 
 # ================================================================== A · money yard
 if SHOT == "A":
-    sky(0.9, 7, 210)
-    light("sun", "SUN", (0, 0, 10), (R(70), 0, R(35)), energy=4.5, color=(1.0, 0.82, 0.6), angle=R(1.5))
+    sky(0.22, 6, 210)
+    light("sun", "SUN", (0, 0, 10), (R(76), 0, R(35)), energy=3.2, color=(1.0, 0.82, 0.6), angle=R(1.5))
     plane("ground", (0, 0, 0), (60, 60), (0, 0, 0), flat("paving", (0.42, 0.4, 0.37), 0.8))
     cash = image_mat("cash", "banknote.png", rough=0.7)
     gold = flat("gold", (0.9, 0.62, 0.15), 0.25)
@@ -121,7 +121,7 @@ if SHOT == "A":
                 box("gold", (x, y, 0.05 + k * 0.1), (0.42, 0.18, 0.1), gold).rotation_euler.z = r.uniform(0, 3)
             else:
                 box("bale", (x, y, 0.13 + k * 0.26), (0.62, 0.34, 0.26), cash).rotation_euler.z = r.uniform(-0.3, 0.3)
-    wall = flat("mansion", (0.86, 0.8, 0.7), 0.6)
+    wall = flat("mansion", (0.55, 0.48, 0.4), 0.6)
     box("mansion", (0, 11, 3.5), (22, 3, 7), wall)
     winm = flat("windows", (1.0, 0.78, 0.45), 0.3, emit=3.0)
     for ix in range(-4, 5):
@@ -154,7 +154,7 @@ if SHOT == "A":
         # camera: slow push-in, low hero angle; after the punch a decaying shake
         t = f / LEN
         shake = (math.sin(f * 2.7) * 0.06 * max(0, 1 - (f - 41) / 10)) if f >= 41 else 0
-        key_cam(cam0, f, (0.4 + shake, -9.5 + 2.8 * ease(t), 0.7 + shake * 0.5), (0, 1.2, 2.9), 28)
+        key_cam(cam0, f, (0.6 + shake, -8.2 + 2.6 * ease(t), 0.45 + shake * 0.5), (0.2, 1.2, 3.0), 24)
 
 # ================================================================== B · self-drawing graph ride
 if SHOT == "B":
@@ -165,7 +165,7 @@ if SHOT == "B":
     w.node_tree.nodes["Background"].inputs["Strength"].default_value = 0.6
     light("key", "AREA", (2, -6, 6), (R(45), 0, R(15)), energy=900, size=6)
     paper = image_mat("paper", "paper_lined.png", rough=0.9)
-    plane("paper", (0, 0.3, 2.2), (16, 9), (R(90), 0, 0), paper)
+    plane("paper", (0, 0.3, 3.0), (34, 16), (R(90), 0, 0), paper)
     plane("floor", (0, 0, 0), (40, 40), (0, 0, 0), flat("desk", (0.92, 0.91, 0.88), 0.9))
     # the growth line: zig-zag up and to the right, drawn by bevel_factor_end
     pts = [(-6, 0.4), (-4.5, 1.1), (-3.6, 0.8), (-2.2, 1.9), (-1.3, 1.5), (0.2, 2.8), (1.0, 2.4), (2.6, 3.7), (3.4, 3.4), (5.5, 5.2)]
@@ -226,7 +226,7 @@ if SHOT == "B":
         # camera tracks the car from the side, then pushes in for the wave
         cx, cz = pos.x + 0.8, pos.z + 0.6
         z = ease((f - 62) / 14)
-        key_cam(cam0, f, (cx - 0.4 * z, -9 + 5.6 * z, cz + 0.2), (pos.x, 0, pos.z + 0.4), 30 + 10 * z)
+        key_cam(cam0, f, (cx - 0.3 * z, -5.2 + 2.4 * z, cz + 0.15), (pos.x + 0.3, 0, pos.z + 0.35), 30 + 10 * z)
 
 # ================================================================== C · night alley reveal
 if SHOT == "C":

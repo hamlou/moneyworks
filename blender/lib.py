@@ -358,6 +358,7 @@ def flashable(name, rgb, rough=0.6, coat=0.0, fabric=False):
     l.new(p.outputs["BSDF"], mx.inputs[1])
     l.new(em.outputs["Emission"], mx.inputs[2])
     l.new(mx.outputs["Shader"], n["Material Output"].inputs["Surface"])
+    mx.inputs["Fac"].default_value = 0.0  # the mix node defaults to 0.5 = half-white (washed-out bug, 29 Oct)
     return m, mx.inputs["Fac"]
 
 
@@ -390,6 +391,7 @@ class Dave:
         l.new(p.outputs["BSDF"], mx.inputs[1])
         l.new(em.outputs["Emission"], mx.inputs[2])
         l.new(mx.outputs["Shader"], n["Material Output"].inputs["Surface"])
+        mx.inputs["Fac"].default_value = 0.0
         self.body_m, self.flash_in = m, mx.inputs["Fac"]
         self.root = bpy.data.objects.new("Dave", None)
         d.objects.link(self.root)
