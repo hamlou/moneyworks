@@ -82,7 +82,7 @@ jobs:
           ls out/frames | wc -l
           test -n "$(ls out/frames)"
       - id: n
-        run: echo "name=$(echo '${{ matrix.chunk }}' | tr ',' '_')" >> $GITHUB_OUTPUT
+        run: echo "name=$(echo '${{ matrix.chunk }}' | tr ',:' '__')" >> $GITHUB_OUTPUT
       - uses: actions/upload-artifact@v4
         with:
           name: frames-${{ steps.n.outputs.name }}
