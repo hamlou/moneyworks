@@ -220,7 +220,7 @@ def build(ep):
                     creds.append(line)
         if creds:
             desc += ["", "📷 Photos: " + "; ".join(creds) + ". Via Wikimedia Commons and free stock libraries; licences at creativecommons.org/licenses."]
-    desc += ["", "🎵 Music: \"Fluffing a Duck\" Kevin MacLeod (incompetech.com)", "Licensed under Creative Commons: By Attribution 4.0 License", "http://creativecommons.org/licenses/by/4.0/", "",
+    desc += ["", "🎵 Music: \"Fluffing a Duck\" Kevin MacLeod (incompetech.com)", "Licensed under Creative Commons: By Attribution 4.0 License", "http://creativecommons.org/licenses/by/4.0/", "3D assets: Poly Haven (CC0). Sound effects: Kenney (CC0) + original. Motion data: mocap.cs.cmu.edu (CMU Graphics Lab).", "Narration: synthetic voice (open-source TTS, MIT/Apache licence).", "",
              "⚠️ This video is for education and entertainment only. It is not financial advice.", "", " ".join(s["hashtags"])]
     body = "\n".join(desc)
     # YouTube rejects descriptions over 5,000 characters: shorten the source lines until it fits

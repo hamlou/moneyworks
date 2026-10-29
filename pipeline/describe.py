@@ -32,6 +32,8 @@ lines += [
     "🎵 Music: \"Fluffing a Duck\" Kevin MacLeod (incompetech.com)",
     "Licensed under Creative Commons: By Attribution 4.0 License",
     "http://creativecommons.org/licenses/by/4.0/",
+    "3D assets: Poly Haven (CC0). Sound effects: Kenney (CC0) + original. Motion data: mocap.cs.cmu.edu (CMU Graphics Lab).",
+    "Narration: synthetic voice (open-source TTS, MIT/Apache licence). See LICENSES.md.",
     "",
     "⚠️ This video is for education and entertainment only. It is not financial advice.",
 ]
