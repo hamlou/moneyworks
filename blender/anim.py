@@ -284,7 +284,7 @@ if SHOT == "C":
 if SHOT == "D":
     world_hdri("golden", 1.0, 120)
     ground("grass", 80, 3.0)
-    light("sun", "SUN", (0, 0, 10), (R(74), 0, R(-140)), energy=2.2, color=(1.0, 0.85, 0.65), angle=R(2))
+    light("sun", "SUN", (0, 0, 10), (R(62), 0, R(25)), energy=2.6, color=(1.0, 0.86, 0.68), angle=R(2))  # front-side light
     soldier = Dave("Soldier")
     soldier.outfit("none")
     soldier.live_obj.hide_render = True
@@ -308,7 +308,7 @@ if SHOT == "D":
         d.live(f, "shock" if 30 < f < 54 else "determined", talking=f >= 54)
         d.life(f, 0.5)
         d.key(f)
-        key_cam(cam0, f, (1.4, -3.4 - f * 0.036, 0.35), (0.2, 3 - f * 0.036, 1.3), 22)
+        key_cam(cam0, f, (0.9, -1.3 - f * 0.036, 0.3), (0.2, 3.5 - f * 0.036, 1.25), 30)
     crowd(soldier, rows=4, cols=8, dx=0.95, dy=1.2, origin=(0, 0, 0))
 
 # ================================================================== E · real mocap jog on a street

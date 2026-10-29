@@ -640,6 +640,11 @@ class Dave:
         ls.select_silhouette, ls.select_border, ls.select_crease = True, True, False
         ls.linestyle.color = (0.04, 0.04, 0.04)
         ls.linestyle.thickness = th
+        # thinner lines far away (29 Oct: distant stickmen became black blobs with a fixed 4.6 px line)
+        if not ls.linestyle.thickness_modifiers:
+            m = ls.linestyle.thickness_modifiers.new(name="far", type="DISTANCE_FROM_CAMERA")
+            m.range_min, m.range_max, m.value_min, m.value_max = 2.0, 14.0, 1.0, 0.2
+            m.blend = "MULTIPLY"
 
     def place(self, loc, turn=0.0):
         self.root.location, self.root.rotation_euler = loc, (0, 0, turn)
