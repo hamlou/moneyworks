@@ -173,6 +173,9 @@ def use_cache(out_dir):
 
 
 if __name__ == "__main__":
+    if "--check" in sys.argv:  # exit 0 = cached voice matches the script (nothing to do), 1 = needs voicing (voice.yml auto)
+        t = cache / f"{ep}.json"
+        sys.exit(0 if t.exists() and json.loads(t.read_text(encoding="utf-8")).get("hash") == script_hash() else 1)
     if "--use" in sys.argv:
         use_cache(sys.argv[sys.argv.index("--use") + 1])
     elif "--merge" in sys.argv:

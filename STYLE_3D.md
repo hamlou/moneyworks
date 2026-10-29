@@ -24,6 +24,7 @@
 5. Validate before voicing: no `,` in any `text`; no sentence under 5 words unless it is a deliberate punchline after a long sentence (max 1 per 30 s); no line that starts with a bare label ("Day one." "Math class.").
 
 ### 0.2 Voice
+- **Voice is automatic** (29 Oct 2026): pushing a changed `pipeline/episodes/<id>.json` starts `voice.yml` by itself (12 free GitHub machines, ~5 min for a 10-min episode), which commits `pipeline/voice/<id>.flac/.json`; it skips scripts whose voice is already up to date. Default engine for new videos: `"cb": {"engine": "turbo"}` (Chatterbox-Turbo, MIT, fast on CPU, natural ~200 wpm). Dia (Apache 2.0) is only usable on a GPU (`gpu/modal_jobs.py`, Modal free tier) — on CPU it took 2 h per minute of audio.
 - The owner will **NOT** record their own voice. Never ask or suggest it again. Voice = Chatterbox via `voice.yml` with `"cb": {"cfg": 0.25, "exag": 0.5}`; per-beat `exag` 0.45 dry / 0.55–0.6 hype.
 - Chatterbox reads long sentences at ~230 wpm → the edit slows the cached voice with ffmpeg `atempo` (test1: 0.82 → ≈190 wpm) into `public/<id>/voice.flac`, and the TSX multiplies every word time by `STRETCH = 1/atempo`. Measure wpm after every voice run (target 180–200) and pick atempo = measured/190.
 - Paid alternative only if the owner asks: ElevenLabs v3 library voice (never a clone of a real creator).
