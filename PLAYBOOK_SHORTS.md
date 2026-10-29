@@ -1,6 +1,6 @@
 # MONEYWORKS PLAYBOOK — SHORTS (9:16 vertical, under 3 min)
 
-> **★ v7 STANDARD (owner, 29 Oct 2026) — `STYLE_3D.md` §0 is THE rule set for EVERY new video (long-form and Shorts) and wins over everything in this file.** Natural connected speech (no commas AND no fragment chains like "12 years. Day one. Math class."), Blender 3D Dave in a red oversized hoodie + wide black pants with costume swaps per scene role, objects from the words of each line, ≥ 50 % real 3D, something new every 1.5–2.5 s, dense SFX (counter roll ticks etc.), hook = the priority (50 %+ of viewers leave in 5–10 s), built with the mandatory LOOP METHOD (§0.10: 3 gates, looped arc hook→rising→conflict→comeback→payoff, hook as a question, mini-loops per chapter, Shorts swipe-through ≥ 80 %, next Short only when < ~5k views/h for 24 h). Retired: memes, polaroids, photo-every-10–15 s, photos+memes every 2–4 s in Shorts, captions, 2D Dave for new videos, asking the owner to record their voice. Template: `pipeline/episodes/test1.json` + `blender/test1.py` + `src/v6/Test1.tsx`. **Monetization-safe assets only: `LICENSES.md`** (no `public/sfx/pack`, no other creators' clips/music, no cloned voices, credit footer on every upload).
+> **★ v7 STANDARD (owner, 29 Oct 2026) — `STYLE_3D.md` §0 is THE rule set for EVERY new video (long-form and Shorts) and wins over everything in this file.** Natural connected speech (no commas AND no fragment chains like "12 years. Day one. Math class."), Blender 3D Dave in a red oversized hoodie + wide black pants with costume swaps per scene role, objects from the words of each line, ≥ 50 % real 3D, something new every 1.5–2.5 s, dense SFX (counter roll ticks etc.), hook = the priority (50 %+ of viewers leave in 5–10 s), built with the mandatory LOOP METHOD (§0.10: 3 gates, looped arc hook→rising→conflict→comeback→payoff, hook as a question, mini-loops per chapter, Shorts swipe-through ≥ 80 %, next Short only when < ~5k views/h for 24 h). Retired: memes, polaroids, photo-every-10–15 s, photos+memes every 2–4 s in Shorts, captions, 2D Dave for new videos, asking the owner to record their voice. Template: `pipeline/episodes/test1.json` + `blender/test1.py` + `src/v6/Test1.tsx`. **No memes ever; real images only when needed; every video designs + generates its OWN sound effects timed to its moments (STYLE_3D §0.12).** **Monetization-safe assets only: `LICENSES.md`** (no `public/sfx/pack`, no other creators' clips/music, no cloned voices, credit footer on every upload).
 
 **This file is ONLY for vertical Shorts (`shortNN`, 1080×1920).** Long-form episodes have their own file: `PLAYBOOK_LONG.md`. Never apply a long-form rule to a Short (10 min length, 9 chapters, chapter cards, a photo every 10–15 s, a meme every 30 s, pause-and-guess, "What Dave Learned" recap, 3 thumbnails) or a Shorts rule to a long video (owner, 11 Oct 2026: "don't mix between them").
 
@@ -20,6 +20,9 @@ Open on a complete, emotionally sharp thought with no intro. The first frame mus
 
 ## 3. Retention + mixed-media rules (owner, 10 Oct 2026)
 
+> **⛔ RETIRED (owner, 29 Oct 2026):** no memes of any kind (generated meme cards, meme formats, reaction memes) and no photo quotas (no "photo every 10–15 s", no "photos every 2–4 s"). Real images only when the story needs real proof — see `STYLE_3D.md` §0.12. The rest of this section applies only to OLD episodes.
+
+
 - **Cast stays present:** in at least 80% of scenes, Dave, Bob, Danny, or another channel character must be visible in the same composition as the real photo—foreground, corner reaction, pointing, holding it, or interacting with its edge. The photo and character should feel like one scene, not alternating unrelated slides. The one exception is frame 0 of the hook: follow the real-photo-first rule (§2), then bring Dave into the next shot.
 - **No mismatched images:** map every photo ID to the exact VO beat in the manifest/scene comments. Car repair photo only when discussing the car/tire; signed paperwork only when discussing the written agreement; never use money stock for an unrelated line. If no fitting photo exists, use the animated cast and props instead.
 - **Strict no-duplicates:** run a source-level check before render: every `photo('id'` / `src="epNN/id.jpg"` may appear at most once in the video timeline. Do not recycle photos for the hook, mid-video, or CTA. Use separate unique assets, not alternate crops, for separate appearances.
@@ -31,6 +34,9 @@ Open on a complete, emotionally sharp thought with no intro. The first frame mus
 
 
 ## 4. Cadence for Shorts (do not use the long-form numbers)
+
+> **⛔ RETIRED (owner, 29 Oct 2026):** no memes of any kind (generated meme cards, meme formats, reaction memes) and no photo quotas (no "photo every 10–15 s", no "photos every 2–4 s"). Real images only when the story needs real proof — see `STYLE_3D.md` §0.12. The rest of this section applies only to OLD episodes.
+
 
 - Photos: a new real photo about every 5 s (16–20 unique photos in a 90 s Short, §9), each used once.
 - Memes: **one every 2–4 s (20+ in a 90 s Short, never more than ~4 s without one) — see §9, which replaced the old "2–4 per Short"**, each in a recognizable trending meme FORMAT recreated with our drawn cast and/or a free-licence photo. Never download copyrighted meme images or film/TV stills.
@@ -73,6 +79,9 @@ The owner rejected the first ep56 render because the characters looked frozen, s
 - **Render QA is visual, not just technical:** inspect a contact sheet and several actual frames from the final MP4, especially the hook, meme scenes, both CTAs, and ending. A successful GitHub Actions run does not mean the short is approved.
 
 ## 9. Fire, not cold — real photos + memes every few seconds, zero silence (owner, 13 Oct 2026, newest; wins over §3/§4 where they differ)
+
+> **⛔ RETIRED (owner, 29 Oct 2026):** no memes of any kind (generated meme cards, meme formats, reaction memes) and no photo quotas (no "photo every 10–15 s", no "photos every 2–4 s"). Real images only when the story needs real proof — see `STYLE_3D.md` §0.12. The rest of this section applies only to OLD episodes.
+
 
 The owner rejected the first `short52` render: drawn props only, 2 meme beats, half-second gaps between sentences. His words: "i need real photos and memes", "the memes needs to be every very few seconds", "the photos and the memes should be related what spoken", "without any silent moment or any low animated scene", "the short should be fire and not cold". Reference build: `src/shorts/Short52.tsx` + `src/memes52.tsx` + `pipeline/photos/short52.json`.
 

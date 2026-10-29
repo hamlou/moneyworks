@@ -133,17 +133,20 @@ if num.isdigit() and int(num) >= 61:
     # mixed media
     man_p = ROOT / "pipeline" / "photos" / f"{ep}.json"
     used = sorted(set(re.findall(r"['\"`]" + ep + r"/([a-z0-9_]+)\.(?:jpg|png)['\"`]", tsx)))
-    if "from '../photo'" not in tsx:
+    v7 = spec.get("style") == "v7"  # STYLE_3D §0.12 (29 Oct 2026): no memes, no photo quota, real images only when needed
+    if "from '../photo'" not in tsx and not v7:
         problems.append("no real photos: import {Pic, PicBg, Slam} from '../photo' (sec 0.10)")
     need = max(14, int(dur // 15))
-    if len(used) < need:
+    if len(used) < need and not v7:
         problems.append(f"only {len(used)} different real photos used (min {need}: a NEW real photo every 10-15 s, PLAYBOOK_LONG sec 0.11)")
     commas = [b["id"] for b in spec["beats"] if "," in b["text"]]
     if commas:
         problems.append(f"{len(commas)} beats contain a comma ({', '.join(commas[:12])}{'...' if len(commas) > 12 else ''}): owner rule, no commas in the spoken script, join with and/but/so/because or make two sentences (PLAYBOOK_LONG sec 0.11)")
     memes = len(re.findall(r"<Meme\b", tsx))
     need_m = int(dur // 40)
-    if memes < need_m:
+    if memes and v7:
+        problems.append(f"{memes} <Meme> beats: memes are RETIRED for v7 videos (STYLE_3D §0.12), remove them")
+    if memes < need_m and not v7:
         problems.append(f"only {memes} <Meme> beats (min {need_m}: a trend meme about every 30 s, PLAYBOOK_LONG sec 0.11). Name the meme component Meme so this check can count it.")
     if man_p.exists():
         ids = {x["id"]: x for x in json.loads(man_p.read_text(encoding="utf-8"))["photos"]}
@@ -155,11 +158,11 @@ if num.isdigit() and int(num) >= 61:
                 problems.append(f"photo file public/photos/{ep}/{m.group(1)}.{m.group(2)} does not exist (render will fail)")
             elif not ids[m.group(1)].get("license"):
                 problems.append(f"photo '{m.group(1)}' has no licence in the manifest: run py pipeline/photos.py {ep}")
-    else:
+    elif not v7:
         problems.append(f"pipeline/photos/{ep}.json missing")
     first_ch = re.search(r"A\('c1", tsx)
     first_pic = re.search(r"<Pic(Bg)?\b", tsx)
-    if first_ch and (not first_pic or first_pic.start() > first_ch.start()):
+    if first_ch and (not first_pic or first_pic.start() > first_ch.start()) and not v7:
         problems.append("no real photo in the hook: frame 0 must show a REAL picture (sec 0.10)")
 
 print(f"{ep}: duration {dur:.0f}s ({dur / 60:.1f} min), {len(tm['beats'])} beats, {len(tm.get('chapters', []))} chapters")

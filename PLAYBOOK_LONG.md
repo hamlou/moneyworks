@@ -1,6 +1,6 @@
 # MONEYWORKS PLAYBOOK — LONG-FORM (16:9 episodes, 10 min+)
 
-> **★ v7 STANDARD (owner, 29 Oct 2026) — `STYLE_3D.md` §0 is THE rule set for EVERY new video (long-form and Shorts) and wins over everything in this file.** Natural connected speech (no commas AND no fragment chains like "12 years. Day one. Math class."), Blender 3D Dave in a red oversized hoodie + wide black pants with costume swaps per scene role, objects from the words of each line, ≥ 50 % real 3D, something new every 1.5–2.5 s, dense SFX (counter roll ticks etc.), hook = the priority (50 %+ of viewers leave in 5–10 s), built with the mandatory LOOP METHOD (§0.10: 3 gates, looped arc hook→rising→conflict→comeback→payoff, hook as a question, mini-loops per chapter, Shorts swipe-through ≥ 80 %, next Short only when < ~5k views/h for 24 h). Retired: memes, polaroids, photo-every-10–15 s, photos+memes every 2–4 s in Shorts, captions, 2D Dave for new videos, asking the owner to record their voice. Template: `pipeline/episodes/test1.json` + `blender/test1.py` + `src/v6/Test1.tsx`. **Monetization-safe assets only: `LICENSES.md`** (no `public/sfx/pack`, no other creators' clips/music, no cloned voices, credit footer on every upload).
+> **★ v7 STANDARD (owner, 29 Oct 2026) — `STYLE_3D.md` §0 is THE rule set for EVERY new video (long-form and Shorts) and wins over everything in this file.** Natural connected speech (no commas AND no fragment chains like "12 years. Day one. Math class."), Blender 3D Dave in a red oversized hoodie + wide black pants with costume swaps per scene role, objects from the words of each line, ≥ 50 % real 3D, something new every 1.5–2.5 s, dense SFX (counter roll ticks etc.), hook = the priority (50 %+ of viewers leave in 5–10 s), built with the mandatory LOOP METHOD (§0.10: 3 gates, looped arc hook→rising→conflict→comeback→payoff, hook as a question, mini-loops per chapter, Shorts swipe-through ≥ 80 %, next Short only when < ~5k views/h for 24 h). Retired: memes, polaroids, photo-every-10–15 s, photos+memes every 2–4 s in Shorts, captions, 2D Dave for new videos, asking the owner to record their voice. Template: `pipeline/episodes/test1.json` + `blender/test1.py` + `src/v6/Test1.tsx`. **No memes ever; real images only when needed; every video designs + generates its OWN sound effects timed to its moments (STYLE_3D §0.12).** **Monetization-safe assets only: `LICENSES.md`** (no `public/sfx/pack`, no other creators' clips/music, no cloned voices, credit footer on every upload).
 
 **This file is ONLY for long-form episodes (`epNN`, 1920×1080, 10–12 min).** Vertical Shorts have their own file: `PLAYBOOK_SHORTS.md`. Never apply a Shorts rule to a long video or a long-form rule to a Short (owner, 11 Oct 2026: "you are in long form not in shorts, don't mix between them").
 
@@ -225,6 +225,9 @@ We compared our pipeline with `Jakeschincariol/youtube-agent-skill` (11 prompt-s
 
 ### 0.10 HUMAN HOOK + MIXED MEDIA v4 (owner, 10 Oct 2026) — OVERRIDES §0.3 and everything above where they conflict
 
+> **⛔ RETIRED (owner, 29 Oct 2026):** no memes of any kind (generated meme cards, meme formats, reaction memes) and no photo quotas (no "photo every 10–15 s", no "photos every 2–4 s"). Real images only when the story needs real proof — see `STYLE_3D.md` §0.12. The rest of this section applies only to OLD episodes.
+
+
 **Owner's data + words:** viewers leave in the **first 6 seconds**; "the hook sounds really robotic and doesn't attach the viewers"; "the videos have value but feel robotic, people must focus so much to understand"; "make the viewer ENJOY staying the whole video, not just throwing information"; "add real pictures — when we talk about Trump, show the real picture of Trump with good animation. Mix drawings and real pictures"; videos **10 minutes minimum**.
 
 **Diagnosis of the ep51–60 hooks (why 6 seconds):**
@@ -312,6 +315,9 @@ Everything in §0.2 (spine, BUT/SO/THEREFORE, cliffhangers, re-hooks, pause-and-
 - [ ] ≥ 10:05.
 
 ### 0.11 FLOWING SCRIPT + PHOTO & MEME CADENCE v5 (owner, 11 Oct 2026) — NEWEST, overrides everything above where they conflict
+
+> **⛔ RETIRED (owner, 29 Oct 2026):** no memes of any kind (generated meme cards, meme formats, reaction memes) and no photo quotas (no "photo every 10–15 s", no "photos every 2–4 s"). Real images only when the story needs real proof — see `STYLE_3D.md` §0.12. The rest of this section applies only to OLD episodes.
+
 
 **Owner's words:** "I don't want commas in the script, like *bonus, free, house, free*. Say it like *the bonus is free and also the house is free*." · "The real images should be every 10 to 15 seconds and the memes every 30 seconds." · "The style of videos now should include real images and trend memes."
 

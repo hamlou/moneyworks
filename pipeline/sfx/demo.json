@@ -1,0 +1,155 @@
+{
+ "note": "test plan (29 Oct 2026): one of every recipe, to listen to the library",
+ "sounds": [
+  {
+   "name": "whoosh",
+   "recipe": "whoosh"
+  },
+  {
+   "name": "impact",
+   "recipe": "impact"
+  },
+  {
+   "name": "tick_roll",
+   "recipe": "tick_roll"
+  },
+  {
+   "name": "pop",
+   "recipe": "pop"
+  },
+  {
+   "name": "swish",
+   "recipe": "swish"
+  },
+  {
+   "name": "chalk",
+   "recipe": "chalk"
+  },
+  {
+   "name": "page",
+   "recipe": "page"
+  },
+  {
+   "name": "typing",
+   "recipe": "typing"
+  },
+  {
+   "name": "cash",
+   "recipe": "cash"
+  },
+  {
+   "name": "coin",
+   "recipe": "coin"
+  },
+  {
+   "name": "ding",
+   "recipe": "ding"
+  },
+  {
+   "name": "bell",
+   "recipe": "bell"
+  },
+  {
+   "name": "buzz",
+   "recipe": "buzz"
+  },
+  {
+   "name": "phone",
+   "recipe": "phone"
+  },
+  {
+   "name": "crowd",
+   "recipe": "crowd"
+  },
+  {
+   "name": "steps",
+   "recipe": "steps"
+  },
+  {
+   "name": "riser",
+   "recipe": "riser"
+  },
+  {
+   "name": "drop",
+   "recipe": "drop"
+  },
+  {
+   "name": "glitch",
+   "recipe": "glitch"
+  },
+  {
+   "name": "heartbeat",
+   "recipe": "heartbeat"
+  },
+  {
+   "name": "rain",
+   "recipe": "rain"
+  },
+  {
+   "name": "wind",
+   "recipe": "wind"
+  },
+  {
+   "name": "thud",
+   "recipe": "thud"
+  },
+  {
+   "name": "snap",
+   "recipe": "snap"
+  },
+  {
+   "name": "slide",
+   "recipe": "slide"
+  },
+  {
+   "name": "boing",
+   "recipe": "boing"
+  },
+  {
+   "name": "zip",
+   "recipe": "zip"
+  },
+  {
+   "name": "stamp",
+   "recipe": "stamp"
+  },
+  {
+   "name": "paper",
+   "recipe": "paper"
+  },
+  {
+   "name": "clock",
+   "recipe": "clock"
+  },
+  {
+   "name": "alarm",
+   "recipe": "alarm"
+  },
+  {
+   "name": "fire",
+   "recipe": "fire"
+  },
+  {
+   "name": "water",
+   "recipe": "water"
+  },
+  {
+   "name": "glass",
+   "recipe": "glass"
+  },
+  {
+   "name": "crowd_cheer",
+   "recipe": "crowd",
+   "params": {
+    "mood": "cheer"
+   }
+  },
+  {
+   "name": "coins_rain",
+   "recipe": "coin",
+   "params": {
+    "n": 8
+   }
+  }
+ ]
+}
