@@ -1,5 +1,5 @@
 import React from 'react';
-import {AbsoluteFill, Easing, interpolate} from 'remotion';
+import {AbsoluteFill, Audio, Easing, Sequence, interpolate, staticFile} from 'remotion';
 import {ANTON, K, UI, lin, outQuick, snap} from './kit';
 
 // kit2 (29 Oct 2026, STYLE_3D §13): the reference's "living diagrams" for home base and 2D beats.
@@ -106,3 +106,19 @@ export const ThumbCard: React.FC<{hue: number; title: string}> = ({hue, title}) 
     <div style={{position: 'absolute', left: 18, bottom: 14, right: 18, fontFamily: UI, fontWeight: 700, fontSize: 30, color: '#fff', textShadow: '0 3px 8px rgba(0,0,0,0.6)'}}>{title}</div>
   </div>
 );
+
+// music changes with the situation (STYLE_3D §0.5): one track per scene mood, hard stops before punchlines, CC-BY Kevin MacLeod
+export type MSeg = {src: string; from: number; to: number; v?: number; off?: number};
+export const Music: React.FC<{segs: MSeg[]}> = ({segs}) => (
+  <>
+    {segs.map(({src, from, to, v = 0.07, off = 0}, i) => {
+      const len = Math.max(1, to - from);
+      return (
+        <Sequence key={i} from={from} durationInFrames={len} layout="none">
+          <Audio src={staticFile(`music/km/${src}.mp3`)} startFrom={off} volume={(f) => v * Math.min(1, f / 8, (len - f) / 6)} />
+        </Sequence>
+      );
+    })}
+  </>
+);
+
