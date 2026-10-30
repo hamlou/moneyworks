@@ -18,75 +18,92 @@ permissions:
   contents: write
 
 jobs:
+  # FAST (30 Oct 2026, owner: "keep chatterbox but minimize the waiting time"): only lines missing from the per-line cache
+  # (pipeline/voice/beats) are voiced, one line per machine (max 20); light checkout; installs + models cached.
   plan:
     runs-on: ubuntu-latest
     outputs:
       ep: ${{ steps.p.outputs.ep }}
+      shards: ${{ steps.p.outputs.shards }}
+      n: ${{ steps.p.outputs.n }}
     steps:
       - uses: actions/checkout@v4
         with:
           fetch-depth: 2
-      - uses: actions/setup-python@v5
-        with:
-          python-version: '3.11'
+          sparse-checkout: pipeline
       - id: p
         run: |
-          if [ -n "${{ inputs.ep }}" ]; then echo "ep=${{ inputs.ep }}" >> $GITHUB_OUTPUT; exit 0; fi
           pip -q install numpy
-          for f in $(git diff --name-only HEAD~1 HEAD -- 'pipeline/episodes/*.json'); do
-            e=$(basename $f .json)
-            grep -q '"voice": "chatterbox"' $f || continue
-            python pipeline/tts_cb.py $e --check && { echo "$e voice up to date"; continue; }
-            echo "ep=$e" >> $GITHUB_OUTPUT; echo "voicing $e"; break
-          done
+          e="${{ inputs.ep }}"
+          if [ -z "$e" ]; then
+            for f in $(git diff --name-only HEAD~1 HEAD -- 'pipeline/episodes/*.json'); do
+              x=$(basename $f .json)
+              grep -q '"voice": "chatterbox"' $f || continue
+              python pipeline/tts_cb.py $x --check && { echo "$x voice up to date"; continue; }
+              e=$x; break
+            done
+          fi
+          [ -z "$e" ] && exit 0
+          t=$(python pipeline/tts_cb.py $e --todo)
+          echo "ep=$e" >> $GITHUB_OUTPUT
+          echo "n=$(echo "$t" | python -c 'import json,sys;print(json.load(sys.stdin)["n"])')" >> $GITHUB_OUTPUT
+          echo "shards=$(echo "$t" | python -c 'import json,sys;print(json.dumps(json.load(sys.stdin)["shards"] or [0]))')" >> $GITHUB_OUTPUT
+          echo "voicing $e: $t"
 
   shard:
     needs: plan
-    if: needs.plan.outputs.ep != ''
+    if: needs.plan.outputs.ep != '' && needs.plan.outputs.n != '0'
     runs-on: ubuntu-latest
     timeout-minutes: 150
     strategy:
       fail-fast: false
       matrix:
-        i: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]
+        i: ${{ fromJSON(needs.plan.outputs.shards) }}
     steps:
       - uses: actions/checkout@v4
+        with:
+          sparse-checkout: pipeline
       - uses: actions/setup-python@v5
         with:
           python-version: '3.11'
-      - run: sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg
-      - run: pip install -q --extra-index-url https://download.pytorch.org/whl/cpu chatterbox-tts faster-whisper numpy
-      - run: python pipeline/tts_cb.py ${{ needs.plan.outputs.ep }} --shard ${{ matrix.i }} --of 12
+      - id: env
+        uses: actions/cache@v4
+        with:
+          path: |
+            ~/cbenv
+            ~/.cache/huggingface
+          key: cbenv-py311-v1
+      - if: steps.env.outputs.cache-hit != 'true'
+        run: python -m venv ~/cbenv && ~/cbenv/bin/pip install -q --extra-index-url https://download.pytorch.org/whl/cpu chatterbox-tts faster-whisper numpy soundfile
+      - run: ~/cbenv/bin/python pipeline/tts_cb.py ${{ needs.plan.outputs.ep }} --shard ${{ matrix.i }} --of ${{ needs.plan.outputs.n }}
       - uses: actions/upload-artifact@v4
         with:
           name: cb-${{ matrix.i }}
-          path: cb/*.wav
-          retention-days: 1
-      - uses: actions/upload-artifact@v4
-        with:
-          name: cbj-${{ matrix.i }}
-          path: cb/*.json
+          path: |
+            cb/*.wav
+            cb/*.json
+            cb/*.key
           retention-days: 1
 
   merge:
     needs: [plan, shard]
+    if: always() && needs.plan.outputs.ep != '' && needs.shard.result != 'failure' && needs.shard.result != 'cancelled'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
         with:
-          python-version: '3.12'
-      - run: sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg
-      - run: pip install -q numpy
+          sparse-checkout: pipeline
+      - uses: FedericoCarboni/setup-ffmpeg@v3
+      - run: pip install -q numpy soundfile
       - uses: actions/download-artifact@v4
         with:
           path: cb
           merge-multiple: true
-      - run: ls cb | head; python pipeline/tts_cb.py ${{ needs.plan.outputs.ep }} --merge
+      - run: mkdir -p cb; python pipeline/tts_cb.py ${{ needs.plan.outputs.ep }} --merge
       - run: |
           git config user.name "Moneyworks Bot"
           git config user.email "bot@users.noreply.github.com"
-          git add pipeline/voice/${{ needs.plan.outputs.ep }}.flac pipeline/voice/${{ needs.plan.outputs.ep }}.json
+          git add pipeline/voice/beats pipeline/voice/${{ needs.plan.outputs.ep }}.flac pipeline/voice/${{ needs.plan.outputs.ep }}.json
           git commit -q -m "${{ needs.plan.outputs.ep }}: chatterbox voice"
           for i in 1 2 3 4 5; do git pull --rebase -q && git push -q && break; sleep 8; done
       - uses: actions/upload-artifact@v4

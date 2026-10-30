@@ -34,6 +34,21 @@ def script_hash():
     return hashlib.sha1(json.dumps(key).encode()).hexdigest()[:16]
 
 
+BEATS = cache / "beats"  # per-line cache shared by all episodes: <key>.flac + <key>.json (30 Oct 2026: only re-voice changed lines)
+
+
+def beat_key(b):
+    import hashlib
+    cbs = spec.get("cb", {})
+    k = [b["text"], b.get("exag", cbs.get("exag", 0.5)), b.get("cfg", cbs.get("cfg", 0.5)), cbs.get("engine", "chatterbox"), cbs.get("ref")]
+    return hashlib.sha1(json.dumps(k).encode()).hexdigest()[:14]
+
+
+def todo():
+    """beats whose line is not in the per-line cache yet"""
+    return [b for b in beats if not (BEATS / f"{beat_key(b)}.flac").exists()]
+
+
 def pcm(path, sr=SR):
     raw = subprocess.run(["ffmpeg", "-v", "error", "-i", str(path), "-ac", "1", "-ar", str(sr), "-f", "s16le", "-"], check=True, capture_output=True).stdout
     return np.frombuffer(raw, dtype=np.int16)
@@ -77,9 +92,12 @@ def shard(i, n):
         from chatterbox.tts import ChatterboxTTS
         m = ChatterboxTTS.from_pretrained(device=dev)
     wm = WhisperModel("base.en", device="cpu", compute_type="int8")
+    torch.set_num_threads(4)
     cb.mkdir(exist_ok=True)
-    for j, b in enumerate(beats):
-        if j % n != i:
+    pending = {b["id"] for b in todo()}
+    mine = [(j, b) for j, b in enumerate(beats) if b["id"] in pending]
+    for k_, (j, b) in enumerate(mine):
+        if k_ % n != i:
             continue
         words = b["text"].split()
         best = None
@@ -100,9 +118,11 @@ def shard(i, n):
                 w = m.generate(b["text"], exaggeration=b.get("exag", cbs.get("exag", 0.5)), cfg_weight=b.get("cfg", cbs.get("cfg", 0.5)),
                                **({"audio_prompt_path": str(ROOT / ref)} if ref else {}))
             tmp = cb / f"{b['id']}_raw.wav"
-            if w is not None:
-                ta.save(str(tmp), w, m.sr)
-            x, _ = trim(pcm(tmp), SR)
+            if w is not None:  # resample in torch: same 48 kHz int16 as before, no ffmpeg on the voice machines
+                wr = ta.functional.resample(w.float().reshape(1, -1), m.sr, SR)[0].clamp(-1, 1)
+                x, _ = trim((wr.numpy() * 32767).astype(np.int16), SR)
+            else:
+                x, _ = trim(pcm(tmp), SR)
             dst = cb / f"{b['id']}.wav"
             with wave.open(str(dst), "wb") as wv:
                 wv.setnchannels(1); wv.setsampwidth(2); wv.setframerate(SR); wv.writeframes(x.tobytes())
@@ -130,11 +150,53 @@ def shard(i, n):
                 d = (e - a) * (len(t) + 1) / tot
                 ts.append((c, c + d * 0.9)); c += d
         (cb / f"{b['id']}.json").write_text(json.dumps([{"text": t, "start": round(s, 3), "end": round(en, 3)} for t, (s, en) in zip(words, ts)]))
+        (cb / f"{b['id']}.key").write_text(beat_key(b))
         print(f"  {b['id']}: {dur:.1f}s score {score:.2f}", flush=True)
 
 
+def wav_i16(path):
+    with wave.open(str(path), "rb") as wv:
+        return np.frombuffer(wv.readframes(wv.getnframes()), dtype=np.int16)
+
+
+def level(x, target=0.1):
+    """every line at the same speech loudness (cached + new lines match), before the final loudnorm"""
+    f = x.astype(np.float32) / 32768
+    loud = np.abs(f) > 0.02
+    r = float(np.sqrt(np.mean(f[loud] ** 2))) if loud.any() else 0.0
+    g = min(4.0, max(0.25, target / r)) if r > 0 else 1.0
+    return (np.clip(f * g, -1, 1) * 32767).astype(np.int16)
+
+
+def seed(flac):
+    """fill the per-line cache from an already voiced episode (<ep>.flac + <ep>.json): each line = from just before its
+    first word to just before the next line (minus that line's pause)"""
+    import soundfile as sf
+    BEATS.mkdir(exist_ok=True)
+    V = json.loads((cache / f"{ep}.json").read_text(encoding="utf-8"))["beats"]
+    x = pcm(flac)
+    for i, (b, vb) in enumerate(zip(beats, V)):
+        if vb["id"] != b["id"] or vb["text"] != b["text"]:
+            print(f"  skip {b['id']} (script changed)"); continue
+        a0 = max(0.0, vb["start"] - 0.04)
+        a1 = V[i + 1]["start"] - 0.04 - b.get("pause", 0.35) if i + 1 < len(V) else vb["end"] + 0.15
+        a1 = max(a1, vb["end"] + 0.05)
+        clip = x[int(a0 * SR):int(a1 * SR)]
+        k = beat_key(b)
+        sf.write(str(BEATS / f"{k}.flac"), clip, SR, subtype="PCM_16")
+        (BEATS / f"{k}.json").write_text(json.dumps([{"text": w["text"], "start": round(w["start"] - a0, 3), "end": round(w["end"] - a0, 3)} for w in vb["words"]]))
+        print(f"  {b['id']} -> {k} {len(clip) / SR:.2f}s")
+
+
 def merge():
+    import soundfile as sf
     cache.mkdir(exist_ok=True)
+    BEATS.mkdir(exist_ok=True)
+    for b in beats:  # store freshly voiced lines in the per-line cache
+        f = cb / f"{b['id']}.wav"
+        if f.exists() and (cb / f"{b['id']}.key").exists() and (cb / f"{b['id']}.key").read_text().strip() == beat_key(b):
+            sf.write(str(BEATS / f"{beat_key(b)}.flac"), wav_i16(f), SR, subtype="PCM_16")
+            (BEATS / f"{beat_key(b)}.json").write_text((cb / f"{b['id']}.json").read_text())
     out = [np.zeros(int(LEAD * SR), dtype=np.int16)]
     n = len(out[0])
     tb, chapters = [], []
@@ -142,8 +204,9 @@ def merge():
         if b.get("chapter"):
             chapters.append({"n": len(chapters) + 1, "title": b["chapter"], "start": round(n / SR, 3), "beat": b["id"]})
             g = np.zeros(int(CHAPTER_GAP * SR), dtype=np.int16); out.append(g); n += len(g)
-        x = pcm(cb / f"{b['id']}.wav")
-        ws = json.loads((cb / f"{b['id']}.json").read_text())
+        key = beat_key(b)
+        x = level(sf.read(str(BEATS / f"{key}.flac"), dtype="int16")[0])
+        ws = json.loads((BEATS / f"{key}.json").read_text())
         t0 = n / SR
         out.append(x); n += len(x)
         tb.append({"id": b["id"], "text": b["text"], "start": t0 + ws[0]["start"], "end": t0 + ws[-1]["end"],
@@ -178,6 +241,11 @@ if __name__ == "__main__":
         sys.exit(0 if t.exists() and json.loads(t.read_text(encoding="utf-8")).get("hash") == script_hash() else 1)
     if "--use" in sys.argv:
         use_cache(sys.argv[sys.argv.index("--use") + 1])
+    elif "--seed" in sys.argv:
+        seed(cache / f"{ep}.flac")
+    elif "--todo" in sys.argv:  # voice.yml plan: how many lines need voicing -> shard list (1 line per machine, max 20)
+        n = min(20, len(todo()))
+        print(json.dumps({"n": n, "shards": list(range(n))}))
     elif "--merge" in sys.argv:
         merge()
     elif "--shard" in sys.argv:

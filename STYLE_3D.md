@@ -24,7 +24,7 @@
 5. Validate before voicing: no `,` in any `text`; no sentence under 5 words unless it is a deliberate punchline after a long sentence (max 1 per 30 s); no line that starts with a bare label ("Day one." "Math class.").
 
 ### 0.2 Voice
-- **Voice is automatic** (29 Oct 2026): pushing a changed `pipeline/episodes/<id>.json` starts `voice.yml` by itself (12 free GitHub machines, ~5 min for a 10-min episode), which commits `pipeline/voice/<id>.flac/.json`; it skips scripts whose voice is already up to date. **Engine = current Chatterbox (owner choice, 29 Oct 2026: "chatterbox current is good for now, keep it")** with `"cb": {"cfg": 0.25, "exag": 0.5}`, slowed to ~190 wpm in the edit (atempo). Male voice only (Dave is a man). `"engine": "turbo"` exists but is not the default. Dia (Apache 2.0) is only usable on a GPU (`gpu/modal_jobs.py`, Modal free tier) — on CPU it took 2 h per minute of audio.
+- **Voice is automatic + FAST** (30 Oct 2026: per-line cache `pipeline/voice/beats`, only changed lines are voiced, one line per machine up to 20, installs + models cached; seed an already-voiced episode with `py pipeline/tts_cb.py <id> --seed`) (29 Oct 2026): pushing a changed `pipeline/episodes/<id>.json` starts `voice.yml` by itself (12 free GitHub machines, ~5 min for a 10-min episode), which commits `pipeline/voice/<id>.flac/.json`; it skips scripts whose voice is already up to date. **Engine = current Chatterbox (owner choice, 29 Oct 2026: "chatterbox current is good for now, keep it")** with `"cb": {"cfg": 0.25, "exag": 0.5}`, slowed to ~190 wpm in the edit (atempo). Male voice only (Dave is a man). `"engine": "turbo"` exists but is not the default. Dia (Apache 2.0) is only usable on a GPU (`gpu/modal_jobs.py`, Modal free tier) — on CPU it took 2 h per minute of audio.
 - The owner will **NOT** record their own voice. Never ask or suggest it again. Voice = Chatterbox via `voice.yml` with `"cb": {"cfg": 0.25, "exag": 0.5}`; per-beat `exag` 0.45 dry / 0.55–0.6 hype.
 - Chatterbox reads long sentences at ~230 wpm → the edit slows the cached voice with ffmpeg `atempo` (test1: 0.82 → ≈190 wpm) into `public/<id>/voice.flac`, and the TSX multiplies every word time by `STRETCH = 1/atempo`. Measure wpm after every voice run (target 180–200) and pick atempo = measured/190.
 - Paid alternative only if the owner asks: ElevenLabs v3 library voice (never a clone of a real creator).
@@ -571,3 +571,28 @@ Strips: `qa_dl/chan/hook/strip_*.jpg` (his `_-px6J9nqKg` 1.7 M, `rxN7qVpjryY` 1.
 | 6–9 | **QUESTION** | the title question spoken while a new world slams in |
 | 9–12 | **PROMISE** | what we'll see by the end (withheld result), Dave big in frame pointing at "you" |
 | 12+ | context/info cards (bio, photo, sources) | only now |
+
+## 16. Whole-style REVERSE-ENGINEERING v2 (30 Oct 2026, owner: "did you reverse engineer his whole style or just the hook?")
+Data: his top 4 (`9yXNBbf3TW0` 860 K · `rxN7qVpjryY` 1.2 M · `_-px6J9nqKg` 1.7 M · `6YakH_jGjUs` 87 K), full captions → `qa_dl/chan/re/text_*.txt`; tools `qa_dl/chan_tools/script_re.py`, `tools/re/audio_re.py` (sound), `tools/re/camera_re.py` (camera + colour) — the heavy ones run on CI (`refanalysis.yml`, ids in `tools/re/IDS`, numbers only, no media kept).
+
+### 16.1 Writing — measured
+| | Sleeping 860 K | Brainrot 1.2 M | No 3D 1.7 M | YT killer | ea1 (ours) |
+|---|---|---|---|---|---|
+| words / sentence | 15.6 | **8.9** | 12.6 | 13.8 | ~20 |
+| numbers spoken / min | 4.3 | 5.6 | **6.9** | 2.3 | ~6 |
+| questions / min | 0.4 | 0.7 | 0.9 | 1.0 | 2 (hook + end) |
+| 1–3-word punch lines / min | 0.5 | 1.4 | 1.2 | 1.3 | **0** |
+| skit dialogue lines (other characters talk) | **33** | 0 | 0 | 6 | 0 |
+| "I" vs "you" / min | 8.1 / 2.8 | 5.0 / 1.6 | 2.8 / 2.6 | 4.0 / 4.5 | Dave → "you" |
+
+Rules:
+1. **Mini-loop every 20–40 s:** set up an attempt/claim → expectation → the RESULT with a number → a 1–3-word reaction ("Dayum!", "Kill me.", "It flopped.", "I forgor."). Our scripts deliver facts without the reaction beat → add one punch line every 40–60 s.
+2. **Running gag / recurring motif** that pays off 4–6 times ("flatlined at 15,000" ×6, "I'm a tumor" ×5, "Canadians. Where are you?"). Every video picks ONE from its own topic and repeats it on a schedule.
+3. **A personified problem** ("my arch nemesis" = the 15 k wall). The obstacle gets a name and a body.
+4. **Fake-out before the real number** ("we reached an insane five thou— I'm just kidding. We lost 3 subs.") — at least once per video, near the end.
+5. **"Have a guess."** — invite the viewer to predict, then hold 1 beat before the number.
+6. **Scoreboard at every chapter turn** (Day 2: 39 subs · week report: subs / views / hours) — the viewer always knows the score.
+7. **Short sentences when the stakes rise** (Brainrot, his best performer, averages 8.9 words per sentence).
+8. **Skits:** other characters speak in their own voices for 2–6 s (a German waiter, a priest "Yes my child", the tumor). Our TTS can do a second voice — use 1–3 skit lines per minute in long videos.
+9. **Ending (last 30–60 s):** a "two theories / lesson" layer (the moral, short), the honest verdict, a reason to come back (a dated follow-up: "every April I post the numbers"), a comment question, then a SIGNATURE sign-off line used in every video. No recap. → Dave needs one fixed sign-off line of his own.
+10. **Music-only breaks** between chapters (Sleeping: 26 in 19 min ≈ one every 45 s, 2–4 s each) — a breath with a visual montage, then the next status report.
