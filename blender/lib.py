@@ -700,8 +700,22 @@ class Dave:
             self.feet[s].location = ft + Vector((0, -0.05, 0.02))
         return abs(math.sin(phase)) * 0.025
 
+    def declip(self):
+        """push arms/hands out of torso, head, legs and each other (blender/declip.py) — runs on every pose + key"""
+        import declip
+        pts = lambda o: [tuple(pt.co[:3]) for pt in o.data.splines[0].points]
+        rad = lambda o: [o.data.bevel_depth * pt.radius for pt in o.data.splines[0].points]
+        a0 = self.arms["l"]
+        arms = declip.solve({s: pts(self.arms[s]) for s in "lr"}, rad(a0), pts(self.torso), rad(self.torso),
+                            tuple(self.head.location), 0.21 * max(self.head.scale), {s: pts(self.legs[s]) for s in "lr"}, rad(self.legs["l"]))
+        for s in "lr":
+            for i, p in enumerate(arms[s]):
+                self.arms[s].data.splines[0].points[i].co = (*p, 1)
+            self.hands[s].location = arms[s][-1]
+
     def key(self, f):
         """keyframe everything the rig moves at frame f (per-frame keys → Cycles motion blur works)"""
+        self.declip()
         for o in [self.root, self.head, self.hood, self.drop] + list(self.hands.values()) + list(self.feet.values()) + [x for v in self.extras.values() for x in v]:
             o.keyframe_insert("location", frame=f)
             o.keyframe_insert("rotation_euler", frame=f)
@@ -761,6 +775,7 @@ class Dave:
         self.extras["tie"][0].location = up(Vector((0, -0.08, 0.32)))
         hx, hy, hz = P.get("head", (0, 0, 0))
         self.head.rotation_euler = (R(hx + P.get("lean", 0)), R(hy), R(hz))
+        self.declip()
         return up
 
     def face(self, name, drop=False):

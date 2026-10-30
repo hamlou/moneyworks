@@ -46,7 +46,7 @@
 ### 0.5 Sound — dense (owner 29 Oct: "the video is very poor of sound effects")
 - Every visual event gets a sound: card slide → `slide`/`swish`, pop-in → `pop_hi`, pose swap → `snap_white`, 3D hard cut → `thump_low`, **every counter going up → `count_roll` (ticks that speed up and land with a ding)**, chalk → `chalk`, book → `pageflip`, typing → `key`/`key2` every 3 frames, reveals → `boom`/`stamp`, fails → `trombone`, money → `cash`/`ding`, sleep → `dream`, plus `crowd`/`sting`/`boing` as comedy accents. test1 = ~60 cues per minute; aim for that.
 - New SFX are synthesised by `pipeline/sfx_synth.py` (never overwrite an existing `public/sfx/*.wav`; give new sounds new names). Owner's 2 Google Drive SFX folders: ids in `.github/workflows/sfxpack.yml`; on 29 Oct the main folder returned "permission denied" → ask the owner to re-share as "Anyone with the link" before relying on it.
-- **Music changes with the situation (owner 30 Oct 2026: "clone his style… we always use the duck music")** — NEVER one looped track (`bgm.mp3` "Fluffing a Duck" is retired). Each scene mood gets its own track via the `Music` segments in the TSX (see `src/v6/Ea1.tsx`): curious/what-if → `investigations`, cheeky plan/joke → `sneaky_snitch` / `scheming_weasel_faster` / `monkeys_spinning_monkeys`, money/power tension → `hitman`, attack/conflict → `volatile_reaction`, comic reaction → `comic_plodding` / `pixel_peeker_polka_faster`, suspicion/claim → `crypto` / `hiding_your_reality`, sad/low point → `darkest_child`, open question/ending → `unanswered_questions` / `thinking_music`, upbeat comeback → `life_of_riley`. Switch on the beat where the mood flips (with its thump/whoosh), **cut to dead silence 0.3–0.8 s before every punchline or stamp** and let the hit land in silence, ~0.07 under voice. Library: `public/music/km/*.mp3` (Kevin MacLeod, CC BY 4.0, loudness-normalised, first 75 s); add tracks from incompetech.com only, and credit EVERY track used in the description.
+- **Music changes with the situation (owner 30 Oct 2026: "clone his style… we always use the duck music")** — NEVER one looped track (`bgm.mp3` "Fluffing a Duck" is retired). Each scene mood gets its own track via `<Music segs>` from `src/v6/kit2.tsx` (example: `src/v6/Ea1.tsx`): curious/what-if → `investigations`, cheeky plan/joke → `sneaky_snitch` / `scheming_weasel_faster` / `monkeys_spinning_monkeys`, money/power tension → `hitman`, attack/conflict → `volatile_reaction`, comic reaction → `comic_plodding` / `pixel_peeker_polka_faster`, suspicion/claim → `crypto` / `hiding_your_reality`, sad/low point → `darkest_child`, open question/ending → `unanswered_questions` / `thinking_music`, upbeat comeback → `life_of_riley`. Switch on the beat where the mood flips (with its thump/whoosh), **cut to dead silence 0.3–0.8 s before every punchline or stamp** and let the hit land in silence, ~0.07 under voice. Library: `public/music/km/*.mp3` (Kevin MacLeod, CC BY 4.0, loudness-normalised, first 75 s); add tracks from incompetech.com only, and credit EVERY track used in the description.
 
 ### 0.6 The hook — THE priority (built with the loop method §0.10) (owner 29 Oct: "more than 50 % of clickers leave in the first 5–10 seconds")
 - The first 10 s decide the video. Frame 0 already moving and already showing the most surprising thing; the concept + stakes are clear by second 5; a visual change every ≤ 1 s for the first 10 s; a reason to keep watching (open question / withheld result) before second 10.
@@ -537,3 +537,37 @@ What he does in the first 36 s (the hook):
 - **Real human motion (CMU mocap, free)**: `blender/fetch_mocap.py` downloads BVH by id (02_01 walk, 02_03 jog, 02_04 jump, 02_05 punch, more in the cmubvh READMEs); `Mocap(id)` + `mocap_pose(dave, m, i, base, turn)` retargets it onto Dave every frame. Use for walks/runs/fights/dances and for crowds.
 - **Living 2D graphics** (`src/v6/kit2.tsx`): `SelfDrawGraph`, `WipePanel`, `FlyStack`, `Shake`. `src/v6/AnimTest.tsx` shows how animated shot mp4s (public/anim, re-encoded crf 23 ≈ 2–4 MB) are cut with 2D layers and SFX.
 - **Voice engine switch**: `"cb": {"engine": "turbo"}` in the episode JSON uses Chatterbox-Turbo instead of Chatterbox (pick after the owner listens to `videos/voice_bakeoff2/`).
+
+## 15. Hook REVERSE-ENGINEERED (30 Oct 2026, owner: "your hook is not attaching at all") — his top 3 at 4 fps + captions, vs ea1
+Strips: `qa_dl/chan/hook/strip_*.jpg` (his `_-px6J9nqKg` 1.7 M, `rxN7qVpjryY` 1.2 M, `9yXNBbf3TW0` 860 K, ours `strip_ea1.jpg`), captions `qa_dl/chan/hook/*.vtt`.
+
+### 15.1 What happens second by second
+| t | BRAINROT 1.2 M | SLEEPING 860 K | NO 3D ANIMATORS 1.7 M |
+|---|---|---|---|
+| 0.0 | already mid-motion: green speed tunnel, calendar flies in | his thumbnail card (the video itself) | dark empty concrete room, silence = mystery |
+| 0.3–1.8 | calendar days get **crossed out one every 0.25 s** (deadline made visible) | 1.5 s: giant **VIEWS counter rolls 547 K → 963 K** in 1.5 s (the RESULT first) | 1.0 s: ceiling light flicks ON (sound) |
+| 2–4.5 | cards with escalating numbers swap every 0.5 s (1 face → 4 faces → 64 cells) | 3.25 s: **macro close-up** stopwatch fills the frame, comic **"CLICK!"** | 2.0 s: figure with glowing eyes in the doorway, crawls in |
+| 4.5–7.5 | whoosh into a light tunnel, host **surfs a growth arrow** | 5.25 s: **absurd scale** — eyeball bigger than the host | 5.5 s: opens a treasure chest |
+| 7.5–10 | host big in frame, stopwatch | 7.5 s: couch, 8.5 s **white flash** → asleep, Zzz | 7.5 s: first name card flies in **on the spoken name**, one per name every ~1 s |
+| 10–12 | **wall of money** = the prize, host turns to camera | 9.75 s: video-player UI, red progress bar racing (fast-forward) | 14 s: the big number ("50 million subs") + absurd comparison (Poland, Spain, Canada) |
+| words | challenge + deadline + question by 11 s: "For the entire month of January… only 30 days and can I get the channel monetized?" | counter-intuitive insight by 8 s: "the best viewer is an asleep viewer" | the title IS the open question; the voice starts at 7 s on a list of names |
+
+### 15.2 The rules (measured)
+1. **Frame 0 = the most valuable thing in the video** (the result, the prize, the money, the mystery) — never an establishing shot. Ours opened on a wide room with Dave at ~8 % of the frame walking for 5 s; our best image ($33 M cash rain) came at 36 s.
+2. **New image every 0.5–1.5 s for the first 12 s.** His: 8–10 distinct visuals in 12 s. Ours: 2 (a wide shot for 5 s, then ONE photo card held 7 s).
+3. **Something counts or ticks in the first 3 s** (counter rolling, calendar days crossed, numbers escalating) — progress the eye follows.
+4. **Scale shock:** macro close-ups (stopwatch, eyeball) and the subject at 40–80 % of the frame. Never a small figure in a big room during the hook.
+5. **Sound design carries it:** light switch clack, "CLICK!" comic word = sound word, whoosh into tunnels, silence then a hit. The hook has the densest SFX of the video.
+6. **Words = stakes + proof + question within 8–11 s**, and every noun spoken gets its own image on that word (names → name cards land on each name).
+7. **Rhythm:** hold → hit → hold → hit; white 1-frame flash between worlds; never a fade.
+8. **No information card in the first 10 s.** Info cards (source photo, bio) come after the viewer is hooked; his first 12 s have zero text blocks except numbers.
+
+### 15.3 Hook template (use for EVERY video, long + Shorts)
+| t | slot | content |
+|---|---|---|
+| 0.0–1.5 | **PRIZE / RESULT** | the most spectacular true image + a rolling number (sourced) |
+| 1.5–3.5 | **STAKES** | close-up / scale shock + comic sound word |
+| 3.5–6 | **TWIST** | the surprising fact that makes it a story ("…and he still won") |
+| 6–9 | **QUESTION** | the title question spoken while a new world slams in |
+| 9–12 | **PROMISE** | what we'll see by the end (withheld result), Dave big in frame pointing at "you" |
+| 12+ | context/info cards (bio, photo, sources) | only now |
