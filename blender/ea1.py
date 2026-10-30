@@ -29,7 +29,7 @@ LENS = json.load(open(os.path.join(os.path.dirname(os.path.abspath(__file__)), "
 LEN = LENS.get(SHOT, 1)
 SIGN, DROOP = LENS.get("M_sign", 60), LENS.get("M_droop", 70)  # frames from the voice: end of "sign…", the word "unnecessary"
 
-POSES["sign"] = dict(el=(-0.16, -0.18, 0.18), hl=(-0.12, -0.36, 0.16), er=(0.18, -0.2, 0.16), hr=(0.08, -0.4, 0.1), head=(22, 0, 0), lean=18)
+POSES["sign"] = dict(el=(-0.16, -0.2, 0.2), hl=(-0.12, -0.5, 0.12), er=(0.18, -0.22, 0.18), hr=(0.06, -0.55, 0.1), head=(26, 0, 0), lean=20)
 POSES["droop"] = dict(el=(-0.2, 0.02, 0.02), hl=(-0.22, 0.04, -0.22), er=(0.2, 0.02, 0.02), hr=(0.22, 0.04, -0.22), head=(35, 0, 10), lean=-12)
 POSES["flex"] = dict(el=(-0.3, 0.0, 0.4), hl=(-0.24, -0.04, 0.64), er=(0.3, 0.0, 0.4), hr=(0.24, -0.04, 0.64), head=(-6, 0, 0))
 POSES["look_up"] = dict(el=(-0.16, -0.04, 0.2), hl=(-0.2, -0.12, 0.34), er=(0.16, -0.04, 0.2), hr=(0.2, -0.12, 0.34), head=(-30, 0, 10))
@@ -133,11 +133,14 @@ if SHOT == "O":
     office()
     light("sun", "SUN", (0, 0, 10), (R(60), 0, R(160)), energy=2.0, color=(1.0, 0.93, 0.82), angle=R(3))
     light("fill", "AREA", (0, -3, 3.2), (R(30), 0, 0), energy=300, size=5, color=(1.0, 0.96, 0.9))
-    walk = Mocap("02_01", step=5, frames=80)
     for f in range(1, LEN + 1):
-        if f <= 52:  # walks in from the left behind the desk
-            mocap_pose(d, walk, (f - 1) % len(walk), base=(-3.6, 0.6, 0), turn=R(-90), root_motion=False)
-            d.root.location.x = -3.6 + 3.4 * ease(f / 52)
+        if f <= 52:  # walks in from the left behind the desk (our walk cycle: clean side silhouette)
+            bob = d.legs_walk(f / 52 * 4 * math.pi)
+            d.place((-3.6 + 3.4 * ease(f / 52), 0.6, 0.72 + bob), R(-90))
+            sw = math.sin(f / 52 * 4 * math.pi) * 0.12
+            P = dict(POSES["idle"])
+            P["hl"], P["hr"] = (-0.13, -0.02 - sw, -0.06), (0.13, -0.02 + sw, -0.06)
+            d.pose(P)
             d.live(f, "grin", talking=True)
         else:  # turns to camera and presents the giant chair
             d.place((-0.2, 0.6, 0.72), R(-90) + R(90) * back_out((f - 52) / 6))
@@ -153,10 +156,13 @@ if SHOT == "M":
     office()
     light("sun", "SUN", (0, 0, 10), (R(60), 0, R(160)), energy=2.0, color=(1.0, 0.93, 0.82), angle=R(3))
     light("fill", "AREA", (0, -3, 3.2), (R(30), 0, 0), energy=300, size=5)
-    paper = plane("m4a", (0.0, 1.05, 0.835), (0.34, 0.44), (0, 0, math.radians(4)), image_mat("m4a", "m4a_paper.png", rough=0.85))
+    paper = plane("m4a", (0.0, 1.25, 0.835), (0.34, 0.44), (0, 0, math.radians(4)), image_mat("m4a", "m4a_paper.png", rough=0.85))
+    for o in bpy.data.objects:  # the chair moves back so Dave can stand behind the desk
+        if o.name.startswith("chair_"):
+            o.location.y += 0.5
     g = mascot("insurance", 2.2)
     for f in range(1, LEN + 1):
-        d.place((0.0, 0.55, 0.72), R(0))
+        d.place((0.0, 1.85, 0.72), R(0))  # behind the desk, facing camera, hands on the paper
         d.legs_set("stand")
         wig = math.sin(f * 1.1) * 0.03 if f < SIGN else 0  # pen scribbles
         P = dict(POSES["sign"])

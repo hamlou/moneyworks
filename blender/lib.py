@@ -373,7 +373,7 @@ OUTFITS = {
     "hoodie": dict(torso=((0.62, 0.04, 0.05), 0.135), arms=((0.62, 0.04, 0.05), 0.072), legs=((0.035, 0.035, 0.04), 0.07), hood=True, hem=True, pocket=True, strings=True, waist=True, shoes=True),
     "professor": dict(torso=((0.33, 0.2, 0.11), 0.1), arms=((0.33, 0.2, 0.11), 0.058), legs=((0.16, 0.16, 0.18), 0.058), glasses=True, cap=True, waist=True, shoes=True),
     "doctor": dict(torso=((0.92, 0.93, 0.95), 0.11), arms=((0.92, 0.93, 0.95), 0.06), legs=((0.12, 0.3, 0.42), 0.058), mirror=True, waist=True, shoes=True),
-    "suit": dict(torso=((0.08, 0.09, 0.13), 0.095), arms=((0.08, 0.09, 0.13), 0.055), legs=((0.08, 0.09, 0.13), 0.055), tie=True, waist=True, shoes=True),
+    "suit": dict(torso=((0.025, 0.028, 0.045), 0.095), arms=((0.025, 0.028, 0.045), 0.055), legs=((0.025, 0.028, 0.045), 0.055), tie=True, shoes=True),
     "none": dict(torso=(None, 0.034), arms=(None, 0.03), legs=(None, 0.03)),
     "muscle": dict(torso=((0.72, 0.07, 0.09), 0.17), arms=((0.72, 0.07, 0.09), 0.085), legs=((0.72, 0.07, 0.09), 0.075), shoes=True),
 }
