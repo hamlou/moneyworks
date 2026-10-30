@@ -1,1176 +1,1396 @@
 {
  "fps": 30,
- "total": 61.995,
- "hash": "b098dd203833f0ad",
+ "total": 72.242,
+ "hash": "f94ca7c10b1f5bbf",
  "chapters": [],
  "beats": [
   {
-   "id": "h1",
-   "text": "What would happen if a doctor whose dad came from Egypt became the president of the United States?",
+   "id": "k1",
+   "text": "Thirty three million dollars got spent to stop one man from winning one election",
    "start": 0.08,
-   "end": 3.94,
+   "end": 3.363,
    "words": [
     {
-     "text": "What",
+     "text": "Thirty",
      "start": 0.08,
-     "end": 0.24
+     "end": 0.338
     },
     {
-     "text": "would",
-     "start": 0.24,
-     "end": 0.36
+     "text": "three",
+     "start": 0.367,
+     "end": 0.588
     },
     {
-     "text": "happen",
-     "start": 0.36,
-     "end": 0.64
+     "text": "million",
+     "start": 0.613,
+     "end": 0.908
     },
     {
-     "text": "if",
-     "start": 0.64,
-     "end": 0.86
+     "text": "dollars",
+     "start": 0.941,
+     "end": 1.236
     },
     {
-     "text": "a",
-     "start": 0.86,
-     "end": 0.94
+     "text": "got",
+     "start": 1.269,
+     "end": 1.416
     },
     {
-     "text": "doctor",
-     "start": 0.94,
-     "end": 1.18
+     "text": "spent",
+     "start": 1.433,
+     "end": 1.654
     },
     {
-     "text": "whose",
-     "start": 1.18,
-     "end": 1.44
+     "text": "to",
+     "start": 1.679,
+     "end": 1.789
     },
     {
-     "text": "dad",
-     "start": 1.44,
-     "end": 1.64
+     "text": "stop",
+     "start": 1.801,
+     "end": 1.986
     },
     {
-     "text": "came",
-     "start": 1.64,
-     "end": 1.84
+     "text": "one",
+     "start": 2.006,
+     "end": 2.154
+    },
+    {
+     "text": "man",
+     "start": 2.17,
+     "end": 2.318
     },
     {
      "text": "from",
-     "start": 1.84,
-     "end": 2.02
+     "start": 2.334,
+     "end": 2.519
     },
     {
-     "text": "Egypt",
-     "start": 2.02,
-     "end": 2.28
+     "text": "winning",
+     "start": 2.539,
+     "end": 2.834
+    },
+    {
+     "text": "one",
+     "start": 2.867,
+     "end": 3.015
+    },
+    {
+     "text": "election",
+     "start": 3.031,
+     "end": 3.363
+    }
+   ]
+  },
+  {
+   "id": "k2",
+   "text": "and he still won it by less than one point.",
+   "start": 3.970854166666667,
+   "end": 5.6708541666666665,
+   "words": [
+    {
+     "text": "and",
+     "start": 3.971,
+     "end": 4.071
+    },
+    {
+     "text": "he",
+     "start": 4.071,
+     "end": 4.171
+    },
+    {
+     "text": "still",
+     "start": 4.171,
+     "end": 4.331
+    },
+    {
+     "text": "won",
+     "start": 4.331,
+     "end": 4.611
+    },
+    {
+     "text": "it",
+     "start": 4.611,
+     "end": 4.711
+    },
+    {
+     "text": "by",
+     "start": 4.711,
+     "end": 4.871
+    },
+    {
+     "text": "less",
+     "start": 4.871,
+     "end": 5.011
+    },
+    {
+     "text": "than",
+     "start": 5.011,
+     "end": 5.171
+    },
+    {
+     "text": "one",
+     "start": 5.171,
+     "end": 5.311
+    },
+    {
+     "text": "point.",
+     "start": 5.311,
+     "end": 5.671
+    }
+   ]
+  },
+  {
+   "id": "k3",
+   "text": "So what would happen if Abdul El-Sayed became the president of the United States?",
+   "start": 6.368666666666667,
+   "end": 10.369666666666667,
+   "words": [
+    {
+     "text": "So",
+     "start": 6.369,
+     "end": 6.502
+    },
+    {
+     "text": "what",
+     "start": 6.517,
+     "end": 6.739
+    },
+    {
+     "text": "would",
+     "start": 6.763,
+     "end": 7.029
+    },
+    {
+     "text": "happen",
+     "start": 7.059,
+     "end": 7.369
+    },
+    {
+     "text": "if",
+     "start": 7.404,
+     "end": 7.537
+    },
+    {
+     "text": "Abdul",
+     "start": 7.551,
+     "end": 7.817
+    },
+    {
+     "text": "El-Sayed",
+     "start": 7.847,
+     "end": 8.246
     },
     {
      "text": "became",
-     "start": 2.28,
-     "end": 2.62
+     "start": 8.29,
+     "end": 8.601
     },
     {
      "text": "the",
-     "start": 2.62,
-     "end": 2.86
+     "start": 8.635,
+     "end": 8.813
     },
     {
      "text": "president",
-     "start": 2.86,
-     "end": 3.1
+     "start": 8.832,
+     "end": 9.276
     },
     {
      "text": "of",
-     "start": 3.1,
-     "end": 3.36
+     "start": 9.325,
+     "end": 9.458
     },
     {
      "text": "the",
-     "start": 3.36,
-     "end": 3.42
+     "start": 9.473,
+     "end": 9.65
     },
     {
      "text": "United",
-     "start": 3.42,
-     "end": 3.6
+     "start": 9.67,
+     "end": 9.98
     },
     {
      "text": "States?",
-     "start": 3.6,
-     "end": 3.94
+     "start": 10.015,
+     "end": 10.37
+    }
+   ]
+  },
+  {
+   "id": "k4",
+   "text": "Stick around because by the end of this you will know exactly who would fight the hardest to stop him.",
+   "start": 11.187395833333333,
+   "end": 15.607395833333333,
+   "words": [
+    {
+     "text": "Stick",
+     "start": 11.187,
+     "end": 11.347
+    },
+    {
+     "text": "around",
+     "start": 11.347,
+     "end": 11.627
+    },
+    {
+     "text": "because",
+     "start": 11.627,
+     "end": 11.927
+    },
+    {
+     "text": "by",
+     "start": 11.927,
+     "end": 12.167
+    },
+    {
+     "text": "the",
+     "start": 12.167,
+     "end": 12.287
+    },
+    {
+     "text": "end",
+     "start": 12.287,
+     "end": 12.447
+    },
+    {
+     "text": "of",
+     "start": 12.447,
+     "end": 12.607
+    },
+    {
+     "text": "this",
+     "start": 12.607,
+     "end": 12.767
+    },
+    {
+     "text": "you",
+     "start": 13.007,
+     "end": 13.087
+    },
+    {
+     "text": "will",
+     "start": 13.087,
+     "end": 13.227
+    },
+    {
+     "text": "know",
+     "start": 13.227,
+     "end": 13.347
+    },
+    {
+     "text": "exactly",
+     "start": 13.347,
+     "end": 13.727
+    },
+    {
+     "text": "who",
+     "start": 13.727,
+     "end": 14.127
+    },
+    {
+     "text": "would",
+     "start": 14.127,
+     "end": 14.267
+    },
+    {
+     "text": "fight",
+     "start": 14.267,
+     "end": 14.427
+    },
+    {
+     "text": "the",
+     "start": 14.427,
+     "end": 14.607
+    },
+    {
+     "text": "hardest",
+     "start": 14.607,
+     "end": 14.807
+    },
+    {
+     "text": "to",
+     "start": 14.807,
+     "end": 15.207
+    },
+    {
+     "text": "stop",
+     "start": 15.207,
+     "end": 15.367
+    },
+    {
+     "text": "him.",
+     "start": 15.367,
+     "end": 15.607
     }
    ]
   },
   {
    "id": "h2",
-   "text": "His name is Abdul El-Sayed and right now he is running for the Senate in Michigan but today we are making him president.",
-   "start": 4.7595,
-   "end": 10.8835,
+   "text": "He is a doctor whose dad came from Egypt and right now he is running for the Senate in Michigan but today we are making him president.",
+   "start": 16.365270833333334,
+   "end": 21.725270833333333,
    "words": [
     {
-     "text": "His",
-     "start": 4.76,
-     "end": 4.944
-    },
-    {
-     "text": "name",
-     "start": 4.963,
-     "end": 5.194
+     "text": "He",
+     "start": 16.365,
+     "end": 16.445
     },
     {
      "text": "is",
-     "start": 5.22,
-     "end": 5.357
+     "start": 16.445,
+     "end": 16.525
     },
     {
-     "text": "Abdul",
-     "start": 5.373,
-     "end": 5.649
+     "text": "a",
+     "start": 16.525,
+     "end": 16.605
     },
     {
-     "text": "El-Sayed",
-     "start": 5.678,
-     "end": 6.093
+     "text": "doctor",
+     "start": 16.605,
+     "end": 16.805
+    },
+    {
+     "text": "whose",
+     "start": 16.805,
+     "end": 17.145
+    },
+    {
+     "text": "dad",
+     "start": 17.145,
+     "end": 17.325
+    },
+    {
+     "text": "came",
+     "start": 17.325,
+     "end": 17.545
+    },
+    {
+     "text": "from",
+     "start": 17.545,
+     "end": 17.725
+    },
+    {
+     "text": "Egypt",
+     "start": 17.725,
+     "end": 17.965
     },
     {
      "text": "and",
-     "start": 6.139,
-     "end": 6.322
+     "start": 18.285,
+     "end": 18.325
     },
     {
      "text": "right",
-     "start": 6.343,
-     "end": 6.619
+     "start": 18.325,
+     "end": 18.485
     },
     {
      "text": "now",
-     "start": 6.649,
-     "end": 6.833
+     "start": 18.485,
+     "end": 18.665
     },
     {
      "text": "he",
-     "start": 6.854,
-     "end": 6.992
+     "start": 18.665,
+     "end": 18.905
     },
     {
      "text": "is",
-     "start": 7.006,
-     "end": 7.144
+     "start": 18.905,
+     "end": 19.005
     },
     {
      "text": "running",
-     "start": 7.159,
-     "end": 7.527
+     "start": 19.005,
+     "end": 19.145
     },
     {
      "text": "for",
-     "start": 7.569,
-     "end": 7.752
+     "start": 19.145,
+     "end": 19.365
     },
     {
      "text": "the",
-     "start": 7.772,
-     "end": 7.957
+     "start": 19.365,
+     "end": 19.465
     },
     {
      "text": "Senate",
-     "start": 7.978,
-     "end": 8.299
+     "start": 19.465,
+     "end": 19.645
     },
     {
      "text": "in",
-     "start": 8.335,
-     "end": 8.473
+     "start": 19.645,
+     "end": 19.825
     },
     {
      "text": "Michigan",
-     "start": 8.488,
-     "end": 8.902
+     "start": 19.825,
+     "end": 20.105
     },
     {
      "text": "but",
-     "start": 8.947,
-     "end": 9.131
+     "start": 20.485,
+     "end": 20.545
     },
     {
      "text": "today",
-     "start": 9.152,
-     "end": 9.428
+     "start": 20.545,
+     "end": 20.745
     },
     {
      "text": "we",
-     "start": 9.459,
-     "end": 9.596
+     "start": 20.745,
+     "end": 21.025
     },
     {
      "text": "are",
-     "start": 9.611,
-     "end": 9.796
+     "start": 21.025,
+     "end": 21.085
     },
     {
      "text": "making",
-     "start": 9.816,
-     "end": 10.137
+     "start": 21.085,
+     "end": 21.265
     },
     {
      "text": "him",
-     "start": 10.174,
-     "end": 10.357
+     "start": 21.265,
+     "end": 21.465
     },
     {
      "text": "president.",
-     "start": 10.378,
-     "end": 10.883
+     "start": 21.465,
+     "end": 21.725
     }
    ]
   },
   {
    "id": "h3",
    "text": "And he really could because he was born in Michigan and the Constitution only asks that you are born an American and at least thirty five.",
-   "start": 11.685708333333332,
-   "end": 18.037708333333335,
+   "start": 22.43239583333333,
+   "end": 28.78439583333333,
    "words": [
     {
      "text": "And",
-     "start": 11.686,
-     "end": 11.851
+     "start": 22.432,
+     "end": 22.597
     },
     {
      "text": "he",
-     "start": 11.87,
-     "end": 11.994
+     "start": 22.616,
+     "end": 22.74
     },
     {
      "text": "really",
-     "start": 12.007,
-     "end": 12.296
+     "start": 22.753,
+     "end": 23.042
     },
     {
      "text": "could",
-     "start": 12.329,
-     "end": 12.576
+     "start": 23.075,
+     "end": 23.322
     },
     {
      "text": "because",
-     "start": 12.604,
-     "end": 12.934
+     "start": 23.35,
+     "end": 23.68
     },
     {
      "text": "he",
-     "start": 12.971,
-     "end": 13.095
+     "start": 23.717,
+     "end": 23.841
     },
     {
      "text": "was",
-     "start": 13.109,
-     "end": 13.274
+     "start": 23.855,
+     "end": 24.02
     },
     {
      "text": "born",
-     "start": 13.292,
-     "end": 13.499
+     "start": 24.038,
+     "end": 24.245
     },
     {
      "text": "in",
-     "start": 13.522,
-     "end": 13.646
+     "start": 24.268,
+     "end": 24.392
     },
     {
      "text": "Michigan",
-     "start": 13.66,
-     "end": 14.031
+     "start": 24.406,
+     "end": 24.777
     },
     {
      "text": "and",
-     "start": 14.073,
-     "end": 14.238
+     "start": 24.819,
+     "end": 24.984
     },
     {
      "text": "the",
-     "start": 14.256,
-     "end": 14.422
+     "start": 25.002,
+     "end": 25.168
     },
     {
      "text": "Constitution",
-     "start": 14.44,
-     "end": 14.977
+     "start": 25.186,
+     "end": 25.723
     },
     {
      "text": "only",
-     "start": 15.037,
-     "end": 15.243
+     "start": 25.783,
+     "end": 25.989
     },
     {
      "text": "asks",
-     "start": 15.266,
-     "end": 15.473
+     "start": 26.012,
+     "end": 26.219
     },
     {
      "text": "that",
-     "start": 15.496,
-     "end": 15.702
+     "start": 26.242,
+     "end": 26.448
     },
     {
      "text": "you",
-     "start": 15.725,
-     "end": 15.89
+     "start": 26.471,
+     "end": 26.636
     },
     {
      "text": "are",
-     "start": 15.909,
-     "end": 16.074
+     "start": 26.655,
+     "end": 26.82
     },
     {
      "text": "born",
-     "start": 16.092,
-     "end": 16.299
+     "start": 26.838,
+     "end": 27.045
     },
     {
      "text": "an",
-     "start": 16.322,
-     "end": 16.446
+     "start": 27.068,
+     "end": 27.192
     },
     {
      "text": "American",
-     "start": 16.46,
-     "end": 16.831
+     "start": 27.206,
+     "end": 27.577
     },
     {
      "text": "and",
-     "start": 16.873,
-     "end": 17.038
+     "start": 27.619,
+     "end": 27.784
     },
     {
      "text": "at",
-     "start": 17.056,
-     "end": 17.18
+     "start": 27.802,
+     "end": 27.926
     },
     {
      "text": "least",
-     "start": 17.194,
-     "end": 17.442
+     "start": 27.94,
+     "end": 28.188
     },
     {
      "text": "thirty",
-     "start": 17.469,
-     "end": 17.758
+     "start": 28.215,
+     "end": 28.504
     },
     {
      "text": "five.",
-     "start": 17.791,
-     "end": 18.038
+     "start": 28.537,
+     "end": 28.784
     }
    ]
   },
   {
    "id": "h4",
    "text": "On day one he would sign Medicare for All which makes the government everybody's basic health insurance.",
-   "start": 19.1154375,
-   "end": 23.7954375,
+   "start": 29.862125,
+   "end": 34.542125,
    "words": [
     {
      "text": "On",
-     "start": 19.115,
-     "end": 19.235
+     "start": 29.862,
+     "end": 29.982
     },
     {
      "text": "day",
-     "start": 19.235,
-     "end": 19.355
+     "start": 29.982,
+     "end": 30.102
     },
     {
      "text": "one",
-     "start": 19.355,
-     "end": 19.655
+     "start": 30.102,
+     "end": 30.402
     },
     {
      "text": "he",
-     "start": 19.895,
-     "end": 19.975
+     "start": 30.642,
+     "end": 30.722
     },
     {
      "text": "would",
-     "start": 19.975,
-     "end": 20.075
+     "start": 30.722,
+     "end": 30.822
     },
     {
      "text": "sign",
-     "start": 20.075,
-     "end": 20.275
+     "start": 30.822,
+     "end": 31.022
     },
     {
      "text": "Medicare",
-     "start": 20.275,
-     "end": 20.535
+     "start": 31.022,
+     "end": 31.282
     },
     {
      "text": "for",
-     "start": 20.535,
-     "end": 20.895
+     "start": 31.282,
+     "end": 31.642
     },
     {
      "text": "All",
-     "start": 20.895,
-     "end": 21.115
+     "start": 31.642,
+     "end": 31.862
     },
     {
      "text": "which",
-     "start": 21.435,
-     "end": 21.575
+     "start": 32.182,
+     "end": 32.322
     },
     {
      "text": "makes",
-     "start": 21.575,
-     "end": 21.755
+     "start": 32.322,
+     "end": 32.502
     },
     {
      "text": "the",
-     "start": 21.755,
-     "end": 21.955
+     "start": 32.502,
+     "end": 32.702
     },
     {
      "text": "government",
-     "start": 21.955,
-     "end": 22.215
+     "start": 32.702,
+     "end": 32.962
     },
     {
      "text": "everybody's",
-     "start": 22.215,
-     "end": 22.955
+     "start": 32.962,
+     "end": 33.702
     },
     {
      "text": "basic",
-     "start": 22.955,
-     "end": 23.115
+     "start": 33.702,
+     "end": 33.862
     },
     {
      "text": "health",
-     "start": 23.115,
-     "end": 23.435
+     "start": 33.862,
+     "end": 34.182
     },
     {
      "text": "insurance.",
-     "start": 23.435,
-     "end": 23.795
+     "start": 34.182,
+     "end": 34.542
     }
    ]
   },
   {
    "id": "h5",
    "text": "And his own campaign says it should make private insurance redundant and unnecessary which is exactly the thing insurance companies sell.",
-   "start": 24.557375,
-   "end": 31.277375,
+   "start": 35.3040625,
+   "end": 42.0240625,
    "words": [
     {
      "text": "And",
-     "start": 24.557,
-     "end": 24.697
+     "start": 35.304,
+     "end": 35.444
     },
     {
      "text": "his",
-     "start": 24.697,
-     "end": 24.837
+     "start": 35.444,
+     "end": 35.584
     },
     {
      "text": "own",
-     "start": 24.837,
-     "end": 25.037
+     "start": 35.584,
+     "end": 35.784
     },
     {
      "text": "campaign",
-     "start": 25.037,
-     "end": 25.377
+     "start": 35.784,
+     "end": 36.124
     },
     {
      "text": "says",
-     "start": 25.377,
-     "end": 25.777
+     "start": 36.124,
+     "end": 36.524
     },
     {
      "text": "it",
-     "start": 25.777,
-     "end": 25.957
+     "start": 36.524,
+     "end": 36.704
     },
     {
      "text": "should",
-     "start": 25.957,
-     "end": 26.077
+     "start": 36.704,
+     "end": 36.824
     },
     {
      "text": "make",
-     "start": 26.077,
-     "end": 26.237
+     "start": 36.824,
+     "end": 36.984
     },
     {
      "text": "private",
-     "start": 26.237,
-     "end": 26.537
+     "start": 36.984,
+     "end": 37.284
     },
     {
      "text": "insurance",
-     "start": 26.537,
-     "end": 26.857
+     "start": 37.284,
+     "end": 37.604
     },
     {
      "text": "redundant",
-     "start": 26.857,
-     "end": 27.437
+     "start": 37.604,
+     "end": 38.184
     },
     {
      "text": "and",
-     "start": 27.437,
-     "end": 27.917
+     "start": 38.184,
+     "end": 38.664
     },
     {
      "text": "unnecessary",
-     "start": 27.917,
-     "end": 28.457
+     "start": 38.664,
+     "end": 39.204
     },
     {
      "text": "which",
-     "start": 29.177,
-     "end": 29.237
+     "start": 39.924,
+     "end": 39.984
     },
     {
      "text": "is",
-     "start": 29.237,
-     "end": 29.357
+     "start": 39.984,
+     "end": 40.104
     },
     {
      "text": "exactly",
-     "start": 29.357,
-     "end": 29.637
+     "start": 40.104,
+     "end": 40.384
     },
     {
      "text": "the",
-     "start": 29.637,
-     "end": 29.997
+     "start": 40.384,
+     "end": 40.744
     },
     {
      "text": "thing",
-     "start": 29.997,
-     "end": 30.157
+     "start": 40.744,
+     "end": 40.904
     },
     {
      "text": "insurance",
-     "start": 30.157,
-     "end": 30.397
+     "start": 40.904,
+     "end": 41.144
     },
     {
      "text": "companies",
-     "start": 30.397,
-     "end": 30.777
+     "start": 41.144,
+     "end": 41.524
     },
     {
      "text": "sell.",
-     "start": 30.777,
-     "end": 31.277
+     "start": 41.524,
+     "end": 42.024
+    }
+   ]
+  },
+  {
+   "id": "p5",
+   "text": "Awkward.",
+   "start": 42.56041666666667,
+   "end": 42.860416666666666,
+   "words": [
+    {
+     "text": "Awkward.",
+     "start": 42.56,
+     "end": 42.86
     }
    ]
   },
   {
    "id": "h6",
-   "text": "But first he has to win and in his Senate primary a super PAC linked to AIPAC spent thirty three million dollars to help somebody else and he still won by less than one point.",
-   "start": 32.20372916666667,
-   "end": 39.95272916666667,
+   "text": "Remember those thirty three million dollars? A super PAC linked to AIPAC spent it in his Senate primary to help somebody else.",
+   "start": 43.6186875,
+   "end": 49.1726875,
    "words": [
     {
-     "text": "But",
-     "start": 32.204,
-     "end": 32.363
+     "text": "Remember",
+     "start": 43.619,
+     "end": 43.975
     },
     {
-     "text": "first",
-     "start": 32.381,
-     "end": 32.62
-    },
-    {
-     "text": "he",
-     "start": 32.646,
-     "end": 32.765
-    },
-    {
-     "text": "has",
-     "start": 32.779,
-     "end": 32.938
-    },
-    {
-     "text": "to",
-     "start": 32.955,
-     "end": 33.075
-    },
-    {
-     "text": "win",
-     "start": 33.088,
-     "end": 33.247
-    },
-    {
-     "text": "and",
-     "start": 33.265,
-     "end": 33.424
-    },
-    {
-     "text": "in",
-     "start": 33.442,
-     "end": 33.561
-    },
-    {
-     "text": "his",
-     "start": 33.574,
-     "end": 33.733
-    },
-    {
-     "text": "Senate",
-     "start": 33.751,
-     "end": 34.03
-    },
-    {
-     "text": "primary",
-     "start": 34.061,
-     "end": 34.379
-    },
-    {
-     "text": "a",
-     "start": 34.414,
-     "end": 34.494
-    },
-    {
-     "text": "super",
-     "start": 34.503,
-     "end": 34.741
-    },
-    {
-     "text": "PAC",
-     "start": 34.768,
-     "end": 34.927
-    },
-    {
-     "text": "linked",
-     "start": 34.945,
-     "end": 35.223
-    },
-    {
-     "text": "to",
-     "start": 35.254,
-     "end": 35.373
-    },
-    {
-     "text": "AIPAC",
-     "start": 35.387,
-     "end": 35.625
-    },
-    {
-     "text": "spent",
-     "start": 35.652,
-     "end": 35.891
+     "text": "those",
+     "start": 44.014,
+     "end": 44.252
     },
     {
      "text": "thirty",
-     "start": 35.917,
-     "end": 36.196
+     "start": 44.278,
+     "end": 44.555
     },
     {
      "text": "three",
-     "start": 36.227,
-     "end": 36.465
+     "start": 44.586,
+     "end": 44.823
     },
     {
      "text": "million",
-     "start": 36.492,
-     "end": 36.81
+     "start": 44.849,
+     "end": 45.166
     },
     {
-     "text": "dollars",
-     "start": 36.845,
-     "end": 37.164
+     "text": "dollars?",
+     "start": 45.201,
+     "end": 45.557
+    },
+    {
+     "text": "A",
+     "start": 45.596,
+     "end": 45.675
+    },
+    {
+     "text": "super",
+     "start": 45.684,
+     "end": 45.921
+    },
+    {
+     "text": "PAC",
+     "start": 45.948,
+     "end": 46.106
+    },
+    {
+     "text": "linked",
+     "start": 46.123,
+     "end": 46.4
     },
     {
      "text": "to",
-     "start": 37.199,
-     "end": 37.318
+     "start": 46.431,
+     "end": 46.55
+    },
+    {
+     "text": "AIPAC",
+     "start": 46.563,
+     "end": 46.8
+    },
+    {
+     "text": "spent",
+     "start": 46.826,
+     "end": 47.064
+    },
+    {
+     "text": "it",
+     "start": 47.09,
+     "end": 47.209
+    },
+    {
+     "text": "in",
+     "start": 47.222,
+     "end": 47.34
+    },
+    {
+     "text": "his",
+     "start": 47.354,
+     "end": 47.512
+    },
+    {
+     "text": "Senate",
+     "start": 47.529,
+     "end": 47.806
+    },
+    {
+     "text": "primary",
+     "start": 47.837,
+     "end": 48.153
+    },
+    {
+     "text": "to",
+     "start": 48.188,
+     "end": 48.307
     },
     {
      "text": "help",
-     "start": 37.332,
-     "end": 37.531
+     "start": 48.32,
+     "end": 48.518
     },
     {
      "text": "somebody",
-     "start": 37.553,
-     "end": 37.911
+     "start": 48.54,
+     "end": 48.896
     },
     {
-     "text": "else",
-     "start": 37.951,
-     "end": 38.15
+     "text": "else.",
+     "start": 48.935,
+     "end": 49.173
+    }
+   ]
+  },
+  {
+   "id": "p6",
+   "text": "It did not work.",
+   "start": 49.8931875,
+   "end": 50.453187500000006,
+   "words": [
+    {
+     "text": "It",
+     "start": 49.893,
+     "end": 49.973
     },
     {
-     "text": "and",
-     "start": 38.172,
-     "end": 38.331
+     "text": "did",
+     "start": 49.973,
+     "end": 50.093
     },
     {
-     "text": "he",
-     "start": 38.348,
-     "end": 38.468
+     "text": "not",
+     "start": 50.093,
+     "end": 50.233
     },
     {
-     "text": "still",
-     "start": 38.481,
-     "end": 38.72
-    },
-    {
-     "text": "won",
-     "start": 38.746,
-     "end": 38.905
-    },
-    {
-     "text": "by",
-     "start": 38.923,
-     "end": 39.042
-    },
-    {
-     "text": "less",
-     "start": 39.056,
-     "end": 39.255
-    },
-    {
-     "text": "than",
-     "start": 39.277,
-     "end": 39.476
-    },
-    {
-     "text": "one",
-     "start": 39.498,
-     "end": 39.657
-    },
-    {
-     "text": "point.",
-     "start": 39.675,
-     "end": 39.953
+     "text": "work.",
+     "start": 50.233,
+     "end": 50.453
     }
    ]
   },
   {
    "id": "h7",
    "text": "Then there is the current president who keeps calling him Mohammed on Truth Social and wrote that he goes back to the days of the Jihad.",
-   "start": 40.792833333333334,
-   "end": 46.352833333333336,
+   "start": 51.15925,
+   "end": 56.71925,
    "words": [
     {
      "text": "Then",
-     "start": 40.793,
-     "end": 40.973
+     "start": 51.159,
+     "end": 51.339
     },
     {
      "text": "there",
-     "start": 40.973,
-     "end": 41.153
+     "start": 51.339,
+     "end": 51.519
     },
     {
      "text": "is",
-     "start": 41.153,
-     "end": 41.273
+     "start": 51.519,
+     "end": 51.639
     },
     {
      "text": "the",
-     "start": 41.273,
-     "end": 41.373
+     "start": 51.639,
+     "end": 51.739
     },
     {
      "text": "current",
-     "start": 41.373,
-     "end": 41.513
+     "start": 51.739,
+     "end": 51.879
     },
     {
      "text": "president",
-     "start": 41.513,
-     "end": 41.873
+     "start": 51.879,
+     "end": 52.239
     },
     {
      "text": "who",
-     "start": 41.873,
-     "end": 42.173
+     "start": 52.239,
+     "end": 52.539
     },
     {
      "text": "keeps",
-     "start": 42.173,
-     "end": 42.313
+     "start": 52.539,
+     "end": 52.679
     },
     {
      "text": "calling",
-     "start": 42.313,
-     "end": 42.593
+     "start": 52.679,
+     "end": 52.959
     },
     {
      "text": "him",
-     "start": 42.593,
-     "end": 42.793
+     "start": 52.959,
+     "end": 53.159
     },
     {
      "text": "Mohammed",
-     "start": 42.793,
-     "end": 43.013
+     "start": 53.159,
+     "end": 53.379
     },
     {
      "text": "on",
-     "start": 43.013,
-     "end": 43.413
+     "start": 53.379,
+     "end": 53.779
     },
     {
      "text": "Truth",
-     "start": 43.413,
-     "end": 43.613
+     "start": 53.779,
+     "end": 53.979
     },
     {
      "text": "Social",
-     "start": 43.613,
-     "end": 43.953
+     "start": 53.979,
+     "end": 54.319
     },
     {
      "text": "and",
-     "start": 43.953,
-     "end": 44.513
+     "start": 54.319,
+     "end": 54.879
     },
     {
      "text": "wrote",
-     "start": 44.513,
-     "end": 44.693
+     "start": 54.879,
+     "end": 55.059
     },
     {
      "text": "that",
-     "start": 44.693,
-     "end": 44.853
+     "start": 55.059,
+     "end": 55.219
     },
     {
      "text": "he",
-     "start": 44.853,
-     "end": 44.953
+     "start": 55.219,
+     "end": 55.319
     },
     {
      "text": "goes",
-     "start": 44.953,
-     "end": 45.113
+     "start": 55.319,
+     "end": 55.479
     },
     {
      "text": "back",
-     "start": 45.113,
-     "end": 45.373
+     "start": 55.479,
+     "end": 55.739
     },
     {
      "text": "to",
-     "start": 45.373,
-     "end": 45.553
+     "start": 55.739,
+     "end": 55.919
     },
     {
      "text": "the",
-     "start": 45.553,
-     "end": 45.613
+     "start": 55.919,
+     "end": 55.979
     },
     {
      "text": "days",
-     "start": 45.613,
-     "end": 45.793
+     "start": 55.979,
+     "end": 56.159
     },
     {
      "text": "of",
-     "start": 45.793,
-     "end": 46.013
+     "start": 56.159,
+     "end": 56.379
     },
     {
      "text": "the",
-     "start": 46.013,
-     "end": 46.133
+     "start": 56.379,
+     "end": 56.499
     },
     {
      "text": "Jihad.",
-     "start": 46.133,
-     "end": 46.353
+     "start": 56.499,
+     "end": 56.719
     }
    ]
   },
   {
    "id": "h8",
    "text": "And El-Sayed answered that Trump knows his name is Abdul because he says it every day.",
-   "start": 47.12077083333333,
-   "end": 51.19677083333333,
+   "start": 57.4871875,
+   "end": 61.5631875,
    "words": [
     {
      "text": "And",
-     "start": 47.121,
-     "end": 47.291
+     "start": 57.487,
+     "end": 57.657
     },
     {
      "text": "El-Sayed",
-     "start": 47.31,
-     "end": 47.691
+     "start": 57.676,
+     "end": 58.057
     },
     {
      "text": "answered",
-     "start": 47.734,
-     "end": 48.115
+     "start": 58.1,
+     "end": 58.481
     },
     {
      "text": "that",
-     "start": 48.158,
-     "end": 48.37
+     "start": 58.524,
+     "end": 58.736
     },
     {
      "text": "Trump",
-     "start": 48.393,
-     "end": 48.648
+     "start": 58.759,
+     "end": 59.014
     },
     {
      "text": "knows",
-     "start": 48.676,
-     "end": 48.931
+     "start": 59.042,
+     "end": 59.297
     },
     {
      "text": "his",
-     "start": 48.959,
-     "end": 49.129
+     "start": 59.325,
+     "end": 59.495
     },
     {
      "text": "name",
-     "start": 49.147,
-     "end": 49.36
+     "start": 59.513,
+     "end": 59.726
     },
     {
      "text": "is",
-     "start": 49.383,
-     "end": 49.51
+     "start": 59.749,
+     "end": 59.876
     },
     {
      "text": "Abdul",
-     "start": 49.524,
-     "end": 49.779
+     "start": 59.89,
+     "end": 60.145
     },
     {
      "text": "because",
-     "start": 49.807,
-     "end": 50.147
+     "start": 60.173,
+     "end": 60.513
     },
     {
      "text": "he",
-     "start": 50.184,
-     "end": 50.311
+     "start": 60.55,
+     "end": 60.677
     },
     {
      "text": "says",
-     "start": 50.326,
-     "end": 50.538
+     "start": 60.692,
+     "end": 60.904
     },
     {
      "text": "it",
-     "start": 50.561,
-     "end": 50.688
+     "start": 60.927,
+     "end": 61.054
     },
     {
      "text": "every",
-     "start": 50.703,
-     "end": 50.957
+     "start": 61.069,
+     "end": 61.323
     },
     {
      "text": "day.",
-     "start": 50.985,
-     "end": 51.197
+     "start": 61.351,
+     "end": 61.563
     }
    ]
   },
   {
    "id": "h9",
    "text": "His opponent even claimed he pledged support to the Muslim Brotherhood but a fact check found no evidence at all.",
-   "start": 52.183875,
-   "end": 57.263875,
+   "start": 62.550291666666666,
+   "end": 67.63029166666666,
    "words": [
     {
      "text": "His",
-     "start": 52.184,
-     "end": 52.284
+     "start": 62.55,
+     "end": 62.65
     },
     {
      "text": "opponent",
-     "start": 52.284,
-     "end": 52.564
+     "start": 62.65,
+     "end": 62.93
     },
     {
      "text": "even",
-     "start": 52.564,
-     "end": 52.824
+     "start": 62.93,
+     "end": 63.19
     },
     {
      "text": "claimed",
-     "start": 52.824,
-     "end": 53.104
+     "start": 63.19,
+     "end": 63.47
     },
     {
      "text": "he",
-     "start": 53.104,
-     "end": 53.344
+     "start": 63.47,
+     "end": 63.71
     },
     {
      "text": "pledged",
-     "start": 53.344,
-     "end": 53.524
+     "start": 63.71,
+     "end": 63.89
     },
     {
      "text": "support",
-     "start": 53.524,
-     "end": 53.944
+     "start": 63.89,
+     "end": 64.31
     },
     {
      "text": "to",
-     "start": 53.944,
-     "end": 54.164
+     "start": 64.31,
+     "end": 64.53
     },
     {
      "text": "the",
-     "start": 54.164,
-     "end": 54.244
+     "start": 64.53,
+     "end": 64.61
     },
     {
      "text": "Muslim",
-     "start": 54.244,
-     "end": 54.384
+     "start": 64.61,
+     "end": 64.75
     },
     {
      "text": "Brotherhood",
-     "start": 54.384,
-     "end": 54.844
+     "start": 64.75,
+     "end": 65.21
     },
     {
      "text": "but",
-     "start": 55.404,
-     "end": 55.484
+     "start": 65.77,
+     "end": 65.85
     },
     {
      "text": "a",
-     "start": 55.484,
-     "end": 55.544
+     "start": 65.85,
+     "end": 65.91
     },
     {
      "text": "fact",
-     "start": 55.544,
-     "end": 55.704
+     "start": 65.91,
+     "end": 66.07
     },
     {
      "text": "check",
-     "start": 55.704,
-     "end": 55.984
+     "start": 66.07,
+     "end": 66.35
     },
     {
      "text": "found",
-     "start": 55.984,
-     "end": 56.284
+     "start": 66.35,
+     "end": 66.65
     },
     {
      "text": "no",
-     "start": 56.284,
-     "end": 56.484
+     "start": 66.65,
+     "end": 66.85
     },
     {
      "text": "evidence",
-     "start": 56.484,
-     "end": 56.744
+     "start": 66.85,
+     "end": 67.11
     },
     {
      "text": "at",
-     "start": 56.744,
-     "end": 57.024
+     "start": 67.11,
+     "end": 67.39
     },
     {
      "text": "all.",
-     "start": 57.024,
-     "end": 57.264
+     "start": 67.39,
+     "end": 67.63
     }
    ]
   },
   {
    "id": "h10",
    "text": "So what would really change for you and who would fight the hardest to stop him?",
-   "start": 57.965291666666666,
-   "end": 61.12529166666667,
+   "start": 68.33170833333334,
+   "end": 71.49170833333334,
    "words": [
     {
      "text": "So",
-     "start": 57.965,
-     "end": 58.145
+     "start": 68.332,
+     "end": 68.512
     },
     {
      "text": "what",
-     "start": 58.145,
-     "end": 58.425
+     "start": 68.512,
+     "end": 68.792
     },
     {
      "text": "would",
-     "start": 58.425,
-     "end": 58.565
+     "start": 68.792,
+     "end": 68.932
     },
     {
      "text": "really",
-     "start": 58.565,
-     "end": 58.765
+     "start": 68.932,
+     "end": 69.132
     },
     {
      "text": "change",
-     "start": 58.765,
-     "end": 59.025
+     "start": 69.132,
+     "end": 69.392
     },
     {
      "text": "for",
-     "start": 59.025,
-     "end": 59.265
+     "start": 69.392,
+     "end": 69.632
     },
     {
      "text": "you",
-     "start": 59.265,
-     "end": 59.405
+     "start": 69.632,
+     "end": 69.772
     },
     {
      "text": "and",
-     "start": 59.405,
-     "end": 59.665
+     "start": 69.772,
+     "end": 70.032
     },
     {
      "text": "who",
-     "start": 59.665,
-     "end": 59.885
+     "start": 70.032,
+     "end": 70.252
     },
     {
      "text": "would",
-     "start": 59.885,
-     "end": 60.005
+     "start": 70.252,
+     "end": 70.372
     },
     {
      "text": "fight",
-     "start": 60.005,
-     "end": 60.185
+     "start": 70.372,
+     "end": 70.552
     },
     {
      "text": "the",
-     "start": 60.185,
-     "end": 60.325
+     "start": 70.552,
+     "end": 70.692
     },
     {
      "text": "hardest",
-     "start": 60.325,
-     "end": 60.505
+     "start": 70.692,
+     "end": 70.872
     },
     {
      "text": "to",
-     "start": 60.505,
-     "end": 60.745
+     "start": 70.872,
+     "end": 71.112
     },
     {
      "text": "stop",
-     "start": 60.745,
-     "end": 60.945
+     "start": 71.112,
+     "end": 71.312
     },
     {
      "text": "him?",
-     "start": 60.945,
-     "end": 61.125
+     "start": 71.312,
+     "end": 71.492
     }
    ]
   }
