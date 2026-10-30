@@ -159,6 +159,81 @@
     "dur": 2.2
    },
    "cue": "h10 under the open question"
+  },
+  {
+   "name": "k_flash",
+   "recipe": "whoosh",
+   "params": {
+    "dur": 0.22,
+    "lo": 900,
+    "hi": 7000
+   },
+   "cue": "white flash between hook worlds"
+  },
+  {
+   "name": "k_stop",
+   "recipe": "stamp",
+   "params": {},
+   "cue": "k1 'stop' — TO STOP 1 MAN stamp"
+  },
+  {
+   "name": "k_slam",
+   "recipe": "impact",
+   "params": {
+    "weight": 0.9,
+    "metal": 0.1
+   },
+   "cue": "k1 'election' / k2 bars slam"
+  },
+  {
+   "name": "k_boom",
+   "recipe": "impact",
+   "params": {
+    "weight": 1.0,
+    "metal": 0.25
+   },
+   "cue": "k2 'still won' hit"
+  },
+  {
+   "name": "k_spin",
+   "recipe": "whoosh",
+   "params": {
+    "dur": 0.55,
+    "lo": 200,
+    "hi": 2500
+   },
+   "cue": "k3 chair spin"
+  },
+  {
+   "name": "k_riser",
+   "recipe": "riser",
+   "params": {
+    "dur": 0.9
+   },
+   "cue": "k4 promise build"
+  },
+  {
+   "name": "k_point",
+   "recipe": "snap",
+   "params": {},
+   "cue": "k4 punch-in on Dave pointing at you"
+  },
+  {
+   "name": "crickets",
+   "recipe": "crickets",
+   "params": {
+    "dur": 1.6,
+    "n": 4
+   },
+   "cue": "p5 'Awkward.'"
+  },
+  {
+   "name": "fail",
+   "recipe": "drop",
+   "params": {
+    "dur": 0.9
+   },
+   "cue": "p6 'It did not work.'"
   }
  ]
 }

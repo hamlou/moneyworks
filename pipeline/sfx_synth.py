@@ -11,7 +11,7 @@ pop [pitch] · swish [dur] · chalk [dur] · page · typing [dur rate] · cash �
 buzz [dur pitch] · phone [dur] · crowd [dur mood: murmur|cheer|gasp|laugh] · steps [n rate surface: hard|soft]
 riser [dur] · drop [dur] · glitch [dur] · heartbeat [n bpm] · rain [dur] · wind [dur] · thud · snap · slide [dur]
 boing [pitch] · zip [dur up] · stamp · paper [dur] · clock [n] · alarm [dur] · fire [dur] · water [dur] · glass
-school_bell [dur] · train_horn [dur] · snore [n period] · bark [n] · whimper [dur] · pencil [dur]
+school_bell [dur] · train_horn [dur] · snore [n period] · bark [n] · whimper [dur] · pencil [dur] · crickets [dur n]
 """
 import json, os, sys, wave
 import numpy as np
@@ -340,6 +340,17 @@ def r_whimper(dur=0.9):
 def r_pencil(dur=0.8):
     n = int(dur * SR)
     return lowpass(np.diff(np.concatenate([[0], noise(dur)])), 2) * (0.4 + 0.6 * (np.sin(np.arange(n) / SR * 2 * np.pi * 5) > 0)) * env(n, 0.01, dur)
+
+
+def r_crickets(dur=1.6, n=4):
+    """awkward silence: a few cricket chirps (pulsed 4.5 kHz trills)"""
+    x = np.zeros(int(dur * SR))
+    for k in range(n):
+        t0 = k * dur / n + rng.uniform(0, 0.08)
+        for j in range(3):
+            c = tone(4500 + rng.uniform(-150, 150), 0.045) * env(int(0.045 * SR), 0.003, 0.02)
+            mixat(x, c, t0 + j * 0.06)
+    return x
 
 
 RECIPES = {k[2:]: v for k, v in globals().items() if k.startswith("r_")}

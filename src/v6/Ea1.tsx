@@ -2,8 +2,9 @@ import React from 'react';
 import {AbsoluteFill, Audio, Freeze, Img, OffthreadVideo, Sequence, staticFile, useCurrentFrame} from 'remotion';
 import {Sfx, Cue} from '../fx';
 import V from '../../pipeline/voice/ea1.json';
+import LENS from '../../blender/ea1_lens.json';
 import {ANTON, ComicBurst, Counter, HomeBase, K, UI, UICard, snap} from './kit';
-import {Shake} from './kit2';
+import {Music, Shake} from './kit2';
 
 // ea1: "What if Abdul El-Sayed became president?" — 1-minute hook test (pipeline/episodes/ea1.json, brief ea1_brief.md).
 // SENSITIVE: every fact card shows its source line; quotes are verbatim (S5, S6), opponents' claims are labelled as claims
@@ -40,21 +41,6 @@ const Shot: React.FC<{name: string; len24: number; from: number; seg: number}> =
   </Sequence>
 );
 
-
-// music changes with the situation (STYLE_3D §0.5): one track per scene mood, hard stops before punchlines, CC-BY Kevin MacLeod
-type MSeg = {src: string; from: number; to: number; v?: number; off?: number};
-const Music: React.FC<{segs: MSeg[]}> = ({segs}) => (
-  <>
-    {segs.map(({src, from, to, v = 0.07, off = 0}, i) => {
-      const len = Math.max(1, to - from);
-      return (
-        <Sequence key={i} from={from} durationInFrames={len} layout="none">
-          <Audio src={staticFile(`music/km/${src}.mp3`)} startFrom={off} volume={(f) => v * Math.min(1, f / 8, (len - f) / 6)} />
-        </Sequence>
-      );
-    })}
-  </>
-);
 
 const OUTLINE = ['5px 0', '-5px 0', '0 5px', '0 -5px'].map((o) => `drop-shadow(${o} 0 #111)`).join(' ');
 const Cut: React.FC<{f: number; keys: [number, string][]}> = ({f, keys}) => {
@@ -93,8 +79,11 @@ const Kinetic: React.FC<{f: number; at: number; until?: number; x: number; y: nu
     </div>
   );
 };
-const Bar: React.FC<{f: number; at: number; label: string; pct: number; color: string; y: number}> = ({f, at: a, label, pct, color, y}) => {
-  const k = Math.min(1, Math.max(0, (f - a) / 24));
+// 2-frame white (or black-outline) flash between hook worlds (§12.3 time-skip flash, §15.2 rule 7)
+const Flash: React.FC<{f: number; at: number; white?: boolean}> = ({f, at: a, white = true}) =>
+  f >= a && f < a + 2 ? <AbsoluteFill style={{background: white ? '#fff' : '#000', opacity: f === a ? 1 : 0.5}} /> : null;
+const Bar: React.FC<{f: number; at: number; label: string; pct: number; color: string; y: number; speed?: number}> = ({f, at: a, label, pct, color, y, speed = 24}) => {
+  const k = Math.min(1, Math.max(0, (f - a) / speed));
   return (
     <div style={{position: 'absolute', left: 140, top: y, width: 1100}}>
       <Small color="#fff" size={44}>{label}</Small>
@@ -108,24 +97,74 @@ const Bar: React.FC<{f: number; at: number; label: string; pct: number; color: s
 export const Ea1: React.FC = () => {
   const f = useCurrentFrame();
   const h = (id: string) => at(id);
-  const h2 = h('h2'), h3 = h('h3'), h4 = h('h4'), h5 = h('h5'), h6 = h('h6'), h7 = h('h7'), h8 = h('h8'), h9 = h('h9'), h10 = h('h10');
-  const doctor = at('h1', 'doctor'), egypt = at('h1', 'egypt'), pres = at('h1', 'president');
+  const k2 = h('k2'), k3 = h('k3'), k4 = h('k4');
+  const h2 = h('h2'), h3 = h('h3'), h4 = h('h4'), h5 = h('h5'), p5 = h('p5'), h6 = h('h6'), p6 = h('p6'), h7 = h('h7'), h8 = h('h8'), h9 = h('h9'), h10 = h('h10');
+  const stop = at('k1', 'stop'), election = at('k1', 'election'), still = at('k2', 'still'), less = at('k2', 'less');
+  const pres = at('k3', 'president'), fight = at('k4', 'fight');
   const constitution = at('h3', 'constitution'), born = at('h3', 'born'), thirty5 = at('h3', 'thirty');
   const sign = at('h4', 'sign'), redundant = at('h5', 'redundant'), unnecessary = at('h5', 'unnecessary');
-  const thirty3 = at('h6', 'thirty'), still = at('h6', 'still');
+  const thirty3 = at('h6', 'thirty');
   const mohammed = at('h7', 'mohammed'), jihad = at('h7', 'jihad');
   const claimed = at('h9', 'claimed'), noEv = at('h9', 'evidence');
   const mEnd = h4 + S24(274);
-  const cStart = thirty3, cEnd = still;
+  const cStart = thirty3, cEnd = p6;
 
   let scene: React.ReactNode;
-  if (f < h2) {
+  if (f < k2) {
+    // HOOK 1 — the prize first (STYLE_3D §15.3): cash raining into the lens + the number rolling from frame 2
     scene = (
       <>
-        <Shot name="O" len24={133} from={0} seg={h2} />
-        <Kinetic f={f} at={doctor} until={egypt} x={120} y={120}>A DOCTOR</Kinetic>
-        <Kinetic f={f} at={egypt} until={pres} x={120} y={120} color={K.yellow}>DAD FROM EGYPT</Kinetic>
-        <Kinetic f={f} at={pres} x={120} y={120} color={K.red}>PRESIDENT?</Kinetic>
+        <Shake f={f} at={stop} amp={12} len={10}>
+          <Shot name="H" len24={LENS.H} from={0} seg={k2} />
+        </Shake>
+        <div style={{position: 'absolute', left: 0, right: 0, top: 120, textAlign: 'center'}}>
+          <Counter f={f} at={2} dur={Math.max(20, stop - 6)} to={33000000} prefix="$" size={190} color={K.green} />
+        </div>
+        <Kinetic f={f} at={stop} x={300} y={420} color={K.red} size={120}>TO STOP 1 MAN</Kinetic>
+        <Kinetic f={f} at={election} x={420} y={570} color={K.yellow} size={100}>IN 1 ELECTION</Kinetic>
+        <Src f={f} at={2}>NBC News, Oct 9 2026</Src>
+      </>
+    );
+  } else if (f < k3) {
+    // HOOK 2 — the twist: he still won (bars slam, Dave huge, the 0.8 lands)
+    scene = (
+      <>
+        <HomeBase f={f} />
+        <Bar f={f} at={k2} label="Abdul El-Sayed" pct={48.4} color="#2f6fd6" y={250} speed={8} />
+        <Bar f={f} at={k2 + 3} label="the candidate that money backed" pct={47.6} color="#8a8f99" y={470} speed={8} />
+        {f >= less ? (
+          <div style={{position: 'absolute', left: 160, top: 700, transform: `scale(${1.5 - 0.5 * snap(f, less, 5)}) rotate(-4deg)`, transformOrigin: 'left center'}}>
+            <Big size={150} color={K.yellow} style={{WebkitTextStroke: '6px #111'}}>0.8 POINTS</Big>
+          </div>
+        ) : null}
+        <div style={{position: 'absolute', inset: 0, transformOrigin: '80% 100%', transform: `scale(${f >= still ? 1.25 : 1})`}}>
+          <Cut f={f} keys={[[k2, 'neutral_shrug'], [still, 'shock_panic']]} />
+        </div>
+        <Flash f={f} at={k2} />
+        <Src f={f} at={k2}>AP via ClickOnDetroit, Aug 5 2026</Src>
+      </>
+    );
+  } else if (f < k4) {
+    // HOOK 3 — the question while a new world slams in: Dave spins round in the big chair
+    scene = (
+      <>
+        <Shot name="S" len24={LENS.S} from={k3} seg={k4 - k3} />
+        <Kinetic f={f} at={pres} x={120} y={110} color={K.red} size={130}>PRESIDENT?</Kinetic>
+        <Flash f={f} at={k3} />
+      </>
+    );
+  } else if (f < h2) {
+    // HOOK 4 — the promise: Dave points at YOU, punch-in
+    const punch = f < fight ? 1 : 1.3 - 0.1 * snap(f, fight, 6);
+    scene = (
+      <>
+        <HomeBase f={f} />
+        <div style={{position: 'absolute', inset: 0, transformOrigin: '75% 60%', transform: `scale(${punch})`}}>
+          <Cut f={f} keys={[[k4, 'smug_point_you'], [fight, 'determined_point_l']]} />
+        </div>
+        <Kinetic f={f} at={fight} x={110} y={300} color={K.yellow} size={110}>WHO WOULD FIGHT</Kinetic>
+        <Kinetic f={f} at={fight + 8} x={110} y={440} color={K.red} size={110}>THE HARDEST?</Kinetic>
+        <Flash f={f} at={fight} white={false} />
       </>
     );
   } else if (f < h4) {
@@ -169,10 +208,10 @@ export const Ea1: React.FC = () => {
         <Src f={f} at={h2}>{f < h3 ? 'Wikipedia; photo: U.S. Senate HELP Committee 2024 (public domain)' : 'U.S. Constitution Art. II §1; birth date: Wikipedia'}</Src>
       </>
     );
-  } else if (f < Math.min(mEnd, h6)) {
+  } else if (f < Math.min(mEnd, p5)) {
     scene = (
       <>
-        <Shot name="M" len24={274} from={h4} seg={h6 - h4} />
+        <Shot name="M" len24={274} from={h4} seg={p5 - h4} />
         <Kinetic f={f} at={sign} until={redundant} x={120} y={110} color={K.yellow}>MEDICARE FOR ALL</Kinetic>
         {f >= redundant ? (
           <div style={{position: 'absolute', left: 90, top: 90, width: 1000, background: 'rgba(15,16,20,0.88)', borderRadius: 18, padding: '26px 34px', opacity: snap(f, redundant, 6)}}>
@@ -184,26 +223,24 @@ export const Ea1: React.FC = () => {
         <Src f={f} at={redundant}>Bridge Michigan fact check, Sep 25 2026</Src>
       </>
     );
-  } else if (f < cStart) {
+  } else if (f < h6) {
+    // p5 "Awkward." — punch line beat (STYLE_3D §16.1): Dave shrugs at camera, crickets
     scene = (
       <>
         <HomeBase f={f} />
-        <Wob f={f}>
-          <UICard f={f} at={Math.max(h6, mEnd) + 1} x={160} y={300} w={900} h={400}>
-            <div style={{padding: 50}}>
-              <Small>2026 Michigan Democratic Senate primary</Small>
-              <Big size={120} color={K.yellow}>BUT FIRST…</Big>
-            </div>
-          </UICard>
-        </Wob>
-        <Cut f={f} keys={[[0, 'think_think']]} />
+        <div style={{position: 'absolute', inset: 0, transformOrigin: '80% 100%', transform: `scale(${f >= p5 ? 1.3 : 1})`}}>
+          <Cut f={f} keys={[[0, 'neutral_shrug']]} />
+        </div>
+        {f >= p5 ? <Big size={170} style={{position: 'absolute', left: 160, top: 400, WebkitTextStroke: '6px #111', transform: `scale(${1.4 - 0.4 * snap(f, p5, 5)})`}}>AWKWARD.</Big> : null}
       </>
     );
+  } else if (f < cStart) {
+    scene = <Shot name="C" len24={110} from={h6} seg={cEnd - h6} />;
   } else if (f < cEnd) {
     scene = (
       <>
         <Shake f={f} at={cStart} amp={14} len={12}>
-          <Shot name="C" len24={110} from={cStart} seg={cEnd - cStart} />
+          <Shot name="C" len24={110} from={h6} seg={cEnd - h6} />
         </Shake>
         <div style={{position: 'absolute', left: 90, top: 70}}>
           <Counter f={f} at={cStart} dur={40} to={33000000} prefix="$" size={150} color={K.green} />
@@ -217,8 +254,10 @@ export const Ea1: React.FC = () => {
       <>
         <HomeBase f={f} />
         <Bar f={f} at={cEnd} label="Abdul El-Sayed" pct={48.4} color="#2f6fd6" y={300} />
-        <Bar f={f} at={cEnd + 6} label="Haley Stevens (backed by that money)" pct={47.6} color="#8a8f99" y={520} />
-        <Kinetic f={f} at={cEnd + 30} x={160} y={760} color={K.yellow} size={80}>WON BY LESS THAN 1 POINT</Kinetic>
+        <Bar f={f} at={cEnd + 2} label="Haley Stevens (backed by that money)" pct={47.6} color="#8a8f99" y={520} />
+        {f >= cEnd + 4 ? (
+          <div style={{position: 'absolute', left: 160, top: 720, display: 'inline-block', fontFamily: ANTON, fontSize: 110, color: K.red, border: `10px solid ${K.red}`, padding: '0 30px', transform: `rotate(-6deg) scale(${1.6 - 0.6 * snap(f, cEnd + 4, 4)})`}}>IT DID NOT WORK</div>
+        ) : null}
         <Cut f={f} keys={[[0, 'grin_cheer']]} />
         <Src f={f} at={cEnd}>AP via ClickOnDetroit, Aug 5 2026; Wikipedia</Src>
       </>
@@ -284,12 +323,23 @@ export const Ea1: React.FC = () => {
   }
 
   const cues: Cue[] = [
-    {at: 0, src: 'ea1/door', v: 0.6},
-    {at: 4, src: 'ea1/steps', v: 0.5},
-    {at: doctor, src: 'ea1/heart', v: 0.5},
-    {at: egypt, src: 'pop_hi', v: 0.4},
-    {at: pres - 3, src: 'ea1/chair_whoosh', v: 0.6},
-    {at: pres, src: 'stamp', v: 0.45},
+    // HOOK — densest sound of the video (§15.2 rule 5)
+    {at: 0, src: 'ea1/cash_rain', v: 0.7},
+    {at: 2, src: 'ea1/roll33', v: 0.6},
+    {at: stop, src: 'ea1/k_stop', v: 0.7},
+    {at: election, src: 'ea1/k_slam', v: 0.6},
+    {at: k2 - 2, src: 'ea1/k_flash', v: 0.6},
+    {at: k2, src: 'ea1/vote_tick', v: 0.5},
+    {at: k2 + 3, src: 'ea1/k_slam', v: 0.5},
+    {at: still, src: 'ea1/k_boom', v: 0.7},
+    {at: less, src: 'ea1/stamp_un', v: 0.55},
+    {at: k3 - 2, src: 'ea1/k_flash', v: 0.6},
+    {at: k3 + S24(5), src: 'ea1/k_spin', v: 0.7},
+    {at: pres, src: 'ea1/k_stop', v: 0.5},
+    {at: k4 - 2, src: 'ea1/k_point', v: 0.5},
+    {at: k4 + 4, src: 'ea1/k_riser', v: 0.4},
+    {at: fight, src: 'ea1/k_boom', v: 0.6},
+    // body
     {at: h2 + 2, src: 'ea1/photo_slide', v: 0.5},
     {at: h3 + 2, src: 'slide', v: 0.45},
     {at: constitution, src: 'ea1/gavel', v: 0.6},
@@ -300,15 +350,17 @@ export const Ea1: React.FC = () => {
     {at: redundant, src: 'pop_hi', v: 0.4},
     {at: unnecessary, src: 'ea1/deflate', v: 0.6},
     {at: unnecessary + 2, src: 'ea1/stamp_un', v: 0.6},
-    {at: h6, src: 'swish', v: 0.5},
-    {at: cStart - 2, src: 'swish_fast', v: 0.5},
-    {at: cStart, src: 'ea1/cash_rain', v: 0.6},
+    {at: Math.min(mEnd, p5), src: 'snap_white', v: 0.35},
+    {at: p5, src: 'ea1/crickets', v: 0.5},
+    {at: h6, src: 'swish_fast', v: 0.5},
+    {at: h6 + 2, src: 'ea1/cash_rain', v: 0.6},
     {at: cStart, src: 'ea1/roll33', v: 0.55},
     {at: cEnd, src: 'ea1/vote_tick', v: 0.5},
-    {at: cEnd + 30, src: 'ding', v: 0.45},
+    {at: cEnd + 4, src: 'ea1/fail', v: 0.55},
+    {at: cEnd + 5, src: 'ea1/k_stop', v: 0.5},
     {at: h7, src: 'ea1/notif', v: 0.55},
     {at: mohammed, src: 'ea1/name_glitch', v: 0.5},
-    {at: jihad, src: 'boom', v: 0.35},
+    {at: jihad, src: 'ea1/k_slam', v: 0.35},
     {at: h8, src: 'ea1/reply_pop', v: 0.5},
     {at: h9, src: 'ea1/claim_buzz', v: 0.45},
     {at: noEv, src: 'ea1/no_evidence', v: 0.65},
@@ -322,9 +374,10 @@ export const Ea1: React.FC = () => {
       <Audio src={staticFile('ea1/voice.flac')} />
       <Music
         segs={[
-          {src: 'investigations', from: 0, to: h4 - 4},
-          {src: 'sneaky_snitch', from: h4, to: h6 - 24},
-          {src: 'hitman', from: h6, to: h7 - 3, v: 0.08},
+          {src: 'hitman', from: 0, to: k3 - 3, v: 0.08},
+          {src: 'investigations', from: k3, to: h4 - 4},
+          {src: 'sneaky_snitch', from: h4, to: p5 - 8},
+          {src: 'hitman', from: h6, to: cEnd - 3, v: 0.08, off: 30 * 20},
           {src: 'volatile_reaction', from: h7, to: h8 - 9},
           {src: 'comic_plodding', from: h8 + 4, to: h9},
           {src: 'crypto', from: h9, to: noEv - 12},
