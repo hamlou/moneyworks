@@ -1,17 +1,25 @@
 name: reference analysis
 # Reverse-engineering numbers (sound, camera, colour) of reference videos. Downloads stay on the runner;
 # only the measured JSON is uploaded (no media, no transcripts in the repo).
+# push-triggered (works on this branch): ids = JSON list in tools/re/IDS
 on:
-  workflow_dispatch:
-    inputs:
-      ids: {description: "space-separated YouTube ids", required: true}
+  push:
+    paths: [tools/re/IDS]
 jobs:
+  plan:
+    runs-on: ubuntu-latest
+    outputs: {ids: "${{ steps.r.outputs.ids }}"}
+    steps:
+      - uses: actions/checkout@v4
+      - id: r
+        run: echo "ids=$(cat tools/re/IDS)" >> "$GITHUB_OUTPUT"
   measure:
+    needs: plan
     runs-on: ubuntu-latest
     strategy:
       fail-fast: false
       matrix:
-        id: ${{ fromJSON(format('["{0}"]', join(fromJSON(format('["{0}"]', inputs.ids)), '","'))) }}
+        id: ${{ fromJSON(needs.plan.outputs.ids) }}
     steps:
       - uses: actions/checkout@v4
       - run: sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg

@@ -2,9 +2,10 @@
 py camera_re.py <mp4> <shots.json or -> <out.json>   (shots '-' = detect cuts here)"""
 import json, subprocess, sys
 import numpy as np
+import os
 import cv2
 
-FF = r"C:\Users\hp\Desktop\100\tools\ffmpeg\ffmpeg.exe"
+FF = os.environ.get("FFMPEG", "ffmpeg")
 src, shots_p, out = sys.argv[1:4]
 FPS, W, H = 5, 256, 144
 p = subprocess.Popen([FF, "-v", "error", "-i", src, "-vf", f"fps={FPS},scale={W}:{H}", "-f", "rawvideo", "-pix_fmt", "bgr24", "-"], stdout=subprocess.PIPE)
