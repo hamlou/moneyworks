@@ -7,7 +7,7 @@
     "cfg": 0.25,
     "exag": 0.5
   },
-  "note": "Owner 29 Oct 2026: 1-min test = the first minute of a 10-min video 'what would change if Abdul El-Sayed became US president'. SENSITIVE: every claim below is in `sources`; real people are never voiced or given words they did not say; quotes are verbatim and attributed; claims by opponents are labelled as claims and paired with the fact-check. Hypothetical framing: he is a 2026 U.S. Senate candidate (Michigan), not a presidential candidate.",
+  "note": "Owner 29 Oct 2026: 1-min test = the first minute of a 10-min video 'what would change if Abdul El-Sayed became US president'. SENSITIVE: every claim below is in `sources`; real people are never voiced or given words they did not say; quotes are verbatim and attributed; claims by opponents are labelled as claims and paired with the fact-check. Hypothetical framing: he is a 2026 U.S. Senate candidate (Michigan), not a presidential candidate. 30 Oct 2026 hook rebuild (STYLE_3D §15.3): prize/result first ($33 M + still won), question at 6 s, promise at 10 s, info cards only after 12 s; punch lines p5/p6 (§16.1).",
   "sources": [
     "S1 Birth Oct 31 1984 Rochester Hills, Michigan; father Mohamed El-Sayed, an immigrant from Alexandria, Egypt; Rhodes Scholar; MD Columbia; Detroit Health Department director 2015-2017 — Wikipedia 'Abdul El-Sayed' (accessed 29 Oct 2026) https://en.wikipedia.org/wiki/Abdul_El-Sayed ; parents emigrated from Alexandria, Egypt — Wikipedia + HollywoodLife profile.",
     "S2 Presidential eligibility: natural-born citizen + at least 35 years old — U.S. Constitution, Article II, Section 1, Clause 5. Born in Michigan in 1984 → eligible.",
@@ -20,16 +20,36 @@
   ],
   "beats": [
     {
-      "id": "h1",
-      "src": "S1 S2",
-      "text": "What would happen if a doctor whose dad came from Egypt became the president of the United States?",
-      "pause": 0.4,
+      "id": "k1",
+      "src": "S4",
+      "text": "Thirty three million dollars got spent to stop one man from winning one election",
+      "pause": 0.2,
       "exag": 0.55
+    },
+    {
+      "id": "k2",
+      "src": "S3",
+      "text": "and he still won it by less than one point.",
+      "pause": 0.35,
+      "exag": 0.55
+    },
+    {
+      "id": "k3",
+      "src": "S1",
+      "text": "So what would happen if Abdul El-Sayed became the president of the United States?",
+      "pause": 0.35,
+      "exag": 0.55
+    },
+    {
+      "id": "k4",
+      "src": "",
+      "text": "Stick around because by the end of this you will know exactly who would fight the hardest to stop him.",
+      "pause": 0.45
     },
     {
       "id": "h2",
       "src": "S1 S3",
-      "text": "His name is Abdul El-Sayed and right now he is running for the Senate in Michigan but today we are making him president.",
+      "text": "He is a doctor whose dad came from Egypt and right now he is running for the Senate in Michigan but today we are making him president.",
       "pause": 0.3
     },
     {
@@ -48,14 +68,28 @@
       "id": "h5",
       "src": "S5",
       "text": "And his own campaign says it should make private insurance redundant and unnecessary which is exactly the thing insurance companies sell.",
-      "pause": 0.6,
+      "pause": 0.25,
       "exag": 0.45
+    },
+    {
+      "id": "p5",
+      "src": "",
+      "text": "Awkward.",
+      "pause": 0.5,
+      "exag": 0.6
     },
     {
       "id": "h6",
       "src": "S4 S3",
-      "text": "But first he has to win and in his Senate primary a super PAC linked to AIPAC spent thirty three million dollars to help somebody else and he still won by less than one point.",
-      "pause": 0.5
+      "text": "Remember those thirty three million dollars? A super PAC linked to AIPAC spent it in his Senate primary to help somebody else.",
+      "pause": 0.35
+    },
+    {
+      "id": "p6",
+      "src": "S3",
+      "text": "It did not work.",
+      "pause": 0.5,
+      "exag": 0.55
     },
     {
       "id": "h7",
