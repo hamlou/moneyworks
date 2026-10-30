@@ -106,6 +106,9 @@ Every sound, voice, model, texture, motion and font must be on the ✅ list of *
 4. **Memes: OFF.** No meme cards, meme formats or "reaction memes" in any new video (long or Short). The old meme rules in PLAYBOOK_LONG §0.11, PLAYBOOK_SHORTS §3/§4/§9, AGENT_BRIEF v5 and UPGRADE are retired.
 5. **Real images only when needed:** no photo quota. Use a real image only when the story needs real proof the 3D world cannot give — a real document, headline, chart, product, place or a real public person in a factual context — with a free licence (`pipeline/photo_find.py`, credit in the description, `LICENSES.md`). Everything else is our own 3D/2D animation.
 
+### 0.13 No thumbnails (owner, 30 Oct 2026)
+Don't make thumbnails anymore: no thumbnail concepts, no `src/thumbs`/`src/v2/t*.tsx`, no `thumbs.yml` runs, no thumbnail steps in briefs or reports. Every older thumbnail rule (PLAYBOOK_LONG §0.6, §5, §12.4, Shorts covers) is retired.
+
 ### 0.9 Retired by v7 (do not use in any new video)
 Meme cards (all formats, incl. generated memes) · polaroid/tape/sticker photos · ANY photo quota: "real photo every 10–15 s" (long) and "photos + meme every 2–4 s" (Shorts) · burned-in captions · the 2D `<Stick>` Dave and the three.js `Dave3D` for new videos (Blender Dave replaces them; the old episodes keep theirs) · asking the owner to record their voice · fixed recurring prop lists · fragment-chain sentences · `validate.py` meme/photo counts for v7 videos.
 
