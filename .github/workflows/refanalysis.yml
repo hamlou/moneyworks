@@ -1,0 +1,32 @@
+name: reference analysis
+# Reverse-engineering numbers (sound, camera, colour) of reference videos. Downloads stay on the runner;
+# only the measured JSON is uploaded (no media, no transcripts in the repo).
+on:
+  workflow_dispatch:
+    inputs:
+      ids: {description: "space-separated YouTube ids", required: true}
+jobs:
+  measure:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        id: ${{ fromJSON(format('["{0}"]', join(fromJSON(format('["{0}"]', inputs.ids)), '","'))) }}
+    steps:
+      - uses: actions/checkout@v4
+      - run: sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg
+      - run: pip install -q yt-dlp librosa opencv-python-headless numpy
+      - name: download
+        run: |
+          mkdir -p w && cd w
+          yt-dlp -q -f "bv*[height<=360]+ba/b[height<=360]" --merge-output-format mp4 -o v.mp4 --write-auto-subs --sub-langs "en.*" --sub-format vtt "https://www.youtube.com/watch?v=${{ matrix.id }}"
+          ls -la
+          ffmpeg -v error -y -i v.mp4 -ac 1 -ar 11025 a.wav
+      - name: measure
+        run: |
+          cd w
+          V=$(ls *.vtt | head -1)
+          python ../tools/re/audio_re.py a.wav "$V" audio_${{ matrix.id }}.json
+          python ../tools/re/camera_re.py v.mp4 - camera_${{ matrix.id }}.json
+      - uses: actions/upload-artifact@v4
+        with: {name: "re-${{ matrix.id }}", path: "w/*.json", retention-days: 3}
