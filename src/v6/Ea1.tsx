@@ -40,6 +40,22 @@ const Shot: React.FC<{name: string; len24: number; from: number; seg: number}> =
   </Sequence>
 );
 
+
+// music changes with the situation (STYLE_3D §0.5): one track per scene mood, hard stops before punchlines, CC-BY Kevin MacLeod
+type MSeg = {src: string; from: number; to: number; v?: number; off?: number};
+const Music: React.FC<{segs: MSeg[]}> = ({segs}) => (
+  <>
+    {segs.map(({src, from, to, v = 0.07, off = 0}, i) => {
+      const len = Math.max(1, to - from);
+      return (
+        <Sequence key={i} from={from} durationInFrames={len} layout="none">
+          <Audio src={staticFile(`music/km/${src}.mp3`)} startFrom={off} volume={(f) => v * Math.min(1, f / 8, (len - f) / 6)} />
+        </Sequence>
+      );
+    })}
+  </>
+);
+
 const OUTLINE = ['5px 0', '-5px 0', '0 5px', '0 -5px'].map((o) => `drop-shadow(${o} 0 #111)`).join(' ');
 const Cut: React.FC<{f: number; keys: [number, string][]}> = ({f, keys}) => {
   let name = keys[0][1];
@@ -304,7 +320,17 @@ export const Ea1: React.FC = () => {
     <AbsoluteFill style={{background: '#000'}}>
       {scene}
       <Audio src={staticFile('ea1/voice.flac')} />
-      <Audio src={staticFile('music/bgm.mp3')} volume={0.06} loop />
+      <Music
+        segs={[
+          {src: 'investigations', from: 0, to: h4 - 4},
+          {src: 'sneaky_snitch', from: h4, to: h6 - 24},
+          {src: 'hitman', from: h6, to: h7 - 3, v: 0.08},
+          {src: 'volatile_reaction', from: h7, to: h8 - 9},
+          {src: 'comic_plodding', from: h8 + 4, to: h9},
+          {src: 'crypto', from: h9, to: noEv - 12},
+          {src: 'unanswered_questions', from: h10, to: EA1_FRAMES},
+        ]}
+      />
       <Sfx cues={cues} />
     </AbsoluteFill>
   );
