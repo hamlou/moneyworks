@@ -6,6 +6,8 @@ blender -b -P blender/ea1.py -- --assets A --tex T --out O --frames "O:1-12" [--
   M sign    (h4-h5) Dave signs the MEDICARE FOR ALL paper at the desk; the INSURANCE giant at the door flexes, then on
                     "unnecessary" (frame 70) it slumps and its head drops; camera slow orbit
   C cash    (h6)    a yard: cash bales rain from the sky and bounce while Dave (suit) looks up in panic; low hero camera
+  H hook    (k1)    frame 0 = the prize: cash bales already falling INTO the lens (low macro camera, wide lens, DOF)
+  S spin    (k3)    Dave in the suit, back to camera in the big chair, spins round (back_out) and leans in; tight push
   E end     (h10)   the office at dusk, the light goes down to one lamp, Dave looks into camera and talks; slow push-in
 """
 import sys, os, math, json, random
@@ -214,6 +216,61 @@ if SHOT == "C":
         d.key(f)
         key_cam(cam0, f, (1.4, -5.2 + 0.8 * ease(f / LEN), 0.3), (0.2, 0.5, 1.7), 20)
 
+if SHOT == "H":
+    world_hdri("golden", 0.9, 120)
+    plane("ground", (0, 0, 0), (80, 80), (0, 0, 0), pbr("yard", K.MAN.get("concrete") or K.MAN["floor"], 3.0))
+    light("sun", "SUN", (0, 0, 10), (R(55), 0, R(200)), energy=2.6, color=(1.0, 0.86, 0.68), angle=R(2))
+    d.show(False)
+    cash = image_mat("cash", "banknote.png", rough=0.7)
+    r = random.Random(11)
+    bales = [(box("bale", (0, 0, 0), (0.62, 0.34, 0.26), cash), r.uniform(-3, 3), r.uniform(-0.5, 6), r.uniform(-40, LEN * 0.8), r.uniform(-3, 3)) for _ in range(110)]
+    hero = box("hero", (0, 0, 0), (0.62, 0.34, 0.26), cash)  # one bale tumbles right past the lens
+    for f in range(1, LEN + 1):
+        for o, x, y, t0, spin in bales:
+            t = (f - t0) / 24.0
+            z = 9 - 0.5 * 9.81 * max(0, t) ** 2
+            if z < 0.13:
+                over = (f - t0) - math.sqrt(2 * 8.87 / 9.81) * 24
+                z = 0.13 + abs(math.sin(over / 4)) * 0.3 * math.exp(-over / 8)
+            o.location = (x, y, z)
+            o.rotation_euler = (spin * min(t, 1.2), spin * 0.6 * min(t, 1.2), spin)
+            o.keyframe_insert("location", frame=f)
+            o.keyframe_insert("rotation_euler", frame=f)
+        th = f / 24.0
+        hero.location = (0.15 - 0.2 * th, -1.0, 2.4 - 0.5 * 9.81 * th ** 2 + 0.6)
+        hero.rotation_euler = (1.5 * th, 2.2 * th, 0.4)
+        hero.keyframe_insert("location", frame=f)
+        hero.keyframe_insert("rotation_euler", frame=f)
+        k = ease(f / LEN)
+        key_cam(cam0, f, (0.3, -2.4 + 0.5 * k, 0.22), (0.0, 1.5, 1.6 + 0.3 * k), 16)
+    sc.camera.data.dof.use_dof = True
+    sc.camera.data.dof.focus_distance, sc.camera.data.dof.aperture_fstop = 4.0, 2.2
+
+if SHOT == "S":
+    office()
+    light("sun", "SUN", (0, 0, 10), (R(60), 0, R(160)), energy=2.0, color=(1.0, 0.93, 0.82), angle=R(3))
+    light("key", "AREA", (0.8, -1.5, 2.6), (R(40), 0, R(15)), energy=420, size=2.5, color=(1.0, 0.95, 0.88))
+    pivot = bpy.data.objects.new("chair_pivot", None)
+    sc.collection.objects.link(pivot)
+    pivot.location = (0, 2.25, 0)
+    for o in list(bpy.data.objects):
+        if o.name.startswith("chair_") and o is not pivot:
+            o.parent = pivot
+            o.location -= Vector((0, 2.25, 0))
+    for f in range(1, LEN + 1):
+        u = back_out((f - 5) / 9)  # spin from back-to-camera to facing camera
+        turn = R(180) * (1 - u) if f >= 5 else R(180)
+        pivot.rotation_euler = (0, 0, turn)
+        pivot.keyframe_insert("rotation_euler", frame=f)
+        d.place((0.0, 2.15, 0.64), turn)
+        d.legs_set("sit", seat=0.6)
+        d.pose(blend("fists", "present", ease((f - 16) / 8)))
+        d.live(f, "smug" if f > 12 else "neutral", talking=f > 14)
+        d.life(f, 0.6)
+        d.key(f)
+        k = ease(f / LEN)
+        key_cam(cam0, f, (0.15, -1.3 + 0.5 * k, 1.6), (0.0, 2.15, 1.18), 42 + 8 * k)
+
 if SHOT == "E":
     office(dusk=True)
     lamp = light("lamp", "SPOT", (0.6, -0.6, 2.8), None, energy=900, spot_size=R(40), spot_blend=0.5, color=(1.0, 0.85, 0.6))
@@ -250,7 +307,8 @@ if SHOT == "K":
     raise SystemExit
 
 finish()
-dof(cam0, d.head, 2.8)
+if SHOT != "H":  # H focuses on the falling cash, not on Dave
+    dof(cam0, d.head, 2.8)
 sc.render.image_settings.file_format, sc.render.image_settings.quality = "JPEG", 90
 sc.frame_start, sc.frame_end = 1, LEN
 for f in FRAMES:
