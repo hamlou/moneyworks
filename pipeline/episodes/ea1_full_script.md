@@ -63,6 +63,8 @@ By the beginning of October the money spent in his Senate race had passed two hu
 
 ⟨bar race: GOP GROUPS $59.3 M vs HIS BACKERS $23 M (FEC via Bridge, 2 Oct)⟩ Republican groups alone had spent fifty nine million dollars on that race. [S12]
 
+And there were another sixty five million dollars of ads already booked until Election Day and about forty two million of that was there to help Rogers. [S12]
+
 And that same AIPAC super PAC from the primary is now reported to be sending up to nine million dollars to a group that backs his Republican opponent Mike Rogers. [S13]
 
 **Have a guess how much the groups backing him had spent.** ⟨beat, bar grows, stops short⟩ Twenty three million. [S12]
@@ -91,6 +93,10 @@ And when Mike Rogers questioned his loyalty in a debate El-Sayed called it shame
 And before that rally he even taunted the president and said Donald if you're watching don't wuss out man. [S21]
 
 **That is a real quote.**
+
+⟨TV studio, interview chair under hot lights⟩ Even the interviews get rough because he once said that being interviewed on CNN felt like and I am quoting him again I get a non-consensual colonoscopy. [S25]
+
+**He is a doctor so he would know.**
 
 He is also attacked for what he says about Gaza. He has said Israel's government committed genocide in Gaza and that he opposes unconditional military aid to Israel and he has also said Hamas committed war crimes. [S15]
 
@@ -165,6 +171,7 @@ Which one of his plans would you keep and which one would you throw out? Tell me
 - S18 Lead removal dispute — Free Beacon 29 Jul 2026 (see ea1_verified.md).
 - S19 5,000+ glasses (Vision to Learn) — Bridge Michigan 25 Sep 2026.
 
+- S25 Mediaite headline: 'Michigan Democrat Abdul El-Sayed Fumes About His CNN Interviews: "I Get a Non-Consensual Colonoscopy"' https://www.mediaite.com/politics/michigan-democrat-abdul-el-sayed-fumes-about-his-cnn-interviews-i-get-a-non-consensual-colonoscopy/ ; Bridge S12 also: '$65 million in ads through Election Day … $42 million — is to benefit Rogers'
 - S21 AP (Mike Catalini, Mike Householder), 25 Oct 2026 — Port Huron rally quote; 'has repeatedly said he is loyal to the U.S. and disavowed the Muslim Brotherhood'; 'shameful'; Constitution quote; 'Donald, if you're watching, don't wuss out, man'; 'first Muslim senator if elected'; GOP 'has not won a Senate race in Michigan for more than three decades'; Rogers 'a former congressman backed by Trump' https://www.adn.com/nation-world/2026/10/25/trump-escalates-rhetoric-against-el-sayed-as-he-tries-to-undermine-democrat-in-michigan-senate-race/
 - S22 Washington Examiner headline: 'Jesse Watters says "I actually like" Abdul el Sayed after interviewing him' https://www.washingtonexaminer.com/?p=4700723
 - S23 Healing Politics (Abrams Press 2020); Medicare for All: A Citizen's Guide with Micah Johnson (Oxford University Press 2021) — bookshop.org/shop/abdulelsayed, libraryjournal.com review
