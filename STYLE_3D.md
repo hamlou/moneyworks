@@ -596,3 +596,13 @@ Rules:
 8. **Skits:** other characters speak in their own voices for 2–6 s (a German waiter, a priest "Yes my child", the tumor). Our TTS can do a second voice — use 1–3 skit lines per minute in long videos.
 9. **Ending (last 30–60 s):** a "two theories / lesson" layer (the moral, short), the honest verdict, a reason to come back (a dated follow-up: "every April I post the numbers"), a comment question, then a SIGNATURE sign-off line used in every video. No recap. → Dave needs one fixed sign-off line of his own.
 10. **Music-only breaks** between chapters (Sleeping: 26 in 19 min ≈ one every 45 s, 2–4 s each) — a breath with a visual montage, then the next status report.
+
+## §17 BODY reverse-engineered (owner 31 Oct 2026: "the video got boring after the hook… reverse engineer his whole channel")
+Measured on 14 of his videos (`qa_dl/chan/an_stats.jsonl`, sheets `qa_dl/chan/an/<id>/sheet_0N.jpg`, transcripts `*.en.vtt`):
+1. **Shot length**: median 3.5–6 s, but huge spread (0.1 s flashes … 25 s holds). ~10 cuts/min. Not hyper-cut — every shot simply SHOWS something new.
+2. **The character barely animates** (60–80 % of frames are still): he POSES the character in a staged set (diorama) and holds it, then cuts to a new pose/set. "Human made" = many hand-picked poses + props + costumes per gag, not continuous code-driven motion. → For us: Dave = strong still poses per beat (cut, don't tween), one small secondary motion at most (blink, sway, prop drop).
+3. **Text-only cards are rare.** Information is shown as REAL ARTIFACTS: screen recordings of real tools/sites, a retro TV scoreboard, a search bar being typed into, a map, documents. → For us: facts = the approved macro highlight of the real sentence (Montage style), real short clips of the real people, artifacts in 3D (a receipt, a TV, a phone), never "Dave beside a card repeating the line".
+4. **Real footage is a big share** (his own experiment footage, meme-like crowd clips, real events) mixed hard against the 3D character. → For us: 0.5–1.5 s real clips (news, rallies, debates) as punctuation every ~30–60 s.
+5. **Every visual = the exact words**: "4 hours later…" black card, "Gandalf" typed in a search bar when he says Gandalf, beard costume when he jokes about age. Literal, specific, often a joke.
+6. **"But" every ~10–15 s in the narration** (median gap between "but/until/turns out/however" lines ≈ 10–20 s): constant small turns; a big problem every 30–60 s; the answer to the opening question only at the end.
+7. Gag props/costumes swap per joke (beard, soldiers, red carpet, hammock) — sets change constantly instead of one long set.

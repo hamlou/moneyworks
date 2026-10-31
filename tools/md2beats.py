@@ -2,8 +2,9 @@
 ⟨…⟩ = screen notes (dropped), [Sx] = src, **…** = punch line (longer pause, more exag). Usage: py tools/md2beats.py ea1"""
 import re, json, sys
 ep = sys.argv[1]
-s = open(f'pipeline/episodes/{ep}_full_script.md', encoding='utf8').read()
-body = s[s.index('## Chapter 1'):s.index('## Sources')]
+srcfile = sys.argv[2] if len(sys.argv) > 2 else f'pipeline/episodes/{ep}_full_script.md'
+s = open(srcfile, encoding='utf8').read()
+body = s[s.index('## Chapter 1'):s.index('## Sources') if '## Sources' in s else len(s)]
 beats, ch, n = [], 0, 0
 for para in re.split(r'\n\s*\n', body):
     para = para.strip()
@@ -13,8 +14,8 @@ for para in re.split(r'\n\s*\n', body):
     for line in para.split('\n'):
         src = ' '.join(re.findall(r'\[(S\d+)\]', line))
         t = re.sub(r'⟨[^⟩]*⟩', '', line)
-        t = re.sub(r'\[S\d+\]', '', t).replace('**', '')
-        t = re.sub(r'⚠ ELECTION LINE \([^)]*\):', '', t).replace('…', ' ...')
+        t = re.sub(r'\[S\d+\]', '', t).replace('**', '').replace('✦', '')
+        t = re.sub(r'⚠ ELECTION LINE( \([^)]*\):)?', '', t).replace('…', ' ...')
         t = re.sub(r'\s+', ' ', t).strip()
         if not t or t.startswith('---'):
             continue
