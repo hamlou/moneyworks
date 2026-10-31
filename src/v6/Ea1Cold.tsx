@@ -63,7 +63,7 @@ const NameLine: React.FC<{text: string; f: number; size: number}> = ({text, f, s
   return (
     <div style={{display: 'flex', width: 3400, fontSize: size, lineHeight: 1.3, color: '#1d1b18', textShadow: '0 0 1.4px rgba(20,18,15,.75)'}}>
       <div style={{...side, textAlign: 'right'}}>{a}</div>
-      <div style={{whiteSpace: 'nowrap', fontWeight: 700, padding: '0 10px', backgroundImage: 'linear-gradient(#f5c400,#f5c400)', backgroundRepeat: 'no-repeat', backgroundSize: `${k * 100}% 80%`, backgroundPosition: '0 62%'}}>{name}</div>
+      <div style={{whiteSpace: 'nowrap', fontWeight: 700, padding: '0 10px', margin: '0 0.28em', backgroundImage: 'linear-gradient(#f5c400,#f5c400)', backgroundRepeat: 'no-repeat', backgroundSize: `${k * 100}% 80%`, backgroundPosition: '0 62%'}}>{name}</div>
       <div style={{...side, textAlign: 'left'}}>{b}</div>
     </div>
   );
@@ -80,9 +80,9 @@ const MacroShot: React.FC<{m: Macro; i: number}> = ({m, i}) => {
       <AbsoluteFill style={{perspective: 1300}}>
         <AbsoluteFill style={{alignItems: 'center', justifyContent: 'center', fontFamily: 'Georgia, "DejaVu Serif", serif', transform: `rotateX(16deg) rotateZ(${m.tilt}deg) scale(${1.0 + 0.007 * f}) translateX(${-1.5 * f}px)`}}>
           <PlainLine text={far(3)} blur={12} size={S} />
-          <PlainLine text={m.lines[0] || far(5)} blur={6} size={S} />
+          <PlainLine text={m.lines[0] || far(5)} blur={8} size={S} />
           <NameLine text={m.lines[1]} f={f} size={S} />
-          <PlainLine text={m.lines[2] || far(7)} blur={6.5} size={S} />
+          <PlainLine text={m.lines[2] || far(7)} blur={8.5} size={S} />
           <PlainLine text={far(4)} blur={13} size={S} />
         </AbsoluteFill>
       </AbsoluteFill>
