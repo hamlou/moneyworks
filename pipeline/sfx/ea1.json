@@ -234,6 +234,49 @@
     "dur": 0.9
    },
    "cue": "p6 'It did not work.'"
+  },
+  {
+   "name": "co_tv",
+   "recipe": "glitch",
+   "params": {
+    "dur": 0.18
+   },
+   "cue": "cold open: cut between name clips"
+  },
+  {
+   "name": "co_paper",
+   "recipe": "slide",
+   "params": {
+    "dur": 0.35
+   },
+   "cue": "cold open: newspapers flutter past"
+  },
+  {
+   "name": "co_paper2",
+   "recipe": "whoosh",
+   "params": {
+    "dur": 0.5,
+    "lo": 300,
+    "hi": 4000
+   },
+   "cue": "cold open: paper swirl"
+  },
+  {
+   "name": "co_book",
+   "recipe": "impact",
+   "params": {
+    "weight": 0.75,
+    "metal": 0.0
+   },
+   "cue": "cold open: his books slam on the desk"
+  },
+  {
+   "name": "co_riser",
+   "recipe": "riser",
+   "params": {
+    "dur": 1.4
+   },
+   "cue": "cold open: into the hook"
   }
  ]
 }
