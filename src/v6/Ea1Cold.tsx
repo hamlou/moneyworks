@@ -88,7 +88,6 @@ const MacroShot: React.FC<{m: Macro; i: number}> = ({m, i}) => {
       </AbsoluteFill>
       <AbsoluteFill style={{backgroundImage: GRAIN, mixBlendMode: 'multiply', opacity: 0.5}} />
       <AbsoluteFill style={{boxShadow: 'inset 0 0 260px rgba(60,50,35,.5)'}} />
-      {f === 0 ? <AbsoluteFill style={{background: '#fff', opacity: 0.45}} /> : null}
     </AbsoluteFill>
   );
 };
