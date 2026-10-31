@@ -174,7 +174,7 @@ export const BodyScene: React.FC<{f: number; end: number}> = ({f, end}) => {
       <Quote f={f} a={b('c4_08', 'quoting')} who="Abdul El-Sayed, on his CNN interviews">I get a non-consensual colonoscopy.</Quote></Home>)],
     [b('c4_10'), () => (<Home f={f} a={b('c4_10')} dave={[[b('c4_10'), 'neutral_shrug']]} src="Times of Israel · The Intercept · Jewish Insider">
       <Card f={f} a={b('c4_10')}><Big size={64} color={K.yellow}>WHAT HE HAS SAID ON GAZA</Big><div style={{height: 26}} />
-        <Line f={f} a={b('c4_10', 'genocide')}>Israel's government committed genocide</Line><Line f={f} a={b('c4_10', 'unconditional')}>against unconditional military aid</Line><Line f={f} a={b('c4_10', 'hamas')}>Hamas committed war crimes</Line></Card></Home>)],
+        <Line f={f} a={b('c4_10', 'genocide')}>Israel's government committed genocide</Line><Line f={f} a={b('c4_10', 'unconditional')}>against unconditional military aid</Line></Card></Home>)],
     [b('c4_11'), () => (<Home f={f} a={b('c4_11')} dave={[[b('c4_11'), 'neutral_shrug']]}>
       <Card f={f} a={b('c4_11')} h={420}><div style={{display: 'flex', gap: 80}}><div><Small size={40}>CRITICS</Small><Big size={90} color={K.red}>“EXTREME”</Big></div><div style={{opacity: snap(f, b('c4_11', 'supporters'), 6)}}><Small size={40}>SUPPORTERS</Small><Big size={90} color="#5aa0ff">“HONEST”</Big></div></div></Card></Home>)],
     [b('c4_12'), () => (<Home f={f} a={b('c4_12')} dave={[[b('c4_12'), 'neutral_shrug']]}>

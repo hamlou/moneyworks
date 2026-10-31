@@ -42,6 +42,20 @@
       "exag": 0.55
     },
     {
+      "id": "j1",
+      "src": "",
+      "text": "Look at that crowd. When this man walks into a room people scream his name and when I walk into a room the dog leaves.",
+      "pause": 0.5,
+      "exag": 0.55
+    },
+    {
+      "id": "j2",
+      "src": "",
+      "text": "I want to be like him so badly that I bought a suit and the suit asked for a refund.",
+      "pause": 0.6,
+      "exag": 0.55
+    },
+    {
       "id": "k4",
       "src": "",
       "text": "Stick around because by the end of this you will know exactly who would fight the hardest to stop him.",
@@ -58,26 +72,6 @@
       "src": "S1 S2",
       "text": "And he really could because he was born in Michigan and the Constitution only asks that you are born an American and at least thirty five.",
       "pause": 0.45
-    },
-    {
-      "id": "h4",
-      "src": "S5",
-      "text": "On day one he would sign Medicare for All which makes the government everybody's basic health insurance.",
-      "pause": 0.3
-    },
-    {
-      "id": "h5",
-      "src": "S5",
-      "text": "And his own campaign says it should make private insurance redundant and unnecessary which is exactly the thing insurance companies sell.",
-      "pause": 0.25,
-      "exag": 0.45
-    },
-    {
-      "id": "p5",
-      "src": "",
-      "text": "Awkward.",
-      "pause": 0.5,
-      "exag": 0.6
     },
     {
       "id": "h6",
@@ -365,7 +359,7 @@
     {
       "id": "c4_10",
       "src": "S15",
-      "text": "He is also attacked for what he says about Gaza. He has said Israel's government committed genocide in Gaza and that he opposes unconditional military aid to Israel and he has also said Hamas committed war crimes.",
+      "text": "He is also attacked for what he says about Gaza. He has said Israel's government committed genocide in Gaza and that he opposes unconditional military aid to Israel.",
       "pause": 0.35
     },
     {

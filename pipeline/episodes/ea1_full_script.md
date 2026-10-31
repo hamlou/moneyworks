@@ -105,7 +105,7 @@ And before that rally he even taunted the president and said Donald if you're wa
 
 **He is a doctor so he would know.**
 
-He is also attacked for what he says about Gaza. He has said Israel's government committed genocide in Gaza and that he opposes unconditional military aid to Israel and he has also said Hamas committed war crimes. [S15]
+He is also attacked for what he says about Gaza. He has said Israel's government committed genocide in Gaza and that he opposes unconditional military aid to Israel. [S15]
 
 His critics call those positions extreme and his supporters call them honest and you will hear both every single day of this presidency. [S15]
 

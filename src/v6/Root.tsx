@@ -5,7 +5,7 @@ import {TaxShot, TAX_FRAMES} from './Classroom';
 import {Test1, TEST1_FRAMES} from './Test1';
 import {AnimTest, ANIMTEST_FRAMES} from './AnimTest';
 import {Ea1, EA1_FRAMES} from './Ea1';
-import {Ea1Full, EA1_FULL_FRAMES} from './Ea1Cold';
+import {Ea1Full, EA1_FULL_FRAMES, Montage, MONT_FRAMES} from './Ea1Cold';
 
 export const V6Root: React.FC = () => (
   <>
@@ -14,6 +14,7 @@ export const V6Root: React.FC = () => (
     <Composition id="Test1" component={Test1} width={1920} height={1080} fps={30} durationInFrames={TEST1_FRAMES} />
     <Composition id="AnimTest" component={AnimTest} width={1920} height={1080} fps={30} durationInFrames={ANIMTEST_FRAMES} />
     <Composition id="Ea1" component={Ea1} width={1920} height={1080} fps={30} durationInFrames={EA1_FRAMES} />
+    <Composition id="Ea1Montage" component={Montage} width={1920} height={1080} fps={30} durationInFrames={MONT_FRAMES} />
     <Composition id="Ea1Full" component={Ea1Full} width={1920} height={1080} fps={30} durationInFrames={EA1_FULL_FRAMES} />
   </>
 );
