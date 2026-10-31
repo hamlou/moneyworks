@@ -51,6 +51,7 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       fail-fast: true
+      max-parallel: 16  # free plan = 20 concurrent jobs; keep 4 for voice/v6demo so they never queue behind a render
       matrix:
         chunk: ${{ fromJson(needs.plan.outputs.chunks) }}
     steps:

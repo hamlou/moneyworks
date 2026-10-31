@@ -4,6 +4,7 @@ Rules applied: STYLE_3D §0.1 natural speech (no commas, no fragment chains), §
 20–40 s, punch line every 40–60 s, running gag, fake-out, "have a guess", scoreboard at chapter turns), sensitive-topic
 rule: every claim has a source tag; opponents' words only as quotes or attributed paraphrase; no verdict from Dave.
 
+Loops (tools/loopcheck.py): ⟨open:L1 who fights hardest — hook k4⟩ ⟨open:L2 headlines+books — cold open⟩ ⟨open:L5 Mohammed — hook h7⟩
 Running gag: **the money counter** — $33 M in the hook keeps coming back bigger ($205 M → "cute") and ends on a
 fake-out. Punch lines in **bold**. ⟨…⟩ = what's on screen. [Sx] = source (list at the bottom).
 ⚠ ELECTION LINES are marked — re-voice them after 3 Nov (win → keep, loss → past tense "would have").
@@ -35,7 +36,7 @@ That same group also said that a lot of families could end up paying less in tax
 
 Bridge Michigan checked it and their bottom line was that the claim it would raise taxes is likely correct but some experts think the total cost could go down for some families. [S9]
 
-**So day one ends with one plan and zero laws. Hold that thought.**
+**So day one ends with one plan and zero laws. Hold that thought.** ⟨open:L3 zero laws⟩
 
 ## Chapter 2 — WEEK ONE: YOUR HOUSE (≈ 3:00–4:30)
 ⟨calendar: WEEK 1 · scoreboard: PROMISES 2 · LAWS 0⟩
@@ -54,9 +55,10 @@ And here is the funny part because a ban on big investors buying houses is not e
 
 So on this one he might find friends on both sides which in Washington is rarer than a cheap apartment. [S11]
 
-⟨loop⟩ But week one was the easy part because in month one the people with the most money start writing checks.
+⟨open:T2⟩ But week one was the easy part because in month one the people with the most money start writing checks.
 
 ## Chapter 3 — MONTH ONE: WHO FIGHTS BACK (≈ 4:30–6:30) — the villain = the money + the math
+⟨close:T2⟩
 ⟨calendar: MONTH 1 · scoreboard: PROMISES 3 · LAWS 0 · MONEY AGAINST: rolling⟩
 
 Remember those thirty three million dollars from the start? **Cute.** [S4]
@@ -71,22 +73,23 @@ And that same AIPAC super PAC from the primary is now reported to be sending up 
 
 **Have a guess how much the groups backing him had spent.** ⟨beat, bar grows, stops short⟩ Twenty three million. [S12]
 
-He does get help from big names though because Alexandria Ocasio-Cortez sent a million dollars to help his side. [S20]
+He does get help from big names though because Alexandria Ocasio-Cortez sent a million dollars to help his side. [S20] And keep an eye on Fox News because later in this video one of their hosts says something about him that nobody saw coming. ⟨open:L4 Fox surprise⟩
 
 ⟨Senate chamber, 100 seats lighting up⟩ But the biggest wall is not money it is math. A president cannot pass a law alone. In the Senate a bill needs a majority and most big bills need sixty votes to get past a filibuster. [S14]
 
 ⟨seats light up blue… stop far below 60⟩ So President El-Sayed would need sixty senators to say yes to Medicare for All and getting sixty senators to agree on something this big is about the hardest thing you can do in Washington. [S14]
 
-**Laws passed in month one. Still zero.** ⟨scoreboard ticks: 0 → 0, sad ding⟩
+**Laws passed in month one. Still zero.** ⟨close:L3⟩ ⟨open:L3b zero laws at the end⟩ ⟨scoreboard ticks: 0 → 0, sad ding⟩
 
-⟨loop⟩ And that is when it stops being about his plans and starts being about him.
+⟨open:T3⟩ And that is when it stops being about his plans and starts being about him.
 
 ## Chapter 4 — THE ATTACKS (≈ 6:30–7:45) — low point
+⟨close:T3⟩
 ⟨night, rain on the window, music drops⟩
 
 And then there is everything that gets thrown at him personally.
 
-You already heard about the Mohammed nickname and the Muslim Brotherhood claim that a fact check found no evidence for. [S6] [S7]
+⟨close:L5⟩ You already heard about the Mohammed nickname and the Muslim Brotherhood claim that a fact check found no evidence for. [S6] [S7]
 
 ⟨rally crowd silhouettes, red light, quote card with Src AP⟩ Then on October twenty fifth the current president held a rally in Port Huron Michigan and told the crowd and I am quoting him exactly I'm here to keep a jihadist Muslim Brotherhood member from becoming a United States senator. [S21]
 
@@ -108,14 +111,15 @@ His critics call those positions extreme and his supporters call them honest and
 
 ⟨Dave alone at the desk, lamp only⟩ So picture month two. The money is against him and the math is against him and half the news is against him.
 
-⟨loop⟩ But before you decide what he could do as president there is one job he already did and it is the best test we have.
+⟨open:T4⟩ But before you decide what he could do as president there is one job he already did and it is the best test we have.
 
 ## Chapter 5 — WHAT HE ACTUALLY DID BEFORE (≈ 7:45–9:00) — comeback
+⟨close:T4⟩
 ⟨flashback filter, DETROIT 2015⟩
 
 ⟨Fox studio card, Src Washington Examiner⟩ And then something weird happens because after a long and heated interview on Fox News the host Jesse Watters said he actually likes him. [S22]
 
-**Even Fox.**
+**Even Fox.** ⟨close:L4⟩
 
 So can this guy run anything? We actually have a test. In 2015 Detroit had just come out of bankruptcy and its health department had been handed to private companies and the mayor gave it to a thirty year old doctor to rebuild. [S16]
 
@@ -131,7 +135,7 @@ His department also gave more than five thousand pairs of free glasses to kids i
 
 ⟨the two books from the cold open slam down⟩ Before all that he was a Rhodes Scholar and he got his medical degree at Columbia. [S1]
 
-And remember those books from the very start? They are real. He wrote one called Healing Politics and a whole guide to Medicare for All with another doctor called Micah Johnson. [S23]
+⟨close:L2⟩ And remember those books from the very start? They are real. He wrote one called Healing Politics and a whole guide to Medicare for All with another doctor called Micah Johnson. [S23]
 
 He even hosts a podcast called America Dissected. [S24]
 
@@ -139,17 +143,18 @@ He even hosts a podcast called America Dissected. [S24]
 
 Then in 2017 he left to run for governor of Michigan and in 2018 he lost that primary to Gretchen Whitmer. [S16]
 
-⟨loop⟩ So now you have the plans and the walls and the record which means we can finally answer the question from the very start.
+⟨open:T5⟩ So now you have the plans and the walls and the record which means we can finally answer the question from the very start.
 
 ## Chapter 6 — SO WHAT CHANGES FOR YOU (≈ 9:00–10:00) — payoff
+⟨close:T5⟩
 ⟨recap card: 3 changes | 3 walls⟩
 
 So here is the deal. ⟨cards flip one by one⟩
 If President El-Sayed got his way your health insurance would come from the government and your taxes and premiums would both change and big companies could not buy your street. [S5] [S9] [S10]
 
-So who would fight the hardest to stop him? Not one single person. It is the hundreds of millions of dollars and the sixty votes he would need in the Senate and a country where half the people would fight every one of those plans. [S12] [S14]
+⟨close:L1⟩ So who would fight the hardest to stop him? Not one single person. It is the hundreds of millions of dollars and the sixty votes he would need in the Senate and a country where half the people would fight every one of those plans. [S12] [S14]
 
-⟨fake-out⟩ So would he change everything? **Absolutely… nothing in the first month.** But that is true for every president because a president is a pen and Congress is the paper.
+⟨fake-out⟩ So would he change everything? **Absolutely… nothing in the first month.** ⟨close:L3b⟩ But that is true for every president because a president is a pen and Congress is the paper.
 
 ⟨Michigan map, Senate seat glows⟩ And remember he is not even a senator yet. Republicans have not won a Senate race in Michigan for more than three decades but this year they see an opening and he is up against Mike Rogers who is a former congressman backed by the current president. [S21]
 

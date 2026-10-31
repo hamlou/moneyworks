@@ -5,6 +5,7 @@ the rules below are the summary; open a file only with grep or a line range when
 ## 1. Locked style (checklist — every episode)
 - **Hook 0–12 s** (STYLE_3D §15.3): 0 s PRIZE/RESULT (most spectacular true image + rolling number) → ~4 s TWIST → ~7 s QUESTION (= title, new world slams in, white flash) → ~12 s PROMISE (Dave points at you). New image every 0.5–1.5 s, densest SFX, no info cards before 12 s.
 - **Writing** (§0.1, §16.1): natural connected sentences, no commas, no fragment chains; short sentences when stakes rise; mini-loop every 20–40 s (claim → result with number → 1–3-word punch line); ONE running gag repeated 4–6×; one "have a guess"; one fake-out near the end; scoreboard card at every chapter turn; music-only breath between chapters; end = lesson + honest verdict + comment question + Dave's sign-off line.
+- **LOOP STACK (long-form, owner 31 Oct 2026 — mandatory)**: never one loop per chapter. Main promise L1 opens in the hook and pays off ONLY in the last chapter; ≥ 2 loops open at every moment; every chapter ends on a teaser that opens the next; ≥ 2 long arcs that span 2+ chapters (e.g. a cold-open object paid off late, "keep an eye on X… later"); every loop closes. Tag them ⟨open:ID⟩ ⟨close:ID⟩ in `<id>_full_script.md`; `py tools/loopcheck.py <id>` must print LOOPS OK before voicing.
 - **Facts**: every line has a source tag [Sx]; sensitive people → only quotes/attributed paraphrase, claims paired with fact checks, no verdict from Dave.
 - **Look**: Blender Dave (suit/hoodie per role), ≥ 50 % real 3D, frame-0 motion, shake/flash on hits; home-base cards with Src line.
 - **Sound**: per-scene music (`<Music segs>` kit2, KM CC-BY library `public/music/km`, silence before punchlines, credit tracks), ≥ 50 SFX cues/min, own sounds via `pipeline/sfx/<id>.json`.
@@ -13,7 +14,7 @@ the rules below are the summary; open a file only with grep or a line range when
 ## 2. Steps (copy, don't rewrite)
 1. `py tools/new_ep.py <id> "<Title>"` → scaffold from ea1 (json draft, sfx plan, blender shots, TSX registered).
 2. Research: max ~6 standard searches + ~3 page reads (web-fetch agents in parallel). Facts → `sources` list in the draft.
-3. Fill `pipeline/episodes/<id>_draft.json` beats (k1–k4 hook + body). Rename to `<id>.json` + push → voice auto (only new lines voiced; ~3–10 min).
+3. Write `<id>_full_script.md` (chapters + ⟨open/close⟩ loop tags + [Sx]) → `py tools/loopcheck.py <id>` → `py tools/md2beats.py <id>`; hook beats k1–k4 in `pipeline/episodes/<id>_draft.json` (k1–k4 hook + body). Rename to `<id>.json` + push → voice auto (only new lines voiced; ~3–10 min).
 4. While voice runs: edit `blender/<id>.py` shot states (reuse ea1 shots H/S/M/C/E/K, change props/text only), `blender/<id>_lens.json`, `.chunks`, `blender/RUN`; sounds `py pipeline/sfx_synth.py <id>`.
 5. Voice done → `git pull`, `ffmpeg -i pipeline/voice/<id>.flac -af atempo=0.9 public/<id>/voice.flac`; set shot lengths from beat times; push blender → full render.
 6. Edit `src/v6/<Id>.tsx`: only the anchor words (`at('k1','word')`), card texts, Src lines, cues, music segs.

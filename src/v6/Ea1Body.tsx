@@ -52,6 +52,15 @@ const Chapter: React.FC<{f: number; a: number; title: string; score: string}> = 
     <Flash f={f} at={a} white={false} />
   </>
 );
+// chapter-end open loop (loop method): Dave leans in, the next chapter's hook line slams in, a clock ticks
+const Tease: React.FC<{f: number; a: number; text: string; color?: string}> = ({f, a, text, color = K.yellow}) => (
+  <>
+    <HomeBase f={f} />
+    <div style={{position: 'absolute', inset: 0, background: `radial-gradient(circle at 70% 60%, transparent 30%, rgba(0,0,0,${0.3 + 0.4 * snap(f, a, 30)}) 75%)`}} />
+    <div style={{position: 'absolute', left: 130, top: 300, width: 1100}}><Kinetic f={f} at={a + 6} x={0} y={0} size={96} color={color}>{text}</Kinetic></div>
+    <Cut f={f} keys={[[a, 'smug_point_you']]} />
+  </>
+);
 const Books: React.FC<{f: number; a: number}> = ({f, a}) => (
   <div style={{position: 'absolute', left: 160, top: 170, display: 'flex', gap: 60}}>
     {[0, 1].map((i) => (
@@ -129,6 +138,7 @@ export const BodyScene: React.FC<{f: number; end: number}> = ({f, end}) => {
       <Card f={f} a={b('c2_06')}><Big size={60} color={K.yellow}>CONGRESS · BIPARTISAN HOUSING BILL</Big><div style={{height: 30}} />
         <Line f={f} a={b('c2_06', 'three')}>owns 350+ homes?</Line><Line f={f} a={b('c2_06', 'buying')} color={K.red}>→ can't buy more</Line>
         {f >= b('c2_07') ? <Line f={f} a={b('c2_07')} color={K.yellow}>FRIENDS ON BOTH SIDES?</Line> : null}</Card></Home>)],
+    [b('c2_08'), () => <Tease f={f} a={b('c2_08')} text="MONTH 1: THE CHECKS" />],
     // ── CHAPTER 3 — MONTH ONE: WHO FIGHTS BACK
     [ch('c3_01'), () => <Chapter f={f} a={ch('c3_01')} title="MONTH 1" score="PROMISES 3 · LAWS PASSED 0" />],
     [b('c3_01'), () => (<Home f={f} a={b('c3_01')} dave={[[b('c3_01'), 'smug_point_you']]} src="NBC News, Oct 9 2026">
@@ -143,12 +153,14 @@ export const BodyScene: React.FC<{f: number; end: number}> = ({f, end}) => {
       <Kinetic f={f} at={b('c3_06', 'twenty')} x={1150} y={300} size={100} color="#5aa0ff">HIS BACKERS: $23M</Kinetic>
       <Src f={f} at={b('c3_02') + 10}>{f < b('c3_05') ? 'Bridge Michigan (FEC records), Oct 2 2026' : f < b('c3_06') ? 'New York Times via Newsweek, Oct 21 2026' : 'Bridge Michigan (FEC records), Oct 2 2026'}</Src></>)],
     [b('c3_07'), () => (<Home f={f} a={b('c3_07')} dave={[[b('c3_07'), 'determined_present']]} src="WLOS / The National News Desk, Oct 16 2026">
-      <Card f={f} a={b('c3_07')} h={380}><Big size={70}>ALEXANDRIA OCASIO-CORTEZ</Big><Counter f={f} at={b('c3_07', 'million')} dur={20} to={1000000} prefix="$" size={120} color={K.yellow} /></Card></Home>)],
+      <Card f={f} a={b('c3_07')} h={380}><Big size={70}>ALEXANDRIA OCASIO-CORTEZ</Big><Counter f={f} at={b('c3_07', 'million')} dur={20} to={1000000} prefix="$" size={120} color={K.yellow} /></Card>
+      <Kinetic f={f} at={b('c3_07', 'fox')} x={150} y={680} size={80} color={K.red}>👀 KEEP AN EYE ON FOX NEWS…</Kinetic></Home>)],
     [b('c3_08'), () => (<>{sh('V', 'c3_08', 'c4_01')}
       <Kinetic f={f} at={b('c3_08', 'majority')} x={110} y={90} size={90}>51 TO PASS</Kinetic>
       <Kinetic f={f} at={b('c3_08', 'sixty')} x={110} y={200} size={90} color={K.yellow}>60 TO BEAT A FILIBUSTER</Kinetic>
       <Kinetic f={f} at={b('c3_10', 'still')} x={110} y={330} size={130} color={K.red}>LAWS: STILL 0</Kinetic>
       <Src f={f} at={b('c3_08') + 10}>U.S. Senate Rule XXII · Straight Arrow News explainer</Src></>)],
+    [b('c3_11'), () => <Tease f={f} a={b('c3_11')} text="NOW IT GETS PERSONAL" color={K.red} />],
     // ── CHAPTER 4 — THE ATTACKS (night, the ring)
     [ch('c4_01'), () => <Chapter f={f} a={ch('c4_01')} title="MONTH 2" score="THE ATTACKS" />],
     [b('c4_01'), () => (<>{sh('A', 'c4_01', 'c4_08')}
@@ -167,6 +179,7 @@ export const BodyScene: React.FC<{f: number; end: number}> = ({f, end}) => {
       <Card f={f} a={b('c4_11')} h={420}><div style={{display: 'flex', gap: 80}}><div><Small size={40}>CRITICS</Small><Big size={90} color={K.red}>“EXTREME”</Big></div><div style={{opacity: snap(f, b('c4_11', 'supporters'), 6)}}><Small size={40}>SUPPORTERS</Small><Big size={90} color="#5aa0ff">“HONEST”</Big></div></div></Card></Home>)],
     [b('c4_12'), () => (<Home f={f} a={b('c4_12')} dave={[[b('c4_12'), 'neutral_shrug']]}>
       <Card f={f} a={b('c4_12')} h={500}><Line f={f} a={b('c4_12', 'money')} color={K.red}>MONEY ✗</Line><Line f={f} a={b('c4_12', 'math')} color={K.red}>MATH ✗</Line><Line f={f} a={b('c4_12', 'half')} color={K.red}>HALF THE NEWS ✗</Line></Card></Home>)],
+    [b('c4_13'), () => <Tease f={f} a={b('c4_13')} text="ONE JOB HE ALREADY DID" />],
     // ── CHAPTER 5 — WHAT HE ACTUALLY DID BEFORE (comeback)
     [ch('c5_01'), () => <Chapter f={f} a={ch('c5_01')} title="THE TEST" score="CAN HE RUN ANYTHING?" />],
     [b('c5_01'), () => (<Home f={f} a={b('c5_01')} dave={[[b('c5_01'), 'think_think'], [b('c5_02'), 'shock_panic']]} src="Washington Examiner">
@@ -192,12 +205,15 @@ export const BodyScene: React.FC<{f: number; end: number}> = ({f, end}) => {
       <ComicBurst f={f} at={b('c5_12', 'expired')} word="EXPIRED." x={560} y={720} /></Home>)],
     [b('c5_13'), () => (<Home f={f} a={b('c5_13')} dave={[[b('c5_13'), 'neutral_shrug']]} src="Bridge Michigan, Aug 2018 · Wikipedia">
       <Card f={f} a={b('c5_13')} h={420}><Line f={f} a={b('c5_13', '2017')}>2017: RAN FOR GOVERNOR</Line><Line f={f} a={b('c5_13', 'lost')} color={K.red}>2018: LOST THE PRIMARY TO GRETCHEN WHITMER</Line></Card></Home>)],
+    [b('c5_14'), () => <Tease f={f} a={b('c5_14')} text="THE ANSWER FROM THE START" />],
     // ── CHAPTER 6 — SO WHAT CHANGES FOR YOU
     [ch('c6_01'), () => <Chapter f={f} a={ch('c6_01')} title="THE DEAL" score="3 CHANGES · 3 WALLS" />],
     [b('c6_01'), () => (<Home f={f} a={b('c6_01')} dave={[[b('c6_01'), 'determined_present']]}><Kinetic f={f} at={b('c6_01')} x={150} y={380} size={130} color={K.yellow}>HERE IS THE DEAL</Kinetic></Home>)],
     [b('c6_02'), () => (<>{sh('W', 'c6_02', 'c6_05')}
       {f < b('c6_03') ? <div style={{position: 'absolute', left: 90, top: 90, background: 'rgba(10,10,14,.78)', padding: '30px 40px', borderRadius: 18}}>
         <Line f={f} a={b('c6_02', 'health')}>1 · insurance from the government</Line><Line f={f} a={b('c6_02', 'taxes')}>2 · taxes AND premiums change</Line><Line f={f} a={b('c6_02', 'street')}>3 · big companies can't buy your street</Line></div> : null}
+      <Kinetic f={f} at={b('c6_03', 'who')} until={b('c6_03', 'not')} x={110} y={110} size={110} color={K.yellow}>WHO FIGHTS HARDEST?</Kinetic>
+      <Kinetic f={f} at={b('c6_03', 'not')} until={b('c6_04')} x={110} y={110} size={110}>NOT ONE PERSON →</Kinetic>
       <Kinetic f={f} at={b('c6_04', 'absolutely')} until={b('c6_04', 'nothing')} x={110} y={110} size={140} color={K.yellow}>ABSOLUTELY…</Kinetic>
       <Kinetic f={f} at={b('c6_04', 'nothing')} until={b('c6_04', 'pen')} x={110} y={110} size={110}>NOTHING (IN MONTH 1)</Kinetic>
       <Kinetic f={f} at={b('c6_04', 'pen')} x={110} y={110} size={90} color={K.yellow}>PRESIDENT = PEN · CONGRESS = PAPER</Kinetic>
@@ -252,7 +268,7 @@ export const bodyCues = (): Cue[] => {
     ['c4_03', 'quoting', 'ea1/k_boom', 0.6], ['c4_07', undefined, 'ea1/k_point', 0.5], ['c4_09', undefined, 'ea1/crickets', 0.5], ['c4_12', 'money', 'ea1/claim_buzz', 0.4],
     ['c4_12', 'math', 'ea1/claim_buzz', 0.4], ['c4_12', 'half', 'ea1/claim_buzz', 0.4], ['c5_02', undefined, 'ea1/k_boom', 0.6], ['c5_05', 'ninety', 'ea1/roll33', 0.6],
     ['c5_05', 'nineteen', 'ea1/claim_buzz', 0.5], ['c5_06', 'fridge', 'ea1/crickets', 0.5], ['c5_08', 'five', 'ea1/roll33', 0.6], ['c5_10', 'healing', 'ea1/co_book', 0.8],
-    ['c5_12', 'expired', 'ea1/fail', 0.5], ['c5_13', 'lost', 'ea1/deflate', 0.5], ['c6_03', 'sixty', 'ea1/k_slam', 0.6], ['c6_03', 'hundreds', 'ea1/k_slam', 0.6],
+    ['c5_12', 'expired', 'ea1/fail', 0.5], ['c5_13', 'lost', 'ea1/deflate', 0.5], ['c6_03', 'not', 'ea1/k_boom', 0.6], ['c6_03', 'sixty', 'ea1/k_slam', 0.6], ['c6_03', 'hundreds', 'ea1/k_slam', 0.6], ['c2_08', undefined, 'ea1/k_riser', 0.5], ['c3_11', undefined, 'ea1/heart', 0.6], ['c4_13', undefined, 'ea1/k_riser', 0.5], ['c5_14', undefined, 'ea1/end_riser', 0.5],
     ['c6_03', 'country', 'ea1/k_slam', 0.6], ['c6_04', 'nothing', 'ea1/crickets', 0.6], ['c6_06', 'first', 'ea1/check1', 0.5], ['c6_07', 'november', 'ea1/k_riser', 0.5],
   ];
   extra.forEach(([id, w, src, v]) => cues.push({at: b(id, w), src, v}));
