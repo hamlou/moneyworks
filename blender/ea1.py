@@ -557,19 +557,19 @@ if SHOT == "W":  # the three walls: on the road to the capitol, walls rise one b
     plane("lawn", (0, 10, -0.01), (90, 90), (0, 0, 0), flat("grass", (0.28, 0.42, 0.2), 0.9))
     light("sun", "SUN", (0, 0, 10), (R(70), 0, R(170)), energy=3.0, color=(1.0, 0.84, 0.64), angle=R(1.5))
     capitol(0, 34, 1.4)
-    walls = [face_box(f"wall{i}", (0, 4 + i * 3.5, -2), (5.0, 0.5, 2.6), c, f"wall_{n}.png") for i, (n, c) in enumerate((("60", (0.16, 0.24, 0.43)), ("money", (0.12, 0.39, 0.24)), ("half", (0.55, 0.16, 0.16))))]
+    walls = [face_box(f"wall{i}", (-4.3 + i * 4.3, 4, -2), (4.0, 0.4, 2.0), c, f"wall_{n}.png") for i, (n, c) in enumerate((("60", (0.16, 0.24, 0.43)), ("money", (0.12, 0.39, 0.24)), ("half", (0.55, 0.16, 0.16))))]
     for f in range(1, LEN + 1):
         for i, w in enumerate(walls):  # each wall slams up out of the ground, a third of the shot apart
-            k = back_out(min(1, max(0, (f - (14 + i * LEN * 0.22)) / 8)))
-            w.location = (0, 4 + i * 3.5, -1.4 + 2.7 * k)
+            k = back_out(min(1, max(0, (f - (14 + i * LEN * 0.22)) / 8)))  # side by side across the road, one after another
+            w.location = (-4.3 + i * 4.3, 4, -1.05 + 2.05 * k)
             w.keyframe_insert("location", frame=f)
-        walk_to(f, 1, 40, (0, -3.0), (0, 1.5), R(180))
+        walk_to(f, 1, 40, (-7.2, -2.5), (-6.6, 1.2), R(200))
         d.pose("idle" if f < 40 else blend("idle", "look_up", ease((f - 40) / 10)))
         d.live(f, "neutral" if f < 60 else "think")
         d.life(f)
         d.key(f)
         t = ease(f / LEN)
-        key_cam(cam0, f, (1.5 - 0.8 * t, -6.5 + 1.0 * t, 0.6 + 1.6 * t), (0, 4 + 6 * t, 1.6 + 1.2 * t), 24)
+        key_cam(cam0, f, (-1.0 + 0.6 * t, -9.0 + 1.5 * t, 1.1 + 0.9 * t), (-1.0 + 0.8 * t, 4 + 6 * t, 1.2 + 0.8 * t), 20)
 
 if SHOT == "Q":  # "the doctor bill goes to Washington instead of to you": the bill leaves Dave's mailbox and flies to the capitol
     world_hdri("day", 0.9, 90)
