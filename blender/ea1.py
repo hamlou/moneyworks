@@ -171,6 +171,32 @@ sc.camera = cam0
 d = Dave()
 d.outfit("suit")
 
+def face_box(name, loc, size, side_rgb, img, face="-y"):
+    o = box(name, loc, size, flat(name + "_side", side_rgb, 0.5))
+    if face == "-y":
+        p = plane(name + "_face", (0, 0, 0), (size[0] * 0.98, size[2] * 0.98), (R(90), 0, 0), image_mat(name + "_img", img, rough=0.6))
+        p.location = (0, -size[1] / 2 - 0.004, 0)
+    else:
+        p = plane(name + "_face", (0, 0, 0), (size[0] * 0.98, size[1] * 0.98), (0, 0, 0), image_mat(name + "_img", img, rough=0.6))
+        p.location = (0, 0, size[2] / 2 + 0.004)
+    p.parent = o
+    p.scale = (p.scale[0] / o.scale[0], p.scale[1] / o.scale[2 if face == "-y" else 1], 1)
+    p.location = (p.location[0] / o.scale[0], p.location[1] / o.scale[1], p.location[2] / o.scale[2])
+    return o
+
+
+def walk_to(f, f0, f1, a, b, turn):  # Dave walks a→b between frames f0..f1, then stands
+    k = min(1, max(0, (f - f0) / max(1, f1 - f0)))
+    d.place((a[0] + (b[0] - a[0]) * k, a[1] + (b[1] - a[1]) * k, 0.72 + (d.legs_walk(k * (f1 - f0) / 13 * math.pi) if 0 < k < 1 else 0)), turn)
+    if not 0 < k < 1:
+        d.legs_set("stand")
+    return k
+
+
+def pops(n, f0, f1, f):  # how many of n items have popped in by frame f (spread f0..f1)
+    return int(n * min(1, max(0, (f - f0) / max(1, f1 - f0))))
+
+
 if SHOT == "O":
     office()
     light("sun", "SUN", (0, 0, 10), (R(60), 0, R(160)), energy=2.0, color=(1.0, 0.93, 0.82), angle=R(3))
@@ -332,32 +358,6 @@ if SHOT == "N":  # cold open: real headlines with his name rain onto a desk, his
         key_cam(cam0, f, (0.5 - 0.5 * k, -3.0 + 2.25 * k, 0.8 + 1.15 * k), (0.0, 0.3 - 0.25 * k, 0.5 - 0.5 * k), 20 + 15 * k)
     sc.camera.data.dof.use_dof = True
     sc.camera.data.dof.focus_object, sc.camera.data.dof.aperture_fstop = hero, 4.0
-
-def face_box(name, loc, size, side_rgb, img, face="-y"):
-    o = box(name, loc, size, flat(name + "_side", side_rgb, 0.5))
-    if face == "-y":
-        p = plane(name + "_face", (0, 0, 0), (size[0] * 0.98, size[2] * 0.98), (R(90), 0, 0), image_mat(name + "_img", img, rough=0.6))
-        p.location = (0, -size[1] / 2 - 0.004, 0)
-    else:
-        p = plane(name + "_face", (0, 0, 0), (size[0] * 0.98, size[1] * 0.98), (0, 0, 0), image_mat(name + "_img", img, rough=0.6))
-        p.location = (0, 0, size[2] / 2 + 0.004)
-    p.parent = o
-    p.scale = (p.scale[0] / o.scale[0], p.scale[1] / o.scale[2 if face == "-y" else 1], 1)
-    p.location = (p.location[0] / o.scale[0], p.location[1] / o.scale[1], p.location[2] / o.scale[2])
-    return o
-
-
-def walk_to(f, f0, f1, a, b, turn):  # Dave walks a→b between frames f0..f1, then stands
-    k = min(1, max(0, (f - f0) / max(1, f1 - f0)))
-    d.place((a[0] + (b[0] - a[0]) * k, a[1] + (b[1] - a[1]) * k, 0.72 + (d.legs_walk(k * (f1 - f0) / 13 * math.pi) if 0 < k < 1 else 0)), turn)
-    if not 0 < k < 1:
-        d.legs_set("stand")
-    return k
-
-
-def pops(n, f0, f1, f):  # how many of n items have popped in by frame f (spread f0..f1)
-    return int(n * min(1, max(0, (f - f0) / max(1, f1 - f0))))
-
 
 if SHOT == "G":  # "on day one": a domed capitol at sunrise, tiny Dave walks up the plaza, camera cranes up to the dome
     world_hdri("golden", 1.0, 200)
