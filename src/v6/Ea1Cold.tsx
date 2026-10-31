@@ -2,7 +2,7 @@ import React from 'react';
 import {AbsoluteFill, OffthreadVideo, Sequence, staticFile, useCurrentFrame} from 'remotion';
 import {Sfx, Cue} from '../fx';
 import LENS from '../../blender/ea1_lens.json';
-import {Ea1, EA1_FRAMES} from './Ea1';
+import {Ea1, EA1_FRAMES, CUT1} from './Ea1';
 
 // ea1 cold open (owner 31 Oct 2026): 4 real clips, each person says only his name (Fox News, NBC Meet the Press,
 // CBS Weekend News, Trump's White House remarks via CBS Mornings), then shot N: real headlines + his two books.
@@ -47,7 +47,14 @@ const Papers: React.FC = () => {
   );
 };
 
-export const EA1_FULL_FRAMES = COLD + EA1_FRAMES;
+// 3 × 1 s of real rallies right after "…president of the United States?" (owner: show how much people love him)
+const RALLY = [
+  {src: 'r1', tag: 'MLive'},
+  {src: 'r2', tag: 'WWMT · Grand Rapids rally'},
+  {src: 'r3', tag: 'AP · Detroit rally'},
+];
+const R_LEN = 30 * RALLY.length;
+export const EA1_FULL_FRAMES = COLD + EA1_FRAMES + R_LEN;
 
 export const Ea1Full: React.FC = () => {
   const s = (sec: number) => N_AT + Math.round(sec * 30);
@@ -60,6 +67,7 @@ export const Ea1Full: React.FC = () => {
     {at: s(58 / 24 + 0.25), src: 'ea1/co_book', v: 0.9},
     {at: s(66 / 24 + 0.25), src: 'ea1/co_book', v: 0.9},
     {at: COLD - 2, src: 'ea1/k_flash', v: 0.8},
+    ...RALLY.map((_, i) => ({at: COLD + CUT1 + i * 30, src: 'ea1/k_flash', v: 0.6})),
   ];
   return (
     <AbsoluteFill style={{background: '#000'}}>
@@ -71,8 +79,18 @@ export const Ea1Full: React.FC = () => {
       <Sequence from={N_AT} durationInFrames={N_LEN}>
         <Papers />
       </Sequence>
-      <Sequence from={COLD}>
+      <Sequence from={COLD} durationInFrames={CUT1}>
         <Ea1 />
+      </Sequence>
+      {RALLY.map((c, i) => (
+        <Sequence key={c.src} from={COLD + CUT1 + i * 30} durationInFrames={30}>
+          <Clip src={c.src} len={30} tag={c.tag} />
+        </Sequence>
+      ))}
+      <Sequence from={COLD + CUT1 + R_LEN}>
+        <Sequence from={-CUT1}>
+          <Ea1 />
+        </Sequence>
       </Sequence>
       <Sfx cues={cues} />
     </AbsoluteFill>

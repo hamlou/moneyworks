@@ -1,10 +1,11 @@
 import React from 'react';
 import {AbsoluteFill, Audio, Freeze, Img, OffthreadVideo, Sequence, staticFile, useCurrentFrame} from 'remotion';
 import {Sfx, Cue} from '../fx';
-import V from '../../pipeline/voice/ea1.json';
+import V from './ea1_timing.json'; // voice json with chapter breaths (tools/voice_gaps.py)
 import LENS from '../../blender/ea1_lens.json';
 import {ANTON, ComicBurst, Counter, HomeBase, K, UI, UICard, snap} from './kit';
 import {Music, Shake} from './kit2';
+import {BodyScene, bodyStart, bodyMusic, bodyCues} from './Ea1Body';
 
 // ea1: "What if Abdul El-Sayed became president?" — 1-minute hook test (pipeline/episodes/ea1.json, brief ea1_brief.md).
 // SENSITIVE: every fact card shows its source line; quotes are verbatim (S5, S6), opponents' claims are labelled as claims
@@ -15,25 +16,26 @@ type Beat = {id: string; start: number; end: number; words: W[]};
 const beats = (V as {beats: Beat[]}).beats;
 const B: Record<string, Beat> = Object.fromEntries(beats.map((b) => [b.id, b]));
 const STRETCH = 1 / 0.9; // public/ea1/voice.flac is the cached voice slowed to 0.9× (Chatterbox ≈ 211 wpm → ≈ 190)
-const fr = (t: number) => Math.round(t * STRETCH * FPS);
-const norm = (s: string) => s.toLowerCase().replace(/[^a-z0-9']/g, '');
-const at = (id: string, word?: string, n = 0) => {
+export const fr = (t: number) => Math.round(t * STRETCH * FPS);
+export const norm = (s: string) => s.toLowerCase().replace(/[^a-z0-9']/g, '');
+export const at = (id: string, word?: string, n = 0) => {
   const b = B[id];
   if (!word) return fr(b.start);
   const hit = b.words.filter((w) => norm(w.text).startsWith(word))[n];
   return fr(hit ? hit.start : b.start);
 };
+export const CUT1 = fr(B.k3.end) + 4; // Ea1Cold inserts the 3 rally clips right after the title question (owner 31 Oct)
 export const EA1_FRAMES = fr((V as {total: number}).total) + FPS;
-const S24 = (f24: number) => Math.round((f24 / 24) * FPS); // Blender shot frames (24 fps) → composition frames
+export const S24 = (f24: number) => Math.round((f24 / 24) * FPS); // Blender shot frames (24 fps) → composition frames
 
 // a Blender shot that holds its last frame if the segment is longer than the render
-const ShotInner: React.FC<{name: string; len24: number}> = ({name, len24}) => {
+export const ShotInner: React.FC<{name: string; len24: number}> = ({name, len24}) => {
   const f = useCurrentFrame(); // relative to the segment start (inside the Sequence)
   const last = S24(len24) - 1;
   const v = <OffthreadVideo src={staticFile(`ea1/shot_${name}.mp4`)} muted style={{width: 1920, height: 1080}} />;
   return f < last ? v : <Freeze frame={last}>{v}</Freeze>;
 };
-const Shot: React.FC<{name: string; len24: number; from: number; seg: number}> = ({name, len24, from, seg}) => (
+export const Shot: React.FC<{name: string; len24: number; from: number; seg: number}> = ({name, len24, from, seg}) => (
   <Sequence from={from} durationInFrames={Math.max(1, seg)} layout="none">
     <AbsoluteFill>
       <ShotInner name={name} len24={len24} />
@@ -42,8 +44,8 @@ const Shot: React.FC<{name: string; len24: number; from: number; seg: number}> =
 );
 
 
-const OUTLINE = ['5px 0', '-5px 0', '0 5px', '0 -5px'].map((o) => `drop-shadow(${o} 0 #111)`).join(' ');
-const Cut: React.FC<{f: number; keys: [number, string][]}> = ({f, keys}) => {
+const OUTLINE = ['2px 0', '-2px 0', '0 2px', '0 -2px'].map((o) => `drop-shadow(${o} 0 #111)`).join(' ');
+export const Cut: React.FC<{f: number; keys: [number, string][]}> = ({f, keys}) => {
   let name = keys[0][1];
   for (const [a, n] of keys) if (f >= a) name = n;
   const swap = keys.some(([a], i) => i > 0 && f === a);
@@ -54,23 +56,23 @@ const Cut: React.FC<{f: number; keys: [number, string][]}> = ({f, keys}) => {
     />
   );
 };
-const Wob: React.FC<{f: number; i?: number; children: React.ReactNode}> = ({f, i = 0, children}) => (
+export const Wob: React.FC<{f: number; i?: number; children: React.ReactNode}> = ({f, i = 0, children}) => (
   <div style={{position: 'absolute', inset: 0, transformOrigin: '6% 50%', transform: `scale(1.18) rotate(${Math.sin(f / 23 + i) * 0.6}deg) translateY(${Math.sin(f / 19 + i * 2) * 4}px)`}}>{children}</div>
 );
-const Big: React.FC<{children: React.ReactNode; color?: string; size?: number; style?: React.CSSProperties}> = ({children, color = K.white, size = 110, style}) => (
+export const Big: React.FC<{children: React.ReactNode; color?: string; size?: number; style?: React.CSSProperties}> = ({children, color = K.white, size = 110, style}) => (
   <div style={{fontFamily: ANTON, fontSize: size, color, lineHeight: 1.05, ...style}}>{children}</div>
 );
-const Small: React.FC<{children: React.ReactNode; color?: string; size?: number; style?: React.CSSProperties}> = ({children, color = K.grey, size = 38, style}) => (
+export const Small: React.FC<{children: React.ReactNode; color?: string; size?: number; style?: React.CSSProperties}> = ({children, color = K.grey, size = 38, style}) => (
   <div style={{fontFamily: UI, fontWeight: 600, fontSize: size, color, ...style}}>{children}</div>
 );
 // the source line every fact card carries (sensitive topic: the viewer always sees where a claim comes from)
-const Src: React.FC<{f: number; at: number; children: React.ReactNode}> = ({f, at: a, children}) =>
+export const Src: React.FC<{f: number; at: number; children: React.ReactNode}> = ({f, at: a, children}) =>
   f < a ? null : (
     <div style={{position: 'absolute', left: 40, bottom: 34, fontFamily: UI, fontWeight: 600, fontSize: 26, color: '#fff', background: 'rgba(0,0,0,0.62)', padding: '8px 16px', borderRadius: 10, opacity: snap(f, a, 6)}}>
       Source: {children}
     </div>
   );
-const Kinetic: React.FC<{f: number; at: number; until?: number; x: number; y: number; children: React.ReactNode; color?: string; size?: number}> = ({f, at: a, until, x, y, children, color = '#fff', size = 96}) => {
+export const Kinetic: React.FC<{f: number; at: number; until?: number; x: number; y: number; children: React.ReactNode; color?: string; size?: number}> = ({f, at: a, until, x, y, children, color = '#fff', size = 96}) => {
   if (f < a || (until !== undefined && f >= until)) return null;
   const k = snap(f, a, 5);
   return (
@@ -80,9 +82,9 @@ const Kinetic: React.FC<{f: number; at: number; until?: number; x: number; y: nu
   );
 };
 // 2-frame white (or black-outline) flash between hook worlds (§12.3 time-skip flash, §15.2 rule 7)
-const Flash: React.FC<{f: number; at: number; white?: boolean}> = ({f, at: a, white = true}) =>
+export const Flash: React.FC<{f: number; at: number; white?: boolean}> = ({f, at: a, white = true}) =>
   f >= a && f < a + 2 ? <AbsoluteFill style={{background: white ? '#fff' : '#000', opacity: f === a ? 1 : 0.5}} /> : null;
-const Bar: React.FC<{f: number; at: number; label: string; pct: number; color: string; y: number; speed?: number}> = ({f, at: a, label, pct, color, y, speed = 24}) => {
+export const Bar: React.FC<{f: number; at: number; label: string; pct: number; color: string; y: number; speed?: number}> = ({f, at: a, label, pct, color, y, speed = 24}) => {
   const k = Math.min(1, Math.max(0, (f - a) / speed));
   return (
     <div style={{position: 'absolute', left: 140, top: y, width: 1100}}>
@@ -150,6 +152,11 @@ export const Ea1: React.FC = () => {
       <>
         <Shot name="S" len24={LENS.S} from={k3} seg={k4 - k3} />
         <Kinetic f={f} at={pres} x={120} y={110} color={K.red} size={130}>PRESIDENT?</Kinetic>
+        {/* owner 31 Oct: his photo appears exactly where Dave's hand points */}
+        <div style={{position: 'absolute', left: 1360, top: 250, width: 470, transformOrigin: '0% 60%', transform: `rotate(3deg) scale(${snap(f, at('k3', 'abdul'), 6)})`, background: '#fff', padding: 12, boxShadow: '0 20px 50px rgba(0,0,0,.5)'}}>
+          <Img src={staticFile('ea1/elsayed_senate.jpg')} style={{width: '100%', height: 500, objectFit: 'cover', display: 'block'}} />
+          <div style={{fontFamily: ANTON, fontSize: 46, color: '#111', textAlign: 'center', paddingTop: 8}}>ABDUL EL-SAYED</div>
+        </div>
         <Flash f={f} at={k3} />
       </>
     );
@@ -211,7 +218,9 @@ export const Ea1: React.FC = () => {
   } else if (f < Math.min(mEnd, p5)) {
     scene = (
       <>
-        <Shot name="M" len24={274} from={h4} seg={p5 - h4} />
+        <Shot name="M" len24={LENS.M} from={h4} seg={p5 - h4} />
+        {f < h4 + 72 ? <Shot name="G" len24={LENS.G} from={h4} seg={72} /> : null /* owner: "day one" = a real 3D government first */}
+        <Flash f={f} at={h4 + 72} />
         <Kinetic f={f} at={sign} until={redundant} x={120} y={110} color={K.yellow}>MEDICARE FOR ALL</Kinetic>
         {f >= redundant ? (
           <div style={{position: 'absolute', left: 90, top: 90, width: 1000, background: 'rgba(15,16,20,0.88)', borderRadius: 18, padding: '26px 34px', opacity: snap(f, redundant, 6)}}>
@@ -235,12 +244,12 @@ export const Ea1: React.FC = () => {
       </>
     );
   } else if (f < cStart) {
-    scene = <Shot name="C" len24={110} from={h6} seg={cEnd - h6} />;
+    scene = <Shot name="C" len24={LENS.C} from={h6} seg={cEnd - h6} />;
   } else if (f < cEnd) {
     scene = (
       <>
         <Shake f={f} at={cStart} amp={14} len={12}>
-          <Shot name="C" len24={110} from={h6} seg={cEnd - h6} />
+          <Shot name="C" len24={LENS.C} from={h6} seg={cEnd - h6} />
         </Shake>
         <div style={{position: 'absolute', left: 90, top: 70}}>
           <Counter f={f} at={cStart} dur={40} to={33000000} prefix="$" size={150} color={K.green} />
@@ -312,14 +321,16 @@ export const Ea1: React.FC = () => {
         <Src f={f} at={h7}>{f < h9 ? 'Mediaite, Oct 9 2026; Detroit News, Oct 8 2026' : 'Bridge Michigan fact check, Sep 3 2026'}</Src>
       </>
     );
-  } else {
+  } else if (f < bodyStart()) {
     scene = (
       <>
-        <Shot name="E" len24={103} from={h10} seg={EA1_FRAMES - h10} />
+        <Shot name="E" len24={LENS.E} from={h10} seg={bodyStart() - h10} />
         <Kinetic f={f} at={h10 + 10} x={120} y={120} size={84}>WHAT CHANGES FOR YOU?</Kinetic>
         <Kinetic f={f} at={at('h10', 'who')} x={120} y={240} size={84} color={K.yellow}>WHO FIGHTS HARDEST?</Kinetic>
       </>
     );
+  } else {
+    scene = <BodyScene f={f} end={EA1_FRAMES} />;
   }
 
   const cues: Cue[] = [
@@ -381,10 +392,11 @@ export const Ea1: React.FC = () => {
           {src: 'volatile_reaction', from: h7, to: h8 - 9},
           {src: 'comic_plodding', from: h8 + 4, to: h9},
           {src: 'crypto', from: h9, to: noEv - 12},
-          {src: 'unanswered_questions', from: h10, to: EA1_FRAMES},
+          {src: 'unanswered_questions', from: h10, to: bodyStart() - 4},
+          ...bodyMusic(EA1_FRAMES),
         ]}
       />
-      <Sfx cues={cues} />
+      <Sfx cues={[...cues, ...bodyCues()]} />
     </AbsoluteFill>
   );
 };

@@ -202,7 +202,7 @@ if SHOT == "M":
     for o in bpy.data.objects:  # the chair moves back so Dave can stand behind the desk
         if o.name.startswith("chair_"):
             o.location.y += 0.5
-    card = box("ins_card", (0, 0, 0), (1.5, 0.08, 2.3), image_mat("ins_card", "logo_insurance.png", rough=0.3))  # giant insurance card
+    card = face_box("ins_card", (0, 0, 0), (1.5, 0.08, 2.3), (0.9, 0.9, 0.92), "logo_insurance.png")  # giant insurance card
     hinge = bpy.data.objects.new("hinge", None)
     sc.collection.objects.link(hinge)
     card.parent, card.location = hinge, (0, 0, 1.15)
@@ -218,7 +218,7 @@ if SHOT == "M":
         d.key(f)
         hinge.location = (2.6, 0.6, 0.0)  # the card wobbles, then on "unnecessary" topples flat (fall = t², small bounce)
         t = (f - DROOP) / 14
-        tip = R(3) * math.sin(f / 9) if f < DROOP else R(90) * min(1, t * t) - (R(6) * math.sin((t - 1) * 9) * math.exp(-(t - 1) * 4) if t > 1 else 0)
+        tip = R(3) * math.sin(f / 9) if f < DROOP else -(R(90) * min(1, t * t) - (R(6) * math.sin((t - 1) * 9) * math.exp(-(t - 1) * 4) if t > 1 else 0))  # falls backwards, logo up
         hinge.rotation_euler = (tip, 0, R(-30))
         hinge.keyframe_insert("location", frame=f)
         hinge.keyframe_insert("rotation_euler", frame=f)
@@ -307,7 +307,7 @@ if SHOT == "N":  # cold open: real headlines with his name rain onto a desk, his
         lx, ly = r.uniform(-2.4, 2.4), r.uniform(-1.6, 1.8)
         papers.append((sheet(mats[k % 8], r.uniform(-25, 25)), lx, ly, r.uniform(-0.6, 0.6), r.uniform(-30, 46), r.uniform(0.6, 1.4)))
     hero = sheet(mats[1], 8)  # the AP page lands last in the middle and fills the final frame
-    books = [box(f"book{i}", (0, 0, 0), (0.36, 0.5, 0.06), image_mat(f"bk{i}", f"book_ae{i}.png", rough=0.5)) for i in range(2)]
+    books = [face_box(f"book{i}", (0, 0, 0), (0.36, 0.5, 0.06), ((0.77, 0.17, 0.15), (0.11, 0.27, 0.5))[i], f"book_ae{i}.png", "+z") for i in range(2)]
     for f in range(1, LEN + 1):
         for n, (o, lx, ly, rot, t0, dr) in enumerate(papers):
             t = max(0.0, (f - t0) / 40.0)  # paper falls slowly and sways
@@ -332,6 +332,20 @@ if SHOT == "N":  # cold open: real headlines with his name rain onto a desk, his
         key_cam(cam0, f, (0.5 - 0.5 * k, -3.0 + 2.25 * k, 0.8 + 1.15 * k), (0.0, 0.3 - 0.25 * k, 0.5 - 0.5 * k), 20 + 15 * k)
     sc.camera.data.dof.use_dof = True
     sc.camera.data.dof.focus_object, sc.camera.data.dof.aperture_fstop = hero, 4.0
+
+def face_box(name, loc, size, side_rgb, img, face="-y"):
+    o = box(name, loc, size, flat(name + "_side", side_rgb, 0.5))
+    if face == "-y":
+        p = plane(name + "_face", (0, 0, 0), (size[0] * 0.98, size[2] * 0.98), (R(90), 0, 0), image_mat(name + "_img", img, rough=0.6))
+        p.location = (0, -size[1] / 2 - 0.004, 0)
+    else:
+        p = plane(name + "_face", (0, 0, 0), (size[0] * 0.98, size[1] * 0.98), (0, 0, 0), image_mat(name + "_img", img, rough=0.6))
+        p.location = (0, 0, size[2] / 2 + 0.004)
+    p.parent = o
+    p.scale = (p.scale[0] / o.scale[0], p.scale[1] / o.scale[2 if face == "-y" else 1], 1)
+    p.location = (p.location[0] / o.scale[0], p.location[1] / o.scale[1], p.location[2] / o.scale[2])
+    return o
+
 
 def walk_to(f, f0, f1, a, b, turn):  # Dave walks a→b between frames f0..f1, then stands
     k = min(1, max(0, (f - f0) / max(1, f1 - f0)))
@@ -359,13 +373,13 @@ if SHOT == "G":  # "on day one": a domed capitol at sunrise, tiny Dave walks up 
         flag.rotation_euler = (R(90), R(4) * math.sin(f / 5), R(6) * math.sin(f / 7))
         flag.keyframe_insert("rotation_euler", frame=f)
         k = ease(f / LEN)
-        key_cam(cam0, f, (1.2 - 1.2 * k, -17.5 - 4 * k, 0.45 + 6.5 * k), (0.2, -8 + 8 * k, 1.6 + 3.2 * k), 18 + 10 * k)
+        key_cam(cam0, f, (1.2 - 1.2 * k, -17.5 - 3 * k, 0.45 + 4.5 * k), (0.2, -9 + 6 * k, 1.4 + 2.2 * k), 18 + 4 * k)
 
 if SHOT == "Y":  # day one at the desk: the Medicare for All folder slides in, Dave opens it, camera tilts from paper to face
     office()
     light("sun", "SUN", (0, 0, 10), (R(55), 0, R(140)), energy=2.4, color=(1.0, 0.9, 0.78), angle=R(3))
     lamp = light("lamp", "SPOT", (-0.8, 0.6, 2.4), None, energy=500, spot_size=R(50), spot_blend=0.6, color=(1.0, 0.86, 0.66))
-    folder = box("folder", (0, 0, 0), (0.5, 0.36, 0.03), image_mat("m4a_f", "m4a_paper.png", rough=0.6))
+    folder = face_box("folder", (0, 0, 0), (0.5, 0.36, 0.03), (0.85, 0.75, 0.5), "m4a_paper.png", "+z")
     for f in range(1, LEN + 1):
         k = back_out(min(1, f / 30))
         folder.location = (1.6 - 1.6 * k, 1.25, 0.85)
@@ -387,7 +401,7 @@ if SHOT == "P":  # the price: a receipt unrolls off the desk across the floor ri
     light("sun", "SUN", (0, 0, 10), (R(60), 0, R(160)), energy=2.0, color=(1.0, 0.93, 0.82), angle=R(3))
     light("fill", "AREA", (0, -3, 3.2), (R(30), 0, 0), energy=300, size=5)
     seg = image_mat("rc", "receipt.png", rough=0.9)
-    segs = [plane(f"rc{i}", (0, 0.85 - i * 0.42, 0.003 + i * 0.0004), (0.5, 0.42), (0, 0, R(math.sin(i * 0.7) * 3)), seg if i < 17 else image_mat("rct", "receipt_total.png", rough=0.9)) for i in range(18)]
+    segs = [plane(f"rc{i}", (0, 0.85 - i * 0.42, 0.04 + i * 0.0004), (0.5, 0.42), (0, 0, R(math.sin(i * 0.7) * 3)), seg if i < 17 else image_mat("rct", "receipt_total.png", rough=0.9)) for i in range(18)]
     for f in range(1, LEN + 1):
         n = pops(18, 10, LEN * 0.7, f)
         for i, o in enumerate(segs):
@@ -543,7 +557,7 @@ if SHOT == "W":  # the three walls: on the road to the capitol, walls rise one b
     plane("lawn", (0, 10, -0.01), (90, 90), (0, 0, 0), flat("grass", (0.28, 0.42, 0.2), 0.9))
     light("sun", "SUN", (0, 0, 10), (R(70), 0, R(170)), energy=3.0, color=(1.0, 0.84, 0.64), angle=R(1.5))
     capitol(0, 34, 1.4)
-    walls = [box(f"wall{i}", (0, 4 + i * 3.5, -2), (5.0, 0.5, 2.6), image_mat(f"w{i}", f"wall_{n}.png", rough=0.85)) for i, n in enumerate(("60", "money", "half"))]
+    walls = [face_box(f"wall{i}", (0, 4 + i * 3.5, -2), (5.0, 0.5, 2.6), c, f"wall_{n}.png") for i, (n, c) in enumerate((("60", (0.16, 0.24, 0.43)), ("money", (0.12, 0.39, 0.24)), ("half", (0.55, 0.16, 0.16))))]
     for f in range(1, LEN + 1):
         for i, w in enumerate(walls):  # each wall slams up out of the ground, a third of the shot apart
             k = back_out(min(1, max(0, (f - (14 + i * LEN * 0.22)) / 8)))
@@ -556,6 +570,91 @@ if SHOT == "W":  # the three walls: on the road to the capitol, walls rise one b
         d.key(f)
         t = ease(f / LEN)
         key_cam(cam0, f, (1.5 - 0.8 * t, -6.5 + 1.0 * t, 0.6 + 1.6 * t), (0, 4 + 6 * t, 1.6 + 1.2 * t), 24)
+
+if SHOT == "Q":  # "the doctor bill goes to Washington instead of to you": the bill leaves Dave's mailbox and flies to the capitol
+    world_hdri("day", 0.9, 90)
+    plane("lawn", (0, 10, 0), (90, 90), (0, 0, 0), flat("grass", (0.28, 0.45, 0.2), 0.9))
+    plane("path", (0, -1, 0.005), (1.2, 6), (0, 0, 0), flat("stone", (0.6, 0.58, 0.55), 0.8))
+    light("sun", "SUN", (0, 0, 10), (R(55), 0, R(130)), energy=3.0, color=(1.0, 0.95, 0.86), angle=R(2))
+    box("house", (0, 3.2, 1.5), (5.0, 3.0, 3.0), flat("house_w", (0.88, 0.84, 0.76), 0.7))
+    bpy.ops.mesh.primitive_cone_add(vertices=4, radius1=3.8, depth=1.6, location=(0, 3.2, 3.8), rotation=(0, 0, R(45)))
+    bpy.context.object.data.materials.append(flat("roof", (0.4, 0.2, 0.16), 0.6))
+    box("door", (0, 1.69, 1.0), (0.9, 0.04, 2.0), flat("door", (0.35, 0.18, 0.1), 0.5))
+    box("mb_post", (1.3, -2.2, 0.5), (0.08, 0.08, 1.0), flat("post", (0.3, 0.2, 0.12), 0.7))
+    box("mailbox", (1.3, -2.2, 1.1), (0.3, 0.5, 0.3), flat("mb", (0.2, 0.25, 0.3), 0.3, coat=0.5))
+    capitol(-6, 60, 1.6)
+    bill = face_box("bill", (0, 0, 0), (0.3, 0.02, 0.2), (0.95, 0.95, 0.92), "rent_bill.png")
+    for f in range(1, LEN + 1):
+        u = min(1, max(0, (f - LEN * 0.35) / (LEN * 0.55)))  # the bill pops out of the mailbox and arcs away
+        bill.location = (1.3 - 7.3 * u, -2.0 + 62 * u * u, 1.3 + 9 * math.sin(u * math.pi) + 2 * u)
+        bill.rotation_euler = (R(20) * math.sin(f / 4), R(360) * u, R(30) * math.sin(f / 6))
+        bill.keyframe_insert("location", frame=f)
+        bill.keyframe_insert("rotation_euler", frame=f)
+        d.place((0.6, -2.4, 0.72), R(30))
+        d.legs_set("stand")
+        d.pose("look" if f < LEN * 0.35 else blend("look_up", "cheer", ease((f - LEN * 0.6) / 10)))
+        d.live(f, "think" if f < LEN * 0.35 else ("shock" if f < LEN * 0.6 else "grin"), talking=True)
+        d.life(f)
+        d.key(f)
+        t = ease(f / LEN)
+        key_cam(cam0, f, (3.2 - 1.0 * t, -6.0 - 1.5 * t, 1.2 + 1.0 * t), (0.8 - 3 * t, -2.0 + 30 * t * t, 1.3 + 2.5 * t), 30 - 6 * t)
+
+if SHOT == "R":  # the rent: a tiny apartment, the rent bill taped to the door, a laptop glowing red (the rent-setting program)
+    world_hdri("city", 0.3, 0)
+    plane("floor", (0, 0, 0), (8, 8), (0, 0, 0), pbr("floor", K.MAN["floor"], 0.8))
+    wall = pbr("wall", K.MAN["wall"], 0.6, tint=(0.75, 0.78, 0.72))
+    plane("back", (0, 2.5, 1.5), (8, 3), (R(90), 0, 0), wall)
+    plane("side", (-2.5, 0, 1.5), (8, 3), (R(90), 0, R(90)), wall)
+    box("door", (1.2, 2.47, 1.0), (0.95, 0.06, 2.05), flat("door", (0.42, 0.3, 0.2), 0.5))
+    bill = plane("rent", (1.2, 2.43, 1.35), (0.3, 0.4), (R(90), 0, 0), image_mat("rent", "rent_bill.png", rough=0.8))
+    box("table", (-1.3, 1.2, 0.38), (1.2, 0.8, 0.76), flat("table", (0.3, 0.22, 0.15), 0.5))
+    box("lap_base", (-1.3, 1.2, 0.78), (0.5, 0.35, 0.03), flat("lap", (0.15, 0.15, 0.17), 0.3))
+    lid = box("lap_lid", (-1.3, 1.37, 0.95), (0.5, 0.02, 0.34), flat("screen", (1.0, 0.15, 0.1), 0.2, emit=3.0))
+    lid.rotation_euler = (R(-15), 0, 0)
+    glow = light("glow", "POINT", (-1.3, 1.1, 1.0), None, energy=40, color=(1.0, 0.2, 0.1))
+    light("window", "AREA", (2.4, -1, 2.2), (0, R(-60), 0), energy=350, size=2, color=(0.75, 0.82, 1.0))
+    for f in range(1, LEN + 1):
+        glow.data.energy = 40 + 25 * math.sin(f / 3)
+        glow.data.keyframe_insert("energy", frame=f)
+        walk_to(f, 1, 40, (-0.2, -1.6), (0.9, 1.4), R(170))
+        d.pose("idle" if f < 40 else ("read" if f < LEN * 0.55 else blend("read", "fists", back_out((f - LEN * 0.55) / 6))))
+        d.live(f, "neutral" if f < 40 else ("shock" if f < LEN * 0.55 else "determined"), talking=True)
+        d.life(f)
+        d.key(f)
+        t = ease(f / LEN)
+        key_cam(cam0, f, (1.8 - 2.6 * t, -2.8 + 0.6 * t, 1.5 + 0.2 * t), (0.6 - 1.6 * t, 1.8 - 0.4 * t, 1.25 - 0.2 * t), 24 + 4 * t)
+
+if SHOT == "T":  # the money race: two towers of cash, one bale per million — red (GOP groups, 59) vs blue (his backers, 23)
+    world_hdri("night", 0.25, 0)
+    plane("floor", (0, 0, 0), (60, 60), (0, 0, 0), flat("stage", (0.06, 0.06, 0.07), 0.3, coat=0.6))
+    cash = image_mat("cash", "banknote.png", rough=0.7)
+    reds = [box("rb", (-1.6, 2, 0.13 + i * 0.27), (0.62, 0.34, 0.26), cash) for i in range(59)]
+    blues = [box("bb", (1.6, 2, 0.13 + i * 0.27), (0.62, 0.34, 0.26), cash) for i in range(23)]
+    box("red_base", (-1.6, 2, 0.02), (1.2, 1.0, 0.04), flat("redb", (0.9, 0.1, 0.1), 0.3, emit=3.0))
+    box("blue_base", (1.6, 2, 0.02), (1.2, 1.0, 0.04), flat("blueb", (0.1, 0.35, 1.0), 0.3, emit=3.0))
+    light("red", "SPOT", (-1.6, -1, 18), None, energy=6000, spot_size=R(18), color=(1.0, 0.45, 0.4))
+    light("blue", "SPOT", (1.6, -1, 10), None, energy=2500, spot_size=R(25), color=(0.5, 0.65, 1.0))
+    for o in bpy.data.objects:
+        if o.name.startswith(("red", "blue")) and o.type == "LIGHT":
+            aim(o, (o.location.x, 2, 0))
+    for f in range(1, LEN + 1):
+        nr, nb = pops(59, 20, LEN * 0.45, f), pops(23, LEN * 0.6, LEN * 0.8, f)  # red first, then blue (the "have a guess" beat)
+        for i, o in enumerate(reds):
+            o.scale = (0.31, 0.17, 0.13) if i < nr else (0.0001,) * 3
+            o.keyframe_insert("scale", frame=f)
+        for i, o in enumerate(blues):
+            o.scale = (0.31, 0.17, 0.13) if i < nb else (0.0001,) * 3
+            o.keyframe_insert("scale", frame=f)
+        d.place((0, 0.6, 0.72), R(0))
+        d.legs_set("stand")
+        d.pose("look_up" if f < LEN * 0.6 else blend("look_up", "shrug", ease((f - LEN * 0.82) / 8)))
+        d.live(f, "shock" if f < LEN * 0.6 else "neutral", talking=True)
+        d.life(f)
+        d.key(f)
+        m = ease(min(1, max(0, (f - LEN * 0.55) / (LEN * 0.12))))  # camera glides from the red top down to the blue tower
+        top = (0.13 + nr * 0.27) * (1 - m) + (0.13 + max(nb, 6) * 0.27) * m
+        t = ease(f / LEN)
+        key_cam(cam0, f, (0.4, -6.5 - 4 * ease(min(1, f / (LEN * 0.45))), 1.0 + 0.5 * top), (0, 2, 0.6 + 0.6 * top), 24)
 
 if SHOT == "S":
     office()
