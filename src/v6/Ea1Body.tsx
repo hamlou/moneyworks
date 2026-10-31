@@ -1,276 +1,282 @@
 import React from 'react';
-import {AbsoluteFill, Img, staticFile} from 'remotion';
+import {AbsoluteFill, Freeze, Img, OffthreadVideo, Sequence, staticFile, useCurrentFrame} from 'remotion';
 import {Cue} from '../fx';
-import LENS from '../../blender/ea1_lens.json';
-import {ANTON, ComicBurst, Counter, HomeBase, K, UICard, snap} from './kit';
+import {ANTON, ComicBurst, Counter, HomeBase, K, snap} from './kit';
 import {MSeg} from './kit2';
-import {at, Big, Cut, Flash, Kinetic, Shot, Small, Src, Wob} from './Ea1';
+import {at, Cut, Flash, Kinetic, Src} from './Ea1';
+import {MacroText} from './macro';
 
-// ea1 chapters 1–6 (pipeline/episodes/ea1_full_script.md). Every fact card carries its source line; quotes are verbatim
-// and attributed; opponents' claims are labelled as claims. 3D sets: Y Q P R B T V A D W (blender/ea1.py).
-const L = LENS as Record<string, number>;
-const GAP = 120; // music-only breath before every chapter (tools/voice_gaps.py, 4 s)
+// ea1 v3 body (pipeline/episodes/ea1_v3_script.md) — STYLE_3D §17: short word-synced pieces of 3D scenes, real 0.5–1.5 s
+// clips, verbatim "macro highlight" evidence shots, still Dave poses + one gag per joke. NO "Dave beside a text card".
+// Sensitive topic: every factual visual carries its Src line; quotes are verbatim; no Gaza.
+export const GAP = 60; // 2 s music breath before every chapter (tools/voice_gaps.py ea1 2)
+const LEN: Record<string, number> = {G: 3.33, Y: 9.25, Q: 17.17, P: 21.25, R: 19.21, B: 13.83, T: 37.71, V: 26.63, A: 47.38, W: 28.63, D: 29.25, E: 4.75};
 type Pose = 'shock_panic' | 'smug_point_you' | 'determined_present' | 'think_think' | 'neutral_shrug' | 'grin_cheer' | 'determined_point_l';
+type Vis =
+  | {k: 'shot'; n: string; off: number}
+  | {k: 'still'; n: string; t: number; pose?: Pose}
+  | {k: 'clip'; src: string}
+  | {k: 'macro'; lines: string[]; far?: string[]}
+  | {k: 'pose'; pose: Pose}
+  | {k: 'chapter'; title: string; n: string; t: number};
+type Ov = (f: number, a: number) => React.ReactNode;
+type E = {id: string; w?: string; n?: number; dt?: number; v: Vis; ov?: Ov; src?: string; sfx?: string};
 
-// a card on the dark home base with Dave's cut-out on the right
-const Home: React.FC<{f: number; a: number; dave: [number, Pose][]; src?: string; children?: React.ReactNode}> = ({f, a, dave, src, children}) => (
-  <>
-    <HomeBase f={f} />
-    <Wob f={f}>{children}</Wob>
-    <Cut f={f} keys={dave} />
-    {src ? <Src f={f} at={a + 4}>{src}</Src> : null}
-  </>
-);
-const Card: React.FC<{f: number; a: number; w?: number; h?: number; y?: number; children: React.ReactNode}> = ({f, a, w = 1000, h = 560, y = 200, children}) => (
-  <UICard f={f} at={a + 2} x={130} y={y} w={w} h={h}>
-    <div style={{padding: '40px 50px'}}>{children}</div>
-  </UICard>
-);
-const Quote: React.FC<{f: number; a: number; who: string; children: React.ReactNode}> = ({f, a, who, children}) => (
-  <Card f={f} a={a} h={600}>
-    <div style={{fontFamily: ANTON, fontSize: 140, color: K.yellow, lineHeight: 0.6}}>“</div>
-    <div style={{fontFamily: 'Georgia', fontSize: 50, color: '#fff', lineHeight: 1.25}}>{children}</div>
-    <Small color={K.yellow} size={34} style={{marginTop: 26}}>— {who}</Small>
-  </Card>
-);
-const Line: React.FC<{f: number; a: number; i?: number; color?: string; children: React.ReactNode}> = ({f, a, i = 0, color = '#fff', children}) => (
-  <div style={{opacity: snap(f, a + i * 8, 6), transform: `translateX(${(1 - snap(f, a + i * 8, 6)) * -60}px)`, marginBottom: 22}}>
-    <Big size={58} color={color}>{children}</Big>
-  </div>
-);
-const Chapter: React.FC<{f: number; a: number; title: string; score: string}> = ({f, a, title, score}) => (
-  <>
-    <HomeBase f={f} />
-    <div style={{position: 'absolute', inset: 0, display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center'}}>
-      <div style={{transform: `scale(${2.2 - 1.2 * snap(f, a + 4, 8)}) rotate(-2deg)`, background: '#f3efe4', padding: '20px 70px', borderTop: `40px solid ${K.red}`, borderRadius: 16}}>
-        <div style={{fontFamily: ANTON, fontSize: 190, color: '#151515'}}>{title}</div>
-      </div>
-      <div style={{marginTop: 50, opacity: snap(f, a + 30, 8)}}>
-        <Small color={K.yellow} size={52}>{score}</Small>
-      </div>
-    </div>
-    <Flash f={f} at={a} white={false} />
-  </>
-);
-// chapter-end open loop (loop method): Dave leans in, the next chapter's hook line slams in, a clock ticks
-const Tease: React.FC<{f: number; a: number; text: string; color?: string}> = ({f, a, text, color = K.yellow}) => (
-  <>
-    <HomeBase f={f} />
-    <div style={{position: 'absolute', inset: 0, background: `radial-gradient(circle at 70% 60%, transparent 30%, rgba(0,0,0,${0.3 + 0.4 * snap(f, a, 30)}) 75%)`}} />
-    <div style={{position: 'absolute', left: 130, top: 300, width: 1100}}><Kinetic f={f} at={a + 6} x={0} y={0} size={96} color={color}>{text}</Kinetic></div>
-    <Cut f={f} keys={[[a, 'smug_point_you']]} />
-  </>
-);
-const Books: React.FC<{f: number; a: number}> = ({f, a}) => (
-  <div style={{position: 'absolute', left: 160, top: 170, display: 'flex', gap: 60}}>
-    {[0, 1].map((i) => (
-      <Img key={i} src={staticFile(`ea1/book_ae${i}.png`)} style={{height: 640, boxShadow: '0 30px 60px rgba(0,0,0,.6)', transform: `translateY(${(1 - snap(f, a + i * 10, 7)) * -900}px) rotate(${i ? 4 : -4}deg)`}} />
-    ))}
-  </div>
-);
-const Scale: React.FC<{f: number; a: number}> = ({f, a}) => {
-  const tilt = Math.sin((f - a) / 9) * 9 * Math.exp(-(f - a) / 140);
-  const pan = (label: string, color: string, side: number) => (
-    <div style={{position: 'absolute', left: 480 + side * 330 - 150, top: 360 + side * tilt * 6, width: 300, textAlign: 'center'}}>
-      <div style={{height: 10, background: '#888', width: 2, margin: '0 auto 0', minHeight: 90}} />
-      <div style={{background: color, borderRadius: '0 0 150px 150px', padding: '30px 10px'}}><Big size={50}>{label}</Big></div>
-    </div>
-  );
+// a 3D shot from an offset; if the segment outlasts the clip it keeps pushing in on the last frame (no dead freeze)
+const Shot3D: React.FC<{n: string; off: number}> = ({n, off}) => {
+  const f = useCurrentFrame();
+  const last = Math.floor((LEN[n] - off) * 30) - 2;
+  const v = <OffthreadVideo src={staticFile(`ea1/shot_${n}.mp4`)} startFrom={Math.round(off * 30)} muted style={{width: 1920, height: 1080}} />;
+  return f < last ? v : <AbsoluteFill style={{transform: `scale(${1 + 0.002 * (f - last)})`}}><Freeze frame={last}>{v}</Freeze></AbsoluteFill>;
+};
+// a held 3D frame with a slow push-in (the reference's posed-diorama look)
+const Still: React.FC<{n: string; t: number}> = ({n, t}) => {
+  const f = useCurrentFrame();
   return (
-    <div style={{position: 'absolute', left: 100, top: 120, width: 960, height: 700, opacity: snap(f, a, 6)}}>
-      <div style={{position: 'absolute', left: 470, top: 120, width: 20, height: 500, background: '#bbb'}} />
-      <div style={{position: 'absolute', left: 130, top: 330, width: 700, height: 16, background: '#ddd', transform: `rotate(${tilt}deg)`}} />
-      {pan('TAXES ↑', K.red, -1)}
-      {pan('PREMIUMS ↓', '#2f6fd6', 1)}
-    </div>
+    <AbsoluteFill style={{transform: `scale(${1.03 + 0.0012 * f})`, filter: 'brightness(0.8)'}}>
+      <Freeze frame={Math.round(t * 30)}>
+        <OffthreadVideo src={staticFile(`ea1/shot_${n}.mp4`)} muted style={{width: 1920, height: 1080}} />
+      </Freeze>
+    </AbsoluteFill>
+  );
+};
+const RealClip: React.FC<{src: string}> = ({src}) => {
+  const f = useCurrentFrame();
+  return (
+    <AbsoluteFill style={{transform: `scale(${1.02 + 0.002 * f})`}}>
+      <OffthreadVideo src={staticFile(`ea1/names/${src}.mp4`)} muted style={{width: 1920, height: 1080}} />
+    </AbsoluteFill>
+  );
+};
+const Chapter: React.FC<{title: string; n: string; t: number}> = ({title, n, t}) => {
+  const f = useCurrentFrame();
+  return (
+    <>
+      <Still n={n} t={t} />
+      <AbsoluteFill style={{alignItems: 'center', justifyContent: 'center'}}>
+        <div style={{fontFamily: ANTON, fontSize: 210, color: '#fff', WebkitTextStroke: '8px #111', transform: `scale(${1.6 - 0.6 * snap(f, 2, 6)}) rotate(-3deg)`}}>{title}</div>
+      </AbsoluteFill>
+    </>
+  );
+};
+const Render: React.FC<{v: Vis; f0: number}> = ({v, f0}) => {
+  const r = useCurrentFrame();
+  const f = r + f0;
+  if (v.k === 'shot') return <Shot3D n={v.n} off={v.off} />;
+  if (v.k === 'clip') return <RealClip src={v.src} />;
+  if (v.k === 'macro') return <MacroText lines={v.lines} far={v.far} />;
+  if (v.k === 'chapter') return <Chapter title={v.title} n={v.n} t={v.t} />;
+  if (v.k === 'still')
+    return (
+      <>
+        <Still n={v.n} t={v.t} />
+        {v.pose ? <Cut f={f} keys={[[0, v.pose]]} /> : null}
+      </>
+    );
+  return (
+    <>
+      <HomeBase f={f} />
+      <div style={{position: 'absolute', inset: 0, transformOrigin: '78% 100%', transform: `scale(${1.08 + 0.0015 * r})`}}>
+        <Cut f={f} keys={[[0, v.pose]]} />
+      </div>
+    </>
   );
 };
 
+// ── small 2D gags (one per joke) ──
+const Moth: Ov = (f, a) => {
+  const t = f - a;
+  return t < 0 ? null : (
+    <div style={{position: 'absolute', left: 1180 - t * 4 + Math.sin(t / 3) * 40, top: 640 - t * 9, width: 70, height: 40, display: 'flex', gap: 4, transform: `scaleY(${0.4 + 0.6 * Math.abs(Math.sin(t))})`}}>
+      <div style={{flex: 1, background: '#8b8478', borderRadius: '50% 10% 50% 50%'}} />
+      <div style={{flex: 1, background: '#8b8478', borderRadius: '10% 50% 50% 50%'}} />
+    </div>
+  );
+};
+const Sticky: Ov = (f, a) => (f < a ? null : (
+  <div style={{position: 'absolute', right: 300, top: 220, width: 260, height: 220, background: '#ffe95c', boxShadow: '0 10px 20px rgba(0,0,0,.4)', transform: `rotate(-8deg) scale(${snap(f, a, 5)})`, fontFamily: ANTON, fontSize: 96, color: '#111', display: 'flex', alignItems: 'center', justifyContent: 'center'}}>DAVE</div>
+));
+const Coin: Ov = (f, a) => {
+  const t = Math.max(0, f - a);
+  return f < a ? null : <div style={{position: 'absolute', left: 1040, top: Math.min(700, 120 + t * t * 2.2), width: 90, height: 90, borderRadius: '50%', background: 'radial-gradient(#ffe27a,#c9921c)', border: '6px solid #a8740f'}} />;
+};
+const Buttons: Ov = (f, a) => (
+  <div style={{position: 'absolute', left: 140, top: 330, display: 'flex', gap: 60, opacity: snap(f, a, 6)}}>
+    {[['TAXES ↑', K.red], ['PREMIUMS ↓', '#2f6fd6']].map(([t, c]) => (
+      <div key={t} style={{width: 380, height: 240, borderRadius: 40, background: c, boxShadow: '0 18px 0 rgba(0,0,0,.45)', fontFamily: ANTON, fontSize: 64, color: '#fff', display: 'flex', alignItems: 'center', justifyContent: 'center'}}>{t}</div>
+    ))}
+  </div>
+);
+const Books: Ov = (f, a) => (
+  <div style={{position: 'absolute', left: 160, top: 160, display: 'flex', gap: 60}}>
+    {[0, 1].map((i) => (
+      <Img key={i} src={staticFile(`ea1/book_ae${i}.png`)} style={{height: 680, boxShadow: '0 30px 60px rgba(0,0,0,.6)', transform: `translateY(${(1 - snap(f, a + i * 8, 6)) * -1000}px) rotate(${i ? 4 : -4}deg)`}} />
+    ))}
+  </div>
+);
+const Card: Ov = (f, a) => (f < a ? null : (
+  <div style={{position: 'absolute', left: 260, top: 380, width: 520, height: 320, borderRadius: 24, background: '#2f6fd6', transform: 'rotate(-6deg)', boxShadow: '0 20px 40px rgba(0,0,0,.5)', overflow: 'hidden'}}>
+    <div style={{fontFamily: ANTON, fontSize: 64, color: '#fff', padding: 30}}>LIBRARY CARD</div>
+    <div style={{position: 'absolute', inset: 0, background: `linear-gradient(115deg, transparent ${Math.max(0, 70 - (f - a) * 3)}%, #17181b ${Math.max(0, 70 - (f - a) * 3)}%)`}} />
+  </div>
+));
+const kin = (text: string, w: [string, string?], color: string = '#fff', y = 110, size = 120): Ov => (f) => <Kinetic f={f} at={at(w[0], w[1])} x={110} y={y} size={size} color={color}>{text}</Kinetic>;
+const burst = (word: string, w: [string, string?]): Ov => (f) => <ComicBurst f={f} at={at(w[0], w[1])} word={word} x={560} y={600} />;
+const both = (...o: Ov[]): Ov => (f, a) => <>{o.map((x, i) => <React.Fragment key={i}>{x(f, a)}</React.Fragment>)}</>;
+
+// each visual lasts until the next entry. Anchor: beat id (+ word, nth match); dt < 0 = before the beat (chapter
+// breath), dt ≥ 0 = frames after the previous entry (real clips are 1.2 s).
+const ENTRIES: E[] = [
+  // ── CH1 THE PRESIDENT KNOWS HIS NAME (problem 1)
+  {id: 'c1_01', v: {k: 'still', n: 'G', t: 3.0, pose: 'grin_cheer'}, ov: burst('HE WON!', ['c1_01', 'thirty'])},
+  {id: 'c1_01', w: 'it', v: {k: 'pose', pose: 'shock_panic'}, sfx: 'ea1/k_boom'},
+  {id: 'c1_02', v: {k: 'clip', src: 'n4'}, src: 'President Trump, via CBS News'},
+  {id: 'c1_02', dt: 30, v: {k: 'macro', lines: ['Mohammed El-Sayed is a terrible Candidate', '[Mohammed goes back to the days of the Jihad.]', 'He is a RADICAL Extremist'], far: ['Truth Social', 'Terrorist Sympathizer']}, src: 'Truth Social, Oct 8 2026'},
+  {id: 'c1_03', v: {k: 'pose', pose: 'smug_point_you'}, ov: kin('"MY NAME IS ABDUL"', ['c1_03', 'abdul'], K.yellow), src: 'Mediaite, Oct 9 2026'},
+  {id: 'c1_04', v: {k: 'pose', pose: 'neutral_shrug'}, ov: Sticky, sfx: 'ea1/crickets'},
+  {id: 'c1_05', v: {k: 'macro', lines: ['', 'claimed El-Sayed [pledged his support to the Muslim Brotherhood]', ''], far: ['Mike Rogers', 'Aug 5 statement']}, src: 'Mike Rogers statement, Aug 5 2026'},
+  {id: 'c1_05', w: 'fact', v: {k: 'macro', lines: ['', '[There is no evidence] that El-Sayed has ties to the organization', ''], far: ['fact check', 'Bridge Michigan']}, src: 'Bridge Michigan fact check, Sep 3 2026', sfx: 'ea1/no_evidence'},
+  {id: 'c1_06', v: {k: 'shot', n: 'G', off: 0}},
+  // ── CH2 DAY ONE (problem 2: the price, the pen)
+  {id: 'c2_01', dt: -GAP, v: {k: 'chapter', title: 'DAY 1', n: 'Y', t: 1}},
+  {id: 'c2_01', v: {k: 'shot', n: 'Y', off: 0}, ov: kin('MEDICARE FOR ALL', ['c2_01', 'medicare'], K.yellow), src: 'Bridge Michigan'},
+  {id: 'c2_02', v: {k: 'shot', n: 'Q', off: 5}, ov: kin('BILL → WASHINGTON', ['c2_02', 'washington']), src: 'Bridge Michigan'},
+  {id: 'c2_03', v: {k: 'shot', n: 'P', off: 3}},
+  {id: 'c2_04', v: {k: 'shot', n: 'P', off: 9}, ov: (f) => <Counter f={f} at={at('c2_04', 'thirty')} dur={40} to={34} prefix="$" suffix=" TRILLION" size={130} color={K.yellow} style={{position: 'absolute', left: 110, top: 90}} />, src: 'Urban Institute estimate · John Holahan via Bridge Michigan, Apr 29 2026'},
+  {id: 'c2_05', v: {k: 'shot', n: 'P', off: 15}, ov: kin('× 2 TODAY?', ['c2_05', 'double'], K.red, 110, 150), src: 'John Holahan (Urban Institute) via Bridge Michigan'},
+  {id: 'c2_06', v: {k: 'pose', pose: 'shock_panic'}, ov: Moth, sfx: 'ea1/crickets'},
+  {id: 'c2_07', v: {k: 'still', n: 'Y', t: 8, pose: 'think_think'}, ov: Buttons, src: 'Bridge Michigan'},
+  {id: 'c2_08', v: {k: 'macro', lines: ['', 'middle-class taxes [would have to rise]', ''], far: ['Committee for a Responsible Federal Budget', 'Medicare for All']}, src: 'Committee for a Responsible Federal Budget (2019) via Bridge Michigan'},
+  {id: 'c2_09', v: {k: 'still', n: 'Y', t: 8, pose: 'determined_present'}, ov: both(Buttons, kin('MANY COULD PAY LESS', ['c2_09', 'less'], K.yellow, 640, 90)), src: 'Committee for a Responsible Federal Budget via Bridge Michigan'},
+  {id: 'c2_10', v: {k: 'shot', n: 'Y', off: 4}, sfx: 'ea1/fail'},
+  {id: 'c2_10', w: 'nothing', v: {k: 'pose', pose: 'neutral_shrug'}, sfx: 'ea1/crickets'},
+  // ── CH3 THE PEN IS NOT ENOUGH (problem 3) → a small win → the money
+  {id: 'c3_01', dt: -GAP, v: {k: 'chapter', title: 'THE SENATE', n: 'V', t: 3}},
+  {id: 'c3_01', v: {k: 'shot', n: 'V', off: 0}, ov: both(kin('51 TO PASS', ['c3_01', 'senate']), kin('60 TO GET PAST A FILIBUSTER', ['c3_01', 'sixty'], K.yellow, 230, 90)), src: 'U.S. Senate Rule XXII · Straight Arrow News explainer'},
+  {id: 'c3_02', v: {k: 'shot', n: 'V', off: 14}},
+  {id: 'c3_03', v: {k: 'shot', n: 'R', off: 0}, ov: kin('YOUR RENT', ['c3_03', 'rent'], K.red, 110, 150)},
+  {id: 'c3_04', v: {k: 'shot', n: 'R', off: 8}, ov: both(kin('BAN BIG CORPORATE LANDLORDS', ['c3_04', 'ban'], '#fff', 110, 80), kin('BAN RENT-SETTING SOFTWARE', ['c3_04', 'computer'], K.yellow, 210, 80)), src: 'Newsweek, Aug 2026'},
+  {id: 'c3_05', v: {k: 'shot', n: 'B', off: 4}, ov: both((f) => <Counter f={f} at={at('c3_05', 'two')} dur={20} to={2} suffix="%" size={170} color={K.yellow} style={{position: 'absolute', left: 110, top: 80}} />, kin('1 OF 50', ['c3_05', 'one'], '#fff', 300, 120)), src: 'Marty P. Jordan (Michigan State University) via Newsweek'},
+  {id: 'c3_06', v: {k: 'still', n: 'V', t: 25, pose: 'grin_cheer'}, ov: kin('350+ HOMES → NO MORE BUYING', ['c3_06', 'three'], K.yellow, 110, 90), src: '21st Century ROAD to Housing Act · NPR, Mar 12 2026'},
+  {id: 'c3_07', v: {k: 'pose', pose: 'grin_cheer'}, ov: burst('A WIN!', ['c3_07', 'finally'])},
+  {id: 'c3_07', w: 'money', v: {k: 'shot', n: 'T', off: 0}, sfx: 'ea1/k_slam'},
+  // ── CH4 THE MONEY (problem 4)
+  {id: 'c4_01', dt: -GAP, v: {k: 'chapter', title: 'THE MONEY', n: 'T', t: 30}},
+  {id: 'c4_01', v: {k: 'shot', n: 'T', off: 2}, ov: both((f) => <Counter f={f} at={at('c4_01')} dur={30} to={33000000} prefix="$" size={140} color={K.green} style={{position: 'absolute', left: 110, top: 90}} />, burst('CUTE.', ['c4_01', 'cute'])), src: 'NBC News, Oct 9 2026'},
+  {id: 'c4_02', v: {k: 'shot', n: 'T', off: 6}, ov: (f) => <Counter f={f} at={at('c4_02', 'two')} dur={45} to={205} prefix="$" suffix=" MILLION+" size={130} color={K.yellow} style={{position: 'absolute', left: 110, top: 90}} />, src: 'Bridge Michigan (FEC records), Oct 2 2026'},
+  {id: 'c4_03', v: {k: 'shot', n: 'T', off: 14}, ov: kin('GOP GROUPS: $59.3M', ['c4_03', 'fifty'], K.red, 110, 120), src: 'Bridge Michigan (FEC records), Oct 2 2026'},
+  {id: 'c4_04', v: {k: 'shot', n: 'T', off: 20}, ov: kin('UP TO $9M MORE (REPORTED)', ['c4_04', 'nine'], K.yellow, 110, 100), src: 'New York Times via Newsweek, Oct 21 2026'},
+  {id: 'c4_05', v: {k: 'shot', n: 'T', off: 28}, ov: kin('HIS BACKERS: $23M', ['c4_05', 'twenty'], '#5aa0ff', 110, 130), src: 'Bridge Michigan (FEC records), Oct 2 2026'},
+  {id: 'c4_06', v: {k: 'clip', src: 'b_aoc'}, src: 'CBS News Detroit'},
+  {id: 'c4_06', dt: 36, v: {k: 'macro', lines: ['Rep. Alexandria Ocasio-Cortez donated', '[$1 million to Dr. Abdul El-Sayed]', 'who is running for U.S. Senate as a Democrat.'], far: ['New York Democratic', 'The National News Desk']}, src: 'WLOS / The National News Desk, Oct 16 2026'},
+  {id: 'c4_07', v: {k: 'still', n: 'T', t: 36, pose: 'grin_cheer'}, ov: Coin, sfx: 'ea1/cash_rain'},
+  {id: 'c4_08', v: {k: 'pose', pose: 'smug_point_you'}, ov: kin('KEEP AN EYE ON FOX NEWS…', ['c4_08', 'fox'], K.red, 300, 90)},
+  {id: 'c4_09', v: {k: 'shot', n: 'A', off: 0}, sfx: 'ea1/heart'},
+  // ── CH5 IT GETS PERSONAL (problem 5 → low point)
+  {id: 'c5_01', dt: -GAP, v: {k: 'chapter', title: 'PERSONAL', n: 'A', t: 8}},
+  {id: 'c5_01', v: {k: 'clip', src: 'b_rally'}, src: 'AP'},
+  {id: 'c5_01', dt: 36, v: {k: 'shot', n: 'A', off: 4}, src: 'AP, Oct 25 2026'},
+  {id: 'c5_02', v: {k: 'macro', lines: ['he told the crowd', "[I'm here to keep a jihadist Muslim Brotherhood member]", 'from becoming a United States senator.'], far: ['Port Huron', 'McMorran Place']}, src: 'President Trump, Port Huron rally · AP, Oct 25 2026', sfx: 'ea1/k_boom'},
+  {id: 'c5_03', v: {k: 'macro', lines: ['El-Sayed', 'has repeatedly said he is [loyal to the U.S.]', 'and disavowed the Muslim Brotherhood.'], far: ['AP', 'Michigan Senate race']}, src: 'AP, Oct 25 2026'},
+  {id: 'c5_04', v: {k: 'clip', src: 'b_debate'}, src: 'CBS News · final Senate debate'},
+  {id: 'c5_04', w: 'proud', v: {k: 'macro', lines: ['El-Sayed called it shameful.', "[I'm proud of our Constitution]", 'that guarantees all of us the right to pray'], far: ['as we choose to pray.', 'AP']}, src: 'Abdul El-Sayed · AP, Oct 25 2026'},
+  {id: 'c5_05', v: {k: 'shot', n: 'A', off: 12}, ov: kin('"DON\'T WUSS OUT, MAN."', ['c5_05', 'donald'], K.yellow, 110, 110), src: 'Abdul El-Sayed · AP, Oct 25 2026'},
+  {id: 'c5_06', v: {k: 'shot', n: 'A', off: 40}, sfx: 'ea1/fail'},
+  {id: 'c5_07', v: {k: 'macro', lines: ['Michigan Democrat Abdul El-Sayed Fumes About His CNN Interviews:', "'I Get a [Non-Consensual Colonoscopy]'", ''], far: ['Mediaite', 'CNN']}, src: 'Mediaite'},
+  {id: 'c5_08', v: {k: 'pose', pose: 'think_think'}, ov: burst('DOCTOR.', ['c5_08', 'doctor'])},
+  {id: 'c5_09', v: {k: 'shot', n: 'E', off: 0}, ov: both(kin('MONEY ✗', ['c5_09', 'money'], K.red, 110, 90), kin('MATH ✗', ['c5_09', 'math'], K.red, 210, 90), kin('HALF THE NEWS ✗', ['c5_09', 'half'], K.red, 310, 90))},
+  // ── CH6 THE TEST (comeback, with its own problems)
+  {id: 'c6_01', dt: -GAP, v: {k: 'chapter', title: 'THE TEST', n: 'D', t: 2}},
+  {id: 'c6_01', v: {k: 'macro', lines: ['', "Jesse Watters says '[I actually like]' Abdul el Sayed", 'after interviewing him'], far: ['Washington Examiner', 'Fox News']}, src: 'Washington Examiner'},
+  {id: 'c6_02', v: {k: 'pose', pose: 'shock_panic'}, ov: burst('EVEN FOX.', ['c6_02']), sfx: 'ea1/k_boom'},
+  {id: 'c6_03', v: {k: 'shot', n: 'D', off: 0}, ov: kin('DETROIT · 2015', ['c6_03', '2015'], K.yellow, 110, 130), src: 'Bridge Michigan, Sep 25 2026 · Wikipedia'},
+  {id: 'c6_04', v: {k: 'shot', n: 'D', off: 6}, ov: kin('DEPARTMENT × 2', ['c6_04', 'doubled'], '#fff', 110, 130), src: 'Bridge Michigan, Sep 25 2026'},
+  {id: 'c6_05', v: {k: 'shot', n: 'D', off: 10}, ov: both((f) => <Counter f={f} at={at('c6_05', 'ninety')} dur={30} to={94} suffix=" BUILDINGS TESTED" size={100} color="#5aa0ff" style={{position: 'absolute', left: 110, top: 90}} />, kin('19 SCHOOLS: TOO MUCH LEAD OR COPPER', ['c6_05', 'nineteen'], K.red, 230, 76)), src: 'Michigan Public, Aug 30 2016'},
+  {id: 'c6_06', v: {k: 'pose', pose: 'neutral_shrug'}, sfx: 'ea1/crickets'},
+  {id: 'c6_07', v: {k: 'still', n: 'D', t: 27, pose: 'think_think'}, ov: both(kin('"REMOVED THE LEAD"?', ['c6_07', 'removed'], '#fff', 110, 100), kin('FIXES WERE TEMPORARY', ['c6_07', 'temporary'], K.red, 230, 100), kin('HIS TEAM FOUND IT', ['c6_07', 'honest'], K.yellow, 350, 100)), src: 'Washington Free Beacon, Jul 29 2026'},
+  {id: 'c6_08', v: {k: 'still', n: 'D', t: 27, pose: 'grin_cheer'}, ov: (f) => <Counter f={f} at={at('c6_08', 'five')} dur={30} to={5000} suffix="+ FREE GLASSES" size={110} color={K.yellow} style={{position: 'absolute', left: 110, top: 100}} />, src: 'Bridge Michigan, Sep 25 2026 (Vision to Learn)'},
+  {id: 'c6_09', v: {k: 'pose', pose: 'smug_point_you'}, ov: (f) => Books(f, at('c6_09', 'they')), src: 'Abrams Press 2020 · Oxford University Press 2021', sfx: 'ea1/co_book'},
+  {id: 'c6_10', v: {k: 'pose', pose: 'neutral_shrug'}, ov: (f) => Card(f, at('c6_10', 'library')), sfx: 'ea1/fail'},
+  {id: 'c6_11', v: {k: 'still', n: 'G', t: 3.0, pose: 'shock_panic'}, ov: kin('2018: LOST TO GRETCHEN WHITMER', ['c6_11', 'lost'], K.red, 110, 90), src: 'Bridge Michigan, Aug 2018 · Wikipedia'},
+  {id: 'c6_12', v: {k: 'pose', pose: 'determined_point_l'}, sfx: 'ea1/end_riser'},
+  // ── CH7 THE ANSWER (payoff of the hook)
+  {id: 'c7_01', dt: -GAP, v: {k: 'chapter', title: 'THE ANSWER', n: 'W', t: 2}},
+  {id: 'c7_01', v: {k: 'shot', n: 'W', off: 0}, ov: both(kin('WHO FIGHTS HARDEST?', ['c7_01', 'who'], K.yellow, 110, 110), kin('NOT ONE PERSON', ['c7_01', 'not'], '#fff', 240, 110)), src: 'Bridge Michigan · Senate Rule XXII'},
+  {id: 'c7_02', v: {k: 'shot', n: 'W', off: 18}, ov: both(kin('ABSOLUTELY…', ['c7_02', 'absolutely'], K.yellow, 110, 130), kin('NOTHING (IN MONTH 1)', ['c7_02', 'nothing'], '#fff', 250, 110), kin('PRESIDENT = PEN · CONGRESS = PAPER', ['c7_02', 'because'], K.yellow, 380, 80))},
+  {id: 'c7_03', v: {k: 'still', n: 'G', t: 3.0, pose: 'think_think'}, ov: both(kin('VS MIKE ROGERS', ['c7_03', 'rogers'], '#fff', 110, 100), kin('FIRST MUSLIM SENATOR?', ['c7_03', 'first'], K.yellow, 230, 100)), src: 'AP, Oct 25 2026'},
+  {id: 'c7_04', v: {k: 'still', n: 'G', t: 3.0, pose: 'determined_point_l'}, ov: kin('NOVEMBER 3', ['c7_04', 'november'], K.red, 110, 170), sfx: 'ea1/k_riser'},
+  {id: 'c7_05', v: {k: 'pose', pose: 'smug_point_you'}, ov: both(kin('KEEP IT?', ['c7_05', 'keep'], '#5aa0ff', 140, 120), kin('THROW IT OUT?', ['c7_05', 'throw'], K.red, 290, 120), kin('↓ COMMENTS', ['c7_05', 'comments'], K.yellow, 440, 90))},
+  {id: 'c7_06', v: {k: 'pose', pose: 'grin_cheer'}, ov: kin('MONEY TALKS.', ['c7_06'], K.yellow, 380, 130)},
+];
+
+let _S: number[] | null = null;
+const starts = (): number[] => {
+  if (_S) return _S;
+  const r: number[] = [];
+  ENTRIES.forEach((e, i) => r.push(e.dt !== undefined ? (e.dt < 0 ? at(e.id) + e.dt : r[i - 1] + e.dt) : at(e.id, e.w, e.n ?? 0)));
+  _S = r;
+  return r;
+};
 export const bodyStart = () => at('c1_01') - GAP;
+const FLASHY = new Set(['clip', 'macro', 'chapter']);
 
 export const BodyScene: React.FC<{f: number; end: number}> = ({f, end}) => {
-  const b = (id: string, w?: string) => at(id, w);
-  const sh = (name: string, from: string, to: string | null) => {
-    const s = b(from);
-    return <Shot name={name} len24={L[name]} from={s} seg={(to ? b(to) : end) - s} />;
-  };
-  const ch = (id: string) => b(id) - GAP;
-  // [start frame, scene]; each scene runs until the next start
-  const S: [number, () => React.ReactNode][] = [
-    // ── CHAPTER 1 — DAY ONE: YOUR HEALTH BILL
-    [ch('c1_01'), () => <Chapter f={f} a={ch('c1_01')} title="DAY 1" score="PROMISES 0 · LAWS PASSED 0" />],
-    [b('c1_01'), () => (<>{sh('Y', 'c1_01', 'c1_02')}<Kinetic f={f} at={b('c1_01', 'medicare')} x={110} y={110} size={110} color={K.yellow}>MEDICARE FOR ALL</Kinetic><Src f={f} at={b('c1_01') + 10}>Bridge Michigan</Src></>)],
-    [b('c1_02'), () => (<>{sh('Q', 'c1_02', 'c1_04')}<Kinetic f={f} at={b('c1_02', 'washington')} until={b('c1_03')} x={110} y={110} size={100}>BILL → WASHINGTON</Kinetic>
-      {f >= b('c1_03') ? <Quote f={f} a={b('c1_03')} who="El-Sayed campaign, on job insurance">redundant and unnecessary</Quote> : null}<Src f={f} at={b('c1_02') + 10}>Bridge Michigan</Src></>)],
-    [b('c1_04'), () => (<>{sh('P', 'c1_04', 'c1_07')}
-      <Counter f={f} at={b('c1_04', 'thirty')} dur={40} to={34} prefix="$" suffix=" TRILLION" size={130} color={K.yellow} style={{position: 'absolute', left: 110, top: 90}} />
-      <Kinetic f={f} at={b('c1_05', 'double')} x={110} y={260} size={110} color={K.red}>× 2 NOW?</Kinetic>
-      <Kinetic f={f} at={b('c1_06', 'not')} x={110} y={420} size={140}>NOT ENOUGH.</Kinetic>
-      <Src f={f} at={b('c1_04') + 10}>Urban Institute estimate · John Holahan via Bridge Michigan, Apr 29 2026</Src></>)],
-    [b('c1_07'), () => (<Home f={f} a={b('c1_07')} dave={[[b('c1_07'), 'think_think']]} src="Bridge Michigan">
-      <Card f={f} a={b('c1_07')}><Big size={90} color={K.yellow}>WHO PAYS?</Big><div style={{height: 30}} />
-        <Line f={f} a={b('c1_07', 'rich')}>✔ “make the rich pay”</Line><Line f={f} a={b('c1_07', 'hopes')} i={0}>✔ avoid tax hikes on most families</Line><Line f={f} a={b('c1_07', 'hundred')} i={0} color={K.yellow}>(even around $100,000 a year)</Line></Card></Home>)],
-    [b('c1_08'), () => (<Home f={f} a={b('c1_08')} dave={[[b('c1_08'), 'neutral_shrug']]} src="Committee for a Responsible Federal Budget (2019) via Bridge Michigan">
-      <Card f={f} a={b('c1_08')}><Line f={f} a={b('c1_08')}>HOW TO PAY FOR IT?</Line><Line f={f} a={b('c1_08', 'did')} color={K.red}>NOT SPELLED OUT</Line><div style={{height: 20}} />
-        <Line f={f} a={b('c1_08', 'budget')} color={K.yellow}>BUDGET WATCHDOG (2019):</Line><Line f={f} a={b('c1_08', 'middle')}>middle-class taxes would rise</Line></Card></Home>)],
-    [b('c1_09'), () => (<Home f={f} a={b('c1_09')} dave={[[b('c1_09'), 'determined_present']]} src="Committee for a Responsible Federal Budget via Bridge Michigan">
-      <Card f={f} a={b('c1_09')}><Line f={f} a={b('c1_09')} color={K.yellow}>BUT ALSO:</Line><Line f={f} a={b('c1_09', 'less')}>many families could pay LESS</Line><Line f={f} a={b('c1_09', 'premiums')}>in taxes than in premiums + copays</Line></Card></Home>)],
-    [b('c1_10'), () => (<Home f={f} a={b('c1_10')} dave={[[b('c1_10'), 'think_think']]}><Scale f={f} a={b('c1_10')} /></Home>)],
-    [b('c1_11'), () => (<Home f={f} a={b('c1_11')} dave={[[b('c1_11'), 'determined_present']]} src="Bridge Michigan">
-      <Card f={f} a={b('c1_11')}><Big size={64} color={K.yellow}>BRIDGE MICHIGAN CHECKED IT</Big><div style={{height: 30}} />
-        <Line f={f} a={b('c1_11', 'likely')}>“raise taxes” → LIKELY CORRECT</Line><Line f={f} a={b('c1_11', 'some')}>total cost could fall for some families</Line></Card></Home>)],
-    [b('c1_12'), () => (<Home f={f} a={b('c1_12')} dave={[[b('c1_12'), 'smug_point_you']]}>
-      <Card f={f} a={b('c1_12')} h={420}><Big size={80}>PLANS: 1</Big><Big size={80} color={K.red}>LAWS: 0</Big></Card>
-      <Kinetic f={f} at={b('c1_12', 'hold')} x={150} y={700} size={90} color={K.yellow}>HOLD THAT THOUGHT</Kinetic></Home>)],
-    // ── CHAPTER 2 — WEEK ONE: YOUR HOUSE
-    [ch('c2_01'), () => <Chapter f={f} a={ch('c2_01')} title="WEEK 1" score="PROMISES 2 · LAWS PASSED 0" />],
-    [b('c2_01'), () => (<>{sh('R', 'c2_01', 'c2_04')}
-      <Kinetic f={f} at={b('c2_01', 'rent')} until={b('c2_02')} x={110} y={110} size={150} color={K.red}>THE RENT</Kinetic>
-      {f >= b('c2_02') ? <div style={{position: 'absolute', left: 90, top: 90, width: 1000, background: 'rgba(10,10,14,.78)', padding: '30px 40px', borderRadius: 18}}>
-        <Line f={f} a={b('c2_02', 'ban')}>BAN big corporations owning homes</Line><Line f={f} a={b('c2_02', 'computer')}>BAN rent-setting software</Line><Line f={f} a={b('c2_03', 'fee')} color={K.yellow}>FEE for Airbnb-type companies</Line></div> : null}
-      <Src f={f} at={b('c2_01') + 10}>Newsweek, Aug 2026</Src></>)],
-    [b('c2_04'), () => (<>{sh('B', 'c2_04', 'c2_06')}
-      <Counter f={f} at={b('c2_04', 'two')} dur={20} to={2} suffix="%" size={180} color={K.yellow} style={{position: 'absolute', left: 110, top: 80}} />
-      <Small color="#fff" size={40} style={{position: 'absolute', left: 120, top: 290, opacity: snap(f, b('c2_04', 'two') + 10, 6)}}>of the single-family market = corporate buyers (MSU expert)</Small>
-      <Kinetic f={f} at={b('c2_05', 'one')} x={110} y={360} size={120}>1 OF 50</Kinetic>
-      <Src f={f} at={b('c2_04') + 10}>Marty P. Jordan (Michigan State University) via Newsweek, Aug 2026</Src></>)],
-    [b('c2_06'), () => (<Home f={f} a={b('c2_06')} dave={[[b('c2_06'), 'grin_cheer'], [b('c2_07'), 'neutral_shrug']]} src="21st Century ROAD to Housing Act · NPR, Mar 12 2026">
-      <Card f={f} a={b('c2_06')}><Big size={60} color={K.yellow}>CONGRESS · BIPARTISAN HOUSING BILL</Big><div style={{height: 30}} />
-        <Line f={f} a={b('c2_06', 'three')}>owns 350+ homes?</Line><Line f={f} a={b('c2_06', 'buying')} color={K.red}>→ can't buy more</Line>
-        {f >= b('c2_07') ? <Line f={f} a={b('c2_07')} color={K.yellow}>FRIENDS ON BOTH SIDES?</Line> : null}</Card></Home>)],
-    [b('c2_08'), () => <Tease f={f} a={b('c2_08')} text="MONTH 1: THE CHECKS" />],
-    // ── CHAPTER 3 — MONTH ONE: WHO FIGHTS BACK
-    [ch('c3_01'), () => <Chapter f={f} a={ch('c3_01')} title="MONTH 1" score="PROMISES 3 · LAWS PASSED 0" />],
-    [b('c3_01'), () => (<Home f={f} a={b('c3_01')} dave={[[b('c3_01'), 'smug_point_you']]} src="NBC News, Oct 9 2026">
-      <Counter f={f} at={b('c3_01')} dur={30} to={33000000} prefix="$" size={150} color={K.green ?? '#3ddc84'} style={{position: 'absolute', left: 140, top: 300}} />
-      <ComicBurst f={f} at={b('c3_01', 'cute')} word="CUTE." x={520} y={640} /></Home>)],
-    [b('c3_02'), () => (<>{sh('T', 'c3_02', 'c3_07')}
-      <Counter f={f} at={b('c3_02', 'two')} dur={45} to={205} prefix="$" suffix=" MILLION+" size={110} color={K.yellow} style={{position: 'absolute', left: 90, top: 70}} />
-      <Small color="#fff" size={34} style={{position: 'absolute', left: 100, top: 210, opacity: snap(f, b('c3_02', 'pace'), 6)}}>on pace for the most expensive election in Michigan history</Small>
-      <Kinetic f={f} at={b('c3_03', 'fifty')} x={90} y={290} size={90} color={K.red}>GOP GROUPS: $59.3M</Kinetic>
-      <Kinetic f={f} at={b('c3_04', 'sixty')} x={90} y={410} size={64}>+$65M ADS BOOKED · $42M FOR ROGERS</Kinetic>
-      <Kinetic f={f} at={b('c3_05', 'nine')} x={90} y={510} size={64} color={K.yellow}>AIPAC SUPER PAC → UP TO $9M (REPORTED)</Kinetic>
-      <Kinetic f={f} at={b('c3_06', 'twenty')} x={1150} y={300} size={100} color="#5aa0ff">HIS BACKERS: $23M</Kinetic>
-      <Src f={f} at={b('c3_02') + 10}>{f < b('c3_05') ? 'Bridge Michigan (FEC records), Oct 2 2026' : f < b('c3_06') ? 'New York Times via Newsweek, Oct 21 2026' : 'Bridge Michigan (FEC records), Oct 2 2026'}</Src></>)],
-    [b('c3_07'), () => (<Home f={f} a={b('c3_07')} dave={[[b('c3_07'), 'determined_present']]} src="WLOS / The National News Desk, Oct 16 2026">
-      <Card f={f} a={b('c3_07')} h={380}><Big size={70}>ALEXANDRIA OCASIO-CORTEZ</Big><Counter f={f} at={b('c3_07', 'million')} dur={20} to={1000000} prefix="$" size={120} color={K.yellow} /></Card>
-      <Kinetic f={f} at={b('c3_07', 'fox')} x={150} y={680} size={80} color={K.red}>👀 KEEP AN EYE ON FOX NEWS…</Kinetic></Home>)],
-    [b('c3_08'), () => (<>{sh('V', 'c3_08', 'c4_01')}
-      <Kinetic f={f} at={b('c3_08', 'majority')} x={110} y={90} size={90}>51 TO PASS</Kinetic>
-      <Kinetic f={f} at={b('c3_08', 'sixty')} x={110} y={200} size={90} color={K.yellow}>60 TO BEAT A FILIBUSTER</Kinetic>
-      <Kinetic f={f} at={b('c3_10', 'still')} x={110} y={330} size={130} color={K.red}>LAWS: STILL 0</Kinetic>
-      <Src f={f} at={b('c3_08') + 10}>U.S. Senate Rule XXII · Straight Arrow News explainer</Src></>)],
-    [b('c3_11'), () => <Tease f={f} a={b('c3_11')} text="NOW IT GETS PERSONAL" color={K.red} />],
-    // ── CHAPTER 4 — THE ATTACKS (night, the ring)
-    [ch('c4_01'), () => <Chapter f={f} a={ch('c4_01')} title="MONTH 2" score="THE ATTACKS" />],
-    [b('c4_01'), () => (<>{sh('A', 'c4_01', 'c4_08')}
-      {f >= b('c4_02') && f < b('c4_03') ? <><Kinetic f={f} at={b('c4_02', 'mohammed')} x={110} y={100} size={110} color={K.red}>“MOHAMMED”</Kinetic><Kinetic f={f} at={b('c4_02', 'no')} x={110} y={240} size={90} color={K.yellow}>BROTHERHOOD CLAIM: NO EVIDENCE</Kinetic><Src f={f} at={b('c4_02')}>Truth Social, Oct 8 2026 · Bridge Michigan fact check</Src></> : null}
-      {f >= b('c4_03') && f < b('c4_04') ? <><Quote f={f} a={b('c4_03', 'quoting')} who="President Trump, Port Huron rally, Oct 25 2026">I'm here to keep a jihadist Muslim Brotherhood member from becoming a United States senator.</Quote><Src f={f} at={b('c4_03')}>AP, Oct 25 2026</Src></> : null}
-      {f >= b('c4_04') && f < b('c4_05') ? <><Card f={f} a={b('c4_04')} h={380}><Line f={f} a={b('c4_04', 'loyal')}>EL-SAYED: LOYAL TO THE U.S.</Line><Line f={f} a={b('c4_04', 'disavowed')} color={K.yellow}>DISAVOWED THE MUSLIM BROTHERHOOD</Line></Card><Src f={f} at={b('c4_04')}>AP, Oct 25 2026</Src></> : null}
-      {f >= b('c4_05') && f < b('c4_06') ? <><Quote f={f} a={b('c4_05', 'proud')} who="Abdul El-Sayed, debate vs. Mike Rogers">I'm proud of our Constitution that guarantees all of us the right to pray as we choose to pray.</Quote><Src f={f} at={b('c4_05')}>AP, Oct 25 2026</Src></> : null}
-      {f >= b('c4_06') ? <><Quote f={f} a={b('c4_06', 'donald')} who="Abdul El-Sayed, before the rally">Donald, if you're watching, don't wuss out, man.</Quote><Src f={f} at={b('c4_06')}>AP, Oct 25 2026</Src></> : null}
-      <Kinetic f={f} at={b('c4_07')} x={1150} y={760} size={90} color={K.yellow}>REAL QUOTE.</Kinetic></>)],
-    [b('c4_08'), () => (<Home f={f} a={b('c4_08')} dave={[[b('c4_08'), 'think_think'], [b('c4_09'), 'grin_cheer']]} src="Mediaite">
-      <Quote f={f} a={b('c4_08', 'quoting')} who="Abdul El-Sayed, on his CNN interviews">I get a non-consensual colonoscopy.</Quote></Home>)],
-    [b('c4_10'), () => (<Home f={f} a={b('c4_10')} dave={[[b('c4_10'), 'neutral_shrug']]} src="Times of Israel · The Intercept · Jewish Insider">
-      <Card f={f} a={b('c4_10')}><Big size={64} color={K.yellow}>WHAT HE HAS SAID ON GAZA</Big><div style={{height: 26}} />
-        <Line f={f} a={b('c4_10', 'genocide')}>Israel's government committed genocide</Line><Line f={f} a={b('c4_10', 'unconditional')}>against unconditional military aid</Line></Card></Home>)],
-    [b('c4_11'), () => (<Home f={f} a={b('c4_11')} dave={[[b('c4_11'), 'neutral_shrug']]}>
-      <Card f={f} a={b('c4_11')} h={420}><div style={{display: 'flex', gap: 80}}><div><Small size={40}>CRITICS</Small><Big size={90} color={K.red}>“EXTREME”</Big></div><div style={{opacity: snap(f, b('c4_11', 'supporters'), 6)}}><Small size={40}>SUPPORTERS</Small><Big size={90} color="#5aa0ff">“HONEST”</Big></div></div></Card></Home>)],
-    [b('c4_12'), () => (<Home f={f} a={b('c4_12')} dave={[[b('c4_12'), 'neutral_shrug']]}>
-      <Card f={f} a={b('c4_12')} h={500}><Line f={f} a={b('c4_12', 'money')} color={K.red}>MONEY ✗</Line><Line f={f} a={b('c4_12', 'math')} color={K.red}>MATH ✗</Line><Line f={f} a={b('c4_12', 'half')} color={K.red}>HALF THE NEWS ✗</Line></Card></Home>)],
-    [b('c4_13'), () => <Tease f={f} a={b('c4_13')} text="ONE JOB HE ALREADY DID" />],
-    // ── CHAPTER 5 — WHAT HE ACTUALLY DID BEFORE (comeback)
-    [ch('c5_01'), () => <Chapter f={f} a={ch('c5_01')} title="THE TEST" score="CAN HE RUN ANYTHING?" />],
-    [b('c5_01'), () => (<Home f={f} a={b('c5_01')} dave={[[b('c5_01'), 'think_think'], [b('c5_02'), 'shock_panic']]} src="Washington Examiner">
-      <Card f={f} a={b('c5_01')} h={420}><Small size={36}>WASHINGTON EXAMINER</Small><div style={{height: 16}} /><Big size={64}>Jesse Watters says “I actually like” Abdul el Sayed after interviewing him</Big></Card>
-      <ComicBurst f={f} at={b('c5_02')} word="EVEN FOX." x={560} y={760} /></Home>)],
-    [b('c5_03'), () => (<>{sh('D', 'c5_03', 'c5_07')}
-      <Kinetic f={f} at={b('c5_03', '2015')} until={b('c5_04')} x={110} y={100} size={110} color={K.yellow}>DETROIT · 2015</Kinetic>
-      <Kinetic f={f} at={b('c5_04', 'doubled')} until={b('c5_05')} x={110} y={100} size={110}>DEPARTMENT × 2</Kinetic>
-      <Counter f={f} at={b('c5_05', 'ninety')} dur={30} to={94} suffix=" SCHOOLS TESTED" size={100} color="#5aa0ff" style={{position: 'absolute', left: 110, top: 220, opacity: f >= b('c5_05') ? 1 : 0}} />
-      <Kinetic f={f} at={b('c5_05', 'nineteen')} x={110} y={360} size={90} color={K.red}>19 · TOO MUCH LEAD OR COPPER</Kinetic>
-      <Src f={f} at={b('c5_03') + 10}>{f < b('c5_05') ? 'Bridge Michigan, Sep 25 2026 · Wikipedia' : 'Michigan Public, Aug 30 2016'}</Src></>)],
-    [b('c5_07'), () => (<Home f={f} a={b('c5_07')} dave={[[b('c5_07'), 'think_think']]} src="Washington Free Beacon, Jul 29 2026">
-      <Card f={f} a={b('c5_07')}><Line f={f} a={b('c5_07', 'campaign')}>CAMPAIGN: “removed the lead”</Line><Line f={f} a={b('c5_07', 'temporary')} color={K.red}>CHECK: fixes were temporary</Line><Line f={f} a={b('c5_07', 'honest')} color={K.yellow}>HONEST VERSION: his team FOUND it</Line></Card></Home>)],
-    [b('c5_08'), () => (<Home f={f} a={b('c5_08')} dave={[[b('c5_08'), 'grin_cheer']]} src="Bridge Michigan, Sep 25 2026 (Vision to Learn)">
-      <Counter f={f} at={b('c5_08', 'five')} dur={30} to={5000} suffix="+" size={190} color={K.yellow} style={{position: 'absolute', left: 140, top: 300}} />
-      <Small color="#fff" size={50} style={{position: 'absolute', left: 150, top: 520}}>free glasses for Detroit school kids</Small></Home>)],
-    [b('c5_09'), () => (<Home f={f} a={b('c5_09')} dave={[[b('c5_09'), 'determined_present']]} src="Wikipedia (S1)">
-      <Card f={f} a={b('c5_09')} h={400}><Line f={f} a={b('c5_09', 'rhodes')}>RHODES SCHOLAR</Line><Line f={f} a={b('c5_09', 'columbia')} color={K.yellow}>MD · COLUMBIA</Line></Card></Home>)],
-    [b('c5_10'), () => (<Home f={f} a={b('c5_10')} dave={[[b('c5_10'), 'smug_point_you']]} src="Abrams Press 2020 · Oxford University Press 2021">
-      <Books f={f} a={b('c5_10', 'healing')} /></Home>)],
-    [b('c5_11'), () => (<Home f={f} a={b('c5_11')} dave={[[b('c5_11'), 'grin_cheer'], [b('c5_12'), 'neutral_shrug']]} src="American Public Health Association">
-      <Card f={f} a={b('c5_11')} h={360}><Small size={40}>PODCAST HOST</Small><Big size={110} color={K.yellow}>AMERICA DISSECTED</Big></Card>
-      <ComicBurst f={f} at={b('c5_12', 'expired')} word="EXPIRED." x={560} y={720} /></Home>)],
-    [b('c5_13'), () => (<Home f={f} a={b('c5_13')} dave={[[b('c5_13'), 'neutral_shrug']]} src="Bridge Michigan, Aug 2018 · Wikipedia">
-      <Card f={f} a={b('c5_13')} h={420}><Line f={f} a={b('c5_13', '2017')}>2017: RAN FOR GOVERNOR</Line><Line f={f} a={b('c5_13', 'lost')} color={K.red}>2018: LOST THE PRIMARY TO GRETCHEN WHITMER</Line></Card></Home>)],
-    [b('c5_14'), () => <Tease f={f} a={b('c5_14')} text="THE ANSWER FROM THE START" />],
-    // ── CHAPTER 6 — SO WHAT CHANGES FOR YOU
-    [ch('c6_01'), () => <Chapter f={f} a={ch('c6_01')} title="THE DEAL" score="3 CHANGES · 3 WALLS" />],
-    [b('c6_01'), () => (<Home f={f} a={b('c6_01')} dave={[[b('c6_01'), 'determined_present']]}><Kinetic f={f} at={b('c6_01')} x={150} y={380} size={130} color={K.yellow}>HERE IS THE DEAL</Kinetic></Home>)],
-    [b('c6_02'), () => (<>{sh('W', 'c6_02', 'c6_05')}
-      {f < b('c6_03') ? <div style={{position: 'absolute', left: 90, top: 90, background: 'rgba(10,10,14,.78)', padding: '30px 40px', borderRadius: 18}}>
-        <Line f={f} a={b('c6_02', 'health')}>1 · insurance from the government</Line><Line f={f} a={b('c6_02', 'taxes')}>2 · taxes AND premiums change</Line><Line f={f} a={b('c6_02', 'street')}>3 · big companies can't buy your street</Line></div> : null}
-      <Kinetic f={f} at={b('c6_03', 'who')} until={b('c6_03', 'not')} x={110} y={110} size={110} color={K.yellow}>WHO FIGHTS HARDEST?</Kinetic>
-      <Kinetic f={f} at={b('c6_03', 'not')} until={b('c6_04')} x={110} y={110} size={110}>NOT ONE PERSON →</Kinetic>
-      <Kinetic f={f} at={b('c6_04', 'absolutely')} until={b('c6_04', 'nothing')} x={110} y={110} size={140} color={K.yellow}>ABSOLUTELY…</Kinetic>
-      <Kinetic f={f} at={b('c6_04', 'nothing')} until={b('c6_04', 'pen')} x={110} y={110} size={110}>NOTHING (IN MONTH 1)</Kinetic>
-      <Kinetic f={f} at={b('c6_04', 'pen')} x={110} y={110} size={90} color={K.yellow}>PRESIDENT = PEN · CONGRESS = PAPER</Kinetic>
-      <Src f={f} at={b('c6_02') + 10}>Bridge Michigan · Newsweek · Senate Rule XXII</Src></>)],
-    [b('c6_05'), () => (<Home f={f} a={b('c6_05')} dave={[[b('c6_05'), 'think_think'], [b('c6_06'), 'determined_present'], [b('c6_07'), 'determined_point_l']]} src="AP, Oct 25 2026">
-      <Card f={f} a={b('c6_05')}><Line f={f} a={b('c6_05', 'republicans')}>GOP: no Michigan Senate win in 30+ years</Line><Line f={f} a={b('c6_05', 'rogers')}>vs MIKE ROGERS · former congressman</Line>
-        {f >= b('c6_06') ? <Line f={f} a={b('c6_06', 'first')} color={K.yellow}>IF HE WINS: FIRST MUSLIM SENATOR</Line> : null}
-        {f >= b('c6_07') ? <Line f={f} a={b('c6_07', 'november')} color={K.red}>NOVEMBER 3</Line> : null}</Card></Home>)],
-    [b('c6_08'), () => (<Home f={f} a={b('c6_08')} dave={[[b('c6_08'), 'smug_point_you'], [b('c6_09'), 'grin_cheer']]}>
-      {f < b('c6_09') ? <><Kinetic f={f} at={b('c6_08', 'keep')} x={140} y={300} size={110} color="#5aa0ff">KEEP IT?</Kinetic><Kinetic f={f} at={b('c6_08', 'throw')} x={140} y={440} size={110} color={K.red}>THROW IT OUT?</Kinetic><Kinetic f={f} at={b('c6_08', 'comments')} x={140} y={600} size={80} color={K.yellow}>↓ COMMENTS</Kinetic></>
-        : <Kinetic f={f} at={b('c6_09')} x={140} y={380} size={120} color={K.yellow}>MONEY TALKS.</Kinetic>}</Home>)],
-  ];
+  const S = starts();
+  const c1 = at('c1_01');
+  if (f < c1)
+    return (
+      <AbsoluteFill style={{background: '#000'}}>
+        <Sequence from={c1 - GAP} durationInFrames={GAP}>
+          <Chapter title="BUT…" n="G" t={1} />
+        </Sequence>
+      </AbsoluteFill>
+    );
   let i = 0;
-  while (i + 1 < S.length && f >= S[i + 1][0]) i++;
-  return <AbsoluteFill style={{background: '#000'}}>{S[i][1]()}</AbsoluteFill>;
+  while (i + 1 < S.length && f >= S[i + 1]) i++;
+  const e = ENTRIES[i];
+  const a = S[i];
+  const next = i + 1 < S.length ? S[i + 1] : end;
+  return (
+    <AbsoluteFill style={{background: '#000'}}>
+      <Sequence from={a} durationInFrames={Math.max(1, next - a)}>
+        <Render v={e.v} f0={a} />
+      </Sequence>
+      {e.ov ? e.ov(f, a) : null}
+      {e.src ? <Src f={f} at={a + 3}>{e.src}</Src> : null}
+      {FLASHY.has(e.v.k) ? <Flash f={f} at={a} /> : null}
+    </AbsoluteFill>
+  );
 };
 
 export const bodyMusic = (end: number): MSeg[] => {
   const b = (id: string) => at(id);
   return [
-    {src: 'life_of_riley', from: b('c1_01') - GAP, to: b('c1_07') - 6},
-    {src: 'thinking_music', from: b('c1_07'), to: b('c1_12') - 4},
-    {src: 'monkeys_spinning_monkeys', from: b('c2_01') - GAP, to: b('c2_07') + 40},
-    {src: 'scheming_weasel_faster', from: b('c3_01') - GAP, to: b('c3_06') - 4},
-    {src: 'hiding_your_reality', from: b('c3_06') + 30, to: b('c3_10')},
-    {src: 'darkest_child', from: b('c4_01') - GAP, to: b('c4_06') - 4},
-    {src: 'comic_plodding', from: b('c4_06'), to: b('c4_10') - 6},
-    {src: 'darkest_child', from: b('c4_10'), to: b('c4_12') + 60, off: 30 * 40},
-    {src: 'pixel_peeker_polka_faster', from: b('c5_01') - GAP, to: b('c5_03') - 4},
-    {src: 'life_of_riley', from: b('c5_03'), to: b('c5_13') - 4, off: 30 * 5},
-    {src: 'unanswered_questions', from: b('c6_01') - GAP, to: b('c6_08') - 4},
-    {src: 'monkeys_spinning_monkeys', from: b('c6_08'), to: end, off: 30 * 20},
+    {src: 'volatile_reaction', from: b('c1_01') - GAP, to: b('c1_04') - 4},
+    {src: 'comic_plodding', from: b('c1_04'), to: b('c2_01') - GAP - 4},
+    {src: 'life_of_riley', from: b('c2_01') - GAP, to: b('c2_06') - 4},
+    {src: 'thinking_music', from: b('c2_07'), to: b('c2_10') - 4},
+    {src: 'monkeys_spinning_monkeys', from: b('c3_01') - GAP, to: b('c3_07') + 20},
+    {src: 'scheming_weasel_faster', from: b('c4_01') - GAP, to: b('c4_05') - 4},
+    {src: 'hiding_your_reality', from: b('c4_05') + 20, to: b('c4_09')},
+    {src: 'darkest_child', from: b('c5_01') - GAP, to: b('c5_06') - 4},
+    {src: 'comic_plodding', from: b('c5_06'), to: b('c5_09') - 4, off: 30 * 20},
+    {src: 'darkest_child', from: b('c5_09'), to: b('c6_01') - GAP, off: 30 * 40},
+    {src: 'pixel_peeker_polka_faster', from: b('c6_01') - GAP, to: b('c6_06')},
+    {src: 'life_of_riley', from: b('c6_06'), to: b('c6_12'), off: 30 * 15},
+    {src: 'investigations', from: b('c6_12'), to: b('c7_01') - GAP},
+    {src: 'unanswered_questions', from: b('c7_01') - GAP, to: b('c7_05') - 4},
+    {src: 'monkeys_spinning_monkeys', from: b('c7_05'), to: end, off: 30 * 20},
   ];
 };
 
 export const bodyCues = (): Cue[] => {
-  const ids = ['c1_', 'c2_', 'c3_', 'c4_', 'c5_', 'c6_'];
-  const cues: Cue[] = [];
-  const b = (id: string, w?: string) => at(id, w);
-  ids.forEach((c) => cues.push({at: b(`${c}01`) - GAP, src: 'ea1/k_boom', v: 0.6}, {at: b(`${c}01`) - GAP + 4, src: 'ea1/gavel', v: 0.5}));
-  // a whoosh / pop on every new card or line
-  const all = ['c1_01', 'c1_02', 'c1_03', 'c1_04', 'c1_05', 'c1_06', 'c1_07', 'c1_08', 'c1_09', 'c1_10', 'c1_11', 'c1_12', 'c2_01', 'c2_02', 'c2_03', 'c2_04', 'c2_05', 'c2_06', 'c2_07', 'c3_01', 'c3_02', 'c3_03', 'c3_04', 'c3_05', 'c3_06', 'c3_07', 'c3_08', 'c3_09', 'c3_10', 'c4_01', 'c4_02', 'c4_03', 'c4_04', 'c4_05', 'c4_06', 'c4_07', 'c4_08', 'c4_09', 'c4_10', 'c4_11', 'c4_12', 'c5_01', 'c5_02', 'c5_03', 'c5_04', 'c5_05', 'c5_06', 'c5_07', 'c5_08', 'c5_09', 'c5_10', 'c5_11', 'c5_12', 'c5_13', 'c6_01', 'c6_02', 'c6_03', 'c6_04', 'c6_05', 'c6_06', 'c6_07', 'c6_08', 'c6_09'];
-  all.forEach((id, i) => cues.push({at: b(id), src: i % 3 === 0 ? 'ea1/k_flash' : i % 3 === 1 ? 'ea1/reply_pop' : 'ea1/photo_slide', v: 0.45}));
-  const extra: [string, string | undefined, string, number][] = [
-    ['c1_01', 'medicare', 'ea1/k_slam', 0.5], ['c1_02', 'washington', 'ea1/chair_whoosh', 0.6], ['c1_04', 'thirty', 'ea1/roll33', 0.6], ['c1_05', 'double', 'ea1/k_boom', 0.6],
-    ['c1_06', 'not', 'ea1/crickets', 0.6], ['c1_07', 'rich', 'ea1/check1', 0.5], ['c1_07', 'hopes', 'ea1/check2', 0.5], ['c1_08', 'middle', 'ea1/claim_buzz', 0.5],
-    ['c1_10', undefined, 'ea1/deflate', 0.4], ['c1_11', 'likely', 'ea1/stamp_un', 0.5], ['c1_12', 'zero', 'ea1/fail', 0.5],
-    ['c2_01', 'rent', 'ea1/notif', 0.5], ['c2_02', 'ban', 'ea1/stamp_un', 0.5], ['c2_02', 'computer', 'ea1/name_glitch', 0.5], ['c2_04', 'two', 'ea1/vote_tick', 0.6],
-    ['c2_05', 'rude', 'ea1/crickets', 0.6], ['c2_06', 'three', 'ea1/gavel', 0.5], ['c3_01', 'cute', 'ea1/k_point', 0.6], ['c3_02', 'two', 'ea1/roll33', 0.6],
-    ['c3_03', 'fifty', 'ea1/cash_rain', 0.5], ['c3_05', 'nine', 'ea1/k_slam', 0.5], ['c3_06', 'twenty', 'ea1/deflate', 0.5], ['c3_07', 'million', 'ea1/cash_rain', 0.5],
-    ['c3_08', 'sixty', 'ea1/k_riser', 0.5], ['c3_10', 'still', 'ea1/fail', 0.6], ['c4_02', 'mohammed', 'ea1/name_glitch', 0.5], ['c4_02', 'no', 'ea1/no_evidence', 0.5],
-    ['c4_03', 'quoting', 'ea1/k_boom', 0.6], ['c4_07', undefined, 'ea1/k_point', 0.5], ['c4_09', undefined, 'ea1/crickets', 0.5], ['c4_12', 'money', 'ea1/claim_buzz', 0.4],
-    ['c4_12', 'math', 'ea1/claim_buzz', 0.4], ['c4_12', 'half', 'ea1/claim_buzz', 0.4], ['c5_02', undefined, 'ea1/k_boom', 0.6], ['c5_05', 'ninety', 'ea1/roll33', 0.6],
-    ['c5_05', 'nineteen', 'ea1/claim_buzz', 0.5], ['c5_06', 'fridge', 'ea1/crickets', 0.5], ['c5_08', 'five', 'ea1/roll33', 0.6], ['c5_10', 'healing', 'ea1/co_book', 0.8],
-    ['c5_12', 'expired', 'ea1/fail', 0.5], ['c5_13', 'lost', 'ea1/deflate', 0.5], ['c6_03', 'not', 'ea1/k_boom', 0.6], ['c6_03', 'sixty', 'ea1/k_slam', 0.6], ['c6_03', 'hundreds', 'ea1/k_slam', 0.6], ['c2_08', undefined, 'ea1/k_riser', 0.5], ['c3_11', undefined, 'ea1/heart', 0.6], ['c4_13', undefined, 'ea1/k_riser', 0.5], ['c5_14', undefined, 'ea1/end_riser', 0.5],
-    ['c6_03', 'country', 'ea1/k_slam', 0.6], ['c6_04', 'nothing', 'ea1/crickets', 0.6], ['c6_06', 'first', 'ea1/check1', 0.5], ['c6_07', 'november', 'ea1/k_riser', 0.5],
-  ];
-  extra.forEach(([id, w, src, v]) => cues.push({at: b(id, w), src, v}));
+  const S = starts();
+  const cues: Cue[] = [{at: at('c1_01') - GAP, src: 'ea1/k_boom', v: 0.55}];
+  ENTRIES.forEach((e, i) => {
+    cues.push({at: S[i], src: i % 3 === 0 ? 'ea1/k_flash' : i % 3 === 1 ? 'ea1/reply_pop' : 'ea1/photo_slide', v: 0.4});
+    if (e.v.k === 'macro') cues.push({at: S[i], src: `ea1/co_flash${(i % 3) + 1}`, v: 0.6});
+    if (e.v.k === 'chapter') cues.push({at: S[i], src: 'ea1/k_boom', v: 0.55});
+    if (e.sfx) cues.push({at: S[i] + 2, src: e.sfx, v: 0.55});
+  });
   return cues;
 };
