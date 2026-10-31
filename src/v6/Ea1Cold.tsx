@@ -55,35 +55,39 @@ export const MONT_STARTS = MACROS.reduce<number[]>((a, m, i) => [...a, i ? a[i -
 const MONT_LEN = MACROS.reduce((a, m) => a + m.len, 0);
 
 const GRAIN = `url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='400' height='400'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='3' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 0.35 0 0 0 0 0.33 0 0 0 0 0.3 0 0 0 0.55 0'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>")`;
-const MacroLine: React.FC<{text: string; f: number; blur: number; size: number}> = ({text, f, blur, size}) => {
+// a line with the name: left part right-aligned | NAME | right part left-aligned → the name sits exactly mid-frame
+const NameLine: React.FC<{text: string; f: number; size: number}> = ({text, f, size}) => {
   const k = Math.min(1, Math.max(0, (f - 1) / 3)); // the marker wipe is fast: 3 frames
-  const parts = text.split(/\[|\]/);
+  const [a, name, b] = text.split(/\[|\]/);
+  const side: React.CSSProperties = {flex: 1, whiteSpace: 'nowrap', overflow: 'hidden'};
   return (
-    <div style={{fontSize: size, lineHeight: 1.32, whiteSpace: 'nowrap', textAlign: 'center', filter: blur ? `blur(${blur}px)` : undefined, color: '#1d1b18', textShadow: '0 0 1.2px rgba(20,18,15,.7)'}}>
-      {parts.map((t, i) =>
-        i % 2 ? (
-          <span key={i} style={{backgroundImage: 'linear-gradient(#f5c400,#f5c400)', backgroundRepeat: 'no-repeat', backgroundSize: `${k * 100}% 82%`, backgroundPosition: '0 62%', padding: '0 8px', fontWeight: 700}}>{t}</span>
-        ) : (
-          <span key={i}>{t}</span>
-        ),
-      )}
+    <div style={{display: 'flex', width: 3400, fontSize: size, lineHeight: 1.3, color: '#1d1b18', textShadow: '0 0 1.4px rgba(20,18,15,.75)'}}>
+      <div style={{...side, textAlign: 'right'}}>{a}</div>
+      <div style={{whiteSpace: 'nowrap', fontWeight: 700, padding: '0 10px', backgroundImage: 'linear-gradient(#f5c400,#f5c400)', backgroundRepeat: 'no-repeat', backgroundSize: `${k * 100}% 80%`, backgroundPosition: '0 62%'}}>{name}</div>
+      <div style={{...side, textAlign: 'left'}}>{b}</div>
     </div>
   );
 };
-const MacroShot: React.FC<{m: Macro}> = ({m}) => {
+const PlainLine: React.FC<{text: string; blur: number; size: number}> = ({text, blur, size}) => (
+  <div style={{width: 3400, textAlign: 'center', whiteSpace: 'nowrap', fontSize: size, lineHeight: 1.3, color: '#1d1b18', filter: `blur(${blur}px)`}}>{text}</div>
+);
+const MacroShot: React.FC<{m: Macro; i: number}> = ({m, i}) => {
   const f = useCurrentFrame();
+  const far = (n: number) => MACROS[(i + n) % MACROS.length].lines[1].replace(/\[|\]/g, ''); // other verbatim lines, out of focus
+  const S = 178;
   return (
     <AbsoluteFill style={{background: '#e9e4d8', overflow: 'hidden'}}>
-      <AbsoluteFill style={{perspective: 1400}}>
-        <AbsoluteFill style={{alignItems: 'center', justifyContent: 'center', fontFamily: m.font, transform: `rotateX(14deg) rotateZ(${m.tilt}deg) scale(${1.0 + 0.006 * f}) translateX(${-1.2 * f}px)`}}>
-          <MacroLine text={m.lines[0]} f={f} blur={4} size={128} />
-          <MacroLine text={m.lines[1]} f={f} blur={0} size={128} />
-          <MacroLine text={m.lines[2]} f={f} blur={4.5} size={128} />
+      <AbsoluteFill style={{perspective: 1300}}>
+        <AbsoluteFill style={{alignItems: 'center', justifyContent: 'center', fontFamily: 'Georgia, "DejaVu Serif", serif', transform: `rotateX(16deg) rotateZ(${m.tilt}deg) scale(${1.0 + 0.007 * f}) translateX(${-1.5 * f}px)`}}>
+          <PlainLine text={far(3)} blur={12} size={S} />
+          <PlainLine text={m.lines[0] || far(5)} blur={6} size={S} />
+          <NameLine text={m.lines[1]} f={f} size={S} />
+          <PlainLine text={m.lines[2] || far(7)} blur={6.5} size={S} />
+          <PlainLine text={far(4)} blur={13} size={S} />
         </AbsoluteFill>
       </AbsoluteFill>
-      <AbsoluteFill style={{backgroundImage: GRAIN, mixBlendMode: 'multiply', opacity: 0.55}} />
-      <AbsoluteFill style={{background: 'linear-gradient(rgba(233,228,216,.75), transparent 28%, transparent 72%, rgba(233,228,216,.8))'}} />
-      <AbsoluteFill style={{boxShadow: 'inset 0 0 220px rgba(60,50,35,.45)'}} />
+      <AbsoluteFill style={{backgroundImage: GRAIN, mixBlendMode: 'multiply', opacity: 0.5}} />
+      <AbsoluteFill style={{boxShadow: 'inset 0 0 260px rgba(60,50,35,.5)'}} />
       {f === 0 ? <AbsoluteFill style={{background: '#fff', opacity: 0.45}} /> : null}
     </AbsoluteFill>
   );
@@ -93,7 +97,7 @@ export const Montage: React.FC = () => (
   <>
     {MACROS.map((m, i) => (
       <Sequence key={i} from={MONT_STARTS[i]} durationInFrames={m.len}>
-        <MacroShot m={m} />
+        <MacroShot m={m} i={i} />
       </Sequence>
     ))}
   </>
