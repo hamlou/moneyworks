@@ -1,9 +1,11 @@
 name: v6split
-run-name: v6 split ${{ inputs.comp }} x${{ inputs.parts }}
+run-name: v6 split
 
 # Same as v6demo but split across machines (owner 31 Oct 2026: one machine = ~1 fps → 10-min video took 5+ h).
 # plan → N muted video parts (frame ranges) + 1 audio-only job → join (ffmpeg concat, mux audio) → QA sheets.
 on:
+  push:
+    paths: ['pipeline/split/RUN']  # contents: "<comp> <parts>" (workflow_dispatch only works from the default branch)
   workflow_dispatch:
     inputs:
       comp:
@@ -18,6 +20,7 @@ jobs:
     runs-on: ubuntu-latest
     outputs:
       ranges: ${{ steps.r.outputs.ranges }}
+      comp: ${{ steps.r.outputs.comp }}
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
@@ -25,9 +28,12 @@ jobs:
       - run: npm ci --no-audit --no-fund
       - id: r
         run: |
-          N=$(npx remotion compositions src/v6/index.ts --quiet 2>/dev/null | awk -v c="${{ inputs.comp }}" '$1==c{print $4}')
+          C="${{ inputs.comp }}"; P="${{ inputs.parts }}"
+          [ -z "$C" ] && C=$(awk '{print $1}' pipeline/split/RUN) && P=$(awk '{print $2}' pipeline/split/RUN)
+          echo "comp=$C" >> $GITHUB_OUTPUT
+          N=$(npx remotion compositions src/v6/index.ts --quiet 2>/dev/null | awk -v c="$C" '$1==c{print $4}')
           echo "frames=$N"
-          node -e "const n=+process.argv[1],p=+process.argv[2],s=Math.ceil(n/p),r=[];for(let a=0;a<n;a+=s)r.push(a+'-'+Math.min(n-1,a+s-1));console.log('ranges='+JSON.stringify(r))" "$N" "${{ inputs.parts }}" >> $GITHUB_OUTPUT
+          node -e "const n=+process.argv[1],p=+process.argv[2],s=Math.ceil(n/p),r=[];for(let a=0;a<n;a+=s)r.push(a+'-'+Math.min(n-1,a+s-1));console.log('ranges='+JSON.stringify(r))" "$N" "${P:-16}" >> $GITHUB_OUTPUT
           cat $GITHUB_OUTPUT
 
   video:
@@ -44,7 +50,7 @@ jobs:
         with: {node-version: 22, cache: npm}
       - run: npm ci --no-audit --no-fund
       - run: >
-          npx remotion render src/v6/index.ts ${{ inputs.comp }} out/part.mp4 --frames=${{ matrix.range }}
+          npx remotion render src/v6/index.ts ${{ needs.plan.outputs.comp }} out/part.mp4 --frames=${{ matrix.range }}
           --muted --gl=swangle --codec=h264 --crf=18 --pixel-format=yuv420p --concurrency=100% --log=warn
       - id: n
         run: echo "name=$(printf '%06d' $(echo '${{ matrix.range }}' | cut -d- -f1))" >> $GITHUB_OUTPUT
@@ -59,12 +65,12 @@ jobs:
       - uses: actions/setup-node@v4
         with: {node-version: 22, cache: npm}
       - run: npm ci --no-audit --no-fund
-      - run: npx remotion render src/v6/index.ts ${{ inputs.comp }} out/audio.wav --codec=wav --log=warn
+      - run: npx remotion render src/v6/index.ts ${{ needs.plan.outputs.comp }} out/audio.wav --codec=wav --log=warn
       - uses: actions/upload-artifact@v4
         with: {name: audio, path: out/audio.wav, retention-days: 2}
 
   join:
-    needs: [video, audio]
+    needs: [plan, video, audio]
     runs-on: ubuntu-latest
     steps:
       - run: sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg >/dev/null
@@ -77,8 +83,8 @@ jobs:
           for d in $(ls -d parts/part-* | sort); do echo "file '$PWD/$d/part.mp4'"; done > list.txt
           cat list.txt
           ffmpeg -v error -f concat -safe 0 -i list.txt -c copy video.mp4
-          ffmpeg -v error -i video.mp4 -i audio.wav -c:v copy -c:a aac -b:a 192k -shortest out/${{ inputs.comp }}.mp4
-          ffmpeg -hide_banner -i out/${{ inputs.comp }}.mp4 2>&1 | grep Duration
-          ffmpeg -v error -i out/${{ inputs.comp }}.mp4 -vf "fps=1,scale=320:-1,tile=10x6" out/sheets/s%02d.jpg
+          ffmpeg -v error -i video.mp4 -i audio.wav -c:v copy -c:a aac -b:a 192k -shortest out/${{ needs.plan.outputs.comp }}.mp4
+          ffmpeg -hide_banner -i out/${{ needs.plan.outputs.comp }}.mp4 2>&1 | grep Duration
+          ffmpeg -v error -i out/${{ needs.plan.outputs.comp }}.mp4 -vf "fps=1,scale=320:-1,tile=10x6" out/sheets/s%02d.jpg
       - uses: actions/upload-artifact@v4
-        with: {name: '${{ inputs.comp }}', path: out, retention-days: 7}
+        with: {name: '${{ needs.plan.outputs.comp }}', path: out, retention-days: 7}
