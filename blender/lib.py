@@ -29,7 +29,7 @@ def setup(argv):
     sc.cycles.denoiser = "OPENIMAGEDENOISE"
     sc.cycles.max_bounces = 4  # speed (29 Oct): 4 bounces + adaptive sampling + persistent data ≈ 2× faster per frame
     sc.cycles.diffuse_bounces, sc.cycles.glossy_bounces, sc.cycles.transmission_bounces = 2, 2, 4
-    sc.cycles.use_adaptive_sampling, sc.cycles.adaptive_threshold = True, 0.04
+    sc.cycles.use_adaptive_sampling, sc.cycles.adaptive_threshold = True, 0.05
     sc.render.use_persistent_data = True
     sc.render.resolution_x, sc.render.resolution_y = K.W, K.H
     sc.render.fps = 24

@@ -39,7 +39,7 @@ jobs:
           echo "shot=$SHOT" >> $GITHUB_OUTPUT; echo "mode=$MODE" >> $GITHUB_OUTPUT; echo "samples=$SAMPLES" >> $GITHUB_OUTPUT
           if [ -f blender/$SHOT.chunks ]; then
             echo "chunks=$(cat blender/$SHOT.chunks)" >> $GITHUB_OUTPUT
-            [ "$MODE" = "full" ] && echo 'res=1920x1080' >> $GITHUB_OUTPUT || echo 'res=960x540' >> $GITHUB_OUTPUT
+            case "$MODE" in full) R=1920x1080;; fast) R=1600x900;; *) R=960x540;; esac; echo "res=$R" >> $GITHUB_OUTPUT  # fast = 1600x900, upscaled to 1080p in the mp4 step (owner 31 Oct: ~2.5x quicker)
           elif [ "$MODE" = "full" ]; then
             echo 'chunks=["1-30","31-60","61-90","91-120"]' >> $GITHUB_OUTPUT; echo 'res=1920x1080' >> $GITHUB_OUTPUT
           else
@@ -107,10 +107,10 @@ jobs:
           mkdir -p out
           ls frames | head
           # animated shots (anim.py): frames named <SHOT>_<n>.jpg → one mp4 per shot, then all shots joined
-          if [ "${{ needs.plan.outputs.mode }}" = "full" ] && ls frames/[A-Z]_*.jpg >/dev/null 2>&1; then
+          if [ "${{ needs.plan.outputs.mode }}" != "preview" ] && ls frames/[A-Z]_*.jpg >/dev/null 2>&1; then
             : > list.txt
             for p in $(ls frames | grep -oE '^[A-Z]_' | sort -u | tr -d _); do
-              ffmpeg -v error -framerate 24 -start_number 1 -i frames/${p}_%04d.jpg -vf "vignette=PI/5,noise=alls=5:allf=t" -c:v libx264 -crf 21 -pix_fmt yuv420p out/shot_$p.mp4
+              ffmpeg -v error -framerate 24 -start_number 1 -i frames/${p}_%04d.jpg -vf "scale=1920:1080:flags=lanczos,vignette=PI/5,noise=alls=5:allf=t" -c:v libx264 -crf 21 -pix_fmt yuv420p out/shot_$p.mp4
               echo "file 'out/shot_$p.mp4'" >> list.txt
             done
             ffmpeg -v error -f concat -safe 0 -i list.txt -c copy out/${{ needs.plan.outputs.shot }}.mp4
