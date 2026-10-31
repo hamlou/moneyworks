@@ -299,27 +299,27 @@
    "recipe": "flashcam",
    "params": {
     "pitch": 1.0,
-    "whine": 0.32
+    "whine": 0.0
    },
-   "cue": "cold open: Hollywood press-camera on every name cut"
+   "cue": "cold open: press-camera shot only (owner: no recharge whine)"
   },
   {
    "name": "co_flash2",
    "recipe": "flashcam",
    "params": {
     "pitch": 1.08,
-    "whine": 0.28
+    "whine": 0.0
    },
-   "cue": "cold open: Hollywood press-camera on every name cut"
+   "cue": "cold open: press-camera shot only (owner: no recharge whine)"
   },
   {
    "name": "co_flash3",
    "recipe": "flashcam",
    "params": {
     "pitch": 0.94,
-    "whine": 0.3
+    "whine": 0.0
    },
-   "cue": "cold open: Hollywood press-camera on every name cut"
+   "cue": "cold open: press-camera shot only (owner: no recharge whine)"
   }
  ]
 }
