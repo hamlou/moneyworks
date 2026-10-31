@@ -81,3 +81,46 @@ for i, (o, h) in enumerate(NEWS):
 for i, b in enumerate(BOOKS):
     book(i, *b)
 print("ok", len(NEWS), "papers", len(BOOKS), "books")
+
+
+def receipt():  # Ch1 price: one receipt segment (tiles along the floor)
+    im = Image.new("RGB", (512, 420), (246, 244, 236))
+    d = ImageDraw.Draw(im)
+    r = random.Random(3)
+    for y in range(20, 400, 34):
+        d.text((24, y), r.choice(["DOCTOR VISIT", "HOSPITAL", "PRESCRIPTIONS", "SURGERY", "DENTAL", "VISION", "CHECKUP"]), font=font("consola.ttf", 26), fill=(60, 60, 60))
+        d.text((488, y), "$ ...,...,...,...", font=font("consola.ttf", 26), fill=(60, 60, 60), anchor="ra")
+    im.save(os.path.join(OUT, "receipt.png"))
+    im = Image.new("RGB", (512, 420), (246, 244, 236))
+    d = ImageDraw.Draw(im)
+    d.text((256, 120), "TOTAL", font=font("consolab.ttf", 70), fill=INK, anchor="mm")
+    d.text((256, 250), "$34 TRILLION", font=font("consolab.ttf", 64), fill=(190, 30, 30), anchor="mm")
+    d.text((256, 340), "OVER 10 YEARS · Urban Institute", font=font("consola.ttf", 24), fill=(80, 80, 80), anchor="mm")
+    im.save(os.path.join(OUT, "receipt_total.png"))
+
+
+def sold():
+    im = Image.new("RGB", (512, 300), (200, 30, 30))
+    d = ImageDraw.Draw(im)
+    d.rectangle((12, 12, 500, 288), outline=(255, 255, 255), width=10)
+    d.text((256, 150), "SOLD", font=font("impact.ttf", 170), fill=(255, 255, 255), anchor="mm")
+    im.save(os.path.join(OUT, "sold.png"))
+
+
+receipt()
+sold()
+
+
+def walls():  # Ch6: the three walls (S12, S14)
+    for name, txt, rgb in (("wall_60", "60 VOTES", (40, 60, 110)), ("wall_money", "$205 MILLION+", (30, 100, 60)), ("wall_half", "HALF THE COUNTRY", (140, 40, 40))):
+        im = Image.new("RGB", (1024, 512), rgb)
+        d = ImageDraw.Draw(im)
+        for y in range(0, 512, 64):  # brick rows
+            off = 64 if (y // 64) % 2 else 0
+            for x in range(-off, 1024, 128):
+                d.rectangle((x + 3, y + 3, x + 125, y + 61), outline=tuple(int(c * 0.7) for c in rgb), width=4)
+        d.text((512, 256), txt, font=font("impact.ttf", 130), fill=(250, 250, 250), anchor="mm", stroke_width=6, stroke_fill=(20, 20, 20))
+        im.save(os.path.join(OUT, f"{name}.png"))
+
+
+walls()

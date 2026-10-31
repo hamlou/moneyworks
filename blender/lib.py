@@ -628,7 +628,7 @@ class Dave:
         sc = K.sc
         sc.render.use_freestyle = True
         sc.render.line_thickness_mode = "ABSOLUTE"
-        th = 4.6 * K.H / 1080
+        th = 2.6 * K.H / 1080
         sc.render.line_thickness = th
         fs = bpy.context.view_layer.freestyle_settings
         if not getattr(Dave, "_lined", False):

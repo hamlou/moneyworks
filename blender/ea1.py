@@ -126,6 +126,46 @@ def office(dusk=False):
     return deskm
 
 
+def capitol(ox=0.0, oy=0.0, s=1.0):
+    """a generic domed capitol (primitives only, no seal): wings, portico columns, drum + colonnade, dome, lantern"""
+    mar = flat("marble", (0.9, 0.88, 0.83), 0.45)
+
+    def cyl(loc, r, h, n=24):
+        bpy.ops.mesh.primitive_cylinder_add(vertices=n, radius=r * s, depth=h * s, location=(ox + loc[0] * s, oy + loc[1] * s, loc[2] * s))
+        bpy.context.object.data.materials.append(mar)
+        bpy.ops.object.shade_smooth()
+        return bpy.context.object
+
+    for x, w, h in ((0, 5.0, 3.2), (-5.2, 5.4, 2.6), (5.2, 5.4, 2.6)):
+        box("cap_block", (ox + x * s, oy, h / 2 * s), (w * s, 3.0 * s, h * s), mar)
+        box("cap_cornice", (ox + x * s, oy, (h + 0.12) * s), ((w + 0.2) * s, 3.2 * s, 0.24 * s), mar)
+        for k in range(int(w / 0.7)):  # window rows
+            for z in (0.9, 2.0):
+                if z < h - 0.4:
+                    box("cap_win", (ox + (x - w / 2 + 0.45 + k * 0.7) * s, oy - 1.51 * s, z * s), (0.32 * s, 0.02 * s, 0.6 * s), flat("cap_glass", (0.12, 0.13, 0.16), 0.2, emit=0.0))
+    for k in range(8):  # portico
+        cyl((-1.75 + k * 0.5, -1.9, 1.5), 0.13, 3.0, 16)
+    box("cap_pediment", (ox, oy - 1.9 * s, 3.25 * s), (4.3 * s, 0.6 * s, 0.5 * s), mar)
+    for k in range(5):  # steps
+        box("cap_step", (ox, oy - (2.3 + k * 0.3) * s, (0.5 - k * 0.1) * s), (4.6 * s, 0.32 * s, 0.2 * s), mar)
+    cyl((0, 0, 3.8), 1.35, 1.2, 40)
+    for k in range(18):
+        a = k / 18 * 2 * math.pi
+        cyl((1.5 * math.cos(a), 1.5 * math.sin(a), 3.9), 0.07, 1.4, 10)
+    cyl((0, 0, 4.65), 1.6, 0.18, 40)
+    bpy.ops.mesh.primitive_uv_sphere_add(segments=48, ring_count=24, radius=1.3 * s, location=(ox, oy, 4.75 * s))
+    dome = bpy.context.object
+    dome.scale.z = 1.25
+    dome.data.materials.append(mar)
+    bpy.ops.object.shade_smooth()
+    cyl((0, 0, 6.5), 0.22, 0.7, 16)
+    bpy.ops.mesh.primitive_uv_sphere_add(radius=0.16 * s, location=(ox, oy, 6.95 * s))
+    bpy.context.object.data.materials.append(mar)
+    pole = cyl((3.2, -3.4, 2.5), 0.03, 5.0, 8)
+    flag = plane("cap_flag", (ox + 3.65 * s, oy - 3.4 * s, 4.6 * s), (0.9 * s, 0.5 * s), (R(90), 0, 0), image_mat("usflag", "us_flag.png", rough=0.8))
+    return dome, flag
+
+
 cam0 = cam("cam", (0, -6, 1.6), (0, 0, 1.4), 30)
 sc.camera = cam0
 d = Dave()
@@ -162,7 +202,10 @@ if SHOT == "M":
     for o in bpy.data.objects:  # the chair moves back so Dave can stand behind the desk
         if o.name.startswith("chair_"):
             o.location.y += 0.5
-    g = mascot("insurance", 2.2)
+    card = box("ins_card", (0, 0, 0), (1.5, 0.08, 2.3), image_mat("ins_card", "logo_insurance.png", rough=0.3))  # giant insurance card
+    hinge = bpy.data.objects.new("hinge", None)
+    sc.collection.objects.link(hinge)
+    card.parent, card.location = hinge, (0, 0, 1.15)
     for f in range(1, LEN + 1):
         d.place((0.0, 1.85, 0.72), R(0))  # behind the desk, facing camera, hands on the paper
         d.legs_set("stand")
@@ -173,17 +216,12 @@ if SHOT == "M":
         d.live(f, "determined" if f < SIGN else "smug", talking=f >= SIGN)
         d.life(f, 0.4)
         d.key(f)
-        g.place((3.4, 0.4, 0.72 * 2.2), R(-40))
-        g.legs_set("stand")
-        if f < DROOP:
-            pump = 0.5 - 0.5 * math.cos(f / 14 * 2 * math.pi)
-            g.pose(blend("flex", "cheer", pump * 0.3))
-        else:
-            g.pose(blend("flex", "droop", back_out((f - DROOP) / 8)))
-            if f <= DROOP + 6:
-                g.squash(0.8 * (1 - (f - DROOP) / 6))
-        g.life(f, 0.5)
-        g.key(f)
+        hinge.location = (2.6, 0.6, 0.0)  # the card wobbles, then on "unnecessary" topples flat (fall = t², small bounce)
+        t = (f - DROOP) / 14
+        tip = R(3) * math.sin(f / 9) if f < DROOP else R(90) * min(1, t * t) - (R(6) * math.sin((t - 1) * 9) * math.exp(-(t - 1) * 4) if t > 1 else 0)
+        hinge.rotation_euler = (tip, 0, R(-30))
+        hinge.keyframe_insert("location", frame=f)
+        hinge.keyframe_insert("rotation_euler", frame=f)
         a = R(-18) + R(26) * ease(f / LEN)
         key_cam(cam0, f, (5.2 * math.sin(a), -5.0 * math.cos(a) + 0.6, 1.35), (1.0, 1.0, 1.4), 26)
 
@@ -247,7 +285,7 @@ if SHOT == "H":
     sc.camera.data.dof.focus_distance, sc.camera.data.dof.aperture_fstop = 4.0, 2.2
 
 if SHOT == "N":  # cold open: real headlines with his name rain onto a desk, his two books slam down, camera rises
-    world_hdri("golden", 0.7, 40)
+    world_hdri("studio", 0.35, 40)
     plane("desk", (0, 0, 0), (14, 10), (0, 0, 0), pbr("desk", K.MAN.get("wood") or K.MAN["floor"], 2.0))
     light("sun", "SUN", (0, 0, 10), (R(40), 0, R(160)), energy=3.0, color=(1.0, 0.88, 0.72), angle=R(3))
     light("rim", "AREA", (-2, 2, 3), None, energy=300, size=3, color=(0.7, 0.8, 1.0))
@@ -284,16 +322,240 @@ if SHOT == "N":  # cold open: real headlines with his name rain onto a desk, his
         hero.rotation_euler = (0.6 * (1 - th) * math.sin(f / 4), 0.3 * (1 - th), 0.08 + 0.8 * (1 - th))
         hero.keyframe_insert("location", frame=f)
         hero.keyframe_insert("rotation_euler", frame=f)
-        for i, (b, x, y, t0) in enumerate(zip(books, (-0.62, 0.66), (-0.42, 0.36), (58, 66))):
+        for i, (b, x, y, t0) in enumerate(zip(books, (-0.68, 0.74), (0.0, 0.28), (58, 66))):
             tb = min(1, max(0, (f - t0) / 7))
             b.location = (x, y, 0.07 + i * 0.002 + 2.2 * (1 - tb * tb))
-            b.rotation_euler = (0, 0, (-0.35, 0.3)[i] + (1 - tb) * 1.2)
+            b.rotation_euler = (0, 0, math.pi + (-0.3, 0.25)[i] + (1 - tb) * 1.2)
             b.keyframe_insert("location", frame=f)
             b.keyframe_insert("rotation_euler", frame=f)
         k = ease(min(1, f / LEN))
         key_cam(cam0, f, (0.5 - 0.5 * k, -3.0 + 2.25 * k, 0.8 + 1.15 * k), (0.0, 0.3 - 0.25 * k, 0.5 - 0.5 * k), 20 + 15 * k)
     sc.camera.data.dof.use_dof = True
     sc.camera.data.dof.focus_object, sc.camera.data.dof.aperture_fstop = hero, 4.0
+
+def walk_to(f, f0, f1, a, b, turn):  # Dave walks a→b between frames f0..f1, then stands
+    k = min(1, max(0, (f - f0) / max(1, f1 - f0)))
+    d.place((a[0] + (b[0] - a[0]) * k, a[1] + (b[1] - a[1]) * k, 0.72 + (d.legs_walk(k * (f1 - f0) / 13 * math.pi) if 0 < k < 1 else 0)), turn)
+    if not 0 < k < 1:
+        d.legs_set("stand")
+    return k
+
+
+def pops(n, f0, f1, f):  # how many of n items have popped in by frame f (spread f0..f1)
+    return int(n * min(1, max(0, (f - f0) / max(1, f1 - f0))))
+
+
+if SHOT == "G":  # "on day one": a domed capitol at sunrise, tiny Dave walks up the plaza, camera cranes up to the dome
+    world_hdri("golden", 1.0, 200)
+    plane("plaza", (0, -8, 0), (60, 40), (0, 0, 0), pbr("plaza", K.MAN.get("concrete") or K.MAN["floor"], 4.0))
+    light("sun", "SUN", (0, 0, 10), (R(68), 0, R(150)), energy=3.2, color=(1.0, 0.82, 0.62), angle=R(1.5))
+    dome, flag = capitol()
+    for f in range(1, LEN + 1):
+        walk_to(f, 1, LEN, (0.3, -15.0), (0.2, -11.5), R(180))
+        d.pose("idle")
+        d.live(f, "determined")
+        d.life(f)
+        d.key(f)
+        flag.rotation_euler = (R(90), R(4) * math.sin(f / 5), R(6) * math.sin(f / 7))
+        flag.keyframe_insert("rotation_euler", frame=f)
+        k = ease(f / LEN)
+        key_cam(cam0, f, (1.2 - 1.2 * k, -17.5 - 4 * k, 0.45 + 6.5 * k), (0.2, -8 + 8 * k, 1.6 + 3.2 * k), 18 + 10 * k)
+
+if SHOT == "Y":  # day one at the desk: the Medicare for All folder slides in, Dave opens it, camera tilts from paper to face
+    office()
+    light("sun", "SUN", (0, 0, 10), (R(55), 0, R(140)), energy=2.4, color=(1.0, 0.9, 0.78), angle=R(3))
+    lamp = light("lamp", "SPOT", (-0.8, 0.6, 2.4), None, energy=500, spot_size=R(50), spot_blend=0.6, color=(1.0, 0.86, 0.66))
+    folder = box("folder", (0, 0, 0), (0.5, 0.36, 0.03), image_mat("m4a_f", "m4a_paper.png", rough=0.6))
+    for f in range(1, LEN + 1):
+        k = back_out(min(1, f / 30))
+        folder.location = (1.6 - 1.6 * k, 1.25, 0.85)
+        folder.rotation_euler = (0, 0, R(25) * (1 - k) + R(4))
+        folder.keyframe_insert("location", frame=f)
+        folder.keyframe_insert("rotation_euler", frame=f)
+        aim(lamp, (0, 1.3, 0.85))
+        d.place((0.0, 1.85, 0.72), R(0))
+        d.legs_set("stand")
+        d.pose(blend("idle", "read", ease((f - 26) / 10)))
+        d.live(f, "think" if f < 60 else "determined", talking=f > 30)
+        d.life(f, 0.5)
+        d.key(f)
+        t = ease(f / LEN)
+        key_cam(cam0, f, (0.5 - 0.3 * t, 0.2 - 2.4 * t, 1.6 - 0.25 * t), (0.0, 1.3 + 0.5 * t, 0.86 + 0.55 * t), 35 - 7 * t)
+
+if SHOT == "P":  # the price: a receipt unrolls off the desk across the floor right up to the lens, Dave panics
+    office()
+    light("sun", "SUN", (0, 0, 10), (R(60), 0, R(160)), energy=2.0, color=(1.0, 0.93, 0.82), angle=R(3))
+    light("fill", "AREA", (0, -3, 3.2), (R(30), 0, 0), energy=300, size=5)
+    seg = image_mat("rc", "receipt.png", rough=0.9)
+    segs = [plane(f"rc{i}", (0, 0.85 - i * 0.42, 0.003 + i * 0.0004), (0.5, 0.42), (0, 0, R(math.sin(i * 0.7) * 3)), seg if i < 17 else image_mat("rct", "receipt_total.png", rough=0.9)) for i in range(18)]
+    for f in range(1, LEN + 1):
+        n = pops(18, 10, LEN * 0.7, f)
+        for i, o in enumerate(segs):
+            sz = 1.0 if i < n else 0.001
+            o.scale = (0.25, 0.21 * sz, 1)
+            o.keyframe_insert("scale", frame=f)
+        d.place((0.0, 1.85, 0.72), R(0))
+        d.legs_set("stand")
+        d.pose(blend("look", "panic", back_out((f - LEN * 0.55) / 8)))
+        d.live(f, "shock" if f < LEN * 0.55 else "panic", talking=True)
+        d.life(f)
+        d.key(f)
+        t = ease(f / LEN)
+        key_cam(cam0, f, (0.9, -1.0 - 4.0 * t, 0.35 + 0.5 * t), (0.0, 0.8 - 2.8 * (1 - t), 0.4 + 0.8 * t), 22 + 6 * t)
+
+if SHOT == "B":  # the street of fifty houses: only ONE gets a SOLD sign (the 2 %)
+    world_hdri("day", 0.9, 60)
+    plane("road", (0, 0, 0), (8, 80), (0, 0, 0), flat("asphalt", (0.16, 0.16, 0.17), 0.8))
+    plane("lawn", (0, 0, -0.01), (80, 80), (0, 0, 0), flat("grass", (0.25, 0.42, 0.18), 0.9))
+    light("sun", "SUN", (0, 0, 10), (R(50), 0, R(120)), energy=3.0, color=(1.0, 0.95, 0.86), angle=R(2))
+    r = random.Random(4)
+    cols = [(0.86, 0.78, 0.62), (0.7, 0.8, 0.86), (0.9, 0.86, 0.8), (0.82, 0.68, 0.6), (0.76, 0.84, 0.7)]
+    for i in range(50):
+        side, row = (-1 if i % 2 else 1), i // 2
+        x, y = side * 6.0, -6 + row * 3.2
+        box("house", (x, y, 1.0), (2.6, 2.4, 2.0), flat(f"hw{i}", r.choice(cols), 0.7))
+        bpy.ops.mesh.primitive_cone_add(vertices=4, radius1=2.0, depth=1.2, location=(x, y, 2.6), rotation=(0, 0, R(45)))
+        bpy.context.object.data.materials.append(flat(f"rf{i}", (0.35, 0.18, 0.15), 0.6))
+    hx, hy = 6.0, -6 + 4 * 3.2  # the one house that sells (3rd on the right)
+    sign = plane("sold", (hx - 1.7, hy - 1.4, 1.0), (1.0, 0.6), (R(90), 0, 0), image_mat("sold", "sold.png", rough=0.6))
+    for f in range(1, LEN + 1):
+        walk_to(f, 1, LEN * 0.6, (0, -9.0), (0, -5.5), R(180))
+        d.pose("idle" if f < LEN * 0.72 else blend("idle", "point_l", back_out((f - LEN * 0.72) / 6)))
+        d.live(f, "think" if f < LEN * 0.72 else "smug", talking=True)
+        d.life(f)
+        d.key(f)
+        k = back_out(min(1, max(0, (f - LEN * 0.68) / 8)))
+        sign.scale = (0.5 * k + 0.0005, 0.3 * k + 0.0005, 1)
+        sign.keyframe_insert("scale", frame=f)
+        t = ease(f / LEN)
+        key_cam(cam0, f, (1.6, -13.5 + 3.0 * t, 2.6 - 0.9 * t), (0.8 + 3.0 * t, 4 - 4 * t, 1.4), 24)
+
+if SHOT == "V":  # the Senate math: 100 desks in a half circle, lights fill seat by seat and stop far short of the 60 line
+    world_hdri("studio", 0.4, 0)
+    plane("floor", (0, 0, 0), (30, 30), (0, 0, 0), pbr("floor", K.MAN["floor"], 1.0))
+    plane("wall", (0, 9, 4), (30, 8), (R(90), 0, 0), flat("chamber_wall", (0.55, 0.42, 0.32), 0.7))
+    light("key", "AREA", (0, -2, 7), None, energy=1200, size=8, color=(1.0, 0.92, 0.8))
+    desk_m, on_m = flat("sdesk", (0.32, 0.2, 0.12), 0.5), flat("lit", (0.15, 0.45, 1.0), 0.3, emit=6.0)
+    lamps = []
+    for i in range(100):
+        row, k = i // 25, i % 25
+        a = math.pi * (k + 0.5) / 25
+        rad = 3.2 + row * 1.1
+        x, y = -rad * math.cos(a), 2.0 + rad * math.sin(a)
+        box("sdesk", (x, y, 0.4 + row * 0.25), (0.6, 0.4, 0.8), desk_m).rotation_euler = (0, 0, -a + R(90))
+        bpy.ops.mesh.primitive_uv_sphere_add(radius=0.14, location=(x, y, 0.95 + row * 0.25))
+        o = bpy.context.object
+        o.data.materials.append(on_m)
+        lamps.append(o)
+    order = sorted(range(100), key=lambda i: (i % 25, i // 25))  # fill from the left wedge to the right
+    box("rostrum", (0, 0.8, 0.6), (1.6, 0.6, 1.2), desk_m)
+    for f in range(1, LEN + 1):
+        n = pops(51, 12, LEN * 0.7, f)
+        for j, i in enumerate(order):
+            s = 1.0 if j < n else 0.001
+            lamps[i].scale = (s, s, s)
+            lamps[i].keyframe_insert("scale", frame=f)
+        d.place((0, 0.2, 0.72), R(180))
+        d.legs_set("stand")
+        d.pose("count" if f < LEN * 0.75 else blend("count", "shrug", back_out((f - LEN * 0.75) / 6)))
+        d.live(f, "think" if f < LEN * 0.75 else "neutral", talking=True)
+        d.life(f)
+        d.key(f)
+        t = ease(f / LEN)
+        key_cam(cam0, f, (1.2 - 2.4 * t, -2.2 - 0.8 * t, 2.2 + 1.6 * t), (0, 3.4, 0.9), 20)
+
+if SHOT == "A":  # the attacks: a boxing ring in the dark, one spotlight, headlines fly at Dave out of the black
+    world_hdri("night", 0.05, 0)
+    plane("floor", (0, 0, 0), (40, 40), (0, 0, 0), flat("arena", (0.04, 0.04, 0.05), 0.8))
+    box("ring", (0, 0, 0.3), (4.4, 4.4, 0.6), flat("canvas", (0.75, 0.72, 0.66), 0.8))
+    rope = flat("rope", (0.75, 0.08, 0.08), 0.4)
+    for cx, cy in ((-2.1, -2.1), (2.1, -2.1), (2.1, 2.1), (-2.1, 2.1)):
+        bpy.ops.mesh.primitive_cylinder_add(radius=0.06, depth=1.4, location=(cx, cy, 1.3))
+        bpy.context.object.data.materials.append(flat("post", (0.2, 0.2, 0.22), 0.3))
+    for z in (1.0, 1.35, 1.7):
+        for (x, y, sx, sy) in ((0, -2.1, 4.2, 0.03), (0, 2.1, 4.2, 0.03), (-2.1, 0, 0.03, 4.2), (2.1, 0, 0.03, 4.2)):
+            box("rope", (x, y, z), (sx, sy, 0.03), rope)
+    spot = light("spot", "SPOT", (0, -0.5, 7), (R(4), 0, 0), energy=4000, spot_size=R(28), spot_blend=0.3, color=(1.0, 0.95, 0.85))
+    mats = [image_mat(f"an{i}", f"news_{i}.png", rough=0.9) for i in range(8)]
+    r = random.Random(9)
+    shots = []
+    for k in range(16):
+        o = plane(f"throw{k}", (0, 0, -5), (0.61, 0.83), (0, 0, 0), mats[k % 8])
+        a = r.uniform(0, 2 * math.pi)
+        shots.append((o, 14 + k * (LEN * 0.7 / 16), (8 * math.cos(a), 8 * math.sin(a), r.uniform(2, 4)), r.uniform(-3, 3)))
+    for f in range(1, LEN + 1):
+        for o, t0, (sx, sy, sz), sp in shots:  # fly in on a line, hit at the chest, drop to the canvas
+            u = (f - t0) / 12
+            if u < 0:
+                o.location = (sx, sy, -5)
+            elif u < 1:
+                o.location = (sx * (1 - u), sy * (1 - u), sz + (1.5 - sz) * u)
+            else:
+                v = min(1, (u - 1) * 1.5)
+                o.location = (sx * 0.08 * v, sy * 0.08 * v, 1.5 - 0.88 * v)
+            o.rotation_euler = (R(90) * min(1, max(u, 0)) if u < 1 else R(0), sp * min(u, 1), sp * u * 0.3)
+            o.keyframe_insert("location", frame=f)
+            o.keyframe_insert("rotation_euler", frame=f)
+        hit = any(0 <= (f - t0) / 12 - 1 < 0.25 for _, t0, _, _ in shots)
+        d.place((0, 0, 0.6 + 0.72), R(0) + R(20) * math.sin(f / 30))
+        d.legs_set("stand")
+        d.pose(blend("fists", "slump", ease((f - LEN * 0.85) / 12)) if f > LEN * 0.85 else "fists")
+        d.live(f, "panic" if hit else ("determined" if f < LEN * 0.85 else "sleep"))
+        d.life(f)
+        d.key(f)
+        a = R(-25) + R(50) * ease(f / LEN)
+        key_cam(cam0, f, (6.0 * math.sin(a), -6.0 * math.cos(a), 2.2 - 0.6 * ease(f / LEN)), (0, 0, 1.5), 30)
+
+if SHOT == "D":  # Detroit: 94 school buildings, every one tested, 19 light up red (lead or copper)
+    world_hdri("golden", 0.8, 300)
+    plane("ground", (0, 0, 0), (80, 80), (0, 0, 0), pbr("ground", K.MAN.get("concrete") or K.MAN["floor"], 4.0))
+    light("sun", "SUN", (0, 0, 10), (R(65), 0, R(220)), energy=2.6, color=(1.0, 0.84, 0.66), angle=R(2))
+    d.outfit("doctor")
+    r = random.Random(19)
+    red = set(r.sample(range(94), 19))
+    brick, ok_m, bad_m = flat("brick", (0.6, 0.3, 0.22), 0.8), flat("ok", (0.2, 0.6, 1.0), 0.3, emit=4.0), flat("bad", (1.0, 0.1, 0.05), 0.3, emit=8.0)
+    drops = []
+    for i in range(94):
+        x, y = -9 + (i % 12) * 1.6, 2 + (i // 12) * 1.8
+        box("school", (x, y, 0.4), (1.1, 0.8, 0.8), brick)
+        bpy.ops.mesh.primitive_uv_sphere_add(radius=0.18, location=(x, y, 1.15))
+        o = bpy.context.object
+        o.data.materials.append(bad_m if i in red else ok_m)
+        drops.append(o)
+    for f in range(1, LEN + 1):
+        n = pops(94, 16, LEN * 0.75, f)
+        for i, o in enumerate(drops):
+            s = (1.4 if i in red else 1.0) if i < n else 0.001
+            o.scale = (s, s, s)
+            o.keyframe_insert("scale", frame=f)
+        d.place((0.4, -1.2, 0.72), R(15))
+        d.legs_set("stand")
+        d.pose("read" if f < LEN * 0.8 else blend("read", "point_l", back_out((f - LEN * 0.8) / 6)))
+        d.live(f, "think" if f < LEN * 0.8 else "determined", talking=True)
+        d.life(f)
+        d.key(f)
+        t = ease(f / LEN)
+        key_cam(cam0, f, (1.8 - 1.2 * t, -4.5 - 3.5 * t, 1.3 + 7.0 * t), (0.4 - 1.0 * t, 0.5 + 6.0 * t, 1.3 - 0.8 * t), 26)
+
+if SHOT == "W":  # the three walls: on the road to the capitol, walls rise one by one in front of Dave
+    world_hdri("golden", 0.9, 160)
+    plane("road", (0, 10, 0), (6, 60), (0, 0, 0), flat("asphalt", (0.16, 0.16, 0.17), 0.8))
+    plane("lawn", (0, 10, -0.01), (90, 90), (0, 0, 0), flat("grass", (0.28, 0.42, 0.2), 0.9))
+    light("sun", "SUN", (0, 0, 10), (R(70), 0, R(170)), energy=3.0, color=(1.0, 0.84, 0.64), angle=R(1.5))
+    capitol(0, 34, 1.4)
+    walls = [box(f"wall{i}", (0, 4 + i * 3.5, -2), (5.0, 0.5, 2.6), image_mat(f"w{i}", f"wall_{n}.png", rough=0.85)) for i, n in enumerate(("60", "money", "half"))]
+    for f in range(1, LEN + 1):
+        for i, w in enumerate(walls):  # each wall slams up out of the ground, a third of the shot apart
+            k = back_out(min(1, max(0, (f - (14 + i * LEN * 0.22)) / 8)))
+            w.location = (0, 4 + i * 3.5, -1.4 + 2.7 * k)
+            w.keyframe_insert("location", frame=f)
+        walk_to(f, 1, 40, (0, -3.0), (0, 1.5), R(180))
+        d.pose("idle" if f < 40 else blend("idle", "look_up", ease((f - 40) / 10)))
+        d.live(f, "neutral" if f < 60 else "think")
+        d.life(f)
+        d.key(f)
+        t = ease(f / LEN)
+        key_cam(cam0, f, (1.5 - 0.8 * t, -6.5 + 1.0 * t, 0.6 + 1.6 * t), (0, 4 + 6 * t, 1.6 + 1.2 * t), 24)
 
 if SHOT == "S":
     office()
@@ -356,7 +618,7 @@ if SHOT == "K":
     raise SystemExit
 
 finish()
-if SHOT not in ("H", "N"):  # H, N focus on the falling cash, not on Dave
+if SHOT not in ("H", "N", "G", "B", "D", "W", "V"):  # wide shots and H, N: no shallow focus on the falling cash, not on Dave
     dof(cam0, d.head, 2.8)
 sc.render.image_settings.file_format, sc.render.image_settings.quality = "JPEG", 90
 sc.frame_start, sc.frame_end = 1, LEN
