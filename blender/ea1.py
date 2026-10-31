@@ -246,6 +246,55 @@ if SHOT == "H":
     sc.camera.data.dof.use_dof = True
     sc.camera.data.dof.focus_distance, sc.camera.data.dof.aperture_fstop = 4.0, 2.2
 
+if SHOT == "N":  # cold open: real headlines with his name rain onto a desk, his two books slam down, camera rises
+    world_hdri("golden", 0.7, 40)
+    plane("desk", (0, 0, 0), (14, 10), (0, 0, 0), pbr("desk", K.MAN.get("wood") or K.MAN["floor"], 2.0))
+    light("sun", "SUN", (0, 0, 10), (R(40), 0, R(160)), energy=3.0, color=(1.0, 0.88, 0.72), angle=R(3))
+    light("rim", "AREA", (-2, 2, 3), None, energy=300, size=3, color=(0.7, 0.8, 1.0))
+    d.show(False)
+    mats = [image_mat(f"news{i}", f"news_{i}.png", rough=0.9) for i in range(8)]
+    r = random.Random(5)
+
+    def sheet(m, bend):
+        bpy.ops.mesh.primitive_grid_add(x_subdivisions=10, y_subdivisions=3, size=1)
+        o = bpy.context.object
+        o.scale = (0.61, 0.83, 1)
+        o.data.materials.append(m)
+        md = o.modifiers.new("curl", "SIMPLE_DEFORM")
+        md.deform_method, md.deform_axis, md.angle = "BEND", "Y", R(bend)
+        return o
+
+    papers = []  # (obj, land x, land y, land rot, start frame, drift)
+    for k in range(46):
+        lx, ly = r.uniform(-2.4, 2.4), r.uniform(-1.6, 1.8)
+        papers.append((sheet(mats[k % 8], r.uniform(-25, 25)), lx, ly, r.uniform(-0.6, 0.6), r.uniform(-30, 46), r.uniform(0.6, 1.4)))
+    hero = sheet(mats[1], 8)  # the AP page lands last in the middle and fills the final frame
+    books = [box(f"book{i}", (0, 0, 0), (0.36, 0.5, 0.06), image_mat(f"bk{i}", f"book_ae{i}.png", rough=0.5)) for i in range(2)]
+    for f in range(1, LEN + 1):
+        for n, (o, lx, ly, rot, t0, dr) in enumerate(papers):
+            t = max(0.0, (f - t0) / 40.0)  # paper falls slowly and sways
+            z = max(0.004 + n * 0.0006, 3.2 - 3.2 * ease(min(t, 1)))
+            sway = (1 - min(t, 1)) * 0.5
+            o.location = (lx + sway * math.sin(f / 6 * dr), ly + sway * math.cos(f / 7 * dr), z)
+            o.rotation_euler = (sway * 1.4 * math.sin(f / 5 * dr), sway * math.cos(f / 4), rot + sway * 2)
+            o.keyframe_insert("location", frame=f)
+            o.keyframe_insert("rotation_euler", frame=f)
+        th = min(1, max(0, (f - 50) / 22))
+        hero.location = (0.05, 0.05, 0.035 + 2.6 * (1 - ease(th)))
+        hero.rotation_euler = (0.6 * (1 - th) * math.sin(f / 4), 0.3 * (1 - th), 0.08 + 0.8 * (1 - th))
+        hero.keyframe_insert("location", frame=f)
+        hero.keyframe_insert("rotation_euler", frame=f)
+        for i, (b, x, y, t0) in enumerate(zip(books, (-0.62, 0.66), (-0.42, 0.36), (58, 66))):
+            tb = min(1, max(0, (f - t0) / 7))
+            b.location = (x, y, 0.07 + i * 0.002 + 2.2 * (1 - tb * tb))
+            b.rotation_euler = (0, 0, (-0.35, 0.3)[i] + (1 - tb) * 1.2)
+            b.keyframe_insert("location", frame=f)
+            b.keyframe_insert("rotation_euler", frame=f)
+        k = ease(min(1, f / LEN))
+        key_cam(cam0, f, (0.5 - 0.5 * k, -3.0 + 2.25 * k, 0.8 + 1.15 * k), (0.0, 0.3 - 0.25 * k, 0.5 - 0.5 * k), 20 + 15 * k)
+    sc.camera.data.dof.use_dof = True
+    sc.camera.data.dof.focus_object, sc.camera.data.dof.aperture_fstop = hero, 4.0
+
 if SHOT == "S":
     office()
     light("sun", "SUN", (0, 0, 10), (R(60), 0, R(160)), energy=2.0, color=(1.0, 0.93, 0.82), angle=R(3))
@@ -307,7 +356,7 @@ if SHOT == "K":
     raise SystemExit
 
 finish()
-if SHOT != "H":  # H focuses on the falling cash, not on Dave
+if SHOT not in ("H", "N"):  # H, N focus on the falling cash, not on Dave
     dof(cam0, d.head, 2.8)
 sc.render.image_settings.file_format, sc.render.image_settings.quality = "JPEG", 90
 sc.frame_start, sc.frame_end = 1, LEN
