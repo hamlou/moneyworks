@@ -54,6 +54,8 @@ And here is the funny part because a ban on big investors buying houses is not e
 
 So on this one he might find friends on both sides which in Washington is rarer than a cheap apartment. [S11]
 
+⟨loop⟩ But week one was the easy part because in month one the people with the most money start writing checks.
+
 ## Chapter 3 — MONTH ONE: WHO FIGHTS BACK (≈ 4:30–6:30) — the villain = the money + the math
 ⟨calendar: MONTH 1 · scoreboard: PROMISES 3 · LAWS 0 · MONEY AGAINST: rolling⟩
 
@@ -76,6 +78,8 @@ He does get help from big names though because Alexandria Ocasio-Cortez sent a m
 ⟨seats light up blue… stop far below 60⟩ So President El-Sayed would need sixty senators to say yes to Medicare for All and getting sixty senators to agree on something this big is about the hardest thing you can do in Washington. [S14]
 
 **Laws passed in month one. Still zero.** ⟨scoreboard ticks: 0 → 0, sad ding⟩
+
+⟨loop⟩ And that is when it stops being about his plans and starts being about him.
 
 ## Chapter 4 — THE ATTACKS (≈ 6:30–7:45) — low point
 ⟨night, rain on the window, music drops⟩
@@ -103,6 +107,8 @@ He is also attacked for what he says about Gaza. He has said Israel's government
 His critics call those positions extreme and his supporters call them honest and you will hear both every single day of this presidency. [S15]
 
 ⟨Dave alone at the desk, lamp only⟩ So picture month two. The money is against him and the math is against him and half the news is against him.
+
+⟨loop⟩ But before you decide what he could do as president there is one job he already did and it is the best test we have.
 
 ## Chapter 5 — WHAT HE ACTUALLY DID BEFORE (≈ 7:45–9:00) — comeback
 ⟨flashback filter, DETROIT 2015⟩
@@ -133,13 +139,15 @@ He even hosts a podcast called America Dissected. [S24]
 
 Then in 2017 he left to run for governor of Michigan and in 2018 he lost that primary to Gretchen Whitmer. [S16]
 
+⟨loop⟩ So now you have the plans and the walls and the record which means we can finally answer the question from the very start.
+
 ## Chapter 6 — SO WHAT CHANGES FOR YOU (≈ 9:00–10:00) — payoff
 ⟨recap card: 3 changes | 3 walls⟩
 
 So here is the deal. ⟨cards flip one by one⟩
 If President El-Sayed got his way your health insurance would come from the government and your taxes and premiums would both change and big companies could not buy your street. [S5] [S9] [S10]
 
-But the three walls are sixty votes in the Senate and hundreds of millions of dollars and a country where half the people would fight every one of those plans. [S12] [S14]
+So who would fight the hardest to stop him? Not one single person. It is the hundreds of millions of dollars and the sixty votes he would need in the Senate and a country where half the people would fight every one of those plans. [S12] [S14]
 
 ⟨fake-out⟩ So would he change everything? **Absolutely… nothing in the first month.** But that is true for every president because a president is a pen and Congress is the paper.
 
