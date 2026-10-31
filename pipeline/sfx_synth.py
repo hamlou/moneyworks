@@ -342,6 +342,21 @@ def r_pencil(dur=0.8):
     return lowpass(np.diff(np.concatenate([[0], noise(dur)])), 2) * (0.4 + 0.6 * (np.sin(np.arange(n) / SR * 2 * np.pi * 5) > 0)) * env(n, 0.01, dur)
 
 
+def r_shutter(pitch=1.0):  # camera shutter: sharp click, 55 ms mechanical rattle, softer second click
+    def click(g):
+        n = int(0.018 * SR)
+        t = np.arange(n) / SR
+        return g * (rng.normal(0, 1, n) * env(n, 0.0002, 0.004) + 0.6 * np.sin(2 * np.pi * 3200 * pitch * t) * env(n, 0.0002, 0.006))
+    out = np.zeros(int(0.16 * SR))
+    c1, c2 = click(1.0), click(0.6)
+    out[:len(c1)] += c1
+    r0, rn = int(0.012 * SR), int(0.05 * SR)
+    out[r0:r0 + rn] += 0.18 * lowpass(rng.normal(0, 1, rn), 4) * env(rn, 0.002, 0.03)
+    k = int(0.07 * SR)
+    out[k:k + len(c2)] += c2
+    return out
+
+
 def r_crickets(dur=1.6, n=4):
     """awkward silence: a few cricket chirps (pulsed 4.5 kHz trills)"""
     x = np.zeros(int(dur * SR))

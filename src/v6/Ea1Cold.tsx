@@ -14,7 +14,7 @@ const CLIPS = [
 ];
 const STARTS = CLIPS.reduce<number[]>((a, c, i) => [...a, i ? a[i - 1] + CLIPS[i - 1].len : 0], []);
 const N_AT = STARTS[3] + CLIPS[3].len;
-const N_LEN = 119; // = MONT_LEN (headline montage, 4 s)
+const N_LEN = 115; // = MONT_LEN (macro headline montage, 3.8 s)
 export const COLD = N_AT + N_LEN;
 
 const Tag: React.FC<{children: React.ReactNode}> = ({children}) => (
@@ -34,66 +34,66 @@ const Clip: React.FC<{src: string; len: number; tag: string}> = ({src, len, tag}
   );
 };
 
-// owner 31 Oct: "documentary text highlight" fast-cut montage — page fills the frame, slow push-in, a yellow marker
-// wipes across his name (behind the ink), hard cut every 0.3–0.8 s with a marker/whoosh sound. Headlines are verbatim.
-type Page = {outlet: string; head: string; len: number; font: string; bg: string; tilt: number};
-const PAGES: Page[] = [
-  {outlet: 'ASSOCIATED PRESS', head: 'Trump escalates rhetoric against |El-Sayed| as he tries to undermine Democrat in Michigan Senate race', len: 16, font: 'Times New Roman', bg: '#efe9db', tilt: -1.5},
-  {outlet: 'BRIDGE MICHIGAN', head: '|Abdul El-Sayed|, other Democrats are outraising Republicans across key federal races in Michigan', len: 12, font: 'Georgia', bg: '#f4f1ea', tilt: 1},
-  {outlet: 'CBS NEWS', head: '|El-Sayed| responds to ugly personal attacks amid heated Michigan Senate race', len: 11, font: 'Arial', bg: '#ffffff', tilt: -0.5},
-  {outlet: 'WASHINGTON EXAMINER', head: "Jesse Watters says 'I actually like' |Abdul el Sayed| after interviewing him", len: 12, font: 'Georgia', bg: '#f6f6f2', tilt: 2},
-  {outlet: 'ABC NEWS', head: '|El-Sayed| says he is committed to safety for all after projected win in MI primary', len: 10, font: 'Arial', bg: '#fbfbfb', tilt: -2},
-  {outlet: 'POLITICAL WIRE', head: 'Senate Democrats Meet with |Abdul El-Sayed|', len: 10, font: 'Verdana', bg: '#eef2f6', tilt: 1.5},
-  {outlet: 'NBC NEWS', head: '|Abdul El-Sayed| says Democrats must win midterms by ‘massive numbers’', len: 12, font: 'Arial', bg: '#ffffff', tilt: -1},
+// owner 31 Oct (example screenshot in videos/ea1): EXTREME MACRO of printed text — his name highlighted inside a real
+// sentence, lines above/below out of focus, paper grain, slight perspective, slow push; hard cut every 0.3–0.8 s with a
+// camera-shutter sound. Every sentence is VERBATIM from a source (AP, WLOS, Bridge, NBC, CBS, Wash. Examiner, Mediaite,
+// book credit) — never invented text. Line splits only; `[...]` = the highlighted name.
+type Macro = {lines: string[]; len: number; font: string; tilt: number};
+const MACROS: Macro[] = [
+  {lines: ['Trump escalates rhetoric', 'against [El-Sayed] as he tries', 'to undermine Democrat in Michigan'], len: 12, font: 'Georgia', tilt: -2},
+  {lines: ['Michigan Senate race.', '[El-Sayed] would be the first Muslim', 'senator if elected.'], len: 10, font: 'Times New Roman', tilt: 1.5},
+  {lines: ['Rep. Alexandria Ocasio-Cortez donated', '$1 million to Dr. [Abdul El-Sayed] who', 'is running for U.S. Senate as a Democrat.'], len: 9, font: 'Georgia', tilt: -1},
+  {lines: ['on ads in the Democratic primary', 'against [El-Sayed] and in support', 'of his primary opponent'], len: 13, font: 'Times New Roman', tilt: 2},
+  {lines: ['GOP groups have spent $59.3 million,', 'compared to $23 million by backers of [El-Sayed]', 'Michigan Senate race'], len: 9, font: 'Georgia', tilt: -1.5},
+  {lines: ['Michigan Democrat', '[Abdul El-Sayed] Fumes About His', 'CNN Interviews'], len: 11, font: 'Arial', tilt: 1},
+  {lines: ["Jesse Watters says 'I actually like'", '[Abdul el Sayed] after interviewing him', ''], len: 10, font: 'Georgia', tilt: -2.5},
+  {lines: ['ugly personal attacks', '[El-Sayed] responds to ugly personal', 'attacks amid heated Michigan Senate race'], len: 9, font: 'Arial', tilt: 1.5},
+  {lines: ['', '[Abdul El-Sayed] says Democrats must', "win midterms by ‘massive numbers’"], len: 12, font: 'Times New Roman', tilt: -1},
+  {lines: ['HEALING POLITICS', 'by [Abdul El-Sayed]', 'A Doctor’s Journey into the Heart of Our Political Epidemic'], len: 20, font: 'Georgia', tilt: 0},
 ];
-const BOOK_LENS = [16, 20];
-export const MONT_STARTS = [...PAGES.map((p) => p.len), ...BOOK_LENS].reduce<number[]>((a, l, i, all) => [...a, i ? a[i - 1] + all[i - 1] : 0], []);
-const MONT_LEN = [...PAGES.map((p) => p.len), ...BOOK_LENS].reduce((a, b) => a + b, 0);
+export const MONT_STARTS = MACROS.reduce<number[]>((a, m, i) => [...a, i ? a[i - 1] + MACROS[i - 1].len : 0], []);
+const MONT_LEN = MACROS.reduce((a, m) => a + m.len, 0);
 
-const Mark: React.FC<{f: number; children: React.ReactNode}> = ({f, children}) => {
-  const k = Math.min(1, Math.max(0, (f - 2) / 6));
-  return <span style={{backgroundImage: 'linear-gradient(#ffe03a,#ffe03a)', backgroundRepeat: 'no-repeat', backgroundSize: `${k * 100}% 78%`, backgroundPosition: '0 70%', padding: '0 6px', borderRadius: 4}}>{children}</span>;
-};
-const NewsPage: React.FC<{p: Page}> = ({p}) => {
-  const f = useCurrentFrame();
-  const parts = p.head.split('|');
+const GRAIN = `url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='400' height='400'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='3' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 0.35 0 0 0 0 0.33 0 0 0 0 0.3 0 0 0 0.55 0'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>")`;
+const MacroLine: React.FC<{text: string; f: number; blur: number; size: number}> = ({text, f, blur, size}) => {
+  const k = Math.min(1, Math.max(0, (f - 1) / 3)); // the marker wipe is fast: 3 frames
+  const parts = text.split(/\[|\]/);
   return (
-    <AbsoluteFill style={{background: '#111'}}>
-      <AbsoluteFill style={{transformOrigin: '18% 22%', transform: `scale(${1.04 + 0.009 * f}) rotate(${p.tilt}deg)`}}>
-        <div style={{position: 'absolute', left: 120, top: 40, width: 1680, height: 1300, background: p.bg, boxShadow: '0 0 60px rgba(0,0,0,.5)', padding: '50px 90px', fontFamily: p.font, color: '#151515'}}>
-          <div style={{fontSize: 46, fontWeight: 700, letterSpacing: 3, borderBottom: '4px solid #151515', paddingBottom: 14}}>{p.outlet}</div>
-          <div style={{fontSize: 92, fontWeight: 700, lineHeight: 1.14, marginTop: 50}}>
-            {parts.map((t, i) => (i % 2 ? <Mark key={i} f={f}>{t}</Mark> : <span key={i}>{t}</span>))}
-          </div>
-          {[0, 1, 2, 3, 4, 5].map((r) => <div key={r} style={{height: 18, background: '#bdb8ad', marginTop: 34, width: `${90 - (r % 3) * 12}%`}} />)}
-        </div>
-      </AbsoluteFill>
-    </AbsoluteFill>
+    <div style={{fontSize: size, lineHeight: 1.32, whiteSpace: 'nowrap', textAlign: 'center', filter: blur ? `blur(${blur}px)` : undefined, color: '#1d1b18', textShadow: '0 0 1.2px rgba(20,18,15,.7)'}}>
+      {parts.map((t, i) =>
+        i % 2 ? (
+          <span key={i} style={{backgroundImage: 'linear-gradient(#f5c400,#f5c400)', backgroundRepeat: 'no-repeat', backgroundSize: `${k * 100}% 82%`, backgroundPosition: '0 62%', padding: '0 8px', fontWeight: 700}}>{t}</span>
+        ) : (
+          <span key={i}>{t}</span>
+        ),
+      )}
+    </div>
   );
 };
-const BookPage: React.FC<{i: number}> = ({i}) => {
+const MacroShot: React.FC<{m: Macro}> = ({m}) => {
   const f = useCurrentFrame();
-  const k = Math.min(1, Math.max(0, (f - 3) / 7));
   return (
-    <AbsoluteFill style={{background: '#1a1714', alignItems: 'center', justifyContent: 'center'}}>
-      <div style={{position: 'relative', height: 1000, transformOrigin: '50% 85%', transform: `scale(${1.05 + 0.02 * f}) rotate(${i ? 2 : -2}deg)`}}>
-        <Img src={staticFile(`ea1/book_ae${i}.png`)} style={{height: 1000, display: 'block', boxShadow: '0 30px 80px rgba(0,0,0,.7)'}} />
-        <div style={{position: 'absolute', left: '8%', top: i ? '79%' : '81%', height: i ? '12%' : '8%', width: `${84 * k}%`, background: '#ffe03a', mixBlendMode: 'hard-light', opacity: 0.85, borderRadius: 6}} />
-      </div>
+    <AbsoluteFill style={{background: '#e9e4d8', overflow: 'hidden'}}>
+      <AbsoluteFill style={{perspective: 1400}}>
+        <AbsoluteFill style={{alignItems: 'center', justifyContent: 'center', fontFamily: m.font, transform: `rotateX(14deg) rotateZ(${m.tilt}deg) scale(${1.0 + 0.006 * f}) translateX(${-1.2 * f}px)`}}>
+          <MacroLine text={m.lines[0]} f={f} blur={4} size={128} />
+          <MacroLine text={m.lines[1]} f={f} blur={0} size={128} />
+          <MacroLine text={m.lines[2]} f={f} blur={4.5} size={128} />
+        </AbsoluteFill>
+      </AbsoluteFill>
+      <AbsoluteFill style={{backgroundImage: GRAIN, mixBlendMode: 'multiply', opacity: 0.55}} />
+      <AbsoluteFill style={{background: 'linear-gradient(rgba(233,228,216,.75), transparent 28%, transparent 72%, rgba(233,228,216,.8))'}} />
+      <AbsoluteFill style={{boxShadow: 'inset 0 0 220px rgba(60,50,35,.45)'}} />
+      {f === 0 ? <AbsoluteFill style={{background: '#fff', opacity: 0.45}} /> : null}
     </AbsoluteFill>
   );
 };
 export const MONT_FRAMES = MONT_LEN;
 export const Montage: React.FC = () => (
   <>
-    {PAGES.map((p, i) => (
-      <Sequence key={i} from={MONT_STARTS[i]} durationInFrames={p.len}>
-        <NewsPage p={p} />
-      </Sequence>
-    ))}
-    {BOOK_LENS.map((l, i) => (
-      <Sequence key={'b' + i} from={MONT_STARTS[PAGES.length + i]} durationInFrames={l}>
-        <BookPage i={i} />
+    {MACROS.map((m, i) => (
+      <Sequence key={i} from={MONT_STARTS[i]} durationInFrames={m.len}>
+        <MacroShot m={m} />
       </Sequence>
     ))}
   </>
@@ -113,11 +113,8 @@ export const Ea1Full: React.FC = () => {
   const cues: Cue[] = [
     ...STARTS.slice(1).map((a) => ({at: a, src: 'ea1/co_tv', v: 0.5})),
     {at: N_AT, src: 'ea1/k_flash', v: 0.7},
-    ...MONT_STARTS.map((a, i) => ({at: N_AT + a, src: i % 2 ? 'ea1/co_paper' : 'ea1/co_paper2', v: 0.6})),
-    ...MONT_STARTS.map((a) => ({at: N_AT + a + 2, src: 'ea1/scribble', v: 0.35})),
-    {at: N_AT + MONT_STARTS[7], src: 'ea1/co_book', v: 0.9},
-    {at: N_AT + MONT_STARTS[8], src: 'ea1/co_book', v: 0.9},
-    {at: N_AT + 40, src: 'ea1/co_riser', v: 0.6},
+    ...MONT_STARTS.map((a, i) => ({at: N_AT + a, src: i % 2 ? 'ea1/co_shut2' : 'ea1/co_shut1', v: 0.8})),
+    {at: N_AT + 30, src: 'ea1/co_riser', v: 0.45},
     {at: COLD - 2, src: 'ea1/k_flash', v: 0.8},
     ...RALLY.map((_, i) => ({at: COLD + CUT1 + i * 30, src: 'ea1/k_flash', v: 0.6})),
   ];

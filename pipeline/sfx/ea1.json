@@ -277,6 +277,22 @@
     "dur": 1.4
    },
    "cue": "cold open: into the hook"
+  },
+  {
+   "name": "co_shut1",
+   "recipe": "shutter",
+   "params": {
+    "pitch": 1.0
+   },
+   "cue": "cold open: every macro headline cut"
+  },
+  {
+   "name": "co_shut2",
+   "recipe": "shutter",
+   "params": {
+    "pitch": 1.15
+   },
+   "cue": "cold open: every macro headline cut (variation)"
   }
  ]
 }
