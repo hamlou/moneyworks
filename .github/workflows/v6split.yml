@@ -29,10 +29,10 @@ jobs:
       - id: r
         run: |
           C="${{ inputs.comp }}"; P="${{ inputs.parts }}"
-          [ -z "$C" ] && C=$(awk '{print $1}' pipeline/split/RUN) && P=$(awk '{print $2}' pipeline/split/RUN)
+          [ -z "$C" ] && true; [ -z "$C" ] && C=$(awk '{print $1}' pipeline/split/RUN) && P=$(awk '{print $2}' pipeline/split/RUN)
           echo "comp=$C" >> $GITHUB_OUTPUT
-          N=$(npx remotion compositions src/v6/index.ts --quiet 2>/dev/null | awk -v c="$C" '$1==c{print $4}')
-          echo "frames=$N"
+          N=$(FORCE_COLOR=0 npx remotion compositions src/v6/index.ts 2>/dev/null | awk -v c="$C" '$1==c{print $4}')
+          echo "frames=$N"; [ -n "$N" ] || { npx remotion compositions src/v6/index.ts; exit 1; }
           node -e "const n=+process.argv[1],p=+process.argv[2],s=Math.ceil(n/p),r=[];for(let a=0;a<n;a+=s)r.push(a+'-'+Math.min(n-1,a+s-1));console.log('ranges='+JSON.stringify(r))" "$N" "${P:-16}" >> $GITHUB_OUTPUT
           cat $GITHUB_OUTPUT
 
