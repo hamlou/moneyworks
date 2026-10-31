@@ -59,13 +59,15 @@ So on this one he might find friends on both sides which in Washington is rarer 
 
 Remember those thirty three million dollars from the start? **Cute.** [S4]
 
-By the beginning of October the money spent in his Senate race had passed two hundred and five million dollars and that made it the most expensive race Michigan has ever seen. [S12]
+By the beginning of October the money spent in his Senate race had passed two hundred and five million dollars and it was on pace to become the most expensive election Michigan has ever seen. [S12]
 
-⟨bar race: REPUBLICANS $78 M vs DEMOCRATS $63 M (as of Oct 10)⟩ Republicans had outspent Democrats seventy eight million to sixty three million by the middle of October. [S12]
+⟨bar race: GOP GROUPS $59.3 M vs HIS BACKERS $23 M (FEC via Bridge, 2 Oct)⟩ Republican groups alone had spent fifty nine million dollars on that race. [S12]
 
 And that same AIPAC super PAC from the primary is now reported to be sending up to nine million dollars to a group that backs his Republican opponent Mike Rogers. [S13]
 
-**Have a guess how much of that money is on his side.** ⟨beat⟩ He gets help too. Bernie Sanders and Alexandria Ocasio-Cortez each moved a million dollars to support him. [S12]
+**Have a guess how much the groups backing him had spent.** ⟨beat, bar grows, stops short⟩ Twenty three million. [S12]
+
+He does get help from big names though because Alexandria Ocasio-Cortez sent a million dollars to help his side. [S20]
 
 ⟨Senate chamber, 100 seats lighting up⟩ But the biggest wall is not money it is math. A president cannot pass a law alone. In the Senate a bill needs a majority and most big bills need sixty votes to get past a filibuster. [S14]
 
@@ -78,7 +80,17 @@ And that same AIPAC super PAC from the primary is now reported to be sending up 
 
 And then there is everything that gets thrown at him personally.
 
-The current president keeps calling him Mohammed and his opponent claimed he pledged support to the Muslim Brotherhood which a fact check found no evidence for. [S6] [S7]
+You already heard about the Mohammed nickname and the Muslim Brotherhood claim that a fact check found no evidence for. [S6] [S7]
+
+⟨rally crowd silhouettes, red light, quote card with Src AP⟩ Then on October twenty fifth the current president held a rally in Port Huron Michigan and told the crowd and I am quoting him exactly I'm here to keep a jihadist Muslim Brotherhood member from becoming a United States senator. [S21]
+
+El-Sayed has said again and again that he is loyal to the United States and he has disavowed the Muslim Brotherhood. [S21]
+
+And when Mike Rogers questioned his loyalty in a debate El-Sayed called it shameful and said I'm proud of our Constitution that guarantees all of us the right to pray as we choose to pray. [S21]
+
+And before that rally he even taunted the president and said Donald if you're watching don't wuss out man. [S21]
+
+**That is a real quote.**
 
 He is also attacked for what he says about Gaza. He has said Israel's government committed genocide in Gaza and that he opposes unconditional military aid to Israel and he has also said Hamas committed war crimes. [S15]
 
@@ -88,6 +100,10 @@ His critics call those positions extreme and his supporters call them honest and
 
 ## Chapter 5 — WHAT HE ACTUALLY DID BEFORE (≈ 7:45–9:00) — comeback
 ⟨flashback filter, DETROIT 2015⟩
+
+⟨Fox studio card, Src Washington Examiner⟩ And then something weird happens because after a long and heated interview on Fox News the host Jesse Watters said he actually likes him. [S22]
+
+**Even Fox.**
 
 So can this guy run anything? We actually have a test. In 2015 Detroit had just come out of bankruptcy and its health department had been handed to private companies and the mayor gave it to a thirty year old doctor to rebuild. [S16]
 
@@ -101,6 +117,14 @@ Now to be fair his campaign said he removed the lead from those schools and a ne
 
 His department also gave more than five thousand pairs of free glasses to kids in Detroit schools. [S19]
 
+⟨the two books from the cold open slam down⟩ Before all that he was a Rhodes Scholar and he got his medical degree at Columbia. [S1]
+
+And remember those books from the very start? They are real. He wrote one called Healing Politics and a whole guide to Medicare for All with another doctor called Micah Johnson. [S23]
+
+He even hosts a podcast called America Dissected. [S24]
+
+**Two books and a podcast. I have a library card. It expired.**
+
 Then in 2017 he left to run for governor of Michigan and in 2018 he lost that primary to Gretchen Whitmer. [S16]
 
 ## Chapter 6 — SO WHAT CHANGES FOR YOU (≈ 9:00–10:00) — payoff
@@ -112,6 +136,10 @@ If President El-Sayed got his way your health insurance would come from the gove
 But the three walls are sixty votes in the Senate and hundreds of millions of dollars and a country where half the people would fight every one of those plans. [S12] [S14]
 
 ⟨fake-out⟩ So would he change everything? **Absolutely… nothing in the first month.** But that is true for every president because a president is a pen and Congress is the paper.
+
+⟨Michigan map, Senate seat glows⟩ And remember he is not even a senator yet. Republicans have not won a Senate race in Michigan for more than three decades but this year they see an opening and he is up against Mike Rogers who is a former congressman backed by the current president. [S21]
+
+If El-Sayed wins he would be the first Muslim senator. [S21]
 
 ⚠ ELECTION LINE (re-voice after 3 Nov): And it all starts on November third when Michigan decides if he even gets to the Senate.
 
@@ -127,7 +155,8 @@ Which one of his plans would you keep and which one would you throw out? Tell me
 - S9 El-Sayed "has said he'd try to target the rich"; he'd "hope" to avoid raising taxes on most families incl. ~$100 K; campaign didn't answer how it would pay; CRFB 2019: middle-class taxes "would have to rise", but many households "could end up paying less in taxes … than they currently pay in premiums and cost sharing"; Bottom line: "likely correct, although some experts predict overall costs could go down for some families" — Bridge Michigan fact check, Miles MacClure, 25 Sep 2026 (upd. 28 Oct) https://bridgemi.com/michigan-politics/fact-check-would-abdul-el-sayed-raise-taxes-to-pay-for-medicare-for-all/
 - S10 Housing: vowed to ban large corporations from owning homes; ban algorithmic rent-setting software; housing dislocation fees for Airbnb/Vrbo; MSU's Marty P. Jordan: corporate buyers ~2 % of the single-family market — Newsweek, Giulia Carbonaro, ~6–7 Aug 2026 https://www.newsweek.com/michigan-renters-housing-el-sayed-rogers-12290804
 - S11 21st Century ROAD to Housing Act: investors owning 350+ homes can't buy more single-family homes; Senate passed 12 Mar 2026 (NPR https://www.npr.org/2026/03/12/nx-s1-5742566/senate-bipartisan-housing-bill-investors-ban), House 20 May 2026, headed to the President (WTOP Jun 2026 https://wtop.com/news/2026/06/banning-wall-street-from-buying-houses-inside-the-sweeping-bipartisan-housing-bill-headed-to-trump/). Script says "passed" (not "law") — signing not confirmed.
-- S12 Disclosed spending > $205 M by 2 Oct (Bridge Michigan); Republicans outspent Democrats $78 M to $63 M as of 10 Oct (AdImpact via Bridge); Sanders and AOC each transferred $1 M — Legis1, 23 Oct 2026 https://legis1.com/news/michigan-senate-race-tops-205m-as-sanders-aipac → ⚠ prefer citing the Bridge Michigan original; "most expensive in Michigan history" needs its own source or drop.
+- S12 'Disclosed spending … has surpassed $205 million'; 'on pace to be the most expensive election in state history'; FEC: 'GOP groups have spent $59.3 million, compared to $23 million by backers of El-Sayed' — Bridge Michigan, Simon D. Schuster, 2 Oct 2026 https://bridgemi.com/michigan-government/trump-pac-helps-drive-michigan-senate-race-toward-record-spending/ (verified 31 Oct; Sanders $1 M claim dropped — not in Bridge)
+- S20 'Alexandria Ocasio-Cortez donates $1 million to Michigan candidate El-Sayed' — Sinclair/WLOS https://wlos.com/news/nation-world/alexandria-ocasio-cortez-donates-1-million-to-michigan-candidate-el-sayed-democrat-mike-rogers (16 Oct 2026: "donated $1 million to Dr. Abdul El-Sayed")
 - S13 UDP sending up to $9 M to the Great Lakes Conservatives Fund backing Rogers — New York Times, 21 Oct 2026, via Newsweek https://www.newsweek.com/aipac-dumps-last-minute-9m-behind-mike-rogers-in-rebuke-of-abdul-el-sayed-12607752 (on screen: "reported").
 - S14 51 votes to pass, 60 to end debate (cloture) — de facto threshold for most bills — Straight Arrow News explainer https://san.com/cc/dc-dictionary-senate-cloture-vote-explained/ + Senate Rule XXII. The "never passed" claim was removed (not verified).
 - S15 Gaza positions: see `ea1_verified.md` (Times of Israel, The Intercept, Jewish Insider) — wording as there.
@@ -135,6 +164,12 @@ Which one of his plans would you keep and which one would you throw out? Tell me
 - S17 94 DPSCD buildings tested, 19 schools elevated lead or copper — Michigan Public 30 Aug 2016.
 - S18 Lead removal dispute — Free Beacon 29 Jul 2026 (see ea1_verified.md).
 - S19 5,000+ glasses (Vision to Learn) — Bridge Michigan 25 Sep 2026.
+
+- S21 AP (Mike Catalini, Mike Householder), 25 Oct 2026 — Port Huron rally quote; 'has repeatedly said he is loyal to the U.S. and disavowed the Muslim Brotherhood'; 'shameful'; Constitution quote; 'Donald, if you're watching, don't wuss out, man'; 'first Muslim senator if elected'; GOP 'has not won a Senate race in Michigan for more than three decades'; Rogers 'a former congressman backed by Trump' https://www.adn.com/nation-world/2026/10/25/trump-escalates-rhetoric-against-el-sayed-as-he-tries-to-undermine-democrat-in-michigan-senate-race/
+- S22 Washington Examiner headline: 'Jesse Watters says "I actually like" Abdul el Sayed after interviewing him' https://www.washingtonexaminer.com/?p=4700723
+- S23 Healing Politics (Abrams Press 2020); Medicare for All: A Citizen's Guide with Micah Johnson (Oxford University Press 2021) — bookshop.org/shop/abdulelsayed, libraryjournal.com review
+- S24 APHA speaker page: 'Host, America Dissected' https://www.apha.org/events-and-meetings/annual/program/key-sessions-and-speakers/abdul_elsayed
+- N1-N8 cold-open headlines (verbatim): Bridge Michigan, AP, CBS News x2, Washington Examiner, ABC News, Political Wire, NBC News — see blender/make_news.py
 
 ## Dropped from the outline (failed verification)
 - "Higher rate on income over $1 M / tax on wealth over $1 B / lift the payroll cap" — Bridge fact check says the campaign has NOT specified financing; NewsNation (his own words) blocked automated reading → not usable until read by a human.
