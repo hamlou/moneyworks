@@ -94,7 +94,7 @@ const MacroShot: React.FC<{m: Macro; i: number}> = ({m, i}) => {
 export const MONT_FRAMES = MONT_LEN;
 export const Montage: React.FC = () => (
   <>
-    <Sfx cues={MONT_STARTS.map((a, i) => ({at: a, src: i % 2 ? 'ea1/co_shut2' : 'ea1/co_shut1', v: 0.9}))} />
+    <Sfx cues={MONT_STARTS.map((a, i) => ({at: a, src: `ea1/co_flash${(i % 3) + 1}`, v: 0.75}))} />
     {MACROS.map((m, i) => (
       <Sequence key={i} from={MONT_STARTS[i]} durationInFrames={m.len}>
         <MacroShot m={m} i={i} />

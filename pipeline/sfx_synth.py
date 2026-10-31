@@ -357,6 +357,24 @@ def r_shutter(pitch=1.0):  # camera shutter: sharp click, 55 ms mechanical rattl
     return out
 
 
+def r_flashcam(pitch=1.0, whine=0.35):  # "Hollywood"/paparazzi press camera: heavy mirror ka-CHUNK + flash pop + rising recharge whine
+    n = int(0.55 * SR)
+    t = np.arange(n) / SR
+    out = np.zeros(n)
+    k = int(0.05 * SR)  # 1) mirror slap: low body thump + sharp click
+    out[:k] += 0.9 * np.sin(2 * np.pi * 95 * pitch * t[:k]) * env(k, 0.0005, 0.03)
+    out[:k] += 0.8 * rng.normal(0, 1, k) * env(k, 0.0002, 0.006)
+    k2, o2 = int(0.035 * SR), int(0.045 * SR)  # 2) shutter curtain return: second, brighter click
+    out[o2:o2 + k2] += 0.55 * (rng.normal(0, 1, k2) * env(k2, 0.0002, 0.005) + np.sin(2 * np.pi * 2600 * pitch * t[:k2]) * env(k2, 0.0002, 0.008))
+    k3 = int(0.09 * SR)  # 3) flash pop: bright airy burst
+    out[:k3] += 0.35 * (rng.normal(0, 1, k3) - lowpass(rng.normal(0, 1, k3), 6)) * env(k3, 0.001, 0.04)
+    o4, k4 = int(0.07 * SR), int(0.45 * SR)  # 4) flash capacitor recharge whine, rising
+    tt = np.arange(k4) / SR
+    fr = (2200 + 6500 * (tt / tt[-1]) ** 0.7) * pitch
+    out[o4:o4 + k4] += whine * np.sin(2 * np.pi * np.cumsum(fr) / SR) * np.minimum(1, tt / 0.04) * np.exp(-tt * 4.5)
+    return out
+
+
 def r_crickets(dur=1.6, n=4):
     """awkward silence: a few cricket chirps (pulsed 4.5 kHz trills)"""
     x = np.zeros(int(dur * SR))

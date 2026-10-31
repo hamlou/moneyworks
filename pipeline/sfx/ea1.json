@@ -293,6 +293,33 @@
     "pitch": 1.15
    },
    "cue": "cold open: every macro headline cut (variation)"
+  },
+  {
+   "name": "co_flash1",
+   "recipe": "flashcam",
+   "params": {
+    "pitch": 1.0,
+    "whine": 0.32
+   },
+   "cue": "cold open: Hollywood press-camera on every name cut"
+  },
+  {
+   "name": "co_flash2",
+   "recipe": "flashcam",
+   "params": {
+    "pitch": 1.08,
+    "whine": 0.28
+   },
+   "cue": "cold open: Hollywood press-camera on every name cut"
+  },
+  {
+   "name": "co_flash3",
+   "recipe": "flashcam",
+   "params": {
+    "pitch": 0.94,
+    "whine": 0.3
+   },
+   "cue": "cold open: Hollywood press-camera on every name cut"
   }
  ]
 }
