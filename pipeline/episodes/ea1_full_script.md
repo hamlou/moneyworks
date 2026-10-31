@@ -105,9 +105,7 @@ And before that rally he even taunted the president and said Donald if you're wa
 
 **He is a doctor so he would know.**
 
-He is also attacked for what he says about Gaza. He has said Israel's government committed genocide in Gaza and that he opposes unconditional military aid to Israel. [S15]
 
-His critics call those positions extreme and his supporters call them honest and you will hear both every single day of this presidency. [S15]
 
 ⟨Dave alone at the desk, lamp only⟩ So picture month two. The money is against him and the math is against him and half the news is against him.
 
@@ -178,7 +176,6 @@ Which one of his plans would you keep and which one would you throw out? Tell me
 - S20 'Alexandria Ocasio-Cortez donates $1 million to Michigan candidate El-Sayed' — Sinclair/WLOS https://wlos.com/news/nation-world/alexandria-ocasio-cortez-donates-1-million-to-michigan-candidate-el-sayed-democrat-mike-rogers (16 Oct 2026: "donated $1 million to Dr. Abdul El-Sayed")
 - S13 UDP sending up to $9 M to the Great Lakes Conservatives Fund backing Rogers — New York Times, 21 Oct 2026, via Newsweek https://www.newsweek.com/aipac-dumps-last-minute-9m-behind-mike-rogers-in-rebuke-of-abdul-el-sayed-12607752 (on screen: "reported").
 - S14 51 votes to pass, 60 to end debate (cloture) — de facto threshold for most bills — Straight Arrow News explainer https://san.com/cc/dc-dictionary-senate-cloture-vote-explained/ + Senate Rule XXII. The "never passed" claim was removed (not verified).
-- S15 Gaza positions: see `ea1_verified.md` (Times of Israel, The Intercept, Jewish Insider) — wording as there.
 - S16 Detroit health director Aug 2015, age 30, dept privatized in 2012 bankruptcy, more than doubled in year 1, left Feb 2017 to run for governor — Bridge Michigan 25 Sep 2026 + Wikipedia; lost the 2018 Democratic primary for governor to Gretchen Whitmer — Bridge Michigan Aug 2018 https://bridgemi.com/michigan-government/michigan-dems-call-abdul-el-sayed-take-eligibility-issue-court/
 - S17 94 DPSCD buildings tested, 19 schools elevated lead or copper — Michigan Public 30 Aug 2016.
 - S18 Lead removal dispute — Free Beacon 29 Jul 2026 (see ea1_verified.md).

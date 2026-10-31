@@ -29,8 +29,12 @@
 ## v3 (owner verdict 31 Oct evening) — keep ONLY 0:00–1:10, and DELETE every insurance moment in it (owner hates it); rebuild everything after
 - ✓ all 4 name clips cut right on the last sound of the name (Fox 3.40 s, NBC 1.25, CBS 2.78, Trump 5.66 = mouth almost closed, "Abdul" fully heard)
 - □ after the 3 rally clips → cut straight to the next scene (no return to the chair shot)
-- □ cold-open papers/books → redo from the owner's example (waiting)
+- ✓ cold-open papers/books → headline highlight fast-cut montage (owner's example: marker wipe on the name, slow push-in, 0.3–0.8 s cuts, sound per cut) — `Montage` in Ea1Cold.tsx, preview sent
 - □ full reverse-engineering of the reference channel (scenes, animation, pacing), not only hooks
 - □ script: problem-after-problem loop chain until the final payoff
 - □ visuals: few text cards; short word-synced scenes; human-feeling animation (not robotic)
 - □ no freezes anywhere
+- ✓ insurance scene (h4 'day one… Medicare for All', h5 'redundant and unnecessary', p5 'Awkward') removed from the first 1:10 — voice re-made without them
+- ✓ jokes right after the rally clips: j1 "…the dog leaves", j2 "…the suit asked for a refund" (voice running)
+- ✓ whole Gaza part removed (owner 31 Oct: drop the whole line) — script, voice beats, source S15
+- □ Ea1.tsx hook timeline: drop h4/h5/p5 scenes, add j1/j2 scene (Dave reacts over the rally crowd), end the kept part at p6

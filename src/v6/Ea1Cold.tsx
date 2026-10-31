@@ -59,7 +59,7 @@ const NewsPage: React.FC<{p: Page}> = ({p}) => {
   const parts = p.head.split('|');
   return (
     <AbsoluteFill style={{background: '#111'}}>
-      <AbsoluteFill style={{transformOrigin: '30% 42%', transform: `scale(${1.25 + 0.012 * f}) rotate(${p.tilt}deg) translate(${-0.6 * f}px, ${-0.3 * f}px)`}}>
+      <AbsoluteFill style={{transformOrigin: '18% 22%', transform: `scale(${1.04 + 0.009 * f}) rotate(${p.tilt}deg)`}}>
         <div style={{position: 'absolute', left: 120, top: 40, width: 1680, height: 1300, background: p.bg, boxShadow: '0 0 60px rgba(0,0,0,.5)', padding: '50px 90px', fontFamily: p.font, color: '#151515'}}>
           <div style={{fontSize: 46, fontWeight: 700, letterSpacing: 3, borderBottom: '4px solid #151515', paddingBottom: 14}}>{p.outlet}</div>
           <div style={{fontSize: 92, fontWeight: 700, lineHeight: 1.14, marginTop: 50}}>
@@ -78,7 +78,7 @@ const BookPage: React.FC<{i: number}> = ({i}) => {
     <AbsoluteFill style={{background: '#1a1714', alignItems: 'center', justifyContent: 'center'}}>
       <div style={{position: 'relative', height: 1000, transformOrigin: '50% 85%', transform: `scale(${1.05 + 0.02 * f}) rotate(${i ? 2 : -2}deg)`}}>
         <Img src={staticFile(`ea1/book_ae${i}.png`)} style={{height: 1000, display: 'block', boxShadow: '0 30px 80px rgba(0,0,0,.7)'}} />
-        <div style={{position: 'absolute', left: '8%', top: i ? '79%' : '81%', height: i ? '12%' : '8%', width: `${84 * k}%`, background: '#ffe03a', mixBlendMode: 'multiply', borderRadius: 6}} />
+        <div style={{position: 'absolute', left: '8%', top: i ? '79%' : '81%', height: i ? '12%' : '8%', width: `${84 * k}%`, background: '#ffe03a', mixBlendMode: 'hard-light', opacity: 0.85, borderRadius: 6}} />
       </div>
     </AbsoluteFill>
   );
