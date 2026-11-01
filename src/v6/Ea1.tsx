@@ -161,19 +161,21 @@ export const Ea1: React.FC = () => {
     const dog = at('j1', 'dog'), suit = at('j2', 'suit'), refund = at('j2', 'refund');
     scene =
       f < at('j1', 'when', 1) ? (
-        <AbsoluteFill style={{transform: `scale(${1.05 + 0.0015 * (f - CUT1)})`}}>
-          <OffthreadVideo src={staticFile('ea1/names/j_crowd.mp4')} muted style={{width: 1920, height: 1080}} />
-        </AbsoluteFill>
+        <Sequence from={CUT1} layout="none">
+          <AbsoluteFill style={{transform: `scale(${1.05 + 0.0015 * (f - CUT1)})`}}>
+            <OffthreadVideo src={staticFile('ea1/names/j_crowd.mp4')} muted style={{width: 1920, height: 1080}} />
+          </AbsoluteFill>
+        </Sequence>
       ) : f < j2 ? (
         <>
-          <HomeBase f={f} />
+          <AbsoluteFill style={{filter: 'blur(6px) brightness(0.55)'}}><Freeze frame={20}><OffthreadVideo src={staticFile('ea1/shot_E.mp4')} muted style={{width: 1920, height: 1080}} /></Freeze></AbsoluteFill>
           <div style={{position: 'absolute', inset: 0, transformOrigin: '80% 100%', transform: `scale(${f >= dog ? 1.25 : 1})`}}>
             <Cut f={f} keys={[[0, 'grin_cheer'], [dog, 'neutral_shrug']]} />
           </div>
         </>
       ) : (
         <>
-          <HomeBase f={f} />
+          <AbsoluteFill style={{filter: 'blur(6px) brightness(0.6)', transform: `scale(${1.1 + 0.002 * (f - j2)})`}}><Freeze frame={150}><OffthreadVideo src={staticFile('ea1/shot_Y.mp4')} muted style={{width: 1920, height: 1080}} /></Freeze></AbsoluteFill>
           <Cut f={f} keys={[[j2, 'determined_present'], [refund, 'shock_panic']]} />
           <ComicBurst f={f} at={refund} word="REFUND?" x={520} y={560} />
           <Flash f={f} at={suit} />

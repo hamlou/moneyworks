@@ -1,7 +1,7 @@
 import React from 'react';
 import {AbsoluteFill, Freeze, Img, OffthreadVideo, Sequence, staticFile, useCurrentFrame} from 'remotion';
 import {Cue} from '../fx';
-import {ANTON, ComicBurst, Counter, HomeBase, K, snap} from './kit';
+import {ANTON, ComicBurst, Counter, K, snap} from './kit';
 import {MSeg} from './kit2';
 import {at, Cut, Flash, Kinetic, Src} from './Ea1';
 import {MacroText} from './macro';
@@ -33,7 +33,7 @@ const Shot3D: React.FC<{n: string; off: number}> = ({n, off}) => {
 const Still: React.FC<{n: string; t: number}> = ({n, t}) => {
   const f = useCurrentFrame();
   return (
-    <AbsoluteFill style={{transform: `scale(${1.03 + 0.0012 * f})`, filter: 'brightness(0.8)'}}>
+    <AbsoluteFill style={{transform: `scale(${1.03 + 0.0028 * f})`, filter: 'brightness(0.8)'}}>
       <Freeze frame={Math.round(t * 30)}>
         <OffthreadVideo src={staticFile(`ea1/shot_${n}.mp4`)} muted style={{width: 1920, height: 1080}} />
       </Freeze>
@@ -59,6 +59,11 @@ const Chapter: React.FC<{title: string; n: string; t: number}> = ({title, n, t})
     </>
   );
 };
+// chapter → its set (latest chapter first)
+const SETS: [() => number, [string, number]][] = [
+  [() => at('c7_01') - GAP, ['W', 20]], [() => at('c6_01') - GAP, ['D', 20]], [() => at('c5_01') - GAP, ['A', 20]],
+  [() => at('c4_01') - GAP, ['T', 30]], [() => at('c3_01') - GAP, ['V', 20]], [() => at('c2_01') - GAP, ['Y', 6]], [() => 0, ['G', 3]],
+];
 const Render: React.FC<{v: Vis; f0: number}> = ({v, f0}) => {
   const r = useCurrentFrame();
   const f = r + f0;
@@ -73,10 +78,15 @@ const Render: React.FC<{v: Vis; f0: number}> = ({v, f0}) => {
         {v.pose ? <Cut f={f} keys={[[0, v.pose]]} /> : null}
       </>
     );
+  const set = SETS.find(([c]) => f >= c())?.[1] ?? ['G', 3];
   return (
     <>
-      <HomeBase f={f} />
-      <div style={{position: 'absolute', inset: 0, transformOrigin: '78% 100%', transform: `scale(${1.08 + 0.0015 * r})`}}>
+      <AbsoluteFill style={{filter: 'blur(7px) brightness(0.62)', transform: `scale(${1.12 + 0.0015 * r})`}}>
+        <Freeze frame={Math.round(set[1] * 30)}>
+          <OffthreadVideo src={staticFile(`ea1/shot_${set[0]}.mp4`)} muted style={{width: 1920, height: 1080}} />
+        </Freeze>
+      </AbsoluteFill>
+      <div style={{position: 'absolute', inset: 0, transformOrigin: '78% 100%', transform: `scale(${1.08 + 0.0028 * r})`}}>
         <Cut f={f} keys={[[0, v.pose]]} />
       </div>
     </>
