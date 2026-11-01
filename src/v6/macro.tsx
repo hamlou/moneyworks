@@ -14,7 +14,7 @@ const Mid: React.FC<{text: string; S: number}> = ({text, S}) => {
   return (
     <div style={{display: 'flex', width: 3400, fontSize: S, lineHeight: 1.3, color: '#1d1b18', textShadow: '0 0 1.4px rgba(20,18,15,.75)'}}>
       <div style={{...side, textAlign: 'right'}}>{a}</div>
-      <div style={{whiteSpace: 'nowrap', fontWeight: 700, padding: '0 10px', margin: '0 0.28em', background: '#f5c400'}}>{mark}</div>
+      <div style={{flexShrink: 0, whiteSpace: 'nowrap', fontWeight: 700, padding: '0 10px', margin: '0 0.28em', background: '#f5c400'}}>{mark}</div>
       <div style={{...side, textAlign: 'left'}}>{b ?? ''}</div>
     </div>
   );

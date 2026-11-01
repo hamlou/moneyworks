@@ -27,13 +27,15 @@ const Shot3D: React.FC<{n: string; off: number}> = ({n, off}) => {
   const f = useCurrentFrame();
   const last = Math.floor((LEN[n] - off) * 30) - 2;
   const v = <OffthreadVideo src={staticFile(`ea1/shot_${n}.mp4`)} startFrom={Math.round(off * 30)} muted style={{width: 1920, height: 1080}} />;
-  return f < last ? v : <AbsoluteFill style={{transform: `scale(${1 + 0.002 * (f - last)})`}}><Freeze frame={last}>{v}</Freeze></AbsoluteFill>;
+  // always a gentle push-in (some renders end on a still set), stronger once the clip runs out
+  const z = 1 + 0.0012 * Math.min(f, last) + (f > last ? 0.004 * (f - last) : 0);
+  return <AbsoluteFill style={{transform: `scale(${z})`}}>{f < last ? v : <Freeze frame={last}>{v}</Freeze>}</AbsoluteFill>;
 };
 // a held 3D frame with a slow push-in (the reference's posed-diorama look)
-const Still: React.FC<{n: string; t: number}> = ({n, t}) => {
+const Still: React.FC<{n: string; t: number; soft?: boolean}> = ({n, t, soft}) => {
   const f = useCurrentFrame();
   return (
-    <AbsoluteFill style={{transform: `scale(${1.03 + 0.0028 * f})`, filter: 'brightness(0.8)'}}>
+    <AbsoluteFill style={{transform: `scale(${1.03 + 0.0028 * f})`, filter: soft ? 'blur(7px) brightness(0.62)' : 'brightness(0.8)'}}>
       <Freeze frame={Math.round(t * 30)}>
         <OffthreadVideo src={staticFile(`ea1/shot_${n}.mp4`)} muted style={{width: 1920, height: 1080}} />
       </Freeze>
@@ -74,7 +76,7 @@ const Render: React.FC<{v: Vis; f0: number}> = ({v, f0}) => {
   if (v.k === 'still')
     return (
       <>
-        <Still n={v.n} t={v.t} />
+        <Still n={v.n} t={v.t} soft={!!v.pose} />
         {v.pose ? <Cut f={f} keys={[[0, v.pose]]} /> : null}
       </>
     );
