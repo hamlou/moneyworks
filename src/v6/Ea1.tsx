@@ -168,8 +168,8 @@ export const Ea1: React.FC = () => {
         </Sequence>
       ) : f < j2 ? (
         <>
-          <AbsoluteFill style={{filter: 'blur(6px) brightness(0.55)'}}><Freeze frame={20}><OffthreadVideo src={staticFile('ea1/shot_E.mp4')} muted style={{width: 1920, height: 1080}} /></Freeze></AbsoluteFill>
-          <div style={{position: 'absolute', inset: 0, transformOrigin: '80% 100%', transform: `scale(${f >= dog ? 1.25 : 1})`}}>
+          <AbsoluteFill style={{filter: 'blur(6px) brightness(0.55)', transform: `scale(${1.1 + 0.003 * (f - CUT1)})`}}><Freeze frame={20}><OffthreadVideo src={staticFile('ea1/shot_E.mp4')} muted style={{width: 1920, height: 1080}} /></Freeze></AbsoluteFill>
+          <div style={{position: 'absolute', inset: 0, transformOrigin: '80% 100%', transform: `scale(${(f >= dog ? 1.25 : 1) + 0.002 * (f - CUT1)})`}}>
             <Cut f={f} keys={[[0, 'grin_cheer'], [dog, 'neutral_shrug']]} />
           </div>
         </>
