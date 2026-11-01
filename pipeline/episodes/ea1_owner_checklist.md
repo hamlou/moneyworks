@@ -33,8 +33,9 @@
 - ✓ full reverse-engineering → STYLE_3D §17 (still poses, real artifacts, real clips, 'but' every 10–20 s)
 - ✓ v3 script (ea1_v3_script.md): 7 chapters, a new problem each, answer only in ch7 — owner OK'd ~7.5 min
 - ✓ v3 edit (Ea1Body.tsx): 73 word-anchored visuals — 3D scene pieces, 3 real clips, 10 macro quote shots, pose gags; no Dave+text-card scenes
-- □ no freezes anywhere
+- ✓ no freezes anywhere (freezedetect 1.2 s on v3d: none)
 - ✓ insurance scene (h4 'day one… Medicare for All', h5 'redundant and unnecessary', p5 'Awkward') removed from the first 1:10 — voice re-made without them
 - ✓ jokes right after the rally clips: j1 "…the dog leaves", j2 "…the suit asked for a refund" (voice running)
 - ✓ whole Gaza part removed (owner 31 Oct: drop the whole line) — script, voice beats, source S15
 - ✓ Ea1.tsx: insurance scenes + old h7–h10 removed, jokes scene added, kept part ends at p6
+- ✓ DELIVERED v3d 1 Nov: videos/ea1/ea1_v3.mp4 (6:56) + ea1_v3_send.mp4
