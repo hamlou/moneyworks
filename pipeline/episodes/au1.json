@@ -1,0 +1,275 @@
+{
+  "id": "au1",
+  "title": "Why Being Broke Is So Expensive",
+  "style": "v7",
+  "voice": "chatterbox",
+  "cb": {
+    "cfg": 0.25,
+    "exag": 0.5
+  },
+  "note": "AUTOPILOT episode — generated from pipeline/auto/au1.json by tools/auto.py, do not edit",
+  "sources": [
+    "S1 banks reported $5.83B overdraft/NSF fee revenue in 2023 vs $11.96B in 2019 (-51%); the average overdrafting household saves $185 a year — CFPB Data Spotlight, Apr 2024 https://www.consumerfinance.gov/data-research/research-reports/data-spotlight-overdraft-nsf-revenue-in-2023-down-more-than-50-versus-pre-pandemic-levels-saving-consumers-over-6-billion-annually/",
+    "S2 a typical two-week payday loan with a $15 per $100 fee equates to an APR of almost 400% — CFPB, Ask CFPB: payday loan APR https://www.consumerfinance.gov/ask-cfpb/what-is-an-annual-percentage-rate-apr-and-why-is-it-higher-than-the-interest-rate-for-my-payday-loan-en-1625/",
+    "S3 4.2% of US households (5.6 million) unbanked; most cited reason: not enough money to meet minimum balance requirements (42.3%) — FDIC National Survey of Unbanked Households, 2023 https://fdic.gov/household-survey/2023-fdic-national-survey-unbanked-and-underbanked-households-executive-summary",
+    "S4 low-income households pay 5.5% more per roll of toilet paper; buy on sale 28% of the time vs 39% for high-income; the cause is cash on hand (liquidity), not knowledge — Orhun & Palazzolo, University of Michigan, 2016 https://www.ns.umich.edu/new/releases/23488-why-the-poor-pay-more-at-the-store"
+  ],
+  "beats": [
+    {
+      "id": "k1",
+      "src": "S1",
+      "text": "Banks made almost six billion dollars in one single year from people who did not have enough money in their account.",
+      "pause": 0.35,
+      "exag": 0.55
+    },
+    {
+      "id": "k2",
+      "src": "",
+      "text": "And the people who paid it were not careless rich guys but the ones who had the least.",
+      "pause": 0.35,
+      "exag": 0.55
+    },
+    {
+      "id": "k3",
+      "src": "",
+      "text": "So why does being broke cost more than being rich?",
+      "pause": 0.35,
+      "exag": 0.55
+    },
+    {
+      "id": "k4",
+      "src": "",
+      "text": "Stay with me because by the end you will know who is cashing in on your empty wallet and why one roll of toilet paper proves it.",
+      "pause": 0.35,
+      "exag": 0.55
+    },
+    {
+      "id": "c1_01",
+      "src": "",
+      "text": "Meet my bank account which right now holds four dollars and it is the most loyal thing in my life.",
+      "pause": 0.35
+    },
+    {
+      "id": "c1_02",
+      "src": "",
+      "text": "Rent is due on Friday and I am out of toilet paper so I walk into the store.",
+      "pause": 0.35
+    },
+    {
+      "id": "c1_03",
+      "src": "",
+      "text": "The big pack is cheaper per roll but it costs more today and today I have four dollars.",
+      "pause": 0.35
+    },
+    {
+      "id": "c1_04",
+      "src": "",
+      "text": "So I buy the small pack and I just paid extra for being broke.",
+      "pause": 0.6,
+      "exag": 0.55
+    },
+    {
+      "id": "c1_05",
+      "src": "S4",
+      "text": "Researchers at the University of Michigan checked this and poor families pay about five and a half percent more for every roll.",
+      "pause": 0.35
+    },
+    {
+      "id": "c1_06",
+      "src": "S4",
+      "text": "Rich families catch the sale more often because they have spare cash on the day the sale happens.",
+      "pause": 0.35
+    },
+    {
+      "id": "c1_07",
+      "src": "S4",
+      "text": "It is not that poor people are bad at math because the math is easy when you have the money.",
+      "pause": 0.35
+    },
+    {
+      "id": "c1_08",
+      "src": "",
+      "text": "And a few cents on toilet paper sounds tiny until you see what the bank does with the same four dollars.",
+      "pause": 0.35
+    },
+    {
+      "id": "c2_01",
+      "src": "",
+      "text": "I walk into the bank to open a savings account like a responsible adult.",
+      "pause": 0.35
+    },
+    {
+      "id": "c2_02",
+      "src": "",
+      "text": "The paper says I need five hundred dollars just to keep the account free.",
+      "pause": 0.35
+    },
+    {
+      "id": "c2_03",
+      "src": "S3",
+      "text": "That is the number one reason people in America have no bank account at all.",
+      "pause": 0.35
+    },
+    {
+      "id": "c2_04",
+      "src": "",
+      "text": "So I keep my account with no minimum and then my card goes one dollar below zero.",
+      "pause": 0.35
+    },
+    {
+      "id": "c2_05",
+      "src": "",
+      "text": "Have a guess what one dollar below zero costs me.",
+      "pause": 0.6,
+      "exag": 0.55
+    },
+    {
+      "id": "c2_06",
+      "src": "",
+      "text": "Thirty five dollars for a one dollar mistake.",
+      "pause": 0.6,
+      "exag": 0.55
+    },
+    {
+      "id": "c2_07",
+      "src": "S1",
+      "text": "Banks in America collected five point eight billion dollars from fees like this in one year.",
+      "pause": 0.35
+    },
+    {
+      "id": "c2_08",
+      "src": "S1",
+      "text": "And here is the twist because back in twenty nineteen it was almost twelve billion.",
+      "pause": 0.35
+    },
+    {
+      "id": "c2_09",
+      "src": "S1",
+      "text": "Rules and public anger cut it in half and the average family that overdrafts now keeps about one hundred eighty five dollars a year.",
+      "pause": 0.35
+    },
+    {
+      "id": "c2_10",
+      "src": "",
+      "text": "Good news for my four dollars except that when the bank says no there is another door right across the street.",
+      "pause": 0.35
+    },
+    {
+      "id": "c3_01",
+      "src": "",
+      "text": "Friday comes and the rent is still due and my paycheck is still a week away.",
+      "pause": 0.35
+    },
+    {
+      "id": "c3_02",
+      "src": "",
+      "text": "The payday loan shop gives me cash in ten minutes and I only pay fifteen dollars for every hundred.",
+      "pause": 0.35
+    },
+    {
+      "id": "c3_03",
+      "src": "",
+      "text": "Fifteen percent sounds like a bad deal but not a monster.",
+      "pause": 0.6,
+      "exag": 0.55
+    },
+    {
+      "id": "c3_04",
+      "src": "S2",
+      "text": "Except the loan lasts only two weeks so over a whole year that price is almost four hundred percent.",
+      "pause": 0.35
+    },
+    {
+      "id": "c3_05",
+      "src": "",
+      "text": "A credit card for someone with money is around twenty and this is twenty times worse.",
+      "pause": 0.35
+    },
+    {
+      "id": "c3_06",
+      "src": "",
+      "text": "And when the two weeks end most people do not have the money so they borrow again to pay the first loan.",
+      "pause": 0.35
+    },
+    {
+      "id": "c3_07",
+      "src": "",
+      "text": "Now I am paying a fee to pay a fee for a fee and my four dollars has left the chat.",
+      "pause": 0.35
+    },
+    {
+      "id": "c3_08",
+      "src": "",
+      "text": "So here is the toilet paper secret I promised you because it was never about the toilet paper.",
+      "pause": 0.35
+    },
+    {
+      "id": "c3_09",
+      "src": "",
+      "text": "The store and the bank and the loan shop all charge the most to the person with the least spare cash.",
+      "pause": 0.35
+    },
+    {
+      "id": "c3_10",
+      "src": "",
+      "text": "But there is one thing all three are scared of and it costs less than a pizza.",
+      "pause": 0.35
+    },
+    {
+      "id": "c4_01",
+      "src": "",
+      "text": "So why does being broke cost more than being rich?",
+      "pause": 0.35
+    },
+    {
+      "id": "c4_02",
+      "src": "",
+      "text": "You would think the answer is just earn more money.",
+      "pause": 0.35
+    },
+    {
+      "id": "c4_03",
+      "src": "",
+      "text": "Nope because the real price tag is not on your income but on your cushion.",
+      "pause": 0.6,
+      "exag": 0.55
+    },
+    {
+      "id": "c4_04",
+      "src": "",
+      "text": "When you have no cushion every small problem gets sold back to you at the highest price in town.",
+      "pause": 0.35
+    },
+    {
+      "id": "c4_05",
+      "src": "",
+      "text": "And the thing they are all scared of is a tiny emergency fund that starts with twenty dollars.",
+      "pause": 0.35
+    },
+    {
+      "id": "c4_06",
+      "src": "",
+      "text": "Twenty dollars set aside means no overdraft and no loan shop and one day the big pack of toilet paper.",
+      "pause": 0.35
+    },
+    {
+      "id": "c4_07",
+      "src": "",
+      "text": "My four dollars is now my four dollars plus sixteen and it feels like a fortress.",
+      "pause": 0.35
+    },
+    {
+      "id": "c4_08",
+      "src": "",
+      "text": "Now tell me in the comments what is the most expensive thing about being broke where you live.",
+      "pause": 0.35
+    },
+    {
+      "id": "zz",
+      "src": "",
+      "text": "I am Dave and my four dollars and I will see you next time.",
+      "pause": 0.6,
+      "exag": 0.55
+    }
+  ]
+}

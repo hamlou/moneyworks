@@ -1,0 +1,993 @@
+{
+  "id": "au1",
+  "title": "Why Being Broke Is So Expensive",
+  "outfit": "hoodie",
+  "signoff": "I am Dave and my four dollars and I will see you next time.",
+  "description": "Why does it cost more to be poor? Overdraft fees, minimum balances, payday loans and even toilet paper — Dave follows the money to find out who is cashing in on empty wallets, and how to stop paying them.",
+  "sources": [
+    {
+      "id": "S1",
+      "short": "CFPB Data Spotlight, Apr 2024",
+      "url": "https://www.consumerfinance.gov/data-research/research-reports/data-spotlight-overdraft-nsf-revenue-in-2023-down-more-than-50-versus-pre-pandemic-levels-saving-consumers-over-6-billion-annually/",
+      "fact": "banks reported $5.83B overdraft/NSF fee revenue in 2023 vs $11.96B in 2019 (-51%); the average overdrafting household saves $185 a year"
+    },
+    {
+      "id": "S2",
+      "short": "CFPB, Ask CFPB: payday loan APR",
+      "url": "https://www.consumerfinance.gov/ask-cfpb/what-is-an-annual-percentage-rate-apr-and-why-is-it-higher-than-the-interest-rate-for-my-payday-loan-en-1625/",
+      "fact": "a typical two-week payday loan with a $15 per $100 fee equates to an APR of almost 400%"
+    },
+    {
+      "id": "S3",
+      "short": "FDIC National Survey of Unbanked Households, 2023",
+      "url": "https://fdic.gov/household-survey/2023-fdic-national-survey-unbanked-and-underbanked-households-executive-summary",
+      "fact": "4.2% of US households (5.6 million) unbanked; most cited reason: not enough money to meet minimum balance requirements (42.3%)"
+    },
+    {
+      "id": "S4",
+      "short": "Orhun & Palazzolo, University of Michigan, 2016",
+      "url": "https://www.ns.umich.edu/new/releases/23488-why-the-poor-pay-more-at-the-store",
+      "fact": "low-income households pay 5.5% more per roll of toilet paper; buy on sale 28% of the time vs 39% for high-income; the cause is cash on hand (liquidity), not knowledge"
+    }
+  ],
+  "shots": {
+    "H": {
+      "tpl": "rain",
+      "item": "cash"
+    },
+    "S": {
+      "tpl": "chair_spin"
+    },
+    "P": {
+      "tpl": "rain",
+      "item": "tp",
+      "label": "TOILET PAPER 24 PACK",
+      "dave": true,
+      "react": "panic"
+    },
+    "R": {
+      "tpl": "room",
+      "paper": "RENT DUE FRIDAY",
+      "screen": "red"
+    },
+    "G": {
+      "tpl": "building_walk",
+      "dest": "tower",
+      "sign": "BIG BANK"
+    },
+    "D": {
+      "tpl": "desk_paper",
+      "paper": "MINIMUM BALANCE $500",
+      "face": "shock"
+    },
+    "F": {
+      "tpl": "receipt",
+      "total": "OVERDRAFT FEE $35"
+    },
+    "T": {
+      "tpl": "towers",
+      "a": 48,
+      "b": 23
+    },
+    "L": {
+      "tpl": "flyaway",
+      "paper": "MY PAYCHECK",
+      "dest": "tower",
+      "sign": "PAYDAY LOANS",
+      "react": "panic",
+      "face": "panic"
+    },
+    "W": {
+      "tpl": "walls",
+      "walls": [
+        "NO CUSHION",
+        "FEES",
+        "400% LOANS"
+      ],
+      "dest": "tower",
+      "sign": "SAVINGS"
+    },
+    "E": {
+      "tpl": "lamp"
+    }
+  },
+  "hook": {
+    "mood": "tense",
+    "lines": [
+      {
+        "say": "Banks made almost six billion dollars in one single year from people who did not have enough money in their account.",
+        "src": "S1",
+        "show": [
+          {
+            "v": "shot",
+            "shot": "H"
+          },
+          {
+            "v": "count",
+            "to": 5.8,
+            "dec": 1,
+            "prefix": "$",
+            "suffix": " BILLION",
+            "color": "green"
+          },
+          {
+            "on": "single",
+            "v": "text",
+            "text": "IN ONE YEAR",
+            "color": "yellow"
+          },
+          {
+            "on": "not",
+            "v": "text",
+            "text": "FROM PEOPLE WITH $0",
+            "color": "red"
+          }
+        ]
+      },
+      {
+        "say": "And the people who paid it were not careless rich guys but the ones who had the least.",
+        "show": [
+          {
+            "v": "pose",
+            "pose": "shock_panic"
+          },
+          {
+            "on": "rich",
+            "v": "burst",
+            "word": "NOPE."
+          },
+          {
+            "on": "least",
+            "v": "pose",
+            "pose": "neutral_shrug"
+          }
+        ]
+      },
+      {
+        "say": "So why does being broke cost more than being rich?",
+        "open": [
+          "L1"
+        ],
+        "show": [
+          {
+            "v": "shot",
+            "shot": "S"
+          },
+          {
+            "on": "broke",
+            "v": "text",
+            "text": "BROKE = EXPENSIVE?",
+            "color": "red"
+          }
+        ]
+      },
+      {
+        "say": "Stay with me because by the end you will know who is cashing in on your empty wallet and why one roll of toilet paper proves it.",
+        "open": [
+          "L2"
+        ],
+        "show": [
+          {
+            "v": "pose",
+            "pose": "smug_point_you"
+          },
+          {
+            "on": "cashing",
+            "v": "text",
+            "text": "WHO IS CASHING IN?",
+            "color": "yellow"
+          },
+          {
+            "on": "toilet",
+            "v": "shot",
+            "shot": "P"
+          }
+        ]
+      }
+    ]
+  },
+  "chapters": [
+    {
+      "title": "THE STORE",
+      "mood": "comic",
+      "set": [
+        "R",
+        3
+      ],
+      "lines": [
+        {
+          "say": "Meet my bank account which right now holds four dollars and it is the most loyal thing in my life.",
+          "gag": true,
+          "show": [
+            {
+              "v": "shot",
+              "shot": "R"
+            },
+            {
+              "on": "four",
+              "v": "count",
+              "to": 4,
+              "prefix": "$",
+              "color": "green"
+            },
+            {
+              "on": "loyal",
+              "v": "pose",
+              "pose": "grin_cheer"
+            }
+          ]
+        },
+        {
+          "say": "Rent is due on Friday and I am out of toilet paper so I walk into the store.",
+          "show": [
+            {
+              "v": "shot",
+              "shot": "R",
+              "from": 5
+            },
+            {
+              "on": "toilet",
+              "v": "text",
+              "text": "OUT OF TOILET PAPER",
+              "color": "white"
+            }
+          ]
+        },
+        {
+          "say": "The big pack is cheaper per roll but it costs more today and today I have four dollars.",
+          "gag": true,
+          "show": [
+            {
+              "v": "shot",
+              "shot": "P"
+            },
+            {
+              "on": "cheaper",
+              "v": "text",
+              "text": "BIG PACK = CHEAPER",
+              "color": "green"
+            },
+            {
+              "on": "today",
+              "v": "text",
+              "text": "BUT NOT TODAY",
+              "color": "red"
+            },
+            {
+              "on": "four",
+              "v": "pose",
+              "pose": "neutral_shrug"
+            }
+          ]
+        },
+        {
+          "say": "So I buy the small pack and I just paid extra for being broke.",
+          "punch": true,
+          "show": [
+            {
+              "v": "pose",
+              "pose": "think_think"
+            },
+            {
+              "on": "extra",
+              "v": "stamp",
+              "text": "PAID EXTRA"
+            }
+          ]
+        },
+        {
+          "say": "Researchers at the University of Michigan checked this and poor families pay about five and a half percent more for every roll.",
+          "src": "S4",
+          "show": [
+            {
+              "v": "shot",
+              "shot": "P",
+              "from": 3
+            },
+            {
+              "on": "five",
+              "v": "count",
+              "to": 5.5,
+              "dec": 1,
+              "suffix": "% MORE PER ROLL",
+              "color": "yellow"
+            },
+            {
+              "on": "every",
+              "v": "still",
+              "shot": "P",
+              "t": 4,
+              "pose": "shock_panic"
+            }
+          ]
+        },
+        {
+          "say": "Rich families catch the sale more often because they have spare cash on the day the sale happens.",
+          "src": "S4",
+          "show": [
+            {
+              "v": "home",
+              "pose": "determined_present"
+            },
+            {
+              "v": "bars",
+              "rows": [
+                [
+                  "rich families buy on sale",
+                  39,
+                  "green"
+                ],
+                [
+                  "poor families buy on sale",
+                  28,
+                  "red"
+                ]
+              ]
+            },
+            {
+              "on": "spare",
+              "v": "text",
+              "text": "IT IS ABOUT SPARE CASH",
+              "color": "yellow"
+            }
+          ]
+        },
+        {
+          "say": "It is not that poor people are bad at math because the math is easy when you have the money.",
+          "src": "S4",
+          "show": [
+            {
+              "v": "pose",
+              "pose": "smug_point_you"
+            },
+            {
+              "on": "math",
+              "v": "burst",
+              "word": "MATH OK."
+            },
+            {
+              "on": "easy",
+              "v": "pose",
+              "pose": "determined_point_l"
+            }
+          ]
+        },
+        {
+          "say": "And a few cents on toilet paper sounds tiny until you see what the bank does with the same four dollars.",
+          "gag": true,
+          "open": [
+            "L3"
+          ],
+          "show": [
+            {
+              "v": "still",
+              "shot": "R",
+              "t": 2,
+              "pose": "think_think"
+            },
+            {
+              "on": "bank",
+              "v": "shot",
+              "shot": "G"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "THE BANK",
+      "mood": "tense",
+      "set": [
+        "G",
+        3
+      ],
+      "lines": [
+        {
+          "say": "I walk into the bank to open a savings account like a responsible adult.",
+          "show": [
+            {
+              "v": "shot",
+              "shot": "G"
+            },
+            {
+              "on": "savings",
+              "v": "text",
+              "text": "OPEN A SAVINGS ACCOUNT",
+              "color": "white"
+            }
+          ]
+        },
+        {
+          "say": "The paper says I need five hundred dollars just to keep the account free.",
+          "show": [
+            {
+              "v": "shot",
+              "shot": "D"
+            },
+            {
+              "on": "five",
+              "v": "count",
+              "to": 500,
+              "prefix": "$",
+              "suffix": " MINIMUM",
+              "color": "red"
+            }
+          ]
+        },
+        {
+          "say": "That is the number one reason people in America have no bank account at all.",
+          "src": "S3",
+          "show": [
+            {
+              "v": "macro",
+              "lines": [
+                "Most cited reason for not having a bank account",
+                "[Don't have enough money to meet minimum balance requirements]",
+                "2023 FDIC National Survey"
+              ],
+              "far": [
+                "Unbanked and Underbanked Households",
+                "Executive Summary"
+              ]
+            },
+            {
+              "on": "america",
+              "v": "count",
+              "to": 5.6,
+              "dec": 1,
+              "suffix": " MILLION HOUSEHOLDS",
+              "color": "yellow"
+            }
+          ]
+        },
+        {
+          "say": "So I keep my account with no minimum and then my card goes one dollar below zero.",
+          "show": [
+            {
+              "v": "shot",
+              "shot": "D",
+              "from": 4
+            },
+            {
+              "on": "below",
+              "v": "text",
+              "text": "-$1",
+              "color": "red",
+              "size": 200
+            }
+          ]
+        },
+        {
+          "say": "Have a guess what one dollar below zero costs me.",
+          "punch": true,
+          "show": [
+            {
+              "v": "pose",
+              "pose": "think_think"
+            },
+            {
+              "on": "guess",
+              "v": "text",
+              "text": "HAVE A GUESS…",
+              "color": "yellow"
+            }
+          ]
+        },
+        {
+          "say": "Thirty five dollars for a one dollar mistake.",
+          "show": [
+            {
+              "v": "shot",
+              "shot": "F"
+            },
+            {
+              "on": "thirty",
+              "v": "count",
+              "to": 35,
+              "prefix": "$",
+              "suffix": " FEE",
+              "color": "red"
+            },
+            {
+              "on": "mistake",
+              "v": "sfx",
+              "sound": "fail"
+            }
+          ]
+        },
+        {
+          "say": "Banks in America collected five point eight billion dollars from fees like this in one year.",
+          "src": "S1",
+          "show": [
+            {
+              "v": "shot",
+              "shot": "T"
+            },
+            {
+              "on": "five",
+              "v": "count",
+              "to": 5.8,
+              "dec": 1,
+              "prefix": "$",
+              "suffix": " BILLION",
+              "color": "green"
+            }
+          ]
+        },
+        {
+          "say": "And here is the twist because back in twenty nineteen it was almost twelve billion.",
+          "src": "S1",
+          "show": [
+            {
+              "v": "shot",
+              "shot": "T",
+              "from": 6
+            },
+            {
+              "on": "twelve",
+              "v": "count",
+              "to": 11.96,
+              "dec": 2,
+              "prefix": "$",
+              "suffix": " BILLION IN 2019",
+              "color": "yellow"
+            }
+          ]
+        },
+        {
+          "say": "Rules and public anger cut it in half and the average family that overdrafts now keeps about one hundred eighty five dollars a year.",
+          "src": "S1",
+          "show": [
+            {
+              "v": "home",
+              "pose": "grin_cheer"
+            },
+            {
+              "v": "bars",
+              "rows": [
+                [
+                  "2019 fees (billion $)",
+                  11.96,
+                  "red"
+                ],
+                [
+                  "2023 fees (billion $)",
+                  5.83,
+                  "green"
+                ]
+              ]
+            },
+            {
+              "on": "half",
+              "v": "text",
+              "text": "CUT IN HALF",
+              "color": "green"
+            },
+            {
+              "on": "hundred",
+              "v": "count",
+              "to": 185,
+              "prefix": "+$",
+              "suffix": " A YEAR",
+              "color": "green"
+            }
+          ]
+        },
+        {
+          "say": "Good news for my four dollars except that when the bank says no there is another door right across the street.",
+          "gag": true,
+          "open": [
+            "L4"
+          ],
+          "show": [
+            {
+              "v": "pose",
+              "pose": "grin_cheer"
+            },
+            {
+              "on": "except",
+              "v": "pose",
+              "pose": "shock_panic"
+            },
+            {
+              "on": "door",
+              "v": "shot",
+              "shot": "L"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "THE LOAN",
+      "mood": "sad",
+      "set": [
+        "L",
+        1
+      ],
+      "lines": [
+        {
+          "say": "Friday comes and the rent is still due and my paycheck is still a week away.",
+          "show": [
+            {
+              "v": "shot",
+              "shot": "R",
+              "from": 9
+            },
+            {
+              "on": "paycheck",
+              "v": "text",
+              "text": "PAYCHECK: 7 DAYS AWAY",
+              "color": "yellow"
+            }
+          ]
+        },
+        {
+          "say": "The payday loan shop gives me cash in ten minutes and I only pay fifteen dollars for every hundred.",
+          "show": [
+            {
+              "v": "shot",
+              "shot": "L"
+            },
+            {
+              "on": "fifteen",
+              "v": "count",
+              "to": 15,
+              "prefix": "$",
+              "suffix": " PER $100",
+              "color": "red"
+            }
+          ]
+        },
+        {
+          "say": "Fifteen percent sounds like a bad deal but not a monster.",
+          "punch": true,
+          "show": [
+            {
+              "v": "pose",
+              "pose": "neutral_shrug"
+            },
+            {
+              "on": "monster",
+              "v": "burst",
+              "word": "RIGHT?"
+            }
+          ]
+        },
+        {
+          "say": "Except the loan lasts only two weeks so over a whole year that price is almost four hundred percent.",
+          "src": "S2",
+          "show": [
+            {
+              "v": "macro",
+              "lines": [
+                "a typical two-week payday loan with a $15 per $100 fee",
+                "equates to an [annual percentage rate (APR) of almost 400%]",
+                "Consumer Financial Protection Bureau"
+              ],
+              "far": [
+                "Ask CFPB",
+                "payday loan"
+              ]
+            },
+            {
+              "on": "two",
+              "v": "text",
+              "text": "ONLY 2 WEEKS",
+              "color": "white"
+            },
+            {
+              "on": "four",
+              "v": "count",
+              "to": 400,
+              "suffix": "% A YEAR",
+              "color": "red"
+            }
+          ]
+        },
+        {
+          "say": "A credit card for someone with money is around twenty and this is twenty times worse.",
+          "show": [
+            {
+              "v": "shot",
+              "shot": "L",
+              "from": 6
+            },
+            {
+              "on": "twenty",
+              "n": 1,
+              "v": "stamp",
+              "text": "20× WORSE"
+            }
+          ]
+        },
+        {
+          "say": "And when the two weeks end most people do not have the money so they borrow again to pay the first loan.",
+          "show": [
+            {
+              "v": "still",
+              "shot": "L",
+              "t": 9,
+              "pose": "sleep_slump"
+            },
+            {
+              "on": "borrow",
+              "v": "text",
+              "text": "BORROW AGAIN",
+              "color": "red"
+            },
+            {
+              "on": "first",
+              "v": "text",
+              "text": "TO PAY LOAN #1",
+              "color": "white"
+            }
+          ]
+        },
+        {
+          "say": "Now I am paying a fee to pay a fee for a fee and my four dollars has left the chat.",
+          "gag": true,
+          "show": [
+            {
+              "v": "shot",
+              "shot": "F",
+              "from": 3
+            },
+            {
+              "on": "four",
+              "v": "pose",
+              "pose": "shock_panic"
+            },
+            {
+              "on": "chat",
+              "v": "burst",
+              "word": "BYE."
+            }
+          ]
+        },
+        {
+          "say": "So here is the toilet paper secret I promised you because it was never about the toilet paper.",
+          "close": [
+            "L2"
+          ],
+          "show": [
+            {
+              "v": "still",
+              "shot": "P",
+              "t": 4,
+              "pose": "determined_present"
+            },
+            {
+              "on": "never",
+              "v": "text",
+              "text": "NEVER ABOUT THE PAPER",
+              "color": "yellow"
+            }
+          ]
+        },
+        {
+          "say": "The store and the bank and the loan shop all charge the most to the person with the least spare cash.",
+          "close": [
+            "L3"
+          ],
+          "show": [
+            {
+              "v": "shot",
+              "shot": "W"
+            },
+            {
+              "on": "most",
+              "v": "text",
+              "text": "LEAST CASH = HIGHEST PRICE",
+              "color": "red"
+            }
+          ]
+        },
+        {
+          "say": "But there is one thing all three are scared of and it costs less than a pizza.",
+          "open": [
+            "L5"
+          ],
+          "show": [
+            {
+              "v": "pose",
+              "pose": "smug_point_you"
+            },
+            {
+              "on": "scared",
+              "v": "burst",
+              "word": "SCARED?"
+            },
+            {
+              "on": "pizza",
+              "v": "pose",
+              "pose": "grin_cheer"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "THE ANSWER",
+      "mood": "think",
+      "set": [
+        "E",
+        2
+      ],
+      "lines": [
+        {
+          "say": "So why does being broke cost more than being rich?",
+          "show": [
+            {
+              "v": "shot",
+              "shot": "E"
+            },
+            {
+              "on": "broke",
+              "v": "text",
+              "text": "WHY?",
+              "color": "yellow",
+              "size": 200
+            }
+          ]
+        },
+        {
+          "say": "You would think the answer is just earn more money.",
+          "show": [
+            {
+              "v": "pose",
+              "pose": "determined_point_l"
+            },
+            {
+              "on": "earn",
+              "v": "text",
+              "text": "EARN MORE?",
+              "color": "white"
+            }
+          ]
+        },
+        {
+          "say": "Nope because the real price tag is not on your income but on your cushion.",
+          "punch": true,
+          "show": [
+            {
+              "v": "pose",
+              "pose": "smug_point_you"
+            },
+            {
+              "on": "nope",
+              "v": "burst",
+              "word": "NOPE."
+            },
+            {
+              "on": "cushion",
+              "v": "stamp",
+              "text": "IT'S THE CUSHION",
+              "color": "yellow"
+            }
+          ]
+        },
+        {
+          "say": "When you have no cushion every small problem gets sold back to you at the highest price in town.",
+          "close": [
+            "L1"
+          ],
+          "show": [
+            {
+              "v": "shot",
+              "shot": "W",
+              "from": 4
+            },
+            {
+              "on": "highest",
+              "v": "text",
+              "text": "HIGHEST PRICE IN TOWN",
+              "color": "red"
+            }
+          ]
+        },
+        {
+          "say": "And the thing they are all scared of is a tiny emergency fund that starts with twenty dollars.",
+          "close": [
+            "L5"
+          ],
+          "show": [
+            {
+              "v": "shot",
+              "shot": "E",
+              "from": 5
+            },
+            {
+              "on": "emergency",
+              "v": "text",
+              "text": "EMERGENCY FUND",
+              "color": "yellow"
+            },
+            {
+              "on": "twenty",
+              "v": "count",
+              "to": 20,
+              "prefix": "$",
+              "suffix": " CUSHION",
+              "color": "green"
+            }
+          ]
+        },
+        {
+          "say": "Twenty dollars set aside means no overdraft and no loan shop and one day the big pack of toilet paper.",
+          "close": [
+            "L4"
+          ],
+          "show": [
+            {
+              "v": "home",
+              "pose": "grin_cheer"
+            },
+            {
+              "v": "checks",
+              "title": "WHAT $20 SET ASIDE BEATS",
+              "rows": [
+                [
+                  "No overdraft fee",
+                  "saves $35"
+                ],
+                [
+                  "No payday loan",
+                  "dodges ~400% a year"
+                ],
+                [
+                  "The big pack",
+                  "cheaper per roll"
+                ]
+              ]
+            },
+            {
+              "on": "loan",
+              "v": "burst",
+              "word": "BYE LOANS."
+            }
+          ]
+        },
+        {
+          "say": "My four dollars is now my four dollars plus sixteen and it feels like a fortress.",
+          "gag": true,
+          "show": [
+            {
+              "v": "still",
+              "shot": "E",
+              "t": 4,
+              "pose": "grin_cheer"
+            },
+            {
+              "on": "sixteen",
+              "v": "count",
+              "to": 20,
+              "prefix": "$",
+              "color": "green"
+            },
+            {
+              "on": "fortress",
+              "v": "burst",
+              "word": "FORTRESS."
+            }
+          ]
+        },
+        {
+          "say": "Now tell me in the comments what is the most expensive thing about being broke where you live.",
+          "show": [
+            {
+              "v": "pose",
+              "pose": "smug_point_you"
+            },
+            {
+              "on": "comments",
+              "v": "text",
+              "text": "↓ TELL ME IN THE COMMENTS",
+              "color": "yellow"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
