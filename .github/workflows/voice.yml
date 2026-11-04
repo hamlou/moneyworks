@@ -73,8 +73,10 @@ jobs:
             ~/cbenv
             ~/.cache/huggingface
           key: cbenv-py311-v1
-      - if: steps.env.outputs.cache-hit != 'true'
-        run: python -m venv ~/cbenv && ~/cbenv/bin/pip install -q --extra-index-url https://download.pytorch.org/whl/cpu chatterbox-tts faster-whisper numpy soundfile
+      - run: |  # a restored cache can come back broken (exit 127: python missing) → verify, reinstall if needed (autopilot 5 Nov 2026)
+          if ! ~/cbenv/bin/python -c "import chatterbox, faster_whisper, soundfile" 2>/dev/null; then
+            rm -rf ~/cbenv && python -m venv ~/cbenv && ~/cbenv/bin/pip install -q --extra-index-url https://download.pytorch.org/whl/cpu chatterbox-tts faster-whisper numpy soundfile
+          fi
       - run: ~/cbenv/bin/python pipeline/tts_cb.py ${{ needs.plan.outputs.ep }} --shard ${{ matrix.i }} --of ${{ needs.plan.outputs.n }}
       - uses: actions/upload-artifact@v4
         with:
