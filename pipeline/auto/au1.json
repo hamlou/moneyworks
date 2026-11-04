@@ -95,7 +95,7 @@
     "mood": "tense",
     "lines": [
       {
-        "say": "Banks made almost six billion dollars in one single year from people who did not have enough money in their account.",
+        "say": "Banks made six billion dollars in one year from people with no money.",
         "src": "S1",
         "show": [
           {
@@ -111,13 +111,13 @@
             "color": "green"
           },
           {
-            "on": "single",
+            "on": "one",
             "v": "text",
             "text": "IN ONE YEAR",
             "color": "yellow"
           },
           {
-            "on": "not",
+            "on": "no",
             "v": "text",
             "text": "FROM PEOPLE WITH $0",
             "color": "red"
@@ -125,21 +125,16 @@
         ]
       },
       {
-        "say": "And the people who paid it were not careless rich guys but the ones who had the least.",
+        "say": "And the ones who paid it had the least.",
         "show": [
           {
             "v": "pose",
             "pose": "shock_panic"
           },
           {
-            "on": "rich",
-            "v": "burst",
-            "word": "NOPE."
-          },
-          {
             "on": "least",
-            "v": "pose",
-            "pose": "neutral_shrug"
+            "v": "burst",
+            "word": "THE LEAST."
           }
         ]
       },
@@ -162,7 +157,7 @@
         ]
       },
       {
-        "say": "Stay with me because by the end you will know who is cashing in on your empty wallet and why one roll of toilet paper proves it.",
+        "say": "You will see who is cashing in and why toilet paper proves it.",
         "open": [
           "L2"
         ],
