@@ -8,8 +8,16 @@ API = "https://api.polyhaven.com"
 
 
 def get(url):
-    with urllib.request.urlopen(urllib.request.Request(url, headers=UA), timeout=120) as r:
-        return r.read()
+    import random, time
+    for i in range(8):  # 84 parallel CI jobs hit Poly Haven at once → retry dropped reads with backoff
+        try:
+            with urllib.request.urlopen(urllib.request.Request(url, headers=UA), timeout=120) as r:
+                return r.read()
+        except Exception as e:
+            if i == 7:
+                raise
+            print("retry", url, e, flush=True)
+            time.sleep(2 ** i + random.random() * 3)
 
 
 def js(url):
