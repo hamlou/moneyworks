@@ -7,6 +7,9 @@ Any AI (Gemini CLI, Qwen Code, ChatGPT) or a person can make an ea1-quality vide
 ```
 py tools/auto.py check <id>    # fix every ✗ until "SPEC OK"
 py tools/auto.py all <id>      # voice → plan → 3D shots → final video in videos/<id>/  (1-3 h, all free on GitHub)
+# PC is weak: if a waiting command gets killed, the GitHub job keeps going. Resume with
+#   py tools/auto.py shots <id> --resume   then   py tools/auto.py render <id> --resume
+# videos/<id>/compare.md = cuts/pace/frozen/loudness vs the ea1 reference (OK / WORSE per line). Fix every WORSE.
 ```
 If a step fails, read the ✗ line. It tells you exactly what to change in the JSON. Fix it and run the same command again.
 Other commands: `voice`, `build`, `qa`, `shots`, `render` (the steps of `all`, one by one).
