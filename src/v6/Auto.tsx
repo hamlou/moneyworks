@@ -168,20 +168,16 @@ export const AutoEp: React.FC<{plan: Plan}> = ({plan}) => {
   const pu = ovs.find((o) => o.k === 'punch' && f >= o.from && f < o.to && o.from >= (b ? b.from : 0));
   const sh = ovs.filter((o) => o.k === 'shake' && f >= o.from && f < o.to).reduce((m, o) => Math.max(m, o.amp * (1 - (f - o.from) / (o.to - o.from))), 0);
   const flash = b && b.flash && f - b.from < 2;
-  const fast = (pu && f - pu.from < 6) || sh > 4 || (b && f - b.from < 5 && i > 0);
+  // motion blur: real (CameraMotionBlur) only on the light overlay layer; the 3D video layer gets a cheap
+  // decaying CSS blur instead (multi-sample blur re-decodes video 6x per frame -> render timeout on CI).
+  const pb = pu ? Math.max(0, 6 - (f - pu.from)) : 0;
+  const eb = b && i > 0 ? Math.max(0, 5 - (f - b.from)) : 0;
+  const bgBlur = Math.max(pb, eb * 1.2, sh > 4 ? sh * 0.25 : 0);
+  const fast = bgBlur > 0;
   const chap = b && b.k === 'chapter';
   const whip = chap ? (1 - snap(f, b.from, 7)) * 260 : 0;
-  const layer = (
-    <AbsoluteFill style={{transform: `translate(${Math.sin(f * 2.9) * sh + whip}px, ${Math.cos(f * 3.7) * sh * 0.7}px)`}}>
-      {b ? (
-        <AbsoluteFill style={pu ? {transform: `scale(${pu.z + 0.002 * (f - pu.from)})`, transformOrigin: `${pu.ox}% ${pu.oy}%`} : undefined}>
-        <Sequence from={b.from} durationInFrames={Math.max(1, b.to - b.from)} layout="none">
-          <AbsoluteFill>
-            <Background id={id} b={b} fallback={fallback} />
-          </AbsoluteFill>
-        </Sequence>
-        </AbsoluteFill>
-      ) : null}
+  const ovs2 = (
+    <AbsoluteFill>
       {live.map((o, k) => (
         <Overlay key={k} f={f} o={o} />
       ))}
@@ -189,7 +185,18 @@ export const AutoEp: React.FC<{plan: Plan}> = ({plan}) => {
   );
   return (
     <AbsoluteFill style={{background: '#000'}}>
-      {fast ? <CameraMotionBlur shutterAngle={200} samples={6}>{layer}</CameraMotionBlur> : layer}
+      <AbsoluteFill style={{transform: `translate(${Math.sin(f * 2.9) * sh + whip}px, ${Math.cos(f * 3.7) * sh * 0.7}px)`}}>
+        {b ? (
+          <AbsoluteFill style={{...(pu ? {transform: `scale(${pu.z + 0.002 * (f - pu.from)})`, transformOrigin: `${pu.ox}% ${pu.oy}%`} : {}), filter: bgBlur > 0.3 ? `blur(${bgBlur.toFixed(1)}px)` : undefined}}>
+          <Sequence from={b.from} durationInFrames={Math.max(1, b.to - b.from)} layout="none">
+            <AbsoluteFill>
+              <Background id={id} b={b} fallback={fallback} />
+            </AbsoluteFill>
+          </Sequence>
+          </AbsoluteFill>
+        ) : null}
+        {fast ? <CameraMotionBlur shutterAngle={200} samples={5}>{ovs2}</CameraMotionBlur> : ovs2}
+      </AbsoluteFill>
       {chap ? <LightLeak t={f - b.from} /> : null}
       {flash ? <AbsoluteFill style={{background: '#fff', opacity: f === b.from ? 1 : 0.5}} /> : null}
       <Audio src={staticFile(`${id}/voice.flac`)} />

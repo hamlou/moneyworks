@@ -34,7 +34,7 @@ jobs:
         shell: bash
       - run: >
           npx remotion render src/v6/index.ts ${{ inputs.comp }} out/${{ inputs.comp }}.mp4
-          --gl=swangle --codec=h264 --crf=18 --pixel-format=yuv420p --concurrency=100% --log=warn
+          --gl=swangle --codec=h264 --crf=18 --pixel-format=yuv420p --concurrency=100% --timeout=120000 --log=warn
       - name: 10 fps contact sheets for QA
         run: |
           mkdir -p out/sheets
