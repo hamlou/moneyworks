@@ -4,6 +4,8 @@ import {Sfx, Cue} from '../fx';
 import {ANTON, UI, K, snap, Counter, ComicBurst, HomeBase} from './kit';
 import {Music, MSeg} from './kit2';
 import {MacroText} from './macro';
+import {noise2D} from '@remotion/noise';
+import {CameraMotionBlur} from '@remotion/motion-blur';
 
 // AUTOPILOT renderer: draws ANY episode from src/v6/auto/<id>.plan.json (written by tools/auto.py from the spec).
 // No per-episode code. Look = ea1 (owner-approved): 3D shots with push-ins, posed Dave cut-outs on blurred sets,
@@ -66,9 +68,29 @@ const Photo: React.FC<{id: string; file: string; label?: string}> = ({id, file, 
   );
 };
 
+// handheld drift (owner: never frozen). Perlin noise -> slow organic sway on every flat/card background.
+const Drift: React.FC<{seed: string; children: React.ReactNode}> = ({seed, children}) => {
+  const f = useCurrentFrame();
+  const x = noise2D(seed + 'x', f / 90, 0) * 14;
+  const y = noise2D(seed + 'y', 0, f / 90) * 10;
+  const r = noise2D(seed + 'r', f / 120, f / 120) * 0.4;
+  return <AbsoluteFill style={{transform: `translate(${x}px, ${y}px) rotate(${r}deg) scale(1.04)`}}>{children}</AbsoluteFill>;
+};
+// chapter light leak: warm burn sweeping across the first ~16 frames of a chapter card
+const LightLeak: React.FC<{t: number}> = ({t}) => {
+  if (t < 0 || t > 16) return null;
+  const o = t < 3 ? t / 3 : Math.max(0, 1 - (t - 3) / 13);
+  const cx = -20 + t * 9;
+  return <AbsoluteFill style={{mixBlendMode: 'screen', opacity: o, background: `radial-gradient(ellipse 60% 90% at ${cx}% 40%, rgba(255,236,200,1) 0%, rgba(255,150,60,.85) 30%, rgba(200,40,20,.35) 60%, transparent 80%)`}} />;
+};
+
 const Background: React.FC<{id: string; b: Bg; fallback: string}> = ({id, b, fallback}) => {
   const f = useCurrentFrame();
   if (b.k === 'shot') return <Shot3D id={id} n={b.n!} off={b.off ?? 0} len24={b.len24 ?? 120} />;
+  return <Drift seed={`${b.k}${b.from}`}><BgFlat id={id} b={b} fallback={fallback} /></Drift>;
+};
+const BgFlat: React.FC<{id: string; b: Bg; fallback: string}> = ({id, b, fallback}) => {
+  const f = useCurrentFrame();
   if (b.k === 'still') return (<><Still id={id} n={b.n!} t={b.t ?? 0} soft={!!b.pose} />{b.pose ? <Cut id={id} pose={b.pose} /> : null}</>);
   if (b.k === 'chapter') return <Chapter id={id} title={b.title!} n={b.n!} t={b.t ?? 0} />;
   if (b.k === 'macro') return <MacroText lines={b.lines!} far={b.far} />;
@@ -146,22 +168,29 @@ export const AutoEp: React.FC<{plan: Plan}> = ({plan}) => {
   const pu = ovs.find((o) => o.k === 'punch' && f >= o.from && f < o.to && o.from >= (b ? b.from : 0));
   const sh = ovs.filter((o) => o.k === 'shake' && f >= o.from && f < o.to).reduce((m, o) => Math.max(m, o.amp * (1 - (f - o.from) / (o.to - o.from))), 0);
   const flash = b && b.flash && f - b.from < 2;
+  const fast = (pu && f - pu.from < 6) || sh > 4 || (b && f - b.from < 5 && i > 0);
+  const chap = b && b.k === 'chapter';
+  const whip = chap ? (1 - snap(f, b.from, 7)) * 260 : 0;
+  const layer = (
+    <AbsoluteFill style={{transform: `translate(${Math.sin(f * 2.9) * sh + whip}px, ${Math.cos(f * 3.7) * sh * 0.7}px)`}}>
+      {b ? (
+        <AbsoluteFill style={pu ? {transform: `scale(${pu.z + 0.002 * (f - pu.from)})`, transformOrigin: `${pu.ox}% ${pu.oy}%`} : undefined}>
+        <Sequence from={b.from} durationInFrames={Math.max(1, b.to - b.from)} layout="none">
+          <AbsoluteFill>
+            <Background id={id} b={b} fallback={fallback} />
+          </AbsoluteFill>
+        </Sequence>
+        </AbsoluteFill>
+      ) : null}
+      {live.map((o, k) => (
+        <Overlay key={k} f={f} o={o} />
+      ))}
+    </AbsoluteFill>
+  );
   return (
     <AbsoluteFill style={{background: '#000'}}>
-      <AbsoluteFill style={{transform: `translate(${Math.sin(f * 2.9) * sh}px, ${Math.cos(f * 3.7) * sh * 0.7}px)`}}>
-        {b ? (
-          <AbsoluteFill style={pu ? {transform: `scale(${pu.z + 0.002 * (f - pu.from)})`, transformOrigin: `${pu.ox}% ${pu.oy}%`} : undefined}>
-          <Sequence from={b.from} durationInFrames={Math.max(1, b.to - b.from)} layout="none">
-            <AbsoluteFill>
-              <Background id={id} b={b} fallback={fallback} />
-            </AbsoluteFill>
-          </Sequence>
-          </AbsoluteFill>
-        ) : null}
-        {live.map((o, k) => (
-          <Overlay key={k} f={f} o={o} />
-        ))}
-      </AbsoluteFill>
+      {fast ? <CameraMotionBlur shutterAngle={200} samples={6}>{layer}</CameraMotionBlur> : layer}
+      {chap ? <LightLeak t={f - b.from} /> : null}
       {flash ? <AbsoluteFill style={{background: '#fff', opacity: f === b.from ? 1 : 0.5}} /> : null}
       <Audio src={staticFile(`${id}/voice.flac`)} />
       <Music segs={plan.music} />

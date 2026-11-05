@@ -795,7 +795,7 @@ def shots(eid):
     dst = Path(f"public/{eid}")
     dst.mkdir(parents=True, exist_ok=True)
     for p in tmp.glob("shot_*.mp4"):
-        sh(FF, "-v", "error", "-y", "-i", p, "-c:v", "libx264", "-crf", "23", "-pix_fmt", "yuv420p", "-an", dst / p.name)
+        shutil.copy(p, dst / p.name)
     for p in tmp.glob("cut_*.png"):
         shutil.copy(p, dst / p.name)
     print("SHOTS OK:", sorted(x.name for x in dst.glob("shot_*.mp4")))
@@ -816,10 +816,11 @@ def render(eid):
     sh(GH, "run", "download", rid, "-n", comp, "-D", tmp)
     shutil.copy(tmp / f"{comp}.mp4", out / f"{eid}.mp4")
     mp4 = out / f"{eid}.mp4"
-    sh(FF, "-v", "error", "-y", "-i", mp4, "-t", "12", "-vf", "fps=4,scale=320:-1,tile=8x6", "-frames:v", "1", out / "qa_hook.jpg")
-    sh(FF, "-v", "error", "-y", "-i", mp4, "-vf", "fps=1/6,scale=320:-1,tile=8x8", "-frames:v", "1", out / "qa_sheet.jpg")
-    r = subprocess.run([FF, "-i", str(mp4), "-af", "volumedetect", "-f", "null", "-"], capture_output=True, text=True).stderr
-    print("loudness:", " ".join(re.findall(r"(mean_volume: \S+ dB|max_volume: \S+ dB)", r)))
+    for q in ("qa_hook.jpg", "qa_sheet.jpg", "compare.md"):
+        if (tmp / q).exists():
+            shutil.copy(tmp / q, out / q)
+    if (out / "compare.md").exists():
+        print((out / "compare.md").read_text(encoding="utf8").split("```")[0])
     write_description(eid, out)
     print(f"DONE → {mp4}  (QA images: {out / 'qa_hook.jpg'}, {out / 'qa_sheet.jpg'})")
 

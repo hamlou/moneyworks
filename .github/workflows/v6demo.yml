@@ -27,6 +27,16 @@ jobs:
         run: |
           mkdir -p out/sheets
           ffmpeg -v error -i out/${{ inputs.comp }}.mp4 -vf "fps=10,scale=320:-1,tile=8x5" out/sheets/s%02d.jpg
+      - name: autopilot QA + compare vs ea1 (all on GitHub, owner PC is weak)
+        if: startsWith(inputs.comp, 'Auto-')
+        env: {GH_TOKEN: "${{ github.token }}"}
+        run: |
+          V=out/${{ inputs.comp }}.mp4
+          ffmpeg -v error -y -i $V -t 12 -vf "fps=4,scale=320:-1,tile=8x6" -frames:v 1 out/qa_hook.jpg
+          ffmpeg -v error -y -i $V -vf "fps=1/6,scale=320:-1,tile=8x8" -frames:v 1 out/qa_sheet.jpg
+          gh release download ref -p ea1.mp4 -D ref || true
+          if [ -f ref/ea1.mp4 ]; then python3 tools/compare.py out/compare.md $V ref/ea1.mp4; else python3 tools/compare.py out/compare.md $V; fi
+          cat out/compare.md >> "$GITHUB_STEP_SUMMARY"
       - uses: actions/upload-artifact@v4
         with:
           name: ${{ inputs.comp }}
