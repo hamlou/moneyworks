@@ -50,7 +50,14 @@ TPL = {  # template → (required params, optional params, motion-heavy for fram
     "towers": ([], ["a", "b", "outfit"], True),
     "building_walk": ([], ["dest", "sign", "outfit"], False),
     "headlines": (["headlines"], [], True),
+    # NEW 5 Nov: set built from the script with free Poly Haven ids (pipeline/ASSETS.md) — every episode looks different
+    "scene": (["sky"], ["ground", "room", "props", "hero", "hero_fx", "hero_size", "n", "move", "dave", "pose", "face", "sky_rot", "sky_power", "sun", "sign", "outfit"], True),
 }
+OLD_SETS = [t for t in TPL if t != "scene"]  # ea1's fixed sets: max 2 per episode (owner 5 Nov: au1 looked like the Abdul video)
+CAT = json.loads(Path("pipeline/catalog.json").read_text(encoding="utf8")) if Path("pipeline/catalog.json").exists() else {}
+BPOSES = ["idle", "hold", "look", "panic", "fists", "point_l", "point_you", "shrug", "count", "cheer", "sleep", "read", "slump"]
+FACES = ["neutral", "shock", "think", "spiral", "panic", "grin", "determined", "smug", "sleep", "dead"]
+MOVES, DACT, HFX = ["push", "orbit", "crane", "dolly", "low", "top"], ["stand", "walk_in", "none"], ["drop", "pop", "spin", "slide", "pile"]
 BG = {"shot": ["shot"], "still": ["shot", "t"], "pose": ["pose"], "macro": ["lines"], "home": [], "photo": ["file"]}
 OV = {"text": ["text"], "count": ["to"], "burst": ["word"], "stamp": ["text"], "bars": ["rows"], "checks": ["rows"], "sfx": ["sound"]}
 COLORS = {"white": "#F4F4F2", "yellow": "#FFD400", "red": "#FF3B3B", "green": "#5BE33B", "blue": "#5aa0ff"}
@@ -128,6 +135,50 @@ def check(eid, quiet=False):
         for k in ("paper", "giant", "total", "sign", "label"):
             if k in sh and len(str(sh[k])) > 40:
                 E.append(f"shot {n}: '{k}' text too long (max 40 chars)")
+    # variety gate: the look must come from THIS script, not from ea1
+    sc_ = {n: sh for n, sh in s["shots"].items() if sh.get("tpl") == "scene"}
+    old = [n for n, sh in s["shots"].items() if sh.get("tpl") in OLD_SETS]
+    if len(old) > 2:
+        E.append(f"shots {old}: max 2 ea1 sets per episode — rebuild the others as tpl 'scene' from the objects in the line")
+    if len(sc_) < 6:
+        E.append(f"need ≥ 6 'scene' shots (have {len(sc_)}) — each one = a sky + the objects the line talks about")
+    for n, sh in sc_.items():
+        if CAT:
+            if sh.get("sky") not in CAT["hdris"]:
+                E.append(f"shot {n}: sky '{sh.get('sky')}' not in pipeline/ASSETS.md skies")
+            for k in ("ground", "room"):
+                if sh.get(k) and sh[k] not in CAT["textures"]:
+                    E.append(f"shot {n}: {k} '{sh[k]}' not in pipeline/ASSETS.md textures")
+            for m in sh.get("props", []) + ([sh["hero"]] if sh.get("hero") else []):
+                if m not in CAT["models"]:
+                    E.append(f"shot {n}: model '{m}' not in pipeline/ASSETS.md models")
+        if not sh.get("hero") and not sh.get("props"):
+            E.append(f"shot {n}: a scene needs a 'hero' object (the thing the line names) and/or 'props'")
+        if len(sh.get("props", [])) > 6:
+            E.append(f"shot {n}: max 6 props")
+        for k, ok in (("move", MOVES), ("dave", DACT), ("hero_fx", HFX)):
+            if sh.get(k) and sh[k] not in ok:
+                E.append(f"shot {n}: {k} must be one of {ok}")
+        if sh.get("pose") and sh["pose"] not in BPOSES:
+            E.append(f"shot {n}: pose must be one of {BPOSES}")
+        if sh.get("face") and sh["face"] not in FACES:
+            E.append(f"shot {n}: face must be one of {FACES}")
+    skies = [sh.get("sky") for sh in sc_.values()]
+    if sc_ and len(set(skies)) < min(4, len(skies)):
+        E.append(f"scene shots use only {len(set(skies))} different skies — use ≥ 4 places (match each line's place)")
+    moves = [sh.get("move", "push") for sh in sc_.values()]
+    if sc_ and len(set(moves)) < 3:
+        E.append("scene shots: use ≥ 3 different camera moves")
+    past = set()
+    for q in Path("pipeline/auto").glob("*.json"):
+        if q.stem != eid:
+            try:
+                past |= {sh.get("sky") for sh in json.loads(q.read_text(encoding="utf8")).get("shots", {}).values() if sh.get("tpl") == "scene"}
+            except ValueError:
+                pass
+    rep = [x for x in set(skies) if x in past]
+    if len(rep) > len(set(skies)) // 2:
+        W.append(f"skies {rep} were used in earlier episodes — pick new places so the channel never looks repeated")
     used = set()
     L = lines_of(s)
     if not 3 <= len(s["hook"]["lines"]) <= 6:
@@ -556,7 +607,8 @@ def plan(eid):
     TS = {"rain": [(0, "ea1/cash_rain", 0.7)], "chair_spin": [(5 / 24, "ea1/k_spin", 0.7)], "office_walk": [(0, "ea1/door", 0.5), (0.2, "ea1/steps", 0.5)],
           "headlines": [(0, "ea1/co_paper", 0.6), (2.1, "ea1/co_book", 0.5)], "receipt": [(0.4, "ea1/co_paper2", 0.5), (0.4, "ea1/scribble", 0.4)],
           "ring": [(0.6, "ea1/k_boom", 0.4)], "walls": [(0.6, "ea1/k_slam", 0.6)], "towers": [(0.8, "ea1/cash_rain", 0.4)],
-          "flyaway": [(0, "whoosh", 0.4)], "sign_topple": [(0, "ea1/scribble", 0.4)], "lamp": [(0, "ea1/heart", 0.35)]}
+          "flyaway": [(0, "whoosh", 0.4)], "sign_topple": [(0, "ea1/scribble", 0.4)], "lamp": [(0, "ea1/heart", 0.35)],
+          "scene": [(0.45, "ea1/k_slam", 0.45)]}
     for n, a in first_use.items():
         for dt, snd, vol in TS.get(s["shots"][n]["tpl"], []):
             cues.append({"at": a + round(dt * FPS), "src": snd, "v": vol})
@@ -724,6 +776,8 @@ def textures(eid):
             ims["total"] = receipt_total(sh_["total"])
         if t == "street":
             ims["sign"] = board(sh_["sign"], 1000, 600, (200, 25, 25))
+        if t == "scene" and sh_.get("sign"):
+            ims["sign"] = board(sh_["sign"], 1000, 620, (245, 245, 240), (25, 25, 25), (200, 25, 25))
         if t in ("ring", "headlines"):
             for i, h in enumerate(sh_["headlines"]):
                 ims[f"news{i}"] = news(h, i)

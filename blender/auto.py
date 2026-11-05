@@ -3,13 +3,14 @@ pipeline/auto/<ep>.json ("shots": {"H": {"tpl": "rain", ...}}). Nobody writes Bl
 Run (CI does this): blender -b -P blender/<ep>.py -- --assets A --tex T --out O --frames "H:1-30"
 blender/<ep>.py is a 2-line stub written by tools/auto.py that sets AUTO_EP and execs this file.
 Templates (params in AUTOPILOT.md §4): rain office_walk chair_spin lamp desk_paper sign_topple receipt street seats ring
-grid walls flyaway room towers building_walk headlines. K = transparent Dave cut-outs (7 poses)."""
+grid walls flyaway room towers building_walk headlines + SCENE (built from the script: Poly Haven sky/ground/props,
+camera move, Dave action — every episode looks different). K = transparent Dave cut-outs (7 poses)."""
 import sys, os, math, json, random
 from mathutils import Vector
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, HERE)
-from lib import K, R, setup, Dave, flat, pbr, image_mat, box, plane, cam, blend, ease, back_out, finish, dof, world_hdri, POSES  # noqa: E402
+from lib import K, R, setup, Dave, flat, pbr, image_mat, box, plane, cam, blend, ease, back_out, finish, dof, world_hdri, POSES, import_model, dup, bbox, tree  # noqa: E402
 import bpy  # noqa: E402
 
 EP = os.environ.get("AUTO_EP") or globals().get("AUTO_EP")
@@ -667,6 +668,113 @@ elif TPL == "headlines":  # newspaper pages ("headlines" texts) rain onto a desk
     sc.camera.data.dof.use_dof = True
     sc.camera.data.dof.focus_object, sc.camera.data.dof.aperture_fstop = hero, 4.0
     FOCUS_DAVE = False
+
+elif TPL == "scene":  # NEW (5 Nov): the set comes from the SCRIPT, not from ea1. sky/ground/room/props/hero = Poly Haven CC0 ids
+    X = K.MAN.get("extra", {})
+    sky = P["sky"]
+    if sky in X.get("hdri", {}):
+        K.MAN.setdefault("moods", {})[sky] = X["hdri"][sky]
+        world_hdri(sky, float(P.get("sky_power", 1.0)), float(P.get("sky_rot", 0)))
+    else:
+        print("WARN sky not fetched", sky)
+        world_hdri("day", 1.0, 0)
+    gt = X.get("tex", {}).get(P.get("ground", ""))
+    plane("ground", (0, 0, 0), (60, 60), (0, 0, 0), pbr("g", gt, 0.5) if gt else pbr("g", K.MAN.get("concrete") or K.MAN["floor"], 0.5))
+    if P.get("room"):
+        wt = X.get("tex", {}).get(P["room"])
+        wm = pbr("w", wt, 0.5) if wt else flat("w", (0.8, 0.78, 0.74))
+        box("back", (0, 4.2, 1.8), (9, 0.15, 3.6), wm)
+        box("left", (-4.5, 0.6, 1.8), (0.15, 7.4, 3.6), wm)
+        box("right", (4.5, 0.6, 1.8), (0.15, 7.4, 3.6), wm)
+        light("ceil", "AREA", (0, 0.5, 3.4), None, energy=420, size=4, color=(1.0, 0.95, 0.88))
+    rr = random.Random(sum(map(ord, EP + SHOT)))
+
+    def put(mid, loc, rz=0.0, h=None):
+        try:
+            o = import_model(mid, loc, rz)
+        except Exception as e:
+            print("WARN model", mid, e)
+            return None
+        if h:
+            lo, hi = bbox(o)
+            k = h / max(0.05, hi.z - lo.z)
+            o.scale = (k, k, k)
+        lo, _ = bbox(o)
+        o.location.z -= lo.z
+        return o
+
+    # props: real objects named in the line, in an arc behind/beside Dave (never between Dave and the lens)
+    props = P.get("props", [])
+    for i, mid in enumerate(props):
+        a = math.pi * (0.15 + 0.7 * (i + 0.5) / max(1, len(props)))
+        r_ = 2.0 + rr.uniform(0, 1.2)
+        put(mid, (math.cos(a) * r_ * 1.4, 0.8 + math.sin(a) * r_, 0), rr.uniform(-0.6, 0.6))
+    if P.get("sign"):  # the line's words on a real 3D board on a post (price, name, number)
+        box("post", (-1.5, 1.6, 0.55), (0.08, 0.08, 1.1), flat("post", (0.15, 0.15, 0.16)))
+        sg = face_box("sign", (-1.5, 1.6, 1.45), (1.3, 0.06, 0.8), (0.9, 0.9, 0.9), tex("sign"), "-y")
+        sg.rotation_euler = (0, 0, R(12))
+    # hero object: the ONE thing the line is about, with its own motion
+    hero, fx, heroes = P.get("hero"), P.get("hero_fx", "drop"), []
+    if hero:
+        h0 = put(hero, (0.9, -0.4, 0), 0.3, float(P["hero_size"]) if P.get("hero_size") else None)
+        if h0:
+            heroes = [h0] + ([dup(h0, (0, 0, 0)) for _ in range(int(P.get("n", 24)) - 1)] if fx == "pile" else [])
+    base = [(o.location.copy(), o.rotation_euler.copy(), o.scale.copy(), rr.uniform(-1.2, 1.2), rr.uniform(-1.6, 1.6), rr.uniform(0.2, 2.6), rr.uniform(0, LEN * 0.6)) for o in heroes]
+    light("sun", "SUN", (0, 0, 10), (R(55), 0, R(rr.uniform(120, 240))), energy=float(P.get("sun", 1.6)), color=(1.0, 0.93, 0.84), angle=R(3))
+    act, move = P.get("dave", "stand"), P.get("move", "push")
+    if act == "none":
+        d.show(False)
+        FOCUS_DAVE = False
+    end_pose, face = P.get("pose", "point_you"), P.get("face", "determined")
+    for f in range(1, LEN + 1):
+        t = f / LEN
+        for o, (loc, rot, sc0, dx, dy, dz, t0) in zip(heroes, base):
+            if fx == "drop":
+                k = back_out(min(1, f / 14))
+                o.location = (loc.x, loc.y, loc.z + 4.0 * (1 - k))
+                o.rotation_euler = (rot.x, rot.y, rot.z + 0.6 * (1 - k))
+            elif fx == "pop":
+                k = back_out(min(1, f / 10))
+                o.scale = tuple(max(0.001, c * k) for c in sc0)
+                o.location = loc
+            elif fx == "spin":
+                o.rotation_euler = (rot.x, rot.y, rot.z + 2 * math.pi * ease(t))
+            elif fx == "slide":
+                k = back_out(min(1, f / 16))
+                o.location = (loc.x + 3.5 * (1 - k), loc.y, loc.z)
+            elif fx == "pile":
+                tt = max(0.0, (f - t0) / 24.0)
+                z = max(0.0, 7.0 - 0.5 * 9.81 * tt * tt) if f >= t0 else 9.0
+                o.location = (loc.x + dx, loc.y + dy * 0.8 + 1.0, loc.z + z * 1.0 + (dz * 0.08 if z == 0 else 0))
+                o.rotation_euler = (rot.x + dz * min(tt, 1), rot.y + dx * min(tt, 1), rot.z + dy)
+            kf(o, f, "location", "rotation_euler", "scale")
+        if act != "none":
+            if act == "walk_in" and f <= 40:
+                bob = d.legs_walk(f / 40 * 4 * math.pi)
+                d.place((-2.6 + 2.6 * ease(f / 40), 0.4, 0.72 + bob), R(-90 + 90 * ease(max(0, (f - 30) / 10))))
+                d.pose("idle")
+            else:
+                d.place((0.0, 0.4, 0.72), 0)
+                d.legs_set("stand")
+                d.pose(blend("idle" if act == "walk_in" else "look", end_pose, back_out((f - (44 if act == "walk_in" else 16)) / 7)))
+            d.live(f, "shock" if f < 16 else face, talking=f > 20)
+            d.life(f)
+            d.key(f)
+        k = ease(t)
+        tgt = (0.2, 0.4, 1.2)
+        if move == "orbit":
+            a = R(-70 + 50 * k)
+            key_cam(cam0, f, (math.cos(a) * 5.5, 0.4 + math.sin(a) * 5.5, 1.5), tgt, 26)
+        elif move == "crane":
+            key_cam(cam0, f, (0.6, -5.5 - 2 * k, 0.4 + 4.0 * k), (0.2, 0.6, 1.0 + 0.4 * k), 22)
+        elif move == "dolly":
+            key_cam(cam0, f, (-2.5 + 5 * k, -5.0, 1.4), tgt, 28)
+        elif move == "low":
+            key_cam(cam0, f, (0.8, -3.8 + 0.8 * k, 0.25), (0.2, 0.4, 1.5), 18)
+        elif move == "top":
+            key_cam(cam0, f, (0.2, -1.5 - 1.5 * k, 7.5 - 2.5 * k), (0.2, 0.6, 0.4), 24)
+        else:  # push
+            key_cam(cam0, f, (0.4, -6.2 + 2.0 * k, 1.35), tgt, 30)
 
 elif SHOT == "K":  # transparent Dave cut-outs: "K:shock_panic,smug_point_you,…" (face_pose)
     world_hdri("studio", 1.0, 0)

@@ -56,11 +56,33 @@ def texture(out, tid, res="1k"):
     return got
 
 
+def episode_ids(ep):
+    """autopilot: every Poly Haven id named in pipeline/auto/<ep>.json shots (sky, ground, room, props, hero)"""
+    p = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "pipeline", "auto", f"{ep}.json")
+    if not os.path.exists(p):
+        return set(), set(), set()
+    m, h, t = set(), set(), set()
+    for sh in json.load(open(p, encoding="utf8")).get("shots", {}).values():
+        m |= set(sh.get("props", [])) | ({sh["hero"]} if sh.get("hero") else set())
+        h |= {sh["sky"]} if sh.get("sky") else set()
+        t |= {sh[k] for k in ("ground", "room") if sh.get(k)}
+    return m, h, t
+
+
 def main():
     out, mids = sys.argv[1], sys.argv[2:]
+    ep = None
+    if "--ep" in mids:
+        i = mids.index("--ep")
+        ep, mids = mids[i + 1], mids[:i] + mids[i + 2:]
+    em, eh, et = episode_ids(ep) if ep else (set(), set(), set())
+    mids = list(dict.fromkeys(mids + sorted(em)))
     for m in mids:
-        model(out, m)
-        print("model", m)
+        try:
+            model(out, m)
+            print("model", m)
+        except Exception as e:
+            print("skip model", m, e)
     tex = js(f"{API}/assets?t=textures")
     floor = pick({k for k, v in tex.items() if "floor" in " ".join(v.get("categories", []))},
                  ["wood_floor", "laminate_floor_02", "wood_floor_deck", "herringbone_parquet", "wood_floor_worn"], ["wood"])
@@ -97,6 +119,20 @@ def main():
             man["ids"][key_] = tid
         except Exception as e:
             print("skip tex", key_, e)
+    man["extra"] = {"hdri": {}, "tex": {}}
+    for hid in sorted(eh):
+        try:
+            u = js(f"{API}/files/{hid}")["hdri"]["2k"]["hdr"]["url"]
+            path = os.path.join(out, "hdri", f"{hid}.hdr")
+            save(u, path)
+            man["extra"]["hdri"][hid] = os.path.relpath(path, out)
+        except Exception as e:
+            print("skip sky", hid, e)
+    for tid in sorted(et):
+        try:
+            man["extra"]["tex"][tid] = texture(out, tid)
+        except Exception as e:
+            print("skip tex", tid, e)
     json.dump(man, open(os.path.join(out, "manifest.json"), "w"), indent=1)
     print(json.dumps(man["ids"]))
 
