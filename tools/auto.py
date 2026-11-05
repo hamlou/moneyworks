@@ -385,8 +385,19 @@ def wait_run(workflow, sha=None, since=None, timeout=4 * 3600):
     if not rid:
         sys.exit(f"no {workflow} run found")
     print(f"waiting for {workflow} run {rid} …", flush=True)
-    code = sh(GH, "run", "watch", rid, "--exit-status", "--interval", "60", check=False)
-    if code:
+    # own poll loop: weak PC / flaky wifi -> a network error is retried, never treated as a failed run
+    while True:
+        r_ = subprocess.run([GH, "run", "view", str(rid), "--json", "status,conclusion"], capture_output=True, text=True)
+        try:
+            st = json.loads(r_.stdout)
+        except ValueError:
+            st = {}
+        if st.get("status") == "completed":
+            break
+        if time.time() - t0 > timeout:
+            sys.exit(f"{workflow} run {rid} still running after timeout — later: --resume")
+        time.sleep(60)
+    if st.get("conclusion") != "success":
         sys.exit(f"{workflow} run {rid} FAILED — open it: {GH} run view {rid} --log-failed")
     return rid
 
