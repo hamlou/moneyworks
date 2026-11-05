@@ -5,6 +5,7 @@ run-name: publish ${{ github.sha }}
 on:
   push:
     paths: [tools/PUBLISH]
+permissions: {contents: write, actions: read}
 jobs:
   publish:
     runs-on: ubuntu-latest
