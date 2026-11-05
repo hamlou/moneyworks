@@ -1,0 +1,21 @@
+name: publish
+run-name: publish ${{ github.sha }}
+# weak PC + flaky wifi: GitHub shrinks the final render to a ~20 MB watch copy and puts both on the "ref" release
+# (release assets resume after a dropped connection; artifact zips do not). tools/PUBLISH = "<run id> <id>"
+on:
+  push:
+    paths: [tools/PUBLISH]
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    env: {GH_TOKEN: "${{ github.token }}"}
+    steps:
+      - uses: actions/checkout@v4
+      - run: sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg
+      - run: |
+          read RID ID < tools/PUBLISH
+          gh run download $RID -n Auto-$ID -D a
+          ffmpeg -v error -y -i a/Auto-$ID.mp4 -vf scale=1280:-2 -c:v libx264 -crf 27 -preset slow -c:a aac -b:a 128k -movflags +faststart $ID\_send.mp4
+          cp a/Auto-$ID.mp4 $ID.mp4
+          gh release upload ref $ID.mp4 $ID\_send.mp4 a/compare.md#$ID-compare.md a/qa_hook.jpg#$ID-qa_hook.jpg a/qa_sheet.jpg#$ID-qa_sheet.jpg --clobber || gh release upload ref $ID.mp4 $ID\_send.mp4 --clobber
+          ls -la $ID*
