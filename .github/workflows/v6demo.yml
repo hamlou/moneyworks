@@ -20,6 +20,18 @@ jobs:
           cache: npm
       - run: sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg
       - run: npm ci --no-audit --no-fund
+      - name: autopilot shots straight from the Blender run (never via the owner's PC)
+        if: startsWith(inputs.comp, 'Auto-')
+        env: {GH_TOKEN: "${{ github.token }}", COMP: "${{ inputs.comp }}"}
+        run: |
+          ID=${COMP#Auto-}
+          if [ -f public/$ID/SHOTS_RUN ]; then
+            gh run download $(cat public/$ID/SHOTS_RUN) -n $ID-fast -D /tmp/shots
+            cp /tmp/shots/shot_*.mp4 public/$ID/
+            cp /tmp/shots/cut_*.png public/$ID/ 2>/dev/null || true
+            ls public/$ID
+          fi
+        shell: bash
       - run: >
           npx remotion render src/v6/index.ts ${{ inputs.comp }} out/${{ inputs.comp }}.mp4
           --gl=swangle --codec=h264 --crf=18 --pixel-format=yuv420p --concurrency=100% --log=warn

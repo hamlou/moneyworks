@@ -1,12 +1,10 @@
 name: compare
-run-name: compare ${{ inputs.vids }}
+run-name: compare
 # Objective pacing/sound comparison of videos stored as assets of the "ref" release (first = judged one).
+# trigger: write asset names (space-separated) into tools/COMPARE and push (dispatch needs the workflow on main)
 on:
-  workflow_dispatch:
-    inputs:
-      vids:
-        description: space-separated asset names, e.g. "au1.mp4 ea1.mp4"
-        default: ea1.mp4
+  push:
+    paths: [tools/COMPARE]
 jobs:
   compare:
     runs-on: ubuntu-latest
@@ -16,8 +14,8 @@ jobs:
       - run: sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg
       - run: |
           mkdir -p ref out
-          for v in ${{ inputs.vids }}; do gh release download ref -p "$v" -D ref; done
-          python3 tools/compare.py out/compare.md $(for v in ${{ inputs.vids }}; do echo ref/$v; done)
+          for v in $(cat tools/COMPARE); do gh release download ref -p "$v" -D ref; done
+          python3 tools/compare.py out/compare.md $(for v in $(cat tools/COMPARE); do echo ref/$v; done)
           cat out/compare.md >> "$GITHUB_STEP_SUMMARY"
       - uses: actions/upload-artifact@v4
         with: {name: compare, path: out, retention-days: 7}

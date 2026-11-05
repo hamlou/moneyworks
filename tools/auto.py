@@ -4,7 +4,7 @@ pipeline/auto/<id>.json (format: AUTOPILOT.md). Everything else is this script +
   py tools/auto.py check  <id>   gates on the spec (style, hook, loops, anchors, shots) — fix until "SPEC OK"
   py tools/auto.py voice  <id>   writes the voice script, pushes, waits for the Chatterbox voice (~5-15 min)
   py tools/auto.py build  <id>   voice timing → frame plan + shot lengths + textures + Blender stub + Remotion comp
-  py tools/auto.py shots  <id>   pushes, waits for the Blender render, copies shots into public/<id>/ (~30-90 min)
+  py tools/auto.py shots  <id>   pushes, waits for the Blender render, saves its run id (shots stay on GitHub) (--resume = take last finished run)
   py tools/auto.py render <id>   pushes, renders the final video on GitHub, downloads it to videos/<id>/ + QA images
   py tools/auto.py all    <id>   all of the above in order (stops at the first failing gate)
   py tools/auto.py qa     <id>   post-voice gates only (uses the real word timing)
@@ -389,6 +389,15 @@ def wait_run(workflow, sha=None, since=None, timeout=4 * 3600):
     if code:
         sys.exit(f"{workflow} run {rid} FAILED — open it: {GH} run view {rid} --log-failed")
     return rid
+
+
+def last_ok(workflow, title_has=""):
+    """resume after the waiter died (weak PC): newest SUCCESSFUL run of workflow, no push, no dispatch"""
+    r_ = subprocess.run([GH, "run", "list", "--workflow", workflow, "--limit", "30", "--json", "databaseId,conclusion,displayTitle"], capture_output=True, text=True)
+    for r in json.loads(r_.stdout or "[]"):
+        if r["conclusion"] == "success" and title_has in r["displayTitle"]:
+            return r["databaseId"]
+    sys.exit(f"no successful {workflow} run yet — still running? check: {GH} run list --workflow {workflow}")
 
 
 def utcnow():
@@ -784,31 +793,37 @@ def fmt(f):
 
 
 # ───────────────────────────── shots + final render ─────────────────────────────
-def shots(eid):
+def shots(eid, resume=False):
+    if resume:
+        return fetch_shots(eid, last_ok("blender.yml"))
     Path("blender/RUN").write_text(f"{eid} fast 12 cycles\n", encoding="utf8")
     paths = [f"blender/{eid}.py", f"blender/{eid}_lens.json", f"blender/{eid}.chunks", "blender/RUN", "blender/auto.py"] + [str(p) for p in Path("blender/tex").glob(f"{eid}_*.png")]
     sha = push(paths, f"{eid}: autopilot 3D shots")
-    rid = wait_run("blender.yml", sha=sha, timeout=6 * 3600)
-    tmp = Path(f"out/auto_{eid}")
-    shutil.rmtree(tmp, ignore_errors=True)
-    sh(GH, "run", "download", rid, "-n", f"{eid}-fast", "-D", tmp)
+    fetch_shots(eid, wait_run("blender.yml", sha=sha, timeout=6 * 3600))
+
+
+def fetch_shots(eid, rid):
+    """weak PC: shots stay on GitHub. Only the run id is saved; v6demo.yml pulls the <id>-fast artifact itself."""
     dst = Path(f"public/{eid}")
     dst.mkdir(parents=True, exist_ok=True)
-    for p in tmp.glob("shot_*.mp4"):
-        shutil.copy(p, dst / p.name)
-    for p in tmp.glob("cut_*.png"):
-        shutil.copy(p, dst / p.name)
-    print("SHOTS OK:", sorted(x.name for x in dst.glob("shot_*.mp4")))
+    (dst / "SHOTS_RUN").write_text(str(rid), encoding="utf8")
+    print(f"SHOTS OK: Blender run {rid} (artifact {eid}-fast stays on GitHub, render pulls it)")
 
 
-def render(eid):
+def render(eid, resume=False):
     comp = "Auto-" + eid
+    if resume:
+        return fetch_final(eid, last_ok("v6demo.yml", comp))
     paths = [f"public/{eid}", f"src/v6/auto/{eid}.plan.json", f"src/v6/{eid}_timing.json", "src/v6/autoEps.ts", "src/v6/Auto.tsx", "src/v6/Root.tsx"]
     push(paths, f"{eid}: autopilot final render inputs")
     since = utcnow()
     sh(GH, "workflow", "run", "v6demo.yml", "-f", f"comp={comp}", "--ref", sh("git", "branch", "--show-current", capture=True))
     time.sleep(10)
-    rid = wait_run("v6demo.yml", since=since)
+    fetch_final(eid, wait_run("v6demo.yml", since=since))
+
+
+def fetch_final(eid, rid):
+    comp = "Auto-" + eid
     out = Path(f"videos/{eid}")
     out.mkdir(parents=True, exist_ok=True)
     tmp = Path(f"out/final_{eid}")
@@ -851,9 +866,9 @@ if __name__ == "__main__":
     elif cmd == "qa":
         sys.exit(0 if qa(eid) else 1)
     elif cmd == "shots":
-        shots(eid)
+        shots(eid, "--resume" in sys.argv)
     elif cmd == "render":
-        render(eid)
+        render(eid, "--resume" in sys.argv)
     elif cmd == "all":
         if not check(eid):
             sys.exit(1)
@@ -861,7 +876,7 @@ if __name__ == "__main__":
         build(eid)
         if not qa(eid):
             sys.exit(1)
-        shots(eid)
-        render(eid)
+        shots(eid, "--resume" in sys.argv)
+        render(eid, "--resume" in sys.argv)
     else:
         sys.exit(__doc__)
