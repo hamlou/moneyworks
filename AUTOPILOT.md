@@ -132,6 +132,9 @@ Every shot may take `outfit` (hoodie suit doctor professor muscle), which swaps 
 Use 6-14 shots per video. Re-use a shot across neighbouring lines (it keeps playing) instead of defining a new one.
 
 ## 5. Free AI setup (no Claude needed)
+- EASIEST: free Gemini key from https://aistudio.google.com/apikey → `set GEMINI_API_KEY=<key>` → 
+  `py tools/write.py <id> "<topic idea>"` (researches with Google Search, writes the spec, loops on `check` until SPEC OK)
+  → `py tools/auto.py all <id>`.
 - Gemini CLI: `npm i -g @google/gemini-cli` → `gemini` in this folder (free with a Google account). It reads `GEMINI.md`.
 - Qwen Code (backup when Gemini's quota runs out): `npm i -g @qwen-code/qwen-code` → `qwen`.
 - Prompt: *"Read AUTOPILOT.md. Research <topic> (max 6 searches). Write pipeline/auto/<id>.json following every rule. Run

@@ -607,7 +607,8 @@ def plan(eid):
             o = {"from": a, "to": end, "k": v}
             col = COLORS.get(e.get("color", "yellow" if v == "count" else "white"))
             if v == "text":
-                o.update(text=e["text"], color=col, size=int(e.get("size", 120 if len(e["text"]) < 16 else 92)), x=110, y=90 + slot * 150)
+                big = ci == 0  # hook (owner 5 Nov: hook text too small) → ~1.7x, centred-left, one line per slot
+                o.update(text=e["text"], color=col, size=int(e.get("size", (200 if len(e["text"]) < 16 else 150) if big else (120 if len(e["text"]) < 16 else 92))), x=90, y=(70 + slot * 230) if big else 90 + slot * 150)
                 slot += 1
                 cues.append({"at": a, "src": "ea1/k_slam" if len(ovs) % 2 else "ea1/k_stop", "v": 0.5})
             elif v == "count":
@@ -683,8 +684,9 @@ def plan(eid):
     marks = sorted({b["from"] for b in bgs} | {o["from"] for o in ovs if o["k"] in ("text", "count", "burst", "stamp", "bars", "checks")} | {total})
     np_ = 0
     for a, b in zip(marks, marks[1:]):
-        if b - a > 84:
-            k = int((b - a) // 48)
+        lim, step = (45, 33) if a < hook_end else (84, 48)  # hook: new image every ≤ 1.5 s (target 0.5-1.5 s)
+        if b - a > lim:
+            k = int((b - a) // step)
             for j in range(1, k + 1):
                 x = a + round((b - a) * j / (k + 1))
                 kind = next((g["k"] for g in reversed(bgs) if g["from"] <= x), "shot")
