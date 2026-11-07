@@ -8,8 +8,9 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 KEY = os.environ.get("GEMINI_API_KEY", "")
-MODEL = os.environ.get("GEMINI_MODEL", "gemini-2.5-flash")
-URL = f"https://generativelanguage.googleapis.com/v1beta/models/{MODEL}:generateContent?key={KEY}"
+MODEL = os.environ.get("GEMINI_MODEL", "gemini-3.8-flash")  # writer (tested 7 Nov: works without search on free key)
+RMODEL = os.environ.get("GEMINI_RESEARCH_MODEL", "gemini-2.5-flash-lite")  # Google Search grounding works on free tier
+API = "https://generativelanguage.googleapis.com/v1beta/models/{}:generateContent"
 
 
 def ask(parts, search=False, temp=0.9):
@@ -18,7 +19,7 @@ def ask(parts, search=False, temp=0.9):
         body["tools"] = [{"google_search": {}}]
     for i in range(6):
         try:
-            req = urllib.request.Request(URL, json.dumps(body).encode(), {"Content-Type": "application/json"})
+            req = urllib.request.Request(API.format(RMODEL if search else MODEL), json.dumps(body).encode(), {"Content-Type": "application/json", "x-goog-api-key": KEY})
             r = json.loads(urllib.request.urlopen(req, timeout=300).read())
             return "".join(p.get("text", "") for p in r["candidates"][0]["content"]["parts"])
         except Exception as e:  # free tier: 429 / 503 → wait and retry
