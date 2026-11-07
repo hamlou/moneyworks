@@ -28,6 +28,21 @@ Other commands: `voice`, `build`, `qa`, `shots`, `render` (the steps of `all`, o
   exact words being said, plus a gag.
 - Topics: deep systemic money truths for everyone (see memory/topic list). No politics names in titles. No memes, no thumbnails.
 
+## 2b. CREATIVE IDENTITY — every video must feel like its own production
+Top of the spec: `"look": {"style": "...", "format": "...", "hook_form": "..."}`. `check` refuses the style or format of the last 2 episodes
+and the hook_form of the last one.
+- style (colour grade + headline font + palette): comic, noir, neon, documentary, cold, retro, marker, punch.
+  Match the topic: scams/debt → noir or cold; tech/apps → neon; history/how it started → documentary or retro; daily life → comic or marker.
+- format = the STORY ENGINE. Write the whole script inside it:
+  experiment (Dave tests it on himself: goal + deadline + scoreboard) · story (one day of one person) · countdown (ranked, worst last) ·
+  myth_bust (what everyone believes → proof) · trial (company/habit on trial, "you" are the judge) · heist (how they take your money as a heist plan) ·
+  game_show (you are the contestant, each round costs money) · investigation (follow one dollar from your wallet to who gets it) ·
+  time_travel (same money in the past / now / future) · simulation (two versions of you choose differently, watch both).
+- hook_form: question, shocking_number, cold_open (start mid-scene), challenge (dare the viewer), mistake (the error you are making right now),
+  prediction (what happens to your money next), confession (Dave admits something).
+- VIRAL basics (no exceptions): the title is a question or a withheld result a 12-year-old understands; the first frame already shows the prize;
+  every chapter ends on a new open question; one surprising TRUE number per chapter; one running joke that pays off at the end.
+
 ## 3. The file
 ```json
 {
@@ -83,7 +98,17 @@ Poses: shock_panic smug_point_you determined_present think_think neutral_shrug g
 | sfx | sound (names in tools/auto.py SFX): an extra sound |
 Colors: white yellow red green blue. Any event can also have `"sfx": "<name>"`.
 
-## 4. 3D shot templates (`shots`: one capital letter → template + params)
+## 4. 3D shots — USE `scene` (min 6 per video). The old ea1 sets below: max 2 per video.
+`scene` builds the set from YOUR line with free CC0 Poly Haven ids from `pipeline/ASSETS.md` (check rejects unknown ids):
+`{"tpl": "scene", "sky": "<place id>", "ground": "<texture id>", "room": "<texture id = indoor walls>", "props": ["<model id>", ... max 6],
+"hero": "<model id = THE object the line names>", "hero_fx": "drop|pop|spin|slide|pile", "hero_size": 0.5, "n": 20 (pile count),
+"sign": "WORDS ON A 3D BOARD (≤ 40 chars)", "move": "push|orbit|crane|dolly|low|top", "dave": "stand|walk_in|none", "pose": "...", "face": "..."}`
+- sky = WHERE the line happens (shop, bank hall, night street, bedroom, dawn field). ≥ 4 different skies per video; avoid skies of past episodes.
+- hero/props = WHAT the line names. No exact model? Use the closest object + a `sign` with the words.
+- ≥ 3 different camera moves. pose: idle hold look panic fists point_l point_you shrug count cheer sleep read slump.
+  face: neutral shock think spiral panic grin determined smug sleep dead.
+
+Old ea1 sets (max 2):
 | tpl | params | scene |
 |---|---|---|
 | rain | item ("cash" or a word), label?, dave? (false = into the lens: best frame 0) | stuff rains from the sky |

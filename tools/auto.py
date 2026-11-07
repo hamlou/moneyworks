@@ -61,6 +61,31 @@ MOVES, DACT, HFX = ["push", "orbit", "crane", "dolly", "low", "top"], ["stand", 
 BG = {"shot": ["shot"], "still": ["shot", "t"], "pose": ["pose"], "macro": ["lines"], "home": [], "photo": ["file"]}
 OV = {"text": ["text"], "count": ["to"], "burst": ["word"], "stamp": ["text"], "bars": ["rows"], "checks": ["rows"], "sfx": ["sound"]}
 COLORS = {"white": "#F4F4F2", "yellow": "#FFD400", "red": "#FF3B3B", "green": "#5BE33B", "blue": "#5aa0ff"}
+# CREATIVE IDENTITY (owner 7 Nov: "not all the productions look the same"). Every spec picks look.style + look.format +
+# look.hook_form; check blocks repeating the last episodes. style = colour grade + font + palette (yellow/red/green/blue remapped)
+STYLES = {
+    "comic":       {"grade": "saturate(1.25) contrast(1.1)", "font": "Bangers", "pal": {"yellow": "#FFD400", "red": "#FF3B3B", "green": "#5BE33B", "blue": "#5aa0ff"}},
+    "noir":        {"grade": "saturate(0.45) contrast(1.25) brightness(0.92)", "font": "BebasNeue", "pal": {"yellow": "#F4F4F2", "red": "#E01E1E", "green": "#BFBFBF", "blue": "#9aa4b5"}},
+    "neon":        {"grade": "saturate(1.5) contrast(1.15) hue-rotate(-12deg)", "font": "Bungee", "pal": {"yellow": "#00F0FF", "red": "#FF2BD6", "green": "#7CFF4F", "blue": "#8A5CFF"}},
+    "documentary": {"grade": "sepia(0.2) saturate(0.85) contrast(1.05)", "font": "Oswald", "pal": {"yellow": "#F2B33D", "red": "#C8442C", "green": "#8DB36B", "blue": "#6E8FAF"}},
+    "cold":        {"grade": "saturate(0.8) hue-rotate(12deg) brightness(0.97) contrast(1.08)", "font": "ArchivoBlack", "pal": {"yellow": "#BFE9FF", "red": "#FF5A5A", "green": "#6BFFC9", "blue": "#4FA3FF"}},
+    "retro":       {"grade": "sepia(0.38) saturate(1.25) contrast(1.12)", "font": "RubikMonoOne", "pal": {"yellow": "#FFC857", "red": "#E9724C", "green": "#A8C256", "blue": "#3E7CB1"}},
+    "marker":      {"grade": "saturate(1.1) brightness(1.03)", "font": "PermanentMarker", "pal": {"yellow": "#FFE066", "red": "#FF6B6B", "green": "#51CF66", "blue": "#4DABF7"}},
+    "punch":       {"grade": "saturate(1.15) contrast(1.2)", "font": "Anton", "pal": {"yellow": "#FFD400", "red": "#FF3B3B", "green": "#5BE33B", "blue": "#5aa0ff"}},
+}
+FORMATS = {  # the story engine of the episode (AUTOPILOT.md §creative explains each)
+    "experiment": "Dave tests it on himself with a goal a deadline and a scoreboard",
+    "story": "one person (you or Dave) lives it from morning to night",
+    "countdown": "ranked list counting down to the worst one",
+    "myth_bust": "the thing everyone believes then the proof it is wrong",
+    "trial": "a courtroom where a company or habit is on trial and you are the judge",
+    "heist": "how they take your money told like a heist plan step by step",
+    "game_show": "you are the contestant and every round costs you money",
+    "investigation": "follow the money from your wallet to who ends up with it",
+    "time_travel": "the same money in the past now and the future",
+    "simulation": "two versions of you make different choices and we watch both",
+}
+HOOK_FORMS = ["question", "shocking_number", "cold_open", "challenge", "mistake", "prediction", "confession"]
 MOODS = {
     "tense": ["hitman", "investigations", "scheming_weasel_faster"],
     "comic": ["comic_plodding", "monkeys_spinning_monkeys", "pixel_peeker_polka_faster", "life_of_riley"],
@@ -135,6 +160,20 @@ def check(eid, quiet=False):
         for k in ("paper", "giant", "total", "sign", "label"):
             if k in sh and len(str(sh[k])) > 40:
                 E.append(f"shot {n}: '{k}' text too long (max 40 chars)")
+    # creative identity gate: never the same look / format as the last 2 episodes, never the same hook form twice in a row
+    lk = s.get("look", {})
+    for k, ok in (("style", STYLES), ("format", FORMATS), ("hook_form", HOOK_FORMS)):
+        if lk.get(k) not in ok:
+            E.append(f"look.{k} must be one of {list(ok)}")
+    prev = sorted((q for q in Path("pipeline/auto").glob("*.json") if q.stem != eid), key=lambda q: q.stat().st_mtime)[-2:]
+    for i, q in enumerate(reversed(prev)):
+        try:
+            pl = json.loads(q.read_text(encoding="utf8")).get("look", {})
+        except ValueError:
+            continue
+        for k in ("style", "format") + (("hook_form",) if i == 0 else ()):
+            if pl.get(k) and pl.get(k) == lk.get(k):
+                E.append(f"look.{k} '{lk[k]}' was used by {q.stem} — pick another so videos never look alike")
     # variety gate: the look must come from THIS script, not from ea1
     sc_ = {n: sh for n, sh in s["shots"].items() if sh.get("tpl") == "scene"}
     old = [n for n, sh in s["shots"].items() if sh.get("tpl") in OLD_SETS]
@@ -670,7 +709,18 @@ def plan(eid):
     for b in bgs:
         if b["k"] == "shot":
             b["len24"] = lens[b["n"]]
-    P = {"id": eid, "title": s["title"], "frames": total, "hookEnd": hook_end, "bgs": bgs, "ovs": ovs, "music": music, "sfx": cues, "lens": lens}
+    st = STYLES.get(s.get("look", {}).get("style", "punch"), STYLES["punch"])
+    for o in ovs:  # remap the 4 accent colours to the episode's palette
+        for k in ("color",):
+            for name, hx in COLORS.items():
+                if o.get(k) == hx and name in st["pal"]:
+                    o[k] = st["pal"][name]
+        for r_ in o.get("rows", []) if isinstance(o.get("rows"), list) else []:
+            for name, hx in COLORS.items():
+                if isinstance(r_, dict) and r_.get("color") == hx and name in st["pal"]:
+                    r_["color"] = st["pal"][name]
+    P = {"id": eid, "title": s["title"], "frames": total, "hookEnd": hook_end, "bgs": bgs, "ovs": ovs, "music": music, "sfx": cues, "lens": lens,
+         "look": {"grade": st["grade"], "font": st["font"]}}
     Path("src/v6/auto").mkdir(exist_ok=True)
     Path(f"src/v6/auto/{eid}.plan.json").write_text(json.dumps(P), encoding="utf8")
     return P

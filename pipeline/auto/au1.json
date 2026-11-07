@@ -1069,5 +1069,10 @@
     }
    ]
   }
- ]
+ ],
+ "look": {
+  "style": "documentary",
+  "format": "experiment",
+  "hook_form": "shocking_number"
+ }
 }

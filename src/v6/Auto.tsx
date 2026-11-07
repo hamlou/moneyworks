@@ -6,13 +6,28 @@ import {Music, MSeg} from './kit2';
 import {MacroText} from './macro';
 import {noise2D} from '@remotion/noise';
 import {CameraMotionBlur} from '@remotion/motion-blur';
+import {loadFont as lBangers} from '@remotion/google-fonts/Bangers';
+import {loadFont as lBebas} from '@remotion/google-fonts/BebasNeue';
+import {loadFont as lBungee} from '@remotion/google-fonts/Bungee';
+import {loadFont as lOswald} from '@remotion/google-fonts/Oswald';
+import {loadFont as lArchivo} from '@remotion/google-fonts/ArchivoBlack';
+import {loadFont as lRubik} from '@remotion/google-fonts/RubikMonoOne';
+import {loadFont as lMarker} from '@remotion/google-fonts/PermanentMarker';
+
+// per-episode creative identity (plan.look from tools/auto.py STYLES): headline font + colour grade
+const FONTS: Record<string, () => string> = {
+  Bangers: () => lBangers().fontFamily, BebasNeue: () => lBebas().fontFamily, Bungee: () => lBungee().fontFamily,
+  Oswald: () => lOswald('normal', {weights: ['700']}).fontFamily, ArchivoBlack: () => lArchivo().fontFamily,
+  RubikMonoOne: () => lRubik().fontFamily, PermanentMarker: () => lMarker().fontFamily,
+};
+let HEAD = ANTON;
 
 // AUTOPILOT renderer: draws ANY episode from src/v6/auto/<id>.plan.json (written by tools/auto.py from the spec).
 // No per-episode code. Look = ea1 (owner-approved): 3D shots with push-ins, posed Dave cut-outs on blurred sets,
 // verbatim macro quotes, kinetic text, counters, bursts, Src line on every fact, flashes + shakes on hits.
 type Bg = {from: number; to: number; k: string; n?: string; off?: number; t?: number; len24?: number; pose?: string | null; set?: [string, number]; title?: string; lines?: string[]; far?: string[]; file?: string; label?: string; flash?: boolean};
 type Ov = {from: number; to: number; k: string; [x: string]: any};
-export type Plan = {id: string; title: string; frames: number; hookEnd: number; bgs: Bg[]; ovs: Ov[]; music: MSeg[]; sfx: Cue[]; lens: Record<string, number>};
+export type Plan = {id: string; title: string; frames: number; hookEnd: number; look?: {grade: string; font: string}; bgs: Bg[]; ovs: Ov[]; music: MSeg[]; sfx: Cue[]; lens: Record<string, number>};
 
 const OUTLINE = ['2px 0', '-2px 0', '0 2px', '0 -2px'].map((o) => `drop-shadow(${o} 0 #111)`).join(' ');
 
@@ -50,7 +65,7 @@ const Chapter: React.FC<{id: string; title: string; n: string; t: number}> = ({i
     <>
       <Still id={id} n={n} t={t} />
       <AbsoluteFill style={{alignItems: 'center', justifyContent: 'center'}}>
-        <div style={{fontFamily: ANTON, fontSize: title.length > 12 ? 150 : 210, color: '#fff', WebkitTextStroke: '8px #111', transform: `scale(${1.6 - 0.6 * snap(f, 2, 6)}) rotate(-3deg)`, textAlign: 'center', padding: '0 80px'}}>{title}</div>
+        <div style={{fontFamily: HEAD, fontSize: title.length > 12 ? 150 : 210, color: '#fff', WebkitTextStroke: '8px #111', transform: `scale(${1.6 - 0.6 * snap(f, 2, 6)}) rotate(-3deg)`, textAlign: 'center', padding: '0 80px'}}>{title}</div>
       </AbsoluteFill>
     </>
   );
@@ -62,7 +77,7 @@ const Photo: React.FC<{id: string; file: string; label?: string}> = ({id, file, 
       <HomeBase f={f} />
       <div style={{position: 'absolute', left: 200, top: 120, width: 1000, transformOrigin: '50% 60%', transform: `rotate(-2deg) scale(${snap(f, 0, 6) * (1 + 0.001 * f)})`, background: '#fff', padding: 14, boxShadow: '0 30px 60px rgba(0,0,0,.6)'}}>
         <Img src={staticFile(`${id}/${file}`)} style={{width: '100%', height: 640, objectFit: 'cover', display: 'block'}} />
-        {label ? <div style={{fontFamily: ANTON, fontSize: 52, color: '#111', textAlign: 'center', paddingTop: 10}}>{label}</div> : null}
+        {label ? <div style={{fontFamily: HEAD, fontSize: 52, color: '#111', textAlign: 'center', paddingTop: 10}}>{label}</div> : null}
       </div>
     </>
   );
@@ -103,7 +118,7 @@ const BgFlat: React.FC<{id: string; b: Bg; fallback: string}> = ({id, b, fallbac
 const Kinetic: React.FC<{f: number; o: Ov}> = ({f, o}) => {
   const k = snap(f, o.from, 5);
   return (
-    <div style={{position: 'absolute', left: o.x, top: o.y, maxWidth: 1250, fontFamily: ANTON, fontSize: o.size, lineHeight: 1.02, color: o.color, WebkitTextStroke: '5px #111', paintOrder: 'stroke fill', transform: `scale(${1.5 - 0.5 * k}) rotate(-3deg)`, transformOrigin: 'left center', opacity: Math.min(1, k * 2)}}>{o.text}</div>
+    <div style={{position: 'absolute', left: o.x, top: o.y, maxWidth: 1250, fontFamily: HEAD, fontSize: o.size, lineHeight: 1.02, color: o.color, WebkitTextStroke: '5px #111', paintOrder: 'stroke fill', transform: `scale(${1.5 - 0.5 * k}) rotate(-3deg)`, transformOrigin: 'left center', opacity: Math.min(1, k * 2)}}>{o.text}</div>
   );
 };
 const Bars: React.FC<{f: number; o: Ov}> = ({f, o}) => (
@@ -114,7 +129,7 @@ const Bars: React.FC<{f: number; o: Ov}> = ({f, o}) => (
         <div key={i} style={{marginBottom: 40}}>
           <div style={{fontFamily: UI, fontWeight: 600, fontSize: 44, color: '#fff', textShadow: '0 3px 8px #000'}}>{r.label}</div>
           <div style={{height: 76, background: 'rgba(42,44,51,.9)', borderRadius: 12, marginTop: 8, overflow: 'hidden'}}>
-            <div style={{width: `${(r.pct / o.max) * 100 * k}%`, height: '100%', background: r.color, display: 'flex', alignItems: 'center', justifyContent: 'flex-end', paddingRight: 20, fontFamily: ANTON, fontSize: 52, color: '#fff'}}>{(r.pct * k).toFixed(r.pct % 1 ? 1 : 0)}</div>
+            <div style={{width: `${(r.pct / o.max) * 100 * k}%`, height: '100%', background: r.color, display: 'flex', alignItems: 'center', justifyContent: 'flex-end', paddingRight: 20, fontFamily: HEAD, fontSize: 52, color: '#fff'}}>{(r.pct * k).toFixed(r.pct % 1 ? 1 : 0)}</div>
           </div>
         </div>
       );
@@ -123,10 +138,10 @@ const Bars: React.FC<{f: number; o: Ov}> = ({f, o}) => (
 );
 const Checks: React.FC<{f: number; o: Ov}> = ({f, o}) => (
   <div style={{position: 'absolute', left: 140, top: 170, width: 1000, background: '#f3efe4', borderRadius: 18, padding: 50, boxShadow: '0 30px 60px rgba(0,0,0,.6)', transform: `scale(${snap(f, o.from, 6)}) rotate(-1.5deg)`, transformOrigin: '30% 50%'}}>
-    {o.title ? <div style={{fontFamily: ANTON, fontSize: 64, color: '#1d2b4f', borderBottom: '4px solid #1d2b4f', paddingBottom: 14, marginBottom: 30}}>{o.title}</div> : null}
+    {o.title ? <div style={{fontFamily: HEAD, fontSize: 64, color: '#1d2b4f', borderBottom: '4px solid #1d2b4f', paddingBottom: 14, marginBottom: 30}}>{o.title}</div> : null}
     {o.rows.map((r: {text: string; sub: string; at: number}, i: number) => (
       <div key={i} style={{display: 'flex', alignItems: 'center', marginBottom: 30, opacity: f >= r.at ? 1 : 0.25}}>
-        <div style={{width: 80, height: 80, borderRadius: 12, border: '6px solid #1d2b4f', marginRight: 30, fontFamily: ANTON, fontSize: 70, color: '#2e9d43', textAlign: 'center', lineHeight: '78px'}}>{f >= r.at ? '✓' : ''}</div>
+        <div style={{width: 80, height: 80, borderRadius: 12, border: '6px solid #1d2b4f', marginRight: 30, fontFamily: HEAD, fontSize: 70, color: '#2e9d43', textAlign: 'center', lineHeight: '78px'}}>{f >= r.at ? '✓' : ''}</div>
         <div>
           <div style={{fontFamily: UI, fontWeight: 700, fontSize: 52, color: '#222'}}>{r.text}</div>
           {r.sub ? <div style={{fontFamily: UI, fontSize: 34, color: '#666'}}>{r.sub}</div> : null}
@@ -146,7 +161,7 @@ const Overlay: React.FC<{f: number; o: Ov}> = ({f, o}) => {
   if (o.k === 'burst') return <ComicBurst f={f} at={o.from} word={o.word} x={560} y={600} />;
   if (o.k === 'stamp')
     return (
-      <div style={{position: 'absolute', left: 160, top: 700, fontFamily: ANTON, fontSize: 110, color: o.color, border: `10px solid ${o.color}`, padding: '0 30px', background: 'rgba(0,0,0,.25)', transform: `rotate(-6deg) scale(${1.6 - 0.6 * snap(f, o.from, 4)})`}}>{o.text}</div>
+      <div style={{position: 'absolute', left: 160, top: 700, fontFamily: HEAD, fontSize: 110, color: o.color, border: `10px solid ${o.color}`, padding: '0 30px', background: 'rgba(0,0,0,.25)', transform: `rotate(-6deg) scale(${1.6 - 0.6 * snap(f, o.from, 4)})`}}>{o.text}</div>
     );
   if (o.k === 'bars') return <Bars f={f} o={o} />;
   if (o.k === 'checks') return <Checks f={f} o={o} />;
@@ -159,6 +174,8 @@ const Overlay: React.FC<{f: number; o: Ov}> = ({f, o}) => {
 
 export const AutoEp: React.FC<{plan: Plan}> = ({plan}) => {
   const f = useCurrentFrame();
+  HEAD = plan.look && FONTS[plan.look.font] ? FONTS[plan.look.font]() : ANTON;
+  const grade = plan.look?.grade;
   const {bgs, ovs, id} = plan;
   let i = 0;
   while (i + 1 < bgs.length && f >= bgs[i + 1].from) i++;
@@ -187,7 +204,7 @@ export const AutoEp: React.FC<{plan: Plan}> = ({plan}) => {
     <AbsoluteFill style={{background: '#000'}}>
       <AbsoluteFill style={{transform: `translate(${Math.sin(f * 2.9) * sh + whip}px, ${Math.cos(f * 3.7) * sh * 0.7}px)`}}>
         {b ? (
-          <AbsoluteFill style={{...(pu ? {transform: `scale(${pu.z + 0.002 * (f - pu.from)})`, transformOrigin: `${pu.ox}% ${pu.oy}%`} : {}), filter: bgBlur > 0.3 ? `blur(${bgBlur.toFixed(1)}px)` : undefined}}>
+          <AbsoluteFill style={{...(pu ? {transform: `scale(${pu.z + 0.002 * (f - pu.from)})`, transformOrigin: `${pu.ox}% ${pu.oy}%`} : {}), filter: [grade, bgBlur > 0.3 ? `blur(${bgBlur.toFixed(1)}px)` : ''].filter(Boolean).join(' ') || undefined}}>
           <Sequence from={b.from} durationInFrames={Math.max(1, b.to - b.from)} layout="none">
             <AbsoluteFill>
               <Background id={id} b={b} fallback={fallback} />
