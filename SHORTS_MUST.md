@@ -18,6 +18,10 @@
 - MUST: write the LAST line first; it must flow back into the first line (loop). Last frame ≈ first frame.
 - MUST: deliver exactly what the hook promises. S4 promised "who would fight hardest" and dodged it — never again.
 - MUST: chain beats with "but / so / because", never "and then". 5th-grade words. No commas in spoken lines. Numbers spoken as words.
+- NEVER: talk about the video itself — "stick around", "by the end of this", "today we are…", "let's see" [S4 lost 15 % of viewers in 5 s on exactly this, 0:22–0:27].
+- MUST: no stat/setup before the question — the "What if" question comes FIRST [S4 lost 40 % between 0:05 and 0:12 waiting for it].
+- KEEP: a loud recognisable opening (name/crowd/hit sound) + the question as big text on frame 0 [S4 held > 100 % in the first 4 s].
+- TARGET: ≥ 70 % "viewed" (S4 = 62.8 % → feed stopped pushing after ~36 h).
 - NEVER: "hey guys", intro, "follow for part 2", "subscribe", "tap it now", outro, CTA at the end. (Every Short with an end-CTA flopped.)
 - NEVER: a sentence cut mid-word (S4 ended on "Congress is the…" with "paper" missing).
 - NEVER: unrelated hashtags in the title (#investing #reversemortgage on a co-sign Short).

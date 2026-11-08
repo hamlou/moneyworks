@@ -156,3 +156,26 @@ For **each long video**, especially L13, L16, L12 and L19:
 9. **Traffic source split** (browse / suggested / search) — confirms whether the 600–900 views came from browse/suggested strangers who left early.
 
 Paste them as one line per video: `ID | swiped-away % | avg % viewed | avg duration | top traffic source | subs gained`.
+
+
+## S4 Abdul Short — REAL Studio analytics (owner screenshots, 8 Nov 2026) → analytics/done/S4-abdul-short_2026-11-08
+Numbers: 1.1k engaged views · 1k unique viewers · 8.9 h watch time · avg view 0:28 of 0:51 · **viewed 62.8 % / swiped 37.2 %** ·
++1 sub · 99.6 % new viewers · audience 82 % male, **65+ = 28.8 %**, 13–17 = 17.4 %, 35–64 ≈ 43 % · US 45 %, CA 7 %, UK 4.5 % · mobile 79 % ·
+views flat after ~day 1.5 (the feed stopped pushing once swipe-rate data came in).
+Retention curve (read from the graph, 0 % = bottom, 100 % line): starts **above 100 %** (re-watches) → **0:05–0:12 falls to ~70 %** →
+slow to ~56 % at 0:22 → **0:22–0:27 falls to ~41 %** → ~32 % at 0:35 → ~25 % at the end.
+
+WHY IT FAILED (with the second):
+- **0:05–0:12 = the biggest loss (~40 points).** After the name chant the viewer hears a stat ("33 million… less than one point") and has to wait
+  until 0:12 for the actual question. → The question MUST be said by 3 s.
+- **0:22–0:27 = second loss (~15 points).** "Stick around because by the end of this you will know…" + "But today we are making him president" —
+  pure filler / promise talk with nothing new. → NEVER talk about the video itself ("stick around", "by the end", "today we are").
+- 37 % swiped: 62.8 % viewed is below the ~70–80 % of Shorts the feed keeps pushing → pushing stopped after ~36 h.
+- Audience skewed old (65+ is the biggest group) and male → politics viewers, not our money audience → +1 sub only.
+
+GOOD POINTS TO KEEP:
+- **The first 4 seconds held > 100 %** (people re-watched the start): a famous name shouted + crowd energy + the "WHAT IF HE BECAME PRESIDENT?"
+  text on frame 0 works. Keep a loud, instantly recognisable opening (made with OUR own sounds — never reuse real clip audio).
+- "What if <famous person/event>" brought 60× more viewers than our explainer Shorts.
+- 0:12–0:22 (the president-day-one story) held almost flat (~70 → 56 %): a concrete scene ("day one he picks up the pen…") keeps people.
+- Ending mid-sentence probably made some re-watch (loop) — keep a real loop, but make it a complete, deliberate loop line.
