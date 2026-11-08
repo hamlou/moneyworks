@@ -24,6 +24,7 @@ jobs:
           if [ -n "$YT_CLIENT_ID" ] && [ -n "$YT_CLIENT_SECRET" ] && [ -n "$YT_REFRESH_TOKEN" ]; then echo "ok=1" >> "$GITHUB_OUTPUT"
           else echo "::notice::YT_* secrets not set — skipping (owner: run py tools/yt_auth.py once)"; fi
       - uses: actions/checkout@v4
+        with: {ref: shorts-playbook-rules}
         if: steps.s.outputs.ok
       - uses: actions/setup-python@v5
         if: steps.s.outputs.ok
