@@ -9,8 +9,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 # keys: GEMINI_API_KEYS (comma list) or GEMINI_API_KEY, else ~/.moneyworks_gemini (one key per line, NEVER in the repo: it is public)
 _kf = Path.home() / ".moneyworks_gemini"
-KEYS = [k.strip() for k in (os.environ.get("GEMINI_API_KEYS") or os.environ.get("GEMINI_API_KEY") or (_kf.read_text() if _kf.exists() else "")).replace(",", "
-").splitlines() if k.strip()]
+KEYS = [k.strip() for k in re.split(r"[,\s]+", os.environ.get("GEMINI_API_KEYS") or os.environ.get("GEMINI_API_KEY") or (_kf.read_text() if _kf.exists() else "")) if k.strip()]
 KEY = KEYS[0] if KEYS else ""
 MODEL = os.environ.get("GEMINI_MODEL", "gemini-3.8-flash")  # writer (tested 7 Nov: works without search on free key)
 RMODEL = os.environ.get("GEMINI_RESEARCH_MODEL", "gemini-2.5-flash-lite")  # Google Search grounding works on free tier
