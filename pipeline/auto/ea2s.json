@@ -18,9 +18,9 @@
   },
   {
    "id": "S2",
-   "short": "Axios, Nov 4 2026",
-   "url": "https://www.axios.com/2026/11/04/michigan-senate-results-el-sayed-rogers",
-   "fact": "El-Sayed (D) beat Mike Rogers (R) about 52.6% to 45.5% for U.S. Senate in Michigan (AP call 2:27 a.m. Nov 4)"
+   "short": "AP via KUTV, Nov 4 2026",
+   "url": "https://kutv.com/news/nation-world/michigan-us-senate-abdul-el-sayed-mike-rogers-projected-win-election-ballot-votes-politics-government-state",
+   "fact": "El-Sayed (D) beat Mike Rogers (R) with nearly 52% (AP tally) — first Muslim elected to the US Senate"
   },
   {
    "id": "S3",
@@ -221,29 +221,20 @@
     ]
    },
    {
-    "say": "Abdul El-Sayed beat Mike Rogers by seven points",
+    "say": "Abdul El-Sayed beat Mike Rogers with fifty two percent of Michigan",
     "src": "S2",
     "show": [
      {
       "v": "count",
-      "to": 52.6,
-      "dec": 1,
+      "to": 52,
       "suffix": "%",
       "color": "green"
      },
      {
-      "on": "Rogers",
-      "v": "count",
-      "to": 45.5,
-      "dec": 1,
-      "suffix": "%",
-      "color": "red"
-     },
-     {
-      "on": "seven",
-      "v": "text",
-      "text": "+7 POINTS",
-      "color": "yellow"
+      "on": "Michigan",
+      "v": "stamp",
+      "text": "WINNER",
+      "color": "green"
      }
     ]
    }
