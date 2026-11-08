@@ -315,6 +315,8 @@ def check(eid, quiet=False):
                 E.append(f"{lid}: color must be one of {list(COLORS)}")
             if v == "sfx" and e.get("sound") not in SFX + SFX_ROOT:
                 E.append(f"{lid}: sound '{e.get('sound')}' unknown — use one of {SFX + SFX_ROOT}")
+            if v == "clip":
+                E.append(f"{lid}: YouTube clips are OFF (owner 8 Nov: copyright risk) — use a 3D scene instead")
             if v == "clip" and (len(str(e.get("query", ""))) < 6 or len(str(e["query"])) > 80):
                 E.append(f"{lid}: clip query must be 6-80 chars (what the footage shows, e.g. 'empty apartment for rent sign')")
             if v == "photo" and not Path(f"public/{eid}/{e.get('file', '')}").exists():
