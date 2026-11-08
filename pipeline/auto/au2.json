@@ -1,0 +1,940 @@
+{
+ "id": "au2",
+ "title": "Why Is Your Rent So Expensive?",
+ "outfit": "suit",
+ "signoff": "I am Dave and I am moving back in with my couch.",
+ "description": "Why does rent keep going up every single year? Dave follows the trail from housing shortages to corporate landlords to uncover why shelter costs are skyrocketing and what actually brings prices down.",
+ "sources": [
+  {
+   "id": "S1",
+   "short": "Joint Center for Housing Studies of Harvard University, 2024",
+   "url": "https://www.jchs.harvard.edu/state-nations-housing-2024",
+   "fact": "median rents outpaced median household incomes in 88% of U.S. counties affecting 22 million cost burdened renters"
+  },
+  {
+   "id": "S2",
+   "short": "US Census Bureau Housing Data, 2023",
+   "url": "https://www.census.gov/housing/hvs/files/qtr423/q423press.pdf",
+   "fact": "housing demand grew by 26% while housing supply increased by 19% between 2000 and 2020"
+  },
+  {
+   "id": "S3",
+   "short": "Up For Growth Research Report, 2023",
+   "url": "https://upforgrowth.org/code-red/housing-underproduction-in-the-u-s-2023/",
+   "fact": "a 1% increase in new housing supply lowers average rent by 0.19%"
+  },
+  {
+   "id": "S4",
+   "short": "National Low Income Housing Coalition, 2023",
+   "url": "https://nlihc.org/gap",
+   "fact": "corporate landlords setting profit returns tend to charge higher rent than individual owners"
+  }
+ ],
+ "shots": {
+  "H": {
+   "tpl": "rain",
+   "item": "cash"
+  },
+  "T": {
+   "tpl": "towers",
+   "a": 55,
+   "b": 18
+  },
+  "A": {
+   "tpl": "scene",
+   "sky": "canary_wharf",
+   "ground": "asphalt_02",
+   "props": [
+    "concrete_road_barrier",
+    "modular_chainlink_fence"
+   ],
+   "hero": "cardboard_box_01",
+   "hero_fx": "drop",
+   "hero_size": 0.6,
+   "sign": "FOR RENT $2500",
+   "move": "push",
+   "pose": "panic",
+   "face": "panic"
+  },
+  "B": {
+   "tpl": "scene",
+   "sky": "hansaplatz",
+   "ground": "concrete_floor_02",
+   "props": [
+    "steel_frame_shelves_01",
+    "metal_office_desk"
+   ],
+   "hero": "CashRegister_01",
+   "hero_fx": "slide",
+   "hero_size": 0.6,
+   "sign": "RENT INCREASES AGAIN",
+   "move": "dolly",
+   "pose": "point_l",
+   "face": "determined"
+  },
+  "C": {
+   "tpl": "scene",
+   "sky": "buikslotermeerplein",
+   "ground": "pavement_03",
+   "props": [
+    "metal_trash_can",
+    "street_lamp_01"
+   ],
+   "hero": "wooden_crate_01",
+   "hero_fx": "pile",
+   "n": 22,
+   "hero_size": 0.5,
+   "sign": "DEMAND OUTPACES HOUSES",
+   "move": "orbit",
+   "pose": "shrug",
+   "face": "spiral"
+  },
+  "D": {
+   "tpl": "scene",
+   "sky": "solitude_night",
+   "ground": "granite_tile",
+   "props": [
+    "ClassicConsole_01",
+    "sofa_02"
+   ],
+   "hero": "alarm_clock_01",
+   "hero_fx": "pop",
+   "hero_size": 0.5,
+   "sign": "CORPORATE LANDLORDS",
+   "move": "crane",
+   "pose": "look",
+   "face": "shock"
+  },
+  "E": {
+   "tpl": "scene",
+   "sky": "spruit_sunrise",
+   "ground": "aerial_grass_rock",
+   "props": [
+    "planter_box_01",
+    "outdoor_table_chair_set_01"
+   ],
+   "hero": "wooden_crate_02",
+   "hero_fx": "drop",
+   "hero_size": 0.5,
+   "sign": "BUILD MORE HOUSES",
+   "move": "low",
+   "pose": "cheer",
+   "face": "grin"
+  },
+  "F": {
+   "tpl": "scene",
+   "sky": "brown_photostudio_02",
+   "ground": "laminate_floor_02",
+   "props": [
+    "SchoolDesk_01"
+   ],
+   "hero": "binder_notebook",
+   "hero_fx": "slide",
+   "hero_size": 0.5,
+   "sign": "THE LEASE AGREEMENT",
+   "move": "top",
+   "pose": "read",
+   "face": "think"
+  }
+ },
+ "hook": {
+  "mood": "tense",
+  "lines": [
+   {
+    "say": "Rent rose faster than paychecks in eighty eight percent of counties.",
+    "src": "S1",
+    "show": [
+     {
+      "v": "shot",
+      "shot": "H"
+     },
+     {
+      "v": "count",
+      "to": 88,
+      "suffix": "% OF COUNTIES",
+      "color": "red"
+     },
+     {
+      "on": "paychecks",
+      "v": "text",
+      "text": "PAYCHECKS LAG BEHIND",
+      "color": "yellow"
+     }
+    ]
+   },
+   {
+    "say": "And twenty two million renters paid the price.",
+    "src": "S1",
+    "show": [
+     {
+      "v": "pose",
+      "pose": "shock_panic"
+     },
+     {
+      "on": "renters",
+      "v": "count",
+      "to": 22000000,
+      "suffix": " COST BURDENED",
+      "color": "red"
+     }
+    ]
+   },
+   {
+    "say": "So why is your rent so expensive?",
+    "open": [
+     "L1"
+    ],
+    "show": [
+     {
+      "v": "shot",
+      "shot": "A"
+     },
+     {
+      "on": "rent",
+      "v": "text",
+      "text": "WHY SO EXPENSIVE?",
+      "color": "yellow",
+      "size": 180
+     }
+    ]
+   },
+   {
+    "say": "You will see who profits and the one secret that fixes it.",
+    "open": [
+     "L2"
+    ],
+    "show": [
+     {
+      "v": "pose",
+      "pose": "smug_point_you"
+     },
+     {
+      "on": "profits",
+      "v": "text",
+      "text": "WHO PROFITS?",
+      "color": "red"
+     },
+     {
+      "on": "fixes",
+      "v": "shot",
+      "shot": "B"
+     }
+    ]
+   }
+  ]
+ },
+ "chapters": [
+  {
+   "title": "THE NOTICE",
+   "mood": "sad",
+   "set": [
+    "A",
+    2
+   ],
+   "lines": [
+    {
+     "say": "Every month I open my mailbox and my landlord leaves me a little surprise envelope.",
+     "gag": true,
+     "show": [
+      {
+       "v": "shot",
+       "shot": "A"
+      },
+      {
+       "on": "surprise",
+       "v": "text",
+       "text": "RENT NOTICE ARRIVED",
+       "color": "red"
+      }
+     ]
+    },
+    {
+     "say": "My rent goes up another fifty dollars while my salary stays completely flat.",
+     "show": [
+      {
+       "v": "pose",
+       "pose": "sleep_slump"
+      },
+      {
+       "on": "fifty",
+       "v": "count",
+       "to": 50,
+       "prefix": "+$",
+       "suffix": " PER MONTH",
+       "color": "red"
+      }
+     ]
+    },
+    {
+     "say": "That rent notice in my hand is not just my personal problem.",
+     "gag": true,
+     "show": [
+      {
+       "v": "still",
+       "shot": "A",
+       "t": 3,
+       "pose": "neutral_shrug"
+      },
+      {
+       "on": "hand",
+       "v": "text",
+       "text": "SYSTEMIC PROBLEM",
+       "color": "yellow"
+      }
+     ]
+    },
+    {
+     "say": "Between two thousand and twenty twenty rent grew faster than income for almost every family.",
+     "src": "S1",
+     "show": [
+      {
+       "v": "macro",
+       "lines": [
+        "Joint Center for Housing Studies of Harvard University",
+        "median rents outpaced median household incomes in [88% of U.S. counties]",
+        "US Census Data Analysis"
+       ],
+       "far": [
+        "Housing Report",
+        "2024"
+       ]
+      },
+      {
+       "on": "faster",
+       "v": "text",
+       "text": "RENTS > INCOMES",
+       "color": "red"
+      }
+     ]
+    },
+    {
+     "say": "Eighty eight percent of counties saw rents sprint ahead while wages crawled.",
+     "src": "S1",
+     "show": [
+      {
+       "v": "shot",
+       "shot": "B"
+      },
+      {
+       "on": "eighty",
+       "v": "count",
+       "to": 88,
+       "suffix": "% OF COUNTIES",
+       "color": "red"
+      }
+     ]
+    },
+    {
+     "say": "So tenants ended up spending over thirty percent of their whole income just on shelter.",
+     "show": [
+      {
+       "v": "home",
+       "pose": "think_think"
+      },
+      {
+       "on": "thirty",
+       "v": "count",
+       "to": 30,
+       "suffix": "% OF INCOME ON RENT",
+       "color": "yellow"
+      }
+     ]
+    },
+    {
+     "say": "That makes you house poor before you even buy groceries.",
+     "punch": true,
+     "show": [
+      {
+       "v": "pose",
+       "pose": "shock_panic"
+      },
+      {
+       "on": "poor",
+       "v": "burst",
+       "word": "HOUSE POOR."
+      }
+     ]
+    },
+    {
+     "say": "And it gets worse when you see what happened to the actual houses.",
+     "open": [
+      "L3"
+     ],
+     "show": [
+      {
+       "v": "shot",
+       "shot": "C"
+      },
+      {
+       "on": "houses",
+       "v": "text",
+       "text": "THE HOUSING GAP",
+       "color": "red"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "THE GAP",
+   "mood": "tense",
+   "set": [
+    "C",
+    3
+   ],
+   "lines": [
+    {
+     "say": "Imagine ten people standing in line to rent five available apartments.",
+     "show": [
+      {
+       "v": "shot",
+       "shot": "C"
+      },
+      {
+       "on": "ten",
+       "v": "text",
+       "text": "10 RENTERS",
+       "color": "white"
+      },
+      {
+       "on": "five",
+       "v": "text",
+       "text": "ONLY 5 APARTMENTS",
+       "color": "red"
+      }
+     ]
+    },
+    {
+     "say": "The landlord does not even have to try because five people will fight for every door.",
+     "show": [
+      {
+       "v": "pose",
+       "pose": "smug_point_you"
+      },
+      {
+       "on": "fight",
+       "v": "stamp",
+       "text": "BIDDING WAR"
+      }
+     ]
+    },
+    {
+     "say": "Between two thousand and twenty twenty housing demand in America jumped by twenty six percent.",
+     "src": "S2",
+     "show": [
+      {
+       "v": "macro",
+       "lines": [
+        "US Census Bureau Housing Supply Data",
+        "housing demand grew by [26% while housing supply] increased by 19%",
+        "2000 to 2020 National Survey"
+       ],
+       "far": [
+        "Housing Demand",
+        "Supply Gap"
+       ]
+      },
+      {
+       "on": "twenty",
+       "n": 1,
+       "v": "count",
+       "to": 26,
+       "suffix": "% DEMAND RISE",
+       "color": "red"
+      }
+     ]
+    },
+    {
+     "say": "But the actual supply of homes only grew by nineteen percent.",
+     "src": "S2",
+     "show": [
+      {
+       "v": "home",
+       "pose": "determined_present"
+      },
+      {
+       "v": "bars",
+       "rows": [
+        [
+         "Housing Demand Growth",
+         26,
+         "red"
+        ],
+        [
+         "Housing Supply Growth",
+         19,
+         "blue"
+        ]
+       ]
+      },
+      {
+       "on": "nineteen",
+       "v": "count",
+       "to": 19,
+       "suffix": "% SUPPLY RISE",
+       "color": "blue"
+      }
+     ]
+    },
+    {
+     "say": "Have a guess how big that shortage really is.",
+     "punch": true,
+     "show": [
+      {
+       "v": "pose",
+       "pose": "think_think"
+      },
+      {
+       "on": "guess",
+       "v": "text",
+       "text": "HAVE A GUESS…",
+       "color": "yellow"
+      }
+     ]
+    },
+    {
+     "say": "That seven percent gap means millions of families are fighting over the same keys.",
+     "src": "S2",
+     "show": [
+      {
+       "v": "shot",
+       "shot": "C",
+       "from": 4
+      },
+      {
+       "on": "seven",
+       "v": "count",
+       "to": 7,
+       "suffix": "% SHORTAGE GAP",
+       "color": "red"
+      }
+     ]
+    },
+    {
+     "say": "When supply falls behind demand the landlord can name any price and someone has to pay it.",
+     "show": [
+      {
+       "v": "still",
+       "shot": "C",
+       "t": 6,
+       "pose": "shock_panic"
+      },
+      {
+       "on": "price",
+       "v": "stamp",
+       "text": "LANDLORD PRICING POWER"
+      }
+     ]
+    },
+    {
+     "say": "That is the math that keeps your rent notice climbing every single year.",
+     "show": [
+      {
+       "v": "pose",
+       "pose": "determined_point_l"
+      },
+      {
+       "on": "climbing",
+       "v": "text",
+       "text": "PRICES KEEP RISING",
+       "color": "red"
+      }
+     ]
+    },
+    {
+     "say": "And while tenants fight over old apartments big investment firms entered the game.",
+     "open": [
+      "L4"
+     ],
+     "show": [
+      {
+       "v": "shot",
+       "shot": "D"
+      },
+      {
+       "on": "investment",
+       "v": "text",
+       "text": "ENTER WALL STREET",
+       "color": "yellow"
+      }
+     ]
+    },
+    {
+     "say": "My landlord even sent me two rent notices this month just to be sure.",
+     "gag": true,
+     "show": [
+      {
+       "v": "pose",
+       "pose": "neutral_shrug"
+      },
+      {
+       "on": "two",
+       "v": "count",
+       "to": 2,
+       "suffix": " NOTICES",
+       "color": "red"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "THE INVESTORS",
+   "mood": "think",
+   "set": [
+    "D",
+    2
+   ],
+   "lines": [
+    {
+     "say": "Wall Street funds realized that buying neighborhood homes was safer than the stock market.",
+     "show": [
+      {
+       "v": "shot",
+       "shot": "D"
+      },
+      {
+       "on": "street",
+       "v": "text",
+       "text": "WALL STREET FUNDS",
+       "color": "yellow"
+      }
+     ]
+    },
+    {
+     "say": "They bought thousands of single family houses all across the country.",
+     "src": "S4",
+     "show": [
+      {
+       "v": "shot",
+       "shot": "T"
+      },
+      {
+       "on": "thousands",
+       "v": "text",
+       "text": "BUYING WHOLE STREETS",
+       "color": "red"
+      }
+     ]
+    },
+    {
+     "say": "Corporate owners care about rental yields so they raise rents aggressive and fast.",
+     "src": "S4",
+     "show": [
+      {
+       "v": "home",
+       "pose": "think_think"
+      },
+      {
+       "on": "yields",
+       "v": "text",
+       "text": "MAXIMUM YIELDS",
+       "color": "red"
+      }
+     ]
+    },
+    {
+     "say": "When one big fund owns thirty homes in your neighborhood they control the local market price.",
+     "show": [
+      {
+       "v": "shot",
+       "shot": "D",
+       "from": 5
+      },
+      {
+       "on": "thirty",
+       "v": "count",
+       "to": 30,
+       "suffix": " HOMES OWNED",
+       "color": "red"
+      }
+     ]
+    },
+    {
+     "say": "You are not negotiating with a sweet neighbor named Bob anymore.",
+     "punch": true,
+     "show": [
+      {
+       "v": "pose",
+       "pose": "neutral_shrug"
+      },
+      {
+       "on": "bob",
+       "v": "burst",
+       "word": "NO MORE BOB."
+      }
+     ]
+    },
+    {
+     "say": "You are negotiating with an algorithm designed to maximize profit.",
+     "show": [
+      {
+       "v": "shot",
+       "shot": "F"
+      },
+      {
+       "on": "algorithm",
+       "v": "text",
+       "text": "PRICING ALGORITHMS",
+       "color": "red"
+      }
+     ]
+    },
+    {
+     "say": "My rent notice is now signed by a corporation four states away.",
+     "gag": true,
+     "show": [
+      {
+       "v": "pose",
+       "pose": "shock_panic"
+      },
+      {
+       "on": "four",
+       "v": "text",
+       "text": "4 STATES AWAY",
+       "color": "yellow"
+      }
+     ]
+    },
+    {
+     "say": "Which brings us back to that landlord envelope from the beginning.",
+     "close": [
+      "L2"
+     ],
+     "show": [
+      {
+       "v": "still",
+       "shot": "A",
+       "t": 4,
+       "pose": "determined_present"
+      },
+      {
+       "on": "envelope",
+       "v": "text",
+       "text": "THE RENT ENVELOPE",
+       "color": "white"
+      }
+     ]
+    },
+    {
+     "say": "Because corporate funds love shortages and there is only one thing that breaks their power.",
+     "close": [
+      "L3"
+     ],
+     "show": [
+      {
+       "v": "shot",
+       "shot": "E"
+      },
+      {
+       "on": "breaks",
+       "v": "burst",
+       "word": "BREAK POWER!"
+      }
+     ]
+    },
+    {
+     "say": "And it is a simple rule that cities keep fighting over.",
+     "open": [
+      "L5"
+     ],
+     "show": [
+      {
+       "v": "pose",
+       "pose": "smug_point_you"
+      },
+      {
+       "on": "fighting",
+       "v": "text",
+       "text": "THE CITY RULE",
+       "color": "yellow"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "THE FIX",
+   "mood": "hype",
+   "set": [
+    "E",
+    2
+   ],
+   "lines": [
+    {
+     "say": "So why is your rent so expensive?",
+     "show": [
+      {
+       "v": "shot",
+       "shot": "E"
+      },
+      {
+       "on": "rent",
+       "v": "text",
+       "text": "WHY?",
+       "color": "yellow",
+       "size": 200
+      }
+     ]
+    },
+    {
+     "say": "You would think landlords just got greedy overnight.",
+     "show": [
+      {
+       "v": "pose",
+       "pose": "determined_point_l"
+      },
+      {
+       "on": "greedy",
+       "v": "text",
+       "text": "JUST GREED?",
+       "color": "white"
+      }
+     ]
+    },
+    {
+     "say": "Nope because greed only works when people have no other place to go.",
+     "punch": true,
+     "show": [
+      {
+       "v": "pose",
+       "pose": "smug_point_you"
+      },
+      {
+       "on": "nope",
+       "v": "burst",
+       "word": "NOPE."
+      },
+      {
+       "on": "place",
+       "v": "stamp",
+       "text": "NO ALTERNATIVES"
+      }
+     ]
+    },
+    {
+     "say": "The real systemic cause is a massive shortage of built homes.",
+     "close": [
+      "L1"
+     ],
+     "show": [
+      {
+       "v": "shot",
+       "shot": "C",
+       "from": 6
+      },
+      {
+       "on": "shortage",
+       "v": "text",
+       "text": "SYSTEMIC HOUSING SHORTAGE",
+       "color": "red"
+      }
+     ]
+    },
+    {
+     "say": "When cities build new apartments a one percent increase in supply lowers average rent by zero point nineteen percent.",
+     "src": "S3",
+     "close": [
+      "L5"
+     ],
+     "show": [
+      {
+       "v": "shot",
+       "shot": "E",
+       "from": 4
+      },
+      {
+       "on": "one",
+       "v": "count",
+       "to": 1,
+       "suffix": "% MORE SUPPLY",
+       "color": "green"
+      },
+      {
+       "on": "nineteen",
+       "v": "count",
+       "to": 0.19,
+       "dec": 2,
+       "prefix": "-",
+       "suffix": "% LOWER RENT",
+       "color": "green"
+      }
+     ]
+    },
+    {
+     "say": "More apartments on the market means landlords have to compete for you instead of you competing for them.",
+     "close": [
+      "L4"
+     ],
+     "show": [
+      {
+       "v": "home",
+       "pose": "grin_cheer"
+      },
+      {
+       "v": "checks",
+       "title": "WHAT NEW SUPPLY DOES",
+       "rows": [
+        [
+         "Landlords compete",
+         "forces rent drops"
+        ],
+        [
+         "More available doors",
+         "ends bidding wars"
+        ],
+        [
+         "Corporate leverage",
+         "broken by options"
+        ]
+       ]
+      },
+      {
+       "on": "compete",
+       "v": "burst",
+       "word": "COMPETE!"
+      }
+     ]
+    },
+    {
+     "say": "I finally put my monthly rent notice where it belongs and called city hall.",
+     "gag": true,
+     "show": [
+      {
+       "v": "still",
+       "shot": "E",
+       "t": 6,
+       "pose": "grin_cheer"
+      },
+      {
+       "on": "hall",
+       "v": "stamp",
+       "text": "BUILD MORE HOMES",
+       "color": "green"
+      }
+     ]
+    },
+    {
+     "say": "Tell me in the comments how much your rent went up this year.",
+     "show": [
+      {
+       "v": "pose",
+       "pose": "smug_point_you"
+      },
+      {
+       "on": "comments",
+       "v": "text",
+       "text": "↓ TELL ME IN THE COMMENTS",
+       "color": "yellow"
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "look": {
+  "style": "cold",
+  "format": "investigation",
+  "hook_form": "question"
+ }
+}

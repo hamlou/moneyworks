@@ -86,6 +86,10 @@ and the hook_form of the last one.
 
 Poses: shock_panic smug_point_you determined_present think_think neutral_shrug grin_cheer determined_point_l sleep_slump
 
+- `{"v": "clip", "query": "what the footage shows", "start": 0}` = REAL YouTube footage (≤ 8 s, max 6 per video). GitHub only takes videos
+  YouTube marks Creative Commons (CC BY), mutes them, credits the creator on screen + in the description. No CC match → the home set shows instead.
+  Use it for real-world proof: a protest, a city street, a factory, a news-style establishing shot. Dave keeps talking over it.
+
 ### Overlays (stack on the picture until the next background)
 | v | params |
 |---|---|

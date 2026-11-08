@@ -1,5 +1,5 @@
 import React from 'react';
-import {AbsoluteFill, Audio, Freeze, Img, OffthreadVideo, Sequence, staticFile, useCurrentFrame} from 'remotion';
+import {AbsoluteFill, Audio, Freeze, Img, OffthreadVideo, Sequence, getStaticFiles, staticFile, useCurrentFrame} from 'remotion';
 import {Sfx, Cue} from '../fx';
 import {ANTON, UI, K, snap, Counter, ComicBurst, HomeBase} from './kit';
 import {Music, MSeg} from './kit2';
@@ -70,6 +70,18 @@ const Chapter: React.FC<{id: string; title: string; n: string; t: number}> = ({i
     </>
   );
 };
+// real YouTube footage (tools/clips.py, Creative Commons only); if it was not found → falls back to the home set
+const Clip: React.FC<{id: string; file: string}> = ({id, file}) => {
+  const f = useCurrentFrame();
+  const ok = getStaticFiles().some((x) => x.name === `${id}/${file}`);
+  if (!ok) return <HomeBase f={f} />;
+  return (
+    <AbsoluteFill style={{transform: `scale(${1.04 + 0.0015 * f})`}}>
+      <OffthreadVideo src={staticFile(`${id}/${file}`)} muted style={{width: 1920, height: 1080, objectFit: 'cover'}} />
+      <div style={{position: 'absolute', right: 30, top: 26, fontFamily: UI, fontWeight: 600, fontSize: 24, color: '#fff', background: 'rgba(0,0,0,.55)', padding: '6px 14px', borderRadius: 8}}>footage: YouTube (CC BY) · credits in description</div>
+    </AbsoluteFill>
+  );
+};
 const Photo: React.FC<{id: string; file: string; label?: string}> = ({id, file, label}) => {
   const f = useCurrentFrame();
   return (
@@ -109,6 +121,7 @@ const BgFlat: React.FC<{id: string; b: Bg; fallback: string}> = ({id, b, fallbac
   if (b.k === 'still') return (<><Still id={id} n={b.n!} t={b.t ?? 0} soft={!!b.pose} />{b.pose ? <Cut id={id} pose={b.pose} /> : null}</>);
   if (b.k === 'chapter') return <Chapter id={id} title={b.title!} n={b.n!} t={b.t ?? 0} />;
   if (b.k === 'macro') return <MacroText lines={b.lines!} far={b.far} />;
+  if (b.k === 'clip') return <Clip id={id} file={b.file!} />;
   if (b.k === 'photo') return <Photo id={id} file={b.file!} label={b.label} />;
   if (b.k === 'home') return (<><HomeBase f={f} /><Cut id={id} pose={b.pose || 'determined_present'} push={false} /></>);
   const [n, t] = b.set ?? [fallback, 1];

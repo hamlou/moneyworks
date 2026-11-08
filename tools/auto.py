@@ -58,7 +58,7 @@ CAT = json.loads(Path("pipeline/catalog.json").read_text(encoding="utf8")) if Pa
 BPOSES = ["idle", "hold", "look", "panic", "fists", "point_l", "point_you", "shrug", "count", "cheer", "sleep", "read", "slump"]
 FACES = ["neutral", "shock", "think", "spiral", "panic", "grin", "determined", "smug", "sleep", "dead"]
 MOVES, DACT, HFX = ["push", "orbit", "crane", "dolly", "low", "top"], ["stand", "walk_in", "none"], ["drop", "pop", "spin", "slide", "pile"]
-BG = {"shot": ["shot"], "still": ["shot", "t"], "pose": ["pose"], "macro": ["lines"], "home": [], "photo": ["file"]}
+BG = {"shot": ["shot"], "still": ["shot", "t"], "pose": ["pose"], "macro": ["lines"], "home": [], "photo": ["file"], "clip": ["query"]}
 OV = {"text": ["text"], "count": ["to"], "burst": ["word"], "stamp": ["text"], "bars": ["rows"], "checks": ["rows"], "sfx": ["sound"]}
 COLORS = {"white": "#F4F4F2", "yellow": "#FFD400", "red": "#FF3B3B", "green": "#5BE33B", "blue": "#5aa0ff"}
 # CREATIVE IDENTITY (owner 7 Nov: "not all the productions look the same"). Every spec picks look.style + look.format +
@@ -137,6 +137,8 @@ def check(eid, quiet=False):
     for x in s["sources"]:
         if not all(x.get(k) for k in ("id", "short", "url")):
             E.append(f"source {x} needs id + short + url")
+        elif len([p for p in re.sub(r"^https?://[^/]+", "", x["url"]).split("/") if p]) < 1 or x["url"].rstrip("/").count("/") < 3:
+            E.append(f"source {x['id']}: '{x['url']}' is a homepage — link the exact page/report that shows the number")
     # shots
     for n, sh in s["shots"].items():
         if not re.fullmatch(r"[A-JL-Z]", n):
@@ -313,6 +315,8 @@ def check(eid, quiet=False):
                 E.append(f"{lid}: color must be one of {list(COLORS)}")
             if v == "sfx" and e.get("sound") not in SFX + SFX_ROOT:
                 E.append(f"{lid}: sound '{e.get('sound')}' unknown — use one of {SFX + SFX_ROOT}")
+            if v == "clip" and (len(str(e.get("query", ""))) < 6 or len(str(e["query"])) > 80):
+                E.append(f"{lid}: clip query must be 6-80 chars (what the footage shows, e.g. 'empty apartment for rent sign')")
             if v == "photo" and not Path(f"public/{eid}/{e.get('file', '')}").exists():
                 E.append(f"{lid}: photo file public/{eid}/{e.get('file')} not found")
             if v == "count" and not isinstance(e.get("to"), (int, float)):
@@ -588,6 +592,10 @@ def plan(eid):
                 b["lines"], b["far"] = e["lines"], e.get("far", ["", ""])
             if v == "photo":
                 b["file"], b["label"] = e["file"], e.get("label", "")
+            if v == "clip":  # real YouTube footage, fetched on GitHub by tools/clips.py (Creative Commons only by default)
+                ncl = sum(1 for g in bgs if g["k"] == "clip")
+                b["file"], b["query"], b["start"] = f"clip_{ncl}.mp4", e["query"], float(e.get("start", 0))
+                b["to"] = min(b["to"], a + FPS * 8)  # hard cap 8 s per clip
             b["flash"] = ci == 0 or v in ("macro", "chapter", "photo", "home")
             bgs.append(b)
             slot = 0
@@ -696,6 +704,11 @@ def plan(eid):
                 cues.append({"at": x, "src": "swish_fast", "v": 0.3})
                 np_ += 1
     cues = sorted([c for c in cues if 0 <= c["at"] < total], key=lambda c: c["at"])
+    clips = [b for b in bgs if b["k"] == "clip"]
+    if len(clips) > 6:
+        sys.exit("max 6 clips per video")
+    Path(f"public/{eid}").mkdir(parents=True, exist_ok=True)
+    Path(f"public/{eid}/clips.json").write_text(json.dumps([{"file": b["file"], "query": b["query"], "start": b["start"], "sec": round((b["to"] - b["from"]) / FPS + 0.5, 1)} for b in clips], indent=1), encoding="utf8")
     lens = {}
     for b in bgs:
         if b["k"] == "shot":
@@ -948,7 +961,7 @@ def fetch_final(eid, rid):
     sh(GH, "run", "download", rid, "-n", comp, "-D", tmp)
     shutil.copy(tmp / f"{comp}.mp4", out / f"{eid}.mp4")
     mp4 = out / f"{eid}.mp4"
-    for q in ("qa_hook.jpg", "qa_sheet.jpg", "compare.md"):
+    for q in ("qa_hook.jpg", "qa_sheet.jpg", "compare.md", "clips_credits.json"):
         if (tmp / q).exists():
             shutil.copy(tmp / q, out / q)
     if (out / "compare.md").exists():
@@ -966,6 +979,9 @@ def write_description(eid, out):
              "unanswered_questions": "Unanswered Questions", "sneaky_snitch": "Sneaky Snitch", "volatile_reaction": "Volatile Reaction", "crypto": "Crypto"}
     t = s.get("description", s["title"]) + "\n\nSources:\n" + "\n".join(f"{x['id']} {x['short']} — {x['url']}" for x in s["sources"])
     t += "\n\nMusic (Creative Commons: By Attribution 4.0):\n" + "\n".join(f'"{names.get(m, m)}" Kevin MacLeod (incompetech.com)' for m in music)
+    cc = out / "clips_credits.json"
+    if cc.exists() and json.loads(cc.read_text(encoding="utf8")):
+        t += "\n\nFootage (Creative Commons Attribution, via YouTube):\n" + "\n".join(f'"{c["title"]}" by {c["channel"]} — {c["url"]}' for c in json.loads(cc.read_text(encoding="utf8")))
     t += "\nhttp://creativecommons.org/licenses/by/4.0/\n\nAnimation, voice and sound effects made for this channel."
     (out / "description.txt").write_text(t, encoding="utf8")
 
