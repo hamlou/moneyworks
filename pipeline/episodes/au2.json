@@ -1,0 +1,276 @@
+{
+  "id": "au2",
+  "title": "Why Is Your Rent So Expensive?",
+  "style": "v7",
+  "voice": "chatterbox",
+  "cb": {
+    "cfg": 0.25,
+    "exag": 0.5
+  },
+  "note": "AUTOPILOT episode — generated from pipeline/auto/au2.json by tools/auto.py, do not edit",
+  "sources": [
+    "S1 median rents outpaced median household incomes in 88% of U.S. counties affecting 22 million cost burdened renters — Joint Center for Housing Studies of Harvard University, 2024 https://www.jchs.harvard.edu/state-nations-housing-2024",
+    "S2 housing demand grew by 26% while housing supply increased by 19% between 2000 and 2020 — US Census Bureau Housing Data, 2023 https://www.census.gov/housing/hvs/files/qtr423/q423press.pdf",
+    "S3 a 1% increase in new housing supply lowers average rent by 0.19% — Up For Growth Research Report, 2023 https://upforgrowth.org/code-red/housing-underproduction-in-the-u-s-2023/",
+    "S4 corporate landlords setting profit returns tend to charge higher rent than individual owners — National Low Income Housing Coalition, 2023 https://nlihc.org/gap"
+  ],
+  "beats": [
+    {
+      "id": "k1",
+      "src": "S1",
+      "text": "Rent rose faster than paychecks in eighty eight percent of counties.",
+      "pause": 0.35,
+      "exag": 0.55
+    },
+    {
+      "id": "k2",
+      "src": "S1",
+      "text": "And twenty two million renters paid the price.",
+      "pause": 0.6,
+      "exag": 0.55
+    },
+    {
+      "id": "k3",
+      "src": "",
+      "text": "So why is your rent so expensive?",
+      "pause": 0.6,
+      "exag": 0.55
+    },
+    {
+      "id": "k4",
+      "src": "",
+      "text": "You will see who profits and the one secret that fixes it.",
+      "pause": 0.35,
+      "exag": 0.55
+    },
+    {
+      "id": "c1_01",
+      "src": "",
+      "text": "Every month I open my mailbox and my landlord leaves me a little surprise envelope.",
+      "pause": 0.35
+    },
+    {
+      "id": "c1_02",
+      "src": "",
+      "text": "My rent goes up another fifty dollars while my salary stays completely flat.",
+      "pause": 0.35
+    },
+    {
+      "id": "c1_03",
+      "src": "",
+      "text": "That rent notice in my hand is not just my personal problem.",
+      "pause": 0.35
+    },
+    {
+      "id": "c1_04",
+      "src": "S1",
+      "text": "Between two thousand and twenty twenty rent grew faster than income for almost every family.",
+      "pause": 0.35
+    },
+    {
+      "id": "c1_05",
+      "src": "S1",
+      "text": "Eighty eight percent of counties saw rents sprint ahead while wages crawled.",
+      "pause": 0.35
+    },
+    {
+      "id": "c1_06",
+      "src": "",
+      "text": "So tenants ended up spending over thirty percent of their whole income just on shelter.",
+      "pause": 0.35
+    },
+    {
+      "id": "c1_07",
+      "src": "",
+      "text": "That makes you house poor before you even buy groceries.",
+      "pause": 0.6,
+      "exag": 0.55
+    },
+    {
+      "id": "c1_08",
+      "src": "",
+      "text": "And it gets worse when you see what happened to the actual houses.",
+      "pause": 0.35
+    },
+    {
+      "id": "c2_01",
+      "src": "",
+      "text": "Imagine ten people standing in line to rent five available apartments.",
+      "pause": 0.35
+    },
+    {
+      "id": "c2_02",
+      "src": "",
+      "text": "The landlord does not even have to try because five people will fight for every door.",
+      "pause": 0.35
+    },
+    {
+      "id": "c2_03",
+      "src": "S2",
+      "text": "Between two thousand and twenty twenty housing demand in America jumped by twenty six percent.",
+      "pause": 0.35
+    },
+    {
+      "id": "c2_04",
+      "src": "S2",
+      "text": "But the actual supply of homes only grew by nineteen percent.",
+      "pause": 0.35
+    },
+    {
+      "id": "c2_05",
+      "src": "",
+      "text": "Have a guess how big that shortage really is.",
+      "pause": 0.6,
+      "exag": 0.55
+    },
+    {
+      "id": "c2_06",
+      "src": "S2",
+      "text": "That seven percent gap means millions of families are fighting over the same keys.",
+      "pause": 0.35
+    },
+    {
+      "id": "c2_07",
+      "src": "",
+      "text": "When supply falls behind demand the landlord can name any price and someone has to pay it.",
+      "pause": 0.35
+    },
+    {
+      "id": "c2_08",
+      "src": "",
+      "text": "That is the math that keeps your rent notice climbing every single year.",
+      "pause": 0.35
+    },
+    {
+      "id": "c2_09",
+      "src": "",
+      "text": "And while tenants fight over old apartments big investment firms entered the game.",
+      "pause": 0.35
+    },
+    {
+      "id": "c2_10",
+      "src": "",
+      "text": "My landlord even sent me two rent notices this month just to be sure.",
+      "pause": 0.35
+    },
+    {
+      "id": "c3_01",
+      "src": "",
+      "text": "Wall Street funds realized that buying neighborhood homes was safer than the stock market.",
+      "pause": 0.35
+    },
+    {
+      "id": "c3_02",
+      "src": "S4",
+      "text": "They bought thousands of single family houses all across the country.",
+      "pause": 0.35
+    },
+    {
+      "id": "c3_03",
+      "src": "S4",
+      "text": "Corporate owners care about rental yields so they raise rents aggressive and fast.",
+      "pause": 0.35
+    },
+    {
+      "id": "c3_04",
+      "src": "",
+      "text": "When one big fund owns thirty homes in your neighborhood they control the local market price.",
+      "pause": 0.35
+    },
+    {
+      "id": "c3_05",
+      "src": "",
+      "text": "You are not negotiating with a sweet neighbor named Bob anymore.",
+      "pause": 0.6,
+      "exag": 0.55
+    },
+    {
+      "id": "c3_06",
+      "src": "",
+      "text": "You are negotiating with an algorithm designed to maximize profit.",
+      "pause": 0.35
+    },
+    {
+      "id": "c3_07",
+      "src": "",
+      "text": "My rent notice is now signed by a corporation four states away.",
+      "pause": 0.35
+    },
+    {
+      "id": "c3_08",
+      "src": "",
+      "text": "Which brings us back to that landlord envelope from the beginning.",
+      "pause": 0.35
+    },
+    {
+      "id": "c3_09",
+      "src": "",
+      "text": "Because corporate funds love shortages and there is only one thing that breaks their power.",
+      "pause": 0.35
+    },
+    {
+      "id": "c3_10",
+      "src": "",
+      "text": "And it is a simple rule that cities keep fighting over.",
+      "pause": 0.35
+    },
+    {
+      "id": "c4_01",
+      "src": "",
+      "text": "So why is your rent so expensive?",
+      "pause": 0.6,
+      "exag": 0.55
+    },
+    {
+      "id": "c4_02",
+      "src": "",
+      "text": "You would think landlords just got greedy overnight.",
+      "pause": 0.6,
+      "exag": 0.55
+    },
+    {
+      "id": "c4_03",
+      "src": "",
+      "text": "Nope because greed only works when people have no other place to go.",
+      "pause": 0.6,
+      "exag": 0.55
+    },
+    {
+      "id": "c4_04",
+      "src": "",
+      "text": "The real systemic cause is a massive shortage of built homes.",
+      "pause": 0.35
+    },
+    {
+      "id": "c4_05",
+      "src": "S3",
+      "text": "When cities build new apartments a one percent increase in supply lowers average rent by zero point nineteen percent.",
+      "pause": 0.35
+    },
+    {
+      "id": "c4_06",
+      "src": "",
+      "text": "More apartments on the market means landlords have to compete for you instead of you competing for them.",
+      "pause": 0.35
+    },
+    {
+      "id": "c4_07",
+      "src": "",
+      "text": "I finally put my monthly rent notice where it belongs and called city hall.",
+      "pause": 0.35
+    },
+    {
+      "id": "c4_08",
+      "src": "",
+      "text": "Tell me in the comments how much your rent went up this year.",
+      "pause": 0.35
+    },
+    {
+      "id": "zz",
+      "src": "",
+      "text": "I am Dave and I am moving back in with my couch.",
+      "pause": 0.6,
+      "exag": 0.55
+    }
+  ]
+}
