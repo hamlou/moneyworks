@@ -10,7 +10,7 @@
   "note": "AUTOPILOT episode — generated from pipeline/auto/ea2s.json by tools/auto.py, do not edit",
   "sources": [
     "S1 United Democracy Project spent $33 million on ads in the Democratic primary against El-Sayed and in support of Rep. Haley Stevens — NBC News, Oct 9 2026 https://www.nbcnews.com/politics/2026-election/aipac-super-pac-starts-spending-michigan-senate-race-rcna602597",
-    "S2 El-Sayed (D) beat Mike Rogers (R) about 52.6% to 45.5% for U.S. Senate in Michigan (AP call 2:27 a.m. Nov 4) — Axios, Nov 4 2026 https://www.axios.com/2026/11/04/michigan-senate-results-el-sayed-rogers",
+    "S2 El-Sayed (D) beat Mike Rogers (R) with nearly 52% (AP tally) — first Muslim elected to the US Senate — AP via KUTV, Nov 4 2026 https://kutv.com/news/nation-world/michigan-us-senate-abdul-el-sayed-mike-rogers-projected-win-election-ballot-votes-politics-government-state",
     "S3 El-Sayed wins the Michigan Senate race and becomes the first Muslim elected to the U.S. Senate — NPR, Nov 4 2026 https://www.npr.org/2026/11/04/g-s1-150029/michigan-senate-race-abdul-el-sayed-mike-rogers",
     "S4 El-Sayed's plan: Medicare for All as guaranteed baseline government health insurance — Bridge Michigan, Sep 25 2026 https://bridgemi.com/michigan-politics/fact-check-would-abdul-el-sayed-raise-taxes-to-pay-for-medicare-for-all/",
     "S5 51 votes pass a bill but 60 are needed to end debate (cloture), the de facto threshold for most bills — Straight Arrow News + Senate Rule XXII https://san.com/cc/dc-dictionary-senate-cloture-vote-explained/",
@@ -34,7 +34,7 @@
     {
       "id": "k3",
       "src": "S2",
-      "text": "Abdul El-Sayed beat Mike Rogers by seven points",
+      "text": "Abdul El-Sayed beat Mike Rogers with fifty two percent of Michigan",
       "pause": 0.1,
       "exag": 0.55
     },
