@@ -214,8 +214,8 @@ def check(eid, quiet=False):
     # variety gate: the look must come from THIS script, not from ea1
     sc_ = {n: sh for n, sh in s["shots"].items() if sh.get("tpl") == "scene"}
     old = [n for n, sh in s["shots"].items() if sh.get("tpl") in OLD_SETS]
-    if len(old) > 2:
-        E.append(f"shots {old}: max 2 ea1 sets per episode — rebuild the others as tpl 'scene' from the objects in the line")
+    if old:
+        E.append(f"shots {old}: ea1 sets are BANNED (owner 8 Nov: au1 still looked like the Abdul video) — rebuild the others as tpl 'scene' from the objects in the line")
     n_sc, n_sky = (4, 3) if short else (6, 4)
     if len(sc_) < n_sc:
         E.append(f"need ≥ {n_sc} 'scene' shots (have {len(sc_)}) — each one = a sky + the objects the line talks about")

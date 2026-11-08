@@ -49,8 +49,18 @@
  ],
  "shots": {
   "H": {
-   "tpl": "rain",
-   "item": "cash"
+   "tpl": "scene",
+   "sky": "shanghai_bund",
+   "ground": "asphalt_04",
+   "hero": "p:cash_stack",
+   "hero_fx": "pile",
+   "n": 40,
+   "hero_size": 0.5,
+   "sign": "$33,000,000",
+   "move": "low",
+   "dave": "stand",
+   "pose": "panic",
+   "face": "shock"
   },
   "V": {
    "tpl": "scene",
@@ -137,10 +147,20 @@
    "face": "neutral"
   },
   "S": {
-   "tpl": "seats",
-   "n": 100,
-   "lit": 54,
-   "color": "blue"
+   "tpl": "scene",
+   "sky": "potsdamer_platz",
+   "ground": "checkered_pavement_tiles",
+   "hero": "p:bar_chart_3d=54,60",
+   "hero_fx": "pop",
+   "hero_size": 1.4,
+   "props": [
+    "p:bank_building=US SENATE"
+   ],
+   "sign": "54 OF 60 VOTES",
+   "move": "orbit",
+   "dave": "stand",
+   "pose": "shrug",
+   "face": "spiral"
   },
   "R": {
    "tpl": "scene",
