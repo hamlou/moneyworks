@@ -1,3 +1,5 @@
+> **⛔ OBLIGATORY FOR EVERY SHORT: read `SHORTS_MUST.md` fully before writing or editing any Short. Every line there is a hard rule from the owner (8 Nov 2026). Evidence: `POSTMORTEM.md`, `VIRAL_SHORTS.md`. Ignoring it = the work is rejected.**
+
 > **NEW EPISODE = read ONLY `EPISODE_RECIPE.md` (owner 30 Oct 2026: same ea1 style, low tokens). Scaffold with `py tools/new_ep.py <id> "<Title>"`. Do not read STYLE_3D/PLAYBOOK files in full.**
 
 # Moneyworks — stickman money explainer channel
