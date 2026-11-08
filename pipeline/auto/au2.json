@@ -32,13 +32,37 @@
  ],
  "shots": {
   "H": {
-   "tpl": "rain",
-   "item": "cash"
+   "tpl": "scene",
+   "sky": "wide_street_01",
+   "ground": "asphalt_01",
+   "props": [
+    "p:rent_sign=FOR RENT",
+    "street_lamp_01"
+   ],
+   "hero": "p:cash_stack",
+   "hero_fx": "pile",
+   "n": 20,
+   "hero_size": 0.5,
+   "sign": "RENT COSTS PILING UP",
+   "move": "push",
+   "pose": "panic",
+   "face": "shock"
   },
   "T": {
-   "tpl": "towers",
-   "a": 55,
-   "b": 18
+   "tpl": "scene",
+   "sky": "neuer_zollhof",
+   "ground": "concrete_floor_worn_001",
+   "props": [
+    "p:house_small",
+    "street_lamp_02"
+   ],
+   "hero": "p:bank_building=WALL ST",
+   "hero_fx": "slide",
+   "hero_size": 0.8,
+   "sign": "CORPORATE BUYERS",
+   "move": "crane",
+   "pose": "look",
+   "face": "shock"
   },
   "A": {
    "tpl": "scene",
