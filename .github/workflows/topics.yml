@@ -1,0 +1,40 @@
+name: topics
+# Weekly topic finder: yt-dlp outliers in the money niche → 5 fresh proposals (pipeline/topics/<date>.md + release ref/topics-latest.md)
+# NOTE: cron only fires from the DEFAULT branch (main) — this file must be on main for the schedule to run.
+on:
+  schedule:
+    - cron: "17 7 * * 1"
+  workflow_dispatch:
+    inputs:
+      n: {description: "videos to search", default: "100"}
+permissions:
+  contents: write
+concurrency: {group: topics, cancel-in-progress: false}
+jobs:
+  topics:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: "3.12"}
+      - run: pip install -q -U yt-dlp
+      - name: find topics
+        env:
+          GEMINI_API_KEYS: ${{ secrets.GEMINI_API_KEYS }}
+        run: python tools/topics.py --n "${{ github.event.inputs.n || '100' }}"
+      - name: commit
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add pipeline/topics/*.md
+          git diff --cached --quiet && exit 0
+          git commit -q -m "topics: $(date -u +%F)"
+          for i in 1 2 3 4 5; do git pull --rebase --autostash -q && git push -q && break; sleep 8; done
+      - name: upload to release ref
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          F=$(ls -t pipeline/topics/2*.md | head -1)
+          cp "$F" topics-latest.md
+          gh release upload ref topics-latest.md --clobber
