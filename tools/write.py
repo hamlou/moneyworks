@@ -1,13 +1,17 @@
 """Free writer: Gemini API (free tier) researches a topic and writes pipeline/auto/<id>.json, then loops on
 `tools/auto.py check` until SPEC OK. No Claude, runs on the owner's PC or on GitHub Actions.
-  set GEMINI_API_KEY=...   (free key: https://aistudio.google.com/apikey)
+  keys: one per line in %USERPROFILE%.moneyworks_gemini (backups rotate automatically) or set GEMINI_API_KEYS=k1,k2
   py tools/write.py <id> "<topic idea>"            → spec + SPEC OK (then: py tools/auto.py all <id>)
 Model: GEMINI_MODEL (default gemini-2.5-flash). Research uses Gemini's built-in Google Search grounding."""
 import json, os, re, subprocess, sys, time, urllib.request
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
-KEY = os.environ.get("GEMINI_API_KEY", "")
+# keys: GEMINI_API_KEYS (comma list) or GEMINI_API_KEY, else ~/.moneyworks_gemini (one key per line, NEVER in the repo: it is public)
+_kf = Path.home() / ".moneyworks_gemini"
+KEYS = [k.strip() for k in (os.environ.get("GEMINI_API_KEYS") or os.environ.get("GEMINI_API_KEY") or (_kf.read_text() if _kf.exists() else "")).replace(",", "
+").splitlines() if k.strip()]
+KEY = KEYS[0] if KEYS else ""
 MODEL = os.environ.get("GEMINI_MODEL", "gemini-3.8-flash")  # writer (tested 7 Nov: works without search on free key)
 RMODEL = os.environ.get("GEMINI_RESEARCH_MODEL", "gemini-2.5-flash-lite")  # Google Search grounding works on free tier
 API = "https://generativelanguage.googleapis.com/v1beta/models/{}:generateContent"
@@ -23,13 +27,13 @@ def ask(parts, search=False, temp=0.9):
         body["tools"] = [{"google_search": {}}]
     models = [RMODEL, "gemini-3.1-flash-lite"] if search else WRITERS
     for rnd in range(4):
-        for m in models:
+        for m, key in [(m, k) for m in models for k in KEYS]:  # every model × every backup key
             try:
-                req = urllib.request.Request(API.format(m), json.dumps(body).encode(), {"Content-Type": "application/json", "x-goog-api-key": KEY})
+                req = urllib.request.Request(API.format(m), json.dumps(body).encode(), {"Content-Type": "application/json", "x-goog-api-key": key})
                 r = json.loads(urllib.request.urlopen(req, timeout=400).read())
                 return "".join(p.get("text", "") for p in r["candidates"][0]["content"]["parts"])
             except Exception as e:
-                print(f"  {m}: {str(e)[:80]}", flush=True)
+                print(f"  {m} key{KEYS.index(key) + 1}: {str(e)[:70]}", flush=True)
         time.sleep(30 * (rnd + 1))
     sys.exit("all free Gemini models failed — quota for today used up? try again later")
 
