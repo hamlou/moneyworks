@@ -708,7 +708,12 @@ elif TPL == "scene":  # NEW (5 Nov): the set comes from the SCRIPT, not from ea1
     for i, mid in enumerate(props):
         a = math.pi * (0.15 + 0.7 * (i + 0.5) / max(1, len(props)))
         r_ = 2.0 + rr.uniform(0, 1.2)
-        put(mid, (math.cos(a) * r_ * 1.4, 0.8 + math.sin(a) * r_, 0), rr.uniform(-0.6, 0.6))
+        o = put(mid, (math.cos(a) * r_ * 1.4, 1.4 + math.sin(a) * r_, 0), rr.uniform(-0.6, 0.6))
+        if o:
+            lo, hi = bbox(o)
+            if hi.z - lo.z > 1.6:
+                k_ = 1.6 / (hi.z - lo.z)
+                o.scale = (k_, k_, k_)
     if P.get("sign"):  # the line's words on a real 3D board on a post (price, name, number)
         box("post", (-1.5, 1.6, 0.55), (0.08, 0.08, 1.1), flat("post", (0.15, 0.15, 0.16)))
         sg = face_box("sign", (-1.5, 1.6, 1.45), (1.3, 0.06, 0.8), (0.9, 0.9, 0.9), tex("sign"), "-y")
@@ -761,20 +766,20 @@ elif TPL == "scene":  # NEW (5 Nov): the set comes from the SCRIPT, not from ea1
             d.life(f)
             d.key(f)
         k = ease(t)
-        tgt = (0.2, 0.4, 1.2)
+        tgt = (0.2, 0.4, 1.15)  # framing (8 Nov peek: Dave was tiny) → Dave fills ~45 % of frame height
         if move == "orbit":
             a = R(-70 + 50 * k)
-            key_cam(cam0, f, (math.cos(a) * 5.5, 0.4 + math.sin(a) * 5.5, 1.5), tgt, 26)
+            key_cam(cam0, f, (math.cos(a) * 3.6, 0.4 + math.sin(a) * 3.6, 1.35), tgt, 32)
         elif move == "crane":
-            key_cam(cam0, f, (0.6, -5.5 - 2 * k, 0.4 + 4.0 * k), (0.2, 0.6, 1.0 + 0.4 * k), 22)
+            key_cam(cam0, f, (0.5, -3.4 - 1.2 * k, 0.6 + 2.6 * k), (0.2, 0.5, 1.0 + 0.3 * k), 28)
         elif move == "dolly":
-            key_cam(cam0, f, (-2.5 + 5 * k, -5.0, 1.4), tgt, 28)
+            key_cam(cam0, f, (-1.8 + 3.6 * k, -3.6, 1.3), tgt, 32)
         elif move == "low":
-            key_cam(cam0, f, (0.8, -3.8 + 0.8 * k, 0.25), (0.2, 0.4, 1.5), 18)
+            key_cam(cam0, f, (0.5, -2.6 + 0.5 * k, 0.45), (0.2, 0.4, 1.35), 22)
         elif move == "top":
-            key_cam(cam0, f, (0.2, -1.5 - 1.5 * k, 7.5 - 2.5 * k), (0.2, 0.6, 0.4), 24)
+            key_cam(cam0, f, (0.2, -1.2 - 1.0 * k, 5.0 - 1.5 * k), (0.2, 0.6, 0.5), 28)
         else:  # push
-            key_cam(cam0, f, (0.4, -6.2 + 2.0 * k, 1.35), tgt, 30)
+            key_cam(cam0, f, (0.35, -4.4 + 1.6 * k, 1.3), tgt, 34)
 
 elif SHOT == "K":  # transparent Dave cut-outs: "K:shock_panic,smug_point_you,…" (face_pose)
     world_hdri("studio", 1.0, 0)
