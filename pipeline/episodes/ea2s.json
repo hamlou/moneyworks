@@ -1,0 +1,108 @@
+{
+  "id": "ea2s",
+  "title": "What If He Runs For President? #shorts",
+  "style": "v7",
+  "voice": "chatterbox",
+  "cb": {
+    "cfg": 0.25,
+    "exag": 0.5
+  },
+  "note": "AUTOPILOT episode — generated from pipeline/auto/ea2s.json by tools/auto.py, do not edit",
+  "sources": [
+    "S1 United Democracy Project spent $33 million on ads in the Democratic primary against El-Sayed and in support of Rep. Haley Stevens — NBC News, Oct 9 2026 https://www.nbcnews.com/politics/2026-election/aipac-super-pac-starts-spending-michigan-senate-race-rcna602597",
+    "S2 El-Sayed (D) beat Mike Rogers (R) about 52.6% to 45.5% for U.S. Senate in Michigan (AP call 2:27 a.m. Nov 4) — Axios, Nov 4 2026 https://www.axios.com/2026/11/04/michigan-senate-results-el-sayed-rogers",
+    "S3 El-Sayed wins the Michigan Senate race and becomes the first Muslim elected to the U.S. Senate — NPR, Nov 4 2026 https://www.npr.org/2026/11/04/g-s1-150029/michigan-senate-race-abdul-el-sayed-mike-rogers",
+    "S4 El-Sayed's plan: Medicare for All as guaranteed baseline government health insurance — Bridge Michigan, Sep 25 2026 https://bridgemi.com/michigan-politics/fact-check-would-abdul-el-sayed-raise-taxes-to-pay-for-medicare-for-all/",
+    "S5 51 votes pass a bill but 60 are needed to end debate (cloture), the de facto threshold for most bills — Straight Arrow News + Senate Rule XXII https://san.com/cc/dc-dictionary-senate-cloture-vote-explained/",
+    "S6 Democrats hold at least 54 Senate seats after the 2026 midterms (2 races uncalled) — CBS News, Nov 2026 https://www.cbsnews.com/live-updates/senate-election-results-2026/"
+  ],
+  "beats": [
+    {
+      "id": "k1",
+      "src": "S1",
+      "text": "What if they spent thirty three million to stop one man and he won anyway?",
+      "pause": 0.1,
+      "exag": 0.55
+    },
+    {
+      "id": "k2",
+      "src": "S2",
+      "text": "Because he just did.",
+      "pause": 0.1,
+      "exag": 0.55
+    },
+    {
+      "id": "k3",
+      "src": "S2",
+      "text": "Abdul El-Sayed beat Mike Rogers by seven points",
+      "pause": 0.1,
+      "exag": 0.55
+    },
+    {
+      "id": "c1_01",
+      "src": "S3",
+      "text": "and he is now the first Muslim ever elected to the United States Senate.",
+      "pause": 0.1
+    },
+    {
+      "id": "c1_02",
+      "src": "",
+      "text": "So what if he runs for president in twenty twenty eight?",
+      "pause": 0.1
+    },
+    {
+      "id": "c1_03",
+      "src": "S4",
+      "text": "Day one he signs Medicare for all",
+      "pause": 0.1,
+      "exag": 0.55
+    },
+    {
+      "id": "c1_04",
+      "src": "",
+      "text": "and every hospital bill in your drawer just disappears.",
+      "pause": 0.1,
+      "exag": 0.55
+    },
+    {
+      "id": "c1_05",
+      "src": "",
+      "text": "Except it doesn't",
+      "pause": 0.1,
+      "exag": 0.55
+    },
+    {
+      "id": "c1_06",
+      "src": "S5",
+      "text": "because a president needs sixty senators to pass it",
+      "pause": 0.1,
+      "exag": 0.55
+    },
+    {
+      "id": "c1_07",
+      "src": "S6",
+      "text": "and his party has fifty four.",
+      "pause": 0.1,
+      "exag": 0.55
+    },
+    {
+      "id": "c1_08",
+      "src": "",
+      "text": "So the bill dies in a drawer next to yours.",
+      "pause": 0.3
+    },
+    {
+      "id": "c1_09",
+      "src": "",
+      "text": "Which is why the real question was never what if he wins.",
+      "pause": 0.1
+    },
+    {
+      "id": "c1_10",
+      "src": "",
+      "text": "It was what if they spent",
+      "pause": 0.1,
+      "exag": 0.55
+    }
+  ]
+}
