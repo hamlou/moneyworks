@@ -143,3 +143,20 @@ Use 6-14 shots per video. Re-use a shot across neighbouring lines (it keeps play
 - Qwen Code (backup when Gemini's quota runs out): `npm i -g @qwen-code/qwen-code` → `qwen`.
 - Prompt: *"Read AUTOPILOT.md. Research <topic> (max 6 searches). Write pipeline/auto/<id>.json following every rule. Run
   py tools/auto.py check <id> and fix until SPEC OK. Then run py tools/auto.py all <id> and fix any ✗ it prints."*
+
+## 6. Fully on GitHub (owner PC not needed)
+`.github/workflows/episode.yml` does everything on GitHub. `gh` = `%LOCALAPPDATA%\ghcli\bin\gh.exe`.
+1. Script (Gemini, repo secret `GEMINI_API_KEYS`):
+   `gh workflow run episode.yml -R hamlou/moneyworks --ref shorts-playbook-rules -f id=au3 -f topic="..." -f stage=script`
+   → commits `pipeline/auto/au3.json` + `videos/au3/script.md`; read it on release **ref** as `au3-script.md`
+   (`gh release download ref -R hamlou/moneyworks -p au3-script.md`).
+2. Happy? Video:
+   `gh workflow run episode.yml -R hamlou/moneyworks --ref shorts-playbook-rules -f id=au3 -f stage=video`
+   → check → voice (dispatches voice.yml) → build → qa → shots (dispatches blender.yml) → pushes the build outputs, then
+   **starts itself again with `stage=render`** (one job may run max 6 h) → v6demo.yml render → uploads `au3.mp4`,
+   `au3_send.mp4` (720p watch copy), `au3-compare.md`, `au3-qa_hook.jpg`, `au3-qa_sheet.jpg`, `au3-description.txt` to release **ref**.
+- Only the render failed / was cancelled: `... -f id=au3 -f stage=render` (re-uses the saved Blender run in `public/au3/SHOTS_RUN`,
+  else takes the last successful `blender au3` run).
+- Follow it: `gh run list -R hamlou/moneyworks --workflow episode.yml` (each stage's step summary shows the script / compare).
+- Why dispatches: pushes made inside Actions (GITHUB_TOKEN) never trigger push workflows, so `tools/auto.py` in CI mode
+  (`CI=true`) runs `gh workflow run voice.yml|blender.yml|v6demo.yml` itself and waits for the run it started.

@@ -1,0 +1,100 @@
+name: episode
+run-name: episode ${{ inputs.id }} ${{ inputs.stage }}
+
+# Whole autopilot video on GitHub (owner PC is weak — never needed). AUTOPILOT.md §6.
+#   stage=script → Gemini writes pipeline/auto/<id>.json + videos/<id>/script.md (commit + release asset ref/<id>-script.md)
+#   stage=video  → check → voice (dispatches voice.yml) → build → qa → shots (dispatches blender.yml) → save,
+#                  then dispatches THIS workflow with stage=render (one job would pass GitHub's 6 h job limit)
+#   stage=render → auto.py render (dispatches v6demo.yml) → 720p send copy → upload all to release "ref"
+# Pushes made with GITHUB_TOKEN never trigger push workflows, so tools/auto.py (CI mode) dispatches each one itself.
+on:
+  workflow_dispatch:
+    inputs:
+      id:
+        description: Episode id (e.g. au3)
+        required: true
+      topic:
+        description: Topic idea (stage=script only)
+        default: ''
+      stage:
+        description: script | video | render
+        default: script
+
+permissions:
+  contents: write
+  actions: write
+
+concurrency:
+  group: episode-${{ inputs.id }}
+  cancel-in-progress: false
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    timeout-minutes: 360
+    env:
+      GH_TOKEN: ${{ github.token }}
+      ID: ${{ inputs.id }}
+      TOPIC: ${{ inputs.topic }}
+      STAGE: ${{ inputs.stage }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: setup
+        run: |
+          case "$STAGE" in script|video|render) ;; *) echo "stage must be script|video|render"; exit 1;; esac
+          echo "$ID" | grep -qE '^[a-z0-9_]+$' || { echo "bad id"; exit 1; }
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          pip install -q numpy soundfile pillow
+          if [ "$STAGE" != script ]; then sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg fonts-dejavu-core >/dev/null; fi
+
+      - name: script (Gemini)
+        if: inputs.stage == 'script'
+        env:
+          GEMINI_API_KEYS: ${{ secrets.GEMINI_API_KEYS }}
+        run: |
+          test -n "$TOPIC" || { echo "stage=script needs -f topic=..."; exit 1; }
+          python tools/write.py "$ID" "$TOPIC"
+          git add "pipeline/auto/$ID.json" "videos/$ID/script.md"
+          git diff --cached --quiet || git commit -q -m "$ID: autopilot script (episode.yml)"
+          for i in 1 2 3 4 5; do git pull --rebase --autostash -q && git push -q && break; sleep 8; done
+          git diff --quiet HEAD "@{u}" || { echo "git push failed 5 times"; exit 1; }
+          cp "videos/$ID/script.md" "/tmp/$ID-script.md"  # asset NAME = file name (#label only sets the label)
+          gh release upload ref "/tmp/$ID-script.md" --clobber
+          cat "videos/$ID/script.md" >> "$GITHUB_STEP_SUMMARY"
+
+      - name: video (voice + build + 3D shots)
+        if: inputs.stage == 'video'
+        run: |
+          python tools/auto.py check "$ID"
+          python tools/auto.py voice "$ID"
+          python tools/auto.py build "$ID"
+          python tools/auto.py qa "$ID"
+          python tools/auto.py shots "$ID"
+          python tools/auto.py save "$ID"
+          gh workflow run episode.yml --ref "$GITHUB_REF_NAME" -f id="$ID" -f stage=render
+          echo "shots done — dispatched episode $ID render" >> "$GITHUB_STEP_SUMMARY"
+
+      - name: render (final video)
+        if: inputs.stage == 'render'
+        run: |
+          test -f "public/$ID/SHOTS_RUN" || python tools/auto.py shots "$ID" --resume
+          python tools/auto.py render "$ID"
+
+      - name: publish to release "ref"
+        if: inputs.stage == 'render'
+        run: |
+          cd "videos/$ID"
+          ffmpeg -v error -y -i "$ID.mp4" -vf scale=1280:-2 -c:v libx264 -crf 27 -preset slow -c:a aac -b:a 128k -movflags +faststart "${ID}_send.mp4"
+          F=("$ID.mp4" "${ID}_send.mp4")
+          for q in compare.md qa_hook.jpg qa_sheet.jpg description.txt; do
+            if [ -f "$q" ]; then cp "$q" "$ID-$q"; F+=("$ID-$q"); fi
+          done
+          gh release upload ref "${F[@]}" --clobber
+          ls -la
+          if [ -f compare.md ]; then cat compare.md >> "$GITHUB_STEP_SUMMARY"; fi

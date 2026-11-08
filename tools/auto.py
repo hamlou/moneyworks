@@ -8,6 +8,9 @@ pipeline/auto/<id>.json (format: AUTOPILOT.md). Everything else is this script +
   py tools/auto.py render <id>   pushes, renders the final video on GitHub, downloads it to videos/<id>/ + QA images
   py tools/auto.py all    <id>   all of the above in order (stops at the first failing gate)
   py tools/auto.py qa     <id>   post-voice gates only (uses the real word timing)
+  py tools/auto.py save   <id>   pushes the build outputs + SHOTS_RUN (episode.yml uses it between its 2 video jobs)
+CI mode (env CI / GITHUB_ACTIONS = true, i.e. .github/workflows/episode.yml): pushes made with GITHUB_TOKEN never trigger
+other workflows, so voice/shots DISPATCH voice.yml / blender.yml explicitly and find the run by its start time.
 """
 import json, math, os, re, shutil, subprocess, sys, time, zipfile
 from pathlib import Path
@@ -26,6 +29,7 @@ try:
     FF = imageio_ffmpeg.get_ffmpeg_exe()
 except Exception:
     FF = shutil.which("ffmpeg") or "ffmpeg"
+CI = os.environ.get("CI", "").lower() == "true" or os.environ.get("GITHUB_ACTIONS", "").lower() == "true"
 FPS, STRETCH, GAP_S = 30, 1 / 0.9, 2.0
 GAP = int(GAP_S * FPS)
 
@@ -101,6 +105,15 @@ def sfx_path(name):
     return f"ea1/{name}" if name in SFX else name
 
 
+def mtime(q):
+    """file age for 'last episodes': in CI a fresh checkout gives every file the same mtime → use the last commit time"""
+    if CI:
+        t = subprocess.run(["git", "log", "-1", "--format=%ct", "--", str(q)], capture_output=True, text=True).stdout.strip()
+        if t.isdigit():
+            return int(t)
+    return q.stat().st_mtime
+
+
 def norm(s):
     return re.sub(r"[^a-z0-9']", "", s.lower())
 
@@ -167,7 +180,7 @@ def check(eid, quiet=False):
     for k, ok in (("style", STYLES), ("format", FORMATS), ("hook_form", HOOK_FORMS)):
         if lk.get(k) not in ok:
             E.append(f"look.{k} must be one of {list(ok)}")
-    prev = sorted((q for q in Path("pipeline/auto").glob("*.json") if q.stem != eid), key=lambda q: q.stat().st_mtime)[-2:]
+    prev = sorted((q for q in Path("pipeline/auto").glob("*.json") if q.stem != eid), key=mtime)[-2:]
     for i, q in enumerate(reversed(prev)):
         try:
             pl = json.loads(q.read_text(encoding="utf8")).get("look", {})
@@ -449,7 +462,10 @@ def sh(*a, check=True, capture=False):
 
 
 def push(paths, msg):
-    sh("git", "add", *paths)
+    if CI and not sh("git", "config", "user.email", check=False, capture=True):
+        sh("git", "config", "user.name", "github-actions[bot]")
+        sh("git", "config", "user.email", "41898282+github-actions[bot]@users.noreply.github.com")
+    sh("git", "add", *[p for p in paths if Path(p).exists()])
     if subprocess.run(["git", "diff", "--cached", "--quiet"]).returncode == 0:
         print("nothing new to push")
         return sh("git", "rev-parse", "HEAD", capture=True)
@@ -472,8 +488,12 @@ def wait_run(workflow, sha=None, since=None, timeout=4 * 3600):
     while not rid and time.time() - t0 < 300:
         r_ = subprocess.run([GH, "run", "list", "--workflow", workflow, "--limit", "10", "--json", "databaseId,headSha,createdAt,event"], capture_output=True, text=True)
         out = r_.stdout if r_.returncode == 0 else "[]"
-        for r in json.loads(out or "[]"):
-            if (sha and r["headSha"] == sha) or (since and r["createdAt"] >= since):
+        try:
+            runs = json.loads(out or "[]")
+        except ValueError:
+            runs = []
+        for r in reversed(runs):  # oldest first: the run we started, not a later one
+            if (sha and r["headSha"] == sha) or (since and r["createdAt"] >= since and (not CI or r["event"] == "workflow_dispatch")):
                 rid = r["databaseId"]
                 break
         if not rid:
@@ -498,6 +518,21 @@ def wait_run(workflow, sha=None, since=None, timeout=4 * 3600):
     return rid
 
 
+def branch():
+    return os.environ.get("GITHUB_REF_NAME") or sh("git", "branch", "--show-current", capture=True)
+
+
+def dispatch(workflow, *fields):
+    """CI only: start <workflow> on this branch, return the 'since' stamp wait_run uses to find it"""
+    since = utcnow()
+    args = [GH, "workflow", "run", workflow, "--ref", branch()]
+    for f in fields:
+        args += ["-f", f]
+    sh(*args)
+    time.sleep(10)
+    return since
+
+
 def last_ok(workflow, title_has=""):
     """resume after the waiter died (weak PC): newest SUCCESSFUL run of workflow, no push, no dispatch"""
     r_ = subprocess.run([GH, "run", "list", "--workflow", workflow, "--limit", "30", "--json", "databaseId,conclusion,displayTitle"], capture_output=True, text=True)
@@ -519,7 +554,10 @@ def voice(eid):
     if Path(f"pipeline/voice/{eid}.json").exists() and sh("py" if os.name == "nt" else "python3", "pipeline/tts_cb.py", eid, "--check", check=False) == 0:
         print("voice already up to date")
         return
-    wait_run("voice.yml", sha=sha)
+    if CI:
+        wait_run("voice.yml", since=dispatch("voice.yml", f"ep={eid}"))
+    else:
+        wait_run("voice.yml", sha=sha)
     sh("git", "pull", "--rebase", "--autostash", "-q")
     if not Path(f"pipeline/voice/{eid}.flac").exists():
         sys.exit("voice file missing after the run")
@@ -746,8 +784,11 @@ def plan(eid):
 def textures(eid):
     from PIL import Image, ImageDraw, ImageFont
     s = load(eid)
-    F = "C:/Windows/Fonts/impact.ttf" if os.path.exists("C:/Windows/Fonts/impact.ttf") else None
-    SERIF = "C:/Windows/Fonts/georgiab.ttf" if os.path.exists("C:/Windows/Fonts/georgiab.ttf") else None
+    def first(*ps):
+        return next((p for p in ps if os.path.exists(p)), None)
+    # Linux (GitHub runner): DejaVu ships with ubuntu-latest; never fall back to PIL's tiny bitmap font
+    F = first("C:/Windows/Fonts/impact.ttf", "/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf", "/usr/share/fonts/truetype/liberation/LiberationSans-Bold.ttf")
+    SERIF = first("C:/Windows/Fonts/georgiab.ttf", "/usr/share/fonts/truetype/dejavu/DejaVuSerif-Bold.ttf", "/usr/share/fonts/truetype/liberation/LiberationSerif-Bold.ttf")
 
     def font(path, size):
         try:
@@ -927,11 +968,14 @@ def fmt(f):
 # ───────────────────────────── shots + final render ─────────────────────────────
 def shots(eid, resume=False):
     if resume:
-        return fetch_shots(eid, last_ok("blender.yml"))
+        return fetch_shots(eid, last_ok("blender.yml", f"blender {eid} " if CI else ""))
     Path("blender/RUN").write_text(f"{eid} fast 12 cycles\n", encoding="utf8")
     paths = [f"blender/{eid}.py", f"blender/{eid}_lens.json", f"blender/{eid}.chunks", "blender/RUN", "blender/auto.py"] + [str(p) for p in Path("blender/tex").glob(f"{eid}_*.png")]
     sha = push(paths, f"{eid}: autopilot 3D shots")
-    fetch_shots(eid, wait_run("blender.yml", sha=sha, timeout=6 * 3600))
+    if CI:  # inputs = what blender/RUN holds ("<id> fast 12 cycles"); engine is still read from RUN
+        fetch_shots(eid, wait_run("blender.yml", since=dispatch("blender.yml", f"shot={eid}", "mode=fast", "samples=12"), timeout=int(5.5 * 3600)))
+    else:
+        fetch_shots(eid, wait_run("blender.yml", sha=sha, timeout=6 * 3600))
 
 
 def fetch_shots(eid, rid):
@@ -946,12 +990,17 @@ def render(eid, resume=False):
     comp = "Auto-" + eid
     if resume:
         return fetch_final(eid, last_ok("v6demo.yml", comp))
-    paths = [f"public/{eid}", f"src/v6/auto/{eid}.plan.json", f"src/v6/{eid}_timing.json", "src/v6/autoEps.ts", "src/v6/Auto.tsx", "src/v6/Root.tsx"]
-    push(paths, f"{eid}: autopilot final render inputs")
+    save(eid)
     since = utcnow()
-    sh(GH, "workflow", "run", "v6demo.yml", "-f", f"comp={comp}", "--ref", sh("git", "branch", "--show-current", capture=True))
+    sh(GH, "workflow", "run", "v6demo.yml", "-f", f"comp={comp}", "--ref", branch())
     time.sleep(10)
     fetch_final(eid, wait_run("v6demo.yml", since=since))
+
+
+def save(eid):
+    paths = [f"public/{eid}", f"src/v6/auto/{eid}.plan.json", f"src/v6/{eid}_timing.json", "src/v6/autoEps.ts", "src/v6/Auto.tsx", "src/v6/Root.tsx",
+             f"blender/{eid}.py", f"blender/{eid}_lens.json", f"blender/{eid}.chunks"]
+    return push(paths, f"{eid}: autopilot final render inputs")
 
 
 def fetch_final(eid, rid):
@@ -1002,6 +1051,8 @@ if __name__ == "__main__":
         sys.exit(0 if qa(eid) else 1)
     elif cmd == "shots":
         shots(eid, "--resume" in sys.argv)
+    elif cmd == "save":
+        save(eid)
     elif cmd == "render":
         render(eid, "--resume" in sys.argv)
     elif cmd == "all":

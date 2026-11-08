@@ -4,7 +4,10 @@ Usage: py tools/voice_gaps.py ea1 [gap_seconds_on_screen=4]"""
 import json, subprocess, sys
 import numpy as np, soundfile as sf
 ep, gap = sys.argv[1], float(sys.argv[2]) if len(sys.argv) > 2 else 4.0
+import os, shutil
 FF = "C:/Users/hp/AppData/Local/Programs/Python/Python313/Lib/site-packages/imageio_ffmpeg/binaries/ffmpeg-win-x86_64-v7.1.exe"
+if not os.path.exists(FF):  # GitHub runner (episode.yml): apt ffmpeg
+    FF = shutil.which("ffmpeg") or "ffmpeg"
 tmp = f"public/{ep}/_slow.wav"
 subprocess.run([FF, "-v", "error", "-y", "-i", f"pipeline/voice/{ep}.flac", "-af", "atempo=0.9", tmp], check=True)
 a, sr = sf.read(tmp, dtype="float32")
