@@ -21,7 +21,7 @@ export const V6Root: React.FC = () => (
     <Composition id="Ea1" component={Ea1} width={1920} height={1080} fps={30} durationInFrames={EA1_FRAMES} />
     <Composition id="Ea1Montage" component={Montage} width={1920} height={1080} fps={30} durationInFrames={MONT_FRAMES} />
     {AUTO.map(({p, C}) => (
-      <Composition key={p.id} id={`Auto-${p.id}`} component={C} width={1920} height={1080} fps={30} durationInFrames={p.frames} />
+      <Composition key={p.id} id={`Auto-${p.id}`} component={C} width={p.kind === 'short' ? p.w ?? 1080 : 1920} height={p.kind === 'short' ? p.h ?? 1920 : 1080} fps={30} durationInFrames={p.frames} />
     ))}
     <Composition id="Ea1Full" component={Ea1Full} width={1920} height={1080} fps={30} durationInFrames={EA1_FULL_FRAMES} />
   </>

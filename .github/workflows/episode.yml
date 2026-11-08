@@ -90,7 +90,7 @@ jobs:
         if: inputs.stage == 'render'
         run: |
           cd "videos/$ID"
-          ffmpeg -v error -y -i "$ID.mp4" -vf scale=1280:-2 -c:v libx264 -crf 27 -preset slow -c:a aac -b:a 128k -movflags +faststart "${ID}_send.mp4"
+          ffmpeg -v error -y -i "$ID.mp4" -vf "scale='if(gt(iw,ih),1280,720)':-2" -c:v libx264 -crf 27 -preset slow -c:a aac -b:a 128k -movflags +faststart "${ID}_send.mp4"
           F=("$ID.mp4" "${ID}_send.mp4")
           for q in compare.md qa_hook.jpg qa_sheet.jpg description.txt; do
             if [ -f "$q" ]; then cp "$q" "$ID-$q"; F+=("$ID-$q"); fi

@@ -1,5 +1,5 @@
 import React from 'react';
-import {AbsoluteFill, Audio, Freeze, Img, OffthreadVideo, Sequence, getStaticFiles, staticFile, useCurrentFrame} from 'remotion';
+import {AbsoluteFill, Audio, Freeze, Img, OffthreadVideo, Sequence, getStaticFiles, staticFile, useCurrentFrame, useVideoConfig} from 'remotion';
 import {Sfx, Cue} from '../fx';
 import {ANTON, UI, K, snap, Counter, ComicBurst, HomeBase} from './kit';
 import {Music, MSeg} from './kit2';
@@ -27,34 +27,38 @@ let HEAD = ANTON;
 // verbatim macro quotes, kinetic text, counters, bursts, Src line on every fact, flashes + shakes on hits.
 type Bg = {from: number; to: number; k: string; n?: string; off?: number; t?: number; len24?: number; pose?: string | null; set?: [string, number]; title?: string; lines?: string[]; far?: string[]; file?: string; label?: string; flash?: boolean};
 type Ov = {from: number; to: number; k: string; [x: string]: any};
-export type Plan = {id: string; title: string; frames: number; hookEnd: number; look?: {grade: string; font: string}; bgs: Bg[]; ovs: Ov[]; music: MSeg[]; sfx: Cue[]; lens: Record<string, number>};
+// kind 'short' = vertical 9:16 Short (w 1080 x h 1920, SHORTS_MUST.md); default = 16:9 long-form
+export type Plan = {id: string; title: string; kind?: 'short' | 'long'; w?: number; h?: number; frames: number; hookEnd: number; look?: {grade: string; font: string}; bgs: Bg[]; ovs: Ov[]; music: MSeg[]; sfx: Cue[]; lens: Record<string, number>};
 
 const OUTLINE = ['2px 0', '-2px 0', '0 2px', '0 -2px'].map((o) => `drop-shadow(${o} 0 #111)`).join(' ');
 
 const Shot3D: React.FC<{id: string; n: string; off: number; len24: number}> = ({id, n, off, len24}) => {
   const f = useCurrentFrame();
   const last = Math.max(1, Math.floor((len24 / 24 - off) * 30) - 2);
-  const v = <OffthreadVideo src={staticFile(`${id}/shot_${n}.mp4`)} startFrom={Math.round(off * 30)} muted style={{width: 1920, height: 1080}} />;
+  const {width, height} = useVideoConfig();
+  const v = <OffthreadVideo src={staticFile(`${id}/shot_${n}.mp4`)} startFrom={Math.round(off * 30)} muted style={{width, height, objectFit: 'cover'}} />;
   const z = 1 + 0.0012 * Math.min(f, last) + (f > last ? 0.004 * (f - last) : 0);
   return <AbsoluteFill style={{transform: `scale(${z})`}}>{f < last ? v : <Freeze frame={last}>{v}</Freeze>}</AbsoluteFill>;
 };
 const Still: React.FC<{id: string; n: string; t: number; soft?: boolean}> = ({id, n, t, soft}) => {
   const f = useCurrentFrame();
+  const {width, height} = useVideoConfig();
   return (
     <AbsoluteFill style={{transform: `scale(${(soft ? 1.12 : 1.03) + 0.0028 * f})`, filter: soft ? 'blur(7px) brightness(0.62)' : 'brightness(0.85)'}}>
       <Freeze frame={Math.round(t * 30)}>
-        <OffthreadVideo src={staticFile(`${id}/shot_${n}.mp4`)} muted style={{width: 1920, height: 1080}} />
+        <OffthreadVideo src={staticFile(`${id}/shot_${n}.mp4`)} muted style={{width, height, objectFit: 'cover'}} />
       </Freeze>
     </AbsoluteFill>
   );
 };
 const Cut: React.FC<{id: string; pose: string; push?: boolean}> = ({id, pose, push = true}) => {
   const f = useCurrentFrame();
+  const {height} = useVideoConfig();
   return (
     <div style={{position: 'absolute', inset: 0, transformOrigin: '78% 100%', transform: `scale(${push ? 1.08 + 0.0028 * f : 1})`}}>
       <Img
         src={staticFile(`${id}/cut_${pose}.png`)}
-        style={{position: 'absolute', right: -40, bottom: 0, height: 1080, transformOrigin: '50% 100%', transform: `rotate(${Math.sin(f / 17) * 0.8}deg)`, filter: f < 2 ? `brightness(0) invert(1) ${OUTLINE}` : `${OUTLINE} drop-shadow(0 20px 30px rgba(0,0,0,0.45))`}}
+        style={{position: 'absolute', right: -40, bottom: 0, height, transformOrigin: '50% 100%', transform: `rotate(${Math.sin(f / 17) * 0.8}deg)`, filter: f < 2 ? `brightness(0) invert(1) ${OUTLINE}` : `${OUTLINE} drop-shadow(0 20px 30px rgba(0,0,0,0.45))`}}
       />
     </div>
   );
@@ -73,11 +77,12 @@ const Chapter: React.FC<{id: string; title: string; n: string; t: number}> = ({i
 // real YouTube footage (tools/clips.py, Creative Commons only); if it was not found → falls back to the home set
 const Clip: React.FC<{id: string; file: string}> = ({id, file}) => {
   const f = useCurrentFrame();
+  const {width, height} = useVideoConfig();
   const ok = getStaticFiles().some((x) => x.name === `${id}/${file}`);
   if (!ok) return <HomeBase f={f} />;
   return (
     <AbsoluteFill style={{transform: `scale(${1.04 + 0.0015 * f})`}}>
-      <OffthreadVideo src={staticFile(`${id}/${file}`)} muted style={{width: 1920, height: 1080, objectFit: 'cover'}} />
+      <OffthreadVideo src={staticFile(`${id}/${file}`)} muted style={{width, height, objectFit: 'cover'}} />
       <div style={{position: 'absolute', right: 30, top: 26, fontFamily: UI, fontWeight: 600, fontSize: 24, color: '#fff', background: 'rgba(0,0,0,.55)', padding: '6px 14px', borderRadius: 8}}>footage: YouTube (CC BY) · credits in description</div>
     </AbsoluteFill>
   );
@@ -129,9 +134,16 @@ const BgFlat: React.FC<{id: string; b: Bg; fallback: string}> = ({id, b, fallbac
 };
 
 const Kinetic: React.FC<{f: number; o: Ov}> = ({f, o}) => {
-  const k = snap(f, o.from, 5);
+  const k = o.from <= 0 ? 1 : snap(f, o.from, 5);
+  const txt = {fontFamily: HEAD, fontSize: o.size, lineHeight: 1.02, color: o.color, WebkitTextStroke: '5px #111', paintOrder: 'stroke fill' as const};
+  if (o.center)
+    return (
+      <div style={{position: 'absolute', left: 0, right: 0, top: o.y, display: 'flex', justifyContent: 'center'}}>
+        <div style={{...txt, maxWidth: o.w ?? 980, textAlign: 'center', transform: `scale(${1.5 - 0.5 * k}) rotate(-3deg)`, transformOrigin: 'center center', opacity: Math.min(1, k * 2)}}>{o.text}</div>
+      </div>
+    );
   return (
-    <div style={{position: 'absolute', left: o.x, top: o.y, maxWidth: 1250, fontFamily: HEAD, fontSize: o.size, lineHeight: 1.02, color: o.color, WebkitTextStroke: '5px #111', paintOrder: 'stroke fill', transform: `scale(${1.5 - 0.5 * k}) rotate(-3deg)`, transformOrigin: 'left center', opacity: Math.min(1, k * 2)}}>{o.text}</div>
+    <div style={{...txt, position: 'absolute', left: o.x, top: o.y, maxWidth: 1250, transform: `scale(${1.5 - 0.5 * k}) rotate(-3deg)`, transformOrigin: 'left center', opacity: Math.min(1, k * 2)}}>{o.text}</div>
   );
 };
 const Bars: React.FC<{f: number; o: Ov}> = ({f, o}) => (
@@ -168,19 +180,25 @@ const Overlay: React.FC<{f: number; o: Ov}> = ({f, o}) => {
   if (o.k === 'count')
     return (
       <div style={o.center ? {position: 'absolute', left: 0, right: 0, top: o.y, textAlign: 'center', WebkitTextStroke: '4px #111'} : {position: 'absolute', left: o.x, top: o.y, WebkitTextStroke: '4px #111'}}>
-        <Counter f={f} at={o.from} dur={o.dur} to={o.to} dec={o.dec} prefix={o.prefix} suffix={o.suffix} size={o.size} color={o.color} />
+        <Counter f={f} at={o.from} dur={o.dur} to={o.val ?? o.to} dec={o.dec} prefix={o.prefix} suffix={o.suffix} size={o.size} color={o.color} />
       </div>
     );
-  if (o.k === 'burst') return <ComicBurst f={f} at={o.from} word={o.word} x={560} y={600} />;
-  if (o.k === 'stamp')
-    return (
-      <div style={{position: 'absolute', left: 160, top: 700, fontFamily: HEAD, fontSize: 110, color: o.color, border: `10px solid ${o.color}`, padding: '0 30px', background: 'rgba(0,0,0,.25)', transform: `rotate(-6deg) scale(${1.6 - 0.6 * snap(f, o.from, 4)})`}}>{o.text}</div>
-    );
+  if (o.k === 'burst') return <ComicBurst f={f} at={o.from} word={o.word} x={o.x ?? 560} y={o.y ?? 600} />;
+  if (o.k === 'stamp') {
+    const st = {fontFamily: HEAD, fontSize: o.center ? 130 : 110, color: o.color, border: `10px solid ${o.color}`, padding: '0 30px', background: 'rgba(0,0,0,.25)', transform: `rotate(-6deg) scale(${o.from <= 0 ? 1 : 1.6 - 0.6 * snap(f, o.from, 4)})`};
+    if (o.center)
+      return (
+        <div style={{position: 'absolute', left: 0, right: 0, top: o.y, display: 'flex', justifyContent: 'center'}}>
+          <div style={st}>{o.text}</div>
+        </div>
+      );
+    return <div style={{...st, position: 'absolute', left: 160, top: 700}}>{o.text}</div>;
+  }
   if (o.k === 'bars') return <Bars f={f} o={o} />;
   if (o.k === 'checks') return <Checks f={f} o={o} />;
   if (o.k === 'src')
     return (
-      <div style={{position: 'absolute', left: 40, bottom: 34, maxWidth: 1300, fontFamily: UI, fontWeight: 600, fontSize: 26, color: '#fff', background: 'rgba(0,0,0,0.62)', padding: '8px 16px', borderRadius: 10, opacity: snap(f, o.from, 6)}}>Source: {o.text}</div>
+      <div style={{position: 'absolute', left: 40, ...(o.top != null ? {top: o.top, maxWidth: 1000} : {bottom: 34, maxWidth: 1300}), fontFamily: UI, fontWeight: 600, fontSize: 26, color: '#fff', background: 'rgba(0,0,0,0.62)', padding: '8px 16px', borderRadius: 10, opacity: snap(f, o.from, 6)}}>Source: {o.text}</div>
     );
   return null;
 };
@@ -197,7 +215,7 @@ export const AutoEp: React.FC<{plan: Plan}> = ({plan}) => {
   const live = ovs.filter((o) => o.k !== 'shake' && o.k !== 'punch' && f >= o.from && f < o.to);
   const pu = ovs.find((o) => o.k === 'punch' && f >= o.from && f < o.to && o.from >= (b ? b.from : 0));
   const sh = ovs.filter((o) => o.k === 'shake' && f >= o.from && f < o.to).reduce((m, o) => Math.max(m, o.amp * (1 - (f - o.from) / (o.to - o.from))), 0);
-  const flash = b && b.flash && f - b.from < 2;
+  const flash = b && b.flash && b.from > 0 && f - b.from < 2;  // frame 0 = the prize, never a white frame
   // motion blur: real (CameraMotionBlur) only on the light overlay layer; the 3D video layer gets a cheap
   // decaying CSS blur instead (multi-sample blur re-decodes video 6x per frame -> render timeout on CI).
   const pb = pu ? Math.max(0, 6 - (f - pu.from)) : 0;

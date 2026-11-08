@@ -35,7 +35,7 @@ jobs:
         run: |
           ID=${COMP#Auto-}
           if [ -f public/$ID/SHOTS_RUN ]; then
-            gh run download $(cat public/$ID/SHOTS_RUN) -n $ID-fast -D /tmp/shots
+            gh run download $(cat public/$ID/SHOTS_RUN) -n $ID-fast -D /tmp/shots || gh run download $(cat public/$ID/SHOTS_RUN) -n $ID-vert -D /tmp/shots  # vert = 9:16 Short
             cp /tmp/shots/shot_*.mp4 public/$ID/
             cp /tmp/shots/cut_*.png public/$ID/ 2>/dev/null || true
             ls public/$ID

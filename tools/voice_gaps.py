@@ -1,26 +1,36 @@
 """Slow the episode voice (atempo 0.9) and open a music-only breath before every chapter (beats c<N>_01).
 Writes public/<ep>/voice.flac + src/v6/<ep>_timing.json (beat/word times shifted, in unslowed seconds like the voice json).
-Usage: py tools/voice_gaps.py ea1 [gap_seconds_on_screen=4]"""
+Usage: py tools/voice_gaps.py ea1 [gap_seconds_on_screen=4] [--tempo 0.9] [--maxgap S] [--beat <beat_id>]
+  --tempo   atempo factor (Shorts: 1.0 = no slow-down)
+  --maxgap  SHORTS (SHORTS_MUST §2): every silence between two words longer than S on-screen seconds is cut down to S,
+            leading silence is cut to 0.05 s, trailing silence to 0.15 s (clean loop)
+  --beat    the ONE planned beat: the silence right before this beat's first word is set to exactly maxgap"""
 import json, subprocess, sys
 import numpy as np, soundfile as sf
-ep, gap = sys.argv[1], float(sys.argv[2]) if len(sys.argv) > 2 else 4.0
 import os, shutil
+
+opt = {sys.argv[i][2:]: sys.argv[i + 1] for i in range(1, len(sys.argv) - 1) if sys.argv[i].startswith("--")}
+pos = [a for i, a in enumerate(sys.argv[1:], 1) if not a.startswith("--") and not sys.argv[i - 1].startswith("--")]
+ep, gap = pos[0], float(pos[1]) if len(pos) > 1 else 4.0
+tempo = float(opt.get("tempo", 0.9))
+maxgap = float(opt["maxgap"]) if "maxgap" in opt else None
+beat_id = opt.get("beat")
 FF = "C:/Users/hp/AppData/Local/Programs/Python/Python313/Lib/site-packages/imageio_ffmpeg/binaries/ffmpeg-win-x86_64-v7.1.exe"
 if not os.path.exists(FF):  # GitHub runner (episode.yml): apt ffmpeg
     FF = shutil.which("ffmpeg") or "ffmpeg"
 tmp = f"public/{ep}/_slow.wav"
-subprocess.run([FF, "-v", "error", "-y", "-i", f"pipeline/voice/{ep}.flac", "-af", "atempo=0.9", tmp], check=True)
+subprocess.run([FF, "-v", "error", "-y", "-i", f"pipeline/voice/{ep}.flac"] + (["-af", f"atempo={tempo}"] if tempo != 1.0 else []) + [tmp], check=True)
 a, sr = sf.read(tmp, dtype="float32")
 V = json.load(open(f"pipeline/voice/{ep}.json", encoding="utf8"))
-cuts = [b["start"] for b in V["beats"] if b["id"].endswith("_01") and b["id"].startswith("c")]
-g0 = gap * 0.9  # gap in unslowed seconds
+cuts = [b["start"] for b in V["beats"] if b["id"].endswith("_01") and b["id"].startswith("c")] if gap > 0 else []
+g0 = gap * tempo  # gap in unslowed seconds
 out, last, shift = [], 0, 0.0
 for c in cuts:
-    i = int((c - 0.15) / 0.9 * sr)
+    i = int((c - 0.15) / tempo * sr)
     out += [a[last:i], np.zeros((int(gap * sr),) + a.shape[1:], dtype=a.dtype)]
     last = i
 out.append(a[last:])
-sf.write(f"public/{ep}/voice.flac", np.concatenate(out), sr)
+a = np.concatenate(out)
 for b in V["beats"]:
     k = sum(1 for c in cuts if b["start"] >= c - 0.15) * g0
     b["start"] += k
@@ -30,6 +40,48 @@ for b in V["beats"]:
         w["end"] += k
 V["total"] += len(cuts) * g0
 V["gaps"] = [c - 0.15 + n * g0 for n, c in enumerate(cuts)]
+
+if maxgap is not None:  # Shorts: cut every silence > maxgap (on-screen seconds), one planned beat = exactly maxgap
+    W = [(w, b["id"], j == 0) for b in V["beats"] for j, w in enumerate(b.get("words", []))]
+    ops = []  # (slowed-time position, delta seconds): delta < 0 = cut, > 0 = inserted silence
+    if W:
+        lead = W[0][0]["start"] / tempo
+        if lead > 0.05:
+            ops.append((0.0, -(lead - 0.05)))
+    for (w1, _, _), (w2, bid, first) in zip(W, W[1:]):
+        e1, s2 = w1["end"] / tempo, w2["start"] / tempo
+        g = s2 - e1
+        tgt = maxgap if (beat_id and bid == beat_id and first) else min(g, maxgap)
+        if abs(g - tgt) > 0.01:
+            ops.append((e1 + min(g, tgt) / 2, tgt - g))
+    tail_from = (W[-1][0]["end"] / tempo + 0.15) if W else len(a) / sr
+    pieces, cur = [], 0
+    for p, d in sorted(ops):
+        i = int(p * sr)
+        if d < 0:
+            pieces.append(a[cur:i])
+            cur = i + int(-d * sr)
+        else:
+            pieces += [a[cur:i], np.zeros((int(d * sr),) + a.shape[1:], dtype=a.dtype)]
+            cur = i
+    pieces.append(a[cur:int(tail_from * sr)])
+    a = np.concatenate(pieces)
+
+    def m(t):  # unslowed time → new unslowed time
+        ts = t / tempo
+        return (ts + sum(d if d > 0 else max(d, -(ts - p)) if ts > p else 0 for p, d in ops)) * tempo
+
+    for b in V["beats"]:
+        for w in b.get("words", []):
+            w["start"], w["end"] = m(w["start"]), m(w["end"])
+        if b.get("words"):
+            b["start"], b["end"] = b["words"][0]["start"], b["words"][-1]["end"]
+        else:
+            b["start"], b["end"] = m(b["start"]), m(b["end"])
+    V["total"] = len(a) / sr * tempo
+    V["maxgap"] = maxgap
+
+sf.write(f"public/{ep}/voice.flac", a, sr)
 json.dump(V, open(f"src/v6/{ep}_timing.json", "w", encoding="utf8"))
-import os; os.remove(tmp)
-print(len(cuts), "gaps; total on screen", round(V["total"] / 0.9, 1), "s")
+os.remove(tmp)
+print(len(cuts), "gaps; total on screen", round(V["total"] / tempo, 1), "s" + (f" (silences ≤ {maxgap} s)" if maxgap is not None else ""))

@@ -29,6 +29,10 @@ LENS = json.load(open(os.path.join(HERE, f"{EP}_lens.json")))
 LEN = int(LENS.get(SHOT, 120))
 P = SPEC.get("shots", {}).get(SHOT, {}) if SHOT != "K" else {}
 TPL = P.get("tpl", "")
+# 9:16 Shorts (blender.yml mode vert = 900x1600): same sets, never wider — a longer lens keeps Dave + the hero big in the
+# centre column (Blender fits the 36 mm sensor to the long side, so portrait at the same lens = Dave ~0.56x as tall)
+PORT = K.W < K.H
+LF = 1.45 if PORT else 1.0
 
 
 def tex(name):  # textures written by tools/auto.py: blender/tex/<ep>_<shot>_<name>.png
@@ -60,7 +64,7 @@ def key_cam(c, f, loc, target, lens=None):
     c.location = loc
     aim(c, target)
     if lens:
-        c.data.lens = lens
+        c.data.lens = lens * LF
         c.data.keyframe_insert("lens", frame=f)
     c.keyframe_insert("location", frame=f)
     c.keyframe_insert("rotation_euler", frame=f)
@@ -717,7 +721,7 @@ elif TPL == "scene":  # NEW (5 Nov): the set comes from the SCRIPT, not from ea1
     for i, mid in enumerate(props):
         a = math.pi * (0.15 + 0.7 * (i + 0.5) / max(1, len(props)))
         r_ = 2.0 + rr.uniform(0, 1.2)
-        o = put(mid, (math.cos(a) * r_ * 1.4, 1.4 + math.sin(a) * r_, 0), rr.uniform(-0.6, 0.6))
+        o = put(mid, (math.cos(a) * r_ * (0.5 if PORT else 1.4), 1.4 + math.sin(a) * r_ + (0.6 if PORT else 0), 0), rr.uniform(-0.6, 0.6))
         if o:
             lo, hi = bbox(o)
             if hi.z - lo.z > 1.6:
@@ -726,13 +730,15 @@ elif TPL == "scene":  # NEW (5 Nov): the set comes from the SCRIPT, not from ea1
                 lo, _ = bbox(o)
                 o.location.z -= lo.z
     if P.get("sign"):  # the line's words on a real 3D board on a post (price, name, number)
-        box("post", (-1.5, 1.6, 0.55), (0.08, 0.08, 1.1), flat("post", (0.15, 0.15, 0.16)))
-        sg = face_box("sign", (-1.5, 1.6, 1.45), (1.3, 0.06, 0.8), (0.9, 0.9, 0.9), tex("sign"), "-y")
-        sg.rotation_euler = (0, 0, R(12))
+        sx, sy = (-0.62, 1.9) if PORT else (-1.5, 1.6)
+        box("post", (sx, sy, 0.55), (0.08, 0.08, 1.1), flat("post", (0.15, 0.15, 0.16)))
+        sg = face_box("sign", (sx, sy, 1.45), (1.05, 0.06, 0.65) if PORT else (1.3, 0.06, 0.8), (0.9, 0.9, 0.9), tex("sign"), "-y")
+        sg.rotation_euler = (0, 0, R(8 if PORT else 12))
     # hero object: the ONE thing the line is about, with its own motion
     hero, fx, heroes = P.get("hero"), P.get("hero_fx", "drop"), []
     if hero:
-        h0 = put(hero, (0.9, -0.4, 0), 0.3, float(P["hero_size"]) if P.get("hero_size") else None)
+        big = float(P.get("hero_size") or 0) >= 1.2  # portrait: a building-size hero stands BEHIND Dave, small ones in front of him
+        h0 = put(hero, ((0.35, 2.6, 0) if big else (0.42, -0.85, 0)) if PORT else (0.9, -0.4, 0), 0.3, float(P["hero_size"]) if P.get("hero_size") else None)
         if h0:
             heroes = [h0] + ([dup(h0, (0, 0, 0)) for _ in range(int(P.get("n", 24)) - 1)] if fx == "pile" else [])
     base = [(o.location.copy(), o.rotation_euler.copy(), o.scale.copy(), rr.uniform(-1.2, 1.2), rr.uniform(-1.6, 1.6), rr.uniform(0.2, 2.6), rr.uniform(0, LEN * 0.6)) for o in heroes]
@@ -757,11 +763,11 @@ elif TPL == "scene":  # NEW (5 Nov): the set comes from the SCRIPT, not from ea1
                 o.rotation_euler = (rot.x, rot.y, rot.z + 2 * math.pi * ease(t))
             elif fx == "slide":
                 k = back_out(min(1, f / 16))
-                o.location = (loc.x + 3.5 * (1 - k), loc.y, loc.z)
+                o.location = (loc.x + (1.6 if PORT else 3.5) * (1 - k), loc.y, loc.z)
             elif fx == "pile":
                 tt = max(0.0, (f - t0) / 24.0)
                 z = max(0.0, 7.0 - 0.5 * 9.81 * tt * tt) if f >= t0 else 9.0
-                o.location = (loc.x + dx, loc.y + dy * 0.8 + 1.0, loc.z + z * 1.0 + (dz * 0.08 if z == 0 else 0))
+                o.location = (loc.x + dx * (0.5 if PORT else 1.0), loc.y + dy * 0.8 + 1.0, loc.z + z * 1.0 + (dz * 0.08 if z == 0 else 0))
                 o.rotation_euler = (rot.x + dz * min(tt, 1), rot.y + dx * min(tt, 1), rot.z + dy)
             kf(o, f, "location", "rotation_euler", "scale")
         if act != "none":

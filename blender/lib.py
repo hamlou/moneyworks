@@ -628,7 +628,7 @@ class Dave:
         sc = K.sc
         sc.render.use_freestyle = True
         sc.render.line_thickness_mode = "ABSOLUTE"
-        th = 2.6 * K.H / 1080
+        th = 2.6 * min(K.W, K.H) / 1080
         sc.render.line_thickness = th
         fs = bpy.context.view_layer.freestyle_settings
         if not getattr(Dave, "_lined", False):
@@ -810,7 +810,7 @@ class Dave:
         self.hood.hide_render = not o.get("hood")
         # plain white stickmen (crowds, extras): a thin outline, or thin limbs read as solid black (29 Oct army test)
         if hasattr(self, "lineset"):
-            self.lineset.linestyle.thickness = (1.6 if name == "none" else 4.6) * K.H / 1080
+            self.lineset.linestyle.thickness = (1.6 if name == "none" else 4.6) * min(K.W, K.H) / 1080
         for k, objs in self.extras.items():
             for ob in objs:
                 ob.hide_render = not o.get(k)

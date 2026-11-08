@@ -1,0 +1,438 @@
+{
+ "id": "ea2s",
+ "kind": "short",
+ "title": "What If He Runs For President? #shorts",
+ "outfit": "hoodie",
+ "look": {
+  "style": "punch",
+  "format": "simulation",
+  "hook_form": "question"
+ },
+ "description": "They spent $33 million to stop Abdul El-Sayed in his primary and he won anyway. Now he is the first Muslim ever elected to the U.S. Senate. So what if he runs for president in 2028 and signs Medicare for All on day one? Here is what actually happens to the bill.",
+ "sources": [
+  {
+   "id": "S1",
+   "short": "NBC News, Oct 9 2026",
+   "url": "https://www.nbcnews.com/politics/2026-election/aipac-super-pac-starts-spending-michigan-senate-race-rcna602597",
+   "fact": "United Democracy Project spent $33 million on ads in the Democratic primary against El-Sayed and in support of Rep. Haley Stevens"
+  },
+  {
+   "id": "S2",
+   "short": "Axios, Nov 4 2026",
+   "url": "https://www.axios.com/2026/11/04/michigan-senate-results-el-sayed-rogers",
+   "fact": "El-Sayed (D) beat Mike Rogers (R) about 52.6% to 45.5% for U.S. Senate in Michigan (AP call 2:27 a.m. Nov 4)"
+  },
+  {
+   "id": "S3",
+   "short": "NPR, Nov 4 2026",
+   "url": "https://www.npr.org/2026/11/04/g-s1-150029/michigan-senate-race-abdul-el-sayed-mike-rogers",
+   "fact": "El-Sayed wins the Michigan Senate race and becomes the first Muslim elected to the U.S. Senate"
+  },
+  {
+   "id": "S4",
+   "short": "Bridge Michigan, Sep 25 2026",
+   "url": "https://bridgemi.com/michigan-politics/fact-check-would-abdul-el-sayed-raise-taxes-to-pay-for-medicare-for-all/",
+   "fact": "El-Sayed's plan: Medicare for All as guaranteed baseline government health insurance"
+  },
+  {
+   "id": "S5",
+   "short": "Straight Arrow News + Senate Rule XXII",
+   "url": "https://san.com/cc/dc-dictionary-senate-cloture-vote-explained/",
+   "fact": "51 votes pass a bill but 60 are needed to end debate (cloture), the de facto threshold for most bills"
+  },
+  {
+   "id": "S6",
+   "short": "CBS News, Nov 2026",
+   "url": "https://www.cbsnews.com/live-updates/senate-election-results-2026/",
+   "fact": "Democrats hold at least 54 Senate seats after the 2026 midterms (2 races uncalled)"
+  }
+ ],
+ "shots": {
+  "H": {
+   "tpl": "rain",
+   "item": "cash"
+  },
+  "V": {
+   "tpl": "scene",
+   "sky": "modern_buildings_night",
+   "ground": "asphalt_04",
+   "hero": "p:bar_chart_3d=45,53",
+   "hero_fx": "pop",
+   "sign": "MICHIGAN",
+   "move": "orbit",
+   "dave": "stand",
+   "pose": "cheer",
+   "face": "grin"
+  },
+  "C": {
+   "tpl": "scene",
+   "sky": "dresden_square",
+   "ground": "checkered_pavement_tiles",
+   "hero": "p:bank_building=US SENATE",
+   "hero_size": 2.6,
+   "hero_fx": "drop",
+   "move": "crane",
+   "dave": "walk_in",
+   "pose": "point_l",
+   "face": "determined",
+   "outfit": "suit"
+  },
+  "W": {
+   "tpl": "scene",
+   "sky": "evening_museum_courtyard",
+   "ground": "brick_pavement",
+   "hero": "p:bank_building=WHITE HOUSE",
+   "hero_size": 2.4,
+   "hero_fx": "pop",
+   "move": "push",
+   "dave": "stand",
+   "pose": "look",
+   "face": "think",
+   "outfit": "suit"
+  },
+  "D": {
+   "tpl": "scene",
+   "sky": "reading_room",
+   "ground": "brown_floor_tiles",
+   "props": [
+    "desk_lamp_arm_01",
+    "binder_notebook"
+   ],
+   "hero": "metal_office_desk",
+   "hero_fx": "slide",
+   "sign": "MEDICARE FOR ALL",
+   "move": "dolly",
+   "dave": "stand",
+   "pose": "hold",
+   "face": "grin",
+   "outfit": "suit"
+  },
+  "B": {
+   "tpl": "scene",
+   "sky": "lythwood_room",
+   "ground": "brown_floor_tiles",
+   "props": [
+    "drawer_cabinet",
+    "medical_box"
+   ],
+   "hero": "p:receipt_long=ER VISIT $2,100|SURGERY $2,700|TOTAL $4,800",
+   "hero_fx": "pop",
+   "move": "top",
+   "dave": "stand",
+   "pose": "cheer",
+   "face": "grin"
+  },
+  "X": {
+   "tpl": "scene",
+   "sky": "lythwood_room",
+   "ground": "brown_floor_tiles",
+   "props": [
+    "drawer_cabinet"
+   ],
+   "hero": "p:receipt_long=TOTAL $4,800",
+   "hero_fx": "drop",
+   "move": "low",
+   "dave": "stand",
+   "pose": "shrug",
+   "face": "neutral"
+  },
+  "S": {
+   "tpl": "seats",
+   "n": 100,
+   "lit": 54,
+   "color": "blue"
+  },
+  "R": {
+   "tpl": "scene",
+   "sky": "old_room",
+   "ground": "brown_floor_tiles",
+   "props": [
+    "p:receipt_long=MEDICARE FOR ALL"
+   ],
+   "hero": "drawer_cabinet",
+   "hero_size": 1.0,
+   "hero_fx": "slide",
+   "move": "push",
+   "dave": "stand",
+   "pose": "slump",
+   "face": "dead"
+  },
+  "P": {
+   "tpl": "scene",
+   "sky": "night_bridge",
+   "ground": "asphalt_04",
+   "props": [
+    "p:money_bag"
+   ],
+   "hero": "p:cash_stack=$33M",
+   "hero_size": 0.7,
+   "hero_fx": "spin",
+   "move": "push",
+   "dave": "stand",
+   "pose": "point_you",
+   "face": "determined"
+  }
+ },
+ "hook": {
+  "mood": "tense",
+  "lines": [
+   {
+    "say": "What if they spent thirty three million to stop one man and he won anyway?",
+    "src": "S1",
+    "show": [
+     {
+      "v": "shot",
+      "shot": "H"
+     },
+     {
+      "v": "text",
+      "text": "$33,000,000 TO STOP HIM",
+      "color": "yellow"
+     },
+     {
+      "on": "stop",
+      "v": "sfx",
+      "sound": "thud"
+     },
+     {
+      "on": "one",
+      "v": "text",
+      "text": "ONE MAN",
+      "color": "red"
+     },
+     {
+      "on": "won",
+      "v": "stamp",
+      "text": "HE WON",
+      "color": "green",
+      "sfx": "ding"
+     }
+    ]
+   },
+   {
+    "say": "Because he just did.",
+    "src": "S2",
+    "show": [
+     {
+      "v": "shot",
+      "shot": "V",
+      "sfx": "snap_white"
+     }
+    ]
+   },
+   {
+    "say": "Abdul El-Sayed beat Mike Rogers by seven points",
+    "src": "S2",
+    "show": [
+     {
+      "v": "count",
+      "to": 52.6,
+      "dec": 1,
+      "suffix": "%",
+      "color": "green"
+     },
+     {
+      "on": "Rogers",
+      "v": "count",
+      "to": 45.5,
+      "dec": 1,
+      "suffix": "%",
+      "color": "red"
+     },
+     {
+      "on": "seven",
+      "v": "text",
+      "text": "+7 POINTS",
+      "color": "yellow"
+     }
+    ]
+   }
+  ]
+ },
+ "chapters": [
+  {
+   "title": "",
+   "mood": "hype",
+   "lines": [
+    {
+     "say": "and he is now the first Muslim ever elected to the United States Senate.",
+     "src": "S3",
+     "show": [
+      {
+       "v": "shot",
+       "shot": "C"
+      },
+      {
+       "on": "first",
+       "v": "text",
+       "text": "FIRST EVER",
+       "color": "yellow"
+      }
+     ]
+    },
+    {
+     "say": "So what if he runs for president in twenty twenty eight?",
+     "show": [
+      {
+       "v": "shot",
+       "shot": "W",
+       "sfx": "whoosh"
+      },
+      {
+       "on": "president",
+       "v": "text",
+       "text": "PRESIDENT 2028?",
+       "color": "yellow"
+      }
+     ]
+    },
+    {
+     "say": "Day one he signs Medicare for all",
+     "src": "S4",
+     "show": [
+      {
+       "v": "shot",
+       "shot": "D"
+      },
+      {
+       "on": "signs",
+       "v": "sfx",
+       "sound": "scribble"
+      },
+      {
+       "on": "Medicare",
+       "v": "text",
+       "text": "MEDICARE FOR ALL",
+       "color": "green"
+      }
+     ]
+    },
+    {
+     "say": "and every hospital bill in your drawer just disappears.",
+     "show": [
+      {
+       "v": "shot",
+       "shot": "B"
+      },
+      {
+       "on": "hospital",
+       "v": "text",
+       "text": "YOUR HOSPITAL BILLS",
+       "color": "red"
+      },
+      {
+       "on": "disappears",
+       "v": "burst",
+       "word": "POOF"
+      }
+     ]
+    },
+    {
+     "say": "Except it doesn't",
+     "punch": true,
+     "mood": "tense",
+     "show": [
+      {
+       "v": "shot",
+       "shot": "X"
+      },
+      {
+       "v": "sfx",
+       "sound": "k_stop"
+      },
+      {
+       "on": "doesn't",
+       "v": "stamp",
+       "text": "NOPE",
+       "color": "red",
+       "sfx": "deflate"
+      }
+     ]
+    },
+    {
+     "say": "because a president needs sixty senators to pass it",
+     "src": "S5",
+     "show": [
+      {
+       "v": "shot",
+       "shot": "S"
+      },
+      {
+       "on": "sixty",
+       "v": "text",
+       "text": "NEEDS 60",
+       "color": "yellow"
+      }
+     ]
+    },
+    {
+     "say": "and his party has fifty four.",
+     "src": "S6",
+     "show": [
+      {
+       "on": "fifty",
+       "v": "count",
+       "to": 54,
+       "suffix": " / 60",
+       "color": "red",
+       "sfx": "thud"
+      }
+     ]
+    },
+    {
+     "say": "So the bill dies in a drawer next to yours.",
+     "show": [
+      {
+       "v": "shot",
+       "shot": "R"
+      },
+      {
+       "on": "dies",
+       "v": "stamp",
+       "text": "DEAD",
+       "color": "red"
+      },
+      {
+       "on": "drawer",
+       "v": "sfx",
+       "sound": "k_slam"
+      }
+     ]
+    },
+    {
+     "say": "Which is why the real question was never what if he wins.",
+     "beat": true,
+     "mood": "think",
+     "show": [
+      {
+       "v": "shot",
+       "shot": "P"
+      },
+      {
+       "on": "real",
+       "v": "text",
+       "text": "THE REAL QUESTION",
+       "color": "yellow"
+      }
+     ]
+    },
+    {
+     "say": "It was what if they spent",
+     "loop": true,
+     "show": [
+      {
+       "v": "shot",
+       "shot": "H",
+       "from": 0
+      },
+      {
+       "v": "text",
+       "text": "$33,000,000 TO STOP HIM",
+       "color": "yellow"
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

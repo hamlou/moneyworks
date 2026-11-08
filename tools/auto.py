@@ -99,6 +99,18 @@ MOODS = {
     "hype": ["volatile_reaction", "crypto"],
 }
 SFX = sorted({p.stem for p in Path("public/sfx/ea1").glob("*.wav")})
+# SHORTS (kind "short", SHORTS_MUST.md): vertical 1080x1920, 25-40 s, hook starts "What if", loops into line 1, no CTA
+SHORT_BANNED = ["stick around", "by the end of this", "today we", "let's see", "subscribe", "follow", "part two", "comment"]
+SHORT_BG_OFF = ["macro", "photo", "home", "pose", "clip"]  # cards / Dave cut-outs: not used in Shorts (no K render)
+SHORT_OV_OFF = ["checks", "bars"]
+SHORT_MUSIC_V = 0.055  # ≈ 25 dB under the voice ≈ 15-20 % perceived loudness (voice and KM tracks both measure ≈ -16 dB mean)
+SHORT_WPS = 4.0
+
+
+def is_short(s):
+    return s.get("kind") == "short"
+
+
 SFX_ROOT = ["swish_fast", "snap_white", "slide", "tick", "count_roll", "ding", "trombone", "thud", "whoosh", "pop", "stamp", "drumroll", "cash", "coin"]
 
 
@@ -145,6 +157,11 @@ def check(eid, quiet=False):
         return report(eid, E, W)
     if s["id"] != eid:
         E.append(f"id is '{s['id']}' but file is {eid}.json")
+    if s.get("kind", "long") not in ("long", "short"):
+        E.append("kind must be 'short' (vertical Short) or 'long' (default)")
+    short = is_short(s)
+    if short and s.get("signoff"):
+        E.append("shorts: no signoff (an outro = swipe point, SHORTS_MUST §1) — the last line loops into line 1")
     if s.get("outfit", "hoodie") not in OUTFITS:
         E.append(f"outfit must be one of {OUTFITS}")
     src_ids = {x.get("id") for x in s["sources"]}
@@ -182,12 +199,16 @@ def check(eid, quiet=False):
         if lk.get(k) not in ok:
             E.append(f"look.{k} must be one of {list(ok)}")
     prev = sorted((q for q in Path("pipeline/auto").glob("*.json") if q.stem != eid), key=mtime)[-2:]
+    if short and lk.get("hook_form") != "question":
+        E.append("shorts: look.hook_form must be 'question' (the hook starts with 'What if…', SHORTS_MUST §0.3)")
     for i, q in enumerate(reversed(prev)):
         try:
-            pl = json.loads(q.read_text(encoding="utf8")).get("look", {})
+            pj = json.loads(q.read_text(encoding="utf8"))
+            pl = pj.get("look", {})
         except ValueError:
             continue
-        for k in ("style", "format") + (("hook_form",) if i == 0 else ()):
+        # hook_form: long vs long only (a Short's hook is always the 'What if…?' question)
+        for k in ("style", "format") + (("hook_form",) if i == 0 and not short and not is_short(pj) else ()):
             if pl.get(k) and pl.get(k) == lk.get(k):
                 E.append(f"look.{k} '{lk[k]}' was used by {q.stem} — pick another so videos never look alike")
     # variety gate: the look must come from THIS script, not from ea1
@@ -195,8 +216,9 @@ def check(eid, quiet=False):
     old = [n for n, sh in s["shots"].items() if sh.get("tpl") in OLD_SETS]
     if len(old) > 2:
         E.append(f"shots {old}: max 2 ea1 sets per episode — rebuild the others as tpl 'scene' from the objects in the line")
-    if len(sc_) < 6:
-        E.append(f"need ≥ 6 'scene' shots (have {len(sc_)}) — each one = a sky + the objects the line talks about")
+    n_sc, n_sky = (4, 3) if short else (6, 4)
+    if len(sc_) < n_sc:
+        E.append(f"need ≥ {n_sc} 'scene' shots (have {len(sc_)}) — each one = a sky + the objects the line talks about")
     for n, sh in sc_.items():
         if CAT:
             if sh.get("sky") not in CAT["hdris"]:
@@ -219,8 +241,8 @@ def check(eid, quiet=False):
         if sh.get("face") and sh["face"] not in FACES:
             E.append(f"shot {n}: face must be one of {FACES}")
     skies = [sh.get("sky") for sh in sc_.values()]
-    if sc_ and len(set(skies)) < min(4, len(skies)):
-        E.append(f"scene shots use only {len(set(skies))} different skies — use ≥ 4 places (match each line's place)")
+    if sc_ and len(set(skies)) < min(n_sky, len(skies)):
+        E.append(f"scene shots use only {len(set(skies))} different skies — use ≥ {n_sky} places (match each line's place)")
     moves = [sh.get("move", "push") for sh in sc_.values()]
     if sc_ and len(set(moves)) < 3:
         E.append("scene shots: use ≥ 3 different camera moves")
@@ -236,19 +258,30 @@ def check(eid, quiet=False):
         W.append(f"skies {rep} were used in earlier episodes — pick new places so the channel never looks repeated")
     used = set()
     L = lines_of(s)
-    if not 3 <= len(s["hook"]["lines"]) <= 6:
+    if short:
+        if not 2 <= len(s["hook"]["lines"]) <= 4:
+            E.append("shorts: hook must have 2-4 lines ('What if…?' question → the twist that makes it real)")
+    elif not 3 <= len(s["hook"]["lines"]) <= 6:
         E.append("hook must have 3-6 lines (prize/result → twist → question → promise)")
     if s["hook"].get("mood", "tense") not in MOODS:
         E.append(f"hook mood must be one of {list(MOODS)}")
-    if not 3 <= len(s["chapters"]) <= 9:
+    if short:
+        if len(s["chapters"]) != 1:
+            E.append("shorts: exactly 1 chapter (the body after the hook; no chapter card is drawn)")
+    elif not 3 <= len(s["chapters"]) <= 9:
         E.append("need 3-9 chapters")
     for ci, ch in enumerate(s["chapters"], 1):
-        if not ch.get("title") or len(ch["title"]) > 18:
+        if short:
+            if len(ch.get("title", "")) > 18:
+                E.append(f"chapter {ci}: title > 18 chars")
+        elif not ch.get("title") or len(ch["title"]) > 18:
             E.append(f"chapter {ci}: title missing or > 18 chars")
         if ch.get("mood") not in MOODS:
             E.append(f"chapter {ci}: mood must be one of {list(MOODS)}")
         st = ch.get("set")
-        if not (isinstance(st, list) and len(st) == 2 and st[0] in s["shots"]):
+        if short and st is None:
+            pass
+        elif not (isinstance(st, list) and len(st) == 2 and st[0] in s["shots"]):
             E.append(f"chapter {ci}: set must be [\"<shot letter>\", <second>] of a defined shot")
         else:
             used.add(st[0])
@@ -262,6 +295,11 @@ def check(eid, quiet=False):
         if not say:
             E.append(f"{lid}: empty say")
             continue
+        if short:
+            low = " ".join(say.lower().split())
+            for ph in SHORT_BANNED:
+                if re.search(r"\b" + re.escape(ph) + r"\b", low):
+                    E.append(f"{lid}: shorts never say '{ph}' (talks about the video / CTA = swipe point, SHORTS_MUST §1)")
         if "," in say:
             E.append(f"{lid}: no commas in spoken lines (rewrite as connected speech): {say[:60]}")
         if re.search(r"\d", say):
@@ -329,6 +367,8 @@ def check(eid, quiet=False):
                 E.append(f"{lid}: color must be one of {list(COLORS)}")
             if v == "sfx" and e.get("sound") not in SFX + SFX_ROOT:
                 E.append(f"{lid}: sound '{e.get('sound')}' unknown — use one of {SFX + SFX_ROOT}")
+            if short and (v in SHORT_BG_OFF or v in SHORT_OV_OFF or (v == "still" and e.get("pose"))):
+                E.append(f"{lid}: '{v}'{' with pose' if v == 'still' else ''} is not used in Shorts — use a 3D shot/still + text/count/stamp/burst")
             if v == "clip":
                 E.append(f"{lid}: YouTube clips are OFF (owner 8 Nov: copyright risk) — use a 3D scene instead")
             if v == "clip" and (len(str(e.get("query", ""))) < 6 or len(str(e["query"])) > 80):
@@ -351,36 +391,67 @@ def check(eid, quiet=False):
     hw = sum(len(ln["say"].split()) for ln in hook)
     if hw > 45:
         E.append(f"hook has {hw} words (max 45 ≈ 15 s): cut words — prize, twist, question, promise in short lines")
-    if not any("?" in ln["say"] for ln in hook[1:4]):
-        E.append("hook: the QUESTION (= the title) must be line 2, 3 or 4 and end with '?'")
-    if "you" not in " ".join(norm(w) for w in hook[-1]["say"].split()).split():
-        W.append("hook: the last hook line (promise) should talk to 'you'")
+    if short:
+        if not hook[0]["say"].lower().startswith("what if"):
+            E.append("shorts: the first hook line MUST start with 'What if' (SHORTS_MUST §0.3)")
+        qi = next((i for i, ln in enumerate(hook[:2]) if "?" in ln["say"]), None)
+        if qi is None:
+            E.append("shorts: the 'What if…?' question must end with '?' in hook line 1 or 2 (fully said by 3 s)")
+        else:
+            qw = sum(len(ln["say"].split()) for ln in hook[:qi + 1])
+            if qw / SHORT_WPS > 3.0:
+                W.append(f"shorts: the question takes ~{qw / SHORT_WPS:.1f} s at {SHORT_WPS:.0f} words/s (target ≤ 3 s) — qa checks the real time")
+        if not L[-1][2].get("loop"):
+            E.append("shorts: the LAST line must be marked \"loop\": true — it flows straight back into line 1 (no CTA)")
+        elif L[-1][2]["say"].rstrip()[-1:] in ".!?":
+            W.append("shorts: the loop line should end mid-sentence (no . ! ?) so it runs into line 1")
+        for lid_, _, ln in L[:-1]:
+            if ln.get("loop"):
+                E.append(f"{lid_}: only the last line can be the loop line")
+        if sum(1 for _, _, ln in L if ln.get("beat")) > 1:
+            E.append("shorts: only ONE planned 0.3 s beat (\"beat\": true) is allowed (SHORTS_MUST §2)")
+        if L[0][2].get("beat"):
+            E.append("k1: the first line cannot be a beat (first word at ≤ 0.2 s)")
+    else:
+        if not any("?" in ln["say"] for ln in hook[1:4]):
+            E.append("hook: the QUESTION (= the title) must be line 2, 3 or 4 and end with '?'")
+        if "you" not in " ".join(norm(w) for w in hook[-1]["say"].split()).split():
+            W.append("hook: the last hook line (promise) should talk to 'you'")
     for n in s["shots"]:
         if n not in used:
             W.append(f"shot {n} defined but never used (it still costs render time) — remove it")
     # estimated rhythm (0.33 s per word): a new image at least every 3 s
     est_gap(s, E, W)
-    loops(s, E)
-    gags = [ln for _, _, ln in L if ln.get("gag")]
-    if len(gags) < 4:
-        W.append(f"running gag: mark the 4-6 lines that repeat the gag with \"gag\": true (found {len(gags)})")
-    if not any("guess" in ln["say"].lower() for _, _, ln in L):
-        W.append("no 'have a guess' moment (one per video)")
-    last = s["chapters"][-1]["lines"]
-    if not any("comment" in ln["say"].lower() for ln in last):
-        E.append("last chapter must ask a comment question (the word 'comment' in a line)")
-    if "signoff" not in s:
-        W.append("add \"signoff\": Dave's fixed last line (same every video)")
-    mins = total_words / 175
+    if short:
+        if len(s.get("title", "")) > 60 or "?" not in s.get("title", ""):
+            E.append("shorts: title = the 'What if…?' question, ≤ 60 chars (+ #shorts)")
+        est = total_words / SHORT_WPS + 0.12 * len(L)
+        if not 25 <= est <= 40:
+            E.append(f"shorts: ~{est:.0f} s spoken ({total_words} words at {SHORT_WPS:.0f} words/s) — must be 25-40 s (SHORTS_MUST §1)")
+    else:
+        loops(s, E)
+        gags = [ln for _, _, ln in L if ln.get("gag")]
+        if len(gags) < 4:
+            W.append(f"running gag: mark the 4-6 lines that repeat the gag with \"gag\": true (found {len(gags)})")
+        if not any("guess" in ln["say"].lower() for _, _, ln in L):
+            W.append("no 'have a guess' moment (one per video)")
+        last = s["chapters"][-1]["lines"]
+        if not any("comment" in ln["say"].lower() for ln in last):
+            E.append("last chapter must ask a comment question (the word 'comment' in a line)")
+        if "signoff" not in s:
+            W.append("add \"signoff\": Dave's fixed last line (same every video)")
     if not quiet:
-        print(f"{eid}: {len(L)} lines, {total_words} words ≈ {mins:.1f} min, {len(s['shots'])} shots")
+        dur = f"≈ {total_words / SHORT_WPS + 0.12 * len(L):.0f} s" if short else f"≈ {total_words / 175:.1f} min"
+        print(f"{eid}: {'SHORT ' if short else ''}{len(L)} lines, {total_words} words {dur}, {len(s['shots'])} shots")
     return report(eid, E, W, quiet)
 
 
 def est_gap(s, E, W):
+    short = is_short(s)
+    wd, lim = (1 / SHORT_WPS, 3.0) if short else (0.33, 5.0)
     for lid, ci, ln in lines_of(s):
         toks = ln["say"].split()
-        dur = len(toks) * 0.33 + 0.4
+        dur = len(toks) * wd + (0.12 if short else 0.4)
         marks = []
         for e in ln.get("show", []):
             if e.get("v") in BG or e.get("v") in ("text", "count", "burst", "stamp", "bars", "checks"):
@@ -389,10 +460,10 @@ def est_gap(s, E, W):
                 if on:
                     hits = [i for i, t in enumerate(toks) if norm(t).startswith(norm(on))]
                     pos = hits[min(e.get("n", 0), len(hits) - 1)] if hits else 0
-                marks.append(pos * 0.33)
+                marks.append(pos * wd)
         marks = sorted(set(marks)) + [dur]
         for a, b in zip(marks, marks[1:]):
-            if b - a > 5.0:
+            if b - a > lim:
                 E.append(f"{lid}: ~{b - a:.1f} s without anything new on screen — add an event on a later word (rule: new image every ≤ 3 s; 3-5 s gaps get an automatic camera punch-in)")
 
 
@@ -442,13 +513,17 @@ def report(eid, E, W, quiet=False):
 def write_voice_json(eid):
     s = load(eid)
     beats = []
-    for lid, ci, ln in lines_of(s):
+    L = lines_of(s)
+    for i, (lid, ci, ln) in enumerate(L):
         punch = len(ln["say"].split()) <= 9 or ln.get("punch")
-        b = {"id": lid, "src": ln.get("src", ""), "text": ln["say"], "pause": 0.6 if punch else 0.35}
+        pause = 0.6 if punch else 0.35
+        if is_short(s):  # SHORTS_MUST §2: no silence > 0.3 s; voice_gaps.py trims the rest
+            pause = 0.3 if i + 1 < len(L) and L[i + 1][2].get("beat") else 0.1
+        b = {"id": lid, "src": ln.get("src", ""), "text": ln["say"], "pause": pause}
         if punch or ci == 0:
             b["exag"] = 0.55
         beats.append(b)
-    if s.get("signoff"):
+    if s.get("signoff") and not is_short(s):
         beats.append({"id": "zz", "src": "", "text": s["signoff"], "pause": 0.6, "exag": 0.55})
     ep = {"id": eid, "title": s["title"], "style": "v7", "voice": "chatterbox", "cb": {"cfg": 0.25, "exag": 0.5},
           "note": "AUTOPILOT episode — generated from pipeline/auto/%s.json by tools/auto.py, do not edit" % eid,
@@ -567,9 +642,14 @@ def voice(eid):
 
 # ───────────────────────────── build: the frame plan ─────────────────────────────
 def timing(eid):
+    s = load(eid)
     if not Path(f"src/v6/{eid}_timing.json").exists() or os.path.getmtime(f"src/v6/{eid}_timing.json") < os.path.getmtime(f"pipeline/voice/{eid}.json"):
         Path(f"public/{eid}").mkdir(parents=True, exist_ok=True)
-        sh(sys.executable, "tools/voice_gaps.py", eid, str(GAP_S))
+        if is_short(s):
+            beat = next((lid for lid, _, ln in lines_of(s) if ln.get("beat")), None)
+            sh(sys.executable, "tools/voice_gaps.py", eid, "0", "--tempo", "1.0", "--maxgap", "0.3", *(["--beat", beat] if beat else []))
+        else:
+            sh(sys.executable, "tools/voice_gaps.py", eid, str(GAP_S))
     return json.loads(Path(f"src/v6/{eid}_timing.json").read_text(encoding="utf8"))
 
 
@@ -577,8 +657,17 @@ def fr(t):
     return round(t * STRETCH * FPS)
 
 
+def set_kind(s):
+    """Shorts: voice not slowed (tempo 1.0) and no music breath before the chapter"""
+    global STRETCH, GAP
+    STRETCH, GAP = (1.0, 0) if is_short(s) else (1 / 0.9, int(GAP_S * FPS))
+
+
 def plan(eid):
     s, V = load(eid), timing(eid)
+    short = is_short(s)
+    set_kind(s)
+    W_, H_ = (1080, 1920) if short else (1920, 1080)
     B = {b["id"]: b for b in V["beats"]}
 
     def at(lid, word=None, n=0):
@@ -588,11 +677,11 @@ def plan(eid):
         hits = [w for w in b["words"] if norm(w["text"]).startswith(norm(word))]
         return fr(hits[n]["start"] if len(hits) > n else b["start"])
 
-    total = fr(V["total"]) + FPS
+    total = fr(V["total"]) + (6 if short else FPS)  # Short: no tail — the last line runs straight into frame 0 (loop)
     src = {x["id"]: x["short"] for x in s["sources"]}
     ev = []  # (frame, order, kind, event, line_id, chapter)
     order = 0
-    for ci, ch in enumerate(s["chapters"], 1):
+    for ci, ch in enumerate(s["chapters"] if not short else [], 1):  # Shorts: no chapter card
         ev.append((at(f"c{ci}_01") - GAP, order, "bg", {"v": "chapter", "title": ch["title"], "shot": ch["set"][0], "t": ch["set"][1]}, f"c{ci}_01", ci))
         order += 1
     for lid, ci, ln in lines_of(s):
@@ -605,10 +694,10 @@ def plan(eid):
     ev.sort(key=lambda x: (x[0], x[1]))
     bgs, ovs, cues = [], [], []
     first_use, played = {}, {}
-    chap_set = [None] + [c["set"] for c in s["chapters"]]
+    chap_set = [None] + [c.get("set") for c in s["chapters"]]
     roll = ["ea1/k_flash", "ea1/reply_pop", "ea1/photo_slide"]
     bgi = [i for i, x in enumerate(ev) if x[2] == "bg"]
-    slot = 0
+    slot, ycur = 0, 200  # ycur: Shorts stack overlays downwards from the top (wrapped lines included)
     for idx, (a, _, kind, e, lid, ci) in enumerate(ev):
         v = e["v"]
         if kind == "bg":
@@ -626,7 +715,7 @@ def plan(eid):
             if v in ("still", "home", "pose"):
                 b["pose"] = e.get("pose")
             if v == "pose":
-                b["set"] = chap_set[ci] if ci else [next(iter(s["shots"])), 1.0]
+                b["set"] = (chap_set[ci] if ci else None) or [next(iter(s["shots"])), 1.0]
             if v == "chapter":
                 b["title"] = e["title"]
             if v == "macro":
@@ -637,9 +726,9 @@ def plan(eid):
                 ncl = sum(1 for g in bgs if g["k"] == "clip")
                 b["file"], b["query"], b["start"] = f"clip_{ncl}.mp4", e["query"], float(e.get("start", 0))
                 b["to"] = min(b["to"], a + FPS * 8)  # hard cap 8 s per clip
-            b["flash"] = ci == 0 or v in ("macro", "chapter", "photo", "home")
+            b["flash"] = (ci == 0 or v in ("macro", "chapter", "photo", "home")) and a > 0  # never a white frame 0
             bgs.append(b)
-            slot = 0
+            slot, ycur = 0, 200
             cues.append({"at": a, "src": roll[len(bgs) % 3], "v": 0.4})
             if v == "macro":
                 cues.append({"at": a, "src": f"ea1/co_flash{len(bgs) % 3 + 1}", "v": 0.6})
@@ -655,21 +744,37 @@ def plan(eid):
             end = next((ev[j][0] for j in bgi if j > idx), total)
             o = {"from": a, "to": end, "k": v}
             col = COLORS.get(e.get("color", "yellow" if v == "count" else "white"))
-            if v == "text":
+            if v == "text" and short:  # 9:16: big centred text in the upper third, stacked per slot
+                n_ = len(e["text"])
+                sz = int(e.get("size", 170 if n_ <= 12 else 150 if n_ <= 20 else 130))
+                rows = max(1, math.ceil(n_ * sz * 0.5 / (W_ - 100)))  # wrapped lines (headline fonts ≈ 0.5 em per caps char)
+                ycur = 200 if ycur + rows * sz > 1000 else ycur
+                o.update(text=e["text"], color=col, size=sz, x=0, y=ycur, center=True, w=W_ - 100)
+                ycur += int(rows * sz * 1.04) + 30
+                slot += 1
+                cues.append({"at": a, "src": "ea1/k_slam" if len(ovs) % 2 else "ea1/k_stop", "v": 0.5})
+            elif v == "text":
                 big = ci == 0  # hook (owner 5 Nov: hook text too small) → ~1.7x, centred-left, one line per slot
                 o.update(text=e["text"], color=col, size=int(e.get("size", (200 if len(e["text"]) < 16 else 150) if big else (120 if len(e["text"]) < 16 else 92))), x=90, y=(70 + slot * 230) if big else 90 + slot * 150)
                 slot += 1
                 cues.append({"at": a, "src": "ea1/k_slam" if len(ovs) % 2 else "ea1/k_stop", "v": 0.5})
             elif v == "count":
-                o.update(to=e["to"], prefix=e.get("prefix", ""), suffix=e.get("suffix", ""), dec=int(e.get("dec", 0)), color=col,
-                         size=int(e.get("size", 150 if ci == 0 else 130)), x=110 if ci else 0, y=90 + slot * 150 if ci else 120, center=ci == 0, dur=int(e.get("dur", 36)))
+                if short:  # 9:16: counters centred, under the text slots
+                    sz = int(e.get("size", 160))
+                    ycur = 200 if ycur + sz > 1000 else ycur
+                    o.update(val=e["to"], prefix=e.get("prefix", ""), suffix=e.get("suffix", ""), dec=int(e.get("dec", 0)), color=col,
+                             size=sz, x=0, y=ycur, center=True, dur=int(e.get("dur", 24)))
+                    ycur += int(sz * 1.15) + 20
+                else:
+                    o.update(val=e["to"], prefix=e.get("prefix", ""), suffix=e.get("suffix", ""), dec=int(e.get("dec", 0)), color=col,
+                             size=int(e.get("size", 150 if ci == 0 else 130)), x=110 if ci else 0, y=90 + slot * 150 if ci else 120, center=ci == 0, dur=int(e.get("dur", 36)))
                 slot += 1
                 cues += [{"at": a, "src": "ea1/roll33", "v": 0.55}] + [{"at": a + k, "src": "tick", "v": 0.25} for k in range(4, o["dur"], 6)]
             elif v == "burst":
-                o.update(word=e["word"])
+                o.update(word=e["word"], **({"x": W_ // 2 - 20, "y": 1150} if short else {}))
                 cues.append({"at": a, "src": "ea1/k_boom", "v": 0.6})
             elif v == "stamp":
-                o.update(text=e["text"], color=COLORS.get(e.get("color", "red")))
+                o.update(text=e["text"], color=COLORS.get(e.get("color", "red")), **({"center": True, "y": 1320} if short else {}))
                 cues.append({"at": a, "src": "ea1/stamp_un", "v": 0.55})
             elif v == "bars":
                 o.update(rows=[{"label": r_[0], "pct": r_[1], "color": COLORS.get(r_[2] if len(r_) > 2 else "blue", "#2f6fd6")} for r_ in e["rows"]], max=max(r_[1] for r_ in e["rows"]) * 1.25)
@@ -691,7 +796,7 @@ def plan(eid):
         if ids:
             a = at(lid)
             b_ = fr(B[lid]["end"]) + 6
-            ovs.append({"from": a + 3, "to": b_, "k": "src", "text": " · ".join(src[i] for i in ids)})
+            ovs.append({"from": a + 3, "to": b_, "k": "src", "text": " · ".join(src[i] for i in ids), **({"top": 140} if short else {})})
     # 3D-shot template sounds (on the shot's first use)
     TS = {"rain": [(0, "ea1/cash_rain", 0.7)], "chair_spin": [(5 / 24, "ea1/k_spin", 0.7)], "office_walk": [(0, "ea1/door", 0.5), (0.2, "ea1/steps", 0.5)],
           "headlines": [(0, "ea1/co_paper", 0.6), (2.1, "ea1/co_book", 0.5)], "receipt": [(0.4, "ea1/co_paper2", 0.5), (0.4, "ea1/scribble", 0.4)],
@@ -701,23 +806,24 @@ def plan(eid):
     for n, a in first_use.items():
         for dt, snd, vol in TS.get(s["shots"][n]["tpl"], []):
             cues.append({"at": a + round(dt * FPS), "src": snd, "v": vol})
-    hook_end = at("c1_01") - GAP
+    hook_end = at("c1_01") - (0 if short else GAP)
     cues += [{"at": max(0, at(f"k{len(s['hook']['lines'])}") - 2), "src": "ea1/k_point", "v": 0.5},
              {"at": max(0, at(f"k{len(s['hook']['lines'])}") + 4), "src": "ea1/k_riser", "v": 0.4}]
     last = lines_of(s)[-1][0]
-    cues.append({"at": at(last), "src": "ea1/end_riser", "v": 0.5})
+    if not short:  # a Short loops: no end riser
+        cues.append({"at": at(last), "src": "ea1/end_riser", "v": 0.5})
     # music: one track per mood, switches when the mood changes, a hard stop before punch lines
     music, used = [], {m: 0 for m in MOODS}
     segs = []  # (from, mood)
     segs.append((0, s["hook"].get("mood", "tense")))
     stops = []
     for ci, ch in enumerate(s["chapters"], 1):
-        segs.append((at(f"c{ci}_01") - GAP, ch["mood"]))
+        segs.append((at(f"c{ci}_01") - (0 if short else GAP), ch["mood"]))
         for j, ln in enumerate(ch["lines"]):
             if ln.get("mood") and ln["mood"] != segs[-1][1]:
                 segs.append((at(f"c{ci}_{j + 1:02d}"), ln["mood"]))
-            if ln.get("punch"):
-                stops.append((at(f"c{ci}_{j + 1:02d}") - 4, at(f"c{ci}_{j + 1:02d}") + 20))
+            if ln.get("punch") or (short and ln.get("beat")):  # music drops out before punch lines / the beat
+                stops.append((at(f"c{ci}_{j + 1:02d}") - (12 if ln.get("beat") else 4), at(f"c{ci}_{j + 1:02d}") + 20))
     segs.append((total, None))
     for (a, mood), (b, _) in zip(segs, segs[1:]):
         lst = MOODS[mood]
@@ -727,13 +833,14 @@ def plan(eid):
         p = a
         for x, y in cuts + [(b, b)]:
             if x - p > 10:
-                music.append({"src": track, "from": p, "to": x - (4 if x < b else 0), "v": 0.08 if mood == "tense" else 0.07, "off": (p - a) + FPS * 7 * used[mood]})
+                music.append({"src": track, "from": p, "to": x - (4 if x < b else 0), "v": SHORT_MUSIC_V if short else 0.08 if mood == "tense" else 0.07, "off": (p - a) + FPS * 7 * used[mood]})
             p = y
     # autofill: any stretch > 2.8 s without a new image gets hard camera punch-ins (cut, don't tween) every ~1.6 s
+    # Shorts (SHORTS_MUST §2: new image every 1-2 s, never static > 1.5 s): a punch-in every ≤ 1.2 s everywhere
     marks = sorted({b["from"] for b in bgs} | {o["from"] for o in ovs if o["k"] in ("text", "count", "burst", "stamp", "bars", "checks")} | {total})
     np_ = 0
     for a, b in zip(marks, marks[1:]):
-        lim, step = (45, 33) if a < hook_end else (84, 48)  # hook: new image every ≤ 1.5 s (target 0.5-1.5 s)
+        lim, step = (36, 36) if short else (45, 33) if a < hook_end else (84, 48)  # hook: new image every ≤ 1.5 s (target 0.5-1.5 s)
         if b - a > lim:
             k = int((b - a) // step)
             for j in range(1, k + 1):
@@ -741,7 +848,7 @@ def plan(eid):
                 kind = next((g["k"] for g in reversed(bgs) if g["from"] <= x), "shot")
                 card = kind in ("macro", "home", "photo")
                 ovs.append({"from": x, "to": b if j == k else a + round((b - a) * (j + 1) / (k + 1)), "k": "punch", "z": (1.05 if j % 2 else 1.09) if card else (1.16 if j % 2 else 1.3),
-                            "ox": 50 if card else [70, 30, 55][np_ % 3], "oy": 50 if card else [40, 55, 35][np_ % 3]})
+                            "ox": 50 if card else ([50, 44, 56] if short else [70, 30, 55])[np_ % 3], "oy": 50 if card else ([45, 58, 38] if short else [40, 55, 35])[np_ % 3]})
                 cues.append({"at": x, "src": "swish_fast", "v": 0.3})
                 np_ += 1
     cues = sorted([c for c in cues if 0 <= c["at"] < total], key=lambda c: c["at"])
@@ -775,8 +882,8 @@ def plan(eid):
             for name, hx in COLORS.items():
                 if isinstance(r_, dict) and r_.get("color") == hx and name in st["pal"]:
                     r_["color"] = st["pal"][name]
-    P = {"id": eid, "title": s["title"], "frames": total, "hookEnd": hook_end, "bgs": bgs, "ovs": ovs, "music": music, "sfx": cues, "lens": lens,
-         "look": {"grade": st["grade"], "font": st["font"]}}
+    P = {"id": eid, "title": s["title"], "kind": "short" if short else "long", "w": W_, "h": H_, "frames": total, "hookEnd": hook_end, "bgs": bgs, "ovs": ovs,
+         "music": music, "sfx": cues, "lens": lens, "look": {"grade": st["grade"], "font": st["font"]}}
     Path("src/v6/auto").mkdir(exist_ok=True)
     Path(f"src/v6/auto/{eid}.plan.json").write_text(json.dumps(P), encoding="utf8")
     return P
@@ -910,7 +1017,8 @@ def build(eid):
     chunks = []
     for n, L in sorted(lens.items()):
         chunks += [f"{n}:{a}-{min(L, a + 29)}" for a in range(1, L + 1, 30)]
-    chunks.append("K:" + ",".join(POSES))
+    if not is_short(load(eid)):  # Shorts use no pose cut-outs
+        chunks.append("K:" + ",".join(POSES))
     if len(chunks) > 256:
         sys.exit(f"{len(chunks)} render chunks > 256 (GitHub matrix limit) — use fewer/shorter shots")
     Path(f"blender/{eid}.chunks").write_text(json.dumps(chunks), encoding="utf8")
@@ -923,7 +1031,7 @@ def build(eid):
     Path("src/v6/autoEps.ts").write_text(ts, encoding="utf8")
     secs = P["frames"] / FPS
     f3d = sum(b["to"] - b["from"] for b in P["bgs"] if b["k"] in ("shot", "still", "pose", "chapter")) / P["frames"]
-    print(f"plan: {secs / 60:.1f} min | {len(P['bgs'])} images | {len(P['sfx']) / (secs / 60):.0f} sfx/min | 3D {f3d:.0%} | {sum(lens.values())} shot frames in {len(chunks)} chunks")
+    print(f"plan: {secs / 60:.1f} min ({secs:.1f} s, {P['w']}x{P['h']}) | {len(P['bgs'])} images | {len(P['sfx']) / (secs / 60):.0f} sfx/min | 3D {f3d:.0%} | {sum(lens.values())} shot frames in {len(chunks)} chunks")
     qa(eid, P)
 
 
@@ -933,14 +1041,27 @@ def qa(eid, P=None):
     E, W = [], []
     secs = P["frames"] / FPS
     marks = sorted({b["from"] for b in P["bgs"]} | {o["from"] for o in P["ovs"] if o["k"] in ("text", "count", "burst", "stamp", "bars", "checks", "punch")})
+    short = P.get("kind") == "short"
     for a, b in zip(marks, marks[1:] + [P["frames"]]):
-        if (b - a) / FPS > 4.0:
+        if (b - a) / FPS > (1.5 if short else 4.0):
             E.append(f"{(b - a) / FPS:.1f} s with nothing new at {a / FPS:.1f}s ({fmt(a)}) — add an event there")
+    if short:
+        if not 25 <= secs <= 40:
+            (E if not 22 <= secs <= 45 else W).append(f"short is {secs:.1f} s (SHORTS_MUST: 25-40 s) — cut or add words")
+        T = json.loads(Path(f"src/v6/{eid}_timing.json").read_text(encoding="utf8"))
+        ws = [w for b_ in T["beats"] for w in b_.get("words", [])]
+        if ws and ws[0]["start"] > 0.2:
+            W.append(f"first word at {ws[0]['start']:.2f} s (target ≤ 0.2 s)")
+        q = next((b_ for b_ in T["beats"][:2] if "?" in b_["text"]), None)
+        if q and q["end"] > 3.5:
+            W.append(f"the 'What if…?' question ends at {q['end']:.1f} s (target ≤ 3 s) — shorten line 1")
+        if not any(o["k"] == "text" and o["from"] == 0 for o in P["ovs"]):
+            E.append("frame 0 needs the big hook text (a text event on k1 without 'on')")
     hook = [m for m in marks if m < P["hookEnd"]]
     if hook and max(b - a for a, b in zip(hook, hook[1:] + [P["hookEnd"]])) / FPS > 2.0:
         W.append("hook: a gap > 2 s without a new image (target 0.5-1.5 s)")
     f3d = sum(b["to"] - b["from"] for b in P["bgs"] if b["k"] in ("shot", "still", "pose", "chapter")) / P["frames"]
-    if f3d < 0.5:
+    if f3d < (0.8 if short else 0.5):
         E.append(f"only {f3d:.0%} of the video is 3D (need ≥ 50 %) — use more shot/still/pose")
     dens = len(P["sfx"]) / (secs / 60)
     if dens < 40:
@@ -951,7 +1072,7 @@ def qa(eid, P=None):
         if run >= 3:
             E.append(f"3 cards in a row at {fmt(b['from'])} (macro/home/photo) — put 3D between them (ea1 verdict: too many cards)")
             run = 0
-    if P["hookEnd"] / FPS > 25:
+    if P["hookEnd"] / FPS > (8 if short else 25):
         W.append(f"hook lasts {P['hookEnd'] / FPS:.0f} s (target 10-15 s)")
     for e in E:
         print("  ✗", e)
@@ -970,21 +1091,26 @@ def fmt(f):
 def shots(eid, resume=False):
     if resume:
         return fetch_shots(eid, last_ok("blender.yml", f"blender {eid} " if CI else ""))
-    Path("blender/RUN").write_text(f"{eid} fast 12 cycles\n", encoding="utf8")
+    mode = shot_mode(eid)
+    Path("blender/RUN").write_text(f"{eid} {mode} 12 cycles\n", encoding="utf8")
     paths = [f"blender/{eid}.py", f"blender/{eid}_lens.json", f"blender/{eid}.chunks", "blender/RUN", "blender/auto.py"] + [str(p) for p in Path("blender/tex").glob(f"{eid}_*.png")]
     sha = push(paths, f"{eid}: autopilot 3D shots")
     if CI:  # inputs = what blender/RUN holds ("<id> fast 12 cycles"); engine is still read from RUN
-        fetch_shots(eid, wait_run("blender.yml", since=dispatch("blender.yml", f"shot={eid}", "mode=fast", "samples=12"), timeout=int(5.5 * 3600)))
+        fetch_shots(eid, wait_run("blender.yml", since=dispatch("blender.yml", f"shot={eid}", f"mode={mode}", "samples=12"), timeout=int(5.5 * 3600)))
     else:
         fetch_shots(eid, wait_run("blender.yml", sha=sha, timeout=6 * 3600))
 
 
+def shot_mode(eid):
+    return "vert" if is_short(load(eid)) else "fast"
+
+
 def fetch_shots(eid, rid):
-    """weak PC: shots stay on GitHub. Only the run id is saved; v6demo.yml pulls the <id>-fast artifact itself."""
+    """weak PC: shots stay on GitHub. Only the run id is saved; v6demo.yml pulls the <id>-fast / <id>-vert artifact itself."""
     dst = Path(f"public/{eid}")
     dst.mkdir(parents=True, exist_ok=True)
     (dst / "SHOTS_RUN").write_text(str(rid), encoding="utf8")
-    print(f"SHOTS OK: Blender run {rid} (artifact {eid}-fast stays on GitHub, render pulls it)")
+    print(f"SHOTS OK: Blender run {rid} (artifact {eid}-{shot_mode(eid)} stays on GitHub, render pulls it)")
 
 
 def render(eid, resume=False):
