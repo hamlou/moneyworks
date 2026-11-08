@@ -1,7 +1,7 @@
 """Free writer: Gemini API (free tier) researches a topic and writes pipeline/auto/<id>.json, then loops on
 `tools/auto.py check` until SPEC OK. No Claude, runs on the owner's PC or on GitHub Actions.
   keys: one per line in %USERPROFILE%.moneyworks_gemini (backups rotate automatically) or set GEMINI_API_KEYS=k1,k2
-  py tools/write.py <id> "<topic idea>"            → spec + SPEC OK (then: py tools/auto.py all <id>)
+  py tools/write.py <id> "<topic idea>" [--no-critic] → SPEC OK + fact check + critic loop (then: py tools/auto.py all <id>)
 Model: GEMINI_MODEL (default gemini-2.5-flash). Research uses Gemini's built-in Google Search grounding."""
 import json, os, re, subprocess, sys, time, urllib.request
 from pathlib import Path
@@ -85,29 +85,52 @@ def preview(eid, spec):
 
 
 
-def main():
-    if not KEY:
-        sys.exit("set GEMINI_API_KEY first (free: https://aistudio.google.com/apikey)")
-    eid, topic = sys.argv[1], " ".join(sys.argv[2:])
-    guide = (ROOT / "AUTOPILOT.md").read_text(encoding="utf8")
-    assets = (ROOT / "pipeline/ASSETS.md").read_text(encoding="utf8")
-    example = (ROOT / "pipeline/auto/au1.json").read_text(encoding="utf8")
-    # 1) research with live Google Search: true numbers + real source URLs
-    facts = ask([{"role": "user", "parts": [{"text":
-        f"Research this money video idea for a YouTube explainer: {topic}\n"
-        "Find 4-6 surprising TRUE facts with numbers, each from an official or academic source (government, central bank, university, big newspaper). "
-        "For each: the fact, the exact number, source name, year, and the source URL. Also give 3 title ideas that a 12-year-old understands "
-        "(a question or a withheld result). Plain text."}]}], search=True, temp=0.4)
-    print(facts[:1500])
-    # 2) write the spec
-    sys_prompt = (f"You write ONE JSON file for an automatic video system. Follow this guide exactly:\n\n{guide}\n\n"
-                  f"Allowed 3D asset ids:\n{assets}\n\nA complete valid example (different topic, different look — do NOT copy its look, skies or jokes):\n{example}\n\n"
-                  f"Last episodes (never repeat their look.style, look.format, or skies):\n{past_looks()}")
-    msgs = [{"role": "user", "parts": [{"text": sys_prompt + f"\n\nResearch notes:\n{facts}\n\nWrite the full JSON for id '{eid}'. "
-             "Be creative: pick a fresh format and style that fit THIS topic, a hook that makes people stay, a running joke, real objects and places for every scene. "
-             "Reply with only the JSON in a ```json block."}]}]
+CRIT = ("hook", "curiosity", "specificity", "story", "humour", "voice", "payoff", "visuals")
+
+
+def script(spec):
+    """id-tagged script + what each line shows, for the critic"""
+    out = []
+    for ci, c in enumerate([{"title": "HOOK", **spec["hook"]}] + spec["chapters"]):
+        out.append(f"## {c['title']}")
+        for i, l in enumerate(c["lines"]):
+            vis = ", ".join(str(s.get("shot") or s.get("text") or s.get("pose") or s.get("word") or s.get("v")) for s in l.get("show", []))
+            out.append(f"{'k%d' % (i + 1) if ci == 0 else 'c%d_%02d' % (ci, i + 1)}: {l['say']}  [shows: {vis}]")
+    shots = NL.join(f"{k}: {json.dumps(v)}" for k, v in spec.get("shots", {}).items())
+    return f"TITLE: {spec['title']}{NL}{NL.join(out)}{NL}{NL}3D shots:{NL}{shots}"
+
+
+def critic(spec, facts):
+    """harsh retention editor grades the script 1-10 per axis; total = average"""
+    q = ("You are a harsh YouTube retention editor for a money explainer channel. Host = Dave (3D cartoon) who talks to 'you'. "
+         "Spoken lines have NO commas and NO digits (numbers as words). Grade like a top 1% human writer would be graded. Be strict: 8 = genuinely great." + NL
+         + "GOOD line: 'You pay for the gym in January and by March your card is still going but your sneakers are not.'" + NL
+         + "BAD line: 'Gym. January. Fifty dollars. Gone.' (fragment chain) or 'Studies show sixty seven percent of members never attend which costs billions.' (stat dump with no image and no you)" + NL
+         + "GOOD hook: 'Your gym makes more money from you when you stay home.' BAD hook: 'Today we talk about gym memberships.'" + NL + NL
+         + "Score each 1-10 with a one-line reason: hook (stops the scroll in 3 s? concrete prize or number in line 1? question by line 3?), "
+           "curiosity (every chapter ends on an open question, loops pull forward), specificity (vivid concrete images vs abstract words), "
+           "story (a person or Dave with stakes conflict and a comeback), humour (a running joke that pays off at the end), "
+           "voice (natural spoken English to 'you' with no stat dumps and no fragment chains), payoff (the end delivers what the hook promised), "
+           "visuals (each 3D scene and card shows what the line SAYS)." + NL
+         + "List the 3-8 worst lines with a rewrite that follows the rules (no commas no digits)." + NL
+         + 'Reply only JSON: {"scores":{"hook":{"score":7,"why":"..."},...},"worst_lines":[{"id":"c2_03","why":"...","rewrite":"..."}]}' + NL + NL
+         + "Research facts:" + NL + facts[:3000] + NL + NL + script(spec))
+    for _ in range(3):
+        try:
+            card = jsonblock(ask([{"role": "user", "parts": [{"text": q}]}], temp=0.2))
+            card["scores"] = {k: v if isinstance(v, dict) else {"score": v, "why": ""} for k, v in ((k, card["scores"][k]) for k in CRIT)}
+            card["total"] = round(sum(float(v["score"]) for v in card["scores"].values()) / len(CRIT), 2)
+            return card
+        except Exception as e:
+            print(f"  critic reply unreadable ({str(e)[:60]}), retry", flush=True)
+    return None
+
+
+def settle(eid, msgs, rounds):
+    """ask → JSON → auto.py check → fact check, feeding errors back; returns (spec, report) or (None, last report)"""
     out = ROOT / "pipeline/auto" / f"{eid}.json"
-    for rnd in range(8):
+    rep = ""
+    for rnd in range(rounds):
         txt = ask(msgs)
         try:
             spec = jsonblock(txt)
@@ -121,13 +144,78 @@ def main():
         if "SPEC OK" in rep:
             bad = factcheck(spec)
             if not bad:
-                print(rep)
-                preview(eid, spec)
-                return
+                return spec, rep
             rep = "FACT CHECK FAILED (Google Search could not confirm these: replace with confirmed numbers or cut the claim):" + NL + bad
         msgs += [{"role": "model", "parts": [{"text": json.dumps(spec, ensure_ascii=False)}]},
                  {"role": "user", "parts": [{"text": "The checker says:\n" + rep[-6000:] + "\nFix EVERY ✗ and reply with the full corrected JSON only."}]}]
-    sys.exit(f"still failing after 8 rounds — open {out}, fix the ✗ lines by hand, run py tools/auto.py check {eid}")
+    return None, rep
+
+
+def polish(eid, spec, msgs, facts):
+    """critic loop: grade → rewrite only the weak parts → re-check + fact check; max 3 rewrites, keep the best passing version"""
+    log, best = [], None
+    for rnd in range(4):
+        card = critic(spec, facts)
+        if not card:
+            break
+        sc = {k: float(v["score"]) for k, v in card["scores"].items()}
+        weak = [k for k, v in sc.items() if v < 8]
+        print(f"critic {rnd}: total {card['total']} | " + " ".join(f"{k}={v:g}" for k, v in sc.items()) + (f" | weak: {','.join(weak)}" if weak else " | all ≥ 8"), flush=True)
+        log.append({"round": rnd, **card})
+        if not best or card["total"] > best[0]:
+            best = (card["total"], spec)
+        if not weak or rnd == 3:
+            break
+        msgs += [{"role": "model", "parts": [{"text": json.dumps(spec, ensure_ascii=False)}]},
+                 {"role": "user", "parts": [{"text": "A retention editor graded this script (ids: k1.. = hook lines, c1_01 = chapter 1 line 1). Weak scores:" + NL
+                  + json.dumps({k: card["scores"][k] for k in weak}, ensure_ascii=False) + NL + "Worst lines:" + NL + json.dumps(card.get("worst_lines", []), ensure_ascii=False) + NL
+                  + f"Rewrite ONLY the weak parts ({', '.join(weak)}) to reach 9+: keep the structure, ids, loops, sources and every confirmed fact and number. "
+                    "Follow every guide rule (no commas and no digits in say). Reply with the full corrected JSON only."}]}]
+        new, _ = settle(eid, msgs, 4)
+        if not new:
+            print("  rewrite did not pass check + fact check: keeping best version", flush=True)
+            break
+        spec = new
+    p = ROOT / "videos" / eid
+    p.mkdir(parents=True, exist_ok=True)
+    (p / "critic.json").write_text(json.dumps(log, ensure_ascii=False, indent=1), encoding="utf8")
+    if best:
+        spec = best[1]
+        print(f"critic best: {best[0]} (scorecards: {p / 'critic.json'})")
+    (ROOT / "pipeline/auto" / f"{eid}.json").write_text(json.dumps(spec, ensure_ascii=False, indent=1), encoding="utf8")
+    return spec
+
+
+def main():
+    if not KEY:
+        sys.exit("set GEMINI_API_KEY first (free: https://aistudio.google.com/apikey)")
+    args = [a for a in sys.argv[1:] if a != "--no-critic"]
+    eid, topic = args[0], " ".join(args[1:])
+    guide = (ROOT / "AUTOPILOT.md").read_text(encoding="utf8")
+    assets = (ROOT / "pipeline/ASSETS.md").read_text(encoding="utf8")
+    example = (ROOT / "pipeline/auto/au1.json").read_text(encoding="utf8")
+    # 1) research with live Google Search: true numbers + real source URLs
+    facts = ask([{"role": "user", "parts": [{"text":
+        f"Research this money video idea for a YouTube explainer: {topic}\n"
+        "Find 4-6 surprising TRUE facts with numbers, each from an official or academic source (government, central bank, university, big newspaper). "
+        "For each: the fact, the exact number, source name, year, and the source URL. Also give 3 title ideas that a 12-year-old understands "
+        "(a question or a withheld result). Plain text."}]}], search=True, temp=0.4)
+    print(facts[:1500])
+    # 2) write the spec → check + fact check loop
+    sys_prompt = (f"You write ONE JSON file for an automatic video system. Follow this guide exactly:\n\n{guide}\n\n"
+                  f"Allowed 3D asset ids:\n{assets}\n\nA complete valid example (different topic, different look — do NOT copy its look, skies or jokes):\n{example}\n\n"
+                  f"Last episodes (never repeat their look.style, look.format, or skies):\n{past_looks()}")
+    msgs = [{"role": "user", "parts": [{"text": sys_prompt + f"\n\nResearch notes:\n{facts}\n\nWrite the full JSON for id '{eid}'. "
+             "Be creative: pick a fresh format and style that fit THIS topic, a hook that makes people stay, a running joke, real objects and places for every scene. "
+             "Reply with only the JSON in a ```json block."}]}]
+    spec, rep = settle(eid, msgs, 8)
+    if not spec:
+        sys.exit(f"still failing after 8 rounds — open pipeline/auto/{eid}.json, fix the ✗ lines by hand, run py tools/auto.py check {eid}")
+    print(rep)
+    # 3) critic loop (skip with --no-critic)
+    if "--no-critic" not in sys.argv:
+        spec = polish(eid, spec, msgs, facts)
+    preview(eid, spec)
 
 
 if __name__ == "__main__":
