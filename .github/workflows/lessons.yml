@@ -1,0 +1,43 @@
+name: lessons
+# Weekly learning loop: our own YouTube Analytics → LESSONS.md. Skips cleanly until the 3 YT_* secrets exist (py tools/yt_auth.py).
+# NOTE: cron only fires from the DEFAULT branch (main).
+on:
+  schedule:
+    - cron: "43 6 * * 0"
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency: {group: lessons, cancel-in-progress: false}
+jobs:
+  lessons:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    env:
+      YT_CLIENT_ID: ${{ secrets.YT_CLIENT_ID }}
+      YT_CLIENT_SECRET: ${{ secrets.YT_CLIENT_SECRET }}
+      YT_REFRESH_TOKEN: ${{ secrets.YT_REFRESH_TOKEN }}
+      GEMINI_API_KEYS: ${{ secrets.GEMINI_API_KEYS }}
+    steps:
+      - name: check secrets
+        id: s
+        run: |
+          if [ -n "$YT_CLIENT_ID" ] && [ -n "$YT_CLIENT_SECRET" ] && [ -n "$YT_REFRESH_TOKEN" ]; then echo "ok=1" >> "$GITHUB_OUTPUT"
+          else echo "::notice::YT_* secrets not set — skipping (owner: run py tools/yt_auth.py once)"; fi
+      - uses: actions/checkout@v4
+        if: steps.s.outputs.ok
+      - uses: actions/setup-python@v5
+        if: steps.s.outputs.ok
+        with: {python-version: "3.12"}
+      - name: lessons
+        if: steps.s.outputs.ok
+        run: python tools/lessons.py
+      - name: commit
+        if: steps.s.outputs.ok
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          [ -f LESSONS.md ] || exit 0
+          git add LESSONS.md
+          git diff --cached --quiet && exit 0
+          git commit -q -m "lessons: $(date -u +%F)"
+          for i in 1 2 3 4 5; do git pull --rebase --autostash -q && git push -q && break; sleep 8; done
