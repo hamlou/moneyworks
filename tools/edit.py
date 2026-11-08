@@ -33,7 +33,7 @@ def main():
     p = ROOT / "pipeline/auto" / f"{eid}.json"
     old = json.loads(p.read_text(encoding="utf8"))
     guide = (ROOT / "AUTOPILOT.md").read_text(encoding="utf8")
-    assets = (ROOT / "pipeline/ASSETS.md").read_text(encoding="utf8")
+    assets = (ROOT / "pipeline/PROPS.md").read_text(encoding="utf8") + (ROOT / "pipeline/ASSETS.md").read_text(encoding="utf8")
     msgs = [{"role": "user", "parts": [{"text": f"Guide:\n{guide}\n\nAllowed 3D ids:\n{assets}\n\nCurrent spec:\n{json.dumps(old, ensure_ascii=False)}\n\n"
              f"The channel owner wants this change: {ask_}\nChange ONLY what is needed for that (keep line ids of unchanged lines). "
              "Reply with the full JSON only in a ```json block."}]}]

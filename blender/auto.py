@@ -689,9 +689,18 @@ elif TPL == "scene":  # NEW (5 Nov): the set comes from the SCRIPT, not from ea1
         light("ceil", "AREA", (0, 0.5, 3.4), None, energy=420, size=4, color=(1.0, 0.95, 0.88))
     rr = random.Random(sum(map(ord, EP + SHOT)))
 
+    from props import PROPS, SHOW  # "p:<name>" / "p:<name>=<text>" = our procedural money props (pipeline/PROPS.md)
+
     def put(mid, loc, rz=0.0, h=None):
         try:
-            o = import_model(mid, loc, rz)
+            if mid.startswith("p:"):
+                nm, _, txt_ = mid[2:].partition("=")
+                o = PROPS[nm](loc, rz, 1.0, txt_ or None)
+                if not h:
+                    s_ = float(SHOW.get(nm, 1.0))
+                    o.scale = (s_, s_, s_)
+            else:
+                o = import_model(mid, loc, rz)
         except Exception as e:
             print("WARN model", mid, e)
             return None
@@ -713,7 +722,9 @@ elif TPL == "scene":  # NEW (5 Nov): the set comes from the SCRIPT, not from ea1
             lo, hi = bbox(o)
             if hi.z - lo.z > 1.6:
                 k_ = 1.6 / (hi.z - lo.z)
-                o.scale = (k_, k_, k_)
+                o.scale = tuple(c * k_ for c in o.scale)  # relative: "p:" props may already carry a SHOW scale
+                lo, _ = bbox(o)
+                o.location.z -= lo.z
     if P.get("sign"):  # the line's words on a real 3D board on a post (price, name, number)
         box("post", (-1.5, 1.6, 0.55), (0.08, 0.08, 1.1), flat("post", (0.15, 0.15, 0.16)))
         sg = face_box("sign", (-1.5, 1.6, 1.45), (1.3, 0.06, 0.8), (0.9, 0.9, 0.9), tex("sign"), "-y")

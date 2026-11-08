@@ -58,6 +58,7 @@ TPL = {  # template → (required params, optional params, motion-heavy for fram
     "scene": (["sky"], ["ground", "room", "props", "hero", "hero_fx", "hero_size", "n", "move", "dave", "pose", "face", "sky_rot", "sky_power", "sun", "sign", "outfit"], True),
 }
 OLD_SETS = [t for t in TPL if t != "scene"]  # ea1's fixed sets: max 2 per episode (owner 5 Nov: au1 looked like the Abdul video)
+PIDS = set(re.findall(r"`p:(\w+)`", Path("pipeline/PROPS.md").read_text(encoding="utf8"))) if Path("pipeline/PROPS.md").exists() else set()  # money props (blender/props.py)
 CAT = json.loads(Path("pipeline/catalog.json").read_text(encoding="utf8")) if Path("pipeline/catalog.json").exists() else {}
 BPOSES = ["idle", "hold", "look", "panic", "fists", "point_l", "point_you", "shrug", "count", "cheer", "sleep", "read", "slump"]
 FACES = ["neutral", "shock", "think", "spiral", "panic", "grin", "determined", "smug", "sleep", "dead"]
@@ -204,8 +205,8 @@ def check(eid, quiet=False):
                 if sh.get(k) and sh[k] not in CAT["textures"]:
                     E.append(f"shot {n}: {k} '{sh[k]}' not in pipeline/ASSETS.md textures")
             for m in sh.get("props", []) + ([sh["hero"]] if sh.get("hero") else []):
-                if m not in CAT["models"]:
-                    E.append(f"shot {n}: model '{m}' not in pipeline/ASSETS.md models")
+                if (m[2:].split("=")[0] not in PIDS) if m.startswith("p:") else (m not in CAT["models"]):
+                    E.append(f"shot {n}: model '{m}' not in pipeline/ASSETS.md models / pipeline/PROPS.md")
         if not sh.get("hero") and not sh.get("props"):
             E.append(f"shot {n}: a scene needs a 'hero' object (the thing the line names) and/or 'props'")
         if len(sh.get("props", [])) > 6:

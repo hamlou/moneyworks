@@ -192,7 +192,7 @@ def main():
     args = [a for a in sys.argv[1:] if a != "--no-critic"]
     eid, topic = args[0], " ".join(args[1:])
     guide = (ROOT / "AUTOPILOT.md").read_text(encoding="utf8")
-    assets = (ROOT / "pipeline/ASSETS.md").read_text(encoding="utf8")
+    assets = (ROOT / "pipeline/PROPS.md").read_text(encoding="utf8") + (ROOT / "pipeline/ASSETS.md").read_text(encoding="utf8")
     example = (ROOT / "pipeline/auto/au1.json").read_text(encoding="utf8")
     # 1) research with live Google Search: true numbers + real source URLs
     facts = ask([{"role": "user", "parts": [{"text":

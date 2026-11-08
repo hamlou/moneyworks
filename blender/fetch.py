@@ -74,6 +74,7 @@ def episode_ids(ep):
         m |= set(sh.get("props", [])) | ({sh["hero"]} if sh.get("hero") else set())
         h |= {sh["sky"]} if sh.get("sky") else set()
         t |= {sh[k] for k in ("ground", "room") if sh.get(k)}
+    m = {x for x in m if not x.startswith("p:")}  # p: = procedural money props, not Poly Haven
     return m, h, t
 
 
