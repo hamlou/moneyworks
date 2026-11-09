@@ -1,0 +1,391 @@
+{
+ "id": "usa30",
+ "title": "What If The USA Disappeared For 30 Days? #shorts",
+ "format": "maps + Dave reacting (Dave always in red hoodie, lower corner, clean poses)",
+ "sources": [
+  {
+   "id": "S1",
+   "fact": "Mexico exported $505.85B to the US in 2024 out of just over $617B total (~82%); the US receives over 80% of all Mexican goods shipped abroad (BBVA Research: 82.7% in Q1 2024)",
+   "short": "8 in 10 of Mexico's sales go to the USA",
+   "url": "https://mexiconewsdaily.com/news/mexico-exports-us-500-billion-trade-2024"
+  },
+  {
+   "id": "S2",
+   "fact": "Statistics Canada: by value three-quarters (75.9%) of Canada's domestic exports went to the United States in 2024",
+   "short": "3 in 4 of Canada's sales go to the USA",
+   "url": "https://www150.statcan.gc.ca/n1/daily-quotidien/250516/dq250516b-eng.htm"
+  },
+  {
+   "id": "S3",
+   "fact": "USDA attache report (via MarketsFarm/Grainews, 24 Jun 2025): about 90% of Mexico's corn imports are from the U.S.; later USDA FAS data for Oct 2024-Jul 2025 put US origin at 99%",
+   "short": "Almost all corn Mexico buys abroad is American",
+   "url": "https://www.grainews.ca/daily/usda-notes-shifts-in-mexican-corn"
+  },
+  {
+   "id": "S4",
+   "fact": "EIA: the US remained the world's largest crude oil producer in 2025 at a record 13.6 million b/d, about 40% more than the next two producers Russia (~9.9M b/d) and Saudi Arabia (~9.6M b/d)",
+   "short": "USA pumps the most oil; Russia + Saudi are next",
+   "url": "https://www.eia.gov/todayinenergy/detail.php?id=67844"
+  },
+  {
+   "id": "S5",
+   "fact": "IMF COFER data brief: the dollar's share of global FX reserves was 56.70% in 2026Q2; the euro is second at 20.60%",
+   "short": "Over half of countries' saved money is dollars; euro is no. 2",
+   "url": "https://data.imf.org/en/news/imf%20data%20brief%20september%2030"
+  },
+  {
+   "id": "S6",
+   "fact": "USDA projections: Brazil holds ~57% of global soybean exports vs ~30% for the US (2024/25) - Brazil is the world's largest soybean exporter",
+   "short": "Brazil ships the most soybeans on Earth",
+   "url": "https://datamarnews.com/noticias/brazil-poised-to-hold-60-share-of-global-soybean-exports-in-10-years/"
+  },
+  {
+   "id": "S7",
+   "fact": "IMF World Economic Outlook Oct 2026 (via CEOWORLD): world GDP 2026 > $128T; the US at $32.64T is about 25.5% of global GDP",
+   "short": "1 in 4 dollars on Earth is made in the USA",
+   "url": "https://ceoworld.biz/2026/11/05/global-gdp-2026-every-major-economy-ranked-by-the-imf/"
+  }
+ ],
+ "beats": [
+  {
+   "say": "What if the USA disappeared for thirty days?",
+   "src": "",
+   "map": {
+    "focus": "USA",
+    "highlight": [
+     "USA"
+    ],
+    "style": "gone"
+   },
+   "fx": [
+    {
+     "type": "fade_country",
+     "from": "USA",
+     "to": "USA",
+     "on": "disappeared"
+    }
+   ],
+   "text": "USA GONE FOR 30 DAYS?",
+   "dave": "shock",
+   "beat": false
+  },
+  {
+   "say": "Mexico gets hit first because eight out of ten things it sells go to the USA.",
+   "src": "S1",
+   "map": {
+    "focus": "MEX",
+    "highlight": [
+     "MEX"
+    ],
+    "style": "loss"
+   },
+   "fx": [
+    {
+     "type": "factory",
+     "from": "MEX",
+     "to": "MEX",
+     "on": "sells"
+    },
+    {
+     "type": "arrow",
+     "from": "MEX",
+     "to": "USA",
+     "on": "go"
+    },
+    {
+     "type": "crack",
+     "from": "MEX",
+     "to": "USA",
+     "on": "USA"
+    }
+   ],
+   "text": "8 IN 10 SALES GONE",
+   "dave": "worried",
+   "beat": false
+  },
+  {
+   "say": "Canada too because three out of four of its sales go there.",
+   "src": "S2",
+   "map": {
+    "focus": "CAN",
+    "highlight": [
+     "CAN"
+    ],
+    "style": "loss"
+   },
+   "fx": [
+    {
+     "type": "arrow",
+     "from": "CAN",
+     "to": "USA",
+     "on": "sales"
+    },
+    {
+     "type": "crack",
+     "from": "CAN",
+     "to": "USA",
+     "on": "there"
+    }
+   ],
+   "text": "CANADA LOSES 3 IN 4",
+   "dave": "point",
+   "beat": false
+  },
+  {
+   "say": "Worse Mexico loses food too because almost all the corn it buys abroad is American.",
+   "src": "S3",
+   "map": {
+    "focus": "MEX",
+    "highlight": [
+     "MEX",
+     "USA"
+    ],
+    "style": "loss"
+   },
+   "fx": [
+    {
+     "type": "grain",
+     "from": "USA",
+     "to": "MEX",
+     "on": "corn"
+    },
+    {
+     "type": "crack",
+     "from": "USA",
+     "to": "MEX",
+     "on": "American"
+    }
+   ],
+   "text": "NO MORE US CORN",
+   "dave": "shock",
+   "beat": false
+  },
+  {
+   "say": "Then gas jumps everywhere because the USA pumps more oil than any other country.",
+   "src": "S4",
+   "map": {
+    "focus": "WORLD",
+    "highlight": [
+     "USA"
+    ],
+    "style": "gone"
+   },
+   "fx": [
+    {
+     "type": "fire",
+     "from": "USA",
+     "to": "USA",
+     "on": "gas"
+    },
+    {
+     "type": "oil",
+     "from": "USA",
+     "to": "USA",
+     "on": "oil"
+    },
+    {
+     "type": "fade_country",
+     "from": "USA",
+     "to": "USA",
+     "on": "country"
+    }
+   ],
+   "text": "WORLD'S #1 OIL GONE",
+   "dave": "worried",
+   "beat": false
+  },
+  {
+   "say": "So countries lose savings because over half the money they save is American dollars.",
+   "src": "S5",
+   "map": {
+    "focus": "WORLD",
+    "highlight": [
+     "USA"
+    ],
+    "style": "gone"
+   },
+   "fx": [
+    {
+     "type": "money",
+     "from": "USA",
+     "to": "USA",
+     "on": "savings"
+    },
+    {
+     "type": "crack",
+     "from": "USA",
+     "to": "USA",
+     "on": "dollars"
+    }
+   ],
+   "text": "HALF THE SAVINGS = DOLLARS",
+   "dave": "shock",
+   "beat": false
+  },
+  {
+   "say": "Yet some countries love this.",
+   "src": "",
+   "map": {
+    "focus": "WORLD",
+    "highlight": [
+     "BRA",
+     "SAU",
+     "RUS",
+     "DEU"
+    ],
+    "style": "win"
+   },
+   "fx": [
+    {
+     "type": "arrow",
+     "from": "USA",
+     "to": "BRA",
+     "on": "love"
+    }
+   ],
+   "text": "BUT WHO WINS?",
+   "dave": "laugh",
+   "beat": false
+  },
+  {
+   "say": "Brazil wins because it already ships more soybeans than anyone.",
+   "src": "S6",
+   "map": {
+    "focus": "BRA",
+    "highlight": [
+     "BRA"
+    ],
+    "style": "win"
+   },
+   "fx": [
+    {
+     "type": "grain",
+     "from": "BRA",
+     "to": "CHN",
+     "on": "soybeans"
+    },
+    {
+     "type": "ship",
+     "from": "BRA",
+     "to": "CHN",
+     "on": "ships"
+    }
+   ],
+   "text": "BRAZIL: SOYBEAN KING",
+   "dave": "cheer",
+   "beat": false
+  },
+  {
+   "say": "Saudi Arabia and Russia win because every barrel they sell is suddenly worth more.",
+   "src": "S4",
+   "map": {
+    "focus": "SAU",
+    "highlight": [
+     "SAU",
+     "RUS"
+    ],
+    "style": "win"
+   },
+   "fx": [
+    {
+     "type": "oil",
+     "from": "SAU",
+     "to": "CHN",
+     "on": "barrel"
+    },
+    {
+     "type": "oil",
+     "from": "RUS",
+     "to": "CHN",
+     "on": "sell"
+    },
+    {
+     "type": "money",
+     "from": "CHN",
+     "to": "SAU",
+     "on": "worth"
+    }
+   ],
+   "text": "OIL WORTH MORE",
+   "dave": "point",
+   "beat": false
+  },
+  {
+   "say": "So Europe steps up because the euro is already the number two savings money.",
+   "src": "S5",
+   "map": {
+    "focus": "DEU",
+    "highlight": [
+     "DEU",
+     "FRA",
+     "ITA",
+     "ESP",
+     "NLD"
+    ],
+    "style": "win"
+   },
+   "fx": [
+    {
+     "type": "money",
+     "from": "DEU",
+     "to": "DEU",
+     "on": "euro"
+    }
+   ],
+   "text": "EURO = NEW #1?",
+   "dave": "think",
+   "beat": false
+  },
+  {
+   "say": "But nobody wins for long because one in four dollars on Earth is made in the USA.",
+   "src": "S7",
+   "map": {
+    "focus": "WORLD",
+    "highlight": [
+     "USA"
+    ],
+    "style": "gone"
+   },
+   "fx": [
+    {
+     "type": "money",
+     "from": "USA",
+     "to": "USA",
+     "on": "dollars"
+    },
+    {
+     "type": "fade_country",
+     "from": "USA",
+     "to": "USA",
+     "on": "USA"
+    }
+   ],
+   "text": "1 IN 4 DOLLARS = USA",
+   "dave": "shrug",
+   "beat": true
+  },
+  {
+   "say": "That is why every country on this map fears one question.",
+   "src": "",
+   "map": {
+    "focus": "USA",
+    "highlight": [
+     "USA"
+    ],
+    "style": "gone"
+   },
+   "fx": [
+    {
+     "type": "fade_country",
+     "from": "USA",
+     "to": "USA",
+     "on": "question"
+    }
+   ],
+   "text": "THE ONE QUESTION",
+   "dave": "think",
+   "beat": false
+  }
+ ],
+ "loop": "Last line '...every country on this map fears one question.' runs straight into line 1 'What if the USA disappeared for thirty days?' - the question IS the feared question. Last frame = map zoomed on the fading USA = frame 0."
+}

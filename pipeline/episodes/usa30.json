@@ -1,0 +1,106 @@
+{
+  "id": "usa30",
+  "title": "What If The USA Disappeared For 30 Days? #shorts",
+  "style": "v7",
+  "voice": "chatterbox",
+  "cb": {
+    "cfg": 0.3,
+    "exag": 0.55
+  },
+  "note": "map Short — from pipeline/maps/usa30.json",
+  "sources": [
+    "S1 Mexico exported $505.85B to the US in 2024 out of just over $617B total (~82%); the US receives over 80% of all Mexican goods shipped abroad (BBVA Research: 82.7% in Q1 2024) — 8 in 10 of Mexico's sales go to the USA https://mexiconewsdaily.com/news/mexico-exports-us-500-billion-trade-2024",
+    "S2 Statistics Canada: by value three-quarters (75.9%) of Canada's domestic exports went to the United States in 2024 — 3 in 4 of Canada's sales go to the USA https://www150.statcan.gc.ca/n1/daily-quotidien/250516/dq250516b-eng.htm",
+    "S3 USDA attache report (via MarketsFarm/Grainews, 24 Jun 2025): about 90% of Mexico's corn imports are from the U.S.; later USDA FAS data for Oct 2024-Jul 2025 put US origin at 99% — Almost all corn Mexico buys abroad is American https://www.grainews.ca/daily/usda-notes-shifts-in-mexican-corn",
+    "S4 EIA: the US remained the world's largest crude oil producer in 2025 at a record 13.6 million b/d, about 40% more than the next two producers Russia (~9.9M b/d) and Saudi Arabia (~9.6M b/d) — USA pumps the most oil; Russia + Saudi are next https://www.eia.gov/todayinenergy/detail.php?id=67844",
+    "S5 IMF COFER data brief: the dollar's share of global FX reserves was 56.70% in 2026Q2; the euro is second at 20.60% — Over half of countries' saved money is dollars; euro is no. 2 https://data.imf.org/en/news/imf%20data%20brief%20september%2030",
+    "S6 USDA projections: Brazil holds ~57% of global soybean exports vs ~30% for the US (2024/25) - Brazil is the world's largest soybean exporter — Brazil ships the most soybeans on Earth https://datamarnews.com/noticias/brazil-poised-to-hold-60-share-of-global-soybean-exports-in-10-years/",
+    "S7 IMF World Economic Outlook Oct 2026 (via CEOWORLD): world GDP 2026 > $128T; the US at $32.64T is about 25.5% of global GDP — 1 in 4 dollars on Earth is made in the USA https://ceoworld.biz/2026/11/05/global-gdp-2026-every-major-economy-ranked-by-the-imf/"
+  ],
+  "beats": [
+    {
+      "id": "b01",
+      "src": "",
+      "text": "What if the USA disappeared for thirty days?",
+      "pause": 0.3,
+      "exag": 0.6
+    },
+    {
+      "id": "b02",
+      "src": "S1",
+      "text": "Mexico gets hit first because eight out of ten things it sells go to the USA.",
+      "pause": 0.3,
+      "exag": 0.6
+    },
+    {
+      "id": "b03",
+      "src": "S2",
+      "text": "Canada too because three out of four of its sales go there.",
+      "pause": 0.3,
+      "exag": 0.6
+    },
+    {
+      "id": "b04",
+      "src": "S3",
+      "text": "Worse Mexico loses food too because almost all the corn it buys abroad is American.",
+      "pause": 0.3,
+      "exag": 0.6
+    },
+    {
+      "id": "b05",
+      "src": "S4",
+      "text": "Then gas jumps everywhere because the USA pumps more oil than any other country.",
+      "pause": 0.3,
+      "exag": 0.6
+    },
+    {
+      "id": "b06",
+      "src": "S5",
+      "text": "So countries lose savings because over half the money they save is American dollars.",
+      "pause": 0.3,
+      "exag": 0.6
+    },
+    {
+      "id": "b07",
+      "src": "",
+      "text": "Yet some countries love this.",
+      "pause": 0.3,
+      "exag": 0.6
+    },
+    {
+      "id": "b08",
+      "src": "S6",
+      "text": "Brazil wins because it already ships more soybeans than anyone.",
+      "pause": 0.3,
+      "exag": 0.6
+    },
+    {
+      "id": "b09",
+      "src": "S4",
+      "text": "Saudi Arabia and Russia win because every barrel they sell is suddenly worth more.",
+      "pause": 0.3,
+      "exag": 0.6
+    },
+    {
+      "id": "b10",
+      "src": "S5",
+      "text": "So Europe steps up because the euro is already the number two savings money.",
+      "pause": 0.3,
+      "exag": 0.6
+    },
+    {
+      "id": "b11",
+      "src": "S7",
+      "text": "But nobody wins for long because one in four dollars on Earth is made in the USA.",
+      "pause": 0.6,
+      "exag": 0.6
+    },
+    {
+      "id": "b12",
+      "src": "",
+      "text": "That is why every country on this map fears one question.",
+      "pause": 0.3,
+      "exag": 0.6
+    }
+  ]
+}
