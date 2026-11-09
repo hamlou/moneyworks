@@ -1,0 +1,125 @@
+name: daveclips
+run-name: daveclips ${{ inputs.poses || 'tools/DAVECLIPS' }}
+
+# Looping transparent Dave clips (blender/daveclips.py) for the map Short: one parallel job per pose (48 RGBA frames,
+# 1080x1080) → dave_<pose>.webm (VP9 + alpha) + dave_<pose>.png (middle frame) + grey QA sheet → artifact "daveclips"
+# + release ref/daveclips.zip. tools/DAVECLIPS: line 1 = poses, line 2 = "<samples> <engine>".
+on:
+  push:
+    paths: [tools/DAVECLIPS]
+  workflow_dispatch:
+    inputs:
+      poses:
+        description: space-separated poses (empty = tools/DAVECLIPS line 1)
+        default: ''
+      samples:
+        description: Cycles samples (empty = tools/DAVECLIPS)
+        default: ''
+      engine:
+        description: cycles | eevee (empty = tools/DAVECLIPS)
+        default: ''
+
+permissions: {contents: write, actions: read}
+
+jobs:
+  plan:
+    runs-on: ubuntu-latest
+    outputs:
+      poses: ${{ steps.p.outputs.poses }}
+      samples: ${{ steps.p.outputs.samples }}
+      engine: ${{ steps.p.outputs.engine }}
+    steps:
+      - uses: actions/checkout@v4
+      - id: p
+        run: |
+          POSES="${{ inputs.poses }}"; POSES=${POSES:-$(sed -n 1p tools/DAVECLIPS)}
+          POSES=${POSES:-talk shock point laugh shrug cheer think worried}
+          SAMPLES="${{ inputs.samples }}"; SAMPLES=${SAMPLES:-$(sed -n 2p tools/DAVECLIPS | awk '{print $1}')}
+          ENGINE="${{ inputs.engine }}"; ENGINE=${ENGINE:-$(sed -n 2p tools/DAVECLIPS | awk '{print $2}')}
+          echo "poses=$(echo $POSES | python3 -c 'import sys,json; print(json.dumps(sys.stdin.read().split()))')" >> $GITHUB_OUTPUT
+          echo "samples=${SAMPLES:-16}" >> $GITHUB_OUTPUT; echo "engine=${ENGINE:-cycles}" >> $GITHUB_OUTPUT
+
+  render:
+    needs: plan
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    strategy:
+      fail-fast: false
+      max-parallel: 16
+      matrix:
+        pose: ${{ fromJson(needs.plan.outputs.poses) }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/cache@v4
+        with:
+          path: ~/blender
+          key: blender-4.2.3
+      - name: Blender 4.2 LTS
+        run: |
+          if [ ! -x ~/blender/blender ]; then
+            mkdir -p ~/blender && curl -sL https://download.blender.org/release/Blender4.2/blender-4.2.3-linux-x64.tar.xz | tar -xJ -C ~/blender --strip-components=1
+          fi
+          sudo apt-get update -qq && sudo apt-get install -y -qq libxi6 libxxf86vm1 libxfixes3 libxrender1 libgl1 libxkbcommon0 libsm6 libegl1 xvfb libgl1-mesa-dri mesa-utils >/dev/null
+          ~/blender/blender --version | head -1
+      - uses: actions/cache@v4
+        with:
+          path: assets
+          key: ph-${{ hashFiles('blender/fetch.py') }}-daveclips
+      - name: CC0 assets (Poly Haven studio HDRI)
+        run: python3 blender/fetch.py assets
+      - name: Render ${{ matrix.pose }}
+        run: |
+          export LIBGL_ALWAYS_SOFTWARE=1 GALLIUM_DRIVER=llvmpipe
+          start=$(date +%s)
+          xvfb-run -a -s "-screen 0 1920x1080x24" ~/blender/blender -b -P blender/daveclips.py -- --assets assets --tex blender/tex --out out/frames \
+            --pose ${{ matrix.pose }} --frames 1-48 --samples ${{ needs.plan.outputs.samples }} --res 1080x1080 --engine ${{ needs.plan.outputs.engine }} 2>&1 | grep -E "frame |Error|error|Traceback|skip|^  File" || true
+          echo "render seconds: $(( $(date +%s) - start ))"
+          n=$(ls out/frames/${{ matrix.pose }}_*.png | wc -l); echo "frames: $n"
+          test "$n" -eq 48
+      - uses: actions/upload-artifact@v4
+        with:
+          name: clipframes-${{ matrix.pose }}
+          path: out/frames
+          retention-days: 3
+
+  assemble:
+    needs: [plan, render]
+    if: ${{ !cancelled() }}
+    runs-on: ubuntu-latest
+    env: {GH_TOKEN: "${{ github.token }}"}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/download-artifact@v4
+        with:
+          pattern: clipframes-*
+          path: frames
+          merge-multiple: true
+      - run: sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg zip >/dev/null
+      - name: webm (VP9 alpha) + middle png + grey contact sheets
+        run: |
+          mkdir -p out/sheets
+          for f in frames/*_0001.png; do
+            p=$(basename $f _0001.png)
+            ffmpeg -v error -y -framerate 24 -i frames/${p}_%04d.png -c:v libvpx-vp9 -pix_fmt yuva420p -b:v 0 -crf 30 -auto-alt-ref 0 out/dave_$p.webm
+            ffprobe -v error -show_entries stream_tags=alpha_mode -of default=nw=1 out/dave_$p.webm | grep -qi 'alpha_mode=1' || echo "::warning::dave_$p.webm has no alpha_mode tag"
+            cp frames/${p}_0025.png out/dave_$p.png
+            ffmpeg -v error -y -f lavfi -i color=c=0x808080:s=1080x1080:r=24 -framerate 24 -i frames/${p}_%04d.png \
+              -filter_complex "[0][1]overlay=shortest=1,drawtext=text='$p %{n}':x=12:y=12:fontsize=48:fontcolor=yellow,select='not(mod(n\,4))',scale=360:-1,tile=4x3" \
+              -frames:v 1 out/sheets/sheet_$p.jpg
+          done
+          # all poses side by side (middle frames on grey) + loop seam check (last frame next to first frame)
+          ffmpeg -v error -y -f lavfi -i color=c=0x808080:s=1080x1080 -pattern_type glob -i 'out/dave_*.png' \
+            -filter_complex "[0][1]overlay,scale=360:-1,tile=4x2" -frames:v 1 out/sheets/all_poses.jpg || true
+          for f in frames/*_0001.png; do p=$(basename $f _0001.png)
+            ffmpeg -v error -y -f lavfi -i color=c=0x808080:s=2160x1080 -i frames/${p}_0048.png -i frames/${p}_0001.png \
+              -filter_complex "[0][1]overlay=0:0[a];[a][2]overlay=1080:0,scale=720:-1" -frames:v 1 out/sheets/seam_$p.jpg
+          done
+          ls -la out out/sheets
+          (cd out && zip -qr ../daveclips.zip .)
+      - uses: actions/upload-artifact@v4
+        with:
+          name: daveclips
+          path: out
+          retention-days: 14
+      - name: attach to release "ref"
+        run: gh release upload ref daveclips.zip --clobber
