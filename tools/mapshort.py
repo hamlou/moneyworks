@@ -20,6 +20,9 @@ try:
 except Exception:
     FF = shutil.which("ffmpeg") or "ffmpeg"
 FPS = 30
+_spec = Path(f"pipeline/maps/{sys.argv[2]}.json") if len(sys.argv) > 2 else None
+TEMPO = float(os.environ.get("MAP_TEMPO") or (json.loads(_spec.read_text(encoding="utf8")).get("tempo", 1.0) if _spec and _spec.exists() else 1.0))  # voice sped up by TEMPO → on-screen seconds = timing seconds / TEMPO
+SPF = FPS / TEMPO
 FX = {"oil", "grain", "food", "money", "ship", "chip", "factory", "medicine", "plane", "fire", "arrow", "crack", "fade_country"}
 STYLES = {"gone", "loss", "win", "neutral"}
 POSES = {"talk", "shock", "point", "laugh", "shrug", "cheer", "think", "worried"}
@@ -111,7 +114,7 @@ def timing(eid):
         die(f"no voice {vj} — run `py tools/mapshort.py script {eid}` + voice.yml, or build with --fake-voice")
     if not tj.exists() or tj.stat().st_mtime < vj.stat().st_mtime:
         Path(f"public/{eid}").mkdir(parents=True, exist_ok=True)
-        subprocess.run([sys.executable, "tools/voice_gaps.py", eid, "0", "--tempo", "1.0", "--maxgap", "0.3"], check=True, env={**os.environ, "PYTHONIOENCODING": "utf-8"})
+        subprocess.run([sys.executable, "tools/voice_gaps.py", eid, "0", "--tempo", str(TEMPO), "--maxgap", "0.3"], check=True, env={**os.environ, "PYTHONIOENCODING": "utf-8"})
     return json.loads(tj.read_text(encoding="utf8"))
 
 
@@ -126,7 +129,7 @@ def word_frame(vb, on, fallback):
     ws = vb.get("words", [])
     for j in range(len(ws)):
         if toks and all(j + k < len(ws) and norm(ws[j + k].get("text") or ws[j + k].get("word", "")).startswith(toks[k]) for k in range(len(toks))):
-            return round(ws[j]["start"] * FPS)
+            return round(ws[j]["start"] * SPF)
     print(f"  ! fx word {on!r} not found in beat {vb['id']} — anchored 6 frames after the beat start")
     return fallback
 
@@ -149,8 +152,8 @@ def build(eid, fake=False):
         vbs = V["beats"]
     else:
         die(f"voice has {len(V['beats'])} beats, spec {len(s['beats'])} — re-voice (`script {eid}`)")
-    frames = max(1, round(V["total"] * FPS))
-    starts = [0] + [round(vb["start"] * FPS) for vb in vbs[1:]]
+    frames = max(1, round(V["total"] * SPF))
+    starts = [0] + [round(vb["start"] * SPF) for vb in vbs[1:]]
     beats, sfx = [], []
     for i, (b, vb) in enumerate(zip(s["beats"], vbs)):
         fr, to = starts[i], starts[i + 1] if i + 1 < len(starts) else frames
