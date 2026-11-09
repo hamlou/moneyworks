@@ -48,13 +48,30 @@ if maxgap is not None:  # Shorts: cut every silence > maxgap (on-screen seconds)
         lead = W[0][0]["start"] / tempo
         if lead > 0.05:
             ops.append((0.0, -(lead - 0.05)))
+    mono = a if a.ndim == 1 else a.mean(axis=1)
+    def quiet_span(t0, t1):  # owner 9 Nov: words got cut → only cut where the audio is REALLY silent
+        i0, i1 = int(t0 * sr), int(t1 * sr)
+        seg = np.abs(mono[i0:i1])
+        if len(seg) == 0:
+            return t0, t0
+        loud = np.where(seg > 0.02 * (np.abs(mono).max() or 1))[0]
+        half = len(seg) // 2
+        left, right = loud[loud < half], loud[loud >= half]
+        q0 = t0 + (left[-1] + 1) / sr + 0.03 if len(left) else t0   # tail of the previous word still sounding
+        q1 = t0 + right[0] / sr - 0.03 if len(right) else t1         # next word already starting
+        return q0, max(q0, q1)
     for (w1, _, _), (w2, bid, first) in zip(W, W[1:]):
-        e1, s2 = w1["end"] / tempo, w2["start"] / tempo
+        # padding: whisper word ends are early → keep 0.12 s after the end, 0.05 s before the next start
+        e1, s2 = w1["end"] / tempo + 0.12, w2["start"] / tempo - 0.05
+        if s2 - e1 <= 0.02:
+            continue
+        q0, q1 = quiet_span(e1, s2)
+        e1, s2 = max(e1, q0), min(s2, q1)
         g = s2 - e1
         tgt = maxgap if (beat_id and bid == beat_id and first) else min(g, maxgap)
-        if abs(g - tgt) > 0.01:
-            ops.append((e1 + min(g, tgt) / 2, tgt - g))
-    tail_from = (W[-1][0]["end"] / tempo + 0.15) if W else len(a) / sr
+        if g > tgt + 0.01:
+            ops.append((e1 + tgt / 2, tgt - g))
+    tail_from = (W[-1][0]["end"] / tempo + 0.35) if W else len(a) / sr
     pieces, cur = [], 0
     for p, d in sorted(ops):
         i = int(p * sr)

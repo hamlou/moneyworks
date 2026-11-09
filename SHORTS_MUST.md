@@ -47,3 +47,11 @@
 | 8–25 s | 3–4 beats, each = one new image + one surprising TRUE fact, each ends with "but/so" |
 | 25–35 s | the payoff the hook promised, punch line after a 0.3 s beat |
 | last 2 s | a line that flows straight back into the first line (loop) — no CTA |
+
+## 5. Owner feedback on ea2s (9 Nov 2026) — OBLIGATORY
+- NEVER cut a word or phrase before it ends. Silence cutting keeps ≥ 0.12 s after every word end and ≥ 0.05 s before every word start
+  [ea2s: "most of the words got cut off before they finish"]. Listen-check the last syllable of every line.
+- EVERY image MUST show exactly what is being said at that second (word-anchored). If the line names a person, show that person
+  (free-licence photo: Wikimedia Commons public domain / CC BY with credit, or official .gov photo). Never a generic scene under a specific claim.
+- Dave ALWAYS wears the red hoodie in Shorts. No outfit changes.
+- Dave's movement must be clean: no floating, no limbs through the body, no camera angle that makes him look like he flies.
