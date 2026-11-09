@@ -160,3 +160,29 @@ Use 6-14 shots per video. Re-use a shot across neighbouring lines (it keeps play
 - Follow it: `gh run list -R hamlou/moneyworks --workflow episode.yml` (each stage's step summary shows the script / compare).
 - Why dispatches: pushes made inside Actions (GITHUB_TOKEN) never trigger push workflows, so `tools/auto.py` in CI mode
   (`CI=true`) runs `gh workflow run voice.yml|blender.yml|v6demo.yml` itself and waits for the run it started.
+
+## 7. Supervisor (self-healing)
+`.github/workflows/supervisor.yml` runs `tools/supervisor.py` every 20 min (cron `7,27,47 * * * *`, file also on **main**,
+code checked out from `shorts-playbook-rules`) and does what a human babysitter did. Every decision → `pipeline/ops/LOG.md`
+(last 300 lines) + the run's step summary; `pipeline/ops/state.json` remembers each action per run id + attempt, so repeats never double-act.
+A failed run that a newer run (same workflow + id, same or later stage) already covers is skipped.
+
+| failed-step log matches | action |
+|---|---|
+| `Could not find composition with ID Auto-<id>` | dispatch `episode <id> render` — its **ensure** step runs `auto.py build` + `save` when `src/v6/auto/<id>.plan.json` / the `autoEps.ts` entry is missing |
+| `… Map-<id>` | dispatch `v6demo Map-<id>` — its **ensure** step runs `mapshort.py build <id>` + commits |
+| `Timeout (…ms) exceeded rendering` | 1st time `gh run rerun --failed`; 2nd time → issue |
+| git conflict (`could not apply`, `non-fast-forward`, `Pulling is not possible`, `CONFLICT (`, `git push failed N times`) | episode/v6demo/standalone voice+blender → re-dispatch the same stage; episode video whose log has `SHOTS OK: Blender run N` → write `public/<id>/SHOTS_RUN=N` + dispatch render; else rerun --failed |
+| network (HTTP 5xx, 502/503/504, `timed out`, `IncompleteRead`, `connection reset`, `TLS handshake`, artifact download …) | `gh run rerun <id> --failed`, max 2 retries per run (then issue) |
+| `<wf>.yml run N FAILED` (episode waiting on a child) | nothing on the parent — the child is healed; when the child's rerun succeeds the parent is **resumed** (voice → same stage again, blender → SHOTS_RUN + render, v6demo → published) |
+| anything else | Gemini diagnosis (`tools/write.py ask`, secret `GEMINI_API_KEYS`) + ONE issue `[autopilot] <workflow> <id> failed: <cause>` (label `autopilot`, deduped by title) |
+
+Also: queued > 90 min → cancel + re-dispatch once (a stuck child → cancel it + its episode, re-dispatch the episode) ·
+in progress > 2.5× the median of that workflow's last 10 successful runs → issue "slow" (never killed) ·
+push-triggered `blender` runs whose `blender/RUN` shot is an autopilot id with no pending episode/dispatch → cancelled ·
+duplicate live dispatches of the same workflow + id → older one cancelled (the one a parent episode waits on is kept) ·
+a successful `v6 demo Auto-<id>`/`Map-<id>` with no newer `<id>_send.mp4` on release **ref** → the runner makes the 720p copy
+(+ `tools/shortgate.py` → `<id>-gate.md` for Shorts) and uploads it with `--clobber`.
+- Dry run (prints decisions, changes nothing): `py tools/supervisor.py --dry` (locally) or
+  `gh workflow run supervisor.yml --ref shorts-playbook-rules -f dry=true`. Debug one run: `py tools/supervisor.py --classify <run id>`.
+- **Agents: before touching the pipeline read `pipeline/ops/LOG.md` and the open `autopilot` issues** (`gh issue list --label autopilot`).

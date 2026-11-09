@@ -551,6 +551,7 @@ def push(paths, msg):
         if sh("git", "pull", "--rebase", "--autostash", "-q", check=False) == 0 and sh("git", "push", "-q", check=False) == 0:
             ok = True
             break
+        subprocess.run(["git", "rebase", "--abort"], capture_output=True)  # a half-done rebase blocks every later pull ("Pulling is not possible")
         time.sleep(8)
     if not ok:
         sys.exit("git push failed 5 times — check your internet / git login, then run the same command again")

@@ -1,0 +1,42 @@
+name: supervisor
+run-name: supervisor ${{ inputs.dry == 'true' && '(dry)' || '' }}
+
+# Self-healing for the render pipeline (AUTOPILOT.md §7, tools/supervisor.py): reruns flaky runs, re-dispatches after
+# git conflicts, rebuilds missing compositions, cancels strays/duplicates/stuck runs, flags slow runs, publishes the
+# 720p <id>_send.mp4 and opens "autopilot" issues. Cron runs from main → this file is also on main; code from the branch.
+on:
+  schedule:
+    - cron: '7,27,47 * * * *'
+  workflow_dispatch:
+    inputs:
+      dry:
+        description: true = only print decisions, change nothing
+        default: 'false'
+
+permissions:
+  contents: write
+  actions: write
+  issues: write
+
+concurrency:
+  group: supervisor
+  cancel-in-progress: false
+
+jobs:
+  supervise:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    env:
+      GH_TOKEN: ${{ github.token }}
+      GH_REPO: ${{ github.repository }}
+      GEMINI_API_KEYS: ${{ secrets.GEMINI_API_KEYS }}
+      DRY: ${{ inputs.dry || 'false' }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: shorts-playbook-rules
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: supervise
+        run: python tools/supervisor.py

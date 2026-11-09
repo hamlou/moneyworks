@@ -5,6 +5,8 @@
 > If a rule blocks you, STOP and ask the owner. Never "skip it this once".
 > Evidence: POSTMORTEM.md (our 23 videos, what failed + what to keep) and VIRAL_SHORTS.md (research + sources).
 
+> Ops: before rendering, read `pipeline/ops/LOG.md` + open `autopilot` GitHub issues (supervisor, AUTOPILOT.md §7).
+
 ## 0. Before writing — you MUST
 1. READ `analytics/LOG.md` and process any new screenshots in `analytics/inbox/` (rules: `analytics/README.md`).
 2. READ `POSTMORTEM.md` §Patterns and the "GOOD POINTS TO KEEP" of the best Short (S4 Abdul, 1,891 views = our best video ever).

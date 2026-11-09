@@ -80,6 +80,15 @@ jobs:
           gh workflow run episode.yml --ref "$GITHUB_REF_NAME" -f id="$ID" -f stage=render
           echo "shots done — dispatched episode $ID render" >> "$GITHUB_STEP_SUMMARY"
 
+      - name: ensure plan (supervisor fix for "Could not find composition with ID Auto-<id>")
+        if: inputs.stage == 'render'
+        run: |
+          if [ ! -f "src/v6/auto/$ID.plan.json" ] || ! grep -q "./auto/$ID.plan.json" src/v6/autoEps.ts; then
+            echo "plan/autoEps entry for $ID missing → build + save"
+            python tools/auto.py build "$ID"
+            python tools/auto.py save "$ID"
+          fi
+
       - name: render (final video)
         if: inputs.stage == 'render'
         run: |
