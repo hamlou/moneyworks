@@ -20,6 +20,17 @@ jobs:
           cache: npm
       - run: sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg
       - run: npm ci --no-audit --no-fund
+      - name: Dave clips straight from the daveclips run (public/<id>/DAVE_RUN; owner PC never downloads them)
+        env: {GH_TOKEN: "${{ github.token }}", COMP: "${{ inputs.comp }}"}
+        shell: bash
+        run: |
+          ID=${COMP#Auto-}; ID=${ID#Map-}
+          if [ -f public/$ID/DAVE_RUN ]; then
+            gh run download $(cat public/$ID/DAVE_RUN) -n daveclips -D /tmp/dc
+            mkdir -p public/$ID/dave && cp -r /tmp/dc/frames/* public/$ID/dave/
+            cp /tmp/dc/dave_*.png /tmp/dc/dave_*.webm public/$ID/ 2>/dev/null || true
+            ls public/$ID/dave
+          fi
       - name: autopilot real YouTube clips (Creative Commons only, ≤ 8 s each)
         if: startsWith(inputs.comp, 'Auto-')
         env: {COMP: "${{ inputs.comp }}"}
