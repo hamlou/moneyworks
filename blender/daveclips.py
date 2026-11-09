@@ -61,6 +61,8 @@ if bpy:
         sc.render.engine = "BLENDER_EEVEE_NEXT"
         sc.eevee.taa_render_samples = int(args.get("--samples", "16"))
     sc.render.use_motion_blur = False
+    sc.view_settings.view_transform = "Standard"  # owner 9 Nov: AgX turned the red hoodie salmon/pink → Standard keeps it saturated red
+    sc.view_settings.look = "None"
     POSE = args.get("--pose", "talk")
     SPEC = clips(POSES)[POSE]
     a, _, b = args.get("--frames", f"1-{N}").partition("-")

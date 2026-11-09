@@ -14,7 +14,7 @@ import {ISO3, ISO3_NAME, SHORT} from './mapIso';
 export type MapStyle = 'gone' | 'loss' | 'win' | 'neutral';
 export type MapFx = {type: string; from?: string; to?: string; at: number; end: number};
 export type MapBeat = {from: number; to: number; say: string; text?: string; focus: string; highlight: string[]; style: MapStyle; dave?: string; fx: MapFx[]};
-export type DaveMedia = {src: string; kind: 'webm' | 'png'; len?: number};
+export type DaveMedia = {src: string; kind: 'seq' | 'webm' | 'png'; len?: number; n?: number};
 export type MapPlan = {id: string; title?: string; w?: number; h?: number; frames: number; voice?: string; beats: MapBeat[]; music: MSeg[]; sfx: Cue[]; dave?: Record<string, DaveMedia>};
 
 const W = 1080;
@@ -117,18 +117,23 @@ const Land = React.memo(() => (
   </g>
 ));
 
-const Highlights: React.FC<{f: number; b: MapBeat; cam: Cam}> = ({f, b, cam}) => {
-  const t = f - b.from;
-  const a = b.from === 0 ? 1 : Math.min(1, t / 6);
+// cross-fade (owner 9 Nov): the new beat's highlight fades in from the START of the camera move while the old one fades out
+// over the same 0.6 s (MOVE) -> the map is never un-highlighted mid-move. Countries kept with the same style don't blink.
+const Highlights: React.FC<{f: number; b: MapBeat; cam: Cam; prev?: MapBeat; out?: boolean}> = ({f, b, cam, prev, out}) => {
+  const p = Math.min(1, Math.max(0, (f - (out ? b.to : b.from)) / MOVE));
+  const kept = (iso: string) => !!prev && prev.style === b.style && prev.highlight.includes(iso);
+  const k = (iso: string) => (out ? 1 - p : b.from === 0 || kept(iso) ? 1 : 1 - (1 - p) * (1 - p));
   const pulse = 0.7 + 0.3 * Math.sin(f / 5);
-  const fades = b.fx.filter((x) => x.type === 'fade_country' && f >= x.at);
+  const fades = out ? [] : b.fx.filter((x) => x.type === 'fade_country' && f >= x.at);
   return (
     <>
       {b.highlight.map((iso) => {
         const c = country(iso);
-        if (!c) return null;
+        if (!c || (out && kept(iso))) return null;
+        const a = k(iso);
+        if (a <= 0) return null;
         if (b.style === 'gone') {
-          const g = b.from === 0 ? 1 : Math.min(1, t / 24);
+          const g = a;
           return (
             <g key={iso}>
               <path d={c.d} fill={COL.gone} opacity={g * 0.92} />
@@ -319,16 +324,43 @@ const crackPaths = (seed: number): string[] =>
     return d;
   });
 
+// owner 9 Nov: fx were far too small on a phone -> every shape FXK x bigger, offsets OFF x wider, bold dark outline + shadow
+// (filter #fxo), and every shape is kept inside the upper map area (FX_BOX: under the big text, above Dave)
+const FXK = 2.7;
+const OFF = 2;
+const FX_BOX = {x0: 110, x1: 970, y0: 430, y1: 1110};
+const clampFx = (p: Pt): Pt => [Math.max(FX_BOX.x0, Math.min(FX_BOX.x1, p[0])), Math.max(FX_BOX.y0, Math.min(FX_BOX.y1, p[1]))];
+const FxOutline: React.FC = () => (
+  <filter id="fxo" filterUnits="userSpaceOnUse" x={0} y={0} width={W} height={H}>
+    <feMorphology in="SourceAlpha" operator="dilate" radius={6} result="d" />
+    <feFlood floodColor="#05070C" result="k" />
+    <feComposite in="k" in2="d" operator="in" result="ol" />
+    <feGaussianBlur in="d" stdDeviation={7} result="b" />
+    <feOffset in="b" dy={10} result="bo" />
+    <feComponentTransfer in="bo" result="sh">
+      <feFuncA type="linear" slope={0.65} />
+    </feComponentTransfer>
+    <feMerge>
+      <feMergeNode in="sh" />
+      <feMergeNode in="ol" />
+      <feMergeNode in="SourceGraphic" />
+    </feMerge>
+  </filter>
+);
+
 const FxItem: React.FC<{fx: MapFx; f: number; cam: Cam; focus: string; seed: number}> = ({fx, f, cam, focus, seed}) => {
   const t = f - fx.at;
   const dur = Math.max(1, fx.end - fx.at);
   const A = country(fx.from) ?? country(focus);
   const B = country(fx.to);
-  const at: Pt = A ? toScreen(cam, A.c) : [FIT.cx, FIT.cy];
+  const at0: Pt = A ? toScreen(cam, A.c) : [FIT.cx, FIT.cy];
   const arc = A && B && A.iso !== B.iso ? arcPts(cam, A.ll, B.ll) : null;
-  const G = (p: Pt, s: number, ch: React.ReactNode, rot = 0, k?: React.Key) => (
-    <g key={k} transform={`translate(${p[0].toFixed(1)},${p[1].toFixed(1)}) rotate(${rot.toFixed(1)}) scale(${s.toFixed(3)})`}>{ch}</g>
-  );
+  const at: Pt = clampFx(at0);
+  const o = (dx: number, dy: number): Pt => [at[0] + dx * OFF, at[1] + dy * OFF];
+  const G = (p0: Pt, s: number, ch: React.ReactNode, rot = 0, k?: React.Key) => {
+    const p = clampFx(p0);
+    return <g key={k} transform={`translate(${p[0].toFixed(1)},${p[1].toFixed(1)}) rotate(${rot.toFixed(1)}) scale(${(s * FXK).toFixed(3)})`}>{ch}</g>;
+  };
   const travel = (u: number, s: number, ch: React.ReactNode, k?: React.Key, rot = true) => {
     const {p, ang} = along(arc!, u);
     const flip = Math.abs(ang) > 90;
@@ -337,50 +369,50 @@ const FxItem: React.FC<{fx: MapFx; f: number; cam: Cam; focus: string; seed: num
   const trail = arc && (
     <polyline points={arc.map((p) => p.join(',')).join(' ')} fill="none" stroke="rgba(255,255,255,0.75)" strokeWidth={4} strokeDasharray="10 12" strokeDashoffset={-f * 2} strokeLinecap="round" />
   );
-  const icons = (C: React.FC, n: number, r: number) => ring(n, r, seed).map((o, i) => G([at[0] + o[0], at[1] + o[1] - Math.sin((t + i * 7) / 9) * 6], pop(t, i * 4), <C />, 0, i));
+  const icons = (C: React.FC, n: number, r: number) => ring(n, r, seed).map((q, i) => G(o(q[0], q[1] - Math.sin((t + i * 7) / 9) * 6), pop(t, i * 4), <C />, 0, i));
   switch (fx.type) {
     case 'oil': {
       const drops = [0, 1, 2, 3, 4, 5].map((i) => {
         const u = ((t + i * 8) % 32) / 32;
-        return G([at[0] - 40 + i * 16, at[1] + 30 + u * 110], (1 - u * 0.3) * pop(t, i * 2), <Drop />, 0, i);
+        return G(o(-60 + i * 24, 40 + u * 110), (1 - u * 0.3) * pop(t, i * 2), <Drop />, 0, i);
       });
-      return <g>{trail}{G([at[0] - 70, at[1] - 30], pop(t) * 0.8, <Derrick t={t} />)}{G([at[0] + 80, at[1] - 10], pop(t, 4) * 0.65, <Derrick t={t + 9} />)}{drops}</g>;
+      return <g>{trail}{G(o(-80, -30), pop(t) * 0.8, <Derrick t={t} />)}{G(o(90, -10), pop(t, 4) * 0.65, <Derrick t={t + 9} />)}{drops}</g>;
     }
     case 'grain':
     case 'food':
       return (
         <g>
           {trail}
-          {ring(5, 120, seed).map((o, i) => G([at[0] + o[0], at[1] + o[1]], pop(t, i * 3), i % 2 && fx.type === 'food' ? <Corn /> : <Wheat />, Math.sin((t + i * 5) / 8) * 8, i))}
-          {arc ? travel(Math.min(1, t / Math.min(dur, 75)), 0.9, <Ship t={t} />, 's') : G([at[0], at[1] + 120], pop(t, 6) * 0.9, <Ship t={t} />)}
+          {ring(5, 120, seed).map((q, i) => G(o(q[0], q[1]), pop(t, i * 3), i % 2 && fx.type === 'food' ? <Corn /> : <Wheat />, Math.sin((t + i * 5) / 8) * 8, i))}
+          {arc ? travel(Math.min(1, t / Math.min(dur, 75)), 0.9, <Ship t={t} />, 's') : G(o(0, 120), pop(t, 6) * 0.9, <Ship t={t} />)}
         </g>
       );
     case 'money':
       if (arc) return <g>{trail}{[0, 1, 2, 3, 4, 5].map((i) => (t - i * 5 >= 0 ? travel(((t - i * 5) % 30) / 30, 1, <g transform={`rotate(${Math.sin((t + i * 4) / 3) * 25})`}><Bill /></g>, i, false) : null))}</g>;
-      return <g>{[0, 1, 2, 3, 4, 5, 6, 7].map((i) => { const u = ((t + i * 4) % 36) / 36; const a = random(`m${seed}${i}`) * Math.PI * 2; return G([at[0] + Math.cos(a) * 160 * u, at[1] - 140 * Math.sin(Math.PI * u) + Math.sin(a) * 60 * u], pop(t, i * 2), <Bill />, (u * 360 + i * 40) % 360, i); })}</g>;
+      return <g>{[0, 1, 2, 3, 4, 5, 6, 7].map((i) => { const u = ((t + i * 4) % 36) / 36; const a = random(`m${seed}${i}`) * Math.PI * 2; return G(o(Math.cos(a) * 160 * u, -140 * Math.sin(Math.PI * u) + Math.sin(a) * 60 * u), pop(t, i * 2), <Bill />, (u * 360 + i * 40) % 360, i); })}</g>;
     case 'ship':
-      return <g>{trail}{arc ? travel(Math.min(1, t / Math.min(dur, 90)), 1, <Ship t={t} />) : G([at[0], at[1] + 110], pop(t), <Ship t={t} />)}</g>;
+      return <g>{trail}{arc ? travel(Math.min(1, t / Math.min(dur, 90)), 1, <Ship t={t} />) : G(o(0, 110), pop(t), <Ship t={t} />)}</g>;
     case 'plane':
-      return <g>{trail}{arc ? travel(((t % 50) / 50), 1, <Plane />) : G([at[0] + Math.cos(t / 12) * 130, at[1] + Math.sin(t / 12) * 70], pop(t), <Plane />, (t / 12) * 57.3 + 90)}</g>;
+      return <g>{trail}{arc ? travel(((t % 50) / 50), 1, <Plane />) : G(o(Math.cos(t / 12) * 130, Math.sin(t / 12) * 70), pop(t), <Plane />, (t / 12) * 57.3 + 90)}</g>;
     case 'chip':
       return <g>{trail}{icons(Chip, 5, 130)}{arc && t > 6 ? travel(((t - 6) % 40) / 40, 0.7, <Chip />, 'c', false) : null}</g>;
     case 'medicine':
-      return <g>{trail}{ring(6, 125, seed).map((o, i) => G([at[0] + o[0], at[1] + o[1] - Math.sin((t + i * 6) / 9) * 8], pop(t, i * 3), <Pill />, i * 37 + t * 1.5, i))}</g>;
+      return <g>{trail}{ring(6, 125, seed).map((q, i) => G(o(q[0], q[1] - Math.sin((t + i * 6) / 9) * 8), pop(t, i * 3), <Pill />, i * 37 + t * 1.5, i))}</g>;
     case 'factory':
-      return <g>{trail}{G([at[0], at[1]], pop(t) * 0.9, <Factory t={t} />)}{G([at[0] + 120, at[1] + 40], pop(t, 5) * 0.6, <Factory t={t + 20} />)}</g>;
+      return <g>{trail}{G([at[0], at[1]], pop(t) * 0.9, <Factory t={t} />)}{G(o(120, 40), pop(t, 5) * 0.6, <Factory t={t + 20} />)}</g>;
     case 'fire':
-      return <g>{ring(5, 110, seed).map((o, i) => G([at[0] + o[0], at[1] + o[1]], pop(t, i * 3) * (0.7 + random(`fs${seed}${i}`) * 0.5), <Flame t={t} seed={i} />, 0, i))}</g>;
+      return <g>{ring(5, 110, seed).map((q, i) => G(o(q[0], q[1]), pop(t, i * 3) * (0.7 + random(`fs${seed}${i}`) * 0.5), <Flame t={t} seed={i} />, 0, i))}</g>;
     case 'arrow': {
-      const pts = arc ?? [[at[0] - 200, at[1] + 60], [at[0], at[1]]] as Pt[];
+      const pts = arc ?? [o(-200, 60), at];
       const u = Math.min(1, t / 16);
       const L = pts.length;
       const cut = pts.slice(0, Math.max(2, Math.ceil(u * (L - 1)) + 1));
       const tip = along(pts, u);
       return (
         <g>
-          <polyline points={cut.map((p) => p.join(',')).join(' ')} fill="none" stroke="#000" strokeWidth={30} strokeLinecap="round" strokeLinejoin="round" />
-          <polyline points={cut.map((p) => p.join(',')).join(' ')} fill="none" stroke={K.yellow} strokeWidth={18} strokeLinecap="round" strokeLinejoin="round" />
-          <g transform={`translate(${tip.p[0]},${tip.p[1]}) rotate(${tip.ang})`}>
+          <polyline points={cut.map((p) => p.join(',')).join(' ')} fill="none" stroke="#000" strokeWidth={56} strokeLinecap="round" strokeLinejoin="round" />
+          <polyline points={cut.map((p) => p.join(',')).join(' ')} fill="none" stroke={K.yellow} strokeWidth={34} strokeLinecap="round" strokeLinejoin="round" />
+          <g transform={`translate(${tip.p[0]},${tip.p[1]}) rotate(${tip.ang}) scale(2)`}>
             <path d="M-6,-34 L40,0 L-6,34Z" fill={K.yellow} stroke="#000" strokeWidth={6} strokeLinejoin="round" />
           </g>
         </g>
@@ -389,7 +421,7 @@ const FxItem: React.FC<{fx: MapFx; f: number; cam: Cam; focus: string; seed: num
     case 'crack': {
       const u = Math.min(1, t / 14);
       return (
-        <g transform={`translate(${at[0]},${at[1]})`}>
+        <g transform={`translate(${at[0]},${at[1]}) scale(${FXK * 0.8})`}>
           {crackPaths(seed).map((d, i) => (
             <g key={i}>
               <path d={d} fill="none" stroke="#000" strokeWidth={11} strokeLinejoin="round" pathLength={1} strokeDasharray="1 1" strokeDashoffset={1 - u} />
@@ -451,21 +483,48 @@ const Labels: React.FC<{f: number; b: MapBeat; cam: Cam}> = ({f, b, cam}) => (
   </>
 );
 
+// text fit (owner 9 Nov: long text was cropped): safe box 960 px (60 px margin each side), <= 2 lines, font size from the
+// measured length (Anton advance widths in em read from public/fonts/anton.woff2 hmtx, +4 % slack, + the 18 px stroke);
+// sized to 1/1.1 of the box so the snap-in punch still has room, and the overshoot is capped so it never leaves the box
+const SAFE_W = 960;
+const STROKE = 18;
+const ANTON_EM: Record<string, number> = {' ': 0.234, A: 0.485, B: 0.479, C: 0.474, D: 0.493, E: 0.412, F: 0.399, G: 0.485, H: 0.499, I: 0.227, J: 0.466, K: 0.472, L: 0.397, M: 0.746, N: 0.498, O: 0.486, P: 0.472, Q: 0.494, R: 0.477, S: 0.461, T: 0.396, U: 0.474, V: 0.469, W: 0.712, X: 0.484, Y: 0.446, Z: 0.41, '1': 0.331, '#': 0.546, $: 0.462, '=': 0.311, '?': 0.492, '!': 0.229, ':': 0.242, "'": 0.214, '.': 0.229, ',': 0.236, '%': 1.057, '&': 0.52, '@': 0.864, '-': 0.311, '+': 0.355, '/': 0.405};
+const emWidth = (s: string) => [...s].reduce((w, ch) => w + (ANTON_EM[ch] ?? 0.5), 0) * 1.04;
+const fitText = (text: string): {lines: string[]; size: number; w: number} => {
+  const t = text.toUpperCase().trim().replace(/\s+/g, ' ');
+  const sizeFor = (ls: string[]) => Math.min(160, (SAFE_W / 1.1 - STROKE) / Math.max(...ls.map(emWidth)));
+  let best = {lines: [t], size: sizeFor([t])};
+  if (best.size < 125) {
+    const ws = t.split(' ');
+    for (let j = 1; j < ws.length; j++) {
+      const ls = [ws.slice(0, j).join(' '), ws.slice(j).join(' ')];
+      const sz = Math.min(150, sizeFor(ls));
+      if (sz > best.size + 4) best = {lines: ls, size: sz};
+    }
+  }
+  const size = Math.max(56, Math.floor(best.size));
+  return {lines: best.lines, size, w: Math.max(...best.lines.map(emWidth)) * size + STROKE};
+};
 const BigText: React.FC<{f: number; b: MapBeat; i: number}> = ({f, b, i}) => {
+  const fit = useMemo(() => fitText(b.text ?? ''), [b.text]);
   if (!b.text) return null;
-  const n = b.text.length;
-  const size = n <= 10 ? 160 : n <= 18 ? 145 : 130;
-  const s = b.from === 0 ? 1 : interpolate(snap(f, b.from, 5), [0, 1], [1.35, 1]); // frame 0: fully shown already
+  const over = Math.max(1, Math.min(1.35, SAFE_W / fit.w)); // snap-in overshoot never exceeds the safe width
+  const s = b.from === 0 ? 1 : interpolate(snap(f, b.from, 5), [0, 1], [over, 1]); // frame 0: fully shown already
   return (
-    <div style={{position: 'absolute', left: 40, right: 40, top: 130, display: 'flex', justifyContent: 'center', transform: `scale(${s})`, transformOrigin: '50% 30%'}}>
-      <div style={{fontFamily: ANTON, fontSize: size, lineHeight: 1.02, textAlign: 'center', color: i % 2 ? K.white : K.yellow, WebkitTextStroke: '18px #000', paintOrder: 'stroke fill', textShadow: '0 10px 0 rgba(0,0,0,0.55)', textTransform: 'uppercase'}}>
-        {b.text}
-      </div>
+    <div style={{position: 'absolute', left: 60, width: SAFE_W, top: 130, display: 'flex', flexDirection: 'column', alignItems: 'center', transform: `scale(${s})`, transformOrigin: '50% 30%'}}>
+      {fit.lines.map((l, k) => (
+        <div key={k} style={{fontFamily: ANTON, fontSize: fit.size, lineHeight: 1.02, whiteSpace: 'nowrap', textAlign: 'center', color: i % 2 ? K.white : K.yellow, WebkitTextStroke: `${STROKE}px #000`, paintOrder: 'stroke fill', textShadow: '0 10px 0 rgba(0,0,0,0.55)'}}>
+          {l}
+        </div>
+      ))}
     </div>
   );
 };
 
 // ───────── Dave slot ─────────
+// owner 9 Nov: Dave 1.35x bigger (985 px square clip, was 730) - head top stays at y~1190 (lower 38 %), shins run off the bottom
+const DAVE = 985;
+const DAVE_TOP = 1190 - Math.round(DAVE * 0.067); // clip has ~6.7 % headroom above the head
 const POSES = ['talk', 'shock', 'point', 'laugh', 'shrug', 'cheer', 'think', 'worried'];
 const DaveSlot: React.FC<{plan: MapPlan}> = ({plan}) => {
   const f = useCurrentFrame();
@@ -477,8 +536,14 @@ const DaveSlot: React.FC<{plan: MapPlan}> = ({plan}) => {
     }
   }, []);
   const media = (pose: string): DaveMedia | null => {
+    const d = `${plan.id}/dave/${pose}`;
     const w = `${plan.id}/dave_${pose}.webm`;
     const p = `${plan.id}/dave_${pose}.png`;
+    if (files.has(`${d}/0001.png`)) {
+      let n = 1;
+      while (files.has(`${d}/${String(n + 1).padStart(4, '0')}.png`)) n++;
+      return {src: d, kind: 'seq', n};
+    }
     if (files.has(w)) return {src: w, kind: 'webm', len: plan.dave?.[pose]?.len};
     if (files.has(p)) return {src: p, kind: 'png'};
     return files.size ? null : plan.dave?.[pose] ?? null;
@@ -500,8 +565,10 @@ const DaveSlot: React.FC<{plan: MapPlan}> = ({plan}) => {
         const st: React.CSSProperties = {width: '100%', height: '100%', objectFit: 'contain', objectPosition: '50% 100%'};
         return (
           <Sequence key={i} from={r.from} durationInFrames={Math.max(1, r.to - r.from)} layout="none">
-            <div style={{position: 'absolute', left: 140, width: 800, top: 1190, height: 730, transform: `scale(${s})`, transformOrigin: '50% 100%'}}>
-              {m.kind === 'webm' ? (
+            <div style={{position: 'absolute', left: (W - DAVE) / 2, width: DAVE, top: DAVE_TOP, height: DAVE, transform: `scale(${s})`, transformOrigin: '50% 100%'}}>
+              {m.kind === 'seq' ? (
+                <Img src={staticFile(`${m.src}/${String((Math.floor((Math.max(0, t) * 24) / 30) % Math.max(1, m.n ?? 48)) + 1).padStart(4, '0')}.png`)} style={st} />
+              ) : m.kind === 'webm' ? (
                 <Loop durationInFrames={Math.max(10, m.len ?? 120)} layout="none">
                   <OffthreadVideo src={staticFile(m.src)} transparent muted style={st} />
                 </Loop>
@@ -523,6 +590,7 @@ export const MapShort: React.FC<{plan: MapPlan}> = ({plan}) => {
   let bi = 0;
   while (bi + 1 < plan.beats.length && f >= plan.beats[bi + 1].from) bi++;
   const b = plan.beats[bi];
+  const pb = bi > 0 && f - b.from < MOVE ? plan.beats[bi - 1] : undefined;
   const cam = cameraAt(f, segs);
   const tr = `translate(${FIT.cx} ${FIT.cy}) scale(${cam.k}) translate(${-cam.x} ${-cam.y})`;
   return (
@@ -533,15 +601,19 @@ export const MapShort: React.FC<{plan: MapPlan}> = ({plan}) => {
             <stop offset="55%" stopColor="#000" stopOpacity={0} />
             <stop offset="100%" stopColor="#000" stopOpacity={0.55} />
           </radialGradient>
+          <FxOutline />
         </defs>
         <g transform={tr}>
           <Land />
-          <Highlights f={f} b={b} cam={cam} />
+          {pb ? <Highlights f={f} b={pb} cam={cam} prev={b} out /> : null}
+          <Highlights f={f} b={b} cam={cam} prev={bi > 0 ? plan.beats[bi - 1] : undefined} />
         </g>
         <GoneMark f={f} b={b} cam={cam} />
-        {b.fx.filter((x) => f >= x.at && f < x.end).map((x, i) => (
-          <FxItem key={`${bi}-${i}`} fx={x} f={f} cam={cam} focus={b.focus} seed={bi * 10 + i} />
-        ))}
+        <g filter="url(#fxo)">
+          {b.fx.filter((x) => f >= x.at && f < x.end).map((x, i) => (
+            <FxItem key={`${bi}-${i}`} fx={x} f={f} cam={cam} focus={b.focus} seed={bi * 10 + i} />
+          ))}
+        </g>
         <rect width={W} height={H} fill="url(#mvig)" />
       </svg>
       <Labels f={f} b={b} cam={cam} />

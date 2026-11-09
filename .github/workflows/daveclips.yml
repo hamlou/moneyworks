@@ -2,7 +2,8 @@ name: daveclips
 run-name: daveclips ${{ inputs.poses || 'tools/DAVECLIPS' }}
 
 # Looping transparent Dave clips (blender/daveclips.py) for the map Short: one parallel job per pose (48 RGBA frames,
-# 1080x1080) → dave_<pose>.webm (VP9 + alpha) + dave_<pose>.png (middle frame) + grey QA sheet → artifact "daveclips"
+# 1080x1080) → dave_<pose>.webm (VP9 + alpha) + dave_<pose>.png (middle frame) + frames/<pose>/0001-0048.png (RGBA 540x540,
+# what MapShort plays) + grey QA sheet → artifact "daveclips"
 # + release ref/daveclips.zip. tools/DAVECLIPS: line 1 = poses, line 2 = "<samples> <engine>".
 on:
   push:
@@ -103,6 +104,10 @@ jobs:
             ffmpeg -v error -y -framerate 24 -i frames/${p}_%04d.png -c:v libvpx-vp9 -pix_fmt yuva420p -b:v 0 -crf 30 -auto-alt-ref 0 out/dave_$p.webm
             ffprobe -v error -show_entries stream_tags=alpha_mode -of default=nw=1 out/dave_$p.webm | grep -qi 'alpha_mode=1' || echo "::warning::dave_$p.webm has no alpha_mode tag"
             cp frames/${p}_0025.png out/dave_$p.png
+            # PNG sequence for MapShort (fast to decode vs VP9 alpha): frames/<pose>/0001.png … 0048.png, RGBA 540x540
+            mkdir -p out/frames/$p
+            ffmpeg -v error -y -start_number 1 -i frames/${p}_%04d.png -vf scale=760:760:flags=lanczos -pix_fmt rgba -compression_level 9 -start_number 1 out/frames/$p/%04d.png
+            n=$(ls out/frames/$p/*.png | wc -l); test "$n" -eq 48 || echo "::warning::frames/$p has $n png (want 48)"
             ffmpeg -v error -y -f lavfi -i color=c=0x808080:s=1080x1080:r=24 -framerate 24 -i frames/${p}_%04d.png \
               -filter_complex "[0][1]overlay=shortest=1,drawtext=text='$p %{n}':x=12:y=12:fontsize=48:fontcolor=yellow,select='not(mod(n\,4))',scale=360:-1,tile=4x3" \
               -frames:v 1 out/sheets/sheet_$p.jpg

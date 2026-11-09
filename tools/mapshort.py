@@ -186,8 +186,11 @@ def build(eid, fake=False):
     music = [x for x in music if x["to"] - x["from"] > 6]
     dave = {}
     for p in sorted(POSES):
-        w, g = Path(f"public/{eid}/dave_{p}.webm"), Path(f"public/{eid}/dave_{p}.png")
-        if w.exists():
+        w, g, d = Path(f"public/{eid}/dave_{p}.webm"), Path(f"public/{eid}/dave_{p}.png"), Path(f"public/{eid}/dave/{p}")
+        seq = sorted(d.glob("[0-9][0-9][0-9][0-9].png")) if d.is_dir() else []
+        if seq:  # PNG sequence (daveclips.zip frames/<pose>/) — fast to render, preferred over the VP9 webm
+            dave[p] = {"src": f"{eid}/dave/{p}", "kind": "seq", "n": len(seq)}
+        elif w.exists():
             dave[p] = {"src": f"{eid}/dave_{p}.webm", "kind": "webm", "len": probe_len(w)}
         elif g.exists():
             dave[p] = {"src": f"{eid}/dave_{p}.png", "kind": "png"}
