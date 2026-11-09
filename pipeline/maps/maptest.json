@@ -1,0 +1,12 @@
+{
+  "id": "maptest",
+  "title": "Map renderer test #shorts",
+  "beats": [
+    {"say": "What if the whole world just stopped trading with each other tomorrow?", "text": "WHAT IF TRADE STOPPED?",
+     "map": {"focus": "WORLD", "highlight": [], "style": "neutral"}, "fx": [], "dave": "think"},
+    {"say": "Mexico would lose billions of dollars that flow in from the north every single year", "text": "MEXICO LOSES BILLIONS",
+     "map": {"focus": "MEX", "highlight": ["MEX"], "style": "loss"}, "fx": [{"type": "money", "from": "USA", "to": "MEX", "on": "dollars"}], "dave": "shock"},
+    {"say": "but Brazil would suddenly feed half the planet with its grain", "text": "BRAZIL FEEDS THE WORLD",
+     "map": {"focus": "BRA", "highlight": ["BRA"], "style": "win"}, "fx": [{"type": "grain", "from": "BRA", "to": "CHN", "on": "grain"}], "dave": "cheer"}
+  ]
+}
