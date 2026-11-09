@@ -12,8 +12,8 @@ import {ISO3, ISO3_NAME, SHORT} from './mapIso';
 // plan = src/v6/maps/<id>.plan.json written by tools/mapshort.py build <id>
 
 export type MapStyle = 'gone' | 'loss' | 'win' | 'neutral';
-export type MapFx = {type: string; from?: string; to?: string; at: number; end: number};
-export type MapBeat = {from: number; to: number; say: string; text?: string; focus: string; highlight: string[]; style: MapStyle; dave?: string; fx: MapFx[]};
+export type MapFx = {type: string; from?: string | null; to?: string | null; at: number; end: number; word?: string | null; wf?: number};
+export type MapBeat = {from: number; to: number; cam?: number; say: string; text?: string; focus: string; highlight: string[]; style: MapStyle; dave?: string; fx: MapFx[]};
 export type DaveMedia = {src: string; kind: 'seq' | 'webm' | 'png'; len?: number; n?: number};
 export type MapPlan = {id: string; title?: string; w?: number; h?: number; frames: number; voice?: string; beats: MapBeat[]; music: MSeg[]; sfx: Cue[]; dave?: Record<string, DaveMedia>};
 
@@ -87,7 +87,7 @@ const segments = (beats: MapBeat[]): Seg[] => {
   const segs: Seg[] = [];
   beats.forEach((b, i) => {
     const key = (b.focus || 'WORLD').toUpperCase();
-    if (i === 0 || key !== (beats[i - 1].focus || 'WORLD').toUpperCase()) segs.push({from: b.from, i, cam: targetOf(key)});
+    if (i === 0 || key !== (beats[i - 1].focus || 'WORLD').toUpperCase()) segs.push({from: i === 0 ? 0 : b.cam ?? b.from, i, cam: targetOf(key)});
   });
   return segs;
 };
@@ -119,8 +119,8 @@ const Land = React.memo(() => (
 
 // cross-fade (owner 9 Nov): the new beat's highlight fades in from the START of the camera move while the old one fades out
 // over the same 0.6 s (MOVE) -> the map is never un-highlighted mid-move. Countries kept with the same style don't blink.
-const Highlights: React.FC<{f: number; b: MapBeat; cam: Cam; prev?: MapBeat; out?: boolean}> = ({f, b, cam, prev, out}) => {
-  const p = Math.min(1, Math.max(0, (f - (out ? b.to : b.from)) / MOVE));
+const Highlights: React.FC<{f: number; b: MapBeat; cam: Cam; start: number; prev?: MapBeat; out?: boolean}> = ({f, b, cam, start, prev, out}) => {
+  const p = Math.min(1, Math.max(0, (f - start) / MOVE));
   const kept = (iso: string) => !!prev && prev.style === b.style && prev.highlight.includes(iso);
   const k = (iso: string) => (out ? 1 - p : b.from === 0 || kept(iso) ? 1 : 1 - (1 - p) * (1 - p));
   const pulse = 0.7 + 0.3 * Math.sin(f / 5);
@@ -324,10 +324,25 @@ const crackPaths = (seed: number): string[] =>
     return d;
   });
 
-// owner 9 Nov: fx were far too small on a phone -> every shape FXK x bigger, offsets OFF x wider, bold dark outline + shadow
-// (filter #fxo), and every shape is kept inside the upper map area (FX_BOX: under the big text, above Dave)
+// fx size (owner 9 Nov, v2 -> v3): "not bigger than the country you are talking about". Each fx group is scaled by z so the
+// whole group (EXT = its extent at z = 1, offsets x U) fits in FX_FILL of its country's PROJECTED box at the current zoom;
+// z <= FXK (the v2 size), and z >= 40 px / icon so tiny countries still read. Arcs: travelling icons sized from the
+// destination country. Bold dark outline + shadow (filter #fxo); everything kept inside FX_BOX (under the text, above Dave).
 const FXK = 2.7;
-const OFF = 2;
+const U = 0.75; // offset spread per unit of z (v2: 2 px at z 2.7)
+const FX_FILL = 0.7;
+const ICON_MIN = 40;
+const EXT: Record<string, {w: number; h: number; icon: number}> = {
+  oil: {w: 250, h: 190, icon: 130}, grain: {w: 260, h: 250, icon: 85}, food: {w: 260, h: 250, icon: 85}, money: {w: 320, h: 220, icon: 76},
+  ship: {w: 150, h: 120, icon: 140}, plane: {w: 290, h: 190, icon: 96}, chip: {w: 270, h: 230, icon: 76}, medicine: {w: 260, h: 220, icon: 92},
+  factory: {w: 250, h: 220, icon: 140}, fire: {w: 230, h: 200, icon: 52}, arrow: {w: 200, h: 100, icon: 80}, crack: {w: 330, h: 280, icon: 150},
+};
+const onScreen = (cam: Cam, c: Country) => ({w: Math.abs(c.b[1][0] - c.b[0][0]) * cam.k, h: Math.abs(c.b[1][1] - c.b[0][1]) * cam.k});
+const zFit = (cam: Cam, c: Country | undefined, w: number, h: number, icon: number): number => {
+  if (!c) return FXK * 0.5;
+  const sc = onScreen(cam, c);
+  return Math.max(ICON_MIN / icon, Math.min(FXK, (FX_FILL * sc.w) / w, (FX_FILL * sc.h) / h));
+};
 const FX_BOX = {x0: 110, x1: 970, y0: 430, y1: 1110};
 const clampFx = (p: Pt): Pt => [Math.max(FX_BOX.x0, Math.min(FX_BOX.x1, p[0])), Math.max(FX_BOX.y0, Math.min(FX_BOX.y1, p[1]))];
 const FxOutline: React.FC = () => (
@@ -356,15 +371,18 @@ const FxItem: React.FC<{fx: MapFx; f: number; cam: Cam; focus: string; seed: num
   const at0: Pt = A ? toScreen(cam, A.c) : [FIT.cx, FIT.cy];
   const arc = A && B && A.iso !== B.iso ? arcPts(cam, A.ll, B.ll) : null;
   const at: Pt = clampFx(at0);
-  const o = (dx: number, dy: number): Pt => [at[0] + dx * OFF, at[1] + dy * OFF];
-  const G = (p0: Pt, s: number, ch: React.ReactNode, rot = 0, k?: React.Key) => {
+  const ext = EXT[fx.type] ?? {w: 250, h: 220, icon: 90};
+  const z = zFit(cam, A, ext.w, ext.h, ext.icon); // group around the country
+  const zT = zFit(cam, B ?? A, ext.icon, ext.icon, ext.icon); // one travelling icon, sized from the destination
+  const o = (dx: number, dy: number): Pt => [at[0] + dx * z * U, at[1] + dy * z * U];
+  const G = (p0: Pt, s: number, ch: React.ReactNode, rot = 0, k?: React.Key, zz = z) => {
     const p = clampFx(p0);
-    return <g key={k} transform={`translate(${p[0].toFixed(1)},${p[1].toFixed(1)}) rotate(${rot.toFixed(1)}) scale(${(s * FXK).toFixed(3)})`}>{ch}</g>;
+    return <g key={k} transform={`translate(${p[0].toFixed(1)},${p[1].toFixed(1)}) rotate(${rot.toFixed(1)}) scale(${(s * zz).toFixed(3)})`}>{ch}</g>;
   };
   const travel = (u: number, s: number, ch: React.ReactNode, k?: React.Key, rot = true) => {
     const {p, ang} = along(arc!, u);
     const flip = Math.abs(ang) > 90;
-    return G(p, s, flip ? <g transform="scale(-1,1)">{ch}</g> : ch, rot ? (flip ? ang - 180 : ang) : 0, k);
+    return G(p, s, flip ? <g transform="scale(-1,1)">{ch}</g> : ch, rot ? (flip ? ang - 180 : ang) : 0, k, zT);
   };
   const trail = arc && (
     <polyline points={arc.map((p) => p.join(',')).join(' ')} fill="none" stroke="rgba(255,255,255,0.75)" strokeWidth={4} strokeDasharray="10 12" strokeDashoffset={-f * 2} strokeLinecap="round" />
@@ -404,15 +422,16 @@ const FxItem: React.FC<{fx: MapFx; f: number; cam: Cam; focus: string; seed: num
       return <g>{ring(5, 110, seed).map((q, i) => G(o(q[0], q[1]), pop(t, i * 3) * (0.7 + random(`fs${seed}${i}`) * 0.5), <Flame t={t} seed={i} />, 0, i))}</g>;
     case 'arrow': {
       const pts = arc ?? [o(-200, 60), at];
+      const za = arc ? zT : z;
       const u = Math.min(1, t / 16);
       const L = pts.length;
       const cut = pts.slice(0, Math.max(2, Math.ceil(u * (L - 1)) + 1));
       const tip = along(pts, u);
       return (
         <g>
-          <polyline points={cut.map((p) => p.join(',')).join(' ')} fill="none" stroke="#000" strokeWidth={56} strokeLinecap="round" strokeLinejoin="round" />
-          <polyline points={cut.map((p) => p.join(',')).join(' ')} fill="none" stroke={K.yellow} strokeWidth={34} strokeLinecap="round" strokeLinejoin="round" />
-          <g transform={`translate(${tip.p[0]},${tip.p[1]}) rotate(${tip.ang}) scale(2)`}>
+          <polyline points={cut.map((p) => p.join(',')).join(' ')} fill="none" stroke="#000" strokeWidth={21 * za} strokeLinecap="round" strokeLinejoin="round" />
+          <polyline points={cut.map((p) => p.join(',')).join(' ')} fill="none" stroke={K.yellow} strokeWidth={13 * za} strokeLinecap="round" strokeLinejoin="round" />
+          <g transform={`translate(${tip.p[0]},${tip.p[1]}) rotate(${tip.ang}) scale(${0.75 * za})`}>
             <path d="M-6,-34 L40,0 L-6,34Z" fill={K.yellow} stroke="#000" strokeWidth={6} strokeLinejoin="round" />
           </g>
         </g>
@@ -421,7 +440,7 @@ const FxItem: React.FC<{fx: MapFx; f: number; cam: Cam; focus: string; seed: num
     case 'crack': {
       const u = Math.min(1, t / 14);
       return (
-        <g transform={`translate(${at[0]},${at[1]}) scale(${FXK * 0.8})`}>
+        <g transform={`translate(${at[0]},${at[1]}) scale(${0.8 * z})`}>
           {crackPaths(seed).map((d, i) => (
             <g key={i}>
               <path d={d} fill="none" stroke="#000" strokeWidth={11} strokeLinejoin="round" pathLength={1} strokeDasharray="1 1" strokeDashoffset={1 - u} />
@@ -437,13 +456,13 @@ const FxItem: React.FC<{fx: MapFx; f: number; cam: Cam; focus: string; seed: num
 };
 
 // "missing" crack on gone countries: automatic, on top of any fx
-const GoneMark: React.FC<{f: number; b: MapBeat; cam: Cam}> = ({f, b, cam}) => (
+const GoneMark: React.FC<{f: number; b: MapBeat; cam: Cam; start: number}> = ({f, b, cam, start}) => (
   <>
     {b.style === 'gone' &&
       b.highlight.map((iso, k) => {
         const c = country(iso);
         if (!c) return null;
-        const t = b.from === 0 ? 30 : f - b.from;
+        const t = b.from === 0 ? 30 : f - start;
         const u = Math.min(1, Math.max(0, (t - 8) / 14));
         const [x, y] = toScreen(cam, c.c);
         return (
@@ -461,7 +480,7 @@ const GoneMark: React.FC<{f: number; b: MapBeat; cam: Cam}> = ({f, b, cam}) => (
   </>
 );
 
-const Labels: React.FC<{f: number; b: MapBeat; cam: Cam}> = ({f, b, cam}) => (
+const Labels: React.FC<{f: number; b: MapBeat; cam: Cam; start: number}> = ({f, b, cam, start}) => (
   <>
     {b.highlight.slice(0, 3).map((iso, i) => {
       const c = country(iso);
@@ -472,7 +491,7 @@ const Labels: React.FC<{f: number; b: MapBeat; cam: Cam}> = ({f, b, cam}) => (
       let y = Math.min(y1 + 50, 1150);
       if (y1 + 50 > 1150) y = Math.max(y0 - 50, 470);
       const x = Math.max(200, Math.min(880, (x0 + x1) / 2)) + i * 0;
-      const s = b.from === 0 ? 1 : pop(f - b.from, 4 + i * 3);
+      const s = b.from === 0 ? 1 : pop(f - start, 4 + i * 3);
       const fg = b.style === 'neutral' || b.style === 'win' ? '#111' : '#fff';
       return (
         <div key={iso} style={{position: 'absolute', left: x, top: y + i * 80, transform: `translate(-50%,-50%) scale(${s})`, background: PILL[b.style], color: fg, fontFamily: UI, fontWeight: 700, fontSize: 46, padding: '8px 30px', borderRadius: 999, border: '4px solid #000', boxShadow: '0 8px 20px rgba(0,0,0,0.5)', whiteSpace: 'nowrap', letterSpacing: 1}}>
@@ -525,7 +544,7 @@ const BigText: React.FC<{f: number; b: MapBeat; i: number}> = ({f, b, i}) => {
 // owner 9 Nov: Dave 1.35x bigger (985 px square clip, was 730) - head top stays at y~1190 (lower 38 %), shins run off the bottom
 const DAVE = 985;
 const DAVE_TOP = 1190 - Math.round(DAVE * 0.067); // clip has ~6.7 % headroom above the head
-const POSES = ['talk', 'shock', 'point', 'laugh', 'shrug', 'cheer', 'think', 'worried'];
+const POSES = ['talk', 'shock', 'point', 'laugh', 'shrug', 'cheer', 'worried']; // 'think' banned (owner 9 Nov: hand over face) → talk
 const DaveSlot: React.FC<{plan: MapPlan}> = ({plan}) => {
   const f = useCurrentFrame();
   const files = useMemo(() => {
@@ -590,7 +609,12 @@ export const MapShort: React.FC<{plan: MapPlan}> = ({plan}) => {
   let bi = 0;
   while (bi + 1 < plan.beats.length && f >= plan.beats[bi + 1].from) bi++;
   const b = plan.beats[bi];
-  const pb = bi > 0 && f - b.from < MOVE ? plan.beats[bi - 1] : undefined;
+  // map layer (highlight/labels/missing stamp) switches when the camera move starts (beat.cam = country name - 0.45 s)
+  const camAt = (i: number) => (i === 0 ? 0 : plan.beats[i].cam ?? plan.beats[i].from);
+  let mi = 0;
+  while (mi + 1 < plan.beats.length && f >= camAt(mi + 1)) mi++;
+  const mb = plan.beats[mi];
+  const pb = mi > 0 && f - camAt(mi) < MOVE ? plan.beats[mi - 1] : undefined;
   const cam = cameraAt(f, segs);
   const tr = `translate(${FIT.cx} ${FIT.cy}) scale(${cam.k}) translate(${-cam.x} ${-cam.y})`;
   return (
@@ -605,10 +629,10 @@ export const MapShort: React.FC<{plan: MapPlan}> = ({plan}) => {
         </defs>
         <g transform={tr}>
           <Land />
-          {pb ? <Highlights f={f} b={pb} cam={cam} prev={b} out /> : null}
-          <Highlights f={f} b={b} cam={cam} prev={bi > 0 ? plan.beats[bi - 1] : undefined} />
+          {pb ? <Highlights f={f} b={pb} cam={cam} start={camAt(mi)} prev={mb} out /> : null}
+          <Highlights f={f} b={mb} cam={cam} start={camAt(mi)} prev={mi > 0 ? plan.beats[mi - 1] : undefined} />
         </g>
-        <GoneMark f={f} b={b} cam={cam} />
+        <GoneMark f={f} b={mb} cam={cam} start={camAt(mi)} />
         <g filter="url(#fxo)">
           {b.fx.filter((x) => f >= x.at && f < x.end).map((x, i) => (
             <FxItem key={`${bi}-${i}`} fx={x} f={f} cam={cam} focus={b.focus} seed={bi * 10 + i} />
@@ -616,7 +640,7 @@ export const MapShort: React.FC<{plan: MapPlan}> = ({plan}) => {
         </g>
         <rect width={W} height={H} fill="url(#mvig)" />
       </svg>
-      <Labels f={f} b={b} cam={cam} />
+      <Labels f={f} b={mb} cam={cam} start={camAt(mi)} />
       <AbsoluteFill style={{background: 'linear-gradient(180deg, rgba(0,0,0,0) 62%, rgba(0,0,0,0.6) 100%)'}} />
       <DaveSlot plan={plan} />
       <BigText f={f} b={b} i={bi} />

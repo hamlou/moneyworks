@@ -55,3 +55,7 @@
   (free-licence photo: Wikimedia Commons public domain / CC BY with credit, or official .gov photo). Never a generic scene under a specific claim.
 - Dave ALWAYS wears the red hoodie in Shorts. No outfit changes.
 - Dave's movement must be clean: no floating, no limbs through the body, no camera angle that makes him look like he flies.
+- Dave poses allowed in Shorts: talk, point, shrug, worried ONLY. think/shock/cheer/laugh put a hand into the head or body → BANNED
+  [usa30 v2, owner 9 Nov: "wrong hand position… always doing that"].
+- FX icons never bigger than the country they sit on (≤ 70 % of its on-screen size) and they hit ON the spoken word (`py tools/mapshort.py sync <id>` = 0 frames off).
+- The video must never end before the voice: build stops if audio > video (usa30 v2 lost its last line to a stale timing cache).

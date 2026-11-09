@@ -34,7 +34,7 @@ jobs:
       - id: p
         run: |
           POSES="${{ inputs.poses }}"; POSES=${POSES:-$(sed -n 1p tools/DAVECLIPS)}
-          POSES=${POSES:-talk shock point laugh shrug cheer think worried}
+          POSES=${POSES:-talk shock point laugh shrug cheer worried}
           SAMPLES="${{ inputs.samples }}"; SAMPLES=${SAMPLES:-$(sed -n 2p tools/DAVECLIPS | awk '{print $1}')}
           ENGINE="${{ inputs.engine }}"; ENGINE=${ENGINE:-$(sed -n 2p tools/DAVECLIPS | awk '{print $2}')}
           echo "poses=$(echo $POSES | python3 -c 'import sys,json; print(json.dumps(sys.stdin.read().split()))')" >> $GITHUB_OUTPUT
