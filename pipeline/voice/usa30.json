@@ -1,0 +1,854 @@
+{
+ "fps": 30,
+ "total": 44.062,
+ "hash": "6850e40bde7f6bd1",
+ "chapters": [],
+ "beats": [
+  {
+   "id": "b01",
+   "text": "What if the USA disappeared for thirty days?",
+   "start": 0.08,
+   "end": 2.24,
+   "words": [
+    {
+     "text": "What",
+     "start": 0.08,
+     "end": 0.26
+    },
+    {
+     "text": "if",
+     "start": 0.26,
+     "end": 0.44
+    },
+    {
+     "text": "the",
+     "start": 0.44,
+     "end": 0.6
+    },
+    {
+     "text": "USA",
+     "start": 0.6,
+     "end": 0.82
+    },
+    {
+     "text": "disappeared",
+     "start": 0.82,
+     "end": 1.28
+    },
+    {
+     "text": "for",
+     "start": 1.28,
+     "end": 1.74
+    },
+    {
+     "text": "thirty",
+     "start": 1.74,
+     "end": 1.96
+    },
+    {
+     "text": "days?",
+     "start": 1.96,
+     "end": 2.24
+    }
+   ]
+  },
+  {
+   "id": "b02",
+   "text": "Mexico gets hit first because eight out of ten things it sells go to the USA.",
+   "start": 3.000875,
+   "end": 6.020875,
+   "words": [
+    {
+     "text": "Mexico",
+     "start": 3.001,
+     "end": 3.261
+    },
+    {
+     "text": "gets",
+     "start": 3.261,
+     "end": 3.521
+    },
+    {
+     "text": "hit",
+     "start": 3.521,
+     "end": 3.641
+    },
+    {
+     "text": "first",
+     "start": 3.641,
+     "end": 3.861
+    },
+    {
+     "text": "because",
+     "start": 3.861,
+     "end": 4.161
+    },
+    {
+     "text": "eight",
+     "start": 4.161,
+     "end": 4.421
+    },
+    {
+     "text": "out",
+     "start": 4.421,
+     "end": 4.541
+    },
+    {
+     "text": "of",
+     "start": 4.541,
+     "end": 4.621
+    },
+    {
+     "text": "ten",
+     "start": 4.621,
+     "end": 4.781
+    },
+    {
+     "text": "things",
+     "start": 4.781,
+     "end": 5.061
+    },
+    {
+     "text": "it",
+     "start": 5.061,
+     "end": 5.161
+    },
+    {
+     "text": "sells",
+     "start": 5.161,
+     "end": 5.381
+    },
+    {
+     "text": "go",
+     "start": 5.381,
+     "end": 5.661
+    },
+    {
+     "text": "to",
+     "start": 5.661,
+     "end": 5.761
+    },
+    {
+     "text": "the",
+     "start": 5.761,
+     "end": 5.841
+    },
+    {
+     "text": "USA.",
+     "start": 5.841,
+     "end": 6.021
+    }
+   ]
+  },
+  {
+   "id": "b03",
+   "text": "Canada too because three out of four of its sales go there.",
+   "start": 6.8810625,
+   "end": 9.5010625,
+   "words": [
+    {
+     "text": "Canada",
+     "start": 6.881,
+     "end": 7.081
+    },
+    {
+     "text": "too",
+     "start": 7.081,
+     "end": 7.381
+    },
+    {
+     "text": "because",
+     "start": 7.381,
+     "end": 7.781
+    },
+    {
+     "text": "three",
+     "start": 7.781,
+     "end": 8.161
+    },
+    {
+     "text": "out",
+     "start": 8.161,
+     "end": 8.341
+    },
+    {
+     "text": "of",
+     "start": 8.341,
+     "end": 8.421
+    },
+    {
+     "text": "four",
+     "start": 8.421,
+     "end": 8.621
+    },
+    {
+     "text": "of",
+     "start": 8.621,
+     "end": 8.741
+    },
+    {
+     "text": "its",
+     "start": 8.741,
+     "end": 8.801
+    },
+    {
+     "text": "sales",
+     "start": 8.801,
+     "end": 9.001
+    },
+    {
+     "text": "go",
+     "start": 9.001,
+     "end": 9.301
+    },
+    {
+     "text": "there.",
+     "start": 9.301,
+     "end": 9.501
+    }
+   ]
+  },
+  {
+   "id": "b04",
+   "text": "Worse Mexico loses food too because almost all the corn it buys abroad is American.",
+   "start": 10.034708333333333,
+   "end": 13.734708333333334,
+   "words": [
+    {
+     "text": "Worse",
+     "start": 10.035,
+     "end": 10.175
+    },
+    {
+     "text": "Mexico",
+     "start": 10.295,
+     "end": 10.555
+    },
+    {
+     "text": "loses",
+     "start": 10.555,
+     "end": 10.915
+    },
+    {
+     "text": "food",
+     "start": 10.915,
+     "end": 11.155
+    },
+    {
+     "text": "too",
+     "start": 11.355,
+     "end": 11.455
+    },
+    {
+     "text": "because",
+     "start": 11.595,
+     "end": 11.775
+    },
+    {
+     "text": "almost",
+     "start": 11.775,
+     "end": 12.155
+    },
+    {
+     "text": "all",
+     "start": 12.155,
+     "end": 12.435
+    },
+    {
+     "text": "the",
+     "start": 12.435,
+     "end": 12.575
+    },
+    {
+     "text": "corn",
+     "start": 12.575,
+     "end": 12.755
+    },
+    {
+     "text": "it",
+     "start": 12.755,
+     "end": 12.875
+    },
+    {
+     "text": "buys",
+     "start": 12.875,
+     "end": 12.995
+    },
+    {
+     "text": "abroad",
+     "start": 12.995,
+     "end": 13.355
+    },
+    {
+     "text": "is",
+     "start": 13.355,
+     "end": 13.515
+    },
+    {
+     "text": "American.",
+     "start": 13.515,
+     "end": 13.735
+    }
+   ]
+  },
+  {
+   "id": "b05",
+   "text": "Then gas jumps everywhere because the USA pumps more oil than any other country.",
+   "start": 14.622145833333333,
+   "end": 18.402145833333332,
+   "words": [
+    {
+     "text": "Then",
+     "start": 14.622,
+     "end": 14.902
+    },
+    {
+     "text": "gas",
+     "start": 15.042,
+     "end": 15.182
+    },
+    {
+     "text": "jumps",
+     "start": 15.182,
+     "end": 15.442
+    },
+    {
+     "text": "everywhere",
+     "start": 15.442,
+     "end": 15.842
+    },
+    {
+     "text": "because",
+     "start": 15.842,
+     "end": 16.282
+    },
+    {
+     "text": "the",
+     "start": 16.282,
+     "end": 16.422
+    },
+    {
+     "text": "USA",
+     "start": 16.422,
+     "end": 16.622
+    },
+    {
+     "text": "pumps",
+     "start": 16.622,
+     "end": 17.002
+    },
+    {
+     "text": "more",
+     "start": 17.002,
+     "end": 17.262
+    },
+    {
+     "text": "oil",
+     "start": 17.262,
+     "end": 17.502
+    },
+    {
+     "text": "than",
+     "start": 17.502,
+     "end": 17.762
+    },
+    {
+     "text": "any",
+     "start": 17.762,
+     "end": 17.942
+    },
+    {
+     "text": "other",
+     "start": 17.942,
+     "end": 18.142
+    },
+    {
+     "text": "country.",
+     "start": 18.142,
+     "end": 18.402
+    }
+   ]
+  },
+  {
+   "id": "b06",
+   "text": "So countries lose savings because over half the money they save is American dollars.",
+   "start": 19.066916666666668,
+   "end": 22.82691666666667,
+   "words": [
+    {
+     "text": "So",
+     "start": 19.067,
+     "end": 19.287
+    },
+    {
+     "text": "countries",
+     "start": 19.487,
+     "end": 19.687
+    },
+    {
+     "text": "lose",
+     "start": 19.687,
+     "end": 19.947
+    },
+    {
+     "text": "savings",
+     "start": 19.947,
+     "end": 20.247
+    },
+    {
+     "text": "because",
+     "start": 20.247,
+     "end": 20.607
+    },
+    {
+     "text": "over",
+     "start": 20.607,
+     "end": 20.887
+    },
+    {
+     "text": "half",
+     "start": 20.887,
+     "end": 21.127
+    },
+    {
+     "text": "the",
+     "start": 21.127,
+     "end": 21.307
+    },
+    {
+     "text": "money",
+     "start": 21.307,
+     "end": 21.467
+    },
+    {
+     "text": "they",
+     "start": 21.467,
+     "end": 21.627
+    },
+    {
+     "text": "save",
+     "start": 21.627,
+     "end": 21.867
+    },
+    {
+     "text": "is",
+     "start": 21.867,
+     "end": 22.107
+    },
+    {
+     "text": "American",
+     "start": 22.107,
+     "end": 22.367
+    },
+    {
+     "text": "dollars.",
+     "start": 22.367,
+     "end": 22.827
+    }
+   ]
+  },
+  {
+   "id": "b07",
+   "text": "Yet some countries love this.",
+   "start": 23.519854166666665,
+   "end": 24.699854166666665,
+   "words": [
+    {
+     "text": "Yet",
+     "start": 23.52,
+     "end": 23.68
+    },
+    {
+     "text": "some",
+     "start": 23.68,
+     "end": 23.9
+    },
+    {
+     "text": "countries",
+     "start": 23.9,
+     "end": 24.2
+    },
+    {
+     "text": "love",
+     "start": 24.2,
+     "end": 24.46
+    },
+    {
+     "text": "this.",
+     "start": 24.46,
+     "end": 24.7
+    }
+   ]
+  },
+  {
+   "id": "b08",
+   "text": "Brazil wins because it already ships more soybeans than anyone.",
+   "start": 25.3145625,
+   "end": 28.1345625,
+   "words": [
+    {
+     "text": "Brazil",
+     "start": 25.315,
+     "end": 25.515
+    },
+    {
+     "text": "wins",
+     "start": 25.515,
+     "end": 25.875
+    },
+    {
+     "text": "because",
+     "start": 25.875,
+     "end": 26.235
+    },
+    {
+     "text": "it",
+     "start": 26.235,
+     "end": 26.395
+    },
+    {
+     "text": "already",
+     "start": 26.395,
+     "end": 26.635
+    },
+    {
+     "text": "ships",
+     "start": 26.635,
+     "end": 26.955
+    },
+    {
+     "text": "more",
+     "start": 26.955,
+     "end": 27.195
+    },
+    {
+     "text": "soybeans",
+     "start": 27.195,
+     "end": 27.595
+    },
+    {
+     "text": "than",
+     "start": 27.595,
+     "end": 27.815
+    },
+    {
+     "text": "anyone.",
+     "start": 27.815,
+     "end": 28.135
+    }
+   ]
+  },
+  {
+   "id": "b09",
+   "text": "Saudi Arabia and Russia win because every barrel they sell is suddenly worth more.",
+   "start": 28.67175,
+   "end": 32.35175,
+   "words": [
+    {
+     "text": "Saudi",
+     "start": 28.672,
+     "end": 28.812
+    },
+    {
+     "text": "Arabia",
+     "start": 28.812,
+     "end": 29.172
+    },
+    {
+     "text": "and",
+     "start": 29.172,
+     "end": 29.412
+    },
+    {
+     "text": "Russia",
+     "start": 29.412,
+     "end": 29.572
+    },
+    {
+     "text": "win",
+     "start": 29.572,
+     "end": 29.872
+    },
+    {
+     "text": "because",
+     "start": 29.872,
+     "end": 30.252
+    },
+    {
+     "text": "every",
+     "start": 30.252,
+     "end": 30.492
+    },
+    {
+     "text": "barrel",
+     "start": 30.492,
+     "end": 30.792
+    },
+    {
+     "text": "they",
+     "start": 30.792,
+     "end": 31.032
+    },
+    {
+     "text": "sell",
+     "start": 31.032,
+     "end": 31.232
+    },
+    {
+     "text": "is",
+     "start": 31.232,
+     "end": 31.492
+    },
+    {
+     "text": "suddenly",
+     "start": 31.492,
+     "end": 31.772
+    },
+    {
+     "text": "worth",
+     "start": 31.772,
+     "end": 32.072
+    },
+    {
+     "text": "more.",
+     "start": 32.072,
+     "end": 32.352
+    }
+   ]
+  },
+  {
+   "id": "b10",
+   "text": "So Europe steps up because the euro is already the number two savings money.",
+   "start": 32.955666666666666,
+   "end": 36.37566666666667,
+   "words": [
+    {
+     "text": "So",
+     "start": 32.956,
+     "end": 33.076
+    },
+    {
+     "text": "Europe",
+     "start": 33.076,
+     "end": 33.256
+    },
+    {
+     "text": "steps",
+     "start": 33.256,
+     "end": 33.556
+    },
+    {
+     "text": "up",
+     "start": 33.556,
+     "end": 33.856
+    },
+    {
+     "text": "because",
+     "start": 33.856,
+     "end": 34.236
+    },
+    {
+     "text": "the",
+     "start": 34.236,
+     "end": 34.396
+    },
+    {
+     "text": "euro",
+     "start": 34.396,
+     "end": 34.576
+    },
+    {
+     "text": "is",
+     "start": 34.576,
+     "end": 34.816
+    },
+    {
+     "text": "already",
+     "start": 34.816,
+     "end": 35.156
+    },
+    {
+     "text": "the",
+     "start": 35.156,
+     "end": 35.376
+    },
+    {
+     "text": "number",
+     "start": 35.376,
+     "end": 35.576
+    },
+    {
+     "text": "two",
+     "start": 35.576,
+     "end": 35.796
+    },
+    {
+     "text": "savings",
+     "start": 35.796,
+     "end": 36.076
+    },
+    {
+     "text": "money.",
+     "start": 36.076,
+     "end": 36.376
+    }
+   ]
+  },
+  {
+   "id": "b11",
+   "text": "But nobody wins for long because one in four dollars on Earth is made in the USA.",
+   "start": 36.9589375,
+   "end": 39.9609375,
+   "words": [
+    {
+     "text": "But",
+     "start": 36.959,
+     "end": 37.092
+    },
+    {
+     "text": "nobody",
+     "start": 37.106,
+     "end": 37.338
+    },
+    {
+     "text": "wins",
+     "start": 37.364,
+     "end": 37.53
+    },
+    {
+     "text": "for",
+     "start": 37.548,
+     "end": 37.681
+    },
+    {
+     "text": "long",
+     "start": 37.696,
+     "end": 37.861
+    },
+    {
+     "text": "because",
+     "start": 37.88,
+     "end": 38.145
+    },
+    {
+     "text": "one",
+     "start": 38.174,
+     "end": 38.307
+    },
+    {
+     "text": "in",
+     "start": 38.322,
+     "end": 38.421
+    },
+    {
+     "text": "four",
+     "start": 38.432,
+     "end": 38.598
+    },
+    {
+     "text": "dollars",
+     "start": 38.616,
+     "end": 38.881
+    },
+    {
+     "text": "on",
+     "start": 38.911,
+     "end": 39.01
+    },
+    {
+     "text": "Earth",
+     "start": 39.021,
+     "end": 39.22
+    },
+    {
+     "text": "is",
+     "start": 39.242,
+     "end": 39.342
+    },
+    {
+     "text": "made",
+     "start": 39.353,
+     "end": 39.519
+    },
+    {
+     "text": "in",
+     "start": 39.537,
+     "end": 39.636
+    },
+    {
+     "text": "the",
+     "start": 39.648,
+     "end": 39.78
+    },
+    {
+     "text": "USA.",
+     "start": 39.795,
+     "end": 39.961
+    }
+   ]
+  },
+  {
+   "id": "b12",
+   "text": "That is why every country on this map fears one question.",
+   "start": 41.1086875,
+   "end": 43.348687500000004,
+   "words": [
+    {
+     "text": "That",
+     "start": 41.109,
+     "end": 41.269
+    },
+    {
+     "text": "is",
+     "start": 41.269,
+     "end": 41.369
+    },
+    {
+     "text": "why",
+     "start": 41.369,
+     "end": 41.529
+    },
+    {
+     "text": "every",
+     "start": 41.529,
+     "end": 41.769
+    },
+    {
+     "text": "country",
+     "start": 41.769,
+     "end": 42.029
+    },
+    {
+     "text": "on",
+     "start": 42.029,
+     "end": 42.229
+    },
+    {
+     "text": "this",
+     "start": 42.229,
+     "end": 42.329
+    },
+    {
+     "text": "map",
+     "start": 42.329,
+     "end": 42.469
+    },
+    {
+     "text": "fears",
+     "start": 42.469,
+     "end": 42.729
+    },
+    {
+     "text": "one",
+     "start": 42.729,
+     "end": 42.989
+    },
+    {
+     "text": "question.",
+     "start": 42.989,
+     "end": 43.349
+    }
+   ]
+  }
+ ]
+}
