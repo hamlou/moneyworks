@@ -8,6 +8,8 @@ import {Ea1, EA1_FRAMES} from './Ea1';
 import {Ea1Full, EA1_FULL_FRAMES, Montage, MONT_FRAMES} from './Ea1Cold';
 import {autoComponent, Plan} from './Auto';
 import {AUTO_PLANS} from './autoEps';
+import {MapShort, MapPlan} from './MapShort';
+import {MAP_PLANS} from './mapEps';
 
 // AUTOPILOT episodes (tools/auto.py): one composition per plan, id Auto-<ep>
 const AUTO = (AUTO_PLANS as unknown as Plan[]).map((p) => ({p, C: autoComponent(p)}));
@@ -22,6 +24,9 @@ export const V6Root: React.FC = () => (
     <Composition id="Ea1Montage" component={Montage} width={1920} height={1080} fps={30} durationInFrames={MONT_FRAMES} />
     {AUTO.map(({p, C}) => (
       <Composition key={p.id} id={`Auto-${p.id}`} component={C} width={p.kind === 'short' ? p.w ?? 1080 : 1920} height={p.kind === 'short' ? p.h ?? 1920 : 1080} fps={30} durationInFrames={p.frames} />
+    ))}
+    {(MAP_PLANS as unknown as MapPlan[]).map((p) => (
+      <Composition key={`map-${p.id}`} id={`Map-${p.id}`} component={MapShort} defaultProps={{plan: p}} width={p.w ?? 1080} height={p.h ?? 1920} fps={30} durationInFrames={p.frames} />
     ))}
     <Composition id="Ea1Full" component={Ea1Full} width={1920} height={1080} fps={30} durationInFrames={EA1_FULL_FRAMES} />
   </>
