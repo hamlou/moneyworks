@@ -123,6 +123,10 @@
 | ea2s | What If He Runs For President? | 3D Dave scenes | news name | ? | ? | ? | ? | ? | ? | ? | need screenshots |
 | usa30 | What If The USA Disappeared For 30 Days? | animated MAP Short | world what-if | ~35 s | ~9 Nov | ~1.3k | ? | ? | ? | ? | need screenshots |
 | sal1 | What If Everyone Could See Your Salary? | SCENE story Short (2D Remotion, street + props, word-anchored cues) | social/money "your life", true study | 34.8 s | 10 Nov | — | — | — | — | — | pending 48 h (12 Nov) |
+| phone96 | What If Your Phone Charged You $1 Every Time You Checked It? | PHONE-SCREEN POV (whole Short = screen recording; no Dave) — src/v6/PhoneShort.tsx | your habit → money | 30.0 s | — | — | — | — | — | — | built 10 Nov, not posted |
+| prices46 | What If Prices Doubled Every Single Day? | TILT-SHIFT MINIATURE toy town, 12 fps time-lapse (Blender; no Dave) — blender/prices46.py + ClipShort | history shock (Hungary 1946) | 28.7 s | — | — | — | — | — | — | built 10 Nov, not posted |
+| bank70 | What If Every Bank Closed For Six Months? | INK SKETCHBOOK, Freestyle line boil + watercolour (Blender; no Dave) — blender/bank70.py + ClipShort | history shock (Ireland 1970) | 31.0 s | — | — | — | — | — | — | built 10 Nov, not posted |
+| mistake10 | What If Your Bank Sent You $10 Million By Mistake? | photoreal AI cinematic (Wan 2.2 on Modal free credit, fictional actor) | true news story | ~29 s | — | — | — | — | — | — | voice done; waits for owner's Modal login |
 
 ### 2. Notes per Short (KEEP / FIX for next video)
 #### sal1 (10 Nov) — scene story
@@ -133,7 +137,14 @@
 - FIX / watch: no Dave lip-sync close-up (Dave small in corner); some scenes 2.5–3 s (SHORTS.md [MUST] wants 1–2 s new image);
   4 QA rounds needed (tag sizes, overlaps) → start next scene Short with bigger text + safe zones from v4.
 - Check at 48 h: drop at 0:05 (Norway map) vs 0:15 (happiness gauges = the "science" part, risk of boring).
-#### usa30 (~9 Nov) — map Short
+#### phone96 / prices46 / bank70 (10 Nov) — 3 new styles, owner picked topics from 10 pitches
+- Owner liked: bank strike, $10M mistake, prices doubling daily, phone $1 tax. Rejected: Wörgl, Yap, Mizuho typo, Sodeto lottery, commute wage, Tulsa Remote.
+- Owner: Claude-coded animation looks like thousands of other channels → every Short a DIFFERENT non-code look (screen recording, Blender miniature, Blender ink). Dave optional.
+- KEEP: QA via the small `<comp>-qa` artifact (sheets + probe + loudness + silences); finals land in the private draft release `shorts-drafts`.
+- FIX learned: counters must roll from the first frame of a scene (a "0" held 1.5 s = dead air); lock-screen hooks need something new every ~0.3 s;
+  first Freestyle render of a Blender session has no lines (warm-up render); the Blender assemble job has no checkout (flags go via plan outputs);
+  sum of SFX peaked at 0 dB → SFX bus ×0.72; video tail +8 frames so audio never outlasts it.
+### usa30 (~9 Nov) — map Short
 - 1.3k views < S4 1.9k. Diagnosis missing → need Studio retention graph + viewed %.
 #### S4 Abdul — see SHORTS.md [FARM] §1 + analytics/LOG.md (stat before question −40 %, meta talk −15 %, dodged promise, 65+ audience).
 
