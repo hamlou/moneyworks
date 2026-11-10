@@ -45,7 +45,7 @@ jobs:
         env: {GH_TOKEN: "${{ github.token }}", COMP: "${{ inputs.comp }}"}
         shell: bash
         run: |
-          ID=${COMP#Auto-}; ID=${ID#Map-}
+          ID=${COMP#Auto-}; ID=${ID#Map-}; ID=${ID#Sal-}
           if [ -f public/$ID/DAVE_RUN ]; then
             gh run download $(cat public/$ID/DAVE_RUN) -n daveclips -D /tmp/dc
             mkdir -p public/$ID/dave && cp -r /tmp/dc/frames/* public/$ID/dave/

@@ -1,0 +1,535 @@
+{
+ "id": "sal1",
+ "w": 1080,
+ "h": 1920,
+ "frames": 1166,
+ "voice": null,
+ "beats": [
+  {
+   "id": "b01",
+   "from": 0,
+   "to": 87,
+   "say": "What if everyone on your street could see your salary?",
+   "text": "EVERYONE SEES YOUR SALARY?",
+   "scene": "street_hook",
+   "dave": "worried",
+   "fx": [],
+   "highlight": [],
+   "focus": "",
+   "style": "neutral"
+  },
+  {
+   "id": "b02",
+   "from": 87,
+   "to": 141,
+   "say": "Because in Norway they actually can.",
+   "text": "NORWAY REALLY DOES THIS",
+   "scene": "norway",
+   "dave": "point",
+   "fx": [],
+   "highlight": [],
+   "focus": "",
+   "style": "neutral"
+  },
+  {
+   "id": "b03",
+   "from": 141,
+   "to": 254,
+   "say": "You type any name into your phone and their income just pops up.",
+   "text": null,
+   "scene": "search",
+   "dave": "talk",
+   "fx": [],
+   "highlight": [],
+   "focus": "",
+   "style": "neutral"
+  },
+  {
+   "id": "b04",
+   "from": 254,
+   "to": 367,
+   "say": "So people looked up their boss and their neighbor and even their ex",
+   "text": null,
+   "scene": "lookup",
+   "dave": "shrug",
+   "fx": [],
+   "highlight": [],
+   "focus": "",
+   "style": "neutral"
+  },
+  {
+   "id": "b05",
+   "from": 367,
+   "to": 479,
+   "say": "sixteen million times in one year in a country of five million people.",
+   "text": null,
+   "scene": "count",
+   "dave": "point",
+   "fx": [],
+   "highlight": [],
+   "focus": "",
+   "style": "neutral"
+  },
+  {
+   "id": "b06",
+   "from": 479,
+   "to": 550,
+   "say": "But then scientists measured how happy everyone was",
+   "text": null,
+   "scene": "happy",
+   "dave": "talk",
+   "fx": [],
+   "highlight": [],
+   "focus": "",
+   "style": "neutral"
+  },
+  {
+   "id": "b07",
+   "from": 550,
+   "to": 672,
+   "say": "and nobody's paycheck changed yet the rich got happier and the poor got sadder.",
+   "text": null,
+   "scene": "happy",
+   "dave": "worried",
+   "fx": [],
+   "highlight": [],
+   "focus": "",
+   "style": "neutral"
+  },
+  {
+   "id": "b08",
+   "from": 672,
+   "to": 726,
+   "say": "So Norway changed one tiny rule.",
+   "text": null,
+   "scene": "rule",
+   "dave": "talk",
+   "fx": [],
+   "highlight": [],
+   "focus": "",
+   "style": "neutral"
+  },
+  {
+   "id": "b09",
+   "from": 726,
+   "to": 822,
+   "say": "Now when you look someone up they can see your name.",
+   "text": null,
+   "scene": "notif",
+   "dave": "worried",
+   "fx": [],
+   "highlight": [],
+   "focus": "",
+   "style": "neutral"
+  },
+  {
+   "id": "b10",
+   "from": 822,
+   "to": 909,
+   "say": "And the searches crashed from sixteen million to two million.",
+   "text": null,
+   "scene": "crash",
+   "dave": "point",
+   "fx": [],
+   "highlight": [],
+   "focus": "",
+   "style": "neutral"
+  },
+  {
+   "id": "b11",
+   "from": 909,
+   "to": 980,
+   "say": "Because people never wanted to know the number.",
+   "text": null,
+   "scene": "street_fade",
+   "dave": "shrug",
+   "fx": [],
+   "highlight": [],
+   "focus": "",
+   "style": "neutral"
+  },
+  {
+   "id": "b12",
+   "from": 980,
+   "to": 1051,
+   "say": "They just wanted to look without getting caught.",
+   "text": null,
+   "scene": "peek",
+   "dave": "talk",
+   "fx": [],
+   "highlight": [],
+   "focus": "",
+   "style": "neutral"
+  },
+  {
+   "id": "b13",
+   "from": 1051,
+   "to": 1166,
+   "say": "So next time you wonder what your neighbor makes just ask yourself",
+   "text": "EVERYONE SEES YOUR SALARY?",
+   "scene": "street_loop",
+   "dave": "point",
+   "fx": [],
+   "highlight": [],
+   "focus": "",
+   "style": "neutral"
+  }
+ ],
+ "cues": {
+  "hook_salary": 74,
+  "nor_norway": 103,
+  "nor_actually": 120,
+  "ph_type": 149,
+  "ph_pops": 233,
+  "lk_boss": 295,
+  "lk_neighbor": 320,
+  "lk_ex": 354,
+  "ct_sixteen": 367,
+  "ct_five": 450,
+  "hp_measured": 504,
+  "hp_paycheck": 566,
+  "hp_happier": 617,
+  "hp_sadder": 659,
+  "ru_rule": 713,
+  "nt_see": 792,
+  "cr_crashed": 846,
+  "fade_number": 967,
+  "pk_caught": 1038,
+  "loop_t0": 1058,
+  "loop_t1": 1067,
+  "loop_t2": 1083,
+  "loop_t3": 1109,
+  "loop_t4": 1117,
+  "loop_dave": 1142
+ },
+ "music": [
+  {
+   "src": "sneaky_snitch",
+   "from": 0,
+   "to": 367,
+   "v": 0.15,
+   "off": 0
+  },
+  {
+   "src": "investigations",
+   "from": 367,
+   "to": 479,
+   "v": 0.15,
+   "off": 0
+  },
+  {
+   "src": "thinking_music",
+   "from": 479,
+   "to": 672,
+   "v": 0.15,
+   "off": 0
+  },
+  {
+   "src": "hiding_your_reality",
+   "from": 672,
+   "to": 909,
+   "v": 0.15,
+   "off": 0
+  },
+  {
+   "src": "thinking_music",
+   "from": 909,
+   "to": 971,
+   "v": 0.15,
+   "off": 0
+  },
+  {
+   "src": "sneaky_snitch",
+   "from": 1051,
+   "to": 1166,
+   "v": 0.15,
+   "off": 0
+  },
+  {
+   "src": "sneaky_snitch",
+   "from": 1050,
+   "to": 1051,
+   "v": 0.12,
+   "off": 300
+  }
+ ],
+ "sfx": [
+  {
+   "at": 0,
+   "src": "ea1/k_stop",
+   "v": 0.45
+  },
+  {
+   "at": 0,
+   "src": "ea1/reply_pop",
+   "v": 0.4
+  },
+  {
+   "at": 4,
+   "src": "ea1/reply_pop",
+   "v": 0.35
+  },
+  {
+   "at": 8,
+   "src": "ea1/reply_pop",
+   "v": 0.35
+  },
+  {
+   "at": 12,
+   "src": "ea1/steps",
+   "v": 0.25
+  },
+  {
+   "at": 74,
+   "src": "ea1/k_point",
+   "v": 0.5
+  },
+  {
+   "at": 76,
+   "src": "ea1/roll33",
+   "v": 0.3
+  },
+  {
+   "at": 103,
+   "src": "ea1/chair_whoosh",
+   "v": 0.45
+  },
+  {
+   "at": 120,
+   "src": "ea1/k_slam",
+   "v": 0.55
+  },
+  {
+   "at": 149,
+   "src": "ea1/vote_tick",
+   "v": 0.3
+  },
+  {
+   "at": 152,
+   "src": "ea1/vote_tick",
+   "v": 0.28
+  },
+  {
+   "at": 155,
+   "src": "ea1/vote_tick",
+   "v": 0.3
+  },
+  {
+   "at": 158,
+   "src": "ea1/vote_tick",
+   "v": 0.28
+  },
+  {
+   "at": 161,
+   "src": "ea1/vote_tick",
+   "v": 0.3
+  },
+  {
+   "at": 164,
+   "src": "ea1/vote_tick",
+   "v": 0.28
+  },
+  {
+   "at": 233,
+   "src": "ea1/reply_pop",
+   "v": 0.55
+  },
+  {
+   "at": 235,
+   "src": "ea1/roll33",
+   "v": 0.35
+  },
+  {
+   "at": 295,
+   "src": "ea1/k_slam",
+   "v": 0.5
+  },
+  {
+   "at": 320,
+   "src": "ea1/k_slam",
+   "v": 0.5
+  },
+  {
+   "at": 354,
+   "src": "ea1/k_boom",
+   "v": 0.5
+  },
+  {
+   "at": 362,
+   "src": "ea1/fail",
+   "v": 0.4
+  },
+  {
+   "at": 367,
+   "src": "ea1/roll33",
+   "v": 0.45
+  },
+  {
+   "at": 401,
+   "src": "ea1/k_stop",
+   "v": 0.45
+  },
+  {
+   "at": 450,
+   "src": "ea1/k_point",
+   "v": 0.45
+  },
+  {
+   "at": 504,
+   "src": "ea1/scribble",
+   "v": 0.4
+  },
+  {
+   "at": 566,
+   "src": "ea1/stamp_un",
+   "v": 0.5
+  },
+  {
+   "at": 617,
+   "src": "ea1/check1",
+   "v": 0.45
+  },
+  {
+   "at": 621,
+   "src": "ea1/vote_tick",
+   "v": 0.3
+  },
+  {
+   "at": 625,
+   "src": "ea1/vote_tick",
+   "v": 0.3
+  },
+  {
+   "at": 659,
+   "src": "ea1/deflate",
+   "v": 0.5
+  },
+  {
+   "at": 672,
+   "src": "ea1/photo_slide",
+   "v": 0.4
+  },
+  {
+   "at": 675,
+   "src": "ea1/k_slam",
+   "v": 0.45
+  },
+  {
+   "at": 713,
+   "src": "ea1/gavel",
+   "v": 0.6
+  },
+  {
+   "at": 792,
+   "src": "ea1/notif",
+   "v": 0.6
+  },
+  {
+   "at": 794,
+   "src": "ea1/heart",
+   "v": 0.35
+  },
+  {
+   "at": 846,
+   "src": "ea1/deflate",
+   "v": 0.55
+  },
+  {
+   "at": 872,
+   "src": "ea1/k_boom",
+   "v": 0.5
+  },
+  {
+   "at": 967,
+   "src": "ea1/reply_pop",
+   "v": 0.35
+  },
+  {
+   "at": 970,
+   "src": "ea1/reply_pop",
+   "v": 0.3
+  },
+  {
+   "at": 973,
+   "src": "ea1/reply_pop",
+   "v": 0.3
+  },
+  {
+   "at": 976,
+   "src": "ea1/reply_pop",
+   "v": 0.3
+  },
+  {
+   "at": 979,
+   "src": "ea1/reply_pop",
+   "v": 0.3
+  },
+  {
+   "at": 980,
+   "src": "ea1/crickets",
+   "v": 0.3
+  },
+  {
+   "at": 1038,
+   "src": "ea1/k_flash",
+   "v": 0.6
+  },
+  {
+   "at": 1039,
+   "src": "ea1/claim_buzz",
+   "v": 0.45
+  },
+  {
+   "at": 1058,
+   "src": "ea1/reply_pop",
+   "v": 0.35
+  },
+  {
+   "at": 1067,
+   "src": "ea1/reply_pop",
+   "v": 0.35
+  },
+  {
+   "at": 1083,
+   "src": "ea1/reply_pop",
+   "v": 0.35
+  },
+  {
+   "at": 1109,
+   "src": "ea1/reply_pop",
+   "v": 0.35
+  },
+  {
+   "at": 1117,
+   "src": "ea1/reply_pop",
+   "v": 0.35
+  },
+  {
+   "at": 1142,
+   "src": "ea1/k_point",
+   "v": 0.45
+  }
+ ],
+ "dave": {
+  "point": {
+   "src": "usa30/dave_point.webm",
+   "kind": "webm",
+   "len": 60
+  },
+  "shrug": {
+   "src": "usa30/dave_shrug.webm",
+   "kind": "webm",
+   "len": 60
+  },
+  "talk": {
+   "src": "usa30/dave_talk.webm",
+   "kind": "webm",
+   "len": 60
+  },
+  "worried": {
+   "src": "usa30/dave_worried.webm",
+   "kind": "webm",
+   "len": 60
+  }
+ }
+}

@@ -524,7 +524,7 @@ const fitText = (text: string): {lines: string[]; size: number; w: number} => {
   const size = Math.max(56, Math.floor(best.size));
   return {lines: best.lines, size, w: Math.max(...best.lines.map(emWidth)) * size + STROKE};
 };
-const BigText: React.FC<{f: number; b: MapBeat; i: number}> = ({f, b, i}) => {
+export const BigText: React.FC<{f: number; b: MapBeat; i: number}> = ({f, b, i}) => {
   const fit = useMemo(() => fitText(b.text ?? ''), [b.text]);
   if (!b.text) return null;
   const over = Math.max(1, Math.min(1.35, SAFE_W / fit.w)); // snap-in overshoot never exceeds the safe width
@@ -545,7 +545,7 @@ const BigText: React.FC<{f: number; b: MapBeat; i: number}> = ({f, b, i}) => {
 const DAVE = 985;
 const DAVE_TOP = 1190 - Math.round(DAVE * 0.067); // clip has ~6.7 % headroom above the head
 const POSES = ['talk', 'shock', 'point', 'laugh', 'shrug', 'cheer', 'worried']; // 'think' banned (owner 9 Nov: hand over face) → talk
-const DaveSlot: React.FC<{plan: MapPlan}> = ({plan}) => {
+export const DaveSlot: React.FC<{plan: MapPlan}> = ({plan}) => {
   const f = useCurrentFrame();
   const files = useMemo(() => {
     try {

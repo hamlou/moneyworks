@@ -10,6 +10,8 @@ import {autoComponent, Plan} from './Auto';
 import {AUTO_PLANS} from './autoEps';
 import {MapShort, MapPlan} from './MapShort';
 import {MAP_PLANS} from './mapEps';
+import {SalShort, SalPlan} from './SalShort';
+import {SAL_PLANS} from './salEps';
 
 // AUTOPILOT episodes (tools/auto.py): one composition per plan, id Auto-<ep>
 const AUTO = (AUTO_PLANS as unknown as Plan[]).map((p) => ({p, C: autoComponent(p)}));
@@ -27,6 +29,9 @@ export const V6Root: React.FC = () => (
     ))}
     {(MAP_PLANS as unknown as MapPlan[]).map((p) => (
       <Composition key={`map-${p.id}`} id={`Map-${p.id}`} component={MapShort} defaultProps={{plan: p}} width={p.w ?? 1080} height={p.h ?? 1920} fps={30} durationInFrames={p.frames} />
+    ))}
+    {(SAL_PLANS as unknown as SalPlan[]).map((p) => (
+      <Composition key={`sal-${p.id}`} id={`Sal-${p.id}`} component={SalShort} defaultProps={{plan: p}} width={p.w ?? 1080} height={p.h ?? 1920} fps={30} durationInFrames={p.frames} />
     ))}
     <Composition id="Ea1Full" component={Ea1Full} width={1920} height={1080} fps={30} durationInFrames={EA1_FULL_FRAMES} />
   </>
