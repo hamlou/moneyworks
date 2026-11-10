@@ -114,7 +114,7 @@ const Lock: React.FC<SP & {mode: 'hook' | 'loop' | 'broke' | 'spam'}> = ({f, c, 
       })}
       {declined ? <Notif title="Card declined" body="Insufficient funds · Coffee Shop $4.50" y={300 * P} red s={interpolate(f - c('br_broke'), [0, 4, 7], [1.2, 0.97, 1], CL)} /> : null}
       {taps.map((t, i) => <Tap key={i} f={f} at={t} x={540 + (random(`tx${i}`) - 0.5) * 200} y={1250 + (random(`ty${i}`) - 0.5) * 160} />)}
-      {mode === 'hook' || mode === 'loop' ? <Caption f={f} at={mode === 'hook' ? 0 : b.from} text="$1 EVERY TIME YOU CHECK?" y={1180} col="#FFD60A" big /> : null}
+      {mode === 'hook' || mode === 'loop' ? <Caption f={f} at={mode === 'hook' ? 0 : b.from} text="$1 EVERY TIME YOU CHECK?" y={1265} col="#FFD60A" big /> : null}
       {declined ? <Caption f={f} at={c('br_broke')} text="BROKE BEFORE LUNCH" y={1290} col={RED} /> : null}
       {mode === 'spam' ? <Caption f={f} at={c('sp_keep')} text="YOU'D STILL CHECK IT" y={1290} col="#fff" /> : null}
       {lf < 0 ? null : null}
