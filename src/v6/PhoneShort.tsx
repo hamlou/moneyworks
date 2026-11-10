@@ -108,7 +108,7 @@ const Lock: React.FC<SP & {mode: 'hook' | 'loop' | 'broke' | 'spam'}> = ({f, c, 
       <div style={{position: 'absolute', top: 64 * P, left: 0, right: 0, textAlign: 'center', color: '#fff', fontFamily: I6, fontSize: 21 * P, textShadow: '0 2px 10px rgba(0,0,0,0.4)'}}>Monday, November 10</div>
       <div style={{position: 'absolute', top: 76 * P, left: 0, right: 0, textAlign: 'center', color: '#fff', fontFamily: I6, fontSize: 104 * P, letterSpacing: -2 * P, textShadow: '0 4px 30px rgba(0,0,0,0.35)'}}>{clockAt(min)}</div>
       <div style={{position: 'absolute', top: 210 * P, left: 0, right: 0, textAlign: 'center', fontFamily: I6, fontSize: 17 * P, color: bal < 10 ? '#ff9d96' : '#fff', textShadow: '0 2px 10px rgba(0,0,0,0.5)'}}>Balance {usd(bal)}.00</div>
-      {cards.slice(-3).reverse().map((i, k) => {
+      {cards.slice(-2).reverse().map((i, k) => {
         const fresh = k === 0 && mode !== 'broke' ? e(f, b.from + (mode === 'hook' ? i * 9 : 0), 5) : 1;
         return <Notif key={i} title="Phone Tax" body={`−$1.00 · You checked your phone (#${i + 1})`} when={k === 0 ? 'now' : `${k * 10}m ago`} y={300 * P + k * 76 * P - (1 - fresh) * 90} o={(k === 0 ? fresh : 1) * (1 - k * 0.12)} />;
       })}
@@ -283,7 +283,7 @@ export const PhoneShort: React.FC<{plan: SalPlan}> = ({plan}) => {
   const shake = b.scene === 'lock_spam' && f >= c('sp_keep') ? (random(`sh${f}`) - 0.5) * 10 : 0;
   return (
     <AbsoluteFill style={{background: '#000', overflow: 'hidden'}}>
-      <AbsoluteFill style={{transform: `translate(${shake}px, ${slide}px)`, opacity: interpolate(lf, [0, 3], [bi > 0 && slide ? 0.4 : 1, 1], CL)}}>
+      <AbsoluteFill style={{transform: `translate(${shake}px, ${slide}px) scale(${1 + Math.min(0.06, lf * 0.0012)})`, transformOrigin: '50% 45%', opacity: interpolate(lf, [0, 3], [bi > 0 && slide ? 0.4 : 1, 1], CL)}}>
         <S f={f} c={c} b={b} plan={plan} />
       </AbsoluteFill>
       {plan.voice ? <Audio src={staticFile(plan.voice)} /> : null}
