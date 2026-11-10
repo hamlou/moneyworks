@@ -1,0 +1,495 @@
+{
+ "id": "prices46",
+ "comp": "mini",
+ "w": 1080,
+ "h": 1920,
+ "frames": 858,
+ "voice": "prices46/voice.flac",
+ "beats": [
+  {
+   "id": "b01",
+   "from": 0,
+   "to": 62,
+   "say": "What if prices doubled every single day?",
+   "text": null,
+   "scene": "A",
+   "dave": "talk",
+   "fx": [],
+   "highlight": [],
+   "focus": "",
+   "style": "neutral",
+   "caps": [
+    {
+     "at": 0,
+     "t": "PRICES DOUBLE EVERY DAY?"
+    }
+   ]
+  },
+  {
+   "id": "b02",
+   "from": 62,
+   "to": 136,
+   "say": "Because in Hungary in nineteen forty six it was even worse.",
+   "text": null,
+   "scene": "B",
+   "dave": "talk",
+   "fx": [],
+   "highlight": [],
+   "focus": "",
+   "style": "neutral",
+   "caps": [
+    {
+     "at": 72,
+     "t": "HUNGARY 1946"
+    }
+   ]
+  },
+  {
+   "id": "b03",
+   "from": 136,
+   "to": 186,
+   "say": "Prices tripled every day.",
+   "text": null,
+   "scene": "C",
+   "dave": "talk",
+   "fx": [],
+   "highlight": [],
+   "focus": "",
+   "style": "neutral",
+   "caps": [
+    {
+     "at": 141,
+     "t": "\u00d73 EVERY DAY"
+    }
+   ]
+  },
+  {
+   "id": "b04",
+   "from": 186,
+   "to": 279,
+   "say": "A bread that cost one coin this morning cost three coins tomorrow.",
+   "text": null,
+   "scene": "D",
+   "dave": "talk",
+   "fx": [],
+   "highlight": [],
+   "focus": "",
+   "style": "neutral",
+   "caps": [
+    {
+     "at": 201,
+     "t": "1 COIN"
+    },
+    {
+     "at": 233,
+     "t": "3 COINS"
+    }
+   ]
+  },
+  {
+   "id": "b05",
+   "from": 279,
+   "to": 354,
+   "say": "So people got paid and ran to the shop the same hour.",
+   "text": null,
+   "scene": "E",
+   "dave": "talk",
+   "fx": [],
+   "highlight": [],
+   "focus": "",
+   "style": "neutral",
+   "caps": [
+    {
+     "at": 326,
+     "t": "SPEND IT WITHIN 1 HOUR"
+    }
+   ]
+  },
+  {
+   "id": "b06",
+   "from": 354,
+   "to": 438,
+   "say": "The government printed a banknote with twenty zeros on it.",
+   "text": null,
+   "scene": "F",
+   "dave": "talk",
+   "fx": [],
+   "highlight": [],
+   "focus": "",
+   "style": "neutral",
+   "caps": [
+    {
+     "at": 401,
+     "t": "20 ZEROS"
+    }
+   ]
+  },
+  {
+   "id": "b07",
+   "from": 438,
+   "to": 497,
+   "say": "But it was still not enough.",
+   "text": null,
+   "scene": "G",
+   "dave": "talk",
+   "fx": [],
+   "highlight": [],
+   "focus": "",
+   "style": "neutral",
+   "caps": [
+    {
+     "at": 472,
+     "t": "STILL NOT ENOUGH"
+    }
+   ]
+  },
+  {
+   "id": "b08",
+   "from": 497,
+   "to": 560,
+   "say": "So they threw the whole money away and made a new one.",
+   "text": null,
+   "scene": "H",
+   "dave": "talk",
+   "fx": [],
+   "highlight": [],
+   "focus": "",
+   "style": "neutral",
+   "caps": [
+    {
+     "at": 502,
+     "t": "THROWN AWAY"
+    }
+   ]
+  },
+  {
+   "id": "b09",
+   "from": 560,
+   "to": 655,
+   "say": "One new coin was worth a four with twenty nine zeros of the old money.",
+   "text": null,
+   "scene": "I",
+   "dave": "talk",
+   "fx": [],
+   "highlight": [],
+   "focus": "",
+   "style": "neutral",
+   "caps": [
+    {
+     "at": 588,
+     "t": "1 = 4 + 29 ZEROS"
+    }
+   ]
+  },
+  {
+   "id": "b10",
+   "from": 655,
+   "to": 777,
+   "say": "And the old banknotes were so worthless that street cleaners swept them off the road like leaves.",
+   "text": null,
+   "scene": "J",
+   "dave": "talk",
+   "fx": [],
+   "highlight": [],
+   "focus": "",
+   "style": "neutral",
+   "caps": [
+    {
+     "at": 718,
+     "t": "SWEPT LIKE LEAVES"
+    }
+   ]
+  },
+  {
+   "id": "b11",
+   "from": 777,
+   "to": 858,
+   "say": "So next time your coffee costs ten cents more just ask yourself",
+   "text": null,
+   "scene": "K",
+   "dave": "talk",
+   "fx": [],
+   "highlight": [],
+   "focus": "",
+   "style": "neutral",
+   "caps": [
+    {
+     "at": 829,
+     "t": "PRICES DOUBLE EVERY DAY?"
+    }
+   ]
+  }
+ ],
+ "cues": {
+  "a_doubled": 11,
+  "b_worse": 112,
+  "c_tripled": 141,
+  "d_three": 233,
+  "e_ran": 306,
+  "f_twenty": 401,
+  "g_enough": 472,
+  "h_threw": 502,
+  "i_four": 588,
+  "j_swept": 718,
+  "k_ten": 804
+ },
+ "music": [
+  {
+   "src": "pixel_peeker_polka_faster",
+   "from": 0,
+   "to": 279,
+   "v": 0.15,
+   "off": 0
+  },
+  {
+   "src": "investigations",
+   "from": 279,
+   "to": 497,
+   "v": 0.15,
+   "off": 0
+  },
+  {
+   "src": "volatile_reaction",
+   "from": 497,
+   "to": 646,
+   "v": 0.15,
+   "off": 0
+  },
+  {
+   "src": "pixel_peeker_polka_faster",
+   "from": 777,
+   "to": 858,
+   "v": 0.15,
+   "off": 0
+  }
+ ],
+ "sfx": [
+  {
+   "at": 0,
+   "src": "ea1/k_stop",
+   "v": 0.45
+  },
+  {
+   "at": 0,
+   "src": "ea1/vote_tick",
+   "v": 0.3
+  },
+  {
+   "at": 6,
+   "src": "ea1/vote_tick",
+   "v": 0.3
+  },
+  {
+   "at": 11,
+   "src": "ea1/k_point",
+   "v": 0.45
+  },
+  {
+   "at": 12,
+   "src": "ea1/vote_tick",
+   "v": 0.3
+  },
+  {
+   "at": 18,
+   "src": "ea1/vote_tick",
+   "v": 0.3
+  },
+  {
+   "at": 24,
+   "src": "ea1/vote_tick",
+   "v": 0.3
+  },
+  {
+   "at": 30,
+   "src": "ea1/vote_tick",
+   "v": 0.3
+  },
+  {
+   "at": 36,
+   "src": "ea1/vote_tick",
+   "v": 0.3
+  },
+  {
+   "at": 42,
+   "src": "ea1/vote_tick",
+   "v": 0.3
+  },
+  {
+   "at": 62,
+   "src": "ea1/chair_whoosh",
+   "v": 0.4
+  },
+  {
+   "at": 62,
+   "src": "ea1/steps",
+   "v": 0.25
+  },
+  {
+   "at": 112,
+   "src": "ea1/k_slam",
+   "v": 0.5
+  },
+  {
+   "at": 136,
+   "src": "ea1/vote_tick",
+   "v": 0.3
+  },
+  {
+   "at": 141,
+   "src": "ea1/vote_tick",
+   "v": 0.3
+  },
+  {
+   "at": 141,
+   "src": "ea1/roll33",
+   "v": 0.45
+  },
+  {
+   "at": 146,
+   "src": "ea1/vote_tick",
+   "v": 0.3
+  },
+  {
+   "at": 151,
+   "src": "ea1/vote_tick",
+   "v": 0.3
+  },
+  {
+   "at": 153,
+   "src": "ea1/k_slam",
+   "v": 0.45
+  },
+  {
+   "at": 156,
+   "src": "ea1/vote_tick",
+   "v": 0.3
+  },
+  {
+   "at": 161,
+   "src": "ea1/vote_tick",
+   "v": 0.3
+  },
+  {
+   "at": 166,
+   "src": "ea1/vote_tick",
+   "v": 0.3
+  },
+  {
+   "at": 171,
+   "src": "ea1/vote_tick",
+   "v": 0.3
+  },
+  {
+   "at": 186,
+   "src": "ea1/check1",
+   "v": 0.4
+  },
+  {
+   "at": 233,
+   "src": "ea1/check1",
+   "v": 0.5
+  },
+  {
+   "at": 236,
+   "src": "ea1/check2",
+   "v": 0.45
+  },
+  {
+   "at": 279,
+   "src": "ea1/photo_slide",
+   "v": 0.35
+  },
+  {
+   "at": 306,
+   "src": "ea1/steps",
+   "v": 0.5
+  },
+  {
+   "at": 354,
+   "src": "ea1/co_paper",
+   "v": 0.45
+  },
+  {
+   "at": 401,
+   "src": "ea1/k_boom",
+   "v": 0.5
+  },
+  {
+   "at": 438,
+   "src": "ea1/co_paper2",
+   "v": 0.4
+  },
+  {
+   "at": 472,
+   "src": "ea1/cash_rain",
+   "v": 0.45
+  },
+  {
+   "at": 502,
+   "src": "ea1/cash_rain",
+   "v": 0.5
+  },
+  {
+   "at": 506,
+   "src": "ea1/chair_whoosh",
+   "v": 0.35
+  },
+  {
+   "at": 560,
+   "src": "ea1/photo_slide",
+   "v": 0.35
+  },
+  {
+   "at": 588,
+   "src": "ea1/k_slam",
+   "v": 0.5
+  },
+  {
+   "at": 598,
+   "src": "ea1/k_stop",
+   "v": 0.4
+  },
+  {
+   "at": 718,
+   "src": "ea1/scribble",
+   "v": 0.45
+  },
+  {
+   "at": 726,
+   "src": "ea1/scribble",
+   "v": 0.4
+  },
+  {
+   "at": 777,
+   "src": "ea1/k_stop",
+   "v": 0.35
+  },
+  {
+   "at": 804,
+   "src": "ea1/k_point",
+   "v": 0.45
+  }
+ ],
+ "dave": {
+  "point": {
+   "src": "usa30/dave_point.webm",
+   "kind": "webm",
+   "len": 60
+  },
+  "shrug": {
+   "src": "usa30/dave_shrug.webm",
+   "kind": "webm",
+   "len": 60
+  },
+  "talk": {
+   "src": "usa30/dave_talk.webm",
+   "kind": "webm",
+   "len": 60
+  },
+  "worried": {
+   "src": "usa30/dave_worried.webm",
+   "kind": "webm",
+   "len": 60
+  }
+ }
+}

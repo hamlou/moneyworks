@@ -1,0 +1,457 @@
+{
+ "id": "bank70",
+ "comp": "ink",
+ "w": 1080,
+ "h": 1920,
+ "frames": 926,
+ "voice": "bank70/voice.flac",
+ "beats": [
+  {
+   "id": "b01",
+   "from": 0,
+   "to": 88,
+   "say": "What if every bank in your country closed for six months?",
+   "text": null,
+   "scene": "A",
+   "dave": "talk",
+   "fx": [],
+   "highlight": [],
+   "focus": "",
+   "style": "neutral",
+   "caps": [
+    {
+     "at": 0,
+     "t": "EVERY BANK CLOSED?"
+    }
+   ]
+  },
+  {
+   "id": "b02",
+   "from": 88,
+   "to": 169,
+   "say": "Because in Ireland in nineteen seventy they really did.",
+   "text": null,
+   "scene": "B",
+   "dave": "talk",
+   "fx": [],
+   "highlight": [],
+   "focus": "",
+   "style": "neutral",
+   "caps": [
+    {
+     "at": 100,
+     "t": "IRELAND 1970"
+    }
+   ]
+  },
+  {
+   "id": "b03",
+   "from": 169,
+   "to": 242,
+   "say": "The bank workers went on strike and locked every door.",
+   "text": null,
+   "scene": "C",
+   "dave": "talk",
+   "fx": [],
+   "highlight": [],
+   "focus": "",
+   "style": "neutral",
+   "caps": [
+    {
+     "at": 204,
+     "t": "LOCKED"
+    }
+   ]
+  },
+  {
+   "id": "b04",
+   "from": 242,
+   "to": 315,
+   "say": "So nobody could take out a single coin of cash.",
+   "text": null,
+   "scene": "D",
+   "dave": "talk",
+   "fx": [],
+   "highlight": [],
+   "focus": "",
+   "style": "neutral",
+   "caps": [
+    {
+     "at": 273,
+     "t": "NOT ONE COIN"
+    }
+   ]
+  },
+  {
+   "id": "b05",
+   "from": 315,
+   "to": 383,
+   "say": "But people did not panic because they went to the pub.",
+   "text": null,
+   "scene": "E",
+   "dave": "talk",
+   "fx": [],
+   "highlight": [],
+   "focus": "",
+   "style": "neutral",
+   "caps": [
+    {
+     "at": 364,
+     "t": "SO\u2026 THE PUB"
+    }
+   ]
+  },
+  {
+   "id": "b06",
+   "from": 383,
+   "to": 450,
+   "say": "Eleven thousand pubs turned into banks.",
+   "text": null,
+   "scene": "F",
+   "dave": "talk",
+   "fx": [],
+   "highlight": [],
+   "focus": "",
+   "style": "neutral",
+   "caps": [
+    {
+     "at": 383,
+     "t": "11,000 PUBS = BANKS"
+    }
+   ]
+  },
+  {
+   "id": "b07",
+   "from": 450,
+   "to": 530,
+   "say": "You wrote a cheque and the barman gave you cash because he knew you.",
+   "text": null,
+   "scene": "G",
+   "dave": "talk",
+   "fx": [],
+   "highlight": [],
+   "focus": "",
+   "style": "neutral",
+   "caps": [
+    {
+     "at": 509,
+     "t": "HE KNEW YOU"
+    }
+   ]
+  },
+  {
+   "id": "b08",
+   "from": 530,
+   "to": 606,
+   "say": "People wrote cheques on any scrap of paper they could find.",
+   "text": null,
+   "scene": "H",
+   "dave": "talk",
+   "fx": [],
+   "highlight": [],
+   "focus": "",
+   "style": "neutral",
+   "caps": [
+    {
+     "at": 557,
+     "t": "ANY SCRAP OF PAPER"
+    }
+   ]
+  },
+  {
+   "id": "b09",
+   "from": 606,
+   "to": 673,
+   "say": "And they passed them around like money for six whole months.",
+   "text": null,
+   "scene": "I",
+   "dave": "talk",
+   "fx": [],
+   "highlight": [],
+   "focus": "",
+   "style": "neutral",
+   "caps": [
+    {
+     "at": 641,
+     "t": "6 WHOLE MONTHS"
+    }
+   ]
+  },
+  {
+   "id": "b10",
+   "from": 673,
+   "to": 774,
+   "say": "When the banks finally opened they found five billion pounds of cheques waiting.",
+   "text": null,
+   "scene": "J",
+   "dave": "talk",
+   "fx": [],
+   "highlight": [],
+   "focus": "",
+   "style": "neutral",
+   "caps": [
+    {
+     "at": 708,
+     "t": "\u00a35,000,000,000"
+    }
+   ]
+  },
+  {
+   "id": "b11",
+   "from": 774,
+   "to": 858,
+   "say": "Because the money was never in the bank it was in the trust.",
+   "text": null,
+   "scene": "K",
+   "dave": "talk",
+   "fx": [],
+   "highlight": [],
+   "focus": "",
+   "style": "neutral",
+   "caps": [
+    {
+     "at": 836,
+     "t": "IT WAS TRUST"
+    }
+   ]
+  },
+  {
+   "id": "b12",
+   "from": 858,
+   "to": 926,
+   "say": "So ask yourself who would still give you cash tomorrow",
+   "text": null,
+   "scene": "L",
+   "dave": "talk",
+   "fx": [],
+   "highlight": [],
+   "focus": "",
+   "style": "neutral",
+   "caps": [
+    {
+     "at": 859,
+     "t": "EVERY BANK CLOSED?"
+    }
+   ]
+  }
+ ],
+ "cues": {
+  "a_closed": 39,
+  "b_did": 147,
+  "c_strike": 191,
+  "c_locked": 204,
+  "d_single": 273,
+  "e_pub": 364,
+  "f_banks": 422,
+  "g_cash": 489,
+  "h_scrap": 557,
+  "i_six": 641,
+  "j_five": 708,
+  "k_trust": 836,
+  "l_tomorrow": 900
+ },
+ "music": [
+  {
+   "src": "life_of_riley",
+   "from": 0,
+   "to": 315,
+   "v": 0.15,
+   "off": 0
+  },
+  {
+   "src": "sneaky_snitch",
+   "from": 315,
+   "to": 606,
+   "v": 0.15,
+   "off": 0
+  },
+  {
+   "src": "thinking_music",
+   "from": 606,
+   "to": 765,
+   "v": 0.15,
+   "off": 0
+  },
+  {
+   "src": "life_of_riley",
+   "from": 858,
+   "to": 926,
+   "v": 0.15,
+   "off": 0
+  }
+ ],
+ "sfx": [
+  {
+   "at": 0,
+   "src": "ea1/k_stop",
+   "v": 0.4
+  },
+  {
+   "at": 39,
+   "src": "ea1/door",
+   "v": 0.55
+  },
+  {
+   "at": 42,
+   "src": "ea1/k_slam",
+   "v": 0.5
+  },
+  {
+   "at": 88,
+   "src": "ea1/co_paper",
+   "v": 0.4
+  },
+  {
+   "at": 88,
+   "src": "ea1/steps",
+   "v": 0.25
+  },
+  {
+   "at": 147,
+   "src": "ea1/k_point",
+   "v": 0.45
+  },
+  {
+   "at": 191,
+   "src": "ea1/claim_buzz",
+   "v": 0.4
+  },
+  {
+   "at": 204,
+   "src": "ea1/door",
+   "v": 0.55
+  },
+  {
+   "at": 242,
+   "src": "ea1/co_book",
+   "v": 0.4
+  },
+  {
+   "at": 273,
+   "src": "ea1/crickets",
+   "v": 0.4
+  },
+  {
+   "at": 364,
+   "src": "ea1/door",
+   "v": 0.45
+  },
+  {
+   "at": 366,
+   "src": "ea1/reply_pop",
+   "v": 0.35
+  },
+  {
+   "at": 387,
+   "src": "ea1/reply_pop",
+   "v": 0.3
+  },
+  {
+   "at": 391,
+   "src": "ea1/reply_pop",
+   "v": 0.3
+  },
+  {
+   "at": 395,
+   "src": "ea1/reply_pop",
+   "v": 0.3
+  },
+  {
+   "at": 422,
+   "src": "ea1/k_slam",
+   "v": 0.5
+  },
+  {
+   "at": 450,
+   "src": "ea1/co_paper",
+   "v": 0.35
+  },
+  {
+   "at": 489,
+   "src": "ea1/cash_rain",
+   "v": 0.45
+  },
+  {
+   "at": 530,
+   "src": "ea1/co_paper2",
+   "v": 0.4
+  },
+  {
+   "at": 557,
+   "src": "ea1/scribble",
+   "v": 0.5
+  },
+  {
+   "at": 563,
+   "src": "ea1/scribble",
+   "v": 0.45
+  },
+  {
+   "at": 641,
+   "src": "ea1/photo_slide",
+   "v": 0.4
+  },
+  {
+   "at": 647,
+   "src": "ea1/co_paper",
+   "v": 0.35
+  },
+  {
+   "at": 653,
+   "src": "ea1/co_paper",
+   "v": 0.35
+  },
+  {
+   "at": 673,
+   "src": "ea1/door",
+   "v": 0.5
+  },
+  {
+   "at": 708,
+   "src": "ea1/k_boom",
+   "v": 0.55
+  },
+  {
+   "at": 710,
+   "src": "ea1/cash_rain",
+   "v": 0.45
+  },
+  {
+   "at": 774,
+   "src": "ea1/co_riser",
+   "v": 0.35
+  },
+  {
+   "at": 836,
+   "src": "ea1/k_flash",
+   "v": 0.5
+  },
+  {
+   "at": 900,
+   "src": "ea1/door",
+   "v": 0.45
+  }
+ ],
+ "dave": {
+  "point": {
+   "src": "usa30/dave_point.webm",
+   "kind": "webm",
+   "len": 60
+  },
+  "shrug": {
+   "src": "usa30/dave_shrug.webm",
+   "kind": "webm",
+   "len": 60
+  },
+  "talk": {
+   "src": "usa30/dave_talk.webm",
+   "kind": "webm",
+   "len": 60
+  },
+  "worried": {
+   "src": "usa30/dave_worried.webm",
+   "kind": "webm",
+   "len": 60
+  }
+ }
+}

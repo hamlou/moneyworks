@@ -1,0 +1,502 @@
+{
+ "id": "phone96",
+ "comp": "phone",
+ "w": 1080,
+ "h": 1920,
+ "frames": 897,
+ "voice": "phone96/voice.flac",
+ "beats": [
+  {
+   "id": "b01",
+   "from": 0,
+   "to": 75,
+   "say": "What if your phone took one dollar every time you checked it?",
+   "text": null,
+   "scene": "lock_hook",
+   "dave": "talk",
+   "fx": [],
+   "highlight": [],
+   "focus": "",
+   "style": "neutral",
+   "caps": []
+  },
+  {
+   "id": "b02",
+   "from": 75,
+   "to": 135,
+   "say": "Because you would be broke before lunch.",
+   "text": null,
+   "scene": "lock_broke",
+   "dave": "talk",
+   "fx": [],
+   "highlight": [],
+   "focus": "",
+   "style": "neutral",
+   "caps": []
+  },
+  {
+   "id": "b03",
+   "from": 135,
+   "to": 214,
+   "say": "The average American checks their phone ninety six times a day.",
+   "text": null,
+   "scene": "screentime",
+   "dave": "talk",
+   "fx": [],
+   "highlight": [],
+   "focus": "",
+   "style": "neutral",
+   "caps": []
+  },
+  {
+   "id": "b04",
+   "from": 214,
+   "to": 274,
+   "say": "That is once every ten minutes you are awake.",
+   "text": null,
+   "scene": "every10",
+   "dave": "talk",
+   "fx": [],
+   "highlight": [],
+   "focus": "",
+   "style": "neutral",
+   "caps": []
+  },
+  {
+   "id": "b05",
+   "from": 274,
+   "to": 366,
+   "say": "So that is ninety six dollars a day just to look at a screen.",
+   "text": null,
+   "scene": "bank_day",
+   "dave": "talk",
+   "fx": [],
+   "highlight": [],
+   "focus": "",
+   "style": "neutral",
+   "caps": []
+  },
+  {
+   "id": "b06",
+   "from": 366,
+   "to": 463,
+   "say": "And by the end of the year it is thirty five thousand dollars.",
+   "text": null,
+   "scene": "bank_year",
+   "dave": "talk",
+   "fx": [],
+   "highlight": [],
+   "focus": "",
+   "style": "neutral",
+   "caps": []
+  },
+  {
+   "id": "b07",
+   "from": 463,
+   "to": 551,
+   "say": "That is a brand new car every year gone to notifications.",
+   "text": null,
+   "scene": "texts",
+   "dave": "talk",
+   "fx": [],
+   "highlight": [],
+   "focus": "",
+   "style": "neutral",
+   "caps": []
+  },
+  {
+   "id": "b08",
+   "from": 551,
+   "to": 610,
+   "say": "But people your age check it twice as much.",
+   "text": null,
+   "scene": "screentime2",
+   "dave": "talk",
+   "fx": [],
+   "highlight": [],
+   "focus": "",
+   "style": "neutral",
+   "caps": []
+  },
+  {
+   "id": "b09",
+   "from": 610,
+   "to": 682,
+   "say": "So you would pay seventy thousand dollars a year.",
+   "text": null,
+   "scene": "bank_year2",
+   "dave": "talk",
+   "fx": [],
+   "highlight": [],
+   "focus": "",
+   "style": "neutral",
+   "caps": []
+  },
+  {
+   "id": "b10",
+   "from": 682,
+   "to": 751,
+   "say": "And the scary part is you would still keep checking it.",
+   "text": null,
+   "scene": "lock_spam",
+   "dave": "talk",
+   "fx": [],
+   "highlight": [],
+   "focus": "",
+   "style": "neutral",
+   "caps": []
+  },
+  {
+   "id": "b11",
+   "from": 751,
+   "to": 834,
+   "say": "Because the phone was never free and you already pay with your time.",
+   "text": null,
+   "scene": "time",
+   "dave": "talk",
+   "fx": [],
+   "highlight": [],
+   "focus": "",
+   "style": "neutral",
+   "caps": []
+  },
+  {
+   "id": "b12",
+   "from": 834,
+   "to": 897,
+   "say": "So next time you pick it up just ask yourself",
+   "text": null,
+   "scene": "lock_loop",
+   "dave": "talk",
+   "fx": [],
+   "highlight": [],
+   "focus": "",
+   "style": "neutral",
+   "caps": []
+  }
+ ],
+ "cues": {
+  "lk_dollar": 28,
+  "lk_checked": 52,
+  "br_broke": 110,
+  "st_ninety": 174,
+  "ev_ten": 233,
+  "bk_ninety": 287,
+  "bk_thirty": 404,
+  "tx_car": 484,
+  "tx_notifications": 516,
+  "st_twice": 579,
+  "bk_seventy": 629,
+  "sp_keep": 723,
+  "tm_time": 815
+ },
+ "music": [
+  {
+   "src": "scheming_weasel_faster",
+   "from": 0,
+   "to": 274,
+   "v": 0.15,
+   "off": 0
+  },
+  {
+   "src": "investigations",
+   "from": 274,
+   "to": 551,
+   "v": 0.15,
+   "off": 0
+  },
+  {
+   "src": "volatile_reaction",
+   "from": 551,
+   "to": 742,
+   "v": 0.15,
+   "off": 0
+  },
+  {
+   "src": "scheming_weasel_faster",
+   "from": 834,
+   "to": 897,
+   "v": 0.15,
+   "off": 0
+  }
+ ],
+ "sfx": [
+  {
+   "at": 0,
+   "src": "ea1/notif",
+   "v": 0.55
+  },
+  {
+   "at": 0,
+   "src": "ea1/k_stop",
+   "v": 0.4
+  },
+  {
+   "at": 28,
+   "src": "ea1/notif",
+   "v": 0.6
+  },
+  {
+   "at": 29,
+   "src": "ea1/reply_pop",
+   "v": 0.4
+  },
+  {
+   "at": 52,
+   "src": "ea1/notif",
+   "v": 0.6
+  },
+  {
+   "at": 75,
+   "src": "ea1/roll33",
+   "v": 0.35
+  },
+  {
+   "at": 78,
+   "src": "ea1/notif",
+   "v": 0.3
+  },
+  {
+   "at": 82,
+   "src": "ea1/notif",
+   "v": 0.3
+  },
+  {
+   "at": 86,
+   "src": "ea1/notif",
+   "v": 0.3
+  },
+  {
+   "at": 110,
+   "src": "ea1/fail",
+   "v": 0.5
+  },
+  {
+   "at": 110,
+   "src": "ea1/claim_buzz",
+   "v": 0.35
+  },
+  {
+   "at": 135,
+   "src": "ea1/photo_slide",
+   "v": 0.35
+  },
+  {
+   "at": 174,
+   "src": "ea1/roll33",
+   "v": 0.45
+  },
+  {
+   "at": 192,
+   "src": "ea1/k_slam",
+   "v": 0.45
+  },
+  {
+   "at": 214,
+   "src": "ea1/photo_slide",
+   "v": 0.35
+  },
+  {
+   "at": 218,
+   "src": "ea1/vote_tick",
+   "v": 0.25
+  },
+  {
+   "at": 224,
+   "src": "ea1/vote_tick",
+   "v": 0.25
+  },
+  {
+   "at": 230,
+   "src": "ea1/vote_tick",
+   "v": 0.25
+  },
+  {
+   "at": 233,
+   "src": "ea1/k_point",
+   "v": 0.45
+  },
+  {
+   "at": 236,
+   "src": "ea1/vote_tick",
+   "v": 0.25
+  },
+  {
+   "at": 274,
+   "src": "ea1/photo_slide",
+   "v": 0.35
+  },
+  {
+   "at": 287,
+   "src": "ea1/roll33",
+   "v": 0.45
+  },
+  {
+   "at": 301,
+   "src": "ea1/k_slam",
+   "v": 0.45
+  },
+  {
+   "at": 366,
+   "src": "ea1/photo_slide",
+   "v": 0.35
+  },
+  {
+   "at": 404,
+   "src": "ea1/roll33",
+   "v": 0.5
+  },
+  {
+   "at": 424,
+   "src": "ea1/k_boom",
+   "v": 0.45
+  },
+  {
+   "at": 465,
+   "src": "ea1/reply_pop",
+   "v": 0.45
+  },
+  {
+   "at": 484,
+   "src": "ea1/reply_pop",
+   "v": 0.5
+  },
+  {
+   "at": 494,
+   "src": "ea1/reply_pop",
+   "v": 0.5
+  },
+  {
+   "at": 516,
+   "src": "ea1/reply_pop",
+   "v": 0.5
+  },
+  {
+   "at": 551,
+   "src": "ea1/photo_slide",
+   "v": 0.35
+  },
+  {
+   "at": 579,
+   "src": "ea1/roll33",
+   "v": 0.45
+  },
+  {
+   "at": 595,
+   "src": "ea1/k_slam",
+   "v": 0.5
+  },
+  {
+   "at": 610,
+   "src": "ea1/photo_slide",
+   "v": 0.35
+  },
+  {
+   "at": 629,
+   "src": "ea1/roll33",
+   "v": 0.5
+  },
+  {
+   "at": 649,
+   "src": "ea1/k_boom",
+   "v": 0.5
+  },
+  {
+   "at": 651,
+   "src": "ea1/fail",
+   "v": 0.4
+  },
+  {
+   "at": 723,
+   "src": "ea1/notif",
+   "v": 0.5
+  },
+  {
+   "at": 726,
+   "src": "ea1/notif",
+   "v": 0.45
+  },
+  {
+   "at": 729,
+   "src": "ea1/notif",
+   "v": 0.45
+  },
+  {
+   "at": 732,
+   "src": "ea1/notif",
+   "v": 0.45
+  },
+  {
+   "at": 735,
+   "src": "ea1/notif",
+   "v": 0.45
+  },
+  {
+   "at": 738,
+   "src": "ea1/notif",
+   "v": 0.45
+  },
+  {
+   "at": 741,
+   "src": "ea1/notif",
+   "v": 0.45
+  },
+  {
+   "at": 751,
+   "src": "ea1/vote_tick",
+   "v": 0.3
+  },
+  {
+   "at": 757,
+   "src": "ea1/vote_tick",
+   "v": 0.3
+  },
+  {
+   "at": 762,
+   "src": "ea1/vote_tick",
+   "v": 0.3
+  },
+  {
+   "at": 766,
+   "src": "ea1/vote_tick",
+   "v": 0.3
+  },
+  {
+   "at": 769,
+   "src": "ea1/vote_tick",
+   "v": 0.3
+  },
+  {
+   "at": 815,
+   "src": "ea1/k_flash",
+   "v": 0.5
+  },
+  {
+   "at": 834,
+   "src": "ea1/notif",
+   "v": 0.45
+  }
+ ],
+ "dave": {
+  "point": {
+   "src": "usa30/dave_point.webm",
+   "kind": "webm",
+   "len": 60
+  },
+  "shrug": {
+   "src": "usa30/dave_shrug.webm",
+   "kind": "webm",
+   "len": 60
+  },
+  "talk": {
+   "src": "usa30/dave_talk.webm",
+   "kind": "webm",
+   "len": 60
+  },
+  "worried": {
+   "src": "usa30/dave_worried.webm",
+   "kind": "webm",
+   "len": 60
+  }
+ }
+}
