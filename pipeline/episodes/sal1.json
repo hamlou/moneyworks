@@ -1,0 +1,29 @@
+{
+  "id": "sal1",
+  "title": "What If Everyone Could See Your Salary? #shorts",
+  "style": "v7",
+  "voice": "chatterbox",
+  "cb": {"cfg": 0.3, "exag": 0.55},
+  "note": "scene Short (src/v6/SalShort.tsx) — salary-over-heads street; plan from pipeline/scenes/sal1.json",
+  "sources": [
+    "S1 Perez-Truglia, 'The Effects of Income Transparency on Well-Being: Evidence from a Natural Experiment' (AER 2020 / NBER w25622): in fall 2001 Norwegian media put tax records online so anyone could search anyone's income — before that you had to ask in person at the tax office https://www.nber.org/papers/w25622",
+    "S2 same paper: higher transparency increased the happiness gap between richer and poorer individuals by 29% (life-satisfaction gap +21%); poorer people became less happy, richer more happy, with no change in income https://www.nber.org/papers/w25622",
+    "S3 Reuters (Doyle/Scrutton) via Investing.com + BBC 'Norway: the country where no salaries are secret' (2017): searches stopped being anonymous in 2014 — the person searched can see the searcher's name; lookups fell from 16.5 million in the 12 months to Oct 2014 to 2.15 million https://www.bbc.co.uk/news/40669239",
+    "S4 Statistics Norway: population ~5.1 million in 2014 https://www.ssb.no/en/befolkning"
+  ],
+  "beats": [
+    {"id": "b01", "src": "", "text": "What if everyone on your street could see your salary?", "pause": 0.2, "exag": 0.6},
+    {"id": "b02", "src": "S1", "text": "Because in Norway they actually can.", "pause": 0.2, "exag": 0.6},
+    {"id": "b03", "src": "S1", "text": "You type any name into your phone and their income just pops up.", "pause": 0.2, "exag": 0.55},
+    {"id": "b04", "src": "S3", "text": "So people looked up their boss and their neighbor and even their ex", "pause": 0.1, "exag": 0.6},
+    {"id": "b05", "src": "S3", "text": "sixteen million times in one year in a country of five million people.", "pause": 0.2, "exag": 0.6},
+    {"id": "b06", "src": "S2", "text": "But then scientists measured how happy everyone was", "pause": 0.1, "exag": 0.55},
+    {"id": "b07", "src": "S2", "text": "and nobody's paycheck changed yet the rich got happier and the poor got sadder.", "pause": 0.3, "exag": 0.6},
+    {"id": "b08", "src": "S3", "text": "So Norway changed one tiny rule.", "pause": 0.2, "exag": 0.6},
+    {"id": "b09", "src": "S3", "text": "Now when you look someone up they can see your name.", "pause": 0.2, "exag": 0.6},
+    {"id": "b10", "src": "S3", "text": "And the searches crashed from sixteen million to two million.", "pause": 0.2, "exag": 0.65},
+    {"id": "b11", "src": "", "text": "Because people never wanted to know the number.", "pause": 0.3, "exag": 0.55},
+    {"id": "b12", "src": "", "text": "They just wanted to look without getting caught.", "pause": 0.2, "exag": 0.65},
+    {"id": "b13", "src": "", "text": "So next time you wonder what your neighbor makes just ask yourself", "pause": 0.0, "exag": 0.6}
+  ]
+}

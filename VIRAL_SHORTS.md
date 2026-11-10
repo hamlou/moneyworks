@@ -133,3 +133,13 @@ Recommended pipeline (all on GHA, matches weak-PC rule):
 2. `faster-whisper` (or whisper.cpp via `@remotion/install-whisper-cpp`) → word JSON → `createTikTokStyleCaptions({combineTokensWithinMilliseconds: 400-800})`.
 3. Render Remotion → `PySceneDetect` on output: fail build if any shot >1.5 s or cuts/s < 0.5; fail if first VO word >0.2 s.
 4. Benchmark: locally `yt-dlp` 20 top money Shorts/month → GHA `PySceneDetect` + `faster-whisper` → table of cuts/s, words/s, hook length; set our targets to their median.
+
+---
+
+## 5) Added 10 Nov 2026 — hook science + S4 audience lesson (not covered above)
+- **Decision ≈ 2 s on Shorts.** 3-second retention predicts total performance (r = 0.84 over 120 videos). Judge every hook by its first 2 s on mute. [VND] [dev.to hook engineering](https://dev.to/bulkdl/hook-engineering-the-science-of-the-first-3-seconds-in-short-form-video-2026-2jp9)
+- **Stack 2 mechanisms on frame 0:** a visually disruptive image AND a curiosity gap TOGETHER gave +47 % retention vs either alone. A strange image with nothing to wonder about, or a question over a plain image, is half a hook. [VND] same source
+- **Reward prediction error:** the bigger the gap between what the viewer expects and what they see, the stronger the pull. Best frame 0 = something impossible or wrong shown as if it's normal (Dave calmly paying rent with a rock), not just "big".
+- **Dying in 2026:** voiceover over stock footage, "storytime" intros, generic "you won't believe" hooks (completion −40 % YoY). **Winning:** a CHARACTER in an absurd premise played deadpan (AI Yeti vlogger 16M+ views, fake ads 3M/day). Dave is our character, so give him the absurd premise. [VND] [subsub](https://www.subsub.io/blog/how-ai-generated-youtube-shorts-will-change-creators-in-2026), [case study](https://theaiuntangled.substack.com/p/veo3-viral-video-how-to)
+- **Shareability gate (S4 lesson):** S4 audience = 28.8 % aged 65+, 0 % 18–24, 99.6 % new, +1 sub. Politics about a name few people know reached people who watch but don't share, so there was no second push. Before writing, ask: "would someone send this to a friend with 'this is you'?" If not, change the angle.
+- **Promise kept = replays:** S4 dodged its promise, so viewers felt the ending was empty and didn't replay. The loop only works if the ending pays off.

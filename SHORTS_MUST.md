@@ -26,6 +26,7 @@
 - TARGET: ≥ 70 % "viewed" (S4 = 62.8 % → feed stopped pushing after ~36 h).
 - NEVER: "hey guys", intro, "follow for part 2", "subscribe", "tap it now", outro, CTA at the end. (Every Short with an end-CTA flopped.)
 - NEVER: a sentence cut mid-word (S4 ended on "Congress is the…" with "paper" missing).
+- MUST: frame 0 = disruptive image AND open question together, decided in 2 s. MUST pass the shareability gate ("would someone send this to a friend?"). [VIRAL_SHORTS §5]
 - NEVER: unrelated hashtags in the title (#investing #reversemortgage on a co-sign Short).
 
 ## 2. Edit — MUST / NEVER (the swipe killers)
