@@ -23,10 +23,10 @@ type SP = {f: number; c: (k: string) => number; b: SBeat};
 
 // ───────── street (frame 0 + loop) ─────────
 const PEOPLE = [
-  {x: 160, y: 700, s: 1.32, col: '#3D7BD9', pay: 38400, tag: K.yellow, dir: 1, ty: 560},
-  {x: 410, y: 645, s: 1.08, col: '#8E5BD6', pay: 127000, tag: K.green, dir: -1, ty: 520},
-  {x: 680, y: 660, s: 1.14, col: '#D9853D', pay: 52900, tag: K.yellow, dir: 1, ty: 530},
-  {x: 925, y: 715, s: 1.38, col: '#3DB89A', pay: 24800, tag: K.red, dir: -1, ty: 570},
+  {x: 150, y: 745, s: 1.95, col: '#3D7BD9', pay: 38400, tag: K.yellow, dir: 1},
+  {x: 405, y: 690, s: 1.6, col: '#8E5BD6', pay: 127000, tag: K.green, dir: -1},
+  {x: 690, y: 700, s: 1.68, col: '#D9853D', pay: 52900, tag: K.yellow, dir: 1},
+  {x: 935, y: 755, s: 2.0, col: '#3DB89A', pay: 24800, tag: K.red, dir: -1},
 ];
 const Building: React.FC<{x: number; w: number; h: number; seed: number}> = ({x, w, h, seed}) => {
   const rows = Math.floor(h / 70);
@@ -111,7 +111,7 @@ const Street: React.FC<SP & {mode: 'hook' | 'loop' | 'fade'}> = ({f, c, b, mode}
         const q = mode === 'fade' && f >= c('fade_number') + i * 3 + 6;
         const roll = mode === 'hook' && i === 1 ? Math.min(1, t / 20) : 1;
         return gone > 0.01 || q ? (
-          <Tag key={i} x={px} y={p.ty - Math.abs(Math.sin(f * 0.32 + i * 1.7)) * 10} s={1} scale={q ? pop(f - c('fade_number') - i * 3 - 6) : appear * gone} text={q ? '?' : money(p.pay * roll)} color={q ? K.grey : p.tag} />
+          <Tag key={i} x={px} y={p.y - 66 * p.s - 50 - Math.abs(Math.sin(f * 0.32 + i * 1.7)) * 10} s={1} scale={q ? pop(f - c('fade_number') - i * 3 - 6) : appear * gone} text={q ? '?' : money(p.pay * roll)} color={q ? K.grey : p.tag} />
         ) : null;
       })}
       <Tag x={540} y={1120} s={1.3} scale={mode === 'loop' ? pop(f - c('loop_dave')) : 1} text="$41,200" color={K.red} glow={mode === 'hook' ? interpolate(f - c('hook_salary'), [0, 6, 20], [0, 1, 0.3], CL) : 0.2} />
@@ -389,12 +389,12 @@ const Peek: React.FC<SP> = ({f, c, b}) => {
   return (
     <AbsoluteFill style={{background: '#05070E'}}>
       <svg width={W} height={1920} viewBox="0 0 1080 1920" style={{position: 'absolute', inset: 0}}>
-        <rect x={150} y={420} width={780} height={760} fill={caught ? '#2B2B1E' : '#101830'} stroke="#3A2A1A" strokeWidth={30} />
+        <rect x={150} y={420} width={780} height={760} fill={caught ? '#6B6A4A' : '#3B5694'} stroke="#3A2A1A" strokeWidth={30} />
         <rect x={525} y={420} width={30} height={760} fill="#3A2A1A" />
         <rect x={150} y={785} width={780} height={30} fill="#3A2A1A" />
         <g transform={`translate(${560 + lean} 860)`}>
-          <circle cx={0} cy={-120} r={110} fill="#1A1A1A" />
-          <rect x={-150} y={-20} width={300} height={360} rx={90} fill="#1A1A1A" />
+          <circle cx={0} cy={-120} r={110} fill="#0B0B10" />
+          <rect x={-150} y={-20} width={300} height={360} rx={90} fill="#0B0B10" />
           <rect x={-95} y={-170} width={80} height={70} rx={18} fill="#333" stroke={caught ? '#fff' : '#555'} strokeWidth={6} />
           <rect x={15} y={-170} width={80} height={70} rx={18} fill="#333" stroke={caught ? '#fff' : '#555'} strokeWidth={6} />
           <circle cx={-55} cy={-135} r={20} fill={caught ? '#FFF6C9' : '#6FA8FF'} />
