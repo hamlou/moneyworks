@@ -1,6 +1,6 @@
 import React, {useMemo} from 'react';
 import {AbsoluteFill, Audio, Easing, interpolate, random, staticFile, useCurrentFrame} from 'remotion';
-import {geoArea, geoMercator, geoPath} from 'd3-geo';
+import {geoArea, geoCentroid, geoMercator, geoPath} from 'd3-geo';
 import {feature} from 'topojson-client';
 import topo from 'world-atlas/countries-50m.json';
 import {ANTON, UI, K} from './kit';
@@ -23,11 +23,10 @@ type SP = {f: number; c: (k: string) => number; b: SBeat};
 
 // ───────── street (frame 0 + loop) ─────────
 const PEOPLE = [
-  {x: 170, y: 905, s: 0.92, col: '#3D7BD9', pay: 38400, tag: K.yellow, dir: 1},
-  {x: 365, y: 860, s: 0.78, col: '#8E5BD6', pay: 127000, tag: K.green, dir: -1},
-  {x: 700, y: 870, s: 0.82, col: '#D9853D', pay: 52900, tag: K.yellow, dir: 1},
-  {x: 905, y: 915, s: 0.95, col: '#3DB89A', pay: 24800, tag: K.red, dir: -1},
-  {x: 540, y: 820, s: 0.62, col: '#C9455B', pay: 71250, tag: K.yellow, dir: 1},
+  {x: 160, y: 1000, s: 1.32, col: '#3D7BD9', pay: 38400, tag: K.yellow, dir: 1, ty: 545},
+  {x: 410, y: 925, s: 1.08, col: '#8E5BD6', pay: 127000, tag: K.green, dir: -1, ty: 455},
+  {x: 680, y: 945, s: 1.14, col: '#D9853D', pay: 52900, tag: K.yellow, dir: 1, ty: 470},
+  {x: 925, y: 1015, s: 1.38, col: '#3DB89A', pay: 24800, tag: K.red, dir: -1, ty: 560},
 ];
 const Building: React.FC<{x: number; w: number; h: number; seed: number}> = ({x, w, h, seed}) => {
   const rows = Math.floor(h / 70);
@@ -48,7 +47,7 @@ const Person: React.FC<{f: number; x: number; y: number; s: number; col: string;
   const ph = f * 0.32 + i * 1.7;
   const bob = Math.abs(Math.sin(ph)) * 10;
   const swing = Math.sin(ph) * 16;
-  const px = x + dir * ((f * 0.9) % 60) - dir * 30;
+  const px = x + dir * Math.sin(f / 40 + i) * 14;
   return (
     <g transform={`translate(${px} ${y - bob}) scale(${s})`}>
       <ellipse cx={0} cy={250 + bob / s} rx={70} ry={14} fill="#000" opacity={0.35} />
@@ -61,7 +60,7 @@ const Person: React.FC<{f: number; x: number; y: number; s: number; col: string;
   );
 };
 const Tag: React.FC<{x: number; y: number; s: number; text: string; color: string; scale: number; glow?: number}> = ({x, y, s, text, color, scale, glow = 0}) => (
-  <div style={{position: 'absolute', left: x, top: y, transform: `translate(-50%,-50%) scale(${s * scale})`, background: '#0B0F1A', color, border: `5px solid ${color}`, borderRadius: 999, padding: '6px 26px', fontFamily: ANTON, fontSize: 54, letterSpacing: 1, whiteSpace: 'nowrap', boxShadow: `0 0 ${24 + glow * 40}px ${color}AA, 0 8px 0 rgba(0,0,0,0.5)`}}>
+  <div style={{position: 'absolute', left: x, top: y, transform: `translate(-50%,-50%) scale(${s * scale})`, background: '#0B0F1A', color, border: `5px solid ${color}`, borderRadius: 999, padding: '4px 22px', fontFamily: ANTON, fontSize: 60, letterSpacing: 1, whiteSpace: 'nowrap', boxShadow: `0 0 ${24 + glow * 40}px ${color}AA, 0 8px 0 rgba(0,0,0,0.5)`}}>
     {text}
   </div>
 );
@@ -106,16 +105,16 @@ const Street: React.FC<SP & {mode: 'hook' | 'loop' | 'fade'}> = ({f, c, b, mode}
         ))}
       </svg>
       {PEOPLE.map((p, i) => {
-        const px = p.x + p.dir * ((f * 0.9) % 60) - p.dir * 30;
+        const px = p.x + p.dir * Math.sin(f / 40 + i) * 14;
         const appear = mode === 'loop' ? pop(f - c(`loop_t${i}`)) : 1;
         const gone = mode === 'fade' ? 1 - ease(f, c('fade_number') + i * 3, 6) : 1;
         const q = mode === 'fade' && f >= c('fade_number') + i * 3 + 6;
         const roll = mode === 'hook' && i === 1 ? Math.min(1, t / 20) : 1;
         return gone > 0.01 || q ? (
-          <Tag key={i} x={px} y={p.y - 120 * p.s - 56} s={p.s} scale={q ? pop(f - c('fade_number') - i * 3 - 6) : appear * gone} text={q ? '?' : money(p.pay * roll)} color={q ? K.grey : p.tag} />
+          <Tag key={i} x={px} y={p.ty - Math.abs(Math.sin(f * 0.32 + i * 1.7)) * 10} s={1} scale={q ? pop(f - c('fade_number') - i * 3 - 6) : appear * gone} text={q ? '?' : money(p.pay * roll)} color={q ? K.grey : p.tag} />
         ) : null;
       })}
-      <Tag x={540} y={1132} s={1.15} scale={mode === 'loop' ? pop(f - c('loop_dave')) : 1} text="$41,200" color={K.red} glow={mode === 'hook' ? interpolate(f - c('hook_salary'), [0, 6, 20], [0, 1, 0.3], CL) : 0.2} />
+      <Tag x={540} y={1120} s={1.3} scale={mode === 'loop' ? pop(f - c('loop_dave')) : 1} text="$41,200" color={K.red} glow={mode === 'hook' ? interpolate(f - c('hook_salary'), [0, 6, 20], [0, 1, 0.3], CL) : 0.2} />
     </AbsoluteFill>
   );
 };
@@ -127,8 +126,8 @@ const NOR = (() => {
   const polys: any[] = ft.geometry.type === 'MultiPolygon' ? ft.geometry.coordinates : [ft.geometry.coordinates];
   const areas = polys.map((p) => geoArea({type: 'Polygon', coordinates: p} as any));
   const big = Math.max(...areas);
-  const main = {type: 'Feature', geometry: {type: 'MultiPolygon', coordinates: polys.filter((_, i) => areas[i] >= big * 0.02)}} as any;
-  const proj = geoMercator().fitExtent([[250, 440], [830, 1130]], main);
+  const main = {type: 'Feature', geometry: {type: 'MultiPolygon', coordinates: polys.filter((p, i) => areas[i] >= big * 0.004 && (geoCentroid({type: 'Polygon', coordinates: p} as any) as number[])[1] < 71.5)}} as any;
+  const proj = geoMercator().fitExtent([[170, 400], [910, 1150]], main);
   const gp = geoPath(proj);
   const [[x0, y0], [x1, y1]] = gp.bounds(main);
   return {d: gp(main) ?? '', x0, y0, x1, y1};
@@ -166,7 +165,7 @@ const Norway: React.FC<SP> = ({f, c, b}) => {
 };
 
 // ───────── phone search ─────────
-const Phone: React.FC<{x?: number; y?: number; s?: number; children: React.ReactNode}> = ({x = 540, y = 790, s = 1, children}) => (
+const Phone: React.FC<{x?: number; y?: number; s?: number; children: React.ReactNode}> = ({x = 540, y = 700, s = 1, children}) => (
   <div style={{position: 'absolute', left: x, top: y, width: 560, height: 760, transform: `translate(-50%,-50%) scale(${s})`, background: '#0E1220', borderRadius: 70, border: '14px solid #2B3040', boxShadow: '0 30px 80px rgba(0,0,0,0.7), inset 0 0 0 3px #4A5166', overflow: 'hidden'}}>
     <div style={{position: 'absolute', left: 205, top: 18, width: 122, height: 30, borderRadius: 20, background: '#000'}} />
     {children}
@@ -175,14 +174,15 @@ const Phone: React.FC<{x?: number; y?: number; s?: number; children: React.React
 const NAME = 'Kari Hansen';
 const Search: React.FC<SP> = ({f, c, b}) => {
   const t = f - b.from;
-  const typed = Math.max(0, Math.min(NAME.length, Math.floor((f - c('ph_type')) / 1.6)));
+  const rate = Math.max(1.6, (c('ph_pops') - c('ph_type') - 8) / NAME.length);
+  const typed = Math.max(0, Math.min(NAME.length, Math.floor((f - c('ph_type')) / rate)));
   const res = pop(f - c('ph_pops'));
   const s = interpolate(t, [0, 7], [0.75, 1], {...CL, easing: Easing.bezier(0.2, 1.4, 0.4, 1)});
   const tilt = interpolate(t, [0, 60], [-4, 2], CL);
   return (
     <AbsoluteFill style={{background: 'radial-gradient(circle at 50% 40%, #233163 0%, #0A0F22 70%)'}}>
       <div style={{position: 'absolute', inset: 0, transform: `rotate(${tilt}deg)`}}>
-        <Phone s={s * 1.12}>
+        <Phone s={s * 1.05}>
           <div style={{position: 'absolute', left: 34, right: 34, top: 90, fontFamily: UI, fontWeight: 700, fontSize: 34, color: K.grey}}>Tax list search</div>
           <div style={{position: 'absolute', left: 30, right: 30, top: 150, height: 92, borderRadius: 26, background: '#1E2436', border: `4px solid ${K.blue}`, display: 'flex', alignItems: 'center', padding: '0 26px', fontFamily: UI, fontWeight: 600, fontSize: 48, color: K.white}}>
             {NAME.slice(0, typed)}
@@ -194,7 +194,7 @@ const Search: React.FC<SP> = ({f, c, b}) => {
               <div style={{fontFamily: UI, fontWeight: 700, fontSize: 40, color: '#111'}}>{NAME}<div style={{fontSize: 28, color: '#666', fontWeight: 500}}>born 1988 · Oslo</div></div>
             </div>
             <div style={{fontFamily: UI, fontWeight: 600, fontSize: 30, color: '#666', marginTop: 34}}>INCOME</div>
-            <div style={{fontFamily: ANTON, fontSize: 104, color: '#111', lineHeight: 1}}>{money(612000 * Math.min(1, Math.max(0, f - c('ph_pops')) / 14), 'kr')}</div>
+            <div style={{fontFamily: ANTON, fontSize: 88, color: '#111', lineHeight: 1, whiteSpace: 'nowrap'}}>{money(612000 * Math.min(1, Math.max(0, f - c('ph_pops')) / 14), 'kr')}</div>
             <div style={{fontFamily: UI, fontWeight: 600, fontSize: 30, color: '#2E8B3A'}}>≈ $57,000</div>
           </div>
         </Phone>
@@ -211,6 +211,11 @@ const CARDS = [
 ];
 const Lookup: React.FC<SP> = ({f, c}) => (
   <AbsoluteFill style={{background: 'radial-gradient(circle at 50% 45%, #2A1E4A 0%, #0B0A18 70%)'}}>
+    {CARDS.map((x, i) =>
+      f < c(x.k) ? (
+        <div key={`g${i}`} style={{position: 'absolute', left: 540, top: x.y, width: 860, height: 200, transform: `translate(-50%,-50%) rotate(${x.rot}deg)`, borderRadius: 34, border: '6px dashed #5A4F80', display: 'flex', alignItems: 'center', justifyContent: 'center', fontFamily: ANTON, fontSize: 110, color: '#5A4F80', opacity: 0.8 + 0.2 * Math.sin(f / 5 + i)}}>?</div>
+      ) : null,
+    )}
     {CARDS.map((x, i) => {
       const at = c(x.k);
       if (f < at) return null;
@@ -256,7 +261,7 @@ const Count: React.FC<SP> = ({f, c}) => {
 const Gauge: React.FC<{x: number; label: string; v: number; col: string}> = ({x, label, v, col}) => {
   const ang = -90 + v * 180;
   return (
-    <g transform={`translate(${x} 860)`}>
+    <g transform={`translate(${x} 930)`}>
       <path d="M -190 0 A 190 190 0 0 1 190 0" fill="none" stroke="#2A2F3E" strokeWidth={46} />
       <path d="M -190 0 A 190 190 0 0 1 190 0" fill="none" stroke={col} strokeWidth={46} pathLength={1} strokeDasharray={`${v} 1`} />
       <g transform={`rotate(${ang})`}><rect x={-8} y={-170} width={16} height={170} rx={8} fill="#fff" /></g>
@@ -292,12 +297,12 @@ const Happy: React.FC<SP> = ({f, c}) => {
         ) : null}
       </svg>
       {stamp ? (
-        <div style={{position: 'absolute', left: 540, top: 520, transform: `translate(-50%,-50%) rotate(-8deg) scale(${interpolate(sa, [0, 3, 7], [2, 0.95, 1], CL)})`, opacity: interpolate(f - c('hp_happier'), [0, 6], [1, 0], CL), background: '#F4F4F2', border: '6px solid #000', borderRadius: 20, padding: '14px 30px', fontFamily: ANTON, fontSize: 70, color: '#111', display: 'flex', gap: 22, alignItems: 'center'}}>
+        <div style={{position: 'absolute', left: 540, top: 470, transform: `translate(-50%,-50%) rotate(-8deg) scale(${interpolate(sa, [0, 3, 7], [2, 0.95, 1], CL)})`, opacity: interpolate(f - c('hp_happier'), [0, 6], [1, 0], CL), background: '#F4F4F2', border: '6px solid #000', borderRadius: 20, padding: '14px 30px', fontFamily: ANTON, fontSize: 70, color: '#111', display: 'flex', gap: 22, alignItems: 'center'}}>
           PAYCHECK <span style={{color: '#fff', background: K.blue, padding: '0 18px', borderRadius: 10}}>NO CHANGE</span>
         </div>
       ) : null}
       {gap ? (
-        <div style={{position: 'absolute', left: 540, top: 1060, transform: `translate(-50%,-50%) scale(${pop(f - c('hp_sadder') - 16)})`, fontFamily: ANTON, fontSize: 92, color: K.yellow, WebkitTextStroke: '10px #000', paintOrder: 'stroke fill', whiteSpace: 'nowrap'}}>
+        <div style={{position: 'absolute', left: 540, top: 1110, transform: `translate(-50%,-50%) scale(${pop(f - c('hp_sadder') - 16)})`, fontFamily: ANTON, fontSize: 92, color: K.yellow, WebkitTextStroke: '10px #000', paintOrder: 'stroke fill', whiteSpace: 'nowrap'}}>
           HAPPINESS GAP +29%
         </div>
       ) : null}
@@ -336,14 +341,14 @@ const Notif: React.FC<SP> = ({f, c, b}) => {
   const clock = interpolate(f - b.from, [0, 200], [0, 1], CL);
   return (
     <AbsoluteFill style={{background: 'radial-gradient(circle at 50% 40%, #3A1A2A 0%, #0D0710 72%)'}}>
-      <Phone s={1.12} x={540 + shake}>
+      <Phone s={1.05} x={540 + shake}>
         <div style={{position: 'absolute', inset: 0, background: 'linear-gradient(180deg,#2B3A6B,#141B33)'}} />
         <div style={{position: 'absolute', top: 120, width: '100%', textAlign: 'center', fontFamily: UI, fontWeight: 500, fontSize: 130, color: '#fff'}}>21:4{Math.floor(clock * 3) + 6}</div>
         <div style={{position: 'absolute', left: 24, right: 24, top: 330 - (1 - d) * 300, opacity: d, background: 'rgba(244,244,242,0.96)', borderRadius: 34, padding: '24px 26px', boxShadow: '0 12px 40px rgba(0,0,0,0.5)'}}>
           <div style={{display: 'flex', alignItems: 'center', gap: 14, fontFamily: UI, fontWeight: 600, fontSize: 28, color: '#666'}}>
             <div style={{width: 40, height: 40, borderRadius: 10, background: K.red}} /> TAX LIST · now
           </div>
-          <div style={{fontFamily: UI, fontWeight: 700, fontSize: 42, color: '#111', marginTop: 10, lineHeight: 1.15}}>
+          <div style={{fontFamily: UI, fontWeight: 700, fontSize: 50, color: '#111', marginTop: 10, lineHeight: 1.12}}>
             <span style={{color: K.red}}>Dave</span> (born 1991, Oslo) just looked up your income
           </div>
         </div>
@@ -360,7 +365,7 @@ const Crash: React.FC<SP> = ({f, c}) => {
   const landed = f >= a + 26;
   const pts = Array.from({length: 40}, (_, i) => {
     const x = 120 + i * 21;
-    const y = i < 20 ? 640 + Math.sin(i * 1.3) * 18 : 640 + Math.pow((i - 19) / 20, 1.6) * 420 * u;
+    const y = i < 20 ? 560 + Math.sin(i * 1.3) * 18 : 560 + Math.pow((i - 19) / 20, 1.6) * 330 * u;
     return `${x},${y}`;
   }).join(' ');
   return (
@@ -369,8 +374,8 @@ const Crash: React.FC<SP> = ({f, c}) => {
         <polyline points={pts} fill="none" stroke={K.red} strokeWidth={16} strokeLinejoin="round" strokeLinecap="round" />
       </svg>
       <div style={{position: 'absolute', top: 470, width: '100%', textAlign: 'center', fontFamily: UI, fontWeight: 700, fontSize: 52, color: K.grey, letterSpacing: 4}}>SEARCHES PER YEAR</div>
-      <div style={{position: 'absolute', top: 900, width: '100%', textAlign: 'center', fontFamily: ANTON, fontSize: 190, color: landed ? K.red : K.white, filter: `blur(${u > 0 && !landed ? 4 : 0}px)`}}>{Math.round(v).toLocaleString('en-US')}</div>
-      {landed ? <div style={{position: 'absolute', left: 820, top: 860, transform: `translate(-50%,-50%) rotate(10deg) scale(${pop(f - a - 26)})`, background: K.red, color: '#fff', fontFamily: ANTON, fontSize: 90, padding: '0 26px', borderRadius: 16, border: '6px solid #000'}}>-87%</div> : null}
+      <div style={{position: 'absolute', top: 780, width: '100%', textAlign: 'center', fontFamily: ANTON, fontSize: 190, color: landed ? K.red : K.white, filter: `blur(${u > 0 && !landed ? 4 : 0}px)`}}>{Math.round(v).toLocaleString('en-US')}</div>
+      {landed ? <div style={{position: 'absolute', left: 820, top: 740, transform: `translate(-50%,-50%) rotate(10deg) scale(${pop(f - a - 26)})`, background: K.red, color: '#fff', fontFamily: ANTON, fontSize: 90, padding: '0 26px', borderRadius: 16, border: '6px solid #000'}}>-87%</div> : null}
     </AbsoluteFill>
   );
 };

@@ -37,7 +37,7 @@
     {"scene": "peek", "dave": "talk", "music": null,
      "cues": [{"k": "pk_caught", "on": "caught", "sfx": [[0, "ea1/k_flash", 0.6], [1, "ea1/claim_buzz", 0.45]]}],
      "sfx0": [[0, "ea1/crickets", 0.3]]},
-    {"scene": "street_loop", "text": "EVERYONE SEES YOUR SALARY?", "dave": "point", "music": "sneaky_snitch",
+    {"scene": "street_loop", "text": "EVERYONE SEES YOUR SALARY?", "dave": "worried", "music": "sneaky_snitch",
      "cues": [{"k": "loop_t0", "on": "next", "sfx": [[0, "ea1/reply_pop", 0.35]]},
               {"k": "loop_t1", "on": "time", "sfx": [[0, "ea1/reply_pop", 0.35]]},
               {"k": "loop_t2", "on": "wonder", "sfx": [[0, "ea1/reply_pop", 0.35]]},
