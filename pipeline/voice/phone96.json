@@ -1,0 +1,749 @@
+{
+ "fps": 30,
+ "total": 32.151,
+ "hash": "f85fe029e4392cb2",
+ "chapters": [],
+ "beats": [
+  {
+   "id": "b01",
+   "text": "What if your phone took one dollar every time you checked it?",
+   "start": 0.08,
+   "end": 2.4450000000000003,
+   "words": [
+    {
+     "text": "What",
+     "start": 0.08,
+     "end": 0.253
+    },
+    {
+     "text": "if",
+     "start": 0.272,
+     "end": 0.376
+    },
+    {
+     "text": "your",
+     "start": 0.387,
+     "end": 0.56
+    },
+    {
+     "text": "phone",
+     "start": 0.579,
+     "end": 0.786
+    },
+    {
+     "text": "took",
+     "start": 0.809,
+     "end": 0.982
+    },
+    {
+     "text": "one",
+     "start": 1.001,
+     "end": 1.139
+    },
+    {
+     "text": "dollar",
+     "start": 1.155,
+     "end": 1.397
+    },
+    {
+     "text": "every",
+     "start": 1.424,
+     "end": 1.631
+    },
+    {
+     "text": "time",
+     "start": 1.654,
+     "end": 1.827
+    },
+    {
+     "text": "you",
+     "start": 1.846,
+     "end": 1.984
+    },
+    {
+     "text": "checked",
+     "start": 1.999,
+     "end": 2.276
+    },
+    {
+     "text": "it?",
+     "start": 2.306,
+     "end": 2.445
+    }
+   ]
+  },
+  {
+   "id": "b02",
+   "text": "Because you would be broke before lunch.",
+   "start": 2.801625,
+   "end": 4.361625,
+   "words": [
+    {
+     "text": "Because",
+     "start": 2.802,
+     "end": 3.082
+    },
+    {
+     "text": "you",
+     "start": 3.082,
+     "end": 3.362
+    },
+    {
+     "text": "would",
+     "start": 3.362,
+     "end": 3.482
+    },
+    {
+     "text": "be",
+     "start": 3.482,
+     "end": 3.602
+    },
+    {
+     "text": "broke",
+     "start": 3.602,
+     "end": 3.802
+    },
+    {
+     "text": "before",
+     "start": 3.802,
+     "end": 4.082
+    },
+    {
+     "text": "lunch.",
+     "start": 4.082,
+     "end": 4.362
+    }
+   ]
+  },
+  {
+   "id": "b03",
+   "text": "The average American checks their phone ninety six times a day.",
+   "start": 4.9498125,
+   "end": 7.2518125,
+   "words": [
+    {
+     "text": "The",
+     "start": 4.95,
+     "end": 5.08
+    },
+    {
+     "text": "average",
+     "start": 5.095,
+     "end": 5.356
+    },
+    {
+     "text": "American",
+     "start": 5.385,
+     "end": 5.679
+    },
+    {
+     "text": "checks",
+     "start": 5.711,
+     "end": 5.94
+    },
+    {
+     "text": "their",
+     "start": 5.965,
+     "end": 6.161
+    },
+    {
+     "text": "phone",
+     "start": 6.182,
+     "end": 6.378
+    },
+    {
+     "text": "ninety",
+     "start": 6.4,
+     "end": 6.628
+    },
+    {
+     "text": "six",
+     "start": 6.654,
+     "end": 6.784
+    },
+    {
+     "text": "times",
+     "start": 6.799,
+     "end": 6.994
+    },
+    {
+     "text": "a",
+     "start": 7.016,
+     "end": 7.081
+    },
+    {
+     "text": "day.",
+     "start": 7.089,
+     "end": 7.252
+    }
+   ]
+  },
+  {
+   "id": "b04",
+   "text": "That is once every ten minutes you are awake.",
+   "start": 7.787895833333334,
+   "end": 9.567895833333333,
+   "words": [
+    {
+     "text": "That",
+     "start": 7.788,
+     "end": 7.948
+    },
+    {
+     "text": "is",
+     "start": 7.948,
+     "end": 8.048
+    },
+    {
+     "text": "once",
+     "start": 8.048,
+     "end": 8.208
+    },
+    {
+     "text": "every",
+     "start": 8.208,
+     "end": 8.508
+    },
+    {
+     "text": "ten",
+     "start": 8.508,
+     "end": 8.768
+    },
+    {
+     "text": "minutes",
+     "start": 8.768,
+     "end": 8.988
+    },
+    {
+     "text": "you",
+     "start": 8.988,
+     "end": 9.208
+    },
+    {
+     "text": "are",
+     "start": 9.208,
+     "end": 9.328
+    },
+    {
+     "text": "awake.",
+     "start": 9.328,
+     "end": 9.568
+    }
+   ]
+  },
+  {
+   "id": "b05",
+   "text": "So that is ninety six dollars a day just to look at a screen.",
+   "start": 9.9749375,
+   "end": 12.6799375,
+   "words": [
+    {
+     "text": "So",
+     "start": 9.975,
+     "end": 10.094
+    },
+    {
+     "text": "that",
+     "start": 10.108,
+     "end": 10.306
+    },
+    {
+     "text": "is",
+     "start": 10.329,
+     "end": 10.448
+    },
+    {
+     "text": "ninety",
+     "start": 10.461,
+     "end": 10.74
+    },
+    {
+     "text": "six",
+     "start": 10.77,
+     "end": 10.93
+    },
+    {
+     "text": "dollars",
+     "start": 10.947,
+     "end": 11.265
+    },
+    {
+     "text": "a",
+     "start": 11.301,
+     "end": 11.38
+    },
+    {
+     "text": "day",
+     "start": 11.389,
+     "end": 11.548
+    },
+    {
+     "text": "just",
+     "start": 11.566,
+     "end": 11.765
+    },
+    {
+     "text": "to",
+     "start": 11.787,
+     "end": 11.906
+    },
+    {
+     "text": "look",
+     "start": 11.92,
+     "end": 12.118
+    },
+    {
+     "text": "at",
+     "start": 12.14,
+     "end": 12.26
+    },
+    {
+     "text": "a",
+     "start": 12.273,
+     "end": 12.353
+    },
+    {
+     "text": "screen.",
+     "start": 12.361,
+     "end": 12.68
+    }
+   ]
+  },
+  {
+   "id": "b06",
+   "text": "And by the end of the year it is thirty five thousand dollars.",
+   "start": 13.269166666666667,
+   "end": 15.911166666666666,
+   "words": [
+    {
+     "text": "And",
+     "start": 13.269,
+     "end": 13.422
+    },
+    {
+     "text": "by",
+     "start": 13.439,
+     "end": 13.554
+    },
+    {
+     "text": "the",
+     "start": 13.567,
+     "end": 13.72
+    },
+    {
+     "text": "end",
+     "start": 13.737,
+     "end": 13.89
+    },
+    {
+     "text": "of",
+     "start": 13.907,
+     "end": 14.022
+    },
+    {
+     "text": "the",
+     "start": 14.035,
+     "end": 14.188
+    },
+    {
+     "text": "year",
+     "start": 14.205,
+     "end": 14.396
+    },
+    {
+     "text": "it",
+     "start": 14.418,
+     "end": 14.532
+    },
+    {
+     "text": "is",
+     "start": 14.545,
+     "end": 14.66
+    },
+    {
+     "text": "thirty",
+     "start": 14.673,
+     "end": 14.941
+    },
+    {
+     "text": "five",
+     "start": 14.971,
+     "end": 15.162
+    },
+    {
+     "text": "thousand",
+     "start": 15.183,
+     "end": 15.528
+    },
+    {
+     "text": "dollars.",
+     "start": 15.566,
+     "end": 15.911
+    }
+   ]
+  },
+  {
+   "id": "b07",
+   "text": "That is a brand new car every year gone to notifications.",
+   "start": 16.7815,
+   "end": 19.1215,
+   "words": [
+    {
+     "text": "That",
+     "start": 16.782,
+     "end": 16.902
+    },
+    {
+     "text": "is",
+     "start": 16.902,
+     "end": 17.042
+    },
+    {
+     "text": "a",
+     "start": 17.042,
+     "end": 17.142
+    },
+    {
+     "text": "brand",
+     "start": 17.142,
+     "end": 17.322
+    },
+    {
+     "text": "new",
+     "start": 17.322,
+     "end": 17.542
+    },
+    {
+     "text": "car",
+     "start": 17.542,
+     "end": 17.782
+    },
+    {
+     "text": "every",
+     "start": 17.782,
+     "end": 18.021
+    },
+    {
+     "text": "year",
+     "start": 18.021,
+     "end": 18.341
+    },
+    {
+     "text": "gone",
+     "start": 18.341,
+     "end": 18.582
+    },
+    {
+     "text": "to",
+     "start": 18.582,
+     "end": 18.702
+    },
+    {
+     "text": "notifications.",
+     "start": 18.702,
+     "end": 19.122
+    }
+   ]
+  },
+  {
+   "id": "b08",
+   "text": "But people your age check it twice as much.",
+   "start": 19.9171875,
+   "end": 21.4771875,
+   "words": [
+    {
+     "text": "But",
+     "start": 19.917,
+     "end": 19.997
+    },
+    {
+     "text": "people",
+     "start": 19.997,
+     "end": 20.177
+    },
+    {
+     "text": "your",
+     "start": 20.177,
+     "end": 20.377
+    },
+    {
+     "text": "age",
+     "start": 20.377,
+     "end": 20.617
+    },
+    {
+     "text": "check",
+     "start": 20.617,
+     "end": 20.837
+    },
+    {
+     "text": "it",
+     "start": 20.837,
+     "end": 20.977
+    },
+    {
+     "text": "twice",
+     "start": 20.977,
+     "end": 21.117
+    },
+    {
+     "text": "as",
+     "start": 21.117,
+     "end": 21.277
+    },
+    {
+     "text": "much.",
+     "start": 21.277,
+     "end": 21.477
+    }
+   ]
+  },
+  {
+   "id": "b09",
+   "text": "So you would pay seventy thousand dollars a year.",
+   "start": 22.0683125,
+   "end": 24.1433125,
+   "words": [
+    {
+     "text": "So",
+     "start": 22.068,
+     "end": 22.181
+    },
+    {
+     "text": "you",
+     "start": 22.194,
+     "end": 22.345
+    },
+    {
+     "text": "would",
+     "start": 22.362,
+     "end": 22.589
+    },
+    {
+     "text": "pay",
+     "start": 22.614,
+     "end": 22.765
+    },
+    {
+     "text": "seventy",
+     "start": 22.782,
+     "end": 23.084
+    },
+    {
+     "text": "thousand",
+     "start": 23.118,
+     "end": 23.458
+    },
+    {
+     "text": "dollars",
+     "start": 23.496,
+     "end": 23.798
+    },
+    {
+     "text": "a",
+     "start": 23.832,
+     "end": 23.908
+    },
+    {
+     "text": "year.",
+     "start": 23.916,
+     "end": 24.143
+    }
+   ]
+  },
+  {
+   "id": "b10",
+   "text": "And the scary part is you would still keep checking it.",
+   "start": 24.660729166666666,
+   "end": 26.800729166666667,
+   "words": [
+    {
+     "text": "And",
+     "start": 24.661,
+     "end": 24.761
+    },
+    {
+     "text": "the",
+     "start": 24.761,
+     "end": 24.821
+    },
+    {
+     "text": "scary",
+     "start": 24.821,
+     "end": 24.961
+    },
+    {
+     "text": "part",
+     "start": 24.961,
+     "end": 25.261
+    },
+    {
+     "text": "is",
+     "start": 25.261,
+     "end": 25.521
+    },
+    {
+     "text": "you",
+     "start": 25.681,
+     "end": 25.861
+    },
+    {
+     "text": "would",
+     "start": 25.861,
+     "end": 25.961
+    },
+    {
+     "text": "still",
+     "start": 25.961,
+     "end": 26.161
+    },
+    {
+     "text": "keep",
+     "start": 26.161,
+     "end": 26.321
+    },
+    {
+     "text": "checking",
+     "start": 26.321,
+     "end": 26.641
+    },
+    {
+     "text": "it.",
+     "start": 26.641,
+     "end": 26.801
+    }
+   ]
+  },
+  {
+   "id": "b11",
+   "text": "Because the phone was never free and you already pay with your time.",
+   "start": 27.125833333333333,
+   "end": 29.70583333333333,
+   "words": [
+    {
+     "text": "Because",
+     "start": 27.126,
+     "end": 27.306
+    },
+    {
+     "text": "the",
+     "start": 27.306,
+     "end": 27.426
+    },
+    {
+     "text": "phone",
+     "start": 27.426,
+     "end": 27.546
+    },
+    {
+     "text": "was",
+     "start": 27.546,
+     "end": 27.726
+    },
+    {
+     "text": "never",
+     "start": 27.726,
+     "end": 27.926
+    },
+    {
+     "text": "free",
+     "start": 27.926,
+     "end": 28.226
+    },
+    {
+     "text": "and",
+     "start": 28.226,
+     "end": 28.586
+    },
+    {
+     "text": "you",
+     "start": 28.586,
+     "end": 28.666
+    },
+    {
+     "text": "already",
+     "start": 28.666,
+     "end": 28.906
+    },
+    {
+     "text": "pay",
+     "start": 28.906,
+     "end": 29.186
+    },
+    {
+     "text": "with",
+     "start": 29.186,
+     "end": 29.346
+    },
+    {
+     "text": "your",
+     "start": 29.346,
+     "end": 29.466
+    },
+    {
+     "text": "time.",
+     "start": 29.466,
+     "end": 29.706
+    }
+   ]
+  },
+  {
+   "id": "b12",
+   "text": "So next time you pick it up just ask yourself",
+   "start": 30.119020833333334,
+   "end": 31.879020833333335,
+   "words": [
+    {
+     "text": "So",
+     "start": 30.119,
+     "end": 30.239
+    },
+    {
+     "text": "next",
+     "start": 30.239,
+     "end": 30.399
+    },
+    {
+     "text": "time",
+     "start": 30.399,
+     "end": 30.639
+    },
+    {
+     "text": "you",
+     "start": 30.639,
+     "end": 30.759
+    },
+    {
+     "text": "pick",
+     "start": 30.759,
+     "end": 30.879
+    },
+    {
+     "text": "it",
+     "start": 30.879,
+     "end": 30.999
+    },
+    {
+     "text": "up",
+     "start": 30.999,
+     "end": 31.119
+    },
+    {
+     "text": "just",
+     "start": 31.319,
+     "end": 31.419
+    },
+    {
+     "text": "ask",
+     "start": 31.419,
+     "end": 31.619
+    },
+    {
+     "text": "yourself",
+     "start": 31.619,
+     "end": 31.879
+    }
+   ]
+  }
+ ]
+}
