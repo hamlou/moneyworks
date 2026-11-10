@@ -1,7 +1,7 @@
 """Scene Shorts (src/v6/SalShort.tsx): pipeline/episodes/<id>.json (voice text) + pipeline/scenes/<id>.json (scene/cue spec)
 → src/v6/scenes/<id>.plan.json + src/v6/salEps.ts (composition Sal-<id>).
 Usage: py tools/salshort.py build <id> [--fake-voice]   |   py tools/salshort.py sync <id>
-Checks (SHORTS_MUST): every cue word found, gaps <= 0.3 s, voice length == plan length, first word <= 0.2 s."""
+Checks (SHORTS.md [MUST]): every cue word found, gaps <= 0.3 s, voice length == plan length, first word <= 0.2 s."""
 import json, os, re, subprocess, sys
 from pathlib import Path
 
@@ -97,7 +97,7 @@ def build():
             m = None
         nxt = beats.index(b) + 1 < len(beats) and beats[beats.index(b) + 1]["id"] == pb
         if nxt:
-            z -= 9  # music drops out before the punchline (SHORTS_MUST §2)
+            z -= 9  # music drops out before the punchline (SHORTS.md [MUST] §2)
         if not m:
             continue
         if music and music[-1]["src"] == m and music[-1]["to"] >= a - 1:

@@ -52,7 +52,7 @@ FX_SFX = {
 }
 STYLE_SFX = {"gone": ("ea1/fail", 0.5), "win": ("ea1/check1", 0.45), "loss": ("ea1/claim_buzz", 0.4), "neutral": None}
 MUSIC = {"gone": "darkest_child", "loss": "investigations", "win": "life_of_riley", "neutral": "thinking_music"}
-MUSIC_V = 0.15  # SHORTS_MUST §2: music 15–20 % of the voice
+MUSIC_V = 0.15  # SHORTS.md [MUST] §2: music 15–20 % of the voice
 
 
 def die(m):
@@ -270,7 +270,7 @@ def build(eid, fake=False):
     print(f"plan src/v6/maps/{eid}.plan.json: {secs:.1f} s | {len(beats)} beats (longest {longest:.1f} s) | {sum(len(b['fx']) for b in beats)} fx | "
           f"{len(sfx)} sfx | dave poses {sorted(dave) or 'none'} | render: gh workflow run v6demo.yml -f comp=Map-{eid}")
     if not 25 <= secs <= 40 and not fake:
-        print(f"  ! {secs:.1f} s — SHORTS_MUST §1 wants 25–40 s")
+        print(f"  ! {secs:.1f} s — SHORTS.md [MUST] §1 wants 25–40 s")
     if asec is not None and asec > frames / FPS + 0.05:
         die(f"voice {asec:.2f} s is longer than the plan {frames / FPS:.2f} s — the ending would be cut")
     sync(eid)

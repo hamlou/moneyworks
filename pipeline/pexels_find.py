@@ -12,7 +12,7 @@ pipeline/photos.py already accepts this shape (its FREE tuple includes "pexels")
 
 NOTE: this script needs outbound HTTPS to api.pexels.com and images.pexels.com. The agent cloud sandbox's egress
 proxy blocks both (same org-wide policy that blocks commons.wikimedia.org and images.unsplash.com) -- confirmed
-13 Oct 2026, see PLAYBOOK_SHORTS.md. Run this on the owner's PC (or any session with open network access), same
+13 Oct 2026, see SHORTS.md [PLAYBOOK]. Run this on the owner's PC (or any session with open network access), same
 as photo_find.py.
 """
 import io

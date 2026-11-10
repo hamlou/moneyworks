@@ -10,7 +10,7 @@ on:
       - 'pipeline/episodes/ep57-short.json'
       - 'pipeline/photos/ep57.json'
       - 'pipeline/shorts/short57.md'
-      - 'PLAYBOOK.md'
+      - 'LONG.md [INDEX]'
       - 'src/photo.tsx'
       - 'src/props2.tsx'
       - 'pipeline/tts.py'

@@ -1,7 +1,7 @@
 name: blender
 run-name: blender ${{ inputs.shot || 'taxshot' }} ${{ inputs.mode || 'auto' }}
 
-# Real 3D shots the reference's way (STYLE_3D.md §12): Blender 4.2 LTS + CC0 Poly Haven models, Cycles on CPU.
+# Real 3D shots the reference's way (SHORTS.md/LONG.md [3D] §12): Blender 4.2 LTS + CC0 Poly Haven models, Cycles on CPU.
 # mode=preview → 4 stills at half res (layout check, ~5 min); mode=full → 120 frames, 4 parallel chunks → mp4.
 on:
   push:

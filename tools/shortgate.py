@@ -1,4 +1,4 @@
-"""SWIPE-KILLER GATE for Shorts (SHORTS_MUST.md §2). Runs on GitHub after the render (ffmpeg only, no GPU).
+"""SWIPE-KILLER GATE for Shorts (SHORTS.md [MUST] §2). Runs on GitHub after the render (ffmpeg only, no GPU).
 py tools/shortgate.py <video.mp4> [report.md]   → exit 1 if any MUST fails, prints every failure with its second.
 Checks: frame 0 not black/faded · first speech ≤ 0.3 s · no silence > 0.35 s (except one ≤ 0.6 s beat) ·
 no static picture > 1.5 s (> 1.0 s in the first 3 s) · 25-45 s · loudness ≈ -14 LUFS · last frame ≈ first frame (loop)."""

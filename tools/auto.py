@@ -99,7 +99,7 @@ MOODS = {
     "hype": ["volatile_reaction", "crypto"],
 }
 SFX = sorted({p.stem for p in Path("public/sfx/ea1").glob("*.wav")})
-# SHORTS (kind "short", SHORTS_MUST.md): vertical 1080x1920, 25-40 s, hook starts "What if", loops into line 1, no CTA
+# SHORTS (kind "short", SHORTS.md [MUST]): vertical 1080x1920, 25-40 s, hook starts "What if", loops into line 1, no CTA
 SHORT_BANNED = ["stick around", "by the end of this", "today we", "let's see", "subscribe", "follow", "part two", "comment"]
 SHORT_BG_OFF = ["macro", "photo", "home", "pose", "clip"]  # cards / Dave cut-outs: not used in Shorts (no K render)
 SHORT_OV_OFF = ["checks", "bars"]
@@ -161,7 +161,7 @@ def check(eid, quiet=False):
         E.append("kind must be 'short' (vertical Short) or 'long' (default)")
     short = is_short(s)
     if short and s.get("signoff"):
-        E.append("shorts: no signoff (an outro = swipe point, SHORTS_MUST §1) — the last line loops into line 1")
+        E.append("shorts: no signoff (an outro = swipe point, SHORTS.md [MUST] §1) — the last line loops into line 1")
     if s.get("outfit", "hoodie") not in OUTFITS:
         E.append(f"outfit must be one of {OUTFITS}")
     src_ids = {x.get("id") for x in s["sources"]}
@@ -200,7 +200,7 @@ def check(eid, quiet=False):
             E.append(f"look.{k} must be one of {list(ok)}")
     prev = sorted((q for q in Path("pipeline/auto").glob("*.json") if q.stem != eid), key=mtime)[-2:]
     if short and lk.get("hook_form") != "question":
-        E.append("shorts: look.hook_form must be 'question' (the hook starts with 'What if…', SHORTS_MUST §0.3)")
+        E.append("shorts: look.hook_form must be 'question' (the hook starts with 'What if…', SHORTS.md [MUST] §0.3)")
     for i, q in enumerate(reversed(prev)):
         try:
             pj = json.loads(q.read_text(encoding="utf8"))
@@ -299,7 +299,7 @@ def check(eid, quiet=False):
             low = " ".join(say.lower().split())
             for ph in SHORT_BANNED:
                 if re.search(r"\b" + re.escape(ph) + r"\b", low):
-                    E.append(f"{lid}: shorts never say '{ph}' (talks about the video / CTA = swipe point, SHORTS_MUST §1)")
+                    E.append(f"{lid}: shorts never say '{ph}' (talks about the video / CTA = swipe point, SHORTS.md [MUST] §1)")
         if "," in say:
             E.append(f"{lid}: no commas in spoken lines (rewrite as connected speech): {say[:60]}")
         if re.search(r"\d", say):
@@ -393,7 +393,7 @@ def check(eid, quiet=False):
         E.append(f"hook has {hw} words (max 45 ≈ 15 s): cut words — prize, twist, question, promise in short lines")
     if short:
         if not hook[0]["say"].lower().startswith("what if"):
-            E.append("shorts: the first hook line MUST start with 'What if' (SHORTS_MUST §0.3)")
+            E.append("shorts: the first hook line MUST start with 'What if' (SHORTS.md [MUST] §0.3)")
         qi = next((i for i, ln in enumerate(hook[:2]) if "?" in ln["say"]), None)
         if qi is None:
             E.append("shorts: the 'What if…?' question must end with '?' in hook line 1 or 2 (fully said by 3 s)")
@@ -409,7 +409,7 @@ def check(eid, quiet=False):
             if ln.get("loop"):
                 E.append(f"{lid_}: only the last line can be the loop line")
         if sum(1 for _, _, ln in L if ln.get("beat")) > 1:
-            E.append("shorts: only ONE planned 0.3 s beat (\"beat\": true) is allowed (SHORTS_MUST §2)")
+            E.append("shorts: only ONE planned 0.3 s beat (\"beat\": true) is allowed (SHORTS.md [MUST] §2)")
         if L[0][2].get("beat"):
             E.append("k1: the first line cannot be a beat (first word at ≤ 0.2 s)")
     else:
@@ -427,7 +427,7 @@ def check(eid, quiet=False):
             E.append("shorts: title = the 'What if…?' question, ≤ 60 chars (+ #shorts)")
         est = total_words / SHORT_WPS + 0.12 * len(L)
         if not 25 <= est <= 40:
-            E.append(f"shorts: ~{est:.0f} s spoken ({total_words} words at {SHORT_WPS:.0f} words/s) — must be 25-40 s (SHORTS_MUST §1)")
+            E.append(f"shorts: ~{est:.0f} s spoken ({total_words} words at {SHORT_WPS:.0f} words/s) — must be 25-40 s (SHORTS.md [MUST] §1)")
     else:
         loops(s, E)
         gags = [ln for _, _, ln in L if ln.get("gag")]
@@ -517,7 +517,7 @@ def write_voice_json(eid):
     for i, (lid, ci, ln) in enumerate(L):
         punch = len(ln["say"].split()) <= 9 or ln.get("punch")
         pause = 0.6 if punch else 0.35
-        if is_short(s):  # SHORTS_MUST §2: no silence > 0.3 s; voice_gaps.py trims the rest
+        if is_short(s):  # SHORTS.md [MUST] §2: no silence > 0.3 s; voice_gaps.py trims the rest
             pause = 0.3 if i + 1 < len(L) and L[i + 1][2].get("beat") else 0.1
         b = {"id": lid, "src": ln.get("src", ""), "text": ln["say"], "pause": pause}
         if punch or ci == 0:
@@ -837,7 +837,7 @@ def plan(eid):
                 music.append({"src": track, "from": p, "to": x - (4 if x < b else 0), "v": SHORT_MUSIC_V if short else 0.08 if mood == "tense" else 0.07, "off": (p - a) + FPS * 7 * used[mood]})
             p = y
     # autofill: any stretch > 2.8 s without a new image gets hard camera punch-ins (cut, don't tween) every ~1.6 s
-    # Shorts (SHORTS_MUST §2: new image every 1-2 s, never static > 1.5 s): a punch-in every ≤ 1.2 s everywhere
+    # Shorts (SHORTS.md [MUST] §2: new image every 1-2 s, never static > 1.5 s): a punch-in every ≤ 1.2 s everywhere
     marks = sorted({b["from"] for b in bgs} | {o["from"] for o in ovs if o["k"] in ("text", "count", "burst", "stamp", "bars", "checks")} | {total})
     np_ = 0
     for a, b in zip(marks, marks[1:]):
@@ -1048,7 +1048,7 @@ def qa(eid, P=None):
             E.append(f"{(b - a) / FPS:.1f} s with nothing new at {a / FPS:.1f}s ({fmt(a)}) — add an event there")
     if short:
         if not 25 <= secs <= 40:
-            (E if not 22 <= secs <= 45 else W).append(f"short is {secs:.1f} s (SHORTS_MUST: 25-40 s) — cut or add words")
+            (E if not 22 <= secs <= 45 else W).append(f"short is {secs:.1f} s (SHORTS.md [MUST]: 25-40 s) — cut or add words")
         T = json.loads(Path(f"src/v6/{eid}_timing.json").read_text(encoding="utf8"))
         ws = [w for b_ in T["beats"] for w in b_.get("words", [])]
         if ws and ws[0]["start"] > 0.2:

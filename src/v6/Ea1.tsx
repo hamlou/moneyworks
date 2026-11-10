@@ -109,7 +109,7 @@ export const Ea1: React.FC = () => {
 
   let scene: React.ReactNode;
   if (f < k2) {
-    // HOOK 1 — the prize first (STYLE_3D §15.3): cash raining into the lens + the number rolling from frame 2
+    // HOOK 1 — the prize first (SHORTS.md/LONG.md [3D] §15.3): cash raining into the lens + the number rolling from frame 2
     scene = (
       <>
         <Shake f={f} at={stop} amp={12} len={10}>

@@ -2,7 +2,7 @@ import React from 'react';
 import {AbsoluteFill, Audio, Easing, Sequence, interpolate, staticFile} from 'remotion';
 import {ANTON, K, UI, lin, outQuick, snap} from './kit';
 
-// kit2 (29 Oct 2026, STYLE_3D §13): the reference's "living diagrams" for home base and 2D beats.
+// kit2 (29 Oct 2026, SHORTS.md/LONG.md [3D] §13): the reference's "living diagrams" for home base and 2D beats.
 // SelfDrawGraph — a line chart that draws itself point by point (with a marker riding the tip)
 // WipePanel     — a full-height colour panel that wipes in from a side (his Twitch / Rumble split)
 // FlyStack      — cards that fly in from off-screen with motion blur and land in a messy stack
@@ -107,7 +107,7 @@ export const ThumbCard: React.FC<{hue: number; title: string}> = ({hue, title}) 
   </div>
 );
 
-// music changes with the situation (STYLE_3D §0.5): one track per scene mood, hard stops before punchlines, CC-BY Kevin MacLeod
+// music changes with the situation (SHORTS.md/LONG.md [3D] §0.5): one track per scene mood, hard stops before punchlines, CC-BY Kevin MacLeod
 export type MSeg = {src: string; from: number; to: number; v?: number; off?: number};
 export const Music: React.FC<{segs: MSeg[]}> = ({segs}) => (
   <>

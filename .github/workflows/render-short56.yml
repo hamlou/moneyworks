@@ -9,7 +9,7 @@ on:
       - 'pipeline/episodes/ep56-short.json'
       - 'pipeline/photos/ep56.json'
       - 'pipeline/shorts/short56.md'
-      - 'PLAYBOOK.md'
+      - 'LONG.md [INDEX]'
       - 'src/photo.tsx'
       - 'src/shorts/Short56.tsx'
       - 'src/Root.tsx'

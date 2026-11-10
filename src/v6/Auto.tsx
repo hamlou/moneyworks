@@ -27,7 +27,7 @@ let HEAD = ANTON;
 // verbatim macro quotes, kinetic text, counters, bursts, Src line on every fact, flashes + shakes on hits.
 type Bg = {from: number; to: number; k: string; n?: string; off?: number; t?: number; len24?: number; pose?: string | null; set?: [string, number]; title?: string; lines?: string[]; far?: string[]; file?: string; label?: string; flash?: boolean};
 type Ov = {from: number; to: number; k: string; [x: string]: any};
-// kind 'short' = vertical 9:16 Short (w 1080 x h 1920, SHORTS_MUST.md); default = 16:9 long-form
+// kind 'short' = vertical 9:16 Short (w 1080 x h 1920, SHORTS.md [MUST]); default = 16:9 long-form
 export type Plan = {id: string; title: string; kind?: 'short' | 'long'; w?: number; h?: number; frames: number; hookEnd: number; look?: {grade: string; font: string}; bgs: Bg[]; ovs: Ov[]; music: MSeg[]; sfx: Cue[]; lens: Record<string, number>};
 
 const OUTLINE = ['2px 0', '-2px 0', '0 2px', '0 -2px'].map((o) => `drop-shadow(${o} 0 #111)`).join(' ');

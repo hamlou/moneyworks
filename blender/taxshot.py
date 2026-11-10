@@ -1,4 +1,4 @@
-"""TaxShot in Blender, the reference's own pipeline (STYLE_3D.md §11.1/§12): real CC0 models, lit room, Cycles,
+"""TaxShot in Blender, the reference's own pipeline (SHORTS.md/LONG.md [3D] §11.1/§12): real CC0 models, lit room, Cycles,
 24 fps, motion blur, Freestyle black outline on the character only, ink-line faces swapped per line.
 Line: "school spent 12 years teaching me triangles and zero minutes teaching me taxes".
 blender -b -P blender/taxshot.py -- --assets A --tex T --out O [--frames 1-120 | 5,40,60] [--samples 32] [--res 1920x1080] [--engine cycles|eevee]

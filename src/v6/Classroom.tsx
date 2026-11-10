@@ -7,7 +7,7 @@ import {POSES3D} from './Dave3D';
 import {ComicBurst, DaveT, PKey, Smear, Stage, WhiteFlash} from './kit';
 
 // TaxShot: free-kit answer to the Higgsfield test (qa_dl/hf_test). Line: "school spent 12 years teaching me
-// triangles and zero minutes teaching me taxes" → props straight from the line (STYLE_3D.md §12, props-from-script):
+// triangles and zero minutes teaching me taxes" → props straight from the line (SHORTS.md/LONG.md [3D] §12, props-from-script):
 // classroom + chalkboard of triangles + a TAX FORM in Dave's hands. Grammar from §12.3:
 // A 0–59   wide, locked camera, Dave holds the form; face snaps to shock at 12; turns to the board at 34
 // B 60–99  1 white-silhouette frame → punch-in close-up on Dave + board, spiral eyes

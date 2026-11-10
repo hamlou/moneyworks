@@ -5,7 +5,7 @@ import V from '../../pipeline/voice/test1.json';
 import {ANTON, ComicBurst, Counter, HomeBase, K, NumCard, ReportCard, Smear, Threshold, UI, UICard, snap} from './kit';
 
 // test1: the 1-minute v6 test (pipeline/episodes/test1.json). 3D shots = Blender pose-state stills (blender/test1.py,
-// real CC0 classroom) held and cut on the voice the reference's way (STYLE_3D.md §12.3): burst → hold, 1-frame white
+// real CC0 classroom) held and cut on the voice the reference's way (SHORTS.md/LONG.md [3D] §12.3): burst → hold, 1-frame white
 // silhouette on swaps, 2-frame smear on whips, light-leak time skip, 1-frame B&W threshold before a reveal.
 // Home base = charcoal icon pattern + wobbling rounded cards + Dave cut-out lower right. Every card comes from its line.
 export const FPS = 30;

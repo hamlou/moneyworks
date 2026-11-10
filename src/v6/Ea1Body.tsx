@@ -6,7 +6,7 @@ import {MSeg} from './kit2';
 import {at, Cut, Flash, Kinetic, Src} from './Ea1';
 import {MacroText} from './macro';
 
-// ea1 v3 body (pipeline/episodes/ea1_v3_script.md) — STYLE_3D §17: short word-synced pieces of 3D scenes, real 0.5–1.5 s
+// ea1 v3 body (pipeline/episodes/ea1_v3_script.md) — SHORTS.md/LONG.md [3D] §17: short word-synced pieces of 3D scenes, real 0.5–1.5 s
 // clips, verbatim "macro highlight" evidence shots, still Dave poses + one gag per joke. NO "Dave beside a text card".
 // Sensitive topic: every factual visual carries its Src line; quotes are verbatim; no Gaza.
 export const GAP = 60; // 2 s music breath before every chapter (tools/voice_gaps.py ea1 2)

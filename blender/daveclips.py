@@ -1,4 +1,4 @@
-"""Looping transparent Dave clips for the map Short (owner 9 Nov 2026, SHORTS_MUST §5: red hoodie always, clean motion).
+"""Looping transparent Dave clips for the map Short (owner 9 Nov 2026, SHORTS.md [MUST] §5: red hoodie always, clean motion).
 blender -b -P blender/daveclips.py -- --assets A --tex T --out O --pose talk [--frames 1-48] [--samples 16] [--res 1080x1080] [--engine cycles|eevee]
 → O/<pose>_0001.png … RGBA, transparent film. 48 frames @ 24 fps, period = 48 frames: frame 49 would equal frame 1,
 so the clip loops with no duplicated frame. Poses = existing POSES + in-betweens only (clipcheck-tested), feet fixed

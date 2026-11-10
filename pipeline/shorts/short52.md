@@ -2,7 +2,7 @@
 Source: `pipeline/episodes/ep52.json` ("Why 'Get Rich' Gurus Sell Courses Instead of Doing It")
 Format: vertical Short, 1080×1920, Andrew voice at +9%, 89 s, 15 sentences, zero commas, zero silence.
 Files: script `pipeline/episodes/short52.json` · animation `src/shorts/Short52.tsx` · meme formats `src/memes52.tsx` · photos `pipeline/photos/short52.json` (18 Wikimedia Commons photos, all free licences).
-Rules followed: `PLAYBOOK_SHORTS.md` §9 (real photo about every 5 s + a meme every 2–4 s, each tied to the spoken words) and §6 (end CTA → the linked long video).
+Rules followed: `SHORTS.md [PLAYBOOK]` §9 (real photo about every 5 s + a meme every 2–4 s, each tied to the spoken words) and §6 (end CTA → the linked long video).
 
 v1 (drawn props only, 2 memes, 0.3–0.5 s gaps between sentences) was rejected by the owner. Do not go back to it.
 

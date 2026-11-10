@@ -2,7 +2,7 @@
 Writes public/<ep>/voice.flac + src/v6/<ep>_timing.json (beat/word times shifted, in unslowed seconds like the voice json).
 Usage: py tools/voice_gaps.py ea1 [gap_seconds_on_screen=4] [--tempo 0.9] [--maxgap S] [--beat <beat_id>]
   --tempo   atempo factor (Shorts: 1.0 = no slow-down)
-  --maxgap  SHORTS (SHORTS_MUST §2): every silence between two words longer than S on-screen seconds is cut down to S,
+  --maxgap  SHORTS (SHORTS.md [MUST] §2): every silence between two words longer than S on-screen seconds is cut down to S,
             leading silence is cut to 0.05 s, trailing silence to 0.15 s (clean loop)
   --beat    the ONE planned beat: the silence right before this beat's first word is set to exactly maxgap"""
 import json, subprocess, sys

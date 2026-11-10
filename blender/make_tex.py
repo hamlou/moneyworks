@@ -1,4 +1,4 @@
-"""Textures for the Blender shots (STYLE_3D.md §12): Dave's ink-line faces, chalkboard, tax form.
+"""Textures for the Blender shots (SHORTS.md/LONG.md [3D] §12): Dave's ink-line faces, chalkboard, tax form.
 Faces copy the reference's stickman: thin hand-drawn black strokes (brows, small eyes, mouth line) on transparent,
 drawn at 1024 and mapped onto the front of Dave's head. Run: py blender/make_tex.py"""
 import math, os, random

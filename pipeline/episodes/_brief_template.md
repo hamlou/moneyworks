@@ -1,4 +1,4 @@
-# <id> brief — fill BEFORE writing the script (STYLE_3D §0.10 loop method + §14 hook template)
+# <id> brief — fill BEFORE writing the script (SHORTS.md/LONG.md [3D] §0.10 loop method + §14 hook template)
 
 ## 1. Three gates (one FAIL = change the premise)
 - Universal relatability: PASS/FAIL — why (a stranger gets it with the sound off?)

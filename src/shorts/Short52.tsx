@@ -10,7 +10,7 @@ import {Slam} from '../photo';
 import {Dave, Guru, Coach, Cap, M2am, MTrustBro, MPigeon, MPanik, MTakeMoney, MFine, MAlways, MPointing, MStonks, MDrake, MSurprised, MButtons, MError, MSuccess, MDanger, MTrade, MSweat, MMath, MWaiting, MReverse, ToBeContinued} from '../memes52';
 
 // short52 v2 (13 Oct 2026): split screen. TOP = the real photo (or a meme card over it), BOTTOM = the drawn stage with the cast.
-// Every photo id is used exactly once and sits under the words that name it; a meme lands every 2-4 s (PLAYBOOK_SHORTS §9).
+// Every photo id is used exactly once and sits under the words that name it; a meme lands every 2-4 s (SHORTS.md [PLAYBOOK] §9).
 const W = 1080;
 const H = 1920;
 const TOP = 1100;

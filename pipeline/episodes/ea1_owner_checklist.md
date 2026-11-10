@@ -30,7 +30,7 @@
 - ✓ all 4 name clips cut right on the last sound of the name (Fox 3.40 s, NBC 1.25, CBS 2.78, Trump 5.66 = mouth almost closed, "Abdul" fully heard)
 - ✓ after the 3 rally clips → straight to the jokes scene (crowd footage → Dave alone → suit REFUND gag), never back to the chair
 - ✓ cold-open montage = owner's example (videos/ea1/Screenshot 2026-10-31 225231.png): extreme macro of printed text, name highlighted mid-frame, blurred lines above/below, paper grain, 10 cuts × 0.3–0.7 s, camera-shutter sfx each — APPROVED 31 Oct (v5: straight-on, pre-highlighted, ~0.2 s cuts, photo-click sfx only, no whine)
-- ✓ full reverse-engineering → STYLE_3D §17 (still poses, real artifacts, real clips, 'but' every 10–20 s)
+- ✓ full reverse-engineering → SHORTS.md/LONG.md [3D] §17 (still poses, real artifacts, real clips, 'but' every 10–20 s)
 - ✓ v3 script (ea1_v3_script.md): 7 chapters, a new problem each, answer only in ch7 — owner OK'd ~7.5 min
 - ✓ v3 edit (Ea1Body.tsx): 73 word-anchored visuals — 3D scene pieces, 3 real clips, 10 macro quote shots, pose gags; no Dave+text-card scenes
 - ✓ no freezes anywhere (freezedetect 1.2 s on v3d: none)

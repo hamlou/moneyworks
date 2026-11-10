@@ -1,5 +1,5 @@
 """Synthesised SFX (owner 29 Oct 2026: "rich on sound effects with the perfect moments… each video should generate
-its own needed sound effects" — STYLE_3D §0.12). 100 % made by us → no licence trouble (LICENSES.md).
+its own needed sound effects" — SHORTS.md/LONG.md [3D] §0.12). 100 % made by us → no licence trouble (SHORTS.md/LONG.md [LICENSES]).
 
   py pipeline/sfx_synth.py            the shared kit → public/sfx/<name>.wav (never overwrites an existing file)
   py pipeline/sfx_synth.py <id>       the video's own plan pipeline/sfx/<id>.json → public/sfx/<id>/<name>.wav

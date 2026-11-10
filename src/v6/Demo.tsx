@@ -4,7 +4,7 @@ import {Sfx, Cue} from '../fx';
 import {Bedroom, Blob} from './sets';
 import {ChapterCard, ComicBurst, Counter, DaveT, HomeBase, K, NumCard, ReportCard, ShockLines, Smear, Stage, Threshold, UI, UICard, WhiteFlash, lin} from './kit';
 
-// V6Demo: 16 s proof of the v6 grammar (STYLE_3D.md), shot list modelled on the reference's first minute.
+// V6Demo: 16 s proof of the v6 grammar (SHORTS.md/LONG.md [3D]), shot list modelled on the reference's first minute.
 // A 0–75   home base: UI card snaps in, push-in to the views, counter rolls; 3D Dave swaps poses with white flashes
 // B 75–135 1-frame B&W threshold → smear → comic burst "500 MILLION" + Dave close-up, angry, shaking
 // C 135–255 3D bedroom at night, Dave on the bed; lights SNAP on at 190 + boiling shock lines

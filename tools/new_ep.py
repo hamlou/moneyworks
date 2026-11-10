@@ -1,7 +1,7 @@
 """Scaffold a new v7 episode from ea1 (the approved reverse-engineered style) — no code is rewritten by hand.
 py tools/new_ep.py <id> "<Title>"
 Creates: pipeline/episodes/<id>.json (beats to fill), pipeline/sfx/<id>.json, blender/<id>.py + _lens.json + .chunks,
-src/v6/<Id>.tsx (registered in Root.tsx). Then follow EPISODE_RECIPE.md."""
+src/v6/<Id>.tsx (registered in Root.tsx). Then follow LONG.md [RECIPE]."""
 import json, re, shutil, sys
 from pathlib import Path
 

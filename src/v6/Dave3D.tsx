@@ -1,7 +1,7 @@
 import React, {useMemo} from 'react';
 import * as THREE from 'three';
 
-// v6 (STYLE_3D.md §5.1): Dave as a real 3D toon character, built from primitives so it renders inside Remotion
+// v6 (SHORTS.md/LONG.md [3D] §5.1): Dave as a real 3D toon character, built from primitives so it renders inside Remotion
 // (@remotion/three) with no Blender step. Same trick as the reference video: a 3D body + a FLAT drawn face texture
 // that swaps per line. Poses snap (sprite-style) — the cut/flash between poses is done by the caller (see kit.tsx).
 

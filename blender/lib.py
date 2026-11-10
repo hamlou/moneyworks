@@ -1,4 +1,4 @@
-"""Shared Blender kit for v6 shots (STYLE_3D.md §12): Cycles setup, CC0 Poly Haven models, the classroom world,
+"""Shared Blender kit for v6 shots (SHORTS.md/LONG.md [3D] §12): Cycles setup, CC0 Poly Haven models, the classroom world,
 stickman Dave (white tubes + ball head, Freestyle outline, ink-face decals) posed by joint targets, cameras.
 Shots render STILLS per pose state (the reference's burst→hold timing is done in Remotion), so a minute of video
 costs ~20 renders instead of ~1,400 frames."""

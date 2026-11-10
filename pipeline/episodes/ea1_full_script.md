@@ -1,6 +1,6 @@
 # ea1 FULL — script draft v1 (30 Oct 2026) — minutes 1–10 (minute 0–1 = the hook in ea1.json)
 Status: DRAFT for the owner. Not in `pipeline/episodes/*.json` yet on purpose (a push there starts voice.yml).
-Rules applied: STYLE_3D §0.1 natural speech (no commas, no fragment chains), §15 hook, §16.1 writing (mini-loop every
+Rules applied: SHORTS.md/LONG.md [3D] §0.1 natural speech (no commas, no fragment chains), §15 hook, §16.1 writing (mini-loop every
 20–40 s, punch line every 40–60 s, running gag, fake-out, "have a guess", scoreboard at chapter turns), sensitive-topic
 rule: every claim has a source tag; opponents' words only as quotes or attributed paraphrase; no verdict from Dave.
 

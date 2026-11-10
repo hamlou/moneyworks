@@ -1,5 +1,5 @@
 # ea1 v3 — body script (after the kept 0:00–1:10, which ends on "It did not work.")
-Owner 31 Oct: rebuild everything after 1:10. Rules: STYLE_3D §17 (still poses, real artifacts, real clips, no Dave+text-card),
+Owner 31 Oct: rebuild everything after 1:10. Rules: SHORTS.md/LONG.md [3D] §17 (still poses, real artifacts, real clips, no Dave+text-card),
 stacked loops = a new PROBLEM every 30–45 s ("you think he made it → but…"), the answer to the hook question ONLY at the end.
 Zero commas in spoken lines. [Sx] = source (verified list in ea1_full_script.md). ⟨…⟩ = visual. ✦ = the "but" turn.
 Running gag: Dave keeps trying to be like him and fails (from the jokes j1/j2).

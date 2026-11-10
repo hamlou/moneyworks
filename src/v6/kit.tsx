@@ -5,7 +5,7 @@ import {useThree} from '@react-three/fiber';
 import {localFont} from '../theme';
 import {Dave3D, Dave3DProps, Face} from './Dave3D';
 
-// v6 kit (STYLE_3D.md §5). Timing grammar measured frame by frame on the reference (30 fps):
+// v6 kit (SHORTS.md/LONG.md [3D] §5). Timing grammar measured frame by frame on the reference (30 fps):
 //  - motion comes in SHORT bursts then HOLDS: 45 % of all frames are perfectly still, most holds are 0.3–1.5 s;
 //  - entrances are fast (4–8 frames) with ease-out + small overshoot, never slow fades;
 //  - a pose/face change is an instant swap with 1–2 frames of WHITE silhouette in between (no tween);

@@ -33,11 +33,11 @@ Format: maps + Dave reacting (red hoodie, always). 150 words · ~4 wps · ~38 s.
 
 Reasoning lines (no number, logic from sources): beat 5 "gas jumps" (≈13% of world crude supply gone, S4); beat 9 "worth more" (scarcer oil → higher price for #2/#3 producers); beat 6 "lose savings" (reserves held in USD assets).
 
-## Self-check vs SHORTS_MUST
+## Self-check vs SHORTS.md [MUST]
 | Rule | Status |
 |---|---|
 | §0.1 analytics/LOG + inbox read | PASS (inbox empty; S4 row read) |
-| §0.2 POSTMORTEM S4 read | PASS |
+| §0.2 SHORTS.md/LONG.md [POSTMORTEM] S4 read | PASS |
 | §0.3 hook starts "What if…" | PASS |
 | §0.4 rides a name/event this week + money angle | PARTIAL — USA = universal name, money angle strong; no specific news peg this week (owner-chosen topic) |
 | §1 first word ≤ 0.2 s, prize on frame 0 | PASS by design (USA fading + big text on frame 0) — verify at edit |

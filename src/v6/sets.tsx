@@ -1,6 +1,6 @@
 import React from 'react';
 
-// v6 3D sets (STYLE_3D.md §5.3), built from primitives. Floor is at y = -0.1 (Dave's feet when standing ≈ -0.6
+// v6 3D sets (SHORTS.md/LONG.md [3D] §5.3), built from primitives. Floor is at y = -0.1 (Dave's feet when standing ≈ -0.6
 // so standing Dave gets position y = 0.5). Units: Dave is ≈ 4 tall.
 const M: React.FC<{c: string; e?: string; ei?: number; r?: number}> = ({c, e, ei = 0, r = 0.85}) => <meshStandardMaterial color={c} emissive={e ?? '#000'} emissiveIntensity={ei} roughness={r} metalness={0} />;
 

@@ -2,7 +2,7 @@ import React from 'react';
 import {C, FONT, localFont} from './theme';
 import {Stick, StickProps} from './Stick';
 
-// short52: trend meme FORMATS redrawn with our own cast (PLAYBOOK_SHORTS §4/§9: never a downloaded meme image).
+// short52: trend meme FORMATS redrawn with our own cast (SHORTS.md [PLAYBOOK] §4/§9: never a downloaded meme image).
 // Every format is drawn in its own w x h space and goes inside <Meme> (src/shorts/Short52.tsx).
 const ANTON = localFont('Anton', 'anton.woff2', '400');
 const O = {stroke: C.ink, strokeWidth: 6, strokeLinejoin: 'round' as const, strokeLinecap: 'round' as const};

@@ -54,7 +54,7 @@ if cloud:
             im.save(dst, optimize=True)
             print(f"  cutout {dst.name} {im.size}")
 else:
-    # Upgrade mode (UPGRADE.md): an entry may carry only {"id", "q"} -> first free-licence Commons hit, >= 800 px wide.
+    # Upgrade mode (LONG.md [UPGRADE]): an entry may carry only {"id", "q"} -> first free-licence Commons hit, >= 800 px wide.
     used = {p.get("file") for p in man["photos"]}
     for p in man["photos"]:
         if p.get("q") and not p.get("file") and not p.get("url"):

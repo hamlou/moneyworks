@@ -8,7 +8,7 @@ import {Dave, Guru, Ink} from './memes52';
 import {Expr, Key} from './Stick';
 import {Beat, Timings, useT} from './timing';
 
-// UPGRADE.md layer: an old episode is upgraded by editing ONLY pipeline/episodes/epNN.json. Beat fields read here
+// LONG.md [UPGRADE] layer: an old episode is upgraded by editing ONLY pipeline/episodes/epNN.json. Beat fields read here
 // (copied into timings.json by tts.py). "host"/"bg"/"card" beats cover the old drawing; "pic"/"meme"/"slam" on other beats
 // open a right-hand panel while the old drawing shrinks to the left (owner, 19 Oct 2026: never hide what Dave explains).
 // Everything can be anchored to a spoken WORD ("at"): photos, memes, slams, zooms and sounds land on that word.

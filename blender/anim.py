@@ -1,4 +1,4 @@
-"""animtest — real ANIMATION the reference's way (STYLE_3D.md §13): every frame rendered, characters move, cameras move,
+"""animtest — real ANIMATION the reference's way (SHORTS.md/LONG.md [3D] §13): every frame rendered, characters move, cameras move,
 Cycles motion blur. Three shots modelled on his opening (concept character in a rich world → self-drawing graph ride →
 silhouette light reveal). 24 fps.
 blender -b -P blender/anim.py -- --assets A --tex T --out O --frames "A:1-20" [--samples 12] [--res 1920x1080]
@@ -313,7 +313,7 @@ if SHOT == "D":
 
 # ================================================================== E · real mocap jog on a street
 if SHOT == "E":
-    world_hdri("city", 1.0, 215)  # turned so no brand billboard is in shot (LICENSES.md: no brands)
+    world_hdri("city", 1.0, 215)  # turned so no brand billboard is in shot (SHORTS.md/LONG.md [LICENSES]: no brands)
     ground("asphalt", 80, 3.0)
     light("sun", "SUN", (0, 0, 10), (R(55), 0, R(30)), energy=2.0, color=(1.0, 0.94, 0.86), angle=R(2))
     jog, walk = Mocap("02_03", start=1, step=5, frames=80), Mocap("02_01", start=1, step=5, frames=80)

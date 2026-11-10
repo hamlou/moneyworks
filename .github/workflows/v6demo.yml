@@ -1,7 +1,7 @@
 name: v6demo
 run-name: v6 demo ${{ inputs.comp }}
 
-# Renders a v6 (STYLE_3D.md) composition from src/v6/index.ts. 3D needs WebGL: --gl=swangle = software GPU on CI.
+# Renders a v6 (SHORTS.md/LONG.md [3D]) composition from src/v6/index.ts. 3D needs WebGL: --gl=swangle = software GPU on CI.
 on:
   workflow_dispatch:
     inputs:
