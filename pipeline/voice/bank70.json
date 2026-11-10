@@ -1,0 +1,749 @@
+{
+ "fps": 30,
+ "total": 33.242,
+ "hash": "f3579abefdf9b6c8",
+ "chapters": [],
+ "beats": [
+  {
+   "id": "b01",
+   "text": "What if every bank in your country closed for six months?",
+   "start": 0.08,
+   "end": 2.62,
+   "words": [
+    {
+     "text": "What",
+     "start": 0.08,
+     "end": 0.18
+    },
+    {
+     "text": "if",
+     "start": 0.18,
+     "end": 0.28
+    },
+    {
+     "text": "every",
+     "start": 0.28,
+     "end": 0.54
+    },
+    {
+     "text": "bank",
+     "start": 0.54,
+     "end": 0.84
+    },
+    {
+     "text": "in",
+     "start": 0.84,
+     "end": 1.08
+    },
+    {
+     "text": "your",
+     "start": 1.08,
+     "end": 1.2
+    },
+    {
+     "text": "country",
+     "start": 1.2,
+     "end": 1.52
+    },
+    {
+     "text": "closed",
+     "start": 1.52,
+     "end": 1.84
+    },
+    {
+     "text": "for",
+     "start": 1.84,
+     "end": 2.18
+    },
+    {
+     "text": "six",
+     "start": 2.18,
+     "end": 2.36
+    },
+    {
+     "text": "months?",
+     "start": 2.36,
+     "end": 2.62
+    }
+   ]
+  },
+  {
+   "id": "b02",
+   "text": "Because in Ireland in nineteen seventy they really did.",
+   "start": 3.269083333333333,
+   "end": 5.628083333333333,
+   "words": [
+    {
+     "text": "Because",
+     "start": 3.269,
+     "end": 3.575
+    },
+    {
+     "text": "in",
+     "start": 3.609,
+     "end": 3.724
+    },
+    {
+     "text": "Ireland",
+     "start": 3.736,
+     "end": 4.043
+    },
+    {
+     "text": "in",
+     "start": 4.076,
+     "end": 4.191
+    },
+    {
+     "text": "nineteen",
+     "start": 4.204,
+     "end": 4.548
+    },
+    {
+     "text": "seventy",
+     "start": 4.587,
+     "end": 4.893
+    },
+    {
+     "text": "they",
+     "start": 4.926,
+     "end": 5.118
+    },
+    {
+     "text": "really",
+     "start": 5.139,
+     "end": 5.407
+    },
+    {
+     "text": "did.",
+     "start": 5.436,
+     "end": 5.628
+    }
+   ]
+  },
+  {
+   "id": "b03",
+   "text": "The bank workers went on strike and locked every door.",
+   "start": 6.1816875,
+   "end": 8.3216875,
+   "words": [
+    {
+     "text": "The",
+     "start": 6.182,
+     "end": 6.242
+    },
+    {
+     "text": "bank",
+     "start": 6.242,
+     "end": 6.362
+    },
+    {
+     "text": "workers",
+     "start": 6.362,
+     "end": 6.582
+    },
+    {
+     "text": "went",
+     "start": 6.582,
+     "end": 6.882
+    },
+    {
+     "text": "on",
+     "start": 6.882,
+     "end": 7.022
+    },
+    {
+     "text": "strike",
+     "start": 7.022,
+     "end": 7.262
+    },
+    {
+     "text": "and",
+     "start": 7.262,
+     "end": 7.482
+    },
+    {
+     "text": "locked",
+     "start": 7.482,
+     "end": 7.682
+    },
+    {
+     "text": "every",
+     "start": 7.682,
+     "end": 8.062
+    },
+    {
+     "text": "door.",
+     "start": 8.062,
+     "end": 8.322
+    }
+   ]
+  },
+  {
+   "id": "b04",
+   "text": "So nobody could take out a single coin of cash.",
+   "start": 8.795416666666666,
+   "end": 10.835416666666667,
+   "words": [
+    {
+     "text": "So",
+     "start": 8.795,
+     "end": 8.915
+    },
+    {
+     "text": "nobody",
+     "start": 8.915,
+     "end": 9.175
+    },
+    {
+     "text": "could",
+     "start": 9.175,
+     "end": 9.495
+    },
+    {
+     "text": "take",
+     "start": 9.495,
+     "end": 9.675
+    },
+    {
+     "text": "out",
+     "start": 9.675,
+     "end": 9.855
+    },
+    {
+     "text": "a",
+     "start": 9.855,
+     "end": 9.955
+    },
+    {
+     "text": "single",
+     "start": 9.955,
+     "end": 10.175
+    },
+    {
+     "text": "coin",
+     "start": 10.175,
+     "end": 10.475
+    },
+    {
+     "text": "of",
+     "start": 10.475,
+     "end": 10.635
+    },
+    {
+     "text": "cash.",
+     "start": 10.635,
+     "end": 10.835
+    }
+   ]
+  },
+  {
+   "id": "b05",
+   "text": "But people did not panic because they went to the pub.",
+   "start": 11.446770833333334,
+   "end": 13.386770833333333,
+   "words": [
+    {
+     "text": "But",
+     "start": 11.447,
+     "end": 11.567
+    },
+    {
+     "text": "people",
+     "start": 11.567,
+     "end": 11.827
+    },
+    {
+     "text": "did",
+     "start": 11.827,
+     "end": 11.987
+    },
+    {
+     "text": "not",
+     "start": 11.987,
+     "end": 12.127
+    },
+    {
+     "text": "panic",
+     "start": 12.127,
+     "end": 12.347
+    },
+    {
+     "text": "because",
+     "start": 12.347,
+     "end": 12.687
+    },
+    {
+     "text": "they",
+     "start": 12.687,
+     "end": 12.887
+    },
+    {
+     "text": "went",
+     "start": 12.887,
+     "end": 13.027
+    },
+    {
+     "text": "to",
+     "start": 13.027,
+     "end": 13.167
+    },
+    {
+     "text": "the",
+     "start": 13.167,
+     "end": 13.227
+    },
+    {
+     "text": "pub.",
+     "start": 13.227,
+     "end": 13.387
+    }
+   ]
+  },
+  {
+   "id": "b06",
+   "text": "Eleven thousand pubs turned into banks.",
+   "start": 13.8759375,
+   "end": 15.5959375,
+   "words": [
+    {
+     "text": "Eleven",
+     "start": 13.876,
+     "end": 14.096
+    },
+    {
+     "text": "thousand",
+     "start": 14.096,
+     "end": 14.536
+    },
+    {
+     "text": "pubs",
+     "start": 14.536,
+     "end": 14.756
+    },
+    {
+     "text": "turned",
+     "start": 14.756,
+     "end": 15.096
+    },
+    {
+     "text": "into",
+     "start": 15.096,
+     "end": 15.336
+    },
+    {
+     "text": "banks.",
+     "start": 15.336,
+     "end": 15.596
+    }
+   ]
+  },
+  {
+   "id": "b07",
+   "text": "You wrote a cheque and the barman gave you cash because he knew you.",
+   "start": 16.3025,
+   "end": 18.7625,
+   "words": [
+    {
+     "text": "You",
+     "start": 16.302,
+     "end": 16.382
+    },
+    {
+     "text": "wrote",
+     "start": 16.382,
+     "end": 16.522
+    },
+    {
+     "text": "a",
+     "start": 16.522,
+     "end": 16.642
+    },
+    {
+     "text": "cheque",
+     "start": 16.642,
+     "end": 16.862
+    },
+    {
+     "text": "and",
+     "start": 16.862,
+     "end": 17.102
+    },
+    {
+     "text": "the",
+     "start": 17.102,
+     "end": 17.182
+    },
+    {
+     "text": "barman",
+     "start": 17.182,
+     "end": 17.462
+    },
+    {
+     "text": "gave",
+     "start": 17.462,
+     "end": 17.622
+    },
+    {
+     "text": "you",
+     "start": 17.622,
+     "end": 17.742
+    },
+    {
+     "text": "cash",
+     "start": 17.742,
+     "end": 17.942
+    },
+    {
+     "text": "because",
+     "start": 17.942,
+     "end": 18.262
+    },
+    {
+     "text": "he",
+     "start": 18.262,
+     "end": 18.462
+    },
+    {
+     "text": "knew",
+     "start": 18.462,
+     "end": 18.602
+    },
+    {
+     "text": "you.",
+     "start": 18.602,
+     "end": 18.762
+    }
+   ]
+  },
+  {
+   "id": "b08",
+   "text": "People wrote cheques on any scrap of paper they could find.",
+   "start": 19.18497916666667,
+   "end": 21.364979166666668,
+   "words": [
+    {
+     "text": "People",
+     "start": 19.185,
+     "end": 19.365
+    },
+    {
+     "text": "wrote",
+     "start": 19.365,
+     "end": 19.505
+    },
+    {
+     "text": "cheques",
+     "start": 19.505,
+     "end": 19.765
+    },
+    {
+     "text": "on",
+     "start": 19.765,
+     "end": 20.005
+    },
+    {
+     "text": "any",
+     "start": 20.005,
+     "end": 20.185
+    },
+    {
+     "text": "scrap",
+     "start": 20.185,
+     "end": 20.445
+    },
+    {
+     "text": "of",
+     "start": 20.445,
+     "end": 20.605
+    },
+    {
+     "text": "paper",
+     "start": 20.605,
+     "end": 20.785
+    },
+    {
+     "text": "they",
+     "start": 20.785,
+     "end": 21.005
+    },
+    {
+     "text": "could",
+     "start": 21.005,
+     "end": 21.125
+    },
+    {
+     "text": "find.",
+     "start": 21.125,
+     "end": 21.365
+    }
+   ]
+  },
+  {
+   "id": "b09",
+   "text": "And they passed them around like money for six whole months.",
+   "start": 21.9241875,
+   "end": 23.7641875,
+   "words": [
+    {
+     "text": "And",
+     "start": 21.924,
+     "end": 22.004
+    },
+    {
+     "text": "they",
+     "start": 22.004,
+     "end": 22.084
+    },
+    {
+     "text": "passed",
+     "start": 22.084,
+     "end": 22.224
+    },
+    {
+     "text": "them",
+     "start": 22.224,
+     "end": 22.464
+    },
+    {
+     "text": "around",
+     "start": 22.464,
+     "end": 22.644
+    },
+    {
+     "text": "like",
+     "start": 22.644,
+     "end": 22.824
+    },
+    {
+     "text": "money",
+     "start": 22.824,
+     "end": 23.024
+    },
+    {
+     "text": "for",
+     "start": 23.024,
+     "end": 23.224
+    },
+    {
+     "text": "six",
+     "start": 23.224,
+     "end": 23.384
+    },
+    {
+     "text": "whole",
+     "start": 23.384,
+     "end": 23.564
+    },
+    {
+     "text": "months.",
+     "start": 23.564,
+     "end": 23.764
+    }
+   ]
+  },
+  {
+   "id": "b10",
+   "text": "When the banks finally opened they found five billion pounds of cheques waiting.",
+   "start": 24.3196875,
+   "end": 27.3596875,
+   "words": [
+    {
+     "text": "When",
+     "start": 24.32,
+     "end": 24.42
+    },
+    {
+     "text": "the",
+     "start": 24.42,
+     "end": 24.48
+    },
+    {
+     "text": "banks",
+     "start": 24.48,
+     "end": 24.62
+    },
+    {
+     "text": "finally",
+     "start": 24.62,
+     "end": 24.9
+    },
+    {
+     "text": "opened",
+     "start": 24.9,
+     "end": 25.26
+    },
+    {
+     "text": "they",
+     "start": 25.44,
+     "end": 25.48
+    },
+    {
+     "text": "found",
+     "start": 25.48,
+     "end": 25.62
+    },
+    {
+     "text": "five",
+     "start": 25.62,
+     "end": 26.0
+    },
+    {
+     "text": "billion",
+     "start": 26.0,
+     "end": 26.38
+    },
+    {
+     "text": "pounds",
+     "start": 26.38,
+     "end": 26.68
+    },
+    {
+     "text": "of",
+     "start": 26.68,
+     "end": 26.88
+    },
+    {
+     "text": "cheques",
+     "start": 26.88,
+     "end": 27.02
+    },
+    {
+     "text": "waiting.",
+     "start": 27.02,
+     "end": 27.36
+    }
+   ]
+  },
+  {
+   "id": "b11",
+   "text": "Because the money was never in the bank it was in the trust.",
+   "start": 27.958333333333332,
+   "end": 30.37833333333333,
+   "words": [
+    {
+     "text": "Because",
+     "start": 27.958,
+     "end": 28.198
+    },
+    {
+     "text": "the",
+     "start": 28.198,
+     "end": 28.378
+    },
+    {
+     "text": "money",
+     "start": 28.378,
+     "end": 28.558
+    },
+    {
+     "text": "was",
+     "start": 28.558,
+     "end": 28.738
+    },
+    {
+     "text": "never",
+     "start": 28.738,
+     "end": 28.978
+    },
+    {
+     "text": "in",
+     "start": 28.978,
+     "end": 29.178
+    },
+    {
+     "text": "the",
+     "start": 29.178,
+     "end": 29.278
+    },
+    {
+     "text": "bank",
+     "start": 29.278,
+     "end": 29.498
+    },
+    {
+     "text": "it",
+     "start": 29.778,
+     "end": 29.858
+    },
+    {
+     "text": "was",
+     "start": 29.858,
+     "end": 29.978
+    },
+    {
+     "text": "in",
+     "start": 29.978,
+     "end": 30.118
+    },
+    {
+     "text": "the",
+     "start": 30.118,
+     "end": 30.218
+    },
+    {
+     "text": "trust.",
+     "start": 30.218,
+     "end": 30.378
+    }
+   ]
+  },
+  {
+   "id": "b12",
+   "text": "So ask yourself who would still give you cash tomorrow",
+   "start": 30.9764375,
+   "end": 32.8764375,
+   "words": [
+    {
+     "text": "So",
+     "start": 30.976,
+     "end": 31.076
+    },
+    {
+     "text": "ask",
+     "start": 31.076,
+     "end": 31.276
+    },
+    {
+     "text": "yourself",
+     "start": 31.276,
+     "end": 31.596
+    },
+    {
+     "text": "who",
+     "start": 31.596,
+     "end": 31.776
+    },
+    {
+     "text": "would",
+     "start": 31.776,
+     "end": 31.896
+    },
+    {
+     "text": "still",
+     "start": 31.896,
+     "end": 32.076
+    },
+    {
+     "text": "give",
+     "start": 32.076,
+     "end": 32.236
+    },
+    {
+     "text": "you",
+     "start": 32.236,
+     "end": 32.336
+    },
+    {
+     "text": "cash",
+     "start": 32.336,
+     "end": 32.536
+    },
+    {
+     "text": "tomorrow",
+     "start": 32.536,
+     "end": 32.876
+    }
+   ]
+  }
+ ]
+}
