@@ -50,7 +50,7 @@ export const ClipShort: React.FC<{plan: CPlan}> = ({plan}) => {
       {plan.beats.map((x) => (
         <Sequence key={x.id} from={x.from} durationInFrames={Math.max(1, x.to - x.from)} layout="none">
           <AbsoluteFill style={{transform: `scale(${push})`}}>
-            <OffthreadVideo src={staticFile(`${plan.id}/shot_${x.scene}.mp4`)} playbackRate={0.5} muted style={{width: '100%', height: '100%', objectFit: 'cover'}} />
+            <OffthreadVideo src={staticFile(`${plan.id}/shot_${x.scene}.mp4`)} playbackRate={0.5} startFrom={look === 'ink' ? 1 : 0} muted style={{width: '100%', height: '100%', objectFit: 'cover'}} />
           </AbsoluteFill>
         </Sequence>
       ))}
