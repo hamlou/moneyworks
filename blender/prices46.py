@@ -21,6 +21,7 @@ if os.path.exists(lp):
 N = int(LENS.get(SHOT, 48))
 sc = K.sc
 sc.cycles.samples = int(args.get("--samples", "16"))
+sc.view_settings.look = "AgX - Punchy"
 COL = bpy.data.collections.new("town")
 sc.collection.children.link(COL)
 rnd = random.Random(46)
@@ -30,7 +31,7 @@ def paint(name, rgb, rough=0.42, coat=0.35):
     return flat(name, rgb, rough, coat)
 
 
-PASTEL = [(0.86, 0.62, 0.45), (0.93, 0.83, 0.55), (0.62, 0.78, 0.74), (0.88, 0.55, 0.52), (0.72, 0.68, 0.86), (0.95, 0.9, 0.8), (0.58, 0.72, 0.52)]
+PASTEL = [(0.85, 0.42, 0.22), (0.95, 0.75, 0.25), (0.25, 0.62, 0.58), (0.85, 0.3, 0.3), (0.45, 0.4, 0.78), (0.95, 0.85, 0.6), (0.38, 0.62, 0.3)]
 M_ROOF = paint("roof", (0.55, 0.18, 0.12))
 M_WIN = flat("win", (1.0, 0.78, 0.42), 0.3, 0.0, emit=0.0)
 M_DARK = paint("dark", (0.12, 0.11, 0.1))
@@ -49,7 +50,7 @@ def cobbles():
     vo.inputs["Scale"].default_value = 70
     l.new(tc.outputs["Object"], vo.inputs["Vector"])
     ramp.color_ramp.elements[0].position, ramp.color_ramp.elements[1].position = 0.0, 0.08
-    ramp.color_ramp.elements[0].color, ramp.color_ramp.elements[1].color = (0.18, 0.16, 0.14, 1), (0.5, 0.46, 0.4, 1)
+    ramp.color_ramp.elements[0].color, ramp.color_ramp.elements[1].color = (0.16, 0.12, 0.09, 1), (0.55, 0.44, 0.33, 1)
     l.new(vo.outputs["Distance"], ramp.inputs["Fac"])
     l.new(ramp.outputs["Color"], p.inputs["Base Color"])
     bump.inputs["Strength"].default_value = 0.6
@@ -141,16 +142,16 @@ for i, y in enumerate([0.55, 0.1, -0.35]):
     house(-1.55, y, 0.34, 0.4, 0.42 + (i % 2) * 0.14, PASTEL[(i + 3) % len(PASTEL)], R(-90))
     house(1.55, y, 0.34, 0.4, 0.46 + (i % 2) * 0.1, PASTEL[(i + 5) % len(PASTEL)], R(90))
 # bakery (centre back)
-bak = house(0, 1.05, 0.92, 0.4, 0.62, (0.96, 0.9, 0.78), door=False)
+bak = house(0, 1.05, 0.92, 0.4, 0.62, (0.98, 0.82, 0.55), door=False)
 for i in range(11):
     aw = box("awning", (-0.42 + i * 0.084, 0.8, 0.27), (0.084, 0.12, 0.012), M_RED if i % 2 else M_CREAM, COL)
     aw.rotation_euler = (R(-24), 0, 0)
 box("bdoor", (0, 0.849, 0.06), (0.1, 0.004, 0.12), M_DARK, COL)
 box("shopwin_l", (-0.25, 0.849, 0.09), (0.22, 0.004, 0.12), M_WIN, COL)
 box("shopwin_r", (0.25, 0.849, 0.09), (0.22, 0.004, 0.12), M_WIN, COL)
-board = box("board", (0, 0.84, 0.43), (0.8, 0.02, 0.2), M_DARK, COL)
+board = box("board", (0, 0.84, 0.43), (0.84, 0.02, 0.24), M_DARK, COL)
 SIGN_HDR = text3d("BREAD", (0, 0.826, 0.47), (R(90), 0, 0), 0.06, M_SIGN, COL, extrude=0.004)
-PRICE = text3d("1", (0, 0.826, 0.355), (R(90), 0, 0), 0.085, flat("price", (1.0, 0.85, 0.3), 0.4, 0, emit=2.4), COL, extrude=0.004)
+PRICE = text3d("1", (0, 0.826, 0.34), (R(90), 0, 0), 0.11, flat("price", (1.0, 0.85, 0.3), 0.4, 0, emit=2.4), COL, extrude=0.004)
 banner = box("banner", (0, 0.2, 0.62), (1.6, 0.004, 0.11), M_CREAM, COL)
 BAN_T = text3d("BUDAPEST 1946", (0, 0.197, 0.595), (R(90), 0, 0), 0.06, paint("bantxt", (0.2, 0.15, 0.12)), COL, extrude=0.002)
 for x in (-0.8, 0.8):
@@ -182,6 +183,7 @@ for i in range(40):
         br.parent = g
         br.hide_render = True
         g["broom"] = br.name
+    g.scale = (1.4, 1.4, 1.4)
     PEOPLE.append(g)
 
 # props
@@ -233,7 +235,8 @@ c1.data.materials.append(M_GOLD)
 c1.parent = SCALE
 SCALE.location = (0, 0.3, 0)
 
-ALL_OPT = [BIG, FACT, FACT_T, SCALE, LOAF] + NOTES + BARROWS
+BANNER = [banner, BAN_T] + [o for o in COL.objects if o.name.startswith("pole")]
+ALL_OPT = [BIG, FACT, FACT_T, SCALE, LOAF] + NOTES + BARROWS + BANNER
 
 
 def hide(o, h=True):
@@ -316,18 +319,20 @@ def shot(s, k):
         daytime((k % 6) / 6 * 0.9 + 0.05 if s == "A" else 0.25)
         set_text(PRICE, fmt(2 ** d))
         place_people(k, "wander", t)
-        return tilt((0.25, -2.1, 1.55), (0, 0.55, 0.2), 70, 1.2, (0, 0.84, 0.4))
+        return tilt((0.2, -1.55, 1.0), (0, 0.7, 0.32), 62, 0.45, (0, 0.84, 0.4))
     if s == "B":  # establishing: banner BUDAPEST 1946, dusk, slow push
+        for o in BANNER:
+            o.hide_render = False
         daytime(0.42)
         set_text(PRICE, "1")
         place_people(k, "wander", t)
-        return tilt((0.9 - t * 0.3, -2.6 + t * 0.4, 2.0 - t * 0.2), (0, 0.3, 0.3), 60, 1.4, (0, 0.2, 0.6))
+        return tilt((0.9 - t * 0.3, -2.6 + t * 0.4, 2.0 - t * 0.2), (0, 0.3, 0.3), 60, 0.6, (0, 0.2, 0.6))
     if s == "C":  # price board triples each day (5 frames a day)
         d = k // 5
         daytime((k % 5) / 5)
         set_text(PRICE, fmt(3 ** d))
         place_people(k, "queue", t)
-        return tilt((0.12, -0.35, 0.55), (0, 0.84, 0.4), 85, 0.9, (0, 0.84, 0.4))
+        return tilt((0.1, -0.75, 0.62), (0, 0.84, 0.38), 70, 0.6, (0, 0.84, 0.4))
     if s == "D":  # one loaf: 1 coin this morning, 3 coins tomorrow
         hide(LOAF, False)
         ncoin = 1 if t < 0.5 else 3
@@ -335,19 +340,19 @@ def shot(s, k):
             cn.hide_render = i >= ncoin
         daytime(0.12 if t < 0.5 else 0.15)
         place_people(k, "none", t)
-        return tilt((0.25, 0.05, 0.25), (0.03, 0.55, 0.02), 90, 0.7, (0.06, 0.55, 0.03))
+        return tilt((0.35, -0.35, 0.42), (0.04, 0.55, 0.03), 60, 0.5, (0.06, 0.55, 0.03))
     if s == "E":  # payday: workers run from the factory to the bakery queue
         hide(FACT, False)
         FACT_T.hide_render = False
         daytime(0.2)
         set_text(PRICE, fmt(3 ** 9))
         place_people(k, "run", t)
-        return tilt((-0.2, -2.3, 1.75), (-0.4, 0.0, 0.1), 60, 1.3, (-0.5, -0.2, 0.05))
+        return tilt((-0.3, -2.6, 1.9), (-0.5, -0.2, 0.1), 50, 0.6, (-0.5, -0.2, 0.05))
     if s == "F":  # the banknote with twenty zeros lies across the square
         BIG.hide_render = False
         daytime(0.25)
         place_people(k, "on_note", t)
-        return tilt((0.1, -1.2 - t * 0.2, 2.2), (0, 0.05, 0), 55, 1.6, (0, 0.05, 0))
+        return tilt((0.1, -1.2 - t * 0.2, 2.2), (0, 0.05, 0), 55, 0.9, (0, 0.05, 0))
     if s == "G":  # still not enough: barrows + a growing mountain of notes
         for i, g in enumerate(BARROWS):
             hide(g, False)
@@ -355,7 +360,7 @@ def shot(s, k):
         notes_pile(int(30 + t * 220), 0, 0.2, 0.45, 0.22 + t * 0.18)
         daytime(0.3)
         place_people(k, "wander", t)
-        return tilt((0.3, -1.9, 1.3), (0, 0.2, 0.15), 70, 1.1, (0, 0.2, 0.15))
+        return tilt((0.3, -1.9, 1.3), (0, 0.2, 0.15), 70, 0.5, (0, 0.2, 0.15))
     if s == "H":  # thrown away: notes rain from the windows
         daytime(0.35)
         for i, nt in enumerate(NOTES):
@@ -366,7 +371,7 @@ def shot(s, k):
             nt.location = (x0 + 0.08 * math.sin(z * 9 + i), y0, max(0.004, z))
             nt.rotation_euler = (z * 3 + i, z * 2, i)
         place_people(k, "wander", t)
-        return tilt((0.2, -2.0, 1.2), (0, 0.4, 0.35), 65, 1.2, (0, 0.6, 0.35))
+        return tilt((0.2, -2.0, 1.2), (0, 0.4, 0.35), 65, 0.55, (0, 0.6, 0.35))
     if s == "I":  # 1 new coin = a 4 with 29 zeros of old notes (balanced scale)
         hide(SCALE, False)
         notes_pile(240, 0.42, 0.3, 0.09, 0.32)
@@ -374,9 +379,9 @@ def shot(s, k):
             nt.location.z += 0.25
         daytime(0.25)
         place_people(k, "none", t)
-        return tilt((0.05 + t * 0.06, -1.25, 0.6), (0, 0.3, 0.35), 70, 1.1, (-0.42, 0.3, 0.27))
+        return tilt((0.05 + t * 0.06, -2.1, 0.75), (0, 0.3, 0.3), 45, 0.8, (0, 0.3, 0.3))
     if s == "J":  # street cleaners sweep the worthless notes like leaves
-        daytime(0.55 + t * 0.06)
+        daytime(0.3)
         for i, nt in enumerate(NOTES):
             r = random.Random(i)
             x, y = r.uniform(-1.1, 1.1), r.uniform(-0.7, 0.4)
@@ -386,7 +391,7 @@ def shot(s, k):
             nt.location = (x + (pile[0] + 0.03 - x) * u, y + (pile[1] - y) * u, 0.004 + u * 0.01 * r.random())
             nt.rotation_euler = (0, 0, r.uniform(0, 6.28))
         place_people(k, "sweep", t)
-        return tilt((-0.3 + t * 0.2, -1.6, 0.8), (-0.2, -0.3, 0.02), 75, 0.9, (-0.5 + t * 0.25, -0.4, 0.02))
+        return tilt((-0.3 + t * 0.2, -1.5, 0.95), (-0.35, -0.35, 0.02), 60, 0.5, (-0.45 + t * 0.25, -0.4, 0.02))
     raise SystemExit(f"unknown shot {s}")
 
 
