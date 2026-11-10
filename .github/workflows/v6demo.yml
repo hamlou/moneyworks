@@ -62,10 +62,10 @@ jobs:
             pip install -q yt-dlp && python3 tools/clips.py $ID
           fi
       - name: autopilot shots straight from the Blender run (never via the owner's PC)
-        if: startsWith(inputs.comp, 'Auto-')
+        if: startsWith(inputs.comp, 'Auto-') || startsWith(inputs.comp, 'Sal-')
         env: {GH_TOKEN: "${{ github.token }}", COMP: "${{ inputs.comp }}"}
         run: |
-          ID=${COMP#Auto-}
+          ID=${COMP#Auto-}; ID=${ID#Sal-}
           if [ -f public/$ID/SHOTS_RUN ]; then
             gh run download $(cat public/$ID/SHOTS_RUN) -n $ID-fast -D /tmp/shots || gh run download $(cat public/$ID/SHOTS_RUN) -n $ID-vert -D /tmp/shots  # vert = 9:16 Short
             cp /tmp/shots/shot_*.mp4 public/$ID/
@@ -91,6 +91,21 @@ jobs:
           if [ -f ref/ea1.mp4 ]; then python3 tools/compare.py out/compare.md $V ref/ea1.mp4; else python3 tools/compare.py out/compare.md $V; fi
           cat out/compare.md >> "$GITHUB_STEP_SUMMARY"
           ID=${{ inputs.comp }}; cp public/${ID#Auto-}/clips_credits.json out/ 2>/dev/null || true
+      - name: small QA pack (sheets + audio levels; the owner PC's connection drops big downloads)
+        run: |
+          mkdir -p qa
+          V=out/${{ inputs.comp }}.mp4
+          cp out/sheets/*.jpg qa/
+          ffmpeg -v error -y -i $V -t 3 -vf "fps=10,scale=270:-1,tile=10x3" -frames:v 1 qa/hook.jpg
+          ffprobe -v error -show_entries format=duration:stream=codec_type,duration -of compact $V > qa/probe.txt
+          ffmpeg -i $V -af volumedetect -vn -f null - 2>&1 | grep -E "mean_volume|max_volume" >> qa/probe.txt
+          ffmpeg -i $V -af silencedetect=n=-35dB:d=0.35 -vn -f null - 2>&1 | grep -E "silence_(start|end)" >> qa/probe.txt || true
+          cat qa/probe.txt
+      - uses: actions/upload-artifact@v4
+        with:
+          name: ${{ inputs.comp }}-qa
+          path: qa
+          retention-days: 7
       - uses: actions/upload-artifact@v4
         with:
           name: ${{ inputs.comp }}
