@@ -23,6 +23,8 @@ sc.view_settings.view_transform = "Standard"
 sc.view_settings.look = "None"
 COL = bpy.data.collections.new("ink")
 sc.collection.children.link(COL)
+TXT = bpy.data.collections.new("txt")  # lettering: solid ink, no Freestyle outline (outlines smeared it)
+sc.collection.children.link(TXT)
 PAPER = (0.96, 0.93, 0.86)
 
 world = bpy.data.worlds.new("paper")
@@ -75,6 +77,7 @@ for ls in list(fs.linesets):
 LS = fs.linesets.new("ink")
 LS.select_silhouette, LS.select_border, LS.select_crease, LS.select_contour = True, True, True, True
 LS.select_external_contour = True
+LS.select_by_collection, LS.collection, LS.collection_negation = True, TXT, "EXCLUSIVE"
 ST = LS.linestyle
 ST.color = (0.07, 0.08, 0.14)
 ST.thickness = 3.4 * K.W / 1080
@@ -112,7 +115,7 @@ def B(name, loc, size, mat, g=None):
 
 
 def T(body, loc, size, mat=W_INK, g=None, rot=(R(90), 0, 0), ex=0.02):
-    o = text3d(body, loc, rot, size, mat, COL, extrude=ex)
+    o = text3d(body, loc, rot, size, mat, TXT, extrude=ex)
     return kid(g, o) if g else o
 
 
@@ -208,16 +211,24 @@ CAL = grp("cal")
 B("cal", (0, 0, 1.2), (1.4, 0.05, 1.6), W_WHITE, CAL)
 CAL_T = T("JUNE", (0, -0.04, 1.45), 0.26, W_RED, CAL)
 CAL_N = T("1970", (0, -0.04, 0.85), 0.36, W_INK, CAL)
-BIGT = T("£5 000 000 000", (0, -0.3, 0.5), 0.5, W_INK)
+BIGT = T("£5 000 000 000", (0, -0.3, 0.5), 0.42, W_INK)
 VAULT = grp("vault")
 B("vwall", (0, 0.6, 1.6), (4.0, 0.2, 3.2), W_STONE, VAULT)
-bpy.ops.mesh.primitive_cylinder_add(radius=1.1, depth=0.25, location=(0, 0.35, 1.5), rotation=(R(90), 0, 0), vertices=40)
+bpy.ops.mesh.primitive_cylinder_add(radius=1.1, depth=0.25, location=(0, 0.25, 1.5), rotation=(R(90), 0, 0), vertices=40)
 VDOOR = kid(VAULT, bpy.context.object)
 VDOOR.data.materials.append(W_STONE)
-B("inside", (0, 0.75, 1.5), (1.9, 0.1, 1.9), W_INK, VAULT)
-TRUST = T("TRUST", (0, 0.6, 1.35), 0.42, W_GOLD, VAULT)
+B("inside", (0, 0.47, 1.5), (1.9, 0.04, 1.9), W_INK, VAULT)
+TRUST = T("TRUST", (0, 0.42, 1.32), 0.46, W_GOLD, VAULT)
 
-OPT = [BANK, PUB, BAR, CAL, VAULT, BIGT] + MEN + PLACARDS + SCRAPS + ROW
+TILL = grp("till")
+B("tbase", (0, 0, -0.05), (1.4, 0.9, 0.1), W_BROWN, TILL)
+for i in range(5):
+    B(f"tdiv{i}", (-0.56 + i * 0.28, 0.12, 0.03), (0.02, 0.6, 0.16), W_BROWN, TILL)
+B("tback", (0, 0.42, 0.03), (1.4, 0.02, 0.16), W_BROWN, TILL)
+B("tfront", (0, -0.18, 0.03), (1.4, 0.02, 0.16), W_BROWN, TILL)
+B("tnotes", (0, -0.32, 0.02), (1.4, 0.26, 0.14), W_BROWN, TILL)
+T("NO CASH", (0, -0.452, 0.0), 0.11, W_RED, TILL)
+OPT = [BANK, PUB, BAR, CAL, VAULT, BIGT, TILL] + MEN + PLACARDS + SCRAPS + ROW
 
 
 def hide_all():
@@ -257,12 +268,12 @@ def shot(s, k):
         DOOR_L.location.x, DOOR_R.location.x = -0.36 - 0.6 * (1 - u), 0.36 + 0.6 * (1 - u)
         show(CLOSED, u > 0.6 or s == "L")
         CLOSED.location.z = 0.6 * (1 - min(1, max(0, (t - 0.25) * 4))) if s == "A" else 0
-        return cam("c", (2.2, -7.5, 1.6), (0, 3, 2.0), 32)
+        return cam("c", (1.4, -4.6, 1.1), (0, 3, 2.1), 30)
     if s == "B":  # Ireland 1970: the newspaper headline on the bank steps
         show(BANK)
         show(CLOSED)
         crowd(6, 0, 0.2, 2.4, k, walk=1)
-        return cam("c", (-2.6 + t * 1.0, -6.0, 3.0), (0, 2, 1.6), 30)
+        return cam("c", (-1.8 + t * 0.8, -3.8, 2.2), (0, 2, 1.5), 30)
     if s == "C":  # strikers with ON STRIKE placards in front of the locked doors
         show(BANK)
         show(CLOSED)
@@ -270,22 +281,20 @@ def shot(s, k):
             show(p)
             p.location = (-1.8 + i * 1.2, 1.4 + 0.1 * math.sin(k * 0.6 + i), 0.15 * abs(math.sin(k * 0.5 + i)))
         crowd(4, 0, 1.6, 2.0, k)
-        return cam("c", (1.5, -4.5, 1.4), (0, 2, 1.5), 30)
-    if s == "D":  # not one coin: an empty cash drawer
-        show(BAR)
-        show(CASH, False)
-        CHEQUE.hide_render = True
-        return cam("c", (0.3 - t * 0.2, 0.7, 2.4), (0.1, 2.1, 1.1), 40)
+        return cam("c", (1.1, -2.2, 1.5), (0, 1.8, 1.4), 30)
+    if s == "D":  # not one coin: an empty till drawer
+        show(TILL)
+        return cam("c", (0.05, -0.55 + t * 0.1, 1.55), (0, 0.05, 0.0), 32)
     if s == "E":  # nobody panicked: they went to the pub
         show(PUB)
         crowd(10, 0, -2.0 + t * 2.6, 2.2, k, face=R(180))
-        return cam("c", (1.8, -7.0, 1.7), (0, 3, 1.6), 30)
+        return cam("c", (1.2, -4.4, 1.4), (0, 3, 1.6), 30)
     if s == "F":  # eleven thousand pubs became banks: a street of them
         for i, g in enumerate(ROW):
             show(g, t > i / 12)
             g.location = (-3.0 if i % 2 else 3.0, i * 2.6, 0)
             g.rotation_euler = (0, 0, R(-90) if i % 2 else R(90))
-        return cam("c", (0, -3.5 + t * 1.0, 2.2), (0, 12, 0.8), 28)
+        return cam("c", (0, -2.0 + t * 1.5, 1.6), (0, 10, 1.0), 30)
     if s == "G":  # cheque on the bar → the barman slides cash back
         show(BAR)
         barman = MEN[0]
@@ -293,13 +302,13 @@ def shot(s, k):
         barman.location = (0, 2.9, 0)
         u = ease(min(1, max(0, (t - 0.35) * 2.5)))
         CASH.location = (-0.3, 0.6 - u * 0.75, 1.17)
-        return cam("c", (0.9, -1.6, 2.1), (0, 2.1, 1.2), 34)
+        return cam("c", (0.5, -0.3, 1.8), (0, 2.2, 1.35), 34)
     if s == "H":  # cheques on any scrap of paper: beer mat, napkin, cigarette box, envelope
         for i, g in enumerate(SCRAPS):
             show(g, t > i * 0.18)
             g.location = (-0.75 + (i % 2) * 1.5, 0.8 - (i // 2) * 1.2, 0)
             g.rotation_euler = (0, 0, R(-10 + i * 9))
-        return cam("c", (0, -0.6, 4.2), (0, 0.2, 0), 35)
+        return cam("c", (0, -0.4, 3.2), (0, 0.2, 0), 32)
     if s == "I":  # passed hand to hand for six months (calendar pages)
         show(CAL)
         months = ["MAY", "JUNE", "JULY", "AUG", "SEPT", "OCT", "NOV"]
@@ -314,7 +323,7 @@ def shot(s, k):
         p = PAPERS[0]
         p.hide_render = False
         p.location = (-3.0 + hop * 0.75 + 0.35, -0.1, 1.0 + 0.15 * math.sin(t * 50))
-        return cam("c", (0, -6.5, 1.9), (0, 0.5, 1.1), 30)
+        return cam("c", (0, -5.2, 1.3), (0, 0.5, 1.0), 26)
     if s == "J":  # banks reopen: an avalanche of £5 billion of cheques
         show(BANK)
         show(BIGT, t > 0.45)
@@ -329,13 +338,13 @@ def shot(s, k):
             d = u * r.uniform(2.0, 6.0)
             p.location = (r.uniform(-0.6, 0.6) + d * r.uniform(-0.5, 0.5), 3.0 - d, 0.2 + 1.6 * (1 - u) * r.random() + r.random() * 0.4)
             p.rotation_euler = (r.uniform(-0.5, 0.5), r.uniform(-0.5, 0.5), r.uniform(0, 6.28))
-        return cam("c", (2.6, -8.5, 2.0), (0, 2, 1.8), 30)
+        return cam("c", (1.8, -6.0, 1.6), (0, 2, 2.0), 30)
     if s == "K":  # punch: the vault opens — only TRUST inside
         show(VAULT)
         u = ease(min(1, max(0, (t - 0.15) * 2)))
         VDOOR.location.x = -u * 2.4
         TRUST.hide_render = u < 0.6
-        return cam("c", (0, -3.6 + t * 0.8, 1.6), (0, 0.6, 1.5), 34)
+        return cam("c", (0, -3.2 + t * 0.6, 1.5), (0, 0.4, 1.5), 34)
     raise SystemExit(f"unknown shot {s}")
 
 

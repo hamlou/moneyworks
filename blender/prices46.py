@@ -21,7 +21,9 @@ if os.path.exists(lp):
 N = int(LENS.get(SHOT, 48))
 sc = K.sc
 sc.cycles.samples = int(args.get("--samples", "16"))
-sc.view_settings.look = "AgX - Punchy"
+sc.view_settings.view_transform = "Standard"
+sc.view_settings.look = "Medium High Contrast"
+sc.view_settings.exposure = -0.35
 COL = bpy.data.collections.new("town")
 sc.collection.children.link(COL)
 rnd = random.Random(46)
@@ -99,9 +101,9 @@ def daytime(t):
     SKY.sun_rotation = R(120 + t * 140)
     sun.rotation_euler = (R(90 - max(2, elev)), 0, R(120 + t * 140))
     day = max(0.0, min(1.0, (elev + 6) / 20))
-    sun.data.energy = 4.2 * day
+    sun.data.energy = 3.4 * day
     sun.data.color = (1.0, 0.72 + 0.2 * day, 0.5 + 0.38 * day)
-    BG.inputs["Strength"].default_value = 0.05 + 0.35 * day
+    BG.inputs["Strength"].default_value = 0.04 + 0.18 * day
     moon.data.energy = 0.35 * (1 - day)
     M_WIN.node_tree.nodes["Principled BSDF"].inputs["Emission Strength"].default_value = 6.0 * (1 - day) + 0.3
     return day
@@ -340,7 +342,7 @@ def shot(s, k):
             cn.hide_render = i >= ncoin
         daytime(0.12 if t < 0.5 else 0.15)
         place_people(k, "none", t)
-        return tilt((0.35, -0.35, 0.42), (0.04, 0.55, 0.03), 60, 0.5, (0.06, 0.55, 0.03))
+        return tilt((0.3, 0.05, 0.3), (0.05, 0.55, 0.03), 60, 0.5, (0.06, 0.55, 0.03))
     if s == "E":  # payday: workers run from the factory to the bakery queue
         hide(FACT, False)
         FACT_T.hide_render = False
@@ -379,7 +381,7 @@ def shot(s, k):
             nt.location.z += 0.25
         daytime(0.25)
         place_people(k, "none", t)
-        return tilt((0.05 + t * 0.06, -2.1, 0.75), (0, 0.3, 0.3), 45, 0.8, (0, 0.3, 0.3))
+        return tilt((0.05 + t * 0.05, -1.05, 0.5), (0, 0.3, 0.3), 40, 0.7, (0, 0.3, 0.3))
     if s == "J":  # street cleaners sweep the worthless notes like leaves
         daytime(0.3)
         for i, nt in enumerate(NOTES):
