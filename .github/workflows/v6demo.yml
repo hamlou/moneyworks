@@ -91,6 +91,13 @@ jobs:
           if [ -f ref/ea1.mp4 ]; then python3 tools/compare.py out/compare.md $V ref/ea1.mp4; else python3 tools/compare.py out/compare.md $V; fi
           cat out/compare.md >> "$GITHUB_STEP_SUMMARY"
           ID=${{ inputs.comp }}; cp public/${ID#Auto-}/clips_credits.json out/ 2>/dev/null || true
+      - name: final Short → private DRAFT release "shorts-drafts" (owner downloads it in the browser; drafts are not public)
+        if: startsWith(inputs.comp, 'Sal-')
+        env: {GH_TOKEN: "${{ github.token }}"}
+        run: |
+          gh release view shorts-drafts >/dev/null 2>&1 || gh release create shorts-drafts --draft --title "Shorts drafts (private)" --notes "Finished Shorts for the owner to download. Draft = not public."
+          cp out/${{ inputs.comp }}.mp4 out/${{ inputs.comp }}_final.mp4
+          gh release upload shorts-drafts out/${{ inputs.comp }}_final.mp4 --clobber
       - name: small QA pack (sheets + audio levels; the owner PC's connection drops big downloads)
         run: |
           mkdir -p qa

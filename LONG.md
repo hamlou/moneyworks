@@ -1817,6 +1817,8 @@ Rule: **every sound, voice, model, texture, motion and font in a video must be o
 | Motion capture — CMU Graphics Lab (BVH by B. Hahne) | `blender/fetch_mocap.py` | free for any use incl. commercial | courtesy line in the description: `Motion data: mocap.cs.cmu.edu (CMU Graphics Lab)` |
 | Fonts Anton, Fredoka | `public/fonts/` | SIL Open Font License | nothing |
 | Font Inter (300/400/600/700, via @fontsource/inter 5.0.18) | `public/fonts/inter-*.woff2` | SIL Open Font License | nothing |
+| Font Caveat (hand lettering, ink look) | `public/fonts/caveat.woff2` | SIL Open Font License | nothing |
+| Font Playfair Display (drawn into our own banknote art `blender/tex/pengo_*.png`) | Google Fonts repo | SIL Open Font License | nothing |
 | Photos from Poly Haven HDRIs (tonemapped JPG crops, e.g. `public/phone96/wall.jpg` = rogland_clear_night) | `public/<id>/` | CC0 | nothing |
 | Blender, Remotion, ffmpeg | tools | GPL / Remotion free licence for individuals & companies ≤ 3 people / LGPL | renders are ours |
 | Photos | `pipeline/photo_find.py`, `photos.py` | only free licences already enforced there (credit + licence lines in the description) | keep the existing credit lines |
