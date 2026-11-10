@@ -12,6 +12,7 @@
 2. READ `POSTMORTEM.md` §Patterns and the "GOOD POINTS TO KEEP" of the best Short (S4 Abdul, 1,891 views = our best video ever).
 3. The hook MUST start with **"What if…"** (owner 8 Nov: this is the format that worked; facts-first is "boring").
 4. Topic MUST ride a name/event people already care about THIS WEEK + a money/"your life" angle. Never a textbook explainer.
+5. READ `FORMAT_TESTS.md`: next Short = an UNTESTED format from its queue (owner 10 Nov: test every type until one wins). Fill its notes after 48 h.
 
 ## 1. Script — MUST / NEVER
 - MUST: the first spoken word lands at ≤ 0.2 s. Frame 0 already shows the prize (big text + moving image). No fade, no logo, no black.
