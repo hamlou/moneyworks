@@ -354,6 +354,12 @@ def shot(s, k):
     raise SystemExit(f"unknown shot {s}")
 
 
+# warm-up: the first Freestyle render of a session comes out without lines (bank70 v2) → render one throwaway frame
+_c = shot(SHOT, 0)
+sc.camera = _c
+sc.render.filepath = os.path.join(K.OUT, "_warmup.jpg")
+bpy.ops.render.render(write_still=False)
+bpy.data.objects.remove(_c)
 for k in FR:
     if k > N:
         break

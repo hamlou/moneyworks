@@ -28,6 +28,7 @@ jobs:
       samples: ${{ steps.p.outputs.samples }}
       engine: ${{ steps.p.outputs.engine }}
       res: ${{ steps.p.outputs.res }}
+      flat: ${{ steps.p.outputs.flat }}
     steps:
       - uses: actions/checkout@v4
       - id: p
@@ -36,6 +37,7 @@ jobs:
           MODE=${{ inputs.mode }}; MODE=${MODE:-$(awk '{print $2}' blender/RUN)}
           SAMPLES=${{ inputs.samples }}; SAMPLES=${SAMPLES:-$(awk '{print $3}' blender/RUN)}
           ENGINE=$(awk '{print $4}' blender/RUN); echo "engine=${ENGINE:-cycles}" >> $GITHUB_OUTPUT
+          [ -f blender/$SHOT.flat ] && echo "flat=1" >> $GITHUB_OUTPUT
           echo "shot=$SHOT" >> $GITHUB_OUTPUT; echo "mode=$MODE" >> $GITHUB_OUTPUT; echo "samples=$SAMPLES" >> $GITHUB_OUTPUT
           if [ -f blender/$SHOT.chunks ]; then
             echo "chunks=$(cat blender/$SHOT.chunks)" >> $GITHUB_OUTPUT
@@ -112,7 +114,7 @@ jobs:
             SC=1920:1080; [ "${{ needs.plan.outputs.mode }}" = "vert" ] && SC=1080:1920  # vert = 9:16 Short
             for p in $(ls frames | grep -oE '^[A-Z]_' | sort -u | tr -d _); do
               VF="scale=$SC:flags=lanczos,vignette=PI/5,noise=alls=5:allf=t"
-              [ -f blender/${{ needs.plan.outputs.shot }}.flat ] && VF="scale=$SC:flags=lanczos"  # paper looks (ink): no vignette/grain
+              [ "${{ needs.plan.outputs.flat }}" = "1" ] && VF="scale=$SC:flags=lanczos"  # paper looks (ink): no vignette/grain
               ffmpeg -v error -framerate 24 -start_number 1 -i frames/${p}_%04d.jpg -vf "$VF" -c:v libx264 -crf 21 -pix_fmt yuv420p out/shot_$p.mp4
               echo "file 'out/shot_$p.mp4'" >> list.txt
             done
