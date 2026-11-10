@@ -1,0 +1,686 @@
+{
+ "fps": 30,
+ "total": 30.764,
+ "hash": "d5a33ba67763f4ee",
+ "chapters": [],
+ "beats": [
+  {
+   "id": "b01",
+   "text": "What if prices doubled every single day?",
+   "start": 0.08,
+   "end": 1.84,
+   "words": [
+    {
+     "text": "What",
+     "start": 0.08,
+     "end": 0.22
+    },
+    {
+     "text": "if",
+     "start": 0.22,
+     "end": 0.32
+    },
+    {
+     "text": "prices",
+     "start": 0.32,
+     "end": 0.52
+    },
+    {
+     "text": "doubled",
+     "start": 0.52,
+     "end": 0.9
+    },
+    {
+     "text": "every",
+     "start": 0.9,
+     "end": 1.28
+    },
+    {
+     "text": "single",
+     "start": 1.28,
+     "end": 1.56
+    },
+    {
+     "text": "day?",
+     "start": 1.56,
+     "end": 1.84
+    }
+   ]
+  },
+  {
+   "id": "b02",
+   "text": "Because in Hungary in nineteen forty six it was even worse.",
+   "start": 2.332875,
+   "end": 4.368875,
+   "words": [
+    {
+     "text": "Because",
+     "start": 2.333,
+     "end": 2.58
+    },
+    {
+     "text": "in",
+     "start": 2.608,
+     "end": 2.7
+    },
+    {
+     "text": "Hungary",
+     "start": 2.711,
+     "end": 2.958
+    },
+    {
+     "text": "in",
+     "start": 2.985,
+     "end": 3.078
+    },
+    {
+     "text": "nineteen",
+     "start": 3.088,
+     "end": 3.366
+    },
+    {
+     "text": "forty",
+     "start": 3.397,
+     "end": 3.583
+    },
+    {
+     "text": "six",
+     "start": 3.603,
+     "end": 3.727
+    },
+    {
+     "text": "it",
+     "start": 3.741,
+     "end": 3.833
+    },
+    {
+     "text": "was",
+     "start": 3.844,
+     "end": 3.967
+    },
+    {
+     "text": "even",
+     "start": 3.981,
+     "end": 4.135
+    },
+    {
+     "text": "worse.",
+     "start": 4.153,
+     "end": 4.369
+    }
+   ]
+  },
+  {
+   "id": "b03",
+   "text": "Prices tripled every day.",
+   "start": 4.979416666666666,
+   "end": 6.279416666666666,
+   "words": [
+    {
+     "text": "Prices",
+     "start": 4.979,
+     "end": 5.199
+    },
+    {
+     "text": "tripled",
+     "start": 5.199,
+     "end": 5.459
+    },
+    {
+     "text": "every",
+     "start": 5.459,
+     "end": 5.959
+    },
+    {
+     "text": "day.",
+     "start": 5.959,
+     "end": 6.279
+    }
+   ]
+  },
+  {
+   "id": "b04",
+   "text": "A bread that cost one coin this morning cost three coins tomorrow.",
+   "start": 6.8068125,
+   "end": 9.5268125,
+   "words": [
+    {
+     "text": "A",
+     "start": 6.807,
+     "end": 6.887
+    },
+    {
+     "text": "bread",
+     "start": 6.887,
+     "end": 7.047
+    },
+    {
+     "text": "that",
+     "start": 7.047,
+     "end": 7.187
+    },
+    {
+     "text": "cost",
+     "start": 7.187,
+     "end": 7.367
+    },
+    {
+     "text": "one",
+     "start": 7.367,
+     "end": 7.627
+    },
+    {
+     "text": "coin",
+     "start": 7.627,
+     "end": 7.887
+    },
+    {
+     "text": "this",
+     "start": 7.887,
+     "end": 8.067
+    },
+    {
+     "text": "morning",
+     "start": 8.067,
+     "end": 8.247
+    },
+    {
+     "text": "cost",
+     "start": 8.247,
+     "end": 8.527
+    },
+    {
+     "text": "three",
+     "start": 8.527,
+     "end": 8.847
+    },
+    {
+     "text": "coins",
+     "start": 8.847,
+     "end": 9.107
+    },
+    {
+     "text": "tomorrow.",
+     "start": 9.107,
+     "end": 9.527
+    }
+   ]
+  },
+  {
+   "id": "b05",
+   "text": "So people got paid and ran to the shop the same hour.",
+   "start": 10.159208333333334,
+   "end": 12.319208333333334,
+   "words": [
+    {
+     "text": "So",
+     "start": 10.159,
+     "end": 10.259
+    },
+    {
+     "text": "people",
+     "start": 10.259,
+     "end": 10.479
+    },
+    {
+     "text": "got",
+     "start": 10.479,
+     "end": 10.739
+    },
+    {
+     "text": "paid",
+     "start": 10.739,
+     "end": 10.939
+    },
+    {
+     "text": "and",
+     "start": 10.939,
+     "end": 11.159
+    },
+    {
+     "text": "ran",
+     "start": 11.159,
+     "end": 11.279
+    },
+    {
+     "text": "to",
+     "start": 11.279,
+     "end": 11.439
+    },
+    {
+     "text": "the",
+     "start": 11.439,
+     "end": 11.519
+    },
+    {
+     "text": "shop",
+     "start": 11.519,
+     "end": 11.659
+    },
+    {
+     "text": "the",
+     "start": 11.659,
+     "end": 11.859
+    },
+    {
+     "text": "same",
+     "start": 11.859,
+     "end": 12.059
+    },
+    {
+     "text": "hour.",
+     "start": 12.059,
+     "end": 12.319
+    }
+   ]
+  },
+  {
+   "id": "b06",
+   "text": "The government printed a banknote with twenty zeros on it.",
+   "start": 12.842729166666667,
+   "end": 15.424729166666665,
+   "words": [
+    {
+     "text": "The",
+     "start": 12.843,
+     "end": 13.002
+    },
+    {
+     "text": "government",
+     "start": 13.019,
+     "end": 13.456
+    },
+    {
+     "text": "printed",
+     "start": 13.504,
+     "end": 13.821
+    },
+    {
+     "text": "a",
+     "start": 13.857,
+     "end": 13.936
+    },
+    {
+     "text": "banknote",
+     "start": 13.945,
+     "end": 14.302
+    },
+    {
+     "text": "with",
+     "start": 14.341,
+     "end": 14.54
+    },
+    {
+     "text": "twenty",
+     "start": 14.562,
+     "end": 14.839
+    },
+    {
+     "text": "zeros",
+     "start": 14.87,
+     "end": 15.108
+    },
+    {
+     "text": "on",
+     "start": 15.135,
+     "end": 15.254
+    },
+    {
+     "text": "it.",
+     "start": 15.267,
+     "end": 15.425
+    }
+   ]
+  },
+  {
+   "id": "b07",
+   "text": "But it was still not enough.",
+   "start": 15.864645833333332,
+   "end": 17.50464583333333,
+   "words": [
+    {
+     "text": "But",
+     "start": 15.865,
+     "end": 16.085
+    },
+    {
+     "text": "it",
+     "start": 16.085,
+     "end": 16.385
+    },
+    {
+     "text": "was",
+     "start": 16.385,
+     "end": 16.525
+    },
+    {
+     "text": "still",
+     "start": 16.525,
+     "end": 16.845
+    },
+    {
+     "text": "not",
+     "start": 16.845,
+     "end": 17.125
+    },
+    {
+     "text": "enough.",
+     "start": 17.125,
+     "end": 17.505
+    }
+   ]
+  },
+  {
+   "id": "b08",
+   "text": "So they threw the whole money away and made a new one.",
+   "start": 17.98525,
+   "end": 19.80525,
+   "words": [
+    {
+     "text": "So",
+     "start": 17.985,
+     "end": 18.105
+    },
+    {
+     "text": "they",
+     "start": 18.105,
+     "end": 18.205
+    },
+    {
+     "text": "threw",
+     "start": 18.205,
+     "end": 18.365
+    },
+    {
+     "text": "the",
+     "start": 18.365,
+     "end": 18.505
+    },
+    {
+     "text": "whole",
+     "start": 18.505,
+     "end": 18.645
+    },
+    {
+     "text": "money",
+     "start": 18.645,
+     "end": 18.805
+    },
+    {
+     "text": "away",
+     "start": 18.805,
+     "end": 19.065
+    },
+    {
+     "text": "and",
+     "start": 19.065,
+     "end": 19.285
+    },
+    {
+     "text": "made",
+     "start": 19.285,
+     "end": 19.425
+    },
+    {
+     "text": "a",
+     "start": 19.425,
+     "end": 19.525
+    },
+    {
+     "text": "new",
+     "start": 19.525,
+     "end": 19.645
+    },
+    {
+     "text": "one.",
+     "start": 19.645,
+     "end": 19.805
+    }
+   ]
+  },
+  {
+   "id": "b09",
+   "text": "One new coin was worth a four with twenty nine zeros of the old money.",
+   "start": 20.255416666666665,
+   "end": 23.225416666666664,
+   "words": [
+    {
+     "text": "One",
+     "start": 20.255,
+     "end": 20.407
+    },
+    {
+     "text": "new",
+     "start": 20.424,
+     "end": 20.576
+    },
+    {
+     "text": "coin",
+     "start": 20.593,
+     "end": 20.783
+    },
+    {
+     "text": "was",
+     "start": 20.804,
+     "end": 20.956
+    },
+    {
+     "text": "worth",
+     "start": 20.973,
+     "end": 21.201
+    },
+    {
+     "text": "a",
+     "start": 21.227,
+     "end": 21.303
+    },
+    {
+     "text": "four",
+     "start": 21.311,
+     "end": 21.501
+    },
+    {
+     "text": "with",
+     "start": 21.523,
+     "end": 21.713
+    },
+    {
+     "text": "twenty",
+     "start": 21.734,
+     "end": 22.0
+    },
+    {
+     "text": "nine",
+     "start": 22.03,
+     "end": 22.22
+    },
+    {
+     "text": "zeros",
+     "start": 22.241,
+     "end": 22.469
+    },
+    {
+     "text": "of",
+     "start": 22.494,
+     "end": 22.609
+    },
+    {
+     "text": "the",
+     "start": 22.621,
+     "end": 22.773
+    },
+    {
+     "text": "old",
+     "start": 22.79,
+     "end": 22.942
+    },
+    {
+     "text": "money.",
+     "start": 22.959,
+     "end": 23.225
+    }
+   ]
+  },
+  {
+   "id": "b10",
+   "text": "And the old banknotes were so worthless that street cleaners swept them off the road like leaves.",
+   "start": 23.695166666666665,
+   "end": 27.365166666666667,
+   "words": [
+    {
+     "text": "And",
+     "start": 23.695,
+     "end": 23.831
+    },
+    {
+     "text": "the",
+     "start": 23.846,
+     "end": 23.982
+    },
+    {
+     "text": "old",
+     "start": 23.997,
+     "end": 24.133
+    },
+    {
+     "text": "banknotes",
+     "start": 24.148,
+     "end": 24.488
+    },
+    {
+     "text": "were",
+     "start": 24.526,
+     "end": 24.696
+    },
+    {
+     "text": "so",
+     "start": 24.714,
+     "end": 24.816
+    },
+    {
+     "text": "worthless",
+     "start": 24.828,
+     "end": 25.167
+    },
+    {
+     "text": "that",
+     "start": 25.205,
+     "end": 25.375
+    },
+    {
+     "text": "street",
+     "start": 25.394,
+     "end": 25.632
+    },
+    {
+     "text": "cleaners",
+     "start": 25.658,
+     "end": 25.964
+    },
+    {
+     "text": "swept",
+     "start": 25.998,
+     "end": 26.202
+    },
+    {
+     "text": "them",
+     "start": 26.225,
+     "end": 26.394
+    },
+    {
+     "text": "off",
+     "start": 26.413,
+     "end": 26.549
+    },
+    {
+     "text": "the",
+     "start": 26.564,
+     "end": 26.7
+    },
+    {
+     "text": "road",
+     "start": 26.715,
+     "end": 26.885
+    },
+    {
+     "text": "like",
+     "start": 26.904,
+     "end": 27.074
+    },
+    {
+     "text": "leaves.",
+     "start": 27.093,
+     "end": 27.365
+    }
+   ]
+  },
+  {
+   "id": "b11",
+   "text": "So next time your coffee costs ten cents more just ask yourself",
+   "start": 28.06052083333333,
+   "end": 30.42052083333333,
+   "words": [
+    {
+     "text": "So",
+     "start": 28.061,
+     "end": 28.141
+    },
+    {
+     "text": "next",
+     "start": 28.141,
+     "end": 28.241
+    },
+    {
+     "text": "time",
+     "start": 28.241,
+     "end": 28.441
+    },
+    {
+     "text": "your",
+     "start": 28.441,
+     "end": 28.561
+    },
+    {
+     "text": "coffee",
+     "start": 28.561,
+     "end": 28.781
+    },
+    {
+     "text": "costs",
+     "start": 28.781,
+     "end": 29.061
+    },
+    {
+     "text": "ten",
+     "start": 29.061,
+     "end": 29.301
+    },
+    {
+     "text": "cents",
+     "start": 29.301,
+     "end": 29.461
+    },
+    {
+     "text": "more",
+     "start": 29.461,
+     "end": 29.761
+    },
+    {
+     "text": "just",
+     "start": 29.921,
+     "end": 29.981
+    },
+    {
+     "text": "ask",
+     "start": 29.981,
+     "end": 30.161
+    },
+    {
+     "text": "yourself",
+     "start": 30.161,
+     "end": 30.421
+    }
+   ]
+  }
+ ]
+}
