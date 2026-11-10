@@ -1,0 +1,102 @@
+{
+ "id": "phone96",
+ "title": "What If Your Phone Charged You $1 Every Time You Checked It? #shorts",
+ "style": "v7",
+ "voice": "chatterbox",
+ "cb": {
+  "cfg": 0.3,
+  "exag": 0.55
+ },
+ "note": "format test F9 phone POV",
+ "visual_style": "phone-screen POV (whole Short is a phone, no Dave)",
+ "sources": [
+  "S1 Asurion survey 2019 (Fox/KTVU 'Americans check their smartphones 96 times a day'): 96 checks a day = once every 10 minutes awake; 18-24 year olds check twice as much https://www.ktvu.com/news/americans-check-their-smartphones-96-times-a-day-survey-says",
+  "S2 math: 96 x 365 = 35,040; x2 = 70,080"
+ ],
+ "beats": [
+  {
+   "id": "b01",
+   "src": "",
+   "text": "What if your phone took one dollar every time you checked it?",
+   "pause": 0.2,
+   "exag": 0.6
+  },
+  {
+   "id": "b02",
+   "src": "S1",
+   "text": "Because you would be broke before lunch.",
+   "pause": 0.2,
+   "exag": 0.6
+  },
+  {
+   "id": "b03",
+   "src": "S1",
+   "text": "The average American checks their phone ninety six times a day.",
+   "pause": 0.2,
+   "exag": 0.6
+  },
+  {
+   "id": "b04",
+   "src": "S1",
+   "text": "That is once every ten minutes you are awake.",
+   "pause": 0.2,
+   "exag": 0.6
+  },
+  {
+   "id": "b05",
+   "src": "S2",
+   "text": "So that is ninety six dollars a day just to look at a screen.",
+   "pause": 0.2,
+   "exag": 0.6
+  },
+  {
+   "id": "b06",
+   "src": "S2",
+   "text": "And by the end of the year it is thirty five thousand dollars.",
+   "pause": 0.2,
+   "exag": 0.6
+  },
+  {
+   "id": "b07",
+   "src": "S2",
+   "text": "That is a brand new car every year gone to notifications.",
+   "pause": 0.2,
+   "exag": 0.6
+  },
+  {
+   "id": "b08",
+   "src": "S1",
+   "text": "But people your age check it twice as much.",
+   "pause": 0.2,
+   "exag": 0.6
+  },
+  {
+   "id": "b09",
+   "src": "S2",
+   "text": "So you would pay seventy thousand dollars a year.",
+   "pause": 0.2,
+   "exag": 0.6
+  },
+  {
+   "id": "b10",
+   "src": "",
+   "text": "And the scary part is you would still keep checking it.",
+   "pause": 0.2,
+   "exag": 0.6
+  },
+  {
+   "id": "b11",
+   "src": "",
+   "text": "Because the phone was never free and you already pay with your time.",
+   "pause": 0.2,
+   "exag": 0.6
+  },
+  {
+   "id": "b12",
+   "src": "",
+   "text": "So next time you pick it up just ask yourself",
+   "pause": 0.0,
+   "exag": 0.6
+  }
+ ]
+}

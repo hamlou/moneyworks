@@ -1,0 +1,102 @@
+{
+ "id": "bank70",
+ "title": "What If Every Bank Closed For Six Months? #shorts",
+ "style": "v7",
+ "voice": "chatterbox",
+ "cb": {
+  "cfg": 0.3,
+  "exag": 0.55
+ },
+ "note": "format test F3 ink sketchbook",
+ "visual_style": "hand-drawn ink sketchbook (Blender Grease Pencil, sketched Dave)",
+ "sources": [
+  "S1 Wikipedia 'Irish bank strikes (1966-1976)' + Bank Underground 'The Cheque Republic' (2016): 1970 strike closed banks ~6 months; people kept using cheques as money; total backlog ~£5 billion https://bankunderground.co.uk/2016/01/20/the-cheque-republic-money-in-a-modern-economy-with-no-banks/",
+  "S2 Central Bank of Ireland via Business Insider (2016): 11,000 pubs and 12,000 shops acted as bank substitutes; pubs cashed cheques; cheques written on any scrap of paper https://www.businessinsider.com/pubs-replaced-banks-in-ireland-in-1970-and-the-economy-was-fine-2016-1"
+ ],
+ "beats": [
+  {
+   "id": "b01",
+   "src": "",
+   "text": "What if every bank in your country closed for six months?",
+   "pause": 0.2,
+   "exag": 0.6
+  },
+  {
+   "id": "b02",
+   "src": "S1",
+   "text": "Because in Ireland in nineteen seventy they really did.",
+   "pause": 0.2,
+   "exag": 0.6
+  },
+  {
+   "id": "b03",
+   "src": "S1",
+   "text": "The bank workers went on strike and locked every door.",
+   "pause": 0.2,
+   "exag": 0.6
+  },
+  {
+   "id": "b04",
+   "src": "S1",
+   "text": "So nobody could take out a single coin of cash.",
+   "pause": 0.2,
+   "exag": 0.6
+  },
+  {
+   "id": "b05",
+   "src": "S2",
+   "text": "But people did not panic because they went to the pub.",
+   "pause": 0.2,
+   "exag": 0.6
+  },
+  {
+   "id": "b06",
+   "src": "S2",
+   "text": "Eleven thousand pubs turned into banks.",
+   "pause": 0.2,
+   "exag": 0.6
+  },
+  {
+   "id": "b07",
+   "src": "S2",
+   "text": "You wrote a cheque and the barman gave you cash because he knew you.",
+   "pause": 0.2,
+   "exag": 0.6
+  },
+  {
+   "id": "b08",
+   "src": "S2",
+   "text": "People wrote cheques on any scrap of paper they could find.",
+   "pause": 0.2,
+   "exag": 0.6
+  },
+  {
+   "id": "b09",
+   "src": "S1",
+   "text": "And they passed them around like money for six whole months.",
+   "pause": 0.2,
+   "exag": 0.6
+  },
+  {
+   "id": "b10",
+   "src": "S1",
+   "text": "When the banks finally opened they found five billion pounds of cheques waiting.",
+   "pause": 0.2,
+   "exag": 0.6
+  },
+  {
+   "id": "b11",
+   "src": "",
+   "text": "Because the money was never in the bank it was in the trust.",
+   "pause": 0.2,
+   "exag": 0.6
+  },
+  {
+   "id": "b12",
+   "src": "",
+   "text": "So ask yourself who would still give you cash tomorrow",
+   "pause": 0.0,
+   "exag": 0.6
+  }
+ ]
+}

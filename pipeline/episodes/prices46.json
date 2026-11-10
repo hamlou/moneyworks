@@ -1,0 +1,96 @@
+{
+ "id": "prices46",
+ "title": "What If Prices Doubled Every Single Day? #shorts",
+ "style": "v7",
+ "voice": "chatterbox",
+ "cb": {
+  "cfg": 0.3,
+  "exag": 0.55
+ },
+ "note": "format test F6 miniature; owner asked 24h framing (true: Hungary tripled daily)",
+ "visual_style": "tilt-shift miniature diorama (Blender toy town, no Dave)",
+ "sources": [
+  "S1 Wikipedia 'Hungarian pengő' + Guinness 'Highest inflation rate ever': July 1946 daily inflation 207 % (prices x3.07 a day), doubling every ~15 h https://en.wikipedia.org/wiki/Hungarian_peng%C5%91",
+  "S2 same: largest note 100 quintillion (10^20) pengő; 18 Aug 1946 one forint = 4 x 10^29 pengő",
+  "S3 Daily News Hungary 'Hungary's nightmare hyperinflation of 1946': people paid daily spent wages at once; street cleaners swept worthless pengő notes from the streets https://dailynewshungary.com/hungarys-nightmare-hyperinflation-of-1946/"
+ ],
+ "beats": [
+  {
+   "id": "b01",
+   "src": "",
+   "text": "What if prices doubled every single day?",
+   "pause": 0.2,
+   "exag": 0.6
+  },
+  {
+   "id": "b02",
+   "src": "S1",
+   "text": "Because in Hungary in nineteen forty six it was even worse.",
+   "pause": 0.2,
+   "exag": 0.6
+  },
+  {
+   "id": "b03",
+   "src": "S1",
+   "text": "Prices tripled every day.",
+   "pause": 0.2,
+   "exag": 0.6
+  },
+  {
+   "id": "b04",
+   "src": "S1",
+   "text": "A bread that cost one coin this morning cost three coins tomorrow.",
+   "pause": 0.2,
+   "exag": 0.6
+  },
+  {
+   "id": "b05",
+   "src": "S3",
+   "text": "So people got paid and ran to the shop the same hour.",
+   "pause": 0.2,
+   "exag": 0.6
+  },
+  {
+   "id": "b06",
+   "src": "S2",
+   "text": "The government printed a banknote with twenty zeros on it.",
+   "pause": 0.2,
+   "exag": 0.6
+  },
+  {
+   "id": "b07",
+   "src": "S1",
+   "text": "But it was still not enough.",
+   "pause": 0.2,
+   "exag": 0.6
+  },
+  {
+   "id": "b08",
+   "src": "S2",
+   "text": "So they threw the whole money away and made a new one.",
+   "pause": 0.2,
+   "exag": 0.6
+  },
+  {
+   "id": "b09",
+   "src": "S2",
+   "text": "One new coin was worth a four with twenty nine zeros of the old money.",
+   "pause": 0.2,
+   "exag": 0.6
+  },
+  {
+   "id": "b10",
+   "src": "S3",
+   "text": "And the old banknotes were so worthless that street cleaners swept them off the road like leaves.",
+   "pause": 0.2,
+   "exag": 0.6
+  },
+  {
+   "id": "b11",
+   "src": "",
+   "text": "So next time your coffee costs ten cents more just ask yourself",
+   "pause": 0.0,
+   "exag": 0.6
+  }
+ ]
+}

@@ -1,0 +1,95 @@
+{
+ "id": "mistake10",
+ "title": "What If Your Bank Sent You $10 Million By Mistake? #shorts",
+ "style": "v7",
+ "voice": "chatterbox",
+ "cb": {
+  "cfg": 0.3,
+  "exag": 0.55
+ },
+ "note": "format test F5 AI cinematic; never name/depict the real person (fictional actor, generic)",
+ "visual_style": "photoreal AI cinematic (Wan 2.2 open-source, fictional actor, no Dave) — $0 GPU only",
+ "sources": [
+  "S1 Fortune / Cointelegraph / ACS (Aug 2022): May 2021 Crypto.com meant to refund A$100 to a Melbourne woman but sent ~A$10.5 million; an account number was typed into the payment amount field https://cointelegraph.com/news/crypto-com-accidentally-transfered-10-5m-to-client-instead-of-100-refund",
+  "S2 same: error found 7 months later in a December 2021 audit; a mansion (gym + cinema) was bought; court ordered the money back plus interest and the house sold https://www.fortune.com/2022/08/31/crypto-com-accidentally-transferred-10-million-to-thevamanogari-manivel"
+ ],
+ "beats": [
+  {
+   "id": "b01",
+   "src": "",
+   "text": "What if you opened your bank app and saw ten million dollars?",
+   "pause": 0.2,
+   "exag": 0.6
+  },
+  {
+   "id": "b02",
+   "src": "S1",
+   "text": "Because that really happened to a woman in Australia.",
+   "pause": 0.2,
+   "exag": 0.6
+  },
+  {
+   "id": "b03",
+   "src": "S1",
+   "text": "A crypto company owed her a one hundred dollar refund.",
+   "pause": 0.2,
+   "exag": 0.6
+  },
+  {
+   "id": "b04",
+   "src": "S1",
+   "text": "But a worker typed her account number into the money box.",
+   "pause": 0.2,
+   "exag": 0.6
+  },
+  {
+   "id": "b05",
+   "src": "S1",
+   "text": "So she got ten and a half million dollars.",
+   "pause": 0.2,
+   "exag": 0.6
+  },
+  {
+   "id": "b06",
+   "src": "S2",
+   "text": "And nobody noticed for seven whole months.",
+   "pause": 0.2,
+   "exag": 0.6
+  },
+  {
+   "id": "b07",
+   "src": "S2",
+   "text": "So she bought a mansion with a gym and a cinema.",
+   "pause": 0.2,
+   "exag": 0.6
+  },
+  {
+   "id": "b08",
+   "src": "S2",
+   "text": "But then an audit found the mistake.",
+   "pause": 0.2,
+   "exag": 0.6
+  },
+  {
+   "id": "b09",
+   "src": "S2",
+   "text": "And the court made her pay it all back with interest and they sold the house.",
+   "pause": 0.2,
+   "exag": 0.6
+  },
+  {
+   "id": "b10",
+   "src": "",
+   "text": "Because money that lands by mistake is never yours.",
+   "pause": 0.2,
+   "exag": 0.6
+  },
+  {
+   "id": "b11",
+   "src": "",
+   "text": "So if it ever happens to you just ask yourself",
+   "pause": 0.0,
+   "exag": 0.6
+  }
+ ]
+}
