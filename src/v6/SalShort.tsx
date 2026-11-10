@@ -23,10 +23,10 @@ type SP = {f: number; c: (k: string) => number; b: SBeat};
 
 // ───────── street (frame 0 + loop) ─────────
 const PEOPLE = [
-  {x: 160, y: 1000, s: 1.32, col: '#3D7BD9', pay: 38400, tag: K.yellow, dir: 1, ty: 545},
-  {x: 410, y: 925, s: 1.08, col: '#8E5BD6', pay: 127000, tag: K.green, dir: -1, ty: 455},
-  {x: 680, y: 945, s: 1.14, col: '#D9853D', pay: 52900, tag: K.yellow, dir: 1, ty: 470},
-  {x: 925, y: 1015, s: 1.38, col: '#3DB89A', pay: 24800, tag: K.red, dir: -1, ty: 560},
+  {x: 160, y: 700, s: 1.32, col: '#3D7BD9', pay: 38400, tag: K.yellow, dir: 1, ty: 560},
+  {x: 410, y: 645, s: 1.08, col: '#8E5BD6', pay: 127000, tag: K.green, dir: -1, ty: 520},
+  {x: 680, y: 660, s: 1.14, col: '#D9853D', pay: 52900, tag: K.yellow, dir: 1, ty: 530},
+  {x: 925, y: 715, s: 1.38, col: '#3DB89A', pay: 24800, tag: K.red, dir: -1, ty: 570},
 ];
 const Building: React.FC<{x: number; w: number; h: number; seed: number}> = ({x, w, h, seed}) => {
   const rows = Math.floor(h / 70);
@@ -435,9 +435,10 @@ export const SalShort: React.FC<{plan: SalPlan}> = ({plan}) => {
   const b = plan.beats[bi];
   const S = SCENES[b.scene] ?? SCENES.street_hook;
   const cut = bi > 0 && f - b.from < 2;
+  const push = b.scene.startsWith('street') ? 1 : 1 + Math.min(0.08, (f - b.from) * 0.0011);
   return (
     <AbsoluteFill style={{background: '#000', overflow: 'hidden'}}>
-      <AbsoluteFill style={{transform: cut ? `scale(${1.04 - (f - b.from) * 0.02})` : undefined}}>
+      <AbsoluteFill style={{transform: `scale(${(cut ? 1.04 - (f - b.from) * 0.02 : 1) * push})`, transformOrigin: '50% 40%'}}>
         <S f={f} c={c} b={b} />
       </AbsoluteFill>
       <AbsoluteFill style={{background: 'linear-gradient(180deg, rgba(0,0,0,0.45) 0%, rgba(0,0,0,0) 22%, rgba(0,0,0,0) 62%, rgba(0,0,0,0.55) 100%)'}} />
