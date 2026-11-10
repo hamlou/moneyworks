@@ -111,7 +111,9 @@ jobs:
             : > list.txt
             SC=1920:1080; [ "${{ needs.plan.outputs.mode }}" = "vert" ] && SC=1080:1920  # vert = 9:16 Short
             for p in $(ls frames | grep -oE '^[A-Z]_' | sort -u | tr -d _); do
-              ffmpeg -v error -framerate 24 -start_number 1 -i frames/${p}_%04d.jpg -vf "scale=$SC:flags=lanczos,vignette=PI/5,noise=alls=5:allf=t" -c:v libx264 -crf 21 -pix_fmt yuv420p out/shot_$p.mp4
+              VF="scale=$SC:flags=lanczos,vignette=PI/5,noise=alls=5:allf=t"
+              [ -f blender/${{ needs.plan.outputs.shot }}.flat ] && VF="scale=$SC:flags=lanczos"  # paper looks (ink): no vignette/grain
+              ffmpeg -v error -framerate 24 -start_number 1 -i frames/${p}_%04d.jpg -vf "$VF" -c:v libx264 -crf 21 -pix_fmt yuv420p out/shot_$p.mp4
               echo "file 'out/shot_$p.mp4'" >> list.txt
             done
             ffmpeg -v error -f concat -safe 0 -i list.txt -c copy out/${{ needs.plan.outputs.shot }}.mp4

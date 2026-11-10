@@ -83,7 +83,7 @@ ST.color = (0.07, 0.08, 0.14)
 ST.thickness = 3.4 * K.W / 1080
 ST.caps = "ROUND"
 NOISE = ST.geometry_modifiers.new(name="wobble", type="PERLIN_NOISE_1D")
-NOISE.frequency, NOISE.amplitude, NOISE.octaves = 12, 2.4 * K.W / 1080, 2
+NOISE.frequency, NOISE.amplitude, NOISE.octaves = 10, 3.6 * K.W / 1080, 2
 ST.geometry_modifiers.new(name="over", type="BACKBONE_STRETCHER").backbone_length = 6 * K.W / 1080
 th = ST.thickness_modifiers.new(name="pen", type="ALONG_STROKE")
 th.blend, th.value_min, th.value_max = "MULTIPLY", 0.45, 1.25
@@ -268,7 +268,12 @@ def shot(s, k):
         DOOR_L.location.x, DOOR_R.location.x = -0.36 - 0.6 * (1 - u), 0.36 + 0.6 * (1 - u)
         show(CLOSED, u > 0.6 or s == "L")
         CLOSED.location.z = 0.6 * (1 - min(1, max(0, (t - 0.25) * 4))) if s == "A" else 0
-        return cam("c", (1.4, -4.6, 1.1), (0, 3, 2.1), 30)
+        for i in range(6):
+            m = MEN[i]
+            show(m)
+            m.location = (-1.3 + i * 0.52 + 0.04 * math.sin(k * 1.3 + i), 2.2 - 0.08 * abs(math.sin(k * 0.9 + i * 2)), 0)
+            m.rotation_euler = (0, 0, R(180))
+        return cam("c", (1.0, -3.2, 1.0), (0, 3, 1.9), 28)
     if s == "B":  # Ireland 1970: the newspaper headline on the bank steps
         show(BANK)
         show(CLOSED)
@@ -353,6 +358,11 @@ for k in FR:
     if k > N:
         break
     c = shot(SHOT, k - 1)
+    tt = (k - 1) / max(1, N - 1)
+    if SHOT == "L":  # loop: pull back out so the last frame matches frame 0 of A
+        tt = 1 - tt
+    fwd = c.matrix_world.to_3x3() @ Vector((0, 0, -1)) if False else c.rotation_euler.to_matrix() @ Vector((0, 0, -1))
+    c.location = c.location + fwd * (0.9 * tt) + Vector((0.12 * math.sin(tt * 3.1), 0, 0.06 * math.sin(tt * 2.3)))
     sc.camera = c
     st = sc.render.image_settings
     st.file_format, st.color_mode, st.quality = "JPEG", "RGB", 92

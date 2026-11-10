@@ -56,7 +56,7 @@ export const ClipShort: React.FC<{plan: CPlan}> = ({plan}) => {
       ))}
       {look === 'ink' ? (
         <>
-          <Img src={staticFile(`${plan.id}/paper.jpg`)} style={{position: 'absolute', inset: 0, width: '100%', height: '100%', mixBlendMode: 'multiply', opacity: 0.85}} />
+          <Img src={staticFile(`${plan.id}/paper.jpg`)} style={{position: 'absolute', inset: 0, width: '100%', height: '100%', mixBlendMode: 'multiply', opacity: 0.35}} />
           {bi > 0 && lf < 2 ? <AbsoluteFill style={{background: '#F5EEDC', opacity: 0.7 - lf * 0.3}} /> : null}
         </>
       ) : (
