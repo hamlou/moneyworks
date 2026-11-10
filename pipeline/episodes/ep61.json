@@ -1,25 +1,8 @@
 {
  "id": "ep61",
  "title": "Why Staying Loyal to Your Job Keeps You Poorer",
- "hook_form": "two_people",
- "tts": {
-  "rate": "-5%",
-  "hook_rate": "+3%",
-  "lead": 0.08
- },
- "spine": {
-  "goal": "Dave, five loyal years at the same company on $62,000, wants to be paid what his job is worth today ($71,000, what the new hire Kyle got).",
-  "stakes": "If he stays quiet he pays a 'loyalty tax' of $9,000 a year: $90,000 over ten years (simple math, $9,000 x 10).",
-  "central_question": "Why does a company pay a stranger more than the person who already does the job well, and can Dave fix it without quitting?",
-  "loop_big": "Promised in the hook (o4): Dave walks back into the same office making $7,000 more without quitting -> paid at c8e/c8f ($69,000 via a market adjustment).",
-  "loop_mid": "Pause-and-guess at c3h: how much more did outside hires get than insiders promoted into the same kind of job? -> paid at c4h: 18 to 20 percent (Bidwell, Wharton). Second interactive at c4i: who got better reviews? (the insiders).",
-  "villain": "Not a person: a spreadsheet with two pots of money (a small raise pot of about 3.5% for people already inside, a market-priced hiring pot for strangers) plus the quiet bet that you won't leave. Revealed c4b-c4k (~45-50%).",
-  "low_point": "c6 (~70-75%): Dave writes his resignation, then sees the switching bonus is not guaranteed (zero in summer 2025), hiring is slow, and jumping has its own risks. Stuck between paying $9,000 a year and a cold job market. The five-year mug breaks.",
-  "win": "c7-c8: a third door. He finds his job's market price (his own company's posted pay range), asks for a 'market adjustment' instead of a raise, brings one page of results, and gets $69,000: +$7,000 a year without quitting. Damage Meter flips to SAVED +$7,000/YR.",
-  "damage_meter": "DAVE'S DAMAGE: shown as -$9,000/YR on the stakes beat (o3); story restarts at $0 in c1a; -$9,000/YR at c1f; flips to green SAVED +$7,000/YR at c8e.",
-  "running_gag": "The 'five years' mug (Dave's reward for loyalty): c1b gift, c1m, c2f 'a mug', c3n 'it does not tell time', c4n, c6g handle snaps off, c7j glued for luck, c8d, c8i pays off with Kyle.",
-  "memes": "A trend meme about every 30 s: each beat with a \"meme\" field is a drawn recreation of a classic meme format (no copyrighted images). The meme is the punchline of the line just spoken."
- },
+ "voice": "chatterbox",
+ "upgraded": "2026-10-19 UPGRADE.md v2",
  "sources": [
   "Dramatized story: Dave, Kyle, Dave's boss, the salaries ($62,000, $71,000, $69,000), the posted range ($68,000-$74,000), the 2% raise and the mug are illustrative. Math: $71,000 - $62,000 = $9,000 a year; x 10 years = $90,000 (no raises or interest assumed). $69,000 - $62,000 = $7,000. Dave's $62,000 is close to the U.S. full-time median (BLS Usual Weekly Earnings, Q3 2025: $1,214 a week, about $63,000 a year).",
   "Matthew Bidwell (Wharton), 'Paying More to Get Less: The Effects of External Hiring versus Internal Mobility', Administrative Science Quarterly 56(3), 2011; Knowledge at Wharton, March 28, 2012: personnel data from the U.S. investment banking division of a financial services firm, 2003-2009. External hires were paid about 18% to 20% more than workers promoted internally into similar jobs, got significantly lower performance evaluations for their first two years and had higher exit rates; they often had more education and experience.",
@@ -64,560 +47,2093 @@
  "beats": [
   {
    "id": "o1",
-   "job": "concept",
-   "text": "If you've been at your job a few years then the new hire next to you may be getting paid more for the same work.",
-   "pause": 0.2
+   "text": "This is me at my five year work anniversary. My boss gives me a gift bag. Inside there's a mug.",
+   "host": true,
+   "mood": "happy",
+   "pose": "present",
+   "pic": {
+    "id": "mug",
+    "at": "mug",
+    "look": "polaroid",
+    "label": "5 years!"
+   },
+   "sfx": [
+    {
+     "s": "ding",
+     "at": "anniversary"
+    },
+    {
+     "s": "crinkle",
+     "at": "bag"
+    },
+    {
+     "s": "boing",
+     "at": "mug"
+    }
+   ],
+   "pause": 0.15
   },
   {
    "id": "o2",
-   "job": "proof",
-   "text": "One Wharton study found outside hires got about eighteen percent more than insiders in the same kind of job.",
-   "pause": 0.2
+   "text": "And a letter with my raise. Two percent.",
+   "host": true,
+   "mood": "tired",
+   "pose": "shrug",
+   "slam": {
+    "t": "2%",
+    "at": "Two"
+   },
+   "zoom": {
+    "in": "Two",
+    "out": "percent"
+   },
+   "sfx": [
+    {
+     "s": "paper",
+     "at": "letter"
+    },
+    {
+     "s": "trombone",
+     "at": "percent"
+    }
+   ],
+   "pause": 0.15
   },
   {
    "id": "o3",
-   "job": "stakes",
-   "text": "For a guy like Dave that gap is nine thousand dollars a year or ninety thousand over ten loyal years.",
-   "pause": 0.25
+   "text": "Then I walk to the printer and see the offer letter for the new guy. Same job. Nine thousand dollars more than me.",
+   "pic": {
+    "id": "printer",
+    "at": "printer",
+    "look": "tape"
+   },
+   "slam": {
+    "t": "+$9,000",
+    "at": "Nine"
+   },
+   "sfx": [
+    {
+     "s": "whoosh",
+     "at": "walk"
+    },
+    {
+     "s": "pack/01_beating",
+     "at": "offer"
+    },
+    {
+     "s": "pack/01_boom",
+     "at": "Nine"
+    }
+   ],
+   "pause": 0.15
   },
   {
    "id": "o4",
-   "job": "ending",
-   "text": "But ten minutes from now Dave walks back into this office making seven thousand more without quitting.",
-   "pause": 0.3,
-   "rate": "+0%"
+   "text": "And I'm the one training him.",
+   "card": {
+    "t": "I'm training him.",
+    "dark": true
+   },
+   "sfx": [
+    {
+     "s": "scratch",
+     "at": "training"
+    }
+   ],
+   "pause": 0.3
+  },
+  {
+   "id": "o5",
+   "text": "By the end of this video you'll know why loyal people get paid less and the three moves I used to get seven thousand more without quitting.",
+   "host": true,
+   "mood": "suspicious",
+   "pose": "point_r",
+   "slam": {
+    "t": "+$7,000",
+    "at": "seven"
+   },
+   "sfx": [
+    {
+     "s": "ding",
+     "at": "loyal"
+    },
+    {
+     "s": "drumroll",
+     "at": "three"
+    },
+    {
+     "s": "cash",
+     "at": "seven"
+    },
+    {
+     "s": "boom",
+     "at": "quitting"
+    }
+   ],
+   "pause": 0.15
+  },
+  {
+   "id": "o6",
+   "text": "But most people click away before that part. Which is exactly what your company is hoping for.",
+   "host": true,
+   "mood": "worried",
+   "pose": "hips",
+   "sfx": [
+    {
+     "s": "whoosh",
+     "at": "click"
+    },
+    {
+     "s": "sting",
+     "at": "hoping"
+    }
+   ],
+   "pause": 0.3
   },
   {
    "id": "c1a",
-   "chapter": "The Five-Year Mug",
-   "text": "It's Dave's five year anniversary at work and his boss calls him in with a gift bag and a very big smile.",
-   "pause": 0.4
+   "text": "So let me back up. I've been at this job five years. I'm good at it. I know where the good stapler lives.",
+   "chapter": "The Five Year Mug",
+   "host": true,
+   "mood": "happy",
+   "pose": "present",
+   "pic": {
+    "id": "stapler",
+    "at": "stapler",
+    "look": "sticker"
+   },
+   "sfx": [
+    {
+     "s": "ding",
+     "at": "five"
+    },
+    {
+     "s": "pop",
+     "at": "stapler"
+    }
+   ]
   },
   {
    "id": "c1b",
-   "text": "Inside the bag there's a mug that says five years and a letter with his raise which is two percent.",
-   "pause": 0.5,
-   "rate": "-9%"
+   "text": "The new guy is Kyle. He started Monday. Same title. Same team. And his starting pay is seventy one thousand. Mine is sixty two.",
+   "pic": {
+    "id": "office",
+    "at": "team",
+    "look": "tape"
+   },
+   "sfx": [
+    {
+     "s": "ding",
+     "at": "Kyle"
+    },
+    {
+     "s": "cash",
+     "at": "seventy"
+    },
+    {
+     "s": "trombone",
+     "at": "sixty"
+    }
+   ]
   },
   {
-   "id": "c1m",
-   "text": "Somewhere upstairs somebody looked at a real raise and said no and then looked at a mug and said yes.",
-   "pause": 0.6,
-   "pitch": "+3Hz",
-   "meme": "drake"
+   "id": "n20",
+   "text": "And Kyle is nice. That's the worst part. I can't even hate him. He brought donuts on his first day.",
+   "host": true,
+   "mood": "sad",
+   "pose": "shrug",
+   "pic": {
+    "id": "donuts",
+    "at": "donuts",
+    "look": "sticker"
+   },
+   "sfx": [
+    {
+     "s": "ding",
+     "at": "nice"
+    },
+    {
+     "s": "boing",
+     "at": "donuts"
+    }
+   ]
+  },
+  {
+   "id": "n1",
+   "text": "Me showing Kyle where the coffee machine is.",
+   "meme": {
+    "t": "vs",
+    "a": "Me: $62,000",
+    "b": "Kyle: $71,000",
+    "at": "coffee"
+   },
+   "sfx": [
+    {
+     "s": "pop",
+     "at": "coffee"
+    }
+   ]
   },
   {
    "id": "c1c",
-   "text": "Dave says wow a mug! And honestly he's happy because this job pays him sixty two thousand dollars a year.",
-   "pause": 0.5
+   "text": "Somewhere upstairs somebody looked at a real raise and said no. Then looked at a mug and said yes.",
+   "host": true,
+   "mood": "angry",
+   "pose": "talk",
+   "zoom": {
+    "in": "mug",
+    "out": "yes"
+   },
+   "sfx": [
+    {
+     "s": "scratch",
+     "at": "no"
+    },
+    {
+     "s": "boing",
+     "at": "mug"
+    },
+    {
+     "s": "boom",
+     "at": "yes"
+    }
+   ]
   },
   {
    "id": "c1d",
-   "text": "Then he walks to the printer and sitting in the tray is an offer letter for Kyle the new guy who started on Monday.",
-   "pause": 0.45
+   "text": "Nine thousand a year. Over ten loyal years that's ninety thousand dollars. For being loyal.",
+   "host": true,
+   "mood": "shock",
+   "pose": "panic",
+   "slam": {
+    "t": "$90,000",
+    "at": "ninety"
+   },
+   "sfx": [
+    {
+     "s": "cash",
+     "at": "Nine"
+    },
+    {
+     "s": "pack/02_deep",
+     "at": "ninety"
+    },
+    {
+     "s": "trombone",
+     "at": "loyal#2"
+    }
+   ]
   },
   {
-   "id": "c1e",
-   "text": "Kyle has the same job title as Dave on the same team and his starting salary is seventy one thousand dollars.",
-   "pause": 0.5,
-   "rate": "-10%"
-  },
-  {
-   "id": "c1f",
-   "text": "That's nine thousand dollars more than Dave and Dave is the one who's training him.",
-   "pause": 0.6,
-   "pitch": "-2Hz"
-  },
-  {
-   "id": "c1n",
-   "text": "So Dave smiles and shows Kyle where the good stapler lives.",
-   "pause": 0.6,
-   "pitch": "+3Hz",
-   "meme": "pov"
-  },
-  {
-   "id": "c1g",
-   "text": "Be honest because you would've read that letter too.",
-   "pause": 0.5
-  },
-  {
-   "id": "c1p",
-   "text": "And then you'd open your laptop at midnight and type new hire paid more than me is this legal?",
-   "pause": 0.6,
-   "rate": "+4%",
-   "meme": "nobody"
-  },
-  {
-   "id": "c1h",
-   "text": "Dave was hoping it was a mistake. What he found was worse because it had a name.",
-   "pause": 0.9
+   "id": "n2",
+   "text": "Be honest. You would have read that letter too. And then at midnight you'd type new hire paid more than me is this legal.",
+   "host": true,
+   "mood": "grin",
+   "pose": "point_r",
+   "pic": {
+    "id": "laptop_night",
+    "at": "midnight",
+    "look": "circle"
+   },
+   "sfx": [
+    {
+     "s": "tick",
+     "at": "midnight"
+    },
+    {
+     "s": "click",
+     "at": "type"
+    },
+    {
+     "s": "boom",
+     "at": "legal"
+    }
+   ]
   },
   {
    "id": "c2a",
-   "chapter": "It Has A Name",
-   "text": "The internet answers in about four seconds. Yes it's legal and it's so common that H R people call it salary compression.",
-   "pause": 0.45
+   "text": "The internet answers in four seconds. Yes it's legal. And it's so common it has a name. Salary compression.",
+   "pic": {
+    "id": "dictionary",
+    "at": "name",
+    "look": "tape"
+   },
+   "slam": {
+    "t": "SALARY COMPRESSION",
+    "at": "Salary"
+   },
+   "sfx": [
+    {
+     "s": "tick",
+     "at": "four"
+    },
+    {
+     "s": "stamp",
+     "at": "legal"
+    },
+    {
+     "s": "pack/03_evolve_boom_brass_d",
+     "at": "compression"
+    }
+   ]
   },
   {
    "id": "c2b",
-   "text": "In plain English pay for newcomers climbs with the market while pay for insiders creeps up slowly until the new person passes you.",
-   "pause": 0.5
+   "text": "Here's what it means. The pay for new people climbs with the market. The pay for people already inside creeps up slowly. Until the new guy passes you.",
+   "host": true,
+   "mood": "suspicious",
+   "pose": "point_up",
+   "zoom": {
+    "in": "passes",
+    "out": "you"
+   },
+   "sfx": [
+    {
+     "s": "pack/01_evolve_brassy_swell",
+     "at": "climbs"
+    },
+    {
+     "s": "cricket",
+     "at": "slowly"
+    },
+    {
+     "s": "whoosh",
+     "at": "passes"
+    }
+   ]
   },
   {
    "id": "c2c",
-   "text": "Think of your salary like a price sticker with a date on it. Dave's sticker says five years ago and Kyle's sticker says last Monday at today's prices.",
-   "pause": 0.5
+   "text": "Think of your salary like a price sticker with a date on it. My sticker says five years ago. Kyle's sticker says last Monday.",
+   "pic": {
+    "id": "price_tag",
+    "at": "sticker",
+    "look": "sticker"
+   },
+   "sfx": [
+    {
+     "s": "ding",
+     "at": "sticker"
+    },
+    {
+     "s": "pop",
+     "at": "Kyle's"
+    }
+   ]
   },
   {
-   "id": "c2n",
-   "text": "But on paper your H R department swears these are two completely different jobs.",
-   "pause": 0.6,
-   "pitch": "+3Hz",
-   "meme": "same_picture"
+   "id": "n21",
+   "text": "Nobody ever updates my sticker. Unless I ask. And I never ask. Because asking feels rude.",
+   "host": true,
+   "mood": "tired",
+   "pose": "facepalm",
+   "zoom": {
+    "in": "never",
+    "out": "ask#2"
+   },
+   "sfx": [
+    {
+     "s": "cricket",
+     "at": "updates"
+    },
+    {
+     "s": "boom",
+     "at": "ask#2"
+    }
+   ]
+  },
+  {
+   "id": "n3",
+   "text": "My salary sticker versus Kyle's.",
+   "meme": {
+    "t": "drake",
+    "a": "Price from five years ago",
+    "b": "Price from last Monday",
+    "at": "sticker"
+   },
+   "sfx": [
+    {
+     "s": "pop",
+     "at": "sticker"
+    }
+   ]
   },
   {
    "id": "c2e",
-   "text": "Then Dave finds the scoreboard. The Federal Reserve Bank of Atlanta has tracked this since nineteen ninety seven by splitting workers into stayers and switchers.",
-   "pause": 0.5
+   "text": "And there's a scoreboard for this. The Federal Reserve Bank of Atlanta tracks people who stay at their job and people who switch.",
+   "pic": {
+    "id": "atlfed",
+    "at": "Atlanta",
+    "look": "news",
+    "label": "Atlanta Fed wage tracker"
+   },
+   "sfx": [
+    {
+     "s": "ding",
+     "at": "scoreboard"
+    },
+    {
+     "s": "stamp",
+     "at": "Atlanta"
+    }
+   ]
   },
   {
    "id": "c2f",
-   "text": "In the summer of twenty twenty two the switchers were getting raises of almost nine percent. The stayers got six and in Dave's case a mug.",
-   "pause": 0.55,
-   "rate": "+3%"
+   "text": "In the summer of twenty twenty two the switchers were getting raises of almost nine percent. The stayers got six. And I got a mug.",
+   "host": true,
+   "mood": "sad",
+   "pose": "facepalm",
+   "slam": {
+    "t": "SWITCHERS WIN",
+    "at": "switchers"
+   },
+   "sfx": [
+    {
+     "s": "pack/01_evolve_brassy_swell",
+     "at": "nine"
+    },
+    {
+     "s": "ding",
+     "at": "six"
+    },
+    {
+     "s": "trombone",
+     "at": "mug"
+    }
+   ]
   },
   {
-   "id": "c2m",
-   "text": "So Kyle's pay goes up like a rocket while Dave's pay just sits there next to a mug.",
-   "pause": 0.6,
-   "rate": "+3%",
-   "meme": "stonks"
+   "id": "n4",
+   "text": "My pay chart versus Kyle's pay chart.",
+   "meme": {
+    "t": "stonks",
+    "a": "KYLE'S SALARY",
+    "at": "chart#2"
+   },
+   "sfx": [
+    {
+     "s": "cash",
+     "at": "chart#2"
+    }
+   ]
   },
   {
    "id": "c2g",
-   "text": "So try this on yourself. Do you know what your company would pay a stranger to do your job today? Most of us have no idea.",
-   "pause": 0.5,
-   "pitch": "+3Hz"
-  },
-  {
-   "id": "c2p",
-   "text": "Dave honestly looked at two percent and thought it was the market rate.",
-   "pause": 0.6,
-   "pitch": "+3Hz",
-   "meme": "pigeon"
+   "text": "So try this on yourself. Do you know what your company would pay a stranger to do your job today? Most people have no idea. I sure didn't.",
+   "host": true,
+   "mood": "think",
+   "pose": "point_r",
+   "zoom": {
+    "in": "stranger",
+    "out": "today"
+   },
+   "sfx": [
+    {
+     "s": "pack/01_processing",
+     "at": "stranger"
+    },
+    {
+     "s": "boom",
+     "at": "today"
+    },
+    {
+     "s": "cricket",
+     "at": "didn't"
+    }
+   ]
   },
   {
    "id": "c2h",
-   "text": "But here's the weird part. By the elevator hangs an old photo of a man named Walt getting a gold watch for thirty years here. So when did staying stop paying?",
-   "pause": 0.9
+   "text": "And right by the elevator there's an old photo of a guy named Walt getting a gold watch for thirty years here. So when did staying stop paying?",
+   "pic": {
+    "id": "gold_watch",
+    "at": "watch",
+    "look": "polaroid",
+    "label": "Walt, 30 years"
+   },
+   "sfx": [
+    {
+     "s": "ding",
+     "at": "watch"
+    },
+    {
+     "s": "riser",
+     "at": "paying"
+    }
+   ]
   },
   {
    "id": "c3a",
+   "text": "Because companies really did pay people to stay. And the best story is Henry Ford.",
    "chapter": "When Staying Paid",
-   "text": "Dave stares at Walt and his watch and he says hold on did companies really pay people to stay?",
-   "pause": 0.45,
-   "pitch": "+3Hz"
+   "host": true,
+   "mood": "happy",
+   "pose": "point_up",
+   "pic": {
+    "id": "ford",
+    "at": "Ford",
+    "look": "news",
+    "label": "Henry Ford"
+   },
+   "sfx": [
+    {
+     "s": "flip",
+     "at": "story"
+    },
+    {
+     "s": "ding",
+     "at": "Ford"
+    }
+   ]
   },
   {
    "id": "c3b",
-   "text": "They did and the best story is Henry Ford's. In nineteen thirteen his assembly line was so boring that he had to hire fifty two thousand people in one year just to keep fourteen thousand jobs filled.",
-   "pause": 0.5
+   "text": "In nineteen thirteen his assembly line was so boring that he had to hire fifty two thousand people in one year just to keep fourteen thousand jobs filled.",
+   "pic": {
+    "id": "assembly",
+    "at": "assembly",
+    "look": "news",
+    "label": "1913"
+   },
+   "slam": {
+    "t": "52,000 HIRES",
+    "at": "fifty"
+   },
+   "sfx": [
+    {
+     "s": "pack/01_processing",
+     "at": "boring"
+    },
+    {
+     "s": "crowd",
+     "at": "thousand"
+    },
+    {
+     "s": "scratch",
+     "at": "filled"
+    }
+   ]
   },
   {
-   "id": "c3m",
-   "text": "Boring work and low pay made everybody quit and somehow the bosses were shocked.",
-   "pause": 0.6,
-   "pitch": "+3Hz",
-   "meme": "surprised"
+   "id": "n5",
+   "text": "Ford's workers in nineteen thirteen.",
+   "meme": {
+    "t": "buttons",
+    "a": "Tighten bolts all day",
+    "b": "Quit by Friday",
+    "at": "workers"
+   },
+   "sfx": [
+    {
+     "s": "pack/01_beating",
+     "at": "workers"
+    }
+   ]
   },
   {
    "id": "c3c",
-   "text": "So in January nineteen fourteen Ford doubled the pay to five dollars a day and the quitting pretty much stopped.",
-   "pause": 0.5,
-   "rate": "+4%"
+   "text": "So in nineteen fourteen Ford doubled the pay to five dollars a day. And the quitting pretty much stopped.",
+   "host": true,
+   "mood": "shock",
+   "pose": "celebrate",
+   "slam": {
+    "t": "$5 A DAY",
+    "at": "five"
+   },
+   "sfx": [
+    {
+     "s": "cash",
+     "at": "doubled"
+    },
+    {
+     "s": "crowd",
+     "at": "stopped"
+    }
+   ]
   },
   {
    "id": "c3d",
-   "text": "Ford wasn't being sweet. He'd done the math and losing people cost him more than paying them.",
-   "pause": 0.5
+   "text": "He wasn't being sweet. He did the math. Losing people cost him more than paying them.",
+   "host": true,
+   "mood": "smug",
+   "pose": "point_up",
+   "zoom": {
+    "in": "Losing",
+    "out": "them"
+   },
+   "sfx": [
+    {
+     "s": "ding",
+     "at": "math"
+    },
+    {
+     "s": "boom",
+     "at": "them"
+    }
+   ]
   },
   {
    "id": "c3e",
-   "text": "For decades big companies ran on that deal. You stayed thirty years and got a pension like the vending machine Dave's dad has and then they handed you a gold watch.",
-   "pause": 0.5
+   "text": "For decades that was the deal. You stayed thirty years. You got a pension. And on your last day they handed you a gold watch.",
+   "pic": {
+    "id": "retirement_party",
+    "at": "pension",
+    "look": "polaroid"
+   },
+   "sfx": [
+    {
+     "s": "ding",
+     "at": "thirty"
+    },
+    {
+     "s": "cash",
+     "at": "pension"
+    },
+    {
+     "s": "chime",
+     "at": "watch"
+    }
+   ]
   },
   {
-   "id": "c3f",
-   "text": "The story goes that Pepsi started the watch thing in the nineteen forties with the line you gave us your time so now we give you ours.",
-   "pause": 0.6
+   "id": "n22",
+   "text": "My dad's whole generation had this deal. Stay loyal and the company takes care of you. He still gets a check every month from a job he left twenty years ago.",
+   "pic": {
+    "id": "factory",
+    "at": "generation",
+    "look": "tape"
+   },
+   "sfx": [
+    {
+     "s": "ding",
+     "at": "deal"
+    },
+    {
+     "s": "cash",
+     "at": "check"
+    }
+   ]
   },
   {
-   "id": "c3n",
-   "text": "Dave looks down at his mug. It does not tell time.",
-   "pause": 0.6,
-   "rate": "-6%",
-   "meme": "started_going"
+   "id": "n6",
+   "text": "Me looking at my mug. It does not tell time.",
+   "host": true,
+   "mood": "tired",
+   "pose": "facepalm",
+   "pic": {
+    "id": "broken_mug",
+    "at": "mug",
+    "look": "circle"
+   },
+   "zoom": {
+    "in": "does",
+    "out": "time"
+   },
+   "sfx": [
+    {
+     "s": "boing",
+     "at": "mug"
+    },
+    {
+     "s": "boom",
+     "at": "time"
+    }
+   ]
   },
   {
    "id": "c3g",
-   "text": "Then somewhere along the way the deal flipped and to show you how far I need you to guess something.",
-   "pause": 0.5
+   "text": "Then somewhere along the way the deal flipped. And to show you how far it flipped I need you to guess something.",
+   "host": true,
+   "mood": "suspicious",
+   "pose": "hips",
+   "sfx": [
+    {
+     "s": "whoosh",
+     "at": "flipped"
+    },
+    {
+     "s": "riser",
+     "at": "guess"
+    }
+   ]
   },
   {
    "id": "c3h",
-   "text": "Quick guess. A Wharton professor took six years of pay records from one big company and compared outside hires with insiders promoted into the same kind of job. How much more did the outsiders get? Put your number in the comments because the answer is coming.",
-   "pause": 0.9,
-   "rate": "-2%"
+   "text": "A Wharton professor looked at six years of pay records at one big company. Outside hires versus insiders promoted into the same kind of job. How much more did the outsiders get? Put your guess in the comments.",
+   "pic": {
+    "id": "wharton",
+    "at": "Wharton",
+    "look": "news",
+    "label": "Wharton study"
+   },
+   "slam": {
+    "t": "GUESS",
+    "at": "guess"
+   },
+   "sfx": [
+    {
+     "s": "paper",
+     "at": "records"
+    },
+    {
+     "s": "drumroll",
+     "at": "How"
+    },
+    {
+     "s": "pop",
+     "at": "comments"
+    }
+   ]
   },
   {
    "id": "c4a",
+   "text": "So the next morning I walk into my boss's office and ask her straight. Why does Kyle make more than me?",
    "chapter": "Two Pots Of Money",
-   "text": "The next morning Dave walks into his boss's office and asks her straight why Kyle makes more than him.",
-   "pause": 0.45
+   "host": true,
+   "mood": "angry",
+   "pose": "talk",
+   "pic": {
+    "id": "door",
+    "at": "office",
+    "look": "tape"
+   },
+   "sfx": [
+    {
+     "s": "thud",
+     "at": "walk"
+    },
+    {
+     "s": "scratch",
+     "at": "Why"
+    }
+   ]
   },
   {
    "id": "c4b",
-   "text": "And his boss who actually likes Dave sighs and tells him the truth. Dave it's two different pots of money.",
-   "pause": 0.5,
-   "rate": "-9%"
+   "text": "And my boss actually likes me. So she sighs and tells me the truth. Dave. It's two different pots of money.",
+   "host": true,
+   "mood": "shock",
+   "pose": "panic",
+   "slam": {
+    "t": "TWO POTS",
+    "at": "two"
+   },
+   "pic": {
+    "id": "pots",
+    "at": "pots",
+    "look": "sticker"
+   },
+   "sfx": [
+    {
+     "s": "ding",
+     "at": "sighs"
+    },
+    {
+     "s": "pack/01_boom",
+     "at": "pots"
+    }
+   ]
   },
   {
    "id": "c4c",
-   "text": "Pot one is the raise pot for everybody who already works here. This year the typical American company filled it with about three and a half percent.",
-   "pause": 0.5
+   "text": "Pot one is the raise pot for everyone already working here. This year a typical company filled it with about three and a half percent.",
+   "pic": {
+    "id": "piggy",
+    "at": "raise",
+    "look": "tape"
+   },
+   "sfx": [
+    {
+     "s": "coin",
+     "at": "raise"
+    },
+    {
+     "s": "cricket",
+     "at": "percent"
+    }
+   ]
   },
   {
-   "id": "c4n",
-   "text": "So the company receives five loyal years and Dave receives two percent and a mug.",
-   "pause": 0.6,
-   "pitch": "+3Hz",
-   "meme": "trade_offer"
+   "id": "n23",
+   "text": "Three and a half percent. That's barely more than prices went up. So my raise isn't a raise. It's a refund for inflation.",
+   "host": true,
+   "mood": "angry",
+   "pose": "point_up",
+   "slam": {
+    "t": "A RAISE? NO. A REFUND.",
+    "at": "refund"
+   },
+   "sfx": [
+    {
+     "s": "scratch",
+     "at": "barely"
+    },
+    {
+     "s": "pack/01_boom",
+     "at": "refund"
+    }
+   ]
   },
   {
    "id": "c4d",
-   "text": "Pot two is the hiring pot and it works differently because a stranger won't sign unless you pay what the job is worth today.",
-   "pause": 0.5
+   "text": "Pot two is the hiring pot. And it works differently. A stranger won't sign unless you pay what the job is worth today.",
+   "host": true,
+   "mood": "suspicious",
+   "pose": "point_r",
+   "pic": {
+    "id": "handshake",
+    "at": "sign",
+    "look": "circle"
+   },
+   "sfx": [
+    {
+     "s": "ding",
+     "at": "hiring"
+    },
+    {
+     "s": "stamp",
+     "at": "sign"
+    },
+    {
+     "s": "cash",
+     "at": "today"
+    }
+   ]
   },
   {
    "id": "c4e",
-   "text": "So the hiring pot follows the market while the raise pot follows the budget and every year they drift a little further apart.",
-   "pause": 0.5
+   "text": "So the hiring pot follows the market. The raise pot follows the budget. And every year they drift a little further apart.",
+   "sfx": [
+    {
+     "s": "pack/01_evolve_brassy_swell",
+     "at": "market"
+    },
+    {
+     "s": "pack/02_evolve_brassy_drop_2",
+     "at": "budget"
+    },
+    {
+     "s": "whoosh",
+     "at": "apart"
+    }
+   ]
+  },
+  {
+   "id": "n7",
+   "text": "The company deciding where the money goes.",
+   "meme": {
+    "t": "drake",
+    "a": "Paying loyal Dave",
+    "b": "Paying a stranger",
+    "at": "money"
+   },
+   "sfx": [
+    {
+     "s": "pop",
+     "at": "money"
+    }
+   ]
   },
   {
    "id": "c4f",
-   "text": "It's like a family that brings home a new puppy and buys it steak while the old dog who's guarded the house for five years gets the same dry kibble. They just know he isn't going anywhere.",
-   "pause": 0.5
+   "text": "It's like a family that brings home a new puppy and buys it steak. And the old dog who guarded the house for five years gets the same dry kibble.",
+   "pic": {
+    "id": "puppy",
+    "at": "puppy",
+    "look": "polaroid"
+   },
+   "sfx": [
+    {
+     "s": "boing",
+     "at": "puppy"
+    },
+    {
+     "s": "ding",
+     "at": "steak"
+    },
+    {
+     "s": "trombone",
+     "at": "kibble"
+    }
+   ]
+  },
+  {
+   "id": "n24",
+   "text": "Nobody thinks the old dog is going anywhere. That's the whole reason he gets kibble.",
+   "host": true,
+   "mood": "suspicious",
+   "pose": "hips",
+   "zoom": {
+    "in": "whole",
+    "out": "kibble"
+   },
+   "sfx": [
+    {
+     "s": "ding",
+     "at": "anywhere"
+    },
+    {
+     "s": "boom",
+     "at": "kibble"
+    }
+   ]
   },
   {
    "id": "c4g",
-   "text": "Dave says wait am I the old dog? Yes Dave you're the old dog.",
-   "pause": 0.6,
-   "pitch": "+3Hz"
+   "text": "And I say wait. Am I the old dog? Yes Dave. I'm the old dog.",
+   "host": true,
+   "mood": "sad",
+   "pose": "facepalm",
+   "pic": {
+    "id": "old_dog",
+    "at": "dog",
+    "look": "polaroid"
+   },
+   "zoom": {
+    "in": "old#2",
+    "out": "dog#2"
+   },
+   "sfx": [
+    {
+     "s": "scratch",
+     "at": "wait"
+    },
+    {
+     "s": "boom",
+     "at": "dog#2"
+    }
+   ]
   },
   {
-   "id": "c4m",
-   "text": "The company is out for a walk with Dave and it just turned its whole head around to stare at Kyle.",
-   "pause": 0.6,
-   "pitch": "+3Hz",
-   "meme": "distracted"
+   "id": "n8",
+   "text": "The company walking with me and staring at Kyle.",
+   "meme": {
+    "t": "vs",
+    "a": "Loyal me",
+    "b": "New guy Kyle",
+    "at": "staring"
+   },
+   "sfx": [
+    {
+     "s": "pack/01_processing",
+     "at": "staring"
+    }
+   ]
   },
   {
    "id": "c4h",
-   "text": "Now back to your guess. In that Wharton study by professor Matthew Bidwell the outsiders were paid eighteen to twenty percent more.",
-   "pause": 0.6,
-   "rate": "-11%"
+   "text": "Now back to your guess. In that study the outsiders got paid about eighteen to twenty percent more.",
+   "host": true,
+   "mood": "shock",
+   "pose": "panic",
+   "slam": {
+    "t": "18–20% MORE",
+    "at": "eighteen"
+   },
+   "sfx": [
+    {
+     "s": "drumroll",
+     "at": "guess"
+    },
+    {
+     "s": "pack/02_deep",
+     "at": "eighteen"
+    }
+   ]
   },
   {
    "id": "c4i",
-   "text": "And here's the part that should make you a little angry. Who got better reviews for the first two years? Was it the expensive outsiders or the cheaper insiders? It was the insiders. The company paid more to get less and that's literally the title of the study.",
-   "pause": 0.6
+   "text": "And here's the part that should make you a little angry. Who got better reviews for the first two years? The insiders. The company paid more to get less.",
+   "host": true,
+   "mood": "angry",
+   "pose": "point_up",
+   "zoom": {
+    "in": "more",
+    "out": "less"
+   },
+   "sfx": [
+    {
+     "s": "ding",
+     "at": "reviews"
+    },
+    {
+     "s": "stamp",
+     "at": "insiders"
+    },
+    {
+     "s": "boom",
+     "at": "less"
+    }
+   ]
   },
   {
-   "id": "c4p",
-   "text": "That is some truly giant brain thinking from the people upstairs.",
-   "pause": 0.6,
-   "pitch": "+3Hz",
-   "meme": "brain"
+   "id": "n25",
+   "text": "They had their best people sitting right there. Cheaper and better. And they paid more for strangers anyway.",
+   "pic": {
+    "id": "meeting",
+    "at": "people",
+    "look": "tape"
+   },
+   "sfx": [
+    {
+     "s": "ding",
+     "at": "best"
+    },
+    {
+     "s": "cash",
+     "at": "strangers"
+    }
+   ]
+  },
+  {
+   "id": "n9",
+   "text": "The people upstairs making that decision.",
+   "meme": {
+    "t": "brain",
+    "a": "Pay good people well",
+    "b": "Pay strangers more",
+    "c": "Pay more to get less",
+    "at": "decision"
+   },
+   "sfx": [
+    {
+     "s": "pack/01_processing",
+     "at": "decision"
+    }
+   ]
   },
   {
    "id": "c4j",
-   "text": "To be fair the outsiders often had more experience on paper and it costs extra to pull somebody out of a safe job.",
-   "pause": 0.5
+   "text": "To be fair the outsiders often had more experience on paper. And it costs extra to pull someone out of a safe job.",
+   "host": true,
+   "mood": "think",
+   "pose": "shrug",
+   "sfx": [
+    {
+     "s": "ding",
+     "at": "fair"
+    },
+    {
+     "s": "cash",
+     "at": "extra"
+    }
+   ]
   },
   {
    "id": "c4k",
-   "text": "So nobody in Dave's building is twirling a mustache. The villain is a spreadsheet with two pots and one quiet bet that you won't leave. But why would a company feel so sure about you?",
-   "pause": 0.9,
-   "pitch": "-2Hz"
+   "text": "So nobody upstairs is twirling a mustache. The villain is a spreadsheet with two pots. And one quiet bet that you won't leave.",
+   "card": {
+    "t": "A bet that you won't leave.",
+    "dark": true
+   },
+   "sfx": [
+    {
+     "s": "pack/01_boom",
+     "at": "leave"
+    }
+   ],
+   "pause": 0.5
   },
   {
    "id": "c5a",
-   "chapter": "The Bet On You",
-   "text": "Dave tests it on himself. He counts how many times he's seriously looked for another job in five years and the answer is zero.",
-   "pause": 0.45
+   "text": "So I test it on myself. How many times in five years did I seriously look for another job? Zero.",
+   "host": true,
+   "mood": "tired",
+   "pose": "shrug",
+   "slam": {
+    "t": "ZERO",
+    "at": "Zero"
+   },
+   "sfx": [
+    {
+     "s": "tick",
+     "at": "five"
+    },
+    {
+     "s": "cricket",
+     "at": "Zero"
+    }
+   ]
   },
   {
    "id": "c5b",
-   "text": "You're probably the same because switching is scary. You'd be the new guy who doesn't know where they keep the good coffee.",
-   "pause": 0.5
+   "text": "You're probably the same. Because switching is scary. You'd be the new guy who doesn't know where they keep the good coffee.",
+   "pic": {
+    "id": "coffee",
+    "at": "coffee",
+    "look": "tape"
+   },
+   "sfx": [
+    {
+     "s": "pack/01_beating",
+     "at": "scary"
+    },
+    {
+     "s": "ding",
+     "at": "coffee"
+    }
+   ]
   },
   {
    "id": "c5c",
-   "text": "At your job the coffee is terrible but at least you know exactly where it is.",
-   "pause": 0.6,
-   "pitch": "+3Hz",
-   "meme": "honest_work"
+   "text": "At my job the coffee is terrible but at least I know exactly where it is.",
+   "host": true,
+   "mood": "grin",
+   "pose": "shrug",
+   "zoom": {
+    "in": "exactly",
+    "out": "is#2"
+   },
+   "sfx": [
+    {
+     "s": "boing",
+     "at": "terrible"
+    },
+    {
+     "s": "boom",
+     "at": "is#2"
+    }
+   ]
   },
   {
    "id": "c5d",
-   "text": "Dave always thought that if he kept his head down and worked hard then somebody upstairs would notice. Nope. From upstairs an employee who never asks looks exactly like a happy one.",
-   "pause": 0.55
+   "text": "I always thought if I kept my head down and worked hard somebody upstairs would notice. Nope. From upstairs a worker who never asks looks exactly like a happy one.",
+   "host": true,
+   "mood": "suspicious",
+   "pose": "point_r",
+   "slam": {
+    "t": "NEVER ASKS = HAPPY",
+    "at": "never"
+   },
+   "sfx": [
+    {
+     "s": "ding",
+     "at": "hard"
+    },
+    {
+     "s": "scratch",
+     "at": "Nope"
+    },
+    {
+     "s": "boom",
+     "at": "happy"
+    }
+   ]
   },
   {
-   "id": "c5m",
-   "text": "So Dave has been sitting in a burning room for five years and telling everybody this is fine.",
-   "pause": 0.6,
-   "meme": "this_is_fine"
+   "id": "n26",
+   "text": "Think about your phone company. Your internet company. Your insurance. The new customer always gets the deal. The loyal one gets the bill. Your job is the same game.",
+   "pic": {
+    "id": "phone_bill",
+    "at": "phone",
+    "look": "circle"
+   },
+   "sfx": [
+    {
+     "s": "ding",
+     "at": "phone"
+    },
+    {
+     "s": "cash",
+     "at": "deal"
+    },
+    {
+     "s": "trombone",
+     "at": "bill"
+    }
+   ]
+  },
+  {
+   "id": "n10",
+   "text": "Me for five years at my desk.",
+   "meme": {
+    "t": "fine",
+    "a": "Two percent is fine",
+    "at": "desk"
+   },
+   "sfx": [
+    {
+     "s": "cricket",
+     "at": "desk"
+    }
+   ]
   },
   {
    "id": "c5e",
-   "text": "Now watch what happens when a company stops feeling sure. In twenty ten Google's engineers started leaving for a hot young company called Facebook.",
-   "pause": 0.45
+   "text": "Now watch what happens when a company stops feeling sure. In twenty ten Google engineers started leaving for a hot young company called Facebook.",
+   "pic": {
+    "id": "google",
+    "at": "Google",
+    "look": "news",
+    "label": "Google, 2010"
+   },
+   "sfx": [
+    {
+     "s": "ding",
+     "at": "Google"
+    },
+    {
+     "s": "whoosh",
+     "at": "leaving"
+    }
+   ]
   },
   {
    "id": "c5f",
-   "text": "So the boss Eric Schmidt sent out a memo giving every single employee a ten percent raise all at once. The money had been there the whole time and it just took fear to open the pot.",
-   "pause": 0.5,
-   "rate": "+5%"
+   "text": "So the boss sent a memo giving every single employee a ten percent raise. All at once.",
+   "pic": {
+    "id": "memo",
+    "at": "memo",
+    "look": "tape"
+   },
+   "slam": {
+    "t": "+10% FOR EVERYONE",
+    "at": "ten"
+   },
+   "sfx": [
+    {
+     "s": "paper",
+     "at": "memo"
+    },
+    {
+     "s": "pack/03_evolve_boom_brass_d",
+     "at": "ten"
+    },
+    {
+     "s": "crowd",
+     "at": "once"
+    }
+   ]
   },
   {
-   "id": "c5n",
-   "text": "Dave yells you had the money this whole time and the budget just stares back at him like a cat.",
-   "pause": 0.6,
-   "pitch": "+3Hz",
-   "meme": "yelling_cat"
+   "id": "n27",
+   "text": "Ten percent. For everyone. Overnight. Because they were scared of losing people.",
+   "host": true,
+   "mood": "shock",
+   "pose": "panic",
+   "zoom": {
+    "in": "scared",
+    "out": "people"
+   },
+   "sfx": [
+    {
+     "s": "drumroll",
+     "at": "Overnight"
+    },
+    {
+     "s": "boom",
+     "at": "people"
+    }
+   ]
   },
   {
-   "id": "c5h",
-   "text": "So Dave makes the obvious decision. If leaving is the only language they understand then fine. He'll quit.",
-   "pause": 0.9,
-   "rate": "-8%"
+   "id": "c5g",
+   "text": "The money was there the whole time. It just took fear to open the pot.",
+   "card": {
+    "t": "Fear opened the pot.",
+    "dark": true
+   },
+   "sfx": [
+    {
+     "s": "pack/01_boom",
+     "at": "fear"
+    }
+   ],
+   "pause": 0.5
+  },
+  {
+   "id": "n11",
+   "text": "Me finding out the money was there the whole time.",
+   "meme": {
+    "t": "stonks",
+    "a": "BUDGET WAS FINE",
+    "at": "money"
+   },
+   "sfx": [
+    {
+     "s": "cash",
+     "at": "money"
+    }
+   ]
   },
   {
    "id": "c6a",
-   "chapter": "Dave Almost Quits",
-   "text": "That night Dave writes the most dramatic resignation letter of his life.",
-   "pause": 0.5
+   "text": "So I make the obvious decision. If leaving is the only language they understand then fine. I quit.",
+   "chapter": "The Third Door",
+   "host": true,
+   "mood": "angry",
+   "pose": "talk",
+   "zoom": {
+    "in": "I",
+    "out": "quit"
+   },
+   "sfx": [
+    {
+     "s": "riser",
+     "at": "decision"
+    },
+    {
+     "s": "stamp",
+     "at": "quit"
+    }
+   ]
   },
   {
-   "id": "c6n",
-   "text": "It has the word furthermore in it twice.",
-   "pause": 0.6,
-   "rate": "-6%",
-   "meme": "one_does_not"
+   "id": "c6b",
+   "text": "That night I write the most dramatic resignation letter of my life. It has the word furthermore in it twice.",
+   "pic": {
+    "id": "letter",
+    "at": "letter",
+    "look": "polaroid",
+    "label": "furthermore"
+   },
+   "sfx": [
+    {
+     "s": "scribble",
+     "at": "letter"
+    },
+    {
+     "s": "boing",
+     "at": "twice"
+    }
+   ]
+  },
+  {
+   "id": "n28",
+   "text": "I read it out loud to my cat. She left the room. Even my cat doesn't want to hear about my job.",
+   "pic": {
+    "id": "cat",
+    "at": "cat",
+    "look": "polaroid"
+   },
+   "sfx": [
+    {
+     "s": "boing",
+     "at": "cat"
+    },
+    {
+     "s": "cricket",
+     "at": "room"
+    }
+   ]
   },
   {
    "id": "c6c",
-   "text": "But before he hits send he checks that Atlanta scoreboard again. The bonus for switching comes and goes and by the summer of twenty twenty five it had shrunk to zero.",
-   "pause": 0.5
-  },
-  {
-   "id": "c6d",
-   "text": "This fall it's back at a bit over one point but companies are hiring slowly so there are fewer doors to walk through.",
-   "pause": 0.5
-  },
-  {
-   "id": "c6p",
-   "text": "So first Dave panics and then he calms down and then he panics again.",
-   "pause": 0.6,
-   "pitch": "+3Hz",
-   "meme": "panik"
+   "text": "But before I hit send I check that scoreboard again. And the bonus for switching comes and goes. Right now companies are hiring slowly. Fewer doors to walk through.",
+   "host": true,
+   "mood": "worried",
+   "pose": "think",
+   "pic": {
+    "id": "closed_door",
+    "at": "doors",
+    "look": "circle"
+   },
+   "sfx": [
+    {
+     "s": "click",
+     "at": "send"
+    },
+    {
+     "s": "pack/01_processing",
+     "at": "scoreboard"
+    },
+    {
+     "s": "thud",
+     "at": "doors"
+    }
+   ]
   },
   {
    "id": "c6e",
-   "text": "And jumping has its own price. You're the newest name on the list if layoffs come and you can leave behind retirement money that isn't fully yours yet.",
-   "pause": 0.5
+   "text": "And jumping has its own price. You're the newest name on the list if layoffs come. And you can leave behind retirement money that isn't fully yours yet.",
+   "pic": {
+    "id": "boxes",
+    "at": "layoffs",
+    "look": "tape"
+   },
+   "sfx": [
+    {
+     "s": "pack/01_beating",
+     "at": "newest"
+    },
+    {
+     "s": "scratch",
+     "at": "layoffs"
+    },
+    {
+     "s": "cash",
+     "at": "retirement"
+    }
+   ]
   },
   {
-   "id": "c6f",
-   "text": "So Dave is stuck. If he stays quiet he keeps paying nine thousand dollars a year for being loyal. If he jumps he might land somewhere worse.",
-   "pause": 0.55,
-   "rate": "-10%",
-   "pitch": "-2Hz"
+   "id": "n29",
+   "text": "And the new job might be worse. Worse boss. Worse commute. Worse coffee. Nobody tells you that part on job sites.",
+   "host": true,
+   "mood": "worried",
+   "pose": "talk",
+   "pic": {
+    "id": "traffic",
+    "at": "commute",
+    "look": "tape"
+   },
+   "sfx": [
+    {
+     "s": "thud",
+     "at": "boss"
+    },
+    {
+     "s": "whoosh",
+     "at": "commute"
+    },
+    {
+     "s": "boing",
+     "at": "coffee"
+    }
+   ]
   },
   {
-   "id": "c6m",
-   "text": "It's two big red buttons and both of them look terrible and Dave is sweating right through his shirt.",
-   "pause": 0.6,
-   "pitch": "+3Hz",
-   "meme": "two_buttons"
+   "id": "n12",
+   "text": "Me choosing between staying and leaving.",
+   "meme": {
+    "t": "buttons",
+    "a": "Stay and lose $9,000",
+    "b": "Quit into the unknown",
+    "at": "choosing"
+   },
+   "sfx": [
+    {
+     "s": "pack/01_beating",
+     "at": "choosing"
+    }
+   ]
   },
   {
    "id": "c6g",
-   "text": "He drops his head on the desk and knocks the five year mug onto the floor. The handle snaps clean off. Even the mug is leaving.",
-   "pause": 0.6
+   "text": "I drop my head on the desk and knock the mug on the floor. The handle snaps off. Even the mug is leaving.",
+   "host": true,
+   "mood": "sad",
+   "pose": "facepalm",
+   "zoom": {
+    "in": "mug#2",
+    "out": "leaving"
+   },
+   "sfx": [
+    {
+     "s": "thud",
+     "at": "desk"
+    },
+    {
+     "s": "pack/01_boom",
+     "at": "snaps"
+    },
+    {
+     "s": "boom",
+     "at": "leaving"
+    }
+   ]
   },
   {
    "id": "c6h",
-   "text": "And that's when Dave notices something on his screen. There was a third door and it had been inside his own building the entire time.",
-   "pause": 0.9
+   "text": "And that's when I notice there was a third door. And it was inside my own building the whole time.",
+   "host": true,
+   "mood": "shock",
+   "pose": "point_up",
+   "slam": {
+    "t": "DOOR #3",
+    "at": "third"
+   },
+   "sfx": [
+    {
+     "s": "riser",
+     "at": "notice"
+    },
+    {
+     "s": "ding",
+     "at": "third"
+    }
+   ]
   },
   {
    "id": "c7a",
-   "chapter": "The Third Door",
-   "text": "Quick note that this part is education and not advice. But here's what Dave did in three moves.",
-   "pause": 0.45
+   "text": "Quick reminder this is education and not advice. But here's what I did. Three moves.",
+   "host": true,
+   "mood": "happy",
+   "pose": "present",
+   "sfx": [
+    {
+     "s": "ding",
+     "at": "Three"
+    }
+   ]
   },
   {
    "id": "c7b",
-   "text": "Move one was finding out what his job is worth today. And the easiest place to look was his own company's careers page.",
-   "pause": 0.45
+   "text": "Move one. Find out what your job is worth today. And the easiest place to look was my own company's careers page.",
+   "host": true,
+   "mood": "smug",
+   "pose": "point_r",
+   "pic": {
+    "id": "website",
+    "at": "careers",
+    "look": "tape"
+   },
+   "slam": {
+    "t": "MOVE 1: KNOW YOUR NUMBER",
+    "at": "worth"
+   },
+   "sfx": [
+    {
+     "s": "ding",
+     "at": "one"
+    },
+    {
+     "s": "click",
+     "at": "careers"
+    }
+   ]
   },
   {
    "id": "c7c",
-   "text": "Because starting with Colorado in twenty twenty one more than a dozen states now make employers put the pay range right there in the job ad.",
-   "pause": 0.5
+   "text": "Because starting with Colorado in twenty twenty one more than a dozen states now make employers put the pay range right in the job ad.",
+   "pic": {
+    "id": "colorado",
+    "at": "Colorado",
+    "look": "news",
+    "label": "pay range laws"
+   },
+   "sfx": [
+    {
+     "s": "stamp",
+     "at": "Colorado"
+    },
+    {
+     "s": "ding",
+     "at": "ad"
+    }
+   ]
   },
   {
    "id": "c7d",
-   "text": "And there it was. Dave's exact job posted by his own company at sixty eight to seventy four thousand dollars. Dave says hi I'd like to apply for my own job please.",
-   "pause": 0.55,
-   "pitch": "+3Hz"
+   "text": "And there it was. My exact job. Posted by my own company. Sixty eight to seventy four thousand. Hi. I'd like to apply for my own job please.",
+   "host": true,
+   "mood": "grin",
+   "pose": "present",
+   "slam": {
+    "t": "$68K–$74K",
+    "at": "Sixty"
+   },
+   "zoom": {
+    "in": "own#2",
+    "out": "please"
+   },
+   "sfx": [
+    {
+     "s": "drumroll",
+     "at": "there"
+    },
+    {
+     "s": "cash",
+     "at": "Sixty"
+    },
+    {
+     "s": "boom",
+     "at": "please"
+    }
+   ]
   },
   {
-   "id": "c7m",
-   "text": "So now two Daves are pointing at each other and one of them is the same guy with a better salary.",
-   "pause": 0.6,
-   "pitch": "+3Hz",
-   "meme": "pointing"
+   "id": "n13",
+   "text": "Me applying for my own job.",
+   "meme": {
+    "t": "vs",
+    "a": "Me at $62,000",
+    "b": "My job posted at $74,000",
+    "at": "applying"
+   },
+   "sfx": [
+    {
+     "s": "pop",
+     "at": "applying"
+    }
+   ]
   },
   {
    "id": "c7e",
-   "text": "If your state doesn't do that yet then the Bureau of Labor Statistics publishes what hundreds of jobs like yours pay city by city for free.",
-   "pause": 0.5
+   "text": "If your state doesn't do that yet the government publishes what hundreds of jobs pay in your city. For free.",
+   "pic": {
+    "id": "statistics",
+    "at": "government",
+    "look": "tape"
+   },
+   "sfx": [
+    {
+     "s": "ding",
+     "at": "publishes"
+    },
+    {
+     "s": "coin",
+     "at": "free"
+    }
+   ]
+  },
+  {
+   "id": "n30",
+   "text": "Ten minutes of searching. That's all it took to find out I was nine thousand dollars behind.",
+   "host": true,
+   "mood": "shock",
+   "pose": "point_r",
+   "slam": {
+    "t": "10 MINUTES",
+    "at": "Ten"
+   },
+   "sfx": [
+    {
+     "s": "tick",
+     "at": "minutes"
+    },
+    {
+     "s": "pack/02_deep",
+     "at": "nine"
+    }
+   ]
   },
   {
    "id": "c7f",
-   "text": "Move two was changing the question. If you ask for a raise you get sent to pot one which is the tiny one. So Dave asked for a market adjustment which is H R language for please update my sticker.",
-   "pause": 0.5
+   "text": "Move two. Change the question. Ask for a raise and you get sent to pot one. The tiny pot. So I asked for a market adjustment. Which is office language for please update my sticker.",
+   "host": true,
+   "mood": "smug",
+   "pose": "point_up",
+   "slam": {
+    "t": "MARKET ADJUSTMENT",
+    "at": "market"
+   },
+   "sfx": [
+    {
+     "s": "ding",
+     "at": "two"
+    },
+    {
+     "s": "cricket",
+     "at": "tiny"
+    },
+    {
+     "s": "stamp",
+     "at": "market"
+    },
+    {
+     "s": "pop",
+     "at": "sticker"
+    }
+   ]
   },
   {
-   "id": "c7n",
-   "text": "It's the same money with a fancier name and somehow H R loves it.",
-   "pause": 0.6,
-   "pitch": "+3Hz",
-   "meme": "drake"
+   "id": "n14",
+   "text": "Same money. Fancier name. And somehow the office loves it.",
+   "host": true,
+   "mood": "grin",
+   "pose": "shrug",
+   "sfx": [
+    {
+     "s": "ding",
+     "at": "Fancier"
+    },
+    {
+     "s": "crowd",
+     "at": "loves"
+    }
+   ]
   },
   {
    "id": "c7g",
-   "text": "Move three was making it easy to say yes. He wrote one page with three things he'd done this year that saved the company money and one number at the bottom which was seventy one thousand.",
-   "pause": 0.5
+   "text": "Move three. Make it easy to say yes. I wrote one page. Three things I did this year that saved the company money. And one number at the bottom. Seventy one thousand.",
+   "pic": {
+    "id": "notepad",
+    "at": "page",
+    "look": "sticker"
+   },
+   "sfx": [
+    {
+     "s": "ding",
+     "at": "three"
+    },
+    {
+     "s": "scribble",
+     "at": "page"
+    },
+    {
+     "s": "cash",
+     "at": "Seventy"
+    }
+   ]
+  },
+  {
+   "id": "n31",
+   "text": "Not a speech. Not a threat. Just facts on one page. Bosses love pages. They can forward a page upstairs.",
+   "host": true,
+   "mood": "smug",
+   "pose": "point_up",
+   "zoom": {
+    "in": "forward",
+    "out": "upstairs"
+   },
+   "sfx": [
+    {
+     "s": "paper",
+     "at": "page"
+    },
+    {
+     "s": "whoosh",
+     "at": "forward"
+    },
+    {
+     "s": "boom",
+     "at": "upstairs"
+    }
+   ]
   },
   {
    "id": "c7h",
-   "text": "Does asking even work? Pew Research found that most American workers never asked for more pay when they were hired. But among the ones who did ask about two out of three got more money.",
-   "pause": 0.5
+   "text": "Does asking even work? Most workers never ask for more pay when they're hired. But of the ones who did ask about two out of three got more money.",
+   "host": true,
+   "mood": "happy",
+   "pose": "thumbs",
+   "slam": {
+    "t": "2 OUT OF 3",
+    "at": "two"
+   },
+   "pic": {
+    "id": "survey",
+    "at": "ask#2",
+    "look": "circle"
+   },
+   "sfx": [
+    {
+     "s": "ding",
+     "at": "work"
+    },
+    {
+     "s": "cricket",
+     "at": "never"
+    },
+    {
+     "s": "cash",
+     "at": "money"
+    }
+   ]
   },
   {
-   "id": "c7p",
-   "text": "Asking costs you nothing so go ahead and change my mind.",
-   "pause": 0.6,
-   "pitch": "+3Hz",
-   "meme": "change_my_mind"
-  },
-  {
-   "id": "c7j",
-   "text": "So on Thursday morning Dave picks up his one page and glues the handle back on his mug for luck and knocks on his boss's door.",
-   "pause": 0.9
+   "id": "n15",
+   "text": "People who never ask versus people who ask.",
+   "meme": {
+    "t": "drake",
+    "a": "Waiting to be noticed",
+    "b": "Asking with one page",
+    "at": "ask"
+   },
+   "sfx": [
+    {
+     "s": "pop",
+     "at": "ask"
+    }
+   ]
   },
   {
    "id": "c8a",
-   "chapter": "The Meeting",
-   "text": "Dave doesn't threaten to quit and he doesn't mention Kyle. He just slides the page across the desk and says the sentence he practiced in the car.",
-   "pause": 0.45
+   "text": "So Thursday morning I glue the handle back on my mug for luck and knock on her door. I don't threaten to quit. I don't mention Kyle. I just slide the page across the desk.",
+   "pic": {
+    "id": "glue",
+    "at": "glue",
+    "look": "sticker"
+   },
+   "sfx": [
+    {
+     "s": "pop",
+     "at": "glue"
+    },
+    {
+     "s": "thud",
+     "at": "knock"
+    },
+    {
+     "s": "paper",
+     "at": "slide"
+    }
+   ]
   },
   {
    "id": "c8b",
    "text": "I like it here and I want to stay. But the market rate for my job is seventy one thousand and I'd like to talk about closing that gap.",
-   "pause": 0.6,
-   "rate": "-10%"
+   "host": true,
+   "mood": "happy",
+   "pose": "present",
+   "zoom": {
+    "in": "closing",
+    "out": "gap"
+   },
+   "sfx": [
+    {
+     "s": "ding",
+     "at": "stay"
+    },
+    {
+     "s": "drumroll",
+     "at": "market"
+    },
+    {
+     "s": "boom",
+     "at": "gap"
+    }
+   ],
+   "exag": 0.6
   },
   {
    "id": "c8c",
-   "text": "His boss reads the page twice and then she says the four most annoying words in business. Let me check upstairs.",
-   "pause": 0.5
+   "text": "She reads it twice. Then she says the four most annoying words in business. Let me check upstairs.",
+   "card": {
+    "t": "Let me check upstairs.",
+    "dark": true
+   },
+   "sfx": [
+    {
+     "s": "cricket",
+     "at": "twice"
+    },
+    {
+     "s": "pack/01_boom",
+     "at": "upstairs"
+    }
+   ]
   },
   {
    "id": "c8d",
-   "text": "Two very long weeks go by and Dave drinks a lot of nervous coffee out of a glued together mug.",
-   "pause": 0.6,
-   "meme": "waiting"
+   "text": "Two very long weeks. A lot of nervous coffee out of a glued together mug.",
+   "host": true,
+   "mood": "worried",
+   "pose": "think",
+   "pic": {
+    "id": "calendar",
+    "at": "weeks",
+    "look": "tape"
+   },
+   "sfx": [
+    {
+     "s": "tick",
+     "at": "weeks"
+    },
+    {
+     "s": "boing",
+     "at": "mug"
+    }
+   ]
+  },
+  {
+   "id": "n32",
+   "text": "Every time my boss walked past my desk I pretended to type very important things.",
+   "meme": {
+    "t": "fine",
+    "a": "Totally calm",
+    "at": "pretended"
+   },
+   "sfx": [
+    {
+     "s": "click",
+     "at": "type"
+    }
+   ]
   },
   {
    "id": "c8e",
-   "text": "Then the email arrives. They can't do seventy one. But they can do sixty nine thousand dollars starting next month.",
-   "pause": 0.6,
-   "rate": "-11%"
+   "text": "Then the email arrives. They can't do seventy one. But they can do sixty nine thousand starting next month.",
+   "host": true,
+   "mood": "shock",
+   "pose": "celebrate",
+   "slam": {
+    "t": "$69,000",
+    "at": "sixty"
+   },
+   "pic": {
+    "id": "email",
+    "at": "email",
+    "look": "circle"
+   },
+   "sfx": [
+    {
+     "s": "ding",
+     "at": "email"
+    },
+    {
+     "s": "drumroll",
+     "at": "can't"
+    },
+    {
+     "s": "crowd",
+     "at": "sixty"
+    }
+   ]
   },
   {
    "id": "c8f",
-   "text": "That's seven thousand dollars more a year. So Dave walks back into the same office and he never quit and he never had to learn where a new building keeps the good coffee.",
-   "pause": 0.55,
-   "rate": "+3%"
+   "text": "That's seven thousand more a year. And I never quit. I never had to learn where a new building keeps the good coffee.",
+   "host": true,
+   "mood": "money",
+   "pose": "celebrate",
+   "slam": {
+    "t": "+$7,000/YEAR",
+    "at": "seven"
+   },
+   "zoom": {
+    "in": "never",
+    "out": "quit"
+   },
+   "sfx": [
+    {
+     "s": "cash",
+     "at": "seven"
+    },
+    {
+     "s": "boom",
+     "at": "quit"
+    },
+    {
+     "s": "ding",
+     "at": "coffee"
+    }
+   ]
   },
   {
-   "id": "c8n",
-   "text": "Dave's pay chart finally gets its own little rocket.",
-   "pause": 0.6,
-   "pitch": "+3Hz",
-   "rate": "+4%",
-   "meme": "stonks"
+   "id": "n16",
+   "text": "My pay chart finally gets its own little rocket.",
+   "meme": {
+    "t": "stonks",
+    "a": "DAVE'S SALARY",
+    "at": "rocket"
+   },
+   "sfx": [
+    {
+     "s": "pack/01_evolve_brassy_swell",
+     "at": "rocket"
+    }
+   ]
   },
   {
    "id": "c8g",
-   "text": "Now it doesn't always go like that and sometimes the answer is no. But even then you'd know exactly what you're worth and the other two doors would still be there.",
-   "pause": 0.5
+   "text": "It doesn't always go like that. Sometimes the answer is no. But even then you know exactly what you're worth. And the other doors are still there.",
+   "host": true,
+   "mood": "think",
+   "pose": "shrug",
+   "sfx": [
+    {
+     "s": "scratch",
+     "at": "no"
+    },
+    {
+     "s": "ding",
+     "at": "worth"
+    }
+   ]
   },
   {
    "id": "c8h",
-   "text": "Because your loyalty is a great thing to give a company. It's just a terrible thing to give away for free.",
-   "pause": 0.7,
-   "rate": "-10%",
-   "pitch": "-2Hz"
-  },
-  {
-   "id": "c8i",
-   "text": "Kyle by the way is doing great. In about five years somebody should probably warn him about the mug.",
-   "pause": 0.9,
-   "meme": "always_has_been"
-  },
-  {
-   "id": "r1",
-   "chapter": "What Dave Learned",
-   "text": "Lesson one is that your pay was priced the day you were hired and nobody updates the sticker unless you ask.",
-   "pause": 0.4
-  },
-  {
-   "id": "r2",
-   "text": "Lesson two is that companies have two pots of money and the big one is for strangers.",
-   "pause": 0.4
-  },
-  {
-   "id": "r3",
-   "text": "Lesson three is that you don't have to quit but you do have to know your number.",
-   "pause": 0.7
-  },
-  {
-   "id": "r4",
-   "text": "Next time Dave celebrates by buying something for nine dollars and ninety nine cents. His brain files it under nine dollars and stores have known that trick for ages.",
+   "text": "Because loyalty is a great thing to give a company. It's just a terrible thing to give away for free.",
+   "card": {
+    "t": "Don't give loyalty away for free.",
+    "dark": true
+   },
+   "sfx": [
+    {
+     "s": "pack/01_boom",
+     "at": "free"
+    }
+   ],
    "pause": 0.5
   },
   {
+   "id": "c8i",
+   "text": "And Kyle is doing great. In about five years somebody should probably warn him about the mug.",
+   "host": true,
+   "mood": "grin",
+   "pose": "shrug",
+   "zoom": {
+    "in": "warn",
+    "out": "mug"
+   },
+   "sfx": [
+    {
+     "s": "ding",
+     "at": "Kyle"
+    },
+    {
+     "s": "boom",
+     "at": "mug"
+    }
+   ]
+  },
+  {
+   "id": "n33",
+   "text": "So here's the deal. Your company isn't evil. It's just betting you won't ask. Go win the bet.",
+   "host": true,
+   "mood": "happy",
+   "pose": "thumbs",
+   "slam": {
+    "t": "WIN THE BET",
+    "at": "win"
+   },
+   "sfx": [
+    {
+     "s": "ding",
+     "at": "evil"
+    },
+    {
+     "s": "stamp",
+     "at": "win"
+    }
+   ]
+  },
+  {
+   "id": "r4",
+   "text": "Next time I celebrate by buying something for nine ninety nine. My brain files it under nine dollars. And stores have known that trick forever.",
+   "pic": {
+    "id": "price_99",
+    "at": "ninety",
+    "look": "polaroid"
+   },
+   "sfx": [
+    {
+     "s": "cash",
+     "at": "buying"
+    },
+    {
+     "s": "pack/01_processing",
+     "at": "brain"
+    },
+    {
+     "s": "ding",
+     "at": "forever"
+    }
+   ]
+  },
+  {
    "id": "r5",
-   "text": "Subscribe because it's free and unlike your boss we'll actually notice that you stayed.",
-   "pause": 1.4,
-   "pitch": "+3Hz",
-   "meme": "free_real_estate"
+   "text": "Subscribe. It's free. And unlike your boss we'll actually notice that you stayed.",
+   "host": true,
+   "mood": "grin",
+   "pose": "wave",
+   "zoom": {
+    "in": "notice",
+    "out": "stayed"
+   },
+   "sfx": [
+    {
+     "s": "ding",
+     "at": "Subscribe"
+    },
+    {
+     "s": "boom",
+     "at": "stayed"
+    }
+   ]
   }
  ]
 }

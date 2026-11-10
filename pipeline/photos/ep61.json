@@ -1,123 +1,316 @@
 {
  "photos": [
   {
-   "id": "office",
-   "file": "File:Cubicle land.jpg",
-   "credit": "Larsinio at English Wikipedia",
-   "license": "Public domain",
-   "page": "https://commons.wikimedia.org/wiki/File:Cubicle_land.jpg"
-  },
-  {
-   "id": "cubes",
-   "file": "File:CubeSpace.jpg",
-   "credit": "Asa Wilson",
-   "license": "CC BY-SA 2.0",
-   "page": "https://commons.wikimedia.org/wiki/File:CubeSpace.jpg"
-  },
-  {
-   "id": "desk",
-   "file": "File:Office-Cubical-5201.jpg",
-   "credit": "Loadmaster (David R. Tribble) This image was made by Loadmaster (David R. Tribble). Email ",
-   "license": "CC BY-SA 3.0",
-   "page": "https://commons.wikimedia.org/wiki/File:Office-Cubical-5201.jpg"
+   "id": "mug",
+   "q": "coffee mug",
+   "file": "File:Coffee mug on table.jpg",
+   "credit": "Adam S. Keck",
+   "license": "CC BY-SA 4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Coffee_mug_on_table.jpg"
   },
   {
    "id": "printer",
-   "file": "File:Canon ImageRUNNER Advance C7570i photocopier.jpg",
-   "credit": "Baron Maddock",
-   "license": "CC BY 4.0",
-   "page": "https://commons.wikimedia.org/wiki/File:Canon_ImageRUNNER_Advance_C7570i_photocopier.jpg"
+   "q": "office printer",
+   "file": "File:Government Printing Office printer's devil George St Brisbane P1030691.jpg",
+   "credit": "John Robert McPherson",
+   "license": "CC BY-SA 4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Government_Printing_Office_printer%27s_devil_George_St_Brisbane_P1030691.jpg"
   },
   {
-   "id": "wharton",
-   "file": "File:UPenn - The Wharton School of Business - Huntsman Hall (53590621660).jpg",
-   "credit": "ajay_suresh",
+   "id": "stapler",
+   "q": "stapler",
+   "file": "File:2017 Zszywacz biurowy.jpg",
+   "credit": "Jacek Halicki",
+   "license": "CC BY-SA 4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:2017_Zszywacz_biurowy.jpg"
+  },
+  {
+   "id": "office",
+   "q": "office workers",
+   "file": "File:OpenPlanRedBalloon1.jpg",
+   "credit": "VeronicaTherese",
+   "license": "CC BY-SA 3.0",
+   "page": "https://commons.wikimedia.org/wiki/File:OpenPlanRedBalloon1.jpg"
+  },
+  {
+   "id": "donuts",
+   "q": "donuts",
+   "file": "File:Chocolate donuts 2.jpg",
+   "credit": "James St. John",
    "license": "CC BY 2.0",
-   "page": "https://commons.wikimedia.org/wiki/File:UPenn_-_The_Wharton_School_of_Business_-_Huntsman_Hall_(53590621660).jpg"
+   "page": "https://commons.wikimedia.org/wiki/File:Chocolate_donuts_2.jpg"
+  },
+  {
+   "id": "laptop_night",
+   "q": "laptop night",
+   "file": "File:Homo sapien using laptop at night.jpg",
+   "credit": "Javan Rhino",
+   "license": "CC BY 4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Homo_sapien_using_laptop_at_night.jpg"
+  },
+  {
+   "id": "dictionary",
+   "q": "dictionary",
+   "file": "File:Latin dictionary.jpg",
+   "credit": "Dr. Marcus Gossler",
+   "license": "CC BY-SA 3.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Latin_dictionary.jpg"
+  },
+  {
+   "id": "price_tag",
+   "q": "price tag",
+   "file": "File:2021-06-28 E-ink price tag in Sydney supermarket.jpg",
+   "credit": "Maksym Kozlenko",
+   "license": "CC BY-SA 4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:2021-06-28_E-ink_price_tag_in_Sydney_supermarket.jpg"
   },
   {
    "id": "atlfed",
-   "file": "File:Horizontal panorama of the Federal Reserve Bank Building of Atlanta.jpg",
-   "credit": "Marc Merlin",
-   "license": "CC BY-SA 4.0",
-   "page": "https://commons.wikimedia.org/wiki/File:Horizontal_panorama_of_the_Federal_Reserve_Bank_Building_of_Atlanta.jpg"
+   "q": "Federal Reserve Bank of Atlanta",
+   "file": "File:Federal Reserve Bank Birmingham Branch Nov 2011 01.jpg",
+   "credit": "Chris Pruitt",
+   "license": "CC BY-SA 3.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Federal_Reserve_Bank_Birmingham_Branch_Nov_2011_01.jpg"
+  },
+  {
+   "id": "gold_watch",
+   "q": "gold pocket watch",
+   "file": "File:Warsaw Gold pocket watch of Fryderyk Chopin 01.jpg",
+   "credit": "Anonymous (Warsaw)Unknown author",
+   "license": "CC0",
+   "page": "https://commons.wikimedia.org/wiki/File:Warsaw_Gold_pocket_watch_of_Fryderyk_Chopin_01.jpg"
   },
   {
    "id": "ford",
-   "file": "File:Henry Ford at Edison's home in Ft. Myers Florida 1914 detail LC-LC-USZ62-131044.png",
-   "credit": "Wikimedia Commons",
+   "q": "Henry Ford",
+   "file": "File:Henry ford 1919.jpg",
+   "credit": "Fred Hartsook",
    "license": "Public domain",
-   "page": "https://commons.wikimedia.org/wiki/File:Henry_Ford_at_Edison%27s_home_in_Ft._Myers_Florida_1914_detail_LC-LC-USZ62-131044.png"
+   "page": "https://commons.wikimedia.org/wiki/File:Henry_ford_1919.jpg"
   },
   {
-   "id": "fordline",
+   "id": "assembly",
+   "q": "Ford assembly line",
    "file": "File:Ford assembly line - 1913.jpg",
    "credit": "Unknown authorUnknown author",
    "license": "Public domain",
    "page": "https://commons.wikimedia.org/wiki/File:Ford_assembly_line_-_1913.jpg"
   },
   {
-   "id": "watch",
-   "file": "File:Vintage Waltham 14 kt. Gold Pocket Watch, Roman Numeral Dial (8458964903).jpg",
-   "credit": "Joe Haupt from USA",
+   "id": "retirement_party",
+   "q": "retirement party",
+   "file": "File:George L. P. Weaver and his wife, at his 1969 retirement party 01.png",
+   "credit": "unnamed US government photographer",
+   "license": "Public domain",
+   "page": "https://commons.wikimedia.org/wiki/File:George_L._P._Weaver_and_his_wife,_at_his_1969_retirement_party_01.png"
+  },
+  {
+   "id": "factory",
+   "q": "factory workers",
+   "file": "File:Sandakan Sabah Plywood-Factory-23.jpg",
+   "credit": "CEphoto, Uwe Aranas",
+   "license": "CC BY-SA 3.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Sandakan_Sabah_Plywood-Factory-23.jpg"
+  },
+  {
+   "id": "broken_mug",
+   "q": "mug"
+  },
+  {
+   "id": "wharton",
+   "q": "Wharton School",
+   "file": "File:The Wharton School - UPenn 20240528.jpg",
+   "credit": "\u9890\u56ed\u5c45",
+   "license": "CC BY-SA 4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:The_Wharton_School_-_UPenn_20240528.jpg"
+  },
+  {
+   "id": "door",
+   "q": "office door",
+   "file": "File:Former Head Post Office door carving.jpg",
+   "credit": "Sionk",
+   "license": "CC BY-SA 4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Former_Head_Post_Office_door_carving.jpg"
+  },
+  {
+   "id": "pots",
+   "q": "cooking pots",
+   "file": "File:LOCAL POTS AND COOKING UTENCILS.jpg",
+   "credit": "Kabiru1112",
+   "license": "CC BY-SA 4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:LOCAL_POTS_AND_COOKING_UTENCILS.jpg"
+  },
+  {
+   "id": "piggy",
+   "q": "piggy bank",
+   "file": "File:Model 1925 Kenworth Collectible Piggy Bank front view 2.jpg",
+   "credit": "Noah Wulf",
+   "license": "CC BY-SA 4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Model_1925_Kenworth_Collectible_Piggy_Bank_front_view_2.jpg"
+  },
+  {
+   "id": "handshake",
+   "q": "shaking hands"
+  },
+  {
+   "id": "puppy",
+   "q": "puppy",
+   "file": "File:Puppy de Jeff Koons -- 2021 -- Bilbao, Espa\u00f1a.jpg",
+   "credit": "Jos\u00e9 Ligero Loarte",
+   "license": "CC BY-SA 4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Puppy_de_Jeff_Koons_--_2021_--_Bilbao,_Espa%C3%B1a.jpg"
+  },
+  {
+   "id": "old_dog",
+   "q": "old dog",
+   "file": "File:Samoyed dog two year old female dllu.jpg",
+   "credit": "Dllu",
+   "license": "CC BY-SA 4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Samoyed_dog_two_year_old_female_dllu.jpg"
+  },
+  {
+   "id": "meeting",
+   "q": "business meeting",
+   "file": "File:Ajay Piramal at Horasis Global India Business Meeting 2014 crop.jpg",
+   "credit": "Richter Frank-Jurgen",
    "license": "CC BY-SA 2.0",
-   "page": "https://commons.wikimedia.org/wiki/File:Vintage_Waltham_14_kt._Gold_Pocket_Watch,_Roman_Numeral_Dial_(8458964903).jpg"
+   "page": "https://commons.wikimedia.org/wiki/File:Ajay_Piramal_at_Horasis_Global_India_Business_Meeting_2014_crop.jpg"
   },
   {
-   "id": "oldoffice",
-   "file": "File:Office Workers at their Desks (MSA) (20950621905).jpg",
-   "credit": "Missouri State Archives",
-   "license": "No restrictions",
-   "page": "https://commons.wikimedia.org/wiki/File:Office_Workers_at_their_Desks_(MSA)_(20950621905).jpg"
+   "id": "coffee",
+   "q": "coffee machine",
+   "file": "File:Coffee machine 2022.jpg",
+   "credit": "Abdulla Al Muhairi",
+   "license": "CC0",
+   "page": "https://commons.wikimedia.org/wiki/File:Coffee_machine_2022.jpg"
   },
   {
-   "id": "steak",
-   "file": "File:Perfectly grilled steak (8469274783).jpg",
-   "credit": "Prayitno / Thank you for (12 millions +) view from Los Angeles, USA",
-   "license": "CC BY 2.0",
-   "page": "https://commons.wikimedia.org/wiki/File:Perfectly_grilled_steak_(8469274783).jpg"
+   "id": "phone_bill",
+   "q": "mobile phone",
+   "file": "File:Mobile phone PHS Japan 1997-2003.jpg",
+   "credit": "Marus",
+   "license": "Public domain",
+   "page": "https://commons.wikimedia.org/wiki/File:Mobile_phone_PHS_Japan_1997-2003.jpg"
   },
   {
    "id": "google",
-   "file": "File:Googleplex HQ (cropped).jpg",
-   "credit": "Asoundd",
+   "q": "Google office",
+   "file": "File:El car on the roof of the Google office in Chicago.jpg",
+   "credit": "Grendelkhan",
    "license": "CC BY-SA 4.0",
-   "page": "https://commons.wikimedia.org/wiki/File:Googleplex_HQ_(cropped).jpg"
+   "page": "https://commons.wikimedia.org/wiki/File:El_car_on_the_roof_of_the_Google_office_in_Chicago.jpg"
   },
   {
-   "id": "schmidt",
-   "file": "File:Eric E Schmidt, 2005.jpg",
-   "credit": "Charles Haynes",
-   "license": "CC BY-SA 2.0",
-   "page": "https://commons.wikimedia.org/wiki/File:Eric_E_Schmidt,_2005.jpg"
+   "id": "memo",
+   "q": "letter"
   },
   {
-   "id": "capitol",
+   "id": "letter",
+   "q": "handwritten letter",
+   "file": "File:Handwritten Letter of Resignation.jpg",
+   "credit": "CIPHR Connect",
+   "license": "CC BY 2.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Handwritten_Letter_of_Resignation.jpg"
+  },
+  {
+   "id": "cat",
+   "q": "cat",
+   "file": "File:Felis catus-cat on snow.jpg",
+   "credit": "Von.grzanka",
+   "license": "CC BY-SA 3.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Felis_catus-cat_on_snow.jpg"
+  },
+  {
+   "id": "closed_door",
+   "q": "door"
+  },
+  {
+   "id": "boxes",
+   "q": "moving boxes",
+   "file": "File:Some old moving boxes from Sweden.jpg",
+   "credit": "Boivie",
+   "license": "CC BY 4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Some_old_moving_boxes_from_Sweden.jpg"
+  },
+  {
+   "id": "traffic",
+   "q": "traffic jam",
+   "file": "File:\u0422\u0430\u0448\u043a\u0435\u043d\u0442, \u0421\u0435\u0431\u0437\u0430\u0440.jpg",
+   "credit": "Nikolai Bulykin",
+   "license": "CC BY-SA 4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:%D0%A2%D0%B0%D1%88%D0%BA%D0%B5%D0%BD%D1%82,_%D0%A1%D0%B5%D0%B1%D0%B7%D0%B0%D1%80.jpg"
+  },
+  {
+   "id": "website",
+   "q": "website on laptop",
+   "file": "File:Website Heatmap Analysis on Desktop.jpg",
+   "credit": "Zuko.io Images",
+   "license": "CC BY 2.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Website_Heatmap_Analysis_on_Desktop.jpg"
+  },
+  {
+   "id": "colorado",
+   "q": "Colorado State Capitol",
    "file": "File:Colorado State Capitol - 54046380855.jpg",
    "credit": "xiquinhosilva",
    "license": "CC BY 2.0",
    "page": "https://commons.wikimedia.org/wiki/File:Colorado_State_Capitol_-_54046380855.jpg"
   },
   {
-   "id": "hiring",
-   "file": "File:\"Now Hiring\" Sign.jpg",
-   "credit": "Photo by DiscoA340Logo design by Chatham County Government",
-   "license": "CC0",
-   "page": "https://commons.wikimedia.org/wiki/File:%22Now_Hiring%22_Sign.jpg"
+   "id": "statistics",
+   "q": "statistics chart",
+   "file": "File:Statistics Chart.png",
+   "credit": "TECO",
+   "license": "CC BY-SA 4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Statistics_Chart.png"
   },
   {
-   "id": "meeting",
-   "file": "File:Conference room table (Unsplash).jpg",
-   "credit": "Breather breather",
-   "license": "CC0",
-   "page": "https://commons.wikimedia.org/wiki/File:Conference_room_table_(Unsplash).jpg"
+   "id": "notepad",
+   "q": "notepad",
+   "file": "File:Win11Notepaduk.png",
+   "credit": "Keneris, screenshot of Microsoft Windows 11",
+   "license": "Public domain",
+   "page": "https://commons.wikimedia.org/wiki/File:Win11Notepaduk.png"
   },
   {
-   "id": "bls",
-   "file": "File:Postal Square Building.jpg",
-   "credit": "AgnosticPreachersKid. Original uploader was AgnosticPreachersKid at en.wikipedia",
-   "license": "CC BY-SA 3.0",
-   "page": "https://commons.wikimedia.org/wiki/File:Postal_Square_Building.jpg"
+   "id": "survey",
+   "q": "survey form",
+   "file": "File:The spectacular star-forming Carina Nebula imaged by the VLT Survey Telescope.jpg",
+   "credit": "ESO",
+   "license": "CC BY 4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:The_spectacular_star-forming_Carina_Nebula_imaged_by_the_VLT_Survey_Telescope.jpg"
+  },
+  {
+   "id": "glue",
+   "q": "glue bottle",
+   "file": "File:Glue bottles (14360340439).jpg",
+   "credit": "Samantha Bryant",
+   "license": "CC BY 2.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Glue_bottles_(14360340439).jpg"
+  },
+  {
+   "id": "calendar",
+   "q": "wall calendar",
+   "file": "File:WallCalendar.jpg",
+   "credit": "Claudio Elias",
+   "license": "Public domain",
+   "page": "https://commons.wikimedia.org/wiki/File:WallCalendar.jpg"
+  },
+  {
+   "id": "email",
+   "q": "email inbox",
+   "file": "File:Roundcube - inbox -fr.PNG",
+   "credit": "JackPotte",
+   "license": "CC BY-SA 4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Roundcube_-_inbox_-fr.PNG"
+  },
+  {
+   "id": "price_99",
+   "q": "price tag 99",
+   "file": "File:Price Tag 99+TX 99 cents + tax.jpg",
+   "credit": "Elvey",
+   "license": "Public domain",
+   "page": "https://commons.wikimedia.org/wiki/File:Price_Tag_99%2BTX_99_cents_%2B_tax.jpg"
   }
  ]
 }

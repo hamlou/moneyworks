@@ -12,6 +12,11 @@
 4. After posting: owner sends Studio screenshots at 48 h → `analytics/inbox/` → fill §1 row + §2 notes + analytics/LOG.md.
 5. Winner = ≥ 70 % viewed vs swiped AND views above the best so far. Kill = < 50 % viewed → never that format again.
 6. Owner approves the topic before building (owner 10 Nov: "i have to approve the topic first").
+7. EVERY Short = a NEW idea (never a topic we already did) — also after a winner is found (same format, new idea).
+8. Competition check before the pitch: search YouTube Shorts for the idea (WebSearch "site:youtube.com/shorts <idea>").
+   If a competitor already did the same idea → change the angle or the format until ours is different. Use their TECHNIQUES, never their idea
+   (owner: "the idea should never be stolen… unique but very very attaching"). Write in the pitch: "checked: <what exists> → our twist: <why ours is new>".
+9. Each test also studies ONE new competitor that wins in that format (what hook, cut speed, length) → notes in §2 under "learned from".
 
 ## 1. Scoreboard
 | # | Short | Format | Topic axis | Len | Posted | Views 48 h | Viewed % | Avg % viewed | Shares | Subs | Verdict |

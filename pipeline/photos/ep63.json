@@ -1,28 +1,12 @@
 {
  "photos": [
   {
-   "id": "store_a",
-   "file": "File:An AT&T wireless retail store in Asheville, North Carolina 01.jpg",
-   "beat": "o1 frame 0: your phone company's store",
-   "credit": "Harrison Keely",
-   "license": "CC BY 4.0",
-   "page": "https://commons.wikimedia.org/wiki/File:An_AT%26T_wireless_retail_store_in_Asheville,_North_Carolina_01.jpg"
-  },
-  {
    "id": "ip18_front",
    "file": "File:IPhone 18 Pro - black 02.jpg",
    "beat": "o1: brand new twelve hundred dollar phone",
    "credit": "Farragutful",
    "license": "CC BY-SA 4.0",
    "page": "https://commons.wikimedia.org/wiki/File:IPhone_18_Pro_-_black_02.jpg"
-  },
-  {
-   "id": "store_b",
-   "file": "File:An AT&T wireless retail store in Asheville, North Carolina 02.jpg",
-   "beat": "o4: Dave walks out of this exact store",
-   "credit": "Harrison Keely",
-   "license": "CC BY 4.0",
-   "page": "https://commons.wikimedia.org/wiki/File:An_AT%26T_wireless_retail_store_in_Asheville,_North_Carolina_02.jpg"
   },
   {
    "id": "crack",
@@ -33,6 +17,22 @@
    "page": "https://commons.wikimedia.org/wiki/File:Smartphone_cracked_screen.jpg"
   },
   {
+   "id": "store_a",
+   "file": "File:An AT&T wireless retail store in Asheville, North Carolina 01.jpg",
+   "beat": "o1 frame 0: your phone company's store",
+   "credit": "Harrison Keely",
+   "license": "CC BY 4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:An_AT%26T_wireless_retail_store_in_Asheville,_North_Carolina_01.jpg"
+  },
+  {
+   "id": "pen",
+   "file": "File:Ballpoint Pen DS.jpg",
+   "beat": "c9h: he kept the pen",
+   "credit": "Augustus Binu : flickr",
+   "license": "CC BY-SA 3.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Ballpoint_Pen_DS.jpg"
+  },
+  {
    "id": "vz_store",
    "file": "File:Verizon Store - Cellular Retail Phone Store (47109159491).jpg",
    "beat": "c1c: all three big phone companies (Verizon)",
@@ -41,36 +41,72 @@
    "page": "https://commons.wikimedia.org/wiki/File:Verizon_Store_-_Cellular_Retail_Phone_Store_(47109159491).jpg"
   },
   {
-   "id": "tmo_store",
-   "file": "File:T-Mobile Store in Hartford, CT.jpg",
-   "beat": "c1c: all three big phone companies (T-Mobile)",
-   "credit": "Mike Mozart",
-   "license": "CC BY 2.0",
-   "page": "https://commons.wikimedia.org/wiki/File:T-Mobile_Store_in_Hartford,_CT.jpg"
+   "id": "balloons",
+   "q": "balloons",
+   "file": "File:2006 Ojiya balloon festival night 004.jpg",
+   "credit": "Kropsoq",
+   "license": "CC BY-SA 3.0",
+   "page": "https://commons.wikimedia.org/wiki/File:2006_Ojiya_balloon_festival_night_004.jpg"
   },
   {
-   "id": "att_sign",
-   "file": "File:AT&T Store (14150499903).jpg",
-   "beat": "c1c: all three big phone companies (AT&T)",
-   "credit": "Mike Mozart from Funny YouTube, USA",
-   "license": "CC BY 2.0",
-   "page": "https://commons.wikimedia.org/wiki/File:AT%26T_Store_(14150499903).jpg"
-  },
-  {
-   "id": "ip18_box",
-   "file": "File:IPhone 18 Pro - black 03.jpg",
-   "beat": "c2d: he bought a phone on a three year loan",
-   "credit": "Farragutful",
+   "id": "reader",
+   "q": "card reader",
+   "file": "File:SanDisk CFexpress card reader-oblique PNr\u00b00908.jpg",
+   "credit": "D-Kuru",
    "license": "CC BY-SA 4.0",
-   "page": "https://commons.wikimedia.org/wiki/File:IPhone_18_Pro_-_black_03.jpg"
+   "page": "https://commons.wikimedia.org/wiki/File:SanDisk_CFexpress_card_reader-oblique_PNr%C2%B00908.jpg"
   },
   {
-   "id": "tmo_inside",
-   "file": "File:T-Mobile store, Salmon Run Mall.png",
-   "beat": "c3b: the most expensive plan in the store",
-   "credit": "Lallint",
+   "id": "bill",
+   "q": "invoice"
+  },
+  {
+   "id": "mask",
+   "q": "masquerade mask",
+   "file": "File:Akarikpo masquerade 2 (Seahorse mask).jpg",
+   "credit": "Dappasolomon001",
+   "license": "CC BY-SA 4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Akarikpo_masquerade_2_(Seahorse_mask).jpg"
+  },
+  {
+   "id": "steak",
+   "q": "steak dinner",
+   "file": "File:Steak dinner - Indianapolis - 2006.jpg",
+   "credit": "NV89119",
+   "license": "CC BY 2.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Steak_dinner_-_Indianapolis_-_2006.jpg"
+  },
+  {
+   "id": "hotspot",
+   "q": "wifi router",
+   "file": "File:ELECOM WRC-300FEBK WPS WiFi router 2.jpg",
+   "credit": "Syced",
    "license": "CC0",
-   "page": "https://commons.wikimedia.org/wiki/File:T-Mobile_store,_Salmon_Run_Mall.png"
+   "page": "https://commons.wikimedia.org/wiki/File:ELECOM_WRC-300FEBK_WPS_WiFi_router_2.jpg"
+  },
+  {
+   "id": "door_a",
+   "q": "red door",
+   "file": "File:A Calico Cat Resting Beside a Red Door in Istanbul, T\u00fcrkiye.jpg",
+   "credit": "SAEEDALZBAIDI",
+   "license": "CC BY-SA 4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:A_Calico_Cat_Resting_Beside_a_Red_Door_in_Istanbul,_T%C3%BCrkiye.jpg"
+  },
+  {
+   "id": "door_b",
+   "q": "blue door",
+   "file": "File:Blue-painted door in Burano, detail.jpg",
+   "credit": "Marco Ober",
+   "license": "CC BY-SA 4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Blue-painted_door_in_Burano,_detail.jpg"
+  },
+  {
+   "id": "rabbit",
+   "q": "rabbit",
+   "file": "File:Lapin blanc.jpg",
+   "credit": "Fabien1309",
+   "license": "CC BY-SA 3.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Lapin_blanc.jpg"
   },
   {
    "id": "jobs",
@@ -89,6 +125,14 @@
    "page": "https://commons.wikimedia.org/wiki/File:An_iPhone_3G_in_its_original_packaging.jpg"
   },
   {
+   "id": "queue",
+   "q": "people waiting in line",
+   "file": "File:People waiting in line at Stena Line ferry terminal, Frederikshavn.jpg",
+   "credit": "W.carter",
+   "license": "CC0",
+   "page": "https://commons.wikimedia.org/wiki/File:People_waiting_in_line_at_Stena_Line_ferry_terminal,_Frederikshavn.jpg"
+  },
+  {
    "id": "legere",
    "file": "File:T-Mobile John Legere at CES14.jpg",
    "beat": "c4f: John Legere of T-Mobile",
@@ -97,12 +141,36 @@
    "page": "https://commons.wikimedia.org/wiki/File:T-Mobile_John_Legere_at_CES14.jpg"
   },
   {
-   "id": "vz_burl",
-   "file": "File:A modern Verizon retail store in Burlington, Vermont.jpg",
-   "beat": "c5g: Verizon sold its phones for less than they cost",
-   "credit": "Harrison Keely",
-   "license": "CC BY 4.0",
-   "page": "https://commons.wikimedia.org/wiki/File:A_modern_Verizon_retail_store_in_Burlington,_Vermont.jpg"
+   "id": "napkin",
+   "q": "paper napkin",
+   "file": "File:Table utensils wrapped in a paper napkin 2.jpg",
+   "credit": "Ser Amantio di Nicolao",
+   "license": "CC BY-SA 4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Table_utensils_wrapped_in_a_paper_napkin_2.jpg"
+  },
+  {
+   "id": "dinner_plate",
+   "q": "dinner plate",
+   "file": "File:Dinner Plate MET DT3778.jpg",
+   "credit": "Dihl et Gu\u00e9rhard porcelain factory",
+   "license": "CC0",
+   "page": "https://commons.wikimedia.org/wiki/File:Dinner_Plate_MET_DT3778.jpg"
+  },
+  {
+   "id": "report",
+   "q": "annual report",
+   "file": "File:1967 City of Columbus Annual Report - DPLA - bee708da905875276e86370e2d6f09f2 (page 10).jpg",
+   "credit": "Columbus City Clerk Office",
+   "license": "Public domain",
+   "page": "https://commons.wikimedia.org/wiki/File:1967_City_of_Columbus_Annual_Report_-_DPLA_-_bee708da905875276e86370e2d6f09f2_(page_10).jpg"
+  },
+  {
+   "id": "goldfish",
+   "q": "goldfish",
+   "file": "File:Fountain with goldfish in Jard\u00ed del Bisbe 03.jpg",
+   "credit": "Kritzolina",
+   "license": "CC BY-SA 4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Fountain_with_goldfish_in_Jard%C3%AD_del_Bisbe_03.jpg"
   },
   {
    "id": "tower",
@@ -121,6 +189,46 @@
    "page": "https://commons.wikimedia.org/wiki/File:Ryan_Reynolds_by_Gage_Skidmore_3.jpg"
   },
   {
+   "id": "grandpa",
+   "q": "old man smiling",
+   "file": "File:Jan Lievens - Smiling old man - Hermitage.jpg",
+   "credit": "Jan Lievens",
+   "license": "Public domain",
+   "page": "https://commons.wikimedia.org/wiki/File:Jan_Lievens_-_Smiling_old_man_-_Hermitage.jpg"
+  },
+  {
+   "id": "bowl",
+   "q": "glass bowl",
+   "file": "File:Glass bowl stadium utoledo.jpg",
+   "credit": "The original uploader was Mactropy at English Wikipedia.",
+   "license": "CC BY-SA 3.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Glass_bowl_stadium_utoledo.jpg"
+  },
+  {
+   "id": "headset",
+   "q": "call center headset",
+   "file": "File:Testing output from call center operator headset.jpg",
+   "credit": "Chuck Kardous",
+   "license": "Public domain",
+   "page": "https://commons.wikimedia.org/wiki/File:Testing_output_from_call_center_operator_headset.jpg"
+  },
+  {
+   "id": "padlock",
+   "q": "padlock",
+   "file": "File:Love padlocks on the Butchers' Bridge (Ljubljana).jpg",
+   "credit": "Petar Milo\u0161evi\u0107",
+   "license": "CC BY-SA 4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Love_padlocks_on_the_Butchers%27_Bridge_(Ljubljana).jpg"
+  },
+  {
+   "id": "road",
+   "q": "empty road",
+   "file": "File:An empty road in rural Wisconsin.jpg",
+   "credit": "Goose Green Photography",
+   "license": "CC BY-SA 4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:An_empty_road_in_rural_Wisconsin.jpg"
+  },
+  {
    "id": "fcc",
    "file": "File:FCC HQ.jpg",
    "beat": "c6j: the F C C proposed",
@@ -137,12 +245,60 @@
    "page": "https://commons.wikimedia.org/wiki/File:Blue_USPS_Mailbox.jpg"
   },
   {
+   "id": "tmo_store",
+   "file": "File:T-Mobile Store in Hartford, CT.jpg",
+   "beat": "c1c: all three big phone companies (T-Mobile)",
+   "credit": "Mike Mozart",
+   "license": "CC BY 2.0",
+   "page": "https://commons.wikimedia.org/wiki/File:T-Mobile_Store_in_Hartford,_CT.jpg"
+  },
+  {
+   "id": "receipt",
+   "q": "receipt",
+   "file": "File:ReceiptSwiss.jpg",
+   "credit": "Audrius Meskauskas (Audriusa)",
+   "license": "CC BY-SA 3.0",
+   "page": "https://commons.wikimedia.org/wiki/File:ReceiptSwiss.jpg"
+  },
+  {
+   "id": "calendar",
+   "q": "wall calendar",
+   "file": "File:WallCalendar.jpg",
+   "credit": "Claudio Elias",
+   "license": "Public domain",
+   "page": "https://commons.wikimedia.org/wiki/File:WallCalendar.jpg"
+  },
+  {
    "id": "applestore",
    "file": "File:Apple Store, Maine Mall.jpg",
    "beat": "c8f: buy unlocked, straight from the maker",
    "credit": "Seasider53",
    "license": "CC BY-SA 4.0",
    "page": "https://commons.wikimedia.org/wiki/File:Apple_Store,_Maine_Mall.jpg"
+  },
+  {
+   "id": "store_b",
+   "file": "File:An AT&T wireless retail store in Asheville, North Carolina 02.jpg",
+   "beat": "o4: Dave walks out of this exact store",
+   "credit": "Harrison Keely",
+   "license": "CC BY 4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:An_AT%26T_wireless_retail_store_in_Asheville,_North_Carolina_02.jpg"
+  },
+  {
+   "id": "watch",
+   "q": "smartwatch",
+   "file": "File:Black Olio Brown Leather Strap Front.jpg",
+   "credit": "United States Federal Communications Commission",
+   "license": "Public domain",
+   "page": "https://commons.wikimedia.org/wiki/File:Black_Olio_Brown_Leather_Strap_Front.jpg"
+  },
+  {
+   "id": "phone_hand",
+   "q": "smartphone in hand",
+   "file": "File:Black smartphone in hand (Unsplash).jpg",
+   "credit": "Dennis Cort\u00e9s cortes",
+   "license": "CC0",
+   "page": "https://commons.wikimedia.org/wiki/File:Black_smartphone_in_hand_(Unsplash).jpg"
   },
   {
    "id": "jar",
@@ -153,20 +309,12 @@
    "page": "https://commons.wikimedia.org/wiki/File:Swear_jar_2.jpg"
   },
   {
-   "id": "pen",
-   "file": "File:Ballpoint Pen DS.jpg",
-   "beat": "c9h: he kept the pen",
-   "credit": "Augustus Binu : flickr",
-   "license": "CC BY-SA 3.0",
-   "page": "https://commons.wikimedia.org/wiki/File:Ballpoint_Pen_DS.jpg"
-  },
-  {
-   "id": "store_c",
-   "file": "File:An AT&T wireless retail store in Asheville, North Carolina 03.jpg",
-   "beat": "c9h: walking out of the exact store where we started",
-   "credit": "Harrison Keely",
-   "license": "CC BY 4.0",
-   "page": "https://commons.wikimedia.org/wiki/File:An_AT%26T_wireless_retail_store_in_Asheville,_North_Carolina_03.jpg"
+   "id": "dinner",
+   "q": "restaurant dinner friends",
+   "file": "File:Dinner at Good Friends Chinese Restaurant, Brighton 2023-06-16.jpg",
+   "credit": "Andy Li",
+   "license": "CC0",
+   "page": "https://commons.wikimedia.org/wiki/File:Dinner_at_Good_Friends_Chinese_Restaurant,_Brighton_2023-06-16.jpg"
   }
  ]
 }
