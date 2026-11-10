@@ -1,0 +1,436 @@
+{
+ "id": "prices46",
+ "comp": "mini",
+ "tempo": 1.08,
+ "planned_beat": "b10",
+ "lens": true,
+ "beats": [
+  {
+   "scene": "A",
+   "music": "pixel_peeker_polka_faster",
+   "caps": [
+    {
+     "on": "what",
+     "t": "PRICES DOUBLE EVERY DAY?"
+    }
+   ],
+   "cues": [
+    {
+     "k": "a_doubled",
+     "on": "doubled",
+     "sfx": [
+      [
+       0,
+       "ea1/k_point",
+       0.45
+      ]
+     ]
+    }
+   ],
+   "sfx0": [
+    [
+     0,
+     "ea1/k_stop",
+     0.45
+    ],
+    [
+     0,
+     "ea1/vote_tick",
+     0.3
+    ],
+    [
+     6,
+     "ea1/vote_tick",
+     0.3
+    ],
+    [
+     12,
+     "ea1/vote_tick",
+     0.3
+    ],
+    [
+     18,
+     "ea1/vote_tick",
+     0.3
+    ],
+    [
+     24,
+     "ea1/vote_tick",
+     0.3
+    ],
+    [
+     30,
+     "ea1/vote_tick",
+     0.3
+    ],
+    [
+     36,
+     "ea1/vote_tick",
+     0.3
+    ],
+    [
+     42,
+     "ea1/vote_tick",
+     0.3
+    ]
+   ]
+  },
+  {
+   "scene": "B",
+   "music": "pixel_peeker_polka_faster",
+   "caps": [
+    {
+     "on": "hungary",
+     "t": "HUNGARY 1946"
+    }
+   ],
+   "cues": [
+    {
+     "k": "b_worse",
+     "on": "worse",
+     "sfx": [
+      [
+       0,
+       "ea1/k_slam",
+       0.5
+      ]
+     ]
+    }
+   ],
+   "sfx0": [
+    [
+     0,
+     "ea1/chair_whoosh",
+     0.4
+    ],
+    [
+     0,
+     "ea1/steps",
+     0.25
+    ]
+   ]
+  },
+  {
+   "scene": "C",
+   "music": "pixel_peeker_polka_faster",
+   "caps": [
+    {
+     "on": "tripled",
+     "t": "×3 EVERY DAY"
+    }
+   ],
+   "cues": [
+    {
+     "k": "c_tripled",
+     "on": "tripled",
+     "sfx": [
+      [
+       0,
+       "ea1/roll33",
+       0.45
+      ],
+      [
+       12,
+       "ea1/k_slam",
+       0.45
+      ]
+     ]
+    }
+   ],
+   "sfx0": [
+    [
+     0,
+     "ea1/vote_tick",
+     0.3
+    ],
+    [
+     5,
+     "ea1/vote_tick",
+     0.3
+    ],
+    [
+     10,
+     "ea1/vote_tick",
+     0.3
+    ],
+    [
+     15,
+     "ea1/vote_tick",
+     0.3
+    ],
+    [
+     20,
+     "ea1/vote_tick",
+     0.3
+    ],
+    [
+     25,
+     "ea1/vote_tick",
+     0.3
+    ],
+    [
+     30,
+     "ea1/vote_tick",
+     0.3
+    ],
+    [
+     35,
+     "ea1/vote_tick",
+     0.3
+    ]
+   ]
+  },
+  {
+   "scene": "D",
+   "music": "pixel_peeker_polka_faster",
+   "caps": [
+    {
+     "on": "one",
+     "t": "1 COIN"
+    },
+    {
+     "on": "three",
+     "t": "3 COINS"
+    }
+   ],
+   "cues": [
+    {
+     "k": "d_three",
+     "on": "three",
+     "sfx": [
+      [
+       0,
+       "ea1/check1",
+       0.5
+      ],
+      [
+       3,
+       "ea1/check2",
+       0.45
+      ]
+     ]
+    }
+   ],
+   "sfx0": [
+    [
+     0,
+     "ea1/check1",
+     0.4
+    ]
+   ]
+  },
+  {
+   "scene": "E",
+   "music": "investigations",
+   "caps": [
+    {
+     "on": "same",
+     "t": "SPEND IT WITHIN 1 HOUR"
+    }
+   ],
+   "cues": [
+    {
+     "k": "e_ran",
+     "on": "ran",
+     "sfx": [
+      [
+       0,
+       "ea1/steps",
+       0.5
+      ]
+     ]
+    }
+   ],
+   "sfx0": [
+    [
+     0,
+     "ea1/photo_slide",
+     0.35
+    ]
+   ]
+  },
+  {
+   "scene": "F",
+   "music": "investigations",
+   "caps": [
+    {
+     "on": "twenty",
+     "t": "20 ZEROS"
+    }
+   ],
+   "cues": [
+    {
+     "k": "f_twenty",
+     "on": "twenty",
+     "sfx": [
+      [
+       0,
+       "ea1/k_boom",
+       0.5
+      ]
+     ]
+    }
+   ],
+   "sfx0": [
+    [
+     0,
+     "ea1/co_paper",
+     0.45
+    ]
+   ]
+  },
+  {
+   "scene": "G",
+   "music": "investigations",
+   "caps": [
+    {
+     "on": "enough",
+     "t": "STILL NOT ENOUGH"
+    }
+   ],
+   "cues": [
+    {
+     "k": "g_enough",
+     "on": "enough",
+     "sfx": [
+      [
+       0,
+       "ea1/cash_rain",
+       0.45
+      ]
+     ]
+    }
+   ],
+   "sfx0": [
+    [
+     0,
+     "ea1/co_paper2",
+     0.4
+    ]
+   ]
+  },
+  {
+   "scene": "H",
+   "music": "volatile_reaction",
+   "caps": [
+    {
+     "on": "threw",
+     "t": "THROWN AWAY"
+    }
+   ],
+   "cues": [
+    {
+     "k": "h_threw",
+     "on": "threw",
+     "sfx": [
+      [
+       0,
+       "ea1/cash_rain",
+       0.5
+      ],
+      [
+       4,
+       "ea1/chair_whoosh",
+       0.35
+      ]
+     ]
+    }
+   ],
+   "sfx0": []
+  },
+  {
+   "scene": "I",
+   "music": "volatile_reaction",
+   "caps": [
+    {
+     "on": "four",
+     "t": "1 = 4 + 29 ZEROS"
+    }
+   ],
+   "cues": [
+    {
+     "k": "i_four",
+     "on": "four",
+     "sfx": [
+      [
+       0,
+       "ea1/k_slam",
+       0.5
+      ],
+      [
+       10,
+       "ea1/k_stop",
+       0.4
+      ]
+     ]
+    }
+   ],
+   "sfx0": [
+    [
+     0,
+     "ea1/photo_slide",
+     0.35
+    ]
+   ]
+  },
+  {
+   "scene": "J",
+   "music": null,
+   "caps": [
+    {
+     "on": "swept",
+     "t": "SWEPT LIKE LEAVES"
+    }
+   ],
+   "cues": [
+    {
+     "k": "j_swept",
+     "on": "swept",
+     "sfx": [
+      [
+       0,
+       "ea1/scribble",
+       0.45
+      ],
+      [
+       8,
+       "ea1/scribble",
+       0.4
+      ]
+     ]
+    }
+   ],
+   "sfx0": []
+  },
+  {
+   "scene": "K",
+   "music": "pixel_peeker_polka_faster",
+   "caps": [
+    {
+     "on": "ask",
+     "t": "PRICES DOUBLE EVERY DAY?"
+    }
+   ],
+   "cues": [
+    {
+     "k": "k_ten",
+     "on": "ten",
+     "sfx": [
+      [
+       0,
+       "ea1/k_point",
+       0.45
+      ]
+     ]
+    }
+   ],
+   "sfx0": [
+    [
+     0,
+     "ea1/k_stop",
+     0.35
+    ]
+   ]
+  }
+ ]
+}

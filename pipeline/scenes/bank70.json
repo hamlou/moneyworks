@@ -1,0 +1,401 @@
+{
+ "id": "bank70",
+ "comp": "ink",
+ "tempo": 1.08,
+ "planned_beat": "b11",
+ "lens": true,
+ "beats": [
+  {
+   "scene": "A",
+   "music": "life_of_riley",
+   "caps": [
+    {
+     "on": "what",
+     "t": "EVERY BANK CLOSED?"
+    }
+   ],
+   "cues": [
+    {
+     "k": "a_closed",
+     "on": "closed",
+     "sfx": [
+      [
+       0,
+       "ea1/door",
+       0.55
+      ],
+      [
+       3,
+       "ea1/k_slam",
+       0.5
+      ]
+     ]
+    }
+   ],
+   "sfx0": [
+    [
+     0,
+     "ea1/k_stop",
+     0.4
+    ]
+   ]
+  },
+  {
+   "scene": "B",
+   "music": "life_of_riley",
+   "caps": [
+    {
+     "on": "ireland",
+     "t": "IRELAND 1970"
+    }
+   ],
+   "cues": [
+    {
+     "k": "b_did",
+     "on": "did",
+     "sfx": [
+      [
+       0,
+       "ea1/k_point",
+       0.45
+      ]
+     ]
+    }
+   ],
+   "sfx0": [
+    [
+     0,
+     "ea1/co_paper",
+     0.4
+    ],
+    [
+     0,
+     "ea1/steps",
+     0.25
+    ]
+   ]
+  },
+  {
+   "scene": "C",
+   "music": "life_of_riley",
+   "caps": [
+    {
+     "on": "locked",
+     "t": "LOCKED"
+    }
+   ],
+   "cues": [
+    {
+     "k": "c_strike",
+     "on": "strike",
+     "sfx": [
+      [
+       0,
+       "ea1/claim_buzz",
+       0.4
+      ]
+     ]
+    },
+    {
+     "k": "c_locked",
+     "on": "locked",
+     "sfx": [
+      [
+       0,
+       "ea1/door",
+       0.55
+      ]
+     ]
+    }
+   ],
+   "sfx0": []
+  },
+  {
+   "scene": "D",
+   "music": "life_of_riley",
+   "caps": [
+    {
+     "on": "single",
+     "t": "NOT ONE COIN"
+    }
+   ],
+   "cues": [
+    {
+     "k": "d_single",
+     "on": "single",
+     "sfx": [
+      [
+       0,
+       "ea1/crickets",
+       0.4
+      ]
+     ]
+    }
+   ],
+   "sfx0": [
+    [
+     0,
+     "ea1/co_book",
+     0.4
+    ]
+   ]
+  },
+  {
+   "scene": "E",
+   "music": "sneaky_snitch",
+   "caps": [
+    {
+     "on": "pub",
+     "t": "SO… THE PUB"
+    }
+   ],
+   "cues": [
+    {
+     "k": "e_pub",
+     "on": "pub",
+     "sfx": [
+      [
+       0,
+       "ea1/door",
+       0.45
+      ],
+      [
+       2,
+       "ea1/reply_pop",
+       0.35
+      ]
+     ]
+    }
+   ],
+   "sfx0": []
+  },
+  {
+   "scene": "F",
+   "music": "sneaky_snitch",
+   "caps": [
+    {
+     "on": "eleven",
+     "t": "11,000 PUBS = BANKS"
+    }
+   ],
+   "cues": [
+    {
+     "k": "f_banks",
+     "on": "banks",
+     "sfx": [
+      [
+       0,
+       "ea1/k_slam",
+       0.5
+      ]
+     ]
+    }
+   ],
+   "sfx0": [
+    [
+     4,
+     "ea1/reply_pop",
+     0.3
+    ],
+    [
+     8,
+     "ea1/reply_pop",
+     0.3
+    ],
+    [
+     12,
+     "ea1/reply_pop",
+     0.3
+    ]
+   ]
+  },
+  {
+   "scene": "G",
+   "music": "sneaky_snitch",
+   "caps": [
+    {
+     "on": "knew",
+     "t": "HE KNEW YOU"
+    }
+   ],
+   "cues": [
+    {
+     "k": "g_cash",
+     "on": "cash",
+     "sfx": [
+      [
+       0,
+       "ea1/cash_rain",
+       0.45
+      ]
+     ]
+    }
+   ],
+   "sfx0": [
+    [
+     0,
+     "ea1/co_paper",
+     0.35
+    ]
+   ]
+  },
+  {
+   "scene": "H",
+   "music": "sneaky_snitch",
+   "caps": [
+    {
+     "on": "scrap",
+     "t": "ANY SCRAP OF PAPER"
+    }
+   ],
+   "cues": [
+    {
+     "k": "h_scrap",
+     "on": "scrap",
+     "sfx": [
+      [
+       0,
+       "ea1/scribble",
+       0.5
+      ],
+      [
+       6,
+       "ea1/scribble",
+       0.45
+      ]
+     ]
+    }
+   ],
+   "sfx0": [
+    [
+     0,
+     "ea1/co_paper2",
+     0.4
+    ]
+   ]
+  },
+  {
+   "scene": "I",
+   "music": "thinking_music",
+   "caps": [
+    {
+     "on": "six",
+     "t": "6 WHOLE MONTHS"
+    }
+   ],
+   "cues": [
+    {
+     "k": "i_six",
+     "on": "six",
+     "sfx": [
+      [
+       0,
+       "ea1/photo_slide",
+       0.4
+      ],
+      [
+       6,
+       "ea1/co_paper",
+       0.35
+      ],
+      [
+       12,
+       "ea1/co_paper",
+       0.35
+      ]
+     ]
+    }
+   ],
+   "sfx0": []
+  },
+  {
+   "scene": "J",
+   "music": "thinking_music",
+   "caps": [
+    {
+     "on": "five",
+     "t": "£5,000,000,000"
+    }
+   ],
+   "cues": [
+    {
+     "k": "j_five",
+     "on": "five",
+     "sfx": [
+      [
+       0,
+       "ea1/k_boom",
+       0.55
+      ],
+      [
+       2,
+       "ea1/cash_rain",
+       0.45
+      ]
+     ]
+    }
+   ],
+   "sfx0": [
+    [
+     0,
+     "ea1/door",
+     0.5
+    ]
+   ]
+  },
+  {
+   "scene": "K",
+   "music": null,
+   "caps": [
+    {
+     "on": "trust",
+     "t": "IT WAS TRUST"
+    }
+   ],
+   "cues": [
+    {
+     "k": "k_trust",
+     "on": "trust",
+     "sfx": [
+      [
+       0,
+       "ea1/k_flash",
+       0.5
+      ]
+     ]
+    }
+   ],
+   "sfx0": [
+    [
+     0,
+     "ea1/co_riser",
+     0.35
+    ]
+   ]
+  },
+  {
+   "scene": "L",
+   "music": "life_of_riley",
+   "caps": [
+    {
+     "on": "ask",
+     "t": "EVERY BANK CLOSED?"
+    }
+   ],
+   "cues": [
+    {
+     "k": "l_tomorrow",
+     "on": "tomorrow",
+     "sfx": [
+      [
+       0,
+       "ea1/door",
+       0.45
+      ]
+     ]
+    }
+   ],
+   "sfx0": []
+  }
+ ]
+}
