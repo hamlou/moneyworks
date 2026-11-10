@@ -193,7 +193,7 @@ LOAF = bpy.data.objects.new("loaf", None)
 COL.objects.link(LOAF)
 bpy.ops.mesh.primitive_uv_sphere_add(radius=0.05, location=(0, 0, 0.03))
 lo = bpy.context.object
-lo.scale = (1.6, 0.8, 0.6)
+lo.scale = (1.5, 0.75, 0.75)
 lo.data.materials.append(M_BREAD)
 lo.parent = LOAF
 table = box("table", (0, 0, -0.01), (0.34, 0.2, 0.02), M_WOOD, COL)
@@ -342,7 +342,7 @@ def shot(s, k):
             cn.hide_render = i >= ncoin
         daytime(0.12 if t < 0.5 else 0.15)
         place_people(k, "none", t)
-        return tilt((0.3, 0.05, 0.3), (0.05, 0.55, 0.03), 60, 0.5, (0.06, 0.55, 0.03))
+        return tilt((0.28, 0.12, 0.16), (0.05, 0.55, 0.05), 55, 0.5, (0.06, 0.55, 0.04))
     if s == "E":  # payday: workers run from the factory to the bakery queue
         hide(FACT, False)
         FACT_T.hide_render = False
@@ -381,7 +381,7 @@ def shot(s, k):
             nt.location.z += 0.25
         daytime(0.25)
         place_people(k, "none", t)
-        return tilt((0.05 + t * 0.05, -1.05, 0.5), (0, 0.3, 0.3), 40, 0.7, (0, 0.3, 0.3))
+        return tilt((0.05 + t * 0.05, -1.25, 0.55), (0, 0.3, 0.3), 24, 0.9, (0, 0.3, 0.3))
     if s == "J":  # street cleaners sweep the worthless notes like leaves
         daytime(0.3)
         for i, nt in enumerate(NOTES):

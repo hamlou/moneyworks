@@ -62,7 +62,7 @@ W_RED = wash("red", (0.82, 0.2, 0.16), 0.7)
 W_BROWN = wash("brown", (0.45, 0.3, 0.18))
 W_GOLD = wash("gold", (0.95, 0.7, 0.2), 0.7)
 W_BLUE = wash("blue", (0.25, 0.38, 0.62))
-W_INK = wash("ink", (0.08, 0.08, 0.12), 1.0)
+W_INK = wash("ink", (0.0, 0.0, 0.03), 1.25)
 W_SKIN = wash("skin", (0.92, 0.72, 0.58))
 W_CLOTH = [wash(f"cl{i}", c) for i, c in enumerate([(0.2, 0.3, 0.55), (0.6, 0.2, 0.15), (0.3, 0.45, 0.25), (0.4, 0.35, 0.3), (0.15, 0.15, 0.2)])]
 
@@ -284,7 +284,7 @@ def shot(s, k):
         return cam("c", (1.1, -2.2, 1.5), (0, 1.8, 1.4), 30)
     if s == "D":  # not one coin: an empty till drawer
         show(TILL)
-        return cam("c", (0.05, -0.55 + t * 0.1, 1.55), (0, 0.05, 0.0), 32)
+        return cam("c", (0.05, -0.75 + t * 0.1, 1.5), (0, -0.12, 0.0), 30)
     if s == "E":  # nobody panicked: they went to the pub
         show(PUB)
         crowd(10, 0, -2.0 + t * 2.6, 2.2, k, face=R(180))
@@ -313,7 +313,7 @@ def shot(s, k):
         show(CAL)
         months = ["MAY", "JUNE", "JULY", "AUG", "SEPT", "OCT", "NOV"]
         CAL_T.data.body = months[min(6, int(t * 7))]
-        CAL.location = (2.2, 1.0, 0)
+        CAL.location = (1.5, 1.6, 0)
         for i in range(8):
             m = MEN[i]
             show(m)
@@ -327,7 +327,8 @@ def shot(s, k):
     if s == "J":  # banks reopen: an avalanche of £5 billion of cheques
         show(BANK)
         show(BIGT, t > 0.45)
-        BIGT.location = (0, -1.5, 3.8)
+        BIGT.location = (0.9, -1.2, 3.5)
+        BIGT.rotation_euler = (R(90), 0, R(12))
         DOOR_L.location.x, DOOR_R.location.x = -0.36 - 0.6 * ease(min(1, t * 3)), 0.36 + 0.6 * ease(min(1, t * 3))
         for i, p in enumerate(PAPERS):
             r = random.Random(i)
