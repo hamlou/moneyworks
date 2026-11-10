@@ -1,44 +1,445 @@
 {
-  "id": "phone96",
-  "comp": "phone",
-  "tempo": 1.08,
-  "planned_beat": "b11",
-  "beats": [
-    {"scene": "lock_hook", "music": "scheming_weasel_faster",
-     "cues": [{"k": "lk_dollar", "on": "dollar", "sfx": [[0, "ea1/notif", 0.6], [1, "ea1/reply_pop", 0.4]]},
-              {"k": "lk_checked", "on": "checked", "sfx": [[0, "ea1/notif", 0.6]]}],
-     "sfx0": [[0, "ea1/notif", 0.55], [0, "ea1/k_stop", 0.4]]},
-    {"scene": "lock_broke", "music": "scheming_weasel_faster",
-     "cues": [{"k": "br_broke", "on": "lunch", "sfx": [[0, "ea1/fail", 0.5], [0, "ea1/claim_buzz", 0.35]]}],
-     "sfx0": [[0, "ea1/roll33", 0.35], [3, "ea1/notif", 0.3], [7, "ea1/notif", 0.3], [11, "ea1/notif", 0.3]]},
-    {"scene": "screentime", "music": "scheming_weasel_faster",
-     "cues": [{"k": "st_ninety", "on": "ninety", "sfx": [[0, "ea1/roll33", 0.45], [18, "ea1/k_slam", 0.45]]}],
-     "sfx0": [[0, "ea1/photo_slide", 0.35]]},
-    {"scene": "every10", "music": "scheming_weasel_faster",
-     "cues": [{"k": "ev_ten", "on": "ten", "sfx": [[0, "ea1/k_point", 0.45]]}],
-     "sfx0": [[0, "ea1/photo_slide", 0.35], [4, "ea1/vote_tick", 0.25], [10, "ea1/vote_tick", 0.25], [16, "ea1/vote_tick", 0.25], [22, "ea1/vote_tick", 0.25]]},
-    {"scene": "bank_day", "music": "investigations",
-     "cues": [{"k": "bk_ninety", "on": "ninety", "sfx": [[0, "ea1/roll33", 0.45], [14, "ea1/k_slam", 0.45]]}],
-     "sfx0": [[0, "ea1/photo_slide", 0.35]]},
-    {"scene": "bank_year", "music": "investigations",
-     "cues": [{"k": "bk_thirty", "on": "thirty", "sfx": [[0, "ea1/roll33", 0.5], [20, "ea1/k_boom", 0.45]]}],
-     "sfx0": [[0, "ea1/photo_slide", 0.35]]},
-    {"scene": "texts", "music": "investigations",
-     "cues": [{"k": "tx_car", "on": "car", "sfx": [[0, "ea1/reply_pop", 0.5], [10, "ea1/reply_pop", 0.5]]},
-              {"k": "tx_notifications", "on": "notifications", "sfx": [[0, "ea1/reply_pop", 0.5]]}],
-     "sfx0": [[2, "ea1/reply_pop", 0.45]]},
-    {"scene": "screentime2", "music": "volatile_reaction",
-     "cues": [{"k": "st_twice", "on": "twice", "sfx": [[0, "ea1/roll33", 0.45], [16, "ea1/k_slam", 0.5]]}],
-     "sfx0": [[0, "ea1/photo_slide", 0.35]]},
-    {"scene": "bank_year2", "music": "volatile_reaction",
-     "cues": [{"k": "bk_seventy", "on": "seventy", "sfx": [[0, "ea1/roll33", 0.5], [20, "ea1/k_boom", 0.5], [22, "ea1/fail", 0.4]]}],
-     "sfx0": [[0, "ea1/photo_slide", 0.35]]},
-    {"scene": "lock_spam", "music": "volatile_reaction",
-     "cues": [{"k": "sp_keep", "on": "keep", "sfx": [[0, "ea1/notif", 0.5], [3, "ea1/notif", 0.45], [6, "ea1/notif", 0.45], [9, "ea1/notif", 0.45], [12, "ea1/notif", 0.45], [15, "ea1/notif", 0.45], [18, "ea1/notif", 0.45]]}]},
-    {"scene": "time", "music": null,
-     "cues": [{"k": "tm_time", "on": "time", "sfx": [[0, "ea1/k_flash", 0.5]]}],
-     "sfx0": [[0, "ea1/vote_tick", 0.3], [6, "ea1/vote_tick", 0.3], [11, "ea1/vote_tick", 0.3], [15, "ea1/vote_tick", 0.3], [18, "ea1/vote_tick", 0.3]]},
-    {"scene": "lock_loop", "music": "scheming_weasel_faster",
-     "sfx0": [[0, "ea1/notif", 0.45]]}
-  ]
+ "id": "phone96",
+ "comp": "phone",
+ "tempo": 1.08,
+ "planned_beat": "b11",
+ "beats": [
+  {
+   "scene": "lock_hook",
+   "music": "scheming_weasel_faster",
+   "cues": [],
+   "sfx0": [
+    [
+     0,
+     "ea1/k_stop",
+     0.35
+    ],
+    [
+     0,
+     "ea1/notif",
+     0.42
+    ],
+    [
+     9,
+     "ea1/reply_pop",
+     0.42
+    ],
+    [
+     18,
+     "ea1/notif",
+     0.42
+    ],
+    [
+     27,
+     "ea1/reply_pop",
+     0.42
+    ],
+    [
+     36,
+     "ea1/notif",
+     0.42
+    ],
+    [
+     45,
+     "ea1/reply_pop",
+     0.42
+    ],
+    [
+     54,
+     "ea1/notif",
+     0.42
+    ],
+    [
+     63,
+     "ea1/reply_pop",
+     0.42
+    ],
+    [
+     72,
+     "ea1/notif",
+     0.42
+    ]
+   ]
+  },
+  {
+   "scene": "lock_broke",
+   "music": "scheming_weasel_faster",
+   "cues": [
+    {
+     "k": "br_broke",
+     "on": "lunch",
+     "sfx": [
+      [
+       0,
+       "ea1/fail",
+       0.5
+      ],
+      [
+       0,
+       "ea1/claim_buzz",
+       0.35
+      ]
+     ]
+    }
+   ],
+   "sfx0": [
+    [
+     0,
+     "ea1/roll33",
+     0.35
+    ],
+    [
+     3,
+     "ea1/notif",
+     0.3
+    ],
+    [
+     7,
+     "ea1/notif",
+     0.3
+    ],
+    [
+     11,
+     "ea1/notif",
+     0.3
+    ]
+   ]
+  },
+  {
+   "scene": "screentime",
+   "music": "scheming_weasel_faster",
+   "cues": [
+    {
+     "k": "st_ninety",
+     "on": "ninety",
+     "sfx": [
+      [
+       0,
+       "ea1/roll33",
+       0.45
+      ],
+      [
+       18,
+       "ea1/k_slam",
+       0.45
+      ]
+     ]
+    }
+   ],
+   "sfx0": [
+    [
+     0,
+     "ea1/photo_slide",
+     0.35
+    ]
+   ]
+  },
+  {
+   "scene": "every10",
+   "music": "scheming_weasel_faster",
+   "cues": [
+    {
+     "k": "ev_ten",
+     "on": "ten",
+     "sfx": [
+      [
+       0,
+       "ea1/k_point",
+       0.45
+      ]
+     ]
+    }
+   ],
+   "sfx0": [
+    [
+     0,
+     "ea1/photo_slide",
+     0.35
+    ],
+    [
+     4,
+     "ea1/vote_tick",
+     0.25
+    ],
+    [
+     10,
+     "ea1/vote_tick",
+     0.25
+    ],
+    [
+     16,
+     "ea1/vote_tick",
+     0.25
+    ],
+    [
+     22,
+     "ea1/vote_tick",
+     0.25
+    ]
+   ]
+  },
+  {
+   "scene": "bank_day",
+   "music": "investigations",
+   "cues": [
+    {
+     "k": "bk_ninety",
+     "on": "ninety",
+     "sfx": [
+      [
+       0,
+       "ea1/roll33",
+       0.45
+      ],
+      [
+       14,
+       "ea1/k_slam",
+       0.45
+      ]
+     ]
+    }
+   ],
+   "sfx0": [
+    [
+     0,
+     "ea1/photo_slide",
+     0.35
+    ]
+   ]
+  },
+  {
+   "scene": "bank_year",
+   "music": "investigations",
+   "cues": [
+    {
+     "k": "bk_thirty",
+     "on": "thirty",
+     "sfx": [
+      [
+       0,
+       "ea1/roll33",
+       0.5
+      ],
+      [
+       20,
+       "ea1/k_boom",
+       0.45
+      ]
+     ]
+    }
+   ],
+   "sfx0": [
+    [
+     0,
+     "ea1/photo_slide",
+     0.35
+    ]
+   ]
+  },
+  {
+   "scene": "texts",
+   "music": "investigations",
+   "cues": [
+    {
+     "k": "tx_car",
+     "on": "car",
+     "sfx": [
+      [
+       0,
+       "ea1/reply_pop",
+       0.5
+      ],
+      [
+       10,
+       "ea1/reply_pop",
+       0.5
+      ]
+     ]
+    },
+    {
+     "k": "tx_notifications",
+     "on": "notifications",
+     "sfx": [
+      [
+       0,
+       "ea1/reply_pop",
+       0.5
+      ]
+     ]
+    }
+   ],
+   "sfx0": [
+    [
+     2,
+     "ea1/reply_pop",
+     0.45
+    ]
+   ]
+  },
+  {
+   "scene": "screentime2",
+   "music": "volatile_reaction",
+   "cues": [
+    {
+     "k": "st_twice",
+     "on": "twice",
+     "sfx": [
+      [
+       0,
+       "ea1/roll33",
+       0.45
+      ],
+      [
+       16,
+       "ea1/k_slam",
+       0.5
+      ]
+     ]
+    }
+   ],
+   "sfx0": [
+    [
+     0,
+     "ea1/photo_slide",
+     0.35
+    ]
+   ]
+  },
+  {
+   "scene": "bank_year2",
+   "music": "volatile_reaction",
+   "cues": [
+    {
+     "k": "bk_seventy",
+     "on": "seventy",
+     "sfx": [
+      [
+       0,
+       "ea1/roll33",
+       0.5
+      ],
+      [
+       20,
+       "ea1/k_boom",
+       0.5
+      ],
+      [
+       22,
+       "ea1/fail",
+       0.4
+      ]
+     ]
+    }
+   ],
+   "sfx0": [
+    [
+     0,
+     "ea1/photo_slide",
+     0.35
+    ]
+   ]
+  },
+  {
+   "scene": "lock_spam",
+   "music": "volatile_reaction",
+   "cues": [
+    {
+     "k": "sp_keep",
+     "on": "keep",
+     "sfx": [
+      [
+       0,
+       "ea1/notif",
+       0.5
+      ],
+      [
+       3,
+       "ea1/notif",
+       0.45
+      ],
+      [
+       6,
+       "ea1/notif",
+       0.45
+      ],
+      [
+       9,
+       "ea1/notif",
+       0.45
+      ],
+      [
+       12,
+       "ea1/notif",
+       0.45
+      ],
+      [
+       15,
+       "ea1/notif",
+       0.45
+      ],
+      [
+       18,
+       "ea1/notif",
+       0.45
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "scene": "time",
+   "music": null,
+   "cues": [
+    {
+     "k": "tm_time",
+     "on": "time",
+     "sfx": [
+      [
+       0,
+       "ea1/k_flash",
+       0.5
+      ]
+     ]
+    }
+   ],
+   "sfx0": [
+    [
+     0,
+     "ea1/vote_tick",
+     0.3
+    ],
+    [
+     6,
+     "ea1/vote_tick",
+     0.3
+    ],
+    [
+     11,
+     "ea1/vote_tick",
+     0.3
+    ],
+    [
+     15,
+     "ea1/vote_tick",
+     0.3
+    ],
+    [
+     18,
+     "ea1/vote_tick",
+     0.3
+    ]
+   ]
+  },
+  {
+   "scene": "lock_loop",
+   "music": "scheming_weasel_faster",
+   "sfx0": [
+    [
+     0,
+     "ea1/notif",
+     0.45
+    ]
+   ]
+  }
+ ]
 }

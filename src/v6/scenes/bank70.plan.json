@@ -3,7 +3,7 @@
  "comp": "ink",
  "w": 1080,
  "h": 1920,
- "frames": 926,
+ "frames": 930,
  "voice": "bank70/voice.flac",
  "beats": [
   {
@@ -218,7 +218,7 @@
   {
    "id": "b12",
    "from": 858,
-   "to": 926,
+   "to": 930,
    "say": "So ask yourself who would still give you cash tomorrow",
    "text": null,
    "scene": "L",
@@ -275,7 +275,7 @@
   {
    "src": "life_of_riley",
    "from": 858,
-   "to": 926,
+   "to": 930,
    "v": 0.15,
    "off": 0
   }
@@ -284,152 +284,152 @@
   {
    "at": 0,
    "src": "ea1/k_stop",
-   "v": 0.4
+   "v": 0.288
   },
   {
    "at": 39,
    "src": "ea1/door",
-   "v": 0.55
+   "v": 0.396
   },
   {
    "at": 42,
    "src": "ea1/k_slam",
-   "v": 0.5
+   "v": 0.36
   },
   {
    "at": 88,
    "src": "ea1/co_paper",
-   "v": 0.4
+   "v": 0.288
   },
   {
    "at": 88,
    "src": "ea1/steps",
-   "v": 0.25
+   "v": 0.18
   },
   {
    "at": 147,
    "src": "ea1/k_point",
-   "v": 0.45
+   "v": 0.324
   },
   {
    "at": 191,
    "src": "ea1/claim_buzz",
-   "v": 0.4
+   "v": 0.288
   },
   {
    "at": 204,
    "src": "ea1/door",
-   "v": 0.55
+   "v": 0.396
   },
   {
    "at": 242,
    "src": "ea1/co_book",
-   "v": 0.4
+   "v": 0.288
   },
   {
    "at": 273,
    "src": "ea1/crickets",
-   "v": 0.4
+   "v": 0.288
   },
   {
    "at": 364,
    "src": "ea1/door",
-   "v": 0.45
+   "v": 0.324
   },
   {
    "at": 366,
    "src": "ea1/reply_pop",
-   "v": 0.35
+   "v": 0.252
   },
   {
    "at": 387,
    "src": "ea1/reply_pop",
-   "v": 0.3
+   "v": 0.216
   },
   {
    "at": 391,
    "src": "ea1/reply_pop",
-   "v": 0.3
+   "v": 0.216
   },
   {
    "at": 395,
    "src": "ea1/reply_pop",
-   "v": 0.3
+   "v": 0.216
   },
   {
    "at": 422,
    "src": "ea1/k_slam",
-   "v": 0.5
+   "v": 0.36
   },
   {
    "at": 450,
    "src": "ea1/co_paper",
-   "v": 0.35
+   "v": 0.252
   },
   {
    "at": 489,
    "src": "ea1/cash_rain",
-   "v": 0.45
+   "v": 0.324
   },
   {
    "at": 530,
    "src": "ea1/co_paper2",
-   "v": 0.4
+   "v": 0.288
   },
   {
    "at": 557,
    "src": "ea1/scribble",
-   "v": 0.5
+   "v": 0.36
   },
   {
    "at": 563,
    "src": "ea1/scribble",
-   "v": 0.45
+   "v": 0.324
   },
   {
    "at": 641,
    "src": "ea1/photo_slide",
-   "v": 0.4
+   "v": 0.288
   },
   {
    "at": 647,
    "src": "ea1/co_paper",
-   "v": 0.35
+   "v": 0.252
   },
   {
    "at": 653,
    "src": "ea1/co_paper",
-   "v": 0.35
+   "v": 0.252
   },
   {
    "at": 673,
    "src": "ea1/door",
-   "v": 0.5
+   "v": 0.36
   },
   {
    "at": 708,
    "src": "ea1/k_boom",
-   "v": 0.55
+   "v": 0.396
   },
   {
    "at": 710,
    "src": "ea1/cash_rain",
-   "v": 0.45
+   "v": 0.324
   },
   {
    "at": 774,
    "src": "ea1/co_riser",
-   "v": 0.35
+   "v": 0.252
   },
   {
    "at": 836,
    "src": "ea1/k_flash",
-   "v": 0.5
+   "v": 0.36
   },
   {
    "at": 900,
    "src": "ea1/door",
-   "v": 0.45
+   "v": 0.324
   }
  ],
  "dave": {

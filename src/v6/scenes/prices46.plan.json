@@ -3,7 +3,7 @@
  "comp": "mini",
  "w": 1080,
  "h": 1920,
- "frames": 858,
+ "frames": 862,
  "voice": "prices46/voice.flac",
  "beats": [
   {
@@ -203,7 +203,7 @@
   {
    "id": "b11",
    "from": 777,
-   "to": 858,
+   "to": 862,
    "say": "So next time your coffee costs ten cents more just ask yourself",
    "text": null,
    "scene": "K",
@@ -258,7 +258,7 @@
   {
    "src": "pixel_peeker_polka_faster",
    "from": 777,
-   "to": 858,
+   "to": 862,
    "v": 0.15,
    "off": 0
   }
@@ -267,207 +267,207 @@
   {
    "at": 0,
    "src": "ea1/k_stop",
-   "v": 0.45
+   "v": 0.324
   },
   {
    "at": 0,
    "src": "ea1/vote_tick",
-   "v": 0.3
+   "v": 0.216
   },
   {
    "at": 6,
    "src": "ea1/vote_tick",
-   "v": 0.3
+   "v": 0.216
   },
   {
    "at": 11,
    "src": "ea1/k_point",
-   "v": 0.45
+   "v": 0.324
   },
   {
    "at": 12,
    "src": "ea1/vote_tick",
-   "v": 0.3
+   "v": 0.216
   },
   {
    "at": 18,
    "src": "ea1/vote_tick",
-   "v": 0.3
+   "v": 0.216
   },
   {
    "at": 24,
    "src": "ea1/vote_tick",
-   "v": 0.3
+   "v": 0.216
   },
   {
    "at": 30,
    "src": "ea1/vote_tick",
-   "v": 0.3
+   "v": 0.216
   },
   {
    "at": 36,
    "src": "ea1/vote_tick",
-   "v": 0.3
+   "v": 0.216
   },
   {
    "at": 42,
    "src": "ea1/vote_tick",
-   "v": 0.3
+   "v": 0.216
   },
   {
    "at": 62,
    "src": "ea1/chair_whoosh",
-   "v": 0.4
+   "v": 0.288
   },
   {
    "at": 62,
    "src": "ea1/steps",
-   "v": 0.25
+   "v": 0.18
   },
   {
    "at": 112,
    "src": "ea1/k_slam",
-   "v": 0.5
+   "v": 0.36
   },
   {
    "at": 136,
    "src": "ea1/vote_tick",
-   "v": 0.3
+   "v": 0.216
   },
   {
    "at": 141,
    "src": "ea1/vote_tick",
-   "v": 0.3
+   "v": 0.216
   },
   {
    "at": 141,
    "src": "ea1/roll33",
-   "v": 0.45
+   "v": 0.324
   },
   {
    "at": 146,
    "src": "ea1/vote_tick",
-   "v": 0.3
+   "v": 0.216
   },
   {
    "at": 151,
    "src": "ea1/vote_tick",
-   "v": 0.3
+   "v": 0.216
   },
   {
    "at": 153,
    "src": "ea1/k_slam",
-   "v": 0.45
+   "v": 0.324
   },
   {
    "at": 156,
    "src": "ea1/vote_tick",
-   "v": 0.3
+   "v": 0.216
   },
   {
    "at": 161,
    "src": "ea1/vote_tick",
-   "v": 0.3
+   "v": 0.216
   },
   {
    "at": 166,
    "src": "ea1/vote_tick",
-   "v": 0.3
+   "v": 0.216
   },
   {
    "at": 171,
    "src": "ea1/vote_tick",
-   "v": 0.3
+   "v": 0.216
   },
   {
    "at": 186,
    "src": "ea1/check1",
-   "v": 0.4
+   "v": 0.288
   },
   {
    "at": 233,
    "src": "ea1/check1",
-   "v": 0.5
+   "v": 0.36
   },
   {
    "at": 236,
    "src": "ea1/check2",
-   "v": 0.45
+   "v": 0.324
   },
   {
    "at": 279,
    "src": "ea1/photo_slide",
-   "v": 0.35
+   "v": 0.252
   },
   {
    "at": 306,
    "src": "ea1/steps",
-   "v": 0.5
+   "v": 0.36
   },
   {
    "at": 354,
    "src": "ea1/co_paper",
-   "v": 0.45
+   "v": 0.324
   },
   {
    "at": 401,
    "src": "ea1/k_boom",
-   "v": 0.5
+   "v": 0.36
   },
   {
    "at": 438,
    "src": "ea1/co_paper2",
-   "v": 0.4
+   "v": 0.288
   },
   {
    "at": 472,
    "src": "ea1/cash_rain",
-   "v": 0.45
+   "v": 0.324
   },
   {
    "at": 502,
    "src": "ea1/cash_rain",
-   "v": 0.5
+   "v": 0.36
   },
   {
    "at": 506,
    "src": "ea1/chair_whoosh",
-   "v": 0.35
+   "v": 0.252
   },
   {
    "at": 560,
    "src": "ea1/photo_slide",
-   "v": 0.35
+   "v": 0.252
   },
   {
    "at": 588,
    "src": "ea1/k_slam",
-   "v": 0.5
+   "v": 0.36
   },
   {
    "at": 598,
    "src": "ea1/k_stop",
-   "v": 0.4
+   "v": 0.288
   },
   {
    "at": 718,
    "src": "ea1/scribble",
-   "v": 0.45
+   "v": 0.324
   },
   {
    "at": 726,
    "src": "ea1/scribble",
-   "v": 0.4
+   "v": 0.288
   },
   {
    "at": 777,
    "src": "ea1/k_stop",
-   "v": 0.35
+   "v": 0.252
   },
   {
    "at": 804,
    "src": "ea1/k_point",
-   "v": 0.45
+   "v": 0.324
   }
  ],
  "dave": {

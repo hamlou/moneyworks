@@ -3,7 +3,7 @@
  "comp": "phone",
  "w": 1080,
  "h": 1920,
- "frames": 897,
+ "frames": 901,
  "voice": "phone96/voice.flac",
  "beats": [
   {
@@ -163,7 +163,7 @@
   {
    "id": "b12",
    "from": 834,
-   "to": 897,
+   "to": 901,
    "say": "So next time you pick it up just ask yourself",
    "text": null,
    "scene": "lock_loop",
@@ -176,8 +176,6 @@
   }
  ],
  "cues": {
-  "lk_dollar": 28,
-  "lk_checked": 52,
   "br_broke": 110,
   "st_ninety": 174,
   "ev_ten": 233,
@@ -215,7 +213,7 @@
   {
    "src": "scheming_weasel_faster",
    "from": 834,
-   "to": 897,
+   "to": 901,
    "v": 0.15,
    "off": 0
   }
@@ -223,258 +221,283 @@
  "sfx": [
   {
    "at": 0,
-   "src": "ea1/notif",
-   "v": 0.55
+   "src": "ea1/k_stop",
+   "v": 0.252
   },
   {
    "at": 0,
-   "src": "ea1/k_stop",
-   "v": 0.4
-  },
-  {
-   "at": 28,
    "src": "ea1/notif",
-   "v": 0.6
+   "v": 0.302
   },
   {
-   "at": 29,
+   "at": 9,
    "src": "ea1/reply_pop",
-   "v": 0.4
+   "v": 0.302
   },
   {
-   "at": 52,
+   "at": 18,
    "src": "ea1/notif",
-   "v": 0.6
+   "v": 0.302
+  },
+  {
+   "at": 27,
+   "src": "ea1/reply_pop",
+   "v": 0.302
+  },
+  {
+   "at": 36,
+   "src": "ea1/notif",
+   "v": 0.302
+  },
+  {
+   "at": 45,
+   "src": "ea1/reply_pop",
+   "v": 0.302
+  },
+  {
+   "at": 54,
+   "src": "ea1/notif",
+   "v": 0.302
+  },
+  {
+   "at": 63,
+   "src": "ea1/reply_pop",
+   "v": 0.302
+  },
+  {
+   "at": 72,
+   "src": "ea1/notif",
+   "v": 0.302
   },
   {
    "at": 75,
    "src": "ea1/roll33",
-   "v": 0.35
+   "v": 0.252
   },
   {
    "at": 78,
    "src": "ea1/notif",
-   "v": 0.3
+   "v": 0.216
   },
   {
    "at": 82,
    "src": "ea1/notif",
-   "v": 0.3
+   "v": 0.216
   },
   {
    "at": 86,
    "src": "ea1/notif",
-   "v": 0.3
+   "v": 0.216
   },
   {
    "at": 110,
    "src": "ea1/fail",
-   "v": 0.5
+   "v": 0.36
   },
   {
    "at": 110,
    "src": "ea1/claim_buzz",
-   "v": 0.35
+   "v": 0.252
   },
   {
    "at": 135,
    "src": "ea1/photo_slide",
-   "v": 0.35
+   "v": 0.252
   },
   {
    "at": 174,
    "src": "ea1/roll33",
-   "v": 0.45
+   "v": 0.324
   },
   {
    "at": 192,
    "src": "ea1/k_slam",
-   "v": 0.45
+   "v": 0.324
   },
   {
    "at": 214,
    "src": "ea1/photo_slide",
-   "v": 0.35
+   "v": 0.252
   },
   {
    "at": 218,
    "src": "ea1/vote_tick",
-   "v": 0.25
+   "v": 0.18
   },
   {
    "at": 224,
    "src": "ea1/vote_tick",
-   "v": 0.25
+   "v": 0.18
   },
   {
    "at": 230,
    "src": "ea1/vote_tick",
-   "v": 0.25
+   "v": 0.18
   },
   {
    "at": 233,
    "src": "ea1/k_point",
-   "v": 0.45
+   "v": 0.324
   },
   {
    "at": 236,
    "src": "ea1/vote_tick",
-   "v": 0.25
+   "v": 0.18
   },
   {
    "at": 274,
    "src": "ea1/photo_slide",
-   "v": 0.35
+   "v": 0.252
   },
   {
    "at": 287,
    "src": "ea1/roll33",
-   "v": 0.45
+   "v": 0.324
   },
   {
    "at": 301,
    "src": "ea1/k_slam",
-   "v": 0.45
+   "v": 0.324
   },
   {
    "at": 366,
    "src": "ea1/photo_slide",
-   "v": 0.35
+   "v": 0.252
   },
   {
    "at": 404,
    "src": "ea1/roll33",
-   "v": 0.5
+   "v": 0.36
   },
   {
    "at": 424,
    "src": "ea1/k_boom",
-   "v": 0.45
+   "v": 0.324
   },
   {
    "at": 465,
    "src": "ea1/reply_pop",
-   "v": 0.45
+   "v": 0.324
   },
   {
    "at": 484,
    "src": "ea1/reply_pop",
-   "v": 0.5
+   "v": 0.36
   },
   {
    "at": 494,
    "src": "ea1/reply_pop",
-   "v": 0.5
+   "v": 0.36
   },
   {
    "at": 516,
    "src": "ea1/reply_pop",
-   "v": 0.5
+   "v": 0.36
   },
   {
    "at": 551,
    "src": "ea1/photo_slide",
-   "v": 0.35
+   "v": 0.252
   },
   {
    "at": 579,
    "src": "ea1/roll33",
-   "v": 0.45
+   "v": 0.324
   },
   {
    "at": 595,
    "src": "ea1/k_slam",
-   "v": 0.5
+   "v": 0.36
   },
   {
    "at": 610,
    "src": "ea1/photo_slide",
-   "v": 0.35
+   "v": 0.252
   },
   {
    "at": 629,
    "src": "ea1/roll33",
-   "v": 0.5
+   "v": 0.36
   },
   {
    "at": 649,
    "src": "ea1/k_boom",
-   "v": 0.5
+   "v": 0.36
   },
   {
    "at": 651,
    "src": "ea1/fail",
-   "v": 0.4
+   "v": 0.288
   },
   {
    "at": 723,
    "src": "ea1/notif",
-   "v": 0.5
+   "v": 0.36
   },
   {
    "at": 726,
    "src": "ea1/notif",
-   "v": 0.45
+   "v": 0.324
   },
   {
    "at": 729,
    "src": "ea1/notif",
-   "v": 0.45
+   "v": 0.324
   },
   {
    "at": 732,
    "src": "ea1/notif",
-   "v": 0.45
+   "v": 0.324
   },
   {
    "at": 735,
    "src": "ea1/notif",
-   "v": 0.45
+   "v": 0.324
   },
   {
    "at": 738,
    "src": "ea1/notif",
-   "v": 0.45
+   "v": 0.324
   },
   {
    "at": 741,
    "src": "ea1/notif",
-   "v": 0.45
+   "v": 0.324
   },
   {
    "at": 751,
    "src": "ea1/vote_tick",
-   "v": 0.3
+   "v": 0.216
   },
   {
    "at": 757,
    "src": "ea1/vote_tick",
-   "v": 0.3
+   "v": 0.216
   },
   {
    "at": 762,
    "src": "ea1/vote_tick",
-   "v": 0.3
+   "v": 0.216
   },
   {
    "at": 766,
    "src": "ea1/vote_tick",
-   "v": 0.3
+   "v": 0.216
   },
   {
    "at": 769,
    "src": "ea1/vote_tick",
-   "v": 0.3
+   "v": 0.216
   },
   {
    "at": 815,
    "src": "ea1/k_flash",
-   "v": 0.5
+   "v": 0.36
   },
   {
    "at": 834,
    "src": "ea1/notif",
-   "v": 0.45
+   "v": 0.324
   }
  ],
  "dave": {

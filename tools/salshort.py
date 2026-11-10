@@ -12,6 +12,7 @@ try:
 except Exception:
     pass
 FPS, LEAD, MUSIC_V = 30, 3, 0.15
+SFX_K = 0.72  # phone96 v1 peaked at 0.0 dB
 cmd, eid = sys.argv[1], sys.argv[2]
 fake = "--fake-voice" in sys.argv
 EP = json.loads(Path(f"pipeline/episodes/{eid}.json").read_text(encoding="utf8"))
@@ -66,14 +67,14 @@ def build():
     vb, sb = V["beats"], SP["beats"]
     if len(vb) != len(sb) or len(vb) != len(EP["beats"]):
         die(f"beats: voice {len(vb)} / spec {len(sb)} / episode {len(EP['beats'])}")
-    total = fr(V["total"]) + 4
+    total = fr(V["total"]) + 8  # audio must never outlast the video (phone96 v1: +0.05 s)
     beats, cues, sfx, errs = [], {}, [], []
     for i, (v, s) in enumerate(zip(vb, sb)):
         start = 0 if i == 0 else max(0, fr(v["words"][0]["start"]) - 2)
         beats.append({"id": v["id"], "from": start, "to": 0, "say": v["text"], "text": s.get("text"), "scene": s["scene"], "dave": s.get("dave", "talk"),
                       "fx": [], "highlight": [], "focus": "", "style": "neutral", "music": s.get("music")})
         for off, src, vol in s.get("sfx0", []):
-            sfx.append({"at": start + off, "src": src, "v": vol})
+            sfx.append({"at": start + off, "src": src, "v": round(vol * SFX_K, 3)})
         words = [norm(w["text"]) for w in v["words"]]
         for cu in s.get("cues", []):
             want = norm(cu["on"])
@@ -83,7 +84,7 @@ def build():
             at = max(start, fr(v["words"][words.index(want)]["start"]) - LEAD)
             cues[cu["k"]] = at
             for off, src, vol in cu.get("sfx", []):
-                sfx.append({"at": at + off, "src": src, "v": vol})
+                sfx.append({"at": at + off, "src": src, "v": round(vol * SFX_K, 3)})
         caps = []
         for cp in s.get("caps", []):
             want = norm(cp["on"])

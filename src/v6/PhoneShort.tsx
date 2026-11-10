@@ -46,11 +46,11 @@ const Tap: React.FC<{f: number; at: number; x: number; y: number}> = ({f, at, x,
 };
 
 // ── caption (creator-style text on a screen recording) ──
-const Caption: React.FC<{f: number; at: number; text: string; y?: number; col?: string}> = ({f, at, text, y = 640, col = '#fff'}) => {
+const Caption: React.FC<{f: number; at: number; text: string; y?: number; col?: string; big?: boolean}> = ({f, at, text, y = 640, col = '#fff', big}) => {
   if (f < at) return null;
   const s = at === 0 ? 1 : interpolate(f - at, [0, 4, 7], [1.3, 0.96, 1], CL);
   return (
-    <div style={{position: 'absolute', left: 50, right: 50, top: y, textAlign: 'center', transform: `scale(${s})`, fontFamily: I7, fontSize: 86, lineHeight: 1.08, color: col, WebkitTextStroke: '12px #000', paintOrder: 'stroke fill', letterSpacing: -1}}>
+    <div style={{position: 'absolute', left: 50, right: 50, top: y, textAlign: 'center', transform: `scale(${s})`, fontFamily: I7, fontSize: big ? 112 : 80, lineHeight: 1.05, color: col, WebkitTextStroke: '12px #000', paintOrder: 'stroke fill', letterSpacing: -1}}>
       {text}
     </div>
   );
@@ -89,7 +89,8 @@ const Lock: React.FC<SP & {mode: 'hook' | 'loop' | 'broke' | 'spam'}> = ({f, c, 
   const lf = f - b.from;
   let n = 3;
   let min = 7 * 60;
-  if (mode === 'hook') n = 3 + (f >= c('lk_dollar') ? 1 : 0) + (f >= c('lk_checked') ? 1 : 0);
+  if (mode === 'hook') n = 1 + Math.floor(lf / 9);
+  if (mode === 'loop') n = 1 + Math.floor(Math.max(0, lf - (b.to - b.from) + 1) / 9);
   if (mode === 'broke') {
     const k = e(f, b.from, Math.max(10, c('br_broke') - b.from));
     min = 7 * 60 + k * (4 * 60 + 58);
@@ -98,8 +99,8 @@ const Lock: React.FC<SP & {mode: 'hook' | 'loop' | 'broke' | 'spam'}> = ({f, c, 
   if (mode === 'spam') n = 5 + Math.max(0, Math.floor((f - c('sp_keep')) / 3));
   const declined = mode === 'broke' && f >= c('br_broke');
   const cards = Array.from({length: Math.min(n, 60)}, (_, i) => i);
-  const bal = Math.max(0, 41 - (n - 3));
-  const taps = mode === 'spam' ? Array.from({length: 12}, (_, i) => c('sp_keep') + i * 3) : mode === 'hook' ? [c('lk_dollar'), c('lk_checked')] : mode === 'loop' ? [b.to - 6] : [];
+  const bal = Math.max(0, 41 - (n - 1));
+  const taps = mode === 'spam' ? Array.from({length: 12}, (_, i) => c('sp_keep') + i * 3) : mode === 'hook' ? Array.from({length: 9}, (_, i) => b.from + i * 9 - 2) : mode === 'loop' ? [b.to - 6] : [];
   return (
     <AbsoluteFill>
       <Wall f={f} />
@@ -107,13 +108,13 @@ const Lock: React.FC<SP & {mode: 'hook' | 'loop' | 'broke' | 'spam'}> = ({f, c, 
       <div style={{position: 'absolute', top: 64 * P, left: 0, right: 0, textAlign: 'center', color: '#fff', fontFamily: I6, fontSize: 21 * P, textShadow: '0 2px 10px rgba(0,0,0,0.4)'}}>Monday, November 10</div>
       <div style={{position: 'absolute', top: 76 * P, left: 0, right: 0, textAlign: 'center', color: '#fff', fontFamily: I6, fontSize: 104 * P, letterSpacing: -2 * P, textShadow: '0 4px 30px rgba(0,0,0,0.35)'}}>{clockAt(min)}</div>
       <div style={{position: 'absolute', top: 210 * P, left: 0, right: 0, textAlign: 'center', fontFamily: I6, fontSize: 17 * P, color: bal < 10 ? '#ff9d96' : '#fff', textShadow: '0 2px 10px rgba(0,0,0,0.5)'}}>Balance {usd(bal)}.00</div>
-      {cards.slice(-7).reverse().map((i, k) => {
-        const age = f - (b.from + i * 2);
-        return <Notif key={i} title="Phone Tax" body={`−$1.00 · You checked your phone (#${i + 1})`} when={k === 0 ? 'now' : `${k * 10}m ago`} y={300 * P + k * 16 * P} o={k < 4 ? 1 - k * 0.18 : 0} s={1 - k * 0.05} />;
+      {cards.slice(-3).reverse().map((i, k) => {
+        const fresh = k === 0 && mode !== 'broke' ? e(f, b.from + (mode === 'hook' ? i * 9 : 0), 5) : 1;
+        return <Notif key={i} title="Phone Tax" body={`−$1.00 · You checked your phone (#${i + 1})`} when={k === 0 ? 'now' : `${k * 10}m ago`} y={300 * P + k * 76 * P - (1 - fresh) * 90} o={(k === 0 ? fresh : 1) * (1 - k * 0.12)} />;
       })}
       {declined ? <Notif title="Card declined" body="Insufficient funds · Coffee Shop $4.50" y={300 * P} red s={interpolate(f - c('br_broke'), [0, 4, 7], [1.2, 0.97, 1], CL)} /> : null}
       {taps.map((t, i) => <Tap key={i} f={f} at={t} x={540 + (random(`tx${i}`) - 0.5) * 200} y={1250 + (random(`ty${i}`) - 0.5) * 160} />)}
-      {mode === 'hook' || mode === 'loop' ? <Caption f={f} at={mode === 'hook' ? 0 : b.from} text="$1 EVERY TIME YOU CHECK?" y={1290} col="#FFD60A" /> : null}
+      {mode === 'hook' || mode === 'loop' ? <Caption f={f} at={mode === 'hook' ? 0 : b.from} text="$1 EVERY TIME YOU CHECK?" y={1180} col="#FFD60A" big /> : null}
       {declined ? <Caption f={f} at={c('br_broke')} text="BROKE BEFORE LUNCH" y={1290} col={RED} /> : null}
       {mode === 'spam' ? <Caption f={f} at={c('sp_keep')} text="YOU'D STILL CHECK IT" y={1290} col="#fff" /> : null}
       {lf < 0 ? null : null}
@@ -123,7 +124,8 @@ const Lock: React.FC<SP & {mode: 'hook' | 'loop' | 'broke' | 'spam'}> = ({f, c, 
 
 // Screen Time "Pickups"
 const ScreenTime: React.FC<SP & {twice?: boolean}> = ({f, c, b, twice}) => {
-  const k = twice ? e(f, c('st_twice'), 16) : e(f, c('st_ninety'), 18);
+  const land = (twice ? c('st_twice') : c('st_ninety')) + 6;
+  const k = e(f, b.from, Math.max(8, land - b.from));
   const v = twice ? Math.round(96 + 96 * k) : Math.round(96 * k);
   const hours = [0, 0, 0, 0, 0, 0, 0, 4, 8, 6, 5, 7, 9, 6, 5, 6, 7, 8, 9, 6, 4, 3, 2, 0];
   return (
@@ -171,7 +173,7 @@ const Bank: React.FC<SP & {mode: 'day' | 'year' | 'year2'}> = ({f, c, b, mode}) 
   const lf = f - b.from;
   const tgt = mode === 'day' ? 96 : mode === 'year' ? 35040 : 70080;
   const at = mode === 'day' ? c('bk_ninety') : mode === 'year' ? c('bk_thirty') : c('bk_seventy');
-  const v = Math.round(tgt * e(f, at, mode === 'day' ? 14 : 20));
+  const v = Math.round(tgt * e(f, b.from, Math.max(8, at + 6 - b.from)));
   const rows = mode === 'day' ? Array.from({length: 30}, (_, i) => ({n: 'Phone Tax', d: `${clockAt(7 * 60 + i * 10)} AM`, a: '−$1.00'})) : Array.from({length: 12}, (_, i) => ({n: ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'][i], d: 'Phone Tax · monthly', a: `−${usd(tgt / 12)}`}));
   const scroll = mode === 'day' ? lf * 7 : lf * 3;
   return (
