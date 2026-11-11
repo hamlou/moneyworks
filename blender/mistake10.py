@@ -143,7 +143,7 @@ parts = [box("v1", (0, 30, 1.6), (12, 6, 3.2), WHITE, COL), box("v2", (2, 30.5, 
          box("roof1", (0, 29.6, 3.25), (12.8, 7, 0.18), WHITE, COL), box("roof2", (2, 30.2, 6.05), (8.8, 6, 0.18), WOOD, COL),
          box("glassA", (-1.5, 26.85, 1.55), (8, 0.05, 2.8), GL, COL), box("glowA", (-1.5, 26.93, 1.55), (7.8, 0.04, 2.6), WARM, COL),
          box("glassB", (2.5, 27.85, 4.6), (7, 0.05, 2.4), GL, COL), box("glowB", (2.5, 27.93, 4.6), (6.8, 0.04, 2.2), WARM, COL),
-         box("deck", (0, 23.5, 0.08), (16, 6, 0.16), WOOD, COL), box("pool", (1.0, 22.0, 0.05), (8, 3.2, 0.2), WATER, COL),
+         box("deck", (0, 25.35, 0.08), (16, 3.3, 0.16), WOOD, COL), box("pool", (1.0, 22.0, 0.05), (8, 3.2, 0.2), WATER, COL),
          plane("lawn", (0, 18, 0.01), (60, 40), (0, 0, 0), tex_or("aerial_grass_rock", (0.25, 0.45, 0.2), 0.25), COL)]
 MULL = flat("mullion", (0.08, 0.08, 0.09), 0.4, 0.3)
 for i in range(9):  # window frames make the glass read as glass
