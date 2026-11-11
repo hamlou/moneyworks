@@ -77,10 +77,10 @@ APP = text3d("Available balance", (0, 0.058, 0.0096), (0, 0, 0), 0.0065, T_WHITE
 APP.parent = PHONE
 BAL = text3d("$10,474,143.00", (0, 0.012, 0.0096), (0, 0, 0), 0.0072, T_INK, COL, extrude=0.0002)
 BAL.parent = PHONE
-for _o in (APP, BAL, SUB, LSCR if False else APP):
-    _o.data.bevel_depth = 0.0
 SUB = text3d("Refund received", (0, -0.006, 0.0096), (0, 0, 0), 0.0055, T_GREEN, COL, extrude=0.0002)
 SUB.parent = PHONE
+for _o in (APP, BAL, SUB):
+    _o.data.bevel_depth = 0.0
 for i in range(4):  # transaction rows
     r = plane(f"row{i}", (0, -0.028 - i * 0.014, 0.0094), (0.06, 0.010), (0, 0, 0), emit(f"rowc{i}", (0.93, 0.93, 0.95), 1.1), COL)
     r.parent = PHONE
