@@ -155,7 +155,7 @@ parts += [box("wing", (-8.5, 31, 2.2), (5, 8, 4.4), WOOD, COL), box("copeN", (1.
 for p_ in parts:
     p_.parent = VILLA
 PLANTS = [model("potted_plant_01", (x, 25.8, 0.16), 0, 1.1) for x in (-6.5, 5.5)]
-CHAIRS = model("outdoor_table_chair_set_01", (-4.5, 23.5, 0.16), R(20), 2.2)
+CHAIRS = model("outdoor_table_chair_set_01", (-5.0, 25.3, 0.16), R(20), 2.2)
 post = box("signpost", (-0.5, 17.05, 0.5), (0.08, 0.08, 1.0), WOOD, COL)
 sboard = box("signboard", (-0.5, 17.05, 1.15), (1.6, 0.05, 0.7), WHITE, COL)
 SIGN = [SOLD, post, sboard]
