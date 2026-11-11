@@ -75,7 +75,7 @@ T_GREEN = emit("tgreen", (0.03, 0.6, 0.25), 0.25)
 T_RED = emit("tred", (0.85, 0.08, 0.06), 0.25)
 APP = text3d("Available balance", (0, 0.058, 0.0096), (0, 0, 0), 0.0065, T_WHITE, COL, extrude=0.0002)
 APP.parent = PHONE
-BAL = text3d("$10,474,143.00", (0, 0.012, 0.0096), (0, 0, 0), 0.0072, T_INK, COL, extrude=0.0002)
+BAL = text3d("$10,474,143.00", (0, 0.012, 0.0096), (0, 0, 0), 0.0084, T_INK, COL, extrude=0.0002)
 BAL.parent = PHONE
 SUB = text3d("Refund received", (0, -0.006, 0.0096), (0, 0, 0), 0.0055, T_GREEN, COL, extrude=0.0002)
 SUB.parent = PHONE
@@ -112,13 +112,13 @@ LAMP = model("desk_lamp_arm_01", (0.48, 6.15, 0.75), R(200), 0.5)
 PADS = model("office_notepads", (-0.42, 5.9, 0.75), R(15), 0.22)
 BIND = model("binder_notebook", (-0.25, 6.2, 0.75), R(-30), 0.3)
 GAVEL = model("wooden_hammer_01", (0.1, 5.75, 0.8), R(90), 0.3)
-LSCR = text3d("PAYMENT · AMOUNT ($)", (0, 0, 0), (0, 0, 0), 0.028, T_INK, COL, extrude=0.0)
-LNUM = text3d("10474143.00", (0, 0, 0), (0, 0, 0), 0.06, T_RED, COL, extrude=0.0)
+LSCR = text3d("PAYMENT · AMOUNT ($)", (0, 0, 0), (0, 0, 0), 0.024, T_INK, COL, extrude=0.0)
+LNUM = text3d("10474143.00", (0, 0, 0), (0, 0, 0), 0.05, T_RED, COL, extrude=0.0)
 LFORM = plane("lform", (0, 0, 0), (0.52, 0.3), (0, 0, 0), emit("lformc", (0.95, 0.95, 0.97), 0.8), COL)
 for o in (LSCR, LNUM, LFORM):
     o.rotation_euler = (R(90), 0, 0)
 LFORM.location = (0, 5.853, 0.98)
-LSCR.location = (-0.17, 5.851, 1.04)
+LSCR.location = (-0.22, 5.851, 1.04)
 LNUM.location = (0.0, 5.851, 0.94)
 LSCR.data.align_x = "LEFT"
 for _o in (LSCR, LNUM, AUDIT if False else LSCR):
@@ -137,7 +137,7 @@ COL.objects.link(VILLA)
 WHITE = flat("render", (0.92, 0.9, 0.86), 0.7)
 WOOD = tex_or("wood_floor", (0.4, 0.26, 0.15), 0.8)
 GL = glass("vglass", (0.7, 0.8, 0.85), 0.03)
-WARM = emit("interior", (1.0, 0.75, 0.45), 6.0)
+WARM = emit("interior", (1.0, 0.72, 0.42), 1.4)
 WATER = glass("water", (0.2, 0.65, 0.85), 0.05)
 parts = [box("v1", (0, 30, 1.6), (12, 6, 3.2), WHITE, COL), box("v2", (2, 30.5, 4.6), (8, 5, 2.8), WHITE, COL),
          box("roof1", (0, 29.6, 3.25), (12.8, 7, 0.18), WHITE, COL), box("roof2", (2, 30.2, 6.05), (8.8, 6, 0.18), WOOD, COL),
@@ -145,6 +145,12 @@ parts = [box("v1", (0, 30, 1.6), (12, 6, 3.2), WHITE, COL), box("v2", (2, 30.5, 
          box("glassB", (2.5, 27.85, 4.6), (7, 0.05, 2.4), GL, COL), box("glowB", (2.5, 27.93, 4.6), (6.8, 0.04, 2.2), WARM, COL),
          box("deck", (0, 23.5, 0.08), (16, 6, 0.16), WOOD, COL), box("pool", (1.0, 22.0, 0.05), (8, 3.2, 0.2), WATER, COL),
          plane("lawn", (0, 18, 0.01), (60, 40), (0, 0, 0), tex_or("aerial_grass_rock", (0.25, 0.45, 0.2), 0.25), COL)]
+MULL = flat("mullion", (0.08, 0.08, 0.09), 0.4, 0.3)
+for i in range(9):  # window frames make the glass read as glass
+    parts.append(box(f"mA{i}", (-5.5 + i * 1.0, 26.8, 1.55), (0.07, 0.08, 2.8), MULL, COL))
+for i in range(8):
+    parts.append(box(f"mB{i}", (-1.0 + i * 1.0, 27.8, 4.6), (0.07, 0.08, 2.4), MULL, COL))
+parts += [box("wing", (-8.5, 31, 2.2), (5, 8, 4.4), WOOD, COL), box("coping", (1.0, 22.0, 0.17), (8.4, 3.6, 0.06), WHITE, COL)]
 for p_ in parts:
     p_.parent = VILLA
 PLANTS = [model("potted_plant_01", (x, 25.8, 0.16), 0, 1.1) for x in (-6.5, 5.5)]
@@ -223,7 +229,7 @@ def shot(s, k):
         show("office")
         world_hdri("night", 0.08)
         LNUM.data.body = "10474143.00"[: max(1, int(len("10474143.00") * min(1, t * 1.8)))]
-        return lens_cam((0.12 - t * 0.05, 5.15 + t * 0.1, 1.08), (0.0, 5.86, 0.97), 45, 2.0, (0.0, 5.85, 0.95))
+        return lens_cam((0.1 - t * 0.05, 4.35 + t * 0.15, 1.1), (0.0, 5.86, 0.97), 45, 2.8, (0.0, 5.85, 0.95))
     if s == "F":  # seven months: window light sweeps day → night again and again (time-lapse)
         show("bed")
         balance(10474143.00)
@@ -237,7 +243,7 @@ def shot(s, k):
         world_hdri("golden", 1.0, rot=40)
         if s == "I":
             show("sign")
-        return lens_cam((-4 + t * 2.0, 13.0 + t * 1.0, 4.2), (0.5, 26, 2.0), 24, 8.0, (1, 25, 2))
+        return lens_cam((-3 + t * 2.0, 12.0 + t * 1.0, 6.5), (0.5, 24.5, 1.2), 24, 8.0, (1, 23, 1))
     if s == "H":  # audit: red AUDIT stamp lands on the papers
         show("office")
         show("audit", t > 0.25)
