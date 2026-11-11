@@ -150,7 +150,8 @@ for i in range(9):  # window frames make the glass read as glass
     parts.append(box(f"mA{i}", (-5.5 + i * 1.0, 26.8, 1.55), (0.07, 0.08, 2.8), MULL, COL))
 for i in range(8):
     parts.append(box(f"mB{i}", (-1.0 + i * 1.0, 27.8, 4.6), (0.07, 0.08, 2.4), MULL, COL))
-parts += [box("wing", (-8.5, 31, 2.2), (5, 8, 4.4), WOOD, COL), box("coping", (1.0, 22.0, 0.17), (8.4, 3.6, 0.06), WHITE, COL)]
+parts += [box("wing", (-8.5, 31, 2.2), (5, 8, 4.4), WOOD, COL), box("copeN", (1.0, 23.7, 0.17), (8.4, 0.2, 0.06), WHITE, COL), box("copeS", (1.0, 20.3, 0.17), (8.4, 0.2, 0.06), WHITE, COL),
+          box("copeW", (-3.1, 22.0, 0.17), (0.2, 3.6, 0.06), WHITE, COL), box("copeE", (5.1, 22.0, 0.17), (0.2, 3.6, 0.06), WHITE, COL)]
 for p_ in parts:
     p_.parent = VILLA
 PLANTS = [model("potted_plant_01", (x, 25.8, 0.16), 0, 1.1) for x in (-6.5, 5.5)]
