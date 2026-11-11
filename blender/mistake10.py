@@ -64,19 +64,21 @@ body = box("pbody", (0, 0, 0.0045), (0.075, 0.155, 0.009), flat("pglass", (0.01,
 bev = body.modifiers.new("bev", "BEVEL")
 bev.width, bev.segments = 0.006, 6
 body.parent = PHONE
-SCR = emit("screen", (0.95, 0.96, 1.0), 1.2)
+SCR = emit("screen", (0.95, 0.96, 1.0), 0.55)
 scr = plane("pscreen", (0, 0, 0.0092), (0.068, 0.146), (0, 0, 0), SCR, COL)
 scr.parent = PHONE
-hdr = plane("phead", (0, 0.055, 0.0094), (0.068, 0.036), (0, 0, 0), emit("hdrc", (0.05, 0.35, 0.9), 2.0), COL)
+hdr = plane("phead", (0, 0.055, 0.0094), (0.068, 0.036), (0, 0, 0), emit("hdrc", (0.05, 0.35, 0.9), 0.7), COL)
 hdr.parent = PHONE
-T_INK = emit("ink", (0.02, 0.02, 0.05), 0.2)
-T_WHITE = emit("twhite", (1, 1, 1), 3.0)
-T_GREEN = emit("tgreen", (0.05, 0.75, 0.3), 2.0)
-T_RED = emit("tred", (0.95, 0.12, 0.1), 2.0)
+T_INK = emit("ink", (0.02, 0.02, 0.05), 0.0)
+T_WHITE = emit("twhite", (1, 1, 1), 0.9)
+T_GREEN = emit("tgreen", (0.03, 0.6, 0.25), 0.25)
+T_RED = emit("tred", (0.85, 0.08, 0.06), 0.25)
 APP = text3d("Available balance", (0, 0.058, 0.0096), (0, 0, 0), 0.0065, T_WHITE, COL, extrude=0.0002)
 APP.parent = PHONE
 BAL = text3d("$10,474,143.00", (0, 0.012, 0.0096), (0, 0, 0), 0.0072, T_INK, COL, extrude=0.0002)
 BAL.parent = PHONE
+for _o in (APP, BAL, SUB, LSCR if False else APP):
+    _o.data.bevel_depth = 0.0
 SUB = text3d("Refund received", (0, -0.006, 0.0096), (0, 0, 0), 0.0055, T_GREEN, COL, extrude=0.0002)
 SUB.parent = PHONE
 for i in range(4):  # transaction rows
@@ -91,7 +93,8 @@ PH_LIGHT.parent = PHONE
 
 # ---------------------------------------------------------------- bedroom corner (night)
 ROOM = [plane("floor", (0, 0, 0), (6, 6), (0, 0, 0), tex_or("wood_floor", (0.35, 0.22, 0.14), 0.6), COL),
-        plane("wall", (0, 1.2, 1.5), (6, 3), (R(90), 0, 0), flat("wallc", (0.55, 0.53, 0.5), 0.9), COL)]
+        plane("wall", (0, 1.2, 1.5), (6, 3), (R(90), 0, 0), pbr("wallp", K.MAN["wall"], 0.6, (0.75, 0.72, 0.68)), COL),
+        plane("wall2", (-1.7, 0, 1.5), (6, 3), (R(90), 0, R(90)), pbr("wallp2", K.MAN["wall"], 0.6, (0.7, 0.68, 0.66)), COL)]
 NIGHT = model("ClassicNightstand_01", (0, 0.9, 0), R(0), 0.62)
 CLOCK = model("alarm_clock_01", (0.16, 0.95, 0.62), R(-20), 0.11)
 PILL = model("throw_pillows_01", (-0.75, 0.85, 0.45), R(10), 0.7)
@@ -101,24 +104,31 @@ win_light.data.shape, win_light.data.size, win_light.data.size_y = "RECTANGLE", 
 COL.objects.link(win_light)
 # ---------------------------------------------------------------- office (the typo)
 DESK = model("metal_office_desk", (0, 6, 0), 0, 1.4)
-LAP = model("classic_laptop", (0, 5.95, 0.75), R(180), 0.36)
+LAP = None
+MON = box("monitor", (0, 5.87, 0.98), (0.56, 0.03, 0.34), flat("monb", (0.02, 0.02, 0.02), 0.2, 0.8), COL)
+STAND = box("mstand", (0, 5.9, 0.8), (0.06, 0.06, 0.12), flat("monb2", (0.05, 0.05, 0.05), 0.3), COL)
+KEYS = box("keyboard", (0, 5.62, 0.765), (0.42, 0.14, 0.02), flat("keyb", (0.08, 0.08, 0.09), 0.5), COL)
 LAMP = model("desk_lamp_arm_01", (0.48, 6.15, 0.75), R(200), 0.5)
 PADS = model("office_notepads", (-0.42, 5.9, 0.75), R(15), 0.22)
 BIND = model("binder_notebook", (-0.25, 6.2, 0.75), R(-30), 0.3)
 GAVEL = model("wooden_hammer_01", (0.1, 5.75, 0.8), R(90), 0.3)
-LSCR = text3d("AMOUNT", (0, 0, 0), (0, 0, 0), 0.016, T_INK, COL, extrude=0.0003)
-LNUM = text3d("10474143.00", (0, 0, 0), (0, 0, 0), 0.024, T_RED, COL, extrude=0.0003)
-LFORM = plane("lform", (0, 0, 0), (0.27, 0.16), (0, 0, 0), emit("lformc", (0.95, 0.95, 0.97), 1.6), COL)
+LSCR = text3d("PAYMENT · AMOUNT ($)", (0, 0, 0), (0, 0, 0), 0.028, T_INK, COL, extrude=0.0)
+LNUM = text3d("10474143.00", (0, 0, 0), (0, 0, 0), 0.06, T_RED, COL, extrude=0.0)
+LFORM = plane("lform", (0, 0, 0), (0.52, 0.3), (0, 0, 0), emit("lformc", (0.95, 0.95, 0.97), 0.8), COL)
 for o in (LSCR, LNUM, LFORM):
-    o.location, o.rotation_euler = (0, 5.86, 0.86), (R(75), 0, 0)
-LSCR.location = (-0.07, 5.856, 0.885)
-LNUM.location = (0.02, 5.852, 0.855)
-LFORM.location = (0, 5.86, 0.87)
+    o.rotation_euler = (R(90), 0, 0)
+LFORM.location = (0, 5.853, 0.98)
+LSCR.location = (-0.17, 5.851, 1.04)
+LNUM.location = (0.0, 5.851, 0.94)
+LSCR.data.align_x = "LEFT"
+for _o in (LSCR, LNUM, AUDIT if False else LSCR):
+    _o.data.bevel_depth = 0.0
 office_lamp = bpy.data.objects.new("olamp", bpy.data.lights.new("olamp", "SPOT"))
 office_lamp.data.energy, office_lamp.data.spot_size, office_lamp.data.color = 60, R(70), (1.0, 0.82, 0.6)
 office_lamp.location, office_lamp.rotation_euler = (0.35, 6.0, 1.3), (R(-15), R(15), 0)
 COL.objects.link(office_lamp)
-AUDIT = text3d("AUDIT", (-0.35, 5.9, 0.752), (0, 0, R(12)), 0.07, T_RED, COL, extrude=0.001)
+AUDIT = text3d("AUDIT", (-0.42, 5.88, 0.80), (0, 0, R(12)), 0.06, flat("stampred", (0.75, 0.05, 0.05), 0.7), COL, extrude=0.0)
+AUDIT.data.bevel_depth = 0.0
 SOLD = text3d("SOLD", (0, 0, 0), (R(90), 0, 0), 0.5, T_RED, COL, extrude=0.03)
 
 # ---------------------------------------------------------------- villa (golden hour)
@@ -131,22 +141,23 @@ WARM = emit("interior", (1.0, 0.75, 0.45), 6.0)
 WATER = glass("water", (0.2, 0.65, 0.85), 0.05)
 parts = [box("v1", (0, 30, 1.6), (12, 6, 3.2), WHITE, COL), box("v2", (2, 30.5, 4.6), (8, 5, 2.8), WHITE, COL),
          box("roof1", (0, 29.6, 3.25), (12.8, 7, 0.18), WHITE, COL), box("roof2", (2, 30.2, 6.05), (8.8, 6, 0.18), WOOD, COL),
-         box("glassA", (-1.5, 26.98, 1.55), (7, 0.05, 2.8), GL, COL), box("glowA", (-1.5, 27.3, 1.55), (6.8, 0.05, 2.6), WARM, COL),
-         box("glassB", (2.5, 27.98, 4.6), (6, 0.05, 2.4), GL, COL), box("glowB", (2.5, 28.3, 4.6), (5.8, 0.05, 2.2), WARM, COL),
+         box("glassA", (-1.5, 26.85, 1.55), (8, 0.05, 2.8), GL, COL), box("glowA", (-1.5, 26.93, 1.55), (7.8, 0.04, 2.6), WARM, COL),
+         box("glassB", (2.5, 27.85, 4.6), (7, 0.05, 2.4), GL, COL), box("glowB", (2.5, 27.93, 4.6), (6.8, 0.04, 2.2), WARM, COL),
          box("deck", (0, 23.5, 0.08), (16, 6, 0.16), WOOD, COL), box("pool", (1.0, 22.0, 0.05), (8, 3.2, 0.2), WATER, COL),
          plane("lawn", (0, 18, 0.01), (60, 40), (0, 0, 0), tex_or("aerial_grass_rock", (0.25, 0.45, 0.2), 0.25), COL)]
 for p_ in parts:
     p_.parent = VILLA
 PLANTS = [model("potted_plant_01", (x, 25.8, 0.16), 0, 1.1) for x in (-6.5, 5.5)]
 CHAIRS = model("outdoor_table_chair_set_01", (-4.5, 23.5, 0.16), R(20), 2.2)
-SOLD.location = (4.5, 20.5, 0.6)
-post = box("signpost", (4.5, 20.55, 0.5), (0.08, 0.08, 1.0), WOOD, COL)
-sboard = box("signboard", (4.5, 20.55, 1.15), (1.6, 0.05, 0.7), WHITE, COL)
+post = box("signpost", (-0.5, 17.05, 0.5), (0.08, 0.08, 1.0), WOOD, COL)
+sboard = box("signboard", (-0.5, 17.05, 1.15), (1.6, 0.05, 0.7), WHITE, COL)
 SIGN = [SOLD, post, sboard]
-SOLD.location = (4.5, 20.5, 0.95)
+SOLD.location = (-0.5, 17.0, 0.95)
+SOLD.data.size = 0.42
+SOLD.data.materials[0] = flat("soldred", (0.8, 0.06, 0.05), 0.6)
 
 ALL = {"bed": ROOM + [o for o in (NIGHT, CLOCK, PILL) if o] + [bed, PHONE, win_light],
-       "office": [o for o in (DESK, LAP, LAMP, PADS, BIND) if o] + [LSCR, LNUM, LFORM, office_lamp],
+       "office": [o for o in (DESK, LAMP, PADS, BIND) if o] + [LSCR, LNUM, LFORM, office_lamp, MON, STAND, KEYS],
        "villa": [VILLA] + [o for o in PLANTS + [CHAIRS] if o], "sign": SIGN, "audit": [AUDIT], "gavel": [GAVEL] if GAVEL else []}
 
 
@@ -200,7 +211,7 @@ def shot(s, k):
             balance(100 + (10474143.00 - 100) * min(1, (t * 1.4) ** 2))
         else:  # J: it drains back to zero
             balance(max(0.0, 10474143.00 * (1 - min(1, t * 1.6))), T_RED if t > 0.3 else T_INK, "Funds reversed", T_RED)
-            SCR.node_tree.nodes["Principled BSDF"].inputs["Emission Strength"].default_value = 1.2 - 0.8 * t
+            SCR.node_tree.nodes["Principled BSDF"].inputs["Emission Strength"].default_value = 0.55 - 0.35 * t
         far = 0.42 - 0.12 * t if s != "K" else 0.30 + 0.12 * t  # K pulls back out to A's first frame (loop)
         return lens_cam((PH_TOP.x + 0.05, PH_TOP.y - far, PH_TOP.z + far * 0.85), PH_TOP + Vector((0, 0.01, 0)), 70, 1.4, PH_TOP)
     if s == "B":  # a real bedroom at night, wide
@@ -212,7 +223,7 @@ def shot(s, k):
         show("office")
         world_hdri("night", 0.08)
         LNUM.data.body = "10474143.00"[: max(1, int(len("10474143.00") * min(1, t * 1.8)))]
-        return lens_cam((0.15 - t * 0.05, 5.3, 1.05), (0.0, 5.86, 0.86), 55, 1.6, (0.02, 5.85, 0.86))
+        return lens_cam((0.12 - t * 0.05, 5.15 + t * 0.1, 1.08), (0.0, 5.86, 0.97), 45, 2.0, (0.0, 5.85, 0.95))
     if s == "F":  # seven months: window light sweeps day → night again and again (time-lapse)
         show("bed")
         balance(10474143.00)
@@ -226,13 +237,14 @@ def shot(s, k):
         world_hdri("golden", 1.0, rot=40)
         if s == "I":
             show("sign")
-        return lens_cam((-6 + t * 2.5, 12.5 + t * 1.0, 2.0), (1, 27, 2.5), 28, 5.6, (2, 26, 2))
+        return lens_cam((-4 + t * 2.0, 13.0 + t * 1.0, 4.2), (0.5, 26, 2.0), 24, 8.0, (1, 25, 2))
     if s == "H":  # audit: red AUDIT stamp lands on the papers
         show("office")
         show("audit", t > 0.25)
-        world_hdri("night", 0.08)
+        world_hdri("night", 0.25)
+        office_lamp.data.energy = 120
         AUDIT.scale = [max(1.0, 1.6 - (t - 0.25) * 6)] * 3
-        return lens_cam((-0.3, 5.55, 1.35), (-0.3, 5.92, 0.75), 45, 2.2, (-0.32, 5.9, 0.76))
+        return lens_cam((-0.42, 5.7, 1.25), (-0.42, 5.9, 0.76), 40, 2.8, (-0.42, 5.88, 0.78))
     raise SystemExit(f"unknown shot {s}")
 
 
