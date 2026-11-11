@@ -33,7 +33,7 @@ export const V6Root: React.FC = () => (
       <Composition key={`map-${p.id}`} id={`Map-${p.id}`} component={MapShort} defaultProps={{plan: p}} width={p.w ?? 1080} height={p.h ?? 1920} fps={30} durationInFrames={p.frames} />
     ))}
     {(SAL_PLANS as unknown as SalPlan[]).map((p) => (
-      <Composition key={`sal-${p.id}`} id={`Sal-${p.id}`} component={({phone: PhoneShort, mini: ClipShort, ink: ClipShort} as Record<string, React.FC<any>>)[(p as any).comp] ?? SalShort} defaultProps={{plan: p}} width={p.w ?? 1080} height={p.h ?? 1920} fps={30} durationInFrames={p.frames} />
+      <Composition key={`sal-${p.id}`} id={`Sal-${p.id}`} component={({phone: PhoneShort, mini: ClipShort, ink: ClipShort, real: ClipShort} as Record<string, React.FC<any>>)[(p as any).comp] ?? SalShort} defaultProps={{plan: p}} width={p.w ?? 1080} height={p.h ?? 1920} fps={30} durationInFrames={p.frames} />
     ))}
     <Composition id="Ea1Full" component={Ea1Full} width={1920} height={1080} fps={30} durationInFrames={EA1_FULL_FRAMES} />
   </>

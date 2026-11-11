@@ -67,6 +67,9 @@ def texture(out, tid, res="1k"):
 def episode_ids(ep):
     """autopilot: every Poly Haven id named in pipeline/auto/<ep>.json shots (sky, ground, room, props, hero)"""
     p = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "pipeline", "auto", f"{ep}.json")
+    alt = os.path.join(os.path.dirname(os.path.abspath(__file__)), f"{ep}_assets.json")  # Blender Shorts (same "shots" format)
+    if not os.path.exists(p):
+        p = alt
     if not os.path.exists(p):
         return set(), set(), set()
     m, h, t = set(), set(), set()

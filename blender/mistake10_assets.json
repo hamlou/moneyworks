@@ -1,0 +1,5 @@
+{"shots": {
+ "night": {"props": ["ClassicNightstand_01", "alarm_clock_01", "throw_pillows_01"], "room": "wood_floor"},
+ "office": {"props": ["metal_office_desk", "classic_laptop", "desk_lamp_arm_01", "office_notepads", "binder_notebook", "wooden_hammer_01"]},
+ "villa": {"props": ["potted_plant_01", "outdoor_table_chair_set_01"], "sky": "kloofendal_48d_partly_cloudy_puresky", "ground": "aerial_grass_rock"}
+}}

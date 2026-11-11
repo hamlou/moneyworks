@@ -1,0 +1,354 @@
+{
+ "id": "mistake10",
+ "comp": "real",
+ "tempo": 1.08,
+ "planned_beat": "b10",
+ "lens": true,
+ "beats": [
+  {
+   "scene": "A",
+   "music": "investigations",
+   "caps": [
+    {
+     "on": "what",
+     "t": "$10,000,000 BY MISTAKE?"
+    }
+   ],
+   "cues": [
+    {
+     "k": "a_ten",
+     "on": "ten",
+     "sfx": [
+      [
+       0,
+       "ea1/notif",
+       0.55
+      ],
+      [
+       2,
+       "ea1/roll33",
+       0.35
+      ]
+     ]
+    }
+   ],
+   "sfx0": [
+    [
+     0,
+     "ea1/k_stop",
+     0.4
+    ]
+   ]
+  },
+  {
+   "scene": "B",
+   "music": "investigations",
+   "caps": [
+    {
+     "on": "australia",
+     "t": "AUSTRALIA · 2021"
+    }
+   ],
+   "cues": [
+    {
+     "k": "b_really",
+     "on": "really",
+     "sfx": [
+      [
+       0,
+       "ea1/k_point",
+       0.45
+      ]
+     ]
+    }
+   ],
+   "sfx0": [
+    [
+     0,
+     "ea1/steps",
+     0.25
+    ]
+   ]
+  },
+  {
+   "scene": "C",
+   "music": "investigations",
+   "caps": [
+    {
+     "on": "hundred",
+     "t": "OWED: $100"
+    }
+   ],
+   "cues": [
+    {
+     "k": "c_refund",
+     "on": "refund",
+     "sfx": [
+      [
+       0,
+       "ea1/notif",
+       0.5
+      ]
+     ]
+    }
+   ],
+   "sfx0": [
+    [
+     0,
+     "ea1/photo_slide",
+     0.35
+    ]
+   ]
+  },
+  {
+   "scene": "D",
+   "music": "investigations",
+   "caps": [
+    {
+     "on": "account",
+     "t": "ACCOUNT NUMBER → AMOUNT BOX"
+    }
+   ],
+   "cues": [
+    {
+     "k": "d_typed",
+     "on": "typed",
+     "sfx": [
+      [
+       0,
+       "ea1/vote_tick",
+       0.35
+      ],
+      [
+       3,
+       "ea1/vote_tick",
+       0.3
+      ],
+      [
+       6,
+       "ea1/vote_tick",
+       0.3
+      ],
+      [
+       9,
+       "ea1/vote_tick",
+       0.3
+      ],
+      [
+       12,
+       "ea1/vote_tick",
+       0.3
+      ]
+     ]
+    }
+   ],
+   "sfx0": []
+  },
+  {
+   "scene": "E",
+   "music": "volatile_reaction",
+   "caps": [
+    {
+     "on": "half",
+     "t": "$10,474,143"
+    }
+   ],
+   "cues": [
+    {
+     "k": "e_half",
+     "on": "half",
+     "sfx": [
+      [
+       0,
+       "ea1/roll33",
+       0.5
+      ],
+      [
+       14,
+       "ea1/k_boom",
+       0.5
+      ],
+      [
+       16,
+       "ea1/cash_rain",
+       0.4
+      ]
+     ]
+    }
+   ],
+   "sfx0": []
+  },
+  {
+   "scene": "F",
+   "music": "unanswered_questions",
+   "caps": [
+    {
+     "on": "seven",
+     "t": "7 MONTHS. NOBODY NOTICED."
+    }
+   ],
+   "cues": [
+    {
+     "k": "f_seven",
+     "on": "seven",
+     "sfx": [
+      [
+       0,
+       "ea1/k_stop",
+       0.4
+      ]
+     ]
+    }
+   ],
+   "sfx0": [
+    [
+     0,
+     "ea1/crickets",
+     0.3
+    ]
+   ]
+  },
+  {
+   "scene": "G",
+   "music": "volatile_reaction",
+   "caps": [
+    {
+     "on": "mansion",
+     "t": "GYM + CINEMA MANSION"
+    }
+   ],
+   "cues": [
+    {
+     "k": "g_mansion",
+     "on": "mansion",
+     "sfx": [
+      [
+       0,
+       "ea1/chair_whoosh",
+       0.45
+      ],
+      [
+       2,
+       "ea1/k_slam",
+       0.45
+      ]
+     ]
+    }
+   ],
+   "sfx0": []
+  },
+  {
+   "scene": "H",
+   "music": "unanswered_questions",
+   "caps": [
+    {
+     "on": "audit",
+     "t": "AUDIT"
+    }
+   ],
+   "cues": [
+    {
+     "k": "h_audit",
+     "on": "audit",
+     "sfx": [
+      [
+       0,
+       "ea1/stamp_un",
+       0.55
+      ]
+     ]
+    }
+   ],
+   "sfx0": [
+    [
+     0,
+     "ea1/co_paper",
+     0.35
+    ]
+   ]
+  },
+  {
+   "scene": "I",
+   "music": "unanswered_questions",
+   "caps": [
+    {
+     "on": "back",
+     "t": "PAY IT ALL BACK + INTEREST"
+    }
+   ],
+   "cues": [
+    {
+     "k": "i_court",
+     "on": "court",
+     "sfx": [
+      [
+       0,
+       "ea1/gavel",
+       0.6
+      ]
+     ]
+    },
+    {
+     "k": "i_sold",
+     "on": "sold",
+     "sfx": [
+      [
+       0,
+       "ea1/k_slam",
+       0.5
+      ]
+     ]
+    }
+   ],
+   "sfx0": []
+  },
+  {
+   "scene": "J",
+   "music": null,
+   "caps": [
+    {
+     "on": "never",
+     "t": "NEVER YOURS"
+    }
+   ],
+   "cues": [
+    {
+     "k": "j_never",
+     "on": "never",
+     "sfx": [
+      [
+       0,
+       "ea1/deflate",
+       0.5
+      ]
+     ]
+    }
+   ],
+   "sfx0": []
+  },
+  {
+   "scene": "K",
+   "music": "investigations",
+   "caps": [
+    {
+     "on": "ask",
+     "t": "$10,000,000 BY MISTAKE?"
+    }
+   ],
+   "cues": [
+    {
+     "k": "k_ask",
+     "on": "ask",
+     "sfx": [
+      [
+       0,
+       "ea1/notif",
+       0.45
+      ]
+     ]
+    }
+   ],
+   "sfx0": []
+  }
+ ]
+}

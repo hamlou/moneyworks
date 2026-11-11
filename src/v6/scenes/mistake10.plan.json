@@ -1,0 +1,426 @@
+{
+ "id": "mistake10",
+ "comp": "real",
+ "w": 1080,
+ "h": 1920,
+ "frames": 802,
+ "voice": "mistake10/voice.flac",
+ "beats": [
+  {
+   "id": "b01",
+   "from": 0,
+   "to": 86,
+   "say": "What if you opened your bank app and saw ten million dollars?",
+   "text": null,
+   "scene": "A",
+   "dave": "talk",
+   "fx": [],
+   "highlight": [],
+   "focus": "",
+   "style": "neutral",
+   "caps": [
+    {
+     "at": 0,
+     "t": "$10,000,000 BY MISTAKE?"
+    }
+   ]
+  },
+  {
+   "id": "b02",
+   "from": 86,
+   "to": 152,
+   "say": "Because that really happened to a woman in Australia.",
+   "text": null,
+   "scene": "B",
+   "dave": "talk",
+   "fx": [],
+   "highlight": [],
+   "focus": "",
+   "style": "neutral",
+   "caps": [
+    {
+     "at": 125,
+     "t": "AUSTRALIA \u00b7 2021"
+    }
+   ]
+  },
+  {
+   "id": "b03",
+   "from": 152,
+   "to": 227,
+   "say": "A crypto company owed her a one hundred dollar refund.",
+   "text": null,
+   "scene": "C",
+   "dave": "talk",
+   "fx": [],
+   "highlight": [],
+   "focus": "",
+   "style": "neutral",
+   "caps": [
+    {
+     "at": 186,
+     "t": "OWED: $100"
+    }
+   ]
+  },
+  {
+   "id": "b04",
+   "from": 227,
+   "to": 308,
+   "say": "But a worker typed her account number into the money box.",
+   "text": null,
+   "scene": "D",
+   "dave": "talk",
+   "fx": [],
+   "highlight": [],
+   "focus": "",
+   "style": "neutral",
+   "caps": [
+    {
+     "at": 250,
+     "t": "ACCOUNT NUMBER \u2192 AMOUNT BOX"
+    }
+   ]
+  },
+  {
+   "id": "b05",
+   "from": 308,
+   "to": 388,
+   "say": "So she got ten and a half million dollars.",
+   "text": null,
+   "scene": "E",
+   "dave": "talk",
+   "fx": [],
+   "highlight": [],
+   "focus": "",
+   "style": "neutral",
+   "caps": [
+    {
+     "at": 333,
+     "t": "$10,474,143"
+    }
+   ]
+  },
+  {
+   "id": "b06",
+   "from": 388,
+   "to": 448,
+   "say": "And nobody noticed for seven whole months.",
+   "text": null,
+   "scene": "F",
+   "dave": "talk",
+   "fx": [],
+   "highlight": [],
+   "focus": "",
+   "style": "neutral",
+   "caps": [
+    {
+     "at": 411,
+     "t": "7 MONTHS. NOBODY NOTICED."
+    }
+   ]
+  },
+  {
+   "id": "b07",
+   "from": 448,
+   "to": 521,
+   "say": "So she bought a mansion with a gym and a cinema.",
+   "text": null,
+   "scene": "G",
+   "dave": "talk",
+   "fx": [],
+   "highlight": [],
+   "focus": "",
+   "style": "neutral",
+   "caps": [
+    {
+     "at": 463,
+     "t": "GYM + CINEMA MANSION"
+    }
+   ]
+  },
+  {
+   "id": "b08",
+   "from": 521,
+   "to": 568,
+   "say": "But then an audit found the mistake.",
+   "text": null,
+   "scene": "H",
+   "dave": "talk",
+   "fx": [],
+   "highlight": [],
+   "focus": "",
+   "style": "neutral",
+   "caps": [
+    {
+     "at": 528,
+     "t": "AUDIT"
+    }
+   ]
+  },
+  {
+   "id": "b09",
+   "from": 568,
+   "to": 652,
+   "say": "And the court made her pay it all back with interest and they sold the house.",
+   "text": null,
+   "scene": "I",
+   "dave": "talk",
+   "fx": [],
+   "highlight": [],
+   "focus": "",
+   "style": "neutral",
+   "caps": [
+    {
+     "at": 595,
+     "t": "PAY IT ALL BACK + INTEREST"
+    }
+   ]
+  },
+  {
+   "id": "b10",
+   "from": 652,
+   "to": 738,
+   "say": "Because money that lands by mistake is never yours.",
+   "text": null,
+   "scene": "J",
+   "dave": "talk",
+   "fx": [],
+   "highlight": [],
+   "focus": "",
+   "style": "neutral",
+   "caps": [
+    {
+     "at": 703,
+     "t": "NEVER YOURS"
+    }
+   ]
+  },
+  {
+   "id": "b11",
+   "from": 738,
+   "to": 802,
+   "say": "So if it ever happens to you just ask yourself",
+   "text": null,
+   "scene": "K",
+   "dave": "talk",
+   "fx": [],
+   "highlight": [],
+   "focus": "",
+   "style": "neutral",
+   "caps": [
+    {
+     "at": 770,
+     "t": "$10,000,000 BY MISTAKE?"
+    }
+   ]
+  }
+ ],
+ "cues": {
+  "a_ten": 36,
+  "b_really": 95,
+  "c_refund": 202,
+  "d_typed": 235,
+  "e_half": 333,
+  "f_seven": 411,
+  "g_mansion": 463,
+  "h_audit": 528,
+  "i_court": 571,
+  "i_sold": 621,
+  "j_never": 703,
+  "k_ask": 770
+ },
+ "music": [
+  {
+   "src": "investigations",
+   "from": 0,
+   "to": 308,
+   "v": 0.15,
+   "off": 0
+  },
+  {
+   "src": "volatile_reaction",
+   "from": 308,
+   "to": 388,
+   "v": 0.15,
+   "off": 0
+  },
+  {
+   "src": "unanswered_questions",
+   "from": 388,
+   "to": 448,
+   "v": 0.15,
+   "off": 0
+  },
+  {
+   "src": "volatile_reaction",
+   "from": 448,
+   "to": 521,
+   "v": 0.15,
+   "off": 0
+  },
+  {
+   "src": "unanswered_questions",
+   "from": 521,
+   "to": 643,
+   "v": 0.15,
+   "off": 0
+  },
+  {
+   "src": "investigations",
+   "from": 738,
+   "to": 802,
+   "v": 0.15,
+   "off": 0
+  }
+ ],
+ "sfx": [
+  {
+   "at": 0,
+   "src": "ea1/k_stop",
+   "v": 0.288
+  },
+  {
+   "at": 36,
+   "src": "ea1/notif",
+   "v": 0.396
+  },
+  {
+   "at": 38,
+   "src": "ea1/roll33",
+   "v": 0.252
+  },
+  {
+   "at": 86,
+   "src": "ea1/steps",
+   "v": 0.18
+  },
+  {
+   "at": 95,
+   "src": "ea1/k_point",
+   "v": 0.324
+  },
+  {
+   "at": 152,
+   "src": "ea1/photo_slide",
+   "v": 0.252
+  },
+  {
+   "at": 202,
+   "src": "ea1/notif",
+   "v": 0.36
+  },
+  {
+   "at": 235,
+   "src": "ea1/vote_tick",
+   "v": 0.252
+  },
+  {
+   "at": 238,
+   "src": "ea1/vote_tick",
+   "v": 0.216
+  },
+  {
+   "at": 241,
+   "src": "ea1/vote_tick",
+   "v": 0.216
+  },
+  {
+   "at": 244,
+   "src": "ea1/vote_tick",
+   "v": 0.216
+  },
+  {
+   "at": 247,
+   "src": "ea1/vote_tick",
+   "v": 0.216
+  },
+  {
+   "at": 333,
+   "src": "ea1/roll33",
+   "v": 0.36
+  },
+  {
+   "at": 347,
+   "src": "ea1/k_boom",
+   "v": 0.36
+  },
+  {
+   "at": 349,
+   "src": "ea1/cash_rain",
+   "v": 0.288
+  },
+  {
+   "at": 388,
+   "src": "ea1/crickets",
+   "v": 0.216
+  },
+  {
+   "at": 411,
+   "src": "ea1/k_stop",
+   "v": 0.288
+  },
+  {
+   "at": 463,
+   "src": "ea1/chair_whoosh",
+   "v": 0.324
+  },
+  {
+   "at": 465,
+   "src": "ea1/k_slam",
+   "v": 0.324
+  },
+  {
+   "at": 521,
+   "src": "ea1/co_paper",
+   "v": 0.252
+  },
+  {
+   "at": 528,
+   "src": "ea1/stamp_un",
+   "v": 0.396
+  },
+  {
+   "at": 571,
+   "src": "ea1/gavel",
+   "v": 0.432
+  },
+  {
+   "at": 621,
+   "src": "ea1/k_slam",
+   "v": 0.36
+  },
+  {
+   "at": 703,
+   "src": "ea1/deflate",
+   "v": 0.36
+  },
+  {
+   "at": 770,
+   "src": "ea1/notif",
+   "v": 0.324
+  }
+ ],
+ "dave": {
+  "point": {
+   "src": "usa30/dave_point.webm",
+   "kind": "webm",
+   "len": 60
+  },
+  "shrug": {
+   "src": "usa30/dave_shrug.webm",
+   "kind": "webm",
+   "len": 60
+  },
+  "talk": {
+   "src": "usa30/dave_talk.webm",
+   "kind": "webm",
+   "len": 60
+  },
+  "worried": {
+   "src": "usa30/dave_worried.webm",
+   "kind": "webm",
+   "len": 60
+  }
+ }
+}
