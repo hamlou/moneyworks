@@ -90,6 +90,7 @@ One TRUE money story told like a heist or a collapse: who, how much, minute by m
 
 ### 5. Commands (all in the `moneyworks` folder)
 ```
+py tools/docwrite.py <id> "<the story in one line>"   # AUTOPILOT WRITER (free Gemini, no Claude): researches + writes the spec, loops on check until SPEC OK
 py tools/doc.py check <id>      # fix every ✗ until SPEC OK
 py tools/doc.py images <id>     # the stills to make + the exact Gemini prompt for each → save as public/<id>/<file>
 py tools/doc.py voice <id>      # writes pipeline/episodes/<id>.json → push (py tools/apipush.py "msg" <files>) → voice.yml voices it
