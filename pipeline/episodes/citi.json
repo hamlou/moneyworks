@@ -1,0 +1,96 @@
+{
+ "id": "citi",
+ "title": "How Citibank Lost $900,000,000 With One Click",
+ "style": "doc",
+ "voice": "chatterbox",
+ "cb": {
+  "cfg": 0.3,
+  "exag": 0.45
+ },
+ "beats": [
+  {
+   "id": "b001",
+   "src": "S1",
+   "text": "On a quiet Tuesday evening a Citibank employee clicks a button to send a routine payment.",
+   "pause": 0.25
+  },
+  {
+   "id": "b002",
+   "src": "S1",
+   "text": "It should be about eight million dollars.",
+   "pause": 0.5
+  },
+  {
+   "id": "b003",
+   "src": "S1",
+   "text": "Instead the bank wires out almost nine hundred million dollars of its own money.",
+   "pause": 0.5
+  },
+  {
+   "id": "b004",
+   "src": "",
+   "text": "Nobody hacked anything and nobody stole a password.",
+   "pause": 0.5
+  },
+  {
+   "id": "b005",
+   "src": "S1",
+   "text": "The bank meant to send this much.",
+   "pause": 0.25
+  },
+  {
+   "id": "b006",
+   "src": "S1",
+   "text": "And it sent this much which is more than one hundred times too much.",
+   "pause": 0.5
+  },
+  {
+   "id": "b007",
+   "src": "S1",
+   "text": "A federal judge would later call it one of the biggest blunders in banking history.",
+   "pause": 0.5
+  },
+  {
+   "id": "b008",
+   "src": "",
+   "text": "The payment leaves at five forty five.",
+   "pause": 0.25
+  },
+  {
+   "id": "b009",
+   "src": "",
+   "text": "Nobody notices until the next morning.",
+   "pause": 0.25
+  },
+  {
+   "id": "b010",
+   "src": "S1",
+   "text": "The bank asks for the money back and some of the lenders simply say no.",
+   "pause": 0.5
+  },
+  {
+   "id": "b011",
+   "src": "S1",
+   "text": "Almost nine hundred million dollars went out.",
+   "pause": 0.25
+  },
+  {
+   "id": "b012",
+   "src": "S1",
+   "text": "And about half a billion of it did not come back.",
+   "pause": 0.5
+  },
+  {
+   "id": "b013",
+   "src": "",
+   "text": "So this is the story of the click and of who kept the money and of what the judge decided.",
+   "pause": 0.5
+  },
+  {
+   "id": "b014",
+   "src": "",
+   "text": "It starts at five forty five in the evening.",
+   "pause": 0.5
+  }
+ ]
+}
