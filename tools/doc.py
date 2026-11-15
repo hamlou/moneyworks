@@ -404,7 +404,8 @@ def stills(sp, frames):
 
 def render(sp, parts):
     Path("pipeline/split").mkdir(parents=True, exist_ok=True)
-    Path("pipeline/split/RUN").write_text(f"Doc-{sp['id']} {parts} doc\n", encoding="utf8")
+    import time  # the third word makes every request different: an unchanged file starts no GitHub run
+    Path("pipeline/split/RUN").write_text(f"Doc-{sp['id']} {parts} {int(time.time())}\n", encoding="utf8")
     print(f"wrote pipeline/split/RUN = Doc-{sp['id']} {parts} — commit + push (tools/apipush.py if git push fails); v6split.yml renders it")
 
 
