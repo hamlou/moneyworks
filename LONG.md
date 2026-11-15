@@ -37,11 +37,15 @@
 ### 1. The format in one paragraph
 One TRUE money story told like a heist or a collapse: who, how much, minute by minute, who kept the money, what happened after. Narrator (not Dave, no character on screen). Dark graded cinematic stills, cream paper cards, receipts, serif numbers + mono caps labels, stat counters, timeline tiles, real quotes, film grain. Every shot adds things ON the spoken word. 8–15 min.
 
-### 2. Topic + title (decides the views)
-- Before any topic: run the `yt-viral` skill (what beat its own channel in the last 60 days). Propose 3, owner picks 1.
-- Story must have: ONE huge exact number, a named real company/person, a ticking moment (a date + a time), a twist, an ending. Fresh news beats old news (Gloam's hit was 2 weeks after the event).
-- Title formula that worked: "How <Name> Lost $<exact number> in One <Night/Click/Day>". ≤ 60 chars. If the title has "N Minutes", the video must be N minutes (`build` refuses otherwise).
-- Never: textbook topics ("how X works"), personal-finance chores, politics names, a title the video does not pay off.
+### 2. TOPIC + TITLE + THUMBNAIL = the package (decides the views; `check` refuses a spec without measured proof — owner 15 Nov: "make sure even a weaker model picks a good topic, title and thumbnail prompt")
+**Never choose a topic by taste. Follow these steps in order:**
+1. `py tools/doctopic.py scan` → `pipeline/doc/outliers.json` = videos that beat their OWN channel ≥ 4x (channels: `pipeline/doc/channels.txt`).
+2. Pick a topic of the SAME kind as one of those outliers, and EVERGREEN (still true in 3 years: how a scam / trick / system works, a famous collapse). Fresh news may be the opening case, never the whole topic.
+3. `py tools/doctopic.py demand "<how a viewer would search it>"` → must print PASS (≥ 5 results over 100k views and ≥ 1 over 1M). FAIL = pick another topic. No exceptions.
+4. Put the proof in the spec: `"topic": {"evergreen": true, "query": "<the same query>", "proof": ["<outlier url>", …]}`.
+5. Title: start with How / Why / What / Every / The; has a number; ≤ 60 chars; no bait words, no politics; true to the video. Winning forms: "How <Name> Lost $<N> in One Night" · "How <X> Actually Works in <N> Minutes" · "Why $<N> Vanishes Every Year" · "Every <X> Explained in <N> Minutes". Add `"alt_titles"`: 2 more with a different angle (owner tests 3).
+6. Thumbnail in the spec: `"thumb": {"words": "≤ 4 words, not the title's words", "space": "left|right", "copied_from": "<winning thumbnail whose layout we copy>", "prompt": "…"}`. Prompt recipe: ONE big object that IS the topic (never a collage), dark background, one hard light, the object on one side and empty dark space on the other, no people's faces, "no text", "16:9". Owner makes it in Gemini → `public/<id>/thumb.jpg` → `py tools/doc.py thumb <id>` adds the words in code and makes 3 versions + a phone-size test.
+- Never: textbook topics with no outlier proof, personal-finance chores, politics names, a title the video does not pay off, text made by the image model.
 
 ### 3. HOOK + RETENTION RULES (owner 15 Nov: "the hook is very bad… too slow… the words don't match the visuals… the viewer must stay till the end") — `check`/`build` enforce them
 **Why people leave / stay (what we build on):** a viewer decides in the first 5 s whether the video is what the title promised; stays while a question is open; leaves the moment nothing new happens or a picture does not match the words. So: confirm the title at once, open a question before answering, and never let 4 s pass without something new.
@@ -100,10 +104,10 @@ py tools/doc.py render <id>     # writes pipeline/split/RUN → push → v6split
 ```
 Quality gates in `check`/`build` (never weaken them to get a pass): the §3 hook blueprint and pace numbers, ≥ 30 shots, ≥ 6 shot kinds, never 3 of a kind in a row, 25–55 % cinematic stills, ≤ 60 words per shot, every figure sourced, true title length. The audio and the timing always come from the same tempo (15 Nov bug: pictures ran 7 s late).
 
-### 6. Stills + thumbnail (owner makes pictures in Gemini Pro)
-- Stills: one per image scene, 16:9, dark cinematic 3D-render look, ONE object or place, no text, no real person's face. Until a still exists a grey placeholder is used; `build` refuses a full video with placeholders.
+### 6. Stills (owner makes pictures in Gemini Pro — images only, no video clips)
+- One per image scene, 16:9, dark cinematic 3D-render look, ONE object or place, no text, no real person's face. `py tools/doc.py images <id>` prints every prompt. Until a still exists a grey placeholder is used; `build` refuses a full video with placeholders.
 - Real photos only from Wikimedia/Pexels with the licence in the description ([LICENSES]). No other creators' clips, no news-channel footage.
-- Thumbnail (ban of 30 Oct lifted 14 Nov — "the thumbnail is the most important part"): Claude gives ONE idea copied from a proven outlier layout + ≤ 4 words; owner makes the picture; 3 versions go to YouTube Test & compare.
+- Thumbnail = §2 step 6.
 
 ### 7. After upload
 - 48 h and 7 days: impressions, CTR, average view duration, retention graph → `analytics/LOG.md`. One line of "why" per video; rules change only when 3+ videos show the same thing.

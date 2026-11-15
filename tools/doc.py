@@ -3,6 +3,7 @@
   py tools/doc.py images <id>           lists the stills still missing + the exact prompt for each (owner makes them in Gemini)
   py tools/doc.py voice <id>            writes pipeline/episodes/<id>.json (push it → voice.yml voices it on GitHub)
   py tools/doc.py build <id> [--fake]   voice timing → src/v6/doc/<id>.plan.json + src/v6/docEps.ts (composition Doc-<id>); --fake = no voice yet
+  py tools/doc.py thumb <id>            public/<id>/thumb.jpg (owner's picture from thumb.prompt) + the words in code → 3 versions + phone test
   py tools/doc.py stills <id> [frames]  renders preview frames to videos/<id>/preview/ (light, runs on the owner's PC)
   py tools/doc.py render <id> [parts]   writes pipeline/split/RUN (push it → v6split.yml renders on GitHub)
 Spec = pipeline/doc/<id>.json (format + rules: LONG.md [DOC])."""
@@ -60,6 +61,109 @@ def images(sp):
                 out.append((f, sc.get("prompt", ""), i + 1, p.exists() and not Path(str(p) + ".placeholder").exists()))
     return out
 
+BAN_TITLE = ["you need to watch", "watch this", "you won't believe", "shocking", "must see", "the truth about", "exposed", "mind blowing", "insane", "trump", "biden", "president"]
+
+
+def package_gates(sp, E):
+    """TOPIC + TITLE + THUMBNAIL gates (LONG.md [DOC] §2, §6). The proof must come from tools/doctopic.py, so nobody can invent it."""
+    eid, title = sp.get("id", "?"), sp.get("title", "")
+    # --- title
+    for t in [title] + list(sp.get("alt_titles", [])):
+        if len(t) > 60:
+            E.append(f"title '{t[:30]}…': {len(t)} characters — max 60")
+        if not re.search(r"\d", t):
+            E.append(f"title '{t[:40]}': needs a number (the amount, or 'in 9 Minutes') — numbers get the click")
+        if any(b in t.lower() for b in BAN_TITLE):
+            E.append(f"title '{t[:40]}': uses a banned bait/politics phrase {[b for b in BAN_TITLE if b in t.lower()]}")
+        if sum(1 for w in t.split() if len(w) > 3 and w.isupper()) > 1:
+            E.append(f"title '{t[:40]}': more than one ALL-CAPS word")
+    if len(sp.get("alt_titles", [])) < 2:
+        E.append('alt_titles: give 2 more titles (different angle each) — the owner tests 3 in YouTube "Test & compare"')
+    if not re.match(r"(how|why|what|every|the)\b", title, re.I):
+        E.append("title: start with How / Why / What / Every / The (the forms that won: 'How X Lost $N in One Night', 'How X Actually Works in N Minutes', 'Why $N Vanishes Every Year')")
+    # --- topic proof
+    tp = sp.get("topic", {})
+    try:
+        outl = {o["url"]: o for o in json.loads(Path("pipeline/doc/outliers.json").read_text(encoding="utf8"))}
+        dem = json.loads(Path("pipeline/doc/demand.json").read_text(encoding="utf8"))
+    except Exception:
+        outl, dem = {}, {}
+        E.append("topic: no proof files — run: py tools/doctopic.py scan   and   py tools/doctopic.py demand \"<how a viewer would search this topic>\"")
+    good = [u for u in tp.get("proof", []) if u in outl]
+    if outl and len(good) < 1:
+        E.append("topic.proof: list ≥ 1 url of a video from pipeline/doc/outliers.json that is the SAME kind of topic (a video that beat its own channel ≥ 4x). No such video = pick another topic")
+    d = dem.get(str(tp.get("query", "")).lower().strip())
+    if dem and not d:
+        E.append("topic.query: run py tools/doctopic.py demand \"<query>\" first and put the same query here")
+    elif d and not d.get("pass"):
+        E.append(f"topic.query '{tp.get('query')}': demand FAILED ({d['over100k']} videos over 100k, {d['over1m']} over 1M) — people are not looking for this, pick another topic")
+    if tp.get("evergreen") is not True:
+        E.append('topic.evergreen: must be true — the video must still make sense in 3 years (owner 15 Nov: "a viral topic that is not consumable"). News can be the opening case, never the whole topic')
+    # --- thumbnail
+    th = sp.get("thumb", {})
+    words = str(th.get("words", "")).split()
+    if not 1 <= len(words) <= 4 or len(th.get("words", "")) > 22:
+        E.append("thumb.words: 1-4 words, max 22 characters (they are added in code by 'doc.py thumb', never by the image model)")
+    if words and set(w.lower().strip("$?!.,") for w in words) <= set(w.lower().strip("$?!.,:") for w in title.split()):
+        E.append("thumb.words: do not repeat the title — the thumbnail adds a second hook (the amount, the verdict, the question)")
+    pr = th.get("prompt", "")
+    if len(pr) < 150 or "no text" not in pr.lower() or "16:9" not in pr:
+        E.append('thumb.prompt: ≥ 150 characters for the image model, must say "no text" and "16:9": ONE big object, dark background, one light, empty space on one side for the words, no real person')
+    if th.get("space") not in ("left", "right"):
+        E.append('thumb.space: "left" or "right" = the empty side of the picture where the words go')
+    if not th.get("copied_from"):
+        E.append("thumb.copied_from: name the winning thumbnail whose LAYOUT this copies (title + channel) — never invent a layout")
+
+
+def thumb(sp):
+    """3 thumbnail versions = the owner's picture (public/<id>/thumb.jpg, made from thumb.prompt) + the words set in code."""
+    from PIL import Image, ImageDraw, ImageFont, ImageEnhance
+    eid, th = sp["id"], sp["thumb"]
+    src = Path(f"public/{eid}/thumb.jpg")
+    if not src.exists():
+        sys.exit(f"✗ make the picture first with this prompt, save it as {src}:\n\n{th['prompt']}\n")
+    im = Image.open(src).convert("RGB")
+    k = max(1280 / im.width, 720 / im.height)
+    im = im.resize((round(im.width * k), round(im.height * k)))
+    im = im.crop(((im.width - 1280) // 2, (im.height - 720) // 2, (im.width - 1280) // 2 + 1280, (im.height - 720) // 2 + 720))
+    im = ImageEnhance.Contrast(ImageEnhance.Color(im).enhance(1.15)).enhance(1.12)
+    fp = next((f for f in ("C:/Windows/Fonts/impact.ttf", "C:/Windows/Fonts/arialbd.ttf", "/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf") if Path(f).exists()), None)
+    words = th["words"].upper().split()
+    lines = [" ".join(words[:len(words) // 2 + len(words) % 2]), " ".join(words[len(words) // 2 + len(words) % 2:])] if len(words) > 1 else [words[0]]
+    lines = [l for l in lines if l]
+    out = Path(f"videos/{eid}")
+    out.mkdir(parents=True, exist_ok=True)
+    made = []
+    for name, c1, c2 in (("A", (255, 255, 255), (255, 214, 10)), ("B", (255, 214, 10), (255, 255, 255)), ("C", (255, 255, 255), (255, 59, 48))):
+        t = im.copy()
+        # darken the empty side so the words read at phone size
+        g = Image.new("L", (1280, 1), 0)
+        for x in range(1280):
+            u = x / 1279 if th["space"] == "right" else 1 - x / 1279
+            g.putpixel((x, 0), int(190 * max(0, (u - 0.35) / 0.65) ** 1.2))
+        t.paste(Image.new("RGB", (1280, 720), (0, 0, 0)), (0, 0), g.resize((1280, 720)))
+        d = ImageDraw.Draw(t)
+        size = 250
+        while size > 60:
+            f = ImageFont.truetype(fp, size) if fp else ImageFont.load_default()
+            if max(d.textlength(l, font=f) for l in lines) <= 600 and size * 1.05 * len(lines) <= 560:
+                break
+            size -= 6
+        y = (720 - size * 1.05 * len(lines)) / 2
+        for i, l in enumerate(lines):
+            w = d.textlength(l, font=f)
+            x = 1280 - 50 - w if th["space"] == "right" else 50
+            d.text((x, y + i * size * 1.05), l, font=f, fill=c2 if i == len(lines) - 1 and len(lines) > 1 else c1, stroke_width=max(6, size // 16), stroke_fill=(0, 0, 0))
+        fn = out / f"thumb_{name}.jpg"
+        t.save(fn, quality=92)
+        made.append(t)
+    # phone test: the 3 versions at the size they have in the feed, next to each other
+    sheet = Image.new("RGB", (3 * 330 + 20, 200), (15, 15, 15))
+    for i, t in enumerate(made):
+        sheet.paste(t.resize((320, 180)), (10 + i * 330, 10))
+    sheet.save(out / "thumb_phone.jpg", quality=90)
+    print(f"3 versions in {out}/thumb_A|B|C.jpg + thumb_phone.jpg (phone size: if the words are not readable there, shorten thumb.words). Upload all 3 to YouTube Test & compare.")
+
 
 def check(sp, quiet=False, need_images=False):
     E, W = [], []
@@ -67,6 +171,8 @@ def check(sp, quiet=False, need_images=False):
     full = not sp.get("test")  # "test": true = short look test, skips the full-video gates
     if not title or len(title) > 60:
         E.append(f"title: needs 1-60 characters (now {len(title)})")
+    if full:
+        package_gates(sp, E)
     srcs = {s["id"] for s in sp.get("sources", [])}
     scenes = sp.get("scenes", [])
     if full and len(scenes) < 30:
@@ -426,6 +532,8 @@ if __name__ == "__main__":
         voice(sp)
     elif cmd == "build":
         build(sp, "--fake" in sys.argv)
+    elif cmd == "thumb":
+        thumb(sp)
     elif cmd == "stills":
         stills(sp, sys.argv[3] if len(sys.argv) > 3 else "")
     elif cmd == "render":

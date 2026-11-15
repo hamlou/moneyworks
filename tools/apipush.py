@@ -5,7 +5,7 @@ import subprocess, json, base64, os, sys, tempfile
 
 GH = os.path.expandvars(r"%LOCALAPPDATA%\ghcli\bin\gh.exe")
 REPO, BR = "repos/hamlou/moneyworks", "shorts-playbook-rules"
-TAIL = "\n\nCo-Authored-By: Claude Fable 5.2 <noreply@anthropic.com>"
+TAIL = "\n\nCo-Authored-By: Claude Fable 5.2 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01UUrqY6LJqMseogzjjMU79x"
 
 
 def api(path, data=None, method=None):
