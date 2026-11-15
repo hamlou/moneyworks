@@ -18,8 +18,8 @@ const K = {black: '#0A0A0B', ink: '#1B1815', cream: '#E8E3D2', cream2: '#D9D3BF'
 const cl = {extrapolateLeft: 'clamp' as const, extrapolateRight: 'clamp' as const};
 const ez = (t: number) => 1 - Math.pow(1 - t, 3);
 // every element arrives the same way: soft focus → sharp, a small rise, no bounce (premium, not cartoon)
-const arrive = (f: number, at: number, d = 12) => ez(interpolate(f - at, [0, d], [0, 1], cl));
-const inStyle = (f: number, at: number, d = 12, dy = 18): React.CSSProperties => {
+const arrive = (f: number, at: number, d = 7) => ez(interpolate(f - at, [0, d], [0, 1], cl));
+const inStyle = (f: number, at: number, d = 7, dy = 22): React.CSSProperties => {
   const p = arrive(f, at, d);
   return {opacity: p, filter: p < 1 ? `blur(${(1 - p) * 10}px)` : undefined, transform: `translateY(${(1 - p) * dy}px)`};
 };
@@ -53,7 +53,7 @@ const Light: React.FC<{f: number}> = ({f}) => (
   <AbsoluteFill style={{background: `radial-gradient(ellipse at ${50 + 3 * Math.sin(f / 80)}% 44%, #F1EEE4 0%, #DCD8CB 55%, #A9A598 100%)`}} />
 );
 const Paper: React.FC<{f: number; at: number; w: number; h?: number; rot?: number; children: React.ReactNode; style?: React.CSSProperties; seed?: number}> = ({f, at, w, h, rot = -1.2, children, style, seed = 1}) => {
-  const p = arrive(f, at, 14);
+  const p = arrive(f, at, 9);
   const drift = Math.sin((f + seed * 40) / 70) * 0.35;
   return (
     <div style={{width: w, height: h, position: 'relative', opacity: p, transform: `perspective(1800px) rotateX(${(1 - p) * 14 + 2}deg) rotateY(${-3 + drift}deg) rotate(${rot + drift * 0.4}deg) translateY(${(1 - p) * 60}px)`,
@@ -66,6 +66,18 @@ const Head: React.FC<{t?: string; color?: string; line?: string}> = ({t, color =
   <div style={{borderBottom: `1.5px solid ${line}`, paddingBottom: 16, marginBottom: 34}}><Mono size={22} color={color}>{t}</Mono></div>
 ) : null);
 
+// pictograms for the 'deny' cards (what it was NOT)
+const PS = {fill: 'none', stroke: '#1B1815', strokeWidth: 6, strokeLinecap: 'round' as const, strokeLinejoin: 'round' as const};
+const PICTO: Record<string, React.ReactNode> = {
+  person: <g {...PS}><circle cx={50} cy={24} r={14} fill="#1B1815" /><path d="M22 92 V66 a28 24 0 0 1 56 0 V92 Z" fill="#1B1815" /></g>,
+  laptop: <g {...PS}><rect x={20} y={22} width={60} height={42} rx={4} /><path d="M8 78 H92" /><path d="M32 40 l8 6 -8 6 M48 54 h14" strokeWidth={4} /></g>,
+  key: <g {...PS}><circle cx={30} cy={50} r={16} /><path d="M46 50 H90 M74 50 V64 M86 50 V60" /></g>,
+  door: <g {...PS}><rect x={28} y={10} width={44} height={80} /><circle cx={62} cy={52} r={3} fill="#1B1815" /></g>,
+  lock: <g {...PS}><rect x={24} y={46} width={52} height={40} rx={5} fill="#1B1815" /><path d="M34 46 V32 a16 16 0 0 1 32 0 V46" /></g>,
+  mask: <g {...PS}><path d="M14 36 Q50 20 86 36 Q86 66 62 62 Q50 54 38 62 Q14 66 14 36 Z" fill="#1B1815" /><ellipse cx={34} cy={44} rx={8} ry={5} fill="#F4F1E8" stroke="none" /><ellipse cx={66} cy={44} rx={8} ry={5} fill="#F4F1E8" stroke="none" /></g>,
+  tunnel: <g {...PS}><path d="M14 90 V50 a36 36 0 0 1 72 0 V90" /><path d="M50 90 V78 M50 68 V58" /></g>,
+  gun: <g {...PS}><path d="M12 34 H82 V48 H52 L46 60 H34 L30 84 H16 L22 48 H12 Z" fill="#1B1815" /></g>,
+};
 const POS: Record<string, React.CSSProperties> = {tl: {left: 110, top: 150}, tr: {right: 110, top: 150}, bl: {left: 110, bottom: 170}, br: {right: 110, bottom: 170}, l: {left: 110, top: 500}, r: {right: 110, top: 500}};
 const Tag: React.FC<{f: number; e: DocEv}> = ({f, e}) => (
   <div style={{position: 'absolute', ...(POS[e.pos ?? 'tl'] ?? POS.tl), ...inStyle(f, e.at, 9, 10)}}>
@@ -79,8 +91,8 @@ const Tag: React.FC<{f: number; e: DocEv}> = ({f, e}) => (
 const ImageScene: React.FC<{sc: DocScene; f: number; id: string}> = ({sc, f, id}) => {
   const k = (f - sc.from) / Math.max(1, sc.to - sc.from);
   const mv = sc.move ?? 'push';
-  const scale = mv === 'pull' ? 1.16 - 0.1 * k : 1.06 + 0.1 * k;
-  const tx = mv === 'left' ? 3 - 6 * k : mv === 'right' ? -3 + 6 * k : 0;
+  const scale = mv === 'pull' ? 1.24 - 0.17 * k : 1.05 + 0.17 * k;
+  const tx = mv === 'left' ? 4 - 8 * k : mv === 'right' ? -4 + 8 * k : 0;
   const big = [...sc.ev].reverse().find((e) => e.v === 'big' && e.at <= f);
   return (
     <AbsoluteFill style={{background: K.black}}>
@@ -94,6 +106,81 @@ const ImageScene: React.FC<{sc: DocScene; f: number; id: string}> = ({sc, f, id}
         </AbsoluteFill>
       ) : null}
       {sc.ev.filter((e) => e.v === 'label' && e.at <= f).map((e, i) => <Tag key={i} f={f} e={e} />)}
+      {(() => {
+        const d = [...sc.ev].reverse().find((e) => e.v === 'deny' && e.at <= f);
+        if (!d) return null;
+        const p = arrive(f, d.at, 6);
+        const x = interpolate(f - d.at, [3, 9], [0, 1], cl);
+        const [w0, ...rest] = (d.t ?? '').split(' ');
+        return (
+          <AbsoluteFill style={{alignItems: 'center', justifyContent: 'center', opacity: p, transform: `scale(${1.25 - 0.25 * p}) rotate(${-2 + Math.sin(f / 50)}deg)`}}>
+            <div style={{width: 300, height: 300, background: K.white, boxShadow: '0 30px 80px rgba(0,0,0,.7)', position: 'relative', display: 'flex', alignItems: 'center', justifyContent: 'center', transform: 'rotate(-3deg)'}}>
+              <svg viewBox="0 0 100 100" style={{position: 'absolute', inset: 50}}>{PICTO[d.sub ?? 'person'] ?? PICTO.person}</svg>
+              <svg viewBox="0 0 100 100" style={{position: 'absolute', inset: 14}}><g stroke={K.red} strokeWidth={7} strokeLinecap="round"><line x1={8} y1={8} x2={8 + 84 * Math.min(1, x * 2)} y2={8 + 84 * Math.min(1, x * 2)} />{x > 0.5 ? <line x1={92} y1={8} x2={92 - 84 * (x * 2 - 1)} y2={8 + 84 * (x * 2 - 1)} /> : null}</g></svg>
+            </div>
+            <div style={{background: K.white, padding: '14px 34px', marginTop: 26, boxShadow: '0 14px 40px rgba(0,0,0,.6)'}}>
+              <span style={{fontFamily: MONOB, fontWeight: 600, fontSize: 50, letterSpacing: '0.14em', color: K.red}}>{w0} </span><span style={{fontFamily: MONOB, fontWeight: 600, fontSize: 50, letterSpacing: '0.14em', color: K.ink}}>{rest.join(' ')}</span>
+            </div>
+          </AbsoluteFill>
+        );
+      })()}
+    </AbsoluteFill>
+  );
+};
+
+// the money visibly leaves while a stopwatch runs (Gloam 0:07-0:13): urgency without a single cut
+const DrainScene: React.FC<{sc: DocScene; f: number; id: string}> = ({sc, f, id}) => {
+  const stamp = sc.ev.find((e) => e.v === 'stamp' && e.at <= f);
+  const end = sc.ev.find((e) => e.v === 'stamp')?.at ?? sc.to - 20;
+  const k = interpolate(f, [sc.from + 6, end], [0, 1], cl);
+  const left = (sc.n ?? 0) * Math.pow(1 - k, 2.2);
+  const ang = k * 360 * 1.5;
+  const stacks = 14;
+  return (
+    <AbsoluteFill>
+      {sc.img ? <ImageScene sc={{...sc, ev: []}} f={f} id={id} /> : <Dark f={f} warm />}
+      <div style={{position: 'absolute', left: 150, top: 250, ...inStyle(f, sc.from + 2, 8)}}>
+        <svg width={420} height={470} viewBox="-105 -125 210 235">
+          <rect x={-16} y={-122} width={32} height={26} rx={5} fill="#D9D3BF" /><circle r={96} fill="#F2EFE6" stroke="#1B1815" strokeWidth={5} />
+          {Array.from({length: 12}, (_, i) => <line key={i} x1={0} y1={-84} x2={0} y2={-72} stroke="#1B1815" strokeWidth={i % 3 ? 2 : 5} transform={`rotate(${i * 30})`} />)}
+          <line x1={0} y1={12} x2={0} y2={-70} stroke={K.red} strokeWidth={5} strokeLinecap="round" transform={`rotate(${ang})`} /><circle r={7} fill={K.red} />
+        </svg>
+        <Mono size={22} color={K.cream} style={{textAlign: 'center', marginTop: 6}}>{sc.head}</Mono>
+      </div>
+      <div style={{position: 'absolute', left: 660, right: 100, top: 300}}>
+        <div style={{fontFamily: MONOB, fontWeight: 600, fontSize: 150, letterSpacing: '0.02em', color: stamp ? '#6A655A' : K.white, textShadow: '0 6px 40px rgba(0,0,0,.8)', fontVariantNumeric: 'tabular-nums'}}>
+          {(sc.source ?? '$') + Math.round(left).toLocaleString('en-US')}
+        </div>
+        <div style={{display: 'flex', alignItems: 'flex-end', gap: 14, height: 250, marginTop: 40}}>
+          {Array.from({length: stacks}, (_, i) => {
+            const h = Math.max(0, (0.45 + 0.55 * random(`st${i}`)) * (1 - Math.min(1, k * 1.25 * (1 + ((stacks - i) / stacks) * 0.9))));
+            return <div key={i} style={{width: 62, height: 250 * h, background: `repeating-linear-gradient(180deg, ${K.gold} 0 7px, #9A6B0C 7px 9px)`, borderRadius: 4, boxShadow: '0 10px 30px rgba(0,0,0,.5)'}} />;
+          })}
+        </div>
+      </div>
+      {stamp ? (
+        <AbsoluteFill style={{alignItems: 'center', justifyContent: 'center'}}>
+          <div style={{transform: `rotate(-8deg) scale(${interpolate(f - stamp.at, [0, 5], [2.2, 1], cl)})`, opacity: interpolate(f - stamp.at, [0, 3], [0, 1], cl), border: `10px solid ${K.red}`, padding: '10px 50px', fontFamily: MONOB, fontWeight: 600, fontSize: 170, letterSpacing: '0.12em', color: K.red, background: 'rgba(10,10,11,.55)'}}>{stamp.t}</div>
+        </AbsoluteFill>
+      ) : null}
+    </AbsoluteFill>
+  );
+};
+
+// the title card: lands AFTER the hook has earned it (Gloam 0:43)
+const TitleScene: React.FC<{sc: DocScene; f: number; id: string}> = ({sc, f, id}) => {
+  const t = sc.ev.find((e) => e.v === 'title' && e.at <= f);
+  const st = sc.ev.find((e) => e.v === 'stamp' && e.at <= f);
+  const words = (t?.t ?? '').split(' ');
+  return (
+    <AbsoluteFill>
+      {sc.img ? <ImageScene sc={{...sc, ev: [], move: 'pull'}} f={f} id={id} /> : <Dark f={f} />}
+      <AbsoluteFill style={{background: 'rgba(6,6,8,.55)'}} />
+      <AbsoluteFill style={{alignItems: 'center', justifyContent: 'center', textAlign: 'center', padding: '0 200px'}}>
+        {sc.head ? <Mono size={24} color="#B9B4A6" style={{marginBottom: 34, ...inStyle(f, sc.from + 2)}}>{sc.head}</Mono> : null}
+        {t ? <Serif size={words.length > 4 ? 170 : 210} color={K.white}>{words.map((w, i) => { const p = arrive(f, t.at + i * 4, 9); return <span key={i} style={{display: 'inline-block', opacity: p, filter: p < 1 ? `blur(${(1 - p) * 14}px)` : undefined, transform: `translateY(${(1 - p) * 30}px)`, fontStyle: i === words.length - 1 ? 'italic' : undefined, marginRight: '0.22em'}}>{w}</span>; })}</Serif> : null}
+        {st ? <div style={{marginTop: 40, transform: `rotate(-3deg) scale(${interpolate(f - st.at, [0, 5], [1.8, 1], cl)})`, border: `4px solid ${K.red}`, padding: '8px 24px', fontFamily: MONOB, fontWeight: 600, fontSize: 30, letterSpacing: '0.2em', color: '#E0463F'}}>{st.t}</div> : null}
+      </AbsoluteFill>
     </AbsoluteFill>
   );
 };
@@ -105,18 +192,18 @@ const CardScene: React.FC<{sc: DocScene; f: number}> = ({sc, f}) => {
     <AbsoluteFill>
       {sc.bg === 'light' ? <Light f={f} /> : <Dark f={f} warm />}
       <AbsoluteFill style={{alignItems: 'center', justifyContent: 'center'}}>
-        <Paper f={f} at={sc.from + 2} w={1240}>
+        <Paper f={f} at={sc.from + 2} w={1520}>
           <Head t={sc.head} />
           {rows.map((e, i) => e.at > f ? <div key={i} style={{height: e.v === 'bar' ? 150 : 250}} /> : e.v === 'stat' ? (
             <div key={i} style={{marginBottom: 34, ...inStyle(f, e.at)}}>
-              <Serif size={rows.length > 2 ? 130 : 170} color={e.color === 'red' ? K.red : K.ink}>{num(e, f)}</Serif>
+              <Serif size={rows.length > 2 ? 150 : 200} color={e.color === 'red' ? K.red : K.ink}>{num(e, f)}</Serif>
               <Mono size={24} color="#5A554A" style={{marginTop: 10}}>{e.label}</Mono>
             </div>
           ) : (
             <div key={i} style={{marginBottom: 40, ...inStyle(f, e.at)}}>
               <Mono size={22} color="#3A362E" style={{marginBottom: 12}}>{e.label}</Mono>
               <div style={{display: 'flex', alignItems: 'center', gap: 22}}>
-                <div style={{height: 62, width: 860 * (e.w ?? 0.5) * ez(interpolate(f - e.at, [4, 30], [0, 1], cl)), background: e.color === 'red' ? K.red : '#343A44'}} />
+                <div style={{height: 76, width: 1080 * (e.w ?? 0.5) * ez(interpolate(f - e.at, [4, 30], [0, 1], cl)), background: e.color === 'red' ? K.red : '#343A44'}} />
                 <Serif size={64}>{e.val}</Serif>
               </div>
             </div>
@@ -140,7 +227,7 @@ const ReceiptScene: React.FC<{sc: DocScene; f: number; id: string}> = ({sc, f, i
     <AbsoluteFill>
       {sc.img ? <ImageScene sc={{...sc, ev: []}} f={f} id={id} /> : <Dark f={f} />}
       <AbsoluteFill style={{alignItems: sc.img ? 'flex-end' : 'center', justifyContent: 'center', paddingRight: sc.img ? 150 : 0}}>
-        <div style={{...inStyle(f, sc.from + 2, 14, 80), transformOrigin: 'top center'}}>
+        <div style={{...inStyle(f, sc.from + 1, 8, -260), transformOrigin: 'top center', zoom: 1.32}}>
           <div style={{width: 640, background: '#F2EFE6', padding: '48px 46px 40px', transform: `rotate(${1.5 + Math.sin(f / 60) * 0.3}deg)`, boxShadow: '0 40px 90px rgba(0,0,0,.6)', fontFamily: MONO, color: K.ink}}>
             <div style={{textAlign: 'center', fontSize: 26, letterSpacing: '0.12em', lineHeight: 1.5, textTransform: 'uppercase', borderBottom: '2px dashed #6A655A', paddingBottom: 20, marginBottom: 20, whiteSpace: 'pre-line'}}>{sc.head}</div>
             {rows.map((e, i) => (
@@ -169,12 +256,12 @@ const ListScene: React.FC<{sc: DocScene; f: number}> = ({sc, f}) => (
   <AbsoluteFill>
     <Dark f={f} warm />
     <AbsoluteFill style={{alignItems: 'center', justifyContent: 'center'}}>
-      <Paper f={f} at={sc.from + 2} w={1260} rot={0.6} style={{minHeight: 560}}>
+      <Paper f={f} at={sc.from + 2} w={1480} rot={0.6} style={{minHeight: 640}}>
         <Head t={sc.head} />
         {sc.ev.filter((e) => e.v === 'row' && e.at <= f).map((e, i) => (
           <div key={i} style={{display: 'flex', alignItems: 'center', gap: 40, background: 'linear-gradient(180deg,#F3F0E2,#E2DCC6)', boxShadow: '0 10px 22px rgba(60,50,20,.28)', padding: '26px 40px', marginBottom: 30, ...inStyle(f, e.at)}}>
             <Mono size={24} color="#7A7466">{String(i + 1).padStart(2, '0')}</Mono>
-            <Serif size={70}>{e.t}</Serif>
+            <Serif size={84}>{e.t}</Serif>
           </div>
         ))}
       </Paper>
@@ -268,7 +355,7 @@ const HeadlineScene: React.FC<{sc: DocScene; f: number}> = ({sc, f}) => (
   <AbsoluteFill>
     <Dark f={f} warm />
     <AbsoluteFill style={{alignItems: 'center', justifyContent: 'center'}}>
-      <Paper f={f} at={sc.from + 2} w={1380} rot={-1.6} style={{background: 'linear-gradient(160deg,#F6F4EC,#E9E6DA)'}}>
+      <Paper f={f} at={sc.from + 2} w={1600} rot={-1.6} style={{background: 'linear-gradient(160deg,#F6F4EC,#E9E6DA)'}}>
         <div style={{display: 'flex', justifyContent: 'space-between', alignItems: 'baseline', borderBottom: '3px solid #1B1815', paddingBottom: 14, marginBottom: 36}}>
           <Serif size={52}>{sc.pub}</Serif><Mono size={20} color="#5A554A">{sc.date}</Mono>
         </div>
@@ -296,7 +383,7 @@ const ClockScene: React.FC<{sc: DocScene; f: number}> = ({sc, f}) => {
   );
 };
 
-const VIEW: Record<string, React.FC<{sc: DocScene; f: number; id: string}>> = {image: ImageScene, card: CardScene, receipt: ReceiptScene, list: ListScene, stats: StatsScene, tiles: TilesScene, quote: QuoteScene, headline: HeadlineScene, clock: ClockScene};
+const VIEW: Record<string, React.FC<{sc: DocScene; f: number; id: string}>> = {image: ImageScene, card: CardScene, receipt: ReceiptScene, list: ListScene, stats: StatsScene, tiles: TilesScene, quote: QuoteScene, headline: HeadlineScene, clock: ClockScene, drain: DrainScene, title: TitleScene};
 
 export const Doc: React.FC<{plan: DocPlan}> = ({plan}) => {
   const f = useCurrentFrame();
@@ -307,7 +394,7 @@ export const Doc: React.FC<{plan: DocPlan}> = ({plan}) => {
   const drift = sc ? 1 + 0.02 * ((f - sc.from) / Math.max(1, sc.to - sc.from)) : 1;
   return (
     <AbsoluteFill style={{background: K.black}}>
-      {sc ? <AbsoluteFill style={{opacity: cut, transform: sc.kind === 'image' || sc.kind === 'receipt' ? undefined : `scale(${drift})`}}><V sc={sc} f={f} id={plan.id} /></AbsoluteFill> : null}
+      {sc ? <AbsoluteFill style={{opacity: cut, transform: ['image', 'receipt', 'drain', 'title'].includes(sc.kind) ? undefined : `scale(${drift})`}}><V sc={sc} f={f} id={plan.id} /></AbsoluteFill> : null}
       {sc?.hud ? (
         <div style={{position: 'absolute', left: 110, top: 78, display: 'flex', alignItems: 'center', gap: 16, opacity: cut}}>
           <div style={{width: 11, height: 11, borderRadius: 6, background: K.amber, opacity: 0.55 + 0.45 * Math.sin(f / 6)}} /><Mono size={22} color={K.amber} sp={0.3} bold>{sc.hud}</Mono>
@@ -316,7 +403,7 @@ export const Doc: React.FC<{plan: DocPlan}> = ({plan}) => {
       {sc?.tag ? <div style={{position: 'absolute', left: 110, bottom: 70, display: 'flex', alignItems: 'center', gap: 12, opacity: cut}}><div style={{width: 8, height: 8, background: K.red}} /><Mono size={18} color="#C9C4B4">{sc.tag}</Mono></div> : null}
       {/* film: vignette + moving grain on everything */}
       <AbsoluteFill style={{background: 'radial-gradient(ellipse at 50% 50%, rgba(0,0,0,0) 52%, rgba(0,0,0,.5) 100%)', pointerEvents: 'none'}} />
-      <AbsoluteFill style={{backgroundImage: `url(${staticFile('doc/grain.png')})`, backgroundPosition: `${Math.floor(random(`gx${f}`) * 512)}px ${Math.floor(random(`gy${f}`) * 512)}px`, opacity: 0.11, mixBlendMode: 'overlay', pointerEvents: 'none'}} />
+      <AbsoluteFill style={{backgroundImage: `url(${staticFile('doc/grain.png')})`, backgroundPosition: `${Math.floor(random(`gx${f}`) * 512)}px ${Math.floor(random(`gy${f}`) * 512)}px`, opacity: 0.07, mixBlendMode: 'overlay', pointerEvents: 'none'}} />
       {plan.voice ? <Audio src={staticFile(plan.voice)} /> : null}
       {plan.music.map((m, k) => (
         <Sequence key={`m${k}`} from={m.from} durationInFrames={Math.max(1, m.to - m.from)}>

@@ -51,7 +51,7 @@ jobs:
       - run: npm ci --no-audit --no-fund
       - run: >
           npx remotion render src/v6/index.ts ${{ needs.plan.outputs.comp }} out/part.mp4 --frames=${{ matrix.range }}
-          --muted --gl=swangle --codec=h264 --crf=18 --pixel-format=yuv420p --concurrency=100% --log=warn
+          --muted --gl=swangle --codec=h264 --crf=21 --pixel-format=yuv420p --concurrency=100% --log=warn
       - id: n
         run: echo "name=$(printf '%06d' $(echo '${{ matrix.range }}' | cut -d- -f1))" >> $GITHUB_OUTPUT
       - uses: actions/upload-artifact@v4

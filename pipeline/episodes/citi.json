@@ -11,85 +11,73 @@
   {
    "id": "b001",
    "src": "S1",
-   "text": "On a quiet Tuesday evening a Citibank employee clicks a button to send a routine payment.",
-   "pause": 0.25
+   "text": "At five forty five on a Tuesday evening one click sent nine hundred million dollars out of Citibank.",
+   "pause": 0.5
   },
   {
    "id": "b002",
    "src": "S1",
-   "text": "It should be about eight million dollars.",
+   "text": "The money was gone before anyone at the bank looked up.",
    "pause": 0.5
   },
   {
    "id": "b003",
-   "src": "S1",
-   "text": "Instead the bank wires out almost nine hundred million dollars of its own money.",
-   "pause": 0.5
+   "src": "",
+   "text": "But nobody hacked the bank.",
+   "pause": 0.25
   },
   {
    "id": "b004",
    "src": "",
-   "text": "Nobody hacked anything and nobody stole a password.",
+   "text": "And nobody stole a password.",
    "pause": 0.5
   },
   {
    "id": "b005",
-   "src": "S1",
-   "text": "The bank meant to send this much.",
-   "pause": 0.25
+   "src": "S2",
+   "text": "The bank asked for it back and a judge said no.",
+   "pause": 0.5
   },
   {
    "id": "b006",
    "src": "S1",
-   "text": "And it sent this much which is more than one hundred times too much.",
+   "text": "It meant to send eight million and it sent one hundred times more.",
    "pause": 0.5
   },
   {
    "id": "b007",
    "src": "S1",
-   "text": "A federal judge would later call it one of the biggest blunders in banking history.",
+   "text": "The judge called it one of the biggest blunders in banking history.",
    "pause": 0.5
   },
   {
    "id": "b008",
    "src": "",
-   "text": "The payment leaves at five forty five.",
-   "pause": 0.25
+   "text": "So who clicked and who kept the money and why did the law let them?",
+   "pause": 0.5
   },
   {
    "id": "b009",
    "src": "",
-   "text": "Nobody notices until the next morning.",
-   "pause": 0.25
+   "text": "This is the nine hundred million dollar click.",
+   "pause": 0.5
   },
   {
    "id": "b010",
-   "src": "S1",
-   "text": "The bank asks for the money back and some of the lenders simply say no.",
-   "pause": 0.5
+   "src": "",
+   "text": "The payment leaves at five forty five and nobody notices until morning.",
+   "pause": 0.25
   },
   {
    "id": "b011",
    "src": "S1",
-   "text": "Almost nine hundred million dollars went out.",
-   "pause": 0.25
+   "text": "Then the bank asks for its money back and some lenders simply say no.",
+   "pause": 0.5
   },
   {
    "id": "b012",
    "src": "S1",
-   "text": "And about half a billion of it did not come back.",
-   "pause": 0.5
-  },
-  {
-   "id": "b013",
-   "src": "",
-   "text": "So this is the story of the click and of who kept the money and of what the judge decided.",
-   "pause": 0.5
-  },
-  {
-   "id": "b014",
-   "src": "",
-   "text": "It starts at five forty five in the evening.",
+   "text": "Almost nine hundred million went out and half a billion never came back.",
    "pause": 0.5
   }
  ]

@@ -15,18 +15,19 @@ try:
     sys.stdout.reconfigure(encoding="utf-8")
 except Exception:
     pass
-FPS, LEAD = 30, 3
+FPS, LEAD = 30, 5  # things start 5 frames BEFORE their word: a late picture reads as "does not match"
 # kind → {event: max text length}; MAXN = how many of the main event one scene holds
-KINDS = {"image": {"label": 28, "big": 18}, "card": {"stat": 0, "bar": 0, "stamp": 22}, "receipt": {"row": 0, "circle": 0}, "list": {"row": 34},
+KINDS = {"image": {"label": 28, "big": 18, "deny": 20}, "drain": {"stamp": 10}, "title": {"title": 34, "stamp": 30}, "card": {"stat": 0, "bar": 0, "stamp": 22}, "receipt": {"row": 0, "circle": 0}, "list": {"row": 34},
          "stats": {"stat": 0}, "tiles": {"tile": 24}, "quote": {"quote": 140}, "headline": {"head": 90}, "clock": {"time": 12, "sub": 44}}
-MAXN = {"image": ("label", 4), "card": ("stat+bar", 3), "receipt": ("row", 8), "list": ("row", 5), "stats": ("stat", 3), "tiles": ("tile", 6), "quote": ("quote", 2), "headline": ("head", 2), "clock": ("time", 3)}
+MAXN = {"drain": ("stamp", 1), "title": ("title", 1), "image": ("label", 4), "card": ("stat+bar", 3), "receipt": ("row", 8), "list": ("row", 5), "stats": ("stat", 3), "tiles": ("tile", 6), "quote": ("quote", 2), "headline": ("head", 2), "clock": ("time", 3)}
 MOVES = "push pull left right".split()
 POSN = "tl tr bl br l r".split()
+PICTO = "person laptop key door lock mask tunnel gun".split()
 MOODS = {"tense": "km/investigations.mp3", "dark": "km/darkest_child.mp3", "mystery": "km/unanswered_questions.mp3", "drive": "km/hitman.mp3",
          "react": "km/volatile_reaction.mp3", "sad": "km/hiding_your_reality.mp3", "think": "km/thinking_music.mp3", "none": None}
 MUSIC_V, SFX_V = 0.06, 0.2
 SFX = {"label": ["click.wav"], "big": ["thump_low.wav"], "stat": ["count_roll_short.wav"], "bar": ["slide.wav"], "stamp": ["stamp.wav"], "row": ["tick.wav"], "circle": ["draw.wav"],
-       "tile": ["click.wav"], "quote": ["swish.wav"], "head": ["paper.wav"], "time": ["tick.wav"], "sub": ["click.wav"],
+       "tile": ["click.wav"], "deny": ["thud.wav"], "title": ["boom.wav"], "quote": ["swish.wav"], "head": ["paper.wav"], "time": ["tick.wav"], "sub": ["click.wav"],
        "scene_image": ["whoosh_s.wav", "thump_low.wav"], "scene_card": ["pageflip.wav", "paper.wav"], "scene_other": ["swish.wav"]}
 
 
@@ -80,6 +81,8 @@ def check(sp, quiet=False, need_images=False):
         kinds.append(kind)
         if len(kinds) >= 3 and kinds[-1] == kinds[-2] == kinds[-3]:
             E.append(f"{tag}: 3 '{kind}' scenes in a row — change the shot type")
+        if kind == "drain" and not (isinstance(sc.get("amount"), (int, float)) and sc.get("head")):
+            E.append(f"{tag}: drain needs amount (the number that runs down to 0) and head (label under the stopwatch)")
         if kind == "image":
             if not sc.get("img"):
                 E.append(f"{tag}: image scene needs \"img\" (file in public/{eid}/) and \"prompt\" (how to make it)")
@@ -119,9 +122,9 @@ def check(sp, quiet=False, need_images=False):
                 E.append(f"{lt}: a number without \"src\" — every figure needs its source id")
             nw = [norm(w) for w in ws]
             show = [e for e in ln.get("show", []) if e.get("v") != "sfx"]
-            if kind != "image" and not show:
+            if kind not in ("image", "drain") and not show:
                 E.append(f"{lt}: nothing new on screen — every line adds at least one thing")
-            if len(ws) > 18 and len(show) < 2 and kind != "image":
+            if len(ws) > 18 and len(show) < 2 and kind not in ("image", "drain"):
                 E.append(f"{lt}: {len(ws)} words but 1 visual — lines over 18 words need ≥ 2")
             for ei, e in enumerate(ln.get("show", [])):
                 v, et = e.get("v"), f"{lt} event {ei + 1}"
@@ -146,6 +149,8 @@ def check(sp, quiet=False, need_images=False):
                         E.append(f"{et}: receipt row needs k and val")
                 if v == "circle" and not 1 <= e.get("row", 0) <= nrows:
                     E.append(f"{et}: circle row {e.get('row')} — must be an earlier row number (1-{nrows})")
+                if v == "deny" and e.get("sub") not in PICTO:
+                    E.append(f"{et}: deny needs sub = the pictogram that gets crossed out — one of {PICTO}")
                 if v == "label" and e.get("pos", "tl") not in POSN:
                     E.append(f"{et}: pos '{e.get('pos')}' unknown — {POSN}")
         name, mx = MAXN[kind]
@@ -162,8 +167,28 @@ def check(sp, quiet=False, need_images=False):
         share = kinds.count("image") / len(kinds)
         if not 0.25 <= share <= 0.55:
             E.append(f"cinematic: {share:.0%} of scenes are image stills — keep it between 25 % and 55 %")
-    # hook = the first 3 scenes
+    # HOOK BLUEPRINT (measured on Gloam's 2.5M video, LONG.md [DOC] §3): moment → money runs out → amount → proof → mystery → 3 questions → title
     if scenes:
+        k9 = [sc.get("kind") for sc in scenes[:10]]
+        ev9 = [e.get("v") for sc in scenes[:8] for ln in sc.get("lines", []) for e in ln.get("show", [])]
+        l0 = scenes[0].get("lines", [{}])[0]
+        if len([e for ln in scenes[0].get("lines", []) for e in ln.get("show", [])]) < 3:
+            E.append("hook: scene 1 needs ≥ 3 things appearing (frame 0 must already move: rows dropping in, labels, a circle)")
+        if not re.search(r"\b(million|billion|trillion|thousand)\b", l0.get("say", ""), re.I):
+            E.append("hook: the FIRST sentence must say the amount (million/billion…) — the viewer came for the number in the title")
+        if "drain" not in k9[:4]:
+            E.append("hook: one of scenes 2-4 must be a 'drain' (stopwatch + the amount running down to zero) — urgency before any explaining")
+        if "deny" not in ev9:
+            E.append("hook: the first 8 scenes need the mystery as 'deny' cards (NO HACK / NO THIEF …): say what it was NOT, so the viewer asks how")
+        if not ({"headline", "quote"} & set(k9[:8])):
+            E.append("hook: the first 8 scenes need real proof — a 'headline' or a 'quote' (real, verbatim, dated)")
+        if "list" not in k9:
+            E.append("hook: scenes 1-10 need the 'list' (the 3 questions this video answers)")
+        elif k9.index("list") + 1 >= len(scenes) or scenes[k9.index("list") + 1].get("kind") != "title":
+            E.append("hook: the scene right after the 'list' must be the 'title' card")
+        if any(k in k9[:6] for k in ("tiles", "stats")):
+            E.append("hook: no 'tiles'/'stats' in the first 6 scenes — explaining starts after the title card")
+
         if scenes[0].get("kind") not in ("image", "receipt") or not scenes[0].get("hud"):
             E.append("hook: scene 1 must be an image or receipt with a \"hud\" (exact time + place) — open inside the moment")
         h = [e for sc in scenes[:3] for ln in sc.get("lines", []) for e in ln.get("show", [])]
@@ -214,9 +239,15 @@ def timing(sp, fake):
     vj, tj = Path(f"pipeline/voice/{eid}.json"), Path(f"src/v6/{eid}_timing.json")
     if not vj.exists():
         sys.exit(f"✗ no voice yet ({vj}). py tools/doc.py voice {eid} → push → wait for voice.yml → git pull")
-    if not tj.exists() or tj.stat().st_mtime < vj.stat().st_mtime or not Path(f"public/{eid}/voice.flac").exists():
+    # the audio file and the timing MUST come from the same tempo (15 Nov bug: tempo changed, old audio kept -> pictures 7 s late)
+    stale = not tj.exists() or tj.stat().st_mtime < vj.stat().st_mtime or not Path(f"public/{eid}/voice.flac").exists() \
+        or abs(json.loads(tj.read_text(encoding="utf8")).get("tempo", -1) - T) > 1e-6
+    if stale:
         Path(f"public/{eid}").mkdir(parents=True, exist_ok=True)
         subprocess.run([sys.executable, "tools/voice_gaps.py", eid, "0", "--tempo", str(T)], check=True, env={**os.environ, "PYTHONIOENCODING": "utf-8"})
+        d = json.loads(tj.read_text(encoding="utf8"))
+        d["tempo"] = T
+        tj.write_text(json.dumps(d), encoding="utf8")
     return json.loads(tj.read_text(encoding="utf8")), T, f"{eid}/voice.flac"
 
 
@@ -287,9 +318,11 @@ def build(sp, fake):
                 snd(e["v"], at, 0.6 if e["v"] == "row" else 1.0)
         ev.sort(key=lambda e: e["at"])
         keep = {k: sc[k] for k in ("img", "move", "hud", "tag", "head", "source", "by", "pub", "date", "n", "side", "bg") if k in sc}
+        if sc["kind"] == "drain":
+            keep["n"], keep["source"] = sc["amount"], sc.get("prefix", "$")
         scenes.append({"from": start, "to": 0, "kind": sc["kind"], **keep, "ev": ev, "_mood": sc.get("mood"), "_vis": vis})
         if si:
-            snd("scene_image" if sc["kind"] in ("image", "receipt") else "scene_card" if sc["kind"] in ("card", "list", "headline") else "scene_other", start, 0.8)
+            snd("scene_image" if sc["kind"] in ("image", "receipt", "drain", "title") else "scene_card" if sc["kind"] in ("card", "list", "headline") else "scene_other", start, 0.8)
     if errs:
         sys.exit("✗ " + "\n✗ ".join(errs))
     mood = "tense"
@@ -301,15 +334,13 @@ def build(sp, fake):
             music[-1]["to"] = s["to"]
         elif m:
             music.append({"src": "music/" + m, "from": s["from"], "to": s["to"], "v": MUSIC_V})
-    # quality gate: something new at least every 5 s (a moving still counts for its first 5 s only)
+    # quality gate: something new at least every 4 s
     slow = []
     for i, s in enumerate(scenes):
         pts = sorted(set([s["from"]] + s.pop("_vis") + [s["to"]]))
         for a, b in zip(pts, pts[1:]):
-            if (b - a) / FPS > 5.0 and b != total:
+            if (b - a) / FPS > 4.0 and b != total:
                 slow.append(f"scene {i + 1} ({s['kind']}): {(b - a) / FPS:.1f} s with nothing new (from {a / FPS:.1f} s) — add an event there or cut to a new scene")
-    for s in slow:
-        print("  ✗", s)
     plan = {"id": eid, "title": sp["title"], "frames": total, "voice": vfile, "scenes": scenes, "sfx": sorted(sfx, key=lambda c: c["at"]), "music": music}
     Path("src/v6/doc").mkdir(exist_ok=True)
     Path(f"src/v6/doc/{eid}.plan.json").write_text(json.dumps(plan, ensure_ascii=False), encoding="utf8")
@@ -320,11 +351,42 @@ def build(sp, fake):
     nvis = sum(len(s["ev"]) for s in scenes) + len(scenes)
     print(f"{eid}: {total} frames = {total / FPS / 60:.1f} min | {len(scenes)} shots = one cut every {total / FPS / len(scenes):.1f} s | something new every {total / FPS / nvis:.1f} s | "
           f"{len(sfx)} sfx | voice {'FAKE' if fake else vfile}")
+    # PACE + HOOK TIMING, measured on the real voice (reference numbers: Gloam = 12 cuts in the first 30 s, title card at 0:43)
+    sec = lambda fr_: fr_ / FPS
+    first30 = sum(1 for s in scenes if sec(s["from"]) < 30)
+    kinds_at = {}
+    for s in scenes:
+        kinds_at.setdefault(s["kind"], sec(s["from"]))
+    if sec(scenes[0]["to"]) > 8:
+        slow.append(f"hook: first shot lasts {sec(scenes[0]['to']):.1f} s — cut by 8 s")
+    if first30 < 6 and total / FPS > 30:
+        slow.append(f"hook: only {first30} shots in the first 30 s — need ≥ 6 (shorter lines, more cuts)")
+    for kind, lim in (("drain", 16), ("list", 50), ("title", 60)):
+        if kinds_at.get(kind, 0) > lim:
+            slow.append(f"hook: '{kind}' starts at {kinds_at[kind]:.0f} s — must start by {lim} s")
+    avg = total / FPS / len(scenes)
+    if avg > 7:
+        slow.append(f"pace: average shot {avg:.1f} s — must be ≤ 7 s (cut long scenes in two)")
+    if total / FPS / nvis > 2.5:
+        slow.append(f"pace: something new only every {total / FPS / nvis:.1f} s on average — must be ≤ 2.5 s")
+    # re-hook: a turn ("But…", "Then…", a question) at least every 45 s keeps the next reason to stay open
+    turns, tprev = [], 0.0
+    for si, li, bid, sc, ln in lines_of(sp):
+        if re.match(r"\s*(but|then|except|until|and then|so|now|here is)\b", ln["say"], re.I) or "?" in ln["say"]:
+            t = vb[bid]["words"][0]["start"] / T
+            if t - tprev > 45:
+                turns.append(f"story: {t - tprev:.0f} s without a turn before {t:.0f} s — add a 'But…' / 'Then…' / question line (a new reason to keep watching)")
+            tprev = t
+    if total / FPS / T - tprev > 60 and not sp.get("test"):
+        turns.append("story: the last minute has no turn")
+    slow += turns
     m = re.search(r"(\d+) Minutes", sp["title"])
     if m and not fake and not int(m.group(1)) - 1.0 <= total / FPS / 60 <= int(m.group(1)) + 0.34:
         sys.exit(f"✗ title says {m.group(1)} minutes but the video is {total / FPS / 60:.1f} min — the title must be true")
+    for s_ in slow:
+        print("  ✗", s_)
     if slow and not fake:
-        sys.exit(f"✗ {len(slow)} slow spots — fix the spec and build again")
+        sys.exit(f"✗ {len(slow)} pace/hook problems — fix the spec and build again")
     print("BUILD OK" + (" (fake voice: timing is a guess)" if fake else f" → py tools/doc.py render {eid}"))
     return plan
 

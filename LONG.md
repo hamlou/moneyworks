@@ -43,11 +43,25 @@ One TRUE money story told like a heist or a collapse: who, how much, minute by m
 - Title formula that worked: "How <Name> Lost $<exact number> in One <Night/Click/Day>". ≤ 60 chars. If the title has "N Minutes", the video must be N minutes (`build` refuses otherwise).
 - Never: textbook topics ("how X works"), personal-finance chores, politics names, a title the video does not pay off.
 
-### 3. Script rules (`check` enforces most)
-- Hook = first 3 shots: scene 1 is an image or receipt with a `hud` (exact time · place) → we open INSIDE the moment; the amount is on screen within 3 shots; first line ≤ 18 words. Then "this file" list (the 3 questions the video answers) by ~40 s.
-- Each of the 3 questions is answered late; the biggest one last. End = what happened to everyone + one line that links to the viewer's own money. No "subscribe", no recap.
-- Lines: 1–30 words, numbers written as words, no commas (voice), every figure has `src`. Quotes are VERBATIM from the source and `by` names who + when.
-- Never state a guess as fact. Reconstructed pictures carry `"tag": "RECONSTRUCTION"`.
+### 3. HOOK + RETENTION RULES (owner 15 Nov: "the hook is very bad… too slow… the words don't match the visuals… the viewer must stay till the end") — `check`/`build` enforce them
+**Why people leave / stay (what we build on):** a viewer decides in the first 5 s whether the video is what the title promised; stays while a question is open; leaves the moment nothing new happens or a picture does not match the words. So: confirm the title at once, open a question before answering, and never let 4 s pass without something new.
+
+**The hook blueprint — measured second by second on Gloam's 2.5M video (12 cuts in the first 30 s, title card at 0:43). Same ORDER for every topic, different pictures:**
+| time | shot | what it does |
+|---|---|---|
+| 0–7 s | `receipt` (or `image`) with a `hud` = exact time · place; rows drop in from frame 0, the absurd detail gets circled | we are INSIDE the moment; the FIRST sentence says the amount |
+| 7–14 s | `drain` — stopwatch runs, the amount counts down to 0, stamp | urgency: the money leaves while you watch |
+| 14–20 s | `image` + `deny` cards ("NO HACKER", "NO THIEF") | the mystery: say what it was NOT → "then how?" |
+| 20–30 s | `headline` or `quote` (real, verbatim, dated) + `card` with the record comparison + stamp | proof it is real and how big |
+| 30–45 s | `list` — the 3 questions this video answers | the promise (3 open loops) |
+| ≤ 60 s | `title` card | the story starts only now |
+- After the title: explain like the viewer is 12 (one simple picture per idea), answer question 1 early (a first payoff by ~2 min), question 3 (the biggest) last.
+- A turn — a line starting with But / Then / Except / Until / So, or a question — at least every 45 s (`build` checks). Each turn must raise the stake or open a new question.
+- WORDS = PICTURES: every `show` item is the exact thing being said at its `on` word (the number, the name, the document). Never a decorative picture. Things start 5 frames before their word.
+- PACE: voice at natural speed (`tempo` 1.0 ≈ 200 wpm; never slow it unless the owner asks), average shot ≤ 7 s, something new every ≤ 2.5 s on average and never > 4 s, ≥ 6 shots in the first 30 s.
+- Lines: 1–30 words, numbers written as words, no commas (voice), every figure has `src`. Quotes are VERBATIM and `by` names who + when. Reconstructed pictures carry `"tag": "RECONSTRUCTION"`. Never state a guess as fact; write "allegedly" when a case is not decided.
+- End = what happened to everyone + one line that links to the viewer's own money. No "subscribe", no recap.
+- VARIETY between videos: same order and gates, but each video picks its own stills, its own absurd detail, its own pictograms, its own comparison; never reuse a still from another video.
 
 ### 4. The spec — `pipeline/doc/<id>.json`
 ```json
@@ -61,7 +75,9 @@ One TRUE money story told like a heist or a collapse: who, how much, minute by m
 
 | kind | scene fields | events (`v`) |
 |---|---|---|
-| image | img, prompt, move (push pull left right), hud?, tag? | `label` {t ≤ 28, pos tl tr bl br l r, sub?} · `big` {t ≤ 18 or n (counts up), label?} |
+| image | img, prompt, move (push pull left right), hud?, tag? | `label` {t ≤ 28, pos tl tr bl br l r, sub?} · `big` {t ≤ 18 or n (counts up), label?} · `deny` {t ≤ 20 "NO HACKER", sub = pictogram: person laptop key door lock mask tunnel gun} |
+| drain | amount (number that runs down to 0), head, prefix?, img? | `stamp` {t ≤ 10} — the count ends on it |
+| title | head (small line), img? | `title` {t ≤ 34} · `stamp` {t ≤ 30, e.g. CASE FILE · date} |
 | receipt | head (2 lines with \n), img? | `row` {k, val, bold?} (≤ 8) · `circle` {row: number} |
 | card | head, source?, bg? ("light") | `stat` {n or t, prefix, suffix, dec, label, color?} · `bar` {label, val, w 0–1, color?} · `stamp` {t ≤ 22} (≤ 3 stat+bar) |
 | stats | head, side ("globe" or an image file) | `stat` (≤ 3) |
@@ -81,7 +97,7 @@ py tools/doc.py build <id>      # after the voice: timing → plan. Refuses: > 5
 py tools/doc.py stills <id>     # preview frames → videos/<id>/preview/ — SHOW THE OWNER before rendering
 py tools/doc.py render <id>     # writes pipeline/split/RUN → push → v6split.yml renders on GitHub
 ```
-Quality gates in `check`/`build` (never weaken them to get a pass): ≥ 30 shots, ≥ 6 shot kinds, never 3 of a kind in a row, 25–55 % cinematic stills, ≤ 60 words per shot, something new every ≤ 5 s on the real voice, every figure sourced, hook rules of §3.
+Quality gates in `check`/`build` (never weaken them to get a pass): the §3 hook blueprint and pace numbers, ≥ 30 shots, ≥ 6 shot kinds, never 3 of a kind in a row, 25–55 % cinematic stills, ≤ 60 words per shot, every figure sourced, true title length. The audio and the timing always come from the same tempo (15 Nov bug: pictures ran 7 s late).
 
 ### 6. Stills + thumbnail (owner makes pictures in Gemini Pro)
 - Stills: one per image scene, 16:9, dark cinematic 3D-render look, ONE object or place, no text, no real person's face. Until a still exists a grey placeholder is used; `build` refuses a full video with placeholders.
