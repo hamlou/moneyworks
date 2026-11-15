@@ -12,7 +12,7 @@ export type DocEv = {at: number; v: string; t?: string; label?: string; pos?: st
   color?: string; k?: string; sub?: string; gold?: boolean; bold?: boolean; x?: number; y?: number; row?: number};
 export type DocScene = {from: number; to: number; kind: string; img?: string; move?: string; hud?: string; tag?: string; head?: string; source?: string; by?: string; pub?: string;
   date?: string; n?: number; side?: string; bg?: string; ev: DocEv[]};
-export type DocPlan = {id: string; frames: number; voice: string | null; scenes: DocScene[]; sfx: {at: number; src: string; v: number}[]; music: {src: string; from: number; to: number; v: number}[]};
+export type DocPlan = {id: string; frames: number; voice: string | null; scenes: DocScene[]; sfx: {at: number; src: string; v: number; d?: number}[]; music: {src: string; from: number; to: number; v: number}[]};
 
 const K = {black: '#0A0A0B', ink: '#1B1815', cream: '#E8E3D2', cream2: '#D9D3BF', red: '#B4222C', gold: '#E2A21C', amber: '#E8942C', dim: '#8C877A', white: '#F4F1E8'};
 const cl = {extrapolateLeft: 'clamp' as const, extrapolateRight: 'clamp' as const};
@@ -411,7 +411,7 @@ export const Doc: React.FC<{plan: DocPlan}> = ({plan}) => {
         </Sequence>
       ))}
       {plan.sfx.map((s, k) => (
-        <Sequence key={`s${k}`} from={s.at} durationInFrames={90}><Audio src={staticFile(s.src)} volume={s.v} /></Sequence>
+        <Sequence key={`s${k}`} from={s.at} durationInFrames={Math.max(2, s.d ?? 90)}><Audio src={staticFile(s.src)} volume={s.v} /></Sequence>
       ))}
     </AbsoluteFill>
   );

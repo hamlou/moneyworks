@@ -109,6 +109,11 @@ Quality gates in `check`/`build` (never weaken them to get a pass): the §3 hook
 - Real photos only from Wikimedia/Pexels with the licence in the description ([LICENSES]). No other creators' clips, no news-channel footage.
 - Thumbnail = §2 step 6.
 
+### 6b. SOUND (owner 15 Nov: "a full library of cool trendy sound effects… rich in sound effects") — automatic, nothing to write in the spec
+- Library: `public/sfx/lib/<category>/` = REAL recordings (65 Kenney CC0 files; every file listed with source + licence in `public/sfx/lib/LICENSE.txt`) + `public/sfx/doc/` = made by us (`py pipeline/sfx_doc.py`) for what CC0 packs lack (braam, sub drop, heartbeat, typing, reverse swell…). `py pipeline/sfx_doc.py list` shows it.
+- Adding sounds: put files in `public/sfx/lib/<category>/` AND add a line to LICENSE.txt (source URL + licence that allows commercial use). Never add "free pack" files without a clear licence (15 Nov: a GitHub pack labelled CC0 had 374 of 496 files from unlicensed "free packs" — we took only the 122 verified ones).
+- `build` layers the sounds itself (table `SOUND` in `tools/doc.py`): every visual event gets 1-3 layered sounds, risers END on the reveal, a braam on the title card, a heartbeat under the drain, typing on receipt rows, a low drone under cinematic stills; sounds rotate so none repeats back to back. Gate: ≥ 45 cues per minute.
+
 ### 7. After upload
 - 48 h and 7 days: impressions, CTR, average view duration, retention graph → `analytics/LOG.md`. One line of "why" per video; rules change only when 3+ videos show the same thing.
 

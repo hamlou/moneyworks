@@ -27,9 +27,46 @@ PICTO = "person laptop key door lock mask tunnel gun".split()
 MOODS = {"tense": "km/investigations.mp3", "dark": "km/darkest_child.mp3", "mystery": "km/unanswered_questions.mp3", "drive": "km/hitman.mp3",
          "react": "km/volatile_reaction.mp3", "sad": "km/hiding_your_reality.mp3", "think": "km/thinking_music.mp3", "none": None}
 MUSIC_V, SFX_V = 0.06, 0.2
-SFX = {"label": ["click.wav"], "big": ["thump_low.wav"], "stat": ["count_roll_short.wav"], "bar": ["slide.wav"], "stamp": ["stamp.wav"], "row": ["tick.wav"], "circle": ["draw.wav"],
-       "tile": ["click.wav"], "deny": ["thud.wav"], "title": ["boom.wav"], "quote": ["swish.wav"], "head": ["paper.wav"], "time": ["tick.wav"], "sub": ["click.wav"],
-       "scene_image": ["whoosh_s.wav", "thump_low.wav"], "scene_card": ["pageflip.wav", "paper.wav"], "scene_other": ["swish.wav"]}
+# SOUND DESIGN (owner 15 Nov: "rich in sound effects"). Every visual event = a LAYER of sounds from the library
+# (public/sfx/lib = real CC0 recordings, public/sfx/doc = made by us; list: py pipeline/sfx_doc.py list).
+# (category, volume, lead): lead=True → the sound ENDS on the event (risers build up into it).
+SOUND = {
+    "label": [("blip", 0.7, False)], "sub": [("blip", 0.6, False)], "tile": [("blip", 0.8, False), ("shimmer", 0.35, False)],
+    "big": [("riser", 0.6, True), ("hit", 1.0, False), ("sub_drop", 0.7, False)],
+    "stat": [("count", 0.7, False), ("shimmer", 0.4, False)], "bar": [("whoosh", 0.7, False), ("tick", 0.5, False)],
+    "stamp": [("stamp", 1.0, False), ("hit", 0.55, False)], "circle": [("circle", 0.9, False)],
+    "row": [("type", 0.55, False)], "deny": [("stamp", 1.0, False), ("sub_drop", 0.8, False)],
+    "title": [("riser_long", 0.7, True), ("braam", 1.0, False), ("hit", 0.8, False)],
+    "quote": [("reverse", 0.5, True), ("whoosh", 0.5, False)], "head": [("paper", 0.9, False), ("shutter", 0.5, False)],
+    "time": [("tick", 0.9, False), ("hit", 0.5, False)],
+    "scene_image": [("whoosh", 0.8, False), ("sub_drop", 0.4, False)], "scene_receipt": [("paper", 0.9, False), ("whoosh", 0.5, False)],
+    "scene_drain": [("heartbeat", 0.9, False), ("count", 0.6, False), ("whoosh", 0.6, False)], "scene_title": [("vault", 0.8, False)],
+    "scene_card": [("paper", 0.9, False), ("whoosh", 0.45, False)], "scene_list": [("paper", 0.8, False)], "scene_headline": [("shutter", 0.8, False), ("paper", 0.6, False)],
+    "scene_quote": [("tape_stop", 0.5, False)], "scene_tiles": [("whoosh", 0.6, False), ("blip", 0.5, False)], "scene_stats": [("glitch", 0.45, False), ("whoosh", 0.6, False)],
+    "scene_clock": [("tick", 0.8, False), ("static", 0.3, False)],
+}
+BED = {"image": 0.22, "drain": 0.3, "title": 0.3, "quote": 0.18, "clock": 0.2}  # a low tension drone under these shots
+MIN_CUES_PER_MIN = 45
+
+
+def sound_library():
+    import wave
+    sys.path.insert(0, str(R / "pipeline"))
+    import sfx_doc
+    inv = sfx_doc.inventory()
+    need = {c for layers in SOUND.values() for c, *_ in layers} | {"drone"}
+    miss = [c for c in sorted(need) if not inv.get(c)]
+    if miss:
+        sys.exit(f"✗ sound library has nothing for {miss} — run: py pipeline/sfx_doc.py")
+    dur = {}
+    for fs in inv.values():
+        for f in fs:
+            try:
+                with wave.open(str(R / "public" / f)) as w:
+                    dur[f] = w.getnframes() / w.getframerate()
+            except Exception:
+                dur[f] = 1.0
+    return inv, dur
 
 
 def norm(w):
@@ -385,11 +422,16 @@ def build(sp, fake):
     total = fr(V["total"]) + 20
     scenes, sfx, music, errs, counters = [], [], [], [], {}
 
+    inv, sdur = sound_library()
+
     def snd(kind, at, k=1.0):
-        opts = SFX[kind]
-        i = counters.get(kind, 0)
-        counters[kind] = i + 1
-        sfx.append({"at": max(0, at), "src": "sfx/" + opts[i % len(opts)], "v": round(SFX_V * k, 3)})
+        for cat, vol, lead in SOUND[kind]:
+            opts = inv[cat]
+            i = counters.get(cat, 0)
+            counters[cat] = i + 1
+            f = opts[(i * 5 + len(kind)) % len(opts)]  # walk the whole category, never the same sound twice in a row
+            n = round(sdur[f] * FPS)
+            sfx.append({"at": max(0, at - n if lead else at), "src": f, "v": round(SFX_V * k * vol, 3), "d": n + 4})
 
     by_scene = {}
     for si, li, bid, sc, ln in lines_of(sp):
@@ -421,14 +463,14 @@ def build(sp, fake):
                     o["row"] -= 1
                 ev.append(o)
                 vis.append(at)
-                snd(e["v"], at, 0.6 if e["v"] == "row" else 1.0)
+                snd("tile" if e["v"] == "row" and sc["kind"] == "list" else e["v"], at)
         ev.sort(key=lambda e: e["at"])
         keep = {k: sc[k] for k in ("img", "move", "hud", "tag", "head", "source", "by", "pub", "date", "n", "side", "bg") if k in sc}
         if sc["kind"] == "drain":
             keep["n"], keep["source"] = sc["amount"], sc.get("prefix", "$")
         scenes.append({"from": start, "to": 0, "kind": sc["kind"], **keep, "ev": ev, "_mood": sc.get("mood"), "_vis": vis})
         if si:
-            snd("scene_image" if sc["kind"] in ("image", "receipt", "drain", "title") else "scene_card" if sc["kind"] in ("card", "list", "headline") else "scene_other", start, 0.8)
+            snd("scene_" + sc["kind"], start, 0.85)
     if errs:
         sys.exit("✗ " + "\n✗ ".join(errs))
     mood = "tense"
@@ -440,6 +482,11 @@ def build(sp, fake):
             music[-1]["to"] = s["to"]
         elif m:
             music.append({"src": "music/" + m, "from": s["from"], "to": s["to"], "v": MUSIC_V})
+    for s in scenes:  # tension bed under the cinematic shots
+        if s["kind"] in BED:
+            f = inv["drone"][counters.get("drone", 0) % len(inv["drone"])]
+            counters["drone"] = counters.get("drone", 0) + 1
+            sfx.append({"at": s["from"], "src": f, "v": round(SFX_V * BED[s["kind"]], 3), "d": min(s["to"] - s["from"], round(sdur[f] * FPS))})
     # quality gate: something new at least every 4 s
     slow = []
     for i, s in enumerate(scenes):
@@ -489,6 +536,10 @@ def build(sp, fake):
     m = re.search(r"(\d+) Minutes", sp["title"])
     if m and not fake and not int(m.group(1)) - 1.0 <= total / FPS / 60 <= int(m.group(1)) + 0.34:
         sys.exit(f"✗ title says {m.group(1)} minutes but the video is {total / FPS / 60:.1f} min — the title must be true")
+    cpm = len(sfx) / (total / FPS / 60)
+    if cpm < MIN_CUES_PER_MIN:
+        slow.append(f"sound: {cpm:.0f} sound cues per minute — need ≥ {MIN_CUES_PER_MIN} (add visual events; every event brings its sounds)")
+    print(f"sound: {len(sfx)} cues = {cpm:.0f} per minute from {len({c['src'] for c in sfx})} different sounds")
     for s_ in slow:
         print("  ✗", s_)
     if slow and not fake:
