@@ -1,898 +1,787 @@
 {
  "fps": 30,
- "total": 45.437,
- "hash": "f0fd23bc0afa7766",
+ "total": 41.799,
+ "hash": "e2c1a5d1dc6ae0f4",
  "chapters": [],
  "beats": [
   {
    "id": "b001",
-   "text": "On a quiet Tuesday evening a Citibank employee clicks a button to send a routine payment.",
+   "text": "At five forty five on a Tuesday evening one click sent nine hundred million dollars out of Citibank.",
    "start": 0.08,
-   "end": 4.1,
+   "end": 5.011,
    "words": [
     {
-     "text": "On",
+     "text": "At",
      "start": 0.08,
-     "end": 0.18
+     "end": 0.213
+    },
+    {
+     "text": "five",
+     "start": 0.228,
+     "end": 0.45
+    },
+    {
+     "text": "forty",
+     "start": 0.474,
+     "end": 0.741
+    },
+    {
+     "text": "five",
+     "start": 0.77,
+     "end": 0.992
+    },
+    {
+     "text": "on",
+     "start": 1.017,
+     "end": 1.15
     },
     {
      "text": "a",
-     "start": 0.18,
-     "end": 0.24
-    },
-    {
-     "text": "quiet",
-     "start": 0.24,
-     "end": 0.5
+     "start": 1.165,
+     "end": 1.254
     },
     {
      "text": "Tuesday",
-     "start": 0.5,
-     "end": 0.82
+     "start": 1.263,
+     "end": 1.618
     },
     {
      "text": "evening",
-     "start": 0.82,
-     "end": 1.26
+     "start": 1.658,
+     "end": 2.013
     },
     {
-     "text": "a",
-     "start": 1.54,
-     "end": 1.58
+     "text": "one",
+     "start": 2.052,
+     "end": 2.23
     },
     {
-     "text": "Citibank",
-     "start": 1.58,
-     "end": 1.98
+     "text": "click",
+     "start": 2.25,
+     "end": 2.516
     },
     {
-     "text": "employee",
-     "start": 1.98,
-     "end": 2.24
+     "text": "sent",
+     "start": 2.545,
+     "end": 2.767
     },
     {
-     "text": "clicks",
-     "start": 2.24,
-     "end": 2.62
+     "text": "nine",
+     "start": 2.792,
+     "end": 3.014
     },
     {
-     "text": "a",
-     "start": 2.62,
-     "end": 2.8
+     "text": "hundred",
+     "start": 3.038,
+     "end": 3.393
     },
     {
-     "text": "button",
-     "start": 2.8,
-     "end": 3.0
+     "text": "million",
+     "start": 3.433,
+     "end": 3.788
     },
     {
-     "text": "to",
-     "start": 3.0,
-     "end": 3.24
+     "text": "dollars",
+     "start": 3.827,
+     "end": 4.182
     },
     {
-     "text": "send",
-     "start": 3.24,
-     "end": 3.38
+     "text": "out",
+     "start": 4.222,
+     "end": 4.399
     },
     {
-     "text": "a",
-     "start": 3.38,
-     "end": 3.52
+     "text": "of",
+     "start": 4.419,
+     "end": 4.552
     },
     {
-     "text": "routine",
-     "start": 3.52,
-     "end": 3.68
-    },
-    {
-     "text": "payment.",
-     "start": 3.68,
-     "end": 4.1
+     "text": "Citibank.",
+     "start": 4.567,
+     "end": 5.011
     }
    ]
   },
   {
    "id": "b002",
-   "text": "It should be about eight million dollars.",
-   "start": 4.6584375,
-   "end": 5.9504375,
+   "text": "The money was gone before anyone at the bank looked up.",
+   "start": 5.776,
+   "end": 7.776,
    "words": [
     {
-     "text": "It",
-     "start": 4.658,
-     "end": 4.743
+     "text": "The",
+     "start": 5.776,
+     "end": 5.856
     },
     {
-     "text": "should",
-     "start": 4.752,
-     "end": 4.95
+     "text": "money",
+     "start": 5.856,
+     "end": 5.996
     },
     {
-     "text": "be",
-     "start": 4.972,
-     "end": 5.057
+     "text": "was",
+     "start": 5.996,
+     "end": 6.156
     },
     {
-     "text": "about",
-     "start": 5.067,
-     "end": 5.236
+     "text": "gone",
+     "start": 6.156,
+     "end": 6.356
     },
     {
-     "text": "eight",
-     "start": 5.255,
-     "end": 5.425
+     "text": "before",
+     "start": 6.356,
+     "end": 6.596
     },
     {
-     "text": "million",
-     "start": 5.444,
-     "end": 5.67
+     "text": "anyone",
+     "start": 6.596,
+     "end": 6.856
     },
     {
-     "text": "dollars.",
-     "start": 5.695,
-     "end": 5.95
+     "text": "at",
+     "start": 6.856,
+     "end": 7.076
+    },
+    {
+     "text": "the",
+     "start": 7.076,
+     "end": 7.136
+    },
+    {
+     "text": "bank",
+     "start": 7.136,
+     "end": 7.316
+    },
+    {
+     "text": "looked",
+     "start": 7.316,
+     "end": 7.536
+    },
+    {
+     "text": "up.",
+     "start": 7.536,
+     "end": 7.776
     }
    ]
   },
   {
    "id": "b003",
-   "text": "Instead the bank wires out almost nine hundred million dollars of its own money.",
-   "start": 7.365645833333334,
-   "end": 11.033645833333335,
+   "text": "But nobody hacked the bank.",
+   "start": 8.448125,
+   "end": 9.748125,
    "words": [
     {
-     "text": "Instead",
-     "start": 7.366,
-     "end": 7.695
+     "text": "But",
+     "start": 8.448,
+     "end": 8.588
+    },
+    {
+     "text": "nobody",
+     "start": 8.588,
+     "end": 8.788
+    },
+    {
+     "text": "hacked",
+     "start": 8.788,
+     "end": 9.288
     },
     {
      "text": "the",
-     "start": 7.731,
-     "end": 7.896
+     "start": 9.288,
+     "end": 9.568
     },
     {
-     "text": "bank",
-     "start": 7.914,
-     "end": 8.12
-    },
-    {
-     "text": "wires",
-     "start": 8.143,
-     "end": 8.389
-    },
-    {
-     "text": "out",
-     "start": 8.417,
-     "end": 8.581
-    },
-    {
-     "text": "almost",
-     "start": 8.599,
-     "end": 8.887
-    },
-    {
-     "text": "nine",
-     "start": 8.919,
-     "end": 9.125
-    },
-    {
-     "text": "hundred",
-     "start": 9.147,
-     "end": 9.476
-    },
-    {
-     "text": "million",
-     "start": 9.513,
-     "end": 9.842
-    },
-    {
-     "text": "dollars",
-     "start": 9.878,
-     "end": 10.207
-    },
-    {
-     "text": "of",
-     "start": 10.244,
-     "end": 10.367
-    },
-    {
-     "text": "its",
-     "start": 10.381,
-     "end": 10.545
-    },
-    {
-     "text": "own",
-     "start": 10.564,
-     "end": 10.728
-    },
-    {
-     "text": "money.",
-     "start": 10.746,
-     "end": 11.034
+     "text": "bank.",
+     "start": 9.568,
+     "end": 9.748
     }
    ]
   },
   {
    "id": "b004",
-   "text": "Nobody hacked anything and nobody stole a password.",
-   "start": 11.768375,
-   "end": 14.048375,
+   "text": "And nobody stole a password.",
+   "start": 10.276541666666667,
+   "end": 11.976541666666666,
    "words": [
     {
-     "text": "Nobody",
-     "start": 11.768,
-     "end": 12.028
-    },
-    {
-     "text": "hacked",
-     "start": 12.028,
-     "end": 12.268
-    },
-    {
-     "text": "anything",
-     "start": 12.268,
-     "end": 12.748
-    },
-    {
-     "text": "and",
-     "start": 12.748,
-     "end": 13.108
+     "text": "And",
+     "start": 10.277,
+     "end": 10.717
     },
     {
      "text": "nobody",
-     "start": 13.108,
-     "end": 13.328
+     "start": 10.717,
+     "end": 11.057
     },
     {
      "text": "stole",
-     "start": 13.328,
-     "end": 13.568
+     "start": 11.057,
+     "end": 11.417
     },
     {
      "text": "a",
-     "start": 13.568,
-     "end": 13.728
+     "start": 11.417,
+     "end": 11.557
     },
     {
      "text": "password.",
-     "start": 13.728,
-     "end": 14.048
+     "start": 11.557,
+     "end": 11.977
     }
    ]
   },
   {
    "id": "b005",
-   "text": "The bank meant to send this much.",
-   "start": 14.790354166666667,
-   "end": 16.310354166666666,
+   "text": "The bank asked for it back and a judge said no.",
+   "start": 12.729104166666668,
+   "end": 14.909104166666667,
    "words": [
     {
      "text": "The",
-     "start": 14.79,
-     "end": 14.91
+     "start": 12.729,
+     "end": 12.789
     },
     {
      "text": "bank",
-     "start": 14.91,
-     "end": 15.09
+     "start": 12.789,
+     "end": 12.929
     },
     {
-     "text": "meant",
-     "start": 15.09,
-     "end": 15.41
+     "text": "asked",
+     "start": 12.929,
+     "end": 13.149
     },
     {
-     "text": "to",
-     "start": 15.41,
-     "end": 15.63
+     "text": "for",
+     "start": 13.149,
+     "end": 13.409
     },
     {
-     "text": "send",
-     "start": 15.63,
-     "end": 15.81
+     "text": "it",
+     "start": 13.409,
+     "end": 13.509
     },
     {
-     "text": "this",
-     "start": 15.81,
-     "end": 16.05
+     "text": "back",
+     "start": 13.509,
+     "end": 13.729
     },
     {
-     "text": "much.",
-     "start": 16.05,
-     "end": 16.31
+     "text": "and",
+     "start": 13.729,
+     "end": 14.109
+    },
+    {
+     "text": "a",
+     "start": 14.109,
+     "end": 14.249
+    },
+    {
+     "text": "judge",
+     "start": 14.249,
+     "end": 14.369
+    },
+    {
+     "text": "said",
+     "start": 14.369,
+     "end": 14.649
+    },
+    {
+     "text": "no.",
+     "start": 14.649,
+     "end": 14.909
     }
    ]
   },
   {
    "id": "b006",
-   "text": "And it sent this much which is more than one hundred times too much.",
-   "start": 16.9718125,
-   "end": 19.6488125,
+   "text": "It meant to send eight million and it sent one hundred times more.",
+   "start": 15.709541666666667,
+   "end": 18.266541666666665,
    "words": [
     {
-     "text": "And",
-     "start": 16.972,
-     "end": 17.113
+     "text": "It",
+     "start": 15.71,
+     "end": 15.814
+    },
+    {
+     "text": "meant",
+     "start": 15.826,
+     "end": 16.033
+    },
+    {
+     "text": "to",
+     "start": 16.057,
+     "end": 16.161
+    },
+    {
+     "text": "send",
+     "start": 16.172,
+     "end": 16.345
+    },
+    {
+     "text": "eight",
+     "start": 16.365,
+     "end": 16.573
+    },
+    {
+     "text": "million",
+     "start": 16.596,
+     "end": 16.873
+    },
+    {
+     "text": "and",
+     "start": 16.904,
+     "end": 17.042
     },
     {
      "text": "it",
-     "start": 17.129,
-     "end": 17.234
+     "start": 17.058,
+     "end": 17.162
     },
     {
      "text": "sent",
-     "start": 17.246,
-     "end": 17.422
-    },
-    {
-     "text": "this",
-     "start": 17.442,
-     "end": 17.618
-    },
-    {
-     "text": "much",
-     "start": 17.637,
-     "end": 17.813
-    },
-    {
-     "text": "which",
-     "start": 17.833,
-     "end": 18.044
-    },
-    {
-     "text": "is",
-     "start": 18.068,
-     "end": 18.173
-    },
-    {
-     "text": "more",
-     "start": 18.185,
-     "end": 18.361
-    },
-    {
-     "text": "than",
-     "start": 18.381,
-     "end": 18.557
+     "start": 17.173,
+     "end": 17.347
     },
     {
      "text": "one",
-     "start": 18.576,
-     "end": 18.717
+     "start": 17.366,
+     "end": 17.504
     },
     {
      "text": "hundred",
-     "start": 18.733,
-     "end": 19.015
+     "start": 17.52,
+     "end": 17.797
     },
     {
      "text": "times",
-     "start": 19.046,
-     "end": 19.257
+     "start": 17.828,
+     "end": 18.036
     },
     {
-     "text": "too",
-     "start": 19.281,
-     "end": 19.422
-    },
-    {
-     "text": "much.",
-     "start": 19.437,
-     "end": 19.649
+     "text": "more.",
+     "start": 18.059,
+     "end": 18.267
     }
    ]
   },
   {
    "id": "b007",
-   "text": "A federal judge would later call it one of the biggest blunders in banking history.",
-   "start": 20.566291666666668,
-   "end": 23.746291666666668,
+   "text": "The judge called it one of the biggest blunders in banking history.",
+   "start": 19.12452083333333,
+   "end": 21.764520833333332,
    "words": [
     {
-     "text": "A",
-     "start": 20.566,
-     "end": 20.626
-    },
-    {
-     "text": "federal",
-     "start": 20.626,
-     "end": 20.806
+     "text": "The",
+     "start": 19.125,
+     "end": 19.185
     },
     {
      "text": "judge",
-     "start": 20.806,
-     "end": 21.106
+     "start": 19.185,
+     "end": 19.305
     },
     {
-     "text": "would",
-     "start": 21.106,
-     "end": 21.406
-    },
-    {
-     "text": "later",
-     "start": 21.406,
-     "end": 21.546
-    },
-    {
-     "text": "call",
-     "start": 21.546,
-     "end": 21.846
+     "text": "called",
+     "start": 19.305,
+     "end": 19.605
     },
     {
      "text": "it",
-     "start": 21.846,
-     "end": 21.966
+     "start": 19.605,
+     "end": 19.765
     },
     {
      "text": "one",
-     "start": 21.966,
-     "end": 22.086
+     "start": 19.765,
+     "end": 19.925
     },
     {
      "text": "of",
-     "start": 22.086,
-     "end": 22.166
+     "start": 19.925,
+     "end": 20.025
     },
     {
      "text": "the",
-     "start": 22.166,
-     "end": 22.266
+     "start": 20.025,
+     "end": 20.105
     },
     {
      "text": "biggest",
-     "start": 22.266,
-     "end": 22.466
+     "start": 20.105,
+     "end": 20.345
     },
     {
      "text": "blunders",
-     "start": 22.466,
-     "end": 22.886
+     "start": 20.345,
+     "end": 20.825
     },
     {
      "text": "in",
-     "start": 22.886,
-     "end": 23.126
+     "start": 20.825,
+     "end": 21.105
     },
     {
      "text": "banking",
-     "start": 23.126,
-     "end": 23.306
+     "start": 21.105,
+     "end": 21.345
     },
     {
      "text": "history.",
-     "start": 23.306,
-     "end": 23.746
+     "start": 21.345,
+     "end": 21.765
     }
    ]
   },
   {
    "id": "b008",
-   "text": "The payment leaves at five forty five.",
-   "start": 24.614333333333335,
-   "end": 26.111333333333334,
+   "text": "So who clicked and who kept the money and why did the law let them?",
+   "start": 22.734229166666665,
+   "end": 25.794229166666664,
    "words": [
     {
-     "text": "The",
-     "start": 24.614,
-     "end": 24.754
+     "text": "So",
+     "start": 22.734,
+     "end": 22.914
     },
     {
-     "text": "payment",
-     "start": 24.77,
-     "end": 25.051
+     "text": "who",
+     "start": 22.914,
+     "end": 23.174
     },
     {
-     "text": "leaves",
-     "start": 25.082,
-     "end": 25.327
+     "text": "clicked",
+     "start": 23.174,
+     "end": 23.454
     },
     {
-     "text": "at",
-     "start": 25.355,
-     "end": 25.46
+     "text": "and",
+     "start": 23.454,
+     "end": 23.714
     },
     {
-     "text": "five",
-     "start": 25.471,
-     "end": 25.647
+     "text": "who",
+     "start": 23.714,
+     "end": 23.834
     },
     {
-     "text": "forty",
-     "start": 25.666,
-     "end": 25.877
+     "text": "kept",
+     "start": 23.834,
+     "end": 23.974
     },
     {
-     "text": "five.",
-     "start": 25.9,
-     "end": 26.111
+     "text": "the",
+     "start": 23.974,
+     "end": 24.134
+    },
+    {
+     "text": "money",
+     "start": 24.134,
+     "end": 24.334
+    },
+    {
+     "text": "and",
+     "start": 24.334,
+     "end": 24.634
+    },
+    {
+     "text": "why",
+     "start": 24.634,
+     "end": 24.954
+    },
+    {
+     "text": "did",
+     "start": 24.954,
+     "end": 25.094
+    },
+    {
+     "text": "the",
+     "start": 25.094,
+     "end": 25.194
+    },
+    {
+     "text": "law",
+     "start": 25.194,
+     "end": 25.374
+    },
+    {
+     "text": "let",
+     "start": 25.374,
+     "end": 25.594
+    },
+    {
+     "text": "them?",
+     "start": 25.594,
+     "end": 25.794
     }
    ]
   },
   {
    "id": "b009",
-   "text": "Nobody notices until the next morning.",
-   "start": 26.691458333333333,
-   "end": 28.411458333333332,
+   "text": "This is the nine hundred million dollar click.",
+   "start": 26.6293125,
+   "end": 28.8753125,
    "words": [
     {
-     "text": "Nobody",
-     "start": 26.691,
-     "end": 26.991
+     "text": "This",
+     "start": 26.629,
+     "end": 26.847
     },
     {
-     "text": "notices",
-     "start": 26.991,
-     "end": 27.391
-    },
-    {
-     "text": "until",
-     "start": 27.391,
-     "end": 27.731
+     "text": "is",
+     "start": 26.872,
+     "end": 27.003
     },
     {
      "text": "the",
-     "start": 27.731,
-     "end": 27.891
+     "start": 27.017,
+     "end": 27.192
     },
     {
-     "text": "next",
-     "start": 27.891,
-     "end": 28.051
+     "text": "nine",
+     "start": 27.211,
+     "end": 27.429
     },
     {
-     "text": "morning.",
-     "start": 28.051,
-     "end": 28.411
+     "text": "hundred",
+     "start": 27.454,
+     "end": 27.803
+    },
+    {
+     "text": "million",
+     "start": 27.842,
+     "end": 28.191
+    },
+    {
+     "text": "dollar",
+     "start": 28.23,
+     "end": 28.535
+    },
+    {
+     "text": "click.",
+     "start": 28.569,
+     "end": 28.875
     }
    ]
   },
   {
    "id": "b010",
-   "text": "The bank asks for the money back and some of the lenders simply say no.",
-   "start": 28.976604166666668,
-   "end": 32.096604166666665,
+   "text": "The payment leaves at five forty five and nobody notices until morning.",
+   "start": 29.635270833333333,
+   "end": 32.79527083333333,
    "words": [
     {
      "text": "The",
-     "start": 28.977,
-     "end": 29.037
+     "start": 29.635,
+     "end": 29.795
     },
     {
-     "text": "bank",
-     "start": 29.037,
-     "end": 29.177
+     "text": "payment",
+     "start": 29.813,
+     "end": 30.133
     },
     {
-     "text": "asks",
-     "start": 29.177,
-     "end": 29.457
+     "text": "leaves",
+     "start": 30.168,
+     "end": 30.448
     },
     {
-     "text": "for",
-     "start": 29.457,
-     "end": 29.757
+     "text": "at",
+     "start": 30.479,
+     "end": 30.599
     },
     {
-     "text": "the",
-     "start": 29.757,
-     "end": 29.797
+     "text": "five",
+     "start": 30.613,
+     "end": 30.813
     },
     {
-     "text": "money",
-     "start": 29.797,
-     "end": 29.957
+     "text": "forty",
+     "start": 30.835,
+     "end": 31.075
     },
     {
-     "text": "back",
-     "start": 29.957,
-     "end": 30.197
+     "text": "five",
+     "start": 31.102,
+     "end": 31.302
     },
     {
      "text": "and",
-     "start": 30.197,
-     "end": 30.497
+     "start": 31.324,
+     "end": 31.484
     },
     {
-     "text": "some",
-     "start": 30.497,
-     "end": 30.897
+     "text": "nobody",
+     "start": 31.502,
+     "end": 31.782
     },
     {
-     "text": "of",
-     "start": 30.897,
-     "end": 30.997
+     "text": "notices",
+     "start": 31.813,
+     "end": 32.133
     },
     {
-     "text": "the",
-     "start": 30.997,
-     "end": 31.117
+     "text": "until",
+     "start": 32.168,
+     "end": 32.408
     },
     {
-     "text": "lenders",
-     "start": 31.117,
-     "end": 31.317
-    },
-    {
-     "text": "simply",
-     "start": 31.317,
-     "end": 31.657
-    },
-    {
-     "text": "say",
-     "start": 31.657,
-     "end": 31.897
-    },
-    {
-     "text": "no.",
-     "start": 31.897,
-     "end": 32.097
+     "text": "morning.",
+     "start": 32.435,
+     "end": 32.795
     }
    ]
   },
   {
    "id": "b011",
-   "text": "Almost nine hundred million dollars went out.",
-   "start": 32.88791666666667,
-   "end": 34.64891666666667,
+   "text": "Then the bank asks for its money back and some lenders simply say no.",
+   "start": 33.417375,
+   "end": 36.797375,
    "words": [
     {
-     "text": "Almost",
-     "start": 32.888,
-     "end": 33.132
+     "text": "Then",
+     "start": 33.417,
+     "end": 33.617
     },
     {
-     "text": "nine",
-     "start": 33.159,
-     "end": 33.333
+     "text": "the",
+     "start": 33.617,
+     "end": 33.797
     },
     {
-     "text": "hundred",
-     "start": 33.352,
-     "end": 33.631
+     "text": "bank",
+     "start": 33.797,
+     "end": 33.977
     },
     {
-     "text": "million",
-     "start": 33.662,
-     "end": 33.941
+     "text": "asks",
+     "start": 33.977,
+     "end": 34.357
     },
     {
-     "text": "dollars",
-     "start": 33.971,
-     "end": 34.25
+     "text": "for",
+     "start": 34.357,
+     "end": 34.597
     },
     {
-     "text": "went",
-     "start": 34.281,
-     "end": 34.455
+     "text": "its",
+     "start": 34.597,
+     "end": 34.717
     },
     {
-     "text": "out.",
-     "start": 34.475,
-     "end": 34.649
+     "text": "money",
+     "start": 34.717,
+     "end": 34.897
+    },
+    {
+     "text": "back",
+     "start": 34.897,
+     "end": 35.177
+    },
+    {
+     "text": "and",
+     "start": 35.177,
+     "end": 35.417
+    },
+    {
+     "text": "some",
+     "start": 35.417,
+     "end": 35.617
+    },
+    {
+     "text": "lenders",
+     "start": 35.617,
+     "end": 35.877
+    },
+    {
+     "text": "simply",
+     "start": 35.877,
+     "end": 36.317
+    },
+    {
+     "text": "say",
+     "start": 36.317,
+     "end": 36.537
+    },
+    {
+     "text": "no.",
+     "start": 36.537,
+     "end": 36.797
     }
    ]
   },
   {
    "id": "b012",
-   "text": "And about half a billion of it did not come back.",
-   "start": 35.21002083333333,
-   "end": 37.37002083333333,
+   "text": "Almost nine hundred million went out and half a billion never came back.",
+   "start": 37.673833333333334,
+   "end": 41.08583333333333,
    "words": [
     {
-     "text": "And",
-     "start": 35.21,
-     "end": 35.31
+     "text": "Almost",
+     "start": 37.674,
+     "end": 37.971
     },
     {
-     "text": "about",
-     "start": 35.31,
-     "end": 35.49
+     "text": "nine",
+     "start": 38.004,
+     "end": 38.216
+    },
+    {
+     "text": "hundred",
+     "start": 38.239,
+     "end": 38.579
+    },
+    {
+     "text": "million",
+     "start": 38.616,
+     "end": 38.956
+    },
+    {
+     "text": "went",
+     "start": 38.993,
+     "end": 39.206
+    },
+    {
+     "text": "out",
+     "start": 39.229,
+     "end": 39.399
+    },
+    {
+     "text": "and",
+     "start": 39.418,
+     "end": 39.587
     },
     {
      "text": "half",
-     "start": 35.49,
-     "end": 35.83
+     "start": 39.606,
+     "end": 39.818
     },
     {
      "text": "a",
-     "start": 35.83,
-     "end": 35.97
+     "start": 39.842,
+     "end": 39.926
     },
     {
      "text": "billion",
-     "start": 35.97,
-     "end": 36.19
+     "start": 39.936,
+     "end": 40.275
     },
     {
-     "text": "of",
-     "start": 36.19,
-     "end": 36.43
+     "text": "never",
+     "start": 40.313,
+     "end": 40.567
     },
     {
-     "text": "it",
-     "start": 36.43,
-     "end": 36.57
-    },
-    {
-     "text": "did",
-     "start": 36.57,
-     "end": 36.73
-    },
-    {
-     "text": "not",
-     "start": 36.73,
-     "end": 36.91
-    },
-    {
-     "text": "come",
-     "start": 36.91,
-     "end": 37.15
+     "text": "came",
+     "start": 40.596,
+     "end": 40.808
     },
     {
      "text": "back.",
-     "start": 37.15,
-     "end": 37.37
-    }
-   ]
-  },
-  {
-   "id": "b013",
-   "text": "So this is the story of the click and of who kept the money and of what the judge decided.",
-   "start": 38.07629166666667,
-   "end": 42.29629166666667,
-   "words": [
-    {
-     "text": "So",
-     "start": 38.076,
-     "end": 38.256
-    },
-    {
-     "text": "this",
-     "start": 38.256,
-     "end": 38.536
-    },
-    {
-     "text": "is",
-     "start": 38.536,
-     "end": 38.676
-    },
-    {
-     "text": "the",
-     "start": 38.676,
-     "end": 38.796
-    },
-    {
-     "text": "story",
-     "start": 38.796,
-     "end": 39.056
-    },
-    {
-     "text": "of",
-     "start": 39.056,
-     "end": 39.256
-    },
-    {
-     "text": "the",
-     "start": 39.256,
-     "end": 39.356
-    },
-    {
-     "text": "click",
-     "start": 39.356,
-     "end": 39.476
-    },
-    {
-     "text": "and",
-     "start": 40.056,
-     "end": 40.096
-    },
-    {
-     "text": "of",
-     "start": 40.096,
-     "end": 40.216
-    },
-    {
-     "text": "who",
-     "start": 40.216,
-     "end": 40.356
-    },
-    {
-     "text": "kept",
-     "start": 40.356,
-     "end": 40.496
-    },
-    {
-     "text": "the",
-     "start": 40.496,
-     "end": 40.656
-    },
-    {
-     "text": "money",
-     "start": 40.656,
-     "end": 40.896
-    },
-    {
-     "text": "and",
-     "start": 40.896,
-     "end": 41.256
-    },
-    {
-     "text": "of",
-     "start": 41.256,
-     "end": 41.376
-    },
-    {
-     "text": "what",
-     "start": 41.376,
-     "end": 41.516
-    },
-    {
-     "text": "the",
-     "start": 41.516,
-     "end": 41.636
-    },
-    {
-     "text": "judge",
-     "start": 41.636,
-     "end": 41.756
-    },
-    {
-     "text": "decided.",
-     "start": 41.756,
-     "end": 42.296
-    }
-   ]
-  },
-  {
-   "id": "b014",
-   "text": "It starts at five forty five in the evening.",
-   "start": 43.0315,
-   "end": 44.5995,
-   "words": [
-    {
-     "text": "It",
-     "start": 43.032,
-     "end": 43.127
-    },
-    {
-     "text": "starts",
-     "start": 43.139,
-     "end": 43.363
-    },
-    {
-     "text": "at",
-     "start": 43.388,
-     "end": 43.483
-    },
-    {
-     "text": "five",
-     "start": 43.494,
-     "end": 43.654
-    },
-    {
-     "text": "forty",
-     "start": 43.672,
-     "end": 43.864
-    },
-    {
-     "text": "five",
-     "start": 43.885,
-     "end": 44.044
-    },
-    {
-     "text": "in",
-     "start": 44.062,
-     "end": 44.159
-    },
-    {
-     "text": "the",
-     "start": 44.169,
-     "end": 44.297
-    },
-    {
-     "text": "evening.",
-     "start": 44.312,
-     "end": 44.599
+     "start": 40.831,
+     "end": 41.086
     }
    ]
   }
