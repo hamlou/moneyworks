@@ -9,9 +9,12 @@
 > New episode: read [RECIPE] only (owner 30 Oct 2026: low tokens), open other parts with grep when a step needs them.
 > [3D] §0 (v7 standard) wins over every older rule. Shorts rules are in SHORTS.md — never mix them (owner, 11 Oct 2026).
 
+> **14 Nov 2026 — [DOC] is THE format for every new video. Read [DOC] only. Everything below it ([RECIPE], [3D], [PLAYBOOK], [UPGRADE], [BRIEF]) is RETIRED history: never build a new video from those parts.**
+
 ## Parts (priority order: on a conflict the HIGHER part wins)
 | tag | was | what |
 |---|---|---|
+| [DOC] | new 14 Nov 2026 | CINEMATIC DOCUMENTARY — the only live format + autopilot (`tools/doc.py`) — start here |
 | [RECIPE] | EPISODE_RECIPE.md | THE file for a new episode (ea1 style, low tokens) — start here |
 | [3D] | STYLE_3D.md | v6/v7 3D style standard — wins over everything below (shared with SHORTS.md) |
 | [PLAYBOOK] | PLAYBOOK_LONG.md | Long-form playbook (older base rules; 3D/RECIPE win on conflict) |
@@ -23,7 +26,74 @@
 
 ---
 
-## [RECIPE] — was EPISODE_RECIPE.md
+## [DOC] — cinematic documentary (owner 14 Nov 2026) — THE ONLY LIVE FORMAT
+
+### 0. Why (evidence, 14 Nov 2026)
+- Our record: 19 long videos, median 45 views; 2D stickman era best 900; 3D era 5–36. Owner: "i hate the edit of the old 2D stickman… inspire from someone that has a very advanced quality of editing… always look for whats working."
+- Dozens of AI stickman-money clone channels sit under ~300 views (Stickonomics, Economy with sticks…). That crowd is dead.
+- Model (owner picked it): **Gloam** (@Gloamdocs, started 30 Oct 2026, 4 videos) — "How Binance Lost $6,300,000,000 in One Night" = 2.5M views (youtu.be/5eZj1OnC1C4). Its other 3 videos: 33k / 31k / 1.1k → the STORY + TITLE decide, the look only keeps people.
+- No promise of virality. We judge after 10 videos in this ONE format, never after one. No style change before that.
+
+### 1. The format in one paragraph
+One TRUE money story told like a heist or a collapse: who, how much, minute by minute, who kept the money, what happened after. Narrator (not Dave, no character on screen). Dark graded cinematic stills, cream paper cards, receipts, serif numbers + mono caps labels, stat counters, timeline tiles, real quotes, film grain. Every shot adds things ON the spoken word. 8–15 min.
+
+### 2. Topic + title (decides the views)
+- Before any topic: run the `yt-viral` skill (what beat its own channel in the last 60 days). Propose 3, owner picks 1.
+- Story must have: ONE huge exact number, a named real company/person, a ticking moment (a date + a time), a twist, an ending. Fresh news beats old news (Gloam's hit was 2 weeks after the event).
+- Title formula that worked: "How <Name> Lost $<exact number> in One <Night/Click/Day>". ≤ 60 chars. If the title has "N Minutes", the video must be N minutes (`build` refuses otherwise).
+- Never: textbook topics ("how X works"), personal-finance chores, politics names, a title the video does not pay off.
+
+### 3. Script rules (`check` enforces most)
+- Hook = first 3 shots: scene 1 is an image or receipt with a `hud` (exact time · place) → we open INSIDE the moment; the amount is on screen within 3 shots; first line ≤ 18 words. Then "this file" list (the 3 questions the video answers) by ~40 s.
+- Each of the 3 questions is answered late; the biggest one last. End = what happened to everyone + one line that links to the viewer's own money. No "subscribe", no recap.
+- Lines: 1–30 words, numbers written as words, no commas (voice), every figure has `src`. Quotes are VERBATIM from the source and `by` names who + when.
+- Never state a guess as fact. Reconstructed pictures carry `"tag": "RECONSTRUCTION"`.
+
+### 4. The spec — `pipeline/doc/<id>.json`
+```json
+{"id": "citi", "title": "How Citibank Lost $900,000,000 With One Click",
+ "sources": [{"id": "S1", "short": "…", "url": "https://…", "fact": "what it proves"}],
+ "scenes": [
+  {"kind": "image", "img": "nyc.jpg", "prompt": "exact text for Gemini", "hud": "AUGUST 11 2020 · 5:45 PM ET · NEW YORK", "tag": "RECONSTRUCTION", "move": "push", "mood": "tense",
+   "lines": [{"say": "…", "src": "S1", "show": [{"on": "clicks", "v": "label", "t": "ONE CLICK", "pos": "br"}]}]}]}
+```
+`say` = one spoken line. `show` = what appears, in order; `on` = the spoken word it lands on (no `on` = start of the line). Working example: `pipeline/doc/citi.json`.
+
+| kind | scene fields | events (`v`) |
+|---|---|---|
+| image | img, prompt, move (push pull left right), hud?, tag? | `label` {t ≤ 28, pos tl tr bl br l r, sub?} · `big` {t ≤ 18 or n (counts up), label?} |
+| receipt | head (2 lines with \n), img? | `row` {k, val, bold?} (≤ 8) · `circle` {row: number} |
+| card | head, source?, bg? ("light") | `stat` {n or t, prefix, suffix, dec, label, color?} · `bar` {label, val, w 0–1, color?} · `stamp` {t ≤ 22} (≤ 3 stat+bar) |
+| stats | head, side ("globe" or an image file) | `stat` (≤ 3) |
+| tiles | head, n (total tiles) | `tile` {t ≤ 24, sub?} (≤ 6; the newest one is gold) |
+| list | head | `row` {t ≤ 34} (≤ 5) |
+| quote | by | `quote` {t ≤ 140, verbatim} |
+| headline | pub, date (a REAL publication/court + date) | `head` {t ≤ 90, [highlight] in brackets} (≤ 2, verbatim) |
+| clock | — | `time` {t ≤ 12} · `sub` {t ≤ 44} |
+`mood` on a scene switches the music: tense dark mystery drive react sad think none. Sounds are automatic.
+
+### 5. Commands (all in the `moneyworks` folder)
+```
+py tools/doc.py check <id>      # fix every ✗ until SPEC OK
+py tools/doc.py images <id>     # the stills to make + the exact Gemini prompt for each → save as public/<id>/<file>
+py tools/doc.py voice <id>      # writes pipeline/episodes/<id>.json → push (py tools/apipush.py "msg" <files>) → voice.yml voices it
+py tools/doc.py build <id>      # after the voice: timing → plan. Refuses: > 5 s with nothing new, missing stills, untrue title length
+py tools/doc.py stills <id>     # preview frames → videos/<id>/preview/ — SHOW THE OWNER before rendering
+py tools/doc.py render <id>     # writes pipeline/split/RUN → push → v6split.yml renders on GitHub
+```
+Quality gates in `check`/`build` (never weaken them to get a pass): ≥ 30 shots, ≥ 6 shot kinds, never 3 of a kind in a row, 25–55 % cinematic stills, ≤ 60 words per shot, something new every ≤ 5 s on the real voice, every figure sourced, hook rules of §3.
+
+### 6. Stills + thumbnail (owner makes pictures in Gemini Pro)
+- Stills: one per image scene, 16:9, dark cinematic 3D-render look, ONE object or place, no text, no real person's face. Until a still exists a grey placeholder is used; `build` refuses a full video with placeholders.
+- Real photos only from Wikimedia/Pexels with the licence in the description ([LICENSES]). No other creators' clips, no news-channel footage.
+- Thumbnail (ban of 30 Oct lifted 14 Nov — "the thumbnail is the most important part"): Claude gives ONE idea copied from a proven outlier layout + ≤ 4 words; owner makes the picture; 3 versions go to YouTube Test & compare.
+
+### 7. After upload
+- 48 h and 7 days: impressions, CTR, average view duration, retention graph → `analytics/LOG.md`. One line of "why" per video; rules change only when 3+ videos show the same thing.
+
+---
+
+## [RECIPE] — was EPISODE_RECIPE.md — RETIRED 14 Nov 2026 (history only)
 
 ## EPISODE RECIPE — the ONLY file to read for a new episode (owner 30 Oct 2026: same style as ea1, far fewer tokens)
 Style = ea1 (reverse-engineered, owner-approved). Do NOT re-read LONG.md [3D] / PLAYBOOK_*.md / lib.py / Ea1.tsx in full —

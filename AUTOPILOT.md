@@ -1,3 +1,5 @@
+> **RETIRED 14 Nov 2026.** The live autopilot is `tools/doc.py` (cinematic documentary). Read `LONG.md [DOC]` — its §4 is the spec format and §5 the commands. Everything below describes the old 3D autopilot (`tools/auto.py`) and is kept as history only: do not make new videos with it.
+
 # AUTOPILOT: make a full video by writing ONE JSON file
 
 Any AI (Gemini CLI, Qwen Code, ChatGPT) or a person can make an ea1-quality video. **You never write code.** You write

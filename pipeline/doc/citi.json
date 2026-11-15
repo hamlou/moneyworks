@@ -1,26 +1,322 @@
-{"id":"citi","title":"How Citibank Lost $900,000,000 With One Click","test":true,
- "sources":[{"id":"S1","short":"In re Citibank August 11, 2020 Wire Transfers, S.D.N.Y., Feb 16 2021","url":"https://law.justia.com/cases/federal/district-courts/new-york/nysdce/1:2020cv06539/542310/243/","fact":"Citibank meant to wire about $7.8M in interest to Revlon lenders and wired about $893.9M; lenders kept about $504M; judge: one of the biggest blunders in banking history."}],
- "scenes":[
-  {"kind":"image","img":"nyc.jpg","prompt":"Cinematic night photo of Manhattan office towers seen from above, a few windows lit, cold blue tones with warm window light, shallow haze, 16:9, moody documentary still, no text","hud":"AUGUST 11 2020 · 5:45 PM ET · NEW YORK","tag":"RECONSTRUCTION","move":"push","mood":"tense","lines":[
-   {"say":"On a quiet Tuesday evening a Citibank employee clicks a button to send a routine payment.","src":"S1","show":[{"on":"clicks","v":"label","t":"ONE CLICK","pos":"br"}]},
-   {"say":"It should be about eight million dollars.","src":"S1","show":[{"on":"eight","v":"label","t":"$7.8 million","sub":"SUPPOSED TO SEND","pos":"l"}]}]},
-  {"kind":"receipt","head":"CITIBANK N.A.\nOUTGOING WIRE TRANSFER","lines":[
-   {"say":"Instead the bank wires out almost nine hundred million dollars of its own money.","src":"S1","show":[{"v":"row","k":"DATE","val":"AUG 11 2020"},{"v":"row","k":"CLIENT","val":"REVLON INC"},{"on":"bank","v":"row","k":"TYPE","val":"INTEREST"},{"on":"wires","v":"row","k":"EXPECTED","val":"$7,800,000"},{"on":"nine","v":"row","k":"SENT","val":"$893,944,008","bold":true},{"on":"own","v":"row","k":"STATUS","val":"COMPLETE"},{"on":"own","v":"circle","row":5}]}]},
-  {"kind":"image","img":"vault.jpg","prompt":"Cinematic 3D render of a huge round steel bank vault door standing open in a dark concrete room, one cold spotlight from above, gold reflections inside, dramatic shadows, 16:9, no text","move":"pull","lines":[
-   {"say":"Nobody hacked anything and nobody stole a password.","show":[{"v":"big","t":"$900,000,000","label":"GONE IN ONE CLICK"},{"on":"hacked","v":"label","t":"NO HACK","pos":"tl"},{"on":"password","v":"label","t":"NO THIEF","pos":"tr"}]}]},
-  {"kind":"card","head":"CITIBANK · AUGUST 11 2020","source":"SOURCE: U.S. DISTRICT COURT, S.D.N.Y. · VALUE AT TIME OF TRANSFER","lines":[
-   {"say":"The bank meant to send this much.","src":"S1","show":[{"v":"bar","label":"MEANT TO SEND","val":"$7.8M","w":0.03}]},
-   {"say":"And it sent this much which is more than one hundred times too much.","src":"S1","show":[{"on":"sent","v":"bar","label":"ACTUALLY SENT","val":"$893.9M","w":1,"color":"red"},{"on":"hundred","v":"stamp","t":"114× too much"}]}]},
-  {"kind":"quote","by":"U.S. DISTRICT JUDGE JESSE FURMAN · FEBRUARY 16 2021","lines":[
-   {"say":"A federal judge would later call it one of the biggest blunders in banking history.","src":"S1","show":[{"on":"one","v":"quote","t":"one of the biggest blunders in banking history"}]}]},
-  {"kind":"tiles","head":"CITIBANK · THE NEXT 24 HOURS","n":5,"lines":[
-   {"say":"The payment leaves at five forty five.","show":[{"v":"tile","t":"PAYMENT SENT","sub":"5:45 PM"}]},
-   {"say":"Nobody notices until the next morning.","show":[{"on":"notices","v":"tile","t":"NOBODY NOTICES","sub":"OVERNIGHT"},{"on":"morning","v":"tile","t":"ERROR FOUND","sub":"NEXT MORNING"}]},
-   {"say":"The bank asks for the money back and some of the lenders simply say no.","src":"S1","show":[{"on":"asks","v":"tile","t":"BANK ASKS NICELY","sub":"AUG 12"},{"on":"no","v":"tile","t":"LENDERS SAY NO","sub":"$504M KEPT"}]}]},
-  {"kind":"stats","head":"CITIBANK · THE DAMAGE","side":"globe","lines":[
-   {"say":"Almost nine hundred million dollars went out.","src":"S1","show":[{"v":"stat","n":893.9,"dec":1,"prefix":"$","suffix":"M","label":"SENT BY MISTAKE"}]},
-   {"say":"And about half a billion of it did not come back.","src":"S1","show":[{"on":"half","v":"stat","n":504,"prefix":"$","suffix":"M","label":"NOT RETURNED","color":"red"}]}]},
-  {"kind":"list","head":"THIS FILE","lines":[
-   {"say":"So this is the story of the click and of who kept the money and of what the judge decided.","show":[{"on":"click","v":"row","t":"The click"},{"on":"kept","v":"row","t":"Who kept the money"},{"on":"judge","v":"row","t":"What the judge decided"}]}]},
-  {"kind":"clock","lines":[{"say":"It starts at five forty five in the evening.","show":[{"v":"time","t":"5:45 PM"},{"on":"evening","v":"sub","t":"AUGUST 11 2020 · THE CLICK"}]}]}
- ]}
+{
+ "id": "citi",
+ "title": "How Citibank Lost $900,000,000 With One Click",
+ "test": true,
+ "tempo": 0.88,
+ "sources": [
+  {
+   "id": "S1",
+   "short": "In re Citibank August 11, 2020 Wire Transfers, S.D.N.Y., Feb 16 2021",
+   "url": "https://law.justia.com/cases/federal/district-courts/new-york/nysdce/1:2020cv06539/542310/243/",
+   "fact": "Citibank meant to wire about $7.8M in interest to Revlon lenders and wired about $893.9M; lenders kept about $504M; judge: one of the biggest blunders in banking history."
+  }
+ ],
+ "scenes": [
+  {
+   "kind": "image",
+   "img": "nyc.jpg",
+   "prompt": "Cinematic night photo of Manhattan office towers seen from above, a few windows lit, cold blue tones with warm window light, shallow haze, 16:9, moody documentary still, no text",
+   "hud": "AUGUST 11 2020 · 5:45 PM ET · NEW YORK",
+   "tag": "RECONSTRUCTION",
+   "move": "push",
+   "mood": "tense",
+   "lines": [
+    {
+     "say": "On a quiet Tuesday evening a Citibank employee clicks a button to send a routine payment.",
+     "src": "S1",
+     "show": [
+      {
+       "on": "clicks",
+       "v": "label",
+       "t": "ONE CLICK",
+       "pos": "br"
+      }
+     ]
+    },
+    {
+     "say": "It should be about eight million dollars.",
+     "src": "S1",
+     "show": [
+      {
+       "on": "eight",
+       "v": "label",
+       "t": "$7.8 million",
+       "sub": "SUPPOSED TO SEND",
+       "pos": "l"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "kind": "receipt",
+   "head": "CITIBANK N.A.\nOUTGOING WIRE TRANSFER",
+   "lines": [
+    {
+     "say": "Instead the bank wires out almost nine hundred million dollars of its own money.",
+     "src": "S1",
+     "show": [
+      {
+       "v": "row",
+       "k": "DATE",
+       "val": "AUG 11 2020"
+      },
+      {
+       "v": "row",
+       "k": "CLIENT",
+       "val": "REVLON INC"
+      },
+      {
+       "on": "bank",
+       "v": "row",
+       "k": "TYPE",
+       "val": "INTEREST"
+      },
+      {
+       "on": "wires",
+       "v": "row",
+       "k": "EXPECTED",
+       "val": "$7,800,000"
+      },
+      {
+       "on": "nine",
+       "v": "row",
+       "k": "SENT",
+       "val": "$893,944,008",
+       "bold": true
+      },
+      {
+       "on": "own",
+       "v": "row",
+       "k": "STATUS",
+       "val": "COMPLETE"
+      },
+      {
+       "on": "own",
+       "v": "circle",
+       "row": 5
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "kind": "image",
+   "img": "vault.jpg",
+   "prompt": "Cinematic 3D render of a huge round steel bank vault door standing open in a dark concrete room, one cold spotlight from above, gold reflections inside, dramatic shadows, 16:9, no text",
+   "move": "pull",
+   "lines": [
+    {
+     "say": "Nobody hacked anything and nobody stole a password.",
+     "show": [
+      {
+       "v": "big",
+       "t": "$900,000,000",
+       "label": "GONE IN ONE CLICK"
+      },
+      {
+       "on": "hacked",
+       "v": "label",
+       "t": "NO HACK",
+       "pos": "tl"
+      },
+      {
+       "on": "password",
+       "v": "label",
+       "t": "NO THIEF",
+       "pos": "tr"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "kind": "card",
+   "head": "CITIBANK · AUGUST 11 2020",
+   "source": "SOURCE: U.S. DISTRICT COURT, S.D.N.Y. · VALUE AT TIME OF TRANSFER",
+   "lines": [
+    {
+     "say": "The bank meant to send this much.",
+     "src": "S1",
+     "show": [
+      {
+       "v": "bar",
+       "label": "MEANT TO SEND",
+       "val": "$7.8M",
+       "w": 0.03
+      }
+     ]
+    },
+    {
+     "say": "And it sent this much which is more than one hundred times too much.",
+     "src": "S1",
+     "show": [
+      {
+       "on": "sent",
+       "v": "bar",
+       "label": "ACTUALLY SENT",
+       "val": "$893.9M",
+       "w": 1,
+       "color": "red"
+      },
+      {
+       "on": "hundred",
+       "v": "stamp",
+       "t": "114× too much"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "kind": "quote",
+   "by": "U.S. DISTRICT JUDGE JESSE FURMAN · FEBRUARY 16 2021",
+   "lines": [
+    {
+     "say": "A federal judge would later call it one of the biggest blunders in banking history.",
+     "src": "S1",
+     "show": [
+      {
+       "on": "one",
+       "v": "quote",
+       "t": "one of the biggest blunders in banking history"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "kind": "tiles",
+   "head": "CITIBANK · THE NEXT 24 HOURS",
+   "n": 5,
+   "lines": [
+    {
+     "say": "The payment leaves at five forty five.",
+     "show": [
+      {
+       "v": "tile",
+       "t": "PAYMENT SENT",
+       "sub": "5:45 PM"
+      }
+     ]
+    },
+    {
+     "say": "Nobody notices until the next morning.",
+     "show": [
+      {
+       "on": "notices",
+       "v": "tile",
+       "t": "NOBODY NOTICES",
+       "sub": "OVERNIGHT"
+      },
+      {
+       "on": "morning",
+       "v": "tile",
+       "t": "ERROR FOUND",
+       "sub": "NEXT MORNING"
+      }
+     ]
+    },
+    {
+     "say": "The bank asks for the money back and some of the lenders simply say no.",
+     "src": "S1",
+     "show": [
+      {
+       "on": "asks",
+       "v": "tile",
+       "t": "BANK ASKS NICELY",
+       "sub": "AUG 12"
+      },
+      {
+       "on": "no",
+       "v": "tile",
+       "t": "LENDERS SAY NO",
+       "sub": "$504M KEPT"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "kind": "stats",
+   "head": "CITIBANK · THE DAMAGE",
+   "side": "globe",
+   "lines": [
+    {
+     "say": "Almost nine hundred million dollars went out.",
+     "src": "S1",
+     "show": [
+      {
+       "v": "stat",
+       "n": 893.9,
+       "dec": 1,
+       "prefix": "$",
+       "suffix": "M",
+       "label": "SENT BY MISTAKE"
+      }
+     ]
+    },
+    {
+     "say": "And about half a billion of it did not come back.",
+     "src": "S1",
+     "show": [
+      {
+       "on": "half",
+       "v": "stat",
+       "n": 504,
+       "prefix": "$",
+       "suffix": "M",
+       "label": "NOT RETURNED",
+       "color": "red"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "kind": "list",
+   "head": "THIS FILE",
+   "lines": [
+    {
+     "say": "So this is the story of the click and of who kept the money and of what the judge decided.",
+     "show": [
+      {
+       "on": "click",
+       "v": "row",
+       "t": "The click"
+      },
+      {
+       "on": "kept",
+       "v": "row",
+       "t": "Who kept the money"
+      },
+      {
+       "on": "judge",
+       "v": "row",
+       "t": "What the judge decided"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "kind": "clock",
+   "lines": [
+    {
+     "say": "It starts at five forty five in the evening.",
+     "show": [
+      {
+       "v": "time",
+       "t": "5:45 PM"
+      },
+      {
+       "on": "evening",
+       "v": "sub",
+       "t": "AUGUST 11 2020 · THE CLICK"
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}
