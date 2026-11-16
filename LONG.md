@@ -53,14 +53,14 @@ One TRUE money story told like a heist or a collapse: who, how much, minute by m
 **THE HOOK (owner 16 Nov: "not energetic enough… feels like the middle of the video… every video a specific hook, not repetitive"). Five proven openings, read word for word from winning videos. A video uses ONE (`"hook": {"type": "…"}`), never the type of the last 2 videos (`check` refuses):**
 | type | how it opens (the source) | scene 1 |
 |---|---|---|
-| `trailer` | the whole story in 3 punches, then "and the wildest part…" (Crayon Capital 4.2M: "He lied about $1 stock, made millions, and only served 22 months in jail. Then Hollywood turned his crimes into a blockbuster.") | `flash` |
+| `trailer` | the whole story acted out in one move, then "and the wildest part…" (Crayon Capital 4.2M: "He lied about $1 stock, made millions, and only served 22 months in jail. Then Hollywood turned his crimes into a blockbuster.") | `motion` |
 | `you` | the viewer is inside it (how really? 1.2M: "Imagine you just robbed a bank. Congratulations… there's just one tiny problem, you can't spend it.") | `image`, line 1 starts Imagine / Picture / You / Your |
 | `moment` | cold open at the exact minute (Gloam 2.5M) | `image`/`receipt` with `hud`, then a `drain` |
 | `promise` | claims that sound backwards + "by the end of this video you will understand why…" (Little Bit Better 4.3M) | `image`/`card`/`stats` |
 | `stat` | one shocking number + a comparison that makes it absurd + "here is the darkest part" (how really? 624k) | `card`/`stats`/`image` + a `bar` comparison |
 **Energy rules for EVERY type (enforced):**
 - First sentence ≤ 14 words, with the amount or "you". It must hit like a headline. Frame 0 already moves (≥ 3 things in scene 1) and starts ON a hit sound, music at full level, no fade-in.
-- A `flash` scene in the first 5 scenes: the 3 most shocking facts of the whole video as 1-3-word punches, each landing on its spoken word (the trailer inside the hook).
+- ANIMATION, NOT TEXT (owner 16 Nov: "most of the hook is just text on the screen… I want animation related to what is spoken… not look like a coding video"): ≥ 3 `motion` scenes before the title, and a motion scene on screen within the first second. A motion scene = illustrated actors DOING what the words say (a cursor presses the button, cash flies from the bank to the people, stamps slam, a stack drains). At most 1 `flash` and 3 text-only shots (flash/quote/list/clock) before the title.
 - One escalator line before the title ("and here is the wildest / strangest / darkest part…", "it gets worse").
 - A mystery (`deny`: what it was NOT) or real proof (`headline` / `quote`) before the title.
 - Then the `list` (the 3 questions) and directly the `title` card, by 50 s. 55-135 spoken words before the title; no hook line over 22 words.
@@ -85,6 +85,7 @@ One TRUE money story told like a heist or a collapse: who, how much, minute by m
 
 | kind | scene fields | events (`v`) |
 |---|---|---|
+| motion | bg (vault desk city court void), actors [{id, obj, x, y, s?, z? 0 far–1 near, t?}] — obj: bank vault cashstack goldbars cursor button laptop person envelope document gavel clock lock phone briefcase building globe | `in` {id, from? left right top bottom drop pop} · `press` {id: cursor, to: target} · `fly` {from, to, obj: bill coin doc, n} · `drain`/`grow` {id} · `open` {id: vault or lock} · `shake` {id} · `stamp` {id, t ≤ 14, color?} · `cross` {id} · `glow` {id, color} · `count` {id, n, prefix} · `cam` {id, zoom} · `label` {id, t ≤ 22} (max 2) · `out` {id}. Needs ≥ 1 action. The camera, depth blur, dust and shadows are automatic |
 | flash | img? (dark background still) | `word` {t ≤ 16, color? red gold, sub?} (3-6) — hook only |
 | image | img, prompt, move (push pull left right), hud?, tag? | `label` {t ≤ 28, pos tl tr bl br l r, sub?} · `big` {t ≤ 18 or n (counts up), label?} · `deny` {t ≤ 20 "NO HACKER", sub = pictogram: person laptop key door lock mask tunnel gun} |
 | drain | amount (number that runs down to 0), head, prefix?, img? | `stamp` {t ≤ 10} — the count ends on it |

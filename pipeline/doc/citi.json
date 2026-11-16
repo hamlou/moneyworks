@@ -3,45 +3,557 @@
  "title": "How Citibank Lost $900,000,000 With One Click",
  "test": true,
  "tempo": 1.0,
- "hook": {"type": "trailer"},
+ "hook": {
+  "type": "trailer"
+ },
  "sources": [
-  {"id": "S1", "short": "In re Citibank August 11, 2020 Wire Transfers, S.D.N.Y., Feb 16 2021", "url": "https://law.justia.com/cases/federal/district-courts/new-york/nysdce/1:2020cv06539/542310/243/", "fact": "Citibank meant to wire about $7.8M in interest to Revlon lenders and wired about $893.9M of its own money; three people approved it (six-eyes); lenders kept about $504M; judge: one of the biggest blunders in banking history."},
-  {"id": "S2", "short": "CNN Business, Feb 16 2021", "url": "https://www.ksl.com/article/50108544/citibank-cant-get-back-500-million-it-wired-by-mistake-judge-rules", "fact": "Headline: Citibank can't get back $500 million it wired by mistake, judge rules."}
+  {
+   "id": "S1",
+   "short": "In re Citibank August 11, 2020 Wire Transfers, S.D.N.Y., Feb 16 2021",
+   "url": "https://law.justia.com/cases/federal/district-courts/new-york/nysdce/1:2020cv06539/542310/243/",
+   "fact": "Citibank meant to wire about $7.8M in interest to Revlon lenders and wired about $893.9M of its own money; three people approved it (six-eyes); lenders kept about $504M; judge: one of the biggest blunders in banking history."
+  },
+  {
+   "id": "S2",
+   "short": "CNN Business, Feb 16 2021",
+   "url": "https://www.ksl.com/article/50108544/citibank-cant-get-back-500-million-it-wired-by-mistake-judge-rules",
+   "fact": "Headline: Citibank can't get back $500 million it wired by mistake, judge rules."
+  }
  ],
  "scenes": [
-  {"kind": "flash", "img": "vault.jpg", "prompt": "Cinematic 3D render of a huge round steel bank vault door standing open in a dark concrete room, one cold spotlight from above, dramatic shadows, 16:9, no text", "lines": [
-   {"say": "One click sent nine hundred million dollars to the wrong people.", "src": "S1", "show": [
-    {"v": "word", "t": "ONE CLICK"},
-    {"on": "nine", "v": "word", "t": "$900,000,000", "color": "gold"},
-    {"on": "wrong", "v": "word", "t": "WRONG PEOPLE", "color": "red"}]},
-   {"say": "Three people approved it and nobody stopped it.", "src": "S1", "show": [
-    {"on": "Three", "v": "word", "t": "3 APPROVED IT"},
-    {"on": "nobody", "v": "word", "t": "0 STOPPED IT", "color": "red"}]}]},
-  {"kind": "receipt", "img": "nyc.jpg", "prompt": "Cinematic night photo of Manhattan office towers from above, a few windows lit, cold blue tones, haze, 16:9, no text", "head": "CITIBANK N.A.\nOUTGOING WIRE TRANSFER", "hud": "AUGUST 11 2020 · 5:45 PM ET · NEW YORK", "tag": "RECONSTRUCTION", "lines": [
-   {"say": "It was supposed to be eight million and this is what left the bank.", "src": "S1", "show": [
-    {"v": "row", "k": "DATE", "val": "AUG 11 2020"},
-    {"on": "supposed", "v": "row", "k": "EXPECTED", "val": "$7,800,000"},
-    {"on": "eight", "v": "row", "k": "APPROVALS", "val": "3 OF 3"},
-    {"on": "this", "v": "row", "k": "SENT", "val": "$893,944,008", "bold": true},
-    {"on": "left", "v": "circle", "row": 4}]}]},
-  {"kind": "drain", "amount": 893944008, "head": "CITIBANK · ITS OWN MONEY", "lines": [
-   {"say": "It was gone before anyone looked up.", "show": [{"on": "looked", "v": "stamp", "t": "GONE"}]}]},
-  {"kind": "image", "img": "vault.jpg", "move": "push", "lines": [
-   {"say": "But nobody hacked the bank.", "show": [{"v": "deny", "t": "NO HACKER", "sub": "laptop"}]},
-   {"say": "And nobody stole a thing.", "show": [{"v": "deny", "t": "NO THIEF", "sub": "mask"}]}]},
-  {"kind": "headline", "pub": "CNN Business", "date": "FEBRUARY 16 2021", "lines": [
-   {"say": "And here is the wildest part because the bank never got it back.", "src": "S2", "show": [{"v": "head", "t": "Citibank [can't get back $500 million] it wired by mistake, judge rules"}]}]},
-  {"kind": "quote", "by": "U.S. DISTRICT JUDGE JESSE FURMAN · FEBRUARY 16 2021", "lines": [
-   {"say": "A judge refused and called it one of the biggest blunders in banking history.", "src": "S1", "show": [{"on": "one", "v": "quote", "t": "one of the biggest blunders in banking history"}]}]},
-  {"kind": "list", "head": "THIS FILE", "lines": [
-   {"say": "So who clicked and who kept the money and why did the law let them?", "show": [
-    {"v": "row", "t": "Who clicked"},
-    {"on": "kept", "v": "row", "t": "Who kept the money"},
-    {"on": "why", "v": "row", "t": "Why the law let them"}]}]},
-  {"kind": "title", "img": "vault.jpg", "head": "THE MOST EXPENSIVE CLICK IN BANKING", "lines": [
-   {"say": "This is the nine hundred million dollar click.", "show": [{"on": "nine", "v": "title", "t": "The $900 Million Click"}, {"on": "click", "v": "stamp", "t": "CASE FILE · AUG 11 2020"}]}]},
-  {"kind": "tiles", "head": "CITIBANK · THE NEXT 24 HOURS", "n": 5, "lines": [
-   {"say": "The payment leaves at five forty five and nobody notices until morning.", "show": [{"v": "tile", "t": "PAYMENT SENT", "sub": "5:45 PM"}, {"on": "nobody", "v": "tile", "t": "NOBODY NOTICES", "sub": "OVERNIGHT"}, {"on": "morning", "v": "tile", "t": "ERROR FOUND", "sub": "NEXT MORNING"}]},
-   {"say": "Then the bank asks for its money back and some lenders simply say no.", "src": "S1", "show": [{"on": "asks", "v": "tile", "t": "BANK ASKS NICELY", "sub": "AUG 12"}, {"on": "no", "v": "tile", "t": "LENDERS SAY NO", "sub": "$504M KEPT"}]}]}
+  {
+   "kind": "motion",
+   "bg": "desk",
+   "actors": [
+    {
+     "id": "bank",
+     "obj": "bank",
+     "x": 420,
+     "y": 560,
+     "s": 1.5,
+     "z": 0.4
+    },
+    {
+     "id": "btn",
+     "obj": "button",
+     "x": 960,
+     "y": 640,
+     "s": 1.0,
+     "z": 0.6,
+     "t": "SEND"
+    },
+    {
+     "id": "cur",
+     "obj": "cursor",
+     "x": 1250,
+     "y": 860,
+     "s": 1.0,
+     "z": 0.9
+    },
+    {
+     "id": "p1",
+     "obj": "person",
+     "x": 1480,
+     "y": 360,
+     "s": 0.8,
+     "z": 0.3
+    },
+    {
+     "id": "p2",
+     "obj": "person",
+     "x": 1640,
+     "y": 560,
+     "s": 0.9,
+     "z": 0.5
+    },
+    {
+     "id": "p3",
+     "obj": "person",
+     "x": 1470,
+     "y": 740,
+     "s": 1.0,
+     "z": 0.7
+    }
+   ],
+   "lines": [
+    {
+     "say": "One click sent nine hundred million dollars to the wrong people.",
+     "src": "S1",
+     "show": [
+      {
+       "v": "in",
+       "id": "bank",
+       "from": "left"
+      },
+      {
+       "v": "in",
+       "id": "btn",
+       "from": "pop"
+      },
+      {
+       "v": "in",
+       "id": "cur",
+       "from": "bottom"
+      },
+      {
+       "on": "click",
+       "v": "press",
+       "id": "cur",
+       "to": "btn"
+      },
+      {
+       "on": "sent",
+       "v": "in",
+       "id": "p1",
+       "from": "right"
+      },
+      {
+       "on": "sent",
+       "v": "in",
+       "id": "p2",
+       "from": "right"
+      },
+      {
+       "on": "sent",
+       "v": "in",
+       "id": "p3",
+       "from": "right"
+      },
+      {
+       "on": "nine",
+       "v": "fly",
+       "from": "bank",
+       "to": "p2",
+       "obj": "bill",
+       "n": 16
+      },
+      {
+       "on": "nine",
+       "v": "count",
+       "id": "bank",
+       "n": 900000000,
+       "prefix": "$"
+      },
+      {
+       "on": "hundred",
+       "v": "fly",
+       "from": "bank",
+       "to": "p1",
+       "obj": "bill",
+       "n": 12
+      },
+      {
+       "on": "million",
+       "v": "fly",
+       "from": "bank",
+       "to": "p3",
+       "obj": "bill",
+       "n": 12
+      },
+      {
+       "on": "wrong",
+       "v": "glow",
+       "id": "p2",
+       "color": "red"
+      },
+      {
+       "on": "wrong",
+       "v": "label",
+       "id": "p2",
+       "t": "WRONG PEOPLE"
+      },
+      {
+       "on": "wrong",
+       "v": "cam",
+       "id": "p2",
+       "zoom": 1.35
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "kind": "motion",
+   "bg": "court",
+   "actors": [
+    {
+     "id": "d1",
+     "obj": "document",
+     "x": 520,
+     "y": 520,
+     "s": 1.2,
+     "z": 0.5,
+     "t": "APPROVAL 1"
+    },
+    {
+     "id": "d2",
+     "obj": "document",
+     "x": 960,
+     "y": 520,
+     "s": 1.2,
+     "z": 0.5,
+     "t": "APPROVAL 2"
+    },
+    {
+     "id": "d3",
+     "obj": "document",
+     "x": 1400,
+     "y": 520,
+     "s": 1.2,
+     "z": 0.5,
+     "t": "APPROVAL 3"
+    },
+    {
+     "id": "lk",
+     "obj": "lock",
+     "x": 960,
+     "y": 520,
+     "s": 1.5,
+     "z": 0.85
+    }
+   ],
+   "lines": [
+    {
+     "say": "Three people approved it and nobody stopped it.",
+     "src": "S1",
+     "show": [
+      {
+       "v": "in",
+       "id": "d1",
+       "from": "drop"
+      },
+      {
+       "v": "in",
+       "id": "d2",
+       "from": "drop"
+      },
+      {
+       "v": "in",
+       "id": "d3",
+       "from": "drop"
+      },
+      {
+       "on": "Three",
+       "v": "stamp",
+       "id": "d1",
+       "t": "APPROVED",
+       "color": "green"
+      },
+      {
+       "on": "people",
+       "v": "stamp",
+       "id": "d2",
+       "t": "APPROVED",
+       "color": "green"
+      },
+      {
+       "on": "approved",
+       "v": "stamp",
+       "id": "d3",
+       "t": "APPROVED",
+       "color": "green"
+      },
+      {
+       "on": "nobody",
+       "v": "in",
+       "id": "lk",
+       "from": "pop"
+      },
+      {
+       "on": "stopped",
+       "v": "open",
+       "id": "lk"
+      },
+      {
+       "on": "stopped",
+       "v": "cross",
+       "id": "lk"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "kind": "receipt",
+   "img": "nyc.jpg",
+   "prompt": "Cinematic night photo of Manhattan office towers from above, a few windows lit, cold blue tones, haze, 16:9, no text",
+   "head": "CITIBANK N.A.\nOUTGOING WIRE TRANSFER",
+   "hud": "AUGUST 11 2020 · 5:45 PM ET · NEW YORK",
+   "tag": "RECONSTRUCTION",
+   "lines": [
+    {
+     "say": "It was supposed to be eight million and this is what left the bank.",
+     "src": "S1",
+     "show": [
+      {
+       "v": "row",
+       "k": "DATE",
+       "val": "AUG 11 2020"
+      },
+      {
+       "on": "supposed",
+       "v": "row",
+       "k": "EXPECTED",
+       "val": "$7,800,000"
+      },
+      {
+       "on": "eight",
+       "v": "row",
+       "k": "APPROVALS",
+       "val": "3 OF 3"
+      },
+      {
+       "on": "this",
+       "v": "row",
+       "k": "SENT",
+       "val": "$893,944,008",
+       "bold": true
+      },
+      {
+       "on": "left",
+       "v": "circle",
+       "row": 4
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "kind": "drain",
+   "amount": 893944008,
+   "head": "CITIBANK · ITS OWN MONEY",
+   "lines": [
+    {
+     "say": "It was gone before anyone looked up.",
+     "show": [
+      {
+       "on": "looked",
+       "v": "stamp",
+       "t": "GONE"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "kind": "image",
+   "img": "vault.jpg",
+   "move": "push",
+   "lines": [
+    {
+     "say": "But nobody hacked the bank.",
+     "show": [
+      {
+       "v": "deny",
+       "t": "NO HACKER",
+       "sub": "laptop"
+      }
+     ]
+    },
+    {
+     "say": "And nobody stole a thing.",
+     "show": [
+      {
+       "v": "deny",
+       "t": "NO THIEF",
+       "sub": "mask"
+      }
+     ]
+    }
+   ],
+   "prompt": "Cinematic 3D render of a huge round steel bank vault door standing open in a dark concrete room, one cold spotlight from above, dramatic shadows, 16:9, no text"
+  },
+  {
+   "kind": "headline",
+   "pub": "CNN Business",
+   "date": "FEBRUARY 16 2021",
+   "lines": [
+    {
+     "say": "And here is the wildest part because the bank never got it back.",
+     "src": "S2",
+     "show": [
+      {
+       "v": "head",
+       "t": "Citibank [can't get back $500 million] it wired by mistake, judge rules"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "kind": "motion",
+   "bg": "court",
+   "actors": [
+    {
+     "id": "bank",
+     "obj": "bank",
+     "x": 520,
+     "y": 560,
+     "s": 1.3,
+     "z": 0.4
+    },
+    {
+     "id": "gv",
+     "obj": "gavel",
+     "x": 1300,
+     "y": 560,
+     "s": 1.6,
+     "z": 0.7
+    },
+    {
+     "id": "cash",
+     "obj": "cashstack",
+     "x": 900,
+     "y": 640,
+     "s": 1.0,
+     "z": 0.55
+    }
+   ],
+   "lines": [
+    {
+     "say": "A judge refused and called it one of the biggest blunders in banking history.",
+     "src": "S1",
+     "show": [
+      {
+       "v": "in",
+       "id": "bank",
+       "from": "left"
+      },
+      {
+       "v": "in",
+       "id": "cash",
+       "from": "pop"
+      },
+      {
+       "v": "in",
+       "id": "gv",
+       "from": "top"
+      },
+      {
+       "on": "refused",
+       "v": "shake",
+       "id": "gv"
+      },
+      {
+       "on": "refused",
+       "v": "stamp",
+       "id": "bank",
+       "t": "DENIED"
+      },
+      {
+       "on": "biggest",
+       "v": "cam",
+       "id": "gv",
+       "zoom": 1.3
+      },
+      {
+       "on": "blunders",
+       "v": "label",
+       "id": "gv",
+       "t": "\"BIGGEST BLUNDERS\""
+      },
+      {
+       "on": "history",
+       "v": "drain",
+       "id": "cash"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "kind": "list",
+   "head": "THIS FILE",
+   "lines": [
+    {
+     "say": "So who clicked and who kept the money and why did the law let them?",
+     "show": [
+      {
+       "v": "row",
+       "t": "Who clicked"
+      },
+      {
+       "on": "kept",
+       "v": "row",
+       "t": "Who kept the money"
+      },
+      {
+       "on": "why",
+       "v": "row",
+       "t": "Why the law let them"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "kind": "title",
+   "img": "vault.jpg",
+   "head": "THE MOST EXPENSIVE CLICK IN BANKING",
+   "lines": [
+    {
+     "say": "This is the nine hundred million dollar click.",
+     "show": [
+      {
+       "on": "nine",
+       "v": "title",
+       "t": "The $900 Million Click"
+      },
+      {
+       "on": "click",
+       "v": "stamp",
+       "t": "CASE FILE · AUG 11 2020"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "kind": "tiles",
+   "head": "CITIBANK · THE NEXT 24 HOURS",
+   "n": 5,
+   "lines": [
+    {
+     "say": "The payment leaves at five forty five and nobody notices until morning.",
+     "show": [
+      {
+       "v": "tile",
+       "t": "PAYMENT SENT",
+       "sub": "5:45 PM"
+      },
+      {
+       "on": "nobody",
+       "v": "tile",
+       "t": "NOBODY NOTICES",
+       "sub": "OVERNIGHT"
+      },
+      {
+       "on": "morning",
+       "v": "tile",
+       "t": "ERROR FOUND",
+       "sub": "NEXT MORNING"
+      }
+     ]
+    },
+    {
+     "say": "Then the bank asks for its money back and some lenders simply say no.",
+     "src": "S1",
+     "show": [
+      {
+       "on": "asks",
+       "v": "tile",
+       "t": "BANK ASKS NICELY",
+       "sub": "AUG 12"
+      },
+      {
+       "on": "no",
+       "v": "tile",
+       "t": "LENDERS SAY NO",
+       "sub": "$504M KEPT"
+      }
+     ]
+    }
+   ]
+  }
  ]
 }

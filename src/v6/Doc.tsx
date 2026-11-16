@@ -1,6 +1,7 @@
 import React from 'react';
 import {AbsoluteFill, Audio, Img, Sequence, interpolate, random, staticFile, useCurrentFrame} from 'remotion';
 import {localFont} from '../theme';
+import {MotionScene} from './Motion';
 
 // CINEMATIC DOCUMENTARY long-form (LONG.md [DOC], 14 Nov 2026; model = Gloam "How Binance Lost $6.3B in One Night").
 // Data-driven: tools/doc.py turns pipeline/doc/<id>.json + voice timing into src/v6/doc/<id>.plan.json. Never hand-edit a plan.
@@ -11,7 +12,7 @@ const MONOB = localFont('Plex Mono B', 'plex-mono-600.woff2', '600');
 export type DocEv = {at: number; v: string; t?: string; label?: string; pos?: string; n?: number; prefix?: string; suffix?: string; dec?: number; val?: string; w?: number;
   color?: string; k?: string; sub?: string; gold?: boolean; bold?: boolean; x?: number; y?: number; row?: number};
 export type DocScene = {from: number; to: number; kind: string; img?: string; move?: string; hud?: string; tag?: string; head?: string; source?: string; by?: string; pub?: string;
-  date?: string; n?: number; side?: string; bg?: string; ev: DocEv[]};
+  date?: string; n?: number; side?: string; bg?: string; actors?: unknown[]; ev: DocEv[]};
 export type DocPlan = {id: string; frames: number; hookEnd?: number; voice: string | null; scenes: DocScene[]; sfx: {at: number; src: string; v: number; d?: number}[]; music: {src: string; from: number; to: number; v: number}[]};
 
 const K = {black: '#0A0A0B', ink: '#1B1815', cream: '#E8E3D2', cream2: '#D9D3BF', red: '#B4222C', gold: '#E2A21C', amber: '#E8942C', dim: '#8C877A', white: '#F4F1E8'};
@@ -408,7 +409,7 @@ const FlashScene: React.FC<{sc: DocScene; f: number; id: string}> = ({sc, f, id}
   );
 };
 
-const VIEW: Record<string, React.FC<{sc: DocScene; f: number; id: string}>> = {image: ImageScene, card: CardScene, receipt: ReceiptScene, list: ListScene, stats: StatsScene, tiles: TilesScene, quote: QuoteScene, headline: HeadlineScene, clock: ClockScene, drain: DrainScene, title: TitleScene, flash: FlashScene};
+const VIEW: Record<string, React.FC<{sc: DocScene; f: number; id: string}>> = {image: ImageScene, card: CardScene, receipt: ReceiptScene, list: ListScene, stats: StatsScene, tiles: TilesScene, quote: QuoteScene, headline: HeadlineScene, clock: ClockScene, drain: DrainScene, title: TitleScene, flash: FlashScene, motion: MotionScene as unknown as React.FC<{sc: DocScene; f: number; id: string}>};
 
 export const Doc: React.FC<{plan: DocPlan}> = ({plan}) => {
   const f = useCurrentFrame();
@@ -420,7 +421,7 @@ export const Doc: React.FC<{plan: DocPlan}> = ({plan}) => {
   const drift = sc ? 1 + 0.02 * ((f - sc.from) / Math.max(1, sc.to - sc.from)) : 1;
   return (
     <AbsoluteFill style={{background: K.black}}>
-      {sc ? <AbsoluteFill style={{opacity: cut, transform: ['image', 'receipt', 'drain', 'title', 'flash'].includes(sc.kind) ? undefined : `scale(${drift})`}}><V sc={sc} f={f} id={plan.id} /></AbsoluteFill> : null}
+      {sc ? <AbsoluteFill style={{opacity: cut, transform: ['image', 'receipt', 'drain', 'title', 'flash', 'motion'].includes(sc.kind) ? undefined : `scale(${drift})`}}><V sc={sc} f={f} id={plan.id} /></AbsoluteFill> : null}
       {sc && inHook && sc.from > 0 ? <AbsoluteFill style={{background: '#fff', opacity: interpolate(f - sc.from, [0, 4], [0.5, 0], cl), pointerEvents: 'none'}} /> : null}
       {sc?.hud ? (
         <div style={{position: 'absolute', left: 110, top: 78, display: 'flex', alignItems: 'center', gap: 16, opacity: cut}}>

@@ -18,9 +18,12 @@ except Exception:
     pass
 FPS, LEAD = 30, 5  # things start 5 frames BEFORE their word: a late picture reads as "does not match"
 # kind → {event: max text length}; MAXN = how many of the main event one scene holds
-KINDS = {"flash": {"word": 16}, "image": {"label": 28, "big": 18, "deny": 20}, "drain": {"stamp": 10}, "title": {"title": 34, "stamp": 30}, "card": {"stat": 0, "bar": 0, "stamp": 22}, "receipt": {"row": 0, "circle": 0}, "list": {"row": 34},
+MOTION_OBJS = "bank vault cashstack goldbars cursor button laptop person envelope document gavel clock lock phone briefcase building globe".split()
+MOTION_BGS = "vault desk city court void".split()
+KINDS = {"motion": {"in": 0, "out": 0, "press": 0, "fly": 0, "drain": 0, "grow": 0, "open": 0, "shake": 0, "stamp": 14, "cross": 0, "glow": 0, "label": 22, "count": 0, "cam": 0},
+         "flash": {"word": 16}, "image": {"label": 28, "big": 18, "deny": 20}, "drain": {"stamp": 10}, "title": {"title": 34, "stamp": 30}, "card": {"stat": 0, "bar": 0, "stamp": 22}, "receipt": {"row": 0, "circle": 0}, "list": {"row": 34},
          "stats": {"stat": 0}, "tiles": {"tile": 24}, "quote": {"quote": 140}, "headline": {"head": 90}, "clock": {"time": 12, "sub": 44}}
-MAXN = {"flash": ("word", 6), "drain": ("stamp", 1), "title": ("title", 1), "image": ("label", 4), "card": ("stat+bar", 3), "receipt": ("row", 8), "list": ("row", 5), "stats": ("stat", 3), "tiles": ("tile", 6), "quote": ("quote", 2), "headline": ("head", 2), "clock": ("time", 3)}
+MAXN = {"motion": ("in", 8), "flash": ("word", 6), "drain": ("stamp", 1), "title": ("title", 1), "image": ("label", 4), "card": ("stat+bar", 3), "receipt": ("row", 8), "list": ("row", 5), "stats": ("stat", 3), "tiles": ("tile", 6), "quote": ("quote", 2), "headline": ("head", 2), "clock": ("time", 3)}
 MOVES = "push pull left right".split()
 POSN = "tl tr bl br l r".split()
 PICTO = "person laptop key door lock mask tunnel gun".split()
@@ -32,6 +35,9 @@ MUSIC_V, SFX_V = 0.06, 0.2
 # (category, volume, lead): lead=True → the sound ENDS on the event (risers build up into it).
 SOUND = {
     "word": [("hit", 1.0, False), ("whoosh", 0.6, False)], "scene_flash": [("sub_drop", 0.6, False)], "scene_open": [("hit", 1.0, False), ("braam", 0.7, False)],
+    "in": [("whoosh", 0.7, False)], "out": [("whoosh", 0.5, False)], "press": [("blip", 1.0, False), ("hit", 0.9, False)], "fly": [("whoosh", 0.8, False), ("coin", 0.6, False)],
+    "drain": [("count", 0.8, False), ("sub_drop", 0.6, False)], "grow": [("count", 0.7, False)], "open": [("vault", 1.0, False)], "shake": [("hit", 0.8, False)], "cross": [("stamp", 0.9, False)],
+    "glow": [("shimmer", 0.6, False)], "count": [("count", 0.7, False)], "cam": [("whoosh", 0.6, False)], "scene_motion": [("whoosh", 0.8, False), ("sub_drop", 0.35, False)],
     "label": [("blip", 0.7, False)], "sub": [("blip", 0.6, False)], "tile": [("blip", 0.8, False), ("shimmer", 0.35, False)],
     "big": [("riser", 0.6, True), ("hit", 1.0, False), ("sub_drop", 0.7, False)],
     "stat": [("count", 0.7, False), ("shimmer", 0.4, False)], "bar": [("whoosh", 0.7, False), ("tick", 0.5, False)],
@@ -153,9 +159,11 @@ def hook_gates(sp, scenes, E, full):
         E.append("hook: the first sentence must contain the amount (million/billion…) or speak to 'you'")
     if len([e for ln in scenes[0].get("lines", []) for e in ln.get("show", [])]) < 3:
         E.append("hook: scene 1 needs ≥ 3 things appearing — frame 0 must already move")
-    fl = [sc for sc in pre[:5] if sc.get("kind") == "flash"]
-    if not fl or sum(1 for ln in fl[0].get("lines", []) for e in ln.get("show", []) if e.get("v") == "word") < 3:
-        E.append("hook: one of the first 5 scenes must be a 'flash' with ≥ 3 'word' punches (the 3 most shocking facts of the whole video, 1-3 words each, each on its spoken word) — the trailer inside the hook")
+    nmo = kinds.count("motion")
+    if nmo < 3:
+        E.append(f"hook: only {nmo} 'motion' scenes before the title — need ≥ 3. The hook is ANIMATION of what is being said (actors doing it), never text on a screen (owner 16 Nov)")
+    if kinds.count("flash") > 1 or sum(1 for k in kinds if k in ("flash", "quote", "list", "clock")) > 3:
+        E.append("hook: too many text-only shots (flash / quote / list / clock) before the title — max 1 flash and 3 in total")
     if not any(x in " ".join(says).lower() for x in ESCALATORS):
         E.append(f"hook: no escalator line before the title — one line must raise it again with one of {ESCALATORS[:6]} …")
     if "deny" not in evs and not ({"headline", "quote"} & set(kinds)):
@@ -170,15 +178,15 @@ def hook_gates(sp, scenes, E, full):
     if not any(re.search(r"\d", str(e.get("t", "")) + str(e.get("val", "")) + str(e.get("n", ""))) for e in h):
         E.append("hook: no number on screen in the first 3 scenes — show the stake at once")
     # the chosen type's own opening
-    if ht == "trailer" and k0 != "flash":
-        E.append("hook 'trailer': scene 1 must be the 'flash' (the whole story in 3 punches)")
-    if ht == "you" and (k0 != "image" or not re.match(r"\s*(imagine|picture|you|your)\b", l0, re.I)):
+    if ht == "trailer" and k0 != "motion":
+        E.append("hook 'trailer': scene 1 must be a 'motion' scene that acts out the whole story in one move (who did what to whom)")
+    if ht == "you" and (k0 not in ("image", "motion") or not re.match(r"\s*(imagine|picture|you|your)\b", l0, re.I)):
         E.append("hook 'you': scene 1 = image and line 1 starts with Imagine / Picture / You / Your")
     if ht == "moment" and (k0 not in ("image", "receipt") or not scenes[0].get("hud") or "drain" not in kinds[:4]):
         E.append("hook 'moment': scene 1 = image or receipt with a hud (exact time · place) and a 'drain' in scenes 2-4")
-    if ht == "promise" and (k0 not in ("image", "card", "stats") or "by the end of this video" not in " ".join(says).lower()):
+    if ht == "promise" and (k0 not in ("image", "card", "stats", "motion") or "by the end of this video" not in " ".join(says).lower()):
         E.append("hook 'promise': scene 1 = image, card or stats, and one line says 'by the end of this video you will understand why…' with 2-3 claims that sound backwards")
-    if ht == "stat" and (k0 not in ("card", "stats", "image") or not any(e.get("v") == "bar" for sc in pre[:5] for ln in sc.get("lines", []) for e in ln.get("show", []))):
+    if ht == "stat" and (k0 not in ("card", "stats", "image", "motion") or not any(e.get("v") == "bar" for sc in pre[:5] for ln in sc.get("lines", []) for e in ln.get("show", []))):
         E.append("hook 'stat': scene 1 = card, stats or image showing the number, and a 'bar' comparison in the first 5 scenes")
 
 
@@ -308,6 +316,28 @@ def check(sp, quiet=False, need_images=False):
         kinds.append(kind)
         if len(kinds) >= 3 and kinds[-1] == kinds[-2] == kinds[-3]:
             E.append(f"{tag}: 3 '{kind}' scenes in a row — change the shot type")
+        if kind == "motion":
+            acts = sc.get("actors", [])
+            ids = {a.get("id") for a in acts}
+            if not 2 <= len(acts) <= 8:
+                E.append(f"{tag}: a motion scene needs 2-8 actors (now {len(acts)})")
+            for a in acts:
+                if a.get("obj") not in MOTION_OBJS:
+                    E.append(f"{tag}: actor '{a.get('id')}' obj '{a.get('obj')}' unknown — {MOTION_OBJS}")
+                if not (isinstance(a.get("x"), (int, float)) and 100 <= a["x"] <= 1820 and isinstance(a.get("y"), (int, float)) and 150 <= a["y"] <= 880):
+                    E.append(f"{tag}: actor '{a.get('id')}' needs x 100-1820 and y 150-880 (screen is 1920x1080; the floor line is y 760)")
+            if sc.get("bg", "void") not in MOTION_BGS:
+                E.append(f"{tag}: bg '{sc.get('bg')}' unknown — {MOTION_BGS}")
+            mev = [e for ln in sc.get("lines", []) for e in ln.get("show", [])]
+            for e in mev:
+                need = {"press": ("id", "to"), "fly": ("from", "to"), "cam": ()}.get(e.get("v"), ("id",))
+                for key in need:
+                    if e.get(key) not in ids:
+                        E.append(f"{tag}: event {e.get('v')} needs {key} = an actor id of this scene {sorted(ids)} (got '{e.get(key)}')")
+            if sum(1 for e in mev if e.get("v") in ("press", "fly", "drain", "grow", "open", "shake", "stamp", "cross")) < 1:
+                E.append(f"{tag}: a motion scene needs at least one ACTION (press, fly, drain, grow, open, shake, stamp, cross) — things must do what the words say, not just appear")
+            if sum(1 for e in mev if e.get("v") == "label") > 2:
+                E.append(f"{tag}: more than 2 labels — a motion scene shows the thing, it does not write it")
         if kind == "drain" and not (isinstance(sc.get("amount"), (int, float)) and sc.get("head")):
             E.append(f"{tag}: drain needs amount (the number that runs down to 0) and head (label under the stopwatch)")
         if kind == "image":
@@ -523,7 +553,7 @@ def build(sp, fake):
                 vis.append(at)
                 snd("tile" if e["v"] == "row" and sc["kind"] == "list" else e["v"], at)
         ev.sort(key=lambda e: e["at"])
-        keep = {k: sc[k] for k in ("img", "move", "hud", "tag", "head", "source", "by", "pub", "date", "n", "side", "bg") if k in sc}
+        keep = {k: sc[k] for k in ("img", "move", "hud", "tag", "head", "source", "by", "pub", "date", "n", "side", "bg", "actors") if k in sc}
         if sc["kind"] == "drain":
             keep["n"], keep["source"] = sc["amount"], sc.get("prefix", "$")
         scenes.append({"from": start, "to": 0, "kind": sc["kind"], **keep, "ev": ev, "_mood": sc.get("mood") or ("drive" if ti is not None and si <= ti and si == 0 else "tense" if ti is not None and si == ti + 1 else None), "_vis": vis})
@@ -575,7 +605,7 @@ def build(sp, fake):
     ev10 = sum(1 for s in scenes for e in s["ev"] if e["at"] < 10 * FPS)
     if ev10 < 7:
         slow.append(f"hook: only {ev10} things appear in the first 10 s — need ≥ 7")
-    for kind, lim in (("flash", 15), ("list", 45), ("title", 50)):
+    for kind, lim in (("motion", 1), ("list", 45), ("title", 50)):
         if kinds_at.get(kind, 0) > lim:
             slow.append(f"hook: '{kind}' starts at {kinds_at[kind]:.0f} s — must start by {lim} s")
     avg = total / FPS / len(scenes)
