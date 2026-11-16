@@ -42,6 +42,7 @@ One TRUE money story told like a heist or a collapse: who, how much, minute by m
 1. `py tools/doctopic.py scan` → `pipeline/doc/outliers.json` = videos that beat their OWN channel ≥ 4x (channels: `pipeline/doc/channels.txt`).
 2. Pick a topic of the SAME kind as one of those outliers, and EVERGREEN (still true in 3 years: how a scam / trick / system works, a famous collapse). Fresh news may be the opening case, never the whole topic.
 3. `py tools/doctopic.py demand "<how a viewer would search it>"` → must print PASS (≥ 5 results over 100k views and ≥ 1 over 1M). FAIL = pick another topic. No exceptions.
+3b. If the OWNER names the topic himself, his choice replaces steps 1-3: `"topic": {"owner_pick": "<his words, date>", "evergreen": true}`.
 4. Put the proof in the spec: `"topic": {"evergreen": true, "query": "<the same query>", "proof": ["<outlier url>", …]}`.
 5. Title: start with How / Why / What / Every / The; has a number; ≤ 60 chars; no bait words, no politics; true to the video. Winning forms: "How <Name> Lost $<N> in One Night" · "How <X> Actually Works in <N> Minutes" · "Why $<N> Vanishes Every Year" · "Every <X> Explained in <N> Minutes". Add `"alt_titles"`: 2 more with a different angle (owner tests 3).
 6. Thumbnail in the spec: `"thumb": {"words": "≤ 4 words, not the title's words", "space": "left|right", "copied_from": "<winning thumbnail whose layout we copy>", "prompt": "…"}`. Prompt recipe: ONE big object that IS the topic (never a collage), dark background, one hard light, the object on one side and empty dark space on the other, no people's faces, "no text", "16:9". Owner makes it in Gemini → `public/<id>/thumb.jpg` → `py tools/doc.py thumb <id>` adds the words in code and makes 3 versions + a phone-size test.
@@ -65,6 +66,32 @@ One TRUE money story told like a heist or a collapse: who, how much, minute by m
 - A mystery (`deny`: what it was NOT) or real proof (`headline` / `quote`) before the title.
 - Then the `list` (the 3 questions) and directly the `title` card, by 50 s. 55-135 spoken words before the title; no hook line over 22 words.
 - Automatic in the hook: the voice is more energetic with shorter pauses, driving music, a white flash on every cut. On the real voice: ≥ 8 shots in the first 30 s, ≥ 7 things appearing in the first 10 s.
+**SCRIPT CRAFT (owner 16 Nov: "the script is the most important part… the viewer must not get bored") — measured on the full transcripts of 9 winning videos, enforced by `check`:**
+| what the winners do | measured | our gate |
+|---|---|---|
+| short sentences | Crayon Capital 4.2M: 8.5 words avg; Little Bit Better 4.3M: 7.4 | average ≤ 11, none over 24 |
+| punch lines | 45-51 % of their sentences are ≤ 6 words | ≥ 30 % of sentences ≤ 6 words |
+| a turn (But / Then / So / Until / a question) | 2.5-5 per minute | ≥ 1 per 75 words (≈ every 20 s) |
+| speak to the viewer | "you" 1-5 per 100 words | ≥ 0.7 per 100 words, and in the last 8 lines |
+| re-hook lines ("here is the wildest part", "it gets worse") | several per video | ≥ 3 |
+| promises paid | every question raised is answered | the list's 3 questions tagged `"answers": 1/2/3`: #1 by 45 %, #3 after 60 % |
+| the ending | a sting, never a recap ("And maybe the scariest part: we applauded.") | last line ≤ 12 words; no "subscribe", no recap |
+| no filler | none | banned list (in this video, let's dive in, it is important to note, delve…) |
+How to write it (the gates cannot check these — read them every time):
+- ONE idea per sentence. Long sentence to set up, short sentence to land: "Sending only the interest meant ticking three boxes. They ticked one."
+- THINGS, not ideas. Never "lavish rewards" — "watches tossed across the office like candy". Every line must be drawable: if no picture comes to mind, rewrite it.
+- But / Therefore, never "and then": each beat happens BECAUSE of the last one or AGAINST it.
+- Threes and contrasts: "One builds it. One checks it. One approves it." · "He didn't just escape justice, he sold it."
+- Give the viewer the answer he wants a few seconds AFTER he wants it; open the next question before closing the current one.
+- People have names and jobs; money has an exact amount; moments have a date and a time.
+- Simple words a 12-year-old knows. Explain any banking word in the same breath, with a picture.
+
+**THE WHOLE VIDEO MOVES LIKE THE HOOK (owner 16 Nov: "this energy that I have seen in the hook, I want it in the full video… I don't want things to be calmed") — enforced:**
+- ≥ 50 % of ALL scenes are `motion`; never 3 non-motion shots in a row; text-only shots (quote/list/clock/flash) ≤ 15 %; the last 6 scenes contain ≥ 3 motion scenes.
+- ≥ 8 different objects and ≥ 3 backgrounds across the motion scenes; two motion scenes in a row never have the same cast.
+- Easy mode for motion scenes: give `"layout"` (flow = left → right · duel = two sides · hero = one big thing in the middle, the rest around · trio · crowd) and leave x/y out of the actors; the builder places them. A cursor is placed by itself.
+- How to turn a sentence into a motion scene: WHO are the things in the sentence (actors) → WHAT happens between them (press / fly / drain / grow / open / shake / stamp / cross) → put each action `on` the word that says it → one `cam` onto the thing the sentence ends on. A sentence about money moving = `fly`. About losing = `drain`. About a decision = `stamp`. About being blocked or failing = `cross`/`shake`. About a secret or access = `open`.
+- The voice stays energetic to the end, every cut flashes, sounds are layered on every action (all automatic).
 - After the title: explain like the viewer is 12 (one simple picture per idea), answer question 1 early (a first payoff by ~2 min), question 3 (the biggest) last.
 - A turn — a line starting with But / Then / Except / Until / So, or a question — at least every 45 s (`build` checks). Each turn must raise the stake or open a new question.
 - WORDS = PICTURES: every `show` item is the exact thing being said at its `on` word (the number, the name, the document). Never a decorative picture. Things start 5 frames before their word.

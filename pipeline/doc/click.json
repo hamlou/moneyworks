@@ -1,0 +1,3302 @@
+{
+ "id": "click",
+ "title": "How Citibank Lost $900,000,000 With One Click",
+ "alt_titles": [
+  "How One Wrong Click Cost Citibank $900,000,000",
+  "Why Citibank Could Not Get $500,000,000 Back"
+ ],
+ "tempo": 1.0,
+ "hook": {
+  "type": "trailer"
+ },
+ "topic": {
+  "owner_pick": "owner, 16 Nov 2026: 'Complete that video. I like the topic.'",
+  "evergreen": true
+ },
+ "thumb": {
+  "words": "SENT BY MISTAKE",
+  "space": "right",
+  "copied_from": "how really? — 'Why $2 Trillion vanishes every year' (one object, 2-3 words, empty space)",
+  "prompt": "Cinematic 3D render, extreme close-up of one glowing red keyboard key labelled with a white arrow being pressed by a single index finger, placed on the left third of the frame, a few hundred-dollar bills blowing away from the key toward the right, pitch-dark background, one hard warm spotlight from above, shallow depth of field, the right half of the frame empty and dark, no people's faces, no text, 16:9"
+ },
+ "sources": [
+  {
+   "id": "S1",
+   "short": "In re Citibank August 11, 2020 Wire Transfers, S.D.N.Y. (Judge Furman), Feb 16 2021",
+   "url": "https://www.insurancejournal.com/app/uploads/2021/02/citibank-revlon-ruling.pdf",
+   "fact": "Aug 11 2020: Citibank, administrative agent on Revlon's 2016 term loan, meant to wire about $7.8M of interest and wired about $893.9M of its own funds; Flexcube; maker-checker-approver 'six eyes' (Wipro contractor in India, a colleague, a senior Citibank manager in Delaware); only the PRINCIPAL box was ticked instead of FRONT, FUND and PRINCIPAL; found the next morning; 'one of the biggest blunders in banking history'."
+  },
+  {
+   "id": "S2",
+   "short": "Bloomberg / Banking Dive, Feb 16 2021",
+   "url": "https://www.bankingdive.com/news/citi-revlon-lawsuit-payment-mistake-creditors/595154/",
+   "fact": "Judge Furman: ten asset managers (Brigade, HPS, Symphony…) may keep $504M under New York's discharge-for-value rule (Banque Worms, 1991); chats at the firms used the words 'unbelievable', 'erroneous', 'accidental', 'overpayment'."
+  },
+  {
+   "id": "S3",
+   "short": "Second Circuit, Sept 8 2022 (Loeb & Loeb summary)",
+   "url": "https://www.loeb.com/en/insights/publications/2022/10/second-circuit-reverses-ruling-500-million-wire-transfer-paying-off-revlon-loan-returned",
+   "fact": "About $385M was returned on request; ten managers for 126 debtholders kept about $500M; appeals court reversed: the loan was not due for three years so they were not entitled to it, and a prudent investor would have called Citibank to ask."
+  },
+  {
+   "id": "S4",
+   "short": "OCC news release 2020-132, Oct 7 2020",
+   "url": "https://www.occ.gov/news-issuances/news-releases/2020/nr-occ-2020-132.html",
+   "fact": "$400M civil money penalty against Citibank for deficiencies in risk management, data governance and internal controls; the Fed cited issues raised in 2013 and 2015."
+  },
+  {
+   "id": "S5",
+   "short": "Bloomberg, Dec 19 2022",
+   "url": "https://www.bloomberg.com/news/articles/2022-12-19/citigroup-saga-of-900-million-error-gets-legal-ring-of-finality",
+   "fact": "The case ended with a dismissal after the money was returned."
+  }
+ ],
+ "scenes": [
+  {
+   "kind": "motion",
+   "bg": "desk",
+   "layout": null,
+   "actors": [
+    {
+     "id": "bank",
+     "obj": "bank",
+     "x": 420,
+     "y": 560,
+     "s": 1.5,
+     "z": 0.4
+    },
+    {
+     "id": "btn",
+     "obj": "button",
+     "x": 960,
+     "y": 640,
+     "s": 1.0,
+     "z": 0.6,
+     "t": "SEND"
+    },
+    {
+     "id": "cur",
+     "obj": "cursor"
+    },
+    {
+     "id": "p1",
+     "obj": "person",
+     "x": 1480,
+     "y": 360,
+     "s": 0.8,
+     "z": 0.3
+    },
+    {
+     "id": "p2",
+     "obj": "person",
+     "x": 1640,
+     "y": 560,
+     "s": 0.9,
+     "z": 0.5
+    },
+    {
+     "id": "p3",
+     "obj": "person",
+     "x": 1470,
+     "y": 740,
+     "s": 1.0,
+     "z": 0.7
+    }
+   ],
+   "lines": [
+    {
+     "say": "One click sent nine hundred million dollars to the wrong people.",
+     "show": [
+      {
+       "v": "in",
+       "id": "bank",
+       "from": "left"
+      },
+      {
+       "v": "in",
+       "id": "btn",
+       "from": "pop"
+      },
+      {
+       "v": "in",
+       "id": "cur",
+       "from": "bottom"
+      },
+      {
+       "v": "press",
+       "id": "cur",
+       "to": "btn",
+       "on": "click"
+      },
+      {
+       "v": "in",
+       "id": "p1",
+       "from": "right",
+       "on": "sent"
+      },
+      {
+       "v": "in",
+       "id": "p2",
+       "from": "right",
+       "on": "sent"
+      },
+      {
+       "v": "in",
+       "id": "p3",
+       "from": "right",
+       "on": "sent"
+      },
+      {
+       "v": "fly",
+       "from": "bank",
+       "to": "p2",
+       "obj": "bill",
+       "n": 16,
+       "on": "nine"
+      },
+      {
+       "v": "count",
+       "id": "bank",
+       "n": 900000000,
+       "prefix": "$",
+       "on": "nine"
+      },
+      {
+       "v": "fly",
+       "from": "bank",
+       "to": "p1",
+       "obj": "bill",
+       "n": 12,
+       "on": "hundred"
+      },
+      {
+       "v": "fly",
+       "from": "bank",
+       "to": "p3",
+       "obj": "bill",
+       "n": 12,
+       "on": "million"
+      },
+      {
+       "v": "glow",
+       "id": "p2",
+       "color": "red",
+       "on": "wrong"
+      },
+      {
+       "v": "label",
+       "id": "p2",
+       "t": "WRONG PEOPLE",
+       "on": "wrong"
+      },
+      {
+       "v": "cam",
+       "id": "p2",
+       "zoom": 1.35,
+       "on": "wrong"
+      }
+     ],
+     "src": "S1"
+    }
+   ],
+   "mood": "drive"
+  },
+  {
+   "kind": "motion",
+   "bg": "court",
+   "layout": "trio",
+   "actors": [
+    {
+     "id": "d1",
+     "obj": "document",
+     "t": "APPROVAL 1"
+    },
+    {
+     "id": "d2",
+     "obj": "document",
+     "t": "APPROVAL 2"
+    },
+    {
+     "id": "d3",
+     "obj": "document",
+     "t": "APPROVAL 3"
+    },
+    {
+     "id": "lk",
+     "obj": "lock",
+     "x": 960,
+     "y": 520,
+     "s": 1.5,
+     "z": 0.85
+    }
+   ],
+   "lines": [
+    {
+     "say": "Three people approved it and nobody stopped it.",
+     "show": [
+      {
+       "v": "in",
+       "id": "d1",
+       "from": "drop"
+      },
+      {
+       "v": "in",
+       "id": "d2",
+       "from": "drop"
+      },
+      {
+       "v": "in",
+       "id": "d3",
+       "from": "drop"
+      },
+      {
+       "v": "stamp",
+       "id": "d1",
+       "t": "APPROVED",
+       "color": "green",
+       "on": "Three"
+      },
+      {
+       "v": "stamp",
+       "id": "d2",
+       "t": "APPROVED",
+       "color": "green",
+       "on": "people"
+      },
+      {
+       "v": "stamp",
+       "id": "d3",
+       "t": "APPROVED",
+       "color": "green",
+       "on": "approved"
+      },
+      {
+       "v": "in",
+       "id": "lk",
+       "from": "pop",
+       "on": "nobody"
+      },
+      {
+       "v": "open",
+       "id": "lk",
+       "on": "stopped"
+      },
+      {
+       "v": "cross",
+       "id": "lk",
+       "on": "stopped"
+      }
+     ],
+     "src": "S1"
+    }
+   ]
+  },
+  {
+   "kind": "receipt",
+   "img": "nyc.jpg",
+   "prompt": "Cinematic night photo of Manhattan office towers from above, a few windows lit, cold blue tones, haze, 16:9, no text",
+   "head": "CITIBANK N.A.\nOUTGOING WIRE TRANSFER",
+   "hud": "AUGUST 11 2020 · 5:45 PM ET · NEW YORK",
+   "tag": "RECONSTRUCTION",
+   "lines": [
+    {
+     "say": "It was supposed to be eight million and this is what left the bank.",
+     "show": [
+      {
+       "v": "row",
+       "k": "DATE",
+       "val": "AUG 11 2020"
+      },
+      {
+       "v": "row",
+       "k": "EXPECTED",
+       "val": "$7,800,000",
+       "on": "supposed"
+      },
+      {
+       "v": "row",
+       "k": "APPROVALS",
+       "val": "3 OF 3",
+       "on": "eight"
+      },
+      {
+       "v": "row",
+       "k": "SENT",
+       "val": "$893,944,008",
+       "bold": true,
+       "on": "this"
+      },
+      {
+       "v": "circle",
+       "row": 4,
+       "on": "left"
+      }
+     ],
+     "src": "S1"
+    }
+   ]
+  },
+  {
+   "kind": "drain",
+   "amount": 893944008,
+   "head": "CITIBANK · ITS OWN MONEY",
+   "lines": [
+    {
+     "say": "It was gone before anyone looked up.",
+     "show": [
+      {
+       "v": "stamp",
+       "t": "GONE",
+       "on": "looked"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "kind": "motion",
+   "bg": "vault",
+   "layout": "duel",
+   "actors": [
+    {
+     "id": "hk",
+     "obj": "laptop",
+     "t": "ACCESS"
+    },
+    {
+     "id": "th",
+     "obj": "person"
+    },
+    {
+     "id": "vt",
+     "obj": "vault",
+     "x": 960,
+     "y": 520,
+     "s": 1.1,
+     "z": 0.3
+    }
+   ],
+   "lines": [
+    {
+     "say": "But nobody hacked the bank.",
+     "show": [
+      {
+       "v": "in",
+       "id": "vt",
+       "from": "pop"
+      },
+      {
+       "v": "in",
+       "id": "hk",
+       "from": "left"
+      },
+      {
+       "v": "cross",
+       "id": "hk",
+       "on": "hacked"
+      }
+     ]
+    },
+    {
+     "say": "And nobody stole a thing.",
+     "show": [
+      {
+       "v": "in",
+       "id": "th",
+       "from": "right"
+      },
+      {
+       "v": "cross",
+       "id": "th",
+       "on": "stole"
+      },
+      {
+       "v": "cam",
+       "id": "vt",
+       "zoom": 1.25,
+       "on": "thing"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "kind": "headline",
+   "pub": "CNN Business",
+   "date": "FEBRUARY 16 2021",
+   "lines": [
+    {
+     "say": "And here is the wildest part because the bank never got it back.",
+     "show": [
+      {
+       "v": "head",
+       "t": "Citibank [can't get back $500 million] it wired by mistake, judge rules"
+      }
+     ],
+     "src": "S2"
+    }
+   ]
+  },
+  {
+   "kind": "motion",
+   "bg": "court",
+   "layout": "flow",
+   "actors": [
+    {
+     "id": "bank",
+     "obj": "bank"
+    },
+    {
+     "id": "cash",
+     "obj": "cashstack"
+    },
+    {
+     "id": "gv",
+     "obj": "gavel"
+    }
+   ],
+   "lines": [
+    {
+     "say": "A judge refused and called it one of the biggest blunders in banking history.",
+     "show": [
+      {
+       "v": "in",
+       "id": "bank",
+       "from": "left"
+      },
+      {
+       "v": "in",
+       "id": "cash",
+       "from": "pop"
+      },
+      {
+       "v": "in",
+       "id": "gv",
+       "from": "top"
+      },
+      {
+       "v": "shake",
+       "id": "gv",
+       "on": "refused"
+      },
+      {
+       "v": "stamp",
+       "id": "bank",
+       "t": "DENIED",
+       "on": "refused"
+      },
+      {
+       "v": "cam",
+       "id": "gv",
+       "zoom": 1.3,
+       "on": "biggest"
+      },
+      {
+       "v": "label",
+       "id": "gv",
+       "t": "\"BIGGEST BLUNDERS\"",
+       "on": "blunders"
+      },
+      {
+       "v": "drain",
+       "id": "cash",
+       "on": "history"
+      }
+     ],
+     "src": "S1"
+    }
+   ]
+  },
+  {
+   "kind": "list",
+   "head": "THIS FILE",
+   "lines": [
+    {
+     "say": "So who clicked and who kept the money and why did the law let them?",
+     "show": [
+      {
+       "v": "row",
+       "t": "Who clicked"
+      },
+      {
+       "v": "row",
+       "t": "Who kept the money",
+       "on": "kept"
+      },
+      {
+       "v": "row",
+       "t": "Why the law let them",
+       "on": "why"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "kind": "title",
+   "img": "vault.jpg",
+   "prompt": "Cinematic 3D render of a huge round steel bank vault door standing open in a dark concrete room, one cold spotlight from above, dramatic shadows, 16:9, no text",
+   "head": "THE MOST EXPENSIVE CLICK IN BANKING",
+   "lines": [
+    {
+     "say": "This is the nine hundred million dollar click.",
+     "show": [
+      {
+       "v": "title",
+       "t": "The $900 Million Click",
+       "on": "nine"
+      },
+      {
+       "v": "stamp",
+       "t": "CASE FILE · AUG 11 2020",
+       "on": "click"
+      }
+     ],
+     "src": "S1"
+    }
+   ]
+  },
+  {
+   "kind": "motion",
+   "bg": "desk",
+   "layout": "duel",
+   "actors": [
+    {
+     "id": "me",
+     "obj": "person"
+    },
+    {
+     "id": "lp",
+     "obj": "laptop",
+     "t": "PAYMENT"
+    },
+    {
+     "id": "cur",
+     "obj": "cursor"
+    }
+   ],
+   "lines": [
+    {
+     "say": "Imagine you work at a bank.",
+     "show": [
+      {
+       "v": "in",
+       "id": "me",
+       "from": "left"
+      },
+      {
+       "v": "in",
+       "id": "lp",
+       "from": "right",
+       "on": "bank"
+      },
+      {
+       "v": "in",
+       "id": "cur",
+       "from": "bottom",
+       "on": "bank"
+      }
+     ]
+    },
+    {
+     "say": "Your screen shows three small boxes. You tick one.",
+     "show": [
+      {
+       "v": "glow",
+       "id": "lp",
+       "color": "gold",
+       "on": "screen"
+      },
+      {
+       "v": "press",
+       "id": "cur",
+       "to": "lp",
+       "on": "tick"
+      }
+     ]
+    },
+    {
+     "say": "Then you go home.",
+     "show": [
+      {
+       "v": "out",
+       "id": "me",
+       "on": "home"
+      }
+     ]
+    },
+    {
+     "say": "And by morning your employer is missing nine hundred million dollars.",
+     "show": [
+      {
+       "v": "shake",
+       "id": "lp",
+       "on": "missing"
+      },
+      {
+       "v": "count",
+       "id": "lp",
+       "n": 893944008,
+       "prefix": "-$",
+       "color": "red",
+       "on": "nine"
+      },
+      {
+       "v": "glow",
+       "id": "lp",
+       "color": "red",
+       "on": "million"
+      }
+     ],
+     "src": "S1"
+    }
+   ]
+  },
+  {
+   "kind": "motion",
+   "bg": "city",
+   "layout": "flow",
+   "actors": [
+    {
+     "id": "rv",
+     "obj": "building",
+     "x": 420
+    },
+    {
+     "id": "bk",
+     "obj": "bank",
+     "x": 960
+    },
+    {
+     "id": "l1",
+     "obj": "person",
+     "x": 1480,
+     "y": 420,
+     "s": 0.9
+    },
+    {
+     "id": "l2",
+     "obj": "person",
+     "x": 1560,
+     "y": 680,
+     "s": 1.0
+    }
+   ],
+   "lines": [
+    {
+     "say": "It starts with a makeup company.",
+     "show": [
+      {
+       "v": "in",
+       "id": "rv",
+       "from": "left"
+      },
+      {
+       "v": "label",
+       "id": "rv",
+       "t": "REVLON",
+       "on": "makeup"
+      }
+     ]
+    },
+    {
+     "say": "In two thousand sixteen Revlon borrowed almost two billion dollars.",
+     "show": [
+      {
+       "v": "count",
+       "id": "rv",
+       "n": 1800000000,
+       "prefix": "$",
+       "on": "borrowed"
+      },
+      {
+       "v": "glow",
+       "id": "rv",
+       "color": "gold",
+       "on": "billion"
+      }
+     ],
+     "src": "S1"
+    },
+    {
+     "say": "The money came from hundreds of lenders.",
+     "show": [
+      {
+       "v": "in",
+       "id": "l1",
+       "from": "right",
+       "on": "money"
+      },
+      {
+       "v": "in",
+       "id": "l2",
+       "from": "right",
+       "on": "hundreds"
+      },
+      {
+       "v": "fly",
+       "from": "l1",
+       "to": "rv",
+       "obj": "bill",
+       "n": 10,
+       "on": "lenders"
+      }
+     ]
+    },
+    {
+     "say": "And Citibank sat in the middle.",
+     "show": [
+      {
+       "v": "in",
+       "id": "bk",
+       "from": "drop",
+       "on": "Citibank"
+      },
+      {
+       "v": "cam",
+       "id": "bk",
+       "zoom": 1.3,
+       "on": "middle"
+      }
+     ]
+    }
+   ],
+   "mood": "tense"
+  },
+  {
+   "kind": "motion",
+   "bg": "desk",
+   "layout": "hero",
+   "actors": [
+    {
+     "id": "bk",
+     "obj": "bank"
+    },
+    {
+     "id": "rv",
+     "obj": "building"
+    },
+    {
+     "id": "ln",
+     "obj": "person"
+    },
+    {
+     "id": "ev",
+     "obj": "envelope"
+    }
+   ],
+   "lines": [
+    {
+     "say": "Its job was boring.",
+     "show": [
+      {
+       "v": "in",
+       "id": "bk",
+       "from": "pop"
+      },
+      {
+       "v": "in",
+       "id": "rv",
+       "from": "left",
+       "on": "boring"
+      },
+      {
+       "v": "in",
+       "id": "ln",
+       "from": "right",
+       "on": "boring"
+      }
+     ]
+    },
+    {
+     "say": "Revlon pays the bank. The bank pays the lenders.",
+     "show": [
+      {
+       "v": "fly",
+       "from": "rv",
+       "to": "bk",
+       "obj": "coin",
+       "n": 8,
+       "on": "Revlon"
+      },
+      {
+       "v": "fly",
+       "from": "bk",
+       "to": "ln",
+       "obj": "coin",
+       "n": 8,
+       "on": "lenders"
+      }
+     ]
+    },
+    {
+     "say": "Citibank never risks a cent of its own money.",
+     "show": [
+      {
+       "v": "glow",
+       "id": "bk",
+       "color": "green",
+       "on": "never"
+      },
+      {
+       "v": "label",
+       "id": "bk",
+       "t": "JUST THE MIDDLEMAN",
+       "on": "cent"
+      }
+     ],
+     "src": "S1"
+    },
+    {
+     "say": "Until August the eleventh.",
+     "show": [
+      {
+       "v": "shake",
+       "id": "bk",
+       "on": "August"
+      },
+      {
+       "v": "glow",
+       "id": "bk",
+       "color": "red",
+       "on": "eleventh"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "kind": "clock",
+   "lines": [
+    {
+     "say": "That day Revlon owed a small interest payment.",
+     "show": [
+      {
+       "v": "time",
+       "t": "AUG 11"
+      },
+      {
+       "v": "sub",
+       "t": "INTEREST DUE TODAY",
+       "on": "interest"
+      }
+     ]
+    },
+    {
+     "say": "Seven point eight million dollars.",
+     "show": [
+      {
+       "v": "sub",
+       "t": "$7.8 MILLION · ROUTINE",
+       "on": "Seven"
+      }
+     ],
+     "src": "S1"
+    }
+   ]
+  },
+  {
+   "kind": "motion",
+   "bg": "desk",
+   "layout": "flow",
+   "actors": [
+    {
+     "id": "lp",
+     "obj": "laptop",
+     "x": 420,
+     "s": 1.3,
+     "t": "FLEXCUBE"
+    },
+    {
+     "id": "a",
+     "obj": "person",
+     "x": 980,
+     "s": 1.0
+    },
+    {
+     "id": "b",
+     "obj": "person",
+     "x": 1300,
+     "s": 1.0
+    },
+    {
+     "id": "c",
+     "obj": "person",
+     "x": 1620,
+     "s": 1.0
+    }
+   ],
+   "lines": [
+    {
+     "say": "The payment was built in a banking program called Flexcube.",
+     "show": [
+      {
+       "v": "in",
+       "id": "lp",
+       "from": "left"
+      },
+      {
+       "v": "label",
+       "id": "lp",
+       "t": "FLEXCUBE",
+       "on": "Flexcube"
+      }
+     ],
+     "src": "S1"
+    },
+    {
+     "say": "And at Citibank a big payment needs three people.",
+     "show": [
+      {
+       "v": "in",
+       "id": "a",
+       "from": "drop",
+       "on": "big"
+      },
+      {
+       "v": "in",
+       "id": "b",
+       "from": "drop",
+       "on": "needs"
+      },
+      {
+       "v": "in",
+       "id": "c",
+       "from": "drop",
+       "on": "three"
+      }
+     ]
+    },
+    {
+     "say": "One builds it. One checks it. One approves it.",
+     "show": [
+      {
+       "v": "glow",
+       "id": "a",
+       "color": "gold",
+       "on": "builds"
+      },
+      {
+       "v": "glow",
+       "id": "b",
+       "color": "gold",
+       "on": "checks"
+      },
+      {
+       "v": "glow",
+       "id": "c",
+       "color": "gold",
+       "on": "approves"
+      },
+      {
+       "v": "fly",
+       "from": "a",
+       "to": "c",
+       "obj": "doc",
+       "n": 5,
+       "on": "approves"
+      }
+     ]
+    },
+    {
+     "say": "They call it the six eyes rule.",
+     "show": [
+      {
+       "v": "cam",
+       "id": "b",
+       "zoom": 1.3,
+       "on": "six"
+      },
+      {
+       "v": "label",
+       "id": "b",
+       "t": "SIX EYES",
+       "on": "eyes"
+      }
+     ],
+     "src": "S1"
+    }
+   ]
+  },
+  {
+   "kind": "motion",
+   "bg": "vault",
+   "layout": "flow",
+   "actors": [
+    {
+     "id": "lp",
+     "obj": "laptop",
+     "t": "FLEXCUBE"
+    },
+    {
+     "id": "ln",
+     "obj": "document",
+     "t": "WHOLE LOAN"
+    },
+    {
+     "id": "ws",
+     "obj": "briefcase"
+    }
+   ],
+   "lines": [
+    {
+     "say": "But Flexcube was old and strange.",
+     "show": [
+      {
+       "v": "in",
+       "id": "lp",
+       "from": "left"
+      },
+      {
+       "v": "shake",
+       "id": "lp",
+       "on": "strange"
+      }
+     ]
+    },
+    {
+     "say": "To send a small payment it first pretended to pay off the whole loan.",
+     "show": [
+      {
+       "v": "in",
+       "id": "ln",
+       "from": "pop",
+       "on": "pretended"
+      },
+      {
+       "v": "fly",
+       "from": "lp",
+       "to": "ln",
+       "obj": "bill",
+       "n": 10,
+       "on": "whole"
+      }
+     ],
+     "src": "S1"
+    },
+    {
+     "say": "Then it parked the big part in an inside account that goes nowhere.",
+     "show": [
+      {
+       "v": "in",
+       "id": "ws",
+       "from": "right",
+       "on": "parked"
+      },
+      {
+       "v": "fly",
+       "from": "ln",
+       "to": "ws",
+       "obj": "bill",
+       "n": 10,
+       "on": "inside"
+      },
+      {
+       "v": "label",
+       "id": "ws",
+       "t": "WASH ACCOUNT",
+       "on": "nowhere"
+      }
+     ],
+     "src": "S1"
+    },
+    {
+     "say": "So the money never really leaves. If you tick the right boxes.",
+     "show": [
+      {
+       "v": "glow",
+       "id": "ws",
+       "color": "green",
+       "on": "never"
+      },
+      {
+       "v": "cam",
+       "id": "lp",
+       "zoom": 1.3,
+       "on": "boxes"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "kind": "motion",
+   "bg": "vault",
+   "layout": "trio",
+   "actors": [
+    {
+     "id": "b1",
+     "obj": "document",
+     "t": "FRONT"
+    },
+    {
+     "id": "b2",
+     "obj": "document",
+     "t": "FUND"
+    },
+    {
+     "id": "b3",
+     "obj": "document",
+     "t": "PRINCIPAL"
+    }
+   ],
+   "lines": [
+    {
+     "say": "And that was the trap.",
+     "show": [
+      {
+       "v": "in",
+       "id": "b1",
+       "from": "drop"
+      },
+      {
+       "v": "in",
+       "id": "b2",
+       "from": "drop"
+      },
+      {
+       "v": "in",
+       "id": "b3",
+       "from": "drop",
+       "on": "trap"
+      }
+     ]
+    },
+    {
+     "say": "Sending only the interest meant ticking three boxes.",
+     "show": [
+      {
+       "v": "glow",
+       "id": "b1",
+       "color": "gold",
+       "on": "ticking"
+      },
+      {
+       "v": "glow",
+       "id": "b2",
+       "color": "gold",
+       "on": "three"
+      },
+      {
+       "v": "glow",
+       "id": "b3",
+       "color": "gold",
+       "on": "boxes"
+      }
+     ],
+     "src": "S1"
+    },
+    {
+     "say": "They ticked one.",
+     "show": [
+      {
+       "v": "stamp",
+       "id": "b3",
+       "t": "TICKED",
+       "color": "green",
+       "on": "ticked"
+      },
+      {
+       "v": "cross",
+       "id": "b1",
+       "on": "one"
+      },
+      {
+       "v": "cross",
+       "id": "b2",
+       "on": "one"
+      }
+     ],
+     "src": "S1"
+    }
+   ]
+  },
+  {
+   "kind": "image",
+   "img": "nyc.jpg",
+   "move": "pull",
+   "lines": [
+    {
+     "say": "A contractor in India built the payment.",
+     "show": [
+      {
+       "v": "label",
+       "t": "BUILT IN INDIA",
+       "pos": "tl",
+       "on": "India"
+      }
+     ],
+     "src": "S1"
+    },
+    {
+     "say": "His colleague checked it.",
+     "show": [
+      {
+       "v": "label",
+       "t": "CHECKED",
+       "pos": "l",
+       "on": "checked"
+      }
+     ]
+    },
+    {
+     "say": "And a senior manager in Delaware approved it.",
+     "show": [
+      {
+       "v": "label",
+       "t": "APPROVED IN DELAWARE",
+       "pos": "br",
+       "on": "Delaware"
+      }
+     ],
+     "src": "S1"
+    },
+    {
+     "say": "So who clicked? All three of them did.",
+     "show": [
+      {
+       "v": "big",
+       "t": "ALL THREE",
+       "label": "SIX EYES · ZERO CATCHES",
+       "on": "All"
+      }
+     ],
+     "answers": 1
+    }
+   ]
+  },
+  {
+   "kind": "motion",
+   "bg": "vault",
+   "layout": "hero",
+   "actors": [
+    {
+     "id": "vt",
+     "obj": "vault"
+    },
+    {
+     "id": "c1",
+     "obj": "cashstack"
+    },
+    {
+     "id": "c2",
+     "obj": "cashstack"
+    },
+    {
+     "id": "bk",
+     "obj": "bank"
+    },
+    {
+     "id": "ln",
+     "obj": "person"
+    }
+   ],
+   "lines": [
+    {
+     "say": "At five forty five the vault opened.",
+     "show": [
+      {
+       "v": "in",
+       "id": "vt",
+       "from": "pop"
+      },
+      {
+       "v": "in",
+       "id": "c1",
+       "from": "pop"
+      },
+      {
+       "v": "in",
+       "id": "c2",
+       "from": "pop"
+      },
+      {
+       "v": "open",
+       "id": "vt",
+       "on": "vault"
+      }
+     ],
+     "src": "S1"
+    },
+    {
+     "say": "Not seven point eight million. Almost nine hundred million.",
+     "show": [
+      {
+       "v": "count",
+       "id": "vt",
+       "n": 893944008,
+       "prefix": "$",
+       "color": "red",
+       "on": "Almost"
+      },
+      {
+       "v": "drain",
+       "id": "c1",
+       "on": "nine"
+      },
+      {
+       "v": "drain",
+       "id": "c2",
+       "on": "hundred"
+      }
+     ],
+     "src": "S1"
+    },
+    {
+     "say": "Every dollar of the loan plus the interest.",
+     "show": [
+      {
+       "v": "in",
+       "id": "ln",
+       "from": "right",
+       "on": "Every"
+      },
+      {
+       "v": "fly",
+       "from": "vt",
+       "to": "ln",
+       "obj": "bill",
+       "n": 16,
+       "on": "dollar"
+      }
+     ]
+    },
+    {
+     "say": "And it was not Revlon's money. It was Citibank's own.",
+     "show": [
+      {
+       "v": "in",
+       "id": "bk",
+       "from": "left",
+       "on": "Revlon's"
+      },
+      {
+       "v": "glow",
+       "id": "bk",
+       "color": "red",
+       "on": "Citibank's"
+      },
+      {
+       "v": "label",
+       "id": "bk",
+       "t": "ITS OWN MONEY",
+       "on": "own"
+      }
+     ],
+     "src": "S1"
+    }
+   ]
+  },
+  {
+   "kind": "motion",
+   "bg": "city",
+   "layout": "duel",
+   "actors": [
+    {
+     "id": "ck",
+     "obj": "clock"
+    },
+    {
+     "id": "bd",
+     "obj": "building"
+    }
+   ],
+   "lines": [
+    {
+     "say": "Then everyone went home.",
+     "show": [
+      {
+       "v": "in",
+       "id": "bd",
+       "from": "right"
+      },
+      {
+       "v": "in",
+       "id": "ck",
+       "from": "pop",
+       "on": "home"
+      }
+     ]
+    },
+    {
+     "say": "And the mistake sat there all night.",
+     "show": [
+      {
+       "v": "shake",
+       "id": "ck",
+       "on": "mistake"
+      },
+      {
+       "v": "cam",
+       "id": "ck",
+       "zoom": 1.3,
+       "on": "night"
+      },
+      {
+       "v": "glow",
+       "id": "ck",
+       "color": "red",
+       "on": "night"
+      }
+     ]
+    }
+   ],
+   "mood": "mystery"
+  },
+  {
+   "kind": "motion",
+   "bg": "desk",
+   "layout": "duel",
+   "actors": [
+    {
+     "id": "lp",
+     "obj": "laptop",
+     "t": "BALANCE CHECK"
+    },
+    {
+     "id": "mg",
+     "obj": "person"
+    },
+    {
+     "id": "ph",
+     "obj": "phone",
+     "x": 960,
+     "y": 700,
+     "s": 0.8,
+     "z": 0.8,
+     "t": "ERROR"
+    }
+   ],
+   "lines": [
+    {
+     "say": "The next morning a manager ran a routine check.",
+     "show": [
+      {
+       "v": "in",
+       "id": "mg",
+       "from": "right"
+      },
+      {
+       "v": "in",
+       "id": "lp",
+       "from": "left",
+       "on": "routine"
+      }
+     ],
+     "src": "S1"
+    },
+    {
+     "say": "The numbers did not match.",
+     "show": [
+      {
+       "v": "shake",
+       "id": "lp",
+       "on": "not"
+      },
+      {
+       "v": "glow",
+       "id": "lp",
+       "color": "red",
+       "on": "match"
+      }
+     ]
+    },
+    {
+     "say": "Almost nine hundred million dollars was missing.",
+     "show": [
+      {
+       "v": "count",
+       "id": "lp",
+       "n": 893944008,
+       "prefix": "-$",
+       "color": "red",
+       "on": "nine"
+      },
+      {
+       "v": "in",
+       "id": "ph",
+       "from": "pop",
+       "on": "missing"
+      },
+      {
+       "v": "shake",
+       "id": "ph",
+       "on": "missing"
+      }
+     ],
+     "src": "S1"
+    }
+   ],
+   "mood": "react"
+  },
+  {
+   "kind": "card",
+   "head": "CITIBANK · AUGUST 11 2020",
+   "source": "SOURCE: U.S. DISTRICT COURT, S.D.N.Y.",
+   "lines": [
+    {
+     "say": "This is what should have gone out.",
+     "show": [
+      {
+       "v": "bar",
+       "label": "MEANT TO SEND",
+       "val": "$7.8M",
+       "w": 0.03
+      }
+     ],
+     "src": "S1"
+    },
+    {
+     "say": "And this is what did.",
+     "show": [
+      {
+       "v": "bar",
+       "label": "ACTUALLY SENT",
+       "val": "$893.9M",
+       "w": 1,
+       "color": "red",
+       "on": "this"
+      },
+      {
+       "v": "stamp",
+       "t": "114× too much",
+       "on": "did"
+      }
+     ],
+     "src": "S1"
+    }
+   ]
+  },
+  {
+   "kind": "motion",
+   "bg": "city",
+   "layout": "hero",
+   "actors": [
+    {
+     "id": "bk",
+     "obj": "bank"
+    },
+    {
+     "id": "p1",
+     "obj": "person"
+    },
+    {
+     "id": "p2",
+     "obj": "person"
+    },
+    {
+     "id": "p3",
+     "obj": "person"
+    },
+    {
+     "id": "p4",
+     "obj": "person"
+    }
+   ],
+   "lines": [
+    {
+     "say": "So Citibank did the only thing it could.",
+     "show": [
+      {
+       "v": "in",
+       "id": "bk",
+       "from": "pop"
+      },
+      {
+       "v": "in",
+       "id": "p1",
+       "from": "left",
+       "on": "only"
+      },
+      {
+       "v": "in",
+       "id": "p2",
+       "from": "right",
+       "on": "only"
+      },
+      {
+       "v": "in",
+       "id": "p3",
+       "from": "left",
+       "on": "thing"
+      },
+      {
+       "v": "in",
+       "id": "p4",
+       "from": "right",
+       "on": "thing"
+      }
+     ]
+    },
+    {
+     "say": "It asked for the money back.",
+     "show": [
+      {
+       "v": "fly",
+       "from": "bk",
+       "to": "p1",
+       "obj": "doc",
+       "n": 4,
+       "on": "asked"
+      },
+      {
+       "v": "fly",
+       "from": "bk",
+       "to": "p2",
+       "obj": "doc",
+       "n": 4,
+       "on": "money"
+      },
+      {
+       "v": "fly",
+       "from": "bk",
+       "to": "p4",
+       "obj": "doc",
+       "n": 4,
+       "on": "back"
+      }
+     ],
+     "src": "S3"
+    },
+    {
+     "say": "And most lenders said sure.",
+     "show": [
+      {
+       "v": "fly",
+       "from": "p1",
+       "to": "bk",
+       "obj": "bill",
+       "n": 10,
+       "on": "most"
+      },
+      {
+       "v": "fly",
+       "from": "p3",
+       "to": "bk",
+       "obj": "bill",
+       "n": 10,
+       "on": "sure"
+      }
+     ]
+    },
+    {
+     "say": "About three hundred eighty five million dollars came home.",
+     "show": [
+      {
+       "v": "count",
+       "id": "bk",
+       "n": 385000000,
+       "prefix": "$",
+       "color": "ink",
+       "on": "three"
+      },
+      {
+       "v": "glow",
+       "id": "bk",
+       "color": "green",
+       "on": "home"
+      }
+     ],
+     "src": "S3"
+    }
+   ],
+   "mood": "tense"
+  },
+  {
+   "kind": "motion",
+   "bg": "city",
+   "layout": "duel",
+   "actors": [
+    {
+     "id": "rv",
+     "obj": "building"
+    },
+    {
+     "id": "cs",
+     "obj": "cashstack"
+    }
+   ],
+   "lines": [
+    {
+     "say": "Now remember Revlon.",
+     "show": [
+      {
+       "v": "in",
+       "id": "rv",
+       "from": "left"
+      },
+      {
+       "v": "label",
+       "id": "rv",
+       "t": "REVLON · 2020",
+       "on": "Revlon"
+      }
+     ]
+    },
+    {
+     "say": "That year its stores were shut by the pandemic.",
+     "show": [
+      {
+       "v": "shake",
+       "id": "rv",
+       "on": "shut"
+      },
+      {
+       "v": "glow",
+       "id": "rv",
+       "color": "red",
+       "on": "pandemic"
+      }
+     ]
+    },
+    {
+     "say": "So for a lender getting every dollar back early felt like a miracle.",
+     "show": [
+      {
+       "v": "in",
+       "id": "cs",
+       "from": "pop",
+       "on": "every"
+      },
+      {
+       "v": "grow",
+       "id": "cs",
+       "on": "dollar"
+      },
+      {
+       "v": "glow",
+       "id": "cs",
+       "color": "gold",
+       "on": "miracle"
+      }
+     ]
+    },
+    {
+     "say": "And miracles are hard to give back.",
+     "show": [
+      {
+       "v": "cam",
+       "id": "cs",
+       "zoom": 1.3,
+       "on": "hard"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "kind": "motion",
+   "bg": "court",
+   "layout": "crowd",
+   "actors": [
+    {
+     "id": "f1",
+     "obj": "person"
+    },
+    {
+     "id": "f2",
+     "obj": "person"
+    },
+    {
+     "id": "f3",
+     "obj": "person"
+    },
+    {
+     "id": "f4",
+     "obj": "person"
+    },
+    {
+     "id": "bc",
+     "obj": "briefcase",
+     "x": 960,
+     "y": 720,
+     "s": 1.3,
+     "z": 0.85
+    }
+   ],
+   "lines": [
+    {
+     "say": "But ten investment firms looked at the money.",
+     "show": [
+      {
+       "v": "in",
+       "id": "f1",
+       "from": "drop"
+      },
+      {
+       "v": "in",
+       "id": "f2",
+       "from": "drop"
+      },
+      {
+       "v": "in",
+       "id": "f3",
+       "from": "drop",
+       "on": "ten"
+      },
+      {
+       "v": "in",
+       "id": "f4",
+       "from": "drop",
+       "on": "firms"
+      },
+      {
+       "v": "in",
+       "id": "bc",
+       "from": "pop",
+       "on": "money"
+      }
+     ],
+     "src": "S3"
+    },
+    {
+     "say": "And they said no.",
+     "show": [
+      {
+       "v": "stamp",
+       "id": "f2",
+       "t": "NO",
+       "on": "no"
+      },
+      {
+       "v": "stamp",
+       "id": "f3",
+       "t": "NO",
+       "on": "no"
+      },
+      {
+       "v": "shake",
+       "id": "bc",
+       "on": "no"
+      }
+     ]
+    },
+    {
+     "say": "Together they were holding half a billion dollars.",
+     "show": [
+      {
+       "v": "cam",
+       "id": "bc",
+       "zoom": 1.35,
+       "on": "holding"
+      },
+      {
+       "v": "count",
+       "id": "bc",
+       "n": 504000000,
+       "prefix": "$",
+       "color": "red",
+       "on": "half"
+      },
+      {
+       "v": "glow",
+       "id": "bc",
+       "color": "gold",
+       "on": "billion"
+      }
+     ],
+     "src": "S2",
+     "answers": 2
+    }
+   ]
+  },
+  {
+   "kind": "motion",
+   "bg": "desk",
+   "layout": "duel",
+   "actors": [
+    {
+     "id": "ph",
+     "obj": "phone",
+     "t": "GROUP CHAT"
+    },
+    {
+     "id": "tr",
+     "obj": "person"
+    }
+   ],
+   "lines": [
+    {
+     "say": "Inside those firms the group chats lit up.",
+     "show": [
+      {
+       "v": "in",
+       "id": "tr",
+       "from": "right"
+      },
+      {
+       "v": "in",
+       "id": "ph",
+       "from": "pop",
+       "on": "chats"
+      },
+      {
+       "v": "shake",
+       "id": "ph",
+       "on": "lit"
+      },
+      {
+       "v": "glow",
+       "id": "ph",
+       "color": "gold",
+       "on": "lit"
+      }
+     ]
+    },
+    {
+     "say": "Traders typed words like unbelievable and accidental and overpayment.",
+     "show": [
+      {
+       "v": "label",
+       "id": "ph",
+       "t": "\"UNBELIEVABLE\"",
+       "on": "unbelievable"
+      },
+      {
+       "v": "label",
+       "id": "ph",
+       "t": "\"ACCIDENTAL\"",
+       "on": "accidental"
+      },
+      {
+       "v": "shake",
+       "id": "ph",
+       "on": "overpayment"
+      }
+     ],
+     "src": "S2"
+    },
+    {
+     "say": "So they knew something was off.",
+     "show": [
+      {
+       "v": "cam",
+       "id": "tr",
+       "zoom": 1.3,
+       "on": "knew"
+      },
+      {
+       "v": "glow",
+       "id": "tr",
+       "color": "red",
+       "on": "off"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "kind": "motion",
+   "bg": "city",
+   "layout": "flow",
+   "actors": [
+    {
+     "id": "ln",
+     "obj": "document",
+     "t": "LOAN · DUE 2023"
+    },
+    {
+     "id": "rv",
+     "obj": "building"
+    },
+    {
+     "id": "ck",
+     "obj": "clock"
+    }
+   ],
+   "lines": [
+    {
+     "say": "But here is the part that made this case famous.",
+     "show": [
+      {
+       "v": "in",
+       "id": "rv",
+       "from": "left"
+      },
+      {
+       "v": "in",
+       "id": "ln",
+       "from": "pop",
+       "on": "part"
+      }
+     ]
+    },
+    {
+     "say": "Revlon really did owe them that money.",
+     "show": [
+      {
+       "v": "stamp",
+       "id": "ln",
+       "t": "OWED",
+       "color": "green",
+       "on": "owe"
+      },
+      {
+       "v": "glow",
+       "id": "ln",
+       "color": "gold",
+       "on": "money"
+      }
+     ],
+     "src": "S3"
+    },
+    {
+     "say": "Every dollar. To the cent.",
+     "show": [
+      {
+       "v": "count",
+       "id": "ln",
+       "n": 504000000,
+       "prefix": "$",
+       "on": "dollar"
+      },
+      {
+       "v": "cam",
+       "id": "ln",
+       "zoom": 1.25,
+       "on": "cent"
+      }
+     ]
+    },
+    {
+     "say": "The loan just was not due for three more years.",
+     "show": [
+      {
+       "v": "in",
+       "id": "ck",
+       "from": "right",
+       "on": "due"
+      },
+      {
+       "v": "shake",
+       "id": "ck",
+       "on": "three"
+      },
+      {
+       "v": "label",
+       "id": "ck",
+       "t": "3 YEARS EARLY",
+       "on": "years"
+      }
+     ],
+     "src": "S3"
+    }
+   ]
+  },
+  {
+   "kind": "motion",
+   "bg": "desk",
+   "layout": "duel",
+   "actors": [
+    {
+     "id": "you",
+     "obj": "person"
+    },
+    {
+     "id": "bc",
+     "obj": "briefcase"
+    },
+    {
+     "id": "ph",
+     "obj": "phone",
+     "x": 960,
+     "y": 700,
+     "s": 0.8,
+     "z": 0.85,
+     "t": "+$504M"
+    }
+   ],
+   "lines": [
+    {
+     "say": "Now put yourself in their chair.",
+     "show": [
+      {
+       "v": "in",
+       "id": "you",
+       "from": "left"
+      },
+      {
+       "v": "cam",
+       "id": "you",
+       "zoom": 1.2,
+       "on": "chair"
+      }
+     ]
+    },
+    {
+     "say": "Half a billion dollars just landed in your account.",
+     "show": [
+      {
+       "v": "in",
+       "id": "ph",
+       "from": "drop",
+       "on": "landed"
+      },
+      {
+       "v": "shake",
+       "id": "ph",
+       "on": "landed"
+      },
+      {
+       "v": "in",
+       "id": "bc",
+       "from": "right",
+       "on": "account"
+      },
+      {
+       "v": "grow",
+       "id": "bc",
+       "on": "account"
+      }
+     ],
+     "src": "S2"
+    },
+    {
+     "say": "It is money you were owed anyway.",
+     "show": [
+      {
+       "v": "glow",
+       "id": "bc",
+       "color": "gold",
+       "on": "owed"
+      }
+     ]
+    },
+    {
+     "say": "Would you send it back?",
+     "show": [
+      {
+       "v": "cam",
+       "id": "you",
+       "zoom": 1.4,
+       "on": "send"
+      },
+      {
+       "v": "glow",
+       "id": "you",
+       "color": "red",
+       "on": "back"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "kind": "image",
+   "img": "vault.jpg",
+   "move": "push",
+   "lines": [
+    {
+     "say": "So it was not a robbery.",
+     "show": [
+      {
+       "v": "deny",
+       "t": "NO ROBBERY",
+       "sub": "mask"
+      }
+     ]
+    },
+    {
+     "say": "And it was not a trick.",
+     "show": [
+      {
+       "v": "deny",
+       "t": "NO TRICK",
+       "sub": "key"
+      }
+     ]
+    },
+    {
+     "say": "It was their own loan paid back early by accident.",
+     "show": [
+      {
+       "v": "big",
+       "t": "PAID BACK EARLY",
+       "label": "BY ACCIDENT · BY THE WRONG PAYER",
+       "on": "own"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "kind": "motion",
+   "bg": "court",
+   "layout": "flow",
+   "actors": [
+    {
+     "id": "cs",
+     "obj": "document",
+     "t": "1991 RULING"
+    },
+    {
+     "id": "gv",
+     "obj": "gavel"
+    },
+    {
+     "id": "ev",
+     "obj": "envelope"
+    }
+   ],
+   "lines": [
+    {
+     "say": "And New York has an old rule for exactly this.",
+     "show": [
+      {
+       "v": "in",
+       "id": "gv",
+       "from": "top"
+      },
+      {
+       "v": "in",
+       "id": "cs",
+       "from": "left",
+       "on": "old"
+      }
+     ],
+     "src": "S2"
+    },
+    {
+     "say": "It comes from a case in nineteen ninety one.",
+     "show": [
+      {
+       "v": "glow",
+       "id": "cs",
+       "color": "gold",
+       "on": "nineteen"
+      },
+      {
+       "v": "cam",
+       "id": "cs",
+       "zoom": 1.25,
+       "on": "ninety"
+      }
+     ]
+    },
+    {
+     "say": "If someone pays off a real debt by mistake you can keep the money.",
+     "show": [
+      {
+       "v": "in",
+       "id": "ev",
+       "from": "right",
+       "on": "pays"
+      },
+      {
+       "v": "fly",
+       "from": "ev",
+       "to": "cs",
+       "obj": "bill",
+       "n": 8,
+       "on": "debt"
+      },
+      {
+       "v": "stamp",
+       "id": "cs",
+       "t": "KEEP IT",
+       "color": "green",
+       "on": "keep"
+      }
+     ],
+     "src": "S2"
+    },
+    {
+     "say": "But only if you did not know it was a mistake.",
+     "show": [
+      {
+       "v": "shake",
+       "id": "gv",
+       "on": "only"
+      },
+      {
+       "v": "label",
+       "id": "gv",
+       "t": "DID THEY KNOW?",
+       "on": "know"
+      }
+     ]
+    }
+   ],
+   "mood": "mystery"
+  },
+  {
+   "kind": "motion",
+   "bg": "court",
+   "layout": "duel",
+   "actors": [
+    {
+     "id": "bk",
+     "obj": "bank"
+    },
+    {
+     "id": "ln",
+     "obj": "person"
+    },
+    {
+     "id": "gv",
+     "obj": "gavel",
+     "x": 960,
+     "y": 640,
+     "s": 1.0,
+     "z": 0.8
+    }
+   ],
+   "lines": [
+    {
+     "say": "So the whole trial came down to one question.",
+     "show": [
+      {
+       "v": "in",
+       "id": "bk",
+       "from": "left"
+      },
+      {
+       "v": "in",
+       "id": "ln",
+       "from": "right"
+      },
+      {
+       "v": "in",
+       "id": "gv",
+       "from": "top",
+       "on": "question"
+      }
+     ]
+    },
+    {
+     "say": "Did the lenders know?",
+     "show": [
+      {
+       "v": "cam",
+       "id": "ln",
+       "zoom": 1.3,
+       "on": "lenders"
+      },
+      {
+       "v": "glow",
+       "id": "ln",
+       "color": "red",
+       "on": "know"
+      }
+     ]
+    },
+    {
+     "say": "Citibank said of course they knew because nobody repays a loan three years early.",
+     "show": [
+      {
+       "v": "cam",
+       "id": "bk",
+       "zoom": 1.3,
+       "on": "Citibank"
+      },
+      {
+       "v": "glow",
+       "id": "bk",
+       "color": "gold",
+       "on": "course"
+      },
+      {
+       "v": "shake",
+       "id": "bk",
+       "on": "nobody"
+      }
+     ]
+    },
+    {
+     "say": "The lenders said a bank that size does not make a mistake that big.",
+     "show": [
+      {
+       "v": "cam",
+       "id": "ln",
+       "zoom": 1.3,
+       "on": "lenders"
+      },
+      {
+       "v": "glow",
+       "id": "ln",
+       "color": "gold",
+       "on": "size"
+      },
+      {
+       "v": "shake",
+       "id": "ln",
+       "on": "big"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "kind": "motion",
+   "bg": "court",
+   "layout": "hero",
+   "actors": [
+    {
+     "id": "gv",
+     "obj": "gavel"
+    },
+    {
+     "id": "bk",
+     "obj": "bank"
+    },
+    {
+     "id": "ln",
+     "obj": "person"
+    },
+    {
+     "id": "cs",
+     "obj": "cashstack"
+    }
+   ],
+   "lines": [
+    {
+     "say": "In February two thousand twenty one the judge picked a side.",
+     "show": [
+      {
+       "v": "in",
+       "id": "gv",
+       "from": "top"
+      },
+      {
+       "v": "in",
+       "id": "bk",
+       "from": "left",
+       "on": "judge"
+      },
+      {
+       "v": "in",
+       "id": "ln",
+       "from": "right",
+       "on": "judge"
+      },
+      {
+       "v": "in",
+       "id": "cs",
+       "from": "pop",
+       "on": "side"
+      }
+     ],
+     "src": "S2"
+    },
+    {
+     "say": "The lenders could keep all of it.",
+     "show": [
+      {
+       "v": "shake",
+       "id": "gv",
+       "on": "keep"
+      },
+      {
+       "v": "fly",
+       "from": "bk",
+       "to": "ln",
+       "obj": "bill",
+       "n": 14,
+       "on": "keep"
+      },
+      {
+       "v": "stamp",
+       "id": "bk",
+       "t": "DENIED",
+       "on": "all"
+      }
+     ],
+     "src": "S2",
+     "answers": 3
+    },
+    {
+     "say": "Half a billion dollars. Gone for good.",
+     "show": [
+      {
+       "v": "drain",
+       "id": "cs",
+       "on": "Half"
+      },
+      {
+       "v": "count",
+       "id": "ln",
+       "n": 504000000,
+       "prefix": "$",
+       "color": "red",
+       "on": "billion"
+      }
+     ],
+     "src": "S2"
+    }
+   ],
+   "mood": "react"
+  },
+  {
+   "kind": "quote",
+   "by": "U.S. DISTRICT JUDGE JESSE FURMAN · FEBRUARY 16 2021",
+   "lines": [
+    {
+     "say": "And the judge did not spare the bank.",
+     "show": [
+      {
+       "v": "quote",
+       "t": "one of the biggest blunders in banking history",
+       "on": "spare"
+      }
+     ],
+     "src": "S1"
+    }
+   ]
+  },
+  {
+   "kind": "stats",
+   "head": "CITIBANK · THE BILL KEEPS GROWING",
+   "side": "globe",
+   "lines": [
+    {
+     "say": "Then it got worse because the regulators arrived.",
+     "show": [
+      {
+       "v": "stat",
+       "n": 400,
+       "prefix": "$",
+       "suffix": "M",
+       "label": "FINE · WEAK INTERNAL CONTROLS · OCT 7 2020",
+       "color": "red",
+       "on": "regulators"
+      }
+     ],
+     "src": "S4"
+    },
+    {
+     "say": "That fine covered years of problems and not just one click.",
+     "show": [
+      {
+       "v": "stat",
+       "t": "2013 · 2015 · 2020",
+       "label": "WARNINGS THE BANK HAD ALREADY BEEN GIVEN",
+       "on": "years"
+      }
+     ],
+     "src": "S4"
+    }
+   ]
+  },
+  {
+   "kind": "motion",
+   "bg": "vault",
+   "layout": "flow",
+   "actors": [
+    {
+     "id": "vt",
+     "obj": "vault"
+    },
+    {
+     "id": "lk",
+     "obj": "lock"
+    },
+    {
+     "id": "ck",
+     "obj": "clock"
+    }
+   ],
+   "lines": [
+    {
+     "say": "But Citibank was not done.",
+     "show": [
+      {
+       "v": "in",
+       "id": "vt",
+       "from": "pop"
+      },
+      {
+       "v": "in",
+       "id": "lk",
+       "from": "drop",
+       "on": "done"
+      }
+     ]
+    },
+    {
+     "say": "It appealed.",
+     "show": [
+      {
+       "v": "shake",
+       "id": "lk",
+       "on": "appealed"
+      }
+     ]
+    },
+    {
+     "say": "And for nineteen months half a billion dollars sat frozen.",
+     "show": [
+      {
+       "v": "in",
+       "id": "ck",
+       "from": "right",
+       "on": "nineteen"
+      },
+      {
+       "v": "count",
+       "id": "vt",
+       "n": 504000000,
+       "prefix": "$",
+       "on": "half"
+      },
+      {
+       "v": "glow",
+       "id": "vt",
+       "color": "gold",
+       "on": "frozen"
+      },
+      {
+       "v": "cam",
+       "id": "vt",
+       "zoom": 1.25,
+       "on": "frozen"
+      }
+     ],
+     "src": "S3"
+    }
+   ],
+   "mood": "tense"
+  },
+  {
+   "kind": "motion",
+   "bg": "court",
+   "layout": "trio",
+   "actors": [
+    {
+     "id": "j1",
+     "obj": "person"
+    },
+    {
+     "id": "j2",
+     "obj": "person"
+    },
+    {
+     "id": "j3",
+     "obj": "person"
+    },
+    {
+     "id": "dc",
+     "obj": "document",
+     "x": 960,
+     "y": 760,
+     "s": 0.9,
+     "z": 0.85,
+     "t": "THE RULING"
+    }
+   ],
+   "lines": [
+    {
+     "say": "Then in September two thousand twenty two three new judges read the same facts.",
+     "show": [
+      {
+       "v": "in",
+       "id": "j1",
+       "from": "drop"
+      },
+      {
+       "v": "in",
+       "id": "j2",
+       "from": "drop",
+       "on": "three"
+      },
+      {
+       "v": "in",
+       "id": "j3",
+       "from": "drop",
+       "on": "judges"
+      },
+      {
+       "v": "in",
+       "id": "dc",
+       "from": "pop",
+       "on": "facts"
+      }
+     ],
+     "src": "S3"
+    },
+    {
+     "say": "And they saw the opposite.",
+     "show": [
+      {
+       "v": "stamp",
+       "id": "dc",
+       "t": "REVERSED",
+       "on": "opposite"
+      },
+      {
+       "v": "shake",
+       "id": "dc",
+       "on": "opposite"
+      }
+     ],
+     "src": "S3"
+    },
+    {
+     "say": "The loan was not due for three years. So nobody was owed that money yet.",
+     "show": [
+      {
+       "v": "glow",
+       "id": "j2",
+       "color": "gold",
+       "on": "due"
+      },
+      {
+       "v": "cross",
+       "id": "dc",
+       "on": "owed"
+      }
+     ],
+     "src": "S3"
+    }
+   ]
+  },
+  {
+   "kind": "motion",
+   "bg": "desk",
+   "layout": "duel",
+   "actors": [
+    {
+     "id": "ph",
+     "obj": "phone",
+     "t": "CALL THE BANK"
+    },
+    {
+     "id": "iv",
+     "obj": "person"
+    }
+   ],
+   "lines": [
+    {
+     "say": "And a careful investor would have picked up the phone.",
+     "show": [
+      {
+       "v": "in",
+       "id": "iv",
+       "from": "right"
+      },
+      {
+       "v": "in",
+       "id": "ph",
+       "from": "pop",
+       "on": "careful"
+      },
+      {
+       "v": "shake",
+       "id": "ph",
+       "on": "phone"
+      }
+     ],
+     "src": "S3"
+    },
+    {
+     "say": "One call. Is this a mistake?",
+     "show": [
+      {
+       "v": "glow",
+       "id": "ph",
+       "color": "gold",
+       "on": "call"
+      },
+      {
+       "v": "cam",
+       "id": "ph",
+       "zoom": 1.35,
+       "on": "mistake"
+      }
+     ]
+    },
+    {
+     "say": "Nobody made that call.",
+     "show": [
+      {
+       "v": "cross",
+       "id": "ph",
+       "on": "Nobody"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "kind": "motion",
+   "bg": "city",
+   "layout": "hero",
+   "actors": [
+    {
+     "id": "bk",
+     "obj": "bank"
+    },
+    {
+     "id": "f1",
+     "obj": "person"
+    },
+    {
+     "id": "f2",
+     "obj": "person"
+    },
+    {
+     "id": "f3",
+     "obj": "person"
+    },
+    {
+     "id": "f4",
+     "obj": "person"
+    }
+   ],
+   "lines": [
+    {
+     "say": "So the ten firms had to send it all back.",
+     "show": [
+      {
+       "v": "in",
+       "id": "bk",
+       "from": "pop"
+      },
+      {
+       "v": "in",
+       "id": "f1",
+       "from": "left"
+      },
+      {
+       "v": "in",
+       "id": "f2",
+       "from": "right"
+      },
+      {
+       "v": "in",
+       "id": "f3",
+       "from": "left",
+       "on": "firms"
+      },
+      {
+       "v": "in",
+       "id": "f4",
+       "from": "right",
+       "on": "firms"
+      },
+      {
+       "v": "fly",
+       "from": "f1",
+       "to": "bk",
+       "obj": "bill",
+       "n": 10,
+       "on": "send"
+      },
+      {
+       "v": "fly",
+       "from": "f2",
+       "to": "bk",
+       "obj": "bill",
+       "n": 10,
+       "on": "all"
+      },
+      {
+       "v": "fly",
+       "from": "f4",
+       "to": "bk",
+       "obj": "bill",
+       "n": 10,
+       "on": "back"
+      }
+     ],
+     "src": "S3"
+    },
+    {
+     "say": "By December the case was closed.",
+     "show": [
+      {
+       "v": "count",
+       "id": "bk",
+       "n": 504000000,
+       "prefix": "+$",
+       "on": "December"
+      },
+      {
+       "v": "stamp",
+       "id": "bk",
+       "t": "CASE CLOSED",
+       "color": "green",
+       "on": "closed"
+      }
+     ],
+     "src": "S5"
+    }
+   ],
+   "mood": "drive"
+  },
+  {
+   "kind": "motion",
+   "bg": "desk",
+   "layout": "trio",
+   "actors": [
+    {
+     "id": "e1",
+     "obj": "person"
+    },
+    {
+     "id": "e2",
+     "obj": "person"
+    },
+    {
+     "id": "e3",
+     "obj": "person"
+    },
+    {
+     "id": "lp",
+     "obj": "laptop",
+     "x": 960,
+     "y": 760,
+     "s": 0.9,
+     "z": 0.85,
+     "t": "ONE SCREEN"
+    }
+   ],
+   "lines": [
+    {
+     "say": "Think about that for a second.",
+     "show": [
+      {
+       "v": "in",
+       "id": "e1",
+       "from": "drop"
+      },
+      {
+       "v": "in",
+       "id": "e2",
+       "from": "drop"
+      },
+      {
+       "v": "in",
+       "id": "e3",
+       "from": "drop"
+      }
+     ]
+    },
+    {
+     "say": "Six eyes looked at one screen.",
+     "show": [
+      {
+       "v": "in",
+       "id": "lp",
+       "from": "pop",
+       "on": "one"
+      },
+      {
+       "v": "glow",
+       "id": "lp",
+       "color": "gold",
+       "on": "screen"
+      }
+     ]
+    },
+    {
+     "say": "And the most expensive mistake in banking walked right past them.",
+     "show": [
+      {
+       "v": "shake",
+       "id": "lp",
+       "on": "mistake"
+      },
+      {
+       "v": "cross",
+       "id": "lp",
+       "on": "past"
+      }
+     ],
+     "src": "S1"
+    },
+    {
+     "say": "Because each of them thought someone else had checked.",
+     "show": [
+      {
+       "v": "glow",
+       "id": "e1",
+       "color": "red",
+       "on": "each"
+      },
+      {
+       "v": "glow",
+       "id": "e2",
+       "color": "red",
+       "on": "someone"
+      },
+      {
+       "v": "glow",
+       "id": "e3",
+       "color": "red",
+       "on": "checked"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "kind": "motion",
+   "bg": "desk",
+   "layout": "flow",
+   "actors": [
+    {
+     "id": "ck",
+     "obj": "clock"
+    },
+    {
+     "id": "gv",
+     "obj": "gavel"
+    },
+    {
+     "id": "cs",
+     "obj": "cashstack"
+    }
+   ],
+   "lines": [
+    {
+     "say": "So Citibank got its money back.",
+     "show": [
+      {
+       "v": "in",
+       "id": "cs",
+       "from": "pop"
+      },
+      {
+       "v": "grow",
+       "id": "cs",
+       "on": "money"
+      }
+     ]
+    },
+    {
+     "say": "It only took two years and two courts.",
+     "show": [
+      {
+       "v": "in",
+       "id": "ck",
+       "from": "left",
+       "on": "two"
+      },
+      {
+       "v": "in",
+       "id": "gv",
+       "from": "top",
+       "on": "courts"
+      },
+      {
+       "v": "shake",
+       "id": "gv",
+       "on": "courts"
+      }
+     ]
+    },
+    {
+     "say": "And a place in history it never wanted.",
+     "show": [
+      {
+       "v": "cam",
+       "id": "gv",
+       "zoom": 1.25,
+       "on": "history"
+      },
+      {
+       "v": "label",
+       "id": "gv",
+       "t": "\"BIGGEST BLUNDERS\"",
+       "on": "never"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "kind": "motion",
+   "bg": "vault",
+   "layout": "trio",
+   "actors": [
+    {
+     "id": "b1",
+     "obj": "document",
+     "t": "FRONT"
+    },
+    {
+     "id": "b2",
+     "obj": "document",
+     "t": "FUND"
+    },
+    {
+     "id": "b3",
+     "obj": "document",
+     "t": "PRINCIPAL"
+    },
+    {
+     "id": "cur",
+     "obj": "cursor"
+    }
+   ],
+   "lines": [
+    {
+     "say": "All of it because of three little boxes.",
+     "show": [
+      {
+       "v": "in",
+       "id": "b1",
+       "from": "drop"
+      },
+      {
+       "v": "in",
+       "id": "b2",
+       "from": "drop"
+      },
+      {
+       "v": "in",
+       "id": "b3",
+       "from": "drop",
+       "on": "three"
+      },
+      {
+       "v": "in",
+       "id": "cur",
+       "from": "bottom",
+       "on": "boxes"
+      }
+     ]
+    },
+    {
+     "say": "And one click that nobody questioned.",
+     "show": [
+      {
+       "v": "press",
+       "id": "cur",
+       "to": "b3",
+       "on": "click"
+      },
+      {
+       "v": "stamp",
+       "id": "b3",
+       "t": "TICKED",
+       "color": "green",
+       "on": "click"
+      },
+      {
+       "v": "cross",
+       "id": "b1",
+       "on": "nobody"
+      },
+      {
+       "v": "cross",
+       "id": "b2",
+       "on": "questioned"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "kind": "motion",
+   "bg": "city",
+   "layout": "duel",
+   "actors": [
+    {
+     "id": "bk",
+     "obj": "bank"
+    },
+    {
+     "id": "you",
+     "obj": "person"
+    },
+    {
+     "id": "ph",
+     "obj": "phone",
+     "x": 960,
+     "y": 700,
+     "s": 0.8,
+     "z": 0.85,
+     "t": "+$9,000"
+    }
+   ],
+   "lines": [
+    {
+     "say": "And here is the part that matters for you.",
+     "show": [
+      {
+       "v": "in",
+       "id": "bk",
+       "from": "left"
+      },
+      {
+       "v": "in",
+       "id": "you",
+       "from": "right",
+       "on": "you"
+      },
+      {
+       "v": "cam",
+       "id": "you",
+       "zoom": 1.25,
+       "on": "you"
+      }
+     ]
+    },
+    {
+     "say": "If a bank ever drops money into your account by mistake it is not yours.",
+     "show": [
+      {
+       "v": "fly",
+       "from": "bk",
+       "to": "you",
+       "obj": "bill",
+       "n": 12,
+       "on": "drops"
+      },
+      {
+       "v": "in",
+       "id": "ph",
+       "from": "pop",
+       "on": "account"
+      },
+      {
+       "v": "cross",
+       "id": "ph",
+       "on": "not"
+      }
+     ],
+     "src": "S3"
+    },
+    {
+     "say": "Even nine hundred million dollars had to go back.",
+     "show": [
+      {
+       "v": "fly",
+       "from": "you",
+       "to": "bk",
+       "obj": "bill",
+       "n": 14,
+       "on": "nine"
+      },
+      {
+       "v": "count",
+       "id": "bk",
+       "n": 900000000,
+       "prefix": "$",
+       "on": "back"
+      }
+     ],
+     "src": "S3"
+    },
+    {
+     "say": "So before you click anything check the boxes.",
+     "show": [
+      {
+       "v": "glow",
+       "id": "you",
+       "color": "gold",
+       "on": "check"
+      },
+      {
+       "v": "shake",
+       "id": "ph",
+       "on": "boxes"
+      }
+     ]
+    }
+   ],
+   "mood": "drive"
+  }
+ ]
+}

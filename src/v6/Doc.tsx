@@ -422,7 +422,7 @@ export const Doc: React.FC<{plan: DocPlan}> = ({plan}) => {
   return (
     <AbsoluteFill style={{background: K.black}}>
       {sc ? <AbsoluteFill style={{opacity: cut, transform: ['image', 'receipt', 'drain', 'title', 'flash', 'motion'].includes(sc.kind) ? undefined : `scale(${drift})`}}><V sc={sc} f={f} id={plan.id} /></AbsoluteFill> : null}
-      {sc && inHook && sc.from > 0 ? <AbsoluteFill style={{background: '#fff', opacity: interpolate(f - sc.from, [0, 4], [0.5, 0], cl), pointerEvents: 'none'}} /> : null}
+      {sc && sc.from > 0 ? <AbsoluteFill style={{background: '#fff', opacity: interpolate(f - sc.from, [0, 4], [inHook ? 0.5 : 0.28, 0], cl), pointerEvents: 'none'}} /> : null}
       {sc?.hud ? (
         <div style={{position: 'absolute', left: 110, top: 78, display: 'flex', alignItems: 'center', gap: 16, opacity: cut}}>
           <div style={{width: 11, height: 11, borderRadius: 6, background: K.amber, opacity: 0.55 + 0.45 * Math.sin(f / 6)}} /><Mono size={22} color={K.amber} sp={0.3} bold>{sc.hud}</Mono>

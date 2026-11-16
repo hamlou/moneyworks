@@ -1,0 +1,803 @@
+{
+ "id": "click",
+ "title": "How Citibank Lost $900,000,000 With One Click",
+ "style": "doc",
+ "voice": "chatterbox",
+ "cb": {
+  "cfg": 0.3,
+  "exag": 0.45
+ },
+ "beats": [
+  {
+   "id": "b001",
+   "src": "S1",
+   "text": "One click sent nine hundred million dollars to the wrong people.",
+   "pause": 0.3,
+   "exag": 0.72
+  },
+  {
+   "id": "b002",
+   "src": "S1",
+   "text": "Three people approved it and nobody stopped it.",
+   "pause": 0.3,
+   "exag": 0.72
+  },
+  {
+   "id": "b003",
+   "src": "S1",
+   "text": "It was supposed to be eight million and this is what left the bank.",
+   "pause": 0.3,
+   "exag": 0.72
+  },
+  {
+   "id": "b004",
+   "src": "",
+   "text": "It was gone before anyone looked up.",
+   "pause": 0.3,
+   "exag": 0.72
+  },
+  {
+   "id": "b005",
+   "src": "",
+   "text": "But nobody hacked the bank.",
+   "pause": 0.12,
+   "exag": 0.72
+  },
+  {
+   "id": "b006",
+   "src": "",
+   "text": "And nobody stole a thing.",
+   "pause": 0.3,
+   "exag": 0.72
+  },
+  {
+   "id": "b007",
+   "src": "S2",
+   "text": "And here is the wildest part because the bank never got it back.",
+   "pause": 0.3,
+   "exag": 0.72
+  },
+  {
+   "id": "b008",
+   "src": "S1",
+   "text": "A judge refused and called it one of the biggest blunders in banking history.",
+   "pause": 0.3,
+   "exag": 0.72
+  },
+  {
+   "id": "b009",
+   "src": "",
+   "text": "So who clicked and who kept the money and why did the law let them?",
+   "pause": 0.3,
+   "exag": 0.72
+  },
+  {
+   "id": "b010",
+   "src": "S1",
+   "text": "This is the nine hundred million dollar click.",
+   "pause": 0.3,
+   "exag": 0.72
+  },
+  {
+   "id": "b011",
+   "src": "",
+   "text": "Imagine you work at a bank.",
+   "pause": 0.18,
+   "exag": 0.64
+  },
+  {
+   "id": "b012",
+   "src": "",
+   "text": "Your screen shows three small boxes. You tick one.",
+   "pause": 0.18,
+   "exag": 0.64
+  },
+  {
+   "id": "b013",
+   "src": "",
+   "text": "Then you go home.",
+   "pause": 0.18,
+   "exag": 0.64
+  },
+  {
+   "id": "b014",
+   "src": "S1",
+   "text": "And by morning your employer is missing nine hundred million dollars.",
+   "pause": 0.4,
+   "exag": 0.64
+  },
+  {
+   "id": "b015",
+   "src": "",
+   "text": "It starts with a makeup company.",
+   "pause": 0.18,
+   "exag": 0.64
+  },
+  {
+   "id": "b016",
+   "src": "S1",
+   "text": "In two thousand sixteen Revlon borrowed almost two billion dollars.",
+   "pause": 0.18,
+   "exag": 0.64
+  },
+  {
+   "id": "b017",
+   "src": "",
+   "text": "The money came from hundreds of lenders.",
+   "pause": 0.18,
+   "exag": 0.64
+  },
+  {
+   "id": "b018",
+   "src": "",
+   "text": "And Citibank sat in the middle.",
+   "pause": 0.4,
+   "exag": 0.64
+  },
+  {
+   "id": "b019",
+   "src": "",
+   "text": "Its job was boring.",
+   "pause": 0.18,
+   "exag": 0.64
+  },
+  {
+   "id": "b020",
+   "src": "",
+   "text": "Revlon pays the bank. The bank pays the lenders.",
+   "pause": 0.18,
+   "exag": 0.64
+  },
+  {
+   "id": "b021",
+   "src": "S1",
+   "text": "Citibank never risks a cent of its own money.",
+   "pause": 0.18,
+   "exag": 0.64
+  },
+  {
+   "id": "b022",
+   "src": "",
+   "text": "Until August the eleventh.",
+   "pause": 0.4,
+   "exag": 0.64
+  },
+  {
+   "id": "b023",
+   "src": "",
+   "text": "That day Revlon owed a small interest payment.",
+   "pause": 0.18,
+   "exag": 0.64
+  },
+  {
+   "id": "b024",
+   "src": "S1",
+   "text": "Seven point eight million dollars.",
+   "pause": 0.4,
+   "exag": 0.64
+  },
+  {
+   "id": "b025",
+   "src": "S1",
+   "text": "The payment was built in a banking program called Flexcube.",
+   "pause": 0.18,
+   "exag": 0.64
+  },
+  {
+   "id": "b026",
+   "src": "",
+   "text": "And at Citibank a big payment needs three people.",
+   "pause": 0.18,
+   "exag": 0.64
+  },
+  {
+   "id": "b027",
+   "src": "",
+   "text": "One builds it. One checks it. One approves it.",
+   "pause": 0.18,
+   "exag": 0.64
+  },
+  {
+   "id": "b028",
+   "src": "S1",
+   "text": "They call it the six eyes rule.",
+   "pause": 0.4,
+   "exag": 0.64
+  },
+  {
+   "id": "b029",
+   "src": "",
+   "text": "But Flexcube was old and strange.",
+   "pause": 0.18,
+   "exag": 0.64
+  },
+  {
+   "id": "b030",
+   "src": "S1",
+   "text": "To send a small payment it first pretended to pay off the whole loan.",
+   "pause": 0.18,
+   "exag": 0.64
+  },
+  {
+   "id": "b031",
+   "src": "S1",
+   "text": "Then it parked the big part in an inside account that goes nowhere.",
+   "pause": 0.18,
+   "exag": 0.64
+  },
+  {
+   "id": "b032",
+   "src": "",
+   "text": "So the money never really leaves. If you tick the right boxes.",
+   "pause": 0.4,
+   "exag": 0.64
+  },
+  {
+   "id": "b033",
+   "src": "",
+   "text": "And that was the trap.",
+   "pause": 0.18,
+   "exag": 0.64
+  },
+  {
+   "id": "b034",
+   "src": "S1",
+   "text": "Sending only the interest meant ticking three boxes.",
+   "pause": 0.18,
+   "exag": 0.64
+  },
+  {
+   "id": "b035",
+   "src": "S1",
+   "text": "They ticked one.",
+   "pause": 0.4,
+   "exag": 0.64
+  },
+  {
+   "id": "b036",
+   "src": "S1",
+   "text": "A contractor in India built the payment.",
+   "pause": 0.18,
+   "exag": 0.64
+  },
+  {
+   "id": "b037",
+   "src": "",
+   "text": "His colleague checked it.",
+   "pause": 0.18,
+   "exag": 0.64
+  },
+  {
+   "id": "b038",
+   "src": "S1",
+   "text": "And a senior manager in Delaware approved it.",
+   "pause": 0.18,
+   "exag": 0.64
+  },
+  {
+   "id": "b039",
+   "src": "",
+   "text": "So who clicked? All three of them did.",
+   "pause": 0.4,
+   "exag": 0.64
+  },
+  {
+   "id": "b040",
+   "src": "S1",
+   "text": "At five forty five the vault opened.",
+   "pause": 0.18,
+   "exag": 0.64
+  },
+  {
+   "id": "b041",
+   "src": "S1",
+   "text": "Not seven point eight million. Almost nine hundred million.",
+   "pause": 0.18,
+   "exag": 0.64
+  },
+  {
+   "id": "b042",
+   "src": "",
+   "text": "Every dollar of the loan plus the interest.",
+   "pause": 0.18,
+   "exag": 0.64
+  },
+  {
+   "id": "b043",
+   "src": "S1",
+   "text": "And it was not Revlon's money. It was Citibank's own.",
+   "pause": 0.4,
+   "exag": 0.64
+  },
+  {
+   "id": "b044",
+   "src": "",
+   "text": "Then everyone went home.",
+   "pause": 0.18,
+   "exag": 0.64
+  },
+  {
+   "id": "b045",
+   "src": "",
+   "text": "And the mistake sat there all night.",
+   "pause": 0.4,
+   "exag": 0.64
+  },
+  {
+   "id": "b046",
+   "src": "S1",
+   "text": "The next morning a manager ran a routine check.",
+   "pause": 0.18,
+   "exag": 0.64
+  },
+  {
+   "id": "b047",
+   "src": "",
+   "text": "The numbers did not match.",
+   "pause": 0.18,
+   "exag": 0.64
+  },
+  {
+   "id": "b048",
+   "src": "S1",
+   "text": "Almost nine hundred million dollars was missing.",
+   "pause": 0.4,
+   "exag": 0.64
+  },
+  {
+   "id": "b049",
+   "src": "S1",
+   "text": "This is what should have gone out.",
+   "pause": 0.18,
+   "exag": 0.64
+  },
+  {
+   "id": "b050",
+   "src": "S1",
+   "text": "And this is what did.",
+   "pause": 0.4,
+   "exag": 0.64
+  },
+  {
+   "id": "b051",
+   "src": "",
+   "text": "So Citibank did the only thing it could.",
+   "pause": 0.18,
+   "exag": 0.64
+  },
+  {
+   "id": "b052",
+   "src": "S3",
+   "text": "It asked for the money back.",
+   "pause": 0.18,
+   "exag": 0.64
+  },
+  {
+   "id": "b053",
+   "src": "",
+   "text": "And most lenders said sure.",
+   "pause": 0.18,
+   "exag": 0.64
+  },
+  {
+   "id": "b054",
+   "src": "S3",
+   "text": "About three hundred eighty five million dollars came home.",
+   "pause": 0.4,
+   "exag": 0.64
+  },
+  {
+   "id": "b055",
+   "src": "",
+   "text": "Now remember Revlon.",
+   "pause": 0.18,
+   "exag": 0.64
+  },
+  {
+   "id": "b056",
+   "src": "",
+   "text": "That year its stores were shut by the pandemic.",
+   "pause": 0.18,
+   "exag": 0.64
+  },
+  {
+   "id": "b057",
+   "src": "",
+   "text": "So for a lender getting every dollar back early felt like a miracle.",
+   "pause": 0.18,
+   "exag": 0.64
+  },
+  {
+   "id": "b058",
+   "src": "",
+   "text": "And miracles are hard to give back.",
+   "pause": 0.4,
+   "exag": 0.64
+  },
+  {
+   "id": "b059",
+   "src": "S3",
+   "text": "But ten investment firms looked at the money.",
+   "pause": 0.18,
+   "exag": 0.64
+  },
+  {
+   "id": "b060",
+   "src": "",
+   "text": "And they said no.",
+   "pause": 0.18,
+   "exag": 0.64
+  },
+  {
+   "id": "b061",
+   "src": "S2",
+   "text": "Together they were holding half a billion dollars.",
+   "pause": 0.4,
+   "exag": 0.64
+  },
+  {
+   "id": "b062",
+   "src": "",
+   "text": "Inside those firms the group chats lit up.",
+   "pause": 0.18,
+   "exag": 0.64
+  },
+  {
+   "id": "b063",
+   "src": "S2",
+   "text": "Traders typed words like unbelievable and accidental and overpayment.",
+   "pause": 0.18,
+   "exag": 0.64
+  },
+  {
+   "id": "b064",
+   "src": "",
+   "text": "So they knew something was off.",
+   "pause": 0.4,
+   "exag": 0.64
+  },
+  {
+   "id": "b065",
+   "src": "",
+   "text": "But here is the part that made this case famous.",
+   "pause": 0.18,
+   "exag": 0.64
+  },
+  {
+   "id": "b066",
+   "src": "S3",
+   "text": "Revlon really did owe them that money.",
+   "pause": 0.18,
+   "exag": 0.64
+  },
+  {
+   "id": "b067",
+   "src": "",
+   "text": "Every dollar. To the cent.",
+   "pause": 0.18,
+   "exag": 0.64
+  },
+  {
+   "id": "b068",
+   "src": "S3",
+   "text": "The loan just was not due for three more years.",
+   "pause": 0.4,
+   "exag": 0.64
+  },
+  {
+   "id": "b069",
+   "src": "",
+   "text": "Now put yourself in their chair.",
+   "pause": 0.18,
+   "exag": 0.64
+  },
+  {
+   "id": "b070",
+   "src": "S2",
+   "text": "Half a billion dollars just landed in your account.",
+   "pause": 0.18,
+   "exag": 0.64
+  },
+  {
+   "id": "b071",
+   "src": "",
+   "text": "It is money you were owed anyway.",
+   "pause": 0.18,
+   "exag": 0.64
+  },
+  {
+   "id": "b072",
+   "src": "",
+   "text": "Would you send it back?",
+   "pause": 0.4,
+   "exag": 0.64
+  },
+  {
+   "id": "b073",
+   "src": "",
+   "text": "So it was not a robbery.",
+   "pause": 0.18,
+   "exag": 0.64
+  },
+  {
+   "id": "b074",
+   "src": "",
+   "text": "And it was not a trick.",
+   "pause": 0.18,
+   "exag": 0.64
+  },
+  {
+   "id": "b075",
+   "src": "",
+   "text": "It was their own loan paid back early by accident.",
+   "pause": 0.4,
+   "exag": 0.64
+  },
+  {
+   "id": "b076",
+   "src": "S2",
+   "text": "And New York has an old rule for exactly this.",
+   "pause": 0.18,
+   "exag": 0.64
+  },
+  {
+   "id": "b077",
+   "src": "",
+   "text": "It comes from a case in nineteen ninety one.",
+   "pause": 0.18,
+   "exag": 0.64
+  },
+  {
+   "id": "b078",
+   "src": "S2",
+   "text": "If someone pays off a real debt by mistake you can keep the money.",
+   "pause": 0.18,
+   "exag": 0.64
+  },
+  {
+   "id": "b079",
+   "src": "",
+   "text": "But only if you did not know it was a mistake.",
+   "pause": 0.4,
+   "exag": 0.64
+  },
+  {
+   "id": "b080",
+   "src": "",
+   "text": "So the whole trial came down to one question.",
+   "pause": 0.18,
+   "exag": 0.64
+  },
+  {
+   "id": "b081",
+   "src": "",
+   "text": "Did the lenders know?",
+   "pause": 0.18,
+   "exag": 0.64
+  },
+  {
+   "id": "b082",
+   "src": "",
+   "text": "Citibank said of course they knew because nobody repays a loan three years early.",
+   "pause": 0.18,
+   "exag": 0.64
+  },
+  {
+   "id": "b083",
+   "src": "",
+   "text": "The lenders said a bank that size does not make a mistake that big.",
+   "pause": 0.4,
+   "exag": 0.64
+  },
+  {
+   "id": "b084",
+   "src": "S2",
+   "text": "In February two thousand twenty one the judge picked a side.",
+   "pause": 0.18,
+   "exag": 0.64
+  },
+  {
+   "id": "b085",
+   "src": "S2",
+   "text": "The lenders could keep all of it.",
+   "pause": 0.18,
+   "exag": 0.64
+  },
+  {
+   "id": "b086",
+   "src": "S2",
+   "text": "Half a billion dollars. Gone for good.",
+   "pause": 0.4,
+   "exag": 0.64
+  },
+  {
+   "id": "b087",
+   "src": "S1",
+   "text": "And the judge did not spare the bank.",
+   "pause": 0.4,
+   "exag": 0.64
+  },
+  {
+   "id": "b088",
+   "src": "S4",
+   "text": "Then it got worse because the regulators arrived.",
+   "pause": 0.18,
+   "exag": 0.64
+  },
+  {
+   "id": "b089",
+   "src": "S4",
+   "text": "That fine covered years of problems and not just one click.",
+   "pause": 0.4,
+   "exag": 0.64
+  },
+  {
+   "id": "b090",
+   "src": "",
+   "text": "But Citibank was not done.",
+   "pause": 0.18,
+   "exag": 0.64
+  },
+  {
+   "id": "b091",
+   "src": "",
+   "text": "It appealed.",
+   "pause": 0.18,
+   "exag": 0.64
+  },
+  {
+   "id": "b092",
+   "src": "S3",
+   "text": "And for nineteen months half a billion dollars sat frozen.",
+   "pause": 0.4,
+   "exag": 0.64
+  },
+  {
+   "id": "b093",
+   "src": "S3",
+   "text": "Then in September two thousand twenty two three new judges read the same facts.",
+   "pause": 0.18,
+   "exag": 0.64
+  },
+  {
+   "id": "b094",
+   "src": "S3",
+   "text": "And they saw the opposite.",
+   "pause": 0.18,
+   "exag": 0.64
+  },
+  {
+   "id": "b095",
+   "src": "S3",
+   "text": "The loan was not due for three years. So nobody was owed that money yet.",
+   "pause": 0.4,
+   "exag": 0.64
+  },
+  {
+   "id": "b096",
+   "src": "S3",
+   "text": "And a careful investor would have picked up the phone.",
+   "pause": 0.18,
+   "exag": 0.64
+  },
+  {
+   "id": "b097",
+   "src": "",
+   "text": "One call. Is this a mistake?",
+   "pause": 0.18,
+   "exag": 0.64
+  },
+  {
+   "id": "b098",
+   "src": "",
+   "text": "Nobody made that call.",
+   "pause": 0.4,
+   "exag": 0.64
+  },
+  {
+   "id": "b099",
+   "src": "S3",
+   "text": "So the ten firms had to send it all back.",
+   "pause": 0.18,
+   "exag": 0.64
+  },
+  {
+   "id": "b100",
+   "src": "S5",
+   "text": "By December the case was closed.",
+   "pause": 0.4,
+   "exag": 0.64
+  },
+  {
+   "id": "b101",
+   "src": "",
+   "text": "Think about that for a second.",
+   "pause": 0.18,
+   "exag": 0.64
+  },
+  {
+   "id": "b102",
+   "src": "",
+   "text": "Six eyes looked at one screen.",
+   "pause": 0.18,
+   "exag": 0.64
+  },
+  {
+   "id": "b103",
+   "src": "S1",
+   "text": "And the most expensive mistake in banking walked right past them.",
+   "pause": 0.18,
+   "exag": 0.64
+  },
+  {
+   "id": "b104",
+   "src": "",
+   "text": "Because each of them thought someone else had checked.",
+   "pause": 0.4,
+   "exag": 0.64
+  },
+  {
+   "id": "b105",
+   "src": "",
+   "text": "So Citibank got its money back.",
+   "pause": 0.18,
+   "exag": 0.64
+  },
+  {
+   "id": "b106",
+   "src": "",
+   "text": "It only took two years and two courts.",
+   "pause": 0.18,
+   "exag": 0.64
+  },
+  {
+   "id": "b107",
+   "src": "",
+   "text": "And a place in history it never wanted.",
+   "pause": 0.4,
+   "exag": 0.64
+  },
+  {
+   "id": "b108",
+   "src": "",
+   "text": "All of it because of three little boxes.",
+   "pause": 0.18,
+   "exag": 0.64
+  },
+  {
+   "id": "b109",
+   "src": "",
+   "text": "And one click that nobody questioned.",
+   "pause": 0.4,
+   "exag": 0.64
+  },
+  {
+   "id": "b110",
+   "src": "",
+   "text": "And here is the part that matters for you.",
+   "pause": 0.18,
+   "exag": 0.64
+  },
+  {
+   "id": "b111",
+   "src": "S3",
+   "text": "If a bank ever drops money into your account by mistake it is not yours.",
+   "pause": 0.18,
+   "exag": 0.64
+  },
+  {
+   "id": "b112",
+   "src": "S3",
+   "text": "Even nine hundred million dollars had to go back.",
+   "pause": 0.18,
+   "exag": 0.64
+  },
+  {
+   "id": "b113",
+   "src": "",
+   "text": "So before you click anything check the boxes.",
+   "pause": 0.4,
+   "exag": 0.64
+  }
+ ]
+}

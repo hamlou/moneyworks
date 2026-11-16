@@ -133,6 +133,98 @@ def recent_hooks(eid):
     return out[:2]
 
 
+# SCRIPT CRAFT — measured on the full transcripts of 9 winning videos (16 Nov 2026): Crayon Capital 4.2M = 8.5 words per sentence, 45 % of
+# sentences ≤ 6 words, a turn 2.8×/min; Little Bit Better 4.3M = 7.4 words, 51 % short, "you" 5.2 per 100 words.
+FILLER = ["in this video", "let's dive", "lets dive", "dive in", "without further ado", "it is important to note", "its important to note", "buckle up", "stay tuned", "let's get started",
+          "as we all know", "in conclusion", "to sum up", "to summarize", "let's recap", "subscribe", "like and", "delve", "in today's", "welcome back", "before we begin", "at the end of the day",
+          "needless to say", "it goes without saying", "a testament to", "navigate the", "in the world of"]
+TURNS = r"\s*(but|then|except|until|and then|so|now|here is|instead|because|suddenly|and yet|yet|only|still)\b"
+
+
+def script_gates(sp, scenes, E):
+    lines = [(si, ln) for si, sc in enumerate(scenes) for ln in sc.get("lines", [])]
+    says = [ln.get("say", "") for _, ln in lines]
+    text = " ".join(says)
+    words = len(text.split())
+    sents = [x for x in re.split(r"(?<=[.!?])\s+", text) if x.strip()]
+    sl = [len(x.split()) for x in sents]
+    avg = sum(sl) / max(1, len(sl))
+    short = sum(1 for x in sl if x <= 6) / max(1, len(sl))
+    if avg > 11:
+        E.append(f"script: sentences average {avg:.1f} words — must be ≤ 11 (winning scripts: 7-9). Break long sentences in two")
+    if short < 0.3:
+        E.append(f"script: only {short:.0%} of the sentences are short (≤ 6 words) — need ≥ 30 %. After a long sentence, land a short one (\"They ticked one.\")")
+    for x in sents:
+        if len(x.split()) > 24:
+            E.append(f"script: a sentence has {len(x.split())} words (max 24): \"{x[:60]}…\"")
+    low = text.lower()
+    bad = [f for f in FILLER if f in low]
+    if bad:
+        E.append(f"script: filler / AI phrases {bad} — delete them; every sentence must carry a new fact, a turn or a picture")
+    you = len(re.findall(r"\byou(r)?\b", low)) / max(1, words) * 100
+    if you < 0.7:
+        E.append(f"script: 'you/your' only {you:.1f} times per 100 words — need ≥ 0.7. Put the viewer inside the story (\"imagine you…\", \"your bank…\")")
+    turns = sum(1 for x in says if re.match(TURNS, x, re.I) or "?" in x)
+    if turns < words / 75:
+        E.append(f"script: only {turns} turns (lines starting But / Then / So / Until / Because… or questions) for {words} words — need one per 75 words (≈ every 20 s)")
+    esc = sum(low.count(x) for x in ESCALATORS)
+    if esc < 3:
+        E.append(f"script: only {esc} escalator lines in the whole video — need ≥ 3 ('and here is the wildest part', 'it gets worse', 'but here is…'): each one re-hooks the viewer")
+    # the 3 questions of the list are open loops: each must be paid off, the biggest one late
+    pos, acc = {}, 0
+    for _, ln in lines:
+        if ln.get("answers") in (1, 2, 3):
+            pos.setdefault(ln["answers"], acc / max(1, words))
+        acc += len(ln.get("say", "").split())
+    if set(pos) != {1, 2, 3}:
+        E.append('script: mark the 3 lines that ANSWER the 3 questions of the list with "answers": 1, 2 and 3 — every promise must be paid')
+    else:
+        if not pos[1] < pos[2] < pos[3]:
+            E.append("script: the answers must come in order 1 → 2 → 3")
+        if pos[1] > 0.45:
+            E.append(f"script: question 1 is answered at {pos[1]:.0%} of the video — pay the first promise by 45 % so the viewer trusts the rest")
+        if pos[3] < 0.6:
+            E.append(f"script: question 3 (the biggest) is answered at {pos[3]:.0%} — hold it until after 60 %")
+    last = says[-1] if says else ""
+    if len(last.split()) > 12:
+        E.append(f"script: the last line has {len(last.split())} words — end on a sting of ≤ 12 words, never a recap")
+    if not re.search(r"\byou(r)?\b", " ".join(says[-8:]), re.I):
+        E.append("script: the last 8 lines never say 'you' — the ending must land on the viewer's own money")
+    nq = sum(1 for sc in scenes if sc.get("kind") in ("quote", "headline"))
+    if nq < 2:
+        E.append(f"script: only {nq} real quotes/headlines — a true story needs ≥ 2 pieces of real proof on screen")
+
+
+LAYOUTS = "flow duel hero trio crowd".split()
+
+
+def place(sc):
+    """Fills x, y, s, z for actors that have none, from the scene's "layout". Hand-set numbers always win."""
+    acts = sc.get("actors", [])
+    lay = sc.get("layout", "flow")
+    main = [a for a in acts if a.get("obj") != "cursor"]
+    n = len(main)
+    for i, a in enumerate(main):
+        if "x" in a and "y" in a:
+            continue
+        if lay == "duel":
+            x, y, s_, z = (470 if i == 0 else 1450 if i == 1 else 960), (560 if i < 2 else 660), (1.45 if i < 2 else 1.0), (0.5 if i < 2 else 0.7)
+        elif lay == "hero":
+            ring = [(400, 380), (1520, 380), (360, 700), (1560, 700), (960, 250), (960, 830)]
+            x, y, s_, z = (960, 560, 1.7, 0.6) if i == 0 else (*ring[(i - 1) % 6], 0.85, 0.35)
+        elif lay == "trio":
+            x, y, s_, z = [520, 960, 1400][i % 3], 540 + 150 * (i // 3), 1.25, 0.5
+        elif lay == "crowd":
+            x, y, s_, z = 330 + (i % 4) * 420, 400 + (i // 4) * 300 + (i % 2) * 40, 0.95, 0.3 + 0.12 * (i // 4)
+        else:  # flow: left → right
+            x, y, s_, z = (960 if n == 1 else 380 + i * (1160 / max(1, n - 1))), 560, (1.5 if n <= 2 else 1.3 if n == 3 else 1.05), 0.5
+        a.setdefault("x", round(x)); a.setdefault("y", round(y)); a.setdefault("s", s_); a.setdefault("z", z)
+    for a in acts:
+        if a.get("obj") == "cursor":
+            a.setdefault("x", 1250); a.setdefault("y", 860); a.setdefault("s", 1.0); a.setdefault("z", 0.9)
+    return sc
+
+
 def hook_gates(sp, scenes, E, full):
     if not scenes:
         return
@@ -212,22 +304,24 @@ def package_gates(sp, E):
         E.append("title: start with How / Why / What / Every / The (the forms that won: 'How X Lost $N in One Night', 'How X Actually Works in N Minutes', 'Why $N Vanishes Every Year')")
     # --- topic proof
     tp = sp.get("topic", {})
-    try:
-        outl = {o["url"]: o for o in json.loads(Path("pipeline/doc/outliers.json").read_text(encoding="utf8"))}
-        dem = json.loads(Path("pipeline/doc/demand.json").read_text(encoding="utf8"))
-    except Exception:
-        outl, dem = {}, {}
-        E.append("topic: no proof files — run: py tools/doctopic.py scan   and   py tools/doctopic.py demand \"<how a viewer would search this topic>\"")
-    good = [u for u in tp.get("proof", []) if u in outl]
-    if outl and len(good) < 1:
-        E.append("topic.proof: list ≥ 1 url of a video from pipeline/doc/outliers.json that is the SAME kind of topic (a video that beat its own channel ≥ 4x). No such video = pick another topic")
-    d = dem.get(str(tp.get("query", "")).lower().strip())
-    if dem and not d:
-        E.append("topic.query: run py tools/doctopic.py demand \"<query>\" first and put the same query here")
-    elif d and not d.get("pass"):
-        E.append(f"topic.query '{tp.get('query')}': demand FAILED ({d['over100k']} videos over 100k, {d['over1m']} over 1M) — people are not looking for this, pick another topic")
-    if tp.get("evergreen") is not True:
-        E.append('topic.evergreen: must be true — the video must still make sense in 3 years (owner 15 Nov: "a viral topic that is not consumable"). News can be the opening case, never the whole topic')
+    owner = tp.get("owner_pick")  # the owner named this topic himself: his choice replaces the proof (write who/when in "owner_pick")
+    if not owner:
+        try:
+            outl = {o["url"]: o for o in json.loads(Path("pipeline/doc/outliers.json").read_text(encoding="utf8"))}
+            dem = json.loads(Path("pipeline/doc/demand.json").read_text(encoding="utf8"))
+        except Exception:
+            outl, dem = {}, {}
+            E.append("topic: no proof files — run: py tools/doctopic.py scan   and   py tools/doctopic.py demand \"<how a viewer would search this topic>\"")
+        good = [u for u in tp.get("proof", []) if u in outl]
+        if outl and len(good) < 1:
+            E.append("topic.proof: list ≥ 1 url of a video from pipeline/doc/outliers.json that is the SAME kind of topic (a video that beat its own channel ≥ 4x). No such video = pick another topic")
+        d = dem.get(str(tp.get("query", "")).lower().strip())
+        if dem and not d:
+            E.append("topic.query: run py tools/doctopic.py demand \"<query>\" first and put the same query here")
+        elif d and not d.get("pass"):
+            E.append(f"topic.query '{tp.get('query')}': demand FAILED ({d['over100k']} videos over 100k, {d['over1m']} over 1M) — people are not looking for this, pick another topic")
+        if tp.get("evergreen") is not True:
+            E.append('topic.evergreen: must be true — the video must still make sense in 3 years (owner 15 Nov: "a viral topic that is not consumable"). News can be the opening case, never the whole topic')
     # --- thumbnail
     th = sp.get("thumb", {})
     words = str(th.get("words", "")).split()
@@ -314,10 +408,12 @@ def check(sp, quiet=False, need_images=False):
             E.append(f"{tag}: kind '{kind}' unknown — use one of {list(KINDS)}")
             continue
         kinds.append(kind)
-        if len(kinds) >= 3 and kinds[-1] == kinds[-2] == kinds[-3]:
+        if len(kinds) >= 3 and kinds[-1] == kinds[-2] == kinds[-3] and kind != "motion":
             E.append(f"{tag}: 3 '{kind}' scenes in a row — change the shot type")
         if kind == "motion":
-            acts = sc.get("actors", [])
+            if sc.get("layout") and sc["layout"] not in LAYOUTS:
+                E.append(f"{tag}: layout '{sc['layout']}' unknown — {LAYOUTS}")
+            acts = place(json.loads(json.dumps(sc))).get("actors", [])
             ids = {a.get("id") for a in acts}
             if not 2 <= len(acts) <= 8:
                 E.append(f"{tag}: a motion scene needs 2-8 actors (now {len(acts)})")
@@ -325,7 +421,7 @@ def check(sp, quiet=False, need_images=False):
                 if a.get("obj") not in MOTION_OBJS:
                     E.append(f"{tag}: actor '{a.get('id')}' obj '{a.get('obj')}' unknown — {MOTION_OBJS}")
                 if not (isinstance(a.get("x"), (int, float)) and 100 <= a["x"] <= 1820 and isinstance(a.get("y"), (int, float)) and 150 <= a["y"] <= 880):
-                    E.append(f"{tag}: actor '{a.get('id')}' needs x 100-1820 and y 150-880 (screen is 1920x1080; the floor line is y 760)")
+                    E.append(f"{tag}: actor '{a.get('id')}' is off screen — give the scene a \"layout\" ({LAYOUTS}) and leave x/y out, or use x 100-1820 and y 150-880")
             if sc.get("bg", "void") not in MOTION_BGS:
                 E.append(f"{tag}: bg '{sc.get('bg')}' unknown — {MOTION_BGS}")
             mev = [e for ln in sc.get("lines", []) for e in ln.get("show", [])]
@@ -418,13 +514,36 @@ def check(sp, quiet=False, need_images=False):
             E.append(f"{tag}: {sw} words on one shot (max 60 ≈ 20 s) — cut to a new scene")
     if full and not 900 <= words <= 2600:
         E.append(f"length: {words} words — a video is 900-2600 words (6-15 min)")
-    if full and len(set(kinds)) < 6:
-        E.append(f"variety: only {len(set(kinds))} shot types — use at least 6 of {list(KINDS)}")
+    if full and len(set(kinds)) < 5:
+        E.append(f"variety: only {len(set(kinds))} shot types — use at least 5 of {list(KINDS)}")
     if full and kinds:
-        share = kinds.count("image") / len(kinds)
-        if not 0.25 <= share <= 0.55:
-            E.append(f"cinematic: {share:.0%} of scenes are image stills — keep it between 25 % and 55 %")
+        # FULL-VIDEO ENERGY (owner 16 Nov: "this energy that I have seen in the hook, I want it in the full video, not only in the hook")
+        mo = kinds.count("motion") / len(kinds)
+        if mo < 0.5:
+            E.append(f"energy: only {mo:.0%} of the scenes are 'motion' — at least 50 % of the WHOLE video must be animated scenes (actors doing what the words say)")
+        run = 0
+        for i, k in enumerate(kinds):
+            run = 0 if k == "motion" else run + 1
+            if run == 3:
+                E.append(f"energy: scenes {i - 1}-{i + 1} are 3 non-motion shots in a row — after 2 cards/stills comes an animated scene, all the way to the end")
+        txt = sum(1 for k in kinds if k in ("quote", "list", "clock", "flash")) / len(kinds)
+        if txt > 0.15:
+            E.append(f"energy: {txt:.0%} of the scenes are text-only (quote/list/clock/flash) — max 15 %")
+        last = kinds[-6:]
+        if last.count("motion") < 3:
+            E.append("energy: the last 6 scenes need ≥ 3 'motion' scenes — the ending is as alive as the hook")
+        acts_used = {a.get("obj") for sc in scenes if sc.get("kind") == "motion" for a in sc.get("actors", [])}
+        if len(acts_used) < 8:
+            E.append(f"variety: only {len(acts_used)} different objects in the motion scenes — use at least 8 of {MOTION_OBJS}")
+        bgs = [sc.get("bg", "void") for sc in scenes if sc.get("kind") == "motion"]
+        if len(set(bgs)) < 3:
+            E.append(f"variety: motion scenes use only {len(set(bgs))} backgrounds — use at least 3 of {MOTION_BGS}")
+        sig = [tuple(sorted(a.get("obj", "") for a in sc.get("actors", []))) for sc in scenes if sc.get("kind") == "motion"]
+        if any(sig[i] == sig[i + 1] for i in range(len(sig) - 1)):
+            E.append("variety: two motion scenes in a row use exactly the same objects — change the cast")
     hook_gates(sp, scenes, E, full)
+    if full:
+        script_gates(sp, scenes, E)
     miss = [i for i in images(sp) if not i[3]]
     if miss and need_images:
         E.append(f"images: {len(miss)} stills missing — py tools/doc.py images {eid}")
@@ -444,9 +563,8 @@ def voice(sp):
     for si, li, bid, sc, ln in lines_of(sp):
         last = li == len(sc["lines"]) - 1
         hook = ti is not None and si <= ti
-        b = {"id": bid, "src": ln.get("src", ""), "text": ln["say"], "pause": ln.get("pause", (0.3 if last else 0.12) if hook else (0.5 if last else 0.25))}
-        if ln.get("exag") or hook:
-            b["exag"] = ln.get("exag", 0.72)
+        b = {"id": bid, "src": ln.get("src", ""), "text": ln["say"], "pause": ln.get("pause", (0.3 if last else 0.12) if hook else (0.4 if last else 0.18))}
+        b["exag"] = ln.get("exag", 0.72 if hook else 0.64)
         beats.append(b)
     ep = {"id": sp["id"], "title": sp["title"], "style": "doc", "voice": "chatterbox", "cb": sp.get("cb", {"cfg": 0.3, "exag": 0.45}), "beats": beats}
     Path(f"pipeline/episodes/{sp['id']}.json").write_text(json.dumps(ep, indent=1, ensure_ascii=False), encoding="utf8")
@@ -556,6 +674,8 @@ def build(sp, fake):
         keep = {k: sc[k] for k in ("img", "move", "hud", "tag", "head", "source", "by", "pub", "date", "n", "side", "bg", "actors") if k in sc}
         if sc["kind"] == "drain":
             keep["n"], keep["source"] = sc["amount"], sc.get("prefix", "$")
+        if sc["kind"] == "motion":
+            keep["actors"] = place(json.loads(json.dumps(sc)))["actors"]
         scenes.append({"from": start, "to": 0, "kind": sc["kind"], **keep, "ev": ev, "_mood": sc.get("mood") or ("drive" if ti is not None and si <= ti and si == 0 else "tense" if ti is not None and si == ti + 1 else None), "_vis": vis})
         if si:
             snd("scene_" + sc["kind"], start, 0.85)
