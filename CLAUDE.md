@@ -1,39 +1,38 @@
-> **🎬 NEWEST DIRECTION (owner 14 Nov 2026) — LONG-FORM ONLY, CINEMATIC DOCUMENTARY LOOK ("Doc"). This overrides every older style rule below (2D stickman, v6/v7 3D Dave, Shorts formats).** Model = Gloam "How Binance Lost $6,300,000,000 in One Night" (youtu.be/5eZj1OnC1C4): one TRUE money story told like a heist; dark graded stills, cream paper cards, receipts, serif numbers + mono labels, stat counters, tiles, quotes, film grain. Owner HATES the old 2D stickman edit — never use `src/Stick.tsx` Dave in new videos. Whole pipeline = ONE spec `pipeline/doc/<id>.json` → `py tools/doc.py check|images|voice|build|stills|render <id>` → composition `Doc-<id>` (`src/v6/Doc.tsx`). Stills: owner makes them in Gemini Pro from the `prompt` of each image scene (`py tools/doc.py images <id>` lists them) → `public/<id>/`. Thumbnails: owner makes the picture in Gemini, Claude gives concept + ≤ 4 words (thumbnail ban of 30 Oct is lifted). Always start from what is working NOW: run the `yt-viral` skill before choosing a topic. Show preview frames (`doc.py stills`) to the owner before rendering a full video. Status 15 Nov (evening): owner approved the LOOK but rejected test v1: "too slow… words don't match the visuals… the hook is very bad". Causes found + fixed: (1) bug — tempo changed but old audio kept → pictures up to 7 s late (doc.py now ties audio + timing to one tempo); (2) hook rebuilt on Gloam's measured blueprint (receipt at frame 0 → `drain` stopwatch → `deny` mystery cards → real headline/quote → record card → `list` of 3 questions → `title` card), enforced by `check`/`build`; (3) pace gates: tempo 1.0, avg shot ≤ 7 s, new thing ≤ 2.5 s avg / never > 4 s, ≥ 6 shots in first 30 s, a turn every 45 s. Autopilot writer = `py tools/docwrite.py <id> "<story>"` (free Gemini → spec → check loop; not yet run live). Citibank = look test only (weak topic). Owner names the topics; candidates offered 15 Nov: Alta Banka ~$427M vault cash (Serbia, Nov 2026), deepfake-CEO fraud $129M, $370M insider account takeover. Rules: `LONG.md [DOC]`. Old 3D autopilot (`tools/auto.py`, AUTOPILOT.md) retired, kept as history.**
+# Moneyworks — cinematic money documentaries (long-form, 16:9)
 
-> **📚 ONLY 2 RULE FILES (owner 10 Nov 2026): Shorts → `SHORTS.md`, long-form → `LONG.md` (every old .md merged verbatim as tagged parts like `[MUST]`, `[3D]`). Never create new rule .md files — add to these two.**
+**The owner gives a TOPIC (or nothing). You deliver a finished video at the approved quality. Never ask the owner to repeat a rule: every rule is in `LONG.md [DOC]` and is enforced by `tools/doc.py`. If a gate refuses your work, fix the work, never the gate.**
 
-> **🛠 PIPELINE OPS FIRST: read `pipeline/ops/LOG.md` (supervisor decisions) and open `autopilot` issues (`gh issue list -R hamlou/moneyworks --label autopilot`) before working on any render. The supervisor (AUTOPILOT.md §7) heals runs by itself — don't babysit runs it already handles.**
+## The only live format (owner-approved 15–16 Nov 2026)
+Dark cinematic documentary, model = Gloam "How Binance Lost $6,300,000,000 in One Night" (youtu.be/5eZj1OnC1C4). One spec file → one video:
+```
+py tools/docwrite.py <id> ["<topic>"]   # AUTOPILOT: proven topic → research → spec (free Gemini), loops on check until SPEC OK
+py tools/doc.py check <id>              # topic proof, title, thumbnail, hook type, pace, sources — fix every ✗
+py tools/doc.py images <id>             # prompts for the stills; the owner makes them in Gemini Pro (images only) → public/<id>/
+py tools/doc.py voice <id>              # → push with tools/apipush.py → voice.yml voices it on GitHub
+py tools/doc.py build <id>              # real-voice timing; refuses slow hooks, slow pace, thin sound, missing stills
+py tools/doc.py stills <id>             # preview frames → SHOW THE OWNER before a full render
+py tools/doc.py thumb <id>              # owner's picture + words in code → 3 versions + phone test
+py tools/doc.py render <id>             # → push → v6split.yml renders on GitHub → download → send the mp4 to the owner
+```
+Read `LONG.md [DOC]` (and only that part) before writing or editing a spec. Working example: `pipeline/doc/citi.json` (a 45-second test, not a real topic).
 
-> **⛔ OBLIGATORY FOR EVERY SHORT: read `SHORTS.md [MUST]` fully before writing or editing any Short. Every line there is a hard rule from the owner (8 Nov 2026). Evidence: `SHORTS.md/LONG.md [POSTMORTEM]`, `SHORTS.md [VIRAL]`. Ignoring it = the work is rejected.**
+## What the owner decided (all enforced in code — listed so you understand the refusals)
+- Long-form only. No Shorts. No 2D stickman, no 3D Dave, no character on screen.
+- Topic: evergreen, with measured proof (`tools/doctopic.py scan` + `demand`). Never by taste.
+- Title + 2 alternatives + thumbnail words/prompt are part of the spec. Thumbnail picture by the owner, words added in code.
+- Hook: one of 5 proven types, never the type of the last 2 videos; energetic first sentence, flash trailer, escalator line, list of 3 questions, title card by 50 s.
+- Pace: natural voice speed (tempo 1.0), average shot ≤ 7 s, something new every ≤ 4 s, a turn every 45 s. Pictures land on their spoken word.
+- Sound: layered automatically from the library (`public/sfx/lib` real CC0 recordings + `public/sfx/doc`), ≥ 45 cues a minute. New sounds only with a verified licence line in `public/sfx/lib/LICENSE.txt`.
+- Facts: every figure sourced, quotes verbatim, "allegedly" for anything not proven. Verify the autopilot's facts before rendering.
+- Always look at what is working NOW before deciding anything (topics, hooks, thumbnails): measure winning videos, copy their structure, change the content.
+- Claude cannot hear or judge taste: after any change to look, hook or sound, render a short test and send it to the owner.
 
-> **NEW EPISODE = read ONLY `LONG.md [RECIPE]` (owner 30 Oct 2026: same ea1 style, low tokens). Scaffold with `py tools/new_ep.py <id> "<Title>"`. Do not read SHORTS.md/LONG.md [3D]/PLAYBOOK files in full.**
+## How to work here
+- Weak PC: never render video locally (preview stills are fine). Everything heavy runs on GitHub Actions. Repo `hamlou/moneyworks` (public), branch `shorts-playbook-rules`. GitHub CLI: `%LOCALAPPDATA%\ghcli\bin\gh.exe`.
+- `git push` fails on this network: commit files with `py tools/apipush.py "message" <files>`. Network calls time out often: retry.
+- Start a render by `py tools/doc.py render <id>` then push `pipeline/split/RUN`. Download with `gh run download <run> -n Doc-<id>`.
+- Only two rule files exist: `LONG.md` and `SHORTS.md`. Never create another rule file; add to `LONG.md [DOC]`.
+- After upload: 48 h and 7 days → impressions, CTR, average view duration, retention graph → `analytics/LOG.md`. Change a rule only when 3+ videos show the same thing. Judge the format after 10 videos, not after one.
 
-# Moneyworks — stickman money explainer channel
-
-> **★ v7 STANDARD (owner, 29 Oct 2026) — `SHORTS.md/LONG.md [3D]` §0 is THE rule set for EVERY new video (long-form and Shorts) and wins over everything in this file.** Natural connected speech (no commas AND no fragment chains like "12 years. Day one. Math class."), Blender 3D Dave in a red oversized hoodie + wide black pants with costume swaps per scene role, objects from the words of each line, ≥ 50 % real 3D, something new every 1.5–2.5 s, dense SFX (counter roll ticks etc.), hook = the priority (50 %+ of viewers leave in 5–10 s), built with the mandatory LOOP METHOD (§0.10: 3 gates, looped arc hook→rising→conflict→comeback→payoff, hook as a question, mini-loops per chapter, Shorts swipe-through ≥ 80 %, next Short only when < ~5k views/h for 24 h). Retired: memes, polaroids, photo-every-10–15 s, photos+memes every 2–4 s in Shorts, captions, 2D Dave for new videos, asking the owner to record their voice. Template: `pipeline/episodes/test1.json` + `blender/test1.py` + `src/v6/Test1.tsx`. **NO THUMBNAILS (owner 30 Oct 2026: "don't do thumbnails anymore, disable that") — never design, render or propose thumbnails or run thumbs.yml; old thumbnail rules are retired.** **No memes ever; real images only when needed; every video designs + generates its OWN sound effects timed to its moments (SHORTS.md/LONG.md [3D] §0.12).** **Monetization-safe assets only: `SHORTS.md/LONG.md [LICENSES]`** (no `public/sfx/pack`, no other creators' clips/music, no cloned voices, credit footer on every upload).
-
-**NEWEST — overrides everything below (23 Oct 2026): `SHORTS.md/LONG.md [3D]` (v6 "3D animator" style).** Every long video now copies the owner's reference video (https://youtu.be/9yXNBbf3TW0) ~99 %: each episode = Dave's experiment (goal + deadline + scoreboard, Day/Week chapters), casual run-on writing with fake-outs and absurd comparisons, 180–200 wpm voice with real pauses (`cb.cfg`), 3D-look Dave in the lower right with a pose/face swap every 1.5–3 s, dark home-base set + UI cards + big number cards + 3D sets, no captions, no meme cards, no polaroids. Kept from the old rules: zero commas, Dave first person to "you", sources, free-licence photos, `at`-word anchoring. Read `SHORTS.md/LONG.md [3D]` first, then the playbook only for what it doesn't cover.
-
-**Newest (18 Oct 2026, LONG.md [PLAYBOOK] §0.12):** Dave is the host talking to "you" in the first person, almost no stats. "Redo / upgrade / ameliorate epNN" = follow `LONG.md [UPGRADE]` (edit the episode JSON only, overlay layer `src/upgrade.tsx`), never rebuild from scratch. Dave = new big-head avatar Dave (`<Stick big>`), voice = Chatterbox (`voice.yml`), §0.12 C.
-
-**Two playbooks, never mix them (owner, 11 Oct 2026):** long-form episodes (`epNN`, 16:9, 10 min+) → `LONG.md [PLAYBOOK]`. Vertical Shorts (`shortNN`, 9:16) → `SHORTS.md [PLAYBOOK]`. `LONG.md [INDEX]` is only the index. "PLAYBOOK §x" below means `LONG.md [PLAYBOOK]`.
-
-**[OLD episodes only — memes and photo quotas RETIRED 29 Oct 2026, see SHORTS.md/LONG.md [3D] §0.12] Rules (11 Oct 2026, LONG.md [PLAYBOOK] §0.11):** no commas in the spoken script (flowing sentences: "the bonus is free and also the house is free", never "bonus, free, house, free"); a NEW real photo every 10–15 s; a trend meme (format recreated with our cast, never a downloaded meme image) about every 30 s. `validate.py` enforces it for ep61+. Approved topics ep61–75 are listed in `LONG.md [BRIEF]` — look there before asking.
-
-Before doing ANY work on a new episode, read `LONG.md [PLAYBOOK]` completely and follow it exactly. The owner approved Series 1 (ep01–ep10) as the exact style they want forever — match it (characters, script structure, research standard, pacing, sounds, thumbnails, subscribe reminders, 8–15 min length).
-
-**From ep61: PLAYBOOK §0 (Retention & CTR v3) overrides older rules** — same look/voice/cast, but scripts are one connected Dave story (no "Today: X, Y, Z", no "So let's recap"), hooks follow the flash-forward spec, thumbnails use the 5 concepts + phone/grid tests. `validate.py` enforces it.
-
-**From 10 Oct 2026: PLAYBOOK §0.10 (Human hook + mixed media v4) is the newest rule set** — viewers were leaving in the first 6 s. Hook = concept + stakes + how the video ends, spoken to "you", a different `hook_form` every video; spoken (non-robotic) sentences with per-beat voice rate; real photos mixed with the drawings (`src/photo.tsx`, `pipeline/photos.py`); 10 min minimum. `validate.py` enforces it for ep61+.
-
-**v7 build steps (29 Oct 2026) — use these for every NEW video:** research → `pipeline/episodes/<id>.json` with `"style": "v7"` (natural speech, §0.1) → `pipeline/sfx/<id>.json` sound plan + `py pipeline/sfx_synth.py <id>` (§0.12) → push → `gh workflow run voice.yml -f ep=<id>` → measure wpm, slow with atempo into `public/<id>/voice.flac` → `blender/<id>.py` states (copy `blender/test1.py`) + `blender/<id>.chunks` + `blender/RUN` → push (preview, check stills, then full) → copy stills to `public/<id>/` → `src/v6/<Id>.tsx` (copy `Test1.tsx`) registered in `src/v6/Root.tsx` → `gh workflow run v6demo.yml -f comp=<Id>` → download with `gh api …/artifacts/<id>/zip` → contact-sheet QA → `videos/<id>/`. Voice on a free GPU (minutes, not hours): `py -m modal run gpu/modal_jobs.py::voice --ep <id>` (Modal free $30/month; Kaggle needs phone verification, which failed for the owner). All on branch `shorts-playbook-rules`. The old steps below are for the old 2D episodes only.
-
-"Make video 11" (OLD 2D pipeline) means: research → `pipeline/episodes/ep11.json` → `src/episodes/Ep11.tsx` → `src/thumbs/ep11.tsx` → register in `src/Episode.tsx` + `src/Root.tsx` → push → wait for `check` → `gh workflow run render.yml -R hamlou/moneyworks -f ep=ep11 -f chunks=10` → download to `Desktop\100\videos\ep11` → QA.
-
-GitHub CLI: `%LOCALAPPDATA%\ghcli\bin\gh.exe` (logged in as hamlou). Repo: `hamlou/moneyworks` (PUBLIC since Oct 2026 → GitHub Actions minutes are free and unlimited). Renders run on GitHub Actions, not the VPS.
-
-**Shorts planning layer (27 Oct 2026): `SHORTS.md [PLAYBOOK]` §10.** Before writing a Short brief it must pass 3 gates (universal relatability, completion compulsion via the looped arc hook → rising → CONFLICT → COMEBACK → payoff, open-loop hook written last as a question or withheld result). After publishing: judge at 48 h, log swipe-through (target ≥ 80%) and average view duration in `pipeline/ctr_log.md`, upload the next Short only when views/hour has stayed under ~5k for 24 h. Owner rules in §2–§9 win on any conflict.
-
-
-**Long-form planning layer (27 Oct 2026): `LONG.md [PLAYBOOK]` §12.** Before writing an episode brief it must pass 3 gates (universal relatability, completion compulsion via the looped arc hook → rising → VILLAIN REVEAL → LOW POINT → COMEBACK → payoff mapped to the §0.2 story spine, open-loop hook written last as a question or withheld result). After publishing: judge at 48 h, log CTR (target ≥ 5–8 %), average view duration (target ≥ 50 % of length), and retention graph drops in `pipeline/ctr_log.md`. Owner rules in §0–§11 win on any conflict.
-
+## Retired — history only, never use for a new video
+Everything else in `LONG.md` ([RECIPE], [3D], [PLAYBOOK], [UPGRADE], [BRIEF]) and all of `SHORTS.md`; `tools/auto.py`, `tools/write.py` (except its Gemini helpers), `AUTOPILOT.md`, the Blender pipeline, `src/Stick.tsx`, `src/episodes/`, the old "no thumbnails" rule. The previous long CLAUDE.md is in git history.

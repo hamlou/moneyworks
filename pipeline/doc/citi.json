@@ -30,9 +30,9 @@
    {"say": "But nobody hacked the bank.", "show": [{"v": "deny", "t": "NO HACKER", "sub": "laptop"}]},
    {"say": "And nobody stole a thing.", "show": [{"v": "deny", "t": "NO THIEF", "sub": "mask"}]}]},
   {"kind": "headline", "pub": "CNN Business", "date": "FEBRUARY 16 2021", "lines": [
-   {"say": "And here is the wildest part because when the bank asked for it back a judge said no.", "src": "S2", "show": [{"v": "head", "t": "Citibank [can't get back $500 million] it wired by mistake, judge rules"}]}]},
+   {"say": "And here is the wildest part because the bank never got it back.", "src": "S2", "show": [{"v": "head", "t": "Citibank [can't get back $500 million] it wired by mistake, judge rules"}]}]},
   {"kind": "quote", "by": "U.S. DISTRICT JUDGE JESSE FURMAN · FEBRUARY 16 2021", "lines": [
-   {"say": "He called it one of the biggest blunders in banking history.", "src": "S1", "show": [{"on": "one", "v": "quote", "t": "one of the biggest blunders in banking history"}]}]},
+   {"say": "A judge refused and called it one of the biggest blunders in banking history.", "src": "S1", "show": [{"on": "one", "v": "quote", "t": "one of the biggest blunders in banking history"}]}]},
   {"kind": "list", "head": "THIS FILE", "lines": [
    {"say": "So who clicked and who kept the money and why did the law let them?", "show": [
     {"v": "row", "t": "Who clicked"},
