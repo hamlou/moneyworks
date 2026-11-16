@@ -88,7 +88,9 @@ def main():
     hook = free[sum(map(ord, eid)) % len(free)]
     print(f"HOOK TYPE: {hook} (last videos used {used or 'none'})")
     out = ROOT / "pipeline" / "doc" / f"{eid}.json"
-    example = (ROOT / "pipeline" / "doc" / "citi.json").read_text(encoding="utf8")
+    # the worked example = a COMPLETE video the owner approved (hook, motion scenes in the whole video, script craft)
+    ex = ROOT / "pipeline" / "doc" / "click.json"
+    example = (ex if ex.exists() else ROOT / "pipeline" / "doc" / "citi.json").read_text(encoding="utf8")
     print("research…")
     facts = ask([U(f"""Research with Google Search for a documentary video about: {topic}
 Find ONE real, well-documented case to open the video with (exact amount, exact date and time, named company/person) and how the thing works step by step.
@@ -103,7 +105,7 @@ Never invent. If something is unknown write UNKNOWN.""")], search=True, temp=0.2
 
 {rules()}
 
-WORKING EXAMPLE of the scene format and hook order (a short test; a real video has ≥ 30 scenes and 900-2600 spoken words):
+WORKING EXAMPLE — a complete, owner-approved video. Copy its STRUCTURE and craft (hook, motion scenes with layouts all the way through, short sentences, turns, the 3 answers, the ending); never copy its topic, sentences, casts or pictures:
 {example}
 
 THE TOPIC: {topic}

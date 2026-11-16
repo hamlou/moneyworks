@@ -14,12 +14,14 @@ py tools/doc.py stills <id>             # preview frames → SHOW THE OWNER befo
 py tools/doc.py thumb <id>              # owner's picture + words in code → 3 versions + phone test
 py tools/doc.py render <id>             # → push → v6split.yml renders on GitHub → download → send the mp4 to the owner
 ```
-Read `LONG.md [DOC]` (and only that part) before writing or editing a spec. Working example: `pipeline/doc/citi.json` (a 45-second test, not a real topic).
+Read `LONG.md [DOC]` (and only that part) before writing or editing a spec. Working example of a COMPLETE approved video: `pipeline/doc/click.json` (written in `pipeline/doc/click_gen.py`) — copy its structure, never its content. `pipeline/doc/citi.json` is the 45-second test.
 
 ## What the owner decided (all enforced in code — listed so you understand the refusals)
 - Long-form only. No Shorts. No 2D stickman, no 3D Dave, no character on screen.
 - Topic: evergreen, with measured proof (`tools/doctopic.py scan` + `demand`). Never by taste.
 - Title + 2 alternatives + thumbnail words/prompt are part of the spec. Thumbnail picture by the owner, words added in code.
+- ANIMATION, not text: illustrated actors act out the spoken words (`motion` scenes, engine `src/v6/Motion.tsx`). ≥ 50 % of the WHOLE video, ≥ 3 before the title, never 3 non-motion shots in a row. The energy of the hook runs to the last second.
+- Script craft measured on winning videos: short sentences, a turn every ~20 s, things not ideas, promises paid, a sting ending (gates + the how-to list in `LONG.md [DOC]` §3).
 - Hook: one of 5 proven types, never the type of the last 2 videos; energetic first sentence, flash trailer, escalator line, list of 3 questions, title card by 50 s.
 - Pace: natural voice speed (tempo 1.0), average shot ≤ 7 s, something new every ≤ 4 s, a turn every 45 s. Pictures land on their spoken word.
 - Sound: layered automatically from the library (`public/sfx/lib` real CC0 recordings + `public/sfx/doc`), ≥ 45 cues a minute. New sounds only with a verified licence line in `public/sfx/lib/LICENSE.txt`.
