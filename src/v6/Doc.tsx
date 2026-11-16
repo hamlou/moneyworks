@@ -12,7 +12,7 @@ export type DocEv = {at: number; v: string; t?: string; label?: string; pos?: st
   color?: string; k?: string; sub?: string; gold?: boolean; bold?: boolean; x?: number; y?: number; row?: number};
 export type DocScene = {from: number; to: number; kind: string; img?: string; move?: string; hud?: string; tag?: string; head?: string; source?: string; by?: string; pub?: string;
   date?: string; n?: number; side?: string; bg?: string; ev: DocEv[]};
-export type DocPlan = {id: string; frames: number; voice: string | null; scenes: DocScene[]; sfx: {at: number; src: string; v: number; d?: number}[]; music: {src: string; from: number; to: number; v: number}[]};
+export type DocPlan = {id: string; frames: number; hookEnd?: number; voice: string | null; scenes: DocScene[]; sfx: {at: number; src: string; v: number; d?: number}[]; music: {src: string; from: number; to: number; v: number}[]};
 
 const K = {black: '#0A0A0B', ink: '#1B1815', cream: '#E8E3D2', cream2: '#D9D3BF', red: '#B4222C', gold: '#E2A21C', amber: '#E8942C', dim: '#8C877A', white: '#F4F1E8'};
 const cl = {extrapolateLeft: 'clamp' as const, extrapolateRight: 'clamp' as const};
@@ -383,18 +383,45 @@ const ClockScene: React.FC<{sc: DocScene; f: number}> = ({sc, f}) => {
   );
 };
 
-const VIEW: Record<string, React.FC<{sc: DocScene; f: number; id: string}>> = {image: ImageScene, card: CardScene, receipt: ReceiptScene, list: ListScene, stats: StatsScene, tiles: TilesScene, quote: QuoteScene, headline: HeadlineScene, clock: ClockScene, drain: DrainScene, title: TitleScene};
+// FLASH: the trailer inside the hook — 3-6 punches, each slams in on its spoken word
+const FlashScene: React.FC<{sc: DocScene; f: number; id: string}> = ({sc, f, id}) => {
+  const ws = sc.ev.filter((e) => e.v === 'word');
+  const i = ws.filter((e) => e.at <= f).length - 1;
+  const w = ws[i];
+  const light = i % 2 === 1;
+  const p = w ? interpolate(f - w.at, [0, 5], [0, 1], cl) : 0;
+  const shake = w ? Math.max(0, 1 - (f - w.at) / 6) : 0;
+  const t = w?.t ?? '';
+  return (
+    <AbsoluteFill style={{background: light ? K.cream : K.black}}>
+      {sc.img && !light ? <ImageScene sc={{...sc, ev: [], move: 'push'}} f={f} id={id} /> : null}
+      {!light ? <AbsoluteFill style={{background: 'rgba(6,6,8,.62)'}} /> : null}
+      {w ? (
+        <AbsoluteFill style={{alignItems: 'center', justifyContent: 'center', transform: `translate(${Math.sin(f * 2.4) * 9 * shake}px, ${Math.cos(f * 3.1) * 7 * shake}px) scale(${1.35 - 0.35 * ez(p) + 0.03 * interpolate(f - w.at, [5, 40], [0, 1], cl)})`}}>
+          <div style={{fontFamily: /\d/.test(t) ? MONOB : SERIF, fontWeight: /\d/.test(t) ? 600 : 400, fontSize: t.length > 11 ? 190 : t.length > 7 ? 250 : 330, letterSpacing: /\d/.test(t) ? '0.02em' : '-0.01em', lineHeight: 1,
+            color: w.color === 'red' ? (light ? K.red : '#E0463F') : w.color === 'gold' ? K.gold : light ? K.ink : K.white, textAlign: 'center', padding: '0 80px', textShadow: light ? undefined : '0 8px 60px rgba(0,0,0,.9)'}}>{t}</div>
+          {w.sub ? <Mono size={30} color={light ? '#5A554A' : K.amber} style={{marginTop: 30}}>{w.sub}</Mono> : null}
+        </AbsoluteFill>
+      ) : null}
+      {w ? <AbsoluteFill style={{background: '#fff', opacity: interpolate(f - w.at, [0, 3], [0.85, 0], cl)}} /> : null}
+    </AbsoluteFill>
+  );
+};
+
+const VIEW: Record<string, React.FC<{sc: DocScene; f: number; id: string}>> = {image: ImageScene, card: CardScene, receipt: ReceiptScene, list: ListScene, stats: StatsScene, tiles: TilesScene, quote: QuoteScene, headline: HeadlineScene, clock: ClockScene, drain: DrainScene, title: TitleScene, flash: FlashScene};
 
 export const Doc: React.FC<{plan: DocPlan}> = ({plan}) => {
   const f = useCurrentFrame();
   const i = Math.max(0, plan.scenes.findIndex((s) => f >= s.from && f < s.to));
   const sc = plan.scenes[i];
   const V = VIEW[sc?.kind] ?? ImageScene;
-  const cut = sc ? interpolate(f - sc.from, [0, 4], [0, 1], cl) : 1;
+  const cut = sc && sc.from > 0 ? interpolate(f - sc.from, [0, 3], [0.2, 1], cl) : 1;  // frame 0 is never a fade-in
+  const inHook = f < (plan.hookEnd ?? 0);
   const drift = sc ? 1 + 0.02 * ((f - sc.from) / Math.max(1, sc.to - sc.from)) : 1;
   return (
     <AbsoluteFill style={{background: K.black}}>
-      {sc ? <AbsoluteFill style={{opacity: cut, transform: ['image', 'receipt', 'drain', 'title'].includes(sc.kind) ? undefined : `scale(${drift})`}}><V sc={sc} f={f} id={plan.id} /></AbsoluteFill> : null}
+      {sc ? <AbsoluteFill style={{opacity: cut, transform: ['image', 'receipt', 'drain', 'title', 'flash'].includes(sc.kind) ? undefined : `scale(${drift})`}}><V sc={sc} f={f} id={plan.id} /></AbsoluteFill> : null}
+      {sc && inHook && sc.from > 0 ? <AbsoluteFill style={{background: '#fff', opacity: interpolate(f - sc.from, [0, 4], [0.5, 0], cl), pointerEvents: 'none'}} /> : null}
       {sc?.hud ? (
         <div style={{position: 'absolute', left: 110, top: 78, display: 'flex', alignItems: 'center', gap: 16, opacity: cut}}>
           <div style={{width: 11, height: 11, borderRadius: 6, background: K.amber, opacity: 0.55 + 0.45 * Math.sin(f / 6)}} /><Mono size={22} color={K.amber} sp={0.3} bold>{sc.hud}</Mono>
@@ -407,7 +434,7 @@ export const Doc: React.FC<{plan: DocPlan}> = ({plan}) => {
       {plan.voice ? <Audio src={staticFile(plan.voice)} /> : null}
       {plan.music.map((m, k) => (
         <Sequence key={`m${k}`} from={m.from} durationInFrames={Math.max(1, m.to - m.from)}>
-          <Audio src={staticFile(m.src)} loop volume={(t) => m.v * Math.min(1, t / 30, (m.to - m.from - t) / 30)} />
+          <Audio src={staticFile(m.src)} loop volume={(t) => m.v * (m.from === 0 ? 1.5 : 1) * Math.min(1, m.from === 0 ? 1 : t / 30, (m.to - m.from - t) / 30)} />
         </Sequence>
       ))}
       {plan.sfx.map((s, k) => (

@@ -18,9 +18,9 @@ except Exception:
     pass
 FPS, LEAD = 30, 5  # things start 5 frames BEFORE their word: a late picture reads as "does not match"
 # kind → {event: max text length}; MAXN = how many of the main event one scene holds
-KINDS = {"image": {"label": 28, "big": 18, "deny": 20}, "drain": {"stamp": 10}, "title": {"title": 34, "stamp": 30}, "card": {"stat": 0, "bar": 0, "stamp": 22}, "receipt": {"row": 0, "circle": 0}, "list": {"row": 34},
+KINDS = {"flash": {"word": 16}, "image": {"label": 28, "big": 18, "deny": 20}, "drain": {"stamp": 10}, "title": {"title": 34, "stamp": 30}, "card": {"stat": 0, "bar": 0, "stamp": 22}, "receipt": {"row": 0, "circle": 0}, "list": {"row": 34},
          "stats": {"stat": 0}, "tiles": {"tile": 24}, "quote": {"quote": 140}, "headline": {"head": 90}, "clock": {"time": 12, "sub": 44}}
-MAXN = {"drain": ("stamp", 1), "title": ("title", 1), "image": ("label", 4), "card": ("stat+bar", 3), "receipt": ("row", 8), "list": ("row", 5), "stats": ("stat", 3), "tiles": ("tile", 6), "quote": ("quote", 2), "headline": ("head", 2), "clock": ("time", 3)}
+MAXN = {"flash": ("word", 6), "drain": ("stamp", 1), "title": ("title", 1), "image": ("label", 4), "card": ("stat+bar", 3), "receipt": ("row", 8), "list": ("row", 5), "stats": ("stat", 3), "tiles": ("tile", 6), "quote": ("quote", 2), "headline": ("head", 2), "clock": ("time", 3)}
 MOVES = "push pull left right".split()
 POSN = "tl tr bl br l r".split()
 PICTO = "person laptop key door lock mask tunnel gun".split()
@@ -31,6 +31,7 @@ MUSIC_V, SFX_V = 0.06, 0.2
 # (public/sfx/lib = real CC0 recordings, public/sfx/doc = made by us; list: py pipeline/sfx_doc.py list).
 # (category, volume, lead): lead=True → the sound ENDS on the event (risers build up into it).
 SOUND = {
+    "word": [("hit", 1.0, False), ("whoosh", 0.6, False)], "scene_flash": [("sub_drop", 0.6, False)], "scene_open": [("hit", 1.0, False), ("braam", 0.7, False)],
     "label": [("blip", 0.7, False)], "sub": [("blip", 0.6, False)], "tile": [("blip", 0.8, False), ("shimmer", 0.35, False)],
     "big": [("riser", 0.6, True), ("hit", 1.0, False), ("sub_drop", 0.7, False)],
     "stat": [("count", 0.7, False), ("shimmer", 0.4, False)], "bar": [("whoosh", 0.7, False), ("tick", 0.5, False)],
@@ -97,6 +98,89 @@ def images(sp):
                 p = Path(f"public/{sp['id']}/{f}")
                 out.append((f, sc.get("prompt", ""), i + 1, p.exists() and not Path(str(p) + ".placeholder").exists()))
     return out
+
+# HOOK SYSTEM (owner 16 Nov: "the hook is not energetic enough… feels like the middle of the video… every video a specific hook").
+# Five proven openings, read word-for-word from winning videos. A video uses ONE; never the type of the last 2 videos.
+HOOKS = {
+    "trailer": "the whole story in 3 punches, then 'the wildest part' (Crayon Capital, 4.2M: \"He lied about $1 stock, made millions, and only served 22 months. Then Hollywood…\"). Scene 1 = flash.",
+    "you": "put the viewer inside it (how really?, 1.2M: \"Imagine you just robbed a bank… you can't spend it\"). Line 1 starts with Imagine / Picture / You / Your. Scene 1 = image.",
+    "moment": "cold open at the exact minute (Gloam, 2.5M). Scene 1 = image or receipt with a hud (time · place); a drain in scenes 2-4.",
+    "promise": "claims that sound backwards + 'by the end of this video you will understand why…' (Little Bit Better, 4.3M). Scene 1 = image, card or stats.",
+    "stat": "one shocking number + a comparison that makes it absurd + 'here is the darkest part' (how really?, 624k). Scene 1 = card, stats or image with the number; a bar comparison in the first 5 scenes.",
+}
+ESCALATORS = ["wildest part", "strangest part", "worst part", "darkest part", "craziest part", "scariest part", "but here is", "and here is", "here is the part", "it gets worse", "it gets stranger"]
+
+
+def title_index(scenes):
+    return next((i for i, sc in enumerate(scenes) if sc.get("kind") == "title"), None)
+
+
+def recent_hooks(eid):
+    out = []
+    for q in sorted(Path("pipeline/doc").glob("*.json"), key=lambda q: q.stat().st_mtime, reverse=True):
+        try:
+            d = json.loads(q.read_text(encoding="utf8"))
+        except Exception:
+            continue
+        if isinstance(d, dict) and d.get("id") != eid and not d.get("test") and d.get("hook", {}).get("type"):
+            out.append(d["hook"]["type"])
+    return out[:2]
+
+
+def hook_gates(sp, scenes, E, full):
+    if not scenes:
+        return
+    ht = sp.get("hook", {}).get("type")
+    if ht not in HOOKS:
+        E.append(f'hook.type: add "hook": {{"type": "..."}} — one of {list(HOOKS)}')
+        return
+    if full and ht in recent_hooks(sp.get("id")):
+        E.append(f"hook.type '{ht}' was used in one of the last 2 videos ({recent_hooks(sp.get('id'))}) — every video opens differently: use one of {[h for h in HOOKS if h not in recent_hooks(sp.get('id'))]}")
+    ti = title_index(scenes)
+    if ti is None or ti > 11 or ti == 0 or scenes[ti - 1].get("kind") != "list":
+        E.append("hook: within the first 12 scenes there must be a 'list' (the 3 questions this video answers) followed directly by the 'title' card")
+        return
+    pre = scenes[:ti]
+    kinds = [sc.get("kind") for sc in pre]
+    evs = [e.get("v") for sc in pre for ln in sc.get("lines", []) for e in ln.get("show", [])]
+    says = [ln.get("say", "") for sc in pre for ln in sc.get("lines", [])]
+    l0, k0 = says[0] if says else "", kinds[0]
+    words = sum(len(x.split()) for x in says)
+    # energy rules for every type
+    if len(l0.split()) > 14:
+        E.append(f"hook: first sentence has {len(l0.split())} words — max 14. It must hit like a headline, not start a story")
+    if not re.search(r"\b(million|billion|trillion|thousand|you|your)\b", l0, re.I):
+        E.append("hook: the first sentence must contain the amount (million/billion…) or speak to 'you'")
+    if len([e for ln in scenes[0].get("lines", []) for e in ln.get("show", [])]) < 3:
+        E.append("hook: scene 1 needs ≥ 3 things appearing — frame 0 must already move")
+    fl = [sc for sc in pre[:5] if sc.get("kind") == "flash"]
+    if not fl or sum(1 for ln in fl[0].get("lines", []) for e in ln.get("show", []) if e.get("v") == "word") < 3:
+        E.append("hook: one of the first 5 scenes must be a 'flash' with ≥ 3 'word' punches (the 3 most shocking facts of the whole video, 1-3 words each, each on its spoken word) — the trailer inside the hook")
+    if not any(x in " ".join(says).lower() for x in ESCALATORS):
+        E.append(f"hook: no escalator line before the title — one line must raise it again with one of {ESCALATORS[:6]} …")
+    if "deny" not in evs and not ({"headline", "quote"} & set(kinds)):
+        E.append("hook: before the title there must be a mystery ('deny' cards: what it was NOT) or real proof (a 'headline' or 'quote')")
+    if "tiles" in kinds:
+        E.append("hook: no 'tiles' before the title card — explaining starts after it")
+    if not 55 <= words <= 135:
+        E.append(f"hook: {words} spoken words before the title card — keep it 55-135 (about 20-45 s): long enough to promise, short enough to feel fast")
+    if any(len(x.split()) > 22 for x in says):
+        E.append("hook: a line before the title has more than 22 words — hook lines are short and punchy")
+    h = [e for sc in scenes[:3] for ln in sc.get("lines", []) for e in ln.get("show", [])]
+    if not any(re.search(r"\d", str(e.get("t", "")) + str(e.get("val", "")) + str(e.get("n", ""))) for e in h):
+        E.append("hook: no number on screen in the first 3 scenes — show the stake at once")
+    # the chosen type's own opening
+    if ht == "trailer" and k0 != "flash":
+        E.append("hook 'trailer': scene 1 must be the 'flash' (the whole story in 3 punches)")
+    if ht == "you" and (k0 != "image" or not re.match(r"\s*(imagine|picture|you|your)\b", l0, re.I)):
+        E.append("hook 'you': scene 1 = image and line 1 starts with Imagine / Picture / You / Your")
+    if ht == "moment" and (k0 not in ("image", "receipt") or not scenes[0].get("hud") or "drain" not in kinds[:4]):
+        E.append("hook 'moment': scene 1 = image or receipt with a hud (exact time · place) and a 'drain' in scenes 2-4")
+    if ht == "promise" and (k0 not in ("image", "card", "stats") or "by the end of this video" not in " ".join(says).lower()):
+        E.append("hook 'promise': scene 1 = image, card or stats, and one line says 'by the end of this video you will understand why…' with 2-3 claims that sound backwards")
+    if ht == "stat" and (k0 not in ("card", "stats", "image") or not any(e.get("v") == "bar" for sc in pre[:5] for ln in sc.get("lines", []) for e in ln.get("show", []))):
+        E.append("hook 'stat': scene 1 = card, stats or image showing the number, and a 'bar' comparison in the first 5 scenes")
+
 
 BAN_TITLE = ["you need to watch", "watch this", "you won't believe", "shocking", "must see", "the truth about", "exposed", "mind blowing", "insane", "trump", "biden", "president"]
 
@@ -229,7 +313,7 @@ def check(sp, quiet=False, need_images=False):
         if kind == "image":
             if not sc.get("img"):
                 E.append(f"{tag}: image scene needs \"img\" (file in public/{eid}/) and \"prompt\" (how to make it)")
-            if not sc.get("prompt"):
+            if not sc.get("prompt") and not any(o.get("img") == sc.get("img") and o.get("prompt") for o in scenes):
                 E.append(f"{tag}: image scene needs \"prompt\" — the exact text the owner pastes into Gemini to make this still")
             if sc.get("move", "push") not in MOVES:
                 E.append(f"{tag}: move '{sc.get('move')}' unknown — {MOVES}")
@@ -310,36 +394,7 @@ def check(sp, quiet=False, need_images=False):
         share = kinds.count("image") / len(kinds)
         if not 0.25 <= share <= 0.55:
             E.append(f"cinematic: {share:.0%} of scenes are image stills — keep it between 25 % and 55 %")
-    # HOOK BLUEPRINT (measured on Gloam's 2.5M video, LONG.md [DOC] §3): moment → money runs out → amount → proof → mystery → 3 questions → title
-    if scenes:
-        k9 = [sc.get("kind") for sc in scenes[:10]]
-        ev9 = [e.get("v") for sc in scenes[:8] for ln in sc.get("lines", []) for e in ln.get("show", [])]
-        l0 = scenes[0].get("lines", [{}])[0]
-        if len([e for ln in scenes[0].get("lines", []) for e in ln.get("show", [])]) < 3:
-            E.append("hook: scene 1 needs ≥ 3 things appearing (frame 0 must already move: rows dropping in, labels, a circle)")
-        if not re.search(r"\b(million|billion|trillion|thousand)\b", l0.get("say", ""), re.I):
-            E.append("hook: the FIRST sentence must say the amount (million/billion…) — the viewer came for the number in the title")
-        if "drain" not in k9[:4]:
-            E.append("hook: one of scenes 2-4 must be a 'drain' (stopwatch + the amount running down to zero) — urgency before any explaining")
-        if "deny" not in ev9:
-            E.append("hook: the first 8 scenes need the mystery as 'deny' cards (NO HACK / NO THIEF …): say what it was NOT, so the viewer asks how")
-        if not ({"headline", "quote"} & set(k9[:8])):
-            E.append("hook: the first 8 scenes need real proof — a 'headline' or a 'quote' (real, verbatim, dated)")
-        if "list" not in k9:
-            E.append("hook: scenes 1-10 need the 'list' (the 3 questions this video answers)")
-        elif k9.index("list") + 1 >= len(scenes) or scenes[k9.index("list") + 1].get("kind") != "title":
-            E.append("hook: the scene right after the 'list' must be the 'title' card")
-        if any(k in k9[:6] for k in ("tiles", "stats")):
-            E.append("hook: no 'tiles'/'stats' in the first 6 scenes — explaining starts after the title card")
-
-        if scenes[0].get("kind") not in ("image", "receipt") or not scenes[0].get("hud"):
-            E.append("hook: scene 1 must be an image or receipt with a \"hud\" (exact time + place) — open inside the moment")
-        h = [e for sc in scenes[:3] for ln in sc.get("lines", []) for e in ln.get("show", [])]
-        if not any(re.search(r"\d", str(e.get("t", "")) + str(e.get("val", "")) + str(e.get("n", ""))) for e in h):
-            E.append("hook: no number on screen in the first 3 scenes — show the stake (the amount) at once")
-        first = [ln.get("say", "") for sc in scenes[:2] for ln in sc.get("lines", [])]
-        if first and len(first[0].split()) > 18:
-            E.append("hook: first line over 18 words")
+    hook_gates(sp, scenes, E, full)
     miss = [i for i in images(sp) if not i[3]]
     if miss and need_images:
         E.append(f"images: {len(miss)} stills missing — py tools/doc.py images {eid}")
@@ -355,12 +410,13 @@ def check(sp, quiet=False, need_images=False):
 
 
 def voice(sp):
-    beats = []
+    beats, ti = [], title_index(sp["scenes"])
     for si, li, bid, sc, ln in lines_of(sp):
         last = li == len(sc["lines"]) - 1
-        b = {"id": bid, "src": ln.get("src", ""), "text": ln["say"], "pause": ln.get("pause", 0.5 if last else 0.25)}
-        if ln.get("exag"):
-            b["exag"] = ln["exag"]
+        hook = ti is not None and si <= ti
+        b = {"id": bid, "src": ln.get("src", ""), "text": ln["say"], "pause": ln.get("pause", (0.3 if last else 0.12) if hook else (0.5 if last else 0.25))}
+        if ln.get("exag") or hook:
+            b["exag"] = ln.get("exag", 0.72)
         beats.append(b)
     ep = {"id": sp["id"], "title": sp["title"], "style": "doc", "voice": "chatterbox", "cb": sp.get("cb", {"cfg": 0.3, "exag": 0.45}), "beats": beats}
     Path(f"pipeline/episodes/{sp['id']}.json").write_text(json.dumps(ep, indent=1, ensure_ascii=False), encoding="utf8")
@@ -433,6 +489,8 @@ def build(sp, fake):
             n = round(sdur[f] * FPS)
             sfx.append({"at": max(0, at - n if lead else at), "src": f, "v": round(SFX_V * k * vol, 3), "d": n + 4})
 
+    ti = title_index(sp["scenes"])
+    snd("scene_open", 0)  # the video starts ON a hit, never on silence
     by_scene = {}
     for si, li, bid, sc, ln in lines_of(sp):
         by_scene.setdefault(si, []).append((bid, ln))
@@ -468,7 +526,7 @@ def build(sp, fake):
         keep = {k: sc[k] for k in ("img", "move", "hud", "tag", "head", "source", "by", "pub", "date", "n", "side", "bg") if k in sc}
         if sc["kind"] == "drain":
             keep["n"], keep["source"] = sc["amount"], sc.get("prefix", "$")
-        scenes.append({"from": start, "to": 0, "kind": sc["kind"], **keep, "ev": ev, "_mood": sc.get("mood"), "_vis": vis})
+        scenes.append({"from": start, "to": 0, "kind": sc["kind"], **keep, "ev": ev, "_mood": sc.get("mood") or ("drive" if ti is not None and si <= ti and si == 0 else "tense" if ti is not None and si == ti + 1 else None), "_vis": vis})
         if si:
             snd("scene_" + sc["kind"], start, 0.85)
     if errs:
@@ -494,7 +552,7 @@ def build(sp, fake):
         for a, b in zip(pts, pts[1:]):
             if (b - a) / FPS > 4.0 and b != total:
                 slow.append(f"scene {i + 1} ({s['kind']}): {(b - a) / FPS:.1f} s with nothing new (from {a / FPS:.1f} s) — add an event there or cut to a new scene")
-    plan = {"id": eid, "title": sp["title"], "frames": total, "voice": vfile, "scenes": scenes, "sfx": sorted(sfx, key=lambda c: c["at"]), "music": music}
+    plan = {"id": eid, "title": sp["title"], "hookEnd": scenes[ti]["to"] if ti is not None else 0, "frames": total, "voice": vfile, "scenes": scenes, "sfx": sorted(sfx, key=lambda c: c["at"]), "music": music}
     Path("src/v6/doc").mkdir(exist_ok=True)
     Path(f"src/v6/doc/{eid}.plan.json").write_text(json.dumps(plan, ensure_ascii=False), encoding="utf8")
     ids = sorted(p.name[:-10] for p in Path("src/v6/doc").glob("*.plan.json"))
@@ -512,9 +570,12 @@ def build(sp, fake):
         kinds_at.setdefault(s["kind"], sec(s["from"]))
     if sec(scenes[0]["to"]) > 8:
         slow.append(f"hook: first shot lasts {sec(scenes[0]['to']):.1f} s — cut by 8 s")
-    if first30 < 6 and total / FPS > 30:
-        slow.append(f"hook: only {first30} shots in the first 30 s — need ≥ 6 (shorter lines, more cuts)")
-    for kind, lim in (("drain", 16), ("list", 50), ("title", 60)):
+    if first30 < 8 and total / FPS > 30:
+        slow.append(f"hook: only {first30} shots in the first 30 s — need ≥ 8 (shorter lines, more cuts)")
+    ev10 = sum(1 for s in scenes for e in s["ev"] if e["at"] < 10 * FPS)
+    if ev10 < 7:
+        slow.append(f"hook: only {ev10} things appear in the first 10 s — need ≥ 7")
+    for kind, lim in (("flash", 15), ("list", 45), ("title", 50)):
         if kinds_at.get(kind, 0) > lim:
             slow.append(f"hook: '{kind}' starts at {kinds_at[kind]:.0f} s — must start by {lim} s")
     avg = total / FPS / len(scenes)

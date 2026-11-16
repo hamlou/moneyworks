@@ -82,6 +82,11 @@ def main():
         sys.exit("set GEMINI_API_KEY first (free: https://aistudio.google.com/apikey)")
     eid = sys.argv[1]
     topic, query, proof = pick_topic(ask, jsonblock, sys.argv[2] if len(sys.argv) > 2 else "")
+    import doc as docmod
+    used = docmod.recent_hooks(eid)
+    free = [h for h in docmod.HOOKS if h not in used]
+    hook = free[sum(map(ord, eid)) % len(free)]
+    print(f"HOOK TYPE: {hook} (last videos used {used or 'none'})")
     out = ROOT / "pipeline" / "doc" / f"{eid}.json"
     example = (ROOT / "pipeline" / "doc" / "citi.json").read_text(encoding="utf8")
     print("research…")
@@ -107,6 +112,7 @@ VERIFIED FACTS (use only these; every figure needs "src"; quotes and headlines v
 
 Write the full spec for id "{eid}" (no "test" field). It MUST contain exactly this proof block, unchanged:
 "topic": {json.dumps({"evergreen": True, "query": query, "proof": proof})}
+"hook": {{"type": "{hook}"}}  → {docmod.HOOKS[hook]}
 and also "title", "alt_titles" (2), "thumb" {{"words", "space", "copied_from", "prompt"}} as in rules §2.
 Different stills, pictograms, absurd detail and comparison than the example.
 After the title card: explain simply, answer question 1 by ~2 minutes, keep a 'But…/Then…/question' turn at least every 45 s,
@@ -124,6 +130,7 @@ Return ONLY the JSON.""")
         spec["id"] = eid
         spec.pop("test", None)
         spec["topic"] = {"evergreen": True, "query": query, "proof": proof}  # measured proof, set by code
+        spec["hook"] = {"type": hook}
         out.write_text(json.dumps(spec, indent=1, ensure_ascii=False), encoding="utf8")
         ok, log = run_check(eid)
         print(f"round {rnd + 1}:", log.strip().splitlines()[-1])

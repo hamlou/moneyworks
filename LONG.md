@@ -50,15 +50,21 @@ One TRUE money story told like a heist or a collapse: who, how much, minute by m
 ### 3. HOOK + RETENTION RULES (owner 15 Nov: "the hook is very bad… too slow… the words don't match the visuals… the viewer must stay till the end") — `check`/`build` enforce them
 **Why people leave / stay (what we build on):** a viewer decides in the first 5 s whether the video is what the title promised; stays while a question is open; leaves the moment nothing new happens or a picture does not match the words. So: confirm the title at once, open a question before answering, and never let 4 s pass without something new.
 
-**The hook blueprint — measured second by second on Gloam's 2.5M video (12 cuts in the first 30 s, title card at 0:43). Same ORDER for every topic, different pictures:**
-| time | shot | what it does |
+**THE HOOK (owner 16 Nov: "not energetic enough… feels like the middle of the video… every video a specific hook, not repetitive"). Five proven openings, read word for word from winning videos. A video uses ONE (`"hook": {"type": "…"}`), never the type of the last 2 videos (`check` refuses):**
+| type | how it opens (the source) | scene 1 |
 |---|---|---|
-| 0–7 s | `receipt` (or `image`) with a `hud` = exact time · place; rows drop in from frame 0, the absurd detail gets circled | we are INSIDE the moment; the FIRST sentence says the amount |
-| 7–14 s | `drain` — stopwatch runs, the amount counts down to 0, stamp | urgency: the money leaves while you watch |
-| 14–20 s | `image` + `deny` cards ("NO HACKER", "NO THIEF") | the mystery: say what it was NOT → "then how?" |
-| 20–30 s | `headline` or `quote` (real, verbatim, dated) + `card` with the record comparison + stamp | proof it is real and how big |
-| 30–45 s | `list` — the 3 questions this video answers | the promise (3 open loops) |
-| ≤ 60 s | `title` card | the story starts only now |
+| `trailer` | the whole story in 3 punches, then "and the wildest part…" (Crayon Capital 4.2M: "He lied about $1 stock, made millions, and only served 22 months in jail. Then Hollywood turned his crimes into a blockbuster.") | `flash` |
+| `you` | the viewer is inside it (how really? 1.2M: "Imagine you just robbed a bank. Congratulations… there's just one tiny problem, you can't spend it.") | `image`, line 1 starts Imagine / Picture / You / Your |
+| `moment` | cold open at the exact minute (Gloam 2.5M) | `image`/`receipt` with `hud`, then a `drain` |
+| `promise` | claims that sound backwards + "by the end of this video you will understand why…" (Little Bit Better 4.3M) | `image`/`card`/`stats` |
+| `stat` | one shocking number + a comparison that makes it absurd + "here is the darkest part" (how really? 624k) | `card`/`stats`/`image` + a `bar` comparison |
+**Energy rules for EVERY type (enforced):**
+- First sentence ≤ 14 words, with the amount or "you". It must hit like a headline. Frame 0 already moves (≥ 3 things in scene 1) and starts ON a hit sound, music at full level, no fade-in.
+- A `flash` scene in the first 5 scenes: the 3 most shocking facts of the whole video as 1-3-word punches, each landing on its spoken word (the trailer inside the hook).
+- One escalator line before the title ("and here is the wildest / strangest / darkest part…", "it gets worse").
+- A mystery (`deny`: what it was NOT) or real proof (`headline` / `quote`) before the title.
+- Then the `list` (the 3 questions) and directly the `title` card, by 50 s. 55-135 spoken words before the title; no hook line over 22 words.
+- Automatic in the hook: the voice is more energetic with shorter pauses, driving music, a white flash on every cut. On the real voice: ≥ 8 shots in the first 30 s, ≥ 7 things appearing in the first 10 s.
 - After the title: explain like the viewer is 12 (one simple picture per idea), answer question 1 early (a first payoff by ~2 min), question 3 (the biggest) last.
 - A turn — a line starting with But / Then / Except / Until / So, or a question — at least every 45 s (`build` checks). Each turn must raise the stake or open a new question.
 - WORDS = PICTURES: every `show` item is the exact thing being said at its `on` word (the number, the name, the document). Never a decorative picture. Things start 5 frames before their word.
@@ -79,6 +85,7 @@ One TRUE money story told like a heist or a collapse: who, how much, minute by m
 
 | kind | scene fields | events (`v`) |
 |---|---|---|
+| flash | img? (dark background still) | `word` {t ≤ 16, color? red gold, sub?} (3-6) — hook only |
 | image | img, prompt, move (push pull left right), hud?, tag? | `label` {t ≤ 28, pos tl tr bl br l r, sub?} · `big` {t ≤ 18 or n (counts up), label?} · `deny` {t ≤ 20 "NO HACKER", sub = pictogram: person laptop key door lock mask tunnel gun} |
 | drain | amount (number that runs down to 0), head, prefix?, img? | `stamp` {t ≤ 10} — the count ends on it |
 | title | head (small line), img? | `title` {t ≤ 34} · `stamp` {t ≤ 30, e.g. CASE FILE · date} |
